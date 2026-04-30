@@ -1,0 +1,10 @@
+# Per-post manual overrides. Keys can be article ids or canonical URLs.
+#
+# Example:
+# "10352":
+#   topics:
+#     - 大模型与Transformer
+#   series: 闭门造车之多模态思路浅谈
+#   level: advanced
+#   notes: 手动校正主题
+{}

@@ -1,0 +1,418 @@
+# 深度学习基础
+
+[返回主题索引](index.md)
+
+共 119 篇。
+
+<a id="series-deep-learning-69126a7846"></a>
+#### 重新思考学习率与Batch Size
+
+- 2025-09-01 - [重新思考学习率与Batch Size（一）：现状](https://spaces.ac.cn/archives/11260)
+  - 原站分类：数学研究
+  - 原站标签：梯度、学习率、优化器、尺度定律
+  - 系列：重新思考学习率与Batch Size #1
+  - 系列主题：深度学习基础
+- 2025-09-10 - [重新思考学习率与Batch Size（二）：平均场](https://spaces.ac.cn/archives/11280)
+  - 原站分类：数学研究
+  - 原站标签：学习率、优化器、尺度定律、平均场
+  - 系列：重新思考学习率与Batch Size #2
+  - 系列主题：深度学习基础
+- 2025-09-15 - [重新思考学习率与Batch Size（三）：Muon](https://spaces.ac.cn/archives/11285)
+  - 原站分类：数学研究
+  - 原站标签：学习率、优化器、尺度定律、muon、平均场
+  - 系列：重新思考学习率与Batch Size #3
+  - 系列主题：深度学习基础
+- 2025-09-22 - [重新思考学习率与Batch Size（四）：EMA](https://spaces.ac.cn/archives/11301)
+  - 原站分类：数学研究
+  - 原站标签：学习率、优化器、尺度定律、平均场
+  - 系列：重新思考学习率与Batch Size #4
+  - 系列主题：深度学习基础
+
+<a id="series-deep-learning-0ac9606400"></a>
+#### 多任务学习漫谈
+
+- 2022-01-18 - [多任务学习漫谈（一）：以损失之名](https://spaces.ac.cn/archives/8870)
+  - 原站分类：信息时代
+  - 原站标签：深度学习、损失函数、多任务
+  - 系列：多任务学习漫谈 #1
+  - 系列主题：深度学习基础
+- 2022-02-08 - [多任务学习漫谈（二）：行梯度之事](https://spaces.ac.cn/archives/8896)
+  - 原站分类：信息时代
+  - 原站标签：对偶、深度学习、损失函数、梯度、多任务
+  - 系列：多任务学习漫谈 #2
+  - 系列主题：深度学习基础
+- 2022-02-14 - [多任务学习漫谈（三）：分主次之序](https://spaces.ac.cn/archives/8907)
+  - 原站分类：信息时代
+  - 原站标签：对偶、深度学习、损失函数、梯度、多任务
+  - 系列：多任务学习漫谈 #3
+  - 系列主题：深度学习基础
+
+<a id="series-deep-learning-e73395bb77"></a>
+#### “让Keras更酷一些！”
+
+- 2018-08-06 - [“让Keras更酷一些！”：精巧的层与花式的回调](https://spaces.ac.cn/archives/5765)
+  - 原站分类：信息时代
+  - 原站标签：模型、深度学习、损失函数、keras
+  - 系列：“让Keras更酷一些！”
+  - 系列主题：深度学习基础
+- 2018-09-08 - [“让Keras更酷一些！”：小众的自定义优化器](https://spaces.ac.cn/archives/5879)
+  - 原站分类：信息时代
+  - 原站标签：keras、优化器
+  - 系列：“让Keras更酷一些！”
+  - 系列主题：深度学习基础
+- 2019-01-27 - [“让Keras更酷一些！”：随意的输出和灵活的归一化](https://spaces.ac.cn/archives/6311)
+  - 原站分类：信息时代
+  - 原站标签：模型、损失函数、keras
+  - 系列：“让Keras更酷一些！”
+  - 系列主题：深度学习基础
+- 2019-03-10 - [“让Keras更酷一些！”：分层的学习率和自由的梯度](https://spaces.ac.cn/archives/6418)
+  - 原站分类：信息时代
+  - 原站标签：模型、keras、梯度、学习率
+  - 系列：“让Keras更酷一些！”
+  - 系列主题：深度学习基础
+- 2019-04-28 - [“让Keras更酷一些！”：中间变量、权重滑动和安全生成器](https://spaces.ac.cn/archives/6575)
+  - 原站分类：信息时代
+  - 原站标签：模型、优化、keras
+  - 系列：“让Keras更酷一些！”
+  - 系列主题：深度学习基础
+- 2019-07-16 - [“让Keras更酷一些！”：层中层与mask](https://spaces.ac.cn/archives/6810)
+  - 原站分类：信息时代
+  - 原站标签：keras
+  - 系列：“让Keras更酷一些！”
+  - 系列主题：深度学习基础
+- 2019-09-29 - [“让Keras更酷一些！”：层与模型的重用技巧](https://spaces.ac.cn/archives/6985)
+  - 原站分类：信息时代
+  - 原站标签：模型、keras
+  - 系列：“让Keras更酷一些！”
+  - 系列主题：深度学习基础
+
+<a id="series-deep-learning-4b0540d8f5"></a>
+#### 文本情感分类
+
+- 2015-06-22 - [文本情感分类（一）：传统模型](https://spaces.ac.cn/archives/3360)
+  - 原站分类：信息时代
+  - 原站标签：python、机器学习、数据挖掘、文本挖掘
+  - 系列：文本情感分类 #1
+  - 系列主题：深度学习基础
+- 2015-08-04 - [文本情感分类（二）：深度学习模型](https://spaces.ac.cn/archives/3414)
+  - 原站分类：信息时代
+  - 原站标签：python、深度学习、机器学习、文本挖掘
+  - 系列：文本情感分类 #2
+  - 系列主题：深度学习基础
+- 2016-06-29 - [文本情感分类（三）：分词 OR 不分词](https://spaces.ac.cn/archives/3863)
+  - 原站分类：信息时代
+  - 原站标签：python、深度学习、文本挖掘
+  - 系列：文本情感分类 #3
+  - 系列主题：深度学习基础
+- 2017-03-30 - [文本情感分类（四）：更好的损失函数](https://spaces.ac.cn/archives/4293)
+  - 原站分类：信息时代
+  - 原站标签：深度学习、文本挖掘、损失函数
+  - 系列：文本情感分类 #4
+  - 系列主题：深度学习基础
+
+<a id="series-deep-learning-standalone"></a>
+#### 非系列文章
+
+- 2026-03-19 - [Attention Residuals 回忆录](https://spaces.ac.cn/archives/11664)
+  - 原站分类：信息时代
+  - 原站标签：模型、优化、attention、尺度定律、深度
+- 2025-08-16 - [ReLU/GeLU/Swish的一个恒等式](https://spaces.ac.cn/archives/11233)
+  - 原站分类：数学研究
+  - 原站标签：分析、神经网络、恒等式
+- 2025-03-24 - [高阶MuP：更简明但更高明的谱条件缩放](https://spaces.ac.cn/archives/10795)
+  - 原站分类：数学研究
+  - 原站标签：梯度、优化器、尺度定律、谱范数、muon、MuP
+- 2025-03-13 - [初探MuP：超参数的跨模型尺度迁移规律](https://spaces.ac.cn/archives/10770)
+  - 原站分类：数学研究
+  - 原站标签：梯度、学习率、优化器、尺度定律、MuP
+- 2024-11-18 - [Adam的epsilon如何影响学习率的Scaling Law？](https://spaces.ac.cn/archives/10563)
+  - 原站分类：数学研究
+  - 原站标签：梯度、学习率、优化器、尺度定律
+- 2024-11-14 - [当Batch Size增大时，学习率该如何随之变化？](https://spaces.ac.cn/archives/10542)
+  - 原站分类：数学研究
+  - 原站标签：梯度、学习率、优化器、尺度定律
+- 2024-06-14 - [通向概率分布之路：盘点Softmax及其替代品](https://spaces.ac.cn/archives/10145)
+  - 原站分类：数学研究
+  - 原站标签：概率、分析、损失函数、梯度
+- 2023-10-13 - [EMO：基于最优传输思想设计的分类损失函数](https://spaces.ac.cn/archives/9797)
+  - 原站分类：信息时代
+  - 原站标签：概率、优化、损失函数、最优传输
+- 2023-05-18 - [基于量子化假设推导模型的尺度定律（Scaling Law）](https://spaces.ac.cn/archives/9607)
+  - 原站分类：数学研究
+  - 原站标签：模型、分析、量子、尺度定律
+- 2023-03-14 - [缓解交叉熵过度自信的一个简明方案](https://spaces.ac.cn/archives/9526)
+  - 原站分类：信息时代
+  - 原站标签：优化、损失函数、光滑
+- 2022-11-30 - [用热传导方程来指导自监督学习](https://spaces.ac.cn/archives/9359)
+  - 原站分类：信息时代
+  - 原站标签：物理、无监督
+- 2022-07-15 - [不成功的尝试：将多标签交叉熵推广到“n个m分类”上去](https://spaces.ac.cn/archives/9158)
+  - 原站分类：数学研究
+  - 原站标签：优化、损失函数
+- 2022-06-01 - [如何训练你的准确率？](https://spaces.ac.cn/archives/9098)
+  - 原站分类：信息时代
+  - 原站标签：概率、优化、损失函数
+- 2022-05-07 - [多标签“Softmax+交叉熵”的软标签版本](https://spaces.ac.cn/archives/9064)
+  - 原站分类：信息时代
+  - 原站标签：优化、损失函数、光滑
+- 2022-04-28 - [在bert4keras中使用混合精度和XLA加速训练](https://spaces.ac.cn/archives/9059)
+  - 原站分类：信息时代
+  - 原站标签：模型、优化、梯度
+- 2022-04-15 - [GlobalPointer下的“KL散度”应该是怎样的？](https://spaces.ac.cn/archives/9039)
+  - 原站分类：数学研究
+  - 原站标签：损失函数、对抗训练、NER、正则化
+- 2022-03-19 - [为什么需要残差？一个来自DeepNet的视角](https://spaces.ac.cn/archives/8994)
+  - 原站分类：信息时代
+  - 原站标签：模型、优化、深度学习、梯度
+- 2021-12-29 - [SquarePlus：可能是运算最简单的ReLU光滑近似](https://spaces.ac.cn/archives/8833)
+  - 原站分类：数学研究
+  - 原站标签：函数、近似、分析
+- 2021-12-17 - [Seq2Seq+前缀树：检索任务新范式（以KgCLUE为例）](https://spaces.ac.cn/archives/8802)
+  - 原站分类：信息时代
+  - 原站标签：代码、语义、keras、相似度
+- 2021-11-29 - [Dropout视角下的MLM和MAE：一些新的启发](https://spaces.ac.cn/archives/8770)
+  - 原站分类：信息时代
+  - 原站标签：模型、概率、分析、优化
+- 2021-11-22 - [ChildTuning：试试把Dropout加到梯度上去？](https://spaces.ac.cn/archives/8764)
+  - 原站分类：信息时代
+  - 原站标签：模型、优化、梯度
+- 2021-10-31 - [bert4keras在手，baseline我有：CLUE基准代码](https://spaces.ac.cn/archives/8739)
+  - 原站分类：信息时代
+  - 原站标签：模型、代码、keras
+- 2021-09-01 - [从三角不等式到Margin Softmax](https://spaces.ac.cn/archives/8656)
+  - 原站分类：信息时代
+  - 原站标签：损失函数、相似度
+- 2021-07-26 - [FlatNCE：小批次对比学习效果差的原因竟是浮点误差？](https://spaces.ac.cn/archives/8586)
+  - 原站分类：信息时代
+  - 原站标签：优化、损失函数、对比学习
+- 2021-07-01 - [又是Dropout两次！这次它做到了有监督任务的SOTA](https://spaces.ac.cn/archives/8496)
+  - 原站分类：信息时代
+  - 原站标签：优化、损失函数、对抗训练
+- 2021-04-16 - [搜狐文本匹配：基于条件LayerNorm的多任务baseline](https://spaces.ac.cn/archives/8337)
+  - 原站分类：信息时代
+  - 原站标签：语言模型、比赛、语义相似度
+- 2021-04-03 - [P-tuning：自动构建模版，释放语言模型潜能](https://spaces.ac.cn/archives/8295)
+  - 原站分类：信息时代
+  - 原站标签：语言模型、NLP
+- 2021-03-05 - [短文本匹配Baseline：脱敏数据使用预训练模型的尝试](https://spaces.ac.cn/archives/8213)
+  - 原站分类：信息时代
+  - 原站标签：语言模型、语义、语义相似度
+- 2020-11-20 - [跟风玩玩目前最大的中文GPT2模型（bert4keras）](https://spaces.ac.cn/archives/7912)
+  - 原站分类：信息时代
+  - 原站标签：语言模型、文本生成、attention
+- 2020-11-13 - [也来谈谈RNN的梯度消失/爆炸问题](https://spaces.ac.cn/archives/7888)
+  - 原站分类：数学研究
+  - 原站标签：模型、优化、深度学习、梯度
+- 2020-08-31 - [再谈类别不平衡问题：调节权重与魔改Loss的对比联系](https://spaces.ac.cn/archives/7708)
+  - 原站分类：信息时代
+  - 原站标签：优化、损失函数、光滑
+- 2020-08-14 - [L2正则没有想象那么好？可能是“权重尺度偏移”惹的祸](https://spaces.ac.cn/archives/7681)
+  - 原站分类：信息时代
+  - 原站标签：模型、优化、深度学习
+- 2020-07-31 - [我们真的需要把训练集的损失降低到零吗？](https://spaces.ac.cn/archives/7643)
+  - 原站分类：信息时代
+  - 原站标签：优化、深度学习、损失函数、泛化
+- 2020-07-19 - [通过互信息思想来缓解类别不平衡问题](https://spaces.ac.cn/archives/7615)
+  - 原站分类：信息时代
+  - 原站标签：优化、互信息、损失函数
+- 2020-06-28 - [积分梯度：一种新颖的神经网络可视化方法](https://spaces.ac.cn/archives/7533)
+  - 原站分类：信息时代
+  - 原站标签：积分、梯度、可视化
+- 2020-04-29 - [节省显存的重计算技巧也有了Keras版了](https://spaces.ac.cn/archives/7367)
+  - 原站分类：信息时代
+  - 原站标签：模型、深度学习、keras
+- 2020-04-25 - [将“Softmax+交叉熵”推广到多标签分类问题](https://spaces.ac.cn/archives/7359)
+  - 原站分类：数学研究
+  - 原站标签：优化、损失函数、光滑
+- 2020-04-13 - [突破瓶颈，打造更强大的Transformer](https://spaces.ac.cn/archives/7325)
+  - 原站分类：信息时代
+  - 原站标签：概率、深度学习、attention
+- 2020-04-02 - [bert4keras在手，baseline我有：百度LIC2020](https://spaces.ac.cn/archives/7321)
+  - 原站分类：信息时代
+  - 原站标签：模型、keras、attention
+- 2020-03-26 - [GELU的两个初等函数近似是怎么来的](https://spaces.ac.cn/archives/7309)
+  - 原站分类：数学研究
+  - 原站标签：近似、分析
+- 2020-03-23 - [AdaFactor优化器浅析（附开源实现）](https://spaces.ac.cn/archives/7302)
+  - 原站分类：信息时代
+  - 原站标签：分析、keras、优化器
+- 2020-03-16 - [现在可以用Keras玩中文GPT2了（GPT2_ML）](https://spaces.ac.cn/archives/7292)
+  - 原站分类：信息时代
+  - 原站标签：语言模型、NLP、文本生成、attention
+- 2020-03-01 - [对抗训练浅谈：意义、方法和思考（附Keras实现）](https://spaces.ac.cn/archives/7234)
+  - 原站分类：信息时代
+  - 原站标签：GAN、keras、对抗训练、泛化
+- 2020-01-03 - [用bert4keras做三元组抽取](https://spaces.ac.cn/archives/7161)
+  - 原站分类：信息时代
+  - 原站标签：语言模型、信息抽取
+- 2019-11-25 - [6个派生优化器的简单介绍及其实现](https://spaces.ac.cn/archives/7094)
+  - 原站分类：信息时代
+  - 原站标签：python、keras、优化器
+- 2019-11-06 - [Keras：Tensorflow的黄金标准](https://spaces.ac.cn/archives/7055)
+  - 原站分类：信息时代
+  - 原站标签：keras
+- 2019-10-11 - [BN究竟起了什么作用？一个闭门造车的分析](https://spaces.ac.cn/archives/6992)
+  - 原站分类：信息时代
+  - 原站标签：模型、优化、神经网络
+- 2019-09-03 - [百度实体链接比赛后记：行为建模和实体链接](https://spaces.ac.cn/archives/6919)
+  - 原站分类：信息时代
+  - 原站标签：模型、NLP、NER
+- 2019-08-27 - [自己实现了一个bert4keras](https://spaces.ac.cn/archives/6915)
+  - 原站分类：信息时代
+  - 原站标签：语言模型、NLP、keras、attention
+- 2019-08-20 - [开源一版DGCNN阅读理解问答模型（Keras版）](https://spaces.ac.cn/archives/6906)
+  - 原站分类：信息时代
+  - 原站标签：模型、问答
+- 2019-08-09 - [seq2seq之双向解码](https://spaces.ac.cn/archives/6877)
+  - 原站分类：信息时代
+  - 原站标签：模型、NLP、keras、文本生成
+- 2019-07-30 - [Keras实现两个优化器：Lookahead和LazyOptimizer](https://spaces.ac.cn/archives/6869)
+  - 原站分类：信息时代
+  - 原站标签：keras、优化器
+- 2019-07-08 - [用时间换取效果：Keras梯度累积优化器](https://spaces.ac.cn/archives/6794)
+  - 原站分类：信息时代
+  - 原站标签：keras、梯度、优化器
+- 2019-06-29 - [基于Bert的NL2SQL模型：一个简明的Baseline](https://spaces.ac.cn/archives/6771)
+  - 原站分类：信息时代
+  - 原站标签：语言模型、比赛、sql、attention
+- 2019-06-18 - [当Bert遇上Keras：这可能是Bert最简单的打开姿势](https://spaces.ac.cn/archives/6736)
+  - 原站分类：信息时代
+  - 原站标签：语言模型、比赛、信息抽取、attention
+- 2019-05-28 - [ON-LSTM：用有序神经元表达层次结构](https://spaces.ac.cn/archives/6621)
+  - 原站分类：信息时代
+  - 原站标签：模型、深度学习、无监督、NLP
+- 2019-02-22 - [巧断梯度：单个loss实现GAN模型](https://spaces.ac.cn/archives/6387)
+  - 原站分类：信息时代
+  - 原站标签：GAN、生成模型、keras、梯度
+- 2018-10-07 - [深度学习中的Lipschitz约束：泛化与生成模型](https://spaces.ac.cn/archives/6051)
+  - 原站分类：信息时代
+  - 原站标签：GAN、生成模型、泛化、谱范数
+- 2018-10-02 - [深度学习的互信息：无监督提取特征](https://spaces.ac.cn/archives/6024)
+  - 原站分类：信息时代
+  - 原站标签：最大熵、无监督、互信息
+- 2018-09-01 - [玩转Keras之seq2seq自动生成标题](https://spaces.ac.cn/archives/5861)
+  - 原站分类：信息时代
+  - 原站标签：模型、NLP、keras、文本生成
+- 2018-07-29 - [基于GRU和AM-Softmax的句子相似度模型](https://spaces.ac.cn/archives/5743)
+  - 原站分类：信息时代
+  - 原站标签：语义、损失函数、相似度
+- 2018-07-18 - [用变分推断统一理解生成模型（VAE、GAN、AAE、ALI）](https://spaces.ac.cn/archives/5716)
+  - 原站分类：信息时代
+  - 原站标签：变分、深度学习、推断
+- 2018-07-07 - [从SamplePairing到mixup：神奇的正则项](https://spaces.ac.cn/archives/5693)
+  - 原站分类：信息时代
+  - 原站标签：模型
+- 2018-05-18 - [简明条件随机场CRF介绍（附带纯Keras实现）](https://spaces.ac.cn/archives/5542)
+  - 原站分类：信息时代
+  - 原站标签：模型、概率图、keras、crf
+- 2018-05-10 - [用Numpy实现高效的Apriori算法](https://spaces.ac.cn/archives/5525)
+  - 原站分类：信息时代
+  - 原站标签：python、数据挖掘、关联分析
+- 2018-04-15 - [基于CNN的阅读理解式问答模型：DGCNN](https://spaces.ac.cn/archives/5409)
+  - 原站分类：信息时代
+  - 原站标签：模型、问答、深度学习
+- 2018-03-02 - [三味Capsule：矩阵Capsule与EM路由](https://spaces.ac.cn/archives/5155)
+  - 原站分类：信息时代
+  - 原站标签：深度学习、聚类、Capsule
+- 2018-02-12 - [再来一顿贺岁宴：从K-Means到Capsule](https://spaces.ac.cn/archives/5112)
+  - 原站分类：信息时代
+  - 原站标签：深度学习、聚类、Capsule
+- 2018-01-23 - [分享一个slide：花式自然语言处理](https://spaces.ac.cn/archives/4823)
+  - 原站分类：信息时代
+  - 原站标签：深度学习、自然语言处理
+- 2018-01-23 - [揭开迷雾，来一顿美味的Capsule盛宴](https://spaces.ac.cn/archives/4819)
+  - 原站分类：信息时代
+  - 原站标签：深度学习、聚类、Capsule
+- 2018-01-06 - [《Attention is All You Need》浅读（简介+代码）](https://spaces.ac.cn/archives/4765)
+  - 原站分类：信息时代
+  - 原站标签：模型、深度学习、attention
+- 2017-12-25 - [从loss的硬截断、软化到focal loss](https://spaces.ac.cn/archives/4733)
+  - 原站分类：信息时代
+  - 原站标签：模型、深度学习、损失函数
+- 2017-10-26 - [浅谈神经网络中激活函数的设计](https://spaces.ac.cn/archives/4647)
+  - 原站分类：信息时代
+  - 原站标签：神经网络
+- 2017-10-14 - [训练集、验证集和测试集的意义](https://spaces.ac.cn/archives/4638)
+  - 原站分类：信息时代
+  - 原站标签：模型、深度学习
+- 2017-10-13 - [基于fine tune的图像分类（百度分狗竞赛）](https://spaces.ac.cn/archives/4611)
+  - 原站分类：信息时代
+  - 原站标签：分类、图像、深度学习
+- 2017-09-10 - [RNN模型中输入的重要性的评估](https://spaces.ac.cn/archives/4582)
+  - 原站分类：信息时代
+  - 原站标签：深度学习
+- 2017-09-03 - [开学啦！咱们来做完形填空～（讯飞杯）](https://spaces.ac.cn/archives/4564)
+  - 原站分类：信息时代
+  - 原站标签：神经网络、机器学习、比赛
+- 2017-08-27 - [fashion mnist的一个baseline (MobileNet 95%)](https://spaces.ac.cn/archives/4556)
+  - 原站分类：信息时代
+  - 原站标签：神经网络、深度学习
+- 2017-08-26 - [fashion-mnist的gan玩具](https://spaces.ac.cn/archives/4540)
+  - 原站分类：信息时代
+  - 原站标签：深度学习、GAN、生成模型
+- 2017-08-08 - [【备忘】谈谈dropout](https://spaces.ac.cn/archives/4521)
+  - 原站分类：信息时代
+  - 原站标签：深度学习
+- 2017-07-24 - [基于Xception的腾讯验证码识别（样本+代码）](https://spaces.ac.cn/archives/4503)
+  - 原站分类：信息时代
+  - 原站标签：图像、深度学习、数据集
+- 2017-07-22 - [Keras中自定义复杂的loss函数](https://spaces.ac.cn/archives/4493)
+  - 原站分类：信息时代
+  - 原站标签：模型、深度学习、损失函数、keras
+- 2017-05-04 - [记录一次半监督的情感分析](https://spaces.ac.cn/archives/4374)
+  - 原站分类：信息时代
+  - 原站标签：深度学习、文本挖掘
+- 2017-03-14 - [泰迪杯赛前培训之数据挖掘与建模“慢谈”](https://spaces.ac.cn/archives/4271)
+  - 原站分类：信息时代
+  - 原站标签：数据挖掘
+- 2016-12-14 - [端到端的腾讯验证码识别（46%正确率）](https://spaces.ac.cn/archives/4138)
+  - 原站分类：信息时代
+  - 原站标签：图像、深度学习、OCR、端到端
+- 2016-12-03 - [词向量与Embedding究竟是怎么回事？](https://spaces.ac.cn/archives/4122)
+  - 原站分类：信息时代
+  - 原站标签：深度学习、自然语言处理
+- 2016-12-01 - [基于双向GRU和语言模型的视角情感分析](https://spaces.ac.cn/archives/4118)
+  - 原站分类：信息时代
+  - 原站标签：模型、python、深度学习、自然语言处理
+- 2016-11-29 - [轻便的深度学习分词系统：NNCWS v0.1](https://spaces.ac.cn/archives/4114)
+  - 原站分类：信息时代
+  - 原站标签：分词、自然语言处理
+- 2016-11-25 - [三顾碎纸复原：基于CNN的碎纸复原](https://spaces.ac.cn/archives/4100)
+  - 原站分类：信息时代
+  - 原站标签：python、建模、图像、深度学习
+- 2016-07-01 - [从Boosting学习到神经网络：看山是山？](https://spaces.ac.cn/archives/3873)
+  - 原站分类：信息时代
+  - 原站标签：神经网络、Boosting、感情分类
+- 2016-05-15 - [Coming Back...](https://spaces.ac.cn/archives/3735)
+  - 原站分类：生活/情感
+  - 原站标签：路径积分、数据挖掘
+- 2016-01-18 - [当大数据进入厨房：让大数据教你做菜！](https://spaces.ac.cn/archives/3587)
+  - 原站分类：信息时代
+  - 原站标签：python、厨房、数据挖掘、爱好
+- 2015-12-06 - [人生苦短，我用Python！](https://spaces.ac.cn/archives/3546)
+  - 原站分类：信息时代
+  - 原站标签：python、数据挖掘
+- 2015-11-13 - [ARXIV数学论文分布：偏微分方程最热门！](https://spaces.ac.cn/archives/3511)
+  - 原站分类：信息时代
+  - 原站标签：python、数据挖掘
+- 2015-07-02 - [用Pandas实现高效的Apriori算法](https://spaces.ac.cn/archives/3380)
+  - 原站分类：信息时代
+  - 原站标签：python、数据挖掘、关联分析
+- 2015-06-06 - [闲聊：神经网络与深度学习](https://spaces.ac.cn/archives/3331)
+  - 原站分类：信息时代
+  - 原站标签：神经网络、深度学习、机器学习
+- 2014-12-31 - [我的写论文软件组合](https://spaces.ac.cn/archives/3171)
+  - 原站分类：生活/情感
+  - 原站标签：python、建模
+- 2014-12-18 - [迟到一年的建模：再探碎纸复原](https://spaces.ac.cn/archives/3134)
+  - 原站分类：数学研究
+  - 原站标签：代码、python、建模、图像
+- 2014-12-15 - [两生物种群竞争模型：LaTeX+Python](https://spaces.ac.cn/archives/3120)
+  - 原站分类：数学研究
+  - 原站标签：微分方程、分析、建模、定性
+- 2014-09-11 - [\[备份\]全国大学生数学建模竞赛论文LaTex模板](https://spaces.ac.cn/archives/2935)
+  - 原站分类：资源共享
+  - 原站标签：转载、下载、建模
+- 2013-09-22 - [一个人的数学建模：碎纸复原](https://spaces.ac.cn/archives/2067)
+  - 原站分类：数学研究
+  - 原站标签：软件、代码、建模

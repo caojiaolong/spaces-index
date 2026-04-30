@@ -1,0 +1,382 @@
+# 工程工具
+
+[返回主题索引](index.md)
+
+共 121 篇。
+
+<a id="series-engineering-c6d727fb3c"></a>
+#### 通用爬虫探索
+
+- 2017-06-06 - [通用爬虫探索（一）：适用一般网站的爬虫](https://spaces.ac.cn/archives/4413)
+  - 原站分类：信息时代
+  - 原站标签：网站、爬虫
+  - 系列：通用爬虫探索 #1
+  - 系列主题：工程工具
+- 2017-06-06 - [通用爬虫探索（二）：落实到论坛爬取上](https://spaces.ac.cn/archives/4422)
+  - 原站分类：信息时代
+  - 原站标签：网站、爬虫
+  - 系列：通用爬虫探索 #2
+  - 系列主题：工程工具
+- 2017-06-07 - [通用爬虫探索（三）：效果展示与代码](https://spaces.ac.cn/archives/4430)
+  - 原站分类：信息时代
+  - 原站标签：网站、爬虫
+  - 系列：通用爬虫探索 #3
+  - 系列主题：工程工具
+
+<a id="series-engineering-standalone"></a>
+#### 非系列文章
+
+- 2026-01-28 - [一行代码将arXiv论文翻译成中文版](https://spaces.ac.cn/archives/11578)
+  - 原站分类：信息时代
+  - 原站标签：翻译、latex、论文、kimi
+- 2025-08-25 - [Cool Papers更新：简单适配Zotero Connector](https://spaces.ac.cn/archives/11250)
+  - 原站分类：信息时代
+  - 原站标签：网站、论文、酷论文
+- 2025-08-02 - [基于树莓派Zero2W搭建一个随身旁路由](https://spaces.ac.cn/archives/11206)
+  - 原站分类：信息时代
+  - 原站标签：linux、网络、路由器、智能家居
+- 2025-04-22 - [智能家居之手搓一套能接入米家的零冷水装置](https://spaces.ac.cn/archives/10869)
+  - 原站分类：生活/情感
+  - 原站标签：生活、智能家居
+- 2024-10-16 - [Cool Papers浏览器扩展升级至v0.2.0](https://spaces.ac.cn/archives/10480)
+  - 原站分类：信息时代
+  - 原站标签：网站、论文、酷论文
+- 2024-10-15 - [让MathJax的数学公式随窗口大小自动缩放](https://spaces.ac.cn/archives/10474)
+  - 原站分类：信息时代
+  - 原站标签：网站、latex
+- 2024-09-26 - [利用“熄火保护 + 通断器”实现燃气灶智能关火](https://spaces.ac.cn/archives/10394)
+  - 原站分类：生活/情感
+  - 原站标签：生活、智能家居、米家
+- 2024-08-26 - [近乎完美地解决MathJax与Marked的冲突](https://spaces.ac.cn/archives/10332)
+  - 原站分类：信息时代
+  - 原站标签：网站、latex、论文、酷论文
+- 2024-08-15 - [让MathJax更好地兼容谷歌翻译和延时加载](https://spaces.ac.cn/archives/10320)
+  - 原站分类：信息时代
+  - 原站标签：网站、latex、论文、酷论文
+- 2024-08-12 - [“Cool Papers + 站内搜索”的一些新尝试](https://spaces.ac.cn/archives/10311)
+  - 原站分类：信息时代
+  - 原站标签：网站、论文、酷论文
+- 2024-05-07 - [Cool Papers更新：简单搭建了一个站内检索系统](https://spaces.ac.cn/archives/10088)
+  - 原站分类：信息时代
+  - 原站标签：网站、论文、酷论文
+- 2024-02-02 - [更便捷的Cool Papers打开方式：Chrome重定向扩展](https://spaces.ac.cn/archives/9978)
+  - 原站分类：信息时代
+  - 原站标签：网站、论文、酷论文
+- 2024-01-14 - [旁门左道之如何让Python的重试代码更加优雅](https://spaces.ac.cn/archives/9938)
+  - 原站分类：信息时代
+  - 原站标签：编程、代码、python、优化
+- 2024-01-01 - [新年快乐！记录一下 Cool Papers 的开发体验](https://spaces.ac.cn/archives/9920)
+  - 原站分类：信息时代
+  - 原站标签：网站、论文、酷论文
+- 2023-12-25 - [写了个刷论文的辅助网站：Cool Papers](https://spaces.ac.cn/archives/9907)
+  - 原站分类：信息时代
+  - 原站标签：网站、论文、酷论文
+- 2023-01-04 - [智能家居之热水器零冷水技术原理浅析](https://spaces.ac.cn/archives/9405)
+  - 原站分类：生活/情感
+  - 原站标签：智能家居
+- 2022-12-05 - [智能家居之小爱同学控制极米投影仪的简单方案](https://spaces.ac.cn/archives/9365)
+  - 原站分类：生活/情感
+  - 原站标签：生活、智能家居、米家
+- 2021-12-17 - [Seq2Seq+前缀树：检索任务新范式（以KgCLUE为例）](https://spaces.ac.cn/archives/8802)
+  - 原站分类：信息时代
+  - 原站标签：代码、语义、keras、相似度
+- 2021-10-31 - [bert4keras在手，baseline我有：CLUE基准代码](https://spaces.ac.cn/archives/8739)
+  - 原站分类：信息时代
+  - 原站标签：模型、代码、keras
+- 2021-09-08 - [有限内存下全局打乱几百G文件（Python）](https://spaces.ac.cn/archives/8662)
+  - 原站分类：信息时代
+  - 原站标签：编程、python
+- 2021-01-07 - [【搜出来的文本】⋅（一）从文本生成到搜索采样](https://spaces.ac.cn/archives/8062)
+  - 原站分类：信息时代
+  - 原站标签：文本生成、采样、离散优化、MCMC
+- 2020-01-29 - [抛开约束，增强模型：一行代码提升albert表现](https://spaces.ac.cn/archives/7187)
+  - 原站分类：信息时代
+  - 原站标签：语言模型、attention
+- 2019-11-25 - [6个派生优化器的简单介绍及其实现](https://spaces.ac.cn/archives/7094)
+  - 原站分类：信息时代
+  - 原站标签：python、keras、优化器
+- 2019-10-27 - [什么时候多进程的加速比可以大于1？](https://spaces.ac.cn/archives/7031)
+  - 原站分类：信息时代
+  - 原站标签：编程、python
+- 2019-03-28 - [分享：用LaTeX+MathJax画一个三维三阶环方](https://spaces.ac.cn/archives/6534)
+  - 原站分类：数学研究
+  - 原站标签：趣味、幻方、分享
+- 2019-03-26 - [科学空间浏览指南（FAQ）](https://spaces.ac.cn/archives/6508)
+  - 原站分类：问题百科
+  - 原站标签：网站、问题、faq
+- 2018-06-07 - [python简单实现gillespie模拟](https://spaces.ac.cn/archives/5607)
+  - 原站分类：物理化学
+  - 原站标签：概率、模拟、随机、主方程
+- 2018-05-31 - [基于最小熵原理的NLP库：nlp zero](https://spaces.ac.cn/archives/5597)
+  - 原站分类：信息时代
+  - 原站标签：python、无监督、最小熵
+- 2018-05-10 - [用Numpy实现高效的Apriori算法](https://spaces.ac.cn/archives/5525)
+  - 原站分类：信息时代
+  - 原站标签：python、数据挖掘、关联分析
+- 2018-01-29 - [网站更新记录（2018年01月）](https://spaces.ac.cn/archives/5066)
+  - 原站分类：生活/情感
+  - 原站标签：网站
+- 2018-01-09 - [增强typecho的搜索功能](https://spaces.ac.cn/archives/4797)
+  - 原站分类：信息时代
+  - 原站标签：网站、python
+- 2018-01-06 - [《Attention is All You Need》浅读（简介+代码）](https://spaces.ac.cn/archives/4765)
+  - 原站分类：信息时代
+  - 原站标签：模型、深度学习、attention
+- 2017-07-24 - [基于Xception的腾讯验证码识别（样本+代码）](https://spaces.ac.cn/archives/4503)
+  - 原站分类：信息时代
+  - 原站标签：图像、深度学习、数据集
+- 2017-07-16 - [Linux下的误删大坑与简单的恢复技巧](https://spaces.ac.cn/archives/4491)
+  - 原站分类：信息时代
+  - 原站标签：linux、技巧
+- 2017-05-17 - [如何“扒”站？手把手教你爬百度百科～](https://spaces.ac.cn/archives/4385)
+  - 原站分类：信息时代
+  - 原站标签：爬虫、语料
+- 2017-04-23 - [科学空间添加新域名kexue.fm](https://spaces.ac.cn/archives/4356)
+  - 原站分类：生活/情感
+  - 原站标签：网站
+- 2017-02-19 - [Python的多进程编程技巧](https://spaces.ac.cn/archives/4231)
+  - 原站分类：信息时代
+  - 原站标签：编程、python
+- 2016-12-31 - [2017年快乐！Responsive Geekg for Typecho](https://spaces.ac.cn/archives/4164)
+  - 原站分类：生活/情感
+  - 原站标签：节日、网站
+- 2016-12-19 - [【备忘】Python中断多重循环的几种思路](https://spaces.ac.cn/archives/4159)
+  - 原站分类：信息时代
+  - 原站标签：python、备忘
+- 2016-12-01 - [基于双向GRU和语言模型的视角情感分析](https://spaces.ac.cn/archives/4118)
+  - 原站分类：信息时代
+  - 原站标签：模型、python、深度学习、自然语言处理
+- 2016-11-25 - [三顾碎纸复原：基于CNN的碎纸复原](https://spaces.ac.cn/archives/4100)
+  - 原站分类：信息时代
+  - 原站标签：python、建模、图像、深度学习
+- 2016-11-24 - [科学空间“微信群|聊天机器人”上线测试](https://spaces.ac.cn/archives/4096)
+  - 原站分类：信息时代
+  - 原站标签：网站、测试
+- 2016-09-06 - [基于双向LSTM和迁移学习的seq2seq核心实体识别](https://spaces.ac.cn/archives/3942)
+  - 原站分类：信息时代
+  - 原站标签：python、自然语言处理、识别、NER
+- 2016-09-05 - [进驻中山大学南校区，折腾校园网](https://spaces.ac.cn/archives/3936)
+  - 原站分类：信息时代
+  - 原站标签：openwrt、路由器
+- 2016-08-13 - [两个惊艳的python库：tqdm和retry](https://spaces.ac.cn/archives/3902)
+  - 原站分类：信息时代
+  - 原站标签：python
+- 2016-04-12 - [【备忘】用树莓派3做无线路由器](https://spaces.ac.cn/archives/3728)
+  - 原站分类：信息时代
+  - 原站标签：linux、路由器
+- 2016-03-07 - [通过ssh动态端口转发共享校园资源（附带干货）](https://spaces.ac.cn/archives/3651)
+  - 原站分类：信息时代
+  - 原站标签：openwrt、路由器
+- 2016-03-06 - [Openwrt自动扫描WiFi并连接中继](https://spaces.ac.cn/archives/3644)
+  - 原站分类：信息时代
+  - 原站标签：openwrt、路由器
+- 2016-03-04 - [趣题：如何编程列出一个集合的所有子集](https://spaces.ac.cn/archives/3641)
+  - 原站分类：信息时代
+  - 原站标签：python、集合
+- 2016-02-07 - [年三十折腾极路由之SSH反向代理](https://spaces.ac.cn/archives/3604)
+  - 原站分类：信息时代
+  - 原站标签：节日、网络、openwrt、路由器
+- 2016-01-20 - [简单的迅雷VIP账号获取器（Python）](https://spaces.ac.cn/archives/3594)
+  - 原站分类：信息时代
+  - 原站标签：python、爬虫
+- 2016-01-18 - [当大数据进入厨房：让大数据教你做菜！](https://spaces.ac.cn/archives/3587)
+  - 原站分类：信息时代
+  - 原站标签：python、厨房、数据挖掘、爱好
+- 2015-12-24 - [修改了一下公式的显示方式（移动端）](https://spaces.ac.cn/archives/3576)
+  - 原站分类：生活/情感
+  - 原站标签：网站、latex
+- 2015-12-06 - [人生苦短，我用Python！](https://spaces.ac.cn/archives/3546)
+  - 原站分类：信息时代
+  - 原站标签：python、数据挖掘
+- 2015-11-13 - [ARXIV数学论文分布：偏微分方程最热门！](https://spaces.ac.cn/archives/3511)
+  - 原站分类：信息时代
+  - 原站标签：python、数据挖掘
+- 2015-10-26 - [新词发现的信息熵方法与实现](https://spaces.ac.cn/archives/3491)
+  - 原站分类：信息时代
+  - 原站标签：python、最大熵、词库、新词发现
+- 2015-10-21 - [把Python脚本放到手机上定时运行](https://spaces.ac.cn/archives/3477)
+  - 原站分类：信息时代
+  - 原站标签：python、爬虫
+- 2015-07-02 - [用Pandas实现高效的Apriori算法](https://spaces.ac.cn/archives/3380)
+  - 原站分类：信息时代
+  - 原站标签：python、数据挖掘、关联分析
+- 2015-05-30 - [【备忘】维基百科与DNSCrypt](https://spaces.ac.cn/archives/3327)
+  - 原站分类：生活/情感
+  - 原站标签：网站、备忘
+- 2014-12-31 - [我的写论文软件组合](https://spaces.ac.cn/archives/3171)
+  - 原站分类：生活/情感
+  - 原站标签：python、建模
+- 2014-12-18 - [迟到一年的建模：再探碎纸复原](https://spaces.ac.cn/archives/3134)
+  - 原站分类：数学研究
+  - 原站标签：代码、python、建模、图像
+- 2014-12-15 - [两生物种群竞争模型：LaTeX+Python](https://spaces.ac.cn/archives/3120)
+  - 原站分类：数学研究
+  - 原站标签：微分方程、分析、建模、定性
+- 2014-10-28 - [在Python中使用GMP（gmpy2）](https://spaces.ac.cn/archives/3026)
+  - 原站分类：数学研究
+  - 原站标签：数论、python
+- 2014-10-17 - [两百万素数之和与“电脑病”](https://spaces.ac.cn/archives/2991)
+  - 原站分类：生活/情感
+  - 原站标签：python
+- 2014-10-07 - [班门弄斧：Python的代码能有多简洁？](https://spaces.ac.cn/archives/2971)
+  - 原站分类：生活/情感
+  - 原站标签：python、算法
+- 2014-07-22 - [初试在Python中使用PARI/GP](https://spaces.ac.cn/archives/2775)
+  - 原站分类：生活/情感
+  - 原站标签：数论、python
+- 2014-07-17 - [强大的整数数列网站OEIS](https://spaces.ac.cn/archives/2765)
+  - 原站分类：数学研究
+  - 原站标签：数论、整数
+- 2014-06-30 - [简单做了个Logo~](https://spaces.ac.cn/archives/2709)
+  - 原站分类：生活/情感
+  - 原站标签：网站
+- 2014-06-27 - [Project Euler 454 ：五天攻下“擂台”](https://spaces.ac.cn/archives/2665)
+  - 原站分类：数学研究
+  - 原站标签：素数、数论、python、优化
+- 2014-06-15 - [【备忘】访问Google的几个方式](https://spaces.ac.cn/archives/2643)
+  - 原站分类：生活/情感
+  - 原站标签：网站
+- 2014-06-11 - [用PyPy提高Python脚本执行效率](https://spaces.ac.cn/archives/2621)
+  - 原站分类：数学研究
+  - 原站标签：素数、python
+- 2014-06-10 - [两百万前素数之和与前两百万素数之和](https://spaces.ac.cn/archives/2612)
+  - 原站分类：数学研究
+  - 原站标签：素数、数论、python
+- 2014-06-04 - [【备忘】访问Google的方法（更新）](https://spaces.ac.cn/archives/2611)
+  - 原站分类：问题百科
+  - 原站标签：网站、帮助
+- 2014-04-21 - [数独的自动推理](https://spaces.ac.cn/archives/2527)
+  - 原站分类：数学研究
+  - 原站标签：逻辑、推理、数字、编程、代码、算法
+- 2014-01-19 - [宇宙驿站服务器升级完毕](https://spaces.ac.cn/archives/2304)
+  - 原站分类：生活/情感
+  - 原站标签：天文台、网站、服务器
+- 2013-09-22 - [一个人的数学建模：碎纸复原](https://spaces.ac.cn/archives/2067)
+  - 原站分类：数学研究
+  - 原站标签：软件、代码、建模
+- 2013-04-27 - [\[备忘\]历史天气查询](https://spaces.ac.cn/archives/1983)
+  - 原站分类：问题百科
+  - 原站标签：网站、历史、天气
+- 2013-01-23 - [校外通过VPN通道访问华师资源](https://spaces.ac.cn/archives/1886)
+  - 原站分类：生活/情感
+  - 原站标签：网站
+- 2012-10-06 - [哥德巴赫猜想浅谈1](https://spaces.ac.cn/archives/1727)
+  - 原站分类：数学研究
+  - 原站标签：素数、数论、哥德巴赫猜想、python
+- 2012-09-28 - [开始学习数学软件Scilab](https://spaces.ac.cn/archives/1720)
+  - 原站分类：数学研究
+  - 原站标签：编程、代码、数学软件、开发、scilab
+- 2012-08-30 - [折腾windows 8和ubuntu 12](https://spaces.ac.cn/archives/1706)
+  - 原站分类：生活/情感
+  - 原站标签：linux、纪念、系统、计算机
+- 2012-07-19 - [【备忘】在自己的电脑上搭建服务器](https://spaces.ac.cn/archives/1665)
+  - 原站分类：资源共享
+  - 原站标签：网站、软件
+- 2012-07-18 - [科学空间终于恢复访问了！](https://spaces.ac.cn/archives/1658)
+  - 原站分类：生活/情感
+  - 原站标签：网站
+- 2012-06-13 - [更换了一个相册程序](https://spaces.ac.cn/archives/1622)
+  - 原站分类：生活/情感
+  - 原站标签：网站
+- 2012-03-12 - [宇宙驿站十岁啦](https://spaces.ac.cn/archives/1557)
+  - 原站分类：生活/情感
+  - 原站标签：宇宙、网站
+- 2012-01-21 - [修改了一下背景音乐](https://spaces.ac.cn/archives/1540)
+  - 原站分类：生活/情感
+  - 原站标签：网站
+- 2011-05-07 - [本月的天象预报暂停...](https://spaces.ac.cn/archives/1349)
+  - 原站分类：生活/情感
+  - 原站标签：天象、网站
+- 2011-03-05 - [科学空间两岁了](https://spaces.ac.cn/archives/1279)
+  - 原站分类：生活/情感
+  - 原站标签：节日、网站
+- 2010-10-30 - [“天地图”试用——很细致，有瑕疵](https://spaces.ac.cn/archives/1039)
+  - 原站分类：千奇百怪
+  - 原站标签：网站、地图、测绘
+- 2010-10-06 - [《积分公式大全》网络版本](https://spaces.ac.cn/archives/976)
+  - 原站分类：数学研究
+  - 原站标签：网站、积分
+- 2010-09-11 - [中秋再见！](https://spaces.ac.cn/archives/930)
+  - 原站分类：生活/情感
+  - 原站标签：节日、网站、竞赛
+- 2010-09-10 - [科学空间今日访问量](https://spaces.ac.cn/archives/928)
+  - 原站分类：生活/情感
+  - 原站标签：网站
+- 2010-08-18 - [设计了一个导航页](https://spaces.ac.cn/archives/884)
+  - 原站分类：生活/情感
+  - 原站标签：网站
+- 2010-07-23 - [完成了一个typecho的签名图片](https://spaces.ac.cn/archives/737)
+  - 原站分类：生活/情感
+  - 原站标签：网站
+- 2010-07-23 - [Welcome New Server for CosmoStation](https://spaces.ac.cn/archives/735)
+  - 原站分类：生活/情感
+  - 原站标签：网站
+- 2010-07-22 - [欢迎大家来挑错！！](https://spaces.ac.cn/archives/734)
+  - 原站分类：生活/情感
+  - 原站标签：网站
+- 2010-07-21 - [宇宙驿站定于本周五更换服务器](https://spaces.ac.cn/archives/728)
+  - 原站分类：生活/情感
+  - 原站标签：网站
+- 2010-07-07 - [外出集训，网站暂停更新...](https://spaces.ac.cn/archives/694)
+  - 原站分类：生活/情感
+  - 原站标签：网站
+- 2010-04-20 - [4月21日全国哀悼日，科学空间深切哀悼](https://spaces.ac.cn/archives/617)
+  - 原站分类：千奇百怪
+  - 原站标签：情感、网站、全国、哀悼、地震
+- 2010-03-23 - [谷歌搜索退出中国内地](https://spaces.ac.cn/archives/556)
+  - 原站分类：千奇百怪
+  - 原站标签：Google、转载
+- 2010-02-07 - [最近广告特别多...（严厉声明）](https://spaces.ac.cn/archives/411)
+  - 原站分类：生活/情感
+  - 原站标签：网站
+- 2010-01-15 - [科学空间论坛成立，正式开放！](https://spaces.ac.cn/archives/339)
+  - 原站分类：生活/情感
+  - 原站标签：网站、日环食、假期
+- 2009-12-31 - [网站PR升到3了！](https://spaces.ac.cn/archives/335)
+  - 原站分类：生活/情感
+  - 原站标签：网站
+- 2009-12-14 - [域名Sci-Cn.cn转让...](https://spaces.ac.cn/archives/301)
+  - 原站分类：生活/情感
+  - 原站标签：网站
+- 2009-11-14 - [科学空间相册上线,与你分享科学图片](https://spaces.ac.cn/archives/275)
+  - 原站分类：生活/情感
+  - 原站标签：情感、网站
+- 2009-11-01 - [本站域名Spaces.Ac.Cn的PR为2了](https://spaces.ac.cn/archives/241)
+  - 原站分类：生活/情感
+  - 原站标签：网站
+- 2009-10-11 - [微型博客在中国](https://spaces.ac.cn/archives/189)
+  - 原站分类：千奇百怪
+  - 原站标签：中国、网站
+- 2009-10-05 - [重新拥抱国家天文台！](https://spaces.ac.cn/archives/146)
+  - 原站分类：生活/情感
+  - 原站标签：天文台、网站
+- 2009-09-13 - [第一次使用linux写日志](https://spaces.ac.cn/archives/123)
+  - 原站分类：生活/情感
+  - 原站标签：linux、日志、纪念
+- 2009-08-30 - [在线投稿系统上线！欢迎大家来投稿](https://spaces.ac.cn/archives/108)
+  - 原站分类：生活/情感
+  - 原站标签：在线、系统、网站
+- 2009-08-21 - [网站统计总结|来访信息综合](https://spaces.ac.cn/archives/91)
+  - 原站分类：生活/情感
+  - 原站标签：统计、信息、网站
+- 2009-08-16 - [校准你的钟表（时间科普网站）](https://spaces.ac.cn/archives/79)
+  - 原站分类：千奇百怪
+  - 原站标签：时间、flash、精确
+- 2009-08-16 - [澳大利亚网站请您向外星人问好](https://spaces.ac.cn/archives/77)
+  - 原站分类：天文探索
+  - 原站标签：转载、网站、外星人、澳大利亚
+- 2009-08-16 - [电脑修好了，Blog正常更新](https://spaces.ac.cn/archives/74)
+  - 原站分类：生活/情感
+  - 原站标签：网站、电脑、故障
+- 2009-07-27 - [今天升级了Blog（欢迎大家来“顶”！）](https://spaces.ac.cn/archives/80)
+  - 原站分类：生活/情感
+  - 原站标签：网站
+- 2009-07-16 - [今天把Blog升级了](https://spaces.ac.cn/archives/21)
+  - 原站分类：生活/情感
+  - 原站标签：网站
+- 2009-07-08 - [网站本次改版感悟...](https://spaces.ac.cn/archives/10)
+  - 原站分类：生活/情感
+  - 原站标签：网站
+- 2009-03-01 - [科学空间|Scientific Spaces 介绍](https://spaces.ac.cn/archives/12)
+  - 原站分类：生活/情感
+  - 原站标签：网站

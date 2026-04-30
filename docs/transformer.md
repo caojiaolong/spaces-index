@@ -1,0 +1,560 @@
+# 大模型与Transformer
+
+[返回主题索引](index.md)
+
+共 148 篇。
+
+<a id="series-transformer-86fdf79074"></a>
+#### MuP之上
+
+- 2025-10-21 - [MuP之上：1. 好模型的三个特征](https://spaces.ac.cn/archives/11340)
+  - 原站分类：信息时代
+  - 原站标签：优化、优化器、尺度定律、MuP
+  - 系列：MuP之上 #1
+  - 系列主题：大模型与Transformer
+- 2026-02-15 - [MuP之上：2. 线性层与最速下降](https://spaces.ac.cn/archives/11605)
+  - 原站分类：信息时代
+  - 原站标签：矩阵、线性、优化器、muon、MuP
+  - 系列：MuP之上 #2
+  - 系列主题：大模型与Transformer
+- 2026-03-02 - [MuP之上：3. 特殊情况特殊处理](https://spaces.ac.cn/archives/11647)
+  - 原站分类：信息时代
+  - 原站标签：不等式、矩阵、线性、优化器、MuP
+  - 系列：MuP之上 #3
+  - 系列主题：大模型与Transformer
+- 2026-04-24 - [MuP之上：4. 坚守参数的稳定性](https://spaces.ac.cn/archives/11729)
+  - 原站分类：信息时代
+  - 原站标签：矩阵、稳定性、优化器、muon、MuP
+  - 系列：MuP之上 #4
+  - 系列主题：大模型与Transformer
+
+<a id="series-transformer-f5569856ba"></a>
+#### MoE环游记
+
+- 2025-02-08 - [MoE环游记：1、从几何意义出发](https://spaces.ac.cn/archives/10699)
+  - 原站分类：信息时代
+  - 原站标签：模型、几何、稀疏、moe
+  - 系列：MoE环游记 #1
+  - 系列主题：大模型与Transformer
+- 2025-02-21 - [MoE环游记：2、不患寡而患不均](https://spaces.ac.cn/archives/10735)
+  - 原站分类：数学研究
+  - 原站标签：损失函数、梯度、稀疏、moe
+  - 系列：MoE环游记 #2
+  - 系列主题：大模型与Transformer
+- 2025-03-05 - [MoE环游记：3、换个思路来分配](https://spaces.ac.cn/archives/10757)
+  - 原站分类：信息时代
+  - 原站标签：最优、损失函数、梯度、moe
+  - 系列：MoE环游记 #3
+  - 系列主题：大模型与Transformer
+- 2025-03-28 - [MoE环游记：4、难处应当多投入](https://spaces.ac.cn/archives/10815)
+  - 原站分类：信息时代
+  - 原站标签：优化、梯度、moe、动态
+  - 系列：MoE环游记 #4
+  - 系列主题：大模型与Transformer
+- 2025-05-16 - [MoE环游记：5、均匀分布的反思](https://spaces.ac.cn/archives/10945)
+  - 原站分类：信息时代
+  - 原站标签：优化、稀疏、moe
+  - 系列：MoE环游记 #5
+  - 系列主题：大模型与Transformer
+- 2026-02-22 - [MoE环游记：6、最优分配促均衡](https://spaces.ac.cn/archives/11619)
+  - 原站分类：数学研究
+  - 原站标签：线性、对偶、优化、梯度、moe
+  - 系列：MoE环游记 #6
+  - 系列主题：大模型与Transformer
+- 2026-02-23 - [MoE环游记：7、动态激活极简解](https://spaces.ac.cn/archives/11626)
+  - 原站分类：数学研究
+  - 原站标签：线性、对偶、优化、moe、动态
+  - 系列：MoE环游记 #7
+  - 系列主题：大模型与Transformer
+
+<a id="series-transformer-34e65637fd"></a>
+#### Transformer升级之路
+
+- 2021-03-08 - [Transformer升级之路：1、Sinusoidal位置编码追根溯源](https://spaces.ac.cn/archives/8231)
+  - 原站分类：数学研究
+  - 原站标签：复数、分析、attention、位置编码
+  - 系列：Transformer升级之路 #1
+  - 系列主题：大模型与Transformer
+- 2021-03-23 - [Transformer升级之路：2、博采众长的旋转式位置编码](https://spaces.ac.cn/archives/8265)
+  - 原站分类：信息时代
+  - 原站标签：复数、语言模型、attention、位置编码、rope
+  - 系列：Transformer升级之路 #2
+  - 系列主题：大模型与Transformer
+- 2021-04-22 - [Transformer升级之路：3、从Performer到线性Attention](https://spaces.ac.cn/archives/8338)
+  - 原站分类：信息时代
+  - 原站标签：语言模型、attention
+  - 系列：Transformer升级之路 #3
+  - 系列主题：大模型与Transformer
+- 2021-05-10 - [Transformer升级之路：4、二维位置的旋转式位置编码](https://spaces.ac.cn/archives/8397)
+  - 原站分类：数学研究
+  - 原站标签：复数、矩阵、attention、位置编码、rope
+  - 系列：Transformer升级之路 #4
+  - 系列主题：大模型与Transformer
+- 2021-08-06 - [Transformer升级之路：5、作为无限维的线性Attention](https://spaces.ac.cn/archives/8601)
+  - 原站分类：信息时代
+  - 原站标签：语言模型、attention、核方法
+  - 系列：Transformer升级之路 #5
+  - 系列主题：大模型与Transformer
+- 2022-12-28 - [Transformer升级之路：6、旋转位置编码的完备性分析](https://spaces.ac.cn/archives/9403)
+  - 原站分类：信息时代
+  - 原站标签：矩阵、attention、位置编码、rope
+  - 系列：Transformer升级之路 #6
+  - 系列主题：大模型与Transformer
+- 2023-01-12 - [Transformer升级之路：7、长度外推性与局部注意力](https://spaces.ac.cn/archives/9431)
+  - 原站分类：信息时代
+  - 原站标签：语言模型、attention、位置编码、外推
+  - 系列：Transformer升级之路 #7
+  - 系列主题：大模型与Transformer
+- 2023-01-31 - [Transformer升级之路：8、长度外推性与位置鲁棒性](https://spaces.ac.cn/archives/9444)
+  - 原站分类：信息时代
+  - 原站标签：语言模型、attention、位置编码、外推
+  - 系列：Transformer升级之路 #8
+  - 系列主题：大模型与Transformer
+- 2023-05-12 - [Transformer升级之路：9、一种全局长度外推的新思路](https://spaces.ac.cn/archives/9603)
+  - 原站分类：信息时代
+  - 原站标签：attention、泛化、外推
+  - 系列：Transformer升级之路 #9
+  - 系列主题：大模型与Transformer
+- 2023-07-06 - [Transformer升级之路：10、RoPE是一种β进制编码](https://spaces.ac.cn/archives/9675)
+  - 原站分类：信息时代
+  - 原站标签：attention、位置编码、泛化、外推、rope
+  - 系列：Transformer升级之路 #10
+  - 系列主题：大模型与Transformer
+- 2023-07-31 - [Transformer升级之路：11、将β进制位置进行到底](https://spaces.ac.cn/archives/9706)
+  - 原站分类：信息时代
+  - 原站标签：attention、位置编码、泛化、外推、rope
+  - 系列：Transformer升级之路 #11
+  - 系列主题：大模型与Transformer
+- 2023-08-07 - [Transformer升级之路：12、无限外推的ReRoPE？](https://spaces.ac.cn/archives/9708)
+  - 原站分类：信息时代
+  - 原站标签：attention、位置编码、泛化、外推、rope
+  - 系列：Transformer升级之路 #12
+  - 系列主题：大模型与Transformer
+- 2023-08-14 - [Transformer升级之路：13、逆用Leaky ReRoPE](https://spaces.ac.cn/archives/9728)
+  - 原站分类：信息时代
+  - 原站标签：attention、位置编码、泛化、外推、rope
+  - 系列：Transformer升级之路 #13
+  - 系列主题：大模型与Transformer
+- 2023-08-24 - [Transformer升级之路：14、当HWFA遇见ReRoPE](https://spaces.ac.cn/archives/9731)
+  - 原站分类：信息时代
+  - 原站标签：attention、位置编码、外推、rope
+  - 系列：Transformer升级之路 #14
+  - 系列主题：大模型与Transformer
+- 2023-11-20 - [Transformer升级之路：15、Key归一化助力长度外推](https://spaces.ac.cn/archives/9859)
+  - 原站分类：信息时代
+  - 原站标签：attention、位置编码、泛化、外推
+  - 系列：Transformer升级之路 #15
+  - 系列主题：大模型与Transformer
+- 2024-01-26 - [Transformer升级之路：16、“复盘”长度外推技术](https://spaces.ac.cn/archives/9948)
+  - 原站分类：信息时代
+  - 原站标签：attention、位置编码、泛化、外推、rope
+  - 系列：Transformer升级之路 #16
+  - 系列主题：大模型与Transformer
+- 2024-03-29 - [Transformer升级之路：17、多模态位置编码的简单思考](https://spaces.ac.cn/archives/10040)
+  - 原站分类：信息时代
+  - 原站标签：attention、位置编码、rope、多模态
+  - 系列：Transformer升级之路 #17
+  - 系列主题：大模型与Transformer
+- 2024-05-29 - [Transformer升级之路：18、RoPE的底数选择原则](https://spaces.ac.cn/archives/10122)
+  - 原站分类：信息时代
+  - 原站标签：不等式、attention、位置编码、rope
+  - 系列：Transformer升级之路 #18
+  - 系列主题：大模型与Transformer
+- 2025-04-18 - [Transformer升级之路：19、第二类旋转位置编码](https://spaces.ac.cn/archives/10862)
+  - 原站分类：数学研究
+  - 原站标签：语言模型、attention、位置编码、rope
+  - 系列：Transformer升级之路 #19
+  - 系列主题：大模型与Transformer
+- 2025-05-04 - [Transformer升级之路：20、MLA好在哪里?（上）](https://spaces.ac.cn/archives/10907)
+  - 原站分类：信息时代
+  - 原站标签：优化、语言模型、生成模型、attention
+  - 系列：Transformer升级之路 #20
+  - 系列主题：大模型与Transformer
+- 2025-07-10 - [Transformer升级之路：21、MLA好在哪里?（下）](https://spaces.ac.cn/archives/11111)
+  - 原站分类：信息时代
+  - 原站标签：优化、语言模型、生成模型、attention
+  - 系列：Transformer升级之路 #21
+  - 系列主题：大模型与Transformer
+
+<a id="series-transformer-2e7d329847"></a>
+#### “闭门造车”之多模态思路浅谈
+
+- 2024-02-21 - [“闭门造车”之多模态思路浅谈（一）：无损输入](https://spaces.ac.cn/archives/9984)
+  - 原站分类：信息时代
+  - 原站标签：生成模型、attention、扩散、多模态
+  - 系列：“闭门造车”之多模态思路浅谈 #1
+  - 系列主题：大模型与Transformer
+- 2024-07-08 - [“闭门造车”之多模态思路浅谈（二）：自回归](https://spaces.ac.cn/archives/10197)
+  - 原站分类：信息时代
+  - 原站标签：生成模型、扩散、多模态、自回归
+  - 系列：“闭门造车”之多模态思路浅谈 #2
+  - 系列主题：大模型与Transformer
+- 2024-09-06 - [“闭门造车”之多模态思路浅谈（三）：位置编码](https://spaces.ac.cn/archives/10352)
+  - 原站分类：信息时代
+  - 原站标签：attention、位置编码、多模态
+  - 系列：“闭门造车”之多模态思路浅谈 #3
+  - 系列主题：大模型与Transformer
+
+<a id="series-transformer-32697fc150"></a>
+#### 对齐全量微调！这是我看过最精彩的LoRA改进
+
+- 2024-07-12 - [对齐全量微调！这是我看过最精彩的LoRA改进（一）](https://spaces.ac.cn/archives/10226)
+  - 原站分类：数学研究
+  - 原站标签：梯度、优化器、低秩、lora
+  - 系列：对齐全量微调！这是我看过最精彩的LoRA改进 #1
+  - 系列主题：大模型与Transformer
+- 2024-07-29 - [对齐全量微调！这是我看过最精彩的LoRA改进（二）](https://spaces.ac.cn/archives/10266)
+  - 原站分类：信息时代
+  - 原站标签：梯度、优化器、低秩、lora
+  - 系列：对齐全量微调！这是我看过最精彩的LoRA改进 #2
+  - 系列主题：大模型与Transformer
+
+<a id="series-transformer-7e9346ae49"></a>
+#### 重温SSM
+
+- 2024-05-24 - [重温SSM（一）：线性系统和HiPPO矩阵](https://spaces.ac.cn/archives/10114)
+  - 原站分类：数学研究
+  - 原站标签：微分方程、线性、RNN、ssm
+  - 系列：重温SSM #1
+  - 系列主题：大模型与Transformer
+- 2024-06-05 - [重温SSM（二）：HiPPO的一些遗留问题](https://spaces.ac.cn/archives/10137)
+  - 原站分类：数学研究
+  - 原站标签：线性、差分、RNN、梯度、ssm
+  - 系列：重温SSM #2
+  - 系列主题：大模型与Transformer
+- 2024-06-20 - [重温SSM（三）：HiPPO的高效计算（S4）](https://spaces.ac.cn/archives/10162)
+  - 原站分类：数学研究
+  - 原站标签：矩阵、线性、RNN、ssm
+  - 系列：重温SSM #3
+  - 系列主题：大模型与Transformer
+- 2024-06-27 - [重温SSM（四）：有理生成函数的新视角](https://spaces.ac.cn/archives/10180)
+  - 原站分类：数学研究
+  - 原站标签：生成函数、线性、RNN、ssm
+  - 系列：重温SSM #4
+  - 系列主题：大模型与Transformer
+
+<a id="series-transformer-standalone"></a>
+#### 非系列文章
+
+- 2026-03-19 - [Attention Residuals 回忆录](https://spaces.ac.cn/archives/11664)
+  - 原站分类：信息时代
+  - 原站标签：模型、优化、attention、尺度定律、深度
+- 2026-01-26 - [DeltaNet的核心逆矩阵的元素总是在\[-1, 1\]内](https://spaces.ac.cn/archives/11563)
+  - 原站分类：数学研究
+  - 原站标签：矩阵、线性、RNN、attention
+- 2025-12-23 - [为什么DeltaNet要加L2 Normalize？](https://spaces.ac.cn/archives/11486)
+  - 原站分类：数学研究
+  - 原站标签：微分方程、线性、RNN、attention
+- 2025-10-27 - [低精度Attention可能存在有偏的舍入误差](https://spaces.ac.cn/archives/11371)
+  - 原站分类：信息时代
+  - 原站标签：近似、分析、优化、attention
+- 2025-10-05 - [为什么线性注意力要加Short Conv？](https://spaces.ac.cn/archives/11320)
+  - 原站分类：信息时代
+  - 原站标签：线性、RNN、生成模型、attention
+- 2025-07-12 - [QK-Clip：让Muon在Scaleup之路上更进一步](https://spaces.ac.cn/archives/11126)
+  - 原站分类：信息时代
+  - 原站标签：优化、attention、优化器、muon
+- 2025-07-01 - [“对角+低秩”三角阵的高效求逆方法](https://spaces.ac.cn/archives/11072)
+  - 原站分类：数学研究
+  - 原站标签：计算、矩阵、RNN、attention
+- 2025-06-20 - [线性注意力简史：从模仿、创新到反哺](https://spaces.ac.cn/archives/11033)
+  - 原站分类：信息时代
+  - 原站标签：线性、RNN、生成模型、attention
+- 2025-03-24 - [高阶MuP：更简明但更高明的谱条件缩放](https://spaces.ac.cn/archives/10795)
+  - 原站分类：数学研究
+  - 原站标签：梯度、优化器、尺度定律、谱范数、muon、MuP
+- 2025-03-13 - [初探MuP：超参数的跨模型尺度迁移规律](https://spaces.ac.cn/archives/10770)
+  - 原站分类：数学研究
+  - 原站标签：梯度、学习率、优化器、尺度定律、MuP
+- 2025-01-17 - [细水长flow之TARFLOW：流模型满血归来？](https://spaces.ac.cn/archives/10667)
+  - 原站分类：信息时代
+  - 原站标签：流模型、flow、生成模型、attention
+- 2024-09-19 - [Softmax后传：寻找Top-K的光滑近似](https://spaces.ac.cn/archives/10373)
+  - 原站分类：数学研究
+  - 原站标签：概率、近似、梯度、光滑
+- 2024-09-01 - [Decoder-only的LLM为什么需要位置编码？](https://spaces.ac.cn/archives/10347)
+  - 原站分类：信息时代
+  - 原站标签：语言模型、attention、位置编码
+- 2024-07-24 - [Monarch矩阵：计算高效的稀疏型矩阵分解](https://spaces.ac.cn/archives/10249)
+  - 原站分类：数学研究
+  - 原站标签：矩阵、语言模型、稀疏、低秩
+- 2024-06-14 - [通向概率分布之路：盘点Softmax及其替代品](https://spaces.ac.cn/archives/10145)
+  - 原站分类：数学研究
+  - 原站标签：概率、分析、损失函数、梯度
+- 2024-05-13 - [缓存与效果的极限拉扯：从MHA、MQA、GQA到MLA](https://spaces.ac.cn/archives/10091)
+  - 原站分类：信息时代
+  - 原站标签：优化、语言模型、生成模型、attention
+- 2024-03-18 - [时空之章：将Attention视为平方复杂度的RNN](https://spaces.ac.cn/archives/10017)
+  - 原站分类：数学研究
+  - 原站标签：语言模型、RNN、attention、复杂度
+- 2024-02-27 - [配置不同的学习率，LoRA还能再涨一点？](https://spaces.ac.cn/archives/10001)
+  - 原站分类：数学研究
+  - 原站标签：梯度、优化器、低秩、lora
+- 2023-12-12 - [注意力机制真的可以“集中注意力”吗？](https://spaces.ac.cn/archives/9889)
+  - 原站分类：信息时代
+  - 原站标签：熵、稀疏、attention、秩
+- 2023-11-29 - [我在Performer中发现了Transformer-VQ的踪迹](https://spaces.ac.cn/archives/9862)
+  - 原站分类：信息时代
+  - 原站标签：量子化、语言模型、attention
+- 2023-11-09 - [VQ一下Key，Transformer的复杂度就变成线性了](https://spaces.ac.cn/archives/9844)
+  - 原站分类：数学研究
+  - 原站标签：量子化、编码、梯度、attention
+- 2023-10-22 - [从梯度最大化看Attention的Scale操作](https://spaces.ac.cn/archives/9812)
+  - 原站分类：数学研究
+  - 原站标签：优化、梯度、attention
+- 2023-10-08 - [预训练一下，Transformer的长序列成绩还能涨不少！](https://spaces.ac.cn/archives/9787)
+  - 原站分类：信息时代
+  - 原站标签：语言模型、attention
+- 2023-09-26 - [脑洞大开：非线性RNN居然也可以并行计算？](https://spaces.ac.cn/archives/9783)
+  - 原站分类：数学研究
+  - 原站标签：方程、迭代、语言模型、RNN
+- 2023-09-13 - [大词表语言模型在续写任务上的一个问题及对策](https://spaces.ac.cn/archives/9762)
+  - 原站分类：信息时代
+  - 原站标签：概率、问题、语言模型
+- 2023-07-20 - [语言模型输出端共享Embedding的重新探索](https://spaces.ac.cn/archives/9698)
+  - 原站分类：数学研究
+  - 原站标签：语言模型、初始化
+- 2023-06-08 - [Naive Bayes is all you need ?](https://spaces.ac.cn/archives/9648)
+  - 原站分类：信息时代
+  - 原站标签：语言模型、attention、LLM、贝叶斯
+- 2023-05-31 - [关于NBCE方法的一些补充说明和分析](https://spaces.ac.cn/archives/9632)
+  - 原站分类：信息时代
+  - 原站标签：语言模型、外推、LLM、贝叶斯
+- 2023-05-23 - [NBCE：使用朴素贝叶斯扩展LLM的Context处理长度](https://spaces.ac.cn/archives/9617)
+  - 原站分类：信息时代
+  - 原站标签：语言模型、外推、LLM、贝叶斯
+- 2023-04-25 - [注意力和Softmax的两点有趣发现：鲁棒性和信息量](https://spaces.ac.cn/archives/9593)
+  - 原站分类：数学研究
+  - 原站标签：信息、熵、attention
+- 2023-04-17 - [梯度视角下的LoRA：简介、分析、猜测及推广](https://spaces.ac.cn/archives/9590)
+  - 原站分类：数学研究
+  - 原站标签：梯度、优化器、低秩、lora
+- 2023-04-10 - [从JL引理看熵不变性Attention](https://spaces.ac.cn/archives/9588)
+  - 原站分类：数学研究
+  - 原站标签：熵、attention
+- 2023-04-03 - [Bias项的神奇作用：RoPE + Bias = 更好的长度外推性](https://spaces.ac.cn/archives/9577)
+  - 原站分类：信息时代
+  - 原站标签：语言模型、attention、位置编码、外推、rope
+- 2023-03-28 - [Google新作试图“复活”RNN：RNN能否再次辉煌？](https://spaces.ac.cn/archives/9554)
+  - 原站分类：信息时代
+  - 原站标签：语言模型、RNN、生成模型、attention
+- 2023-03-20 - [《为什么现在的LLM都是Decoder-only的架构？》FAQ](https://spaces.ac.cn/archives/9547)
+  - 原站分类：信息时代
+  - 原站标签：问答、语言模型、文本生成、attention
+- 2023-03-17 - [为什么现在的LLM都是Decoder-only的架构？](https://spaces.ac.cn/archives/9529)
+  - 原站分类：信息时代
+  - 原站标签：分析、语言模型、文本生成、attention
+- 2022-06-20 - [Ladder Side-Tuning：预训练模型的“过墙梯”](https://spaces.ac.cn/archives/9138)
+  - 原站分类：信息时代
+  - 原站标签：语言模型、预训练
+- 2022-06-07 - [相对位置编码Transformer的一个理论缺陷与对策](https://spaces.ac.cn/archives/9105)
+  - 原站分类：信息时代
+  - 原站标签：语言模型、attention、位置编码
+- 2022-05-18 - [当BERT-whitening引入超参数：总有一款适合你](https://spaces.ac.cn/archives/9079)
+  - 原站分类：信息时代
+  - 原站标签：语言模型、语义、语义相似度
+- 2022-05-07 - [多标签“Softmax+交叉熵”的软标签版本](https://spaces.ac.cn/archives/9064)
+  - 原站分类：信息时代
+  - 原站标签：优化、损失函数、光滑
+- 2022-04-22 - [GAU-α：尝鲜体验快好省的下一代Attention](https://spaces.ac.cn/archives/9052)
+  - 原站分类：信息时代
+  - 原站标签：语言模型、attention、预训练
+- 2022-04-20 - [你的语言模型有没有“无法预测的词”？](https://spaces.ac.cn/archives/9046)
+  - 原站分类：信息时代
+  - 原站标签：语言模型、多任务
+- 2022-04-11 - [熵不变性Softmax的一个快速推导](https://spaces.ac.cn/archives/9034)
+  - 原站分类：数学研究
+  - 原站标签：近似、熵、attention
+- 2022-04-07 - [听说Attention与Softmax更配哦～](https://spaces.ac.cn/archives/9019)
+  - 原站分类：信息时代
+  - 原站标签：熵、语言模型、attention、预训练
+- 2022-03-29 - [为什么Pre Norm的效果不如Post Norm？](https://spaces.ac.cn/archives/9009)
+  - 原站分类：信息时代
+  - 原站标签：优化、梯度、attention
+- 2022-03-21 - [RoFormerV2：自然语言理解的极限探索](https://spaces.ac.cn/archives/8998)
+  - 原站分类：信息时代
+  - 原站标签：语言模型、预训练
+- 2022-03-11 - [门控注意力单元（GAU）还需要Warmup吗？](https://spaces.ac.cn/archives/8990)
+  - 原站分类：信息时代
+  - 原站标签：模型、优化、attention
+- 2022-03-09 - [训练1000层的Transformer究竟有什么困难？](https://spaces.ac.cn/archives/8978)
+  - 原站分类：数学研究
+  - 原站标签：优化、梯度、attention
+- 2022-02-25 - [FLASH：可能是近来最有意思的高效Transformer设计](https://spaces.ac.cn/archives/8934)
+  - 原站分类：信息时代
+  - 原站标签：语言模型、生成模型、attention
+- 2021-12-21 - [从熵不变性看Attention的Scale操作](https://spaces.ac.cn/archives/8823)
+  - 原站分类：信息时代
+  - 原站标签：概率、熵、attention
+- 2021-09-10 - [曾被嫌弃的预训练任务NSP，做出了优秀的Zero Shot效果](https://spaces.ac.cn/archives/8671)
+  - 原站分类：信息时代
+  - 原站标签：无监督、语言模型、NLP、模版
+- 2021-09-01 - [从三角不等式到Margin Softmax](https://spaces.ac.cn/archives/8656)
+  - 原站分类：信息时代
+  - 原站标签：损失函数、相似度
+- 2021-08-17 - [浅谈Transformer的初始化、参数化与标准化](https://spaces.ac.cn/archives/8620)
+  - 原站分类：数学研究
+  - 原站标签：模型、优化、梯度、attention
+- 2021-08-09 - [线性Transformer应该不是你要等的那个模型](https://spaces.ac.cn/archives/8610)
+  - 原站分类：信息时代
+  - 原站标签：模型、矩阵、attention
+- 2021-07-19 - [用开源的人工标注数据来增强RoFormer-Sim](https://spaces.ac.cn/archives/8541)
+  - 原站分类：信息时代
+  - 原站标签：语言模型、生成模型、文本生成
+- 2021-06-29 - [UniVAE：基于Transformer的单模型、多尺度的VAE模型](https://spaces.ac.cn/archives/8475)
+  - 原站分类：信息时代
+  - 原站标签：变分、无监督、vae、attention
+- 2021-06-11 - [SimBERTv2来了！融合检索和生成的RoFormer-Sim模型](https://spaces.ac.cn/archives/8454)
+  - 原站分类：信息时代
+  - 原站标签：语言模型、生成模型、文本生成
+- 2021-06-02 - [我们可以无损放大一个Transformer模型吗（一）](https://spaces.ac.cn/archives/8444)
+  - 原站分类：数学研究
+  - 原站标签：模型、优化、attention
+  - 系列：我们可以无损放大一个Transformer模型吗 #1
+- 2021-05-24 - [也来盘点一些最近的非Transformer工作](https://spaces.ac.cn/archives/8431)
+  - 原站分类：信息时代
+  - 原站标签：模型、优化、语言模型、attention
+- 2021-04-26 - [中文任务还是SOTA吗？我们给SimCSE补充了一些实验](https://spaces.ac.cn/archives/8348)
+  - 原站分类：信息时代
+  - 原站标签：语言模型、语义、语义相似度、对比学习
+- 2021-04-16 - [搜狐文本匹配：基于条件LayerNorm的多任务baseline](https://spaces.ac.cn/archives/8337)
+  - 原站分类：信息时代
+  - 原站标签：语言模型、比赛、语义相似度
+- 2021-04-11 - [无监督语义相似度哪家强？我们做了个比较全面的评测](https://spaces.ac.cn/archives/8321)
+  - 原站分类：信息时代
+  - 原站标签：语言模型、语义、语义相似度
+- 2021-04-03 - [P-tuning：自动构建模版，释放语言模型潜能](https://spaces.ac.cn/archives/8295)
+  - 原站分类：信息时代
+  - 原站标签：语言模型、NLP
+- 2021-03-05 - [短文本匹配Baseline：脱敏数据使用预训练模型的尝试](https://spaces.ac.cn/archives/8213)
+  - 原站分类：信息时代
+  - 原站标签：语言模型、语义、语义相似度
+- 2021-03-03 - [T5 PEGASUS：开源一个中文生成式预训练模型](https://spaces.ac.cn/archives/8209)
+  - 原站分类：信息时代
+  - 原站标签：语言模型、文本生成、attention
+- 2021-02-16 - [Nyströmformer：基于矩阵分解的线性化Attention方案](https://spaces.ac.cn/archives/8180)
+  - 原站分类：信息时代
+  - 原站标签：矩阵、语言模型、attention
+- 2021-02-03 - [让研究人员绞尽脑汁的Transformer位置编码](https://spaces.ac.cn/archives/8130)
+  - 原站分类：信息时代
+  - 原站标签：复数、attention、位置编码
+- 2021-01-26 - [Seq2Seq重复解码现象的理论分析尝试](https://spaces.ac.cn/archives/8128)
+  - 原站分类：数学研究
+  - 原站标签：矩阵、语言模型、文本生成、解码
+- 2021-01-11 - [你可能不需要BERT-flow：一个线性变换媲美BERT-flow](https://spaces.ac.cn/archives/8069)
+  - 原站分类：数学研究
+  - 原站标签：语言模型、语义、flow、语义相似度
+- 2020-12-24 - [RealFormer：把残差转移到Attention矩阵上面去](https://spaces.ac.cn/archives/8027)
+  - 原站分类：信息时代
+  - 原站标签：梯度、attention
+- 2020-12-04 - [层次分解位置编码，让BERT可以处理超长文本](https://spaces.ac.cn/archives/7947)
+  - 原站分类：信息时代
+  - 原站标签：模型、优化、attention
+- 2020-12-01 - [Performer：用随机投影将Attention的复杂度线性化](https://spaces.ac.cn/archives/7921)
+  - 原站分类：数学研究
+  - 原站标签：优化、attention
+- 2020-11-20 - [跟风玩玩目前最大的中文GPT2模型（bert4keras）](https://spaces.ac.cn/archives/7912)
+  - 原站分类：信息时代
+  - 原站标签：语言模型、文本生成、attention
+- 2020-11-11 - [当GPT遇上中国象棋：写过文章解过题，要不再来下盘棋？](https://spaces.ac.cn/archives/7877)
+  - 原站分类：信息时代
+  - 原站标签：中国象棋、语言模型、attention
+- 2020-11-06 - [那个屠榜的T5模型，现在可以在中文上玩玩了](https://spaces.ac.cn/archives/7867)
+  - 原站分类：信息时代
+  - 原站标签：语言模型、文本生成、attention
+- 2020-10-29 - [用ALBERT和ELECTRA之前，请确认你真的了解它们](https://spaces.ac.cn/archives/7846)
+  - 原站分类：信息时代
+  - 原站标签：语言模型、attention
+- 2020-10-27 - [TeaForN：让Teacher Forcing更有“远见”一些](https://spaces.ac.cn/archives/7818)
+  - 原站分类：信息时代
+  - 原站标签：优化、语言模型、文本生成
+- 2020-10-19 - [BERT可以上几年级了？Seq2Seq“硬刚”小学数学应用题](https://spaces.ac.cn/archives/7809)
+  - 原站分类：数学研究
+  - 原站标签：语言模型、文本生成
+- 2020-09-27 - [必须要GPT3吗？不，BERT的MLM模型也能小样本学习](https://spaces.ac.cn/archives/7764)
+  - 原站分类：信息时代
+  - 原站标签：无监督、语言模型、NLP
+- 2020-09-18 - [提速不掉点：基于词颗粒度的中文WoBERT](https://spaces.ac.cn/archives/7758)
+  - 原站分类：信息时代
+  - 原站标签：语言模型、attention
+- 2020-09-07 - [动手做个DialoGPT：基于LM的生成式多轮对话模型](https://spaces.ac.cn/archives/7718)
+  - 原站分类：信息时代
+  - 原站标签：语言模型、文本生成、attention
+- 2020-08-07 - [修改Transformer结构，设计一个更快更好的MLM模型](https://spaces.ac.cn/archives/7661)
+  - 原站分类：信息时代
+  - 原站标签：语言模型、attention
+- 2020-07-25 - [学会提问的BERT：端到端地从篇章中构建问答对](https://spaces.ac.cn/archives/7630)
+  - 原站分类：信息时代
+  - 原站标签：语言模型、文本生成
+- 2020-07-17 - [BERT-of-Theseus：基于模块替换的模型压缩方法](https://spaces.ac.cn/archives/7575)
+  - 原站分类：信息时代
+  - 原站标签：模型、attention、模型压缩
+- 2020-07-04 - [线性Attention的探索：Attention必须有个Softmax吗？](https://spaces.ac.cn/archives/7546)
+  - 原站分类：信息时代
+  - 原站标签：模型、文本生成、attention
+- 2020-06-16 - [如何应对Seq2Seq中的“根本停不下来”问题？](https://spaces.ac.cn/archives/7500)
+  - 原站分类：信息时代
+  - 原站标签：语言模型、文本生成、解码
+- 2020-05-25 - [Google新作Synthesizer：我们还不够了解自注意力](https://spaces.ac.cn/archives/7430)
+  - 原站分类：信息时代
+  - 原站标签：语言模型、attention
+- 2020-05-18 - [鱼与熊掌兼得：融合检索和生成的SimBERT模型](https://spaces.ac.cn/archives/7427)
+  - 原站分类：信息时代
+  - 原站标签：语言模型、生成模型、文本生成
+- 2020-04-25 - [将“Softmax+交叉熵”推广到多标签分类问题](https://spaces.ac.cn/archives/7359)
+  - 原站分类：数学研究
+  - 原站标签：优化、损失函数、光滑
+- 2020-04-13 - [突破瓶颈，打造更强大的Transformer](https://spaces.ac.cn/archives/7325)
+  - 原站分类：信息时代
+  - 原站标签：概率、深度学习、attention
+- 2020-04-02 - [bert4keras在手，baseline我有：百度LIC2020](https://spaces.ac.cn/archives/7321)
+  - 原站分类：信息时代
+  - 原站标签：模型、keras、attention
+- 2020-03-16 - [现在可以用Keras玩中文GPT2了（GPT2_ML）](https://spaces.ac.cn/archives/7292)
+  - 原站分类：信息时代
+  - 原站标签：语言模型、NLP、文本生成、attention
+- 2020-03-09 - [Seq2Seq中Exposure Bias现象的浅析与对策](https://spaces.ac.cn/archives/7259)
+  - 原站分类：信息时代
+  - 原站标签：语言模型、文本生成、对抗训练
+- 2020-01-29 - [抛开约束，增强模型：一行代码提升albert表现](https://spaces.ac.cn/archives/7187)
+  - 原站分类：信息时代
+  - 原站标签：语言模型、attention
+- 2020-01-03 - [用bert4keras做三元组抽取](https://spaces.ac.cn/archives/7161)
+  - 原站分类：信息时代
+  - 原站标签：语言模型、信息抽取
+- 2019-12-26 - [“非自回归”也不差：基于MLM的阅读理解问答](https://spaces.ac.cn/archives/7148)
+  - 原站分类：信息时代
+  - 原站标签：问答、语言模型、生成模型、文本生成
+- 2019-12-14 - [基于Conditional Layer Normalization的条件文本生成](https://spaces.ac.cn/archives/7124)
+  - 原站分类：信息时代
+  - 原站标签：语言模型、文本生成、attention
+- 2019-12-05 - [万能的seq2seq：基于seq2seq的阅读理解问答](https://spaces.ac.cn/archives/7115)
+  - 原站分类：信息时代
+  - 原站标签：问答、语言模型、文本生成
+- 2019-09-18 - [从语言模型到Seq2Seq：Transformer如戏，全靠Mask](https://spaces.ac.cn/archives/6933)
+  - 原站分类：信息时代
+  - 原站标签：语言模型、NLP、文本生成、attention
+- 2019-08-27 - [自己实现了一个bert4keras](https://spaces.ac.cn/archives/6915)
+  - 原站分类：信息时代
+  - 原站标签：语言模型、NLP、keras、attention
+- 2019-07-27 - [为节约而生：从标准Attention到稀疏Attention](https://spaces.ac.cn/archives/6853)
+  - 原站分类：信息时代
+  - 原站标签：模型、稀疏、attention
+- 2019-06-29 - [基于Bert的NL2SQL模型：一个简明的Baseline](https://spaces.ac.cn/archives/6771)
+  - 原站分类：信息时代
+  - 原站标签：语言模型、比赛、sql、attention
+- 2019-06-18 - [当Bert遇上Keras：这可能是Bert最简单的打开姿势](https://spaces.ac.cn/archives/6736)
+  - 原站分类：信息时代
+  - 原站标签：语言模型、比赛、信息抽取、attention
+- 2019-06-10 - [漫谈重参数：从正态分布到Gumbel Softmax](https://spaces.ac.cn/archives/6705)
+  - 原站分类：数学研究
+  - 原站标签：概率、算法、优化、重参数
+- 2018-07-29 - [基于GRU和AM-Softmax的句子相似度模型](https://spaces.ac.cn/archives/5743)
+  - 原站分类：信息时代
+  - 原站标签：语义、损失函数、相似度
+- 2018-01-06 - [《Attention is All You Need》浅读（简介+代码）](https://spaces.ac.cn/archives/4765)
+  - 原站分类：信息时代
+  - 原站标签：模型、深度学习、attention
+- 2016-12-01 - [基于双向GRU和语言模型的视角情感分析](https://spaces.ac.cn/archives/4118)
+  - 原站分类：信息时代
+  - 原站标签：模型、python、深度学习、自然语言处理

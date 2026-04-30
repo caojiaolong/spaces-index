@@ -1,0 +1,549 @@
+# 优化与训练
+
+[返回主题索引](index.md)
+
+共 151 篇。
+
+<a id="series-optimization-2adf8edae5"></a>
+#### 基于流式幂迭代的Muon实现
+
+- 2026-03-12 - [基于流式幂迭代的Muon实现：1. 初识](https://spaces.ac.cn/archives/11654)
+  - 原站分类：数学研究
+  - 原站标签：迭代、矩阵、SVD、优化器、muon
+  - 系列：基于流式幂迭代的Muon实现 #1
+  - 系列主题：优化与训练
+- 2026-03-26 - [基于流式幂迭代的Muon实现：2. 加速](https://spaces.ac.cn/archives/11673)
+  - 原站分类：数学研究
+  - 原站标签：迭代、矩阵、SVD、优化器、muon
+  - 系列：基于流式幂迭代的Muon实现 #2
+  - 系列主题：优化与训练
+- 2026-04-07 - [基于流式幂迭代的Muon实现：3. 雕琢](https://spaces.ac.cn/archives/11697)
+  - 原站分类：数学研究
+  - 原站标签：迭代、矩阵、SVD、优化器、muon
+  - 系列：基于流式幂迭代的Muon实现 #3
+  - 系列主题：优化与训练
+- 2026-04-13 - [基于流式幂迭代的Muon实现：4. 原理](https://spaces.ac.cn/archives/11710)
+  - 原站分类：数学研究
+  - 原站标签：迭代、矩阵、SVD、优化器、muon
+  - 系列：基于流式幂迭代的Muon实现 #4
+  - 系列主题：优化与训练
+- 2026-04-17 - [基于流式幂迭代的Muon实现：5. 延伸](https://spaces.ac.cn/archives/11719)
+  - 原站分类：数学研究
+  - 原站标签：迭代、矩阵、优化器、谱范数、muon
+  - 系列：基于流式幂迭代的Muon实现 #5
+  - 系列主题：优化与训练
+
+<a id="series-optimization-22f3c62045"></a>
+#### 让炼丹更科学一些
+
+- 2023-12-19 - [让炼丹更科学一些（一）：SGD的平均损失收敛](https://spaces.ac.cn/archives/9902)
+  - 原站分类：信息时代
+  - 原站标签：不等式、优化器、sgd、炼丹
+  - 系列：让炼丹更科学一些 #1
+  - 系列主题：优化与训练
+- 2025-12-12 - [让炼丹更科学一些（二）：将结论推广到无界域](https://spaces.ac.cn/archives/11469)
+  - 原站分类：数学研究
+  - 原站标签：不等式、优化器、sgd、炼丹
+  - 系列：让炼丹更科学一些 #2
+  - 系列主题：优化与训练
+- 2025-12-16 - [让炼丹更科学一些（三）：SGD的终点损失收敛](https://spaces.ac.cn/archives/11480)
+  - 原站分类：数学研究
+  - 原站标签：不等式、优化器、sgd、炼丹
+  - 系列：让炼丹更科学一些 #3
+  - 系列主题：优化与训练
+- 2025-12-26 - [让炼丹更科学一些（四）：新恒等式，新学习率](https://spaces.ac.cn/archives/11494)
+  - 原站分类：数学研究
+  - 原站标签：学习率、优化器、sgd、炼丹
+  - 系列：让炼丹更科学一些 #4
+  - 系列主题：优化与训练
+- 2026-01-09 - [让炼丹更科学一些（五）：基于梯度精调学习率](https://spaces.ac.cn/archives/11530)
+  - 原站分类：数学研究
+  - 原站标签：梯度、学习率、优化器、sgd、炼丹
+  - 系列：让炼丹更科学一些 #5
+  - 系列主题：优化与训练
+- 2026-01-16 - [让炼丹更科学一些（六）：自上而下的精妙构造](https://spaces.ac.cn/archives/11540)
+  - 原站分类：数学研究
+  - 原站标签：优化、学习率、优化器、sgd、炼丹
+  - 系列：让炼丹更科学一些 #6
+  - 系列主题：优化与训练
+
+<a id="series-optimization-623aab7f21"></a>
+#### AdamW的Weight RMS的渐近估计
+
+- 2025-10-01 - [AdamW的Weight RMS的渐近估计（上）](https://spaces.ac.cn/archives/11307)
+  - 原站分类：数学研究
+  - 原站标签：估计、梯度、优化器、平均场
+  - 系列：AdamW的Weight RMS的渐近估计 #1
+  - 系列主题：优化与训练
+- 2025-11-17 - [AdamW的Weight RMS的渐近估计（下）](https://spaces.ac.cn/archives/11404)
+  - 原站分类：数学研究
+  - 原站标签：微分方程、估计、梯度、优化器、平均场
+  - 系列：AdamW的Weight RMS的渐近估计 #3
+  - 系列主题：优化与训练
+
+<a id="series-optimization-9aa52368b1"></a>
+#### 流形上的最速下降
+
+- 2025-08-01 - [流形上的最速下降：1. SGD + 超球面](https://spaces.ac.cn/archives/11196)
+  - 原站分类：数学研究
+  - 原站标签：不等式、优化器、约束、最速下降
+  - 系列：流形上的最速下降 #1
+  - 系列主题：优化与训练
+- 2025-08-06 - [流形上的最速下降：2. Muon + 正交](https://spaces.ac.cn/archives/11215)
+  - 原站分类：数学研究
+  - 原站标签：矩阵、优化器、muon、约束、最速下降
+  - 系列：流形上的最速下降 #2
+  - 系列主题：优化与训练
+- 2025-08-08 - [流形上的最速下降：3. Muon + Stiefel](https://spaces.ac.cn/archives/11221)
+  - 原站分类：数学研究
+  - 原站标签：矩阵、优化器、muon、约束、最速下降
+  - 系列：流形上的最速下降 #3
+  - 系列主题：优化与训练
+- 2025-08-21 - [流形上的最速下降：4. Muon + 谱球面](https://spaces.ac.cn/archives/11241)
+  - 原站分类：数学研究
+  - 原站标签：矩阵、优化器、muon、约束、最速下降
+  - 系列：流形上的最速下降 #4
+  - 系列主题：优化与训练
+- 2025-11-03 - [流形上的最速下降：5. 对偶梯度下降](https://spaces.ac.cn/archives/11388)
+  - 原站分类：数学研究
+  - 原站标签：矩阵、优化器、muon、约束、最速下降
+  - 系列：流形上的最速下降 #5
+  - 系列主题：优化与训练
+
+<a id="series-optimization-297337ae72"></a>
+#### 通过msign来计算奇异值裁剪mclip
+
+- 2025-06-07 - [通过msign来计算奇异值裁剪mclip（上）](https://spaces.ac.cn/archives/11006)
+  - 原站分类：数学研究
+  - 原站标签：迭代、近似、矩阵、SVD、muon
+  - 系列：通过msign来计算奇异值裁剪mclip #1
+  - 系列主题：优化与训练
+- 2025-06-23 - [通过msign来计算奇异值裁剪mclip（下）](https://spaces.ac.cn/archives/11059)
+  - 原站分类：数学研究
+  - 原站标签：迭代、近似、矩阵、SVD、muon
+  - 系列：通过msign来计算奇异值裁剪mclip #3
+  - 系列主题：优化与训练
+
+<a id="series-optimization-d27a2576eb"></a>
+#### msign算子的Newton-Schulz迭代
+
+- 2025-05-11 - [msign算子的Newton-Schulz迭代（上）](https://spaces.ac.cn/archives/10922)
+  - 原站分类：数学研究
+  - 原站标签：迭代、近似、优化器、muon
+  - 系列：msign算子的Newton-Schulz迭代 #1
+  - 系列主题：优化与训练
+- 2025-06-05 - [msign算子的Newton-Schulz迭代（下）](https://spaces.ac.cn/archives/10996)
+  - 原站分类：数学研究
+  - 原站标签：迭代、近似、优化器、muon
+  - 系列：msign算子的Newton-Schulz迭代 #3
+  - 系列主题：优化与训练
+
+<a id="series-optimization-4b38446b55"></a>
+#### 从动力学角度看优化算法
+
+- 2018-06-27 - [从动力学角度看优化算法（一）：从SGD到动量加速](https://spaces.ac.cn/archives/5655)
+  - 原站分类：数学研究
+  - 原站标签：微分方程、动力学、数值计算、优化器
+  - 系列：从动力学角度看优化算法 #1
+  - 系列主题：优化与训练
+- 2018-12-20 - [从动力学角度看优化算法（二）：自适应学习率算法](https://spaces.ac.cn/archives/6234)
+  - 原站分类：数学研究
+  - 原站标签：微分方程、动力学、数值计算、优化器
+  - 系列：从动力学角度看优化算法 #2
+  - 系列主题：优化与训练
+- 2019-01-08 - [从动力学角度看优化算法（三）：一个更整体的视角](https://spaces.ac.cn/archives/6261)
+  - 原站分类：数学研究
+  - 原站标签：微分方程、动力学、数值计算、优化器
+  - 系列：从动力学角度看优化算法 #3
+  - 系列主题：优化与训练
+- 2019-05-03 - [从动力学角度看优化算法（四）：GAN的第三个阶段](https://spaces.ac.cn/archives/6583)
+  - 原站分类：信息时代
+  - 原站标签：微分方程、动力学、GAN、生成模型、优化器
+  - 系列：从动力学角度看优化算法 #4
+  - 系列主题：优化与训练
+- 2020-10-10 - [从动力学角度看优化算法（五）：为什么学习率不宜过小？](https://spaces.ac.cn/archives/7787)
+  - 原站分类：信息时代
+  - 原站标签：微分方程、动力学、梯度、优化器
+  - 系列：从动力学角度看优化算法 #5
+  - 系列主题：优化与训练
+- 2020-12-11 - [从动力学角度看优化算法（六）：为什么SimSiam不退化？](https://spaces.ac.cn/archives/7980)
+  - 原站分类：信息时代
+  - 原站标签：动力学、优化、无监督
+  - 系列：从动力学角度看优化算法 #6
+  - 系列主题：优化与训练
+- 2020-12-21 - [从动力学角度看优化算法（七）：SGD ≈ SVM？](https://spaces.ac.cn/archives/8009)
+  - 原站分类：信息时代
+  - 原站标签：微分方程、动力学、优化、核方法
+  - 系列：从动力学角度看优化算法 #7
+  - 系列主题：优化与训练
+
+<a id="series-optimization-standalone"></a>
+#### 非系列文章
+
+- 2026-03-19 - [Attention Residuals 回忆录](https://spaces.ac.cn/archives/11664)
+  - 原站分类：信息时代
+  - 原站标签：模型、优化、attention、尺度定律、深度
+- 2026-02-04 - [Adam优化器的最优超参数是β1=β2 ？](https://spaces.ac.cn/archives/11593)
+  - 原站分类：信息时代
+  - 原站标签：最优、梯度、优化器、最速下降
+- 2026-01-20 - [为什么我们偏爱各向同性？基于最速下降的理解](https://spaces.ac.cn/archives/11549)
+  - 原站分类：数学研究
+  - 原站标签：几何、梯度、sgd、muon
+- 2025-12-05 - [滑动平均视角下的权重衰减和学习率](https://spaces.ac.cn/archives/11459)
+  - 原站分类：数学研究
+  - 原站标签：最优、梯度、学习率、平均场
+- 2025-11-19 - [Muon优化器指南：快速上手与关键细节](https://spaces.ac.cn/archives/11416)
+  - 原站分类：信息时代
+  - 原站标签：矩阵、优化、优化器、muon
+- 2025-10-27 - [低精度Attention可能存在有偏的舍入误差](https://spaces.ac.cn/archives/11371)
+  - 原站分类：信息时代
+  - 原站标签：近似、分析、优化、attention
+- 2025-10-08 - [DiVeQ：一种非常简洁的VQ训练方案](https://spaces.ac.cn/archives/11328)
+  - 原站分类：信息时代
+  - 原站标签：生成模型、编码、梯度、离散化
+- 2025-09-02 - [为什么Adam的Update RMS是0.2？](https://spaces.ac.cn/archives/11267)
+  - 原站分类：数学研究
+  - 原站标签：分析、梯度、优化器、平均场
+- 2025-07-12 - [QK-Clip：让Muon在Scaleup之路上更进一步](https://spaces.ac.cn/archives/11126)
+  - 原站分类：信息时代
+  - 原站标签：优化、attention、优化器、muon
+- 2025-06-13 - [msign的导数](https://spaces.ac.cn/archives/11025)
+  - 原站分类：数学研究
+  - 原站标签：微积分、矩阵、梯度、muon
+- 2025-04-26 - [SVD的导数](https://spaces.ac.cn/archives/10878)
+  - 原站分类：数学研究
+  - 原站标签：微积分、分析、矩阵、SVD、梯度
+- 2025-04-02 - [通过梯度近似寻找Normalization的替代品](https://spaces.ac.cn/archives/10831)
+  - 原站分类：数学研究
+  - 原站标签：函数、分析、梯度、光滑
+- 2025-03-24 - [高阶MuP：更简明但更高明的谱条件缩放](https://spaces.ac.cn/archives/10795)
+  - 原站分类：数学研究
+  - 原站标签：梯度、优化器、尺度定律、谱范数、muon、MuP
+- 2025-03-13 - [初探MuP：超参数的跨模型尺度迁移规律](https://spaces.ac.cn/archives/10770)
+  - 原站分类：数学研究
+  - 原站标签：梯度、学习率、优化器、尺度定律、MuP
+- 2025-02-27 - [Muon续集：为什么我们选择尝试Muon？](https://spaces.ac.cn/archives/10739)
+  - 原站分类：数学研究
+  - 原站标签：矩阵、梯度、优化器、谱范数、muon
+- 2025-01-02 - [为什么梯度裁剪的默认模长是1？](https://spaces.ac.cn/archives/10657)
+  - 原站分类：信息时代
+  - 原站标签：优化、梯度、学习率、优化器
+- 2024-12-25 - [从谱范数梯度到新式权重衰减的思考](https://spaces.ac.cn/archives/10648)
+  - 原站分类：数学研究
+  - 原站标签：矩阵、优化、梯度、优化器、谱范数
+- 2024-12-10 - [Muon优化器赏析：从向量到矩阵的本质跨越](https://spaces.ac.cn/archives/10592)
+  - 原站分类：数学研究
+  - 原站标签：矩阵、梯度、优化器、谱范数、muon
+- 2024-11-29 - [从Hessian近似看自适应学习率优化器](https://spaces.ac.cn/archives/10588)
+  - 原站分类：数学研究
+  - 原站标签：优化、梯度、学习率、优化器
+- 2024-11-18 - [Adam的epsilon如何影响学习率的Scaling Law？](https://spaces.ac.cn/archives/10563)
+  - 原站分类：数学研究
+  - 原站标签：梯度、学习率、优化器、尺度定律
+- 2024-11-14 - [当Batch Size增大时，学习率该如何随之变化？](https://spaces.ac.cn/archives/10542)
+  - 原站分类：数学研究
+  - 原站标签：梯度、学习率、优化器、尺度定律
+- 2024-11-06 - [VQ的又一技巧：给编码表加一个线性变换](https://spaces.ac.cn/archives/10519)
+  - 原站分类：数学研究
+  - 原站标签：生成模型、编码、梯度、离散化
+- 2024-10-24 - [VQ的旋转技巧：梯度直通估计的一般推广](https://spaces.ac.cn/archives/10489)
+  - 原站分类：信息时代
+  - 原站标签：生成模型、编码、梯度、离散化
+- 2024-09-19 - [Softmax后传：寻找Top-K的光滑近似](https://spaces.ac.cn/archives/10373)
+  - 原站分类：数学研究
+  - 原站标签：概率、近似、梯度、光滑
+- 2024-08-06 - [通向最优分布之路：概率空间的最小化](https://spaces.ac.cn/archives/10289)
+  - 原站分类：数学研究
+  - 原站标签：概率、优化、梯度、扩散
+- 2024-06-14 - [通向概率分布之路：盘点Softmax及其替代品](https://spaces.ac.cn/archives/10145)
+  - 原站分类：数学研究
+  - 原站标签：概率、分析、损失函数、梯度
+- 2024-05-13 - [缓存与效果的极限拉扯：从MHA、MQA、GQA到MLA](https://spaces.ac.cn/archives/10091)
+  - 原站分类：信息时代
+  - 原站标签：优化、语言模型、生成模型、attention
+- 2024-02-27 - [配置不同的学习率，LoRA还能再涨一点？](https://spaces.ac.cn/archives/10001)
+  - 原站分类：数学研究
+  - 原站标签：梯度、优化器、低秩、lora
+- 2024-01-14 - [旁门左道之如何让Python的重试代码更加优雅](https://spaces.ac.cn/archives/9938)
+  - 原站分类：信息时代
+  - 原站标签：编程、代码、python、优化
+- 2023-11-09 - [VQ一下Key，Transformer的复杂度就变成线性了](https://spaces.ac.cn/archives/9844)
+  - 原站分类：数学研究
+  - 原站标签：量子化、编码、梯度、attention
+- 2023-10-31 - [简单得令人尴尬的FSQ：“四舍五入”超越了VQ-VAE](https://spaces.ac.cn/archives/9826)
+  - 原站分类：信息时代
+  - 原站标签：生成模型、编码、梯度、离散化
+- 2023-10-22 - [从梯度最大化看Attention的Scale操作](https://spaces.ac.cn/archives/9812)
+  - 原站分类：数学研究
+  - 原站标签：优化、梯度、attention
+- 2023-10-16 - [随机分词再探：从Viterbi Sampling到完美采样算法](https://spaces.ac.cn/archives/9811)
+  - 原站分类：信息时代
+  - 原站标签：概率、随机、优化、分词、采样
+- 2023-10-13 - [EMO：基于最优传输思想设计的分类损失函数](https://spaces.ac.cn/archives/9797)
+  - 原站分类：信息时代
+  - 原站标签：概率、优化、损失函数、最优传输
+- 2023-10-08 - [预训练一下，Transformer的长序列成绩还能涨不少！](https://spaces.ac.cn/archives/9787)
+  - 原站分类：信息时代
+  - 原站标签：语言模型、attention
+- 2023-08-28 - [Lion/Tiger优化器训练下的Embedding异常和对策](https://spaces.ac.cn/archives/9736)
+  - 原站分类：信息时代
+  - 原站标签：问题、梯度、优化器
+- 2023-06-16 - [梯度流：探索通向最小值之路](https://spaces.ac.cn/archives/9660)
+  - 原站分类：数学研究
+  - 原站标签：泛函、动力学、优化、梯度
+- 2023-04-17 - [梯度视角下的LoRA：简介、分析、猜测及推广](https://spaces.ac.cn/archives/9590)
+  - 原站分类：数学研究
+  - 原站标签：梯度、优化器、低秩、lora
+- 2023-03-14 - [缓解交叉熵过度自信的一个简明方案](https://spaces.ac.cn/archives/9526)
+  - 原站分类：信息时代
+  - 原站标签：优化、损失函数、光滑
+- 2023-03-07 - [Tiger：一个“抠”到极致的优化器](https://spaces.ac.cn/archives/9512)
+  - 原站分类：信息时代
+  - 原站标签：模型、优化、优化器
+- 2023-02-16 - [Google新搜出的优化器Lion：效率与效果兼得的“训练狮”](https://spaces.ac.cn/archives/9473)
+  - 原站分类：信息时代
+  - 原站标签：分析、优化、优化器
+- 2022-11-22 - [基于Amos优化器思想推导出来的一些“炼丹策略”](https://spaces.ac.cn/archives/9344)
+  - 原站分类：数学研究
+  - 原站标签：分析、优化、渐近、优化器
+- 2022-07-15 - [不成功的尝试：将多标签交叉熵推广到“n个m分类”上去](https://spaces.ac.cn/archives/9158)
+  - 原站分类：数学研究
+  - 原站标签：优化、损失函数
+- 2022-06-20 - [Ladder Side-Tuning：预训练模型的“过墙梯”](https://spaces.ac.cn/archives/9138)
+  - 原站分类：信息时代
+  - 原站标签：语言模型、预训练
+- 2022-06-01 - [如何训练你的准确率？](https://spaces.ac.cn/archives/9098)
+  - 原站分类：信息时代
+  - 原站标签：概率、优化、损失函数
+- 2022-05-07 - [多标签“Softmax+交叉熵”的软标签版本](https://spaces.ac.cn/archives/9064)
+  - 原站分类：信息时代
+  - 原站标签：优化、损失函数、光滑
+- 2022-04-28 - [在bert4keras中使用混合精度和XLA加速训练](https://spaces.ac.cn/archives/9059)
+  - 原站分类：信息时代
+  - 原站标签：模型、优化、梯度
+- 2022-04-22 - [GAU-α：尝鲜体验快好省的下一代Attention](https://spaces.ac.cn/archives/9052)
+  - 原站分类：信息时代
+  - 原站标签：语言模型、attention、预训练
+- 2022-04-15 - [GlobalPointer下的“KL散度”应该是怎样的？](https://spaces.ac.cn/archives/9039)
+  - 原站分类：数学研究
+  - 原站标签：损失函数、对抗训练、NER、正则化
+- 2022-04-07 - [听说Attention与Softmax更配哦～](https://spaces.ac.cn/archives/9019)
+  - 原站分类：信息时代
+  - 原站标签：熵、语言模型、attention、预训练
+- 2022-03-29 - [为什么Pre Norm的效果不如Post Norm？](https://spaces.ac.cn/archives/9009)
+  - 原站分类：信息时代
+  - 原站标签：优化、梯度、attention
+- 2022-03-21 - [RoFormerV2：自然语言理解的极限探索](https://spaces.ac.cn/archives/8998)
+  - 原站分类：信息时代
+  - 原站标签：语言模型、预训练
+- 2022-03-19 - [为什么需要残差？一个来自DeepNet的视角](https://spaces.ac.cn/archives/8994)
+  - 原站分类：信息时代
+  - 原站标签：模型、优化、深度学习、梯度
+- 2022-03-11 - [门控注意力单元（GAU）还需要Warmup吗？](https://spaces.ac.cn/archives/8990)
+  - 原站分类：信息时代
+  - 原站标签：模型、优化、attention
+- 2022-03-09 - [训练1000层的Transformer究竟有什么困难？](https://spaces.ac.cn/archives/8978)
+  - 原站分类：数学研究
+  - 原站标签：优化、梯度、attention
+- 2022-03-03 - [指数梯度下降 + 元学习 = 自适应学习率](https://spaces.ac.cn/archives/8968)
+  - 原站分类：数学研究
+  - 原站标签：优化、梯度、优化器
+- 2021-12-11 - [输入梯度惩罚与参数梯度惩罚的一个不等式](https://spaces.ac.cn/archives/8796)
+  - 原站分类：数学研究
+  - 原站标签：不等式、优化、梯度、泛化
+- 2021-11-29 - [Dropout视角下的MLM和MAE：一些新的启发](https://spaces.ac.cn/archives/8770)
+  - 原站分类：信息时代
+  - 原站标签：模型、概率、分析、优化
+- 2021-11-22 - [ChildTuning：试试把Dropout加到梯度上去？](https://spaces.ac.cn/archives/8764)
+  - 原站分类：信息时代
+  - 原站标签：模型、优化、梯度
+- 2021-11-15 - [WGAN新方案：通过梯度归一化来实现L约束](https://spaces.ac.cn/archives/8757)
+  - 原站分类：信息时代
+  - 原站标签：无监督、GAN、生成模型
+- 2021-11-08 - [模型优化漫谈：BERT的初始标准差为什么是0.02？](https://spaces.ac.cn/archives/8747)
+  - 原站分类：信息时代
+  - 原站标签：模型、分析、优化、梯度
+- 2021-10-18 - [初始化方法中非方阵的维度平均策略思考](https://spaces.ac.cn/archives/8725)
+  - 原站分类：信息时代
+  - 原站标签：模型、优化、梯度
+- 2021-09-10 - [曾被嫌弃的预训练任务NSP，做出了优秀的Zero Shot效果](https://spaces.ac.cn/archives/8671)
+  - 原站分类：信息时代
+  - 原站标签：无监督、语言模型、NLP、模版
+- 2021-08-24 - [隐藏在动量中的梯度累积：少更新几步，效果反而更好？](https://spaces.ac.cn/archives/8634)
+  - 原站分类：信息时代
+  - 原站标签：模型、分析、梯度、优化器
+- 2021-08-17 - [浅谈Transformer的初始化、参数化与标准化](https://spaces.ac.cn/archives/8620)
+  - 原站分类：数学研究
+  - 原站标签：模型、优化、梯度、attention
+- 2021-07-26 - [FlatNCE：小批次对比学习效果差的原因竟是浮点误差？](https://spaces.ac.cn/archives/8586)
+  - 原站分类：信息时代
+  - 原站标签：优化、损失函数、对比学习
+- 2021-07-22 - [概率视角下的线性模型：逻辑回归有解析解吗？](https://spaces.ac.cn/archives/8578)
+  - 原站分类：数学研究
+  - 原站标签：模型、概率、优化
+- 2021-07-08 - [两个多元正态分布的KL散度、巴氏距离和W距离](https://spaces.ac.cn/archives/8512)
+  - 原站分类：数学研究
+  - 原站标签：概率、矩阵、优化
+- 2021-07-01 - [又是Dropout两次！这次它做到了有监督任务的SOTA](https://spaces.ac.cn/archives/8496)
+  - 原站分类：信息时代
+  - 原站标签：优化、损失函数、对抗训练
+- 2021-06-17 - [对比学习可以使用梯度累积吗？](https://spaces.ac.cn/archives/8471)
+  - 原站分类：数学研究
+  - 原站标签：模型、优化、梯度
+- 2021-06-02 - [我们可以无损放大一个Transformer模型吗（一）](https://spaces.ac.cn/archives/8444)
+  - 原站分类：数学研究
+  - 原站标签：模型、优化、attention
+  - 系列：我们可以无损放大一个Transformer模型吗 #1
+- 2021-05-24 - [也来盘点一些最近的非Transformer工作](https://spaces.ac.cn/archives/8431)
+  - 原站分类：信息时代
+  - 原站标签：模型、优化、语言模型、attention
+- 2021-03-15 - [WGAN的成功，可能跟Wasserstein距离没啥关系](https://spaces.ac.cn/archives/8244)
+  - 原站分类：信息时代
+  - 原站标签：优化、GAN、生成模型
+- 2021-03-05 - [短文本匹配Baseline：脱敏数据使用预训练模型的尝试](https://spaces.ac.cn/archives/8213)
+  - 原站分类：信息时代
+  - 原站标签：语言模型、语义、语义相似度
+- 2021-03-03 - [T5 PEGASUS：开源一个中文生成式预训练模型](https://spaces.ac.cn/archives/8209)
+  - 原站分类：信息时代
+  - 原站标签：语言模型、文本生成、attention
+- 2021-02-25 - [【搜出来的文本】⋅（四）通过增、删、改来用词造句](https://spaces.ac.cn/archives/8194)
+  - 原站分类：信息时代
+  - 原站标签：文本生成、采样、离散优化、MCMC
+- 2021-01-22 - [【搜出来的文本】⋅（三）基于BERT的文本采样](https://spaces.ac.cn/archives/8119)
+  - 原站分类：信息时代
+  - 原站标签：文本生成、采样、离散优化、MCMC
+- 2021-01-14 - [【搜出来的文本】⋅（二）从MCMC到模拟退火](https://spaces.ac.cn/archives/8084)
+  - 原站分类：信息时代
+  - 原站标签：文本生成、采样、离散优化、MCMC
+- 2021-01-07 - [【搜出来的文本】⋅（一）从文本生成到搜索采样](https://spaces.ac.cn/archives/8062)
+  - 原站分类：信息时代
+  - 原站标签：文本生成、采样、离散优化、MCMC
+- 2020-12-24 - [RealFormer：把残差转移到Attention矩阵上面去](https://spaces.ac.cn/archives/8027)
+  - 原站分类：信息时代
+  - 原站标签：梯度、attention
+- 2020-12-14 - [Mitchell近似：乘法变为加法，误差不超过1/9](https://spaces.ac.cn/archives/7991)
+  - 原站分类：数学研究
+  - 原站标签：模型、算法、优化
+- 2020-12-04 - [层次分解位置编码，让BERT可以处理超长文本](https://spaces.ac.cn/archives/7947)
+  - 原站分类：信息时代
+  - 原站标签：模型、优化、attention
+- 2020-12-01 - [Performer：用随机投影将Attention的复杂度线性化](https://spaces.ac.cn/archives/7921)
+  - 原站分类：数学研究
+  - 原站标签：优化、attention
+- 2020-11-13 - [也来谈谈RNN的梯度消失/爆炸问题](https://spaces.ac.cn/archives/7888)
+  - 原站分类：数学研究
+  - 原站标签：模型、优化、深度学习、梯度
+- 2020-10-27 - [TeaForN：让Teacher Forcing更有“远见”一些](https://spaces.ac.cn/archives/7818)
+  - 原站分类：信息时代
+  - 原站标签：优化、语言模型、文本生成
+- 2020-10-16 - [如何划分一个跟测试集更接近的验证集？](https://spaces.ac.cn/archives/7805)
+  - 原站分类：信息时代
+  - 原站标签：模型、概率、优化、采样
+- 2020-09-15 - [殊途同归的策略梯度与零阶优化](https://spaces.ac.cn/archives/7737)
+  - 原站分类：数学研究
+  - 原站标签：优化、梯度、优化器、强化学习
+- 2020-08-31 - [再谈类别不平衡问题：调节权重与魔改Loss的对比联系](https://spaces.ac.cn/archives/7708)
+  - 原站分类：信息时代
+  - 原站标签：优化、损失函数、光滑
+- 2020-08-14 - [L2正则没有想象那么好？可能是“权重尺度偏移”惹的祸](https://spaces.ac.cn/archives/7681)
+  - 原站分类：信息时代
+  - 原站标签：模型、优化、深度学习
+- 2020-07-31 - [我们真的需要把训练集的损失降低到零吗？](https://spaces.ac.cn/archives/7643)
+  - 原站分类：信息时代
+  - 原站标签：优化、深度学习、损失函数、泛化
+- 2020-07-19 - [通过互信息思想来缓解类别不平衡问题](https://spaces.ac.cn/archives/7615)
+  - 原站分类：信息时代
+  - 原站标签：优化、互信息、损失函数
+- 2020-06-28 - [积分梯度：一种新颖的神经网络可视化方法](https://spaces.ac.cn/archives/7533)
+  - 原站分类：信息时代
+  - 原站标签：积分、梯度、可视化
+- 2020-06-23 - [从采样看优化：可导优化与不可导优化的统一视角](https://spaces.ac.cn/archives/7521)
+  - 原站分类：数学研究
+  - 原站标签：优化、梯度、优化器、采样
+- 2020-06-05 - [为什么梯度裁剪能加速训练过程？一个简明的分析](https://spaces.ac.cn/archives/7469)
+  - 原站分类：数学研究
+  - 原站标签：优化、梯度
+- 2020-06-01 - [泛化性乱弹：从随机噪声、梯度惩罚到虚拟对抗训练](https://spaces.ac.cn/archives/7466)
+  - 原站分类：信息时代
+  - 原站标签：概率、GAN、对抗训练、泛化
+- 2020-05-13 - [从EMD、WMD到WRD：文本向量序列的相似度计算](https://spaces.ac.cn/archives/7388)
+  - 原站分类：数学研究
+  - 原站标签：最优、优化、语义、线性规划
+- 2020-05-11 - [AdaX优化器浅析（附开源实现）](https://spaces.ac.cn/archives/7387)
+  - 原站分类：信息时代
+  - 原站标签：优化器
+- 2020-04-25 - [将“Softmax+交叉熵”推广到多标签分类问题](https://spaces.ac.cn/archives/7359)
+  - 原站分类：数学研究
+  - 原站标签：优化、损失函数、光滑
+- 2020-03-23 - [AdaFactor优化器浅析（附开源实现）](https://spaces.ac.cn/archives/7302)
+  - 原站分类：信息时代
+  - 原站标签：分析、keras、优化器
+- 2020-03-09 - [Seq2Seq中Exposure Bias现象的浅析与对策](https://spaces.ac.cn/archives/7259)
+  - 原站分类：信息时代
+  - 原站标签：语言模型、文本生成、对抗训练
+- 2020-03-01 - [对抗训练浅谈：意义、方法和思考（附Keras实现）](https://spaces.ac.cn/archives/7234)
+  - 原站分类：信息时代
+  - 原站标签：GAN、keras、对抗训练、泛化
+- 2020-02-07 - [你的CRF层的学习率可能不够大](https://spaces.ac.cn/archives/7196)
+  - 原站分类：信息时代
+  - 原站标签：模型、概率图、crf
+- 2020-01-16 - [从几何视角来理解模型参数的初始化策略](https://spaces.ac.cn/archives/7180)
+  - 原站分类：数学研究
+  - 原站标签：模型、概率、几何、优化
+- 2019-11-25 - [6个派生优化器的简单介绍及其实现](https://spaces.ac.cn/archives/7094)
+  - 原站分类：信息时代
+  - 原站标签：python、keras、优化器
+- 2019-10-31 - [从去噪自编码器到生成模型](https://spaces.ac.cn/archives/7038)
+  - 原站分类：信息时代
+  - 原站标签：生成模型、编码、梯度、去噪
+- 2019-10-11 - [BN究竟起了什么作用？一个闭门造车的分析](https://spaces.ac.cn/archives/6992)
+  - 原站分类：信息时代
+  - 原站标签：模型、优化、神经网络
+- 2019-07-30 - [Keras实现两个优化器：Lookahead和LazyOptimizer](https://spaces.ac.cn/archives/6869)
+  - 原站分类：信息时代
+  - 原站标签：keras、优化器
+- 2019-07-08 - [用时间换取效果：Keras梯度累积优化器](https://spaces.ac.cn/archives/6794)
+  - 原站分类：信息时代
+  - 原站标签：keras、梯度、优化器
+- 2019-06-10 - [漫谈重参数：从正态分布到Gumbel Softmax](https://spaces.ac.cn/archives/6705)
+  - 原站分类：数学研究
+  - 原站标签：概率、算法、优化、重参数
+- 2019-02-22 - [巧断梯度：单个loss实现GAN模型](https://spaces.ac.cn/archives/6387)
+  - 原站分类：信息时代
+  - 原站标签：GAN、生成模型、keras、梯度
+- 2019-01-20 - [从Wasserstein距离、对偶理论到WGAN](https://spaces.ac.cn/archives/6280)
+  - 原站分类：数学研究
+  - 原站标签：对偶、优化、GAN、生成模型
+- 2018-11-20 - [不用L约束又不会梯度消失的GAN，了解一下？](https://spaces.ac.cn/archives/6163)
+  - 原站分类：信息时代
+  - 原站标签：概率、GAN、生成模型、度量
+- 2018-03-15 - [从最大似然到EM算法：一致的理解方式](https://spaces.ac.cn/archives/5239)
+  - 原站分类：数学研究
+  - 原站标签：概率、优化、聚类
+- 2017-10-14 - [训练集、验证集和测试集的意义](https://spaces.ac.cn/archives/4638)
+  - 原站分类：信息时代
+  - 原站标签：模型、深度学习
+- 2017-08-08 - [【备忘】谈谈dropout](https://spaces.ac.cn/archives/4521)
+  - 原站分类：信息时代
+  - 原站标签：深度学习
+- 2017-03-23 - [梯度下降和EM算法：系出同源，一脉相承](https://spaces.ac.cn/archives/4277)
+  - 原站分类：数学研究
+  - 原站标签：概率、优化、聚类
+- 2015-01-16 - [勒贝格(Lebesgue)控制收敛定理](https://spaces.ac.cn/archives/3194)
+  - 原站分类：数学研究
+  - 原站标签：不等式、积分
+- 2014-06-27 - [Project Euler 454 ：五天攻下“擂台”](https://spaces.ac.cn/archives/2665)
+  - 原站分类：数学研究
+  - 原站标签：素数、数论、python、优化
+- 2013-05-17 - [正项级数敛散性最有力的判别法？](https://spaces.ac.cn/archives/1990)
+  - 原站分类：数学研究
+  - 原站标签：级数、猜想、收敛
+- 2011-07-27 - [Lamost下的天文夏令营](https://spaces.ac.cn/archives/1452)
+  - 原站分类：图片摄影
+  - 原站标签：照片、夏令营
+- 2010-04-17 - [Lamost被冠名为“郭守敬望远镜”](https://spaces.ac.cn/archives/604)
+  - 原站分类：天文探索
+  - 原站标签：天文台、望远镜
+- 2009-08-13 - [停！](https://spaces.ac.cn/archives/72)
+  - 原站分类：生活/情感
+  - 原站标签：训练、兴趣

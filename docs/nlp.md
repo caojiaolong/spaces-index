@@ -1,0 +1,332 @@
+# NLP与信息抽取
+
+[返回主题索引](index.md)
+
+共 93 篇。
+
+<a id="series-nlp-73a0edf1cd"></a>
+#### 中文分词系列
+
+- 2016-08-17 - [【中文分词系列】 1. 基于AC自动机的快速分词](https://spaces.ac.cn/archives/3908)
+  - 原站分类：信息时代
+  - 原站标签：动态规划、AC自动机、分词、自然语言处理、词库
+  - 系列：中文分词系列 #1
+  - 系列主题：NLP与信息抽取
+- 2016-08-18 - [【中文分词系列】 2. 基于切分的新词发现](https://spaces.ac.cn/archives/3913)
+  - 原站分类：信息时代
+  - 原站标签：分词、无监督、NLP、新词发现
+  - 系列：中文分词系列 #2
+  - 系列主题：NLP与信息抽取
+- 2016-08-19 - [【中文分词系列】 3. 字标注法与HMM模型](https://spaces.ac.cn/archives/3922)
+  - 原站分类：信息时代
+  - 原站标签：概率、python、分词、HMM、自然语言处理
+  - 系列：中文分词系列 #3
+  - 系列主题：NLP与信息抽取
+- 2016-08-22 - [【中文分词系列】 4. 基于双向LSTM的seq2seq字标注](https://spaces.ac.cn/archives/3924)
+  - 原站分类：信息时代
+  - 原站标签：概率、python、分词、自然语言处理
+  - 系列：中文分词系列 #4
+  - 系列主题：NLP与信息抽取
+- 2016-09-12 - [【中文分词系列】 5. 基于语言模型的无监督分词](https://spaces.ac.cn/archives/3956)
+  - 原站分类：信息时代
+  - 原站标签：分词、自然语言处理、无监督、新词发现
+  - 系列：中文分词系列 #5
+  - 系列主题：NLP与信息抽取
+- 2017-01-13 - [【中文分词系列】 6. 基于全卷积网络的中文分词](https://spaces.ac.cn/archives/4195)
+  - 原站分类：信息时代
+  - 原站标签：深度学习、分词、自然语言处理
+  - 系列：中文分词系列 #6
+  - 系列主题：NLP与信息抽取
+- 2017-03-06 - [【中文分词系列】 7. 深度学习分词？只需一个词典！](https://spaces.ac.cn/archives/4245)
+  - 原站分类：信息时代
+  - 原站标签：分词、自然语言处理、无监督、新词发现
+  - 系列：中文分词系列 #7
+  - 系列主题：NLP与信息抽取
+- 2017-03-11 - [【中文分词系列】 8. 更好的新词发现算法](https://spaces.ac.cn/archives/4256)
+  - 原站分类：信息时代
+  - 原站标签：分词、词库、新词发现
+  - 系列：中文分词系列 #8
+  - 系列主题：NLP与信息抽取
+
+<a id="series-nlp-bffb492bca"></a>
+#### OCR技术浅探
+
+- 2016-06-17 - [OCR技术浅探：1. 全文简述](https://spaces.ac.cn/archives/3774)
+  - 原站分类：信息时代
+  - 原站标签：图像、数据挖掘、OCR
+  - 系列：OCR技术浅探 #1
+  - 系列主题：NLP与信息抽取
+- 2016-06-17 - [OCR技术浅探：2. 背景与假设](https://spaces.ac.cn/archives/3781)
+  - 原站分类：信息时代
+  - 原站标签：图像、数据挖掘、OCR、文字
+  - 系列：OCR技术浅探 #2
+  - 系列主题：NLP与信息抽取
+- 2016-06-18 - [OCR技术浅探：3. 特征提取(1)](https://spaces.ac.cn/archives/3785)
+  - 原站分类：信息时代
+  - 原站标签：图像、OCR、特征、聚类、文字
+  - 系列：OCR技术浅探 #3
+  - 系列主题：NLP与信息抽取
+- 2016-06-18 - [OCR技术浅探：3. 特征提取(2)](https://spaces.ac.cn/archives/3802)
+  - 原站分类：信息时代
+  - 原站标签：图像、OCR、特征、文字
+  - 系列：OCR技术浅探 #3
+  - 系列主题：NLP与信息抽取
+- 2016-06-24 - [OCR技术浅探：4. 文字定位](https://spaces.ac.cn/archives/3818)
+  - 原站分类：信息时代
+  - 原站标签：图像、OCR、文字、搜索
+  - 系列：OCR技术浅探 #4
+  - 系列主题：NLP与信息抽取
+- 2016-06-24 - [OCR技术浅探：5. 文本切割](https://spaces.ac.cn/archives/3823)
+  - 原站分类：信息时代
+  - 原站标签：图像、OCR、文字
+  - 系列：OCR技术浅探 #5
+  - 系列主题：NLP与信息抽取
+- 2016-06-25 - [OCR技术浅探：6. 光学识别](https://spaces.ac.cn/archives/3831)
+  - 原站分类：信息时代
+  - 原站标签：神经网络、深度学习、OCR、文字
+  - 系列：OCR技术浅探 #6
+  - 系列主题：NLP与信息抽取
+- 2016-06-26 - [OCR技术浅探：7. 语言模型](https://spaces.ac.cn/archives/3842)
+  - 原站分类：信息时代
+  - 原站标签：模型、OCR、语言、动态规划
+  - 系列：OCR技术浅探 #7
+  - 系列主题：NLP与信息抽取
+- 2016-06-26 - [OCR技术浅探：8. 综合评估](https://spaces.ac.cn/archives/3854)
+  - 原站分类：信息时代
+  - 原站标签：模型、图像、OCR
+  - 系列：OCR技术浅探 #8
+  - 系列主题：NLP与信息抽取
+- 2016-06-26 - [OCR技术浅探：9. 代码共享(完)](https://spaces.ac.cn/archives/3856)
+  - 原站分类：信息时代
+  - 原站标签：代码、图像、OCR
+  - 系列：OCR技术浅探 #9
+  - 系列主题：NLP与信息抽取
+
+<a id="series-nlp-standalone"></a>
+#### 非系列文章
+
+- 2024-01-09 - [局部余弦相似度大，全局余弦相似度一定也大吗？](https://spaces.ac.cn/archives/9931)
+  - 原站分类：数学研究
+  - 原站标签：不等式、相似度、悖论
+- 2023-10-16 - [随机分词再探：从Viterbi Sampling到完美采样算法](https://spaces.ac.cn/archives/9811)
+  - 原站分类：信息时代
+  - 原站标签：概率、随机、优化、分词、采样
+- 2023-09-16 - [随机分词浅探：从Viterbi Decoding到Viterbi Sampling](https://spaces.ac.cn/archives/9768)
+  - 原站分类：信息时代
+  - 原站标签：概率、随机、分词、新词发现
+- 2023-09-07 - [BytePiece：更纯粹、更高压缩率的Tokenizer](https://spaces.ac.cn/archives/9752)
+  - 原站分类：信息时代
+  - 原站标签：分词、无监督、新词发现
+- 2023-08-28 - [Lion/Tiger优化器训练下的Embedding异常和对策](https://spaces.ac.cn/archives/9736)
+  - 原站分类：信息时代
+  - 原站标签：问题、梯度、优化器
+- 2023-07-20 - [语言模型输出端共享Embedding的重新探索](https://spaces.ac.cn/archives/9698)
+  - 原站分类：数学研究
+  - 原站标签：语言模型、初始化
+- 2022-12-07 - [从局部到全局：语义相似度的测地线距离](https://spaces.ac.cn/archives/9368)
+  - 原站分类：信息时代
+  - 原站标签：黎曼几何、语义、语义相似度
+- 2022-11-02 - [利用CUR分解加速交互式相似度模型的检索](https://spaces.ac.cn/archives/9336)
+  - 原站分类：信息时代
+  - 原站标签：矩阵、语义、语义相似度
+- 2022-05-18 - [当BERT-whitening引入超参数：总有一款适合你](https://spaces.ac.cn/archives/9079)
+  - 原站分类：信息时代
+  - 原站标签：语言模型、语义、语义相似度
+- 2022-04-28 - [在bert4keras中使用混合精度和XLA加速训练](https://spaces.ac.cn/archives/9059)
+  - 原站分类：信息时代
+  - 原站标签：模型、优化、梯度
+- 2022-04-15 - [GlobalPointer下的“KL散度”应该是怎样的？](https://spaces.ac.cn/archives/9039)
+  - 原站分类：数学研究
+  - 原站标签：损失函数、对抗训练、NER、正则化
+- 2022-02-21 - [GPLinker：基于GlobalPointer的事件联合抽取](https://spaces.ac.cn/archives/8926)
+  - 原站分类：信息时代
+  - 原站标签：NLP、信息抽取、NER
+- 2022-01-30 - [GPLinker：基于GlobalPointer的实体关系联合抽取](https://spaces.ac.cn/archives/8888)
+  - 原站分类：信息时代
+  - 原站标签：NLP、信息抽取、NER
+- 2022-01-25 - [Efficient GlobalPointer：少点参数，多点效果](https://spaces.ac.cn/archives/8877)
+  - 原站分类：信息时代
+  - 原站标签：模型、NLP、NER
+- 2021-12-17 - [Seq2Seq+前缀树：检索任务新范式（以KgCLUE为例）](https://spaces.ac.cn/archives/8802)
+  - 原站分类：信息时代
+  - 原站标签：代码、语义、keras、相似度
+- 2021-11-08 - [模型优化漫谈：BERT的初始标准差为什么是0.02？](https://spaces.ac.cn/archives/8747)
+  - 原站分类：信息时代
+  - 原站标签：模型、分析、优化、梯度
+- 2021-10-31 - [bert4keras在手，baseline我有：CLUE基准代码](https://spaces.ac.cn/archives/8739)
+  - 原站分类：信息时代
+  - 原站标签：模型、代码、keras
+- 2021-10-09 - [关于WhiteningBERT原创性的疑问和沟通](https://spaces.ac.cn/archives/8715)
+  - 原站分类：信息时代
+  - 原站标签：情感、模型、工作
+- 2021-09-27 - [关于维度公式“n > 8.33 log N”的可用性分析](https://spaces.ac.cn/archives/8711)
+  - 原站分类：信息时代
+  - 原站标签：维度、熵、词向量
+- 2021-09-10 - [曾被嫌弃的预训练任务NSP，做出了优秀的Zero Shot效果](https://spaces.ac.cn/archives/8671)
+  - 原站分类：信息时代
+  - 原站标签：无监督、语言模型、NLP、模版
+- 2021-09-01 - [从三角不等式到Margin Softmax](https://spaces.ac.cn/archives/8656)
+  - 原站分类：信息时代
+  - 原站标签：损失函数、相似度
+- 2021-06-11 - [SimBERTv2来了！融合检索和生成的RoFormer-Sim模型](https://spaces.ac.cn/archives/8454)
+  - 原站分类：信息时代
+  - 原站标签：语言模型、生成模型、文本生成
+- 2021-05-01 - [GlobalPointer：用统一的方式处理嵌套和非嵌套NER](https://spaces.ac.cn/archives/8373)
+  - 原站分类：信息时代
+  - 原站标签：模型、NLP、NER
+- 2021-04-26 - [中文任务还是SOTA吗？我们给SimCSE补充了一些实验](https://spaces.ac.cn/archives/8348)
+  - 原站分类：信息时代
+  - 原站标签：语言模型、语义、语义相似度、对比学习
+- 2021-04-16 - [搜狐文本匹配：基于条件LayerNorm的多任务baseline](https://spaces.ac.cn/archives/8337)
+  - 原站分类：信息时代
+  - 原站标签：语言模型、比赛、语义相似度
+- 2021-04-11 - [无监督语义相似度哪家强？我们做了个比较全面的评测](https://spaces.ac.cn/archives/8321)
+  - 原站分类：信息时代
+  - 原站标签：语言模型、语义、语义相似度
+- 2021-04-03 - [P-tuning：自动构建模版，释放语言模型潜能](https://spaces.ac.cn/archives/8295)
+  - 原站分类：信息时代
+  - 原站标签：语言模型、NLP
+- 2021-03-05 - [短文本匹配Baseline：脱敏数据使用预训练模型的尝试](https://spaces.ac.cn/archives/8213)
+  - 原站分类：信息时代
+  - 原站标签：语言模型、语义、语义相似度
+- 2021-02-09 - [一个二值化词向量模型，是怎么跟果蝇搭上关系的？](https://spaces.ac.cn/archives/8159)
+  - 原站分类：信息时代
+  - 原站标签：自然语言处理、词向量、NLP
+- 2021-01-26 - [Seq2Seq重复解码现象的理论分析尝试](https://spaces.ac.cn/archives/8128)
+  - 原站分类：数学研究
+  - 原站标签：矩阵、语言模型、文本生成、解码
+- 2021-01-22 - [【搜出来的文本】⋅（三）基于BERT的文本采样](https://spaces.ac.cn/archives/8119)
+  - 原站分类：信息时代
+  - 原站标签：文本生成、采样、离散优化、MCMC
+- 2021-01-11 - [你可能不需要BERT-flow：一个线性变换媲美BERT-flow](https://spaces.ac.cn/archives/8069)
+  - 原站分类：数学研究
+  - 原站标签：语言模型、语义、flow、语义相似度
+- 2020-12-04 - [层次分解位置编码，让BERT可以处理超长文本](https://spaces.ac.cn/archives/7947)
+  - 原站分类：信息时代
+  - 原站标签：模型、优化、attention
+- 2020-11-20 - [跟风玩玩目前最大的中文GPT2模型（bert4keras）](https://spaces.ac.cn/archives/7912)
+  - 原站分类：信息时代
+  - 原站标签：语言模型、文本生成、attention
+- 2020-10-29 - [用ALBERT和ELECTRA之前，请确认你真的了解它们](https://spaces.ac.cn/archives/7846)
+  - 原站分类：信息时代
+  - 原站标签：语言模型、attention
+- 2020-10-19 - [BERT可以上几年级了？Seq2Seq“硬刚”小学数学应用题](https://spaces.ac.cn/archives/7809)
+  - 原站分类：数学研究
+  - 原站标签：语言模型、文本生成
+- 2020-09-27 - [必须要GPT3吗？不，BERT的MLM模型也能小样本学习](https://spaces.ac.cn/archives/7764)
+  - 原站分类：信息时代
+  - 原站标签：无监督、语言模型、NLP
+- 2020-09-18 - [提速不掉点：基于词颗粒度的中文WoBERT](https://spaces.ac.cn/archives/7758)
+  - 原站分类：信息时代
+  - 原站标签：语言模型、attention
+- 2020-07-25 - [学会提问的BERT：端到端地从篇章中构建问答对](https://spaces.ac.cn/archives/7630)
+  - 原站分类：信息时代
+  - 原站标签：语言模型、文本生成
+- 2020-07-17 - [BERT-of-Theseus：基于模块替换的模型压缩方法](https://spaces.ac.cn/archives/7575)
+  - 原站分类：信息时代
+  - 原站标签：模型、attention、模型压缩
+- 2020-06-16 - [如何应对Seq2Seq中的“根本停不下来”问题？](https://spaces.ac.cn/archives/7500)
+  - 原站分类：信息时代
+  - 原站标签：语言模型、文本生成、解码
+- 2020-06-10 - [无监督分词和句法分析！原来BERT还可以这样用](https://spaces.ac.cn/archives/7476)
+  - 原站分类：信息时代
+  - 原站标签：无监督、新词发现
+- 2020-05-18 - [鱼与熊掌兼得：融合检索和生成的SimBERT模型](https://spaces.ac.cn/archives/7427)
+  - 原站分类：信息时代
+  - 原站标签：语言模型、生成模型、文本生成
+- 2020-05-13 - [从EMD、WMD到WRD：文本向量序列的相似度计算](https://spaces.ac.cn/archives/7388)
+  - 原站分类：数学研究
+  - 原站标签：最优、优化、语义、线性规划
+- 2020-04-02 - [bert4keras在手，baseline我有：百度LIC2020](https://spaces.ac.cn/archives/7321)
+  - 原站分类：信息时代
+  - 原站标签：模型、keras、attention
+- 2020-03-16 - [现在可以用Keras玩中文GPT2了（GPT2_ML）](https://spaces.ac.cn/archives/7292)
+  - 原站分类：信息时代
+  - 原站标签：语言模型、NLP、文本生成、attention
+- 2020-03-09 - [Seq2Seq中Exposure Bias现象的浅析与对策](https://spaces.ac.cn/archives/7259)
+  - 原站分类：信息时代
+  - 原站标签：语言模型、文本生成、对抗训练
+- 2020-02-24 - [CRF用过了，不妨再了解下更快的MEMM？](https://spaces.ac.cn/archives/7213)
+  - 原站分类：信息时代
+  - 原站标签：模型、概率图、crf
+- 2020-02-07 - [你的CRF层的学习率可能不够大](https://spaces.ac.cn/archives/7196)
+  - 原站分类：信息时代
+  - 原站标签：模型、概率图、crf
+- 2020-01-29 - [抛开约束，增强模型：一行代码提升albert表现](https://spaces.ac.cn/archives/7187)
+  - 原站分类：信息时代
+  - 原站标签：语言模型、attention
+- 2020-01-03 - [用bert4keras做三元组抽取](https://spaces.ac.cn/archives/7161)
+  - 原站分类：信息时代
+  - 原站标签：语言模型、信息抽取
+- 2019-12-05 - [万能的seq2seq：基于seq2seq的阅读理解问答](https://spaces.ac.cn/archives/7115)
+  - 原站分类：信息时代
+  - 原站标签：问答、语言模型、文本生成
+- 2019-11-11 - [JoSE：球面上的词向量和句向量](https://spaces.ac.cn/archives/7063)
+  - 原站分类：信息时代
+  - 原站标签：几何、自然语言处理、词向量、NLP
+- 2019-09-18 - [从语言模型到Seq2Seq：Transformer如戏，全靠Mask](https://spaces.ac.cn/archives/6933)
+  - 原站分类：信息时代
+  - 原站标签：语言模型、NLP、文本生成、attention
+- 2019-09-09 - [重新写了之前的新词发现算法：更快更好的新词发现](https://spaces.ac.cn/archives/6920)
+  - 原站分类：信息时代
+  - 原站标签：分词、无监督、NLP、新词发现
+- 2019-09-03 - [百度实体链接比赛后记：行为建模和实体链接](https://spaces.ac.cn/archives/6919)
+  - 原站分类：信息时代
+  - 原站标签：模型、NLP、NER
+- 2019-08-27 - [自己实现了一个bert4keras](https://spaces.ac.cn/archives/6915)
+  - 原站分类：信息时代
+  - 原站标签：语言模型、NLP、keras、attention
+- 2019-08-09 - [seq2seq之双向解码](https://spaces.ac.cn/archives/6877)
+  - 原站分类：信息时代
+  - 原站标签：模型、NLP、keras、文本生成
+- 2019-06-29 - [基于Bert的NL2SQL模型：一个简明的Baseline](https://spaces.ac.cn/archives/6771)
+  - 原站分类：信息时代
+  - 原站标签：语言模型、比赛、sql、attention
+- 2019-06-18 - [当Bert遇上Keras：这可能是Bert最简单的打开姿势](https://spaces.ac.cn/archives/6736)
+  - 原站分类：信息时代
+  - 原站标签：语言模型、比赛、信息抽取、attention
+- 2019-06-03 - [基于DGCNN和概率图的轻量级信息抽取模型](https://spaces.ac.cn/archives/6671)
+  - 原站分类：信息时代
+  - 原站标签：模型、比赛、概率图、信息抽取
+- 2019-05-28 - [ON-LSTM：用有序神经元表达层次结构](https://spaces.ac.cn/archives/6621)
+  - 原站分类：信息时代
+  - 原站标签：模型、深度学习、无监督、NLP
+- 2019-04-10 - [分享一次专业领域词汇的无监督挖掘](https://spaces.ac.cn/archives/6540)
+  - 原站分类：信息时代
+  - 原站标签：分词、无监督、词库、新词发现
+- 2019-01-14 - [基于CNN和序列标注的对联机器人](https://spaces.ac.cn/archives/6270)
+  - 原站分类：信息时代
+  - 原站标签：NLP、文本生成
+- 2018-09-01 - [玩转Keras之seq2seq自动生成标题](https://spaces.ac.cn/archives/5861)
+  - 原站分类：信息时代
+  - 原站标签：模型、NLP、keras、文本生成
+- 2018-07-29 - [基于GRU和AM-Softmax的句子相似度模型](https://spaces.ac.cn/archives/5743)
+  - 原站分类：信息时代
+  - 原站标签：语义、损失函数、相似度
+- 2018-06-13 - [“噪声对比估计”杂谈：曲径通幽之妙](https://spaces.ac.cn/archives/5617)
+  - 原站分类：数学研究
+  - 原站标签：概率、词向量、估计
+- 2018-05-31 - [基于最小熵原理的NLP库：nlp zero](https://spaces.ac.cn/archives/5597)
+  - 原站分类：信息时代
+  - 原站标签：python、无监督、最小熵
+- 2018-05-18 - [简明条件随机场CRF介绍（附带纯Keras实现）](https://spaces.ac.cn/archives/5542)
+  - 原站分类：信息时代
+  - 原站标签：模型、概率图、keras、crf
+- 2017-11-25 - [果壳中的条件随机场(CRF In A Nutshell)](https://spaces.ac.cn/archives/4695)
+  - 原站分类：信息时代
+  - 原站标签：模型、概率图、crf
+- 2016-12-14 - [端到端的腾讯验证码识别（46%正确率）](https://spaces.ac.cn/archives/4138)
+  - 原站分类：信息时代
+  - 原站标签：图像、深度学习、OCR、端到端
+- 2016-12-03 - [词向量与Embedding究竟是怎么回事？](https://spaces.ac.cn/archives/4122)
+  - 原站分类：信息时代
+  - 原站标签：深度学习、自然语言处理
+- 2016-11-29 - [轻便的深度学习分词系统：NNCWS v0.1](https://spaces.ac.cn/archives/4114)
+  - 原站分类：信息时代
+  - 原站标签：分词、自然语言处理
+- 2016-09-06 - [基于双向LSTM和迁移学习的seq2seq核心实体识别](https://spaces.ac.cn/archives/3942)
+  - 原站分类：信息时代
+  - 原站标签：python、自然语言处理、识别、NER
+- 2014-08-09 - [素数之美2：Bertrand假设的证明](https://spaces.ac.cn/archives/2800)
+  - 原站分类：数学研究
+  - 原站标签：素数、数论
