@@ -1,5 +1,19 @@
 [
   {
+    "id": "11736",
+    "title": "如何更科学地估计矩阵的谱范数？",
+    "url": "https://spaces.ac.cn/archives/11736",
+    "date": "2026-05-04",
+    "source_category": "信息时代",
+    "source_tags": [
+      "迭代",
+      "矩阵",
+      "估计",
+      "谱范数"
+    ],
+    "source_summary": null
+  },
+  {
     "id": "11729",
     "title": "MuP之上：4. 坚守参数的稳定性",
     "url": "https://spaces.ac.cn/archives/11729",

@@ -8,8 +8,8 @@
 
 这个仓库的目标是把科学空间的所有文章做成一个持续更新的元数据索引：不复制全文，只保存标题、日期、原文链接、原站分类、标签、自动主题和系列信息，并通过 GitHub Actions 定时更新。这样读者可以直接按主题或系列查找文章，跳转回原站阅读，也不用担心索引长期失修。
 
-- 最近更新日期：2026-04-24（按归档中最新文章日期）
-- 文章总数：1311
+- 最近更新日期：2026-05-04（按归档中最新文章日期）
+- 文章总数：1312
 - 版权说明：本项目保存标题、链接、日期、分类、标签、自动主题、系列信息和少量小结短摘录，不镜像、复制或保存文章全文。
 
 ## 目录
@@ -47,7 +47,7 @@
   - [msign算子的Newton-Schulz迭代（2 篇）](#series-optimization-d27a2576eb)
   - [从动力学角度看优化算法（7 篇）](#series-optimization-4b38446b55)
   - [非系列文章（122 篇）](#series-optimization-standalone)
-- [数学工具（468 篇）](#topic-math)
+- [数学工具（469 篇）](#topic-math)
   - [低秩近似之路（5 篇）](#series-math-6689ddf615)
   - [SVD分解（3 篇）](#series-math-6a0e7d7415)
   - [外微分浅谈（7 篇）](#series-math-07dc7181b7)
@@ -69,7 +69,7 @@
   - [自然极值（8 篇）](#series-math-5e3917ad32)
   - [向量（5 篇）](#series-math-fae158475e)
   - [微积分学习（2 篇）](#series-math-d050b16b4d)
-  - [非系列文章（374 篇）](#series-math-standalone)
+  - [非系列文章（375 篇）](#series-math-standalone)
 - [概率统计与信息论（88 篇）](#topic-probability-info)
   - [最小熵原理（6 篇）](#series-probability-info-2e7e2c4698)
   - [非系列文章（82 篇）](#series-probability-info-standalone)
@@ -107,6 +107,7 @@
 
 ## 最近 20 篇文章
 
+- 2026-05-04 - [如何更科学地估计矩阵的谱范数？](https://spaces.ac.cn/archives/11736)
 - 2026-04-24 - [MuP之上：4. 坚守参数的稳定性](https://spaces.ac.cn/archives/11729)
 - 2026-04-17 - [基于流式幂迭代的Muon实现：5. 延伸](https://spaces.ac.cn/archives/11719)
 - 2026-04-13 - [基于流式幂迭代的Muon实现：4. 原理](https://spaces.ac.cn/archives/11710)
@@ -126,7 +127,6 @@
 - 2026-01-16 - [让炼丹更科学一些（六）：自上而下的精妙构造](https://spaces.ac.cn/archives/11540)
 - 2026-01-09 - [让炼丹更科学一些（五）：基于梯度精调学习率](https://spaces.ac.cn/archives/11530)
 - 2025-12-26 - [让炼丹更科学一些（四）：新恒等式，新学习率](https://spaces.ac.cn/archives/11494)
-- 2025-12-23 - [为什么DeltaNet要加L2 Normalize？](https://spaces.ac.cn/archives/11486)
 
 ## 主题分类
 
@@ -1006,6 +1006,7 @@
 <a id="series-math-standalone"></a>
 #### 非系列文章
 
+- 2026-05-04 - [如何更科学地估计矩阵的谱范数？](https://spaces.ac.cn/archives/11736)
 - 2026-03-31 - [中位数（Median）简介](https://spaces.ac.cn/archives/11693)
 - 2026-01-26 - [DeltaNet的核心逆矩阵的元素总是在\[-1, 1\]内](https://spaces.ac.cn/archives/11563)
 - 2026-01-20 - [为什么我们偏爱各向同性？基于最速下降的理解](https://spaces.ac.cn/archives/11549)
