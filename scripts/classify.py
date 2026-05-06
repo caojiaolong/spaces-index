@@ -115,16 +115,39 @@ TOPIC_KEYWORDS: dict[str, list[str]] = {
         "tiger",
         "amos",
         "优化器",
-        "优化",
+        "优化算法",
         "学习率",
         "权重衰减",
-        "梯度",
         "batch size",
         "dropout",
-        "训练",
-        "收敛",
         "hessian",
-        "裁剪",
+        "梯度下降",
+        "梯度累积",
+        "梯度裁剪",
+        "梯度惩罚",
+        "策略梯度",
+        "零阶优化",
+        "可导优化",
+        "不可导优化",
+        "梯度流",
+        "梯度消失",
+        "梯度爆炸",
+        "输入梯度",
+        "参数梯度",
+        "梯度最大化",
+        "梯度近似",
+        "平均损失收敛",
+        "损失收敛",
+        "损失函数",
+        "动量加速",
+        "超参数",
+        "初始化",
+        "训练过程",
+        "训练策略",
+        "训练1000层",
+        "训练你的准确率",
+        "训练集的损失",
+        "炼丹",
     ],
     "数学工具": [
         "矩阵",
@@ -132,7 +155,6 @@ TOPIC_KEYWORDS: dict[str, list[str]] = {
         "积分",
         "不等式",
         "傅里叶",
-        "随机",
         "低秩",
         "范数",
         "正交",
@@ -140,12 +162,10 @@ TOPIC_KEYWORDS: dict[str, list[str]] = {
         "数论",
         "极值",
         "级数",
-        "函数",
         "素数",
         "复数",
         "向量",
         "竞赛",
-        "近似",
         "数学",
     ],
     "概率统计与信息论": [
@@ -258,7 +278,6 @@ TOPIC_KEYWORDS: dict[str, list[str]] = {
     ],
     "生物自然": [
         "生物",
-        "自然",
         "植物",
         "动物",
         "生态",
@@ -331,6 +350,54 @@ SOURCE_CATEGORY_TOPICS: dict[str, list[str]] = {
     "生活/情感": ["阅读写作与随笔"],
 }
 
+APPLIED_TOPICS = {
+    "深度学习基础",
+    "词向量与Embedding",
+    "大模型与Transformer",
+    "生成模型",
+    "优化与训练",
+    "NLP与信息抽取",
+    "工程工具",
+}
+BROAD_MATH_TOPICS = {"数学工具", "概率统计与信息论", "几何与方程"}
+EMBEDDING_HARD_MATH_KEYWORDS = [
+    "svd",
+    "奇异值",
+    "矩阵",
+    "分解",
+    "低秩",
+    "范数",
+    "正交",
+    "谱",
+]
+OPTIMIZER_FOCUS_KEYWORDS = [
+    "adam",
+    "adamw",
+    "sgd",
+    "muon",
+    "lion",
+    "tiger",
+    "amos",
+    "优化器",
+    "优化算法",
+    "学习率",
+    "权重衰减",
+    "hessian",
+    "batch size",
+    "weight rms",
+    "update rms",
+    "梯度裁剪",
+    "裁剪",
+    "最速下降",
+    "动量加速",
+    "训练过程",
+    "训练策略",
+    "训练1000层",
+    "训练你的准确率",
+    "训练集的损失",
+    "炼丹",
+]
+
 BEGINNER_KEYWORDS = ["入门", "基础", "简介", "浅谈", "快速上手", "初探"]
 ADVANCED_KEYWORDS = [
     "证明",
@@ -353,17 +420,65 @@ def combined_text(post: dict[str, Any]) -> str:
     return clean_text(" ".join(parts)).casefold()
 
 
+def keyword_text(post: dict[str, Any]) -> str:
+    parts = [
+        str(post.get("title") or ""),
+        " ".join(str(tag) for tag in post.get("source_tags") or []),
+    ]
+    return clean_text(" ".join(parts)).casefold()
+
+
+def has_any_keyword(text: str, keywords: list[str]) -> bool:
+    return any(keyword.casefold() in text for keyword in keywords)
+
+
+def should_add_source_topic(topic: str, matched_topics: list[str]) -> bool:
+    if topic == "数学工具" and any(matched in APPLIED_TOPICS for matched in matched_topics):
+        return False
+    return True
+
+
+def is_optimizer_focused(post: dict[str, Any]) -> bool:
+    text = keyword_text(post)
+    if has_any_keyword(text, OPTIMIZER_FOCUS_KEYWORDS):
+        return True
+    return "梯度" in text and "优化" in text
+
+
+def refine_topics(post: dict[str, Any], topics: list[str]) -> list[str]:
+    text = keyword_text(post)
+    if "优化与训练" in topics and is_optimizer_focused(post):
+        topics = [topic for topic in topics if topic not in BROAD_MATH_TOPICS]
+    if "物理化学" in topics:
+        if (
+            ("量子化" in text or "vq" in text)
+            and any(topic in topics for topic in ("大模型与Transformer", "生成模型"))
+        ):
+            topics = [topic for topic in topics if topic != "物理化学"]
+        if "优化与训练" in topics and ("优化算法" in text or is_optimizer_focused(post)):
+            topics = [topic for topic in topics if topic != "物理化学"]
+    if "生物自然" in topics and "自然语言" in text:
+        topics = [topic for topic in topics if topic != "生物自然"]
+    if (
+        "词向量与Embedding" in topics
+        and "数学工具" in topics
+        and not has_any_keyword(text, EMBEDDING_HARD_MATH_KEYWORDS)
+    ):
+        topics = [topic for topic in topics if topic != "数学工具"]
+    return topics or ["其他"]
+
+
 def match_topics(post: dict[str, Any]) -> list[str]:
-    text = combined_text(post)
+    text = keyword_text(post)
     topics = [
         topic
         for topic, keywords in TOPIC_KEYWORDS.items()
-        if any(keyword.casefold() in text for keyword in keywords)
+        if has_any_keyword(text, keywords)
     ]
     for topic in SOURCE_CATEGORY_TOPICS.get(str(post.get("source_category") or ""), []):
-        if topic not in topics:
+        if topic not in topics and should_add_source_topic(topic, topics):
             topics.append(topic)
-    return topics or ["其他"]
+    return refine_topics(post, topics)
 
 
 CHINESE_DIGITS = {
@@ -414,6 +529,7 @@ def detect_series_info(title: str) -> tuple[str | None, int | None]:
     patterns = [
         r"^《(?P<series>[^》]*?)(?P<index>\d+)》\s*[:：]",
         r"^《(?P<series>[^》]+)》系列\s*[—\-－-]+\s*(?P<index>[一二三四五六七八九十百零〇两\d]+)\s*[、.．]",
+        r"^【(?P<series>[^】]+)】\s*[⋅·•.．、\-－—]*\s*[（(](?P<index>[一二三四五六七八九十百零〇两\d]+)[）)]",
         r"^【(?P<series>[^】]+)】\s*(?P<index>[一二三四五六七八九十百零〇两\d]+)",
         r"^(?P<series>.+?)[（(](?P<index>[一二三四五六七八九十百零〇两\d]+)[）)]\s*[:：]",
         r"^(?P<series>.+?)[:：]\s*(?P<index>[一二三四五六七八九十百零〇两\d]+)\s*[、.．]",
@@ -444,6 +560,7 @@ def detect_prefix_series_candidate(title: str) -> str | None:
         r"^(?P<series>[“\"'][^：:]{3,80}?[”\"'！!？?])[:：]",
         r"^(?P<series>《[^》]{3,80}》)[:：]",
         r"^(?P<series>【[^】]{3,80}】)[:：]",
+        r"^(?P<series>[^：:]{3,60}?)之[^：:]{1,80}[:：]",
     ]
     for pattern in patterns:
         match = re.search(pattern, title)

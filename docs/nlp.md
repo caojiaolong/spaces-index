@@ -2,7 +2,7 @@
 
 [返回主题索引](index.md)
 
-共 93 篇。
+共 92 篇。
 
 <a id="series-nlp-73a0edf1cd"></a>
 #### 中文分词系列
@@ -195,9 +195,6 @@
 - 2021-01-26 - [Seq2Seq重复解码现象的理论分析尝试](https://spaces.ac.cn/archives/8128)
   - 原站分类：数学研究
   - 原站标签：矩阵、语言模型、文本生成、解码
-- 2021-01-22 - [【搜出来的文本】⋅（三）基于BERT的文本采样](https://spaces.ac.cn/archives/8119)
-  - 原站分类：信息时代
-  - 原站标签：文本生成、采样、离散优化、MCMC
 - 2021-01-11 - [你可能不需要BERT-flow：一个线性变换媲美BERT-flow](https://spaces.ac.cn/archives/8069)
   - 原站分类：数学研究
   - 原站标签：语言模型、语义、flow、语义相似度

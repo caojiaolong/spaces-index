@@ -163,6 +163,35 @@
   - 系列：生成扩散模型漫谈 #31
   - 系列主题：生成模型
 
+<a id="series-generative-models-9738e76a31"></a>
+#### 细水长flow
+
+- 2018-08-11 - [细水长flow之NICE：流模型的基本概念与实现](https://spaces.ac.cn/archives/5776)
+  - 原站分类：信息时代
+  - 原站标签：概率、流模型、flow、生成模型
+  - 系列：细水长flow
+  - 系列主题：生成模型
+- 2018-08-26 - [细水长flow之RealNVP与Glow：流模型的传承与升华](https://spaces.ac.cn/archives/5807)
+  - 原站分类：信息时代
+  - 原站标签：概率、流模型、flow、生成模型
+  - 系列：细水长flow
+  - 系列主题：生成模型
+- 2018-09-21 - [细水长flow之f-VAEs：Glow与VAEs的联姻](https://spaces.ac.cn/archives/5977)
+  - 原站分类：信息时代
+  - 原站标签：vae、流模型、flow、生成模型
+  - 系列：细水长flow
+  - 系列主题：生成模型
+- 2019-03-21 - [细水长flow之可逆ResNet：极致的暴力美学](https://spaces.ac.cn/archives/6482)
+  - 原站分类：信息时代
+  - 原站标签：分析、流模型、flow、生成模型
+  - 系列：细水长flow
+  - 系列主题：生成模型
+- 2025-01-17 - [细水长flow之TARFLOW：流模型满血归来？](https://spaces.ac.cn/archives/10667)
+  - 原站分类：信息时代
+  - 原站标签：流模型、flow、生成模型、attention
+  - 系列：细水长flow
+  - 系列主题：生成模型
+
 <a id="series-generative-models-c26095ce70"></a>
 #### 变分自编码器
 
@@ -207,6 +236,30 @@
   - 系列：变分自编码器 #8
   - 系列主题：生成模型
 
+<a id="series-generative-models-efbc1f2b0e"></a>
+#### 搜出来的文本
+
+- 2021-01-07 - [【搜出来的文本】⋅（一）从文本生成到搜索采样](https://spaces.ac.cn/archives/8062)
+  - 原站分类：信息时代
+  - 原站标签：文本生成、采样、离散优化、MCMC
+  - 系列：搜出来的文本 #1
+  - 系列主题：生成模型
+- 2021-01-14 - [【搜出来的文本】⋅（二）从MCMC到模拟退火](https://spaces.ac.cn/archives/8084)
+  - 原站分类：信息时代
+  - 原站标签：文本生成、采样、离散优化、MCMC
+  - 系列：搜出来的文本 #2
+  - 系列主题：生成模型
+- 2021-01-22 - [【搜出来的文本】⋅（三）基于BERT的文本采样](https://spaces.ac.cn/archives/8119)
+  - 原站分类：信息时代
+  - 原站标签：文本生成、采样、离散优化、MCMC
+  - 系列：搜出来的文本 #3
+  - 系列主题：生成模型
+- 2021-02-25 - [【搜出来的文本】⋅（四）通过增、删、改来用词造句](https://spaces.ac.cn/archives/8194)
+  - 原站分类：信息时代
+  - 原站标签：文本生成、采样、离散优化、MCMC
+  - 系列：搜出来的文本 #4
+  - 系列主题：生成模型
+
 <a id="series-generative-models-cbc622e222"></a>
 #### 能量视角下的GAN模型
 
@@ -238,9 +291,6 @@
 - 2025-06-20 - [线性注意力简史：从模仿、创新到反哺](https://spaces.ac.cn/archives/11033)
   - 原站分类：信息时代
   - 原站标签：线性、RNN、生成模型、attention
-- 2025-01-17 - [细水长flow之TARFLOW：流模型满血归来？](https://spaces.ac.cn/archives/10667)
-  - 原站分类：信息时代
-  - 原站标签：流模型、flow、生成模型、attention
 - 2024-11-06 - [VQ的又一技巧：给编码表加一个线性变换](https://spaces.ac.cn/archives/10519)
   - 原站分类：数学研究
   - 原站标签：生成模型、编码、梯度、离散化
@@ -304,24 +354,12 @@
 - 2021-03-03 - [T5 PEGASUS：开源一个中文生成式预训练模型](https://spaces.ac.cn/archives/8209)
   - 原站分类：信息时代
   - 原站标签：语言模型、文本生成、attention
-- 2021-02-25 - [【搜出来的文本】⋅（四）通过增、删、改来用词造句](https://spaces.ac.cn/archives/8194)
-  - 原站分类：信息时代
-  - 原站标签：文本生成、采样、离散优化、MCMC
 - 2021-01-26 - [Seq2Seq重复解码现象的理论分析尝试](https://spaces.ac.cn/archives/8128)
   - 原站分类：数学研究
   - 原站标签：矩阵、语言模型、文本生成、解码
-- 2021-01-22 - [【搜出来的文本】⋅（三）基于BERT的文本采样](https://spaces.ac.cn/archives/8119)
-  - 原站分类：信息时代
-  - 原站标签：文本生成、采样、离散优化、MCMC
-- 2021-01-14 - [【搜出来的文本】⋅（二）从MCMC到模拟退火](https://spaces.ac.cn/archives/8084)
-  - 原站分类：信息时代
-  - 原站标签：文本生成、采样、离散优化、MCMC
 - 2021-01-11 - [你可能不需要BERT-flow：一个线性变换媲美BERT-flow](https://spaces.ac.cn/archives/8069)
   - 原站分类：数学研究
   - 原站标签：语言模型、语义、flow、语义相似度
-- 2021-01-07 - [【搜出来的文本】⋅（一）从文本生成到搜索采样](https://spaces.ac.cn/archives/8062)
-  - 原站分类：信息时代
-  - 原站标签：文本生成、采样、离散优化、MCMC
 - 2021-01-01 - [SPACES：“抽取-生成”式长文本摘要（法研杯总结）](https://spaces.ac.cn/archives/8046)
   - 原站分类：信息时代
   - 原站标签：文本生成、稀疏、文本摘要
@@ -403,9 +441,6 @@
 - 2019-04-19 - [从DCGAN到SELF-MOD：GAN的模型架构发展一览](https://spaces.ac.cn/archives/6549)
   - 原站分类：信息时代
   - 原站标签：模型、GAN、生成模型
-- 2019-03-21 - [细水长flow之可逆ResNet：极致的暴力美学](https://spaces.ac.cn/archives/6482)
-  - 原站分类：信息时代
-  - 原站标签：分析、流模型、flow、生成模型
 - 2019-03-06 - [O-GAN：简单修改，让GAN的判别器变成一个编码器！](https://spaces.ac.cn/archives/6409)
   - 原站分类：信息时代
   - 原站标签：无监督、GAN、生成模型、编码
@@ -448,18 +483,9 @@
 - 2018-09-29 - [f-GAN简介：GAN模型的生产车间](https://spaces.ac.cn/archives/6016)
   - 原站分类：数学研究
   - 原站标签：变分、GAN、推断、生成模型
-- 2018-09-21 - [细水长flow之f-VAEs：Glow与VAEs的联姻](https://spaces.ac.cn/archives/5977)
-  - 原站分类：信息时代
-  - 原站标签：vae、流模型、flow、生成模型
 - 2018-09-01 - [玩转Keras之seq2seq自动生成标题](https://spaces.ac.cn/archives/5861)
   - 原站分类：信息时代
   - 原站标签：模型、NLP、keras、文本生成
-- 2018-08-26 - [细水长flow之RealNVP与Glow：流模型的传承与升华](https://spaces.ac.cn/archives/5807)
-  - 原站分类：信息时代
-  - 原站标签：概率、流模型、flow、生成模型
-- 2018-08-11 - [细水长flow之NICE：流模型的基本概念与实现](https://spaces.ac.cn/archives/5776)
-  - 原站分类：信息时代
-  - 原站标签：概率、流模型、flow、生成模型
 - 2018-07-18 - [用变分推断统一理解生成模型（VAE、GAN、AAE、ALI）](https://spaces.ac.cn/archives/5716)
   - 原站分类：信息时代
   - 原站标签：变分、深度学习、推断

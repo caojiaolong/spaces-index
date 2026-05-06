@@ -116,9 +116,9 @@
       "几何"
     ],
     "topics": [
-      "数学工具",
       "概率统计与信息论",
-      "几何与方程"
+      "几何与方程",
+      "数学工具"
     ],
     "series": null,
     "series_index": null,
@@ -160,8 +160,7 @@
     ],
     "topics": [
       "深度学习基础",
-      "大模型与Transformer",
-      "优化与训练"
+      "大模型与Transformer"
     ],
     "series": null,
     "series_index": null,
@@ -344,8 +343,6 @@
     ],
     "topics": [
       "优化与训练",
-      "数学工具",
-      "几何与方程",
       "科普问答与百科"
     ],
     "series": null,
@@ -428,7 +425,6 @@
     ],
     "topics": [
       "大模型与Transformer",
-      "数学工具",
       "几何与方程",
       "科普问答与百科"
     ],
@@ -489,8 +485,7 @@
       "平均场"
     ],
     "topics": [
-      "优化与训练",
-      "数学工具"
+      "优化与训练"
     ],
     "series": null,
     "series_index": null,
@@ -529,8 +524,7 @@
       "muon"
     ],
     "topics": [
-      "优化与训练",
-      "数学工具"
+      "优化与训练"
     ],
     "series": null,
     "series_index": null,
@@ -570,8 +564,8 @@
       "估计"
     ],
     "topics": [
-      "数学工具",
-      "概率统计与信息论"
+      "概率统计与信息论",
+      "数学工具"
     ],
     "series": null,
     "series_index": null,
@@ -611,9 +605,7 @@
       "attention"
     ],
     "topics": [
-      "大模型与Transformer",
-      "优化与训练",
-      "数学工具"
+      "大模型与Transformer"
     ],
     "series": null,
     "series_index": null,
@@ -672,8 +664,7 @@
       "离散化"
     ],
     "topics": [
-      "生成模型",
-      "优化与训练"
+      "生成模型"
     ],
     "series": null,
     "series_index": null,
@@ -795,7 +786,6 @@
     ],
     "topics": [
       "优化与训练",
-      "数学工具",
       "科普问答与百科"
     ],
     "series": null,
@@ -873,8 +863,7 @@
       "恒等式"
     ],
     "topics": [
-      "深度学习基础",
-      "数学工具"
+      "深度学习基础"
     ],
     "series": null,
     "series_index": null,
@@ -1131,8 +1120,7 @@
       "muon"
     ],
     "topics": [
-      "优化与训练",
-      "数学工具"
+      "优化与训练"
     ],
     "series": null,
     "series_index": null,
@@ -1310,7 +1298,6 @@
       "梯度"
     ],
     "topics": [
-      "优化与训练",
       "数学工具"
     ],
     "series": null,
@@ -1388,8 +1375,7 @@
       "光滑"
     ],
     "topics": [
-      "优化与训练",
-      "数学工具"
+      "优化与训练"
     ],
     "series": null,
     "series_index": null,
@@ -1432,8 +1418,7 @@
     "topics": [
       "深度学习基础",
       "大模型与Transformer",
-      "优化与训练",
-      "数学工具"
+      "优化与训练"
     ],
     "series": null,
     "series_index": null,
@@ -1455,8 +1440,7 @@
     "topics": [
       "深度学习基础",
       "大模型与Transformer",
-      "优化与训练",
-      "数学工具"
+      "优化与训练"
     ],
     "series": null,
     "series_index": null,
@@ -1497,7 +1481,6 @@
     ],
     "topics": [
       "优化与训练",
-      "数学工具",
       "科普问答与百科"
     ],
     "series": null,
@@ -1576,8 +1559,8 @@
       "几何"
     ],
     "topics": [
-      "数学工具",
-      "几何与方程"
+      "几何与方程",
+      "数学工具"
     ],
     "series": null,
     "series_index": null,
@@ -1596,12 +1579,12 @@
       "attention"
     ],
     "topics": [
-      "大模型与Transformer",
       "生成模型"
     ],
-    "series": null,
+    "series": "细水长flow",
     "series_index": null,
-    "level": null
+    "level": null,
+    "series_topic": "生成模型"
   },
   {
     "id": "10662",
@@ -1657,8 +1640,7 @@
       "谱范数"
     ],
     "topics": [
-      "优化与训练",
-      "数学工具"
+      "优化与训练"
     ],
     "series": null,
     "series_index": null,
@@ -1718,8 +1700,7 @@
       "muon"
     ],
     "topics": [
-      "优化与训练",
-      "数学工具"
+      "优化与训练"
     ],
     "series": null,
     "series_index": null,
@@ -1738,8 +1719,7 @@
       "优化器"
     ],
     "topics": [
-      "优化与训练",
-      "数学工具"
+      "优化与训练"
     ],
     "series": null,
     "series_index": null,
@@ -1779,8 +1759,7 @@
     ],
     "topics": [
       "深度学习基础",
-      "优化与训练",
-      "数学工具"
+      "优化与训练"
     ],
     "series": null,
     "series_index": null,
@@ -1800,8 +1779,7 @@
     ],
     "topics": [
       "深度学习基础",
-      "优化与训练",
-      "数学工具"
+      "优化与训练"
     ],
     "series": null,
     "series_index": null,
@@ -1820,9 +1798,7 @@
       "离散化"
     ],
     "topics": [
-      "生成模型",
-      "优化与训练",
-      "数学工具"
+      "生成模型"
     ],
     "series": null,
     "series_index": null,
@@ -1862,7 +1838,6 @@
     ],
     "topics": [
       "生成模型",
-      "优化与训练",
       "几何与方程"
     ],
     "series": null,
@@ -1979,8 +1954,6 @@
     ],
     "topics": [
       "大模型与Transformer",
-      "优化与训练",
-      "数学工具",
       "概率统计与信息论"
     ],
     "series": null,
@@ -2114,8 +2087,6 @@
     ],
     "topics": [
       "生成模型",
-      "优化与训练",
-      "数学工具",
       "概率统计与信息论"
     ],
     "series": null,
@@ -2276,7 +2247,6 @@
       "深度学习基础",
       "大模型与Transformer",
       "优化与训练",
-      "数学工具",
       "概率统计与信息论"
     ],
     "series": null,
@@ -2358,8 +2328,7 @@
     ],
     "topics": [
       "大模型与Transformer",
-      "生成模型",
-      "优化与训练"
+      "生成模型"
     ],
     "series": null,
     "series_index": null,
@@ -2495,8 +2464,7 @@
       "复杂度"
     ],
     "topics": [
-      "大模型与Transformer",
-      "数学工具"
+      "大模型与Transformer"
     ],
     "series": null,
     "series_index": null,
@@ -2536,8 +2504,7 @@
     ],
     "topics": [
       "大模型与Transformer",
-      "优化与训练",
-      "数学工具"
+      "优化与训练"
     ],
     "series": null,
     "series_index": null,
@@ -2633,7 +2600,6 @@
       "优化"
     ],
     "topics": [
-      "优化与训练",
       "工程工具"
     ],
     "series": null,
@@ -2767,8 +2733,7 @@
     ],
     "topics": [
       "大模型与Transformer",
-      "生成模型",
-      "物理化学"
+      "生成模型"
     ],
     "series": null,
     "series_index": null,
@@ -2826,10 +2791,7 @@
     ],
     "topics": [
       "大模型与Transformer",
-      "生成模型",
-      "优化与训练",
-      "数学工具",
-      "物理化学"
+      "生成模型"
     ],
     "series": null,
     "series_index": null,
@@ -2848,8 +2810,7 @@
       "离散化"
     ],
     "topics": [
-      "生成模型",
-      "优化与训练"
+      "生成模型"
     ],
     "series": null,
     "series_index": null,
@@ -2868,8 +2829,7 @@
     ],
     "topics": [
       "大模型与Transformer",
-      "优化与训练",
-      "数学工具"
+      "优化与训练"
     ],
     "series": null,
     "series_index": null,
@@ -2889,8 +2849,6 @@
       "采样"
     ],
     "topics": [
-      "优化与训练",
-      "数学工具",
       "概率统计与信息论",
       "NLP与信息抽取"
     ],
@@ -2913,7 +2871,6 @@
     "topics": [
       "深度学习基础",
       "优化与训练",
-      "数学工具",
       "概率统计与信息论"
     ],
     "series": null,
@@ -2931,8 +2888,7 @@
       "attention"
     ],
     "topics": [
-      "大模型与Transformer",
-      "优化与训练"
+      "大模型与Transformer"
     ],
     "series": null,
     "series_index": null,
@@ -2952,7 +2908,6 @@
     ],
     "topics": [
       "大模型与Transformer",
-      "数学工具",
       "几何与方程"
     ],
     "series": null,
@@ -2970,8 +2925,7 @@
       "问题"
     ],
     "topics": [
-      "数学工具",
-      "生物自然"
+      "数学工具"
     ],
     "series": null,
     "series_index": null,
@@ -2990,7 +2944,6 @@
       "新词发现"
     ],
     "topics": [
-      "数学工具",
       "概率统计与信息论",
       "NLP与信息抽取"
     ],
@@ -3151,7 +3104,7 @@
     "topics": [
       "词向量与Embedding",
       "大模型与Transformer",
-      "数学工具",
+      "优化与训练",
       "NLP与信息抽取"
     ],
     "series": null,
@@ -3247,9 +3200,7 @@
       "梯度"
     ],
     "topics": [
-      "优化与训练",
-      "数学工具",
-      "物理化学"
+      "优化与训练"
     ],
     "series": null,
     "series_index": null,
@@ -3329,7 +3280,6 @@
     ],
     "topics": [
       "深度学习基础",
-      "数学工具",
       "物理化学"
     ],
     "series": null,
@@ -3368,8 +3318,8 @@
       "稀疏"
     ],
     "topics": [
-      "数学工具",
-      "概率统计与信息论"
+      "概率统计与信息论",
+      "数学工具"
     ],
     "series": null,
     "series_index": null,
@@ -3388,7 +3338,6 @@
     ],
     "topics": [
       "大模型与Transformer",
-      "数学工具",
       "概率统计与信息论"
     ],
     "series": null,
@@ -3409,8 +3358,7 @@
     ],
     "topics": [
       "大模型与Transformer",
-      "优化与训练",
-      "数学工具"
+      "优化与训练"
     ],
     "series": null,
     "series_index": null,
@@ -3428,7 +3376,6 @@
     ],
     "topics": [
       "大模型与Transformer",
-      "数学工具",
       "概率统计与信息论"
     ],
     "series": null,
@@ -3532,7 +3479,6 @@
     "topics": [
       "深度学习基础",
       "优化与训练",
-      "数学工具",
       "概率统计与信息论"
     ],
     "series": null,
@@ -3649,7 +3595,6 @@
     ],
     "topics": [
       "生成模型",
-      "数学工具",
       "概率统计与信息论",
       "几何与方程"
     ],
@@ -3844,8 +3789,7 @@
       "优化器"
     ],
     "topics": [
-      "优化与训练",
-      "数学工具"
+      "优化与训练"
     ],
     "series": null,
     "series_index": null,
@@ -4158,7 +4102,6 @@
     "topics": [
       "深度学习基础",
       "优化与训练",
-      "数学工具",
       "概率统计与信息论"
     ],
     "series": null,
@@ -4214,8 +4157,7 @@
       "预训练"
     ],
     "topics": [
-      "大模型与Transformer",
-      "优化与训练"
+      "大模型与Transformer"
     ],
     "series": null,
     "series_index": null,
@@ -4272,9 +4214,7 @@
     ],
     "topics": [
       "深度学习基础",
-      "优化与训练",
-      "数学工具",
-      "概率统计与信息论"
+      "优化与训练"
     ],
     "series": null,
     "series_index": null,
@@ -4291,8 +4231,8 @@
       "重参数"
     ],
     "topics": [
-      "数学工具",
-      "概率统计与信息论"
+      "概率统计与信息论",
+      "数学工具"
     ],
     "series": null,
     "series_index": null,
@@ -4311,6 +4251,7 @@
     ],
     "topics": [
       "大模型与Transformer",
+      "优化与训练",
       "NLP与信息抽取"
     ],
     "series": null,
@@ -4349,7 +4290,6 @@
       "深度学习基础",
       "大模型与Transformer",
       "优化与训练",
-      "数学工具",
       "概率统计与信息论"
     ],
     "series": null,
@@ -4369,7 +4309,6 @@
     ],
     "topics": [
       "深度学习基础",
-      "优化与训练",
       "NLP与信息抽取"
     ],
     "series": null,
@@ -4388,8 +4327,7 @@
       "预训练"
     ],
     "topics": [
-      "大模型与Transformer",
-      "优化与训练"
+      "大模型与Transformer"
     ],
     "series": null,
     "series_index": null,
@@ -4427,7 +4365,6 @@
     "topics": [
       "深度学习基础",
       "优化与训练",
-      "数学工具",
       "NLP与信息抽取"
     ],
     "series": null,
@@ -4447,7 +4384,6 @@
     ],
     "topics": [
       "大模型与Transformer",
-      "数学工具",
       "概率统计与信息论"
     ],
     "series": null,
@@ -4468,7 +4404,6 @@
     ],
     "topics": [
       "大模型与Transformer",
-      "优化与训练",
       "概率统计与信息论"
     ],
     "series": null,
@@ -4488,7 +4423,6 @@
     ],
     "topics": [
       "大模型与Transformer",
-      "优化与训练",
       "科普问答与百科"
     ],
     "series": null,
@@ -4506,9 +4440,7 @@
       "预训练"
     ],
     "topics": [
-      "大模型与Transformer",
-      "优化与训练",
-      "生物自然"
+      "大模型与Transformer"
     ],
     "series": null,
     "series_index": null,
@@ -4528,7 +4460,6 @@
     ],
     "topics": [
       "深度学习基础",
-      "优化与训练",
       "科普问答与百科"
     ],
     "series": null,
@@ -4547,8 +4478,7 @@
       "attention"
     ],
     "topics": [
-      "大模型与Transformer",
-      "优化与训练"
+      "大模型与Transformer"
     ],
     "series": null,
     "series_index": null,
@@ -4567,8 +4497,7 @@
     ],
     "topics": [
       "大模型与Transformer",
-      "优化与训练",
-      "数学工具"
+      "优化与训练"
     ],
     "series": null,
     "series_index": null,
@@ -4586,8 +4515,7 @@
       "优化器"
     ],
     "topics": [
-      "优化与训练",
-      "数学工具"
+      "优化与训练"
     ],
     "series": null,
     "series_index": null,
@@ -4777,8 +4705,7 @@
       "分析"
     ],
     "topics": [
-      "深度学习基础",
-      "数学工具"
+      "深度学习基础"
     ],
     "series": null,
     "series_index": null,
@@ -4795,8 +4722,8 @@
       "熵"
     ],
     "topics": [
-      "数学工具",
-      "概率统计与信息论"
+      "概率统计与信息论",
+      "数学工具"
     ],
     "series": null,
     "series_index": null,
@@ -4855,8 +4782,7 @@
       "泛化"
     ],
     "topics": [
-      "优化与训练",
-      "数学工具"
+      "优化与训练"
     ],
     "series": null,
     "series_index": null,
@@ -4951,8 +4877,7 @@
       "生成模型"
     ],
     "topics": [
-      "生成模型",
-      "优化与训练"
+      "生成模型"
     ],
     "series": null,
     "series_index": null,
@@ -4971,7 +4896,6 @@
       "梯度"
     ],
     "topics": [
-      "优化与训练",
       "NLP与信息抽取",
       "科普问答与百科"
     ],
@@ -5087,7 +5011,6 @@
     ],
     "topics": [
       "词向量与Embedding",
-      "数学工具",
       "概率统计与信息论",
       "NLP与信息抽取"
     ],
@@ -5147,7 +5070,6 @@
     ],
     "topics": [
       "大模型与Transformer",
-      "优化与训练",
       "NLP与信息抽取"
     ],
     "series": null,
@@ -5184,6 +5106,7 @@
     "topics": [
       "深度学习基础",
       "大模型与Transformer",
+      "优化与训练",
       "数学工具",
       "NLP与信息抽取"
     ],
@@ -5224,8 +5147,7 @@
     ],
     "topics": [
       "大模型与Transformer",
-      "优化与训练",
-      "数学工具"
+      "优化与训练"
     ],
     "series": null,
     "series_index": null,
@@ -5282,8 +5204,7 @@
     ],
     "topics": [
       "深度学习基础",
-      "优化与训练",
-      "数学工具"
+      "优化与训练"
     ],
     "series": null,
     "series_index": null,
@@ -5301,9 +5222,8 @@
       "优化"
     ],
     "topics": [
-      "优化与训练",
-      "数学工具",
-      "概率统计与信息论"
+      "概率统计与信息论",
+      "数学工具"
     ],
     "series": null,
     "series_index": null,
@@ -5340,7 +5260,6 @@
       "优化"
     ],
     "topics": [
-      "优化与训练",
       "数学工具",
       "概率统计与信息论"
     ],
@@ -5361,8 +5280,7 @@
     ],
     "topics": [
       "深度学习基础",
-      "优化与训练",
-      "数学工具"
+      "优化与训练"
     ],
     "series": null,
     "series_index": null,
@@ -5400,8 +5318,7 @@
       "梯度"
     ],
     "topics": [
-      "优化与训练",
-      "数学工具"
+      "优化与训练"
     ],
     "series": null,
     "series_index": null,
@@ -5458,9 +5375,7 @@
       "attention"
     ],
     "topics": [
-      "大模型与Transformer",
-      "优化与训练",
-      "数学工具"
+      "大模型与Transformer"
     ],
     "series": "我们可以无损放大一个Transformer模型吗",
     "series_index": 1,
@@ -5479,8 +5394,7 @@
       "attention"
     ],
     "topics": [
-      "大模型与Transformer",
-      "优化与训练"
+      "大模型与Transformer"
     ],
     "series": null,
     "series_index": null,
@@ -5674,8 +5588,7 @@
       "生成模型"
     ],
     "topics": [
-      "生成模型",
-      "优化与训练"
+      "生成模型"
     ],
     "series": null,
     "series_index": null,
@@ -5715,7 +5628,6 @@
     "topics": [
       "深度学习基础",
       "大模型与Transformer",
-      "优化与训练",
       "NLP与信息抽取"
     ],
     "series": null,
@@ -5735,8 +5647,7 @@
     ],
     "topics": [
       "大模型与Transformer",
-      "生成模型",
-      "优化与训练"
+      "生成模型"
     ],
     "series": null,
     "series_index": null,
@@ -5755,12 +5666,12 @@
       "MCMC"
     ],
     "topics": [
-      "生成模型",
-      "优化与训练"
+      "生成模型"
     ],
-    "series": null,
-    "series_index": null,
-    "level": null
+    "series": "搜出来的文本",
+    "series_index": 4,
+    "level": null,
+    "series_topic": "生成模型"
   },
   {
     "id": "8180",
@@ -5794,9 +5705,7 @@
     ],
     "topics": [
       "词向量与Embedding",
-      "数学工具",
-      "NLP与信息抽取",
-      "生物自然"
+      "NLP与信息抽取"
     ],
     "series": null,
     "series_index": null,
@@ -5856,13 +5765,12 @@
       "MCMC"
     ],
     "topics": [
-      "生成模型",
-      "优化与训练",
-      "NLP与信息抽取"
+      "生成模型"
     ],
-    "series": null,
-    "series_index": null,
-    "level": null
+    "series": "搜出来的文本",
+    "series_index": 3,
+    "level": null,
+    "series_topic": "生成模型"
   },
   {
     "id": "8084",
@@ -5877,12 +5785,12 @@
       "MCMC"
     ],
     "topics": [
-      "生成模型",
-      "优化与训练"
+      "生成模型"
     ],
-    "series": null,
-    "series_index": null,
-    "level": null
+    "series": "搜出来的文本",
+    "series_index": 2,
+    "level": null,
+    "series_topic": "生成模型"
   },
   {
     "id": "8069",
@@ -5899,7 +5807,6 @@
     "topics": [
       "大模型与Transformer",
       "生成模型",
-      "数学工具",
       "NLP与信息抽取"
     ],
     "series": null,
@@ -5919,13 +5826,12 @@
       "MCMC"
     ],
     "topics": [
-      "生成模型",
-      "优化与训练",
-      "工程工具"
+      "生成模型"
     ],
-    "series": null,
-    "series_index": null,
-    "level": null
+    "series": "搜出来的文本",
+    "series_index": 1,
+    "level": null,
+    "series_topic": "生成模型"
   },
   {
     "id": "8046",
@@ -5957,7 +5863,6 @@
     ],
     "topics": [
       "大模型与Transformer",
-      "优化与训练",
       "数学工具"
     ],
     "series": null,
@@ -5996,7 +5901,6 @@
       "优化"
     ],
     "topics": [
-      "优化与训练",
       "数学工具"
     ],
     "series": null,
@@ -6054,7 +5958,6 @@
     ],
     "topics": [
       "大模型与Transformer",
-      "优化与训练",
       "NLP与信息抽取"
     ],
     "series": null,
@@ -6073,8 +5976,6 @@
     ],
     "topics": [
       "大模型与Transformer",
-      "优化与训练",
-      "数学工具",
       "概率统计与信息论"
     ],
     "series": null,
@@ -6093,8 +5994,8 @@
       "分析"
     ],
     "topics": [
-      "数学工具",
-      "概率统计与信息论"
+      "概率统计与信息论",
+      "数学工具"
     ],
     "series": null,
     "series_index": null,
@@ -6135,8 +6036,7 @@
     ],
     "topics": [
       "深度学习基础",
-      "优化与训练",
-      "数学工具"
+      "优化与训练"
     ],
     "series": null,
     "series_index": null,
@@ -6210,8 +6110,7 @@
     ],
     "topics": [
       "大模型与Transformer",
-      "生成模型",
-      "优化与训练"
+      "生成模型"
     ],
     "series": null,
     "series_index": null,
@@ -6250,7 +6149,6 @@
       "采样"
     ],
     "topics": [
-      "优化与训练",
       "概率统计与信息论"
     ],
     "series": null,
@@ -6346,9 +6244,7 @@
       "强化学习"
     ],
     "topics": [
-      "优化与训练",
-      "数学工具",
-      "物理化学"
+      "优化与训练"
     ],
     "series": null,
     "series_index": null,
@@ -6406,8 +6302,7 @@
     ],
     "topics": [
       "深度学习基础",
-      "优化与训练",
-      "数学工具"
+      "优化与训练"
     ],
     "series": null,
     "series_index": null,
@@ -6444,8 +6339,7 @@
       "深度学习"
     ],
     "topics": [
-      "深度学习基础",
-      "优化与训练"
+      "深度学习基础"
     ],
     "series": null,
     "series_index": null,
@@ -6482,8 +6376,7 @@
     ],
     "topics": [
       "深度学习基础",
-      "优化与训练",
-      "数学工具"
+      "优化与训练"
     ],
     "series": null,
     "series_index": null,
@@ -6521,8 +6414,7 @@
     ],
     "topics": [
       "深度学习基础",
-      "优化与训练",
-      "数学工具"
+      "优化与训练"
     ],
     "series": null,
     "series_index": null,
@@ -6539,8 +6431,8 @@
       "时事"
     ],
     "topics": [
-      "科普问答与百科",
-      "阅读写作与随笔"
+      "阅读写作与随笔",
+      "科普问答与百科"
     ],
     "series": null,
     "series_index": null,
@@ -6616,7 +6508,6 @@
     ],
     "topics": [
       "深度学习基础",
-      "优化与训练",
       "数学工具"
     ],
     "series": null,
@@ -6636,8 +6527,7 @@
       "采样"
     ],
     "topics": [
-      "优化与训练",
-      "数学工具"
+      "优化与训练"
     ],
     "series": null,
     "series_index": null,
@@ -6710,7 +6600,6 @@
     ],
     "topics": [
       "优化与训练",
-      "数学工具",
       "科普问答与百科"
     ],
     "series": null,
@@ -6732,7 +6621,6 @@
     "topics": [
       "生成模型",
       "优化与训练",
-      "数学工具",
       "概率统计与信息论"
     ],
     "series": null,
@@ -6791,7 +6679,6 @@
       "线性规划"
     ],
     "topics": [
-      "优化与训练",
       "数学工具",
       "NLP与信息抽取"
     ],
@@ -6868,7 +6755,6 @@
       "深度学习基础",
       "大模型与Transformer",
       "优化与训练",
-      "数学工具",
       "概率统计与信息论"
     ],
     "series": null,
@@ -6946,8 +6832,7 @@
       "分析"
     ],
     "topics": [
-      "深度学习基础",
-      "数学工具"
+      "深度学习基础"
     ],
     "series": null,
     "series_index": null,
@@ -7008,7 +6893,6 @@
     "topics": [
       "大模型与Transformer",
       "生成模型",
-      "优化与训练",
       "NLP与信息抽取"
     ],
     "series": null,
@@ -7029,8 +6913,7 @@
     ],
     "topics": [
       "深度学习基础",
-      "生成模型",
-      "优化与训练"
+      "生成模型"
     ],
     "series": null,
     "series_index": null,
@@ -7087,7 +6970,6 @@
     ],
     "topics": [
       "优化与训练",
-      "概率统计与信息论",
       "NLP与信息抽取"
     ],
     "series": null,
@@ -7127,7 +7009,6 @@
     ],
     "topics": [
       "优化与训练",
-      "数学工具",
       "概率统计与信息论",
       "几何与方程"
     ],
@@ -7317,10 +7198,8 @@
     ],
     "topics": [
       "词向量与Embedding",
-      "数学工具",
       "几何与方程",
-      "NLP与信息抽取",
-      "生物自然"
+      "NLP与信息抽取"
     ],
     "series": null,
     "series_index": null,
@@ -7356,8 +7235,7 @@
       "去噪"
     ],
     "topics": [
-      "生成模型",
-      "优化与训练"
+      "生成模型"
     ],
     "series": null,
     "series_index": null,
@@ -7412,8 +7290,7 @@
       "神经网络"
     ],
     "topics": [
-      "深度学习基础",
-      "优化与训练"
+      "深度学习基础"
     ],
     "series": null,
     "series_index": null,
@@ -7529,8 +7406,8 @@
       "核方法"
     ],
     "topics": [
-      "数学工具",
-      "概率统计与信息论"
+      "概率统计与信息论",
+      "数学工具"
     ],
     "series": null,
     "series_index": null,
@@ -7622,8 +7499,8 @@
       "曲线"
     ],
     "topics": [
-      "数学工具",
-      "几何与方程"
+      "几何与方程",
+      "数学工具"
     ],
     "series": null,
     "series_index": null,
@@ -7718,8 +7595,7 @@
       "离散化"
     ],
     "topics": [
-      "生成模型",
-      "物理化学"
+      "生成模型"
     ],
     "series": null,
     "series_index": null,
@@ -7737,8 +7613,8 @@
       "估计"
     ],
     "topics": [
-      "数学工具",
-      "概率统计与信息论"
+      "概率统计与信息论",
+      "数学工具"
     ],
     "series": null,
     "series_index": null,
@@ -7779,8 +7655,6 @@
     ],
     "topics": [
       "大模型与Transformer",
-      "优化与训练",
-      "数学工具",
       "概率统计与信息论"
     ],
     "series": null,
@@ -7973,7 +7847,6 @@
       "分享"
     ],
     "topics": [
-      "数学工具",
       "工程工具"
     ],
     "series": null,
@@ -7993,8 +7866,8 @@
     ],
     "topics": [
       "工程工具",
-      "科普问答与百科",
-      "资源与站务"
+      "资源与站务",
+      "科普问答与百科"
     ],
     "series": null,
     "series_index": null,
@@ -8015,9 +7888,10 @@
     "topics": [
       "生成模型"
     ],
-    "series": null,
+    "series": "细水长flow",
     "series_index": null,
-    "level": null
+    "level": null,
+    "series_topic": "生成模型"
   },
   {
     "id": "6469",
@@ -8127,8 +8001,7 @@
     ],
     "topics": [
       "深度学习基础",
-      "生成模型",
-      "优化与训练"
+      "生成模型"
     ],
     "series": null,
     "series_index": null,
@@ -8224,9 +8097,7 @@
       "生成模型"
     ],
     "topics": [
-      "生成模型",
-      "优化与训练",
-      "数学工具"
+      "生成模型"
     ],
     "series": null,
     "series_index": null,
@@ -8570,8 +8441,7 @@
       "生成模型"
     ],
     "topics": [
-      "生成模型",
-      "数学工具"
+      "生成模型"
     ],
     "series": null,
     "series_index": null,
@@ -8592,9 +8462,10 @@
     "topics": [
       "生成模型"
     ],
-    "series": null,
+    "series": "细水长flow",
     "series_index": null,
-    "level": null
+    "level": null,
+    "series_topic": "生成模型"
   },
   {
     "id": "5887",
@@ -8668,12 +8539,12 @@
       "生成模型"
     ],
     "topics": [
-      "生成模型",
-      "概率统计与信息论"
+      "生成模型"
     ],
-    "series": null,
+    "series": "细水长flow",
     "series_index": null,
-    "level": null
+    "level": null,
+    "series_topic": "生成模型"
   },
   {
     "id": "5776",
@@ -8688,12 +8559,12 @@
       "生成模型"
     ],
     "topics": [
-      "生成模型",
-      "概率统计与信息论"
+      "生成模型"
     ],
-    "series": null,
+    "series": "细水长flow",
     "series_index": null,
-    "level": null
+    "level": null,
+    "series_topic": "生成模型"
   },
   {
     "id": "5765",
@@ -8729,7 +8600,7 @@
     "topics": [
       "深度学习基础",
       "大模型与Transformer",
-      "数学工具",
+      "优化与训练",
       "NLP与信息抽取"
     ],
     "series": null,
@@ -8803,8 +8674,8 @@
       "RNN"
     ],
     "topics": [
-      "数学工具",
-      "几何与方程"
+      "几何与方程",
+      "数学工具"
     ],
     "series": null,
     "series_index": null,
@@ -8823,7 +8694,6 @@
     ],
     "topics": [
       "词向量与Embedding",
-      "数学工具",
       "概率统计与信息论",
       "NLP与信息抽取"
     ],
@@ -8844,7 +8714,6 @@
       "主方程"
     ],
     "topics": [
-      "数学工具",
       "概率统计与信息论",
       "几何与方程",
       "工程工具",
@@ -8906,8 +8775,8 @@
       "美食"
     ],
     "topics": [
-      "图片摄影",
-      "阅读写作与随笔"
+      "阅读写作与随笔",
+      "图片摄影"
     ],
     "series": null,
     "series_index": null,
@@ -8927,7 +8796,6 @@
     ],
     "topics": [
       "深度学习基础",
-      "数学工具",
       "概率统计与信息论",
       "NLP与信息抽取"
     ],
@@ -9101,7 +8969,6 @@
     ],
     "topics": [
       "生成模型",
-      "数学工具",
       "概率统计与信息论"
     ],
     "series": null,
@@ -9140,9 +9007,8 @@
       "聚类"
     ],
     "topics": [
-      "优化与训练",
-      "数学工具",
-      "概率统计与信息论"
+      "概率统计与信息论",
+      "数学工具"
     ],
     "series": null,
     "series_index": null,
@@ -9197,7 +9063,6 @@
       "数据集"
     ],
     "topics": [
-      "生物自然",
       "资源与站务"
     ],
     "series": null,
@@ -9250,8 +9115,7 @@
       "自然语言处理"
     ],
     "topics": [
-      "深度学习基础",
-      "生物自然"
+      "深度学习基础"
     ],
     "series": null,
     "series_index": null,
@@ -9342,7 +9206,7 @@
     ],
     "topics": [
       "深度学习基础",
-      "数学工具"
+      "优化与训练"
     ],
     "series": null,
     "series_index": null,
@@ -9359,8 +9223,8 @@
       "微分方程"
     ],
     "topics": [
-      "数学工具",
-      "几何与方程"
+      "几何与方程",
+      "数学工具"
     ],
     "series": null,
     "series_index": null,
@@ -9378,7 +9242,6 @@
       "crf"
     ],
     "topics": [
-      "数学工具",
       "概率统计与信息论",
       "NLP与信息抽取"
     ],
@@ -9507,8 +9370,7 @@
       "神经网络"
     ],
     "topics": [
-      "深度学习基础",
-      "数学工具"
+      "深度学习基础"
     ],
     "series": null,
     "series_index": null,
@@ -9525,8 +9387,7 @@
       "深度学习"
     ],
     "topics": [
-      "深度学习基础",
-      "优化与训练"
+      "深度学习基础"
     ],
     "series": null,
     "series_index": null,
@@ -9581,9 +9442,9 @@
       "主方程"
     ],
     "topics": [
-      "数学工具",
       "概率统计与信息论",
-      "几何与方程"
+      "几何与方程",
+      "数学工具"
     ],
     "series": null,
     "series_index": null,
@@ -9729,7 +9590,7 @@
     ],
     "topics": [
       "深度学习基础",
-      "数学工具"
+      "优化与训练"
     ],
     "series": null,
     "series_index": null,
@@ -10060,9 +9921,7 @@
       "聚类"
     ],
     "topics": [
-      "优化与训练",
-      "数学工具",
-      "概率统计与信息论"
+      "优化与训练"
     ],
     "series": null,
     "series_index": null,
@@ -10264,8 +10123,8 @@
       "平滑"
     ],
     "topics": [
-      "数学工具",
-      "概率统计与信息论"
+      "概率统计与信息论",
+      "数学工具"
     ],
     "series": null,
     "series_index": null,
@@ -10375,9 +10234,7 @@
     "topics": [
       "深度学习基础",
       "词向量与Embedding",
-      "数学工具",
-      "NLP与信息抽取",
-      "生物自然"
+      "NLP与信息抽取"
     ],
     "series": null,
     "series_index": null,
@@ -10399,7 +10256,6 @@
       "深度学习基础",
       "大模型与Transformer",
       "工程工具",
-      "生物自然",
       "阅读写作与随笔"
     ],
     "series": null,
@@ -10418,8 +10274,7 @@
     ],
     "topics": [
       "深度学习基础",
-      "NLP与信息抽取",
-      "生物自然"
+      "NLP与信息抽取"
     ],
     "series": null,
     "series_index": null,
@@ -10628,12 +10483,12 @@
       "黎曼几何"
     ],
     "topics": [
-      "数学工具"
+      "几何与方程"
     ],
     "series": "理解黎曼几何",
     "series_index": 8,
     "level": null,
-    "series_topic": "数学工具"
+    "series_topic": "几何与方程"
   },
   {
     "id": "4033",
@@ -10646,12 +10501,12 @@
       "黎曼几何"
     ],
     "topics": [
-      "数学工具"
+      "几何与方程"
     ],
     "series": "理解黎曼几何",
     "series_index": 7,
     "level": null,
-    "series_topic": "数学工具"
+    "series_topic": "几何与方程"
   },
   {
     "id": "4026",
@@ -10667,12 +10522,12 @@
       "排列组合"
     ],
     "topics": [
-      "数学工具"
+      "几何与方程"
     ],
     "series": "理解黎曼几何",
     "series_index": 6,
     "level": null,
-    "series_topic": "数学工具"
+    "series_topic": "几何与方程"
   },
   {
     "id": "4014",
@@ -10686,12 +10541,12 @@
       "黎曼几何"
     ],
     "topics": [
-      "数学工具"
+      "几何与方程"
     ],
     "series": "理解黎曼几何",
     "series_index": 5,
     "level": null,
-    "series_topic": "数学工具"
+    "series_topic": "几何与方程"
   },
   {
     "id": "3998",
@@ -10705,12 +10560,12 @@
       "黎曼几何"
     ],
     "topics": [
-      "数学工具"
+      "几何与方程"
     ],
     "series": "理解黎曼几何",
     "series_index": 4,
     "level": null,
-    "series_topic": "数学工具"
+    "series_topic": "几何与方程"
   },
   {
     "id": "3977",
@@ -10724,12 +10579,12 @@
       "变分法"
     ],
     "topics": [
-      "数学工具"
+      "几何与方程"
     ],
     "series": "理解黎曼几何",
     "series_index": 3,
     "level": null,
-    "series_topic": "数学工具"
+    "series_topic": "几何与方程"
   },
   {
     "id": "3969",
@@ -10743,12 +10598,12 @@
       "黎曼几何"
     ],
     "topics": [
-      "数学工具"
+      "几何与方程"
     ],
     "series": "理解黎曼几何",
     "series_index": 2,
     "level": "advanced",
-    "series_topic": "数学工具"
+    "series_topic": "几何与方程"
   },
   {
     "id": "3963",
@@ -10761,12 +10616,12 @@
       "黎曼几何"
     ],
     "topics": [
-      "数学工具"
+      "几何与方程"
     ],
     "series": "理解黎曼几何",
     "series_index": 1,
     "level": null,
-    "series_topic": "数学工具"
+    "series_topic": "几何与方程"
   },
   {
     "id": "3956",
@@ -10802,8 +10657,7 @@
     ],
     "topics": [
       "NLP与信息抽取",
-      "工程工具",
-      "生物自然"
+      "工程工具"
     ],
     "series": null,
     "series_index": null,
@@ -10935,8 +10789,8 @@
       "差分方程"
     ],
     "topics": [
-      "数学工具",
-      "几何与方程"
+      "几何与方程",
+      "数学工具"
     ],
     "series": null,
     "series_index": null,
@@ -11372,8 +11226,8 @@
       "渐近"
     ],
     "topics": [
-      "数学工具",
-      "几何与方程"
+      "几何与方程",
+      "数学工具"
     ],
     "series": null,
     "series_index": null,
@@ -11494,8 +11348,8 @@
       "熵"
     ],
     "topics": [
-      "数学工具",
-      "概率统计与信息论"
+      "概率统计与信息论",
+      "数学工具"
     ],
     "series": null,
     "series_index": null,
@@ -12216,8 +12070,8 @@
       "面积"
     ],
     "topics": [
-      "数学工具",
-      "物理化学"
+      "物理化学",
+      "数学工具"
     ],
     "series": null,
     "series_index": null,
@@ -12234,8 +12088,8 @@
       "公理"
     ],
     "topics": [
-      "数学工具",
-      "几何与方程"
+      "几何与方程",
+      "数学工具"
     ],
     "series": null,
     "series_index": null,
@@ -12363,7 +12217,6 @@
       "积分"
     ],
     "topics": [
-      "优化与训练",
       "数学工具"
     ],
     "series": null,
@@ -12381,8 +12234,8 @@
       "生成函数"
     ],
     "topics": [
-      "数学工具",
-      "概率统计与信息论"
+      "概率统计与信息论",
+      "数学工具"
     ],
     "series": null,
     "series_index": null,
@@ -12401,9 +12254,9 @@
       "作用量"
     ],
     "topics": [
-      "数学工具",
       "几何与方程",
-      "物理化学"
+      "物理化学",
+      "数学工具"
     ],
     "series": null,
     "series_index": null,
@@ -12512,7 +12365,6 @@
     ],
     "topics": [
       "深度学习基础",
-      "数学工具",
       "工程工具",
       "图片摄影"
     ],
@@ -12534,7 +12386,6 @@
     ],
     "topics": [
       "深度学习基础",
-      "数学工具",
       "几何与方程",
       "工程工具",
       "生物自然"
@@ -12609,9 +12460,9 @@
       "费曼"
     ],
     "topics": [
-      "数学工具",
       "几何与方程",
-      "物理化学"
+      "物理化学",
+      "数学工具"
     ],
     "series": null,
     "series_index": null,
@@ -12628,8 +12479,8 @@
     ],
     "topics": [
       "数学工具",
-      "科普问答与百科",
-      "资源与站务"
+      "资源与站务",
+      "科普问答与百科"
     ],
     "series": null,
     "series_index": null,
@@ -13262,8 +13113,8 @@
       "追溯"
     ],
     "topics": [
-      "科普问答与百科",
-      "资源与站务"
+      "资源与站务",
+      "科普问答与百科"
     ],
     "series": null,
     "series_index": null,
@@ -13317,7 +13168,6 @@
       "优化"
     ],
     "topics": [
-      "优化与训练",
       "数学工具",
       "工程工具"
     ],
@@ -13467,8 +13317,8 @@
       "随机游走"
     ],
     "topics": [
-      "数学工具",
-      "概率统计与信息论"
+      "概率统计与信息论",
+      "数学工具"
     ],
     "series": null,
     "series_index": null,
@@ -13528,7 +13378,6 @@
       "算法"
     ],
     "topics": [
-      "数学工具",
       "工程工具"
     ],
     "series": null,
@@ -13882,8 +13731,8 @@
       "反演"
     ],
     "topics": [
-      "数学工具",
-      "几何与方程"
+      "几何与方程",
+      "数学工具"
     ],
     "series": null,
     "series_index": null,
@@ -13901,8 +13750,8 @@
       "反演"
     ],
     "topics": [
-      "数学工具",
-      "几何与方程"
+      "几何与方程",
+      "数学工具"
     ],
     "series": null,
     "series_index": null,
@@ -14484,8 +14333,8 @@
       "作用量"
     ],
     "topics": [
-      "数学工具",
-      "物理化学"
+      "物理化学",
+      "数学工具"
     ],
     "series": null,
     "series_index": null,
@@ -14545,8 +14394,8 @@
     "topics": [
       "几何与方程",
       "天文科普",
-      "物理化学",
-      "阅读写作与随笔"
+      "阅读写作与随笔",
+      "物理化学"
     ],
     "series": null,
     "series_index": null,
@@ -14696,8 +14545,8 @@
       "近似"
     ],
     "topics": [
-      "数学工具",
-      "几何与方程"
+      "几何与方程",
+      "数学工具"
     ],
     "series": null,
     "series_index": null,
@@ -14731,7 +14580,6 @@
       "收敛"
     ],
     "topics": [
-      "优化与训练",
       "数学工具"
     ],
     "series": null,
@@ -14951,8 +14799,8 @@
       "宇航"
     ],
     "topics": [
-      "天文科普",
-      "物理化学"
+      "物理化学",
+      "天文科普"
     ],
     "series": null,
     "series_index": null,
@@ -15215,8 +15063,8 @@
       "读者"
     ],
     "topics": [
-      "数学工具",
-      "几何与方程"
+      "几何与方程",
+      "数学工具"
     ],
     "series": null,
     "series_index": null,
@@ -15577,8 +15425,8 @@
       "天体"
     ],
     "topics": [
-      "天文科普",
-      "物理化学"
+      "物理化学",
+      "天文科普"
     ],
     "series": null,
     "series_index": null,
@@ -15723,8 +15571,8 @@
       "故事"
     ],
     "topics": [
-      "天文科普",
-      "物理化学"
+      "物理化学",
+      "天文科普"
     ],
     "series": null,
     "series_index": null,
@@ -16233,8 +16081,8 @@
       "生活"
     ],
     "topics": [
-      "科普问答与百科",
-      "阅读写作与随笔"
+      "阅读写作与随笔",
+      "科普问答与百科"
     ],
     "series": null,
     "series_index": null,
@@ -16341,8 +16189,8 @@
       "欣赏"
     ],
     "topics": [
-      "数学工具",
-      "几何与方程"
+      "几何与方程",
+      "数学工具"
     ],
     "series": null,
     "series_index": null,
@@ -16359,7 +16207,6 @@
       "风景"
     ],
     "topics": [
-      "生物自然",
       "图片摄影",
       "阅读写作与随笔"
     ],
@@ -16577,8 +16424,8 @@
       "维度"
     ],
     "topics": [
-      "天文科普",
-      "物理化学"
+      "物理化学",
+      "天文科普"
     ],
     "series": null,
     "series_index": null,
@@ -16597,8 +16444,8 @@
       "二体问题"
     ],
     "topics": [
-      "天文科普",
-      "物理化学"
+      "物理化学",
+      "天文科普"
     ],
     "series": null,
     "series_index": null,
@@ -16773,7 +16620,6 @@
     ],
     "topics": [
       "数学工具",
-      "生物自然",
       "科普问答与百科"
     ],
     "series": null,
@@ -16793,8 +16639,8 @@
       "三体问题"
     ],
     "topics": [
-      "天文科普",
-      "物理化学"
+      "物理化学",
+      "天文科普"
     ],
     "series": null,
     "series_index": null,
@@ -17042,8 +16888,8 @@
       "曲线"
     ],
     "topics": [
-      "数学工具",
-      "几何与方程"
+      "几何与方程",
+      "数学工具"
     ],
     "series": null,
     "series_index": null,
@@ -17374,7 +17220,6 @@
       "单调性"
     ],
     "topics": [
-      "数学工具",
       "科普问答与百科"
     ],
     "series": null,
@@ -17633,8 +17478,8 @@
     ],
     "topics": [
       "数学工具",
-      "天文科普",
-      "物理化学"
+      "物理化学",
+      "天文科普"
     ],
     "series": null,
     "series_index": null,
@@ -17694,8 +17539,7 @@
       "进化"
     ],
     "topics": [
-      "数学工具",
-      "生物自然"
+      "数学工具"
     ],
     "series": null,
     "series_index": null,
@@ -17714,8 +17558,8 @@
       "群论"
     ],
     "topics": [
-      "数学工具",
-      "几何与方程"
+      "几何与方程",
+      "数学工具"
     ],
     "series": null,
     "series_index": null,
@@ -17911,8 +17755,8 @@
       "放射性"
     ],
     "topics": [
-      "科普问答与百科",
-      "资源与站务"
+      "资源与站务",
+      "科普问答与百科"
     ],
     "series": null,
     "series_index": null,
@@ -17949,8 +17793,8 @@
       "热学"
     ],
     "topics": [
-      "物理化学",
-      "阅读写作与随笔"
+      "阅读写作与随笔",
+      "物理化学"
     ],
     "series": null,
     "series_index": null,
@@ -18104,8 +17948,8 @@
       "SETI"
     ],
     "topics": [
-      "天文科普",
-      "资源与站务"
+      "资源与站务",
+      "天文科普"
     ],
     "series": null,
     "series_index": null,
@@ -18182,8 +18026,8 @@
       "SETI"
     ],
     "topics": [
-      "天文科普",
-      "资源与站务"
+      "资源与站务",
+      "天文科普"
     ],
     "series": null,
     "series_index": null,
@@ -18259,8 +18103,8 @@
     "topics": [
       "数学工具",
       "几何与方程",
-      "天文科普",
-      "物理化学"
+      "物理化学",
+      "天文科普"
     ],
     "series": "《方程与宇宙》：三体问题和它的初积分",
     "series_index": 6,
@@ -18436,9 +18280,9 @@
       "N体问题"
     ],
     "topics": [
-      "天文科普",
       "物理化学",
-      "资源与站务"
+      "资源与站务",
+      "天文科普"
     ],
     "series": null,
     "series_index": null,
@@ -18457,9 +18301,9 @@
       "N体问题"
     ],
     "topics": [
-      "天文科普",
       "物理化学",
-      "资源与站务"
+      "资源与站务",
+      "天文科普"
     ],
     "series": null,
     "series_index": null,
@@ -18677,8 +18521,8 @@
       "导弹"
     ],
     "topics": [
-      "数学工具",
-      "几何与方程"
+      "几何与方程",
+      "数学工具"
     ],
     "series": null,
     "series_index": null,
@@ -18694,8 +18538,8 @@
       "微分方程"
     ],
     "topics": [
-      "数学工具",
-      "几何与方程"
+      "几何与方程",
+      "数学工具"
     ],
     "series": null,
     "series_index": null,
@@ -18811,8 +18655,8 @@
       "光子"
     ],
     "topics": [
-      "天文科普",
-      "资源与站务"
+      "资源与站务",
+      "天文科普"
     ],
     "series": null,
     "series_index": null,
@@ -18851,8 +18695,8 @@
       "平衡"
     ],
     "topics": [
-      "天文科普",
-      "物理化学"
+      "物理化学",
+      "天文科普"
     ],
     "series": null,
     "series_index": null,
@@ -18889,8 +18733,7 @@
       "生成函数"
     ],
     "topics": [
-      "数学工具",
-      "生物自然"
+      "数学工具"
     ],
     "series": null,
     "series_index": null,
@@ -19380,8 +19223,8 @@
     "topics": [
       "数学工具",
       "几何与方程",
-      "天文科普",
-      "物理化学"
+      "物理化学",
+      "天文科普"
     ],
     "series": "《方程与宇宙》:拉格朗日点,复数,向量",
     "series_index": 5,
@@ -19404,8 +19247,8 @@
     "topics": [
       "数学工具",
       "几何与方程",
-      "天文科普",
-      "物理化学"
+      "物理化学",
+      "天文科普"
     ],
     "series": "《方程与宇宙》:拉格朗日点的点点滴滴",
     "series_index": 4,
@@ -19423,9 +19266,9 @@
       "哀悼"
     ],
     "topics": [
-      "科普问答与百科",
       "资源与站务",
-      "阅读写作与随笔"
+      "阅读写作与随笔",
+      "科普问答与百科"
     ],
     "series": null,
     "series_index": null,
@@ -19443,8 +19286,8 @@
       "图形"
     ],
     "topics": [
-      "数学工具",
-      "几何与方程"
+      "几何与方程",
+      "数学工具"
     ],
     "series": null,
     "series_index": null,
@@ -19498,8 +19341,8 @@
     ],
     "topics": [
       "几何与方程",
-      "天文科普",
-      "物理化学"
+      "物理化学",
+      "天文科普"
     ],
     "series": null,
     "series_index": null,
@@ -19517,8 +19360,8 @@
       "编程"
     ],
     "topics": [
-      "数学工具",
-      "几何与方程"
+      "几何与方程",
+      "数学工具"
     ],
     "series": null,
     "series_index": null,
@@ -19536,8 +19379,8 @@
       "三角函数"
     ],
     "topics": [
-      "数学工具",
-      "几何与方程"
+      "几何与方程",
+      "数学工具"
     ],
     "series": null,
     "series_index": null,
@@ -19708,8 +19551,8 @@
       "势能"
     ],
     "topics": [
-      "数学工具",
-      "几何与方程"
+      "几何与方程",
+      "数学工具"
     ],
     "series": null,
     "series_index": null,
@@ -19834,8 +19677,8 @@
     ],
     "topics": [
       "数学工具",
-      "科普问答与百科",
-      "资源与站务"
+      "资源与站务",
+      "科普问答与百科"
     ],
     "series": null,
     "series_index": null,
@@ -20055,8 +19898,8 @@
       "宇宙学"
     ],
     "topics": [
-      "天文科普",
-      "物理化学"
+      "物理化学",
+      "天文科普"
     ],
     "series": null,
     "series_index": null,
@@ -20127,8 +19970,8 @@
       "光速"
     ],
     "topics": [
-      "天文科普",
-      "物理化学"
+      "物理化学",
+      "天文科普"
     ],
     "series": null,
     "series_index": null,
@@ -20274,9 +20117,9 @@
     ],
     "topics": [
       "工程工具",
-      "科普问答与百科",
       "资源与站务",
-      "阅读写作与随笔"
+      "阅读写作与随笔",
+      "科普问答与百科"
     ],
     "series": null,
     "series_index": null,
@@ -20432,8 +20275,8 @@
     ],
     "topics": [
       "几何与方程",
-      "天文科普",
-      "物理化学"
+      "物理化学",
+      "天文科普"
     ],
     "series": "《方程与宇宙》:抛物线与双曲线轨道",
     "series_index": 3,
@@ -20477,8 +20320,8 @@
     "topics": [
       "数学工具",
       "几何与方程",
-      "天文科普",
-      "物理化学"
+      "物理化学",
+      "天文科普"
     ],
     "series": "《方程与宇宙》:活力积分和开普勒方程",
     "series_index": 2,
@@ -20497,8 +20340,8 @@
     ],
     "topics": [
       "天文科普",
-      "科普问答与百科",
-      "资源与站务"
+      "资源与站务",
+      "科普问答与百科"
     ],
     "series": null,
     "series_index": null,
@@ -20516,8 +20359,8 @@
     ],
     "topics": [
       "工程工具",
-      "科普问答与百科",
-      "资源与站务"
+      "资源与站务",
+      "科普问答与百科"
     ],
     "series": null,
     "series_index": null,
@@ -20556,8 +20399,8 @@
     ],
     "topics": [
       "几何与方程",
-      "天文科普",
-      "物理化学"
+      "物理化学",
+      "天文科普"
     ],
     "series": "《方程与宇宙》:二体问题的来来去去",
     "series_index": 1,
@@ -20592,8 +20435,8 @@
       "圆周率"
     ],
     "topics": [
-      "科普问答与百科",
-      "阅读写作与随笔"
+      "阅读写作与随笔",
+      "科普问答与百科"
     ],
     "series": null,
     "series_index": null,
@@ -20612,8 +20455,8 @@
       "消光"
     ],
     "topics": [
-      "天文科普",
-      "物理化学"
+      "物理化学",
+      "天文科普"
     ],
     "series": null,
     "series_index": null,
@@ -20635,8 +20478,8 @@
       "抛物线"
     ],
     "topics": [
-      "数学工具",
-      "几何与方程"
+      "几何与方程",
+      "数学工具"
     ],
     "series": null,
     "series_index": null,
@@ -20713,8 +20556,8 @@
     ],
     "topics": [
       "数学工具",
-      "科普问答与百科",
-      "资源与站务"
+      "资源与站务",
+      "科普问答与百科"
     ],
     "series": null,
     "series_index": null,
@@ -20731,8 +20574,8 @@
       "代数"
     ],
     "topics": [
-      "数学工具",
-      "几何与方程"
+      "几何与方程",
+      "数学工具"
     ],
     "series": null,
     "series_index": null,
@@ -20927,9 +20770,9 @@
       "旋转"
     ],
     "topics": [
-      "数学工具",
       "几何与方程",
-      "图片摄影"
+      "图片摄影",
+      "数学工具"
     ],
     "series": null,
     "series_index": null,
@@ -20964,8 +20807,8 @@
       "无穷"
     ],
     "topics": [
-      "数学工具",
-      "几何与方程"
+      "几何与方程",
+      "数学工具"
     ],
     "series": null,
     "series_index": null,
@@ -21020,8 +20863,8 @@
       "光学"
     ],
     "topics": [
-      "天文科普",
-      "物理化学"
+      "物理化学",
+      "天文科普"
     ],
     "series": null,
     "series_index": null,
@@ -21165,8 +21008,8 @@
       "星表"
     ],
     "topics": [
-      "天文科普",
-      "资源与站务"
+      "资源与站务",
+      "天文科普"
     ],
     "series": null,
     "series_index": null,
@@ -21311,9 +21154,9 @@
       "重力"
     ],
     "topics": [
-      "数学工具",
       "几何与方程",
-      "物理化学"
+      "物理化学",
+      "数学工具"
     ],
     "series": "精确自由落体运动定律的讨论",
     "series_index": 2,
@@ -21523,8 +21366,8 @@
       "气候"
     ],
     "topics": [
-      "生物自然",
-      "资源与站务"
+      "资源与站务",
+      "生物自然"
     ],
     "series": null,
     "series_index": null,
@@ -21726,8 +21569,8 @@
       "全景"
     ],
     "topics": [
-      "天文科普",
-      "图片摄影"
+      "图片摄影",
+      "天文科普"
     ],
     "series": null,
     "series_index": null,
@@ -21890,9 +21733,9 @@
       "科普"
     ],
     "topics": [
-      "天文科普",
       "科普问答与百科",
-      "阅读写作与随笔"
+      "阅读写作与随笔",
+      "天文科普"
     ],
     "series": null,
     "series_index": null,
@@ -21914,9 +21757,9 @@
       "冷却"
     ],
     "topics": [
-      "天文科普",
       "物理化学",
-      "资源与站务"
+      "资源与站务",
+      "天文科普"
     ],
     "series": null,
     "series_index": null,
@@ -22132,8 +21975,8 @@
     ],
     "topics": [
       "天文科普",
-      "图片摄影",
-      "资源与站务"
+      "资源与站务",
+      "图片摄影"
     ],
     "series": null,
     "series_index": null,
@@ -22571,8 +22414,8 @@
       "转载"
     ],
     "topics": [
-      "物理化学",
-      "资源与站务"
+      "资源与站务",
+      "物理化学"
     ],
     "series": null,
     "series_index": null,
@@ -22797,8 +22640,8 @@
       "3D"
     ],
     "topics": [
-      "科普问答与百科",
-      "资源与站务"
+      "资源与站务",
+      "科普问答与百科"
     ],
     "series": null,
     "series_index": null,
@@ -22818,9 +22661,9 @@
       "美国"
     ],
     "topics": [
-      "天文科普",
       "物理化学",
-      "资源与站务"
+      "资源与站务",
+      "天文科普"
     ],
     "series": null,
     "series_index": null,
@@ -22949,8 +22792,8 @@
       "代数"
     ],
     "topics": [
-      "数学工具",
-      "几何与方程"
+      "几何与方程",
+      "数学工具"
     ],
     "series": null,
     "series_index": null,
@@ -22970,9 +22813,9 @@
       "模型"
     ],
     "topics": [
-      "天文科普",
       "物理化学",
-      "资源与站务"
+      "资源与站务",
+      "天文科普"
     ],
     "series": null,
     "series_index": null,
@@ -23311,8 +23154,8 @@
       "观测"
     ],
     "topics": [
-      "天文科普",
-      "阅读写作与随笔"
+      "阅读写作与随笔",
+      "天文科普"
     ],
     "series": null,
     "series_index": null,
@@ -23495,8 +23338,8 @@
     ],
     "topics": [
       "数学工具",
-      "科普问答与百科",
-      "资源与站务"
+      "资源与站务",
+      "科普问答与百科"
     ],
     "series": null,
     "series_index": null,
@@ -23590,8 +23433,8 @@
     ],
     "topics": [
       "工程工具",
-      "天文科普",
-      "资源与站务"
+      "资源与站务",
+      "天文科普"
     ],
     "series": null,
     "series_index": null,
@@ -23682,7 +23525,6 @@
       "兴趣"
     ],
     "topics": [
-      "优化与训练",
       "阅读写作与随笔"
     ],
     "series": null,
@@ -23720,8 +23562,8 @@
       "工程"
     ],
     "topics": [
-      "生物自然",
-      "资源与站务"
+      "资源与站务",
+      "生物自然"
     ],
     "series": null,
     "series_index": null,
@@ -23976,8 +23818,7 @@
       "平方"
     ],
     "topics": [
-      "数学工具",
-      "生物自然"
+      "数学工具"
     ],
     "series": null,
     "series_index": null,
@@ -24050,8 +23891,8 @@
       "破解"
     ],
     "topics": [
-      "天文科普",
-      "物理化学"
+      "物理化学",
+      "天文科普"
     ],
     "series": null,
     "series_index": null,
@@ -24348,8 +24189,8 @@
       "世界"
     ],
     "topics": [
-      "科普问答与百科",
-      "资源与站务"
+      "资源与站务",
+      "科普问答与百科"
     ],
     "series": null,
     "series_index": null,
@@ -24406,8 +24247,7 @@
       "抽屉原理"
     ],
     "topics": [
-      "数学工具",
-      "生物自然"
+      "数学工具"
     ],
     "series": null,
     "series_index": null,
@@ -24447,8 +24287,8 @@
       "科学家"
     ],
     "topics": [
-      "生物自然",
-      "资源与站务"
+      "资源与站务",
+      "生物自然"
     ],
     "series": null,
     "series_index": null,
@@ -24539,8 +24379,8 @@
       "印度"
     ],
     "topics": [
-      "科普问答与百科",
-      "资源与站务"
+      "资源与站务",
+      "科普问答与百科"
     ],
     "series": null,
     "series_index": null,
@@ -24559,8 +24399,8 @@
       "求根"
     ],
     "topics": [
-      "数学工具",
-      "几何与方程"
+      "几何与方程",
+      "数学工具"
     ],
     "series": null,
     "series_index": null,
@@ -24597,8 +24437,8 @@
     ],
     "topics": [
       "天文科普",
-      "图片摄影",
-      "资源与站务"
+      "资源与站务",
+      "图片摄影"
     ],
     "series": null,
     "series_index": null,
@@ -24878,8 +24718,8 @@
       "反应"
     ],
     "topics": [
-      "物理化学",
-      "科普问答与百科"
+      "科普问答与百科",
+      "物理化学"
     ],
     "series": null,
     "series_index": null,
@@ -24897,8 +24737,8 @@
       "数字"
     ],
     "topics": [
-      "数学工具",
-      "资源与站务"
+      "资源与站务",
+      "数学工具"
     ],
     "series": null,
     "series_index": null,
@@ -24916,8 +24756,8 @@
       "氢氧化钠"
     ],
     "topics": [
-      "物理化学",
-      "科普问答与百科"
+      "科普问答与百科",
+      "物理化学"
     ],
     "series": null,
     "series_index": null,

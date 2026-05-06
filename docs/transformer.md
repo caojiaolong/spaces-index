@@ -2,7 +2,7 @@
 
 [返回主题索引](index.md)
 
-共 148 篇。
+共 147 篇。
 
 <a id="series-transformer-86fdf79074"></a>
 #### MuP之上
@@ -266,9 +266,6 @@
 - 2025-03-13 - [初探MuP：超参数的跨模型尺度迁移规律](https://spaces.ac.cn/archives/10770)
   - 原站分类：数学研究
   - 原站标签：梯度、学习率、优化器、尺度定律、MuP
-- 2025-01-17 - [细水长flow之TARFLOW：流模型满血归来？](https://spaces.ac.cn/archives/10667)
-  - 原站分类：信息时代
-  - 原站标签：流模型、flow、生成模型、attention
 - 2024-09-19 - [Softmax后传：寻找Top-K的光滑近似](https://spaces.ac.cn/archives/10373)
   - 原站分类：数学研究
   - 原站标签：概率、近似、梯度、光滑

@@ -2,7 +2,7 @@
 
 [返回主题索引](index.md)
 
-共 121 篇。
+共 120 篇。
 
 <a id="series-engineering-c6d727fb3c"></a>
 #### 通用爬虫探索
@@ -86,9 +86,6 @@
 - 2021-09-08 - [有限内存下全局打乱几百G文件（Python）](https://spaces.ac.cn/archives/8662)
   - 原站分类：信息时代
   - 原站标签：编程、python
-- 2021-01-07 - [【搜出来的文本】⋅（一）从文本生成到搜索采样](https://spaces.ac.cn/archives/8062)
-  - 原站分类：信息时代
-  - 原站标签：文本生成、采样、离散优化、MCMC
 - 2020-01-29 - [抛开约束，增强模型：一行代码提升albert表现](https://spaces.ac.cn/archives/7187)
   - 原站分类：信息时代
   - 原站标签：语言模型、attention

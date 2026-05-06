@@ -2,7 +2,7 @@
 
 [返回主题索引](index.md)
 
-共 128 篇。
+共 123 篇。
 
 <a id="series-physics-chemistry-f244e6dc90"></a>
 #### 一本对称闯物理：相对论力学
@@ -68,30 +68,15 @@
 <a id="series-physics-chemistry-standalone"></a>
 #### 非系列文章
 
-- 2023-11-29 - [我在Performer中发现了Transformer-VQ的踪迹](https://spaces.ac.cn/archives/9862)
-  - 原站分类：信息时代
-  - 原站标签：量子化、语言模型、attention
-- 2023-11-09 - [VQ一下Key，Transformer的复杂度就变成线性了](https://spaces.ac.cn/archives/9844)
-  - 原站分类：数学研究
-  - 原站标签：量子化、编码、梯度、attention
-- 2023-06-16 - [梯度流：探索通向最小值之路](https://spaces.ac.cn/archives/9660)
-  - 原站分类：数学研究
-  - 原站标签：泛函、动力学、优化、梯度
 - 2023-05-18 - [基于量子化假设推导模型的尺度定律（Scaling Law）](https://spaces.ac.cn/archives/9607)
   - 原站分类：数学研究
   - 原站标签：模型、分析、量子、尺度定律
 - 2022-11-30 - [用热传导方程来指导自监督学习](https://spaces.ac.cn/archives/9359)
   - 原站分类：信息时代
   - 原站标签：物理、无监督
-- 2020-09-15 - [殊途同归的策略梯度与零阶优化](https://spaces.ac.cn/archives/7737)
-  - 原站分类：数学研究
-  - 原站标签：优化、梯度、优化器、强化学习
 - 2019-07-06 - [你跳绳的时候，想过绳子的形状曲线是怎样的吗？](https://spaces.ac.cn/archives/6784)
   - 原站分类：物理化学
   - 原站标签：旋转、变分、作用量
-- 2019-06-24 - [VQ-VAE的简明介绍：量子化自编码器](https://spaces.ac.cn/archives/6760)
-  - 原站分类：信息时代
-  - 原站标签：无监督、生成模型、编码、离散化
 - 2018-06-07 - [python简单实现gillespie模拟](https://spaces.ac.cn/archives/5607)
   - 原站分类：物理化学
   - 原站标签：概率、模拟、随机、主方程
