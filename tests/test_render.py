@@ -52,8 +52,13 @@ def test_readme_contains_topic_links_and_stats():
     assert "- [大模型与Transformer（2 篇）](#topic-transformer)" in readme
     assert "  - [Transformer升级之路（2 篇）](#series-transformer-" in readme
     assert "### 大模型与Transformer" in readme
-    assert "#### Transformer升级之路" in readme
+    assert "#### Transformer升级之路 [返回目录](#目录)" in readme
     assert "- 2024-05-29 - [Transformer升级之路：18、RoPE的底数选择原则](https://spaces.ac.cn/archives/1)" in readme
+    assert (
+        "- 2024-05-29 - [Transformer升级之路：18、RoPE的底数选择原则]"
+        "(https://spaces.ac.cn/archives/1) - [查看系列](#series-transformer-"
+        in readme
+    )
     assert "## 详细元数据" in readme
     assert readme.index("## 本地运行") > readme.index("## 主题分类")
     assert readme.index("## 更新流程") > readme.index("## 本地运行")
@@ -68,3 +73,4 @@ def test_topic_page_contains_metadata():
     assert "系列：Transformer升级之路 #18" in page
     assert "小结摘录：这是一段小结短摘录。" in page
     assert "备注：重点阅读" in page
+    assert "[返回目录](#目录)" not in page

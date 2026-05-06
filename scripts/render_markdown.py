@@ -50,6 +50,10 @@ def dated_post_link(post: dict[str, Any]) -> str:
     return f"{date} - {post_link(post)}" if date else post_link(post)
 
 
+def post_identity(post: dict[str, Any]) -> str:
+    return str(post.get("id") or post.get("url") or post.get("title") or "")
+
+
 def topic_anchor(topic: str) -> str:
     page = TOPIC_PAGES.get(topic, topic)
     return f"topic-{Path(page).stem}"
@@ -130,11 +134,18 @@ def append_grouped_posts(
     *,
     detailed: bool,
     topic: str,
+    back_to_directory: bool = False,
 ) -> None:
+    def group_heading(title: str) -> str:
+        heading = f"#### {escape_md(title)}"
+        if back_to_directory:
+            heading += " [返回目录](#目录)"
+        return heading
+
     groups, standalone = group_series(posts)
     if not groups:
         lines.append(f'<a id="{standalone_anchor(topic)}"></a>')
-        lines.extend(["#### 非系列文章", ""])
+        lines.extend([group_heading("非系列文章"), ""])
         for post in posts:
             if detailed:
                 append_post_details(lines, post)
@@ -144,7 +155,7 @@ def append_grouped_posts(
 
     for series, series_posts in groups:
         lines.append(f'<a id="{series_anchor(topic, series)}"></a>')
-        lines.extend([f"#### {escape_md(series)}", ""])
+        lines.extend([group_heading(series), ""])
         for post in series_posts:
             if detailed:
                 append_post_details(lines, post)
@@ -154,7 +165,7 @@ def append_grouped_posts(
 
     if standalone:
         lines.append(f'<a id="{standalone_anchor(topic)}"></a>')
-        lines.extend(["#### 非系列文章", ""])
+        lines.extend([group_heading("非系列文章"), ""])
         for post in standalone:
             if detailed:
                 append_post_details(lines, post)
@@ -192,8 +203,35 @@ def render_directory(posts: list[dict[str, Any]]) -> str:
     return "\n".join(lines)
 
 
+def build_series_link_index(posts: list[dict[str, Any]]) -> dict[str, tuple[str, str]]:
+    links: dict[str, tuple[str, str]] = {}
+    for topic in TOPICS:
+        topic_posts = posts_for_topic(posts, topic)
+        groups, _ = group_series(topic_posts)
+        for series, series_posts in groups:
+            anchor = series_anchor(topic, series)
+            for post in series_posts:
+                identity = post_identity(post)
+                if identity and identity not in links:
+                    links[identity] = (series, anchor)
+    return links
+
+
+def recent_post_line(
+    post: dict[str, Any],
+    series_links: dict[str, tuple[str, str]],
+) -> str:
+    line = f"- {dated_post_link(post)}"
+    series_link = series_links.get(post_identity(post))
+    if series_link:
+        _, anchor = series_link
+        line += f" - [查看系列](#{anchor})"
+    return line
+
+
 def render_readme(posts: list[dict[str, Any]]) -> str:
     posts = sort_posts_desc(posts)
+    series_links = build_series_link_index(posts)
     lines: list[str] = [
         "# 科学空间文章索引",
         "",
@@ -220,7 +258,7 @@ def render_readme(posts: list[dict[str, Any]]) -> str:
     ]
     if posts:
         for post in posts[:20]:
-            lines.append(f"- {dated_post_link(post)}")
+            lines.append(recent_post_line(post, series_links))
     else:
         lines.append("- 暂无文章数据。")
 
@@ -229,7 +267,13 @@ def render_readme(posts: list[dict[str, Any]]) -> str:
         topic_posts = posts_for_topic(posts, topic)
         lines.extend([f'<a id="{topic_anchor(topic)}"></a>', f"### {topic}", ""])
         if topic_posts:
-            append_grouped_posts(lines, topic_posts, detailed=False, topic=topic)
+            append_grouped_posts(
+                lines,
+                topic_posts,
+                detailed=False,
+                topic=topic,
+                back_to_directory=True,
+            )
         else:
             lines.append("- 暂无文章。")
         lines.append("")

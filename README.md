@@ -110,25 +110,25 @@
 ## 最近 20 篇文章
 
 - 2026-05-04 - [如何更科学地估计矩阵的谱范数？](https://spaces.ac.cn/archives/11736)
-- 2026-04-24 - [MuP之上：4. 坚守参数的稳定性](https://spaces.ac.cn/archives/11729)
-- 2026-04-17 - [基于流式幂迭代的Muon实现：5. 延伸](https://spaces.ac.cn/archives/11719)
-- 2026-04-13 - [基于流式幂迭代的Muon实现：4. 原理](https://spaces.ac.cn/archives/11710)
-- 2026-04-07 - [基于流式幂迭代的Muon实现：3. 雕琢](https://spaces.ac.cn/archives/11697)
+- 2026-04-24 - [MuP之上：4. 坚守参数的稳定性](https://spaces.ac.cn/archives/11729) - [查看系列](#series-transformer-86fdf79074)
+- 2026-04-17 - [基于流式幂迭代的Muon实现：5. 延伸](https://spaces.ac.cn/archives/11719) - [查看系列](#series-optimization-2adf8edae5)
+- 2026-04-13 - [基于流式幂迭代的Muon实现：4. 原理](https://spaces.ac.cn/archives/11710) - [查看系列](#series-optimization-2adf8edae5)
+- 2026-04-07 - [基于流式幂迭代的Muon实现：3. 雕琢](https://spaces.ac.cn/archives/11697) - [查看系列](#series-optimization-2adf8edae5)
 - 2026-03-31 - [中位数（Median）简介](https://spaces.ac.cn/archives/11693)
-- 2026-03-26 - [基于流式幂迭代的Muon实现：2. 加速](https://spaces.ac.cn/archives/11673)
+- 2026-03-26 - [基于流式幂迭代的Muon实现：2. 加速](https://spaces.ac.cn/archives/11673) - [查看系列](#series-optimization-2adf8edae5)
 - 2026-03-19 - [Attention Residuals 回忆录](https://spaces.ac.cn/archives/11664)
-- 2026-03-12 - [基于流式幂迭代的Muon实现：1. 初识](https://spaces.ac.cn/archives/11654)
-- 2026-03-02 - [MuP之上：3. 特殊情况特殊处理](https://spaces.ac.cn/archives/11647)
-- 2026-02-23 - [MoE环游记：7、动态激活极简解](https://spaces.ac.cn/archives/11626)
-- 2026-02-22 - [MoE环游记：6、最优分配促均衡](https://spaces.ac.cn/archives/11619)
-- 2026-02-15 - [MuP之上：2. 线性层与最速下降](https://spaces.ac.cn/archives/11605)
+- 2026-03-12 - [基于流式幂迭代的Muon实现：1. 初识](https://spaces.ac.cn/archives/11654) - [查看系列](#series-optimization-2adf8edae5)
+- 2026-03-02 - [MuP之上：3. 特殊情况特殊处理](https://spaces.ac.cn/archives/11647) - [查看系列](#series-transformer-86fdf79074)
+- 2026-02-23 - [MoE环游记：7、动态激活极简解](https://spaces.ac.cn/archives/11626) - [查看系列](#series-transformer-f5569856ba)
+- 2026-02-22 - [MoE环游记：6、最优分配促均衡](https://spaces.ac.cn/archives/11619) - [查看系列](#series-transformer-f5569856ba)
+- 2026-02-15 - [MuP之上：2. 线性层与最速下降](https://spaces.ac.cn/archives/11605) - [查看系列](#series-transformer-86fdf79074)
 - 2026-02-04 - [Adam优化器的最优超参数是β1=β2 ？](https://spaces.ac.cn/archives/11593)
 - 2026-01-28 - [一行代码将arXiv论文翻译成中文版](https://spaces.ac.cn/archives/11578)
 - 2026-01-26 - [DeltaNet的核心逆矩阵的元素总是在\[-1, 1\]内](https://spaces.ac.cn/archives/11563)
 - 2026-01-20 - [为什么我们偏爱各向同性？基于最速下降的理解](https://spaces.ac.cn/archives/11549)
-- 2026-01-16 - [让炼丹更科学一些（六）：自上而下的精妙构造](https://spaces.ac.cn/archives/11540)
-- 2026-01-09 - [让炼丹更科学一些（五）：基于梯度精调学习率](https://spaces.ac.cn/archives/11530)
-- 2025-12-26 - [让炼丹更科学一些（四）：新恒等式，新学习率](https://spaces.ac.cn/archives/11494)
+- 2026-01-16 - [让炼丹更科学一些（六）：自上而下的精妙构造](https://spaces.ac.cn/archives/11540) - [查看系列](#series-optimization-22f3c62045)
+- 2026-01-09 - [让炼丹更科学一些（五）：基于梯度精调学习率](https://spaces.ac.cn/archives/11530) - [查看系列](#series-optimization-22f3c62045)
+- 2025-12-26 - [让炼丹更科学一些（四）：新恒等式，新学习率](https://spaces.ac.cn/archives/11494) - [查看系列](#series-optimization-22f3c62045)
 
 ## 主题分类
 
@@ -136,7 +136,7 @@
 ### 深度学习基础
 
 <a id="series-deep-learning-69126a7846"></a>
-#### 重新思考学习率与Batch Size
+#### 重新思考学习率与Batch Size [返回目录](#目录)
 
 - 2025-09-01 - [重新思考学习率与Batch Size（一）：现状](https://spaces.ac.cn/archives/11260)
 - 2025-09-10 - [重新思考学习率与Batch Size（二）：平均场](https://spaces.ac.cn/archives/11280)
@@ -144,14 +144,14 @@
 - 2025-09-22 - [重新思考学习率与Batch Size（四）：EMA](https://spaces.ac.cn/archives/11301)
 
 <a id="series-deep-learning-0ac9606400"></a>
-#### 多任务学习漫谈
+#### 多任务学习漫谈 [返回目录](#目录)
 
 - 2022-01-18 - [多任务学习漫谈（一）：以损失之名](https://spaces.ac.cn/archives/8870)
 - 2022-02-08 - [多任务学习漫谈（二）：行梯度之事](https://spaces.ac.cn/archives/8896)
 - 2022-02-14 - [多任务学习漫谈（三）：分主次之序](https://spaces.ac.cn/archives/8907)
 
 <a id="series-deep-learning-e73395bb77"></a>
-#### “让Keras更酷一些！”
+#### “让Keras更酷一些！” [返回目录](#目录)
 
 - 2018-08-06 - [“让Keras更酷一些！”：精巧的层与花式的回调](https://spaces.ac.cn/archives/5765)
 - 2018-09-08 - [“让Keras更酷一些！”：小众的自定义优化器](https://spaces.ac.cn/archives/5879)
@@ -162,7 +162,7 @@
 - 2019-09-29 - [“让Keras更酷一些！”：层与模型的重用技巧](https://spaces.ac.cn/archives/6985)
 
 <a id="series-deep-learning-4b0540d8f5"></a>
-#### 文本情感分类
+#### 文本情感分类 [返回目录](#目录)
 
 - 2015-06-22 - [文本情感分类（一）：传统模型](https://spaces.ac.cn/archives/3360)
 - 2015-08-04 - [文本情感分类（二）：深度学习模型](https://spaces.ac.cn/archives/3414)
@@ -170,7 +170,7 @@
 - 2017-03-30 - [文本情感分类（四）：更好的损失函数](https://spaces.ac.cn/archives/4293)
 
 <a id="series-deep-learning-standalone"></a>
-#### 非系列文章
+#### 非系列文章 [返回目录](#目录)
 
 - 2026-03-19 - [Attention Residuals 回忆录](https://spaces.ac.cn/archives/11664)
 - 2025-08-16 - [ReLU/GeLU/Swish的一个恒等式](https://spaces.ac.cn/archives/11233)
@@ -278,14 +278,14 @@
 ### 词向量与Embedding
 
 <a id="series-embeddings-2949022b50"></a>
-#### CoSENT
+#### CoSENT [返回目录](#目录)
 
 - 2022-01-06 - [CoSENT（一）：比Sentence-BERT更有效的句向量方案](https://spaces.ac.cn/archives/8847)
 - 2022-01-12 - [CoSENT（二）：特征式匹配与交互式匹配有多大差距？](https://spaces.ac.cn/archives/8860)
 - 2022-11-09 - [CoSENT（三）：作为交互式相似度的损失函数](https://spaces.ac.cn/archives/9341)
 
 <a id="series-embeddings-83ff2143be"></a>
-#### 更别致的词向量模型
+#### 更别致的词向量模型 [返回目录](#目录)
 
 - 2017-11-19 - [更别致的词向量模型(一)：simpler glove](https://spaces.ac.cn/archives/4667)
 - 2017-11-19 - [更别致的词向量模型(二)：对语言进行建模](https://spaces.ac.cn/archives/4669)
@@ -295,7 +295,7 @@
 - 2017-11-19 - [更别致的词向量模型(六)：代码、分享与结语](https://spaces.ac.cn/archives/4681)
 
 <a id="series-embeddings-5025fd40f6"></a>
-#### 不可思议的Word2Vec
+#### 不可思议的Word2Vec [返回目录](#目录)
 
 - 2017-04-02 - [【不可思议的Word2Vec】 1.数学原理](https://spaces.ac.cn/archives/4299)
 - 2017-04-03 - [【不可思议的Word2Vec】 2.训练好的模型](https://spaces.ac.cn/archives/4304)
@@ -305,7 +305,7 @@
 - 2017-08-06 - [【不可思议的Word2Vec】6. Keras版的Word2Vec](https://spaces.ac.cn/archives/4515)
 
 <a id="series-embeddings-standalone"></a>
-#### 非系列文章
+#### 非系列文章 [返回目录](#目录)
 
 - 2023-08-28 - [Lion/Tiger优化器训练下的Embedding异常和对策](https://spaces.ac.cn/archives/9736)
 - 2023-07-20 - [语言模型输出端共享Embedding的重新探索](https://spaces.ac.cn/archives/9698)
@@ -321,7 +321,7 @@
 ### 大模型与Transformer
 
 <a id="series-transformer-86fdf79074"></a>
-#### MuP之上
+#### MuP之上 [返回目录](#目录)
 
 - 2025-10-21 - [MuP之上：1. 好模型的三个特征](https://spaces.ac.cn/archives/11340)
 - 2026-02-15 - [MuP之上：2. 线性层与最速下降](https://spaces.ac.cn/archives/11605)
@@ -329,7 +329,7 @@
 - 2026-04-24 - [MuP之上：4. 坚守参数的稳定性](https://spaces.ac.cn/archives/11729)
 
 <a id="series-transformer-f5569856ba"></a>
-#### MoE环游记
+#### MoE环游记 [返回目录](#目录)
 
 - 2025-02-08 - [MoE环游记：1、从几何意义出发](https://spaces.ac.cn/archives/10699)
 - 2025-02-21 - [MoE环游记：2、不患寡而患不均](https://spaces.ac.cn/archives/10735)
@@ -340,7 +340,7 @@
 - 2026-02-23 - [MoE环游记：7、动态激活极简解](https://spaces.ac.cn/archives/11626)
 
 <a id="series-transformer-34e65637fd"></a>
-#### Transformer升级之路
+#### Transformer升级之路 [返回目录](#目录)
 
 - 2021-03-08 - [Transformer升级之路：1、Sinusoidal位置编码追根溯源](https://spaces.ac.cn/archives/8231)
 - 2021-03-23 - [Transformer升级之路：2、博采众长的旋转式位置编码](https://spaces.ac.cn/archives/8265)
@@ -365,20 +365,20 @@
 - 2025-07-10 - [Transformer升级之路：21、MLA好在哪里?（下）](https://spaces.ac.cn/archives/11111)
 
 <a id="series-transformer-2e7d329847"></a>
-#### “闭门造车”之多模态思路浅谈
+#### “闭门造车”之多模态思路浅谈 [返回目录](#目录)
 
 - 2024-02-21 - [“闭门造车”之多模态思路浅谈（一）：无损输入](https://spaces.ac.cn/archives/9984)
 - 2024-07-08 - [“闭门造车”之多模态思路浅谈（二）：自回归](https://spaces.ac.cn/archives/10197)
 - 2024-09-06 - [“闭门造车”之多模态思路浅谈（三）：位置编码](https://spaces.ac.cn/archives/10352)
 
 <a id="series-transformer-32697fc150"></a>
-#### 对齐全量微调！这是我看过最精彩的LoRA改进
+#### 对齐全量微调！这是我看过最精彩的LoRA改进 [返回目录](#目录)
 
 - 2024-07-12 - [对齐全量微调！这是我看过最精彩的LoRA改进（一）](https://spaces.ac.cn/archives/10226)
 - 2024-07-29 - [对齐全量微调！这是我看过最精彩的LoRA改进（二）](https://spaces.ac.cn/archives/10266)
 
 <a id="series-transformer-7e9346ae49"></a>
-#### 重温SSM
+#### 重温SSM [返回目录](#目录)
 
 - 2024-05-24 - [重温SSM（一）：线性系统和HiPPO矩阵](https://spaces.ac.cn/archives/10114)
 - 2024-06-05 - [重温SSM（二）：HiPPO的一些遗留问题](https://spaces.ac.cn/archives/10137)
@@ -386,7 +386,7 @@
 - 2024-06-27 - [重温SSM（四）：有理生成函数的新视角](https://spaces.ac.cn/archives/10180)
 
 <a id="series-transformer-standalone"></a>
-#### 非系列文章
+#### 非系列文章 [返回目录](#目录)
 
 - 2026-03-19 - [Attention Residuals 回忆录](https://spaces.ac.cn/archives/11664)
 - 2026-01-26 - [DeltaNet的核心逆矩阵的元素总是在\[-1, 1\]内](https://spaces.ac.cn/archives/11563)
@@ -499,7 +499,7 @@
 ### 生成模型
 
 <a id="series-generative-models-e48ccca641"></a>
-#### 生成扩散模型漫谈
+#### 生成扩散模型漫谈 [返回目录](#目录)
 
 - 2022-06-13 - [生成扩散模型漫谈（一）：DDPM = 拆楼 + 建楼](https://spaces.ac.cn/archives/9119)
 - 2022-07-06 - [生成扩散模型漫谈（二）：DDPM = 自回归式VAE](https://spaces.ac.cn/archives/9152)
@@ -534,7 +534,7 @@
 - 2025-11-24 - [生成扩散模型漫谈（三十一）：预测数据而非噪声](https://spaces.ac.cn/archives/11428)
 
 <a id="series-generative-models-9738e76a31"></a>
-#### 细水长flow
+#### 细水长flow [返回目录](#目录)
 
 - 2018-08-11 - [细水长flow之NICE：流模型的基本概念与实现](https://spaces.ac.cn/archives/5776)
 - 2018-08-26 - [细水长flow之RealNVP与Glow：流模型的传承与升华](https://spaces.ac.cn/archives/5807)
@@ -543,7 +543,7 @@
 - 2025-01-17 - [细水长flow之TARFLOW：流模型满血归来？](https://spaces.ac.cn/archives/10667)
 
 <a id="series-generative-models-c26095ce70"></a>
-#### 变分自编码器
+#### 变分自编码器 [返回目录](#目录)
 
 - 2018-03-18 - [变分自编码器（一）：原来是这么一回事](https://spaces.ac.cn/archives/5253)
 - 2018-03-28 - [变分自编码器（二）：从贝叶斯观点出发](https://spaces.ac.cn/archives/5343)
@@ -555,7 +555,7 @@
 - 2021-12-09 - [变分自编码器（八）：估计样本概率密度](https://spaces.ac.cn/archives/8791)
 
 <a id="series-generative-models-efbc1f2b0e"></a>
-#### 搜出来的文本
+#### 搜出来的文本 [返回目录](#目录)
 
 - 2021-01-07 - [【搜出来的文本】⋅（一）从文本生成到搜索采样](https://spaces.ac.cn/archives/8062)
 - 2021-01-14 - [【搜出来的文本】⋅（二）从MCMC到模拟退火](https://spaces.ac.cn/archives/8084)
@@ -563,14 +563,14 @@
 - 2021-02-25 - [【搜出来的文本】⋅（四）通过增、删、改来用词造句](https://spaces.ac.cn/archives/8194)
 
 <a id="series-generative-models-cbc622e222"></a>
-#### 能量视角下的GAN模型
+#### 能量视角下的GAN模型 [返回目录](#目录)
 
 - 2019-01-30 - [能量视角下的GAN模型（一）：GAN＝“挖坑”＋“跳坑”](https://spaces.ac.cn/archives/6316)
 - 2019-02-15 - [能量视角下的GAN模型（二）：GAN＝“分析”＋“采样”](https://spaces.ac.cn/archives/6331)
 - 2019-05-10 - [能量视角下的GAN模型（三）：生成模型=能量模型](https://spaces.ac.cn/archives/6612)
 
 <a id="series-generative-models-standalone"></a>
-#### 非系列文章
+#### 非系列文章 [返回目录](#目录)
 
 - 2025-10-08 - [DiVeQ：一种非常简洁的VQ训练方案](https://spaces.ac.cn/archives/11328)
 - 2025-10-05 - [为什么线性注意力要加Short Conv？](https://spaces.ac.cn/archives/11320)
@@ -649,7 +649,7 @@
 ### 优化与训练
 
 <a id="series-optimization-2adf8edae5"></a>
-#### 基于流式幂迭代的Muon实现
+#### 基于流式幂迭代的Muon实现 [返回目录](#目录)
 
 - 2026-03-12 - [基于流式幂迭代的Muon实现：1. 初识](https://spaces.ac.cn/archives/11654)
 - 2026-03-26 - [基于流式幂迭代的Muon实现：2. 加速](https://spaces.ac.cn/archives/11673)
@@ -658,7 +658,7 @@
 - 2026-04-17 - [基于流式幂迭代的Muon实现：5. 延伸](https://spaces.ac.cn/archives/11719)
 
 <a id="series-optimization-22f3c62045"></a>
-#### 让炼丹更科学一些
+#### 让炼丹更科学一些 [返回目录](#目录)
 
 - 2023-12-19 - [让炼丹更科学一些（一）：SGD的平均损失收敛](https://spaces.ac.cn/archives/9902)
 - 2025-12-12 - [让炼丹更科学一些（二）：将结论推广到无界域](https://spaces.ac.cn/archives/11469)
@@ -668,13 +668,13 @@
 - 2026-01-16 - [让炼丹更科学一些（六）：自上而下的精妙构造](https://spaces.ac.cn/archives/11540)
 
 <a id="series-optimization-623aab7f21"></a>
-#### AdamW的Weight RMS的渐近估计
+#### AdamW的Weight RMS的渐近估计 [返回目录](#目录)
 
 - 2025-10-01 - [AdamW的Weight RMS的渐近估计（上）](https://spaces.ac.cn/archives/11307)
 - 2025-11-17 - [AdamW的Weight RMS的渐近估计（下）](https://spaces.ac.cn/archives/11404)
 
 <a id="series-optimization-9aa52368b1"></a>
-#### 流形上的最速下降
+#### 流形上的最速下降 [返回目录](#目录)
 
 - 2025-08-01 - [流形上的最速下降：1. SGD + 超球面](https://spaces.ac.cn/archives/11196)
 - 2025-08-06 - [流形上的最速下降：2. Muon + 正交](https://spaces.ac.cn/archives/11215)
@@ -683,19 +683,19 @@
 - 2025-11-03 - [流形上的最速下降：5. 对偶梯度下降](https://spaces.ac.cn/archives/11388)
 
 <a id="series-optimization-297337ae72"></a>
-#### 通过msign来计算奇异值裁剪mclip
+#### 通过msign来计算奇异值裁剪mclip [返回目录](#目录)
 
 - 2025-06-07 - [通过msign来计算奇异值裁剪mclip（上）](https://spaces.ac.cn/archives/11006)
 - 2025-06-23 - [通过msign来计算奇异值裁剪mclip（下）](https://spaces.ac.cn/archives/11059)
 
 <a id="series-optimization-d27a2576eb"></a>
-#### msign算子的Newton-Schulz迭代
+#### msign算子的Newton-Schulz迭代 [返回目录](#目录)
 
 - 2025-05-11 - [msign算子的Newton-Schulz迭代（上）](https://spaces.ac.cn/archives/10922)
 - 2025-06-05 - [msign算子的Newton-Schulz迭代（下）](https://spaces.ac.cn/archives/10996)
 
 <a id="series-optimization-4b38446b55"></a>
-#### 从动力学角度看优化算法
+#### 从动力学角度看优化算法 [返回目录](#目录)
 
 - 2018-06-27 - [从动力学角度看优化算法（一）：从SGD到动量加速](https://spaces.ac.cn/archives/5655)
 - 2018-12-20 - [从动力学角度看优化算法（二）：自适应学习率算法](https://spaces.ac.cn/archives/6234)
@@ -706,7 +706,7 @@
 - 2020-12-21 - [从动力学角度看优化算法（七）：SGD ≈ SVM？](https://spaces.ac.cn/archives/8009)
 
 <a id="series-optimization-standalone"></a>
-#### 非系列文章
+#### 非系列文章 [返回目录](#目录)
 
 - 2026-02-04 - [Adam优化器的最优超参数是β1=β2 ？](https://spaces.ac.cn/archives/11593)
 - 2026-01-20 - [为什么我们偏爱各向同性？基于最速下降的理解](https://spaces.ac.cn/archives/11549)
@@ -783,7 +783,7 @@
 ### 数学工具
 
 <a id="series-math-6689ddf615"></a>
-#### 低秩近似之路
+#### 低秩近似之路 [返回目录](#目录)
 
 - 2024-09-15 - [低秩近似之路（一）：伪逆](https://spaces.ac.cn/archives/10366)
 - 2024-10-01 - [低秩近似之路（二）：SVD](https://spaces.ac.cn/archives/10407)
@@ -792,14 +792,14 @@
 - 2025-01-12 - [低秩近似之路（五）：CUR](https://spaces.ac.cn/archives/10662)
 
 <a id="series-math-6a0e7d7415"></a>
-#### SVD分解
+#### SVD分解 [返回目录](#目录)
 
 - 2017-01-15 - [SVD分解(一)：自编码器与人工智能](https://spaces.ac.cn/archives/4208)
 - 2017-01-26 - [SVD分解(二)：为什么SVD意味着聚类？](https://spaces.ac.cn/archives/4216)
 - 2017-02-23 - [SVD分解(三)：连Word2Vec都只不过是个SVD？](https://spaces.ac.cn/archives/4233)
 
 <a id="series-math-07dc7181b7"></a>
-#### 外微分浅谈
+#### 外微分浅谈 [返回目录](#目录)
 
 - 2016-11-04 - [【外微分浅谈】1. 绪论与启发](https://spaces.ac.cn/archives/4051)
 - 2016-11-04 - [【外微分浅谈】2. 反对称的威力](https://spaces.ac.cn/archives/4054)
@@ -810,7 +810,7 @@
 - 2016-11-11 - [【外微分浅谈】7. 有力的计算](https://spaces.ac.cn/archives/4076)
 
 <a id="series-math-f5eea49ebf"></a>
-#### 路径积分系列
+#### 路径积分系列 [返回目录](#目录)
 
 - 2016-05-30 - [路径积分系列：1.我的毕业论文](https://spaces.ac.cn/archives/3749)
 - 2016-05-30 - [路径积分系列：2.随机游走模型](https://spaces.ac.cn/archives/3750)
@@ -819,21 +819,21 @@
 - 2016-06-09 - [路径积分系列：5.例子和综述](https://spaces.ac.cn/archives/3766)
 
 <a id="series-math-a994c848cb"></a>
-#### “熵”不起：从熵、最大熵原理到最大熵模型
+#### “熵”不起：从熵、最大熵原理到最大熵模型 [返回目录](#目录)
 
 - 2015-12-01 - [“熵”不起：从熵、最大熵原理到最大熵模型（一）](https://spaces.ac.cn/archives/3534)
 - 2015-12-11 - [“熵”不起：从熵、最大熵原理到最大熵模型（二）](https://spaces.ac.cn/archives/3552)
 - 2015-12-20 - [“熵”不起：从熵、最大熵原理到最大熵模型（三）](https://spaces.ac.cn/archives/3567)
 
 <a id="series-math-06b60440b9"></a>
-#### 高斯型积分的微扰展开
+#### 高斯型积分的微扰展开 [返回目录](#目录)
 
 - 2015-02-14 - [高斯型积分的微扰展开（一）](https://spaces.ac.cn/archives/3217)
 - 2015-03-07 - [高斯型积分的微扰展开（二）](https://spaces.ac.cn/archives/3241)
 - 2015-04-26 - [高斯型积分的微扰展开（三）](https://spaces.ac.cn/archives/3280)
 
 <a id="series-math-df510aaec3"></a>
-#### 从费马大定理谈起
+#### 从费马大定理谈起 [返回目录](#目录)
 
 - 2014-08-15 - [从费马大定理谈起（一）：背景简介](https://spaces.ac.cn/archives/2805)
 - 2014-08-15 - [从费马大定理谈起（二）：勾股数](https://spaces.ac.cn/archives/2808)
@@ -849,7 +849,7 @@
 - 2014-10-25 - [从费马大定理谈起（十二）：再谈谈切线法](https://spaces.ac.cn/archives/3008)
 
 <a id="series-math-26a49a282f"></a>
-#### 新理解矩阵
+#### 新理解矩阵 [返回目录](#目录)
 
 - 2012-10-29 - [《新理解矩阵1》：矩阵是什么？](https://spaces.ac.cn/archives/1765)
 - 2012-10-31 - [《新理解矩阵2》：矩阵是什么？](https://spaces.ac.cn/archives/1768)
@@ -859,26 +859,26 @@
 - 2014-07-15 - [《新理解矩阵6》：为什么只有方阵有行列式？](https://spaces.ac.cn/archives/2757)
 
 <a id="series-math-aeb91e1623"></a>
-#### 求解微分方程的李对称方法
+#### 求解微分方程的李对称方法 [返回目录](#目录)
 
 - 2013-10-29 - [求解微分方程的李对称方法（一）](https://spaces.ac.cn/archives/2107)
 - 2013-11-26 - [求解微分方程的李对称方法（二）](https://spaces.ac.cn/archives/2185)
 
 <a id="series-math-c295ed4753"></a>
-#### 数学基本技艺之23、24
+#### 数学基本技艺之23、24 [返回目录](#目录)
 
 - 2013-09-26 - [数学基本技艺之23、24（上）](https://spaces.ac.cn/archives/2083)
 - 2013-09-27 - [数学基本技艺之23、24（下）](https://spaces.ac.cn/archives/2096)
 
 <a id="series-math-ce0fb96873"></a>
-#### 纠缠的时空
+#### 纠缠的时空 [返回目录](#目录)
 
 - 2013-02-01 - [纠缠的时空（一）：洛仑兹变换的矩阵](https://spaces.ac.cn/archives/1889)
 - 2013-02-27 - [纠缠的时空（二）：洛仑兹变换的矩阵(续)](https://spaces.ac.cn/archives/1923)
 - 2013-04-18 - [纠缠的时空（三）：长度收缩和时间延缓](https://spaces.ac.cn/archives/1971)
 
 <a id="series-math-ec7e1e24d2"></a>
-#### 费曼积分法
+#### 费曼积分法 [返回目录](#目录)
 
 - 2013-03-24 - [费曼积分法(5)：欧拉数学的传承](https://spaces.ac.cn/archives/1942)
 - 2013-03-24 - [费曼积分法(6)：教科书上的两道练习题](https://spaces.ac.cn/archives/1944)
@@ -886,14 +886,14 @@
 - 2013-04-14 - [费曼积分法(8)：求高斯积分](https://spaces.ac.cn/archives/1967)
 
 <a id="series-math-4c07e201c9"></a>
-#### 轻微的扰动——摄动法简介
+#### 轻微的扰动——摄动法简介 [返回目录](#目录)
 
 - 2013-01-16 - [轻微的扰动——摄动法简介(1)](https://spaces.ac.cn/archives/1878)
 - 2013-02-06 - [轻微的扰动——摄动法简介(2)](https://spaces.ac.cn/archives/1909)
 - 2013-03-07 - [轻微的扰动——摄动法简介(3)](https://spaces.ac.cn/archives/1929)
 
 <a id="series-math-246a7a31d9"></a>
-#### 费曼路径积分思想的发展
+#### 费曼路径积分思想的发展 [返回目录](#目录)
 
 - 2012-12-26 - [费曼路径积分思想的发展(一)](https://spaces.ac.cn/archives/1844)
 - 2012-12-26 - [费曼路径积分思想的发展(二)](https://spaces.ac.cn/archives/1846)
@@ -901,13 +901,13 @@
 - 2012-12-27 - [费曼路径积分思想的发展(四)](https://spaces.ac.cn/archives/1850)
 
 <a id="series-math-7a80644aea"></a>
-#### 算子与线性常微分方程
+#### 算子与线性常微分方程 [返回目录](#目录)
 
 - 2012-11-30 - [算子与线性常微分方程(上)](https://spaces.ac.cn/archives/1791)
 - 2012-11-30 - [算子与线性常微分方程(下)](https://spaces.ac.cn/archives/1794)
 
 <a id="series-math-e14089cebd"></a>
-#### 费曼积分法——积分符号内取微分
+#### 费曼积分法——积分符号内取微分 [返回目录](#目录)
 
 - 2012-06-10 - [费曼积分法——积分符号内取微分(1)](https://spaces.ac.cn/archives/1615)
 - 2012-06-12 - [费曼积分法——积分符号内取微分(2)](https://spaces.ac.cn/archives/1619)
@@ -915,14 +915,14 @@
 - 2012-06-26 - [费曼积分法——积分符号内取微分(4)](https://spaces.ac.cn/archives/1637)
 
 <a id="series-math-f9866e4ce1"></a>
-#### 《教材如何写》
+#### 《教材如何写》 [返回目录](#目录)
 
 - 2011-04-16 - [《教材如何写》:对于教材写法的一点考虑](https://spaces.ac.cn/archives/1328)
 - 2011-04-16 - [《教材如何写》:我们需要怎样的数学教育？](https://spaces.ac.cn/archives/1324)
 - 2011-04-19 - [《教材如何写》:BoJone的粗浅看法](https://spaces.ac.cn/archives/1329)
 
 <a id="series-math-5e3917ad32"></a>
-#### 自然极值
+#### 自然极值 [返回目录](#目录)
 
 - 2010-11-27 - [《自然极值》系列——1.前言](https://spaces.ac.cn/archives/1065)
 - 2010-11-27 - [《自然极值》系列——2.费马原理](https://spaces.ac.cn/archives/1068)
@@ -934,7 +934,7 @@
 - 2010-12-26 - [《自然极值》系列——8.极值分析](https://spaces.ac.cn/archives/1134)
 
 <a id="series-math-fae158475e"></a>
-#### 向量
+#### 向量 [返回目录](#目录)
 
 - 2010-07-15 - [《向量》系列——1.向心力公式证明](https://spaces.ac.cn/archives/701)
 - 2010-07-18 - [《向量》系列——2.曲率半径](https://spaces.ac.cn/archives/714)
@@ -943,13 +943,13 @@
 - 2010-10-03 - [《向量》系列——5.平面向量微分方程与复数](https://spaces.ac.cn/archives/963)
 
 <a id="series-math-d050b16b4d"></a>
-#### 微积分学习
+#### 微积分学习 [返回目录](#目录)
 
 - 2009-08-16 - [微积分学习（一）：极限](https://spaces.ac.cn/archives/75)
 - 2009-09-12 - [微积分学习（二）：导数](https://spaces.ac.cn/archives/118)
 
 <a id="series-math-standalone"></a>
-#### 非系列文章
+#### 非系列文章 [返回目录](#目录)
 
 - 2026-05-04 - [如何更科学地估计矩阵的谱范数？](https://spaces.ac.cn/archives/11736)
 - 2026-03-31 - [中位数（Median）简介](https://spaces.ac.cn/archives/11693)
@@ -1244,7 +1244,7 @@
 ### 概率统计与信息论
 
 <a id="series-probability-info-2e7e2c4698"></a>
-#### 最小熵原理
+#### 最小熵原理 [返回目录](#目录)
 
 - 2018-04-18 - [最小熵原理（一）：无监督学习的原理](https://spaces.ac.cn/archives/5448)
 - 2018-04-24 - [最小熵原理（二）：“当机立断”之词库构建](https://spaces.ac.cn/archives/5476)
@@ -1254,7 +1254,7 @@
 - 2020-08-20 - [最小熵原理（六）：词向量的维度应该怎么选择？](https://spaces.ac.cn/archives/7695)
 
 <a id="series-probability-info-standalone"></a>
-#### 非系列文章
+#### 非系列文章 [返回目录](#目录)
 
 - 2026-03-31 - [中位数（Median）简介](https://spaces.ac.cn/archives/11693)
 - 2025-11-06 - [n个正态随机数的最大值的渐近估计](https://spaces.ac.cn/archives/11390)
@@ -1338,7 +1338,7 @@
 ### 几何与方程
 
 <a id="series-geometry-equations-41868e210e"></a>
-#### 理解黎曼几何
+#### 理解黎曼几何 [返回目录](#目录)
 
 - 2016-10-14 - [【理解黎曼几何】1. 一条几何之路](https://spaces.ac.cn/archives/3963)
 - 2016-10-14 - [【理解黎曼几何】2. 从勾股定理到黎曼度量](https://spaces.ac.cn/archives/3969)
@@ -1350,7 +1350,7 @@
 - 2016-11-02 - [【理解黎曼几何】8. 处处皆几何 (力学几何化)](https://spaces.ac.cn/archives/4046)
 
 <a id="series-geometry-equations-standalone"></a>
-#### 非系列文章
+#### 非系列文章 [返回目录](#目录)
 
 - 2026-03-31 - [中位数（Median）简介](https://spaces.ac.cn/archives/11693)
 - 2025-12-23 - [为什么DeltaNet要加L2 Normalize？](https://spaces.ac.cn/archives/11486)
@@ -1455,7 +1455,7 @@
 ### NLP与信息抽取
 
 <a id="series-nlp-73a0edf1cd"></a>
-#### 中文分词系列
+#### 中文分词系列 [返回目录](#目录)
 
 - 2016-08-17 - [【中文分词系列】 1. 基于AC自动机的快速分词](https://spaces.ac.cn/archives/3908)
 - 2016-08-18 - [【中文分词系列】 2. 基于切分的新词发现](https://spaces.ac.cn/archives/3913)
@@ -1467,7 +1467,7 @@
 - 2017-03-11 - [【中文分词系列】 8. 更好的新词发现算法](https://spaces.ac.cn/archives/4256)
 
 <a id="series-nlp-bffb492bca"></a>
-#### OCR技术浅探
+#### OCR技术浅探 [返回目录](#目录)
 
 - 2016-06-17 - [OCR技术浅探：1. 全文简述](https://spaces.ac.cn/archives/3774)
 - 2016-06-17 - [OCR技术浅探：2. 背景与假设](https://spaces.ac.cn/archives/3781)
@@ -1481,7 +1481,7 @@
 - 2016-06-26 - [OCR技术浅探：9. 代码共享(完)](https://spaces.ac.cn/archives/3856)
 
 <a id="series-nlp-standalone"></a>
-#### 非系列文章
+#### 非系列文章 [返回目录](#目录)
 
 - 2024-01-09 - [局部余弦相似度大，全局余弦相似度一定也大吗？](https://spaces.ac.cn/archives/9931)
 - 2023-10-16 - [随机分词再探：从Viterbi Sampling到完美采样算法](https://spaces.ac.cn/archives/9811)
@@ -1562,14 +1562,14 @@
 ### 工程工具
 
 <a id="series-engineering-c6d727fb3c"></a>
-#### 通用爬虫探索
+#### 通用爬虫探索 [返回目录](#目录)
 
 - 2017-06-06 - [通用爬虫探索（一）：适用一般网站的爬虫](https://spaces.ac.cn/archives/4413)
 - 2017-06-06 - [通用爬虫探索（二）：落实到论坛爬取上](https://spaces.ac.cn/archives/4422)
 - 2017-06-07 - [通用爬虫探索（三）：效果展示与代码](https://spaces.ac.cn/archives/4430)
 
 <a id="series-engineering-standalone"></a>
-#### 非系列文章
+#### 非系列文章 [返回目录](#目录)
 
 - 2026-01-28 - [一行代码将arXiv论文翻译成中文版](https://spaces.ac.cn/archives/11578)
 - 2025-08-25 - [Cool Papers更新：简单适配Zotero Connector](https://spaces.ac.cn/archives/11250)
@@ -1693,7 +1693,7 @@
 ### 天文科普
 
 <a id="series-astronomy-standalone"></a>
-#### 非系列文章
+#### 非系列文章 [返回目录](#目录)
 
 - 2020-06-21 - [日食记](https://spaces.ac.cn/archives/7515)
 - 2019-12-23 - [2020年全年天象](https://spaces.ac.cn/archives/7144)
@@ -1897,32 +1897,32 @@
 ### 物理化学
 
 <a id="series-physics-chemistry-f244e6dc90"></a>
-#### 一本对称闯物理：相对论力学
+#### 一本对称闯物理：相对论力学 [返回目录](#目录)
 
 - 2014-03-19 - [一本对称闯物理：相对论力学(一)](https://spaces.ac.cn/archives/2478)
 - 2014-03-25 - [一本对称闯物理：相对论力学(二)](https://spaces.ac.cn/archives/2512)
 
 <a id="series-physics-chemistry-b0ed9e05e7"></a>
-#### 一维弹簧的运动
+#### 一维弹簧的运动 [返回目录](#目录)
 
 - 2014-03-11 - [一维弹簧的运动（上）](https://spaces.ac.cn/archives/2430)
 - 2014-03-13 - [一维弹簧的运动（下）](https://spaces.ac.cn/archives/2434)
 
 <a id="series-physics-chemistry-e231e49a33"></a>
-#### 力学系统及其对偶性
+#### 力学系统及其对偶性 [返回目录](#目录)
 
 - 2013-11-08 - [力学系统及其对偶性（一）](https://spaces.ac.cn/archives/2121)
 - 2013-11-14 - [力学系统及其对偶性（二）](https://spaces.ac.cn/archives/2136)
 - 2013-11-15 - [力学系统及其对偶性（三）](https://spaces.ac.cn/archives/2177)
 
 <a id="series-physics-chemistry-04bb391ccb"></a>
-#### 电偶极子浅探
+#### 电偶极子浅探 [返回目录](#目录)
 
 - 2012-08-17 - [电偶极子浅探（1）](https://spaces.ac.cn/archives/1693)
 - 2012-08-18 - [电偶极子浅探（2）](https://spaces.ac.cn/archives/1701)
 
 <a id="series-physics-chemistry-standalone"></a>
-#### 非系列文章
+#### 非系列文章 [返回目录](#目录)
 
 - 2023-05-18 - [基于量子化假设推导模型的尺度定律（Scaling Law）](https://spaces.ac.cn/archives/9607)
 - 2022-11-30 - [用热传导方程来指导自监督学习](https://spaces.ac.cn/archives/9359)
@@ -2043,7 +2043,7 @@
 ### 生物自然
 
 <a id="series-biology-standalone"></a>
-#### 非系列文章
+#### 非系列文章 [返回目录](#目录)
 
 - 2020-12-07 - [【龟鱼记】全陶粒的同程底滤生态缸](https://spaces.ac.cn/archives/7961)
 - 2020-05-18 - [鱼与熊掌兼得：融合检索和生成的SimBERT模型](https://spaces.ac.cn/archives/7427)
@@ -2080,7 +2080,7 @@
 ### 图片摄影
 
 <a id="series-photography-standalone"></a>
-#### 非系列文章
+#### 非系列文章 [返回目录](#目录)
 
 - 2020-07-10 - [强大的NVAE：以后再也不能说VAE生成的图像模糊了](https://spaces.ac.cn/archives/7574)
 - 2018-05-21 - [厨房，菜市场，其实都是武林](https://spaces.ac.cn/archives/5570)
@@ -2155,7 +2155,7 @@
 ### 科普问答与百科
 
 <a id="series-popular-science-standalone"></a>
-#### 非系列文章
+#### 非系列文章 [返回目录](#目录)
 
 - 2026-01-20 - [为什么我们偏爱各向同性？基于最速下降的理解](https://spaces.ac.cn/archives/11549)
 - 2025-12-23 - [为什么DeltaNet要加L2 Normalize？](https://spaces.ac.cn/archives/11486)
@@ -2258,13 +2258,13 @@
 ### 资源与站务
 
 <a id="series-resources-12d8681743"></a>
-#### 语料
+#### 语料 [返回目录](#目录)
 
 - 2017-04-12 - [【语料】百度的中文问答数据集WebQA](https://spaces.ac.cn/archives/4338)
 - 2017-04-24 - [【语料】2500万中文三元组！](https://spaces.ac.cn/archives/4359)
 
 <a id="series-resources-standalone"></a>
-#### 非系列文章
+#### 非系列文章 [返回目录](#目录)
 
 - 2023-03-20 - [《为什么现在的LLM都是Decoder-only的架构？》FAQ](https://spaces.ac.cn/archives/9547)
 - 2020-09-29 - [第1000篇文章](https://spaces.ac.cn/archives/7782)
@@ -2382,7 +2382,7 @@
 ### 阅读写作与随笔
 
 <a id="series-essays-standalone"></a>
-#### 非系列文章
+#### 非系列文章 [返回目录](#目录)
 
 - 2025-04-22 - [智能家居之手搓一套能接入米家的零冷水装置](https://spaces.ac.cn/archives/10869)
 - 2024-09-26 - [利用“熄火保护 + 通断器”实现燃气灶智能关火](https://spaces.ac.cn/archives/10394)
