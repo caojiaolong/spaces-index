@@ -2604,3 +2604,15 @@ uv run python scripts/update_all.py --refresh-summaries --sleep 0.8
 - `enrich_posts.py`：逐篇访问原文页，只提取原站分类、标签和可选小结短摘录，并写入缓存。
 - `classify.py`：根据标题、分类、标签做规则分类，识别系列名与序号，并用系列成员主题众数统一系列主题。
 - `render_markdown.py`：稳定生成 README 和 docs 主题页；README 用于快速浏览直达原文，docs 用于查看分类、标签、系列号、小结摘录等详细元数据。
+
+## Star 趋势
+
+如果这个索引对你有帮助，欢迎 Star 支持，后续会通过 GitHub Actions 持续更新。
+
+<a href="https://www.star-history.com/?repos=caojiaolong%2Fspaces-index&type=timeline&legend=top-left">
+ <picture>
+   <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/chart?repos=caojiaolong/spaces-index&type=timeline&theme=dark&legend=top-left" />
+   <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/chart?repos=caojiaolong/spaces-index&type=timeline&legend=top-left" />
+   <img alt="Star 趋势图" src="https://api.star-history.com/chart?repos=caojiaolong/spaces-index&type=timeline&legend=top-left" />
+ </picture>
+</a>

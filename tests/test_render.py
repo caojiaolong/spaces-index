@@ -62,6 +62,9 @@ def test_readme_contains_topic_links_and_stats():
     assert "## 详细元数据" in readme
     assert readme.index("## 本地运行") > readme.index("## 主题分类")
     assert readme.index("## 更新流程") > readme.index("## 本地运行")
+    assert "## Star 趋势" in readme
+    assert "如果这个索引对你有帮助，欢迎 Star 支持，后续会通过 GitHub Actions 持续更新" in readme
+    assert "api.star-history.com/chart?repos=caojiaolong/spaces-index" in readme
 
 
 def test_topic_page_contains_metadata():
