@@ -2,7 +2,7 @@
 
 [返回主题索引](index.md)
 
-共 123 篇。
+共 124 篇。
 
 <a id="series-generative-models-e48ccca641"></a>
 #### 生成扩散模型漫谈
@@ -282,6 +282,10 @@
 <a id="series-generative-models-standalone"></a>
 #### 非系列文章
 
+- 2026-05-08 - [直接以FID为Loss：从梯度计算到流式训练](https://spaces.ac.cn/archives/11738)
+  - 原站分类：信息时代
+  - 原站标签：矩阵、损失函数、生成模型、梯度
+  - 小结摘录：这篇文章主要从理论上分析了将FID作为生成模型损失函数所面临的困难，以及如何从推导过程中引出对应的克服困难的技巧。 转载到请包括本文地址： https://spaces.ac.cn/archives/11738 更详细的转载事宜请参考： 《科学空间FAQ》
 - 2025-10-08 - [DiVeQ：一种非常简洁的VQ训练方案](https://spaces.ac.cn/archives/11328)
   - 原站分类：信息时代
   - 原站标签：生成模型、编码、梯度、离散化

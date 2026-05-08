@@ -1,5 +1,11 @@
 [
   {
+    "id": "11738",
+    "title": "直接以FID为Loss：从梯度计算到流式训练",
+    "url": "https://spaces.ac.cn/archives/11738",
+    "date": "2026-05-08"
+  },
+  {
     "id": "11736",
     "title": "如何更科学地估计矩阵的谱范数？",
     "url": "https://spaces.ac.cn/archives/11736",

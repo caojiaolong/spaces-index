@@ -8,18 +8,18 @@
 
 这个仓库的目标是把科学空间的所有文章做成一个持续更新的元数据索引：不复制全文，只保存标题、日期、原文链接、原站分类、标签、自动主题和系列信息，并通过 GitHub Actions 定时更新。这样读者可以直接按主题或系列查找文章，跳转回原站阅读，也不用担心索引长期失修。
 
-- 最近更新日期：2026-05-04（按归档中最新文章日期）
-- 文章总数：1312
+- 最近更新日期：2026-05-08（按归档中最新文章日期）
+- 文章总数：1313
 - 版权说明：本项目保存标题、链接、日期、分类、标签、自动主题、系列信息和少量小结短摘录，不镜像、复制或保存文章全文。
 
 ## 目录
 
-- [深度学习基础（119 篇）](#topic-deep-learning)
+- [深度学习基础（120 篇）](#topic-deep-learning)
   - [重新思考学习率与Batch Size（4 篇）](#series-deep-learning-69126a7846)
   - [多任务学习漫谈（3 篇）](#series-deep-learning-0ac9606400)
   - [“让Keras更酷一些！”（7 篇）](#series-deep-learning-e73395bb77)
   - [文本情感分类（4 篇）](#series-deep-learning-4b0540d8f5)
-  - [非系列文章（101 篇）](#series-deep-learning-standalone)
+  - [非系列文章（102 篇）](#series-deep-learning-standalone)
 - [词向量与Embedding（24 篇）](#topic-embeddings)
   - [CoSENT（3 篇）](#series-embeddings-2949022b50)
   - [更别致的词向量模型（6 篇）](#series-embeddings-83ff2143be)
@@ -33,14 +33,14 @@
   - [对齐全量微调！这是我看过最精彩的LoRA改进（2 篇）](#series-transformer-32697fc150)
   - [重温SSM（4 篇）](#series-transformer-7e9346ae49)
   - [非系列文章（106 篇）](#series-transformer-standalone)
-- [生成模型（123 篇）](#topic-generative-models)
+- [生成模型（124 篇）](#topic-generative-models)
   - [生成扩散模型漫谈（31 篇）](#series-generative-models-e48ccca641)
   - [细水长flow（5 篇）](#series-generative-models-9738e76a31)
   - [变分自编码器（8 篇）](#series-generative-models-c26095ce70)
   - [搜出来的文本（4 篇）](#series-generative-models-efbc1f2b0e)
   - [能量视角下的GAN模型（3 篇）](#series-generative-models-cbc622e222)
-  - [非系列文章（72 篇）](#series-generative-models-standalone)
-- [优化与训练（99 篇）](#topic-optimization)
+  - [非系列文章（73 篇）](#series-generative-models-standalone)
+- [优化与训练（100 篇）](#topic-optimization)
   - [基于流式幂迭代的Muon实现（5 篇）](#series-optimization-2adf8edae5)
   - [让炼丹更科学一些（6 篇）](#series-optimization-22f3c62045)
   - [AdamW的Weight RMS的渐近估计（2 篇）](#series-optimization-623aab7f21)
@@ -48,8 +48,8 @@
   - [通过msign来计算奇异值裁剪mclip（2 篇）](#series-optimization-297337ae72)
   - [msign算子的Newton-Schulz迭代（2 篇）](#series-optimization-d27a2576eb)
   - [从动力学角度看优化算法（7 篇）](#series-optimization-4b38446b55)
-  - [非系列文章（70 篇）](#series-optimization-standalone)
-- [数学工具（374 篇）](#topic-math)
+  - [非系列文章（71 篇）](#series-optimization-standalone)
+- [数学工具（375 篇）](#topic-math)
   - [低秩近似之路（5 篇）](#series-math-6689ddf615)
   - [SVD分解（3 篇）](#series-math-6a0e7d7415)
   - [外微分浅谈（7 篇）](#series-math-07dc7181b7)
@@ -70,7 +70,7 @@
   - [自然极值（8 篇）](#series-math-5e3917ad32)
   - [向量（5 篇）](#series-math-fae158475e)
   - [微积分学习（2 篇）](#series-math-d050b16b4d)
-  - [非系列文章（288 篇）](#series-math-standalone)
+  - [非系列文章（289 篇）](#series-math-standalone)
 - [概率统计与信息论（83 篇）](#topic-probability-info)
   - [最小熵原理（6 篇）](#series-probability-info-2e7e2c4698)
   - [非系列文章（77 篇）](#series-probability-info-standalone)
@@ -109,6 +109,7 @@
 
 ## 最近 20 篇文章
 
+- 2026-05-08 - [直接以FID为Loss：从梯度计算到流式训练](https://spaces.ac.cn/archives/11738)
 - 2026-05-04 - [如何更科学地估计矩阵的谱范数？](https://spaces.ac.cn/archives/11736)
 - 2026-04-24 - [MuP之上：4. 坚守参数的稳定性](https://spaces.ac.cn/archives/11729) - [查看系列](#series-transformer-86fdf79074)
 - 2026-04-17 - [基于流式幂迭代的Muon实现：5. 延伸](https://spaces.ac.cn/archives/11719) - [查看系列](#series-optimization-2adf8edae5)
@@ -128,7 +129,6 @@
 - 2026-01-20 - [为什么我们偏爱各向同性？基于最速下降的理解](https://spaces.ac.cn/archives/11549)
 - 2026-01-16 - [让炼丹更科学一些（六）：自上而下的精妙构造](https://spaces.ac.cn/archives/11540) - [查看系列](#series-optimization-22f3c62045)
 - 2026-01-09 - [让炼丹更科学一些（五）：基于梯度精调学习率](https://spaces.ac.cn/archives/11530) - [查看系列](#series-optimization-22f3c62045)
-- 2025-12-26 - [让炼丹更科学一些（四）：新恒等式，新学习率](https://spaces.ac.cn/archives/11494) - [查看系列](#series-optimization-22f3c62045)
 
 ## 主题分类
 
@@ -172,6 +172,7 @@
 <a id="series-deep-learning-standalone"></a>
 #### 非系列文章 [返回目录](#目录)
 
+- 2026-05-08 - [直接以FID为Loss：从梯度计算到流式训练](https://spaces.ac.cn/archives/11738)
 - 2026-03-19 - [Attention Residuals 回忆录](https://spaces.ac.cn/archives/11664)
 - 2025-08-16 - [ReLU/GeLU/Swish的一个恒等式](https://spaces.ac.cn/archives/11233)
 - 2025-03-24 - [高阶MuP：更简明但更高明的谱条件缩放](https://spaces.ac.cn/archives/10795)
@@ -572,6 +573,7 @@
 <a id="series-generative-models-standalone"></a>
 #### 非系列文章 [返回目录](#目录)
 
+- 2026-05-08 - [直接以FID为Loss：从梯度计算到流式训练](https://spaces.ac.cn/archives/11738)
 - 2025-10-08 - [DiVeQ：一种非常简洁的VQ训练方案](https://spaces.ac.cn/archives/11328)
 - 2025-10-05 - [为什么线性注意力要加Short Conv？](https://spaces.ac.cn/archives/11320)
 - 2025-06-20 - [线性注意力简史：从模仿、创新到反哺](https://spaces.ac.cn/archives/11033)
@@ -708,6 +710,7 @@
 <a id="series-optimization-standalone"></a>
 #### 非系列文章 [返回目录](#目录)
 
+- 2026-05-08 - [直接以FID为Loss：从梯度计算到流式训练](https://spaces.ac.cn/archives/11738)
 - 2026-02-04 - [Adam优化器的最优超参数是β1=β2 ？](https://spaces.ac.cn/archives/11593)
 - 2026-01-20 - [为什么我们偏爱各向同性？基于最速下降的理解](https://spaces.ac.cn/archives/11549)
 - 2025-12-05 - [滑动平均视角下的权重衰减和学习率](https://spaces.ac.cn/archives/11459)
@@ -951,6 +954,7 @@
 <a id="series-math-standalone"></a>
 #### 非系列文章 [返回目录](#目录)
 
+- 2026-05-08 - [直接以FID为Loss：从梯度计算到流式训练](https://spaces.ac.cn/archives/11738)
 - 2026-05-04 - [如何更科学地估计矩阵的谱范数？](https://spaces.ac.cn/archives/11736)
 - 2026-03-31 - [中位数（Median）简介](https://spaces.ac.cn/archives/11693)
 - 2026-01-26 - [DeltaNet的核心逆矩阵的元素总是在\[-1, 1\]内](https://spaces.ac.cn/archives/11563)

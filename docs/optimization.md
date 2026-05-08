@@ -2,7 +2,7 @@
 
 [返回主题索引](index.md)
 
-共 99 篇。
+共 100 篇。
 
 <a id="series-optimization-2adf8edae5"></a>
 #### 基于流式幂迭代的Muon实现
@@ -180,6 +180,10 @@
 <a id="series-optimization-standalone"></a>
 #### 非系列文章
 
+- 2026-05-08 - [直接以FID为Loss：从梯度计算到流式训练](https://spaces.ac.cn/archives/11738)
+  - 原站分类：信息时代
+  - 原站标签：矩阵、损失函数、生成模型、梯度
+  - 小结摘录：这篇文章主要从理论上分析了将FID作为生成模型损失函数所面临的困难，以及如何从推导过程中引出对应的克服困难的技巧。 转载到请包括本文地址： https://spaces.ac.cn/archives/11738 更详细的转载事宜请参考： 《科学空间FAQ》
 - 2026-02-04 - [Adam优化器的最优超参数是β1=β2 ？](https://spaces.ac.cn/archives/11593)
   - 原站分类：信息时代
   - 原站标签：最优、梯度、优化器、最速下降

@@ -1,15 +1,15 @@
 # 主题索引
 
-文章总数：1312
+文章总数：1313
 
 | 主题 | 数量 | 页面 |
 | --- | ---: | --- |
-| 深度学习基础 | 119 | [deep-learning.md](deep-learning.md) |
+| 深度学习基础 | 120 | [deep-learning.md](deep-learning.md) |
 | 词向量与Embedding | 24 | [embeddings.md](embeddings.md) |
 | 大模型与Transformer | 147 | [transformer.md](transformer.md) |
-| 生成模型 | 123 | [generative-models.md](generative-models.md) |
-| 优化与训练 | 99 | [optimization.md](optimization.md) |
-| 数学工具 | 374 | [math.md](math.md) |
+| 生成模型 | 124 | [generative-models.md](generative-models.md) |
+| 优化与训练 | 100 | [optimization.md](optimization.md) |
+| 数学工具 | 375 | [math.md](math.md) |
 | 概率统计与信息论 | 83 | [probability-info.md](probability-info.md) |
 | 几何与方程 | 106 | [geometry-equations.md](geometry-equations.md) |
 | NLP与信息抽取 | 92 | [nlp.md](nlp.md) |
