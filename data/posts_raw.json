@@ -1,5 +1,11 @@
 [
   {
+    "id": "11750",
+    "title": "DeepSeek V4的tid2eid是怎么来的？",
+    "url": "https://spaces.ac.cn/archives/11750",
+    "date": "2026-05-15"
+  },
+  {
     "id": "11738",
     "title": "直接以FID为Loss：从梯度计算到流式训练",
     "url": "https://spaces.ac.cn/archives/11738",

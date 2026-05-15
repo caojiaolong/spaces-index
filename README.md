@@ -8,8 +8,8 @@
 
 这个仓库的目标是把科学空间的所有文章做成一个持续更新的元数据索引：不复制全文，只保存标题、日期、原文链接、原站分类、标签、自动主题和系列信息，并通过 GitHub Actions 定时更新。这样读者可以直接按主题或系列查找文章，跳转回原站阅读，也不用担心索引长期失修。
 
-- 最近更新日期：2026-05-08（按归档中最新文章日期）
-- 文章总数：1313
+- 最近更新日期：2026-05-15（按归档中最新文章日期）
+- 文章总数：1314
 - 版权说明：本项目保存标题、链接、日期、分类、标签、自动主题、系列信息和少量小结短摘录，不镜像、复制或保存文章全文。
 
 ## 目录
@@ -25,14 +25,14 @@
   - [更别致的词向量模型（6 篇）](#series-embeddings-83ff2143be)
   - [不可思议的Word2Vec（6 篇）](#series-embeddings-5025fd40f6)
   - [非系列文章（9 篇）](#series-embeddings-standalone)
-- [大模型与Transformer（147 篇）](#topic-transformer)
+- [大模型与Transformer（148 篇）](#topic-transformer)
   - [MuP之上（4 篇）](#series-transformer-86fdf79074)
   - [MoE环游记（7 篇）](#series-transformer-f5569856ba)
   - [Transformer升级之路（21 篇）](#series-transformer-34e65637fd)
   - [“闭门造车”之多模态思路浅谈（3 篇）](#series-transformer-2e7d329847)
   - [对齐全量微调！这是我看过最精彩的LoRA改进（2 篇）](#series-transformer-32697fc150)
   - [重温SSM（4 篇）](#series-transformer-7e9346ae49)
-  - [非系列文章（106 篇）](#series-transformer-standalone)
+  - [非系列文章（107 篇）](#series-transformer-standalone)
 - [生成模型（124 篇）](#topic-generative-models)
   - [生成扩散模型漫谈（31 篇）](#series-generative-models-e48ccca641)
   - [细水长flow（5 篇）](#series-generative-models-9738e76a31)
@@ -109,6 +109,7 @@
 
 ## 最近 20 篇文章
 
+- 2026-05-15 - [DeepSeek V4的tid2eid是怎么来的？](https://spaces.ac.cn/archives/11750)
 - 2026-05-08 - [直接以FID为Loss：从梯度计算到流式训练](https://spaces.ac.cn/archives/11738)
 - 2026-05-04 - [如何更科学地估计矩阵的谱范数？](https://spaces.ac.cn/archives/11736)
 - 2026-04-24 - [MuP之上：4. 坚守参数的稳定性](https://spaces.ac.cn/archives/11729) - [查看系列](#series-transformer-86fdf79074)
@@ -128,7 +129,6 @@
 - 2026-01-26 - [DeltaNet的核心逆矩阵的元素总是在\[-1, 1\]内](https://spaces.ac.cn/archives/11563)
 - 2026-01-20 - [为什么我们偏爱各向同性？基于最速下降的理解](https://spaces.ac.cn/archives/11549)
 - 2026-01-16 - [让炼丹更科学一些（六）：自上而下的精妙构造](https://spaces.ac.cn/archives/11540) - [查看系列](#series-optimization-22f3c62045)
-- 2026-01-09 - [让炼丹更科学一些（五）：基于梯度精调学习率](https://spaces.ac.cn/archives/11530) - [查看系列](#series-optimization-22f3c62045)
 
 ## 主题分类
 
@@ -389,6 +389,7 @@
 <a id="series-transformer-standalone"></a>
 #### 非系列文章 [返回目录](#目录)
 
+- 2026-05-15 - [DeepSeek V4的tid2eid是怎么来的？](https://spaces.ac.cn/archives/11750)
 - 2026-03-19 - [Attention Residuals 回忆录](https://spaces.ac.cn/archives/11664)
 - 2026-01-26 - [DeltaNet的核心逆矩阵的元素总是在\[-1, 1\]内](https://spaces.ac.cn/archives/11563)
 - 2025-12-23 - [为什么DeltaNet要加L2 Normalize？](https://spaces.ac.cn/archives/11486)

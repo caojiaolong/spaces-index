@@ -1,5 +1,19 @@
 [
   {
+    "id": "11750",
+    "title": "DeepSeek V4的tid2eid是怎么来的？",
+    "url": "https://spaces.ac.cn/archives/11750",
+    "date": "2026-05-15",
+    "source_category": "信息时代",
+    "source_tags": [
+      "模型",
+      "函数",
+      "分析",
+      "moe"
+    ],
+    "source_summary": "本文简单梳理了DeepSeek V4中的Hash Routing的基本思想，并重点探讨了它的tid2eid映射表的构造原理。 转载到请包括本文地址： https://spaces.ac.cn/archives/11750 更详细的转载事宜请参考： 《科学空间FAQ》"
+  },
+  {
     "id": "11738",
     "title": "直接以FID为Loss：从梯度计算到流式训练",
     "url": "https://spaces.ac.cn/archives/11738",

@@ -2,7 +2,7 @@
 
 [返回主题索引](index.md)
 
-共 147 篇。
+共 148 篇。
 
 <a id="series-transformer-86fdf79074"></a>
 #### MuP之上
@@ -236,6 +236,10 @@
 <a id="series-transformer-standalone"></a>
 #### 非系列文章
 
+- 2026-05-15 - [DeepSeek V4的tid2eid是怎么来的？](https://spaces.ac.cn/archives/11750)
+  - 原站分类：信息时代
+  - 原站标签：模型、函数、分析、moe
+  - 小结摘录：本文简单梳理了DeepSeek V4中的Hash Routing的基本思想，并重点探讨了它的tid2eid映射表的构造原理。 转载到请包括本文地址： https://spaces.ac.cn/archives/11750 更详细的转载事宜请参考： 《科学空间FAQ》
 - 2026-03-19 - [Attention Residuals 回忆录](https://spaces.ac.cn/archives/11664)
   - 原站分类：信息时代
   - 原站标签：模型、优化、attention、尺度定律、深度
