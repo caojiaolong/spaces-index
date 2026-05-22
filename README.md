@@ -8,8 +8,8 @@
 
 这个仓库的目标是把科学空间的所有文章做成一个持续更新的元数据索引：不复制全文，只保存标题、日期、原文链接、原站分类、标签、自动主题和系列信息，并通过 GitHub Actions 定时更新。这样读者可以直接按主题或系列查找文章，跳转回原站阅读，也不用担心索引长期失修。
 
-- 最近更新日期：2026-05-15（按归档中最新文章日期）
-- 文章总数：1314
+- 最近更新日期：2026-05-22（按归档中最新文章日期）
+- 文章总数：1315
 - 版权说明：本项目保存标题、链接、日期、分类、标签、自动主题、系列信息和少量小结短摘录，不镜像、复制或保存文章全文。
 
 ## 目录
@@ -25,9 +25,9 @@
   - [更别致的词向量模型（6 篇）](#series-embeddings-83ff2143be)
   - [不可思议的Word2Vec（6 篇）](#series-embeddings-5025fd40f6)
   - [非系列文章（9 篇）](#series-embeddings-standalone)
-- [大模型与Transformer（148 篇）](#topic-transformer)
+- [大模型与Transformer（149 篇）](#topic-transformer)
+  - [MoE环游记（8 篇）](#series-transformer-f5569856ba)
   - [MuP之上（4 篇）](#series-transformer-86fdf79074)
-  - [MoE环游记（7 篇）](#series-transformer-f5569856ba)
   - [Transformer升级之路（21 篇）](#series-transformer-34e65637fd)
   - [“闭门造车”之多模态思路浅谈（3 篇）](#series-transformer-2e7d329847)
   - [对齐全量微调！这是我看过最精彩的LoRA改进（2 篇）](#series-transformer-32697fc150)
@@ -109,6 +109,7 @@
 
 ## 最近 20 篇文章
 
+- 2026-05-22 - [MoE环游记：8、强制序列级均衡](https://spaces.ac.cn/archives/11760) - [查看系列](#series-transformer-f5569856ba)
 - 2026-05-15 - [DeepSeek V4的tid2eid是怎么来的？](https://spaces.ac.cn/archives/11750)
 - 2026-05-08 - [直接以FID为Loss：从梯度计算到流式训练](https://spaces.ac.cn/archives/11738)
 - 2026-05-04 - [如何更科学地估计矩阵的谱范数？](https://spaces.ac.cn/archives/11736)
@@ -128,7 +129,6 @@
 - 2026-01-28 - [一行代码将arXiv论文翻译成中文版](https://spaces.ac.cn/archives/11578)
 - 2026-01-26 - [DeltaNet的核心逆矩阵的元素总是在\[-1, 1\]内](https://spaces.ac.cn/archives/11563)
 - 2026-01-20 - [为什么我们偏爱各向同性？基于最速下降的理解](https://spaces.ac.cn/archives/11549)
-- 2026-01-16 - [让炼丹更科学一些（六）：自上而下的精妙构造](https://spaces.ac.cn/archives/11540) - [查看系列](#series-optimization-22f3c62045)
 
 ## 主题分类
 
@@ -321,14 +321,6 @@
 <a id="topic-transformer"></a>
 ### 大模型与Transformer
 
-<a id="series-transformer-86fdf79074"></a>
-#### MuP之上 [返回目录](#目录)
-
-- 2025-10-21 - [MuP之上：1. 好模型的三个特征](https://spaces.ac.cn/archives/11340)
-- 2026-02-15 - [MuP之上：2. 线性层与最速下降](https://spaces.ac.cn/archives/11605)
-- 2026-03-02 - [MuP之上：3. 特殊情况特殊处理](https://spaces.ac.cn/archives/11647)
-- 2026-04-24 - [MuP之上：4. 坚守参数的稳定性](https://spaces.ac.cn/archives/11729)
-
 <a id="series-transformer-f5569856ba"></a>
 #### MoE环游记 [返回目录](#目录)
 
@@ -339,6 +331,15 @@
 - 2025-05-16 - [MoE环游记：5、均匀分布的反思](https://spaces.ac.cn/archives/10945)
 - 2026-02-22 - [MoE环游记：6、最优分配促均衡](https://spaces.ac.cn/archives/11619)
 - 2026-02-23 - [MoE环游记：7、动态激活极简解](https://spaces.ac.cn/archives/11626)
+- 2026-05-22 - [MoE环游记：8、强制序列级均衡](https://spaces.ac.cn/archives/11760)
+
+<a id="series-transformer-86fdf79074"></a>
+#### MuP之上 [返回目录](#目录)
+
+- 2025-10-21 - [MuP之上：1. 好模型的三个特征](https://spaces.ac.cn/archives/11340)
+- 2026-02-15 - [MuP之上：2. 线性层与最速下降](https://spaces.ac.cn/archives/11605)
+- 2026-03-02 - [MuP之上：3. 特殊情况特殊处理](https://spaces.ac.cn/archives/11647)
+- 2026-04-24 - [MuP之上：4. 坚守参数的稳定性](https://spaces.ac.cn/archives/11729)
 
 <a id="series-transformer-34e65637fd"></a>
 #### Transformer升级之路 [返回目录](#目录)

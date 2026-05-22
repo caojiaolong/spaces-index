@@ -2,31 +2,7 @@
 
 [返回主题索引](index.md)
 
-共 148 篇。
-
-<a id="series-transformer-86fdf79074"></a>
-#### MuP之上
-
-- 2025-10-21 - [MuP之上：1. 好模型的三个特征](https://spaces.ac.cn/archives/11340)
-  - 原站分类：信息时代
-  - 原站标签：优化、优化器、尺度定律、MuP
-  - 系列：MuP之上 #1
-  - 系列主题：大模型与Transformer
-- 2026-02-15 - [MuP之上：2. 线性层与最速下降](https://spaces.ac.cn/archives/11605)
-  - 原站分类：信息时代
-  - 原站标签：矩阵、线性、优化器、muon、MuP
-  - 系列：MuP之上 #2
-  - 系列主题：大模型与Transformer
-- 2026-03-02 - [MuP之上：3. 特殊情况特殊处理](https://spaces.ac.cn/archives/11647)
-  - 原站分类：信息时代
-  - 原站标签：不等式、矩阵、线性、优化器、MuP
-  - 系列：MuP之上 #3
-  - 系列主题：大模型与Transformer
-- 2026-04-24 - [MuP之上：4. 坚守参数的稳定性](https://spaces.ac.cn/archives/11729)
-  - 原站分类：信息时代
-  - 原站标签：矩阵、稳定性、优化器、muon、MuP
-  - 系列：MuP之上 #4
-  - 系列主题：大模型与Transformer
+共 149 篇。
 
 <a id="series-transformer-f5569856ba"></a>
 #### MoE环游记
@@ -65,6 +41,36 @@
   - 原站分类：数学研究
   - 原站标签：线性、对偶、优化、moe、动态
   - 系列：MoE环游记 #7
+  - 系列主题：大模型与Transformer
+- 2026-05-22 - [MoE环游记：8、强制序列级均衡](https://spaces.ac.cn/archives/11760)
+  - 原站分类：信息时代
+  - 原站标签：统计、损失函数、RNN、moe
+  - 系列：MoE环游记 #8
+  - 系列主题：大模型与Transformer
+  - 小结摘录：本文围绕“如何用Loss-Free方式实现序列级负载均衡”展开，从原本的Quantile Balancing（QB）出发，逐步推导出了一种名为Moving Quantile Balancing（MQB）方法，成功实现了这一目的。但序列级均衡是否真的必要、要做到什么程度，仍然是一个开放的问题。 转载到请包括本文地址： https://spaces.ac.cn/archives/11760 更详细的转载事宜请参考： 《科学空间FAQ》
+
+<a id="series-transformer-86fdf79074"></a>
+#### MuP之上
+
+- 2025-10-21 - [MuP之上：1. 好模型的三个特征](https://spaces.ac.cn/archives/11340)
+  - 原站分类：信息时代
+  - 原站标签：优化、优化器、尺度定律、MuP
+  - 系列：MuP之上 #1
+  - 系列主题：大模型与Transformer
+- 2026-02-15 - [MuP之上：2. 线性层与最速下降](https://spaces.ac.cn/archives/11605)
+  - 原站分类：信息时代
+  - 原站标签：矩阵、线性、优化器、muon、MuP
+  - 系列：MuP之上 #2
+  - 系列主题：大模型与Transformer
+- 2026-03-02 - [MuP之上：3. 特殊情况特殊处理](https://spaces.ac.cn/archives/11647)
+  - 原站分类：信息时代
+  - 原站标签：不等式、矩阵、线性、优化器、MuP
+  - 系列：MuP之上 #3
+  - 系列主题：大模型与Transformer
+- 2026-04-24 - [MuP之上：4. 坚守参数的稳定性](https://spaces.ac.cn/archives/11729)
+  - 原站分类：信息时代
+  - 原站标签：矩阵、稳定性、优化器、muon、MuP
+  - 系列：MuP之上 #4
   - 系列主题：大模型与Transformer
 
 <a id="series-transformer-34e65637fd"></a>
