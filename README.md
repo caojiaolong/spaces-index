@@ -8,8 +8,8 @@
 
 这个仓库的目标是把科学空间的所有文章做成一个持续更新的元数据索引：不复制全文，只保存标题、日期、原文链接、原站分类、标签、自动主题和系列信息，并通过 GitHub Actions 定时更新。这样读者可以直接按主题或系列查找文章，跳转回原站阅读，也不用担心索引长期失修。
 
-- 最近更新日期：2026-05-22（按归档中最新文章日期）
-- 文章总数：1315
+- 最近更新日期：2026-05-29（按归档中最新文章日期）
+- 文章总数：1316
 - 版权说明：本项目保存标题、链接、日期、分类、标签、自动主题、系列信息和少量小结短摘录，不镜像、复制或保存文章全文。
 
 ## 目录
@@ -49,7 +49,7 @@
   - [msign算子的Newton-Schulz迭代（2 篇）](#series-optimization-d27a2576eb)
   - [从动力学角度看优化算法（7 篇）](#series-optimization-4b38446b55)
   - [非系列文章（71 篇）](#series-optimization-standalone)
-- [数学工具（375 篇）](#topic-math)
+- [数学工具（376 篇）](#topic-math)
   - [低秩近似之路（5 篇）](#series-math-6689ddf615)
   - [SVD分解（3 篇）](#series-math-6a0e7d7415)
   - [外微分浅谈（7 篇）](#series-math-07dc7181b7)
@@ -70,10 +70,10 @@
   - [自然极值（8 篇）](#series-math-5e3917ad32)
   - [向量（5 篇）](#series-math-fae158475e)
   - [微积分学习（2 篇）](#series-math-d050b16b4d)
-  - [非系列文章（289 篇）](#series-math-standalone)
-- [概率统计与信息论（83 篇）](#topic-probability-info)
+  - [非系列文章（290 篇）](#series-math-standalone)
+- [概率统计与信息论（84 篇）](#topic-probability-info)
   - [最小熵原理（6 篇）](#series-probability-info-2e7e2c4698)
-  - [非系列文章（77 篇）](#series-probability-info-standalone)
+  - [非系列文章（78 篇）](#series-probability-info-standalone)
 - [几何与方程（106 篇）](#topic-geometry-equations)
   - [理解黎曼几何（8 篇）](#series-geometry-equations-41868e210e)
   - [非系列文章（98 篇）](#series-geometry-equations-standalone)
@@ -109,6 +109,7 @@
 
 ## 最近 20 篇文章
 
+- 2026-05-29 - [矩阵参数的奇异值熵越高越好吗？](https://spaces.ac.cn/archives/11767)
 - 2026-05-22 - [MoE环游记：8、强制序列级均衡](https://spaces.ac.cn/archives/11760) - [查看系列](#series-transformer-f5569856ba)
 - 2026-05-15 - [DeepSeek V4的tid2eid是怎么来的？](https://spaces.ac.cn/archives/11750)
 - 2026-05-08 - [直接以FID为Loss：从梯度计算到流式训练](https://spaces.ac.cn/archives/11738)
@@ -128,7 +129,6 @@
 - 2026-02-04 - [Adam优化器的最优超参数是β1=β2 ？](https://spaces.ac.cn/archives/11593)
 - 2026-01-28 - [一行代码将arXiv论文翻译成中文版](https://spaces.ac.cn/archives/11578)
 - 2026-01-26 - [DeltaNet的核心逆矩阵的元素总是在\[-1, 1\]内](https://spaces.ac.cn/archives/11563)
-- 2026-01-20 - [为什么我们偏爱各向同性？基于最速下降的理解](https://spaces.ac.cn/archives/11549)
 
 ## 主题分类
 
@@ -956,6 +956,7 @@
 <a id="series-math-standalone"></a>
 #### 非系列文章 [返回目录](#目录)
 
+- 2026-05-29 - [矩阵参数的奇异值熵越高越好吗？](https://spaces.ac.cn/archives/11767)
 - 2026-05-08 - [直接以FID为Loss：从梯度计算到流式训练](https://spaces.ac.cn/archives/11738)
 - 2026-05-04 - [如何更科学地估计矩阵的谱范数？](https://spaces.ac.cn/archives/11736)
 - 2026-03-31 - [中位数（Median）简介](https://spaces.ac.cn/archives/11693)
@@ -1262,6 +1263,7 @@
 <a id="series-probability-info-standalone"></a>
 #### 非系列文章 [返回目录](#目录)
 
+- 2026-05-29 - [矩阵参数的奇异值熵越高越好吗？](https://spaces.ac.cn/archives/11767)
 - 2026-03-31 - [中位数（Median）简介](https://spaces.ac.cn/archives/11693)
 - 2025-11-06 - [n个正态随机数的最大值的渐近估计](https://spaces.ac.cn/archives/11390)
 - 2025-10-12 - [随机矩阵的谱范数的快速估计](https://spaces.ac.cn/archives/11335)
