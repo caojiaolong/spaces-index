@@ -8,8 +8,8 @@
 
 这个仓库的目标是把科学空间的所有文章做成一个持续更新的元数据索引：不复制全文，只保存标题、日期、原文链接、原站分类、标签、自动主题和系列信息，并通过 GitHub Actions 定时更新。这样读者可以直接按主题或系列查找文章，跳转回原站阅读，也不用担心索引长期失修。
 
-- 最近更新日期：2026-05-29（按归档中最新文章日期）
-- 文章总数：1316
+- 最近更新日期：2026-06-03（按归档中最新文章日期）
+- 文章总数：1317
 - 版权说明：本项目保存标题、链接、日期、分类、标签、自动主题、系列信息和少量小结短摘录，不镜像、复制或保存文章全文。
 
 ## 目录
@@ -25,14 +25,14 @@
   - [更别致的词向量模型（6 篇）](#series-embeddings-83ff2143be)
   - [不可思议的Word2Vec（6 篇）](#series-embeddings-5025fd40f6)
   - [非系列文章（9 篇）](#series-embeddings-standalone)
-- [大模型与Transformer（149 篇）](#topic-transformer)
+- [大模型与Transformer（150 篇）](#topic-transformer)
   - [MoE环游记（8 篇）](#series-transformer-f5569856ba)
   - [MuP之上（4 篇）](#series-transformer-86fdf79074)
   - [Transformer升级之路（21 篇）](#series-transformer-34e65637fd)
   - [“闭门造车”之多模态思路浅谈（3 篇）](#series-transformer-2e7d329847)
   - [对齐全量微调！这是我看过最精彩的LoRA改进（2 篇）](#series-transformer-32697fc150)
   - [重温SSM（4 篇）](#series-transformer-7e9346ae49)
-  - [非系列文章（107 篇）](#series-transformer-standalone)
+  - [非系列文章（108 篇）](#series-transformer-standalone)
 - [生成模型（124 篇）](#topic-generative-models)
   - [生成扩散模型漫谈（31 篇）](#series-generative-models-e48ccca641)
   - [细水长flow（5 篇）](#series-generative-models-9738e76a31)
@@ -40,7 +40,7 @@
   - [搜出来的文本（4 篇）](#series-generative-models-efbc1f2b0e)
   - [能量视角下的GAN模型（3 篇）](#series-generative-models-cbc622e222)
   - [非系列文章（73 篇）](#series-generative-models-standalone)
-- [优化与训练（100 篇）](#topic-optimization)
+- [优化与训练（101 篇）](#topic-optimization)
   - [基于流式幂迭代的Muon实现（5 篇）](#series-optimization-2adf8edae5)
   - [让炼丹更科学一些（6 篇）](#series-optimization-22f3c62045)
   - [AdamW的Weight RMS的渐近估计（2 篇）](#series-optimization-623aab7f21)
@@ -48,7 +48,7 @@
   - [通过msign来计算奇异值裁剪mclip（2 篇）](#series-optimization-297337ae72)
   - [msign算子的Newton-Schulz迭代（2 篇）](#series-optimization-d27a2576eb)
   - [从动力学角度看优化算法（7 篇）](#series-optimization-4b38446b55)
-  - [非系列文章（71 篇）](#series-optimization-standalone)
+  - [非系列文章（72 篇）](#series-optimization-standalone)
 - [数学工具（376 篇）](#topic-math)
   - [低秩近似之路（5 篇）](#series-math-6689ddf615)
   - [SVD分解（3 篇）](#series-math-6a0e7d7415)
@@ -96,8 +96,8 @@
   - [非系列文章（30 篇）](#series-biology-standalone)
 - [图片摄影（68 篇）](#topic-photography)
   - [非系列文章（68 篇）](#series-photography-standalone)
-- [科普问答与百科（96 篇）](#topic-popular-science)
-  - [非系列文章（96 篇）](#series-popular-science-standalone)
+- [科普问答与百科（97 篇）](#topic-popular-science)
+  - [非系列文章（97 篇）](#series-popular-science-standalone)
 - [资源与站务（113 篇）](#topic-resources)
   - [语料（2 篇）](#series-resources-12d8681743)
   - [非系列文章（111 篇）](#series-resources-standalone)
@@ -109,6 +109,7 @@
 
 ## 最近 20 篇文章
 
+- 2026-06-03 - [为什么官方版Muon比MuP版多出一个max(1, ⋅)？](https://spaces.ac.cn/archives/11772)
 - 2026-05-29 - [矩阵参数的奇异值熵越高越好吗？](https://spaces.ac.cn/archives/11767)
 - 2026-05-22 - [MoE环游记：8、强制序列级均衡](https://spaces.ac.cn/archives/11760) - [查看系列](#series-transformer-f5569856ba)
 - 2026-05-15 - [DeepSeek V4的tid2eid是怎么来的？](https://spaces.ac.cn/archives/11750)
@@ -128,7 +129,6 @@
 - 2026-02-15 - [MuP之上：2. 线性层与最速下降](https://spaces.ac.cn/archives/11605) - [查看系列](#series-transformer-86fdf79074)
 - 2026-02-04 - [Adam优化器的最优超参数是β1=β2 ？](https://spaces.ac.cn/archives/11593)
 - 2026-01-28 - [一行代码将arXiv论文翻译成中文版](https://spaces.ac.cn/archives/11578)
-- 2026-01-26 - [DeltaNet的核心逆矩阵的元素总是在\[-1, 1\]内](https://spaces.ac.cn/archives/11563)
 
 ## 主题分类
 
@@ -390,6 +390,7 @@
 <a id="series-transformer-standalone"></a>
 #### 非系列文章 [返回目录](#目录)
 
+- 2026-06-03 - [为什么官方版Muon比MuP版多出一个max(1, ⋅)？](https://spaces.ac.cn/archives/11772)
 - 2026-05-15 - [DeepSeek V4的tid2eid是怎么来的？](https://spaces.ac.cn/archives/11750)
 - 2026-03-19 - [Attention Residuals 回忆录](https://spaces.ac.cn/archives/11664)
 - 2026-01-26 - [DeltaNet的核心逆矩阵的元素总是在\[-1, 1\]内](https://spaces.ac.cn/archives/11563)
@@ -712,6 +713,7 @@
 <a id="series-optimization-standalone"></a>
 #### 非系列文章 [返回目录](#目录)
 
+- 2026-06-03 - [为什么官方版Muon比MuP版多出一个max(1, ⋅)？](https://spaces.ac.cn/archives/11772)
 - 2026-05-08 - [直接以FID为Loss：从梯度计算到流式训练](https://spaces.ac.cn/archives/11738)
 - 2026-02-04 - [Adam优化器的最优超参数是β1=β2 ？](https://spaces.ac.cn/archives/11593)
 - 2026-01-20 - [为什么我们偏爱各向同性？基于最速下降的理解](https://spaces.ac.cn/archives/11549)
@@ -2165,6 +2167,7 @@
 <a id="series-popular-science-standalone"></a>
 #### 非系列文章 [返回目录](#目录)
 
+- 2026-06-03 - [为什么官方版Muon比MuP版多出一个max(1, ⋅)？](https://spaces.ac.cn/archives/11772)
 - 2026-01-20 - [为什么我们偏爱各向同性？基于最速下降的理解](https://spaces.ac.cn/archives/11549)
 - 2025-12-23 - [为什么DeltaNet要加L2 Normalize？](https://spaces.ac.cn/archives/11486)
 - 2025-10-05 - [为什么线性注意力要加Short Conv？](https://spaces.ac.cn/archives/11320)

@@ -2,11 +2,15 @@
 
 [返回主题索引](index.md)
 
-共 96 篇。
+共 97 篇。
 
 <a id="series-popular-science-standalone"></a>
 #### 非系列文章
 
+- 2026-06-03 - [为什么官方版Muon比MuP版多出一个max(1, ⋅)？](https://spaces.ac.cn/archives/11772)
+  - 原站分类：信息时代
+  - 原站标签：学习率、优化器、muon、MuP
+  - 小结摘录：本文主要从“特征增量”均匀性的角度解释了KellerJordan版中$\\max(1,\\cdot)$的来源。 转载到请包括本文地址： https://spaces.ac.cn/archives/11772 更详细的转载事宜请参考： 《科学空间FAQ》
 - 2026-01-20 - [为什么我们偏爱各向同性？基于最速下降的理解](https://spaces.ac.cn/archives/11549)
   - 原站分类：数学研究
   - 原站标签：几何、梯度、sgd、muon

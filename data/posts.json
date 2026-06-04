@@ -1,5 +1,19 @@
 [
   {
+    "id": "11772",
+    "title": "为什么官方版Muon比MuP版多出一个max(1, ⋅)？",
+    "url": "https://spaces.ac.cn/archives/11772",
+    "date": "2026-06-03",
+    "source_category": "信息时代",
+    "source_tags": [
+      "学习率",
+      "优化器",
+      "muon",
+      "MuP"
+    ],
+    "source_summary": "本文主要从“特征增量”均匀性的角度解释了KellerJordan版中$\\max(1,\\cdot)$的来源。 转载到请包括本文地址： https://spaces.ac.cn/archives/11772 更详细的转载事宜请参考： 《科学空间FAQ》"
+  },
+  {
     "id": "11767",
     "title": "矩阵参数的奇异值熵越高越好吗？",
     "url": "https://spaces.ac.cn/archives/11767",

@@ -2,7 +2,7 @@
 
 [返回主题索引](index.md)
 
-共 100 篇。
+共 101 篇。
 
 <a id="series-optimization-2adf8edae5"></a>
 #### 基于流式幂迭代的Muon实现
@@ -180,6 +180,10 @@
 <a id="series-optimization-standalone"></a>
 #### 非系列文章
 
+- 2026-06-03 - [为什么官方版Muon比MuP版多出一个max(1, ⋅)？](https://spaces.ac.cn/archives/11772)
+  - 原站分类：信息时代
+  - 原站标签：学习率、优化器、muon、MuP
+  - 小结摘录：本文主要从“特征增量”均匀性的角度解释了KellerJordan版中$\\max(1,\\cdot)$的来源。 转载到请包括本文地址： https://spaces.ac.cn/archives/11772 更详细的转载事宜请参考： 《科学空间FAQ》
 - 2026-05-08 - [直接以FID为Loss：从梯度计算到流式训练](https://spaces.ac.cn/archives/11738)
   - 原站分类：信息时代
   - 原站标签：矩阵、损失函数、生成模型、梯度
