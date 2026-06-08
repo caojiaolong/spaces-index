@@ -1,5 +1,19 @@
 [
   {
+    "id": "11777",
+    "title": "流形上的最速下降：6. Muon + 双旋转",
+    "url": "https://spaces.ac.cn/archives/11777",
+    "date": "2026-06-08",
+    "source_category": "数学研究",
+    "source_tags": [
+      "优化器",
+      "muon",
+      "约束",
+      "最速下降"
+    ],
+    "source_summary": "本文提出了MuonR，一种将更新形式约束为左右旋转矩阵的Muon变体，它能够保持矩阵的奇异值分布不变，是一种简洁的维持训练稳定性的训练方案。 转载到请包括本文地址： https://spaces.ac.cn/archives/11777 更详细的转载事宜请参考： 《科学空间FAQ》"
+  },
+  {
     "id": "11772",
     "title": "为什么官方版Muon比MuP版多出一个max(1, ⋅)？",
     "url": "https://spaces.ac.cn/archives/11772",

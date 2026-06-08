@@ -8,8 +8,8 @@
 
 这个仓库的目标是把科学空间的所有文章做成一个持续更新的元数据索引：不复制全文，只保存标题、日期、原文链接、原站分类、标签、自动主题和系列信息，并通过 GitHub Actions 定时更新。这样读者可以直接按主题或系列查找文章，跳转回原站阅读，也不用担心索引长期失修。
 
-- 最近更新日期：2026-06-03（按归档中最新文章日期）
-- 文章总数：1317
+- 最近更新日期：2026-06-08（按归档中最新文章日期）
+- 文章总数：1318
 - 版权说明：本项目保存标题、链接、日期、分类、标签、自动主题、系列信息和少量小结短摘录，不镜像、复制或保存文章全文。
 
 ## 目录
@@ -40,11 +40,11 @@
   - [搜出来的文本（4 篇）](#series-generative-models-efbc1f2b0e)
   - [能量视角下的GAN模型（3 篇）](#series-generative-models-cbc622e222)
   - [非系列文章（73 篇）](#series-generative-models-standalone)
-- [优化与训练（101 篇）](#topic-optimization)
+- [优化与训练（102 篇）](#topic-optimization)
+  - [流形上的最速下降（6 篇）](#series-optimization-9aa52368b1)
   - [基于流式幂迭代的Muon实现（5 篇）](#series-optimization-2adf8edae5)
   - [让炼丹更科学一些（6 篇）](#series-optimization-22f3c62045)
   - [AdamW的Weight RMS的渐近估计（2 篇）](#series-optimization-623aab7f21)
-  - [流形上的最速下降（5 篇）](#series-optimization-9aa52368b1)
   - [通过msign来计算奇异值裁剪mclip（2 篇）](#series-optimization-297337ae72)
   - [msign算子的Newton-Schulz迭代（2 篇）](#series-optimization-d27a2576eb)
   - [从动力学角度看优化算法（7 篇）](#series-optimization-4b38446b55)
@@ -109,6 +109,7 @@
 
 ## 最近 20 篇文章
 
+- 2026-06-08 - [流形上的最速下降：6. Muon + 双旋转](https://spaces.ac.cn/archives/11777) - [查看系列](#series-optimization-9aa52368b1)
 - 2026-06-03 - [为什么官方版Muon比MuP版多出一个max(1, ⋅)？](https://spaces.ac.cn/archives/11772)
 - 2026-05-29 - [矩阵参数的奇异值熵越高越好吗？](https://spaces.ac.cn/archives/11767)
 - 2026-05-22 - [MoE环游记：8、强制序列级均衡](https://spaces.ac.cn/archives/11760) - [查看系列](#series-transformer-f5569856ba)
@@ -128,7 +129,6 @@
 - 2026-02-22 - [MoE环游记：6、最优分配促均衡](https://spaces.ac.cn/archives/11619) - [查看系列](#series-transformer-f5569856ba)
 - 2026-02-15 - [MuP之上：2. 线性层与最速下降](https://spaces.ac.cn/archives/11605) - [查看系列](#series-transformer-86fdf79074)
 - 2026-02-04 - [Adam优化器的最优超参数是β1=β2 ？](https://spaces.ac.cn/archives/11593)
-- 2026-01-28 - [一行代码将arXiv论文翻译成中文版](https://spaces.ac.cn/archives/11578)
 
 ## 主题分类
 
@@ -653,6 +653,16 @@
 <a id="topic-optimization"></a>
 ### 优化与训练
 
+<a id="series-optimization-9aa52368b1"></a>
+#### 流形上的最速下降 [返回目录](#目录)
+
+- 2025-08-01 - [流形上的最速下降：1. SGD + 超球面](https://spaces.ac.cn/archives/11196)
+- 2025-08-06 - [流形上的最速下降：2. Muon + 正交](https://spaces.ac.cn/archives/11215)
+- 2025-08-08 - [流形上的最速下降：3. Muon + Stiefel](https://spaces.ac.cn/archives/11221)
+- 2025-08-21 - [流形上的最速下降：4. Muon + 谱球面](https://spaces.ac.cn/archives/11241)
+- 2025-11-03 - [流形上的最速下降：5. 对偶梯度下降](https://spaces.ac.cn/archives/11388)
+- 2026-06-08 - [流形上的最速下降：6. Muon + 双旋转](https://spaces.ac.cn/archives/11777)
+
 <a id="series-optimization-2adf8edae5"></a>
 #### 基于流式幂迭代的Muon实现 [返回目录](#目录)
 
@@ -677,15 +687,6 @@
 
 - 2025-10-01 - [AdamW的Weight RMS的渐近估计（上）](https://spaces.ac.cn/archives/11307)
 - 2025-11-17 - [AdamW的Weight RMS的渐近估计（下）](https://spaces.ac.cn/archives/11404)
-
-<a id="series-optimization-9aa52368b1"></a>
-#### 流形上的最速下降 [返回目录](#目录)
-
-- 2025-08-01 - [流形上的最速下降：1. SGD + 超球面](https://spaces.ac.cn/archives/11196)
-- 2025-08-06 - [流形上的最速下降：2. Muon + 正交](https://spaces.ac.cn/archives/11215)
-- 2025-08-08 - [流形上的最速下降：3. Muon + Stiefel](https://spaces.ac.cn/archives/11221)
-- 2025-08-21 - [流形上的最速下降：4. Muon + 谱球面](https://spaces.ac.cn/archives/11241)
-- 2025-11-03 - [流形上的最速下降：5. 对偶梯度下降](https://spaces.ac.cn/archives/11388)
 
 <a id="series-optimization-297337ae72"></a>
 #### 通过msign来计算奇异值裁剪mclip [返回目录](#目录)
