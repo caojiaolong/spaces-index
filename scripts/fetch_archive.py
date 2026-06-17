@@ -15,9 +15,8 @@ try:
         ARCHIVE_URL,
         BASE_URL,
         DATA_DIR,
-        REQUEST_HEADERS,
         clean_text,
-        looks_like_gate_page,
+        fetch_html_with_retries,
         log,
         sort_posts_desc,
         write_json,
@@ -27,9 +26,8 @@ except ImportError:  # pragma: no cover - used when running as python scripts/fe
         ARCHIVE_URL,
         BASE_URL,
         DATA_DIR,
-        REQUEST_HEADERS,
         clean_text,
-        looks_like_gate_page,
+        fetch_html_with_retries,
         log,
         sort_posts_desc,
         write_json,
@@ -46,21 +44,15 @@ def canonical_url(url: str) -> str:
 
 def fetch_html(url: str, timeout: float = 30.0) -> str:
     session = requests.Session()
-    session.headers.update(REQUEST_HEADERS)
     try:
-        response = session.get(url, timeout=timeout)
-        if response.status_code == 403 and looks_like_gate_page(response.text):
-            response = session.get(url, timeout=timeout)
-        elif looks_like_gate_page(response.text):
-            response = session.get(url, timeout=timeout)
-        response.raise_for_status()
-    except requests.RequestException as exc:
-        raise RuntimeError(f"Failed to fetch archive page {url}: {exc}") from exc
-    if looks_like_gate_page(response.text):
-        raise RuntimeError(
-            f"Archive page {url} returned only a JavaScript redirect gate after retry."
+        return fetch_html_with_retries(
+            session,
+            url,
+            page_name="archive page",
+            timeout=timeout,
         )
-    return response.text
+    finally:
+        session.close()
 
 
 def _find_year(anchor: Tag) -> int | None:

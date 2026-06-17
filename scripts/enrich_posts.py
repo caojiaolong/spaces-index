@@ -13,9 +13,8 @@ from bs4 import BeautifulSoup, Tag
 try:
     from .common import (
         DATA_DIR,
-        REQUEST_HEADERS,
         clean_text,
-        looks_like_gate_page,
+        fetch_html_with_retries,
         log,
         read_json,
         sort_posts_desc,
@@ -24,9 +23,8 @@ try:
 except ImportError:  # pragma: no cover - used when running as python scripts/enrich_posts.py
     from common import (
         DATA_DIR,
-        REQUEST_HEADERS,
         clean_text,
-        looks_like_gate_page,
+        fetch_html_with_retries,
         log,
         read_json,
         sort_posts_desc,
@@ -35,20 +33,12 @@ except ImportError:  # pragma: no cover - used when running as python scripts/en
 
 
 def fetch_html(session: requests.Session, url: str, timeout: float = 30.0) -> str:
-    try:
-        response = session.get(url, timeout=timeout)
-        if response.status_code == 403 and looks_like_gate_page(response.text):
-            response = session.get(url, timeout=timeout)
-        elif looks_like_gate_page(response.text):
-            response = session.get(url, timeout=timeout)
-        response.raise_for_status()
-    except requests.RequestException as exc:
-        raise RuntimeError(f"Failed to fetch article page {url}: {exc}") from exc
-    if looks_like_gate_page(response.text):
-        raise RuntimeError(
-            f"Article page {url} returned only a JavaScript redirect gate after retry."
-        )
-    return response.text
+    return fetch_html_with_retries(
+        session,
+        url,
+        page_name="article page",
+        timeout=timeout,
+    )
 
 
 def _find_meta_container(soup: BeautifulSoup) -> Tag | None:
@@ -209,7 +199,6 @@ def enrich_posts(
     cached_by_id = {str(post.get("id")): post for post in cached_posts if post.get("id")}
     owns_session = session is None
     session = session or requests.Session()
-    session.headers.update(REQUEST_HEADERS)
 
     enriched: list[dict[str, Any]] = []
     try:
