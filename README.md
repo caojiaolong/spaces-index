@@ -8,8 +8,8 @@
 
 这个仓库的目标是把科学空间的所有文章做成一个持续更新的元数据索引：不复制全文，只保存标题、日期、原文链接、原站分类、标签、自动主题和系列信息，并通过 GitHub Actions 定时更新。这样读者可以直接按主题或系列查找文章，跳转回原站阅读，也不用担心索引长期失修。
 
-- 最近更新日期：2026-06-08（按归档中最新文章日期）
-- 文章总数：1318
+- 最近更新日期：2026-06-17（按归档中最新文章日期）
+- 文章总数：1319
 - 版权说明：本项目保存标题、链接、日期、分类、标签、自动主题、系列信息和少量小结短摘录，不镜像、复制或保存文章全文。
 
 ## 目录
@@ -25,8 +25,8 @@
   - [更别致的词向量模型（6 篇）](#series-embeddings-83ff2143be)
   - [不可思议的Word2Vec（6 篇）](#series-embeddings-5025fd40f6)
   - [非系列文章（9 篇）](#series-embeddings-standalone)
-- [大模型与Transformer（150 篇）](#topic-transformer)
-  - [MoE环游记（8 篇）](#series-transformer-f5569856ba)
+- [大模型与Transformer（151 篇）](#topic-transformer)
+  - [MoE环游记（9 篇）](#series-transformer-f5569856ba)
   - [MuP之上（4 篇）](#series-transformer-86fdf79074)
   - [Transformer升级之路（21 篇）](#series-transformer-34e65637fd)
   - [“闭门造车”之多模态思路浅谈（3 篇）](#series-transformer-2e7d329847)
@@ -109,6 +109,7 @@
 
 ## 最近 20 篇文章
 
+- 2026-06-17 - [MoE环游记：9、门控归一化之争](https://spaces.ac.cn/archives/11782) - [查看系列](#series-transformer-f5569856ba)
 - 2026-06-08 - [流形上的最速下降：6. Muon + 双旋转](https://spaces.ac.cn/archives/11777) - [查看系列](#series-optimization-9aa52368b1)
 - 2026-06-03 - [为什么官方版Muon比MuP版多出一个max(1, ⋅)？](https://spaces.ac.cn/archives/11772)
 - 2026-05-29 - [矩阵参数的奇异值熵越高越好吗？](https://spaces.ac.cn/archives/11767)
@@ -128,7 +129,6 @@
 - 2026-02-23 - [MoE环游记：7、动态激活极简解](https://spaces.ac.cn/archives/11626) - [查看系列](#series-transformer-f5569856ba)
 - 2026-02-22 - [MoE环游记：6、最优分配促均衡](https://spaces.ac.cn/archives/11619) - [查看系列](#series-transformer-f5569856ba)
 - 2026-02-15 - [MuP之上：2. 线性层与最速下降](https://spaces.ac.cn/archives/11605) - [查看系列](#series-transformer-86fdf79074)
-- 2026-02-04 - [Adam优化器的最优超参数是β1=β2 ？](https://spaces.ac.cn/archives/11593)
 
 ## 主题分类
 
@@ -332,6 +332,7 @@
 - 2026-02-22 - [MoE环游记：6、最优分配促均衡](https://spaces.ac.cn/archives/11619)
 - 2026-02-23 - [MoE环游记：7、动态激活极简解](https://spaces.ac.cn/archives/11626)
 - 2026-05-22 - [MoE环游记：8、强制序列级均衡](https://spaces.ac.cn/archives/11760)
+- 2026-06-17 - [MoE环游记：9、门控归一化之争](https://spaces.ac.cn/archives/11782)
 
 <a id="series-transformer-86fdf79074"></a>
 #### MuP之上 [返回目录](#目录)

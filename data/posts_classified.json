@@ -1,5 +1,26 @@
 [
   {
+    "id": "11782",
+    "title": "MoE环游记：9、门控归一化之争",
+    "url": "https://spaces.ac.cn/archives/11782",
+    "date": "2026-06-17",
+    "source_category": "信息时代",
+    "source_tags": [
+      "概率",
+      "损失函数",
+      "梯度",
+      "moe"
+    ],
+    "source_summary": "本文尝试从第一性原理出发，探讨MoE中Router与Gate的设计问题，为门控的归一化提供了一个概率解释。 转载到请包括本文地址： https://spaces.ac.cn/archives/11782 更详细的转载事宜请参考： 《科学空间FAQ》",
+    "topics": [
+      "大模型与Transformer"
+    ],
+    "series": "MoE环游记",
+    "series_index": 9,
+    "level": null,
+    "series_topic": "大模型与Transformer"
+  },
+  {
     "id": "11777",
     "title": "流形上的最速下降：6. Muon + 双旋转",
     "url": "https://spaces.ac.cn/archives/11777",

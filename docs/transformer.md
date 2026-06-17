@@ -2,7 +2,7 @@
 
 [返回主题索引](index.md)
 
-共 150 篇。
+共 151 篇。
 
 <a id="series-transformer-f5569856ba"></a>
 #### MoE环游记
@@ -48,6 +48,12 @@
   - 系列：MoE环游记 #8
   - 系列主题：大模型与Transformer
   - 小结摘录：本文围绕“如何用Loss-Free方式实现序列级负载均衡”展开，从原本的Quantile Balancing（QB）出发，逐步推导出了一种名为Moving Quantile Balancing（MQB）方法，成功实现了这一目的。但序列级均衡是否真的必要、要做到什么程度，仍然是一个开放的问题。 转载到请包括本文地址： https://spaces.ac.cn/archives/11760 更详细的转载事宜请参考： 《科学空间FAQ》
+- 2026-06-17 - [MoE环游记：9、门控归一化之争](https://spaces.ac.cn/archives/11782)
+  - 原站分类：信息时代
+  - 原站标签：概率、损失函数、梯度、moe
+  - 系列：MoE环游记 #9
+  - 系列主题：大模型与Transformer
+  - 小结摘录：本文尝试从第一性原理出发，探讨MoE中Router与Gate的设计问题，为门控的归一化提供了一个概率解释。 转载到请包括本文地址： https://spaces.ac.cn/archives/11782 更详细的转载事宜请参考： 《科学空间FAQ》
 
 <a id="series-transformer-86fdf79074"></a>
 #### MuP之上
