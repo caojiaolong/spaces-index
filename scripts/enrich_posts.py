@@ -89,6 +89,11 @@ def _fallback_tags(text: str) -> list[str]:
 
 SUMMARY_HEADINGS = {"小结", "文章小结", "总结", "结语", "结束语", "后记"}
 SUMMARY_MAX_CHARS = 320
+SUMMARY_STOP_MARKERS = (
+    "转载到请包括本文地址",
+    "更详细的转载事宜请参考",
+    "科学空间FAQ",
+)
 
 
 def _heading_text(heading: Tag) -> str:
@@ -108,6 +113,28 @@ def _truncate_text(text: str, max_chars: int = SUMMARY_MAX_CHARS) -> str:
     if len(text) <= max_chars:
         return text
     return text[: max_chars - 1].rstrip() + "…"
+
+
+def _strip_summary_boilerplate(text: str) -> tuple[str, bool]:
+    stop_positions = [
+        position
+        for marker in SUMMARY_STOP_MARKERS
+        if (position := text.find(marker)) >= 0
+    ]
+    if not stop_positions:
+        return text, False
+    return text[: min(stop_positions)].rstrip(), True
+
+
+def summary_needs_refresh(post: dict[str, Any]) -> bool:
+    summary = post.get("source_summary")
+    return (
+        "source_summary" not in post
+        or (
+            isinstance(summary, str)
+            and any(marker in summary for marker in SUMMARY_STOP_MARKERS)
+        )
+    )
 
 
 def extract_source_summary(html: str) -> str | None:
@@ -132,8 +159,11 @@ def extract_source_summary(html: str) -> str | None:
             if sibling.name not in {"p", "ul", "ol", "blockquote"}:
                 continue
             text = clean_text(sibling.get_text(" ", strip=True))
+            text, hit_stop_marker = _strip_summary_boilerplate(text)
             if text:
                 parts.append(text)
+            if hit_stop_marker:
+                break
             if len(" ".join(parts)) >= SUMMARY_MAX_CHARS:
                 break
 
@@ -217,7 +247,7 @@ def enrich_posts(
                 refresh_summaries
                 and cached is not None
                 and has_cached_metadata(cached)
-                and "source_summary" not in cached
+                and summary_needs_refresh(cached)
             )
             if cached and has_cached_metadata(cached) and not force and not needs_summary_refresh:
                 enriched.append(merge_cached_post(raw, cached))
@@ -235,10 +265,49 @@ def enrich_posts(
             url = str(raw.get("url") or "")
             if not url:
                 raise ValueError(f"Raw post is missing url: {raw!r}")
-            html = fetch_html(session, url)
+            try:
+                html = fetch_html(session, url)
+            except RuntimeError as exc:
+                if cached and has_cached_metadata(cached) and refresh_summaries and not force:
+                    log(
+                        "enrich_posts: "
+                        f"failed to refresh summary for {url}; keeping cached metadata: {exc}"
+                    )
+                    enriched.append(merge_cached_post(raw, cached))
+                    cached_count += 1
+                    if checkpoint_path and (index % checkpoint_every == 0 or index == total):
+                        write_json(checkpoint_path, sort_posts_desc(enriched))
+                    if progress_every > 0 and (
+                        index == 1 or index % progress_every == 0 or index == total
+                    ):
+                        log(
+                            "enrich_posts: "
+                            f"{index}/{total} cached={cached_count} fetched={fetched_count} "
+                            f"current={raw.get('id')} {raw.get('title')}"
+                        )
+                    continue
+                raise
             try:
                 metadata = parse_post_metadata(html)
             except ValueError as exc:
+                if cached and has_cached_metadata(cached) and refresh_summaries and not force:
+                    log(
+                        "enrich_posts: "
+                        f"failed to parse refreshed summary for {url}; keeping cached metadata: {exc}"
+                    )
+                    enriched.append(merge_cached_post(raw, cached))
+                    cached_count += 1
+                    if checkpoint_path and (index % checkpoint_every == 0 or index == total):
+                        write_json(checkpoint_path, sort_posts_desc(enriched))
+                    if progress_every > 0 and (
+                        index == 1 or index % progress_every == 0 or index == total
+                    ):
+                        log(
+                            "enrich_posts: "
+                            f"{index}/{total} cached={cached_count} fetched={fetched_count} "
+                            f"current={raw.get('id')} {raw.get('title')}"
+                        )
+                    continue
                 raise ValueError(f"Failed to parse metadata for {url}: {exc}") from exc
             enriched.append({**raw, **metadata})
             fetched_count += 1
