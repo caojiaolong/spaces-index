@@ -2,7 +2,7 @@
 
 [返回主题索引](index.md)
 
-共 102 篇。
+共 103 篇。
 
 <a id="series-optimization-9aa52368b1"></a>
 #### 流形上的最速下降
@@ -210,6 +210,10 @@
 <a id="series-optimization-standalone"></a>
 #### 非系列文章
 
+- 2026-06-19 - [强制间隔投影（Margin-Enforcing Projection）](https://spaces.ac.cn/archives/11784)
+  - 原站分类：数学研究
+  - 原站标签：最优、分析、优化、损失函数
+  - 小结摘录：本文介绍了“强制间隔投影（Margin-Enforcing Projection，MEP）”这一运算：给定一个分数向量，把它投影到满足“正类最小值至少比负类最大值大$m$”的最近向量上。这可以为传统的Margin Learning提供一些新的思路。
 - 2026-06-03 - [为什么官方版Muon比MuP版多出一个max(1, ⋅)？](https://spaces.ac.cn/archives/11772)
   - 原站分类：信息时代
   - 原站标签：学习率、优化器、muon、MuP

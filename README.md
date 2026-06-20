@@ -8,18 +8,18 @@
 
 这个仓库的目标是把科学空间的所有文章做成一个持续更新的元数据索引：不复制全文，只保存标题、日期、原文链接、原站分类、标签、自动主题和系列信息，并通过 GitHub Actions 定时更新。这样读者可以直接按主题或系列查找文章，跳转回原站阅读，也不用担心索引长期失修。
 
-- 最近更新日期：2026-06-17（按归档中最新文章日期）
-- 文章总数：1319
+- 最近更新日期：2026-06-19（按归档中最新文章日期）
+- 文章总数：1320
 - 版权说明：本项目保存标题、链接、日期、分类、标签、自动主题、系列信息和少量小结短摘录，不镜像、复制或保存文章全文。
 
 ## 目录
 
-- [深度学习基础（120 篇）](#topic-deep-learning)
+- [深度学习基础（121 篇）](#topic-deep-learning)
   - [重新思考学习率与Batch Size（4 篇）](#series-deep-learning-69126a7846)
   - [多任务学习漫谈（3 篇）](#series-deep-learning-0ac9606400)
   - [“让Keras更酷一些！”（7 篇）](#series-deep-learning-e73395bb77)
   - [文本情感分类（4 篇）](#series-deep-learning-4b0540d8f5)
-  - [非系列文章（102 篇）](#series-deep-learning-standalone)
+  - [非系列文章（103 篇）](#series-deep-learning-standalone)
 - [词向量与Embedding（24 篇）](#topic-embeddings)
   - [CoSENT（3 篇）](#series-embeddings-2949022b50)
   - [更别致的词向量模型（6 篇）](#series-embeddings-83ff2143be)
@@ -40,7 +40,7 @@
   - [搜出来的文本（4 篇）](#series-generative-models-efbc1f2b0e)
   - [能量视角下的GAN模型（3 篇）](#series-generative-models-cbc622e222)
   - [非系列文章（73 篇）](#series-generative-models-standalone)
-- [优化与训练（102 篇）](#topic-optimization)
+- [优化与训练（103 篇）](#topic-optimization)
   - [流形上的最速下降（6 篇）](#series-optimization-9aa52368b1)
   - [基于流式幂迭代的Muon实现（5 篇）](#series-optimization-2adf8edae5)
   - [让炼丹更科学一些（6 篇）](#series-optimization-22f3c62045)
@@ -48,7 +48,7 @@
   - [通过msign来计算奇异值裁剪mclip（2 篇）](#series-optimization-297337ae72)
   - [msign算子的Newton-Schulz迭代（2 篇）](#series-optimization-d27a2576eb)
   - [从动力学角度看优化算法（7 篇）](#series-optimization-4b38446b55)
-  - [非系列文章（72 篇）](#series-optimization-standalone)
+  - [非系列文章（73 篇）](#series-optimization-standalone)
 - [数学工具（376 篇）](#topic-math)
   - [低秩近似之路（5 篇）](#series-math-6689ddf615)
   - [SVD分解（3 篇）](#series-math-6a0e7d7415)
@@ -109,6 +109,7 @@
 
 ## 最近 20 篇文章
 
+- 2026-06-19 - [强制间隔投影（Margin-Enforcing Projection）](https://spaces.ac.cn/archives/11784)
 - 2026-06-17 - [MoE环游记：9、门控归一化之争](https://spaces.ac.cn/archives/11782) - [查看系列](#series-transformer-f5569856ba)
 - 2026-06-08 - [流形上的最速下降：6. Muon + 双旋转](https://spaces.ac.cn/archives/11777) - [查看系列](#series-optimization-9aa52368b1)
 - 2026-06-03 - [为什么官方版Muon比MuP版多出一个max(1, ⋅)？](https://spaces.ac.cn/archives/11772)
@@ -128,7 +129,6 @@
 - 2026-03-02 - [MuP之上：3. 特殊情况特殊处理](https://spaces.ac.cn/archives/11647) - [查看系列](#series-transformer-86fdf79074)
 - 2026-02-23 - [MoE环游记：7、动态激活极简解](https://spaces.ac.cn/archives/11626) - [查看系列](#series-transformer-f5569856ba)
 - 2026-02-22 - [MoE环游记：6、最优分配促均衡](https://spaces.ac.cn/archives/11619) - [查看系列](#series-transformer-f5569856ba)
-- 2026-02-15 - [MuP之上：2. 线性层与最速下降](https://spaces.ac.cn/archives/11605) - [查看系列](#series-transformer-86fdf79074)
 
 ## 主题分类
 
@@ -172,6 +172,7 @@
 <a id="series-deep-learning-standalone"></a>
 #### 非系列文章 [返回目录](#目录)
 
+- 2026-06-19 - [强制间隔投影（Margin-Enforcing Projection）](https://spaces.ac.cn/archives/11784)
 - 2026-05-08 - [直接以FID为Loss：从梯度计算到流式训练](https://spaces.ac.cn/archives/11738)
 - 2026-03-19 - [Attention Residuals 回忆录](https://spaces.ac.cn/archives/11664)
 - 2025-08-16 - [ReLU/GeLU/Swish的一个恒等式](https://spaces.ac.cn/archives/11233)
@@ -715,6 +716,7 @@
 <a id="series-optimization-standalone"></a>
 #### 非系列文章 [返回目录](#目录)
 
+- 2026-06-19 - [强制间隔投影（Margin-Enforcing Projection）](https://spaces.ac.cn/archives/11784)
 - 2026-06-03 - [为什么官方版Muon比MuP版多出一个max(1, ⋅)？](https://spaces.ac.cn/archives/11772)
 - 2026-05-08 - [直接以FID为Loss：从梯度计算到流式训练](https://spaces.ac.cn/archives/11738)
 - 2026-02-04 - [Adam优化器的最优超参数是β1=β2 ？](https://spaces.ac.cn/archives/11593)

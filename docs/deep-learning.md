@@ -2,7 +2,7 @@
 
 [返回主题索引](index.md)
 
-共 120 篇。
+共 121 篇。
 
 <a id="series-deep-learning-69126a7846"></a>
 #### 重新思考学习率与Batch Size
@@ -118,6 +118,10 @@
 <a id="series-deep-learning-standalone"></a>
 #### 非系列文章
 
+- 2026-06-19 - [强制间隔投影（Margin-Enforcing Projection）](https://spaces.ac.cn/archives/11784)
+  - 原站分类：数学研究
+  - 原站标签：最优、分析、优化、损失函数
+  - 小结摘录：本文介绍了“强制间隔投影（Margin-Enforcing Projection，MEP）”这一运算：给定一个分数向量，把它投影到满足“正类最小值至少比负类最大值大$m$”的最近向量上。这可以为传统的Margin Learning提供一些新的思路。
 - 2026-05-08 - [直接以FID为Loss：从梯度计算到流式训练](https://spaces.ac.cn/archives/11738)
   - 原站分类：信息时代
   - 原站标签：矩阵、损失函数、生成模型、梯度
