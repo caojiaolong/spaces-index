@@ -97,7 +97,7 @@ def parse_archive(html: str, archive_url: str = ARCHIVE_URL) -> list[dict[str, A
             continue
 
         title = clean_text(anchor.get_text(" ", strip=True))
-        if not title or title.isdigit() or "评论" in title:
+        if not title or title.isdigit():
             continue
 
         year = _find_year(anchor)

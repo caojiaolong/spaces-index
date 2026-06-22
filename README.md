@@ -9,7 +9,7 @@
 这个仓库的目标是把科学空间的所有文章做成一个持续更新的元数据索引：不复制全文，只保存标题、日期、原文链接、原站分类、标签、自动主题和系列信息，并通过 GitHub Actions 定时更新。这样读者可以直接按主题或系列查找文章，跳转回原站阅读，也不用担心索引长期失修。
 
 - 最近更新日期：2026-06-19（按归档中最新文章日期）
-- 文章总数：1320
+- 文章总数：1324
 - 版权说明：本项目保存标题、链接、日期、分类、标签、自动主题、系列信息和少量小结短摘录，不镜像、复制或保存文章全文。
 
 ## 目录
@@ -81,9 +81,9 @@
   - [中文分词系列（8 篇）](#series-nlp-73a0edf1cd)
   - [OCR技术浅探（10 篇）](#series-nlp-bffb492bca)
   - [非系列文章（74 篇）](#series-nlp-standalone)
-- [工程工具（120 篇）](#topic-engineering)
+- [工程工具（124 篇）](#topic-engineering)
   - [通用爬虫探索（3 篇）](#series-engineering-c6d727fb3c)
-  - [非系列文章（117 篇）](#series-engineering-standalone)
+  - [非系列文章（121 篇）](#series-engineering-standalone)
 - [天文科普（197 篇）](#topic-astronomy)
   - [非系列文章（197 篇）](#series-astronomy-standalone)
 - [物理化学（123 篇）](#topic-physics-chemistry)
@@ -101,8 +101,8 @@
 - [资源与站务（113 篇）](#topic-resources)
   - [语料（2 篇）](#series-resources-12d8681743)
   - [非系列文章（111 篇）](#series-resources-standalone)
-- [阅读写作与随笔（173 篇）](#topic-essays)
-  - [非系列文章（173 篇）](#series-essays-standalone)
+- [阅读写作与随笔（176 篇）](#topic-essays)
+  - [非系列文章（176 篇）](#series-essays-standalone)
 - [其他（0 篇）](#topic-other)
 
 注：系列文章会统一归入该系列的众数主题；非系列文章仍可能属于多个主题，因此目录中的主题数量之和可能大于文章总数。
@@ -1643,6 +1643,7 @@
 - 2015-10-21 - [把Python脚本放到手机上定时运行](https://spaces.ac.cn/archives/3477)
 - 2015-07-02 - [用Pandas实现高效的Apriori算法](https://spaces.ac.cn/archives/3380)
 - 2015-05-30 - [【备忘】维基百科与DNSCrypt](https://spaces.ac.cn/archives/3327)
+- 2015-05-06 - [记录一次爬取淘宝/天猫评论数据的过程](https://spaces.ac.cn/archives/3298)
 - 2014-12-31 - [我的写论文软件组合](https://spaces.ac.cn/archives/3171)
 - 2014-12-18 - [迟到一年的建模：再探碎纸复原](https://spaces.ac.cn/archives/3134)
 - 2014-12-15 - [两生物种群竞争模型：LaTeX+Python](https://spaces.ac.cn/archives/3120)
@@ -1661,7 +1662,9 @@
 - 2014-01-19 - [宇宙驿站服务器升级完毕](https://spaces.ac.cn/archives/2304)
 - 2013-09-22 - [一个人的数学建模：碎纸复原](https://spaces.ac.cn/archives/2067)
 - 2013-04-27 - [\[备忘\]历史天气查询](https://spaces.ac.cn/archives/1983)
+- 2013-02-05 - [\[公告\]评论功能说明](https://spaces.ac.cn/archives/1908)
 - 2013-01-23 - [校外通过VPN通道访问华师资源](https://spaces.ac.cn/archives/1886)
+- 2013-01-20 - [评论功能修复了](https://spaces.ac.cn/archives/1884)
 - 2012-10-06 - [哥德巴赫猜想浅谈1](https://spaces.ac.cn/archives/1727)
 - 2012-09-28 - [开始学习数学软件Scilab](https://spaces.ac.cn/archives/1720)
 - 2012-08-30 - [折腾windows 8和ubuntu 12](https://spaces.ac.cn/archives/1706)
@@ -1699,6 +1702,7 @@
 - 2009-08-16 - [澳大利亚网站请您向外星人问好](https://spaces.ac.cn/archives/77)
 - 2009-08-16 - [电脑修好了，Blog正常更新](https://spaces.ac.cn/archives/74)
 - 2009-07-27 - [今天升级了Blog（欢迎大家来“顶”！）](https://spaces.ac.cn/archives/80)
+- 2009-07-23 - [BLOG评论故障修复，部分数据丢失](https://spaces.ac.cn/archives/31)
 - 2009-07-16 - [今天把Blog升级了](https://spaces.ac.cn/archives/21)
 - 2009-07-08 - [网站本次改版感悟...](https://spaces.ac.cn/archives/10)
 - 2009-03-01 - [科学空间|Scientific Spaces 介绍](https://spaces.ac.cn/archives/12)
@@ -2455,8 +2459,10 @@
 - 2013-04-25 - [学习场论（电磁场、重力场）](https://spaces.ac.cn/archives/1980)
 - 2013-03-04 - [我害怕](https://spaces.ac.cn/archives/1928)
 - 2013-02-09 - [新年快乐！桃花迎春！](https://spaces.ac.cn/archives/1914)
+- 2013-02-05 - [\[公告\]评论功能说明](https://spaces.ac.cn/archives/1908)
 - 2013-02-01 - [大学，如水年华](https://spaces.ac.cn/archives/1894)
 - 2013-01-23 - [校外通过VPN通道访问华师资源](https://spaces.ac.cn/archives/1886)
+- 2013-01-20 - [评论功能修复了](https://spaces.ac.cn/archives/1884)
 - 2012-12-23 - [“末日”的快乐！](https://spaces.ac.cn/archives/1840)
 - 2012-10-16 - [相对论和量子力学的初探](https://spaces.ac.cn/archives/1744)
 - 2012-09-30 - [中秋节快乐！](https://spaces.ac.cn/archives/1725)
@@ -2567,6 +2573,7 @@
 - 2009-07-30 - [数学歌曲：《歌德巴赫猜》](https://spaces.ac.cn/archives/42)
 - 2009-07-29 - [生活中的趣味数学：同一天生日概率有多大](https://spaces.ac.cn/archives/40)
 - 2009-07-27 - [今天升级了Blog（欢迎大家来“顶”！）](https://spaces.ac.cn/archives/80)
+- 2009-07-23 - [BLOG评论故障修复，部分数据丢失](https://spaces.ac.cn/archives/31)
 - 2009-07-17 - [初中生活结束了（友谊地久天长）](https://spaces.ac.cn/archives/23)
 - 2009-07-16 - [听那“童年”之音](https://spaces.ac.cn/archives/22)
 - 2009-07-16 - [今天把Blog升级了](https://spaces.ac.cn/archives/21)
