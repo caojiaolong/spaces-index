@@ -1,5 +1,26 @@
 [
   {
+    "id": "11787",
+    "title": "矩阵函数近似中的暴力美学",
+    "url": "https://spaces.ac.cn/archives/11787",
+    "date": "2026-06-25",
+    "source_category": "数学研究",
+    "source_tags": [
+      "函数",
+      "迭代",
+      "近似",
+      "矩阵",
+      "SVD"
+    ],
+    "source_summary": "本文提出了一种基于贪心策略的通用矩阵函数近似框架——不追求严格的可解释性，而是直接构造简单的多项式迭代，基于贪心策略每一步都去回归目标，然后选择适当的成本函数，转化成二次规划或线性规划问题，精确、稳定地求解迭代参数，最终获得一个有效的计算方案。",
+    "topics": [
+      "数学工具"
+    ],
+    "series": null,
+    "series_index": null,
+    "level": null
+  },
+  {
     "id": "11784",
     "title": "强制间隔投影（Margin-Enforcing Projection）",
     "url": "https://spaces.ac.cn/archives/11784",

@@ -8,8 +8,8 @@
 
 这个仓库的目标是把科学空间的所有文章做成一个持续更新的元数据索引：不复制全文，只保存标题、日期、原文链接、原站分类、标签、自动主题和系列信息，并通过 GitHub Actions 定时更新。这样读者可以直接按主题或系列查找文章，跳转回原站阅读，也不用担心索引长期失修。
 
-- 最近更新日期：2026-06-19（按归档中最新文章日期）
-- 文章总数：1324
+- 最近更新日期：2026-06-25（按归档中最新文章日期）
+- 文章总数：1325
 - 版权说明：本项目保存标题、链接、日期、分类、标签、自动主题、系列信息和少量小结短摘录，不镜像、复制或保存文章全文。
 
 ## 目录
@@ -49,7 +49,7 @@
   - [msign算子的Newton-Schulz迭代（2 篇）](#series-optimization-d27a2576eb)
   - [从动力学角度看优化算法（7 篇）](#series-optimization-4b38446b55)
   - [非系列文章（73 篇）](#series-optimization-standalone)
-- [数学工具（376 篇）](#topic-math)
+- [数学工具（377 篇）](#topic-math)
   - [低秩近似之路（5 篇）](#series-math-6689ddf615)
   - [SVD分解（3 篇）](#series-math-6a0e7d7415)
   - [外微分浅谈（7 篇）](#series-math-07dc7181b7)
@@ -70,7 +70,7 @@
   - [自然极值（8 篇）](#series-math-5e3917ad32)
   - [向量（5 篇）](#series-math-fae158475e)
   - [微积分学习（2 篇）](#series-math-d050b16b4d)
-  - [非系列文章（290 篇）](#series-math-standalone)
+  - [非系列文章（291 篇）](#series-math-standalone)
 - [概率统计与信息论（84 篇）](#topic-probability-info)
   - [最小熵原理（6 篇）](#series-probability-info-2e7e2c4698)
   - [非系列文章（78 篇）](#series-probability-info-standalone)
@@ -109,6 +109,7 @@
 
 ## 最近 20 篇文章
 
+- 2026-06-25 - [矩阵函数近似中的暴力美学](https://spaces.ac.cn/archives/11787)
 - 2026-06-19 - [强制间隔投影（Margin-Enforcing Projection）](https://spaces.ac.cn/archives/11784)
 - 2026-06-17 - [MoE环游记：9、门控归一化之争](https://spaces.ac.cn/archives/11782) - [查看系列](#series-transformer-f5569856ba)
 - 2026-06-08 - [流形上的最速下降：6. Muon + 双旋转](https://spaces.ac.cn/archives/11777) - [查看系列](#series-optimization-9aa52368b1)
@@ -128,7 +129,6 @@
 - 2026-03-12 - [基于流式幂迭代的Muon实现：1. 初识](https://spaces.ac.cn/archives/11654) - [查看系列](#series-optimization-2adf8edae5)
 - 2026-03-02 - [MuP之上：3. 特殊情况特殊处理](https://spaces.ac.cn/archives/11647) - [查看系列](#series-transformer-86fdf79074)
 - 2026-02-23 - [MoE环游记：7、动态激活极简解](https://spaces.ac.cn/archives/11626) - [查看系列](#series-transformer-f5569856ba)
-- 2026-02-22 - [MoE环游记：6、最优分配促均衡](https://spaces.ac.cn/archives/11619) - [查看系列](#series-transformer-f5569856ba)
 
 ## 主题分类
 
@@ -962,6 +962,7 @@
 <a id="series-math-standalone"></a>
 #### 非系列文章 [返回目录](#目录)
 
+- 2026-06-25 - [矩阵函数近似中的暴力美学](https://spaces.ac.cn/archives/11787)
 - 2026-05-29 - [矩阵参数的奇异值熵越高越好吗？](https://spaces.ac.cn/archives/11767)
 - 2026-05-08 - [直接以FID为Loss：从梯度计算到流式训练](https://spaces.ac.cn/archives/11738)
 - 2026-05-04 - [如何更科学地估计矩阵的谱范数？](https://spaces.ac.cn/archives/11736)
