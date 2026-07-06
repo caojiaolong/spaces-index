@@ -8,8 +8,8 @@
 
 这个仓库的目标是把科学空间的所有文章做成一个持续更新的元数据索引：不复制全文，只保存标题、日期、原文链接、原站分类、标签、自动主题和系列信息，并通过 GitHub Actions 定时更新。这样读者可以直接按主题或系列查找文章，跳转回原站阅读，也不用担心索引长期失修。
 
-- 最近更新日期：2026-06-25（按归档中最新文章日期）
-- 文章总数：1325
+- 最近更新日期：2026-07-06（按归档中最新文章日期）
+- 文章总数：1326
 - 版权说明：本项目保存标题、链接、日期、分类、标签、自动主题、系列信息和少量小结短摘录，不镜像、复制或保存文章全文。
 
 ## 目录
@@ -40,10 +40,10 @@
   - [搜出来的文本（4 篇）](#series-generative-models-efbc1f2b0e)
   - [能量视角下的GAN模型（3 篇）](#series-generative-models-cbc622e222)
   - [非系列文章（73 篇）](#series-generative-models-standalone)
-- [优化与训练（103 篇）](#topic-optimization)
+- [优化与训练（104 篇）](#topic-optimization)
+  - [让炼丹更科学一些（7 篇）](#series-optimization-22f3c62045)
   - [流形上的最速下降（6 篇）](#series-optimization-9aa52368b1)
   - [基于流式幂迭代的Muon实现（5 篇）](#series-optimization-2adf8edae5)
-  - [让炼丹更科学一些（6 篇）](#series-optimization-22f3c62045)
   - [AdamW的Weight RMS的渐近估计（2 篇）](#series-optimization-623aab7f21)
   - [通过msign来计算奇异值裁剪mclip（2 篇）](#series-optimization-297337ae72)
   - [msign算子的Newton-Schulz迭代（2 篇）](#series-optimization-d27a2576eb)
@@ -109,6 +109,7 @@
 
 ## 最近 20 篇文章
 
+- 2026-07-06 - [让炼丹更科学一些（七）：步长调度与权重平均](https://spaces.ac.cn/archives/11804) - [查看系列](#series-optimization-22f3c62045)
 - 2026-06-25 - [矩阵函数近似中的暴力美学](https://spaces.ac.cn/archives/11787)
 - 2026-06-19 - [强制间隔投影（Margin-Enforcing Projection）](https://spaces.ac.cn/archives/11784)
 - 2026-06-17 - [MoE环游记：9、门控归一化之争](https://spaces.ac.cn/archives/11782) - [查看系列](#series-transformer-f5569856ba)
@@ -128,7 +129,6 @@
 - 2026-03-19 - [Attention Residuals 回忆录](https://spaces.ac.cn/archives/11664)
 - 2026-03-12 - [基于流式幂迭代的Muon实现：1. 初识](https://spaces.ac.cn/archives/11654) - [查看系列](#series-optimization-2adf8edae5)
 - 2026-03-02 - [MuP之上：3. 特殊情况特殊处理](https://spaces.ac.cn/archives/11647) - [查看系列](#series-transformer-86fdf79074)
-- 2026-02-23 - [MoE环游记：7、动态激活极简解](https://spaces.ac.cn/archives/11626) - [查看系列](#series-transformer-f5569856ba)
 
 ## 主题分类
 
@@ -655,6 +655,17 @@
 <a id="topic-optimization"></a>
 ### 优化与训练
 
+<a id="series-optimization-22f3c62045"></a>
+#### 让炼丹更科学一些 [返回目录](#目录)
+
+- 2023-12-19 - [让炼丹更科学一些（一）：SGD的平均损失收敛](https://spaces.ac.cn/archives/9902)
+- 2025-12-12 - [让炼丹更科学一些（二）：将结论推广到无界域](https://spaces.ac.cn/archives/11469)
+- 2025-12-16 - [让炼丹更科学一些（三）：SGD的终点损失收敛](https://spaces.ac.cn/archives/11480)
+- 2025-12-26 - [让炼丹更科学一些（四）：新恒等式，新学习率](https://spaces.ac.cn/archives/11494)
+- 2026-01-09 - [让炼丹更科学一些（五）：基于梯度精调学习率](https://spaces.ac.cn/archives/11530)
+- 2026-01-16 - [让炼丹更科学一些（六）：自上而下的精妙构造](https://spaces.ac.cn/archives/11540)
+- 2026-07-06 - [让炼丹更科学一些（七）：步长调度与权重平均](https://spaces.ac.cn/archives/11804)
+
 <a id="series-optimization-9aa52368b1"></a>
 #### 流形上的最速下降 [返回目录](#目录)
 
@@ -673,16 +684,6 @@
 - 2026-04-07 - [基于流式幂迭代的Muon实现：3. 雕琢](https://spaces.ac.cn/archives/11697)
 - 2026-04-13 - [基于流式幂迭代的Muon实现：4. 原理](https://spaces.ac.cn/archives/11710)
 - 2026-04-17 - [基于流式幂迭代的Muon实现：5. 延伸](https://spaces.ac.cn/archives/11719)
-
-<a id="series-optimization-22f3c62045"></a>
-#### 让炼丹更科学一些 [返回目录](#目录)
-
-- 2023-12-19 - [让炼丹更科学一些（一）：SGD的平均损失收敛](https://spaces.ac.cn/archives/9902)
-- 2025-12-12 - [让炼丹更科学一些（二）：将结论推广到无界域](https://spaces.ac.cn/archives/11469)
-- 2025-12-16 - [让炼丹更科学一些（三）：SGD的终点损失收敛](https://spaces.ac.cn/archives/11480)
-- 2025-12-26 - [让炼丹更科学一些（四）：新恒等式，新学习率](https://spaces.ac.cn/archives/11494)
-- 2026-01-09 - [让炼丹更科学一些（五）：基于梯度精调学习率](https://spaces.ac.cn/archives/11530)
-- 2026-01-16 - [让炼丹更科学一些（六）：自上而下的精妙构造](https://spaces.ac.cn/archives/11540)
 
 <a id="series-optimization-623aab7f21"></a>
 #### AdamW的Weight RMS的渐近估计 [返回目录](#目录)

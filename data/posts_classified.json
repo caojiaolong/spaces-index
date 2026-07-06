@@ -1,5 +1,27 @@
 [
   {
+    "id": "11804",
+    "title": "让炼丹更科学一些（七）：步长调度与权重平均",
+    "url": "https://spaces.ac.cn/archives/11804",
+    "date": "2026-07-06",
+    "source_category": "数学研究",
+    "source_tags": [
+      "不等式",
+      "学习率",
+      "优化器",
+      "sgd",
+      "炼丹"
+    ],
+    "source_summary": "本文引入了新的恒等式，继续推广上一篇文章的结果，这使得我们可以从理论上定量地揭示权重平均与学习率衰减的联系。此外，我们还讨论了等权平均效果不如滑动平均、Schedule-Free仍无法彻底摆脱Schedule等问题。",
+    "topics": [
+      "优化与训练"
+    ],
+    "series": "让炼丹更科学一些",
+    "series_index": 7,
+    "level": "advanced",
+    "series_topic": "优化与训练"
+  },
+  {
     "id": "11787",
     "title": "矩阵函数近似中的暴力美学",
     "url": "https://spaces.ac.cn/archives/11787",
