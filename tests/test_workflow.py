@@ -37,8 +37,13 @@ def test_pages_workflow_has_required_deployment_contract():
     job = workflow["jobs"]["update-and-deploy"]
     assert job["environment"]["name"] == "github-pages"
     steps = {step["name"]: step for step in job["steps"]}
-    assert steps["Configure GitHub Pages"]["uses"] == "actions/configure-pages@v5"
-    assert steps["Upload GitHub Pages artifact"]["uses"] == "actions/upload-pages-artifact@v4"
+    assert steps["Checkout"]["uses"] == "actions/checkout@v6"
+    assert steps["Set up Python"]["uses"] == "actions/setup-python@v6"
+    assert steps["Set up uv"]["uses"] == (
+        "astral-sh/setup-uv@08807647e7069bb48b6ef5acd8ec9567f424441b"
+    )
+    assert steps["Configure GitHub Pages"]["uses"] == "actions/configure-pages@v6"
+    assert steps["Upload GitHub Pages artifact"]["uses"] == "actions/upload-pages-artifact@v5"
     assert steps["Upload GitHub Pages artifact"]["with"]["path"] == "_site"
-    assert steps["Deploy GitHub Pages"]["uses"] == "actions/deploy-pages@v4"
+    assert steps["Deploy GitHub Pages"]["uses"] == "actions/deploy-pages@v5"
     assert steps["Deploy GitHub Pages"]["id"] == "deployment"
