@@ -2754,8 +2754,8 @@ uv run python scripts/update_all.py --refresh-summaries --sleep 0.8
 
 <a href="https://www.star-history.com/?repos=caojiaolong%2Fspaces-index&type=timeline&legend=top-left">
  <picture>
-   <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/chart?repos=caojiaolong/spaces-index&type=timeline&theme=dark&legend=top-left&sealed_token=1PtTrJfjwB8TiUNumdr03-qtw6bgfzWVHU7gDNV6rSiul2pnBRigKz4Clvj0JKReYQSxBrxmBDqLY85wFZ86ySlHRzel8aw7XfnwQ17BcMI46iGX" />
-   <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/chart?repos=caojiaolong/spaces-index&type=timeline&legend=top-left&sealed_token=1PtTrJfjwB8TiUNumdr03-qtw6bgfzWVHU7gDNV6rSiul2pnBRigKz4Clvj0JKReYQSxBrxmBDqLY85wFZ86ySlHRzel8aw7XfnwQ17BcMI46iGX" />
-   <img alt="Star History Chart" src="https://api.star-history.com/chart?repos=caojiaolong/spaces-index&type=timeline&legend=top-left&sealed_token=1PtTrJfjwB8TiUNumdr03-qtw6bgfzWVHU7gDNV6rSiul2pnBRigKz4Clvj0JKReYQSxBrxmBDqLY85wFZ86ySlHRzel8aw7XfnwQ17BcMI46iGX" />
+   <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/chart?repos=caojiaolong/spaces-index&type=timeline&theme=dark&legend=top-left&sealed_token=Mk-_SQRXMESG92vxsl-rENs6bybrSJyqOFx-fGmzdxBlQiWKvWPdKR03AtHLO5zQOgO8uJyaj8qJo62vL2-UXF4YyFBdPhpo_wXXEy_FFTqXcBBkPeqaJQ" />
+   <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/chart?repos=caojiaolong/spaces-index&type=timeline&legend=top-left&sealed_token=Mk-_SQRXMESG92vxsl-rENs6bybrSJyqOFx-fGmzdxBlQiWKvWPdKR03AtHLO5zQOgO8uJyaj8qJo62vL2-UXF4YyFBdPhpo_wXXEy_FFTqXcBBkPeqaJQ" />
+   <img alt="Star History Chart" src="https://api.star-history.com/chart?repos=caojiaolong/spaces-index&type=timeline&legend=top-left&sealed_token=Mk-_SQRXMESG92vxsl-rENs6bybrSJyqOFx-fGmzdxBlQiWKvWPdKR03AtHLO5zQOgO8uJyaj8qJo62vL2-UXF4YyFBdPhpo_wXXEy_FFTqXcBBkPeqaJQ" />
  </picture>
 </a>

@@ -40,8 +40,8 @@ TOPIC_PAGES: dict[str, str] = {
 PAGES_URL = "https://caojiaolong.github.io/spaces-index/"
 SOURCE_URL = "https://spaces.ac.cn/"
 STAR_HISTORY_TOKEN = (
-    "1PtTrJfjwB8TiUNumdr03-qtw6bgfzWVHU7gDNV6rSiul2pnBRigKz4Clvj0JKReYQSx"
-    "BrxmBDqLY85wFZ86ySlHRzel8aw7XfnwQ17BcMI46iGX"
+    "Mk-_SQRXMESG92vxsl-rENs6bybrSJyqOFx-fGmzdxBlQiWKvWPdKR03AtHLO5zQOgO8u"
+    "Jyaj8qJo62vL2-UXF4YyFBdPhpo_wXXEy_FFTqXcBBkPeqaJQ"
 )
 STAR_HISTORY_CHART_URL = (
     "https://api.star-history.com/chart?repos=caojiaolong/spaces-index"

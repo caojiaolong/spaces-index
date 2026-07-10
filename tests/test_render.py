@@ -86,7 +86,7 @@ def test_readme_contains_topic_links_and_stats():
     assert "## Star History" in readme
     assert "如果这个索引对你有帮助，欢迎 Star 支持，后续会通过 GitHub Actions 持续更新" in readme
     assert "api.star-history.com/chart?repos=caojiaolong/spaces-index" in readme
-    assert "sealed_token=1PtTrJfjwB8TiUNumdr03-" in readme
+    assert "sealed_token=Mk-_SQRXMESG92vxsl-rENs6" in readme
     assert 'alt="Star History Chart"' in readme
 
 
