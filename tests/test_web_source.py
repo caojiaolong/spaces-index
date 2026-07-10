@@ -56,10 +56,20 @@ def test_web_app_uses_safe_dom_and_expected_interaction_contract():
         assert unsafe_api not in source
 
     assert "const PAGE_SIZE = 24" in source
+    assert "const PAGE_SIZE_OPTIONS = [12, 24, 48, 96]" in source
+    assert 'params.get("size")' in source
+    assert 'params.set("size", String(state.pageSize))' in source
+    assert 'id: "explore-page-size"' in source
+    assert 'id: "topic-page-size"' in source
+    assert "results.length / state.pageSize" in source
+    assert "posts.length / pageSize" in source
     assert 'fetch("./catalog.json"' in source
     assert 'location.protocol === "file:"' in source
     assert "uv run python -m http.server 8000 --directory _site" in source
     assert 'normalize("NFKC")' in source
+    assert 'const EMPTY_SUMMARY_VALUES = new Set(["null", "none", "undefined", "nan"])' in source
+    assert "sourceSummary: normalizeSummary" in source
+    assert 'text: post.sourceSummary || "暂无小结"' in source
     assert "tokenScore += 5" in source
     assert "tokenScore += 3" in source
     assert "tokenScore += 2" in source
@@ -69,6 +79,14 @@ def test_web_app_uses_safe_dom_and_expected_interaction_contract():
     assert "event.isComposing" in source
     assert "scrollAfterRender" in source
     assert "post.seriesId" in source
+    assert 'className: "post-series-link"' in source
+    assert 'showSeriesAction: true' in source
+    assert 'showEmptySummary: true' in source
+    assert "post.sourceSummary || showEmptySummary" in source
+    assert 'exploreFilterHref(exploreState, { topics: [topic] })' in source
+    assert 'exploreFilterHref(exploreState, { tag })' in source
+    assert '`筛选标签：${tag}`' in source
+    assert 'on: { click: prepareExploreFilterNavigation }' in source
     assert '"aria-live": "polite"' in source
     assert "showSummary: true, showActions: true" in source
     assert 'text: "查看系列 →"' in source
@@ -98,3 +116,8 @@ def test_web_app_uses_safe_dom_and_expected_interaction_contract():
     assert "-webkit-backdrop-filter: none" in styles
     assert "width: calc(100% - 20px - env(safe-area-inset-left) - env(safe-area-inset-right))" in styles
     assert "transform: translateX(-50%)" in styles
+    assert ".post-series-link" in styles
+    assert ".post-summary.is-empty" in styles
+    assert ".pill.is-filter-link:hover" in styles
+    assert ".results-controls" in styles
+    assert ".page-size-wrap" in styles

@@ -1,4 +1,6 @@
 const PAGE_SIZE = 24;
+const PAGE_SIZE_OPTIONS = [12, 24, 48, 96];
+const EMPTY_SUMMARY_VALUES = new Set(["null", "none", "undefined", "nan"]);
 const THEME_KEY = "spaces-index-theme";
 const READ_POSTS_KEY = "spaces-index-read-posts-v1";
 const GITHUB_STARS_CACHE_KEY = "spaces-index-github-stars-v1";
@@ -84,6 +86,12 @@ function createSvgElement(tag, attrs = {}, children = []) {
 
 function normalizeText(value) {
   return String(value ?? "").normalize("NFKC").toLocaleLowerCase("zh-CN").trim();
+}
+
+function normalizeSummary(value) {
+  if (value === null || value === undefined) return "";
+  const summary = String(value).trim();
+  return EMPTY_SUMMARY_VALUES.has(summary.normalize("NFKC").toLowerCase()) ? "" : summary;
 }
 
 function safeDecode(value) {
@@ -187,7 +195,7 @@ function normalizeCatalog(raw) {
     sourceTags: Array.isArray(post.sourceTags ?? post.source_tags)
       ? (post.sourceTags ?? post.source_tags).map(String)
       : [],
-    sourceSummary: String(post.sourceSummary ?? post.source_summary ?? ""),
+    sourceSummary: normalizeSummary(post.sourceSummary ?? post.source_summary),
     topics: Array.isArray(post.topics) ? post.topics.map(String) : [],
     series: post.series ? String(post.series) : null,
     seriesId: post.seriesId ?? post.series_id ? String(post.seriesId ?? post.series_id) : null,
@@ -522,24 +530,74 @@ function createSelect({ id, label, value, values, options, multiple = false, onC
   return root;
 }
 
+function createPageSizeSelect({ id, value, onChange }) {
+  return createElement("div", { className: "page-size-wrap" }, createSelect({
+    id,
+    label: "每页篇数",
+    value: String(value),
+    options: PAGE_SIZE_OPTIONS.map((pageSize) => ({
+      value: String(pageSize),
+      label: `每页 ${pageSize} 篇`,
+    })),
+    onChange: (pageSize) => onChange(Number(pageSize)),
+  }));
+}
+
 document.addEventListener("pointerdown", (event) => {
   document.querySelectorAll(".select-control.is-open").forEach((root) => {
     if (!root.contains(event.target) && root._closeSelect) root._closeSelect();
   });
 });
 
-function makePills(post, limit = 4) {
+function prepareExploreFilterNavigation(event) {
+  if (event.button !== 0 || event.metaKey || event.ctrlKey || event.shiftKey || event.altKey) return;
+  ui.scrollAfterRender = true;
+}
+
+function exploreFilterHref(state, patch) {
+  const next = {
+    ...state,
+    ...patch,
+    page: 1,
+  };
+  return hrefFor("/explore", exploreParams(next));
+}
+
+function makePills(post, limit = 4, { exploreState = null } = {}) {
   const row = createElement("div", { className: "pill-row" });
   for (const topic of post.topics.slice(0, 2)) {
-    row.append(createElement("a", { className: "pill", text: topic, href: topicHref(topic) }));
+    const href = exploreState
+      ? exploreFilterHref(exploreState, { topics: [topic] })
+      : topicHref(topic);
+    row.append(createElement("a", {
+      className: "pill is-filter-link is-topic-link",
+      text: topic,
+      href,
+      attrs: { "aria-label": exploreState ? `筛选主题：${topic}` : `查看主题：${topic}` },
+      on: exploreState ? { click: prepareExploreFilterNavigation } : null,
+    }));
   }
   for (const tag of post.sourceTags.slice(0, Math.max(0, limit - post.topics.slice(0, 2).length))) {
-    row.append(createElement("span", { className: "pill", text: `# ${tag}` }));
+    const params = new URLSearchParams();
+    params.set("tag", tag);
+    row.append(createElement("a", {
+      className: "pill is-filter-link is-tag-link",
+      text: `# ${tag}`,
+      href: exploreState ? exploreFilterHref(exploreState, { tag }) : hrefFor("/explore", params),
+      attrs: { "aria-label": `筛选标签：${tag}` },
+      on: { click: prepareExploreFilterNavigation },
+    }));
   }
   return row;
 }
 
-function makePostCard(post, { showSummary = true, showActions = false } = {}) {
+function makePostCard(post, {
+  showSummary = true,
+  showEmptySummary = false,
+  showActions = false,
+  showSeriesAction = false,
+  exploreState = null,
+} = {}) {
   const card = createElement("article", {
     className: `post-card${showActions ? " has-actions" : ""}${isPostRead(post.id) ? " is-read" : ""}`,
   });
@@ -559,22 +617,27 @@ function makePostCard(post, { showSummary = true, showActions = false } = {}) {
     createElement("span", { text: formatDate(post.date) }),
     post.sourceCategory ? createElement("span", { text: post.sourceCategory }) : null,
     post.seriesId ? createElement("a", {
-      text: post.seriesIndex !== null ? `${post.series} · ${post.seriesIndex}` : post.series,
+      className: "post-series-link",
+      text: `系列：${post.seriesIndex !== null ? `${post.series} · ${post.seriesIndex}` : post.series} →`,
       href: seriesHref(post.seriesId),
+      attrs: { "aria-label": `查看系列：${post.series}` },
     }) : null,
     makeReadBadge(post),
   ]);
   content.append(meta);
-  if (showSummary && post.sourceSummary) {
-    content.append(createElement("p", { className: "post-summary", text: post.sourceSummary }));
+  if (showSummary && (post.sourceSummary || showEmptySummary)) {
+    content.append(createElement("p", {
+      className: `post-summary${post.sourceSummary ? "" : " is-empty"}`,
+      text: post.sourceSummary || "暂无小结",
+    }));
   }
   content.append(createElement("div", { className: "post-card-footer" }, [
-    makePills(post),
+    makePills(post, 4, { exploreState }),
     makeReadToggle(post, card),
   ]));
-  if (showActions) {
+  if (showActions || (showSeriesAction && post.seriesId)) {
     const actions = createElement("div", { className: "post-card-actions" });
-    if (safeUrl) {
+    if (showActions && safeUrl) {
       actions.append(createElement("a", {
         className: "post-card-action",
         text: "阅读原文 ↗",
@@ -824,8 +887,21 @@ function readExploreState(params) {
     read: ["read", "unread"].includes(read) ? read : "",
     level: params.get("level") ?? "",
     sort: params.get("sort") ?? (params.get("q") ? "relevance" : "latest"),
+    pageSize: readPageSize(params),
     page: Math.max(1, Number.parseInt(params.get("page") ?? "1", 10) || 1),
   };
+}
+
+function readPageSize(params) {
+  const pageSize = Number.parseInt(params.get("size") ?? String(PAGE_SIZE), 10);
+  return PAGE_SIZE_OPTIONS.includes(pageSize) ? pageSize : PAGE_SIZE;
+}
+
+function pageParams(page, pageSize) {
+  const params = new URLSearchParams();
+  if (pageSize !== PAGE_SIZE) params.set("size", String(pageSize));
+  if (page > 1) params.set("page", String(page));
+  return params;
 }
 
 function exploreParams(state) {
@@ -841,6 +917,7 @@ function exploreParams(state) {
   if (state.level) params.set("level", state.level);
   const defaultSort = state.q ? "relevance" : "latest";
   if (state.sort && state.sort !== defaultSort) params.set("sort", state.sort);
+  if (state.pageSize !== PAGE_SIZE) params.set("size", String(state.pageSize));
   if (state.page > 1) params.set("page", String(state.page));
   return params;
 }
@@ -986,9 +1063,9 @@ function makePagination({ current, total, href }) {
 function renderExplore(catalog, params) {
   const state = readExploreState(params);
   const results = searchAndFilter(catalog, state);
-  const totalPages = Math.max(1, Math.ceil(results.length / PAGE_SIZE));
+  const totalPages = Math.max(1, Math.ceil(results.length / state.pageSize));
   const currentPage = Math.min(state.page, totalPages);
-  const pageResults = results.slice((currentPage - 1) * PAGE_SIZE, currentPage * PAGE_SIZE);
+  const pageResults = results.slice((currentPage - 1) * state.pageSize, currentPage * state.pageSize);
   const view = createElement("div", { className: "view" });
 
   const heroShell = createElement("div", { className: "page-shell" });
@@ -1228,6 +1305,11 @@ function renderExplore(catalog, params) {
     ],
     onChange: (sortValue) => updateExplore(state, { sort: sortValue }),
   });
+  const pageSizeControl = createPageSizeSelect({
+    id: "explore-page-size",
+    value: state.pageSize,
+    onChange: (pageSize) => updateExplore(state, { pageSize }),
+  });
   const toolbar = createElement("div", { className: "results-toolbar" }, [
     createElement("div", { className: "results-meta" }, [
       createElement("button", {
@@ -1250,7 +1332,10 @@ function renderExplore(catalog, params) {
         dataset: { readProgress: "" },
       }),
     ]),
-    createElement("div", { className: "sort-wrap" }, sort),
+    createElement("div", { className: "results-controls" }, [
+      createElement("div", { className: "sort-wrap" }, sort),
+      pageSizeControl,
+    ]),
   ]);
   resultsColumn.append(toolbar);
 
@@ -1268,7 +1353,11 @@ function renderExplore(catalog, params) {
 
   if (pageResults.length) {
     const list = createElement("div", { className: "post-list" });
-    pageResults.forEach((post) => list.append(makePostCard(post)));
+    pageResults.forEach((post) => list.append(makePostCard(post, {
+      showEmptySummary: true,
+      showSeriesAction: true,
+      exploreState: state,
+    })));
     resultsColumn.append(list);
     const pagination = makePagination({
       current: currentPage,
@@ -1329,9 +1418,10 @@ function renderTopicDetail(catalog, name, params) {
   if (!topic && !posts.length) return renderNotFound("没有找到这个主题", "它可能已被合并，或链接中的名称发生了变化。", "#/topics");
 
   const rawPage = Math.max(1, Number.parseInt(params.get("page") ?? "1", 10) || 1);
-  const totalPages = Math.max(1, Math.ceil(posts.length / PAGE_SIZE));
+  const pageSize = readPageSize(params);
+  const totalPages = Math.max(1, Math.ceil(posts.length / pageSize));
   const page = Math.min(rawPage, totalPages);
-  const pagePosts = posts.slice((page - 1) * PAGE_SIZE, page * PAGE_SIZE);
+  const pagePosts = posts.slice((page - 1) * pageSize, page * pageSize);
   const relatedSeries = catalog.series.filter((series) => series.topic === name).sort((a, b) => b.count - a.count);
   const years = unique(posts.map((post) => post.date.slice(0, 4)).filter(Boolean)).sort();
 
@@ -1373,18 +1463,26 @@ function renderTopicDetail(catalog, name, params) {
     id: "page-results",
     attrs: { tabindex: "-1" },
   });
-  articles.append(createSectionHeading("Articles", `${name}文章`, `第 ${page} / ${totalPages} 页`));
+  const articleHeading = createSectionHeading("Articles", `${name}文章`, `第 ${page} / ${totalPages} 页`);
+  articleHeading.append(createPageSizeSelect({
+    id: "topic-page-size",
+    value: pageSize,
+    onChange: (nextPageSize) => setHash(
+      `/topics/${encodeURIComponent(name)}`,
+      pageParams(1, nextPageSize),
+    ),
+  }));
+  articles.append(articleHeading);
   const list = createElement("div", { className: "post-list" });
   pagePosts.forEach((post) => list.append(makePostCard(post)));
   articles.append(list);
   const pagination = makePagination({
     current: page,
     total: totalPages,
-    href: (nextPage) => {
-      const query = new URLSearchParams();
-      if (nextPage > 1) query.set("page", String(nextPage));
-      return hrefFor(`/topics/${encodeURIComponent(name)}`, query);
-    },
+    href: (nextPage) => hrefFor(
+      `/topics/${encodeURIComponent(name)}`,
+      pageParams(nextPage, pageSize),
+    ),
   });
   if (pagination) articles.append(pagination);
   shell.append(articles);
@@ -1489,7 +1587,10 @@ function renderSeriesDetail(catalog, id) {
         post.level ? createElement("span", { text: LEVEL_LABELS[post.level] ?? post.level }) : null,
         makeReadBadge(post),
       ]),
-      post.sourceSummary ? createElement("p", { className: "post-summary", text: post.sourceSummary }) : null,
+      createElement("p", {
+        className: `post-summary${post.sourceSummary ? "" : " is-empty"}`,
+        text: post.sourceSummary || "暂无小结",
+      }),
       createElement("div", { className: "timeline-actions" }, [makeReadToggle(post, item)]),
     );
     timeline.append(item);

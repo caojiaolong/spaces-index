@@ -75,6 +75,14 @@ def _optional_text(value: Any) -> str | None:
     return cleaned or None
 
 
+def _optional_summary(value: Any) -> str | None:
+    cleaned = _optional_text(value)
+    if cleaned is None:
+        return None
+    normalized = unicodedata.normalize("NFKC", cleaned).casefold()
+    return None if normalized in {"null", "none", "undefined", "nan"} else cleaned
+
+
 def _string_list(value: Any) -> list[str]:
     if value is None:
         return []
@@ -170,7 +178,7 @@ def _project_post(post: dict[str, Any]) -> dict[str, Any]:
         "date": _clean_text(post.get("date")),
         "sourceCategory": _optional_text(post.get("source_category")),
         "sourceTags": _string_list(post.get("source_tags")),
-        "sourceSummary": _optional_text(post.get("source_summary")),
+        "sourceSummary": _optional_summary(post.get("source_summary")),
         "topics": topics,
         "series": series,
         "seriesId": None,

@@ -54,6 +54,7 @@ SAMPLE_POSTS = [
         "date": "2024-06-01",
         "source_category": "信息时代",
         "source_tags": ["Transformer"],
+        "source_summary": "null",
         "topics": ["大模型与Transformer"],
         "series": "示例系列",
         "series_index": 1,
@@ -98,6 +99,7 @@ def test_catalog_projects_only_metadata_and_computes_stats() -> None:
 
     by_id = {post["id"]: post for post in catalog["posts"]}
     assert by_id["30"]["sourceSummary"] is None
+    assert by_id["10"]["sourceSummary"] is None
     assert by_id["30"]["url"] is None
     assert by_id["30"]["seriesId"] is None
     assert by_id["20"]["sourceSummary"] == "明确的小结短摘录。"
