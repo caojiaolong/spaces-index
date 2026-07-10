@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="zh-CN" data-theme="light">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="科学空间文章的非官方元数据索引：按主题、系列、标签与时间探索。">
+    <meta name="theme-color" content="#f5f6fa">
+    <title>科学空间索引</title>
+    <script>
+      (() => {
+        let saved = "system";
+        try { saved = localStorage.getItem("spaces-index-theme") || "system"; } catch { /* Storage may be disabled. */ }
+        if (!["system", "light", "dark"].includes(saved)) saved = "system";
+        const dark = matchMedia("(prefers-color-scheme: dark)").matches;
+        document.documentElement.dataset.theme = saved === "system" ? (dark ? "dark" : "light") : saved;
+        document.documentElement.dataset.themePreference = saved;
+      })();
+    </script>
+    <link rel="stylesheet" href="./styles.css">
+  </head>
+  <body>
+    <a class="skip-link" href="#main">跳到主要内容</a>
+    <div class="ambient ambient-one" aria-hidden="true"></div>
+    <div class="ambient ambient-two" aria-hidden="true"></div>
+
+    <header class="site-header" id="site-header">
+      <a class="brand" href="#/" aria-label="科学空间索引首页">
+        <span class="brand-mark" aria-hidden="true">∿</span>
+        <span>科学空间<span class="brand-muted">索引</span></span>
+      </a>
+      <nav class="main-nav" aria-label="主要导航">
+        <a href="#/" data-nav="home">首页</a>
+        <a href="#/explore" data-nav="explore">探索</a>
+        <a href="#/topics" data-nav="topics">主题</a>
+        <a href="#/series" data-nav="series">系列</a>
+        <a href="#/about" data-nav="about">关于</a>
+      </nav>
+      <div class="header-actions">
+        <a class="github-link icon-button" id="github-link" href="https://github.com/caojiaolong/spaces-index" target="_blank" rel="noopener noreferrer" aria-label="在 GitHub 查看项目，Star 数正在加载">
+          <span class="github-label">GitHub</span>
+          <span class="github-stars" id="github-stars">★ …</span>
+        </a>
+        <button class="theme-toggle icon-button" id="theme-toggle" type="button" aria-label="切换颜色主题">
+          <span aria-hidden="true" id="theme-icon">◐</span>
+          <span class="theme-label" id="theme-label">跟随系统</span>
+        </button>
+      </div>
+    </header>
+
+    <noscript>
+      <style>#main { display: none; }</style>
+      <section class="noscript-notice">
+        <h1>这个交互索引需要 JavaScript</h1>
+        <p>你仍然可以在 GitHub 查看完整的静态元数据，或直接访问科学空间原站。</p>
+        <p><a href="https://github.com/caojiaolong/spaces-index/tree/main/docs">查看 GitHub 元数据</a> · <a href="https://spaces.ac.cn/">访问科学空间</a></p>
+      </section>
+    </noscript>
+
+    <main id="main" tabindex="-1">
+      <section class="loading-state">
+        <span class="loading-orbit" aria-hidden="true"></span>
+        <p>正在展开知识坐标…</p>
+      </section>
+    </main>
+
+    <div class="drawer-backdrop" id="drawer-backdrop" hidden></div>
+    <div class="toast-region" id="toast-region" role="status" aria-live="polite"></div>
+    <button class="back-to-top" id="back-to-top" type="button" aria-label="返回页面顶部" aria-hidden="true" tabindex="-1" title="返回顶部">
+      <span aria-hidden="true">↑</span>
+    </button>
+    <script defer src="./app.js"></script>
+  </body>
+</html>

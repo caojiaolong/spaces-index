@@ -1,6 +1,29 @@
-# 科学空间文章索引
+<p align="center">
+  <img src="assets/readme-hero.svg" alt="科学空间文章索引：由曲线、节点与公式组成的抽象数学图形" width="100%">
+</p>
 
-本项目自动抓取并索引 [科学空间](https://spaces.ac.cn/) 的文章元数据，按研究主题进行规则分类，方便在 GitHub 上快速浏览并跳转到原文。
+<h1 align="center">科学空间文章索引</h1>
+
+<p align="center"><strong>在科学与公式之间，找到下一篇值得读的文章。</strong></p>
+<p align="center">
+  <a href="https://caojiaolong.github.io/spaces-index/"><strong>在线探索</strong></a>
+  ·
+  <a href="https://spaces.ac.cn/">访问科学空间</a>
+  ·
+  <a href="docs/index.md">详细元数据</a>
+</p>
+<p align="center"><sub>非官方、持续更新、只保存元数据，不镜像文章正文。</sub></p>
+
+## 最近更新
+
+> **2026-07-10 · 交互式 GitHub Pages 体验升级**
+
+- **更适合手机浏览**：重做移动端首屏、统计卡片和底部导航，筛选使用底部抽屉，并提供右下角返回顶部按钮。
+- **最近文章更有上下文**：在线首页直接展示文章小结；属于系列的文章可以一键进入完整系列时间线。
+- **探索筛选更完整**：支持搜索、主题、标签、年份、难度、系列文章、非系列文章以及已读/未读组合筛选，筛选状态可以随 URL 分享。
+- **本地阅读进度**：点击原文会自动标为已读，也可以手动切换；记录只保存在当前浏览器，不会上传。
+
+[前往在线索引体验这些功能 →](https://caojiaolong.github.io/spaces-index/)
 
 ## 为什么做这个索引
 
@@ -8,89 +31,100 @@
 
 这个仓库的目标是把科学空间的所有文章做成一个持续更新的元数据索引：不复制全文，只保存标题、日期、原文链接、原站分类、标签、自动主题和系列信息，并通过 GitHub Actions 定时更新。这样读者可以直接按主题或系列查找文章，跳转回原站阅读，也不用担心索引长期失修。
 
-- 最近更新日期：2026-07-06（按归档中最新文章日期）
-- 文章总数：1326
-- 版权说明：本项目保存标题、链接、日期、分类、标签、自动主题、系列信息和少量小结短摘录，不镜像、复制或保存文章全文。
+| 文章 | 主题 | 系列 | 最近更新 |
+| ---: | ---: | ---: | :---: |
+| 1326 篇 | 17 个 | 55 个 | 2026-07-06 |
+
+> 本项目保存标题、链接、日期、分类、标签、自动主题、系列信息和少量小结短摘录；不镜像、复制或保存文章全文。
+
+## 三种浏览方式
+
+- [全文检索](https://caojiaolong.github.io/spaces-index/#/explore)：按标题、标签、系列和小结快速搜索，组合主题、年份、系列状态与已读状态等筛选条件。
+- [主题漫游](https://caojiaolong.github.io/spaces-index/#/topics)：从大模型、数学、自然科学等方向逐层发现文章。
+- [系列阅读](https://caojiaolong.github.io/spaces-index/#/series)：按章节顺序阅读 Transformer、扩散模型等长篇系列。
 
 ## 目录
 
+<details>
+<summary><strong>展开完整主题、系列与非系列目录</strong></summary>
+
 - [深度学习基础（121 篇）](#topic-deep-learning)
-  - [重新思考学习率与Batch Size（4 篇）](#series-deep-learning-69126a7846)
-  - [多任务学习漫谈（3 篇）](#series-deep-learning-0ac9606400)
-  - [“让Keras更酷一些！”（7 篇）](#series-deep-learning-e73395bb77)
-  - [文本情感分类（4 篇）](#series-deep-learning-4b0540d8f5)
+  - [重新思考学习率与Batch Size（4 篇）](https://caojiaolong.github.io/spaces-index/#/series/series-7e434c5c57cd)
+  - [多任务学习漫谈（3 篇）](https://caojiaolong.github.io/spaces-index/#/series/series-0ac96064005b)
+  - [“让Keras更酷一些！”（7 篇）](https://caojiaolong.github.io/spaces-index/#/series/series-578e6271b73c)
+  - [文本情感分类（4 篇）](https://caojiaolong.github.io/spaces-index/#/series/series-4b0540d8f579)
   - [非系列文章（103 篇）](#series-deep-learning-standalone)
 - [词向量与Embedding（24 篇）](#topic-embeddings)
-  - [CoSENT（3 篇）](#series-embeddings-2949022b50)
-  - [更别致的词向量模型（6 篇）](#series-embeddings-83ff2143be)
-  - [不可思议的Word2Vec（6 篇）](#series-embeddings-5025fd40f6)
+  - [CoSENT（3 篇）](https://caojiaolong.github.io/spaces-index/#/series/series-380e395e0231)
+  - [更别致的词向量模型（6 篇）](https://caojiaolong.github.io/spaces-index/#/series/series-83ff2143be8b)
+  - [不可思议的Word2Vec（6 篇）](https://caojiaolong.github.io/spaces-index/#/series/series-b9f4ef1c4dfa)
   - [非系列文章（9 篇）](#series-embeddings-standalone)
 - [大模型与Transformer（151 篇）](#topic-transformer)
-  - [MoE环游记（9 篇）](#series-transformer-f5569856ba)
-  - [MuP之上（4 篇）](#series-transformer-86fdf79074)
-  - [Transformer升级之路（21 篇）](#series-transformer-34e65637fd)
-  - [“闭门造车”之多模态思路浅谈（3 篇）](#series-transformer-2e7d329847)
-  - [对齐全量微调！这是我看过最精彩的LoRA改进（2 篇）](#series-transformer-32697fc150)
-  - [重温SSM（4 篇）](#series-transformer-7e9346ae49)
+  - [MoE环游记（9 篇）](https://caojiaolong.github.io/spaces-index/#/series/series-34fc554ca8f0)
+  - [MuP之上（4 篇）](https://caojiaolong.github.io/spaces-index/#/series/series-894387d0ec66)
+  - [Transformer升级之路（21 篇）](https://caojiaolong.github.io/spaces-index/#/series/series-43ce6f7a2fb9)
+  - [“闭门造车”之多模态思路浅谈（3 篇）](https://caojiaolong.github.io/spaces-index/#/series/series-2e7d3298470e)
+  - [对齐全量微调！这是我看过最精彩的LoRA改进（2 篇）](https://caojiaolong.github.io/spaces-index/#/series/series-2e10ffe13211)
+  - [重温SSM（4 篇）](https://caojiaolong.github.io/spaces-index/#/series/series-5070561d10c9)
   - [非系列文章（108 篇）](#series-transformer-standalone)
 - [生成模型（124 篇）](#topic-generative-models)
-  - [生成扩散模型漫谈（31 篇）](#series-generative-models-e48ccca641)
-  - [细水长flow（5 篇）](#series-generative-models-9738e76a31)
-  - [变分自编码器（8 篇）](#series-generative-models-c26095ce70)
-  - [搜出来的文本（4 篇）](#series-generative-models-efbc1f2b0e)
-  - [能量视角下的GAN模型（3 篇）](#series-generative-models-cbc622e222)
+  - [生成扩散模型漫谈（31 篇）](https://caojiaolong.github.io/spaces-index/#/series/series-e48ccca641f8)
+  - [细水长flow（5 篇）](https://caojiaolong.github.io/spaces-index/#/series/series-9738e76a3125)
+  - [变分自编码器（8 篇）](https://caojiaolong.github.io/spaces-index/#/series/series-c26095ce70d7)
+  - [搜出来的文本（4 篇）](https://caojiaolong.github.io/spaces-index/#/series/series-efbc1f2b0e42)
+  - [能量视角下的GAN模型（3 篇）](https://caojiaolong.github.io/spaces-index/#/series/series-bf3266b9c1b3)
   - [非系列文章（73 篇）](#series-generative-models-standalone)
 - [优化与训练（104 篇）](#topic-optimization)
-  - [让炼丹更科学一些（7 篇）](#series-optimization-22f3c62045)
-  - [流形上的最速下降（6 篇）](#series-optimization-9aa52368b1)
-  - [基于流式幂迭代的Muon实现（5 篇）](#series-optimization-2adf8edae5)
-  - [AdamW的Weight RMS的渐近估计（2 篇）](#series-optimization-623aab7f21)
-  - [通过msign来计算奇异值裁剪mclip（2 篇）](#series-optimization-297337ae72)
-  - [msign算子的Newton-Schulz迭代（2 篇）](#series-optimization-d27a2576eb)
-  - [从动力学角度看优化算法（7 篇）](#series-optimization-4b38446b55)
+  - [让炼丹更科学一些（7 篇）](https://caojiaolong.github.io/spaces-index/#/series/series-22f3c6204559)
+  - [流形上的最速下降（6 篇）](https://caojiaolong.github.io/spaces-index/#/series/series-9aa52368b14f)
+  - [基于流式幂迭代的Muon实现（5 篇）](https://caojiaolong.github.io/spaces-index/#/series/series-b7bbf4382414)
+  - [AdamW的Weight RMS的渐近估计（2 篇）](https://caojiaolong.github.io/spaces-index/#/series/series-ae309a12502d)
+  - [通过msign来计算奇异值裁剪mclip（2 篇）](https://caojiaolong.github.io/spaces-index/#/series/series-297337ae72f8)
+  - [msign算子的Newton-Schulz迭代（2 篇）](https://caojiaolong.github.io/spaces-index/#/series/series-a60856a07854)
+  - [从动力学角度看优化算法（7 篇）](https://caojiaolong.github.io/spaces-index/#/series/series-4b38446b55a8)
   - [非系列文章（73 篇）](#series-optimization-standalone)
 - [数学工具（377 篇）](#topic-math)
-  - [低秩近似之路（5 篇）](#series-math-6689ddf615)
-  - [SVD分解（3 篇）](#series-math-6a0e7d7415)
-  - [外微分浅谈（7 篇）](#series-math-07dc7181b7)
-  - [路径积分系列（5 篇）](#series-math-f5eea49ebf)
-  - [“熵”不起：从熵、最大熵原理到最大熵模型（3 篇）](#series-math-a994c848cb)
-  - [高斯型积分的微扰展开（3 篇）](#series-math-06b60440b9)
-  - [从费马大定理谈起（12 篇）](#series-math-df510aaec3)
-  - [新理解矩阵（6 篇）](#series-math-26a49a282f)
-  - [求解微分方程的李对称方法（2 篇）](#series-math-aeb91e1623)
-  - [数学基本技艺之23、24（2 篇）](#series-math-c295ed4753)
-  - [纠缠的时空（3 篇）](#series-math-ce0fb96873)
-  - [费曼积分法（4 篇）](#series-math-ec7e1e24d2)
-  - [轻微的扰动——摄动法简介（3 篇）](#series-math-4c07e201c9)
-  - [费曼路径积分思想的发展（4 篇）](#series-math-246a7a31d9)
-  - [算子与线性常微分方程（2 篇）](#series-math-7a80644aea)
-  - [费曼积分法——积分符号内取微分（4 篇）](#series-math-e14089cebd)
-  - [《教材如何写》（3 篇）](#series-math-f9866e4ce1)
-  - [自然极值（8 篇）](#series-math-5e3917ad32)
-  - [向量（5 篇）](#series-math-fae158475e)
-  - [微积分学习（2 篇）](#series-math-d050b16b4d)
+  - [低秩近似之路（5 篇）](https://caojiaolong.github.io/spaces-index/#/series/series-6689ddf615c5)
+  - [SVD分解（3 篇）](https://caojiaolong.github.io/spaces-index/#/series/series-cb4267a83e5b)
+  - [外微分浅谈（7 篇）](https://caojiaolong.github.io/spaces-index/#/series/series-07dc7181b71c)
+  - [路径积分系列（5 篇）](https://caojiaolong.github.io/spaces-index/#/series/series-f5eea49ebf11)
+  - [“熵”不起：从熵、最大熵原理到最大熵模型（3 篇）](https://caojiaolong.github.io/spaces-index/#/series/series-8ebf25071da3)
+  - [高斯型积分的微扰展开（3 篇）](https://caojiaolong.github.io/spaces-index/#/series/series-06b60440b9ca)
+  - [从费马大定理谈起（12 篇）](https://caojiaolong.github.io/spaces-index/#/series/series-df510aaec380)
+  - [新理解矩阵（6 篇）](https://caojiaolong.github.io/spaces-index/#/series/series-26a49a282f58)
+  - [求解微分方程的李对称方法（2 篇）](https://caojiaolong.github.io/spaces-index/#/series/series-aeb91e162348)
+  - [数学基本技艺之23、24（2 篇）](https://caojiaolong.github.io/spaces-index/#/series/series-c295ed4753b1)
+  - [纠缠的时空（3 篇）](https://caojiaolong.github.io/spaces-index/#/series/series-ce0fb9687384)
+  - [费曼积分法（4 篇）](https://caojiaolong.github.io/spaces-index/#/series/series-ec7e1e24d2d0)
+  - [轻微的扰动——摄动法简介（3 篇）](https://caojiaolong.github.io/spaces-index/#/series/series-4c07e201c9e6)
+  - [费曼路径积分思想的发展（4 篇）](https://caojiaolong.github.io/spaces-index/#/series/series-246a7a31d942)
+  - [算子与线性常微分方程（2 篇）](https://caojiaolong.github.io/spaces-index/#/series/series-7a80644aeae9)
+  - [费曼积分法——积分符号内取微分（4 篇）](https://caojiaolong.github.io/spaces-index/#/series/series-e14089cebdfb)
+  - [《教材如何写》（3 篇）](https://caojiaolong.github.io/spaces-index/#/series/series-f9866e4ce115)
+  - [自然极值（8 篇）](https://caojiaolong.github.io/spaces-index/#/series/series-5e3917ad3216)
+  - [向量（5 篇）](https://caojiaolong.github.io/spaces-index/#/series/series-fae158475ede)
+  - [微积分学习（2 篇）](https://caojiaolong.github.io/spaces-index/#/series/series-d050b16b4d9c)
   - [非系列文章（291 篇）](#series-math-standalone)
 - [概率统计与信息论（84 篇）](#topic-probability-info)
-  - [最小熵原理（6 篇）](#series-probability-info-2e7e2c4698)
+  - [最小熵原理（6 篇）](https://caojiaolong.github.io/spaces-index/#/series/series-2e7e2c469894)
   - [非系列文章（78 篇）](#series-probability-info-standalone)
 - [几何与方程（106 篇）](#topic-geometry-equations)
-  - [理解黎曼几何（8 篇）](#series-geometry-equations-41868e210e)
+  - [理解黎曼几何（8 篇）](https://caojiaolong.github.io/spaces-index/#/series/series-41868e210e17)
   - [非系列文章（98 篇）](#series-geometry-equations-standalone)
 - [NLP与信息抽取（92 篇）](#topic-nlp)
-  - [中文分词系列（8 篇）](#series-nlp-73a0edf1cd)
-  - [OCR技术浅探（10 篇）](#series-nlp-bffb492bca)
+  - [中文分词系列（8 篇）](https://caojiaolong.github.io/spaces-index/#/series/series-73a0edf1cd6e)
+  - [OCR技术浅探（10 篇）](https://caojiaolong.github.io/spaces-index/#/series/series-2315cbccffcf)
   - [非系列文章（74 篇）](#series-nlp-standalone)
 - [工程工具（124 篇）](#topic-engineering)
-  - [通用爬虫探索（3 篇）](#series-engineering-c6d727fb3c)
+  - [通用爬虫探索（3 篇）](https://caojiaolong.github.io/spaces-index/#/series/series-c6d727fb3c99)
   - [非系列文章（121 篇）](#series-engineering-standalone)
 - [天文科普（197 篇）](#topic-astronomy)
   - [非系列文章（197 篇）](#series-astronomy-standalone)
 - [物理化学（123 篇）](#topic-physics-chemistry)
-  - [一本对称闯物理：相对论力学（2 篇）](#series-physics-chemistry-f244e6dc90)
-  - [一维弹簧的运动（2 篇）](#series-physics-chemistry-b0ed9e05e7)
-  - [力学系统及其对偶性（3 篇）](#series-physics-chemistry-e231e49a33)
-  - [电偶极子浅探（2 篇）](#series-physics-chemistry-04bb391ccb)
+  - [一本对称闯物理：相对论力学（2 篇）](https://caojiaolong.github.io/spaces-index/#/series/series-0ca64e521336)
+  - [一维弹簧的运动（2 篇）](https://caojiaolong.github.io/spaces-index/#/series/series-b0ed9e05e7b3)
+  - [力学系统及其对偶性（3 篇）](https://caojiaolong.github.io/spaces-index/#/series/series-e231e49a335f)
+  - [电偶极子浅探（2 篇）](https://caojiaolong.github.io/spaces-index/#/series/series-04bb391ccb3d)
   - [非系列文章（114 篇）](#series-physics-chemistry-standalone)
 - [生物自然（30 篇）](#topic-biology)
   - [非系列文章（30 篇）](#series-biology-standalone)
@@ -99,7 +133,7 @@
 - [科普问答与百科（97 篇）](#topic-popular-science)
   - [非系列文章（97 篇）](#series-popular-science-standalone)
 - [资源与站务（113 篇）](#topic-resources)
-  - [语料（2 篇）](#series-resources-12d8681743)
+  - [语料（2 篇）](https://caojiaolong.github.io/spaces-index/#/series/series-12d8681743bb)
   - [非系列文章（111 篇）](#series-resources-standalone)
 - [阅读写作与随笔（176 篇）](#topic-essays)
   - [非系列文章（176 篇）](#series-essays-standalone)
@@ -107,33 +141,28 @@
 
 注：系列文章会统一归入该系列的众数主题；非系列文章仍可能属于多个主题，因此目录中的主题数量之和可能大于文章总数。
 
-## 最近 20 篇文章
+</details>
 
-- 2026-07-06 - [让炼丹更科学一些（七）：步长调度与权重平均](https://spaces.ac.cn/archives/11804) - [查看系列](#series-optimization-22f3c62045)
+## 最近 10 篇文章
+
+- 2026-07-06 - [让炼丹更科学一些（七）：步长调度与权重平均](https://spaces.ac.cn/archives/11804) - [查看系列](https://caojiaolong.github.io/spaces-index/#/series/series-22f3c6204559)
 - 2026-06-25 - [矩阵函数近似中的暴力美学](https://spaces.ac.cn/archives/11787)
 - 2026-06-19 - [强制间隔投影（Margin-Enforcing Projection）](https://spaces.ac.cn/archives/11784)
-- 2026-06-17 - [MoE环游记：9、门控归一化之争](https://spaces.ac.cn/archives/11782) - [查看系列](#series-transformer-f5569856ba)
-- 2026-06-08 - [流形上的最速下降：6. Muon + 双旋转](https://spaces.ac.cn/archives/11777) - [查看系列](#series-optimization-9aa52368b1)
+- 2026-06-17 - [MoE环游记：9、门控归一化之争](https://spaces.ac.cn/archives/11782) - [查看系列](https://caojiaolong.github.io/spaces-index/#/series/series-34fc554ca8f0)
+- 2026-06-08 - [流形上的最速下降：6. Muon + 双旋转](https://spaces.ac.cn/archives/11777) - [查看系列](https://caojiaolong.github.io/spaces-index/#/series/series-9aa52368b14f)
 - 2026-06-03 - [为什么官方版Muon比MuP版多出一个max(1, ⋅)？](https://spaces.ac.cn/archives/11772)
 - 2026-05-29 - [矩阵参数的奇异值熵越高越好吗？](https://spaces.ac.cn/archives/11767)
-- 2026-05-22 - [MoE环游记：8、强制序列级均衡](https://spaces.ac.cn/archives/11760) - [查看系列](#series-transformer-f5569856ba)
+- 2026-05-22 - [MoE环游记：8、强制序列级均衡](https://spaces.ac.cn/archives/11760) - [查看系列](https://caojiaolong.github.io/spaces-index/#/series/series-34fc554ca8f0)
 - 2026-05-15 - [DeepSeek V4的tid2eid是怎么来的？](https://spaces.ac.cn/archives/11750)
 - 2026-05-08 - [直接以FID为Loss：从梯度计算到流式训练](https://spaces.ac.cn/archives/11738)
-- 2026-05-04 - [如何更科学地估计矩阵的谱范数？](https://spaces.ac.cn/archives/11736)
-- 2026-04-24 - [MuP之上：4. 坚守参数的稳定性](https://spaces.ac.cn/archives/11729) - [查看系列](#series-transformer-86fdf79074)
-- 2026-04-17 - [基于流式幂迭代的Muon实现：5. 延伸](https://spaces.ac.cn/archives/11719) - [查看系列](#series-optimization-2adf8edae5)
-- 2026-04-13 - [基于流式幂迭代的Muon实现：4. 原理](https://spaces.ac.cn/archives/11710) - [查看系列](#series-optimization-2adf8edae5)
-- 2026-04-07 - [基于流式幂迭代的Muon实现：3. 雕琢](https://spaces.ac.cn/archives/11697) - [查看系列](#series-optimization-2adf8edae5)
-- 2026-03-31 - [中位数（Median）简介](https://spaces.ac.cn/archives/11693)
-- 2026-03-26 - [基于流式幂迭代的Muon实现：2. 加速](https://spaces.ac.cn/archives/11673) - [查看系列](#series-optimization-2adf8edae5)
-- 2026-03-19 - [Attention Residuals 回忆录](https://spaces.ac.cn/archives/11664)
-- 2026-03-12 - [基于流式幂迭代的Muon实现：1. 初识](https://spaces.ac.cn/archives/11654) - [查看系列](#series-optimization-2adf8edae5)
-- 2026-03-02 - [MuP之上：3. 特殊情况特殊处理](https://spaces.ac.cn/archives/11647) - [查看系列](#series-transformer-86fdf79074)
 
 ## 主题分类
 
 <a id="topic-deep-learning"></a>
-### 深度学习基础
+<details>
+<summary><strong>深度学习基础</strong> · 121 篇</summary>
+
+[返回目录](#目录)
 
 <a id="series-deep-learning-69126a7846"></a>
 #### 重新思考学习率与Batch Size [返回目录](#目录)
@@ -276,8 +305,13 @@
 - 2014-09-11 - [\[备份\]全国大学生数学建模竞赛论文LaTex模板](https://spaces.ac.cn/archives/2935)
 - 2013-09-22 - [一个人的数学建模：碎纸复原](https://spaces.ac.cn/archives/2067)
 
+</details>
+
 <a id="topic-embeddings"></a>
-### 词向量与Embedding
+<details>
+<summary><strong>词向量与Embedding</strong> · 24 篇</summary>
+
+[返回目录](#目录)
 
 <a id="series-embeddings-2949022b50"></a>
 #### CoSENT [返回目录](#目录)
@@ -319,8 +353,13 @@
 - 2018-06-13 - [“噪声对比估计”杂谈：曲径通幽之妙](https://spaces.ac.cn/archives/5617)
 - 2016-12-03 - [词向量与Embedding究竟是怎么回事？](https://spaces.ac.cn/archives/4122)
 
+</details>
+
 <a id="topic-transformer"></a>
-### 大模型与Transformer
+<details>
+<summary><strong>大模型与Transformer</strong> · 151 篇</summary>
+
+[返回目录](#目录)
 
 <a id="series-transformer-f5569856ba"></a>
 #### MoE环游记 [返回目录](#目录)
@@ -501,8 +540,13 @@
 - 2018-01-06 - [《Attention is All You Need》浅读（简介+代码）](https://spaces.ac.cn/archives/4765)
 - 2016-12-01 - [基于双向GRU和语言模型的视角情感分析](https://spaces.ac.cn/archives/4118)
 
+</details>
+
 <a id="topic-generative-models"></a>
-### 生成模型
+<details>
+<summary><strong>生成模型</strong> · 124 篇</summary>
+
+[返回目录](#目录)
 
 <a id="series-generative-models-e48ccca641"></a>
 #### 生成扩散模型漫谈 [返回目录](#目录)
@@ -652,8 +696,13 @@
 - 2017-08-26 - [fashion-mnist的gan玩具](https://spaces.ac.cn/archives/4540)
 - 2017-06-08 - [互怼的艺术：从零直达WGAN-GP](https://spaces.ac.cn/archives/4439)
 
+</details>
+
 <a id="topic-optimization"></a>
-### 优化与训练
+<details>
+<summary><strong>优化与训练</strong> · 104 篇</summary>
+
+[返回目录](#目录)
 
 <a id="series-optimization-22f3c62045"></a>
 #### 让炼丹更科学一些 [返回目录](#目录)
@@ -791,8 +840,13 @@
 - 2011-07-27 - [Lamost下的天文夏令营](https://spaces.ac.cn/archives/1452)
 - 2010-04-17 - [Lamost被冠名为“郭守敬望远镜”](https://spaces.ac.cn/archives/604)
 
+</details>
+
 <a id="topic-math"></a>
-### 数学工具
+<details>
+<summary><strong>数学工具</strong> · 377 篇</summary>
+
+[返回目录](#目录)
 
 <a id="series-math-6689ddf615"></a>
 #### 低秩近似之路 [返回目录](#目录)
@@ -1255,8 +1309,13 @@
 - 2009-07-19 - [三次方程的根式求解（通俗版本）](https://spaces.ac.cn/archives/26)
 - 2009-07-08 - [科学空间：一种有趣的平方数](https://spaces.ac.cn/archives/7)
 
+</details>
+
 <a id="topic-probability-info"></a>
-### 概率统计与信息论
+<details>
+<summary><strong>概率统计与信息论</strong> · 84 篇</summary>
+
+[返回目录](#目录)
 
 <a id="series-probability-info-2e7e2c4698"></a>
 #### 最小熵原理 [返回目录](#目录)
@@ -1350,8 +1409,13 @@
 - 2009-08-21 - [网站统计总结|来访信息综合](https://spaces.ac.cn/archives/91)
 - 2009-07-29 - [生活中的趣味数学：同一天生日概率有多大](https://spaces.ac.cn/archives/40)
 
+</details>
+
 <a id="topic-geometry-equations"></a>
-### 几何与方程
+<details>
+<summary><strong>几何与方程</strong> · 106 篇</summary>
+
+[返回目录](#目录)
 
 <a id="series-geometry-equations-41868e210e"></a>
 #### 理解黎曼几何 [返回目录](#目录)
@@ -1467,8 +1531,13 @@
 - 2009-08-24 - [几何-算术均值不等式的一般证明](https://spaces.ac.cn/archives/96)
 - 2009-07-19 - [三次方程的根式求解（通俗版本）](https://spaces.ac.cn/archives/26)
 
+</details>
+
 <a id="topic-nlp"></a>
-### NLP与信息抽取
+<details>
+<summary><strong>NLP与信息抽取</strong> · 92 篇</summary>
+
+[返回目录](#目录)
 
 <a id="series-nlp-73a0edf1cd"></a>
 #### 中文分词系列 [返回目录](#目录)
@@ -1574,8 +1643,13 @@
 - 2016-09-06 - [基于双向LSTM和迁移学习的seq2seq核心实体识别](https://spaces.ac.cn/archives/3942)
 - 2014-08-09 - [素数之美2：Bertrand假设的证明](https://spaces.ac.cn/archives/2800)
 
+</details>
+
 <a id="topic-engineering"></a>
-### 工程工具
+<details>
+<summary><strong>工程工具</strong> · 124 篇</summary>
+
+[返回目录](#目录)
 
 <a id="series-engineering-c6d727fb3c"></a>
 #### 通用爬虫探索 [返回目录](#目录)
@@ -1709,8 +1783,13 @@
 - 2009-07-08 - [网站本次改版感悟...](https://spaces.ac.cn/archives/10)
 - 2009-03-01 - [科学空间|Scientific Spaces 介绍](https://spaces.ac.cn/archives/12)
 
+</details>
+
 <a id="topic-astronomy"></a>
-### 天文科普
+<details>
+<summary><strong>天文科普</strong> · 197 篇</summary>
+
+[返回目录](#目录)
 
 <a id="series-astronomy-standalone"></a>
 #### 非系列文章 [返回目录](#目录)
@@ -1913,8 +1992,13 @@
 - 2009-07-09 - [天文马拉松：观测国际空间站](https://spaces.ac.cn/archives/14)
 - 2009-07-08 - [计算：每年夏至的精确时刻](https://spaces.ac.cn/archives/5)
 
+</details>
+
 <a id="topic-physics-chemistry"></a>
-### 物理化学
+<details>
+<summary><strong>物理化学</strong> · 123 篇</summary>
+
+[返回目录](#目录)
 
 <a id="series-physics-chemistry-f244e6dc90"></a>
 #### 一本对称闯物理：相对论力学 [返回目录](#目录)
@@ -2059,8 +2143,13 @@
 - 2009-07-08 - [百科翻译：臭氧的性质](https://spaces.ac.cn/archives/8)
 - 2009-07-08 - [百科翻译：氢氧化钠（NaOH）的详细介绍](https://spaces.ac.cn/archives/6)
 
+</details>
+
 <a id="topic-biology"></a>
-### 生物自然
+<details>
+<summary><strong>生物自然</strong> · 30 篇</summary>
+
+[返回目录](#目录)
 
 <a id="series-biology-standalone"></a>
 #### 非系列文章 [返回目录](#目录)
@@ -2096,8 +2185,13 @@
 - 2009-07-08 - [【个人翻译】变暖的地球对冷血动物来说过热？](https://spaces.ac.cn/archives/11)
 - 2009-07-07 - [百科翻译：草原上的狐狸（Swift Fox）](https://spaces.ac.cn/archives/4)
 
+</details>
+
 <a id="topic-photography"></a>
-### 图片摄影
+<details>
+<summary><strong>图片摄影</strong> · 68 篇</summary>
+
+[返回目录](#目录)
 
 <a id="series-photography-standalone"></a>
 #### 非系列文章 [返回目录](#目录)
@@ -2171,8 +2265,13 @@
 - 2009-07-31 - [【NASA每日一图】木星的新疤痕](https://spaces.ac.cn/archives/45)
 - 2009-07-18 - [天文望远镜拍到宇宙最美部分(图)](https://spaces.ac.cn/archives/24)
 
+</details>
+
 <a id="topic-popular-science"></a>
-### 科普问答与百科
+<details>
+<summary><strong>科普问答与百科</strong> · 97 篇</summary>
+
+[返回目录](#目录)
 
 <a id="series-popular-science-standalone"></a>
 #### 非系列文章 [返回目录](#目录)
@@ -2275,8 +2374,13 @@
 - 2009-07-08 - [百科翻译：氢氧化钠（NaOH）的详细介绍](https://spaces.ac.cn/archives/6)
 - 2009-07-07 - [百科翻译：草原上的狐狸（Swift Fox）](https://spaces.ac.cn/archives/4)
 
+</details>
+
 <a id="topic-resources"></a>
-### 资源与站务
+<details>
+<summary><strong>资源与站务</strong> · 113 篇</summary>
+
+[返回目录](#目录)
 
 <a id="series-resources-12d8681743"></a>
 #### 语料 [返回目录](#目录)
@@ -2399,8 +2503,13 @@
 - 2009-07-08 - [科学空间：一种有趣的平方数](https://spaces.ac.cn/archives/7)
 - 2009-03-01 - [科学空间|Scientific Spaces 介绍](https://spaces.ac.cn/archives/12)
 
+</details>
+
 <a id="topic-essays"></a>
-### 阅读写作与随笔
+<details>
+<summary><strong>阅读写作与随笔</strong> · 176 篇</summary>
+
+[返回目录](#目录)
 
 <a id="series-essays-standalone"></a>
 #### 非系列文章 [返回目录](#目录)
@@ -2582,10 +2691,17 @@
 - 2009-07-08 - [网站本次改版感悟...](https://spaces.ac.cn/archives/10)
 - 2009-03-01 - [科学空间|Scientific Spaces 介绍](https://spaces.ac.cn/archives/12)
 
+</details>
+
 <a id="topic-other"></a>
-### 其他
+<details>
+<summary><strong>其他</strong> · 0 篇</summary>
+
+[返回目录](#目录)
 
 - 暂无文章。
+
+</details>
 
 
 ## 详细元数据
@@ -2613,26 +2729,33 @@
 
 ```bash
 uv sync
-uv run python scripts/update_all.py
+uv run python scripts/update_all.py --sleep 0.8 --progress-every 25
+uv run python scripts/build_site.py --input data/posts_classified.json --output _site
+# 本地预览（保持此命令运行，再打开 http://127.0.0.1:8000/）
+uv run python -m http.server 8000 --directory _site
 # 可选：补齐历史文章的小结短摘录，会重新访问缺少小结字段的旧文章
 uv run python scripts/update_all.py --refresh-summaries --sleep 0.8
 ```
+
+> 本地预览必须通过 HTTP 服务访问；不要直接双击 `web/index.html` 或 `_site/index.html`。
 
 ## 更新流程
 
 - `fetch_archive.py`：从归档页获取文章 `id`、标题、URL、日期。
 - `enrich_posts.py`：逐篇访问原文页，只提取原站分类、标签和可选小结短摘录，并写入缓存。
 - `classify.py`：根据标题、分类、标签做规则分类，识别系列名与序号，并用系列成员主题众数统一系列主题。
-- `render_markdown.py`：稳定生成 README 和 docs 主题页；README 用于快速浏览直达原文，docs 用于查看分类、标签、系列号、小结摘录等详细元数据。
+- `render_markdown.py`：稳定生成折叠式 README 和 docs 主题页。
+- `build_site.py`：从分类数据构建 `_site/` 静态站点与浏览器端目录数据。
+- GitHub Actions：定时更新索引，并将同一次运行生成的静态产物部署到 GitHub Pages。
 
-## Star 趋势
+## Star History
 
 如果这个索引对你有帮助，欢迎 Star 支持，后续会通过 GitHub Actions 持续更新。
 
 <a href="https://www.star-history.com/?repos=caojiaolong%2Fspaces-index&type=timeline&legend=top-left">
  <picture>
-   <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/chart?repos=caojiaolong/spaces-index&type=timeline&theme=dark&legend=top-left" />
-   <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/chart?repos=caojiaolong/spaces-index&type=timeline&legend=top-left" />
-   <img alt="Star 趋势图" src="https://api.star-history.com/chart?repos=caojiaolong/spaces-index&type=timeline&legend=top-left" />
+   <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/chart?repos=caojiaolong/spaces-index&type=timeline&theme=dark&legend=top-left&sealed_token=1PtTrJfjwB8TiUNumdr03-qtw6bgfzWVHU7gDNV6rSiul2pnBRigKz4Clvj0JKReYQSxBrxmBDqLY85wFZ86ySlHRzel8aw7XfnwQ17BcMI46iGX" />
+   <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/chart?repos=caojiaolong/spaces-index&type=timeline&legend=top-left&sealed_token=1PtTrJfjwB8TiUNumdr03-qtw6bgfzWVHU7gDNV6rSiul2pnBRigKz4Clvj0JKReYQSxBrxmBDqLY85wFZ86ySlHRzel8aw7XfnwQ17BcMI46iGX" />
+   <img alt="Star History Chart" src="https://api.star-history.com/chart?repos=caojiaolong/spaces-index&type=timeline&legend=top-left&sealed_token=1PtTrJfjwB8TiUNumdr03-qtw6bgfzWVHU7gDNV6rSiul2pnBRigKz4Clvj0JKReYQSxBrxmBDqLY85wFZ86ySlHRzel8aw7XfnwQ17BcMI46iGX" />
  </picture>
 </a>

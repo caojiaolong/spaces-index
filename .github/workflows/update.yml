@@ -1,20 +1,28 @@
-name: Update spaces index
+name: Update and deploy spaces index
 
 on:
+  push:
+    branches:
+      - main
   workflow_dispatch:
   schedule:
     - cron: "23 2 * * *"
 
 permissions:
   contents: write
+  pages: write
+  id-token: write
 
 concurrency:
-  group: spaces-index-update
+  group: spaces-index-pages
   cancel-in-progress: false
 
 jobs:
-  update:
+  update-and-deploy:
     runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -33,14 +41,34 @@ jobs:
         run: uv sync --locked
 
       - name: Update index
+        if: github.event_name != 'push'
         run: uv run python scripts/update_all.py --sleep 0.8 --progress-every 25
 
-      - name: Commit changes
+      - name: Run tests
+        run: uv run pytest
+
+      - name: Build site
+        run: uv run python scripts/build_site.py --input data/posts_classified.json --output _site
+
+      - name: Commit refreshed metadata
+        if: github.event_name != 'push'
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          if ! git diff --quiet -- README.md docs data; then
+          if [ -n "$(git status --porcelain -- README.md docs data)" ]; then
             git add README.md docs data
             git commit -m "Update spaces index"
             git push
           fi
+
+      - name: Configure GitHub Pages
+        uses: actions/configure-pages@v5
+
+      - name: Upload GitHub Pages artifact
+        uses: actions/upload-pages-artifact@v4
+        with:
+          path: _site
+
+      - name: Deploy GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4

@@ -49,22 +49,45 @@ def test_readme_contains_topic_links_and_stats():
     assert "https://spaces.ac.cn/archives/1" in readme
     assert "2025-11-17" in readme
     assert "## 目录" in readme
+    assert "展开完整主题、系列与非系列目录" in readme
+    assert "assets/readme-hero.svg" in readme
+    assert "https://caojiaolong.github.io/spaces-index/" in readme
+    assert "非官方、持续更新、只保存元数据" in readme
+    assert "## 最近更新" in readme
+    assert "2026-07-10 · 交互式 GitHub Pages 体验升级" in readme
+    assert "非系列文章以及已读/未读组合筛选" in readme
+    assert "记录只保存在当前浏览器，不会上传" in readme
+    assert readme.index("## 最近更新") < readme.index("## 为什么做这个索引")
+    assert "## 最近 10 篇文章" in readme
+    assert "| 3 篇 | 3 个 | 1 个 | 2025-11-17 |" in readme
+    assert "## 三种浏览方式" in readme
+    assert "uv run python -m http.server 8000 --directory _site" in readme
+    assert "不要直接双击 `web/index.html`" in readme
     assert "- [大模型与Transformer（2 篇）](#topic-transformer)" in readme
-    assert "  - [Transformer升级之路（2 篇）](#series-transformer-" in readme
-    assert "### 大模型与Transformer" in readme
+    assert (
+        "  - [Transformer升级之路（2 篇）]"
+        "(https://caojiaolong.github.io/spaces-index/#/series/series-"
+        in readme
+    )
+    assert "<details>" in readme
+    assert "<summary><strong>大模型与Transformer</strong> · 2 篇</summary>" in readme
+    assert readme.count("<details>") == readme.count("</details>")
     assert "#### Transformer升级之路 [返回目录](#目录)" in readme
     assert "- 2024-05-29 - [Transformer升级之路：18、RoPE的底数选择原则](https://spaces.ac.cn/archives/1)" in readme
     assert (
         "- 2024-05-29 - [Transformer升级之路：18、RoPE的底数选择原则]"
-        "(https://spaces.ac.cn/archives/1) - [查看系列](#series-transformer-"
+        "(https://spaces.ac.cn/archives/1) - [查看系列]"
+        "(https://caojiaolong.github.io/spaces-index/#/series/series-"
         in readme
     )
     assert "## 详细元数据" in readme
     assert readme.index("## 本地运行") > readme.index("## 主题分类")
     assert readme.index("## 更新流程") > readme.index("## 本地运行")
-    assert "## Star 趋势" in readme
+    assert "## Star History" in readme
     assert "如果这个索引对你有帮助，欢迎 Star 支持，后续会通过 GitHub Actions 持续更新" in readme
     assert "api.star-history.com/chart?repos=caojiaolong/spaces-index" in readme
+    assert "sealed_token=1PtTrJfjwB8TiUNumdr03-" in readme
+    assert 'alt="Star History Chart"' in readme
 
 
 def test_topic_page_contains_metadata():

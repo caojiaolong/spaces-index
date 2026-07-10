@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="320" viewBox="0 0 1280 320" role="img" aria-labelledby="title desc">
+  <title id="title">科学空间索引</title>
+  <desc id="desc">由坐标网格、神经网络节点和数学曲线组成的蓝紫色抽象横幅</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#071126"/>
+      <stop offset=".48" stop-color="#101b3a"/>
+      <stop offset="1" stop-color="#171235"/>
+    </linearGradient>
+    <radialGradient id="glowA">
+      <stop stop-color="#69b7ff" stop-opacity=".42"/>
+      <stop offset="1" stop-color="#69b7ff" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="glowB">
+      <stop stop-color="#9e7cff" stop-opacity=".38"/>
+      <stop offset="1" stop-color="#9e7cff" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="curve" x1="0" y1="0" x2="1" y2="0">
+      <stop stop-color="#5fc9ff"/>
+      <stop offset=".5" stop-color="#c4a6ff"/>
+      <stop offset="1" stop-color="#7f74ff"/>
+    </linearGradient>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M40 0H0V40" fill="none" stroke="#d8e6ff" stroke-opacity=".075"/>
+      <circle cx="0" cy="0" r="1.2" fill="#d8e6ff" fill-opacity=".18"/>
+    </pattern>
+    <filter id="soft"><feGaussianBlur stdDeviation="12"/></filter>
+  </defs>
+  <rect width="1280" height="320" rx="24" fill="url(#bg)"/>
+  <rect width="1280" height="320" rx="24" fill="url(#grid)"/>
+  <ellipse cx="200" cy="20" rx="330" ry="250" fill="url(#glowA)"/>
+  <ellipse cx="1160" cy="310" rx="430" ry="280" fill="url(#glowB)"/>
+  <g opacity=".26" fill="none" stroke="#b8c9ff">
+    <path d="M35 262L170 198 290 237 421 124 556 160 694 76 825 123 981 52 1240 106"/>
+    <path d="M55 82C195 31 288 271 438 220S667 42 789 112s236 171 431 79" stroke-dasharray="3 10"/>
+  </g>
+  <path d="M25 222C118 222 153 75 245 75s128 170 223 170S596 96 688 96s132 120 224 120 137-141 343-141" fill="none" stroke="#65b6ff" stroke-opacity=".13" stroke-width="16" filter="url(#soft)"/>
+  <path d="M25 222C118 222 153 75 245 75s128 170 223 170S596 96 688 96s132 120 224 120 137-141 343-141" fill="none" stroke="url(#curve)" stroke-width="2.5"/>
+  <g fill="#b9d8ff" stroke="#7cbcff" stroke-width="1">
+    <circle cx="245" cy="75" r="4"/><circle cx="468" cy="245" r="4"/><circle cx="688" cy="96" r="4"/><circle cx="912" cy="216" r="4"/><circle cx="1156" cy="91" r="4"/>
+  </g>
+  <g font-family="ui-monospace, SFMono-Regular, Consolas, monospace" fill="#e8edff">
+    <text x="70" y="132" font-size="13" opacity=".55">∇L(θ) · Δθ</text>
+    <text x="1060" y="264" font-size="13" opacity=".5">P(x) ∝ e⁻ᴱ⁽ˣ⁾</text>
+    <text x="640" y="144" text-anchor="middle" font-family="system-ui, sans-serif" font-size="42" font-weight="650" letter-spacing="5">科学空间索引</text>
+    <text x="640" y="181" text-anchor="middle" font-size="13" letter-spacing="4" opacity=".67">SPACES · KNOWLEDGE · INDEX</text>
+    <text x="640" y="221" text-anchor="middle" font-family="system-ui, sans-serif" font-size="15" opacity=".78">让散落的思考，形成可探索的坐标</text>
+  </g>
+  <rect x=".75" y=".75" width="1278.5" height="318.5" rx="23.25" fill="none" stroke="#dbe8ff" stroke-opacity=".16" stroke-width="1.5"/>
+</svg>
