@@ -1,3 +1,4 @@
+import json
 from pathlib import Path
 
 from bs4 import BeautifulSoup
@@ -7,7 +8,7 @@ ROOT = Path(__file__).resolve().parents[1]
 WEB = ROOT / "web"
 
 
-def test_web_shell_has_all_views_and_only_local_runtime_assets():
+def test_web_shell_has_all_views_and_expected_runtime_assets():
     soup = BeautifulSoup((WEB / "index.html").read_text(encoding="utf-8"), "html.parser")
     navigation = {
         link.get("data-nav"): link.get("href")
@@ -37,8 +38,16 @@ def test_web_shell_has_all_views_and_only_local_runtime_assets():
     stylesheets = [link.get("href") for link in soup.select("link[rel='stylesheet']")]
     scripts = [script.get("src") for script in soup.select("script[src]")]
     assert stylesheets == ["./styles.css"]
-    assert scripts == ["./app.js"]
+    assert scripts == [
+        "./app.js",
+        "https://static.cloudflareinsights.com/beacon.min.js",
+    ]
     assert not soup.select_one("script[src='./app.js']").has_attr("type")
+    analytics = soup.select_one("script[src='https://static.cloudflareinsights.com/beacon.min.js']")
+    assert analytics.get("type") == "module"
+    assert json.loads(analytics.get("data-cf-beacon")) == {
+        "token": "69706affe740430aa1cc9b3fc000cb01"
+    }
 
 
 def test_web_app_uses_safe_dom_and_expected_interaction_contract():
@@ -77,6 +86,7 @@ def test_web_app_uses_safe_dom_and_expected_interaction_contract():
     assert 'label: "只看未读"' in source
     assert "localStorage.setItem(READ_POSTS_KEY" in source
     assert 'text: "已读状态只保存在当前浏览器，不上传到服务器。"' in source
+    assert "Cloudflare Web Analytics 匿名汇总，不使用 Cookie" in source
     styles = (WEB / "styles.css").read_text(encoding="utf-8")
     assert "prefers-reduced-motion: reduce" in styles
     assert "width: min(76vw, 280px)" in styles

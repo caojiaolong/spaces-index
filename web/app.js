@@ -1525,6 +1525,7 @@ function renderAbout(catalog) {
         createElement("li", { text: "仅从明确的小结段落提取有限长度的短摘录。" }),
         createElement("li", { text: "不镜像、不复制，也不保存任何文章正文。" }),
         createElement("li", { text: "已读状态只保存在当前浏览器，不上传到服务器。" }),
+        createElement("li", { text: "访问量使用 Cloudflare Web Analytics 匿名汇总，不使用 Cookie，也不用于识别个人。" }),
       ]),
     ]),
     createElement("article", { className: "about-card" }, [
