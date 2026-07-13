@@ -2,7 +2,7 @@
 
 [返回主题索引](index.md)
 
-共 151 篇。
+共 152 篇。
 
 <a id="series-transformer-f5569856ba"></a>
 #### MoE环游记
@@ -288,6 +288,10 @@
 <a id="series-transformer-standalone"></a>
 #### 非系列文章
 
+- 2026-07-13 - [LogSumExp和Softmax的泰勒展开](https://spaces.ac.cn/archives/11814)
+  - 原站分类：数学研究
+  - 原站标签：微积分、近似、线性、attention
+  - 小结摘录：本文分别推导了LogSumExp和Softmax的泰勒展开式，并讨论了它们的两个潜在应用。
 - 2026-06-03 - [为什么官方版Muon比MuP版多出一个max(1, ⋅)？](https://spaces.ac.cn/archives/11772)
   - 原站分类：信息时代
   - 原站标签：学习率、优化器、muon、MuP

@@ -1,5 +1,26 @@
 [
   {
+    "id": "11814",
+    "title": "LogSumExp和Softmax的泰勒展开",
+    "url": "https://spaces.ac.cn/archives/11814",
+    "date": "2026-07-13",
+    "source_category": "数学研究",
+    "source_tags": [
+      "微积分",
+      "近似",
+      "线性",
+      "attention"
+    ],
+    "source_summary": "本文分别推导了LogSumExp和Softmax的泰勒展开式，并讨论了它们的两个潜在应用。",
+    "topics": [
+      "大模型与Transformer",
+      "数学工具"
+    ],
+    "series": null,
+    "series_index": null,
+    "level": null
+  },
+  {
     "id": "11804",
     "title": "让炼丹更科学一些（七）：步长调度与权重平均",
     "url": "https://spaces.ac.cn/archives/11804",

@@ -2,7 +2,7 @@
 
 [返回主题索引](index.md)
 
-共 377 篇。
+共 378 篇。
 
 <a id="series-math-6689ddf615"></a>
 #### 低秩近似之路
@@ -525,6 +525,10 @@
 <a id="series-math-standalone"></a>
 #### 非系列文章
 
+- 2026-07-13 - [LogSumExp和Softmax的泰勒展开](https://spaces.ac.cn/archives/11814)
+  - 原站分类：数学研究
+  - 原站标签：微积分、近似、线性、attention
+  - 小结摘录：本文分别推导了LogSumExp和Softmax的泰勒展开式，并讨论了它们的两个潜在应用。
 - 2026-06-25 - [矩阵函数近似中的暴力美学](https://spaces.ac.cn/archives/11787)
   - 原站分类：数学研究
   - 原站标签：函数、迭代、近似、矩阵、SVD
