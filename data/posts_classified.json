@@ -1,5 +1,24 @@
 [
   {
+    "id": "11818",
+    "title": "基于排序不等式的相似度指标",
+    "url": "https://spaces.ac.cn/archives/11818",
+    "date": "2026-07-16",
+    "source_category": "数学研究",
+    "source_tags": [
+      "不等式",
+      "语义相似度"
+    ],
+    "source_summary": null,
+    "topics": [
+      "数学工具",
+      "NLP与信息抽取"
+    ],
+    "series": null,
+    "series_index": null,
+    "level": "advanced"
+  },
+  {
     "id": "11814",
     "title": "LogSumExp和Softmax的泰勒展开",
     "url": "https://spaces.ac.cn/archives/11814",
