@@ -8,21 +8,18 @@ on:
   schedule:
     - cron: "23 2 * * *"
 
-permissions:
-  contents: write
-  pages: write
-  id-token: write
-
 concurrency:
   group: spaces-index-pages
   cancel-in-progress: false
 
 jobs:
-  update-and-deploy:
+  prepare:
     runs-on: ubuntu-latest
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
+    permissions:
+      contents: write
+      pages: write
+    outputs:
+      should_deploy: ${{ steps.changes.outputs.should_deploy }}
     steps:
       - name: Checkout
         uses: actions/checkout@v6
@@ -44,31 +41,57 @@ jobs:
         if: github.event_name != 'push'
         run: uv run python scripts/update_all.py --sleep 0.8 --progress-every 25
 
+      - name: Check for deployable changes
+        id: changes
+        shell: bash
+        run: |
+          if [[ "$GITHUB_EVENT_NAME" == "push" ]] || \
+             [[ -n "$(git status --porcelain -- README.md docs data)" ]]; then
+            should_deploy=true
+          else
+            should_deploy=false
+          fi
+          echo "should_deploy=$should_deploy" >> "$GITHUB_OUTPUT"
+          echo "Deployment required: $should_deploy"
+
       - name: Run tests
+        if: steps.changes.outputs.should_deploy == 'true'
         run: uv run pytest
 
       - name: Build site
+        if: steps.changes.outputs.should_deploy == 'true'
         run: uv run python scripts/build_site.py --input data/posts_classified.json --output _site
 
       - name: Commit refreshed metadata
-        if: github.event_name != 'push'
+        if: github.event_name != 'push' && steps.changes.outputs.should_deploy == 'true'
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          if [ -n "$(git status --porcelain -- README.md docs data)" ]; then
-            git add README.md docs data
-            git commit -m "Update spaces index"
-            git push
-          fi
+          git add README.md docs data
+          git commit -m "Update spaces index"
+          git push
 
       - name: Configure GitHub Pages
+        if: steps.changes.outputs.should_deploy == 'true'
         uses: actions/configure-pages@v6
 
       - name: Upload GitHub Pages artifact
+        if: steps.changes.outputs.should_deploy == 'true'
         uses: actions/upload-pages-artifact@v5
         with:
           path: _site
 
+  deploy:
+    needs: prepare
+    if: needs.prepare.outputs.should_deploy == 'true'
+    runs-on: ubuntu-latest
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
       - name: Deploy GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v5
