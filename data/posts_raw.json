@@ -1,5 +1,11 @@
 [
   {
+    "id": "11823",
+    "title": "将Softmax Attention线性化为Gated DeltaNet",
+    "url": "https://spaces.ac.cn/archives/11823",
+    "date": "2026-07-21"
+  },
+  {
     "id": "11818",
     "title": "基于排序不等式的相似度指标",
     "url": "https://spaces.ac.cn/archives/11818",

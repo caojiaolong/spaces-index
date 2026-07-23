@@ -2,7 +2,7 @@
 
 [返回主题索引](index.md)
 
-共 152 篇。
+共 153 篇。
 
 <a id="series-transformer-f5569856ba"></a>
 #### MoE环游记
@@ -288,6 +288,10 @@
 <a id="series-transformer-standalone"></a>
 #### 非系列文章
 
+- 2026-07-21 - [将Softmax Attention线性化为Gated DeltaNet](https://spaces.ac.cn/archives/11823)
+  - 原站分类：数学研究
+  - 原站标签：近似、分析、线性、attention
+  - 小结摘录：本文从“Softmax Attention是一个平方复杂度的RNN”出发，先发现其递归增量天然具有Delta Rule形态，再对Softmax对角元做一阶近似，最后按“最小误差原则”为残余的$\\boldsymbol{q}$寻找一个替代品，成功将Softmax Attention线性化成了Gated DeltaNet的形式。 （致谢：此文在 Kimi K3 的指导下完成。）
 - 2026-07-13 - [LogSumExp和Softmax的泰勒展开](https://spaces.ac.cn/archives/11814)
   - 原站分类：数学研究
   - 原站标签：微积分、近似、线性、attention

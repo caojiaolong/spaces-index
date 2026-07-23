@@ -33,7 +33,7 @@
 
 | 文章 | 主题 | 系列 | 最近更新 |
 | ---: | ---: | ---: | :---: |
-| 1328 篇 | 17 个 | 55 个 | 2026-07-16 |
+| 1329 篇 | 17 个 | 55 个 | 2026-07-21 |
 
 > 本项目保存标题、链接、日期、分类、标签、自动主题、系列信息和少量小结短摘录；不镜像、复制或保存文章全文。
 
@@ -59,14 +59,14 @@
   - [更别致的词向量模型（6 篇）](https://caojiaolong.github.io/spaces-index/#/series/series-83ff2143be8b)
   - [不可思议的Word2Vec（6 篇）](https://caojiaolong.github.io/spaces-index/#/series/series-b9f4ef1c4dfa)
   - [非系列文章（9 篇）](#series-embeddings-standalone)
-- [大模型与Transformer（152 篇）](#topic-transformer)
+- [大模型与Transformer（153 篇）](#topic-transformer)
   - [MoE环游记（9 篇）](https://caojiaolong.github.io/spaces-index/#/series/series-34fc554ca8f0)
   - [MuP之上（4 篇）](https://caojiaolong.github.io/spaces-index/#/series/series-894387d0ec66)
   - [Transformer升级之路（21 篇）](https://caojiaolong.github.io/spaces-index/#/series/series-43ce6f7a2fb9)
   - [“闭门造车”之多模态思路浅谈（3 篇）](https://caojiaolong.github.io/spaces-index/#/series/series-2e7d3298470e)
   - [对齐全量微调！这是我看过最精彩的LoRA改进（2 篇）](https://caojiaolong.github.io/spaces-index/#/series/series-2e10ffe13211)
   - [重温SSM（4 篇）](https://caojiaolong.github.io/spaces-index/#/series/series-5070561d10c9)
-  - [非系列文章（109 篇）](#series-transformer-standalone)
+  - [非系列文章（110 篇）](#series-transformer-standalone)
 - [生成模型（124 篇）](#topic-generative-models)
   - [生成扩散模型漫谈（31 篇）](https://caojiaolong.github.io/spaces-index/#/series/series-e48ccca641f8)
   - [细水长flow（5 篇）](https://caojiaolong.github.io/spaces-index/#/series/series-9738e76a3125)
@@ -145,6 +145,7 @@
 
 ## 最近 10 篇文章
 
+- 2026-07-21 - [将Softmax Attention线性化为Gated DeltaNet](https://spaces.ac.cn/archives/11823)
 - 2026-07-16 - [基于排序不等式的相似度指标](https://spaces.ac.cn/archives/11818)
 - 2026-07-13 - [LogSumExp和Softmax的泰勒展开](https://spaces.ac.cn/archives/11814)
 - 2026-07-06 - [让炼丹更科学一些（七）：步长调度与权重平均](https://spaces.ac.cn/archives/11804) - [查看系列](https://caojiaolong.github.io/spaces-index/#/series/series-22f3c6204559)
@@ -154,7 +155,6 @@
 - 2026-06-08 - [流形上的最速下降：6. Muon + 双旋转](https://spaces.ac.cn/archives/11777) - [查看系列](https://caojiaolong.github.io/spaces-index/#/series/series-9aa52368b14f)
 - 2026-06-03 - [为什么官方版Muon比MuP版多出一个max(1, ⋅)？](https://spaces.ac.cn/archives/11772)
 - 2026-05-29 - [矩阵参数的奇异值熵越高越好吗？](https://spaces.ac.cn/archives/11767)
-- 2026-05-22 - [MoE环游记：8、强制序列级均衡](https://spaces.ac.cn/archives/11760) - [查看系列](https://caojiaolong.github.io/spaces-index/#/series/series-34fc554ca8f0)
 
 ## 主题分类
 
@@ -357,7 +357,7 @@
 
 <a id="topic-transformer"></a>
 <details>
-<summary><strong>大模型与Transformer</strong> · 152 篇</summary>
+<summary><strong>大模型与Transformer</strong> · 153 篇</summary>
 
 [返回目录](#目录)
 
@@ -431,6 +431,7 @@
 <a id="series-transformer-standalone"></a>
 #### 非系列文章 [返回目录](#目录)
 
+- 2026-07-21 - [将Softmax Attention线性化为Gated DeltaNet](https://spaces.ac.cn/archives/11823)
 - 2026-07-13 - [LogSumExp和Softmax的泰勒展开](https://spaces.ac.cn/archives/11814)
 - 2026-06-03 - [为什么官方版Muon比MuP版多出一个max(1, ⋅)？](https://spaces.ac.cn/archives/11772)
 - 2026-05-15 - [DeepSeek V4的tid2eid是怎么来的？](https://spaces.ac.cn/archives/11750)

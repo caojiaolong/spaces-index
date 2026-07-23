@@ -1,5 +1,25 @@
 [
   {
+    "id": "11823",
+    "title": "将Softmax Attention线性化为Gated DeltaNet",
+    "url": "https://spaces.ac.cn/archives/11823",
+    "date": "2026-07-21",
+    "source_category": "数学研究",
+    "source_tags": [
+      "近似",
+      "分析",
+      "线性",
+      "attention"
+    ],
+    "source_summary": "本文从“Softmax Attention是一个平方复杂度的RNN”出发，先发现其递归增量天然具有Delta Rule形态，再对Softmax对角元做一阶近似，最后按“最小误差原则”为残余的$\\boldsymbol{q}$寻找一个替代品，成功将Softmax Attention线性化成了Gated DeltaNet的形式。 （致谢：此文在 Kimi K3 的指导下完成。）",
+    "topics": [
+      "大模型与Transformer"
+    ],
+    "series": null,
+    "series_index": null,
+    "level": null
+  },
+  {
     "id": "11818",
     "title": "基于排序不等式的相似度指标",
     "url": "https://spaces.ac.cn/archives/11818",
