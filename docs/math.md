@@ -2,7 +2,7 @@
 
 [返回主题索引](index.md)
 
-共 379 篇。
+共 380 篇。
 
 <a id="series-math-6689ddf615"></a>
 #### 低秩近似之路
@@ -525,6 +525,9 @@
 <a id="series-math-standalone"></a>
 #### 非系列文章
 
+- 2026-07-29 - [解构Scaling Law：优化、架构、数据的三重奏](https://spaces.ac.cn/archives/11833)
+  - 原站分类：信息时代
+  - 原站标签：不等式、模型、优化、尺度定律
 - 2026-07-16 - [基于排序不等式的相似度指标](https://spaces.ac.cn/archives/11818)
   - 原站分类：数学研究
   - 原站标签：不等式、语义相似度

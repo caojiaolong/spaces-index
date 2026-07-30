@@ -2,7 +2,7 @@
 
 [返回主题索引](index.md)
 
-共 121 篇。
+共 122 篇。
 
 <a id="series-deep-learning-69126a7846"></a>
 #### 重新思考学习率与Batch Size
@@ -118,6 +118,9 @@
 <a id="series-deep-learning-standalone"></a>
 #### 非系列文章
 
+- 2026-07-29 - [解构Scaling Law：优化、架构、数据的三重奏](https://spaces.ac.cn/archives/11833)
+  - 原站分类：信息时代
+  - 原站标签：不等式、模型、优化、尺度定律
 - 2026-06-19 - [强制间隔投影（Margin-Enforcing Projection）](https://spaces.ac.cn/archives/11784)
   - 原站分类：数学研究
   - 原站标签：最优、分析、优化、损失函数

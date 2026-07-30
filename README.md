@@ -33,7 +33,7 @@
 
 | 文章 | 主题 | 系列 | 最近更新 |
 | ---: | ---: | ---: | :---: |
-| 1329 篇 | 17 个 | 55 个 | 2026-07-21 |
+| 1330 篇 | 17 个 | 55 个 | 2026-07-29 |
 
 > 本项目保存标题、链接、日期、分类、标签、自动主题、系列信息和少量小结短摘录；不镜像、复制或保存文章全文。
 
@@ -48,12 +48,12 @@
 <details>
 <summary><strong>展开完整主题、系列与非系列目录</strong></summary>
 
-- [深度学习基础（121 篇）](#topic-deep-learning)
+- [深度学习基础（122 篇）](#topic-deep-learning)
   - [重新思考学习率与Batch Size（4 篇）](https://caojiaolong.github.io/spaces-index/#/series/series-7e434c5c57cd)
   - [多任务学习漫谈（3 篇）](https://caojiaolong.github.io/spaces-index/#/series/series-0ac96064005b)
   - [“让Keras更酷一些！”（7 篇）](https://caojiaolong.github.io/spaces-index/#/series/series-578e6271b73c)
   - [文本情感分类（4 篇）](https://caojiaolong.github.io/spaces-index/#/series/series-4b0540d8f579)
-  - [非系列文章（103 篇）](#series-deep-learning-standalone)
+  - [非系列文章（104 篇）](#series-deep-learning-standalone)
 - [词向量与Embedding（24 篇）](#topic-embeddings)
   - [CoSENT（3 篇）](https://caojiaolong.github.io/spaces-index/#/series/series-380e395e0231)
   - [更别致的词向量模型（6 篇）](https://caojiaolong.github.io/spaces-index/#/series/series-83ff2143be8b)
@@ -83,7 +83,7 @@
   - [msign算子的Newton-Schulz迭代（2 篇）](https://caojiaolong.github.io/spaces-index/#/series/series-a60856a07854)
   - [从动力学角度看优化算法（7 篇）](https://caojiaolong.github.io/spaces-index/#/series/series-4b38446b55a8)
   - [非系列文章（73 篇）](#series-optimization-standalone)
-- [数学工具（379 篇）](#topic-math)
+- [数学工具（380 篇）](#topic-math)
   - [低秩近似之路（5 篇）](https://caojiaolong.github.io/spaces-index/#/series/series-6689ddf615c5)
   - [SVD分解（3 篇）](https://caojiaolong.github.io/spaces-index/#/series/series-cb4267a83e5b)
   - [外微分浅谈（7 篇）](https://caojiaolong.github.io/spaces-index/#/series/series-07dc7181b71c)
@@ -104,7 +104,7 @@
   - [自然极值（8 篇）](https://caojiaolong.github.io/spaces-index/#/series/series-5e3917ad3216)
   - [向量（5 篇）](https://caojiaolong.github.io/spaces-index/#/series/series-fae158475ede)
   - [微积分学习（2 篇）](https://caojiaolong.github.io/spaces-index/#/series/series-d050b16b4d9c)
-  - [非系列文章（293 篇）](#series-math-standalone)
+  - [非系列文章（294 篇）](#series-math-standalone)
 - [概率统计与信息论（84 篇）](#topic-probability-info)
   - [最小熵原理（6 篇）](https://caojiaolong.github.io/spaces-index/#/series/series-2e7e2c469894)
   - [非系列文章（78 篇）](#series-probability-info-standalone)
@@ -145,6 +145,7 @@
 
 ## 最近 10 篇文章
 
+- 2026-07-29 - [解构Scaling Law：优化、架构、数据的三重奏](https://spaces.ac.cn/archives/11833)
 - 2026-07-21 - [将Softmax Attention线性化为Gated DeltaNet](https://spaces.ac.cn/archives/11823)
 - 2026-07-16 - [基于排序不等式的相似度指标](https://spaces.ac.cn/archives/11818)
 - 2026-07-13 - [LogSumExp和Softmax的泰勒展开](https://spaces.ac.cn/archives/11814)
@@ -154,13 +155,12 @@
 - 2026-06-17 - [MoE环游记：9、门控归一化之争](https://spaces.ac.cn/archives/11782) - [查看系列](https://caojiaolong.github.io/spaces-index/#/series/series-34fc554ca8f0)
 - 2026-06-08 - [流形上的最速下降：6. Muon + 双旋转](https://spaces.ac.cn/archives/11777) - [查看系列](https://caojiaolong.github.io/spaces-index/#/series/series-9aa52368b14f)
 - 2026-06-03 - [为什么官方版Muon比MuP版多出一个max(1, ⋅)？](https://spaces.ac.cn/archives/11772)
-- 2026-05-29 - [矩阵参数的奇异值熵越高越好吗？](https://spaces.ac.cn/archives/11767)
 
 ## 主题分类
 
 <a id="topic-deep-learning"></a>
 <details>
-<summary><strong>深度学习基础</strong> · 121 篇</summary>
+<summary><strong>深度学习基础</strong> · 122 篇</summary>
 
 [返回目录](#目录)
 
@@ -201,6 +201,7 @@
 <a id="series-deep-learning-standalone"></a>
 #### 非系列文章 [返回目录](#目录)
 
+- 2026-07-29 - [解构Scaling Law：优化、架构、数据的三重奏](https://spaces.ac.cn/archives/11833)
 - 2026-06-19 - [强制间隔投影（Margin-Enforcing Projection）](https://spaces.ac.cn/archives/11784)
 - 2026-05-08 - [直接以FID为Loss：从梯度计算到流式训练](https://spaces.ac.cn/archives/11738)
 - 2026-03-19 - [Attention Residuals 回忆录](https://spaces.ac.cn/archives/11664)
@@ -846,7 +847,7 @@
 
 <a id="topic-math"></a>
 <details>
-<summary><strong>数学工具</strong> · 379 篇</summary>
+<summary><strong>数学工具</strong> · 380 篇</summary>
 
 [返回目录](#目录)
 
@@ -1019,6 +1020,7 @@
 <a id="series-math-standalone"></a>
 #### 非系列文章 [返回目录](#目录)
 
+- 2026-07-29 - [解构Scaling Law：优化、架构、数据的三重奏](https://spaces.ac.cn/archives/11833)
 - 2026-07-16 - [基于排序不等式的相似度指标](https://spaces.ac.cn/archives/11818)
 - 2026-07-13 - [LogSumExp和Softmax的泰勒展开](https://spaces.ac.cn/archives/11814)
 - 2026-06-25 - [矩阵函数近似中的暴力美学](https://spaces.ac.cn/archives/11787)

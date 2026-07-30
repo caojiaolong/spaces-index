@@ -1,5 +1,19 @@
 [
   {
+    "id": "11833",
+    "title": "解构Scaling Law：优化、架构、数据的三重奏",
+    "url": "https://spaces.ac.cn/archives/11833",
+    "date": "2026-07-29",
+    "source_category": "信息时代",
+    "source_tags": [
+      "不等式",
+      "模型",
+      "优化",
+      "尺度定律"
+    ],
+    "source_summary": null
+  },
+  {
     "id": "11823",
     "title": "将Softmax Attention线性化为Gated DeltaNet",
     "url": "https://spaces.ac.cn/archives/11823",
