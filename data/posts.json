@@ -1,5 +1,19 @@
 [
   {
+    "id": "11848",
+    "title": "简单谈谈K3的MoE和Attention",
+    "url": "https://spaces.ac.cn/archives/11848",
+    "date": "2026-08-04",
+    "source_category": "信息时代",
+    "source_tags": [
+      "线性",
+      "attention",
+      "位置编码",
+      "moe"
+    ],
+    "source_summary": "本文简单聊了聊K3在MoE和Attention这两块的设计与取舍。总的来说，K3的每一处改动都不算激进和花哨，背后基本都有明确的动机和实验支撑。效果、效率与稳定性之间的协调，依然是架构设计的主旋律。"
+  },
+  {
     "id": "11833",
     "title": "解构Scaling Law：优化、架构、数据的三重奏",
     "url": "https://spaces.ac.cn/archives/11833",

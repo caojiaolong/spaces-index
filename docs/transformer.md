@@ -2,7 +2,7 @@
 
 [返回主题索引](index.md)
 
-共 153 篇。
+共 154 篇。
 
 <a id="series-transformer-f5569856ba"></a>
 #### MoE环游记
@@ -288,6 +288,10 @@
 <a id="series-transformer-standalone"></a>
 #### 非系列文章
 
+- 2026-08-04 - [简单谈谈K3的MoE和Attention](https://spaces.ac.cn/archives/11848)
+  - 原站分类：信息时代
+  - 原站标签：线性、attention、位置编码、moe
+  - 小结摘录：本文简单聊了聊K3在MoE和Attention这两块的设计与取舍。总的来说，K3的每一处改动都不算激进和花哨，背后基本都有明确的动机和实验支撑。效果、效率与稳定性之间的协调，依然是架构设计的主旋律。
 - 2026-07-21 - [将Softmax Attention线性化为Gated DeltaNet](https://spaces.ac.cn/archives/11823)
   - 原站分类：数学研究
   - 原站标签：近似、分析、线性、attention
