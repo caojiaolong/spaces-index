@@ -33,7 +33,7 @@
 
 | 文章 | 主题 | 系列 | 最近更新 |
 | ---: | ---: | ---: | :---: |
-| 1331 篇 | 17 个 | 55 个 | 2026-08-04 |
+| 1332 篇 | 17 个 | 55 个 | 2026-08-09 |
 
 > 本项目保存标题、链接、日期、分类、标签、自动主题、系列信息和少量小结短摘录；不镜像、复制或保存文章全文。
 
@@ -48,25 +48,25 @@
 <details>
 <summary><strong>展开完整主题、系列与非系列目录</strong></summary>
 
-- [深度学习基础（122 篇）](#topic-deep-learning)
+- [深度学习基础（123 篇）](#topic-deep-learning)
   - [重新思考学习率与Batch Size（4 篇）](https://caojiaolong.github.io/spaces-index/#/series/series-7e434c5c57cd)
   - [多任务学习漫谈（3 篇）](https://caojiaolong.github.io/spaces-index/#/series/series-0ac96064005b)
   - [“让Keras更酷一些！”（7 篇）](https://caojiaolong.github.io/spaces-index/#/series/series-578e6271b73c)
   - [文本情感分类（4 篇）](https://caojiaolong.github.io/spaces-index/#/series/series-4b0540d8f579)
-  - [非系列文章（104 篇）](#series-deep-learning-standalone)
+  - [非系列文章（105 篇）](#series-deep-learning-standalone)
 - [词向量与Embedding（24 篇）](#topic-embeddings)
   - [CoSENT（3 篇）](https://caojiaolong.github.io/spaces-index/#/series/series-380e395e0231)
   - [更别致的词向量模型（6 篇）](https://caojiaolong.github.io/spaces-index/#/series/series-83ff2143be8b)
   - [不可思议的Word2Vec（6 篇）](https://caojiaolong.github.io/spaces-index/#/series/series-b9f4ef1c4dfa)
   - [非系列文章（9 篇）](#series-embeddings-standalone)
-- [大模型与Transformer（154 篇）](#topic-transformer)
+- [大模型与Transformer（155 篇）](#topic-transformer)
   - [MoE环游记（9 篇）](https://caojiaolong.github.io/spaces-index/#/series/series-34fc554ca8f0)
   - [MuP之上（4 篇）](https://caojiaolong.github.io/spaces-index/#/series/series-894387d0ec66)
   - [Transformer升级之路（21 篇）](https://caojiaolong.github.io/spaces-index/#/series/series-43ce6f7a2fb9)
   - [“闭门造车”之多模态思路浅谈（3 篇）](https://caojiaolong.github.io/spaces-index/#/series/series-2e7d3298470e)
   - [对齐全量微调！这是我看过最精彩的LoRA改进（2 篇）](https://caojiaolong.github.io/spaces-index/#/series/series-2e10ffe13211)
   - [重温SSM（4 篇）](https://caojiaolong.github.io/spaces-index/#/series/series-5070561d10c9)
-  - [非系列文章（111 篇）](#series-transformer-standalone)
+  - [非系列文章（112 篇）](#series-transformer-standalone)
 - [生成模型（124 篇）](#topic-generative-models)
   - [生成扩散模型漫谈（31 篇）](https://caojiaolong.github.io/spaces-index/#/series/series-e48ccca641f8)
   - [细水长flow（5 篇）](https://caojiaolong.github.io/spaces-index/#/series/series-9738e76a3125)
@@ -74,7 +74,7 @@
   - [搜出来的文本（4 篇）](https://caojiaolong.github.io/spaces-index/#/series/series-efbc1f2b0e42)
   - [能量视角下的GAN模型（3 篇）](https://caojiaolong.github.io/spaces-index/#/series/series-bf3266b9c1b3)
   - [非系列文章（73 篇）](#series-generative-models-standalone)
-- [优化与训练（104 篇）](#topic-optimization)
+- [优化与训练（105 篇）](#topic-optimization)
   - [让炼丹更科学一些（7 篇）](https://caojiaolong.github.io/spaces-index/#/series/series-22f3c6204559)
   - [流形上的最速下降（6 篇）](https://caojiaolong.github.io/spaces-index/#/series/series-9aa52368b14f)
   - [基于流式幂迭代的Muon实现（5 篇）](https://caojiaolong.github.io/spaces-index/#/series/series-b7bbf4382414)
@@ -82,7 +82,7 @@
   - [通过msign来计算奇异值裁剪mclip（2 篇）](https://caojiaolong.github.io/spaces-index/#/series/series-297337ae72f8)
   - [msign算子的Newton-Schulz迭代（2 篇）](https://caojiaolong.github.io/spaces-index/#/series/series-a60856a07854)
   - [从动力学角度看优化算法（7 篇）](https://caojiaolong.github.io/spaces-index/#/series/series-4b38446b55a8)
-  - [非系列文章（73 篇）](#series-optimization-standalone)
+  - [非系列文章（74 篇）](#series-optimization-standalone)
 - [数学工具（380 篇）](#topic-math)
   - [低秩近似之路（5 篇）](https://caojiaolong.github.io/spaces-index/#/series/series-6689ddf615c5)
   - [SVD分解（3 篇）](https://caojiaolong.github.io/spaces-index/#/series/series-cb4267a83e5b)
@@ -105,9 +105,9 @@
   - [向量（5 篇）](https://caojiaolong.github.io/spaces-index/#/series/series-fae158475ede)
   - [微积分学习（2 篇）](https://caojiaolong.github.io/spaces-index/#/series/series-d050b16b4d9c)
   - [非系列文章（294 篇）](#series-math-standalone)
-- [概率统计与信息论（84 篇）](#topic-probability-info)
+- [概率统计与信息论（85 篇）](#topic-probability-info)
   - [最小熵原理（6 篇）](https://caojiaolong.github.io/spaces-index/#/series/series-2e7e2c469894)
-  - [非系列文章（78 篇）](#series-probability-info-standalone)
+  - [非系列文章（79 篇）](#series-probability-info-standalone)
 - [几何与方程（106 篇）](#topic-geometry-equations)
   - [理解黎曼几何（8 篇）](https://caojiaolong.github.io/spaces-index/#/series/series-41868e210e17)
   - [非系列文章（98 篇）](#series-geometry-equations-standalone)
@@ -145,6 +145,7 @@
 
 ## 最近 10 篇文章
 
+- 2026-08-09 - [除了交叉熵，LM Loss还有什么选择？](https://spaces.ac.cn/archives/11854)
 - 2026-08-04 - [简单谈谈K3的MoE和Attention](https://spaces.ac.cn/archives/11848)
 - 2026-07-29 - [解构Scaling Law：优化、架构、数据的三重奏](https://spaces.ac.cn/archives/11833)
 - 2026-07-21 - [将Softmax Attention线性化为Gated DeltaNet](https://spaces.ac.cn/archives/11823)
@@ -154,13 +155,12 @@
 - 2026-06-25 - [矩阵函数近似中的暴力美学](https://spaces.ac.cn/archives/11787)
 - 2026-06-19 - [强制间隔投影（Margin-Enforcing Projection）](https://spaces.ac.cn/archives/11784)
 - 2026-06-17 - [MoE环游记：9、门控归一化之争](https://spaces.ac.cn/archives/11782) - [查看系列](https://caojiaolong.github.io/spaces-index/#/series/series-34fc554ca8f0)
-- 2026-06-08 - [流形上的最速下降：6. Muon + 双旋转](https://spaces.ac.cn/archives/11777) - [查看系列](https://caojiaolong.github.io/spaces-index/#/series/series-9aa52368b14f)
 
 ## 主题分类
 
 <a id="topic-deep-learning"></a>
 <details>
-<summary><strong>深度学习基础</strong> · 122 篇</summary>
+<summary><strong>深度学习基础</strong> · 123 篇</summary>
 
 [返回目录](#目录)
 
@@ -201,6 +201,7 @@
 <a id="series-deep-learning-standalone"></a>
 #### 非系列文章 [返回目录](#目录)
 
+- 2026-08-09 - [除了交叉熵，LM Loss还有什么选择？](https://spaces.ac.cn/archives/11854)
 - 2026-07-29 - [解构Scaling Law：优化、架构、数据的三重奏](https://spaces.ac.cn/archives/11833)
 - 2026-06-19 - [强制间隔投影（Margin-Enforcing Projection）](https://spaces.ac.cn/archives/11784)
 - 2026-05-08 - [直接以FID为Loss：从梯度计算到流式训练](https://spaces.ac.cn/archives/11738)
@@ -358,7 +359,7 @@
 
 <a id="topic-transformer"></a>
 <details>
-<summary><strong>大模型与Transformer</strong> · 154 篇</summary>
+<summary><strong>大模型与Transformer</strong> · 155 篇</summary>
 
 [返回目录](#目录)
 
@@ -432,6 +433,7 @@
 <a id="series-transformer-standalone"></a>
 #### 非系列文章 [返回目录](#目录)
 
+- 2026-08-09 - [除了交叉熵，LM Loss还有什么选择？](https://spaces.ac.cn/archives/11854)
 - 2026-08-04 - [简单谈谈K3的MoE和Attention](https://spaces.ac.cn/archives/11848)
 - 2026-07-21 - [将Softmax Attention线性化为Gated DeltaNet](https://spaces.ac.cn/archives/11823)
 - 2026-07-13 - [LogSumExp和Softmax的泰勒展开](https://spaces.ac.cn/archives/11814)
@@ -704,7 +706,7 @@
 
 <a id="topic-optimization"></a>
 <details>
-<summary><strong>优化与训练</strong> · 104 篇</summary>
+<summary><strong>优化与训练</strong> · 105 篇</summary>
 
 [返回目录](#目录)
 
@@ -770,6 +772,7 @@
 <a id="series-optimization-standalone"></a>
 #### 非系列文章 [返回目录](#目录)
 
+- 2026-08-09 - [除了交叉熵，LM Loss还有什么选择？](https://spaces.ac.cn/archives/11854)
 - 2026-06-19 - [强制间隔投影（Margin-Enforcing Projection）](https://spaces.ac.cn/archives/11784)
 - 2026-06-03 - [为什么官方版Muon比MuP版多出一个max(1, ⋅)？](https://spaces.ac.cn/archives/11772)
 - 2026-05-08 - [直接以FID为Loss：从梯度计算到流式训练](https://spaces.ac.cn/archives/11738)
@@ -1320,7 +1323,7 @@
 
 <a id="topic-probability-info"></a>
 <details>
-<summary><strong>概率统计与信息论</strong> · 84 篇</summary>
+<summary><strong>概率统计与信息论</strong> · 85 篇</summary>
 
 [返回目录](#目录)
 
@@ -1337,6 +1340,7 @@
 <a id="series-probability-info-standalone"></a>
 #### 非系列文章 [返回目录](#目录)
 
+- 2026-08-09 - [除了交叉熵，LM Loss还有什么选择？](https://spaces.ac.cn/archives/11854)
 - 2026-05-29 - [矩阵参数的奇异值熵越高越好吗？](https://spaces.ac.cn/archives/11767)
 - 2026-03-31 - [中位数（Median）简介](https://spaces.ac.cn/archives/11693)
 - 2025-11-06 - [n个正态随机数的最大值的渐近估计](https://spaces.ac.cn/archives/11390)

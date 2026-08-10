@@ -2,7 +2,7 @@
 
 [返回主题索引](index.md)
 
-共 154 篇。
+共 155 篇。
 
 <a id="series-transformer-f5569856ba"></a>
 #### MoE环游记
@@ -288,6 +288,10 @@
 <a id="series-transformer-standalone"></a>
 #### 非系列文章
 
+- 2026-08-09 - [除了交叉熵，LM Loss还有什么选择？](https://spaces.ac.cn/archives/11854)
+  - 原站分类：数学研究
+  - 原站标签：最优、语言模型、损失函数、梯度
+  - 小结摘录：本文从“学习分布”和“允许采样”两个角度，推导出了LM Loss的一般构造方式。随后，我们结合预测分布所用的激活函数，计算这些Loss的梯度和凸性，以此简单判断了它们的优劣。最后，我们尝试从给定Loss出发，反推出其配套的最优激活函数，而交叉熵的最优激活函数正是Softmax——这解释了为什么这二者几乎总是配套出现。
 - 2026-08-04 - [简单谈谈K3的MoE和Attention](https://spaces.ac.cn/archives/11848)
   - 原站分类：信息时代
   - 原站标签：线性、attention、位置编码、moe

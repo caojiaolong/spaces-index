@@ -1,5 +1,19 @@
 [
   {
+    "id": "11854",
+    "title": "除了交叉熵，LM Loss还有什么选择？",
+    "url": "https://spaces.ac.cn/archives/11854",
+    "date": "2026-08-09",
+    "source_category": "数学研究",
+    "source_tags": [
+      "最优",
+      "语言模型",
+      "损失函数",
+      "梯度"
+    ],
+    "source_summary": "本文从“学习分布”和“允许采样”两个角度，推导出了LM Loss的一般构造方式。随后，我们结合预测分布所用的激活函数，计算这些Loss的梯度和凸性，以此简单判断了它们的优劣。最后，我们尝试从给定Loss出发，反推出其配套的最优激活函数，而交叉熵的最优激活函数正是Softmax——这解释了为什么这二者几乎总是配套出现。"
+  },
+  {
     "id": "11848",
     "title": "简单谈谈K3的MoE和Attention",
     "url": "https://spaces.ac.cn/archives/11848",
