@@ -1,6 +1,6 @@
 # 主题索引
 
-文章总数：1332
+文章总数：1333
 
 | 主题 | 数量 | 页面 |
 | --- | ---: | --- |
@@ -8,7 +8,7 @@
 | 词向量与Embedding | 24 | [embeddings.md](embeddings.md) |
 | 大模型与Transformer | 155 | [transformer.md](transformer.md) |
 | 生成模型 | 124 | [generative-models.md](generative-models.md) |
-| 优化与训练 | 105 | [optimization.md](optimization.md) |
+| 优化与训练 | 106 | [optimization.md](optimization.md) |
 | 数学工具 | 380 | [math.md](math.md) |
 | 概率统计与信息论 | 85 | [probability-info.md](probability-info.md) |
 | 几何与方程 | 106 | [geometry-equations.md](geometry-equations.md) |

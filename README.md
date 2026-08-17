@@ -33,7 +33,7 @@
 
 | 文章 | 主题 | 系列 | 最近更新 |
 | ---: | ---: | ---: | :---: |
-| 1332 篇 | 17 个 | 55 个 | 2026-08-09 |
+| 1333 篇 | 17 个 | 55 个 | 2026-08-17 |
 
 > 本项目保存标题、链接、日期、分类、标签、自动主题、系列信息和少量小结短摘录；不镜像、复制或保存文章全文。
 
@@ -74,9 +74,9 @@
   - [搜出来的文本（4 篇）](https://caojiaolong.github.io/spaces-index/#/series/series-efbc1f2b0e42)
   - [能量视角下的GAN模型（3 篇）](https://caojiaolong.github.io/spaces-index/#/series/series-bf3266b9c1b3)
   - [非系列文章（73 篇）](#series-generative-models-standalone)
-- [优化与训练（105 篇）](#topic-optimization)
+- [优化与训练（106 篇）](#topic-optimization)
+  - [流形上的最速下降（7 篇）](https://caojiaolong.github.io/spaces-index/#/series/series-9aa52368b14f)
   - [让炼丹更科学一些（7 篇）](https://caojiaolong.github.io/spaces-index/#/series/series-22f3c6204559)
-  - [流形上的最速下降（6 篇）](https://caojiaolong.github.io/spaces-index/#/series/series-9aa52368b14f)
   - [基于流式幂迭代的Muon实现（5 篇）](https://caojiaolong.github.io/spaces-index/#/series/series-b7bbf4382414)
   - [AdamW的Weight RMS的渐近估计（2 篇）](https://caojiaolong.github.io/spaces-index/#/series/series-ae309a12502d)
   - [通过msign来计算奇异值裁剪mclip（2 篇）](https://caojiaolong.github.io/spaces-index/#/series/series-297337ae72f8)
@@ -145,6 +145,7 @@
 
 ## 最近 10 篇文章
 
+- 2026-08-17 - [流形上的最速下降：7. Stiefel的解析解](https://spaces.ac.cn/archives/11864) - [查看系列](https://caojiaolong.github.io/spaces-index/#/series/series-9aa52368b14f)
 - 2026-08-09 - [除了交叉熵，LM Loss还有什么选择？](https://spaces.ac.cn/archives/11854)
 - 2026-08-04 - [简单谈谈K3的MoE和Attention](https://spaces.ac.cn/archives/11848)
 - 2026-07-29 - [解构Scaling Law：优化、架构、数据的三重奏](https://spaces.ac.cn/archives/11833)
@@ -154,7 +155,6 @@
 - 2026-07-06 - [让炼丹更科学一些（七）：步长调度与权重平均](https://spaces.ac.cn/archives/11804) - [查看系列](https://caojiaolong.github.io/spaces-index/#/series/series-22f3c6204559)
 - 2026-06-25 - [矩阵函数近似中的暴力美学](https://spaces.ac.cn/archives/11787)
 - 2026-06-19 - [强制间隔投影（Margin-Enforcing Projection）](https://spaces.ac.cn/archives/11784)
-- 2026-06-17 - [MoE环游记：9、门控归一化之争](https://spaces.ac.cn/archives/11782) - [查看系列](https://caojiaolong.github.io/spaces-index/#/series/series-34fc554ca8f0)
 
 ## 主题分类
 
@@ -706,9 +706,20 @@
 
 <a id="topic-optimization"></a>
 <details>
-<summary><strong>优化与训练</strong> · 105 篇</summary>
+<summary><strong>优化与训练</strong> · 106 篇</summary>
 
 [返回目录](#目录)
+
+<a id="series-optimization-9aa52368b1"></a>
+#### 流形上的最速下降 [返回目录](#目录)
+
+- 2025-08-01 - [流形上的最速下降：1. SGD + 超球面](https://spaces.ac.cn/archives/11196)
+- 2025-08-06 - [流形上的最速下降：2. Muon + 正交](https://spaces.ac.cn/archives/11215)
+- 2025-08-08 - [流形上的最速下降：3. Muon + Stiefel](https://spaces.ac.cn/archives/11221)
+- 2025-08-21 - [流形上的最速下降：4. Muon + 谱球面](https://spaces.ac.cn/archives/11241)
+- 2025-11-03 - [流形上的最速下降：5. 对偶梯度下降](https://spaces.ac.cn/archives/11388)
+- 2026-06-08 - [流形上的最速下降：6. Muon + 双旋转](https://spaces.ac.cn/archives/11777)
+- 2026-08-17 - [流形上的最速下降：7. Stiefel的解析解](https://spaces.ac.cn/archives/11864)
 
 <a id="series-optimization-22f3c62045"></a>
 #### 让炼丹更科学一些 [返回目录](#目录)
@@ -720,16 +731,6 @@
 - 2026-01-09 - [让炼丹更科学一些（五）：基于梯度精调学习率](https://spaces.ac.cn/archives/11530)
 - 2026-01-16 - [让炼丹更科学一些（六）：自上而下的精妙构造](https://spaces.ac.cn/archives/11540)
 - 2026-07-06 - [让炼丹更科学一些（七）：步长调度与权重平均](https://spaces.ac.cn/archives/11804)
-
-<a id="series-optimization-9aa52368b1"></a>
-#### 流形上的最速下降 [返回目录](#目录)
-
-- 2025-08-01 - [流形上的最速下降：1. SGD + 超球面](https://spaces.ac.cn/archives/11196)
-- 2025-08-06 - [流形上的最速下降：2. Muon + 正交](https://spaces.ac.cn/archives/11215)
-- 2025-08-08 - [流形上的最速下降：3. Muon + Stiefel](https://spaces.ac.cn/archives/11221)
-- 2025-08-21 - [流形上的最速下降：4. Muon + 谱球面](https://spaces.ac.cn/archives/11241)
-- 2025-11-03 - [流形上的最速下降：5. 对偶梯度下降](https://spaces.ac.cn/archives/11388)
-- 2026-06-08 - [流形上的最速下降：6. Muon + 双旋转](https://spaces.ac.cn/archives/11777)
 
 <a id="series-optimization-2adf8edae5"></a>
 #### 基于流式幂迭代的Muon实现 [返回目录](#目录)

@@ -1,5 +1,19 @@
 [
   {
+    "id": "11864",
+    "title": "流形上的最速下降：7. Stiefel的解析解",
+    "url": "https://spaces.ac.cn/archives/11864",
+    "date": "2026-08-17",
+    "source_category": "数学研究",
+    "source_tags": [
+      "优化器",
+      "muon",
+      "约束",
+      "最速下降"
+    ],
+    "source_summary": "在这篇文章中，我们成功为“Muon + Stiefel”的流形最速下降找到解析解，为该问题划上一个圆满的句号。自此，不管是否方阵，正交约束下的Muon优化器都可解析计算，求解本身将不再是困难。"
+  },
+  {
     "id": "11854",
     "title": "除了交叉熵，LM Loss还有什么选择？",
     "url": "https://spaces.ac.cn/archives/11854",
