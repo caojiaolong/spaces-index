@@ -35,6 +35,13 @@ def test_web_shell_has_all_views_and_expected_runtime_assets():
     assert back_to_top.get("aria-label") == "返回页面顶部"
     assert back_to_top.get("tabindex") == "-1"
 
+    favicon = soup.select_one("link[rel='icon']")
+    assert favicon
+    assert favicon.get("href") == "./favicon.svg"
+    assert favicon.get("type") == "image/svg+xml"
+    assert favicon.get("sizes") == "any"
+    assert (WEB / "favicon.svg").is_file()
+
     stylesheets = [link.get("href") for link in soup.select("link[rel='stylesheet']")]
     scripts = [script.get("src") for script in soup.select("script[src]")]
     assert stylesheets == ["./styles.css"]

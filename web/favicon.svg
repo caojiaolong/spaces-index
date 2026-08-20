@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-labelledby="title">
+  <title id="title">科学空间索引</title>
+  <defs>
+    <linearGradient id="background" x1="8" y1="6" x2="56" y2="58" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#3449c5"/>
+      <stop offset="1" stop-color="#8b62df"/>
+    </linearGradient>
+    <linearGradient id="wave" x1="10" y1="32" x2="54" y2="32" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#dff7ff"/>
+      <stop offset=".5" stop-color="#fff"/>
+      <stop offset="1" stop-color="#eee8ff"/>
+    </linearGradient>
+  </defs>
+  <rect width="64" height="64" rx="14" fill="url(#background)"/>
+  <circle cx="15" cy="15" r="2" fill="#fff" opacity=".45"/>
+  <circle cx="50" cy="49" r="2.5" fill="#fff" opacity=".32"/>
+  <path d="M9 35c5-17 13-17 18 0s13 17 18 0c3-10 7-14 10-9" fill="none" stroke="url(#wave)" stroke-width="5" stroke-linecap="round"/>
+</svg>
