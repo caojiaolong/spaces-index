@@ -33,7 +33,7 @@
 
 | 文章 | 主题 | 系列 | 最近更新 |
 | ---: | ---: | ---: | :---: |
-| 1333 篇 | 17 个 | 55 个 | 2026-08-17 |
+| 1334 篇 | 17 个 | 55 个 | 2026-08-23 |
 
 > 本项目保存标题、链接、日期、分类、标签、自动主题、系列信息和少量小结短摘录；不镜像、复制或保存文章全文。
 
@@ -74,7 +74,7 @@
   - [搜出来的文本（4 篇）](https://caojiaolong.github.io/spaces-index/#/series/series-efbc1f2b0e42)
   - [能量视角下的GAN模型（3 篇）](https://caojiaolong.github.io/spaces-index/#/series/series-bf3266b9c1b3)
   - [非系列文章（73 篇）](#series-generative-models-standalone)
-- [优化与训练（106 篇）](#topic-optimization)
+- [优化与训练（107 篇）](#topic-optimization)
   - [流形上的最速下降（7 篇）](https://caojiaolong.github.io/spaces-index/#/series/series-9aa52368b14f)
   - [让炼丹更科学一些（7 篇）](https://caojiaolong.github.io/spaces-index/#/series/series-22f3c6204559)
   - [基于流式幂迭代的Muon实现（5 篇）](https://caojiaolong.github.io/spaces-index/#/series/series-b7bbf4382414)
@@ -82,7 +82,7 @@
   - [通过msign来计算奇异值裁剪mclip（2 篇）](https://caojiaolong.github.io/spaces-index/#/series/series-297337ae72f8)
   - [msign算子的Newton-Schulz迭代（2 篇）](https://caojiaolong.github.io/spaces-index/#/series/series-a60856a07854)
   - [从动力学角度看优化算法（7 篇）](https://caojiaolong.github.io/spaces-index/#/series/series-4b38446b55a8)
-  - [非系列文章（74 篇）](#series-optimization-standalone)
+  - [非系列文章（75 篇）](#series-optimization-standalone)
 - [数学工具（380 篇）](#topic-math)
   - [低秩近似之路（5 篇）](https://caojiaolong.github.io/spaces-index/#/series/series-6689ddf615c5)
   - [SVD分解（3 篇）](https://caojiaolong.github.io/spaces-index/#/series/series-cb4267a83e5b)
@@ -145,6 +145,7 @@
 
 ## 最近 10 篇文章
 
+- 2026-08-23 - [动量的新理解：逼近特征层面的梯度下降](https://spaces.ac.cn/archives/11875)
 - 2026-08-17 - [流形上的最速下降：7. Stiefel的解析解](https://spaces.ac.cn/archives/11864) - [查看系列](https://caojiaolong.github.io/spaces-index/#/series/series-9aa52368b14f)
 - 2026-08-09 - [除了交叉熵，LM Loss还有什么选择？](https://spaces.ac.cn/archives/11854)
 - 2026-08-04 - [简单谈谈K3的MoE和Attention](https://spaces.ac.cn/archives/11848)
@@ -154,7 +155,6 @@
 - 2026-07-13 - [LogSumExp和Softmax的泰勒展开](https://spaces.ac.cn/archives/11814)
 - 2026-07-06 - [让炼丹更科学一些（七）：步长调度与权重平均](https://spaces.ac.cn/archives/11804) - [查看系列](https://caojiaolong.github.io/spaces-index/#/series/series-22f3c6204559)
 - 2026-06-25 - [矩阵函数近似中的暴力美学](https://spaces.ac.cn/archives/11787)
-- 2026-06-19 - [强制间隔投影（Margin-Enforcing Projection）](https://spaces.ac.cn/archives/11784)
 
 ## 主题分类
 
@@ -706,7 +706,7 @@
 
 <a id="topic-optimization"></a>
 <details>
-<summary><strong>优化与训练</strong> · 106 篇</summary>
+<summary><strong>优化与训练</strong> · 107 篇</summary>
 
 [返回目录](#目录)
 
@@ -773,6 +773,7 @@
 <a id="series-optimization-standalone"></a>
 #### 非系列文章 [返回目录](#目录)
 
+- 2026-08-23 - [动量的新理解：逼近特征层面的梯度下降](https://spaces.ac.cn/archives/11875)
 - 2026-08-09 - [除了交叉熵，LM Loss还有什么选择？](https://spaces.ac.cn/archives/11854)
 - 2026-06-19 - [强制间隔投影（Margin-Enforcing Projection）](https://spaces.ac.cn/archives/11784)
 - 2026-06-03 - [为什么官方版Muon比MuP版多出一个max(1, ⋅)？](https://spaces.ac.cn/archives/11772)

@@ -1,5 +1,25 @@
 [
   {
+    "id": "11875",
+    "title": "动量的新理解：逼近特征层面的梯度下降",
+    "url": "https://spaces.ac.cn/archives/11875",
+    "date": "2026-08-23",
+    "source_category": "信息时代",
+    "source_tags": [
+      "线性",
+      "梯度",
+      "优化器",
+      "muon"
+    ],
+    "source_summary": "本文从让“参数梯度下降”逼近“特征梯度下降”的思想出发，将动量重新诠释为一个在线回归问题的解，由此引出了一些相关工作。有趣的是，这条路线跟线性注意力从Vanilla到DeltaNet再到MesaNet的演变极其一致，两者看起来有颇多可以相互借鉴的地方。",
+    "topics": [
+      "优化与训练"
+    ],
+    "series": null,
+    "series_index": null,
+    "level": null
+  },
+  {
     "id": "11864",
     "title": "流形上的最速下降：7. Stiefel的解析解",
     "url": "https://spaces.ac.cn/archives/11864",
