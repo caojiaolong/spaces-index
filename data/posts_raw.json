@@ -1,5 +1,11 @@
 [
   {
+    "id": "11879",
+    "title": "让炼丹更科学一些（八）：多阶段训练的学习率",
+    "url": "https://spaces.ac.cn/archives/11879",
+    "date": "2026-08-31"
+  },
+  {
     "id": "11875",
     "title": "动量的新理解：逼近特征层面的梯度下降",
     "url": "https://spaces.ac.cn/archives/11875",
