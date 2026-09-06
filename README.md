@@ -33,7 +33,7 @@
 
 | 文章 | 主题 | 系列 | 最近更新 |
 | ---: | ---: | ---: | :---: |
-| 1335 篇 | 17 个 | 55 个 | 2026-08-31 |
+| 1336 篇 | 17 个 | 55 个 | 2026-09-05 |
 
 > 本项目保存标题、链接、日期、分类、标签、自动主题、系列信息和少量小结短摘录；不镜像、复制或保存文章全文。
 
@@ -74,8 +74,8 @@
   - [搜出来的文本（4 篇）](https://caojiaolong.github.io/spaces-index/#/series/series-efbc1f2b0e42)
   - [能量视角下的GAN模型（3 篇）](https://caojiaolong.github.io/spaces-index/#/series/series-bf3266b9c1b3)
   - [非系列文章（73 篇）](#series-generative-models-standalone)
-- [优化与训练（108 篇）](#topic-optimization)
-  - [让炼丹更科学一些（8 篇）](https://caojiaolong.github.io/spaces-index/#/series/series-22f3c6204559)
+- [优化与训练（109 篇）](#topic-optimization)
+  - [让炼丹更科学一些（9 篇）](https://caojiaolong.github.io/spaces-index/#/series/series-22f3c6204559)
   - [流形上的最速下降（7 篇）](https://caojiaolong.github.io/spaces-index/#/series/series-9aa52368b14f)
   - [基于流式幂迭代的Muon实现（5 篇）](https://caojiaolong.github.io/spaces-index/#/series/series-b7bbf4382414)
   - [AdamW的Weight RMS的渐近估计（2 篇）](https://caojiaolong.github.io/spaces-index/#/series/series-ae309a12502d)
@@ -145,6 +145,7 @@
 
 ## 最近 10 篇文章
 
+- 2026-09-05 - [让炼丹更科学一些（九）：经典自适应梯度算法](https://spaces.ac.cn/archives/11882) - [查看系列](https://caojiaolong.github.io/spaces-index/#/series/series-22f3c6204559)
 - 2026-08-31 - [让炼丹更科学一些（八）：多阶段训练的学习率](https://spaces.ac.cn/archives/11879) - [查看系列](https://caojiaolong.github.io/spaces-index/#/series/series-22f3c6204559)
 - 2026-08-23 - [动量的新理解：逼近特征层面的梯度下降](https://spaces.ac.cn/archives/11875)
 - 2026-08-17 - [流形上的最速下降：7. Stiefel的解析解](https://spaces.ac.cn/archives/11864) - [查看系列](https://caojiaolong.github.io/spaces-index/#/series/series-9aa52368b14f)
@@ -154,7 +155,6 @@
 - 2026-07-21 - [将Softmax Attention线性化为Gated DeltaNet](https://spaces.ac.cn/archives/11823)
 - 2026-07-16 - [基于排序不等式的相似度指标](https://spaces.ac.cn/archives/11818)
 - 2026-07-13 - [LogSumExp和Softmax的泰勒展开](https://spaces.ac.cn/archives/11814)
-- 2026-07-06 - [让炼丹更科学一些（七）：步长调度与权重平均](https://spaces.ac.cn/archives/11804) - [查看系列](https://caojiaolong.github.io/spaces-index/#/series/series-22f3c6204559)
 
 ## 主题分类
 
@@ -706,7 +706,7 @@
 
 <a id="topic-optimization"></a>
 <details>
-<summary><strong>优化与训练</strong> · 108 篇</summary>
+<summary><strong>优化与训练</strong> · 109 篇</summary>
 
 [返回目录](#目录)
 
@@ -721,6 +721,7 @@
 - 2026-01-16 - [让炼丹更科学一些（六）：自上而下的精妙构造](https://spaces.ac.cn/archives/11540)
 - 2026-07-06 - [让炼丹更科学一些（七）：步长调度与权重平均](https://spaces.ac.cn/archives/11804)
 - 2026-08-31 - [让炼丹更科学一些（八）：多阶段训练的学习率](https://spaces.ac.cn/archives/11879)
+- 2026-09-05 - [让炼丹更科学一些（九）：经典自适应梯度算法](https://spaces.ac.cn/archives/11882)
 
 <a id="series-optimization-9aa52368b1"></a>
 #### 流形上的最速下降 [返回目录](#目录)

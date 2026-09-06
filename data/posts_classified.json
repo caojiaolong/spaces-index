@@ -1,5 +1,27 @@
 [
   {
+    "id": "11882",
+    "title": "让炼丹更科学一些（九）：经典自适应梯度算法",
+    "url": "https://spaces.ac.cn/archives/11882",
+    "date": "2026-09-05",
+    "source_category": "数学研究",
+    "source_tags": [
+      "不等式",
+      "梯度",
+      "学习率",
+      "优化器",
+      "炼丹"
+    ],
+    "source_summary": "本文回顾了自适应梯度算法的奠基之作——AdaGrad，并沿着“收敛性分析→最小化上界→最优预条件矩阵”的路线，复现了它的完整推导。可以说，AdaGrad所提的“基于梯度二阶矩调节学习率”，几乎是所有后续的自适应学习率优化器共同的底层原理。",
+    "topics": [
+      "优化与训练"
+    ],
+    "series": "让炼丹更科学一些",
+    "series_index": 9,
+    "level": "advanced",
+    "series_topic": "优化与训练"
+  },
+  {
     "id": "11879",
     "title": "让炼丹更科学一些（八）：多阶段训练的学习率",
     "url": "https://spaces.ac.cn/archives/11879",
