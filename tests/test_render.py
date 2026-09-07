@@ -54,7 +54,7 @@ def test_readme_contains_topic_links_and_stats():
     assert "https://caojiaolong.github.io/spaces-index/" in readme
     assert "非官方、持续更新、只保存元数据" in readme
     assert "## 最近更新" in readme
-    assert "2026-07-10 · 交互式 GitHub Pages 体验升级" in readme
+    assert "2026-09-07 · 现代学术画廊与阅读体验升级" in readme
     assert "非系列文章以及已读/未读组合筛选" in readme
     assert "记录只保存在当前浏览器，不会上传" in readme
     assert readme.index("## 最近更新") < readme.index("## 为什么做这个索引")

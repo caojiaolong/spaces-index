@@ -46,6 +46,7 @@ def test_web_shell_has_all_views_and_expected_runtime_assets():
     scripts = [script.get("src") for script in soup.select("script[src]")]
     assert stylesheets == ["./styles.css"]
     assert scripts == [
+        "./library.js",
         "./app.js",
         "https://static.cloudflareinsights.com/beacon.min.js",
     ]
@@ -58,7 +59,7 @@ def test_web_shell_has_all_views_and_expected_runtime_assets():
 
 
 def test_web_app_uses_safe_dom_and_expected_interaction_contract():
-    source = (WEB / "app.js").read_text(encoding="utf-8")
+    source = "\n".join((WEB / name).read_text(encoding="utf-8") for name in ("app.js", "library.js"))
     for unsafe_api in ("innerHTML", "outerHTML", "insertAdjacentHTML", "document.write", "eval("):
         assert unsafe_api not in source
 
@@ -76,7 +77,8 @@ def test_web_app_uses_safe_dom_and_expected_interaction_contract():
     assert 'normalize("NFKC")' in source
     assert 'const EMPTY_SUMMARY_VALUES = new Set(["null", "none", "undefined", "nan"])' in source
     assert "sourceSummary: normalizeSummary" in source
-    assert 'text: post.sourceSummary || "暂无小结"' in source
+    assert 'if (showSummary && post.sourceSummary)' in source
+    assert '暂无小结' not in source
     assert "tokenScore += 5" in source
     assert "tokenScore += 3" in source
     assert "tokenScore += 2" in source
@@ -87,16 +89,11 @@ def test_web_app_uses_safe_dom_and_expected_interaction_contract():
     assert "scrollAfterRender" in source
     assert "post.seriesId" in source
     assert 'className: "post-series-link"' in source
-    assert 'showSeriesAction: true' in source
-    assert 'showEmptySummary: true' in source
-    assert "post.sourceSummary || showEmptySummary" in source
     assert 'exploreFilterHref(exploreState, { topics: [topic] })' in source
     assert 'exploreFilterHref(exploreState, { tag })' in source
     assert '`筛选标签：${tag}`' in source
     assert 'on: { click: prepareExploreFilterNavigation }' in source
     assert '"aria-live": "polite"' in source
-    assert "showSummary: true, showActions: true" in source
-    assert 'text: "查看系列 →"' in source
     assert 'backToTop.addEventListener("click"' in source
     assert 'backToTop.style.setProperty("--scroll-progress"' in source
     assert 'panel?.classList.add("is-open")' in source
@@ -114,7 +111,6 @@ def test_web_app_uses_safe_dom_and_expected_interaction_contract():
     assert "Cloudflare Web Analytics 匿名汇总，不使用 Cookie" in source
     styles = (WEB / "styles.css").read_text(encoding="utf-8")
     assert "prefers-reduced-motion: reduce" in styles
-    assert "width: min(76vw, 280px)" in styles
     assert "grid-template-columns: repeat(2, minmax(0, 1fr))" in styles
     assert "height: 100dvh" in styles
     assert ".filters-panel.is-open" in styles
@@ -124,7 +120,6 @@ def test_web_app_uses_safe_dom_and_expected_interaction_contract():
     assert "width: calc(100% - 20px - env(safe-area-inset-left) - env(safe-area-inset-right))" in styles
     assert "transform: translateX(-50%)" in styles
     assert ".post-series-link" in styles
-    assert ".post-summary.is-empty" in styles
     assert ".pill.is-filter-link:hover" in styles
     assert ".results-controls" in styles
     assert ".page-size-wrap" in styles

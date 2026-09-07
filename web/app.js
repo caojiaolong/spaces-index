@@ -3,6 +3,7 @@ const PAGE_SIZE_OPTIONS = [12, 24, 48, 96];
 const EMPTY_SUMMARY_VALUES = new Set(["null", "none", "undefined", "nan"]);
 const THEME_KEY = "spaces-index-theme";
 const READ_POSTS_KEY = "spaces-index-read-posts-v1";
+const LAST_READ_KEY = "spaces-index-last-read-post-v1";
 const GITHUB_STARS_CACHE_KEY = "spaces-index-github-stars-v1";
 const GITHUB_STARS_CACHE_MS = 30 * 60 * 1000;
 const GITHUB_REPOSITORY_API = "https://api.github.com/repos/caojiaolong/spaces-index";
@@ -35,7 +36,11 @@ const ui = {
   lastPath: null,
   scrollAfterRender: false,
   readPostIds: new Set(),
+  lastReadPostId: null,
+  expandedSummaryIds: new Set(),
 };
+
+let summaryResizeObserver = null;
 
 function createElement(tag, options = {}, children = []) {
   const element = document.createElement(tag);
@@ -337,6 +342,15 @@ function syncReadProgressLabels() {
   document.querySelectorAll("[data-read-progress]").forEach((element) => {
     element.textContent = `已读 ${count} / ${ui.catalog?.stats.postCount ?? 0}`;
   });
+  document.querySelectorAll("[data-series-progress]").forEach((element) => {
+    const series = ui.catalog?.series.find((item) => item.id === element.dataset.seriesProgress);
+    if (series) updateSeriesProgress(element, series);
+  });
+  document.querySelectorAll("[data-chapter-post]").forEach((element) => {
+    element.classList.toggle("is-read", isPostRead(element.dataset.chapterPost));
+  });
+  const continuation = document.querySelector("#continue-reading");
+  if (continuation) fillContinueReading(continuation, ui.catalog);
 }
 
 function isPostRead(postId) {
@@ -347,6 +361,10 @@ function setPostRead(postId, read) {
   const normalizedId = String(postId);
   if (read) ui.readPostIds.add(normalizedId);
   else ui.readPostIds.delete(normalizedId);
+  if (read) {
+    ui.lastReadPostId = normalizedId;
+    try { localStorage.setItem(LAST_READ_KEY, normalizedId); } catch { /* Storage may be disabled. */ }
+  }
   persistReadPostIds();
   syncReadProgressLabels();
 }
@@ -591,15 +609,51 @@ function makePills(post, limit = 4, { exploreState = null } = {}) {
   return row;
 }
 
+function setSummaryExpanded(summary, button, expanded) {
+  summary.classList.toggle("is-expanded", expanded);
+  button.setAttribute("aria-expanded", String(expanded));
+  button.textContent = expanded ? "收起小结 ↑" : "展开小结 ↓";
+  const postId = summary.dataset.expandableSummary;
+  if (expanded) ui.expandedSummaryIds.add(postId);
+  else ui.expandedSummaryIds.delete(postId);
+}
+
+function updateSummaryDisclosure(summary) {
+  if (!summary.isConnected || !summary.clientWidth) return;
+  const button = summary.parentElement.querySelector(".summary-toggle");
+  const style = getComputedStyle(summary);
+  const collapsedHeight = parseFloat(style.lineHeight) * (Number(style.getPropertyValue("--summary-lines")) || 2);
+  const overflows = summary.scrollHeight > Math.ceil(collapsedHeight) + 1;
+  if (!overflows) {
+    // A wider viewport can make an expanded summary fit without a disclosure.
+    if (document.activeElement === button) summary.focus({ preventScroll: true });
+    setSummaryExpanded(summary, button, false);
+  }
+  button.hidden = !overflows;
+}
+
+function syncSummaryDisclosures() {
+  summaryResizeObserver?.disconnect();
+  const summaries = main.querySelectorAll("[data-expandable-summary]");
+  if (!summaries.length) return;
+  if (!summaryResizeObserver && typeof ResizeObserver !== "undefined") {
+    summaryResizeObserver = new ResizeObserver((entries) => {
+      entries.forEach(({ target }) => updateSummaryDisclosure(target));
+    });
+  }
+  summaries.forEach((summary) => {
+    updateSummaryDisclosure(summary);
+    summaryResizeObserver?.observe(summary);
+  });
+  document.fonts?.ready.then(() => summaries.forEach(updateSummaryDisclosure));
+}
+
 function makePostCard(post, {
   showSummary = true,
-  showEmptySummary = false,
-  showActions = false,
-  showSeriesAction = false,
   exploreState = null,
 } = {}) {
   const card = createElement("article", {
-    className: `post-card${showActions ? " has-actions" : ""}${isPostRead(post.id) ? " is-read" : ""}`,
+    className: `post-card${isPostRead(post.id) ? " is-read" : ""}`,
   });
   const content = createElement("div");
   const safeUrl = safeHttpsUrl(post.url);
@@ -625,58 +679,30 @@ function makePostCard(post, {
     makeReadBadge(post),
   ]);
   content.append(meta);
-  if (showSummary && (post.sourceSummary || showEmptySummary)) {
-    content.append(createElement("p", {
-      className: `post-summary${post.sourceSummary ? "" : " is-empty"}`,
-      text: post.sourceSummary || "暂无小结",
-    }));
+  if (showSummary && post.sourceSummary) {
+    const summary = createElement("p", {
+      className: "post-summary",
+      text: post.sourceSummary,
+    });
+    if (exploreState) {
+      summary.id = `post-summary-${post.id}`;
+      summary.dataset.expandableSummary = String(post.id);
+      summary.tabIndex = -1;
+      const button = createElement("button", {
+        className: "summary-toggle", type: "button",
+        attrs: { hidden: true, "aria-controls": summary.id },
+        on: { click: () => setSummaryExpanded(summary, button, !summary.classList.contains("is-expanded")) },
+      });
+      setSummaryExpanded(summary, button, ui.expandedSummaryIds.has(String(post.id)));
+      content.append(createElement("div", { className: "summary-disclosure" }, [summary, button]));
+    } else content.append(summary);
   }
   content.append(createElement("div", { className: "post-card-footer" }, [
-    makePills(post, 4, { exploreState }),
+    makePills(post, 3, { exploreState }),
     makeReadToggle(post, card),
   ]));
-  if (showActions || (showSeriesAction && post.seriesId)) {
-    const actions = createElement("div", { className: "post-card-actions" });
-    if (showActions && safeUrl) {
-      actions.append(createElement("a", {
-        className: "post-card-action",
-        text: "阅读原文 ↗",
-        href: safeUrl,
-        attrs: { target: "_blank", rel: "noopener noreferrer" },
-        on: { click: () => updatePostRead(post, true, card, { fromLink: true }) },
-      }));
-    }
-    if (post.seriesId) {
-      actions.append(createElement("a", {
-        className: "post-card-action series-action",
-        text: "查看系列 →",
-        href: seriesHref(post.seriesId),
-      }));
-    }
-    if (actions.childElementCount) content.append(actions);
-  }
   card.append(content, createElement("span", { className: "post-arrow", text: "↗", attrs: { "aria-hidden": "true" } }));
   return card;
-}
-
-function makeSeriesCard(series) {
-  return createElement("a", { className: "series-card", href: seriesHref(series.id) }, [
-    createElement("span", { className: "card-kicker", text: series.topic || "专题系列" }),
-    createElement("h3", { text: series.name }),
-    createElement("div", { className: "series-meta" }, [
-      createElement("span", { text: `${series.count} 篇` }),
-      series.startDate && series.endDate
-        ? createElement("span", { text: `${series.startDate.slice(0, 4)} — ${series.endDate.slice(0, 4)}` })
-        : null,
-    ]),
-  ]);
-}
-
-function makeTopicCard(topic) {
-  return createElement("a", { className: "topic-card", href: topicHref(topic.name) }, [
-    createElement("h3", { text: topic.name }),
-    createElement("span", { text: `${topic.count} ↗` }),
-  ]);
 }
 
 function makeFooter() {
@@ -696,37 +722,6 @@ function makeFooter() {
   return shell;
 }
 
-function makeHeroVisual() {
-  const gradient = createSvgElement("linearGradient", { id: "curve-gradient", x1: "0", y1: "0", x2: "1", y2: "1" }, [
-    createSvgElement("stop", { offset: "0", "stop-color": "#49a8ff" }),
-    createSvgElement("stop", { offset: ".5", "stop-color": "#8d7dff" }),
-    createSvgElement("stop", { offset: "1", "stop-color": "#c27be8" }),
-  ]);
-  const svg = createSvgElement("svg", {
-    class: "hero-svg",
-    viewBox: "0 0 520 520",
-    role: "img",
-    "aria-label": "由概率轨道、矩阵节点和损失曲线构成的数学图景",
-  }, [
-    createSvgElement("defs", {}, [gradient]),
-    createSvgElement("circle", { class: "orbit-line", cx: "260", cy: "260", r: "190" }),
-    createSvgElement("ellipse", { class: "orbit-line", cx: "260", cy: "260", rx: "208", ry: "86", transform: "rotate(-28 260 260)" }),
-    createSvgElement("ellipse", { class: "orbit-line", cx: "260", cy: "260", rx: "208", ry: "86", transform: "rotate(34 260 260)" }),
-    createSvgElement("path", { class: "curve-glow", d: "M37 335 C108 326 114 137 195 157 S273 376 345 310 S390 114 489 147" }),
-    createSvgElement("path", { class: "curve-line", d: "M37 335 C108 326 114 137 195 157 S273 376 345 310 S390 114 489 147" }),
-    createSvgElement("circle", { class: "node", cx: "108", cy: "257", r: "5" }),
-    createSvgElement("circle", { class: "node", cx: "195", cy: "157", r: "6" }),
-    createSvgElement("circle", { class: "node", cx: "260", cy: "259", r: "6" }),
-    createSvgElement("circle", { class: "node", cx: "345", cy: "310", r: "5" }),
-    createSvgElement("circle", { class: "node", cx: "430", cy: "157", r: "6" }),
-    createSvgElement("text", { class: "visual-label", x: "42", y: "374" }, []),
-    createSvgElement("text", { class: "visual-label", x: "365", y: "445" }, []),
-  ]);
-  svg.querySelectorAll("text")[0].textContent = "∂L / ∂θ → 0";
-  svg.querySelectorAll("text")[1].textContent = "p(z|x) ∝ exp(−E)";
-  return createElement("div", { className: "math-visual", attrs: { "aria-hidden": "false" } }, svg);
-}
-
 function createSectionHeading(eyebrow, title, description, link) {
   const left = createElement("div", {}, [
     createElement("p", { className: "eyebrow", text: eyebrow }),
@@ -739,137 +734,6 @@ function createSectionHeading(eyebrow, title, description, link) {
   ]);
 }
 
-function renderHome(catalog) {
-  const view = createElement("div", { className: "view" });
-  const hero = createElement("section", { className: "hero" });
-  const heroCopy = createElement("div", {}, [
-    createElement("p", { className: "eyebrow", text: "Unofficial metadata atlas" }),
-    createElement("h1", {}, [
-      "让散落的思考，\n",
-      createElement("span", { className: "gradient-text", text: "形成可探索的坐标。" }),
-    ]),
-    createElement("p", {
-      className: "hero-copy",
-      text: "为科学空间文章建立一张持续生长的知识地图。沿着主题、系列、标签与时间，重新发现数学和人工智能中的长线思考。",
-    }),
-    createElement("div", { className: "hero-actions" }, [
-      createElement("a", { className: "button button-primary", text: "开始探索  →", href: "#/explore" }),
-      externalLink("访问科学空间  ↗", "https://spaces.ac.cn/", "button button-ghost"),
-    ]),
-    createElement("p", { className: "hero-note", text: "仅索引公开元数据与短小结，不镜像、不保存文章正文。" }),
-  ]);
-  hero.append(createElement("div", { className: "hero-inner" }, [heroCopy, makeHeroVisual()]));
-  view.append(hero);
-
-  const stats = [
-    [catalog.stats.postCount, "收录文章"],
-    [catalog.stats.topicCount, "知识主题"],
-    [catalog.stats.seriesCount, "连续系列"],
-    [catalog.stats.latestDate, "最近更新"],
-  ];
-  const statStrip = createElement("section", { className: "stat-strip", attrs: { "aria-label": "索引统计" } });
-  stats.forEach(([value, label], index) => {
-    statStrip.append(createElement("div", { className: "stat-item" }, [
-      createElement("span", {
-        className: "stat-value",
-        text: index < 3 && !reduceMotion.matches ? "0" : value,
-        dataset: index < 3 ? { countTarget: value } : {},
-      }),
-      createElement("span", { className: "stat-label", text: label }),
-    ]));
-  });
-  view.append(statStrip);
-
-  const story = createElement("section", { className: "content-section" });
-  const storyShell = createElement("div", { className: "page-shell" });
-  storyShell.append(createSectionHeading(
-    "Why this index",
-    "把漫长写作，读成一条思想的轨迹",
-    "索引不替代原文。它只是给持续十余年的知识积累，补上一层更容易进入的导航。",
-  ));
-  const storyGrid = createElement("div", { className: "story-grid" });
-  [
-    ["01", "从一个问题出发", "用标题、主题与短小结快速判断一篇文章是否值得深入。", "q → ?"],
-    ["02", "沿系列连续阅读", "自动识别文章系列和章节顺序，让上下文不再散落。", "xₜ → xₜ₊₁"],
-    ["03", "在主题之间漫游", "从 Transformer 到几何方程，看见概念之间意外的连接。", "AᵀA ≽ 0"],
-  ].forEach(([index, title, copy, formula]) => {
-    storyGrid.append(createElement("article", { className: "story-card" }, [
-      createElement("span", { className: "story-index", text: index }),
-      createElement("span", { className: "story-formula", text: formula, attrs: { "aria-hidden": "true" } }),
-      createElement("h3", { text: title }),
-      createElement("p", { text: copy }),
-    ]));
-  });
-  storyShell.append(storyGrid);
-  story.append(storyShell);
-  view.append(story);
-
-  const recent = createElement("section", { className: "content-section compact" });
-  const recentShell = createElement("div", { className: "page-shell" });
-  recentShell.append(createSectionHeading(
-    "Latest signals",
-    "最近更新",
-    "新的问题、新的推导，以及仍在继续的系列。",
-    { label: "查看全部文章 →", href: "#/explore" },
-  ));
-  const recentList = createElement("div", { className: "post-list" });
-  [...catalog.posts].sort((a, b) => dateNumber(b.date) - dateNumber(a.date)).slice(0, 6)
-    .forEach((post) => recentList.append(makePostCard(post, { showSummary: true, showActions: true })));
-  recentShell.append(recentList);
-  recent.append(recentShell);
-  view.append(recent);
-
-  const topicSection = createElement("section", { className: "content-section compact" });
-  const topicShell = createElement("div", { className: "page-shell" });
-  topicShell.append(createSectionHeading(
-    "Knowledge fields",
-    "从主题进入",
-    "这些不是封闭的抽屉，而是互相交叠的知识坐标。",
-    { label: "浏览主题地图 →", href: "#/topics" },
-  ));
-  const topicGrid = createElement("div", { className: "topic-grid" });
-  [...catalog.topics].sort((a, b) => b.count - a.count).slice(0, 12).forEach((topic) => topicGrid.append(makeTopicCard(topic)));
-  topicShell.append(topicGrid);
-  topicSection.append(topicShell);
-  view.append(topicSection);
-
-  const longSeries = [...catalog.series].sort((a, b) => b.count - a.count).slice(0, 6);
-  if (longSeries.length) {
-    const seriesSection = createElement("section", { className: "content-section compact" });
-    const seriesShell = createElement("div", { className: "page-shell" });
-    seriesShell.append(createSectionHeading(
-      "Long-form thinking",
-      "值得连续阅读的系列",
-      "有些问题需要多篇文章，才能慢慢展开它真正的形状。",
-      { label: "查看全部系列 →", href: "#/series" },
-    ));
-    const grid = createElement("div", { className: "series-grid" });
-    longSeries.forEach((series) => grid.append(makeSeriesCard(series)));
-    seriesShell.append(grid);
-    seriesSection.append(seriesShell);
-    view.append(seriesSection);
-  }
-  view.append(makeFooter());
-  return view;
-}
-
-function animateHomeStats() {
-  if (reduceMotion.matches) return;
-  document.querySelectorAll("[data-count-target]").forEach((element) => {
-    const target = Number(element.dataset.countTarget);
-    if (!Number.isFinite(target)) return;
-    const start = performance.now();
-    const duration = 700;
-    function frame(now) {
-      const progress = Math.min(1, (now - start) / duration);
-      const eased = 1 - Math.pow(1 - progress, 3);
-      element.textContent = Math.round(target * eased).toLocaleString("zh-CN");
-      if (progress < 1) requestAnimationFrame(frame);
-    }
-    requestAnimationFrame(frame);
-  });
-}
-
 function readExploreState(params) {
   let topics = params.getAll("topic").map(safeDecode).filter(Boolean);
   if (!topics.length && params.get("topics")) {
@@ -880,6 +744,7 @@ function readExploreState(params) {
   return {
     q: params.get("q") ?? "",
     topics: unique(topics),
+    withTopic: params.get("with") ?? "",
     tag: params.get("tag") ?? "",
     category: params.get("category") ?? "",
     year: params.get("year") ?? "",
@@ -908,6 +773,7 @@ function exploreParams(state) {
   const params = new URLSearchParams();
   if (state.q) params.set("q", state.q);
   state.topics.forEach((topic) => params.append("topic", topic));
+  if (state.withTopic) params.set("with", state.withTopic);
   if (state.tag) params.set("tag", state.tag);
   if (state.category) params.set("category", state.category);
   if (state.year) params.set("year", state.year);
@@ -938,6 +804,7 @@ function searchAndFilter(catalog, state) {
 
   for (const post of catalog.posts) {
     if (state.topics.length && !post.topics.some((topic) => state.topics.includes(topic))) continue;
+    if (state.withTopic && !post.topics.includes(state.withTopic)) continue;
     if (normalizedTag && !post.sourceTags.some((tag) => normalizeText(tag).includes(normalizedTag))) continue;
     if (state.category && post.sourceCategory !== state.category) continue;
     if (state.year && !post.date.startsWith(`${state.year}-`)) continue;
@@ -1341,6 +1208,7 @@ function renderExplore(catalog, params) {
 
   const chips = createElement("div", { className: "active-filters" });
   state.topics.forEach((topic) => chips.append(makeFilterChip(topic, () => updateExplore(state, { topics: state.topics.filter((item) => item !== topic) }))));
+  if (state.withTopic) chips.append(makeFilterChip(`同时属于 ${state.withTopic}`, () => updateExplore(state, { withTopic: "" })));
   if (state.tag) chips.append(makeFilterChip(`# ${state.tag}`, () => updateExplore(state, { tag: "" })));
   if (state.category) chips.append(makeFilterChip(state.category, () => updateExplore(state, { category: "" })));
   if (state.year) chips.append(makeFilterChip(state.year, () => updateExplore(state, { year: "" })));
@@ -1354,8 +1222,6 @@ function renderExplore(catalog, params) {
   if (pageResults.length) {
     const list = createElement("div", { className: "post-list" });
     pageResults.forEach((post) => list.append(makePostCard(post, {
-      showEmptySummary: true,
-      showSeriesAction: true,
       exploreState: state,
     })));
     resultsColumn.append(list);
@@ -1375,38 +1241,6 @@ function renderExplore(catalog, params) {
 
   layout.append(panel, resultsColumn);
   view.append(layout, makeFooter());
-  return view;
-}
-
-function renderTopicIndex(catalog) {
-  const view = createElement("div", { className: "view" });
-  const shell = createElement("div", { className: "page-shell" });
-  shell.append(createElement("section", { className: "page-hero" }, [
-    createElement("p", { className: "eyebrow", text: "Knowledge fields" }),
-    createElement("h1", { className: "page-title", text: "主题地图" }),
-    createElement("p", {
-      className: "page-description",
-      text: "同一篇文章可以落在多个主题中。这里呈现的是相互交叠的知识方向，而不是彼此隔绝的分类盒子。",
-    }),
-    createElement("div", { className: "topic-summary" }, [
-      createElement("span", {}, [createElement("strong", { text: catalog.stats.topicCount }), "有效主题"]),
-      createElement("span", {}, [createElement("strong", { text: catalog.stats.postCount }), "篇文章"]),
-    ]),
-  ]));
-
-  const topicMap = new Map(catalog.topics.map((topic) => [topic.name, topic]));
-  for (const group of catalog.topicGroups) {
-    const section = createElement("section", { className: "content-section compact" });
-    section.append(createSectionHeading("Topic group", group.name, ""));
-    const grid = createElement("div", { className: "topic-grid" });
-    group.topics
-      .map((name) => topicMap.get(name))
-      .filter((topic) => topic?.count)
-      .forEach((topic) => grid.append(makeTopicCard(topic)));
-    if (grid.childElementCount) section.append(grid);
-    shell.append(section);
-  }
-  view.append(shell, makeFooter());
   return view;
 }
 
@@ -1449,6 +1283,7 @@ function renderTopicDetail(catalog, name, params) {
     ]),
   ]));
 
+  shell.append(makeTopicConnections(catalog, name));
   if (relatedSeries.length) {
     const section = createElement("section", { className: "content-section compact" });
     section.append(createSectionHeading("Related series", "相关系列", "沿着章节顺序连续阅读。"));
@@ -1495,7 +1330,7 @@ function renderSeriesIndex(catalog) {
   const shell = createElement("div", { className: "page-shell" });
   shell.append(createElement("section", { className: "page-hero" }, [
     createElement("p", { className: "eyebrow", text: "Connected chapters" }),
-    createElement("h1", { className: "page-title", text: "系列目录" }),
+    createElement("h1", { className: "page-title", text: "系列书架" }),
     createElement("p", {
       className: "page-description",
       text: "一个概念往往无法在单篇文章里讲完。按章节顺序进入这些长线主题，保留推导与思考的上下文。",
@@ -1509,7 +1344,7 @@ function renderSeriesIndex(catalog) {
     ]),
   ]));
   const content = createElement("section", { className: "content-section compact" });
-  content.append(createSectionHeading("Series atlas", "按篇数浏览", "只展示至少包含两篇文章的系列。"));
+  content.append(createSectionHeading("Collected essays", "沿着问题，慢慢读", "按篇数排列，每一部都始于一个值得追问的问题。"));
   const grid = createElement("div", { className: "series-grid" });
   [...catalog.series].sort((a, b) => b.count - a.count || a.name.localeCompare(b.name, "zh-CN"))
     .forEach((series) => grid.append(makeSeriesCard(series)));
@@ -1531,74 +1366,6 @@ function postsForSeries(catalog, series) {
     if (aNumbered && a.seriesIndex !== b.seriesIndex) return a.seriesIndex - b.seriesIndex;
     return dateNumber(a.date) - dateNumber(b.date);
   });
-}
-
-function renderSeriesDetail(catalog, id) {
-  const series = catalog.series.find((item) => item.id === id);
-  if (!series) return renderNotFound("没有找到这个系列", "它可能还未达到两篇，或系列规则已经更新。", "#/series");
-  const posts = postsForSeries(catalog, series);
-  const view = createElement("div", { className: "view" });
-  const shell = createElement("div", { className: "page-shell" });
-  shell.append(createElement("section", { className: "page-hero" }, [
-    createElement("p", { className: "eyebrow", text: series.topic || "Long-form series" }),
-    createElement("h1", { className: "page-title", text: series.name }),
-    createElement("p", {
-      className: "page-description",
-      text: "章节按系列序号正序排列；没有明确序号时，则沿发表时间向前阅读。",
-    }),
-    createElement("div", { className: "topic-summary" }, [
-      createElement("span", {}, [createElement("strong", { text: posts.length }), "篇文章"]),
-      series.startDate && series.endDate
-        ? createElement("span", {}, [createElement("strong", { text: `${series.startDate.slice(0, 4)}—${series.endDate.slice(0, 4)}` }), "创作跨度"])
-        : null,
-      series.topic ? createElement("span", {}, [createElement("strong", { text: series.topic }), "系列主题"]) : null,
-    ]),
-    createElement("div", { className: "inline-actions" }, [
-      series.topic ? createElement("a", { className: "button button-primary", text: "查看主题 →", href: topicHref(series.topic) }) : null,
-      createElement("a", { className: "button button-ghost", text: "返回系列目录", href: "#/series" }),
-    ]),
-  ]));
-
-  const timelineSection = createElement("section", { className: "content-section compact" });
-  timelineSection.append(createSectionHeading("Reading path", "章节时间线", "从起点开始，也可以直接进入感兴趣的一章。"));
-  const timeline = createElement("div", { className: "timeline" });
-  posts.forEach((post, index) => {
-    const safeUrl = safeHttpsUrl(post.url);
-    const item = createElement("article", {
-      className: `timeline-item${isPostRead(post.id) ? " is-read" : ""}`,
-    });
-    const title = safeUrl
-      ? createElement("a", {
-          text: post.title,
-          href: safeUrl,
-          attrs: { target: "_blank", rel: "noopener noreferrer" },
-          on: { click: () => updatePostRead(post, true, item, { fromLink: true }) },
-        })
-      : createElement("span", { text: post.title });
-    item.append(
-      createElement("span", { className: "timeline-dot", attrs: { "aria-hidden": "true" } }),
-      createElement("div", {
-        className: "timeline-index",
-        text: post.seriesIndex !== null ? `CHAPTER ${String(post.seriesIndex).padStart(2, "0")}` : `ENTRY ${String(index + 1).padStart(2, "0")}`,
-      }),
-      createElement("h3", {}, title),
-      createElement("div", { className: "post-meta" }, [
-        createElement("span", { text: formatDate(post.date) }),
-        post.level ? createElement("span", { text: LEVEL_LABELS[post.level] ?? post.level }) : null,
-        makeReadBadge(post),
-      ]),
-      createElement("p", {
-        className: `post-summary${post.sourceSummary ? "" : " is-empty"}`,
-        text: post.sourceSummary || "暂无小结",
-      }),
-      createElement("div", { className: "timeline-actions" }, [makeReadToggle(post, item)]),
-    );
-    timeline.append(item);
-  });
-  timelineSection.append(timeline);
-  shell.append(timelineSection);
-  view.append(shell, makeFooter());
-  return view;
 }
 
 function renderAbout(catalog) {
@@ -1724,11 +1491,24 @@ function renderRoute() {
   else view = renderNotFound();
 
   main.replaceChildren(view);
+  syncSummaryDisclosures();
   document.title = routeTitle(parts);
   updateNavigation(parts);
   syncAfterRender(parts);
   ui.lastPath = path;
-  if (ui.scrollAfterRender) {
+  if (parts[0] === "series" && parts.length === 2 && params.get("chapter")) {
+    const chapterId = params.get("chapter");
+    requestAnimationFrame(() => {
+      const chapter = document.getElementById(`chapter-${chapterId}`);
+      if (!chapter) return;
+      chapter.scrollIntoView({ block: "start", behavior: "auto" });
+      chapter.focus({ preventScroll: true });
+      document.querySelectorAll("[data-chapter-post]").forEach((link) => {
+        if (link.dataset.chapterPost === chapterId) link.setAttribute("aria-current", "location");
+        else link.removeAttribute("aria-current");
+      });
+    });
+  } else if (ui.scrollAfterRender) {
     ui.scrollAfterRender = false;
     requestAnimationFrame(() => {
       const target = document.querySelector("#page-results");
@@ -1741,7 +1521,6 @@ function renderRoute() {
     scrollTo({ top: 0, behavior: "auto" });
     main.focus({ preventScroll: true });
   }
-  if (!parts.length) requestAnimationFrame(animateHomeStats);
   scheduleScrollState();
 }
 
@@ -1763,7 +1542,7 @@ function applyTheme(preference) {
   themeLabel.textContent = labels[preference];
   themeIcon.textContent = icons[preference];
   themeButton.setAttribute("aria-label", `颜色主题：${labels[preference]}。点击切换`);
-  document.querySelector('meta[name="theme-color"]')?.setAttribute("content", resolved === "dark" ? "#090c14" : "#f5f6fa");
+  document.querySelector('meta[name="theme-color"]')?.setAttribute("content", resolved === "dark" ? "#11151e" : "#f7f8fa");
 }
 
 function cycleTheme() {
@@ -1808,6 +1587,7 @@ backToTop.addEventListener("click", () => {
 window.addEventListener("hashchange", renderRoute);
 window.addEventListener("scroll", scheduleScrollState, { passive: true });
 window.addEventListener("resize", () => {
+  if (!summaryResizeObserver) main.querySelectorAll("[data-expandable-summary]").forEach(updateSummaryDisclosure);
   const panel = document.querySelector("#filters-panel");
   if (innerWidth > 760) {
     if (ui.drawerOpen) closeFilterDrawer({ restoreFocus: false });
@@ -1872,6 +1652,7 @@ async function start() {
   applyTheme(readStoredTheme());
   void loadGitHubStarCount();
   ui.readPostIds = loadReadPostIds();
+  try { ui.lastReadPostId = localStorage.getItem(LAST_READ_KEY); } catch { /* Storage may be disabled. */ }
   if (location.protocol === "file:") {
     renderLocalPreviewHelp();
     return;
