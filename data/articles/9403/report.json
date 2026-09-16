@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "9403",
+    "title": "Transformer升级之路：6、旋转位置编码的完备性分析",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/9403",
+    "date": "2022-12-28",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 51,
+    "display_formula_count": 11,
+    "image_count": 0,
+    "heading_count": 4,
+    "code_block_count": 0,
+    "source_text_sha256": "6914cfbb66a2705acba4c06a20a394978c63f5364a07e5528b997f786e1828e1",
+    "output_text_sha256": "6914cfbb66a2705acba4c06a20a394978c63f5364a07e5528b997f786e1828e1",
+    "latex_sha256": "2eab3b37d7d7ad40225989a82e706af3b5506939514e5cf849df82bf16c812a2",
+    "body_sha256": "ce9def4c94e590a1d94cef729f00a3c566d48f533b8f40ba61f987933e10a500",
+    "converter_version": 1,
+    "markdown_sha256": "d3474a4972361019b8e1a561e0b201103baf49c195d78a1cd7b7575582098662"
+  },
+  "fetched_at": "2026-09-14T12:56:13+00:00",
+  "source_snapshot_sha256": "0104e13448e3a6e683bbfffc2d20e98d9222ed996d25b3b867f20d84290cf861",
+  "images": {},
+  "local_only": true
+}

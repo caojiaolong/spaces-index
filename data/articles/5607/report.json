@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "5607",
+    "title": "python简单实现gillespie模拟",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/5607",
+    "date": "2018-06-07",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 5,
+    "display_formula_count": 1,
+    "image_count": 2,
+    "heading_count": 2,
+    "code_block_count": 3,
+    "source_text_sha256": "816b6c89d98f6f32476f5112860f1da7f80ad68de6d0782794a3e26e78e5b1be",
+    "output_text_sha256": "816b6c89d98f6f32476f5112860f1da7f80ad68de6d0782794a3e26e78e5b1be",
+    "latex_sha256": "03e0e4ecf524eee984d6c5218b6f5667a502d00c20893b7958e7b82d7822c722",
+    "body_sha256": "8d576fd1e66cc43c5b164dc54b09b88858f3600f80f424069264fa1bd5766a07",
+    "converter_version": 1,
+    "markdown_sha256": "bcaef1b949846f3526172b90498554f22af1a7c85605b07fdd068acbbfb84ebc"
+  },
+  "fetched_at": "2026-09-14T13:26:20+00:00",
+  "source_snapshot_sha256": "e27478e71d66dcf69a8cdd9f7e10efeca2043656a54e7db71be13a75ee6015eb",
+  "images": {},
+  "local_only": true
+}

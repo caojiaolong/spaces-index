@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "740",
+    "title": "《向量》系列——3.当天体力学遇到向量(1)",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/740",
+    "date": "2010-07-24",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 20,
+    "display_formula_count": 8,
+    "image_count": 1,
+    "heading_count": 0,
+    "code_block_count": 0,
+    "source_text_sha256": "f7aba3649eebdfde68fdfe5052f03ee67a38f9a160969b8fd76c0a9e214e2aa3",
+    "output_text_sha256": "f7aba3649eebdfde68fdfe5052f03ee67a38f9a160969b8fd76c0a9e214e2aa3",
+    "latex_sha256": "854dc48d94a3fb2722dc75b6f495875f22f961994ca068234f60b91e108ad321",
+    "body_sha256": "22ac4c07324c3fc68321dd7932d886cd68a623c9a1e25a3cdd030c35da75d306",
+    "converter_version": 1,
+    "markdown_sha256": "f7126f2cc9f5c37bfd9add772d5c84443b6f4e8dbfac8925174fe01b63acefcb"
+  },
+  "fetched_at": "2026-09-14T14:34:06+00:00",
+  "source_snapshot_sha256": "24d33f8ab1874164c5bae15693a4b1b567fe0968a269c348fe2f0dee09cd288b",
+  "images": {},
+  "local_only": true
+}

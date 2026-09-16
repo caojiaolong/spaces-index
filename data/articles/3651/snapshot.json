@@ -1,0 +1,17 @@
+{
+  "metadata": {
+    "id": "3651",
+    "title": "通过ssh动态端口转发共享校园资源（附带干货）",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/3651",
+    "date": "2016-03-07",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "fetched_at": "2026-09-14T13:42:07+00:00",
+  "source_snapshot_sha256": "184e2bc8b88ef6a146f04fae507246d8e7dc66b5822cd91a3045e35e46c5d9e2",
+  "validators": {
+    "etag": null,
+    "last_modified": null
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "11664",
+    "title": "Attention Residuals 回忆录",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/11664",
+    "date": "2026-03-19",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 70,
+    "display_formula_count": 11,
+    "image_count": 1,
+    "heading_count": 11,
+    "code_block_count": 0,
+    "source_text_sha256": "6ed1a7c0d840884fd6cb15ba6913f71109c34fadf3458e120802da3e0c5f02a0",
+    "output_text_sha256": "6ed1a7c0d840884fd6cb15ba6913f71109c34fadf3458e120802da3e0c5f02a0",
+    "latex_sha256": "24558b591f2a30ff9db8030a6848a20dd1a2903350fd2b513403be61e8e0e4ec",
+    "body_sha256": "da1ee23ee04a43251bb62c358a99c45ebbcebee2477e00110be6001cb0924b71",
+    "converter_version": 1,
+    "markdown_sha256": "136db42bc8afe05f8b70f246cb4f98888f7b0a6ab361c8dafbbb0da3a62e7958"
+  },
+  "fetched_at": "2026-09-14T12:36:39+00:00",
+  "source_snapshot_sha256": "d2185dbcae675afb2f2c189df38163ebf1aa82c577c651d2d8d82adccc1ff124",
+  "images": {},
+  "local_only": true
+}

@@ -1,0 +1,17 @@
+{
+  "metadata": {
+    "id": "11335",
+    "title": "随机矩阵的谱范数的快速估计",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/11335",
+    "date": "2025-10-12",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "fetched_at": "2026-09-14T12:39:15+00:00",
+  "source_snapshot_sha256": "bfe5eedd61e606017c7a4926dcbedc203de4bd0ca1f168c4978fbd492ee35dd9",
+  "validators": {
+    "etag": null,
+    "last_modified": null
+  }
+}

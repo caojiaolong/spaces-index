@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "9019",
+    "title": "听说Attention与Softmax更配哦～",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/9019",
+    "date": "2022-04-07",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 53,
+    "display_formula_count": 4,
+    "image_count": 1,
+    "heading_count": 5,
+    "code_block_count": 0,
+    "source_text_sha256": "ab8c26097d7951af549b7e4e4e78a8325f582eaf717c5808ac09a9d55e4f420e",
+    "output_text_sha256": "ab8c26097d7951af549b7e4e4e78a8325f582eaf717c5808ac09a9d55e4f420e",
+    "latex_sha256": "a584b32360282ff0bf33a7d596fe784533f3cd7e99295909122d2c362b7cf8ee",
+    "body_sha256": "9be199afe36ea39983ad1a7fa462f0206aede461da6137082a3707a15831dd63",
+    "converter_version": 1,
+    "markdown_sha256": "9a269ed2f3cfc5f547152a97a0cbc154052018af3dbcf219a2d1d398f28c804c"
+  },
+  "fetched_at": "2026-09-14T13:00:25+00:00",
+  "source_snapshot_sha256": "5ae46e51d8c8942c41093ab3d7521886b228d293155ea849203727c57d4f5a4e",
+  "images": {},
+  "local_only": true
+}

@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "958",
+    "title": "关于行星留周期的几何讨论",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/958",
+    "date": "2010-10-02",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 7,
+    "display_formula_count": 4,
+    "image_count": 1,
+    "heading_count": 0,
+    "code_block_count": 0,
+    "source_text_sha256": "1c02e5735328a86809703b8bc201ac3ff288adf60d0fd1b514bc4255b07687b0",
+    "output_text_sha256": "1c02e5735328a86809703b8bc201ac3ff288adf60d0fd1b514bc4255b07687b0",
+    "latex_sha256": "92c688bc62d28aac7c5cf4325b8ea73a4dc7495f56f2c0f0e7a658daf5909c02",
+    "body_sha256": "81d5bac2680ef2d11d8b5298b49d225fa959c203bc1a6b5f7557dba5b8df7ce5",
+    "converter_version": 1,
+    "markdown_sha256": "ec418c83c4caa7893d163b847e1234988a131ba7932be5b1c758ab3c97d0b371"
+  },
+  "fetched_at": "2026-09-14T14:29:47+00:00",
+  "source_snapshot_sha256": "90a8004cae71c20626da9a4743aef0325efab695ce1eecfefad89759e5030dcc",
+  "images": {},
+  "local_only": true
+}

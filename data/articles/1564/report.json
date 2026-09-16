@@ -1,0 +1,39 @@
+{
+  "metadata": {
+    "id": "1564",
+    "title": "我19岁了",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/1564",
+    "date": "2012-04-03",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "source_dom_exact": true,
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "attributes_exact": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 0,
+    "display_formula_count": 0,
+    "image_count": 16,
+    "heading_count": 0,
+    "code_block_count": 0,
+    "source_text_sha256": "cf431e8115db58444a2332b757968a54d360af83e1a6e754df50536d753f332f",
+    "output_text_sha256": "cf431e8115db58444a2332b757968a54d360af83e1a6e754df50536d753f332f",
+    "latex_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "body_sha256": "a521a6bbe92825ebf92d400e0269b71bfb22e220f6cbad4b91da49a7685ff3ac",
+    "converter_version": 1,
+    "format": "html-v1",
+    "source_warnings": [],
+    "fallback_reason": "Hidden body content requires review",
+    "markdown_sha256": "74c0d73250e33fdb4bfe7b2cfcaa561d7f4dd18b84240acb7af3adff624e07b3"
+  },
+  "fetched_at": "2026-09-14T14:14:53+00:00",
+  "source_snapshot_sha256": "cf4aae0871107669a4392fc42554a752a7b4c78bd903533fd0385f33ca4b3d74",
+  "images": {},
+  "local_only": true
+}

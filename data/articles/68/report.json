@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "68",
+    "title": "无穷级数求和的积分审敛法",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/68",
+    "date": "2009-08-12",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 9,
+    "display_formula_count": 0,
+    "image_count": 0,
+    "heading_count": 0,
+    "code_block_count": 0,
+    "source_text_sha256": "45fe780ebba23beb11770090965ab468e5804a86b027a7f0a090433bb89a12b2",
+    "output_text_sha256": "45fe780ebba23beb11770090965ab468e5804a86b027a7f0a090433bb89a12b2",
+    "latex_sha256": "d8a60467bc6ee8375593982ac14aa1dec2123dc46d395384aa39fb6a027a3df9",
+    "body_sha256": "be14bf1965408e70d76e501e7d5211df711741172dbd6a86f7440be65a7a95b0",
+    "converter_version": 1,
+    "markdown_sha256": "ec2ec8c053d0716d8e10837d3ea6ed0f2973b86288be77eacae6f13507cf62ce"
+  },
+  "fetched_at": "2026-09-14T15:00:02+00:00",
+  "source_snapshot_sha256": "f5fd01ffdbb3435cb6ecca4a32a73cf3f801526d3547960b6beb0f1d77638009",
+  "images": {},
+  "local_only": true
+}

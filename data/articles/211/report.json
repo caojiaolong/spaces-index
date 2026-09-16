@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "211",
+    "title": "电影《宇宙之旅》(IMAX Cosmic Voyage)",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/211",
+    "date": "2009-10-25",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 0,
+    "display_formula_count": 0,
+    "image_count": 3,
+    "heading_count": 0,
+    "code_block_count": 0,
+    "source_text_sha256": "c80e13efd72f064a70a9ff4dc22d26fb824fc726c58ba69cb9dd7665e04249a0",
+    "output_text_sha256": "c80e13efd72f064a70a9ff4dc22d26fb824fc726c58ba69cb9dd7665e04249a0",
+    "latex_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "body_sha256": "5bfcbca2e1954dbee2a951e4464078263d0f46a4455b4d15dfb9d7d3b1202c8d",
+    "converter_version": 1,
+    "markdown_sha256": "6265f95235a85bbdc5405fe13167dbb52f8bfba9ff4f8ce0406a3f4ea306621b"
+  },
+  "fetched_at": "2026-09-14T14:47:45+00:00",
+  "source_snapshot_sha256": "52f59f61d69354ad43325e7fb8498d3c901f9a547255c7cd6b6f2a97085e24e9",
+  "images": {},
+  "local_only": true
+}

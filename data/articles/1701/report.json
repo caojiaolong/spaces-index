@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "1701",
+    "title": "电偶极子浅探（2）",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/1701",
+    "date": "2012-08-18",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 20,
+    "display_formula_count": 10,
+    "image_count": 0,
+    "heading_count": 0,
+    "code_block_count": 0,
+    "source_text_sha256": "34c2fd6733de670f5bc9c3f23f3187088c5494f79d89bd5e81e87b928dc755d9",
+    "output_text_sha256": "34c2fd6733de670f5bc9c3f23f3187088c5494f79d89bd5e81e87b928dc755d9",
+    "latex_sha256": "a3aca1be24326eab4cab117b9da432967433f71d52048d1af5460919dbd5e1ef",
+    "body_sha256": "902c3e322b2ae999107704c0399d024e52609274a7369e394ff2640a20de6e39",
+    "converter_version": 1,
+    "markdown_sha256": "f28b1ecd555d238da555e2ec694495e12b284043bed0a4a239900440849c6570"
+  },
+  "fetched_at": "2026-09-14T14:11:09+00:00",
+  "source_snapshot_sha256": "378269ae5976c618d49385119ea835a3dcf24c42e64acedeed7ed6a3f9e9fd07",
+  "images": {},
+  "local_only": true
+}

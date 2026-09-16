@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "3018",
+    "title": "算符的艺术：差分、微分与伯努利数",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/3018",
+    "date": "2014-10-27",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 53,
+    "display_formula_count": 10,
+    "image_count": 0,
+    "heading_count": 0,
+    "code_block_count": 0,
+    "source_text_sha256": "fdcec99869ae5a27368aff3ca5ef15f495d0fad2dd6322791f5304c5e64653d9",
+    "output_text_sha256": "fdcec99869ae5a27368aff3ca5ef15f495d0fad2dd6322791f5304c5e64653d9",
+    "latex_sha256": "733e55d08ba4fd8deb81adf32be442c5c7edb33ea1a06f4b0c1b2a01e74db0d6",
+    "body_sha256": "2d8fdaad95ca5239ef14c3684d679145456608a3a709e84940dbb6e0e4511679",
+    "converter_version": 1,
+    "markdown_sha256": "8667b01d21337fc34bb0030e07d1fa456820156621839b5a7c887fe722f6ef37"
+  },
+  "fetched_at": "2026-09-14T13:50:12+00:00",
+  "source_snapshot_sha256": "36a6f0cf9c2354e1d0a8b0ae18d8e17699e379835b93bf41d03ffc0117765a2e",
+  "images": {},
+  "local_only": true
+}

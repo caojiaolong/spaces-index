@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "7180",
+    "title": "从几何视角来理解模型参数的初始化策略",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/7180",
+    "date": "2020-01-16",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 77,
+    "display_formula_count": 4,
+    "image_count": 0,
+    "heading_count": 4,
+    "code_block_count": 1,
+    "source_text_sha256": "84bbde2f74fe477345d92cdeb3e4e87a056cb1e60fe4dff5af5d6ce296c27274",
+    "output_text_sha256": "84bbde2f74fe477345d92cdeb3e4e87a056cb1e60fe4dff5af5d6ce296c27274",
+    "latex_sha256": "873d2401b4b5881847cf6ece7f26c89d43faebfd3c4a935bc9384b1f85d7b567",
+    "body_sha256": "54c7caeb5611f56bf7d27465c3c268a5226de1cf2f22acbb350f4ca25c255408",
+    "converter_version": 1,
+    "markdown_sha256": "1e9bb279926d4a7b11b80a14af23b3e3c44657bdf3a91f890fd19651997f025f"
+  },
+  "fetched_at": "2026-09-14T13:15:41+00:00",
+  "source_snapshot_sha256": "59a72e6ab25bf33acf809494a4f92883eb9e0e13a0cde2f078e2b3a32b5fa7c1",
+  "images": {},
+  "local_only": true
+}

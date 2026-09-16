@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "10648",
+    "title": "从谱范数梯度到新式权重衰减的思考",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/10648",
+    "date": "2024-12-25",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 87,
+    "display_formula_count": 15,
+    "image_count": 0,
+    "heading_count": 7,
+    "code_block_count": 0,
+    "source_text_sha256": "afd50df6a74478c7244e97fec77b2dae2987892487d671dd593cc4b9bbf0b200",
+    "output_text_sha256": "afd50df6a74478c7244e97fec77b2dae2987892487d671dd593cc4b9bbf0b200",
+    "latex_sha256": "2bcaeefe866f1045e41f3c72db6082d5cd54e4f225762601ff4df8aaf91cbac5",
+    "body_sha256": "636b9fa843cac863b8325c6969f3d0a5ffe83b3cf2be02d3df0272c801f33b11",
+    "converter_version": 1,
+    "markdown_sha256": "b183cad7b08fbbc4344637791dce25687c5721cdbeaf5ee0129aa14b6adabbe9"
+  },
+  "fetched_at": "2026-09-14T12:44:32+00:00",
+  "source_snapshot_sha256": "69105685fead8fade39d4f66966fa52f204bda110200ec54058148b843d51705",
+  "images": {},
+  "local_only": true
+}

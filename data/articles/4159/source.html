@@ -1,0 +1,35 @@
+<div class="PostContent" id="PostContent">
+<h2 id="跳出单循环">跳出单循环</h2><p>不管是什么编程语言，都有可能会有跳出循环的需求，比如枚举时，找到一个满足条件的数就终止。跳出单循环是很简单的，比如</p><pre class="line-numbers"><code class="language-python">for i in range(10):
+    if i &gt; 5:
+        print i
+        break</code></pre><p>然而，我们有时候会需要跳出多重循环，而break只能够跳出一层循环，比如</p><pre class="line-numbers"><code class="language-python">for i in range(10):
+    for j in range(10):
+        if i+j &gt; 5:
+            print i,j
+            break</code></pre><p>这样的代码并非说找到一组i+j &gt; 5就停止，而是连续找到10组，因为break只跳出了for j in range(10)这一重循环。那么，怎么才能跳出多重呢？在此记录备忘一下。</p><h2 id="跳出多重循环">跳出多重循环</h2><p>事实上，Python的标准语法是不支持跳出多重循环的，所以只能利用一些技巧，大概的思路有：写成函数、利用笛卡尔积、利用调试。</p><h3 id="写成函数">写成函数</h3><p>在Python中，函数运行到return这一句就会停止，因此可以利用这一特性，将功能写成函数，终止多重循环，例如</p><pre class="line-numbers"><code class="language-python">def work():
+    for i in range(10):
+        for j in range(10):
+            if i+j &gt; 5:
+                return i,j
+
+print work()</code></pre><h3 id="利用笛卡尔积">利用笛卡尔积</h3><p>这种方法的思路就是，既然可以跳出单循环，我就将多重循环改写为单循环，这可以利用itertools中的笛卡尔积函数product，例如</p><pre class="line-numbers"><code class="language-python">from itertools import product
+
+for i,j in product(range(10), range(10)):
+    if i+j &gt; 5:
+        print i,j
+        break</code></pre><h3 id="利用调试模式">利用调试模式</h3><p>笛卡尔积的方式很巧妙，也很简洁，但它只能用于每次循环的集合都是独立的情形，假如每层循环都与前一层紧密相关，就不能用这种技巧了。这时候可以用第一种方法，将它写成函数，另外，还可以利用调试模式。这个利用了调试模式中，只要出现报错就退出的原理，它伪装了一个错误出来。</p><pre class="line-numbers"><code class="language-python">class Found(Exception):
+    pass
+
+try:
+    for i in range(10):
+        for j in range(i): #第二重循环跟第一重有关
+            if i + j &gt; 5:
+                raise Found
+except Found:
+    print i, j</code></pre>
+
+
+
+
+
+</div>

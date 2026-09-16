@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "9262",
+    "title": " 生成扩散模型漫谈（十）：统一扩散模型（理论篇）",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/9262",
+    "date": "2022-09-14",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 117,
+    "display_formula_count": 13,
+    "image_count": 2,
+    "heading_count": 6,
+    "code_block_count": 0,
+    "source_text_sha256": "1ef5c1be3662c542eefd09f6274f6b18a911254b5dcb0f636fcd56264207cd81",
+    "output_text_sha256": "1ef5c1be3662c542eefd09f6274f6b18a911254b5dcb0f636fcd56264207cd81",
+    "latex_sha256": "d36ca356a2acebaf9a18c21f567d4de4b95c6094553b6fa55159dd59d0626474",
+    "body_sha256": "65af9b4662706c89edbb3141e96db626eacc37b6ede9f80ea7f6a6dd44aaaaf4",
+    "converter_version": 1,
+    "markdown_sha256": "c4be16c47c77149dadd97d5b43a72437c4a918f256c9f8379494ae8d47b581de"
+  },
+  "fetched_at": "2026-09-14T12:57:52+00:00",
+  "source_snapshot_sha256": "e45ce35e7f43103525575e0629aa99850d4518efe72e314329a75505715abc54",
+  "images": {},
+  "local_only": true
+}

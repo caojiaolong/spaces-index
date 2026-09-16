@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "3913",
+    "title": "【中文分词系列】 2. 基于切分的新词发现",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/3913",
+    "date": "2016-08-18",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 16,
+    "display_formula_count": 1,
+    "image_count": 0,
+    "heading_count": 5,
+    "code_block_count": 2,
+    "source_text_sha256": "f9f5da49849456a188a0839bb66af2b93ecf026efdc027ac73505756ba97e78c",
+    "output_text_sha256": "f9f5da49849456a188a0839bb66af2b93ecf026efdc027ac73505756ba97e78c",
+    "latex_sha256": "540db209646e7dea31bf5113464f49e8878fe179bd7637a719f7f09b8c4c9551",
+    "body_sha256": "31417428c9226205fc16e5c05b304d599e98f9f34a27e97c46109731dc6f86df",
+    "converter_version": 1,
+    "markdown_sha256": "14bf4614c158f81754d8ef3c0871aa95f28834520e296c0cb52f79ccec227940"
+  },
+  "fetched_at": "2026-09-14T13:38:38+00:00",
+  "source_snapshot_sha256": "324c8ca005bc9752d8529116f17dfbc03969aa8df794f66f18da3ffdcb0e1bc7",
+  "images": {},
+  "local_only": true
+}

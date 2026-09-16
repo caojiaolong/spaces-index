@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "10519",
+    "title": "VQ的又一技巧：给编码表加一个线性变换",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/10519",
+    "date": "2024-11-06",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 42,
+    "display_formula_count": 4,
+    "image_count": 1,
+    "heading_count": 6,
+    "code_block_count": 0,
+    "source_text_sha256": "6e7b8ec7107bc42c49fcbdf3737509292f11e59a0ce1212a6846cdea56900441",
+    "output_text_sha256": "6e7b8ec7107bc42c49fcbdf3737509292f11e59a0ce1212a6846cdea56900441",
+    "latex_sha256": "1524add4dd56f753ecff2f2d153660b4cf443e2f7eb0e794d39945af9ae2128d",
+    "body_sha256": "3756d8584dfde065528b6582e2b4b26220d5e5bf64fce1c19f9aaeb1fa238f50",
+    "converter_version": 1,
+    "markdown_sha256": "e61764b0c49a60e3302c01ec29db1dfb4a0a21fbfbe880c3a26a21197f1b39b0"
+  },
+  "fetched_at": "2026-09-14T12:45:42+00:00",
+  "source_snapshot_sha256": "a739641cd3734f0b62d037e3e1edfe1bdc4ec54f2e0615568ac1f5b6cdbff304",
+  "images": {},
+  "local_only": true
+}

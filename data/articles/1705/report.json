@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "1705",
+    "title": "当时七夕笑牵牛",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/1705",
+    "date": "2012-08-23",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 0,
+    "display_formula_count": 0,
+    "image_count": 0,
+    "heading_count": 0,
+    "code_block_count": 0,
+    "source_text_sha256": "3e5989898158cd14df0afe30b97501693ad1b9b5b301cc75a951fc61df729cc4",
+    "output_text_sha256": "3e5989898158cd14df0afe30b97501693ad1b9b5b301cc75a951fc61df729cc4",
+    "latex_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "body_sha256": "41bb79263114b9558b1a7f0eae989cface0160302264154186b8b816ae2895e1",
+    "converter_version": 1,
+    "markdown_sha256": "fd71d8a2038967c677a5db57fa0ee6191d826d35d827c74346a8f8f31b6e5656"
+  },
+  "fetched_at": "2026-09-14T14:11:03+00:00",
+  "source_snapshot_sha256": "4216efb84c05768be4c821067d96f5d1219ade3dab7eaa4c4f2b90692801769d",
+  "images": {},
+  "local_only": true
+}

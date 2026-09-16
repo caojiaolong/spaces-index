@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "6810",
+    "title": "“让Keras更酷一些！”：层中层与mask",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/6810",
+    "date": "2019-07-16",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 34,
+    "display_formula_count": 12,
+    "image_count": 0,
+    "heading_count": 9,
+    "code_block_count": 5,
+    "source_text_sha256": "b88b366b71fc5e9c01d0af84cb32653f95c39ba2caabdafc18bbb8173ba19594",
+    "output_text_sha256": "b88b366b71fc5e9c01d0af84cb32653f95c39ba2caabdafc18bbb8173ba19594",
+    "latex_sha256": "b2a80b8fdc16964723ea6495adb5e624e1a1e0614a944bc82c759ff4779f61c3",
+    "body_sha256": "d3b8c4f6743ec743cab37a9f9bee1c83dac6ca5cfb74e1de2a7a5c4039d5835d",
+    "converter_version": 1,
+    "markdown_sha256": "98aee8390240401acfcd6a8e31dcf3c00e3436e9feda03a317d94386770c314f"
+  },
+  "fetched_at": "2026-09-14T13:18:38+00:00",
+  "source_snapshot_sha256": "a0b629e82f5bfa91309afb0ccb777b8aac6ceb4a7aa375fd7bcbb9d7a1a23db2",
+  "images": {},
+  "local_only": true
+}

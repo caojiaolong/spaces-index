@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "142",
+    "title": "【NASA每日一图】船底座星云的云气柱和喷流",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/142",
+    "date": "2009-10-02",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 0,
+    "display_formula_count": 0,
+    "image_count": 1,
+    "heading_count": 0,
+    "code_block_count": 0,
+    "source_text_sha256": "67dbadde0efb61a2b6f2ceba9a52a4d8e20bfebb7099164815ef57e3bc12ec0a",
+    "output_text_sha256": "67dbadde0efb61a2b6f2ceba9a52a4d8e20bfebb7099164815ef57e3bc12ec0a",
+    "latex_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "body_sha256": "8ba1b3075122479c480e72d0ac976f08baf34ae6676a6a82ad78fad78d8c6c75",
+    "converter_version": 1,
+    "markdown_sha256": "d530fa8d29b65e17909c47cd9c5c5bfb243a6ab882c3ac85fde4231ee3d484f2"
+  },
+  "fetched_at": "2026-09-14T14:50:53+00:00",
+  "source_snapshot_sha256": "1f0d483226e45dbff237710405963cb87df0e46028cb59c3ac6c40cda5dd6591",
+  "images": {},
+  "local_only": true
+}

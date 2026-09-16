@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "656",
+    "title": "科学空间：2010年6月重要天象",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/656",
+    "date": "2010-05-30",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 0,
+    "display_formula_count": 0,
+    "image_count": 6,
+    "heading_count": 0,
+    "code_block_count": 0,
+    "source_text_sha256": "a07a0b33f1d0239ccad56cc6119920af19aa585baf4aa742220968dc5193cddc",
+    "output_text_sha256": "a07a0b33f1d0239ccad56cc6119920af19aa585baf4aa742220968dc5193cddc",
+    "latex_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "body_sha256": "c44244196e3beb62b7176a2ec9c90d15b56cdabcf9a21dc98256785ade1c37f9",
+    "converter_version": 1,
+    "markdown_sha256": "96c94e74c332654a594fc483c60054edfd2b712a1b8d069e2c42d2e2a1311aef"
+  },
+  "fetched_at": "2026-09-14T14:36:50+00:00",
+  "source_snapshot_sha256": "9308c65e4308dbb14ddb0507fab72496cafee4d336b73dc78bb0e6f730e5b2ae",
+  "images": {},
+  "local_only": true
+}

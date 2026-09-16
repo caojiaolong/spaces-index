@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "5332",
+    "title": "基于CNN和VAE的作诗机器人：随机成诗",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/5332",
+    "date": "2018-03-24",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 0,
+    "display_formula_count": 0,
+    "image_count": 2,
+    "heading_count": 8,
+    "code_block_count": 0,
+    "source_text_sha256": "ea07c39bd60af8e967f86652371f69ceaf845516c7e3feb6e2a5670eda1b48b4",
+    "output_text_sha256": "ea07c39bd60af8e967f86652371f69ceaf845516c7e3feb6e2a5670eda1b48b4",
+    "latex_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "body_sha256": "0f694be800fdf5bcfc74ba07638bdf7a93a158970881044eba1a168ec41e8e4d",
+    "converter_version": 1,
+    "markdown_sha256": "b220c2a1cd98788e058b839b62edebe8b033cf52f0f85b017697a4ac68760fea"
+  },
+  "fetched_at": "2026-09-14T13:27:47+00:00",
+  "source_snapshot_sha256": "1d0f9f02756458d511d7297a69efac005d7bb22544a2a342728f6f7ab8c7a47b",
+  "images": {},
+  "local_only": true
+}

@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "792",
+    "title": "【科学松鼠会】猫江湖(科学也是可以很有趣的)",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/792",
+    "date": "2010-08-02",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 0,
+    "display_formula_count": 0,
+    "image_count": 1,
+    "heading_count": 0,
+    "code_block_count": 0,
+    "source_text_sha256": "f25b5ff50bac2462216a4603e18432183ac4891a981b652571d938ff3da33926",
+    "output_text_sha256": "f25b5ff50bac2462216a4603e18432183ac4891a981b652571d938ff3da33926",
+    "latex_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "body_sha256": "7ee798c24df6fbbe0442cb83c0d4032128c7897a652acba3670d5885214339e7",
+    "converter_version": 1,
+    "markdown_sha256": "dd9ef947be235b14f1b98f6072027b854477bfd0c78dfa1360f9fb3d7dbd2962"
+  },
+  "fetched_at": "2026-09-14T14:33:22+00:00",
+  "source_snapshot_sha256": "8560f2d8e1f21e8d523acbbbd7c0f6f8199f3f26e49495842ce248b439a4113b",
+  "images": {},
+  "local_only": true
+}

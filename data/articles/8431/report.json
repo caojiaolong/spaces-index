@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "8431",
+    "title": " 也来盘点一些最近的非Transformer工作",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/8431",
+    "date": "2021-05-24",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 28,
+    "display_formula_count": 6,
+    "image_count": 6,
+    "heading_count": 12,
+    "code_block_count": 0,
+    "source_text_sha256": "b0c17dd9dbc4b87257dac72cbd6afb744e5c1d0c359bda73b4a994ba8bcf9e0e",
+    "output_text_sha256": "b0c17dd9dbc4b87257dac72cbd6afb744e5c1d0c359bda73b4a994ba8bcf9e0e",
+    "latex_sha256": "a41ed584658fd703c21162efa8704a341435820a683058f183f487fa1b3f37aa",
+    "body_sha256": "5b7a88e2dd65348c5376e9c3cced247b09cfc8a26bc3f30f178ef0305c59264a",
+    "converter_version": 1,
+    "markdown_sha256": "98f0fb19b52bbcc774b4ff808941f66e2f0aca4b8a509e90df1d944736e6b280"
+  },
+  "fetched_at": "2026-09-14T13:06:33+00:00",
+  "source_snapshot_sha256": "64ceddc022272043b29843c23e7ac986ae211544c1da37bc60ddccbcdef5286b",
+  "images": {},
+  "local_only": true
+}

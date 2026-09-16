@@ -1,0 +1,39 @@
+{
+  "metadata": {
+    "id": "53",
+    "title": "【NASA每日一图】正在形成的恒星",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/53",
+    "date": "2009-08-03",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "source_dom_exact": true,
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "attributes_exact": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 0,
+    "display_formula_count": 0,
+    "image_count": 1,
+    "heading_count": 0,
+    "code_block_count": 0,
+    "source_text_sha256": "af4de7973f3c7df55ded5964003184a085ab7039045bb1a3c9077ac4d94a0b42",
+    "output_text_sha256": "af4de7973f3c7df55ded5964003184a085ab7039045bb1a3c9077ac4d94a0b42",
+    "latex_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "body_sha256": "dde8202d3925fbd61594f678ae60c30a2cf198a018082e49a3e0e2f0195dcc7b",
+    "converter_version": 1,
+    "format": "html-v1",
+    "source_warnings": [],
+    "fallback_reason": "Standard Markdown round trip changed source structure",
+    "markdown_sha256": "b84b8f66d97325204b30ce98cd8d3e6ed22a76b92154f6ed64b8815d2f409e8f"
+  },
+  "fetched_at": "2026-09-14T15:01:43+00:00",
+  "source_snapshot_sha256": "420861125b9996cd9fcbd63bc323c225640852d71352b9c2f8ebb7b579ddda7a",
+  "images": {},
+  "local_only": true
+}

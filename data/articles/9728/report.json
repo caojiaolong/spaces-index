@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "9728",
+    "title": "Transformer升级之路：13、逆用Leaky ReRoPE",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/9728",
+    "date": "2023-08-14",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 24,
+    "display_formula_count": 4,
+    "image_count": 0,
+    "heading_count": 4,
+    "code_block_count": 0,
+    "source_text_sha256": "d022f4f1abfd1fb9279f164cf99bdd533ebf857c8ef9e2e2152e761a7ddad5c3",
+    "output_text_sha256": "d022f4f1abfd1fb9279f164cf99bdd533ebf857c8ef9e2e2152e761a7ddad5c3",
+    "latex_sha256": "f0afe834119f9747281ed904618c719ce3dca1cdfa77f7170f985eb3b9c14d36",
+    "body_sha256": "02fd8713730a15ef34547beb4f5e4db633df72d8106b75be5132593a7de25c47",
+    "converter_version": 1,
+    "markdown_sha256": "8480bc77bc93db73cf163f641b2237dd79d2ddbff57c6cdc1da20abfdcfe9b4c"
+  },
+  "fetched_at": "2026-09-14T12:52:47+00:00",
+  "source_snapshot_sha256": "ac1a3a98c2799946c6c24ea3db3626c3603bde2db4cc2c6f9f7002723f0568c4",
+  "images": {},
+  "local_only": true
+}

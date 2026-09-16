@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "8715",
+    "title": "关于WhiteningBERT原创性的疑问和沟通",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/8715",
+    "date": "2021-10-09",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 0,
+    "display_formula_count": 0,
+    "image_count": 2,
+    "heading_count": 3,
+    "code_block_count": 0,
+    "source_text_sha256": "4eb17b58e623b16548e213bee50d10d0be3c3a61e5f335d8c3442404ef4ffe6a",
+    "output_text_sha256": "4eb17b58e623b16548e213bee50d10d0be3c3a61e5f335d8c3442404ef4ffe6a",
+    "latex_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "body_sha256": "2cc009942b1203da0708d3761968d448d32dc30dde13ef92dae856abd28431aa",
+    "converter_version": 1,
+    "markdown_sha256": "d1a45a1109f4aba16acc6c3ddb1c7236e6dc1ad9fa1aa992580f9d3d1b8a4f08"
+  },
+  "fetched_at": "2026-09-14T13:03:54+00:00",
+  "source_snapshot_sha256": "fac0f832c486b0853068677900f846592532f3d1122b2f6a8987d8428ca7ac8a",
+  "images": {},
+  "local_only": true
+}

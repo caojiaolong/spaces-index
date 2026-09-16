@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "3101",
+    "title": "正弦级数和余弦级数",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/3101",
+    "date": "2014-12-03",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 14,
+    "display_formula_count": 10,
+    "image_count": 0,
+    "heading_count": 0,
+    "code_block_count": 0,
+    "source_text_sha256": "b285c4e2639eefab2cb0e47f55038d684603a83123337b40941da0a2e99bc37b",
+    "output_text_sha256": "b285c4e2639eefab2cb0e47f55038d684603a83123337b40941da0a2e99bc37b",
+    "latex_sha256": "c5a2064234514a11dee1851fa6a77411f02f44cc0b7d7874ad37ef5adce12961",
+    "body_sha256": "74ae05f25de6e6abb2a4bd881dacf541b6c5e788fc273f9c43d16e3897527f38",
+    "converter_version": 1,
+    "markdown_sha256": "a4da3e580f1716f07f72c03afb4ce41f946bdcee1ab9b9853b36e9eb9d15429e"
+  },
+  "fetched_at": "2026-09-14T13:49:25+00:00",
+  "source_snapshot_sha256": "dba855ebfd544223a896f64971d80b9c79f147004e04c0ebcbcd5ba030ec5e8f",
+  "images": {},
+  "local_only": true
+}

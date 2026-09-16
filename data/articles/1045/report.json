@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "1045",
+    "title": "这个星期对微分方程的认识",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/1045",
+    "date": "2010-11-06",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 14,
+    "display_formula_count": 2,
+    "image_count": 0,
+    "heading_count": 0,
+    "code_block_count": 0,
+    "source_text_sha256": "0c46298641345a35fff76b3d3783d9b31235cf0a226d41fcf55ab1466c5e9050",
+    "output_text_sha256": "0c46298641345a35fff76b3d3783d9b31235cf0a226d41fcf55ab1466c5e9050",
+    "latex_sha256": "f01e473c5f8ecc5b15b292e1d2ed2169c75af1ad8cb10bc0401a1818d9999b4a",
+    "body_sha256": "cd560483b1ef00109eea7ea3f6a8abb427c6b3a3e1838c02d220f28babaf0aa9",
+    "converter_version": 1,
+    "markdown_sha256": "f9ab1d5d225829ff09f52e7ccfd4733c650b3ef708c184ba5952137e0854a0a1"
+  },
+  "fetched_at": "2026-09-14T14:27:37+00:00",
+  "source_snapshot_sha256": "99d61a7a0d9bd2dec4bee70775655d23d5f64bc8628df29fba83f8ee6a7bc2a2",
+  "images": {},
+  "local_only": true
+}

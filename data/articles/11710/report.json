@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "11710",
+    "title": "基于流式幂迭代的Muon实现：4. 原理",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/11710",
+    "date": "2026-04-13",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 107,
+    "display_formula_count": 11,
+    "image_count": 0,
+    "heading_count": 7,
+    "code_block_count": 0,
+    "source_text_sha256": "a727a2120ef19e2cf3bc29b6371c5baf39f98ac151d2626ecdb9b67306d7fa98",
+    "output_text_sha256": "a727a2120ef19e2cf3bc29b6371c5baf39f98ac151d2626ecdb9b67306d7fa98",
+    "latex_sha256": "ac08d36d08ac0be4e01a3b2796ecc73018b02095fb0b04a1138cf75380609eb6",
+    "body_sha256": "a5f8133735deacaabd82bc0ca27a96e521f429251cd607f280d7c245cdc00590",
+    "converter_version": 1,
+    "markdown_sha256": "6b8814209972409f66b2a18f525a7bc48dc6ed67c895e8b19e168d4d464e5d4a"
+  },
+  "fetched_at": "2026-09-14T12:36:13+00:00",
+  "source_snapshot_sha256": "d25268e31128ab7355242622808c67a7d0a10e06b043a2256e00b84bce949879",
+  "images": {},
+  "local_only": true
+}

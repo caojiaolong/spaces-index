@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "9577",
+    "title": "Bias项的神奇作用：RoPE + Bias = 更好的长度外推性",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/9577",
+    "date": "2023-04-03",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 29,
+    "display_formula_count": 5,
+    "image_count": 3,
+    "heading_count": 5,
+    "code_block_count": 0,
+    "source_text_sha256": "417149b64c9079470f8086ff89b48ac3c8ebd02231c6c38b9d60e5adc99d3bc1",
+    "output_text_sha256": "417149b64c9079470f8086ff89b48ac3c8ebd02231c6c38b9d60e5adc99d3bc1",
+    "latex_sha256": "02653d317736d73835bc4b656e33cf86137436a9317c37c74e2595930b49e259",
+    "body_sha256": "8af74ecd1316dca4e65bb877200f86e837d36e43e01a6ff6672f176c9820ef50",
+    "converter_version": 1,
+    "markdown_sha256": "4cc0e2ac778180e627629c76a508d4d80db3cf3a4d2e772b58e7f9e7355026f9"
+  },
+  "fetched_at": "2026-09-14T12:54:45+00:00",
+  "source_snapshot_sha256": "39ca8b98b7b6267b288f631dc18a9c275db2eba4732a607ee366fa0253e53d96",
+  "images": {},
+  "local_only": true
+}

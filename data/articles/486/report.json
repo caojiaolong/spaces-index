@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "486",
+    "title": "【NASA每日一图】黎明天空中的奋进号太空梭",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/486",
+    "date": "2010-02-27",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 0,
+    "display_formula_count": 0,
+    "image_count": 1,
+    "heading_count": 0,
+    "code_block_count": 0,
+    "source_text_sha256": "8f36151571a07a151589f8deea493e70579fec99921e15062cead82461dbe50c",
+    "output_text_sha256": "8f36151571a07a151589f8deea493e70579fec99921e15062cead82461dbe50c",
+    "latex_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "body_sha256": "8f3ca16cae94005dc45efeb921ce04bf88d0d3d78616e6cd33007fed9a4612a8",
+    "converter_version": 1,
+    "markdown_sha256": "e0bdca0f1e717896a558d1f98d33b5f3278160822ac1cbb78b0c258022b3ceb0"
+  },
+  "fetched_at": "2026-09-14T14:40:00+00:00",
+  "source_snapshot_sha256": "b6769794f9d9f2f7c499cbd902cd902f234101a19cd6ef996bcf52cfda243e39",
+  "images": {},
+  "local_only": true
+}

@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "1144",
+    "title": "2010年全年天象",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/1144",
+    "date": "2010-01-01",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 0,
+    "display_formula_count": 0,
+    "image_count": 0,
+    "heading_count": 0,
+    "code_block_count": 0,
+    "source_text_sha256": "8cd1e8190bdf9bdc5157ca76298cb07677831b85a0a59c4cc15a1d32a23fc767",
+    "output_text_sha256": "8cd1e8190bdf9bdc5157ca76298cb07677831b85a0a59c4cc15a1d32a23fc767",
+    "latex_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "body_sha256": "f5b298db20a5ec9581622a04f072240120f1311b0262fa7a4d986bfaf8e98609",
+    "converter_version": 1,
+    "markdown_sha256": "0f3053a06383783aeddd044a993711f80debe1805a16117f83e7df0370f010b3"
+  },
+  "fetched_at": "2026-09-14T14:44:09+00:00",
+  "source_snapshot_sha256": "46a20450e1bcb909b960e7b189afa75b0500fefff5f43f97ec8a37a25686c0bc",
+  "images": {},
+  "local_only": true
+}

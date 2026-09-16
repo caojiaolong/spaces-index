@@ -1,0 +1,39 @@
+{
+  "metadata": {
+    "id": "9305",
+    "title": "生成扩散模型漫谈（十三）：从万有引力到扩散模型",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/9305",
+    "date": "2022-10-18",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "source_dom_exact": true,
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "attributes_exact": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 84,
+    "display_formula_count": 12,
+    "image_count": 6,
+    "heading_count": 9,
+    "code_block_count": 0,
+    "source_text_sha256": "85988900df663df84a0fa932f057e6db5e289eae9d16f7b44b2f9c78a7f8b1df",
+    "output_text_sha256": "85988900df663df84a0fa932f057e6db5e289eae9d16f7b44b2f9c78a7f8b1df",
+    "latex_sha256": "f67fde65493219e327b68e96864b43ce8e8447e98ee6a752eb44f93030af1519",
+    "body_sha256": "cb192f08a985da8a68b9dec56b5b6d6a941af2c2ba4e10f66900322fb19805e5",
+    "converter_version": 1,
+    "format": "html-v1",
+    "source_warnings": [],
+    "fallback_reason": "Unsupported body element: del",
+    "markdown_sha256": "8fca9c8fdecf1f8194cdb942845ba1d9115c9bdd5b2e5788012b3e8117aa6bea"
+  },
+  "fetched_at": "2026-09-14T12:57:26+00:00",
+  "source_snapshot_sha256": "0ced0e2b8e69ca2665e581961bef6b87ab063ced6951606dd2b932f1097a6fee",
+  "images": {},
+  "local_only": true
+}

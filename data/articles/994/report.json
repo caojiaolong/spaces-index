@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "994",
+    "title": "未来的天地枢纽——太空天梯",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/994",
+    "date": "2010-10-22",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 8,
+    "display_formula_count": 4,
+    "image_count": 4,
+    "heading_count": 0,
+    "code_block_count": 0,
+    "source_text_sha256": "15ca978e47d822e15fa9e99dced7b0e013325dc37d068d169f1df5572b3ec10b",
+    "output_text_sha256": "15ca978e47d822e15fa9e99dced7b0e013325dc37d068d169f1df5572b3ec10b",
+    "latex_sha256": "bab355eaf55a83071d5b086bd659c4f71cbfe1a48f53dd7febf47b402a750d5c",
+    "body_sha256": "5e1c5f91d7fbd0b9cc4aae7fc7e3cb0d59b29963029307f3c61dee75949ec007",
+    "converter_version": 1,
+    "markdown_sha256": "ff6f385cf72379320d0a4fc302a1d61ee2b91aef3ff40c6daa4e1dd86c7d6a09"
+  },
+  "fetched_at": "2026-09-14T14:28:29+00:00",
+  "source_snapshot_sha256": "ce051d9a50684b899e26e816c03122af78fc79936d6aba2b58ffa26f707ce031",
+  "images": {},
+  "local_only": true
+}

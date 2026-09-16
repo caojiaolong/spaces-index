@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "9344",
+    "title": "基于Amos优化器思想推导出来的一些“炼丹策略”",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/9344",
+    "date": "2022-11-22",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 159,
+    "display_formula_count": 29,
+    "image_count": 0,
+    "heading_count": 10,
+    "code_block_count": 0,
+    "source_text_sha256": "a0082b5f4965774c88e64879e0ecc3ae236388fef6b69214a40a281ed04ea0b4",
+    "output_text_sha256": "a0082b5f4965774c88e64879e0ecc3ae236388fef6b69214a40a281ed04ea0b4",
+    "latex_sha256": "0e4d2b219858296bdbcb3257878038ff123d472abf7ae9a27fe78a3eeea1f1d7",
+    "body_sha256": "658f6f5ad9de7f9ad9c0181e69fbf6a4aa0db43f973512e3e3a443b3e17d8794",
+    "converter_version": 1,
+    "markdown_sha256": "f356656a6d597c0cdcb8e1bbe5972bda1fdbea217e2e2e20cce965ee2040bf59"
+  },
+  "fetched_at": "2026-09-14T12:57:00+00:00",
+  "source_snapshot_sha256": "93d0ca7c4d9c0918f6d0ea2a9b23c2310b9463e999e45cc8f4d23010bb95e3d1",
+  "images": {},
+  "local_only": true
+}

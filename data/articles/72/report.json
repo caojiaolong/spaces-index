@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "72",
+    "title": "停！",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/72",
+    "date": "2009-08-13",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 0,
+    "display_formula_count": 0,
+    "image_count": 0,
+    "heading_count": 0,
+    "code_block_count": 0,
+    "source_text_sha256": "d98c76c806068ddf48f13cf4782ee4767c7d53bed0d1f8da232ad748f8848621",
+    "output_text_sha256": "d98c76c806068ddf48f13cf4782ee4767c7d53bed0d1f8da232ad748f8848621",
+    "latex_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "body_sha256": "b5f5597a0f38b6f535d0361356d1e363e079505944d5a1567f204641567ffc54",
+    "converter_version": 1,
+    "markdown_sha256": "8e247f01da1372541bda2d3053a3753b253507711283d01e1d76738072e08d71"
+  },
+  "fetched_at": "2026-09-14T14:59:36+00:00",
+  "source_snapshot_sha256": "8a3582bec3dc51907d142aca2a9b4dfeb4cd0f9b25f86935b72e2c40692d5244",
+  "images": {},
+  "local_only": true
+}

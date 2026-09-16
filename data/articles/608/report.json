@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "608",
+    "title": "行星的逆行,顺行和留(计算公式)",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/608",
+    "date": "2010-04-18",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 9,
+    "display_formula_count": 6,
+    "image_count": 2,
+    "heading_count": 0,
+    "code_block_count": 0,
+    "source_text_sha256": "f3821aabe4c650120544770fca4666afdfdbc5031a71a768b330956b4dffb377",
+    "output_text_sha256": "f3821aabe4c650120544770fca4666afdfdbc5031a71a768b330956b4dffb377",
+    "latex_sha256": "706c5ec07ef5dd64b410a9c7d3b80d6eb38eee247bc65022aec71778bf770ec1",
+    "body_sha256": "94f114147a57d2929e98379d5800a9d1937b14da63e310723cadb7de660a9974",
+    "converter_version": 1,
+    "markdown_sha256": "8ecdaf396b049fd4e29185054bab1508bb9d5412099112c63c07c5b936747d4e"
+  },
+  "fetched_at": "2026-09-14T14:37:48+00:00",
+  "source_snapshot_sha256": "f2ad2367a62d0496895485d49f95a49c3e70729af1bc0adc8ad0ce214118387f",
+  "images": {},
+  "local_only": true
+}

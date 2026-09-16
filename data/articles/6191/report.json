@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "6191",
+    "title": "最小熵原理（四）：“物以类聚”之从图书馆到词向量",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/6191",
+    "date": "2018-12-02",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 84,
+    "display_formula_count": 13,
+    "image_count": 1,
+    "heading_count": 17,
+    "code_block_count": 0,
+    "source_text_sha256": "68fde2a581c7e2e10bca7946a19cd11df613307941c0013b8176b86277d31840",
+    "output_text_sha256": "68fde2a581c7e2e10bca7946a19cd11df613307941c0013b8176b86277d31840",
+    "latex_sha256": "a332f54237aa4def8a6acf9c8d9d47105430c041205f69df9a692fc28c462d34",
+    "body_sha256": "8bb63023478604ed318f7bdf08b4f4bf64aca5e56676169d58e740e7b88ead8b",
+    "converter_version": 1,
+    "markdown_sha256": "87794ee9585cd255ca9b556fd25a536dd6ce89bb25356514fc6ebc7b7f0d82b3"
+  },
+  "fetched_at": "2026-09-14T13:22:53+00:00",
+  "source_snapshot_sha256": "56136d023598bf43ae5a316537455580906fb28b67baf14cc6bc642c17a1305f",
+  "images": {},
+  "local_only": true
+}

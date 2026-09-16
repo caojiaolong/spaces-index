@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "3552",
+    "title": "“熵”不起：从熵、最大熵原理到最大熵模型（二）",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/3552",
+    "date": "2015-12-11",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 59,
+    "display_formula_count": 24,
+    "image_count": 1,
+    "heading_count": 8,
+    "code_block_count": 0,
+    "source_text_sha256": "a44239aaa41b6254133712a4b95a06b2a8464fd02931ccdc947f3ca55a8fbc68",
+    "output_text_sha256": "a44239aaa41b6254133712a4b95a06b2a8464fd02931ccdc947f3ca55a8fbc68",
+    "latex_sha256": "9bfa29e29a86ba9d72a810bc559f32138292e392351a7f89d6a0facdc723d60d",
+    "body_sha256": "23a102090410481202ca91e67d0a5ad550ed6667ecaaa67506b132f1746bfb42",
+    "converter_version": 1,
+    "markdown_sha256": "c41c1c3b411d3a9ffa57a9582dcf0160c361cbdce23f9ff6b9c7ba9e6428fd84"
+  },
+  "fetched_at": "2026-09-14T13:43:34+00:00",
+  "source_snapshot_sha256": "196ad30b0c1135a35293f99ab03fc2ce8626e3a420d2611db71f43e675b2f481",
+  "images": {},
+  "local_only": true
+}

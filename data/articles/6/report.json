@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "6",
+    "title": "百科翻译：氢氧化钠（NaOH）的详细介绍",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/6",
+    "date": "2009-07-08",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 28,
+    "display_formula_count": 5,
+    "image_count": 1,
+    "heading_count": 0,
+    "code_block_count": 0,
+    "source_text_sha256": "14374ed412706b6f448925a1604907353d1102a3ad0c8dff94b9b6f2ad6c37ca",
+    "output_text_sha256": "14374ed412706b6f448925a1604907353d1102a3ad0c8dff94b9b6f2ad6c37ca",
+    "latex_sha256": "8cbfb3e9f9d653dda15d48a0a6c6fd658ed791173e68976cb27325b7f5308dd2",
+    "body_sha256": "d2cd09073381a1255d1e06a7719fc135c86ac6dfadead886dd17692a1fa112f9",
+    "converter_version": 1,
+    "markdown_sha256": "4d53a675d09b22563f68bf2567887f86e25e65157813a52d8af317e77faadb15"
+  },
+  "fetched_at": "2026-09-14T15:07:32+00:00",
+  "source_snapshot_sha256": "402fc154155168786d2c43046e9cb1393d90b7b0ee65a79566dcb3980b3d12e9",
+  "images": {},
+  "local_only": true
+}

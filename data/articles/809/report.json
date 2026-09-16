@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "809",
+    "title": "国际观月夜（InOMN）",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/809",
+    "date": "2010-08-03",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 0,
+    "display_formula_count": 0,
+    "image_count": 4,
+    "heading_count": 0,
+    "code_block_count": 0,
+    "source_text_sha256": "3f34ce0e336e2812000fb20e726095781e990ea3eb1b86f6dd24d5e07ab8a3dc",
+    "output_text_sha256": "3f34ce0e336e2812000fb20e726095781e990ea3eb1b86f6dd24d5e07ab8a3dc",
+    "latex_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "body_sha256": "618a55be097992f7ab1b8309c9027ad4bb535de9cc55a202861f3f49f555dfa4",
+    "converter_version": 1,
+    "markdown_sha256": "0baf2cfd38e5c8521023c39ed33bfa8c658eae84a28d24963d18ca7d56e0d7fb"
+  },
+  "fetched_at": "2026-09-14T14:33:08+00:00",
+  "source_snapshot_sha256": "852cb37c8975b7af4697102292ac8ec17e225ecb215b3fbdb42ec113bc02dfca",
+  "images": {},
+  "local_only": true
+}

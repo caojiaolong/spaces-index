@@ -1,0 +1,17 @@
+{
+  "metadata": {
+    "id": "4159",
+    "title": "【备忘】Python中断多重循环的几种思路",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/4159",
+    "date": "2016-12-19",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "fetched_at": "2026-09-14T13:35:18+00:00",
+  "source_snapshot_sha256": "29348d4d7cf2478a9d57b409bfb4d4a1ac76c3571e339826eb824e58cb1edb6e",
+  "validators": {
+    "etag": null,
+    "last_modified": null
+  }
+}

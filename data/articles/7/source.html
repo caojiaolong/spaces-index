@@ -1,0 +1,21 @@
+<div class="PostContent" id="PostContent">
+<p><span style="color:#ff0000"><strong>数字是美丽的、极具魅力的，正如——</strong></span><br/>
+<u><span style="color:#4169e1">有这样的一种数，将其拆开成为两个数，这两个数的和的平方等于原数。</span></u>例如：<br/>
+$$\begin{aligned}2025=&amp;(20+25)^2\\88209=&amp;(88+209)^2\\152344237969=&amp;(152344+237969)^2\\ &amp;...\end{aligned}$$</p><p><strong>下面是关于这类数的一些研究：</strong></p><p>1、这类数的实质是：$(A+B)^2=10^nA+B$，而对于$(A+B)^2=kA+B$，有<br/>
+$A=k/2-B\pm\sqrt{{k^2}/{4}-(k-1)B}$<br/>
+因此，一般地，对于一个适合的B，可以找到两个对应的A。</p><p>2、对于$(A+B)^2=10^{2n}A+B$的情况，A,B可以为<br/>
+$B={10^{2n}}/4,A={10^{2n}}/4\pm{10^n}/2$</p><p>3、<strong>一般性解法：</strong></p><p>对于$(A+B)^2=10^nA+B$，有$(A+B)(A+B-1)=(10^n-1)A$。对此，我们知道，要找出两个相邻的自然数之积为$(10^n-1)$的倍数。设想令$10^n-1=X\cdot Y,A=M\cdot N$，并且使$M\cdot X=N\cdot Y+-1$。</p><p>$X,Y$可以由$10^n-1$来预先确定，通过找到适合的N来确定M。于是，在$M\cdot X=N\cdot Y+1$中，A=MN，A+B=NY+1；</p><p>在$M\cdot X=N\cdot Y-1$中，$A=MN，A+B=NY$。在此过程中，会用到剩余定理、因式分解等。</p><p><strong>例如：</strong></p><p><span style="color:#ff0000"><strong>3.1</strong></span> <span style="color:#008000">寻找两位数的A、B</span>，<br/>
+即$(A+B)(A+B-1)=99A$。<br/>
+令$99=9\cdot 11$（不能分成$3\cdot 33,1\cdot 99$，想想为什么？）。在$M\cdot X=N\cdot Y-1$的形式中，</p><p>我们有$(11N-1)\mod 9=0$</p><p>于是N为5+9p的形式的数，取N=5，得到M=6，A=30，B=25。同时对于B=25，另一个A为20。即<br/>
+$$\begin{aligned}(30+25)^2=&amp;3025\\<br/>
+(20+25)^2=&amp;2025\end{aligned}$$</p><p><span style="color:#ff0000"><strong>3.2</strong></span> <span style="color:#008000">寻找六位数的A、B</span>，<br/>
+即$(A+B)(A+B-1)=(10^6-1)A$<br/>
+由于$10^6-1=3^3\cdot 7\cdot 11\cdot 13\cdot 37$，我们可以令$10^6-1=143\cdot 6993$（不唯一）。在$M\cdot X=N\cdot Y-1$的形式中，</p><p>我们有$(6993N-1)\mod 143=0$</p><p>可以求出N为51+143p形式的数，取N=51，则M=2494，A=127194，B=229449。同时对于B=229449，另一个A为413908。即<br/>
+$$\begin{aligned}(127194+229449)^2=&amp;127194229449\\<br/>
+(413908+229449)^2=&amp;413908229449\end{aligned}$$</p><p><span style="color:#ff0000"><strong>到了这里，问题已基本上求解完成了，沿着这个思路，我们可以找到更多的这样的平方数。而且一般地，这种平方数的个数是无穷的。</strong></span></p>
+
+
+
+
+
+</div>

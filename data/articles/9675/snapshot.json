@@ -1,0 +1,17 @@
+{
+  "metadata": {
+    "id": "9675",
+    "title": "Transformer升级之路：10、RoPE是一种β进制编码",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/9675",
+    "date": "2023-07-06",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "fetched_at": "2026-09-14T12:53:20+00:00",
+  "source_snapshot_sha256": "f0d0cac91a9e70b642913d996f61fa2da755d1332ad8acf2ec67680edee95efd",
+  "validators": {
+    "etag": null,
+    "last_modified": null
+  }
+}

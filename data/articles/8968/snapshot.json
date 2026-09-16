@@ -1,0 +1,17 @@
+{
+  "metadata": {
+    "id": "8968",
+    "title": "指数梯度下降 + 元学习 = 自适应学习率",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/8968",
+    "date": "2022-03-03",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "fetched_at": "2026-09-14T13:01:04+00:00",
+  "source_snapshot_sha256": "f89a33409b21379d6ce64ff3cfff66649668601be7d946a532c213ebf9dad8f0",
+  "validators": {
+    "etag": null,
+    "last_modified": null
+  }
+}

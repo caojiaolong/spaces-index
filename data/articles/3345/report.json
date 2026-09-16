@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "3345",
+    "title": "收到新版《量子力学与路径积分》",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/3345",
+    "date": "2015-06-06",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 0,
+    "display_formula_count": 0,
+    "image_count": 2,
+    "heading_count": 0,
+    "code_block_count": 0,
+    "source_text_sha256": "cd6acbacba966feef017d0dd9769640231d9df507d4aeee7df3f2737ac6e7b8f",
+    "output_text_sha256": "cd6acbacba966feef017d0dd9769640231d9df507d4aeee7df3f2737ac6e7b8f",
+    "latex_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "body_sha256": "9683a4fa3232680330e142e40cb0b9542cc9787b39d667800f67c8ce71999210",
+    "converter_version": 1,
+    "markdown_sha256": "3d1aa2fc9425595d42737feeb288446a54a0bfebcba7089b282e9847d448b094"
+  },
+  "fetched_at": "2026-09-14T13:45:58+00:00",
+  "source_snapshot_sha256": "e9ce51f10a82708d6f8e95f54b4a997f23406aa17bd4d4b799334d0a195d996d",
+  "images": {},
+  "local_only": true
+}

@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "11233",
+    "title": "ReLU/GeLU/Swish的一个恒等式",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/11233",
+    "date": "2025-08-16",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 13,
+    "display_formula_count": 3,
+    "image_count": 0,
+    "heading_count": 3,
+    "code_block_count": 0,
+    "source_text_sha256": "fed0dc1cd21fc24c495e93374ebccdb3ed382098d2609ca5b0b7e56b30d53267",
+    "output_text_sha256": "fed0dc1cd21fc24c495e93374ebccdb3ed382098d2609ca5b0b7e56b30d53267",
+    "latex_sha256": "39f80704685da41494fdd3aab7b8d8c315a4d46755115b56360fcf774c5456cd",
+    "body_sha256": "a393b031b219a35c52136267c05b3691d6d005b0bfa6a016fc2478fb207c5a6e",
+    "converter_version": 1,
+    "markdown_sha256": "7a29c4ba37d4e124330fbffe9847f5d1af5464cd9ced1115caeb74bc56a87480"
+  },
+  "fetched_at": "2026-09-14T12:40:25+00:00",
+  "source_snapshot_sha256": "0e2395aa3253105f59e5c2f8e1e94076e8c54d2c7f09bb8d9c23c7dae5e93e3f",
+  "images": {},
+  "local_only": true
+}

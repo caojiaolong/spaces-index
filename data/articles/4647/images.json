@@ -1,0 +1,55 @@
+{
+  "version": 1,
+  "images": {
+    "https://spaces.ac.cn/usr/uploads/2017/10/992994229.png": {
+      "status": "cached",
+      "file": "1a9ae5c77e75d4392764cf2fae3cd9e4c07f5cb9475d2581ab227266702bc107.png",
+      "sha256": "1a9ae5c77e75d4392764cf2fae3cd9e4c07f5cb9475d2581ab227266702bc107",
+      "bytes": 7871,
+      "checked_at": "2026-09-16T09:25:03+00:00",
+      "fetched_url": "https://spaces.ac.cn/usr/uploads/2017/10/992994229.png",
+      "etag": "\"5a6ec743-1ebf\"",
+      "last_modified": "Mon, 29 Jan 2018 07:03:31 GMT"
+    },
+    "https://spaces.ac.cn/usr/uploads/2017/10/2959942097.png": {
+      "status": "cached",
+      "file": "890b34eb47083fc855af8ca9e1265a0d7fbf69cedc0d320d1fdabf149c4edd43.png",
+      "sha256": "890b34eb47083fc855af8ca9e1265a0d7fbf69cedc0d320d1fdabf149c4edd43",
+      "bytes": 6708,
+      "checked_at": "2026-09-16T09:25:06+00:00",
+      "fetched_url": "https://spaces.ac.cn/usr/uploads/2017/10/2959942097.png",
+      "etag": "\"5a6ec743-1a34\"",
+      "last_modified": "Mon, 29 Jan 2018 07:03:31 GMT"
+    },
+    "https://spaces.ac.cn/usr/uploads/2017/10/3233256886.png": {
+      "status": "cached",
+      "file": "160a815ffa7e8ebe10b1a2c755e75a47b6c1c38464c3f147203d3ecfed74e645.png",
+      "sha256": "160a815ffa7e8ebe10b1a2c755e75a47b6c1c38464c3f147203d3ecfed74e645",
+      "bytes": 7854,
+      "checked_at": "2026-09-16T09:25:10+00:00",
+      "fetched_url": "https://spaces.ac.cn/usr/uploads/2017/10/3233256886.png",
+      "etag": "\"5a6ec743-1eae\"",
+      "last_modified": "Mon, 29 Jan 2018 07:03:31 GMT"
+    },
+    "https://spaces.ac.cn/usr/uploads/2017/10/4124228829.png": {
+      "status": "cached",
+      "file": "156f2a643590f3cba3eac11b21a005328b3056534485c76c07abff2d8fd382b9.png",
+      "sha256": "156f2a643590f3cba3eac11b21a005328b3056534485c76c07abff2d8fd382b9",
+      "bytes": 7882,
+      "checked_at": "2026-09-16T09:25:14+00:00",
+      "fetched_url": "https://spaces.ac.cn/usr/uploads/2017/10/4124228829.png",
+      "etag": "\"5a6ec743-1eca\"",
+      "last_modified": "Mon, 29 Jan 2018 07:03:31 GMT"
+    },
+    "https://spaces.ac.cn/usr/uploads/2017/10/1391131594.png": {
+      "status": "cached",
+      "file": "8b95ece59c50c61baef773429515bf1cf0a4cbf05ec6bd9c6ce09af511fe6c8a.png",
+      "sha256": "8b95ece59c50c61baef773429515bf1cf0a4cbf05ec6bd9c6ce09af511fe6c8a",
+      "bytes": 10764,
+      "checked_at": "2026-09-16T09:25:18+00:00",
+      "fetched_url": "https://spaces.ac.cn/usr/uploads/2017/10/1391131594.png",
+      "etag": "\"5a6ec743-2a0c\"",
+      "last_modified": "Mon, 29 Jan 2018 07:03:31 GMT"
+    }
+  }
+}

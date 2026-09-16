@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "2374",
+    "title": "炼钢.vs.做菜：淬火与过冷河",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/2374",
+    "date": "2014-02-22",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 0,
+    "display_formula_count": 0,
+    "image_count": 1,
+    "heading_count": 0,
+    "code_block_count": 0,
+    "source_text_sha256": "9753de5c713055cf210942b3aa9a9edf55809e0c7aa9be9588ab5887acacd6f0",
+    "output_text_sha256": "9753de5c713055cf210942b3aa9a9edf55809e0c7aa9be9588ab5887acacd6f0",
+    "latex_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "body_sha256": "c9cfbe94e18318c8a3d2e7e923f05c370ec123b2019d10c72176994e8c50c494",
+    "converter_version": 1,
+    "markdown_sha256": "734780a4025afe7ebbe8ed53d803bb7d754583769dec4f285ab11fc64d17c115"
+  },
+  "fetched_at": "2026-09-14T13:56:42+00:00",
+  "source_snapshot_sha256": "02bc2e366cc11be8d6628c9eb87c3de3b8818b72128afdc1272f234c82574ed5",
+  "images": {},
+  "local_only": true
+}

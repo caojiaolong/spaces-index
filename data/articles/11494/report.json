@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "11494",
+    "title": "让炼丹更科学一些（四）：新恒等式，新学习率",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/11494",
+    "date": "2025-12-26",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 78,
+    "display_formula_count": 15,
+    "image_count": 0,
+    "heading_count": 6,
+    "code_block_count": 0,
+    "source_text_sha256": "084a53a745631f1f3e35cc50c6511f61bc98c0b04db0421a583404681115e343",
+    "output_text_sha256": "084a53a745631f1f3e35cc50c6511f61bc98c0b04db0421a583404681115e343",
+    "latex_sha256": "2dff3aa684d937309fd49d251c37e14d41d94d4b5d2943c3e995dfca60c11df8",
+    "body_sha256": "6d04dbaecc7e13b333f7c9f4d96376acac12a5a71c826351df9200ef1a75d1bc",
+    "converter_version": 1,
+    "markdown_sha256": "fff342470e8f1fc00b7732389ba4b7336b683c143109bb1e234d695ca6e127c1"
+  },
+  "fetched_at": "2026-09-14T12:37:58+00:00",
+  "source_snapshot_sha256": "e7972df8463b77d504877c77ef6a618de787fa6a22226d28e8af57e46e720a0b",
+  "images": {},
+  "local_only": true
+}

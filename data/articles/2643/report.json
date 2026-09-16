@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "2643",
+    "title": "【备忘】访问Google的几个方式",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/2643",
+    "date": "2014-06-15",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 0,
+    "display_formula_count": 0,
+    "image_count": 0,
+    "heading_count": 0,
+    "code_block_count": 0,
+    "source_text_sha256": "424ac33fb6732e5bac86f9527ac414002bdef7c473a1664dbf87aa7ecb0525d9",
+    "output_text_sha256": "424ac33fb6732e5bac86f9527ac414002bdef7c473a1664dbf87aa7ecb0525d9",
+    "latex_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "body_sha256": "4ed97fa5e8156ad4d9b057e1ec05b471842d8ee943e2d016fd4fc6978e4f8bdf",
+    "converter_version": 1,
+    "markdown_sha256": "b4c304f94c5a3fe3ddf27a379a163dd1d5f55cbc5bce46b33e00d776165bf076"
+  },
+  "fetched_at": "2026-09-14T13:54:03+00:00",
+  "source_snapshot_sha256": "437678f1d3954334d7e34fc616295cc829a2d2999cbc211072b6efaefda5e1f9",
+  "images": {},
+  "local_only": true
+}

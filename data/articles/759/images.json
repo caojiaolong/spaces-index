@@ -1,0 +1,45 @@
+{
+  "version": 1,
+  "images": {
+    "https://spaces.ac.cn/usr/uploads/2010/07/3897436664.png": {
+      "status": "cached",
+      "file": "24506305bbeeb38cb0868525fc1a7c248b5e96dba3d35a7ee649e1206ff0aa7c.png",
+      "sha256": "24506305bbeeb38cb0868525fc1a7c248b5e96dba3d35a7ee649e1206ff0aa7c",
+      "bytes": 12269,
+      "checked_at": "2026-09-16T12:13:14+00:00",
+      "fetched_url": "https://spaces.ac.cn/usr/uploads/2010/07/3897436664.png",
+      "etag": "\"5a6ec748-2fed\"",
+      "last_modified": "Mon, 29 Jan 2018 07:03:36 GMT"
+    },
+    "https://spaces.ac.cn/usr/uploads/2010/07/538147887.png": {
+      "status": "cached",
+      "file": "a66be9117ae4241952a80a6a80e54e1e802d2f2b9de113f8913556ff4a07eb16.png",
+      "sha256": "a66be9117ae4241952a80a6a80e54e1e802d2f2b9de113f8913556ff4a07eb16",
+      "bytes": 16867,
+      "checked_at": "2026-09-16T12:13:17+00:00",
+      "fetched_url": "https://spaces.ac.cn/usr/uploads/2010/07/538147887.png",
+      "etag": "\"5a6ec747-41e3\"",
+      "last_modified": "Mon, 29 Jan 2018 07:03:35 GMT"
+    },
+    "https://spaces.ac.cn/usr/uploads/2010/07/1626179414.png": {
+      "status": "cached",
+      "file": "488ac040dc491140863643996a2a0741c126a7ef8db20e33595d3219b9a97ab3.png",
+      "sha256": "488ac040dc491140863643996a2a0741c126a7ef8db20e33595d3219b9a97ab3",
+      "bytes": 10405,
+      "checked_at": "2026-09-16T12:13:20+00:00",
+      "fetched_url": "https://spaces.ac.cn/usr/uploads/2010/07/1626179414.png",
+      "etag": "\"5a6ec748-28a5\"",
+      "last_modified": "Mon, 29 Jan 2018 07:03:36 GMT"
+    },
+    "https://spaces.ac.cn/usr/uploads/2010/07/2636464648.png": {
+      "status": "cached",
+      "file": "fe63de4db7fda59f7dc7e0d2094348369c5f218e36e3343aa81b57a2c3c477fc.png",
+      "sha256": "fe63de4db7fda59f7dc7e0d2094348369c5f218e36e3343aa81b57a2c3c477fc",
+      "bytes": 14060,
+      "checked_at": "2026-09-16T12:13:23+00:00",
+      "fetched_url": "https://spaces.ac.cn/usr/uploads/2010/07/2636464648.png",
+      "etag": "\"5a6ec748-36ec\"",
+      "last_modified": "Mon, 29 Jan 2018 07:03:36 GMT"
+    }
+  }
+}

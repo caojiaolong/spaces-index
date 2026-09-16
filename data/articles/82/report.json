@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "82",
+    "title": "排除万难，就会有奇迹出现",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/82",
+    "date": "2009-08-18",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 0,
+    "display_formula_count": 0,
+    "image_count": 1,
+    "heading_count": 0,
+    "code_block_count": 0,
+    "source_text_sha256": "42159c4eeeddb432915e03672eb90561fe97bf9a68b2575996bcfeaf1d726ad7",
+    "output_text_sha256": "42159c4eeeddb432915e03672eb90561fe97bf9a68b2575996bcfeaf1d726ad7",
+    "latex_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "body_sha256": "cd84633affc63acdc3b5663c232e26f6313b90e8c97cee2445b149bd6d34668c",
+    "converter_version": 1,
+    "markdown_sha256": "c06cc17b69281bd762f7485e922d7bc2b1207f2b8747cf044aa83956103334f5"
+  },
+  "fetched_at": "2026-09-14T14:58:34+00:00",
+  "source_snapshot_sha256": "be908fdfcae35d751d0f42687a95f6bf8870c4ef24cb7d51d6bfaa1d236e86ab",
+  "images": {},
+  "local_only": true
+}

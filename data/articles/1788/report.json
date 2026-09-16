@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "1788",
+    "title": "2012年天象",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/1788",
+    "date": "2011-11-21",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 0,
+    "display_formula_count": 0,
+    "image_count": 0,
+    "heading_count": 0,
+    "code_block_count": 0,
+    "source_text_sha256": "31e5d007165e73e275c0a616cacd7517c2fce0af83799a78b3732a10d49bb179",
+    "output_text_sha256": "31e5d007165e73e275c0a616cacd7517c2fce0af83799a78b3732a10d49bb179",
+    "latex_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "body_sha256": "3200ce62f2032d508cb28a9b6b976d6b537dbfcb28688081096923ea285c5869",
+    "converter_version": 1,
+    "markdown_sha256": "1639b999e54610a3e34c7563d8462f19c488662962a16d9d32dae9f02c216c20"
+  },
+  "fetched_at": "2026-09-14T14:16:25+00:00",
+  "source_snapshot_sha256": "ace0240903bf825803b2247a63ee8a71c44658e62866192d729480e4cc93cb96",
+  "images": {},
+  "local_only": true
+}

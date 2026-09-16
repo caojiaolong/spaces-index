@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "689",
+    "title": "威力巨大的“有向线段”",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/689",
+    "date": "2010-06-27",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 0,
+    "display_formula_count": 0,
+    "image_count": 2,
+    "heading_count": 0,
+    "code_block_count": 0,
+    "source_text_sha256": "68a6bd022bcc88bf4e648ca848e9e8b73fb70c0d66c506839da050631b682866",
+    "output_text_sha256": "68a6bd022bcc88bf4e648ca848e9e8b73fb70c0d66c506839da050631b682866",
+    "latex_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "body_sha256": "ec08611462a8cdcd054671b5587cc8e438c5fd5362ca5ab25fb3ee1e82990e06",
+    "converter_version": 1,
+    "markdown_sha256": "c9bc7e7c4e0ca1f954ba28dc65bbb89f2d07ef163ddea1e09be3f7322f5934bc"
+  },
+  "fetched_at": "2026-09-14T14:35:58+00:00",
+  "source_snapshot_sha256": "1766d477cfde5c6941cb0c72c66dfbb9e6d3a5810da53a8e525bd81e6e854a50",
+  "images": {},
+  "local_only": true
+}

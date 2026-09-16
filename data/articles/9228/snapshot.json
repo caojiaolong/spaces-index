@@ -1,0 +1,17 @@
+{
+  "metadata": {
+    "id": "9228",
+    "title": "生成扩散模型漫谈（六）：一般框架之ODE篇",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/9228",
+    "date": "2022-08-08",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "fetched_at": "2026-09-14T12:58:18+00:00",
+  "source_snapshot_sha256": "72d5fe0d7257314e784ed4b045e462189cc206250e62baa10871af51d186e5fe",
+  "validators": {
+    "etag": null,
+    "last_modified": null
+  }
+}

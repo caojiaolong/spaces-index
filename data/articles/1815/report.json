@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "1815",
+    "title": "关于“微分”的理解",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/1815",
+    "date": "2012-12-14",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 30,
+    "display_formula_count": 4,
+    "image_count": 0,
+    "heading_count": 0,
+    "code_block_count": 0,
+    "source_text_sha256": "638cbcda649bd44e8280c41c1097a55ecfdcfd0d31ed283043b5a942382fb855",
+    "output_text_sha256": "638cbcda649bd44e8280c41c1097a55ecfdcfd0d31ed283043b5a942382fb855",
+    "latex_sha256": "e19e34a811701d55fbbb378e1b52f69e9bc202f8cb6b5d3eec024e3be4085d1f",
+    "body_sha256": "e187ef8bd5563152bcd57693aac95f037d47d6cb68ad211ad9b913553f715671",
+    "converter_version": 1,
+    "markdown_sha256": "0bdb5de541bb242c19efcb8a5b1256ae61aba869c7bf9cb97e49729e718d540f"
+  },
+  "fetched_at": "2026-09-14T14:07:51+00:00",
+  "source_snapshot_sha256": "7b694bc38892111de2a2d60862a0fe8ba265e837df944acb49414bccb268a89c",
+  "images": {},
+  "local_only": true
+}

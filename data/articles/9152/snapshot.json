@@ -1,0 +1,17 @@
+{
+  "metadata": {
+    "id": "9152",
+    "title": "生成扩散模型漫谈（二）：DDPM = 自回归式VAE",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/9152",
+    "date": "2022-07-06",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "fetched_at": "2026-09-14T12:58:53+00:00",
+  "source_snapshot_sha256": "f16d04828551dd1b178376b174a2fe6d596bc44b99a646af2bb3f2166780995c",
+  "validators": {
+    "etag": null,
+    "last_modified": null
+  }
+}

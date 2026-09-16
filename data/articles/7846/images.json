@@ -1,0 +1,45 @@
+{
+  "version": 1,
+  "images": {
+    "https://spaces.ac.cn/usr/uploads/2020/10/4232770919.png": {
+      "status": "cached",
+      "file": "26f9f1849fea402e9cfe2c66346ee0049ef9f7caedab3da15a26d90a974f459a.png",
+      "sha256": "26f9f1849fea402e9cfe2c66346ee0049ef9f7caedab3da15a26d90a974f459a",
+      "bytes": 13857,
+      "checked_at": "2026-09-16T08:51:17+00:00",
+      "fetched_url": "https://spaces.ac.cn/usr/uploads/2020/10/4232770919.png",
+      "etag": "\"5f999873-3621\"",
+      "last_modified": "Wed, 28 Oct 2020 16:12:35 GMT"
+    },
+    "https://spaces.ac.cn/usr/uploads/2020/10/2563987083.png": {
+      "status": "cached",
+      "file": "c9e1b96a8084562468eda505ac63d1424246b072da44dfef2d5ce2f869435edf.png",
+      "sha256": "c9e1b96a8084562468eda505ac63d1424246b072da44dfef2d5ce2f869435edf",
+      "bytes": 216003,
+      "checked_at": "2026-09-16T08:51:22+00:00",
+      "fetched_url": "https://spaces.ac.cn/usr/uploads/2020/10/2563987083.png",
+      "etag": "\"5f997a89-34bc3\"",
+      "last_modified": "Wed, 28 Oct 2020 14:04:57 GMT"
+    },
+    "https://spaces.ac.cn/usr/uploads/2020/10/3081119507.png": {
+      "status": "cached",
+      "file": "07bf8a0b3a3129e1b37aa8cb96db38e591f69ef8eccb8ebdcd95a7730294f541.png",
+      "sha256": "07bf8a0b3a3129e1b37aa8cb96db38e591f69ef8eccb8ebdcd95a7730294f541",
+      "bytes": 207913,
+      "checked_at": "2026-09-16T08:51:27+00:00",
+      "fetched_url": "https://spaces.ac.cn/usr/uploads/2020/10/3081119507.png",
+      "etag": "\"5f998072-32c29\"",
+      "last_modified": "Wed, 28 Oct 2020 14:30:10 GMT"
+    },
+    "https://spaces.ac.cn/usr/uploads/2020/10/3762754680.png": {
+      "status": "cached",
+      "file": "59c6d55f0eab21eafd9a126981910d7feed50ef7e29f82037dda165c40bd17ce.png",
+      "sha256": "59c6d55f0eab21eafd9a126981910d7feed50ef7e29f82037dda165c40bd17ce",
+      "bytes": 111718,
+      "checked_at": "2026-09-16T08:51:34+00:00",
+      "fetched_url": "https://spaces.ac.cn/usr/uploads/2020/10/3762754680.png",
+      "etag": "\"5f998073-1b466\"",
+      "last_modified": "Wed, 28 Oct 2020 14:30:11 GMT"
+    }
+  }
+}

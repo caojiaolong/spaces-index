@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "9938",
+    "title": "旁门左道之如何让Python的重试代码更加优雅",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/9938",
+    "date": "2024-01-14",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 0,
+    "display_formula_count": 0,
+    "image_count": 0,
+    "heading_count": 7,
+    "code_block_count": 7,
+    "source_text_sha256": "90813b54d4a5b5b801b943d9321e8642d3ced1019f44aee474e40d600159fa76",
+    "output_text_sha256": "90813b54d4a5b5b801b943d9321e8642d3ced1019f44aee474e40d600159fa76",
+    "latex_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "body_sha256": "945fe58950e7391fd077254c6296c3b4f2fd6aa5174fe73b98599aa2f66745dd",
+    "converter_version": 1,
+    "markdown_sha256": "f6a869c9e8df47a0f382f20bf3084d134cd002202b5f59e1fd04a4bb65fa093d"
+  },
+  "fetched_at": "2026-09-14T07:36:07+00:00",
+  "source_snapshot_sha256": "12d596ab79336c271ac39be15960c313deb0694b344ef09352f09e7bdc589c48",
+  "images": {},
+  "local_only": true
+}

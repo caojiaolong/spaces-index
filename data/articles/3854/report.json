@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "3854",
+    "title": "OCR技术浅探：8. 综合评估",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/3854",
+    "date": "2016-06-26",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 1,
+    "display_formula_count": 0,
+    "image_count": 0,
+    "heading_count": 3,
+    "code_block_count": 0,
+    "source_text_sha256": "8acbc6afcb72da5ee546f580f2c85cdbab95189c2f66f0dbe4117e75b8651b35",
+    "output_text_sha256": "8acbc6afcb72da5ee546f580f2c85cdbab95189c2f66f0dbe4117e75b8651b35",
+    "latex_sha256": "b1dcc7b45952bee34e02d805bb653ef66b310ae0b996c58b1f3a32fd0e4ba956",
+    "body_sha256": "74ff44423731bd7bbb526ffd9fecb28a2f67a3edae064666f88aeb83759093bb",
+    "converter_version": 1,
+    "markdown_sha256": "453c4d3318292996d38d8f3b423a9236c5cee70e8c0f9b451701bcd177675510"
+  },
+  "fetched_at": "2026-09-14T13:39:28+00:00",
+  "source_snapshot_sha256": "815ec93508a7de67e38738c447835538908d12b621fdbd1637313e45245464b5",
+  "images": {},
+  "local_only": true
+}

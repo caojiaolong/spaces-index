@@ -1,0 +1,45 @@
+{
+  "version": 1,
+  "images": {
+    "https://spaces.ac.cn/usr/uploads/2021/02/3812836940.png": {
+      "status": "cached",
+      "file": "a7bbb506b209eca07606fe7869e020ede60a6acd28063fa5397bcfc64be146b7.png",
+      "sha256": "a7bbb506b209eca07606fe7869e020ede60a6acd28063fa5397bcfc64be146b7",
+      "bytes": 147337,
+      "checked_at": "2026-09-16T08:46:40+00:00",
+      "fetched_url": "https://spaces.ac.cn/usr/uploads/2021/02/3812836940.png",
+      "etag": "\"602bb7d9-23f89\"",
+      "last_modified": "Tue, 16 Feb 2021 12:17:29 GMT"
+    },
+    "https://spaces.ac.cn/usr/uploads/2021/02/3955448968.png": {
+      "status": "cached",
+      "file": "78feb1d696d8051bcace04c925847f4d4a6be784d9a4f793458b8f9384d570a3.png",
+      "sha256": "78feb1d696d8051bcace04c925847f4d4a6be784d9a4f793458b8f9384d570a3",
+      "bytes": 246552,
+      "checked_at": "2026-09-16T08:46:44+00:00",
+      "fetched_url": "https://spaces.ac.cn/usr/uploads/2021/02/3955448968.png",
+      "etag": "\"602bb8ba-3c318\"",
+      "last_modified": "Tue, 16 Feb 2021 12:21:14 GMT"
+    },
+    "https://spaces.ac.cn/usr/uploads/2021/02/224692033.png": {
+      "status": "cached",
+      "file": "8012a2986b0222dd9043af9ab7693f4c903bbc93f3a53a0f58b8c2f20172fe75.png",
+      "sha256": "8012a2986b0222dd9043af9ab7693f4c903bbc93f3a53a0f58b8c2f20172fe75",
+      "bytes": 94882,
+      "checked_at": "2026-09-16T08:46:49+00:00",
+      "fetched_url": "https://spaces.ac.cn/usr/uploads/2021/02/224692033.png",
+      "etag": "\"602bb8ba-172a2\"",
+      "last_modified": "Tue, 16 Feb 2021 12:21:14 GMT"
+    },
+    "https://spaces.ac.cn/usr/uploads/2021/02/1447501421.png": {
+      "status": "cached",
+      "file": "f55c0bcc592b4d393e45ea30575b1ceb4901ecf7a4e55ac7d9c7e226fa3458b6.png",
+      "sha256": "f55c0bcc592b4d393e45ea30575b1ceb4901ecf7a4e55ac7d9c7e226fa3458b6",
+      "bytes": 320000,
+      "checked_at": "2026-09-16T08:46:54+00:00",
+      "fetched_url": "https://spaces.ac.cn/usr/uploads/2021/02/1447501421.png",
+      "etag": "\"602bbaba-4e200\"",
+      "last_modified": "Tue, 16 Feb 2021 12:29:46 GMT"
+    }
+  }
+}

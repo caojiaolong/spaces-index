@@ -1,0 +1,17 @@
+{
+  "metadata": {
+    "id": "4503",
+    "title": "基于Xception的腾讯验证码识别（样本+代码）",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/4503",
+    "date": "2017-07-24",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "fetched_at": "2026-09-14T13:31:25+00:00",
+  "source_snapshot_sha256": "53c11ff5eb2ffe609497dc68b4c0e6fde13f0e9001e23ee493a63b6617aad8d2",
+  "validators": {
+    "etag": null,
+    "last_modified": null
+  }
+}

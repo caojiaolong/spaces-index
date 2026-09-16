@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "4797",
+    "title": "增强typecho的搜索功能",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/4797",
+    "date": "2018-01-09",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 0,
+    "display_formula_count": 0,
+    "image_count": 0,
+    "heading_count": 3,
+    "code_block_count": 5,
+    "source_text_sha256": "96893cdf4427200367105db1782c50cce7c2b987a34a0bb94f3f5588c216b72d",
+    "output_text_sha256": "96893cdf4427200367105db1782c50cce7c2b987a34a0bb94f3f5588c216b72d",
+    "latex_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "body_sha256": "a75164e7a4b5552100660be6d2febd42cdd27ba7d596bf8018172880f3a97974",
+    "converter_version": 1,
+    "markdown_sha256": "51bd6a6139712954676b3c2d09c50d10e0da2035f93b31cbb216af8384f14f54"
+  },
+  "fetched_at": "2026-09-14T13:28:54+00:00",
+  "source_snapshot_sha256": "2a36ab0df76c1341513480bcb9391351bc0e0be5e320317276745ead74414aac",
+  "images": {},
+  "local_only": true
+}

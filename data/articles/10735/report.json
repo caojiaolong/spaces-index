@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "10735",
+    "title": "MoE环游记：2、不患寡而患不均",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/10735",
+    "date": "2025-02-21",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 70,
+    "display_formula_count": 9,
+    "image_count": 0,
+    "heading_count": 5,
+    "code_block_count": 0,
+    "source_text_sha256": "f68c8a25d6ced9450d325a7532f626d0638c7f966c685b3d1b2e4907b0b6265a",
+    "output_text_sha256": "f68c8a25d6ced9450d325a7532f626d0638c7f966c685b3d1b2e4907b0b6265a",
+    "latex_sha256": "7cdab0987f3f2a92f845e0522c7366f6c876e76e5710a74c66effc0ee71a5c92",
+    "body_sha256": "249720f254c7380a929a26d93cbbcc2b4327a9e37f0e031fa2b9a6c588aee08d",
+    "converter_version": 1,
+    "markdown_sha256": "518ada24abe098ddeff25b55950de575ec4d99275c2c0b8b7baa853a83e96317"
+  },
+  "fetched_at": "2026-09-14T12:43:51+00:00",
+  "source_snapshot_sha256": "5ed6b772b888938459a2130c09979839ef1c107a26b86d0b29539f29c7c17dc8",
+  "images": {},
+  "local_only": true
+}

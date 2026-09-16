@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "1654",
+    "title": "椭圆内的一根定长弦（化圆法）",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/1654",
+    "date": "2012-07-06",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 22,
+    "display_formula_count": 6,
+    "image_count": 3,
+    "heading_count": 0,
+    "code_block_count": 0,
+    "source_text_sha256": "1dbb77d94fe53f2deef1eb04d65c7b079cf80db272713ffe82195c5ec24dd3c2",
+    "output_text_sha256": "1dbb77d94fe53f2deef1eb04d65c7b079cf80db272713ffe82195c5ec24dd3c2",
+    "latex_sha256": "5490fc6d78cf26286c064980dd095003094eb174c71ec7a17612848c29cd8428",
+    "body_sha256": "cc4f5a11b96db80f34c8ae84ed8d0065118718b7b26fced145cbd211e35323ea",
+    "converter_version": 1,
+    "markdown_sha256": "8ef736e7c99a9c7f2d3146415891e3b843f2160225345628e9f076832e014d3f"
+  },
+  "fetched_at": "2026-09-14T14:12:43+00:00",
+  "source_snapshot_sha256": "248ad01e96bf442ead2b5dfa23ea5a46ebe901dcee6e843c795b2acfdcd3ac25",
+  "images": {},
+  "local_only": true
+}

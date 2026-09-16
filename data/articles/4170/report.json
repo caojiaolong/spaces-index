@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "4170",
+    "title": "2015年全年天象",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/4170",
+    "date": "2014-12-31",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 0,
+    "display_formula_count": 0,
+    "image_count": 0,
+    "heading_count": 0,
+    "code_block_count": 0,
+    "source_text_sha256": "f975369ee8b000ff8a36ea3f1d3815af9bc7f2c5225a0e1809679a31a736a4d2",
+    "output_text_sha256": "f975369ee8b000ff8a36ea3f1d3815af9bc7f2c5225a0e1809679a31a736a4d2",
+    "latex_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "body_sha256": "25ecb1c0d3c3b585c8fa324a7672c253e1cce8f7df1b07ac4e4176fc1632774b",
+    "converter_version": 1,
+    "markdown_sha256": "23d5a929ae82434c9d0643fde9507d4c2595614cc39d8a5388d7b4d0cbf23225"
+  },
+  "fetched_at": "2026-09-14T13:48:26+00:00",
+  "source_snapshot_sha256": "3b8429f9c520f18e3d42b534e88156f3a4e8199f4b107f035578484953de00fd",
+  "images": {},
+  "local_only": true
+}

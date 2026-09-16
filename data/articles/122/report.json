@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "122",
+    "title": "2010年3D电视入客厅",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/122",
+    "date": "2009-09-13",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 0,
+    "display_formula_count": 0,
+    "image_count": 0,
+    "heading_count": 0,
+    "code_block_count": 0,
+    "source_text_sha256": "002792a9ca5741fcd46337b93eb904b31cbb8a70a66df920c157869fd8d48b10",
+    "output_text_sha256": "002792a9ca5741fcd46337b93eb904b31cbb8a70a66df920c157869fd8d48b10",
+    "latex_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "body_sha256": "578af63903d172f52abdd1a07ea9fcaf943bbd94457bda2f8b19493577c35e3b",
+    "converter_version": 1,
+    "markdown_sha256": "d5dd391a27be54a054220bb762fd7b3fdc75e54a61ec72da92c277c971218d15"
+  },
+  "fetched_at": "2026-09-14T14:53:17+00:00",
+  "source_snapshot_sha256": "078538a5e3131d2387e41eb057ba72119b5f52adee9c502d0dd00593abe5e896",
+  "images": {},
+  "local_only": true
+}

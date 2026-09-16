@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "4026",
+    "title": "【理解黎曼几何】6. 曲率的计数与计算(Python)",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/4026",
+    "date": "2016-10-19",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 36,
+    "display_formula_count": 9,
+    "image_count": 0,
+    "heading_count": 2,
+    "code_block_count": 6,
+    "source_text_sha256": "ebd235a74e5dc838ed2b22cbf94ec175138e645bf51da6e7ccdb6900b1c164cf",
+    "output_text_sha256": "ebd235a74e5dc838ed2b22cbf94ec175138e645bf51da6e7ccdb6900b1c164cf",
+    "latex_sha256": "f48a67104cb73dbb1556e4c3d9d6f0608105c0abf20779c097980c392d052de0",
+    "body_sha256": "0b9643c871c02561366ea9cd88a1ddc330392d605765229ecb1cdf28d7fa153a",
+    "converter_version": 1,
+    "markdown_sha256": "7574dfe7161868fa1c278dae5647a86f31874b8b5b817a36f8abf53691eb8b74"
+  },
+  "fetched_at": "2026-09-14T13:37:24+00:00",
+  "source_snapshot_sha256": "232822927c4d1de39921df961444634153bda343d5f0050d35e9dc5afe5ac640",
+  "images": {},
+  "local_only": true
+}

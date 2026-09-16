@@ -1,0 +1,17 @@
+{
+  "metadata": {
+    "id": "5505",
+    "title": "基于Conv1D的光谱分类模型（一维序列分类）",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/5505",
+    "date": "2018-05-02",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "fetched_at": "2026-09-14T13:27:08+00:00",
+  "source_snapshot_sha256": "dd142cccf0e2b0e1726c4b8ca822e6506b50cc7c3e7577a51fe3c81bfeb39de5",
+  "validators": {
+    "etag": null,
+    "last_modified": null
+  }
+}

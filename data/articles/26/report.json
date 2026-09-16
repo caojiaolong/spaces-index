@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "26",
+    "title": "三次方程的根式求解（通俗版本）",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/26",
+    "date": "2009-07-19",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 22,
+    "display_formula_count": 8,
+    "image_count": 2,
+    "heading_count": 0,
+    "code_block_count": 0,
+    "source_text_sha256": "c4ac0173f61ed026368cbd0e33ac6a4d1350e2264420ea36934b240649a33444",
+    "output_text_sha256": "c4ac0173f61ed026368cbd0e33ac6a4d1350e2264420ea36934b240649a33444",
+    "latex_sha256": "190ee8ca91da2cf8faa2d8d24f18409721b7a24514d800b01b1b11a102ccf166",
+    "body_sha256": "d1bee6441f2e6f5a301e20f4fd2ce33efa88f6e2af9684772cea43702fbad84c",
+    "converter_version": 1,
+    "markdown_sha256": "ac86bb1747d99aa55fba0ca44a8049f3074ab8dd4c5ed3ac47fbc7e6a28f567c"
+  },
+  "fetched_at": "2026-09-14T15:05:02+00:00",
+  "source_snapshot_sha256": "567341d3c398cbe86b5c3196b5d9b0346d371ffa06b12913102045b43f608466",
+  "images": {},
+  "local_only": true
+}

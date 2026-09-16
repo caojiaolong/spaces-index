@@ -5,7 +5,9 @@ import hashlib
 import json
 import re
 import shutil
+import time
 import unicodedata
+import uuid
 from collections import Counter, defaultdict
 from pathlib import Path
 from typing import Any, Iterable
@@ -326,11 +328,24 @@ def _is_relative_to(path: Path, parent: Path) -> bool:
     return True
 
 
+def rename_generation(source: Path, destination: Path) -> None:
+    """Allow Windows file watchers to release a completed generation."""
+    for attempt in range(6):
+        try:
+            source.rename(destination)
+            return
+        except PermissionError:
+            if attempt == 5:
+                raise
+            time.sleep(0.05 * 2 ** attempt)
+
+
 def build_site(
     input_path: Path,
     output_dir: Path,
     *,
     web_dir: Path = WEB_DIR,
+    local_articles: Path | None = None,
 ) -> dict[str, Any]:
     input_path = Path(input_path)
     output_dir = Path(output_dir)
@@ -342,6 +357,13 @@ def build_site(
     resolved_output = output_dir.resolve()
     resolved_web = web_dir.resolve()
     resolved_root = ROOT.resolve()
+    if local_articles is not None:
+        local_root = resolved_root / "build"
+        if (not resolved_output.is_relative_to(local_root) or resolved_output == local_root
+                or not Path(local_articles).resolve().is_relative_to(resolved_root / "data" / "articles")
+                or Path(local_articles).resolve().is_relative_to(resolved_output)
+                or resolved_output.is_relative_to(Path(local_articles).resolve())):
+            raise ValueError("Local previews must use build/ and read the canonical data/articles/ library")
     if resolved_output == resolved_root or not _is_relative_to(resolved_output, resolved_root):
         raise ValueError("Output directory must be a child of the repository root")
     if resolved_output == resolved_web or _is_relative_to(resolved_output, resolved_web):
@@ -351,6 +373,12 @@ def build_site(
 
     with input_path.open("r", encoding="utf-8") as handle:
         raw_posts = json.load(handle)
+    if local_articles is not None:
+        try:
+            from .local_preview import preview_posts
+        except ImportError:
+            from local_preview import preview_posts
+        raw_posts = preview_posts(raw_posts, local_articles)
     catalog = build_catalog(raw_posts)
 
     if output_dir.exists():
@@ -363,10 +391,28 @@ def build_site(
                 "Refusing to replace an existing directory that is not the default "
                 "_site output and has no generated-site marker"
             )
-        shutil.rmtree(output_dir)
+    destination = output_dir.resolve()
+    staging_root = ROOT / ".cache" / "builds"
+    staging_root.mkdir(parents=True, exist_ok=True)
+    output_dir = staging_root / uuid.uuid4().hex
     shutil.copytree(web_dir, output_dir)
 
     catalog_path = output_dir / "catalog.json"
+    try:
+        from .mirror_store import publish_mirrors
+    except ImportError:
+        from mirror_store import publish_mirrors
+    allowed_ids = {post["id"] for post in catalog["posts"]}
+    if local_articles is None:
+        catalog["mirrors"] = publish_mirrors(output_dir, allowed_ids=allowed_ids)
+    else:
+        try:
+            from .local_preview import export_preview
+        except ImportError:
+            from local_preview import export_preview
+        catalog["mirrors"], catalog["unavailableMirrors"] = export_preview(output_dir, local_articles, allowed_ids)
+        catalog["localPreview"] = True
+        (output_dir / "robots.txt").write_text("User-agent: *\nDisallow: /\n", encoding="utf-8")
     with catalog_path.open("w", encoding="utf-8", newline="\n") as handle:
         json.dump(catalog, handle, ensure_ascii=False, indent=2)
         handle.write("\n")
@@ -375,21 +421,39 @@ def build_site(
         encoding="utf-8",
         newline="\n",
     )
+    # Swap only a fully validated generation into place.
+    backup = staging_root / (uuid.uuid4().hex + "-previous")
+    destination.parent.mkdir(parents=True, exist_ok=True)
+    if destination.exists():
+        rename_generation(destination, backup)
+    try:
+        rename_generation(output_dir, destination)
+    except OSError:
+        if backup.exists():
+            rename_generation(backup, destination)
+        raise
+    if backup.exists():
+        if not backup.resolve().is_relative_to(staging_root.resolve()):
+            raise ValueError("Build cleanup escapes staging directory")
+        shutil.rmtree(backup)
     return catalog
 
 
 def parse_args(argv: list[str] | None = None) -> argparse.Namespace:
     parser = argparse.ArgumentParser(
-        description="Build the static GitHub Pages site and metadata-only catalogue."
+        description="Build the static GitHub Pages site, catalogue and verified article mirrors."
     )
     parser.add_argument("--input", type=Path, default=DEFAULT_INPUT)
     parser.add_argument("--output", type=Path, default=DEFAULT_OUTPUT)
+    parser.add_argument("--preview", "--local-preview", dest="local_preview", action="store_true", help="Build all verified articles into build/preview; no publishing")
     return parser.parse_args(argv)
 
 
 def main(argv: list[str] | None = None) -> int:
     args = parse_args(argv)
-    catalog = build_site(args.input, args.output)
+    if args.local_preview and args.output == DEFAULT_OUTPUT:
+        args.output = ROOT / "build" / "preview"
+    catalog = build_site(args.input, args.output, local_articles=ROOT / "data" / "articles" if args.local_preview else None)
     stats = catalog["stats"]
     print(
         f"Built {args.output} with {stats['postCount']} posts, "

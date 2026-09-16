@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "7359",
+    "title": "将“Softmax+交叉熵”推广到多标签分类问题",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/7359",
+    "date": "2020-04-25",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 94,
+    "display_formula_count": 11,
+    "image_count": 1,
+    "heading_count": 8,
+    "code_block_count": 1,
+    "source_text_sha256": "cd5db21c87a6a07c2e51a90561e80af179e55832ade3ad4ce66d2262de85d408",
+    "output_text_sha256": "cd5db21c87a6a07c2e51a90561e80af179e55832ade3ad4ce66d2262de85d408",
+    "latex_sha256": "1dc502dd9201b559c64906ce0c16e6e5a6744980d90b2464ac5ed32e7b7bdc08",
+    "body_sha256": "457fe1657faee96cac9e2f716ea651e3511627348f3679965f887be518df5064",
+    "converter_version": 1,
+    "markdown_sha256": "6ead38dc542ff37af982d8c5ee10c5d8d84cdf39539e7a245b8e03c2c1e1626f"
+  },
+  "fetched_at": "2026-09-14T13:14:16+00:00",
+  "source_snapshot_sha256": "475c0e2e3cd6a59adaa88a0b9428fea9eeed4967d0fa6ee6288fcb438b8e1beb",
+  "images": {},
+  "local_only": true
+}

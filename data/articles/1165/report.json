@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "1165",
+    "title": "[2011]一睹“食”的风采",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/1165",
+    "date": "2011-01-02",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 0,
+    "display_formula_count": 0,
+    "image_count": 8,
+    "heading_count": 0,
+    "code_block_count": 0,
+    "source_text_sha256": "bf2caef23a422dd3b0f21cc849b988cfe5335c79e130ceea42465694793de029",
+    "output_text_sha256": "bf2caef23a422dd3b0f21cc849b988cfe5335c79e130ceea42465694793de029",
+    "latex_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "body_sha256": "4d76652ae27d9b0731b149dd2704efb665d5608e51d3e5d8d34c66b192b5966b",
+    "converter_version": 1,
+    "markdown_sha256": "649100878529d9c414ac30b06ed2e09d162e7ab5f7b5defdf7c232c777752957"
+  },
+  "fetched_at": "2026-09-14T14:25:37+00:00",
+  "source_snapshot_sha256": "3a9d07b9cce8cae832cc1f56a43a96969702a54f2a131f4324ce9d0e1540ba8b",
+  "images": {},
+  "local_only": true
+}

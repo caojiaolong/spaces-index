@@ -1,0 +1,66 @@
+<div class="PostContent" id="PostContent">
+<p>自从DeepSeek爆火后，它所提的Attention变体MLA（<strong><font color="red">M</font></strong>ulti-head <strong><font color="red">L</font></strong>atent <strong><font color="red">A</font></strong>ttention）也愈发受到关注。MLA通过巧妙的设计实现了MHA与MQA的自由切换，使得模型可以根据训练和推理的不同特性（Compute-Bound or Memory-Bound）选择最佳的形式，尽可能地达到效率最大化。</p><p>诚然，MLA很有效，但也有观点认为它不够优雅，所以寻找MLA替代品的努力一直存在，包括我们也有在尝试。然而，经过一段时间的实验，我们发现很多KV Cache相同甚至更大的Attention变体，最终效果都不如MLA。这不得不让我们开始反思：MLA的出色表现背后的关键原因究竟是什么？</p><p>接下来，本文将详细介绍笔者围绕这一问题的思考过程以及相关实验结果。</p><h2 id="观察">观察</h2><p>MLA提出自<a href="https://papers.cool/arxiv/2405.04434" target="_blank">DeepSeek-V2</a>，本文假设读者已经熟悉MLA，至少了解之前的博客<a href="/archives/10091" target="_blank">《缓存与效果的极限拉扯：从MHA、MQA、GQA到MLA》</a>所介绍的内容，因此MLA自身的细节将不会过多展开。</p><p>MLA的主要特点如下：</p><blockquote><p>1、MLA在训练阶段是一个qk_head_dims=(128+64)、v_head_dims=128的MHA；</p><p>2、MLA在解码阶段是一个qk_head_dims=(512+64)、v_head_dims=512、KV-Shared的MQA；</p><p>3、MLA的[qc, qr]、[kc, kr]拼接，可以理解为一种<a href="/archives/10122#%E9%83%A8%E5%88%86%E6%97%8B%E8%BD%AC" target="_blank">Partial RoPE</a>。</p></blockquote><h2 id="猜测">猜测</h2><p>MHA、GQA常用的head_dims是128，而对于MLA来说，不管是从训练看的128+64，还是从推理看的512+64，都要大于128，再结合<a href="/archives/7325" target="_blank">《突破瓶颈，打造更强大的Transformer》</a>的经验，我们有：</p><blockquote class="cite"><div><strong>猜测1</strong>： 增大head_dims是MLA好的关键之一。</div></blockquote><p>另外，KV-Shared这个特性，可以在同等KV Cache大小下，增大GQA的head_dims或者num_groups，所以有：</p><blockquote class="cite"><div><strong>猜测2</strong>： KV-Shared是MLA好的关键之一。</div></blockquote><p>最后，此前有一些理论和实验显示Partial RoPE可能会对效果有正面帮助（参考<a href="/archives/10122#%E9%83%A8%E5%88%86%E6%97%8B%E8%BD%AC" target="_blank">《Transformer升级之路：18、RoPE的底数选择原则》</a>），所以有</p><blockquote class="cite"><div><strong>猜测3</strong>： Partial RoPE是MLA好的关键之一。</div></blockquote><h2 id="实验">实验</h2><p>现在我们通过实验逐一检验以上猜测。</p><h3 id="设置">设置</h3><p>所有实验公共部分的超参数如下：</p><blockquote><p>1、类似LLAMA3的Dense模型；</p><p>2、hidden_size=2048，num_layers=12，num_heads=16；</p><p>3、优化器是<a href="/archives/10592" target="_blank">Muon</a>，Attention部分per head更新；</p><p>4、训练长度为4096，总tokens数为16B，总训练步数为16k；</p><p>5、所有实验都是只改变Attention，所以参数量不会严格对齐。</p></blockquote><h3 id="Part I">Part I</h3><p>MLA的KV Cache大小是512+64，约等于GQA2-128（第一个数字是num_groups，第二个数字是head_dims），所以对比的baseline为<font color="red">GQA2-128</font>和<font color="red">GQA1-256</font>。为了验证Partial RoPE，我们增加了<font color="red">GQA1-256-PR</font>，具体做法是将Q、K的256 dims分成192+64两部分，在64上加RoPE，192不加。</p><p>结果如下：<br/>
+$$\begin{array}{c|ccc}<br/>
+\hline<br/>
+&amp; \text{Params} &amp; \text{Loss} &amp; \text{Cache} \\<br/>
+\hline<br/>
+\text{MLA} &amp; 894M &amp; 2.721 &amp; 576 \\<br/>
+\text{GQA2-128} &amp; 842M &amp; 2.75 &amp; 512 \\<br/>
+\text{GQA1-256} &amp; 943M &amp; 2.72 &amp; 512 \\<br/>
+\text{GQA1-256-PR} &amp; 943M &amp; 2.711 &amp; 512 \\<br/>
+\hline<br/>
+\end{array}$$</p><p>即<br/>
+$$\text{GQA2-128} &lt; \text{MLA} \lesssim \text{GQA1-256} &lt; \text{GQA1-256-PR}$$<br/>
+初步验证了增大head_dims和Partial RoPE的作用。这样看来，MLA的设计中，RoPE和NoPE拼接这部分看似无奈的设计，极有可能是它效果优异的关键原因！原论文声称MLA甚至优于MHA，大概率也是因为所对比的MHA的head_dims只有128。</p><h3 id="Part II">Part II</h3><p>为了进一步验证增大head_dims的作用，我们另外跑了MHA、GQA2-192、MLA-256三个实验，MHA是head_dims=128的常规MHA，GQA2-192是直接增大GQA2的head_dims到192，MLA-256是将MLA的128+64提升到192+64，对照如下</p><p>$$\begin{array}{c|ccc}<br/>
+\hline<br/>
+&amp; \text{Params} &amp; \text{Loss} &amp; \text{Cache} \\<br/>
+\hline<br/>
+\text{MHA} &amp; 931M &amp; 2.721 &amp; 4096 \\<br/>
+\text{MLA} &amp; 894M &amp; 2.721 &amp; 576 \\<br/>
+\text{MLA-256} &amp; 989M &amp; 2.705 &amp; 576 \\<br/>
+\text{GQA2-128} &amp; 842M &amp; 2.75 &amp; 512 \\<br/>
+\text{GQA2-192} &amp; 899M &amp; 2.729 &amp; 768 \\<br/>
+\text{GQA1-256} &amp; 943M &amp; 2.72 &amp; 512 \\<br/>
+\text{GQA1-256-PR} &amp; 943M &amp; 2.711 &amp; 512 \\<br/>
+\hline<br/>
+\end{array}$$</p><p>可以看到，MHA总参数量更多，KV Cache更是7倍于MLA，但Loss才堪堪追平MLA，这跟DeepSeek-V2里边的结论接近。此外，GQA2-192优于GQA2-128，但不如GQA1-256；MLA的head_dims升到(192+64)后，相比(128+64)也还能进一步提升效果。这些现象都表明，增加head_dims远比增加num_groups更有效。</p><h3 id="Part III">Part III</h3><p>接下来我们验证KV-Shared，即K、V共享全部或大部分dims。这里我们主要考虑的替代品是head_dims不超过256的GQA，并且控制KV Cache的总大小跟MLA接近，所以当KV-Shared时，我们可以至多可以考虑GQA2-256。</p><p>由于KV-Shared跟RoPE不完全兼容，参考MLA的做法，我们将256分成192+64两部分，其中</p><blockquote><p>1、192部分不加RoPE，在K、V间共享；</p><p>2、64部分加RoPE，只用于K；</p><p>3、V另外再投影64 dims，concat到共享的192 dims上去。</p></blockquote><p>这样一来，K、V的head_dims都是256，KV Cache总大小是(192+64+64)*2=640，略大于MLA的512+64=576，这个版本我们简记为“<font color="red">GQA2-(192+64)-S1</font>”，其实“S1”是“Shared-1”的缩写。</p><h3 id="Part IV">Part IV</h3><p>另外一种KV-Shared的方案是：</p><blockquote><p>1、192部分不加RoPE，在K、V间共享；</p><p>2、64部分加RoPE，同样在K、V间共享；</p><p>3、做Attention，由于V带RoPE，此时是绝对位置编码效果；</p><p>4、为了保证相对位置编码，将输出分成192+64两部分，64部分再加一次逆向RoPE。</p></blockquote><p>这种做法是K、V完全共享，KV Cache大小是(192+64)*2=512，略小于MLA。这个版本我们称为“<font color="red">GQA2-(192+64)-S2</font>”，“S2”是“Shared-2”的缩写，背后的原理是笔者新提出的VO-RoPE，参考<a href="/archives/10862" target="_blank">《Transformer升级之路：19、第二类旋转位置编码》</a>。</p><h3 id="Part V">Part V</h3><p>另外，根据同样思路补了几个GQA4和GQA1的实验。所有实验结果汇总如下：<br/>
+$$\begin{array}{c|ccc|c}<br/>
+\hline<br/>
+&amp; \text{Params} &amp; \text{Loss} &amp; \text{Cache} &amp; \text{备注} \\<br/>
+\hline<br/>
+\text{MLA} &amp; 894M &amp; 2.721 &amp; 576 &amp; \\<br/>
+\text{MLA-256} &amp; 989M &amp; 2.705 &amp; 576 &amp; \\<br/>
+\text{GQA2-(192+64)-S1} &amp; 946M &amp; 2.714 &amp; 640 &amp; \\<br/>
+\text{GQA2-(192+64)-S2} &amp; 943M &amp; 2.708 &amp; 512 &amp; \text{引入VO-RoPE} \\<br/>
+\text{GQA4-(64+64)-S2} &amp; 842M &amp; 2.738 &amp; 512 &amp; \\<br/>
+\text{GQA4-(128+64)-S2} &amp; 899M &amp; 2.713 &amp; 768 &amp; \text{KV Cache最大} \\<br/>
+\text{GQA1-(512+64)-S3} &amp; 1171M &amp; 2.677 &amp; 576 &amp; \text{head_dims最大} \\<br/>
+\hline<br/>
+\end{array}$$</p><p>这里“<font color="red">GQA1-(512+64)-S3</font>”是按照MLA的推理形式实现的MQA，形式介乎S1与S2之间，它的主要特点是head_dims大。</p><p>结果解读：</p><blockquote><p>1、KV-Shared的GQA自带Partial RoPE；</p><p>2、KV-Shared的GQA2-256，也能超过MLA；</p><p>3、VO-RoPE的引入，似乎有利于效果（S1 ≲ S2）；</p><p>4、同等KV Cache下，head_dims越大越好；</p><p>5、GQA2-(192+64)-S2 略微超过 GQA1-256-PR；</p><p>6、GQA4-(128+64)-S2 的KV Cache最大，但效果不是最优，再次表明head_dims更关键。</p></blockquote><p>关于KV-Shared，还有两点观察：</p><blockquote><p>1、训练过程中，GQA1-256-PR前期是明显领先GQA2-(192+64)-S2，但后期被追平甚至略微反先，猜测GQA1-256-PR可能有后劲不足的嫌疑；</p><p>2、如果没有KV-Shared，GQA顶多是GQA1-256，也就是说head_dims顶天了256，但有KV-Shared的话，GQA可以做到GQA1-512-S，单纯从head_dims看，KV-Shared天花板更高。</p></blockquote><h3 id="Part VI">Part VI</h3><p>由于没有严格对齐参数量，可能读者会有“到底是增加参数量还是增加head_dims更本质”的疑虑，所以这里补充几个对齐参数量的实验。</p><p>这里考虑的对齐参数量的方式有三种：</p><blockquote><p>1、<strong>double-heads</strong>：以“GQA2-128 vs GQA1-256”为例，将GQA2-128的num_heads翻倍，可以让GQA2-128的参数量跟GQA1-256相同；</p><p>2、<strong>缩减MLP</strong>：缩小MLP（SwiGLU）的intermediate_size，也可以使得GQA1-256的参数量跟GQA2-128大致相同；</p><p>3、<strong>Q&amp;O LoRA</strong>：GQA的主要参数量来自Query和Output的投影矩阵，对这两个矩阵改用LoRA，也可以降低GQA1-256的参数量。</p></blockquote><p>实验结果如下：<br/>
+$$\begin{array}{c|ccc|ccc}<br/>
+\hline<br/>
+&amp; \text{Params} &amp; \text{Loss} &amp; \text{Cache} &amp; \text{num_heads} &amp; \text{intermediate_size} &amp; \text{qo_lora} \\<br/>
+\hline<br/>
+\text{MLA} &amp; 894M &amp; 2.721 &amp; 576 &amp; 16 &amp; 5456 &amp; \text{No}\\<br/>
+\hline<br/>
+\text{GQA2-128} &amp; 842M &amp; 2.75 &amp; 512 &amp; 16 &amp; 5456 &amp; \text{No}\\<br/>
+\text{GQA1-256} &amp; 943M &amp; 2.72 &amp; 512 &amp; 16 &amp; 5456 &amp; \text{No}\\<br/>
+\hline<br/>
+\text{GQA2-128} &amp; 943M &amp; 2.723 &amp; 512 &amp; \color{red}{32} &amp; 5456 &amp; \text{No} \\<br/>
+\text{GQA1-256} &amp; 843M &amp; 2.747 &amp; 512 &amp; 16 &amp; \color{red}{4096} &amp; \text{No} \\<br/>
+\text{GQA1-256} &amp; 842M &amp; 2.726 &amp; 512 &amp; 16 &amp; 5456 &amp; \color{red}{\text{Yes}} \\<br/>
+\hline<br/>
+\text{GQA4-(64+64)-S2} &amp; 842M &amp; 2.738 &amp; 512 &amp; 16 &amp; 5456 &amp; \text{No} \\<br/>
+\text{GQA2-(192+64)-S2} &amp; 943M &amp; 2.708 &amp; 512 &amp; 16 &amp; 5456 &amp; \text{No} \\<br/>
+\hline<br/>
+\text{GQA4-(64+64)-S2} &amp; 943M &amp; 2.711 &amp; 512 &amp; \color{red}{32} &amp; 5456 &amp; \text{No} \\<br/>
+\text{GQA2-(192+64)-S2} &amp; 843M &amp; 2.733 &amp; 512 &amp; 16 &amp; \color{red}{4096} &amp; \text{No} \\<br/>
+\text{GQA2-(192+64)-S2} &amp; 842M &amp; 2.708 &amp; 512 &amp; 16 &amp; 5456 &amp; \color{red}{\text{Yes}} \\<br/>
+\hline<br/>
+\end{array}$$</p><p>结果主要分三块：</p><blockquote><p>1、heads翻倍相比head_dims翻倍，loss稳定差0.003左右；</p><p>2、缩小MLP比head_dims减半，loss稳定优0.004左右；</p><p>3、Q&amp;O LoRA性能损失最小，可以实现head_dims翻倍但参数量不增，且loss明显降。</p></blockquote><p>结论：如果从增加参数量角度看，增大head_dims可能是效果增益较大的方向，配合Q&amp;O LoRA可以实现参数量几乎不增，但收益仍相当。</p><h2 id="小结">小结</h2><p>初步结论是：</p><blockquote><p>1、增大head_dims收益最大；</p><p>2、Partial RoPE对Loss也有一定帮助；</p><p>3、KV-Shared应该也有一定作用。</p></blockquote><p>这样看来，此前我们一直在head_dims=128下找MLA的替代品，感觉是起点就先天不足了，难怪一直比不上MLA。要想追平MLA，head_dims应该要192起步了，并辅以Partial RoPE。至于KV-Shared，也可能有用，但应该还需要更大规模的验证。</p><h2 id="意义">意义</h2><p>其实这里边的意义，就看我们换掉MLA的决心有多强。</p><p>假设 GQA2-(192+64)-S2 可以替代MLA，但MLA也可以升到256，目前看来 GQA2-(192+64)-S2 比不上 MLA-256 。那么换掉MLA的唯二好处是：</p><blockquote><p>1、结构更简单，可以方便加QK-Norm；</p><p>2、解码阶段的head_dims由512+64变成了256，同时num_groups变为2，可以TP。</p></blockquote>
+
+
+
+
+
+</div>

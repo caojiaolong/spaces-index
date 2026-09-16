@@ -1,0 +1,17 @@
+{
+  "metadata": {
+    "id": "6621",
+    "title": "ON-LSTM：用有序神经元表达层次结构",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/6621",
+    "date": "2019-05-28",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "fetched_at": "2026-09-14T13:19:49+00:00",
+  "source_snapshot_sha256": "90bdd9e58c54721b9ad90283b4ce970a198a8db593aa75804ba50e36c03f07bc",
+  "validators": {
+    "etag": null,
+    "last_modified": null
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "11784",
+    "title": "强制间隔投影（Margin-Enforcing Projection）",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/11784",
+    "date": "2026-06-19",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 87,
+    "display_formula_count": 8,
+    "image_count": 0,
+    "heading_count": 7,
+    "code_block_count": 1,
+    "source_text_sha256": "68346fe4439619ac5ed0007859d9e1be723943e17efe9c10d571df0a541733c8",
+    "output_text_sha256": "68346fe4439619ac5ed0007859d9e1be723943e17efe9c10d571df0a541733c8",
+    "latex_sha256": "7cffd53dea4446c14298efaf7e09966ca0fa0639f57ff6425a1aa9a293a46271",
+    "body_sha256": "7e3d1fcd340bdb02c35cf27421112c891ace6aff747c9d1be0db73a2fbaa9634",
+    "converter_version": 1,
+    "markdown_sha256": "731d69bff5d621cbbe39d1723193d99cad6b12b0dd67ea8e1b79d2c0a989b252"
+  },
+  "fetched_at": "2026-09-14T12:30:46+00:00",
+  "source_snapshot_sha256": "3232a6f0ecd26637a1c9bc7695d738ab68c27554e6867772b2b8f5bf2bddb296",
+  "images": {},
+  "local_only": true
+}

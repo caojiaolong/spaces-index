@@ -1,0 +1,39 @@
+{
+  "metadata": {
+    "id": "4245",
+    "title": "【中文分词系列】 7. 深度学习分词？只需一个词典！",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/4245",
+    "date": "2017-03-06",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "source_dom_exact": true,
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "attributes_exact": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 1,
+    "display_formula_count": 1,
+    "image_count": 0,
+    "heading_count": 6,
+    "code_block_count": 4,
+    "source_text_sha256": "26fc261e49373fadb545fa0d9a10e43333dc887c45aa54a4eb53286014e0e960",
+    "output_text_sha256": "26fc261e49373fadb545fa0d9a10e43333dc887c45aa54a4eb53286014e0e960",
+    "latex_sha256": "940df09341d95c89fc25896e6c32adab43c0c4aae21e6cfa01e892dcb8a6e2ff",
+    "body_sha256": "a46af991c395a0f0f05d07e66185bacc000dff2576b461eabff3ff5dccb074cd",
+    "converter_version": 1,
+    "format": "html-v1",
+    "source_warnings": [],
+    "fallback_reason": "Unsupported body element: del",
+    "markdown_sha256": "29a247a2c8c512f8bf362cf3edfacc8eea343246dcbbadcab621e236c9ba0a59"
+  },
+  "fetched_at": "2026-09-14T13:34:06+00:00",
+  "source_snapshot_sha256": "d7e86e303754c54cba378dfd964a8ad4ec071ad2687441ee91174f744f9b9663",
+  "images": {},
+  "local_only": true
+}

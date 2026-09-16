@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "15",
+    "title": "植物拯救了地球，阻止寒冷灭绝之灾！",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/15",
+    "date": "2009-07-09",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 0,
+    "display_formula_count": 0,
+    "image_count": 2,
+    "heading_count": 0,
+    "code_block_count": 0,
+    "source_text_sha256": "0e2141855008bb0f1e3b2f1f54ab6c7a33b4daf765a3156dc007d7c08a314de4",
+    "output_text_sha256": "0e2141855008bb0f1e3b2f1f54ab6c7a33b4daf765a3156dc007d7c08a314de4",
+    "latex_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "body_sha256": "0a53ac3b821fb42aeae08b4d2000105bef506461153358007bbe43a965a6b7c5",
+    "converter_version": 1,
+    "markdown_sha256": "37cd98dc2ab43a5e344e2f9d40e4d0d78217481a4247be1c4b533a8d43369cf4"
+  },
+  "fetched_at": "2026-09-14T15:06:24+00:00",
+  "source_snapshot_sha256": "b8474c6bdf00018a39a756a6da5832e9f5469ceb7395667365f296d77082ed4b",
+  "images": {},
+  "local_only": true
+}

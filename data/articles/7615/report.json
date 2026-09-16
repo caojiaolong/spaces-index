@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "7615",
+    "title": "通过互信息思想来缓解类别不平衡问题",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/7615",
+    "date": "2020-07-19",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 38,
+    "display_formula_count": 9,
+    "image_count": 1,
+    "heading_count": 5,
+    "code_block_count": 1,
+    "source_text_sha256": "edc951e5dbaf61be803159c43579a05692a6f70d52c7055386e8a614eb563fe7",
+    "output_text_sha256": "edc951e5dbaf61be803159c43579a05692a6f70d52c7055386e8a614eb563fe7",
+    "latex_sha256": "d12aa722c2205c067a38e5717a069e924a661c6c9f0a5a14e8caba13b7cdc02b",
+    "body_sha256": "7dd3dfd71a41514fcdcc07bb5b4f0ab29d57eedf73ccd1768c0a8c383428b843",
+    "converter_version": 1,
+    "markdown_sha256": "38f8ee18005d677309b1ade2271f508e368fddc7910f543b48e075436f2f177a"
+  },
+  "fetched_at": "2026-09-14T13:12:22+00:00",
+  "source_snapshot_sha256": "2983e578e4b427d81978999f9d0641d78caca9c99b8c8091df09158aef2adc81",
+  "images": {},
+  "local_only": true
+}

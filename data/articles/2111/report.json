@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "2111",
+    "title": "月底回家看彗星C/2012 S1 (ISON)",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/2111",
+    "date": "2013-11-01",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 0,
+    "display_formula_count": 0,
+    "image_count": 5,
+    "heading_count": 0,
+    "code_block_count": 0,
+    "source_text_sha256": "8daa32ed8042458e70a7df7d3d3c1ed3afb77bdc5dff823757d803a5cca68a11",
+    "output_text_sha256": "8daa32ed8042458e70a7df7d3d3c1ed3afb77bdc5dff823757d803a5cca68a11",
+    "latex_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "body_sha256": "fd13213512c89aa2d819ed6cea268faef2464cdba4c582f1d62fe6ec5ffee889",
+    "converter_version": 1,
+    "markdown_sha256": "96d24222a150430dc764f4760d0b667bcbfd31642592d7f2e6f1ff516d3e512a"
+  },
+  "fetched_at": "2026-09-14T13:59:26+00:00",
+  "source_snapshot_sha256": "9b47b8aa3764e859156b39f7e1ec3a1dd1990e724eaf0f00b1ef595ebd2f903d",
+  "images": {},
+  "local_only": true
+}

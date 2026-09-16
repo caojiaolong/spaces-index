@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "77",
+    "title": "澳大利亚网站请您向外星人问好",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/77",
+    "date": "2009-08-16",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 0,
+    "display_formula_count": 0,
+    "image_count": 2,
+    "heading_count": 0,
+    "code_block_count": 0,
+    "source_text_sha256": "864d66020bbb6b9005e619f40171aaa91845a450c314c49a443888120d7a9dbe",
+    "output_text_sha256": "864d66020bbb6b9005e619f40171aaa91845a450c314c49a443888120d7a9dbe",
+    "latex_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "body_sha256": "0e4559fb80f3ebba95af7362d475987436e272eacf6372245c1dde1e5502eb32",
+    "converter_version": 1,
+    "markdown_sha256": "98c03baf89e33ecd64d777fccc0dbfca44ca539c053b2a855b29dab7cc512f93"
+  },
+  "fetched_at": "2026-09-14T14:59:02+00:00",
+  "source_snapshot_sha256": "d82c83a7ad2c02bfb32001263ae5b6c27c7d9efc75e2606834aa2e2d4b142a3e",
+  "images": {},
+  "local_only": true
+}

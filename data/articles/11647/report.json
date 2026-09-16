@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "11647",
+    "title": "MuP之上：3. 特殊情况特殊处理",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/11647",
+    "date": "2026-03-02",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 117,
+    "display_formula_count": 17,
+    "image_count": 0,
+    "heading_count": 13,
+    "code_block_count": 0,
+    "source_text_sha256": "8fd6c34929648c67cd0a76c00710dc089b6fa099ba7e58c82aa939d0101a42eb",
+    "output_text_sha256": "8fd6c34929648c67cd0a76c00710dc089b6fa099ba7e58c82aa939d0101a42eb",
+    "latex_sha256": "64c02db071a43560e1a49900a02b7c3ed9103db37b17296358a320be68b76221",
+    "body_sha256": "6122cf77c2123e88d91b2a951e934f976a3bac8e281f853bcb1a3d5e7389570d",
+    "converter_version": 1,
+    "markdown_sha256": "41fcff7301c099835fe6df86281707d102c605c30b0ff8e0be6a5738063be7a1"
+  },
+  "fetched_at": "2026-09-14T12:36:51+00:00",
+  "source_snapshot_sha256": "a36133c18498b8952802c0d3e4aa5f59eb98132c75cdddf41a4a2ee651866241",
+  "images": {},
+  "local_only": true
+}

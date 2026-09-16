@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "3426",
+    "title": "exp(1/2 t^2+xt)级数展开的图解技术",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/3426",
+    "date": "2015-08-13",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 38,
+    "display_formula_count": 5,
+    "image_count": 12,
+    "heading_count": 3,
+    "code_block_count": 0,
+    "source_text_sha256": "6deb5c2491bf40e35d2b743ab502c9aeb9edfad66172a2878cbaaadcccd845dc",
+    "output_text_sha256": "6deb5c2491bf40e35d2b743ab502c9aeb9edfad66172a2878cbaaadcccd845dc",
+    "latex_sha256": "9b3b27170c8e4adb72d9a1e859b2283b219575626cb022ecfdba913716016a5a",
+    "body_sha256": "fce45f12f750834fc1f71f94fb666519e08a85406e4bb81cf227ecc5960ee090",
+    "converter_version": 1,
+    "markdown_sha256": "43a330ec7a2721f6f7f7d4035a5983240723d87cdc8d2037c83f7e309bd47a9f"
+  },
+  "fetched_at": "2026-09-14T13:45:04+00:00",
+  "source_snapshot_sha256": "ca45844e2106907b6cee9c367e7d9cedf9e7cdc0eb50d3b94082199c4dd7e391",
+  "images": {},
+  "local_only": true
+}

@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "10427",
+    "title": "低秩近似之路（三）：CR",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/10427",
+    "date": "2024-10-11",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 172,
+    "display_formula_count": 22,
+    "image_count": 0,
+    "heading_count": 5,
+    "code_block_count": 0,
+    "source_text_sha256": "7d2aa7ee9d7c01e51f0385f2530a259cda64c6c1ac6b4c806d567580c607e6f2",
+    "output_text_sha256": "7d2aa7ee9d7c01e51f0385f2530a259cda64c6c1ac6b4c806d567580c607e6f2",
+    "latex_sha256": "434d0077790c74909c631515cd1d8df80e04644fe987a0ad96d2c5a7a85be7ab",
+    "body_sha256": "588c132c425151a982ba17c554d89116f919659bf870602975ea1aaf359411fb",
+    "converter_version": 1,
+    "markdown_sha256": "3d55cd27688c29f893d1109025db5663da690dd5cd8b064f5d552b0ff5f8987a"
+  },
+  "fetched_at": "2026-09-14T12:46:15+00:00",
+  "source_snapshot_sha256": "e5fb0b059c5adfd18e01b361b526b9f39601b7fca4f4e46d338dfb1c56ba6d00",
+  "images": {},
+  "local_only": true
+}

@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "259",
+    "title": "爱恩斯坦的狭义相对论论文(中文/图片)",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/259",
+    "date": "2009-11-07",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 1,
+    "display_formula_count": 1,
+    "image_count": 14,
+    "heading_count": 0,
+    "code_block_count": 0,
+    "source_text_sha256": "0a5a0502d8b467377cec4257d771e195cd3f5ea84c179b1e366263ad78b89764",
+    "output_text_sha256": "0a5a0502d8b467377cec4257d771e195cd3f5ea84c179b1e366263ad78b89764",
+    "latex_sha256": "ca518229709e7c555204e31ae957d2cfc3aeaf72d95b0ed3290bdd56648d1d9e",
+    "body_sha256": "87920b8b1163d319af0a90f4addb459bda8d72f8667d8bc9212b0da683b206d8",
+    "converter_version": 1,
+    "markdown_sha256": "ba14a2e149963b06a2dd6c5af378b7a8c45c9b8f2d897382c635507f8b3be015"
+  },
+  "fetched_at": "2026-09-14T14:46:30+00:00",
+  "source_snapshot_sha256": "d20cd6bcfd1fc222552d030219a23b9d5a06d1644135f62fc6140c00f45c272e",
+  "images": {},
+  "local_only": true
+}

@@ -1,0 +1,30 @@
+<div class="PostContent" id="PostContent">
+<p>前几日写了一篇VAE的通俗解读，也得到了一些读者的认可。然而，你是否厌倦了每次介绍都只有一个MNIST级别的demo？不要急，这就给大家带来一个更经典的VAE玩具：机器人作诗。</p><p>为什么说“更经典”呢？前一篇文章我们说过用VAE生成的图像相比GAN生成的图像会偏模糊，也就是<font color="red">在图像这一“仗”上，VAE是劣势。然而，在文本生成这一块上，VAE却漂亮地胜出了。</font>这是因为GAN希望把判别器（度量）也直接训练出来，然而对于文本来说，这个度量很可能是离散的、不可导的，因此纯GAN就很难训练了。而VAE中没有这个步骤，它是通过重构输入来完成的，这个重构过程对于图像还是文本都可以进行。所以，文本生成这件事情，对于VAE来说它就跟图像生成一样，都是一个基本的、直接的应用；对于（目前的）GAN来说，却是艰难的象征，是它挥之不去的“心病”。</p><p>嗯，古有曹植七步作诗，今有VAE随机成诗，让我们开始吧～</p><h2 id="模型">模型</h2><p>对于很多人来说，诗是一个很美妙的玩意，美妙之处在于大多数人都不真正懂得诗，但大家对诗的模样又有一知半解的认识。因此，只要生成的“诗”稍微像模像样一点，我们通常都会认为机器人可以作诗了。因此，所谓作诗机器人，是一个纯粹的玩具了，能作几句诗，也不意味着普通语言的生成能力有多好，也不意味着我们对NLP的理解有多深。</p><h3 id="CNN + VAE">CNN + VAE</h3><p>就本文的玩具而言，其实是一个比较简单的模型，主要是把一维CNN和VAE结合了起来。因为生成的诗长度是固定的，所以不管是encoder还是decoder，我都只是用了纯CNN来做。模型的结构图大概是：<br/>
+</p><div class="pic-container"><div class="typecho-caption aligncenter" style="max-width: 100%"><div style="margin: 5px"><a href="/usr/uploads/2018/03/2525069418.png" target="_blank" title="点击查看原图"><img alt="cnn + vae 诗歌生成模型" src="/usr/uploads/2018/03/2525069418.png" style="max-width:100%"/></a></div><p class="typecho-caption-text">cnn + vae 诗歌生成模型</p></div></div><p>具体来说，是先将每个字embedding为向量，然后用层叠CNN来做编码，接着池化得到一个encoder的结果，根据这个结果生成计算均值和方差，然后生成正态分布并重新采样。在解码截断，由于现在只有一个encoder的输出结果，而最后要输出多个字，所以先接了多个不同的全连接层，得到多样的输出，然后再接着全连接层。</p><h3 id="GCNN">GCNN</h3><p>这里的CNN不是普通的CNN+ReLU，而是facebook提出的GCNN，其实就是做两个不同的、外形一样的CNN，一个不加激活函数，一个用sigmoid激活，然后把结果乘起来。这样一来sigmoid那部分就相当于起到了一个“门（gate）”的作用。</p><p>我第一次看到GCNN是在论文<a href="https://arxiv.org/pdf/1612.08083v1.pdf" target="_blank">《Language Modeling with Gated Convolutional Networks》</a>中，然后在<a href="https://arxiv.org/pdf/1705.03122.pdf" target="_blank">《Convolutional Sequence to Sequence Learning》</a>中再次看到了。在笔者的<a href="/archives/4823" target="_blank">《分享一个slide：花式自然语言处理》</a>也有简单介绍。</p><p>经过实测，在很多NLP任务上，GCNN比普通的CNN+ReLU明显要好。</p><p></p><h2 id="实验">实验</h2><p>实验还是基于Python2.7和Keras（Tensorflow后端）完成～</p><h3 id="代码">代码</h3><p>有了前述讨论，并且结合Keras自带的VAE例子，其实把整个模型实现就不困难了。由于只为了演示，这里仅选了最简单的五言诗，而且也不要求生成完整的一首诗，只要生成一句（10个字），这样其实更像对对联了。</p><p>代码：<a href="https://github.com/bojone/vae/blob/master/vae_shi.py" target="_blank">https://github.com/bojone/vae/blob/master/vae_shi.py</a></p><p>训练语料用的是全唐诗，也已经放在github上面了。模型并没有经过充分的调参，这留给有兴趣的读者慢慢折腾和增强了。</p><h3 id="训练">训练</h3><p>为了观察训练过程中生成的诗句变化，所以写了个evaluator，效果如图：<br/>
+</p><div class="pic-container"><div class="typecho-caption aligncenter" style="max-width: 100%"><div style="margin: 5px"><a href="/usr/uploads/2018/03/2279183262.png" target="_blank" title="点击查看原图"><img alt="作诗机器人训练过程" src="/usr/uploads/2018/03/2279183262.png" style="max-width:100%"/></a></div><p class="typecho-caption-text">作诗机器人训练过程</p></div></div><br/>
+可以看到，随着训练次数的增加，诗句质量确实在提高。<h3 id="测试">测试</h3><p>下面是训练好的模型随机生成的一些诗句，严格来看并不怎么样，这毕竟只是随机数到诗句的映射，随机出诗罢了～可以看得出，这些“诗句”在对仗和平仄方面还是像模像样的。</p><blockquote><p>出上无花客，相来一日时。<br/>
+从瞻大车策，萧盖偃车矛。<br/>
+今见青衣去，萧凉白叶风。<br/>
+帝城今不战，征罪在天兵。<br/>
+鹤仰临山里，逶留出太回。<br/>
+画关斜过水，残色迥过杨。<br/>
+上道皆有战，四门不如兵。<br/>
+涧烟含雨沥，风影动风风。<br/>
+登回一落景，一处更相期。<br/>
+芳酒不无醉，长楼酒更春。<br/>
+天月满云管，楚女长南闻。<br/>
+明今今有矣，不得道无生。<br/>
+朝明开绿菊，香影下红枝。<br/>
+世外相扁处，逍遥无旧目。<br/>
+唯闻含玉色，讵见月光光。<br/>
+春风将乐节，风服未谁娱。<br/>
+万年君何在，今年酒未新。<br/>
+回辔参相召，乘歌会使程。<br/>
+今有千人醉，不然一子心。<br/>
+今风泛云会，清日白衣新。</p><p><font color="blue">注：演示模型只是生成单句诗，因此这些诗句的行与行之间并没有关联。</font></p></blockquote><h2 id="最后">最后</h2><p>本文的实验并不是为了生出多高质量的诗，而是做一个基于VAE的文本生成的演示。网上也有类似的作诗机器人了，不过多数流行的作诗机器人是基于“RNN + 语言模型”的思路的，一般需要一些种子词输入才可以完成作诗。而VAE能真正实现<font color="red">把随机数映射到诗句</font>的过程～</p>
+
+
+
+
+
+</div>

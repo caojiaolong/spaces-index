@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "11782",
+    "title": "MoE环游记：9、门控归一化之争",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/11782",
+    "date": "2026-06-17",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 82,
+    "display_formula_count": 12,
+    "image_count": 0,
+    "heading_count": 9,
+    "code_block_count": 0,
+    "source_text_sha256": "52eaebf3f4ffa28cfa2db6cc817e66ba2bfd6b80ac642144f01518343af3914e",
+    "output_text_sha256": "52eaebf3f4ffa28cfa2db6cc817e66ba2bfd6b80ac642144f01518343af3914e",
+    "latex_sha256": "a805bc29c5838b1682e66ef0708f6e72080ab5fc41648c968fe8ce2da010e3d0",
+    "body_sha256": "040cfd922210f0f261c6ac1b13fd0ca950c9395773789c8b443f63758707b21d",
+    "converter_version": 1,
+    "markdown_sha256": "8447ecaf15bf28de767d694a2b629e7e3f8835d20b1c20c648d35bf7e1d81539"
+  },
+  "fetched_at": "2026-09-14T12:30:52+00:00",
+  "source_snapshot_sha256": "259174510ad386c227789f7ae2ab4454550d01ed255615b2f8ee9319f5af3d34",
+  "images": {},
+  "local_only": true
+}

@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "3252",
+    "title": "海伦公式的一个别致的物理推导",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/3252",
+    "date": "2015-03-27",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 40,
+    "display_formula_count": 8,
+    "image_count": 0,
+    "heading_count": 3,
+    "code_block_count": 0,
+    "source_text_sha256": "729665a0fe2fe416fe26b6ff7e866e6f949622a821fa82695ee2538df7854296",
+    "output_text_sha256": "729665a0fe2fe416fe26b6ff7e866e6f949622a821fa82695ee2538df7854296",
+    "latex_sha256": "0f3a76858ad0fd23bdbd7623a6b857cdb63db82d48140a765fe2d64a04c52f34",
+    "body_sha256": "47eb005623c52f4a8d30b1de7962fbe94031e9526ec901c869ba9fd2310b78ed",
+    "converter_version": 1,
+    "markdown_sha256": "3a9e8ea1950037e95f0318f7b53346fe0f3ac46a4964e3bc3926a4bce2cd6f72"
+  },
+  "fetched_at": "2026-09-14T13:47:14+00:00",
+  "source_snapshot_sha256": "f7db10aa8158a184262e3641802527381c24ee37f6ccbf98109efaf6badb6ef4",
+  "images": {},
+  "local_only": true
+}

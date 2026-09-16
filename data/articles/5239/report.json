@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "5239",
+    "title": "从最大似然到EM算法：一致的理解方式",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/5239",
+    "date": "2018-03-15",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 128,
+    "display_formula_count": 23,
+    "image_count": 0,
+    "heading_count": 16,
+    "code_block_count": 0,
+    "source_text_sha256": "c322bf8ce2bbbfe413a7ab9bc570a6d77381918cadb00d814045f9ef0e472e62",
+    "output_text_sha256": "c322bf8ce2bbbfe413a7ab9bc570a6d77381918cadb00d814045f9ef0e472e62",
+    "latex_sha256": "f9f78092a01a73ea12cc1c937dd6c78505d925984c36f0ea25d118a3141da722",
+    "body_sha256": "85deedd145acab68d938c0e8d8aa4d850c6cc98d8e96add982cd4c140165969a",
+    "converter_version": 1,
+    "markdown_sha256": "b0c3ab73d1a7fe8590981390b8636f460fcf33779a3c17d9f9311a6479c3845d"
+  },
+  "fetched_at": "2026-09-14T13:28:00+00:00",
+  "source_snapshot_sha256": "14a09ef2848be87131e4012ff63de3488a6ece941d34ce6ffaecd683b171baa1",
+  "images": {},
+  "local_only": true
+}

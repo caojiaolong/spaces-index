@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "7877",
+    "title": "当GPT遇上中国象棋：写过文章解过题，要不再来下盘棋？",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/7877",
+    "date": "2020-11-11",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 3,
+    "display_formula_count": 1,
+    "image_count": 4,
+    "heading_count": 8,
+    "code_block_count": 0,
+    "source_text_sha256": "f4419f8d169c0cb5e47012c98afbcec93d39e97a0f86bfe4a5656acbcb8399f6",
+    "output_text_sha256": "f4419f8d169c0cb5e47012c98afbcec93d39e97a0f86bfe4a5656acbcb8399f6",
+    "latex_sha256": "adc204139f80b5d19355d238aedab813666e3735b3cd5c94f13868b274d90810",
+    "body_sha256": "290d3ffc44cae149f0ebeffd69c82d6527e63afaf44de8958e4f95571449df1b",
+    "converter_version": 1,
+    "markdown_sha256": "5ff7ae4e5e253d246ed994cc645245f295b6d3a7ba3a18ac266798e5e6b3fb5c"
+  },
+  "fetched_at": "2026-09-14T13:10:16+00:00",
+  "source_snapshot_sha256": "7016abc962d1fa00837a2147b69a84a2b6f1068ec4f01640ed6b4bb0823ab58a",
+  "images": {},
+  "local_only": true
+}

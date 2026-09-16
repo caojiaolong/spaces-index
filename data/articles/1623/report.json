@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "1623",
+    "title": "骑自行车游新兴",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/1623",
+    "date": "2012-06-17",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 0,
+    "display_formula_count": 0,
+    "image_count": 3,
+    "heading_count": 0,
+    "code_block_count": 0,
+    "source_text_sha256": "c87e5f18fe702946ca5041996f644cbf2e05ba293247e767a4f6d5c4ae4f9d50",
+    "output_text_sha256": "c87e5f18fe702946ca5041996f644cbf2e05ba293247e767a4f6d5c4ae4f9d50",
+    "latex_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "body_sha256": "71c21590d449602de16a3c46bbb15efd383b05928399a1fb8c6340d680fc3d42",
+    "converter_version": 1,
+    "markdown_sha256": "d3bdcc2043b5d17e39c18fd9dfc80afaf03ec9478f556fe69c3952c7b5129101"
+  },
+  "fetched_at": "2026-09-14T14:13:57+00:00",
+  "source_snapshot_sha256": "341f76c0639afa4c0acd154d44e44cb597bb209a4a8497c538394bfbf39bf715",
+  "images": {},
+  "local_only": true
+}

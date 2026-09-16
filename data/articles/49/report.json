@@ -1,0 +1,41 @@
+{
+  "metadata": {
+    "id": "49",
+    "title": "一道级数求和证明题(非数学归纳法)",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/49",
+    "date": "2009-08-02",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "source_dom_exact": true,
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "attributes_exact": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": null,
+    "display_formula_count": null,
+    "image_count": 0,
+    "heading_count": 0,
+    "code_block_count": 0,
+    "source_text_sha256": "7f3f5ce03b02818988ba3c1849f5fc2ee72ed1f908c1d31e12c06d106e0febd4",
+    "output_text_sha256": "7f3f5ce03b02818988ba3c1849f5fc2ee72ed1f908c1d31e12c06d106e0febd4",
+    "latex_sha256": "21aabaf49c05302cbbb16d861612ec96cc2e10c0cca75a5a3df2cdb1ff67c170",
+    "body_sha256": "a90372ff1373074eccafcf7160435ebf1c71ab8d144642715eab7d53dd43433e",
+    "converter_version": 1,
+    "format": "html-v1",
+    "source_warnings": [
+      "原文公式定界符异常，已逐字保留，未补写或修正：Unclosed math delimiter"
+    ],
+    "fallback_reason": "Unclosed math delimiter",
+    "markdown_sha256": "767d662e100f973fc0abd5b188dd7dfaa5a53df287f391438a360487bf9d3e2b"
+  },
+  "fetched_at": "2026-09-14T15:02:09+00:00",
+  "source_snapshot_sha256": "c415bfb46f2d8278105e010229453904dfff9650aef0200c934c30d4d321e159",
+  "images": {},
+  "local_only": true
+}

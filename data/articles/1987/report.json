@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "1987",
+    "title": "电的相对论效应——磁“子虚乌有”？",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/1987",
+    "date": "2013-05-11",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 8,
+    "display_formula_count": 4,
+    "image_count": 1,
+    "heading_count": 0,
+    "code_block_count": 0,
+    "source_text_sha256": "566254445f4eb2a9b1c69dba7af1b8ffc4cf0ce7eb203dc16208ff660c693ba3",
+    "output_text_sha256": "566254445f4eb2a9b1c69dba7af1b8ffc4cf0ce7eb203dc16208ff660c693ba3",
+    "latex_sha256": "cc41fb5ba49ff11a12d5dfa3e2372928093bc1910297dea2610fa58ce21423ff",
+    "body_sha256": "b03e0fc5e78e90a14f56095edeb2db6e40ca71cb6dd8953d1249768203b7b740",
+    "converter_version": 1,
+    "markdown_sha256": "81f423c3d326371362ee5e8508612f6cdcc04660e32fef1c8bdc84d1bfe1b257"
+  },
+  "fetched_at": "2026-09-14T14:02:23+00:00",
+  "source_snapshot_sha256": "ab40b958c90830590a9dbeee0913c3f2f753b368afac59aba033adfd6cce53a8",
+  "images": {},
+  "local_only": true
+}

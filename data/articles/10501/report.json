@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "10501",
+    "title": "低秩近似之路（四）：ID",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/10501",
+    "date": "2024-10-30",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 113,
+    "display_formula_count": 12,
+    "image_count": 3,
+    "heading_count": 7,
+    "code_block_count": 0,
+    "source_text_sha256": "69c881635fc503919595a4a048a9d1435515b334166415a3fe544fa0bee1d543",
+    "output_text_sha256": "69c881635fc503919595a4a048a9d1435515b334166415a3fe544fa0bee1d543",
+    "latex_sha256": "213cbc376b2265b158f026d6b6527667d67890615049770927170a8453b2bca7",
+    "body_sha256": "798c8d57f64fd3456e92d8986e94589046aca0ef8ed8abe62c9f7bce703de655",
+    "converter_version": 1,
+    "markdown_sha256": "fcdb714028f848cbc4cb827788ee0a74124530ed9ce006af6e729a15514a45be"
+  },
+  "fetched_at": "2026-09-14T12:45:49+00:00",
+  "source_snapshot_sha256": "78d1529c7550e92f7127a8a85ba6be807aa089ad0ae8daf227d2db6a73f9ff67",
+  "images": {},
+  "local_only": true
+}

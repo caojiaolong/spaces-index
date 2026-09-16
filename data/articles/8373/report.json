@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "8373",
+    "title": "GlobalPointer：用统一的方式处理嵌套和非嵌套NER",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/8373",
+    "date": "2021-05-01",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 85,
+    "display_formula_count": 11,
+    "image_count": 1,
+    "heading_count": 17,
+    "code_block_count": 1,
+    "source_text_sha256": "a8ddb98d0ce37701d255232fad64c5a2641c938cc2f96d20bd92c4ffc1f35aac",
+    "output_text_sha256": "a8ddb98d0ce37701d255232fad64c5a2641c938cc2f96d20bd92c4ffc1f35aac",
+    "latex_sha256": "cc7b20c0e5e5c6d9dbb15166d0d96f8daa856ae0f5858d96583c2649f404fa00",
+    "body_sha256": "cb9aa9dfdc9eeb7ab927f88859dcbe695178457e85dbda9146c5738a26c24d5c",
+    "converter_version": 1,
+    "markdown_sha256": "956c337bbccf67ed6b5ccfecf10ba8011ecef8230bbef6c925c4bdfb0a5ddda3"
+  },
+  "fetched_at": "2026-09-14T13:06:53+00:00",
+  "source_snapshot_sha256": "e2148767053ab4529ea692864fbbfaeeb919212b06c329f0485e0b39745937a6",
+  "images": {},
+  "local_only": true
+}

@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "3241",
+    "title": "高斯型积分的微扰展开（二）",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/3241",
+    "date": "2015-03-07",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 19,
+    "display_formula_count": 8,
+    "image_count": 0,
+    "heading_count": 3,
+    "code_block_count": 0,
+    "source_text_sha256": "bc5ad0d5f9fed0d134f163e276a9bd3993042e9e91b77602baeaf3097e037eae",
+    "output_text_sha256": "bc5ad0d5f9fed0d134f163e276a9bd3993042e9e91b77602baeaf3097e037eae",
+    "latex_sha256": "1ea25a6b72e6f9bee06c3774839bd0109b4b8a690e6195530b3aa99ec7092500",
+    "body_sha256": "1b8424f31b936e98eb0012fdb704163a731ea9562f468fc13dd759f5265baa1f",
+    "converter_version": 1,
+    "markdown_sha256": "2013dca49fa1a56d63ef3730e8927e258831cd8acb8eac42e0f932f549a38580"
+  },
+  "fetched_at": "2026-09-14T13:47:27+00:00",
+  "source_snapshot_sha256": "975b3a09d06ab54ca14ab960c142adb51397d788234305146a7c3a70ea6f173c",
+  "images": {},
+  "local_only": true
+}

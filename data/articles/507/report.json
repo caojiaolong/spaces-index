@@ -1,0 +1,39 @@
+{
+  "metadata": {
+    "id": "507",
+    "title": "谈大气消光和大气折光",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/507",
+    "date": "2010-03-06",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "source_dom_exact": true,
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "attributes_exact": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 5,
+    "display_formula_count": 4,
+    "image_count": 7,
+    "heading_count": 0,
+    "code_block_count": 0,
+    "source_text_sha256": "fa9122211501e05cb5769b9000d59e16a5033fdb5b7d26ee57843db6175933c0",
+    "output_text_sha256": "fa9122211501e05cb5769b9000d59e16a5033fdb5b7d26ee57843db6175933c0",
+    "latex_sha256": "89edcd7a6807a7df7801ae6c18f004e19beeec81d8ced3c31183b36abed9fc63",
+    "body_sha256": "5d4dce63b8b7438a63652284c0c169229c7e90ccc23b970c6dfcd5d1588db30f",
+    "converter_version": 1,
+    "format": "html-v1",
+    "source_warnings": [],
+    "fallback_reason": "Standard Markdown round trip changed source structure",
+    "markdown_sha256": "70d878fbf4872746454e645c4ff96780f9e008220a88b2721f019b5ed193b771"
+  },
+  "fetched_at": "2026-09-14T14:39:28+00:00",
+  "source_snapshot_sha256": "686bb831c26fcec2497fd783a53dbb89d36ce81196fe59fafee027e96c9c1490",
+  "images": {},
+  "local_only": true
+}

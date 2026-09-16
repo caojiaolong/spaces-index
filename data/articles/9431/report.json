@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "9431",
+    "title": "Transformer升级之路：7、长度外推性与局部注意力",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/9431",
+    "date": "2023-01-12",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 43,
+    "display_formula_count": 7,
+    "image_count": 5,
+    "heading_count": 8,
+    "code_block_count": 0,
+    "source_text_sha256": "e7220f9dc3fd54ec07faed3f2d3f654f30dadd3d7ea710a6abd299282442ba5e",
+    "output_text_sha256": "e7220f9dc3fd54ec07faed3f2d3f654f30dadd3d7ea710a6abd299282442ba5e",
+    "latex_sha256": "28fb58171f000c4ce82d7ebcfc7a48154e53265820be65bcbaa6c8fc473dabd2",
+    "body_sha256": "80e0b66fb0011b1d00c8e4d3f3caa199278132d8488f6b957c0944bfb1150b1b",
+    "converter_version": 1,
+    "markdown_sha256": "fcf4d7a8ad62aaf14d68853ed9912ef82e2d7d47f5bb70569eb0d9c55067f641"
+  },
+  "fetched_at": "2026-09-14T12:56:00+00:00",
+  "source_snapshot_sha256": "0f5307c74606d413e64ca8023da16838c453c58c2203afa990077233f2f77fa2",
+  "images": {},
+  "local_only": true
+}

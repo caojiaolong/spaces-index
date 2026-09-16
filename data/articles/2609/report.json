@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "2609",
+    "title": "当概率遇上复变：随机游走与路径积分",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/2609",
+    "date": "2014-06-04",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 17,
+    "display_formula_count": 5,
+    "image_count": 0,
+    "heading_count": 0,
+    "code_block_count": 0,
+    "source_text_sha256": "5548bcd3d642ca4dbc69336c43577c8700b48caf561c089fcfa0cef22ee387f8",
+    "output_text_sha256": "5548bcd3d642ca4dbc69336c43577c8700b48caf561c089fcfa0cef22ee387f8",
+    "latex_sha256": "e5d58bc8b22efedf7f3f7345573ec33805820bf2adf64f26c6752302f3e0fc59",
+    "body_sha256": "47556a63bf2857b2ec9918cd2b205e1d6f8adeaadcabefef118f9ddf139dee88",
+    "converter_version": 1,
+    "markdown_sha256": "95dc0641ac77b77eb15afd5b57e7d12a3dc95c75311c70b78e428720de528edb"
+  },
+  "fetched_at": "2026-09-14T13:54:41+00:00",
+  "source_snapshot_sha256": "ff7e776a14d9bc852f26bc06bcd56b5a608f47f6796a3262a5f31d4cead053fe",
+  "images": {},
+  "local_only": true
+}

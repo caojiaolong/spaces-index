@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "8764",
+    "title": "ChildTuning：试试把Dropout加到梯度上去？",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/8764",
+    "date": "2021-11-22",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 36,
+    "display_formula_count": 7,
+    "image_count": 2,
+    "heading_count": 10,
+    "code_block_count": 0,
+    "source_text_sha256": "50d5d6b6ddc9a48932b2237d3d9977953fdfaa34db2eddfd78f00956634eb771",
+    "output_text_sha256": "50d5d6b6ddc9a48932b2237d3d9977953fdfaa34db2eddfd78f00956634eb771",
+    "latex_sha256": "07b23a28c6c2a53931544f43eec6e104db54bdd0bfcd198310388eef10d10ac7",
+    "body_sha256": "83f482525121325585410be479985fbafe697eef9d9a4667d87c36155bd2a5b3",
+    "converter_version": 1,
+    "markdown_sha256": "a30b0882287b28e7ce904707b212c06fbf912e3fda918cb79c6ff42f3ebaab2d"
+  },
+  "fetched_at": "2026-09-14T13:03:08+00:00",
+  "source_snapshot_sha256": "74a4b2cc0b5d5569eb69da9fde243d111911756f14cb8429470b1ee66c922b9c",
+  "images": {},
+  "local_only": true
+}

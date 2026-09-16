@@ -1,0 +1,17 @@
+{
+  "metadata": {
+    "id": "10847",
+    "title": "矩阵的有效秩（Effective Rank）",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/10847",
+    "date": "2025-04-10",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "fetched_at": "2026-09-14T12:43:07+00:00",
+  "source_snapshot_sha256": "7d26d2e7338163e77df96771a1d4102e3c09a9cf16a625abd8414f586269cd3e",
+  "validators": {
+    "etag": null,
+    "last_modified": null
+  }
+}

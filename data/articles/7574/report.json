@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "7574",
+    "title": "强大的NVAE：以后再也不能说VAE生成的图像模糊了",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/7574",
+    "date": "2020-07-10",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 57,
+    "display_formula_count": 6,
+    "image_count": 8,
+    "heading_count": 12,
+    "code_block_count": 0,
+    "source_text_sha256": "3a1dd926ac69863753af79f280a696fd4b83230171538364783134ef3917d138",
+    "output_text_sha256": "3a1dd926ac69863753af79f280a696fd4b83230171538364783134ef3917d138",
+    "latex_sha256": "ccd1f2cd1dfb9bb64bb2051157ace87aef1a7e2aadd1251e3deb1d77021b450a",
+    "body_sha256": "15fa7cbada25a9abfbe655bddc69f421680f7af4e0b8dd912f48cbfd9d8b46a8",
+    "converter_version": 1,
+    "markdown_sha256": "0c493b547d012d79c73b06916b56a4ca61e80d663f6f88493cc123620b68be96"
+  },
+  "fetched_at": "2026-09-14T13:12:40+00:00",
+  "source_snapshot_sha256": "c02d13adaff13ee2327ee101c6f733189fbe36096568165d17ca735ba8c22dae",
+  "images": {},
+  "local_only": true
+}

@@ -1,0 +1,17 @@
+{
+  "metadata": {
+    "id": "3913",
+    "title": "【中文分词系列】 2. 基于切分的新词发现",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/3913",
+    "date": "2016-08-18",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "fetched_at": "2026-09-14T13:38:38+00:00",
+  "source_snapshot_sha256": "324c8ca005bc9752d8529116f17dfbc03969aa8df794f66f18da3ffdcb0e1bc7",
+  "validators": {
+    "etag": null,
+    "last_modified": null
+  }
+}

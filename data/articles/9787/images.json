@@ -1,0 +1,45 @@
+{
+  "version": 1,
+  "images": {
+    "https://spaces.ac.cn/usr/uploads/2023/10/3692059662.png": {
+      "status": "cached",
+      "file": "2bd5a5238c23844cbe7a6b761793b6bd214fae05f58f5f13f7add781c8a1a84d.png",
+      "sha256": "2bd5a5238c23844cbe7a6b761793b6bd214fae05f58f5f13f7add781c8a1a84d",
+      "bytes": 187867,
+      "checked_at": "2026-09-16T07:21:36+00:00",
+      "fetched_url": "https://spaces.ac.cn/usr/uploads/2023/10/3692059662.png",
+      "etag": "\"65220cca-2dddb\"",
+      "last_modified": "Sun, 08 Oct 2023 01:58:34 GMT"
+    },
+    "https://spaces.ac.cn/usr/uploads/2023/10/1358414937.png": {
+      "status": "cached",
+      "file": "6c8f91a7b15e52736faabf55f3b8593ad930bf7e5152b5ff54c642dfc0940010.png",
+      "sha256": "6c8f91a7b15e52736faabf55f3b8593ad930bf7e5152b5ff54c642dfc0940010",
+      "bytes": 208710,
+      "checked_at": "2026-09-16T07:21:41+00:00",
+      "fetched_url": "https://spaces.ac.cn/usr/uploads/2023/10/1358414937.png",
+      "etag": "\"65221aec-32f46\"",
+      "last_modified": "Sun, 08 Oct 2023 02:58:52 GMT"
+    },
+    "https://spaces.ac.cn/usr/uploads/2023/10/546916399.png": {
+      "status": "cached",
+      "file": "98ba5e0e0b55a2f085d7f297ac34f1d37337173b7987356582db5316584b5770.png",
+      "sha256": "98ba5e0e0b55a2f085d7f297ac34f1d37337173b7987356582db5316584b5770",
+      "bytes": 125931,
+      "checked_at": "2026-09-16T07:21:45+00:00",
+      "fetched_url": "https://spaces.ac.cn/usr/uploads/2023/10/546916399.png",
+      "etag": "\"65221b56-1ebeb\"",
+      "last_modified": "Sun, 08 Oct 2023 03:00:38 GMT"
+    },
+    "https://spaces.ac.cn/usr/uploads/2023/10/476588374.png": {
+      "status": "cached",
+      "file": "a7e8ca280674ec567dd6ab337c5556abfde09f2b6eafbe015480273d56c301e9.png",
+      "sha256": "a7e8ca280674ec567dd6ab337c5556abfde09f2b6eafbe015480273d56c301e9",
+      "bytes": 145500,
+      "checked_at": "2026-09-16T07:21:51+00:00",
+      "fetched_url": "https://spaces.ac.cn/usr/uploads/2023/10/476588374.png",
+      "etag": "\"65221ce5-2385c\"",
+      "last_modified": "Sun, 08 Oct 2023 03:07:17 GMT"
+    }
+  }
+}

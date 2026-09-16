@@ -1,0 +1,142 @@
+<div class="PostContent" id="PostContent">
+<p>最后，我们来看一下词向量模型$(15)$会有什么好的性质，或者说，如此煞费苦心去构造一个新的词向量模型，会得到什么回报呢？</p><h2 id="模长的含义">模长的含义</h2><p>似乎所有的词向量模型中，都很少会关心词向量的模长。有趣的是，我们上述词向量模型得到的词向量，其模长还能在一定程度上代表着词的重要程度。我们可以从两个角度理解这个事实。</p><p>在一个窗口内的上下文，中心词重复出现概率其实是不大的，是一个比较随机的事件，因此可以粗略地认为<br/>
+\[P(w,w) \sim P(w)\tag{24}\]<br/>
+所以根据我们的模型，就有<br/>
+\[e^{\langle\boldsymbol{v}_{w},\boldsymbol{v}_{w}\rangle} =\frac{P(w,w)}{P(w)P(w)}\sim \frac{1}{P(w)}\tag{25}\]<br/>
+所以<br/>
+\[\Vert\boldsymbol{v}_{w}\Vert^2 \sim -\log P(w)\tag{26}\]<br/>
+可见，词语越高频（越有可能就是停用词、虚词等），对应的词向量模长就越小，这就表明了这种词向量的模长确实可以代表词的重要性。事实上，$-\log P(w)$这个量类似IDF，有个专门的名称叫ICF，请参考论文《TF-ICF: A New Term Weighting Scheme for Clustering Dynamic Data Streams》。</p><p>然后我们也可以从另一个角度来理解它，先把每个向量分解成模长和方向<br/>
+\[\boldsymbol{v}=\Vert\boldsymbol{v}\Vert\cdot\frac{\boldsymbol{v}}{\Vert\boldsymbol{v}\Vert}\tag{27}\]<br/>
+其中$|\boldsymbol{v}|$模长是一个独立参数，方向向量$\boldsymbol{v}/\Vert\boldsymbol{v}\Vert$是$n-1$个独立参数，$n$是词向量维度。由于参数量差别较大，因此在求解词向量的时候，如果通过调整模长就能达到的，模型自然会选择调整模长而不是拼死拼活调整方向。而根据$(15)$，我们有<br/>
+\[\log\frac{P(w_i,w_j)}{P(w_i)P(w_j)}=\langle \boldsymbol{v}_i, \boldsymbol{v}_j\rangle=\Vert\boldsymbol{v}_i\Vert\cdot \Vert\boldsymbol{v}_i\Vert\cdot \cos\theta_{ij}\tag{28}\]<br/>
+对于像“的”、“了”这些几乎没有意义的词语，词向量会往哪个方向发展呢？前面已经说了，它们的出现频率很高，但本身几乎没有跟谁是固定搭配的，基本上就是自己周围逛，所以可以认为对于任意词$w_i$，都有<br/>
+\[\log\frac{P(w_i,\text{的})}{P(w_i)P(\text{的})}\approx 0\tag{29}\]<br/>
+为了达到这个目的，最便捷的方法自然就是$\Vert\boldsymbol{v}_{\text{的}}\Vert\approx 0$了，调整一个参数就可以达到，模型肯定乐意。也就是说对于频数高但是互信息整体都小的词语（这部分词语通常没有特别的意义），模长会自动接近于0，所以我们说词向量的模长能在一定程度上代表词的重要程度。</p><p>在用本文的模型和百度百科语料训练的一份词向量中，不截断权重，把词向量按照模长升序排列，前50个的结果是</p><p>\[\begin{array}{|c|c|c|c|c|c|c|c|c|c|}<br/>
+\hline<br/>
+\text{。} &amp; \text{，} &amp; \text{的} &amp; \text{和} &amp; \text{同样} &amp; \text{也} &amp; \text{1} &amp; \text{3} &amp; \text{并且} &amp; \text{另外} \\<br/>
+\hline<br/>
+\text{同时} &amp; \text{是} &amp; \text{2} &amp; \text{6} &amp; \text{总之} &amp; \text{在} &amp; \text{以及} &amp; \text{5} &amp; \text{因此} &amp; \text{4} \\<br/>
+\hline<br/>
+\text{7} &amp; \text{8} &amp; \text{等等} &amp; \text{又} &amp; \text{并} &amp; \text{；} &amp; \text{与此同时} &amp; \text{然而} &amp; \text{当中} &amp; \text{事实上}\\<br/>
+\hline<br/>
+\text{显然} &amp; \text{这样} &amp; \text{所以} &amp; \text{例如} &amp; \text{还} &amp; \text{当然} &amp; \text{就是} &amp; \text{这些} &amp; \text{而} &amp; \text{因而} \\<br/>
+\hline<br/>
+\text{此外} &amp; \text{）} &amp; \text{便是} &amp; \text{即使} &amp; \text{比如} &amp; \text{因为} &amp; \text{由此可见} &amp; \text{一} &amp; \text{有} &amp; \text{即}<br/>
+\\<br/>
+\hline<br/>
+\end{array}\]<br/>
+</p><p>可见这些词确实是我们称为“停用词”或者“虚词”的词语，这就验证了模长确实能代表词本身的重要程度。这个结果与是否截断权重有一定关系，因为截断权重的话，得到的排序是</p><p>\[\begin{array}{|c|c|c|c|c|c|c|c|c|c|}<br/>
+\hline<br/>
+\text{。} &amp; \text{，} &amp; \text{总之} &amp; \text{同样} &amp; \text{与此同时} &amp; \text{除此之外} &amp; \text{当中} &amp; \text{便是} &amp; \text{显然} &amp; \text{无论是} \\<br/>
+\hline<br/>
+\text{另外} &amp; \text{不但} &amp; \text{事实上} &amp; \text{由此可见} &amp; \text{即便} &amp; \text{原本} &amp; \text{先是} &amp; \text{其次} &amp; \text{后者} &amp; \text{本来}<br/>
+\\<br/>
+\hline<br/>
+\text{原先} &amp; \text{起初} &amp; \text{为此} &amp; \text{另一个} &amp; \text{其二} &amp; \text{值得一提} &amp; \text{看出} &amp; \text{最初} &amp; \text{或是} &amp; \text{基本上}<br/>
+\\<br/>
+\hline<br/>
+\text{另} &amp; \text{从前} &amp; \text{做为} &amp; \text{自从} &amp; \text{称之为} &amp; \text{诸如} &amp; \text{现今} &amp; \text{那时} &amp; \text{却是} &amp; \text{如果说}<br/>
+\\<br/>
+\hline<br/>
+\text{由此} &amp; \text{的确} &amp; \text{另一方面} &amp; \text{其后} &amp; \text{之外} &amp; \text{在内} &amp; \text{当然} &amp; \text{前者} &amp; \text{之所以} &amp; \text{此外}<br/>
+\\<br/>
+\hline<br/>
+\end{array}\]</p><p>两个表的明显区别是，在第二个表中，虽然也差不多是停用词，但是一些更明显的停用词，如“的”、“是”等反而不在前面，这是因为它们的词频相当大，因此截断造成的影响也更大，因此存在拟合不充分的可能性（简单来说，更关注了低频词，对于高频词只是“言之有理即可”。）。那为什么句号和逗号也很高频，它们又上榜了？因为一句话的一个窗口中，出现两次句号“。”的概率远小于出现两次“的”的概率，因此句号“。”的使用更加符合我们上述推导的假设，而相应地，由于一个窗口也可能出现多次“的”，因此“的”与自身的互信息应该更大，所以模长也会偏大。</p><h2 id="词类比实验">词类比实验</h2><p>既然我们号称词类比性质就是本模型的定义，那么该模型是否真的在词类比中表现良好？我们来看一些例子。</p><p>\[\begin{array}{c|c}<br/>
+\hline<br/>
+A + B - C&amp; D \\<br/>
+\hline<br/>
+机场 + 火车 - 飞机   &amp; 火车站、直达、东站、高铁站、南站、客运站  \\<br/>
+\hline<br/>
+国王 + 女人 - 男人&amp; 二世、一世、王后、王国、三世、四世\\<br/>
+\hline<br/>
+北京 + 英国 - 中国&amp; 伦敦、巴黎、寓所、搬到、爱丁堡、布鲁塞尔\\<br/>
+\hline<br/>
+伦敦 + 美国 - 英国&amp; 纽约、洛杉矶、伦敦、芝加哥、旧金山、亚特兰大\\<br/>
+\hline<br/>
+广州 + 浙江 - 广东&amp; 杭州、宁波、嘉兴、金华、湖州、上海\\<br/>
+\hline<br/>
+广州 + 江苏 - 广东&amp; 常州、无锡、苏州、南京、镇江、扬州\\<br/>
+\hline<br/>
+中学 + 大学生 - 大学&amp; 中学生、中小学生、青少年、电子设计、村官、二中\\<br/>
+\hline<br/>
+人民币 + 美国 - 中国&amp; 美元、港币、约合、美金、贬值、万美元\\<br/>
+\hline<br/>
+兵马俑 + 敦煌 - 西安&amp; 莫高窟、卷子、写本、藏经洞、精美绝伦、千佛洞\\<br/>
+\hline<br/>
+\end{array}\]</p><p>这里还想说明一点，词类比实验，有些看起来很漂亮，有些看起来不靠谱，但事实上，词向量反映的是语料的统计规律，是客观的。而恰恰相反，人类所定义的一些关系，反而才是不客观的。对于词向量模型来说，词相近就意味着它们具有相似的上下文分布，而不是我们人为去定义它相似。所以效果好不好，就看“相似的上下文分布 ⇆ 词相近”这一观点（跟语料有关），跟人类对相近的定义（跟语料无关，人的主观想法）有多大差别。当发现实验效果不好时，不妨就往这个点想想。</p><h2 id="相关词排序">相关词排序</h2><p>留意式$(15)$，也就是两个词的互信息等于它们词向量的内积。互信息越大，表明两个词成对出现的几率越大，互信息越小，表明两个词几乎不会在一起使用。因此，可以用内积排序来找给定词的相关词。当然，内积是把模长也算进去了，而刚才我们说了模长代表的是词的重要程度，如果我们不管重要程度，而是纯粹地考虑词义，那么我们会把向量的范数归一后再求内积，这样的方案更加稳定：<br/>
+\[\cos\theta_{ij}=\left\langle \frac{\boldsymbol{v}_i}{|\boldsymbol{v}_i|}, \frac{\boldsymbol{v}_j}{|\boldsymbol{v}_j|}\right\rangle\tag{30}\]</p><p>根据概率论的知识，我们知道如果互信息为0，也就是两个词的联合概率刚好就是它们随机组合的概率，这表明它们是无关的两个词。对应到式$(15)$，也就是两个词的内积为0，而根据词向量的知识，两个向量的内积为0，表明两个向量是相互垂直的，而我们通常说两个向量垂直，表明它们就是无关的。所以很巧妙，两个词统计上的无关，正好对应着几何上的无关。这是模型形式上的美妙之一。</p><p>需要指出的是，前面已经提到，停用词会倾向于缩小模长而非调整方向，所以它的方向就没有什么意义了，我们可以认为停用词的方向是随机的。这时候我们通过余弦值来查找相关词时，就有可能出现让我们意外的停用词了。</p><h2 id="重新定义相似">重新定义相似</h2><p>注意上面我们说的是相关词排序，相关词跟相似词不是一回事！！比如“单身”、“冻成”都跟“狗”很相关，但是它们并不是近义词；“科学”和“发展观”也很相关，但它们也不是近义词。</p><p>那么如何找近义词？事实上这个问题是本末倒置的，因为相似的定义是人为的，比如“喜欢”和“喜爱”相似，那“喜欢”和“讨厌”呢？如果在一般的主题分类任务中它们应当是相似的，但是在情感分类任务中它们是相反的。再比如“跑”和“抓”，一般情况下我们认为它们不相似，但如果在词性分类中它们是相似的，因为它们具有相同的词性。</p><p>回归到我们做词向量模型的假设，就是词的上下文分布来揭示词义。所以说，两个相近的词语应该具有相近的上下文分布，前面我们讨论的“机场-飞机+火车=火车站”也是基于同样原理，但那里要求了上下文单词一一严格对应，而这里只需要近似对应，条件有所放宽，而且为了适应不同层次的相似需求，这里的上下文也可以由我们自行选择。具体来讲，对于给定的两个词$w_i,w_j$以及对应的词向量$\boldsymbol{v}_i,\boldsymbol{v}_j$，我们要算它们的相似度，首先我们写出它们与预先指定的$N$个词的互信息，即<br/>
+\[\langle\boldsymbol{v}_i,\boldsymbol{v}_1\rangle,\langle\boldsymbol{v}_i,\boldsymbol{v}_2\rangle,\dots,\langle\boldsymbol{v}_i,\boldsymbol{v}_N\rangle\tag{31}\]<br/>
+和<br/>
+\[\langle\boldsymbol{v}_j,\boldsymbol{v}_1\rangle,\langle\boldsymbol{v}_j,\boldsymbol{v}_2\rangle,\dots,\langle\boldsymbol{v}_j,\boldsymbol{v}_N\rangle\tag{32}\]<br/>
+这里的$N$是词表中词的总数。如果这两个词是相似的，那么它们的上下文分布应该也相似，所以上述两个序列应该具有线性相关性，所以我们不妨比较它们的皮尔逊积矩相关系数：<br/>
+\[\frac{\sum_{k=1}^N \Big(\langle\boldsymbol{v}_i,\boldsymbol{v}_k\rangle - \overline{\langle\boldsymbol{v}_i,\boldsymbol{v}_k\rangle}\Big)\Big(\langle\boldsymbol{v}_j,\boldsymbol{v}_k\rangle - \overline{\langle\boldsymbol{v}_j,\boldsymbol{v}_k\rangle}\Big)}{\sqrt{\sum_{k=1}^N \Big(\langle\boldsymbol{v}_i,\boldsymbol{v}_k\rangle - \overline{\langle\boldsymbol{v}_i,\boldsymbol{v}_k\rangle}\Big)^2}\sqrt{\sum_{k=1}^N \Big(\langle\boldsymbol{v}_j,\boldsymbol{v}_k\rangle - \overline{\langle\boldsymbol{v}_j,\boldsymbol{v}_k\rangle}\Big)^2}}\tag{33}\]<br/>
+其中$\overline{\langle\boldsymbol{v}_i,\boldsymbol{v}_k\rangle}$是$\langle\boldsymbol{v}_i,\boldsymbol{v}_k\rangle$的均值，即<br/>
+\[\overline{\langle\boldsymbol{v}_i,\boldsymbol{v}_k\rangle}=\frac{1}{N}\sum_{k=1}^N \langle\boldsymbol{v}_i,\boldsymbol{v}_k\rangle=\left\langle\boldsymbol{v}_i,\frac{1}{N}\sum_{k=1}^N \boldsymbol{v}_k\right\rangle = \langle\boldsymbol{v}_i,\bar{\boldsymbol{v}}\rangle\tag{34}\]<br/>
+所以相关系数公式可以简化为<br/>
+\[\frac{\sum_{k=1}^N \langle\boldsymbol{v}_i,\boldsymbol{v}_k-\bar{\boldsymbol{v}}\rangle\langle\boldsymbol{v}_j,\boldsymbol{v}_k-\bar{\boldsymbol{v}}\rangle}{\sqrt{\sum_{k=1}^N \langle\boldsymbol{v}_i,\boldsymbol{v}_k-\bar{\boldsymbol{v}}\rangle^2}\sqrt{\sum_{k=1}^N \langle\boldsymbol{v}_j,\boldsymbol{v}_k-\bar{\boldsymbol{v}}\rangle^2}}\tag{35}\]<br/>
+用矩阵的写法（假设这里的向量都是行向量），我们有<br/>
+\[\begin{aligned}&amp;\sum_{k=1}^N \langle\boldsymbol{v}_i,\boldsymbol{v}_k-\bar{\boldsymbol{v}}\rangle\langle\boldsymbol{v}_j,\boldsymbol{v}_k-\bar{\boldsymbol{v}}\rangle\\<br/>
+=&amp;\sum_{k=1}^N \boldsymbol{v}_i (\boldsymbol{v}_k-\bar{\boldsymbol{v}})^{\top}(\boldsymbol{v}_k-\bar{\boldsymbol{v}})\boldsymbol{v}_j^{\top}\\<br/>
+=&amp;\boldsymbol{v}_i \left[\sum_{k=1}^N (\boldsymbol{v}_k-\bar{\boldsymbol{v}})^{\top}(\boldsymbol{v}_k-\bar{\boldsymbol{v}})\right]\boldsymbol{v}_j^{\top}\end{aligned}\tag{36}\]<br/>
+方括号这一块又是什么操作呢？事实上它就是<br/>
+\[\boldsymbol{V}^{\top}\boldsymbol{V},\,\boldsymbol{V}=\begin{pmatrix}\boldsymbol{v}_1-\bar{\boldsymbol{v}}\\ \boldsymbol{v}_2-\bar{\boldsymbol{v}}\\ \vdots \\ \boldsymbol{v}_N-\bar{\boldsymbol{v}}\end{pmatrix}\tag{37}\]<br/>
+也就是将词向量减去均值后排成一个矩阵$\boldsymbol{V}$，然后算$\boldsymbol{V}^{\top}\boldsymbol{V}$，这是一个$n\times n$的实对称矩阵，$n$是词向量维度，它可以分解（Cholesky分解）为<br/>
+\[\boldsymbol{V}^{\top}\boldsymbol{V}=\boldsymbol{U}\boldsymbol{U}^{\top}\tag{38}\]<br/>
+其中$\boldsymbol{U}$是$n\times n$的实矩阵，所以相关系数的公式可以写为<br/>
+\[\frac{\boldsymbol{v}_i \boldsymbol{U}\boldsymbol{U}^{\top}\boldsymbol{v}_j^{\top}}{\sqrt{\boldsymbol{v}_i \boldsymbol{U}\boldsymbol{U}^{\top}\boldsymbol{v}_i^{\top}}\sqrt{\boldsymbol{v}_j \boldsymbol{U}\boldsymbol{U}^{\top}\boldsymbol{v}_j^{\top}}}=\frac{\langle\boldsymbol{v}_i \boldsymbol{U},\boldsymbol{v}_j \boldsymbol{U}\rangle}{\Vert\boldsymbol{v}_i \boldsymbol{U}\Vert \times \Vert\boldsymbol{v}_j \boldsymbol{U}\Vert}\tag{39}\]<br/>
+我们发现，相似度还是用向量的余弦值来衡量，只不过要经过矩阵$\boldsymbol{U}$的变换之后再求余弦值。</p><p>最后，该怎么选择这$N$个词呢？我们可以按照词频降序排列，然后选择前$N$个，如果$N$选择比较大（比如$N=10000$），那么得到的是一般场景下语义上的相关词，也就是跟前一节的结果差不多；如果$N$选择比较小，如$N=500$，那么得到的是语法上的相似词，比如这时候“爬”跟“掏”、“捡”、“摸”都比较接近。</p><h2 id="关键词提取">关键词提取</h2><p>跟<a href="/archives/4316/" target="_blank">《【不可思议的Word2Vec】 3.提取关键词》</a>一文一样，所谓关键词，就是能概括句子意思的词语，也就是说只看关键词也大概能猜出句子的整体内容。假设句子具有$k$个词$w_1,w_2,\dots,w_k$，那么关键词应该要使得<br/>
+\[P(w_1,w_2,\dots,w_k|w)\sim \frac{P(w_1,w_2,\dots,w_k;w)}{P(w_1,w_2,\dots,w_k)P(w)}\tag{40}\]<br/>
+最大，说白了，就是用词来猜句子的概率最大，而因为句子是预先给定的，因此$P(w_1,w_2,\dots,w_k)$是常数，所以最大化上式左边等价于最大化右边。继续使用朴素假设，根据式$(6)$有<br/>
+\[\frac{P(w_1,w_2,\dots,w_k;w)}{P(w_1,w_2,\dots,w_k)P(w)}=\frac{P(w_1,w)}{P(w_1)P(w)}\frac{P(w_2,w)}{P(w_2)P(w)}\dots \frac{P(w_k,w)}{P(w_k)P(w)}\tag{41}\]<br/>
+代入我们的词向量模型，就得到<br/>
+\[e^{\langle\boldsymbol{v}_1,\boldsymbol{v}_w\rangle}e^{\langle\boldsymbol{v}_2,\boldsymbol{v}_w\rangle}\dots e^{\langle\boldsymbol{v}_k,\boldsymbol{v}_w\rangle}=e^{\left\langle\sum_i \boldsymbol{v}_i, \boldsymbol{v}_w\right\rangle}\tag{42}\]<br/>
+所以最后等价于最大化<br/>
+\[\left\langle\sum_i \boldsymbol{v}_i, \boldsymbol{v}_w\right\rangle\tag{43}\]<br/>
+现在问题就简单了，进来一个句子，把所有词的词向量求和得到句向量，然后句向量跟句子中的每一个词向量做一下内积（也可以考虑算cos得到归一化的结果），降序排列即可。简单粗暴，而且将原来应该是$\mathcal{O}(k^2)$效率的算法降到了$\mathcal{O}(k)$。效果呢？下面是一些例子。</p><blockquote><p><strong>句子：</strong>中央第二环境保护督察组督察浙江省工作动员会在杭州召开。从8月11日开始到9月11日结束，中央环境保护督察组正式入驻浙江展开工作。这也预示着浙江所有的企业将再接下来的一个月内，全部面对中央环境保护督查组的环保督查，也就意味着即将面临被限产、停产、关停的风险。<br/>
+关键词排序：督察组、限产、督查组、动员会、关停、督查、停产、预示、环境保护、即将</p><p><strong>句子：</strong>浙江省义乌市环保局表示，因合金原材料镉含量普遍较高，为控制镉污染，现责令本市部分电镀企业实施停产整治的通知，被通知企业即日起停产整治。据悉，义乌低温锌合金(锌镉合金)基本停产，另外，温州市瓯海区的未经验收的电镀企业也接到通知，自8月18日起无条件停止生产，在验收后方准予生产。新一轮的环保在浙江锌下游企业展开。<br/>
+关键词排序：锌合金、环保局、停产、瓯海区、准予、镉、电镀、责令、义乌市、原材料</p><p><strong>句子：</strong>勃艮第炖牛肉是一道经典的法国名菜，被称为“人类所能烹饪出的最美味的牛肉”。这道菜酒香浓郁，色泽诱人，制作过程也不算麻烦。它的背后有着什么样的故事？怎样做出美味的勃艮第炖牛肉？<br/>
+关键词排序：炖牛肉、酒香、名菜、美味、诱人、勃艮第、浓郁、菜、烹饪、一道</p><p><strong>句子：</strong>天文专家介绍，今年该流星雨将于18日零时30分前后迎来极大，每小时天顶流量在10颗左右，不乏明亮的火流星，我国各地乃至北半球大部分地区都可凭借肉眼观测到。今年最佳观测时间在17日至19日凌晨，幸运的是，届时没有月光干扰，利于观测。<br/>
+关键词排序：流星雨、火流星、北半球、天顶、观测、零时、肉眼、届时、颗、凌晨</p></blockquote><p>可以发现，哪怕是对于长句，这个方案还是挺靠谱的。值得注意的是，虽然简单粗暴，但这种关键词提取方案可不是每种词向量都适用的，glove词向量就不行，因为它的停用词模长更大，所以glove的结果刚刚是相反的：内积（或cos）越小才越可能是关键词。</p><h2 id="句子的相似度">句子的相似度</h2><p>让我们再看一例，这是很多读者都会关心的句子相似度问题，事实上它跟关键词提取是类似的。</p><p>两个句子什么时候是相似的甚至是语义等价的？简单来说就是看了第一个句子我就能知道第二个句子说什么了，反之亦然。这种情况下，两个句子的相关度必然会很大。设句子$S_1$有$k$个词$w_1,w_2,\dots,w_k$，句子$S_2$有$l$个词$w_{k+1},w_{k+2},\dots,w_{k+l}$，利用朴素假设并根据式$(6)$得到<br/>
+\[\frac{P(S_1,S_2)}{P(S_1)P(S_2)}=\prod_{i=1}^k\prod_{j=k+1}^{k+l} \frac{P(w_i,w_j)}{P(w_i)P(w_j)}\tag{44}\]<br/>
+代入我们的词向量模型，得到<br/>
+\[\begin{aligned}\frac{P(S_1,S_2)}{P(S_1)P(S_2)}=&amp;\prod_{i=1}^k\prod_{j=k+1}^{k+l} \frac{P(w_i,w_j)}{P(w_i)P(w_j)}\\<br/>
+=&amp;e^{\sum_{i=1}^k\sum_{j=k+1}^{k+l}\langle\boldsymbol{v}_i,\boldsymbol{v}_j\rangle}\\<br/>
+=&amp;e^{\left\langle\sum_{i=1}^k\boldsymbol{v}_i,\sum_{j=k+1}^{k+l}\boldsymbol{v}_j\right\rangle} \end{aligned}\tag{45}\]<br/>
+所以最后等价于排序<br/>
+\[\left\langle\sum_{i=1}^k\boldsymbol{v}_i,\sum_{j=k+1}^{k+l}\boldsymbol{v}_j\right\rangle\tag{46}\]<br/>
+最终的结果也简单，只需要将两个句子的所有词相加，得到各自的句向量，然后做一下内积（同样的，也可以考虑用cos得到归一化的结果），就得到了两个句子的相关性了。</p><h2 id="句向量">句向量</h2><p>前面两节都暗示了，通过直接对词向量求和就可以得到句向量，那么这种句向量质量如何呢？</p><p>我们做了个简单的实验，通过词向量（不截断版）求和得到的句向量+线性分类器（逻辑回归），可以在情感分类问题上得到81%左右的准确率，如果中间再加一个隐层，结构为输入128（这是词向量维度，句向量是词向量的求和，自然也是同样维度）、隐层64（relu激活）、输出1（2分类），可以得到88%左右的准确率，相比之下，LSTM的准确率是90%左右，可见这种句向量是可圈可点的。要知道，用于实验的这份词向量是用百度百科的语料训练的，也就是说，本身是没有体现情感倾向在里边的，但它依然成功地、简明地挖掘了词语的情感倾向。</p><p>同时，为了求证截断与否对此向量质量的影响，我们用截断版的词向量重复上述实验，结果是逻辑回归最高准确率为82%，同样的三层神经网络，最高准确率为89%，可见，截断（也就是对高频词大大降权），确实能更好地捕捉语义。</p><pre class="line-numbers"><code class="language-python">import pandas as pd
+import jieba
+
+pos = pd.read_excel('pos.xls', header=None)
+neg = pd.read_excel('neg.xls', header=None)
+pos[1] = pos[0].apply(lambda s: jieba.lcut(s, HMM=False))
+neg[1] = neg[0].apply(lambda s: jieba.lcut(s, HMM=False))
+pos[2] = pos[1].apply(w2v.sent2vec) #这个w2v.sentvec函数请参考下一篇
+neg[2] = neg[1].apply(w2v.sent2vec)
+pos = np.hstack([np.array(list(pos[2])), np.array([[1] for i in pos[2]])])
+neg = np.hstack([np.array(list(neg[2])), np.array([[0] for i in neg[2]])])
+data = np.vstack([pos, neg])
+np.random.shuffle(data)
+
+from keras.models import Sequential
+from keras.layers import Dense
+model = Sequential()
+model.add(Dense(64, input_shape=(w2v.word_size,), activation='relu'))
+model.add(Dense(1, activation='sigmoid'))
+
+model.compile(loss='binary_crossentropy',
+              optimizer='adam',
+              metrics=['accuracy'])
+
+batch_size = 128
+model.fit(data[:16000,:w2v.word_size], data[:16000,[w2v.word_size]],
+          batch_size=batch_size,
+          epochs=100,
+          validation_data=(data[16000:,:w2v.word_size], data[16000:,[w2v.word_size]]))
+</code></pre>
+
+
+
+
+
+</div>

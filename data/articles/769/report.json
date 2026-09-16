@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "769",
+    "title": "R136a1,300倍太阳质量的怪兽星",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/769",
+    "date": "2010-07-29",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 0,
+    "display_formula_count": 0,
+    "image_count": 6,
+    "heading_count": 0,
+    "code_block_count": 0,
+    "source_text_sha256": "fe97d5b1670c8a87bf62d3eab6996c588d4efb9f4a2c008337fe7916780e89b8",
+    "output_text_sha256": "fe97d5b1670c8a87bf62d3eab6996c588d4efb9f4a2c008337fe7916780e89b8",
+    "latex_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "body_sha256": "b50d92c46183f961936789e6aa0a5bc03942ac86555fe623a812ac326b2840b4",
+    "converter_version": 1,
+    "markdown_sha256": "8f436ff37091c88891f370a429098b1e92a4620177adc30c37dbc0182d03695f"
+  },
+  "fetched_at": "2026-09-14T14:33:36+00:00",
+  "source_snapshot_sha256": "4d3203804b1ce1b179917c742a12aaf406429daa27e492b45b6c252420c02c5c",
+  "images": {},
+  "local_only": true
+}

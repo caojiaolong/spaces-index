@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "4356",
+    "title": "科学空间添加新域名kexue.fm",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/4356",
+    "date": "2017-04-23",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 0,
+    "display_formula_count": 0,
+    "image_count": 0,
+    "heading_count": 0,
+    "code_block_count": 0,
+    "source_text_sha256": "f941729e4b1693346f331165c4dac8a768f0b5778d2ca810e96dcf1d88b02e5c",
+    "output_text_sha256": "f941729e4b1693346f331165c4dac8a768f0b5778d2ca810e96dcf1d88b02e5c",
+    "latex_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "body_sha256": "62261e28155e2b9cb730c2f81182297d7be93ae1ec6acde78a1f1f075dc2ea31",
+    "converter_version": 1,
+    "markdown_sha256": "8ec49d4738a4ba4a5b9257c20294bc616f744be7a68c394a4ee00d1f3b74c93b"
+  },
+  "fetched_at": "2026-09-14T13:33:01+00:00",
+  "source_snapshot_sha256": "b9f66e24b4a8341b85968cd217681d30bf3b8b8d6f70e531700912994b3937c5",
+  "images": {},
+  "local_only": true
+}

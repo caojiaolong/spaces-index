@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "32",
+    "title": "太空中的巨影——日食间的月球影子",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/32",
+    "date": "2009-07-23",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 0,
+    "display_formula_count": 0,
+    "image_count": 3,
+    "heading_count": 0,
+    "code_block_count": 0,
+    "source_text_sha256": "03c3271397c32a616ba4d31bc174aa6f4c2bb24164887ef24bb6d27b8911f454",
+    "output_text_sha256": "03c3271397c32a616ba4d31bc174aa6f4c2bb24164887ef24bb6d27b8911f454",
+    "latex_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "body_sha256": "71b7ee907df99d15e169b39df868aea26099b3a2cc18f2c4f95f994ddeac7748",
+    "converter_version": 1,
+    "markdown_sha256": "d1428abbdffcb72c5fd10c7a0ea65176516c876dbe0f50928bf60d2e6e116928"
+  },
+  "fetched_at": "2026-09-14T15:04:21+00:00",
+  "source_snapshot_sha256": "412e9118f39dad517014f9acb41a65514fe593f5aa3ccddccff1159372724547",
+  "images": {},
+  "local_only": true
+}

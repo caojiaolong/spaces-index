@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "11750",
+    "title": "DeepSeek V4的tid2eid是怎么来的？",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/11750",
+    "date": "2026-05-15",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 26,
+    "display_formula_count": 2,
+    "image_count": 0,
+    "heading_count": 5,
+    "code_block_count": 1,
+    "source_text_sha256": "04725482249ed9f457f588728a9e13c5c6a9f202e4e69e77a09eb625ca653a09",
+    "output_text_sha256": "04725482249ed9f457f588728a9e13c5c6a9f202e4e69e77a09eb625ca653a09",
+    "latex_sha256": "203785d5c32747d1bbad76e165bb5c2929f3ae267f61723b955e77571c373c75",
+    "body_sha256": "7d309e5956e35f96949b62cdd847f8d4292ed9687badb8f4d0ff55c43773cc36",
+    "converter_version": 1,
+    "markdown_sha256": "6108c1125746d841992b08edf74822de4727ff4162c66d44df8cdd3590c8ed6f"
+  },
+  "fetched_at": "2026-09-14T12:31:24+00:00",
+  "source_snapshot_sha256": "4786c152e1c7af5ac5961cbc4f5e8006a450c6c4a7fbfc4861711ab875205cd0",
+  "images": {},
+  "local_only": true
+}

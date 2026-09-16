@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "9070",
+    "title": "logsumexp运算的几个不等式",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/9070",
+    "date": "2022-05-10",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 57,
+    "display_formula_count": 21,
+    "image_count": 0,
+    "heading_count": 5,
+    "code_block_count": 0,
+    "source_text_sha256": "1d5fdd2a2116e65d89467bada0c148bc64b8e1272918576e14fb0c6ec5cff29f",
+    "output_text_sha256": "1d5fdd2a2116e65d89467bada0c148bc64b8e1272918576e14fb0c6ec5cff29f",
+    "latex_sha256": "69c0395a836e84f4c6bc46631d39cf067308ad5e6bcd7d417a1ebdc11722237d",
+    "body_sha256": "558e8559f60353e0dcd75ad02aa6b98408614dc697123706b085a79f8e6f0552",
+    "converter_version": 1,
+    "markdown_sha256": "1fd3644c8ac0f855b3cd1fff7ff816e52359da48ead6f78c4ca894299d981d9d"
+  },
+  "fetched_at": "2026-09-14T12:59:39+00:00",
+  "source_snapshot_sha256": "d9a554199fd9bcc4af5d15c0ab67adc471f5e85ac5ad74b1c14f24d7f22b8adf",
+  "images": {},
+  "local_only": true
+}

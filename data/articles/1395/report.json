@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "1395",
+    "title": "一道比较函数大小的题目",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/1395",
+    "date": "2011-07-08",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 22,
+    "display_formula_count": 0,
+    "image_count": 0,
+    "heading_count": 0,
+    "code_block_count": 0,
+    "source_text_sha256": "7fb8740442a1bd8cf1c520ffcf04f5b2ffa84198fc5ee4f822457cd70045ea59",
+    "output_text_sha256": "7fb8740442a1bd8cf1c520ffcf04f5b2ffa84198fc5ee4f822457cd70045ea59",
+    "latex_sha256": "2540a46f9975ab75928f4a500efb3ed68372f69802162d2c6c986bd8229a1700",
+    "body_sha256": "de77ffd65231e14fde3df743c265c93f064994149020a687561242498c9340ab",
+    "converter_version": 1,
+    "markdown_sha256": "92d5ca437e02ac9a165c58c738174e996993ec241326de6fd9fa2e0d1d6af06a"
+  },
+  "fetched_at": "2026-09-14T14:19:53+00:00",
+  "source_snapshot_sha256": "ebc59bf1dace9df07a30d006727ecd2d0783f849a409a0670856efa879a3ecd9",
+  "images": {},
+  "local_only": true
+}

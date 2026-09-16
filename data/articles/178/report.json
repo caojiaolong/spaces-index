@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "178",
+    "title": "【NASA每日一图】撞击目标：凯布斯月球坑",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/178",
+    "date": "2009-10-08",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 0,
+    "display_formula_count": 0,
+    "image_count": 1,
+    "heading_count": 0,
+    "code_block_count": 0,
+    "source_text_sha256": "2213ce161a29c36be57893c4eb72276224d0a744b8286df37ae0afce8e829260",
+    "output_text_sha256": "2213ce161a29c36be57893c4eb72276224d0a744b8286df37ae0afce8e829260",
+    "latex_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "body_sha256": "fc61f9b849ba3e0cf3e7032363073f8b45cf8e990972d06adcd26e40a5e6ce61",
+    "converter_version": 1,
+    "markdown_sha256": "484b4dda40cabaa07ece7427fae3222dd552412d8a86442516b622e8a9eeb4fe"
+  },
+  "fetched_at": "2026-09-14T14:49:00+00:00",
+  "source_snapshot_sha256": "87a99c7a0f3000b93f1d6539f8afdd523c27b2d22eb64bc8179a5607ccfd984d",
+  "images": {},
+  "local_only": true
+}

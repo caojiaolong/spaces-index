@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "10320",
+    "title": "让MathJax更好地兼容谷歌翻译和延时加载",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/10320",
+    "date": "2024-08-15",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 0,
+    "display_formula_count": 0,
+    "image_count": 3,
+    "heading_count": 6,
+    "code_block_count": 8,
+    "source_text_sha256": "cdfda3497ea9bb3f78b392e6cf4fe9ba2a8bf2e0b1645f27044391b4030cdf6d",
+    "output_text_sha256": "cdfda3497ea9bb3f78b392e6cf4fe9ba2a8bf2e0b1645f27044391b4030cdf6d",
+    "latex_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "body_sha256": "d9e9933d4bd70383d785df3f2cb611ca453c849a7e14b05aa09e1ae12d4eec42",
+    "converter_version": 1,
+    "markdown_sha256": "0bb5b241be64ccda0514f1ef9888eed86c05e8ee2e633ef852e9e88e5214bbb1"
+  },
+  "fetched_at": "2026-09-14T12:47:05+00:00",
+  "source_snapshot_sha256": "2f700897bb4109d0e6e42fdcdaaa97eb77a5c0bcc2226dacebee7d7cc73bc6af",
+  "images": {},
+  "local_only": true
+}

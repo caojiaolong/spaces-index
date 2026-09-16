@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "7947",
+    "title": "层次分解位置编码，让BERT可以处理超长文本",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/7947",
+    "date": "2020-12-04",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 50,
+    "display_formula_count": 3,
+    "image_count": 2,
+    "heading_count": 5,
+    "code_block_count": 0,
+    "source_text_sha256": "0d0af2e722e04731901df034d47cd1bf7a154d80e57f72e3cd26dbae4ce62fc4",
+    "output_text_sha256": "0d0af2e722e04731901df034d47cd1bf7a154d80e57f72e3cd26dbae4ce62fc4",
+    "latex_sha256": "d0d7131b38a323775c40041f8acbd5a63964a795560cef5c14f4e75ec81928b7",
+    "body_sha256": "9309b6674c6dc9ecc8f20a2e7b5e8b86f5f1c62ef15f2b4517c16b2d5949627a",
+    "converter_version": 1,
+    "markdown_sha256": "6038f522f08e7c82741ddbf5a4fe5232c4591a6fc72e4cfbab90f90f8207e8e1"
+  },
+  "fetched_at": "2026-09-14T13:09:43+00:00",
+  "source_snapshot_sha256": "0dcac1aa61674e104f17eacee95cc59f660dc61a3057cca453d0e5e83c353a77",
+  "images": {},
+  "local_only": true
+}

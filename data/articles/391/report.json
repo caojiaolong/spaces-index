@@ -1,0 +1,39 @@
+{
+  "metadata": {
+    "id": "391",
+    "title": "【NASA每日一图】牧羊卫星Prometheus",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/391",
+    "date": "2010-02-01",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "source_dom_exact": true,
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "attributes_exact": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 0,
+    "display_formula_count": 0,
+    "image_count": 1,
+    "heading_count": 0,
+    "code_block_count": 0,
+    "source_text_sha256": "b8472f35d6c90a2c2a37783b942acec2847f809094aad3f2da0a1021080ff00f",
+    "output_text_sha256": "b8472f35d6c90a2c2a37783b942acec2847f809094aad3f2da0a1021080ff00f",
+    "latex_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "body_sha256": "9050ebe54d8349a871f1b4f4cecb3bea1b27d0843b091324d45ff2fd57af4c70",
+    "converter_version": 1,
+    "format": "html-v1",
+    "source_warnings": [],
+    "fallback_reason": "Unsupported body element: trong",
+    "markdown_sha256": "05e57d27684169af80981c8b1e81808606efefc48f77ca2abc3254c9765cded6"
+  },
+  "fetched_at": "2026-09-14T14:42:21+00:00",
+  "source_snapshot_sha256": "eddd47102ca7e246d28ebc5403d21a8a094ed8d6d5746f0fb5262bb6f71af966",
+  "images": {},
+  "local_only": true
+}

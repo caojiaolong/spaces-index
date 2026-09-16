@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "1706",
+    "title": "折腾windows 8和ubuntu 12",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/1706",
+    "date": "2012-08-30",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 0,
+    "display_formula_count": 0,
+    "image_count": 0,
+    "heading_count": 0,
+    "code_block_count": 0,
+    "source_text_sha256": "495b07e855e7f67eea64e34049e45a3cfe8b28965651c61674ac42ba3d9c34fb",
+    "output_text_sha256": "495b07e855e7f67eea64e34049e45a3cfe8b28965651c61674ac42ba3d9c34fb",
+    "latex_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "body_sha256": "bf5e960e1e3a27903c679bc181acf364fdfbae0fea688e0f2903a0ac286d6e30",
+    "converter_version": 1,
+    "markdown_sha256": "1445102b84320220e4910ecf2257fb369e34b2dc4b0af4de570c99bb2065ea8e"
+  },
+  "fetched_at": "2026-09-14T14:10:55+00:00",
+  "source_snapshot_sha256": "8132c1839b2ded6d0e2385472a4d0d399afddad838a1ecf08561f64ae131d7f2",
+  "images": {},
+  "local_only": true
+}

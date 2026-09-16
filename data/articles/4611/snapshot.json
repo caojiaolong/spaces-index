@@ -1,0 +1,17 @@
+{
+  "metadata": {
+    "id": "4611",
+    "title": "基于fine tune的图像分类（百度分狗竞赛）",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/4611",
+    "date": "2017-10-13",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "fetched_at": "2026-09-14T13:30:33+00:00",
+  "source_snapshot_sha256": "2d8d1e063cab25b37cd5bb9d1a2f8dbcafee2ba09f60ec2efb4f5ca39d4bf069",
+  "validators": {
+    "etag": null,
+    "last_modified": null
+  }
+}

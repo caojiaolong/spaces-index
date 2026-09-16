@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "1329",
+    "title": "《教材如何写》:BoJone的粗浅看法",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/1329",
+    "date": "2011-04-19",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 3,
+    "display_formula_count": 1,
+    "image_count": 0,
+    "heading_count": 0,
+    "code_block_count": 0,
+    "source_text_sha256": "3112f6787af3f8d2cc7ce1c2f8cce04dac257ca728e09abaab44d48354d1631d",
+    "output_text_sha256": "3112f6787af3f8d2cc7ce1c2f8cce04dac257ca728e09abaab44d48354d1631d",
+    "latex_sha256": "c85bc7fb698a909fda149f964fef77e49b3be752d7a0985ad125c6d33aad0405",
+    "body_sha256": "c2e93ffa3629ddbaa6c333698ec8722f02371c25acb008b4c24becb01cf50464",
+    "converter_version": 1,
+    "markdown_sha256": "234cf3189c4d81deebe0259db2f537c5c28bdfd594fef43ff0c3f29aeedee4ce"
+  },
+  "fetched_at": "2026-09-14T14:22:15+00:00",
+  "source_snapshot_sha256": "7f97ed9ea8b1c3ff63ded7259acb5c4bd11bb532a171fa476a89e813f7b641dc",
+  "images": {},
+  "local_only": true
+}

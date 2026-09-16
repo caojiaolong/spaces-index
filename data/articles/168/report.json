@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "168",
+    "title": "【NASA每日一图】水星上的双环陨石坑",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/168",
+    "date": "2009-10-07",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 0,
+    "display_formula_count": 0,
+    "image_count": 1,
+    "heading_count": 0,
+    "code_block_count": 0,
+    "source_text_sha256": "c76529f937b4df51b8a09e7c8f40d6ee864a61a4d27815bdf3cbbcd4371ca9c2",
+    "output_text_sha256": "c76529f937b4df51b8a09e7c8f40d6ee864a61a4d27815bdf3cbbcd4371ca9c2",
+    "latex_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "body_sha256": "d14144ed668946b0c24e496edb180d29f4224ecce84705fc62ea3cf09bcd97ea",
+    "converter_version": 1,
+    "markdown_sha256": "849a759a0de70cb707edf16dd65b2da87766312d38a3a7a10a66876a0b4b6704"
+  },
+  "fetched_at": "2026-09-14T14:49:27+00:00",
+  "source_snapshot_sha256": "1d4531b49d523d1774e1659b8794737b1d0d66e06eb1ad99e4366f610e819c5b",
+  "images": {},
+  "local_only": true
+}

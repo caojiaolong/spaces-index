@@ -1,0 +1,45 @@
+{
+  "version": 1,
+  "images": {
+    "https://spaces.ac.cn/usr/uploads/2018/07/2563151005.png": {
+      "status": "cached",
+      "file": "03b185bfdf24a7afb8f973df00c934586ce1e159689da26b95c32ba0f2eb4ff6.png",
+      "sha256": "03b185bfdf24a7afb8f973df00c934586ce1e159689da26b95c32ba0f2eb4ff6",
+      "bytes": 1175689,
+      "checked_at": "2026-09-16T09:20:01+00:00",
+      "fetched_url": "https://spaces.ac.cn/usr/uploads/2018/07/2563151005.png",
+      "etag": "\"5b4eeca9-11f089\"",
+      "last_modified": "Wed, 18 Jul 2018 07:30:49 GMT"
+    },
+    "https://spaces.ac.cn/usr/uploads/2018/07/1171118784.png": {
+      "status": "cached",
+      "file": "0249a88f93d73c47cc46cf79fdfd2cb3f38a26446749365689d5641d6f3c3910.png",
+      "sha256": "0249a88f93d73c47cc46cf79fdfd2cb3f38a26446749365689d5641d6f3c3910",
+      "bytes": 1154842,
+      "checked_at": "2026-09-16T09:20:09+00:00",
+      "fetched_url": "https://spaces.ac.cn/usr/uploads/2018/07/1171118784.png",
+      "etag": "\"5b4eecab-119f1a\"",
+      "last_modified": "Wed, 18 Jul 2018 07:30:51 GMT"
+    },
+    "https://spaces.ac.cn/usr/uploads/2018/07/3269996360.png": {
+      "status": "cached",
+      "file": "0467cabafdac484684a236f8a1efe3c36508ca3cff1d48dcfd3f97f92e7acaaf.png",
+      "sha256": "0467cabafdac484684a236f8a1efe3c36508ca3cff1d48dcfd3f97f92e7acaaf",
+      "bytes": 1157892,
+      "checked_at": "2026-09-16T09:20:16+00:00",
+      "fetched_url": "https://spaces.ac.cn/usr/uploads/2018/07/3269996360.png",
+      "etag": "\"5b4eed24-11ab04\"",
+      "last_modified": "Wed, 18 Jul 2018 07:32:52 GMT"
+    },
+    "https://spaces.ac.cn/usr/uploads/2018/07/1561872147.png": {
+      "status": "cached",
+      "file": "3375243f5eedc55f0ed965d2c13cfc4014897277411b7fac92a2fb37dc217301.png",
+      "sha256": "3375243f5eedc55f0ed965d2c13cfc4014897277411b7fac92a2fb37dc217301",
+      "bytes": 1165894,
+      "checked_at": "2026-09-16T09:20:23+00:00",
+      "fetched_url": "https://spaces.ac.cn/usr/uploads/2018/07/1561872147.png",
+      "etag": "\"5b4eed26-11ca46\"",
+      "last_modified": "Wed, 18 Jul 2018 07:32:54 GMT"
+    }
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "7809",
+    "title": "BERT可以上几年级了？Seq2Seq“硬刚”小学数学应用题",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/7809",
+    "date": "2020-10-19",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 2,
+    "display_formula_count": 2,
+    "image_count": 1,
+    "heading_count": 4,
+    "code_block_count": 2,
+    "source_text_sha256": "6fc318add9f8113c18aec0e6041f7a35dde8244ce03a3fe7f52efe23c89b77b2",
+    "output_text_sha256": "6fc318add9f8113c18aec0e6041f7a35dde8244ce03a3fe7f52efe23c89b77b2",
+    "latex_sha256": "469663710c34f0d550e80c5e4a107ff06c120997ff8816319098e5c35faf4563",
+    "body_sha256": "1e120bf04396084b16483e82bad43df7a73a7d1f6acfc135adfa5d8815c42ddb",
+    "converter_version": 1,
+    "markdown_sha256": "620fb20f357d0e163001b754ba40300b25cc935b6d80ed162a82165f602366b9"
+  },
+  "fetched_at": "2026-09-14T13:10:42+00:00",
+  "source_snapshot_sha256": "479d4e6abc9e787c1711eb35eb423f305448dc43c82d1b2ece3cd03027d634af",
+  "images": {},
+  "local_only": true
+}

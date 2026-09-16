@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "6818",
+    "title": "思考：两个椭圆片能粘合成一个立体吗？",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/6818",
+    "date": "2019-07-21",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 79,
+    "display_formula_count": 17,
+    "image_count": 7,
+    "heading_count": 5,
+    "code_block_count": 1,
+    "source_text_sha256": "34290b49719eb560e590bb18814fc54e7d06d0a1ee02a3bd80f7a30ccf27782c",
+    "output_text_sha256": "34290b49719eb560e590bb18814fc54e7d06d0a1ee02a3bd80f7a30ccf27782c",
+    "latex_sha256": "16757c9f1b59bc820b27126fed1e1f78ce726fefbea3cc67aef9fe37bd1733d6",
+    "body_sha256": "a9ae74039c6c41bc348d13a7bf1f56ab979a3c835d7d8ad4c5b90dcbfb1416bf",
+    "converter_version": 1,
+    "markdown_sha256": "63ec84b255f319de1e1eb6c2fc5e2f333341c3713ef1f6327a0397b263728197"
+  },
+  "fetched_at": "2026-09-14T13:18:31+00:00",
+  "source_snapshot_sha256": "143b809c155b55c7f640ee2c6e63cee354ca2b41bb874bdf540a7bbbe8000770",
+  "images": {},
+  "local_only": true
+}

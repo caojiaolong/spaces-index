@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "3086",
+    "title": " [转载] 做数学一定要是天才吗？",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/3086",
+    "date": "2014-11-17",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 0,
+    "display_formula_count": 0,
+    "image_count": 0,
+    "heading_count": 0,
+    "code_block_count": 0,
+    "source_text_sha256": "394941cd74662ce16faaaead8634492b21acf2213da2af0e02f96c5255fedc3e",
+    "output_text_sha256": "394941cd74662ce16faaaead8634492b21acf2213da2af0e02f96c5255fedc3e",
+    "latex_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "body_sha256": "881e5e6246c6c517b2b3682894c10b3b847c6a7af9f7d0c1726cc538368175a7",
+    "converter_version": 1,
+    "markdown_sha256": "1c8ab96bab027320c05ecf9b3330dd069b977971a1ff42dc66f8f6713a84195e"
+  },
+  "fetched_at": "2026-09-14T13:49:39+00:00",
+  "source_snapshot_sha256": "209740f70536afce6e20c56d79ccb0340d4222a2f2571a2ef1f56f3f8d9615bb",
+  "images": {},
+  "local_only": true
+}

@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "8128",
+    "title": "Seq2Seq重复解码现象的理论分析尝试",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/8128",
+    "date": "2021-01-26",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 119,
+    "display_formula_count": 15,
+    "image_count": 0,
+    "heading_count": 9,
+    "code_block_count": 0,
+    "source_text_sha256": "ac545452e49c9016b5039c553f01b39641475f6dd7b6f32462244025c30e4933",
+    "output_text_sha256": "ac545452e49c9016b5039c553f01b39641475f6dd7b6f32462244025c30e4933",
+    "latex_sha256": "5fc410ec30bd03fa175b8aa463a8ee408b2e22324ee7c83970a045024d01cd80",
+    "body_sha256": "ac5690d4c0f9db8b256c599db56673e7443b07d4cb3cc0792acb9de5484904b6",
+    "converter_version": 1,
+    "markdown_sha256": "23de9203bc31031d0abbefc1c4e8148d467a5faad460e26794bccfbdfb1afffa"
+  },
+  "fetched_at": "2026-09-14T13:08:28+00:00",
+  "source_snapshot_sha256": "7cacd6de1de7bcba2d947ce82314de4d8c862c9349f2dd0d31e82c794746d49e",
+  "images": {},
+  "local_only": true
+}

@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "3749",
+    "title": "路径积分系列：1.我的毕业论文",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/3749",
+    "date": "2016-05-30",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 0,
+    "display_formula_count": 0,
+    "image_count": 0,
+    "heading_count": 0,
+    "code_block_count": 0,
+    "source_text_sha256": "398f2b4079cd0c1f331f79018c0303fc2990e92ac74279bc5d69bec1aaf5dadd",
+    "output_text_sha256": "398f2b4079cd0c1f331f79018c0303fc2990e92ac74279bc5d69bec1aaf5dadd",
+    "latex_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "body_sha256": "197d2146f4e9c3081a36678023e00115b16c87b1c5443f90312e42f3317e715c",
+    "converter_version": 1,
+    "markdown_sha256": "cc82c63301a54916bbef991692c0f1fd62d66b8712fef9704b8184049b7ef8d4"
+  },
+  "fetched_at": "2026-09-14T13:40:58+00:00",
+  "source_snapshot_sha256": "e838bb10cf9548386975c57754db594000ad3c155540ea90024c727f76eac279",
+  "images": {},
+  "local_only": true
+}

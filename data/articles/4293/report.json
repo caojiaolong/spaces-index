@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "4293",
+    "title": "文本情感分类（四）：更好的损失函数",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/4293",
+    "date": "2017-03-30",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 19,
+    "display_formula_count": 5,
+    "image_count": 0,
+    "heading_count": 5,
+    "code_block_count": 2,
+    "source_text_sha256": "385fdfadfdb98dfbe6506651df195bb83dc5e9d7f6ce172a47d2c1bb261cf618",
+    "output_text_sha256": "385fdfadfdb98dfbe6506651df195bb83dc5e9d7f6ce172a47d2c1bb261cf618",
+    "latex_sha256": "118d97f1ae465d78c81c9cca5f607ed5693e83619c166d327e5af75c9b89374b",
+    "body_sha256": "1cdce7a3ac6efa6f7e6c392b49ffda425f9cb9e359bf12d020b257a877da9ee3",
+    "converter_version": 1,
+    "markdown_sha256": "3e1e9516d4e81a8360a0685f6e77048530e66f2d5fe5b489bd2ceb5e8d73afc4"
+  },
+  "fetched_at": "2026-09-14T13:33:39+00:00",
+  "source_snapshot_sha256": "c2866ef9779d19ace70baec95ac5b7af7d44e2d5f6c3b2bfb442baf5d1f22378",
+  "images": {},
+  "local_only": true
+}

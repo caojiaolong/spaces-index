@@ -1,0 +1,17 @@
+{
+  "metadata": {
+    "id": "7161",
+    "title": "用bert4keras做三元组抽取",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/7161",
+    "date": "2020-01-03",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "fetched_at": "2026-09-14T13:15:53+00:00",
+  "source_snapshot_sha256": "63be287ed4edce40ff14e1fb796701ba27992cd16ad5399d28a4d4f81b26ea5d",
+  "validators": {
+    "etag": null,
+    "last_modified": null
+  }
+}

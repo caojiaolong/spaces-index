@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "1385",
+    "title": "cos 1°的根式表达式",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/1385",
+    "date": "2011-06-26",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 14,
+    "display_formula_count": 6,
+    "image_count": 0,
+    "heading_count": 0,
+    "code_block_count": 0,
+    "source_text_sha256": "ef8c40fbaef6a37436e580cdc2c07ba958bd32c69a69f7545dba7246fb3634ff",
+    "output_text_sha256": "ef8c40fbaef6a37436e580cdc2c07ba958bd32c69a69f7545dba7246fb3634ff",
+    "latex_sha256": "96e64537b31d19c923092ec735c199d823953039e072baa36337f70e42c6da27",
+    "body_sha256": "f9916fa2100941cf3fe32c085f0c0602a704db0c48ed438f7c3b1f02498e1b02",
+    "converter_version": 1,
+    "markdown_sha256": "1ed5b133a10b134058a75756bc0734f74fba364144ee08dcd909213d0b97dddb"
+  },
+  "fetched_at": "2026-09-14T14:20:22+00:00",
+  "source_snapshot_sha256": "65a339929384fe5de55f489e8a33eaf05a3eb8b29b2de72104f2ca0df55454d2",
+  "images": {},
+  "local_only": true
+}

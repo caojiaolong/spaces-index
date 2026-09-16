@@ -1,0 +1,45 @@
+{
+  "version": 1,
+  "images": {
+    "https://spaces.ac.cn/usr/uploads/2022/10/408695331.png": {
+      "status": "cached",
+      "file": "c6dd6bcdfaf28f3af78c998d0434455d6c37304da6bea7c0f33880001248cb4f.png",
+      "sha256": "c6dd6bcdfaf28f3af78c998d0434455d6c37304da6bea7c0f33880001248cb4f",
+      "bytes": 13783,
+      "checked_at": "2026-09-16T07:52:12+00:00",
+      "fetched_url": "https://spaces.ac.cn/usr/uploads/2022/10/408695331.png",
+      "etag": "\"6342d719-35d7\"",
+      "last_modified": "Sun, 09 Oct 2022 14:13:45 GMT"
+    },
+    "https://spaces.ac.cn/usr/uploads/2022/10/2196285232.png": {
+      "status": "cached",
+      "file": "62e7565d42946d4e0b4a5ea09fcb9813d6732387849e0ea973ae60e2f547a4a9.png",
+      "sha256": "62e7565d42946d4e0b4a5ea09fcb9813d6732387849e0ea973ae60e2f547a4a9",
+      "bytes": 13047,
+      "checked_at": "2026-09-16T07:52:17+00:00",
+      "fetched_url": "https://spaces.ac.cn/usr/uploads/2022/10/2196285232.png",
+      "etag": "\"6342d769-32f7\"",
+      "last_modified": "Sun, 09 Oct 2022 14:15:05 GMT"
+    },
+    "https://spaces.ac.cn/usr/uploads/2022/10/2273806394.png": {
+      "status": "cached",
+      "file": "ce917492d5020afe65a0006c63b576d9e2bfc7b7739ff65b01ffda8314d34390.png",
+      "sha256": "ce917492d5020afe65a0006c63b576d9e2bfc7b7739ff65b01ffda8314d34390",
+      "bytes": 16937,
+      "checked_at": "2026-09-16T07:52:22+00:00",
+      "fetched_url": "https://spaces.ac.cn/usr/uploads/2022/10/2273806394.png",
+      "etag": "\"6342d7a2-4229\"",
+      "last_modified": "Sun, 09 Oct 2022 14:16:02 GMT"
+    },
+    "https://spaces.ac.cn/usr/uploads/2022/10/3692376717.png": {
+      "status": "cached",
+      "file": "4ca98056c33684afe2999292ff1b81b93fed11d87536d494a54d71a903a49cec.png",
+      "sha256": "4ca98056c33684afe2999292ff1b81b93fed11d87536d494a54d71a903a49cec",
+      "bytes": 16923,
+      "checked_at": "2026-09-16T07:52:27+00:00",
+      "fetched_url": "https://spaces.ac.cn/usr/uploads/2022/10/3692376717.png",
+      "etag": "\"6342d7a2-421b\"",
+      "last_modified": "Sun, 09 Oct 2022 14:16:02 GMT"
+    }
+  }
+}

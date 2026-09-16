@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "8847",
+    "title": "CoSENT（一）：比Sentence-BERT更有效的句向量方案",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/8847",
+    "date": "2022-01-06",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 51,
+    "display_formula_count": 8,
+    "image_count": 2,
+    "heading_count": 12,
+    "code_block_count": 0,
+    "source_text_sha256": "573a47ed8fb40c1375a44897cbe8212b3bbab8c3abc453e05be865124f055331",
+    "output_text_sha256": "573a47ed8fb40c1375a44897cbe8212b3bbab8c3abc453e05be865124f055331",
+    "latex_sha256": "5e16efd958bb0a879add036f162f3957d6f30cfaf0553bca08cb28a5e81ff1b2",
+    "body_sha256": "c1f4cb876790c1000e6495cc03596f568b3c3cfb060fbfc970117e4a04c9b091",
+    "converter_version": 1,
+    "markdown_sha256": "56b7458ea03acc53141ed443ba93c33575c85a69d3ef24229a0593fdeab7c21a"
+  },
+  "fetched_at": "2026-09-14T13:02:10+00:00",
+  "source_snapshot_sha256": "8b65ad17f8fb5a7db5324f200dce8afcb1b5e903da34fa1e8b77982978bcb450",
+  "images": {},
+  "local_only": true
+}

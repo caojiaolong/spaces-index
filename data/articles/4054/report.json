@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "4054",
+    "title": "【外微分浅谈】2. 反对称的威力",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/4054",
+    "date": "2016-11-04",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 32,
+    "display_formula_count": 11,
+    "image_count": 0,
+    "heading_count": 2,
+    "code_block_count": 0,
+    "source_text_sha256": "52583bb6a0190b1229fde991de06e72c3c672136170953c3e546607728b60cae",
+    "output_text_sha256": "52583bb6a0190b1229fde991de06e72c3c672136170953c3e546607728b60cae",
+    "latex_sha256": "d4e72d58580fc89625b35643900cef5513a52c122b73a324ebf92c4d837c5f63",
+    "body_sha256": "6ae3fcd6e38867259e23b1bea740d24879040659eb639ca08332569d9ead966d",
+    "converter_version": 1,
+    "markdown_sha256": "b67100e9e1a198d01919ff7b11fc739936205eabc68514f5962b53579b17b06f"
+  },
+  "fetched_at": "2026-09-14T13:36:55+00:00",
+  "source_snapshot_sha256": "4aab3a996eb5222ab882fec9746801d87bbef2a6d89e3770ab0f22f5f304dac7",
+  "images": {},
+  "local_only": true
+}

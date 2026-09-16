@@ -1,0 +1,22 @@
+{
+  "version": 1,
+  "images": {
+    "https://bbs.spaces.ac.cn/my-templates/bbpress-forum/images/bbpress.png": {
+      "status": "failed",
+      "checked_at": "2026-09-16T13:10:29+00:00",
+      "error": "HTTPSConnectionPool(host='bbs.spaces.ac.cn', port=443): Max retries exceeded with url: /robots.txt (Caused by NameResolutionError(\"HTTPSConnection(host='bbs.spaces.ac.cn', port=443): Failed to resolve 'bbs.spaces.ac.cn' ([Errno 11001] getaddrinfo failed)\"))",
+      "retry_not_before": "2026-09-17T13:10:29+00:00",
+      "server_deferred": false
+    },
+    "https://spaces.ac.cn/usr/uploads/2010/01/2543369297.jpg": {
+      "status": "cached",
+      "file": "9c59b6dcf9487c2e2743885545dd1a001fa8695c98f6996a50874309cdddffae.jpg",
+      "sha256": "9c59b6dcf9487c2e2743885545dd1a001fa8695c98f6996a50874309cdddffae",
+      "bytes": 42340,
+      "checked_at": "2026-09-16T12:24:38+00:00",
+      "fetched_url": "https://spaces.ac.cn/usr/uploads/2010/01/2543369297.jpg",
+      "etag": "\"5a6ec747-a564\"",
+      "last_modified": "Mon, 29 Jan 2018 07:03:35 GMT"
+    }
+  }
+}

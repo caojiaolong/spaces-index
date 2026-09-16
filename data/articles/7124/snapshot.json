@@ -1,0 +1,17 @@
+{
+  "metadata": {
+    "id": "7124",
+    "title": "基于Conditional Layer Normalization的条件文本生成",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/7124",
+    "date": "2019-12-14",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "fetched_at": "2026-09-14T13:16:13+00:00",
+  "source_snapshot_sha256": "d612542b3c2d97c3b576d6b09822d5106a21c8df7f4d0a6e6817e0e13373d00b",
+  "validators": {
+    "etag": null,
+    "last_modified": null
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "701",
+    "title": "《向量》系列——1.向心力公式证明",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/701",
+    "date": "2010-07-15",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 15,
+    "display_formula_count": 7,
+    "image_count": 1,
+    "heading_count": 0,
+    "code_block_count": 0,
+    "source_text_sha256": "f31f8812ad4bfcd8093463add8e61a0428d39e0482710d31399df2d23fe3a1ea",
+    "output_text_sha256": "f31f8812ad4bfcd8093463add8e61a0428d39e0482710d31399df2d23fe3a1ea",
+    "latex_sha256": "c7993c60a620ab18137a468600705bf9f1d02e4276822148072f9cdaadb70fcb",
+    "body_sha256": "d01d80c7c9c98db3bbdb21638b10230e2b7d6c390932bd98f2c88d8967f18ce2",
+    "converter_version": 1,
+    "markdown_sha256": "2386c6c021a1cb401ca75f44d50a227bfc629fe9a36ed03cc904c6e9b4ee72cf"
+  },
+  "fetched_at": "2026-09-14T14:35:09+00:00",
+  "source_snapshot_sha256": "d3d6b6deda8c4682ae7301fc2cfda64f6be3430a876da60d7532f8986337b12d",
+  "images": {},
+  "local_only": true
+}

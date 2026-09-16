@@ -1,0 +1,17 @@
+{
+  "metadata": {
+    "id": "10001",
+    "title": "配置不同的学习率，LoRA还能再涨一点？",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/10001",
+    "date": "2024-02-27",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "fetched_at": "2026-09-14T12:49:34+00:00",
+  "source_snapshot_sha256": "9367454a16cd648bfa65774c087558582575ca7c374531062620b5fad0c62303",
+  "validators": {
+    "etag": null,
+    "last_modified": null
+  }
+}

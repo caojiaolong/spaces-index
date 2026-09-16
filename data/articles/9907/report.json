@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "9907",
+    "title": "写了个刷论文的辅助网站：Cool Papers",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/9907",
+    "date": "2023-12-25",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 0,
+    "display_formula_count": 0,
+    "image_count": 0,
+    "heading_count": 3,
+    "code_block_count": 0,
+    "source_text_sha256": "3724f90a86fadb7cbc1f1938f8a765ff7253cc86ae5dec6568d4bb2f041c9e2b",
+    "output_text_sha256": "3724f90a86fadb7cbc1f1938f8a765ff7253cc86ae5dec6568d4bb2f041c9e2b",
+    "latex_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "body_sha256": "c4e556717ceb5a700634a4ba5939318ac715ef492678fd8002bd28af8a637f5a",
+    "converter_version": 1,
+    "markdown_sha256": "a60383cf2dcb68a7a3fede7a83ab69a6ab43c7a783162ea00efd4d71e5c7d994"
+  },
+  "fetched_at": "2026-09-14T12:50:18+00:00",
+  "source_snapshot_sha256": "2245144f2b9d2a3f49555b175eacf033066dd8f441d59a7bfef060b957c90325",
+  "images": {},
+  "local_only": true
+}

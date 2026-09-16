@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "16",
+    "title": "预报日食——当一回天文学家",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/16",
+    "date": "2009-07-12",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 0,
+    "display_formula_count": 0,
+    "image_count": 4,
+    "heading_count": 0,
+    "code_block_count": 0,
+    "source_text_sha256": "17b65c4140b5dedfbfc93e0bba43716e6c5a1c5a75e7ccb64112049be59f3c48",
+    "output_text_sha256": "17b65c4140b5dedfbfc93e0bba43716e6c5a1c5a75e7ccb64112049be59f3c48",
+    "latex_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "body_sha256": "72f3b9dbae130a998e722ca1a06b89b960510bd3671504ffa0e1961cba2ce213",
+    "converter_version": 1,
+    "markdown_sha256": "a1fccae687875f51b82873b56d12d8855d0c96c5c9aa4b4d79960700db40dcf0"
+  },
+  "fetched_at": "2026-09-14T15:06:16+00:00",
+  "source_snapshot_sha256": "cc0b64b01c711bc8f299e33dedf76cd6100e7a62c86add25e09123c7180135c2",
+  "images": {},
+  "local_only": true
+}

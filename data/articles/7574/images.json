@@ -1,0 +1,85 @@
+{
+  "version": 1,
+  "images": {
+    "https://spaces.ac.cn/usr/uploads/2020/07/329826639.png": {
+      "status": "cached",
+      "file": "973a9dc2c5296077da1c2e4d99b9678548dbe4c6e57f04ddeb1127ee4976b3dc.png",
+      "sha256": "973a9dc2c5296077da1c2e4d99b9678548dbe4c6e57f04ddeb1127ee4976b3dc",
+      "bytes": 285961,
+      "checked_at": "2026-09-16T08:54:47+00:00",
+      "fetched_url": "https://spaces.ac.cn/usr/uploads/2020/07/329826639.png",
+      "etag": "\"5f07d0a3-45d09\"",
+      "last_modified": "Fri, 10 Jul 2020 02:21:23 GMT"
+    },
+    "https://spaces.ac.cn/usr/uploads/2020/07/1882951247.png": {
+      "status": "cached",
+      "file": "8a7dca1e70a1764337766cda96535727cf16a8bd9b9dfef16c3f6dfe5def694a.png",
+      "sha256": "8a7dca1e70a1764337766cda96535727cf16a8bd9b9dfef16c3f6dfe5def694a",
+      "bytes": 292800,
+      "checked_at": "2026-09-16T08:54:52+00:00",
+      "fetched_url": "https://spaces.ac.cn/usr/uploads/2020/07/1882951247.png",
+      "etag": "\"5f069d79-477c0\"",
+      "last_modified": "Thu, 09 Jul 2020 04:30:49 GMT"
+    },
+    "https://spaces.ac.cn/usr/uploads/2020/07/728752186.png": {
+      "status": "cached",
+      "file": "265df989181c615061b19f24d2002bb59ccfc29a50283d8c0f871783fd07ff56.png",
+      "sha256": "265df989181c615061b19f24d2002bb59ccfc29a50283d8c0f871783fd07ff56",
+      "bytes": 223501,
+      "checked_at": "2026-09-16T08:54:57+00:00",
+      "fetched_url": "https://spaces.ac.cn/usr/uploads/2020/07/728752186.png",
+      "etag": "\"5f073b8d-3690d\"",
+      "last_modified": "Thu, 09 Jul 2020 15:45:17 GMT"
+    },
+    "https://spaces.ac.cn/usr/uploads/2020/07/2829736148.png": {
+      "status": "cached",
+      "file": "e89e846d4fb7160fc4ce5b8245fa2c229f7b75dec6ed88eb5e8b36430349facf.png",
+      "sha256": "e89e846d4fb7160fc4ce5b8245fa2c229f7b75dec6ed88eb5e8b36430349facf",
+      "bytes": 100014,
+      "checked_at": "2026-09-16T08:55:02+00:00",
+      "fetched_url": "https://spaces.ac.cn/usr/uploads/2020/07/2829736148.png",
+      "etag": "\"5f073f71-186ae\"",
+      "last_modified": "Thu, 09 Jul 2020 16:01:53 GMT"
+    },
+    "https://spaces.ac.cn/usr/uploads/2020/07/2284812415.png": {
+      "status": "cached",
+      "file": "a1bcacbd6cbfda293ddc215673c7618ba6127152ae78b6101ee99780cba47d76.png",
+      "sha256": "a1bcacbd6cbfda293ddc215673c7618ba6127152ae78b6101ee99780cba47d76",
+      "bytes": 855308,
+      "checked_at": "2026-09-16T08:55:10+00:00",
+      "fetched_url": "https://spaces.ac.cn/usr/uploads/2020/07/2284812415.png",
+      "etag": "\"5f07d0a6-d0d0c\"",
+      "last_modified": "Fri, 10 Jul 2020 02:21:26 GMT"
+    },
+    "https://spaces.ac.cn/usr/uploads/2020/07/4186540346.png": {
+      "status": "cached",
+      "file": "15b80c32c54f17efa2ca56ba3ea9ae4609cbf3806ed103aec7c887e0def6861c.png",
+      "sha256": "15b80c32c54f17efa2ca56ba3ea9ae4609cbf3806ed103aec7c887e0def6861c",
+      "bytes": 1456130,
+      "checked_at": "2026-09-16T08:55:18+00:00",
+      "fetched_url": "https://spaces.ac.cn/usr/uploads/2020/07/4186540346.png",
+      "etag": "\"5f09df24-163802\"",
+      "last_modified": "Sat, 11 Jul 2020 15:47:48 GMT"
+    },
+    "https://spaces.ac.cn/usr/uploads/2020/07/1271285742.png": {
+      "status": "cached",
+      "file": "bef6d204ad96225a49fde1888fb4b404fe1ab302f0799481f81ab68b64b158ce.png",
+      "sha256": "bef6d204ad96225a49fde1888fb4b404fe1ab302f0799481f81ab68b64b158ce",
+      "bytes": 1428671,
+      "checked_at": "2026-09-16T08:55:26+00:00",
+      "fetched_url": "https://spaces.ac.cn/usr/uploads/2020/07/1271285742.png",
+      "etag": "\"5f07d456-15ccbf\"",
+      "last_modified": "Fri, 10 Jul 2020 02:37:10 GMT"
+    },
+    "https://spaces.ac.cn/usr/uploads/2020/07/3405620191.png": {
+      "status": "cached",
+      "file": "49ae33604e3eee0f45cf04ddacc8b500ccd2b887a7e1b70c4d3ecb5b9b47258b.png",
+      "sha256": "49ae33604e3eee0f45cf04ddacc8b500ccd2b887a7e1b70c4d3ecb5b9b47258b",
+      "bytes": 338386,
+      "checked_at": "2026-09-16T08:55:30+00:00",
+      "fetched_url": "https://spaces.ac.cn/usr/uploads/2020/07/3405620191.png",
+      "etag": "\"5f07d5f6-529d2\"",
+      "last_modified": "Fri, 10 Jul 2020 02:44:06 GMT"
+    }
+  }
+}

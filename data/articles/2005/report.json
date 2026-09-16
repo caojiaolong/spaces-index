@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "2005",
+    "title": "《虚拟的实在(3)》——相对论动力学 ",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/2005",
+    "date": "2013-06-20",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 22,
+    "display_formula_count": 9,
+    "image_count": 0,
+    "heading_count": 0,
+    "code_block_count": 0,
+    "source_text_sha256": "1015cee11ef50b2f76addb61199617c5aa8a7a33b3ce2191c1d056f801cf749b",
+    "output_text_sha256": "1015cee11ef50b2f76addb61199617c5aa8a7a33b3ce2191c1d056f801cf749b",
+    "latex_sha256": "aeeee8d3af4d256effa3f85b9e7b453c67c61e7ae695b300002458e0c1717b31",
+    "body_sha256": "2713ee53acc5e7cd343cc87a223ccdc3095b1601f3f210fa885bf9652ac2ec2e",
+    "converter_version": 1,
+    "markdown_sha256": "767c3868b589af32cc48d4712662fd775a2de4366133b5a9fd1a1871ec297457"
+  },
+  "fetched_at": "2026-09-14T14:01:43+00:00",
+  "source_snapshot_sha256": "dcdc10267165d6ab4c6614b8fba2981ef96512a8f63c396ea3a280ce0d8b799b",
+  "images": {},
+  "local_only": true
+}

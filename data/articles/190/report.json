@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "190",
+    "title": "两名美国经济学家同获2009年诺贝尔经济学奖",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/190",
+    "date": "2009-10-13",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 0,
+    "display_formula_count": 0,
+    "image_count": 2,
+    "heading_count": 0,
+    "code_block_count": 0,
+    "source_text_sha256": "754ca42c3fba330608880665802552b04fc0ae1bcd36bee0cb25fe95b02ec8b5",
+    "output_text_sha256": "754ca42c3fba330608880665802552b04fc0ae1bcd36bee0cb25fe95b02ec8b5",
+    "latex_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "body_sha256": "982ad822845f9f3ebe0741af5af195e91b4616ed244a7ed6c8a4b2c488eda631",
+    "converter_version": 1,
+    "markdown_sha256": "2e4a0e5187b6f98048509e284e749126c0e20e608b67e463aad413ddfd5fb6b1"
+  },
+  "fetched_at": "2026-09-14T14:48:25+00:00",
+  "source_snapshot_sha256": "30f2c2a536edc90ae5a130a5076ad3f19383192d3e31a976ca65072a0d84adcd",
+  "images": {},
+  "local_only": true
+}

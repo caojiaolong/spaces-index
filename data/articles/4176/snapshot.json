@@ -1,0 +1,17 @@
+{
+  "metadata": {
+    "id": "4176",
+    "title": "获取并处理中文维基百科语料",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/4176",
+    "date": "2017-01-06",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "fetched_at": "2026-09-14T13:34:58+00:00",
+  "source_snapshot_sha256": "34ac8c66b0221e4f2e6fb27c808493d0b868a41e32e101b710943d1d0aea9a5a",
+  "validators": {
+    "etag": null,
+    "last_modified": null
+  }
+}

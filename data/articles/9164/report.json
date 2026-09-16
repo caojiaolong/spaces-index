@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "9164",
+    "title": "生成扩散模型漫谈（三）：DDPM = 贝叶斯 + 去噪",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/9164",
+    "date": "2022-07-19",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 103,
+    "display_formula_count": 18,
+    "image_count": 1,
+    "heading_count": 6,
+    "code_block_count": 0,
+    "source_text_sha256": "ef193b6dc83a0da18472fa0430dd4fe7e6c9b6a1edb5e6a6cf183b7ddd347737",
+    "output_text_sha256": "ef193b6dc83a0da18472fa0430dd4fe7e6c9b6a1edb5e6a6cf183b7ddd347737",
+    "latex_sha256": "0b1add092e7f70459e1cf33df2c90dfb31ea93e034bff38aaba9dd31c6509506",
+    "body_sha256": "eafc741dffa750b1049b39902e7dbe62e0eb310ba33a8ce2af53f47e8fc96db4",
+    "converter_version": 1,
+    "markdown_sha256": "df8cb8a2c51098e5f5aa1e00f2c8896208f1945c395e342222ea7a908f33bca6"
+  },
+  "fetched_at": "2026-09-14T12:58:40+00:00",
+  "source_snapshot_sha256": "da1d2dca1ab68e94626b24e57bbbba3dfb7084c895ee05540557ac06614d2c8e",
+  "images": {},
+  "local_only": true
+}

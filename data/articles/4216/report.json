@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "4216",
+    "title": "SVD分解(二)：为什么SVD意味着聚类？",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/4216",
+    "date": "2017-01-26",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 31,
+    "display_formula_count": 4,
+    "image_count": 0,
+    "heading_count": 3,
+    "code_block_count": 0,
+    "source_text_sha256": "65183490dbe08c06f1f228092552e01829d4624170170dfc07f1fd897f761afd",
+    "output_text_sha256": "65183490dbe08c06f1f228092552e01829d4624170170dfc07f1fd897f761afd",
+    "latex_sha256": "db54a151d5907335cd1bf4c037f13a6dbbd6ec82c5ff4bd0885549221c0e9d67",
+    "body_sha256": "ce8774b80f042927540c0c27a0d3e6f8475be23e76b42ee320d5aa1bca65d5c8",
+    "converter_version": 1,
+    "markdown_sha256": "fa4c6f691b046bdd973be0f35809c589b24b4e9229655155d7f795c4c6d50dbf"
+  },
+  "fetched_at": "2026-09-14T13:34:26+00:00",
+  "source_snapshot_sha256": "cf979d6af19496b2c5ac7ade5548a5340358f95954566c5449e5d2a3ba7514e1",
+  "images": {},
+  "local_only": true
+}

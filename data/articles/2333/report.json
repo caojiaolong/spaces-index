@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "2333",
+    "title": "三个相切圆的公切圆:补充",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/2333",
+    "date": "2014-01-30",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 0,
+    "display_formula_count": 0,
+    "image_count": 2,
+    "heading_count": 0,
+    "code_block_count": 0,
+    "source_text_sha256": "b9bf29a1c0b0a1eef9bd7d56cdd1ff698d09b280f5ead8d05805f88e5f2e3cda",
+    "output_text_sha256": "b9bf29a1c0b0a1eef9bd7d56cdd1ff698d09b280f5ead8d05805f88e5f2e3cda",
+    "latex_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "body_sha256": "5dd3752d0f1c431fb06c85223648971d26584e5b070c38a4e9b75e586005d2e9",
+    "converter_version": 1,
+    "markdown_sha256": "d0ed9ffa970c63d30b4290593b23c399d87897a112b16c720f1e0bc93c3b1aeb"
+  },
+  "fetched_at": "2026-09-14T13:57:20+00:00",
+  "source_snapshot_sha256": "2efd117dfcb1addd67bc61bde655a2d661ad2ed03b02dd7183875b6a65a90266",
+  "images": {},
+  "local_only": true
+}

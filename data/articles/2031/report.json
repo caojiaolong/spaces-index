@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "2031",
+    "title": "洗手盆里的学问",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/2031",
+    "date": "2013-07-20",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 8,
+    "display_formula_count": 2,
+    "image_count": 3,
+    "heading_count": 0,
+    "code_block_count": 0,
+    "source_text_sha256": "dc81b843cfff709e54336ce6aaafc0cb2d799dec13af5543de8298139f7047a4",
+    "output_text_sha256": "dc81b843cfff709e54336ce6aaafc0cb2d799dec13af5543de8298139f7047a4",
+    "latex_sha256": "c1d1d3c7627eac00981b823d7208d399bc1cb2f7e3e17b9f68966d4b30f95ae3",
+    "body_sha256": "6bfac20a18462ef02b69280ea3efcc3562e272caaea30b0d163382ef0bc0e8a8",
+    "converter_version": 1,
+    "markdown_sha256": "c8a44080eeea645b0cb6af9a20b16447da7e771536af8105f692d2e12286e8ee"
+  },
+  "fetched_at": "2026-09-14T14:01:11+00:00",
+  "source_snapshot_sha256": "549803ff09f144d2169e5c34df89066275b98eb611f5800780c76c90411f67d7",
+  "images": {},
+  "local_only": true
+}

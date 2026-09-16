@@ -1,0 +1,13 @@
+<div class="PostContent" id="PostContent">
+<p>这是一道很多时候都会考到的题目：<br/>
+<strong>比较$n^{n+1}$与$(n+1)^n$的大小（其中n非负）。</strong></p><p><font color="green">在小学我们会使用直接计算；</font><br/>
+<font color="green">在初中我们会从一些例子找规律；</font><br/>
+<font color="green">在高中我们就会直接去证明了。</font></p><p>这道题目的答案是：当n&gt;e时，有$n^{n+1}&gt;(n+1)^n$。</p><p>我给出的证明有两个：</p><p><strong>证明一：</strong></p><p>要证$n^{n+1}&gt;(n+1)^n$，等价于证明$n&gt;\frac{(n+1)^n}{n^n}=(1+1/n)^n$。</p><p>而在研究e的时候可以知道，对于非负的n，$(1+1/n)^n$是单调递增的；而$\lim_{x-&gt;+\infty}(1+1/n)^n=e$，所以$(1+1/n)^n &lt; e$。因此当n&gt;e时，$n&gt;\frac{(n+1)^n}{n^n}=(1+1/n)^n$是成立的。证毕。</p><p><strong>证明二：</strong></p><p>这个证明相对通用一些，可以用来比较$n^{n+m}$与$(n+m)^n$等情况。现在只讨论m=1的情况。</p><p>函数$(\frac{ln x}{x})'=\frac{1-ln x}{x^2}$，当x&gt;e时，$\frac{1-ln x}{x^2}&lt;0$，即此时函数$\frac{ln x}{x}$单调递减。若有e<a></a>
+$$\frac{ln a}{a}&gt;\frac{ln b}{b}&lt;\Rightarrow \frac{ln a}{ln b}&gt;\frac{a}{b}$$</p><p>而当n&gt;e时，<br/>
+$$n^{n+1}=(n+1)^{(n+1)\cdot \frac{ln n}{ln(n+1)}}&gt;(n+1)^{(n+1)\cdot \frac{n}{n+1}}=(n+1)^n$$</p><p>证毕。</p>
+
+
+
+
+
+</div>

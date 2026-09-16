@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "1851",
+    "title": "用复数化简二次曲线的尝试",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/1851",
+    "date": "2013-01-02",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 12,
+    "display_formula_count": 8,
+    "image_count": 0,
+    "heading_count": 0,
+    "code_block_count": 0,
+    "source_text_sha256": "e2b64255fde5bcd9bbcf678331086f0255cdf6db7ab611e1db5521582778d6b3",
+    "output_text_sha256": "e2b64255fde5bcd9bbcf678331086f0255cdf6db7ab611e1db5521582778d6b3",
+    "latex_sha256": "5cd47c4ac4a293832593551029ea09272426fbea747a370a04835f5099764731",
+    "body_sha256": "e625941861e36cf59eb4571d2b9f1fcb5ffa6452d5fc9f454548566e7c41665a",
+    "converter_version": 1,
+    "markdown_sha256": "312157211957f0794ca8b1a0799e044033f843f9e608d2251bd8af2c972561e9"
+  },
+  "fetched_at": "2026-09-14T14:06:56+00:00",
+  "source_snapshot_sha256": "9bb9f293e636327438332ccbee813ec2fa4d432e430041fb43991a1102eff50e",
+  "images": {},
+  "local_only": true
+}

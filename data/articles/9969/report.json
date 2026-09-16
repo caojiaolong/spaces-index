@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "9969",
+    "title": "幂等生成网络IGN：试图将判别和生成合二为一的GAN",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/9969",
+    "date": "2024-01-31",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 50,
+    "display_formula_count": 10,
+    "image_count": 0,
+    "heading_count": 5,
+    "code_block_count": 0,
+    "source_text_sha256": "a9a1467bf6a4e964d5870c7587627b45355a038670d0485bb9482b44f6084185",
+    "output_text_sha256": "a9a1467bf6a4e964d5870c7587627b45355a038670d0485bb9482b44f6084185",
+    "latex_sha256": "e4d7ec552a5987f357f0b0eb162bf6b6c62feb36070055c7000ee10bbc234b00",
+    "body_sha256": "a512241df292896d8eb4cedeb6e177f9d8adf39b16f18858ae401c1a60c53851",
+    "converter_version": 1,
+    "markdown_sha256": "2a80de6b6508bf4bceb4aadd0559e62f7514b65891a48644411dc7d0ece9298f"
+  },
+  "fetched_at": "2026-09-14T12:49:53+00:00",
+  "source_snapshot_sha256": "ccf46284893b63f47906360c56cd938d3ba82c32aeb176c1e9d17d542bd597bd",
+  "images": {},
+  "local_only": true
+}

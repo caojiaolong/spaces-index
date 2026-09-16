@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "3739",
+    "title": "调侃：万有引力与爱因斯坦的理论",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/3739",
+    "date": "2016-05-18",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 1,
+    "display_formula_count": 1,
+    "image_count": 1,
+    "heading_count": 3,
+    "code_block_count": 0,
+    "source_text_sha256": "3d33b02e1235b888dffeb6dd9cd588a816949ffc4bd810541bac8878acde0b74",
+    "output_text_sha256": "3d33b02e1235b888dffeb6dd9cd588a816949ffc4bd810541bac8878acde0b74",
+    "latex_sha256": "cc179a2bdfc8287d7eb5f2045613cca7ad4e725208e33210c6c5f7deaac6e4e0",
+    "body_sha256": "8b372e4c5c8903c732734038350404af815ec60f9557aa5ce59e4b241e12aaaf",
+    "converter_version": 1,
+    "markdown_sha256": "63a3765ae29b4a3339a50e657964c7b144c1141ab790fdd9dc8b191fcb25bb97"
+  },
+  "fetched_at": "2026-09-14T13:41:08+00:00",
+  "source_snapshot_sha256": "85a546868ab66368f06067355ec4714645fcff92755168f9a6a8d742ddc8e183",
+  "images": {},
+  "local_only": true
+}

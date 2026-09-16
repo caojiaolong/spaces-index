@@ -1,0 +1,17 @@
+{
+  "metadata": {
+    "id": "10648",
+    "title": "从谱范数梯度到新式权重衰减的思考",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/10648",
+    "date": "2024-12-25",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "fetched_at": "2026-09-14T12:44:32+00:00",
+  "source_snapshot_sha256": "69105685fead8fade39d4f66966fa52f204bda110200ec54058148b843d51705",
+  "validators": {
+    "etag": null,
+    "last_modified": null
+  }
+}

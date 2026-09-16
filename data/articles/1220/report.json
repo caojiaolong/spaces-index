@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "1220",
+    "title": "[春礼]《方程与宇宙》:圆形限制性三体问题(七)",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/1220",
+    "date": "2011-02-04",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 34,
+    "display_formula_count": 9,
+    "image_count": 1,
+    "heading_count": 0,
+    "code_block_count": 0,
+    "source_text_sha256": "ffbba0a49c5b2accd104912d2d5e2d73899a0f0856672e3b7c7d365a6a6e94c4",
+    "output_text_sha256": "ffbba0a49c5b2accd104912d2d5e2d73899a0f0856672e3b7c7d365a6a6e94c4",
+    "latex_sha256": "09b982691dc702d2cf1b74162ca7945ee91f57cca4abf32c7a2ddf25b09544c9",
+    "body_sha256": "51e21ea1e1b412fac5247e234d263b7c4cc6349a66734728486abc627e5a9219",
+    "converter_version": 1,
+    "markdown_sha256": "3f604678f2b8aee50b949630ff7d1152069b0bebd6ebadaecae7e8f7b516f435"
+  },
+  "fetched_at": "2026-09-14T14:24:31+00:00",
+  "source_snapshot_sha256": "0e7ed675b941950facb45d84b543a5cc9d3aacd05d999f1ecf439490b492030c",
+  "images": {},
+  "local_only": true
+}

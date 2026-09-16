@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "8444",
+    "title": "我们可以无损放大一个Transformer模型吗（一）",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/8444",
+    "date": "2021-06-02",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 80,
+    "display_formula_count": 17,
+    "image_count": 0,
+    "heading_count": 10,
+    "code_block_count": 0,
+    "source_text_sha256": "279815c6b1270143af30de5ed099a2ee4b6161b069dbdd429f6c95a71257c242",
+    "output_text_sha256": "279815c6b1270143af30de5ed099a2ee4b6161b069dbdd429f6c95a71257c242",
+    "latex_sha256": "f16f5c7f7ef706cc5c195d25fca73f2356d58fd2b3af52cd2657b2e6c26fa75b",
+    "body_sha256": "8bd02039352295e75d6f27e0078364f0fbffd4a7cbe6410643fd8df0881f3a8e",
+    "converter_version": 1,
+    "markdown_sha256": "08d2ec23e3878c405fe5681d4cfe9555332e215cee52b6d0745dd9e0fd03d5dc"
+  },
+  "fetched_at": "2026-09-14T13:06:25+00:00",
+  "source_snapshot_sha256": "2d1952e7546d50c57e389d804dd20cccf7237d09ceba5edeac9b1c1b801e327d",
+  "images": {},
+  "local_only": true
+}

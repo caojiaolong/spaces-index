@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "9859",
+    "title": "Transformer升级之路：15、Key归一化助力长度外推",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/9859",
+    "date": "2023-11-20",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 47,
+    "display_formula_count": 8,
+    "image_count": 0,
+    "heading_count": 4,
+    "code_block_count": 0,
+    "source_text_sha256": "566510ed25b7cba45b4ba6c465e32b85f2b022c22c4347e733820012e75afb28",
+    "output_text_sha256": "566510ed25b7cba45b4ba6c465e32b85f2b022c22c4347e733820012e75afb28",
+    "latex_sha256": "5c375bd65eb43941438092d61ffc71c5fe0842bb918c9297714f15089978ddc9",
+    "body_sha256": "9655b61d072f01541442a61ad30501471ee69adac941bd2aba12e03d32c71c9a",
+    "converter_version": 1,
+    "markdown_sha256": "4177a6360648db9b1688102b2ad6649c9d8bafd6324c91ff158f9245bd96122a"
+  },
+  "fetched_at": "2026-09-14T12:50:52+00:00",
+  "source_snapshot_sha256": "d955c4bed49223798660f4b985f936ca333cfefc77e6cbb631d9aa59fdd5e785",
+  "images": {},
+  "local_only": true
+}

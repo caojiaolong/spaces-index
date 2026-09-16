@@ -1,0 +1,268 @@
+<div class="PostContent" id="PostContent">
+<p>进入期末了，很多同学都开始复习了，这学期我选的几门课到现在还不是很熟悉，本想也在趁着这段时间好好看看。偏生五天前我在浏览数学研发论坛的编程擂台时看到了<a href="http://bbs.emath.ac.cn/thread-5423-1-1.html" target="_blank">这样的一道题目</a>：</p><blockquote>设对于给定的$L$，方程<br/>
+$$\frac{1}{x}+\frac{1}{y}=\frac{1}{n}$$<br/>
+满足$0 &lt; x &lt; y \leq L$的正整数解共有$f(L)$种情况。比如$f(6)=1,f(12)=3,f(1000)=1069$，求$f(10^{12})$。</blockquote><p>这道题目的来源是Project Euler的第454题：<a href="http://projecteuler.net/problem=454" target="_blank">Diophantine reciprocals III</a>（丢潘图倒数方程），题目简短易懂，但又不失深度，正符合我对理想题目的定义。而且最近在学习Python学习得不亦乐乎，看到这道题目就跃跃欲试。于是乎，我的五天时间就没有了，而且过程中几乎耗尽了我现在懂的所有编程技巧。由于不断地测试运行，我的电脑发热量比平时大了几倍，真是辛苦了我的电脑。<font color="red"><strong>最后的代码，自我感觉已经是我目前写的最精彩的代码了。</strong></font>在此与大家共享和共勉~</p><p>上述表达式是分式，不利于编程，由于$n=\frac{xy}{x+y}$，于是上述题目也等价于求$(x+y)|xy$（意思是$x+y$整除$xy$）的整数解。</p><p><strong>乱扯阶段</strong></p><p>来到这里，最直接的编程技巧是双重循环，用Python写就是</p><pre class="line-numbers"><code class="language-python" line="1">l=1000 #设置上限
+s=0 #统计个数
+for y in xrange(2,l+1):
+ for x in xrange(1,y+1):
+ if (x*y)%(x+y)==0:
+ s=s+1
+print(s)</code></pre><p>这对于小的L来说没有什么问题，但是L较大时就相当严重了（好像算$f(10^5)$就已经相当久了）。可以注意到，我们做了$\frac{L(L-1)}{2}$次除法，意味着该算法至少是$\mathcal{O}(L^2)$，它大概就是说L扩大十倍，运行时间就变为原来的100倍！要知道我们要做$L=10^{12}$，上述算法的效率是不能接受的。</p><p><strong>优化处理</strong></p><p>这一块的内容基本来自<a href="http://bbs.emath.ac.cn/forum.php?mod=redirect&amp;goto=findpost&amp;ptid=5423&amp;pid=52667&amp;fromuid=70" target="_blank">数学研发论坛的Lwins_G大神</a>。</p><p>首先，只需要一步就可以把算法变为$\mathcal{O}(L)$。不难证明：$(x+y)|xy$的充要条件是存在整数$m,n,k$满足$(m,n)=1$，并且<br/>
+$$x=km(m+n)\quad y=kn(m+n)$$<br/>
+于是我们只需要求<br/>
+$$kn(m+n) \leq L,\quad (m,n)=1,\quad m &lt; n$$<br/>
+的解即可。把公式写出来就是<br/>
+$$f(L)=\sum_{n=1}^{\sqrt{L}} \sum_{\begin{subarray}{cc} m=1 \\ (n,m)=1 \end{subarray}}^{n-1} \left[ \frac{L}{n(n+m)} \right]$$<br/>
+该公式是$\mathcal{O}(L)$的。本文附件代码1就是我根据这个公式所写的算法，Python代码。利用上述公式的技巧是，给定$n$，然后构造与$n$互素的整数表，这跟<a href="/archives/2612/" target="_blank">构造素数表</a>是类似的。如果枚举所有的$m$，然后判断$(m,n)$是否等于1，那效率将会大打折扣。在PyPy运行，求$f(10^7)=30093331$用时1.7秒，求$f(10^8)=349446716$用了17秒，$f(10^9)=3979600400$用了190秒，这效率自然比双重循环提高不少，但是要算$f(10^{12})$，还有很远的距离。</p><p><strong>继续优化</strong></p><p>Lwins_G大神同时提出可以把算法降低为$\mathcal{O}(L^{3/4})$，过程如下：<br/>
+$$\begin{split}<br/>
+&amp;\sum_{n=1}^{\sqrt{L}} \sum_{\begin{subarray}{cc} m=1 \\ (n,m)=1 \end{subarray}}^{n-1} \left[ \frac{L}{n(n+m)} \right] \\<br/>
+=&amp;\sum_{n=1}^{\sqrt{L}} \sum_{\begin{subarray}{cc} s=n+1 \\ (n,s)=1 \end{subarray}}^{2n-1} \left[ \frac{L}{ns} \right] \\<br/>
+=&amp;\sum_{n=1}^{\sqrt{L}} \sum_{s=n+1}^{2n-1} \left[ \frac{L}{ns} \right] \left[ \frac{1}{(n,s)} \right] \\<br/>
+=&amp;\sum_{n=1}^{\sqrt{L}} \sum_{s=n+1}^{2n-1} \left[ \frac{L}{ns} \right] \sum_{d | (n,s)} \mu(d) \\<br/>
+=&amp;\sum_{n=1}^{\sqrt{L}} \sum_{d | n} \sum_{\begin{subarray}{cc} n &lt; s \leq 2n-1 \\ d | s \end{subarray}} \left[ \frac{L}{ns} \right] \mu(d) \\<br/>
+=&amp;\sum_{n=1}^{\sqrt{L}} \sum_{d | n} \mu(d) \sum_{\frac{n}{d} &lt; s' \leq \frac{2n-1}{d}} \left[ \frac{L}{nds'} \right] \\<br/>
+=&amp;\sum_{n=1}^{\sqrt{L}} \sum_{d | n} \mu(d) \left( \psi\left( \left[ \frac{L}{nd} \right],\frac{2n-1}{d}\right)- \psi\left(\left[ \frac{L}{nd} \right],\frac{n}{d}\right) \right)<br/>
+\end{split}$$<br/>
+其中$\mu(d)$是<a href="http://zh.wikipedia.org/wiki/默比乌斯函数" target="_blank">默比乌斯函数</a>，而$ \psi(x,y) = \sum\limits_{n=1}^{y} \left[ \frac{x}{n} \right]$。这过程太绝了，巧妙地在问题中融入了默比乌斯函数，（部分地）消除了$(m,n)=1$的约束。由于计算$\psi(x,y)$是$\mathcal{O}(\sqrt{x})$的，所以最后的公式自然是$\mathcal{O}(L^{3/4})$。</p><p>可是我一开始看不懂为什么$\psi(x,y)$是$\mathcal{O}(\sqrt{x})$的。所以只能使用最后一个等号之前的公式进行了编程。代码了附件的代码2。<font color="red">题目涉及到了默比乌斯函数，默比乌斯函数的技巧还是构造。同时还涉及到了$d|n$这一限制，也就是要因数分解，但是由于$n$只到$\sqrt{L}=10^6$，不算大，因此直接用除法枚举分解就可，这需要提前准备好$10^3$内的素数表（有了之前<a href="/archives/2612/" target="_blank">计算前两百万素数和</a>的基础，这部分非常轻松，可以在半秒内完成）。默比乌斯函数中有大量是0，我们只需要找出不为0的项，也就是由$n$的所有素因子（重复出现只算一次）通过相互相乘所生成的所有整数（每个素因子只出现一次）的项，这需要用递推法去构造。构造的优点在于，构造一般使用乘法，而判断则需要除法，除法的效率远远低于乘法。另外，构造之后再判断，可以大大减少枚举次数。</font>。</p><p>代码2的运行效率有了比较大的提高，计算$f(10^9)$只用了24秒，但是相当奇怪的是，用它来计算$f(10^{10})$，运行了半个钟都没有结果。于是只能继续优化了，我发现，主要的问题是，我不知道Lwins_G大神所说的计算$\psi(x,y)$的$\mathcal{O}(\sqrt{x})$算法，我上面用的，只是单纯地直接计算，没有优化。</p><p><strong>直奔10<sup>12</sup></strong></p><p>昨天，我尝试把代码2的一些细节部分优化，但是速度没有明显提升。今天，继续优化问题，思考计算$\psi(x,y)$的$\mathcal{O}(\sqrt{x})$算法。终于，我想到了。其实我前几天就已经注意到的一个规律，<font color="red">对于$\left[\frac{x}{n}\right]$来说，如果$n\leq \sqrt{x}$，那只能枚举计算了，但是如果$n &gt; \sqrt{x}$，结果就开始“批量”出现了，也就是说，$\left[\frac{x}{n}\right]$慢慢地从$\left[\sqrt{x}\right]$递减到1，那么我们反过来，就可以根据商的值，来求出除数的范围。举个简单的例子，$\left[\frac{101}{1}\right]=101,\left[\frac{101}{2}\right]=50$，那么我们就知道，$n$从51到101时，$\left[\frac{101}{n}\right]$都是1，这样我们就等于一下子计算了51个除法</font>。</p><p>这优化是质的飞跃，我们的计算从$\mathcal{O}(x)$达到了$\mathcal{O}(\sqrt{x})$，从而总的效率从$\mathcal{O}(L)$提高到$\mathcal{O}(L^{3/4})$。也许读者觉得$\mathcal{O}(L)$跟$\mathcal{O}(L^{3/4})$差别不大，但是当$L=10^{12}$时，差别就是1000倍！这是三个数量级！</p><p>下午的主要工作都是在写$\psi(x,y)$，连晚餐都没有吃（中午吃太饱了，呵呵~~）。通过使用改进后的$\psi(x,y)$算法，计算$f(10^{9})$已经是轻而易举了，只用了不到3秒，但是计算$f(10^{10})=44647347052$，却耗了180秒，不管怎样，这是第一次达到了$10^{10}$，稍微高兴了一下。同时我对耗时的“暴增”感到非常奇怪，觉得计算$f(10^{11})$无望了。但是我尝试计算$f(2\times 10^{10})$和$f(3\times 10^{10})$，时间增加却很少，特别是$f(3\times 10^{10})$只用了313秒，只是$f(10^{10})$的一倍多，这确实让我惊讶，于是我直接计算$f(10^{11})=494986959815$，最终的结果是：782秒。有戏了！</p><p>这好像表明，$f(10^{10})$的时间才是真正的时间基础，在此基础，才是根据$\mathcal{O}(L^{3/4})$计算？如果是这样的话，那么计算$f(10^{12})$也许只要$5000秒$左右，也就是一个半钟，这是可以接受的。</p><p>但是，我还是考虑先改进算法，因为$\psi(x,y)$的效率虽然不错，但是做了一些重复工作，毕竟我们所需要的，只是$\psi(x,y)$两端的差值而已。正如$S_n=a_1+a_2+\dots+a_n$，要计算$S_{n+k}-S_{n}$，不一定要把$S_{n+k}$和$S_n$都算出来。今天晚上花了大部分的时间，改进$\psi(x,y)$。得到附件中的最终版代码。测试$f(10^{10})$用时6秒，$f(10^{11})$用时23秒！！这大大出乎我的意料之外！！于是，直奔$f(10^{12})$。</p><p>这时候已经九点多了，输入代码运行后，我就关上屏幕去洗澡了。因为我怕意外，我不知道时间是线性增长，还是像之前的计算$f(10^{9})$只用了不到3秒、但是计算$f(10^{10})$却耗了180秒的情况。</p><p>洗澡回来，我不着急，慢慢晾好衣服，坐下，打开屏幕。眼前的数字让我惊呆了——</p><p><strong><font color="red">101.629625957秒！</font></strong><br/>
+</p><div class="pic-container"><div class="typecho-caption aligncenter" style="max-width: 100%"><div style="margin: 5px"><a href="/usr/uploads/2014/06/2071006884.png" target="_blank" title="点击查看原图"><img alt="f(10^12)" src="/usr/uploads/2014/06/2071006884.png" style="max-width:100%"/></a></div><p class="typecho-caption-text">f(10^12)</p></div></div><p>$f(10^{12})=5435004633092$！不是一般的意外，不是一般的兴奋！成功了！本以为怎么都得需要几十分钟，现在既然不到2分钟！这是五天来的努力成果~几乎穷尽了我的所有技巧了！擂台成功攻下！（貌似这个算法真的实现了$\mathcal{O}(L^{3/4})$，从$10^{10}$到$10^{11}$再到$10^{12}$，时间以5倍的级数增长，这符合$\mathcal{O}(L^{3/4})$的规律，因为$10^{3/4}=5.62$。<u>补充：后来我测试求得$f(10^{13})=59201396855810$，仅用了476.7秒，确实满足这规律。</u>）</p><p>下面把一些值整理出来，供有兴趣的读者参考和对比：<br/>
+$$\begin{aligned}<br/>
+f(10^2)&amp;=60,\ f(10^3)=1069\\<br/>
+f(10^4)&amp;=15547,\ f(10^5)=203931\\<br/>
+f(10^6)&amp;=2524207\\<br/>
+f(10^7)&amp;=30093331\\<br/>
+f(10^8)&amp;=349446716\\<br/>
+f(10^9)&amp;=3979600400\\<br/>
+f(10^{10})&amp;=44647347052\\<br/>
+f(10^{11})&amp;=494986959815\\<br/>
+f(10^{12})&amp;=5435004633092\\<br/>
+f(10^{13})&amp;=59201396855810<br/>
+\end{aligned}$$</p><div align="center"><hs height="600" id="pop1" text="点击查看“代码1”" title="点击查看“代码1”" width="600">
+<pre class="line-numbers"><code class="language-python" line="1">import time
+start=time.clock()
+import math
+l=10000000 #上限 
+s=0 #统计个数
+rl=int(math.sqrt(l))
+rrl=int(math.sqrt(int(math.sqrt(l))))
+
+#弄出个素数表来
+prime=[i for i in range(1,rl+1)]#定义整数表
+j=2
+while j&lt;=rrl:
+    if prime[j-1] != 0:
+        m=int(rl/j)
+        for i in range(j,m+1):
+            prime[i*j-1]=0
+        j=j+1
+    else:
+        j=j+1
+prime.sort() #从小到大重新排列（让0位于前面）
+z=prime.count(0) #统计0的个数
+prime=prime[z+1:rl]
+#素数表生成完毕
+
+for m in range(1,int(rl/1.4)):
+    #找出与m互素的数，存在p里
+    p=[i for i in range(1,rl+1)]
+    m2=m
+    for i in prime:
+        if i&gt;m:
+            break
+        if m%i==0:
+            m=m/i
+            for j in range(m2//i+1,int(rl/i)+1): #!!!
+                p[i*j-1]=0
+    p.sort() #从小到大重新排列（让0位于前面）
+    z=p.count(0) #统计0的个数
+    p=p[z+m2:rl]
+    #找出与m互数的完毕。
+    for n in p:
+        s=s+l//((n+m2)*n)
+print(s)
+end=time.clock()
+print(end-start)
+</code></pre>
+</hs></div><div align="center"><hs height="600" id="pop2" text="点击查看“代码2”" title="点击查看“代码2”" width="600">
+<pre class="line-numbers"><code class="language-python" line="1">import time
+import os
+start=time.clock()
+import math
+
+#主要计算函数（最后一个求和号）
+def psi(l, n, d):
+    sum=0
+    for s in xrange(n//d+1, (2*n-1)//d + 1):
+        sum = sum + l//(n*d*s)
+    return sum
+
+#生成一个素数表的莫比乌斯表
+def mobi(p):
+    length = len(p)
+    if length == 1:
+        mu = [1,-p[0]]
+    else:
+        mu2=mobi(p[0:length-1])
+        mu=mu2[:]
+        for i in mu2:
+            mu.append(-1*p[length-1]*i)
+    return mu
+
+#开始
+l=2000000000 #上限 
+s=0 #统计个数
+rl=int(math.sqrt(l))
+rrl=int(math.sqrt(int(math.sqrt(l))))
+rrrl=int(math.sqrt(int(math.sqrt(int(math.sqrt(l))))))
+
+#生成rrl内的素数表
+prime=[i for i in xrange(1,rrl+1)]#定义整数表
+j=2
+while j&lt;=rrrl:
+    if prime[j-1] != 0:
+        m=int(rrl/j)
+        for i in xrange(j,m+1):
+            prime[i*j-1]=0
+        j=j+1
+    else:
+        j=j+1
+prime.sort() #从小到大重新排列（让0位于前面）
+z=prime.count(0) #统计0的个数
+prime=prime[z+1:rl]
+prime.append(rl) #往素数表里边添加一个大数，避免溢出错误
+#素数表生成完毕
+
+for n in xrange(2,rl+1):
+    p=[] #n的素因子表
+    mu=[] #莫比乌斯表
+    nn=n
+    i=0
+    rn=int(math.sqrt(n))
+    #开始生成n的素因子表
+    while prime[i] &lt;= rn:
+        if n%prime[i]==0:
+            n=n//prime[i]
+            if n%prime[i] != 0:
+                p.append(prime[i])
+                i=i+1
+        else:i=i+1
+    #下面这句的意思是，如果n的一个因子不能被前面的素数整除，那么这个因子就是素数。
+    if n&gt;rn:
+        p.append(n)
+    #n的素因子表p生成完毕
+    mu=mobi(p) #生成莫比乌斯表
+    for d in mu:
+            s=s+d//abs(d)*psi(l,nn,abs(d))
+
+print(s)
+end=time.clock()
+print(end-start)
+</code></pre>
+</hs></div><div align="center"><hs height="600" id="pop3" text="点击查看“最终代码”" title="点击查看“最终代码”" width="600">
+<pre class="line-numbers"><code class="language-python" line="1">import time
+start=time.clock()
+import math
+
+#主要计算函数（最后一个求和号）
+def psi(x, y1, y2):
+    s=0
+    rx=int(math.sqrt(x))
+    if y2&lt;= rx:
+        for d in xrange(y1, y2+1):
+            s=s+x//d
+    elif y1&lt;=rx:
+        for d in xrange(y1, rx+1):
+            s=s+x//d
+        p=x//rx-1
+        q=x//y2
+        d=0
+        q1=x//(p-d+1)
+        while d &lt; p-q:
+            q2=q1
+            q1=x//(p-d)
+            s=s+(q1-q2)*(p-d)
+            d=d+1
+        s=s+(y2-x//(q+1))*q
+    else:
+        p=x//y1-1
+        q=x//y2
+        if p&lt;q:
+            s=(1+y2-y1)*q
+        else:
+            d=0
+            q1=x//(p-d+1)
+            while d &lt; p-q:
+                q2=q1
+                q1=x//(p-d)
+                s=s+(q1-q2)*(p-d)
+                d=d+1
+            s=s+(y2-x//(q+1))*q
+            s=s+(x//(p+1)-y1+1)*(p+1)
+    return s
+
+#生成一个素数表的莫比乌斯表
+def mobi(p):
+    length = len(p)
+    mu=[1,-p[0]]
+    for i in xrange(1,length):
+        mu2=mu[:]
+        for j in mu2:
+            mu.append(-1*j*p[i])
+    return mu
+
+l=1000000000000 #程序开始，设置上限 
+s=0 #统计个数
+rl=int(math.sqrt(l))
+rrl=int(math.sqrt(int(math.sqrt(l))))
+rrrl=int(math.sqrt(int(math.sqrt(int(math.sqrt(l))))))
+
+#生成rrl内的素数表
+prime=[i for i in xrange(1,rrl+1)]#定义整数表
+j=2
+while j&lt;=rrrl:
+    if prime[j-1] != 0:
+        m=int(rrl/j)
+        for i in xrange(j,m+1):
+            prime[i*j-1]=0
+        j=j+1
+    else:
+        j=j+1
+prime.sort() #从小到大重新排列（让0位于前面）
+z=prime.count(0) #统计0的个数
+prime=prime[z+1:rl]
+prime.append(rl) #往素数表里边添加一个大数，避免溢出错误
+#素数表生成完毕
+
+for n in xrange(2,rl+1):
+    p=[] #n的素因子表
+    mu=[] #莫比乌斯表
+    nn=n
+    i=0
+    rn=int(math.sqrt(n))
+    #开始生成n的素因子表
+    while prime[i] &lt;= rn:
+        if n%prime[i]==0:
+            n=n//prime[i]
+            if n%prime[i] != 0:
+                p.append(prime[i])
+                i=i+1
+        else:i=i+1
+    #下面这句的意思是，如果n的一个因子不能被前面的素数整除，那么这个因子就是素数。
+    if n&gt;rn:
+        p.append(n)
+    #n的素因子表p生成完毕
+    mu=mobi(p) #生成莫比乌斯表
+    for d in mu:
+        ll=l//(nn*abs(d))
+        s=s+d//abs(d)*(psi(ll,nn//abs(d)+1,(2*nn-1)//abs(d)))
+
+print(s)
+end=time.clock()
+print(end-start)
+</code></pre>
+</hs></div><p><strong>附件下载：</strong><a href="/usr/uploads/2014/06/572920237.zip">Project Euler 454 代码.zip</a></p>
+
+
+
+
+
+</div>

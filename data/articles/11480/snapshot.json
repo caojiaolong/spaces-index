@@ -1,0 +1,17 @@
+{
+  "metadata": {
+    "id": "11480",
+    "title": "让炼丹更科学一些（三）：SGD的终点损失收敛",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/11480",
+    "date": "2025-12-16",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "fetched_at": "2026-09-14T12:38:10+00:00",
+  "source_snapshot_sha256": "8ad5ffbd170b142b803862af6936473033fc58f9b7de0c5e91d8da27a6b56959",
+  "validators": {
+    "etag": null,
+    "last_modified": null
+  }
+}

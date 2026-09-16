@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "5048",
+    "title": "【理科生读小说】来谈谈“四两拨千斤”",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/5048",
+    "date": "2018-01-28",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 30,
+    "display_formula_count": 13,
+    "image_count": 1,
+    "heading_count": 4,
+    "code_block_count": 0,
+    "source_text_sha256": "a6926c491bc1f1a875641e83f89675f442a450d42e845f40aab62c6203448199",
+    "output_text_sha256": "a6926c491bc1f1a875641e83f89675f442a450d42e845f40aab62c6203448199",
+    "latex_sha256": "e90b59f26dc0130d9ba8cf9d3e248b1a1812ab94168c2ee117396b35d835a06e",
+    "body_sha256": "6e2271f8762d255a42c8fbef6cbb05a7a6e278ac6cb9a881f5879d57645d478f",
+    "converter_version": 1,
+    "markdown_sha256": "af4a9dfb45125a8d5dc7b5684d0c2b0d3692e9496d623caf1f07d8a9af5a8c72"
+  },
+  "fetched_at": "2026-09-14T13:28:35+00:00",
+  "source_snapshot_sha256": "515ee48733e752eed1407cbe3263326d0a18e11de397561dae17614a60d2be7d",
+  "images": {},
+  "local_only": true
+}

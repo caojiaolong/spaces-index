@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "9181",
+    "title": "生成扩散模型漫谈（四）：DDIM = 高观点DDPM",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/9181",
+    "date": "2022-07-27",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 162,
+    "display_formula_count": 22,
+    "image_count": 2,
+    "heading_count": 8,
+    "code_block_count": 0,
+    "source_text_sha256": "f4d84a0684c88d381003441d0602dc2e2143a411a26840dd7ca1c5f9f04051a1",
+    "output_text_sha256": "f4d84a0684c88d381003441d0602dc2e2143a411a26840dd7ca1c5f9f04051a1",
+    "latex_sha256": "69fd71d16d43104c745c07828c82d9a9500075b048439c438978fb0c7aa33a97",
+    "body_sha256": "702b7ab49415cfb1367f978e991a2962ca506567d0e8d0ff96db30d0d9f05daf",
+    "converter_version": 1,
+    "markdown_sha256": "facf9bcbedba6f818cd9bfa4ec35840827f44ba09d5aae4282028a05c1f160db"
+  },
+  "fetched_at": "2026-09-14T12:58:33+00:00",
+  "source_snapshot_sha256": "b7d04b118479d00964bd6ef49fbade45784cd0b01d20e0863c5d962ff3c15996",
+  "images": {},
+  "local_only": true
+}

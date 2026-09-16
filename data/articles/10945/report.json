@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "10945",
+    "title": "MoE环游记：5、均匀分布的反思",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/10945",
+    "date": "2025-05-16",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 37,
+    "display_formula_count": 6,
+    "image_count": 1,
+    "heading_count": 6,
+    "code_block_count": 1,
+    "source_text_sha256": "9196465fbb29220b7b9c7379bc74b594a27fc52b7bb174bef5e338ec60fa535e",
+    "output_text_sha256": "9196465fbb29220b7b9c7379bc74b594a27fc52b7bb174bef5e338ec60fa535e",
+    "latex_sha256": "ea8e85abe8e8fd6f503708def24f4e0dab57f08e36f7a58593b0c932af99c8e8",
+    "body_sha256": "126d0c9a7caace6a5e9fad47bff144dd221f02cd4a3f5b731227973a1f3bb2bc",
+    "converter_version": 1,
+    "markdown_sha256": "d86293370b811eb7894b6eb20132540435f851ee6b0196252318350d252c6891"
+  },
+  "fetched_at": "2026-09-14T12:42:20+00:00",
+  "source_snapshot_sha256": "f001d82d4ecd7fbc2f7d7c84c560e3ec23ae939b04a5f86e660a6227c8be69dd",
+  "images": {},
+  "local_only": true
+}

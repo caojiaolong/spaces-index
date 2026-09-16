@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "1134",
+    "title": "《自然极值》系列——8.极值分析",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/1134",
+    "date": "2010-12-26",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 40,
+    "display_formula_count": 10,
+    "image_count": 1,
+    "heading_count": 0,
+    "code_block_count": 0,
+    "source_text_sha256": "8539d01e2393e49759a1042b22820593f6b6613fb46712c56b2419144e298feb",
+    "output_text_sha256": "8539d01e2393e49759a1042b22820593f6b6613fb46712c56b2419144e298feb",
+    "latex_sha256": "0a1b4849c9e1e966c77f08fdcff152b420a0f7884a7663d8c27942d23f9ff390",
+    "body_sha256": "eb6199654e1d1d3edb91b183502815327b94219fbd9791068072580e15b6f394",
+    "converter_version": 1,
+    "markdown_sha256": "a0957bb997f1a79d2149643f84948bc606785ba98c5c279899d74f4e7f42778f"
+  },
+  "fetched_at": "2026-09-14T14:25:59+00:00",
+  "source_snapshot_sha256": "b2eca9bddaadd8cbfa129b9a48db79613e315b9f2ee8609597269a84f307f3b9",
+  "images": {},
+  "local_only": true
+}

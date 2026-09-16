@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "2219",
+    "title": "高维空间的叉积及其几何意义",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/2219",
+    "date": "2013-12-26",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 25,
+    "display_formula_count": 10,
+    "image_count": 0,
+    "heading_count": 2,
+    "code_block_count": 0,
+    "source_text_sha256": "d4eefdc9a59da11485e1dcc4a579727853e794e2249ce0660f9774b1e5da6f0b",
+    "output_text_sha256": "d4eefdc9a59da11485e1dcc4a579727853e794e2249ce0660f9774b1e5da6f0b",
+    "latex_sha256": "29e5b92ad3b50e6d2cba87767eec60c5c56406f5b68832d72ef15faf862d5886",
+    "body_sha256": "b3faae1f38cb3a69b83d9b245541e8eb2c01c77b9db1ae21fb3d447ad94fdde1",
+    "converter_version": 1,
+    "markdown_sha256": "f0c24856d0e0f307225055f5c3d0bb827c239332bc486623e9943a24d7ed4d3c"
+  },
+  "fetched_at": "2026-09-14T13:58:25+00:00",
+  "source_snapshot_sha256": "a5c21f197e7248cd069cd0d0539a7c2eba1770c540838741a52cc301d740adbf",
+  "images": {},
+  "local_only": true
+}

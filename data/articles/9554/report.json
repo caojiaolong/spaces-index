@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "9554",
+    "title": "Google新作试图“复活”RNN：RNN能否再次辉煌？",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/9554",
+    "date": "2023-03-28",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 122,
+    "display_formula_count": 15,
+    "image_count": 11,
+    "heading_count": 12,
+    "code_block_count": 0,
+    "source_text_sha256": "c332edd063454b19fe18d80be7549307ce0213585081d8948cf3d8b48c098d6b",
+    "output_text_sha256": "c332edd063454b19fe18d80be7549307ce0213585081d8948cf3d8b48c098d6b",
+    "latex_sha256": "e947cd8897c945b36b231ce9885369c89dea8c1bd950258da3321c414ab7a376",
+    "body_sha256": "be4a3603985185bbf1e7e932f33df0cfd171031d9fc0ad5f985f0d1cb4a3d184",
+    "converter_version": 1,
+    "markdown_sha256": "51ecaf84828c6722a5f1252448ffc0d690220746d9f5723bfee495f1bb273ff3"
+  },
+  "fetched_at": "2026-09-14T12:54:51+00:00",
+  "source_snapshot_sha256": "2b8acea7dfb1b942a273910b43e246adc4a2f401a36dcbe532f3e79ffbcf1e63",
+  "images": {},
+  "local_only": true
+}

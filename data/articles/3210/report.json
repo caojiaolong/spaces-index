@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "3210",
+    "title": "怎么会这么巧！背后的隐藏信息",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/3210",
+    "date": "2015-01-21",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 4,
+    "display_formula_count": 4,
+    "image_count": 0,
+    "heading_count": 2,
+    "code_block_count": 0,
+    "source_text_sha256": "715320f15e587f4c1eae2ade9e69aa81a5fd3ef5ad333e2b939db08e6fc18811",
+    "output_text_sha256": "715320f15e587f4c1eae2ade9e69aa81a5fd3ef5ad333e2b939db08e6fc18811",
+    "latex_sha256": "051d628f3b3b9205e1007399492d8b3103cda465afc71b79d3b8c0ab739cf2e1",
+    "body_sha256": "22edbb0b9cac569788fb79510f16a6d009bee2af2fc06caafaff86eb1cdf24ae",
+    "converter_version": 1,
+    "markdown_sha256": "cb033ea43fa283d822e37e5f9cb67d88875aa6b0196f9af27539564af11a3327"
+  },
+  "fetched_at": "2026-09-14T13:47:46+00:00",
+  "source_snapshot_sha256": "202ce4e4bd6803c867d95a55c46aca4f88cc520f18dbcbb3c2d7615538273559",
+  "images": {},
+  "local_only": true
+}

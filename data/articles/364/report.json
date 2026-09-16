@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "364",
+    "title": "CDS星表库",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/364",
+    "date": "2010-01-27",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 0,
+    "display_formula_count": 0,
+    "image_count": 4,
+    "heading_count": 0,
+    "code_block_count": 0,
+    "source_text_sha256": "0357b965662f0fdeebf742bb9bcc0d8ff96e1706b565dda006a21f88aac25efa",
+    "output_text_sha256": "0357b965662f0fdeebf742bb9bcc0d8ff96e1706b565dda006a21f88aac25efa",
+    "latex_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "body_sha256": "815890cf425fd25df0b2b65897793f8510a4bc50a7ac3b96c48d356e178bfe8b",
+    "converter_version": 1,
+    "markdown_sha256": "f76ced076c1a53971b9a516eef045e6ddfc914a00481d15b1c8e3324d3199d70"
+  },
+  "fetched_at": "2026-09-14T14:43:10+00:00",
+  "source_snapshot_sha256": "22fffec533ccc7778a5b4173284f2a3affd83f22d24d882afa83155d223afc44",
+  "images": {},
+  "local_only": true
+}

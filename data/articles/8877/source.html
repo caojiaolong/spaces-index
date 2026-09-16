@@ -1,0 +1,47 @@
+<div class="PostContent" id="PostContent">
+<p>在<a href="/archives/8373" target="_blank">《GlobalPointer：用统一的方式处理嵌套和非嵌套NER》</a>中，我们提出了名为“GlobalPointer”的token-pair识别模块，当它用于NER时，能统一处理嵌套和非嵌套任务，并在非嵌套场景有着比CRF更快的速度和不逊色于CRF的效果。换言之，就目前的实验结果来看，至少在NER场景，我们可以放心地将CRF替换为GlobalPointer，而不用担心效果和速度上的损失。</p><p>在这篇文章中，我们提出GlobalPointer的一个改进版——Efficient GlobalPointer，它主要针对原GlobalPointer参数利用率不高的问题进行改进，明显降低了GlobalPointer的参数量。更有趣的是，多个任务的实验结果显示，参数量更少的Efficient GlobalPointer反而还取得更好的效果。</p><h2 id="大量的参数">大量的参数</h2><p>这里简单回顾一下GlobalPointer，详细介绍则请读者阅读<a href="/archives/8373" target="_blank">《GlobalPointer：用统一的方式处理嵌套和非嵌套NER》</a>。简单来说，GlobalPointer是基于内积的token-pair识别模块，它可以用于NER场景，因为对于NER来说我们只需要把每一类实体的“(首, 尾)”这样的token-pair识别出来就行了。</p><p>设长度为$n$的输入$t$经过编码后得到向量序列$[\boldsymbol{h}_1,\boldsymbol{h}_2,\cdots,\boldsymbol{h}_n]$，原始GlobalPointer通过变换$\boldsymbol{q}_{i,\alpha}=\boldsymbol{W}_{q,\alpha}\boldsymbol{h}_i$和$\boldsymbol{k}_{i,\alpha}=\boldsymbol{W}_{k,\alpha}\boldsymbol{h}_i$我们得到序列向量序列$[\boldsymbol{q}_{1,\alpha},\boldsymbol{q}_{2,\alpha},\cdots,\boldsymbol{q}_{n,\alpha}]$和$[\boldsymbol{k}_{1,\alpha},\boldsymbol{k}_{2,\alpha},\cdots,\boldsymbol{k}_{n,\alpha}]$，然后定义<br/>
+\begin{equation}s_{\alpha}(i,j) = \boldsymbol{q}_{i,\alpha}^{\top}\boldsymbol{k}_{j,\alpha}\end{equation}<br/>
+作为从$i$到$j$的连续片段是一个类型为$\alpha$的实体的打分。这里我们暂时省略了偏置项，如果觉得有必要，自行加上就好。</p><p>这样一来，有多少种类型的实体，就有多少个$\boldsymbol{W}_{q,\alpha}$和$\boldsymbol{W}_{k,\alpha}$。不妨设$\boldsymbol{W}_{q,\alpha},\boldsymbol{W}_{k,\alpha}\in\mathbb{R}^{d\times D}$，那么每新增一种实体类型，我们就要新增$2Dd$个参数；而如果用CRF+BIO标注的话，每新增一种实体类型，我们只需要增加$2D$的参数（转移矩阵参数较少，忽略不计）。对于BERT base来说，常见的选择是$D=768,d=64$，可见GlobalPointer的参数量远远大于CRF。</p><h2 id="识别与分类">识别与分类</h2><p>事实上，不难想象对于任意类型$\alpha$，其打分矩阵$s_{\alpha}(i,j)$必然有很多相似之处，因为对于大多数token-pair而言，它们代表的都是“非实体”，这些非实体的正确打分都是负的。这也就意味着，我们没必要为每种实体类型都设计独立的$s_{\alpha}(i,j)$，它们应当包含更多的共性。</p><p>怎么突出$s_{\alpha}(i,j)$的共性呢？以NER为例，我们知道NER实际上可以分解为“抽取”和“分类”两个步骤，“抽取”就是抽取出为实体的片段，“分类”则是确定每个实体的类型。这样一来，“抽取”这一步相当于只有一种实体类型的NER，我们可以用一个打分矩阵就可以完成，即$(\boldsymbol{W}_q\boldsymbol{h}_i)^{\top}(\boldsymbol{W}_k\boldsymbol{h}_j)$，而“分类”这一步，我们则可以用“特征拼接+Dense层”来完成，即$\boldsymbol{w}_{\alpha}^{\top}[\boldsymbol{h}_i;\boldsymbol{h}_j]$。于是我们可以将两项组合起来，作为新的打分函数：<br/>
+\begin{equation}s_{\alpha}(i,j) = (\boldsymbol{W}_q\boldsymbol{h}_i)^{\top}(\boldsymbol{W}_k\boldsymbol{h}_j) + \boldsymbol{w}_{\alpha}^{\top}[\boldsymbol{h}_i;\boldsymbol{h}_j]\label{eq:EGP-1}\end{equation}<br/>
+这样一来，“抽取”这部分的参数对所有实体类型都是共享的，因此每新增一种实体类型，我们只需要新增对应的$\boldsymbol{w}_{\alpha}\in\mathbb{R}^{2D}$就行了，即新增一种实体类型增加的参数量也只是$2D$。进一步地，我们记$\boldsymbol{q}_i=\boldsymbol{W}_q\boldsymbol{h}_i, \boldsymbol{k}_i=\boldsymbol{W}_k\boldsymbol{h}_i$，然后为了进一步地减少参数量，我们可以用$[\boldsymbol{q}_i;\boldsymbol{k}_i]$来代替$\boldsymbol{h}_i$，此时<br/>
+\begin{equation}s_{\alpha}(i,j) = \boldsymbol{q}_i^{\top}\boldsymbol{k}_j + \boldsymbol{w}_{\alpha}^{\top}[\boldsymbol{q}_i;\boldsymbol{k}_i;\boldsymbol{q}_j;\boldsymbol{k}_j]\label{eq:EGP}\end{equation}<br/>
+此时$\boldsymbol{w}_{\alpha}\in\mathbb{R}^{4d}$，因此每新增一种实体类型所增加的参数量为$4d$，由于通常$d \ll D$，所以式$\eqref{eq:EGP}$的参数量往往少于式$\eqref{eq:EGP-1}$，它就是Efficient GlobalPointer最终所用的打分函数。</p><h2 id="惊喜的实验">惊喜的实验</h2><p>Efficient GlobalPointer已经内置在<code class="language-python">bert4keras&gt;=0.10.9</code>中，读者只需要更改一行代码，就可以切换Efficient GlobalPointer了。</p><pre class="line-numbers"><code class="language-python"># from bert4keras.layers import GlobalPointer
+from bert4keras.layers import EfficientGlobalPointer as GlobalPointer</code></pre><p>下面我们来对比一下GlobalPointer和Efficient GlobalPointer的结果：<br/>
+\begin{array}{c}<br/>
+\text{人民日报NER实验结果} \\<br/>
+{\begin{array}{c|cc}<br/>
+\hline<br/>
+&amp; \text{验证集F1} &amp; \text{测试集F1}\\<br/>
+\hline<br/>
+\text{CRF} &amp; 96.39\% &amp; 95.46\% \\<br/>
+\text{GlobalPointer} &amp; \textbf{96.25%} &amp; \textbf{95.51%} \\<br/>
+\text{Efficient GlobalPointer} &amp; 96.10\% &amp; 95.36\%\\<br/>
+\hline<br/>
+\end{array}} \\ \\<br/>
+\text{CLUENER实验结果} \\<br/>
+{\begin{array}{c|cc}<br/>
+\hline<br/>
+&amp; \text{验证集F1} &amp; \text{测试集F1} \\<br/>
+\hline<br/>
+\text{CRF} &amp; 79.51\% &amp; 78.70\% \\<br/>
+\text{GlobalPointer} &amp; 80.03\% &amp; 79.44\%\\<br/>
+\text{Efficient GlobalPointer} &amp; \textbf{80.66%} &amp; \textbf{80.04%} \\<br/>
+\hline<br/>
+\end{array}} \\ \\<br/>
+\text{CMeEE实验结果} \\<br/>
+{\begin{array}{c|cc}<br/>
+\hline<br/>
+&amp; \text{验证集F1} &amp; \text{测试集F1} \\<br/>
+\hline<br/>
+\text{CRF} &amp; 63.81\% &amp; 64.39\% \\<br/>
+\text{GlobalPointer} &amp; 64.84\% &amp; 65.98\%\\<br/>
+\text{Efficient GlobalPointer} &amp; \textbf{65.16%} &amp; \textbf{66.54%} \\<br/>
+\hline<br/>
+\end{array}}<br/>
+\end{array}</p><p>可以看到，Efficient GlobalPointer的实验结果还是很不错的，除了在人民日报任务上有轻微下降外，其他两个任务都获得了一定提升，并且整体而言提升的幅度大于下降的幅度，所以Efficient GlobalPointer不单单是节省了参数量，还提升了效果。而在速度上，Efficient GlobalPointer与原始的GlobalPointer几乎没有差别。</p><h2 id="分析与评述">分析与评述</h2><p>考虑到人民日报NER只有3种实体类型，CLUENER和CMeEE分别有10种和9种实体类型，从分数来看也是人民日报比其他两种要高，这说明CLUENER和CMeEE的难度更大。另一方面，在CLUENER和CMeEE上Efficient GlobalPointer都取得了提升，所以我们可以初步推断：实体类别越多、任务越难时，Efficient GlobalPointer越有效。</p><p>这也不难理解，原版GlobalPointer参数过大，那么平均起来每个参数更新越稀疏，相对来说也越容易过拟合；而Efficient GlobalPointer共享了“抽取”这一部分参数，仅通过“分类”参数区分不同的实体类型，那么实体抽取这一步的学习就会比较充分，而实体分类这一步由于参数比较少，学起来也比较容易。反过来，Efficient GlobalPointer的实验效果好也间接证明了式$\eqref{eq:EGP}$的分解是合理的。</p><p>当然，不排除在训练数据足够多的时候，原版GlobalPointer会取得更好的效果。但即便如此，在类别数目较多时，原版GlobalPointer可能会占用较多显存以至于难以使用，还是以base版$D=768,d=64$为例，如果类别数有100个，那么原版GlobalPointer的参数量为$2\times 768\times 64\times 100$，接近千万，不得不说确实是不够友好了。</p><h2 id="最后的总结">最后的总结</h2><p>本文指出了原版GlobalPointer的参数利用率不高问题，并提出了相应的改进版Efficient GlobalPointer。实验结果显示，Efficient GlobalPointer在降低参数量的同时，基本不会损失性能，甚至还可能获得提升。</p>
+
+
+
+
+
+</div>

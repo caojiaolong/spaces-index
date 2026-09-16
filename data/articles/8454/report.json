@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "8454",
+    "title": "SimBERTv2来了！融合检索和生成的RoFormer-Sim模型",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/8454",
+    "date": "2021-06-11",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 8,
+    "display_formula_count": 4,
+    "image_count": 1,
+    "heading_count": 5,
+    "code_block_count": 2,
+    "source_text_sha256": "0a9b2d3524e2ffad2098f0cf6a2327c1d91de23440bb450fd5ccdca187854452",
+    "output_text_sha256": "0a9b2d3524e2ffad2098f0cf6a2327c1d91de23440bb450fd5ccdca187854452",
+    "latex_sha256": "076e9f1f22032182e5e9fdccacfa0309634da07f94bbfe71e30c23e76a661956",
+    "body_sha256": "7153cd1958c0c946f21edfa4123febeee5c9fa380b5ea74d1fcd1675d5609b91",
+    "converter_version": 1,
+    "markdown_sha256": "50a304ea9081b260d68917b3b46dfb421c8bd3d986c870b5912bd17a18c73724"
+  },
+  "fetched_at": "2026-09-14T13:06:11+00:00",
+  "source_snapshot_sha256": "6bcba72c3f5aa932e5a86602c3fd48592b832e8ce68f5779ab9061592394b183",
+  "images": {},
+  "local_only": true
+}

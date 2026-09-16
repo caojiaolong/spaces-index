@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "5448",
+    "title": "最小熵原理（一）：无监督学习的原理",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/5448",
+    "date": "2018-04-18",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 7,
+    "display_formula_count": 2,
+    "image_count": 0,
+    "heading_count": 9,
+    "code_block_count": 0,
+    "source_text_sha256": "ad1a6775522162716e1b8eb800ccabe64f2dddb3e8df07a47403c95d41750cc6",
+    "output_text_sha256": "ad1a6775522162716e1b8eb800ccabe64f2dddb3e8df07a47403c95d41750cc6",
+    "latex_sha256": "ae7637df75eea5cb6fb3ce1e250c40681b3f8d8b5c585388666180f1b54ab5cb",
+    "body_sha256": "989087738d679b169a89be3f39e521695a02b2d749bb86381130fc3cb083e7dd",
+    "converter_version": 1,
+    "markdown_sha256": "2901c644a3f82a87185c4d555986b2a13a75235c4714da5048f53bd06676bcd0"
+  },
+  "fetched_at": "2026-09-14T13:27:21+00:00",
+  "source_snapshot_sha256": "3140f07ff1d31c5192f86f3f874e33d86a8ebc0a6005d5583a378f16440956a1",
+  "images": {},
+  "local_only": true
+}

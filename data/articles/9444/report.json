@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "9444",
+    "title": "Transformer升级之路：8、长度外推性与位置鲁棒性",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/9444",
+    "date": "2023-01-31",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 94,
+    "display_formula_count": 3,
+    "image_count": 2,
+    "heading_count": 7,
+    "code_block_count": 2,
+    "source_text_sha256": "1d15bdde58bfffe4eba068ad7ba0b0d0edc93725609624d586db004136cebec8",
+    "output_text_sha256": "1d15bdde58bfffe4eba068ad7ba0b0d0edc93725609624d586db004136cebec8",
+    "latex_sha256": "16318bd33afe8f2f1e54e05b12ed598cd0b7bdfaff0a4e1378ac24822df5ed5b",
+    "body_sha256": "75038973af0832d5debace263d2103bc99c27c0318d3dfc1c6b5f69703b8bcc8",
+    "converter_version": 1,
+    "markdown_sha256": "a8f1356bcffb9cd17c8665a9c982c864fad30dc6b1f9145c065d51b4a87e72f2"
+  },
+  "fetched_at": "2026-09-14T12:55:54+00:00",
+  "source_snapshot_sha256": "1631e17f02b656f86339b8a6db1936c5a7d4470cebe0593c83471e6fd3691901",
+  "images": {},
+  "local_only": true
+}

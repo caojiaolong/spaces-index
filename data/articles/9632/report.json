@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "9632",
+    "title": "关于NBCE方法的一些补充说明和分析",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/9632",
+    "date": "2023-05-31",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 49,
+    "display_formula_count": 6,
+    "image_count": 0,
+    "heading_count": 6,
+    "code_block_count": 0,
+    "source_text_sha256": "a7bc2a5586e624708d5be2fd3f979669882e946d9e0f0c9be0768faee74289ba",
+    "output_text_sha256": "a7bc2a5586e624708d5be2fd3f979669882e946d9e0f0c9be0768faee74289ba",
+    "latex_sha256": "dc53a0482202966d6aed8a4f66971a23f2ddb3ec8b1379baec87d67b404dabd7",
+    "body_sha256": "ead41ca33d0684b3230402bcbc664fb496db33b0dcff1dc5212728ae4b7400b8",
+    "converter_version": 1,
+    "markdown_sha256": "2251faddb487c8e98eaa69e9155c5d30e3e8132a2a5f701e1f275983251a5d5d"
+  },
+  "fetched_at": "2026-09-14T12:53:53+00:00",
+  "source_snapshot_sha256": "8ece1203d9d7044e944e2a73a61b755e2a4db129c70f0c795fc49b23955e07fe",
+  "images": {},
+  "local_only": true
+}

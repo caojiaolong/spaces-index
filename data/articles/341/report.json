@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "341",
+    "title": "与日食失之交臂...",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/341",
+    "date": "2010-01-15",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 0,
+    "display_formula_count": 0,
+    "image_count": 0,
+    "heading_count": 0,
+    "code_block_count": 0,
+    "source_text_sha256": "911ac766b46fdc68650417fbb11fc6238f96a94f6615eebaa8ef26ef9560cd12",
+    "output_text_sha256": "911ac766b46fdc68650417fbb11fc6238f96a94f6615eebaa8ef26ef9560cd12",
+    "latex_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "body_sha256": "9701c70bb09180d10249c39b6f6512bb5cf45570f896c0e57b829f4a7f8b2720",
+    "converter_version": 1,
+    "markdown_sha256": "6d71af40c5789abb468c502a7734d31211c9812b18f3e3f7313601bdba89685e"
+  },
+  "fetched_at": "2026-09-14T14:43:49+00:00",
+  "source_snapshot_sha256": "1bb1d5140d6e0eba9ef7255dd8dc02f5b251f3f521437cc68cd36831ceb9fa12",
+  "images": {},
+  "local_only": true
+}

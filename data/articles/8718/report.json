@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "8718",
+    "title": "用狄拉克函数来构造非光滑函数的光滑近似",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/8718",
+    "date": "2021-10-10",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 65,
+    "display_formula_count": 15,
+    "image_count": 2,
+    "heading_count": 5,
+    "code_block_count": 0,
+    "source_text_sha256": "26ea791cb35be201ea8681fb908003af78bd2a4e9187e01340c07459e342ecec",
+    "output_text_sha256": "26ea791cb35be201ea8681fb908003af78bd2a4e9187e01340c07459e342ecec",
+    "latex_sha256": "294c5a3b5300288cedbde176a046d95d810c4fe53855b0ec1f7849585ffe763b",
+    "body_sha256": "86d5de0f1ace33cca581789440f8fd56217901d21a2120bc6f96fa51e4039d03",
+    "converter_version": 1,
+    "markdown_sha256": "7a1a3f0276029ac0c1789203dd90f1722dc0c10071c4f7e3fc483c67911d83ef"
+  },
+  "fetched_at": "2026-09-14T13:03:47+00:00",
+  "source_snapshot_sha256": "efb6260bddf0d3beb337eae6434b7c174346e23563d9e4ec3ce1414237e4d0c5",
+  "images": {},
+  "local_only": true
+}

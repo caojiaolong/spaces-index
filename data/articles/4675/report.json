@@ -1,0 +1,39 @@
+{
+  "metadata": {
+    "id": "4675",
+    "title": "更别致的词向量模型(四)：模型的求解",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/4675",
+    "date": "2017-11-19",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "source_dom_exact": true,
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "attributes_exact": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 22,
+    "display_formula_count": 8,
+    "image_count": 0,
+    "heading_count": 4,
+    "code_block_count": 0,
+    "source_text_sha256": "f7e117c79da13b97058832b5df5f8fcfdcdd8706cabf6ddc425fb361ea68865d",
+    "output_text_sha256": "f7e117c79da13b97058832b5df5f8fcfdcdd8706cabf6ddc425fb361ea68865d",
+    "latex_sha256": "444558994f9d8d9fb201b7bd559c8f429809590c8a9f2961d93b0e1d98d76427",
+    "body_sha256": "29e4c70040f5c1482623af901a17c2c5a8e4319c646befaafe0a7415bb34b946",
+    "converter_version": 1,
+    "format": "html-v1",
+    "source_warnings": [],
+    "fallback_reason": "Unsupported body element: u:0002",
+    "markdown_sha256": "278d8ffc5da1145567c61d5c63339f0739ed382ea191abd2da9c6d21620777c3"
+  },
+  "fetched_at": "2026-09-14T13:29:45+00:00",
+  "source_snapshot_sha256": "9980bec371ccb6f7d907814a4c34af81a54b4d69c6003057819ab3ce781141fb",
+  "images": {},
+  "local_only": true
+}

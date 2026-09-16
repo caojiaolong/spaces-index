@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "3956",
+    "title": "【中文分词系列】 5. 基于语言模型的无监督分词",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/3956",
+    "date": "2016-09-12",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 35,
+    "display_formula_count": 9,
+    "image_count": 0,
+    "heading_count": 6,
+    "code_block_count": 5,
+    "source_text_sha256": "bc7b020c78c7fa99bb550ece650c910d51bf7bb02926411944ffe548bbf47432",
+    "output_text_sha256": "bc7b020c78c7fa99bb550ece650c910d51bf7bb02926411944ffe548bbf47432",
+    "latex_sha256": "8b1221235c7b25364ca9888f211c20ae44be7e6933febd1d7867bd668edfe72b",
+    "body_sha256": "501c053cec77982fcd24a3bf8ed654856cd5ec978c633f4cee7275730a2e300a",
+    "converter_version": 1,
+    "markdown_sha256": "0f31e756a97638592f0bf97ef69c4eaf863b7b01efa57074211478d8598bc5ab"
+  },
+  "fetched_at": "2026-09-14T13:38:05+00:00",
+  "source_snapshot_sha256": "3c9f9f935d9bb938ec7540419b905d733fb8553f7b1b8d07ab1cd05cc5018aba",
+  "images": {},
+  "local_only": true
+}

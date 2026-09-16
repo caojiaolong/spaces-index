@@ -1,0 +1,17 @@
+{
+  "metadata": {
+    "id": "11459",
+    "title": "滑动平均视角下的权重衰减和学习率",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/11459",
+    "date": "2025-12-05",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "fetched_at": "2026-09-14T12:38:23+00:00",
+  "source_snapshot_sha256": "662fa13e6bb3dbd81ff5d495d693ad62deb5404cb05d558370a8c5271ab8b455",
+  "validators": {
+    "etag": null,
+    "last_modified": null
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "4171",
+    "title": "2016年全年天象",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/4171",
+    "date": "2015-12-31",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 0,
+    "display_formula_count": 0,
+    "image_count": 0,
+    "heading_count": 12,
+    "code_block_count": 0,
+    "source_text_sha256": "300441f48791f55afef5cf16e6108755037e13093d6f3862469f16be8c032203",
+    "output_text_sha256": "300441f48791f55afef5cf16e6108755037e13093d6f3862469f16be8c032203",
+    "latex_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "body_sha256": "67b6eddc9c56e5f910a8f4622f799f18e8a73cc1b19997b152c417c78880f1ca",
+    "converter_version": 1,
+    "markdown_sha256": "a5ccd7ff1034226bcd2c50a0884eab3e8b7868a79a8c52982bc4788330ab7355"
+  },
+  "fetched_at": "2026-09-14T13:43:07+00:00",
+  "source_snapshot_sha256": "34cce03dbdbe2c9dd6e146a4119cd04f7987961c21ec842a79f535bf59dbd69b",
+  "images": {},
+  "local_only": true
+}

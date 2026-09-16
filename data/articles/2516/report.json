@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "2516",
+    "title": "三月二十七日",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/2516",
+    "date": "2014-03-27",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 0,
+    "display_formula_count": 0,
+    "image_count": 0,
+    "heading_count": 0,
+    "code_block_count": 0,
+    "source_text_sha256": "2fe74c761ba1880d51d172374319e13dc4c78e6ea0e7c95df4e5644247c5b085",
+    "output_text_sha256": "2fe74c761ba1880d51d172374319e13dc4c78e6ea0e7c95df4e5644247c5b085",
+    "latex_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "body_sha256": "040fa82e3edf906f2acfcdafb9826e0320d7edffc47552be79ea4d65735bebb2",
+    "converter_version": 1,
+    "markdown_sha256": "79e09fefa286489fb463b8d98c36d632219eedee8e335a9e0288a549c88871fa"
+  },
+  "fetched_at": "2026-09-14T13:55:28+00:00",
+  "source_snapshot_sha256": "aa59aa1f6ac0a48a2968e4c1efa65a81606ecc66296fe4c161e33d88b74c3225",
+  "images": {},
+  "local_only": true
+}

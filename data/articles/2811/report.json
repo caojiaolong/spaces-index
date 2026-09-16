@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "2811",
+    "title": "从费马大定理谈起（三）：高斯整数",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/2811",
+    "date": "2014-08-16",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 91,
+    "display_formula_count": 3,
+    "image_count": 1,
+    "heading_count": 3,
+    "code_block_count": 0,
+    "source_text_sha256": "ebc12b0ff1b6eb3c029c808727886039ea532dac53cb038057b781e819f9e2ab",
+    "output_text_sha256": "ebc12b0ff1b6eb3c029c808727886039ea532dac53cb038057b781e819f9e2ab",
+    "latex_sha256": "3bb88fb71f49e35202c14b505d42e263a08dd2c67322e5fb162a7dbedd951da9",
+    "body_sha256": "bdf828b110012ad15006c49c1f707b2afa20ce57d1a89d5a149c35b28a4ffc69",
+    "converter_version": 1,
+    "markdown_sha256": "fc597eda9593631d8fbfa7688098219c24a16508b87838324275faf01ec57ee2"
+  },
+  "fetched_at": "2026-09-14T13:52:24+00:00",
+  "source_snapshot_sha256": "856b8068421e02716cce188c313ed26497f3b83fba89c8b2d12083ba21f2d392",
+  "images": {},
+  "local_only": true
+}

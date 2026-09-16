@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "124",
+    "title": "神奇的麦田圈坐标图片之谜",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/124",
+    "date": "2009-09-15",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 0,
+    "display_formula_count": 0,
+    "image_count": 2,
+    "heading_count": 0,
+    "code_block_count": 0,
+    "source_text_sha256": "bcf072c91587658639a857121d744e9e53b9a7376ba3a29dd6e74b3ece50643b",
+    "output_text_sha256": "bcf072c91587658639a857121d744e9e53b9a7376ba3a29dd6e74b3ece50643b",
+    "latex_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "body_sha256": "d194e8dbd3839dfd458c8c87a01ab1078e32d78295289a50eef184a658882d91",
+    "converter_version": 1,
+    "markdown_sha256": "a55d08934b5ec403f8c82237a77d860fa0acfe0f796f7598a7c00ea7da8fcac4"
+  },
+  "fetched_at": "2026-09-14T14:53:02+00:00",
+  "source_snapshot_sha256": "c7ce630b592c28cfe24eda095e85ca6bbd858f19c3d7c83d25f8efe04082c404",
+  "images": {},
+  "local_only": true
+}

@@ -1,0 +1,130 @@
+<div class="PostContent" id="PostContent">
+<p>提高模型的泛化性能是机器学习致力追求的目标之一。常见的提高泛化性的方法主要有两种：第一种是添加噪声，比如往输入添加高斯噪声、中间层增加Dropout以及进来比较热门的对抗训练等，对图像进行随机平移缩放等数据扩增手段某种意义上也属于此列；第二种是往loss里边添加正则项，比如$L_1, L_2$惩罚、梯度惩罚等。本文试图探索几种常见的提高泛化性能的手段的关联。</p><h2 id="随机噪声">随机噪声</h2><p>我们记模型为$f(x)$，$\mathcal{D}$为训练数据集合，$l(f(x), y)$为单个样本的loss，那么我们的优化目标是<br/>
+\begin{equation}\mathop{\text{argmin}}_{\theta} L(\theta)=\mathbb{E}_{(x,y)\sim \mathcal{D}}[l(f(x), y)]\end{equation}<br/>
+$\theta$是$f(x)$里边的可训练参数。假如往模型输入添加噪声$\varepsilon$，其分布为$q(\varepsilon)$，那么优化目标就变为<br/>
+\begin{equation}\mathop{\text{argmin}}_{\theta} L_{\varepsilon}(\theta)=\mathbb{E}_{(x,y)\sim \mathcal{D}, \varepsilon\sim q(\varepsilon)}[l(f(x + \varepsilon), y)]\end{equation}<br/>
+当然，可以添加噪声的地方不仅仅是输入，也可以是中间层，也可以是权重$\theta$，甚至可以是输出$y$（等价于标签平滑），噪声也不一定是加上去的，比如Dropout是乘上去的。对于加性噪声来说，$q(\varepsilon)$的常见选择是均值为0、方差固定的高斯分布；而对于乘性噪声来说，常见选择是均匀分布$U([0,1])$或者是伯努利分布。</p><p>添加随机噪声的目的很直观，就是希望模型能学会抵御一些随机扰动，从而降低对输入或者参数的敏感性，而降低了这种敏感性，通常意味着所得到的模型不再那么依赖训练集，所以有助于提高模型泛化性能。</p><h2 id="提高效率">提高效率</h2><p>添加随机噪声的方式容易实现，而且在不少情况下确实也很有效，但它有一个明显的缺点：不够“特异性”。噪声$\varepsilon$是随机的，而不是针对$x$构建的，这意味着多数情况下$x + \varepsilon$可能只是一个平凡样本，也就是没有对原模型造成比较明显的扰动，所以对泛化性能的提高帮助有限。</p><h3 id="增加采样">增加采样</h3><p>从理论上来看，加入随机噪声后，单个样本的loss变为<br/>
+\begin{equation}\tilde{l}(x,y)=\mathbb{E}_{\varepsilon\sim q(\varepsilon)}[l(f(x+\varepsilon),y)]=\int q(\varepsilon) l(f(x+\varepsilon),y) d\varepsilon\label{eq:noisy-loss}\end{equation}<br/>
+但实践上，对于每个特定的样本$(x,y)$，我们一般只采样一个噪声，所以并没有很好地近似上式。当然，我们可以采样多个噪声$\varepsilon_1,\varepsilon_2,\cdots,\varepsilon_k\sim q(\varepsilon)$，然后更好地近似<br/>
+\begin{equation}\tilde{l}(x,y)\approx \frac{1}{k}\sum_{i=1}^k l(f(x+\varepsilon_i),y)\end{equation}<br/>
+但这样相当于batch_size扩大为原来的$k$倍，增大了计算成本，并不是那么友好。</p><h3 id="近似展开">近似展开</h3><p>一个直接的想法是，如果能事先把式$\eqref{eq:noisy-loss}$中的积分算出来，那就用不着低效率地采样了（或者相当于一次性采样无限多的噪声）。我们就往这个方向走一下试试。当然，精确的显式积分基本上是做不到的，我们可以做一下近似展开：<br/>
+\begin{equation}l(f(x+\varepsilon),y)\approx l(f(x),y)+(\varepsilon \cdot \nabla_x) l(f(x),y)+\frac{1}{2}(\varepsilon \cdot \nabla_x)^2 l(f(x),y)\end{equation}<br/>
+然后两端乘以$q(\varepsilon)$积分，这里假设$\varepsilon$的各个分量是独立同分布的，并且均值为0、方差为$\sigma^2$，那么积分结果就是<br/>
+\begin{equation}\int q(\varepsilon)l(f(x+\varepsilon),y)d\varepsilon \approx l(f(x),y)+\frac{1}{2}\sigma^2 \Delta l(f(x),y)\end{equation}<br/>
+这里的$\Delta$是拉普拉斯算子，即$\Delta f = \sum\limits_i \frac{\partial^2}{\partial x_i^2} f$。这个结果在形式上很简单，就是相当于往loss里边加入正则项$\frac{1}{2}\sigma^2 \Delta l(f(x),y)$，然而实践上却相当困难，因为这意味着要算$l$的二阶导数，再加上梯度下降，那么就一共要算三阶导数，这是现有深度学习框架难以高效实现的。</p><h2 id="转移目标">转移目标</h2><p>直接化简$l(f(x+\varepsilon),y)$的积分是行不通了，但我们还可以试试将优化目标换成<br/>
+\begin{equation}l(f(x+\varepsilon),f(x)) + l(f(x),y)\label{eq:loss-2}\end{equation}<br/>
+也就是变成同时缩小$f(x),y$、$f(x+\varepsilon),f(x)$的差距，两者双管齐下，一定程度上也能达到缩小$f(x+\varepsilon),y$差距的目标。关键的是，这个目标能得到更有意思的结果。</p><h3 id="思路解析">思路解析</h3><p>用数学的话来讲，如果$l$是某种形式的距离度量，那么根据三角不等式就有<br/>
+\begin{equation}l(f(x+\varepsilon),y) \leq l(f(x+\varepsilon),f(x)) + l(f(x),y)\end{equation}<br/>
+如果$l$不是度量，那么通常根据詹森不等式也能得到一个类似的结果，比如$l(f(x+\varepsilon),y)=\Vert f(x+\varepsilon) - y\Vert^2$，那么我们有<br/>
+\begin{equation}\begin{aligned}<br/>
+\Vert f(x+\varepsilon) - f(x) + f(x) - y\Vert^2 =&amp; \left\Vert \frac{1}{2}\times 2[f(x+\varepsilon) - f(x)] + \frac{1}{2}\times 2[f(x) - y]\right\Vert^2\\<br/>
+\leq&amp; \frac{1}{2} \Vert 2[f(x+\varepsilon) - f(x)]\Vert^2 + \frac{1}{2} \Vert 2[f(x) - y]\Vert^2\\<br/>
+=&amp; 2\big(\Vert f(x+\varepsilon) - f(x)\Vert^2 + \Vert f(x) - y\Vert^2\big)<br/>
+\end{aligned}\end{equation}<br/>
+这也就是说，目标$\eqref{eq:loss-2}$（的若干倍）可以认为是$l(f(x+\varepsilon),y)$的上界，原始目标不大好优化，所以我们改为优化它的上界。</p><p>注意到，目标$\eqref{eq:loss-2}$的两项之中，$l(f(x+\varepsilon),f(x))$衡量了模型本身的平滑程度，跟标签没关系，用无标签数据也可以对它进行优化，这意味着它可以跟带标签的数据一起，构成一个<strong><font color="red">半监督学习</font></strong>流程。</p><h3 id="勇敢地算">勇敢地算</h3><p>对于目标$\eqref{eq:loss-2}$来说，它的积分结果是：<br/>
+\begin{equation}\int q(\varepsilon) \big[l(f(x+\varepsilon),f(x)) + l(f(x),y)\big]d\varepsilon = l(f(x),y) + \int q(\varepsilon) l(f(x+\varepsilon),f(x)) d\varepsilon\end{equation}<br/>
+还是老路子，近似展开$\varepsilon$：<br/>
+\begin{equation}\begin{aligned}l(f(x+\varepsilon),f(x))\approx &amp;\, l(f(x),f(x)) + \left.\sum_{i,j} \frac{\partial l(F(x),f(x))}{\partial F_i(x)}\frac{\partial f_i(x)}{\partial x_j}\varepsilon_j\right|_{F(x)=f(x)}\\<br/>
+&amp;\, + \frac{1}{2}\left.\sum_{i,j,k} \frac{\partial l(F(x),f(x))}{\partial F_i(x)}\frac{\partial^2 f_i(x)}{\partial x_j \partial x_k}\varepsilon_j \varepsilon_k\right|_{F(x)=f(x)}\\<br/>
+&amp;\, + \frac{1}{2}\left.\sum_{i,i',j,k} \frac{\partial^2 l(F(x),f(x))}{\partial F_i(x) \partial F_{i'}(x)}\frac{\partial f_i(x)}{\partial x_j}\frac{\partial f_{i'}(x)}{\partial x_k}\varepsilon_j \varepsilon_k\right|_{F(x)=f(x)}<br/>
+\end{aligned}\label{eq:kongbu}\end{equation}<br/>
+很恐怖？不着急，我们回顾一下，作为loss函数的$l$，它一般会有如下几个特点：</p><blockquote><p>1、$l$是光滑的；</p><p>2、$l(x, x)=0$；</p><p>3、$\left.\frac{\partial}{\partial x} l(x,y)\right|_{x=y}=0,\left.\frac{\partial}{\partial y} l(x,y)\right|_{y=x}=0$。</p></blockquote><p>这其实就是说$l$是光滑的，并且在$x=y$的时候取到极（小）值，且极（小）值为0，这几个特点几乎是所有loss的共性了。基于这几个特点，恐怖的$\eqref{eq:kongbu}$式的前三项就直接为0了，所以最后的积分结果是：<br/>
+\begin{equation}\int q(\varepsilon) l(f(x+\varepsilon),f(x)) d\varepsilon \approx \frac{1}{2}\sigma^2\left.\sum_{i,i',j} \frac{\partial^2 l(F(x),f(x))}{\partial F_i(x) \partial F_{i'}(x)}\frac{\partial f_i(x)}{\partial x_j}\frac{\partial f_{i'}(x)}{\partial x_j}\right|_{F(x)=f(x)}<br/>
+\end{equation}</p><h3 id="梯度惩罚">梯度惩罚</h3><p>看上去依然让人有些心悸，但总比$\eqref{eq:kongbu}$好多了。上式也是一个正则项，其特点是只包含一阶梯度项，而对于特定的损失函数，$\left.\frac{\partial^2 l(F(x),f(x))}{\partial F_i(x) \partial F_{i'}(x)}\right|_{F(x)=f(x)}$可以提前算出来，特别地，对于常见的几个损失函数，当$i\neq i'$时$\left.\frac{\partial^2 l(F(x),f(x))}{\partial F_i(x) \partial F_{i'}(x)}\right|_{F(x)=f(x)}=0$，所以仅需计算$i=i'$的分量，我们记它为$\lambda_{i}(x)$，那么<br/>
+\begin{equation}\int q(\varepsilon) l(f(x+\varepsilon),f(x)) d\varepsilon \approx \frac{1}{2}\sigma^2 \sum_i \lambda_i(x)\Vert \nabla_x f_i(x)\Vert^2\label{eq:gp}\end{equation}<br/>
+可见，形式上就是对每个$f(x)$的每个分量都算一个梯度惩罚项$\Vert \nabla_x f_i(x)\Vert^2$，然后按$\lambda_i(x)$加权求和。</p><p>例如，对于MSE来说，$l(f(x),y)=\Vert f(x) - y\Vert^2$，这时候可以算得$\lambda_i(x)\equiv 2$，所以对应的正则项为$\sum\limits_i\Vert \nabla_x f_i(x)\Vert^2$；对于KL散度来说，$l(f(x),y)=\sum\limits_i y_i \log \frac{y_i}{f_i(x)}$，这时候$\lambda_i(x)=\frac{1}{f_i(x)}$，那么对应的正则项为$\sum\limits_i f_i(x) \Vert \nabla_x \log f_i(x)\Vert^2$。这些结果大家多多少少可以从著名的“花书”<a href="https://book.douban.com/subject/27087503/" target="_blank">《深度学习》</a>中找到类似的，并非新的结果。类似的推导还可以参考文献<a href="https://www.microsoft.com/en-us/research/wp-content/uploads/2016/02/bishop-tikhonov-nc-95.pdf" target="_blank">《Training with noise is equivalent to Tikhonov regularization》</a>。</p><h3 id="采样近似">采样近似</h3><p>当然，虽然能求出只带有一阶梯度的正则项$\sum\limits_i \lambda_i(x)\Vert \nabla_x f_i(x)\Vert^2$，但事实上这个计算量也不低，因为需要对每个$f_i(x)$都要求梯度，如果输出的分量数太大，这个计算量依然难以承受。</p><p>这时候可以考虑的方案是通过采样近似计算：假设$q(\eta)$是均值为0、方差为1的分布，那么我们有<br/>
+\begin{equation}\sum\limits_i \Vert \nabla_x f_i(x)\Vert^2=\sum\limits_i \left\Vert  \nabla_x f_i(x)\right\Vert^2=\mathbb{E}_{\eta_i\sim q(\eta)}\left[\left\Vert\sum_i \eta_i \nabla_x f_i(x)\right\Vert^2\right]\end{equation}<br/>
+这样一来，每步我们只需要算$\sum\limits_i \eta_i f_i(x)$的梯度，不需要算多次梯度。$q(\eta)$的一个最简单的取法是空间为$\{-1,1\}$的均匀分布，也就是$\eta_i$等概率地从$\{-1,1\}$中选取一个。</p><h2 id="对抗训练">对抗训练</h2><p>回顾前面的流程，我们先是介绍了添加随机噪声这一增强泛化性能的手段，然后指出随机加噪声可能太没特异性，所以想着先把积分算出来，才有了后面推导的关于近似展开与梯度惩罚的一些结果。那么换个角度来想，如果我们能想办法更特异性地构造噪声信号，那么也能提高训练效率，增强泛化性能了。</p><h3 id="监督对抗">监督对抗</h3><p>有监督的对抗训练，关注的是原始目标$\eqref{eq:noisy-loss}$，优化的目标是让loss尽可能小，所以如果我们要选择更有代表性的噪声，那么应该选择能让loss变得更大的噪声，而<br/>
+\begin{equation}l(f(x + \varepsilon), y) \approx l(f(x), y) + \varepsilon \cdot \nabla_x l(f(x), y)\end{equation}<br/>
+所以让$l(f(x + \varepsilon), y)$尽可能大就意味着$\varepsilon$要跟$\nabla_x l(f(x), y)$同向，换言之扰动要往梯度上升方向走，即<br/>
+\begin{equation}\varepsilon \sim \nabla_x l(f(x), y)\end{equation}<br/>
+这便构成了对抗训练中的FGM方法，之前在<a href="/archives/7234" target="_blank">《对抗训练浅谈：意义、方法和思考（附Keras实现）》</a>就已经介绍过了。</p><p>值得注意的是，在<a href="/archives/7234" target="_blank">《对抗训练浅谈：意义、方法和思考（附Keras实现）》</a>一文中我们也推导过，对抗训练在一定程度上也等价于往loss里边加入梯度惩罚项$\left\Vert\nabla_x l(f(x), y)\right\Vert^2$，这又跟前一节的关于噪声积分的结果类似。这表明梯度惩罚应该是通用的能提高模型性能的手段之一。</p><h3 id="虚拟对抗">虚拟对抗</h3><p>在前面我们提到，$l(f(x+\varepsilon),f(x))$这一项不需要标签信号，因此可以用来做无监督学习，并且关于它的展开高斯积分我们得到了梯度惩罚$\eqref{eq:gp}$。如果沿着对抗训练的思想，我们不去计算积分，而是去寻找让$l(f(x+\varepsilon),f(x))$尽可能大的扰动噪声，这就构成了“虚拟对抗训练（VAT）”，首次出现在文章<a href="https://papers.cool/arxiv/1704.03976" target="_blank">《Virtual Adversarial Training: A Regularization Method for Supervised and Semi-Supervised Learning》</a>中。</p><p>基于前面对损失函数$l$的性质的讨论，我们知道$l(f(x+\varepsilon),f(x))$关于$\varepsilon$的一阶梯度为0，所以要算对抗扰动，还必须将它展开到二阶：<br/>
+\begin{equation}\begin{aligned}<br/>
+l(f(x+\varepsilon),f(x))\approx&amp;\, l(f(x),f(x)) + \varepsilon^{\top} \nabla_x l(f(x),f_{ng}(x)) + \frac{1}{2}\varepsilon^{\top}\nabla_x^2 l(f(x),f_{ng}(x)) \varepsilon\\<br/>
+=&amp;\, \frac{1}{2}\varepsilon^{\top}\nabla_x^2 l(f(x),f_{ng}(x)) \varepsilon\end{aligned}\end{equation}<br/>
+这里用$f_{ng}(x)$表示不需要对里边的$x$求梯度。这样一来，我们需要解决两个问题：1、如何高效计算Hessian矩阵$\mathcal{H}=\nabla_x^2 l(f(x),f_{ng}(x))$；2、如何求单位向量$u$使得$u^{\top}\mathcal{H}u$最大？</p><p>事实上，不难证明$u$的最优解实际上就是“$\mathcal{H}$的最大特征根对应的特征向量”，也称为“$\mathcal{H}$的主特征向量”，而要近似求主特征向量，一个行之有效的方法就是“<a href="https://en.wikipedia.org/wiki/Power_iteration" target="_blank">幂迭代法</a>”：从一个随机向量$u_0$出发，迭代执行$u_{i+1}=\frac{\mathcal{H}u_i}{\Vert\mathcal{H}u_i\Vert}$。相关推导可以参考<a href="/archives/6051#%E4%B8%BB%E7%89%B9%E5%BE%81%E6%A0%B9" target="_blank">《深度学习中的Lipschitz约束：泛化与生成模型》</a>的“主特征根”和“幂迭代”两节。</p><p>在幂迭代中，我们发现并不需要知道$\mathcal{H}$具体值，只需要知道$\mathcal{H}u$的值，这可以通过差分来近似计算：<br/>
+\begin{equation}\begin{aligned}\mathcal{H}u =&amp;\, \nabla_x^2 l(f(x),f_{ng}(x)) u\\<br/>
+=&amp;\, \nabla_x \big(u\cdot\nabla_x l(f(x),f_{ng}(x))\big)\\<br/>
+\approx&amp;\, \nabla_x \left(\frac{l(f(x + \xi u),f_{ng}(x)) - l(f(x),f_{ng}(x))}{\xi}\right)\\<br/>
+=&amp;\, \frac{1}{\xi}\nabla_x l(f(x + \xi u),f_{ng}(x))\end{aligned}\end{equation}<br/>
+其中$\xi$是一个标量常数。根据这个近似结果，我们就可以得到如下的VAT流程：</p><blockquote>初始化向量$u\sim \mathcal{N}(0,1)$、标量$\epsilon$和$\xi$；<br/>
+迭代$r$次：<br/>
+   $u \leftarrow \frac{u}{\Vert u\Vert}$；<br/>
+   $u \leftarrow \nabla_x l(f(x+\xi u), f_{ng}(x))$<br/>
+$u \leftarrow \frac{u}{\Vert u\Vert}$；<br/>
+用$l(f(x+\epsilon u), f_{ng}(x))$作为loss执行常规梯度下降。</blockquote><p>实验表明一般迭代1次就不错了，而如果迭代0次，那么就是本文开头提到的添加高斯噪声。这表明虚拟对抗训练就是通过$\nabla_x l(f(x+\xi u), f_{ng}(x))$来提高噪声的“特异性”的。</p><h3 id="参考实现">参考实现</h3><p>关于对抗训练的Keras实现，在<a href="/archives/7234" target="_blank">《对抗训练浅谈：意义、方法和思考（附Keras实现）》</a>一文中已经给出过，这里笔者给出Keras下虚拟对抗训练的参考实现：</p><pre class="line-numbers"><code class="language-python">def virtual_adversarial_training(
+    model, embedding_name, epsilon=1, xi=10, iters=1
+):
+    """给模型添加虚拟对抗训练
+    其中model是需要添加对抗训练的keras模型，embedding_name
+    则是model里边Embedding层的名字。要在模型compile之后使用。
+    """
+    if model.train_function is None:  # 如果还没有训练函数
+        model._make_train_function()  # 手动make
+    old_train_function = model.train_function  # 备份旧的训练函数
+
+    # 查找Embedding层
+    for output in model.outputs:
+        embedding_layer = search_layer(output, embedding_name)
+        if embedding_layer is not None:
+            break
+    if embedding_layer is None:
+        raise Exception('Embedding layer not found')
+
+    # 求Embedding梯度
+    embeddings = embedding_layer.embeddings  # Embedding矩阵
+    gradients = K.gradients(model.total_loss, [embeddings])  # Embedding梯度
+    gradients = K.zeros_like(embeddings) + gradients[0]  # 转为dense tensor
+
+    # 封装为函数
+    inputs = (
+        model._feed_inputs + model._feed_targets + model._feed_sample_weights
+    )  # 所有输入层
+    model_outputs = K.function(
+        inputs=inputs,
+        outputs=model.outputs,
+        name='model_outputs',
+    )  # 模型输出函数
+    embedding_gradients = K.function(
+        inputs=inputs,
+        outputs=[gradients],
+        name='embedding_gradients',
+    )  # 模型梯度函数
+
+    def l2_normalize(x):
+        return x / (np.sqrt((x**2).sum()) + 1e-8)
+
+    def train_function(inputs):  # 重新定义训练函数
+        outputs = model_outputs(inputs)
+        inputs = inputs[:2] + outputs + inputs[3:]
+        delta1, delta2 = 0.0, np.random.randn(*K.int_shape(embeddings))
+        for _ in range(iters):  # 迭代求扰动
+            delta2 = xi * l2_normalize(delta2)
+            K.set_value(embeddings, K.eval(embeddings) - delta1 + delta2)
+            delta1 = delta2
+            delta2 = embedding_gradients(inputs)[0]  # Embedding梯度
+        delta2 = epsilon * l2_normalize(delta2)
+        K.set_value(embeddings, K.eval(embeddings) - delta1 + delta2)
+        outputs = old_train_function(inputs)  # 梯度下降
+        K.set_value(embeddings, K.eval(embeddings) - delta2)  # 删除扰动
+        return outputs
+
+    model.train_function = train_function  # 覆盖原训练函数
+
+
+# 写好函数后，启用虚拟对抗训练只需要一行代码
+virtual_adversarial_training(model_vat, 'Embedding-Token')</code></pre><p>完整的使用脚本请参考：<a href="https://github.com/bojone/bert4keras/blob/master/examples/task_sentiment_virtual_adversarial_training.py" target="_blank">task_sentiment_virtual_adversarial_training.py</a>。大概是将模型建立两次，一个模型通过标注数据正常训练，一个模型通过无标注数据虚拟对抗训练，两者交替执行，<font color="red">请读懂源码后再使用，不要乱套代码</font>。实验任务为情况分类，大约有2万的标注数据，取前200个作为标注样本，剩下的作为无标注数据，VAT和非VAT的表现对比如下（每个实验都重复了三次，取平均）：<br/>
+\begin{array}{c|cc}<br/>
+\hline<br/>
+&amp; \text{验证集} &amp; \text{测试集}\\<br/>
+\hline<br/>
+\text{非VAT} &amp; 88.93\% &amp; 89.34\%\\<br/>
+\text{VAT} &amp; 89.83\% &amp; 90.37\%\\<br/>
+\hline<br/>
+\end{array}</p><blockquote><strong>说明：</strong>前面提到$f_{ng}(x)$表示不对$x$求梯度，不过$f$自身的参数$\theta$的梯度还是需要求的。但是读懂了上述代码的读者会发现，上述实现中相当于把$f_{ng}(x)$中$x,\theta$的梯度都去掉了，理论上不完全等价于标准的VAT。问题是在Keras中实现标准的VAT有点麻烦，而且计算量会加大，此外实验发现上述“山寨”版本也已经能带来提升了，标准的VAT相对它而言差别是二阶小量的，所以差别不大，上述代码基本满足需求了。</blockquote><h2 id="文章小结">文章小结</h2><p>本文先介绍了添加随机噪声这一常规的正则化手段，然后通过近似展开与积分的过程，推导了它与梯度惩罚之间的联系，并从中引出了可以用于半监督训练的模型平滑损失，接着进一步联系到了监督式的对抗训练和半监督的虚拟对抗训练，最后给出了Keras下虚拟对抗训练的实现和例子。</p>
+
+
+
+
+
+</div>

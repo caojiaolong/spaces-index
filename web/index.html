@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="科学空间文章的非官方元数据索引：按主题、系列、标签与时间探索。">
+    <meta name="description" content="科学空间文章的非官方知识索引：按主题、系列、标签与时间探索，阅读、下载与复制经过校验的原文 Markdown。">
     <meta name="theme-color" content="#f7f8fa">
     <title>科学空间索引</title>
     <link rel="icon" href="./favicon.svg" type="image/svg+xml" sizes="any">
@@ -18,6 +18,7 @@
       })();
     </script>
     <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="./reader.css">
   </head>
   <body>
     <a class="skip-link" href="#main">跳到主要内容</a>
@@ -62,12 +63,76 @@
       </section>
     </main>
 
+<template id="reader-template">
+  <section class="page-shell reader-shell">
+    <nav class="reader-breadcrumb" aria-label="文章位置"><a href="#/">首页</a><span aria-hidden="true">/</span><a id="reader-back" href="#/explore">返回文章列表</a><span aria-hidden="true">/</span><span>Markdown 阅读</span></nav>
+    <div class="reader-layout">
+    <aside class="reader-sidebar" aria-label="阅读工具">
+      <details id="toc-panel" class="toc-panel" open>
+        <summary>本篇目录 <span aria-hidden="true">⌄</span></summary>
+        <nav id="reader-toc" aria-label="文章目录"><p>正在载入章节…</p></nav>
+      </details>
+      <div class="reading-tools">
+        <div><span>阅读进度</span><span id="reading-percent">0%</span></div>
+        <div class="reading-size"><span>正文字号</span><button id="font-smaller" type="button" aria-label="缩小字号">A−</button><button id="font-larger" type="button" aria-label="放大字号">A+</button></div>
+      </div>
+    </aside>
+    <div class="reader-main">
+      <header class="article-heading">
+        <div class="article-kicker"><a id="reader-topic" href="#/explore">科学空间</a><span id="reader-number">ARTICLE</span></div>
+        <h1 id="reader-title" class="page-title">正在载入文章…</h1>
+        <div class="article-byline post-meta"><span>苏剑林</span><span class="byline-separator">/</span><time id="reader-date"></time><span id="reader-length"></span></div>
+        <a class="reader-series" id="reader-series" hidden></a>
+        <div class="reader-actions" id="reader-actions" hidden>
+          <div class="reader-tabs" aria-label="阅读视图"><button id="show-reading" type="button" aria-pressed="true">阅读</button><button id="show-source" type="button" aria-pressed="false">Markdown 源码</button></div>
+          <span id="reader-progress"></span>
+          <div class="reader-file-actions" role="group" aria-label="文章操作">
+            <a id="reader-original" class="reader-download" target="_blank" rel="noopener noreferrer">查看原文 <span aria-hidden="true">↗</span></a>
+            <button id="download-markdown" class="reader-download" type="button">下载 Markdown <span aria-hidden="true">↓</span></button>
+            <button id="copy-markdown" class="reader-copy" type="button">复制 Markdown <span aria-hidden="true">⧉</span></button>
+          </div>
+        </div>
+        <p id="reader-copy-status" role="status" aria-live="polite"></p>
+      </header>
+      <p id="reader-status" role="status" aria-live="polite">正在载入经过校验的正文…</p>
+      <article id="article" class="reader-content" tabindex="-1"></article>
+      <textarea id="markdown-source" class="markdown-source" aria-label="包含署名和许可的完整 Markdown" readonly hidden spellcheck="false"></textarea>
+      <nav id="series-pagination" class="series-pagination" aria-label="系列上下篇"></nav>
+      <footer class="reader-footer">
+        <p>文章原载于科学空间 · 作者：苏剑林</p>
+        <p>非官方、非商业知识库。正文仅作必要的格式转换，不代表作者观点之外的解释，也不表示作者为项目背书。</p>
+        <div id="reader-credits"></div>
+        <p class="reader-license"><a href="https://creativecommons.org/licenses/by-nc-nd/2.5/cn/" target="_blank" rel="noopener noreferrer">CC BY-NC-ND 2.5 CN</a> · 署名与许可说明不代表额外授权。</p>
+      </footer>
+    </div>
+    </div>
+    <button id="equation-return" class="equation-return" type="button" hidden><span aria-hidden="true">↩</span> 返回引用处</button>
+    <dialog id="image-viewer" class="image-viewer" aria-labelledby="image-viewer-title">
+      <div class="image-viewer-toolbar">
+        <span id="image-viewer-title" title="滚轮缩放，按住图片拖动查看">图片预览</span>
+        <div class="image-viewer-zoom" role="group" aria-label="图片缩放">
+          <button id="image-viewer-zoom-out" type="button" aria-label="缩小图片" title="缩小（−）">−</button>
+          <output id="image-viewer-scale" aria-label="缩放比例">100%</output>
+          <button id="image-viewer-zoom-in" type="button" aria-label="放大图片" title="放大（+）">+</button>
+        </div>
+        <button id="image-viewer-size" type="button" aria-pressed="false">原始尺寸</button>
+        <a id="image-viewer-original" target="_blank" rel="noopener noreferrer">打开原图 ↗</a>
+        <button id="image-viewer-close" type="button" aria-label="关闭图片预览" autofocus>关闭 ×</button>
+      </div>
+      <div class="image-viewer-stage" tabindex="0" role="group" aria-label="图片画布：滚轮缩放，按住拖动；也可用加减键缩放、方向键移动、0 键适应窗口"><img id="image-viewer-image" alt="" draggable="false"></div>
+      <p id="image-viewer-caption" hidden></p>
+    </dialog>
+  </section>
+</template>
+
     <div class="drawer-backdrop" id="drawer-backdrop" hidden></div>
     <div class="toast-region" id="toast-region" role="status" aria-live="polite"></div>
     <button class="back-to-top" id="back-to-top" type="button" aria-label="返回页面顶部" aria-hidden="true" tabindex="-1" title="返回顶部">
       <span aria-hidden="true">↑</span>
     </button>
     <script defer src="./library.js"></script>
+    <script defer src="./mirror.js"></script>
+    <script defer src="./reader.js"></script>
     <script defer src="./app.js"></script>
     <!-- Cloudflare Web Analytics -->
     <script type="module" src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token": "69706affe740430aa1cc9b3fc000cb01"}'></script>

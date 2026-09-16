@@ -1,0 +1,19 @@
+<div class="PostContent" id="PostContent">
+<p>关于行星留的周期的计算，我们之前<a href="/archives/608/" target="_blank">已经讨论过这个问题</a>，利用的是微积分的方法。也许不少还没有高数基础的朋友会感到很头晕，因此在这里给出一个从几何方面讨论的推导。</p><p>关于留，很多人认为就是行星相对于地球的速度为0的时刻，其实这个说法稍欠准确，严格来讲应该要将速度改为“角速度”或“切向速度”（天文的切向就是指与视线方向垂直的方向）。实际的运动中，没有哪一瞬间行星相对于地球的运动速度是为0的。根据这句话，我们可以作出下面的图（依旧只考虑正圆运动）：<br/>
+</p><div class="pic-container"><div class="typecho-caption aligncenter" style="max-width: 500px"><div style="margin: 5px"><a href="/attachment/959/" title="行星留-运动分析.PNG"><img alt="行星留-运动分析" src="/usr/uploads/2010/10/2064192587.png" style="max-width: 100%"/></a></div><p class="typecho-caption-text">行星留-运动分析</p></div></div><p>并且列出：<br/>
+$$V_p \cos\varphi=V_e \cos(\theta+\varphi)=V_e \cos\theta \cos \varphi-V_e \sin\theta \sin\varphi$$<br/>
+即<br/>
+$$V_p=V_e \cos \theta-V_e \tan \varphi \sin\theta$$<br/>
+同时，根据图上可以列出<br/>
+$tan\varphi=\frac{r_e sin\theta}{r_p-r_e cos\theta}$，代入上式得到<br/>
+$$\begin{aligned}V_p(r_p-r_e \cos\theta)=V_e r_p \cos\theta-V_e r_e \\ V_p r_p+V_e r_e=(V_p r_e+V_e r_p)\cos\theta\end{aligned}$$<br/>
+反三角函数得到<br/>
+$$\theta=arccos(\frac{V_p r_p+V_e r_e}{V_p r_e+V_e r_p})$$<br/>
+冲日前后不大于$\theta$角的一段时间里，行星都处于逆行状态，因此逆行总时间为<br/>
+$T=\frac{2\theta}{\omega_e-\omega_p}$</p>
+
+
+
+
+
+</div>

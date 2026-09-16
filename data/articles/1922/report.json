@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "1922",
+    "title": "[问题解答]有多少位数字？",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/1922",
+    "date": "2013-02-21",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 11,
+    "display_formula_count": 5,
+    "image_count": 0,
+    "heading_count": 0,
+    "code_block_count": 0,
+    "source_text_sha256": "7aac281e7a9b7aff480260d20a9c9bd409849b4cd5949fd2d5a5f00ba0d4789c",
+    "output_text_sha256": "7aac281e7a9b7aff480260d20a9c9bd409849b4cd5949fd2d5a5f00ba0d4789c",
+    "latex_sha256": "93c8344a2f9292c3f22d03396b51e2119487703901130d93e1842131bae3fcb7",
+    "body_sha256": "512ca9a6137dd454243cc08d7167af8a71cd071f44dc3a136ea0af25b2d792a7",
+    "converter_version": 1,
+    "markdown_sha256": "d21d78feb1369dfc045aaf5ddd52c38c05d328b2afa1ba08ac0f07ce314ed365"
+  },
+  "fetched_at": "2026-09-14T14:04:40+00:00",
+  "source_snapshot_sha256": "ac9260a178772124805aef7a4c0e7f17ee60866df74394d139c57bd2d9c55296",
+  "images": {},
+  "local_only": true
+}

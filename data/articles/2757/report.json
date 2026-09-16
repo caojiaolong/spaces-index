@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "2757",
+    "title": "《新理解矩阵6》：为什么只有方阵有行列式？",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/2757",
+    "date": "2014-07-15",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 27,
+    "display_formula_count": 6,
+    "image_count": 0,
+    "heading_count": 0,
+    "code_block_count": 0,
+    "source_text_sha256": "0714e7db60212006d133d032cab074565f24ee22e012ea1a4ba2434b8987c9f2",
+    "output_text_sha256": "0714e7db60212006d133d032cab074565f24ee22e012ea1a4ba2434b8987c9f2",
+    "latex_sha256": "ec7e1d4c7da1c3f4480acc88654621dba2bdc1cff62b430d6eae7949400e7ba5",
+    "body_sha256": "8139d988cf6d622f863270c80c910c97be32fe88552958612b7e4e1565945535",
+    "converter_version": 1,
+    "markdown_sha256": "c0c36816fcbe060c5200faa7e240d249ada1a88a7529867ace0708ab7e900ecb"
+  },
+  "fetched_at": "2026-09-14T13:53:17+00:00",
+  "source_snapshot_sha256": "ce99ce87e7270566fc43a7ccae5eabbdf1d6434aa4c50e229518acd3c324d9b8",
+  "images": {},
+  "local_only": true
+}

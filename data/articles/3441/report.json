@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "3441",
+    "title": "封闭曲线所围成的面积：一个新技巧",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/3441",
+    "date": "2015-08-30",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 46,
+    "display_formula_count": 16,
+    "image_count": 0,
+    "heading_count": 4,
+    "code_block_count": 0,
+    "source_text_sha256": "6114beb828616df08ba3c8fa8d5ca8a5c5936e1ecda2b1e476cb28f0def8b79e",
+    "output_text_sha256": "6114beb828616df08ba3c8fa8d5ca8a5c5936e1ecda2b1e476cb28f0def8b79e",
+    "latex_sha256": "e5b9915962a9a94f6caaa65324d4167a5b06bbcbc6944a73090b35f9a54ebef6",
+    "body_sha256": "468db8765a95162d4f62ed174654a0193ffefdbabae2bc285793c8841184832f",
+    "converter_version": 1,
+    "markdown_sha256": "8df015a8baab869857438a9656fd810e82769dbfc1a98254372ef96d20e0b646"
+  },
+  "fetched_at": "2026-09-14T13:44:57+00:00",
+  "source_snapshot_sha256": "d4dce8d7555af00975cf06e4996cddef0394ecf2868ef7798b56302d716b6035",
+  "images": {},
+  "local_only": true
+}

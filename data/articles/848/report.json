@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "848",
+    "title": "谈谈“民科”——兼谈如何推翻爱恩斯坦？",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/848",
+    "date": "2010-08-11",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 0,
+    "display_formula_count": 0,
+    "image_count": 1,
+    "heading_count": 0,
+    "code_block_count": 0,
+    "source_text_sha256": "ab5a38133b2ec9f47b4740eb49cb6fa871c0d6f2612bebf5fa9a8e245555a185",
+    "output_text_sha256": "ab5a38133b2ec9f47b4740eb49cb6fa871c0d6f2612bebf5fa9a8e245555a185",
+    "latex_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "body_sha256": "b32f542f4b8b7b9f57245660f499f0a898465badc53346b0dda5b97c95b84143",
+    "converter_version": 1,
+    "markdown_sha256": "54b8cba3feff84bedfcce001c0b02ba5260c60760de338fc0fe42a119896ce63"
+  },
+  "fetched_at": "2026-09-14T14:32:12+00:00",
+  "source_snapshot_sha256": "868c34db2cf62abae6501d785032b4c5d541437ae0cc496209c022be741a90f1",
+  "images": {},
+  "local_only": true
+}

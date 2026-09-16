@@ -1,0 +1,48 @@
+<div class="PostContent" id="PostContent">
+<p>大家都知道，Transformer的$\mathcal{O}(n^2)$复杂度是它的“硬伤”之一。不过凡事有弊亦有利，$\mathcal{O}(n^2)$的复杂度也为Transformer带来很大的折腾空间，我们可以灵活地定制不同的attention mask，来设计出不同用途的Transformer模型来，比如<a href="/archives/6933" target="_blank">UniLM</a>、<a href="https://papers.cool/arxiv/1909.07606" target="_blank">K-BERT</a>等。</p><p>本文介绍笔者构思的一个能用于文本的UniVAE模型，它沿用类似UniLM的思路，将VAE做到了一个Transformer模型里边，并且还具备多尺度特性～</p><p></p><h2 id="UniAE">UniAE</h2><p>VAE（Variational Autoencoder）这里就不科普了，本站已经有多篇文章进行介绍，大家自行搜索就好。VAE可以理解为带有正则项的AE（Autoencoder），一般情况下，Encoder负责将输入编码为一个向量，并且满足一定的分布，而Decoder则负责将编码向量重构为输入。所以很显然，要实现UniVAE，首先要实现对应的UniAE。</p><p>在<a href="/archives/6933" target="_blank">《从语言模型到Seq2Seq：Transformer如戏，全靠Mask》</a>中，我们已经介绍了UniLM（Uni是Unified的缩写），它通过下图左的Attention Mask来使得Transformer能完成Seq2Seq任务。然而UniLM并不是我们要寻找的UniAE，因为UniLM的Decoder部分关联到的是输入的整个编码序列，而不是单个向量。</p><p></p><div class="pic-container"><div class="typecho-caption aligncenter" style="max-width: 240px"><div style="margin: 5px"><a href="/usr/uploads/2021/06/282133240.png" target="_blank" title="点击查看原图"><img alt="UniLM式Attention Mask" src="/usr/uploads/2021/06/282133240.png" style="max-width: 100%"/></a></div><p class="typecho-caption-text">UniLM式Attention Mask</p></div><div class="typecho-caption aligncenter" style="max-width: 240px"><div style="margin: 5px"><a href="/usr/uploads/2021/06/3011182928.png" target="_blank" title="点击查看原图"><img alt="UniAE式Attention Mask" src="/usr/uploads/2021/06/3011182928.png" style="max-width: 100%"/></a></div><p class="typecho-caption-text">UniAE式Attention Mask</p></div></div><p>不过，我们可以在UniLM的基础上，进一步调整Attention Mask为上图右的模式，这样一来，解码的时候只能依赖于编码部分的<font color="red">[CLS]</font>向量以及当前已完成的解码结果，这就是我们要找的UniAE式Attention Mask了。因为对于输入来说，它只依赖于<font color="red">[CLS]</font>向量，而<font color="red">[CLS]</font>向量的大小是固定的，所以相当于说生成过程中的源信息只是一个固定大小的向量，而输入也被编码成这个固定大小的向量，这就是AE功能了。</p><p></p><div class="pic-container"><div class="typecho-caption aligncenter" style="max-width: 480px"><div style="margin: 5px"><a href="/usr/uploads/2021/06/3698023481.png" target="_blank" title="点击查看原图"><img alt="UniAE式Attention关联示意图" src="/usr/uploads/2021/06/3698023481.png" style="max-width: 100%"/></a></div><p class="typecho-caption-text">UniAE式Attention关联示意图</p></div></div><h2 id="多尺度">多尺度</h2><p>也就是说，通过UniAE式Attention Mask，我们可以实现类似UniLM的Seq2Seq模型，它等效于Encoder将输入编码为固定长度的向量，然后Decoder对该向量进行解码。如果还觉得不够清晰，我们还可以分拆为Encoder-Decoder架构来理解，如下图所示：</p><p></p><div class="pic-container"><div class="typecho-caption aligncenter" style="max-width: 520px"><div style="margin: 5px"><a href="/usr/uploads/2021/06/3629371998.png" target="_blank" title="点击查看原图"><img alt="分拆为Encoder-Decoder结构来理解" src="/usr/uploads/2021/06/3629371998.png" style="max-width: 100%"/></a></div><p class="typecho-caption-text">分拆为Encoder-Decoder结构来理解</p></div></div><p>跟常规的Seq2Seq架构不同的地方在于，这里的Encoder和Decoder的权重是共享的。从上图还可以看出，如果我们每一层Attention都加上这种Mask，那么Decoder将依赖于每一层输入的<font color="red">[CLS]</font>向量，这也就意味如果有$L$层Attention，那么这$L$层Attention的输入序列的所有<font color="red">[CLS]</font>向量拼接起来，才是输入文本的完整的编码向量（当然，第一层可以去掉，因为第一层的<font color="red">[CLS]</font>是其Embedding向量，对于每个输入来说它都是常向量），单独某一层的<font color="red">[CLS]</font>向量，并不是完整编码向量。</p><p>对于Decoder来说，每一层Attention都有一个<font color="red">[CLS]</font>向量传入，这其实就形成了一种多尺度结构。在CV中，最先进的生成模型基本上都是多尺度结构了，如<a href="https://papers.cool/arxiv/1812.04948" target="_blank">StyleGAN</a>、<a href="/archives/5807" target="_blank">Glow</a>、<a href="/archives/7574" target="_blank">NVAE</a>等，但是NLP中似乎还不多见。不难想象，在多尺度结构中，不同层次的输入对生成结果的调控程度也是不同的，越靠近输入层的变量，控制的部分越是“无伤大雅”，而越靠近输出层的变量，则控制着生成结果的关键信息。所以理想情况下，训练好一个多尺度模型后，我们可以通过编辑不同层级的输入变量，来实现对生成结果的不同层次的控制。</p><h2 id="降低维度">降低维度</h2><p>有些读者可能会想到，要是每层的维度是$d$，共有$L$层，那么全部<font color="red">[CLS]</font>向量拼接起来就是$Ld$维了，对于BERT base来说就是$12\times 768 = 9216$维了，这编码向量维度是不是太大了？确实如此，对于一个普通的AE或者VAE来说，近万维的编码向量是太大了。</p><p></p><div class="pic-container"><div class="typecho-caption aligncenter" style="max-width: 200px"><div style="margin: 5px"><a href="/usr/uploads/2021/06/2836277345.png" target="_blank" title="点击查看原图"><img alt="降维过程示意图" src="/usr/uploads/2021/06/2836277345.png" style="max-width: 100%"/></a></div><p class="typecho-caption-text">降维过程示意图</p></div></div><p>其实解决方法很简单，我们只需要将每层的<font color="red">[CLS]</font>向量用一个全连接层先降维，然后再用另一个全连接层升维，最后拼接到剩下的$(L-1)$个$d$维向量就行了，如上图所示。这样的话，虽然输入序列还是$L\times d$大小，但事实上<font color="red">[CLS]</font>向量可以用一个更低维的向量表达出来，我们只需要把每一层的这个更低维向量拼接起来，作为总的编码向量就行了。</p><p></p><div class="pic-container"><div class="typecho-caption aligncenter" style="max-width: 520px"><div style="margin: 5px"><a href="/usr/uploads/2021/06/25795223.png" target="_blank" title="点击查看原图"><img alt="降维后的Encoder-Decoder示意图" src="/usr/uploads/2021/06/25795223.png" style="max-width: 100%"/></a></div><p class="typecho-caption-text">降维后的Encoder-Decoder示意图</p></div></div><h2 id="解耦能力">解耦能力</h2><p>前面的设计和讨论还只是针对普通的AE的，对于VAE来说，就是往AE的编码向量里边加入重参数操作，然后损失函数里边加入KL散度项，所以，设计好UniAE后，理论上就已经设计好UniVAE了。</p><p>不过，实际操作的时候，我们还有改进的空间。理论上来说，训练好VAE是具有一定的解耦（Disentanglement）能力的，也就是说，隐变量的每个维度是独立无关的，它们分别控制生成结果的某一方面，可以随机调节。不难理解，解耦是一件非常有挑战性的事情，所以如果VAE的Encoder能编码出解耦的编码向量，那么其拟合能力必然也是比较强的，换言之，其结构需要有一定的复杂了。</p><p>我们再来看UniAE的Encoder，它的编码向量是每一层的<font color="red">[CLS]</font>向量（或者对应的低维向量）的拼接，对于前面的层来说，它们的<font color="red">[CLS]</font>向量仅仅是有限几层的Transformer的输出，它们的编码能力是很弱的，并不足以编码出解耦的向量，因此将它们作为VAE的隐变量是不合适的。</p><p>所以，在实际设计UniVAE的时候，我们不能使用UniAE的所有<font color="red">[CLS]</font>向量作为编码向量，应该设置一个起始层数，Decoder只使用大于这个层数的<font color="red">[CLS]</font>向量，而小于等于这个层数的<font color="red">[CLS]</font>向量则不使用，此时相对于使用下图右的Attention Mask：<br/>
+</p><div class="pic-container"><div class="typecho-caption aligncenter" style="max-width: 240px"><div style="margin: 5px"><a href="/usr/uploads/2021/06/3011182928.png" target="_blank" title="点击查看原图"><img alt="靠近输出层，使用UniAE式Attention Mask" src="/usr/uploads/2021/06/3011182928.png" style="max-width: 100%"/></a></div><p class="typecho-caption-text">靠近输出层，使用UniAE式Attention Mask</p></div><div class="typecho-caption aligncenter" style="max-width: 240px"><div style="margin: 5px"><a href="/usr/uploads/2021/06/360140864.png" target="_blank" title="点击查看原图"><img alt="靠近输入层，使用独立式Attention Mask" src="/usr/uploads/2021/06/360140864.png" style="max-width: 100%"/></a></div><p class="typecho-caption-text">靠近输入层，使用独立式Attention Mask</p></div></div><p>此时它等效于如下的Encoder-Decoder结构：<br/>
+</p><div class="pic-container"><div class="typecho-caption aligncenter" style="max-width: 520px"><div style="margin: 5px"><a href="/usr/uploads/2021/06/3111104148.png" target="_blank" title="点击查看原图"><img alt="前两层Attention使用独立式Mask的效果示意图" src="/usr/uploads/2021/06/3111104148.png" style="max-width: 100%"/></a></div><p class="typecho-caption-text">前两层Attention使用独立式Mask的效果示意图</p></div></div><h2 id="其他细节">其他细节</h2><p>至此，UniVAE的关键部分已经介绍完毕了，下面分享一下在实现过程中一些比较重要的细节。</p><p>首先是长度泄漏问题。不管是UniLM还是UniVAE，因为Encoder和Decoder整合成了一个模型，所以我们都是将输入输出拼接起来作为单个样本训练的，这样的话每个样本在Decoder部分的起始位置就不一样了，取决于输入文本的长度，这就意味着输入长度是也是作为了输入条件传入到了Decoder中，这就是长度泄漏。</p><p>这个问题有两个解决方案：第一个就是所有输入都通过截断或者填充来变为同一长度，这就不会造成长度泄漏了；第二个就更简单了，干脆啥都不做，即确实把长度当成条件输入，解码时通过控制起始位置来控制生成长度，但这样可能带来的问题是长度信息可能没有跟编码向量完全解耦，因此同一编码向量配上不同的长度可能会得到不合理的结果。</p><p>然后是层数和维度的选择问题。前面说了，为了让隐变量具有较好的解耦能力，我们将前$k$层的Attention加上独立式Attention Mask，剩下的$L-k$层则加上UniAE式Attention Mask。那么这个$k$怎么选择呢？这是一个需要仔细调整的超参数，比较小的$k$能保留更多的信息，有利于重构，但不利于解耦；反之较大的$k$则更有利于解耦，但是不利于重构。在笔者的实验中，使用的是$k=8$。</p><p>类似的问题出现在降维的维度选择上，较大的维度自然是有利于重构的，但也不利于解耦，反之则利于解耦而有损重构性能。这个参数需要根据任务本身的复杂度来具体调整，调整的大致方向是观察随机采样效果和重构效果，如果随机采样出来的样本多数可读、自然句子的重构效果也不错，那么说明这个维度适中了，否则则需要相应地调整。</p><p>最后，值得一提的是，UniAE的设计不单单可以用来做VAE，还可以用于构建<a href="/archives/6760" target="_blank">VQ-VAE</a>，只需要对每个<font color="red">[CLS]</font>向量做一下量化，就成为了一个将不定长句子编码为定长离散序列的VQ-VAE模型了。</p><h2 id="参考实现">参考实现</h2><p>这里给出一个UniVAE参考实现：</p><blockquote class="cite"><div><strong>Github：<a href="https://github.com/bojone/univae" target="_blank">https://github.com/bojone/univae</a></strong></div></blockquote><p>代码里使用的是<a href="/archives/8404" target="_blank">vMF-VAE</a>变体，基于bert4keras实现，基础架构是RoFormer，当然也可以换成BERT。下面演示的是用问句训练的UniVAE的效果。</p><p>随机采样效果：</p><blockquote>我在steam下载的游戏，怎样能在电脑上玩啊？？？<br/>
+呼市男科医院哪家比较好实惠<br/>
+我血压高，我妈妈手脚麻木，是怎么回事呀<br/>
+怎样查询交通违章记录和处罚<br/>
+为什么我提问的问题有点卡顿<br/>
+小米2s用的是移动卡还是联通卡<br/>
+幼儿园怎么发展幼儿教育<br/>
+英国读研学校排名对于英国留学生来说重要吗<br/>
+有专业的关于excel表格数据库的培训机构吗？<br/>
+为什么一到晚上就容易咳嗽，不睡觉就不咳</blockquote><p>重构效果：</p><blockquote><p>原句：数字电视机顶盒坏了，可以免费维修吗<br/>
+重构：数字电视机顶盒坏了可以换吗?</p><p>原句：青椒跟什么炒好吃<br/>
+重构：青椒跟什么炒好吃</p><p>原句：王者荣耀carryyou什么意思<br/>
+重构：王者荣耀carry芈月什么意思</p><p>原句：没感冒老是咳嗽要吃什么药好<br/>
+重构：没感冒老是咳嗽要吃什么药好</p><p>原句：沁园（金科西城大院店）怎么样，好不好的默认点评<br/>
+重构：沁园（金源店）怎么样，好不好的默认点评</p></blockquote><p>随机替换前32维隐变量：</p><blockquote><p>原句：牙龈出血要吃什么药？<br/>
+结果：牙龈出血还出血吃什么消炎药好<br/>
+   牙龈出血吃阿莫西林有效吗<br/>
+   牙龈出血是肝火旺吗？<br/>
+   牙龈出血去医院检查大概要多少钱？<br/>
+   牙龈出血去牙科看什么科室<br/>
+   牙龈出血去深圳哪里看牙科好</p><p>原句：广州和深圳哪个更好玩？<br/>
+结果：广州和深圳哪个城市发展得好? 薪资高?<br/>
+   广州和深圳，哪个发达？深圳到广州的飞机票贵吗？<br/>
+   广州和深圳比哪个好<br/>
+   广州和深圳哪个人均gdp高<br/>
+   广州和深圳房价涨幅<br/>
+   广州和深圳自考一样吗</p></blockquote><p>随机替换后16维隐变量：</p><blockquote><p>原句：牙龈出血要吃什么药？<br/>
+结果：未来21年做什么生意好？<br/>
+   湿疹给身体有什么伤害？<br/>
+   朗逸现在要买什么配置？<br/>
+   马来西亚签证要多少钱？<br/>
+   早上给孩子吃什么水果好？<br/>
+   头晕发热去医院看什么科？</p><p>原句：广州和深圳哪个更好玩？<br/>
+结果：99和98相差多少呢？<br/>
+   微信和支付宝怎么更换手机号<br/>
+   我的指甲和肉很不一样怎么回事？<br/>
+   吃了甲硝唑多久才能喝酒？<br/>
+   桂圆和红枣可以一起泡茶吗？<br/>
+   小米和华为哪个更好点？</p></blockquote><p>可以看到，随机采样和重构的效果都不错的，而通过随机替换不同维度的隐变量，我们可以大致观察到多尺度结构的效果：替换前面部分维度的隐变量，大致上保持了主题词不变；替换后面部分维度的隐变量，大致上保持了句式不变。当然，自然语言的结构性本身就很弱，因此例子中通常也夹杂了一些例外情况。</p><h2 id="文章小结">文章小结</h2><p>本文介绍了笔者构思的UniVAE设计，它沿用类似UniLM的思路，通过特定的Attention Mask将VAE做到了一个Transformer模型里边，并且还具备多尺度特性。除了常规的VAE模型外，该设计还可以用于VQ-VAE等模型。</p>
+
+
+
+
+
+</div>

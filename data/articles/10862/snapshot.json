@@ -1,0 +1,17 @@
+{
+  "metadata": {
+    "id": "10862",
+    "title": "Transformer升级之路：19、第二类旋转位置编码",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/10862",
+    "date": "2025-04-18",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "fetched_at": "2026-09-14T12:43:01+00:00",
+  "source_snapshot_sha256": "9e84e007db3d4c75d062b6d86f75ac382e11491b75148b052727a293f19dc502",
+  "validators": {
+    "etag": null,
+    "last_modified": null
+  }
+}

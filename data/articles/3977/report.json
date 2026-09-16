@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "3977",
+    "title": "【理解黎曼几何】3. 测地线",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/3977",
+    "date": "2016-10-15",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 36,
+    "display_formula_count": 12,
+    "image_count": 3,
+    "heading_count": 2,
+    "code_block_count": 0,
+    "source_text_sha256": "522305d153c2feaa24a9cbbd33bc94613be43bbb5264672a9365cddb2c287134",
+    "output_text_sha256": "522305d153c2feaa24a9cbbd33bc94613be43bbb5264672a9365cddb2c287134",
+    "latex_sha256": "fd6359753a4532417cbe774d2f47c07b7881f599ee7843bbfba5dad3bab84dc6",
+    "body_sha256": "335b6479e387b1776c194513551f19a943ffe282e79b6f18586ea7d173866026",
+    "converter_version": 1,
+    "markdown_sha256": "1a3dceafedfb7a496a445861c1b2623a7dd47c47b1d1ea42b57c8c2a09009991"
+  },
+  "fetched_at": "2026-09-14T13:37:44+00:00",
+  "source_snapshot_sha256": "647b4482d4690cf6db4bac8b4299212a7a1e0f197f8f762967d7fa30c1ad13b1",
+  "images": {},
+  "local_only": true
+}

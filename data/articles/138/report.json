@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "138",
+    "title": "中国探索火星，还等两年！",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/138",
+    "date": "2009-10-01",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 1,
+    "display_formula_count": 1,
+    "image_count": 1,
+    "heading_count": 0,
+    "code_block_count": 0,
+    "source_text_sha256": "344f3bc5e6d5bf1f55bdbf6e09c76c74988cb346ea0caf26e2bc388fcc0c63b7",
+    "output_text_sha256": "344f3bc5e6d5bf1f55bdbf6e09c76c74988cb346ea0caf26e2bc388fcc0c63b7",
+    "latex_sha256": "a5de5cff115b416a2b0a92480be9a0c6877924523fdcd12bad401c56187fe507",
+    "body_sha256": "1d196978b5df5e84da84ead7a29ac92e2900b366f6cffaee850b532c6e78c0de",
+    "converter_version": 1,
+    "markdown_sha256": "067860a10a75553514acefab36b640f5a6e50b16eb1b63a0142b8b21339d5b8b"
+  },
+  "fetched_at": "2026-09-14T14:51:20+00:00",
+  "source_snapshot_sha256": "44d95cc13f5a6e329ea39b53acf82c7b514cb192a61b7606d94fe423e3bd5a8c",
+  "images": {},
+  "local_only": true
+}

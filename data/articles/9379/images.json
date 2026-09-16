@@ -1,0 +1,45 @@
+{
+  "version": 1,
+  "images": {
+    "https://spaces.ac.cn/usr/uploads/2022/12/3260358826.svg": {
+      "status": "cached",
+      "file": "2a803e4052b08d4e429bc039a84f6ef0e9a48c83ee35297648a8177ac0f8536d.svg",
+      "sha256": "2a803e4052b08d4e429bc039a84f6ef0e9a48c83ee35297648a8177ac0f8536d",
+      "bytes": 28357,
+      "checked_at": "2026-09-16T07:49:21+00:00",
+      "fetched_url": "https://spaces.ac.cn/usr/uploads/2022/12/3260358826.svg",
+      "etag": "\"63a43d4c-6ec5\"",
+      "last_modified": "Thu, 22 Dec 2022 11:19:40 GMT"
+    },
+    "https://spaces.ac.cn/usr/uploads/2022/12/4276426527.svg": {
+      "status": "cached",
+      "file": "a381de4e42437a3324e8763af927c4bfea20dcbff068e17971e5f5cc74fbe623.svg",
+      "sha256": "a381de4e42437a3324e8763af927c4bfea20dcbff068e17971e5f5cc74fbe623",
+      "bytes": 24830,
+      "checked_at": "2026-09-16T07:49:25+00:00",
+      "fetched_url": "https://spaces.ac.cn/usr/uploads/2022/12/4276426527.svg",
+      "etag": "\"63a43ff7-60fe\"",
+      "last_modified": "Thu, 22 Dec 2022 11:31:03 GMT"
+    },
+    "https://spaces.ac.cn/usr/uploads/2022/12/2845102935.svg": {
+      "status": "cached",
+      "file": "308f43aafc307289f76365bd00f2f6c31028dee832d7a9f7f7064fc3a9f2387c.svg",
+      "sha256": "308f43aafc307289f76365bd00f2f6c31028dee832d7a9f7f7064fc3a9f2387c",
+      "bytes": 25552,
+      "checked_at": "2026-09-16T07:49:30+00:00",
+      "fetched_url": "https://spaces.ac.cn/usr/uploads/2022/12/2845102935.svg",
+      "etag": "\"63a43ff8-63d0\"",
+      "last_modified": "Thu, 22 Dec 2022 11:31:04 GMT"
+    },
+    "https://spaces.ac.cn/usr/uploads/2022/12/2249423194.svg": {
+      "status": "cached",
+      "file": "6f2c00c2bfc6abeb1f4c0ebc43cbb3feef1654cc5ef7b5b25684419cef36efd1.svg",
+      "sha256": "6f2c00c2bfc6abeb1f4c0ebc43cbb3feef1654cc5ef7b5b25684419cef36efd1",
+      "bytes": 26157,
+      "checked_at": "2026-09-16T07:49:34+00:00",
+      "fetched_url": "https://spaces.ac.cn/usr/uploads/2022/12/2249423194.svg",
+      "etag": "\"63a43ff8-662d\"",
+      "last_modified": "Thu, 22 Dec 2022 11:31:04 GMT"
+    }
+  }
+}

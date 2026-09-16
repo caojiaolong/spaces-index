@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "10007",
+    "title": "用傅里叶级数拟合一维概率密度函数",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/10007",
+    "date": "2024-03-07",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 96,
+    "display_formula_count": 17,
+    "image_count": 1,
+    "heading_count": 7,
+    "code_block_count": 0,
+    "source_text_sha256": "1cd3388ee78704ff681608c4d4328033ad18f454474ea245717bd91364ad1a2a",
+    "output_text_sha256": "1cd3388ee78704ff681608c4d4328033ad18f454474ea245717bd91364ad1a2a",
+    "latex_sha256": "1c89e22080f77b1fcf040e53db852fc79663c95531e58a3da9a213d6d5c1a0ab",
+    "body_sha256": "cf786cafdf05bbfe102c382ad029a1e09c76a36d3011335a5c0cf4c0e67d34b0",
+    "converter_version": 1,
+    "markdown_sha256": "add74726c24e2334113a9c9c76f71fe0adefb17f69eb5641f198471c5250aeb5"
+  },
+  "fetched_at": "2026-09-14T12:49:28+00:00",
+  "source_snapshot_sha256": "2ab4b697bf8cf223240f4018d50c169c84de5c51353f7a3be8bb31a3706316ea",
+  "images": {},
+  "local_only": true
+}

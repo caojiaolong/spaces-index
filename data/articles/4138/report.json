@@ -1,0 +1,39 @@
+{
+  "metadata": {
+    "id": "4138",
+    "title": "端到端的腾讯验证码识别（46%正确率）",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/4138",
+    "date": "2016-12-14",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "source_dom_exact": true,
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "attributes_exact": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 1,
+    "display_formula_count": 1,
+    "image_count": 1,
+    "heading_count": 3,
+    "code_block_count": 0,
+    "source_text_sha256": "33d2b4faa16077b9caf3462ade1d52379e0daacfcb918c691c5d28748ed7a6ff",
+    "output_text_sha256": "33d2b4faa16077b9caf3462ade1d52379e0daacfcb918c691c5d28748ed7a6ff",
+    "latex_sha256": "942b210cf3297d38f04cb15106f8ca869d61954ca08dc9b301e5f6d9ef3515c4",
+    "body_sha256": "152cd9c39bd3824f8ed35a2b6c189b6a2fe5d77a2c41354c51e0bb6065e17e71",
+    "converter_version": 1,
+    "format": "html-v1",
+    "source_warnings": [],
+    "fallback_reason": "Standard Markdown round trip changed source structure",
+    "markdown_sha256": "50103de05511f5b7b8aed83ef4a066aeaed2363d96c5a5105dad5930be4d428e"
+  },
+  "fetched_at": "2026-09-14T13:35:25+00:00",
+  "source_snapshot_sha256": "1f13492025401db96e7a8dcf79e7f8c2ac8af7eceff9a11982dd8bed51b92e97",
+  "images": {},
+  "local_only": true
+}

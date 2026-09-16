@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "1624",
+    "title": "新兴之旅结束了",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/1624",
+    "date": "2012-06-22",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 0,
+    "display_formula_count": 0,
+    "image_count": 18,
+    "heading_count": 0,
+    "code_block_count": 0,
+    "source_text_sha256": "780477190417b623986c40eb1986c4aac17199ac1e18b98de425b478f08c7f33",
+    "output_text_sha256": "780477190417b623986c40eb1986c4aac17199ac1e18b98de425b478f08c7f33",
+    "latex_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "body_sha256": "213fa6d9ed6bdadedce9e43a22dcd10bd4ea7a0dc90e4c52c64c98186244c052",
+    "converter_version": 1,
+    "markdown_sha256": "19d64a93aad228487ff524be9d88a7ca54ea2398371db4540f70aa3c2f4ec7fc"
+  },
+  "fetched_at": "2026-09-14T14:13:51+00:00",
+  "source_snapshot_sha256": "7a2994bb1f3b6b06fdca20a20e06a995cd8929afaa674eeb89d05c729933ca72",
+  "images": {},
+  "local_only": true
+}

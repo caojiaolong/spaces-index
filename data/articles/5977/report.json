@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "5977",
+    "title": "细水长flow之f-VAEs：Glow与VAEs的联姻",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/5977",
+    "date": "2018-09-21",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 90,
+    "display_formula_count": 19,
+    "image_count": 19,
+    "heading_count": 16,
+    "code_block_count": 0,
+    "source_text_sha256": "b5f69da2f02da7c4ef3fe2e94bae96fd85e02ba5a38d57f48f22698b9a7a3747",
+    "output_text_sha256": "b5f69da2f02da7c4ef3fe2e94bae96fd85e02ba5a38d57f48f22698b9a7a3747",
+    "latex_sha256": "525ebd8c096996a169fa93865ba9b4750c2513d1a52a238b8a82f16884ac9c9a",
+    "body_sha256": "3ae855aadcfefc1aa42afd69ffe97dde5f01af9daeff76fdb1f30d5fd49f7f99",
+    "converter_version": 1,
+    "markdown_sha256": "5e7e6230ca20037f11ab5711dffdfbe6d55ca018d3b5aabe52ddd185c945b19b"
+  },
+  "fetched_at": "2026-09-14T13:24:20+00:00",
+  "source_snapshot_sha256": "8993a5428bb8d2259c726defd4c17695a41ad512940161dc32cbb0f8e87c8a4b",
+  "images": {},
+  "local_only": true
+}

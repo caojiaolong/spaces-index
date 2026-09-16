@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "8244",
+    "title": "WGAN的成功，可能跟Wasserstein距离没啥关系",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/8244",
+    "date": "2021-03-15",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 21,
+    "display_formula_count": 4,
+    "image_count": 5,
+    "heading_count": 5,
+    "code_block_count": 0,
+    "source_text_sha256": "c65f20c9375c6acdc744c15e06dd935f87f3f13212281cf8235ef2906ef8b7b9",
+    "output_text_sha256": "c65f20c9375c6acdc744c15e06dd935f87f3f13212281cf8235ef2906ef8b7b9",
+    "latex_sha256": "bda67b74339e2f9e2f9d3bd81875d21962a1ab437f5d9eb41f5fd8a24c3884c5",
+    "body_sha256": "1b63c797622c9cb99121beec75cbee2ada3f8af7d3db215f54fa4415d5b36f36",
+    "converter_version": 1,
+    "markdown_sha256": "548f8b02a61c4fcf77957854fff9b7abcf94e90ec3951fc3a913a838a055e570"
+  },
+  "fetched_at": "2026-09-14T13:07:38+00:00",
+  "source_snapshot_sha256": "07c2700a441b609982ec28625c703965a2dc3d3b3767832582130659895c23a3",
+  "images": {},
+  "local_only": true
+}

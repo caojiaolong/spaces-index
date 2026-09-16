@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "3998",
+    "title": "【理解黎曼几何】4. 联络和协变导数",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/3998",
+    "date": "2016-10-16",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 53,
+    "display_formula_count": 12,
+    "image_count": 1,
+    "heading_count": 2,
+    "code_block_count": 0,
+    "source_text_sha256": "1b1b2334fbfa7c5dab276f07f57aed788c62870a24b71f7f716a42fa81a72521",
+    "output_text_sha256": "1b1b2334fbfa7c5dab276f07f57aed788c62870a24b71f7f716a42fa81a72521",
+    "latex_sha256": "d1d0c7318cd10a7f348ffebcea11feff9587ed7e2d887ee646bb2e74312a1fc4",
+    "body_sha256": "826dec47d41701661d8a8c129059d2cd8df4ea2a5c2d2800917cab2a4442e892",
+    "converter_version": 1,
+    "markdown_sha256": "95fc8b06493a8ebac303a28624502c5a25b3c4e20583941b8ba15d8dd890877b"
+  },
+  "fetched_at": "2026-09-14T13:37:37+00:00",
+  "source_snapshot_sha256": "2fcb4d53f86f7926b9448a8ace603c9c501e6c0e4156ffe9d0c18ce9a5de13b0",
+  "images": {},
+  "local_only": true
+}

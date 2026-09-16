@@ -1,0 +1,17 @@
+{
+  "metadata": {
+    "id": "7196",
+    "title": "你的CRF层的学习率可能不够大",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/7196",
+    "date": "2020-02-07",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "fetched_at": "2026-09-14T13:15:27+00:00",
+  "source_snapshot_sha256": "c04485328b6c1d4fd81458188932923ded3703055045a99feee8102c86a881e5",
+  "validators": {
+    "etag": null,
+    "last_modified": null
+  }
+}

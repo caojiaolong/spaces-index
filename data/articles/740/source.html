@@ -1,0 +1,21 @@
+<div class="PostContent" id="PostContent">
+<p>不知道各位读者还记得BoJone在<a href="/search/%E3%80%8A%E6%96%B9%E7%A8%8B%E4%B8%8E%E5%AE%87%E5%AE%99%E3%80%8B/" target="_blank">《方程与宇宙》</a>这一章中写了整整三篇文章来学习天体力学中的二体问题吗？虽然对二体问题基本上做了一个描述，但是依旧是冰山一角。而在最近写的几篇文章中，BoJone又强调了“向量”的巨大作用。那么，当天体力学与向量碰头后，会发生什么大事呢？难道，火星撞上了地球？</p><p>在《方程与宇宙》系列中，在开头我们便导出了二体问题的基本方程：<br/>
+在二体问题中，选择其中一个质点为参照物，另一个质点的运动方程可以表示为：<br/>
+$$\ddot{\vec{r}}=-\frac{\mu \vec{r}}{r^3}$$</p><p>$\mu=G(M+m)$。那么就从这个方程出发，运用向量以及一点点微积分知识，来完成天体力学中二体问题的解答。</p><p>首先我们来考虑$\vec{r}\times\dot{\vec{r}}=?$，首先求这个式子的导数<br/>
+$$\frac{d}{dt}(\vec{r}\times\dot{\vec{r}})=\dot{\vec{r}}\times\dot{\vec{r}}+\vec{r}\times\ddot{\vec{r}}=0+\vec{r}\times(-\frac{\mu \vec{r}}{r^3})=0$$</p><p>只有常数的导数等于0，对于向量来说也只有常向量（方向和大小是常数）的导数才等于0，所以<br/>
+$$\vec{r}\times\dot{\vec{r}}=\vec{k}\tag{1}$$<br/>
+$\vec{k}$是常向量。这个其实就是角动量守恒的体现，$m\vec{r}\times\dot{\vec{r}}$就是质点相对于参照质点的角动量，由于力矩为0，所以角动量守恒。这个规律“翻译”成天体力学的语言，就是“开普勒第二定律”。</p><p>为了找出其他的常向量，我们来考虑下：$\vec{k}\times\ddot{\vec{r}}$，根据向量的知识，有<br/>
+$$\vec{k}\times\ddot{\vec{r}}=(\vec{r}\times\dot{\vec{r}})\times(-\frac{\mu \vec{r}}{r^3})=-\frac{\mu}{r^3}[(\vec{r}\cdot \vec{r})\dot{\vec{r}}-(\vec{r}\cdot \dot{\vec{r}})\vec{r}]$$</p><p>并且不难证明：$\vec{r}*\dot{\vec{r}}=r\dot{r}$（参考下图）<br/>
+</p><div class="pic-container"><div class="typecho-caption aligncenter" style="max-width: 100%"><div style="margin: 5px"><a href="/attachment/741/" title="二体问题-向径-速度.PNG"><img alt="二体问题-向径-速度" src="/usr/uploads/2010/07/3845390905.png" style="max-width:100%"/></a></div><p class="typecho-caption-text">二体问题-向径-速度</p></div></div><p>于是$\vec{k}\times\ddot{\vec{r}}=-\mu(\frac{\dot{\vec{r}}}{r}-\frac{r\vec{r}}{r^2})=\frac{d}{dt}(-\frac{\mu\vec{r}}{r})$</p><p>两边积分，就得到：$\vec{k}\times\dot{\vec{r}}=-\frac{\mu\vec{r}}{r}-\mu\vec{e}$。其中$-\mu\vec{e}$代表着一个常向量，我们把这条式子改写成：<br/>
+$$\vec{k}\times\dot{\vec{r}}+\frac{\mu\vec{r}}{r}=-\mu\vec{e}\tag{2}$$<br/>
+接下来求关于速度的积分（活力积分）<br/>
+$$\frac{d}{dt}(1/2 \dot{\vec{r}^2})=\dot{\vec{r}}\cdot \ddot{\vec{r}}=\dot{\vec{r}}\cdot (-\frac{\mu \vec{r}}{r^3})=\frac{-\mu\dot{r}}{r^2}=\frac{d}{dt}(-\frac{\mu}{r})$$</p><p>两边积分：$1/2 \dot{\vec{r}}^2=-\frac{\mu}{r}+h$，或者写成$$1/2 v^2-\frac{\mu}{r}=h\tag{3}$$<br/>
+接着，我们有$\vec{k}*\vec{e}=\vec{k}*(-\frac{\vec{k}\times\dot{\vec{r}}}{\mu}-\frac{\vec{r}}{r})=0$，这给出了<br/>
+$$\mu^2(e^2-1)=2hk^2\tag{4}$$<br/>
+其中$k=|\vec{k}|,e=|\vec{e}|$。至此，我们已经用向量方法求出了二体问题中关于能量和角动量的相关公式，并且为下一步的相关计算奠定了基础。接下来就是求出轨道方程、开普勒方程等解了。这利用向量知识可以一步到位。(待续....)</p>
+
+
+
+
+
+</div>

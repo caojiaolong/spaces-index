@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "70",
+    "title": "科学家计划研制造云船对抗全球变暖(图)",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/70",
+    "date": "2009-08-12",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 0,
+    "display_formula_count": 0,
+    "image_count": 1,
+    "heading_count": 0,
+    "code_block_count": 0,
+    "source_text_sha256": "c1cc71bdfbbe2b16a5a6bb221b94562fe200e8bc32996da6303e3e8f2e449843",
+    "output_text_sha256": "c1cc71bdfbbe2b16a5a6bb221b94562fe200e8bc32996da6303e3e8f2e449843",
+    "latex_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "body_sha256": "fde447c8307f7300627cfc27ab6e24064f9668468de28cca26e69cc4c8c1e94b",
+    "converter_version": 1,
+    "markdown_sha256": "261e19f25ed7b30759b540440c1a53d8113e9d5823383398b2c6ba646e131aa3"
+  },
+  "fetched_at": "2026-09-14T14:59:49+00:00",
+  "source_snapshot_sha256": "8df78d19f0d9428d7b2a7b965d04628c4667eb0065fbac96f92076824c7c4860",
+  "images": {},
+  "local_only": true
+}

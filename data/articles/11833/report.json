@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "11833",
+    "title": "解构Scaling Law：优化、架构、数据的三重奏",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/11833",
+    "date": "2026-07-29",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 263,
+    "display_formula_count": 38,
+    "image_count": 0,
+    "heading_count": 29,
+    "code_block_count": 0,
+    "source_text_sha256": "f80eaa39ca29f49433690642b0bb9d2d6af7723f2687325f7e51fc5c7226cbea",
+    "output_text_sha256": "f80eaa39ca29f49433690642b0bb9d2d6af7723f2687325f7e51fc5c7226cbea",
+    "latex_sha256": "cfb74e081a7e5ba307c4899800cc027d096d8dd63be89d3ee79153cfe6479a34",
+    "body_sha256": "2c60ca7e01b35e5dd3243acdb37c020c5133af58735a9277cc20f2c6ce1d8992",
+    "converter_version": 1,
+    "markdown_sha256": "6ae9cea0b3a7be20abf94cfebbfb2b37b70d9d7879d14a0ac27ff4a56b8e5a6a"
+  },
+  "fetched_at": "2026-09-14T12:30:12+00:00",
+  "source_snapshot_sha256": "2e7b651ac25373b90ed62b8cea1f9189cfb650fff21f0ac07c90fbb6f815a1d3",
+  "images": {},
+  "local_only": true
+}

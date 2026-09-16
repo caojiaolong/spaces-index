@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "2831",
+    "title": " 从费马大定理谈起（五）：n=4",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/2831",
+    "date": "2014-08-19",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 116,
+    "display_formula_count": 14,
+    "image_count": 0,
+    "heading_count": 7,
+    "code_block_count": 0,
+    "source_text_sha256": "d8d39fe85b3ccfd0673a83d0410b5b9d6d4d97b4a054d4d82c86225e10d80d24",
+    "output_text_sha256": "d8d39fe85b3ccfd0673a83d0410b5b9d6d4d97b4a054d4d82c86225e10d80d24",
+    "latex_sha256": "72e0911f4382638d92e760477b398083458f84f55359a2ccfaebd30fbe5d3332",
+    "body_sha256": "89e0ad06934570ea30c5f57b5c100009e0efacbb3cd580651357603369cbde10",
+    "converter_version": 1,
+    "markdown_sha256": "741dc5e8cb533cd018d341fa84072e4086cddd790515a03029bca322a33be531"
+  },
+  "fetched_at": "2026-09-14T13:52:11+00:00",
+  "source_snapshot_sha256": "975687012cb47c090a7c0c0101cb9ac871b3fbbe1115b5e16f0fd29b2d0d1244",
+  "images": {},
+  "local_only": true
+}

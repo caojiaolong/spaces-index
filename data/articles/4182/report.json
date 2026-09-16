@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "4182",
+    "title": "基于遗忘假设的平滑公式",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/4182",
+    "date": "2017-01-07",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 32,
+    "display_formula_count": 13,
+    "image_count": 0,
+    "heading_count": 0,
+    "code_block_count": 0,
+    "source_text_sha256": "e7c927380104ba05ab1bd0b1ae6368d23463195d9b1ba3eacd3de9d13e910c46",
+    "output_text_sha256": "e7c927380104ba05ab1bd0b1ae6368d23463195d9b1ba3eacd3de9d13e910c46",
+    "latex_sha256": "3ab4cc7cf42c080ad6b4098a3b7a93eca73c30fb161aed0a723d6815ffcf6c4d",
+    "body_sha256": "66c9ce9aa84a4b95e3efef0cc958f9eb9fb0540918b5da16ae3d51d4b9c975e5",
+    "converter_version": 1,
+    "markdown_sha256": "9ffa531d430306770c9f6b35dc53c3f3b6798fd5e5d972be5a5b96da9367cf25"
+  },
+  "fetched_at": "2026-09-14T13:34:51+00:00",
+  "source_snapshot_sha256": "f7d7844bbbcc0109a80bde6dcdc25aa400c60899009c8e40878fe8699961f1d8",
+  "images": {},
+  "local_only": true
+}

@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "2512",
+    "title": "一本对称闯物理：相对论力学(二)",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/2512",
+    "date": "2014-03-25",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 19,
+    "display_formula_count": 13,
+    "image_count": 0,
+    "heading_count": 0,
+    "code_block_count": 0,
+    "source_text_sha256": "c35ac72820eaa8aba38ee459979d70701e5c73d9cdf76673993f9a299a131761",
+    "output_text_sha256": "c35ac72820eaa8aba38ee459979d70701e5c73d9cdf76673993f9a299a131761",
+    "latex_sha256": "b259ac748b0d096dde7a75fcbea6e75ecdcd0429ae35f5dbedbb479de55a2211",
+    "body_sha256": "d74c725bc57db0433daca7b601d6c5cb9e240622e96a0b376756b2a561f8ac21",
+    "converter_version": 1,
+    "markdown_sha256": "de172e92b31155fc12898bf3b5da5af2dc382066c96266d49e0bdbc11c65835e"
+  },
+  "fetched_at": "2026-09-14T13:55:34+00:00",
+  "source_snapshot_sha256": "f0284ac6375dce00d969fcbae0694a5995016a76ad2a1888d59f4ba482bdb42d",
+  "images": {},
+  "local_only": true
+}

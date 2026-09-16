@@ -1,0 +1,153 @@
+<div class="PostContent" id="PostContent">
+<h3 id="赛题回顾">赛题回顾</h3><p>不得不说，2013年的全国数学建模竞赛中的B题真的算是数学建模竞赛中百年难得一遇的好题：题目简洁明了，含义丰富，做法多样，延伸性强，以至于我一直对它念念不忘。因为这个题目，我已经在科学空间写了两篇文章了，分别是<a href="/archives/2067/" target="_blank">《一个人的数学建模：碎纸复原》</a>和<a href="/archives/3134/" target="_blank">《迟到一年的建模：再探碎纸复原》</a>。以前做这道题的时候，还只有一点数学建模的知识，而自从学习了数据挖掘、尤其是深度学习之后，我一直想重做这道题，但一直偷懒。这几天终于把它实现了。</p><p>如果对题目还不清楚的读者，可以参考前面两篇文章。碎纸复原共有五个附件，分别代表了五种“碎纸片”，即五种不同粒度的碎片。其中附件1和2都不困难，难度主要集中在附件3、4、5，而3、4、5的实现难度基本是一样的。做这道题最容易想到的思路就是贪心算法，即随便选一张图片，然后找到与它最匹配的图片，然后继续匹配下一张。要想贪心算法有效，最关键是找到一个良好的距离函数，来判断两张碎片是否相邻（水平相邻，这里不考虑垂直相邻）。</p><p>前两篇文章用的都是边缘向量的欧氏距离，也还提到过诸如相关系数的一些指标，但如果用在附件3、4、5中，效果都不好，原因就在于附件3、4、5的碎片并不大，可用边缘信息不多。因此，只靠边缘是不行的，还必须考虑多种因素，比如行距、行的平均位置等等。究竟怎么考虑？人工很难写出一个良好的函数。既然如此，干嘛不交给模型呢？直接上卷积神经网络（CNN）就好了呀！</p><h3 id="构造样本">构造样本</h3><p>具体来讲，就是我们目测一下碎片的情况，大概就是</p><blockquote>1、44号的黑体；<br/>
+2、如果考虑附件3，内容就是中文，如果附件4，那么就是英文；<br/>
+3、碎片固定大小为72x180</blockquote><p>有了这个特征，我们就可以虽然找一堆文本来，然后仿照这个规格，自己构造一大批具有同样性质的、相邻和不相邻的样本来，然后训练一个卷积神经网络，这样就可以自动地得到一个“距离函数”了。这种事情对于熟悉深度学习的朋友再简单不过了。我是直接找了中文的文本，然后生成了一批中文的样本，代码大概如下：</p><pre class="line-numbers"><code class="language-python">from PIL import Image, ImageFont, ImageDraw
+import numpy as np
+from scipy import misc
+import pymongo
+from tqdm import tqdm
+
+texts = list(pymongo.MongoClient().weixin.text_articles.find().limit(1000))
+text = texts[0]['text']
+line_words = 30
+font_size = 44
+nb_columns = line_words*font_size/72+1
+
+def gen_img(text):
+    n = len(text) / line_words + 1
+    size = (nb_columns*72, (n*font_size/180+1)*180)
+    im = Image.new('L', size, 255)
+    dr = ImageDraw.Draw(im)
+    font = ImageFont.truetype('simhei.ttf', font_size)
+    for i in range(n):
+        dr.text((0, 70*i), text[line_words*i: line_words*(i+1)], font=font)
+    im = np.array(im.getdata()).reshape((size[1], size[0]))
+    r = []
+    for j in range(size[1]/180):
+        for i in range(size[0]/72):
+            r.append(1-im[j*180:(j+1)*180, i*72:(i+1)*72].T/255.0)
+    return r
+
+sample = []
+for i in tqdm(iter(texts)):
+    sample.extend(gen_img(i['text']))
+
+np.save('sample.npy', sample)
+nb_samples = len(sample) - len(sample)/nb_columns
+
+def data(sample, batch_size):
+    sample_shuffle_totally = sample[:]
+    sample_shuffle_in_line = sample[:]
+    while True:
+        np.random.shuffle(sample_shuffle_totally)
+        for i in range(0, len(sample_shuffle_in_line), nb_columns):
+            subsample = sample_shuffle_in_line[i: i+nb_columns]
+            np.random.shuffle(subsample)
+            sample_shuffle_in_line[i: i+nb_columns] = subsample
+        x = []
+        y = []
+        for i in range(0, len(sample), nb_columns):
+            subsample_1 = sample[i: i+nb_columns]
+            for j in range(0, nb_columns-1):
+                x.append(np.vstack((subsample_1[j], subsample_1[j+1])))
+                y.append([1])
+            subsample_2 = sample_shuffle_totally[i: i+nb_columns]
+            for j in range(0, nb_columns-1):
+                x.append(np.vstack((subsample_2[j], subsample_2[j+1])))
+                y.append([0])
+            subsample_3 = sample_shuffle_in_line[i: i+nb_columns]
+            for j in range(0, nb_columns-1):
+                x.append(np.vstack((subsample_3[j], subsample_3[j+1])))
+                y.append([0])
+            if len(y) &gt;= batch_size:
+                yield np.array(x), np.array(y)
+                x = []
+                y = []
+        if y:
+            yield np.array(x), np.array(y)
+            x = []
+            y = []
+</code></pre><p>过程是这样的：我找了1000篇文章，每篇若干千字，将每篇文章均匀打印到一张图片上去，然后裁剪开，就得到一批样本了（sample），后面的data是一个迭代器，用来生成正负样本，因为一次性载入内存吃不消，所以只能通过迭代器来做了。不过我还是很偷懒的，因为即便这样，在我的服务器上也耗了18G内存。sample_shuffle_totally是将sample全部打乱后，得到的任意负样本；sample_shuffle_in_line则只是在同一行内打乱，这样得到的是行距、行位置都相同，仅仅是内容不同而导致的负样本。每一轮迭代我都洗乱一次，这样能够提升数据的性能（data argument），使得实际参与训练的负样本数大大增加。</p><p>要注意的是，我们考虑水平相邻，但python读矩阵的时候，是从上往下读的，不是从左往右，因此我们要对图片矩阵进行转置，此外，还对图片进行了归一化，原来是0～255范围的灰度图，归一化到0～1之间，这样能够加快收敛，最后就是用1减去了图片矩阵，实际上对图片做了个颜色反转，“白底黑字”变成了“黑底白字”。因为在训练网络时，我们希望输入有大量的0，这样可以加快收敛，但是颜色中，白色的255，黑色才是0，因此，“黑底白字”比“白底黑字”更快收敛。</p><h3 id="训练模型">训练模型</h3><p>然后就用它们训练一个CNN了，这个过程太常规了，用的就是三个卷积层和池化层的堆叠，然后做一个softmax分类器，就这么简单～</p><p>模型的结构：</p><blockquote>______________________________________________________________<br/>
+Layer (type)                     Output Shape          Param #     Connected to<br/>
+==============================================================<br/>
+input_2 (InputLayer)             (None, 144, 180)      0<br/>
+______________________________________________________________<br/>
+convolution1d_4 (Convolution1D)  (None, 143, 32)       11552       input_2[0][0]<br/>
+______________________________________________________________<br/>
+maxpooling1d_4 (MaxPooling1D)    (None, 71, 32)        0           convolution1d_4[0][0]<br/>
+______________________________________________________________<br/>
+convolution1d_5 (Convolution1D)  (None, 70, 32)        2080        maxpooling1d_4[0][0]<br/>
+______________________________________________________________<br/>
+maxpooling1d_5 (MaxPooling1D)    (None, 35, 32)        0           convolution1d_5[0][0]<br/>
+______________________________________________________________<br/>
+convolution1d_6 (Convolution1D)  (None, 34, 32)        2080        maxpooling1d_5[0][0]<br/>
+______________________________________________________________<br/>
+maxpooling1d_6 (MaxPooling1D)    (None, 17, 32)        0           convolution1d_6[0][0]<br/>
+______________________________________________________________<br/>
+flatten_2 (Flatten)              (None, 544)           0           maxpooling1d_6[0][0]<br/>
+______________________________________________________________<br/>
+dense_3 (Dense)                  (None, 32)            17440       flatten_2[0][0]<br/>
+______________________________________________________________<br/>
+dense_4 (Dense)                  (None, 1)             33          dense_3[0][0]<br/>
+==============================================================<br/>
+Total params: 33185<br/>
+______________________________________________________________</blockquote><p>代码：</p><pre class="line-numbers"><code class="language-python">from keras.layers import Input, Convolution1D, MaxPooling1D, Flatten, Dense
+from keras.models import Model
+
+input = Input((144, 180))
+cnn = Convolution1D(32, 2)(input)
+cnn = MaxPooling1D(2)(cnn)
+cnn = Convolution1D(32, 2)(cnn)
+cnn = MaxPooling1D(2)(cnn)
+cnn = Convolution1D(32, 2)(cnn)
+cnn = MaxPooling1D(2)(cnn)
+cnn = Flatten()(cnn)
+dense = Dense(32, activation='relu')(cnn)
+dense = Dense(1, activation='sigmoid')(dense)
+
+model = Model(input=input, output=dense)
+model.compile(loss='binary_crossentropy', optimizer='adam', metrics=['accuracy'])
+model.summary()
+
+model.fit_generator(data(sample, batch_size=1024), 
+                    nb_epoch=100, 
+                    samples_per_epoch=nb_samples*3
+                   )
+model.save_weights('2013_suizhifuyuan_cnn.model')
+</code></pre><p>其实迭代3次就可以得到95%的准确率了，这个nb_epoch=100是随意写的～如果计算资源充足而又不着急的话，多迭代几次无妨。我最终得到了97.7%的准确率。</p><h3 id="拼接效果">拼接效果</h3><p>现在就可以测试一下我们训练出来的“距离函数”的性能了。</p><pre class="line-numbers"><code class="language-python">import glob
+
+img_names = glob.glob(u'附件3/*')
+images = {}
+for i in img_names:
+    images[i] = 1 - misc.imread(i, flatten=True).T/255.0
+
+def find_most_similar(img, images):
+    imgs_ = np.array([np.vstack((images[img], images[i])) for i in images if i != img])
+    img_names_ = [i for i in images if i != img]
+    sims = model.predict(imgs_).reshape(-1)
+    return img_names_[sims.argmax()]
+
+img = img_names[14]
+result = [img]
+images_ = images.copy()
+while len(images_) &gt; 1:
+    print len(images_)
+    img_ = find_most_similar(img, images_)
+    result.append(img_)
+    del images_[img]
+    img = img_
+
+images_ = [images[i].T for i in result]
+compose = (1 - np.hstack(images_))*255
+misc.imsave('result.png', compose)
+</code></pre><p>对于附件3，一次性拼接的结果是（放大看原图）：<br/>
+</p><div class="pic-container"><div class="typecho-caption aligncenter" style="max-width: 100%"><div style="margin: 5px"><a href="/usr/uploads/2016/11/403407370.png" target="_blank" title="点击查看原图"><img alt="附件3复原程度（CNN+贪心算法）" src="/usr/uploads/2016/11/403407370.png" style="max-width:100%"/></a></div><p class="typecho-caption-text">附件3复原程度（CNN+贪心算法）</p></div></div><p>为了对比，以前使用欧氏距离，一次性拼接的结果是：<br/>
+</p><div class="pic-container"><div class="typecho-caption aligncenter" style="max-width: 100%"><div style="margin: 5px"><a href="/usr/uploads/2016/11/1149707633.png" target="_blank" title="点击查看原图"><img alt="附件3复原程度（欧氏距离+贪心算法）" src="/usr/uploads/2016/11/1149707633.png" style="max-width:100%"/></a></div><p class="typecho-caption-text">附件3复原程度（欧氏距离+贪心算法）</p></div></div><p>可见改进是很明显的。虽然我们这个模型是用中文语料训练的，但是直接用于附件4的判断，得到的结果也不错：<br/>
+</p><div class="pic-container"><div class="typecho-caption aligncenter" style="max-width: 100%"><div style="margin: 5px"><a href="/usr/uploads/2016/11/394272617.png" target="_blank" title="点击查看原图"><img alt="附件4复原程度（CNN+贪心算法）" src="/usr/uploads/2016/11/394272617.png" style="max-width:100%"/></a></div><p class="typecho-caption-text">附件4复原程度（CNN+贪心算法）</p></div></div><p>同样的，作为对比，附件4使用欧氏距离的拼接结果是：<br/>
+</p><div class="pic-container"><div class="typecho-caption aligncenter" style="max-width: 100%"><div style="margin: 5px"><a href="/usr/uploads/2016/11/2634933984.png" target="_blank" title="点击查看原图"><img alt="附件4复原程度（欧氏距离+贪心算法）" src="/usr/uploads/2016/11/2634933984.png" style="max-width:100%"/></a></div><p class="typecho-caption-text">附件4复原程度（欧氏距离+贪心算法）</p></div></div><p>因此可以发现，我们得到的模型效果的确不错，而且具有很强的泛化能力。当然，直接拼接英文的效果不大好，最好同时加入英文语料一起训练，才能得到更好效果。</p><h3 id="后文">后文</h3><p>一道好题必然是内涵丰富，经久不衰的，这已经是我写的关于碎纸复原这道题的第三篇文章了，也许还会有第4篇、第5篇，每一次研究都是一次深入...</p>
+
+
+
+
+
+</div>

@@ -1,0 +1,17 @@
+{
+  "metadata": {
+    "id": "7031",
+    "title": "什么时候多进程的加速比可以大于1？",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/7031",
+    "date": "2019-10-27",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "fetched_at": "2026-09-14T13:17:03+00:00",
+  "source_snapshot_sha256": "bf5508910a7bdcc40afebefd9e0459ff59dd7f2aa0344316887a73231fe4dc2a",
+  "validators": {
+    "etag": null,
+    "last_modified": null
+  }
+}

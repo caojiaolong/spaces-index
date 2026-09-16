@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "1280",
+    "title": "科学空间：2011年3月重要天象",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/1280",
+    "date": "2011-03-05",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 0,
+    "display_formula_count": 0,
+    "image_count": 6,
+    "heading_count": 0,
+    "code_block_count": 0,
+    "source_text_sha256": "a0b7e93fb3970b59152d065eed088cfffc5f1aa349f24d90d790051c0a51091e",
+    "output_text_sha256": "a0b7e93fb3970b59152d065eed088cfffc5f1aa349f24d90d790051c0a51091e",
+    "latex_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "body_sha256": "f9c13254b9d508e7d8e2142c4a4f6b9f3c79aea4676ebae23692e1115b1a49a8",
+    "converter_version": 1,
+    "markdown_sha256": "222db366b89da11ed11ef1218fa6493fe15eb8360f7f3b2c57f17cf6d43b6a43"
+  },
+  "fetched_at": "2026-09-14T14:23:29+00:00",
+  "source_snapshot_sha256": "cc4c791e44eafd1e65064549532013f9cf8ef2a161eb966ef32b518dc212d531",
+  "images": {},
+  "local_only": true
+}

@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "11301",
+    "title": "重新思考学习率与Batch Size（四）：EMA",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/11301",
+    "date": "2025-09-22",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 96,
+    "display_formula_count": 22,
+    "image_count": 0,
+    "heading_count": 8,
+    "code_block_count": 0,
+    "source_text_sha256": "3b1110e4167e07f9055cb3161c8f2df0fc16b7610bad8b21657e42b683de7305",
+    "output_text_sha256": "3b1110e4167e07f9055cb3161c8f2df0fc16b7610bad8b21657e42b683de7305",
+    "latex_sha256": "47a89a43e2c26ac68138501ef6962d6880186c057d8bf856100c7cdd80acf4f0",
+    "body_sha256": "25e3feb741ff602ef27f6c2027365aece3c7341d59f895608882a7f1c01d420a",
+    "converter_version": 1,
+    "markdown_sha256": "59448cd5277707b0743b2d93f05fbe3e68d755534f1ad48f525c0af0a7192784"
+  },
+  "fetched_at": "2026-09-14T12:39:41+00:00",
+  "source_snapshot_sha256": "427d6fc3e9467188e080ceba4e71018205f13bf8960fa4d5f88bc442a3e8035a",
+  "images": {},
+  "local_only": true
+}

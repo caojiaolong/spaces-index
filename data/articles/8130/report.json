@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "8130",
+    "title": "让研究人员绞尽脑汁的Transformer位置编码",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/8130",
+    "date": "2021-02-03",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 108,
+    "display_formula_count": 18,
+    "image_count": 0,
+    "heading_count": 15,
+    "code_block_count": 0,
+    "source_text_sha256": "af39e45b9fba343d5320fa594da3343ad2c87d6b1c351e86374bf1ab5f016e84",
+    "output_text_sha256": "af39e45b9fba343d5320fa594da3343ad2c87d6b1c351e86374bf1ab5f016e84",
+    "latex_sha256": "1d6c5a0bca0169317ba960d4ab4499de2c7a896ade02176e2ab3c696fb7147ac",
+    "body_sha256": "dd89183f133366a83c63dfddd9724be6917f6a1a59529a27853e9b2e9cfbe0e4",
+    "converter_version": 1,
+    "markdown_sha256": "16cac92ba41d7c2f4dc6cbdb274ef509b3bbebf8e8c8dd26bc323a53c32ed122"
+  },
+  "fetched_at": "2026-09-14T13:08:21+00:00",
+  "source_snapshot_sha256": "a9bd91e0764ad2906d8c37c92dffdd4899e14d548373da6ec9dfdb4604797bdc",
+  "images": {},
+  "local_only": true
+}

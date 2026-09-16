@@ -1,0 +1,17 @@
+{
+  "metadata": {
+    "id": "3956",
+    "title": "【中文分词系列】 5. 基于语言模型的无监督分词",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/3956",
+    "date": "2016-09-12",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "fetched_at": "2026-09-14T13:38:05+00:00",
+  "source_snapshot_sha256": "3c9f9f935d9bb938ec7540419b905d733fb8553f7b1b8d07ab1cd05cc5018aba",
+  "validators": {
+    "etag": null,
+    "last_modified": null
+  }
+}

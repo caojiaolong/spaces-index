@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "5693",
+    "title": "从SamplePairing到mixup：神奇的正则项",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/5693",
+    "date": "2018-07-07",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 48,
+    "display_formula_count": 2,
+    "image_count": 5,
+    "heading_count": 5,
+    "code_block_count": 0,
+    "source_text_sha256": "32d48ea0c31d16152ea279a8b7a9c2bc3dc192e2f0af84547a3aae36bec6bb34",
+    "output_text_sha256": "32d48ea0c31d16152ea279a8b7a9c2bc3dc192e2f0af84547a3aae36bec6bb34",
+    "latex_sha256": "209b887eca0bf00f9f5dff195be55e4497161f1396474550015e3dc116b95871",
+    "body_sha256": "f67d3bb8b6a9b23fd0eba283e9e8d618d99706f3cd5e6d8bd9825c38c783adea",
+    "converter_version": 1,
+    "markdown_sha256": "437a71cfc3964f9928504722ee810953297bb8d33527fad70ac5f4e16dd8c632"
+  },
+  "fetched_at": "2026-09-14T13:25:53+00:00",
+  "source_snapshot_sha256": "ebba954bf71d05e529c3199faf04f275bcdbf0ffeae679a1eda398dde950fed2",
+  "images": {},
+  "local_only": true
+}

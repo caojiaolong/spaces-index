@@ -1,0 +1,41 @@
+{
+  "metadata": {
+    "id": "104",
+    "title": "正十七边形的尺规作图",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/104",
+    "date": "2009-08-28",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "source_dom_exact": true,
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "attributes_exact": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 5,
+    "display_formula_count": 1,
+    "image_count": 1,
+    "heading_count": 0,
+    "code_block_count": 0,
+    "source_text_sha256": "6acb699a83ddfe88444482988db925b8cb463dcd244bbc8c4a2cfd157ff4c764",
+    "output_text_sha256": "6acb699a83ddfe88444482988db925b8cb463dcd244bbc8c4a2cfd157ff4c764",
+    "latex_sha256": "5c596d3e78dd656d3d725fde52eb490c168568dfef0d4bec6f1c6c3a6e446c35",
+    "body_sha256": "df6cb1aaf3ab1f8310f1931d68710b7f563e25785dbcef23e3b60bdc5705e318",
+    "converter_version": 1,
+    "format": "html-v1",
+    "source_warnings": [
+      "原文含旧式或脚本嵌入内容，已保留其位置和源码；预览不执行。"
+    ],
+    "fallback_reason": "Unsupported body element: embed",
+    "markdown_sha256": "f56900fd8d91a6efe7356fd401fdd64c90d369ca9df96e0f22f7199dc1faf616"
+  },
+  "fetched_at": "2026-09-14T14:55:51+00:00",
+  "source_snapshot_sha256": "2939dd306302cb9695b7d91df0c15deb42d5255553f1358d66aab4d61006256b",
+  "images": {},
+  "local_only": true
+}

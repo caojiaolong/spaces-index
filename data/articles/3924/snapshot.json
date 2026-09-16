@@ -1,0 +1,17 @@
+{
+  "metadata": {
+    "id": "3924",
+    "title": "【中文分词系列】 4. 基于双向LSTM的seq2seq字标注",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/3924",
+    "date": "2016-08-22",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "fetched_at": "2026-09-14T13:38:26+00:00",
+  "source_snapshot_sha256": "4b48d7565fef339afdfae13fb2180f57c479c4eff24172ea5ca569a825066ea0",
+  "validators": {
+    "etag": null,
+    "last_modified": null
+  }
+}

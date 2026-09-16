@@ -1,0 +1,17 @@
+{
+  "metadata": {
+    "id": "8180",
+    "title": "Nyströmformer：基于矩阵分解的线性化Attention方案",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/8180",
+    "date": "2021-02-16",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "fetched_at": "2026-09-14T13:08:07+00:00",
+  "source_snapshot_sha256": "2fa6d8f9b3c8a58498ab151c044f4747decb2656663aaeb24f201906c34f96bf",
+  "validators": {
+    "etag": null,
+    "last_modified": null
+  }
+}

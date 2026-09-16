@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "2242",
+    "title": "不确定性原理的矩阵形式",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/2242",
+    "date": "2014-01-05",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 19,
+    "display_formula_count": 8,
+    "image_count": 0,
+    "heading_count": 0,
+    "code_block_count": 0,
+    "source_text_sha256": "fac278f89d3e44a9fd66d51cee3f901938602bd6813e83656d8d79cd7433dc6a",
+    "output_text_sha256": "fac278f89d3e44a9fd66d51cee3f901938602bd6813e83656d8d79cd7433dc6a",
+    "latex_sha256": "8617a1e5dfb958d7bb46c7ebc5e64cc7c6dda1f00c16c63f8d648aa783d96a72",
+    "body_sha256": "f117919329669bf287843f4ad95185ceb42b8e4bced6ec253b46485e758f5917",
+    "converter_version": 1,
+    "markdown_sha256": "cad74da42754b84676a6ceb5e6d3ce8faaf012406abf14995e7c77106df039c1"
+  },
+  "fetched_at": "2026-09-14T13:57:46+00:00",
+  "source_snapshot_sha256": "a0021bbd2203b120da5a8a55c1ff7e7f69b87a32cd0e942174669b0ce8bc486a",
+  "images": {},
+  "local_only": true
+}

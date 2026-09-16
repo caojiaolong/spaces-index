@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "1398",
+    "title": "明天就出发去夏令营了",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/1398",
+    "date": "2011-07-10",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 0,
+    "display_formula_count": 0,
+    "image_count": 0,
+    "heading_count": 0,
+    "code_block_count": 0,
+    "source_text_sha256": "874ce5d7b984dd28c868a701d0308463a07671ae9816b278a778bf11e0fdc7f2",
+    "output_text_sha256": "874ce5d7b984dd28c868a701d0308463a07671ae9816b278a778bf11e0fdc7f2",
+    "latex_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "body_sha256": "761e145b3c5f79635fc899aec742a8d5cec165bff1540f7827f5c2b78825bc28",
+    "converter_version": 1,
+    "markdown_sha256": "cfb20242578a03729e3e714ee3a9cbd82319494ac45051c55946b68d49dc7f88"
+  },
+  "fetched_at": "2026-09-14T14:19:40+00:00",
+  "source_snapshot_sha256": "4b0c8fb8f544a8eae28cdbb526b4f8cc6caab7529e682131aa8b060e7042d684",
+  "images": {},
+  "local_only": true
+}

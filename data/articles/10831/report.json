@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "10831",
+    "title": "通过梯度近似寻找Normalization的替代品",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/10831",
+    "date": "2025-04-02",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 63,
+    "display_formula_count": 14,
+    "image_count": 0,
+    "heading_count": 6,
+    "code_block_count": 0,
+    "source_text_sha256": "272cdb492ca3d5eeea60185d7aaf2f760da669695b0792dba73696542f6adc9a",
+    "output_text_sha256": "272cdb492ca3d5eeea60185d7aaf2f760da669695b0792dba73696542f6adc9a",
+    "latex_sha256": "20259ef68cba2b6ea0e8ce003e1ea93cb8d9ab65e52f7062f26e37a57a69ae44",
+    "body_sha256": "f4682777bdcdd4943abda67fd357f3f8ee6da2033408ae97b2b85b2c38c20c41",
+    "converter_version": 1,
+    "markdown_sha256": "2d5b7f9bbd7992b85fbcd0299d61b94c884ce12d48042bbda0c18bf5c1003209"
+  },
+  "fetched_at": "2026-09-14T12:43:13+00:00",
+  "source_snapshot_sha256": "cbeb3340b96237cb51f9d24311dd1d341863dd0ea75e73617536de736600e002",
+  "images": {},
+  "local_only": true
+}

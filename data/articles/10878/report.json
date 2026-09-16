@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "10878",
+    "title": "SVD的导数",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/10878",
+    "date": "2025-04-26",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 175,
+    "display_formula_count": 41,
+    "image_count": 0,
+    "heading_count": 10,
+    "code_block_count": 0,
+    "source_text_sha256": "79594b6b0e2619b044d5ef04d6d34f9408674d1bc98d4387edb5192af3207fb6",
+    "output_text_sha256": "79594b6b0e2619b044d5ef04d6d34f9408674d1bc98d4387edb5192af3207fb6",
+    "latex_sha256": "0315a9a89dd2fdae91e9385decf37ecaee46efc9284c8d5bf587f490b4db6dec",
+    "body_sha256": "ab711910295bec75623ca0be849e21a0ebda416075c079c1b9fc5c78433df848",
+    "converter_version": 1,
+    "markdown_sha256": "b6b67c18f792f250817ef762f502e5f6deabe8b5edfab4de3b2d30f7ea93fc58"
+  },
+  "fetched_at": "2026-09-14T12:42:47+00:00",
+  "source_snapshot_sha256": "9ce0be1e22b4342c1f68181e539ee0261e4adf01af0da0d4175dec1f83cc3fa8",
+  "images": {},
+  "local_only": true
+}

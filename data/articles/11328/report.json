@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "11328",
+    "title": "DiVeQ：一种非常简洁的VQ训练方案",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/11328",
+    "date": "2025-10-08",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 98,
+    "display_formula_count": 11,
+    "image_count": 0,
+    "heading_count": 7,
+    "code_block_count": 0,
+    "source_text_sha256": "dfabf87b9c78f33f443baebf4e2748b22c65d809e5223618ba84530dbcb38a9b",
+    "output_text_sha256": "dfabf87b9c78f33f443baebf4e2748b22c65d809e5223618ba84530dbcb38a9b",
+    "latex_sha256": "e4c0433c21273b41d3a47272a9c520f34075a0675e075230afda3ebd9414f19a",
+    "body_sha256": "e9d6e46198be78ad70122456feca73ee0cca416655265ff14468547bd4af3ab4",
+    "converter_version": 1,
+    "markdown_sha256": "e416185d5f46b02257747efc5cc4bc40e7df3c1dbb2be24228452a1fc4a0e5bb"
+  },
+  "fetched_at": "2026-09-14T12:39:21+00:00",
+  "source_snapshot_sha256": "b63032ef94f88c8c843191e937fc6abc157c7ca26b5aed86199150a4ba71a31b",
+  "images": {},
+  "local_only": true
+}

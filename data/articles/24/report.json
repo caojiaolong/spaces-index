@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "24",
+    "title": "天文望远镜拍到宇宙最美部分(图)",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/24",
+    "date": "2009-07-18",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 0,
+    "display_formula_count": 0,
+    "image_count": 1,
+    "heading_count": 0,
+    "code_block_count": 0,
+    "source_text_sha256": "a60275055f678f2f50f75a25767637e26143b6245a4f49133ed8c3c370a5bfb2",
+    "output_text_sha256": "a60275055f678f2f50f75a25767637e26143b6245a4f49133ed8c3c370a5bfb2",
+    "latex_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "body_sha256": "05d086c59dad4597d3cbd95795df3f78649ce8462a1397c9bdd58ae5f14778be",
+    "converter_version": 1,
+    "markdown_sha256": "809b58c5259cfcd9fcd1707c798d1dfa37f7de5bb60ee306a6bc7e97b9c0a810"
+  },
+  "fetched_at": "2026-09-14T15:05:15+00:00",
+  "source_snapshot_sha256": "8110a8910ad863c252306c6bf02188a367fcf597eaf6912285de72589f50a088",
+  "images": {},
+  "local_only": true
+}

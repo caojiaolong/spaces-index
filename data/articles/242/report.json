@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "242",
+    "title": "沉痛悼念钱学森！深切怀恋钱学森！",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/242",
+    "date": "2009-11-01",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 0,
+    "display_formula_count": 0,
+    "image_count": 0,
+    "heading_count": 0,
+    "code_block_count": 0,
+    "source_text_sha256": "6795dbb4f2809155f768cafe53eb4ae10f6bd997eda605dc1f577147a8888d9e",
+    "output_text_sha256": "6795dbb4f2809155f768cafe53eb4ae10f6bd997eda605dc1f577147a8888d9e",
+    "latex_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "body_sha256": "1ad0eda37e9d37d319dab57c0c45663209273a4d48dea17876a0391d29938189",
+    "converter_version": 1,
+    "markdown_sha256": "af0c105b2671a30c228bbe318a313dfc74bdb33fa11b878f0852686db6ac27dd"
+  },
+  "fetched_at": "2026-09-14T14:46:44+00:00",
+  "source_snapshot_sha256": "a7df8ed70fb5893b99a18b4456dcc7fcc7586fd5f1480f1d630f241acf968854",
+  "images": {},
+  "local_only": true
+}

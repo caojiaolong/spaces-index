@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "7144",
+    "title": "2020年全年天象",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/7144",
+    "date": "2019-12-23",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 0,
+    "display_formula_count": 0,
+    "image_count": 0,
+    "heading_count": 12,
+    "code_block_count": 0,
+    "source_text_sha256": "1f62f5a0df080ec48f5000a5ef6691fb7637fe0709da90954d47b5efed79b078",
+    "output_text_sha256": "1f62f5a0df080ec48f5000a5ef6691fb7637fe0709da90954d47b5efed79b078",
+    "latex_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "body_sha256": "c9c39bf232cbafb004c6c198a19af81cb250ea99c6dc7b8d180596fc7c905f41",
+    "converter_version": 1,
+    "markdown_sha256": "be04edb1d8766897aef3dadeac27bd4514bfdc2f4dd643326780a0a57878a65d"
+  },
+  "fetched_at": "2026-09-14T13:16:06+00:00",
+  "source_snapshot_sha256": "a7b66d5bffd83317c4bfb04a34dba9cf6f8d1554ab560b7d2e2177151a55071f",
+  "images": {},
+  "local_only": true
+}

@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "7991",
+    "title": "Mitchell近似：乘法变为加法，误差不超过1/9",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/7991",
+    "date": "2020-12-14",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 64,
+    "display_formula_count": 11,
+    "image_count": 1,
+    "heading_count": 6,
+    "code_block_count": 2,
+    "source_text_sha256": "e0736246b5319484e129035fd27e54b5fc816e9309ee0b2e199089f721bbf006",
+    "output_text_sha256": "e0736246b5319484e129035fd27e54b5fc816e9309ee0b2e199089f721bbf006",
+    "latex_sha256": "95a1a31d985264b25379174cf670375594770b28f89d231e748291a53a9be202",
+    "body_sha256": "95e39a0b0103691df0c0a0c287f7664fcc35477dabf98a5a0d6ab0932c81911e",
+    "converter_version": 1,
+    "markdown_sha256": "e3a7d6efafbfb9f616cb60c6821d3079f0dc39717d11de9e14c5478358e65139"
+  },
+  "fetched_at": "2026-09-14T13:09:23+00:00",
+  "source_snapshot_sha256": "e1c4a6a8560a4fe566ef924cea01794a7b1bb83d9922b5d512ac506a57e96e0c",
+  "images": {},
+  "local_only": true
+}

@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "3204",
+    "title": "我是一个费曼迷",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/3204",
+    "date": "2015-01-20",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 0,
+    "display_formula_count": 0,
+    "image_count": 1,
+    "heading_count": 0,
+    "code_block_count": 0,
+    "source_text_sha256": "e1cc5d23379aa123a061760b94d16190a8d104aec75fe7687c5b96390ce25a83",
+    "output_text_sha256": "e1cc5d23379aa123a061760b94d16190a8d104aec75fe7687c5b96390ce25a83",
+    "latex_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "body_sha256": "566f6ffcde7f4e24d9008a91d8fb20d89d8ebf4fe59023e0f817823c5167b3e2",
+    "converter_version": 1,
+    "markdown_sha256": "9df714486a85a04aaaf115dc28cafa433297ceac2a05a31134d38e39cb6167d4"
+  },
+  "fetched_at": "2026-09-14T13:47:53+00:00",
+  "source_snapshot_sha256": "dd40a8a2cabfeb144f8d19551d54cfd179a52ddf7b4b783ab0ce142975f3f110",
+  "images": {},
+  "local_only": true
+}

@@ -1,0 +1,8 @@
+<div class="PostContent" id="PostContent">
+<h2 id="列表">列表</h2><blockquote><p><a href="/archives/4667/" target="_blank">更别致的词向量模型(一)：simpler glove</a></p><p><a href="/archives/4669/" target="_blank">更别致的词向量模型(二)：对语言进行建模</a></p><p><a href="/archives/4671/" target="_blank">更别致的词向量模型(三)：描述相关的模型</a></p><p><a href="/archives/4675/" target="_blank">更别致的词向量模型(四)：模型的求解</a></p><p><a href="/archives/4677/" target="_blank">更别致的词向量模型(五)：有趣的结果</a></p><p><a href="/archives/4681/" target="_blank">更别致的词向量模型(六)：代码、分享与结语</a></p></blockquote><h2 id="代码">代码</h2><p>本文的实现位于：<a href="https://github.com/bojone/simpler_glove" target="_blank">https://github.com/bojone/simpler_glove</a></p><p>源码修改自斯坦福的<a href="https://github.com/stanfordnlp/GloVe" target="_blank">glove原版</a>，笔者仅仅是小修改，因为主要的难度是在统计共现词频这里，感谢斯坦福的前辈们提供了这一个经典的、优秀的统计实现案例。事实上，笔者不熟悉C语言，因此所作的修改可能难登大雅之台，万望高手斧正。</p><p>此外，为了实现上一节的“有趣的结果”，在github中我还补充了simpler_glove.py，里边封装了一个类，可以直接读取C版的simple glove所导出的模型文件（txt格式），并且附带了一些常用函数，方便调用。</p><h2 id="分享">分享</h2><p>这里有一份利用本文的模型训练好的中文词向量，预料训练自百科百科，共100万篇文章，约30w词，词向量维度为128。其中分词时做了一个特殊的处理：把所有数字和英文都拆成单个的数字和字母了。如果需要实验的朋友可以下载：</p><blockquote><p>链接:<a href="http://pan.baidu.com/s/1jIb3yr8" target="_blank">http://pan.baidu.com/s/1jIb3yr8</a></p><p>密码:1ogw</p></blockquote><h2 id="结语">结语</h2><p>本文算是一次对词向量模型比较完整的探索，也算是笔者的理论强迫症的结果，幸好最后也得到了一个理论上比较好看的模型，初步治愈了我这个强迫症。而至于实验效果、应用等等，则有待日后进一步使用验证了。</p><p>本文的大多数推导，都可以模仿地去解释word2vec的skip gram模型的实验结果，读者可以尝试。事实上，word2vec的skip gram模型确实跟本文的模型有着类似的表现，包括词向量的模型性质等。</p><p><strong><font color="red">总的来说，理论与实验结合是一件很美妙的事情，当然，也是一件很辛苦的事情，因为就以上这些东西，就花了我几个月思考时间。</font></strong></p>
+
+
+
+
+
+</div>

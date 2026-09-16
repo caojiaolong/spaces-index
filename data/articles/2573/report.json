@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "2573",
+    "title": "当概率遇上复变：随机游走基本公式",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/2573",
+    "date": "2014-04-30",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 28,
+    "display_formula_count": 7,
+    "image_count": 0,
+    "heading_count": 0,
+    "code_block_count": 0,
+    "source_text_sha256": "218aef78090262f2db62be216d9156b25f76d241f93d73c7c270ac585d9d7334",
+    "output_text_sha256": "218aef78090262f2db62be216d9156b25f76d241f93d73c7c270ac585d9d7334",
+    "latex_sha256": "4c4691b1f76c45605c13d3067c5f9c7b03fed525ce8922518802e261d95db5d5",
+    "body_sha256": "d2dcfa7f8123cd01b79b50aa20561bfe2a6da698a95d4c459da60c8a81ec5e48",
+    "converter_version": 1,
+    "markdown_sha256": "db6e3870fc0aa1404f5c818a3d9674fce34ada33d0adf405371e8de7553d4f91"
+  },
+  "fetched_at": "2026-09-14T13:54:56+00:00",
+  "source_snapshot_sha256": "b99125748b19111ecc384f606d412fb83ddb7b3eba43307eb1fc7226221743ae",
+  "images": {},
+  "local_only": true
+}

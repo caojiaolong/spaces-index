@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "2224",
+    "title": "矩阵描述三维空间旋转",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/2224",
+    "date": "2013-12-28",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 59,
+    "display_formula_count": 12,
+    "image_count": 1,
+    "heading_count": 0,
+    "code_block_count": 0,
+    "source_text_sha256": "9c5924210bf7bd8663403dba2f6a33a6ede3fba3ebe4ec41e67bb63fb1a0fc09",
+    "output_text_sha256": "9c5924210bf7bd8663403dba2f6a33a6ede3fba3ebe4ec41e67bb63fb1a0fc09",
+    "latex_sha256": "a2628628dd6870d77cdbe7fc8a7aeb298195e04efe95474f7494dedcd6899cf8",
+    "body_sha256": "4f340441b97d93b921563c6368642fe6e5e7b69c8f9005d048e977113e8af4e0",
+    "converter_version": 1,
+    "markdown_sha256": "ec2b9447d3bee4c5363670b160b10717bfa339c9faf68511352a064f015741a8"
+  },
+  "fetched_at": "2026-09-14T13:58:12+00:00",
+  "source_snapshot_sha256": "9dc0288b79277e03f6287d972e9f2dee666d58a7f02deb356b5df045b39a453d",
+  "images": {},
+  "local_only": true
+}

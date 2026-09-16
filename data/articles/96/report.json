@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "96",
+    "title": "几何-算术均值不等式的一般证明",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/96",
+    "date": "2009-08-24",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 30,
+    "display_formula_count": 3,
+    "image_count": 0,
+    "heading_count": 0,
+    "code_block_count": 0,
+    "source_text_sha256": "5a69926363dbbc46e77090316f3c7b87cef1a275570d1c61b083aa9200121324",
+    "output_text_sha256": "5a69926363dbbc46e77090316f3c7b87cef1a275570d1c61b083aa9200121324",
+    "latex_sha256": "980d8b02693ad434a86931670edcb6b467c21f658efef6a6fdc957855663dba1",
+    "body_sha256": "f6d13e0fa27574590a473bcb7cf387d49abb10ac1f265bf2ec4f21b21fd2cdb4",
+    "converter_version": 1,
+    "markdown_sha256": "23938b1320d6859c98adfc144ca1808c0ea59fbc9408bb582e178c27db9cfa0f"
+  },
+  "fetched_at": "2026-09-14T14:56:37+00:00",
+  "source_snapshot_sha256": "2772bcd3123434e057e531f949c562ceb043f726f0a195005b490c9cab9ccc81",
+  "images": {},
+  "local_only": true
+}

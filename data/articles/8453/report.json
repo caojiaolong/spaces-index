@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "8453",
+    "title": "从一个单位向量变换到另一个单位向量的正交矩阵",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/8453",
+    "date": "2021-06-05",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 64,
+    "display_formula_count": 14,
+    "image_count": 1,
+    "heading_count": 5,
+    "code_block_count": 1,
+    "source_text_sha256": "c74eb5b2886e71b2772fadeafa85754e15c3c263b5d448834cbe9edfbc06d1df",
+    "output_text_sha256": "c74eb5b2886e71b2772fadeafa85754e15c3c263b5d448834cbe9edfbc06d1df",
+    "latex_sha256": "15f8963da024735f8dcd6c1a0190b5af3479128f796f53f0faa120a6d019c390",
+    "body_sha256": "6f655a9d11c44ea619223f5f5543191b40ab115db37a611a67542426bc092bdd",
+    "converter_version": 1,
+    "markdown_sha256": "88bdd22df8b58a3c9e1181bbeae0bc1e6b915bb7fdf5f8c0f16215ed6b7bff09"
+  },
+  "fetched_at": "2026-09-14T13:06:18+00:00",
+  "source_snapshot_sha256": "e3c120ab5d151131391bd3ff4b86686276cbf9a923f488b18172c4a6648a5c54",
+  "images": {},
+  "local_only": true
+}

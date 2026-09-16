@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "10588",
+    "title": "从Hessian近似看自适应学习率优化器",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/10588",
+    "date": "2024-11-29",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 73,
+    "display_formula_count": 17,
+    "image_count": 0,
+    "heading_count": 5,
+    "code_block_count": 0,
+    "source_text_sha256": "722be70a0fdf959ed4a0aa21dd5a5c6ca041125f1361a90daef5bf5eaeab03df",
+    "output_text_sha256": "722be70a0fdf959ed4a0aa21dd5a5c6ca041125f1361a90daef5bf5eaeab03df",
+    "latex_sha256": "a43608b5b4d08a55290f1c180870b84efff6f0b5a7cf3b42d111a63e95a71cf8",
+    "body_sha256": "7a6def43164754d5ab0745d7880cf55411bf08c58caf57200f39abee23582379",
+    "converter_version": 1,
+    "markdown_sha256": "45abf061bd7defe1777c13bfa6c40913e99482d63560d752f6701204ea9dbfef"
+  },
+  "fetched_at": "2026-09-14T12:44:57+00:00",
+  "source_snapshot_sha256": "df8e7dc1c3e24fdee264e4886422f78cb65d73f9e6d5e96ca746a4c7553786b6",
+  "images": {},
+  "local_only": true
+}

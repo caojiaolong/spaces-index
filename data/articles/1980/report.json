@@ -1,0 +1,39 @@
+{
+  "metadata": {
+    "id": "1980",
+    "title": "学习场论（电磁场、重力场）",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/1980",
+    "date": "2013-04-25",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "source_dom_exact": true,
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "attributes_exact": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 1,
+    "display_formula_count": 0,
+    "image_count": 0,
+    "heading_count": 0,
+    "code_block_count": 0,
+    "source_text_sha256": "8aefc260c85f2a92ad4b30c014262a93f56c046e3bf9afc4c4dfa578f78afb2c",
+    "output_text_sha256": "8aefc260c85f2a92ad4b30c014262a93f56c046e3bf9afc4c4dfa578f78afb2c",
+    "latex_sha256": "7dc928a5e3e8f53899de95dcb4d6330169286ab6c2972cc1ef66e5b4d41e7170",
+    "body_sha256": "10faab339040021d3d004940087b3b14672875115a07bf454b3f92f8ea8808f3",
+    "converter_version": 1,
+    "format": "html-v1",
+    "source_warnings": [],
+    "fallback_reason": "Unsupported body element: del",
+    "markdown_sha256": "d23557a2722e77a321f9dbe3d4b0915908d0db389887e4e756c071084971ab81"
+  },
+  "fetched_at": "2026-09-14T14:02:43+00:00",
+  "source_snapshot_sha256": "eecebc3e07ea1ff469e4e28caa0a3b4bc62fddf1d40d91832d800558d923d5b3",
+  "images": {},
+  "local_only": true
+}

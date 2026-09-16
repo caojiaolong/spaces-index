@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "10996",
+    "title": "msign算子的Newton-Schulz迭代（下）",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/10996",
+    "date": "2025-06-05",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 192,
+    "display_formula_count": 18,
+    "image_count": 0,
+    "heading_count": 8,
+    "code_block_count": 3,
+    "source_text_sha256": "3b22b06ce3d7b05528154273b62b228b28edc95847f0bef91446fed130a50d5f",
+    "output_text_sha256": "3b22b06ce3d7b05528154273b62b228b28edc95847f0bef91446fed130a50d5f",
+    "latex_sha256": "f798c384fe319b1cd01ef0ccebb16aae90e6ca50612b2b6c1553525002438d48",
+    "body_sha256": "aafddaf0692a5091b228ba70f9b8e7ddad2e9d897a235331cfac9d9853e7c21f",
+    "converter_version": 1,
+    "markdown_sha256": "2b2807b33cbe3a020201c3807782f7306d4b99490a42c5ff755b0eb7e041abad"
+  },
+  "fetched_at": "2026-09-14T12:42:01+00:00",
+  "source_snapshot_sha256": "efe1a147a1c9ebef5823f5328c647044b585e6238018148fa9eb029b26e3ac01",
+  "images": {},
+  "local_only": true
+}

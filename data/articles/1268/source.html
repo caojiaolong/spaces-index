@@ -1,0 +1,13 @@
+<div class="PostContent" id="PostContent">
+<p>通常来说，选取惯性系为参考系，列出的三体问题方程为<br/>
+$$\ddot{\vec{r}}_k=\sum_{i=1,i != k}^{n} Gm_i\frac{\vec{r}_i-\vec{r}_k}{|\vec{r}_i-\vec{r}_k|^3}$$</p><p>历史上出现过很多不同形式的变换，使得三体问题的运动方程有了各样的形式，如Lagrange形式、Jacobi形式、Hamilton形式等。这些变换形式都各有特点，都能够在一定程度上化简三体问题。BoJone在研究摆弄等质量型三体问题的运动方程时，也发现了一种很有趣的变换，在此贴出与大家分享。</p><p>设$\vec{R}_1=\vec{r}_1-\vec{r}_2,\vec{R}_2=\vec{r}_2-\vec{r}_3,\vec{R}_3=\vec{r}_3-\vec{r}_1$，则三体问题的运动方程变为</p><p>$$\ddot{\vec{r}}_1=-Gm_2\frac{\vec{R}_1}{R_1^3}+Gm_3\frac{\vec{R}_3}{R_1^3}\tag{35}$$$$\ddot{\vec{r}}_2=-Gm_3\frac{\vec{R}_2}{R_2^3}+Gm_1\frac{\vec{R}_1}{R_1^3}\tag{36}$$$$\ddot{\vec{r}}_3=-Gm_1\frac{\vec{R}_3}{R_3^3}+Gm_2\frac{\vec{R}_2}{R_2^3}\tag{37}$$<br/>
+其中$R_1,R_2,R_3$是对应向量的模。让(35)-(36)、(36)-(37)、(37)-(35)得</p><p>$$\begin{aligned}\ddot{\vec{R}}_1=-G(m_1+m_2)\frac{\vec{R}_1}{R_1^3}+Gm_3(\frac{\vec{R}_3}{R_1^3}+\frac{\vec{R}_2}{R_2^3})\tag{38} \\ \ddot{\vec{R}}_2=-G(m_2+m_3)\frac{\vec{R}_2}{R_2^3}+Gm_1(\frac{\vec{R}_1}{R_1^3}+\frac{\vec{R}_3}{R_3^3})\tag{39} \\ \ddot{\vec{R}}_3=-G(m_1+m_3)\frac{\vec{R}_3}{R_3^3}+Gm_2(\frac{\vec{R}_1}{R_1^3}+\frac{\vec{R}_2}{R_2^3})\end{aligned}\tag{40}$$<br/>
+很明显这就是<u><font color="red">“摄动形式”的三体运动方程</font></u>。当然这还体现不出有什么“有趣的地方”，不过换到等质量质量的情况就不一样了。选取适当的单位使得$G,m_1,m_2,m_3=1$，让(38)-(39)、(39)-(40)、(40)-(38)得<br/>
+$$\ddot{\vec{R}}_1-\ddot{\vec{R}}_2=-\frac{3\vec{R}_1}{R_1^3}+\frac{3\vec{R}_2}{R_2^3}\tag{41}$$$$\ddot{\vec{R}}_2-\ddot{\vec{R}}_3=-\frac{3\vec{R}_2}{R_2^3}+\frac{3\vec{R}_3}{R_3^3}\tag{42}$$$$\ddot{\vec{R}}_3-\ddot{\vec{R}}_1=-\frac{3\vec{R}_3}{R_3^3}+\frac{3\vec{R}_1}{R_1^3}\tag{43}$$<br/>
+<strong><font color="red">(41)~(43)具有高度的对称性！不过，化成这样的形式究竟是把问题化简了还是化繁了，BoJone不得而知，因为每个式子左端都出现了两个二阶导数项，从一般的解微分方程的思路来讲，这是化繁的。我只知道，这是一种相当有趣的形式，因为它去掉了分母分子中两个向量相减的项，而用一个新向量来表示。并在等质量型的情况下是如此对称，这至少给了我们一种“美感”。</font></strong></p><p>这样变换以后，三体问题原有的十个积分都可以相应地变换过来。如动量守恒变为$\vec{R}_1+\vec{R}_2+\vec{R}_3=\vec{0}$等。还有动量矩积分和能量守恒都可以变换，有兴趣的读者不妨自己尝试下。</p><p>仅此记录！</p>
+
+
+
+
+
+</div>

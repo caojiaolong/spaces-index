@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "10091",
+    "title": "缓存与效果的极限拉扯：从MHA、MQA、GQA到MLA",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/10091",
+    "date": "2024-05-13",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 101,
+    "display_formula_count": 12,
+    "image_count": 0,
+    "heading_count": 9,
+    "code_block_count": 0,
+    "source_text_sha256": "ecfaf83130aad98ad738ee8d58f863710026796cf54c95782fd754f866fedd20",
+    "output_text_sha256": "ecfaf83130aad98ad738ee8d58f863710026796cf54c95782fd754f866fedd20",
+    "latex_sha256": "198c192e3de934c6186e3d1092cc4ac29ef2fcea17b4d960ac49f87f98e957e2",
+    "body_sha256": "40ec98ee90b141c8c868ee88b664ec485b3eb9fb6ec0b463b7acbb630ab394b1",
+    "converter_version": 1,
+    "markdown_sha256": "66e16ca3046a40bb430109c5e762452a8b7fca05a2a976ac6a215fe013ce6754"
+  },
+  "fetched_at": "2026-09-14T12:48:36+00:00",
+  "source_snapshot_sha256": "14ca02791edbe76c1cc0f826067cfb6d03bc70af9cb2cc2c7c199d744329f23f",
+  "images": {},
+  "local_only": true
+}

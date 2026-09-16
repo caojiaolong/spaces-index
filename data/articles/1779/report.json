@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "1779",
+    "title": "天体力学巨匠——拉普拉斯",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/1779",
+    "date": "2012-11-16",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 0,
+    "display_formula_count": 0,
+    "image_count": 3,
+    "heading_count": 0,
+    "code_block_count": 0,
+    "source_text_sha256": "ed01dc9c429abd3adbe24dba4349cc4861ed4e858a2eb6a28d5729b2294dbbcc",
+    "output_text_sha256": "ed01dc9c429abd3adbe24dba4349cc4861ed4e858a2eb6a28d5729b2294dbbcc",
+    "latex_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "body_sha256": "ae583292fb9f46ad4c8fcb5321b852880f403385f21cab9ecb7ed38a1977a2d2",
+    "converter_version": 1,
+    "markdown_sha256": "a06a5c2c2a494245359aef771ab1540323b7072d53632eb6dcddacc0cf769ed5"
+  },
+  "fetched_at": "2026-09-14T14:08:46+00:00",
+  "source_snapshot_sha256": "35f1eb86ec35460c30a389f18140c66c418e3217d3864f81cd6a2e019b3d1e19",
+  "images": {},
+  "local_only": true
+}

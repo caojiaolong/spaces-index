@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "1735",
+    "title": "2012诺贝尔奖...",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/1735",
+    "date": "2012-10-11",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 0,
+    "display_formula_count": 0,
+    "image_count": 3,
+    "heading_count": 0,
+    "code_block_count": 0,
+    "source_text_sha256": "23659391eed91854abf4a8265a0bf7ead30ea05ab67fe9618b67f97355349841",
+    "output_text_sha256": "23659391eed91854abf4a8265a0bf7ead30ea05ab67fe9618b67f97355349841",
+    "latex_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "body_sha256": "745018c7d05d1e57b6d9c0ee1a981017fb844984ffb93f30d5aa9e642fb3da65",
+    "converter_version": 1,
+    "markdown_sha256": "a6fc03c13a0bca5489fac77d6ec541bc6e0f62159402ce3480add11bb8403e9a"
+  },
+  "fetched_at": "2026-09-14T14:09:59+00:00",
+  "source_snapshot_sha256": "80383d83653d20c53f3f8f1aa5b434a1aac2079e32f21a21c0bd47144e618d5f",
+  "images": {},
+  "local_only": true
+}

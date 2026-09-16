@@ -1,0 +1,39 @@
+{
+  "metadata": {
+    "id": "1065",
+    "title": "《自然极值》系列——1.前言",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/1065",
+    "date": "2010-11-27",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "source_dom_exact": true,
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "attributes_exact": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 0,
+    "display_formula_count": 0,
+    "image_count": 1,
+    "heading_count": 0,
+    "code_block_count": 0,
+    "source_text_sha256": "c94d978685ea76440810d7ba5ef9ce3a49a7e3b1b3ddb45bfde99222c54a5138",
+    "output_text_sha256": "c94d978685ea76440810d7ba5ef9ce3a49a7e3b1b3ddb45bfde99222c54a5138",
+    "latex_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "body_sha256": "c35d9584a505a9c93be26d9573caafe6a594adb9dd577c5b5b9d0d75fa422379",
+    "converter_version": 1,
+    "format": "html-v1",
+    "source_warnings": [],
+    "fallback_reason": "Standard Markdown round trip changed source structure",
+    "markdown_sha256": "353e84dfc3cd1d3b8f1320fa7cf365e9aa6fb254825950b2fc65d74594a1fa32"
+  },
+  "fetched_at": "2026-09-14T14:27:11+00:00",
+  "source_snapshot_sha256": "894b9b02ebc272cf5dffe0ee5d2524e191773269fad68eab028163fd426057a6",
+  "images": {},
+  "local_only": true
+}

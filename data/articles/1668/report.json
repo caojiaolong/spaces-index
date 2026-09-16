@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "1668",
+    "title": "“未解之谜”：为何不讲中点矩形法则？",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/1668",
+    "date": "2012-07-20",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 13,
+    "display_formula_count": 4,
+    "image_count": 4,
+    "heading_count": 0,
+    "code_block_count": 0,
+    "source_text_sha256": "40a0284d5c51fa339a87b2fa506fe804d7d69cf9e6f9a269072a0a4311efc81a",
+    "output_text_sha256": "40a0284d5c51fa339a87b2fa506fe804d7d69cf9e6f9a269072a0a4311efc81a",
+    "latex_sha256": "c438350e42b275ab8c610e1a157ca1fe6906ee44449821bc1f8f3ea3edae98bf",
+    "body_sha256": "5f79eaa698a47e835ef9a4c6c82dfc3d7251a2aa12155646eb68b140d90ec82d",
+    "converter_version": 1,
+    "markdown_sha256": "b9a604df9a91fdaf349f3bfc03b8da72ffa6269d773296b4a8084be45df7e875"
+  },
+  "fetched_at": "2026-09-14T14:12:16+00:00",
+  "source_snapshot_sha256": "95ef8bc0437345bfadb713c696c7587cf00f551c37935e6202f6c37eaa9ee620",
+  "images": {},
+  "local_only": true
+}

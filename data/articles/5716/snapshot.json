@@ -1,0 +1,17 @@
+{
+  "metadata": {
+    "id": "5716",
+    "title": "用变分推断统一理解生成模型（VAE、GAN、AAE、ALI）",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/5716",
+    "date": "2018-07-18",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "fetched_at": "2026-09-14T13:25:46+00:00",
+  "source_snapshot_sha256": "7209128568b996cef9f069b7e0133c40e5ffb6c7cd78bc8c0914307783de1a03",
+  "validators": {
+    "etag": null,
+    "last_modified": null
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "7381",
+    "title": " 变分自编码器（五）：VAE + BN = 更好的VAE",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/7381",
+    "date": "2020-05-06",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 59,
+    "display_formula_count": 10,
+    "image_count": 2,
+    "heading_count": 10,
+    "code_block_count": 1,
+    "source_text_sha256": "ce9b759878b90f56d81ec4a5d3202d994d9ad1256b5dcdf5150889369d4d6f4e",
+    "output_text_sha256": "ce9b759878b90f56d81ec4a5d3202d994d9ad1256b5dcdf5150889369d4d6f4e",
+    "latex_sha256": "2338c647559e99866db93a466dc1d087948d190317b1100df9a816634f7b00a7",
+    "body_sha256": "05952e386ef9c411f812bf8659c743c67c1f3dbf3dcc1bad0acdce9b92258a4f",
+    "converter_version": 1,
+    "markdown_sha256": "c8097917b4f8bbdff2e26d147af19f3eea809e74111ec11b6471acc279b368a9"
+  },
+  "fetched_at": "2026-09-14T13:14:03+00:00",
+  "source_snapshot_sha256": "4bfe128e6fc2efde16d442df45a8009786956708cd80f590ba3ef2756fa713e3",
+  "images": {},
+  "local_only": true
+}

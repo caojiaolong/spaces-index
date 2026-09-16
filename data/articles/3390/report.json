@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "3390",
+    "title": "漫话模型|模型与选芒果",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/3390",
+    "date": "2015-07-15",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 0,
+    "display_formula_count": 0,
+    "image_count": 2,
+    "heading_count": 4,
+    "code_block_count": 0,
+    "source_text_sha256": "2cff3be3cdfe4aba20a2ac48f338a1542e15c2bce1a2a3fcd8a90abb6d227023",
+    "output_text_sha256": "2cff3be3cdfe4aba20a2ac48f338a1542e15c2bce1a2a3fcd8a90abb6d227023",
+    "latex_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "body_sha256": "3deb0375988189d34a8e8351ed7ae51695d320df021805cff2d6a31308099cc2",
+    "converter_version": 1,
+    "markdown_sha256": "2affb830c18f0bf94e62e4b283dd9d64f3991f661f1a630c03ce8b468f1b0b99"
+  },
+  "fetched_at": "2026-09-14T13:45:31+00:00",
+  "source_snapshot_sha256": "948609cbaebd9474caf8382f726141b24d96096df76bd8c6bf6b8103c938d2e0",
+  "images": {},
+  "local_only": true
+}

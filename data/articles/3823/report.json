@@ -1,0 +1,39 @@
+{
+  "metadata": {
+    "id": "3823",
+    "title": "OCR技术浅探：5. 文本切割",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/3823",
+    "date": "2016-06-24",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "source_dom_exact": true,
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "attributes_exact": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 0,
+    "display_formula_count": 0,
+    "image_count": 2,
+    "heading_count": 3,
+    "code_block_count": 0,
+    "source_text_sha256": "ec3d18f3b0e9684df631ee721159c37778f8b1099268e9801cc84ad845b52b20",
+    "output_text_sha256": "ec3d18f3b0e9684df631ee721159c37778f8b1099268e9801cc84ad845b52b20",
+    "latex_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "body_sha256": "23dbb4121a6344e5b1a99fb0d3ff2589cf848fae123dcdaea570a1d24cd2a6e6",
+    "converter_version": 1,
+    "format": "html-v1",
+    "source_warnings": [],
+    "fallback_reason": "Unsupported body element: del",
+    "markdown_sha256": "ef1897e154d02b332cdd9a19160bcb297330792e3022dcee0473356db9a2c9ac"
+  },
+  "fetched_at": "2026-09-14T13:39:47+00:00",
+  "source_snapshot_sha256": "76504076d82a7b1f38a1b59b37acd40cc8fde6aeaf93bf925d0034ca2856a0de",
+  "images": {},
+  "local_only": true
+}

@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "10563",
+    "title": "Adam的epsilon如何影响学习率的Scaling Law？",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/10563",
+    "date": "2024-11-18",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 113,
+    "display_formula_count": 18,
+    "image_count": 1,
+    "heading_count": 6,
+    "code_block_count": 0,
+    "source_text_sha256": "4f3af903291d99aea079ab110f7366e254158ac7a6fd5a613541a1340ce09952",
+    "output_text_sha256": "4f3af903291d99aea079ab110f7366e254158ac7a6fd5a613541a1340ce09952",
+    "latex_sha256": "5d048fdf155ef83bea7548cde7cc036bbb4aa8563acb494235690fb4f7752438",
+    "body_sha256": "4b5fa217726113cbe9e940ff734c8f1581c0e6446c8de7f549f29b0418777d26",
+    "converter_version": 1,
+    "markdown_sha256": "ecf4a9d4a26429888224258f6024914347ca2d71a55a982e97d4e896f54096a3"
+  },
+  "fetched_at": "2026-09-14T12:45:10+00:00",
+  "source_snapshot_sha256": "d8e859ae8fcfdc49a0dde1ed0b79feb22e6a53ff0eb612ee1a988ad7ead21cc4",
+  "images": {},
+  "local_only": true
+}

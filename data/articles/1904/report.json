@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "1904",
+    "title": "[问题解答]双曲线上的最短距离",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/1904",
+    "date": "2013-02-04",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 19,
+    "display_formula_count": 4,
+    "image_count": 1,
+    "heading_count": 0,
+    "code_block_count": 0,
+    "source_text_sha256": "dd2550ad5c088be02ddacc0cf40b402accc350f9fe0c6bf0b89ada425dc9a7d3",
+    "output_text_sha256": "dd2550ad5c088be02ddacc0cf40b402accc350f9fe0c6bf0b89ada425dc9a7d3",
+    "latex_sha256": "d3dd307fe5df25219e802b822e7b668272120a46a121ba98569e3252e59dfb27",
+    "body_sha256": "9dfc8479102839b0a5d699cc6ee9ea6e23f7d41a2abb2372e96f063af935f225",
+    "converter_version": 1,
+    "markdown_sha256": "bbb60c41455ae3ae4b1b99e5220ecc180cd58d758be0ba327c63bfaba5535f0b"
+  },
+  "fetched_at": "2026-09-14T14:05:19+00:00",
+  "source_snapshot_sha256": "0c3023e960f45c1804c72ed55f6cbc43c0e5cffc7f9e26f7c252c8852fd4ebbb",
+  "images": {},
+  "local_only": true
+}

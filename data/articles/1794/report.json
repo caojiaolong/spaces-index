@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "1794",
+    "title": "算子与线性常微分方程(下)",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/1794",
+    "date": "2012-11-30",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 19,
+    "display_formula_count": 10,
+    "image_count": 0,
+    "heading_count": 0,
+    "code_block_count": 0,
+    "source_text_sha256": "72831a014fb3c330854cc069dec61ad0a0a2218fad7c95f7e20b94af65944846",
+    "output_text_sha256": "72831a014fb3c330854cc069dec61ad0a0a2218fad7c95f7e20b94af65944846",
+    "latex_sha256": "7c91c222448c8f2a186bf30b23e7ab7527fa3e24439a9b486accf6fd19909edf",
+    "body_sha256": "d814b6905e9123a9234aef5af1d92343b4409a844f7c3590481b0bde207b8301",
+    "converter_version": 1,
+    "markdown_sha256": "065a361774ddf56b8d2532d3f69505c0cb251ac5197e87481148deeca57812c0"
+  },
+  "fetched_at": "2026-09-14T14:08:27+00:00",
+  "source_snapshot_sha256": "cef58b333a0442af28051252d653dcd75edbf7a4d1e392dac284b2bc3c7df448",
+  "images": {},
+  "local_only": true
+}

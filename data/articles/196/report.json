@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "196",
+    "title": "关于e是无理数的证明",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/196",
+    "date": "2009-10-17",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 6,
+    "display_formula_count": 3,
+    "image_count": 0,
+    "heading_count": 0,
+    "code_block_count": 0,
+    "source_text_sha256": "8e7b6395f9f16b91b1bf04d0d637da76746fd3f77d71ba2deb2149d66720b5de",
+    "output_text_sha256": "8e7b6395f9f16b91b1bf04d0d637da76746fd3f77d71ba2deb2149d66720b5de",
+    "latex_sha256": "11682855b1ff427266596a9577136f178b38590f3b02d3035cbac4a80a247034",
+    "body_sha256": "d0c4a313b29b66f4a9ea10a7b4deeeb841ee1b3d1006a05feec79a8322af71e3",
+    "converter_version": 1,
+    "markdown_sha256": "eb69bfe6641704f1bb23c6ccf15d86b5cad2b2f283de4c2ee28e966e4f086476"
+  },
+  "fetched_at": "2026-09-14T14:48:12+00:00",
+  "source_snapshot_sha256": "bf661370b608a3371e58215fb15af5e5f029a7f0d8bee0ad56ebe1c7a8b63101",
+  "images": {},
+  "local_only": true
+}

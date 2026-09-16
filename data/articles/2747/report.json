@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "2747",
+    "title": "齐次多项式不等式的机器证明（差分代换）",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/2747",
+    "date": "2014-07-06",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 45,
+    "display_formula_count": 14,
+    "image_count": 1,
+    "heading_count": 0,
+    "code_block_count": 0,
+    "source_text_sha256": "e18e68b1e8629b28099a2c0cb7e946d8a6ae6c4f1033a6fdde920b3c10ef4c56",
+    "output_text_sha256": "e18e68b1e8629b28099a2c0cb7e946d8a6ae6c4f1033a6fdde920b3c10ef4c56",
+    "latex_sha256": "a159cbbd9baf7979daa1437e920b4a6fb4fa69e3f0cdc0e7b777cbcbd095b49f",
+    "body_sha256": "e78969e3981fbc8bb92c871763183ef97b9171f0749b112f2096a16301124f52",
+    "converter_version": 1,
+    "markdown_sha256": "362324d95acad5abd2b77c8aaaebb58e61dc881cf4611702282b424150e8db81"
+  },
+  "fetched_at": "2026-09-14T13:53:24+00:00",
+  "source_snapshot_sha256": "fc27ec6007ca9b3e87ce53fd14e1fb96259c56a6d4352baed7c9545ba589496d",
+  "images": {},
+  "local_only": true
+}

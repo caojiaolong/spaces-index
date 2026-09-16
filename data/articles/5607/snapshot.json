@@ -1,0 +1,17 @@
+{
+  "metadata": {
+    "id": "5607",
+    "title": "python简单实现gillespie模拟",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/5607",
+    "date": "2018-06-07",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "fetched_at": "2026-09-14T13:26:20+00:00",
+  "source_snapshot_sha256": "e27478e71d66dcf69a8cdd9f7e10efeca2043656a54e7db71be13a75ee6015eb",
+  "validators": {
+    "etag": null,
+    "last_modified": null
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "1921",
+    "title": "[问题解答]有多少个5？",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/1921",
+    "date": "2013-02-18",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 2,
+    "display_formula_count": 2,
+    "image_count": 0,
+    "heading_count": 0,
+    "code_block_count": 0,
+    "source_text_sha256": "1a3804b9bc2a80ec6cc14883039f17f393886ed5ff5468627c7f0717da53297a",
+    "output_text_sha256": "1a3804b9bc2a80ec6cc14883039f17f393886ed5ff5468627c7f0717da53297a",
+    "latex_sha256": "64e52617b00c2da1a5b3605f02b1d8949e57c6a51637d0128cdb140e499147b0",
+    "body_sha256": "06c62d75d2788471866c196994ac14ba402bc3c66a5ed04feaffa197f8254058",
+    "converter_version": 1,
+    "markdown_sha256": "3b6f807735fcae096038c9d224ce727dc6722c5a1ab62c60634bb53fba80e0c0"
+  },
+  "fetched_at": "2026-09-14T14:04:46+00:00",
+  "source_snapshot_sha256": "7c40fa642aa4fd8dd40abc0e4fd8fcea3ccea91e738d9914ff4cdcccac162791",
+  "images": {},
+  "local_only": true
+}

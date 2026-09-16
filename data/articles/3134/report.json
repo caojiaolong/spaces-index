@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "3134",
+    "title": "迟到一年的建模：再探碎纸复原",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/3134",
+    "date": "2014-12-18",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 5,
+    "display_formula_count": 2,
+    "image_count": 2,
+    "heading_count": 8,
+    "code_block_count": 4,
+    "source_text_sha256": "943ea6b1782a49791533d81fe4560ebf2124b8540407f9285c39edd6f12216b1",
+    "output_text_sha256": "943ea6b1782a49791533d81fe4560ebf2124b8540407f9285c39edd6f12216b1",
+    "latex_sha256": "e657e679d3ddcf949c68a9a177f6c91d644f4d8d62a3cc0dde5bf807bb421fde",
+    "body_sha256": "2880f64b92eeef01383f1aee1e31c8288226db3719531b2e510b03dae2fd43ca",
+    "converter_version": 1,
+    "markdown_sha256": "e6f581975a822854d9b0afb6d9bc00e52888ee8d25306877e8d1e7f03dca9c6d"
+  },
+  "fetched_at": "2026-09-14T13:48:58+00:00",
+  "source_snapshot_sha256": "e54a575941b39f3d5336b511abeb2d1b2b07cdb968e4526f12097da0fffdf138",
+  "images": {},
+  "local_only": true
+}

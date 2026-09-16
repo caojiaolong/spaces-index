@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "889",
+    "title": "《向量》系列——4.天旋地转(向量,复数,极坐标)",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/889",
+    "date": "2010-08-23",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 17,
+    "display_formula_count": 8,
+    "image_count": 3,
+    "heading_count": 0,
+    "code_block_count": 0,
+    "source_text_sha256": "a970bfe53d60c44101afdc4071d74121ef0db17fe36be831fde7db6c2517556d",
+    "output_text_sha256": "a970bfe53d60c44101afdc4071d74121ef0db17fe36be831fde7db6c2517556d",
+    "latex_sha256": "ecbfaf8bd2645d6968c217b688fc2f5575e183f553c2231f7ea13be95bb30dbc",
+    "body_sha256": "b68994e66c64d3a0dc6db09f8925c982e7809b446fbc8449baca67f8c6bc1b98",
+    "converter_version": 1,
+    "markdown_sha256": "b86232ede83d7700d8caed235ae736bb1dadf0228fb814ab8b18582bd796b74b"
+  },
+  "fetched_at": "2026-09-14T14:31:24+00:00",
+  "source_snapshot_sha256": "1ef252844ca948f675e890ce1080dd13189a664f63420a5188b786bd5df08027",
+  "images": {},
+  "local_only": true
+}

@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "1757",
+    "title": "行星密度与其公转周期（更新）",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/1757",
+    "date": "2012-10-24",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 10,
+    "display_formula_count": 2,
+    "image_count": 2,
+    "heading_count": 0,
+    "code_block_count": 0,
+    "source_text_sha256": "5a7bb9584867f2c4e0b2b089dd9debe2153130f010c23d3cb4127d572ade1bf1",
+    "output_text_sha256": "5a7bb9584867f2c4e0b2b089dd9debe2153130f010c23d3cb4127d572ade1bf1",
+    "latex_sha256": "3bfa11dc85214ec55cc2c2f6acc4e9c1d2c4532e1ecb4e13c17b811339fc2393",
+    "body_sha256": "2a5a626459270cbfbae86ff45f26d5a8bec0ae6831779b136ff933979cc11b4d",
+    "converter_version": 1,
+    "markdown_sha256": "7c15f3730f7b8a88a63c5c8be09b73c5b724d2f086b1b03c57583f0145ed18ac"
+  },
+  "fetched_at": "2026-09-14T14:09:26+00:00",
+  "source_snapshot_sha256": "daf1890610058d06983723ccd1e77b78b1008d291e26b8d8634ec4f842311d74",
+  "images": {},
+  "local_only": true
+}

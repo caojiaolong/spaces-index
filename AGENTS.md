@@ -1,115 +1,70 @@
 # AGENTS.md
 
-本仓库是一个面向 [科学空间](https://spaces.ac.cn/) 的元数据索引项目。后续维护时请优先保持“可重复运行、尊重原站、只保存元数据”的设计。
+本仓库是面向 [科学空间](https://spaces.ac.cn/) 的非官方、非商业知识库。保持可重复运行、尊重原站、主题与系列索引完整、正文忠于原文。
 
-## 项目边界
+## 当前范围
 
-- 不要镜像、复制或保存文章全文。
-- 可以保存的字段包括：标题、URL、日期、原站分类、原站标签、自动主题、系列名、系列序号、系列主题、备注、少量明确小结短摘录。
-- `source_summary` 只从明确的“小结 / 文章小结 / 总结 / 结语 / 结束语 / 后记”等段落提取短摘录，当前限长 320 字。
-- 网络抓取必须串行执行，设置合理 User-Agent，并通过 `--sleep` 控制请求间隔。
+- 维护者已授权全站正文提取、修复和网站预览，要求将原型整理为正式项目结构。正文持久化于 `data/articles/`，不再使用 `local/`。
+- 维护者明确要求默认全站公开，已移除试点、全站发布及授权确认开关。公开构建包含全部通过校验且未下架、未过期的正文。提交和推送遵循维护者当前指令；推送到 `main` 会触发现有 GitHub Pages 构建与部署。
+- 保留既有首页视觉、配色、字体和页面结构，不擅自重新设计风格。Markdown 阅读使用主站文章路由，共用导航、主题、返回顶部和阅读记录，不维护第二套页面框架。
+- 作者署名、许可及非官方声明必须保留；项目的发布决定不代表作者提供了额外授权。
+- 正文只做必要格式转换，不摘要、润色、翻译或重组；每篇附苏剑林署名、原文链接、CC BY-NC-ND 2.5 CN 和非官方声明。
+- 保留原始 LaTeX，独立核对文字、公式、代码、链接、图片位置及顺序。校验失败不提供 Markdown；构建时重新核对快照、内容和哈希。
+- 不收录评论、侧栏、推荐、打赏及引用模板。只保存边界已确认的正文快照，不保存完整页面响应。
+- 维护者已授权缓存科学空间托管的图片（`spaces.ac.cn`、`album.spaces.ac.cn`、`bbs.spaces.ac.cn`），保存到对应 `data/articles/<id>/images/`，同目录 `images.json` 记录来源、哈希、更新与失败状态。站外图片保留原链接，重定向也不得越过上述域名。Markdown 保留原图链接，网站映射到已校验的本地图片；缓存策略不代表图片权利核验。旧式脚本和插件不得执行，原文错误公式保留并提示。
+- 后续知识问答须区分原文与系统解读、提供出处，不冒充作者、不将推断当作作者观点。
 
-## 环境与命令
+## 技术栈与统一入口
 
-本项目使用 `uv` 管理 Python 3.11 环境。
-
-```bash
-uv sync
-uv run pytest
-uv run python scripts/update_all.py --sleep 0.8 --progress-every 25
-```
-
-常用维护命令：
+Python 3.11、uv、requests、BeautifulSoup、markdown-it-py；前端原生 HTML/CSS/JavaScript，本地 MathJax 排版。
 
 ```bash
-# 只重新分类和渲染，不访问文章页
-uv run python scripts/classify.py
-uv run python scripts/render_markdown.py
-
-# 强制重抓所有文章页元数据，慎用
-uv run python scripts/update_all.py --force --sleep 0.8
-
-# 只补齐缺少 source_summary 的历史文章，会访问旧文章页
-uv run python scripts/update_all.py --refresh-summaries --sleep 0.8
+uv sync --locked
+# 增量抓取、修复、有限复查、元数据、分类、索引、构建、预览
+uv run python scripts/update_all.py --serve
+# 开发时完全离线更新和预览
+uv run python scripts/update_all.py --offline --serve
+# 只启动已经完成的预览构建
+uv run python scripts/serve.py
 ```
 
-## 数据流
+`--serve` 仅绑定 `127.0.0.1:8765`，去掉该参数只更新和构建。默认产物 `build/preview/`，`--audience public` 输出全站部署产物 `_site/`。不自动部署。
 
-1. `scripts/fetch_archive.py`
-   - 抓取 `https://spaces.ac.cn/content.html`。
-   - 只解析 `id/title/url/date`。
-   - 输出 `data/posts_raw.json`。
+## 目录与流程
 
-2. `scripts/enrich_posts.py`
-   - 读取 `data/posts_raw.json`。
-   - 对照 `data/posts.json` 缓存。
-   - 已有 `source_category/source_tags` 的文章默认跳过，不访问文章页。
-   - 新文章才访问原文页补元数据。
-   - 输出 `data/posts.json`。
+1. `scripts/extract_articles.py`：归档、串行正文抓取、转换与校验；持久化 `data/articles/<id>/` 及 `state.json`。正文请求同时提取元数据，避免重复访问。
+2. `scripts/update_all.py`：统一编排；从同一次文章页响应和本地快照同步 `data/posts_raw.json`、`data/posts.json`，元数据同步本身不得发起 HTTP。归档请求用于发现新文章，仍需保留。
+3. `scripts/classify.py`：规则分类与系列识别，不依赖 LLM；`data/overrides.yaml` 优先。
+4. `scripts/render_markdown.py`：生成 README 和 docs 主题页。
+5. `scripts/build_site.py`：重验正文，先完成临时构建再替换产物；失败构建不得覆盖此前完整网站。
 
-3. `scripts/classify.py`
-   - 读取 `data/posts.json`。
-   - 使用规则分类，不依赖 LLM API。
-   - 识别系列名、系列序号，并用同一系列成员主题的众数统一 `series_topic`。
-   - `data/overrides.yaml` 优先级最高。
-   - 输出 `data/posts_classified.json`。
+持久路径集中于 `scripts/paths.py`。策略位于 `config/mirror.json`；运行日志、汇总、临时构建和验收截图放 `.cache/`。`scripts/migrate_storage.py` 仅用于旧工作区迁移，按字节核对并拒绝覆盖冲突文件。
 
-4. `scripts/render_markdown.py`
-   - 读取 `data/posts_classified.json`。
-   - 生成 `README.md` 和 `docs/*.md`。
-   - README 是主入口；docs 是详细元数据页。
+网络请求必须串行，使用合理 User-Agent，遵守 robots.txt 和 Retry-After，最小间隔 3 秒。正文默认 30 天复查，每次最多 25 篇，按检查时间轮换；失败自动冷却、重试和断点续跑。404/410 自动撤回，主动下架使用 `withdrawn_ids`。离线转换不得延长原站检查时间。
 
-5. `scripts/update_all.py`
-   - 串联以上步骤，是本地更新和 GitHub Actions 的入口。
+## 分类与生成文件
 
-## README 与 docs 约定
+- 分类规则在 `TOPICS`、`TOPIC_KEYWORDS`、`SOURCE_CATEGORY_TOPICS`；系列规则在 `detect_series_info()` 和 `detect_prefix_series_candidate()`。
+- 同一系列以成员主题众数统一 `series_topic`，文章按序号正序排列。
+- 错误分类应修改规则或 overrides，不直接修改生成的 JSON。
+- `source_summary` 只提取明确“小结 / 文章小结 / 总结 / 结语 / 结束语 / 后记”段落的短摘录，最多 320 字。
+- README 顶部保留 motivation；目录合并主题统计并链接主题、系列及非系列文章块；本地命令、流程和详细元数据入口放底部。
+- docs 主题页保留分类、标签、系列号、系列主题、短小结和备注。
 
-- README 顶部保留 motivation，说明本项目解决人工整理帖长期不更新的问题。
-- README 的目录合并主题统计，并链接到 README 内部的主题、系列、非系列文章块。
-- 系列文章应按序号正序排列。
-- 本地运行、更新流程、详细元数据入口放在 README 底部。
-- docs 页面保留更完整的元数据：分类、标签、系列号、系列主题、小结摘录、备注。
+## 自动更新和验收
 
-## 分类与系列维护
+GitHub Actions 每天 UTC 02:23 或手动执行 `scripts/update_all.py --audience public --sleep 3`；push 只测试、构建和部署，不抓取。Action 保存全站正文与索引变化并部署，下架也需要重新构建和部署。
 
-- 分类规则主要维护在 `scripts/classify.py` 的 `TOPICS`、`TOPIC_KEYWORDS`、`SOURCE_CATEGORY_TOPICS`。
-- 标题序列规则维护在 `detect_series_info()`。
-- 无显式序号但共享醒目前缀的系列规则维护在 `detect_prefix_series_candidate()`。
-- 如果规则误判，不要硬改生成后的 JSON；优先修规则或在 `data/overrides.yaml` 中覆盖。
-- 新增规则后至少运行：
+正文与索引同属 `data/`，Actions 按明确路径保存元数据和 `data/articles/`，运行缓存和构建产物不得入库。
 
-```bash
-uv run pytest
-uv run python scripts/classify.py
-uv run python scripts/render_markdown.py
-```
-
-## GitHub Actions
-
-`.github/workflows/update.yml` 每天 UTC 02:23 运行，也支持手动触发。
-
-Action 会：
-
-- `uv sync --locked`
-- `uv run python scripts/update_all.py --sleep 0.8 --progress-every 25`
-- 如果 `README.md`、`docs/` 或 `data/` 有变化，则自动 commit 并 push。
-
-首次发布时请务必提交 `data/posts.json`。这样日常 Action 会复用缓存，只抓归档页和新增文章页，不会每天全量访问所有文章。
-
-## 测试
-
-测试不应真实访问网络。新增解析、分类、渲染规则时，请使用内联 HTML 或样例字典。
-
-```bash
-uv run pytest
-```
-
-## 提交前检查
+测试不得访问原站。解析、转换、分类及发布策略使用内联 HTML、样例和临时目录。修改分类规则后运行 classify/render；修改阅读器后执行浏览器验收。
 
 ```bash
 uv run pytest
 uv lock --check
+uv run --with playwright python scripts/check_local_preview.py --channel msedge
+git diff --check
 git status --short
 ```
 
-确认 `.venv/`、`.pytest_cache/`、`__pycache__/` 没有进入版本控制。
+确认 `.venv/`、`.pytest_cache/`、`__pycache__/`、`.cache/` 和构建产物未进入版本控制。细节见 [维护说明](docs/maintenance.md) 和 [正文校验与许可](docs/mirror.md)。

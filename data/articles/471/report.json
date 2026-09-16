@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "471",
+    "title": "大自然的隐身术——保护色",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/471",
+    "date": "2010-02-21",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 0,
+    "display_formula_count": 0,
+    "image_count": 5,
+    "heading_count": 0,
+    "code_block_count": 0,
+    "source_text_sha256": "8385fe671d0ce62cb19a6f790f279a7a8080430843c890932da6b4d1a13fa1e1",
+    "output_text_sha256": "8385fe671d0ce62cb19a6f790f279a7a8080430843c890932da6b4d1a13fa1e1",
+    "latex_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "body_sha256": "50318d1702701d5b22047071164b38a88447a83ea59e26a329bc684f5f2e2952",
+    "converter_version": 1,
+    "markdown_sha256": "e1aff3f06c0ea763e81860ec485cacfa90898badded6722b2ee3e956678651b6"
+  },
+  "fetched_at": "2026-09-14T14:40:35+00:00",
+  "source_snapshot_sha256": "6ead02f2d03883b63188e15098a10cd6ffba370bb88f4ac68cbdd382fad85a72",
+  "images": {},
+  "local_only": true
+}

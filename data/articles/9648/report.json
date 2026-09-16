@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "9648",
+    "title": "Naive Bayes is all you need ?",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/9648",
+    "date": "2023-06-08",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 44,
+    "display_formula_count": 13,
+    "image_count": 0,
+    "heading_count": 5,
+    "code_block_count": 0,
+    "source_text_sha256": "ab06fc48d23d1b191ce87608d25c894692754c250e9a94ccdc0ce359677ae4dc",
+    "output_text_sha256": "ab06fc48d23d1b191ce87608d25c894692754c250e9a94ccdc0ce359677ae4dc",
+    "latex_sha256": "be7406e46cdf3ec3f9a3b7704b8f7dd1f8f836789f333ba9499c37684b71ad96",
+    "body_sha256": "4632ccd59d6f93cf90514600132aa1d6091817efd0caeda13af465c51227189c",
+    "converter_version": 1,
+    "markdown_sha256": "7f73019934e0fff530c8432055fa1670a8640a70166207382f32db34b2cb5b12"
+  },
+  "fetched_at": "2026-09-14T12:53:47+00:00",
+  "source_snapshot_sha256": "d4a128835b1cffdf157123ef661fd971452456d33825d5be5b96b9772af80be5",
+  "images": {},
+  "local_only": true
+}

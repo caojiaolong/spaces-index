@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "1179",
+    "title": "寒假来了...",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/1179",
+    "date": "2011-01-19",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 0,
+    "display_formula_count": 0,
+    "image_count": 0,
+    "heading_count": 0,
+    "code_block_count": 0,
+    "source_text_sha256": "02fe7e787e98256f764ed1892a3a3860bd53d1b6efa8f1916fd9657b53d502f5",
+    "output_text_sha256": "02fe7e787e98256f764ed1892a3a3860bd53d1b6efa8f1916fd9657b53d502f5",
+    "latex_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "body_sha256": "bb83106a7bf7abe056ac0c166d11bc01df1ee5ea403f9e636595dc8acc9d5e77",
+    "converter_version": 1,
+    "markdown_sha256": "88dfdc117fed167925e98782a8f8dfee8da0c4492f998badb74f08b23c129221"
+  },
+  "fetched_at": "2026-09-14T14:25:17+00:00",
+  "source_snapshot_sha256": "f38f98e398d8a0348909bceca2bbe039d65095a457c1fbc70567f94e3175b548",
+  "images": {},
+  "local_only": true
+}

@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "8860",
+    "title": "CoSENT（二）：特征式匹配与交互式匹配有多大差距？",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/8860",
+    "date": "2022-01-12",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 27,
+    "display_formula_count": 2,
+    "image_count": 0,
+    "heading_count": 4,
+    "code_block_count": 1,
+    "source_text_sha256": "5cfb8e66c91e02dd0f7667d998d1fdfa6178af61787474b46dfb160d6562ac8e",
+    "output_text_sha256": "5cfb8e66c91e02dd0f7667d998d1fdfa6178af61787474b46dfb160d6562ac8e",
+    "latex_sha256": "323117bbb7246f0e884abd4191b17710e83f3be83e7ab1de0731324a23c3bdf4",
+    "body_sha256": "5a83c27c769d9d5ac20ed2d8a43e2bcfe453656ae2685a1f4c715293c527d2e7",
+    "converter_version": 1,
+    "markdown_sha256": "5b2af42b8b657d80133599b97d5b123a1fe11279324e803ff7e631dd677344c4"
+  },
+  "fetched_at": "2026-09-14T13:02:03+00:00",
+  "source_snapshot_sha256": "110ddfa6e15b5ebf04b3336dfe5b99a4d98b0cbcfa65d839dcff6443375d9b73",
+  "images": {},
+  "local_only": true
+}

@@ -1,0 +1,41 @@
+{
+  "metadata": {
+    "id": "285",
+    "title": "测试一个强悍的功能——ScienceWord",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/285",
+    "date": "2009-11-22",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "source_dom_exact": true,
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "attributes_exact": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 0,
+    "display_formula_count": 0,
+    "image_count": 0,
+    "heading_count": 0,
+    "code_block_count": 0,
+    "source_text_sha256": "f1378d916b465b5df2c5b3cd2ff78af964c937d67783cd4fbd822b414b5ff34d",
+    "output_text_sha256": "f1378d916b465b5df2c5b3cd2ff78af964c937d67783cd4fbd822b414b5ff34d",
+    "latex_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "body_sha256": "c5f8e5647fded836ef5939f0ab922a4cfad0273421cd92378bac35f075bb377c",
+    "converter_version": 1,
+    "format": "html-v1",
+    "source_warnings": [
+      "原文含旧式或脚本嵌入内容，已保留其位置和源码；预览不执行。"
+    ],
+    "fallback_reason": "Unsupported body element: object",
+    "markdown_sha256": "0a9242896fba187ba83f14c3f8f6dd4e276ed262264a64f71a4738f9113bc781"
+  },
+  "fetched_at": "2026-09-14T14:45:44+00:00",
+  "source_snapshot_sha256": "a556a7272764e3b85c60584c9afdff0b0e4197f7f5556ae479525c009f81c934",
+  "images": {},
+  "local_only": true
+}

@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "8978",
+    "title": "训练1000层的Transformer究竟有什么困难？",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/8978",
+    "date": "2022-03-09",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 120,
+    "display_formula_count": 16,
+    "image_count": 1,
+    "heading_count": 8,
+    "code_block_count": 0,
+    "source_text_sha256": "471c8f78281283d59206b76b2778699d5281da1d536a671d6c277d03af79d629",
+    "output_text_sha256": "471c8f78281283d59206b76b2778699d5281da1d536a671d6c277d03af79d629",
+    "latex_sha256": "0f20ce2e5f4d5b2ab9c567bac318664834565a2ce89fc131305abc4122084fc8",
+    "body_sha256": "c127a098552b485e3b1c3909f5304884f46b148b4360b4f8e61042840ab86da8",
+    "converter_version": 1,
+    "markdown_sha256": "c7d56d9319ed5213c6a0e5df39614becd41a18889308a02a0a0daedce92c47e1"
+  },
+  "fetched_at": "2026-09-14T13:00:58+00:00",
+  "source_snapshot_sha256": "6d0d33f73216a92831df9f75c18ab552466381ece9a41bb3d0580acbbdd6883d",
+  "images": {},
+  "local_only": true
+}

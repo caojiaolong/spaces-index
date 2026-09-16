@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "9280",
+    "title": "生成扩散模型漫谈（十二）：“硬刚”扩散ODE",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/9280",
+    "date": "2022-09-28",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 97,
+    "display_formula_count": 20,
+    "image_count": 0,
+    "heading_count": 7,
+    "code_block_count": 0,
+    "source_text_sha256": "e5278b8bcb54e67991b3837e68ec007d066e5044d0558b46f940b3fd33f8a192",
+    "output_text_sha256": "e5278b8bcb54e67991b3837e68ec007d066e5044d0558b46f940b3fd33f8a192",
+    "latex_sha256": "a2ea9c76c741508ee7d1acca8966a55d0455238b0500a792d6cd93eef696ab53",
+    "body_sha256": "d76eb6ccc83ff804ea295b8af3b73a73c4f30f7d8f5d7ebbebebf3764c2114fd",
+    "converter_version": 1,
+    "markdown_sha256": "478bff2fe5207695f6c61b64b2f2392ed32613834bead8ee60b69e964c2286ef"
+  },
+  "fetched_at": "2026-09-14T12:57:39+00:00",
+  "source_snapshot_sha256": "992a1a166aac7e49b958a2ef42cb382127f52ddbb32879d92dd352674830363d",
+  "images": {},
+  "local_only": true
+}

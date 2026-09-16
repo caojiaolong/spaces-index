@@ -1,0 +1,17 @@
+{
+  "metadata": {
+    "id": "3298",
+    "title": "记录一次爬取淘宝/天猫评论数据的过程",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/3298",
+    "date": "2015-05-06",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "fetched_at": "2026-09-14T13:46:33+00:00",
+  "source_snapshot_sha256": "344fe08e8078f24281f9f9f8b98bff8b96ed2a5fc2396cc78b805b8b39d851b2",
+  "validators": {
+    "etag": null,
+    "last_modified": null
+  }
+}

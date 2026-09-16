@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "61",
+    "title": "湖泊沉积物引来争议：是否彗星造成冰期灾难？",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/61",
+    "date": "2009-08-07",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 0,
+    "display_formula_count": 0,
+    "image_count": 1,
+    "heading_count": 0,
+    "code_block_count": 0,
+    "source_text_sha256": "a6abd6a6208a941ddfe61387b0ed520f1e6b3a054e2743ec3f77506c50712eb8",
+    "output_text_sha256": "a6abd6a6208a941ddfe61387b0ed520f1e6b3a054e2743ec3f77506c50712eb8",
+    "latex_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "body_sha256": "51581220fafc18035ababb8f9b98e4e91d86a5fae17c87b619a100fc4cf7f3c6",
+    "converter_version": 1,
+    "markdown_sha256": "4bae10509bb2c00920930eac3013e508de59c4e232d15f3cb0fc9ef32c468fec"
+  },
+  "fetched_at": "2026-09-14T15:00:50+00:00",
+  "source_snapshot_sha256": "7c1aa963013218a6c8e714b1a731ada5330b1e791a2f6c9e2543e4f63130dd85",
+  "images": {},
+  "local_only": true
+}

@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "17",
+    "title": "日食当天的天气出来了",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/17",
+    "date": "2009-07-13",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 0,
+    "display_formula_count": 0,
+    "image_count": 3,
+    "heading_count": 0,
+    "code_block_count": 0,
+    "source_text_sha256": "efe4a0437768b707d19359f388c517c0e3bfd2156768207c573ca4cd61fac043",
+    "output_text_sha256": "efe4a0437768b707d19359f388c517c0e3bfd2156768207c573ca4cd61fac043",
+    "latex_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "body_sha256": "5d906176fc873737a9e3c2664c829d26e4e353e979d57fd39d905a04e3eaed9f",
+    "converter_version": 1,
+    "markdown_sha256": "70f56be55a7b5e7e1ae69f25da4cc675c3de1f93b5f90c18db7df6d1666db36a"
+  },
+  "fetched_at": "2026-09-14T15:06:09+00:00",
+  "source_snapshot_sha256": "e64444275e42f586842ace227513f513407363cc7a7f42b144f1431807e6dec0",
+  "images": {},
+  "local_only": true
+}

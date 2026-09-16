@@ -1,0 +1,77 @@
+<div class="PostContent" id="PostContent">
+<p>终于开始谈到重点了，就是这部分内容促使我学习外微分的。用外微分可以方便地推导微分几何的一些内容，有时候还能方便计算。其主要根源在于：外微分本身在形式上是微分的推广，因此微分几何的东西能够使用外微分来描述并不出奇；然后，最重要的原因是，<font color="red">外微分把$dx^{\mu}$看成一组基，因此相当于在几何中引入了两组基，一组是本身的向量基（用张量的语言，就是逆变向量的基），这组基可以做对称的内积，另外一组基就是$dx^{\mu}$，这组基可以做反对称的外积。因此，当外微分引入几何时，微分几何就拥有了微分、积分、对称积、反对称积等各种“理想装备”</font>，这就是外微分能够加速微分几何推导的主要原因。</p><h3 id="标架的运动">标架的运动</h3><p>前面已经得到<br/>
+$$\begin{aligned}&amp;\omega^{\mu}=h_{\alpha}^{\mu}dx^{\alpha}\\<br/>
+&amp;d\boldsymbol{r}=\hat{\boldsymbol{e}}_{\mu} \omega^{\mu}\\<br/>
+&amp;ds^2 = \eta_{\mu\nu} \omega^{\mu}\omega^{\nu}\\<br/>
+&amp;\langle \hat{\boldsymbol{e}}_{\mu}, \hat{\boldsymbol{e}}_{\nu}\rangle = \eta_{\mu\nu}\end{aligned} \tag{45} $$<br/>
+用$d$作用于$\langle \hat{\boldsymbol{e}}_{\mu}, \hat{\boldsymbol{e}}_{\nu}\rangle = \eta_{\mu\nu}$两边，得到<br/>
+$$d\eta_{\mu\nu} = \langle d\hat{\boldsymbol{e}}_{\mu}, \hat{\boldsymbol{e}}_{\nu}\rangle + \langle \hat{\boldsymbol{e}}_{\mu}, d\hat{\boldsymbol{e}}_{\nu}\rangle \tag{46} $$<br/>
+$d\hat{\boldsymbol{e}}_{\mu}$是一个向量的微分，结果也是一个向量，因此可以表示为$\hat{\boldsymbol{e}}_{\mu}$的线性组合，即<br/>
+$$d\hat{\boldsymbol{e}}_{\mu} = \hat{\boldsymbol{e}}_{\alpha} \omega_{\mu}^{\alpha} \tag{47} $$<br/>
+于是有<br/>
+$$\begin{aligned}d\eta_{\mu\nu} =&amp; \langle \hat{\boldsymbol{e}}_{\alpha}\omega_{\mu}^{\alpha} , \hat{\boldsymbol{e}}_{\nu}\rangle + \langle \hat{\boldsymbol{e}}_{\mu}, \hat{\boldsymbol{e}}_{\alpha}\omega_{\nu}^{\alpha} \rangle \\<br/>
+=&amp;\langle \hat{\boldsymbol{e}}_{\alpha}, \hat{\boldsymbol{e}}_{\nu}\rangle\omega_{\mu}^{\alpha} + \langle \hat{\boldsymbol{e}}_{\mu}, \hat{\boldsymbol{e}}_{\alpha} \rangle\omega_{\nu}^{\alpha}\\<br/>
+=&amp;\eta_{\alpha \nu}\omega_{\mu}^{\alpha}+\eta_{\mu \alpha}\omega_{\nu}^{\alpha}<br/>
+\end{aligned} \tag{48} $$<br/>
+在大多数实用情况，$\eta_{\mu\nu}$是一个常数对角矩阵，于是<br/>
+$$\eta_{\alpha \nu}\omega_{\mu}^{\alpha}+\eta_{\mu \alpha}\omega_{\nu}^{\alpha}=0 \tag{49} $$<br/>
+那么$\omega_{\mu\nu}=\eta_{\mu \alpha}\omega_{\nu}^{\alpha}$作为矩阵来看，就是反对称的，只有$n(n-1)/2$个分量。特别地，如果$\eta_{\mu\nu}$是一个单位阵，那么$\omega_{\mu}^{\alpha}$就是反对称的。</p><p>接着，我们断言<br/>
+$$d^2 \boldsymbol{r}=0 \tag{50} $$<br/>
+要注意，这并非显然的。虽然我们知道对于任意函数$f$都有$d^2 f=0$，但$d\boldsymbol{r}$并非真的是函数的微分得来的，而是任意给定的微分形式向量，因此$d^2 \boldsymbol{r}=0$并非显然的结论。但我们可以想象，任意一个$n$维的弯曲空间（流形），都可以嵌入到一个足够高维数的$m$维平直空间（欧氏空间）中，作为它的子集，就好比三维空间中的曲面那样。这样子，我们就有这个子空间的参数方程<br/>
+$$\begin{aligned}&amp;X^{1} = X^1(x^1,\dots,x^n)\\<br/>
+&amp;X^{2} = X^2 (x^1,\dots,x^n)\\<br/>
+&amp;\dots\\<br/>
+&amp;X^{m} = X^m(x^1,\dots,x^n)<br/>
+\end{aligned} \tag{51} $$<br/>
+这样<br/>
+$$d^2 \boldsymbol{r} = d^2 (X^1, X^2,\dots,X^m)=(d^2 X^1, d^2 X^2,\dots,d^2 X^m)=0 \tag{52} $$<br/>
+这样我们就证明了$d^2 \boldsymbol{r}=0$，这其实给出了：<br/>
+$$\begin{aligned}0=&amp; d(d\boldsymbol{r})\\<br/>
+=&amp;d(\hat{\boldsymbol{e}}_{\mu} \omega^{\mu})\\<br/>
+=&amp;\hat{\boldsymbol{e}}_{\mu} d\omega^{\mu}+d\hat{\boldsymbol{e}}_{\mu} \land \omega^{\mu}\\<br/>
+=&amp;\hat{\boldsymbol{e}}_{\mu} d\omega^{\mu} + \hat{\boldsymbol{e}}_{\nu} \omega_{\mu}^{\nu} \land \omega^{\mu}\\<br/>
+=&amp;\hat{\boldsymbol{e}}_{\mu} d\omega^{\mu} + \hat{\boldsymbol{e}}_{\mu} \omega_{\nu}^{\mu} \land \omega^{\nu}\\<br/>
+=&amp;\hat{\boldsymbol{e}}_{\mu}(d\omega^{\mu}+\omega_{\nu}^{\mu}\land \omega^{\nu})\\<br/>
+\end{aligned} \tag{53} $$<br/>
+这样就说明<br/>
+$$d\omega^{\mu}+\omega_{\nu}^{\mu}\land \omega^{\nu}=0 \tag{54} $$<br/>
+可以看到$\omega_{\nu}^{\mu}\land \omega^{\nu}$这一项正好对应于矩阵的乘法，只不过将普通的乘积换成外积而已。</p><h3 id="走得更远些">走得更远些</h3><p>上面讨论了正交标架的运动，得到<br/>
+$$d\hat{\boldsymbol{e}}_{\mu}=\hat{\boldsymbol{e}}_{\nu}\omega_{\mu}^{\nu} \tag{55} $$<br/>
+假定$\eta_{\mu\alpha}$是常数矩阵，那么$\omega_{\mu\nu}=\eta_{\mu\alpha}\omega_{\nu}^{\alpha}$是反对称的。上式实则可以写成<br/>
+$$\hat{\boldsymbol{e}}_{\mu}(\boldsymbol{x}+d\boldsymbol{x}) =\hat{\boldsymbol{e}}_{\mu}(\boldsymbol{x}) + d\hat{\boldsymbol{e}}_{\mu}(\boldsymbol{x})=\hat{\boldsymbol{e}}_{\nu}(\boldsymbol{x})[\delta_{\nu}^{\mu}+\omega_{\mu}^{\nu}(\boldsymbol{x})] \tag{56} $$<br/>
+这可以看成是标架从$\boldsymbol{x}$运动到无穷小的邻近位置$\boldsymbol{x}+d\boldsymbol{x}$的结果，那从任意一个点$\boldsymbol{x}_1$运动到另外一个点$\boldsymbol{x}_2$的变换公式又是怎样的呢？我们可以把从$\boldsymbol{x}_1$到$\boldsymbol{x}_2$的路径划分为若干小段，每次运动一小段，每一小段用上述公式近似，然后叠加并取极限，即<br/>
+$$\begin{aligned}&amp;\hat{\boldsymbol{e}}_{\mu}(\boldsymbol{x}_2) \\<br/>
+=&amp;\hat{\boldsymbol{e}}_{\nu}(\boldsymbol{x}_1)\prod_{k} [\delta_{\nu}^{\mu}+\omega_{\mu}^{\nu}(\boldsymbol{x}_1+kd\boldsymbol{x})]\\<br/>
+=&amp;\hat{\boldsymbol{e}}_{\nu}(\boldsymbol{x}_1)\prod_{k} \exp[\omega_{\mu}^{\nu}(\boldsymbol{x}_1+kd\boldsymbol{x})]<br/>
+\end{aligned} \tag{57} $$<br/>
+注意$\omega_{\mu}^{\nu}$是一个矩阵，上述乘法是矩阵的乘法，对于矩阵$\boldsymbol{A}$和$\boldsymbol{B}$来说，$\exp(\boldsymbol{A})\exp(\boldsymbol{B})=\exp(\boldsymbol{A}+\boldsymbol{B})$当且仅当$\boldsymbol{A}\boldsymbol{B}=\boldsymbol{B}\boldsymbol{A}$，即矩阵乘法是可交换的。如果不同位置的$\omega_{\nu}^{\mu}(\boldsymbol{x})$的乘法是可交换的（在二维空间总是成立，其他空间不总是成立），那么就有：<br/>
+$$\begin{aligned}&amp;\hat{\boldsymbol{e}}_{\mu}(\boldsymbol{x}_2) \\<br/>
+=&amp;\hat{\boldsymbol{e}}_{\nu}(\boldsymbol{x}_1) \exp\left[\sum_i\omega_{\mu}^{\nu}(\boldsymbol{x}_1+kd\boldsymbol{x})\right]\\<br/>
+=&amp;\hat{\boldsymbol{e}}_{\nu}(\boldsymbol{x}_1) \exp\left(\int_{\boldsymbol{x}_1}^{\boldsymbol{x}_2}\omega_{\mu}^{\nu}\right)<br/>
+\end{aligned} \tag{58} $$<br/>
+这里的积分是沿着$\boldsymbol{x}_1$到$\boldsymbol{x}_2$的某路径进行积分，可见积分的结果是和路径有关的，因此标架的运动结果也跟路径有关。</p><h3 id="向量的运动">向量的运动</h3><p>我们考虑向量$\boldsymbol{A}=\hat{\boldsymbol{e}}_{\mu}\hat{A}^{\mu}$，我们已经在$A$加上了$\hat{}$，表明是它的分量在正交标架下测量的。现在考虑它的微分：<br/>
+$$\begin{aligned}d\boldsymbol{A}=&amp;\hat{\boldsymbol{e}}_{\mu}d\hat{A}^{\mu}+d\hat{\boldsymbol{e}}_{\mu} \hat{A}^{\mu}\\<br/>
+=&amp;\hat{\boldsymbol{e}}_{\mu}d\hat{A}^{\mu}+\hat{\boldsymbol{e}}_{\nu}\omega_{\mu}^{\nu}\hat{A}^{\mu}\\<br/>
+=&amp;\hat{\boldsymbol{e}}_{\mu}(d\hat{A}^{\mu}+\omega_{\nu}^{\mu}\hat{A}^{\nu})\end{aligned} \tag{59} $$<br/>
+这其实就相当于向量的协变导数，可以看出来多出来的一项是因为标架的运动。</p><p>再考虑它的外微分：<br/>
+$$\begin{aligned}d^2\boldsymbol{A}=&amp;d[\hat{\boldsymbol{e}}_{\mu}(d\hat{A}^{\mu}+\omega_{\nu}^{\mu}\hat{A}^{\nu})]\\<br/>
+=&amp;\hat{\boldsymbol{e}}_{\mu}d(d\hat{A}^{\mu}+\omega_{\nu}^{\mu}\hat{A}^{\nu})+d\hat{\boldsymbol{e}}_{\mu}\land (d\hat{A}^{\mu}+\omega_{\nu}^{\mu}\hat{A}^{\nu}) \\<br/>
+=&amp;\hat{\boldsymbol{e}}_{\mu}d(\omega_{\nu}^{\mu}\hat{A}^{\nu})+\hat{\boldsymbol{e}}_{\alpha}\omega_{\mu}^{\alpha}\land (d\hat{A}^{\mu}+\omega_{\nu}^{\mu}\hat{A}^{\nu})\\<br/>
+=&amp;-\hat{\boldsymbol{e}}_{\mu}\omega_{\nu}^{\mu}\land d\hat{A}^{\nu} + \hat{\boldsymbol{e}}_{\mu}d\omega_{\nu}^{\mu}\hat{A}^{\nu}+\hat{\boldsymbol{e}}_{\alpha}\omega_{\mu}^{\alpha}\land (d\hat{A}^{\mu}+\omega_{\nu}^{\mu}\hat{A}^{\nu})\\<br/>
+=&amp;\hat{\boldsymbol{e}}_{\mu}(d\omega_{\nu}^{\mu}+\omega_{\alpha}^{\mu} \land \omega_{\nu}^{\alpha})\hat{A}^{\nu}\end{aligned} \tag{60} $$<br/>
+根据我们前面讨论的$d\omega$的绕圈子含义，以及回顾分量语言中黎曼曲率张量的定义，我们可以猜测$\mathscr{R}_{\nu}^{\mu} = d\omega_{\nu}^{\mu}+\omega_{\alpha}^{\mu} \land \omega_{\nu}^{\alpha}$必然跟黎曼曲率张量有关，事实上，我们有<br/>
+$$\begin{aligned}\mathscr{R}_{\nu}^{\mu}=&amp;\frac{1}{2}R^{\mu}_{\nu\beta\gamma}\omega^{\beta}\land \omega^{\gamma}\\<br/>
+=&amp;\sum_{\beta &lt; \gamma} \hat{R}^{\mu}_{\nu\beta\gamma}\omega^{\beta}\land \omega^{\gamma}\end{aligned} \tag{61} $$<br/>
+再次地，我们用在$R$上加了$\hat{}$表明这是在正交标架下测量的。回顾前面讨论的微分外积的几何意义，我们得到$\omega^{\beta}\land \omega^{\gamma}$正是面积微元的投影，上式左端是向量是沿着闭合曲线运动的变化，右端同样是沿着闭合曲线运动的变化，只不过右端是用分量语言叙述而已，因此它们具有相同的几何意义，所以等式是必然的，并不需要将分量具体代入上式验算。</p><p>如果我们需要换回原来的坐标系，那么我们要在<br/>
+$$d^2\boldsymbol{A} = \hat{\boldsymbol{e}}_{\mu} \left( \sum_{\beta &lt; \gamma} \hat{R}^{\mu}_{\nu\beta\gamma}\omega^{\beta}\land \omega^{\gamma} \right)\hat{A}^{\nu} \tag{62} $$<br/>
+中代入$\omega^{\mu}=h_{\alpha}^{\mu}dx^{\alpha}$，还有$\hat{A}^{\mu}=h_{\alpha}^{\mu} A^{\alpha}$和$\hat{\boldsymbol{e}}_{\mu} = \boldsymbol{e}_{\alpha}(h^{-1})_{\alpha}^{\mu} $，最终得到<br/>
+$$d^2\boldsymbol{A} = \boldsymbol{e}_{\mu}\left( \sum_{\beta &lt; \gamma} (h^{-1})_{\mu'}^{\mu}\hat{R}^{\mu'}_{\nu' \beta' \gamma'} h_{\nu}^{\nu'}h_{\beta}^{\beta'}h_{\gamma}^{\gamma'} dx^{\beta}\land dx^{\gamma} \right)A^{\nu} \tag{63} $$<br/>
+可以看到，我已经不够指标用了，不得不用加一撇的方式来表示求和指标，最终可以看到<br/>
+$$R^{\mu}_{\nu\beta\gamma}=(h^{-1})_{\mu'}^{\mu}\hat{R}^{\mu'}_{\nu' \beta' \gamma'} h_{\nu}^{\nu'}h_{\beta}^{\beta'}h_{\gamma}^{\gamma'} \tag{64} $$<br/>
+当然我们实际计算中不需要先计算出$\hat{R}^{\mu}_{\nu\beta\gamma}$，然后再来计算$R^{\mu}_{\nu\beta\gamma}$，而是可以直接计算$(h^{-1})_{\mu'}^{\mu}\mathscr{R}^{\mu'}_{\nu'}h_{\nu}^{\nu'}$，然后将它写成$dx^{\beta}\land dx^{\gamma}$的求和形式，就可以读出$R^{\mu}_{\nu\beta\gamma}$来。具体操作例子看下节。</p>
+
+
+
+
+
+</div>

@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "2063",
+    "title": "《转山》，动人之旅",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/2063",
+    "date": "2013-09-11",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 0,
+    "display_formula_count": 0,
+    "image_count": 1,
+    "heading_count": 0,
+    "code_block_count": 0,
+    "source_text_sha256": "9d379200a42bf67caa6d7acabaac28f518c575c4f109d1cb5f7f002f9714aedb",
+    "output_text_sha256": "9d379200a42bf67caa6d7acabaac28f518c575c4f109d1cb5f7f002f9714aedb",
+    "latex_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "body_sha256": "866921a9cfb7cf5c6fb4ab499e0e38a0c44090c8ae9db77356a1b404c8884f52",
+    "converter_version": 1,
+    "markdown_sha256": "bf7ca912f5518648389b30ec06979b685163f2213197fac7d8f9368e19b14b5b"
+  },
+  "fetched_at": "2026-09-14T14:00:11+00:00",
+  "source_snapshot_sha256": "0c3ee72bb042bfd0a4f4b9a2dd5177e8509adf294e761afb79f6e2adfebd7e1e",
+  "images": {},
+  "local_only": true
+}

@@ -1,0 +1,22 @@
+<div class="PostContent" id="PostContent">
+<p><strong>OEIS?：<a href="http://oeis.org/" target="_blank">http://oeis.org/</a></strong></p><p>近段时间在研究解析数论，进一步感觉数论真是个奇妙的东西，通过它，似乎数学的各个方面——离散的和连续的，实数的和复数的，甚至物理的——都联系了起来。由此也不难体会到当初高斯（Gauss）会说“数学是科学的皇后，数论是数学的皇后。”了。今天，由于在研究素数的个数的上下界问题时，需要思考组合数<br/>
+$$C_{n}^{2n}=\binom{2n}{n}=\frac{(2n)!}{n!\ n!}$$<br/>
+最多能被2的多少次方整除。直觉告诉我，次数应该是随着$n$的增大而增大的，但事实却不是，比如$C_{15}^{30}$能够被16整除，但是$C_{20}^{40}$却最多只能被4整除，有种毫无规律的感觉，于是到群里问问各大神。其中，wayne提出</p><blockquote>这个可以写个小程序算出一些数据，再在oeis上搜搜</blockquote><p></p><p>按照他的建议，写出下面的python代码</p><pre class="line-numbers"><code class="language-python">import math
+
+def cout2(n):
+  s = 0
+  while n%2==0:
+      s = s+1
+      n = n//2
+  return s
+
+for n in range(1,100):
+    m = math.factorial(2*n)//math.factorial(n)//math.factorial(n)
+    print(cout2(m), end=', ')</code></pre><p>输出结果</p><blockquote>1, 1, 2, 1, 2, 2, 3, 1, 2, 2, 3, 2, 3, 3, 4, 1, 2, 2, 3, 2, 3, 3, 4, 2, 3, 3, 4, 3, 4, 4, 5, 1, 2, 2, 3, 2, 3, 3, 4, 2, 3, 3, 4, 3, 4, 4, 5, 2, 3,</blockquote><p>直接把这串数字放到<a href="http://oeis.org/" target="_blank">OEIS</a>上搜索，得到<br/>
+<a href="http://oeis.org/A000120" target="_blank">http://oeis.org/A000120</a></p><p>原来这数列早已经有人研究过了，而且OEIS早已经收录了。原来数列的每一项恰好等于number of 1's in binary \exp ansion of n （也就是十进制的n对应的二进制表达式中，1的个数）。数列的项总的趋势是随着$n$的增大而增大的，但是局部不一定遵循着规律。把数列在每个1的地方截断，得到一系列有限的小数列，可以发现这些小数列的规律相对明显一些（位数固定的二进制数从小到大排列，统计1的个数）。上面还罗列了该数列的一些性质、参考链接等等。不能不说OEIS实在太强大了！印象中很早之前就参考过上面的资料，但是现在才知道它的强大之处了。下面是它在<a href="http://zh.wikipedia.org/zh-cn/整数数列线上大全" target="_blank">维基百科</a>上的介绍：</p><blockquote>OEIS，全称The On-Line Encyclopedia of Integer Sequences ，中文可以译为“整数数列线上大全”，它是一个网上可搜索的整数数列数据库。它是数学上的重要资源，因每篇文章里都记录了一个整数数列的首几个项、关键字和链结等。截至2009年6月，OEIS已经有超过160,000个数列。</blockquote>
+
+
+
+
+
+</div>

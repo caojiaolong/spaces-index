@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "3266",
+    "title": "采样定理：有限个点构建出整个函数",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/3266",
+    "date": "2015-04-16",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 31,
+    "display_formula_count": 7,
+    "image_count": 0,
+    "heading_count": 0,
+    "code_block_count": 0,
+    "source_text_sha256": "89152c87999861bcf84ff88d1297c67b8ff794ed22b7fde13850f85dc671de7c",
+    "output_text_sha256": "89152c87999861bcf84ff88d1297c67b8ff794ed22b7fde13850f85dc671de7c",
+    "latex_sha256": "df8924b87ee97e39761b04d688dac0eb8698a1b26224494f893f7737f06ceb98",
+    "body_sha256": "ae606399141cb3f991beabe25115723eb241bca7926e75f58a460cc5797d1206",
+    "converter_version": 1,
+    "markdown_sha256": "ce2307eda9e78e0d243f27b9cad942606b902c4f512760c3b28d340b143eb11c"
+  },
+  "fetched_at": "2026-09-14T13:46:59+00:00",
+  "source_snapshot_sha256": "421c9f1f421c6480592e5e41c3e8f2e2c1e93f3521954ad2c7842f7299f3c154",
+  "images": {},
+  "local_only": true
+}

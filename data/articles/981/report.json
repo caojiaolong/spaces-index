@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "981",
+    "title": "2010年诺贝尔文学奖落户秘鲁",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/981",
+    "date": "2010-10-07",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 0,
+    "display_formula_count": 0,
+    "image_count": 2,
+    "heading_count": 0,
+    "code_block_count": 0,
+    "source_text_sha256": "3a026d25747f0c5dfb36a76ec1a860617bd9fc775c97adf95f6ad006d2c96a4a",
+    "output_text_sha256": "3a026d25747f0c5dfb36a76ec1a860617bd9fc775c97adf95f6ad006d2c96a4a",
+    "latex_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "body_sha256": "b28ffadf4c9e29d3b55d06b3acd35f15968a35385925d0c20035a128a453577c",
+    "converter_version": 1,
+    "markdown_sha256": "bb838fe03cd458720b5446ee758128a4d0769b41d44e701968b90c2aacf1b73c"
+  },
+  "fetched_at": "2026-09-14T14:28:55+00:00",
+  "source_snapshot_sha256": "903644ee6976c931e8426c4c344d4d04c39fa29b0a0dff93d06c9dd793dc2e1d",
+  "images": {},
+  "local_only": true
+}

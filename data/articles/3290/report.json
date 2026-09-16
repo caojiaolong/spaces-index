@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "3290",
+    "title": "寻求一个光滑的最大值函数",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/3290",
+    "date": "2015-05-02",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 44,
+    "display_formula_count": 14,
+    "image_count": 0,
+    "heading_count": 0,
+    "code_block_count": 0,
+    "source_text_sha256": "178cc01f8bd7864304158f86dd0f75bf26ab04a913c94558cee4313354249250",
+    "output_text_sha256": "178cc01f8bd7864304158f86dd0f75bf26ab04a913c94558cee4313354249250",
+    "latex_sha256": "21011218c00f6a43176741e63cba6b5129c465c2e5e383ec4dd5c3bde981fb9e",
+    "body_sha256": "0b4dd08f625833b23c8eaf0f249755d24e0bc22ae78f0d7b9f273c3737175843",
+    "converter_version": 1,
+    "markdown_sha256": "7aea84dd94895846f4e00f973ba098097d8aff17c5f01cc43898f6b5c78a2e6b"
+  },
+  "fetched_at": "2026-09-14T13:46:40+00:00",
+  "source_snapshot_sha256": "8059a00e4e0e9b31ec66155a5043c104b1fbe9720700089b7158e17c060aed75",
+  "images": {},
+  "local_only": true
+}

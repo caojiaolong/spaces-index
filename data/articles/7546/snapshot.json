@@ -1,0 +1,17 @@
+{
+  "metadata": {
+    "id": "7546",
+    "title": "线性Attention的探索：Attention必须有个Softmax吗？",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/7546",
+    "date": "2020-07-04",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "fetched_at": "2026-09-14T13:12:47+00:00",
+  "source_snapshot_sha256": "e79a18cc9130c82ae749202ecb62aa0522472e2c34b744294775b262f1708077",
+  "validators": {
+    "etag": null,
+    "last_modified": null
+  }
+}

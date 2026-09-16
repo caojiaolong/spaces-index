@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "4368",
+    "title": "【不可思议的Word2Vec】 4.不一样的“相似”",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/4368",
+    "date": "2017-05-01",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 9,
+    "display_formula_count": 4,
+    "image_count": 0,
+    "heading_count": 3,
+    "code_block_count": 2,
+    "source_text_sha256": "a7f8ac9c445814683571749514df8c2e97c68a0a847ef26333528757cfc88871",
+    "output_text_sha256": "a7f8ac9c445814683571749514df8c2e97c68a0a847ef26333528757cfc88871",
+    "latex_sha256": "76079e2f8a8e29cbf9f4c5a2cae52534a197d308525b023a914452ad0aca618c",
+    "body_sha256": "3fa3968e69a154f030a71e6eb149ac684042b3d8776009abb2a5ba60341663b0",
+    "converter_version": 1,
+    "markdown_sha256": "b95fed4f23572c9da3a69443b091de44c59779021feff718ec67b295de62fa45"
+  },
+  "fetched_at": "2026-09-14T13:32:48+00:00",
+  "source_snapshot_sha256": "4262ede218f542f130375b439a03866529e88dec0dde97da85daac3853cea6f1",
+  "images": {},
+  "local_only": true
+}

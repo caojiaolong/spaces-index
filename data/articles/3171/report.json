@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "3171",
+    "title": "我的写论文软件组合",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/3171",
+    "date": "2014-12-31",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 3,
+    "display_formula_count": 0,
+    "image_count": 1,
+    "heading_count": 0,
+    "code_block_count": 0,
+    "source_text_sha256": "f427f258fb8364bc01b4dbd36b43072d502acd4f1c51995683dcd2302518a4de",
+    "output_text_sha256": "f427f258fb8364bc01b4dbd36b43072d502acd4f1c51995683dcd2302518a4de",
+    "latex_sha256": "3fbfca43618aaddf046f65cc8f2f00b69964e2205ad4635b51700c1893ba9ef9",
+    "body_sha256": "5589785dd847ec5a216e931616093303750ce1b224d7a339121888d7a6a2eaa1",
+    "converter_version": 1,
+    "markdown_sha256": "96e5c067e9cd1946f86ced1863953fe78af9922e3e7925e371b40fa817f10df9"
+  },
+  "fetched_at": "2026-09-14T13:48:32+00:00",
+  "source_snapshot_sha256": "24bcc53159dc63d5cb5710e5402762177856595baa5020525e44f21e30abc7ae",
+  "images": {},
+  "local_only": true
+}

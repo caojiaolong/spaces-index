@@ -1,0 +1,8 @@
+<div class="PostContent" id="PostContent">
+<h3 id="研究背景">研究背景</h3><p>关于光学字符识别(Optical Character Recognition, 下面都简称OCR)，是指将图像上的文字转化为计算机可编辑的文字内容，众多的研究人员对相关的技术研究已久，也有不少成熟的OCR技术和产品产生，比如汉王OCR、ABBYY FineReader、Tesseract OCR等. <font color="red">值得一提的是，ABBYY FineReader不仅正确率高(包括对中文的识别)，而且还能保留大部分的排版效果，是一个非常强大的OCR商业软件</font>.</p><p>然而，在诸多的OCR成品中，除了Tesseract OCR外，其他的都是闭源的、甚至是商业的软件，我们既无法将它们嵌入到我们自己的程序中，也无法对其进行改进. 开源的唯一选择是Google的Tesseract OCR，但它的识别效果不算很好，而且中文识别正确率偏低，有待进一步改进.</p><p>综上所述，不管是为了学术研究还是实际应用，都有必要对OCR技术进行探究和改进. 我们队伍将<font color="red"><strong>完整的OCR系统分为“特征提取”、“文字定位”、“光学识别”、“语言模型”四个方面</strong></font>，逐步进行解决，最终完成了一个可用的、完整的、用于印刷文字的OCR系统. 该系统可以初步用于电商、微信等平台的图片文字识别，以判断上面信息的真伪.</p><h3 id="研究假设">研究假设</h3><p>在本文中，我们假设图像的文字部分有以下的特征：</p><blockquote><p>1. 假设我们要识别的图像字体都是比较规范的印刷字体，如宋体、黑体、楷体、行书等；</p><p>2. 文字与背景应该有比较明显的对比度；</p><p>3. 在设计模型的时候，我们假设了图片文本是横向排版的；</p><p>4. 文字的笔画应该有一定的宽度，不可以太细；</p><p>5. 同一个文字的色彩应该最多是渐变的；</p><p>6. 一般文字是通过比较密集的笔画成字的，并且很多时候都具有一定的连通性.</p></blockquote><p>可以看到，这些特征都是常见的电商宣传海报等的常见特点，因此这些假设都是比较合理的.</p><h3 id="分析流程">分析流程</h3><p></p><div class="pic-container"><div class="typecho-caption aligncenter" style="max-width: 100%"><div style="margin: 5px"><a href="/usr/uploads/2016/06/743664084.png" target="_blank" title="点击查看原图"><img alt="图1：我们的实验流程图" src="/usr/uploads/2016/06/743664084.png" style="max-width:100%"/></a></div><p class="typecho-caption-text">图1：我们的实验流程图</p></div></div><h3 id="实验平台">实验平台</h3><p>本文的实验在CentOS 7 + Python 2.7的环境下完成. 其中，图像处理部分用到了下列拓展库：Numpy、SciPy、Pandas、Pillow；卷积神经网络模型用到了下述拓展库：Keras、Theano. 具体的实验配置后面会进一步谈到.</p>
+
+
+
+
+
+</div>

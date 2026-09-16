@@ -44,9 +44,11 @@ def test_web_shell_has_all_views_and_expected_runtime_assets():
 
     stylesheets = [link.get("href") for link in soup.select("link[rel='stylesheet']")]
     scripts = [script.get("src") for script in soup.select("script[src]")]
-    assert stylesheets == ["./styles.css"]
+    assert stylesheets == ["./styles.css", "./reader.css"]
     assert scripts == [
         "./library.js",
+        "./mirror.js",
+        "./reader.js",
         "./app.js",
         "https://static.cloudflareinsights.com/beacon.min.js",
     ]
@@ -98,7 +100,7 @@ def test_web_app_uses_safe_dom_and_expected_interaction_contract():
     assert 'backToTop.style.setProperty("--scroll-progress"' in source
     assert 'panel?.classList.add("is-open")' in source
     assert "if (panel) panel.scrollTop = 0" in source
-    assert 'const READ_POSTS_KEY = "spaces-index-read-posts-v1"' in source
+    assert 'const READING_PROGRESS_KEY = "spaces-index-reading-progress-v1"' in source
     assert 'const GITHUB_REPOSITORY_API = "https://api.github.com/repos/caojiaolong/spaces-index"' in source
     assert "repository.stargazers_count" in source
     assert "GITHUB_STARS_CACHE_MS = 30 * 60 * 1000" in source
@@ -106,8 +108,8 @@ def test_web_app_uses_safe_dom_and_expected_interaction_contract():
     assert 'label: "仅看非系列文章"' in source
     assert 'label: "只看已读"' in source
     assert 'label: "只看未读"' in source
-    assert "localStorage.setItem(READ_POSTS_KEY" in source
-    assert 'text: "已读状态只保存在当前浏览器，不上传到服务器。"' in source
+    assert "localStorage.setItem(READING_PROGRESS_KEY" in source
+    assert 'text: "阅读进度只保存在当前浏览器，不上传到服务器；读到正文末尾达到 100% 后计入已读。"' in source
     assert "Cloudflare Web Analytics 匿名汇总，不使用 Cookie" in source
     styles = (WEB / "styles.css").read_text(encoding="utf-8")
     assert "prefers-reduced-motion: reduce" in styles

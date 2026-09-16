@@ -1,0 +1,17 @@
+{
+  "metadata": {
+    "id": "11260",
+    "title": "重新思考学习率与Batch Size（一）：现状",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/11260",
+    "date": "2025-09-01",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "fetched_at": "2026-09-14T12:40:07+00:00",
+  "source_snapshot_sha256": "aaddeab92ce677b23eb0c3fe598af23946072ae41ceb59c85e73eaff4dc8f568",
+  "validators": {
+    "etag": null,
+    "last_modified": null
+  }
+}

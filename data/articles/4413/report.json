@@ -1,0 +1,41 @@
+{
+  "metadata": {
+    "id": "4413",
+    "title": "通用爬虫探索（一）：适用一般网站的爬虫",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/4413",
+    "date": "2017-06-06",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "source_dom_exact": true,
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "attributes_exact": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 15,
+    "display_formula_count": 6,
+    "image_count": 2,
+    "heading_count": 8,
+    "code_block_count": 2,
+    "source_text_sha256": "31d79e7af94941f84047f7e9c852b7812eb16def816bed816c1f375ff03dd41e",
+    "output_text_sha256": "31d79e7af94941f84047f7e9c852b7812eb16def816bed816c1f375ff03dd41e",
+    "latex_sha256": "397946299e751531ac2f0868fecdf79dda2aefb45909c776b0252df4eaf0893f",
+    "body_sha256": "0ce20782c942a78e3ceae02d36d616997e48b47c2b79b92ea35287c4b62f8e7c",
+    "converter_version": 1,
+    "format": "html-v1",
+    "source_warnings": [
+      "原文有图片标签缺少地址，保留原位置；无法显示该图片。"
+    ],
+    "fallback_reason": "Ambiguous image source requires review",
+    "markdown_sha256": "766375854a9b64a6cb71428fa3e7a2f79da00b6b828f001eefe5fc2e0c09544c"
+  },
+  "fetched_at": "2026-09-14T13:32:18+00:00",
+  "source_snapshot_sha256": "2c6d5136a9575af6db3c3b6dbf7d5a5bc77f6b4636272848fc6e2693dfd0f840",
+  "images": {},
+  "local_only": true
+}

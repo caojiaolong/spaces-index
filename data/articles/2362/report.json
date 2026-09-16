@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "2362",
+    "title": "带点电荷的均匀杆",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/2362",
+    "date": "2014-02-16",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 29,
+    "display_formula_count": 11,
+    "image_count": 2,
+    "heading_count": 0,
+    "code_block_count": 0,
+    "source_text_sha256": "0c666401d5368f95ce8fd40af3d03f855bc8e6d70f51f36ef86fc8b99cfb75cb",
+    "output_text_sha256": "0c666401d5368f95ce8fd40af3d03f855bc8e6d70f51f36ef86fc8b99cfb75cb",
+    "latex_sha256": "0896331128a9dceb5ed1f938e47f83e721cce182f9c48eaa744c600b8978db8a",
+    "body_sha256": "66e6e2b305f26e25731e4d098bf9e5e9688853f8dc3357a8becd9f08d6f4a422",
+    "converter_version": 1,
+    "markdown_sha256": "928b65d9b3ba2d1726f0f9a5f49752b6063f32818adbbf473a1daae2d6541118"
+  },
+  "fetched_at": "2026-09-14T13:56:49+00:00",
+  "source_snapshot_sha256": "aa1d024a06505daba30fd85e3fe51b39849da2772de2ddce6def29349ccd7ab9",
+  "images": {},
+  "local_only": true
+}

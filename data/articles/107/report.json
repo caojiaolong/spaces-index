@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "107",
+    "title": "行动起来！共同应对全球气候变暖",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/107",
+    "date": "2009-08-29",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 0,
+    "display_formula_count": 0,
+    "image_count": 3,
+    "heading_count": 0,
+    "code_block_count": 0,
+    "source_text_sha256": "6120c5975ac2019bbe533acc849c1d648257fc3f830288c4f8b306e6b8677416",
+    "output_text_sha256": "6120c5975ac2019bbe533acc849c1d648257fc3f830288c4f8b306e6b8677416",
+    "latex_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "body_sha256": "da553c33953247314483a171bc08da56049f30e94d3d27b489af3217cad96908",
+    "converter_version": 1,
+    "markdown_sha256": "43193d2f535646d79c4e68b12bf8b504168a429a654c23be0a0fcfbb25fe45a7"
+  },
+  "fetched_at": "2026-09-14T14:55:37+00:00",
+  "source_snapshot_sha256": "14d62bc9aed4e67fe0fec6fe81a417acbf6cd344c5714bfb0dd9bed10cf6bc61",
+  "images": {},
+  "local_only": true
+}

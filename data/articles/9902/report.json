@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "9902",
+    "title": "让炼丹更科学一些（一）：SGD的平均损失收敛",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/9902",
+    "date": "2023-12-19",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 149,
+    "display_formula_count": 24,
+    "image_count": 0,
+    "heading_count": 7,
+    "code_block_count": 0,
+    "source_text_sha256": "ebe8ffd1acb425c6719555da93df5242ad0e67ff24dea853f49aded07686e8e1",
+    "output_text_sha256": "ebe8ffd1acb425c6719555da93df5242ad0e67ff24dea853f49aded07686e8e1",
+    "latex_sha256": "32b2e3cb718aafba163c2bf6eaf33f27243c98d2b69d5a232243de7082b35c5f",
+    "body_sha256": "c9de5ad21a97d77bb683c53ce355cc66c271bbf9b550f9e53ec8a65b16e9b84c",
+    "converter_version": 1,
+    "markdown_sha256": "11bdfcdae42bfd56e65f660aee520843a4b5e7b9d8ea0b2fc3b77c80a6d9b7a1"
+  },
+  "fetched_at": "2026-09-14T12:50:25+00:00",
+  "source_snapshot_sha256": "2b52c57204481742bbc3111d5745128d52681066baa330ec7513a5ef9aae3075",
+  "images": {},
+  "local_only": true
+}

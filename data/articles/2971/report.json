@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "2971",
+    "title": "班门弄斧：Python的代码能有多简洁？",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/2971",
+    "date": "2014-10-07",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 1,
+    "display_formula_count": 1,
+    "image_count": 0,
+    "heading_count": 0,
+    "code_block_count": 3,
+    "source_text_sha256": "193e071f180f41eeac1492c630ce9c36cf22020deeb93c72a219d36f404ed9a9",
+    "output_text_sha256": "193e071f180f41eeac1492c630ce9c36cf22020deeb93c72a219d36f404ed9a9",
+    "latex_sha256": "10277cdd2ba72073c40b4a7332e449b12fd9d8aa6277ce7b5c3b326ab7c30ddd",
+    "body_sha256": "bdebab6b3c7f3de3e3a31869081361c2bf84ab84e6d6301eaa20244c771511e7",
+    "converter_version": 1,
+    "markdown_sha256": "3cd7659318e0861d717b3463f528436b0e67be2b8547ee0dd91a18d258b1857e"
+  },
+  "fetched_at": "2026-09-14T13:50:56+00:00",
+  "source_snapshot_sha256": "40bb088b6cf916634fb16d08907f3a56c7057354734390de3145b359d33250c9",
+  "images": {},
+  "local_only": true
+}

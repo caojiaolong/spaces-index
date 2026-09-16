@@ -1,0 +1,17 @@
+{
+  "metadata": {
+    "id": "4540",
+    "title": "fashion-mnist的gan玩具",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/4540",
+    "date": "2017-08-26",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "fetched_at": "2026-09-14T13:31:06+00:00",
+  "source_snapshot_sha256": "67433319529bf848d075a9a1b5c9af9831294bebae6a656bffb0899a1ed620a4",
+  "validators": {
+    "etag": null,
+    "last_modified": null
+  }
+}

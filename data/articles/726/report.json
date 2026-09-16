@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "726",
+    "title": "中山大学力学网络教程",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/726",
+    "date": "2010-07-21",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 0,
+    "display_formula_count": 0,
+    "image_count": 1,
+    "heading_count": 0,
+    "code_block_count": 0,
+    "source_text_sha256": "3e7c602795e94784ccb74b377aa2c2c9c290235e2f5d3ee2c601047414a6d520",
+    "output_text_sha256": "3e7c602795e94784ccb74b377aa2c2c9c290235e2f5d3ee2c601047414a6d520",
+    "latex_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "body_sha256": "d387b779a07c3eb179f9cb8406512ac291851b2997a48a325c9620510e6e3700",
+    "converter_version": 1,
+    "markdown_sha256": "48adc25053ef87b0b1246f0c2fb7d9950af0f72d3597b699d615aaf3f09dc039"
+  },
+  "fetched_at": "2026-09-14T14:34:44+00:00",
+  "source_snapshot_sha256": "1b2b855b5c765b5cbd7bdf3b805cf825a90b58d2a9a358d660d85e2444d6b505",
+  "images": {},
+  "local_only": true
+}

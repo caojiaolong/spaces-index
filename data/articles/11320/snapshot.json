@@ -1,0 +1,17 @@
+{
+  "metadata": {
+    "id": "11320",
+    "title": "为什么线性注意力要加Short Conv？",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/11320",
+    "date": "2025-10-05",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "fetched_at": "2026-09-14T12:39:27+00:00",
+  "source_snapshot_sha256": "414aac86a2eaa56d7102fc830b784f5e9fb158d925b6e96e4b182a95525d2408",
+  "validators": {
+    "etag": null,
+    "last_modified": null
+  }
+}

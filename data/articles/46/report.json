@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "46",
+    "title": "新的一个月：8月了",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/46",
+    "date": "2009-08-01",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 0,
+    "display_formula_count": 0,
+    "image_count": 1,
+    "heading_count": 0,
+    "code_block_count": 0,
+    "source_text_sha256": "7835b3d0f2efe4149540003a196f2e0a5536f818264362a72c52562198184f5f",
+    "output_text_sha256": "7835b3d0f2efe4149540003a196f2e0a5536f818264362a72c52562198184f5f",
+    "latex_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "body_sha256": "6d668ecdd0a95b68ae293e84ab505b2843335f3c852b6679c45f9857265130a2",
+    "converter_version": 1,
+    "markdown_sha256": "c5bc369942cf58bb08f4da20777e3f6369fc53ad417ca2e10478aa47d4fecd0c"
+  },
+  "fetched_at": "2026-09-14T15:02:31+00:00",
+  "source_snapshot_sha256": "8e05184c4d340ef7c3b1bf4f0f4fb7fbc01cbd9b8cfea49e720b5a1d42ef919b",
+  "images": {},
+  "local_only": true
+}

@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "8870",
+    "title": "多任务学习漫谈（一）：以损失之名",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/8870",
+    "date": "2022-01-18",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 77,
+    "display_formula_count": 13,
+    "image_count": 0,
+    "heading_count": 11,
+    "code_block_count": 0,
+    "source_text_sha256": "8aac133654e16ad71220ffbee12163d467576f218b616090e13a8a1a9a25012a",
+    "output_text_sha256": "8aac133654e16ad71220ffbee12163d467576f218b616090e13a8a1a9a25012a",
+    "latex_sha256": "9c7a2b4c77f00624437e52a8e7a92fd279e4907f9a44c84b9a242fb7d8b83b2f",
+    "body_sha256": "63a4c57a1ec420b08eff146ce0897784ace54e5a863420650bc1d2e57f5643d9",
+    "converter_version": 1,
+    "markdown_sha256": "b0160dcf4962fa9b264757419e130bc79822820121d44caff755a912b4faa138"
+  },
+  "fetched_at": "2026-09-14T13:01:56+00:00",
+  "source_snapshot_sha256": "041cb45fdd62206f13ebfba01cf6d822afd2339df6bd84829508fa9c95329720",
+  "images": {},
+  "local_only": true
+}

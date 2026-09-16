@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "5655",
+    "title": "从动力学角度看优化算法（一）：从SGD到动量加速",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/5655",
+    "date": "2018-06-27",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 179,
+    "display_formula_count": 24,
+    "image_count": 3,
+    "heading_count": 14,
+    "code_block_count": 0,
+    "source_text_sha256": "5c3d5af8a51b60889340bc7112255f4080357a583ab6ac65ee4129954a33c05c",
+    "output_text_sha256": "5c3d5af8a51b60889340bc7112255f4080357a583ab6ac65ee4129954a33c05c",
+    "latex_sha256": "052c99bc6f873c222f8b69319ebda3043cea5344efaa389c55d7d59dc05ff6e6",
+    "body_sha256": "29d383061b36d02cd23aa2d0cfa0cbb78ef96c5dedc05981f7598a589eef8c97",
+    "converter_version": 1,
+    "markdown_sha256": "3c16840608f810c762c8f7fd385e17e95495498f2beff190127bfb498119557e"
+  },
+  "fetched_at": "2026-09-14T13:25:59+00:00",
+  "source_snapshot_sha256": "a388ebd4ae33e158b10a11a37dcf39761456fff99d9c1ff23d7918a2c3caf445",
+  "images": {},
+  "local_only": true
+}

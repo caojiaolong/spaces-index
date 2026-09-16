@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "7630",
+    "title": "学会提问的BERT：端到端地从篇章中构建问答对",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/7630",
+    "date": "2020-07-25",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 3,
+    "display_formula_count": 0,
+    "image_count": 3,
+    "heading_count": 4,
+    "code_block_count": 0,
+    "source_text_sha256": "22411e505fff0384ac82d084d38859322e970c4f14e08629278b6115e5de62cc",
+    "output_text_sha256": "22411e505fff0384ac82d084d38859322e970c4f14e08629278b6115e5de62cc",
+    "latex_sha256": "b3a85f5a3a204e5120ae5f92ee43c0d14ce704d161bbd196b6ae4f3e421f9957",
+    "body_sha256": "d6c38e84a74294fc191f1d291ea151e65a0a3626b10034ec238a3edbcf30e177",
+    "converter_version": 1,
+    "markdown_sha256": "dd3597603061ada528518e0838fb3f9177f5fd52b3ea9d6fbebb03292652d425"
+  },
+  "fetched_at": "2026-09-14T13:12:14+00:00",
+  "source_snapshot_sha256": "679b5b585dd07eb44fb97a0283ebf28a83e0520cd0fe60f1135af51affc995d5",
+  "images": {},
+  "local_only": true
+}

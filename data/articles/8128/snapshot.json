@@ -1,0 +1,17 @@
+{
+  "metadata": {
+    "id": "8128",
+    "title": "Seq2Seq重复解码现象的理论分析尝试",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/8128",
+    "date": "2021-01-26",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "fetched_at": "2026-09-14T13:08:28+00:00",
+  "source_snapshot_sha256": "7cacd6de1de7bcba2d947ce82314de4d8c862c9349f2dd0d31e82c794746d49e",
+  "validators": {
+    "etag": null,
+    "last_modified": null
+  }
+}

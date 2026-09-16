@@ -1,0 +1,41 @@
+{
+  "metadata": {
+    "id": "34",
+    "title": "企图减缓美国数学进展的“阴谋”",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/34",
+    "date": "2009-07-26",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "source_dom_exact": true,
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "attributes_exact": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 4,
+    "display_formula_count": 0,
+    "image_count": 0,
+    "heading_count": 0,
+    "code_block_count": 0,
+    "source_text_sha256": "a111cce1261ce577f81acbb0f2c9ab9479d961975a2d2342daa82badd2150e03",
+    "output_text_sha256": "a111cce1261ce577f81acbb0f2c9ab9479d961975a2d2342daa82badd2150e03",
+    "latex_sha256": "5a97662b46cc709dce16825151a6aa539a2771e42ee03198d076bc81e27bb079",
+    "body_sha256": "d27a0e640da0a8629fa46cef03ec953074864630afec06819bc63658a60afa47",
+    "converter_version": 1,
+    "format": "html-v1",
+    "source_warnings": [
+      "原文含旧式或脚本嵌入内容，已保留其位置和源码；预览不执行。"
+    ],
+    "fallback_reason": "Unsupported body element: embed",
+    "markdown_sha256": "071eb33ff3097656d3a52034ec945c220522166f714daba416f959eb4430c080"
+  },
+  "fetched_at": "2026-09-14T15:04:06+00:00",
+  "source_snapshot_sha256": "069dc5130030f90c363accc4a7f867b8d4b803ea3880c6ce14aafb9b1dd6c5a0",
+  "images": {},
+  "local_only": true
+}

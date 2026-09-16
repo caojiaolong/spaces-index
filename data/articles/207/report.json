@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "207",
+    "title": "世界最复杂的机器11月重启,温度宇宙最低",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/207",
+    "date": "2009-10-20",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 0,
+    "display_formula_count": 0,
+    "image_count": 2,
+    "heading_count": 0,
+    "code_block_count": 0,
+    "source_text_sha256": "fe75773195ef9e8a03ac0c897fb39525920ce43083ea50b1f165124d4d7bf24c",
+    "output_text_sha256": "fe75773195ef9e8a03ac0c897fb39525920ce43083ea50b1f165124d4d7bf24c",
+    "latex_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "body_sha256": "f2bb90e76a3f1fb89cd213ee41ba8e05af5df10bacd13b38fabcc4bfd753a6ed",
+    "converter_version": 1,
+    "markdown_sha256": "fc03a058c923be029106a8c839e01135183acc439767db5e4e5629f1b11d9028"
+  },
+  "fetched_at": "2026-09-14T14:47:51+00:00",
+  "source_snapshot_sha256": "1b4b917b038ad319b0315d76979bba367590200c287189fe43f5dd252db60021",
+  "images": {},
+  "local_only": true
+}

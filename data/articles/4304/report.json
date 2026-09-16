@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "4304",
+    "title": "【不可思议的Word2Vec】 2.训练好的模型",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/4304",
+    "date": "2017-04-03",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 1,
+    "display_formula_count": 1,
+    "image_count": 0,
+    "heading_count": 4,
+    "code_block_count": 1,
+    "source_text_sha256": "4cb509c81b019e9bf79eed89c30b140472d7acad13470d87562df16e669675b6",
+    "output_text_sha256": "4cb509c81b019e9bf79eed89c30b140472d7acad13470d87562df16e669675b6",
+    "latex_sha256": "3fbf926d0955cb8ffda6533129a938cbed4195299a55eabfe059a4de4f5c5190",
+    "body_sha256": "9cb31f3862d0c9cd6c1e9111a4ddb8f0add626370c30e3bbc0da02a9181b947d",
+    "converter_version": 1,
+    "markdown_sha256": "1d990dd48e7f937eaddaede105fbf7dc4bc8d243e585984febb8d4fbf0165d4d"
+  },
+  "fetched_at": "2026-09-14T13:33:22+00:00",
+  "source_snapshot_sha256": "c4e6f1596e663fc1e143e9bcf8b096c0808981b96ba4e58eb925a6a70152128c",
+  "images": {},
+  "local_only": true
+}

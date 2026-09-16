@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "9768",
+    "title": "随机分词浅探：从Viterbi Decoding到Viterbi Sampling",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/9768",
+    "date": "2023-09-16",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 28,
+    "display_formula_count": 4,
+    "image_count": 0,
+    "heading_count": 5,
+    "code_block_count": 2,
+    "source_text_sha256": "9a9f87a714fa9c01bb993268d09f2f84348f5cf32ea31c27598ebebf9511f630",
+    "output_text_sha256": "9a9f87a714fa9c01bb993268d09f2f84348f5cf32ea31c27598ebebf9511f630",
+    "latex_sha256": "eec36efbe0dccc1326ffdf563e6b80a539185b101bcd1c4d1b7ad31fbf16c38b",
+    "body_sha256": "af7ea0740160b44c43c48f3eca2f340b31f0c842460ec37cf3dd15bc07ef4fe8",
+    "converter_version": 1,
+    "markdown_sha256": "462de5087a661809e137b2a3f0d5e4e3bcd4685faba11aebeaf877e3bf0e670a"
+  },
+  "fetched_at": "2026-09-14T12:51:59+00:00",
+  "source_snapshot_sha256": "e7c58739e8fd7dce95037b08414435972afed9898c08d866f4e2df3ab72fdaef",
+  "images": {},
+  "local_only": true
+}

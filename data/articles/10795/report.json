@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "10795",
+    "title": "高阶MuP：更简明但更高明的谱条件缩放",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/10795",
+    "date": "2025-03-24",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 183,
+    "display_formula_count": 26,
+    "image_count": 1,
+    "heading_count": 8,
+    "code_block_count": 0,
+    "source_text_sha256": "1800570a42db1b547e49f52619b67113017ecf61a30258125bbe25eb38419bc6",
+    "output_text_sha256": "1800570a42db1b547e49f52619b67113017ecf61a30258125bbe25eb38419bc6",
+    "latex_sha256": "5c443a58647dd56819008182b03c155d33c862ba1a7d9a317c1586c3fe0cc737",
+    "body_sha256": "fc3f27d29ab90dcbf2b20bdda36139feddc8d92b16da4a845189ef2a479e1ec9",
+    "converter_version": 1,
+    "markdown_sha256": "7127d565a59c17c856cc24eb9bdd3227f88e163e4e62d872bebe89b444a43d10"
+  },
+  "fetched_at": "2026-09-14T12:43:26+00:00",
+  "source_snapshot_sha256": "ee031703f621124eeb3d20e1f1727e48a080a06917c1d33c6d870c199c0ff2f9",
+  "images": {},
+  "local_only": true
+}

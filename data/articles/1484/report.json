@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "1484",
+    "title": "[欧拉数学]素数有无穷多个的两个证明",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/1484",
+    "date": "2011-10-02",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 20,
+    "display_formula_count": 6,
+    "image_count": 0,
+    "heading_count": 0,
+    "code_block_count": 0,
+    "source_text_sha256": "f7d0f1122606eb16ce8cb0d1620a80e025adf5911be490c3ae0b54cb076e067c",
+    "output_text_sha256": "f7d0f1122606eb16ce8cb0d1620a80e025adf5911be490c3ae0b54cb076e067c",
+    "latex_sha256": "ef57b0812057d49b2ba641d4d6e643c10ee85e99a22bb0c99cff607f5c610c10",
+    "body_sha256": "6c8ee3f6b6d24a72f72e132b40b3eeb0866ac99f3b2233ac032294daa9caa015",
+    "converter_version": 1,
+    "markdown_sha256": "e9e70e90cdf335fc426da710225e9e142fe744ecf1bb9e8bfc32c56ed7131bc0"
+  },
+  "fetched_at": "2026-09-14T14:17:19+00:00",
+  "source_snapshot_sha256": "22f63ba6e8f6bc2b62944138e4792785f49374f33033561cde14f460f850427a",
+  "images": {},
+  "local_only": true
+}

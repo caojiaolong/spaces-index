@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "3200",
+    "title": "有限素域上的乘法群是循环群",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/3200",
+    "date": "2015-01-20",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 79,
+    "display_formula_count": 4,
+    "image_count": 0,
+    "heading_count": 2,
+    "code_block_count": 0,
+    "source_text_sha256": "b9870726915e5356806bd880ddde9ea2b77dc96dc9b3eea8da7600f39c500e2a",
+    "output_text_sha256": "b9870726915e5356806bd880ddde9ea2b77dc96dc9b3eea8da7600f39c500e2a",
+    "latex_sha256": "1bcccece4cd416f897d7359629600c3de84a2edc2cd4cab00379cdcfbcd4428c",
+    "body_sha256": "15e240a4d3803d665507b26f8e645ae74e30956074f91b9a6ca6bf1e2ccdfc8a",
+    "converter_version": 1,
+    "markdown_sha256": "c9e02b5019a4e37088866fc8adcf2aabeecd6577327a97dbf5576664b9f55d33"
+  },
+  "fetched_at": "2026-09-14T13:48:00+00:00",
+  "source_snapshot_sha256": "17e193cab1aec5129ddf5e0d5ad3c8cd729e2a23c81e249e181115bd4f4704e6",
+  "images": {},
+  "local_only": true
+}

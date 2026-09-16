@@ -1,0 +1,17 @@
+{
+  "metadata": {
+    "id": "7947",
+    "title": "层次分解位置编码，让BERT可以处理超长文本",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/7947",
+    "date": "2020-12-04",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "fetched_at": "2026-09-14T13:09:43+00:00",
+  "source_snapshot_sha256": "0dcac1aa61674e104f17eacee95cc59f660dc61a3057cca453d0e5e83c353a77",
+  "validators": {
+    "etag": null,
+    "last_modified": null
+  }
+}

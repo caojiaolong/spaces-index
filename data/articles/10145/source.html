@@ -1,0 +1,114 @@
+<div class="PostContent" id="PostContent">
+<p>不论是在基础的分类任务中，还是如今无处不在的注意力机制中，概率分布的构建都是一个关键步骤。具体来说，就是将一个$n$维的任意向量，转换为一个$n$元的离散型概率分布。众所周知，这个问题的标准答案是Softmax，它是指数归一化的形式，相对来说比较简单直观，同时也伴有很多优良性质，从而成为大部分场景下的“标配”。</p><p>尽管如此，Softmax在某些场景下也有一些不如人意之处，比如不够稀疏、无法绝对等于零等，因此很多替代品也应运而生。在这篇文章中，我们将简单总结一下Softmax的相关性质，并盘点和对比一下它的部分替代方案。</p><h2 id="Softmax回顾">Softmax回顾</h2><p>首先引入一些通用记号：$\boldsymbol{x} = (x_1,x_2,\cdots,x_n)\in\mathbb{R}^n$是需要转为概率分布的$n$维向量，它的分量可正可负，也没有限定的上下界。$\Delta^{n-1}$定义为全体$n$元离散概率分布的集合，即<br/>
+\begin{equation}\Delta^{n-1} = \left\{\boldsymbol{p}=(p_1,p_2,\cdots,p_n)\left|\, p_1,p_2,\cdots,p_n\geq 0,\sum_{i=1}^n p_i = 1\right.\right\}\end{equation}<br/>
+之所以标注$n-1$而不是$n$，是因为约束$\sum\limits_{i=1}^n p_i = 1$定义了$n$维空间中的一个$n-1$维子平面，再加上$p_i\geq 0$的约束，$(p_1,p_2,\cdots,p_n)$的集合就只是该平面的一个子集，即实际维度只有$n-1$。</p><p>基于这些记号，本文的主题就可以简单表示为探讨$\mathbb{R}^n\mapsto\Delta^{n-1}$的映射，其中$\boldsymbol{x}\in\mathbb{R}^n$我们习惯称之为Logits或者Scores。</p><h3 id="基本定义">基本定义</h3><p>Softmax的定义很简单：<br/>
+\begin{equation}p_i = softmax(\boldsymbol{x})_i = \frac{e^{x_i}}{\sum\limits_{j=1}^n e^{x_j}}\end{equation}<br/>
+Softmax的来源和诠释都太多了，比如能量模型、统计力学或者单纯作为$\text{argmax}$的光滑近似等，所以我们很难考证它的最早出处，也不去做这个尝试了。很多时候我们也会加上一个温度参数，即考虑$softmax(\boldsymbol{x}/\tau)$，但$\tau$本身也可以整合到$\boldsymbol{x}$的定义之中，因此这里不特别分离出$\tau$参数。</p><p>Softmax的分母我们通常记为$Z(\boldsymbol{x})$，它的对数就是大多数深度学习框架都自带的$\text{logsumexp}$运算，他它是$\max$的一个光滑近似：<br/>
+\begin{align}\log Z(\boldsymbol{x}) = \log \sum\limits_{j=1}^n e^{x_j} = \text{logsumexp}(\boldsymbol{x})\\<br/>
+\lim_{\tau\to 0^+} \tau\,\text{logsumexp}(\boldsymbol{x}/\tau) = \max(\boldsymbol{x})\end{align}<br/>
+当$\tau$取$1$时，就可以写出$\text{logsumexp}(\boldsymbol{x}) \approx \max(\boldsymbol{x})$，$\boldsymbol{x}$方差越大近似程度越高，更进一步的讨论可以参考<a href="/archives/3290" target="_blank">《寻求一个光滑的最大值函数》</a>。</p><h3 id="两点性质">两点性质</h3><p>除了将任意向量转换为概率分布外，Softmax还满足两点性质<br/>
+\begin{align}&amp;{\color{red}{单调性}}:\quad p_i &gt; p_j \Leftrightarrow x_i &gt; x_j,\quad p_i = p_j \Leftrightarrow x_i = x_j \\[5pt]<br/>
+&amp;{\color{red}{不变性}}:\quad softmax(\boldsymbol{x}) = softmax(\boldsymbol{x} + c),\,\,\forall c\in\mathbb{R}<br/>
+\end{align}<br/>
+<strong>单调性</strong>意味着Softmax是保序的，$\boldsymbol{x}$的最大值/最小值跟$\boldsymbol{p}$的最大值/最小值相对应；<strong>不变性</strong>说的是$\boldsymbol{x}$的每个分量都加上同一个常数，Softmax的结果不变，这跟$\text{argmax}$的性质是一样的，即同样有$\text{argmax}(\boldsymbol{x}) = \text{argmax}(\boldsymbol{x} + c)$。</p><p>因此，根据这两点性质我们可以得出，Softmax实际是$\text{argmax}$一个光滑近似（更准确来说是$\text{onehot}(\text{argmax}(\cdot))$的光滑近似），更具体地我们有<br/>
+\begin{equation}\lim_{\tau\to 0^+} softmax(\boldsymbol{x}/\tau) = \text{onehot}(\text{argmax}(\boldsymbol{x}))\end{equation}<br/>
+这大概就是Softmax这个名字的来源。注意不要混淆了，Softmax是$\text{argmax}$而不是$\max$的光滑近似，$\max$的光滑近似是$\text{logsumexp}$才对。</p><h3 id="梯度计算">梯度计算</h3><p>对于深度学习来说，了解一个函数的性质重要方式之一是了解它的梯度，对于Softmax，我们在<a href="/archives/9812" target="_blank">《从梯度最大化看Attention的Scale操作》</a>曾经算过：<br/>
+\begin{equation}\frac{\partial p_i}{\partial x_j} = p_i\delta_{i,j} - p_i p_j = \left\{\begin{aligned}<br/>
+p_i - p_i^2,&amp;\quad i=j\\<br/>
+- p_i p_j,&amp;\quad i\neq j<br/>
+\end{aligned}\right.\end{equation}<br/>
+这样排列成的矩阵也称为Softmax的<a href="https://en.wikipedia.org/wiki/Jacobian_matrix_and_neterminant" target="_blank">雅可比矩阵（Jacobian Matrix）</a>，它的L1范数有一个简单的形式<br/>
+\begin{equation}\frac{1}{2}\left\Vert\frac{\partial \boldsymbol{p}}{\partial \boldsymbol{x}}\right\Vert_1=\frac{1}{2}\sum_{i,j}\left|\frac{\partial p_i}{\partial x_j}\right|=\frac{1}{2}\sum_i (p_i - p_i^2) + \frac{1}{2}\sum_{i\neq j} p_i p_j = 1 - \sum_i p_i^2\end{equation}<br/>
+当$\boldsymbol{p}$是one hot分布时，上式等于0，这意味着Softmax的结果越接近one hot，它的梯度消失现象越严重，所以至少初始化阶段，我们不能将Softmax初始化得接近one hot。同时上式最右端也联系到了<a href="/archives/9595#%E7%86%B5%E7%9A%84%E8%81%94%E7%B3%BB" target="_blank">Rényi熵</a>的概念，它跟常见的香侬熵类似。</p><h3 id="参考实现">参考实现</h3><p>Softmax的直接实现很简单，直接取$\exp$然后归一化就行，Numpy的参考代码为：</p><pre class="line-numbers"><code class="language-python">def softmax(x):
+    y = np.exp(x)
+    return y / y.sum()</code></pre><p>然而，如果$\boldsymbol{x}$中存在较大的分量，那么算$\exp$时很容易溢出，因此我们通常都要利用Softmax的<strong>不变性</strong>，先将每个分量减去所有分量的最大值，然后再算Softmax，这样每个取$\exp$的分量都不大于0，确保不会溢出：</p><pre class="line-numbers"><code class="language-python">def softmax(x):
+    y = np.exp(x - x.max())
+    return y / y.sum()</code></pre><h3 id="损失函数">损失函数</h3><p>构建概率分布的主要用途之一是用于构建单标签多分类任务的输出，即假设有一个$n$分类任务，$\boldsymbol{x}$是模型的输出，那么我们希望通过$\boldsymbol{p}=softmax(\boldsymbol{x})$来预测每个类的概率。为了训练这个模型，我们需要一个损失函数，假设目标类别是$t$，常见的选择是交叉熵损失：<br/>
+\begin{equation}\mathcal{L}_t = - \log p_t = - \log softmax(\boldsymbol{x})_t\end{equation}<br/>
+我们可以求得它的梯度：<br/>
+\begin{equation}-\frac{\partial \log p_t}{\partial x_j} = p_j - \delta_{t,j} = \left\{\begin{aligned}  p_t - 1,&amp;\quad j=t\\  p_j,&amp;\quad j\neq t  \end{aligned}\right.\end{equation}<br/>
+注意$t$是给定的，所以$\delta_{t,j}$实际表达的是目标分布$\text{onehot(t)}$，而全体$p_j$就是$\boldsymbol{p}$本身，所以上式可以更直观地写成：<br/>
+\begin{equation}-\frac{\partial \log p_t}{\partial \boldsymbol{x}} = \boldsymbol{p} - \text{onehot(t)}\label{eq:softmax-ce-grad}\end{equation}<br/>
+也就是说，它的梯度正好是目标分布与预测分布之差，只要两者不相等，那么梯度就一直存在，优化就可以持续下去，这是交叉熵的优点。当然，某些情况下这也是缺点，因为Softmax只有在$\tau\to 0^+$才会得到one hot，换言之正常情况下都不会出现one hot，即优化一直不会完全停止，那么就有可能导致过度优化，这也是后面的一些替代品的动机。</p><p>除了交叉熵之外，还有其他一些损失可用，比如$-p_t$，这可以理解为准确率的光滑近似的相反数，但它可能会有梯度消失问题，所以它的优化效率往往不如交叉熵，一般只适用于微调而不是从零训练，更多讨论可以参考<a href="/archives/9098" target="_blank">《如何训练你的准确率？》</a>。</p><h2 id="Softmax变体">Softmax变体</h2><p>介绍完Softmax，我们紧接着总结一下本博客以往讨论过Softmax的相关变体工作，比如Margin Softmax、Taylor Softmax、Sparse Softmax等，它们都是在Softmax基础上的衍生品，侧重于不同方面的改进，比如损失函数、、稀疏性、长尾性等。</p><h3 id="Margin Softmax">Margin Softmax</h3><p>首先我们介绍起源于人脸识别的一系列Softmax变体，它们可以统称为Margin Softmax，后来也被应用到NLP的Sentence Embedding训练之中，本站曾在<a href="/archives/5743" target="_blank">《基于GRU和am-softmax的句子相似度模型》</a>讨论过其中的一个变体AM-Softmax，后来则在<a href="/archives/8656" target="_blank">《从三角不等式到Margin Softmax》</a>有过更一般的讨论。</p><p>尽管Margin Softmax被冠以Softmax之名，但它实际上更多是一种损失函数改进。以AM-Softmax为例，它有两个特点：第一，以$\cos$形式构造Logits，即$\boldsymbol{x} = [\cos(\boldsymbol{z},\boldsymbol{c}_1),\cos(\boldsymbol{z},\boldsymbol{c}_2),\cdots,\cos(\boldsymbol{z},\boldsymbol{c}_n)]/\tau$的形式，此时的温度参数$\tau$是必须的，因为单纯的$\cos$值域为$[-1,1]$，不能拉开类概率之间的差异；第二，它并不是简单地以$-\log p_t$为损失，而是做了加强：<br/>
+\begin{equation}\mathcal{L} = - \log \frac{e^{[\cos(\boldsymbol{z},\boldsymbol{c}_t)-m]/\tau}}{e^{[\cos(\boldsymbol{z},\boldsymbol{c}_t)-m]/\tau} + \sum_{j\neq t} e^{\cos(\boldsymbol{z},\boldsymbol{c}_j)/\tau}}\end{equation}<br/>
+直观来看，就是交叉熵希望$x_t$是$\boldsymbol{x}$所有分量中最大的一个，而AM-Softmax则不仅希望$x_t$最大，还希望它至少比第二大的分量多出$m/\tau$，这里的$m/\tau$就称为Margin。</p><p>为什么要增加对目标类的要求呢？这是应用场景导致的。刚才说了，Margin Softmax起源于人脸识别，放到NLP中则可以用于语义检索，也就是说它的应用场景是检索，但训练方式是分类。如果单纯用分类任务的交叉熵来训练模型，模型编码出来的特征不一定能很好地满足检索要求，所以要加上Margin使得特征更加紧凑一些。更具体的讨论请参考<a href="/archives/8656" target="_blank">《从三角不等式到Margin Softmax》</a>一文，或者查阅相关论文。</p><h3 id="Taylor Softmax">Taylor Softmax</h3><p>接下来要介绍的，是在<a href="/archives/7919" target="_blank">《exp(x)在x=0处的偶次泰勒展开式总是正的》</a>讨论过的Taylor Softmax，它利用了$\exp(x)$的泰勒展开式的一个有趣性质：</p><blockquote class="cite"><div>对于任意实数$x$及偶数$k$，总有$f_k(x)\triangleq\sum\limits_{m=0}^k \frac{x^m}{m!} &gt; 0$，即$e^x$在$x=0$处的偶次泰勒展开式总是正的。</div></blockquote><p>利用这个恒正性，我们可以构建一个Softmax变体（$k &gt; 0$是任意偶数）：<br/>
+\begin{equation}taylor\text{-}softmax(\boldsymbol{x}, k)_i = \frac{f_k(x_i)}{\sum\limits_{j=1}^n f_k(x_j)}\end{equation}<br/>
+由于是基于$\exp$的泰勒展开式构建的，所以在一定范围内Taylor Softmax与Softmax有一定的近似关于，某些场景下可以用Taylor Softmax替换Softmax。那么Taylor Softmax有什么特点呢？答案是更加长尾，因为Taylor Softmax是多项式函数归一化，相比指数函数衰减得更慢，所以对于尾部的类别，Taylor Softmax往往能够给其分配更高的概率，可能有助于缓解Softmax的过度自信现象。</p><p>Taylor Softmax的最新应用，是用来替换Attention中的Softmax，使得原本的平方复杂度降低为线性复杂度，相关理论推导可以参考<a href="/archives/8601" target="_blank">《Transformer升级之路：5、作为无限维的线性Attention》</a>。该思路的最新实践是一个名为Based的模型，它利用$e^x\approx 1+x+x^2/2$来线性化Attention，声称比Attention高效且比Mamba效果更好，详细介绍可以参考博客<a href="https://hazyresearch.stanford.edu/blog/2023-12-11-zoology2-based" target="_blank">《Zoology (Blogpost 2): Simple, Input-Dependent, and Sub-Quadratic Sequence Mixers》</a>和<a href="https://www.together.ai/blog/based" target="_blank">《BASED: Simple linear attention language models balance the recall-throughput tradeoff》</a>。</p><h3 id="Sparse Softmax">Sparse Softmax</h3><p>Sparse Softmax是笔者参加2020年法研杯时提出的一个简单的Softmax稀疏变体，首先发表在博文<a href="/archives/8046" target="_blank">《SPACES：“抽取-生成”式长文本摘要（法研杯总结）》</a>，后来也补充了相关实验，写了篇简单的论文<a href="https://papers.cool/arxiv/2112.12433" target="_blank">《Sparse-softmax: A Simpler and Faster Alternative Softmax Transformation》</a>。</p><p>我们知道，在文本生成中，我们常用确定性的Beam Search解码，或者随机性的TopK/TopP Sampling采样，这些算法的特点都是只保留了预测概率最大的若干个Token进行遍历或者采样，也就等价于将剩余的Token概率视为零，而训练时如果直接使用Softmax来构建概率分布的话，那么就不存在绝对等于零的可能，这就让训练和预测出现了不一致性。Sparse Softmax就是希望能处理这种不一致性，思路很简单，就是在训练的时候也把Top-$k$以外的Token概率置零：<br/>
+\begin{array}{c|c|c}<br/>
+\hline<br/>
+&amp; Softmax &amp; Sparse\text{ }Softmax \\<br/>
+\hline<br/>
+\text{基本定义} &amp; p_i = \frac{e^{x_i}}{\sum\limits_{j=1}^n e^{x_j}} &amp; p_i=\left\{\begin{aligned}&amp;\frac{e^{x_i}}{\sum\limits_{j\in\Omega_k} e^{x_j}},\,i\in\Omega_k\\ &amp;\quad 0,\,i\not\in\Omega_k\end{aligned}\right.\\<br/>
+\hline<br/>
+\text{损失函数} &amp; \log\left(\sum\limits_{i=1}^n e^{x_i}\right) - x_t &amp; \log\left(\sum\limits_{i\in\Omega_k} e^{x_i}\right) - x_t\\<br/>
+\hline<br/>
+\end{array}</p><p>其中$\Omega_k$是将$x_1,x_2,\cdots,x_n$从大到小排列后前$k$个元素的原始下标集合。简单来说，就是在训练阶段就进行与预测阶段一致的阶段操作。这里的$\Omega_k$选取方式也可以按照Nucleus Sampling的Top-$p$方式来操作，看具体需求而定。但要注意的是，Sparse Softmax强行截断了剩余部分的概率，意味着这部分Logits无法进行反向传播了，因此Sparse Softmax的训练效率是不如Softmax的，所以它一般只适用于微调场景，而不适用于从零训练。</p><h2 id="Perturb Max">Perturb Max</h2><p>这一节我们介绍一种新的构建概率分布的方式，这里称之为Perturb Max，它是Gumbel Max的一般化，在本站中首次介绍于博客<a href="/archives/9085" target="_blank">《从重参数的角度看离散概率分布的构建》</a>，此外在论文<a href="https://papers.cool/arxiv/2205.09615" target="_blank">《EXACT: How to Train Your Accuracy》</a>也有过相关讨论，至于更早的出处笔者则没有进一步考究了。</p><h3 id="问题反思">问题反思</h3><p>首先我们知道，构建一个$\mathbb{R}^n\mapsto\Delta^{n-1}$的映射并不是难事，只要$f(x)$是$\mathbb{R}\mapsto \mathbb{R}^*$（实数到非负实数）的映射，如$x^2$，那么只需要让<br/>
+\begin{equation}p_i = \frac{f(x_i)}{\sum\limits_{j=1}^n f(x_j)}\end{equation}<br/>
+就是满足条件的映射了。如果要加上“<a href="#两点性质">两点性质</a>”中的“<strong>单调性</strong>”呢？那么也不难，只需要保证$\mathbb{R}\mapsto \mathbb{R}^*$的单调递增函数，这样的函数也有很多，比如$\text{sigmoid}(x)$。但如果再加上“<strong>不变性</strong>”呢？我们还能随便写出一个满足<strong>不变性</strong>的$\mathbb{R}^n\mapsto\Delta^{n-1}$映射吗？（反正我不能）</p><p>可能有读者疑问：为什么非要保持<strong>单调性</strong>和<strong>不变性</strong>呢？的确，单纯从拟合概率分布的角度来看，这两点似乎都没什么必要，反正都是“力大砖飞”，只要模型足够大，那么没啥不能拟合的。但从“Softmax替代品”这个角度来看，我们希望新定义的概率分布同样能作为$\text{argmax}$的光滑近似，那么就要尽可能多保持跟$\text{argmax}$相同的性质，这是我们希望保持<strong>单调性</strong>和<strong>不变性</strong>的主要原因。</p><h3 id="Gumbel Max">Gumbel Max</h3><p>Perturb Max借助于Gumbel Max的一般化来构造这样的一类分布。不熟悉Gumbel Max的读者，可以先到<a href="/archives/6705" target="_blank">《漫谈重参数：从正态分布到Gumbel Softmax》</a>了解一下Gumbel Max。简单来说，Gumbel Max就是发现：<br/>
+\begin{equation}P[\text{argmax}(\boldsymbol{x}+\boldsymbol{\varepsilon}) = i] = softmax(\boldsymbol{x})_i,\quad \boldsymbol{\varepsilon}\sim Gumbel\text{ }Noise\end{equation}<br/>
+怎么理解这个结果呢？首先，这里的$\boldsymbol{\varepsilon}\sim Gumbel\text{ }Noise$是指$\boldsymbol{\varepsilon}$的每个分量都是从<a href="https://en.wikipedia.org/wiki/Gumbel_distribution" target="_blank">Gumbel分布</a>独立重复采样出来的；接着，我们知道给定向量$\boldsymbol{x}$，本来$\text{argmax}(\boldsymbol{x})$是确定的结果，但加了随机噪声$\boldsymbol{\varepsilon}$之后，$\text{argmax}(\boldsymbol{x}+\boldsymbol{\varepsilon})$的结果也带有随机性了，于是每个$i$都有自己的概率；最后，Gumbel Max告诉我们，如果加的是Gumbel噪声，那么$i$的出现概率正好是$softmax(\boldsymbol{x})_i$。</p><p>Gumbel Max最直接的作用，就是提供了一种从分布$softmax(\boldsymbol{x})$中采样的方式，当然如果单纯采样还有更简单的方法，没必要“杀鸡用牛刀”。Gumbel Max最大的价值是“重参数（Reparameterization）”，它将问题的随机性从带参数$\boldsymbol{x}$的离散分布转移到了不带参数的$\boldsymbol{\varepsilon}$上，再结合Softmax是$\text{argmax}$的光滑近似，我们得到$softmax(\boldsymbol{x} + \boldsymbol{\varepsilon})$是Gumbel Max的光滑近似，这便是Gumbel Softmax，是训练“离散采样模块中带有可学参数”的模型的常用技巧。</p><h3 id="一般噪声">一般噪声</h3><p>Perturb Max直接源自Gumbel Max：既然Softmax可以从Gumbel分布中导出，那么如果将Gumbel分布换为一般的分布，比如正态分布，不就可以导出新的概率分布形式了？也就是说直接定义<br/>
+\begin{equation}p_i = P[\text{argmax}(\boldsymbol{x}+\boldsymbol{\varepsilon}) = i],\quad \varepsilon_1,\varepsilon_2,\cdots,\varepsilon_n\sim p(\varepsilon)\end{equation}<br/>
+重复Gumbel Max的推导，我们可以得到<br/>
+\begin{equation}p_i = \int_{-\infty}^{\infty} p(\varepsilon_i)\left[\prod_{j\neq i} \Phi(x_i - x_j + \varepsilon_i)\right]d\varepsilon_i = \mathbb{E}_{\varepsilon}\left[\prod_{j\neq i} \Phi(x_i - x_j + \varepsilon)\right]\end{equation}<br/>
+其中$\Phi(\varepsilon)$是$p(\varepsilon)$的累积概率函数。对于一般的分布，哪怕是简单的标准正态分布，上式都很难得出解析解，所以只能数值估计。为了得到确定性的计算结果，我们可以用逆累积概率函数的方式进行均匀采样，即先从$[0,1]$均匀选取$t$，然后通过求解$t=\Phi(\varepsilon)$来得到$\varepsilon$。</p><p>从Perturb Max的定义或者最后$p_i$的形式我们都可以断言Perturb Max满足<strong>单调性</strong>和<strong>不变性</strong>，这里就不详细展开了。那它在什么场景下有独特作用呢？说实话，还真不知道，<a href="https://papers.cool/arxiv/2205.09615" target="_blank">《EXACT: How to Train Your Accuracy》</a>一文用它来构建新的概率分布并优化准确率的光滑近似，但笔者自己的实验显示没有特别的效果。个人感觉，可能在某些需要重参数的场景能够表现出特殊的作用吧。</p><h2 id="Sparsemax">Sparsemax</h2><p>接下来要登场的是名为Sparsemax的概率映射，出自2016年的论文<a href="https://papers.cool/arxiv/1602.02068" target="_blank">《From Softmax to Sparsemax: A Sparse Model of Attention and Multi-Label Classification》</a>，它跟笔者提出的Sparse Softmax一样，都是面向稀疏性的改动，但作者的动机是用在Attention中提供更好的可解释性。跟Sparse Softmax直接强行截断Top-$k$个分量不同，Sparsemax提供了一个更为自适应的稀疏型概率分布构造方式。</p><h3 id="基本定义">基本定义</h3><p>原论文将Sparsemax定义为如下优化问题的解：<br/>
+\begin{equation}sparsemax(\boldsymbol{x}) = \mathop{\text{argmin}}\limits_{\boldsymbol{p}\in\Delta^{n-1}}\Vert \boldsymbol{p} - \boldsymbol{x}\Vert^2\label{eq:sparsemax-opt}\end{equation}<br/>
+通过拉格朗日乘数法就可以求出精确解的表达式。然而，这种方式并不直观，而且也不容易揭示它跟Softmax的联系。下面提供笔者构思的一种私以为更加简明的引出方式。</p><p>首先，我们可以发现，Softmax可以等价地表示为<br/>
+\begin{equation}\boldsymbol{p} = softmax(\boldsymbol{x}) = \exp(\boldsymbol{x} - \lambda(\boldsymbol{x}))\label{eq:sparsemax-softmax}\end{equation}<br/>
+其中$\lambda(\boldsymbol{x})$是使得$\boldsymbol{p}$的各分量之和为1的常数，对于Softmax我们可以求出$\lambda(\boldsymbol{x})=\log\sum\limits_i e^{x_i}$。</p><p>然后，在Taylor Softmax那一节我们说了，$\exp(x)$的偶次泰勒展开总是正的，因此可以用偶次泰勒展开来构建Softmax变体。但如果是奇数次呢？比如$\exp(x)\approx 1 + x$，它并不总是非负的，但我们可以加个$\text{relu}$强行让它变成非负的，即$\exp(x)\approx \text{relu}(1 + x)$，用这个近似替换掉式$\eqref{eq:sparsemax-softmax}$的$\exp$，就得到了Sparsemax：<br/>
+\begin{equation}\boldsymbol{p} = sparsemax(\boldsymbol{x}) = \text{relu}(1+\boldsymbol{x} - \lambda(\boldsymbol{x}))\end{equation}<br/>
+其中$\lambda(\boldsymbol{x})$依然是使得$\boldsymbol{p}$的各分量之和为1的常数，并且常数$1$也可以整合到$\lambda(\boldsymbol{x})$之中，所以上式也等价于<br/>
+\begin{equation}\boldsymbol{p} = sparsemax(\boldsymbol{x}) = \text{relu}(\boldsymbol{x} - \lambda(\boldsymbol{x}))\end{equation}</p><h3 id="求解算法">求解算法</h3><p>到目前为止，Sparsemax还只是一个形式化的定义，因为$\lambda(\boldsymbol{x})$的具体计算方法尚不清楚，这就是本节需要探讨的问题。不过即便如此，单靠这个定义我们也不难看出Sparsemax满足<strong>单调性</strong>和<strong>不变性</strong>两点性质，如果还觉得不大肯定的读者，可以自行尝试证明一下它。</p><p>现在转向$\lambda(\boldsymbol{x})$的计算。不失一般性，我们假设$\boldsymbol{x}$各分量已经从大到小排序好，即$x_1\geq x_2\geq \cdots\geq x_n$，接着我们不妨先假设已知$x_k\geq \lambda(\boldsymbol{x})\geq x_{k+1}$，那么很显然<br/>
+\begin{equation}sparsemax(\boldsymbol{x}) = [x_1 - \lambda(\boldsymbol{x}),\cdots,x_k - \lambda(\boldsymbol{x}),0,\cdots,0]\end{equation}<br/>
+根据$\lambda(\boldsymbol{x})$的定义，我们有<br/>
+\begin{equation}\sum_{i=1}^k [x_i - \lambda(\boldsymbol{x})] = 1\quad\Rightarrow\quad 1 + k\lambda(\boldsymbol{x}) = \sum_{i=1}^k x_i\end{equation}<br/>
+这就可以求出$\lambda(\boldsymbol{x})$。当然，我们无法事先知道$x_k\geq \lambda(\boldsymbol{x})\geq x_{k+1}$，但我们可以遍历$k=1,2,\cdots,n$，利用上式求一遍$\lambda_k(\boldsymbol{x})$，取满足$x_k\geq \lambda_k(\boldsymbol{x})\geq x_{k+1}$那一个$\lambda_k(\boldsymbol{x})$，这也可以等价地表示为求满足$x_k\geq \lambda_k(\boldsymbol{x})$的最大的$k$，然后返回对应的$\lambda_k(\boldsymbol{x})$</p><p>参考实现：</p><pre class="line-numbers"><code class="language-python">def sparsemax(x):
+    x_sort = np.sort(x)[::-1]
+    x_lamb = (np.cumsum(x_sort) - 1) / np.arange(1, len(x) + 1)
+    lamb = x_lamb[(x_sort &gt;= x_lamb).argmin() - 1]
+    return np.maximum(x - lamb, 0)</code></pre><h3 id="梯度计算">梯度计算</h3><p>方便起见，我们引入记号<br/>
+\begin{equation}\Omega(\boldsymbol{x}) = \big\{k\big|x_k &gt; \lambda(\boldsymbol{x})\big\}\end{equation}<br/>
+那么可以写出<br/>
+\begin{equation}\boldsymbol{p} = sparsemax(\boldsymbol{x}) = \left\{\begin{aligned}<br/>
+&amp;x_i - \frac{1}{|\Omega(\boldsymbol{x})|}\left(-1 + \sum_{j\in\Omega(\boldsymbol{x})}x_j\right),\quad &amp;i\in \Omega(\boldsymbol{x})\\<br/>
+&amp;0,\quad &amp;i \not\in \Omega(\boldsymbol{x})<br/>
+\end{aligned}\right.\end{equation}<br/>
+从这个等价形式可以看出，跟Sparse Softmax一样，Sparsemax同样也只对部分类别有梯度，可以直接算出雅可比矩阵：<br/>
+\begin{equation}\frac{\partial p_i}{\partial x_j} = \left\{\begin{aligned}<br/>
+&amp;1 - \frac{1}{|\Omega(\boldsymbol{x})|},\quad &amp;i,j\in \Omega(\boldsymbol{x}),i=j\\[5pt]<br/>
+&amp;- \frac{1}{|\Omega(\boldsymbol{x})|},\quad &amp;i,j\in \Omega(\boldsymbol{x}),i\neq j\\[5pt]<br/>
+&amp;0,\quad &amp;i \not\in \Omega(\boldsymbol{x})\text{ or }j \not\in \Omega(\boldsymbol{x})<br/>
+\end{aligned}\right.\end{equation}<br/>
+由此可以看出，对于在$\Omega(\boldsymbol{x})$里边的类别，Sparsemax倒是不会梯度消失，因为此时它的梯度恒为常数，但它总的梯度大小，取决于$\Omega(\boldsymbol{x})$的元素个数，它越少则越稀疏，意味着梯度也越稀疏。</p><h3 id="损失函数">损失函数</h3><p>最后我们来讨论Sparsemax作为分类输出时的损失函数。比较直观的想法就是跟Softmax一样用交叉熵$-\log p_t$，但Sparsemax的输出可能是严格等于0的，所以为了防止$\log 0$错误，还要给每个分量都加上$\epsilon$，最终的交叉熵形式为$-\log\frac{p_t + \epsilon}{1 + n\epsilon}$，但这一来有点丑，二来它还不是凸函数，所以并不是一个理想选择。</p><p>事实上，交叉熵在Softmax中之所以好用，是因为它的梯度恰好有$\eqref{eq:softmax-ce-grad}$的形式，所以对于Sparsemax，我们不妨同样假设损失函数的梯度为$\boldsymbol{p} - \text{onehot(t)}$，然后反推出损失函数该有的样子，即：<br/>
+\begin{equation}\frac{\partial \mathcal{L}_t}{\partial \boldsymbol{x}} = \boldsymbol{p} - \text{onehot(t)}\quad\Rightarrow\quad \mathcal{L}_t = \frac{1}{2} - x_t + \sum_{i\in\Omega(\boldsymbol{x})}\frac{1}{2}\left(x_i^2 - \lambda^2(\boldsymbol{x})\right)\end{equation}<br/>
+从右往左验证比较简单，从左往右推可能会有些困难，但不多，反复拼凑一下应该就能出来了。第一个$\frac{1}{2}$常数是为了保证损失函数的非负性，我们可以取一个极端来验证一下：假设优化到完美，那么$\boldsymbol{p}$应该也是one hot，此时$x_t\to\infty$，并且$\lambda(\boldsymbol{x}) = x_t - 1$，于是<br/>
+\begin{equation}- x_t + \sum_{i\in\Omega(\boldsymbol{x})}\frac{1}{2}\left(x_i^2 - \lambda^2(\boldsymbol{x})\right) = -x_t + \frac{1}{2}x_t^2 - \frac{1}{2}(x_t - 1)^2 = -\frac{1}{2}\end{equation}<br/>
+所以要多加上常数$\frac{1}{2}$。</p><h2 id="Entmax-α">Entmax-α</h2><p>Entmax-$\alpha$是Sparsemax的一般化，它的动机是Sparsemax往往会过度稀疏，这可能会导致学习效率偏低，导致最终效果下降的问题，所以Entmax-$\alpha$引入了$\alpha$参数，提供了Softmax（$\alpha=1$）到Sparsemax（$\alpha=2$）的平滑过度。Entmax-$\alpha$出自论文<a href="https://papers.cool/arxiv/1905.05702" target="_blank">《Sparse Sequence-to-Sequence Models》</a>，作者跟Sparsemax一样是Andre F. T. Martins，这位大佬围绕着稀疏Softmax、稀疏Attention做了不少工作，有兴趣的读者可以在<a href="https://andre-martins.github.io/" target="_blank">他的主页</a>查阅相关工作。</p><h3 id="基本定义">基本定义</h3><p>跟Sparsemax一样，原论文将Entmax-$\alpha$定义为类似$\eqref{eq:sparsemax-opt}$的优化问题的解，但这个定义涉及到<a href="https://en.wikipedia.org/wiki/Tsallis_entropy" target="_blank">Tsallis entropy</a>的概念（也是Entmax的Ent的来源），求解还需要用到拉格朗日乘数法，相对来说比较复杂，这里不采用这种引入方式。</p><p>我们的介绍同样是基于上一节的近似$\exp(x)\approx \text{relu}(1 + x)$，对于Softmax和Sparsemax，我们有<br/>
+\begin{align}&amp;{\color{red}{Softmax}}:\quad &amp;\exp(\boldsymbol{x} - \lambda(\boldsymbol{x})) \\[5pt]<br/>
+&amp;{\color{red}{Sparsemax}}:\quad &amp;\text{relu}(1+\boldsymbol{x} - \lambda(\boldsymbol{x}))<br/>
+\end{align}<br/>
+Sparsemax太稀疏，背后的原因也可以理解为$\exp(x)\approx \text{relu}(1 + x)$近似精度不够高，我们可以从中演化出更高精度的近似<br/>
+\begin{equation}\exp(x) = \exp(\beta x / \beta) = \exp^{1/\beta}(\beta x)\approx \text{relu}^{1/\beta}(1 + \beta x)\end{equation}<br/>
+只要$0 \leq \beta &lt; 1$，那么最右端就是一个比$\text{relu}(1 + x)$更好的近似（想想为什么）。利用这个新近似，我们就可以构建<br/>
+\begin{equation}{\color{red}{Entmax\text{-}\alpha}}:\quad \text{relu}^{1/\beta}(1+\beta\boldsymbol{x} - \lambda(\boldsymbol{x}))\end{equation}<br/>
+这里$\alpha = \beta + 1$是为了对齐原论文的表达方式，事实上用$\beta$表示更简洁一些。同样地，常数$1$也可以收入到$\lambda(\boldsymbol{x})$定义之中，所以最终定义可以简化为<br/>
+\begin{equation}Entmax_{\alpha}(\boldsymbol{x}) =  \text{relu}^{1/\beta}(\beta\boldsymbol{x} - \lambda(\boldsymbol{x}))\end{equation}</p><h3 id="求解算法">求解算法</h3><p>对于一般的$\beta$，求解$\lambda(\boldsymbol{x})$是比较麻烦的事情，通常只能用二分法求解。</p><p>首先我们记$\boldsymbol{z}=\beta\boldsymbol{x}$，并且不失一般性假设$z_1\geq z_2\geq \cdots \geq z_n$，然后我们可以发现Entmax-$\alpha$是满足<strong>单调性</strong>和<strong>不变性</strong>的，借助<strong>不变性</strong>我们可以不失一般性地设$z_1 = 1$（如果不是，每个$z_i$都减去$z_1 - 1$即可）。现在可以检验，当$\lambda=0$时，$\text{relu}^{1/\beta}(\beta\boldsymbol{x} - \lambda)$的所有分量之和大于等于1，当$\lambda=1$时，$\text{relu}^{1/\beta}(\beta\boldsymbol{x} - \lambda)$的所有分量之和等于0，所以最终能使分量之和等于1的$\lambda(\boldsymbol{x})$必然在$[0,1)$内，然后我们就可以使用二分法来逐步逼近最优的$\lambda(\boldsymbol{x})$。</p><p>对于某些特殊的$\beta$，我们可以得到一个求精确解的算法。Sparsemax对应$\beta=1$，我们前面已经给出了求解过程，另外一个能给解析解的例子是$\beta=1/2$，这也是原论文主要关心的例子，如果不加标注，那么Entmax默认就是Entmax-1.5。跟Sparsemax一样的思路，我们先假设已知$z_k\geq \lambda(\boldsymbol{x})\geq z_{k+1}$，于是有<br/>
+\begin{equation}\sum_{i=1}^k [z_i - \lambda(\boldsymbol{x})]^2 = 1\end{equation}<br/>
+这只不过是关于$\lambda(\boldsymbol{x})$的一元二次方程，可以解得<br/>
+\begin{equation}\lambda(\boldsymbol{x}) = \mu_k - \sqrt{\frac{1}{k} - \sigma_k^2},\quad \mu_k = \frac{1}{k}\sum_{i=1}^k z_i,\quad\sigma_k^2 = \frac{1}{k}\left(\sum_{i=1}^k z_i^2\right) - \mu_k^2\end{equation}<br/>
+当我们无法事先知道$x_k\geq \lambda(\boldsymbol{x})\geq x_{k+1}$时，可以遍历$k=1,2,\cdots,n$，利用上式求一遍$\lambda_k(\boldsymbol{x})$，取满足$x_k\geq \lambda_k(\boldsymbol{x})\geq x_{k+1}$那一个$\lambda_k(\boldsymbol{x})$，但注意这时候不等价于求满足$x_k\geq \lambda_k(\boldsymbol{x})$的最大的$k$。</p><p>完整的参考实现：</p><pre class="line-numbers"><code class="language-python">def entmat(x):
+    x_sort = np.sort(x / 2)[::-1]
+    k = np.arange(1, len(x) + 1)
+    x_mu = np.cumsum(x_sort) / k
+    x_sigma2 = np.cumsum(x_sort**2) / k  - x_mu**2
+    x_lamb = x_mu - np.sqrt(np.maximum(1. / k - x_sigma2, 0))
+    x_sort_shift = np.pad(x_sort[1:], (0, 1), constant_values=-np.inf)
+    lamb = x_lamb[(x_sort &gt; x_lamb) &amp; (x_lamb &gt; x_sort_shift)]
+    return np.maximum(x / 2 - lamb, 0)**2</code></pre><h3 id="其他内容">其他内容</h3><p>Entmax-$\alpha$的梯度跟Sparsemax大同小异，这里就不展开讨论了，读者自行推导一下或者参考原论文就行。至于损失函数，同样从梯度$\frac{\partial \mathcal{L}_t}{\partial \boldsymbol{x}} = \boldsymbol{p} - \text{onehot(t)}$出发反推出损失函数也是可以的，但其形式有点复杂，有兴趣了解的读者可以参考原论文<a href="https://papers.cool/arxiv/1905.05702" target="_blank">《Sparse Sequence-to-Sequence Models》</a>以及<a href="https://papers.cool/arxiv/1901.02324" target="_blank">《Learning with Fenchel-Young Losses》</a>。</p><p>不过就笔者看来，直接用$\text{stop_gradient}$算子来定义损失函数更为简单通用，可以避免求原函数的复杂过程：<br/>
+\begin{equation}\mathcal{L}_t = (\boldsymbol{p} - \text{onehot(t)})\cdot \text{stop_gradient}(\boldsymbol{x})\end{equation}<br/>
+这里的$\,\cdot\,$是向量内积，这样定义出来的损失，其梯度正好是$\boldsymbol{p} - \text{onehot(t)}$，但要注意这个损失函数只有梯度是有效的，它本身的数值是没有参考意义的，比如它可正可负，也不一定越小越好，所以要评估训练进度和效果的话，得另外建立指标（比如交叉熵或者准确率）。</p><h2 id="文章小结">文章小结</h2><p>本文简单回顾和整理了Softmax及其部分替代品，其中包含的工作有Softmax、Margin Softmax、Taylor Softmax、Sparse Softmax、Perturb Max、Sparsemax、Entmax-$\alpha$的定义、性质等内容。</p>
+
+
+
+
+
+</div>

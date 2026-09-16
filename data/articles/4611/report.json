@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "4611",
+    "title": "基于fine tune的图像分类（百度分狗竞赛）",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/4611",
+    "date": "2017-10-13",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 0,
+    "display_formula_count": 0,
+    "image_count": 1,
+    "heading_count": 5,
+    "code_block_count": 7,
+    "source_text_sha256": "229b7beaa3dadeb6b8f69035a8e6cc0d72ad88b38e08b87eb9557de1e9a1947a",
+    "output_text_sha256": "229b7beaa3dadeb6b8f69035a8e6cc0d72ad88b38e08b87eb9557de1e9a1947a",
+    "latex_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "body_sha256": "4d32c2aed55dd8f6a72b638e689264e9a6a245a37f0048ea5eb7d9ad042ece5f",
+    "converter_version": 1,
+    "markdown_sha256": "b44c8814edeceec6efe70f67a634b4dcfd65a2e0db0994dcf67713df542f07b3"
+  },
+  "fetched_at": "2026-09-14T13:30:33+00:00",
+  "source_snapshot_sha256": "2d8d1e063cab25b37cd5bb9d1a2f8dbcafee2ba09f60ec2efb4f5ca39d4bf069",
+  "images": {},
+  "local_only": true
+}

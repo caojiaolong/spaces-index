@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "2935",
+    "title": "[备份]全国大学生数学建模竞赛论文LaTex模板",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/2935",
+    "date": "2014-09-11",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 1,
+    "display_formula_count": 0,
+    "image_count": 0,
+    "heading_count": 0,
+    "code_block_count": 0,
+    "source_text_sha256": "011c67fe1d87e498e24a9d6e3585c0a3129e927ee1c0c0d4b770a931d56e14fb",
+    "output_text_sha256": "011c67fe1d87e498e24a9d6e3585c0a3129e927ee1c0c0d4b770a931d56e14fb",
+    "latex_sha256": "2fcfdb88afbfd32136fe5ba50cd02ae633f984e8993ae2682f8e3c6b08fa804a",
+    "body_sha256": "69e681cd7f92775113a7a8171084fd337273d391bde2ed42530b0d6f0683d528",
+    "converter_version": 1,
+    "markdown_sha256": "b46045fea0c244073f1dfbee1ad7cafe63edcddabe1093afb848fc4292bb6c2e"
+  },
+  "fetched_at": "2026-09-14T13:51:29+00:00",
+  "source_snapshot_sha256": "9acc186db0763199846dc1ec2a06db71590bebec9bdd4d1b9b965825c004bedb",
+  "images": {},
+  "local_only": true
+}

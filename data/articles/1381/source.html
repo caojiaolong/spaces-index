@@ -1,0 +1,17 @@
+<div class="PostContent" id="PostContent">
+<p>在之前的<a href="/archives/714/" target="_blank">一篇向量系列的文章</a>中，我们通过结合物理与向量来巧妙地推导出了曲线（包括平面和空间的）的曲率半径为<br/>
+$$R=\frac{v^2}{a_c}=\frac{|\dot{\vec{r}}|^3}{|\dot{\vec{r}}\times \ddot{\vec{r}}|}\tag{1}$$<br/>
+曲率则是曲率半径的导数：$\rho=\frac{1}{R}$。我们反过来思考一下：曲率恒定的平面曲线是否只有圆？</p><p>答案貌似是很显然的，我们需要证明一下。</p><p>由于只是考虑平面情况，我们先设$\dot{\vec{r}}=(v cos\theta,v sin\theta)=z=ve^{i\theta}$，代入(1)得到<br/>
+$\frac{\dot{\theta}}{v}=\rho$————(2)</p><blockquote><strong>注意，这里我们用到了导数符号$\dot{\theta}$，但依旧还没有说明是对哪个变量求导的。我们发现要是$\dot{\theta}=\frac{d\theta}{dv}$的话，(2)是很容易求解的。于是我们就约定，函数上面的一点表示对变量v求导。这是一种“事后决定法”，因为这里求导的变量是随意的，适当的选择让我们更方便地求解。</strong></blockquote><p>这样，(2)的通解为：$$\theta=1/2 \rho v^2+C_1\tag{2}$$<br/>
+继续换回x,y变量，我们有：$$\frac{dz}{dv}=ve^{i\theta}=ve^{i(1/2 \rho v^2+C_1)}\tag{3}$$<br/>
+那么<br/>
+$$\begin{aligned}z=\int ve^{i\theta}=ve^{i(1/2 \rho v^2+C_1)}dv \\ =\frac{1}{\rho} e^{i(1/2 \rho v^2+C_1)}d(1/2 \rho v^2+C_1)=\frac{1}{\rho} e^{i(1/2 \rho v^2+C_1)}+C_2\end{aligned}\tag{4}$$<br/>
+选取进行适当的平移使得$C_2=0$。有<br/>
+$$z=\frac{1}{\rho} e^{i(1/2 \rho v^2+C_1)}\tag{5}$$<br/>
+不难检验$|z|=\frac{1}{\rho}$。因此，这是一个圆。</p><p><strong><font color="red">注意这里的“复数”充当了一个“形式上”的作用，它是一个把正交的坐标运算结合为一个整体来运算的工具，而不是一个单纯的数。下一篇文章我们来探讨一下空间曲线和平面的类似问题。</font></strong></p>
+
+
+
+
+
+</div>

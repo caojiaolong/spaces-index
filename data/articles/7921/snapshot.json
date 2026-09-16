@@ -1,0 +1,17 @@
+{
+  "metadata": {
+    "id": "7921",
+    "title": "Performer：用随机投影将Attention的复杂度线性化",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/7921",
+    "date": "2020-12-01",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "fetched_at": "2026-09-14T13:09:49+00:00",
+  "source_snapshot_sha256": "9be1d21b87ee2b234f5a280641d4af6dfd09936fa02dcaa7e10e9a67d549442c",
+  "validators": {
+    "etag": null,
+    "last_modified": null
+  }
+}

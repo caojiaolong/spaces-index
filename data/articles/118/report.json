@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "118",
+    "title": "微积分学习（二）：导数",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/118",
+    "date": "2009-09-12",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 39,
+    "display_formula_count": 7,
+    "image_count": 1,
+    "heading_count": 0,
+    "code_block_count": 0,
+    "source_text_sha256": "1b5b86b6ad9d4d6dab99a8d2a3e28196c3c8316f4b10c36a9db7bf9a1d3518de",
+    "output_text_sha256": "1b5b86b6ad9d4d6dab99a8d2a3e28196c3c8316f4b10c36a9db7bf9a1d3518de",
+    "latex_sha256": "f047592bda1d8cb9cee87ee95b58dcccf89c5e8578c01da4c0c5a3e4c3aacd92",
+    "body_sha256": "7c0a3c6f927c9e98d00cd378a27359d8aaee9dfd084a22f9bed89b24e99385ab",
+    "converter_version": 1,
+    "markdown_sha256": "592b604356f5fd7afe232e6adcf7823874397f2df64d287f49b9fa525b556108"
+  },
+  "fetched_at": "2026-09-14T14:53:54+00:00",
+  "source_snapshot_sha256": "0d9cdad629617858ce546f8052517d18a32270b6d0c236d2592c00dbe0fd965f",
+  "images": {},
+  "local_only": true
+}

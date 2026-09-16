@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "10958",
+    "title": "生成扩散模型漫谈（三十）：从瞬时速度到平均速度",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/10958",
+    "date": "2025-05-26",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 150,
+    "display_formula_count": 24,
+    "image_count": 0,
+    "heading_count": 12,
+    "code_block_count": 1,
+    "source_text_sha256": "f3372798a8644e29d661160c3f8d9669a6f7a6b5890403983e69b73d3fc2bf6a",
+    "output_text_sha256": "f3372798a8644e29d661160c3f8d9669a6f7a6b5890403983e69b73d3fc2bf6a",
+    "latex_sha256": "408b8cd1a353ce081a4c83f698be245c0381b54fa1ed41719c9ccd1b96f0915c",
+    "body_sha256": "ec5ababc25e067fda6829e1cae54c5753cc570c3e23e03153fdffcacabdfadc0",
+    "converter_version": 1,
+    "markdown_sha256": "2a8f247975ff69f127674d929c47b97da82bd641133f05d93d910ed9a9383af6"
+  },
+  "fetched_at": "2026-09-14T12:42:14+00:00",
+  "source_snapshot_sha256": "0aa455a55b2d5c7024ce304755092b622457cf5208ea7319d704cb92ecc4e1bb",
+  "images": {},
+  "local_only": true
+}

@@ -1,0 +1,17 @@
+{
+  "metadata": {
+    "id": "4338",
+    "title": "【语料】百度的中文问答数据集WebQA",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/4338",
+    "date": "2017-04-12",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "fetched_at": "2026-09-14T13:33:08+00:00",
+  "source_snapshot_sha256": "71a3bb81e2259d23dc7a1f7faa28307f7a285943d8992747e0594c694cbf4fc5",
+  "validators": {
+    "etag": null,
+    "last_modified": null
+  }
+}

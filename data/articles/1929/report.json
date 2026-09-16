@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "1929",
+    "title": "轻微的扰动——摄动法简介(3) ",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/1929",
+    "date": "2013-03-07",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 36,
+    "display_formula_count": 10,
+    "image_count": 0,
+    "heading_count": 0,
+    "code_block_count": 0,
+    "source_text_sha256": "7b5ac4f0d87356b2770b559e37991a25256e0467350439b5362e87df83d4a818",
+    "output_text_sha256": "7b5ac4f0d87356b2770b559e37991a25256e0467350439b5362e87df83d4a818",
+    "latex_sha256": "45acf57f2f5deb9e1d15681398eed8c5de9c25e524d9fd2e25e537a5dc42b407",
+    "body_sha256": "e9ffe98c294c4c26e2e3cce88ba649b1cf93b6ebd75d60c12d57ffaee0582a3a",
+    "converter_version": 1,
+    "markdown_sha256": "ce632156a5c8390779e459b2f673c65943086365b28aaf11a96dfe6d614cbb38"
+  },
+  "fetched_at": "2026-09-14T14:04:20+00:00",
+  "source_snapshot_sha256": "1473740f807399b9b47f47e4581f38444b2960427a337c5356be08809cce9c14",
+  "images": {},
+  "local_only": true
+}

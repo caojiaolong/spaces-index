@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "2360",
+    "title": "情人节？元宵节！",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/2360",
+    "date": "2014-02-14",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 0,
+    "display_formula_count": 0,
+    "image_count": 1,
+    "heading_count": 0,
+    "code_block_count": 0,
+    "source_text_sha256": "61167e4776ec4b42d98b00cea252df7a2f4e4aad9b42cc2b8749bf2675c920fd",
+    "output_text_sha256": "61167e4776ec4b42d98b00cea252df7a2f4e4aad9b42cc2b8749bf2675c920fd",
+    "latex_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "body_sha256": "422751c3bd902202fd76a5a57c3cd9c56c0daf6847c84297ac44a561cdd82452",
+    "converter_version": 1,
+    "markdown_sha256": "35f979290877968e2469d7e6b73fc70130267d80c981c3c25d8be8dd28c6fc02"
+  },
+  "fetched_at": "2026-09-14T13:56:55+00:00",
+  "source_snapshot_sha256": "e16d8ec12b93bf0d3defc616c387388f9c5bad88b8af8066ba994d8652dbaf41",
+  "images": {},
+  "local_only": true
+}

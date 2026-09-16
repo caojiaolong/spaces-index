@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "7187",
+    "title": "抛开约束，增强模型：一行代码提升albert表现",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/7187",
+    "date": "2020-01-29",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 5,
+    "display_formula_count": 4,
+    "image_count": 2,
+    "heading_count": 8,
+    "code_block_count": 0,
+    "source_text_sha256": "29b2b4769726f9f22758488ead5c3f4dd05874432581701481d4bed4f7042f10",
+    "output_text_sha256": "29b2b4769726f9f22758488ead5c3f4dd05874432581701481d4bed4f7042f10",
+    "latex_sha256": "2afedf7bdd71acc6272139bcb2f93169600d5b52b82ba7a75386be7be5c33cdc",
+    "body_sha256": "310a361a28b05e3fbb75aa6a80053da5e6411ac553c531be9b7f19a82a8bd280",
+    "converter_version": 1,
+    "markdown_sha256": "380578fa0b46cb9e1f85b7560a6ef98b747e6508e4e5a2c2f4ea2d626dda7bf7"
+  },
+  "fetched_at": "2026-09-14T13:15:34+00:00",
+  "source_snapshot_sha256": "335804fad2aa75a6702f0d46a95e48a9adad4c08f0498e0097ba2d1934628644",
+  "images": {},
+  "local_only": true
+}

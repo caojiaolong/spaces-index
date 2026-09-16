@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "2800",
+    "title": "素数之美2：Bertrand假设的证明",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/2800",
+    "date": "2014-08-09",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 76,
+    "display_formula_count": 12,
+    "image_count": 0,
+    "heading_count": 0,
+    "code_block_count": 0,
+    "source_text_sha256": "3ab36b3a2657a72c60b9eb0394928a67a8b18db82845135f9f5f3603e8ce3adf",
+    "output_text_sha256": "3ab36b3a2657a72c60b9eb0394928a67a8b18db82845135f9f5f3603e8ce3adf",
+    "latex_sha256": "a41728525bb8b9ef481961176115fabde5ab3c84936dae0c4f5dafb1689db009",
+    "body_sha256": "ae4c840e73b83a81b1a86ece45897ffb7852bee00ad08162e55d127c77868a46",
+    "converter_version": 1,
+    "markdown_sha256": "f47221f613fed2013db9a69724d0881a7d1c0002af681aaa83a34cf4ef213ea0"
+  },
+  "fetched_at": "2026-09-14T13:52:45+00:00",
+  "source_snapshot_sha256": "30eda788ea4ca5c5e483cc8bec45a1550bca0e4538cfd673500516d1bbef49f8",
+  "images": {},
+  "local_only": true
+}

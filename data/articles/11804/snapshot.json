@@ -1,0 +1,17 @@
+{
+  "metadata": {
+    "id": "11804",
+    "title": "让炼丹更科学一些（七）：步长调度与权重平均",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/11804",
+    "date": "2026-07-06",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "fetched_at": "2026-09-14T12:30:39+00:00",
+  "source_snapshot_sha256": "25ffbde0dd4a424da0e6a2ab1f0e1ae65f4fc9b4bc89068258cabf4ebe866a53",
+  "validators": {
+    "etag": null,
+    "last_modified": null
+  }
+}

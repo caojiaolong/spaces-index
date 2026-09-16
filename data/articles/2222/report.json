@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "2222",
+    "title": "小论文《欧拉数学在数列级数的妙用》",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/2222",
+    "date": "2013-12-26",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 0,
+    "display_formula_count": 0,
+    "image_count": 0,
+    "heading_count": 0,
+    "code_block_count": 0,
+    "source_text_sha256": "60c8f11f050922f2d8a670ec2f460ca67b25145d8a122adafd3e81a255c977f5",
+    "output_text_sha256": "60c8f11f050922f2d8a670ec2f460ca67b25145d8a122adafd3e81a255c977f5",
+    "latex_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "body_sha256": "65639b41c67f0c34033523f20b1c0af76be0f4bf19c4b7740e8e050d79b0f291",
+    "converter_version": 1,
+    "markdown_sha256": "2efed2a3fd3fd52291c15857a3bb953b0a6cd33ad821464155ca024eed61e133"
+  },
+  "fetched_at": "2026-09-14T13:58:18+00:00",
+  "source_snapshot_sha256": "146d98939330e88cf8d6d0bfcf05d7d5e9cd62f244caeecfa1d1a95baa95bffd",
+  "images": {},
+  "local_only": true
+}

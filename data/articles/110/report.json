@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "110",
+    "title": "高一新生活",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/110",
+    "date": "2009-09-04",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 0,
+    "display_formula_count": 0,
+    "image_count": 0,
+    "heading_count": 0,
+    "code_block_count": 0,
+    "source_text_sha256": "aeb94e0699688d89eff702cc802c7b68efdbc77372970deb0326db062cda9ebc",
+    "output_text_sha256": "aeb94e0699688d89eff702cc802c7b68efdbc77372970deb0326db062cda9ebc",
+    "latex_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "body_sha256": "0e38ba8101ca23d42d42bfcbcfefb4b24f1baf08819e9c6cd5f569422d43d305",
+    "converter_version": 1,
+    "markdown_sha256": "c2d8cbca5724b91680025a14fb4911b9ea667d851382d6202abeb8560a65a1c4"
+  },
+  "fetched_at": "2026-09-14T14:55:10+00:00",
+  "source_snapshot_sha256": "be35080fee33ea201d670f6330480567816a3e50a94e4e32c2a2308e5624dadb",
+  "images": {},
+  "local_only": true
+}

@@ -1,0 +1,17 @@
+{
+  "metadata": {
+    "id": "8373",
+    "title": "GlobalPointer：用统一的方式处理嵌套和非嵌套NER",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/8373",
+    "date": "2021-05-01",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "fetched_at": "2026-09-14T13:06:53+00:00",
+  "source_snapshot_sha256": "e2148767053ab4529ea692864fbbfaeeb919212b06c329f0485e0b39745937a6",
+  "validators": {
+    "etag": null,
+    "last_modified": null
+  }
+}

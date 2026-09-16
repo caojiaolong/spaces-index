@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "464",
+    "title": "两本天体力学的旧书...",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/464",
+    "date": "2010-02-18",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 0,
+    "display_formula_count": 0,
+    "image_count": 2,
+    "heading_count": 0,
+    "code_block_count": 0,
+    "source_text_sha256": "13cf8a96f5825dd503017b2109b7272b53869b9bcf902085af9871d5af6cd9a9",
+    "output_text_sha256": "13cf8a96f5825dd503017b2109b7272b53869b9bcf902085af9871d5af6cd9a9",
+    "latex_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "body_sha256": "7840a3aba6375fa5365fa2ff5efb47ce0ea75b50c7e574f531a3fa212c5ba450",
+    "converter_version": 1,
+    "markdown_sha256": "98c40ee2568335f6d4c2fd003fed1b5f218f08985662500b4304e355283f9200"
+  },
+  "fetched_at": "2026-09-14T14:40:49+00:00",
+  "source_snapshot_sha256": "e03633089e8d6d380d330a5a7f5dc35388a2dfe2cfe3331eb2263ed02b7846df",
+  "images": {},
+  "local_only": true
+}

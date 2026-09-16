@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "1884",
+    "title": "评论功能修复了",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/1884",
+    "date": "2013-01-20",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 0,
+    "display_formula_count": 0,
+    "image_count": 0,
+    "heading_count": 0,
+    "code_block_count": 0,
+    "source_text_sha256": "f9bbaee9a06c50451c972e9d123b49e3330837f83d0bde9164bd2ab3a0a3427e",
+    "output_text_sha256": "f9bbaee9a06c50451c972e9d123b49e3330837f83d0bde9164bd2ab3a0a3427e",
+    "latex_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "body_sha256": "4de906cfa58bd0c9d9ae54ebd2cf3a80501dc5ff26ae25ca41e3a6c2d78e599a",
+    "converter_version": 1,
+    "markdown_sha256": "f9619fc4b36330d5c0b5184e3eacc48ca3284d4b90082f195df95204b74a1141"
+  },
+  "fetched_at": "2026-09-14T14:06:04+00:00",
+  "source_snapshot_sha256": "2a7268a0de7d0809ceeeed81b159f8598286c777c9facd362c3d844381236114",
+  "images": {},
+  "local_only": true
+}

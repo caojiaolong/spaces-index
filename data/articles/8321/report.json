@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "8321",
+    "title": "无监督语义相似度哪家强？我们做了个比较全面的评测",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/8321",
+    "date": "2021-04-11",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 19,
+    "display_formula_count": 4,
+    "image_count": 4,
+    "heading_count": 10,
+    "code_block_count": 0,
+    "source_text_sha256": "3ba57070963f023564c3fc8992189a61efd20aee7188685aa44e74aa9dda8696",
+    "output_text_sha256": "3ba57070963f023564c3fc8992189a61efd20aee7188685aa44e74aa9dda8696",
+    "latex_sha256": "6b1cf8ab80febe6d22d2d05dc45af1ce3fc127f731e4d2378bbf8caf346314d6",
+    "body_sha256": "7661bfa6b0216a69f0fca7d121a4953086344fadc29f1954eb9909e2abad0100",
+    "converter_version": 1,
+    "markdown_sha256": "c05f0645006d78ecb4134d3e331864d1f51a24c3dc1aff988ab98b97196be479"
+  },
+  "fetched_at": "2026-09-14T13:07:19+00:00",
+  "source_snapshot_sha256": "03d11ddd6b7db7da3fa5f81956417591c10ac76c49a266ed835ffe02220b5e05",
+  "images": {},
+  "local_only": true
+}

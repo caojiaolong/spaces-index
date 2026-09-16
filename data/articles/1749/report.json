@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "1749",
+    "title": "证明光速不变的一个理想实验？？",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/1749",
+    "date": "2012-10-18",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 11,
+    "display_formula_count": 0,
+    "image_count": 1,
+    "heading_count": 0,
+    "code_block_count": 0,
+    "source_text_sha256": "1838c43e61cb90679fc1a3b311394aa5ef9acc216765dee08cf21e8cccf09588",
+    "output_text_sha256": "1838c43e61cb90679fc1a3b311394aa5ef9acc216765dee08cf21e8cccf09588",
+    "latex_sha256": "c04374b7118fc0cfcba4e8df5c8511d69758dff030e199238def8d9d32a3fcf2",
+    "body_sha256": "4038a181ac78e7a4eb31560e34bbea1ee914bce98f5b9aadd149439748465259",
+    "converter_version": 1,
+    "markdown_sha256": "b33083f037e803e744c7d9f8b8d274bed093e1f94ca597306ac5fc030f564fbd"
+  },
+  "fetched_at": "2026-09-14T14:09:39+00:00",
+  "source_snapshot_sha256": "8aeffbc2de10c954af39b702ee9d05721822fa340fcf9130f2009387f11ab364",
+  "images": {},
+  "local_only": true
+}

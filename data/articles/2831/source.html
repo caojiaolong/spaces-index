@@ -1,0 +1,43 @@
+<div class="PostContent" id="PostContent">
+<p>是时候了！</p><p>前面用好几篇文章为费马大定理的证明铺设了道路，当然，相当于完整的费马大定理证明来说，这几篇文章只不过是沧海一粟而已。不过，它们已经足够用来完成费马大定理在n=4时的证明了。我们很快会看到高斯整数为n=4所带来的简洁的证明，而这让我们坚信，这一道路可以走得更远。</p><blockquote>不定方程$x^4+y^4=z^2$在$\mathbb{Z}[i]$中没有全不为0的解。</blockquote><p></p><p>读者可以看到，我们考虑的是$x^4+y^4=z^2$而不是$x^4+y^4=z^4$，前者是后者的加强，但是，并不是为了证明一个更广泛的命题才加强的，而是我们的证明对于$x^4+y^4=z^4$根本就不适用！也就是说，根据本文的方法，我们可以证明$x^4+y^4=z^2$无解，但却不能“只证明”$x^4+y^4=z^4$无解。这确实是一个很奇妙的现象，有些命题，要加强了之后才容易证明，就像用数学归纳法证明一些不等式，如果不加强，归纳法就失效了。</p><p>我们所用到的工具很简单，就是在第三篇文章中提高的$\mathbb{Z}[i]$内的模“模1+i分析”。为了方便，下面记$\xi=1+i$。</p><h2 id="Step One">Step One</h2><p>第一步，我们来证明如果$(x,y,z)$是$x^4+y^4=z^2$的一组高斯整数解，那么$\xi|xyz$。</p><p>假设$\xi\nmid xyz$，那么$\xi\nmid x,\xi\nmid y,\xi\nmid z$，那么<br/>
+$$\begin{aligned}x^4 &amp;\equiv 1(\bmod\, 8)\\<br/>
+y^4 &amp;\equiv 1(\bmod\, 8)\\<br/>
+z^2 &amp;\equiv \pm 1(\bmod\, 4)<br/>
+\end{aligned}$$<br/>
+因此$x^4+y^4-z^2\equiv 0(\bmod\,4)$得到$1+1-\pm 1\equiv 0(\bmod\,4)$，矛盾，因此$\xi|xyz$。</p><h2 id="Step Two">Step Two</h2><p>第二步，假设$(x,y,z)$是$x^4+y^4=z^2$的一组全不为零的、两两互质的高斯整数解，那么$\xi$只能整除$x,y,z$中的其中一个。但是，整除$z$是不可能的，因为如果整除$z$，那么就不整除$x,y$，那么就有（$\xi|z\Rightarrow \xi^4|z^4$）<br/>
+$$\begin{aligned}x^4 &amp;\equiv 1(\bmod\, 8)\\<br/>
+y^4 &amp;\equiv 1(\bmod\, 8)\\<br/>
+z^2 &amp;\equiv 0(\bmod\, \xi^2)<br/>
+\end{aligned}$$<br/>
+注意$\xi^2=2i,\xi^4=-4,\xi^6=-8i$。如果$\xi^2|z$，那么$\xi^4|z^2$，因此，上面三式相当于说$x^4+y^4-z^2\equiv 1+1-0\equiv 2(\bmod\,\xi^4)$，也就是$4|2$，矛盾；如果$\xi\nmid\left(\frac{z}{\xi}\right)$，那么$\left(\frac{z}{\xi}\right)^2\equiv \pm 1(\bmod\,4)$，也就是$z^2\equiv \pm \xi^2(\bmod\,4\xi^2)$，等价于$z^2\equiv \pm \xi^2(\bmod\,8)$，因此$x^4+y^4-z^2\equiv 1+1-\pm\xi^2\equiv 2(1\mp i)(\bmod\,\xi^6)$，也就是$\xi^6|\xi^3$，矛盾。</p><p>所以$\xi$整除$x$或$y$，不失一般性，设$\xi|x$。这样一来，必然有$z^2\equiv 1(\bmod\, 4)$，否则导致矛盾.</p><h2 id="Step Three">Step Three</h2><p>第三步，列出我们得到的结果<br/>
+$$\begin{aligned}x^4 &amp;\equiv 0(\bmod\, \xi^4)\\<br/>
+y^4 &amp;\equiv 1(\bmod\, 8)\\<br/>
+z^2 &amp;\equiv 1(\bmod\, 4)<br/>
+\end{aligned}$$</p><h2 id="Step Four">Step Four</h2><p>第四步，是我们的核心步骤，假设有解，那么存在两两互质的解$(x,y,z),\ \xi|x$，而且在所有解之中，挑出$N(x)$最小的那组解。在$\mathbb{Z}[i]$内，我们可以分解<br/>
+$$x^4=(z-y^2)(z+y^2)$$<br/>
+设$u=z+y^2,v=z-y^2$，那么<br/>
+$$u+v=2z=-i\xi^2 z,\ u-v=2y^2=-i\xi^2 y^2$$<br/>
+$u,v$的公约数必然也是$u+v,u-v$的公约数，$(u+v,u-v)=(-i\xi^2 z,-i\xi^2 y^2)=\xi^2$，因此$u,v$最多有公约数$\xi^2$，而左边$x^4$至少有约数$\xi^4$，因此$u,v$之一至少有约数$\xi^2$，如此一来，$u,v$的最大公约数就是$\xi^2$。记$x=\xi \eta,u=\xi^2 \mu,v=\xi^2 \nu$，$\mu,\nu$互质，这样一来<br/>
+$$\eta^4=\mu\nu$$<br/>
+由于$\mu,\nu$互质，所以$\mu,\nu$在相差一个单位数的情况下，必然为一个四次方数，也就是说它们都是四次方数的伴随。用$\varepsilon_1,\varepsilon_2$表示单位数，设$\mu=\varepsilon_1 \kappa^4,\nu=\varepsilon_2 \iota^4$，即<br/>
+$$\eta^4=(\varepsilon_1 \kappa^4)(\varepsilon_2 \iota^4)=(\varepsilon_1\varepsilon_2) (\kappa\iota)^4$$<br/>
+于是$\varepsilon_1\varepsilon_2$也是一个四次方数，但是单位数中的四次方数只有1，因此$\varepsilon_1\varepsilon_2=1$。然后由$u-v=2y^2=-i\xi^2 y^2$得到<br/>
+$$-i y^2=\varepsilon_1 \kappa^4-\varepsilon_2 \iota^4$$</p><h2 id="Step Five">Step Five</h2><p>第五步，对$\varepsilon_1,\varepsilon_2$进行枚举。</p><p><strong>5.1、</strong>假如$\varepsilon_1=i,\varepsilon_2=-i$，那么<br/>
+$$-i y^2=i \kappa^4+i\iota^4$$<br/>
+也就是<br/>
+$$(iy)^2=\kappa^4+\iota^4$$<br/>
+这表明$(\kappa,\iota,iy)$也是一组解，然而$N(\kappa),N(\iota)$均小于$N(x)$（因为$\varepsilon_1 \varepsilon_2\kappa^4\iota^4\xi^4=x^4$），$\kappa,\iota$之中必有一个有约数$\xi$，这跟$N(x)$最小矛盾。</p><p><strong>5.2、</strong>假如$\varepsilon_1=-i,\varepsilon_2=i$，那么<br/>
+$$-i y^2=-i \kappa^4-i\iota^4$$<br/>
+也就是<br/>
+$$y^2=\kappa^4+\iota^4$$<br/>
+这表明$(\kappa,\iota,y)$也是一组解，然而$N(\kappa),N(\iota)$均小于$N(x)$（因为$\varepsilon_1 \varepsilon_2\kappa^4\iota^4\xi^4=x^4$），$\kappa,\iota$之中必有一个有约数$\xi$，这跟$N(x)$最小矛盾。</p><p><strong>5.3、</strong>假如$\varepsilon_1=-1,\varepsilon_2=-1$，那么<br/>
+$$-i y^2=-\kappa^4+\iota^4$$<br/>
+如果$\kappa,\iota$都不是$\xi$的倍数，那么$\kappa^4 \equiv\iota^4 \equiv 1(\bmod\,\xi^4)$，从而$\xi^4|(-\kappa^4+\iota^4)$，得到$\xi|y$，这与$x,y$互质矛盾。那么$\kappa,\iota$之一是$\xi$的倍数（而且只能有一个），从而$-\kappa^4+\iota^4\equiv \pm 1(\bmod\,\xi^4)$。但是左边$\xi\nmid y$，因此$y^2\equiv \pm 1(\bmod\,\xi^4)$，所以$-iy^2\equiv \pm i(\bmod\,\xi^4)$。左右两边的同余不等，矛盾。</p><p><strong>5.4、</strong>假如$\varepsilon_1=1,\varepsilon_2=1$，那么<br/>
+$$-i y^2=\kappa^4-\iota^4$$<br/>
+分析跟5.3基本一样，也导出矛盾。</p><p>所有情况都被否定了，因此原假设不成立，不存在满足$x^4+y^4=z^2$的全非0高斯整数解。</p><h2 id="评述">评述</h2><p>证明看上去写得很长，但其实很简单。总的来说，我们只是用到了模$1+i$的分析，这就相当于实数中的奇偶分析了。如果读者对高斯整数不熟悉，那么这种同余就像云里雾里，摸不着头脑了，但是熟悉了高斯整数的读者，那么一切都是很显然的。试想，在实整数中，奇偶分析还不容易吗。如果读者已经阅读过实整数内的n=4的证明，那么不妨对比一下两者，可以发现有类似的地方，但似乎本文的证明还简短一点呢。（写得长不一定说明复杂，关键是每一步显不显然。）</p><p>是什么导致我们在最后一步分了四种情况？单位数！高斯整数中有四个不同的单位数，因此分了四种情况，而在更一般的数环中，可能会有更多的单位数，这也是n较大的时候，证明比较困难的原因。不过这个困难不是最核心的，核心的困难是唯一分解定理的失效，而这就是后话了。</p><p>最后还是多说一下，为什么是$x^4+y^4=z^2$而不是$x^4+y^4=z^4$呢？后者用本文的技巧确实导不出矛盾。那么，一个很自然的疑问是，有没有单纯证明后者的证明？我不知道，我试了好几天，企图找出仅仅证明后者的过程，但无果。也许对于合数的$n$，证明起来就有这样的特性吧。</p><h2 id="补充(08.20)">补充(08.20)</h2><p><strong><font color="red">可以直接证明$\varepsilon x^4+y^4=z^2,\ \xi|x$无解，从而简化证明过程，参考<a href="/archives/2858/" target="_blank">下一篇文章</a>。将下一篇文章的步骤稍微修改一下即可。</font></strong></p>
+
+
+
+
+
+</div>

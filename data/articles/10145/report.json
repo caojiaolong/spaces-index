@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "10145",
+    "title": "通向概率分布之路：盘点Softmax及其替代品",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/10145",
+    "date": "2024-06-14",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 237,
+    "display_formula_count": 35,
+    "image_count": 0,
+    "heading_count": 24,
+    "code_block_count": 4,
+    "source_text_sha256": "f414262e93d19db0c91f7bc910f6d42c4d6a08986b9e76c8fdc46c533dfb35ff",
+    "output_text_sha256": "f414262e93d19db0c91f7bc910f6d42c4d6a08986b9e76c8fdc46c533dfb35ff",
+    "latex_sha256": "5b621513d41a35022ae6ca06dc2b471582a5f42920cffad01d6aeee18239e81f",
+    "body_sha256": "76da64ed41aa9eec30c0114ba51d25ca2e29aeb868fe5ac66704ea2642126de8",
+    "converter_version": 1,
+    "markdown_sha256": "857092de29a965aa1df78464d074f0fe1044663040afa96a3f7e22fd1c57325a"
+  },
+  "fetched_at": "2026-09-14T12:48:11+00:00",
+  "source_snapshot_sha256": "6eaa06c5f4ad9e42c61eaf20fbab5a65e2ea3a30e54bc9fb323cd986ddf57425",
+  "images": {},
+  "local_only": true
+}

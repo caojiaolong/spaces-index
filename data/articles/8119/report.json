@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "8119",
+    "title": "【搜出来的文本】⋅（三）基于BERT的文本采样",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/8119",
+    "date": "2021-01-22",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 36,
+    "display_formula_count": 0,
+    "image_count": 0,
+    "heading_count": 4,
+    "code_block_count": 0,
+    "source_text_sha256": "e41878220e292e14ed25c7d338986212c94d292a38fdafd91a7271d8f42816d2",
+    "output_text_sha256": "e41878220e292e14ed25c7d338986212c94d292a38fdafd91a7271d8f42816d2",
+    "latex_sha256": "1deb4e0bc7d88481d866e274c6819070e8d04dcc59dfb50d372824b5eba2e88f",
+    "body_sha256": "7ef9bc99cd6127505a565f94b54d25c98847fd23c4ab175dff0c8cdcd409e2cd",
+    "converter_version": 1,
+    "markdown_sha256": "4aada659ead190b250f7c8c8bc87bf30cdc84fd7610e975cbb6daf6792cd3d99"
+  },
+  "fetched_at": "2026-09-14T13:08:35+00:00",
+  "source_snapshot_sha256": "836e2c27c158bf23e60bbc80a8b8a694d03acf2a066086f5d17b1617d79ff0f3",
+  "images": {},
+  "local_only": true
+}

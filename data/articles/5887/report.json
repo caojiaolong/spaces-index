@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "5887",
+    "title": "变分自编码器（四）：一步到位的聚类方案",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/5887",
+    "date": "2018-09-17",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 57,
+    "display_formula_count": 8,
+    "image_count": 40,
+    "heading_count": 13,
+    "code_block_count": 0,
+    "source_text_sha256": "84c69b3420039a90e07af1464587dacd473f561a020aabce638739edd36b97ee",
+    "output_text_sha256": "84c69b3420039a90e07af1464587dacd473f561a020aabce638739edd36b97ee",
+    "latex_sha256": "b437311eb086d842131a4dc7a971911b0b8684cf57c065581f059c3c5cb82f72",
+    "body_sha256": "3b67bffe150b80c458cf6dfbef81351e3b83432bf2ee39f929ec885122e7d5a9",
+    "converter_version": 1,
+    "markdown_sha256": "7788574ee8227b77488dba404634a3c003a3294dee4a1d2c290929ca3b541231"
+  },
+  "fetched_at": "2026-09-14T13:24:31+00:00",
+  "source_snapshot_sha256": "79567a8343036c611662de0c0dace3886d9f495884b67785bde812c92bee928b",
+  "images": {},
+  "local_only": true
+}

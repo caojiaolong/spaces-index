@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "3762",
+    "title": "路径积分系列：4.随机微分方程",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/3762",
+    "date": "2016-06-09",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 71,
+    "display_formula_count": 22,
+    "image_count": 0,
+    "heading_count": 4,
+    "code_block_count": 0,
+    "source_text_sha256": "788d1b20f659013b73441180e61e7cb99b0a1e96a1b7092ecafc2eb9fe6c72b6",
+    "output_text_sha256": "788d1b20f659013b73441180e61e7cb99b0a1e96a1b7092ecafc2eb9fe6c72b6",
+    "latex_sha256": "4648601b1e95c1e4d1a7e44a90284986cc0c854ae7d0aa266178d2e7b9a787f9",
+    "body_sha256": "07822994a863d0f567d81ec8ca718c108a75e00d5a61311d5ec2cd4abf97ce75",
+    "converter_version": 1,
+    "markdown_sha256": "3b4dbedb79ee8c014831758fd1c6e42a69b13c3b69b47c6777eafbfe186e52ea"
+  },
+  "fetched_at": "2026-09-14T13:40:36+00:00",
+  "source_snapshot_sha256": "cc229b6e1dc383c6b344f467b9a46a88519310450a577948ed5732bf3c29fd11",
+  "images": {},
+  "local_only": true
+}

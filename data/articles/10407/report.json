@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "10407",
+    "title": "低秩近似之路（二）：SVD",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/10407",
+    "date": "2024-10-01",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 241,
+    "display_formula_count": 29,
+    "image_count": 1,
+    "heading_count": 11,
+    "code_block_count": 0,
+    "source_text_sha256": "bbbd2335762996515d1e0ce40db1ea67f6d2e36eac52530e54e2fc0bdcc005de",
+    "output_text_sha256": "bbbd2335762996515d1e0ce40db1ea67f6d2e36eac52530e54e2fc0bdcc005de",
+    "latex_sha256": "8fdf1c3f4cf75440e6173f00a851f115cf08899ecab24450581d3fa2b0d2b234",
+    "body_sha256": "fcb03569459242ae021c2482f13f131275c8548a8757384b1c5cc4512bec1fc6",
+    "converter_version": 1,
+    "markdown_sha256": "47b6cbc425aadbf510634573766f2b715dee66ffcbe427279cb8b51c3edcf3b4"
+  },
+  "fetched_at": "2026-09-14T12:46:21+00:00",
+  "source_snapshot_sha256": "ee23555186b8ebdb70be181db505073694679e576834f87183f1c59f97b74188",
+  "images": {},
+  "local_only": true
+}

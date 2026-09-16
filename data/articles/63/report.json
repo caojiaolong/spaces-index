@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "63",
+    "title": "梅森素数的探索之旅",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/63",
+    "date": "2009-08-07",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 16,
+    "display_formula_count": 0,
+    "image_count": 2,
+    "heading_count": 0,
+    "code_block_count": 0,
+    "source_text_sha256": "14d28d895df8ee13f86e98c95efdb3f8262621766179e83822b8813cb003b60d",
+    "output_text_sha256": "14d28d895df8ee13f86e98c95efdb3f8262621766179e83822b8813cb003b60d",
+    "latex_sha256": "0129f74ca03442d52406edd926abe83d4863f138b8db3ca6a7f90a276cc29f06",
+    "body_sha256": "6ef63c96e2e0a6fa0ee2dc45d20580382adaf0eda62b396b799356c89289ac99",
+    "converter_version": 1,
+    "markdown_sha256": "4c7abb003c9938e4d120a42d077620ed7b75aae63c9a746a60d2704996e156e4"
+  },
+  "fetched_at": "2026-09-14T15:00:37+00:00",
+  "source_snapshot_sha256": "8bd0fa4bc66d6a16eb4dfd1c168d4e2bb709a109883977bba2580362da37e4eb",
+  "images": {},
+  "local_only": true
+}

@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "4669",
+    "title": "更别致的词向量模型(二)：对语言进行建模",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/4669",
+    "date": "2017-11-19",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 25,
+    "display_formula_count": 7,
+    "image_count": 0,
+    "heading_count": 3,
+    "code_block_count": 0,
+    "source_text_sha256": "a4c1af9000bee29eac61d157521659185ba38bb654530a8fc8c7f2ec9a191e26",
+    "output_text_sha256": "a4c1af9000bee29eac61d157521659185ba38bb654530a8fc8c7f2ec9a191e26",
+    "latex_sha256": "11da3d15c5afaebc83e3046659c2126cb26b0de1da745e81afb135ea85199e6c",
+    "body_sha256": "309e0153f177d09dae6203362e201f643e3391d79f7e2f7039e2fb87f6e33ea0",
+    "converter_version": 1,
+    "markdown_sha256": "dc6472ee5d24c788f9f27e295ce71b5f1e9e8a7714dd7d13d14138f0f6a4a98d"
+  },
+  "fetched_at": "2026-09-14T13:29:59+00:00",
+  "source_snapshot_sha256": "cae556b7bd45a2810b904503578a899e7d58629557be22d58443f6065186a94a",
+  "images": {},
+  "local_only": true
+}

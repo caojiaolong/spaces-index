@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "10001",
+    "title": "配置不同的学习率，LoRA还能再涨一点？",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/10001",
+    "date": "2024-02-27",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 152,
+    "display_formula_count": 7,
+    "image_count": 0,
+    "heading_count": 5,
+    "code_block_count": 0,
+    "source_text_sha256": "79a6f909a87177ff5e5b94dc149d00b2805985a5ac5e35f4b31ea5b2e262745c",
+    "output_text_sha256": "79a6f909a87177ff5e5b94dc149d00b2805985a5ac5e35f4b31ea5b2e262745c",
+    "latex_sha256": "a872bc81c4ef54dcdb90234995faadf574537ae96715f5d1f92ec38ec1f3f3ec",
+    "body_sha256": "2c945e0a8600dce952fdf89c3c3f0cf5b7022207e8c9e9d64ebfdafe5cb2d4c7",
+    "converter_version": 1,
+    "markdown_sha256": "78d57ab16dbf6a3faed2ff546d66500b2a77cb0db5f3c2970122e6bed932894e"
+  },
+  "fetched_at": "2026-09-14T12:49:34+00:00",
+  "source_snapshot_sha256": "9367454a16cd648bfa65774c087558582575ca7c374531062620b5fad0c62303",
+  "images": {},
+  "local_only": true
+}

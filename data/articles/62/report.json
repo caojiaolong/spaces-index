@@ -1,0 +1,39 @@
+{
+  "metadata": {
+    "id": "62",
+    "title": "2009年英仙座流星雨观测",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/62",
+    "date": "2009-08-07",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "source_dom_exact": true,
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "attributes_exact": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 0,
+    "display_formula_count": 0,
+    "image_count": 2,
+    "heading_count": 0,
+    "code_block_count": 0,
+    "source_text_sha256": "c103127b809de6cb829855018f07f4e60bb03e821778727b086f7db07a959f80",
+    "output_text_sha256": "c103127b809de6cb829855018f07f4e60bb03e821778727b086f7db07a959f80",
+    "latex_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "body_sha256": "87d7f931cb50c3629ac7b25c49b0bc7c287a345545449a8c47cf20586d276915",
+    "converter_version": 1,
+    "format": "html-v1",
+    "source_warnings": [],
+    "fallback_reason": "Standard Markdown round trip changed source structure",
+    "markdown_sha256": "2c73f70aa64cad4ca1c3292233dc366b96804584348377486ce05e7a3609147a"
+  },
+  "fetched_at": "2026-09-14T15:00:43+00:00",
+  "source_snapshot_sha256": "151d765756b9e298ae0464d2dfdf1408f537656f4b08ebd731393755a2185273",
+  "images": {},
+  "local_only": true
+}

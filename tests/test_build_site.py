@@ -267,3 +267,53 @@ def test_build_refuses_to_replace_an_unmarked_repository_directory() -> None:
         with pytest.raises(ValueError, match="has no generated-site marker"):
             build_site(input_path, output_dir, web_dir=web_dir)
         assert sentinel.read_text(encoding="utf-8") == "do not delete"
+
+
+@pytest.mark.parametrize("output", [ROOT / "_site", ROOT / "web", ROOT / "local", ROOT / "local/articles"])
+def test_local_preview_cannot_write_into_public_or_article_directories(output):
+    with pytest.raises(ValueError, match="Local previews"):
+        build_site(ROOT / "data/posts_classified.json", output, local_articles=ROOT / "local/articles")
+
+
+def test_failed_generation_keeps_previous_completed_site(monkeypatch):
+    with writable_test_directory() as tmp_path:
+        input_path = tmp_path / "posts.json"
+        output = tmp_path / "site"
+        input_path.write_text(json.dumps(SAMPLE_POSTS), encoding="utf8")
+        build_site(input_path, output)
+        before = (output / "catalog.json").read_bytes()
+        from scripts import mirror_store
+        def fail(*args, **kwargs):
+            raise ValueError("failed content validation")
+        monkeypatch.setattr(mirror_store, "publish_mirrors", fail)
+        with pytest.raises(ValueError, match="failed content validation"):
+            build_site(input_path, output)
+        assert (output / "catalog.json").read_bytes() == before
+        assert (output / "index.html").exists()
+
+
+def test_directory_swap_recovers_from_transient_windows_lock(tmp_path, monkeypatch):
+    from scripts.build_site import rename_generation
+    source, destination = tmp_path / "staged", tmp_path / "site"
+    source.mkdir()
+    (source / "index.html").write_text("complete", encoding="utf8")
+    rename = Path.rename
+    attempts = []
+    def locked_once(path, target):
+        attempts.append(path)
+        if len(attempts) == 1:
+            raise PermissionError("file watcher still holds the directory")
+        return rename(path, target)
+    monkeypatch.setattr(Path, "rename", locked_once)
+    rename_generation(source, destination)
+    assert len(attempts) == 2
+    assert (destination / "index.html").read_text() == "complete"
+
+
+def test_withdrawal_removes_preview_entry(tmp_path, monkeypatch):
+    from scripts import local_preview
+    monkeypatch.setattr(local_preview, "load_config", lambda: {"withdrawn_ids": ["9119"]})
+    mirrors, unavailable = local_preview.export_preview(tmp_path / "site", tmp_path / "articles", {"9119"})
+    assert mirrors == {}
+    assert "9119" in unavailable
+    assert not (tmp_path / "site/mirror").exists()

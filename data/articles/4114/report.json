@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "4114",
+    "title": "轻便的深度学习分词系统：NNCWS v0.1",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/4114",
+    "date": "2016-11-29",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 0,
+    "display_formula_count": 0,
+    "image_count": 0,
+    "heading_count": 4,
+    "code_block_count": 2,
+    "source_text_sha256": "67cd0d718818a429999ac245e0d42d6ee12b3b071f76b313488a09c529a528ad",
+    "output_text_sha256": "67cd0d718818a429999ac245e0d42d6ee12b3b071f76b313488a09c529a528ad",
+    "latex_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "body_sha256": "f0969ae850e4aea97f48f49974b25237ca9a61444dd2d51278c1032cbdae9c76",
+    "converter_version": 1,
+    "markdown_sha256": "9be89c61b869a74095acdfd838b2ae6744374b8a00972c0b6082359b8117c143"
+  },
+  "fetched_at": "2026-09-14T13:35:45+00:00",
+  "source_snapshot_sha256": "158a75bdeea0ee98dbae3eb829a596db2be2c2232ad53b2a6c913c0fd2b22c22",
+  "images": {},
+  "local_only": true
+}

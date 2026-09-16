@@ -1,0 +1,17 @@
+{
+  "metadata": {
+    "id": "10040",
+    "title": "Transformer升级之路：17、多模态位置编码的简单思考",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/10040",
+    "date": "2024-03-29",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "fetched_at": "2026-09-14T12:49:15+00:00",
+  "source_snapshot_sha256": "6dceab13dafabd5e77c4088f3aa8f83e2ef54b3181be2f4ff38c8aa69edfd21d",
+  "validators": {
+    "etag": null,
+    "last_modified": null
+  }
+}

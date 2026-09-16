@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "4515",
+    "title": "【不可思议的Word2Vec】6. Keras版的Word2Vec",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/4515",
+    "date": "2017-08-06",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 0,
+    "display_formula_count": 0,
+    "image_count": 0,
+    "heading_count": 3,
+    "code_block_count": 1,
+    "source_text_sha256": "7f398cdfe1ca688e36319540a2da19f088aa11f99c267b443cbe34fe68823fef",
+    "output_text_sha256": "7f398cdfe1ca688e36319540a2da19f088aa11f99c267b443cbe34fe68823fef",
+    "latex_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "body_sha256": "80346bc1151197d566f91fce164462dc5f97d70451aace0db4feab428d1e89f5",
+    "converter_version": 1,
+    "markdown_sha256": "9bc9224d7ddb75e97d12cf1dbd042386e68b34248286e76441f42ef8fb6e2276"
+  },
+  "fetched_at": "2026-09-14T13:31:19+00:00",
+  "source_snapshot_sha256": "f729adb24e03cce476f0a176b9094dec997a9a724d018fdde56e5f36d38ac46e",
+  "images": {},
+  "local_only": true
+}

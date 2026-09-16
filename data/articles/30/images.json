@@ -1,0 +1,45 @@
+{
+  "version": 1,
+  "images": {
+    "https://spaces.ac.cn/usr/uploads/2009/07/20090723125439.JPG": {
+      "status": "cached",
+      "file": "059340d1876a5ae0cacd3fbcf22a78d12b786907840f07272c8d43b553149992.jpg",
+      "sha256": "059340d1876a5ae0cacd3fbcf22a78d12b786907840f07272c8d43b553149992",
+      "bytes": 12635,
+      "checked_at": "2026-09-16T12:39:26+00:00",
+      "fetched_url": "https://spaces.ac.cn/usr/uploads/2009/07/20090723125439.JPG",
+      "etag": "\"5a6ec751-315b\"",
+      "last_modified": "Mon, 29 Jan 2018 07:03:45 GMT"
+    },
+    "https://spaces.ac.cn/usr/uploads/2009/07/20090723125455.jpg": {
+      "status": "cached",
+      "file": "b5c6d221ed8b517d5de0f0bf33ef46595b268bdc5d69165110c0378a5ce5b8c4.jpg",
+      "sha256": "b5c6d221ed8b517d5de0f0bf33ef46595b268bdc5d69165110c0378a5ce5b8c4",
+      "bytes": 15500,
+      "checked_at": "2026-09-16T12:39:29+00:00",
+      "fetched_url": "https://spaces.ac.cn/usr/uploads/2009/07/20090723125455.jpg",
+      "etag": "\"5a6ec750-3c8c\"",
+      "last_modified": "Mon, 29 Jan 2018 07:03:44 GMT"
+    },
+    "https://spaces.ac.cn/usr/uploads/2009/07/20090723125512.jpg": {
+      "status": "cached",
+      "file": "90eaf64ed0da4b0e75fe258176d8b9ea626df5dee4a7dae7fd6fa21a45c180ee.jpg",
+      "sha256": "90eaf64ed0da4b0e75fe258176d8b9ea626df5dee4a7dae7fd6fa21a45c180ee",
+      "bytes": 6426,
+      "checked_at": "2026-09-16T12:39:32+00:00",
+      "fetched_url": "https://spaces.ac.cn/usr/uploads/2009/07/20090723125512.jpg",
+      "etag": "\"5a6ec751-191a\"",
+      "last_modified": "Mon, 29 Jan 2018 07:03:45 GMT"
+    },
+    "https://spaces.ac.cn/usr/uploads/2009/07/20090723125533.jpg": {
+      "status": "cached",
+      "file": "a1ff6b10f63e177a5fe6e016d1091a85cbd12c736d0e29b76e998561a2f9eed2.jpg",
+      "sha256": "a1ff6b10f63e177a5fe6e016d1091a85cbd12c736d0e29b76e998561a2f9eed2",
+      "bytes": 6194,
+      "checked_at": "2026-09-16T12:39:35+00:00",
+      "fetched_url": "https://spaces.ac.cn/usr/uploads/2009/07/20090723125533.jpg",
+      "etag": "\"5a6ec751-1832\"",
+      "last_modified": "Mon, 29 Jan 2018 07:03:45 GMT"
+    }
+  }
+}

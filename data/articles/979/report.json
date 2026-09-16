@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "979",
+    "title": "2010年诺贝尔化学奖出炉,美日科学家分享",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/979",
+    "date": "2010-10-06",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 0,
+    "display_formula_count": 0,
+    "image_count": 1,
+    "heading_count": 0,
+    "code_block_count": 0,
+    "source_text_sha256": "817439c4a1ad209c858b62f333397f2ca995f635848b824ec9964c2573be7627",
+    "output_text_sha256": "817439c4a1ad209c858b62f333397f2ca995f635848b824ec9964c2573be7627",
+    "latex_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "body_sha256": "331291e21f7d64f51bac9efa7d29c95c515305a1fe184d16b94cee420d7cca46",
+    "converter_version": 1,
+    "markdown_sha256": "fd95720ea132743e956717e0e14c1ba40c050e3c5c47efe2b7a319cff624d830"
+  },
+  "fetched_at": "2026-09-14T14:29:02+00:00",
+  "source_snapshot_sha256": "2a8f53edcd0fc482d2169dadfefb8353d60b7427f1b6dd3e89041b08521d261a",
+  "images": {},
+  "local_only": true
+}

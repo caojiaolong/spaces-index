@@ -1,0 +1,17 @@
+{
+  "metadata": {
+    "id": "9209",
+    "title": "生成扩散模型漫谈（五）：一般框架之SDE篇",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/9209",
+    "date": "2022-08-03",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "fetched_at": "2026-09-14T12:58:25+00:00",
+  "source_snapshot_sha256": "05407350a3210854b81fcefa0accdf89ab3451b94a9a7a20f58c7dce1aab63bd",
+  "validators": {
+    "etag": null,
+    "last_modified": null
+  }
+}

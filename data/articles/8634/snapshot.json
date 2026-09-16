@@ -1,0 +1,17 @@
+{
+  "metadata": {
+    "id": "8634",
+    "title": "隐藏在动量中的梯度累积：少更新几步，效果反而更好？",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/8634",
+    "date": "2021-08-24",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "fetched_at": "2026-09-14T13:04:44+00:00",
+  "source_snapshot_sha256": "ae7278179c1338d7a90ed17ee90a5b246be676927929271a278000fb12614622",
+  "validators": {
+    "etag": null,
+    "last_modified": null
+  }
+}

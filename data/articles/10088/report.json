@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "10088",
+    "title": "Cool Papers更新：简单搭建了一个站内检索系统",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/10088",
+    "date": "2024-05-07",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 0,
+    "display_formula_count": 0,
+    "image_count": 1,
+    "heading_count": 3,
+    "code_block_count": 0,
+    "source_text_sha256": "f00fb721ddc4b6c9d73b7b9e047940a3a73ad8eb29470111e4e635f3235a89dc",
+    "output_text_sha256": "f00fb721ddc4b6c9d73b7b9e047940a3a73ad8eb29470111e4e635f3235a89dc",
+    "latex_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "body_sha256": "ccf76687306f7198557915e145c60f50d7d62ff88e3960c6dbc2b6aa5b184de1",
+    "converter_version": 1,
+    "markdown_sha256": "6d802c968415b88002cad9ef332ccee3a5bae9f22ee58162d1356f7ea66c7d8b"
+  },
+  "fetched_at": "2026-09-14T12:48:42+00:00",
+  "source_snapshot_sha256": "6882d9bdbaa3509c3070fc3c262f475dade6ba83dcf0ea5f3b22d64f8f12c20c",
+  "images": {},
+  "local_only": true
+}

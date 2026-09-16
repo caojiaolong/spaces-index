@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "7292",
+    "title": "现在可以用Keras玩中文GPT2了（GPT2_ML）",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/7292",
+    "date": "2020-03-16",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 0,
+    "display_formula_count": 0,
+    "image_count": 3,
+    "heading_count": 4,
+    "code_block_count": 1,
+    "source_text_sha256": "81ec63bfc27ff68289758d37d609096df01b235ca5de3422643d333e9d98d069",
+    "output_text_sha256": "81ec63bfc27ff68289758d37d609096df01b235ca5de3422643d333e9d98d069",
+    "latex_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "body_sha256": "1ff0ca9c243c933c6a143b091cb94f9189edafbf6eeaca0097e1536cf7e0e6ee",
+    "converter_version": 1,
+    "markdown_sha256": "cd5fd74092e43cc12a61042c271a14c3749a90560da2a874081b92b237396738"
+  },
+  "fetched_at": "2026-09-14T13:14:54+00:00",
+  "source_snapshot_sha256": "f4512f4ce003b83d8a9bfffa0ccdf08fdee71ecf76ef5263e365c3168337bdf2",
+  "images": {},
+  "local_only": true
+}

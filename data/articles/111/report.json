@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "111",
+    "title": "《冲出亚马逊》—在世界立起五星红旗！",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/111",
+    "date": "2009-09-04",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 0,
+    "display_formula_count": 0,
+    "image_count": 1,
+    "heading_count": 0,
+    "code_block_count": 0,
+    "source_text_sha256": "4ff70ae577b7725063eaf664d45a067bf4bb73ad137a548b319d3c154e746fbc",
+    "output_text_sha256": "4ff70ae577b7725063eaf664d45a067bf4bb73ad137a548b319d3c154e746fbc",
+    "latex_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "body_sha256": "8106a9119a4f2fb9e29acb74c7195b09ba816284309338ebe70c54019970a5dd",
+    "converter_version": 1,
+    "markdown_sha256": "3e0b577d0c9ba059e1145e65180a5cc172bfb48a783fda726e0b10cfa17b59d5"
+  },
+  "fetched_at": "2026-09-14T14:55:03+00:00",
+  "source_snapshot_sha256": "d213f56f9801d16b42aaf842d924d541afe4fffb7452384845a0cd6e657f1244",
+  "images": {},
+  "local_only": true
+}

@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "10197",
+    "title": "“闭门造车”之多模态思路浅谈（二）：自回归",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/10197",
+    "date": "2024-07-08",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 35,
+    "display_formula_count": 1,
+    "image_count": 6,
+    "heading_count": 10,
+    "code_block_count": 0,
+    "source_text_sha256": "e96fae8fc361fe34774225841e50155ce1b1c90ff5616c8a98ef7155967038a1",
+    "output_text_sha256": "e96fae8fc361fe34774225841e50155ce1b1c90ff5616c8a98ef7155967038a1",
+    "latex_sha256": "7a8f324b8e1e13ab464ac00290ac494781d17225f6019df62e56659c8ffa9010",
+    "body_sha256": "d7e987895273e9219713ad7e9efb991abdedb52d3e1a12018d3b4137c227a931",
+    "converter_version": 1,
+    "markdown_sha256": "833fa32208d6ffb236741add8db767f662d4383786dd74dbdfe93cd60b28845e"
+  },
+  "fetched_at": "2026-09-14T12:47:52+00:00",
+  "source_snapshot_sha256": "b4442da4c43abbc671013656ac6be36fac8592bd47391c9175b4f8a2237f29e5",
+  "images": {},
+  "local_only": true
+}

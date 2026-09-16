@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "9687",
+    "title": "当生成模型肆虐：互联网将有“疯牛病”之忧？",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/9687",
+    "date": "2023-07-14",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 22,
+    "display_formula_count": 2,
+    "image_count": 4,
+    "heading_count": 5,
+    "code_block_count": 0,
+    "source_text_sha256": "ac3c2d5b022d72916ad62c980bf1c0d8878500a5b0c69c52d347fe059e2f1d4e",
+    "output_text_sha256": "ac3c2d5b022d72916ad62c980bf1c0d8878500a5b0c69c52d347fe059e2f1d4e",
+    "latex_sha256": "7053b69f6cd68bc8492e679a50db7e93b102e4ac30d0c93e747196b50c1a4d36",
+    "body_sha256": "f9941a62fd4696e2718fea4947b29b0e0fac49853371093af1cee362da825e03",
+    "converter_version": 1,
+    "markdown_sha256": "2898fde02881aa8c17578061b602a27fe553983448f1f9e8e9825281f5508128"
+  },
+  "fetched_at": "2026-09-14T12:53:13+00:00",
+  "source_snapshot_sha256": "f10909d0d1fd8e2c16f4ec077f88ff3fcf4542aaab483660b6c51ca85730ad6f",
+  "images": {},
+  "local_only": true
+}

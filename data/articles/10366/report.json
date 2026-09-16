@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "10366",
+    "title": "低秩近似之路（一）：伪逆",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/10366",
+    "date": "2024-09-15",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 198,
+    "display_formula_count": 25,
+    "image_count": 0,
+    "heading_count": 7,
+    "code_block_count": 0,
+    "source_text_sha256": "62a52c11c8df7b451480bfdddd957a25e270e817582ddca85d801393246bc93b",
+    "output_text_sha256": "62a52c11c8df7b451480bfdddd957a25e270e817582ddca85d801393246bc93b",
+    "latex_sha256": "de4c73d9f86601077b9d8828292b309650e4f39788c3947fd02ff7e1120023c4",
+    "body_sha256": "7541945358dec8559fce2822d138335f34808e607e2dc276dc687d58507628c0",
+    "converter_version": 1,
+    "markdown_sha256": "527bb0db400efc4a34f25969e42ab475d24e33ae6ab97eeafecafb88e72c4b3f"
+  },
+  "fetched_at": "2026-09-14T12:46:41+00:00",
+  "source_snapshot_sha256": "9fc8f40006c16c9b17d4696125dd8a2219111f8ca94ef0cde175f78509dfcc01",
+  "images": {},
+  "local_only": true
+}

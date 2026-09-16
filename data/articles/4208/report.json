@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "4208",
+    "title": "SVD分解(一)：自编码器与人工智能",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/4208",
+    "date": "2017-01-15",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 26,
+    "display_formula_count": 5,
+    "image_count": 4,
+    "heading_count": 5,
+    "code_block_count": 0,
+    "source_text_sha256": "d49dd25b6dbfe684951648adae3c5658788512744fd285fc71a1800fbc0f9a5f",
+    "output_text_sha256": "d49dd25b6dbfe684951648adae3c5658788512744fd285fc71a1800fbc0f9a5f",
+    "latex_sha256": "2ce500196e674a1a867244b74cde6905f37752cfe714e965921a18d708d058cc",
+    "body_sha256": "f67ebf0199ebf6d88d052d2d72c33837d99e2bd652697dacf891e96b8bad7bb6",
+    "converter_version": 1,
+    "markdown_sha256": "b2750f13943f6ed162b4e8633f854022b95612de1053aaa09676373d4f3489a0"
+  },
+  "fetched_at": "2026-09-14T13:34:32+00:00",
+  "source_snapshot_sha256": "32c504b6ff8ddadc465cfd35adb59fb6746d5e749984e28d5e4597bb5293d3db",
+  "images": {},
+  "local_only": true
+}

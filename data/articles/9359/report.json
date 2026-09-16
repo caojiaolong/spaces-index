@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "9359",
+    "title": "用热传导方程来指导自监督学习",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/9359",
+    "date": "2022-11-30",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 34,
+    "display_formula_count": 5,
+    "image_count": 4,
+    "heading_count": 5,
+    "code_block_count": 0,
+    "source_text_sha256": "cf3f8ac6225341e50fe5b04ee56dc1175f9d8ed7a54ed744c7cc23a183382ff7",
+    "output_text_sha256": "cf3f8ac6225341e50fe5b04ee56dc1175f9d8ed7a54ed744c7cc23a183382ff7",
+    "latex_sha256": "c889249c109ecef105885f7bf4ab30103733a9cc5096e1fbace144c076cc92b2",
+    "body_sha256": "36a55d81ffd7755c9a979d93a1bbf31db87b1b53b6eb57d63deb798abfca09ca",
+    "converter_version": 1,
+    "markdown_sha256": "305972b18697c1883877b81231d455294b8b24f68261d468c6283bb5996e3ef7"
+  },
+  "fetched_at": "2026-09-14T12:56:54+00:00",
+  "source_snapshot_sha256": "557a53d1f07ab96573501947dcbe9f87735f2d4dbc18d6d57b1bf9b9ff81c762",
+  "images": {},
+  "local_only": true
+}

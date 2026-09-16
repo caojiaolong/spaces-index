@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "5643",
+    "title": "貌离神合的RNN与ODE：花式RNN简介",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/5643",
+    "date": "2018-06-23",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 42,
+    "display_formula_count": 8,
+    "image_count": 2,
+    "heading_count": 11,
+    "code_block_count": 3,
+    "source_text_sha256": "eb358d2f262728adeb205fa4fc4c2eac0134304404bf687149be11473321bd50",
+    "output_text_sha256": "eb358d2f262728adeb205fa4fc4c2eac0134304404bf687149be11473321bd50",
+    "latex_sha256": "f359f0b37fa404a69d1b3e00a641b76f2f72a143df81f4053d89a916afaccc60",
+    "body_sha256": "ac1eecf182f92adad10a5242c819283b94701672a8dc0605ff1f03b7824bab68",
+    "converter_version": 1,
+    "markdown_sha256": "2fdc86b855d7125f1fe27476361e3d3aeaeec3e39147ec4e9fd45635ed4c9a4b"
+  },
+  "fetched_at": "2026-09-14T13:26:06+00:00",
+  "source_snapshot_sha256": "904b0457d83048eafe08a0ef6ffe3d3c8b05291fa9ebfb86244e321a817514ab",
+  "images": {},
+  "local_only": true
+}

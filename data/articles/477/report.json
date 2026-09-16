@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "477",
+    "title": "把地球放到“宇宙中心”...",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/477",
+    "date": "2010-02-21",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 19,
+    "display_formula_count": 4,
+    "image_count": 2,
+    "heading_count": 0,
+    "code_block_count": 0,
+    "source_text_sha256": "72145424037e3243c5a459d522b1de8e5233b1dcc4f14562f751ca713743f84e",
+    "output_text_sha256": "72145424037e3243c5a459d522b1de8e5233b1dcc4f14562f751ca713743f84e",
+    "latex_sha256": "6b517cdf57be24e05d4a785baf2f19bdd639cfd484bd3e5de6794a865dcaf8fb",
+    "body_sha256": "ee6198db33f232c1580eb81f94422dbe81a6f930f9fc914ed9a24a0211a09b23",
+    "converter_version": 1,
+    "markdown_sha256": "1fa46cb789059c5eef25e0bfbd33727af6df4c19524f1e82a8261adf3d9acf3d"
+  },
+  "fetched_at": "2026-09-14T14:40:21+00:00",
+  "source_snapshot_sha256": "a147f8987fdde5165e05843b7a82516fdf339a24c144fa0dafd2e6a424b52cde",
+  "images": {},
+  "local_only": true
+}

@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "2004",
+    "title": "《虚拟的实在(2)》——为什么引力如此复杂？ ",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/2004",
+    "date": "2013-06-07",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 5,
+    "display_formula_count": 3,
+    "image_count": 0,
+    "heading_count": 0,
+    "code_block_count": 0,
+    "source_text_sha256": "9fda55e63f2460867dc211a8661e30e59fab4f6f636aa3fc0eedb05b6f39dcc9",
+    "output_text_sha256": "9fda55e63f2460867dc211a8661e30e59fab4f6f636aa3fc0eedb05b6f39dcc9",
+    "latex_sha256": "e0f419bc8e846633c24fc04267bb13061104c0215fb9ff81173c1d0cc0bd4fbe",
+    "body_sha256": "08663958d77b2188dd53267dc7faf6c735da66d8b4da2026b8fb2001833c1f0b",
+    "converter_version": 1,
+    "markdown_sha256": "f9c0474829b55486d370f35727e8578ec4fcae906cf7e036952e39a8616932f2"
+  },
+  "fetched_at": "2026-09-14T14:01:50+00:00",
+  "source_snapshot_sha256": "ecf4946bf1fcbc4a0e6ebcc2f1f5ec3e2edbdd2a85418a60a7bb214b38d5b333",
+  "images": {},
+  "local_only": true
+}

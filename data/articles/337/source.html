@@ -1,0 +1,29 @@
+<div class="PostContent" id="PostContent">
+<p>之前在<a href="/archives/330/">这篇文章</a>中，我们使用过一个牛顿引力场中的自由落体公式：<br/>
+\begin{equation}t=\sqrt{\frac{r_0}{2GM}}\left(r_0 \cdot \arctan \sqrt{\frac{r_0 -r}{r}}+\sqrt{r(r_0 -r)}\right)\label{eq:1}\end{equation}</p><p>我们来尝试一下推导出这个公式来。</p><p></p><div class="pic-container" style="float:right; margin: 5px auto 2px 1px"><div style="display: inline-block; background-color: #fff"><div class="typecho-caption aligncenter" style="max-width: 120px; margin: 0 0 0 8px"><div style="margin: 5px"><a href="/attachment/338/" target="_blank" title="跳伞过程中的自由落体阶段.jpg"><img alt="跳伞过程中的自由落体阶段" src="/usr/uploads/2010/01/2788496468.jpg" style="max-width: 100%"/></a></div><p>跳伞过程中的自由落体阶段</p></div></div></div><p>同时，站长在逐渐深入研究的过程中，发现微分方程极其重要。以前一些我认为不可能解决的问题，都用微分方程逐渐解决了。在以后的文章里，我们将会继续体验到微分方程的伟大魔力！因此，建议各位有志研究物理学的朋友，一定要掌握微分方程，更加深入的，需要用到偏微分方程！</p><p>首先，质量为$m$的物理在距离地心$r$处的引力为$\frac{GMm}{r^2}$，根据牛顿第二定律$F=ma$，自然下落的物体所获得的加速度为$\frac{GM}{r^2}$。假设物体从距离地心$r$开始向地心自由下落，求位移$s$关于$t$的函数$s=s(t)$.</p><p>根据根据加速度的定义，我们有：$\frac{d^2 s}{dx^2}=a=\frac{GM}{(r-s)^2}$，于是问题实质就是解常微分方程<br/>
+\begin{equation}s''=\frac{GM}{(r-s)^2}\end{equation}</p><p>接着我们令$s'=v$，则$s''=v(\frac{dv}{ds})$，代入上式：$GM(r-s)^{-2} ds=vdv$，两端积分：<br/>
+\begin{equation}\begin{gathered}\int vdv = \int GM(r - s)^{ - 2} ds = - \int GM( r - s)^{ - 2}d(r - s) \\<br/>
+\Downarrow\\<br/>
+\frac{1}{2} v^2 = GM[(r - s)^{ - 1} + C_1]\end{gathered}\end{equation}</p><p>根据实际情况，当$t=0$时，$v=s=0$，推出$C_1=-r^{-1}$，即<br/>
+\begin{equation}\frac{1}{2}v^2 = GM[(r - s)^{ - 1} - r^{ - 1}] \quad\Rightarrow\quad \frac{ds}{dt} = v = \sqrt {\frac{2GM}{r}} \sqrt {\frac{s}{r - s}}\end{equation}<br/>
+两端积分：<br/>
+\begin{equation}\int dt = \sqrt {\frac{r}{2GM}} \int (\sqrt {\frac{r - s}{s}} )ds =2\sqrt {\frac{r}{2GM}} \int (\sqrt {r - s} )d(s^{0.5}) \end{equation}</p><p>令$s^{0.5}=P$，则<br/>
+\begin{equation}2\int (\sqrt {r - s} )d(s^{0.5}) =2\int (\sqrt {r - p^2} )dp\end{equation}<br/>
+根据积分公式：<br/>
+\begin{equation}\int \sqrt{a^2-x^2} dx =\frac{a^2}{2} \arcsin \frac{x}{a} +x/2 \sqrt{a^2-x^2}+C\end{equation}<br/>
+得出<br/>
+\begin{equation}2\int (\sqrt {r - p^2} )dp=r\cdot \arcsin \frac{p}{\sqrt{r}}+p \sqrt{r-p^2}+C\end{equation}<br/>
+换回$s$，有：<br/>
+\begin{equation}2\int (\sqrt {r - s} )d(s^{0.5}) =r\cdot \arcsin \sqrt{\frac{s}{r}}+\sqrt{s(r-s)}+C\end{equation}<br/>
+则：<br/>
+\begin{equation}t=\sqrt{\frac{r}{2GM}}\left(r\cdot \arcsin\sqrt{\frac{s}{r}}+\sqrt{s(r-s)}+C\right)\end{equation}<br/>
+当$s=0$时，$t=0$，则$C=-\pi r / 2$，得出：<br/>
+\begin{equation}t=\sqrt{\frac{r}{2GM}}\left(r\cdot \arcsin\sqrt{\frac{s}{r}}+\sqrt{s(r-s)}\right)\end{equation}<br/>
+而根据反三角函数公式：$\arcsin \frac{a}{b} = \arctan\sqrt{\frac{a^2}{b^2-a^2}}$，即得<br/>
+\begin{equation}t=\sqrt{\frac{r}{2GM}}\left(r\cdot\arctan\sqrt{\frac{s}{r-s}}+\sqrt{s(r-s)}\right)\label{eq:2}\end{equation}</p><p>不难看出，$\eqref{eq:1}$和$\eqref{eq:2}$两式是等价的，$\eqref{eq:2}$的$r$实际上是$\eqref{eq:1}$的$r_0$，而$s$则相当于$r_0 - r$。</p>
+
+
+
+
+
+</div>

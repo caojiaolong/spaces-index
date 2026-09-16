@@ -1,0 +1,17 @@
+{
+  "metadata": {
+    "id": "10617",
+    "title": "生成扩散模型漫谈（二十七）：将步长作为条件输入",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/10617",
+    "date": "2024-12-15",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "fetched_at": "2026-09-14T12:44:44+00:00",
+  "source_snapshot_sha256": "b596b3357d53612d6e7f36131900186e64bb41df10e9a1834cea93622fbe0ab3",
+  "validators": {
+    "etag": null,
+    "last_modified": null
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "11025",
+    "title": "msign的导数",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/11025",
+    "date": "2025-06-13",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 145,
+    "display_formula_count": 23,
+    "image_count": 0,
+    "heading_count": 6,
+    "code_block_count": 0,
+    "source_text_sha256": "84be5845d6d57583d0287b37607d4f0bc84b071597e1ab8799bf78c374ae0df3",
+    "output_text_sha256": "84be5845d6d57583d0287b37607d4f0bc84b071597e1ab8799bf78c374ae0df3",
+    "latex_sha256": "93848b28b01322b9063d1ff6e6be7ee666655b85ad6c33e047e70d18d5d405b2",
+    "body_sha256": "f8a1cbfaf63f9779837de4a0db5c5458815a2c6a24ac328fcf1d818c4d6ffa5f",
+    "converter_version": 1,
+    "markdown_sha256": "70d7b42c2de3dfde26e8b03b7387e9dd6f4ed698e76faeab006dc4c22bb728b3"
+  },
+  "fetched_at": "2026-09-14T12:41:49+00:00",
+  "source_snapshot_sha256": "2e17b940f5419b1cfbc71852f48b694ea1e0f8785524fa8c3345a03b8b9b3bef",
+  "images": {},
+  "local_only": true
+}

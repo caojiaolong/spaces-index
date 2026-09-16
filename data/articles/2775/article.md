@@ -1,0 +1,115 @@
+# 初试在Python中使用PARI/GP
+
+> 作者：苏剑林 · 科学空间 · 2014-07-22
+>
+> 原文：<https://spaces.ac.cn/archives/2775>
+>
+> 原文许可：[CC BY-NC-ND 2.5 CN（署名-非商业性使用-禁止演绎）](https://creativecommons.org/licenses/by-nc-nd/2.5/cn/)。
+>
+> 本文件由 spaces-index 非官方、非商业项目进行必要的 HTML → Markdown 格式转换；正文未做摘要、润色、翻译或重组。项目不代表作者，也不表示作者为项目背书。
+>
+> 署名及附加许可说明不代表已获得作者额外授权。第三方素材权利依其原有声明。
+>
+> 原站转载与引用说明：[科学空间 FAQ](https://spaces.ac.cn/archives/6508#%E6%96%87%E7%AB%A0%E5%A6%82%E4%BD%95%E8%BD%AC%E8%BD%BD/%E5%BC%95%E7%94%A8)
+
+---
+
+BoJone很喜欢Python，也很喜欢数论，所以就喜欢利用Python玩数论了。平时也喜欢自己动手写一些数论函数，毕竟Python支持大整数高精度运算，这点是非常好的；但是，在很多实际应用中，还是希望能有一个现成的数论函数库来调用。之前尝试过数学研发网的HugeCalc库，但是由于各种不熟悉不了了之。后来论坛上的无心老兄推荐了[PARI/GP](<http://pari.math.u-bordeaux.fr/>)，小试一下，居然在Python上成功调用了。以后再也不用担心Python上的数论计算问题了，呵呵\~
+
+先来一段官方的关于PARI/GP的介绍：
+
+> PARI/GP 是一种针对数论中的快速计算(大数分解，代数数论，椭圆曲线\.\.\.) 而设计的广泛应用的计算机代数系统，同样具备大量实用的函数来对于数学实体的计算， 诸如矩阵，多项式，幂级数，代数数，以及相当多的超越方程等等。 PARI也可以作为快速计算的C语言库。
+> 
+> 
+> 
+> 这个系统最初是由Henri Cohen和他的合作者们（来自法国的波尔多第一大学）发 展起来的。 PARI现在在公共授权条款(GPL)之下并在许多志愿者的帮助下由Karim Belabas进行维护。
+> 
+> 
+> 
+> \-PARI 是一个可以快速计算的C语言库。
+> \-gp是一个容易上手的交互式外壳，它赋予用户调用PARI函数的权力。
+> \-GP 是gp脚本语言的名字。
+> \-gp2c, GP到C的编译器，通过编译GP脚本至C语言以及透明载入结果函数至gp来结合两者的最优点。 (由gp2c编译的脚本一般情况下运行速度将快3至4倍。) 目前gp2c只能运行GP语言的一部分。
+
+PARI/GP提供了源码包，可以编译使用，也提供了Windows下的可执行安装包，直接安装使用也可。本文只讨论在Windows平台下用Python调用PARI，Linux平台估计可以类似地调用，但写这篇文章之前，我还没亲自测试过。Windows下的调用只需要PARI/GP安装目录下的<strong>libpari\.dll</strong>文件，读者可以从官网下载安装包安装后提取它，也可以在本文末尾的附件中下载它。
+
+首先，需要注意的是，调用PARI的Python版本必须是32位的，Python 2和Python 3均可，但64位会出错（可以在64位的操作系统中，安装32位的Python），当然，也可以用PyPy来调用。PyPy基于32位的Python，最新版本已经支持Python 3，读者可以选择自己喜欢的。先看在Python 2\.x中的方法，3\.x在细节上有些差别，在后面会说明。
+
+DLL是动态链接库，加载DLL之后，就可以使用DLL里边的函数。这跟加载模块有点类似。不同的是，DLL一般是用C语言写的，运行效率比较高，而在Python中加载C/C\+\+的函数，可以发挥C/C\+\+的运行效率和Python的开发效率。在Python中加载DLL，需用导入ctypes模块，导入之后，利用ctypes\.cdll\.LoadLibrary()函数载入libpari\.dll（linux下也有类似的链接库，后缀为\.so）。代码如下
+
+
+
+<pre><code class="language-python">import ctypes
+from ctypes import * 
+pari = ctypes.cdll.LoadLibrary('libpari.dll')
+</code></pre>
+
+
+
+在调用PARI的功能之前，首先得用它的pari\_init()函数初始化，比如pari\.pari\_init(4000000,2)，其中第一个参数表示提供给PARI使用的字节数，也就是PARI最大内存占用，一般来说不要小于500000，第二个参数是预先生成的素数表，预先生成部分素数表可以在之后处理素数相关问题时，降低一点计算量，但是这个不是必须的，你也可以设它为0，它同样还是可以完成素数相关运算。
+
+下面以使用PARI的primes()函数为例。prime(n)函数的作用是输出前n个素数。代码如下
+
+
+
+<pre><code class="language-python">import ctypes
+from ctypes import * 
+pari = ctypes.cdll.LoadLibrary('libpari.dll') #导入libpari.dll
+
+pari.pari_init(4000000,2) #初始化
+pari.primes.restype = ctypes.POINTER(ctypes.c_long) #这两句不大清楚作用
+pari.GENtostr.restype = ctypes.POINTER(ctypes.c_char) #这两句不大清楚作用
+
+n = pari.primes(10) #生成
+y = pari.GENtostr(n) #转换
+print(ctypes.string_at(y)) #输出
+</code></pre>
+
+
+
+由于只是刚刚尝试，我也不是很懂restype的作用，望文生义，应该就是把函数的类型跟指针相对应。这代码是参考网络上的一些代码而来的，我测试也发现，就算没有restype的这两句，程序也能够正常工作，不知道有什么不同。程序的过程是先用primes()函数生成结果，结果是GEN类型的，在Python中没法识别，用GENtostr()函数转换为字符串，但这函数返回的是地址，要用string\_at()读取输出。在Python 2\.7中，运行结果为（输出的是字符串）：
+
+> &#91;2, 3, 5, 7, 11, 13, 17, 19, 23, 29&#93;
+
+以上代码在Python 3同样可以正常运行，但是输出结果有小许不同。以下会说明。
+
+第二个例子是isprime()函数，这是素性测试函数。这种函数有些特殊，它不是用C/C\+\+的int类型，因此就不能简单输入Python的整数，估计PARI自定义了自己的大整数类型，或者用其他的方式储存大整数。我们要从字符串中读入数字，代码如下：
+
+
+
+<pre><code class="language-python">import ctypes
+from ctypes import * 
+pari = ctypes.cdll.LoadLibrary('libpari.dll') #导入libpari.dll
+
+pari.pari_init(4000000,2) #初始化
+pari.gp_read_str.restype = ctypes.POINTER(ctypes.c_int) #这句不大清楚作用
+
+n=pari.isprime(pari.gp_read_str(str(127))) #测试127的素性
+print(n)
+</code></pre>
+
+
+
+核心代码就是倒数第二句，首先将127转化为字符串，然后用gp\_read\_str()函数从字符串读入，最后用isprime()函数判断，本例的输出结果为1。
+
+但是，如果把这个例子放到Python 3中运行，就会出现错误。原因在于，Python 3的字符串str，不等于Python 2\.x的str了，在3中定义了一种新的类型bytes，事实上，2\.x的str在这里更像3中的bytes，所以，在Python中，代码要改成
+
+
+
+<pre><code class="language-python">pari.isprime(pari.gp_read_str(b'127'))</code></pre>
+
+
+
+或者（用str的encode()函数转成bytes类型）
+
+
+
+<pre><code class="language-python">pari.isprime(pari.gp_read_str(str(127).encode()))</code></pre>
+
+
+
+同样，在Python 3中，ctypes\.string\_at(y)的返回对象也不是str，而是bytes，读者可以发现，输出结果多带了一个b，正是这个原因。
+
+暂时就介绍到这里了，如果有新的发现，会继续跟大家分享\~\~希望高手路过多多指教。
+
+<strong>下载：</strong>[libpari\.zip](<https://spaces.ac.cn/usr/uploads/2014/07/1362655025.zip>)

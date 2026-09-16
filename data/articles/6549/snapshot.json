@@ -1,0 +1,17 @@
+{
+  "metadata": {
+    "id": "6549",
+    "title": "从DCGAN到SELF-MOD：GAN的模型架构发展一览",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/6549",
+    "date": "2019-04-19",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "fetched_at": "2026-09-14T13:20:22+00:00",
+  "source_snapshot_sha256": "96f58b2fbf04706ea411383b343e9c21955cea5310de11edc4ace96e486f8edc",
+  "validators": {
+    "etag": null,
+    "last_modified": null
+  }
+}

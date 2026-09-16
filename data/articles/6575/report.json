@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "6575",
+    "title": "“让Keras更酷一些！”：中间变量、权重滑动和安全生成器",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/6575",
+    "date": "2019-04-28",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 5,
+    "display_formula_count": 2,
+    "image_count": 0,
+    "heading_count": 10,
+    "code_block_count": 11,
+    "source_text_sha256": "ad1c467e203c19f4b2a7e8c61aa9f6320990710818f4cfead489fdc139faa887",
+    "output_text_sha256": "ad1c467e203c19f4b2a7e8c61aa9f6320990710818f4cfead489fdc139faa887",
+    "latex_sha256": "d9a4ea6bc6237fe3320c30fa0cac31d5de9710f21173634a9c2692b47f227676",
+    "body_sha256": "83b13b48a35ff65823ad4f76acf450caf2362c097190d66f5363a04eecca508d",
+    "converter_version": 1,
+    "markdown_sha256": "14afdfa779a9e0a8f624e923792db1a3a0bc3deee23c7ea1765ae545c2157652"
+  },
+  "fetched_at": "2026-09-14T13:20:15+00:00",
+  "source_snapshot_sha256": "6c096f848242e6679f4cf25e18bf6b8f75e1ce6f92ac4144eff4a7436f9d9d80",
+  "images": {},
+  "local_only": true
+}

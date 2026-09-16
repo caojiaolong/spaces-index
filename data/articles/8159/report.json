@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "8159",
+    "title": "一个二值化词向量模型，是怎么跟果蝇搭上关系的？",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/8159",
+    "date": "2021-02-09",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 45,
+    "display_formula_count": 2,
+    "image_count": 2,
+    "heading_count": 5,
+    "code_block_count": 0,
+    "source_text_sha256": "1997015324f9eb147c8a5555c393c458ef6433a40c9a37fbd05bd044cf898fe5",
+    "output_text_sha256": "1997015324f9eb147c8a5555c393c458ef6433a40c9a37fbd05bd044cf898fe5",
+    "latex_sha256": "94f6d3d74debe90be5db4a10c1f43b05addb26e4b974f27852505fd188261cdc",
+    "body_sha256": "04e578b101bbed2925f96398772063b963a4f8619805286e26e85f0cb6896787",
+    "converter_version": 1,
+    "markdown_sha256": "463309f9e1fc91b1dc259483e841b38b03c627313bb3add6a64db1800dacd609"
+  },
+  "fetched_at": "2026-09-14T13:08:14+00:00",
+  "source_snapshot_sha256": "13874e829dd3c459839cdf82dede31c488d79eccb7cdd61353003650fbf844c4",
+  "images": {},
+  "local_only": true
+}

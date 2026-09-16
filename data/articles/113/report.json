@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "113",
+    "title": "欲对接广义相对论，新量子引力模型能否成功？",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/113",
+    "date": "2009-09-05",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 0,
+    "display_formula_count": 0,
+    "image_count": 0,
+    "heading_count": 0,
+    "code_block_count": 0,
+    "source_text_sha256": "b83b5a4129932f6fe9c72779d4bea530853f32d4ae8bf5a190f89ef87a5e2460",
+    "output_text_sha256": "b83b5a4129932f6fe9c72779d4bea530853f32d4ae8bf5a190f89ef87a5e2460",
+    "latex_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "body_sha256": "cd87fdd8b53a54c842fe2cf6261278c47a9f1ce83466b7ae45eb53f7aa81f0b8",
+    "converter_version": 1,
+    "markdown_sha256": "25e13fbf91aa94a6e38e2d8a232004a627307491e50e9f9d4ed77ca3565520ff"
+  },
+  "fetched_at": "2026-09-14T14:54:44+00:00",
+  "source_snapshot_sha256": "212bce2eb8d3ed56c25f348d20ac3f3dc54dab3f42d30f48a6b594d6195a91f5",
+  "images": {},
+  "local_only": true
+}

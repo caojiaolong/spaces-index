@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "728",
+    "title": "宇宙驿站定于本周五更换服务器",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/728",
+    "date": "2010-07-21",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 0,
+    "display_formula_count": 0,
+    "image_count": 0,
+    "heading_count": 0,
+    "code_block_count": 0,
+    "source_text_sha256": "b058cb4f9aab2c15fd75db7dfe204dceab6bc94c12e3e718528e1abefd3b3ebc",
+    "output_text_sha256": "b058cb4f9aab2c15fd75db7dfe204dceab6bc94c12e3e718528e1abefd3b3ebc",
+    "latex_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "body_sha256": "12d677db240cc9bd59e8d3c7c9676d85cd5a64d5b549bf3f428fcb65d5f78125",
+    "converter_version": 1,
+    "markdown_sha256": "53c5b27d3483b04376774d2a9875c3e9658c035e8c95a0852be75f50a5b25816"
+  },
+  "fetched_at": "2026-09-14T14:34:37+00:00",
+  "source_snapshot_sha256": "d9d8d17a6563ddfbe1bf1bfc7015a305be84152e7e243f1db62bf8e7a5b38c92",
+  "images": {},
+  "local_only": true
+}

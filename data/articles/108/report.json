@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "108",
+    "title": "在线投稿系统上线！欢迎大家来投稿",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/108",
+    "date": "2009-08-30",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 0,
+    "display_formula_count": 0,
+    "image_count": 0,
+    "heading_count": 0,
+    "code_block_count": 0,
+    "source_text_sha256": "778022afb23608e29f9113c0d5b7ea73fe489a698fec4e76e307f58bea72262c",
+    "output_text_sha256": "778022afb23608e29f9113c0d5b7ea73fe489a698fec4e76e307f58bea72262c",
+    "latex_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "body_sha256": "85d6f33dda178623842bed5bbdf491951bdd1646114e803f2943ec2ecfc8862d",
+    "converter_version": 1,
+    "markdown_sha256": "3041e62664c2f9faef44654c3a3d93ada2eb978f0b844cbd4cc874a542e185ca"
+  },
+  "fetched_at": "2026-09-14T14:55:30+00:00",
+  "source_snapshot_sha256": "833fa2bcac95e0658509483e70fe1cab7f470047150de2ce0fdf9ec2ef0d690e",
+  "images": {},
+  "local_only": true
+}

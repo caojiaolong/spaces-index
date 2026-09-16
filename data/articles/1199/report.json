@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "1199",
+    "title": "喜迎新春！兔年快乐！2011~",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/1199",
+    "date": "2011-02-02",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 0,
+    "display_formula_count": 0,
+    "image_count": 3,
+    "heading_count": 0,
+    "code_block_count": 0,
+    "source_text_sha256": "b4c9fe3ddaf0ebc78dfa670e6fd15b27e00802836058675e97cb0d5a4fcb0e01",
+    "output_text_sha256": "b4c9fe3ddaf0ebc78dfa670e6fd15b27e00802836058675e97cb0d5a4fcb0e01",
+    "latex_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "body_sha256": "e54eca1f28f4592005ed4adb5a31868bcd535f831025913857ce41bc37a3b5e0",
+    "converter_version": 1,
+    "markdown_sha256": "19c2742073da9f0287f2cc9cfad7808595c0035caedaf4501070e07ab456ba4a"
+  },
+  "fetched_at": "2026-09-14T14:24:51+00:00",
+  "source_snapshot_sha256": "d4ea4d28a76720c981903b69a9a891ba7256293f49d5cdd57c26325c2b0d205f",
+  "images": {},
+  "local_only": true
+}

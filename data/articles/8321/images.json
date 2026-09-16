@@ -1,0 +1,45 @@
+{
+  "version": 1,
+  "images": {
+    "https://spaces.ac.cn/usr/uploads/2021/04/4207721528.png": {
+      "status": "cached",
+      "file": "ed1ce81ad70d702d8a441ec7fc4a03c875e8737e5accc52350a9e028b76e154c.png",
+      "sha256": "ed1ce81ad70d702d8a441ec7fc4a03c875e8737e5accc52350a9e028b76e154c",
+      "bytes": 166866,
+      "checked_at": "2026-09-16T08:44:45+00:00",
+      "fetched_url": "https://spaces.ac.cn/usr/uploads/2021/04/4207721528.png",
+      "etag": "\"606ff230-28bd2\"",
+      "last_modified": "Fri, 09 Apr 2021 06:20:32 GMT"
+    },
+    "https://spaces.ac.cn/usr/uploads/2021/04/1712832858.png": {
+      "status": "cached",
+      "file": "e6a6c54e1ea301d0b5ce7d930fc89f78ee4acf98fef3af98562d32bb2b0fa502.png",
+      "sha256": "e6a6c54e1ea301d0b5ce7d930fc89f78ee4acf98fef3af98562d32bb2b0fa502",
+      "bytes": 377294,
+      "checked_at": "2026-09-16T08:44:49+00:00",
+      "fetched_url": "https://spaces.ac.cn/usr/uploads/2021/04/1712832858.png",
+      "etag": "\"60725436-5c1ce\"",
+      "last_modified": "Sun, 11 Apr 2021 01:43:18 GMT"
+    },
+    "https://spaces.ac.cn/usr/uploads/2021/04/898602584.png": {
+      "status": "cached",
+      "file": "ca77c7d9b1cd0ff852f3fc4309d305f3621dc8e2bd31db2fb5e9f62a3298e6f8.png",
+      "sha256": "ca77c7d9b1cd0ff852f3fc4309d305f3621dc8e2bd31db2fb5e9f62a3298e6f8",
+      "bytes": 436134,
+      "checked_at": "2026-09-16T08:44:54+00:00",
+      "fetched_url": "https://spaces.ac.cn/usr/uploads/2021/04/898602584.png",
+      "etag": "\"607254ee-6a7a6\"",
+      "last_modified": "Sun, 11 Apr 2021 01:46:22 GMT"
+    },
+    "https://spaces.ac.cn/usr/uploads/2021/04/145472581.png": {
+      "status": "cached",
+      "file": "cd7e95195cecee4391c2131cddae400a9da80daa4e168a9423a427f19c5054ec.png",
+      "sha256": "cd7e95195cecee4391c2131cddae400a9da80daa4e168a9423a427f19c5054ec",
+      "bytes": 722153,
+      "checked_at": "2026-09-16T08:45:00+00:00",
+      "fetched_url": "https://spaces.ac.cn/usr/uploads/2021/04/145472581.png",
+      "etag": "\"60725645-b04e9\"",
+      "last_modified": "Sun, 11 Apr 2021 01:52:05 GMT"
+    }
+  }
+}

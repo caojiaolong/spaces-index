@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "411",
+    "title": "最近广告特别多...（严厉声明）",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/411",
+    "date": "2010-02-07",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 0,
+    "display_formula_count": 0,
+    "image_count": 0,
+    "heading_count": 0,
+    "code_block_count": 0,
+    "source_text_sha256": "d75065b8e465d04843a804f330a8126d05f6fb1be2078de066558aa09e58daba",
+    "output_text_sha256": "d75065b8e465d04843a804f330a8126d05f6fb1be2078de066558aa09e58daba",
+    "latex_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "body_sha256": "e34a2c31e9ab5f099a468bb7d0cccdb96769d77930a81e6d77cca0334dd3615b",
+    "converter_version": 1,
+    "markdown_sha256": "18015e1de4bd2cdd021003764b21a63552bfe93d38e478ecc7a7064c08c19870"
+  },
+  "fetched_at": "2026-09-14T14:41:41+00:00",
+  "source_snapshot_sha256": "76f9c0706846a02b45fba16e4da1214feb0f446dc05c997309625a945aff0467",
+  "images": {},
+  "local_only": true
+}

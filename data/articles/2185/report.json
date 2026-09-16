@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "2185",
+    "title": "求解微分方程的李对称方法（二）",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/2185",
+    "date": "2013-11-26",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 1,
+    "display_formula_count": 0,
+    "image_count": 0,
+    "heading_count": 0,
+    "code_block_count": 0,
+    "source_text_sha256": "04e4cbf5b314eded69c72bd3999421f51f9fd5645bfa66da34ee2ffe0a05f9f5",
+    "output_text_sha256": "04e4cbf5b314eded69c72bd3999421f51f9fd5645bfa66da34ee2ffe0a05f9f5",
+    "latex_sha256": "8845828da14548243f8b940d88578ae45beec4493369f4bc5d4ce18ef08011c5",
+    "body_sha256": "24b75e7333633d14782aab4e2f6782f26b53bcd0455d0ca006f934cf5637ffa7",
+    "converter_version": 1,
+    "markdown_sha256": "316dc2f6a6d5e71c71977340a08a9e907985f9fc6ced04e5911e125038e4fa79"
+  },
+  "fetched_at": "2026-09-14T13:58:58+00:00",
+  "source_snapshot_sha256": "45733996edb3c218f26d6f4b4e2a296690f5a491227acfc463a7a76c58070325",
+  "images": {},
+  "local_only": true
+}

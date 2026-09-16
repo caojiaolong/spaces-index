@@ -1,0 +1,15 @@
+<div class="PostContent" id="PostContent">
+<p>椭圆坐标系是一种二维正交坐标系。与直角坐标的转换关系为<br/>
+$$\begin{aligned}x = a \cos h \mu \cos \nu \\ y = a \sin h \mu \sin \nu\end{aligned}$$</p><p>其中$(-a,0)$和$(a,0)$是两个焦点。</p><p>参看：<a href="http://zh.wikipedia.org/wiki/%E6%A9%A2%E5%9C%93%E5%9D%90%E6%A8%99%E7%B3%BB" target="_blank">http://zh.wikipedia.org/wiki/椭圆坐标系</a></p><p></p><div class="pic-container"><div class="typecho-caption aligncenter" style="max-width: 360px"><div style="margin: 5px"><a href="/usr/uploads/2011/04/2023863032.svg" target="_blank" title="点击打开原图"><img alt="Elliptical_coordinates_grid" src="/usr/uploads/2011/04/2023863032.svg" style="max-width: 100%"/></a></div><p class="typecho-caption-text">Elliptical_coordinates_grid</p></div></div><p>另外，考虑$sin z$，其中$z=x +iy$，有<br/>
+$$\sin z= i \cos x \sin h y + \sin x \cos h y$$</p><p><strong>证明：</strong></p><blockquote><p>$2i sinz = e^{iz}-e^{-iz}= e^{ix-y} - e^{-ix+y}$<br/>
+$$\begin{aligned}= e^(ix-y) - e^(ix+y) + e^(ix+y) - e^(-ix+y) \\ = e^{ix} (e^{-y} - e^y) + e^y (e^{ix} - e^{-ix}) \\ = -2 e^{ix} \sin h y + 2i e^y \sin x \\ = -2 (\cos x + i \sin x) \sin h y + 2i (e^y) \sin x\end{aligned}$$</p><p>然后再乘上$-\frac{1}{2}i$：<br/>
+$$\begin{aligned}\sin z = i (\cos x + i \sin x) \sin h y + (e^y) \sin x \\ = i \cos x \sin h y - \sin x \sin h y + e^y \sin x \\ = i \cos x \sin h y - \sin x( \sin h y - e^y) \\ = i \cos x \sin h y - (\frac{e^y - e^{-y} - 2e^y}{2}) \sin x \\ = i \cos x \sin h y + (\frac{e^y + e^{-y}}{2})\sin x \\ = i \cos x \sin h y + \sin x \cos h y\end{aligned}$$</p><p>证明来源：<a href="http://au.answers.yahoo.com/question/index?qid=20100418003726AAyRTR8" target="_blank">http://au.answers.yahoo.com/question/index?qid=20100418003726AAyRTR8</a></p></blockquote><p>类似的还有<br/>
+$$\begin{aligned}\cos z= -i \sin x \sin h y + \cos x \cos h y \\ \sin h z=i \sin y \cos h x + \cos y \sin h x\end{aligned}$$<br/>
+$cosh z=i sin y sinh x + cos y cosh x$（这完全和椭圆坐标系对应起来了）</p><p>惊叹它们与椭圆坐标的相似性！</p><p>还有一点有趣的东西<br/>
+$$\begin{aligned}\sin iz=i \sin h z \\ \sin h iz=i \sin z \\ \cos iz=i \cos h z \\ \cos h iz= i \cos z \\ |\sin z|=\sqrt{\sin^2 x+\sin h^2 y} \\ |\cos z|=\sqrt{\cos^2 x+\sin h^2 y} \\ |\sin h z|=\sqrt{\sin h^2 x+\sin^2 y} \\ |\cos h z|=\sqrt{\cos h^2 x-\sin^2 y}\end{aligned}$$</p><p>参考书籍：<strong>Applied complex variables for scientists and engineers</strong></p>
+
+
+
+
+
+</div>

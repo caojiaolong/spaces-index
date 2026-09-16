@@ -1,0 +1,39 @@
+{
+  "metadata": {
+    "id": "215",
+    "title": "2012年，地球完蛋了？",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/215",
+    "date": "2009-10-25",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "source_dom_exact": true,
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "attributes_exact": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 0,
+    "display_formula_count": 0,
+    "image_count": 4,
+    "heading_count": 0,
+    "code_block_count": 0,
+    "source_text_sha256": "6d6c0fb0f451cdddc231ac01de2a7ef670cb418eb9218411387b2ab0365648fa",
+    "output_text_sha256": "6d6c0fb0f451cdddc231ac01de2a7ef670cb418eb9218411387b2ab0365648fa",
+    "latex_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "body_sha256": "58c2f7cd377ed56021c45e6e3724541809dda223d174fc549cb807a2681213d3",
+    "converter_version": 1,
+    "format": "html-v1",
+    "source_warnings": [],
+    "fallback_reason": "Standard Markdown round trip changed source structure",
+    "markdown_sha256": "d4aa3621b127f68657317e1e55a2402e8e38e0f5d41652cc9448efa1a4ef1c5f"
+  },
+  "fetched_at": "2026-09-14T14:47:38+00:00",
+  "source_snapshot_sha256": "85e5673bb4a893215d6eddbe930c5bb3b516471d8b5c1cc33e105075fa12c9d0",
+  "images": {},
+  "local_only": true
+}

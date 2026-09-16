@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "3902",
+    "title": "两个惊艳的python库：tqdm和retry",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/3902",
+    "date": "2016-08-13",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 0,
+    "display_formula_count": 0,
+    "image_count": 1,
+    "heading_count": 2,
+    "code_block_count": 2,
+    "source_text_sha256": "d64cecce22076c08335647b81a91656487f8f4c35edae05c04fb3ffa88aac715",
+    "output_text_sha256": "d64cecce22076c08335647b81a91656487f8f4c35edae05c04fb3ffa88aac715",
+    "latex_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "body_sha256": "492736646d0d9e43043a5446a6f2e6b9904480cfe6ab83b23e4f56731ef009d3",
+    "converter_version": 1,
+    "markdown_sha256": "83eac1db937f61b3349de89058f54614b37b89a6413c6a895cc2875033d433bf"
+  },
+  "fetched_at": "2026-09-14T13:38:51+00:00",
+  "source_snapshot_sha256": "314e1f216e7ac404272a2499cf9fa89ab9c7ecf5dc4e3616aec2b37c6e377bb6",
+  "images": {},
+  "local_only": true
+}

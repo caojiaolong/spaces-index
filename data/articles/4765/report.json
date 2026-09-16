@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "4765",
+    "title": "《Attention is All You Need》浅读（简介+代码）",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/4765",
+    "date": "2018-01-06",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 66,
+    "display_formula_count": 9,
+    "image_count": 2,
+    "heading_count": 13,
+    "code_block_count": 2,
+    "source_text_sha256": "7f5eae3958a11142ebf6c6416c3fa4dfc66cf1a5b6de3a89d05d2f85ad292bad",
+    "output_text_sha256": "7f5eae3958a11142ebf6c6416c3fa4dfc66cf1a5b6de3a89d05d2f85ad292bad",
+    "latex_sha256": "6360b85fe74bb53aa7c3a52d664e161e8cc5e8c5ee7eb1ec0769ad8150d4106a",
+    "body_sha256": "30ee96610c1133a6d607295fdb8f63611fcd6f9b5c969b64c27b9a91af1b31d8",
+    "converter_version": 1,
+    "markdown_sha256": "dfe94cffa6d9720225190f44907dda33664118142cedd0e17f59c8e756ab7579"
+  },
+  "fetched_at": "2026-09-14T13:29:01+00:00",
+  "source_snapshot_sha256": "1e50c55c3c1446cde86843b05b71ab162410f70eca490d77615133ea110f5562",
+  "images": {},
+  "local_only": true
+}

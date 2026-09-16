@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "159",
+    "title": "关于交错级数的审敛法则",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/159",
+    "date": "2009-10-06",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 15,
+    "display_formula_count": 3,
+    "image_count": 0,
+    "heading_count": 0,
+    "code_block_count": 0,
+    "source_text_sha256": "e7010d8c0eaf4f9689b599971bec6c2e327d64250cb45bc0ac9e1a989b401b67",
+    "output_text_sha256": "e7010d8c0eaf4f9689b599971bec6c2e327d64250cb45bc0ac9e1a989b401b67",
+    "latex_sha256": "58a5cdcd040d925a7b95d1550e0fd47d7b4e88ef258220734e7935ff41368750",
+    "body_sha256": "3219a5844a91946ec7f2f10af1e1e59adfaa6214d014538d1f4523cfbfb6d9ec",
+    "converter_version": 1,
+    "markdown_sha256": "99859d6e345afa6652f2f6d1355ea7fba8cd29b43e5d9df46710aa2fa421d348"
+  },
+  "fetched_at": "2026-09-14T14:49:52+00:00",
+  "source_snapshot_sha256": "169b03f3bcd9fc0b50cb164eebda2992acb1cd56510de98a8feb1a7253c36ac9",
+  "images": {},
+  "local_only": true
+}

@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "11006",
+    "title": "通过msign来计算奇异值裁剪mclip（上）",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/11006",
+    "date": "2025-06-07",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 64,
+    "display_formula_count": 13,
+    "image_count": 0,
+    "heading_count": 5,
+    "code_block_count": 1,
+    "source_text_sha256": "1aafdf0d5b4a20537099f86ade949410bb2dea88d4f7b213af4262568669eedb",
+    "output_text_sha256": "1aafdf0d5b4a20537099f86ade949410bb2dea88d4f7b213af4262568669eedb",
+    "latex_sha256": "3202a832340ba55fc003b043a6aff1079ccc05bdccfd2d947ec10375e64c3c11",
+    "body_sha256": "313cc6b7f898320c980e6937de976e7f9935a67f505a4112a6c37234273b0269",
+    "converter_version": 1,
+    "markdown_sha256": "3071470952a871abc0872c78e092fa68fb5aa1c9b785417a59df890fe9bf95e2"
+  },
+  "fetched_at": "2026-09-14T12:41:55+00:00",
+  "source_snapshot_sha256": "f751b881e527023899b78765ae121892a24e3f146cfbd760256be3f3b8daa228",
+  "images": {},
+  "local_only": true
+}

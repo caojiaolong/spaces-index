@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "7321",
+    "title": "bert4keras在手，baseline我有：百度LIC2020",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/7321",
+    "date": "2020-04-02",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 0,
+    "display_formula_count": 0,
+    "image_count": 0,
+    "heading_count": 6,
+    "code_block_count": 4,
+    "source_text_sha256": "9e5efea6e01c30f06588331028bb01b91656b7cd7c5f0c1da3cee7a677ed2f1f",
+    "output_text_sha256": "9e5efea6e01c30f06588331028bb01b91656b7cd7c5f0c1da3cee7a677ed2f1f",
+    "latex_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "body_sha256": "56cf3cf4fc0e72cfeb7b4f7c4b2a3f5716e5b340b9f0e275c5224aaed3db3844",
+    "converter_version": 1,
+    "markdown_sha256": "655665df570c87535f597d7ff924a96ca56e3e5c380c73816b4e6df274294781"
+  },
+  "fetched_at": "2026-09-14T13:14:34+00:00",
+  "source_snapshot_sha256": "9b941120bb53a182973394876cf792e77f0166570fc5edf444ec61bedbcaee32",
+  "images": {},
+  "local_only": true
+}

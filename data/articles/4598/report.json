@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "4598",
+    "title": "从马尔科夫过程到主方程（推导过程）",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/4598",
+    "date": "2017-10-06",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 38,
+    "display_formula_count": 11,
+    "image_count": 0,
+    "heading_count": 4,
+    "code_block_count": 0,
+    "source_text_sha256": "e55176b5e1e7fd4d1df06cb8d4b16d979dc17a2d5be5f60a6951ac706f7514f1",
+    "output_text_sha256": "e55176b5e1e7fd4d1df06cb8d4b16d979dc17a2d5be5f60a6951ac706f7514f1",
+    "latex_sha256": "777cedc216b88193a2d198fd626713a9020fed945c1efcd5dd391804f1a82a06",
+    "body_sha256": "43d4ff84dad3830313cfe4a1c2e0375d0393431d632fea38d461983e031dfe7d",
+    "converter_version": 1,
+    "markdown_sha256": "d8cf36483ab07d4e844e7aad6a96c6ef52e7499c2f4696672b2fcb7a477eb6fe"
+  },
+  "fetched_at": "2026-09-14T13:30:40+00:00",
+  "source_snapshot_sha256": "50e193d4626a436abd99c0467390ac4d1db7bec335f9fe7e21904abcc4e595d5",
+  "images": {},
+  "local_only": true
+}

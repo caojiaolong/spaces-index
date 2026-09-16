@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "5525",
+    "title": "用Numpy实现高效的Apriori算法",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/5525",
+    "date": "2018-05-10",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 0,
+    "display_formula_count": 0,
+    "image_count": 1,
+    "heading_count": 0,
+    "code_block_count": 2,
+    "source_text_sha256": "af4af5d62a89713a71c6b8a9c74adde15e5bf381a384fb24a2f7f9a1bfe260a4",
+    "output_text_sha256": "af4af5d62a89713a71c6b8a9c74adde15e5bf381a384fb24a2f7f9a1bfe260a4",
+    "latex_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "body_sha256": "6952253013108c2ee80c6dddb03d21989f310a960184ae19c3488ea97054303e",
+    "converter_version": 1,
+    "markdown_sha256": "bb3876b5eb1d97056af876412dc99128934d84b2aa98dc27026d6a15aa95c974"
+  },
+  "fetched_at": "2026-09-14T13:26:59+00:00",
+  "source_snapshot_sha256": "f631ac12bd6c5feb42c95ed98796cb23edb97eb48f11233e1c0991c972f409c0",
+  "images": {},
+  "local_only": true
+}

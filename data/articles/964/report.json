@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "964",
+    "title": "哈勃定律——宇宙各向同性的体现",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/964",
+    "date": "2010-10-04",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 19,
+    "display_formula_count": 0,
+    "image_count": 3,
+    "heading_count": 0,
+    "code_block_count": 0,
+    "source_text_sha256": "2c9cc83bce81aff31f0acc7bd67feb170b290cb8d3c1aa8da9422421f01d4887",
+    "output_text_sha256": "2c9cc83bce81aff31f0acc7bd67feb170b290cb8d3c1aa8da9422421f01d4887",
+    "latex_sha256": "617c3385ad5155f0021fc85b745ca68b02da215927078cee00127cf8d1580868",
+    "body_sha256": "934a0fab964cc5bb10ef40b0792a832797acbf66a0d8e0665017dc99d28353ad",
+    "converter_version": 1,
+    "markdown_sha256": "f452ee22b5f0c5f311ff4004c62b8132e0acdf13c8f44830af4ce1b0f4209dd5"
+  },
+  "fetched_at": "2026-09-14T14:29:27+00:00",
+  "source_snapshot_sha256": "41128b49157328022227dbf2fe2924a829654f84ad8059e598bff191a972c21c",
+  "images": {},
+  "local_only": true
+}

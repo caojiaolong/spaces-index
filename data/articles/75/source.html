@@ -1,0 +1,23 @@
+<div class="PostContent" id="PostContent">
+<p><strong><span style="color:Red">本文不是微积分教程，而是发表自己学习中的一些看法，以及与同好们讨论相关问题。</span></strong></p><p>拿起任何一本“微积分”教程，都可以看见那专业而严格的数学语言，因此很多人望而生畏。的确，由于牛顿和莱布尼茨创立的微积分是不严格的，因此引发了第二次数学危机。经过法国数学家柯西和德国数学家魏尔斯特拉斯的努力，使得微积分有了前所未有的严密化，克服了第二次数学危机。加之后来的第三次数学危机，数学就更加严密了。</p><p>但是对于初学者，严密化的微积分令人十分费解。因此，我们不妨按照微积分的创立顺序，即“不严密——严密”的顺序来学习。这样不仅能够让我们更高效率地学习，而且增加学习数学的兴趣。</p><p>一般来讲，微积分的教程的顺序为：<span style="color:Red">集合、映射，函数、极限、导数、微分、积分、...</span>一直深入下去的。其中“集合、映射，函数”这三个部分只是为了严密地给出定义，真正的求解是从极限开始的（当然前面的基础也不可忽略）。</p><p>极限的意义为：当函数$f(x)$中，x以无限接近的程度去逼近预先给出的$x_0$（或者是$\infty$，<span style="color:Red"><strong>这里是“无限接近”，并不等于，是克服数学危机的主要步骤</strong></span>），求得$f(x)$的值。若$f(x)$趋向一个确定的值，则称极限存在；反之则极限不存在。</p><p>注：当$x_0=\infty$或者$x_0=0$的时候，有正负之分。即$x_0=+\infty,x_0=-\infty$或者$x_0=+0,x_0=-0$，<span style="color:Green">极限存在的条件，除了要趋向一个稳定的值外，对于正负的极限也必须相等</span>，比如$\lim_{x \to +\infty} f(x)=\lim_{x \to -\infty} f(x)$，这样才能够称为极限存在。若$\lim_{x \to +\infty} f(x) \neq \lim_{x \to -\infty} f(x)$，则极限不存在。</p><p><span style="color:Green"><strong>微积分的运算过程是：先运算、化简，然后取值代入。</strong></span></p><p>下面是一些关于求极限的练习题目，我进行了解答。这只是我认为值得一写的题目，并不全面。解答的过程有可能不严密，但是有效，这是我的风格^_^：</p><p><strong>(1) $\lim_{n \to \infty} (\sqrt{n^4+n+1}-n^2)(n+3)$</strong></p><p><strong>解答：</strong><br/>
+<span style="color:Red">这首先要了解一条公式：$\sqrt{a^2+b}=a+\frac{b}{2a+\frac{b}{2a+\frac{b}{2a+...}}}$，我是根据一种方程迭代法推导出来的。应用到求极限很方便。</span>如下：<br/>
+$$\lim_{n \to \infty} (\sqrt{n^4+n+1}-n^2)(n+3) \\ =\lim_{n \to \infty} (n^2+\frac{n+1}{2n^2+\frac{n+1}{2n^2+...}}-n^2)(n+3) \\ =\lim_{n \to \infty} \frac{(n+1)(n+3)}{2n^2+\frac{n+1}{2n^2+...}}$$</p><p>因为$\lim_{n \to \infty} \frac{n+1}{2n^2}  \to 0$，所以可以忽略后面的，只考虑<br/>
+$$\lim_{n \to \infty} \frac{(n+1)(n+3)}{2n^2} \\ =\lim_{n \to \infty} 1/2 (1+1/n)(1+3/n)=1/2$$</p><p><strong>(2) $\lim_{x \to \infty} \frac{\sqrt[3]{x} sin x}{x+1}$</strong></p><p><strong>解答：</strong><br/>
+$$\frac{\sqrt[3]{x} \sin x}{x+1} &lt; \frac{\sqrt[3]{x} \sin x}{x} = x^{-2/3}\sin x$$<br/>
+当$x \to \infty$，有$x^{-2/3}  \to 0,|sin x| \leq 1$，所以<br/>
+$$\lim_{x \to \infty} \frac{\sqrt[3]{x} \sin x}{x+1} \to 0$$</p><p><strong>(3) $\lim_{n \to 0} \frac{e^n-1}{n}=1$</strong></p><p><strong>解答：</strong><br/>
+$e^n=1+n+\frac{n^2}{2!}+\frac{n^3}{3!}+\frac{n^4}{4!}+...$，所以有<br/>
+$$\lim_{n \to 0} \frac{e^n-1}{n} \\ =\lim_{n \to 0} \frac{n+\frac{n^2}{2!}+\frac{n^3}{3!}+\frac{n^4}{4!}+...}{n} \\ =\lim_{n \to 0} 1+\frac{n}{2!}+\frac{n^2}{3!}+\frac{n^3}{4!}+...=1$$</p><p><strong>(4) $\lim_{x \to 0} \frac{\sqrt{1+x sin x}-1}{e^{x^2}-1}$</strong></p><p><strong>解答：</strong><br/>
+这是我认为比较难的题目，要根据结论(3)<br/>
+$$\lim_{x \to 0} \frac{\sqrt{1+x \sin x}-1}{e^{x^2}-1} \\ = \lim_{x \to 0} \frac{(\frac{x \sin x}{2+\frac{x \sin x}{2+...}})}{e^{x^2}-1}$$<br/>
+因为$\lim_{x \to 0} x sin x \to 0$，所以把后面的忽略，只考虑：<br/>
+$$\lim_{x \to 0} \frac{x \sin x}{(e^{x^2}-1)\cdot 2} \\ =\lim_{x \to 0} \frac{{\sin x}/{x}}{{e^{x^2}-1}/{x^2}\cdot 2}$$<br/>
+已知：$\lim_{x \to 0} \frac{sin x}{x} \to 1,\lim_{x \to 0} \frac{e^{x^2}-1}{x^2} \to 1$，<br/>
+所以<br/>
+$$\lim_{x \to 0} \frac{\sqrt{1+x \sin x}-1}{e^{x^2}-1} \to 1/2$$</p><p><span style="color:Red"><strong>陆续补充中，将会与大家探讨更多的内容。</strong></span></p>
+
+
+
+
+
+</div>

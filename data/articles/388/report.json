@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "388",
+    "title": "星座计划“破产”，重返月球搁浅",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/388",
+    "date": "2010-01-31",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 0,
+    "display_formula_count": 0,
+    "image_count": 1,
+    "heading_count": 0,
+    "code_block_count": 0,
+    "source_text_sha256": "bb4851b1111df46b0ab26dd70b316ba0469f1c90592a6860bb33b378d65a17b8",
+    "output_text_sha256": "bb4851b1111df46b0ab26dd70b316ba0469f1c90592a6860bb33b378d65a17b8",
+    "latex_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "body_sha256": "fa2ddde9fd0e1ef876ddf449f477289ab5588290c85f85793f93343ce40c4410",
+    "converter_version": 1,
+    "markdown_sha256": "5c00374641ce6a7acc6ef323bc5bb28ef15c4fbb7e6646df648253524fa7cabd"
+  },
+  "fetched_at": "2026-09-14T14:42:29+00:00",
+  "source_snapshot_sha256": "ac93aa0632cb6e3f1e162b799d4759feff9ab188aee7f3f154b454990438a985",
+  "images": {},
+  "local_only": true
+}

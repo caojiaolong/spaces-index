@@ -23,7 +23,8 @@ def test_pages_workflow_routes_push_without_network_update():
     job = workflow["jobs"]["prepare"]
     steps = {step["name"]: step for step in job["steps"]}
     assert steps["Update index"]["if"] == "github.event_name != 'push'"
-    assert "--sleep 0.8" in steps["Update index"]["run"]
+    assert "--sleep 3" in steps["Update index"]["run"]
+    assert "--audience public" in steps["Update index"]["run"]
     assert steps["Commit refreshed metadata"]["if"] == (
         "github.event_name != 'push' && "
         "steps.changes.outputs.should_deploy == 'true'"
@@ -42,17 +43,20 @@ def test_pages_workflow_skips_build_and_deploy_without_changes():
     assert steps["Check for deployable changes"]["id"] == "changes"
     change_check = steps["Check for deployable changes"]["run"]
     assert '"$GITHUB_EVENT_NAME" == "push"' in change_check
-    assert "git status --porcelain -- README.md docs data" in change_check
+    assert "git status --porcelain -- README.md docs data config)" in change_check
     assert "should_deploy=false" in change_check
 
     guarded_steps = (
         "Run tests",
-        "Build site",
         "Configure GitHub Pages",
         "Upload GitHub Pages artifact",
     )
     for name in guarded_steps:
         assert steps[name]["if"] == "steps.changes.outputs.should_deploy == 'true'"
+    assert steps["Build site"]["if"] == (
+        "steps.changes.outputs.should_deploy == 'true' && "
+        "(github.event_name == 'push' || steps.update.outcome != 'success')"
+    )
 
     deploy = workflow["jobs"]["deploy"]
     assert deploy["needs"] == "prepare"
@@ -85,3 +89,24 @@ def test_pages_workflow_has_required_deployment_contract():
     assert prepare_steps["Upload GitHub Pages artifact"]["with"]["path"] == "_site"
     assert deploy_steps["Deploy GitHub Pages"]["uses"] == "actions/deploy-pages@v5"
     assert deploy_steps["Deploy GitHub Pages"]["id"] == "deployment"
+
+
+def test_unified_update_builds_public_site_and_deploys_withdrawals_after_failure():
+    steps = {step["name"]: step for step in load_workflow()["jobs"]["prepare"]["steps"]}
+    mirror = steps["Update index"]
+    assert mirror["if"] == "github.event_name != 'push'"
+    assert mirror["continue-on-error"] == "true"
+    assert "scripts/update_all.py --audience public --sleep 3" in mirror["run"]
+    assert "Update pilot Markdown" not in steps
+    assert "data/articles" in steps["Commit refreshed metadata"]["run"]
+
+
+def test_article_storage_is_included_in_full_site_updates():
+    steps = {step["name"]: step for step in load_workflow()["jobs"]["prepare"]["steps"]}
+    command = steps["Commit refreshed metadata"]["run"]
+    assert "git add -- README.md docs config data/README.md data/posts_raw.json" in command
+    for line in command.splitlines():
+        if line.strip().startswith("git add "):
+            assert "data" not in line.split()
+    assert "data/overrides.yaml data/articles" in command
+    assert "data/articles/9119" not in command and "data/articles/11882" not in command

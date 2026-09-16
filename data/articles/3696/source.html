@@ -1,0 +1,90 @@
+<div class="PostContent" id="PostContent">
+<h3 id="问题来源">问题来源</h3><p>笔者经常学习的数学研发论坛曾有一帖讨论下述非线性差分方程的渐近求解：<br/>
+$$a_{n+1}=a_n+\frac{1}{a_n^2},\, a_1=1$$<br/>
+原帖子<a href="http://bbs.emath.ac.cn/thread-8790-1-1.html" target="_blank">在这里</a>，从这帖子中我获益良多，学习到了很多新技巧。主要思路是通过将两边立方，然后设$x_n=a_n^3$，变为等价的递推问题：<br/>
+$$x_{n+1}=x_n+3+\frac{3}{x_n}+\frac{1}{x_n^2},\,x_1=1$$<br/>
+然后可以通过巧妙的技巧得到渐近展开式：<br/>
+$$x_n = 3n+\ln n+a+\frac{\frac{1}{3}(\ln n+a)-\frac{5}{18}}{n}+\dots$$<br/>
+具体过程就不提了，读者可以自行到上述帖子学习。</p><p>然而，这种形式的解虽然精妙，但存在一些笔者不是很满意的地方：</p><blockquote>1、解是渐近的级数，这就意味着实际上收敛半径为0；<br/>
+2、是$n^{-k}$形式的解，对于较小的$n$难以计算，这都使得高精度计算变得比较困难；<br/>
+3、当然，题目本来的目的是渐近计算，但是渐近分析似乎又没有必要展开那么多项；<br/>
+4、里边带有了一个本来就比较难计算的极限值$a$；<br/>
+5、求解过程似乎稍欠直观。</blockquote><p>当然，上面这些缺点，有些是鸡蛋里挑骨头的。不过，也正是这些缺点，促使我寻找更好的形式的解，最终导致了这篇文章。</p><h3 id="隐式解">隐式解</h3><p>递推<br/>
+$$x_{n+1}=x_n+3+\frac{3}{x_n}+\frac{1}{x_n^2},\,x_1=1$$<br/>
+的第一级渐近解是通过略去后面的$\frac{3}{x_n}+\frac{1}{x_n^2}$得出的，得到$x_{n+1}=x_n+3$，所以$x_n=3n-2$。</p><p>接下来的思路有很多，比如迭代、待定系数等，都可以求得渐近解，但是我尝试了另外一条途径：求隐式的解。首先我们考虑：<br/>
+$$x_{n+1}+f(x_{n+1})=x_n+3+\frac{3}{x_n}+\frac{1}{x_n^2}+f\left(x_n+3+\frac{3}{x_n}+\frac{1}{x_n^2}\right)$$<br/>
+将最后一项在$x_n$处展开至1阶：<br/>
+$$x_{n+1}+f(x_{n+1})=x_n+3+\frac{3}{x_n}+\frac{1}{x_n^2}+f(x_n)+f'(x_n)\left(3+\frac{3}{x_n}+\frac{1}{x_n^2}\right)$$<br/>
+以$1/x_n$为阶，略去二阶项，得到<br/>
+$$x_{n+1}+f(x_{n+1})=x_n+f(x_n)+3+3\left[\frac{1}{x_n}+f'(x_n)\right]$$<br/>
+如果让$f(x_n)=-\ln x_n$，那么方括号就为0，于是得到<br/>
+$$x_{n+1}-\ln x_{n+1}=x_n-\ln x_n+3$$<br/>
+这个等式的精度是$\mathcal{O}(x_n^{-2})$，为了兼顾简洁与精度，从$x_2=8$出发比较好，这样<br/>
+$$x_n - \ln x_n = 3(n-2)+8-\ln 8$$<br/>
+这就是一个隐式（近似）解，精度是$\mathcal{O}(x_n^{-1})$。它几乎对于所有的$n$都保持同样的精度。<strong><font color="red">这里的要点就是引入新的项，使得它变成了线性的递推（等差数列）</font></strong>。这个过程可以继续下去，在前述的基础上引入新的函数，继续将它展开到二阶，算得到：<br/>
+$$x_{n+1}-\ln x_{n+1}+\frac{5}{6x_{n+1}}=x_n-\ln x_n+\frac{5}{6x_n}+3$$<br/>
+它具有$\mathcal{O}(x_n^{-3})$的精度，由此可以解得精度为$\mathcal{O}(x_n^{-2})$的隐式解。</p><h3 id="为什么要隐式解？">为什么要隐式解？</h3><p>为什么要寻找隐式解？大概有如下的好处。</p><p>一般情况下，传统渐近解是通过泰勒级数展开得到的，泰勒级数展开本身就存在限制（要求可导且导函数有限），因此容易出现渐近解，即使不渐近，收敛半径也可能较小。而隐函数的解通常来说比较稳定，收敛性比较好，虽然可能还是渐近的，但是发散速度会降低不少。比如$x=\sqrt{1+t}$，展开为幂级数，收敛半径仅为$1$，但是可以表示为隐函数形式$x^2+1=t$，保持了精度和简洁。</p><p>简而言之，如果显式展开式能做到的，基本上隐函数也能做到；而显式展开式不能做到的，隐函数也可能做到。因此显然隐函数性能会更好。</p><p>此外，对于本文的递推来说，隐函数的解更加简洁，不到处出现难以计算的$a$。可能读者觉得，每求一次$x_n$都需要求解一次非线性方程，比较复杂。事实上，如果愿意的话，<strong><font color="red">可以直接通过求反函数来从隐式解获得显式解，但是这又回到了渐近级数了</font></strong>，就没有什么必要了。</p><h3 id="利于编程的递推格式">利于编程的递推格式</h3><p>前面所计算的两项，仅仅是介绍性的演示，由于阶数不高，计算也不困难，但是为了进一步计算下去，尤其是为了编程计算，需要构造便于理解的递推格式，就好比摄动法的递推计算。</p><p>假设引入的$f(x_n)$是精确的，那么显然，对于精确的$f(x)$，需要满足<br/>
+$$\frac{3}{x}+\frac{1}{x^2}+f\left(x+3+\frac{3}{x}+\frac{1}{x^2}\right)-f(x)=0$$<br/>
+这时候原来的递推就变成了<br/>
+$$x_{n+1}+f(x_{n+1})=x_{n}+f(x_{n})+3$$<br/>
+求解就容易多了。</p><p>经过分析，可以通过人工引入参数$q$，并且将$f(x)$当作$x,q$的二元函数$f(x,q)$，求得$f(x,q)$的级数解，然后让$q=1$，得到$f(x)=f(x,1)$。引入的格式如下：<br/>
+$$\frac{3q}{x}+\frac{q^2}{x^2}+f\left(x+3q+\frac{3q^2}{x}+\frac{q^3}{x^2},q\right)-f(x,q)=0$$<br/>
+这样引入的思路是：以$x^{-1}$为无穷小阶，且让$f^{(n)}(x)$也具有$x^{-n}$的阶，所以，在$f()$内$x^{-n}\to q^{n+1}x^{-n}$，在$f()$外有$x^{-n} \to q^n x^{-n}$。这时候，可以用Mathematica之类的软件，很快展开它：</p><blockquote>Series[f[x + 3\cdot q + 3\cdot q^2/x + q^3/x^2, q] - f[x, q] + 3\cdot q/x +<br/>
+q^2/x^2, {q, 0, 5}]</blockquote><p>结果是<br/>
+$$\begin{aligned}&amp;q \left(3 f^{(1,0)}(x,0)+\frac{3}{x}\right)\\<br/>
++&amp;q^2 \left(\frac{3 f^{(1,0)}(x,0)}{x}+3 f^{(1,1)}(x,0)+\frac{9}{2} f^{(2,0)}(x,0)+\frac{1}{x^2}\right)\\<br/>
++&amp;q^3 \left(\frac{f^{(1,0)}(x,0)}{x^2}+\frac{3 f^{(1,1)}(x,0)}{x}+\frac{3}{2} f^{(1,2)}(x,0)\right.\\<br/>
+&amp;\qquad\qquad\left.+\frac{9 f^{(2,0)}(x,0)}{x}+\frac{9}{2} f^{(2,1)}(x,0)+\frac{9}{2} f^{(3,0)}(x,0)\right)\\<br/>
++&amp;\dots<br/>
+\end{aligned}$$<br/>
+让$q$的各阶系数为0，逐次解得：<br/>
+$$\begin{aligned}&amp;f^{(0,0)}(x,0)=-\ln x\\<br/>
+&amp;f^{(0,1)}(x,0)=\frac{5}{6x}\\<br/>
+&amp;f^{(0,2)}(x,0)=\frac{4}{3 x^2}\\<br/>
+&amp;\dots<br/>
+\end{aligned}$$<br/>
+因此<br/>
+$$f(x)=f(x,1)=-\ln x+\frac{5}{6x}+\frac{2}{3 x^2}+\dots$$<br/>
+也就是<br/>
+$$\begin{aligned}&amp;x_{n+1}-\ln x_{n+1}+\frac{5}{6x_{n+1}}+\frac{2}{3 x_{n+1}^2}\\<br/>
+=&amp;x_{n}-\ln x_{n}+\frac{5}{6x_{n}}+\frac{2}{3 x_{n}^2}+3\end{aligned}$$<br/>
+得到<br/>
+$$\begin{aligned}&amp;x_{n}-\ln x_{n}+\frac{5}{6x_{n}}+\frac{2}{3 x_{n}^2}\\<br/>
+=&amp;3(n-2)+8-\ln 8+\frac{5}{6\times 8}+\frac{2}{3\times 8^2}\end{aligned}$$<br/>
+这具有$\mathcal{O}(x_n^{-3})$的精度。</p><p>将思路稍加变动，就可以用Mathematica写出自动计算程序：</p><blockquote>g[x_] = 0;<br/>
+ff[x_] = 3\cdot 1/x + 1/x^2<br/>
+Do[e = q^n;<br/>
+g[x_] = g[x] +<br/>
+q^n\cdot Integrate[-D[<br/>
+f[x + 3\cdot q\cdot e + ff[x/q]\cdot e\cdot q, q] - f[x, q] +<br/>
+g[x + 3\cdot q + ff[x/q]\cdot q] - g[x] + ff[x/q], {q,<br/>
+n + 1}] /. {q -&gt; 0, f -&gt; 0} // Simplify, x]/<br/>
+3/(n + 1)!;, {n, 0, 5}]<br/>
+h[x_] = g[x] /. {q -&gt; 1} // Expand</blockquote><p>通过修改{n, 0, 5}中的5可以增减精度。上述代码给出：<br/>
+$$f(x)=-\ln x+\frac{5}{6 x}+\frac{2}{3 x^2}+\frac{77}{108 x^3}+\frac{133}{240 x^4}-\frac{2669}{5400 x^5}＋\dots$$</p><h3 id="渐近结果与极限值">渐近结果与极限值</h3><p>此时解得<br/>
+$$x_n+f(x_n)=3(n-k)+x_k+f(x_k),\,\text{以}x_k\text{为初值的情况下}$$<br/>
+设<br/>
+$$a=x_k+f(x_k)-3k+\ln 3$$<br/>
+得到<br/>
+$$x_n + f(x_n)=3n+a-\ln 3$$<br/>
+如果要得到显式的渐近表达式，可以以上式为基础构建迭代式：<br/>
+$$x^{(k+1)}_n=3n+a-\ln 3 -f(x^{(k)}_n)$$<br/>
+这里的$x^{(k)}_n$指的是$x_n$的第$k$级近似。以$x^{(0)}_n=3n+a-\ln 3$为初值，进行迭代，并展开，得到<br/>
+$$\begin{aligned}x_n=&amp;3n+a+\ln n+\frac{6 a+6 \ln n-5}{18 n}+\\<br/>
+&amp;\frac{-3 a^2-6 a \ln n+11 a-3 \ln ^2 n+11 \ln n-9}{54 n^2}+\dots\end{aligned}$$<br/>
+这跟研发论坛上mathe给出的渐近式是一样的。</p><p>迭代的Mathematica代码为（接前）：</p><blockquote>p[n_] = 3\cdot n + a - Log[3];<br/>
+Do[p[n_] =<br/>
+Normal[Series[-h[p[n]] + 3\cdot n + a - Log[3], {n, Infinity, 5}]], {i,<br/>
+0, 5}]<br/>
+Series[p[n], {n, Infinity, 5}]</blockquote><p>由此发现，这里的$a$正好是极限值$a$：<br/>
+$$a=\lim_{n\to\infty} (x_n - 3n - \ln n)$$<br/>
+这也正好同时给出了求$a$的渐近表达式：<br/>
+$$x_k+f(x_k)-3k+\ln 3$$<br/>
+利用wayne算出的$x_{10^9}$，代入上式，算得<br/>
+$$a=1.1352558473155037141953943477479\dots$$</p>
+
+
+
+
+
+</div>

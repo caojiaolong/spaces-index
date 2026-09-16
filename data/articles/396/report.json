@@ -1,0 +1,39 @@
+{
+  "metadata": {
+    "id": "396",
+    "title": "大气光学质量(Airmass)",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/396",
+    "date": "2010-02-04",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "source_dom_exact": true,
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "attributes_exact": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 16,
+    "display_formula_count": 9,
+    "image_count": 2,
+    "heading_count": 0,
+    "code_block_count": 0,
+    "source_text_sha256": "ba1bfd3f2b63ddcfe76008bbb692b7afe7f4605dede016c0ab5c6bb75144b48d",
+    "output_text_sha256": "ba1bfd3f2b63ddcfe76008bbb692b7afe7f4605dede016c0ab5c6bb75144b48d",
+    "latex_sha256": "9facd9358c5bd5c7e7c68aeeb68e37ca0af4d8d23cef49235c2721faf70e3f80",
+    "body_sha256": "d2ae30142d1ecbfdcca54825d88651c1140de93e1955d724b019cce65c48657b",
+    "converter_version": 1,
+    "format": "html-v1",
+    "source_warnings": [],
+    "fallback_reason": "Unsupported body element: del",
+    "markdown_sha256": "aca697872c228dd749b2600b6a2e8b0a08452f8c5d87467d4804daba46dad4b1"
+  },
+  "fetched_at": "2026-09-14T14:42:13+00:00",
+  "source_snapshot_sha256": "200a323f4db082c083dd10228df3ebebfa6eb200c26378b45c011617d96582a8",
+  "images": {},
+  "local_only": true
+}

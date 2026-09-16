@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "10114",
+    "title": "重温SSM（一）：线性系统和HiPPO矩阵",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/10114",
+    "date": "2024-05-24",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 200,
+    "display_formula_count": 33,
+    "image_count": 0,
+    "heading_count": 9,
+    "code_block_count": 0,
+    "source_text_sha256": "b879ff5b8ae814466271610270364b87fbc3206804e9341ad5308a4dbf5a3e39",
+    "output_text_sha256": "b879ff5b8ae814466271610270364b87fbc3206804e9341ad5308a4dbf5a3e39",
+    "latex_sha256": "95cb94616ed322a6c89ac13fdc94ccaa893b3d143930b5e00840f2d408c76bcf",
+    "body_sha256": "67466c71423e9a1589109674d0561349f2a393b7d8dd5fb4aa70fe5c1afb37f5",
+    "converter_version": 1,
+    "markdown_sha256": "0b3aa39241a6c954e370267bd2a38e6a4893dd99a63b7f10065a99d08328ac68"
+  },
+  "fetched_at": "2026-09-14T12:48:29+00:00",
+  "source_snapshot_sha256": "4a2990929afcf1fe7923c3011f1ad8229ced9f7ec95d37c8b4df0cdbe98bd112",
+  "images": {},
+  "local_only": true
+}

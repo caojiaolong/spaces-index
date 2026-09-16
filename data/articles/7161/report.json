@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "7161",
+    "title": "用bert4keras做三元组抽取",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/7161",
+    "date": "2020-01-03",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 15,
+    "display_formula_count": 2,
+    "image_count": 1,
+    "heading_count": 5,
+    "code_block_count": 0,
+    "source_text_sha256": "376f47c72cb5cb4c8929a9073a6a8355ef5d7143adbeb38edddfdfa1b3bedc0a",
+    "output_text_sha256": "376f47c72cb5cb4c8929a9073a6a8355ef5d7143adbeb38edddfdfa1b3bedc0a",
+    "latex_sha256": "71775048fdbae01841862979ad2e83a65a77ccade4d135c1ccbc84f065eadd9d",
+    "body_sha256": "7cf93293ad2c0819ab0bc01ef3359cb8c675a7c1a88982195a46585b15576283",
+    "converter_version": 1,
+    "markdown_sha256": "a76b2f3f53facb7c34bb70261d41e0325d1b1dc63b382390857e362cf9430754"
+  },
+  "fetched_at": "2026-09-14T13:15:53+00:00",
+  "source_snapshot_sha256": "63be287ed4edce40ff14e1fb796701ba27992cd16ad5399d28a4d4f81b26ea5d",
+  "images": {},
+  "local_only": true
+}

@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "1331",
+    "title": "2010年广东省高中学生化学竞赛试题和答案",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/1331",
+    "date": "2011-04-23",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 0,
+    "display_formula_count": 0,
+    "image_count": 0,
+    "heading_count": 0,
+    "code_block_count": 0,
+    "source_text_sha256": "d7d7b5503e753d4c91c7f0e370d6fbb9e1c90836e42ef19ac90c7adee11eff6b",
+    "output_text_sha256": "d7d7b5503e753d4c91c7f0e370d6fbb9e1c90836e42ef19ac90c7adee11eff6b",
+    "latex_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "body_sha256": "1ef0f999b6a16447ec1d2eb5b7e4312f01fb2931f370bfb560faf068ee3de483",
+    "converter_version": 1,
+    "markdown_sha256": "e66298fb5d148b42b5ebb12b6fcd3e283a82d933d730d38b775ecca910355651"
+  },
+  "fetched_at": "2026-09-14T14:22:07+00:00",
+  "source_snapshot_sha256": "c072891d1cfb4b0fe270a5c6ab35df7d49ee0ff4f11ce4e8509ce8b5c89b0381",
+  "images": {},
+  "local_only": true
+}

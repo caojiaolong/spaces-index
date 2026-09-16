@@ -1,0 +1,36 @@
+<div class="PostContent" id="PostContent">
+<p>昨天看到 <a href="https://x.com/Ji_Ha_Kim" target="_blank">@Ji_Ha_Kim</a> 同学分享了一篇有趣的论文<a href="https://papers.cool/arxiv/2602.05266" target="_blank">《Beyond Cosine Similarity》</a>，里边提出基于排序不等式来构建新的更宽松的相似度指标，看了后感觉颇有意思，特来简单记录一下。</p><h2 id="余弦相似度">余弦相似度</h2><p>对于两个向量$\boldsymbol{x},\boldsymbol{y}\in\mathbb{R}^d$，常用的归一化相似度指标是余弦相似度：<br/>
+\begin{equation}\cos(\boldsymbol{x},\boldsymbol{y}) = \frac{\boldsymbol{x}\cdot \boldsymbol{y}}{\Vert\boldsymbol{x}\Vert\, \Vert\boldsymbol{y}\Vert} \in [-1, 1]\end{equation}<br/>
+抛开几何意义，从纯代数的角度看，余弦相似度是基于柯西不等式<br/>
+\begin{equation}-\Vert\boldsymbol{x}\Vert\, \Vert\boldsymbol{y}\Vert \leq \boldsymbol{x}\cdot \boldsymbol{y}\leq \Vert\boldsymbol{x}\Vert\, \Vert\boldsymbol{y}\Vert\end{equation}<br/>
+构建的归一化内积，当$\cos(\boldsymbol{x},\boldsymbol{y})=\pm 1$时，意味着存在$k &gt; 0$使得$\boldsymbol{y} = \pm k\boldsymbol{x}$，这表明余弦相似度对模长不敏感，它度量的是两个向量方向的相似程度，或者说线性相关程度。特别地，由均值不等式可得$\Vert\boldsymbol{x}\Vert\, \Vert\boldsymbol{y}\Vert \leq \frac{1}{2}(\Vert\boldsymbol{x}\Vert^2 +  \Vert\boldsymbol{y}\Vert^2)$，代入到柯西不等式进一步放缩得<br/>
+\begin{equation}-\frac{1}{2}(\Vert\boldsymbol{x}\Vert^2 +  \Vert\boldsymbol{y}\Vert^2) \leq \boldsymbol{x}\cdot \boldsymbol{y} \leq \frac{1}{2}(\Vert\boldsymbol{x}\Vert^2 +  \Vert\boldsymbol{y}\Vert^2)\end{equation}<br/>
+第一个等号成立的条件是$\boldsymbol{x}=-\boldsymbol{y}$，第二个等号成立的条件是$\boldsymbol{x}=\boldsymbol{y}$，由此我们可以定义新的归一化内积<br/>
+\begin{equation}\newcommand{dcos}{\mathop{\text{dcos}}}\dcos(\boldsymbol{x},\boldsymbol{y}) = \frac{\boldsymbol{x}\cdot \boldsymbol{y}}{\frac{1}{2}(\Vert\boldsymbol{x}\Vert^2 +  \Vert\boldsymbol{y}\Vert^2)}\end{equation}<br/>
+这时候有$\dcos(\boldsymbol{x},\boldsymbol{y}) = \pm 1 \Leftrightarrow \boldsymbol{x}=\pm\boldsymbol{y}$，即$\dcos$是度量两个向量完全一致程度的指标。</p><h2 id="排序不等式">排序不等式</h2><p>对于内积$\boldsymbol{x}\cdot \boldsymbol{y}$，还成立排序不等式<br/>
+\begin{equation}\boldsymbol{x}^{\downarrow}\cdot \boldsymbol{y}^{\uparrow}=\boldsymbol{x}^{\uparrow}\cdot \boldsymbol{y}^{\downarrow}\leq \boldsymbol{x}\cdot \boldsymbol{y} \leq \boldsymbol{x}^{\uparrow}\cdot \boldsymbol{y}^{\uparrow} = \boldsymbol{x}^{\downarrow}\cdot \boldsymbol{y}^{\downarrow}\end{equation}<br/>
+这里$\boldsymbol{x}^{\downarrow},\boldsymbol{x}^{\uparrow}$是指将$\boldsymbol{x}$的各个分量按降/升序排列得到的新向量（$\boldsymbol{y}$同理），简单来说就是“倒序内积 ≤ 乱序内积 ≤ 同序内积”。第一个等号成立的条件，是$\boldsymbol{x},\boldsymbol{y}$完全反序，即对任意$i,j$都恒成立$(x_i - x_j)(y_i - y_j)\leq 0$；第二个等号成立的条件，则是$\boldsymbol{x},\boldsymbol{y}$完全同序了，即$(x_i - x_j)(y_i - y_j)\geq 0$。</p><p>显然，重新排序不改变模长，即$\Vert\boldsymbol{x}^{\downarrow}\Vert=\Vert\boldsymbol{x}^{\uparrow}\Vert=\Vert\boldsymbol{x}\Vert$，所以进一步结合柯西不等式得<br/>
+\begin{equation}-\Vert\boldsymbol{x}\Vert\, \Vert\boldsymbol{y}\Vert \leq \boldsymbol{x}^{\uparrow}\cdot \boldsymbol{y}^{\downarrow}\leq \boldsymbol{x}\cdot \boldsymbol{y} \leq \boldsymbol{x}^{\uparrow}\cdot \boldsymbol{y}^{\uparrow} \leq \Vert\boldsymbol{x}\Vert\, \Vert\boldsymbol{y}\Vert\end{equation}<br/>
+这说明对于$\boldsymbol{x}\cdot \boldsymbol{y}$来说，排序不等式比柯西不等式更加紧凑。排序不等式的标准证明方式是局部调整法，从恒等式<br/>
+\begin{equation}(x_i - x_j)(y_i - y_j) = (x_i y_i + x_j y_j) - (x_i y_j + x_j y_i)\end{equation}<br/>
+出发，右端第一项是$(x_i, x_j)$与$(y_i, y_j)$的内积，第二项是交换$x_i,x_j$或$y_i,y_j$的内积，如果$x_i &gt; x_j$且$y_i &gt; y_j$（同序），那么左端大于0，意味着交换从同序变成反序后，内积会变小。这样一来，最大就是在完全同序情况下取到，同理最小就是在完全反序下取到。</p><h2 id="排序相似度">排序相似度</h2><p>如果已知$l(\boldsymbol{x},\boldsymbol{y})\leq \boldsymbol{x}\cdot \boldsymbol{y} \leq u(\boldsymbol{x},\boldsymbol{y})$，并且两边等号都是可达的，那么可以一般地构建相似度指标<br/>
+\begin{equation}2\cdot\frac{\boldsymbol{x}\cdot \boldsymbol{y} - l(\boldsymbol{x},\boldsymbol{y})}{u(\boldsymbol{x},\boldsymbol{y}) - l(\boldsymbol{x},\boldsymbol{y})} - 1 = \frac{2\cdot\boldsymbol{x}\cdot \boldsymbol{y} - l(\boldsymbol{x},\boldsymbol{y}) - u(\boldsymbol{x},\boldsymbol{y})}{u(\boldsymbol{x},\boldsymbol{y}) - l(\boldsymbol{x},\boldsymbol{y})} \in [-1, 1]\end{equation}<br/>
+代入排序不等式，得<br/>
+\begin{equation}\newcommand{rcos}{\mathop{\text{rcos}}}\rcos(\boldsymbol{x},\boldsymbol{y}) = \frac{2\cdot\boldsymbol{x}\cdot \boldsymbol{y} - \boldsymbol{x}^{\uparrow}\cdot\boldsymbol{y}^{\downarrow} - \boldsymbol{x}^{\uparrow}\cdot\boldsymbol{y}^{\uparrow}}{\boldsymbol{x}^{\uparrow}\cdot\boldsymbol{y}^{\uparrow} - \boldsymbol{x}^{\uparrow}\cdot\boldsymbol{y}^{\downarrow}}\end{equation}<br/>
+那么$\rcos(\boldsymbol{x},\boldsymbol{y})=1$意味着$\boldsymbol{x},\boldsymbol{y}$完全同序，$\rcos(\boldsymbol{x},\boldsymbol{y})=-1$意味着$\boldsymbol{x},\boldsymbol{y}$完全反序，如果说余弦相似度描述了线性相关程度，那么$\rcos$一定程度上描述了一些的非线性相关性。$\rcos$在平移和正缩放下保持不变，即<br/>
+\begin{equation}\rcos(a \boldsymbol{x} + b\boldsymbol{1},c\boldsymbol{y} + d\boldsymbol{1})=\rcos(\boldsymbol{x},\boldsymbol{y})\end{equation}<br/>
+但对一般的逐分量严格单调变换（如逐分量立方）并非如此，即$\rcos$保留并利用了数值的大小，而不只依赖排序。</p><h2 id="联系与区别">联系与区别</h2><p>需要指出的是，虽然本文是受<a href="https://papers.cool/arxiv/2602.05266" target="_blank">《Beyond Cosine Similarity》</a>启发而来，但这里构建的排序相似度跟原论文略有不同，原论文的构建方式是（$\newcommand{recos}{\mathop{\text{recos}}}\recos$也是原论文的记号）<br/>
+\begin{equation}\recos(\boldsymbol{x},\boldsymbol{y}) = \frac{\boldsymbol{x}\cdot\boldsymbol{y}}{|\boldsymbol{x}^{\uparrow}\cdot\boldsymbol{y}^{\updownarrow}|},\qquad \boldsymbol{y}^{\updownarrow} = \begin{cases}\boldsymbol{y}^{\uparrow}, &amp; \boldsymbol{x}\cdot\boldsymbol{y} &gt; 0\\ \boldsymbol{y}^{\downarrow}, &amp; \boldsymbol{x}\cdot\boldsymbol{y} &lt; 0\end{cases}\end{equation}<br/>
+也就是按内积的正负选择同序或反序的界。这样定义虽然也能将结果限制在$[-1,1]$内，但此时内积的正负无法用来区分同序和反序，个人认为不如本文的定义合理。</p><p>举个例子，$\boldsymbol{x}=(1,2,3), \boldsymbol{y}=(6,5,4)$，这两个向量是完全反序的，我们认为排序相似度指标应该至少给出负数的结果，但很显然$\recos(\boldsymbol{x},\boldsymbol{y})$给出的结果是正的，而$\rcos(\boldsymbol{x},\boldsymbol{y})$则能给出负数的结果。本文的定义直接用排序不等式的双边界做归一化，让$\pm 1$分别锚定完全同序与完全反序，窃以为语义上更加合理。</p><p>当然，实际应用中究竟是$\rcos$还是$\recos$更合理，这取决于具体场景，这里声称的更加合理，仅仅是针对“排序相似度”这一名词的含义而言的。</p><h2 id="秩相关系数">秩相关系数</h2><p>如果我们将$\boldsymbol{x},\boldsymbol{y}$视为一个个二维数据点$(x_1,y_1),(x_2,y_2),\cdots$，那么余弦相似度跟它们的<a href="https://en.wikipedia.org/wiki/Pearson_correlation_coefficient" target="_blank">线性相关系数（Pearson correlation coefficient）</a>有关：<br/>
+\begin{equation}\mathop{\text{pearson}}(\boldsymbol{x}, \boldsymbol{y}) = \cos(\boldsymbol{x}-\bar{\boldsymbol{x}}, \boldsymbol{y}-\bar{\boldsymbol{y}})\end{equation}<br/>
+其中$\bar{\boldsymbol{x}},\bar{\boldsymbol{y}}$是$\boldsymbol{x}, \boldsymbol{y}$各分量的均值。在线性相关系数基础上，衍生出了<a href="https://en.wikipedia.org/wiki/Spearman%27s_rank_correlation_coefficient" target="_blank">秩相关系数（Spearman's rank correlation coefficient）</a>：<br/>
+\begin{equation}\mathop{\text{spearman}}(\boldsymbol{x}, \boldsymbol{y}) = \mathop{\text{pearson}}(\boldsymbol{r}_x, \boldsymbol{r}_y)\end{equation}<br/>
+$\boldsymbol{r}_x,\boldsymbol{r}_y$分别是$\boldsymbol{x}, \boldsymbol{y}$的次序向量，即如果$x_i$是$\boldsymbol{x}$从小到大第$k$个分量，那么$(\boldsymbol{r}_x)_i=k$。由定义可知，秩相关系数完全忽略了数据本身的大小，只关心数据的顺序，此前我们在<a href="/archives/8321" target="_blank">评测语义相似度</a>时，就用到了这个指标。有趣的是，秩相关系数也可以视为$\rcos$的一个特例<br/>
+\begin{equation}\mathop{\text{spearman}}(\boldsymbol{x}, \boldsymbol{y}) = \rcos(\boldsymbol{r}_x, \boldsymbol{r}_y)\end{equation}<br/>
+这个等式请读者自行验证，就不展开了。由此，$\rcos(\boldsymbol{x}, \boldsymbol{y})$可以看作是一个保留了原始数值信息的广义排序相似度。</p><h2 id="一言以蔽之">一言以蔽之</h2><p>本文介绍了从“相似度 = 归一化内积”的视角出发、基于内积的双边不等式来构建相似度指标的思路，着重讨论了基于排序不等式构建的排序相似度指标。</p>
+
+
+
+
+
+</div>

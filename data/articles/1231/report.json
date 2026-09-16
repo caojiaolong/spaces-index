@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "1231",
+    "title": "《方程与宇宙》:限制性三体的那些事儿(八)",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/1231",
+    "date": "2011-02-04",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 21,
+    "display_formula_count": 5,
+    "image_count": 0,
+    "heading_count": 0,
+    "code_block_count": 0,
+    "source_text_sha256": "18a52732db1b094c22be4f164a7efb7da2c2c831091c30f44a0aa5c9474dc89b",
+    "output_text_sha256": "18a52732db1b094c22be4f164a7efb7da2c2c831091c30f44a0aa5c9474dc89b",
+    "latex_sha256": "069e2760a809b27d8310fedc58327eda9366398c2450334f9b457d15b509424c",
+    "body_sha256": "54f2bd81a1d8e085b51cb7df1335135a01652cd3a038c64d314181304f80f40f",
+    "converter_version": 1,
+    "markdown_sha256": "33c9e70332c2f141720fdb434a4fc12ff76cd0c8969b5695bc21b7172ba240dd"
+  },
+  "fetched_at": "2026-09-14T14:24:24+00:00",
+  "source_snapshot_sha256": "2385f831836461d3271b43a4a6dfcc78d8435cb7b2b63ddd6ea4ca834b69d0ba",
+  "images": {},
+  "local_only": true
+}

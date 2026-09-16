@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "8711",
+    "title": "关于维度公式“n > 8.33 log N”的可用性分析",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/8711",
+    "date": "2021-09-27",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 16,
+    "display_formula_count": 0,
+    "image_count": 1,
+    "heading_count": 4,
+    "code_block_count": 0,
+    "source_text_sha256": "ee9f4aa67b52be60d5e36e9f9aad462b8496e567221ccf4506cdf48f38113ae9",
+    "output_text_sha256": "ee9f4aa67b52be60d5e36e9f9aad462b8496e567221ccf4506cdf48f38113ae9",
+    "latex_sha256": "9a80f248082a6bbc2a8998bc4a879a2690d5d68bfcae5f5759fef438b1a0ac5d",
+    "body_sha256": "128dde753557e8433b9fd16c18a8e8bdb944b32d0103ac9920f1b35a520a90d7",
+    "converter_version": 1,
+    "markdown_sha256": "535dcdb3875f9e09e9a83d07be79776a078c95531e5a0b21d86399f7eb9d223f"
+  },
+  "fetched_at": "2026-09-14T13:04:00+00:00",
+  "source_snapshot_sha256": "cd1343aa548de811279ef64d85edc8a61fb4b0b21cc931f50578c1d5864d191a",
+  "images": {},
+  "local_only": true
+}

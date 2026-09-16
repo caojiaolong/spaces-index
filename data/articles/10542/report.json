@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "10542",
+    "title": "当Batch Size增大时，学习率该如何随之变化？",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/10542",
+    "date": "2024-11-14",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 236,
+    "display_formula_count": 33,
+    "image_count": 0,
+    "heading_count": 14,
+    "code_block_count": 0,
+    "source_text_sha256": "a2f1b2d6fd9425a7fab0d931b5c9f290d32c24869598e4e2ebc4d09017a3b28e",
+    "output_text_sha256": "a2f1b2d6fd9425a7fab0d931b5c9f290d32c24869598e4e2ebc4d09017a3b28e",
+    "latex_sha256": "2f40632fdf1e6dd927d6724f9ea6d1724dead7b7084a53b11ac5c60d4a9005b5",
+    "body_sha256": "d4a0188401614a16c684a37421eef71f49612abc769d9371151061430b800b94",
+    "converter_version": 1,
+    "markdown_sha256": "cba50e2f794443e6c791bcebb6601baea96c13ac9761f62138ac7ff59af2c549"
+  },
+  "fetched_at": "2026-09-14T12:45:18+00:00",
+  "source_snapshot_sha256": "5b7ff66ef751aeb54e0f1b4cbaa5d7a39663b03b457b2d426563d5cf647d8a9b",
+  "images": {},
+  "local_only": true
+}

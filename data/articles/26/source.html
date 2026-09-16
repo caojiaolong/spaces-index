@@ -1,0 +1,29 @@
+<div class="PostContent" id="PostContent">
+<p><span style="color:red"><strong>(说明：由于本文章含有较多的根号，推荐使用IE直接阅读，或者使用IE+MathPlayer。火狐浏览器对根号的显示是相当的差。)</strong></span></p><p>大家知道，1到4次的代数方程都有求根公式（尽管未必是最简单的方法），对于1次和2次方程的求根，大家可能滚瓜烂熟了。但是你了解三次方程的解法吗？<br/>
+$$ax^3+bx^2+cx+d=0\,(a\neq0)$$</p><p>网上有不少关于这方面的资料，但是却有着两个缺点：一是缺乏描述专业数学公式的相关程序（很多网站都是这样）；二是语言过于专业，不能大众化（如维基百科）。</p><p>要了解三次方程的求根公式，首先要知道，<u><span style="color:Red">一般地，n次代数方程有n个根</span></u>。而对于最基本的三次方程$x^3+p=0$，我们有：<br/>
+$$x_1=-\sqrt[3]{p}$$<br/>
+同时根据<strong>韦达定理</strong>，我们有$x_1+x_2+x_3=0,x_1\cdot x_2\cdot x_3=-p$，我们已经知道$x_1=-\sqrt[3]{p}$，现在就变成了关于$x_2,x_3$的二次方程组，可以求解($i^2=-1$，虚数单位)：<br/>
+$$x_2=-\frac{1}{2}(-1+\sqrt{3}i)\sqrt[3]{p}, \quad x_3=-\frac{1}{2}(-1-\sqrt{3}i)\sqrt[3]{p}$$<br/>
+特别地，一般会将$\frac{1}{2}(-1+\sqrt{3}i)$写成$\omega$，于是<br/>
+$$x_2=-\sqrt[3]{p} \omega,\quad x_3=-\sqrt[3]{p}\omega ^2$$</p><p></p><div class="pic-container"><div class="typecho-caption aligncenter" style="max-width: 100%"><div style="margin: 5px"><a href="/usr/uploads/2009/07/20090719092206.jpg" target="_blank" title="点击查看原图"><img alt="图片说明：塔塔利亚" src="/usr/uploads/2009/07/20090719092206.jpg" style="max-width:100%"/></a></div><p class="typecho-caption-text">图片说明：塔塔利亚</p></div></div><p><strong>下面进入一般的三次方程的求解：</strong></p><p>对于一道三次方程$ax^3+bx^2+cx+d=0\,(a\neq 0)$，我们有可以用换元法，设$y=x+\frac{b}{3a}$，将原方程变为关于y的三次方程：<br/>
+$$y^3+py+q=0 \Leftrightarrow y^3+py=-q$$<br/>
+其中<br/>
+$$\begin{aligned}&amp;y=x+\frac{b}{3a}\\<br/>
+&amp;p=\frac{c}{a}-\frac{b^2}{3a^2}\\<br/>
+&amp;q=\frac{2{b^3}}{27a^3}-\frac{bc}{3a^2}+\frac{d}{a}\end{aligned}$$</p><p>(卡丹的证明)由于$(A-B)^3+3AB(A-B)=A^{3}-B^{3}$，所以$3AB=p,A^{3}-B^{3}=-q,y=A-B$，于是变成关于$A,B$的六次方程组，而这一道六次方程组很简单，通过换元法，就变成了一道二次方程组，可以求解。最后我们得到的结果为：<br/>
+$$\begin{aligned}&amp;A=\sqrt[3]{-\frac{q}{2}+\sqrt{\left(\frac{q}{2}\right)^2+\left(\frac{p}{3}\right)^3}},<br/>
+&amp;B=\sqrt[3]{\frac{q}{2}+\sqrt{\left(\frac{q}{2}\right)^2+\left(\frac{p}{3}\right)^3}}\end{aligned}$$</p><p>接下来就很容易得出原方程的解了。</p><p></p><div class="pic-container"><div class="typecho-caption aligncenter" style="max-width: 100%"><div style="margin: 5px"><a href="/usr/uploads/2009/07/20090719092220.jpg" target="_blank" title="点击查看原图"><img alt="图片说明：卡丹，又译卡尔达诺" src="/usr/uploads/2009/07/20090719092220.jpg" style="max-width:100%"/></a></div><p class="typecho-caption-text">图片说明：卡丹，又译卡尔达诺</p></div></div><p>最终，我们得出关于方程$y^3+px+q=0$的求根公式为<br/>
+$$\begin{aligned}&amp;x_1=\sqrt[3]{-\frac{q}{2}+\sqrt{(\frac{q}{2})^2+(\frac{p}{3})^3}}+\sqrt[3]{-\frac{q}{2}-\sqrt{(\frac{q}{2})^2+(\frac{p}{3})^3}}\\<br/>
+&amp;x_2=\omega \sqrt[3]{-\frac{q}{2}+\sqrt{(\frac{q}{2})^2+(\frac{p}{3})^3}}+\omega^2\sqrt[3]{-\frac{q}{2}-\sqrt{(\frac{q}{2})^2+(\frac{p}{3})^3}}\\<br/>
+&amp;x_3=\omega^2\sqrt[3]{-\frac{q}{2}+\sqrt{(\frac{q}{2})^2+(\frac{p}{3})^3}}+\omega \sqrt[3]{-\frac{q}{2}-\sqrt{(\frac{q}{2})^2+(\frac{p}{3})^3}}\\<br/>
+&amp;\omega=\frac{1}{2}(-1+\sqrt{3}i)\end{aligned}$$</p><p>看到这里，如果想挑战自己的你，请写出$ax^3+bx^2+cx+d=0\,(a\neq 0)$的一般求根公式吧^_^</p><p>至于四次方程，有时间也会写一下。</p><p><strong>参考资料：</strong><br/>
+<a href="http://zh.wikipedia.org/w/index.php?title=%E4%B8%89%E6%AC%A1%E6%96%B9%E7%A8%8B&amp;variant=zh-cn" target="_blank">http://zh.wikipedia.org/w/index.php?title=%E4%B8%89%E6%AC%A1%E6%96%B9%E7%A8%8B&amp;variant=zh-cn</a><br/>
+<a href="http://baike.baidu.com/view/521598.htm" target="_blank">http://baike.baidu.com/view/521598.htm</a><br/>
+<a href="http://baike.baidu.com/view/1315076.htm" target="_blank">http://baike.baidu.com/view/1315076.htm</a><br/>
+<a href="http://www.oursci.org/archive/magazine/200112/011208.htm" target="_blank">http://www.oursci.org/archive/magazine/200112/011208.htm</a></p>
+
+
+
+
+
+</div>

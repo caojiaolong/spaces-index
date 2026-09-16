@@ -1,0 +1,272 @@
+# “让Keras更酷一些！”：层与模型的重用技巧
+
+> 作者：苏剑林 · 科学空间 · 2019-09-29
+>
+> 原文：<https://spaces.ac.cn/archives/6985>
+>
+> 原文许可：[CC BY-NC-ND 2.5 CN（署名-非商业性使用-禁止演绎）](https://creativecommons.org/licenses/by-nc-nd/2.5/cn/)。
+>
+> 本文件由 spaces-index 非官方、非商业项目进行必要的 HTML → Markdown 格式转换；正文未做摘要、润色、翻译或重组。项目不代表作者，也不表示作者为项目背书。
+>
+> 署名及附加许可说明不代表已获得作者额外授权。第三方素材权利依其原有声明。
+>
+> 原站转载与引用说明：[科学空间 FAQ](https://spaces.ac.cn/archives/6508#%E6%96%87%E7%AB%A0%E5%A6%82%E4%BD%95%E8%BD%AC%E8%BD%BD/%E5%BC%95%E7%94%A8)
+
+---
+
+今天我们继续来深挖Keras，再次体验Keras那无与伦比的优雅设计。这一次我们的焦点是“重用”，主要是层与模型的重复使用。
+
+所谓重用，一般就是奔着两个目标去：一是为了共享权重，也就是说要两个层不仅作用一样，还要共享权重，同步更新；二是避免重写代码，比如我们已经搭建好了一个模型，然后我们想拆解这个模型，构建一些子模型等。
+
+## 基础
+
+事实上，Keras已经为我们考虑好了很多，所以很多情况下，掌握好基本用法，就已经能满足我们很多需求了。
+
+### 层的重用
+
+层的重用是最简单的，将层初始化好，存起来，然后反复调用即可：
+
+
+
+<pre><code class="language-python">x_in = Input(shape=(784,))
+x = x_in
+
+layer = Dense(784, activation='relu') # 初始化一个层，并存起来
+
+x = layer(x) # 第一次调用
+x = layer(x) # 再次调用
+x = layer(x) # 再次调用</code></pre>
+
+
+
+要注意的是，必须先初始化好一个层，存为一个变量好再调用，才能保证重复调用的层是共享权重的。反之，如果是下述形式的代码，则是非共享权重的：
+
+
+
+<pre><code class="language-python">x = Dense(784, activation='relu')(x) 
+x = Dense(784, activation='relu')(x) # 跟前面的不共享权重
+x = Dense(784, activation='relu')(x) # 跟前面的不共享权重</code></pre>
+
+
+
+### 模型重用
+
+Keras的模型有着类似层的表现，在调用时可以用跟层一样的方式，比如：
+
+
+
+<pre><code class="language-python">x_in = Input(shape=(784,))
+x = x_in
+
+x = Dense(10, activation='softmax')(x)
+
+model = Model(x_in, x) # 建立模型
+
+
+x_in = Input(shape=(100,))
+x = x_in
+
+x = Dense(784, activation='relu')(x)
+x = model(x) # 将模型当层一样用
+
+model2 = Model(x_in, x)</code></pre>
+
+
+
+读过Keras源码的朋友就会明白，之所以可以将模型当层那样用，是因为<code>Model</code>本身就是继承<code>Layer</code>类来写的，所以模型自然也包含了层的一些相同特性。
+
+### 模型克隆
+
+模型克隆跟模型重用类似，只不过得到的新模型跟原模型不共享权重了，也就是说，仅仅保留完全一样的模型结构，两个模型之间的更新是独立的。Keras提供了模型可用专用的函数，直接调用即可：
+
+
+
+<pre><code class="language-python">from keras.models import clone_model
+
+model2 = clone_model(model1)</code></pre>
+
+
+
+注意，<code>clone_model</code>完全复制了原模型模型的结构，并重新构建了一个模型，但没有复制原模型的权重的值。也就是说，对于同样的输入，<code>model1.predict</code>和<code>model2.predict</code>的结果是不一样的。
+
+如果要把权重也搬过来，需要手动<code>set_weights</code>一下：
+
+
+
+<pre><code class="language-python">model2.set_weights(K.batch_get_value(model1.weights))</code></pre>
+
+
+
+## 进阶
+
+上述谈到的是原封不等的调用原来的层或模型，所以比较简单，Keras都准备好了。下面介绍一些复杂一些的例子。
+
+### 交叉引用
+
+这里的交叉引用是指在定义一个新层的时候，沿用已有的某个层的权重，注意这个自定义层可能跟旧层的功能完全不一样，它们之间纯粹是共享了某个权重而已。比如，Bert在训练MLM的时候，最后预测字词概率的全连接层，权重就是跟Embedding层共享的。
+
+参考写法如下：
+
+
+
+<pre><code class="language-python">class EmbeddingDense(Layer):
+    """运算跟Dense一致，只不过kernel用Embedding层的embedding矩阵
+    """
+    def __init__(self, embedding_layer, activation='softmax', **kwargs):
+        super(EmbeddingDense, self).__init__(**kwargs)
+        self.kernel = K.transpose(embedding_layer.embeddings)
+        self.activation = activation
+        self.units = K.int_shape(self.kernel)[1]
+
+    def build(self, input_shape):
+        super(EmbeddingDense, self).build(input_shape)
+        self.bias = self.add_weight(name='bias',
+                                    shape=(self.units,),
+                                    initializer='zeros')
+
+    def call(self, inputs):
+        outputs = K.dot(inputs, self.kernel)
+        outputs = K.bias_add(outputs, self.bias)
+        outputs = Activation(self.activation).call(outputs)
+        return outputs
+        
+    def compute_output_shape(self, input_shape):
+        return input_shape[:-1] + (self.units,)
+
+
+# 用法
+embedding_layer = Embedding(10000, 128)
+x = embedding_layer(x) # 调用Embedding层
+x = EmbeddingDense(embedding_layer)(x) # 调用EmbeddingDense层</code></pre>
+
+
+
+### 提取中间层
+
+有时候我们需要从搭建好的模型中提取中间层的特征，并且构建一个新模型，在Keras中这同样是很简单的操作：
+
+
+
+<pre><code class="language-python">from keras.applications.resnet50 import ResNet50
+model = ResNet50(weights='imagenet')
+
+Model(
+    inputs=model.input,
+    outputs=[
+        model.get_layer('res5a_branch1').output,
+        model.get_layer('activation_47').output,
+    ]
+)</code></pre>
+
+
+
+### 从中间拆开
+
+最后，来到本文最有难度的地方了，我们要将模型从中间拆开，搞懂之后也可以实现往已有模型插入或替换新层的操作。这个需求看上去比较奇葩，但是还别说，[stackoverflow上面还有人提问过](<https://stackoverflow.com/questions/49492255/how-to-replace-or-insert-intermediate-layer-in-keras-model>)，说明这确实是有价值的。
+
+假设我们有一个现成的模型，它可以分解为
+$$\text{inputs}\to h_1 \to h_2 \to h_3 \to h_4 \to \text{outputs}$$
+那可能我们需要将$h_2$替换成一个新的输入，然后接上后面的层，来构建一个新模型，即新模型的功能是：
+$$\text{inputs} \to h_3 \to h_4 \to \text{outputs}$$
+如果是<code>Sequential</code>类模型，那比较简单，直接把<code>model.layers</code>都遍历一边，就可以构建新模型了：
+
+
+
+<pre><code class="language-python">x_in = Input(shape=(100,))
+x = x_in
+
+for layer in model.layers[2:]:
+    x = layer(x)
+
+model2 = Model(x_in, x)
+</code></pre>
+
+
+
+但是，如果模型是比较复杂的结构，比如残差结构这种不是一条路走到底的，就没有这么简单了。事实上，这个需求本来没什么难度，该写的Keras本身已经写好了，只不过没有提供现成的接口罢了。为什么这么说，因为我们通过<code>model(x)</code>这样的代码调用已有模型的时候，实际上Keras就相当于把这个已有的这个<code>model</code>从头到尾重新搭建了一遍，既然可以重建整个模型，那搭建“半个”模型原则上也是没有任技术难度的，只不过没有现成的接口。具体可以参考[Keras源码](<https://github.com/keras-team/keras/blob/master/keras/engine/network.py>)的<code>keras/engine/network.py</code>的<code>run_internal_graph</code>函数。
+
+完整重建一个模型的逻辑在<code>run_internal_graph</code>函数里边，并且可以看到它还不算简单，所以如无必要我们最好不要重写这个代码。但如果不重写这个代码，又想调用这个代码，实现从中间层拆解模型的功能，唯一的办法是“移花接木”了：通过修改已有模型的一些属性，欺骗一下<code>run_internal_graph</code>函数，使得它以为模型的输入层是中间层，而不是原始的输入层。有了这个思想，再认真读读<code>run_internal_graph</code>函数的代码，就不难得到下述参考代码：
+
+
+
+<pre><code class="language-python">def get_outputs_of(model, start_tensors, input_layers=None):
+    """start_tensors为开始拆开的位置
+    """
+    # 为此操作建立新模型
+    model = Model(inputs=model.input,
+                  outputs=model.output,
+                  name='outputs_of_' + model.name)
+    # 适配工作，方便使用
+    if not isinstance(start_tensors, list):
+        start_tensors = [start_tensors]
+    if input_layers is None:
+        input_layers = [
+            Input(shape=K.int_shape(x)[1:], dtype=K.dtype(x))
+            for x in start_tensors
+        ]
+    elif not isinstance(input_layers, list):
+        input_layers = [input_layers]
+    # 核心：覆盖模型的输入
+    model.inputs = start_tensors
+    model._input_layers = [x._keras_history[0] for x in input_layers]
+    # 适配工作，方便使用
+    if len(input_layers) == 1:
+        input_layers = input_layers[0]
+    # 整理层，参考自 Model 的 run_internal_graph 函数
+    layers, tensor_map = [], set()
+    for x in model.inputs:
+        tensor_map.add(str(id(x)))
+    depth_keys = list(model._nodes_by_depth.keys())
+    depth_keys.sort(reverse=True)
+    for depth in depth_keys:
+        nodes = model._nodes_by_depth[depth]
+        for node in nodes:
+            n = 0
+            for x in node.input_tensors:
+                if str(id(x)) in tensor_map:
+                    n += 1
+            if n == len(node.input_tensors):
+                if node.outbound_layer not in layers:
+                    layers.append(node.outbound_layer)
+                for x in node.output_tensors:
+                    tensor_map.add(str(id(x)))
+    model._layers = layers # 只保留用到的层
+    # 计算输出
+    outputs = model(input_layers)
+    return input_layers, outputs</code></pre>
+
+
+
+用法：
+
+
+
+<pre><code class="language-python">from keras.applications.resnet50 import ResNet50
+model = ResNet50(weights='imagenet')
+
+x, y = get_outputs_of(
+    model,
+    model.get_layer('add_15').output
+)
+
+model2 = Model(x, y)</code></pre>
+
+
+
+代码有点长，但其实逻辑很简单，真正核心的代码只有三行：
+
+
+
+<pre><code class="language-python">model.inputs = start_tensors
+model._input_layers = [x._keras_history[0] for x in input_layers]
+outputs = model(input_layers)</code></pre>
+
+
+
+也就是覆盖模型的<code>model.inputs</code>和<code>model._input_layers</code>就可以实现欺骗模型从中间层开始构建的效果了，其余的多数是适配工作，不是技术上的，而<code>model._layers = layers</code>这一句是只保留了从中间层开始所用到的层，只是为了统计模型参数量的准确性，如果去掉这一部分，模型的参数量依然是原来整个model那么多。
+
+## 小结
+
+Keras是最让人赏心悦目的深度学习框架，至少到目前为止，就模型代码的可读性而言，没有之一。可能读者会提到PyTorch，诚然PyTorch也有不少可取之处，但就可读性而言，我认为是比不上Keras的。
+
+在深究Keras的过程中，我不仅惊叹于Keras作者们的深厚而优雅的编程功底，甚至感觉自己的编程技能也提高了不少。不错，我的很多Python编程技巧，都是从读Keras源码中学习到的。

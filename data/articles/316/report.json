@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "316",
+    "title": "新年新天象：2010年1月重要天象",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/316",
+    "date": "2009-12-26",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 0,
+    "display_formula_count": 0,
+    "image_count": 11,
+    "heading_count": 0,
+    "code_block_count": 0,
+    "source_text_sha256": "c4eae1945b150d06a1b97148451301ec9486f331b8438bc0f7ead9f1d2a0bd61",
+    "output_text_sha256": "c4eae1945b150d06a1b97148451301ec9486f331b8438bc0f7ead9f1d2a0bd61",
+    "latex_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "body_sha256": "182e59dedd5f6a42c6e0b0c7fc2edee6718f1cf6531ec1e5621503114adc12f5",
+    "converter_version": 1,
+    "markdown_sha256": "fd441da01b286ac22494330886efc6434f19472aca24fffa1fdde38c7f56f169"
+  },
+  "fetched_at": "2026-09-14T14:44:41+00:00",
+  "source_snapshot_sha256": "8cf399dc2b5577becd4b8d0c609be53d16b6b00524c933e459d17cf20121b82c",
+  "images": {},
+  "local_only": true
+}

@@ -1,0 +1,17 @@
+{
+  "metadata": {
+    "id": "8888",
+    "title": "GPLinker：基于GlobalPointer的实体关系联合抽取",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/8888",
+    "date": "2022-01-30",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "fetched_at": "2026-09-14T13:01:43+00:00",
+  "source_snapshot_sha256": "ec63d76c61542225d8ccda0b395ca9707ed900405953913cdcf6ec562af18f26",
+  "validators": {
+    "etag": null,
+    "last_modified": null
+  }
+}

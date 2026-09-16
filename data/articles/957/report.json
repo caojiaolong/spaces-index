@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "957",
+    "title": "生日|野炊|嫦娥",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/957",
+    "date": "2010-10-01",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 0,
+    "display_formula_count": 0,
+    "image_count": 2,
+    "heading_count": 0,
+    "code_block_count": 0,
+    "source_text_sha256": "eb6ca68fe690530a817a2ff74da335310a84cf8c1eb866c0944584b54a3ad980",
+    "output_text_sha256": "eb6ca68fe690530a817a2ff74da335310a84cf8c1eb866c0944584b54a3ad980",
+    "latex_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "body_sha256": "a675fde0d6cdc1ec2f50b05e3426c9a14fbbb43103f9219e7b7d4ad207614097",
+    "converter_version": 1,
+    "markdown_sha256": "05d1797839105a6ff90ed886ed175889c3581f471baae6391848a0db52569c86"
+  },
+  "fetched_at": "2026-09-14T14:29:53+00:00",
+  "source_snapshot_sha256": "48010325d93f36d13b80e2e1d3ccf535ce7aa569667bab514671f23ee6603b19",
+  "images": {},
+  "local_only": true
+}

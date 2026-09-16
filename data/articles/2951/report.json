@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "2951",
+    "title": "Cantor-Bernstein 定理（给出双射！）",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/2951",
+    "date": "2014-09-19",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 74,
+    "display_formula_count": 6,
+    "image_count": 0,
+    "heading_count": 0,
+    "code_block_count": 0,
+    "source_text_sha256": "ea78bad2263cfa39c514208f30d4d9a28b235697a3c170ec6acd31235e7be11b",
+    "output_text_sha256": "ea78bad2263cfa39c514208f30d4d9a28b235697a3c170ec6acd31235e7be11b",
+    "latex_sha256": "bd8bba33fc72aefbba73e6a433f9121d520c1e6df012f96af1ddd58e63bfc6e8",
+    "body_sha256": "9cfd78ceae61b5cb5baebd72aeb231f9f494e71e1661f910203fc26588d21361",
+    "converter_version": 1,
+    "markdown_sha256": "5306c531b5ace60e7fb45e4caaae3883247fabaf290458daf037481071e7c22b"
+  },
+  "fetched_at": "2026-09-14T13:51:15+00:00",
+  "source_snapshot_sha256": "bde3be8ba4c7a95df526644e0ea5c559b42895294c8f27f5e2e06ab75f2a23bc",
+  "images": {},
+  "local_only": true
+}

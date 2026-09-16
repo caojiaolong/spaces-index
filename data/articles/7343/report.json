@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "7343",
+    "title": "EAE：自编码器 + BN + 最大熵  = 生成模型",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/7343",
+    "date": "2020-04-20",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 121,
+    "display_formula_count": 13,
+    "image_count": 3,
+    "heading_count": 6,
+    "code_block_count": 0,
+    "source_text_sha256": "4c5c3be33b9ce171bf7b04da7d8553b6c2c52c1ac7c2c8214ed9b8df1bdbf892",
+    "output_text_sha256": "4c5c3be33b9ce171bf7b04da7d8553b6c2c52c1ac7c2c8214ed9b8df1bdbf892",
+    "latex_sha256": "04f3020670d344182004ecb3e009fe298ef02cf63b7c215ab546a20aaf8c166d",
+    "body_sha256": "97c09f41b24641796f0b87c85bd429e607d43b11baf55de58225d44f36da5b3a",
+    "converter_version": 1,
+    "markdown_sha256": "5c4e598363f4cc968f5d158c6414ec5cfdfef1c88fc35238b9f8735f37c4bb9f"
+  },
+  "fetched_at": "2026-09-14T13:14:22+00:00",
+  "source_snapshot_sha256": "780795f788120f7b8386c017bf79d2e4ec11d172d9639d1e1c2f353c56ddd509",
+  "images": {},
+  "local_only": true
+}

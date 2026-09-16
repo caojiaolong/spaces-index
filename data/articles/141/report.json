@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "141",
+    "title": "《科学》：我们发现了磁单极子",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/141",
+    "date": "2009-10-02",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 1,
+    "display_formula_count": 0,
+    "image_count": 1,
+    "heading_count": 0,
+    "code_block_count": 0,
+    "source_text_sha256": "254304f096c80b3bb20be9225cedbad9fc7211bc59601b269c88b637faa8b0b3",
+    "output_text_sha256": "254304f096c80b3bb20be9225cedbad9fc7211bc59601b269c88b637faa8b0b3",
+    "latex_sha256": "7ff00b78399754b0eb2454e9a9e47eca487c4d8f18472bdba842e328732bb5af",
+    "body_sha256": "cd565fe8685eb668f435a4fa4af63c008e3cee0c7c7bf433ba4ec9e174e683e3",
+    "converter_version": 1,
+    "markdown_sha256": "eee1c006ba8decd21b405e00e6a7ea449a391b530f2f9e89e914d7d3aff723f4"
+  },
+  "fetched_at": "2026-09-14T14:51:00+00:00",
+  "source_snapshot_sha256": "68b6af5fde025ca3ea12fb91f2f2bb5c6572f1d4f73ad38c3b61653f4fef2346",
+  "images": {},
+  "local_only": true
+}

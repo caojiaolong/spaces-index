@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "19",
+    "title": "澳洲恐龙洞穴揭示气候变化",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/19",
+    "date": "2009-07-14",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 0,
+    "display_formula_count": 0,
+    "image_count": 3,
+    "heading_count": 0,
+    "code_block_count": 0,
+    "source_text_sha256": "c3128bb7d128f54ffe27b45b54e602f040fa6b0aeb879c7da22c07aeaade1edc",
+    "output_text_sha256": "c3128bb7d128f54ffe27b45b54e602f040fa6b0aeb879c7da22c07aeaade1edc",
+    "latex_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "body_sha256": "3d25e2aba865d28e1b0d5392c41c1073cf217ba00e48f48a5cb245ac78d7217c",
+    "converter_version": 1,
+    "markdown_sha256": "0a40d1d33305251bbb68e6c989767c769b0dafd6b0b83a55ff7b625fc13cf4d9"
+  },
+  "fetched_at": "2026-09-14T15:05:54+00:00",
+  "source_snapshot_sha256": "44489a518879c2f350b9142030b3719fec290ff553a1a35ce04c5e1fcc31db21",
+  "images": {},
+  "local_only": true
+}

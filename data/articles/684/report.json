@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "684",
+    "title": "从牛顿力学角度研究宇宙学",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/684",
+    "date": "2010-06-17",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 66,
+    "display_formula_count": 13,
+    "image_count": 3,
+    "heading_count": 0,
+    "code_block_count": 0,
+    "source_text_sha256": "10020620f8658c5e63f986345f31a57d78cbd08a0164a4bd1dc2c7365da73413",
+    "output_text_sha256": "10020620f8658c5e63f986345f31a57d78cbd08a0164a4bd1dc2c7365da73413",
+    "latex_sha256": "d177b382157e3e4dee67e89dfefa6a231e5662f3ad5c6fd4f7ef81cca3f95bcd",
+    "body_sha256": "8e116ba9466b1492e00fe9c9d42f6c65702f87a64ebad8e005441bacbc7d8bb0",
+    "converter_version": 1,
+    "markdown_sha256": "2cd62217518279619a6818db4df2f92f9e5fdf60307c1c6f093932b66a836921"
+  },
+  "fetched_at": "2026-09-14T14:36:13+00:00",
+  "source_snapshot_sha256": "1d217b5c34305e08066debac370dcd0b570b01e321c6f5d17b94276b16897e11",
+  "images": {},
+  "local_only": true
+}

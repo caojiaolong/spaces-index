@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "11563",
+    "title": "DeltaNet的核心逆矩阵的元素总是在[-1, 1]内",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/11563",
+    "date": "2026-01-26",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 65,
+    "display_formula_count": 15,
+    "image_count": 0,
+    "heading_count": 10,
+    "code_block_count": 0,
+    "source_text_sha256": "277b16a76ff8d6cc01b205e2df38aa2c721ffd9df223cf8ebaffb2fef6e5432f",
+    "output_text_sha256": "277b16a76ff8d6cc01b205e2df38aa2c721ffd9df223cf8ebaffb2fef6e5432f",
+    "latex_sha256": "5e856f0b94ace4ca766394ea4ce4967c45a99839d3264aab4a27280b82d2e459",
+    "body_sha256": "ee296844f7709747d35074535bd38da49a1d9c5684ecbaebeef20576521d0404",
+    "converter_version": 1,
+    "markdown_sha256": "a74ba3357d006ed4760e7ef8d2980ae3f6ce9ef21a202a8297b605db83a50726"
+  },
+  "fetched_at": "2026-09-14T12:37:31+00:00",
+  "source_snapshot_sha256": "c62436d5a80af66a01f1003b48454f137a525100ae6d7624bf2e0a2f3a411aeb",
+  "images": {},
+  "local_only": true
+}

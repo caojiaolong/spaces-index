@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "189",
+    "title": "微型博客在中国",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/189",
+    "date": "2009-10-11",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 0,
+    "display_formula_count": 0,
+    "image_count": 0,
+    "heading_count": 0,
+    "code_block_count": 0,
+    "source_text_sha256": "f8889e67f242ac4530b63e7c0a78d7db34fab4b298478f2e7eca984a8427bb0c",
+    "output_text_sha256": "f8889e67f242ac4530b63e7c0a78d7db34fab4b298478f2e7eca984a8427bb0c",
+    "latex_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "body_sha256": "2bb370a47180868cd30bb46498125c8e64d163d450b0add2c86d2f3bad354fcc",
+    "converter_version": 1,
+    "markdown_sha256": "18c3dfd5075f5897ac23d4d30cb84baffad1dbd3ccc92651b5d5b4fe0bb7c681"
+  },
+  "fetched_at": "2026-09-14T14:48:32+00:00",
+  "source_snapshot_sha256": "beb3d997f4136188dfb52242f0949c2484bcf1495615b712d65a9002d4356bfc",
+  "images": {},
+  "local_only": true
+}

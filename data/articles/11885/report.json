@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "11885",
+    "title": "让炼丹更科学一些（十）：单调性假设的拆与补",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/11885",
+    "date": "2026-09-14",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 170,
+    "display_formula_count": 23,
+    "image_count": 0,
+    "heading_count": 8,
+    "code_block_count": 0,
+    "source_text_sha256": "f0fce0619d9bcd68a4581c725f91db8cb0022e6bd25b2899aa7bfe6ce6423f91",
+    "output_text_sha256": "f0fce0619d9bcd68a4581c725f91db8cb0022e6bd25b2899aa7bfe6ce6423f91",
+    "latex_sha256": "321d1d458ea1e6790ed94b93c39fa2ecbc50c7b622d4cb4fb0a0f2d561e58cd0",
+    "body_sha256": "96d304d5b7f091889ca03216b109c00a8585bedc24c1d1db450e367c814327e8",
+    "converter_version": 1,
+    "markdown_sha256": "0e5954056d61208547ed791f8b0af522813b529a2d8addc4337566275bcd607e"
+  },
+  "fetched_at": "2026-09-14T12:29:45+00:00",
+  "source_snapshot_sha256": "01da87d2d8fcc7706c6dd39b384eee3b1ad449836d06d3ac821b9123d3e4597b",
+  "images": {},
+  "local_only": true
+}

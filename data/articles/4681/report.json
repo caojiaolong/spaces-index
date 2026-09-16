@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "4681",
+    "title": "更别致的词向量模型(六)：代码、分享与结语",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/4681",
+    "date": "2017-11-19",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 0,
+    "display_formula_count": 0,
+    "image_count": 0,
+    "heading_count": 4,
+    "code_block_count": 0,
+    "source_text_sha256": "ea0e07e7d4a478d402e1663cab9268c2965102e6e985742a4c098d1132afdf0e",
+    "output_text_sha256": "ea0e07e7d4a478d402e1663cab9268c2965102e6e985742a4c098d1132afdf0e",
+    "latex_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "body_sha256": "90a0e69d1089f9d5fcc87e1ddcf915404e3415cfee1acd3b33d2995444f980af",
+    "converter_version": 1,
+    "markdown_sha256": "5dc5233bef9d8ced7f51a80db5198ca22bbf6d2e3493b9704f0bd57809c7defa"
+  },
+  "fetched_at": "2026-09-14T13:29:33+00:00",
+  "source_snapshot_sha256": "a0608623130cac0aeee6812ac3a8366a2fcf082abf85c35f3e456bad8230f355",
+  "images": {},
+  "local_only": true
+}

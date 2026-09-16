@@ -1,0 +1,39 @@
+{
+  "metadata": {
+    "id": "1311",
+    "title": "重提“旋转弹簧伸长”问题（变分解法）",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/1311",
+    "date": "2011-04-05",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "source_dom_exact": true,
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "attributes_exact": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 21,
+    "display_formula_count": 6,
+    "image_count": 0,
+    "heading_count": 0,
+    "code_block_count": 0,
+    "source_text_sha256": "f72642210cf04ead441bb51d4e72952334f259f21273fe31ef3b5b0646ba5fc7",
+    "output_text_sha256": "f72642210cf04ead441bb51d4e72952334f259f21273fe31ef3b5b0646ba5fc7",
+    "latex_sha256": "4dd8ac1c9b30a08cae9f333f384f70866ffc49e690361a8d9fd3dd4e47bf7ba7",
+    "body_sha256": "62cf447887660749098f0ea9d5e48b39ba25074348db989a3aa7a671015aa5f1",
+    "converter_version": 1,
+    "format": "html-v1",
+    "source_warnings": [],
+    "fallback_reason": "Unsupported body element: del",
+    "markdown_sha256": "0d2592e4f2b855941f8bbd77dc64a0dded67b73973baead5cc261658bf45615d"
+  },
+  "fetched_at": "2026-09-14T14:22:45+00:00",
+  "source_snapshot_sha256": "502f699c1feeb96703f155aa09b96f2648821357bffce6c35c40fc734245f08f",
+  "images": {},
+  "local_only": true
+}

@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "6869",
+    "title": "Keras实现两个优化器：Lookahead和LazyOptimizer",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/6869",
+    "date": "2019-07-30",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 5,
+    "display_formula_count": 0,
+    "image_count": 0,
+    "heading_count": 3,
+    "code_block_count": 2,
+    "source_text_sha256": "18ec8114a9acf1242be832e7d83c457856dc5865203fd697e4fca5bb29b0cf45",
+    "output_text_sha256": "18ec8114a9acf1242be832e7d83c457856dc5865203fd697e4fca5bb29b0cf45",
+    "latex_sha256": "cf7d482f53d07369bdafc068097ae5c9e7069f2f18d01466dd055ecee0d8eb03",
+    "body_sha256": "27e0ac654d53079bdd0bc7bb5898a9b2f179c6464e3202a1a300b51f27f8d819",
+    "converter_version": 1,
+    "markdown_sha256": "135bbf1f66b2e80d32f78eaa4744714ced9bbe42cc25a773f290c6734844e539"
+  },
+  "fetched_at": "2026-09-14T13:18:18+00:00",
+  "source_snapshot_sha256": "6f1d4b5f5d88c526c0ff374af45d450c53e25772a5d2247a0aac15f54f3ebb09",
+  "images": {},
+  "local_only": true
+}

@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "7575",
+    "title": "BERT-of-Theseus：基于模块替换的模型压缩方法",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/7575",
+    "date": "2020-07-17",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 6,
+    "display_formula_count": 2,
+    "image_count": 4,
+    "heading_count": 9,
+    "code_block_count": 0,
+    "source_text_sha256": "4ab33fc78af017252f3f1ebd699bce52a3e6fe77320dc8b05d469bf96e72ad25",
+    "output_text_sha256": "4ab33fc78af017252f3f1ebd699bce52a3e6fe77320dc8b05d469bf96e72ad25",
+    "latex_sha256": "5ccc6f531574e100de784219d6e5cf07f1f6102cd56eae0ad5cbcbbc8e8e0d37",
+    "body_sha256": "26b738e30e19b27fd3608760d6df1f3bdb94f2dff6ce60c35ac25ab9626b285e",
+    "converter_version": 1,
+    "markdown_sha256": "0b91ac345adae1362f7f39451af8c0f12d3c93be91c49da270dec31bd1e05ff2"
+  },
+  "fetched_at": "2026-09-14T13:12:34+00:00",
+  "source_snapshot_sha256": "fe88f984b5e6c905f3da0fc446ec464c6024283ce1c1769ce872100ae2b9cd27",
+  "images": {},
+  "local_only": true
+}

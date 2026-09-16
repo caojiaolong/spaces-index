@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "7521",
+    "title": "从采样看优化：可导优化与不可导优化的统一视角",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/7521",
+    "date": "2020-06-23",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 128,
+    "display_formula_count": 19,
+    "image_count": 0,
+    "heading_count": 9,
+    "code_block_count": 0,
+    "source_text_sha256": "dab8e88aa492d922ec7990dd517fcb4d8452bc59204900785aca589d3024cadb",
+    "output_text_sha256": "dab8e88aa492d922ec7990dd517fcb4d8452bc59204900785aca589d3024cadb",
+    "latex_sha256": "11a278a61b0d7a9569539ae5685fca05bc437bbe8f4a6bd1150c5096a187cce4",
+    "body_sha256": "aaff8a44de7dcf47d20e96516d023847b1419c46b5cab0b9ae6a2810008c2935",
+    "converter_version": 1,
+    "markdown_sha256": "6f58bb043f97582379a76c1f4a7967d179e19d59a192f2488151afe380507182"
+  },
+  "fetched_at": "2026-09-14T13:13:00+00:00",
+  "source_snapshot_sha256": "b4c6fccb6eee0966a8e288e08c288ce267e351cd4e33fa13b542b07dc4f6f8e6",
+  "images": {},
+  "local_only": true
+}

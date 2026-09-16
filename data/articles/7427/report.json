@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "7427",
+    "title": "鱼与熊掌兼得：融合检索和生成的SimBERT模型",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/7427",
+    "date": "2020-05-18",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 8,
+    "display_formula_count": 0,
+    "image_count": 3,
+    "heading_count": 4,
+    "code_block_count": 1,
+    "source_text_sha256": "616b074a43b32c8405af8efe5c5a05f3e9260ffd65ebda9ef1ba821802c5c9a4",
+    "output_text_sha256": "616b074a43b32c8405af8efe5c5a05f3e9260ffd65ebda9ef1ba821802c5c9a4",
+    "latex_sha256": "dfa10e657aae0f2bd1a58107653817433189d358950eefeae3e6f789e2244db5",
+    "body_sha256": "8141d9353f7ecf31ad2fe37c32a25f9fa07792643c7fa5d9ad6e07c0d8252233",
+    "converter_version": 1,
+    "markdown_sha256": "0acbd3da9d2e3f6e43f9ad03896d9693ef16ed66a370929a6423b865c068484c"
+  },
+  "fetched_at": "2026-09-14T13:13:44+00:00",
+  "source_snapshot_sha256": "9c4e7ac98372e47c7007f169ba59f12cd478d4ea67d9301efcb0074271dacff3",
+  "images": {},
+  "local_only": true
+}

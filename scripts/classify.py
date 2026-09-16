@@ -727,7 +727,7 @@ def main() -> None:
 
     posts = read_json(Path(args.input), [])
     if not posts:
-        raise RuntimeError(f"No enriched posts found in {args.input}. Run enrich_posts.py first.")
+        raise RuntimeError(f"No enriched posts found in {args.input}. Run scripts/update_all.py first.")
     overrides = load_overrides(Path(args.overrides))
     classified = classify_posts(posts, overrides)
     write_json(Path(args.output), classified)

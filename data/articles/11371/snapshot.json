@@ -1,0 +1,17 @@
+{
+  "metadata": {
+    "id": "11371",
+    "title": "低精度Attention可能存在有偏的舍入误差",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/11371",
+    "date": "2025-10-27",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "fetched_at": "2026-09-14T12:39:02+00:00",
+  "source_snapshot_sha256": "98900d535057aebdf92bc30c205dfafd391cb2d81b48eb92413352fd3352b55b",
+  "validators": {
+    "etag": null,
+    "last_modified": null
+  }
+}

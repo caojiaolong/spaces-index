@@ -1,0 +1,39 @@
+{
+  "metadata": {
+    "id": "297",
+    "title": "科学空间：2009年12月重要天象",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/297",
+    "date": "2009-12-05",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "source_dom_exact": true,
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "attributes_exact": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 0,
+    "display_formula_count": 0,
+    "image_count": 8,
+    "heading_count": 0,
+    "code_block_count": 0,
+    "source_text_sha256": "c13aa8e3e9ab0444c222cc3e7a7adf327406c4158705db54fa29b30a205d6330",
+    "output_text_sha256": "c13aa8e3e9ab0444c222cc3e7a7adf327406c4158705db54fa29b30a205d6330",
+    "latex_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "body_sha256": "f5007e459a1db56ad9c1af99fbe2d2c52e5cd8647a374b8a30ba396304b73e40",
+    "converter_version": 1,
+    "format": "html-v1",
+    "source_warnings": [],
+    "fallback_reason": "Unsupported body element: table",
+    "markdown_sha256": "6cfa6e97a6ae3f421b14239d18525f781136cbbaa8789c9d5292ee5665912a70"
+  },
+  "fetched_at": "2026-09-14T14:45:36+00:00",
+  "source_snapshot_sha256": "b02a5cda72ce3f42ec2e1d2ef5241902f4e2125d8a12a6d016537cf50ddf8015",
+  "images": {},
+  "local_only": true
+}

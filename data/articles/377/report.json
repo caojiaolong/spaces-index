@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "377",
+    "title": "第一次拍摄天体（月球）！",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/377",
+    "date": "2010-01-28",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 0,
+    "display_formula_count": 0,
+    "image_count": 1,
+    "heading_count": 0,
+    "code_block_count": 0,
+    "source_text_sha256": "2154dbfcd7f727b23ae172c650b10b56d9b0ea3ec11622be6ffad483fc078843",
+    "output_text_sha256": "2154dbfcd7f727b23ae172c650b10b56d9b0ea3ec11622be6ffad483fc078843",
+    "latex_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "body_sha256": "b69fda26da4792602175e21896fe49987069783f4c89b962e441c7c73d75932d",
+    "converter_version": 1,
+    "markdown_sha256": "b64b7c10f362bdedc60a5d3c14e6b9aa1802afb43620297bb5157a5a1458e3c7"
+  },
+  "fetched_at": "2026-09-14T14:42:57+00:00",
+  "source_snapshot_sha256": "8d1be5008fde6b7c8ea63bf9b667c98d46b8673c7c36d538d8cc1c0780ba1dd7",
+  "images": {},
+  "local_only": true
+}

@@ -1,0 +1,17 @@
+{
+  "metadata": {
+    "id": "6705",
+    "title": "漫谈重参数：从正态分布到Gumbel Softmax",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/6705",
+    "date": "2019-06-10",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "fetched_at": "2026-09-14T13:19:27+00:00",
+  "source_snapshot_sha256": "c863536d05194b38dc0935cdfb93326ee0c5f494f4df8b32b29d73fbc428944e",
+  "validators": {
+    "etag": null,
+    "last_modified": null
+  }
+}

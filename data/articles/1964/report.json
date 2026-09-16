@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "1964",
+    "title": "流体静力平衡的应用",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/1964",
+    "date": "2013-04-14",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 21,
+    "display_formula_count": 8,
+    "image_count": 1,
+    "heading_count": 0,
+    "code_block_count": 0,
+    "source_text_sha256": "b2ea06e9f1757fa38c901b2d6fdb2ed431ac6da516aec6b767fc4617fbd4f62f",
+    "output_text_sha256": "b2ea06e9f1757fa38c901b2d6fdb2ed431ac6da516aec6b767fc4617fbd4f62f",
+    "latex_sha256": "7ae8e851282c39a1a70451721b93e7ef9bbbf816fab4cdf811cd534e2f0c5d8d",
+    "body_sha256": "5179c362c687442ce3587e9c8e2983eb2361fc9c4474e519f1f165b466c66741",
+    "converter_version": 1,
+    "markdown_sha256": "ca06583f663b8aea9fb38cce1a7156e89754c3856bb41337c82fc28036af9cad"
+  },
+  "fetched_at": "2026-09-14T14:03:22+00:00",
+  "source_snapshot_sha256": "84e7f5d4460104362d9792bcc1e05b7609d5c2981bbcf084e131813e1e999c11",
+  "images": {},
+  "local_only": true
+}

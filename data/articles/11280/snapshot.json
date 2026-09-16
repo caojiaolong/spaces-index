@@ -1,0 +1,17 @@
+{
+  "metadata": {
+    "id": "11280",
+    "title": "重新思考学习率与Batch Size（二）：平均场",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/11280",
+    "date": "2025-09-10",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "fetched_at": "2026-09-14T12:39:54+00:00",
+  "source_snapshot_sha256": "88e1628789efe5f31ae9ac8abe194b2cd67cc2423b15f76d394021b70787ed9d",
+  "validators": {
+    "etag": null,
+    "last_modified": null
+  }
+}

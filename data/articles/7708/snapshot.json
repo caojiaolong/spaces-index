@@ -1,0 +1,17 @@
+{
+  "metadata": {
+    "id": "7708",
+    "title": "再谈类别不平衡问题：调节权重与魔改Loss的对比联系",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/7708",
+    "date": "2020-08-31",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "fetched_at": "2026-09-14T13:11:41+00:00",
+  "source_snapshot_sha256": "0ab74e0f305aaef04a0463a2371179009b3f49f1c5bab4aea34d1c4977b61199",
+  "validators": {
+    "etag": null,
+    "last_modified": null
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "metadata": {
+    "id": "9783",
+    "title": "脑洞大开：非线性RNN居然也可以并行计算？",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/9783",
+    "date": "2023-09-26",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "fetched_at": "2026-09-14T12:51:47+00:00",
+  "source_snapshot_sha256": "45cfa1de012498aabeee0621b90e474cacaabd607cd39e9edf21b8a64088f7a0",
+  "validators": {
+    "etag": null,
+    "last_modified": null
+  }
+}

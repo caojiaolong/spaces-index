@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "3092",
+    "title": "力的无穷分解与格林函数法",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/3092",
+    "date": "2014-11-24",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 54,
+    "display_formula_count": 19,
+    "image_count": 1,
+    "heading_count": 0,
+    "code_block_count": 0,
+    "source_text_sha256": "4ad86556eee2cffc3961f075ec4df0be3d405fbea2e64ed666b45262f3eb0c72",
+    "output_text_sha256": "4ad86556eee2cffc3961f075ec4df0be3d405fbea2e64ed666b45262f3eb0c72",
+    "latex_sha256": "4556a0d1a4e2e48da577a3bd8cb0d94d2798ebaacbdd763f117c4d74a37f4853",
+    "body_sha256": "f78703721c64ee951d25e4677607761b5dc77e0dcee49aa19a59124a0b23fb9a",
+    "converter_version": 1,
+    "markdown_sha256": "1182864697a22b4734a677d98f094bec65c028fab99a593bd74ab06189aacb34"
+  },
+  "fetched_at": "2026-09-14T13:49:32+00:00",
+  "source_snapshot_sha256": "1b748f1a2b376ee1c34a186391e9d6688d3005642b051831ba1c066be8470969",
+  "images": {},
+  "local_only": true
+}

@@ -1,0 +1,17 @@
+{
+  "metadata": {
+    "id": "6985",
+    "title": "“让Keras更酷一些！”：层与模型的重用技巧",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/6985",
+    "date": "2019-09-29",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "fetched_at": "2026-09-14T13:17:26+00:00",
+  "source_snapshot_sha256": "e7f2a23751efa957eb12e31311603efa040a5c5cc182cd65271c04ad8238058b",
+  "validators": {
+    "etag": null,
+    "last_modified": null
+  }
+}

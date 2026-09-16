@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "4014",
+    "title": "【理解黎曼几何】5. 黎曼曲率",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/4014",
+    "date": "2016-10-18",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 40,
+    "display_formula_count": 11,
+    "image_count": 2,
+    "heading_count": 4,
+    "code_block_count": 0,
+    "source_text_sha256": "88b4c9a3bab1a1ab23696c446ab0e56e93a09ef608fcac3803dfb75b06ec4676",
+    "output_text_sha256": "88b4c9a3bab1a1ab23696c446ab0e56e93a09ef608fcac3803dfb75b06ec4676",
+    "latex_sha256": "2f0c7f8f06412675fbdd00f6ae8151244d5969615ccd1812998928cca0a2dd90",
+    "body_sha256": "7f7ed8146b60605a0e0ffcd5ff9e35a6aff92cbdb00eca0c19dcfc2dfc90768a",
+    "converter_version": 1,
+    "markdown_sha256": "8d2aa0f1db14605fc993952a3588a7446e1a9b641e15827930dd6d387308caf5"
+  },
+  "fetched_at": "2026-09-14T13:37:30+00:00",
+  "source_snapshot_sha256": "8b26fa5eb1fc82fbba289d12bb17ef089c15b7d7e379fb0c85ed7fcb43546713",
+  "images": {},
+  "local_only": true
+}

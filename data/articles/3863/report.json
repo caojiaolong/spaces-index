@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "3863",
+    "title": "文本情感分类（三）：分词 OR 不分词",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/3863",
+    "date": "2016-06-29",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 1,
+    "display_formula_count": 1,
+    "image_count": 0,
+    "heading_count": 3,
+    "code_block_count": 3,
+    "source_text_sha256": "ea200a2c8341e0f0db2ab471cb291730131d23df4072932ec8563e246e7a5164",
+    "output_text_sha256": "ea200a2c8341e0f0db2ab471cb291730131d23df4072932ec8563e246e7a5164",
+    "latex_sha256": "8bd67c1dd966d35e86a8a71eeb7eadd0a8d5bddf883edcb60ba50e9f6bfbb581",
+    "body_sha256": "f7945b809f1e8fff44e8c26fa084380692ae07f677a8c7b1697d8dd2300bf012",
+    "converter_version": 1,
+    "markdown_sha256": "1e65d55a170733fcd1d48564a7b20b0c1876b90da81bfdde6b1b11f51d4daee7"
+  },
+  "fetched_at": "2026-09-14T13:39:16+00:00",
+  "source_snapshot_sha256": "172f2c8f1891920bb26343f44712f28542feb83f38901fbb1546600c9aaa43d5",
+  "images": {},
+  "local_only": true
+}

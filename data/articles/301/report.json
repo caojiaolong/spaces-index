@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "301",
+    "title": "域名Sci-Cn.cn转让...",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/301",
+    "date": "2009-12-14",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 0,
+    "display_formula_count": 0,
+    "image_count": 0,
+    "heading_count": 0,
+    "code_block_count": 0,
+    "source_text_sha256": "c21cd2b29d8636029a3a2b542248bcc194f261afb8211ba7dceeece655e8b082",
+    "output_text_sha256": "c21cd2b29d8636029a3a2b542248bcc194f261afb8211ba7dceeece655e8b082",
+    "latex_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "body_sha256": "d02ce9a74a2b867345411df303d227bd7138013eeaff99ab8bbd66a1f0f12fc6",
+    "converter_version": 1,
+    "markdown_sha256": "0a5f63d202436fbbebd8c1596506a922dade6d1fed8d7f30c62bff02d4517b65"
+  },
+  "fetched_at": "2026-09-14T14:45:16+00:00",
+  "source_snapshot_sha256": "cd7ad6b54db14c5fc519a46795abbd743d1a6ebd9c241fc275d76a531b75b748",
+  "images": {},
+  "local_only": true
+}

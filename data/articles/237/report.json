@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "237",
+    "title": "钱学森：人生书写时代",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/237",
+    "date": "2009-10-31",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 0,
+    "display_formula_count": 0,
+    "image_count": 3,
+    "heading_count": 0,
+    "code_block_count": 0,
+    "source_text_sha256": "e4f5a1fa728eedacde92599bd87f2c799327d22e2d94747098d550f9f4174545",
+    "output_text_sha256": "e4f5a1fa728eedacde92599bd87f2c799327d22e2d94747098d550f9f4174545",
+    "latex_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "body_sha256": "e28c3a8caeca912dd3ff8b2283b8009facd2ed3e7ad5e8fac1d816524bb5ed66",
+    "converter_version": 1,
+    "markdown_sha256": "d7edb1934f01d3b4d13a9088636d16f2c448a89cedd1aec4c164cfc2ebdd3a71"
+  },
+  "fetched_at": "2026-09-14T14:47:08+00:00",
+  "source_snapshot_sha256": "3e29db3c9b0abc9ac1055394b9dae10c1492077cb90e3eb21cc93f4688a6a24f",
+  "images": {},
+  "local_only": true
+}

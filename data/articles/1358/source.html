@@ -1,0 +1,16 @@
+<div class="PostContent" id="PostContent">
+<p>看完了“<a href="/archives/1350/" target="_blank">双不动中心</a>”问题，我们不妨再来看一个貌似简单一点的力学问题，在一个固定质点的引力吸引的基础上，增加一个恒力作用，研究这样的力场中小天体的运动。</p><p>咋看上去这个问题比“双不动中心”简单多了，至少运动方程也显得更简单：<br/>
+$$\ddot{vec{r}}=-GM\frac{\vec{r}}{|\vec{r}|^3}+\vec{F}$$</p><p>其中$\vec{F}$是一个常向量。不过让人比较意外的是，这个问题<font color="red">本质上和“双不动中心”是一样的</font>，它可以看作是双不动中心问题的一个极限情况。而且它们的解法也是惊人地相似，下面我们就来分析这一个过程。</p><p>首先很容易写出这个方程的能量守恒积分：<br/>
+$$1/2 \dot{vec{r}}^2-GM\frac{1}{|\vec{r}|}-\vec{F}\cdot \vec{r}=h$$</p><p>同样我们只考虑平面情况。选择适当的参考点，使得$\vec{F}=(F,0)$，于是可以记该系统的动能为$T=1/2 (\dot{x}^2+\dot{y}^2)$，势能为$U=-\frac{GM}{\sqrt{x^2+y^2}}-Fx$。能量是<br/>
+$$T+U=h$$<br/>
+拉格朗日函数是$L=T-U$。</p><p>为了消去势能函数U中的根号，我们首先会想到的是使用极坐标。的确，这个坐标系能够消去根号，但不能让我们进一步做下去了。那么，还有没有其他方法能够消去根号的呢？</p><p>一个忠实的数学粉丝会知道，在2000多年前，伟大的毕达哥拉斯就想出了一种“勾股数”的表达形式：$(a^2-1)^2+(2a)^2=(a^2+1)^2$，后来，人们进一步发现了恒等式$(a^2-b^2)^2+(2ab)^2=(a^2+b^2)^2$。我们发现，左端的形式正对应着$x^2+y^2$，于是我们可以考虑利用这个公式来进行变换。</p><p>现在问题来了，在$x^2+y^2$，x,y是对称的，而在$(a^2-b^2)^2+(2ab)^2$，括号内的两个量不是对称的，于是我们要判断究竟是$x=a^2-b^2$还是$x=2ab$适合？正确的答案是<br/>
+$$\begin{aligned}x=a^2-b^2 \\ y=2ab\end{aligned}$$</p><p>为什么要这样取？BoJone并没有很好的判断方法，一开始BoJone就把两个给调换过来了，结果计算到最后化简不了，就把两者换过来了。所以说，这是一种“<u>事后判断法</u>”，</p><p>变换之后：$T=2(a^2+b^2)(\dot{a}^2+\dot{b}^2),U=-\frac{GM}{a^2+b^2}-F(a^2-b^2)$</p><p>现在看上去这个变换还是<u>挺不错</u>的，它<font color="red">保持了方程原有的对称性</font>。下面的处理方法几乎和“双不动中心”问题一模一样了。请看——</p><p>拉格朗日方程$\frac{d}{dt}(\frac{\partial L }{\partial \dot{a}})=\frac{\partial L }{\partial a}$</p><p>即$\frac{d}{dt}[4\dot{a}(a^2+b^2)]=4a(\dot{a}^2+\dot{b}^2)-\frac{\partial U }{\partial a}$</p><p>各项乘以$\dot{a}(a^2+b^2)$得<br/>
+$$\frac{d}{dt}[2\dot{a}^2 (a^2+b^2)^2]=4a\dot{a}(\dot{a}^2+\dot{b}^2)(a^2+b^2)-\frac{\partial U }{\partial a}\dot{a}(a^2+b^2)$$</p><p>利用能量守恒积分进行代换<br/>
+$$\frac{d}{dt}[2\dot{a}^2 (a^2+b^2)^2]=2a\dot{a}(h-U)-\frac{\partial U }{\partial a}\dot{a}(a^2+b^2)$$</p><p>右端变成<br/>
+$$\begin{aligned}\dot{a}\frac{\partial }{\partial a}[(h-U)(a^2+b^2)] \\ =\dot{a}\frac{\partial }{\partial a}[(h(a^2+b^2)+GM+F(a^4-b^4)] \\ =\dot{a}\frac{\partial }{\partial a}(h a^2+F a^4) \\ =\frac{d}{dt}(h a^2+F a^4)\end{aligned}$$</p><p>至此，我们应该明白为什么要$x=a^2-b^2$而不是$x=2ab$了，如果选取后者的话，就无法将a的项和b的项相互分离了。</p><p>于是我们有积分：$2\dot{a}^2 (a^2+b^2)^2=h a^2+F a^4+C$</p><p>由能量积分变形：$2(\dot{a}^2+\dot{b}^2) (a^2+b^2)^2=h (a^2+b^2)+GM+F (a^4-b^4)$</p><p>对比两个式子，有$2\dot{b}^2 (a^2+b^2)^2=h b^2+GM-F b^4-C$</p><p>就有$(\frac{d b}{d a})^2=\frac{hb^2-F b^4+(GM-C)}{ha^2+F a^4+C}$</p><p>积分得：$\int \frac{da}{\sqrt{ha^2+F a^4+C}}=\int \frac{1}{\sqrt{hb^2-F b^4+(GM-C)}}$</p><p>看到了吧？整个过程完全就是“双不动中心”问题求解过程的“<strong><u>翻版</u></strong>”！！</p><p>而事实上，坐标变换$x=a^2-b^2,y=2ab$在数学上叫做“<font color="red">抛物线坐标变换</font>”<a href="http://zh.wikipedia.org/wiki/%E6%8B%8B%E7%89%A9%E7%B7%9A%E5%BA%A7%E6%A8%99%E7%B3%BB" target="_blank"><sup>[引用]</sup></a>。这是否会让我们想起圆锥曲线的相关知识？抛物线其实是椭圆的一种极限情况（离心率趋向于1），于是抛物线坐标其实也就是椭圆坐标的一个极限情况，而本题也是“双不动中心”问题的一个极限情况了。至于怎么对应起来，话说BoJone还没有弄清楚细节，所以不便多说了。</p>
+
+
+
+
+
+</div>

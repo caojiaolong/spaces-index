@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "332",
+    "title": "2010年全国天文奥赛终于可以报名了",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/332",
+    "date": "2009-12-31",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 0,
+    "display_formula_count": 0,
+    "image_count": 0,
+    "heading_count": 0,
+    "code_block_count": 0,
+    "source_text_sha256": "389e4605b2d9ed78a93545deb1758efdecda6b6f110a4d19f23547182d50bee3",
+    "output_text_sha256": "389e4605b2d9ed78a93545deb1758efdecda6b6f110a4d19f23547182d50bee3",
+    "latex_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "body_sha256": "c5382f8cfd609120ca53b12616ec03a3e53536b5dd0de636ce2d932514721479",
+    "converter_version": 1,
+    "markdown_sha256": "78ac255c5f7e759511d1ad92df87fcda67c23d7c1c9baed4996ee18d63f776aa"
+  },
+  "fetched_at": "2026-09-14T14:44:29+00:00",
+  "source_snapshot_sha256": "a4d16db3014dc50e5dc059784db054114f8fef40a751225aa063ea28932cac70",
+  "images": {},
+  "local_only": true
+}

@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "1418",
+    "title": "奥赛版《春天里》",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/1418",
+    "date": "2011-07-19",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 0,
+    "display_formula_count": 0,
+    "image_count": 0,
+    "heading_count": 0,
+    "code_block_count": 0,
+    "source_text_sha256": "452f1ce46932f35b9606955a0451574efcf22c5abd1d9c92d8d5bc872760b0cc",
+    "output_text_sha256": "452f1ce46932f35b9606955a0451574efcf22c5abd1d9c92d8d5bc872760b0cc",
+    "latex_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "body_sha256": "82042de9aec3f172b5eb1242b985caef63d5621debe5a30eb1391c623bfd2a15",
+    "converter_version": 1,
+    "markdown_sha256": "1b8aeff0605cc41feb4d8f6ff8e94d6dd1798f499fc111159ad93161de543891"
+  },
+  "fetched_at": "2026-09-14T14:19:19+00:00",
+  "source_snapshot_sha256": "78956e67c1455dd85ce38210f484747686501042e3d9a37fdbfe5251dfbacde7",
+  "images": {},
+  "local_only": true
+}

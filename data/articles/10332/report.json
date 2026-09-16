@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "10332",
+    "title": "近乎完美地解决MathJax与Marked的冲突",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/10332",
+    "date": "2024-08-26",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 0,
+    "display_formula_count": 0,
+    "image_count": 1,
+    "heading_count": 4,
+    "code_block_count": 5,
+    "source_text_sha256": "d421cfe3f009b329367add47522e72c6801bbe411d50f3df7f1d3d0abbb56ddf",
+    "output_text_sha256": "d421cfe3f009b329367add47522e72c6801bbe411d50f3df7f1d3d0abbb56ddf",
+    "latex_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "body_sha256": "132d6f50b15208cfdd3db8a9b8c7495aba43baa7f493a58cd68d3e6a435152b6",
+    "converter_version": 1,
+    "markdown_sha256": "1308f180adc9f3b0968c50b74a3e3c2e333dca4dc7c2f8a2d1410a796ec7a060"
+  },
+  "fetched_at": "2026-09-14T12:46:59+00:00",
+  "source_snapshot_sha256": "cdfaea6ae584e9a3b574a75865d38066db368d13154c960e9ca0ded89163bc39",
+  "images": {},
+  "local_only": true
+}

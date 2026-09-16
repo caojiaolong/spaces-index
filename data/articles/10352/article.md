@@ -1,0 +1,156 @@
+# “闭门造车”之多模态思路浅谈（三）：位置编码
+
+> 作者：苏剑林 · 科学空间 · 2024-09-06
+>
+> 原文：<https://spaces.ac.cn/archives/10352>
+>
+> 原文许可：[CC BY-NC-ND 2.5 CN（署名-非商业性使用-禁止演绎）](https://creativecommons.org/licenses/by-nc-nd/2.5/cn/)。
+>
+> 本文件由 spaces-index 非官方、非商业项目进行必要的 HTML → Markdown 格式转换；正文未做摘要、润色、翻译或重组。项目不代表作者，也不表示作者为项目背书。
+>
+> 署名及附加许可说明不代表已获得作者额外授权。第三方素材权利依其原有声明。
+>
+> 原站转载与引用说明：[科学空间 FAQ](https://spaces.ac.cn/archives/6508#%E6%96%87%E7%AB%A0%E5%A6%82%E4%BD%95%E8%BD%AC%E8%BD%BD/%E5%BC%95%E7%94%A8)
+
+---
+
+在前面的文章中，我们曾表达过这样的观点：多模态LLM相比纯文本LLM的主要差异在于，前者甚至还没有形成一个公认为标准的方法论。这里的方法论，不仅包括之前讨论的生成和训练策略，还包括一些基础架构的设计，比如本文要谈的“多模态位置编码”。
+
+对于这个主题，我们之前在[《Transformer升级之路：17、多模态位置编码的简单思考》](<https://spaces.ac.cn/archives/10040>)就已经讨论过一遍，并且提出了一个方案（RoPE\-Tie）。然而，当时笔者对这个问题的思考仅处于起步阶段，存在细节考虑不周全、认识不够到位等问题，所以站在现在的角度回看，当时所提的方案与完美答案还有明显的距离。
+
+因此，本文我们将自上而下地再次梳理这个问题，并且给出一个自认为更加理想的结果。
+
+## 多模位置
+
+多模态模型居然连位置编码都没有形成共识，这一点可能会让很多读者意外，但事实上确实如此。对于文本LLM，目前主流的位置编码是[RoPE](<https://spaces.ac.cn/archives/8265>)（RoPE就不展开介绍了，假设读者已经熟知），更准确来说是RoPE\-1D，因为原始设计只适用于1D序列。后来我们推导了[RoPE\-2D](<https://spaces.ac.cn/archives/8397>)，这可以用于图像等2D序列，按照RoPE\-2D的思路我们可以平行地推广到RoPE\-3D，用于视频等3D序列。
+
+然而，以上说的只是单一模态输入，当多种模态混合输入时，困难就出现了：文本是1D序列，所以它的位置只是一个标量$n$；图像是2D的（“宽”和“高”），所以表达它的位置需要一个二维向量$(x,y)$；视频则在图像的基础上新增了一个时间维度（或者说“帧”），所以它的位置是一个三维向量$(x,y,z)$。当我们希望用同一个模型去处理三种模态的数据时，就要想办法糅合这三种不同形式的位置信息。
+
+大家都知道，RoPE在实现上是绝对位置编码，但结合基于内积的Attention来用时，内积之后位置会自动作差，从而实现了相对位置编码的效果。可同一大小的向量可以作差，不同大小的向量怎么作差呢？这就是多模态位置编码的困难所在。
+
+不少工作选择“逃避”这个困难，直接Flatten所有模态然后使用RoPE\-1D，这不失为一种解决办法，但终究显得不够优雅。此外，强行Flatten也可能会降低模型性能的天花板，因为[《VisionLLaMA: A Unified LLaMA Backbone for Vision Tasks》](<https://papers.cool/arxiv/2403.00522>)等工作已经表明，RoPE\-2D的引入有助于提升模型效果尤其是变分辨率输入的效果。
+
+## 向后兼容
+
+所以，我们希望设计一种多模态位置编码，它既可以多模态混合使用，在单模态下又能退化为对应的RoPE\-1D/2D/3D，以充分解锁每个模态的能力。
+
+刚才我们说，多模态位置编码的主要困难是不同大小的位置向量无法作差，既要保留完整的位置信息又要允许作差，那么我们就只能统一升维到最高维度。下面我们以<u>图文混合模态</u>为例，由于图像是2D的，所以我们将文本的位置编码也提升到二维，然后统一用RoPE\-2D。怎么升维都可以吗？并不是，我们希望它具有向后的<strong>兼容性</strong>，即当输入是纯文本时，它跟RoPE\-1D完全等价。
+
+为此，我们对比一下RoPE\-1D与RoPE\-2D：
+$$\scriptsize{\begin{array}{c}\begin{array}{c}\text{RoPE-1D}\\ (\boldsymbol{\mathcal{R}}_n)\end{array}= \begin{pmatrix}
+\cos \bbox[yellow]{n}\theta_0 & -\sin \bbox[yellow]{n}\theta_0 & 0 & 0 & \cdots & 0 & 0 & 0 & 0 \\
+\sin \bbox[yellow]{n}\theta_0 & \cos \bbox[yellow]{n}\theta_0 & 0 & 0 & \cdots & 0 & 0 & 0 & 0 \\
+0 & 0 & \cos \bbox[yellow]{n}\theta_1 & -\sin \bbox[yellow]{n}\theta_1 & \cdots & 0 & 0 & 0 & 0 \\
+0 & 0 & \sin \bbox[yellow]{n}\theta_1 & \cos \bbox[yellow]{n}\theta_1 & \cdots & 0 & 0 & 0 & 0 \\
+\vdots & \vdots & \vdots & \vdots & \ddots & \vdots & \vdots & \vdots & \vdots \\
+0 & 0 & 0 & 0 & \cdots & \cos \bbox[yellow]{n}\theta_{d/2-2} & -\sin \bbox[yellow]{n}\theta_{d/2-2} & 0 & 0 \\
+0 & 0 & 0 & 0 & \cdots & \sin \bbox[yellow]{n}\theta_{d/2-2} & \cos \bbox[yellow]{n}\theta_{d/2-2} & 0 & 0 \\
+0 & 0 & 0 & 0 & \cdots & 0 & 0 & \cos \bbox[yellow]{n}\theta_{d/2-1} & -\sin \bbox[yellow]{n}\theta_{d/2-1} \\
+0 & 0 & 0 & 0 & \cdots & 0 & 0 & \sin \bbox[yellow]{n}\theta_{d/2-1} & \cos \bbox[yellow]{n}\theta_{d/2-1} \\
+\end{pmatrix} \\[16pt]
+\begin{array}{c}\text{RoPE-2D}\\ (\boldsymbol{\mathcal{R}}_{x,y})\end{array}= \begin{pmatrix}
+\cos \bbox[yellow]{x}\theta_0 & -\sin \bbox[yellow]{x}\theta_0 & 0 & 0 & \cdots & 0 & 0 & 0 & 0 \\
+\sin \bbox[yellow]{x}\theta_0 & \cos \bbox[yellow]{x}\theta_0 & 0 & 0 & \cdots & 0 & 0 & 0 & 0 \\
+0 & 0 & \cos \bbox[yellow]{y}\theta_1 & -\sin \bbox[yellow]{y}\theta_1 & \cdots & 0 & 0 & 0 & 0 \\
+0 & 0 & \sin \bbox[yellow]{y}\theta_1 & \cos \bbox[yellow]{y}\theta_1 & \cdots & 0 & 0 & 0 & 0 \\
+\vdots & \vdots & \vdots & \vdots & \ddots & \vdots & \vdots & \vdots & \vdots \\
+0 & 0 & 0 & 0 & \cdots & \cos \bbox[yellow]{x}\theta_{d/2-2} & -\sin \bbox[yellow]{x}\theta_{d/2-2} & 0 & 0 \\
+0 & 0 & 0 & 0 & \cdots & \sin \bbox[yellow]{x}\theta_{d/2-2} & \cos \bbox[yellow]{x}\theta_{d/2-2} & 0 & 0 \\
+0 & 0 & 0 & 0 & \cdots & 0 & 0 & \cos \bbox[yellow]{y}\theta_{d/2-1} & -\sin \bbox[yellow]{y}\theta_{d/2-1} \\
+0 & 0 & 0 & 0 & \cdots & 0 & 0 & \sin \bbox[yellow]{y}\theta_{d/2-1} & \cos \bbox[yellow]{y}\theta_{d/2-1} \\
+\end{pmatrix}\end{array}}$$
+
+发现什么共同点了吗？如果单看这个形式，可以发现其实有$\boldsymbol{\mathcal{R}}_n=\boldsymbol{\mathcal{R}}_{n,n}$，即位置为$n$的RoPE\-1D跟位置为$(n,n)$的RoPE\-2D其实是等价的，所以要想在图文混合中统一用RoPE\-2D，并且对于纯文本能退化为RoPE\-1D，那么就要将文本部分的位置坐标取为$(n,n)$的形式。
+
+当然，实际上它们还是有少许不同的，我们知道对于RoPE\-1D有$\theta_i = b^{-2i/d}$，也就是$\theta_{2j}$跟$\theta_{2j+1}$是不同的，但对于RoPE\-2D来说，为了确保$x,y$的对称性，通常的选择是确保$\theta_{2j}=\theta_{2j+1}$，这就产生了矛盾之处。对此，我们有两种选择：一是放弃RoPE\-2D中$x,y$的对称性，依旧取$\theta_i = b^{-2i/d}$；二是取$\theta_{2j}=\theta_{2j+1}=b^{-4j/d}$，此时纯文本部分的位置编码就跟已有RoPE\-1D略有不同。对于$\theta_i = b^{-2i/d}$来说，$\theta_i$与$\theta_{i+1}$差别不大，所以两种方案其实都差不多，选哪一种取决于个人的审美，笔者倾向于选择第一种。
+
+## 等价对称
+
+通过上述分析，我们确定了图文混合模态统一用RoPE\-2D的方案，并且由向后兼容性确定了位置$n$的文本Token的二维位置应该取$(n,n)$，从而完成了文本部分的位置编码设计。接下来，我们需要构思的是图像部分的位置编码。
+
+如果输入只有一张$w\times h$个Patch的图像，那么它的位置坐标自然就是各个Patch本身的坐标，即
+\begin{equation}\left[\begin{matrix}
+(1,1) & (1,2) & \cdots & (1, w) \\
+(2,1) & (2,2) & \cdots & (2, w) \\
+\vdots & \vdots & \ddots & \vdots \\
+(h,1) & (h,2) & \cdots & (h, w) \\
+\end{matrix}\right]\label{eq:rope2d}\end{equation}
+我们这展示的是绝对位置，但实际的效果是相对位置，相对位置的特点是跟位置偏置无关，所以我们可以给每个坐标都加上$(\beta_1,\beta_2)$而不改变效果；其次，我们可以给每个坐标都乘以$(\gamma_1,\gamma_2)$，这样允许我们按需调整相邻位置的间隔。将这两点结合起来，我们可以得到图像的一般化二维位置为
+\begin{equation}\left[\begin{matrix}
+(\beta_1 + \gamma_1,\beta_2 + \gamma_2) & (\beta_1 + \gamma_1,\beta_2 + 2\gamma_2) & \cdots & (\beta_1 + \gamma_1,\beta_2 + w\gamma_2) \\[8pt]
+(\beta_1 + 2\gamma_1,\beta_2 + \gamma_2) & (\beta_1 + 2\gamma_1,\beta_2 + 2\gamma_2) & \cdots & (\beta_1 + 2\gamma_1,\beta_2 + w\gamma_2) \\[8pt]
+\vdots & \vdots & \ddots & \vdots \\[8pt]
+(\beta_1 + h\gamma_1,\beta_2 + \gamma_2) & (\beta_1 + h\gamma_1,\beta_2 + 2\gamma_2) & \cdots & (\beta_1 + h\gamma_1,\beta_2 + w\gamma_2)
+\end{matrix}\right]\end{equation}
+现在我们考虑左右两段文本夹着中间一张图像时，$\beta_1,\beta_2,\gamma_1,\gamma_2$该怎么选取。
+
+首先，我们假设文本的Token和Patch具有一定的<strong>等价性</strong>：经过合理的[Patchify](<https://spaces.ac.cn/archives/10197>)后每个Patch的地位跟Token等价（An Image is Worth xxx Tokens），这意味着对于两段文本来说，它们相当于夹着一个$wh$个Token的句子，所以如果左段文本最后一个Token的位置是$(L,L)$，那么右段文本第一个Token的位置就是$(L+wh+1, L + wh + 1)$。
+
+接着，我们还需要引入<strong>对称性</strong>——具体来说，图像的第一个Patch的位置是$(\beta_1 + \gamma_1,\beta_2 + \gamma_2)$，最后一个Patch的位置是$(\beta_1 + h\gamma_1,\beta_2 + w\gamma_2)$，我们认为【图像第一个Patch】与【左段文本最后一个Token】的位置差，等于【右段文本第一个Token】与【图像最后一个Patch】的位置差，即
+\begin{equation}\begin{pmatrix}\beta_1 + \gamma_1 \\ \beta_2 + \gamma_2\end{pmatrix} - \begin{pmatrix}L \\ L\end{pmatrix} = \begin{pmatrix}L+wh+1 \\ L+wh+1\end{pmatrix} - \begin{pmatrix}\beta_1 + h\gamma_1 \\ \beta_2 + w\gamma_2\end{pmatrix}\label{eq:beta-gamma}\end{equation}
+这里边有四个未知数$\beta_1,\beta_2,\gamma_1,\gamma_2$，但只有两个等式，所以有无穷多组解。我们可以简单地取$\gamma_1=\gamma_2=1$，继而解得
+\begin{equation}\beta_1 = L + \frac{1}{2}(wh - h),\quad \beta_2 = L + \frac{1}{2}(wh - w)\end{equation}
+这个方案我们暂时可以称之为RoPE\-Tie\-v2或者RoPE\-TV（RoPE for Text and Vision）吧。
+
+## 优劣分析
+
+根据这个结果，当句子后面接一张$w\times h$的图像时，只需要按照上述计算计算出$(\beta_1,\beta_2)$，然后加到常规的二维RoPE $\eqref{eq:rope2d}$中去，就得到了图像部分的位置坐标了，如下图所示
+
+[![新版RoPE-TV（RoPE-Tie-v2）示意图](<https://spaces.ac.cn/usr/uploads/2024/09/2781465051.png>)](<https://spaces.ac.cn/usr/uploads/2024/09/2781465051.png>)
+
+新版RoPE\-TV（RoPE\-Tie\-v2）示意图
+
+作为对比，我们在[《Transformer升级之路：17、多模态位置编码的简单思考》](<https://spaces.ac.cn/archives/10040>)提出的旧版RoPE\-Tie，其位置坐标如下图所示：
+
+[![旧版RoPE-Tie示意图](<https://spaces.ac.cn/usr/uploads/2024/09/2581235844.png>)](<https://spaces.ac.cn/usr/uploads/2024/09/2581235844.png>)
+
+旧版RoPE\-Tie示意图
+
+事实上，RoPE\-Tie的出发点同样包括<strong>兼容性</strong>和<strong>对称性</strong>，但没有严格遵循<strong>等价性</strong>，并且RoPE\-Tie默认了$\beta_1=\beta_2=L$，以及没有限定$w\times h$个Patch等价于$wh$个Token，最终推出了一组整数解（如果不要求整数解也可以满足<strong>等价性</strong>）：
+\begin{equation}\gamma_1 = w+1,\quad\gamma_2=h+1\end{equation}
+从如今的视角来看，RoPE\-Tie的默认设置其实并不是很理想，所以本文重新选择了$\gamma_1=\gamma_2=1$，并确保<strong>等价性</strong>，然后反推出$\beta_1,\beta_2$。
+
+那新方案有什么好处呢？首先，RoPE\-Tie中图像内的相对位置跟它的大小有关，而新方案中Patch的间隔是固定的$(0,1)$和$(1,0)$，这可以让Patch的尺度更为一致。举个例子，一张128\*128的图像以及该图的上半部份（即128\*64的子图），由于两者高度不一样，所以RoPE\-Tie后它们横向的位置间隔并不一样，这意味着同样位置、同样含义的两个Patch在加了RoPE\-Tie后的距离（尺度）变得不一致了，这看起来并不合理，而新方案没有这个问题。
+
+其次，RoPE\-Tie中图像与左右文本的间隔，跟图像内部Patch的间隔一样都是$(\gamma_1,\gamma_2)$，而新方案中文本到图像、图像到文本之间会出现一个比较大的间隔$\frac{1}{2}(wh - h, wh-w)$，然后文本内部、图像内部则都是固定的均匀间隔。直觉上，这种不同模态之间比较大的位置跳跃，可以更好地实现“模态隔离”，让单个模型既能更好地处理单模态内容，又保留了多模态之间的交互，这跟我们通常在左右加&#91;IMG&#93;和&#91;/IMG&#93;两个Special Token来标记出图像具有异曲同工之处。
+
+## 三维困境
+
+在RoPE\-Tie的文章中，并没有讨论到“文本\-视频”混合模态的位置编码，这一节我们来补充讨论完整。
+
+直观来看，对于视频输入我们可以有两种处理方式。第一种方式就是简单地将视频当成多张图片处理（必要时加个&#91;VIDEO&#93;、&#91;/VIDEO&#93;的标记），这样我们就不需要针对视频提出新的位置编码了，沿用“文本\-图像”的混合位置编码结果就行，但这样丧失了同一视频不同帧之间的对齐关系，可能不是太完美，例如“第1帧的第1个Patch”跟“第2帧的第1个Patch”和“第1帧的第2个Patch”，应该有差不多的邻近关系，但展平当多张图片处理就体现不出这一点。
+
+第二种方式则是将“文本\-图像”的结果平行地推广到“文本\-视频”中。对于一个$w\times h\times t$的视频（画面为$w\times h$，一共$t$帧），它的位置坐标是三维的$(x,y,z)$，根据相同的<strong>兼容性</strong>、<strong>等价性</strong>和<strong>对称性</strong>，我们可以将方程$\eqref{eq:beta-gamma}$推广成
+\begin{equation}\begin{pmatrix}\beta_1 + \gamma_1 \\ \beta_2 + \gamma_2 \\ \beta_3 + \gamma_3\end{pmatrix} - \begin{pmatrix}L \\ L \\ L\end{pmatrix} = \begin{pmatrix}L+wht+1 \\ L+wht+1 \\ L+wht+1\end{pmatrix} - \begin{pmatrix}\beta_1 + h\gamma_1 \\ \beta_2 + w\gamma_2 \\ \beta_3 + t\gamma_3\end{pmatrix}\end{equation}
+如果还是设$\gamma_1=\gamma_2=\gamma_3=1$，我们得到
+\begin{equation}\beta_1 = L + \frac{1}{2}(wht - h),\quad \beta_2 = L + \frac{1}{2}(wht - w),\quad \beta_3 = L + \frac{1}{2}(wht - t)\end{equation}
+
+这样做完整了保留了视频位置的三维性，看起来会更优雅一些，但笔者认为它仍有一些美中不足之处。
+
+这个美中不足源于笔者对视频的时间维度的不同理解：视频的三维，实际上是“2个空间维度\+1个时间维度”，跟真实世界的三维立体的“3个空间维度”不一样。按照笔者的观点，视频的时间维度跟两个空间维度是不平权的，时间维度更像是文本从左往右的书写方向，所以笔者想象中的完美多模态LLM，应该能像文本LLM续写文本一样，理论上能够以自回归的方式无限地续作视频，直到出现&#91;EOS&#93;标记。
+
+刚才我们提了两种“文本\-视频”混合编码方案，第一种直接当作多张图片处理，这种方案是可以无限自回归生成视频的，但第二种看上去更完美的方案反而不行，因为它的$\beta_1,\beta_2,\beta_3$是依赖于$t$的，这意味着我们需要提前知道生成多少帧的视频，换句话说，第二种方案并不是不能用自回归的方式生成视频，而是需要提前确定帧数，这在笔者看来是不符合时间维度的理想特性的（时间，应该可以无约束地往前推进）。
+
+可能有读者疑问：为什么图像就不介意$\beta_1,\beta_2$中依赖于$w,h$呢？也就是说为什么图像生成不介意事先知道图像大小呢？这是因为图像有两个方向，就算我们用自回归的方式生成图像，也必须至少知道一个方向的大小，才能告诉模型及时“换行”，以生成一张完整的二维图像。而图像的两个空间维度是平权的，单知其一倒不如全部知道，所以我们能够接受事先确定图像大小。
+
+此外，我们还可以用[《“闭门造车”之多模态思路浅谈（一）：无损输入》](<https://spaces.ac.cn/archives/9984>)介绍的“AR\+Diffusion”做“文本\-图像”模型，此时图像生成部分是Diffusion，就必须提前知道目标图像大小了。
+
+## 相关工作
+
+前段时间，阿里开源了名为“Qwen2\-VL”的多模态模型，介绍中提到自己提出了一种多模态旋转位置编码（M\-ROPE），引起了笔者的兴趣。经过阅读源码（[链接](<https://github.com/huggingface/transformers/blob/1759bb9126e59405f58693a17ef9f58040c2008b/src/transformers/models/qwen2_vl/modeling_qwen2_vl.py#L1357>)），发现M\-RoPE实际上就是沿用了RoPE\-Tie的<strong>兼容性</strong>思想，但没有保留<strong>对称性</strong>和<strong>等价性</strong>。
+
+[![M-RoPE的源码注释](<https://spaces.ac.cn/usr/uploads/2024/09/1743575360.png>)](<https://spaces.ac.cn/usr/uploads/2024/09/1743575360.png>)
+
+M\-RoPE的源码注释
+
+用本文的记号，M\-RoPE实际上就是取了$\beta_1=\beta_2=\beta_3=L,\gamma_1=\gamma_2=\gamma_3$（对于“文本\-视频”混合模态），然后视频右段的文本的第一个Token的位置，直接取视频最大的位置坐标加1。这样如果还是用自回归的方式生成视频，确实也不用提前确定帧数，但牺牲了<strong>对称性</strong>和<strong>等价性</strong>。
+
+<strong>对称性</strong>和<strong>等价性</strong>有多重要呢？笔者不清楚答案，这需要充分实验来验证。但如果仅仅是头脑风暴的话，笔者猜测可能会影响极端情形的表现，比如对于M\-RoPE来说，如果是画面很小但时间很长的视频，它的空间维度的位置坐标相对于左段文本来说是连续的，但相对于右段文本来说则是突变了，直觉上会使得文本和视觉的交互更不友好。
+
+再比如一个$w=h=t=n$的视频，直觉上它等效于$n^3$个Token，但如果按照M\-RoPE的规则，如果两段文本夹着这样一个视频，只是等价于夹着一个$n$个Token的文本，换言之在大小为$n$的相对距离内放下了$n^3$个Token，会不会导致信息密度过大而增加模型理解难度了？
+
+当然，对于NoPE都可能Work的Decoder\-only LLM来说，这些问题也可能是笔者多虑了。
+
+## 文章小结
+
+本文分享了笔者关于多模态位置编码的后续思考，提出了构建多模态位置编码的三个原则：兼容性、等价性和对称性，改进了之前提出过的RoPE\-Tie，最后讨论了“文本\-视频”混合模态的位置编码设计和困难，以及Qwen2\-VL的M\-RoPE与RoPE\-Tie的联系等。

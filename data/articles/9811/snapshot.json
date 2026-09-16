@@ -1,0 +1,17 @@
+{
+  "metadata": {
+    "id": "9811",
+    "title": "随机分词再探：从Viterbi Sampling到完美采样算法",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/9811",
+    "date": "2023-10-16",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "fetched_at": "2026-09-14T12:51:28+00:00",
+  "source_snapshot_sha256": "85c1ba775a342e1f7d805d0658856a66cc6d85b7e1b46ea80cb10606286747bc",
+  "validators": {
+    "etag": null,
+    "last_modified": null
+  }
+}

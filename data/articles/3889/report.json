@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "3889",
+    "title": "差分方程的摄动法",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/3889",
+    "date": "2016-08-04",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 72,
+    "display_formula_count": 24,
+    "image_count": 2,
+    "heading_count": 5,
+    "code_block_count": 0,
+    "source_text_sha256": "f03a4ef73817a6f3657005819e9f27da6b675e93ec51373684cb792181e3a387",
+    "output_text_sha256": "f03a4ef73817a6f3657005819e9f27da6b675e93ec51373684cb792181e3a387",
+    "latex_sha256": "9445df7570ad80c6ba7bd6cf748319d2b6d1f872766068c781aa81653d307deb",
+    "body_sha256": "5a09e55e723ccda50f3e33fa3e57ed6fae009e39c6eaa8d1a99d0a3985c1c3ab",
+    "converter_version": 1,
+    "markdown_sha256": "22e9b98a0a7526afa77fd67c43be2c8005dfde160d6a20d47e8b39107317fb18"
+  },
+  "fetched_at": "2026-09-14T13:38:57+00:00",
+  "source_snapshot_sha256": "f062f10c4c742bba4442011e76b058e0a9ab25366256028d3d16e34f344cd394",
+  "images": {},
+  "local_only": true
+}

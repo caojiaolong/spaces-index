@@ -1,0 +1,17 @@
+{
+  "metadata": {
+    "id": "6409",
+    "title": "O-GAN：简单修改，让GAN的判别器变成一个编码器！",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/6409",
+    "date": "2019-03-06",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "fetched_at": "2026-09-14T13:21:09+00:00",
+  "source_snapshot_sha256": "82fb9c07c57cb5d43cf81db8f59cd88a3e8061802b6c3beb2e915fcfcfc178c8",
+  "validators": {
+    "etag": null,
+    "last_modified": null
+  }
+}

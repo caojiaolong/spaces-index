@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "10699",
+    "title": "MoE环游记：1、从几何意义出发",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/10699",
+    "date": "2025-02-08",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 79,
+    "display_formula_count": 8,
+    "image_count": 0,
+    "heading_count": 6,
+    "code_block_count": 0,
+    "source_text_sha256": "3306ddcd5834b94402e120e50d0dc980c8e8e260b8368152a553e44112c51de0",
+    "output_text_sha256": "3306ddcd5834b94402e120e50d0dc980c8e8e260b8368152a553e44112c51de0",
+    "latex_sha256": "60857ff60b438254fe320110964bb89ffdbcc3eb229ece60840ebe0b6668a7a6",
+    "body_sha256": "180ec7e709aed47c4617516a99256943a99e044ef6ff5ee9b1ce1233c2c8dadb",
+    "converter_version": 1,
+    "markdown_sha256": "a0cbd93a3feb9368f24e6cd0d76181e372cb221e3b7b5611986d93ea8729eb25"
+  },
+  "fetched_at": "2026-09-14T12:44:03+00:00",
+  "source_snapshot_sha256": "43dfb9bb7b40a1bb962e234f1e18fa4bcef750fce8da86bb07f649777d7a5276",
+  "images": {},
+  "local_only": true
+}

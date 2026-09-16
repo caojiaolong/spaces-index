@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "65",
+    "title": "彗星(非小行星)重创月球",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/65",
+    "date": "2009-08-08",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 1,
+    "display_formula_count": 0,
+    "image_count": 3,
+    "heading_count": 0,
+    "code_block_count": 0,
+    "source_text_sha256": "da64209516d73135477f6994ea163a93d19298610bbb4f47c3b46495c52c6743",
+    "output_text_sha256": "da64209516d73135477f6994ea163a93d19298610bbb4f47c3b46495c52c6743",
+    "latex_sha256": "cea8183ee916dab9b2610b6adf2d9483dcdb1f18f94f00cd0a4d5126765fbf70",
+    "body_sha256": "2e451be492e8e22b4a6f4433665b57b01a5b639c507902a46ba9e225bae9631d",
+    "converter_version": 1,
+    "markdown_sha256": "0ecc21e0f45cbe7a1578b700b7fd6c888d517cd4c009714e615a57c8fa7aeb4e"
+  },
+  "fetched_at": "2026-09-14T15:00:23+00:00",
+  "source_snapshot_sha256": "3917cd3373426dfbeb232df4f8f78896b22779b5a0d00bec1f088ed11a40038f",
+  "images": {},
+  "local_only": true
+}

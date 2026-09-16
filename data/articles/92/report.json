@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "92",
+    "title": "【NASA每日一图】甘姆星云(Gum Nebula)",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/92",
+    "date": "2009-08-22",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 0,
+    "display_formula_count": 0,
+    "image_count": 1,
+    "heading_count": 0,
+    "code_block_count": 0,
+    "source_text_sha256": "37ea38533bf440cc35452e8c9dabc73d2f289b90e5362402c8c4693cc93a2814",
+    "output_text_sha256": "37ea38533bf440cc35452e8c9dabc73d2f289b90e5362402c8c4693cc93a2814",
+    "latex_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "body_sha256": "3dfb67f85c4db2a6dc0f2f9ea1081bdafae86fb8cf812a3fce9d965be3bbe2c3",
+    "converter_version": 1,
+    "markdown_sha256": "925080c2e561bf5e47e32a1ec02660308e5063cd81bd8ab4062af48787095a0c"
+  },
+  "fetched_at": "2026-09-14T14:57:07+00:00",
+  "source_snapshot_sha256": "a91b54ef0e4a534958619055189b930cda956cf04699d1b18fe580eff7fc6812",
+  "images": {},
+  "local_only": true
+}

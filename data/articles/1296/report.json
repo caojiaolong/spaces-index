@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "1296",
+    "title": "【福岛核电站】“最坏情况”有多坏？",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/1296",
+    "date": "2011-03-20",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 0,
+    "display_formula_count": 0,
+    "image_count": 2,
+    "heading_count": 0,
+    "code_block_count": 0,
+    "source_text_sha256": "8da26374dfd8d6ed3529e4b152f30f8cd0a2c6cc3a24dc97c2593b58d08ccd76",
+    "output_text_sha256": "8da26374dfd8d6ed3529e4b152f30f8cd0a2c6cc3a24dc97c2593b58d08ccd76",
+    "latex_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "body_sha256": "c8f38b081a98892e6e5d491178e185bcc2991afc51b17da8dd1f459f2ee8f88d",
+    "converter_version": 1,
+    "markdown_sha256": "4a4bd9b813f4bc3a0f9e997b704398a23a5eee0a8693887809547f0011633e4e"
+  },
+  "fetched_at": "2026-09-14T14:23:08+00:00",
+  "source_snapshot_sha256": "4a96fbd9f6ef27b91f816554e3494b4c584dc23d361b46f8d6b68df3aef56541",
+  "images": {},
+  "local_only": true
+}

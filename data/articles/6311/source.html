@@ -1,0 +1,100 @@
+<div class="PostContent" id="PostContent">
+<p>继续“<a href="/search/%E8%AE%A9Keras%E6%9B%B4%E9%85%B7%E4%B8%80%E4%BA%9B/" target="_blank">让Keras更酷一些！</a>”系列，让Keras来得更有趣些吧～</p><p>这次围绕着Keras的loss、metric、权重和进度条进行展开。</p><h2 id="可以不要输出">可以不要输出</h2><p>一般我们用Keras定义一个模型，是这样子的：</p><pre class="line-numbers"><code class="language-python">x_in = Input(shape=(784,))
+x = x_in
+x = Dense(100, activation='relu')(x)
+x = Dense(10, activation='softmax')(x)
+
+model = Model(x_in, x)
+model.compile(loss='categorical_crossentropy ',
+              optimizer='adam',
+              metrics=['accuracy'])
+model.fit(x_train, y_train, epochs=5)
+</code></pre><p></p><p>这种模型就是普通的输入输出结构，然后loss是输出的运算。然而，对于比较复杂的模型，如自编码器、GAN、Seq2Seq，这种写法有时候不够方便，loss并不总只是输出的运算。幸好，比较新的Keras版本已经支持更加灵活的loss定义，比如我们可以这样写一个自编码器：</p><pre class="line-numbers"><code class="language-python">x_in = Input(shape=(784,))
+x = x_in
+x = Dense(100, activation='relu')(x)
+x = Dense(784, activation='sigmoid')(x)
+
+model = Model(x_in, x)
+loss = K.mean((x - x_in)**2)
+model.add_loss(loss)
+model.compile(optimizer='adam')
+model.fit(x_train, None, epochs=5)
+</code></pre><p>上述写法的几个特点是：</p><p>1、<code class="language-python">compile</code>的时候并没有传入loss，而是在<code class="language-python">compile</code>之前通过另外的方式定义loss，然后通过<code class="language-python">add_loss</code>加入到模型中，这样可以随意写足够灵活的loss，比如这个loss可以跟中间层的某个输出有关、跟输入有关，等等。</p><p>2、<code class="language-python">fit</code>的时候，原来的目标数据，现在是<code class="language-python">None</code>，因为这种方式已经把所有的输入输出都通过<code class="language-python">Input</code>传递进来了。读者还可以看我之前写的<a href="https://github.com/bojone/seq2seq/blob/master/seq2seq.py" target="_blank">Seq2Seq</a>：<a href="/archives/5861" target="_blank">《玩转Keras之seq2seq自动生成标题》</a>，在那个例子中，读者能更充分地感觉到这种写法的便捷性。</p><h2 id="更随意的metric">更随意的metric</h2><p>另一种输出是训练过程中用来观察的metric。这里的metric，就是指衡量模型性能的一些指标，比如正确率、F1等，Keras内置了一些<a href="https://keras.io/metrics/" target="_blank">常见的metric</a>。像开头例子的<code class="language-python">accuracy</code>一样，将这些metric的名字加入到<code class="language-python">model.compile</code>中，就可以在训练过程中动态地显示这些metric。</p><p>当然，你也可以参考Keras中内置的metric来自己定义新metric，但问题是在标准的metric定义方法中，metric是“输出层”与“目标值”之间的运算结果，而我们经常要在训练过程中观察一些特殊的量的变化过程，比如我想观察中间某一层的输出变化情况，这时候标准的metric定义就无法奏效了。</p><p>那可以怎么办呢？我们可以去看Keras的源码，去追溯它的metric相关的方法，最终我发现metric实际上定义在两个<code class="language-python">list</code>之中，通过修改这两个<code class="language-python">list</code>，我们可以非常灵活地显示需要观察的metric，比如</p><pre class="line-numbers"><code class="language-python">x_in = Input(shape=(784,))
+x = x_in
+x = Dense(100, activation='relu')(x)
+x_h = x
+x = Dense(10, activation='softmax')(x)
+
+model = Model(x_in, x)
+model.compile(loss='categorical_crossentropy ',
+              optimizer='adam',
+              metrics=['accuracy'])
+
+# 重点来了
+model.metrics_names.append('x_h_norm')
+model.metrics_tensors.append(K.mean(K.sum(x_h**2, 1)))
+
+model.fit(x_train, y_train, epochs=5)
+</code></pre><p>上述代码展示了在训练过程中观察中间层的平均模长的变化情况。可以看到，主要涉及到两个<code class="language-python">list</code>：<code class="language-python">model.metrics_names</code>是metric的名称，是字符串列表；<code class="language-python">model.metrics_tensors</code>是metric的张量。只要在这里把你需要展示的量添加进去，就可以在训练过程中显示了。当然，要注意的是，一次性只能添加一个标量。</p><h2 id="灵活的权重归一化">灵活的权重归一化</h2><p>有时候我们需要把权重做一些约束，常见的是归一化，如L2范数归一化、谱归一化等，当然也可以是其他约束。</p><p>权重约束的实现方法一般有两种。第一种是事后处理，即在每一步梯度下降之后直接对权重进行硬处理，即<br/>
+\begin{equation}\begin{aligned}&amp;\boldsymbol{\theta} \leftarrow \boldsymbol{\theta} - \varepsilon\nabla_{\boldsymbol{\theta}}L(\boldsymbol{\theta})\\<br/>
+&amp;\boldsymbol{\theta}\leftarrow constraint(\boldsymbol{\theta})\end{aligned}\end{equation}<br/>
+显然，这种处理方法是要被写在优化器的实现中的。而事实上Keras内置的就是这一种，使用方法很简单，只需要在添加层的时候，设置<code class="language-python">kernel_constraint</code>或<code class="language-python">bias_constraint</code>参数即可，详细请参考：<a href="https://keras.io/constraints/" target="_blank">https://keras.io/constraints/</a> 。</p><p>第二种是事前处理，我们希望对权重处理后，才代入后续的层进行运算，也就是说把约束作为模型的一部分，而不是作为优化器的一部分。Keras本身不提供这种方案的支持，但我们可以自行实现这个需求。</p><p>这时候Keras设计的精妙之处就充分体现出来了。在建立一个层对象的时候，Keras将它分为两个步骤：<code class="language-python">build</code>和<code class="language-python">call</code>，前者负责建立权重，后者负责进行运算。默认情况下，这两个部分是同时执行的，但是我们可以“移花接木”，让我们手动分步执行。</p><p>下面是利用这个思路实现的<a href="/archives/6051#%E8%B0%B1%E5%BD%92%E4%B8%80%E5%8C%96" target="_blank">谱归一化（Spectral Normalization）</a>：</p><pre class="line-numbers"><code class="language-python">class SpectralNormalization:
+    """层的一个包装，用来加上SN。
+    """
+
+    def __init__(self, layer):
+        self.layer = layer
+
+    def spectral_norm(self, w, r=5):
+        w_shape = K.int_shape(w)
+        in_dim = np.prod(w_shape[:-1]).astype(int)
+        out_dim = w_shape[-1]
+        w = K.reshape(w, (in_dim, out_dim))
+        u = K.ones((1, in_dim))
+        for i in range(r):
+            v = K.l2_normalize(K.dot(u, w))
+            u = K.l2_normalize(K.dot(v, K.transpose(w)))
+        return K.sum(K.dot(K.dot(u, w), K.transpose(v)))
+
+    def spectral_normalization(self, w):
+        return w / self.spectral_norm(w)
+
+    def __call__(self, inputs):
+        with K.name_scope(self.layer.name):
+            if not self.layer.built:
+                input_shape = K.int_shape(inputs)
+                self.layer.build(input_shape)
+                self.layer.built = True
+                if self.layer._initial_weights is not None:
+                    self.layer.set_weights(self.layer._initial_weights)
+        if not hasattr(self.layer, 'spectral_normalization'):
+            if hasattr(self.layer, 'kernel'):
+                self.layer.kernel = self.spectral_normalization(self.layer.kernel)
+            if hasattr(self.layer, 'gamma'):
+                self.layer.gamma = self.spectral_normalization(self.layer.gamma)
+            self.layer.spectral_normalization = True
+        return self.layer(inputs)</code></pre><p>使用方法为</p><pre class="line-numbers"><code class="language-python">x = SpectralNormalization(Dense(100, activation='relu'))(x)</code></pre><p>也就是定义完层之后加个<code class="language-python">SpectralNormalization</code>修改一下就行了。至于原理，我们只需要观察<code class="language-python">__call__</code>部分，首先新建立的层是<code class="language-python">built=False</code>的，然后我们自己手动执行<code class="language-python">build</code>方法，然后对原来的权重进行归一化，并赋值覆盖原来的权重，即<code class="language-python">self.layer.kernel = self.spectral_normalization(self.layer.kernel)</code>这一句。</p><h2 id="调用Keras的进度条">调用Keras的进度条</h2><p>最后顺便提一个比较有趣的玩意，就是Keras自带的进度条，早期就是Keras这个自带的进度条吸引了不少新用户。当然，现在来说进度条已经不是什么新鲜玩意了，Python下有很好用的进度条工具tqdm，很久之前就介绍过它：<a href="/archives/3902" target="_blank">《两个惊艳的python库：tqdm和retry》</a>。</p><p>当然，如果你更喜欢Keras进度条的样式，或者不想另外安装tqdm，那么也可以在自己的设计中调用Keras的进度条：</p><pre class="line-numbers"><code class="language-python">import time
+from keras.utils import Progbar
+
+pbar = Progbar(100)
+for i in range(100):
+    pbar.update(i + 1)
+    time.sleep(0.1)</code></pre><p>它会显示进度和剩余时间，如果要在进度条上更多内容，可以在<code class="language-python">update</code>的时候增加<code class="language-python">value</code>参数，比如</p><pre class="line-numbers"><code class="language-python">import time
+from keras.utils import Progbar
+
+pbar = Progbar(100)
+for i in range(100):
+    pbar.update(i + 1, values=[('something', i - 10)])
+    time.sleep(0.1)</code></pre><p>不过要注意的是，这里的value是会滑动平均的，因为这个进度条主要是Keras为metric设计的而已，如果你不想它滑动更新，那就</p><pre class="line-numbers"><code class="language-python">import time
+from keras.utils import Progbar
+
+pbar = Progbar(100, stateful_metrics=['something'])
+for i in range(100):
+    pbar.update(i + 1, values=[('something', i - 10)])
+    time.sleep(0.1)</code></pre><p>更多使用参数可以参考<a href="https://www.tensorflow.org/api_docs/python/tf/keras/utils/Progbar" target="_blank">这里</a>，或者参考<a href="https://github.com/keras-team/keras/blob/master/keras/utils/generic_utils.py#L315" target="_blank">源码</a>。总的来说，功能远不如tqdm强，但是作为一个精致的工具，偶尔使用一下，还是个不错的选择。</p><h2 id="折腾不息的Keras">折腾不息的Keras</h2><p>又分享了一些花式Keras技巧，希望对大家有帮助。灵活地用好Keras是一件颇有趣味的事情，Keras也许不是最好的深度学习框架，但应该是最优雅的框架（封装），而且很可能没有之一。</p><p>DL苦短，我用Keras～</p>
+
+
+
+
+
+</div>

@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "3272",
+    "title": "柯西命题：盯着它到显然成立为止！",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/3272",
+    "date": "2015-04-19",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 26,
+    "display_formula_count": 11,
+    "image_count": 0,
+    "heading_count": 2,
+    "code_block_count": 0,
+    "source_text_sha256": "0f89ed2718876d5d411a01f3297151a6542a1a4128329927e0a1f9d39e68a54f",
+    "output_text_sha256": "0f89ed2718876d5d411a01f3297151a6542a1a4128329927e0a1f9d39e68a54f",
+    "latex_sha256": "893a61443eab2322acb40eda2dd2e8b258cb22a1460fff69a377637f8710a9bd",
+    "body_sha256": "c8fdc184f12f210ecddac76a12d652b0dc57221196208c4d66f40fd421d09c7d",
+    "converter_version": 1,
+    "markdown_sha256": "9099d0882618a719c09189835443968a006226cbf649be32c8cfe48e23159a3c"
+  },
+  "fetched_at": "2026-09-14T13:46:53+00:00",
+  "source_snapshot_sha256": "d778c38c0f890ef1e8bc42a738eed522fd70bb0783c3d96226066373ee16c6c3",
+  "images": {},
+  "local_only": true
+}

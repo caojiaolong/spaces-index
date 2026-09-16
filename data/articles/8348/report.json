@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "8348",
+    "title": "中文任务还是SOTA吗？我们给SimCSE补充了一些实验",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/8348",
+    "date": "2021-04-26",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 6,
+    "display_formula_count": 2,
+    "image_count": 1,
+    "heading_count": 7,
+    "code_block_count": 0,
+    "source_text_sha256": "97d9dc9a1057459225b63d1afdef1867a56a6f48f8dccea25211187003ebed0c",
+    "output_text_sha256": "97d9dc9a1057459225b63d1afdef1867a56a6f48f8dccea25211187003ebed0c",
+    "latex_sha256": "1e102fffc7a68b69b55aef896a3229fcc40ecbdb61f0215dda140ebbe25da701",
+    "body_sha256": "4f933d37efde6f3e2f7caa208899eabde14d46141a94da9da0afc4dce67cc784",
+    "converter_version": 1,
+    "markdown_sha256": "97837c724685a39967821b477dadd790a7ecb616f0213947f5bf7ddcb69074c3"
+  },
+  "fetched_at": "2026-09-14T13:06:59+00:00",
+  "source_snapshot_sha256": "b0d95cedf4e4fb7acc86942b8c06f87f682560602141a029ce0aba1a779b8275",
+  "images": {},
+  "local_only": true
+}

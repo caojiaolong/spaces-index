@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "1644",
+    "title": "今天傍晚出现了彩虹",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/1644",
+    "date": "2012-06-30",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 0,
+    "display_formula_count": 0,
+    "image_count": 3,
+    "heading_count": 0,
+    "code_block_count": 0,
+    "source_text_sha256": "4f92ff3d05688b7ff4f0349da7b1748f3edefdc7f2894277e3db8adec173f32d",
+    "output_text_sha256": "4f92ff3d05688b7ff4f0349da7b1748f3edefdc7f2894277e3db8adec173f32d",
+    "latex_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "body_sha256": "8ddea18065393ea2ce570134e89f15cdd3fd808ba9151480ba850276f05cf786",
+    "converter_version": 1,
+    "markdown_sha256": "d7c37a869cdead4504e27e06d309376c9669b67de239d7c7647ebc8bdb984aff"
+  },
+  "fetched_at": "2026-09-14T14:12:58+00:00",
+  "source_snapshot_sha256": "f85b872d6fb76c47916c980564b4930a64c637b93370dc12c9cd74b9048939d5",
+  "images": {},
+  "local_only": true
+}

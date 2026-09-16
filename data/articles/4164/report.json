@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "4164",
+    "title": "2017年快乐！Responsive Geekg for Typecho",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/4164",
+    "date": "2016-12-31",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 0,
+    "display_formula_count": 0,
+    "image_count": 3,
+    "heading_count": 0,
+    "code_block_count": 0,
+    "source_text_sha256": "9eae3c738484035539d17690cbe60cdcafee7bcc09cf4c9a740ac0a8119b5e7e",
+    "output_text_sha256": "9eae3c738484035539d17690cbe60cdcafee7bcc09cf4c9a740ac0a8119b5e7e",
+    "latex_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "body_sha256": "fdce51cb94bc9e927591fecf7e2587c65eb95afeabeb5375eb5ddc0ea695ca13",
+    "converter_version": 1,
+    "markdown_sha256": "6141f00dec91afead7b05e023c7a0d88dc6a5502aabf2e0402238bfdbcbf3d6e"
+  },
+  "fetched_at": "2026-09-14T13:35:12+00:00",
+  "source_snapshot_sha256": "d79b354053e1aa0da6033ec7724fcd725c7fa70895154ac1e560d0aa1d19da1d",
+  "images": {},
+  "local_only": true
+}

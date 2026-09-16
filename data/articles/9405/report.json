@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "9405",
+    "title": "智能家居之热水器零冷水技术原理浅析",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/9405",
+    "date": "2023-01-04",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 0,
+    "display_formula_count": 0,
+    "image_count": 17,
+    "heading_count": 6,
+    "code_block_count": 0,
+    "source_text_sha256": "45e558674aedd9d7fdffdae392debbbe8efa91d92e5f203cb07e0afca9a5a88e",
+    "output_text_sha256": "45e558674aedd9d7fdffdae392debbbe8efa91d92e5f203cb07e0afca9a5a88e",
+    "latex_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "body_sha256": "910a10aa768daf21e5e3cbd28b51209c6a685127ed315c5c30245c405722c67e",
+    "converter_version": 1,
+    "markdown_sha256": "2d94a6530d137f74f31f8e71b476e2655c43f2850778e32d669d08a1b0bd4b7b"
+  },
+  "fetched_at": "2026-09-14T12:56:06+00:00",
+  "source_snapshot_sha256": "704ffa59e5b67a352b5a8d6a6dbcfa007ba460ecf539fd5f296c659374746a63",
+  "images": {},
+  "local_only": true
+}

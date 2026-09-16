@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "11",
+    "title": "【个人翻译】变暖的地球对冷血动物来说过热？",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/11",
+    "date": "2009-07-08",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 0,
+    "display_formula_count": 0,
+    "image_count": 1,
+    "heading_count": 0,
+    "code_block_count": 0,
+    "source_text_sha256": "559a0ed8ea3452a67f916ff4dd8ea27fad0fb5430ed114e4b55f7a8ed99a71cc",
+    "output_text_sha256": "559a0ed8ea3452a67f916ff4dd8ea27fad0fb5430ed114e4b55f7a8ed99a71cc",
+    "latex_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "body_sha256": "9048c6be616565ab67f83642c8c4e691edbd6f348cd0bb4b60b68d597d758571",
+    "converter_version": 1,
+    "markdown_sha256": "a5c9f282f08536e80f00af5ab7bdb76c866cb928619764527e6d1af5acfcea0f"
+  },
+  "fetched_at": "2026-09-14T15:06:53+00:00",
+  "source_snapshot_sha256": "7ccb85ff9f4910c884a7a3a168a4fa36b2b18f3e94e37dd6f57010516e8c2886",
+  "images": {},
+  "local_only": true
+}

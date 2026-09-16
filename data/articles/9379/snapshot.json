@@ -1,0 +1,17 @@
+{
+  "metadata": {
+    "id": "9379",
+    "title": "生成扩散模型漫谈（十五）：构建ODE的一般步骤（中）",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/9379",
+    "date": "2022-12-22",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "fetched_at": "2026-09-14T12:56:19+00:00",
+  "source_snapshot_sha256": "ac67deb2167e24f83dd8b5a694af64a1917c0303cea3633431b6330cc569b97c",
+  "validators": {
+    "etag": null,
+    "last_modified": null
+  }
+}

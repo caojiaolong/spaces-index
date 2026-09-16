@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "7980",
+    "title": "从动力学角度看优化算法（六）：为什么SimSiam不退化？",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/7980",
+    "date": "2020-12-11",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 68,
+    "display_formula_count": 10,
+    "image_count": 4,
+    "heading_count": 6,
+    "code_block_count": 0,
+    "source_text_sha256": "ccdba3b924e7bbc54342aa727c54de139c9ee9f35cff56e75d288210210d8294",
+    "output_text_sha256": "ccdba3b924e7bbc54342aa727c54de139c9ee9f35cff56e75d288210210d8294",
+    "latex_sha256": "e00abfe134349bc0eb33845e033c8ba4838784c1c935a8a6f23f8d3e1f5b3f59",
+    "body_sha256": "cdd649c9d2bc36fdfc2a5c6a9727e4a78510c2d2f765e9d3f78b7544086fc65f",
+    "converter_version": 1,
+    "markdown_sha256": "3c8ed19f7dc4b9be250fda9424c1e397205eb8ab4e17dc14493fa6211446632c"
+  },
+  "fetched_at": "2026-09-14T13:09:29+00:00",
+  "source_snapshot_sha256": "1250a19d228ab214020ad2f960a52e52ecddbb6a20f62c1e21821ee00020fbff",
+  "images": {},
+  "local_only": true
+}

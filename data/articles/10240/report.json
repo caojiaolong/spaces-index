@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "10240",
+    "title": "【生活杂记】用电饭锅来煮米汤",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/10240",
+    "date": "2024-07-17",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 0,
+    "display_formula_count": 0,
+    "image_count": 2,
+    "heading_count": 0,
+    "code_block_count": 0,
+    "source_text_sha256": "22f3a4f29f7c24f7a85f17d32749ad631fac50594b159fbb19961b6cc244a01f",
+    "output_text_sha256": "22f3a4f29f7c24f7a85f17d32749ad631fac50594b159fbb19961b6cc244a01f",
+    "latex_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "body_sha256": "82645b61afb84f319a8cb24b1f794bbf360bd7b26a1a3283fa809600ceba504b",
+    "converter_version": 1,
+    "markdown_sha256": "60e3c82336e7c113754448a4821b541884aab55d9520ce49df1cafd5deb4047c"
+  },
+  "fetched_at": "2026-09-14T12:47:39+00:00",
+  "source_snapshot_sha256": "e47c220418fd5cb4a089528cb890fbc87506441a9065806fe2563ae7496bf971",
+  "images": {},
+  "local_only": true
+}

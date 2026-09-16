@@ -1,0 +1,55 @@
+{
+  "version": 1,
+  "images": {
+    "https://spaces.ac.cn/usr/uploads/2023/03/2125837001.svg": {
+      "status": "cached",
+      "file": "ccacec07d86eaf044bba4ace30bb23bb9ea140e2130eda78467fce98bed27d50.svg",
+      "sha256": "ccacec07d86eaf044bba4ace30bb23bb9ea140e2130eda78467fce98bed27d50",
+      "bytes": 25056,
+      "checked_at": "2026-09-16T07:45:42+00:00",
+      "fetched_url": "https://spaces.ac.cn/usr/uploads/2023/03/2125837001.svg",
+      "etag": "\"6413fc1c-61e0\"",
+      "last_modified": "Fri, 17 Mar 2023 05:35:24 GMT"
+    },
+    "https://spaces.ac.cn/usr/uploads/2023/03/1850915382.svg": {
+      "status": "cached",
+      "file": "1b3bd3f2f08b088a7629afffaad04ffc0436183e9d91f2e66349cadfd5c3b1b0.svg",
+      "sha256": "1b3bd3f2f08b088a7629afffaad04ffc0436183e9d91f2e66349cadfd5c3b1b0",
+      "bytes": 25230,
+      "checked_at": "2026-09-16T07:45:46+00:00",
+      "fetched_url": "https://spaces.ac.cn/usr/uploads/2023/03/1850915382.svg",
+      "etag": "\"6413fc1c-628e\"",
+      "last_modified": "Fri, 17 Mar 2023 05:35:24 GMT"
+    },
+    "https://spaces.ac.cn/usr/uploads/2023/03/1727344496.svg": {
+      "status": "cached",
+      "file": "028881524be00080184942f1c80ba218d3a7c2fac9028adfeb96593362e8cf95.svg",
+      "sha256": "028881524be00080184942f1c80ba218d3a7c2fac9028adfeb96593362e8cf95",
+      "bytes": 25327,
+      "checked_at": "2026-09-16T07:45:50+00:00",
+      "fetched_url": "https://spaces.ac.cn/usr/uploads/2023/03/1727344496.svg",
+      "etag": "\"6413fc1c-62ef\"",
+      "last_modified": "Fri, 17 Mar 2023 05:35:24 GMT"
+    },
+    "https://spaces.ac.cn/usr/uploads/2023/07/316642906.svg": {
+      "status": "cached",
+      "file": "2ca63ce1ab45ed4dc7c5d0bf378cc485df838bcce4063dbe5f3c93e952542c78.svg",
+      "sha256": "2ca63ce1ab45ed4dc7c5d0bf378cc485df838bcce4063dbe5f3c93e952542c78",
+      "bytes": 25332,
+      "checked_at": "2026-09-16T07:45:54+00:00",
+      "fetched_url": "https://spaces.ac.cn/usr/uploads/2023/07/316642906.svg",
+      "etag": "\"64bba948-62f4\"",
+      "last_modified": "Sat, 22 Jul 2023 10:02:48 GMT"
+    },
+    "https://spaces.ac.cn/usr/uploads/2023/03/4233260423.svg": {
+      "status": "cached",
+      "file": "e46ff5cff10ea01e44319a7d83a697b7318c495f9707054413549c329f844488.svg",
+      "sha256": "e46ff5cff10ea01e44319a7d83a697b7318c495f9707054413549c329f844488",
+      "bytes": 35120,
+      "checked_at": "2026-09-16T07:45:59+00:00",
+      "fetched_url": "https://spaces.ac.cn/usr/uploads/2023/03/4233260423.svg",
+      "etag": "\"6413dd0b-8930\"",
+      "last_modified": "Fri, 17 Mar 2023 03:22:51 GMT"
+    }
+  }
+}

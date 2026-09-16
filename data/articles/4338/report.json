@@ -1,0 +1,39 @@
+{
+  "metadata": {
+    "id": "4338",
+    "title": "【语料】百度的中文问答数据集WebQA",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/4338",
+    "date": "2017-04-12",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "source_dom_exact": true,
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "attributes_exact": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 1,
+    "display_formula_count": 1,
+    "image_count": 3,
+    "heading_count": 4,
+    "code_block_count": 0,
+    "source_text_sha256": "935b050f66c8a1ad9402dc41d2ff728b0ee83824fda6a0599cc3ded62fc4a669",
+    "output_text_sha256": "935b050f66c8a1ad9402dc41d2ff728b0ee83824fda6a0599cc3ded62fc4a669",
+    "latex_sha256": "46f229b09146ab11bc8fe74eec9e2a91896b088f5601cf73310a89473f04af4e",
+    "body_sha256": "fb082a3f6417a301b785e1cbd415f43320bca3c8ade03a1f2095718998913aeb",
+    "converter_version": 1,
+    "format": "html-v1",
+    "source_warnings": [],
+    "fallback_reason": "Unsupported body element: center",
+    "markdown_sha256": "840c9cf1fbae38d3d256e36cd6533f9dbf8565071a77bebe6dc05c9397e16ed9"
+  },
+  "fetched_at": "2026-09-14T13:33:08+00:00",
+  "source_snapshot_sha256": "71a3bb81e2259d23dc7a1f7faa28307f7a285943d8992747e0594c694cbf4fc5",
+  "images": {},
+  "local_only": true
+}

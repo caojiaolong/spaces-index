@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "2348",
+    "title": "漫谈几何量子化",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/2348",
+    "date": "2014-02-12",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 1,
+    "display_formula_count": 0,
+    "image_count": 0,
+    "heading_count": 0,
+    "code_block_count": 0,
+    "source_text_sha256": "06a2dfd8271602b186412fd90362ed4090a8d417dc373bab9a2bbd1364e3af76",
+    "output_text_sha256": "06a2dfd8271602b186412fd90362ed4090a8d417dc373bab9a2bbd1364e3af76",
+    "latex_sha256": "8845828da14548243f8b940d88578ae45beec4493369f4bc5d4ce18ef08011c5",
+    "body_sha256": "113fc467f404f2727b25462c6395097efd1cecedb4afd3e08630dfd24c678aab",
+    "converter_version": 1,
+    "markdown_sha256": "31fd82440b1e933fd75490875491d99de0a2e2f4068936f8c01289a0389a4dc1"
+  },
+  "fetched_at": "2026-09-14T13:57:01+00:00",
+  "source_snapshot_sha256": "38abaa66f924211d6203b7821a98cccd08419d6dddb3ec9a299fffd6bb9fd6a6",
+  "images": {},
+  "local_only": true
+}

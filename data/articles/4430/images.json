@@ -1,0 +1,45 @@
+{
+  "version": 1,
+  "images": {
+    "https://spaces.ac.cn/usr/uploads/2017/06/2360648379.png": {
+      "status": "cached",
+      "file": "e25e4c51c98383bb4995685cafb734806a4123bbd3884b2d2a0f96aa3aaf5958.png",
+      "sha256": "e25e4c51c98383bb4995685cafb734806a4123bbd3884b2d2a0f96aa3aaf5958",
+      "bytes": 98505,
+      "checked_at": "2026-09-16T09:26:50+00:00",
+      "fetched_url": "https://spaces.ac.cn/usr/uploads/2017/06/2360648379.png",
+      "etag": "\"5a6ec743-180c9\"",
+      "last_modified": "Mon, 29 Jan 2018 07:03:31 GMT"
+    },
+    "https://spaces.ac.cn/usr/uploads/2017/06/3938608432.png": {
+      "status": "cached",
+      "file": "a250c49120f87933c1410ae6f38ff828c961da5c708b9cd46bb5c6d542eb85d1.png",
+      "sha256": "a250c49120f87933c1410ae6f38ff828c961da5c708b9cd46bb5c6d542eb85d1",
+      "bytes": 106382,
+      "checked_at": "2026-09-16T09:26:56+00:00",
+      "fetched_url": "https://spaces.ac.cn/usr/uploads/2017/06/3938608432.png",
+      "etag": "\"5a6ec743-19f8e\"",
+      "last_modified": "Mon, 29 Jan 2018 07:03:31 GMT"
+    },
+    "https://spaces.ac.cn/usr/uploads/2017/06/2214533573.png": {
+      "status": "cached",
+      "file": "88edf8083d6b2f8ffe7f7d6779c804846400c15e3df54f76fa73dc0e7823fea3.png",
+      "sha256": "88edf8083d6b2f8ffe7f7d6779c804846400c15e3df54f76fa73dc0e7823fea3",
+      "bytes": 87892,
+      "checked_at": "2026-09-16T09:27:01+00:00",
+      "fetched_url": "https://spaces.ac.cn/usr/uploads/2017/06/2214533573.png",
+      "etag": "\"5a6ec743-15754\"",
+      "last_modified": "Mon, 29 Jan 2018 07:03:31 GMT"
+    },
+    "https://spaces.ac.cn/usr/uploads/2017/06/1010110702.png": {
+      "status": "cached",
+      "file": "72e86cdf920741dc65027a6f573f6e321b3f25f31790d75164b5e2996653be5f.png",
+      "sha256": "72e86cdf920741dc65027a6f573f6e321b3f25f31790d75164b5e2996653be5f",
+      "bytes": 117607,
+      "checked_at": "2026-09-16T09:27:07+00:00",
+      "fetched_url": "https://spaces.ac.cn/usr/uploads/2017/06/1010110702.png",
+      "etag": "\"5a6ec743-1cb67\"",
+      "last_modified": "Mon, 29 Jan 2018 07:03:31 GMT"
+    }
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "metadata": {
+    "id": "3924",
+    "title": "【中文分词系列】 4. 基于双向LSTM的seq2seq字标注",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/3924",
+    "date": "2016-08-22",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "source_dom_exact": true,
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "attributes_exact": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 0,
+    "display_formula_count": 0,
+    "image_count": 1,
+    "heading_count": 5,
+    "code_block_count": 1,
+    "source_text_sha256": "6cb06064601c865e9babd83c09179b84980ac8b1c058eee07465204d3d8b86e7",
+    "output_text_sha256": "6cb06064601c865e9babd83c09179b84980ac8b1c058eee07465204d3d8b86e7",
+    "latex_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "body_sha256": "03da0fa8bcec055d8cc00df6df9d97692611275e7c5d762b2043070245a1d2c0",
+    "converter_version": 1,
+    "format": "html-v1",
+    "source_warnings": [],
+    "fallback_reason": "Standard Markdown round trip changed source structure",
+    "markdown_sha256": "3ab6d1f6f03463ad8034994ca89b07924e75a652c6e1dcc3ad1ad11ce34be8bc"
+  },
+  "fetched_at": "2026-09-14T13:38:26+00:00",
+  "source_snapshot_sha256": "4b48d7565fef339afdfae13fb2180f57c479c4eff24172ea5ca569a825066ea0",
+  "images": {},
+  "local_only": true
+}

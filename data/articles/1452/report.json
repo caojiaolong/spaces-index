@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "1452",
+    "title": "Lamost下的天文夏令营",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/1452",
+    "date": "2011-07-27",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 0,
+    "display_formula_count": 0,
+    "image_count": 1,
+    "heading_count": 0,
+    "code_block_count": 0,
+    "source_text_sha256": "5e26fa572129312ae89edbd365575b662a281bc09a4f01a9ecdcdb6e36bffa4d",
+    "output_text_sha256": "5e26fa572129312ae89edbd365575b662a281bc09a4f01a9ecdcdb6e36bffa4d",
+    "latex_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "body_sha256": "726bad28de5451d4874d4ed98bc14f28e08274e2d289f8b052e2787b713b9d85",
+    "converter_version": 1,
+    "markdown_sha256": "b456dbbabe9ea459f42064b1f1138c869b1d875a0fed03fd9302478db1337c87"
+  },
+  "fetched_at": "2026-09-14T14:18:26+00:00",
+  "source_snapshot_sha256": "c923e965914142e187c02f382791a15982d9af94084afe833bf4b6acb1bb39a9",
+  "images": {},
+  "local_only": true
+}

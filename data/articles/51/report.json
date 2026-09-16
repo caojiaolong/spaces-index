@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "51",
+    "title": "【NASA每日一图】NGC 6559 的恒星,尘埃和星云",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/51",
+    "date": "2009-08-02",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 0,
+    "display_formula_count": 0,
+    "image_count": 1,
+    "heading_count": 0,
+    "code_block_count": 0,
+    "source_text_sha256": "b1725b9f58f5de0ac49741e7ff547a78bcf92436c98685498e58edf4f0e888ed",
+    "output_text_sha256": "b1725b9f58f5de0ac49741e7ff547a78bcf92436c98685498e58edf4f0e888ed",
+    "latex_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "body_sha256": "55654bd8045a4ac1d440a7fa275a035f5bca32ae1356046392e2f298a3c7e25d",
+    "converter_version": 1,
+    "markdown_sha256": "0b264ad842bd53d5a160e067ddec3bffee9174b99d2fa96feb31272120da78ce"
+  },
+  "fetched_at": "2026-09-14T15:01:55+00:00",
+  "source_snapshot_sha256": "66714d9ddb4f926db1c01de7b5c6eb5b28802fc8bfd5f57476e37d967a1cd4d9",
+  "images": {},
+  "local_only": true
+}

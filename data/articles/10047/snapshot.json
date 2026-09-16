@@ -1,0 +1,17 @@
+{
+  "metadata": {
+    "id": "10047",
+    "title": "生成扩散模型漫谈（二十二）：信噪比与大图生成（上）",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/10047",
+    "date": "2024-04-08",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "fetched_at": "2026-09-14T12:49:09+00:00",
+  "source_snapshot_sha256": "1aaeeff483c537bf97ee7883157960bbc9425a93999bf70faa77700ba94bd07d",
+  "validators": {
+    "etag": null,
+    "last_modified": null
+  }
+}

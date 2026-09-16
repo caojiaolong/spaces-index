@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "30",
+    "title": "今天你食了吗？（广东云浮观测日偏食之旅）",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/30",
+    "date": "2009-07-22",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 0,
+    "display_formula_count": 0,
+    "image_count": 4,
+    "heading_count": 0,
+    "code_block_count": 0,
+    "source_text_sha256": "44f71fd119568c0edb4a6cb01259454e37bb3f5cb6f980e6c145eeb84b010e86",
+    "output_text_sha256": "44f71fd119568c0edb4a6cb01259454e37bb3f5cb6f980e6c145eeb84b010e86",
+    "latex_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "body_sha256": "4c59f8567534145db22530513abd1e15db66548083a2b9724e64bc0800a26d87",
+    "converter_version": 1,
+    "markdown_sha256": "c630227ab5354ef291487a42615ecfeb68e3cb9814ecbfe8f3c37875ed648706"
+  },
+  "fetched_at": "2026-09-14T15:04:41+00:00",
+  "source_snapshot_sha256": "f0ce9af1fbf2792064b56500f3d108de514e3c09627b2204605dbad8375441a9",
+  "images": {},
+  "local_only": true
+}

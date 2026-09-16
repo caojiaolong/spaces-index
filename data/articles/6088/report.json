@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "6088",
+    "title": "变分自编码器 = 最小化先验分布 + 最大化互信息",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/6088",
+    "date": "2018-10-10",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 8,
+    "display_formula_count": 3,
+    "image_count": 0,
+    "heading_count": 2,
+    "code_block_count": 0,
+    "source_text_sha256": "ceab9339906af7599aae9bddb3b59429f99b5acb96f6b3f23642832887f19161",
+    "output_text_sha256": "ceab9339906af7599aae9bddb3b59429f99b5acb96f6b3f23642832887f19161",
+    "latex_sha256": "2166b3f9e856b1279ac0eb67d0145a27d15399733ecd9c6d3a3c1bccb550f685",
+    "body_sha256": "37f7ad493753cd29ec39f9ee40179366291f6a74553a0c781449b8850867908a",
+    "converter_version": 1,
+    "markdown_sha256": "4876ba1e1a497c9b1d56d111628442d116c6b98ed7fab4ab730350ee1477dbc3"
+  },
+  "fetched_at": "2026-09-14T13:23:48+00:00",
+  "source_snapshot_sha256": "7c707d8cebd652138351f297d5268da447e3fbaaf05809fcdbc5530a60a1032e",
+  "images": {},
+  "local_only": true
+}

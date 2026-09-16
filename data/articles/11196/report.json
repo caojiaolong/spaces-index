@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "11196",
+    "title": "流形上的最速下降：1.  SGD + 超球面",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/11196",
+    "date": "2025-08-01",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 91,
+    "display_formula_count": 16,
+    "image_count": 1,
+    "heading_count": 7,
+    "code_block_count": 0,
+    "source_text_sha256": "f1b00572235c808c5ebbd94d56c8353fe0a73224184238bd045721ed120697cb",
+    "output_text_sha256": "f1b00572235c808c5ebbd94d56c8353fe0a73224184238bd045721ed120697cb",
+    "latex_sha256": "8897d4d7e15d8e1b8eb91f660c47713333c8543f14434dc234fbd37edef67561",
+    "body_sha256": "85bb60e296c0e8e83ac4d6fa73897d978605a205be3785bd68f9a9e177499a92",
+    "converter_version": 1,
+    "markdown_sha256": "ef36ac3fb4b6c571dbb086e692ea97de07173dfc63588a25dec5a1decd83d1e6"
+  },
+  "fetched_at": "2026-09-14T12:40:49+00:00",
+  "source_snapshot_sha256": "b116de5c86e02b2654087d3b4e4b6b96a5a66e483cdc1f47642c8a170002014f",
+  "images": {},
+  "local_only": true
+}

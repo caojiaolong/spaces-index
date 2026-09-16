@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "8671",
+    "title": "曾被嫌弃的预训练任务NSP，做出了优秀的Zero Shot效果",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/8671",
+    "date": "2021-09-10",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 0,
+    "display_formula_count": 0,
+    "image_count": 4,
+    "heading_count": 4,
+    "code_block_count": 0,
+    "source_text_sha256": "764bf69957ed58d2a0bb5cc6fdeda722a54d12d46f63082cf86efd61b96217e2",
+    "output_text_sha256": "764bf69957ed58d2a0bb5cc6fdeda722a54d12d46f63082cf86efd61b96217e2",
+    "latex_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "body_sha256": "fbdf6f1be3e61e1566a40940ae58ea3e144c1dc1ae24497da7e8b05fb6f487ec",
+    "converter_version": 1,
+    "markdown_sha256": "4eb0d252b9303752446ffb2742b26a5fe7f1384cd611dd14404ce2d8d72ce49d"
+  },
+  "fetched_at": "2026-09-14T13:04:26+00:00",
+  "source_snapshot_sha256": "9fe0fd9b337f166010975c03705f79b8cdff02519ba5e90c690d76baad336764",
+  "images": {},
+  "local_only": true
+}

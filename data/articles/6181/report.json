@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "6181",
+    "title": "从变分编码、信息瓶颈到正态分布：论遗忘的重要性",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/6181",
+    "date": "2018-11-27",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 67,
+    "display_formula_count": 15,
+    "image_count": 3,
+    "heading_count": 13,
+    "code_block_count": 1,
+    "source_text_sha256": "dd00826f778c85ffb233fe34b3b03d1669614a49bc425fc5b2156f78b4327c10",
+    "output_text_sha256": "dd00826f778c85ffb233fe34b3b03d1669614a49bc425fc5b2156f78b4327c10",
+    "latex_sha256": "6acd839eed048cb7f5ee2dbaacc8f77d0f4c4341d243c85bf5dcfd111452b599",
+    "body_sha256": "c3ae924d75073f76c290bac1eeda4db338ee9963c39ae9d74f432778386529da",
+    "converter_version": 1,
+    "markdown_sha256": "20fe09a2feac4948e9f7b1011a4a4943beff2bdb6f1cf1b5903fdf75e0c60c0e"
+  },
+  "fetched_at": "2026-09-14T13:22:59+00:00",
+  "source_snapshot_sha256": "80a4d5fd04c3abec2ab1399118024f348622bde8995e09778ce550b77b44edf2",
+  "images": {},
+  "local_only": true
+}

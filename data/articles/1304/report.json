@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "1304",
+    "title": "变分与理论力学略览",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/1304",
+    "date": "2011-04-04",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 41,
+    "display_formula_count": 15,
+    "image_count": 1,
+    "heading_count": 0,
+    "code_block_count": 0,
+    "source_text_sha256": "0413ec78fa236871377670018fe73a87a0b2ffe44334b47fbed865b381456570",
+    "output_text_sha256": "0413ec78fa236871377670018fe73a87a0b2ffe44334b47fbed865b381456570",
+    "latex_sha256": "e1b1e4113648065946e1c4b842a4548e1a171a85b5fd9c4b00594bb581e1772a",
+    "body_sha256": "a9bb829ec9a8b90cd60a6650e0babb78139be3325c452cd899fedca71da07dee",
+    "converter_version": 1,
+    "markdown_sha256": "47344014bd395c4c5f2634470926e42245aead0589bb27e1e95f75d866723230"
+  },
+  "fetched_at": "2026-09-14T14:22:55+00:00",
+  "source_snapshot_sha256": "83c9abd97f92eb7280c00cbb2adc49d3e6a0f059edc8d48e4502d9bbbb9e9cdd",
+  "images": {},
+  "local_only": true
+}

@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "11882",
+    "title": "让炼丹更科学一些（九）：经典自适应梯度算法",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/11882",
+    "date": "2026-09-05",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 101,
+    "display_formula_count": 22,
+    "image_count": 0,
+    "heading_count": 7,
+    "code_block_count": 0,
+    "source_text_sha256": "379b1ef9c6d2098305f2ded1db6f97cddbffb3d17a3752d814cda97b718876a7",
+    "output_text_sha256": "379b1ef9c6d2098305f2ded1db6f97cddbffb3d17a3752d814cda97b718876a7",
+    "latex_sha256": "ad56a132247b10db18348aa2a433eb5181f811e96fb73880e092eb199ff9599e",
+    "body_sha256": "229a50b69add6ab42f8984ffc6a22d017b2b0392f84b6025a8b47f11b2210fe4",
+    "converter_version": 1,
+    "markdown_sha256": "34c793d92f3ca84303f5e4dd5717991ea59ec7982c408ecb73008cf593fbef79"
+  },
+  "fetched_at": "2026-09-14T02:24:00+00:00",
+  "source_snapshot_sha256": "1ef29f033391ed46439a132755673212fd5bdfb5817ff80c03507ec43a074d36",
+  "images": {},
+  "local_only": true
+}

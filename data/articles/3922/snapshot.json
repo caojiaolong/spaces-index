@@ -1,0 +1,17 @@
+{
+  "metadata": {
+    "id": "3922",
+    "title": "【中文分词系列】 3. 字标注法与HMM模型",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/3922",
+    "date": "2016-08-19",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "fetched_at": "2026-09-14T13:38:32+00:00",
+  "source_snapshot_sha256": "406ad93b6682aada738c71096bead138f878af63f1cde3f72031bde64a818b36",
+  "validators": {
+    "etag": null,
+    "last_modified": null
+  }
+}

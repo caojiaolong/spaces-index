@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "922",
+    "title": "级数求和——近似的无穷级数",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/922",
+    "date": "2010-09-10",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 39,
+    "display_formula_count": 19,
+    "image_count": 0,
+    "heading_count": 0,
+    "code_block_count": 0,
+    "source_text_sha256": "bd3e7e4f33bd7bc7ddb0cc9cc825a1a16847172659eed5381c909be5d034f3a7",
+    "output_text_sha256": "bd3e7e4f33bd7bc7ddb0cc9cc825a1a16847172659eed5381c909be5d034f3a7",
+    "latex_sha256": "5c77fb5253bfb0f5f3aa223d6d2942390168a1b9bed8a375ac93a530bf83044f",
+    "body_sha256": "df263ef879cf04f7dffbd2dac62575b48d635eeb184e56296b199a41bb7f8f85",
+    "converter_version": 1,
+    "markdown_sha256": "eadfd612ffbf3b887185a2f06116de7912618dc98736e7b4719fdf1505e4e8e5"
+  },
+  "fetched_at": "2026-09-14T14:30:34+00:00",
+  "source_snapshot_sha256": "33180d04f891341345dfe837585be6dc467f70960d20d03636f87dfe45335b61",
+  "images": {},
+  "local_only": true
+}

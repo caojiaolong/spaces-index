@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "3150",
+    "title": "将多项式分解为两个不可约多项式之和",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/3150",
+    "date": "2014-12-22",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 65,
+    "display_formula_count": 9,
+    "image_count": 0,
+    "heading_count": 4,
+    "code_block_count": 0,
+    "source_text_sha256": "8b7bac6b43c0c08c24a2d04ccf15864aeefc908c7c7f277d1569584866794bd6",
+    "output_text_sha256": "8b7bac6b43c0c08c24a2d04ccf15864aeefc908c7c7f277d1569584866794bd6",
+    "latex_sha256": "099c4cbc4a229fb02bbd1fa200c67d1cfcf2207bc65dd7fdede229acbca3a16a",
+    "body_sha256": "820e4f402a250c7e78e78b4a063be3f84f97e9beefa9e294f2aa0c6ebb21a447",
+    "converter_version": 1,
+    "markdown_sha256": "e2e98f9edd92d68f84005ba4ca344d5960f51bac3f4657e5f6e187a5e72be00c"
+  },
+  "fetched_at": "2026-09-14T13:48:51+00:00",
+  "source_snapshot_sha256": "ca49e5c87bd8eb2f5a98240341ce728ad0efa7b195f8f3498840f12d00880348",
+  "images": {},
+  "local_only": true
+}

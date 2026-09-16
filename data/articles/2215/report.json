@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "2215",
+    "title": "体积与阿达马不等式",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/2215",
+    "date": "2013-12-26",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 40,
+    "display_formula_count": 7,
+    "image_count": 0,
+    "heading_count": 0,
+    "code_block_count": 0,
+    "source_text_sha256": "50f61c27831cf45cf85f897f5fcb59c1de40341ab77a6a181140f682965d2c3f",
+    "output_text_sha256": "50f61c27831cf45cf85f897f5fcb59c1de40341ab77a6a181140f682965d2c3f",
+    "latex_sha256": "263fd2743533317805b695c7104a7c892498ec2dd2b255996f8c3be80b070a54",
+    "body_sha256": "2185bb2941bf5108146a7264c7b51cd544ad0606b5bb06fbf529940348fa912f",
+    "converter_version": 1,
+    "markdown_sha256": "f68c62f7e08bac8ebdbdf4c430af6d4692d8e2e2e1cf60bbc8b92c9e6138e8ea"
+  },
+  "fetched_at": "2026-09-14T13:58:31+00:00",
+  "source_snapshot_sha256": "892eba1f41068b9b74a07992a30dc356a3c1793639ee470855abb0d4fec8ef85",
+  "images": {},
+  "local_only": true
+}

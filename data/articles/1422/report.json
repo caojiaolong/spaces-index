@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "1422",
+    "title": "三角函数幂的积分",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/1422",
+    "date": "2011-07-22",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 18,
+    "display_formula_count": 10,
+    "image_count": 0,
+    "heading_count": 0,
+    "code_block_count": 0,
+    "source_text_sha256": "aeb6215f25729ad6a25b91d833ebf16d1fc413fdcd9ab03b8d231cdb489703bb",
+    "output_text_sha256": "aeb6215f25729ad6a25b91d833ebf16d1fc413fdcd9ab03b8d231cdb489703bb",
+    "latex_sha256": "f70c55d0c95df718179252049f7ca7854b24f5e09fc38272b91d7906c2c63a49",
+    "body_sha256": "c629f9aed1dc765d47074c10f38f15ab7ce732e56accdfff7c1854c3e42ce75d",
+    "converter_version": 1,
+    "markdown_sha256": "f16800f5d4d060cf7480537f271619595d7cc833eab697ed9ca99d6b949392b0"
+  },
+  "fetched_at": "2026-09-14T14:19:03+00:00",
+  "source_snapshot_sha256": "71a4f16b8a3a78884a37d9826b3d83ffc0a85d5e1d7c6744c15665b946e915b8",
+  "images": {},
+  "local_only": true
+}

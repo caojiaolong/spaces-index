@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "3887",
+    "title": "运动相机测试：家乡的星空",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/3887",
+    "date": "2016-08-03",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 0,
+    "display_formula_count": 0,
+    "image_count": 1,
+    "heading_count": 0,
+    "code_block_count": 0,
+    "source_text_sha256": "250a3583065023f24baf84538b6438545915fd9e689afc3812e1de460bbf9c0e",
+    "output_text_sha256": "250a3583065023f24baf84538b6438545915fd9e689afc3812e1de460bbf9c0e",
+    "latex_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "body_sha256": "3810e01a4bd013377f4138dc95f65b2c44000a0b92f3fd6cb9de549f418d09e9",
+    "converter_version": 1,
+    "markdown_sha256": "456eb17cf40addbecbb21216deab46f6ba40e13d0ab694debd4daf196f4914a9"
+  },
+  "fetched_at": "2026-09-14T13:39:03+00:00",
+  "source_snapshot_sha256": "682203aed5aab7b2f10e1f98b78ab0d722dfc1354c3311482394f77ffea30b97",
+  "images": {},
+  "local_only": true
+}

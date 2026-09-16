@@ -1,0 +1,17 @@
+{
+  "metadata": {
+    "id": "9509",
+    "title": "生成扩散模型漫谈（十八）：得分匹配 = 条件得分匹配",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/9509",
+    "date": "2023-02-28",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "fetched_at": "2026-09-14T12:55:23+00:00",
+  "source_snapshot_sha256": "1a0e8080678aa90c33d806bf4cc2ecd1ed67980159826201ee1408ef573e3110",
+  "validators": {
+    "etag": null,
+    "last_modified": null
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "6261",
+    "title": "从动力学角度看优化算法（三）：一个更整体的视角",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/6261",
+    "date": "2019-01-08",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 77,
+    "display_formula_count": 11,
+    "image_count": 2,
+    "heading_count": 11,
+    "code_block_count": 1,
+    "source_text_sha256": "aeb619aeaa97808c875f4bcd0e925bf11f43e82a9d1e2a2b84f13d09459ae32b",
+    "output_text_sha256": "aeb619aeaa97808c875f4bcd0e925bf11f43e82a9d1e2a2b84f13d09459ae32b",
+    "latex_sha256": "bbafca937a3122c7ae79b0d14e27f05180b460a1f0e7de93c8002231adcac4c3",
+    "body_sha256": "22a372756bbff712c088eab373a5088960c2d632e3bdfa4e81db11b97af3b754",
+    "converter_version": 1,
+    "markdown_sha256": "78740345cb26c2aa858d55fb46c79f14604c4cb088081083955be475339ebfe0"
+  },
+  "fetched_at": "2026-09-14T13:22:15+00:00",
+  "source_snapshot_sha256": "22775a0ff7cef4fe7c789c492f7fc505055bda5286830183b8932759b804494e",
+  "images": {},
+  "local_only": true
+}

@@ -1,0 +1,114 @@
+# 将Softmax Attention线性化为Gated DeltaNet
+
+> 作者：苏剑林 · 科学空间 · 2026-07-21
+>
+> 原文：<https://spaces.ac.cn/archives/11823>
+>
+> 原文许可：[CC BY-NC-ND 2.5 CN（署名-非商业性使用-禁止演绎）](https://creativecommons.org/licenses/by-nc-nd/2.5/cn/)。
+>
+> 本文件由 spaces-index 非官方、非商业项目进行必要的 HTML → Markdown 格式转换；正文未做摘要、润色、翻译或重组。项目不代表作者，也不表示作者为项目背书。
+>
+> 署名及附加许可说明不代表已获得作者额外授权。第三方素材权利依其原有声明。
+>
+> 原站转载与引用说明：[科学空间 FAQ](https://spaces.ac.cn/archives/6508#%E6%96%87%E7%AB%A0%E5%A6%82%E4%BD%95%E8%BD%AC%E8%BD%BD/%E5%BC%95%E7%94%A8)
+
+---
+
+在文章[《LogSumExp和Softmax的泰勒展开》](<https://spaces.ac.cn/archives/11814>)中，我们介绍了LogSumExp和Softmax的近似展开，并由此得到了一种线性化Softmax Attention的简单方案。但在那篇文章中，所得的线性注意力仅仅是Vanilla Linear Attention的形式。
+
+这篇文章我们则更进一步，试图将Softmax Attention线性化成具有Delta Rule的线性注意力变体。令人意外的是，最终得到的结果并不是基本的DeltaNet，而是直接得到了Gated DeltaNet（GDN）。
+
+## 问题背景
+
+考虑给定Query $\boldsymbol{q}$的前提下，Attention输出随Key、Value的变化规律。引入记号
+\begin{equation}\boldsymbol{o}_t = \sum_{i=1}^t \alpha_{t, i} \boldsymbol{v}_i, \qquad \alpha_{t,i} = \frac{e^{\boldsymbol{q}\cdot \boldsymbol{k}_i}}{Z_t},\qquad Z_t = \sum_{i=1}^t e^{\boldsymbol{q}\cdot \boldsymbol{k}_i}\end{equation}
+利用[《LogSumExp和Softmax的泰勒展开》](<https://spaces.ac.cn/archives/11814>)引入的Softmax展开式得$\alpha_{t,i} \approx \frac{1}{t}(1 + \boldsymbol{q}\cdot(\boldsymbol{k}_i - \bar{\boldsymbol{k}}_t))$，代入上式得
+\begin{equation}\boldsymbol{o}_t \approx \frac{1}{t}\sum_{i=1}^t (1 + \boldsymbol{q}\cdot(\boldsymbol{k}_i - \bar{\boldsymbol{k}}_t))\boldsymbol{v}_i = \bar{\boldsymbol{v}}_t + \left(\frac{1}{t}\sum_{i=1}^t \boldsymbol{v}_i \boldsymbol{k}_i^{\top} - \bar{\boldsymbol{v}}_t\bar{\boldsymbol{k}}_t^{\top}\right)\boldsymbol{q}\label{eq:va-la}\end{equation}
+其中$\bar{\boldsymbol{k}}_t,\bar{\boldsymbol{v}}_t$分别是前$t$个Key、Value向量的均值。可以看出，最后的式子就是一个线性注意力，而且是最早的Vanilla Linear Attention（下面简称“VaLA”）的变体。
+
+从[《线性注意力简史：从模仿、创新到反哺》](<https://spaces.ac.cn/archives/11033>)我们知道，VaLA之后有Delta Rule和相应的DeltaNet，还有后续推广[GDN](<https://papers.cool/arxiv/2412.06464>)、[KDA](<https://papers.cool/arxiv/2510.26692>)等，它们理论上都是比VaLA更强的线性注意力机制。那么，我们可否直接将Softmax Attention线性化成DeltaNet、GDN等，以获得更好的近似呢？
+
+## 递归形式
+
+事实上，Softmax Attention本身就可以写成RNN的形式，这我们在[《时空之章：将Attention视为平方复杂度的RNN》](<https://spaces.ac.cn/archives/10017>)中就有过讨论，而且这个转换并不难理解：
+\begin{equation}\boldsymbol{o}_t = \sum_{i=1}^t \alpha_{t, i} \boldsymbol{v}_i = \frac{\sum_{i=1}^t e^{\boldsymbol{q}\cdot \boldsymbol{k}_i} \boldsymbol{v}_i}{Z_t} = \frac{(\sum_{i=1}^{t-1} e^{\boldsymbol{q}\cdot \boldsymbol{k}_i} \boldsymbol{v}_i) + e^{\boldsymbol{q}\cdot \boldsymbol{k}_t} \boldsymbol{v}_t}{Z_t} = \frac{Z_{t-1} \boldsymbol{o}_{t-1} + e^{\boldsymbol{q}\cdot \boldsymbol{k}_t} \boldsymbol{v}_t}{Z_t}\end{equation}
+整理得
+\begin{equation}\boldsymbol{o}_t = \boldsymbol{o}_{t-1} + \alpha_{t,t}(\boldsymbol{v}_t - \boldsymbol{o}_{t-1})\label{eq:attn-rnn}\end{equation}
+眼尖的同学可能已经察觉到，右端的增量是$\boldsymbol{v}_t - \boldsymbol{o}_{t-1}$的形式，即“新观测与旧预测之差”，这已经隐隐有Delta Rule的样子。注意到目前为止我们还没有做任何近似，这个式子是完全精确的，所以这暗示了Softmax Attention与Delta Rule存在一些天然关联。
+
+还要指出的是，式$\eqref{eq:attn-rnn}$是固定$\boldsymbol{q}$后的RNN，而实际上每个位置有不同的$\boldsymbol{q}_1,\boldsymbol{q}_2,\cdots,\boldsymbol{q}_t$，这$t$个不同的$\boldsymbol{q}$都要代进去，分别跑$1,2,\cdots,t$步得到各自的输出，总复杂度是$1+2+\cdots+t=\mathcal{O}(t^2)$的，这便是“平方复杂度的RNN”的含义。
+
+究其原因，是因为对于不同的$\boldsymbol{q}$，迭代过程是独立的，所以每个$\boldsymbol{q}$都要完整跑一轮，总复杂度就是平方级了。而为了线性化，我们要设法将$\boldsymbol{q}$的运算分离出来，让迭代单纯在$\boldsymbol{k},\boldsymbol{v}$内进行，再将迭代过程的状态变量跟$\boldsymbol{q}$运算作为输出。这样一来，迭代过程不依赖于$\boldsymbol{q}$，只需迭代一次，复杂度就降低至线性。
+
+## 线性近似
+
+接下来，我们对$\alpha_{t,t}$使用Softmax的一阶近似，得到
+\begin{equation}\begin{aligned}
+\boldsymbol{o}_t \approx&\, \boldsymbol{o}_{t-1} + \frac{1}{t}(1 + \boldsymbol{q}\cdot(\boldsymbol{k}_t - \bar{\boldsymbol{k}}_t))(\boldsymbol{v}_t - \boldsymbol{o}_{t-1}) \\
+=&\, \left(1 - \frac{1}{t}\right)\boldsymbol{o}_{t-1} + \frac{1}{t}\boldsymbol{v}_t + \frac{1}{t}(\boldsymbol{v}_t - \boldsymbol{o}_{t-1})(\boldsymbol{k}_t - \bar{\boldsymbol{k}}_t)^{\top}\boldsymbol{q}
+\end{aligned}\end{equation}
+
+可能有读者疑问，刚不是才嫌弃Softmax的一阶近似得到的VaLA不够准确吗？怎么现在还用一阶近似？区别在于，刚才我们需要对$\alpha_{t,i}$做近似，下标是全体$(t,i)$对，现在我们只需要对$\alpha_{t,t}$做近似，也就是只近似对角线部分，近似负担大大减少，近似精度也随之增加。
+
+还有一个视角可以帮我们更好地理解这一点，首先将$\alpha_{t,i}$换个写法
+\begin{equation}\alpha_{t,i} = \frac{e^{\boldsymbol{q}\cdot \boldsymbol{k}_i}}{Z_t} = \frac{e^{\boldsymbol{q}\cdot \boldsymbol{k}_i}}{Z_i} \frac{Z_i}{Z_{i+1}}\cdots\frac{Z_{t-1}}{Z_t} = \alpha_{i,i}(1-\alpha_{i+1,i+1})\cdots (1-\alpha_{t,t})\end{equation}
+这个等式告诉我们，对于$t > i$，$\alpha_{t,i}$可以分解为$\alpha_{i,i}$与一系列$1-\alpha_{j,j}$之积。直接对$\alpha_{t,i}$做一阶近似，跟分别对$\alpha_{i,i}$和$\alpha_{j,j}$近似，相当于$e^{a+b}\approx 1 + a + b$和$e^a e^b \approx (1+a)(1+b)=1+a+b+ab$的区别，后者能引入交叉项，实现更高的精度。
+
+## 分离迭代
+
+不过，即便做了近似，这个递归仍然是平方级的，我们还没实现将$\boldsymbol{q}$分离出来的目标。为了进一步接近它，我们寻找如下形式的解
+\begin{equation}\boldsymbol{o}_t \approx \boldsymbol{A}_t \boldsymbol{q} + \boldsymbol{b}_t\end{equation}
+其中$\boldsymbol{A}_t,\boldsymbol{b}_t$与$\boldsymbol{q}$无关，约定$\boldsymbol{A}_0=\boldsymbol{0}, \boldsymbol{b}_0=\boldsymbol{0}$。当然，精确解肯定不长这个样，我们只是有目的地寻找上述形式的解，来作为精确解的近似。将它代入到前述递归形式得
+\begin{equation}\begin{aligned}
+\boldsymbol{A}_t \boldsymbol{q} + \boldsymbol{b}_t \approx&\, \left(1-\frac{1}{t}\right)(\boldsymbol{A}_{t-1} \boldsymbol{q} + \boldsymbol{b}_{t-1}) + \frac{1}{t}\boldsymbol{v}_t + \frac{1}{t}(\boldsymbol{v}_t - \boldsymbol{b}_{t-1} - \boldsymbol{A}_{t-1} \boldsymbol{q})(\boldsymbol{k}_t - \bar{\boldsymbol{k}}_t)^{\top}\boldsymbol{q}
+\end{aligned}\end{equation}
+一个直观的想法是，按$\boldsymbol{q}$的阶次分离$\boldsymbol{A}_t,\boldsymbol{b}_t$的迭代，这样就可以得到关于$\boldsymbol{A}_t,\boldsymbol{b}_t$的递归式。然而，左端至多有$\boldsymbol{q}$的一次项，而右端则出现了$\boldsymbol{A}_{t-1} \boldsymbol{q}(\boldsymbol{k}_t - \bar{\boldsymbol{k}}_t)^{\top}\boldsymbol{q}$这样的二次项，分离无法彻底进行。我们暂时只能得到
+\begin{align}
+\boldsymbol{b}_t =&\, \left(1-\frac{1}{t}\right)\boldsymbol{b}_{t-1} + \frac{1}{t}\boldsymbol{v}_t \\
+\boldsymbol{A}_t =&\, \left(1-\frac{1}{t}\right)\boldsymbol{A}_{t-1} + \frac{1}{t}(\boldsymbol{v}_t - \boldsymbol{b}_{t-1} - \boldsymbol{A}_{t-1} \boldsymbol{q})(\boldsymbol{k}_t - \bar{\boldsymbol{k}}_t)^{\top} \label{eq:A-t}
+\end{align}
+显然，$\boldsymbol{b}_t$的迭代实际上在求$\boldsymbol{v}_t$的累积平均，所以可以直接写出$\boldsymbol{b}_t = \bar{\boldsymbol{v}}_t$。问题在于式$\eqref{eq:A-t}$右端出现了$\boldsymbol{q}$，$\boldsymbol{A}_t$不依赖于$\boldsymbol{q}$的假设无法成立。
+
+## 简单舍去
+
+一个简单的做法是认为$\boldsymbol{q}$是小量，直接舍去，于是有
+\begin{equation}\boldsymbol{A}_t = \left(1-\frac{1}{t}\right)\boldsymbol{A}_{t-1} + \frac{1}{t}(\boldsymbol{v}_t - \bar{\boldsymbol{v}}_{t-1})(\boldsymbol{k}_t - \bar{\boldsymbol{k}}_t)^{\top}\end{equation}
+这同样具有累积平均的形式，解得
+\begin{equation}\boldsymbol{A}_t = \frac{1}{t}\sum_{i=1}^t (\boldsymbol{v}_i - \bar{\boldsymbol{v}}_{i-1})(\boldsymbol{k}_i - \bar{\boldsymbol{k}}_i)^{\top}\quad\Rightarrow\quad\boldsymbol{o}_t \approx \bar{\boldsymbol{v}}_t +  \left(\frac{1}{t}\sum_{i=1}^t (\boldsymbol{v}_i - \bar{\boldsymbol{v}}_{i-1})(\boldsymbol{k}_i - \bar{\boldsymbol{k}}_i)^{\top}\right)\boldsymbol{q}\label{eq:va-la-2}\end{equation}
+这看上去是一个新的VaLA变体，但实际上它跟式$\eqref{eq:va-la}$是完全等价的！为了证明这一点，只需验证
+\begin{equation}\begin{aligned}
+t \bar{\boldsymbol{v}}_t \bar{\boldsymbol{k}}_t^{\top} - (t-1) \bar{\boldsymbol{v}}_{t-1} \bar{\boldsymbol{k}}_{t-1}^{\top} =&\, \underbrace{((t-1)\bar{\boldsymbol{v}}_{t-1} + \boldsymbol{v}_t)}_{t \bar{\boldsymbol{v}}_t}\bar{\boldsymbol{k}}_t^{\top} -  \bar{\boldsymbol{v}}_{t-1} \underbrace{(t \bar{\boldsymbol{k}}_t - \boldsymbol{k}_t)}_{(t-1)\bar{\boldsymbol{k}}_{t-1}}{}^{\top} = -\bar{\boldsymbol{v}}_{t-1}\bar{\boldsymbol{k}}_t^{\top} + \boldsymbol{v}_t\bar{\boldsymbol{k}}_t^{\top} + \bar{\boldsymbol{v}}_{t-1}\boldsymbol{k}_t^{\top}
+\end{aligned}\end{equation}
+于是
+\begin{equation}\sum_{i=1}^t \boldsymbol{v}_i \boldsymbol{k}_i^{\top} - t\bar{\boldsymbol{v}}_t\bar{\boldsymbol{k}}_t^{\top} = \sum_{i=1}^t \boldsymbol{v}_i \boldsymbol{k}_i^{\top} - \sum_{i=1}^t (-\bar{\boldsymbol{v}}_{i-1}\bar{\boldsymbol{k}}_i^{\top} + \boldsymbol{v}_i\bar{\boldsymbol{k}}_i^{\top} + \bar{\boldsymbol{v}}_{i-1}\boldsymbol{k}_i^{\top}) = \sum_{i=1}^t (\boldsymbol{v}_i - \bar{\boldsymbol{v}}_{i-1})(\boldsymbol{k}_i - \bar{\boldsymbol{k}}_i)^{\top}\end{equation}
+这就从式$\eqref{eq:va-la}$恒等变换到了式$\eqref{eq:va-la-2}$。
+
+## 误差原则
+
+另一个更精确的做法是将$\boldsymbol{q}$替换成某个适当的量$\boldsymbol{c}$。直觉上，将$\boldsymbol{q}$换成$\boldsymbol{q}_t$会是一个比较自然的较好的选择，但事实并非如此。让我们回到式$\eqref{eq:attn-rnn}$，将$\boldsymbol{q}$显式写出来是
+\begin{equation}\boldsymbol{o}_t(\boldsymbol{q}) = \boldsymbol{o}_{t-1}(\boldsymbol{q}) + \alpha_{t,t}(\boldsymbol{q})\cdot(\boldsymbol{v}_t - \boldsymbol{o}_{t-1}(\boldsymbol{q}))\end{equation}
+我们的目标，是将最后一个$\boldsymbol{o}_{t-1}(\boldsymbol{q})$替换成某个$\boldsymbol{o}_{t-1}(\boldsymbol{c})$，这样后面做近似展开的时候就不会出现$\boldsymbol{q}$的二次项，由此产生的误差是
+\begin{equation}\alpha_{t,t}(\boldsymbol{q})\cdot(\boldsymbol{o}_{t-1}(\boldsymbol{q}) - \boldsymbol{o}_{t-1}(\boldsymbol{c}))\end{equation}
+为什么$\boldsymbol{c}=\boldsymbol{q}_t$未必好呢？因为它只保证$\boldsymbol{q}=\boldsymbol{q}_t$这单个位置的误差最低，但此刻的状态变量其实还要服务于后面的$\boldsymbol{q}_{t+1},\boldsymbol{q}_{t+2},\cdots$，所以理想的目标是“对于任意可能出现的$\boldsymbol{q}$，误差都尽可能小”，这便是我们寻找$\boldsymbol{c}$的“最小误差原则”。
+
+这个误差项具有相乘的形式：如果$\alpha_{t,t}(\boldsymbol{q})$本来就小，那么乘起来也不会大；反过来，如果$\alpha_{t,t}(\boldsymbol{q})$很大，那么$\boldsymbol{o}_{t-1}(\boldsymbol{q}) - \boldsymbol{o}_{t-1}(\boldsymbol{c})$就必须小，才能把误差降下来。由此，我们得到一个“极大极小策略”：先找到让$\alpha_{t,t}(\boldsymbol{q})$最大的$\boldsymbol{q}^*$，然后取$\boldsymbol{c}=\boldsymbol{q}^*$使得在此处零误差，即$\boldsymbol{o}_{t-1}(\boldsymbol{q}) - \boldsymbol{o}_{t-1}(\boldsymbol{c})=\boldsymbol{0}$，这样就可以平衡大$\alpha_{t,t}(\boldsymbol{q})$和小$\alpha_{t,t}(\boldsymbol{q})$两侧的误差。
+
+## 压轴登场
+
+根据线性近似$\alpha_{t,t} \approx \frac{1}{t}(1 + \boldsymbol{q}\cdot(\boldsymbol{k}_t - \bar{\boldsymbol{k}}_t))$，可以得到让它最大的$\boldsymbol{q}$的方向是$\frac{\boldsymbol{k}_t - \bar{\boldsymbol{k}}_t}{\Vert\boldsymbol{k}_t - \bar{\boldsymbol{k}}_t\Vert}$，但由于模长可以任意大，$\alpha_{t,t}$实际上没有最大值。为了得到一个有限结果，我们需要限制$\boldsymbol{q}$的模长，简单起见，我们假设$\boldsymbol{q},\boldsymbol{k}$的模长是相当的，那么可以直接取
+\begin{equation}\boldsymbol{q}^* = \boldsymbol{k}_t - \bar{\boldsymbol{k}}_t\end{equation}
+这个极简的形式，然后代入式$\eqref{eq:A-t}$得
+\begin{equation}\begin{aligned}
+\boldsymbol{A}_t =&\, \left(1-\frac{1}{t}\right)\boldsymbol{A}_{t-1} + \frac{1}{t}\big(\boldsymbol{v}_t - \bar{\boldsymbol{v}}_{t-1} - \boldsymbol{A}_{t-1} (\boldsymbol{k}_t - \bar{\boldsymbol{k}}_t)\big)(\boldsymbol{k}_t - \bar{\boldsymbol{k}}_t)^{\top} \\
+=&\, \boldsymbol{A}_{t-1}\left(\left(1-\frac{1}{t}\right)\boldsymbol{I} - \frac{1}{t} (\boldsymbol{k}_t - \bar{\boldsymbol{k}}_t)(\boldsymbol{k}_t - \bar{\boldsymbol{k}}_t)^{\top}\right) + \frac{1}{t}(\boldsymbol{v}_t - \bar{\boldsymbol{v}}_{t-1})(\boldsymbol{k}_t - \bar{\boldsymbol{k}}_t)^{\top}
+\end{aligned}\end{equation}
+这正是Gated DeltaNet（GDN）的模样！GDN的标准形式是
+\begin{equation}\boldsymbol{S}_t = \boldsymbol{S}_{t-1} (\alpha_t (\boldsymbol{I} - \beta_t\boldsymbol{k}_t\boldsymbol{k}_t^{\top})) + \beta_t\boldsymbol{v}_t\boldsymbol{k}_t^{\top}\end{equation}
+区别在于$\alpha_t$是乘到$\boldsymbol{I} - \beta_t\boldsymbol{k}_t\boldsymbol{k}_t^{\top}$上还是只乘到$\boldsymbol{I}$上，但这个区别并不是本质的，且两者可以相互转换。至此，我们完成了Softmax Attention到Delta Rule系注意力的近似转化，最终输出
+\begin{equation}\boldsymbol{o}_t = \boldsymbol{A}_t \boldsymbol{q}_t + \bar{\boldsymbol{v}}_t\end{equation}
+
+## 文章小结
+
+本文从“Softmax Attention是一个平方复杂度的RNN”出发，先发现其递归增量天然具有Delta Rule形态，再对Softmax对角元做一阶近似，最后按“最小误差原则”为残余的$\boldsymbol{q}$寻找一个替代品，成功将Softmax Attention线性化成了Gated DeltaNet的形式。
+
+（注：此文在[Kimi K3](<https://www.kimi.com/blog/kimi-k3>)的指导下完成。）

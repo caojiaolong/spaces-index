@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "6409",
+    "title": "O-GAN：简单修改，让GAN的判别器变成一个编码器！",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/6409",
+    "date": "2019-03-06",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 124,
+    "display_formula_count": 10,
+    "image_count": 12,
+    "heading_count": 5,
+    "code_block_count": 0,
+    "source_text_sha256": "e8912515f64c9aba0bbd183f52edb2635c3caec5d25ab2b77cbc41f1a0595dc5",
+    "output_text_sha256": "e8912515f64c9aba0bbd183f52edb2635c3caec5d25ab2b77cbc41f1a0595dc5",
+    "latex_sha256": "d6677a919a34795cca0d57abf5caba3bea24b1fece88840b2e33dbb97562b926",
+    "body_sha256": "9e1916bcf221f9040894aa07baa20e97713f383fa715ab66de9e01cb51109036",
+    "converter_version": 1,
+    "markdown_sha256": "363219d1cf94ebf714c30cf3cb28217de767923f0bd1d7fc11083bff8dac5465"
+  },
+  "fetched_at": "2026-09-14T13:21:09+00:00",
+  "source_snapshot_sha256": "82fb9c07c57cb5d43cf81db8f59cd88a3e8061802b6c3beb2e915fcfcfc178c8",
+  "images": {},
+  "local_only": true
+}

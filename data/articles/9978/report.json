@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "9978",
+    "title": "更便捷的Cool Papers打开方式：Chrome重定向扩展",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/9978",
+    "date": "2024-02-02",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 0,
+    "display_formula_count": 0,
+    "image_count": 2,
+    "heading_count": 5,
+    "code_block_count": 0,
+    "source_text_sha256": "c652d6b298012e09e4dfce45e744832f8f781bd1fc956e14ad5034473966fbad",
+    "output_text_sha256": "c652d6b298012e09e4dfce45e744832f8f781bd1fc956e14ad5034473966fbad",
+    "latex_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "body_sha256": "b5f378fefb476eb9b09b028128cb95c6a683c70e2651ff06af54c1d8aac900eb",
+    "converter_version": 1,
+    "markdown_sha256": "5632093ec37e56783652680500143977c5a3962330957a42862ead644132ba8c"
+  },
+  "fetched_at": "2026-09-14T12:49:47+00:00",
+  "source_snapshot_sha256": "f68f380891324872f2f2897c0e74e3c1029057af3896574aa6987ba76eefaa21",
+  "images": {},
+  "local_only": true
+}

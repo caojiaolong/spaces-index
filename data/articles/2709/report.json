@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "2709",
+    "title": "简单做了个Logo~",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/2709",
+    "date": "2014-06-30",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 7,
+    "display_formula_count": 0,
+    "image_count": 2,
+    "heading_count": 0,
+    "code_block_count": 0,
+    "source_text_sha256": "b0ca5451b8249f41bd50c365b40adb8d52b09c14c2f1427c02611c9160bc0162",
+    "output_text_sha256": "b0ca5451b8249f41bd50c365b40adb8d52b09c14c2f1427c02611c9160bc0162",
+    "latex_sha256": "b2f93ff80dd2a9ee3e1d8ad7034e013e6826ac3f29031bc0df0b65a1024c98b3",
+    "body_sha256": "13819b1d87151493e4beabc0649250651d84c37b664157ccb9239be6ff8da636",
+    "converter_version": 1,
+    "markdown_sha256": "c1717d65d2a7626413caf4c9815f57c6100918a3f70603a77b0e30bc099d3b52"
+  },
+  "fetched_at": "2026-09-14T13:53:43+00:00",
+  "source_snapshot_sha256": "13a6f243ba184e0a67cd990001cfe49f727c61286435a5f51e37ecae8569ec1c",
+  "images": {},
+  "local_only": true
+}

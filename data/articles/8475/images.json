@@ -1,0 +1,85 @@
+{
+  "version": 1,
+  "images": {
+    "https://spaces.ac.cn/usr/uploads/2021/06/282133240.png": {
+      "status": "cached",
+      "file": "5fb624bc963776ff2dc73364f11c492470b90554339a4451c39747a98f251d8b.png",
+      "sha256": "5fb624bc963776ff2dc73364f11c492470b90554339a4451c39747a98f251d8b",
+      "bytes": 15511,
+      "checked_at": "2026-09-16T08:01:30+00:00",
+      "fetched_url": "https://spaces.ac.cn/usr/uploads/2021/06/282133240.png",
+      "etag": "\"60da892c-3c97\"",
+      "last_modified": "Tue, 29 Jun 2021 02:45:00 GMT"
+    },
+    "https://spaces.ac.cn/usr/uploads/2021/06/3011182928.png": {
+      "status": "cached",
+      "file": "e2cbcc66f84266b2069f156331c1c0c21379a1a2b9457704447b9576442d20b2.png",
+      "sha256": "e2cbcc66f84266b2069f156331c1c0c21379a1a2b9457704447b9576442d20b2",
+      "bytes": 15441,
+      "checked_at": "2026-09-16T08:01:34+00:00",
+      "fetched_url": "https://spaces.ac.cn/usr/uploads/2021/06/3011182928.png",
+      "etag": "\"60da892c-3c51\"",
+      "last_modified": "Tue, 29 Jun 2021 02:45:00 GMT"
+    },
+    "https://spaces.ac.cn/usr/uploads/2021/06/3698023481.png": {
+      "status": "cached",
+      "file": "609b35e32a127004250230904e7ac0e711dc27f92682aa5f66db85575d7cca7f.png",
+      "sha256": "609b35e32a127004250230904e7ac0e711dc27f92682aa5f66db85575d7cca7f",
+      "bytes": 57505,
+      "checked_at": "2026-09-16T08:01:38+00:00",
+      "fetched_url": "https://spaces.ac.cn/usr/uploads/2021/06/3698023481.png",
+      "etag": "\"60da892c-e0a1\"",
+      "last_modified": "Tue, 29 Jun 2021 02:45:00 GMT"
+    },
+    "https://spaces.ac.cn/usr/uploads/2021/06/3629371998.png": {
+      "status": "cached",
+      "file": "9909a57ca1c74447335725caff308a64abed9757d07f119bc31f1e918a2382c7.png",
+      "sha256": "9909a57ca1c74447335725caff308a64abed9757d07f119bc31f1e918a2382c7",
+      "bytes": 40626,
+      "checked_at": "2026-09-16T08:01:43+00:00",
+      "fetched_url": "https://spaces.ac.cn/usr/uploads/2021/06/3629371998.png",
+      "etag": "\"60da892b-9eb2\"",
+      "last_modified": "Tue, 29 Jun 2021 02:44:59 GMT"
+    },
+    "https://spaces.ac.cn/usr/uploads/2021/06/2836277345.png": {
+      "status": "cached",
+      "file": "43f343844bbef106dee8afa5d7f63abe6dbcb3631ac86c92f376ec5f90298034.png",
+      "sha256": "43f343844bbef106dee8afa5d7f63abe6dbcb3631ac86c92f376ec5f90298034",
+      "bytes": 11266,
+      "checked_at": "2026-09-16T08:02:26+00:00",
+      "fetched_url": "https://spaces.ac.cn/usr/uploads/2021/06/2836277345.png",
+      "etag": "\"60da892b-2c02\"",
+      "last_modified": "Tue, 29 Jun 2021 02:44:59 GMT"
+    },
+    "https://spaces.ac.cn/usr/uploads/2021/06/25795223.png": {
+      "status": "cached",
+      "file": "f628ae87ab21ca989442ef2fd819ce4a0efa507772cef1ed17733705cdc48957.png",
+      "sha256": "f628ae87ab21ca989442ef2fd819ce4a0efa507772cef1ed17733705cdc48957",
+      "bytes": 40783,
+      "checked_at": "2026-09-16T08:02:30+00:00",
+      "fetched_url": "https://spaces.ac.cn/usr/uploads/2021/06/25795223.png",
+      "etag": "\"60da892c-9f4f\"",
+      "last_modified": "Tue, 29 Jun 2021 02:45:00 GMT"
+    },
+    "https://spaces.ac.cn/usr/uploads/2021/06/360140864.png": {
+      "status": "cached",
+      "file": "7f0911e5aaa4807fa36c3e973d572b14f9db0a5e487d8e4bf5e74e2eae077f85.png",
+      "sha256": "7f0911e5aaa4807fa36c3e973d572b14f9db0a5e487d8e4bf5e74e2eae077f85",
+      "bytes": 15095,
+      "checked_at": "2026-09-16T08:02:34+00:00",
+      "fetched_url": "https://spaces.ac.cn/usr/uploads/2021/06/360140864.png",
+      "etag": "\"60da892b-3af7\"",
+      "last_modified": "Tue, 29 Jun 2021 02:44:59 GMT"
+    },
+    "https://spaces.ac.cn/usr/uploads/2021/06/3111104148.png": {
+      "status": "cached",
+      "file": "a2b3c66a80a8b57286edbaa060c3e800d468a66dece7c751d161b92a6f66731e.png",
+      "sha256": "a2b3c66a80a8b57286edbaa060c3e800d468a66dece7c751d161b92a6f66731e",
+      "bytes": 37376,
+      "checked_at": "2026-09-16T08:02:39+00:00",
+      "fetched_url": "https://spaces.ac.cn/usr/uploads/2021/06/3111104148.png",
+      "etag": "\"60dadc1c-9200\"",
+      "last_modified": "Tue, 29 Jun 2021 08:38:52 GMT"
+    }
+  }
+}

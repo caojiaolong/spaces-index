@@ -1,0 +1,63 @@
+<div class="PostContent" id="PostContent">
+<h3 id="换一个小参数">换一个小参数</h3><p>比较<a href="/archives/3217/" target="_blank">《高斯型积分的微扰展开（一）》</a>和<a href="/archives/3241/" target="_blank">《高斯型积分的微扰展开（二）》</a>两篇文章，我们可以得出关于积分<br/>
+$$\int_{-\infty}^{+\infty} e^{-ax^2-\varepsilon x^4} dx\tag{1}$$<br/>
+的两个结论：第一，我们发现类似$(4)$式的近似结果具有良好的性质，对任意的$\varepsilon$都能得到一个相对靠谱的近似；第二，我们发现在指数中逐阶展开，得到的级数效果会比直接展开为幂级数的效果要好。那么，两者能不能结合起来呢？</p><p>我们将$(4)$式改写成<br/>
+$$\int_{-\infty}^{+\infty} e^{-ax^2-\varepsilon x^4} dx\approx\sqrt{\frac{2\pi}{a+\sqrt{a^2+6 \varepsilon}}}=\sqrt{\frac{\pi}{a+\frac{1}{2}\left(\sqrt{a^2+6 \varepsilon}-a\right)}}\tag{6}$$<br/>
+其中<br/>
+$$\lambda=\frac{1}{2}\left(\sqrt{a^2+6 \varepsilon}-a\right)\tag{7}$$<br/>
+实际上也是一个微小量（当$\varepsilon$很小时），因此，何不以$\lambda$为小参数在指数中展开？事实上，这就相当于让<br/>
+$$\varepsilon=\frac{2}{3}\left(\lambda^2+a\lambda\right)\tag{8}$$<br/>
+代入$(1)$，即有<br/>
+$$\int_{-\infty}^{+\infty} e^{-ax^2-\frac{2}{3}\left(\lambda^2+a\lambda\right) x^4} dx\tag{9}$$<br/>
+在指数中展开，即<br/>
+$$\int_{-\infty}^{+\infty} e^{-ax^2-\frac{2}{3}\left(\lambda^2+a\lambda\right) x^4} dx=\int_{-\infty}^{+\infty} e^{-\left(a+a_1 \lambda+a_2 \lambda^2+\dots \right)x^2} dx\tag{10}$$<br/>
+展开为$\lambda$的幂级数，然后对比各项系数即得<br/>
+$$\left\{\begin{aligned}&amp;a_1 - 1=0\\<br/>
+&amp;12 a a_2-9 a_1^2+23=0\\<br/>
+&amp;-24 a^2 a_3+36 a a_1 a_2-15 a_1^3+245=0\\<br/>
+&amp;\dots\end{aligned}\right.$$<br/>
+解得<br/>
+$$\left\{\begin{aligned}&amp;a_1 = 1\\<br/>
+&amp;a_2=-\frac{7}{6 a}\\<br/>
+&amp;a_3=\frac{47}{6 a^2}\\<br/>
+&amp;\dots\end{aligned}\right.$$<br/>
+所以我们有<br/>
+$$\begin{aligned}&amp;\int_{-\infty}^{+\infty} e^{-ax^2-\frac{2}{3}\left(\lambda^2+a\lambda\right) x^4} dx\\<br/>
+=&amp;\int_{-\infty}^{+\infty} e^{-\left(a+\lambda-\frac{7}{6 a}\lambda^2+\frac{47}{6 a^2}\lambda^3+\dots \right)x^2} dx\\<br/>
+=&amp;\sqrt{\frac{\pi}{a+\lambda-\frac{7}{6 a}\lambda^2+\frac{47}{6 a^2}\lambda^3+\dots}}\\<br/>
+=&amp;\sqrt{\frac{\pi}{a+\frac{1}{2}\left(\sqrt{a^2+6 \varepsilon}-a\right)-\frac{7}{24 a}\left(\sqrt{a^2+6 \varepsilon}-a\right)^2+\dots}}\end{aligned}\tag{11}$$<br/>
+这比$(5)$式的结果又要好很多。当然，它没有改变$a\to 0$时，最终结果发散的情况，同时，它仍然还是一个渐近级数，只不过无穷大的阶次有所改变罢了。</p><h3 id="更好的参数">更好的参数</h3><p>回顾上面的过程，我们只不过是对参数做了一个二次的变换：<br/>
+$$\varepsilon=\frac{2}{3}\left(\lambda^2+a\lambda\right)\tag{8}$$<br/>
+然而，这两个系数是不是最优的呢？让我们来考虑一般的二次变换<br/>
+$$\varepsilon=b_2 \lambda^2+b_1\lambda\tag{12}$$<br/>
+代入$(1)$式，重复上述过程，我们就得到<br/>
+$$\left\{\begin{aligned}&amp;2 a a_1-3 b_1=0\\<br/>
+&amp;16 a^3 a_2-12 a^2 \left(a_1^2+2 b_2\right)+105 b_1^2=0\\<br/>
+&amp;64 a^5 a_3-96 a^4 a_1 a_2+40 a^3 a_1^3+840 a^2 b_1 b_2-3465 b_1^3=0\\<br/>
+&amp;\dots\end{aligned}\right.$$<br/>
+解得<br/>
+$$\left\{\begin{aligned}&amp;a_1 = \frac{3 b_1}{2 a}\\<br/>
+&amp;a_2=\frac{3 \left(4 a^2 b_2-13 b_1^2\right)}{8 a^3}\\<br/>
+&amp;a_3=-\frac{3 \left(52 a^2 b_1 b_2-219 b_1^3\right)}{16 a^5}\\<br/>
+&amp;\dots\end{aligned}\right.$$<br/>
+取$b_1=2a,b_2=13$，可以得到$a_1=3,a_2=0$，也就是说，如果作变换<br/>
+$$\varepsilon=13 \lambda^2+2\lambda\tag{13}$$<br/>
+或<br/>
+$$\lambda=\frac{\sqrt{a^2+13\varepsilon}-a}{13}$$<br/>
+那么可以得到<br/>
+$$\int_{-\infty}^{+\infty} e^{-ax^2-\varepsilon x^4} dx\approx\int_{-\infty}^{+\infty} e^{-(a+3\lambda)x^2}dx=\sqrt{\frac{13\pi}{10a+3\sqrt{a^2+13\varepsilon}}}\tag{14}$$<br/>
+这是比$(4)$式更好的结果，它精确到二阶，而且具有$(4)$式所具有的好性质。<br/>
+$$\begin{array}{c|cccc}<br/>
+\hline<br/>
+\text{情形} &amp; \varepsilon=1,a=10 &amp; \varepsilon=0.1,a=1 &amp; \varepsilon=1,a=1 &amp; \varepsilon=1,a=0 \\<br/>
+\hline<br/>
+\text{精确值} &amp; 0.556466 &amp;1.67409 &amp;1.36843 &amp;1.8128 \\<br/>
+(4) &amp; 0.556402 &amp;1.66558 &amp; 1.31279 &amp; 1.60159 \\<br/>
+(14) &amp; 0.556468 &amp; 1.6754 &amp; 1.38715 &amp; 1.94312 \\<br/>
+\hline \end{array}$$</p><p><strong><font color="red">其实，整个过程就是一个创意之旅——把你所能够想到的技巧，都应用在展开式上面中去就对了，其上限是你的想象力。</font></strong></p>
+
+
+
+
+
+</div>

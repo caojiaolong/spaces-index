@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "158",
+    "title": "【NASA每日一图】GigaGalaxy Zoom-礁湖星云",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/158",
+    "date": "2009-10-06",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 0,
+    "display_formula_count": 0,
+    "image_count": 1,
+    "heading_count": 0,
+    "code_block_count": 0,
+    "source_text_sha256": "642fdd50f9dc81fed38b54a51615b3f314fed4e9ad1802e818e434e849d27e03",
+    "output_text_sha256": "642fdd50f9dc81fed38b54a51615b3f314fed4e9ad1802e818e434e849d27e03",
+    "latex_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "body_sha256": "06837d4b592b46664ff9b97a1806e03ff1e348c8469816e667836168a463891e",
+    "converter_version": 1,
+    "markdown_sha256": "1781900624272dc5800acaa54ad2434f388efae0f4c1e1a2ea6942cf74fa8e70"
+  },
+  "fetched_at": "2026-09-14T14:49:59+00:00",
+  "source_snapshot_sha256": "5ed5e02ece14b5137c7272a11d64de453d79137ed8804ed23f1becdc66e610c8",
+  "images": {},
+  "local_only": true
+}

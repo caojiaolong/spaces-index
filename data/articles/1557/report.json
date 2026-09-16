@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "1557",
+    "title": "宇宙驿站十岁啦",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/1557",
+    "date": "2012-03-12",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 0,
+    "display_formula_count": 0,
+    "image_count": 0,
+    "heading_count": 0,
+    "code_block_count": 0,
+    "source_text_sha256": "76f4a7e3b6a26b99d1c17ba0df8d83a3d3110e0be286e33cd49ed093ac5d188e",
+    "output_text_sha256": "76f4a7e3b6a26b99d1c17ba0df8d83a3d3110e0be286e33cd49ed093ac5d188e",
+    "latex_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "body_sha256": "b8b2a415c491fccd638c4322cfee30ccee594b358d523fd3675dd4b53b33fc73",
+    "converter_version": 1,
+    "markdown_sha256": "9b4d518e88b3d7b859ade36ea1785d26ce3254644ae013f442cd2e6b4de77389"
+  },
+  "fetched_at": "2026-09-14T14:15:09+00:00",
+  "source_snapshot_sha256": "db3ab6dcf0cc44ffd037ec3740b70fcae4cb0008dc4bbbed32bfee63492a20db",
+  "images": {},
+  "local_only": true
+}

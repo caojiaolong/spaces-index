@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "9607",
+    "title": "基于量子化假设推导模型的尺度定律（Scaling Law）",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/9607",
+    "date": "2023-05-18",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 60,
+    "display_formula_count": 6,
+    "image_count": 0,
+    "heading_count": 6,
+    "code_block_count": 0,
+    "source_text_sha256": "79bad36e900296ee36f5dcd08078091ea4b788fd96565cf046422218a8661231",
+    "output_text_sha256": "79bad36e900296ee36f5dcd08078091ea4b788fd96565cf046422218a8661231",
+    "latex_sha256": "f3a8f8a3c4ae641dd87fc6723a434bfbf9fbbb7e6bc3411d404cf201d117508b",
+    "body_sha256": "6a6d3adb18f8f5c2292e717414b6e76a77934598e604d9f72cf06217aba14980",
+    "converter_version": 1,
+    "markdown_sha256": "fb286df66026f0dbe105dfec9398ad6cbf6111ca1e111816cc1a0ad066d9f423"
+  },
+  "fetched_at": "2026-09-14T12:54:05+00:00",
+  "source_snapshot_sha256": "d7272e802423f51062bb3d064ea820b10cd409878bea0b2a6f6bb5a3abbd6d96",
+  "images": {},
+  "local_only": true
+}

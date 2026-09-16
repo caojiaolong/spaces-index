@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "9138",
+    "title": "Ladder Side-Tuning：预训练模型的“过墙梯”",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/9138",
+    "date": "2022-06-20",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 1,
+    "display_formula_count": 1,
+    "image_count": 2,
+    "heading_count": 4,
+    "code_block_count": 0,
+    "source_text_sha256": "1ad0b6ff76248c32e04f2de60156d49c1e49c9b09911281487340dece3b93d41",
+    "output_text_sha256": "1ad0b6ff76248c32e04f2de60156d49c1e49c9b09911281487340dece3b93d41",
+    "latex_sha256": "2209aa57bfba611691190e45284c8c4a0a8b2b3cd49d45434ccdaa7082f67d0f",
+    "body_sha256": "694bf529d59e6d547335860d9e75d7e7f0ed4efbf94be8aad2df73d343fb1333",
+    "converter_version": 1,
+    "markdown_sha256": "ff7b421563ed500bacb2f7a275a2d92ea33d8307df56508cb9429ee04baa4793"
+  },
+  "fetched_at": "2026-09-14T12:59:05+00:00",
+  "source_snapshot_sha256": "0809e7be9f4373a4ae7e79dd83e53594d4e394d78a17f9094a675f72e477e4e1",
+  "images": {},
+  "local_only": true
+}

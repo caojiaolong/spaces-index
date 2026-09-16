@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "9497",
+    "title": "生成扩散模型漫谈（十七）：构建ODE的一般步骤（下）",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/9497",
+    "date": "2023-02-23",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 93,
+    "display_formula_count": 17,
+    "image_count": 0,
+    "heading_count": 5,
+    "code_block_count": 0,
+    "source_text_sha256": "dcdc5d119d560b40f16c89dd1bd5be9f7112c62b15f8d91eae8ad373fa963ec7",
+    "output_text_sha256": "dcdc5d119d560b40f16c89dd1bd5be9f7112c62b15f8d91eae8ad373fa963ec7",
+    "latex_sha256": "22d4dea7b66bff4c02a1fbab1929a6e54ddcac0611e1e30f2fe069082bd5d591",
+    "body_sha256": "a8cff27246fc2a332e58e07fab10a5965b05a3c934a80aee09bb825f3aea2e75",
+    "converter_version": 1,
+    "markdown_sha256": "96f6a4dacc72777d92b0812808ee580b8b1014938d7c91ba6692acd50ab01242"
+  },
+  "fetched_at": "2026-09-14T12:55:29+00:00",
+  "source_snapshot_sha256": "0b55144ff42a9fad462281371e2f8c077378c60ed20e1d89f3bd85036ad5d65d",
+  "images": {},
+  "local_only": true
+}

@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "11221",
+    "title": "流形上的最速下降：3. Muon + Stiefel",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/11221",
+    "date": "2025-08-08",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 136,
+    "display_formula_count": 17,
+    "image_count": 0,
+    "heading_count": 8,
+    "code_block_count": 1,
+    "source_text_sha256": "6d5b5a61ff3e2fd47c57a3c0fe0533e040aefcc3005f2620f26002d20618b301",
+    "output_text_sha256": "6d5b5a61ff3e2fd47c57a3c0fe0533e040aefcc3005f2620f26002d20618b301",
+    "latex_sha256": "ea2833682a914250bf9d6a4ad77a08179cec66f7da630b1c1e61e9d6cadda8f5",
+    "body_sha256": "1be3dca63f9780597d1b976a85fb4e802457669d19d459131d9142dbdab02e5f",
+    "converter_version": 1,
+    "markdown_sha256": "0a66ce966128efdd5d61590d48b70fdfb9c21bd803df1e48cc808b6eb69f3b02"
+  },
+  "fetched_at": "2026-09-14T12:40:30+00:00",
+  "source_snapshot_sha256": "1e1bc5a0791d18fb243b0ca03055e173770e77303c0264948b1f945118986206",
+  "images": {},
+  "local_only": true
+}

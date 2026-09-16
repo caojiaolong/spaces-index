@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "337",
+    "title": "精确自由落体运动定律的讨论(二)",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/337",
+    "date": "2010-01-09",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 42,
+    "display_formula_count": 12,
+    "image_count": 1,
+    "heading_count": 0,
+    "code_block_count": 0,
+    "source_text_sha256": "08be5359a552d38c1ded2123685ffea5344ff69f976ade28e79ce90b3fad4770",
+    "output_text_sha256": "08be5359a552d38c1ded2123685ffea5344ff69f976ade28e79ce90b3fad4770",
+    "latex_sha256": "898b466fe6969e0d2dc2ca0aca714259688db71c6c298af72b2ef57a2c836654",
+    "body_sha256": "24c55fb13838083f91c6e9935aaeb2e3c29cb8a79fd2ef0c2ea2abb503a1b381",
+    "converter_version": 1,
+    "markdown_sha256": "fc3b586caac52c234bd9e82cf026a9da02217eb06cd31d5aaf971848d763a4f2"
+  },
+  "fetched_at": "2026-09-14T14:44:02+00:00",
+  "source_snapshot_sha256": "87aa7f2a22dcd8d72cfb53530ab056e65209c07570c0fd00589ad187f8f77dc8",
+  "images": {},
+  "local_only": true
+}

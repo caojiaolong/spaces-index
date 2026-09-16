@@ -1,0 +1,17 @@
+{
+  "metadata": {
+    "id": "9529",
+    "title": "为什么现在的LLM都是Decoder-only的架构？",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/9529",
+    "date": "2023-03-17",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "fetched_at": "2026-09-14T12:55:05+00:00",
+  "source_snapshot_sha256": "5b248194787a95823e53cb109f6ba3bd97b3a2cbcfe4cbb2d0b4061cefb58346",
+  "validators": {
+    "etag": null,
+    "last_modified": null
+  }
+}

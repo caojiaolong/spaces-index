@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "1935",
+    "title": "单摆运动级数解：初试同伦分析",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/1935",
+    "date": "2013-03-13",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 19,
+    "display_formula_count": 5,
+    "image_count": 0,
+    "heading_count": 0,
+    "code_block_count": 0,
+    "source_text_sha256": "075ee62d15073781c0834b74c5430bca825d6856856f605d7edd84934b4e1a01",
+    "output_text_sha256": "075ee62d15073781c0834b74c5430bca825d6856856f605d7edd84934b4e1a01",
+    "latex_sha256": "7693f19430f051a76b9419a3563c203c26a26f5b9558e4a889acb62177321d3f",
+    "body_sha256": "20726a29d210c64c9e963e6cf2309a8fee5f080f7c583179a3c98dc70617528a",
+    "converter_version": 1,
+    "markdown_sha256": "18250c552ea577771130deb80c5b75d45b12ca05b112c0a5c89bd029bca547f0"
+  },
+  "fetched_at": "2026-09-14T14:04:12+00:00",
+  "source_snapshot_sha256": "83fc0456a1c6ac3950dcff5a52099c01b4f5ba945ea6f3557fcb11fca8a0407d",
+  "images": {},
+  "local_only": true
+}

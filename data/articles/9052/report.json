@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "9052",
+    "title": "GAU-α：尝鲜体验快好省的下一代Attention",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/9052",
+    "date": "2022-04-22",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 1,
+    "display_formula_count": 1,
+    "image_count": 0,
+    "heading_count": 3,
+    "code_block_count": 0,
+    "source_text_sha256": "fd2d29f15095f22c387aeccb235daaebc672134609fd32bd688d83a63629c19f",
+    "output_text_sha256": "fd2d29f15095f22c387aeccb235daaebc672134609fd32bd688d83a63629c19f",
+    "latex_sha256": "d7b1f62bf2d21bbcf3f15100bd8c47ccd2752911f208ef1cb6758a9662edcfcf",
+    "body_sha256": "cdbc7a879754269d02e8deb736ac59b069298ffa9fc1ed3925c0f637065cc375",
+    "converter_version": 1,
+    "markdown_sha256": "026668e53f59a7658e6a959d6eecc453418e5da53519fa8c06e9b998ef542b28"
+  },
+  "fetched_at": "2026-09-14T12:59:58+00:00",
+  "source_snapshot_sha256": "c4341ec35bc028c89202fe2160074d04cab49453ada5cf6525d64aada1143bf2",
+  "images": {},
+  "local_only": true
+}

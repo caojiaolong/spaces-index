@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "195",
+    "title": "绿色和平：工厂排污36计",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/195",
+    "date": "2009-10-14",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 0,
+    "display_formula_count": 0,
+    "image_count": 2,
+    "heading_count": 0,
+    "code_block_count": 0,
+    "source_text_sha256": "2e2c12d1e35b6b4de67c240eb2d3d18bec8cd8ac4577d291d9a307e2903d71c5",
+    "output_text_sha256": "2e2c12d1e35b6b4de67c240eb2d3d18bec8cd8ac4577d291d9a307e2903d71c5",
+    "latex_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "body_sha256": "ff8fe1d9ccbe20eb93bb54403be2c0d4136a372a7909ec2f4b704e21dadf2833",
+    "converter_version": 1,
+    "markdown_sha256": "c8d5195b38f00df43a78292b185b48e90bdd18159d3ff7e9a8346a09307c401e"
+  },
+  "fetched_at": "2026-09-14T14:48:18+00:00",
+  "source_snapshot_sha256": "d4d2a954e278814cc2669a4ee5eedf4eea8c5e6cf1431bcbc59fec3c8eb6c4c5",
+  "images": {},
+  "local_only": true
+}

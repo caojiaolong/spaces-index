@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "7643",
+    "title": "我们真的需要把训练集的损失降低到零吗？",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/7643",
+    "date": "2020-07-31",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 27,
+    "display_formula_count": 5,
+    "image_count": 2,
+    "heading_count": 4,
+    "code_block_count": 0,
+    "source_text_sha256": "5cae90bb3962086874399f254b597bffd38734ddf08d92c0ca46f1b90a39ae61",
+    "output_text_sha256": "5cae90bb3962086874399f254b597bffd38734ddf08d92c0ca46f1b90a39ae61",
+    "latex_sha256": "0cbc21764e49a6fb99033728f522fb1c5178326e636e9bd7e28bc0a798406886",
+    "body_sha256": "bbeb4604c214e1ac7a0c0fecf66ec3e6f74e683c242da194befad4d31bcd41ea",
+    "converter_version": 1,
+    "markdown_sha256": "251785658dddc27314af6e095a39d147ee18d3eb823455e695952ae2e66f43d1"
+  },
+  "fetched_at": "2026-09-14T13:12:08+00:00",
+  "source_snapshot_sha256": "4d36246c18e525e59b3ade38ce9bc2acf41e60e6a49962c89813761d7c41ebac",
+  "images": {},
+  "local_only": true
+}

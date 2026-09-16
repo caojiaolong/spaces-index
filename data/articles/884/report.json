@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "884",
+    "title": "设计了一个导航页",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/884",
+    "date": "2010-08-18",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 0,
+    "display_formula_count": 0,
+    "image_count": 1,
+    "heading_count": 0,
+    "code_block_count": 0,
+    "source_text_sha256": "57e3f1913bead1816f6b6e4e75337309ad04ddeebeb41f6b07ed3a8c4f9716fd",
+    "output_text_sha256": "57e3f1913bead1816f6b6e4e75337309ad04ddeebeb41f6b07ed3a8c4f9716fd",
+    "latex_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "body_sha256": "660351c7c4762ed8522f28486888ebf3f607601ef6b8f27bdc0a410797879d10",
+    "converter_version": 1,
+    "markdown_sha256": "77b7bdd419c2cab719a84cc710333e06f0cfb007aa6ca302df882b43cff33a44"
+  },
+  "fetched_at": "2026-09-14T14:31:31+00:00",
+  "source_snapshot_sha256": "c9870b4d3be2f9ca1f03251f2befdaa67b03ebf869a211ba8fc09cef7d3bfc59",
+  "images": {},
+  "local_only": true
+}

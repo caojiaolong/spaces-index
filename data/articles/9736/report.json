@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "9736",
+    "title": "Lion/Tiger优化器训练下的Embedding异常和对策",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/9736",
+    "date": "2023-08-28",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 21,
+    "display_formula_count": 2,
+    "image_count": 0,
+    "heading_count": 5,
+    "code_block_count": 0,
+    "source_text_sha256": "e065c41b21b9871a766b712bdfc7441fceabc400b79e93548ab0adb0dea7a351",
+    "output_text_sha256": "e065c41b21b9871a766b712bdfc7441fceabc400b79e93548ab0adb0dea7a351",
+    "latex_sha256": "c37c305d539a7aecec7c7e3d3ca19c6e967ae38680d2bfdd1ca5c849fe30d5de",
+    "body_sha256": "df46e75c627f3d8c16f95e733bc87431e245b0f427ce8f9cbd746d503347c0c6",
+    "converter_version": 1,
+    "markdown_sha256": "9baed2c4bbada8a6c5cc157fa0617958f6629df5b8e4ab4fd3eb2f47d68880a5"
+  },
+  "fetched_at": "2026-09-14T12:52:35+00:00",
+  "source_snapshot_sha256": "83197c61e047ced3ce052dc6097689ee4f7f00d216e1be77d173eedc65a0fd68",
+  "images": {},
+  "local_only": true
+}

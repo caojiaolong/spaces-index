@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "11879",
+    "title": "让炼丹更科学一些（八）：多阶段训练的学习率",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/11879",
+    "date": "2026-08-31",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 100,
+    "display_formula_count": 18,
+    "image_count": 0,
+    "heading_count": 9,
+    "code_block_count": 0,
+    "source_text_sha256": "bc4f8b47e6985b5c15c64bb5aa8f0b3cf31f3ad69f5cb41df02e121008c2e867",
+    "output_text_sha256": "bc4f8b47e6985b5c15c64bb5aa8f0b3cf31f3ad69f5cb41df02e121008c2e867",
+    "latex_sha256": "b0a3481648b09a56756fe3a27f9e4257d68bcf21ae1d816d7d886caa4253176f",
+    "body_sha256": "3d74759cff02ddc2d7139c6e0e1750432c1a29caf7d3de7ef768dbdc172dbffa",
+    "converter_version": 1,
+    "markdown_sha256": "9f562aaa59847b852f505c7f3a3e1410504724a4e0a5f723cd6da13affcaf5b5"
+  },
+  "fetched_at": "2026-09-14T07:36:07+00:00",
+  "source_snapshot_sha256": "73c4fc789f1911143f8827c4b1f183a3e000fcb0abaa8e438adefb7e0547d99a",
+  "images": {},
+  "local_only": true
+}

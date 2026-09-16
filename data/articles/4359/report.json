@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "4359",
+    "title": "【语料】2500万中文三元组！",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/4359",
+    "date": "2017-04-24",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 0,
+    "display_formula_count": 0,
+    "image_count": 1,
+    "heading_count": 3,
+    "code_block_count": 0,
+    "source_text_sha256": "43e06feced165f741d2e8326ec3d60ffc1c1fe8c1a3ad1707c346701f82cddf1",
+    "output_text_sha256": "43e06feced165f741d2e8326ec3d60ffc1c1fe8c1a3ad1707c346701f82cddf1",
+    "latex_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "body_sha256": "636f0bcbd9ba39ae1ab99d978d696cf570802e7a14deab69035891cc6cea52f4",
+    "converter_version": 1,
+    "markdown_sha256": "207573c806fccbcf247f8440a01aaa041e8e16d88c1b3c5a20d2558bcd82c435"
+  },
+  "fetched_at": "2026-09-14T13:32:54+00:00",
+  "source_snapshot_sha256": "57acf7ae020b4d0b767c3512d5a66a54beedf795ea103ec3fca84fd894a96d92",
+  "images": {},
+  "local_only": true
+}

@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "10972",
+    "title": "等值振荡定理：最优多项式逼近的充要条件",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/10972",
+    "date": "2025-06-02",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 182,
+    "display_formula_count": 32,
+    "image_count": 1,
+    "heading_count": 9,
+    "code_block_count": 0,
+    "source_text_sha256": "1145fd09d512a1a0c08dda5f4f06d77516b4624192fb3231495eb64a277764d8",
+    "output_text_sha256": "1145fd09d512a1a0c08dda5f4f06d77516b4624192fb3231495eb64a277764d8",
+    "latex_sha256": "9505e67265e8b98f763ba11274f054670608bbb8939d0fcce253eb461fc68d9a",
+    "body_sha256": "d38dec8c4de9ae1d901253e5d9aa4b72af5d3f58449a177d7519946ff8de5a8d",
+    "converter_version": 1,
+    "markdown_sha256": "e372c4f5edf582e96e44ddd0117dd2abe2d7e1064ddffb04f157ab12f72c2736"
+  },
+  "fetched_at": "2026-09-14T12:42:07+00:00",
+  "source_snapshot_sha256": "8ce0dd2856f9e8e375a7f0483e8389c70e54d1faf1a57b80ebbfa9a77fe693d8",
+  "images": {},
+  "local_only": true
+}

@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "52",
+    "title": "美华裔教授破百年物理定律 获国际同行喝彩(图)",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/52",
+    "date": "2009-08-03",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 0,
+    "display_formula_count": 0,
+    "image_count": 1,
+    "heading_count": 0,
+    "code_block_count": 0,
+    "source_text_sha256": "3f96fb1e017cb6a1bea891b27950f6bdabd487c12e0c8c428c7d78926fe1cd9e",
+    "output_text_sha256": "3f96fb1e017cb6a1bea891b27950f6bdabd487c12e0c8c428c7d78926fe1cd9e",
+    "latex_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "body_sha256": "fb9b3aff88830f802796bf9a0976e6d57e63d21708687b410801fd0b55fa2158",
+    "converter_version": 1,
+    "markdown_sha256": "7b08e92d3f4c304ac730bce41b1687536b995a75986f23fad48964eb19116a70"
+  },
+  "fetched_at": "2026-09-14T15:01:49+00:00",
+  "source_snapshot_sha256": "5798acd42eb361ab78188cc8060a6ddc745154cac17ba098a9a44cc7ce3d9acc",
+  "images": {},
+  "local_only": true
+}

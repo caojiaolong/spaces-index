@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "753",
+    "title": "已知中心五边形，作五边形",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/753",
+    "date": "2010-07-25",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 0,
+    "display_formula_count": 0,
+    "image_count": 2,
+    "heading_count": 0,
+    "code_block_count": 0,
+    "source_text_sha256": "9a34b4aaa5b03660d3d2c668affd3ae29c00fbb2f9606c2203d7759edb0de823",
+    "output_text_sha256": "9a34b4aaa5b03660d3d2c668affd3ae29c00fbb2f9606c2203d7759edb0de823",
+    "latex_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "body_sha256": "d2ef722c1134f6e46055664271d843760c9d530b809929adec968b4fda2c9daf",
+    "converter_version": 1,
+    "markdown_sha256": "12116bd7e124b6b54de4b71bd80df7746890e1e09a5b93108720184c2eb254b7"
+  },
+  "fetched_at": "2026-09-14T14:33:50+00:00",
+  "source_snapshot_sha256": "368042b130e397c454edd909b06cc930366fb8a86aef7b6cb76b33ced24938a9",
+  "images": {},
+  "local_only": true
+}

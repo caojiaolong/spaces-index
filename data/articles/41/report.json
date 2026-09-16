@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "41",
+    "title": "继续观测国际空间站",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/41",
+    "date": "2009-07-29",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 0,
+    "display_formula_count": 0,
+    "image_count": 5,
+    "heading_count": 0,
+    "code_block_count": 0,
+    "source_text_sha256": "7f152652e3892eb135a22f29fbce6c07fc4751d3ea30d66e4a33e5431e8573c4",
+    "output_text_sha256": "7f152652e3892eb135a22f29fbce6c07fc4751d3ea30d66e4a33e5431e8573c4",
+    "latex_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "body_sha256": "fe43f453d65ee8f2cfb350194b8f9e0f42dc3364017ae093b5fa9eeef47e7a79",
+    "converter_version": 1,
+    "markdown_sha256": "7f9cb13c9f1fa106e36c88d8f5cf30e540234df8e0a59731d8e27d1363fd25ce"
+  },
+  "fetched_at": "2026-09-14T15:03:05+00:00",
+  "source_snapshot_sha256": "05a52ff20535e1af87e1205735d9cd0aee03f69ae0b51d7c5a5f38849e15efd4",
+  "images": {},
+  "local_only": true
+}

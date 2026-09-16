@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "8471",
+    "title": "对比学习可以使用梯度累积吗？",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/8471",
+    "date": "2021-06-17",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 55,
+    "display_formula_count": 6,
+    "image_count": 0,
+    "heading_count": 6,
+    "code_block_count": 0,
+    "source_text_sha256": "9ea3bd45f5039dcc2ef80e13b8731d6debd1fdf36892445067fe9399985445db",
+    "output_text_sha256": "9ea3bd45f5039dcc2ef80e13b8731d6debd1fdf36892445067fe9399985445db",
+    "latex_sha256": "b10ac1326d5c0747a6559d77b0b0c3820edc9b11781f36bb6b4f99f6bfd739ca",
+    "body_sha256": "eb4e079d3d3a6fac69d82d795fd87b4efa4d930110056610ac0aac28cfd149fd",
+    "converter_version": 1,
+    "markdown_sha256": "e1191ff7556bacfed9ee5f73f14f0d8f9e5e1e77f35e43b3a5ff132b50a1e707"
+  },
+  "fetched_at": "2026-09-14T13:05:55+00:00",
+  "source_snapshot_sha256": "7cd47cd78b7ea6715644d29ba3e154bac053abafba54988176c364267a3e8e5b",
+  "images": {},
+  "local_only": true
+}

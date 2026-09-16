@@ -1,0 +1,79 @@
+# 从重参数的角度看离散概率分布的构建
+
+> 作者：苏剑林 · 科学空间 · 2022-05-25
+>
+> 原文：<https://spaces.ac.cn/archives/9085>
+>
+> 原文许可：[CC BY-NC-ND 2.5 CN（署名-非商业性使用-禁止演绎）](https://creativecommons.org/licenses/by-nc-nd/2.5/cn/)。
+>
+> 本文件由 spaces-index 非官方、非商业项目进行必要的 HTML → Markdown 格式转换；正文未做摘要、润色、翻译或重组。项目不代表作者，也不表示作者为项目背书。
+>
+> 署名及附加许可说明不代表已获得作者额外授权。第三方素材权利依其原有声明。
+>
+> 原站转载与引用说明：[科学空间 FAQ](https://spaces.ac.cn/archives/6508#%E6%96%87%E7%AB%A0%E5%A6%82%E4%BD%95%E8%BD%AC%E8%BD%BD/%E5%BC%95%E7%94%A8)
+
+---
+
+一般来说，神经网络的输出都是无约束的，也就是值域为$\mathbb{R}$，而为了得到有约束的输出，通常是采用加激活函数的方式。例如，如果我们想要输出一个概率分布来代表每个类别的概率，那么通常在最后加上Softmax作为激活函数。那么一个紧接着的疑问就是：除了Softmax，还有什么别的操作能生成一个概率分布吗？
+
+在[《漫谈重参数：从正态分布到Gumbel Softmax》](<https://spaces.ac.cn/archives/6705>)中，我们介绍了Softmax的重参数操作，本文将这个过程反过来，即先定义重参数操作，然后去反推对应的概率分布，从而得到一个理解概率分布构建的新视角。
+
+## 问题定义
+
+假设模型的输出向量为$\boldsymbol{\mu}=[\mu_1,\cdots,\mu_n]\in\mathbb{R}^n$，不失一般性，这里假设$\mu_i$两两不等。我们希望通过某个变换$\mathcal{T}$将$\boldsymbol{\mu}$转换为$n$元概率分布$\boldsymbol{p}=[p_1,\cdots,p_n]$，并保持一定的性质。比如，最基本的要求是：
+\begin{equation}{\color{red}1.}\,p_i\geq 0 \qquad {\color{red}2.}\,\sum_i p_i = 1 \qquad {\color{red}3.}\,p_i \geq p_j \Leftrightarrow \mu_i \geq \mu_j\end{equation}
+当然，这些要求都很平凡，只要$f$是$\mathbb{R}\mapsto\mathbb{R}^+$的单调函数（对于Softmax有$f(x)=e^x$），那么变换
+\begin{equation}p_i = \frac{f(\mu_i)}{\sum\limits_j f(\mu_j)}\end{equation}
+都可以满足上述要求。接下来我们增加一个不那么平凡的条件：
+\begin{equation}{\color{red}4.}\, \mathcal{T}(\boldsymbol{\mu}) = \mathcal{T}(\boldsymbol{\mu} + c\boldsymbol{1})\quad (\forall c \in \mathbb{R})\end{equation}
+其中$\boldsymbol{1}$代表全1向量，$c$则是任意常数。也就是说，$\boldsymbol{\mu}$的每个分量都加上同一常数后，变换的结果保持不变，提出这个条件是因为每个分量都加上一个常数后，$\mathop{\text{argmax}}$的结果不会改变，而$\mathcal{T}$最好能尽量保持跟它一样的性质。容易检验Softmax是满足这个条件的，然而除了Softmax外，我们似乎很难想到别的变换了。
+
+## 噪声扰动
+
+非常有意思的是，我们可以借助重参数（Reparameterization）的逆过程来构造这样的变换！假设$\boldsymbol{\varepsilon}=[\varepsilon_1,\cdots,\varepsilon_n]$是从分布$p(\varepsilon)$独立重复采样$n$次得到的向量，由于$\boldsymbol{\varepsilon}$是随机的，那么$\mathop{\text{argmax}}(\boldsymbol{\mu}+\boldsymbol{\varepsilon})$通常也是随机的，那么我们可以通过
+\begin{equation}p_i = P[\mathop{\text{argmax}}(\boldsymbol{\mu}+\boldsymbol{\varepsilon})=i]\end{equation}
+来定义变换$\mathcal{T}$。由于$\boldsymbol{\varepsilon}$是独立同分布的，且整个定义只跟$\mathop{\text{argmax}}(\boldsymbol{\mu}+\boldsymbol{\varepsilon})$有关，也就是只涉及到每个分量的相对大小，因此所定义的变换必然是满足前述4个条件的。
+
+我们也可以通过直接算出$p_i$的形式来判断它满足的性质。具体来说，$\mathop{\text{argmax}}(\boldsymbol{\mu}+\boldsymbol{\varepsilon})=i$意味着
+\begin{equation}\mu_i + \varepsilon_i > \mu_j + \varepsilon_j\quad (\forall j\neq i)\end{equation}
+也就是$\mu_i - \mu_j + \varepsilon_i > \varepsilon_j$，显然$\mu_i$越大该式成立的可能性越大，也即$\mu_i$越大对应的$p_i$越大，这便是条件$3$。具体来说，固定$\varepsilon_i$的情况下，满足该条件的概率是
+\begin{equation}\int_{-\infty}^{\mu_i - \mu_j + \varepsilon_i} p(\varepsilon_j)d\varepsilon_j = \Phi(\mu_i - \mu_j + \varepsilon_i)\end{equation}
+这里$\Phi$是$p(\varepsilon)$的累积分布函数（Cumulative Distribution Function）。由于各个$\varepsilon_j$都是独立同分布的，因此我们可以将概率直接连乘起来：
+\begin{equation}\prod_{j\neq i} \Phi(\mu_i - \mu_j + \varepsilon_i)\end{equation}
+这是固定$\varepsilon_i$的情况下，$\mathop{\text{argmax}}(\boldsymbol{\mu}+\boldsymbol{\varepsilon})=i$的概率。最后我们只需要对$\varepsilon_i$求平均，就可以得到$p_i$：
+\begin{equation}p_i = \int_{-\infty}^{\infty} p(\varepsilon_i)\left[\prod_{j\neq i} \Phi(\mu_i - \mu_j + \varepsilon_i)\right]d\varepsilon_i  \label{eq:pi}\end{equation}
+从$p_i$的表达式可以看到它只依赖于相对值$\mu_i - \mu_j$，因此显然它满足定义中的条件$4$。
+
+## 温故知新
+
+对照[《漫谈重参数：从正态分布到Gumbel Softmax》](<https://spaces.ac.cn/archives/6705>)中关于Gumbel Max的介绍，我们可以发现上述推导跟重参数正好相反，它是先定义了重参数的方法，然后在反向推导出对应的概率分布。
+
+现在我们可以来重新检验一下之前的结果，即当噪声分布取[Gumbel分布](<https://en.wikipedia.org/wiki/Gumbel_distribution>)时，式$\eqref{eq:pi}$是否能得到常规的Softmax操作。Gumbel噪声是$u\sim U[0,1]$通过$\varepsilon = -\log(-\log u)$变换而来，由于$u$的分布正好是$U[0,1]$，所以解出来$u=e^{-e^{-\varepsilon}}$正好就是Gumbel分布的累积分布函数，即$\Phi(\varepsilon)=e^{-e^{-\varepsilon}}$，而$p(\varepsilon)$就是$\Phi(\varepsilon)$的导数，即$p(\varepsilon)=\Phi'(\varepsilon)=e^{-\varepsilon-e^{-\varepsilon}}$。
+
+将上述结果代入式$\eqref{eq:pi}$得
+\begin{equation}\begin{aligned}
+p_i =&\, \int_{-\infty}^{\infty} e^{-\varepsilon_i-e^{-\varepsilon_i}} e^{-\sum\limits_{j\neq i}e^{-\varepsilon_i + \mu_j - \mu_i}} d\varepsilon_i \\
+=&\, \int_{-\infty}^0  e^{-e^{-\varepsilon_i}\left(1+\sum\limits_{j\neq i}e^{\mu_j - \mu_i}\right)} d(-e^{-\varepsilon_i}) \\
+=&\, \int_{-\infty}^0  e^{t\left(1+\sum\limits_{j\neq i}e^{\mu_j - \mu_i}\right)} dt\\
+=&\, \frac{1}{1+\sum\limits_{j\neq i}e^{\mu_j - \mu_i}} = \frac{e^{\mu_i}}{\sum\limits_j e^{\mu_j }}
+\end{aligned}\end{equation}
+这正好是Softmax。于是我们再次验证了Gumbel Max与Softmax的对应关系。
+
+## 数值计算
+
+能像Gumbel分布那样解出诸如Softmax的解析解是极其稀罕的，至少笔者目前还找不到第二例。因此，大多数情况下，我们只能用数值计算方法近似估算式$\eqref{eq:pi}$。由于$p(\varepsilon)=\Phi'(\varepsilon)$，所以我们可以直接凑微分得：
+\begin{equation}p_i = \int_0^1 \left[\prod_{j\neq i} \Phi(\mu_i - \mu_j + \varepsilon_i)\right]d\Phi(\varepsilon_i)\end{equation}
+记$t=\Phi(\varepsilon_i)$，那么
+\begin{equation}\begin{aligned}
+p_i =&\, \int_0^1 \left[\prod_{j\neq i} \Phi(\mu_i - \mu_j + \Phi^{-1}(t))\right]dt \\
+\approx&\, \frac{1}{K}\sum_{k=1}^K\prod_{j\neq i} \Phi\left(\mu_i - \mu_j + \Phi^{-1}\left(\frac{k}{K+1}\right)\right)
+\end{aligned}\end{equation}
+其中$\Phi^{-1}$是$\Phi$的逆函数，在概率中也叫分位函数（Quantile Function、Percent Point Function等）。
+
+从上式可以看到，只要我们知道$\Phi$的解析式，就可以对$p_i$进行近似计算。注意我们不需要知道$\Phi^{-1}$的解析式，因为采样点$\Phi^{-1}\left(\frac{k}{K+1}\right)$的结果我们可以用其他数值方法提前计算好。
+
+以标准正态分布为例，$\Phi(x)=\frac{1}{2} \left(1+\text{erf}\left(\frac{x}{\sqrt{2}}\right)\right)$，而主流的深度学习框架基本上都自带了$\text{erf}$函数，所以$\Phi(x)$的计算是没有问题的；至于$\Phi^{-1}\left(\frac{k}{K+1}\right)$我们可以通过<code>scipy.stats.norm.ppf</code>来事先计算好。所以当$\boldsymbol{\varepsilon}$采样自标准正态分布时，$p_i$的计算在主流深度学习框架中都是没问题的。
+
+## 文章小结
+
+本文从重参数角度对Softmax进行推广，得到了一类具备相似性质的概率归一化方法。

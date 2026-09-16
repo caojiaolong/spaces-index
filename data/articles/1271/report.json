@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "1271",
+    "title": "有限Vs无限:无穷电荷板的场|平行板电容",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/1271",
+    "date": "2011-02-26",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 12,
+    "display_formula_count": 3,
+    "image_count": 2,
+    "heading_count": 0,
+    "code_block_count": 0,
+    "source_text_sha256": "ba45112e9d2a92c7b93f56b3022dec78033621da23faf95b6acb0ba6c14fdf4e",
+    "output_text_sha256": "ba45112e9d2a92c7b93f56b3022dec78033621da23faf95b6acb0ba6c14fdf4e",
+    "latex_sha256": "6abce8190a301f5539a4654d1272869b4ce8df0ee4573d43fa4e4636e834d56d",
+    "body_sha256": "3ad76f11ee459884aaf1e1c4fc49be80909c4b84fa69749042b2bdfa34968000",
+    "converter_version": 1,
+    "markdown_sha256": "cc8bcc3a7f882db68de8a4b33880e2292ca0bf2c484720d8532b967e634e2505"
+  },
+  "fetched_at": "2026-09-14T14:23:49+00:00",
+  "source_snapshot_sha256": "1e0386626c4460da30ec0b9b1a8b8bf6dfa10195173baf2cb217a6ecf4495899",
+  "images": {},
+  "local_only": true
+}

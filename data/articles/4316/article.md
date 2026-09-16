@@ -1,0 +1,137 @@
+# 【不可思议的Word2Vec】 3\.提取关键词
+
+> 作者：苏剑林 · 科学空间 · 2017-04-07
+>
+> 原文：<https://spaces.ac.cn/archives/4316>
+>
+> 原文许可：[CC BY-NC-ND 2.5 CN（署名-非商业性使用-禁止演绎）](https://creativecommons.org/licenses/by-nc-nd/2.5/cn/)。
+>
+> 本文件由 spaces-index 非官方、非商业项目进行必要的 HTML → Markdown 格式转换；正文未做摘要、润色、翻译或重组。项目不代表作者，也不表示作者为项目背书。
+>
+> 署名及附加许可说明不代表已获得作者额外授权。第三方素材权利依其原有声明。
+>
+> 原站转载与引用说明：[科学空间 FAQ](https://spaces.ac.cn/archives/6508#%E6%96%87%E7%AB%A0%E5%A6%82%E4%BD%95%E8%BD%AC%E8%BD%BD/%E5%BC%95%E7%94%A8)
+
+---
+
+<strong>本文主要是给出了关键词的一种新的定义，并且基于Word2Vec给出了一个实现方案。这种关键词的定义是自然的、合理的，Word2Vec只是一个简化版的实现方案，可以基于同样的定义，换用其他的模型来实现。</strong>
+
+说到提取关键词，一般会想到TF\-IDF和TextRank，大家是否想过，Word2Vec还可以用来提取关键词？而且，用Word2Vec提取关键词，已经初步含有了语义上的理解，而不仅仅是简单的统计了，而且还是无监督的！
+
+## 什么是关键词？
+
+诚然，TF\-IDF和TextRank是两种提取关键词的很经典的算法，它们都有一定的合理性，但问题是，如果从来没看过这两个算法的读者，会感觉简直是异想天开的结果，估计很难能够从零把它们构造出来。也就是说，这两种算法虽然看上去简单，但并不容易想到。试想一下，没有学过信息相关理论的同学，估计怎么也难以理解为什么IDF要取一个对数？为什么不是其他函数？又有多少读者会破天荒地想到，用PageRank的思路，去判断一个词的重要性？
+
+说到底，问题就在于：提取关键词和文本摘要，看上去都是一个很自然的任务，有谁真正思考过，关键词的定义是什么？这里不是要你去查汉语词典，获得一大堆文字的定义，而是问你数学上的定义。关键词在数学上的合理定义应该是什么？或者说，我们获取关键词的目的是什么？
+
+很显然，关键词也好，摘要也好，我们希望能够尽可能快地获取文章的大意，如果一篇文章的关键词是“深度学习”，我们就会知道，这篇文章不可能大谈特谈“钢铁是怎么练成的”，也就是说，我们可以由关键词来猜到文本的大意，用数学来表示，那就是条件概率
+$$p(s|w_i)$$
+这里的$s$代表着一段文本，$w_i$是文本中的某个词，如果$w_i$是文本的关键词，那么应该使得上述概率最大。也就是说，我们只需要对句子中所有的词，算一遍上述概率，然后降序排列，就可以提取关键词了。说白了，关键词就是最能让我们猜到原文的词语。怎么估算这个概率？简单使用朴素贝叶斯假设就好，如果$s$由$n$个词$w_1,w_2,\dots,w_n$组成，那么
+$$p(s|w_i)=p(w_1,w_2,\dots,w_n|w_i)=\prod_{k=1}^n p(w_k|w_i)$$
+这样，我们只需要估算词与词之间的转移概率$p(w_k|w_i)$，就可以得到条件概率$p(s|w_i)$了，从而完成关键词的提取。
+
+这跟Word2Vec又有什么联系呢？为了估算$p(w_k|w_i)$，需要有大量的文本进行统计，好在这个过程是无监督的，统计是件很简单的事情。然而，我们有更好的工具，什么工具最擅长于对$p(w_k|w_i)$的建模呢？读者可能就已经猜到了，显然就是Word2Vec呀！Word2Vec的Skip\-Gram模型，不就是用来对这个概率进行建模的么？鉴于Word2Vec的“快准狠”的特性，我们没理由弃之不用呀！（当然，按照文章开头的说法，并不一定要用贝叶斯假设，更加不一定要用Word2Vec来算，但是，关键词的定义本身应该是合理的）
+
+## Word2Vec算概率
+
+这时候读者应该会明白，为什么我在前两篇文章中会那么强调Skip\-Gram \+ Huffman Softmax这个组合了，因为这个组合就是对$p(w_k|w_i)$进行建模的。当然，由于Huffman Softmax的特性，我们要算$p(w_k|w_i)$，需要费一些周折，参考代码如下：
+
+
+
+<pre><code class="language-python">import numpy as np
+import gensim
+model = gensim.models.word2vec.Word2Vec.load('word2vec_wx')
+
+def predict_proba(oword, iword):
+    iword_vec = model[iword]
+    oword = model.wv.vocab[oword]
+    oword_l = model.syn1[oword.point].T
+    dot = np.dot(iword_vec, oword_l)
+    lprob = -sum(np.logaddexp(0, -dot) + oword.code*dot) 
+    return lprob</code></pre>
+
+
+
+这基本上就是直接参考gensim中的Word2Vec的score\_sg\_pair函数写的，简单的流程是：<u>取出$w_k$的Huffman编码（路径），取出$w_i$的词向量，然后根据路径，要把路径上每个节点的概率都算出来，然后乘起来，得到$p(w_k|w_i)$。这是算得是概率对数，应该乘法变为加法。</u>最后的概率是怎么计算的呢？事实上，按照Word2Vec的公式，每个节点的概率对数是：
+$$\begin{aligned}&\log \left(\frac{1}{1+e^{-\boldsymbol{x}^{\top} \boldsymbol{\theta}}}\right)^{1-d}\left(1-\frac{1}{1+e^{-\boldsymbol{x}^{\top} \boldsymbol{\theta}}}\right)^{d}\\
+=&-(1-d)\log (1+e^{-\boldsymbol{x}^{\top} \boldsymbol{\theta}}) - d \log (1+e^{-\boldsymbol{x}^{\top} \boldsymbol{\theta}}) - d \boldsymbol{x}^{\top} \boldsymbol{\theta}\\
+=&-\log (1+e^{-\boldsymbol{x}^{\top} \boldsymbol{\theta}}) - d \boldsymbol{x}^{\top} \boldsymbol{\theta}\end{aligned}$$
+这里的$\boldsymbol{\theta}$是节点向量，$\boldsymbol{x}$是输入词向量，$d$是该节点的编码（非0即1）。但是，官方的score\_sg\_pair函数并不是这样写的，那是因为
+$$\begin{aligned}&-\log (1+e^{-\boldsymbol{x}^{\top} \boldsymbol{\theta}}) - d \boldsymbol{x}^{\top} \boldsymbol{\theta}\\
+=&-\log \bigg[e^{d \boldsymbol{x}^{\top}\theta}(1+e^{-\boldsymbol{x}^{\top} \boldsymbol{\theta}})\bigg]\\
+=&-\log \bigg(e^{d \boldsymbol{x}^{\top}\theta}+e^{(d-1)\boldsymbol{x}^{\top} \boldsymbol{\theta}}\bigg)\\
+=&-\log \bigg(1+e^{-(-1)^d \boldsymbol{x}^{\top}\theta}\bigg)\end{aligned}$$
+
+## 实践为上
+
+有了上面的铺垫，现在算关键词就简单了：
+
+
+
+<pre><code class="language-python">from collections import Counter
+def keywords(s):
+    s = [w for w in s if w in model]
+    ws = {w:sum([predict_proba(u, w) for u in s]) for w in s}
+    return Counter(ws).most_common()
+
+import pandas as pd #引入它主要是为了更好的显示效果
+import jieba
+s = u'太阳是一颗恒星'
+pd.Series(keywords(jieba.cut(s)))
+</code></pre>
+
+
+
+输出结果是
+
+> 0 (恒星, \-27\.9013707845)
+> 1 (太阳, \-28\.1072913493)
+> 2 (一颗, \-30\.482187911)
+> 3 (是, \-36\.3372344659)
+
+其它例子：
+
+> \>\>\> s=u'昌平区政府网站显示，明十三陵是世界上保存完整、埋葬皇帝最多的墓葬群，1961年被国务院公布为第一批全国重点文物保护单位，并于2003年被列为世界遗产名录。'
+> \>\>\> pd\.Series(keywords(jieba\.cut(s)))
+> 0 (文物保护, \-261\.691625676)
+> 1 (名录, \-272\.297758506)
+> 2 (世界遗产, \-273\.943120665)
+> 3 (第一批, \-280\.781786703)
+> 4 (列为, \-281\.663865896)
+> 5 (明十三陵, \-286\.298893108)
+> 6 (墓葬群, \-287\.463013816)
+> \.\.\.
+> 
+> 
+> 
+> \>\>\> s=u'雄安新区横空出世，吸引了众多外地炒房客前去购房。然而，在当地政府重拳遏制非法炒房、楼市冻结的背景下，那些怀揣买房钱却在雄安新区无处下手的投资需求，被挤出到周边地区。'
+> \>\>\> pd\.Series(keywords(jieba\.cut(s)))
+> 0 (炒房客, \-326\.997266407)
+> 1 (楼市, \-336\.176584187)
+> 2 (炒房, \-337\.190896137)
+> 3 (买房, \-344\.613473556)
+> 4 (购房, \-346\.396359454)
+> 5 (重拳, \-350\.207272082)
+> 6 (外地, \-355\.860419218)
+> 
+> 
+> 
+> \>\>\> s=u'如果给一部古装电影设计服装，必须要考虑故事发生在哪个朝代，汉朝为宽袍大袖，清朝则是马褂旗袍。可在京剧舞台上，几乎任何一个历史人物，根据他的性别年龄、身份地位、基本性格等等，都可以在现有的服饰里找到合适的行头。 '
+> \>\>\> pd\.Series(keywords(jieba\.cut(s)))
+> 0 (朝代, \-485\.150966757)
+> 1 (人物, \-493\.759615898)
+> 2 (古装, \-495\.478962392)
+> 3 (汉朝, \-503\.409908377)
+> 4 (清朝, \-503\.45656029)
+> 5 (旗袍, \-504\.76313228)
+> 6 (身份, \-507\.624260109)
+
+大家可以自己尝试。如果要在自己的语料上尝试，那就直接在语料上训练一个Word2Vec（Skip\-Gram \+ Huffman Softmax）模型即可，然后调用上述代码就可以了。
+
+## 应该会有疑惑
+
+按照我们一开始的想法，$p(w_k|w_i)$应该要在整个句子内统计计算，而Word2Vec仅仅开了个窗口来计算，这合理吗？事实上，Word2Vec虽然仅仅开了窗口，但已经成功建立了相似词之间的联系，也就是说，用Word2Vec做上述过程，事实上将“<strong>相似词语</strong>”进行叠加起来进行评估，相比之下，TF\-IDF的方法，仅仅是将“<strong>相同词</strong>”叠加起来进行评估，因此，我们说Word2Vec提取关键词，能够初步结合语义来判断了。而且，Word2Vec通过考虑$p(w_k|w_i)$来考虑了文章内部的关联，这里有点TextRank的味道了，是一个二元模型，而TF\-IDF仅仅考虑词本身的信息量，仅仅是一个一元模型。
+
+而且，Word2Vec是基于神经网络训练的，自带平滑功能，哪怕两个词语在文本中未曾共现，也能得到一个较为合理的概率。
+
+当然这样做的代价就是：TF\-IDF算法的效率是$\mathcal{O}(N)$，而用Word2Vec提取，效率显然是$\mathcal{O}(N^2)$，这里的$N$是句子中的词数。

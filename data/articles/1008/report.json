@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "1008",
+    "title": "扬帆——在宇宙的海洋中航行",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/1008",
+    "date": "2010-10-24",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 0,
+    "display_formula_count": 0,
+    "image_count": 11,
+    "heading_count": 0,
+    "code_block_count": 0,
+    "source_text_sha256": "23265fee2966a326ca74ef046ccd0751877ea2ab13cc9e2ec70ed72909c9510d",
+    "output_text_sha256": "23265fee2966a326ca74ef046ccd0751877ea2ab13cc9e2ec70ed72909c9510d",
+    "latex_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "body_sha256": "2ccf8efbb5e43dd8e9aa81fc6c6c23e953145ea80f295a8dd71bc463574c9385",
+    "converter_version": 1,
+    "markdown_sha256": "1cc5e8fc7ea870032602f999e76fcfd5386377f0a04b83ce314e8e98d770b795"
+  },
+  "fetched_at": "2026-09-14T14:28:16+00:00",
+  "source_snapshot_sha256": "20ee44bbd612ac1912d8fee9d556f39a796573c10859bbf43e4cb32389d90231",
+  "images": {},
+  "local_only": true
+}

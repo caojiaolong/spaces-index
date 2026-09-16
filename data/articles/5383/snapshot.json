@@ -1,0 +1,17 @@
+{
+  "metadata": {
+    "id": "5383",
+    "title": "变分自编码器（三）：这样做为什么能成？",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/5383",
+    "date": "2018-04-03",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "fetched_at": "2026-09-14T13:27:34+00:00",
+  "source_snapshot_sha256": "c2b9a61c5ab1c823331e8e023c5fa9b7f5e96721323c7f735650e752e3edb2d3",
+  "validators": {
+    "etag": null,
+    "last_modified": null
+  }
+}

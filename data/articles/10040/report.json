@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "10040",
+    "title": "Transformer升级之路：17、多模态位置编码的简单思考",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/10040",
+    "date": "2024-03-29",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 105,
+    "display_formula_count": 9,
+    "image_count": 5,
+    "heading_count": 7,
+    "code_block_count": 0,
+    "source_text_sha256": "07214349466ee2cb4a98d64eff5c53a2607ced1d6bc7593eba98d21a35c2b93b",
+    "output_text_sha256": "07214349466ee2cb4a98d64eff5c53a2607ced1d6bc7593eba98d21a35c2b93b",
+    "latex_sha256": "422afdeee9a92fdba6382a3b3141c37bc130dba2c4f4b56ab08960fcdb8ffe4c",
+    "body_sha256": "0038fffecbcef96e4169322fdf7fc837dbee43be1f147c4351d504ded07a9e93",
+    "converter_version": 1,
+    "markdown_sha256": "f43e5b89a5cd9a7c0a555d05ccc95ec0158849346af6148ee7005f96cd2695da"
+  },
+  "fetched_at": "2026-09-14T12:49:15+00:00",
+  "source_snapshot_sha256": "6dceab13dafabd5e77c4088f3aa8f83e2ef54b3181be2f4ff38c8aa69edfd21d",
+  "images": {},
+  "local_only": true
+}

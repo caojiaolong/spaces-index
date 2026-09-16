@@ -1,0 +1,39 @@
+{
+  "metadata": {
+    "id": "81",
+    "title": "世界各国能否联手应对气候变化？",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/81",
+    "date": "2009-08-18",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "source_dom_exact": true,
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "attributes_exact": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 0,
+    "display_formula_count": 0,
+    "image_count": 5,
+    "heading_count": 0,
+    "code_block_count": 0,
+    "source_text_sha256": "a80bc1c692d3b7c6525e0bb9a5cf07d545aa84c26440e2407ed6f37b2bed5717",
+    "output_text_sha256": "a80bc1c692d3b7c6525e0bb9a5cf07d545aa84c26440e2407ed6f37b2bed5717",
+    "latex_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "body_sha256": "6d64d6a6284386b3647e483422c0de9e958a9e6e796ddb8207f4a7e3bd7ddcde",
+    "converter_version": 1,
+    "format": "html-v1",
+    "source_warnings": [],
+    "fallback_reason": "Unclosed math delimiter",
+    "markdown_sha256": "64911980823e50e34a353d1adadd8ad8f9641135fd9a02c1d643597ca4d20b15"
+  },
+  "fetched_at": "2026-09-14T14:58:41+00:00",
+  "source_snapshot_sha256": "6565e7be7c66d5edee55b0409d61dbb3890519cd3eb40c55922d1025e0919a1e",
+  "images": {},
+  "local_only": true
+}

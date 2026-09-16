@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "2096",
+    "title": "数学基本技艺之23、24（下） ",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/2096",
+    "date": "2013-09-27",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 26,
+    "display_formula_count": 9,
+    "image_count": 0,
+    "heading_count": 0,
+    "code_block_count": 0,
+    "source_text_sha256": "98d0858e684f61d30850ab3d1d9394e6ae3580fc43f5357edd99e6779e65a400",
+    "output_text_sha256": "98d0858e684f61d30850ab3d1d9394e6ae3580fc43f5357edd99e6779e65a400",
+    "latex_sha256": "072e26ecc37d4f04078947f68c4a9114194e13b864b78b4975c388ab0514487f",
+    "body_sha256": "0614f9bb1efb2acdc328758ad4385031f02dbeb07cf13bc18871d8d96dcf4e44",
+    "converter_version": 1,
+    "markdown_sha256": "a6e9197eb4004c559ca9181c0430f439727a71b3b718b2d495c959a9e70d0797"
+  },
+  "fetched_at": "2026-09-14T13:59:46+00:00",
+  "source_snapshot_sha256": "bb046cc6ade9eabdc037de6933b29139c081b44465bc1bc79a8b002c4ba39957",
+  "images": {},
+  "local_only": true
+}

@@ -1,0 +1,114 @@
+# 恒等式 det(exp(A)) = exp(Tr(A)) 赏析
+
+> 作者：苏剑林 · 科学空间 · 2019-02-18
+>
+> 原文：<https://spaces.ac.cn/archives/6377>
+>
+> 原文许可：[CC BY-NC-ND 2.5 CN（署名-非商业性使用-禁止演绎）](https://creativecommons.org/licenses/by-nc-nd/2.5/cn/)。
+>
+> 本文件由 spaces-index 非官方、非商业项目进行必要的 HTML → Markdown 格式转换；正文未做摘要、润色、翻译或重组。项目不代表作者，也不表示作者为项目背书。
+>
+> 署名及附加许可说明不代表已获得作者额外授权。第三方素材权利依其原有声明。
+>
+> 原站转载与引用说明：[科学空间 FAQ](https://spaces.ac.cn/archives/6508#%E6%96%87%E7%AB%A0%E5%A6%82%E4%BD%95%E8%BD%AC%E8%BD%BD/%E5%BC%95%E7%94%A8)
+
+---
+
+本文的主题是一个有趣的矩阵行列式的恒等式
+\begin{equation}\det(\exp(\boldsymbol{A})) = \exp(\text{Tr}(\boldsymbol{A}))\label{eq:main}\end{equation}
+这个恒等式在挺多数学和物理的计算中都出现过，笔者都在不同的文献中看到过好几次了。
+
+注意左端是矩阵的指数，然后求行列式，这两步都是计算量非常大的运算；右端仅仅是矩阵的迹（一个标量），然后再做标量的指数。两边的计算量差了不知道多少倍，然而它们居然是相等的！这不得不说是一个神奇的事实。
+
+所以，本文就来好好欣赏一个这个恒等式。
+
+## 矩阵指数
+
+当然，要欣赏这个恒等式，需要做些准备功夫。首先是$\exp(\boldsymbol{A})$要怎么理解？一般来说，它是按照普通的$e^x$的泰勒级数展开式来定义的：
+\begin{equation}\exp(\boldsymbol{A})=\sum_{n=0}^{\infty}\frac{\boldsymbol{A}^n}{n!}\end{equation}
+这里的$\boldsymbol{A}$是一个$k\times k$矩阵。可以证明，这个定义对于任意矩阵都是收敛的，因此是个好的定义。
+
+有了这个定义，我们可以直接写出常系数微分方程组的解：
+\begin{equation}\frac{d}{dt}\boldsymbol{x}=\boldsymbol{A}\boldsymbol{x}\quad\Rightarrow \quad \boldsymbol{x}=\exp(t\boldsymbol{A})\boldsymbol{x}_0\end{equation}
+当然，这个结果充其量也只有理论上的价值，因为实际计算的时候，你还是得苦逼地把$\boldsymbol{A}^2,\boldsymbol{A}^3,\dots$一个个算出来。
+
+有没有什么简单一点的计算方案呢？有，假如$\boldsymbol{A}$能对角化的时候就简单一些，因为可对角化意味着
+\begin{equation}\boldsymbol{A}=\boldsymbol{P}\boldsymbol{\Lambda}\boldsymbol{P}^{-1}\end{equation}
+其实$\boldsymbol{P}$自然就是可逆矩阵，而$\boldsymbol{\Lambda}=\text{diag}(\lambda_1,\dots,\lambda_k)$是对角矩阵。这种情况之所以简单，是因为
+\begin{equation}\boldsymbol{A}^n=\boldsymbol{P}\boldsymbol{\Lambda}^n\boldsymbol{P}^{-1}\end{equation}
+而因为$\boldsymbol{\Lambda}$是对角阵，所以$\boldsymbol{\Lambda}^n$只需要把对角线上的各个数都取$n$次方就行了。所以
+\begin{equation}\begin{aligned}\exp(\boldsymbol{A})=&\exp(\boldsymbol{P}\boldsymbol{\Lambda}\boldsymbol{P}^{-1})\\
+=&\boldsymbol{P}\left(\sum_{n=0}^{\infty}\frac{\boldsymbol{\Lambda}^n}{n!}\right)\boldsymbol{P}^{-1}\\
+=&\boldsymbol{P}\exp(\boldsymbol{\Lambda})\boldsymbol{P}^{-1}
+\end{aligned}\end{equation}
+这里$\exp(\boldsymbol{\Lambda})=\text{diag}\left(e^{\lambda_1},\dots,e^{\lambda_k}\right)$。
+
+不过要注意，虽然矩阵指数的定义照搬了实数的指数级数，但是对于任意两个矩阵$\boldsymbol{A},\boldsymbol{B}$，一般情况下
+\begin{equation}\exp(\boldsymbol{A}+\boldsymbol{B})\neq \exp(\boldsymbol{A})\exp(\boldsymbol{B})\end{equation}
+两者相等的充分条件是$\boldsymbol{A}\boldsymbol{B}=\boldsymbol{B}\boldsymbol{A}$，即乘法可交换。也就是说，多个矩阵的混合运算规律，如果要照搬实数的运算公式，很多时候都需要加上可交换这个条件才能成立。
+
+由于$\boldsymbol{A}$和$-\boldsymbol{A}$显然是可交换的，因此
+\begin{equation}\boldsymbol{I}=\exp(\boldsymbol{A}-\boldsymbol{A})=\exp(\boldsymbol{A})\exp(-\boldsymbol{A})\end{equation}
+也就是说$\exp(\boldsymbol{A})$总是可逆的，其逆矩阵是$\exp(-\boldsymbol{A})$。
+
+## 矩阵函数
+
+其实，通过级数的方式，可以将很多实数级数都搬到矩阵来，从而成为矩阵函数，比如
+\begin{equation}\begin{aligned}\sin(\boldsymbol{A})=&\boldsymbol{A}-\frac{\boldsymbol{A}^3}{3!}+\frac{\boldsymbol{A}^5}{5!}-\frac{\boldsymbol{A}^7}{7!}+\dots\\
+\cos(\boldsymbol{A})=&\boldsymbol{I}-\frac{\boldsymbol{A}^2}{2!}+\frac{\boldsymbol{A}^4}{4!}-\frac{\boldsymbol{A}^6}{6!}+\dots
+\end{aligned}\end{equation}
+同样地，如果$\boldsymbol{A}\boldsymbol{B}=\boldsymbol{B}\boldsymbol{A}$，那么
+\begin{equation}\sin(\boldsymbol{A}+\boldsymbol{B})=\sin(\boldsymbol{A})\cos(\boldsymbol{B})+\sin(\boldsymbol{B})\cos(\boldsymbol{A})\end{equation}
+
+前面讨论了指数函数，有指数自然就有对数。矩阵对数的定义一般有两种。第一种定义是：如果矩阵$\boldsymbol{B}$满足$\exp(\boldsymbol{B})=\boldsymbol{A}$，那么$\boldsymbol{B}$称为矩阵$\boldsymbol{A}$的对数。
+
+但是，按照这种定义，矩阵的对数是不唯一的，哪怕仅仅是限制在实数矩阵范围内也是一样，比如对于$\boldsymbol{A}=\begin{pmatrix}\cos\alpha & -\sin\alpha \\ \sin\alpha & \cos\alpha\end{pmatrix}$，任意一个$(\alpha + 2\pi n)\begin{pmatrix}0 & -1 \\ 1 & 0\end{pmatrix}$都是它的对数，其中$n$是任意整数。
+
+另一种定义是照搬实级数的对数展开式：
+\begin{equation}\ln (\boldsymbol{I}+\boldsymbol{A}) = \sum_{n=1}^{\infty}(-1)^{n-1}\frac{\boldsymbol{A}^n}{n}\end{equation}
+这个定义简单，而且结果唯一，但是收敛条件仅为$\Vert \boldsymbol{A}\Vert_2 < 1$，其中$\Vert\cdot\Vert_2$为矩阵的2范数（参考[《深度学习中的Lipschitz约束：泛化与生成模型》的“矩阵范数”一节](<https://spaces.ac.cn/archives/6051#%E5%AE%9A%E4%B9%89>)）。当约束条件满足时，这样定义出来的对数满足
+\begin{equation}\exp(\ln (\boldsymbol{I}+\boldsymbol{A})) = \boldsymbol{I}+\boldsymbol{A}\end{equation}
+也就是说，定义是自洽的。
+
+前面矩阵指数讨论的对角化技巧，同样适用于任意通过级数来定义的矩阵函数，比如
+\begin{equation}\ln \left(\boldsymbol{I}+\boldsymbol{P}\boldsymbol{\Lambda}^n\boldsymbol{P}^{-1}\right) = \boldsymbol{P}\ln(\boldsymbol{I}＋\boldsymbol{\Lambda})\boldsymbol{P}^{-1}\end{equation}
+这里$\ln(\boldsymbol{I}＋\boldsymbol{\Lambda})=\text{diag}\big(\ln(1+\lambda_1),\dots,\ln(1+\lambda_k)\big)$。
+
+## det(exp(A)) = exp(Tr(A))
+
+铺了那么久垫，终于可以进入主题了。对于恒等式$\eqref{eq:main}$，如果它是可以对角化的，那么证明不算困难。因为
+\begin{equation}\begin{aligned}\text{左端}=&\det(\exp(\boldsymbol{A}))\\
+=&\det\big(\boldsymbol{P}\exp(\boldsymbol{\Lambda})\boldsymbol{P}^{-1}\big)\\
+=&\det(\boldsymbol{P}) \det(\exp(\boldsymbol{\Lambda})) \underbrace{\det(\boldsymbol{P}^{-1})}_{=1/\det(\boldsymbol{P})}\\
+=&\det(\exp(\boldsymbol{\Lambda}))\\
+=&e^{\lambda_1 + \dots + \lambda_k}
+\end{aligned}\end{equation}
+而
+\begin{equation}\begin{aligned}\text{右端}=&\exp(\text{Tr}(\boldsymbol{A}))\\
+=&\exp(\text{Tr}(\boldsymbol{P}\boldsymbol{\Lambda}\boldsymbol{P}^{-1}))\\
+=&\exp(\text{Tr}(\boldsymbol{P}^{-1}\boldsymbol{P}\boldsymbol{\Lambda}))\quad [\text{交换顺序是因为对于方阵}\boldsymbol{A},\boldsymbol{B}\text{，有}\text{Tr}(\boldsymbol{A}\boldsymbol{B})=\text{Tr}(\boldsymbol{B}\boldsymbol{A})]\\
+=&\exp(\text{Tr}(\boldsymbol{\Lambda}))\\
+=&e^{\lambda_1 + \dots + \lambda_k}
+\end{aligned}\end{equation}
+
+如果是不可对角化的矩阵呢？如果能证明全体可对角化矩阵在全体矩阵中稠密，那也可以利用极限来补充剩下部分，但这明显比较繁琐。有没有一气呵成的证明？有！而且非常精妙，它也正是我写这篇文章的主要原因。
+
+这个精妙的证明，是要我们去考虑带参数$t$的
+\begin{equation}f(t)=\det(\exp(t\boldsymbol{A}))\label{eq:detexp}\end{equation}
+然后我们去求它的导数（这里涉及到行列式的导数，求法请参考[《行列式的导数》](<https://spaces.ac.cn/archives/2383>)）：
+\begin{equation}\begin{aligned}\frac{d}{dt}f(t)=&f(t)\text{Tr}\left(\exp(-t\boldsymbol{A})\underbrace{\frac{d}{dt}\exp(t\boldsymbol{A})}_{=\exp(t\boldsymbol{A})\boldsymbol{A}}\right)\\
+=&f(t)\text{Tr}(\boldsymbol{A})\end{aligned}\end{equation}
+注意$\text{Tr}(\boldsymbol{A})$只是一个数，所以我们得到了关于$f(t)$的一个常微分方程！！它的解是
+\begin{equation}f(t)=C\exp(t\,\text{Tr}(\boldsymbol{A}))\end{equation}
+从式$\eqref{eq:detexp}$可以看出$f(0)=1$，从而$C=1$，即$f(t)=\exp(t\,\text{Tr}(\boldsymbol{A}))$，于是我们证明了
+\begin{equation}\det(\exp(t\boldsymbol{A}))=\exp(t\,\text{Tr}(\boldsymbol{A}))\end{equation}
+取$t=1$，得到恒等式$\eqref{eq:main}$。
+
+是不是很妙？
+
+对$\eqref{eq:main}$两边取对数，并且记$\exp(\boldsymbol{A})=\boldsymbol{B}$，那么我们可以得到它的另一个常见的形式
+\begin{equation}\ln\det(\boldsymbol{B}) = \text{Tr}(\ln (\boldsymbol{B}))\end{equation}
+这次的赏析就到这里了～谢谢大家阅读。
+
+<strong>参考链接：</strong>
+[https://math\.stackexchange\.com/questions/1487773/the\-identity\-deta\-exptrlna\-for\-a\-general](<https://math.stackexchange.com/questions/1487773/the-identity-deta-exptrlna-for-a-general>)

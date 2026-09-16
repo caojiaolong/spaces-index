@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "150",
+    "title": "美国3名科学家获诺贝尔生理学或医学奖",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/150",
+    "date": "2009-10-05",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 0,
+    "display_formula_count": 0,
+    "image_count": 3,
+    "heading_count": 0,
+    "code_block_count": 0,
+    "source_text_sha256": "a7735ef02677a5e52dcbe031a50a5ec53bb4ed9f20c969cfc70f295f0ad922d1",
+    "output_text_sha256": "a7735ef02677a5e52dcbe031a50a5ec53bb4ed9f20c969cfc70f295f0ad922d1",
+    "latex_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "body_sha256": "104f3e0689ef9afdc048a664c4c26e06f79bfdbdd3db7de14f4ef665fb7188c7",
+    "converter_version": 1,
+    "markdown_sha256": "dfb0e4adb49a66dfa9d452969f3a3af43ed4b2dc852ec37d93514c022585f4b3"
+  },
+  "fetched_at": "2026-09-14T14:50:26+00:00",
+  "source_snapshot_sha256": "f5727228bc7e4846af410606b1774a55b12e65abd6088b0277a81c43bb5c3eeb",
+  "images": {},
+  "local_only": true
+}

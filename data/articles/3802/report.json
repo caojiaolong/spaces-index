@@ -1,0 +1,39 @@
+{
+  "metadata": {
+    "id": "3802",
+    "title": "OCR技术浅探：3. 特征提取(2)",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/3802",
+    "date": "2016-06-18",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "source_dom_exact": true,
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "attributes_exact": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 10,
+    "display_formula_count": 3,
+    "image_count": 9,
+    "heading_count": 2,
+    "code_block_count": 0,
+    "source_text_sha256": "7c61e8758429a8fb0ba5b36bee8489048cbda10d8cbba8c6f3cf402e6219c688",
+    "output_text_sha256": "7c61e8758429a8fb0ba5b36bee8489048cbda10d8cbba8c6f3cf402e6219c688",
+    "latex_sha256": "3aa3a851195724aa2c5957229143976632efef59924418623fc388dd4d5217c2",
+    "body_sha256": "cc9b9678b3cb7f53af17ee347dc9448af9fb8ef045be795f6ac5b1cea5b79387",
+    "converter_version": 1,
+    "format": "html-v1",
+    "source_warnings": [],
+    "fallback_reason": "Standard Markdown round trip changed source structure",
+    "markdown_sha256": "06516b858eded6c2f59fd27e87138336cdef02929ac268936f178947903f5ab1"
+  },
+  "fetched_at": "2026-09-14T13:40:00+00:00",
+  "source_snapshot_sha256": "7086e11abbde3e6b70e858f9b8bfc1ee26cdbe767b0cde3213e6d6c92fea97f9",
+  "images": {},
+  "local_only": true
+}

@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "4503",
+    "title": "基于Xception的腾讯验证码识别（样本+代码）",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/4503",
+    "date": "2017-07-24",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 0,
+    "display_formula_count": 0,
+    "image_count": 0,
+    "heading_count": 3,
+    "code_block_count": 1,
+    "source_text_sha256": "4c2fb8ff362e192a1eefd74da5a42f18650be0cf1d104ad284a21f711a4e51de",
+    "output_text_sha256": "4c2fb8ff362e192a1eefd74da5a42f18650be0cf1d104ad284a21f711a4e51de",
+    "latex_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "body_sha256": "2974d2e317578e1ee7f85d842682bcdb16a21797efc839ae3d8acbe4b4a45a32",
+    "converter_version": 1,
+    "markdown_sha256": "bc8fb479cbbaf9995ac37db29bad1e057a3dc3f56c0d7bd787727f2a427f7b91"
+  },
+  "fetched_at": "2026-09-14T13:31:25+00:00",
+  "source_snapshot_sha256": "53c11ff5eb2ffe609497dc68b4c0e6fde13f0e9001e23ee493a63b6617aad8d2",
+  "images": {},
+  "local_only": true
+}

@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "11469",
+    "title": "让炼丹更科学一些（二）：将结论推广到无界域",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/11469",
+    "date": "2025-12-12",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 104,
+    "display_formula_count": 14,
+    "image_count": 0,
+    "heading_count": 7,
+    "code_block_count": 0,
+    "source_text_sha256": "e444e89391776ff13784cc2ec570ea13a3b634a5ec82e8d1f8f665ba9f62ca46",
+    "output_text_sha256": "e444e89391776ff13784cc2ec570ea13a3b634a5ec82e8d1f8f665ba9f62ca46",
+    "latex_sha256": "1752a35c51fc1672652ea5240369d6ba921766f0d86027b729d746922cfd9868",
+    "body_sha256": "2f6c8b68ed25195d647114be2b76df6e8b19eac0e75b445a6d746d76f6e89fa4",
+    "converter_version": 1,
+    "markdown_sha256": "dd9622d1b8a0412d0fe0deab6a523f762b36abc1a82afcddb4d9b26769ceb2f1"
+  },
+  "fetched_at": "2026-09-14T12:38:16+00:00",
+  "source_snapshot_sha256": "73e63b326fd49b484d58e3520deb3b64ccf21a84ed0a44396720f6516b02431e",
+  "images": {},
+  "local_only": true
+}

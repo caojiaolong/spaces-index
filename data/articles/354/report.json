@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "354",
+    "title": "《积分公式大全》电子书",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/354",
+    "date": "2010-01-23",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 1,
+    "display_formula_count": 0,
+    "image_count": 0,
+    "heading_count": 0,
+    "code_block_count": 0,
+    "source_text_sha256": "03dde659910ed24541611fe0f06354c49c9201aa018df179f80b4156185a4e4f",
+    "output_text_sha256": "03dde659910ed24541611fe0f06354c49c9201aa018df179f80b4156185a4e4f",
+    "latex_sha256": "4bc50f07a33c4fb57ac9943859021e7959dada9813f1aed1f08a4867573904a6",
+    "body_sha256": "3f20d40d8fb0671f961699ad1f69a197d169bc7a5b3dee5d4786dec2feb93e34",
+    "converter_version": 1,
+    "markdown_sha256": "33b69f2d0948b43809072fb5b5853ef2102f8c48f5a0b5b7d9807eb0fddb1885"
+  },
+  "fetched_at": "2026-09-14T14:43:24+00:00",
+  "source_snapshot_sha256": "1f2d6869025c28d81dc6ff74a4b5b4891aabaec7376952a104468495781f3139",
+  "images": {},
+  "local_only": true
+}

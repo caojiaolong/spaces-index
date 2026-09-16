@@ -1,0 +1,9 @@
+<div class="PostContent" id="PostContent">
+<p>今天在<a href="http://bbs.emath.ac.cn/thread-1670-1-1.html" target="_blank">数学研发论坛</a>看到了一道题目：</p><p>$$\sum_{j=0}^{j=n} (jx^j)={nx^{n+2}-(n+1)x^{n+1}+x}/{(x-1)^2}$$</p><p>这道题实际是求$x+2x^2+3x^3+...+nx^n$的求和公式而已。</p><p>本来呢用数学归纳法是十分简单的（数学归纳法对于证明简单，对于推导就不行了），但是题目说不能用数学归纳法。只好用以下方法了。</p><p>我们把它改写成：</p><p>$$\begin{aligned}x(1+2x+3x^2+...+nx^{n-1}) \\ \Rightarrow x[1+x+x^2+...+x^{n-1}+x(1+x+x^2+...+x^{n-2})+...+x^{n-1}] \\ \Rightarrow x[{x^n-1+x(x^{n-1}-1)+x^2(x^{n-2}-1)+...+x^{n-1}(x-1)}/{x-1}] \\ \Rightarrow x[{nx^n-(1+x+x^2+...+x^{n-1})}/{x-1}] \\ \Rightarrow x[{nx^n-{x^n-1}/{x-1}}/{x-1}]\end{aligned}$$<br/>
+$\Rightarrow x[{nx^{n+1}-(n+1)x^n+1}/{(x-1)^2}]</p><p>剩下来的就不写了。不用说了吧？</p>
+
+
+
+
+
+</div>

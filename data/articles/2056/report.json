@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "2056",
+    "title": "暑假结束了，上学去~",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/2056",
+    "date": "2013-08-31",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 0,
+    "display_formula_count": 0,
+    "image_count": 0,
+    "heading_count": 0,
+    "code_block_count": 0,
+    "source_text_sha256": "dda1769149334c3ac689371e504515c6b594b69cb606b839252ec5ed0a52be59",
+    "output_text_sha256": "dda1769149334c3ac689371e504515c6b594b69cb606b839252ec5ed0a52be59",
+    "latex_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "body_sha256": "b15027cc7ff83c4074dbbb91ace9c6ba75439e07474bd0b05105631ccedc152e",
+    "converter_version": 1,
+    "markdown_sha256": "d5cbbb361323032a7b027da1f2ae2da97e8571328023cce62fc26d063e4564de"
+  },
+  "fetched_at": "2026-09-14T14:00:25+00:00",
+  "source_snapshot_sha256": "6477a2e5fa1af87ace982868a2fc38390b5fbeeb0a1328d869556ff3c1266cd1",
+  "images": {},
+  "local_only": true
+}

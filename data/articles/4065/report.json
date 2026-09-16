@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "4065",
+    "title": "【外微分浅谈】6. 微分几何",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/4065",
+    "date": "2016-11-07",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 71,
+    "display_formula_count": 20,
+    "image_count": 0,
+    "heading_count": 3,
+    "code_block_count": 0,
+    "source_text_sha256": "b0d5ce1f6a650ce8ebc0289bd6cb68131de1d2c8ddd6a67ff2ce545db87b6528",
+    "output_text_sha256": "b0d5ce1f6a650ce8ebc0289bd6cb68131de1d2c8ddd6a67ff2ce545db87b6528",
+    "latex_sha256": "6509bccbf6efa8f6cb9adf732676fb4f7d8b4e63eb6835ab859c5db7549be655",
+    "body_sha256": "47db981f07339716f45a413a2e05470fd9dbc92ff9ad9c68beb75102b7e18cfc",
+    "converter_version": 1,
+    "markdown_sha256": "5100e56e9fdc3b99bc77af9fa24d439784b735c1dc1ba87c67c62cca0ec41764"
+  },
+  "fetched_at": "2026-09-14T13:36:19+00:00",
+  "source_snapshot_sha256": "8341c574f59d602d4343e3a9a4a4b115210c5027352f82025b8003dffbdee2e7",
+  "images": {},
+  "local_only": true
+}

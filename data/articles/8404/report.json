@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "8404",
+    "title": "变分自编码器（七）：球面上的VAE（vMF-VAE）",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/8404",
+    "date": "2021-05-17",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 90,
+    "display_formula_count": 14,
+    "image_count": 0,
+    "heading_count": 9,
+    "code_block_count": 2,
+    "source_text_sha256": "8de796a0cc8081aa82a932ee720aa51b5c8e811810309b9e49aed8e0526ef36e",
+    "output_text_sha256": "8de796a0cc8081aa82a932ee720aa51b5c8e811810309b9e49aed8e0526ef36e",
+    "latex_sha256": "52f87ab70e51cf6eb9ade4c33b1125d04ee6b55fea19fed514978b2206234e76",
+    "body_sha256": "2bf3d9815131323cc8eeebfae959572394b9bc1240be465b5e7de0b768e3508b",
+    "converter_version": 1,
+    "markdown_sha256": "459bf448ac47e9b3347c3b2f42e32c2a6beb78d8c19416e9860791eb3d9de2e7"
+  },
+  "fetched_at": "2026-09-14T13:06:40+00:00",
+  "source_snapshot_sha256": "223ab883f0c45c5c447ec923a465e298bb135dc233c4945896d7da781bb710e6",
+  "images": {},
+  "local_only": true
+}

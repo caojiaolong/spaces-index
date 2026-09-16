@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "5861",
+    "title": "玩转Keras之seq2seq自动生成标题",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/5861",
+    "date": "2018-09-01",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 45,
+    "display_formula_count": 4,
+    "image_count": 2,
+    "heading_count": 12,
+    "code_block_count": 0,
+    "source_text_sha256": "824183be24b19893c77a4b4b458c5894d861bdad26e15667809b5362aae339be",
+    "output_text_sha256": "824183be24b19893c77a4b4b458c5894d861bdad26e15667809b5362aae339be",
+    "latex_sha256": "f1b39d837e70c2888c60c46c6052e481b9dfcc9b2ed9b50eb6024c6ab82e80c1",
+    "body_sha256": "d2f3787642540798660867aae6ca9c719107f4671a9a53142a6461275f79acc5",
+    "converter_version": 1,
+    "markdown_sha256": "894eaafdf8ad422ed579d6688f665cf4979ae674b97b317adb058288b9e6b252"
+  },
+  "fetched_at": "2026-09-14T13:24:52+00:00",
+  "source_snapshot_sha256": "ee4d13f033c104e2a9ff54d3c4df53ae2c153b4a8b989d2ccb4328f6850eded5",
+  "images": {},
+  "local_only": true
+}

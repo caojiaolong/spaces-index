@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "80",
+    "title": "今天升级了Blog（欢迎大家来“顶”！）",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/80",
+    "date": "2009-07-27",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 0,
+    "display_formula_count": 0,
+    "image_count": 1,
+    "heading_count": 0,
+    "code_block_count": 0,
+    "source_text_sha256": "4d2b68e7d9f89cfc79885cfa0a8e2bd7ae95d236f781fb1404294b0757231fdb",
+    "output_text_sha256": "4d2b68e7d9f89cfc79885cfa0a8e2bd7ae95d236f781fb1404294b0757231fdb",
+    "latex_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "body_sha256": "112d25e922497dffad5894399046c13c643df1f15b7422a8791ee3be78d93ab1",
+    "converter_version": 1,
+    "markdown_sha256": "82421fbffa8bfe1f96bf66f5652a831f5981c33a077b81cc4641ca90bff2a13d"
+  },
+  "fetched_at": "2026-09-14T15:03:52+00:00",
+  "source_snapshot_sha256": "7673a19bbf8786b074ae527c2067d7d59e3d2be0d430ed71df965e8e4847ba91",
+  "images": {},
+  "local_only": true
+}

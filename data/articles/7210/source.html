@@ -1,0 +1,69 @@
+<div class="PostContent" id="PostContent">
+<p>在2018年的文章里<a href="/archives/6016" target="_blank">《f-GAN简介：GAN模型的生产车间》</a>笔者介绍了f-GAN，并评价其为GAN模型的“生产车间”，顾名思义，这是指它能按照固定的流程构造出很多不同形式的GAN模型来。前几天在arxiv上看到了新出的一篇论文<a href="https://papers.cool/arxiv/2002.00865" target="_blank">《Designing GANs: A Likelihood Ratio Approach》</a>（后面简称Designing GANs或原论文），发现它在做跟f-GAN同样的事情，但走的是一条截然不同的路（不过最后其实是殊途同归），整篇论文颇有意思，遂在此分享一番。</p><h2 id="f-GAN回顾">f-GAN回顾</h2><p>从<a href="/archives/6016" target="_blank">《f-GAN简介：GAN模型的生产车间》</a>中我们可以知道，f-GAN的首要步骤是找到满足如下条件的函数$f$：</p><blockquote><p>1、$f$是非负实数到实数的映射（$\mathbb{R}^* \to \mathbb{R}$）；</p><p>2、$f(1)=0$；</p><p>3、$f$是凸函数。</p></blockquote><p></p><p>找到这样的函数后，就可以构造一个概率$f$散度出来，然后用一种称为“凸共轭”的技术将$f$散度转化为另一种形式（带$\max$的形式，一般称为对偶形式），然后去$\min$这个散度，就得到一个min-max过程，这便诞生了一种GAN模型。顺便说一下，f-GAN代表了一系列GAN模型，但不包含WGAN，不过WGAN的推导其实也遵循着类似的步骤，只不过它用到的概率度量是Wasserstein距离，并且Wasserstein距离转化为对偶形式的方法不一样，具体细节可以参考<a href="/archives/6280" target="_blank">《从Wasserstein距离、对偶理论到WGAN》</a>。</p><p>f-GAN在逻辑上并没有问题，但是根据它提供的步骤，我们总是需要先找到一个$f$散度，然后再转化为对偶形式。问题就是：<font color="red">既然我们只需要它的对偶形式，为什么不直接在对偶空间里边分析呢？</font>这个疑问笔者之前在文章<a href="/archives/6163" target="_blank">《不用L约束又不会梯度消失的GAN，了解一下？》</a>，只不过在当时只是讨论了在对偶空间中概率散度的证明，并没有给出概率散度的构建方法，而Designing GANs正是补充了这一点。</p><h2 id="Designing GANs">Designing GANs</h2><p>在这一节里，我们会探讨Designing GANs里边的思路和方法。不同于原论文中比较冗余的教科书式推导，本文将会通过逐步反推的过程来导出Designing GANs的结果，笔者认为这样更容易理解一些。有意思的是，理解整个推导过程事实上只需要非常基础的微积分知识。</p><h3 id="Total Variation">Total Variation</h3><p>这里以一个称为Total Variation的概率散度为例子，让我们初步体会一下在对偶空间里边分析推导概率散度的要点。</p><p>首先，我们有<br/>
+\begin{equation}|p-q|=\max_{t\in[-1, 1]} (p - q)t=\max_{t\in[-1, 1]} pt - qt\label{eq:tv-base}\end{equation}<br/>
+所以对于概率分布$p(x),q(x)$，我们也有<br/>
+\begin{equation}|p(x)-q(x)|=\max_{t(x)\in[-1, 1]} p(x)t(x) - q(x)t(x)\end{equation}<br/>
+两边积分得（我们先不纠结积分和$\max$的交换性）<br/>
+\begin{equation}\begin{aligned}\int|p(x)-q(x)|dx=&amp;\,\max_{t(x)\in[-1, 1]} \int \big[p(x)t(x) - q(x)t(x)\big]dx\\<br/>
+=&amp;\,\max_{t(x)\in[-1, 1]} \mathbb{E}_{x\sim p(x)}[t(x)] - \mathbb{E}_{x\sim q(x)}[t(x)]<br/>
+\end{aligned}\end{equation}<br/>
+这里的$\int|p(x)-q(x)|dx$就称为两个概率分布的<a href="https://en.wikipedia.org/wiki/Total_variation" target="_blank">Total Variation</a>，所以我们就通过这样的过程导出了Total Variation的对偶形式。如果固定$p(x)$，让$q(x)$逼近$p(x)$，那么就可以最小化Total Variation，即<br/>
+\begin{equation}\min_{q(x)}\int|p(x)-q(x)|dx = \min_{q(x)}\max_{t(x)\in[-1, 1]} \mathbb{E}_{x\sim p(x)}[t(x)] - \mathbb{E}_{x\sim q(x)}[t(x)]\label{eq:tv-gan}\end{equation}<br/>
+这就得到了一种GAN形式。</p><p>回顾整个流程，抛开对Total Variation的先验认识，我们可以发现整个流程的核心其实是式$\eqref{eq:tv-base}$，有了式$\eqref{eq:tv-base}$之后，后面的事情都是顺理成章了。那么式$\eqref{eq:tv-base}$有什么特点呢？事实上，它可以一般化为：</p><blockquote class="cite"><div><strong>目标1</strong> 寻找函数$\phi(t),\psi(t)$以及某个值域$\Omega$，使得
+\begin{equation}d(p, q) = \max_{t\in\Omega} p\phi(t)+q\psi(t)\end{equation}
+并且有$d(p,q)\geq 0$以及$d(p,q)=0\Leftrightarrow p=q$。</div></blockquote><p>有了这样的$\phi(t),\psi(t)$之后，我们就可以导出跟$\eqref{eq:tv-gan}$类似的GAN出来：<br/>
+\begin{equation}\min_{q(x)}\int d(p(x), q(x)) dx = \min_{q(x)}\max_{t(x)\in \Omega} \mathbb{E}_{x\sim p(x)}[\phi(t(x))] + \mathbb{E}_{x\sim q(x)}[\psi(t(x))]\label{eq:gan}\end{equation}</p><h3 id="求导找极大值">求导找极大值</h3><p>注意到“<strong>目标1</strong>”里边$p,q$只是一个非负实数，$\phi(t),\psi(t)$也只是标量函数，所以<font color="red">整个目标纯粹是一元函数的极值问题</font>，应该说已经相当简化了。甚至地，设$r=q/p\in[0,+\infty)$，它还可以转化为更简洁的“<strong>目标2</strong>”：</p><blockquote class="cite"><div><strong>目标2</strong> 寻找函数$\phi(t),\psi(t)$以及某个值域$\Omega$，使得
+\begin{equation}d(r) = \max_{t\in\Omega} \phi(t)+r\psi(t)\end{equation}
+并且$d(r)$的最小值在$r=1$时取到。</div></blockquote><p>现在我们就来考察<strong>目标2</strong>，简单起见，我们假设$\phi(t),\psi(t)$都是光滑函数，这样一来$\phi(t)+r\psi(t)$的最大值我们就可以通过求导来解决。事实上这样的设计已经有足够的代表性了，当有部分点不光滑时，我们可以用光滑函数近似，然后取极限，比如$\text{sign}(x)=\lim\limits_{k\to+\infty}\tanh(kx)$。</p><p>基于这样的假设，要求$\phi(t)+r\psi(t)$的最大值，首先需要求导并让它等于0：<br/>
+\begin{equation}\phi'(t)+r\psi'(t)=0\quad\Rightarrow\quad r = -\frac{\phi'(t)}{\psi'(t)}\triangleq \omega^{-1}(t)\label{eq:max0}\end{equation}<br/>
+这里假设上述方程有唯一解，记为$t=\omega(r)$，所以最后$-\frac{\phi'(t)}{\psi'(t)}$相当于是$\omega^{-1}(t)$，它是$\omega(r)$的逆函数（再提醒，这里是逆函数，不是倒数）。同时，由于$r\in[0,+\infty)$，所以$t\in \Omega=\omega([0,\infty))$，也就是说$t$的取值范围$\Omega$就是$\omega(r)$的值域。此外，既然能求逆，说明$\omega(r)$要不就严格单调递增，要不就严格单调递减，不失一般性，这里假设$\omega(r)$是严格单调递增的，所以$\omega^{-1}(t)$也是严格单调递增的。</p><p>导数为0只能说明$t$是一个极值点，但还不能保证是极大值点，我们来确定它是最大值的条件，现在我们有<br/>
+\begin{equation}\phi'(t)+r\psi'(t)=\big(r-\omega^{-1}(t)\big)\psi'(t)\end{equation}<br/>
+注意到$r-\omega^{-1}(t)$是严格单调递减的，所以它只能有一个零点，并且它是<font color="red">先正后负</font>的形式，为了让整个导函数也有这个特性，我们设$\psi'(t)\triangleq \rho(t) &gt; 0$，也就是$\rho(t)$恒为正。这样一来，$\phi(t)+r\psi(t)$的导函数是连续的、先正后负的，所以$\phi(t)+r\psi(t)$只有一个极值点，且极值点为最大值点。</p><h3 id="求导找极小值">求导找极小值</h3><p>先汇总一下到目前为止的结果：我们假设$\omega(r)$是严格单调递增的，并且假设$\rho(t)$在$t\in \Omega$时是恒正的，然后满足如下关系：<br/>
+\begin{equation}\left\{\begin{aligned}\phi'(t)=&amp;\,-\omega^{-1}(t)\rho(t)\\<br/>
+\psi'(t)=&amp;\,\rho(t)\end{aligned}<br/>
+\right.\end{equation}<br/>
+这时候$\phi(t)+r\psi(t)$就存在唯一的极大值点$t=\omega(r)$，并且它也是最大值点，对于<strong>目标2</strong>来说这已经完成了一半的内容。现在来考察当$t=\omega(r)$时，$d(r)=\phi(\omega(r))+r\psi(\omega(r))$是否如我们所愿满足剩下的性质（即$d(r)$的最小值在$r=1$时取到）。</p><p>继续求导<br/>
+\begin{equation}d'(r)=\big[\phi'(\omega(r))+r\psi'(\omega(r))\big]\omega'(r)+\psi(\omega(r))=\psi(\omega(r))\label{eq:d-r}\end{equation}<br/>
+其中第二个等号是因为根据式$\eqref{eq:max0}$得方括号部分为0。现在只剩$\psi(\omega(r))$一项了，并且留意到我们假设了$\psi'(t)=\rho(t) &gt; 0$，所以$\psi(t)$是严格单调递增的，同时我们也假设了$\omega(r)$是严格单调递增的，所以复合函数$\psi(\omega(r))$也是严格单调递增的。</p><p>现在我们补充一个假设：$\psi(\omega(1))=0$，也就是说$d'(1)=0$，即$r=1$是$d(r)$的极值点，并且由于$\psi(\omega(r))$连续且严格单调递增，所以$d'(r)$是<font color="red">先负后正</font>，因此$r=1$是$d(r)$的极小值点，也是最小值点。</p><h3 id="GAN模型已经送达">GAN模型已经送达</h3><p>到这里，我们的推导已经完成了，我们得到的条件是：</p><blockquote class="cite"><div><strong>结论1</strong> 如果$\omega(r)$是严格单调递增的，$\Omega=\omega([0,+\infty))$，$\rho(t)$在$t\in \Omega$时是恒正的，并且满足如下关系：
+\begin{equation}\left\{\begin{aligned}\phi'(t)=&amp;\,-\omega^{-1}(t)\rho(t)\\
+\psi'(t)=&amp;\,\rho(t)\end{aligned}
+\right.\end{equation}
+以及条件$\psi(\omega(1))=0$，具备这些条件的的$\phi(t),\psi(t)$就可以用来构建如$\eqref{eq:gan}$的GAN模型。</div></blockquote><p>比如，我们来验算一下原始版本的GAN：<br/>
+\begin{equation}\begin{aligned}&amp;\,\min_{q(x)}\max_{t(x)} \mathbb{E}_{x\sim p(x)}[\log (1-\sigma(t(x)))] + \mathbb{E}_{x\sim q(x)}[\log \sigma(t(x))]\\<br/>
+=&amp;\,\min_{q(x)}\max_{t(x)} \mathbb{E}_{x\sim p(x)}\left[-\log \left(1+e^{t(x)}\right)\right] + \mathbb{E}_{x\sim q(x)}\left[-\log \left(1+e^{-t(x)}\right)\right]<br/>
+\end{aligned}\label{eq:ori-gan}\end{equation}<br/>
+其中$\sigma(\cdot)$是sigmoid激活函数，上述是<u>让真样本的标签为0、假样本的标签为1的二分类交叉熵</u>，等号右边是化简后的结果，由此观之$\phi(t)=-\log \left(1+e^t\right)$，$\psi(t)=-\log \left(1+e^{-t}\right)$，我们做个小调整，让$\psi(t)=\log 2-\log \left(1+e^{-t}\right)$，显然这不影响原优化问题。现在我们有$\rho(t)=\psi'(t)=\frac{1}{1+e^t}$，显然它是恒大于0的，以及$\omega^{-1}(t)=-\phi'(t)/\psi'(t)=e^t$，即$t=\omega(r)=\log r$，显然它也是严格单调递增的，最后验算$\psi(\omega(1))$发现它确实等于0。</p><p>由这个例子我们可以得到两点推论：</p><blockquote><p>1、$\psi(\omega(1))=0$这个条件并不是必须的，因为就算一开始不满足$\psi(\omega(1))=0$，我我们可以往$\psi(t)$里边加上一个常数，使得它满足$\psi(\omega(1))=0$，而加上常数不会改变原来的优化问题；</p><p>2、如果调换一下标签，让真样本的标签为1、假样本的标签为0，那么得到的性质刚好相反，即算出来的$\rho(t)$是恒小于0的，$\omega(r)$的严格单调递减的。这说明，本文给出的<strong>结论1</strong>是构成GAN的充分条件而不是必要条件。</p></blockquote><p>不同形式的$\rho(t),\omega(r)$对于同一个GAN模型，比如我们选择$t=\omega(r)=\frac{r}{r+1}$，这时候$r=\omega^{-1}(t)=\frac{t}{1-t}$，然后我们选择$\rho(t)=\frac{1}{t}$，那么：<br/>
+\begin{equation}\left\{\begin{aligned}\phi'(t)=&amp;\,-\frac{t}{1-t}\times\frac{1}{t}\\<br/>
+\psi'(t)=&amp;\,\frac{1}{t}\end{aligned}<br/>
+\right.\end{equation}<br/>
+从而积分得到$\phi(t)=\log(1-t),\psi(t)$。此外注意到$\Omega=\omega([0,+\infty))=[0,1)$，并且$\rho(t)=\frac{1}{t}$排除了$t=0$，所以可行域为$(0,1)$（事实上对于实验来说，边界点可以忽略），即导出的GAN为<br/>
+\begin{equation}\min_{q(x)}\max_{t(x)\in (0,1)} \mathbb{E}_{x\sim p(x)}[\log (1-t(x))] + \mathbb{E}_{x\sim q(x)}[\log t(x)]\end{equation}<br/>
+这跟原始GAN是等价的，只不过没有显式写出使得$t(x)\in (0,1)$的激活函数。</p><p>再算一个例子。选择$t=\omega(r)=\frac{1}{2}\log r$，即$r=\omega^{-1}(t)=e^{2t}$，并且选择$\rho(t)=e^{-t}$，可以算得$\phi(t)=-e^t,\psi(t)=-e^{-t}$，因此得到一个GAN变种：<br/>
+\begin{equation}\min_{q(x)}\max_{t(x)} \mathbb{E}_{x\sim p(x)}\left[-e^{t(x)}\right] + \mathbb{E}_{x\sim q(x)}\left[-e^{-t(x)}\right]\end{equation}</p><p>原论文还用上述<strong>结论</strong>算了很多稀奇古怪的GAN，有兴趣的读者可以自行去阅读原论文，这里就不再重复推导了。</p><h2 id="思考与延伸">思考与延伸</h2><p>本文的方法与之前的f-GAN有什么关联吗？本文的方法还有什么推广吗？此处给出笔者自己的答案。</p><h3 id="与f-GAN的联系">与f-GAN的联系</h3><p>在上面的推导中，$\max$这一步的结果$d(r)$，其中$r=1$是$d(r)$的最小值点，回顾<strong>目标1</strong>，然后将$d(r)$代回到式$\eqref{eq:gan}$中，就会发现我们优化的目标实际上是：<br/>
+\begin{equation}\int p(x) d\left(\frac{q(x)}{p(x)}\right)dx\label{eq:f-gan}\end{equation}<br/>
+是不是有点眼熟？没错，它看起来就像是$f$散度的定义。并且回顾$\eqref{eq:d-r}$处的推导，我们知道$d(r)$的导数是严格单调递增的，这说明$d(r)$是凸函数，所以上式确实就是一个$f$散度！也就是说，虽然这篇论文的作者走了一条看起来截然不同的路子，但实际上它的结果都可以通过f-GAN的结果导出来，并没有带来新的东西。</p><p>那这篇论文是否完全等价于f-GAN呢？很遗憾，还不是，原论文所做的结果，只是f-GAN的一个子集，换句话说，它能导出的GAN模型变种，f-GAN都可以导出来，但是f-GAN能导出的GAN模型变种，它却不一定能导出来。</p><p>因为回顾整个推导过程，它核心思想是<font color="red"><u>直接将“点”的度量公式直接推广到“函数”</u></font>，比如开头的$|p-q|=0\Leftrightarrow p=q$推广到$\int |p(x)-q(x)|dx=0\Leftrightarrow p(x)=q(x)$，而正因为这个思想，所以所有推导过程都可以只在一元微积分下进行。但问题是，并不是所有的$\int d(p(x),q(x))dx=0\Leftrightarrow p(x)=q(x)$的结论都意味着有$d(p,q)=0\Leftrightarrow p=q$，比如KL散度为$\int p(x)\log \frac{p(x)}{q(x)}dx$，它等于0意味着$p(x)=q(x)$，但是$p\log\frac{p}{q}=0$不意味着一定$p=q$，因此，原论文至少没法导出KL散度对应的GAN出来。</p><p>这样看来，原论文是不是就没有价值了？如果单看“产品”的话，确实是没有价值，因为它能产出的，f-GAN都能产出。但是我们不应当只关心“产品”，我们有时候也要关心“生产过程”。事实上，<strong><font color="red">笔者认为原论文的学术价值在于提供了一种直接在对偶空间中分析和发现GAN的参考方法，为我们了解GAN模型多添加了一个角度。</font></strong></p><h3 id="其实还可以推广">其实还可以推广</h3><p>不管是f-GAN还是原论文，导出的GAN模型的生成器和判别器的loss都是同一个形式，只不过方向不同。但事实上，目前我们用得比较多的GAN变种，生成器和判别器的loss都不是同一个，比如原始GAN的一个更常用的形式是：<br/>
+\begin{equation}\begin{aligned}&amp;\,\max_{t(x)} \mathbb{E}_{x\sim p(x)}[\log (1-\sigma(t(x)))] + \mathbb{E}_{x\sim q(x)}[\log \sigma(t(x))]\\<br/>
+&amp;\,\min_{q(x)} \mathbb{E}_{x\sim q(x)}[-\log （1-\sigma(t(x))）]<br/>
+\end{aligned}\label{eq:ori-gan-2}\end{equation}<br/>
+同样的例子还包括LSGAN、Hinge GAN等等。所以如果只考虑生成器和判别器的loss都是同样形式的变种，其实还是不够充分的。</p><p>其实，这篇论文还可以再前进一步，得到比f-GAN更多的结果的，很可惜，作者们似乎把自己的思维绕到死胡同里边去了，并没有察觉到这一点。事实上做到这一点非常简单：在上面的过程中，通过$\max\limits_{t\in\Omega} \phi(t)+r\psi(t)$这一步我们求出了$t=\omega(r)$，然后代回原来的$\phi(t)+r\psi(t)$得到$d(r)$，但事实上我们没必要代回原来的式子呀，其实可以代回任意形如$\alpha(t)+r\beta(t)$的式子，根据式$\eqref{eq:f-gan}$并结合开头列举的$f$散度的要求，只要$d(r)=\alpha(\omega(r))+r\beta(\omega(r))$是一个凸函数就行了（$d(1)=0$可以通过平移来实现），或者根据前面的推理$d(r)$是以$r=1$为最小值的任意函数也行。综合起来就是：</p><blockquote class="cite"><div><strong>结论2</strong> 如果$\omega(r)$是严格单调递增的，$\Omega=\omega([0,+\infty))$，$\rho(t)$在$t\in \Omega$时是恒正的，并且满足如下关系：
+\begin{equation}\left\{\begin{aligned}\phi'(t)=&amp;\,-\omega^{-1}(t)\rho(t)\\
+\psi'(t)=&amp;\,\rho(t)\end{aligned}
+\right.\end{equation}
+以及函数$\alpha(t),\beta(t)$使得$d(r)=\alpha(\omega(r))+r\beta(\omega(r))$是一个凸函数，或者使得$d(r)$是以$r=1$为最小值的函数，具备这些条件的的$\phi(t),\psi(t),\alpha(t),\beta(t)$就可以用来构建如下的GAN模型（其中$\min\limits_{q(x)}$已经省去了与$q(x)$无关的$\alpha(t)$部分）：
+\begin{equation}\begin{aligned}\max_{t(x)\in \Omega} &amp;\,\mathbb{E}_{x\sim p(x)}[\phi(t(x))] + \mathbb{E}_{x\sim q(x)}[\psi(t(x))]\\
+\min_{q(x)}&amp;\,\mathbb{E}_{x\sim q(x)}[\beta(t(x))]
+\end{aligned}\end{equation}</div></blockquote><h3 id="推广后的一些例子">推广后的一些例子</h3><p>用<strong>结论2</strong>来构造GAN就相当自由了，它可以构造出很多f-GAN找不出来的例子，因为它允许生成器和判别器的loss不一致。</p><p>比如在算原始GAN的时候，我们得到$t=\omega(r)=\log r$，而$r\log r$刚好就是凸函数，所以可以让$\alpha(t)=0,\beta(t)=t$（注意$\alpha(t)$可以为0，$\beta(t)$不可以，想想为什么？），得到$d(r)=r\log r$，这时候的GAN为<br/>
+\begin{equation}\begin{aligned}\max_{t(x)} &amp;\,\mathbb{E}_{x\sim p(x)}[\log (1-\sigma(t(x)))] + \mathbb{E}_{x\sim q(x)}[\log \sigma(t(x))]\\<br/>
+\min_{q(x)}&amp;\,\mathbb{E}_{x\sim q(x)}[t(x)]<br/>
+\end{aligned}\end{equation}<br/>
+这便是一个挺好用的GAN变种。还有，既然$r\log r$是凸函数，那么$(1+r)\log(1+r)$也是，那么可以让$\alpha(t)=\beta(t)=\log(1+r)=\log\left(1+e^t\right)$，正好对应$d(r)=(r+1)\log(1+r)$，并且$\log\left(1+e^t\right)=-\log(1-\sigma(t))$，所以这时候对应的GAN就是$\eqref{eq:ori-gan-2}$，这才是更常用的原始版本的GAN，比$\eqref{eq:ori-gan}$更好用。</p><p>我们再举一个例子。取$t=\omega(r)=\frac{a + b r}{1 + r}$，这里约定$b &gt; a$，那么$\Omega=(a,b)$（还是先不管边界点），并且$r=\omega^{-1}(t)=\frac{t-a}{b-t}$。我们取$\rho(t)=2(b-t)$，那么它满足恒正的要求。这样解得$\phi(t)=-(t-a)^2,\psi(t)=-(t-b)^2$。接着取$d(r)=\frac{(r-1)^2}{r+1}$，它显然是在$r=1$处取到最小值，然后设$\alpha(t)=\beta(t)$，试图反推$\beta(t)$的形式，即$d(r)=(1+r)\beta(t)$，推出$\beta(t)=\left(\frac{r-1}{r+1}\right)^2$，代入$r=\frac{t-a}{b-t}$得到$\beta(t)=\left(\frac{2}{b-a}t-\frac{a+b}{b-a}\right)^2$，简单起见我们可以让$b-a=2$，那么$\beta(t)=\left(t-\frac{a+b}{2}\right)^2$。最后得出的GAN形式为<br/>
+\begin{equation}\begin{aligned}\max_{t(x)\in (a,b)} &amp;\,\mathbb{E}_{x\sim p(x)}\left[-(t-a)^2\right] + \mathbb{E}_{x\sim q(x)}\left[-(t-b)^2\right]\\<br/>
+\min_{q(x)}&amp;\,\mathbb{E}_{x\sim q(x)}\left[\left(t-\frac{a+b}{2}\right)^2\right]<br/>
+\end{aligned}\end{equation}<br/>
+这其实就是LSGAN。读者可能会困惑LSGAN里边没有$t(x)\in (a,b)$这个限制呀，这里怎么会有？事实上这个限制是可以去掉的，因为去掉这个限制后，对应的最优解还是在$(a,b)$里边。</p><p>很显然，这些基于推广后的<strong>结论2</strong>所得到的GAN的变种是很有价值的，而且这些GAN变种是f-GAN没法得到的，因此如果原论文能补充这部分推广，那显得很漂亮了。</p><h2 id="再来个小结">再来个小结</h2><p>本文分享了一篇直接在对偶空间设计GAN模型的论文，并且分析了它与f-GAN的联系，接着笔者对原论文的结果进行了简单的推广，使得它能设计更多样的GAN模型。</p><p>最后，读者可能会疑问：<font color="red">f-GAN那里搞了那么多GAN出来，现在你这篇论文又搞那么多GAN出来，我们来来去去用的无非就那几个，搞那么多有什么价值呢？</font>这个问题见仁见智了，这类工作更重要的应该是方法上的价值，实际应用的价值可能不会很大。不过笔者更想说的是：</p><blockquote class="cite"><div>我也没说它有什么价值呀，我只是觉得它比较有意思罢了～</div></blockquote>
+
+
+
+
+
+</div>

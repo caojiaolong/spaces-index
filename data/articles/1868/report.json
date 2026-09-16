@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "1868",
+    "title": "角的疑惑——为什么使用弧度？",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/1868",
+    "date": "2013-01-07",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 12,
+    "display_formula_count": 6,
+    "image_count": 0,
+    "heading_count": 2,
+    "code_block_count": 0,
+    "source_text_sha256": "fd795149051d00b745c6601d1997a1c908f047be6cdc252587ce40e47d0164e6",
+    "output_text_sha256": "fd795149051d00b745c6601d1997a1c908f047be6cdc252587ce40e47d0164e6",
+    "latex_sha256": "2547e276d84bca9c71b1482cf7dcf2351c2637e18cb3a7c6cf717293c39b6c28",
+    "body_sha256": "c6773dfc528153a2b6c31f6278319140b7d184aa2bde87242f6814356b630fc7",
+    "converter_version": 1,
+    "markdown_sha256": "5df1e3f7791adc180fa4ca16cc80050ddc9106469137a161e31ead14136c0950"
+  },
+  "fetched_at": "2026-09-14T14:06:31+00:00",
+  "source_snapshot_sha256": "1f69e982e1848a20423619ad957024448ed2ec77a890ff9628e7fb3d6cb12905",
+  "images": {},
+  "local_only": true
+}

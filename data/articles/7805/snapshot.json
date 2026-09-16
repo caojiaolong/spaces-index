@@ -1,0 +1,17 @@
+{
+  "metadata": {
+    "id": "7805",
+    "title": "如何划分一个跟测试集更接近的验证集？",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/7805",
+    "date": "2020-10-16",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "fetched_at": "2026-09-14T13:10:48+00:00",
+  "source_snapshot_sha256": "5a1f07fd6904382d55897b7ea1e34db4858e569e9092e7ee370312f5df16f58d",
+  "validators": {
+    "etag": null,
+    "last_modified": null
+  }
+}

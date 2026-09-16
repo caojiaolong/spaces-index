@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "6469",
+    "title": "圆周率节快乐！|| 原来已经写了十年博客～",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/6469",
+    "date": "2019-03-14",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 18,
+    "display_formula_count": 5,
+    "image_count": 3,
+    "heading_count": 2,
+    "code_block_count": 0,
+    "source_text_sha256": "4f9440bd948415448ddc4966270b552f1484daaa1cbf770ea04ad26915a2f43d",
+    "output_text_sha256": "4f9440bd948415448ddc4966270b552f1484daaa1cbf770ea04ad26915a2f43d",
+    "latex_sha256": "ab92bad4bdc76856ad2e2d0d974d5d5fbf60ffa98513aee5be954d7b7fedbdbc",
+    "body_sha256": "7e1e862dd1bdf6c026b26e35629a038a246c0004384128e51b48cd2f75106522",
+    "converter_version": 1,
+    "markdown_sha256": "805b91ad953e6305b0f9e6b3ee074c651943a31a5c8eb93170d11ca3516f45bc"
+  },
+  "fetched_at": "2026-09-14T13:20:55+00:00",
+  "source_snapshot_sha256": "03cd74078727986e969c8cba1c6d6def9a083440ce0b63cac8ce2663e9854b51",
+  "images": {},
+  "local_only": true
+}

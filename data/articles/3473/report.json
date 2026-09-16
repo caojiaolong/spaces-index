@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "3473",
+    "title": "2015诺贝尔医学奖：中国人在内",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/3473",
+    "date": "2015-10-05",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 0,
+    "display_formula_count": 0,
+    "image_count": 2,
+    "heading_count": 0,
+    "code_block_count": 0,
+    "source_text_sha256": "abc28d7b72886c875d1cd408e181f8eff7b0228e5964363236a4b35d1a2e940e",
+    "output_text_sha256": "abc28d7b72886c875d1cd408e181f8eff7b0228e5964363236a4b35d1a2e940e",
+    "latex_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "body_sha256": "654dcff526d5fd1e896f1ef5364ad10f676a096b24695c1300b4695107bbb67a",
+    "converter_version": 1,
+    "markdown_sha256": "6765ceb056ba6e6115871bbf538ae53a3c2b04eef2034b33492abe97d6b034aa"
+  },
+  "fetched_at": "2026-09-14T13:44:42+00:00",
+  "source_snapshot_sha256": "a70639ad0d640b5e65e7d9cda976b0aeb767c09f023bc8e1fe0b3db63cb79de6",
+  "images": {},
+  "local_only": true
+}

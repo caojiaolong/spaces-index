@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "232",
+    "title": "沉痛,默哀！中国科学巨星钱学森逝世",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/232",
+    "date": "2009-10-31",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 0,
+    "display_formula_count": 0,
+    "image_count": 2,
+    "heading_count": 0,
+    "code_block_count": 0,
+    "source_text_sha256": "037d9736791c0dff1758795630de37f47dc7b8bc920863550c62ed22339660dc",
+    "output_text_sha256": "037d9736791c0dff1758795630de37f47dc7b8bc920863550c62ed22339660dc",
+    "latex_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "body_sha256": "b5352c6e83614cad36b4f503868f53d96d1621a973fa101327d695202d2ac4f0",
+    "converter_version": 1,
+    "markdown_sha256": "143d1f2dc394a23179e1a5ce73a5e287030537a778fa7f82dc3c79cba9c43468"
+  },
+  "fetched_at": "2026-09-14T14:47:16+00:00",
+  "source_snapshot_sha256": "a805ad2f80d0bb94d03df8c1754905c6fb442883c61f20910a5bbd75028bb84b",
+  "images": {},
+  "local_only": true
+}

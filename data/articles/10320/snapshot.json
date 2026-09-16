@@ -1,0 +1,17 @@
+{
+  "metadata": {
+    "id": "10320",
+    "title": "让MathJax更好地兼容谷歌翻译和延时加载",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/10320",
+    "date": "2024-08-15",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "fetched_at": "2026-09-14T12:47:05+00:00",
+  "source_snapshot_sha256": "2f700897bb4109d0e6e42fdcdaaa97eb77a5c0bcc2226dacebee7d7cc73bc6af",
+  "validators": {
+    "etag": null,
+    "last_modified": null
+  }
+}

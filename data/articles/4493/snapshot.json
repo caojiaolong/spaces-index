@@ -1,0 +1,17 @@
+{
+  "metadata": {
+    "id": "4493",
+    "title": "Keras中自定义复杂的loss函数",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/4493",
+    "date": "2017-07-22",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "fetched_at": "2026-09-14T13:31:32+00:00",
+  "source_snapshot_sha256": "d3402c9bd93820dc40c1598f1fb7da288668624be4ba70b7534f394c89237e93",
+  "validators": {
+    "etag": null,
+    "last_modified": null
+  }
+}

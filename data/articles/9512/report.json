@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "9512",
+    "title": "Tiger：一个“抠”到极致的优化器",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/9512",
+    "date": "2023-03-07",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 75,
+    "display_formula_count": 10,
+    "image_count": 4,
+    "heading_count": 11,
+    "code_block_count": 0,
+    "source_text_sha256": "dc0776e8edcd19544e6758e934d824d1bd032ac70457e06e473aba393994daca",
+    "output_text_sha256": "dc0776e8edcd19544e6758e934d824d1bd032ac70457e06e473aba393994daca",
+    "latex_sha256": "7ee490231fc87d6c7fa55845c8ae00abc720b2a30881dfb7f14534340dc1b360",
+    "body_sha256": "6cc0c5edcadcd90e53994e6387bfd03aab194d543f009f14de8208d5735da6d6",
+    "converter_version": 1,
+    "markdown_sha256": "46a1202dcb37668ca761a083eb980dcf72631010d78590179a463759a91124f9"
+  },
+  "fetched_at": "2026-09-14T12:55:17+00:00",
+  "source_snapshot_sha256": "c4429f15345b34659c7ee19a5a2a5c3516a19279da9becc397da623cf2614180",
+  "images": {},
+  "local_only": true
+}

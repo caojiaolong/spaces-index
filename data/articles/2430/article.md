@@ -1,0 +1,62 @@
+# 一维弹簧的运动（上）
+
+> 作者：苏剑林 · 科学空间 · 2014-03-11
+>
+> 原文：<https://spaces.ac.cn/archives/2430>
+>
+> 原文许可：[CC BY-NC-ND 2.5 CN（署名-非商业性使用-禁止演绎）](https://creativecommons.org/licenses/by-nc-nd/2.5/cn/)。
+>
+> 本文件由 spaces-index 非官方、非商业项目进行必要的 HTML → Markdown 格式转换；正文未做摘要、润色、翻译或重组。项目不代表作者，也不表示作者为项目背书。
+>
+> 署名及附加许可说明不代表已获得作者额外授权。第三方素材权利依其原有声明。
+>
+> 原站转载与引用说明：[科学空间 FAQ](https://spaces.ac.cn/archives/6508#%E6%96%87%E7%AB%A0%E5%A6%82%E4%BD%95%E8%BD%AC%E8%BD%BD/%E5%BC%95%E7%94%A8)
+
+---
+
+我们通常用一个波动方程来描述弦的振动，但是，弦的振动是二维的，也就是说，它的“波”是在垂直方向的位移。让我们来考虑一根一端固定的一维理想弹簧，胡克系数为$k$，它的松弛状态是均匀的，线密度是$\rho$，长度是$l$，质量是$m$。
+
+<strong>如何弹？</strong>
+我们要分析这根弹簧的运动，即给定弹簧的初始状态，看弹簧的密度如何变化，这种情况类似于“横波”。但是，弹簧本身是连续介质，这是我们不熟悉的，但是我们可以将它离散化，将它看成无数个小质点的弹簧链。如下图
+
+[![离散的弹簧](<https://spaces.ac.cn/usr/uploads/2014/03/3509583494.png>)](<https://spaces.ac.cn/usr/uploads/2014/03/3509583494.png>)
+
+离散的弹簧
+
+上图是将松弛状态的弹簧等分为n份，假设每份的质量$\Delta m=\frac{m}{n}$集中到右端的质点，每两个质点由一根长度为$\Delta l=\frac{l}{n}$的弹簧连着。由于弹性系数跟长度成反比，因此每根小弹簧的弹性系数为$nk$。由于现在已经变成了质点系，因此可以用通常的作用量进行分析，设第$i$个质点对应的坐标为$x_i$，
+
+$$S=\int \left\{\frac{1}{2}\frac{m}{n}\left[\sum_{i=1}^n\left(\frac{dx_i}{dt}\right)^2\right]-\frac{1}{2}nk\left[\sum_{i=1}^n\left(x_i-x_{i-1}-\frac{l}{n}\right)^2\right]\right\}dt$$
+
+由于
+$$\sum_{i=1}^n\left(x_i-x_{i-1}-\frac{l}{n}\right)^2=\sum_{i=1}^n\left[\left(x_i-x_{i-1}\right)^2+\frac{l^2}{n^2}-\frac{2l}{n}\left(x_i-x_{i-1}\right)\right]$$
+由于涉及大量的质点，所以我们要计算的只是包含大量质点的项，上式的后两项，常数项是没有意义的，而最后的项累加成终点和起点之差，这一项也不会产生实际效果。因此，有效作用量为
+$$S=\int \left\{\frac{m}{2}\frac{1}{n}\left[\sum_{i=1}^n\left(\frac{dx_i}{dt}\right)^2\right]-\frac{k}{2}\frac{1}{n}\left[\sum_{i=1}^n\left(\frac{x_i-x_{i-1}}{1/n}\right)^2\right]\right\}dt$$
+
+考虑$n\to\infty$的极限，就会发现，上面的结果就变成了我们熟悉的定积分的定义！因此，我们先记$x_i$为$X(i)$，引入参量$\xi\in[0,1]$，用$\xi$代替$n$作为粒子数的标记，即$\xi(i)=\frac{i}{n}$。这样，便可把$X(i)$记为$X(\xi)$，同时，它也是时间的函数，因此$X=X(\xi,t)$，上述作用量的极限就是
+$$S=\int \left\{\frac{m}{2}\left[\int_0^1\left(\frac{\partial X}{\partial t}\right)^2d\xi\right]-\frac{k}{2}\left[\int_0^1\left(\frac{\partial X}{\partial \xi}\right)^2 d\xi\right]\right\}dt$$
+整理成
+$$S=\int dt \int_0^1 d\xi\left[\frac{m}{2}\left(\frac{\partial X}{\partial t}\right)^2-\frac{k}{2}\left(\frac{\partial X}{\partial \xi}\right)^2 \right]$$
+
+变分上面的作用量，我们就得到波动方程
+$$m\frac{\partial^2 X}{\partial t^2}=k\frac{\partial^2 X}{\partial \xi^2}$$
+
+我们发现，考虑$n\to\infty$的极限，原来由无数个变量的常微分方程组，变成了一个二元的偏微分方程。这是基本的常识，即偏微分方程就相当于无限个常微分方程的方程组。这也是从粒子过渡到场论的基本思想。这也难怪偏微分方程会困难，毕竟有时候求解一个常微分方程都不容易了。上述方程形式上和一般的波动方程相同，只是变量的含义有所变化。我们再来考虑一下$\xi$的意义，其实，$\xi$正比于原来的$i$，而$i$则正比于质点$i$所在点到原点这一段距离的弹簧质量。也就是说，如果$X=X(\xi,t)$，那就意味着原点到$X$点的这段弹簧的质量为$m\xi$。
+
+<strong>弹成怎样？</strong>
+现在我们可以来解上面的方程了，这是基本的双曲型偏微分方程，其解还是挺容易的。将它拆成
+$$\left(\frac{\partial}{\partial \xi}-\frac{\partial}{\beta\partial t}\right)\left(\frac{\partial}{\partial \xi}+\frac{\partial}{\beta\partial t}\right)X=0,\beta^2=\frac{k}{m}$$
+作变换$u=\xi+\beta t,v=\xi-\beta t$，得到
+$$\begin{aligned}2\frac{\partial}{\partial u}=\frac{\partial}{\partial \xi}+\frac{\partial}{\beta\partial t}\\
+2\frac{\partial}{\partial v}=\frac{\partial}{\partial \xi}-\frac{\partial}{\beta\partial t}\end{aligned}$$
+原方程就变为
+$$\frac{\partial^2 X}{\partial u \partial v}=0$$
+其通解为
+$$X=F(u)+H(v)=F(\xi+\beta t)+H(\xi-\beta t)$$
+其中$F,H$是任意函数。上面代表着一般的一维波动，需要给出初始状态，我们才可以进一步解下去。假设
+$$X|_{t=0}=X_0(\xi),\left.\frac{\partial X}{\partial t}\right|_{t=0}=X_1(\xi)$$
+那么可以解出（只需要把通解对t求导，然后联立通解即可）
+$$X(\xi,t)=\frac{1}{2}\left[X_0(\xi+\beta t)+X_0(\xi-\beta t)\right]+\frac{1}{2\beta}\int_{\xi-\beta t}^{\xi+\beta t} X_1 (s)ds$$
+如果只是由静止的某个状态释放，那么就有
+$$X(\xi,t)=\frac{1}{2}\left[X_0(\xi+\beta t)+X_0(\xi-\beta t)\right]$$
+
+但是，这个解是有些问题的。具体分析和例子演示，我们放在下篇文章。

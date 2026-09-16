@@ -1,0 +1,41 @@
+{
+  "metadata": {
+    "id": "861",
+    "title": "《方程与宇宙》:拉格朗日点的点点滴滴(四)",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/861",
+    "date": "2010-08-15",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "source_dom_exact": true,
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "attributes_exact": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 8,
+    "display_formula_count": 6,
+    "image_count": 5,
+    "heading_count": 0,
+    "code_block_count": 0,
+    "source_text_sha256": "5d7e3847c31b780b676641c69950dcdc011d0d9220802b57c70460a443be6e06",
+    "output_text_sha256": "5d7e3847c31b780b676641c69950dcdc011d0d9220802b57c70460a443be6e06",
+    "latex_sha256": "e9c96fdb83e49992f789ca37b8b8dd9952ce6d4d71ceeaf73a99c1647c66bd9d",
+    "body_sha256": "f55a042eaf26dcf04b4cc09cd2aa3f29145c15c8a6117cba4504328980d00274",
+    "converter_version": 1,
+    "format": "html-v1",
+    "source_warnings": [
+      "原文含旧式或脚本嵌入内容，已保留其位置和源码；预览不执行。"
+    ],
+    "fallback_reason": "Unsupported body element: embed",
+    "markdown_sha256": "ca2899055ef0ed489bc87e6b6b9c085c0ad5b51d567a49bd05b4c2bb5a5888e7"
+  },
+  "fetched_at": "2026-09-14T14:31:50+00:00",
+  "source_snapshot_sha256": "1207fe4daf1b2e2d3351c1c13f5d19309bc859448b1b55212bd65567e5f7899d",
+  "images": {},
+  "local_only": true
+}

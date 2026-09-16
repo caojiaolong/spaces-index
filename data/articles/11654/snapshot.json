@@ -1,0 +1,17 @@
+{
+  "metadata": {
+    "id": "11654",
+    "title": "基于流式幂迭代的Muon实现：1. 初识",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/11654",
+    "date": "2026-03-12",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "fetched_at": "2026-09-14T12:36:45+00:00",
+  "source_snapshot_sha256": "cb391ece8b489b758e43769a58a26328671c345c0d7f42537831a69cfa38cc8d",
+  "validators": {
+    "etag": null,
+    "last_modified": null
+  }
+}

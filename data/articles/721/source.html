@@ -1,0 +1,19 @@
+<div class="PostContent" id="PostContent">
+<p></p><div class="pic-container" style="float:right; margin: 5px auto 2px 1px"><div style="display: inline-block; background-color: #fff"><div class="typecho-caption aligncenter" style="max-width: 200px; margin: 0 0 0 8px"><div style="margin: 5px"><a href="/attachment/722/" title="太阳.jpg"><img alt="太阳" src="/usr/uploads/2010/07/3353909567.jpg" style="max-width: 100%"/></a></div><p>太阳</p></div></div></div><p><font color="red">为了准备IOAA，同时也加深对天体物理的理解，所以就系统地学习一下天体物理学了。今天看到“太阳”这一章，并由此简单估算了一下太阳的中心压强和温度。</font></p><p>天体物理学给出了关于恒星结构的一些方程。假设存在一颗各项同性的球形恒星，则有<br/>
+$\frac{dm(r)}{dr}=4\pi r^2 \rho(r)$————质量方程<br/>
+其中m(r)是与恒星球心距离为r的一个球形区域内的总质量，$\rho(r)$是距离球心r处的物质的密度。我们也可以写成积分的形式<br/>
+$$m(r)=\int_0^R 4\pi r^2 \rho(r)dr$$<br/>
+其中R是恒星半径。这个方程的意思其实就是每一个壳层的质量叠加，所以就不详细推导了。</p><p>另外，对于恒星的压强，还给出了方程：<br/>
+$\frac{dP(r)}{dr}=-\frac{Gm(r)}{r^2}\rho(r)=$————流体静力学平衡方程<br/>
+因为$\frac{Gm(r)}{r^2}=g(r)$，g(r)是距离球心r处的重力加速度，所以方程也可以写成：<br/>
+$$\frac{dP(r)}{dr}=-g(r)\rho(r)$$<br/>
+这个方程的推导其实也不难的。恒星也可以近似看作流体，对于一个极小的变化值dr内，$g(r)=\frac{Gm(r)}{r^2}$可以视为恒定的，厚度为dr的一个壳层，质量约为$4\pi r^2 \rho(r)dr$，重力就是$4\pi r^2 \rho(r)g(r)dr$。受力面积为$4\pi r^2$，所以此处的压强为$\Delta P=g(r)\rho(r)dr$。注意，dP是恒星(r+dr)处的压强与r处的压强差，所以dP应该为负数。所以<br/>
+$$dP=-g(r)\rho(r)dr$$</p><p>好了，现在我们可以尝试估算一下太阳中心压强和温度了。我们可以<u>需要有两个假设条件</u>：<strong>1.太阳是均匀的，也就是密度恒定为$\rho=1411kg//m^3$；2.太阳表面压强为0。</strong>这两个假设都是不正确的，但是对于我们简单估算太阳的相关参数来说已经足够了。</p><p>假设太阳密度恒定后，我们可以把质量方程积分得到$m(r)=\frac{4}{3}\pi r^3\rho$。并代入压强方程，有<br/>
+$$dP=-\frac{4}{3}G\pi r\rho^2$$</p><p>积分得到：$P=-\frac{2}{3}G\pi r^2 \rho^2+C$。把初始条件(r=R,P=0)代入，求出$C=\frac{2}{3}G\pi R^2 \rho^2$，即$P=\frac{2}{3}G\pi\rho^2(R^2-r^2)$。把r=0代入，结果就是中心的压强，因此有<br/>
+$$P_c=\frac{2}{3}G\pi R^2 \rho^2\approx 1.347\cdot 10^{14} Pa$$</p><p>又该如何估算中心温度呢？对于压强，我们有$P=nkT$，n是单位体积的分子数，$k=1.38066*10^{-23} J//K$，T是温度。对于理想气体来说，$n=\frac{\rho}{m}$，m是单个分子的平均质量。太阳中94%都是氢，因此$m\approx1.66*10^{-27}kg$，可以计算出$T_c\approx 11480000K$</p><p><strong>误差分析：</strong></p><p>经过更精密的理论计算，得到太阳中心压强为$3.4*10^{16}Pa$，中心温度为1500万K；压强是我们估计的近200倍，而温度则是我们估算的1.3倍。可见两个结果都偏小了。经过计算，除了让我们对太阳的研究有一个很小的了解外，我们还可以认识到太阳的密度是不均匀的（显而易见...）、太阳不是特别理想的流体等....</p>
+
+
+
+
+
+</div>

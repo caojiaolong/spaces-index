@@ -1,0 +1,17 @@
+{
+  "metadata": {
+    "id": "11738",
+    "title": "直接以FID为Loss：从梯度计算到流式训练",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/11738",
+    "date": "2026-05-08",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "fetched_at": "2026-09-14T12:35:47+00:00",
+  "source_snapshot_sha256": "7a06b60a176f91da2a0ac79160be3f303146560acaa23e8fec0b0a6897c93a03",
+  "validators": {
+    "etag": null,
+    "last_modified": null
+  }
+}

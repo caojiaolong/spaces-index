@@ -1,0 +1,16 @@
+<div class="PostContent" id="PostContent">
+<p>不可否认，变分法是非常有用而绝妙的一个数学工具，它“自动地”为我们在众多函数中选出了最优的一个，而免除了具体的分析过程。物理中的最小作用量原理则让变分法有了巨大的用武之地，并反过来也推动了变分法的发展。但是变分法的一个很明显的特点就是在大多数情况下计算相当复杂，甚至如果“蛮干”的话我们几乎连微分方程组都列不出来。因此，一些有用的技巧是很受欢迎的。本文就打算介绍这样的一个小技巧，来让某些变分问题得到一定的化简。</p><p>我是怎么得到这个技巧的呢？事实上，那是几个月前我在阅读《引力与时空》时，读到变分原理那一块时我怎么也读不懂，想不明白。明明我觉得是错误的东西，为什么可以得到正确的结果？我的数学直觉告诉我绝对是作者的错，可是我又想不出作者哪里错了，所以就一直把这个问题搁置着。最近我终于得到了自己比较满意的答案，并且窃认为是本文所要讲的这个技巧却被物理学家“误用”了。</p><p><strong>技巧</strong></p><p>首先来看通常我们是怎么处理变分问题的，以一元函数为例，对于求<br/>
+$$S=\int L(x,\dot{x},t)dt$$</p><p>的极值曲线，我们通常是直接将其代入欧拉-拉格朗日方程：<br/>
+$$\frac{\partial L}{\partial x}-\frac{d}{dt}(\frac{\partial L}{\partial \dot{x}})=0$$</p><p>这总是会奏效的，但是通常都不会简单。我们来看一个特例，即很多变分问题的被积函数都是根号的形式的，如狭义相对论的作用量是$S=-\int mc\sqrt{c^2 dt^2-dx^2-dy^2-dz^2}$，短程线问题的弧长是$l=\int\sqrt{g_{\mu\nu}dx^{\mu}dx^{\nu}}$等等，这一类问题如果直接把其中一个变量作为自变量，其他变量作为函数，代入欧拉-拉格朗日方程，就会得到非常复杂的结果，变量之间“纠缠”在一起，以至于甚至我们连微分方程都列不出来。</p><p>可是我们仔细注意就会发现，复杂性的来源是根号，而根号里边的表达式通常并不是非常复杂，要是有个方法让我们将其平方一下就好了。这确实是可以实现的，但是要找到它，却不能从欧拉-拉格朗日方程出发，要从变分法最根本的运算出发。</p><p>$$\begin{aligned}\delta S &amp;=\delta \int Ldt \\&amp;=\int \delta(Ldt)\\&amp;=\int \delta\sqrt{(Ldt)^2}\\&amp;=\int \frac{\delta (L^2 dt^2)}{2\sqrt{(Ldt)^2}}\end{aligned}$$</p><p>设$ds=\sqrt{(Ldt)^2}=Ldt$，就变成了<br/>
+$$\int \frac{\delta (L^2 dt^2)}{2ds}=\int \frac{\delta (L^2 dt^2)}{2ds^2}ds$$</p><p>此时，如果我们<font color="red"><strong>在变分过程</strong>（要注意，是仅仅在变分过程中）中</font>，将ds看成与x,y无关的、纯粹的参数，那么我们可以改写为<br/>
+$$\int \frac{1}{2}\delta [L^2 (\frac{dt}{ds})^2]ds$$</p><p>这样子也就是说，如果以$ds=Ldt$作为参量，那么$S=\int Ldt$的变分与$S=\int \frac{1}{2} [L^2 (\frac{dt}{ds})^2]ds$的变分所给出的结果（微分方程组）是等效的。这样一来，我们只需要将$L'=\frac{1}{2} L^2 (\frac{dt}{ds})^2$代入到欧拉-拉格朗日方程中即可，通常来说这会比直接代入L简单一些。</p><p>比如，在考虑短程线时，我们要变分$l=\int\sqrt{g_{\mu\nu}dx^{\mu}dx^{\nu}}$，设$ds=\sqrt{g_{\mu\nu}dx^{\mu}dx^{\nu}}$，那么<br/>
+$$l=\int g_{\mu\nu}\frac{dx^{\mu}}{ds}\frac{dx^{\nu}}{ds}ds$$</p><p>记$L'=\frac{1}{2} g_{\mu\nu}\frac{dx^{\mu}}{ds}\frac{dx^{\nu}}{ds}$，代入欧拉-拉格朗日方程就得到：<br/>
+$$\frac{d}{ds}(g_{\mu\nu}\frac{dx^{\nu}}{ds})=\frac{\partial g_{\alpha\beta}}{\partial x^{\nu}}(\frac{dx^{\alpha}}{ds})(\frac{dx^{\beta}}{ds})$$</p><p><strong>误用</strong></p><p>然而，这种技巧有可能会被误用。狭义相对论中的自由粒子作用量是$S=-\int mc\sqrt{c^2 dt^2-dx^2-dy^2-dz^2}$，根据上面的结论，它和$S=-\int \frac{1}{2}mc[c^2 (\frac{dt}{ds})^2-(\frac{dx}{ds})^2-(\frac{dy}{ds})^2-(\frac{dz}{ds})^2]ds$的效果是等价的，其中$ds=\sqrt{c^2 dt^2-dx^2-dy^2-dz^2}$。这在没有考虑相互作用时是正确的，但是如果加入了势能项的作用量时，我们很容易也产生这样的错觉：同样把自由粒子项换成是$S=-\int \frac{1}{2}mc[c^2 (\frac{dt}{ds})^2-(\frac{dx}{ds})^2-(\frac{dy}{ds})^2-(\frac{dz}{ds})^2]ds$，但这将会导致错误的结果。因为我们所说的技巧，是将整个拉格朗日函数平方，而不是部分平方。</p><p>比如我们<a href="/archives/2005/" target="_blank">之前</a>考虑过的<br/>
+$$S= -mc^2 \int \sqrt{1-\frac{v^2}{c^2}}dt-\alpha \phi \sqrt{1-\frac{v^2}{c^2}}dt$$</p><p>不可以简单地将作用量变换成：<br/>
+$$S=-\int \frac{1}{2}mc[c^2 (\frac{dt}{ds})^2-(\frac{dx}{ds})^2-(\frac{dy}{ds})^2-(\frac{dz}{ds})^2]ds-\frac{\alpha}{c} \phi ds$$</p><p>这将会给出错误的结果。事实上这也不存在任何简单的方法，最好的方法就是直接将其变分，而不是利用欧拉-拉格朗日方程。</p><p><strong><font color="red">“只要在多走一小步，仿佛是向同一方向迈的一小步，真理便会变成错误。”我想，这也是这句话的体现之一。</font></strong></p>
+
+
+
+
+
+</div>

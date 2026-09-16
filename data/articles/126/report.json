@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "126",
+    "title": "新浪sina.cn邮箱体验(免费邀请您来体验)",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/126",
+    "date": "2009-09-19",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 0,
+    "display_formula_count": 0,
+    "image_count": 1,
+    "heading_count": 0,
+    "code_block_count": 0,
+    "source_text_sha256": "992e0776466847c4a9890cbb4cb0f2308edc0ee9e0c8cd62c3f79b8307fd3310",
+    "output_text_sha256": "992e0776466847c4a9890cbb4cb0f2308edc0ee9e0c8cd62c3f79b8307fd3310",
+    "latex_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "body_sha256": "ca3015de2d1ba396fd46422f06e7604465d732e1a7060a0a71ed97b6a8046ab7",
+    "converter_version": 1,
+    "markdown_sha256": "1ce05263fbd4f7596d6aeabab0b53ae87f833cbd88f0bc4e67af95eb516c6242"
+  },
+  "fetched_at": "2026-09-14T14:52:55+00:00",
+  "source_snapshot_sha256": "c0a7f1cf7e9fcbafcfb48d8c7394d348cd82137ae4c7e751f680e3649a81019d",
+  "images": {},
+  "local_only": true
+}

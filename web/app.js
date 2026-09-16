@@ -2,7 +2,7 @@ const PAGE_SIZE = 24;
 const PAGE_SIZE_OPTIONS = [12, 24, 48, 96];
 const EMPTY_SUMMARY_VALUES = new Set(["null", "none", "undefined", "nan"]);
 const THEME_KEY = "spaces-index-theme";
-const READ_POSTS_KEY = "spaces-index-read-posts-v1";
+const READING_PROGRESS_KEY = "spaces-index-reading-progress-v1";
 const LAST_READ_KEY = "spaces-index-last-read-post-v1";
 const GITHUB_STARS_CACHE_KEY = "spaces-index-github-stars-v1";
 const GITHUB_STARS_CACHE_MS = 30 * 60 * 1000;
@@ -36,8 +36,13 @@ const ui = {
   lastPath: null,
   scrollAfterRender: false,
   readPostIds: new Set(),
+  readingProgress: new Map(),
   lastReadPostId: null,
   expandedSummaryIds: new Set(),
+  readerCleanup: null,
+  heroCleanup: null,
+  lastHash: null,
+  scrollPositions: new Map(),
 };
 
 let summaryResizeObserver = null;
@@ -210,6 +215,7 @@ function normalizeCatalog(raw) {
       ? String(post.seriesTopic ?? post.series_topic)
       : null,
     notes: post.notes ? String(post.notes) : "",
+    mirror: raw.mirrors?.[String(post.id)] || null,
   }));
 
   const topicCounts = new Map();
@@ -257,6 +263,7 @@ function normalizeCatalog(raw) {
   const stats = raw.stats ?? {};
   return {
     schemaVersion: Number(raw.schemaVersion ?? 1),
+    localPreview: raw.localPreview === true,
     posts,
     topics,
     topicGroups,
@@ -317,18 +324,28 @@ function seriesHref(id) {
   return `#/series/${encodeURIComponent(id)}`;
 }
 
-function loadReadPostIds() {
+function loadReadingProgress() {
   try {
-    const stored = JSON.parse(localStorage.getItem(READ_POSTS_KEY) || "[]");
-    return new Set(Array.isArray(stored) ? stored.map(String).filter(Boolean) : []);
+    const stored = JSON.parse(localStorage.getItem(READING_PROGRESS_KEY) || "{}");
+    if (!stored || typeof stored !== "object" || Array.isArray(stored)) return new Map();
+    return new Map(Object.entries(stored).filter(([id, value]) => /^[1-9]\d*$/.test(id)
+      && typeof value === "number" && Number.isFinite(value) && value >= 0 && value <= 100)
+      .map(([id, value]) => [id, Math.floor(value)]));
   } catch {
-    return new Set();
+    return new Map();
   }
 }
 
-function persistReadPostIds() {
+function mergeReadingProgress(progress) {
+  for (const [id, value] of progress) ui.readingProgress.set(id, Math.max(value, getPostProgress(id)));
+  ui.readPostIds = new Set([...ui.readingProgress].filter(([, value]) => value === 100).map(([id]) => id));
+}
+
+function persistReadingProgress() {
   try {
-    localStorage.setItem(READ_POSTS_KEY, JSON.stringify([...ui.readPostIds].sort()));
+    // Merge other tabs before writing; scrolling back never erases progress.
+    mergeReadingProgress(loadReadingProgress());
+    localStorage.setItem(READING_PROGRESS_KEY, JSON.stringify(Object.fromEntries(ui.readingProgress)));
   } catch { /* Storage may be disabled. */ }
 }
 
@@ -354,71 +371,54 @@ function syncReadProgressLabels() {
 }
 
 function isPostRead(postId) {
-  return ui.readPostIds.has(String(postId));
+  return getPostProgress(postId) === 100;
 }
 
-function setPostRead(postId, read) {
+function getPostProgress(postId) {
+  return ui.readingProgress.get(String(postId)) || 0;
+}
+
+function rememberReadingPost(postId) {
   const normalizedId = String(postId);
-  if (read) ui.readPostIds.add(normalizedId);
-  else ui.readPostIds.delete(normalizedId);
-  if (read) {
-    ui.lastReadPostId = normalizedId;
-    try { localStorage.setItem(LAST_READ_KEY, normalizedId); } catch { /* Storage may be disabled. */ }
-  }
-  persistReadPostIds();
+  ui.lastReadPostId = normalizedId;
+  try { localStorage.setItem(LAST_READ_KEY, normalizedId); } catch { /* Storage may be disabled. */ }
+}
+
+function paintPostProgress(element, postId) {
+  const percent = getPostProgress(postId), read = percent === 100;
+  element.classList.toggle("is-complete", read);
+  element.setAttribute("aria-valuenow", String(percent));
+  element.setAttribute("aria-valuetext", `${read ? "已读" : "阅读进度"} ${percent}%`);
+  element.querySelector(".post-progress-label").textContent = `${read ? "已读" : "阅读"} ${percent}%`;
+  element.style.setProperty("--post-progress", `${percent}%`);
+}
+
+function syncPostProgress() {
+  document.querySelectorAll("[data-post-progress]").forEach(element => paintPostProgress(element, element.dataset.postProgress));
+  document.querySelectorAll("[data-reading-post]").forEach(element => element.classList.toggle("is-read", isPostRead(element.dataset.readingPost)));
+  const readerPercent = document.querySelector("#reading-percent[data-reading-post]");
+  if (readerPercent) readerPercent.textContent = `${getPostProgress(readerPercent.dataset.readingPost)}%`;
   syncReadProgressLabels();
 }
 
-function syncReadPresentation(container, post) {
-  if (!container) return;
-  const read = isPostRead(post.id);
-  container.classList.toggle("is-read", read);
-  const badge = container.querySelector(".read-status-badge");
-  if (badge) badge.hidden = !read;
-  const toggle = container.querySelector(".post-read-toggle");
-  if (toggle) {
-    toggle.textContent = read ? "已读 ✓" : "标为已读";
-    toggle.setAttribute("aria-pressed", String(read));
-    toggle.setAttribute("aria-label", `${read ? "取消已读" : "标为已读"}：${post.title}`);
-  }
+function recordReadingProgress(postId, value) {
+  if (!Number.isFinite(value) || value < 0 || value > 100 || !/^[1-9]\d*$/.test(String(postId))) return;
+  const percent = Math.floor(value);
+  if (percent <= getPostProgress(postId)) return;
+  mergeReadingProgress(new Map([[String(postId), percent]]));
+  rememberReadingPost(postId);
+  persistReadingProgress();
+  syncPostProgress();
 }
 
-function updatePostRead(post, read, container, { fromLink = false } = {}) {
-  setPostRead(post.id, read);
-  const { parts, params } = parseLocation();
-  const filteredByReadState = parts[0] === "explore" && ["read", "unread"].includes(params.get("read"));
-  if (filteredByReadState) {
-    const refresh = () => {
-      ui.focusAfterRender = "page-results";
-      renderRoute();
-    };
-    if (fromLink) setTimeout(refresh, 0);
-    else refresh();
-  } else {
-    syncReadPresentation(container, post);
-  }
-}
-
-function makeReadBadge(post) {
-  return createElement("span", {
-    className: "read-status-badge",
-    text: "已读",
-    attrs: { hidden: isPostRead(post.id) ? null : true },
-  });
-}
-
-function makeReadToggle(post, container) {
-  const read = isPostRead(post.id);
-  return createElement("button", {
-    className: "post-read-toggle",
-    type: "button",
-    text: read ? "已读 ✓" : "标为已读",
-    attrs: {
-      "aria-pressed": String(read),
-      "aria-label": `${read ? "取消已读" : "标为已读"}：${post.title}`,
-    },
-    on: { click: () => updatePostRead(post, !isPostRead(post.id), container) },
-  });
+function makePostProgress(post) {
+  const element = createElement("span", {
+    className: "post-reading-progress", dataset: { postProgress: post.id },
+    attrs: { role: "progressbar", "aria-valuemin": 0, "aria-valuemax": 100, "aria-label": `阅读进度：${post.title}` },
+  }, [createElement("span", { className: "post-progress-track", attrs: { "aria-hidden": true } }),
+    createElement("span", { className: "post-progress-label" })]);
+  paintPostProgress(element, post.id);
+  return element;
 }
 
 function createSelect({ id, label, value, values, options, multiple = false, onChange }) {
@@ -648,24 +648,54 @@ function syncSummaryDisclosures() {
   document.fonts?.ready.then(() => summaries.forEach(updateSummaryDisclosure));
 }
 
+function postReadingHref(post, from = location.hash || "#/") {
+  const internal = post.mirror && /^[1-9]\d*$/.test(post.id);
+  return internal ? SpacesReader.href(post.id, from) : safeHttpsUrl(post.url);
+}
+
+function makePostLink(post, container, { text = post.title, className, label } = {}) {
+  const url = postReadingHref(post);
+  const internal = url?.startsWith("#/article/");
+  return url ? createElement("a", {
+    text, className, href: url,
+    attrs: { "aria-label": label, ...(internal ? {} : { target: "_blank", rel: "noopener noreferrer" }) },
+  }) : createElement("span", { text });
+}
+
+function makeMirrorActions(post, container) {
+  const url = safeHttpsUrl(post.url);
+  const original = url ? createElement("a", {
+    text: "查看原文 ↗", href: url, attrs: { target: "_blank", rel: "noopener noreferrer" },
+  }) : null;
+  if (!post.mirror || !/^[1-9]\d*$/.test(post.id)) {
+    return original ? createElement("div", { className: "mirror-actions" }, original) : null;
+  }
+  return createElement("div", { className: "mirror-actions" }, [
+    original,
+    createElement("a", { text: "下载 Markdown", href: SpacesMirror.path(post.id), attrs: { download: `spaces-${post.id}.md` } }),
+    createElement("button", { text: "复制 Markdown", type: "button", on: { click: async (event) => {
+      const button = event.currentTarget;
+      button.disabled = true;
+      try {
+        await SpacesMirror.copy(await SpacesMirror.load(post.id, post.mirror.sha256));
+        button.textContent = "已复制（含署名与许可）";
+      } catch {
+        button.textContent = "复制失败，请打开 Markdown 手动复制";
+      } finally { button.disabled = false; }
+    } } }),
+  ]);
+}
+
 function makePostCard(post, {
   showSummary = true,
   exploreState = null,
 } = {}) {
   const card = createElement("article", {
     className: `post-card${isPostRead(post.id) ? " is-read" : ""}`,
+    dataset: { readingPost: post.id },
   });
   const content = createElement("div");
-  const safeUrl = safeHttpsUrl(post.url);
-  const title = safeUrl
-    ? createElement("a", {
-        text: post.title,
-        href: safeUrl,
-        attrs: { target: "_blank", rel: "noopener noreferrer" },
-        on: { click: () => updatePostRead(post, true, card, { fromLink: true }) },
-      })
-    : createElement("span", { text: post.title });
-  content.append(createElement("h3", {}, title));
+  content.append(createElement("h3", {}, makePostLink(post, card)));
 
   const meta = createElement("div", { className: "post-meta" }, [
     createElement("span", { text: formatDate(post.date) }),
@@ -676,7 +706,6 @@ function makePostCard(post, {
       href: seriesHref(post.seriesId),
       attrs: { "aria-label": `查看系列：${post.series}` },
     }) : null,
-    makeReadBadge(post),
   ]);
   content.append(meta);
   if (showSummary && post.sourceSummary) {
@@ -697,11 +726,21 @@ function makePostCard(post, {
       content.append(createElement("div", { className: "summary-disclosure" }, [summary, button]));
     } else content.append(summary);
   }
+  const mirrorActions = makeMirrorActions(post, card);
+  if (mirrorActions) content.append(mirrorActions);
   content.append(createElement("div", { className: "post-card-footer" }, [
     makePills(post, 3, { exploreState }),
-    makeReadToggle(post, card),
+    makePostProgress(post),
   ]));
-  card.append(content, createElement("span", { className: "post-arrow", text: "↗", attrs: { "aria-hidden": "true" } }));
+  card.append(content);
+  const destination = postReadingHref(post);
+  if (destination) {
+    const label = destination.startsWith("#/article/") ? "阅读文章" : "查看原文";
+    const arrow = makePostLink(post, card, { className: "post-arrow", text: "", label: `${label}：${post.title}` });
+    arrow.title = label;
+    arrow.append(createElement("span", { text: destination.startsWith("#/article/") ? "→" : "↗", attrs: { "aria-hidden": "true" } }));
+    card.append(arrow);
+  }
   return card;
 }
 
@@ -710,7 +749,7 @@ function makeFooter() {
   const footer = createElement("footer", { className: "site-footer" }, [
     createElement("div", {}, [
       createElement("strong", { text: "科学空间索引" }),
-      createElement("div", { text: "非官方元数据导航 · 不保存文章正文" }),
+      createElement("div", { text: ui.catalog?.localPreview ? "本地预览 · 非官方、非商业知识索引" : "非官方、非商业知识索引 · 原文 Markdown" }),
     ]),
     createElement("div", { className: "site-footer-links" }, [
       externalLink("原站", "https://spaces.ac.cn/"),
@@ -1387,12 +1426,13 @@ function renderAbout(catalog) {
       createElement("p", { text: "人工整理帖往往难以长期更新。本项目用可重复运行的规则，持续整理标题、主题、系列与少量短小结，让归档保持可搜索、可浏览。" }),
     ]),
     createElement("article", { className: "about-card" }, [
-      createElement("h2", { text: "保存什么，不保存什么" }),
+      createElement("h2", { text: "元数据与 Markdown" }),
       createElement("ul", {}, [
         createElement("li", { text: "保存标题、原文链接、日期、分类、标签、主题与系列信息。" }),
         createElement("li", { text: "仅从明确的小结段落提取有限长度的短摘录。" }),
-        createElement("li", { text: "不镜像、不复制，也不保存任何文章正文。" }),
-        createElement("li", { text: "已读状态只保存在当前浏览器，不上传到服务器。" }),
+        createElement("li", { text: "已通过一致性校验的文章提供 Markdown 阅读、下载和复制；每篇保留原文出处与许可说明。" }),
+        createElement("li", { text: "正文只做必要的格式转换，保留原始 LaTeX，不做摘要、润色、翻译或重组。" }),
+        createElement("li", { text: "阅读进度只保存在当前浏览器，不上传到服务器；读到正文末尾达到 100% 后计入已读。" }),
         createElement("li", { text: "访问量使用 Cloudflare Web Analytics 匿名汇总，不使用 Cookie，也不用于识别个人。" }),
       ]),
     ]),
@@ -1402,7 +1442,12 @@ function renderAbout(catalog) {
     ]),
     createElement("article", { className: "about-card" }, [
       createElement("h2", { text: "版权与归属" }),
-      createElement("p", { text: "本站是社区维护的非官方导航。文章内容、标题及相关权利归原作者与科学空间所有；阅读、引用与讨论请始终前往原文。" }),
+      createElement("p", { text: "本站是非官方、非商业项目。文章作者为苏剑林，原文许可为 CC BY-NC-ND 2.5 CN；第三方素材依其原有权利声明。署名及许可说明不代表已获得额外授权，也不表示作者为项目背书。引用与讨论请保留原文链接。" }),
+      createElement("p", { text: "后续知识问答应标明来源，并区分作者原文与系统解释；不得冒充作者或歪曲作者观点。网站默认提供全站通过校验且未下架、未过期的正文。" }),
+      createElement("div", { className: "inline-actions" }, [
+        createElement("a", { href: SpacesReader.href("9119"), text: "试读 DDPM →" }),
+        createElement("a", { href: SpacesReader.href("11882"), text: "试读自适应梯度算法 →" }),
+      ]),
       createElement("div", { className: "inline-actions" }, [
         externalLink("访问科学空间 ↗", "https://spaces.ac.cn/", "button button-primary"),
         externalLink("查看项目源码 ↗", "https://github.com/caojiaolong/spaces-index", "button button-ghost"),
@@ -1432,11 +1477,12 @@ function routeTitle(parts) {
   if (parts[0] === "topics") return parts[1] ? `${parts[1]} · 科学空间索引` : "主题地图 · 科学空间索引";
   if (parts[0] === "series") return parts[1] ? "系列阅读 · 科学空间索引" : "系列目录 · 科学空间索引";
   if (parts[0] === "about") return "关于 · 科学空间索引";
+  if (parts[0] === "article") return "文章阅读 · 科学空间索引";
   return "未找到 · 科学空间索引";
 }
 
-function updateNavigation(parts) {
-  const root = parts[0] ?? "home";
+function updateNavigation(parts, params) {
+  const root = parts[0] === "article" ? SpacesReader.returnRoute(params.get("from")).slice(2).split(/[/?]/)[0] : (parts[0] ?? "home");
   const current = ["explore", "topics", "series", "about"].includes(root) ? root : "home";
   document.querySelectorAll("[data-nav]").forEach((link) => {
     if (link.dataset.nav === current) link.setAttribute("aria-current", "page");
@@ -1476,10 +1522,51 @@ function syncAfterRender(parts) {
   }
 }
 
+function syncSeriesChapter(chapterId, { scroll = false, smooth = false } = {}) {
+  const layout = main.querySelector(".series-reading-layout");
+  if (!layout) return false;
+  const chapter = chapterId ? document.getElementById(`chapter-${chapterId}`) : null;
+  const valid = chapter && layout.contains(chapter);
+  layout.querySelectorAll("[data-chapter-post]").forEach((link) => {
+    if (valid && link.dataset.chapterPost === chapterId) link.setAttribute("aria-current", "location");
+    else link.removeAttribute("aria-current");
+  });
+  // The view stays mounted, so keep article return links in step with its URL.
+  main.querySelectorAll('a[href^="#/article/"]').forEach((link) => {
+    const [path, query = ""] = link.getAttribute("href").split("?", 2);
+    const params = new URLSearchParams(query);
+    params.set("from", location.hash);
+    link.setAttribute("href", `${path}?${params}`);
+  });
+  if (scroll && valid) {
+    chapter.scrollIntoView({ block: "start", behavior: smooth && !reduceMotion.matches ? "smooth" : "instant" });
+    chapter.focus({ preventScroll: true });
+  }
+  return Boolean(valid);
+}
+
 function renderRoute() {
   if (!ui.catalog) return;
   const { path, parts, params } = parseLocation();
+  const hash = location.hash || "#/";
+  const hashChanged = ui.lastHash !== hash;
+  if (ui.lastHash) ui.scrollPositions.set(ui.lastHash, scrollY);
+  const savedScroll = hashChanged ? ui.scrollPositions.get(hash) : undefined;
+  const isSeriesDetail = parts[0] === "series" && parts.length === 2;
+  // A chapter is a location inside the existing series, not a new page.
+  if (hashChanged && isSeriesDetail && ui.lastPath === path && main.querySelector(".series-reading-layout")) {
+    ui.lastHash = hash;
+    const located = syncSeriesChapter(params.get("chapter"), { scroll: true, smooth: true });
+    if (!located && !params.get("chapter")) scrollTo({ top: savedScroll ?? 0, behavior: "instant" });
+    scheduleScrollState();
+    return;
+  }
+  ui.readerCleanup?.();
+  ui.readerCleanup = null;
+  ui.heroCleanup?.();
+  ui.heroCleanup = null;
   const pathChanged = ui.lastPath !== null && ui.lastPath !== path;
+  const isReader = parts[0] === "article" && parts.length === 2;
   let view;
   if (!parts.length) view = renderHome(ui.catalog);
   else if (parts[0] === "explore" && parts.length === 1) view = renderExplore(ui.catalog, params);
@@ -1488,25 +1575,40 @@ function renderRoute() {
   else if (parts[0] === "series" && parts.length === 1) view = renderSeriesIndex(ui.catalog);
   else if (parts[0] === "series" && parts.length === 2) view = renderSeriesDetail(ui.catalog, parts[1]);
   else if (parts[0] === "about" && parts.length === 1) view = renderAbout(ui.catalog);
+  else if (isReader) {
+    view = createElement("div", { className: "view reading-view" });
+    view.append(document.querySelector("#reader-template").content.cloneNode(true), makeFooter());
+  }
   else view = renderNotFound();
 
   main.replaceChildren(view);
+  if (isSeriesDetail) syncSeriesChapter(params.get("chapter"));
+  if (!parts.length) ui.heroCleanup = mountHeroMotion(view);
   syncSummaryDisclosures();
   document.title = routeTitle(parts);
-  updateNavigation(parts);
+  updateNavigation(parts, params);
   syncAfterRender(parts);
   ui.lastPath = path;
-  if (parts[0] === "series" && parts.length === 2 && params.get("chapter")) {
-    const chapterId = params.get("chapter");
+  ui.lastHash = hash;
+  if (isReader) {
+    ui.readerCleanup = SpacesReader.mount(view, parts[1], {
+      catalog: ui.catalog, from: params.get("from"), section: params.get("section"), equation: params.get("equation"),
+      onReady(post) {
+        rememberReadingPost(post.id);
+        view.querySelector("#reader-progress").append(makePostProgress(post));
+        view.querySelector("#reading-percent").dataset.readingPost = post.id;
+        if (savedScroll !== undefined && !params.get("section") && !params.get("equation")) scrollTo({ top: savedScroll, behavior: "instant" });
+        scheduleScrollState();
+      },
+      getProgress: () => getPostProgress(parts[1]),
+      onProgress: percent => recordReadingProgress(parts[1], percent),
+    });
+  }
+  if (!isReader && savedScroll !== undefined) {
+    requestAnimationFrame(() => { scrollTo({ top: savedScroll, behavior: "instant" }); scheduleScrollState(); });
+  } else if (isSeriesDetail && params.get("chapter")) {
     requestAnimationFrame(() => {
-      const chapter = document.getElementById(`chapter-${chapterId}`);
-      if (!chapter) return;
-      chapter.scrollIntoView({ block: "start", behavior: "auto" });
-      chapter.focus({ preventScroll: true });
-      document.querySelectorAll("[data-chapter-post]").forEach((link) => {
-        if (link.dataset.chapterPost === chapterId) link.setAttribute("aria-current", "location");
-        else link.removeAttribute("aria-current");
-      });
+      if (ui.lastHash === hash) syncSeriesChapter(params.get("chapter"), { scroll: true });
     });
   } else if (ui.scrollAfterRender) {
     ui.scrollAfterRender = false;
@@ -1585,6 +1687,13 @@ backToTop.addEventListener("click", () => {
   setTimeout(() => main.focus({ preventScroll: true }), reduceMotion.matches ? 0 : 360);
 });
 window.addEventListener("hashchange", renderRoute);
+window.addEventListener("storage", event => {
+  if (event.key !== READING_PROGRESS_KEY) return;
+  mergeReadingProgress(loadReadingProgress());
+  const { parts, params } = parseLocation();
+  if (parts[0] === "explore" && ["read", "unread"].includes(params.get("read"))) renderRoute();
+  else syncPostProgress();
+});
 window.addEventListener("scroll", scheduleScrollState, { passive: true });
 window.addEventListener("resize", () => {
   if (!summaryResizeObserver) main.querySelectorAll("[data-expandable-summary]").forEach(updateSummaryDisclosure);
@@ -1649,9 +1758,12 @@ function renderLocalPreviewHelp() {
 }
 
 async function start() {
+  if ("scrollRestoration" in history) history.scrollRestoration = "manual";
   applyTheme(readStoredTheme());
   void loadGitHubStarCount();
-  ui.readPostIds = loadReadPostIds();
+  // Legacy boolean records remain untouched: an original-link click used to
+  // count as read, so they cannot establish an actual percentage.
+  mergeReadingProgress(loadReadingProgress());
   try { ui.lastReadPostId = localStorage.getItem(LAST_READ_KEY); } catch { /* Storage may be disabled. */ }
   if (location.protocol === "file:") {
     renderLocalPreviewHelp();
@@ -1663,9 +1775,7 @@ async function start() {
     const raw = await response.json();
     ui.catalog = normalizeCatalog(raw);
     const validPostIds = new Set(ui.catalog.posts.map((post) => post.id));
-    const storedReadCount = ui.readPostIds.size;
     ui.readPostIds = new Set([...ui.readPostIds].filter((postId) => validPostIds.has(postId)));
-    if (ui.readPostIds.size !== storedReadCount) persistReadPostIds();
     if (!location.hash) history.replaceState(null, "", `${location.pathname}${location.search}#/`);
     renderRoute();
   } catch (error) {

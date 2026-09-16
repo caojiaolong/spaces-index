@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "947",
+    "title": "圆满的句号——汽车站的邂逅",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/947",
+    "date": "2010-09-23",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 0,
+    "display_formula_count": 0,
+    "image_count": 2,
+    "heading_count": 0,
+    "code_block_count": 0,
+    "source_text_sha256": "b4a69eb8e379590248569837fcb21a2a5aace4e7b72280865fa98c291a00c4b3",
+    "output_text_sha256": "b4a69eb8e379590248569837fcb21a2a5aace4e7b72280865fa98c291a00c4b3",
+    "latex_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "body_sha256": "efba565fb259f29c90e746d60bcd3508ffad2b3ced6181b644d6a93a0eb42407",
+    "converter_version": 1,
+    "markdown_sha256": "4d88ef88fd22e631de0201220e2ab85be10725e962e47f2c4377713be82b9dab"
+  },
+  "fetched_at": "2026-09-14T14:30:06+00:00",
+  "source_snapshot_sha256": "351c78f303cbce08a40f3aabed28b6d1c4a380acfaad8285376542ea87510117",
+  "images": {},
+  "local_only": true
+}

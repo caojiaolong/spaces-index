@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "79",
+    "title": "校准你的钟表（时间科普网站）",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/79",
+    "date": "2009-08-16",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 0,
+    "display_formula_count": 0,
+    "image_count": 0,
+    "heading_count": 0,
+    "code_block_count": 0,
+    "source_text_sha256": "0fd9b157b285965054da81ef4bbd88a69a48d34a5f980bdeccbc3a30d622ac29",
+    "output_text_sha256": "0fd9b157b285965054da81ef4bbd88a69a48d34a5f980bdeccbc3a30d622ac29",
+    "latex_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "body_sha256": "d6319eb947a55085bd9479a3304b8e52e65b996f8b4bf056282937f56289f731",
+    "converter_version": 1,
+    "markdown_sha256": "12911417c325c14678eac71c8c814e0107c03071e6186df31fa01c5c3d7d4ffb"
+  },
+  "fetched_at": "2026-09-14T14:58:49+00:00",
+  "source_snapshot_sha256": "1aaa59b7aac7e1be1811b8e278a603b60a54732e61a9095ba74ce39da2c75224",
+  "images": {},
+  "local_only": true
+}

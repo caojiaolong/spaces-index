@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "10137",
+    "title": "重温SSM（二）：HiPPO的一些遗留问题",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/10137",
+    "date": "2024-06-05",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 166,
+    "display_formula_count": 31,
+    "image_count": 0,
+    "heading_count": 10,
+    "code_block_count": 0,
+    "source_text_sha256": "54c317679f35ca7167cd366c6f26de205a201238f63cdf823683f92c9400ade5",
+    "output_text_sha256": "54c317679f35ca7167cd366c6f26de205a201238f63cdf823683f92c9400ade5",
+    "latex_sha256": "053055273d8db07c1345d7b0fd38d4175511927390182b30d78de32661aa384c",
+    "body_sha256": "292d37b663fdc76b1d91c6a9e383fd9b3f4d1a2b735b6c53ea8a988b8bb792fa",
+    "converter_version": 1,
+    "markdown_sha256": "f250f6f2bee8c783419b359d1c2e44110623608075599d44cd3e61185001d3c6"
+  },
+  "fetched_at": "2026-09-14T12:48:17+00:00",
+  "source_snapshot_sha256": "222ef6c3395acfcecc75c90b9e7542ae44906f4f884725425b49900da383a65f",
+  "images": {},
+  "local_only": true
+}

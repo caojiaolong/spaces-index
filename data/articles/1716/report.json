@@ -1,0 +1,39 @@
+{
+  "metadata": {
+    "id": "1716",
+    "title": "均值不等式的两个巧妙证明",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/1716",
+    "date": "2012-09-26",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "source_dom_exact": true,
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "attributes_exact": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 13,
+    "display_formula_count": 4,
+    "image_count": 0,
+    "heading_count": 0,
+    "code_block_count": 0,
+    "source_text_sha256": "4d77700d8b4692af06360cb45fec572aefc11c5bdd1a39750299bf555f4ee1c7",
+    "output_text_sha256": "4d77700d8b4692af06360cb45fec572aefc11c5bdd1a39750299bf555f4ee1c7",
+    "latex_sha256": "10a78b7691ca05bd1516a179c6ed953b3de127c39792828bf0acefc4f1d6c57f",
+    "body_sha256": "50215b2364fa032f4c10b66a1f72e7023a76d1a12a403f40784ef496b1bb627f",
+    "converter_version": 1,
+    "format": "html-v1",
+    "source_warnings": [],
+    "fallback_reason": "Unsupported body element: del",
+    "markdown_sha256": "97631c9b2229ccb1ba6d6b78255d61c08369a6a85b0b467cfa4a69f0d435453e"
+  },
+  "fetched_at": "2026-09-14T14:10:27+00:00",
+  "source_snapshot_sha256": "690b1ee50a9cb26efa5ea9b7c84fa89f87f5f2d87473f0196ff0ca3a62ae3202",
+  "images": {},
+  "local_only": true
+}

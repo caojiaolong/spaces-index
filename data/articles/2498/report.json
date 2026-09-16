@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "2498",
+    "title": "如何看费曼的讲义和朗道的教程？",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/2498",
+    "date": "2014-03-25",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 0,
+    "display_formula_count": 0,
+    "image_count": 1,
+    "heading_count": 0,
+    "code_block_count": 0,
+    "source_text_sha256": "f0c66f5c6c3a71a9652f6b9abd242b74bbf6ff359b1e9a621ed438362431e92a",
+    "output_text_sha256": "f0c66f5c6c3a71a9652f6b9abd242b74bbf6ff359b1e9a621ed438362431e92a",
+    "latex_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "body_sha256": "504c637336b1d25eea864030c7acfe390b3a4bec6fe7c2de9213c1fdaaf7b5c5",
+    "converter_version": 1,
+    "markdown_sha256": "a927e0bd41b37ac03d3733161f57129a1e421f82598339219694f4e381b5f896"
+  },
+  "fetched_at": "2026-09-14T13:55:41+00:00",
+  "source_snapshot_sha256": "2a31ca5e743ccffbaeb4351add2fb773596ad909b12117f41d3a5228db314841",
+  "images": {},
+  "local_only": true
+}

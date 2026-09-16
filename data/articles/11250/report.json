@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "11250",
+    "title": "Cool Papers更新：简单适配Zotero Connector",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/11250",
+    "date": "2025-08-25",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 0,
+    "display_formula_count": 0,
+    "image_count": 2,
+    "heading_count": 3,
+    "code_block_count": 0,
+    "source_text_sha256": "43a4082eb5a8a82ad4de30186167c0e512a75e4595b3ed46d67913dbe419edb2",
+    "output_text_sha256": "43a4082eb5a8a82ad4de30186167c0e512a75e4595b3ed46d67913dbe419edb2",
+    "latex_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "body_sha256": "1cef406efd731ad0eaf511cb34b224e6a482aa47806648b101acf7c5445c5a37",
+    "converter_version": 1,
+    "markdown_sha256": "fb97a07d72f110a80862f07d5bdf88d5237cefa58e7de33c25b5425f266d7440"
+  },
+  "fetched_at": "2026-09-14T12:40:13+00:00",
+  "source_snapshot_sha256": "620ceb285c0568e28fc34414dba5ea292c563058c40da7d5dfedec6c1f377adb",
+  "images": {},
+  "local_only": true
+}

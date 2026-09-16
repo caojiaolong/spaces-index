@@ -1,0 +1,17 @@
+{
+  "metadata": {
+    "id": "8475",
+    "title": "UniVAE：基于Transformer的单模型、多尺度的VAE模型",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/8475",
+    "date": "2021-06-29",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "fetched_at": "2026-09-14T13:05:48+00:00",
+  "source_snapshot_sha256": "b62ff199c0cc5cb439c37d9fa169e807561b58805b8453934a7904c1365c228e",
+  "validators": {
+    "etag": null,
+    "last_modified": null
+  }
+}

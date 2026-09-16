@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "674",
+    "title": "捉弄计划的失败——单摆周期",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/674",
+    "date": "2010-06-09",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 19,
+    "display_formula_count": 7,
+    "image_count": 4,
+    "heading_count": 0,
+    "code_block_count": 0,
+    "source_text_sha256": "b8ae2c2bcf2b428cdd352f13313b086ff5773577c38badfdf5f1b18820d8ff9a",
+    "output_text_sha256": "b8ae2c2bcf2b428cdd352f13313b086ff5773577c38badfdf5f1b18820d8ff9a",
+    "latex_sha256": "5fa6cfc9ce6f7879d783c5905c7eed01792df4fc0b64fc0c0174985cbf3867da",
+    "body_sha256": "8b2d7dcf91102379870cc372ba496e4e92033df3903d35d70668ff36b3548360",
+    "converter_version": 1,
+    "markdown_sha256": "0df8f9289280b133fe946b155c53c1a24b5deee7791a410f6e948222f0df64a8"
+  },
+  "fetched_at": "2026-09-14T14:36:27+00:00",
+  "source_snapshot_sha256": "4ac9fda7f5d465878720d6d8194ec8b5b98260b6fb20dfeb307ac03ff13f32d1",
+  "images": {},
+  "local_only": true
+}

@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "9752",
+    "title": "BytePiece：更纯粹、更高压缩率的Tokenizer",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/9752",
+    "date": "2023-09-07",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 25,
+    "display_formula_count": 3,
+    "image_count": 0,
+    "heading_count": 9,
+    "code_block_count": 1,
+    "source_text_sha256": "189ff9683bdb1c62c29233df4efd34f2f3764a08de1ab661e3b8300bee3557e3",
+    "output_text_sha256": "189ff9683bdb1c62c29233df4efd34f2f3764a08de1ab661e3b8300bee3557e3",
+    "latex_sha256": "1d7e53cc12489455bcab03d1dbae7e49d0e2522a5a363778b061b8a7c9db2726",
+    "body_sha256": "6c1052bfd2450a95192ac2a13a303106d843c88859ff857d2309a47b596aa2f4",
+    "converter_version": 1,
+    "markdown_sha256": "2edcd75ad6beec8d1abf0393957e55faa4f78fc3e24657d87cb86d552b17727b"
+  },
+  "fetched_at": "2026-09-14T12:52:28+00:00",
+  "source_snapshot_sha256": "a6c42d52cdc93dea8ca7c2f3318e9e7e214c54c1889b196c0231ec09cc669135",
+  "images": {},
+  "local_only": true
+}

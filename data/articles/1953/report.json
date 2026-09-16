@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "1953",
+    "title": "浅谈引力助推",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/1953",
+    "date": "2013-04-08",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 0,
+    "display_formula_count": 0,
+    "image_count": 6,
+    "heading_count": 0,
+    "code_block_count": 0,
+    "source_text_sha256": "ca1b1e8ebe7ab766e8da62b610b1860c9706a67e072e9b2c2b283c949432a8f9",
+    "output_text_sha256": "ca1b1e8ebe7ab766e8da62b610b1860c9706a67e072e9b2c2b283c949432a8f9",
+    "latex_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "body_sha256": "c73d251a91b0589ffbaa144aba47a9fa7d75712d5ef9da7049e3821783567f92",
+    "converter_version": 1,
+    "markdown_sha256": "7293ec4a99be752c635108a6e5a3574883e1a6af56945a700c630a86e04faf1e"
+  },
+  "fetched_at": "2026-09-14T14:03:34+00:00",
+  "source_snapshot_sha256": "3fb73c69a42b7bf5b3d03d30b3646e01e4fdb1aa380d5a869c1ad14a538627fd",
+  "images": {},
+  "local_only": true
+}

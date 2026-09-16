@@ -1,0 +1,37 @@
+<div class="PostContent" id="PostContent">
+<p>两年前，笔者曾写过<a href="/search/%E7%AE%97%E5%AD%90%E4%B8%8E%E7%BA%BF%E6%80%A7%E5%B8%B8%E5%BE%AE%E5%88%86%E6%96%B9%E7%A8%8B/" target="_blank">《算子与线性常微分方程》</a>两篇，简单介绍了把线形常微分方程算符化，然后通过对算符求逆的方法求得常微分方程的通解。而在这篇文章中，笔者打算介绍关于算符类似的内容：差分算符、微分算符以及与之相关的伯努利数（Bernoulli数）。</p><p>我们记$D=\frac{d}{dx}$，那么$Df=\frac{df}{dx}$，同时定义$\Delta_t f(x)=f(x+t)-f(x)$，并且记$\Delta \equiv \Delta_1 =f(x+1)-f(x)$，这里我们研究的$f(x)$，都是具有良好性态的。我们知道，$f(x+t)$在$t=0$附近的泰勒展式为<br/>
+$$\begin{aligned}f(x+t)&amp;=f(x) + \frac{df(x)}{dx}t + \frac{1}{2!}\frac{d^2 f(x)}{dx^2}t^2 + \frac{1}{3!}\frac{d^3 f(x)}{dx^3}t^3 + \dots\\<br/>
+&amp;=\left(1+t\frac{d}{dx}+\frac{1}{2!}t^2\frac{d^2}{dx^2}+\dots\right)f(x)\\<br/>
+&amp;=\left(1+tD+\frac{1}{2!}t^2 D^2+\dots\right)f(x)\end{aligned}$$<br/>
+如果我们不在意$D$是一个算符，直接把它当成一个数，那么括号里的“函数”就是指数函数的展开式！于是<br/>
+$$f(x+t)=\exp\left(tD\right)f(x)\tag{1}$$<br/>
+这样子我们就把泰勒展式用一个简洁的式子表示了出来，后面我们看到，这个式子意味深长。<font color="red">读者可能会问$\exp\left(tD\right)$怎么计算？那么我们来反思对于普通的实数$x$，$e^x$是怎么计算的？当然如果$x=2$，那么只需要把两个$e$相乘。当时$e$又是怎么算的呢？事实上，可以认为$e^x$就是用它的级数来定义的（这一定义应该是最方便的），同理，对于算符的指数函数$\exp\left(tD\right)$，就是用它的级数展开式来计算的（形式级数），也就是说$\exp\left(tD\right)$不过是$1+tD+\frac{1}{2!}t^2 D^2+\dots$的一个记号。然而，算符的运算跟数字的运算有很多类似的地方，算符的特殊性在于它的非交换性，但很多性质还是没有变化的。而且这里对于$D$来说，$t$是一个常数，因此$D$与$t$存在可交换性，因此符号$\exp(tD)$的性质几乎跟实函数$e^x$一样了。</font></p><p>注意到，根据$(1)$，我们就有<br/>
+$$\Delta_t f(x)=f(x+t)-f(x)=\left[\exp\left(tD\right)-1\right]f(x)$$<br/>
+只看算符部分，就有<br/>
+$$\Delta_t=\exp\left(tD\right)-1\tag{2}$$<br/>
+这就是<u><strong>差分和微分</strong></u>的联系（离散跟连续的关系），多么简洁深刻！特别地，我们有<br/>
+$$\Delta=\exp\left(D\right)-1\tag{3}$$</p><p>$(2)$式不仅有形式上的意义，更有实用价值。我们知道，求导的逆运算就是积分，算积分未必容易，但是我们已经积累了很多关于积分的知识了。但是对于一般的$g(x)$，如果想要求$f(x)$使得$\Delta f=g$，却没有一般的方法，比如$g(x)=(x+1)^m$，那么求解$\Delta f=g$就相当于求解$f(n)=1+2^m+\dots+n^m$了，这是数列求和的应用。</p><p>根据$\Delta f=g$，我们有<br/>
+$$f=\Delta^{-1} g$$<br/>
+问题是$\Delta^{-1}$是什么？此时$(3)$式子就发挥作用了。根据$(3)$式，我们有<br/>
+$$\Delta^{-1}=\frac{1}{\exp\left(D\right)-1}$$<br/>
+右端的式子我们还不知道是什么？利用泰勒级数展开计算即可！事实上，我们有<br/>
+$$\begin{aligned}\Delta^{-1}&amp;=\frac{1}{\exp\left(D\right)-1}=\frac{1}{D}\left(\frac{D}{\exp\left(D\right)-1}\right)\\<br/>
+&amp;=\frac{1}{D}\sum_{n=0}^{\infty}\frac{B_n}{n!}D^n\\<br/>
+&amp;=D^{-1}-\frac{1}{2}+\frac{1}{12}D-\frac{1}{720}D^3+\frac{1}{30240}D^5-\dots\end{aligned}$$<br/>
+这样子就将求解差分方程的问题变成了无穷级数的问题了。其中$B_n$就是第$n$个伯努利数，$\frac{x}{e^x-1}$正是伯努利数的母函数。</p><p>对于$g(x)=(x+1)^m$，求导总在某一项后变为0，因此该级数是有限的。比如$m=2$，我们求得<br/>
+$$\left\{\begin{aligned}&amp;D^{-1} g(x)=\frac{1}{3}(x+1)^3+C\\<br/>
+&amp;g(x)=(x+1)^2\\<br/>
+&amp;D g(x)=2(x+1)\\<br/>
+&amp;D^3 g(x)=0<br/>
+\end{aligned}\right.$$<br/>
+因此<br/>
+$$\begin{aligned}f(x)&amp;=\frac{1}{3}(x+1)^3+C-\frac{1}{2}(x+1)^2+\frac{1}{6}(x+1)\\<br/>
+&amp;=C+\frac{x^3}{3}+\frac{x^2}{2}+\frac{x}{6}\end{aligned}$$<br/>
+代入$x=0$便求得$C=0$。</p><p>更多内容可以参考维基百科：<br/>
+<a href="http://zh.wikipedia.org/zh-cn/伯努利数" target="_blank">http://zh.wikipedia.org/zh-cn/伯努利数</a></p>
+
+
+
+
+
+</div>

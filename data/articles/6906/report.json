@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "6906",
+    "title": "开源一版DGCNN阅读理解问答模型（Keras版）",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/6906",
+    "date": "2019-08-20",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 0,
+    "display_formula_count": 0,
+    "image_count": 0,
+    "heading_count": 3,
+    "code_block_count": 0,
+    "source_text_sha256": "2be1e336695d8934a92bb958db1a2d4b0b013307ee82857aa906a0fd17a2ad8d",
+    "output_text_sha256": "2be1e336695d8934a92bb958db1a2d4b0b013307ee82857aa906a0fd17a2ad8d",
+    "latex_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "body_sha256": "4b72388f550355daf456420f75869af268a4cf9793d6e7e7c7eba25ebbdc9cbb",
+    "converter_version": 1,
+    "markdown_sha256": "3d7016c7279ae372a42b520d3410fd784c74e508ce3d1f618b51ee085509923a"
+  },
+  "fetched_at": "2026-09-14T13:18:05+00:00",
+  "source_snapshot_sha256": "e3af2ca6eb656ef39c13b58688f13d0b959a1975e66979d1257dcc73626d3e99",
+  "images": {},
+  "local_only": true
+}

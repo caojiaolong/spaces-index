@@ -1,0 +1,17 @@
+{
+  "metadata": {
+    "id": "6234",
+    "title": "从动力学角度看优化算法（二）：自适应学习率算法",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/6234",
+    "date": "2018-12-20",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "fetched_at": "2026-09-14T13:22:39+00:00",
+  "source_snapshot_sha256": "2a816da96d4ee5c3bc0fdf8bc02723fb6dd03a596616626cda6b246a843c9b08",
+  "validators": {
+    "etag": null,
+    "last_modified": null
+  }
+}

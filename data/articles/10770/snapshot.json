@@ -1,0 +1,17 @@
+{
+  "metadata": {
+    "id": "10770",
+    "title": "初探MuP：超参数的跨模型尺度迁移规律",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/10770",
+    "date": "2025-03-13",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "fetched_at": "2026-09-14T12:43:32+00:00",
+  "source_snapshot_sha256": "7f0c8f706a739f2f2a4797fdd30450e7d3d26108e14396549b0fb072654bd07d",
+  "validators": {
+    "etag": null,
+    "last_modified": null
+  }
+}

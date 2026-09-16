@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "1773",
+    "title": "王骁威：勇敢的追梦者",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/1773",
+    "date": "2012-11-06",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 2,
+    "display_formula_count": 0,
+    "image_count": 2,
+    "heading_count": 0,
+    "code_block_count": 0,
+    "source_text_sha256": "bfc1b7c48ac182b5588601e2be038ca4ffbbb88d0c53a11e0e16c873d498e3bb",
+    "output_text_sha256": "bfc1b7c48ac182b5588601e2be038ca4ffbbb88d0c53a11e0e16c873d498e3bb",
+    "latex_sha256": "bc6e0b6115bdb5b7600ec201ba14b69502d7d851313b64b522869dcc0f270c78",
+    "body_sha256": "22a55df7b7c6f48d554321ec915401d5503558e04d306d7015fd3f705f8a35f8",
+    "converter_version": 1,
+    "markdown_sha256": "3b860fecd3f5a99bde2a05636f316b8fdfc4ca28b508bb52dd1e1e4565fae6cf"
+  },
+  "fetched_at": "2026-09-14T14:08:59+00:00",
+  "source_snapshot_sha256": "5b29dd7f7472f631616355733b77238c501540996447bc0b34a19987fa854b80",
+  "images": {},
+  "local_only": true
+}

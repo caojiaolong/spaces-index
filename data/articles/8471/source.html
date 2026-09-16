@@ -1,0 +1,28 @@
+<div class="PostContent" id="PostContent">
+<p>在之前的文章<a href="/archives/6794" target="_blank">《用时间换取效果：Keras梯度累积优化器》</a>中，我们介绍过“梯度累积”，它是在有限显存下实现大batch_size效果的一种技巧。一般来说，梯度累积适用的是loss是独立同分布的场景，换言之每个样本单独计算loss，然后总loss是所有单个loss的平均或求和。然而，并不是所有任务都满足这个条件的，比如最近比较热门的对比学习，每个样本的loss还跟其他样本有关。</p><p>那么，在对比学习场景，我们还可以使用梯度累积来达到大batch_size的效果吗？本文就来分析这个问题。</p><h2 id="简介">简介</h2><p>一般情况下，对比学习的loss可以写为<br/>
+\begin{equation}\mathcal{L}=-\sum_{i,j=1}^b t_{i,j}\log p_{i,j} = -\sum_{i,j=1}^b t_{i,j}\log \frac{e^{s_{i,j}}}{\sum\limits_j e^{s_{i,j}}}=-\sum_{i,j=1}^b t_{i,j}s_{i,j} + \sum_{i=1}^b \log\sum_{j=1}^b e^{s_{i,j}}\label{eq:loss}\end{equation}<br/>
+这里的$b$是batch_size；$t_{i,j}$是事先给定的标签，满足$t_{i,j}=t_{j,i}$，它是一个one hot矩阵，每一列只有一个1，其余都为0；而$s_{i,j}$是样本$i$和样本$j$的相似度，满足$s_{i,j}=s_{j,i}$，一般情况下还有个温度参数，这里假设温度参数已经整合到$s_{i,j}$中，从而简化记号。模型参数存在于$s_{i,j}$中，假设为$\theta$。</p><p>可以验证，一般情况下：<br/>
+\begin{equation}-\sum_{i,j=1}^{2b} t_{i,j}\log p_{i,j} \neq -\sum_{i,j=1}^{b} t_{i,j}\log p_{i,j}-\sum_{i,j=b+1}^{2b} t_{i,j}\log p_{i,j}\end{equation}<br/>
+所以直接将小batch_size的对比学习的梯度累积起来，是不等价于大batch_size的对比学习的。类似的问题还存在于带BN（Batch Normalization）的模型中。</p><h2 id="梯度">梯度</h2><p>注意，刚才我们说的是常规的简单梯度累积不能等效，但有可能存在稍微复杂一些的累积方案的。为此，我们分析式$\eqref{eq:loss}$的梯度：<br/>
+\begin{equation}\begin{aligned}<br/>
+\nabla_{\theta}\mathcal{L} =&amp;\, -\sum_{i,j=1}^b t_{i,j}\nabla_{\theta}s_{i,j} + \sum_{i=1}^b \nabla_{\theta}\log\sum_{j=1}^b e^{s_{i,j}} \\<br/>
+=&amp;\, -\sum_{i,j=1}^b t_{i,j}\nabla_{\theta}s_{i,j} + \sum_{i,j=1}^b p_{i,j}\nabla_{\theta} s_{i,j} \\<br/>
+=&amp;\,\nabla_{\theta}\sum_{i,j=1}^b \left(p_{i,j}^{(sg)} - t_{i,j}\right)s_{i,j}<br/>
+\end{aligned}\end{equation}<br/>
+其中$p_{i,j}^{(sg)}$表示不需要对$p_{i,j}$求$\theta$的梯度，也就是深度学习框架的<font color="red">stop_gradient算子</font>。上式表明，如果我们使用基于梯度的优化器，那么使用式$\eqref{eq:loss}$作为loss，跟使用$\sum\limits_{i,j=1}^b \left(p_{i,j}^{(sg)} - t_{i,j}\right)s_{i,j}$作为loss，是完全等价的（因为算出来的梯度一模一样）。</p><h2 id="内积">内积</h2><p>接下来考虑$\nabla_{\theta}s_{i,j}$的计算，一般来说它是向量的内积形式，即$s_{i,j}=\langle h_i, h_j\rangle$，参数$\theta$在$h_i,h_j$里边，这时候<br/>
+\begin{equation}\nabla_{\theta}s_{i,j}=\langle \nabla_{\theta}h_i, h_j\rangle + \langle h_i, \nabla_{\theta}h_j\rangle = \nabla_{\theta}\left(\langle h_i, h_j^{(sg)}\rangle + \langle h_i^{(sg)}, h_j\rangle\right)\end{equation}<br/>
+所以loss中的$s_{i,j}$可以替换为$\langle h_i, h_j^{(sg)}\rangle + \langle h_i^{(sg)}, h_j\rangle$而效果不变：<br/>
+\begin{equation}\begin{aligned}<br/>
+\nabla_{\theta}\sum_{i,j=1}^b \left(p_{i,j}^{(sg)} - t_{i,j}\right)s_{i,j} =&amp;\, \nabla_{\theta}\sum_{i,j=1}^b \left(p_{i,j}^{(sg)} - t_{i,j}\right)\left(\langle h_i, h_j^{(sg)}\rangle + \langle h_i^{(sg)}, h_j\rangle\right)\\<br/>
+=&amp;\, 2\nabla_{\theta}\sum_{i,j=1}^b \left(\overline{p_{i,j}^{(sg)}} - t_{i,j}\right)\langle h_i, h_j^{(sg)}\rangle\\<br/>
+=&amp;\,\nabla_{\theta}\sum_{i=1}^b \left\langle h_i, 2\sum_{j=1}^b\left(\overline{p_{i,j}^{(sg)}} - t_{i,j}\right)h_j^{(sg)}\right\rangle<br/>
+\end{aligned}\label{eq:g}\end{equation}<br/>
+其中$2\overline{p_{i,j}^{(sg)}}=p_{i,j}^{(sg)} + p_{j,i}^{(sg)}$，第二个等号源于将$\langle h_i^{(sg)}, h_j\rangle$那一项的求和下标$i,j$互换而不改变求和结果。</p><h2 id="流程">流程</h2><p>式$\eqref{eq:g}$事实上就已经给出了最终的方案，它可以分为两个步骤。第一步就是向量<br/>
+\begin{equation}\tilde{h}_i = 2\sum_{j=1}^b\left(\overline{p_{i,j}^{(sg)}} - t_{i,j}\right)h_j^{(sg)}\label{eq:h}\end{equation}<br/>
+的计算，这一步不需要求梯度，纯粹是预测过程，所以batch_size可以比较大；第二步就是把$\tilde{h}_i$当作“标签”传入到模型中，以$\langle h_i, \tilde{h}_i\rangle$为单个样本的loss进行优化模型，这一步需要求梯度，但它已经转化为每个样本的梯度和的形式了，所以这时候就可以用常规的梯度累积了。</p><p>假设反向传播的最大batch_size是$b$，前向传播的最大batch_size是$nb$，那么通过梯度累积让对比学习达到batch_size为$nb$的效果，其格式化的流程如下：</p><blockquote><p>1、采样一个batch的数据$\{x_i\}_{i=1}^{nb}$，对应的标签矩阵为$\{t_{i,j}\}_{i,j=1}^{nb}$，初始累积梯度为$g=0$；</p><p>2、模型前向计算，得到编码向量$\{h_i\}_{i=1}^{nb}$以及对应的概率矩阵$\{p_{i,j}\}_{i,j=1}^{nb}$；</p><p>3、根据式$\eqref{eq:h}$计算标签向量$\{\tilde{h}_i\}_{i=1}^{nb}$；</p><p>4、对于$k=1,2,\cdots,n$，执行：</p><p>    $g \leftarrow g + \nabla_{\theta}\sum\limits_{i=(k-1)b+1}^{kb} \langle h_i, \tilde{h}_i\rangle$</p><p>5、用$g$作为最终梯度更新模型，然后重新执行第1步。</p></blockquote><p>总的来说，在计算量上比常规的梯度累积多了一次前向计算。当然，如果前向计算的最大batch_size都不能满足我们的需求，那么也可以分批前向计算，因为我们只需要把各个$\{h_i\}_{i=1}^{nb}$算出来存好，而$\{p_{i,j}\}_{i,j=1}^{nb}$可以基于$\{h_i\}_{i=1}^{nb}$算出来。</p><p>最后还要提醒的是，上述流程只是在优化时等效于大batch_size模型，也就是说$\langle h_i, \tilde{h}_i\rangle$的梯度等效于原loss的梯度，但是它的值并不等于原loss的值，因此不能用$\langle h_i, \tilde{h}_i\rangle$作为loss来评价模型，它未必是单调的，也未必是非负的，跟原来的loss也不具有严格的相关性。</p><h2 id="问题">问题</h2><p>上述流程有着跟<a href="/archives/7367" target="_blank">《节省显存的重计算技巧也有了Keras版了》</a>介绍的“重计算”一样的问题，那就是跟Dropout并不兼容，这是因为每次更新都涉及到了多次前向计算，每次前向计算都有不一样的Dropout，这意味着我们计算标签向量$\tilde{h}_i$时所用的$h_i$跟计算梯度时所用的$h_i$并不是同一个，导致计算出来的梯度并非最合理的梯度。</p><p>这没有什么好的解决方案，最简单有效的方法就是在模型中去掉Dropout。这对于CV来说没啥大问题，因为CV的模型基本也不见Dropout了；对于NLP来说，第一反应能想到的结果就是<a href="/archives/8348" target="_blank">SimCSE</a>没法用梯度累积，因为Dropout是SimCSE的基础～</p><h2 id="小结">小结</h2><p>本文分析了对比学习的梯度累积方法，结果显示对比学习也可以用梯度累积的，只不过多了一次前向计算，并且需要在模型中去掉Dropout。本文同样的思路还可以分析BN如何使用梯度累积，有兴趣的读者不妨试试。</p>
+
+
+
+
+
+</div>

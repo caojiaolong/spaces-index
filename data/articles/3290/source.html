@@ -1,0 +1,40 @@
+<div class="PostContent" id="PostContent">
+<p>在最优化问题中，求一个函数的最大值或最小值，最直接的方法是求导，然后比较各阶极值的大小。然而，我们所要优化的函数往往不一定可导，比如函数中含有最大值函数$\max(x,y)$的。这时候就得求助于其他思路了。有一个很巧妙的思路是，将这些不可导函数用一个可导的函数来近似它，从而我们用求极值的方法来求出它近似的最优值。<u>本文的任务，就是探究一个简单而有用的函数，它能够作为最大值函数的近似，并且具有多阶导数。</u>下面是笔者给出的一个推导过程。</p><p>在数学分析中，笔者已经学习过一个关于最大值函数的公式，即当$x \geq 0, y \geq 0$时，我们有<br/>
+$$\max(x,y)=\frac{1}{2}\left(|x+y|+|x-y|\right)\tag{1}$$<br/>
+那么，为了寻求一个最大值的函数，我们首先可以考虑寻找一个能够近似表示绝对值$|x|$的函数，这样我们就把问题从二维降低到一维了。那么，哪个函数可以使用呢？</p><p>直接观察挺难发现哪个函数可以使用的，我们将问题逐步向简单推进。我们对$f(x)=|x|$求导，除了$x=0$这一点外，其他都可以顺利求导<br/>
+$$f'(x) = \left\{\begin{aligned}1,&amp;\,x &gt; 0\\<br/>
+-1,&amp;\, x &lt; 0\end{aligned}\right.\tag{2}$$<br/>
+这是一个简单的分段函数，在物理中，这类函数十分常见，跟它最接近的，应该是单位阶跃函数$\theta(x)$：<br/>
+$$\theta(x) = \left\{\begin{aligned}1,&amp;\,x &gt; 0\\<br/>
+0,&amp;\, x &lt; 0\end{aligned}\right.\tag{3}$$<br/>
+那么<br/>
+$$f'(x)=2\theta(x)-1\tag{4}$$<br/>
+下面只需要寻求$\theta(x)$的近似函数，物理学家已经提供现成的函数给我们了，一个比较简单的形式是<sup><a href="http://zh.wikipedia.org/wiki/%E5%8D%95%E4%BD%8D%E9%98%B6%E8%B7%83%E5%87%BD%E6%95%B0" target="_blank">[来源：维基百科]</a></sup><br/>
+$$\theta(x)=\lim_{k\to +\infty} \frac{1}{1+e^{-k x}}\tag{5}$$<br/>
+那么我们就可以取$\frac{1}{1+e^{-k x}}$作为近似函数了，代入$(4)$式得到$\frac{2e^{k x}}{1+e^{k x}}-1$，积分得到<br/>
+$$\begin{aligned}f(x)&amp;=\frac{2}{k}\ln(1+e^{kx})-x\\<br/>
+&amp;=\frac{1}{k}\left[\ln(1+e^{kx})+\ln(1+e^{-kx})\right]\\<br/>
+&amp;=\frac{1}{k}\ln(2+e^{kx}+e^{-kx})\end{aligned}\tag{6}$$<br/>
+不难发现，$(6)$式中的对数部分，在$k$足够大的时候，常数$2$的影响微乎其微，把它去掉之后，我们有一个比较简单的绝对值函数：<br/>
+$$|x|=\lim_{k\to +\infty} \frac{1}{k}\ln(e^{kx}+e^{-kx})\tag{7}$$<br/>
+结合$(7)$式和$(1)$式，我们就得到<br/>
+$$\max(x,y)=\lim_{k\to +\infty} \frac{1}{2k}\left\{\ln[e^{k(x+y)}+e^{-k(x+y)}]+\ln[e^{k(x-y)}+e^{-k(x-y)}]\right\}\tag{8}$$<br/>
+$(8)$式还可以再化简，我们得到<br/>
+$$\max(x,y)=\lim_{k\to +\infty} \frac{1}{2k}\ln(e^{2kx}+e^{-2kx}+e^{2ky}+e^{-2ky})\tag{9}$$<br/>
+并且由于$(1)$式是在$x\geq 0,y\geq 0$时成立的，所以$(9)$式中的$e^{-2kx}$和$e^{-2ky}$均变得不重要了，我们也把它们去掉，进一步得到<br/>
+$$\max(x,y)=\lim_{k\to +\infty} \frac{1}{2k}\ln(e^{2kx}+e^{2ky})\tag{10}$$<br/>
+或者写成<br/>
+$$\max(x,y)=\lim_{k\to +\infty} \frac{1}{k}\ln(e^{kx}+e^{ky})\tag{11}$$<br/>
+$(11)$式正是我们希望得到的理想的最大值函数。虽然我们的推导基于$x\geq 0,y\geq 0$，但是不难发现，对于$x,y$中出现负数时，上述公式仍然成立！它甚至还可以推广到多个变量的最大值函数：<br/>
+$$\max(x,y,z,\dots)=\lim_{k\to +\infty} \frac{1}{k}\ln(e^{kx}+e^{ky}+e^{kz}+\dots)\tag{12}$$</p><p>关于$(11)$式更多的展示，请阅读Matrix67的《如何构造一个平滑的最大值函数》：<br/>
+<a href="http://www.matrix67.com/blog/archives/2830" target="_blank">http://www.matrix67.com/blog/archives/2830</a></p><p>观察$(11)$式的结构可以看出，这实际上是做了这样的一个事情：找一个在整个实数域上都单调递增的函数，而且增长速度要快于线性增长，然后求和，最后取逆函数。因此，不难构造出类似的函数：我们选$y=x^{2k+1}$，那么得到<br/>
+$$\max(x,y)=\lim_{k\to+\infty} \sqrt[2k+1]{x^{2k+1}+y^{2k+1}}\tag{13}$$<br/>
+当然，$(13)$的精度（或者说收敛速度）远没有$(11)$那么好，要提高精度也不难，比如<br/>
+$$\max(x,y)=\lim_{k\to +\infty} \frac{1}{k}\ln\ln\left(e^{e^{kx}}+e^{e^{ky}}\right)\tag{14}$$<br/>
+综合精度和简洁两方面考虑，估计最优的选择就是$(11)$了。</p>
+
+
+
+
+
+</div>

@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "304",
+    "title": "哥本哈根没有“句号”，留下一个“逗号”",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/304",
+    "date": "2009-12-20",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 0,
+    "display_formula_count": 0,
+    "image_count": 1,
+    "heading_count": 0,
+    "code_block_count": 0,
+    "source_text_sha256": "0cc2127e7a182a866a92fe71e867ec836cdd35184adee6e69a52c3a3266a25a0",
+    "output_text_sha256": "0cc2127e7a182a866a92fe71e867ec836cdd35184adee6e69a52c3a3266a25a0",
+    "latex_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "body_sha256": "b0c7b2619e311cf0dad5576a509cedcf82904451fc5dac511cffeffd2dae769b",
+    "converter_version": 1,
+    "markdown_sha256": "5ea56f95f10266557a1bec503050efb67ecc513d6882b775641d49d909c15799"
+  },
+  "fetched_at": "2026-09-14T14:44:54+00:00",
+  "source_snapshot_sha256": "203a9df0c3655aeda1fc1d1de83d9813575961368aa41ba9805ee11febc4d81c",
+  "images": {},
+  "local_only": true
+}

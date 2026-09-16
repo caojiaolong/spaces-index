@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "6163",
+    "title": "不用L约束又不会梯度消失的GAN，了解一下？",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/6163",
+    "date": "2018-11-20",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 84,
+    "display_formula_count": 20,
+    "image_count": 3,
+    "heading_count": 23,
+    "code_block_count": 0,
+    "source_text_sha256": "1d86dec2d0164c70637c551af5bdfc859b197f48d7ba4dcf32ea6bd3accb881a",
+    "output_text_sha256": "1d86dec2d0164c70637c551af5bdfc859b197f48d7ba4dcf32ea6bd3accb881a",
+    "latex_sha256": "c997f27229a3a4f680f48bf8dce55e4a95d942eb410c445e749f368e0a28184b",
+    "body_sha256": "5ed3d0cd562dacd872986a268b970ce7a8ef803e9f922e0fd96d9296346c99c2",
+    "converter_version": 1,
+    "markdown_sha256": "13e5ab684648165ca2c1a14f1ae66c3252cff17980f93ff6ec6c0a7acc219895"
+  },
+  "fetched_at": "2026-09-14T13:23:06+00:00",
+  "source_snapshot_sha256": "2b3eca7f44095698093d4c3f13a30d670b7eaac11f92c08a57d9f2475ae5ba23",
+  "images": {},
+  "local_only": true
+}

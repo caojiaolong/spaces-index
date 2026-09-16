@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "11777",
+    "title": "流形上的最速下降：6. Muon + 双旋转",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/11777",
+    "date": "2026-06-08",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 62,
+    "display_formula_count": 8,
+    "image_count": 0,
+    "heading_count": 6,
+    "code_block_count": 0,
+    "source_text_sha256": "228ece22a2b8d13c532a3acf08d064e128acf9a512f856179b0e8b5c4ed5bd41",
+    "output_text_sha256": "228ece22a2b8d13c532a3acf08d064e128acf9a512f856179b0e8b5c4ed5bd41",
+    "latex_sha256": "0b7b0c3b9787f32080558a1d116040c592abedaa33b01c24c26b850ed2a2725f",
+    "body_sha256": "eb372bdf9a8cdff7c326d6114d74f29d7cfd90c619107ba69b27db553f9c924a",
+    "converter_version": 1,
+    "markdown_sha256": "8bb9d1a7507bb00881f7246a35062ad65b37146d6ae0efdad2dcde9f79c48144"
+  },
+  "fetched_at": "2026-09-14T12:30:58+00:00",
+  "source_snapshot_sha256": "9d60a71e513da02a06640881c395592d9724054aa0e0556fe90410c7c029909f",
+  "images": {},
+  "local_only": true
+}

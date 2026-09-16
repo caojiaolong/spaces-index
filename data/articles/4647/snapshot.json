@@ -1,0 +1,17 @@
+{
+  "metadata": {
+    "id": "4647",
+    "title": "浅谈神经网络中激活函数的设计",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/4647",
+    "date": "2017-10-26",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "fetched_at": "2026-09-14T13:30:13+00:00",
+  "source_snapshot_sha256": "3a06cd69fc818eb403edb32f402554d2a793cee85388c90c7f5e42712edc0416",
+  "validators": {
+    "etag": null,
+    "last_modified": null
+  }
+}

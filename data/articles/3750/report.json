@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "3750",
+    "title": "路径积分系列：2.随机游走模型",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/3750",
+    "date": "2016-05-30",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 76,
+    "display_formula_count": 21,
+    "image_count": 0,
+    "heading_count": 4,
+    "code_block_count": 0,
+    "source_text_sha256": "0621bb95548588337b81d60270c2eea9c469085879b637aa3ae305e2926a2b8b",
+    "output_text_sha256": "0621bb95548588337b81d60270c2eea9c469085879b637aa3ae305e2926a2b8b",
+    "latex_sha256": "8018f8886108fe03a7deb34d59bd3bdb31995529af8cdc5fd0e241f49e42a74a",
+    "body_sha256": "586dee4ff3de0d74b18bacff54ad18f0a6da5f10dc31a0d578a60e60616fac45",
+    "converter_version": 1,
+    "markdown_sha256": "98f4dba1787915753d4c94c70e5bc3ce689e484c9582157e14096acc05f7de36"
+  },
+  "fetched_at": "2026-09-14T13:40:52+00:00",
+  "source_snapshot_sha256": "745d6eb10106e8e458a2990f462a550919decf08524582476d50db59b79f9f7a",
+  "images": {},
+  "local_only": true
+}

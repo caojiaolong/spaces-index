@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "3256",
+    "title": "有趣的求极限题：随心所欲的放缩",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/3256",
+    "date": "2015-03-28",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 22,
+    "display_formula_count": 12,
+    "image_count": 0,
+    "heading_count": 1,
+    "code_block_count": 0,
+    "source_text_sha256": "f60d1f8d6c5abc0ec5cc84f1993b5c46dff4c0c673bc46a1160c8a7942939bd8",
+    "output_text_sha256": "f60d1f8d6c5abc0ec5cc84f1993b5c46dff4c0c673bc46a1160c8a7942939bd8",
+    "latex_sha256": "436e8ae09bacf3ee2ec438c9d719e70529b02623b416e3517045e7a771a154c5",
+    "body_sha256": "3e65dc542106ea1568821acd1c438e0f32d9ed2fa2e6353ec422f6a380387540",
+    "converter_version": 1,
+    "markdown_sha256": "fb44c4cd69cc340b791d613a322dc1395e71c7643c89435a1580f0e99ee066d6"
+  },
+  "fetched_at": "2026-09-14T13:47:07+00:00",
+  "source_snapshot_sha256": "75e8528626ff09a909ed81fbaacafe08a1f67ebcb1db5339fa8d62a9d4ef8c11",
+  "images": {},
+  "local_only": true
+}

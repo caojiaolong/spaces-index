@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "3036",
+    "title": "只有两个四阶群和六阶群",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/3036",
+    "date": "2014-10-30",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 66,
+    "display_formula_count": 5,
+    "image_count": 0,
+    "heading_count": 0,
+    "code_block_count": 0,
+    "source_text_sha256": "a8e14f4c124a7a5ae537e647dcd14c151e73e845d7815d2481ffd5a798bf773e",
+    "output_text_sha256": "a8e14f4c124a7a5ae537e647dcd14c151e73e845d7815d2481ffd5a798bf773e",
+    "latex_sha256": "80b3ee10f515ab4c515a3e14ad2be006fec2dc52470f0f591dcf838f46cc8e45",
+    "body_sha256": "6975d0a1b49586d06c863fe58b9ee68265d2f584a26747d3edc6057d70d53dde",
+    "converter_version": 1,
+    "markdown_sha256": "dd3af57dbac13ea81abb7ca4915ae3b4d51d0389929bec93700a0c6932349a4a"
+  },
+  "fetched_at": "2026-09-14T13:49:59+00:00",
+  "source_snapshot_sha256": "27ddac77aa2fb6f73cf104b76fe0c15140b42747df95d82c6e4a47ae45aceccc",
+  "images": {},
+  "local_only": true
+}

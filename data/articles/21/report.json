@@ -1,0 +1,39 @@
+{
+  "metadata": {
+    "id": "21",
+    "title": "今天把Blog升级了",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/21",
+    "date": "2009-07-16",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "source_dom_exact": true,
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "attributes_exact": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 0,
+    "display_formula_count": 0,
+    "image_count": 1,
+    "heading_count": 0,
+    "code_block_count": 0,
+    "source_text_sha256": "32a21975406c9bf75635daae3dbc613c13fb40f1f13e6af2fd72fdebf1286a62",
+    "output_text_sha256": "32a21975406c9bf75635daae3dbc613c13fb40f1f13e6af2fd72fdebf1286a62",
+    "latex_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "body_sha256": "40c7f56766607f4121378d405377fd93ff90d6df2e85e70b39f503c10cb63b0e",
+    "converter_version": 1,
+    "format": "html-v1",
+    "source_warnings": [],
+    "fallback_reason": "Unsupported or unsafe source URL",
+    "markdown_sha256": "f09480e4616e1f26cbb7f092ebbba1c015aec4f3b605767da8bdb381ad43d204"
+  },
+  "fetched_at": "2026-09-14T15:05:37+00:00",
+  "source_snapshot_sha256": "b44baed8ec94f65dc86d9279dbf3b80bfea5ea3ed5a87a63686764248b388f78",
+  "images": {},
+  "local_only": true
+}

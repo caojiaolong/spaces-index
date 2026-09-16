@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "1276",
+    "title": "线圈感抗和电容容抗的计算",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/1276",
+    "date": "2011-02-26",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 17,
+    "display_formula_count": 5,
+    "image_count": 1,
+    "heading_count": 0,
+    "code_block_count": 0,
+    "source_text_sha256": "f5231b62681ac1b819137c4eaf749791e59d09ac4df93125931ed8c2f959423c",
+    "output_text_sha256": "f5231b62681ac1b819137c4eaf749791e59d09ac4df93125931ed8c2f959423c",
+    "latex_sha256": "b535fe6bd8bd73363cf89dc040985f583efbca5343a4f72d3121705cf571030a",
+    "body_sha256": "7788804772e0954e6ac0166502847be48af291ed2547641f883b819f03fd2b86",
+    "converter_version": 1,
+    "markdown_sha256": "56e11a18bb968608c4864ff826aaff3e60479468ef95f7f1d4fc4eee2facf890"
+  },
+  "fetched_at": "2026-09-14T14:23:42+00:00",
+  "source_snapshot_sha256": "7c203a200d782948b150d01888531e58186009374d1b08f68638af6f3707caf7",
+  "images": {},
+  "local_only": true
+}

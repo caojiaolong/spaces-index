@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "9588",
+    "title": "从JL引理看熵不变性Attention",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/9588",
+    "date": "2023-04-10",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 48,
+    "display_formula_count": 3,
+    "image_count": 0,
+    "heading_count": 4,
+    "code_block_count": 0,
+    "source_text_sha256": "92f57eff3528446ccf8ef642c06d4b5327cebeab6961a9a588c6288fb7228d60",
+    "output_text_sha256": "92f57eff3528446ccf8ef642c06d4b5327cebeab6961a9a588c6288fb7228d60",
+    "latex_sha256": "e21634a7214c03e9ef18e920f3919045c7024e1a06840094a8c33def70f08590",
+    "body_sha256": "fc4b965a884605c7d2e47eb3732d8dff3713fcd4c4501781d2ac5076a617630e",
+    "converter_version": 1,
+    "markdown_sha256": "bdc282c161a1d9aa233f7d95a74b76b74c9240daacbc413a3ddd6891a14036ef"
+  },
+  "fetched_at": "2026-09-14T12:54:39+00:00",
+  "source_snapshot_sha256": "24d80c8e5698271e43582607e3443bd66faaf6025366095f14089482a90d5a47",
+  "images": {},
+  "local_only": true
+}

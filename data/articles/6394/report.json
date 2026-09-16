@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "6394",
+    "title": "非对抗式生成模型GLANN的简单介绍",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/6394",
+    "date": "2019-02-26",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 62,
+    "display_formula_count": 16,
+    "image_count": 3,
+    "heading_count": 8,
+    "code_block_count": 0,
+    "source_text_sha256": "f0810e33db3ea90eb4b2f12399b9ecb7bfc51494fe690f880e6fbe5c49b76dc5",
+    "output_text_sha256": "f0810e33db3ea90eb4b2f12399b9ecb7bfc51494fe690f880e6fbe5c49b76dc5",
+    "latex_sha256": "1f504b811b7e2ccc59ee83e110274fc1314e4f410602942be50d6970132cabb1",
+    "body_sha256": "69e2bb3fa83b77d99c475f6d1a8adfaec7ab46487185bff19890eba824790036",
+    "converter_version": 1,
+    "markdown_sha256": "1a47ab93baf5d59c7f967715f0f07e58e2258f8c5e9dc6682a866f564b1d5d5b"
+  },
+  "fetched_at": "2026-09-14T13:21:23+00:00",
+  "source_snapshot_sha256": "5978c81ee5be2ef5b4b17cfe3abcd2537fb123ab48181670e5e15bb705800254",
+  "images": {},
+  "local_only": true
+}

@@ -1,0 +1,25 @@
+<div class="PostContent" id="PostContent">
+<p><img alt="" src="/usr/uploads/2009/07/20090731094451.jpg" style="float:right"/>在中学，有理数的定义为整数和分数的集合，统一来说就是能够写成两个整数之比的数。那相对地，无理数自然就是不能写成两个整数之比的数了，也就是无限不循环小数，比如$\pi,\sqrt{2}$等等。历史上无理数的发现带来了第一次数学危机，并生下了一颗“金蛋”，不过发现者却因此丢掉了生命。让我们永远铭记——<span style="color:Red">希帕索斯(Hippasus)</span>。</p><p><strong>历史：</strong></p><blockquote><a href="http://baike.baidu.com/view/1167.htm#2" target="_blank">http://baike.baidu.com/view/1167.htm#2</a></blockquote><p>在这里对无理数就不多说些什么了，主要是谈谈相关的证明而已。<br/>
+先说明，以下是我自己的证明方法，当然我相信有一种方法是通用的，但是我没有找出来。</p><p><strong>1. $\sqrt{2}$是无理数。</strong></p><blockquote><p><strong>证：</strong>我们假设$\sqrt{2}$是有理数，并且令$\sqrt{2}=p/q$，$p/q$是最简分数。由于$\sqrt{2}$不是整数，所以q&gt;1。</p><p>我们将两边平方，得到$2={p^2}/{q^2}$，因为$p/q$是最简分数，所以${p^2}/{q^2}$也是最简分数。2的最简分数只能够是$2/1$，由此得出q=1，这与q&gt;1矛盾。所以假设不成立，$\sqrt{2}$是无理数。</p></blockquote><p><strong>2. $\sqrt{2}+\sqrt{3}$是无理数。</strong></p><blockquote><p><strong>证：</strong>这个简单了，相信大家都会。</p><p>我们假设$\sqrt{2}+\sqrt{3}=p$是有理数，两边平方得到$5+2\sqrt{6}=p^2\Rightarrow \sqrt{6}={p^2-5}/2$，于是$\sqrt{6}$是有理数，矛盾。因此假设不成立。</p></blockquote><p><strong>3. $\sqrt{2}+\sqrt{3}+\sqrt{5}$是无理数。</strong></p><p>证：这个可不怎么简单了，我可是想了好久。</p><blockquote>(1) 我们假设$\sqrt{2}+\sqrt{3}+\sqrt{5}=p$是有理数，两边平方得到<br/>
+$10+2\sqrt{6}+2\sqrt{10}+2\sqrt{15}=p^2\Rightarrow \sqrt{6}+\sqrt{10}+\sqrt{15}={p^2-10}/2$，<br/>
+于是$\sqrt{6}+\sqrt{10}+\sqrt{15}$是有理数。两边再次平方，得：<br/>
+$31+10\sqrt{6}+6\sqrt{10}+4\sqrt{15}={(p^2-10)^2}/4$，<br/>
+于是$5\sqrt{6}+3\sqrt{10}+2\sqrt{15}={{(p^2-10)^2}/4-31}/2$<br/>
+由于$\sqrt{6}+\sqrt{10}+\sqrt{15}$是有理数，所以<br/>
+$$3\sqrt{6}+\sqrt{10}={{(p^2-10)^2}/4-31}/2-2(\sqrt{6}+\sqrt{10}+\sqrt{15})$$<br/>
+的左边是一个有理数，但由方法2可证明$3\sqrt{6}+\sqrt{10}$为无理数，矛盾，于是假设不成立。</blockquote><blockquote>(2) 同样假设$\sqrt{2}+\sqrt{3}+\sqrt{5}=p$是有理数，我们将式子变成<br/>
+$\sqrt{2}+\sqrt{3}=p-\sqrt{5}$，两边平方：<br/>
+$$\begin{aligned}(\sqrt{2}+\sqrt{3})^2=(p-\sqrt{5})^2 \\ \Rightarrow 5+2\sqrt{6}=p^2+5-2p\sqrt{5}\end{aligned}$$<br/>
+于是得出$\sqrt{6}+p\sqrt{5}$是有理数，也是矛盾的。</blockquote><p><strong>4. $\sqrt{2}+\sqrt{3}+\sqrt{5}+\sqrt{7}$是无理数。</strong></p><blockquote><p><strong>证：</strong>在报纸上画了一整天，终于有头绪了。</p><p>同样假设$\sqrt{2}+\sqrt{3}+\sqrt{5}+\sqrt{7}=p$是有理数，我们将式子变成<br/>
+$\sqrt{2}+\sqrt{3}+\sqrt{5}=p-\sqrt{7}$，两边平方得到：<br/>
+$$10+2\sqrt{6}+2\sqrt{10}+2\sqrt{15}=p^2+7-2p\sqrt{7}$$<br/>
+$\Rightarrow \sqrt{6}+\sqrt{10}+\sqrt{15}+p\sqrt{7}=(p^2-3)/2$是一个有理数。<br/>
+两边继续平方：<br/>
+$$\begin{aligned}(\sqrt{6}+\sqrt{10}+\sqrt{15})^2=((p^2-3)/2-p\sqrt{7})^2 \\ \Rightarrow 31+10\sqrt{6}+6\sqrt{10}+4\sqrt{15}=((p^2-3)/2)^2+7p^2-p(p^2-3)\sqrt{7} \\ \Rightarrow 2\sqrt{10}+4\sqrt{6}+p(p^2-7)\sqrt{7}=((p^2-3)/2)^2+7p^2-4(\sqrt{6}+\sqrt{10}+\sqrt{15}+p\sqrt{7})\end{aligned}$$<br/>
+由于$\sqrt{6}+\sqrt{10}+\sqrt{15}+p\sqrt{7}=(p^2-3)/2$是有理数，所以$2\sqrt{10}+4\sqrt{6}+p(p^2-7)\sqrt{7}$是有理数，矛盾。</p></blockquote><p><span style="color:Red"><strong>以上是关于平方根和的证明，证明比较粗糙、繁琐，不过原理极其容易理解的。方法范围有限，最多支持到4个平方根和，通用的方法正在寻找中......</strong></span></p>
+
+
+
+
+
+</div>

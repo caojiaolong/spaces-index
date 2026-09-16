@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "1630",
+    "title": "为方轮自行车铺路",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/1630",
+    "date": "2012-06-24",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 24,
+    "display_formula_count": 12,
+    "image_count": 4,
+    "heading_count": 0,
+    "code_block_count": 0,
+    "source_text_sha256": "36fa3ccee5085ed64ca4bd9d1daee385fd819b0182b9788c16cf698cd66c85a2",
+    "output_text_sha256": "36fa3ccee5085ed64ca4bd9d1daee385fd819b0182b9788c16cf698cd66c85a2",
+    "latex_sha256": "b61a9d2b11f26f2d5582d5bc1324fe482e07b86d80c408ee15ca72dc00ae39ac",
+    "body_sha256": "0545ff6a7e5d183ccee902f90ff71ca564a499f785ca7242052cb69c44a0ccfb",
+    "converter_version": 1,
+    "markdown_sha256": "13beb882235514ef10e1309ff7d698eba2c2c13673bf09f4971e5fc0a8c86909"
+  },
+  "fetched_at": "2026-09-14T14:13:38+00:00",
+  "source_snapshot_sha256": "a7717fed50e19baf925b6f0a272ce210117ddaf0f22a1af5aaeb41526ad09127",
+  "images": {},
+  "local_only": true
+}

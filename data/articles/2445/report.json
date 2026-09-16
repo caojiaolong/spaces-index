@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "2445",
+    "title": "不求珍馐百味，但愿开水白菜",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/2445",
+    "date": "2014-03-15",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 0,
+    "display_formula_count": 0,
+    "image_count": 10,
+    "heading_count": 0,
+    "code_block_count": 0,
+    "source_text_sha256": "c41e59448b37fbe7f4b56354f7f56796251801b07991aababf631a61832ac51d",
+    "output_text_sha256": "c41e59448b37fbe7f4b56354f7f56796251801b07991aababf631a61832ac51d",
+    "latex_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "body_sha256": "0c1e9d2404ce1c980a548d49e4d6a5730517cb925c35bfca0b1d11680ae5b7f7",
+    "converter_version": 1,
+    "markdown_sha256": "5317bfe40c8862d73fb721aeee7a5d0aff1e504a6062cb240c652c70b24809d1"
+  },
+  "fetched_at": "2026-09-14T13:56:03+00:00",
+  "source_snapshot_sha256": "51692a59c73022a2fbc4f61558e47b0890b50397296eae81c9bd99606b4b182d",
+  "images": {},
+  "local_only": true
+}

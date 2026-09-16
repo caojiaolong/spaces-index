@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "6534",
+    "title": "分享：用LaTeX+MathJax画一个三维三阶环方",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/6534",
+    "date": "2019-03-28",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 1,
+    "display_formula_count": 1,
+    "image_count": 0,
+    "heading_count": 0,
+    "code_block_count": 0,
+    "source_text_sha256": "9d1967af88c5bc9f876011b57a594cb370360b4ca99813aecd339f8421ba2d51",
+    "output_text_sha256": "9d1967af88c5bc9f876011b57a594cb370360b4ca99813aecd339f8421ba2d51",
+    "latex_sha256": "4f1a750edfa4178cc8952e4b741462de055d01dd96397a8388ff7b1b6e0296fc",
+    "body_sha256": "283a6226ecf13517ec176afa4771caeee3a99f956d07423e71dae4250be53525",
+    "converter_version": 1,
+    "markdown_sha256": "1b7e053847f8c53713c6467dc891b3ef8287fc76d341fb8170938539b73483f5"
+  },
+  "fetched_at": "2026-09-14T13:20:35+00:00",
+  "source_snapshot_sha256": "4596024f20fa4ae3995b6b762cfe2745d67d188473a30322989a4880a4e8bb59",
+  "images": {},
+  "local_only": true
+}

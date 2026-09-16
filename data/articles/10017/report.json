@@ -1,0 +1,41 @@
+{
+  "metadata": {
+    "id": "10017",
+    "title": "时空之章：将Attention视为平方复杂度的RNN",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/10017",
+    "date": "2024-03-18",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "source_dom_exact": true,
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "attributes_exact": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 38,
+    "display_formula_count": 2,
+    "image_count": 4,
+    "heading_count": 5,
+    "code_block_count": 0,
+    "source_text_sha256": "6c2d125c40e44daed8663048bb42be44e41eb7c190cb5d3df02ce050ec5fe65a",
+    "output_text_sha256": "6c2d125c40e44daed8663048bb42be44e41eb7c190cb5d3df02ce050ec5fe65a",
+    "latex_sha256": "3204ecafe676e82135632b835dc27c0678f168932352f76a2175bac804747acf",
+    "body_sha256": "6cfc139ae51e63544417374a7dc132c359294626a3ce593298f92a21aa3078f5",
+    "converter_version": 1,
+    "format": "html-v1",
+    "source_warnings": [
+      "原文含格式异常的链接，已保留原始地址但不启用跳转。"
+    ],
+    "fallback_reason": "Unsupported or unsafe source URL",
+    "markdown_sha256": "380a0f530cc9c727c8be4380806f6b0e9c7d49abdc2638044eaeeb3b897e4595"
+  },
+  "fetched_at": "2026-09-14T12:49:21+00:00",
+  "source_snapshot_sha256": "00cde4a9fd910419ae971181acee46a5d3a87eefecc2a2edc202623d15709c2a",
+  "images": {},
+  "local_only": true
+}

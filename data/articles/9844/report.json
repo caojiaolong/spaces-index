@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "9844",
+    "title": "VQ一下Key，Transformer的复杂度就变成线性了",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/9844",
+    "date": "2023-11-09",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 93,
+    "display_formula_count": 10,
+    "image_count": 3,
+    "heading_count": 9,
+    "code_block_count": 0,
+    "source_text_sha256": "689a7046f306216180e844909ae0cce4138d0f38a3201e0633e21b8c39691764",
+    "output_text_sha256": "689a7046f306216180e844909ae0cce4138d0f38a3201e0633e21b8c39691764",
+    "latex_sha256": "5628f6b253ed2aa2dc6f5de825f9c62ffe87e066d53ad346b653e6b37c08be3e",
+    "body_sha256": "1df1553eedf1efc5fc1d8aaa9295f62354fcab7a057c6317d698bf34030385ca",
+    "converter_version": 1,
+    "markdown_sha256": "920acd012a50750112eff006a603a403367625a62543ccaa5c285632b218f726"
+  },
+  "fetched_at": "2026-09-14T12:51:04+00:00",
+  "source_snapshot_sha256": "3d3f4cde0c45b159e831600928b8935a145d42414ca2017f3d8fe869037e32d8",
+  "images": {},
+  "local_only": true
+}

@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "7",
+    "title": "科学空间：一种有趣的平方数",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/7",
+    "date": "2009-07-08",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 28,
+    "display_formula_count": 3,
+    "image_count": 0,
+    "heading_count": 0,
+    "code_block_count": 0,
+    "source_text_sha256": "a4d7b135995d20b45075ca2c0577e4da62fadba19675a79a0c82cc6a08795a4c",
+    "output_text_sha256": "a4d7b135995d20b45075ca2c0577e4da62fadba19675a79a0c82cc6a08795a4c",
+    "latex_sha256": "e59eda8b08f3e73a2e4e1312e856afcbc7cee850239ab5e046c10598aed8b942",
+    "body_sha256": "8e8aa46ebd02dbe2faf585cbac0fc7b8d1bde493124eb018104760e4311c1ef5",
+    "converter_version": 1,
+    "markdown_sha256": "3de2fa1e0bd1e652f39162e71751ee30940bd918b333b3d5068194c038db7cdd"
+  },
+  "fetched_at": "2026-09-14T15:07:24+00:00",
+  "source_snapshot_sha256": "6c5e05466b3637ff73cd2e2bd99c28ff981604fd11ef0c35bbe3e95edc88acb7",
+  "images": {},
+  "local_only": true
+}

@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "8783",
+    "title": "开局一段扯，数据全靠编？真被一篇“神论文”气到了",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/8783",
+    "date": "2021-12-04",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 0,
+    "display_formula_count": 0,
+    "image_count": 2,
+    "heading_count": 2,
+    "code_block_count": 0,
+    "source_text_sha256": "c8e210b7403abd9a2f8218a3628c3019970b82453ddba596cad91c8dbe4774fd",
+    "output_text_sha256": "c8e210b7403abd9a2f8218a3628c3019970b82453ddba596cad91c8dbe4774fd",
+    "latex_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "body_sha256": "7b838b43911a5fc47883ad7099d60d7cefc6180b9fcde936b2bb38a5ecfe90dc",
+    "converter_version": 1,
+    "markdown_sha256": "5c1d3485037dc1776185c4ed5aee7b6f7daf4ca6374e28ee73ee05d0f1aeb949"
+  },
+  "fetched_at": "2026-09-14T13:02:56+00:00",
+  "source_snapshot_sha256": "ca54062f012ed31d3cbf8086da36de42e65a5db65b1ca72ddc7e73aa70a55ab1",
+  "images": {},
+  "local_only": true
+}

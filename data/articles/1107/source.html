@@ -1,0 +1,23 @@
+<div class="PostContent" id="PostContent">
+<p>通过<a href="/archives/1094/" target="_blank" title="最速降线的故事">上一小节的小故事</a>，我们已经能够基本了解最速降线的内容了，它就是要我们求出满足某一极值条件的一个未知函数，由于函数是未知的，因此这类问题被称为“泛分析”。其中还谈到，伯努利利用费马原理巧妙地得出了答案，那么我们现在就再次回顾历史，追寻伯努利的答案，并且寻找进一步的应用。</p><p></p><div class="pic-container"><div class="typecho-caption aligncenter" style="max-width: 100%"><div style="margin: 5px"><a href="/attachment/1105/" title="最速降线-1.PNG"><img alt="最速降线-1" src="/usr/uploads/2010/12/2811195994.png" style="max-width:100%"/></a></div><p class="typecho-caption-text">最速降线-1</p></div></div><p>为了计算方便，我们把最速降线倒过来，把初始点设置在原点。在下落过程中，重力势能转化为动能，因此，在点(x,y)处有$\frac{1}{2} mv^2=mgy\Rightarrow v=\sqrt{2gy}$，由于纯粹为了探讨曲线形状，所以我们使g=0.5，即$v=\sqrt{y}$。在点(x,y)处所走的路程为$ds=\sqrt{dy^2+dx^2}=\sqrt{\dot{y}^2+1}dx$，所以时间为$dt=\frac{ds}{v}=\frac{\sqrt{\dot{y}^2+1}dx}{\sqrt{y}}$，于是最速降线问题就是求使$t=\int_0^{x_2} \frac{\sqrt{\dot{y}^2+1}dx}{\sqrt{y}}$最小的函数。</p><p></p><div class="pic-container"><div class="typecho-caption aligncenter" style="max-width: 100%"><div style="margin: 5px"><a href="/attachment/1106/" title="最速降线-2.PNG"><img alt="最速降线-2" src="/usr/uploads/2010/12/2730516981.png" style="max-width:100%"/></a></div><p class="typecho-caption-text">最速降线-2</p></div></div><p>按照伯努利的思路，我们<u>将最速降线视为一条光路</u>，把其水平等距分割成无限小份，那么每一份都应该满足光的折射定律，如图所示，我们将有<br/>
+$$\frac{v}{\cos\theta}=\frac{v'}{\cos\theta'}=...=Const$$</p><p>Const表示<strong>常数</strong>。由于<br/>
+$$\cos\theta=\frac{1}{\sqrt{1+\tan^2 \theta}}=\frac{1}{\sqrt{1+\dot{y}^2}}$$</p><p>所以得出<br/>
+$$v^2(1+\dot{y}^2)=Const\tag{1}$$<br/>
+请注意，我们还没有用到$v=\sqrt{y}$这一条件，也就是说<strong><u>(1)式并非局限于本题目</u></strong>。那么，哪种类型的题目可以应用(1)式呢？答案是“<u><font color="red">当速度v的表达式中仅仅显含y</font></u>”的题目，换句话说，当v的表达式中仅仅显含y时，满足<br/>
+$$t=\int_{x_1}^{x_2} \frac{\sqrt{\dot{y}^2+1}dx}{v}$$<br/>
+取最小值的函数由(1)式算出。</p><p>为什么会这样呢？这需要<u>回想我们的光学知识</u>了。应用光学的折射定律首先得作出<strong>“法线”</strong>，而“法线”是怎么作出的呢？哦，它<u>垂直于两种不同介质间的接触面的切面</u>。光在两种不同介质间的不同表现就是传播速度的不同，因此，用数学的语言讲，“两种不同介质间的接触面”就是<strong><font color="red">等速面</font></strong>。</p><p>若$v=v(x,y)$，显然，每一个速度的等速面（放到二维，退化成等速线）方程都可以表示成$v_c=v(x,y)$，$v_c$是代表速度的常数。既然如此，将其两边微分，就可以得到（这...已经有点深入了，下式涉及到<strong>偏导数</strong>，还没有了解的朋友可以跳过）<br/>
+$$0=\frac{\partial v}{\partial x}+\frac{\partial v}{\partial y}\dot{y}=0\tag{2}$$<br/>
+这样就可以求出在点(x,y)出的速度切面（线）的斜率。<u><font color="red">对于v仅仅显含y的情况，$\dot{y}$是恒等于0的，因此每条法线都垂直于x轴。于是我们才能够按照伯努利的思路，“把其水平等距分割成无限小份”，要不然，这一步已经不成立了。</font></u>对于v不单纯显含y的情况，还是可以利用(2)式求出斜率，再进行转角的，<strong>麻烦但奏效</strong>；不过如果v还含有诸如$\dot{y}$的导数项，那么此思路就失效了。</p><p>回到最速降线问题，将$v=\sqrt{y}$代入(1)，就可以得到<br/>
+$$y(1+\dot{y}^2)=C_1$$<br/>
+$\dot{y}=\sqrt{\frac{C_1}{y}-1}$，即$x=\int \sqrt{\frac{y}{C_1-y}}dy$</p><p>令$y=C_1(\frac{1}{2}-\frac{1}{2} cos 2t)=C_1 sin^2 t$，代入得$x=\int 2C_1 sin^2 t dt=C_1(t-\frac{1}{2} sin 2t +C_2)$；根据初始条件，该曲线过(0,0)，得到$C_2=0$；另一个常数可以根据另外一点得出。于是最速降线为</p><p>$$\begin{aligned}x=C_1(t-\frac{1}{2} \sin 2t) \\ y=C_1(\frac{1}{2}-\frac{1}{2} \cos 2t)\end{aligned}$$</p><p>可见，这是一条摆线，或曰旋轮线、等时曲线。</p><p><strong>【摆线的定义】</strong></p><p></p><div class="pic-container"><div class="typecho-caption aligncenter" style="max-width: 500px"><div style="margin: 5px"><a href="/attachment/1108/" title="旋轮线(摆线).jpg"><img alt="旋轮线(摆线)" src="/usr/uploads/2010/12/1020727086.jpg" style="max-width: 100%"/></a></div><p class="typecho-caption-text">旋轮线(摆线)</p></div></div><p>摆线是数学中众多的迷人曲线之一．它是这样定义的：一个圆沿一直线缓慢地滚动，则圆上一固定点所经过的轨迹称为摆线．</p><p><strong>参数方程</strong>为<br/>
+$$x=r(t- \sin t),y=r(1- \cos t)$$</p><p>到17世纪，人们发现摆线具有如下性质：<br/>
+1．它的长度等于旋转圆直径的4倍．尤为令人感兴趣的是，它的长度是一个不依赖于π的有理数．<br/>
+2．在弧线下的面积，是旋转圆面积的三倍．<br/>
+3．圆上描出摆线的那个点，具有不同的速度——事实上，在特定的地方它甚至是静止的．<br/>
+4．当弹子从一个摆线形状的容器的不同点放开时，它们会同时到达底部。</p>
+
+
+
+
+
+</div>

@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "10757",
+    "title": "MoE环游记：3、换个思路来分配",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/10757",
+    "date": "2025-03-05",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 101,
+    "display_formula_count": 13,
+    "image_count": 0,
+    "heading_count": 7,
+    "code_block_count": 0,
+    "source_text_sha256": "844eb6164edfa8198323c8f3f69a9696f4f8cd08e32f43e8ff75b8d9b796ae68",
+    "output_text_sha256": "844eb6164edfa8198323c8f3f69a9696f4f8cd08e32f43e8ff75b8d9b796ae68",
+    "latex_sha256": "86bf51d3031aea6e81c37866d0a69e21a952d45248e2cebe97498df751929747",
+    "body_sha256": "5714bac158dc6b987696ce19d25f3b0fd6f313d4fc70511143079797b9ce96a6",
+    "converter_version": 1,
+    "markdown_sha256": "b40b554764a8cc79015fa79686822c585479fcb914c64140dd4d3e6395ea2d49"
+  },
+  "fetched_at": "2026-09-14T12:43:38+00:00",
+  "source_snapshot_sha256": "d2d281025cb4cf96a6146f54b3df2c3d7016e1c0e15038e6a7409d2831c863aa",
+  "images": {},
+  "local_only": true
+}

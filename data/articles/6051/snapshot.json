@@ -1,0 +1,17 @@
+{
+  "metadata": {
+    "id": "6051",
+    "title": "深度学习中的Lipschitz约束：泛化与生成模型",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/6051",
+    "date": "2018-10-07",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "fetched_at": "2026-09-14T13:23:55+00:00",
+  "source_snapshot_sha256": "a799b7cde6f90d31dc517c5db5c6fdc15d0e379df654d27a45d4ec057d3aa0a5",
+  "validators": {
+    "etag": null,
+    "last_modified": null
+  }
+}

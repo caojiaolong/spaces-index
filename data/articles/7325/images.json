@@ -1,0 +1,45 @@
+{
+  "version": 1,
+  "images": {
+    "https://spaces.ac.cn/usr/uploads/2020/04/46441019.png": {
+      "status": "cached",
+      "file": "0ee3c6c99a73473109a7290be994075493a2d5a503d06d85c35e95fe5b107e61.png",
+      "sha256": "0ee3c6c99a73473109a7290be994075493a2d5a503d06d85c35e95fe5b107e61",
+      "bytes": 290993,
+      "checked_at": "2026-09-16T08:57:33+00:00",
+      "fetched_url": "https://spaces.ac.cn/usr/uploads/2020/04/46441019.png",
+      "etag": "\"5e92c508-470b1\"",
+      "last_modified": "Sun, 12 Apr 2020 07:36:40 GMT"
+    },
+    "https://spaces.ac.cn/usr/uploads/2020/04/3111635993.png": {
+      "status": "cached",
+      "file": "cc3ef8c4dfd33375d69667b2f28f4cba86fb59e482a908470d9fb4c15ce6a0d0.png",
+      "sha256": "cc3ef8c4dfd33375d69667b2f28f4cba86fb59e482a908470d9fb4c15ce6a0d0",
+      "bytes": 39185,
+      "checked_at": "2026-09-16T08:57:38+00:00",
+      "fetched_url": "https://spaces.ac.cn/usr/uploads/2020/04/3111635993.png",
+      "etag": "\"5e93282a-9911\"",
+      "last_modified": "Sun, 12 Apr 2020 14:39:38 GMT"
+    },
+    "https://spaces.ac.cn/usr/uploads/2020/04/813962011.png": {
+      "status": "cached",
+      "file": "dd7b942811f6bdf5c6f51edaf3ca9f6888878fdb5955de1b6486735c6ae60ca7.png",
+      "sha256": "dd7b942811f6bdf5c6f51edaf3ca9f6888878fdb5955de1b6486735c6ae60ca7",
+      "bytes": 250213,
+      "checked_at": "2026-09-16T08:57:42+00:00",
+      "fetched_url": "https://spaces.ac.cn/usr/uploads/2020/04/813962011.png",
+      "etag": "\"5e92eeac-3d165\"",
+      "last_modified": "Sun, 12 Apr 2020 10:34:20 GMT"
+    },
+    "https://spaces.ac.cn/usr/uploads/2020/04/591585191.png": {
+      "status": "cached",
+      "file": "5c46cba78c3aef6edf16a7cfef5edf4484be87020652e07a7a9e96f820a013ef.png",
+      "sha256": "5c46cba78c3aef6edf16a7cfef5edf4484be87020652e07a7a9e96f820a013ef",
+      "bytes": 186869,
+      "checked_at": "2026-09-16T08:57:47+00:00",
+      "fetched_url": "https://spaces.ac.cn/usr/uploads/2020/04/591585191.png",
+      "etag": "\"5e92f2bd-2d9f5\"",
+      "last_modified": "Sun, 12 Apr 2020 10:51:41 GMT"
+    }
+  }
+}

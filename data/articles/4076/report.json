@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "4076",
+    "title": "【外微分浅谈】7. 有力的计算",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/4076",
+    "date": "2016-11-11",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 72,
+    "display_formula_count": 24,
+    "image_count": 0,
+    "heading_count": 2,
+    "code_block_count": 0,
+    "source_text_sha256": "a9c4a6a12f2d34bcb90e656c578e33e2db934467ca4c1b329d4c5f6188e026fe",
+    "output_text_sha256": "a9c4a6a12f2d34bcb90e656c578e33e2db934467ca4c1b329d4c5f6188e026fe",
+    "latex_sha256": "7184dfda749226b3880b16b5e1c7b534b7acb9b9bb916d49bb6ad0b98db0864a",
+    "body_sha256": "0bfcf1c448d1f34b9c62eef7bd70ce4fb229e205d1e506f562b7cc947c1a653f",
+    "converter_version": 1,
+    "markdown_sha256": "f499b3ce42a45aa575dbcb51dd7cb521f7455c38caa75bdeeeb991ef74f751fd"
+  },
+  "fetched_at": "2026-09-14T13:36:11+00:00",
+  "source_snapshot_sha256": "2f6e9834458ce03da0628988485f0ba8ddbb349fe4898f6da0ea2778c1ffef17",
+  "images": {},
+  "local_only": true
+}

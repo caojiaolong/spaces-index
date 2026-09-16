@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "8770",
+    "title": "Dropout视角下的MLM和MAE：一些新的启发",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/8770",
+    "date": "2021-11-29",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 59,
+    "display_formula_count": 11,
+    "image_count": 3,
+    "heading_count": 10,
+    "code_block_count": 1,
+    "source_text_sha256": "1c49679f1783ce9f9a7aa2a8c7add6a686c790c1969e687df1595c079f5717e9",
+    "output_text_sha256": "1c49679f1783ce9f9a7aa2a8c7add6a686c790c1969e687df1595c079f5717e9",
+    "latex_sha256": "33311c6dc8e84abe955e6559038a4533aae234ad65afe96c84263492230e1456",
+    "body_sha256": "a6879b5e8d8dd9b9c1f4cbe1568936ee1e725727f0c6a5a9f50ca93975b06937",
+    "converter_version": 1,
+    "markdown_sha256": "0b7612879d5d3c02cae0667479a87740e6d30375cd780c00598de66adcc3ddf6"
+  },
+  "fetched_at": "2026-09-14T13:03:02+00:00",
+  "source_snapshot_sha256": "975f9e78be4be0bc28f0c4f1f6ace5bf9716903e2b91ab8c6baaee51b93c227b",
+  "images": {},
+  "local_only": true
+}

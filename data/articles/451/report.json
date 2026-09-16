@@ -1,0 +1,39 @@
+{
+  "metadata": {
+    "id": "451",
+    "title": "天文歌曲《冬夜星空》(补充LRC歌词)",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/451",
+    "date": "2010-02-17",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "source_dom_exact": true,
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "attributes_exact": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 0,
+    "display_formula_count": 0,
+    "image_count": 2,
+    "heading_count": 0,
+    "code_block_count": 0,
+    "source_text_sha256": "c9842bff6bfb3e35a0ea3eb713bb3b9bdd292f12d244552c6a4298dd2afff193",
+    "output_text_sha256": "c9842bff6bfb3e35a0ea3eb713bb3b9bdd292f12d244552c6a4298dd2afff193",
+    "latex_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "body_sha256": "c79537ee502ac10990abca5a7782a5c07377ada13a72afdea89762c6f26db1aa",
+    "converter_version": 1,
+    "format": "html-v1",
+    "source_warnings": [],
+    "fallback_reason": "Unsupported body element: audio",
+    "markdown_sha256": "6663d3070cdeb1f2febf33d4c001977c0bb572b0434a82f61f13e99c9cdad11c"
+  },
+  "fetched_at": "2026-09-14T14:40:55+00:00",
+  "source_snapshot_sha256": "c8ff7fb2a4160a71aedc7749a5aafa38a3b062a91f4c4b61fd0aa6ebd4ff2b2f",
+  "images": {},
+  "local_only": true
+}

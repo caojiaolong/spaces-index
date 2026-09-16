@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "9098",
+    "title": "如何训练你的准确率？",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/9098",
+    "date": "2022-06-01",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 45,
+    "display_formula_count": 3,
+    "image_count": 1,
+    "heading_count": 5,
+    "code_block_count": 0,
+    "source_text_sha256": "c677924dfce2891e2f47b3471da10e22eee5db50c345c0f2b3581ebf2d8d9ab5",
+    "output_text_sha256": "c677924dfce2891e2f47b3471da10e22eee5db50c345c0f2b3581ebf2d8d9ab5",
+    "latex_sha256": "e622cdba9488091f962b87445057aad147b5c67ff20aa386452617cfb590afdd",
+    "body_sha256": "60f42ead9949276c4f7cf2a7845984740dbba424eaac28a69208703abbc968ab",
+    "converter_version": 1,
+    "markdown_sha256": "59cb504ef0529ba3dee479079bba10f946b16dedd9c62b25347d384c0e4b8d0b"
+  },
+  "fetched_at": "2026-09-14T12:59:19+00:00",
+  "source_snapshot_sha256": "d8922a37e780f10aa77b7fd2e9128ec742c72150afa29a3031cb3c2e1fe00320",
+  "images": {},
+  "local_only": true
+}

@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "7076",
+    "title": "n维空间下两个随机向量的夹角分布",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/7076",
+    "date": "2019-11-13",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 57,
+    "display_formula_count": 12,
+    "image_count": 1,
+    "heading_count": 3,
+    "code_block_count": 0,
+    "source_text_sha256": "a0673d01473ccc76527d5a6849d4185bf3094ba7d3f7f4753d3cf3d3a0345f4d",
+    "output_text_sha256": "a0673d01473ccc76527d5a6849d4185bf3094ba7d3f7f4753d3cf3d3a0345f4d",
+    "latex_sha256": "f7ad47d3bc67a160e0ddad373e5ce3af7c7b4f74920609a214b3e0fa3751f2bb",
+    "body_sha256": "c1afb8dd9237c16f63521f7ba6e59c3dd3b5d803c152180d99b1b9226ecf19e6",
+    "converter_version": 1,
+    "markdown_sha256": "5d675fc9ed70a4bdab34db87a72e3233dec7c6b94105e700938c1eb251e64518"
+  },
+  "fetched_at": "2026-09-14T13:16:38+00:00",
+  "source_snapshot_sha256": "eaa573f204b9725a2debf937ca3db9277402841d7832dbd020aaf5b39a771def",
+  "images": {},
+  "local_only": true
+}

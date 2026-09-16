@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "8586",
+    "title": "FlatNCE：小批次对比学习效果差的原因竟是浮点误差？",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/8586",
+    "date": "2021-07-26",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 45,
+    "display_formula_count": 5,
+    "image_count": 2,
+    "heading_count": 5,
+    "code_block_count": 0,
+    "source_text_sha256": "424b6af507a0c019e176b6401b103771c9c82e051ea47a7c3c5ea94a4da6c4c4",
+    "output_text_sha256": "424b6af507a0c019e176b6401b103771c9c82e051ea47a7c3c5ea94a4da6c4c4",
+    "latex_sha256": "0dc9864c6ecfbade3ba58013fa2b1752a128c9ecf0946fa063200608781787b7",
+    "body_sha256": "2ce89823967c2dd018beb78919c3cac2a52640bd4c9821472a235080ccfdcb6c",
+    "converter_version": 1,
+    "markdown_sha256": "c25d64e7591173dffb5ef4bbc7d9bf23087e8666e39b6a7007993ee610bca005"
+  },
+  "fetched_at": "2026-09-14T13:05:13+00:00",
+  "source_snapshot_sha256": "d3bf9373247ae83307816e96ba25bb76235802eab17b0fcd95e171406cb8886d",
+  "images": {},
+  "local_only": true
+}

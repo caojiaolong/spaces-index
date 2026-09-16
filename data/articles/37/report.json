@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "37",
+    "title": "洋葱也能用来发电！",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/37",
+    "date": "2009-07-28",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 0,
+    "display_formula_count": 0,
+    "image_count": 2,
+    "heading_count": 0,
+    "code_block_count": 0,
+    "source_text_sha256": "002424baed3bec1c58060f00104e54ea16f504872f96d59f9d54015311c7aaf0",
+    "output_text_sha256": "002424baed3bec1c58060f00104e54ea16f504872f96d59f9d54015311c7aaf0",
+    "latex_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "body_sha256": "e5c7ca8b6055c56ff5504b553f55df5c3d2c458d84fb1909e2571d39d9c68830",
+    "converter_version": 1,
+    "markdown_sha256": "d46627e401734aadd8f6c80c6ebd4b78704b95965edd78515507be7109389bb4"
+  },
+  "fetched_at": "2026-09-14T15:03:32+00:00",
+  "source_snapshot_sha256": "ac6bb1e57139cb704ab0e6d30afa384ec87da7dcc1fd79635ce03e10517a5f76",
+  "images": {},
+  "local_only": true
+}

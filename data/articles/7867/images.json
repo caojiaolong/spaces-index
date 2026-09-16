@@ -1,0 +1,45 @@
+{
+  "version": 1,
+  "images": {
+    "https://spaces.ac.cn/usr/uploads/2020/11/4211830191.png": {
+      "status": "cached",
+      "file": "50a673e9d9248efcf93fcfe7a514fdc2d717476e1d66d01d1ade5d7f9a5c33c1.png",
+      "sha256": "50a673e9d9248efcf93fcfe7a514fdc2d717476e1d66d01d1ade5d7f9a5c33c1",
+      "bytes": 255600,
+      "checked_at": "2026-09-16T08:50:55+00:00",
+      "fetched_url": "https://spaces.ac.cn/usr/uploads/2020/11/4211830191.png",
+      "etag": "\"5fa41f1f-3e670\"",
+      "last_modified": "Thu, 05 Nov 2020 15:49:51 GMT"
+    },
+    "https://spaces.ac.cn/usr/uploads/2020/11/358540148.png": {
+      "status": "cached",
+      "file": "bda8488bd9189687db20484b956b171b9f891bf63def798c1f0acdea0776621d.png",
+      "sha256": "bda8488bd9189687db20484b956b171b9f891bf63def798c1f0acdea0776621d",
+      "bytes": 373518,
+      "checked_at": "2026-09-16T08:51:00+00:00",
+      "fetched_url": "https://spaces.ac.cn/usr/uploads/2020/11/358540148.png",
+      "etag": "\"5fa41443-5b30e\"",
+      "last_modified": "Thu, 05 Nov 2020 15:03:31 GMT"
+    },
+    "https://spaces.ac.cn/usr/uploads/2020/11/8208956.png": {
+      "status": "cached",
+      "file": "8eab453da4d9978332683fb9e31e28d0274e156b61e733afbbba7e2f824a1e57.png",
+      "sha256": "8eab453da4d9978332683fb9e31e28d0274e156b61e733afbbba7e2f824a1e57",
+      "bytes": 1937268,
+      "checked_at": "2026-09-16T08:51:08+00:00",
+      "fetched_url": "https://spaces.ac.cn/usr/uploads/2020/11/8208956.png",
+      "etag": "\"5fa414a4-1d8f74\"",
+      "last_modified": "Thu, 05 Nov 2020 15:05:08 GMT"
+    },
+    "https://spaces.ac.cn/usr/uploads/2020/11/3733950397.png": {
+      "status": "cached",
+      "file": "6847d9e1e6c51a92bce27b9d60e36f321f24b6320ce877851b5425649c93ce98.png",
+      "sha256": "6847d9e1e6c51a92bce27b9d60e36f321f24b6320ce877851b5425649c93ce98",
+      "bytes": 386270,
+      "checked_at": "2026-09-16T08:51:13+00:00",
+      "fetched_url": "https://spaces.ac.cn/usr/uploads/2020/11/3733950397.png",
+      "etag": "\"5fa3ca36-5e4de\"",
+      "last_modified": "Thu, 05 Nov 2020 09:47:34 GMT"
+    }
+  }
+}

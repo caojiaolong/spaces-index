@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "644",
+    "title": "解答不等式的误区...",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/644",
+    "date": "2010-05-02",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 17,
+    "display_formula_count": 5,
+    "image_count": 0,
+    "heading_count": 0,
+    "code_block_count": 0,
+    "source_text_sha256": "bd9e429b35e6a6afa9e3af438c9eca233130591cf44ef82704046c4f6347db25",
+    "output_text_sha256": "bd9e429b35e6a6afa9e3af438c9eca233130591cf44ef82704046c4f6347db25",
+    "latex_sha256": "7b07d4f2a179b484886b0ac898126541bfaee7dfc7cddeb64b85c358361b185e",
+    "body_sha256": "bb313a44dbfdca3e382af911e7924711187da3060c0be2a771b849b6ec035b66",
+    "converter_version": 1,
+    "markdown_sha256": "24127aaa948ad316132e4f5384a135726f49162eaf7844fedae306f61a4b76db"
+  },
+  "fetched_at": "2026-09-14T14:37:09+00:00",
+  "source_snapshot_sha256": "185636f16eaa4cfe4e1c8e1ac66325d8600e67a1cc62ee71b7adee17840a5c09",
+  "images": {},
+  "local_only": true
+}

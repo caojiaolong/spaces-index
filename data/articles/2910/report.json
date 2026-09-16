@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "2910",
+    "title": "从费马大定理谈起（九）：n=3",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/2910",
+    "date": "2014-09-01",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 97,
+    "display_formula_count": 10,
+    "image_count": 0,
+    "heading_count": 2,
+    "code_block_count": 0,
+    "source_text_sha256": "da36c9bb1021176f77c85a239fbf30a860e6917e9f85d67022e2088517014581",
+    "output_text_sha256": "da36c9bb1021176f77c85a239fbf30a860e6917e9f85d67022e2088517014581",
+    "latex_sha256": "3c23fea30a1891ddcbbb27be0bd534dd2c9a378c69d300142b9df5127048f6a8",
+    "body_sha256": "81f68af98eac8902925c338fb01abb89e91729ad697837690be808c4e8607a0d",
+    "converter_version": 1,
+    "markdown_sha256": "2cfbb1f3049042c53889866b39da4d400fc3024e6b15d9804b13c5940066e283"
+  },
+  "fetched_at": "2026-09-14T13:51:35+00:00",
+  "source_snapshot_sha256": "e76f0da515f6f64bdad3a964adc5abd33a99952f4d69388ece750942de8940aa",
+  "images": {},
+  "local_only": true
+}

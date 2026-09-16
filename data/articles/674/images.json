@@ -1,0 +1,45 @@
+{
+  "version": 1,
+  "images": {
+    "https://spaces.ac.cn/usr/uploads/2010/06/3962377054.jpg": {
+      "status": "cached",
+      "file": "617a2ab3eba7fc1dd6dfdbbc3787887489df33e930065ff621f3b42fd68379cd.jpg",
+      "sha256": "617a2ab3eba7fc1dd6dfdbbc3787887489df33e930065ff621f3b42fd68379cd",
+      "bytes": 16142,
+      "checked_at": "2026-09-16T12:15:27+00:00",
+      "fetched_url": "https://spaces.ac.cn/usr/uploads/2010/06/3962377054.jpg",
+      "etag": "\"5a6ec747-3f0e\"",
+      "last_modified": "Mon, 29 Jan 2018 07:03:35 GMT"
+    },
+    "https://spaces.ac.cn/usr/uploads/2010/06/1321017280.png": {
+      "status": "cached",
+      "file": "148dc39423458f6c079f566fc6d8b758433c4bf039a669c37f5a013002c7a50a.png",
+      "sha256": "148dc39423458f6c079f566fc6d8b758433c4bf039a669c37f5a013002c7a50a",
+      "bytes": 5845,
+      "checked_at": "2026-09-16T12:15:30+00:00",
+      "fetched_url": "https://spaces.ac.cn/usr/uploads/2010/06/1321017280.png",
+      "etag": "\"5a6ec747-16d5\"",
+      "last_modified": "Mon, 29 Jan 2018 07:03:35 GMT"
+    },
+    "https://spaces.ac.cn/usr/uploads/2010/06/2464705813.gif": {
+      "status": "cached",
+      "file": "da25f5d070e6e86896a892ba8e7fbff3c68875f6ffd1733055d14d6b99fe87ae.gif",
+      "sha256": "da25f5d070e6e86896a892ba8e7fbff3c68875f6ffd1733055d14d6b99fe87ae",
+      "bytes": 65340,
+      "checked_at": "2026-09-16T12:15:33+00:00",
+      "fetched_url": "https://spaces.ac.cn/usr/uploads/2010/06/2464705813.gif",
+      "etag": "\"5a6ec747-ff3c\"",
+      "last_modified": "Mon, 29 Jan 2018 07:03:35 GMT"
+    },
+    "https://spaces.ac.cn/usr/uploads/2010/06/4100993903.png": {
+      "status": "cached",
+      "file": "73e86cf3353d83d9395ffde53c902728d4d2b367232e8e8ed7b31a91d15b99ce.png",
+      "sha256": "73e86cf3353d83d9395ffde53c902728d4d2b367232e8e8ed7b31a91d15b99ce",
+      "bytes": 81967,
+      "checked_at": "2026-09-16T12:15:36+00:00",
+      "fetched_url": "https://spaces.ac.cn/usr/uploads/2010/06/4100993903.png",
+      "etag": "\"5a6ec747-1402f\"",
+      "last_modified": "Mon, 29 Jan 2018 07:03:35 GMT"
+    }
+  }
+}

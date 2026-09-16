@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "11540",
+    "title": "让炼丹更科学一些（六）：自上而下的精妙构造",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/11540",
+    "date": "2026-01-16",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 113,
+    "display_formula_count": 20,
+    "image_count": 1,
+    "heading_count": 8,
+    "code_block_count": 0,
+    "source_text_sha256": "4b73f7dd5e9ace48562b13d06aaa39bb1a11a0379952ed2ff0d718a14c9654f4",
+    "output_text_sha256": "4b73f7dd5e9ace48562b13d06aaa39bb1a11a0379952ed2ff0d718a14c9654f4",
+    "latex_sha256": "0ddcc01f0081060d79e46cdd350a939411e0e3ad7315bdac965c0c168db98744",
+    "body_sha256": "d9320b6d19eb6ec5d1c65d2c96a69c9bbecb6b4801c901255668de7ec7bca6f2",
+    "converter_version": 1,
+    "markdown_sha256": "701f7d40e8c5f940588f43b7475298506d7f7ed11e7d44855bbcfa72a5762ab5"
+  },
+  "fetched_at": "2026-09-14T12:37:44+00:00",
+  "source_snapshot_sha256": "cbbd46d636a8f74fd506207aa9b1f7f18326514bd4a10a17e58f487e55219c5f",
+  "images": {},
+  "local_only": true
+}

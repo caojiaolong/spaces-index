@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "1268",
+    "title": "《方程与宇宙》:一种有趣的三体问题坐标",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/1268",
+    "date": "2011-02-19",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 12,
+    "display_formula_count": 8,
+    "image_count": 0,
+    "heading_count": 0,
+    "code_block_count": 0,
+    "source_text_sha256": "73284b55810502625c25d19ddf20196bff8ddd878ab8177014ebb0a11c46a9a9",
+    "output_text_sha256": "73284b55810502625c25d19ddf20196bff8ddd878ab8177014ebb0a11c46a9a9",
+    "latex_sha256": "b225b376a3226cbfc6d19f0b6765f86d969439b09fcf5f014f910198723276aa",
+    "body_sha256": "7fba61870c9ff63ab316034675de534fbc348ad3e2a95a608f6c78a1e676a485",
+    "converter_version": 1,
+    "markdown_sha256": "7b629fc1f7821344cb343014cd4600d277ef39ab739f48fc61648f22fcd3fad4"
+  },
+  "fetched_at": "2026-09-14T14:23:55+00:00",
+  "source_snapshot_sha256": "84ebda9de4c4c502bc6fd8602191a57703751f3284152061121056c8d614c373",
+  "images": {},
+  "local_only": true
+}

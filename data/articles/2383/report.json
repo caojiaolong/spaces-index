@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "2383",
+    "title": "行列式的导数",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/2383",
+    "date": "2014-02-28",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 34,
+    "display_formula_count": 15,
+    "image_count": 0,
+    "heading_count": 2,
+    "code_block_count": 0,
+    "source_text_sha256": "4f4039047de2ec0bdd790ce3935bc29f2cce480f8989bf2240430aec60b1000a",
+    "output_text_sha256": "4f4039047de2ec0bdd790ce3935bc29f2cce480f8989bf2240430aec60b1000a",
+    "latex_sha256": "bb2e800b3b091903b24c6dd8be1de00ec9479a96ce1f5a7b72ceb8c4b46cbe32",
+    "body_sha256": "d5c3cd8cd0ea4e7dc381b77d38e8d37b349d569e4519eff46b175e4a4bd2a0bb",
+    "converter_version": 1,
+    "markdown_sha256": "b4e28c307112c6a84cb08c97306548ce8e80d8f4ea6e542db34ed9f5df1a32bb"
+  },
+  "fetched_at": "2026-09-14T13:56:29+00:00",
+  "source_snapshot_sha256": "4b921d78e32cede2c2ead9fc678796bce846daeae151e7aebf4fa8cca45335ec",
+  "images": {},
+  "local_only": true
+}

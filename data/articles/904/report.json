@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "904",
+    "title": "月球上的多角度反射镜",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/904",
+    "date": "2010-08-28",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 0,
+    "display_formula_count": 0,
+    "image_count": 3,
+    "heading_count": 0,
+    "code_block_count": 0,
+    "source_text_sha256": "251a4a68175de3f437ee74b2e0645e10802eb4446c5968d6c5eaa4003434083e",
+    "output_text_sha256": "251a4a68175de3f437ee74b2e0645e10802eb4446c5968d6c5eaa4003434083e",
+    "latex_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "body_sha256": "f201db29b96cfc94462dd4de92060f54aeae7dd18f7aaed676952e256f10e5d5",
+    "converter_version": 1,
+    "markdown_sha256": "369e74b2e9d3391199b73b5af1577c1f3f05e150dc1f378bb7918b4076710c60"
+  },
+  "fetched_at": "2026-09-14T14:31:03+00:00",
+  "source_snapshot_sha256": "ed5f6beef12795f5327755c072d83fac05986c7215125f255e428fd1dc928f41",
+  "images": {},
+  "local_only": true
+}

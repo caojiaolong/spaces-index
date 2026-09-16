@@ -1,0 +1,17 @@
+{
+  "metadata": {
+    "id": "8496",
+    "title": "又是Dropout两次！这次它做到了有监督任务的SOTA",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/8496",
+    "date": "2021-07-01",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "fetched_at": "2026-09-14T13:05:40+00:00",
+  "source_snapshot_sha256": "6259cfcd044aacda898205dc2d27b50dfa3818573c3e6c35f6029a52b977cf47",
+  "validators": {
+    "etag": null,
+    "last_modified": null
+  }
+}

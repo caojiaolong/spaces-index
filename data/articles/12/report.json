@@ -1,0 +1,39 @@
+{
+  "metadata": {
+    "id": "12",
+    "title": "科学空间|Scientific Spaces 介绍",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/12",
+    "date": "2009-03-01",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "source_dom_exact": true,
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "attributes_exact": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 0,
+    "display_formula_count": 0,
+    "image_count": 0,
+    "heading_count": 3,
+    "code_block_count": 0,
+    "source_text_sha256": "5b461008c1ce321f22531b539502ea11e779980f619c8cf01a3effa94ac5f3cd",
+    "output_text_sha256": "5b461008c1ce321f22531b539502ea11e779980f619c8cf01a3effa94ac5f3cd",
+    "latex_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "body_sha256": "b34ba28ae89312b48ad37753caa9625c1b73196f6ccce3afc66b107b9355d99a",
+    "converter_version": 1,
+    "format": "html-v1",
+    "source_warnings": [],
+    "fallback_reason": "Unsupported or unsafe source URL",
+    "markdown_sha256": "06f49ee6d129a9e7c9555f4f76f918bba7dda244b011c0d2d3c035fb476d19da"
+  },
+  "fetched_at": "2026-09-14T15:07:54+00:00",
+  "source_snapshot_sha256": "ce800bcf458a57ae8381aa3b83fbae90588bd8537d1b82c1372c203b147489c1",
+  "images": {},
+  "local_only": true
+}

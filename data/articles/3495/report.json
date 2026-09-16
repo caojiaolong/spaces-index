@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "3495",
+    "title": "朋友们，来瓶汽水吧！有趣的换汽水问题",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/3495",
+    "date": "2015-10-28",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 21,
+    "display_formula_count": 7,
+    "image_count": 1,
+    "heading_count": 4,
+    "code_block_count": 0,
+    "source_text_sha256": "cbc75eea54addb75d27b0d94e69dfa50d958822c849a93d1c24cdd7a353b0b9f",
+    "output_text_sha256": "cbc75eea54addb75d27b0d94e69dfa50d958822c849a93d1c24cdd7a353b0b9f",
+    "latex_sha256": "af65543547d986988e2db459bab5b8994f622245c1551d8fd2c75561b7a1cf91",
+    "body_sha256": "abfeb8da2990aad18f04b65a16b04a831ee7dbb3f5fab1d4975f456270932c9c",
+    "converter_version": 1,
+    "markdown_sha256": "fc4887dcb471a2a4153083b0f3c7b97db72ea175f4c94426e212945769cf0438"
+  },
+  "fetched_at": "2026-09-14T13:44:13+00:00",
+  "source_snapshot_sha256": "4aec918b3da0c128ffb7e5c4775f54589f385da7723182e94f3f97ac3753397c",
+  "images": {},
+  "local_only": true
+}

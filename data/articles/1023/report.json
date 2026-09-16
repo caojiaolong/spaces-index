@@ -1,0 +1,41 @@
+{
+  "metadata": {
+    "id": "1023",
+    "title": "太阳帆技术的粗浅分析",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/1023",
+    "date": "2010-10-24",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "source_dom_exact": true,
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "attributes_exact": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": null,
+    "display_formula_count": null,
+    "image_count": 1,
+    "heading_count": 0,
+    "code_block_count": 0,
+    "source_text_sha256": "537f05bdf2daed98d971000571270aba6294ba6d5df6c0223d66c23f40e10019",
+    "output_text_sha256": "537f05bdf2daed98d971000571270aba6294ba6d5df6c0223d66c23f40e10019",
+    "latex_sha256": "cd260f0777a8c9c2daf288831f179eeba7abaa8c88647baf3a9a28e1e446da7d",
+    "body_sha256": "cf2c209debf5ad9051ff1ef55694e4175d1120f444eb440063522dbbb4618840",
+    "converter_version": 1,
+    "format": "html-v1",
+    "source_warnings": [
+      "原文公式定界符异常，已逐字保留，未补写或修正：Unclosed math delimiter"
+    ],
+    "fallback_reason": "Unclosed math delimiter",
+    "markdown_sha256": "10137e476aa0521a7f80ad61a5936efe456a6bd783c586a5acf71e5c8ddd4bc4"
+  },
+  "fetched_at": "2026-09-14T14:28:09+00:00",
+  "source_snapshot_sha256": "a5da85f1458250acce4d999bdeab051d8870b857f57bbebd30131ce75db884ba",
+  "images": {},
+  "local_only": true
+}

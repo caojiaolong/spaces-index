@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "9731",
+    "title": "Transformer升级之路：14、当HWFA遇见ReRoPE",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/9731",
+    "date": "2023-08-24",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 29,
+    "display_formula_count": 2,
+    "image_count": 0,
+    "heading_count": 4,
+    "code_block_count": 0,
+    "source_text_sha256": "b2612b680c043d8dc87a18fe19243d87ca2204c5ccb904ba4909f4f923f811d5",
+    "output_text_sha256": "b2612b680c043d8dc87a18fe19243d87ca2204c5ccb904ba4909f4f923f811d5",
+    "latex_sha256": "9a6903e55ea9cf69122eae42643bf8c7499a3ad8a50358c3415185fbaec606c2",
+    "body_sha256": "e714df6ec098ca769bfc2b58ef06f0fb0955e548c73a13ab5e5d650368d2f280",
+    "converter_version": 1,
+    "markdown_sha256": "fae2e66d8d7ceab4abd1bb6dc113e2d7b96a608a7126401a7ee94372d9057999"
+  },
+  "fetched_at": "2026-09-14T12:52:41+00:00",
+  "source_snapshot_sha256": "5f5cf810ba8dfc7bafede50a19a445c7d8d8e6445cd6e3f9b872d44902973cae",
+  "images": {},
+  "local_only": true
+}

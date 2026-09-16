@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "5765",
+    "title": "“让Keras更酷一些！”：精巧的层与花式的回调",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/5765",
+    "date": "2018-08-06",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 0,
+    "display_formula_count": 0,
+    "image_count": 0,
+    "heading_count": 9,
+    "code_block_count": 11,
+    "source_text_sha256": "11b57ddcca623d3ec160995937180dc8c3096ef6cdf1857d1f2b7d2b5d282a28",
+    "output_text_sha256": "11b57ddcca623d3ec160995937180dc8c3096ef6cdf1857d1f2b7d2b5d282a28",
+    "latex_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "body_sha256": "2c9797058a82b1f021af9063bbef7a56f12f5d1892de699c54ac24edf27b37e5",
+    "converter_version": 1,
+    "markdown_sha256": "9ce1a47e7fa26a1134c40bc6967fcc70189f70a3ddd54fc4c21cec7d0047950b"
+  },
+  "fetched_at": "2026-09-14T13:25:32+00:00",
+  "source_snapshot_sha256": "60405def66a73475b3bdbd90e5ee1f29bc387f966762a81c942a188f1db4826f",
+  "images": {},
+  "local_only": true
+}

@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "2991",
+    "title": "两百万素数之和与“电脑病”",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/2991",
+    "date": "2014-10-17",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 0,
+    "display_formula_count": 0,
+    "image_count": 0,
+    "heading_count": 0,
+    "code_block_count": 2,
+    "source_text_sha256": "4f67ba7f1c5469320caaa33fb044cba4edda0ea6eb2a9157469289b282f4c2fa",
+    "output_text_sha256": "4f67ba7f1c5469320caaa33fb044cba4edda0ea6eb2a9157469289b282f4c2fa",
+    "latex_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "body_sha256": "15a429df6c2ac000eacbeece42b79ed818feba74deef160091a3f9eb2eeb29c2",
+    "converter_version": 1,
+    "markdown_sha256": "dfa2c8aa70cc2e06372cef86b26922b10a4bbacda69ddeb6a78794c419322e83"
+  },
+  "fetched_at": "2026-09-14T13:50:36+00:00",
+  "source_snapshot_sha256": "ccc7999576696a6b579e01ddc36c3c901f24a8d575876542d4b2eb8f532ad783",
+  "images": {},
+  "local_only": true
+}

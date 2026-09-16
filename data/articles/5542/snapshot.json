@@ -1,0 +1,17 @@
+{
+  "metadata": {
+    "id": "5542",
+    "title": "简明条件随机场CRF介绍（附带纯Keras实现）",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/5542",
+    "date": "2018-05-18",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "fetched_at": "2026-09-14T13:26:46+00:00",
+  "source_snapshot_sha256": "6472a9b87b41c05e887254801fa3f26d978d966ece19f4f56ecd69c20fd7d317",
+  "validators": {
+    "etag": null,
+    "last_modified": null
+  }
+}

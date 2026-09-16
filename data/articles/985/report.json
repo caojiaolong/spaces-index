@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "985",
+    "title": "欣赏一张图片——I Heart Math",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/985",
+    "date": "2010-10-07",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 0,
+    "display_formula_count": 0,
+    "image_count": 1,
+    "heading_count": 0,
+    "code_block_count": 0,
+    "source_text_sha256": "598e1b050b3fcfd2ca07cad7b3d0596fa5e600cab0c001175e2ec61258959cb1",
+    "output_text_sha256": "598e1b050b3fcfd2ca07cad7b3d0596fa5e600cab0c001175e2ec61258959cb1",
+    "latex_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "body_sha256": "a63b56016740c98f54335d39911cd9eeb8a2c7171fe7dc0c6b3d31da0260e1b2",
+    "converter_version": 1,
+    "markdown_sha256": "4c7d0e4db376fdd83b2494b50cbca0d811afe549fed8f628c1f1363079bde639"
+  },
+  "fetched_at": "2026-09-14T14:28:48+00:00",
+  "source_snapshot_sha256": "9802feaac38d6172c43a421ffe7cac0dc107234243b28368511fd56709f5261c",
+  "images": {},
+  "local_only": true
+}

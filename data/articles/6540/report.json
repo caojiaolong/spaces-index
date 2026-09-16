@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "6540",
+    "title": "分享一次专业领域词汇的无监督挖掘",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/6540",
+    "date": "2019-04-10",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 0,
+    "display_formula_count": 0,
+    "image_count": 0,
+    "heading_count": 4,
+    "code_block_count": 5,
+    "source_text_sha256": "a984668e09d1fafbff7ee87a9ac2f56a2ef489853535e8efa205f32a87e8642a",
+    "output_text_sha256": "a984668e09d1fafbff7ee87a9ac2f56a2ef489853535e8efa205f32a87e8642a",
+    "latex_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "body_sha256": "be86ff201b80db7d51b7238528f2927f0da169359b6ed816347461d0e7f2bb45",
+    "converter_version": 1,
+    "markdown_sha256": "f2c0b771396c26d33b1add04b4491f256156359bcc939071378590294ddec12b"
+  },
+  "fetched_at": "2026-09-14T13:20:28+00:00",
+  "source_snapshot_sha256": "5b09952ddcaea4f0176eae26a3dff749ec72ab44656504f2f5772e4c566fb530",
+  "images": {},
+  "local_only": true
+}

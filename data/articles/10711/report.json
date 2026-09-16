@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "10711",
+    "title": "生成扩散模型漫谈（二十九）：用DDPM来离散编码",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/10711",
+    "date": "2025-02-14",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 121,
+    "display_formula_count": 16,
+    "image_count": 2,
+    "heading_count": 7,
+    "code_block_count": 0,
+    "source_text_sha256": "19fbb60a210ea5ecdda90e8601ca77ff0aba51766506d90ba590d07b97917c11",
+    "output_text_sha256": "19fbb60a210ea5ecdda90e8601ca77ff0aba51766506d90ba590d07b97917c11",
+    "latex_sha256": "f539218266fd349314a5ec11151411b9218035c1717f20af8592333b46ad6e2f",
+    "body_sha256": "6338ed29376494c774450089844168eb2191963374f8762dbe8c387806798288",
+    "converter_version": 1,
+    "markdown_sha256": "6075fdc64632290a6935c9f26f7c2cf4a4b7a9a6b5ef1457939c3b1f0a63ff3e"
+  },
+  "fetched_at": "2026-09-14T12:43:57+00:00",
+  "source_snapshot_sha256": "d8a65137814d1a620eb7f9321f139b3a6f0b78938e6eaa1abc86f73e810f16f1",
+  "images": {},
+  "local_only": true
+}

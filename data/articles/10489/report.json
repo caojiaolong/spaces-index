@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "10489",
+    "title": "VQ的旋转技巧：梯度直通估计的一般推广",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/10489",
+    "date": "2024-10-24",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 108,
+    "display_formula_count": 6,
+    "image_count": 2,
+    "heading_count": 6,
+    "code_block_count": 0,
+    "source_text_sha256": "5cb72c2f105e9e2b640a20163471fd8e05c8fa10412009913d389aaec87cae44",
+    "output_text_sha256": "5cb72c2f105e9e2b640a20163471fd8e05c8fa10412009913d389aaec87cae44",
+    "latex_sha256": "1ddc923ef58b833d7154464e53a6940dbb5d9351a0595530c7618d7b8becdd64",
+    "body_sha256": "b257a0b2a231d36f857e9d502bc179fe4353c9674a00c787ef74df0a6f2d5632",
+    "converter_version": 1,
+    "markdown_sha256": "1b5f75007c7ef12adf30017232a64064f73ea0ec29871b8881d791cb04f9cf69"
+  },
+  "fetched_at": "2026-09-14T12:45:55+00:00",
+  "source_snapshot_sha256": "bab2c0c5d9843dc03f8767159917bafc6425561dc039f1c7a0ec99925a8c4e4e",
+  "images": {},
+  "local_only": true
+}

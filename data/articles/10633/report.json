@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "10633",
+    "title": "生成扩散模型漫谈（二十八）：分步理解一致性模型",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/10633",
+    "date": "2024-12-18",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 112,
+    "display_formula_count": 13,
+    "image_count": 0,
+    "heading_count": 6,
+    "code_block_count": 0,
+    "source_text_sha256": "47b72aff9d1777b24e9591485d9c1875bdec0c6816cfa1c3e032d7cdfe003be5",
+    "output_text_sha256": "47b72aff9d1777b24e9591485d9c1875bdec0c6816cfa1c3e032d7cdfe003be5",
+    "latex_sha256": "4efb0194a2e62a2712f2fde2af517ef25a9a1d59d8110e43deb4d1a51d7a6d59",
+    "body_sha256": "d79c727e2441b33842e1e73b8326957ccbe093dd1557cc630a972780d82483f7",
+    "converter_version": 1,
+    "markdown_sha256": "c884030f035ade41c6163e5798f7ee91d6d3b6addde40f3380659c3d39913d6e"
+  },
+  "fetched_at": "2026-09-14T12:44:38+00:00",
+  "source_snapshot_sha256": "9a6822db670d3b2e298f9843642fd1cab24964bd90b577b8c9801a4e73ecc009",
+  "images": {},
+  "local_only": true
+}

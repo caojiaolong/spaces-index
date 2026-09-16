@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "6620",
+    "title": "函数光滑化杂谈：不可导函数的可导逼近",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/6620",
+    "date": "2019-05-20",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 69,
+    "display_formula_count": 14,
+    "image_count": 0,
+    "heading_count": 6,
+    "code_block_count": 0,
+    "source_text_sha256": "1ad3d45c47cef93c1318464180c230e7ac1e8e837b0d9924d8d2064ed3bc81f2",
+    "output_text_sha256": "1ad3d45c47cef93c1318464180c230e7ac1e8e837b0d9924d8d2064ed3bc81f2",
+    "latex_sha256": "232fe753150dccc11d5b2dcba130862a17312d4a2d19d761b3b0b2cd79d4a34e",
+    "body_sha256": "0ed61b229215f618ccace981399184510b9a057d1eadb64d456d37a95da51202",
+    "converter_version": 1,
+    "markdown_sha256": "3134132c25b640e55ccd1145f92dc3a69a9dd3a822a5c63d3d1a1e1ef04f4671"
+  },
+  "fetched_at": "2026-09-14T13:19:56+00:00",
+  "source_snapshot_sha256": "c193814bd42be7d1df6dea963ef9bdaef0e95b3290defd4a3f50fdb5d0379d13",
+  "images": {},
+  "local_only": true
+}

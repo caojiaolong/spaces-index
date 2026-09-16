@@ -1,0 +1,17 @@
+{
+  "metadata": {
+    "id": "8601",
+    "title": "Transformer升级之路：5、作为无限维的线性Attention",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/8601",
+    "date": "2021-08-06",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "fetched_at": "2026-09-14T13:05:05+00:00",
+  "source_snapshot_sha256": "b088c81228a5da0a2e9600aaa91fbb5e3a1691548145422a4a97ad71d90a39b9",
+  "validators": {
+    "etag": null,
+    "last_modified": null
+  }
+}

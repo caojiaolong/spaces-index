@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "9931",
+    "title": "局部余弦相似度大，全局余弦相似度一定也大吗？",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/9931",
+    "date": "2024-01-09",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 40,
+    "display_formula_count": 8,
+    "image_count": 1,
+    "heading_count": 4,
+    "code_block_count": 0,
+    "source_text_sha256": "be99ba4cf584a909cf8f2e367fbcb23f1d12c7a40eb51900da55717c87ad8345",
+    "output_text_sha256": "be99ba4cf584a909cf8f2e367fbcb23f1d12c7a40eb51900da55717c87ad8345",
+    "latex_sha256": "81d813cb9f7912daf118015970a10a7ed2bebefbaf9edfe8137927e13b4a7273",
+    "body_sha256": "d68d078aa7e77817cf593ebadd571b3ff231400b91cd3e70f235f72a2bbd076d",
+    "converter_version": 1,
+    "markdown_sha256": "3e7512e33cc443c9cdb3dcf2a874c1c8c2a6185ee28fd9fe058cecc9687890a7"
+  },
+  "fetched_at": "2026-09-14T12:50:06+00:00",
+  "source_snapshot_sha256": "dcdc3dac0926c40c60851b8cb160acdd51786061c3ccf2e4acec336d21c44286",
+  "images": {},
+  "local_only": true
+}

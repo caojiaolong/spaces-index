@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "6919",
+    "title": "百度实体链接比赛后记：行为建模和实体链接",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/6919",
+    "date": "2019-09-03",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 6,
+    "display_formula_count": 0,
+    "image_count": 3,
+    "heading_count": 12,
+    "code_block_count": 3,
+    "source_text_sha256": "e71c60e6b862224f621e85d772d4c490815f118b559fbce46f423a8c4ffe32f1",
+    "output_text_sha256": "e71c60e6b862224f621e85d772d4c490815f118b559fbce46f423a8c4ffe32f1",
+    "latex_sha256": "875993bb247dc21250a0ac796f5e7a36a751dceeb8124a6af740fbab32cb7f6a",
+    "body_sha256": "d1fb72813d9f42f005d841755fae639ebbf985644c5e3f9d01d653d14944f7e0",
+    "converter_version": 1,
+    "markdown_sha256": "247e715723bdd522e63835b4ac757d697f6b2defd8a1a61afe37b11da9120261"
+  },
+  "fetched_at": "2026-09-14T13:17:47+00:00",
+  "source_snapshot_sha256": "e99c7cb68ce31ed954cfb4a6583a5bd98a01e8a8fa302c6dccb4ec368017bf3d",
+  "images": {},
+  "local_only": true
+}

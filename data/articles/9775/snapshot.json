@@ -1,0 +1,17 @@
+{
+  "metadata": {
+    "id": "9775",
+    "title": "自然数集中 N = ab + c 时 a + b + c 的最小值",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/9775",
+    "date": "2023-09-20",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "fetched_at": "2026-09-14T12:51:53+00:00",
+  "source_snapshot_sha256": "ab9bf6c8abd52fcacb0d0c1081ab339c2c6ee374dfe2e019025131ae8d389b63",
+  "validators": {
+    "etag": null,
+    "last_modified": null
+  }
+}

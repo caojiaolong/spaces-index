@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "11388",
+    "title": "流形上的最速下降：5. 对偶梯度下降",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/11388",
+    "date": "2025-11-03",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 77,
+    "display_formula_count": 12,
+    "image_count": 0,
+    "heading_count": 7,
+    "code_block_count": 0,
+    "source_text_sha256": "8b706180a9959e2d4be1895685837080b600fc36638d42367d3ee3115cf04794",
+    "output_text_sha256": "8b706180a9959e2d4be1895685837080b600fc36638d42367d3ee3115cf04794",
+    "latex_sha256": "3f5e87206cffe715e9dc9d80e9815e6eca32516016d703a3ea80507283040c6c",
+    "body_sha256": "be89348318dbc0cb418d5a8d10326d5e73a56cc30efeead8ba74174e769e1d47",
+    "converter_version": 1,
+    "markdown_sha256": "25ffb11210465f8e6b4bd007a9d278be990fb27b3913f74cc132409209180f39"
+  },
+  "fetched_at": "2026-09-14T12:38:56+00:00",
+  "source_snapshot_sha256": "4fc5a35c979e2d4e11916885ebc9676494ad1e70fbdecaa13e107d575de8918c",
+  "images": {},
+  "local_only": true
+}

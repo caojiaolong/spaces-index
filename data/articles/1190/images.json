@@ -1,0 +1,45 @@
+{
+  "version": 1,
+  "images": {
+    "https://spaces.ac.cn/usr/uploads/2011/02/4037403840.png": {
+      "status": "cached",
+      "file": "01f8f2d9d350a704d0f6974f7622f35f5c15ce37188fb8e4a0b6066ab759671a.png",
+      "sha256": "01f8f2d9d350a704d0f6974f7622f35f5c15ce37188fb8e4a0b6066ab759671a",
+      "bytes": 61032,
+      "checked_at": "2026-09-16T12:02:56+00:00",
+      "fetched_url": "https://spaces.ac.cn/usr/uploads/2011/02/4037403840.png",
+      "etag": "\"5a6ec74d-ee68\"",
+      "last_modified": "Mon, 29 Jan 2018 07:03:41 GMT"
+    },
+    "https://spaces.ac.cn/usr/uploads/2011/02/583467949.jpg": {
+      "status": "cached",
+      "file": "444f08270adf1476ea7dff6c298815306e76451e5e9b1712dc60ddfde3361daf.jpg",
+      "sha256": "444f08270adf1476ea7dff6c298815306e76451e5e9b1712dc60ddfde3361daf",
+      "bytes": 5939,
+      "checked_at": "2026-09-16T12:02:59+00:00",
+      "fetched_url": "https://spaces.ac.cn/usr/uploads/2011/02/583467949.jpg",
+      "etag": "\"5a6ec74d-1733\"",
+      "last_modified": "Mon, 29 Jan 2018 07:03:41 GMT"
+    },
+    "https://spaces.ac.cn/usr/uploads/2011/02/320281382.jpg": {
+      "status": "cached",
+      "file": "1f95c3b7c01382195230e2d4212c4b6d71a21bb00ac184ee68f73bb7413987f8.jpg",
+      "sha256": "1f95c3b7c01382195230e2d4212c4b6d71a21bb00ac184ee68f73bb7413987f8",
+      "bytes": 127234,
+      "checked_at": "2026-09-16T12:03:02+00:00",
+      "fetched_url": "https://spaces.ac.cn/usr/uploads/2011/02/320281382.jpg",
+      "etag": "\"5a6ec74d-1f102\"",
+      "last_modified": "Mon, 29 Jan 2018 07:03:41 GMT"
+    },
+    "https://spaces.ac.cn/usr/uploads/2011/02/1308496939.png": {
+      "status": "cached",
+      "file": "ea1e8feec76aefecf2510885d0193d41353fb84dcddd51907b06b96fb87e23ef.png",
+      "sha256": "ea1e8feec76aefecf2510885d0193d41353fb84dcddd51907b06b96fb87e23ef",
+      "bytes": 27965,
+      "checked_at": "2026-09-16T12:03:06+00:00",
+      "fetched_url": "https://spaces.ac.cn/usr/uploads/2011/02/1308496939.png",
+      "etag": "\"5a6ec74d-6d3d\"",
+      "last_modified": "Mon, 29 Jan 2018 07:03:41 GMT"
+    }
+  }
+}

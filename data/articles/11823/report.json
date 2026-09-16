@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "11823",
+    "title": "将Softmax Attention线性化为Gated DeltaNet",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/11823",
+    "date": "2026-07-21",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 105,
+    "display_formula_count": 19,
+    "image_count": 0,
+    "heading_count": 8,
+    "code_block_count": 0,
+    "source_text_sha256": "13b0f5371fbb8caf7523ce4b104aec9c335d854b8cae1e7ee0615a657e2312b3",
+    "output_text_sha256": "13b0f5371fbb8caf7523ce4b104aec9c335d854b8cae1e7ee0615a657e2312b3",
+    "latex_sha256": "21962457fc60d4b720bf914e4bbdb01e4be0f82b87f363627ca9c236fd2ac11e",
+    "body_sha256": "ed3e1bc65342c547bd9434469335835799b953f523cdff6e788d26e1ef52bfac",
+    "converter_version": 1,
+    "markdown_sha256": "7f5cfdbdcdb195dd30088fb860d6922f1439f5cc3f74cb65826103e1465eb913"
+  },
+  "fetched_at": "2026-09-14T12:30:20+00:00",
+  "source_snapshot_sha256": "0e121e98c437b65f179d118a3e4668f700c93bbe96103810a64879a03a3528b8",
+  "images": {},
+  "local_only": true
+}

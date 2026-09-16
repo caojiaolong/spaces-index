@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "1107",
+    "title": "《自然极值》系列——6.最速降线的解答",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/1107",
+    "date": "2010-12-10",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 25,
+    "display_formula_count": 8,
+    "image_count": 3,
+    "heading_count": 0,
+    "code_block_count": 0,
+    "source_text_sha256": "a6ba51d7e24880f8b3add6c01a08e29b127a5dfc8f3c9dac7288dc6afa1b04c2",
+    "output_text_sha256": "a6ba51d7e24880f8b3add6c01a08e29b127a5dfc8f3c9dac7288dc6afa1b04c2",
+    "latex_sha256": "bf74f6916cc2906bc0c26ee19469ccf6a77fb8a119658ec1135cc1dd7024208d",
+    "body_sha256": "7641ebde71971ba6ec848836a75c54be9338543d997f6d5613c07931fe1f0484",
+    "converter_version": 1,
+    "markdown_sha256": "d4c85691ed5c739615097d3c46500aa277155797c2a2a35f5303b1138dcd9c7f"
+  },
+  "fetched_at": "2026-09-14T14:26:24+00:00",
+  "source_snapshot_sha256": "6f67909cf9b566765faa3a78e379eb5f2bdde53a9a5f49315785378acc269f44",
+  "images": {},
+  "local_only": true
+}

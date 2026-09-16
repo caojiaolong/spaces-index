@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "2775",
+    "title": "初试在Python中使用PARI/GP",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/2775",
+    "date": "2014-07-22",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 0,
+    "display_formula_count": 0,
+    "image_count": 0,
+    "heading_count": 0,
+    "code_block_count": 5,
+    "source_text_sha256": "94dab90156fafe1c186814dc27040906a9764c8e06648546cef97d91efab2eb6",
+    "output_text_sha256": "94dab90156fafe1c186814dc27040906a9764c8e06648546cef97d91efab2eb6",
+    "latex_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "body_sha256": "bd0d57a2ea5e0ebde806a35be7168ca6eb446859f43ec90f8121f630ea884efb",
+    "converter_version": 1,
+    "markdown_sha256": "6ccc8f7aaee7c8d6222e20fd6f5df123ba9d150bccfabfd62e6daf48d935086f"
+  },
+  "fetched_at": "2026-09-14T13:53:04+00:00",
+  "source_snapshot_sha256": "2be767ccbc467bf699c2f361a8341f18b27d3e4996d0e720a609e127b6d12834",
+  "images": {},
+  "local_only": true
+}

@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "8213",
+    "title": "短文本匹配Baseline：脱敏数据使用预训练模型的尝试",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/8213",
+    "date": "2021-03-05",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 0,
+    "display_formula_count": 0,
+    "image_count": 1,
+    "heading_count": 4,
+    "code_block_count": 0,
+    "source_text_sha256": "03327447e3583be19415f05b7ec2dbfc1208d8b9cfe388eff43cd4fa83e1f4e9",
+    "output_text_sha256": "03327447e3583be19415f05b7ec2dbfc1208d8b9cfe388eff43cd4fa83e1f4e9",
+    "latex_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "body_sha256": "50450ba67ff3735eb16b19ffc179e8fc179bef7176e860acd16e81c197cb5c82",
+    "converter_version": 1,
+    "markdown_sha256": "02f6835f401ed2ded8801fccddfa35109f2bf2f8e1c170b541508d9c960eae5e"
+  },
+  "fetched_at": "2026-09-14T13:07:45+00:00",
+  "source_snapshot_sha256": "ba6843c9c3e92967f6ec812e9dbdb339abfe37e8c926804130dbf69c64f022c9",
+  "images": {},
+  "local_only": true
+}

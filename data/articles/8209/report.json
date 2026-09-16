@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "8209",
+    "title": "T5 PEGASUS：开源一个中文生成式预训练模型",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/8209",
+    "date": "2021-03-03",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 14,
+    "display_formula_count": 2,
+    "image_count": 1,
+    "heading_count": 6,
+    "code_block_count": 0,
+    "source_text_sha256": "8b8790ad4ef7c3a0a305844e9ab03eed58eefe4ce08b113a1e8f230f44df9564",
+    "output_text_sha256": "8b8790ad4ef7c3a0a305844e9ab03eed58eefe4ce08b113a1e8f230f44df9564",
+    "latex_sha256": "e8ecc13979ccff96a26547d76e6717adb79bfa5c0718d8c2e3d61d6acac0c3d5",
+    "body_sha256": "ed6cb983848f3c69d74d3274058d4b8f8433e61a084ab7032956912805dec1e5",
+    "converter_version": 1,
+    "markdown_sha256": "42d3f1bdb8bb8482d6afc688156de52b0d5fb77958ed2568976d8f69fea8cce2"
+  },
+  "fetched_at": "2026-09-14T13:07:53+00:00",
+  "source_snapshot_sha256": "12aa7723ba90a6695b3a6f908910cf11644811fad1ecc29b7bde972a7a41b074",
+  "images": {},
+  "local_only": true
+}

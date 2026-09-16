@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "1047",
+    "title": "警察捉贼,追牛问题,导弹跟踪",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/1047",
+    "date": "2010-11-06",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 35,
+    "display_formula_count": 10,
+    "image_count": 2,
+    "heading_count": 3,
+    "code_block_count": 0,
+    "source_text_sha256": "84f2cd0015f92468d7fad0e67bad33eaca1761a3212057b972ee767f46a08aa7",
+    "output_text_sha256": "84f2cd0015f92468d7fad0e67bad33eaca1761a3212057b972ee767f46a08aa7",
+    "latex_sha256": "3fa2a5de04adb1b229ddb3d5eaf59c1cd052fca5a3922c1ced90e0c96c5d3a20",
+    "body_sha256": "228e7cede5ff43b8f83c34b7c27ac43813cb0d590c2875e2711ad3a2d19e3dad",
+    "converter_version": 1,
+    "markdown_sha256": "072a18b2bebfccaa1ac942a8acc89640ad22b797eaaba03bdf7772e32938160c"
+  },
+  "fetched_at": "2026-09-14T14:27:31+00:00",
+  "source_snapshot_sha256": "aac5c718650ed7bff03beb00ea5885e942db439126ae5b9b72cb11aa0ddf9c19",
+  "images": {},
+  "local_only": true
+}

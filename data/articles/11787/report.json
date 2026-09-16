@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "11787",
+    "title": "矩阵函数近似中的暴力美学",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/11787",
+    "date": "2026-06-25",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 138,
+    "display_formula_count": 9,
+    "image_count": 1,
+    "heading_count": 9,
+    "code_block_count": 1,
+    "source_text_sha256": "e69d8bd47648c84512bc05cb061a09d4d07633d5760d36f735257d6c2b3bd7a4",
+    "output_text_sha256": "e69d8bd47648c84512bc05cb061a09d4d07633d5760d36f735257d6c2b3bd7a4",
+    "latex_sha256": "6a89d0cc312632ffb3b86be92380681410e1e8710bb8ddd44a8e4ff047006759",
+    "body_sha256": "9c39890c67b6099d8738e289b7d47f041a914a7b753ea06c825d0e20a57415d5",
+    "converter_version": 1,
+    "markdown_sha256": "a125ce10fc7d168bc599762f6368d95260f843a1b99e5237489493f3089e9f1b"
+  },
+  "fetched_at": "2026-09-14T07:36:07+00:00",
+  "source_snapshot_sha256": "5a4c321b84d789273e109de2b14acb6a8faf9a4d62d466b1b03e858c4d998532",
+  "images": {},
+  "local_only": true
+}

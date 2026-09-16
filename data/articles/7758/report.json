@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "7758",
+    "title": "提速不掉点：基于词颗粒度的中文WoBERT",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/7758",
+    "date": "2020-09-18",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 12,
+    "display_formula_count": 3,
+    "image_count": 0,
+    "heading_count": 6,
+    "code_block_count": 1,
+    "source_text_sha256": "3d3ddbc3eeeca0d05d790cc0bcf2ff096d2b808b70332f67d2fc0f32d45c76bc",
+    "output_text_sha256": "3d3ddbc3eeeca0d05d790cc0bcf2ff096d2b808b70332f67d2fc0f32d45c76bc",
+    "latex_sha256": "d143c1161e4f1c1780defab7fb586ff80872101a3b519095ddedfeaec40a168c",
+    "body_sha256": "c52c8c98c48fe1090b7de7044ac426ae47e045df57dbfd4d823cd323ea489200",
+    "converter_version": 1,
+    "markdown_sha256": "479c91d5016c3a6e83c27c693817f8c501cbb8e30997febedcb46cf8d85d1a5a"
+  },
+  "fetched_at": "2026-09-14T13:11:13+00:00",
+  "source_snapshot_sha256": "e2ffff0015112892c760ec5fc3864b56870ead885058caf8b3b9135d445c1fe6",
+  "images": {},
+  "local_only": true
+}

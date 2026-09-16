@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "154",
+    "title": "最受尊崇的3位诺贝尔奖得主",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/154",
+    "date": "2009-10-06",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 0,
+    "display_formula_count": 0,
+    "image_count": 3,
+    "heading_count": 3,
+    "code_block_count": 0,
+    "source_text_sha256": "0eb6054959d639a25d095541dcd74b878da5897f584059abec49dd984423d6ec",
+    "output_text_sha256": "0eb6054959d639a25d095541dcd74b878da5897f584059abec49dd984423d6ec",
+    "latex_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "body_sha256": "f34f4ab990e7a427d64c9bcfaac2f4d6d0f2dffcc922a9615fbffb0c95961e54",
+    "converter_version": 1,
+    "markdown_sha256": "ae7744d996a4bfbec3e839ad5272472d7d35490419d6e7fa70359c39fc079f68"
+  },
+  "fetched_at": "2026-09-14T14:50:18+00:00",
+  "source_snapshot_sha256": "d3944980e1e20a9853324c5dcd614d499ff83984840a7d552a43882bc0cf4e33",
+  "images": {},
+  "local_only": true
+}

@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "1344",
+    "title": "无固定点的单摆运动",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/1344",
+    "date": "2011-05-01",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 32,
+    "display_formula_count": 15,
+    "image_count": 1,
+    "heading_count": 0,
+    "code_block_count": 0,
+    "source_text_sha256": "98f868d7a2635b589fa83c6b85eeeb8ae03d0315f2804079e1e3b0cc768c471e",
+    "output_text_sha256": "98f868d7a2635b589fa83c6b85eeeb8ae03d0315f2804079e1e3b0cc768c471e",
+    "latex_sha256": "997b0f01f47ed94132697093aec0fae01fa1d2596f263fbb549fc8df073ae6fb",
+    "body_sha256": "373dab1b22bca58ba305d8ca358ec20de88c1cc4cef97f5ed912da2f7fdc5ebd",
+    "converter_version": 1,
+    "markdown_sha256": "43405f2533743ff0ee1b616a7057a672f4e9d22b5876d25039ca2f44d0ce34b5"
+  },
+  "fetched_at": "2026-09-14T14:21:40+00:00",
+  "source_snapshot_sha256": "ffaa782835ac42de21c9f4652d35fd10abce62fa2a777d7bc897db2813da7d3a",
+  "images": {},
+  "local_only": true
+}

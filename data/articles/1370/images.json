@@ -1,0 +1,45 @@
+{
+  "version": 1,
+  "images": {
+    "https://spaces.ac.cn/usr/uploads/2011/05/413561201.png": {
+      "status": "cached",
+      "file": "7eb78be5b856574733445339f493a2ab47f509e7e84ad56040c06f9915b1586c.png",
+      "sha256": "7eb78be5b856574733445339f493a2ab47f509e7e84ad56040c06f9915b1586c",
+      "bytes": 101100,
+      "checked_at": "2026-09-16T11:59:40+00:00",
+      "fetched_url": "https://spaces.ac.cn/usr/uploads/2011/05/413561201.png",
+      "etag": "\"5a6ec74e-18aec\"",
+      "last_modified": "Mon, 29 Jan 2018 07:03:42 GMT"
+    },
+    "https://spaces.ac.cn/usr/uploads/2011/05/1100686984.png": {
+      "status": "cached",
+      "file": "f3bf6bb0209de0b4ae12e83258c56f4af7f69402a168f6d98ce2a7dcb4c0a9d5.png",
+      "sha256": "f3bf6bb0209de0b4ae12e83258c56f4af7f69402a168f6d98ce2a7dcb4c0a9d5",
+      "bytes": 36076,
+      "checked_at": "2026-09-16T11:59:43+00:00",
+      "fetched_url": "https://spaces.ac.cn/usr/uploads/2011/05/1100686984.png",
+      "etag": "\"5a6ec74e-8cec\"",
+      "last_modified": "Mon, 29 Jan 2018 07:03:42 GMT"
+    },
+    "https://spaces.ac.cn/usr/uploads/2011/05/3409051852.png": {
+      "status": "cached",
+      "file": "31813ab23d727b343b55b9db618811f350a0da16d3a6131ab38ee5dad21daaf9.png",
+      "sha256": "31813ab23d727b343b55b9db618811f350a0da16d3a6131ab38ee5dad21daaf9",
+      "bytes": 34960,
+      "checked_at": "2026-09-16T11:59:46+00:00",
+      "fetched_url": "https://spaces.ac.cn/usr/uploads/2011/05/3409051852.png",
+      "etag": "\"5a6ec74e-8890\"",
+      "last_modified": "Mon, 29 Jan 2018 07:03:42 GMT"
+    },
+    "https://spaces.ac.cn/usr/uploads/2011/05/3448485032.png": {
+      "status": "cached",
+      "file": "7cd77bac5de4135cd660be15f6c444b468ee55afb8d77b18000126f0d9f9b65d.png",
+      "sha256": "7cd77bac5de4135cd660be15f6c444b468ee55afb8d77b18000126f0d9f9b65d",
+      "bytes": 276055,
+      "checked_at": "2026-09-16T11:59:49+00:00",
+      "fetched_url": "https://spaces.ac.cn/usr/uploads/2011/05/3448485032.png",
+      "etag": "\"5a6ec74e-43657\"",
+      "last_modified": "Mon, 29 Jan 2018 07:03:42 GMT"
+    }
+  }
+}

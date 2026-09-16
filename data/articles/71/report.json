@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "71",
+    "title": "【NASA每日一图】不规则的NGC 55",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/71",
+    "date": "2009-08-12",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 0,
+    "display_formula_count": 0,
+    "image_count": 1,
+    "heading_count": 0,
+    "code_block_count": 0,
+    "source_text_sha256": "88043d98e6c1f22fce3a81ded9c88bd2eadf8bb614fed222cc84c5431689ff17",
+    "output_text_sha256": "88043d98e6c1f22fce3a81ded9c88bd2eadf8bb614fed222cc84c5431689ff17",
+    "latex_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "body_sha256": "14a76f85d9fabf214db1efa57f9ab3d974cab2fb404d71668e1f6357c6af702c",
+    "converter_version": 1,
+    "markdown_sha256": "fce01aed1d334145b491343eb9f2a948e0f6d3e985018a7928e34066815cbcac"
+  },
+  "fetched_at": "2026-09-14T14:59:42+00:00",
+  "source_snapshot_sha256": "c9281afac1a54af9beef5c5a56686dc0bac9a63dc67f0ce01893688d98fe2234",
+  "images": {},
+  "local_only": true
+}

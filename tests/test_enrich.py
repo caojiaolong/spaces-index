@@ -1,5 +1,4 @@
 from scripts.enrich_posts import (
-    enrich_posts,
     extract_source_summary,
     parse_post_metadata,
     summary_needs_refresh,
@@ -73,38 +72,12 @@ def test_summary_needs_refresh_covers_missing_and_dirty_values():
     assert summary_needs_refresh({"source_summary": "正常小结。"}) is False
 
 
-class FailingSession:
-    headers: dict[str, str] = {}
-
-    def get(self, url: str, timeout: float):
-        raise RuntimeError("temporary failure")
-
-    def close(self) -> None:
-        pass
-
-
-def test_refresh_summaries_keeps_cached_metadata_on_fetch_failure():
-    raw_posts = [
-        {
-            "id": "1",
-            "title": "旧文章",
-            "url": "https://spaces.ac.cn/archives/1",
-            "date": "2024-01-01",
-        }
-    ]
-    cached_posts = [
-        {
-            **raw_posts[0],
-            "source_category": "数学研究",
-            "source_tags": ["矩阵"],
-        }
-    ]
-
-    assert enrich_posts(
-        raw_posts,
-        cached_posts,
-        refresh_summaries=True,
-        sleep_seconds=0,
-        session=FailingSession(),  # type: ignore[arg-type]
-        progress_every=0,
-    ) == cached_posts
+def test_old_metadata_command_delegates_to_unified_updater(monkeypatch):
+    import pytest
+    from scripts import enrich_posts, update_all
+    calls = []
+    monkeypatch.setattr(update_all, "main", lambda: calls.append("update") or 0)
+    with pytest.raises(SystemExit) as status:
+        enrich_posts.main()
+    assert status.value.code == 0
+    assert calls == ["update"]

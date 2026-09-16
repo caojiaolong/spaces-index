@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "7234",
+    "title": "对抗训练浅谈：意义、方法和思考（附Keras实现）",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/7234",
+    "date": "2020-03-01",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 69,
+    "display_formula_count": 11,
+    "image_count": 4,
+    "heading_count": 16,
+    "code_block_count": 3,
+    "source_text_sha256": "a81aba71cdc6c642c02916ed257a269fc62eeb7d3d3c0d690e9d3edfdd4eab8d",
+    "output_text_sha256": "a81aba71cdc6c642c02916ed257a269fc62eeb7d3d3c0d690e9d3edfdd4eab8d",
+    "latex_sha256": "38e8ce479d84ac759e10c073fbae0afae0cbbdd53bcd51133155a818b3eafb82",
+    "body_sha256": "923bd754548600a80bf6b6b37017f8dd0686811016f7cc99e37277a9539e5f52",
+    "converter_version": 1,
+    "markdown_sha256": "7066fee3d93d4b78013248f58e5d5b1e48d1bccced16a2f7b32bda29f74cc8c8"
+  },
+  "fetched_at": "2026-09-14T13:15:08+00:00",
+  "source_snapshot_sha256": "687b4f2bdefbb061f358802aea82ff8248100490767b59dd1db3222a306611be",
+  "images": {},
+  "local_only": true
+}

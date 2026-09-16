@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "1237",
+    "title": "[SETI-50周年]送给外星人的礼物",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/1237",
+    "date": "2011-02-06",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 0,
+    "display_formula_count": 0,
+    "image_count": 8,
+    "heading_count": 0,
+    "code_block_count": 0,
+    "source_text_sha256": "2f009faad84344397e0431db6b5da00c816f32fe89229abe5456a80d43c79db8",
+    "output_text_sha256": "2f009faad84344397e0431db6b5da00c816f32fe89229abe5456a80d43c79db8",
+    "latex_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "body_sha256": "5aba7533982d933d964bdbe7657072f5f748f96522f9220e0d66d422610913f1",
+    "converter_version": 1,
+    "markdown_sha256": "4953b2c45598378faafbb0835e1743a16d536533bb4437180099ac3c43ef8834"
+  },
+  "fetched_at": "2026-09-14T14:24:17+00:00",
+  "source_snapshot_sha256": "71ef9ca0da9c8754fd6a32f2829fb9b051e80da3b4bac14433514936fb6b8416",
+  "images": {},
+  "local_only": true
+}

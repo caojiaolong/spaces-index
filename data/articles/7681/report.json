@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "7681",
+    "title": "L2正则没有想象那么好？可能是“权重尺度偏移”惹的祸",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/7681",
+    "date": "2020-08-14",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 53,
+    "display_formula_count": 10,
+    "image_count": 1,
+    "heading_count": 9,
+    "code_block_count": 0,
+    "source_text_sha256": "e514afe7a9ed80fdbe24dd13ba0ccbdb943fb4cdd471b242e5bb9397b241a9ef",
+    "output_text_sha256": "e514afe7a9ed80fdbe24dd13ba0ccbdb943fb4cdd471b242e5bb9397b241a9ef",
+    "latex_sha256": "a041652bb2b0f2b4e062052a5338242ceab3acf8f3e684441a298860c2ef13a9",
+    "body_sha256": "3b732707b8d04231d7409275781f0a761d5b896452f1b9ab1034ae5df2248de2",
+    "converter_version": 1,
+    "markdown_sha256": "5c76e6a3dc22cf70479d29d15494aa71c19431c2c1282d3ac91619a0aa5aca17"
+  },
+  "fetched_at": "2026-09-14T13:11:55+00:00",
+  "source_snapshot_sha256": "c20a482c91a91f97262453626ee8593847eb48e32e96a7cf3f758b2bcf69ac0b",
+  "images": {},
+  "local_only": true
+}

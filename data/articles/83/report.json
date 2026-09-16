@@ -1,0 +1,39 @@
+{
+  "metadata": {
+    "id": "83",
+    "title": "如何在科学空间输入数学公式？——LaTeX帮助",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/83",
+    "date": "2009-08-18",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "source_dom_exact": true,
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "attributes_exact": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 9,
+    "display_formula_count": 1,
+    "image_count": 1,
+    "heading_count": 0,
+    "code_block_count": 0,
+    "source_text_sha256": "37cbc0b0ef5454993203a7eb2d8c9cf15b85e3ae1390095656a76360bde99bd2",
+    "output_text_sha256": "37cbc0b0ef5454993203a7eb2d8c9cf15b85e3ae1390095656a76360bde99bd2",
+    "latex_sha256": "83416106945439315d5dca719fa01d370834b4c216b0008944d017c0c93f5cdf",
+    "body_sha256": "f76e6cd629a05642226335d2243fe26d3a709f279b6ca99d2bd295cb7677c8e9",
+    "converter_version": 1,
+    "format": "html-v1",
+    "source_warnings": [],
+    "fallback_reason": "Unclosed math delimiter",
+    "markdown_sha256": "9fa9f6472690ecd54a202ed2ab49ee237579d4184b209240306ba15a772a5637"
+  },
+  "fetched_at": "2026-09-14T14:58:28+00:00",
+  "source_snapshot_sha256": "b84f5ef2e1bf642f0f4f718c872784765b9315287d69a5c7a69a5b3778ce2be9",
+  "images": {},
+  "local_only": true
+}

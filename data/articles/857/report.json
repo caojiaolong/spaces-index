@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "857",
+    "title": "今天我们都是舟曲人——举国哀悼舟曲遇难同胞",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/857",
+    "date": "2010-08-14",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 0,
+    "display_formula_count": 0,
+    "image_count": 2,
+    "heading_count": 0,
+    "code_block_count": 0,
+    "source_text_sha256": "7027ac72641dbf71aec6678d27640cb2d8153b97b83dfa709b613e56e8190ad5",
+    "output_text_sha256": "7027ac72641dbf71aec6678d27640cb2d8153b97b83dfa709b613e56e8190ad5",
+    "latex_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "body_sha256": "ea9a401c9405ac8c123c201618e3a6b6a0725a85f9af67723f6523091dffdc72",
+    "converter_version": 1,
+    "markdown_sha256": "c3f5682e6d74d52a4ac8620f34cd51cd2386485cfe0de32c9ab689a645bf4c0d"
+  },
+  "fetched_at": "2026-09-14T14:31:56+00:00",
+  "source_snapshot_sha256": "b414a5b77c23dce73a76106c28791bf2035b3405bd5af1ae66166101d7b14275",
+  "images": {},
+  "local_only": true
+}

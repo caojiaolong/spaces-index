@@ -1,0 +1,17 @@
+{
+  "metadata": {
+    "id": "10249",
+    "title": "Monarch矩阵：计算高效的稀疏型矩阵分解",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/10249",
+    "date": "2024-07-24",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "fetched_at": "2026-09-14T12:47:32+00:00",
+  "source_snapshot_sha256": "2161c32dd719d380171850a183e3212ec5b838e123098932736cf383e717a7dc",
+  "validators": {
+    "etag": null,
+    "last_modified": null
+  }
+}

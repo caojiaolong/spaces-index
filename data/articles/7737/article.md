@@ -1,0 +1,177 @@
+# 殊途同归的策略梯度与零阶优化
+
+> 作者：苏剑林 · 科学空间 · 2020-09-15
+>
+> 原文：<https://spaces.ac.cn/archives/7737>
+>
+> 原文许可：[CC BY-NC-ND 2.5 CN（署名-非商业性使用-禁止演绎）](https://creativecommons.org/licenses/by-nc-nd/2.5/cn/)。
+>
+> 本文件由 spaces-index 非官方、非商业项目进行必要的 HTML → Markdown 格式转换；正文未做摘要、润色、翻译或重组。项目不代表作者，也不表示作者为项目背书。
+>
+> 署名及附加许可说明不代表已获得作者额外授权。第三方素材权利依其原有声明。
+>
+> 原站转载与引用说明：[科学空间 FAQ](https://spaces.ac.cn/archives/6508#%E6%96%87%E7%AB%A0%E5%A6%82%E4%BD%95%E8%BD%AC%E8%BD%BD/%E5%BC%95%E7%94%A8)
+
+---
+
+深度学习如此成功的一个巨大原因就是基于梯度的优化算法（SGD、Adam等）能有效地求解大多数神经网络模型。然而，既然是基于梯度，那么就要求模型是可导的，但随着研究的深入，我们时常会有求解不可导模型的需求，典型的例子就是直接优化准确率、F1、BLEU等评测指标，或者在神经网络里边加入了不可导模块（比如“跳读”操作）。
+
+[![Gradient](<https://spaces.ac.cn/usr/uploads/2020/09/1506417309.png>)](<https://spaces.ac.cn/usr/uploads/2020/09/1506417309.png>)
+
+Gradient
+
+本文将简单介绍两种求解不可导的模型的有效方法：强化学习的重要方法之一策略梯度（Policy Gradient），以及干脆不需要梯度的零阶优化（Zeroth Order Optimization）。表面上来看，这是两种思路完全不一样的优化方法，但本文将进一步证明，在一大类优化问题中，其实两者基本上是等价的。
+
+## 形式描述
+
+首先，我们来形式地定义我们需要解决的问题。以监督学习为例，训练数据$(x_t,y_t)\sim\mathcal{D}$，模型为$p_{\theta}(y|x)$，$\theta$是待优化参数，其维度为$d$，假设模型本身是可导的，其的一般形式为$softmax(f_{\theta}(y|x)/\tau)$，其中$\tau$称为温度参数，没有特别注明的情况下默认$\tau=1$。假如真实标签是$y_t$，预测标签是$y_p$，那么单个样本的得分记为$r(y_t, y_p)$，训练目标希望总得分越大越好，即
+\begin{equation}\theta = \mathop{\text{argmax}}_{\theta}\mathbb{E}_{(x_t,y_t)\sim\mathcal{D}}\left[r\left(y_t, \mathop{\text{argmax}}_y p_{\theta}(y|x_t)\right)\right]\label{eq:base}\end{equation}
+看上去挺复杂的，但事实上它的含义很直观清晰：我们想求出参数$\theta$，使得整个数据集的得分$r(y_t,y_p)$尽可能大，而$y_p=\mathop{\text{argmax}}_y p_{\theta}(y|x_t)$，说明模型预测时输出的是概率最大的那一个。说白了，我们希望“预测概率最大的那一个$y$就是评测得分最高的那一个$y$”。
+
+这个形式对应着相当多的机器学习任务，在NLP中包括文本分类、序列标注、文本生成等，甚至回归问题也可以对应上去，可以说是很有代表性了。其困难之处就是$\mathop{\text{argmax}}_y$这一步无法提供有效的梯度，因此不好直接用基于梯度的优化算法优化。
+
+## 策略梯度
+
+策略梯度的想法很直接，既然原始的目标$\eqref{eq:base}$没法求梯度，那换个跟它强相关的、可求梯度的目标就行了，比如
+\begin{equation}\theta = \mathop{\text{argmax}}_{\theta}\mathbb{E}_{(x_t,y_t)\sim\mathcal{D}}\left[\sum_y p_{\theta}(y|x_t) r\left(y_t, y\right)\right]\label{eq:policy}\end{equation}
+
+### 排序不等式
+
+很明显，上述定义的目标并没有包含$\mathop{\text{argmax}}_y$之类的算子，因此它是可导的。那么我们首先想要知道的是上式跟原始目标$\eqref{eq:base}$有什么关系呢？差异又在哪呢？这需要用数学中的“排序不等式”来回答：
+
+> <strong>排序不等式</strong> 对于$a_1 \geq a_2 \geq \dots \geq a_n$以及$b_1 \geq b_2 \geq \dots \geq b_n$，并假设$(c_1, c_2, \dots, c_n)$是$(b_1, b_2, \dots, b_n)$的任一排列，那么
+> \begin{equation}\sum_{i=1}^n a_i b_i \geq \sum_{i=1}^n a_i c_i \geq \sum_{i=1}^n a_i b_{n+1-i}\end{equation}
+> 也就是说“同序积和 ≥ 乱序积和 ≥ 倒序积和”。
+
+排序不等式是很经典的不等式，网上很容易找到它的证明（一般用数学归纳法），这里就不证了。根据排序不等式我们可以知道，如果目标$\eqref{eq:policy}$达到最大值，那么$p_{\theta}(y|x_t)$与$r\left(y_t, y\right)$是同序的，也就是说确实可以实现“预测概率<strong>最大</strong>的那一个$y$就是评测得分<strong>最高</strong>的那一个$y$”这个目标，但是同时还实现了“预测概率<strong>第二大</strong>的那一个$y$就是评测得分<strong>第二高</strong>的那一个$y$”、“预测概率<strong>第三大</strong>的那一个$y$就是评测得分<strong>第三高</strong>的那一个$y$”等目标，而这些并不是原始目标所必须的。所以，目标$\eqref{eq:policy}$跟原始目标是强相关的，但是要求更多一些。
+
+注意到，排序不等式没有要求$a_i,b_i$都是非负数，所以实际的打分函数$r(y_t, y)$有可能是负数的。
+
+### 采样估计梯度
+
+确定目标$\eqref{eq:policy}$是可行的之后，我们可以求它的梯度：
+\begin{equation}\mathbb{E}_{(x_t,y_t)\sim\mathcal{D}}\left[\sum_y \nabla_{\theta} p_{\theta}(y|x_t) r\left(y_t, y\right)\right]\label{eq:policy-grad-base}\end{equation}
+一般来说，求梯度$\nabla_{\theta} p_{\theta}(y|x_t)$并不困难，而$\sum_y$才是主要的困难，因为它要对所有候选类别求和，而实际上的候选类别数目可能大到难以承受，相关讨论在之前的[《漫谈重参数：从正态分布到Gumbel Softmax》](<https://spaces.ac.cn/archives/6705>)也出现过。因此，比较好的办法是转化为采样估计的形式，即
+\begin{equation}\begin{aligned}
+&\mathbb{E}_{(x_t,y_t)\sim\mathcal{D}}\left[\sum_y p_{\theta}(y|x_t)\frac{\nabla_{\theta} p_{\theta}(y|x_t)}{p_{\theta}(y|x_t)}  r\left(y_t, y\right)\right]\\
+=& \mathbb{E}_{(x_t,y_t)\sim\mathcal{D}}\left[\sum_y p_{\theta}(y|x_t)r\left(y_t, y\right)\nabla_{\theta} \log  p_{\theta}(y|x_t)\right]\\
+=& \mathbb{E}_{(x_t,y_t)\sim\mathcal{D}, y\sim p_{\theta}(y|x_t)}\left[r\left(y_t, y\right)\nabla_{\theta}\log  p_{\theta}(y|x_t)\right]
+\end{aligned}\end{equation}
+这样原则上我们就只需要采样适当数目的$y$估计上式了，最后的结果便称为“策略梯度”。有了梯度，就可以套用现成的优化器来完成优化了。
+
+### 降低方差
+
+刚才我们说，往$r(y_t, y)$里加上一个常数，并不会改变最终的结果。但是，它有可能改变采样估算的效率，用统计的语言来说，就是它能改变采样的方差。举个简单的例子，$[4, 5, 6]$和$[-10, 10, 15]$，它们的均值都是5（代表我们要估算的目标），但是它们的方差分别为0\.67和116\.67，也就是后者方差远大于前者。如果我们只从中采样一个样本，那么前者与目标的最大误差也不过是1，后者最大误差能达到15，最小误差都有5，所以虽然理论上最终的均值都是一样的，但是前者的估算效率要远远高于后者（采样更少的样本，得到更高的估算精度）。
+
+这个简单的例子告诉我们要提高估算效率，就要想办法得到方差更小的估计量。这时候我们往$r(y_t, y)$里边减去一个常数$b$（称为baseline，“常数”是指不依赖于$y$，但可以依赖于$x$）：
+\begin{equation}\mathbb{E}_{y\sim p_{\theta}(y|x_t)}\left[(r\left(y_t, y\right)-b)\nabla_{\theta}\log  p_{\theta}(y|x_t)\right]\label{eq:var-reduce}\end{equation}
+最终的结果（均值）不会产生变化：
+\begin{equation}\begin{aligned}
+&\mathbb{E}_{y\sim p_{\theta}(y|x_t)}\left[(r\left(y_t, y\right)-b)\nabla_{\theta}\log  p_{\theta}(y|x_t)\right]\\
+=&\mathbb{E}_{y\sim p_{\theta}(y|x_t)}\left[r\left(y_t, y\right)\nabla_{\theta}\log  p_{\theta}(y|x_t)\right]-b\mathbb{E}_{y\sim p_{\theta}(y|x_t)}\left[\nabla_{\theta}\log  p_{\theta}(y|x_t)\right]\\
+=&\mathbb{E}_{y\sim p_{\theta}(y|x_t)}\left[r\left(y_t, y\right)\nabla_{\theta}\log  p_{\theta}(y|x_t)\right]-b\sum_y \nabla_{\theta} p_{\theta}(y|x_t)\\
+=&\mathbb{E}_{y\sim p_{\theta}(y|x_t)}\left[r\left(y_t, y\right)\nabla_{\theta}\log  p_{\theta}(y|x_t)\right]-b \nabla_{\theta} \sum_y p_{\theta}(y|x_t)\\
+=&\mathbb{E}_{y\sim p_{\theta}(y|x_t)}\left[r\left(y_t, y\right)\nabla_{\theta}\log  p_{\theta}(y|x_t)\right]-b \nabla_{\theta} 1\\
+=&\mathbb{E}_{y\sim p_{\theta}(y|x_t)}\left[r\left(y_t, y\right)\nabla_{\theta}\log  p_{\theta}(y|x_t)\right]\\
+\end{aligned}\end{equation}
+但是它方差有可能变，我们希望最小化方差，根据$\mathbb{Var}[x]=\mathbb{E}[x^2]-\mathbb{E}[x]^2$知最小化方差等价于最小化二阶矩
+\begin{equation}\mathbb{E}_{y\sim p_{\theta}(y|x_t)}\left[(r\left(y_t, y\right)-b)^2\Vert\nabla_{\theta}\log  p_{\theta}(y|x_t)\Vert^2\right]\end{equation}
+这只不过是一个二次函数最小值问题，解得最优的$b$是：
+\begin{equation}b = \frac{\mathbb{E}_{y\sim p_{\theta}(y|x_t)}\left[r\left(y_t, y\right)\Vert\nabla_{\theta}\log  p_{\theta}(y|x_t)\Vert^2\right]}{\mathbb{E}_{y\sim p_{\theta}(y|x_t)}\left[\Vert\nabla_{\theta}\log  p_{\theta}(y|x_t)\Vert^2\right]}\end{equation}
+即以$\Vert\nabla_{\theta}\log  p_{\theta}(y|x_t)\Vert^2$为权重对$r\left(y_t, y\right)$求加权期望。但是要获取每个候选类别的梯度成本会比较大，我们通常不考虑这个权重，而使用一个简化的版本：
+\begin{equation}b = \mathbb{E}_{y\sim p_{\theta}(y|x_t)}\left[r\left(y_t, y\right)\right]\end{equation}
+结合式$\eqref{eq:var-reduce}$，我们可以发现思想其实很直观：就是要从$p_{\theta}(y|x_t)$里边采样若干个$y$，然后算出$r\left(y_t, y\right)$的均值$b$，大于这个均值的执行梯度上升（强化效果），小于这个均值的执行梯度下降（削弱效果）。
+
+### 一言以蔽之
+
+简单来说，策略梯度就是在遇到有$\mathop{\text{argmax}}$操作等不可导目标函数时，换一个可导的目标$\eqref{eq:policy}$，这时候用强化的语言来说，$y$称为“策略”，$p_{\theta}(y|x_t)$称为“决策模型”，$r(y_t,y_p)$就是“奖励”，然后配合采样估计和降低方差技巧，得到原模型的一个有效的梯度估计，从而完成模型的优化。
+
+## 零阶优化
+
+零阶优化泛指所有不需要梯度信息的优化方法，而一般情况下它指的是基于参数采样和差分思想来估计参数更新方向的优化算法。从形式上来看，它是直接在参数空间中进行随机采样，不依赖于任何形式的梯度，因此理论上能求解的目标是相当广泛的；不过也正因为它直接在参数空间中进行采样，只是相当于一种更加智能的网格搜索，因此面对高维参数空间时（比如深度学习场景），它的优化效率会相当低，因此使用场景会很受限。
+
+不过就算这样，也不妨碍我们学习零阶优化的思想，毕竟技多不压身。此外，深度学习虽然往往参数量很大，但是通常来说我们设计的模型大部分模块都是可导的，不可导的可能只有一小部分，因此也许有可能让可导部分直接用梯度优化器来优化，不可导的部分才用零阶优化，这便是它的应用场景之一了，这样的思想在很多NAS的论文中都出现过。
+
+### 零阶梯度
+
+零阶优化不需要我们通常意义下所求的梯度，但是它定义了一个基于采样和差分的“替代品”，我们暂且称为“零阶梯度”：
+
+> 对于标量函数$f(x)$，定义它在$x$处的零阶梯度为
+> \begin{equation}\tilde{\nabla}_{x}f(x)=\mathbb{E}_{u\sim p(u)}\left[\frac{f(x + \varepsilon u) - f(x)}{\varepsilon}u\right]\label{eq:zero-grad}\end{equation}
+> 其中$\varepsilon$是事先给定的小正数，$p(u)$则是事先指定的均值为0、协方差矩阵为单位矩阵的分布，通常我们会使用标准正态分布。
+
+可以看到，只需要从$p(u)$中采样若干个点，就可以对零阶梯度进行估算，而有了零阶梯度之后，我们就可以把它当作普通的梯度来套用基于梯度的优化器，这便是零阶优化的基本思想。特别地，如果$f(x)$本身是可导的，那么$f(x + \varepsilon u)=f(x)+\varepsilon u^{\top}\nabla_x f(x) + \mathcal{O}(\varepsilon^2)$，所以当$\varepsilon\to 0$时：
+\begin{equation}\tilde{\nabla}_{x}f(x)=\int p(u) u \left(u^{\top}\nabla_x f(x)\right)du=\int p(u) \left(u u^{\top}\right)\nabla_x f(x)du=\nabla_x f(x)\end{equation}
+也就是说$\tilde{\nabla}_{x}f(x)$等于普通的梯度，所以$\tilde{\nabla}_{x}f(x)$确实是普通梯度的合理推广之一。
+
+### 也有basline
+
+善于推导的读者可能会发现，在定义$\eqref{eq:zero-grad}$中，由于$p(u)$的均值为0，所以$-f(x)$其实不影响最终结果，即
+\begin{equation}\tilde{\nabla}_{x}f(x)=\mathbb{E}_{u\sim p(u)}\left[\frac{f(x + \varepsilon u)}{\varepsilon}u\right] - \mathbb{E}_{u\sim p(u)}\left[\frac{f(x)}{\varepsilon}u\right]=\mathbb{E}_{u\sim p(u)}\left[\frac{f(x + \varepsilon u)}{\varepsilon}u\right]\label{eq:zero-grad-equal}\end{equation}
+那么$-f(x)$的作用是什么呢？其实跟前面策略梯度一样，都是为了降低方差，我们同样可以引入$b$，然后最小化二阶矩（等价于最小化方差）
+\begin{equation}\mathbb{E}_{u\sim p(u)}\left[\left(\frac{f(x + \varepsilon u)-b}{\varepsilon}\right)^2\Vert u\Vert^2\right]\end{equation}
+解得最优的$b$为
+\begin{equation}b=\frac{\mathbb{E}_{u\sim p(u)}\left[f(x + \varepsilon u)\Vert u\Vert^2\right]}{\mathbb{E}_{u\sim p(u)}\left[\Vert u\Vert^2\right]}\end{equation}
+实验的时候，可以直接用有限个样本估计上式。事实上，如果$f(x)$是可导的话，可以用泰勒展开近似完成积分，结果是$f(x)+\mathcal{O}(\varepsilon^2)$，从这个角度看直接取$b=f(x)$也是一个合理的选择，这就说明了引入$-f(x)$项的必要性与合理性。
+
+### 一言以蔽之
+
+零阶优化方法主要是基于差分来定义了一个梯度的合理推广，由于算差分不需要函数的可导性，因此自然能适用于可导/不可导目标的优化。当然，由于$u$的维度就是全体参数$\theta$的维度，对于深度学习这样的参数量巨大的模型，其实更新过程中的方差会很大，不好收敛，所以通常来说零阶优化只用来优化模型的一小部分参数，或者作为辅助优化手段（比如“可导目标\+普通梯度\+大学习率”与“不可导目标\+零阶梯度\+小学习率”交替更新）。对于直接在高维空间中应用零阶优化方法，也有一定的研究工作（比如[《Gradientless Descent: High\-Dimensional Zeroth\-Order Optimization》](<https://papers.cool/arxiv/1911.06317>)），但还不算很成功。
+
+此外，之前在[《从采样看优化：可导优化与不可导优化的统一视角》](<https://spaces.ac.cn/archives/7521>)介绍的统一视角，也可以看作是一种零阶优化方法，它是对常见优化思路的更统一的推广（通过它可以导出梯度下降、牛顿法、零阶梯度等），但原则上来说，它也存在跟零阶梯度一样的方差大等“通病”，这是零阶优化方法很难避免的。
+
+## 貌离神合
+
+看上去，策略梯度和零阶优化确实有很多相似之处，比如大家都是需要随机采样来估计梯度，大家都需要想办法降低方差，等等。当然，不相似之处也能列举出不少，比如策略梯度是要对策略空间采样，而零阶优化则是对参数空间采样；又比如策略梯度本质上还是基于梯度的，而零阶优化理论上完全不需要梯度。
+
+那么，两者之间的关系究竟是怎样呢？接下来我们将会证明，对于本文开头提出来的优化问题$\eqref{eq:base}$来说，两者基本上是等价的。证明的思路是求目标$\eqref{eq:base}$的零阶梯度，经过一系列简化后发现它基本上就是策略梯度。
+
+### 划分全空间
+
+我们记
+\begin{equation}\mathcal{R}_{\theta}=\mathbb{E}_{(x_t,y_t)\sim\mathcal{D}}\left[r\left(y_t, \mathop{\text{argmax}}_y p_{\theta}(y|x_t)\right)\right]\end{equation}
+那么根据式$\eqref{eq:zero-grad-equal}$，它的零阶梯度是
+\begin{equation}\begin{aligned}
+\tilde{\nabla}_{\theta}\mathcal{R}_{\theta}=&\frac{1}{\varepsilon}\int \mathbb{E}_{(x_t,y_t)\sim\mathcal{D}}\left[r\left(y_t, \mathop{\text{argmax}}_y p_{\theta + \varepsilon u}(y|x_t)\right)\right] p(u) u du\\
+=&\mathbb{E}_{(x_t,y_t)\sim\mathcal{D}}\left[\frac{1}{\varepsilon}\int r\left(y_t, \mathop{\text{argmax}}_y p_{\theta + \varepsilon u}(y|x_t)\right)p(u) u du\right]
+\end{aligned}\end{equation}
+它可以转化为
+\begin{equation}\begin{aligned}
+\tilde{\nabla}_{\theta}\mathcal{R}_{\theta}=& \mathbb{E}_{(x_t,y_t)\sim\mathcal{D}}\left[\frac{1}{\varepsilon}\sum_y\int_{\Omega_{y|x_t}} r\left(y_t, y\right)p(u) u du\right]\\
+\Omega_{y|x_t} =& \left\{u\left|u\in\mathbb{R}^d, y=\mathop{\text{argmax}}_{\hat{y}} p_{\theta + \varepsilon u}(\hat{y}|x_t)\right.\right\}
+\end{aligned}\end{equation}
+看起来很复杂，其实思想很简单，就是不同的$u$的预测结果$\mathop{\text{argmax}}_{y} p_{\theta + \varepsilon u}(y|x_t)$也不同，我们将预测结果同为$y$的所有$u$放在一起，记为$\Omega_{y|x_t}$，这时候全空间$\mathbb{R}^d$就被划分为互不相交的子集$\Omega_{y|x_t}$了。前面没有特别注明积分区域的积分默认是在全空间$\mathbb{R}^d$进行的，划分空间后，它就等于在各个划分的子集$\Omega_{y|x_t}$上的积分之和了。
+
+### 示性函数
+
+然后，我们用一个“示性函数”技巧，定义
+\begin{equation}\chi(y|x_t, u)=\left\{\begin{aligned}1, u\in\Omega_{y|x_t}\\
+0, u\not\in\Omega_{y|x_t}\end{aligned}\right.\end{equation}
+那么
+\begin{equation}\begin{aligned}
+\frac{1}{\varepsilon}\sum_y\int_{\Omega_{y|x_t}} r\left(y_t, y\right)p(u) u du=\frac{1}{\varepsilon}\sum_y\int \chi(y|x_t, u) r\left(y_t, y\right)p(u) u du
+\end{aligned}\end{equation}
+回顾$\Omega_{y|x_t}$的含义，对于任意$u\in\Omega_{y|x_t}$，模型$p_{\theta + \varepsilon u}(\cdot|x_t)$的预测结果就是$y$，在示性函数里边则输出1，那么我们可以发现实际上就有
+\begin{equation}\chi(y|x_t, u)=\lim_{\tau\to 0} p_{\theta + \varepsilon u}(y|x_t)\end{equation}
+其中$\tau$是softmax里边的温度参数（文章开头已经说明）。根据这个结论，我们可以近似地用$p_{\theta + \varepsilon u}(y|x_t)$代替$\chi(y|x_t, u)$，然后代入上述各个式子，得到
+\begin{equation}
+\tilde{\nabla}_{\theta}\mathcal{R}_{\theta} \approx \mathbb{E}_{(x_t,y_t)\sim\mathcal{D}}\left[\frac{1}{\varepsilon}\sum_y\int p_{\theta + \varepsilon u}(y|x_t) r\left(y_t, y\right)p(u) u du\right]
+\end{equation}
+
+### 近似求积分
+
+最后，由于$p_{\theta + \varepsilon u}(y|x_t)$是可导的，因此利用展开$p_{\theta + \varepsilon u}(y|x_t)\approx p_{\theta}(y|x_t) + \varepsilon u^{\top}\nabla_{\theta}p_{\theta}(y|x_t)$代入上式完成对$u$的积分得
+\begin{equation}
+\tilde{\nabla}_{\theta}\mathcal{R}_{\theta} \approx \mathbb{E}_{(x_t,y_t)\sim\mathcal{D}}\left[\sum_y r\left(y_t, y\right)\nabla_{\theta}p_{\theta}(y|x_t)\right]
+\end{equation}
+对比式$\eqref{eq:policy-grad-base}$可以发现，上式右端正是策略梯度。
+
+所以，看起来差异蛮大的零阶梯度，最终指向的方向实际上跟策略梯度是相近的，真可谓貌离神合、殊途同归了，有种“正确的答案只有一个”的感觉。这不禁让笔者想起了列夫·托尔斯泰的名言：
+
+> 幸福的家庭都是相似的，不幸的家庭各有各的不幸。
+
+参数的更新方向也是如此呀（正确的更新方向都是相似的）～
+
+## 文末小结
+
+本文主要介绍了处理不可导的优化目标的两种方案：策略梯度和零阶优化，它们分别是从两个不同的角度来定义新的“梯度”来作为参数的更新方向。表面上来看两者走了不同的路径，但笔者的探讨表明，在处理跟策略梯度一样的优化问题时，零阶优化所给出的更新方向跟策略梯度基本上是等价的，两者殊途同归。此外，本文也可以作为强化学习的入门资料供初学者参考。

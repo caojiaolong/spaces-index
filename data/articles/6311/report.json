@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "6311",
+    "title": "“让Keras更酷一些！”：随意的输出和灵活的归一化",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/6311",
+    "date": "2019-01-27",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 1,
+    "display_formula_count": 1,
+    "image_count": 0,
+    "heading_count": 5,
+    "code_block_count": 8,
+    "source_text_sha256": "f7ccfa77e79918ee3886346008403dd481e28e4794c5c7fcfb15e83704d666c5",
+    "output_text_sha256": "f7ccfa77e79918ee3886346008403dd481e28e4794c5c7fcfb15e83704d666c5",
+    "latex_sha256": "9f27b636a74f0598ef4c6968590f6551cdce67e8e0eb85a2c952f7050aea00cc",
+    "body_sha256": "333fefd923b5e8a0dfe8330d96e62ff9e6ed119f21f698a1bd5da4720ec96a39",
+    "converter_version": 1,
+    "markdown_sha256": "91506e97fa8a60e87c4c8ada78806454249016f7a7c229f8db3242af89622042"
+  },
+  "fetched_at": "2026-09-14T13:21:55+00:00",
+  "source_snapshot_sha256": "7d9745abc581bd1ffd777bdca5bc07ebc9525676127bae7aa2c30c825a5c5bef",
+  "images": {},
+  "local_only": true
+}

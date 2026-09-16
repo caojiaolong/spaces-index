@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "1629",
+    "title": "费曼积分法——积分符号内取微分(3)",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/1629",
+    "date": "2012-06-23",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 26,
+    "display_formula_count": 11,
+    "image_count": 0,
+    "heading_count": 0,
+    "code_block_count": 0,
+    "source_text_sha256": "227adb77763a7f7df766b22d7660d7fb676d32885a1d636294779bae015f46ac",
+    "output_text_sha256": "227adb77763a7f7df766b22d7660d7fb676d32885a1d636294779bae015f46ac",
+    "latex_sha256": "be08bea763d0e341cba793ac6f7ac0ae87fd3655996552295dc4d8e8433af1d0",
+    "body_sha256": "307bb95362ca636e9efe0a9b317941151ebc09bcb13020ce18d99965c9d84313",
+    "converter_version": 1,
+    "markdown_sha256": "f37c5cd7228e6bc414b9ab7e7fa850e5c81784cd24e88b2645de442d5db1bf2a"
+  },
+  "fetched_at": "2026-09-14T14:13:45+00:00",
+  "source_snapshot_sha256": "d5206d9f757e94cfead94fc1fd85cac070a2447e8c76477dbc12fbb46ef29952",
+  "images": {},
+  "local_only": true
+}

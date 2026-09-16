@@ -1,0 +1,17 @@
+{
+  "metadata": {
+    "id": "7367",
+    "title": "节省显存的重计算技巧也有了Keras版了",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/7367",
+    "date": "2020-04-29",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "fetched_at": "2026-09-14T13:14:09+00:00",
+  "source_snapshot_sha256": "c1712dbcead1682e9989ec02a012d01b2a1907dff08d4d0384fefcc458e7c157",
+  "validators": {
+    "etag": null,
+    "last_modified": null
+  }
+}

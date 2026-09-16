@@ -1,0 +1,19 @@
+<div class="PostContent" id="PostContent">
+<p>此文很水，高手略过...</p><p>Python以它的开发效率而闻名，优秀的开发效率自然意味着它能够用更少的代码实现更多的功能。那么，对于同一个问题，Python的代码能有多简洁？而我们怎么平衡开发效率和运行效率？笔者学了几个月Python，略懂一点，在此班门弄斧一翻。</p><p>在此，我们来编程计算<br/>
+$$\sum_{n=0}^{10} n^2$$<br/>
+这当然是一道非常简单的习题。按照一般思路，写出来的最自然的代码就是：</p><pre class="line-numbers"><code class="language-python">s=0
+for i in range(11):
+    s = s + i**2
+
+print(s)
+</code></pre><p><br/>
+不过，如果追求代码的简洁性，我们只需要写</p><pre class="line-numbers"><code class="language-python">print(sum([i**2 for i in range(11)]))
+</code></pre><p>只需要一行就搞定了！这是Python以及其他脚本语言精简代码和提高效率的思路之一：利用数组以及现成的函数，尽量避免自己写循环。</p><p>不过，后面的代码虽然简洁，但是效率不算高。原因在于Python中的列表是一个很方便的对象，它的每个元素不一定要同一类型，比如a=[1,[2,3]]这样的代码是成立的，这样子第一个元素a[0]=1是一个整数，第二个元素a[1]=[2,3]是一个列表。这样子的弊端是每次调用列表中的元素时都要检测数据类型，导致效率下降。</p><p>解决的办法是用numpy中真正的数组来代替列表：</p><pre class="line-numbers"><code class="language-python">import numpy as np
+print((np.arange(0,11)**2).sum())
+</code></pre><p>这样子便兼顾了运行效率和开发效率。</p><p>当然，更多的技巧需要在实践中不断总结。望读者赐教。</p>
+
+
+
+
+
+</div>

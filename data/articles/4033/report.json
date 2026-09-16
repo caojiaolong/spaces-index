@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "4033",
+    "title": "【理解黎曼几何】7. 高斯-博内公式",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/4033",
+    "date": "2016-10-21",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 48,
+    "display_formula_count": 16,
+    "image_count": 0,
+    "heading_count": 3,
+    "code_block_count": 0,
+    "source_text_sha256": "05336716213383e59a1719b5abbdb6e19cbfc3f27d6b8d427706274a654de2ec",
+    "output_text_sha256": "05336716213383e59a1719b5abbdb6e19cbfc3f27d6b8d427706274a654de2ec",
+    "latex_sha256": "c6dd494c2e42d28ac71def95578b3735a482aaecffc6028eadb20ade54109ab6",
+    "body_sha256": "6e612d8d0f4e8eb803164c2ea39965d16ac2724becaa47807a355e3a5b3e507b",
+    "converter_version": 1,
+    "markdown_sha256": "959c882b08210f07e65b887246bc43a6f272e006aab2663f1ff6e7c90cdacfa8"
+  },
+  "fetched_at": "2026-09-14T13:37:17+00:00",
+  "source_snapshot_sha256": "32f26805488476e5d0ff6f110990496b1e822c654109154d6ac6954861ec98c7",
+  "images": {},
+  "local_only": true
+}

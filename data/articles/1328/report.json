@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "1328",
+    "title": "《教材如何写》:对于教材写法的一点考虑",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/1328",
+    "date": "2011-04-16",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 0,
+    "display_formula_count": 0,
+    "image_count": 0,
+    "heading_count": 0,
+    "code_block_count": 0,
+    "source_text_sha256": "2724f66934669880f7a71b4c0806037badff2c3d8938a5fec31a81e7ff8d3881",
+    "output_text_sha256": "2724f66934669880f7a71b4c0806037badff2c3d8938a5fec31a81e7ff8d3881",
+    "latex_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "body_sha256": "9280efaf20a8e90c40d1fc45fcf97b4269ee5f272734141df499cdde20bad520",
+    "converter_version": 1,
+    "markdown_sha256": "07b37fb97571520e0f445b88732f129125bb1f0483e6379abe95d69ff165d926"
+  },
+  "fetched_at": "2026-09-14T14:22:23+00:00",
+  "source_snapshot_sha256": "ba9fcc8194a2682d5f6c11d39179ab6ecd41f8d03fd374d258fccbd50078bf1e",
+  "images": {},
+  "local_only": true
+}

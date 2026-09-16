@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "5776",
+    "title": "细水长flow之NICE：流模型的基本概念与实现",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/5776",
+    "date": "2018-08-11",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 105,
+    "display_formula_count": 18,
+    "image_count": 5,
+    "heading_count": 15,
+    "code_block_count": 0,
+    "source_text_sha256": "afa71e284e1f5bad17b30184b241202dc0b78e11818f53a872d0762c12a706c5",
+    "output_text_sha256": "afa71e284e1f5bad17b30184b241202dc0b78e11818f53a872d0762c12a706c5",
+    "latex_sha256": "72babe2b26bec0fb1eb0e26b319b33b55b807d326278e0f9d9858c4cdf331438",
+    "body_sha256": "45859b9bab458ce2e23c7e54dd2ebdceabf55549859c94951b406f2b044d6238",
+    "converter_version": 1,
+    "markdown_sha256": "c50c042767a969c488d6424c8f94f966988bc310a2e1cdce7f701f075a1974c1"
+  },
+  "fetched_at": "2026-09-14T13:25:22+00:00",
+  "source_snapshot_sha256": "7bf1d031c1a2ff9bf968a54b7d4a7415f578fe24e9f00349f23d0d0cbe40ff77",
+  "images": {},
+  "local_only": true
+}

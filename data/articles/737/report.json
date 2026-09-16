@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "737",
+    "title": "完成了一个typecho的签名图片",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/737",
+    "date": "2010-07-23",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 0,
+    "display_formula_count": 0,
+    "image_count": 1,
+    "heading_count": 0,
+    "code_block_count": 0,
+    "source_text_sha256": "38444162b78a59ed4a4b11cc275627cf5e200eeac5b63ef292a43c731c0c2203",
+    "output_text_sha256": "38444162b78a59ed4a4b11cc275627cf5e200eeac5b63ef292a43c731c0c2203",
+    "latex_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "body_sha256": "0bb984d246038f84252cbbca148c6ba8ef6ba0cd5a4dd2b61bcef7bc585915d7",
+    "converter_version": 1,
+    "markdown_sha256": "ec09c92df6d894b979c256bbcfb6ad10e55e51218d8f2321d7d97829ca78dd40"
+  },
+  "fetched_at": "2026-09-14T14:34:12+00:00",
+  "source_snapshot_sha256": "a453fb218fa79ca7c1826c91d59189c189b2cb7e0a4d6e41aeaafbada53facfc",
+  "images": {},
+  "local_only": true
+}

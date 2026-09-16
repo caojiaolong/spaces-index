@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "8578",
+    "title": "概率视角下的线性模型：逻辑回归有解析解吗？",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/8578",
+    "date": "2021-07-22",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 72,
+    "display_formula_count": 22,
+    "image_count": 1,
+    "heading_count": 13,
+    "code_block_count": 0,
+    "source_text_sha256": "6c2b1d4e8ccacd58f5c365ea3c56a3f153f9ab3c77e3d1e63f7a6903aed7a369",
+    "output_text_sha256": "6c2b1d4e8ccacd58f5c365ea3c56a3f153f9ab3c77e3d1e63f7a6903aed7a369",
+    "latex_sha256": "6cc86fb524a04430cced7a4fe1f54d2894c4f97a65d61d23d5b41f137454d924",
+    "body_sha256": "677d410718ad15fe2482fa915f98bbc046d4be477f26678cf6f70a93eaf5e185",
+    "converter_version": 1,
+    "markdown_sha256": "ab3f2ed6dff4c58c7e36dc5b6b34fb2a814fdbcac9e26c88c25c10936fa36633"
+  },
+  "fetched_at": "2026-09-14T13:05:20+00:00",
+  "source_snapshot_sha256": "5cf20d0614bd22d51ae85ae3db96a0bf16adcbfbe966cbc27e03ebd920e4ceb1",
+  "images": {},
+  "local_only": true
+}

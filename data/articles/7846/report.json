@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "7846",
+    "title": "用ALBERT和ELECTRA之前，请确认你真的了解它们",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/7846",
+    "date": "2020-10-29",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 14,
+    "display_formula_count": 0,
+    "image_count": 4,
+    "heading_count": 13,
+    "code_block_count": 0,
+    "source_text_sha256": "3be3c6ce9e002351090481922d0f5915a453a487fa05cf4102649ec7cba1c88c",
+    "output_text_sha256": "3be3c6ce9e002351090481922d0f5915a453a487fa05cf4102649ec7cba1c88c",
+    "latex_sha256": "a3d78a42e97277e238a084e5e00bdfdddf892573b3488bb539ce4c875dc1e97e",
+    "body_sha256": "d50acb761fb43a165bcc16489dc432783ce028d267be4eeed68369af9abac9df",
+    "converter_version": 1,
+    "markdown_sha256": "def55ba589c4ab686a8d46cfa8df3f6c04a1eec463bcbfb1cdf87ae9a48adbd5"
+  },
+  "fetched_at": "2026-09-14T13:10:29+00:00",
+  "source_snapshot_sha256": "a04f8bcf460b56bbd69670ff68bd955d5bba887115700b8cf33e413c4973e338",
+  "images": {},
+  "local_only": true
+}

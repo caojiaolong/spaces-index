@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "9509",
+    "title": "生成扩散模型漫谈（十八）：得分匹配 = 条件得分匹配",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/9509",
+    "date": "2023-02-28",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 32,
+    "display_formula_count": 9,
+    "image_count": 0,
+    "heading_count": 5,
+    "code_block_count": 0,
+    "source_text_sha256": "25e8979122c169aba2631da4258873aa2a6c24eab0989d3f87f1d1fb705b8dc5",
+    "output_text_sha256": "25e8979122c169aba2631da4258873aa2a6c24eab0989d3f87f1d1fb705b8dc5",
+    "latex_sha256": "7ef290c37b65c7cc16909bc8eea3addf088acc3f8a7fd926157a5f98e0822a03",
+    "body_sha256": "15d15924a16716dd9084e2798d6af890ac2116a1f4ad13f05381aaa1d8854aa7",
+    "converter_version": 1,
+    "markdown_sha256": "f2ee379be990c9370e99798617a2b73e2d30bc2653cfd2f411b7033c121718eb"
+  },
+  "fetched_at": "2026-09-14T12:55:23+00:00",
+  "source_snapshot_sha256": "1a0e8080678aa90c33d806bf4cc2ecd1ed67980159826201ee1408ef573e3110",
+  "images": {},
+  "local_only": true
+}

@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "1375",
+    "title": "祝大家端午节快乐！",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/1375",
+    "date": "2011-06-06",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 0,
+    "display_formula_count": 0,
+    "image_count": 1,
+    "heading_count": 0,
+    "code_block_count": 0,
+    "source_text_sha256": "d6fc496066b1df46f7ee9f187aa62cdf051f1d47bba7c6775f6eac3e6db90460",
+    "output_text_sha256": "d6fc496066b1df46f7ee9f187aa62cdf051f1d47bba7c6775f6eac3e6db90460",
+    "latex_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "body_sha256": "0674f7737e06a8e698b9133edc16a3d5d2ba4273ab06b5ccc0d7ba7bbd144073",
+    "converter_version": 1,
+    "markdown_sha256": "a7e6688fb489766f624480c1a39313d396ebb3f812b83235605870127105f2d3"
+  },
+  "fetched_at": "2026-09-14T14:20:48+00:00",
+  "source_snapshot_sha256": "74710133fc585eefe7a2cedc47d07ff60006cea016d6831975f07ed01748def2",
+  "images": {},
+  "local_only": true
+}

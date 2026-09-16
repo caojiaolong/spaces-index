@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "57",
+    "title": "【NASA每日一图】“蒸发”中的参宿四",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/57",
+    "date": "2009-08-05",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 0,
+    "display_formula_count": 0,
+    "image_count": 1,
+    "heading_count": 0,
+    "code_block_count": 0,
+    "source_text_sha256": "923e7e8e82a20c5f7b2efd7cec16cf565b18886681dfacfef80dcbc75278433c",
+    "output_text_sha256": "923e7e8e82a20c5f7b2efd7cec16cf565b18886681dfacfef80dcbc75278433c",
+    "latex_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "body_sha256": "b6aabdec31efbc7bc5276288beb4e24f819c52eb26f020fa2a42f39a00582153",
+    "converter_version": 1,
+    "markdown_sha256": "88ee67923b778f3e181f1929093120dc1cbc1ff4c179f126c3d8eaef4789be1d"
+  },
+  "fetched_at": "2026-09-14T15:01:17+00:00",
+  "source_snapshot_sha256": "7b8249a977c849b4c31ad868a890775f8ad9e3828eb138943ee08ce25f769b34",
+  "images": {},
+  "local_only": true
+}

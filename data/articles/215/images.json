@@ -1,0 +1,45 @@
+{
+  "version": 1,
+  "images": {
+    "https://spaces.ac.cn/usr/uploads/2009/10/3534349904.jpg": {
+      "status": "cached",
+      "file": "7aab41c1aa1d2a4fb65c57a171cca25e61c59a8ea6ce336cbd828df3b656df28.jpg",
+      "sha256": "7aab41c1aa1d2a4fb65c57a171cca25e61c59a8ea6ce336cbd828df3b656df28",
+      "bytes": 48588,
+      "checked_at": "2026-09-16T12:29:51+00:00",
+      "fetched_url": "https://spaces.ac.cn/usr/uploads/2009/10/3534349904.jpg",
+      "etag": "\"5a6ec750-bdcc\"",
+      "last_modified": "Mon, 29 Jan 2018 07:03:44 GMT"
+    },
+    "https://spaces.ac.cn/usr/uploads/2009/10/341966435.jpg": {
+      "status": "cached",
+      "file": "358ae08806cea623a203ba66512b5a674adc8bcabda2bcdd00e4ec1651c376ea.jpg",
+      "sha256": "358ae08806cea623a203ba66512b5a674adc8bcabda2bcdd00e4ec1651c376ea",
+      "bytes": 35155,
+      "checked_at": "2026-09-16T12:29:54+00:00",
+      "fetched_url": "https://spaces.ac.cn/usr/uploads/2009/10/341966435.jpg",
+      "etag": "\"5a6ec750-8953\"",
+      "last_modified": "Mon, 29 Jan 2018 07:03:44 GMT"
+    },
+    "https://spaces.ac.cn/usr/uploads/2009/10/2011766649.jpg": {
+      "status": "cached",
+      "file": "7c243c843cb0835fc2b29d680c582d56f41a7d856efdd2945e4e18699f57a5e0.jpg",
+      "sha256": "7c243c843cb0835fc2b29d680c582d56f41a7d856efdd2945e4e18699f57a5e0",
+      "bytes": 77842,
+      "checked_at": "2026-09-16T12:29:57+00:00",
+      "fetched_url": "https://spaces.ac.cn/usr/uploads/2009/10/2011766649.jpg",
+      "etag": "\"5a6ec750-13012\"",
+      "last_modified": "Mon, 29 Jan 2018 07:03:44 GMT"
+    },
+    "https://spaces.ac.cn/usr/uploads/2009/10/2604084027.jpg": {
+      "status": "cached",
+      "file": "de797a6fead78c1775410d5f3f58f3bf2f59c6fc34489f7636de7f5dc0232ec6.jpg",
+      "sha256": "de797a6fead78c1775410d5f3f58f3bf2f59c6fc34489f7636de7f5dc0232ec6",
+      "bytes": 89631,
+      "checked_at": "2026-09-16T12:30:00+00:00",
+      "fetched_url": "https://spaces.ac.cn/usr/uploads/2009/10/2604084027.jpg",
+      "etag": "\"5a6ec750-15e1f\"",
+      "last_modified": "Mon, 29 Jan 2018 07:03:44 GMT"
+    }
+  }
+}

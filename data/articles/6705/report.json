@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "6705",
+    "title": "漫谈重参数：从正态分布到Gumbel Softmax",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/6705",
+    "date": "2019-06-10",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 163,
+    "display_formula_count": 17,
+    "image_count": 1,
+    "heading_count": 16,
+    "code_block_count": 0,
+    "source_text_sha256": "ec578bb2d8d635a072152d9fe50d8d6cefd23286cb2f470319ed592e336ad353",
+    "output_text_sha256": "ec578bb2d8d635a072152d9fe50d8d6cefd23286cb2f470319ed592e336ad353",
+    "latex_sha256": "16111b63684f54095160f2e9f7d7555f5043c225d922d759c50729cb35d9f9c4",
+    "body_sha256": "d456aba1f87f14a472db7b12042f0530deefb7c99c3a89f63abaa9b22fcb0f60",
+    "converter_version": 1,
+    "markdown_sha256": "d43744814776070623c2d8d331a72b6040b357eb8059f77537e187ecf4e23416"
+  },
+  "fetched_at": "2026-09-14T13:19:27+00:00",
+  "source_snapshot_sha256": "c863536d05194b38dc0935cdfb93326ee0c5f494f4df8b32b29d73fbc428944e",
+  "images": {},
+  "local_only": true
+}

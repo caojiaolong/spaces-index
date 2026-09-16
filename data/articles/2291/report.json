@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "2291",
+    "title": "几何的数与数的几何：超复数的浅探究",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/2291",
+    "date": "2014-01-11",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 1,
+    "display_formula_count": 0,
+    "image_count": 0,
+    "heading_count": 0,
+    "code_block_count": 0,
+    "source_text_sha256": "bff7349f21b73e4ee6bede3201f30ae1a3d68fac3265f40adc2d3e11bf26e2e0",
+    "output_text_sha256": "bff7349f21b73e4ee6bede3201f30ae1a3d68fac3265f40adc2d3e11bf26e2e0",
+    "latex_sha256": "b4bf368cf4e54f99410e7c4e7e84a02111c7fe3fdca006a7e455718cbab85db2",
+    "body_sha256": "49283c3a8020697631c4ed87bb677c443286d58762a590bc3a5c1cf168f0137f",
+    "converter_version": 1,
+    "markdown_sha256": "82e0b97eaaf6e4e6472079b994a1892ffbc93ce6bb83c9b7c302e8f919f21b4e"
+  },
+  "fetched_at": "2026-09-14T13:57:39+00:00",
+  "source_snapshot_sha256": "fb369e31eadde1e04d039a9170d63ed21fec19b693f32c13ef8f5f329b44bfbb",
+  "images": {},
+  "local_only": true
+}

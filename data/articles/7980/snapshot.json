@@ -1,0 +1,17 @@
+{
+  "metadata": {
+    "id": "7980",
+    "title": "从动力学角度看优化算法（六）：为什么SimSiam不退化？",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/7980",
+    "date": "2020-12-11",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "fetched_at": "2026-09-14T13:09:29+00:00",
+  "source_snapshot_sha256": "1250a19d228ab214020ad2f960a52e52ecddbb6a20f62c1e21821ee00020fbff",
+  "validators": {
+    "etag": null,
+    "last_modified": null
+  }
+}

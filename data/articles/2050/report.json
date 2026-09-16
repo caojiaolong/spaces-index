@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "2050",
+    "title": "势能最小问题的探讨",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/2050",
+    "date": "2013-08-19",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 24,
+    "display_formula_count": 10,
+    "image_count": 0,
+    "heading_count": 0,
+    "code_block_count": 0,
+    "source_text_sha256": "b367b5288fae2d82dfca85cf2698f3bce27ed0af0fff27ff36be71a23f91eec9",
+    "output_text_sha256": "b367b5288fae2d82dfca85cf2698f3bce27ed0af0fff27ff36be71a23f91eec9",
+    "latex_sha256": "58b359971bd4b93b911cf8e33bca4a8f344aa0f21b20a1414044570651de2c8c",
+    "body_sha256": "9de483ac820a3eb4393468d488d4d31aea5bb985408d78826e967b068d635fa3",
+    "converter_version": 1,
+    "markdown_sha256": "a6e71d53c3bb500714c9fcd3b5a80eda668ceef2d9a87b039b472c42ea6669c0"
+  },
+  "fetched_at": "2026-09-14T14:00:38+00:00",
+  "source_snapshot_sha256": "fdacd0e629ef50bdd3ed097f72ffd5627e2d237a0fb774e26beb281e2273fd1f",
+  "images": {},
+  "local_only": true
+}

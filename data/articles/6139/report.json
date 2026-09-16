@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "6139",
+    "title": "WGAN-div：一个默默无闻的WGAN填坑者",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/6139",
+    "date": "2018-11-07",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 67,
+    "display_formula_count": 11,
+    "image_count": 4,
+    "heading_count": 18,
+    "code_block_count": 0,
+    "source_text_sha256": "48e679408fd65e4cea408e3bb5c6f15cd6144ed80f3b3fd6f52a320f2f2b28e4",
+    "output_text_sha256": "48e679408fd65e4cea408e3bb5c6f15cd6144ed80f3b3fd6f52a320f2f2b28e4",
+    "latex_sha256": "60e02cd4436f8ed0d279c52f9c7b4ee93015d5db11db8cd304ab357430e82773",
+    "body_sha256": "5cdad366275bc4a458c57bc17de7bd9e59a00aa708ad333fcc341e44fff272ff",
+    "converter_version": 1,
+    "markdown_sha256": "c3dd1a8ef1eaea493fdac7ac217191ed12667fa0771efa37fc5904e401a0fb90"
+  },
+  "fetched_at": "2026-09-14T13:23:19+00:00",
+  "source_snapshot_sha256": "3e38aa1f5fdb68c7354af8c66de3b1ced6e9b91ccdc2ffc3befc67d882aab94e",
+  "images": {},
+  "local_only": true
+}

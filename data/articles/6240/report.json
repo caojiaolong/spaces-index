@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "6240",
+    "title": "【学习清单】最近比较重要的GAN进展论文",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/6240",
+    "date": "2018-12-26",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 0,
+    "display_formula_count": 0,
+    "image_count": 0,
+    "heading_count": 8,
+    "code_block_count": 0,
+    "source_text_sha256": "cb596b018cb40d3a16c80f61188293d936028ce6e64fc6175b621ccb09611132",
+    "output_text_sha256": "cb596b018cb40d3a16c80f61188293d936028ce6e64fc6175b621ccb09611132",
+    "latex_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "body_sha256": "a1a98f13f1c2a6120ddbebbb0b647ffce39ac79fad5c29e9730b2fd7e93c0e27",
+    "converter_version": 1,
+    "markdown_sha256": "29d308b9d65f9bbca423e2629dab426dc8534e3d8cead94063baf900accb3942"
+  },
+  "fetched_at": "2026-09-14T13:22:33+00:00",
+  "source_snapshot_sha256": "dcc981b4863069e9a76b5f706f134a11ff169ae02c0a5c2aabc74996d3140703",
+  "images": {},
+  "local_only": true
+}

@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "9811",
+    "title": "随机分词再探：从Viterbi Sampling到完美采样算法",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/9811",
+    "date": "2023-10-16",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 80,
+    "display_formula_count": 8,
+    "image_count": 0,
+    "heading_count": 6,
+    "code_block_count": 0,
+    "source_text_sha256": "c7754379ef751e8a3355ae23b6eb2b0f6af1ac125c228ad732fdb869cec50a88",
+    "output_text_sha256": "c7754379ef751e8a3355ae23b6eb2b0f6af1ac125c228ad732fdb869cec50a88",
+    "latex_sha256": "2c771159663ff77d03cc87a1d095d63fa77020771615da24caabff034f1e1a38",
+    "body_sha256": "761324c52a800bcc6153a470e166ab003ee4360c7644e97f367c110eaa8911e3",
+    "converter_version": 1,
+    "markdown_sha256": "a42eb2fa4ec483236ab6866249da70166c2f89673aff1b428df2703884040a6f"
+  },
+  "fetched_at": "2026-09-14T12:51:28+00:00",
+  "source_snapshot_sha256": "85c1ba775a342e1f7d805d0658856a66cc6d85b7e1b46ea80cb10606286747bc",
+  "images": {},
+  "local_only": true
+}

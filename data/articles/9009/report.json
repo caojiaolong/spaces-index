@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "9009",
+    "title": "为什么Pre Norm的效果不如Post Norm？",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/9009",
+    "date": "2022-03-29",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 19,
+    "display_formula_count": 3,
+    "image_count": 0,
+    "heading_count": 4,
+    "code_block_count": 0,
+    "source_text_sha256": "f0b4144cc8807ac1a1ce14f3e0d17e73fd5b7ee37680323d4b163bb2418ba086",
+    "output_text_sha256": "f0b4144cc8807ac1a1ce14f3e0d17e73fd5b7ee37680323d4b163bb2418ba086",
+    "latex_sha256": "f5aa1b298fe8277310413dce7d062decbfc8af6915c6ba2e2a2bfb54a5108143",
+    "body_sha256": "55a3a266f17ebdf811c1956f83995d710711d637a44e0f4ff15896c8cbf63577",
+    "converter_version": 1,
+    "markdown_sha256": "9e2195e20d6bdcad0884b1fb1a9afa60e2fc366a83ae4fe8b9124166bcebb3e5"
+  },
+  "fetched_at": "2026-09-14T13:00:31+00:00",
+  "source_snapshot_sha256": "ee83a9cb8ea262a6c55b61ac012dd6deb76d74b398d5264ac705b6996ab1be62",
+  "images": {},
+  "local_only": true
+}

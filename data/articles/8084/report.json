@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "8084",
+    "title": "【搜出来的文本】⋅（二）从MCMC到模拟退火",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/8084",
+    "date": "2021-01-14",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 203,
+    "display_formula_count": 13,
+    "image_count": 0,
+    "heading_count": 9,
+    "code_block_count": 0,
+    "source_text_sha256": "fa5d41cf5c5e36215cb1fb49955e8a374d0393d8cbd7ca540e339d92164c5a3f",
+    "output_text_sha256": "fa5d41cf5c5e36215cb1fb49955e8a374d0393d8cbd7ca540e339d92164c5a3f",
+    "latex_sha256": "c2210b72d332e9ba96e244fe1ea2b537ad8d5a743e3b99fb58ac9576df57188e",
+    "body_sha256": "e41440a9f48401d552d8abc5d4754ea403123b78e2f2d74b4415d6f2557dec0a",
+    "converter_version": 1,
+    "markdown_sha256": "fa37b2523658cd587d16bd71b47db5343133678fa04f0bdbd63dd32171512876"
+  },
+  "fetched_at": "2026-09-14T13:08:42+00:00",
+  "source_snapshot_sha256": "6a5481300dd66137b8e17fc93ce507c0874b3e2d1655e74288232d190a0a49a7",
+  "images": {},
+  "local_only": true
+}

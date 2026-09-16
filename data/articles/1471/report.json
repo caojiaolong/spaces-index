@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "1471",
+    "title": "三角半分正方形",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/1471",
+    "date": "2011-08-29",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 16,
+    "display_formula_count": 5,
+    "image_count": 4,
+    "heading_count": 0,
+    "code_block_count": 0,
+    "source_text_sha256": "dcf0ea5d99dcf8984bf9801308f80b9f232a556b47326885a1a716b2a369f6b3",
+    "output_text_sha256": "dcf0ea5d99dcf8984bf9801308f80b9f232a556b47326885a1a716b2a369f6b3",
+    "latex_sha256": "524076a2f5bf59beb5a2ed938e13f6ba1f7fdfbb69bd37ba2eb33b5d8cccda5d",
+    "body_sha256": "ee4af2bf0ab33eb60870348abb30b24f9d9e2e264142270b27d80fbae47d1f01",
+    "converter_version": 1,
+    "markdown_sha256": "74f2255d83a2f64421f9f70ad6a5baa4314db6d1de368586095757826d882ef3"
+  },
+  "fetched_at": "2026-09-14T14:17:42+00:00",
+  "source_snapshot_sha256": "bc2ffe44d86c0ce8285cdfc16da1d3b5a5eb847fc0f905112d59570b41ce64c7",
+  "images": {},
+  "local_only": true
+}

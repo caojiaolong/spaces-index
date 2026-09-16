@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "6482",
+    "title": "细水长flow之可逆ResNet：极致的暴力美学",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/6482",
+    "date": "2019-03-21",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 119,
+    "display_formula_count": 19,
+    "image_count": 4,
+    "heading_count": 13,
+    "code_block_count": 0,
+    "source_text_sha256": "1fc8ebf93a83fdfa454b9b72f9345016322bee2439692c28fe4dee41863ba671",
+    "output_text_sha256": "1fc8ebf93a83fdfa454b9b72f9345016322bee2439692c28fe4dee41863ba671",
+    "latex_sha256": "f551dbb8d1b2892cf4f77193207ba2848aad2f201ae34bf73a5f9f2cff91ca67",
+    "body_sha256": "644db74ae69ff5fc800462317961dddd7b48758ae8f61618a9005a4ca995741c",
+    "converter_version": 1,
+    "markdown_sha256": "7c2ca363b9dec19e2bfa4e20397485f32e1668ac4a8a0364d3e3cb7857aad588"
+  },
+  "fetched_at": "2026-09-14T13:20:49+00:00",
+  "source_snapshot_sha256": "1cb61d1bdb3d7a0b471aeba1505ae88aa5a4bbd5847b8cbbb76ddee42947ae77",
+  "images": {},
+  "local_only": true
+}

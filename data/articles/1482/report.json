@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "1482",
+    "title": "天宫一号成功发射！",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/1482",
+    "date": "2011-09-30",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 0,
+    "display_formula_count": 0,
+    "image_count": 1,
+    "heading_count": 0,
+    "code_block_count": 0,
+    "source_text_sha256": "83ba41d3374fb546fb76d0f2e202f2acf5cf9fe8615cd3a865bf4194c4d24b21",
+    "output_text_sha256": "83ba41d3374fb546fb76d0f2e202f2acf5cf9fe8615cd3a865bf4194c4d24b21",
+    "latex_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "body_sha256": "b0367f489d0cacae5334fc9bf75677736a74b98cdac6b15ff163a10b8265e3dd",
+    "converter_version": 1,
+    "markdown_sha256": "5a40c5b6a7bd00720d6ec6a22217c0b697ce8d61274fee1d79e2a5bf7d170c46"
+  },
+  "fetched_at": "2026-09-14T14:17:27+00:00",
+  "source_snapshot_sha256": "8069b327587ce8eaef8d04058f35fd973228b1d20b2e75bf64f4df69da2f7187",
+  "images": {},
+  "local_only": true
+}

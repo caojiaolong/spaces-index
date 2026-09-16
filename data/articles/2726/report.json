@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "2726",
+    "title": "[追溯]封装界传奇人物",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/2726",
+    "date": "2014-07-02",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 0,
+    "display_formula_count": 0,
+    "image_count": 0,
+    "heading_count": 0,
+    "code_block_count": 0,
+    "source_text_sha256": "5e3ef9d9dbf981c2dbafd2b7231dc25eac6031ebc3404db78e27673b1dde29fc",
+    "output_text_sha256": "5e3ef9d9dbf981c2dbafd2b7231dc25eac6031ebc3404db78e27673b1dde29fc",
+    "latex_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "body_sha256": "98888928232f2c00676ff7d45951dd5b37d99c801e2d3173bb0211ec1532e477",
+    "converter_version": 1,
+    "markdown_sha256": "8c404b41aabb3a4b84210365f4a90c11fbced0eb7148d5061c484c1f5a5626b3"
+  },
+  "fetched_at": "2026-09-14T13:53:30+00:00",
+  "source_snapshot_sha256": "4530d776a90249b886982e7da1f94a604865f9d1495de24faf3f1c91c0c21e33",
+  "images": {},
+  "local_only": true
+}

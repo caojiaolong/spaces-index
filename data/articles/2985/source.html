@@ -1,0 +1,64 @@
+<div class="PostContent" id="PostContent">
+<p>集合上的一个等价关系决定了几何的一个划分，反之亦然，这直观上是不难理解的。但是，如果我要问一个有$n$个元素的有限集合，共有多少种不同的划分呢？以前感觉这也是一个很简单的问题，就没去细想，但前天抽象代数老师提到这是一个有相当难度的题目，于是研究了一下，发现里面大有文章。这里把我的研究过程简单分享一下，读者可以从中看到如何“从零到有”的过程。</p><p>以下假设有$n$个元素的有限集合为$\{1,2,\dots,n\}$，记它的划分数为$B(n)$。</p><p><strong>前期：暴力计算</strong></p><p>$n=3$的情况不难列出：<br/>
+$$\begin{aligned}&amp;\{\{1,2,3\}\},\{\{1,2\},\{3\}\},\{\{1,3\},\{2\}\},\\<br/>
+&amp;\{\{2,3\},\{1\}\},\{\{1\},\{2\},\{3\}\}\end{aligned}$$<br/>
+所以$B(3)=5$。$B(4)$就比较大了，不易列出。基于整数的分拆，我得到了一个复杂的集合划分数计算公式。在此以$S(4)$为例，它有以下的分拆方式：<br/>
+\begin{aligned}&amp;4=1+1+1+1\\<br/>
+&amp;4=1+1+2\\<br/>
+&amp;4=1+3\\<br/>
+&amp;4=4\\<br/>
+&amp;4=2+2\end{aligned}<br/>
+每一种分拆方式代表着$\{1,2,3,4\}$的一种划分方式：它告诉我们分为多少块以及每块有多少个元素。比如4=1+1+1+1表示将$\{1,2,3,4\}$分为4块，每块一个元素，这种方式的可能划分数为<br/>
+$$\frac{1}{4!}\binom{4}{1}\binom{3}{1}\binom{2}{1}=1$$<br/>
+除以$4!$是因为每个1的地位都是对等的，不同的顺序只能算一种。同理我们有<br/>
+\begin{aligned}&amp;4=1+1+2:\quad \frac{1}{2!}\binom{4}{1}\binom{3}{1}=6\\<br/>
+&amp;4=1+3:\quad \binom{4}{1}=4\\<br/>
+&amp;4=4:\quad \binom{4}{4}=1\\<br/>
+&amp;4=2+2:\quad \frac{1}{2!}\binom{4}{2}=3\end{aligned}<br/>
+所以$B(4)=1+6+4+1+3=15$。用类似的方法可以得出（我是手算的）$B(5)=52,B(6)=203$，完整地列出5和6的所有分拆对于手算来说还是可以接受的。</p><p><strong>中期：漫天撒网</strong></p><p>现在我们已经得到一部分序列了：5, 15, 52, 203。看上去并无规律，而且直觉告诉我们这数列比指数增长还快。我们把这数列输入<a href="http://oeis.org/search?q=5%2C15%2C52%2C203&amp;language=english&amp;go=Search" target="_blank">OEIS?</a>，找到了该数列（number of ways to partition a set of n labeled elements）</p><blockquote>1, 1, 2, 5, 15, 52, 203, 877, 4140, 21147, 115975, 678570, 4213597, 27644437, 190899322, ...</blockquote><p>其中在FORMULA那里列出了很多奇特的公式。但由于只有公式没有推导，我也看不懂里边的公式。于是只好另寻他路。在Google中输入“集合的划分数”之类的关键词，可以得到一大批类似的结果。这些内容都给了我一定的帮助，比如，通过引入$S(n,k)$来计算$B(n)$，其中$S(n,k)$表示将$n$个元素的集合划分为$k$块的划分数，根据这定义，显然就有<br/>
+$$B(n)=\sum_{k=1}^n S(n,k)$$<br/>
+计算$S(n,k)$则是通过递推的。考虑往$n-1$个元素的集合中添加1个元素，有两种可能：</p><blockquote>1、新元素自成1块，$n-1$个元素划分为$k-1$块，此种情况数目为$S(n-1,k-1)$；<br/>
+2、$n-1$个元素划分为$k$块，新元素放进其中的任一块，此种情况数目为$k S(n-1,k)$</blockquote><p>于是有递推公式<br/>
+$$S(n,k)=S(n-1,k-1)+k S(n-1,k)$$<br/>
+这大概是最方便编程的计算公式了，用Python代码写出为</p><pre class="line-numbers"><code class="language-python">def sp(n,m):
+    if m&gt;n:
+        return 0
+    elif m==1 or m==n:
+        return 1
+    else:
+        return sp(n-1,m-1)+m*sp(n-1,m)
+
+def setpart(n):
+    return sum([sp(n,m) for m in range(1,n+1)])
+
+print(setpart(7))</code></pre><p>但这样的代码计算速度其实是非常慢的。在PyPy上计算$B(30)$已经很勉强了。我昨天计算了好久，想从递推公式中计算$B(n)$的生成函数，但是条件不足，无法得到完整的结果。</p><p><strong>中后期：分析计算</strong></p><p>在中期的搜索中，得到的大多数文章都是类似的，只介绍了概念和递推，没有更详细的描述，但有一个网站的文章末尾提到这种数叫做“贝尔数”，于是顺藤摸瓜，搜索到了维基百科：<br/>
+<a href="http://zh.wikipedia.org/zh-cn/%E8%B4%9D%E5%B0%94%E6%95%B0" target="_blank">http://zh.wikipedia.org/zh-cn/贝尔数</a></p><p>维基上有很多有价值的资料，也让我知道了通用的记号为$B_n$，而上面引入的$S(n,k)$被叫做“第二类Stirling数”。维基给出了递推公式<br/>
+$$B_{n+1}=\sum_{k=0}^{n}{{n \choose k}B_k}$$<br/>
+该公式的组合解释可以直接在维基上看到，在此不赘述。我昨晚计算了好久，都不能由该公式能够带来进一步的信息（是我看错公式了，晕），比如计算生成函数。于是搜索英文维基“Bell Number”，得到比中文维基更详细的结果，但是还是没有推导过程。今天根据英文维基上的提示再计算了一番，得出了生成函数。记<br/>
+$$f(x)=\sum_{n=0}^{\infty}\frac{B_n}{n!}x^n$$<br/>
+对它求导，并代入递推公式，交换求和号：<br/>
+\begin{aligned}f'(x)&amp;=\sum_{n=1}^{\infty}\frac{B_n}{(n-1)!}x^{n-1}=\sum_{n=0}^{\infty}\frac{B_{n+1}}{n!}x^n\\<br/>
+&amp;=\sum_{n=0}^{\infty}\sum_{k=0}^{n}\frac{1}{n!}{n \choose k}B_k x^n\\<br/>
+&amp;=\sum_{n=0}^{\infty}\sum_{k=0}^{n}\frac{1}{(n-k)!k!}B_k x^k x^{n-k}\\<br/>
+&amp;=\sum_{k=0}^{\infty}\sum_{n=k}^{\infty}\frac{1}{(n-k)!k!}B_k x^k x^{n-k}\\<br/>
+&amp;=\sum_{k=0}^{\infty}\frac{B_k x^k }{k!}\sum_{n=k}^{\infty}\frac{1}{(n-k)!}x^{n-k}\\<br/>
+&amp;=\sum_{k=0}^{\infty}\frac{B_k x^k }{k!}e^x\\<br/>
+&amp;=f(x)e^x\\<br/>
+\end{aligned}<br/>
+如此一来，算得$f(x)=e^{e^x-c}$，由$f(0)=1$算得$c=1$，于是<br/>
+$$\sum_{n=0}^{\infty}\frac{B_n}{n!}x^n=f(x)=e^{e^x-1}$$<br/>
+这是一个简洁漂亮的生成函数，是一个“指数的指数”的函数，由此可见$B_n$的递增之快。根据生成函数，可以推导出$B_n$的一个无穷级数公式，因为<br/>
+\begin{aligned}e^{e^x}&amp;=\sum_{m=0}^{\infty}\frac{1}{m!}e^{mx}\\<br/>
+&amp;=\sum_{m=0}^{\infty}\frac{1}{m!}\sum_{n=0}^{\infty}\frac{1}{n!}m^n x^n\\<br/>
+&amp;=\sum_{n=0}^{\infty}\frac{1}{n!}\sum_{m=0}^{\infty}\frac{1}{m!}m^n x^n<br/>
+\end{aligned}<br/>
+通过对比$f(x)$两端，就可以得出<br/>
+$$B_n=\frac{1}{e}\sum_{m=0}^{\infty}\frac{m^n}{m!}$$<br/>
+这就是Dobinski公式。</p><p><strong>后期？</strong><br/>
+学习永无止尽，没有后期。与大家共勉~</p>
+
+
+
+
+
+</div>

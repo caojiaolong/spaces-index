@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "622",
+    "title": "用RecomposIt简单给图片换背景",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/622",
+    "date": "2010-04-24",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 0,
+    "display_formula_count": 0,
+    "image_count": 3,
+    "heading_count": 0,
+    "code_block_count": 0,
+    "source_text_sha256": "835b7139baae9a63d3e36e6573745b7e252b8b5a8f7b438bb7d9db70a1cf0ff0",
+    "output_text_sha256": "835b7139baae9a63d3e36e6573745b7e252b8b5a8f7b438bb7d9db70a1cf0ff0",
+    "latex_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "body_sha256": "ba5d035f2f20a0a761ff1f7d59ae59818ed7839c46978116f819429431e9f25e",
+    "converter_version": 1,
+    "markdown_sha256": "df32b922afa2690929b815ac908d706a5c10bdf8621039c392362a446c11b4c0"
+  },
+  "fetched_at": "2026-09-14T14:37:28+00:00",
+  "source_snapshot_sha256": "64de792772663bfbb25896d58fd05aae5d282cf1099739a3bfc98dc324d2b5fb",
+  "images": {},
+  "local_only": true
+}

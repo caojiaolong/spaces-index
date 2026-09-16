@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "4176",
+    "title": "获取并处理中文维基百科语料",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/4176",
+    "date": "2017-01-06",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 0,
+    "display_formula_count": 0,
+    "image_count": 0,
+    "heading_count": 4,
+    "code_block_count": 2,
+    "source_text_sha256": "c3c1b98d269f7b47c93e1b7331133fa21d95618732e416fea603cde195dc1867",
+    "output_text_sha256": "c3c1b98d269f7b47c93e1b7331133fa21d95618732e416fea603cde195dc1867",
+    "latex_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "body_sha256": "37813f313e1cae4990ecb192ecb2be69962da0959c1c4003812b7d2ed6fbfba8",
+    "converter_version": 1,
+    "markdown_sha256": "537e05335b1603e0c74cfc0251c56add26b0bc52072ec665d65b0120eefa0244"
+  },
+  "fetched_at": "2026-09-14T13:34:58+00:00",
+  "source_snapshot_sha256": "34ac8c66b0221e4f2e6fb27c808493d0b868a41e32e101b710943d1d0aea9a5a",
+  "images": {},
+  "local_only": true
+}

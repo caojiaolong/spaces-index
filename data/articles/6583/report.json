@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "6583",
+    "title": "从动力学角度看优化算法（四）：GAN的第三个阶段",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/6583",
+    "date": "2019-05-03",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 70,
+    "display_formula_count": 19,
+    "image_count": 10,
+    "heading_count": 13,
+    "code_block_count": 0,
+    "source_text_sha256": "628855f5a2ee8d013f9789e88222622a4fe6d3ecd1ca3d021d890d0aa6fe2924",
+    "output_text_sha256": "628855f5a2ee8d013f9789e88222622a4fe6d3ecd1ca3d021d890d0aa6fe2924",
+    "latex_sha256": "4f186ea83ed9213b1bc94644da0a96dc83f81427f26a3cdd03ed72b51afbcbd3",
+    "body_sha256": "f88f5f5e1d710890c3ded44b9b11d5101654325f06b64c0b4e611c1d74372d09",
+    "converter_version": 1,
+    "markdown_sha256": "3ed3064511313422099e98da9814c1130b21cabb3986a89871edfaaf52dced37"
+  },
+  "fetched_at": "2026-09-14T13:20:09+00:00",
+  "source_snapshot_sha256": "2b5a32314e78a5455db889079c46d803e1546d38380be92bebb83920aea85edb",
+  "images": {},
+  "local_only": true
+}

@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "1187",
+    "title": "唠叨下，关于三体问题周期轨道",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/1187",
+    "date": "2011-01-26",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 0,
+    "display_formula_count": 0,
+    "image_count": 0,
+    "heading_count": 0,
+    "code_block_count": 0,
+    "source_text_sha256": "13f230992177eb2a3f4b4a61b940045b64906bc0d95caf4ed5ee7b319aed1f3b",
+    "output_text_sha256": "13f230992177eb2a3f4b4a61b940045b64906bc0d95caf4ed5ee7b319aed1f3b",
+    "latex_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "body_sha256": "3a634893b45175a4ca84c3586d094a610e06a2aa3a130eda94539e48b47072b1",
+    "converter_version": 1,
+    "markdown_sha256": "eb8bc945814fcca49246011cc815f0d4a7f28d9849bea15a219632d0d44f3c4f"
+  },
+  "fetched_at": "2026-09-14T14:25:04+00:00",
+  "source_snapshot_sha256": "71edb7aaf4e21645411c831605fd392cfad7d6b6efd5640fbd84d4264096e481",
+  "images": {},
+  "local_only": true
+}

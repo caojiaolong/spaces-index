@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "11804",
+    "title": "让炼丹更科学一些（七）：步长调度与权重平均",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/11804",
+    "date": "2026-07-06",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 91,
+    "display_formula_count": 19,
+    "image_count": 0,
+    "heading_count": 8,
+    "code_block_count": 0,
+    "source_text_sha256": "1c82213ae23e3355e7d45828ec528ed857e22916f7d4c3fcc0550feb7cc4c96a",
+    "output_text_sha256": "1c82213ae23e3355e7d45828ec528ed857e22916f7d4c3fcc0550feb7cc4c96a",
+    "latex_sha256": "162eefb3aac462aa028c606e6a60b8b5d7b1b9facf942f01d821186118a25d1d",
+    "body_sha256": "f198cc0eae5d0bedbdf4daa038b8d127a9ecbd2269f21fb88817bba85c2e47fb",
+    "converter_version": 1,
+    "markdown_sha256": "977c5b90538a89e6246de889eceb1f164ed15373259dd602154854501f3be098"
+  },
+  "fetched_at": "2026-09-14T12:30:39+00:00",
+  "source_snapshot_sha256": "25ffbde0dd4a424da0e6a2ab1f0e1ae65f4fc9b4bc89068258cabf4ebe866a53",
+  "images": {},
+  "local_only": true
+}

@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "11864",
+    "title": "流形上的最速下降：7. Stiefel的解析解",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/11864",
+    "date": "2026-08-17",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 128,
+    "display_formula_count": 23,
+    "image_count": 0,
+    "heading_count": 9,
+    "code_block_count": 0,
+    "source_text_sha256": "4e23b28047de24ff420641c9199c9774de8ad62dcbc669b70cbe422a8d9db1f1",
+    "output_text_sha256": "4e23b28047de24ff420641c9199c9774de8ad62dcbc669b70cbe422a8d9db1f1",
+    "latex_sha256": "b856e39a149336f9dcc94bf27dba82f4976aecf1e905a5ea7953e401a75dfa1c",
+    "body_sha256": "bf173750d2fc96c4fd7ad6122a5c2ededddf8b45d5a0b776219d6885a978ae96",
+    "converter_version": 1,
+    "markdown_sha256": "ebf4324aeb715ee57f0656b3788b56a7c13596948b83b8150cbc4dedd4d896fd"
+  },
+  "fetched_at": "2026-09-14T12:29:51+00:00",
+  "source_snapshot_sha256": "fff7ae03a57badf855c0bdc71a8ac59328a8e4ed86d7f6a816404a039de35355",
+  "images": {},
+  "local_only": true
+}

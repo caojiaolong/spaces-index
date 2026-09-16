@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "6549",
+    "title": "从DCGAN到SELF-MOD：GAN的模型架构发展一览",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/6549",
+    "date": "2019-04-19",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 40,
+    "display_formula_count": 7,
+    "image_count": 5,
+    "heading_count": 18,
+    "code_block_count": 1,
+    "source_text_sha256": "c3028da6f93c61626ce7dd283057adbf1cbd41677f64b366afaf8b96a7ebceae",
+    "output_text_sha256": "c3028da6f93c61626ce7dd283057adbf1cbd41677f64b366afaf8b96a7ebceae",
+    "latex_sha256": "145a2828b9045f100b1c483af59f543c2192d6295f5c815b3e83f5b46a89ff44",
+    "body_sha256": "8b9ab64630478d5be673176977691f987e1a7c52109e98ae281c5cd9ea528f2b",
+    "converter_version": 1,
+    "markdown_sha256": "fd291e8d666155e97b4966b56e903e5a960401ba7c8ca8b6e610088d1bf2f286"
+  },
+  "fetched_at": "2026-09-14T13:20:22+00:00",
+  "source_snapshot_sha256": "96f58b2fbf04706ea411383b343e9c21955cea5310de11edc4ace96e486f8edc",
+  "images": {},
+  "local_only": true
+}

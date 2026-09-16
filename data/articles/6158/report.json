@@ -1,0 +1,41 @@
+{
+  "metadata": {
+    "id": "6158",
+    "title": "又一道川菜！媲美“开水白菜”的瓜燕穗肚",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/6158",
+    "date": "2018-11-15",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "source_dom_exact": true,
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "attributes_exact": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 0,
+    "display_formula_count": 0,
+    "image_count": 3,
+    "heading_count": 0,
+    "code_block_count": 0,
+    "source_text_sha256": "07d81b1a19b0f99e7b8de4939316e23a8856cf3b21145704644fba44134f0648",
+    "output_text_sha256": "07d81b1a19b0f99e7b8de4939316e23a8856cf3b21145704644fba44134f0648",
+    "latex_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "body_sha256": "2d707aeeaf83362922069912ed56c7a2aa4651df8fdc58768e423b072ae1e9a8",
+    "converter_version": 1,
+    "format": "html-v1",
+    "source_warnings": [
+      "原文含旧式或脚本嵌入内容，已保留其位置和源码；预览不执行。"
+    ],
+    "fallback_reason": "Unsupported body element: center",
+    "markdown_sha256": "c7b1079bdca7dcabe8e1421be3c1e87050564882c9b3897f07e1a2783f097325"
+  },
+  "fetched_at": "2026-09-14T13:23:12+00:00",
+  "source_snapshot_sha256": "a8dd4e0ed1521b0c741d7ed7ebd59d81966652ee59a14c92da3d3a7bc189e49c",
+  "images": {},
+  "local_only": true
+}

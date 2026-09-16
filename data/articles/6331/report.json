@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "6331",
+    "title": "能量视角下的GAN模型（二）：GAN＝“分析”＋“采样” ",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/6331",
+    "date": "2019-02-15",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 174,
+    "display_formula_count": 31,
+    "image_count": 0,
+    "heading_count": 15,
+    "code_block_count": 0,
+    "source_text_sha256": "ecd7d397d163377b3b158e1852fcc976dc3555df37c5fda1d375baa842d0dcd8",
+    "output_text_sha256": "ecd7d397d163377b3b158e1852fcc976dc3555df37c5fda1d375baa842d0dcd8",
+    "latex_sha256": "d0ab35b76083a22018c93b653c44bfdaa2db46e392bded8331283a9d4b535045",
+    "body_sha256": "fd0ad3ab4f056f10177ac9106704d69546b6940c3432d1c877705cf29e5ef602",
+    "converter_version": 1,
+    "markdown_sha256": "6d47235f4c3c23321e441d13ddbba8781070a12267a434a82a96d192de48d314"
+  },
+  "fetched_at": "2026-09-14T13:21:43+00:00",
+  "source_snapshot_sha256": "bb397f18e1fbd0be1f5b3144eef4a3de5dd4b67d483c37c3d11de321a25d2f24",
+  "images": {},
+  "local_only": true
+}

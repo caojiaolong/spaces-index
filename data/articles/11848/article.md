@@ -1,0 +1,139 @@
+# 简单谈谈K3的MoE和Attention
+
+> 作者：苏剑林 · 科学空间 · 2026-08-04
+>
+> 原文：<https://spaces.ac.cn/archives/11848>
+>
+> 原文许可：[CC BY-NC-ND 2.5 CN（署名-非商业性使用-禁止演绎）](https://creativecommons.org/licenses/by-nc-nd/2.5/cn/)。
+>
+> 本文件由 spaces-index 非官方、非商业项目进行必要的 HTML → Markdown 格式转换；正文未做摘要、润色、翻译或重组。项目不代表作者，也不表示作者为项目背书。
+>
+> 署名及附加许可说明不代表已获得作者额外授权。第三方素材权利依其原有声明。
+>
+> 原站转载与引用说明：[科学空间 FAQ](https://spaces.ac.cn/archives/6508#%E6%96%87%E7%AB%A0%E5%A6%82%E4%BD%95%E8%BD%AC%E8%BD%BD/%E5%BC%95%E7%94%A8)
+
+---
+
+上个月，我们发布了迄今为止最大的开源模型[K3](<https://www.kimi.com/blog/kimi-k3>)。
+
+作为K2的继任者，K3并不是一次从零开始的重新设计，而是沿着我们过去一系列工作自然演化而来，并融合了我们对效果、效率、稳定性的一些最新理解和改进。可以说，它是一项持续的、“集大成”的研究成果，而非孤注一掷的豪赌。
+
+这篇文章，我们来聊聊K3在架构上的一些设计思路。
+
+## 写在前面
+
+简单来说，在架构方面K3 = KDA \+ MLA \+ Stable LatentMoE \+ AttnRes，训练优化器依然是Moonlight版Muon，但Attention部分的权重改成了Per\-Head形式来优化。
+
+在这些东西之中，AttnRes我们之前已经在[《Attention Residuals 回忆录》](<https://spaces.ac.cn/archives/11664>)做过详细介绍，而KDA我们也已经分享过详细的技术报告[《Kimi Linear: An Expressive, Efficient Attention Architecture》](<https://papers.cool/arxiv/2510.26692>)。至于Per\-Head Muon，它其实没有效果上的优势（当然也没有劣势），改用它更多是出于正确性考虑（每个Head本就是相对独立的，不应耦合在一块）。
+
+所以接下来，我们主要围绕着MoE和MLA部分来讨论：前者聊聊我们是如何“驯服”LatentMoE的；后者聊聊我们在Attention上的取舍。
+
+## 混合专家
+
+K3所用的MoE，我们称之为“Stable LatentMoE”，顾名思义，它是“Stable”的“LatentMoE”，其中LatentMoE不是新的，它出自[《LatentMoE: Toward Optimal Accuracy per FLOP and Parameter in Mixture of Experts》](<https://papers.cool/arxiv/2601.18089>)，好处是可以在大致相同的训练和推理成本下，实现更好的效果，但它的加入也引发了稳定性问题，所以我们提出了一些改进。
+
+### SiTU
+
+当前主流MoE架构，单个Expert通常都是采用SwiGLU的形式：
+\begin{equation}\newcommand{SiLU}{\mathop{\text{SiLU}}}\boldsymbol{W}_3(\SiLU(\boldsymbol{W}_1 \boldsymbol{x}) \odot \boldsymbol{W}_2 \boldsymbol{x})\end{equation}
+其中$\SiLU(x) = x\sigma(x)$（Sigmoid Linear Unit，亦称[Swish](<https://papers.cool/arxiv/1710.05941>)），$\sigma$是Sigmoid函数。作为主要非线性来源，SwiGLU经常出现的问题是：$\boldsymbol{W}_1$的某一行$\boldsymbol{w}$与某个输入$\boldsymbol{x}$同向（Align），导致输出$\boldsymbol{w}\cdot\boldsymbol{x}$非常大。更极端的是，这种现象在$\boldsymbol{W}_2 \boldsymbol{x}$也同时发生，并且发生的位置还一样，于是中间部分出现了$\mathcal{O}(\Vert\boldsymbol{x}\Vert^4)$级别的异常值。
+
+对此，我们先将SiLU换成了SiTU（Sigmoid Tanh Unit）：
+\begin{equation}\newcommand{SiTU}{\mathop{\text{SiTU}}}\newcommand{softcap}{\mathop{\text{softcap}}}\SiTU(x;\beta) = \underbrace{\beta \tanh\left(\frac{x}{\beta}\right)}_{\softcap(x;\beta)}\cdot\sigma(x)\end{equation}
+这样先将门控部分控制在$(-\beta, \beta)$内，其中$\beta=4$。进一步压测发现，这样还不能完全杜绝膨胀，所以我们干脆把线性也加上了$\softcap$运算，形成了如今的SiTU\-GLU：
+\begin{equation}\boldsymbol{W}_3\Big(\SiTU(\boldsymbol{W}_1 \boldsymbol{x};\beta_1) \odot \softcap(\boldsymbol{W}_2 \boldsymbol{x};\beta_2)\Big)\end{equation}
+其中$\beta_1=4,\beta_2=25$。给SwiGLU引入Clip操作已经不新鲜，[GPT\-OSS](<https://papers.cool/arxiv/2508.10925>)、[DSV4](<https://papers.cool/arxiv/2606.19348>)就已经引入过Hard Clip操作，但我们发现，在同样的界限下，$\softcap$往往能起到更好的效果，所以我们选择了$\softcap$。
+
+### Norm
+
+LatentMoE与MoE的区别是：
+\begin{align}\text{MoE:}&\qquad\qquad\underbrace{d \to D \to d}_{n\text{选}k} \\[5pt]
+\text{LatentMoE:}&\qquad d\to\underbrace{d/2 \to D \to d/2}_{2n\text{选}2k}\to d \\
+\end{align}
+即LatentMoE会先降维，再做$2n$选$2k$的MoE，最后升维，这样训推成本大致相同，但效果略好一些。其中降/升维都是线性投影，原版LatentMoE在这里没有加额外操作，所以加上中间的MoE就出现了4个矩阵连乘的模式，极不稳定。
+
+为了稳定训练，一个朴素的想法是在降维之后（即$d\to d/2$的输出）、升维之前（即$d/2 \to d$的输入）这两个位置，都加上一个RMS Norm。但进一步消融发现，后一个位置的RMS Norm作用最为本质，所以按照“最小改动原则”，我们只保留了最后一个RMS Norm，形成了当前Stable LatentMoE的形式。
+
+事后，我们还做了更仔细的对比实验，发现多加的这个RMS Norm，不止能稳定训练，还对效果有神奇作用。具体表现是，在大家都能正常收敛的情况下，加不加这个RMS Norm对Valid Loss影响不大，但对于某些Benchmark来说，不加这个RMS Norm会稳定变差。
+
+究其原因，可能是这个Norm更好地平衡了Routed Expert和Shared Expert的比例（实测加了这个Norm后，就不用额外加Scaling Factor了），也可能是因为Norm是个非线性运算（虽然非线性极弱），它的加入无形增加了LatentMoE的等效深度。
+
+### QB
+
+K3的MoE，原本的设想是448选8，而引入LatentMoE后，就变成了896选16，虽然稀疏度不变，但总Expert数的增加，依然会加剧负载不均衡问题。
+
+跟上一代模型K2一样，K3同样采用[Loss\-Free](<https://spaces.ac.cn/archives/10757>)的负载均衡方案，但之前所用的SignSGD式更新规则，在K3这么大的总Expert数下表现已经不大稳定了，所以我们引入了QB（Quantile Balancing），优点是数学上更合理，且无额外超参，其细节我们在[《MoE环游记：6、最优分配促均衡》](<https://spaces.ac.cn/archives/11619>)已做过详细介绍。
+
+QB的核心运算是求全局分位数，但分位数是非线性运算，如果朴素地计算，通信非常大。之前笔者提议的做法是局部求分位数然后全局平均，但后来发现在规模进一步扩大时该做法还是不够准确，所以K3最终用了分bin近似（直方图估计）：将要求分位数的分数压缩到0～1后，分bin估计分数的分布，再从分布中读出分位数。
+
+[![直方图近似估计分位数示意图](<https://spaces.ac.cn/usr/uploads/2026/05/2013347987.png>)](<https://spaces.ac.cn/usr/uploads/2026/05/2013347987.png>)
+
+直方图近似估计分位数示意图
+
+对于分bin数，我们发现10000个bin相比1000个bin，对负载均衡并没有更好的增益，所以推荐使用1000个bin就够了。由于分布的可加性，我们可以以极低的通信量跨机器、跨梯度累积地聚合分布信息，从而获得全局的近似分位数。
+
+## 注意机制
+
+K3的注意力是“KDA \+ MLA”混合，这里我们主要谈谈MLA。当然MLA早已经不新鲜，但有些细节可以拿出来讨论一下。可能有些读者会嗤之以鼻：[DSV4](<https://papers.cool/arxiv/2606.19348>)都放弃MLA了，你们居然还用MLA，是没活了吗？当然不是。K3用MLA，依然是经过慎重考虑的结果。
+
+### MLA
+
+一年前，笔者写了[《Transformer升级之路：20、MLA好在哪里?（上）》](<https://spaces.ac.cn/archives/10907>)和[《Transformer升级之路：21、MLA好在哪里?（下）》](<https://spaces.ac.cn/archives/11111>)，从实验和理论来探究MLA的好处，当时笔者给出的判断是：“<strong>在相同训练成本和推理成本下，MLA可能是效果最好的Full Attention变体。</strong>”。
+
+这个判断在今天还对吗？基本对，但有一些小变化。在固定训练成本和KV Cache大小时，MLA依然是近乎最优的Attention，但现在除KV Cache外，Decoding还有一个新的变数——MTP，或者说推测解码，其思想是计算换速度。然而MLA在Decoding时表现为head\_dims=512\+的MQA，已经提前消耗了大部分算力，所以“MLA\+MTP”很容易吃亏。
+
+但是，Attention的选择是需要综合多方面考虑，MTP只是一部分，换成别的设计，可能对MTP是友好了，但其他方面不见得更好。
+
+MLA在训练阶段是192\+128（qk\_dims和v\_dims）的MHA，如果往小了改，比如128\+128的GQA8，效果上很难打赢MLA。即便能打平，GQA8的KV Cache也是MLA三倍多，并不现实。注意，MTP的加入，只是让Decoding速度不只取决于KV Cache大小，并不意味着KV Cache可以随意大，在长文本场景下，KV Cache依然是越小越好。
+
+如果往大了改，比如换成256\+256的[MFA](<https://papers.cool/arxiv/2412.19255>)（本质上是个MQA），那么效果确实能追回来了，KV Cache也不比MLA多，但是训练成本却上去了，在Scaling Law上大概率是要吃亏的。而且这时候Prefill成本也增加了，这一块同样不可忽略——因为在当前主流的Agent/Coding场景下，每一轮的Prefill长度也不短。
+
+所以，理想的、比MLA更好的Attention设计，它至少要满足如下条件：
+
+> 1、效果不能差于MLA（保证效果）；
+> 
+> 
+> 
+> 2、训练和Prefill成本至少不能超过MLA（计算效率）；
+> 
+> 
+> 
+> 3、KV Cache比MLA小（超长文本）；
+> 
+> 
+> 
+> 4、Decoding的计算量比MLA小（MTP友好）。
+
+至少在笔者现在看来，目前没有一个简单优雅的Attention设计能同时满足以上特点，所以我们必须有所取舍，而在跟KDA混合的背景之下，MLA的部分问题得以缓解，所以我们依旧选择了MLA。
+
+### DSV4
+
+这里我们加个插曲，简单讨论一下[DSV4](<https://papers.cool/arxiv/2606.19348>)的Attention。DSV4看上去放弃了MLA，重新设计了截然不同的Attention，但如果我们细品，就会发现其实它还有MLA的影子，并且符合上述两篇MLA博客和刚才说的四个方向。
+
+在[《Transformer升级之路：20、MLA好在哪里?（上）》](<https://spaces.ac.cn/archives/10907>)中，我们实验发现无形增大的head\_dims是MLA效果的关键，然后在[《Transformer升级之路：21、MLA好在哪里?（下）》](<https://spaces.ac.cn/archives/11111>)中，我们指出给定KV Cache大小下，效果最好的Attention是“一个head\_dims等于KV Cache大小、K和V共享的MQA”。
+
+于是，DSV4直接将Attention换成head\_dims=512、K=V的MQA（位置编码是[QKVO\-RoPE](<https://spaces.ac.cn/archives/10862>)），以保证效果，而这正是MLA的Decoding形式。但这样一来，训练和Prefill的计算暴涨，且DSV4没有线性注意力，每一层都有KV Cache，即便每Token只有512维也吃不消。为此，DSV4引入了Sparse和Compress：Sparse节省计算量，Compress进一步压缩KV Cache，也节省计算量。
+
+所以，与其说DSV4放弃了MLA，不如说它按照上一节提到的几个方向，将MLA推到了另一个极致。不过，这种推广不是毫无代价，首先是Infra上的复杂性，其次是如此激进地Sparse和Compress，其最优性感觉还有待仔细检验。但总而言之，从MLA到DSV4，更像是一次传承和升级，而不是抛弃和重造。
+
+当然，“Linear\+Full”路线也有它的不足之处，所以跟Sparse路线相比，究竟谁能走得更远，目前还不得而知。
+
+### NoPE
+
+K3的MLA还有另外一个细节：它在保持标准MLA结构的前提下，将RoPE直接移除，变成了NoPE。这个改动在[Kimi Linear](<https://papers.cool/arxiv/2510.26692>)中就已经出现了，但K3发布后又引来了一些讨论。
+
+首先，K3是可以把RoPE加回去的，只不过加RoPE之后效果看上去没啥变化，所以按照最简洁原则，就干脆不加了。但要注意，如果是K2这种全MLA模型，RoPE是关键的，去掉RoPE会明显变差，K3能用NoPE，是因为它是“KDA\+MLA”的混合模型。
+
+为什么“KDA\+MLA”就可以NoPE了呢？我们在[《Transformer升级之路：6、旋转位置编码的完备性分析》](<https://spaces.ac.cn/archives/9403>)推导过，任意正交矩阵的幂都可以用作构建广义的RoPE，通常说的RoPE选择的是简单的旋转矩阵，而[PaTH](<https://papers.cool/arxiv/2505.16381>)尝试了另一种选择——Householder矩阵，并且表现也不错。
+
+在[《线性注意力简史：从模仿、创新到反哺》](<https://spaces.ac.cn/archives/11033>)中我们推导过，在正交情形下，PaTH可以等价写成
+\begin{equation}\mathop{\text{SoftmaxAttention}}(\underbrace{\boldsymbol{Q}-\mathop{\text{DeltaNet}}(\boldsymbol{Q},\boldsymbol{W},\boldsymbol{W})}_{\tilde{\boldsymbol{Q}}},\underbrace{\boldsymbol{K}-\mathop{\text{DeltaNet}}(\boldsymbol{K},\boldsymbol{W},\boldsymbol{W})}_{\tilde{\boldsymbol{K}}},\boldsymbol{V})\end{equation}
+这个等价形式表明，给$\boldsymbol{Q},\boldsymbol{K}$加DeltaNet，也能起到类似RoPE的位置编码作用，我们知道KDA是更一般的DeltaNet，所以说KDA\+MLA的混合模型，本身就自带类似RoPE、PaTH的位置编码效果了。我们也可以说，K3并不是没有RoPE了，而是KDA隐含提供了一种广义的RoPE。
+
+此外，还有一个审美上的问题：既然MLA不加RoPE了，为什么还保留着另外拼接64维的做法？
+
+这个有很多原因，比如更好适配现有MLA基建，不用重写一套代码。更重要的是，如果直接投影出576维的Latent，然后投影出192\+128维的K、V，这样确实是优雅了，但计算会增加，且效果没啥收益，综合起来反而是吃亏的。最后，K3已经引入了KDA、AttnRes等新变量，所以也不想往MLA引入太多的变数，毕竟饭要一口一口地吃。
+
+## 文章小结
+
+本文简单聊了聊K3在MoE和Attention这两块的设计与取舍。总的来说，K3的每一处改动都不算激进和花哨，背后基本都有明确的动机和实验支撑。效果、效率与稳定性之间的协调，依然是架构设计的主旋律。

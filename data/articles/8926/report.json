@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "8926",
+    "title": "GPLinker：基于GlobalPointer的事件联合抽取",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/8926",
+    "date": "2022-02-21",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 15,
+    "display_formula_count": 1,
+    "image_count": 2,
+    "heading_count": 7,
+    "code_block_count": 0,
+    "source_text_sha256": "06518a565e5b7871c05b1c74e6e13290dc799b92359c1f6ec41d34383f8ac1a0",
+    "output_text_sha256": "06518a565e5b7871c05b1c74e6e13290dc799b92359c1f6ec41d34383f8ac1a0",
+    "latex_sha256": "f98c42e58a5ddc4461ad7c6827e0da4e908369e3fca512c7e8bef49f88f5ec31",
+    "body_sha256": "961e99cac246759f1253f2470aca7bb5d47c8b736476f053c21b72f166f88207",
+    "converter_version": 1,
+    "markdown_sha256": "ef2195083eb9eec9e11b28645f4d0056579db0a4bb03856255f664eed721b0d8"
+  },
+  "fetched_at": "2026-09-14T13:01:16+00:00",
+  "source_snapshot_sha256": "46569ea51743ca2d6bd9c8878774efb83d45334b2d87f7b99dcc879c791a734d",
+  "images": {},
+  "local_only": true
+}

@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "8990",
+    "title": "门控注意力单元（GAU）还需要Warmup吗？",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/8990",
+    "date": "2022-03-11",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 55,
+    "display_formula_count": 9,
+    "image_count": 0,
+    "heading_count": 7,
+    "code_block_count": 0,
+    "source_text_sha256": "62b1a5cbb8228280bf3cccc7c115a8060579d66a5ce9c33b6d8b5829ad708054",
+    "output_text_sha256": "62b1a5cbb8228280bf3cccc7c115a8060579d66a5ce9c33b6d8b5829ad708054",
+    "latex_sha256": "f31951ad23a9ce067259e524631dfa184c0a3be6c4d3ad89a355541202e929e6",
+    "body_sha256": "acc7a4f39e1860f5f2f85d765b81141c9314b627160e69c4b467cbdcb884264b",
+    "converter_version": 1,
+    "markdown_sha256": "bd970fa415d2785759a273524884359a3cc4b11114474d59c25b2c2394a6ddba"
+  },
+  "fetched_at": "2026-09-14T13:00:51+00:00",
+  "source_snapshot_sha256": "d625c77bc5d03c4bcea9ac79dee667878fccb73de77ac215b9e1c944272d7385",
+  "images": {},
+  "local_only": true
+}

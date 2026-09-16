@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "3818",
+    "title": "OCR技术浅探：4. 文字定位",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/3818",
+    "date": "2016-06-24",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 10,
+    "display_formula_count": 3,
+    "image_count": 3,
+    "heading_count": 3,
+    "code_block_count": 0,
+    "source_text_sha256": "226d8bcf47d89ca62734b1b18b39c3bf2139c836657429dce9cfd0af2f7c43a5",
+    "output_text_sha256": "226d8bcf47d89ca62734b1b18b39c3bf2139c836657429dce9cfd0af2f7c43a5",
+    "latex_sha256": "e0c4b96a0fceddcb50f4f5780a3ed2f263063121a456c3e5eb96228c546c9e38",
+    "body_sha256": "92be9de718b6c54691195c6e5813fcd5ad96c58ba8a36bf94f77a6a959cd64cc",
+    "converter_version": 1,
+    "markdown_sha256": "440130e0eeded02a9cc1564057a4df64558820afcc64b1bb8228289e56b854bf"
+  },
+  "fetched_at": "2026-09-14T13:39:54+00:00",
+  "source_snapshot_sha256": "48fea28e3bd1f356f6365c5c3d5433d43f496c8aac712495aa0fb687da9bef7c",
+  "images": {},
+  "local_only": true
+}

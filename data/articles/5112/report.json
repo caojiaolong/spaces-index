@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "5112",
+    "title": "再来一顿贺岁宴：从K-Means到Capsule",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/5112",
+    "date": "2018-02-12",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 167,
+    "display_formula_count": 19,
+    "image_count": 4,
+    "heading_count": 16,
+    "code_block_count": 0,
+    "source_text_sha256": "ab9471d423bb2b1f27abec112773808b500597b8ab46a1f96c6630b0287076f7",
+    "output_text_sha256": "ab9471d423bb2b1f27abec112773808b500597b8ab46a1f96c6630b0287076f7",
+    "latex_sha256": "48aae639791682f00f6e9fdf22c6574ad4aec64dd681a6021e07f945ebbc0cd9",
+    "body_sha256": "c6d38aaf41fc8dac8c27d5ce55e593d7f6b64dd7c644e6113639c4e80e3eee9f",
+    "converter_version": 1,
+    "markdown_sha256": "6336abb4d2a360e9b787f80693dae5d45379d9739fa585d51cbb5ee36455a72f"
+  },
+  "fetched_at": "2026-09-14T13:28:14+00:00",
+  "source_snapshot_sha256": "4510558ae4c8d9eed2e2d59f297c8e2d0aec4bf5d89b80a75696038c296df6f3",
+  "images": {},
+  "local_only": true
+}

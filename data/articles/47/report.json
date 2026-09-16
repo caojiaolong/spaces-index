@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "47",
+    "title": "椭圆的周长与面积",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/47",
+    "date": "2009-08-01",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 5,
+    "display_formula_count": 4,
+    "image_count": 0,
+    "heading_count": 0,
+    "code_block_count": 0,
+    "source_text_sha256": "e22b7e54fcee16bf315bfdb2c4f0d7be481b3bdb5c73d2546ae53ea8e14e8897",
+    "output_text_sha256": "e22b7e54fcee16bf315bfdb2c4f0d7be481b3bdb5c73d2546ae53ea8e14e8897",
+    "latex_sha256": "740190c6437e8971a4c66698493c42d9f072984eb70b8cdda8f0e0b92b066afe",
+    "body_sha256": "a1ac8013d8fcf4299e063169b3266e268024e6f5df6d563b90b57e815ce297f2",
+    "converter_version": 1,
+    "markdown_sha256": "84c72ad943a735420ad612d0d92761ac0178f9b826d9f7a37109474784e68e31"
+  },
+  "fetched_at": "2026-09-14T15:02:24+00:00",
+  "source_snapshot_sha256": "fa8fc980cc39e7bbe0859fbe8d96af5c97b622258d13ec7a0902a4e912007f8e",
+  "images": {},
+  "local_only": true
+}

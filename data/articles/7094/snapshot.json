@@ -1,0 +1,17 @@
+{
+  "metadata": {
+    "id": "7094",
+    "title": "6个派生优化器的简单介绍及其实现",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/7094",
+    "date": "2019-11-25",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "fetched_at": "2026-09-14T13:16:32+00:00",
+  "source_snapshot_sha256": "7743a2b22a4d5b7cd7225d4871fafe613425be3f9a37c9917e587d51476f836e",
+  "validators": {
+    "etag": null,
+    "last_modified": null
+  }
+}

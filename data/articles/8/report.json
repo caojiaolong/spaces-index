@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "8",
+    "title": "百科翻译：臭氧的性质",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/8",
+    "date": "2009-07-08",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 22,
+    "display_formula_count": 7,
+    "image_count": 0,
+    "heading_count": 0,
+    "code_block_count": 0,
+    "source_text_sha256": "558cef6510f0cd1130b6a0d2cc81507312c0d4a10c12c7b4c2a7e38db155730d",
+    "output_text_sha256": "558cef6510f0cd1130b6a0d2cc81507312c0d4a10c12c7b4c2a7e38db155730d",
+    "latex_sha256": "f4a903bbe06a72e136bb50979e9a23fe0fee28cc5a7ca47c35686bbdcf4ec750",
+    "body_sha256": "1a45765d40ad67077c1b4c21ccfecedb35bbb4c85c787494a203ff4d44b8f7a7",
+    "converter_version": 1,
+    "markdown_sha256": "2bc65f920990b0b4824218f9b4710299e12b7300bdc38df8e21e91dc308e1e22"
+  },
+  "fetched_at": "2026-09-14T15:07:17+00:00",
+  "source_snapshot_sha256": "eeaa41e35cc8019e2a97ab2888cf38582cca66dc82b2224c99fbe5adb4ae9736",
+  "images": {},
+  "local_only": true
+}

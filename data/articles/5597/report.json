@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "5597",
+    "title": "基于最小熵原理的NLP库：nlp zero",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/5597",
+    "date": "2018-05-31",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 0,
+    "display_formula_count": 0,
+    "image_count": 0,
+    "heading_count": 7,
+    "code_block_count": 10,
+    "source_text_sha256": "70c7a160b1a28305d468829c04ec34d02fe9f3f37d29247f2880723276e3ca04",
+    "output_text_sha256": "70c7a160b1a28305d468829c04ec34d02fe9f3f37d29247f2880723276e3ca04",
+    "latex_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "body_sha256": "2694c7ab8389a85ad9063308c107ff9d743122191ef48433ebad1bf022a52ce3",
+    "converter_version": 1,
+    "markdown_sha256": "04090265bd43004dca20967ffaf7ed282cc186391601fb728399332b0e3f6cdd"
+  },
+  "fetched_at": "2026-09-14T13:26:26+00:00",
+  "source_snapshot_sha256": "5b587afc90abde3ed51dabf5b6396412216f9689f3df667c96e6da2c4022c081",
+  "images": {},
+  "local_only": true
+}

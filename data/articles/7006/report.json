@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "7006",
+    "title": "最小熵原理（五）：“层层递进”之社区发现与聚类",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/7006",
+    "date": "2019-10-19",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 94,
+    "display_formula_count": 15,
+    "image_count": 6,
+    "heading_count": 15,
+    "code_block_count": 1,
+    "source_text_sha256": "42d40668102956af18cd62d8c8f28e028d18a5fcb6cee12dc53aab493c1ba4f9",
+    "output_text_sha256": "42d40668102956af18cd62d8c8f28e028d18a5fcb6cee12dc53aab493c1ba4f9",
+    "latex_sha256": "0429a9ef61ce95b57d65a26b14239f2286a90421ba87934424afd210a9d7126b",
+    "body_sha256": "d551598b011c74e4454395ad0d715be07551701b5de56a3dd9206b61e3ed88fc",
+    "converter_version": 1,
+    "markdown_sha256": "4a8537bcb077249ddcc9f0d977a7ba46f935137bd3790ab4248ce603eb407897"
+  },
+  "fetched_at": "2026-09-14T13:17:13+00:00",
+  "source_snapshot_sha256": "6da1ae8f0cfe0053823fa485e38fa942b414fe20836dd693dce5bd7b7d84fbb5",
+  "images": {},
+  "local_only": true
+}

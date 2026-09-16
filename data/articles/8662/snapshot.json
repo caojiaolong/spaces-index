@@ -1,0 +1,17 @@
+{
+  "metadata": {
+    "id": "8662",
+    "title": "有限内存下全局打乱几百G文件（Python）",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/8662",
+    "date": "2021-09-08",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "fetched_at": "2026-09-14T13:04:32+00:00",
+  "source_snapshot_sha256": "d5e54136d5c232ce42e7ac192670a7223180f7296ac4dcd6975764270d6a93fb",
+  "validators": {
+    "etag": null,
+    "last_modified": null
+  }
+}

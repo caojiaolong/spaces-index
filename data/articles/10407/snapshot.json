@@ -1,0 +1,17 @@
+{
+  "metadata": {
+    "id": "10407",
+    "title": "低秩近似之路（二）：SVD",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/10407",
+    "date": "2024-10-01",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "fetched_at": "2026-09-14T12:46:21+00:00",
+  "source_snapshot_sha256": "ee23555186b8ebdb70be181db505073694679e576834f87183f1c59f97b74188",
+  "validators": {
+    "etag": null,
+    "last_modified": null
+  }
+}

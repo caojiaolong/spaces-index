@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "1683",
+    "title": "复分析学习1：揭示微分与积分的联系",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/1683",
+    "date": "2012-08-02",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 19,
+    "display_formula_count": 3,
+    "image_count": 0,
+    "heading_count": 0,
+    "code_block_count": 0,
+    "source_text_sha256": "27658605464966246219784fd9c9f2e030a49c33d21dc01f4c246041099522aa",
+    "output_text_sha256": "27658605464966246219784fd9c9f2e030a49c33d21dc01f4c246041099522aa",
+    "latex_sha256": "f70714f5bc56ca51a0436066843f5f3cbc2415f1711ee888e2493cbe5a7f4f99",
+    "body_sha256": "5033d4a7e5b99ff2e063dd79ecb86ffd7c21b8539a83f5e5a864c1599019a208",
+    "converter_version": 1,
+    "markdown_sha256": "9e5302f9de64466929e236fe2fb2e88494846463b6fdf370cfd405a120e356d7"
+  },
+  "fetched_at": "2026-09-14T14:11:45+00:00",
+  "source_snapshot_sha256": "da2cd81d24f1c94d5276dbaff8d8b36faa388dd22be5b691268daa5cb771b571",
+  "images": {},
+  "local_only": true
+}

@@ -1,0 +1,31 @@
+<div class="PostContent" id="PostContent">
+<h2 id="缘起">缘起</h2><p>前几天在量子位公众号上看到了<a href="https://mp.weixin.qq.com/s?__biz=MzIzNjc1NzUzMw==&amp;mid=2247511349&amp;idx=1&amp;sn=8e5968c0d58c70bab29ab11216b2ac4f&amp;chksm=e8d01a47dfa7935158b0a195c3ff70fa1ebcfac6a62d6c7d5f0db5c6290e4375b87cae14f80e&amp;mpshare=1&amp;scene=23&amp;srcid=0114ebz0Q6v4SqrUdwyEUD1Q#rd" target="_blank">《这个脑洞清奇的对联AI，大家都玩疯了》</a>一文，觉得挺有意思，难得的是作者还整理并公开了数据集，所以决定自己尝试一下。</p><h2 id="动手">动手</h2><p>“对对联”，我们可以看成是一个句子生成任务，可以用seq2seq完成，跟笔者之前写的<a href="/archives/5861" target="_blank">《玩转Keras之seq2seq自动生成标题》</a>一样，稍微修改一下输入即可。上面提到的文章所用的方法也是seq2seq，可见这算是标准做法了。</p><h3 id="分析">分析</h3><p>然而，我们再细想一下就会发现，相对于一般的句子生成任务，“对对联”有规律得多：1、上联和下联的字数一样；2、上联和下联的每一个字几乎都有对应关系。如此一来，其实对对联可以直接看成一个序列标注任务，跟分词、命名实体识别等一样的做法即可。这便是本文的出发点。</p><p>说到这，其实本文就没有什么技术含量了，序列标注已经是再普通不过的任务了，远比一般的seq2seq来得简单。所谓序列标注，就是指输入一个向量序列，然后输出另外一个通常长度的向量序列，最后对这个序列的“每一帧”进行分类。相关概念来可以在<a href="/archives/5542" target="_blank">《简明条件随机场CRF介绍（附带纯Keras实现）》</a>一文进一步了解。</p><h3 id="模型">模型</h3><p>本文直接边写代码边介绍模型。如果需要进一步了解背后的基础知识的读者，还可以参考<a href="/archives/3924" target="_blank">《【中文分词系列】 4. 基于双向LSTM的seq2seq字标注》</a>、<a href="/archives/4195" target="_blank">《【中文分词系列】 6. 基于全卷积网络的中文分词》</a>、<a href="/archives/5332" target="_blank">《基于CNN和VAE的作诗机器人：随机成诗》</a>。</p><p>我们所用的模型代码如下：</p><pre class="line-numbers"><code class="language-python">x_in = Input(shape=(None,))
+x = x_in
+x = Embedding(len(chars)+1, char_size)(x)
+x = Dropout(0.25)(x)
+
+x = gated_resnet(x)
+x = gated_resnet(x)
+x = gated_resnet(x)
+x = gated_resnet(x)
+x = gated_resnet(x)
+x = gated_resnet(x)
+
+x = Dense(len(chars)+1, activation='softmax')(x)
+
+model = Model(x_in, x)
+model.compile(loss='sparse_categorical_crossentropy',
+              optimizer='adam')</code></pre><p>其中<code class="language-python">gated_resnet</code>是笔者定义的门卷积模块（在<a href="/archives/5409" target="_blank">《基于CNN的阅读理解式问答模型：DGCNN》</a>一文也介绍过这个模块）：</p><pre class="line-numbers"><code class="language-python">def gated_resnet(x, ksize=3):
+    # 门卷积 + 残差
+    x_dim = K.int_shape(x)[-1]
+    xo = Conv1D(x_dim*2, ksize, padding='same')(x)
+    return Lambda(lambda x: x[0] * K.sigmoid(x[1][..., :x_dim]) \
+                            + x[1][..., x_dim:] * K.sigmoid(-x[1][..., :x_dim]))([x, xo])</code></pre><p>仅此而已～</p><p>就这样完了，剩下的都是数据预处理的事情了。当然，读者也可以尝试也可以把<code class="language-python">gated_resnet</code>换成普通的双向LSTM，但我实验中发现双向LSTM并没有<code class="language-python">gated_resnet</code>效果好，而且LSTM相对来说也更慢，所以LSTM在这里就被抛弃了。</p><h3 id="效果">效果</h3><p>训练的数据集来自：<a href="https://github.com/wb14123/couplet-dataset" target="_blank">https://github.com/wb14123/couplet-dataset</a>，感谢作者的整理。</p><p><strong>完整代码：</strong><br/>
+<a href="https://github.com/bojone/seq2seq/blob/master/couplet_by_seq_tagging.py" target="_blank">https://github.com/bojone/seq2seq/blob/master/couplet_by_seq_tagging.py</a></p><p><strong>训练过程：</strong><br/>
+</p><div class="pic-container"><div class="typecho-caption aligncenter" style="max-width: 100%"><div style="margin: 5px"><a href="/usr/uploads/2019/01/144956437.png" target="_blank" title="点击查看原图"><img alt="对联机器人训练过程" src="/usr/uploads/2019/01/144956437.png" style="max-width:100%"/></a></div><p class="typecho-caption-text">对联机器人训练过程</p></div></div><p><strong>部分效果：</strong></p><blockquote><p>上联：晚风摇树树还挺，下联：夜雨敲花花更香</p><p>上联：今天天气不错，下联：昨日人情无明</p><p>上联：鱼跃此时海，下联：鸟鸣何日人</p><p>上联：只有香如故，下联：不无月若新</p><p>上联：科学空间，下联：文明大中</p></blockquote><p>看起来还是有点味道的。注意“晚风摇树树还挺”是训练集的上联，标准下联是“晨露润花花更红”，而模型给出来的是“夜雨敲花花更香”，说明模型并不是单纯地记住训练集的，还是有一定的理解能力；甚至我觉得模型对出来的下联更生动一些。</p><p>总的来说，基本的字的对应似乎都能做到，就缺乏一个整体感。总体效果没有下面两个好，但作为一个小玩具，应该能让人满意了。</p><blockquote><p>王斌版AI对联：<a href="https://ai.binwang.me/couplet/" target="_blank">https://ai.binwang.me/couplet/</a></p><p>微软对联：<a href="https://duilian.msra.cn/default.htm" target="_blank">https://duilian.msra.cn/default.htm</a></p></blockquote><h2 id="结语">结语</h2><p>最后，也没有什么好总结的。我就是觉得这个对对联应该算是一个序列标注任务，所以就想着用一个序列标注的模型来试试看，结果感觉还行～当然，要做得更好，需要在模型上做些调整，还可以考虑引入Attention等，然后解码的时候，还需要引入更多的先验知识，保证结果符合我们对对联的要求。这些就留给有兴趣做下去的读者继续了。</p>
+
+
+
+
+
+</div>

@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "9862",
+    "title": "我在Performer中发现了Transformer-VQ的踪迹",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/9862",
+    "date": "2023-11-29",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 53,
+    "display_formula_count": 9,
+    "image_count": 0,
+    "heading_count": 4,
+    "code_block_count": 0,
+    "source_text_sha256": "cb17b18effe971c40a69ab81e667fc497067580a3ed305332bc53f5bacc7e529",
+    "output_text_sha256": "cb17b18effe971c40a69ab81e667fc497067580a3ed305332bc53f5bacc7e529",
+    "latex_sha256": "5c38055b0b6c549259fe31efaf87320eace2ec0b122ae9521296d92fdab9503d",
+    "body_sha256": "a900b0c4d66e1a226393d189520e7a3d76c930ef3d2b07c830782408e5818e4b",
+    "converter_version": 1,
+    "markdown_sha256": "f3a353fa2a23933c6d9e3ed47ad546b699f0403acfd9b7ecb0513370f5e6ef69"
+  },
+  "fetched_at": "2026-09-14T12:50:45+00:00",
+  "source_snapshot_sha256": "2e01c48f016d3534aa481ae61859c1d0c10f0d65d5ae455b52a351111d3b6268",
+  "images": {},
+  "local_only": true
+}

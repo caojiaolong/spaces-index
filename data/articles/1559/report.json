@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "1559",
+    "title": "指数函数及其展开式孰大孰小？",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/1559",
+    "date": "2012-03-18",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 25,
+    "display_formula_count": 2,
+    "image_count": 0,
+    "heading_count": 0,
+    "code_block_count": 0,
+    "source_text_sha256": "053c3b4fd1765b3d55442d7a2b7ef34bf57eb953a8bb209f1dff6f1b2f249d31",
+    "output_text_sha256": "053c3b4fd1765b3d55442d7a2b7ef34bf57eb953a8bb209f1dff6f1b2f249d31",
+    "latex_sha256": "d09f4b931cb3334d923328362d55e3c03cb0f9cb79563b2735294ca67624eeab",
+    "body_sha256": "47a53a1afced21ed1df3dfbe82ce23a895b87ab9471c900c8b39bf7f712a09d6",
+    "converter_version": 1,
+    "markdown_sha256": "f0c88e8e48d7dfb2c6d14c004041f2af768baf78dbe9b518422e76a625cbdc51"
+  },
+  "fetched_at": "2026-09-14T14:15:00+00:00",
+  "source_snapshot_sha256": "883d385f63b409d04d76f3bd39a902871d43b982c33d7079af953bcf7ab5767f",
+  "images": {},
+  "local_only": true
+}

@@ -1,0 +1,13 @@
+<div class="PostContent" id="PostContent">
+<p></p><div class="pic-container" style="float:right; margin: 5px auto 2px 1px"><div style="display: inline-block; background-color: #fff"><div class="typecho-caption aligncenter" style="max-width: 280px; margin: 0 0 0 8px"><div style="margin: 5px"><a href="/attachment/1342/" title="淡白口蘑.jpg"><img alt="淡白口蘑" src="/usr/uploads/2011/04/1211127507.jpg" style="max-width: 100%"/></a></div><p>淡白口蘑</p></div></div></div><p>达尔文的进化学说告诉我们，自然界总是在众多的生物中挑出最能够适应环境的物种，赋予它们更高的生存几率，久而久之，这些物种经过亿万年的“优胜劣汰”，进化成了今天的千奇百怪的生物。无疑，经过长期的选择，优良的形状会被累积下来，换句话讲，这些物种在某些环境适应能力方面已经达到最优或近乎最优的状态（又是一个极值问题了）。好，现在我们来考虑蘑菇。</p><p>蘑菇是一种真菌生物，一般生长在阴暗潮湿的环境中。喜欢湿润的它自然也不希望散失掉过多的水分，因此，它努力地调整自身的形状，使它的“失水”尽可能地少。假设单位面积的蘑菇的失水速度是一致的，那么问题就变成了使一个给定体积的立体表面积尽可能少的问题了。并且考虑到水平各向同性生长的问题，理想的蘑菇形状应该就是一个平面图形的旋转体。那么这个旋转体是什么呢？<u>聪明的你是否想到了是一个球体（的一部分）呢？</u></p><p>不过很遗憾，答案并非球体。我们来分析下这个问题，即<u>哪种曲线的旋转体表面积最小，该曲线过</u>$(x_1,y_1)$<u>和</u>$(x_2,y_2)$。</p><p></p><div class="pic-container" style="float:right; margin: 5px auto 2px 1px"><div style="display: inline-block; background-color: #fff"><div class="typecho-caption aligncenter" style="max-width: 300px; margin: 0 0 0 8px"><div style="margin: 5px"><a href="/attachment/1340/" title="旋转体曲线.PNG"><img alt="旋转体曲线" src="/usr/uploads/2011/04/2399985998.png" style="max-width: 100%"/></a></div><p>旋转体曲线</p></div></div></div><p>若已知曲线$y=f(x)$是满足条件的曲线，由于两个底面都是已知面积的圆，我们只需要考虑侧面积。旋转体的侧面积计算公式为：<br/>
+$$\begin{aligned}S=\int_{x_1}^{x_2} 2\pi x\sqrt{dx^2+dy^2} \\ =2\pi\int_{x_1}^{x_2} x\sqrt{1+\dot{y}^2}dx\end{aligned}$$</p><p>这里$\dot{y}=\frac{dy}{dx}$。上述式子的意思就是将立体无限分割，将每一部分的立体当成一个圆台，用圆台的侧面积近似代替，并累积。</p><p>至此，问题变成了求一个函数$y=f(x)$使得积分$S=2\pi\int_{x_1}^{x_2}  x\sqrt{1+\dot{y}^2}dx$取极值。根据<a href="/archives/1134/" target="_blank">欧拉-拉格朗日方程</a>，应该有<br/>
+$$\frac{d}{dx}\left(\frac{\partial \left(x\sqrt{1+\dot{y}^2}\right)}{\partial \dot{y}}\right)=\frac{\partial \left(x\sqrt{1+\dot{y}^2}\right)}{\partial y}=0$$</p><p>所以有$\frac{\partial (x\sqrt{1+\dot{y}^2})}{\partial \dot{y}}=\frac{x\dot{y}}{\sqrt{1+\dot{y}^2}}=C_1$，C<sub>1</sub>是积分常数。继而能够推出<br/>
+$$\dot{y}=C_1\sqrt{\frac{1}{x^2-C_1^2}}$$</p><p>这时候，只要两边积分就可以得到：$y=C_1 ln\left|x+\sqrt{x^2-C_1^2}\right|+C_2$。或者利用双曲函数改写成<br/>
+$$x=C_1 \cosh\left(\frac{y-C_2}{C_1}\right)$$</p><p>可见，这并不是一个圆。这是一个怎样的形状呢？如果设$C_1=2,C_2=0$，则利用几何画板可以画出<br/>
+</p><div class="pic-container"><div class="typecho-caption aligncenter" style="max-width: 100%"><div style="margin: 5px"><a href="/attachment/1341/" title="蘑菇的最优曲线.PNG"><img alt="蘑菇的最优曲线" src="/usr/uploads/2011/04/3619826149.png" style="max-width:100%"/></a></div><p class="typecho-caption-text">蘑菇的最优曲线</p></div></div><p><strong><font color="red">显然，该形状还是比较接近的。另一方面，双曲函数包含着自然对数的底e这个神奇的常数，也就是说，e本来源于自然，也充分体现着自然！这是一个多么和谐的世界！</font></strong></p>
+
+
+
+
+
+</div>

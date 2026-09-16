@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "2886",
+    "title": "从费马大定理谈起（七）：费马平方和定理",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/2886",
+    "date": "2014-08-23",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 61,
+    "display_formula_count": 7,
+    "image_count": 0,
+    "heading_count": 2,
+    "code_block_count": 0,
+    "source_text_sha256": "2452505324092c40fd760e3b521cc1db73f1c39a0eb1b94c34d71b263c2614a5",
+    "output_text_sha256": "2452505324092c40fd760e3b521cc1db73f1c39a0eb1b94c34d71b263c2614a5",
+    "latex_sha256": "94fe53d1022986088c994b2721f015bcb24f5d80a6a0f74cdc7d6699e8df8415",
+    "body_sha256": "6c64e075da198251182fe3972aa8d86f2fed352e1e9f70c01743ea368d3876c0",
+    "converter_version": 1,
+    "markdown_sha256": "3ab35b9f5b6d2d5fe206c10b86124c616a47aaea9c80b89863a8a2574518222a"
+  },
+  "fetched_at": "2026-09-14T13:51:57+00:00",
+  "source_snapshot_sha256": "90d680de14ba8bace5de53ed6ef1545ac3bb458dcfcd4b0fbb16e33ad196c36f",
+  "images": {},
+  "local_only": true
+}

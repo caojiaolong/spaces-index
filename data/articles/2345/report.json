@@ -1,0 +1,41 @@
+{
+  "metadata": {
+    "id": "2345",
+    "title": "视频演示：费曼的茶杯",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/2345",
+    "date": "2014-02-07",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "source_dom_exact": true,
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "attributes_exact": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 0,
+    "display_formula_count": 0,
+    "image_count": 0,
+    "heading_count": 0,
+    "code_block_count": 0,
+    "source_text_sha256": "e933fb46985419318cd7460ff61acf40137476cd0a12db19e663008f2559546b",
+    "output_text_sha256": "e933fb46985419318cd7460ff61acf40137476cd0a12db19e663008f2559546b",
+    "latex_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "body_sha256": "37ecb410c88865fcd06c6197c915d4b5e71ed6c350e95ed9c47a2a90bdb40d5e",
+    "converter_version": 1,
+    "format": "html-v1",
+    "source_warnings": [
+      "原文含旧式或脚本嵌入内容，已保留其位置和源码；预览不执行。"
+    ],
+    "fallback_reason": "Unsupported body element: embed",
+    "markdown_sha256": "56fe8715985aa753ad1cc5e1afce8761b7a8c679d14daaa47155a2fc2f9d4fe8"
+  },
+  "fetched_at": "2026-09-14T13:57:08+00:00",
+  "source_snapshot_sha256": "049596d93dafdb978a372488352e2967fd2a37d694d3bed03432a75971fd0e92",
+  "images": {},
+  "local_only": true
+}

@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "4122",
+    "title": "词向量与Embedding究竟是怎么回事？",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/4122",
+    "date": "2016-12-03",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 7,
+    "display_formula_count": 3,
+    "image_count": 0,
+    "heading_count": 4,
+    "code_block_count": 0,
+    "source_text_sha256": "a6f0fd5dc3a6ad256309c31bce0474bc27536d3ddc743e72816d4d0f883102c0",
+    "output_text_sha256": "a6f0fd5dc3a6ad256309c31bce0474bc27536d3ddc743e72816d4d0f883102c0",
+    "latex_sha256": "0f2e23776bbfa74f84af0d405a945207445aba93c774c5bca778bee0f3fd8505",
+    "body_sha256": "9459573f2013d3b4dc2852d47d77882dbe31599cd0b67be64e7e7b7bd136f954",
+    "converter_version": 1,
+    "markdown_sha256": "f79e2788bdb57a7af4ab75092404f331f57e8fd18f137ed0ead3a3a9670bd6f3"
+  },
+  "fetched_at": "2026-09-14T13:35:31+00:00",
+  "source_snapshot_sha256": "15985ceaeccd6f725f4203803e8c180f016fb5254882aeb2b79ad439656fe944",
+  "images": {},
+  "local_only": true
+}

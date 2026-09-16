@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "6992",
+    "title": "BN究竟起了什么作用？一个闭门造车的分析",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/6992",
+    "date": "2019-10-11",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 102,
+    "display_formula_count": 16,
+    "image_count": 0,
+    "heading_count": 11,
+    "code_block_count": 0,
+    "source_text_sha256": "48ba114a00d4957816343b3e4d06b1d5eaff1caa4a50454ea388e56bee5263dd",
+    "output_text_sha256": "48ba114a00d4957816343b3e4d06b1d5eaff1caa4a50454ea388e56bee5263dd",
+    "latex_sha256": "8a62710f9f6ec467f5269c163cfb65116f67ff614e88e484822899321f2dd0b7",
+    "body_sha256": "c43f1eaad4adbd537391da01f5342ddc9514edc4915ba6886a5214e563fa52d7",
+    "converter_version": 1,
+    "markdown_sha256": "1cd03476f895c787d4b9006ea981626af4e03b765887ddb88623af59475892c9"
+  },
+  "fetched_at": "2026-09-14T13:17:19+00:00",
+  "source_snapshot_sha256": "d48a198c56ca4ab8c12c9cfd691be96d62985dad526aad2b942a0f0582dc4c61",
+  "images": {},
+  "local_only": true
+}

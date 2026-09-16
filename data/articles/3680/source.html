@@ -1,0 +1,47 @@
+<div class="PostContent" id="PostContent">
+<p>最近在算路径积分的时候，频繁地遇到了以下两种无穷级数：<br/>
+$$\sum_n \frac{1}{n^2\pm\omega^2}\quad \text{和} \quad \prod_n \left(1\pm\frac{\omega^2}{n^2}\right)$$<br/>
+当然，直接用Mathematica可以很干脆地算出结果来，但是我还是想知道为什么，至少大概地知道。</p><h3 id="伯努利级数">伯努利级数</h3><p>当$\omega=0$的时候，第一个级数变为著名的伯努利级数<br/>
+$$\sum_n \frac{1}{n^2}=1+\frac{1}{4}+\frac{1}{9}+\frac{1}{16}+\dots$$<br/>
+既然跟伯努利级数有关，那么很自然想到，从伯努利级数的求和入手。</p><p>伯努利级数求和的最为人称颂的方法，当属欧拉通过大胆猜测、类比而给出的“证明”了。欧拉考虑级数<br/>
+$$\frac{\sin \sqrt{x}}{\sqrt{x}}=1-\frac{x}{6}+\frac{x^2}{120}-\frac{x^3}{5040}+\dots$$<br/>
+从左端的式子，容易看出$\frac{\sin \sqrt{x}}{\sqrt{x}}=0$的根为$n^2 \pi^2,\,n=1,2,3,\dots$。</p><p>接着，我们考虑一元$n$次方程<br/>
+$$1+a_1 x+a_2 x^2 +\dots+a_n x^n=0$$<br/>
+假设它有$n$个非零根$x_1,x_2,\dots,x_n$，那么我们可以将它看成是关于$\frac{1}{x}$的方程<br/>
+$$\left(\frac{1}{x}\right)^n+a_1 \left(\frac{1}{x}\right)^{n-1}+\dots+a_n=0$$<br/>
+对应的根变成了$1/x_1,1/x_2,\dots,1/x_n$，那么根据韦达定理得到<br/>
+$$\frac{1}{x_1}+\frac{1}{x_2}+\dots+\frac{1}{x_n}=-a_1$$</p><p>欧拉的大胆之处，就是它将上述的韦达定理，直接推广到无穷级数中去。他说，既然$\frac{\sin \sqrt{x}}{\sqrt{x}}=0$的根为$n^2 \pi^2,\,n=1,2,3,\dots$，那么就有<br/>
+$$\frac{1}{\pi^2}+\frac{1}{2^2 \pi^2}+\frac{1}{3^2\pi^2}+\dots=-a_1=\frac{1}{6}$$<br/>
+于是他告诉我们<br/>
+$$1+\frac{1}{4}+\frac{1}{9}+\frac{1}{16}+\dots=\frac{\pi^2}{6}$$<br/>
+大胆、巧妙而不失简洁，欧拉完美地体现了冒险者的精神和令人陶醉的美！无怪乎John Stellwell在他的《数学及其历史》中，称“欧拉或许是级数运算的最伟大的学者”。</p><h3 id="谨慎，审视">谨慎，审视</h3><p>记得第一次看到这个证明，笔者就对欧拉佩服得五体投地了。这是怎样的头脑才能想出这样的方法！在那个级数运算才刚刚发展起来的年代，他就敢于将简单的韦达定理推广到无穷。更要命的是，他得到了正确的结果！正确的结果！～</p><p>不过如今学习更加深入，现在重看他的过程，就会带着审视的眼光了，比如哪里不严格了，哪里可以推广，等等。将韦达定理推广到无穷，并非不可能，但是有几个问题需要解决，比如怎么保证列出了所有根了呢？韦达定理中的那些根，可以是复根，而$n^2 \pi^2,\,n=1,2,3,\dots$最多也就是全部实数根，还有复根吗？不用$\frac{\sin \sqrt{x}}{\sqrt{x}}$，换成其他函数，有没有可能得到其它类似的有趣结果呢？</p><p>当然，在这里只是稍微一提，这不是本文的主题，因此并不多做讨论。事实上，欧拉的方法能衍生出丰富的结果，它的启发性、创造性已经远远掩盖了它的不严格性了。</p><h3 id="连乘积的结果">连乘积的结果</h3><p>事实上，欧拉的方法所告诉我们的，远远多于伯努利级数和这一特例。从代数理论中我们还知道，如果一元$n$次方程$1+a_1 x+a_2 x^2 +\dots+a_n x^n=0$的$n$个非零根为$x_1,x_2,\dots,x_n$，那么就有<br/>
+$$1+a_1 x+a_2 x^2 +\dots+a_n x^n=a_n (x-x_1)(x-x_2)\dots (x-x_n)$$<br/>
+将$x=0$代进去，得到<br/>
+$$1=a_n(-x_1)(-x_2)\dots (-x_n)$$<br/>
+用这个关系，可以将上式改写成<br/>
+$$1+a_1 x+a_2 x^2 +\dots+a_n x^n=\left(1-\frac{x}{x_1}\right)\left(1-\frac{x}{x_2}\right)\dots \left(1-\frac{x}{x_n}\right)$$<br/>
+欧拉又说，这个能推广到无穷！所以有<br/>
+$$\frac{\sin \sqrt{x}}{\sqrt{x}}=\left(1-\frac{x}{\pi^2}\right)\left(1-\frac{x}{2^2 \pi^2}\right)\left(1-\frac{x}{3^2\pi^2}\right)\dots$$<br/>
+或者换一下变量<br/>
+$$\frac{\sin x}{x}=\left(1-\frac{x^2}{\pi^2}\right)\left(1-\frac{x^2}{2^2 \pi^2}\right)\left(1-\frac{x^2}{3^2\pi^2}\right)\dots$$<br/>
+代入$x=\omega\pi$，得到<br/>
+$$\frac{\sin \omega\pi}{\omega\pi}=\left(1-\frac{\omega^2}{1^2}\right)\left(1-\frac{\omega^2}{2^2 }\right)\left(1-\frac{\omega^2}{3^2}\right)\dots$$<br/>
+这就是文章一开头提及到的连乘积之一。如果把$\omega$换成$i\omega$，就得到<br/>
+$$\frac{\sin (i\omega\pi)}{i\omega\pi}=\left(1+\frac{\omega^2}{1^2}\right)\left(1+\frac{\omega^2}{2^2 }\right)\left(1+\frac{\omega^2}{3^2}\right)\dots$$<br/>
+利用$\sin (ix)=i\sinh x$，就得到<br/>
+$$\frac{\sinh \omega\pi}{\omega\pi}=\left(1+\frac{\omega^2}{1^2}\right)\left(1+\frac{\omega^2}{2^2 }\right)\left(1+\frac{\omega^2}{3^2}\right)\dots$$<br/>
+这是连乘积的另一种情况。</p><h3 id="回来继续求和">回来继续求和</h3><p>继续我们的求和，如果把$\frac{\sin\sqrt{x}}{\sqrt{x}}$换为<br/>
+$$\frac{\omega\sin (\pi\sqrt{x+\omega^2})}{\sqrt{x+\omega^2}\sin\omega\pi}=1+\frac{\pi\omega\cot\omega\pi-1}{2\omega^2}x+\dots$$<br/>
+这一次，方程<br/>
+$$\frac{\omega\sin (\pi\sqrt{x+\omega^2})}{\sqrt{x+\omega^2}\sin\omega\pi}=0$$<br/>
+的所有根为$x=n^2-\omega^2,\,n=1,2,3,\dots$，因此有<br/>
+$$\sum_n \frac{1}{n^2-\omega^2}=\frac{1-\pi\omega\cot\omega\pi}{2\omega^2}$$<br/>
+将$\omega$换为$i\omega$，得到<br/>
+$$\sum_n \frac{1}{n^2+\omega^2}=\frac{1-i\pi\omega\cot i\omega\pi}{2(i\omega)^2}=\frac{\pi\omega\coth \omega\pi-1}{2\omega^2}$$<br/>
+这就解决了两个求和问题了。</p><h3 id="欧拉，真乃神人也！">欧拉，真乃神人也！</h3><p>百科上说到：欧拉从19岁开始发表论文，直到76岁，共写下了886本书籍和论文，其中在世时发表了700多篇论文。彼得堡科学院为了整理他的著作，整整用了47年！不得不说，这才是当之无愧的学神呐！</p>
+
+
+
+
+
+</div>

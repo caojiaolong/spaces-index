@@ -1,0 +1,39 @@
+{
+  "metadata": {
+    "id": "599",
+    "title": "2010年4月全球天文月(One People,One Sky)",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/599",
+    "date": "2010-04-06",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "source_dom_exact": true,
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "attributes_exact": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 0,
+    "display_formula_count": 0,
+    "image_count": 1,
+    "heading_count": 0,
+    "code_block_count": 0,
+    "source_text_sha256": "da2089a66d7d9064134fcba6b7446a21b1773c6bf214ee9a5674bbcd0b70569a",
+    "output_text_sha256": "da2089a66d7d9064134fcba6b7446a21b1773c6bf214ee9a5674bbcd0b70569a",
+    "latex_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "body_sha256": "0cbe9595caa509444600d256b95cf7ccb47a48dcc9300af329125b4588d5fc01",
+    "converter_version": 1,
+    "format": "html-v1",
+    "source_warnings": [],
+    "fallback_reason": "Standard Markdown round trip changed source structure",
+    "markdown_sha256": "6a78a212d03c931408735579a85bd0adbf2656b8909d2de0a14a4376661ce874"
+  },
+  "fetched_at": "2026-09-14T14:38:02+00:00",
+  "source_snapshot_sha256": "35ae6a059ee5beb5a1fdd1c9b5c984131a1280d53c5befd831235855a7d84629",
+  "images": {},
+  "local_only": true
+}

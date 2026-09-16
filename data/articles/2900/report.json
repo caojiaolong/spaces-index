@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "2900",
+    "title": "从费马大定理谈起（八）：艾森斯坦整数",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/2900",
+    "date": "2014-08-30",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 59,
+    "display_formula_count": 3,
+    "image_count": 1,
+    "heading_count": 3,
+    "code_block_count": 0,
+    "source_text_sha256": "32db3accdcd4e65783c7aedf920e9ca185b140a1b9f33b23c3d3112f4f441774",
+    "output_text_sha256": "32db3accdcd4e65783c7aedf920e9ca185b140a1b9f33b23c3d3112f4f441774",
+    "latex_sha256": "3d1f4eb629151640b67ad73b6bea01d44df426c5503e0a7a6b31ffd207f4ac7a",
+    "body_sha256": "afe98426ad611b32c6e3cf514ad443c8a19ef4e0129fe9a479631eef8ae3546b",
+    "converter_version": 1,
+    "markdown_sha256": "7ca5cf00d6c13663f2c13c3f88559e4d1dd49dcf8d8c936b96aeb77dcb335652"
+  },
+  "fetched_at": "2026-09-14T13:51:42+00:00",
+  "source_snapshot_sha256": "f2b68e8f825d5faf8ef80851edc602e967fccf7280a76e1a9652b6dcb24cfeb6",
+  "images": {},
+  "local_only": true
+}

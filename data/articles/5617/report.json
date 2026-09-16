@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "5617",
+    "title": "“噪声对比估计”杂谈：曲径通幽之妙",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/5617",
+    "date": "2018-06-13",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 63,
+    "display_formula_count": 14,
+    "image_count": 0,
+    "heading_count": 10,
+    "code_block_count": 0,
+    "source_text_sha256": "2dd5b42281956edcb83c14656d04cb8c706208066509589cc1155fb92bfc854b",
+    "output_text_sha256": "2dd5b42281956edcb83c14656d04cb8c706208066509589cc1155fb92bfc854b",
+    "latex_sha256": "a2f648b6b6f7703ff7c55411187d8f57b6732e5f4fac3a1986cbbab30659025c",
+    "body_sha256": "d8b3cf5aaa2d9c962fa7f4f3bd297b19b75303410b35ddca0029fea686274249",
+    "converter_version": 1,
+    "markdown_sha256": "62ac39ca77b12daf67a68c74b597162e73861598e659234f7a8afb45a79e2ed6"
+  },
+  "fetched_at": "2026-09-14T13:26:12+00:00",
+  "source_snapshot_sha256": "64cba6aa705eabd15a19a7e447b1c11c94cb7d53d177358e13b9c02b66cc5025",
+  "images": {},
+  "local_only": true
+}

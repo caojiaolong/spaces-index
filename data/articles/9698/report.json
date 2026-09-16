@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "9698",
+    "title": "语言模型输出端共享Embedding的重新探索",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/9698",
+    "date": "2023-07-20",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 69,
+    "display_formula_count": 10,
+    "image_count": 1,
+    "heading_count": 5,
+    "code_block_count": 0,
+    "source_text_sha256": "6da748ee173df3de78a28ad4c47296b9e4d2575966f6b2186b3a6a396612776c",
+    "output_text_sha256": "6da748ee173df3de78a28ad4c47296b9e4d2575966f6b2186b3a6a396612776c",
+    "latex_sha256": "1d7c380f081c840def70b5a4fd4ac98441666694ddbe20576113d406d576bf57",
+    "body_sha256": "1780e394b4af1216d3498ac85da636de5f1d135ce1972bcfe3bd397718fd2f9e",
+    "converter_version": 1,
+    "markdown_sha256": "f9cf71de0c5077ae97589a7ea1834031bbc22acd0b94dbefac5b31cf408854e3"
+  },
+  "fetched_at": "2026-09-14T12:53:07+00:00",
+  "source_snapshot_sha256": "4201d9ca2fade415e4945a4eddd4d9277d5337a1cb1b3c20b6899309f850714d",
+  "images": {},
+  "local_only": true
+}

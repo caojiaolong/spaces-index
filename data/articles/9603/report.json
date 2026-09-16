@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "9603",
+    "title": "Transformer升级之路：9、一种全局长度外推的新思路",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/9603",
+    "date": "2023-05-12",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 33,
+    "display_formula_count": 2,
+    "image_count": 2,
+    "heading_count": 7,
+    "code_block_count": 0,
+    "source_text_sha256": "69000ae7061ccfe42431e573638f9757b1f52e6db13de3dfdd9aea8c1fe94459",
+    "output_text_sha256": "69000ae7061ccfe42431e573638f9757b1f52e6db13de3dfdd9aea8c1fe94459",
+    "latex_sha256": "5ea02614b2e9bef79eea9ab0b2c4da8194736f44f032de828402808b4736351a",
+    "body_sha256": "8e8865f4e31e4ae8b4bca12a5d125a50d80b2baa1e8a168855d5ab5f2ebda665",
+    "converter_version": 1,
+    "markdown_sha256": "2afa87c5fc5b97d3f608487a1e0869fc441370aaf2df6650d0abf7417cd9da8b"
+  },
+  "fetched_at": "2026-09-14T12:54:11+00:00",
+  "source_snapshot_sha256": "416f9eececb988e256cac102e06c6d9606a531ef1b97b1e81413b22b5bb74ed8",
+  "images": {},
+  "local_only": true
+}

@@ -1,0 +1,39 @@
+{
+  "metadata": {
+    "id": "1170",
+    "title": "不可能事件——一道经典电磁感应题的错误",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/1170",
+    "date": "2011-01-09",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "source_dom_exact": true,
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "attributes_exact": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 15,
+    "display_formula_count": 4,
+    "image_count": 1,
+    "heading_count": 0,
+    "code_block_count": 0,
+    "source_text_sha256": "141742a449b5cff27a663e73f2d32ea4dfa513c21f93f97df43ba7bcbd218374",
+    "output_text_sha256": "141742a449b5cff27a663e73f2d32ea4dfa513c21f93f97df43ba7bcbd218374",
+    "latex_sha256": "4226285825451f5a49ddf2d083b9adbb04039c64c5318aaefa73604f9ba712eb",
+    "body_sha256": "3798bc2a51112477de56a4b15d396ad0ac0eff5621088c2a2f2ff6cd95cea0f3",
+    "converter_version": 1,
+    "format": "html-v1",
+    "source_warnings": [],
+    "fallback_reason": "Unsupported body element: del",
+    "markdown_sha256": "5f37463332402b4d738a7ce7350c32a957eaaae060811c45314175d66f5a7f6e"
+  },
+  "fetched_at": "2026-09-14T14:25:24+00:00",
+  "source_snapshot_sha256": "809306efa744459c49c26aa399a304be97172047a0b1bcb9c213b09bbd8ac3b1",
+  "images": {},
+  "local_only": true
+}

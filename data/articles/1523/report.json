@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "1523",
+    "title": "2012年快乐！",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/1523",
+    "date": "2012-01-01",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 0,
+    "display_formula_count": 0,
+    "image_count": 1,
+    "heading_count": 0,
+    "code_block_count": 0,
+    "source_text_sha256": "ca8b7ef76bd6642555bf2ec61216315b9dc80ea3d0a059d20f42ad1229bb609f",
+    "output_text_sha256": "ca8b7ef76bd6642555bf2ec61216315b9dc80ea3d0a059d20f42ad1229bb609f",
+    "latex_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "body_sha256": "572d39314f54932a1fb94e04772b7473c224d4b0aa5b8bc0524bf893cf6c1562",
+    "converter_version": 1,
+    "markdown_sha256": "fc4bbecb295877124785fdfb24800984ff4f3b439dd28406bc55a85bd63e89d8"
+  },
+  "fetched_at": "2026-09-14T14:16:09+00:00",
+  "source_snapshot_sha256": "409a8fba9c034ade08dea5f7e06bdb0e43230c948b4d30e6eb1edbcd8628744d",
+  "images": {},
+  "local_only": true
+}

@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "3963",
+    "title": "【理解黎曼几何】1. 一条几何之路",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/3963",
+    "date": "2016-10-14",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 0,
+    "display_formula_count": 0,
+    "image_count": 2,
+    "heading_count": 0,
+    "code_block_count": 0,
+    "source_text_sha256": "ef3c17d2783e469138db931a5f2b286f990112a7e6d73d2ee6de4895816b84d1",
+    "output_text_sha256": "ef3c17d2783e469138db931a5f2b286f990112a7e6d73d2ee6de4895816b84d1",
+    "latex_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "body_sha256": "96dcab266b1bb481c48b9730a4cb1161496a96ce340a12f6b3333b395cc4d4b2",
+    "converter_version": 1,
+    "markdown_sha256": "e620e7e39db5c100386988b0233f91e804ddd591fbb26132faa6adcc6c63dee4"
+  },
+  "fetched_at": "2026-09-14T13:37:56+00:00",
+  "source_snapshot_sha256": "f741ae4c0442ca1fdb95c50e9b87d5ab9d550d24bfb5ef8815f3bf4c943730d1",
+  "images": {},
+  "local_only": true
+}

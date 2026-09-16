@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "4556",
+    "title": "fashion mnist的一个baseline (MobileNet 95%)",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/4556",
+    "date": "2017-08-27",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 0,
+    "display_formula_count": 0,
+    "image_count": 0,
+    "heading_count": 4,
+    "code_block_count": 2,
+    "source_text_sha256": "f0995e8c4f4207f9d2c456f34364ab98a957e0aa344c00791f0a6b64fe951e1a",
+    "output_text_sha256": "f0995e8c4f4207f9d2c456f34364ab98a957e0aa344c00791f0a6b64fe951e1a",
+    "latex_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "body_sha256": "7d9a8c7b1e8d9cc64a16d7af74c350e76039427271243330bc8640bbf272e38f",
+    "converter_version": 1,
+    "markdown_sha256": "0e84de1a28bb259a8be15eb41723c1f440cc4ba3857270d50fb90479994483e9"
+  },
+  "fetched_at": "2026-09-14T13:31:00+00:00",
+  "source_snapshot_sha256": "d57c184bf37957053984f710459dcc4aff365aa0b6c5544b295c9e872e7398bd",
+  "images": {},
+  "local_only": true
+}

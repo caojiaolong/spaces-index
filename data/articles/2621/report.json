@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "2621",
+    "title": "用PyPy提高Python脚本执行效率",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/2621",
+    "date": "2014-06-11",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 2,
+    "display_formula_count": 0,
+    "image_count": 0,
+    "heading_count": 0,
+    "code_block_count": 1,
+    "source_text_sha256": "56ac9c864f6b11216e0cc12ccc5a292db88fdd5e7927e8476597c1888ed76f3d",
+    "output_text_sha256": "56ac9c864f6b11216e0cc12ccc5a292db88fdd5e7927e8476597c1888ed76f3d",
+    "latex_sha256": "e2af82a00e81aff34e265bbafc9160f527beb83a817caf4f8f61def19979c3e8",
+    "body_sha256": "3f09cbd734a0b9ae12964fdc8aa7d7843a820fa1e2a38ee15f6c650a576781e3",
+    "converter_version": 1,
+    "markdown_sha256": "d19aaa09c9b8807bf267ee2b7f63f363ec4d03d23728a50667d1af8fd789c1a8"
+  },
+  "fetched_at": "2026-09-14T13:54:10+00:00",
+  "source_snapshot_sha256": "6b066f538b48f5a270cdc5ca71eb29d3ba5a98b877d9ec1a491f1cc43b0d64ce",
+  "images": {},
+  "local_only": true
+}

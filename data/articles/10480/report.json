@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "10480",
+    "title": "Cool Papers浏览器扩展升级至v0.2.0",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/10480",
+    "date": "2024-10-16",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 0,
+    "display_formula_count": 0,
+    "image_count": 4,
+    "heading_count": 4,
+    "code_block_count": 0,
+    "source_text_sha256": "5159cf300085e65b958161e9016e5c5b1f81045f3d9e5fc1814e60493496cf59",
+    "output_text_sha256": "5159cf300085e65b958161e9016e5c5b1f81045f3d9e5fc1814e60493496cf59",
+    "latex_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "body_sha256": "fa2cb551a1ade6b0c2e2a1f959be9975fcbf49f903870b32e2c8b35fa326588c",
+    "converter_version": 1,
+    "markdown_sha256": "8d52089b24783c31db6d2cad031437b768f0e1d49cd76f5f3222c2fb181a5c67"
+  },
+  "fetched_at": "2026-09-14T12:46:02+00:00",
+  "source_snapshot_sha256": "a9de6dca4e0050dfc0fdb0bbbc25217508f3dae8b1460f30ef4551612b05650e",
+  "images": {},
+  "local_only": true
+}

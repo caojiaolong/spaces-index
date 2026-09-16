@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "4540",
+    "title": "fashion-mnist的gan玩具",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/4540",
+    "date": "2017-08-26",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 0,
+    "display_formula_count": 0,
+    "image_count": 7,
+    "heading_count": 0,
+    "code_block_count": 1,
+    "source_text_sha256": "031fc3109080d4a79aaa3191521bd4eea59a30525631ee9309a41dab08838a43",
+    "output_text_sha256": "031fc3109080d4a79aaa3191521bd4eea59a30525631ee9309a41dab08838a43",
+    "latex_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "body_sha256": "980066a7ed04845e0718c964282cfac2f7d7b2490c6e3afa91593be25819249e",
+    "converter_version": 1,
+    "markdown_sha256": "fcf7d3606bba199ffe22eecc45f1018a7818b64d0f775df86c9cc43f540fad26"
+  },
+  "fetched_at": "2026-09-14T13:31:06+00:00",
+  "source_snapshot_sha256": "67433319529bf848d075a9a1b5c9af9831294bebae6a656bffb0899a1ed620a4",
+  "images": {},
+  "local_only": true
+}

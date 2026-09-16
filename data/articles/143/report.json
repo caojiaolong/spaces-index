@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "143",
+    "title": "【NASA每日一图】春分时刻的土星",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/143",
+    "date": "2009-10-01",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 0,
+    "display_formula_count": 0,
+    "image_count": 1,
+    "heading_count": 0,
+    "code_block_count": 0,
+    "source_text_sha256": "c564eb508a63931e38a27182765ed823e60ada3020d03a4e094f0a5fd2182fe5",
+    "output_text_sha256": "c564eb508a63931e38a27182765ed823e60ada3020d03a4e094f0a5fd2182fe5",
+    "latex_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "body_sha256": "e6b3df549c9925d46483e5f1acdebebf3aefeed7e41e431282b5b949bfd2fc07",
+    "converter_version": 1,
+    "markdown_sha256": "ea8f0c1555b8cc6ff7e503da31f550abc934b6eb62c227302c6f77e3dc71c3fa"
+  },
+  "fetched_at": "2026-09-14T14:51:06+00:00",
+  "source_snapshot_sha256": "3d562726214448295320b81e3d65961acf76b387f3d3de85c180718776a5b3ff",
+  "images": {},
+  "local_only": true
+}

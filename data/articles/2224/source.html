@@ -1,0 +1,55 @@
+<div class="PostContent" id="PostContent">
+<p>本节简单介绍用矩阵来描述旋转。在二维平面上，复数无疑是描述旋转的最佳工具；然而推广到三维空间中，却要动用到“四元数”了。为了证明四元数的相关结论，我们需要三维旋转的矩阵描述。最一般的旋转运动为：绕某一根轴旋转$\theta$角度。这样我们就需要三个参数来描述它：确定一根轴至少需要两个参数，确定角度需要一个参数。因此，如果要用“数”来描述三维空间的伸缩和旋转的话，“三元数”显然是不够的，完成这一目的至少需要四元数。这也从另外一个角度反映了三元数的不存在性。</p><p><strong>矩阵方法</strong><br/>
+首先我们认识到，如果旋转轴是坐标轴之一，那么旋转矩阵将是最简单的，比如向量$\boldsymbol{x}=(x_0,y_0,z_0)^{T}$绕$z$轴逆时针旋转$\theta$角后的坐标就可以描述为<br/>
+$$\begin{equation}<br/>
+\boldsymbol{R}_{\theta}\boldsymbol{x}\end{equation}$$<br/>
+其中<br/>
+$$\begin{equation}\label{xuanzhuanjuzhen}<br/>
+\boldsymbol{R}_{\theta}=\left[ \begin{array}{\cdot {20}{c}}<br/>
+\cos\theta&amp;{ - \sin\theta}&amp;0\\<br/>
+\sin\theta &amp; \cos\theta &amp;0\\<br/>
+0&amp;0&amp;1<br/>
+\end{array} \right]<br/>
+\end{equation}$$<br/>
+如果旋转轴不是坐标轴，而是由单位列向量$\boldsymbol{u}=(x_1,y_1,z_1)$确定，那么同时就确定了与$\boldsymbol{u}$垂直的一个平面，在此平面上找到两个正交的单位列向量$\boldsymbol{e}_1,\boldsymbol{e}_2$，用$\boldsymbol{e}_1,\boldsymbol{e}_2,\boldsymbol{u}$就可以建立一个新直角坐标系（右手架），设在此坐标系之下原来的$\boldsymbol{x}$向量的坐标为$\boldsymbol{\xi}=(\xi_1,\xi_2,\xi_3)^T$，则<br/>
+$$\begin{equation}<br/>
+\left[ \boldsymbol{e}_1,\boldsymbol{e}_2,\boldsymbol{u} \right] \boldsymbol{\xi}=\boldsymbol{x}<br/>
+\end{equation}$$<br/>
+在新坐标系下描述旋转是方便的，它就是矩阵$\eqref{xuanzhuanjuzhen}$。绕$\boldsymbol{u}$轴逆时针旋转$\theta$角后，坐标为<br/>
+$$\begin{equation}<br/>
+\boldsymbol{R}_{\theta} \boldsymbol{\xi}=\boldsymbol{R}_{\theta}\left[ \boldsymbol{e}_1,\boldsymbol{e}_2,\boldsymbol{u} \right]^{-1}\boldsymbol{x}<br/>
+\end{equation}$$<br/>
+上面是在$\boldsymbol{e}_1,\boldsymbol{e}_2,\boldsymbol{u}$坐标系的坐标，变为我们最初的直角坐标系，那就是<br/>
+$$\begin{equation}\label{xuanzhuan}<br/>
+\left[ \boldsymbol{e}_1,\boldsymbol{e}_2,\boldsymbol{u} \right]\boldsymbol{R}_{\theta}\left[ \boldsymbol{e}_1,\boldsymbol{e}_2,\boldsymbol{u} \right]^{-1}\boldsymbol{x}<br/>
+\end{equation}$$<br/>
+$\eqref{xuanzhuan}$式就是旋转之后的坐标。它描述了三维空间中最一般的旋转。注意矩阵$\left[ \boldsymbol{e}_1,\boldsymbol{e}_2,\boldsymbol{u} \right]$ 是一个正交矩阵，因此它的逆就是$\left[ \boldsymbol{e}_1,\boldsymbol{e}_2,\boldsymbol{u} \right]^{-1}=\left[ \begin{array}{*{20}{c}}\boldsymbol{e}_1^T \\ \boldsymbol{e}_2^T \\ \boldsymbol{u}^{T}\end{array} \right]$，因此旋转后坐标为<br/>
+$$\begin{equation}\label{xuanzhuanzuobiao3}<br/>
+\left[ \boldsymbol{e}_1,\boldsymbol{e}_2,\boldsymbol{u} \right]\boldsymbol{R}_{\theta}\left[ \begin{array}{\cdot {20}{c}}\boldsymbol{e}_1^T \\ \boldsymbol{e}_2^T \\ \boldsymbol{u}\end{array}\right]\boldsymbol{x} =\left[ \boldsymbol{e}_1,\boldsymbol{e}_2,\boldsymbol{u} \right]\boldsymbol{R}_{\theta}\left[ \begin{array}{\cdot {20}{c}}\boldsymbol{e}_1 \cdot \boldsymbol{x} \\ \boldsymbol{e}_2 \cdot \boldsymbol{x}\\ \boldsymbol{u} \cdot \boldsymbol{x}\end{array} \right]<br/>
+\end{equation}$$</p><p>剩下就是$\boldsymbol{e}_1,\boldsymbol{e_2}$的确定问题。如果无法很快找出满足条件的两个向量来，那么可以利用向量的叉积：<br/>
+$$\begin{equation}\label{chaji}<br/>
+\boldsymbol{e}_1=\frac{\boldsymbol{u}\times\boldsymbol{x}}{|\boldsymbol{u}\times\boldsymbol{x}|},\boldsymbol{e}_2=\frac{\boldsymbol{u}\times(\boldsymbol{u}\times\boldsymbol{x})}{|\boldsymbol{u}\times(\boldsymbol{u}\times\boldsymbol{x})|}=\frac{(\boldsymbol{u}\cdot\boldsymbol{x})\boldsymbol{u}- \boldsymbol{x}}{|\boldsymbol{u}\times\boldsymbol{x}|}<br/>
+\end{equation}$$</p><p>叉积的好处是明显的，将$\eqref{chaji}$代入$\eqref{xuanzhuanzuobiao3}$，得到<br/>
+$$\begin{equation}\label{juzhenxuanzhuanhuajian}<br/>
+\begin{aligned}<br/>
+&amp;\left[ \frac{\boldsymbol{u}\times\boldsymbol{x}}{|\boldsymbol{u}\times\boldsymbol{x}|},\frac{(\boldsymbol{u}\cdot\boldsymbol{x})\boldsymbol{u}- \boldsymbol{x}}{|\boldsymbol{u}\times\boldsymbol{x}|},\boldsymbol{u} \right]\boldsymbol{R}_{\theta}\left[ \begin{array}{\cdot {20}{c}}0 \\ \frac{(\boldsymbol{u} \cdot \boldsymbol{x})^2-\boldsymbol{x}^2}{|\boldsymbol{u}\times\boldsymbol{x}|}\\ \boldsymbol{u} \cdot \boldsymbol{x}\end{array} \right]\\<br/>
+=&amp;\left[ \frac{\boldsymbol{u}\times\boldsymbol{x}}{|\boldsymbol{u}\times\boldsymbol{x}|},\frac{(\boldsymbol{u}\cdot\boldsymbol{x})\boldsymbol{u}- \boldsymbol{x}}{|\boldsymbol{u}\times\boldsymbol{x}|},\boldsymbol{u} \right]\left[ \begin{array}{\cdot {20}{c}} |\boldsymbol{u}\times \boldsymbol{x}| \sin\theta \\ -|\boldsymbol{u}\times \boldsymbol{x}|\cos\theta \\ \boldsymbol{u} \cdot \boldsymbol{x}\end{array} \right]\\<br/>
+=&amp;\left(\boldsymbol{u}\times\boldsymbol{x} \right)\sin\theta-\left[(\boldsymbol{u}\cdot\boldsymbol{x})\boldsymbol{u}- \boldsymbol{x}\right]\cos\theta+(\boldsymbol{u}\cdot\boldsymbol{x})\boldsymbol{u}\\<br/>
+=&amp;\left(\boldsymbol{u}\times\boldsymbol{x} \right)\sin\theta+\left[(\boldsymbol{u}\times\boldsymbol{x})\times\boldsymbol{u}\right]\cos\theta+(\boldsymbol{u}\cdot\boldsymbol{x})\boldsymbol{u}<br/>
+\end{aligned}<br/>
+\end{equation}$$<br/>
+这被称为<font color="red">Rodrigues旋转公式</font>，它是用向量描述三维空间旋转最简单的形式。写成最后的形式是因为它有明显的几何意义，事实上可以完全不用矩阵的分析，只是利用几何方法和向量叉积就可以推导出$\eqref{juzhenxuanzhuanhuajian}$的最后一式来。另外如果$\boldsymbol{x} \perp \boldsymbol{u}$（事实上在实际应用中，这一条件并不算苛刻。），那么坐标旋转公式将会相当简单：<br/>
+$$\begin{equation}<br/>
+(\boldsymbol{u}\times\boldsymbol{x})\sin\theta +\boldsymbol{x}\cos\theta<br/>
+\end{equation}$$</p><p><strong>几何方法</strong></p><p></p><div class="pic-container"><div class="typecho-caption aligncenter" style="max-width: 100%"><div style="margin: 5px"><a href="/usr/uploads/2013/12/1524754424.png" target="_blank" title="点击查看原图"><img alt="旋转示意图" src="/usr/uploads/2013/12/1524754424.png" style="max-width:100%"/></a></div><p class="typecho-caption-text">旋转示意图</p></div></div><p>已知单位向量$\boldsymbol{u}$是旋转轴，求向量$\boldsymbol{x}$绕轴$\boldsymbol{u}$逆时针旋转$\theta$角之后的坐标。我们用$\boldsymbol{u}$跟$\boldsymbol{x}$作叉积$\boldsymbol{e}_1=\boldsymbol{u}\times\boldsymbol{x}$，得到一个与$\boldsymbol{u}$和$\boldsymbol{x}$都垂直的向量；再做叉积$\boldsymbol{e}_2=(\boldsymbol{u}\times\boldsymbol{x})\times\boldsymbol{u}$，得到一个与$\boldsymbol{u}$和$\boldsymbol{x}$和$\boldsymbol{u}$共面的向量，且这个向量与$\boldsymbol{u}\times\boldsymbol{x}$等长，与$\boldsymbol{u}$和$\boldsymbol{u}\times\boldsymbol{x}$都垂直。</p><p>注意到<br/>
+$$(\boldsymbol{u}\times\boldsymbol{x})\times\boldsymbol{u}=\boldsymbol{x}-(\boldsymbol{u}\cdot\boldsymbol{x})\boldsymbol{u}$$<br/>
+也就是说向量$\boldsymbol{x}$在平面$\boldsymbol{e}_1 ,\boldsymbol{e}_2$上的投影就是$\boldsymbol{e}_2$，而在$\boldsymbol{u}$轴上的投影是$(\boldsymbol{u}\cdot\boldsymbol{x})\boldsymbol{u}$，要注意旋转的时候只有在$\boldsymbol{e}_1 ,\boldsymbol{e}_2$平面、也就是旋转平面上的分量有变化，描述旋转平面上的变换是简单的，它只不过是<br/>
+$$\boldsymbol{e}_2 \cos\theta +\boldsymbol{e}_1\sin\theta$$</p><p>再加上$\boldsymbol{u}$轴的分量$(\boldsymbol{u}\cdot\boldsymbol{x})\boldsymbol{u}$就得到了旋转后的坐标，也就是<br/>
+$$\left(\boldsymbol{u}\times\boldsymbol{x} \right)\sin\theta+\left[(\boldsymbol{u}\times\boldsymbol{x})\times\boldsymbol{u}\right]\cos\theta+(\boldsymbol{u}\cdot\boldsymbol{x})\boldsymbol{u}$$<br/>
+这样我们就重新得到了$\eqref{juzhenxuanzhuanhuajian}$。</p>
+
+
+
+
+
+</div>

@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "2071",
+    "title": "数学基本技艺(A Mathematical Trivium)",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/2071",
+    "date": "2013-09-26",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 0,
+    "display_formula_count": 0,
+    "image_count": 7,
+    "heading_count": 0,
+    "code_block_count": 0,
+    "source_text_sha256": "dab43693ab47109e127483c1e4217afdd9833c4c734388603a4f2e59cf6292d9",
+    "output_text_sha256": "dab43693ab47109e127483c1e4217afdd9833c4c734388603a4f2e59cf6292d9",
+    "latex_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "body_sha256": "c49be89dc74d00532dca4470ac2a9d9a400ab2b0e98ad318c7979c23e24dbd9c",
+    "converter_version": 1,
+    "markdown_sha256": "57e718d3bfe3d7fcde1cbdb29ec4e31b0812dfc75dbcae889b843cbbbf30213a"
+  },
+  "fetched_at": "2026-09-14T13:59:58+00:00",
+  "source_snapshot_sha256": "f30d9de92e503e80bb69cd3e9f20074081fc7e1b591ff69931c5772185957cf5",
+  "images": {},
+  "local_only": true
+}

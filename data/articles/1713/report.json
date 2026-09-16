@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "1713",
+    "title": "军训中的数学——握手奇数次的人数",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/1713",
+    "date": "2012-09-22",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 1,
+    "display_formula_count": 0,
+    "image_count": 1,
+    "heading_count": 0,
+    "code_block_count": 0,
+    "source_text_sha256": "568213e7ff67319535f39476d56457d46d937b8d85979495d8dd488c4aa5f87c",
+    "output_text_sha256": "568213e7ff67319535f39476d56457d46d937b8d85979495d8dd488c4aa5f87c",
+    "latex_sha256": "bb68fd7006a7b044af239ef5be4382a4a4cdddf6f616606d1245143db78d68af",
+    "body_sha256": "2f1cd19233afc1424103674187d6975230a6b71f02cd6d466d3be1360b66e367",
+    "converter_version": 1,
+    "markdown_sha256": "05475891504a6f2de8fb7efb9bb4754dbf1766dad42a8a38a87c0a021463dd6d"
+  },
+  "fetched_at": "2026-09-14T14:10:41+00:00",
+  "source_snapshot_sha256": "1cd67605a1d9c978100a54c1e03088303bf61b01ea16f9d7cb2d32374c40a583",
+  "images": {},
+  "local_only": true
+}

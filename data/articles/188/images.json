@@ -1,0 +1,45 @@
+{
+  "version": 1,
+  "images": {
+    "https://spaces.ac.cn/usr/uploads/2009/10/2061630878.jpg": {
+      "status": "cached",
+      "file": "9e3728367af6b33c3742d9a040f95057f8c85f0819f894bd5e86423c597c969e.jpg",
+      "sha256": "9e3728367af6b33c3742d9a040f95057f8c85f0819f894bd5e86423c597c969e",
+      "bytes": 48820,
+      "checked_at": "2026-09-16T12:30:49+00:00",
+      "fetched_url": "https://spaces.ac.cn/usr/uploads/2009/10/2061630878.jpg",
+      "etag": "\"5a6ec750-beb4\"",
+      "last_modified": "Mon, 29 Jan 2018 07:03:44 GMT"
+    },
+    "https://spaces.ac.cn/usr/uploads/2009/10/864111635.jpg": {
+      "status": "cached",
+      "file": "1851181c0adb0803d666ddf4dd7aed5cc33dd65d3bea271e79ec203dfcb05f03.jpg",
+      "sha256": "1851181c0adb0803d666ddf4dd7aed5cc33dd65d3bea271e79ec203dfcb05f03",
+      "bytes": 43354,
+      "checked_at": "2026-09-16T12:30:53+00:00",
+      "fetched_url": "https://spaces.ac.cn/usr/uploads/2009/10/864111635.jpg",
+      "etag": "\"5a6ec750-a95a\"",
+      "last_modified": "Mon, 29 Jan 2018 07:03:44 GMT"
+    },
+    "https://spaces.ac.cn/usr/uploads/2009/10/2065830087.jpg": {
+      "status": "cached",
+      "file": "c25861c67ec6195de3ca6ad5e7cacb397e74c903975a4c9abac09eb4961f2637.jpg",
+      "sha256": "c25861c67ec6195de3ca6ad5e7cacb397e74c903975a4c9abac09eb4961f2637",
+      "bytes": 80270,
+      "checked_at": "2026-09-16T12:30:56+00:00",
+      "fetched_url": "https://spaces.ac.cn/usr/uploads/2009/10/2065830087.jpg",
+      "etag": "\"5a6ec750-1398e\"",
+      "last_modified": "Mon, 29 Jan 2018 07:03:44 GMT"
+    },
+    "https://spaces.ac.cn/usr/uploads/2009/10/3444534722.jpg": {
+      "status": "cached",
+      "file": "049ecf98c3b2d7adab986261cdad4e95db34721b70da78ff17c485c67de1271f.jpg",
+      "sha256": "049ecf98c3b2d7adab986261cdad4e95db34721b70da78ff17c485c67de1271f",
+      "bytes": 46120,
+      "checked_at": "2026-09-16T12:30:59+00:00",
+      "fetched_url": "https://spaces.ac.cn/usr/uploads/2009/10/3444534722.jpg",
+      "etag": "\"5a6ec750-b428\"",
+      "last_modified": "Mon, 29 Jan 2018 07:03:44 GMT"
+    }
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "7094",
+    "title": "6个派生优化器的简单介绍及其实现",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/7094",
+    "date": "2019-11-25",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 24,
+    "display_formula_count": 5,
+    "image_count": 0,
+    "heading_count": 12,
+    "code_block_count": 3,
+    "source_text_sha256": "bf201217cc999dfa479f6ce9742277155ac38ee6e1eb625b4bee11bc5a4163f4",
+    "output_text_sha256": "bf201217cc999dfa479f6ce9742277155ac38ee6e1eb625b4bee11bc5a4163f4",
+    "latex_sha256": "619e15759bc29bc960a8b9cc9a8033d8a5f9baff043018f4d96aae930d65f34b",
+    "body_sha256": "e82f9b7d0bb07f666548722390d183483dda62aed9a6f181be55db8412a999e8",
+    "converter_version": 1,
+    "markdown_sha256": "7e47fe01ec212b5a6dd3d9a66bbd61fa88666512fc46c006677399316d5f83db"
+  },
+  "fetched_at": "2026-09-14T13:16:32+00:00",
+  "source_snapshot_sha256": "7743a2b22a4d5b7cd7225d4871fafe613425be3f9a37c9917e587d51476f836e",
+  "images": {},
+  "local_only": true
+}

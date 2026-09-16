@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "7611",
+    "title": "也来扯几句“全国青少年科技创新大赛”",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/7611",
+    "date": "2020-07-18",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 0,
+    "display_formula_count": 0,
+    "image_count": 0,
+    "heading_count": 0,
+    "code_block_count": 0,
+    "source_text_sha256": "45a879f01a0bff77e17ccdabbe59802a4f9eca5b09468206e5a18dd2b70a287b",
+    "output_text_sha256": "45a879f01a0bff77e17ccdabbe59802a4f9eca5b09468206e5a18dd2b70a287b",
+    "latex_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "body_sha256": "35c41edf4a8ed64cee0d45582aea30f61f4012e347b9ac43f662c3d03e7708fd",
+    "converter_version": 1,
+    "markdown_sha256": "b9fc2281ec9389313d7af0428fa8d8cf3347dc21b3267fd23797dff2dba8ed49"
+  },
+  "fetched_at": "2026-09-14T13:12:28+00:00",
+  "source_snapshot_sha256": "5aeffaf4ee0359b39fd896065d434fc0ad84f77f470ac1172c749c786238de28",
+  "images": {},
+  "local_only": true
+}

@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "9291",
+    "title": "“十字架”组合计数问题浅试",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/9291",
+    "date": "2022-10-09",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 20,
+    "display_formula_count": 0,
+    "image_count": 4,
+    "heading_count": 3,
+    "code_block_count": 2,
+    "source_text_sha256": "90d662e035769ad81242872b9547fd27ae7e3ec20cd725ed70633416f076909a",
+    "output_text_sha256": "90d662e035769ad81242872b9547fd27ae7e3ec20cd725ed70633416f076909a",
+    "latex_sha256": "28be9e44fb25e5b45d2a8b2baeac5d80844a5f01314a8e23df68f76d690613ee",
+    "body_sha256": "9a5b8df4da698d3d3eee410cca0403ff57c397ee68a29b8e9597e9bcdd132a43",
+    "converter_version": 1,
+    "markdown_sha256": "238473069858253b7a78f5fa883b31816bc6a2115ee6fc33403372916cb03b9c"
+  },
+  "fetched_at": "2026-09-14T12:57:33+00:00",
+  "source_snapshot_sha256": "d0465176a3068d64d3cb14493ab524923352a1a783db0e2e329a9a49111cadb9",
+  "images": {},
+  "local_only": true
+}

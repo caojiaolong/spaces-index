@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "2434",
+    "title": "一维弹簧的运动（下）",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/2434",
+    "date": "2014-03-13",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 24,
+    "display_formula_count": 6,
+    "image_count": 1,
+    "heading_count": 0,
+    "code_block_count": 0,
+    "source_text_sha256": "1be04250a57ba26fcca2ade88c80790b3ddc00e00156f8c6346e4a45a18b7b1d",
+    "output_text_sha256": "1be04250a57ba26fcca2ade88c80790b3ddc00e00156f8c6346e4a45a18b7b1d",
+    "latex_sha256": "d942bdc5608714ee9f32bb0b963a5d11271365f8ca45d90560693088ad2e2439",
+    "body_sha256": "87f7647fc85d7e950c845362f1ffaf91610e4a96dc286540645ad68d6cb472a1",
+    "converter_version": 1,
+    "markdown_sha256": "9570a0f1b20158ed560d5da2e2404d35ba85526227aab7acc795a0f094764b3c"
+  },
+  "fetched_at": "2026-09-14T13:56:10+00:00",
+  "source_snapshot_sha256": "782cf312d751bbf95ed4322bcaf9497511790ac424e31dddfe35a5aa60058ca5",
+  "images": {},
+  "local_only": true
+}

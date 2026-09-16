@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "1423",
+    "title": "今日晒书",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/1423",
+    "date": "2011-07-24",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 0,
+    "display_formula_count": 0,
+    "image_count": 10,
+    "heading_count": 0,
+    "code_block_count": 0,
+    "source_text_sha256": "51977d5fcd03ad9d1925f27dbda1fdb4c2160d078c659d0598e29eb843143977",
+    "output_text_sha256": "51977d5fcd03ad9d1925f27dbda1fdb4c2160d078c659d0598e29eb843143977",
+    "latex_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "body_sha256": "a02903137a3cefc87423195ed8beb8a16996013c8eda386444a9da61cd5b36bd",
+    "converter_version": 1,
+    "markdown_sha256": "91344418156cc72a5e05e7a634899e93585d07bf3e198b258b980fe43266f260"
+  },
+  "fetched_at": "2026-09-14T14:18:55+00:00",
+  "source_snapshot_sha256": "ba662710b2eb748671bfa515e383633ac173f6ab814c8611e87e3c9eee28d027",
+  "images": {},
+  "local_only": true
+}

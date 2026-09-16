@@ -1,0 +1,17 @@
+{
+  "metadata": {
+    "id": "3908",
+    "title": "【中文分词系列】 1. 基于AC自动机的快速分词",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/3908",
+    "date": "2016-08-17",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "fetched_at": "2026-09-14T13:38:45+00:00",
+  "source_snapshot_sha256": "8bbcc4c390136d5770064c25631f7857e0f389a81210d3f726cad8a2611fa5b0",
+  "validators": {
+    "etag": null,
+    "last_modified": null
+  }
+}

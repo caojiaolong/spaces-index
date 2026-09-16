@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "1288",
+    "title": "沐浴问题——调控水温",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/1288",
+    "date": "2011-03-08",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 22,
+    "display_formula_count": 8,
+    "image_count": 1,
+    "heading_count": 0,
+    "code_block_count": 0,
+    "source_text_sha256": "a0788053d6ce9ea06c4fba58daf951ddfa7020d25b06be286e582d99927acd82",
+    "output_text_sha256": "a0788053d6ce9ea06c4fba58daf951ddfa7020d25b06be286e582d99927acd82",
+    "latex_sha256": "8673c165b1d7b03488b4c922292bad3a8d70bdec6195ca6ce4aace8d765dca09",
+    "body_sha256": "3510ecf38eb0e54c03ae2b578a6b88256bed700d2ed3f7cb4aedd2e50bebd936",
+    "converter_version": 1,
+    "markdown_sha256": "24ab7e06c7449fdbd7f4e3efd8ec7ae8579212eeb9432184600f9648ae019457"
+  },
+  "fetched_at": "2026-09-14T14:23:22+00:00",
+  "source_snapshot_sha256": "73d9cf60dda3cfd8932f335e832d0dedb79fab0357d819dc7605c57c9082d9c2",
+  "images": {},
+  "local_only": true
+}

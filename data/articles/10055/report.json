@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "10055",
+    "title": "生成扩散模型漫谈（二十三）：信噪比与大图生成（下）",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/10055",
+    "date": "2024-04-17",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 95,
+    "display_formula_count": 11,
+    "image_count": 6,
+    "heading_count": 8,
+    "code_block_count": 0,
+    "source_text_sha256": "068651d28a92f1d3a03f371cec45f59808ef6e32209743439e33f27ad35cedb8",
+    "output_text_sha256": "068651d28a92f1d3a03f371cec45f59808ef6e32209743439e33f27ad35cedb8",
+    "latex_sha256": "b5e643c05d3dbc1eba21985519b51f2f39c62b1a7807f4afe8c46f3bba17d9b8",
+    "body_sha256": "382e0ce8f87175367534d97e4a624161932624120015ab453bd134a249c46e5b",
+    "converter_version": 1,
+    "markdown_sha256": "fad80495123c158749acb88205a34f5249f520c74deb25ba2a3ad3ffdc22706c"
+  },
+  "fetched_at": "2026-09-14T12:49:02+00:00",
+  "source_snapshot_sha256": "fe3bd43f7e313621fac1e059f0bc53e655fedad7bb57e9d0308756bf7ff203a4",
+  "images": {},
+  "local_only": true
+}

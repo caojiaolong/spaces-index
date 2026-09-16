@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "11335",
+    "title": "随机矩阵的谱范数的快速估计",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/11335",
+    "date": "2025-10-12",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 38,
+    "display_formula_count": 9,
+    "image_count": 0,
+    "heading_count": 5,
+    "code_block_count": 0,
+    "source_text_sha256": "bda3d3d292d91381486b60bd419a50b385b9265a8f1ed0ed23dc7524d7c5624e",
+    "output_text_sha256": "bda3d3d292d91381486b60bd419a50b385b9265a8f1ed0ed23dc7524d7c5624e",
+    "latex_sha256": "f0436ccee6d44b16f0e721a824741a4d1c5935efb151d7fe49d14a3aa9a9fd69",
+    "body_sha256": "bbe56ac3a421d8a7cb3c57ea9e22fc176cda136c1f652658bcb57d6648e69fdb",
+    "converter_version": 1,
+    "markdown_sha256": "d1c5c2ce1f2a3dba66669b688db357e5220cbcf7da0f7f5d3f67c825baf2ad4a"
+  },
+  "fetched_at": "2026-09-14T12:39:15+00:00",
+  "source_snapshot_sha256": "bfe5eedd61e606017c7a4926dcbedc203de4bd0ca1f168c4978fbd492ee35dd9",
+  "images": {},
+  "local_only": true
+}

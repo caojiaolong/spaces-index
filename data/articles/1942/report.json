@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "1942",
+    "title": "费曼积分法(5)：欧拉数学的传承",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/1942",
+    "date": "2013-03-24",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 35,
+    "display_formula_count": 9,
+    "image_count": 0,
+    "heading_count": 0,
+    "code_block_count": 0,
+    "source_text_sha256": "ca90f31610fb8f4e1b064590013569ac2e48615d51b6e3fbf9d7c8d21d4cc79c",
+    "output_text_sha256": "ca90f31610fb8f4e1b064590013569ac2e48615d51b6e3fbf9d7c8d21d4cc79c",
+    "latex_sha256": "b22801ecf2f6b49532cd1fa98be1d510c49a57a17b044e281770b3c41e892536",
+    "body_sha256": "2a4075e546842783e46f06349c9859409bae4a5172e29edc5943a8ac8075c348",
+    "converter_version": 1,
+    "markdown_sha256": "c1248594196ad4ba94306c370b1f5e97060d9598111a8b53a099fc56a1ad4681"
+  },
+  "fetched_at": "2026-09-14T14:04:04+00:00",
+  "source_snapshot_sha256": "a123e03a988b8c684849bce4a84ee48ef87a74ab02e2b9c0021b492004566ea2",
+  "images": {},
+  "local_only": true
+}

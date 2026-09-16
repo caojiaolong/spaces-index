@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "11593",
+    "title": "Adam优化器的最优超参数是β1=β2 ？",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/11593",
+    "date": "2026-02-04",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 77,
+    "display_formula_count": 10,
+    "image_count": 0,
+    "heading_count": 6,
+    "code_block_count": 0,
+    "source_text_sha256": "d61a99b9eb0e64ff81b41509e4f40bdfca0f48196abb27e2a8e3ff0309e9a3f3",
+    "output_text_sha256": "d61a99b9eb0e64ff81b41509e4f40bdfca0f48196abb27e2a8e3ff0309e9a3f3",
+    "latex_sha256": "f18d72424f84a4bdc8fe6c4ba80e2674fd9079c7311bf7c72129dbbd82419b8c",
+    "body_sha256": "7500581955c71885da439a7a6489c6f2551874a1c08b6642d59baaa572151cd0",
+    "converter_version": 1,
+    "markdown_sha256": "0966ec520ce62ae2b3f6c451f4185abab8a510060d5d61d7aa7ae35798f851a9"
+  },
+  "fetched_at": "2026-09-14T12:37:19+00:00",
+  "source_snapshot_sha256": "e5f9c647aa8a653d5ad3fa618a86dd524a9e915096a4101a04ab2da10e724428",
+  "images": {},
+  "local_only": true
+}

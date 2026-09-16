@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "4058",
+    "title": "【外微分浅谈】3. 正交标架",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/4058",
+    "date": "2016-11-05",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 31,
+    "display_formula_count": 13,
+    "image_count": 0,
+    "heading_count": 0,
+    "code_block_count": 0,
+    "source_text_sha256": "fefa6171dedf0593014c3b88d485359e4cec46356c96b12c9e46f7e5a6ec3fc9",
+    "output_text_sha256": "fefa6171dedf0593014c3b88d485359e4cec46356c96b12c9e46f7e5a6ec3fc9",
+    "latex_sha256": "a1efc9c4be2873fcf9d2cbb898b75e389dbe8464ab47b2dd411654fbfd4556d5",
+    "body_sha256": "a0a835c7bdc4058975a4f0d306ee6d300a6b2bbf6d245f68f7e677945e3b2a20",
+    "converter_version": 1,
+    "markdown_sha256": "c3b2772c00d19e2f3d9e38417ba5ae8adefbbdd9016c556f2ad36b005c01be86"
+  },
+  "fetched_at": "2026-09-14T13:36:46+00:00",
+  "source_snapshot_sha256": "8550f029b46f8c73487abb261f74376350da9847e48fc59834f2824285f34e2e",
+  "images": {},
+  "local_only": true
+}

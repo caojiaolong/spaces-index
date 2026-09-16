@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "11875",
+    "title": "动量的新理解：逼近特征层面的梯度下降",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/11875",
+    "date": "2026-08-23",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 54,
+    "display_formula_count": 11,
+    "image_count": 0,
+    "heading_count": 7,
+    "code_block_count": 0,
+    "source_text_sha256": "2cd1a6d88abda08712cf0714dcd1a051111da3341ec28206f6aea63763a6f89d",
+    "output_text_sha256": "2cd1a6d88abda08712cf0714dcd1a051111da3341ec28206f6aea63763a6f89d",
+    "latex_sha256": "f6ac8bcf71acb06221075d8ebf453bc204d946cabad0d6fd019ef83ac56b74d5",
+    "body_sha256": "04a4e1ab67aef64d4188a39ea186cf3c0346a53c426f1492f549ca975ba11c2d",
+    "converter_version": 1,
+    "markdown_sha256": "28a2e6dea8fe8b0f9d3f4096694eef8374e23150136062a028add38060f52b82"
+  },
+  "fetched_at": "2026-09-14T07:42:46+00:00",
+  "source_snapshot_sha256": "1c138b8b4e36f69cc5a1e03bb0c8693f8ba87d8aeb98664954e1546ac187466f",
+  "images": {},
+  "local_only": true
+}

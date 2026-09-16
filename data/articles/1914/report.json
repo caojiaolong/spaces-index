@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "1914",
+    "title": "新年快乐！桃花迎春！",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/1914",
+    "date": "2013-02-09",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 0,
+    "display_formula_count": 0,
+    "image_count": 7,
+    "heading_count": 0,
+    "code_block_count": 0,
+    "source_text_sha256": "d765e4b7f1dc0cda3487521496e5f88756da6c7238914495f63aa74cf4174e21",
+    "output_text_sha256": "d765e4b7f1dc0cda3487521496e5f88756da6c7238914495f63aa74cf4174e21",
+    "latex_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "body_sha256": "21c9d39c64dc583674ff36f3b5e7f8034a958478278bb61c5d88935478d9f344",
+    "converter_version": 1,
+    "markdown_sha256": "32f83869f5ed3faaf2ce8150c98b0f50fbfdba44cf5cf4297266aee0722efc48"
+  },
+  "fetched_at": "2026-09-14T14:04:53+00:00",
+  "source_snapshot_sha256": "1c4bcb6aac48aa7b297d40751e3c8a37a623fe6596c260c57602b29c9d288e5c",
+  "images": {},
+  "local_only": true
+}

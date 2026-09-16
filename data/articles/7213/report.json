@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "7213",
+    "title": "CRF用过了，不妨再了解下更快的MEMM？",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/7213",
+    "date": "2020-02-24",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 37,
+    "display_formula_count": 8,
+    "image_count": 0,
+    "heading_count": 10,
+    "code_block_count": 0,
+    "source_text_sha256": "0a4cea5c58cf7b2fe72bdb9c2c012bdeff03af37de6387f8dc3eca5008ad65d0",
+    "output_text_sha256": "0a4cea5c58cf7b2fe72bdb9c2c012bdeff03af37de6387f8dc3eca5008ad65d0",
+    "latex_sha256": "58cc5664d9335ab7635efa3e6a993360bf018a812956adb3f37ba93934dcccb8",
+    "body_sha256": "ae58c4d7705677b56eab9582ce50dcc619a48671569f715006208be2c5e10cfa",
+    "converter_version": 1,
+    "markdown_sha256": "d8647e0eacee673ab66c2aea72bc7a0dc7c27c590f52bb9c9611f31b962aab72"
+  },
+  "fetched_at": "2026-09-14T13:15:14+00:00",
+  "source_snapshot_sha256": "f973fc61b7381a17b7437c444dd819f434ddc66d72662cb6d31dea5a6f68486f",
+  "images": {},
+  "local_only": true
+}

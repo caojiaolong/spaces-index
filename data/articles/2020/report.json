@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "2020",
+    "title": "齐次对称多项式初等表示的新尝试",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/2020",
+    "date": "2013-07-05",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 2,
+    "display_formula_count": 1,
+    "image_count": 0,
+    "heading_count": 0,
+    "code_block_count": 0,
+    "source_text_sha256": "4e40688c31a65cf2cc7e1336bf9eb7b19d178fff584e3c92e01940f0b3c3b08e",
+    "output_text_sha256": "4e40688c31a65cf2cc7e1336bf9eb7b19d178fff584e3c92e01940f0b3c3b08e",
+    "latex_sha256": "c3b9665f3a6b18838e3f6fcc9b427a17087d1d150518286b9d74cff66da1e497",
+    "body_sha256": "c96a6fd25217599c971e623dbc0ed7994366af70a3297bb3c95608a1c30c9387",
+    "converter_version": 1,
+    "markdown_sha256": "9b26033459129a3f293ac604e45eb9379d423f0804e9584d113df02643a294cf"
+  },
+  "fetched_at": "2026-09-14T14:01:23+00:00",
+  "source_snapshot_sha256": "95d2dca0bda79743e6c2198961a195cd3252b910272f84d621ab29b801359b60",
+  "images": {},
+  "local_only": true
+}

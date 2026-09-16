@@ -1,0 +1,39 @@
+{
+  "metadata": {
+    "id": "10311",
+    "title": "“Cool Papers + 站内搜索”的一些新尝试",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/10311",
+    "date": "2024-08-12",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "source_dom_exact": true,
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "attributes_exact": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 0,
+    "display_formula_count": 0,
+    "image_count": 4,
+    "heading_count": 4,
+    "code_block_count": 0,
+    "source_text_sha256": "36c1e4e8eec340575b4139df69dcdac4ba26edf688f75033ffcb384b6d74d1a2",
+    "output_text_sha256": "36c1e4e8eec340575b4139df69dcdac4ba26edf688f75033ffcb384b6d74d1a2",
+    "latex_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "body_sha256": "f04df83fc74407e6bd2d0caf81279800f0ecb0f732a06effacd689f409e7450f",
+    "converter_version": 1,
+    "format": "html-v1",
+    "source_warnings": [],
+    "fallback_reason": "Standard Markdown round trip changed source structure",
+    "markdown_sha256": "ba8e777342fb3dc75c9b8c2358f1cc09c70f073771d21e9d95e154433945e10d"
+  },
+  "fetched_at": "2026-09-14T12:47:11+00:00",
+  "source_snapshot_sha256": "5075b855dd138166e7688b00ba2ccaa39302ee7aeac721e221437f5fb6946a0b",
+  "images": {},
+  "local_only": true
+}

@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "1381",
+    "title": "向量结合复数：常曲率曲线(1)",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/1381",
+    "date": "2011-06-19",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 12,
+    "display_formula_count": 5,
+    "image_count": 0,
+    "heading_count": 0,
+    "code_block_count": 0,
+    "source_text_sha256": "1149271a678d87cb36fa74c7159cca820a497e76ebc5403ebb35407450ef8178",
+    "output_text_sha256": "1149271a678d87cb36fa74c7159cca820a497e76ebc5403ebb35407450ef8178",
+    "latex_sha256": "6e2146f1ab78ac2f597e2a0f6be326b8b2c935347e089d543a43a19420b57e81",
+    "body_sha256": "997c2270bcd6c29773db4c8f27dd12d8bc36ebbb14f721a2c34615de6ce67e71",
+    "converter_version": 1,
+    "markdown_sha256": "f0fc9a5c3cb19ca485e308f19e3e1d3c663e9539c3111538f85c769105f42a35"
+  },
+  "fetched_at": "2026-09-14T14:20:35+00:00",
+  "source_snapshot_sha256": "1e896984a786a733a191ae22ca4cb3685c6d0d9477e0c575d9d4ff3712b8a26b",
+  "images": {},
+  "local_only": true
+}

@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "6985",
+    "title": "“让Keras更酷一些！”：层与模型的重用技巧",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/6985",
+    "date": "2019-09-29",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 3,
+    "display_formula_count": 2,
+    "image_count": 0,
+    "heading_count": 9,
+    "code_block_count": 11,
+    "source_text_sha256": "fea195f58795cb66bf3930bc15538f7b40feab41ef33116b913332f2f5e0a34a",
+    "output_text_sha256": "fea195f58795cb66bf3930bc15538f7b40feab41ef33116b913332f2f5e0a34a",
+    "latex_sha256": "c5db0cdec47cffe94e868f4b673ce73e0487c373e6fffc0bee6bd52ee1cc43e5",
+    "body_sha256": "c450688a3c502cf6e683f92fcb1830aa80fee11088067df814fd7bd1dda56020",
+    "converter_version": 1,
+    "markdown_sha256": "783035cc84af8c702b07d420bd33d61f2d06f1d4420f257665ad3ce5fe03b603"
+  },
+  "fetched_at": "2026-09-14T13:17:26+00:00",
+  "source_snapshot_sha256": "e7f2a23751efa957eb12e31311603efa040a5c5cc182cd65271c04ad8238058b",
+  "images": {},
+  "local_only": true
+}

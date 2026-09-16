@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "7500",
+    "title": "如何应对Seq2Seq中的“根本停不下来”问题？",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/7500",
+    "date": "2020-06-16",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 64,
+    "display_formula_count": 4,
+    "image_count": 0,
+    "heading_count": 9,
+    "code_block_count": 0,
+    "source_text_sha256": "47de03a0f13ee4974a241c874eaf96f96000673a3f9a51026cfb1662ad486723",
+    "output_text_sha256": "47de03a0f13ee4974a241c874eaf96f96000673a3f9a51026cfb1662ad486723",
+    "latex_sha256": "33e59978519c2b479204c457859e812076b2dfd6a65218f2647a79ffdba1e23b",
+    "body_sha256": "44108260a1771e149544a215aacfe4f8b85c0603414bb63102b91f0e56ea6979",
+    "converter_version": 1,
+    "markdown_sha256": "dd27f00f6400902fac2ed74f3f22661da78c8680f40dad93ea94e42a5527642d"
+  },
+  "fetched_at": "2026-09-14T13:13:13+00:00",
+  "source_snapshot_sha256": "bd607eba73e6266719de2625410cb1fc384a36016f83d1152e612aae1f2e40d3",
+  "images": {},
+  "local_only": true
+}

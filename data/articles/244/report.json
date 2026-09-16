@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "244",
+    "title": "美国科学家用3000幅照片拼接夜空全景",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/244",
+    "date": "2009-11-03",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 0,
+    "display_formula_count": 0,
+    "image_count": 1,
+    "heading_count": 0,
+    "code_block_count": 0,
+    "source_text_sha256": "a91e64823893677846783abdd5a2fc43852b1415714186333f7522fdedfd84b3",
+    "output_text_sha256": "a91e64823893677846783abdd5a2fc43852b1415714186333f7522fdedfd84b3",
+    "latex_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "body_sha256": "34157115c0112ba72f8ad91cf576faee71d209b214f5cacf6e3482b4138b5990",
+    "converter_version": 1,
+    "markdown_sha256": "89dea566ad73becb0b298258ff22f4e7f5188e856810417870c26901f25928ee"
+  },
+  "fetched_at": "2026-09-14T14:46:37+00:00",
+  "source_snapshot_sha256": "7431337e0780e562ce44563c9f48def666feda1d38714e49954fba2bfab289dc",
+  "images": {},
+  "local_only": true
+}

@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "919",
+    "title": "期待上学，期待九月",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/919",
+    "date": "2010-08-31",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 0,
+    "display_formula_count": 0,
+    "image_count": 0,
+    "heading_count": 0,
+    "code_block_count": 0,
+    "source_text_sha256": "0a6c737aedf825423208714e50539648ec95edaf57dbef99ae5038d4fd82a255",
+    "output_text_sha256": "0a6c737aedf825423208714e50539648ec95edaf57dbef99ae5038d4fd82a255",
+    "latex_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "body_sha256": "d5de9b95e4306b7ab7a9156e0476496a47eac1cb8731635edb00598e43884c73",
+    "converter_version": 1,
+    "markdown_sha256": "84f91a7d5e1bcb3dbb425336f4bf73e213267f72bdfc1fc9b9c3f443e3677d16"
+  },
+  "fetched_at": "2026-09-14T14:30:40+00:00",
+  "source_snapshot_sha256": "395ddc0b2448e41ec151bb04186c993d1e5b03b3d84dc414388f8a50035f9422",
+  "images": {},
+  "local_only": true
+}

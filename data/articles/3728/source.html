@@ -1,0 +1,26 @@
+<div class="PostContent" id="PostContent">
+<p>3月初发布的树莓派3自带了WiFi和蓝牙，再加上它本来就有一个网口，因此俨然就是一台无线路由器了。我也忍不住入手了一个，打算用来做路由器和NAS。树莓派做路由器的教程已经有很多了，当然，基本都是基于树莓派2的，3之前的版本都没有自带WiFi，因此需要自己配无线网卡，而3自带了无线网卡，配置就方便多了。参考了两篇外文教程，成功配置，在这里记录一下。</p><p>参考教程：<br/>
+<a href="https://frillip.com/using-your-raspberry-pi-3-as-a-wifi-access-point-with-hostapd/" target="_blank">https://frillip.com/using-your-raspberry-pi-3-as-a-wifi-access-point-with-hostapd/</a></p><p><a href="https://gist.github.com/Lewiscowles1986/fecd4de0b45b2029c390#file-rpi3-ap-setup-sh" target="_blank">https://gist.github.com/Lewiscowles1986/fecd4de0b45b2029c390#file-rpi3-ap-setup-sh</a></p><h3 id="配置无线热点">配置无线热点</h3><p>主要用到的软件有hostapd、dnsmasq：</p><pre class="line-numbers"><code class="language-bash">sudo apt-get install hostapd dnsmasq</code></pre><p>然后在/etc/dnsmasq.conf末加入（自己修改IP和网段，这个文件是已存在的，很详细的配置文件，但是所有行都加入了#号注释掉）</p><blockquote>interface=wlan0<br/>
+dhcp-range=10.0.0.2,10.0.0.5,255.255.255.0,12h</blockquote><p>然后新建/etc/hostapd/hostapd.conf，加入</p><blockquote>interface=wlan0<br/>
+hw_mode=g<br/>
+channel=10<br/>
+auth_algs=1<br/>
+wpa=2<br/>
+wpa_key_mgmt=WPA-PSK<br/>
+wpa_pairwise=CCMP<br/>
+rsn_pairwise=CCMP<br/>
+wpa_passphrase=wifi密码<br/>
+ssid=wifi名字</blockquote><p>接着修改/etc/sysctl.conf，更改（如果有这一行，把#号去掉就行）</p><blockquote>net.ipv4.ip_forward=1</blockquote><p>最后，将下面脚本加入到/etc/rc.local的exit 0前：</p><pre class="line-numbers"><code class="language-bash">ifconfig wlan0 down
+ifconfig wlan0 10.0.0.1 netmask 255.255.255.0 up
+iwconfig wlan0 power off
+service dnsmasq restart
+hostapd -B /etc/hostapd/hostapd.conf &amp; &gt; /dev/null 2&gt;&amp;1
+sudo iptables -t nat -A POSTROUTING -o eth0 -j MASQUERADE  
+sudo iptables -A FORWARD -i eth0 -o wlan0 -m state --state RELATED,ESTABLISHED -j ACCEPT  
+sudo iptables -A FORWARD -i wlan0 -o eth0 -j ACCEPT</code></pre><p>重启，就可以看到热点了，简单好多～树莓派的wifi信号强度跟当初著名的路由玩具wr703n差不多。</p><h3 id="跳坑与填坑">跳坑与填坑</h3><p>顺便还配置了离线下载、NAS、自动云同步什么的。由于对linux不熟悉，跳了好多坑。要提醒大家，树莓派上很多命令都需要sudo开头，而树莓派的sudo并不需要密码。但是有sudo和没sudo完全是两个环境（两个用户），比如sudo screen -S sync后，在screen -ls是看不到的，必须要sudo screen -ls才能看到。另外，如果你把命令加入/etc/rc.local中运行，默认它是sudo执行的（不管你有没有加sudo），结果我将一个screen任务加入到了这里，启动后用screen -ls死活看不到，原来要sudo screen -ls，我晕...还有，我运行autossh进行内网穿透，autossh之前一定要加个sleep 5的命令，要不然autossh运行了也没用～～</p><p>这些都是跳了一整天的坑啊。</p>
+
+
+
+
+
+</div>

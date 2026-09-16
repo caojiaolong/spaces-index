@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "55",
+    "title": "经典电视剧：《仙剑奇侠传3》专辑",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/55",
+    "date": "2009-08-05",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 0,
+    "display_formula_count": 0,
+    "image_count": 3,
+    "heading_count": 0,
+    "code_block_count": 0,
+    "source_text_sha256": "d41a9fb70e50d5b24eb0be6f4c277c0a82d19b8e183506f85ee1c54cc761ee41",
+    "output_text_sha256": "d41a9fb70e50d5b24eb0be6f4c277c0a82d19b8e183506f85ee1c54cc761ee41",
+    "latex_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "body_sha256": "a3b531a5bdbabca8e7a458c82c1cf765c2045f2dfc53b8e5a0d5206d213078bb",
+    "converter_version": 1,
+    "markdown_sha256": "8e7b35cf1da23a71281f83f52623d07d3e9c78fd0c820fee88db83579f783788"
+  },
+  "fetched_at": "2026-09-14T15:01:30+00:00",
+  "source_snapshot_sha256": "5cc3f9a18343c88229e3233e941f3fb426b5f6e6766495fc3502951eb6c8597f",
+  "images": {},
+  "local_only": true
+}

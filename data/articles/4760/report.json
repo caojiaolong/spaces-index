@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "4760",
+    "title": "2018年全年天象",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/4760",
+    "date": "2017-12-31",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 0,
+    "display_formula_count": 0,
+    "image_count": 0,
+    "heading_count": 12,
+    "code_block_count": 0,
+    "source_text_sha256": "7ac41bcab466ae1d156419ef628b956646613e2aecb589fd8a7f5b0182de4e00",
+    "output_text_sha256": "7ac41bcab466ae1d156419ef628b956646613e2aecb589fd8a7f5b0182de4e00",
+    "latex_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "body_sha256": "be75f2d70d7c2907df7c4c6c3d87d38c8be602740f1af240015ac2c7bbebb8a5",
+    "converter_version": 1,
+    "markdown_sha256": "896cc0128c5b0a5ff7185d264ed3625e591ce5f0c60a1adde2308ef31d19b1ce"
+  },
+  "fetched_at": "2026-09-14T13:29:07+00:00",
+  "source_snapshot_sha256": "9c29ee9d1b0676e63f0ce00ae0a103109fea06ddef7249bdb9aa267b14ebc84e",
+  "images": {},
+  "local_only": true
+}

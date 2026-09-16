@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "11619",
+    "title": "MoE环游记：6、最优分配促均衡",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/11619",
+    "date": "2026-02-22",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 182,
+    "display_formula_count": 19,
+    "image_count": 1,
+    "heading_count": 10,
+    "code_block_count": 1,
+    "source_text_sha256": "7bc8f254d2795da0fca9f6a40876fc0e915d3ec513861e3ef5c1009a2fdf3fac",
+    "output_text_sha256": "7bc8f254d2795da0fca9f6a40876fc0e915d3ec513861e3ef5c1009a2fdf3fac",
+    "latex_sha256": "9db214843f7100fad38bfe96b181f808cd5f2f854e2c2e3109668557cdd66d06",
+    "body_sha256": "d0d9ea3b38a2bebe962a9dd198f5d4709f266459659ea026adc6e275d43661f1",
+    "converter_version": 1,
+    "markdown_sha256": "4ff70935b265fb87c600726773e263a460314075bb3f4ab069753c844e8ce390"
+  },
+  "fetched_at": "2026-09-14T12:37:04+00:00",
+  "source_snapshot_sha256": "19333c463855eb7a56a03e4d7092342b95dcc51f984b49285cf9d786d6a90b67",
+  "images": {},
+  "local_only": true
+}

@@ -1,0 +1,41 @@
+{
+  "metadata": {
+    "id": "116",
+    "title": "高三学生写的数学情书（佩服）",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/116",
+    "date": "2009-09-06",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "source_dom_exact": true,
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "attributes_exact": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": null,
+    "display_formula_count": null,
+    "image_count": 0,
+    "heading_count": 0,
+    "code_block_count": 0,
+    "source_text_sha256": "1a127396896458876bb3a81bf95a99ff78812cb1b769aa11da7ab001d01394de",
+    "output_text_sha256": "1a127396896458876bb3a81bf95a99ff78812cb1b769aa11da7ab001d01394de",
+    "latex_sha256": "b1b93adc037a17299d854bdd8025d61901ffe1ba010a025086d3c7a169fe7569",
+    "body_sha256": "fe450f1db235d92353742899072163d774a5f8842e8d7d3b2dfd683fd33917cd",
+    "converter_version": 1,
+    "format": "html-v1",
+    "source_warnings": [
+      "原文公式定界符异常，已逐字保留，未补写或修正：Unclosed math delimiter"
+    ],
+    "fallback_reason": "Unclosed math delimiter",
+    "markdown_sha256": "67ddd60619fd15ac5f844e27624aeca28a5852dc89be92204e46e591f3cc3cf0"
+  },
+  "fetched_at": "2026-09-14T14:54:16+00:00",
+  "source_snapshot_sha256": "7d4145e1c12fccfc64d2395749df21d6744805518554517d00394d1c53132929",
+  "images": {},
+  "local_only": true
+}

@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "2765",
+    "title": "强大的整数数列网站OEIS",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/2765",
+    "date": "2014-07-17",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 5,
+    "display_formula_count": 1,
+    "image_count": 0,
+    "heading_count": 0,
+    "code_block_count": 1,
+    "source_text_sha256": "b76729d1e75b4d1895f29924984714342e2b82782c76220b3b67de9825d31858",
+    "output_text_sha256": "b76729d1e75b4d1895f29924984714342e2b82782c76220b3b67de9825d31858",
+    "latex_sha256": "376ad618f03d37ff8afeb0e61bb7738923c61d9844ccb64392bf20c948d05690",
+    "body_sha256": "e2210008ffa19d29744c1feb8af9beb2bcd48450bb1a9e0a5d720b620be8f6a3",
+    "converter_version": 1,
+    "markdown_sha256": "660b227baae2e06b7679ab2215bba7d2381bd2982d53014d291661820b59ecfc"
+  },
+  "fetched_at": "2026-09-14T13:53:11+00:00",
+  "source_snapshot_sha256": "16f66283bf7dba65d6146bfbb0630b0de1d7fc075a89020329d793c5b0e1a827",
+  "images": {},
+  "local_only": true
+}

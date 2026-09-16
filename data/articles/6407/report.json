@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "6407",
+    "title": "构造一个显式的、总是可逆的矩阵",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/6407",
+    "date": "2019-03-01",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 21,
+    "display_formula_count": 7,
+    "image_count": 0,
+    "heading_count": 0,
+    "code_block_count": 0,
+    "source_text_sha256": "fb831413dd95a323a2ea8e9f50f092516f11a49a8545cf6774cdd5c2dc51f75c",
+    "output_text_sha256": "fb831413dd95a323a2ea8e9f50f092516f11a49a8545cf6774cdd5c2dc51f75c",
+    "latex_sha256": "39bcf7cab3cb3587f971ec75a72c7e157e439962718e87ef5d359bfc676d9f88",
+    "body_sha256": "e664da4a8e9a1c1daee3b1c9f127975f3b41ed7517efeb6a46e7a1289fbb6f30",
+    "converter_version": 1,
+    "markdown_sha256": "c3737adca53a0b85153b1845cc63135dfc7591e8eb67f642bc420cb79f0aed74"
+  },
+  "fetched_at": "2026-09-14T13:21:15+00:00",
+  "source_snapshot_sha256": "beaa2b61956e8ee3fa753ebb44f56ca611144ad7561fde5bd1a50ac4fb1f13cf",
+  "images": {},
+  "local_only": true
+}

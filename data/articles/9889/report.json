@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "9889",
+    "title": "注意力机制真的可以“集中注意力”吗？",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/9889",
+    "date": "2023-12-12",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 80,
+    "display_formula_count": 11,
+    "image_count": 2,
+    "heading_count": 7,
+    "code_block_count": 0,
+    "source_text_sha256": "47da0ee2a4f4b3a1be84a810821ec8fa140dd478cdf501bfe4159d924ec15914",
+    "output_text_sha256": "47da0ee2a4f4b3a1be84a810821ec8fa140dd478cdf501bfe4159d924ec15914",
+    "latex_sha256": "f08151910befec80e358350270b49c668f2f4a5b7873bcd6af0ad522933ef9d3",
+    "body_sha256": "25d0ee824fdb1577ae15fb235cd09b1778f0e337e9b394d1938898ab30904fc4",
+    "converter_version": 1,
+    "markdown_sha256": "8a3bca2beb2de3297ca3f713fb9a2219249e4d6c9a6b6304c56f7955e0d330e2"
+  },
+  "fetched_at": "2026-09-14T12:50:32+00:00",
+  "source_snapshot_sha256": "d19d59c0ba95da89232327653590c5fafea4a34a3d46e41da0c2e9b604402384",
+  "images": {},
+  "local_only": true
+}

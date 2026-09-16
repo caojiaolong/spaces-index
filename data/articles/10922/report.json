@@ -1,0 +1,39 @@
+{
+  "metadata": {
+    "id": "10922",
+    "title": "msign算子的Newton-Schulz迭代（上）",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/10922",
+    "date": "2025-05-11",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "source_dom_exact": true,
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "attributes_exact": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 115,
+    "display_formula_count": 19,
+    "image_count": 10,
+    "heading_count": 11,
+    "code_block_count": 4,
+    "source_text_sha256": "640f53b27d52ab0dc63af277596b87f6112f6213457f6a552da97da2ac918fae",
+    "output_text_sha256": "640f53b27d52ab0dc63af277596b87f6112f6213457f6a552da97da2ac918fae",
+    "latex_sha256": "ab3e92fcfe1e78547efc2cda448bbaf36f03d6cd7f0bba0195c2d3fa74da3e20",
+    "body_sha256": "5e0f3eab9779c1336f543da19561d9dfc79bded79217de7ef94e0cebc0709b22",
+    "converter_version": 1,
+    "format": "html-v1",
+    "source_warnings": [],
+    "fallback_reason": "Standard Markdown round trip changed source structure",
+    "markdown_sha256": "d904ea4e617e2f43672c759203db0099e0a2a0a84955a2d524e854eb9aebc25b"
+  },
+  "fetched_at": "2026-09-14T12:42:27+00:00",
+  "source_snapshot_sha256": "106f2bb8fc24534cb3774ee3b25c40f0cd9d3226e487c0ea54007d307b0ed21f",
+  "images": {},
+  "local_only": true
+}

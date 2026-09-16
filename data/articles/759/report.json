@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "759",
+    "title": "问世间质心(重心)知多少",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/759",
+    "date": "2010-07-26",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 25,
+    "display_formula_count": 2,
+    "image_count": 4,
+    "heading_count": 0,
+    "code_block_count": 0,
+    "source_text_sha256": "9ae85780dd6818246d21cf80bbd5a015c4a17e2e3338c3d1c5e04890316e4012",
+    "output_text_sha256": "9ae85780dd6818246d21cf80bbd5a015c4a17e2e3338c3d1c5e04890316e4012",
+    "latex_sha256": "a3beead94092dc44dd90fe19fffb928317dd105fdce1c5375ed87016174cb4fd",
+    "body_sha256": "6211468f0b4b75e451117f06c4f341f6f5a4c0b5be3f33ff72189563737d2d4c",
+    "converter_version": 1,
+    "markdown_sha256": "3a1888cb050f58ae13e1f02fe8fe8f41a5d3673909a81d27f8dab044096dbaf4"
+  },
+  "fetched_at": "2026-09-14T14:33:43+00:00",
+  "source_snapshot_sha256": "97d5d9b486170c874b2aa90e6998ede3958019bff324831ddfc8dbf83a63c3d6",
+  "images": {},
+  "local_only": true
+}

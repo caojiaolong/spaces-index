@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "1902",
+    "title": "关于“平衡态公理”的更正与思考",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/1902",
+    "date": "2013-02-03",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 15,
+    "display_formula_count": 5,
+    "image_count": 0,
+    "heading_count": 0,
+    "code_block_count": 0,
+    "source_text_sha256": "531f9bba776005b874a11874fcbea7de773a141ee518bb7f6e32a08bd61be790",
+    "output_text_sha256": "531f9bba776005b874a11874fcbea7de773a141ee518bb7f6e32a08bd61be790",
+    "latex_sha256": "27d0212cc349f84eb96e7f00d54c96047c37d32db67c6f82564ef9a50f60868f",
+    "body_sha256": "3cf00b9e1842c54dc740d84fb4cbff5fd4c1ae28ff8548b065f635b0005d8990",
+    "converter_version": 1,
+    "markdown_sha256": "caa74be8baf494fdcea31c6c450b61186b8bf131080d085db2a1b8b1cfc4b834"
+  },
+  "fetched_at": "2026-09-14T14:05:25+00:00",
+  "source_snapshot_sha256": "161fd8c539cfb6f14fac82bd91a93a0f95943de07f8ac87c796600c1b0ead5d7",
+  "images": {},
+  "local_only": true
+}

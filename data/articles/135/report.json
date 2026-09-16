@@ -1,0 +1,39 @@
+{
+  "metadata": {
+    "id": "135",
+    "title": "《环球科学》：高温超导 “铁”的飞跃",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/135",
+    "date": "2009-09-26",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "source_dom_exact": true,
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "attributes_exact": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 1,
+    "display_formula_count": 0,
+    "image_count": 1,
+    "heading_count": 0,
+    "code_block_count": 0,
+    "source_text_sha256": "4ac5c81749a3cfbc963bb4d1720c3b57e0912693a8f9c74b3293a745c9a2c7cf",
+    "output_text_sha256": "4ac5c81749a3cfbc963bb4d1720c3b57e0912693a8f9c74b3293a745c9a2c7cf",
+    "latex_sha256": "e14a8b8b5e947c4a39ca60035a9307ff54e81969014269aa2da608bc3da868d4",
+    "body_sha256": "200f430c2dd5e8a979300a21d27e0c6f96562cb689c5f0d75b424d5b0a393846",
+    "converter_version": 1,
+    "format": "html-v1",
+    "source_warnings": [],
+    "fallback_reason": "Standard Markdown round trip changed source structure",
+    "markdown_sha256": "f5cf48632430cda82d1345041cb19032dabd35f3f972dd2bd4405dd54d2e7b40"
+  },
+  "fetched_at": "2026-09-14T14:51:50+00:00",
+  "source_snapshot_sha256": "d521ac81e1edf8fc39f2380763f37a9197ad23c02ce1028b564df54e6595e4e8",
+  "images": {},
+  "local_only": true
+}

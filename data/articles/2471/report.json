@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "2471",
+    "title": "倒立单摆之分离频率",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/2471",
+    "date": "2014-03-18",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 42,
+    "display_formula_count": 12,
+    "image_count": 2,
+    "heading_count": 0,
+    "code_block_count": 0,
+    "source_text_sha256": "328afcb3046a0ee134eb7ebf236b12524e8cee5ca921979959f6a10af8300696",
+    "output_text_sha256": "328afcb3046a0ee134eb7ebf236b12524e8cee5ca921979959f6a10af8300696",
+    "latex_sha256": "7806e4968a66120d7d299b5cbb50e89ebaaf3ebfca56a995645577fc0419d351",
+    "body_sha256": "146dd843c7c8cc0f67b0e8e90d8d2c25d58eeaf5466f373f93af19ad36f568dd",
+    "converter_version": 1,
+    "markdown_sha256": "bad9c3b5934eb428b3702707d4dde87f1322ef1742e885993361eb0ad8af6d7a"
+  },
+  "fetched_at": "2026-09-14T13:55:56+00:00",
+  "source_snapshot_sha256": "470992f4bb7c7acb9df2d79b772bf3d63988e72f18c5ef6852efbdc988eb746a",
+  "images": {},
+  "local_only": true
+}

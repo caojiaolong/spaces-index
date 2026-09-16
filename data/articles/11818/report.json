@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "11818",
+    "title": "基于排序不等式的相似度指标",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/11818",
+    "date": "2026-07-16",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 68,
+    "display_formula_count": 14,
+    "image_count": 0,
+    "heading_count": 6,
+    "code_block_count": 0,
+    "source_text_sha256": "4f1b9a52d119098fb4b2e2045289fd3c5d735498f577c95d42855f8ec99edcb3",
+    "output_text_sha256": "4f1b9a52d119098fb4b2e2045289fd3c5d735498f577c95d42855f8ec99edcb3",
+    "latex_sha256": "bf2150f2eb04119a92c29ff0a45259a98810c92b00f7431d93b2fad294bbd4f1",
+    "body_sha256": "5db9203d9842958c3f25861cf4eb4d8297a48644fe1e3b1f3f9b254f180cce5d",
+    "converter_version": 1,
+    "markdown_sha256": "50311409e7d510a6ee043d871d04da12240432932dd60b97da2a9f7fa3660b49"
+  },
+  "fetched_at": "2026-09-14T12:30:26+00:00",
+  "source_snapshot_sha256": "86562861b2a0a2d37f8c6de3873ba6f301895ddde8dff084a3040c83d822154d",
+  "images": {},
+  "local_only": true
+}

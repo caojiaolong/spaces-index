@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "4637",
+    "title": "【随拍】门口的广州塔",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/4637",
+    "date": "2017-10-13",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 0,
+    "display_formula_count": 0,
+    "image_count": 2,
+    "heading_count": 0,
+    "code_block_count": 0,
+    "source_text_sha256": "0d3a20fed2061fe4c39a6d025c66f8e36d33c5724f9840d150a6437de97cf7e5",
+    "output_text_sha256": "0d3a20fed2061fe4c39a6d025c66f8e36d33c5724f9840d150a6437de97cf7e5",
+    "latex_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "body_sha256": "a257bdf946fca4562490f07ab7a005c913929cd6d41a0ca3d1ba14fcf491fcb6",
+    "converter_version": 1,
+    "markdown_sha256": "3d17786106e0cd59338bb124d72bc2601b6705227b854aaa610c4d2d815f57a8"
+  },
+  "fetched_at": "2026-09-14T13:30:26+00:00",
+  "source_snapshot_sha256": "fb0ef560e17dd3e545fed58f9efc893b637625e1521554a84beccfaffd90d6a2",
+  "images": {},
+  "local_only": true
+}

@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "27",
+    "title": "两千美元的汽车----世界最便宜汽车在印度上路!",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/27",
+    "date": "2009-07-20",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 0,
+    "display_formula_count": 0,
+    "image_count": 1,
+    "heading_count": 0,
+    "code_block_count": 0,
+    "source_text_sha256": "6b7660f2fb2d7fd815bc8009922ca9a46260117df58a6dc18a585c45cdbd55be",
+    "output_text_sha256": "6b7660f2fb2d7fd815bc8009922ca9a46260117df58a6dc18a585c45cdbd55be",
+    "latex_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "body_sha256": "642dd56aa355cf631cc3bfa64dc616ba4f566dd730c318a14d6514765359b09a",
+    "converter_version": 1,
+    "markdown_sha256": "bb9053bbe4db423737f58cb0b3c2fadf37ad0f68b5385360e7dfd125d7713cd7"
+  },
+  "fetched_at": "2026-09-14T15:04:55+00:00",
+  "source_snapshot_sha256": "c33cabdf24817eb70f6731c4e20dea0401b14ce8b3c8473234491d025e17d5bf",
+  "images": {},
+  "local_only": true
+}

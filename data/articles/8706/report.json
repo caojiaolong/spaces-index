@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "8706",
+    "title": "让人惊叹的Johnson-Lindenstrauss引理：应用篇",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/8706",
+    "date": "2021-09-24",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 67,
+    "display_formula_count": 4,
+    "image_count": 0,
+    "heading_count": 6,
+    "code_block_count": 0,
+    "source_text_sha256": "0566135d26f5b36fa908c50dbef10890661e40978a02fb91201e97c25619adaa",
+    "output_text_sha256": "0566135d26f5b36fa908c50dbef10890661e40978a02fb91201e97c25619adaa",
+    "latex_sha256": "798f6bd91e3ca6dda84f79fe513c78e64a6162b205521ff702475925a18baa8f",
+    "body_sha256": "29838750c902dacf2b8360d068a20fdfd0d4cb5cf2dd3c0b65b49db60af08a43",
+    "converter_version": 1,
+    "markdown_sha256": "51ecc82bc42d8643977a71996ae9c8237c498c7bc74d62561cdb116db39efbef"
+  },
+  "fetched_at": "2026-09-14T13:04:07+00:00",
+  "source_snapshot_sha256": "fb0b0f7086d12e7dc66e58144fdaf06e5ce1763a6094bb450a849330235905a5",
+  "images": {},
+  "local_only": true
+}

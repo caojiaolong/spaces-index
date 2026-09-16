@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "117",
+    "title": "【NASA每日一图】微波背景辐射双极化",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/117",
+    "date": "2009-09-06",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 0,
+    "display_formula_count": 0,
+    "image_count": 1,
+    "heading_count": 0,
+    "code_block_count": 0,
+    "source_text_sha256": "7d14553dc4620cfe22a2cfb5d03de79e35357c2ef51c2c34b9b5415e292be796",
+    "output_text_sha256": "7d14553dc4620cfe22a2cfb5d03de79e35357c2ef51c2c34b9b5415e292be796",
+    "latex_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "body_sha256": "3d2b2997cd5bc5fce4b99ec68821cb04cc3724131a7dd1bf8a6a13f661151625",
+    "converter_version": 1,
+    "markdown_sha256": "f576010856d7f1bc62367001bb3bbaa275f400bf94ebb01d96d929057e42ad04"
+  },
+  "fetched_at": "2026-09-14T14:54:01+00:00",
+  "source_snapshot_sha256": "cf6432c9ef5826515085614ca2a05addcc8f3eba99b4b412134c9d15eedeb071",
+  "images": {},
+  "local_only": true
+}

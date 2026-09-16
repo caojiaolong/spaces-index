@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "344",
+    "title": "【龟猫记】家里多了几只小动物",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/344",
+    "date": "2010-01-23",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 0,
+    "display_formula_count": 0,
+    "image_count": 8,
+    "heading_count": 0,
+    "code_block_count": 0,
+    "source_text_sha256": "32682cf296d5b7460b92b97b5171b6a0b0cd8cb579d5bd5daf134fccd44522d6",
+    "output_text_sha256": "32682cf296d5b7460b92b97b5171b6a0b0cd8cb579d5bd5daf134fccd44522d6",
+    "latex_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "body_sha256": "e20fea91d8291bcd10d07eb7fbf7139936482aa21777c5d91b5cf0bcd98cc074",
+    "converter_version": 1,
+    "markdown_sha256": "3b084f67aa9672fee5f751f7ca924a7d84245dd5cca3cb296b1cda5fd20ede94"
+  },
+  "fetched_at": "2026-09-14T14:43:37+00:00",
+  "source_snapshot_sha256": "c7cfb3dce5f8890fbc4f7cd40d35378702dfbbb292ae0304885803d8d3e5ec4c",
+  "images": {},
+  "local_only": true
+}

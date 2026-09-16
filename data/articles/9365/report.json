@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "9365",
+    "title": "智能家居之小爱同学控制极米投影仪的简单方案",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/9365",
+    "date": "2022-12-05",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 0,
+    "display_formula_count": 0,
+    "image_count": 2,
+    "heading_count": 4,
+    "code_block_count": 0,
+    "source_text_sha256": "02e3907738f0346dfef01122b947422b9903889551cd37f83c3f3e1361f18ef2",
+    "output_text_sha256": "02e3907738f0346dfef01122b947422b9903889551cd37f83c3f3e1361f18ef2",
+    "latex_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "body_sha256": "9672e06ead548b3a2c269df1b7498ee6f6e9220d1e6e9ab8c9adae54fa1ad88d",
+    "converter_version": 1,
+    "markdown_sha256": "b1666e02e52706b3cf2a2928eb7baa1d9cc12d26633b9c66c5ebab1a4fa8379a"
+  },
+  "fetched_at": "2026-09-14T12:56:48+00:00",
+  "source_snapshot_sha256": "82a0443ce16858596841d418313c3e33ba0552f3057cd41fb3f257f857ebc423",
+  "images": {},
+  "local_only": true
+}

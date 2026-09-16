@@ -1,0 +1,17 @@
+{
+  "metadata": {
+    "id": "11854",
+    "title": "除了交叉熵，LM Loss还有什么选择？",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/11854",
+    "date": "2026-08-09",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "fetched_at": "2026-09-14T12:29:57+00:00",
+  "source_snapshot_sha256": "61e8cca378caa1550f8178267e9e902a93381a7ff3904f9ac96ab43ad4b852e7",
+  "validators": {
+    "etag": null,
+    "last_modified": null
+  }
+}

@@ -1,0 +1,98 @@
+<div class="PostContent" id="PostContent">
+<p>我们知道，线性回归是比较简单的问题，它存在解析解，而它的变体逻辑回归（Logistic Regression）却没有解析解，这不能不说是一个遗憾。因为逻辑回归虽然也叫“回归”，但它实际上是用于分类问题的，而对于很多读者来说分类比回归更加常见。准确来说，我们说逻辑回归没有解析解，说的是“最大似然估计下逻辑回归没有解析解”。那么，这是否意味着，如果我们不用最大似然估计，是否能找到一个可用的解析解呢？</p><p></p><div class="pic-container"><div class="typecho-caption aligncenter" style="max-width: 480px"><div style="margin: 5px"><a href="/usr/uploads/2021/07/1189736421.png" target="_blank" title="点击查看原图"><img alt="逻辑回归示意图" src="/usr/uploads/2021/07/1189736421.png" style="max-width: 100%"/></a></div><p class="typecho-caption-text">逻辑回归示意图</p></div></div><p>本文将会从非最大似然的角度，推导逻辑回归的一个解析解，简单的实验表明它效果不逊色于梯度下降求出来的最大似然解。此外，这个解析解还易于推广到单层Softmax多分类模型。</p><h2 id="线性回归">线性回归</h2><p>我们先来回顾一下线性回归。假设训练数据为$\{(\boldsymbol{x}_i,\boldsymbol{y}_i)\}_{i=1}^N$，其中$\boldsymbol{x}\in\mathbb{R}^n,\boldsymbol{y}\in\mathbb{R}^m$，为了便于跟代码实现对齐，这里默认情况下向量都是<u>行向量</u>。线性回归假设$\boldsymbol{x},\boldsymbol{y}$满足线性关系$\boldsymbol{y}=\boldsymbol{x}\boldsymbol{W}+\boldsymbol{b}$，这里$\boldsymbol{W}\in\mathbb{R}^{n\times m},\boldsymbol{b}\in\mathbb{R}^m$，然后通过最小化下述均方误差来估计它们<br/>
+\begin{equation}\frac{1}{N}\sum_{i=1}^N \Vert\boldsymbol{y}_i-\boldsymbol{x}_i\boldsymbol{W}-\boldsymbol{b}\Vert^2\label{eq:loss}\end{equation}<br/>
+这个目标直接展开求导就行了，只是一个二次函数的最小值问题，所以有解析解。</p><h3 id="概率视角">概率视角</h3><p>从概率分布的角度来看，均方误差意味着我们假设了$p(\boldsymbol{y}|\boldsymbol{x})$是均值为$\boldsymbol{\mu}_{y|x}=\boldsymbol{x}\boldsymbol{W}+\boldsymbol{b}$的正态分布。现在，我们来做一个更强的假设：</p><blockquote class="cite"><div>假设联合分布$p(\boldsymbol{x},\boldsymbol{y})$是正态分布。</div></blockquote><p>在这个假设之下，我们可以直接写出对应的条件分布：<br/>
+\begin{equation}\begin{aligned}<br/>
+p(\boldsymbol{y}|\boldsymbol{x}) =&amp;\, \mathcal{N}(\boldsymbol{y};\boldsymbol{\mu}_{y|x},\boldsymbol{\Sigma}_{y|x})\\<br/>
+\boldsymbol{\mu}_{y|x} =&amp;\, \boldsymbol{\mu}_y + (\boldsymbol{x}-\boldsymbol{\mu}_x)\boldsymbol{\Sigma}_{xx}^{-1}\boldsymbol{\Sigma}_{xy}\\<br/>
+\boldsymbol{\Sigma}_{y|x} =&amp;\, \boldsymbol{\Sigma}_{yy} - \boldsymbol{\Sigma}_{yx}\boldsymbol{\Sigma}_{xx}^{-1}\boldsymbol{\Sigma}_{xy}<br/>
+\end{aligned}\end{equation}<br/>
+这里的$\boldsymbol{\mu}_x,\boldsymbol{\mu}_y$是$\boldsymbol{x},\boldsymbol{y}$的均值向量，$\begin{pmatrix}\boldsymbol{\Sigma}_{xx} &amp; \boldsymbol{\Sigma}_{xy} \\ \boldsymbol{\Sigma}_{yx} &amp; \boldsymbol{\Sigma}_{yy}\end{pmatrix}$是$\boldsymbol{x},\boldsymbol{y}$的协方差矩阵。正态分布的条件分布形式可以直接在<a href="https://en.wikipedia.org/wiki/Multivariate_normal_distribution#Conditional_distributions" target="_blank">维基百科</a>找到，其证明可以参考<a href="https://stats.stackexchange.com/questions/30588/deriving-the-conditional-distributions-of-a-multivariate-normal-distribution" target="_blank">StackExchange</a>或相关概率统计书籍。</p><p>现在对照$\boldsymbol{\mu}_{y|x}=\boldsymbol{x}\boldsymbol{W}+\boldsymbol{b}$，我们可以得到<br/>
+\begin{equation}\boldsymbol{W} = \boldsymbol{\Sigma}_{xx}^{-1}\boldsymbol{\Sigma}_{xy}, \quad \boldsymbol{b} = \boldsymbol{\mu}_y - \boldsymbol{\mu}_x\boldsymbol{\Sigma}_{xx}^{-1}\boldsymbol{\Sigma}_{xy}\end{equation}<br/>
+这其实就是线性回归的解析解。</p><h3 id="思考分析">思考分析</h3><p>让我们捋一捋上述过程。首先，默认情况下，线性回归只是做了条件分布$p(\boldsymbol{y}|\boldsymbol{x})$的假设，通过最小二乘法我们就可以获得线性回归的解析解，这是常规的线性回归的介绍过程；然后，在上面中，我们做了一个更加强的假设“联合分布$p(\boldsymbol{x},\boldsymbol{y})$是正态分布”，但是最终依然获得了一样的解析解。</p><p>为什么更加强的假设却获得了一样的结果呢？事实上，从损失函数$\eqref{eq:loss}$就可以看到，它关于$\boldsymbol{y}$是二次的，关于$\boldsymbol{x}$同样是二次的，这意味着它顶多用到关于$\boldsymbol{x},\boldsymbol{y}$的二阶矩信息，因此作出联合分布是正态分布的假设，并不会改变最终结果，因为正态分布已经保留了所有不超过二阶的矩信息（均值和协方差）。</p><p>进一步地，我们可以想象到，任何线性模型（线性回归、逻辑回归、单层神经网络等）主要用到的数据统计量，应该也都是不超过二阶的矩。因此，在处理线性模型时，我们可以根据具体情况适当地作出正态分布的假设，理论上来说，这可以获得一个等价结果，或者一个足够好的近似结果。</p><h2 id="逻辑回归">逻辑回归</h2><p>利用上述思路，我们就可以给出逻辑回归的一个解析解，该结果笔者首先在<a href="https://towardsdatascience.com/easy-logistic-regression-with-an-analytical-solution-eb4589c2cd2d" target="_blank">《Easy Logistic Regression with an Analytical Solution》</a>看到，看后颇有启发，特与大家分享。</p><p>假设训练数据为$\{(\boldsymbol{x}_i,y_i)\}_{i=1}^N$，其中$\boldsymbol{x}\in\mathbb{R}^n,y\in\{0,1\}$，这意味着它是一个二分类数据集，建立概率模型<br/>
+\begin{equation}p(y|\boldsymbol{x}) = \left\{\begin{aligned}\sigma\left(\boldsymbol{x}\boldsymbol{w}^{\top}+b\right),\quad (y = 1)\\ 1 - \sigma\left(\boldsymbol{x}\boldsymbol{w}^{\top}+b\right),\quad (y = 0)\end{aligned}\right.\end{equation}<br/>
+这里$\sigma(t)=1/(1+e^{-t})$。$\boldsymbol{w},b$的常规估计方式是最大似然，也就是最小化下述loss：<br/>
+\begin{equation}-\frac{1}{N}\sum_{i=1}^N \ln p(y_i|\boldsymbol{x}_i)\end{equation}<br/>
+我们没法计算出它的解析解。然而，如果不走最大似然这条路，另外设计求解路线，是有可能得到解析解的。</p><h3 id="别出心裁">别出心裁</h3><p>首先，不难验证对于逻辑回归模型，我们有：<br/>
+\begin{equation}\frac{p(1|\boldsymbol{x})}{p(0|\boldsymbol{x})} = \exp\left(\boldsymbol{x}\boldsymbol{w}^{\top}+b\right) \quad\Leftrightarrow\quad \ln \frac{p(1|\boldsymbol{x})}{p(0|\boldsymbol{x})} = \boldsymbol{x}\boldsymbol{w}^{\top}+b\label{eq:log}\end{equation}<br/>
+这也就是说，逻辑回归相当于以$\ln \frac{p(1|\boldsymbol{x})}{p(0|\boldsymbol{x})}$为输出的线性回归模型。然而$\ln \frac{p(1|\boldsymbol{x})}{p(0|\boldsymbol{x})}$的直接估计并不容易，我们利用贝叶斯公式：<br/>
+\begin{equation}p(y|\boldsymbol{x}) = \frac{p(\boldsymbol{x}|y)p(y)}{p(\boldsymbol{x})} \quad\Leftrightarrow\quad \frac{p(1|\boldsymbol{x})}{p(0|\boldsymbol{x})} = \frac{p(\boldsymbol{x}|1)p_1}{p(\boldsymbol{x}|0)p_0}\label{eq:bys}\end{equation}<br/>
+这里的$p_1,p_0$分别是正负两个类别的概率，这个容易估计。$p(\boldsymbol{x}|1),p(\boldsymbol{x}|0)$自然就是正负样本所满足的分布了，现在我们对它们作正态分布假设：</p><blockquote class="cite"><div>假设$p(\boldsymbol{x}|1),p(\boldsymbol{x}|0)$是具有同样协方差矩阵的正态分布。</div></blockquote><p>这里“同样协方差矩阵”读者可能会觉得莫名其妙，这一点我们后面再讨论。在这个假设之下，记<br/>
+\begin{equation}p(\boldsymbol{x}|1) = \mathcal{N}(\boldsymbol{x};\boldsymbol{\mu}_1,\boldsymbol{\Sigma}),\quad p(\boldsymbol{x}|0) = \mathcal{N}(\boldsymbol{x};\boldsymbol{\mu}_0,\boldsymbol{\Sigma})\end{equation}<br/>
+其中$\boldsymbol{\mu}_1,\boldsymbol{\mu}_0$分别就是正负样本的均值向量，$\boldsymbol{\Sigma}$可以用全体样本的协方差矩阵来估计。回顾正态分布的概率密度表达式：<br/>
+\begin{equation}\frac{1}{\sqrt{(2\pi)^n \det(\boldsymbol{\Sigma})}}\exp\left\{-\frac{1}{2}(\boldsymbol{x}-\boldsymbol{\mu})\boldsymbol{\Sigma}^{-1}(\boldsymbol{x}-\boldsymbol{\mu})^{\top}\right\}\end{equation}<br/>
+代入式$\eqref{eq:bys}$后展开化简，我们发现<u>二次项刚好抵消</u>，于是<br/>
+\begin{equation}\ln\frac{p(1|\boldsymbol{x})}{p(0|\boldsymbol{x})} = \ln\frac{p(\boldsymbol{x}|1)p_1}{p(\boldsymbol{x}|0)p_0} = \boldsymbol{x}\boldsymbol{\Sigma}^{-1}(\boldsymbol{\mu}_1 - \boldsymbol{\mu}_0)^{\top} + \frac{1}{2}\left(\boldsymbol{\mu}_0\boldsymbol{\Sigma}^{-1}\boldsymbol{\mu}_0^{\top} - \boldsymbol{\mu}_1\boldsymbol{\Sigma}^{-1}\boldsymbol{\mu}_1^{\top}\right) + \ln\frac{p_1}{p_0}\label{eq:rate}\end{equation}<br/>
+对比式$\eqref{eq:log}$后我们得到：<br/>
+\begin{equation}\begin{aligned}<br/>
+\boldsymbol{w} =&amp;\, (\boldsymbol{\mu}_1 - \boldsymbol{\mu}_0)\boldsymbol{\Sigma}^{-1}\\<br/>
+b =&amp;\, \frac{1}{2}\left(\boldsymbol{\mu}_0\boldsymbol{\Sigma}^{-1}\boldsymbol{\mu}_0^{\top} - \boldsymbol{\mu}_1\boldsymbol{\Sigma}^{-1}\boldsymbol{\mu}_1^{\top}\right) + \ln\frac{p_1}{p_0}<br/>
+\end{aligned}\label{eq:sol}\end{equation}<br/>
+这就是逻辑回归的一个解析解。当然，这也不算特别新的内容，它的思路跟“<a href="https://en.wikipedia.org/wiki/Linear_discriminant_analysis" target="_blank">线性判别分析（Linear Discriminant Analysis）</a>”其实是很一致的。</p><h3 id="思考分析">思考分析</h3><p>目前，对于这个解，读者最有疑虑的可能是“同样协方差矩阵”这个假设是否过强了。从技巧上来看，这个假设是为了让$\ln\frac{p(\boldsymbol{x}|1)}{p(\boldsymbol{x}|0)}$的二次项正好抵消，从而只剩下一次项而直接得到逻辑回归的解析解；那么从理论上来看，这个假设有没有什么必然性呢？事实上，我们可以认为，逻辑回归本身就（近似地）隐含了“同样协方差矩阵”这一假设。</p><p>怎么理解这句话呢？首先，对于逻辑回归模型来说，式$\eqref{eq:log}$是自然成立的，而贝叶斯公式也是恒成立的，所以结论就是$\ln\frac{p(\boldsymbol{x}|1)}{p(\boldsymbol{x}|0)}$必然只有一次项和常数项。而线性回归的例子已经告诉我们，对线性模型的数据分布做正态假设一般是不损失什么信息的，所以我们假设$p(\boldsymbol{x}|1),p(\boldsymbol{x}|0)$为正态分布（一定程度上）也是合理的。而假设它们为正态分布后，如果要使得结果没有二次项，那么协方差矩阵必然要一致。</p><p>也就是说，当你决定<u>使用逻辑回归模型</u>和<u>接受正态假设</u>的那一刻起，就做出了“正负样本数据具有同样协方差矩阵”这个假设了～</p><h3 id="多分类器">多分类器</h3><p>上述关于逻辑回归的解析解，还可以很方便地推广到“<font color="red">全连接+Softmax</font>”的多分类场景中，该场景假设类别$i$的概率为<br/>
+\begin{equation}p(i|\boldsymbol{x}) = \frac{\exp\left(\boldsymbol{x}\boldsymbol{w}_i^{\top}+b_i\right)}{\sum\limits_{i=1}^k \exp\left(\boldsymbol{x}\boldsymbol{w}_i^{\top}+b_i\right)}\end{equation}<br/>
+基于同样的推理和假设，我们可以得到类似式$\eqref{eq:log}$的结果：<br/>
+\begin{equation}\ln \frac{p(j|\boldsymbol{x})}{p(i|\boldsymbol{x})} = \boldsymbol{x}(\boldsymbol{w}_j - \boldsymbol{w}_i)^{\top}+(b_j - b_i)\end{equation}<br/>
+以及类似式$\eqref{eq:rate}$的结果：<br/>
+\begin{equation}\ln\frac{p(j|\boldsymbol{x})}{p(i|\boldsymbol{x})} = \boldsymbol{x}\boldsymbol{\Sigma}^{-1}(\boldsymbol{\mu}_j - \boldsymbol{\mu}_i)^{\top} + \frac{1}{2}\left(\boldsymbol{\mu}_i\boldsymbol{\Sigma}^{-1}\boldsymbol{\mu}_i^{\top} - \boldsymbol{\mu}_j\boldsymbol{\Sigma}^{-1}\boldsymbol{\mu}_j^{\top}\right) + \ln\frac{p_j}{p_i}\end{equation}<br/>
+对比之下，我们可以发现一组解是：<br/>
+\begin{equation}\begin{aligned}<br/>
+\boldsymbol{w}_i =&amp;\, \boldsymbol{\mu}_i\boldsymbol{\Sigma}^{-1}\\<br/>
+b_i =&amp;\, \ln p_i - \frac{1}{2}\boldsymbol{\mu}_i\boldsymbol{\Sigma}^{-1}\boldsymbol{\mu}_i^{\top}<br/>
+\end{aligned}\end{equation}</p><h3 id="参数估计">参数估计</h3><p>理论部分的最后，我们来讨论怎么估计模型的参数。可以看到$\boldsymbol{w}_i,b_i$是$p_i$、$\boldsymbol{\mu}_i$和$\boldsymbol{\Sigma}$的函数，所以本质上是这三者的估计。</p><p>前面已经提到，$p_i$比较简单，直接用每个类的频率代替就行；$\boldsymbol{\mu}_i$也不难，就是每个类的均值向量。所以难度在于估计$\boldsymbol{\Sigma}$。根据我们前面的假设，全体数据的分布为<br/>
+\begin{equation}\tilde{p}(\boldsymbol{x}) = \sum_{i=1}^k p_i \mathcal{N}(\boldsymbol{x};\boldsymbol{\mu}_i,\boldsymbol{\Sigma})\end{equation}<br/>
+两端乘以$\boldsymbol{x}^{\top}\boldsymbol{x}$后积分，得到<br/>
+\begin{equation}\tilde{\boldsymbol{\Sigma}}+\tilde{\boldsymbol{\mu}}^{\top} \tilde{\boldsymbol{\mu}} = \sum_{i=1}^k p_i \left(\boldsymbol{\Sigma}+\boldsymbol{\mu}_i^{\top} \boldsymbol{\mu}_i\right) = \boldsymbol{\Sigma} + \sum_{i=1}^k p_i\, \boldsymbol{\mu}_i^{\top} \boldsymbol{\mu}_i\end{equation}<br/>
+其中$\tilde{\boldsymbol{\mu}},\tilde{\boldsymbol{\Sigma}}$是全体数据的均值向量和协方差矩阵。因此我们有估计<br/>
+\begin{equation}\boldsymbol{\Sigma} = \tilde{\boldsymbol{\Sigma}}+\tilde{\boldsymbol{\mu}}^{\top} \tilde{\boldsymbol{\mu}} - \sum_{i=1}^k p_i\, \boldsymbol{\mu}_i^{\top} \boldsymbol{\mu}_i\end{equation}</p><p>特别地，建议在估计之前，我们先对原始数据做一个白化（参考<a href="/archives/8069#%E6%A0%87%E5%87%86%E5%8C%96%E5%8D%8F%E6%96%B9%E5%B7%AE%E7%9F%A9%E9%98%B5" target="_blank">《你可能不需要BERT-flow：一个线性变换媲美BERT-flow》</a>），使全体数据的均值为0、协方差为单位阵，然后再进行估计。此时<br/>
+\begin{equation}\boldsymbol{\Sigma} = \boldsymbol{I} - \sum_{i=1}^k p_i\, \boldsymbol{\mu}_i^{\top} \boldsymbol{\mu}_i\end{equation}<br/>
+理论上来说，先白化再用估计，跟直接估计的结果是完全一样的。然而，<u>对于高维数据来说，白化后在数值计算上会稳定很多</u>，所以实际使用时，都推荐先白化后再估计的方式。</p><h2 id="实验评估">实验评估</h2><p>那么，上面推导的解析解可用性如何呢？能不能比得上梯度下降求出来的解呢？这里做了几个文本方面的实验，都是用<a href="/archives/8541" target="_blank">RoFormer-Sim-FT</a>来抽取固定的句向量特征，然后后面接一个全连接层分类，比较用梯度下降求出来的解和上述解析解的效果差异。实验代码开源如下：</p><blockquote class="cite"><div><strong>Github：<a href="https://github.com/bojone/analytical-classification" target="_blank">https://github.com/bojone/analytical-classification</a></strong></div></blockquote><h3 id="全量样本">全量样本</h3><p>评测包括四个分类任务：情感分类（<a href="https://github.com/bojone/bert4keras/blob/master/examples/datasets/sentiment.zip" target="_blank">SENTIMENT</a>）、长文本分类（<a href="https://www.cluebenchmarks.com/introduce.html" target="_blank">IFLYTEK</a>）、短新闻分类（<a href="https://www.cluebenchmarks.com/introduce.html" target="_blank">TNEWS</a>）、电商主题分类（<a href="https://github.com/SophonPlus/ChineseNlpCorpus/blob/master/datasets/online_shopping_10_cats/intro.ipynb" target="_blank">SHOPPING</a>），大致情况如下：<br/>
+\begin{array}{c|cccc}<br/>
+\hline<br/>
+&amp; \text{总类别数} &amp; \text{训练样本数} &amp; \text{验证样本数} &amp; \text{测试样本数} \\<br/>
+\hline<br/>
+\text{SENTIMENT} &amp; 2 &amp; 16883 &amp; 2111 &amp; 2111 \\<br/>
+\text{IFLYTEK} &amp; 119 &amp; 12133 &amp; 2599 &amp; \text{-}\\<br/>
+\text{TNEWS} &amp; 15 &amp; 53360 &amp; 10000 &amp; \text{-}\\<br/>
+\text{SHOPPING} &amp; 10 &amp; 47079 &amp; 15694 &amp; \text{-}\\<br/>
+\hline<br/>
+\end{array}</p><p>实验的评测指标都是准确率，全量训练样本下效果如下：<br/>
+\begin{array}{c|ccc}<br/>
+\hline<br/>
+&amp; \text{训练准确率} &amp; \text{验证准确率} &amp; \text{测试准确率} \\<br/>
+\hline<br/>
+\text{SENTIMENT-梯度下降} &amp; 92.26\% &amp; 91.14\% &amp; 91.14\% \\<br/>
+\text{SENTIMENT-解析解} &amp; 91.79\% &amp; 90.81\% &amp; 91.57\% \\<br/>
+\hline<br/>
+\text{IFLYTEK-梯度下降} &amp; 93.43\% &amp; 51.14\% &amp; \text{-} \\<br/>
+\text{IFLYTEK-解析解} &amp; 71.70\% &amp; 56.44\% &amp; \text{-} \\<br/>
+\hline<br/>
+\text{TNEWS-梯度下降} &amp; 59.62\% &amp; 53.35\% &amp; \text{-} \\<br/>
+\text{TNEWS-解析解} &amp; 56.12\% &amp; 54.20\% &amp; \text{-} \\<br/>
+\hline<br/>
+\text{SHOPPING-梯度下降} &amp; 91.63\% &amp; 86.98\% &amp; \text{-} \\<br/>
+\text{SHOPPING-解析解} &amp; 87.89\% &amp; 86.38\% &amp; \text{-} \\<br/>
+\hline<br/>
+\end{array}</p><h3 id="小量样本">小量样本</h3><p>从上述表格可以看出，就训练集的效果而言，解析解通常是不如梯度下降的，但是它在验证集和测试集的效果都接近甚至超越梯度下降的表现，总的来说，解析解的训练集和验证集效果差距更小，这意味着解析解可能是一个泛化能力比较好的解，它可能更适合于数据量比较小、训练集和验证集分布不一致等场景。</p><p>为了验证这个猜测，我们将每个数据集的训练集都只保留1000条数据，然后继续进行实验：<br/>
+\begin{array}{c|ccc}<br/>
+\hline<br/>
+&amp; \text{训练准确率} &amp; \text{验证准确率} &amp; \text{测试准确率} \\<br/>
+\hline<br/>
+\text{SENTIMENT-1K-梯度下降} &amp; 99.90\% &amp; 66.08\% &amp; 66.79\% \\<br/>
+\text{SENTIMENT-1K-解析解} &amp; 100.00\% &amp; 72.67\% &amp; 73.24\% \\<br/>
+\hline<br/>
+\text{IFLYTEK-1K-梯度下降} &amp; 99.47\% &amp; 15.43\% &amp; \text{-} \\<br/>
+\text{IFLYTEK-1K-解析解} &amp; 99.47\% &amp; 15.70\% &amp; \text{-} \\<br/>
+\hline<br/>
+\text{TNEWS-1K-梯度下降} &amp; 100.00\% &amp; 22.47\% &amp; \text{-} \\<br/>
+\text{TNEWS-1K-解析解} &amp; 100.00\% &amp; 26.74\% &amp; \text{-} \\<br/>
+\hline<br/>
+\text{SHOPPING-1K-梯度下降} &amp; 100.00\% &amp; 49.82\% &amp; \text{-} \\<br/>
+\text{SHOPPING-1K-解析解} &amp; 100.00\% &amp; 65.49\% &amp; \text{-} \\<br/>
+\hline<br/>
+\end{array}</p><p>可以看到，训练数据变少的情况下，训练集的差距也变小了，但是解析解在验证集上的效果全面超过了梯度下降，这进一步显示出解析解在小样本场景下良好的泛化性能。</p><h3 id="综合评述">综合评述</h3><p>其实上述结论也不难理解。大家都是线性模型的情况下，解析解相比于梯度下降多了一条“每个类的样本服从具有同样协方差矩阵的正态分布”的假设。当数据很多的情况下，我们对每个类的分布估计越发准确，此时该假设偏离程度越严重，从而没有自适应训练的梯度下降好；相反，当数据很少的情况下，每个类的分布本身就难以估计，此时该假设反而是一个有用的先验信息，有助于模型“由点到面”地泛化，而梯度下降反而由于缺乏先验而泛化能力不足。</p><p>换句话说，数据少的情况下，梯度下降背完几个样本就完事了，没有“触类旁通”，而解析解相当于通过额外的假设“造”了更多的样本出来让模型背，从而学到的东西更多了；数据多的情况下，梯度下降背得多，从而“熟能生巧”，而解析解还在按照自己的假设来“造”样本，这时候造出来的样本还不如真实的样本，从而效果可能有所下降。</p><p>那么，解析解有什么提升空间吗？比较直接的思路是，我们想办法对$\ln \frac{p(j|\boldsymbol{x})}{p(i|\boldsymbol{x})}$做更精细的估计，然后转化为线性回归问题来估计参数。至于怎么更好地估计$\ln \frac{p(j|\boldsymbol{x})}{p(i|\boldsymbol{x})}$，思路也不少，比如设为协方差不一致的正态分布或者干脆用核密度估计等，这就留给大家自由发挥了。</p><h2 id="本文小结">本文小结</h2><p>本文介绍了逻辑回归的一个解析解，并且将它推广到了单层Softmax分类的场景。实验显示该解析解相比梯度下降有更好的泛化能力，尤其是在小样本场景通常还有更好的效果。</p>
+
+
+
+
+
+</div>

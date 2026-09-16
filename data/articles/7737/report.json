@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "7737",
+    "title": "殊途同归的策略梯度与零阶优化",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/7737",
+    "date": "2020-09-15",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 128,
+    "display_formula_count": 23,
+    "image_count": 1,
+    "heading_count": 15,
+    "code_block_count": 0,
+    "source_text_sha256": "9f2c58943ffca84e2e5f2a9f81d1c09f48932e17316d211ecf6f6cc65f2bdf34",
+    "output_text_sha256": "9f2c58943ffca84e2e5f2a9f81d1c09f48932e17316d211ecf6f6cc65f2bdf34",
+    "latex_sha256": "d90408d5cde8ebb736846dc8f659bd04210d7a2e507f8edab619541dc1547751",
+    "body_sha256": "8589afff1b3612cddd746ede7b1f920394caf2d556b3868265378bf85ba0d316",
+    "converter_version": 1,
+    "markdown_sha256": "022270851a33f395504ee3cb79e0d835212d2fdb7c74a55ec4f8c4aab7861609"
+  },
+  "fetched_at": "2026-09-14T13:11:21+00:00",
+  "source_snapshot_sha256": "294dad0bc6a57b0f4e8c717cc154ce6fa427d24d10595ad936308cdfb5eb0697",
+  "images": {},
+  "local_only": true
+}

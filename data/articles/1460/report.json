@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "1460",
+    "title": "对称多项式不等式的“物理证明”",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/1460",
+    "date": "2011-08-13",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 56,
+    "display_formula_count": 10,
+    "image_count": 0,
+    "heading_count": 5,
+    "code_block_count": 0,
+    "source_text_sha256": "92e7553d208d32462cf56be32343e9561b571e8b7bb54ac53ceef2f0aaea4a8e",
+    "output_text_sha256": "92e7553d208d32462cf56be32343e9561b571e8b7bb54ac53ceef2f0aaea4a8e",
+    "latex_sha256": "edb46e3f2584f83cc814e9924a61cfd83cc8f9f1ef47acbb1295138b0cf9bcdf",
+    "body_sha256": "8a054cbc3f42b7a79bf6c856e9ef39837cb4dcc52a4b71a23f0b311ec40d2ea8",
+    "converter_version": 1,
+    "markdown_sha256": "35cd5c5c605a26af6e3cd5a2cef991341e07b75f23d89c142a8e35ce06b19d30"
+  },
+  "fetched_at": "2026-09-14T14:18:04+00:00",
+  "source_snapshot_sha256": "9eab92a4c18b7dc7fc0eb33d7fdcbb4e64002d3a9afceb2da2dcc03c60b05089",
+  "images": {},
+  "local_only": true
+}

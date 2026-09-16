@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "1190",
+    "title": "新春快乐！2011年2月重要天象",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/1190",
+    "date": "2011-02-01",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 0,
+    "display_formula_count": 0,
+    "image_count": 4,
+    "heading_count": 0,
+    "code_block_count": 0,
+    "source_text_sha256": "56c5f46b9ba31d898dcc2d712d953185bf44ff9afefe2265c0ff0444ac6b048c",
+    "output_text_sha256": "56c5f46b9ba31d898dcc2d712d953185bf44ff9afefe2265c0ff0444ac6b048c",
+    "latex_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "body_sha256": "1da6678e8ee05b01fc52d3b8dd1fed2b419c4a0b4ac9c19f09c4c16d0e60e350",
+    "converter_version": 1,
+    "markdown_sha256": "e619bdb5c6da529e5594707d0de5eea1e2d8d2ebf68dde78cb2eef2f260dfbac"
+  },
+  "fetched_at": "2026-09-14T14:24:57+00:00",
+  "source_snapshot_sha256": "e4e9877944d33884db1f3280bfcd61d387648b3c7731eaab21e9938f9cb08e0f",
+  "images": {},
+  "local_only": true
+}

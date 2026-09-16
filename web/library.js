@@ -216,9 +216,10 @@ function updateSeriesProgress(root, series) {
   bar.max = Math.max(1, state.total);
   bar.value = state.read;
   bar.setAttribute("aria-label", `${series.name}：已读 ${state.read} 篇，共 ${state.total} 篇`);
-  link.href = seriesChapterHref(series, state.next);
-  link.textContent = !state.next ? "重温系列 →" : state.read ? "继续下一篇 →" : "从第一篇开始 →";
-  link.setAttribute("aria-label", state.next ? `${link.textContent} ${state.next.title}` : `重温 ${series.name}`);
+  const text = !state.next ? "重温系列 →" : getPostProgress(state.next.id) > 0 ? "继续阅读 →" : state.read ? "继续下一篇 →" : "从第一篇开始 →";
+  link.replaceWith(state.next
+    ? makePostLink(state.next, null, { className: "continue-link", text, label: `${text} ${state.next.title}` })
+    : createElement("a", { className: "continue-link", href: seriesChapterHref(series), text, attrs: { "aria-label": `重温 ${series.name}` } }));
 }
 
 function makeSeriesProgress(series) {
@@ -250,15 +251,15 @@ function makeSeriesCard(series) {
 
 function fillContinueReading(root, catalog) {
   const started = catalog.series.map((series) => ({ series, state: seriesReadingState(catalog, series) }))
-    .filter(({ state }) => state.read > 0 && state.next)
+    .filter(({ series, state }) => state.next && (state.read > 0 || series.postIds.some(id => getPostProgress(id) > 0)))
     .sort((a, b) => Number(b.series.postIds.includes(ui.lastReadPostId)) - Number(a.series.postIds.includes(ui.lastReadPostId)) || dateNumber(b.series.endDate) - dateNumber(a.series.endDate));
   root.hidden = !started.length;
   if (!started.length) { root.replaceChildren(); return; }
   const { series, state } = started[0];
   root.replaceChildren(
     createElement("span", { className: "continue-caption", text: "接着上次的思考" }),
-    createElement("a", { href: seriesChapterHref(series, state.next), text: state.next.title }),
-    createElement("span", { className: "continue-count", text: `${state.read} / ${state.total} 篇 · 继续阅读 →` }),
+    makePostLink(state.next),
+    makePostLink(state.next, null, { className: "continue-count", text: `${state.read} / ${state.total} 篇 · 继续阅读 →`, label: `继续阅读：${state.next.title}` }),
   );
 }
 
@@ -339,43 +340,110 @@ function makeTopicConnections(catalog, initialName, { interactive = false } = {}
 }
 
 function makeSculpture() {
-  // A projected toroidal surface, drawn as SVG rather than a video or WebGL scene.
+  // Keep one SVG mesh; vary its surface and projection without replacing nodes.
   const svg = createSvgElement("svg", { viewBox: "0 0 520 370", class: "atlas-sculpture", "aria-hidden": "true", focusable: "false" });
-  const project = (u, v) => {
-    const radius = 1.46 + .53 * Math.cos(v);
-    const x = radius * Math.cos(u);
-    const y = radius * Math.sin(u);
-    const z = .53 * Math.sin(v) + .22 * Math.sin(u * 2);
-    const tiltedY = y * .56 - z * .83;
-    const depth = y * .83 + z * .56;
-    const perspective = 1 + depth * .09;
-    return [260 + (x * .91 - tiltedY * .42) * 110 * perspective,
-      183 + (x * .42 + tiltedY * .91) * 110 * perspective];
-  };
   const mesh = createSvgElement("g", { class: "sculpture-mesh", fill: "none", "stroke-linecap": "round" });
+  const curves = [];
+  const sample = (u, v) => ({ cu: Math.cos(u), su: Math.sin(u), s2u: Math.sin(2 * u), c3u: Math.cos(3 * u), cv: Math.cos(v), sv: Math.sin(v) });
+  function addCurve(points, attrs) {
+    const path = createSvgElement("path", attrs);
+    curves.push({ path, points }); mesh.append(path);
+  }
   for (let line = 0; line < 26; line++) {
     const v = line / 26 * Math.PI * 2;
-    const points = Array.from({ length: 113 }, (_, step) => project(step / 112 * Math.PI * 2, v));
-    const d = points.map(([x, y], index) => `${index ? "L" : "M"}${x.toFixed(1)},${y.toFixed(1)}`).join(" ");
-    mesh.append(createSvgElement("path", { d, class: line === 4 ? "sculpture-highlight" : "sculpture-latitude", opacity: .28 + (Math.sin(v) + 1) * .22 }));
+    addCurve(Array.from({ length: 113 }, (_, step) => sample(step / 112 * Math.PI * 2, v)),
+      { class: line === 4 ? "sculpture-highlight" : "sculpture-latitude", opacity: .28 + (Math.sin(v) + 1) * .22 });
   }
   for (let line = 0; line < 48; line++) {
     const u = line / 48 * Math.PI * 2;
-    const points = Array.from({ length: 41 }, (_, step) => project(u, step / 40 * Math.PI * 2));
-    mesh.append(createSvgElement("path", { d: points.map(([x, y], index) => `${index ? "L" : "M"}${x.toFixed(1)},${y.toFixed(1)}`).join(" "), class: "sculpture-longitude" }));
+    addCurve(Array.from({ length: 41 }, (_, step) => sample(u, step / 40 * Math.PI * 2)), { class: "sculpture-longitude" });
   }
+  const shadow = createSvgElement("ellipse", { cx: 264, cy: 323, rx: 115, ry: 13, class: "sculpture-shadow" });
   svg.append(
-    createSvgElement("ellipse", { cx: 264, cy: 323, rx: 115, ry: 13, class: "sculpture-shadow" }),
+    shadow,
     createSvgElement("path", { d: "M32 34H50 M41 25V43 M470 318H488 M479 309V327", class: "sculpture-registration" }),
     mesh,
   );
+  svg.drawSurface = seconds => {
+    const phase = seconds * Math.PI * 2 / 42;
+    const breath = Math.sin(phase);
+    const stretch = 1 + .12 * Math.sin(phase * .7);
+    const tilt = .98 + .18 * Math.sin(phase * .8);
+    const roll = .43 + .08 * Math.sin(phase * .6);
+    const spin = seconds * .075;
+    const ct = Math.cos(tilt), st = Math.sin(tilt), cr = Math.cos(roll), sr = Math.sin(roll);
+    const cs = Math.cos(spin), ss = Math.sin(spin);
+    const scale = 108 / Math.max(1, stretch);
+    let extentX = 0, extentY = 0;
+    const projected = curves.map(({ path, points }) => ({ path,
+      points: points.map(p => {
+        const tube = .53 + .10 * breath + .06 * breath * p.c3u;
+        const radius = 1.46 - .10 * breath + tube * p.cv;
+        const x = radius * p.cu * stretch, y = radius * p.su / stretch;
+        const z = tube * p.sv + (.22 + .18 * Math.sin(phase * .9)) * p.s2u;
+        const rotatedX = x * cs - y * ss, rotatedY = x * ss + y * cs;
+        const tiltedY = rotatedY * ct - z * st;
+        const perspective = 1 + (rotatedY * st + z * ct) * .09;
+        const px = (rotatedX * cr - tiltedY * sr) * scale * perspective;
+        const py = (rotatedX * sr + tiltedY * cr) * scale * perspective;
+        extentX = Math.max(extentX, Math.abs(px)); extentY = Math.max(extentY, Math.abs(py));
+        return [px, py];
+      }),
+    }));
+    // Fit every pose using model coordinates, without measuring layout per frame.
+    const fit = Math.min(1, 236 / extentX, 160 / extentY);
+    for (const { path, points } of projected) {
+      path.setAttribute("d", points.map(([x, y], index) =>
+        `${index ? "L" : "M"}${(260 + x * fit).toFixed(1)},${(183 + y * fit).toFixed(1)}`
+      ).join(" "));
+    }
+    shadow.setAttribute("rx", (115 + breath * 9).toFixed(1));
+  };
+  svg.drawSurface(0);
   return svg;
+}
+
+function mountHeroMotion(view) {
+  const svg = view.querySelector(".atlas-sculpture");
+  if (!svg || !window.IntersectionObserver) return () => {};
+  const controller = new AbortController();
+  const { signal } = controller;
+  let frame = 0, previousTime = null, elapsed = 0, visible = false;
+  const canAnimate = () => visible && !document.hidden && !reduceMotion.matches && !signal.aborted;
+  function tick(now) {
+    frame = 0;
+    if (!view.isConnected || !canAnimate()) { previousTime = null; return; }
+    if (previousTime === null) previousTime = now;
+    // 24 fps is enough for a slow surface; pause time never advances its shape.
+    if (now - previousTime >= 1000 / 24) {
+      elapsed += Math.min(now - previousTime, 100) / 1000;
+      previousTime = now;
+      svg.drawSurface(elapsed);
+    }
+    frame = requestAnimationFrame(tick);
+  }
+  function sync() {
+    if (canAnimate()) {
+      if (!frame) frame = requestAnimationFrame(tick);
+    } else {
+      cancelAnimationFrame(frame); frame = 0; previousTime = null;
+    }
+  }
+  const observer = new IntersectionObserver(entries => {
+    visible = entries[0].isIntersecting; sync();
+  }, { threshold: 0 });
+  observer.observe(svg);
+  document.addEventListener("visibilitychange", sync, { signal });
+  reduceMotion.addEventListener("change", sync, { signal });
+  sync();
+  return () => { controller.abort(); cancelAnimationFrame(frame); observer.disconnect(); };
 }
 
 function makeHeroVisual(catalog) {
   const figure = createElement("div", { className: "knowledge-sketch" });
   figure.append(createElement("div", { className: "sketch-caption" }, [
-    createElement("span", { text: "THE SHAPE OF IDEAS" }), createElement("span", { text: "FIG. 01" }),
+    createElement("span", { text: "THE SHAPE OF IDEAS" }),
+    createElement("span", { text: "FIG. 01" }),
   ]), makeSculpture());
   const names = ["大模型与Transformer", "生成模型", "数学工具"].filter((name) => catalog.topics.some((topic) => topic.name === name && topic.count));
   figure.append(createElement("div", { className: "sketch-links" }, names.map((name, index) => createElement("a", {
@@ -454,7 +522,7 @@ function renderHome(catalog) {
   topics.append(makeTopicGroups(catalog));
   shell.append(topics, createElement("section", { className: "library-note" }, [
     createElement("span", { className: "brand-mark", text: "∿", attrs: { "aria-hidden": "true" } }),
-    createElement("div", {}, [createElement("h2", { text: "为长久的写作，留一个常新的入口。" }), createElement("p", { text: "人工整理帖容易随时间停更。这个索引持续更新分类与系列，只保存元数据和短小结；每一次深入阅读，都回到科学空间原站。" })]),
+    createElement("div", {}, [createElement("h2", { text: "为长久的写作，留一个常新的入口。" }), createElement("p", { text: "人工整理帖容易随时间停更。这个索引持续更新分类与系列，并提供忠于原文的 Markdown，方便非商业学习、保存与提问。阅读与引用始终保留科学空间原文出处。" })]),
     createElement("a", { className: "text-link", href: "#/about", text: "关于索引 ↗" }),
   ]));
   [articles, bookshelf, topics].forEach((section, index) => {
@@ -523,22 +591,27 @@ function renderSeriesDetail(catalog, id) {
     const shortTitle = post.title.startsWith(series.name) ? post.title.slice(series.name.length).replace(/^[（(][^）)]*[）)]\s*[：:、.\s]*/, "").replace(/^[：:、.\s\d]+/, "") || post.title : post.title;
     nav.append(createElement("a", {
       href: seriesChapterHref(series, post), className: isPostRead(post.id) ? "is-read" : "", dataset: { chapterPost: post.id },
+      on: { click: (event) => {
+        if (event.button !== 0 || event.ctrlKey || event.metaKey || event.shiftKey || event.altKey) return;
+        if (event.currentTarget.getAttribute("href") !== location.hash) return;
+        event.preventDefault();
+        syncSeriesChapter(post.id, { scroll: true, smooth: true });
+      } },
     }, [createElement("span", { className: "toc-number", text: chapter }), createElement("span", { text: shortTitle })]));
     const item = createElement("article", {
-      className: `timeline-item${isPostRead(post.id) ? " is-read" : ""}`, id: `chapter-${post.id}`, attrs: { tabindex: "-1" },
+      className: `timeline-item${isPostRead(post.id) ? " is-read" : ""}`, id: `chapter-${post.id}`, attrs: { tabindex: "-1" }, dataset: { readingPost: post.id },
     });
-    const safeUrl = safeHttpsUrl(post.url);
-    const title = safeUrl ? createElement("a", { text: post.title, href: safeUrl, attrs: { target: "_blank", rel: "noopener noreferrer" }, on: { click: () => updatePostRead(post, true, item, { fromLink: true }) } }) : createElement("span", { text: post.title });
     item.append(
       createElement("span", { className: "timeline-dot", attrs: { "aria-hidden": "true" } }),
       createElement("div", { className: "timeline-index", text: `${post.seriesIndex !== null ? "CHAPTER" : "ENTRY"} ${chapter}` }),
-      createElement("h3", {}, title),
-      createElement("div", { className: "post-meta" }, [createElement("span", { text: formatDate(post.date) }), post.level ? createElement("span", { text: LEVEL_LABELS[post.level] ?? post.level }) : null, makeReadBadge(post)]),
+      createElement("h3", {}, makePostLink(post, item)),
+      createElement("div", { className: "post-meta" }, [createElement("span", { text: formatDate(post.date) }), post.level ? createElement("span", { text: LEVEL_LABELS[post.level] ?? post.level }) : null]),
     );
     if (post.sourceSummary) item.append(createElement("p", { className: "post-summary", text: post.sourceSummary }));
+    const mirrorActions = makeMirrorActions(post, item);
+    if (mirrorActions) item.append(mirrorActions);
     item.append(createElement("div", { className: "timeline-actions" }, [
-      safeUrl ? createElement("a", { className: "text-link", text: "阅读原文 ↗", href: safeUrl, attrs: { target: "_blank", rel: "noopener noreferrer" }, on: { click: () => updatePostRead(post, true, item, { fromLink: true }) } }) : null,
-      makeReadToggle(post, item),
+      makePostProgress(post),
     ]));
     timeline.append(item);
   });

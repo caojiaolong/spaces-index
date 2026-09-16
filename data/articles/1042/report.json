@@ -1,0 +1,41 @@
+{
+  "metadata": {
+    "id": "1042",
+    "title": "当酸溶液遇到了更多的水时...",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/1042",
+    "date": "2010-10-31",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "source_dom_exact": true,
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "attributes_exact": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 12,
+    "display_formula_count": 5,
+    "image_count": 3,
+    "heading_count": 0,
+    "code_block_count": 0,
+    "source_text_sha256": "d796b1b98886d6bb003d555fad7819e9408ad5fc7ae5d6b302ebd9dc7134c84e",
+    "output_text_sha256": "d796b1b98886d6bb003d555fad7819e9408ad5fc7ae5d6b302ebd9dc7134c84e",
+    "latex_sha256": "cee727b194492db8bdf09b6adbbd3e74d5ec2c1343d23badc9db64bc1d04202e",
+    "body_sha256": "2ba0d245964903a194c75acbbffaf465c1159614a661d185d55ea2d02b77da5e",
+    "converter_version": 1,
+    "format": "html-v1",
+    "source_warnings": [
+      "原文含格式异常的链接，已保留原始地址但不启用跳转。"
+    ],
+    "fallback_reason": "Invalid source URL",
+    "markdown_sha256": "0b4084d0e734a6d69a228f3fb147865c22e9834d2f6ffbfb94ead7351b8f5b47"
+  },
+  "fetched_at": "2026-09-14T14:27:43+00:00",
+  "source_snapshot_sha256": "b0fb1b5ba915c224cb4facaedff67506a16cd5b8a30242c47f0f0fe35f9f061b",
+  "images": {},
+  "local_only": true
+}

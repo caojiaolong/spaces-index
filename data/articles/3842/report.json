@@ -1,0 +1,39 @@
+{
+  "metadata": {
+    "id": "3842",
+    "title": "OCR技术浅探：7. 语言模型",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/3842",
+    "date": "2016-06-26",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "source_dom_exact": true,
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "attributes_exact": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 44,
+    "display_formula_count": 5,
+    "image_count": 2,
+    "heading_count": 3,
+    "code_block_count": 0,
+    "source_text_sha256": "b4479dee3ecfeadfb3d12f5be8967e35c958e46e4c8dbf85226cd8bb2998feb7",
+    "output_text_sha256": "b4479dee3ecfeadfb3d12f5be8967e35c958e46e4c8dbf85226cd8bb2998feb7",
+    "latex_sha256": "53613471227dd0c99c421f0874543845d8e8255f110a0cf4a67defe12aed7226",
+    "body_sha256": "c1839bd31f7936d8052652c8c082d2745c9e1e21cef380890e2898241c763bae",
+    "converter_version": 1,
+    "format": "html-v1",
+    "source_warnings": [],
+    "fallback_reason": "Unsupported body element: center",
+    "markdown_sha256": "efc657a203a37787de420639a2ac0635ec57885dc4038bd6b3ef9730dbae9b0f"
+  },
+  "fetched_at": "2026-09-14T13:39:34+00:00",
+  "source_snapshot_sha256": "e77522ef4461872faf0cc2a2676d3d0d64f115384084f18096a69b7b5acc2314",
+  "images": {},
+  "local_only": true
+}

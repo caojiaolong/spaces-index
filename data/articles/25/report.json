@@ -1,0 +1,41 @@
+{
+  "metadata": {
+    "id": "25",
+    "title": "日全食多路联合直播频道",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/25",
+    "date": "2009-07-18",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "source_dom_exact": true,
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "attributes_exact": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 0,
+    "display_formula_count": 0,
+    "image_count": 0,
+    "heading_count": 0,
+    "code_block_count": 0,
+    "source_text_sha256": "fe134ee2bbc80d3ad395131bd73d585e9dd438d6ab443697fa0a404ac59bc24f",
+    "output_text_sha256": "fe134ee2bbc80d3ad395131bd73d585e9dd438d6ab443697fa0a404ac59bc24f",
+    "latex_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "body_sha256": "5719c7b213f38f32d611237f40b481d048bae25fbe40f80fd815b44bd1a003a4",
+    "converter_version": 1,
+    "format": "html-v1",
+    "source_warnings": [
+      "原文含旧式或脚本嵌入内容，已保留其位置和源码；预览不执行。"
+    ],
+    "fallback_reason": "Unsupported body element: script",
+    "markdown_sha256": "92dc55c2a5b82fc33d527620b83e0b49626cedb81d5618d17d43224e4bad9fd7"
+  },
+  "fetched_at": "2026-09-14T15:05:08+00:00",
+  "source_snapshot_sha256": "15922e098410e46a5217bd067c2734ab2e92105bf3276be2202cf3560c7a5ace",
+  "images": {},
+  "local_only": true
+}

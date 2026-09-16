@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "8802",
+    "title": "Seq2Seq+前缀树：检索任务新范式（以KgCLUE为例）",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/8802",
+    "date": "2021-12-17",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 55,
+    "display_formula_count": 3,
+    "image_count": 5,
+    "heading_count": 12,
+    "code_block_count": 0,
+    "source_text_sha256": "fc31b3ca4a7d67af3500c2757728bf7885b0c2522fbc6461ab4950dfb6c5408b",
+    "output_text_sha256": "fc31b3ca4a7d67af3500c2757728bf7885b0c2522fbc6461ab4950dfb6c5408b",
+    "latex_sha256": "c2ade4492167eb902084ff5a273c7b2d9be6a731023284a992f67d124a941ef6",
+    "body_sha256": "6413d6ab2c70416401de80742942fc2a0936dcfec6ead001adb38641b9643ee6",
+    "converter_version": 1,
+    "markdown_sha256": "66d67b8eea93caf8e89161095a7c4068abdc735261a0db5f967e32356c454a21"
+  },
+  "fetched_at": "2026-09-14T13:02:36+00:00",
+  "source_snapshot_sha256": "733769c3d2cae96820a4bde797bcb8a2f82c8947683afae46c791c170dcd9ff0",
+  "images": {},
+  "local_only": true
+}

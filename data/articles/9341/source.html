@@ -1,0 +1,39 @@
+<div class="PostContent" id="PostContent">
+<p>在<a href="/archives/8847" target="_blank">《CoSENT（一）：比Sentence-BERT更有效的句向量方案》</a>中，笔者提出了名为“CoSENT”的有监督句向量方案，由于它是直接训练cos相似度的，跟评测目标更相关，因此通常能有着比Sentence-BERT更好的效果以及更快的收敛速度。在<a href="/archives/8860" target="_blank">《CoSENT（二）：特征式匹配与交互式匹配有多大差距？》</a>中我们还比较过它跟交互式相似度模型的差异，显示它在某些任务上的效果还能直逼交互式相似度模型。</p><p>然而，当时笔者是一心想找一个更接近评测目标的Sentence-BERT替代品，所以结果都是面向有监督句向量的，即特征式相似度模型。最近笔者突然反应过来，CoSENT其实也能作为交互式相似度模型的损失函数。那么它跟标准选择交叉熵相比孰优孰劣呢？本文来补充这部分实验。</p><h2 id="基础回顾">基础回顾</h2><p>CoSENT提出之初，是作为一个有监督句向量的损失函数：<br/>
+\begin{equation}\log \left(1 + \sum\limits_{\text{sim}(i,j) \gt \text{sim}(k,l)} e^{\lambda(\cos(u_k, u_l) - \cos(u_i, u_j))}\right)\end{equation}<br/>
+其中$i,j,k,l$是四个训练样本（比如四个句子），$u_i, u_j, u_k, u_l$是它们想要学习的句向量（比如它们经过BERT后的[CLS]向量），$\cos(\cdot,\cdot)$代表两个向量的余弦相似度，$\text{sim}(\cdot,\cdot)$则代表它们的相似度标签。所以这个损失函数的定义也很清晰，就是如果你认为$(i,j)$的相似度应该大于$\text{sim}(k,l)$的相似度，那么就往$\log$里边加入一项$e^{\lambda(\cos(u_k, u_l) - \cos(u_i, u_j))}$。</p><p>从这个形式就可以看出，当时CoSETN就是为了有监督训练余弦相似度的特征式模型的，包括“CoSENT”这个名字也是这样来的（<font color="red">Cos</font>ine <font color="red">Sent</font>ence）。然而，抛开余弦相似度这一层面不谈，CoSENT本质上是一个只依赖于标签相对顺序的损失函数，它跟余弦相似度没有必然联系，我们可以将它一般化为<br/>
+\begin{equation}\log \left(1 + \sum\limits_{\text{sim}(i,j) \gt \text{sim}(k,l)} e^{\lambda(f(k,l) - f(i,j))}\right)\end{equation}<br/>
+其中$f(\cdot,\cdot)$是任意标量输出函数（一般不需要加激活函数），代表要学习的相似度模型，包括将两个输入拼接成一个文本输入到BERT中的“交互式相似度”模型！</p><h2 id="实验比较">实验比较</h2><p>训练交互式相似度的常规方式是最后构建一个两节点的输出，然后加上softmax，用交叉熵（下表简称CE）作为损失函数，这也等价于在前面的$f(\cdot,\cdot)$上加sigmoid激活，然后用单节点的二分类交叉熵。不过这种做法也就适合二分类形式的标签，如果连续型的打分（比如STS-B是1～5分），就不大适合了，此时通常要转化为回归问题。但CoSENT没有这个限制，因为它只需要标签的序信息，这个特点跟常用的评测指标spearman系数是一致的。</p><p>两者的对比实验，参考代码如下：</p><blockquote class="cite"><div><a href="https://github.com/bojone/CoSENT/blob/main/accuracy/interact_cosent.py" target="_blank"><strong>https://github.com/bojone/CoSENT/blob/main/accuracy/interact_cosent.py</strong></a></div></blockquote><p>实验结果为<br/>
+$$\begin{array}{c}<br/>
+\text{评测指标为spearman系数} \\<br/>
+{\begin{array}{c|ccccc}<br/>
+\hline<br/>
+&amp; \text{ATEC} &amp; \text{BQ} &amp; \text{LCQMC} &amp; \text{PAWSX} &amp; \text{avg}\\<br/>
+\hline<br/>
+\text{BERT + CE} &amp; 48.01 &amp; 71.96 &amp; 78.53 &amp; 68.59 &amp; 66.77 \\<br/>
+\text{BERT + CoSENT} &amp; 48.09 &amp; 72.25 &amp; 78.70 &amp; 69.34 &amp; 67.10 \\<br/>
+\hline<br/>
+\text{RoBERTa + CE} &amp; 49.70 &amp; 73.20 &amp; 79.13 &amp; 70.52 &amp; 68.14 \\<br/>
+\text{RoBERTa + CoSENT} &amp; 49.82 &amp; 73.09 &amp; 78.78 &amp; 70.54 &amp; 68.06 \\<br/>
+\hline<br/>
+\end{array}} \\<br/>
+\\<br/>
+\text{评测指标为accuracy} \\<br/>
+{\begin{array}{c|ccccc}<br/>
+\hline<br/>
+&amp; \text{ATEC} &amp; \text{BQ} &amp; \text{LCQMC} &amp; \text{PAWSX} &amp; \text{avg}\\<br/>
+\hline<br/>
+\text{BERT + CE} &amp; 85.38 &amp; 83.57 &amp; 88.10 &amp; 81.45 &amp; 84.63 \\<br/>
+\text{BERT + CoSENT} &amp; 85.55 &amp; 83.73 &amp; 87.92 &amp; 81.85 &amp; 84.76 \\<br/>
+\hline<br/>
+\text{RoBERTa + CE} &amp; 85.97 &amp; 84.67 &amp; 88.14 &amp; 82.85 &amp; 85.41 \\<br/>
+\text{RoBERTa + CoSENT} &amp; 86.06 &amp; 84.23 &amp; 88.14 &amp; 83.03 &amp; 85.37 \\<br/>
+\hline<br/>
+\end{array}}<br/>
+\end{array}$$</p><p>可以看到，没有惊喜，CE和CoSENT的效果基本一致。非要挖掘一些细致区别的话，可以看到在BERT中，CoSENT的效果相对好些，在RoBERTa中基本没区别了，以及在PAWSX这个任务上，CoSENT的提升相对明显些，其他任务基本持平。如此，可以“弱弱地”下一个结论：</p><blockquote class="cite"><div>当模型较弱（BERT弱于RoBERTa）或者任务较难（PAWSX相对来说比其他三个任务都难）时，CoSENT<strong><u>或许</u></strong>能取得比CE更好的效果。</div></blockquote><p>注意，是“或许”，笔者也不能保证。实事求是地说，我也不认为两者构成什么显著差异。不过可以猜测，因为两种损失函数的形式有明显的差异，所以哪怕最终指标上差不多，模型内部应该也有一定差异，这时候或许可以考虑模型融合？</p><h2 id="文章小结">文章小结</h2><p>本文主要思考和实验了CoSENT在交互式相似度模型中的可行性，最终结论是“可行但效果没什么提升”。</p>
+
+
+
+
+
+</div>

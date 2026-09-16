@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "2942",
+    "title": "生成函数法与整数的分拆",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/2942",
+    "date": "2014-09-16",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 44,
+    "display_formula_count": 8,
+    "image_count": 0,
+    "heading_count": 0,
+    "code_block_count": 0,
+    "source_text_sha256": "2112a3ffba7a9998c06d9c56eef3792d4bbb2b7c1fa35f422fe65152da5d585e",
+    "output_text_sha256": "2112a3ffba7a9998c06d9c56eef3792d4bbb2b7c1fa35f422fe65152da5d585e",
+    "latex_sha256": "51d458cec195ad07653752a23a4ad7cc3c88c083363352e3042cf1b5721de4f8",
+    "body_sha256": "611ece7fafd6b7efb453f367c0150caf058c9c5992251cba6dfaae6d735ec3c4",
+    "converter_version": 1,
+    "markdown_sha256": "6b2d49c810a8fb8afbd4bd24a1a0112b992c216207092d2ec8ac1739db2db117"
+  },
+  "fetched_at": "2026-09-14T13:51:22+00:00",
+  "source_snapshot_sha256": "712e91a12f61ba7f8639f848be5fc81df9f7a2c1b960180ce3c2d8290580ae95",
+  "images": {},
+  "local_only": true
+}

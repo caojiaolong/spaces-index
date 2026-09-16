@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "2380",
+    "title": "翻到新的维度，把积分解决！",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/2380",
+    "date": "2014-02-25",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 10,
+    "display_formula_count": 8,
+    "image_count": 0,
+    "heading_count": 0,
+    "code_block_count": 0,
+    "source_text_sha256": "da23f3ed3dee65a0e8bf1884a2b7d73cbcd241d1cafbcfa0b54b693a69fa0aaf",
+    "output_text_sha256": "da23f3ed3dee65a0e8bf1884a2b7d73cbcd241d1cafbcfa0b54b693a69fa0aaf",
+    "latex_sha256": "90fef8e167b905efa8c5ed7376d0d47f7c68e7745cdc6db7d2e3da48eed8cec2",
+    "body_sha256": "e9b73eaa75a8bfe0b149ad5a01873fe1351219e17f3da910847eceee1168dcce",
+    "converter_version": 1,
+    "markdown_sha256": "8fad4a97adb5a152e295a8282cdb0519fe8ed2302c7eb37d16b4f29313069311"
+  },
+  "fetched_at": "2026-09-14T13:56:36+00:00",
+  "source_snapshot_sha256": "5fa398ce7ac6934f9d8338b47eb9b8901cf729d41125396bec2bf371a6eae7da",
+  "images": {},
+  "local_only": true
+}

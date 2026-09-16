@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "9064",
+    "title": "多标签“Softmax+交叉熵”的软标签版本",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/9064",
+    "date": "2022-05-07",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 91,
+    "display_formula_count": 9,
+    "image_count": 0,
+    "heading_count": 5,
+    "code_block_count": 0,
+    "source_text_sha256": "8e3606d6a84c0e46abe31c385cdfb86b50f3555002cb219af7955870bc3e6498",
+    "output_text_sha256": "8e3606d6a84c0e46abe31c385cdfb86b50f3555002cb219af7955870bc3e6498",
+    "latex_sha256": "6451eeb0c3cbe28f17d5acd9a95369a94dbf454f1ff673e893f4a1ff34a5d19e",
+    "body_sha256": "2b80be1530436279918b0b82e5fd8644b20cecc516b3ba8698e3842228abc45f",
+    "converter_version": 1,
+    "markdown_sha256": "4956003032587a085932f69a6d3eb0588cb67783839a19b3c337b1471928739a"
+  },
+  "fetched_at": "2026-09-14T12:59:46+00:00",
+  "source_snapshot_sha256": "e5b4ac8c1e9d64e39d18ba73416e499b01816413be0a1dcaa3b2408d8d4a5b08",
+  "images": {},
+  "local_only": true
+}

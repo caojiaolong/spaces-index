@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "1139",
+    "title": "你好，2011！",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/1139",
+    "date": "2011-01-01",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 0,
+    "display_formula_count": 0,
+    "image_count": 2,
+    "heading_count": 0,
+    "code_block_count": 0,
+    "source_text_sha256": "9ef12908c9d7ba0f3cb0298a28215612d1d7274e691aa4ab660d48a3132a27c7",
+    "output_text_sha256": "9ef12908c9d7ba0f3cb0298a28215612d1d7274e691aa4ab660d48a3132a27c7",
+    "latex_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "body_sha256": "37fef7825637d06ffded2fac55b7b74f03a6381f75f051cf2034e3cb1499c8c3",
+    "converter_version": 1,
+    "markdown_sha256": "6526936afaf420d6066b53760480195fe78ab3811eaa9bc719e0f3adec996c8e"
+  },
+  "fetched_at": "2026-09-14T14:25:51+00:00",
+  "source_snapshot_sha256": "7ee82ff0bca0806a458490a0eea0329ec2cad0b6365714bca4a45f752fa0cc17",
+  "images": {},
+  "local_only": true
+}

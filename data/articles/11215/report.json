@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "11215",
+    "title": "流形上的最速下降：2. Muon + 正交",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/11215",
+    "date": "2025-08-06",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 94,
+    "display_formula_count": 18,
+    "image_count": 0,
+    "heading_count": 6,
+    "code_block_count": 0,
+    "source_text_sha256": "bbb6718de18cc7f41bf6cdb8122757b00186e64063d175ac60d1c8d162fb136a",
+    "output_text_sha256": "bbb6718de18cc7f41bf6cdb8122757b00186e64063d175ac60d1c8d162fb136a",
+    "latex_sha256": "e3e7fec55c17d223a427526355e08198d3e8f5bc955186c9a7064ba294578260",
+    "body_sha256": "708e9271941595a033f6a875e12a191d5cb2e5aff0f69fa023a9786666a9dc73",
+    "converter_version": 1,
+    "markdown_sha256": "9ca1e54ceb644aa39c9117437d843ba253e9490d9f678d0e362d472019f1ce41"
+  },
+  "fetched_at": "2026-09-14T12:40:37+00:00",
+  "source_snapshot_sha256": "ae8a07f9ab560716d7de5f32dfa4ba4cf305d7bac162a153dc44e4a711f6b734",
+  "images": {},
+  "local_only": true
+}

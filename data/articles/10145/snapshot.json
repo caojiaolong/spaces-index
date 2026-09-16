@@ -1,0 +1,17 @@
+{
+  "metadata": {
+    "id": "10145",
+    "title": "通向概率分布之路：盘点Softmax及其替代品",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/10145",
+    "date": "2024-06-14",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "fetched_at": "2026-09-14T12:48:11+00:00",
+  "source_snapshot_sha256": "6eaa06c5f4ad9e42c61eaf20fbab5a65e2ea3a30e54bc9fb323cd986ddf57425",
+  "validators": {
+    "etag": null,
+    "last_modified": null
+  }
+}

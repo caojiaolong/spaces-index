@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "5743",
+    "title": "基于GRU和AM-Softmax的句子相似度模型",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/5743",
+    "date": "2018-07-29",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 60,
+    "display_formula_count": 11,
+    "image_count": 3,
+    "heading_count": 16,
+    "code_block_count": 3,
+    "source_text_sha256": "de045396796fcfac105af41e1a2b6b32ae8737553ad4ae94cd08b88006593a5b",
+    "output_text_sha256": "de045396796fcfac105af41e1a2b6b32ae8737553ad4ae94cd08b88006593a5b",
+    "latex_sha256": "e87e19c517009e1028adb2669cc4f568ea6a73f584fb67f2c3063d3c7393574f",
+    "body_sha256": "4a085fb3f59079152ddca7d1c716dc8b0a80684df75c5bace919f3debe147716",
+    "converter_version": 1,
+    "markdown_sha256": "b58952f71b39c9af0eeecb356388da91f4040925b0ab18ef6f24ea5158028ebf"
+  },
+  "fetched_at": "2026-09-14T13:25:39+00:00",
+  "source_snapshot_sha256": "1c61d8ae06fb14e7d1933cbfa44d04efd7d71cd206c58d2465aff1927e682611",
+  "images": {},
+  "local_only": true
+}

@@ -1,0 +1,96 @@
+# MuP之上：1\. 好模型的三个特征
+
+> 作者：苏剑林 · 科学空间 · 2025-10-21
+>
+> 原文：<https://spaces.ac.cn/archives/11340>
+>
+> 原文许可：[CC BY-NC-ND 2.5 CN（署名-非商业性使用-禁止演绎）](https://creativecommons.org/licenses/by-nc-nd/2.5/cn/)。
+>
+> 本文件由 spaces-index 非官方、非商业项目进行必要的 HTML → Markdown 格式转换；正文未做摘要、润色、翻译或重组。项目不代表作者，也不表示作者为项目背书。
+>
+> 署名及附加许可说明不代表已获得作者额外授权。第三方素材权利依其原有声明。
+>
+> 原站转载与引用说明：[科学空间 FAQ](https://spaces.ac.cn/archives/6508#%E6%96%87%E7%AB%A0%E5%A6%82%E4%BD%95%E8%BD%AC%E8%BD%BD/%E5%BC%95%E7%94%A8)
+
+---
+
+不知道大家有没有发现一个有趣的细节，Muon和MuP都是“Mu”开头，但两个“Mu”的原意完全不一样，前者是“<strong>M</strong>oment<strong>U</strong>m Orthogonalized by Newton\-Schulz”，后者是“<strong>M</strong>aximal <strong>U</strong>pdate Parametrization”，可它们俩之间确实有着非常深刻的联系。也就是说，Muon和MuP有着截然不同的出发点，但最终都走向了相同的方向，甚至无意间取了相似的名字，似乎真应了那句“冥冥中自有安排”。
+
+言归正传。总之，笔者在各种机缘巧合之下，刚好同时学习到了Muon和MuP，这大大加深了笔者对模型优化的理解，同时也让笔者开始思考关于模型优化更本质的原理。经过一段时间的试错，算是有些粗浅的收获，在此跟大家分享一下。
+
+## 写在前面
+
+按照提出时间的先后顺序，是先有MuP再有Muon，但笔者的学习顺序正好反过来，先学习了Muon然后再学习MuP，事后来看，这也不失为一个不错的学习顺序。
+
+在[《Muon优化器赏析：从向量到矩阵的本质跨越》](<https://spaces.ac.cn/archives/10592>)、[《Muon续集：为什么我们选择尝试Muon？》](<https://spaces.ac.cn/archives/10739>)等文章中，我们将Muon描述为“谱范数约束下的最速下降”，而MuP系列工作则正好能够解释“为什么需要谱范数约束”，两者正好完美地衔接了起来。
+
+这里特别说明一下，我们说的MuP，它有两个含义：一是[《初探MuP：超参数的跨模型尺度迁移规律》](<https://spaces.ac.cn/archives/10770>)介绍的，属于[Tensor Programs](<https://papers.cool/arxiv/2203.03466>)系列工作的一部分，我们称为“初阶MuP”；二是[《高阶MuP：更简明但更高明的谱条件缩放》](<https://spaces.ac.cn/archives/10795>)介绍的，我们称为“高阶MuP”，它以一种更简明的方式得到了比初阶MuP更丰富的结论——它们都是[Greg Yang](<https://thegregyang.com/>)的工作（致敬大佬）。
+
+本文所提的MuP，如无说明都是指“高阶MuP”。事实上，本系列文章，笔者称为“MuP之上（Beyond MuP）”，也是在高阶MuP基础上进行的一系列思考和拓展。但对于一些读者来说，他们所了解的MuP，可能是Tensor Programs系列的“初阶MuP”，所以咋看之下可能会发出<u>MuP怎么能够回答“为什么需要谱范数”</u>的疑惑。
+
+不论如何，笔者会尽量让这个系列能够自成体系，所以尽管我们在介绍过程中会提及很多相关论文或博客，但读者并不需要精读所有内容。
+
+## 稳中求快
+
+再次言归正传。作为第一篇文章，本文的任务是把核心目标定下来，更具体点，是想清楚“我们究竟想要一个怎样的模型”，以及“怎样才能把这个模型训出来”。
+
+直观来想，只要模型没有出现崩溃的迹象，那么我们就可以一直训下去，直至收敛到我们满意的效果；在这个基础上，我们又会试图寻找让模型收敛得更快的方法。所以说白了，无非就“稳”和“快”两件事，或者说“稳中求快”一件事。那么，怎么判断模型稳不稳呢？这自然少不了要监控各种“[内科指标](<https://www.zhihu.com/question/1946325762161483910/answer/1946691536009036242>)”，监控得越多，越能暴露出问题。
+
+不过，这里不打算罗列各种内科指标，而是试图寻找最核心或者说最必要的几个条件。为此，我们先定义一个概念——RMS（Root Mean Square）：设$\boldsymbol{x}=(x_1,x_2,\cdots,x_d)\in\mathbb{R}^d$，那么定义
+\begin{equation}\Vert\boldsymbol{x}\Vert_{RMS} = \sqrt{\frac{1}{d}\sum_{i=1}^d x_i^2} = \frac{\Vert\boldsymbol{x}\Vert_2}{\sqrt{d}}\end{equation}
+它代表每个元素的平均尺度，跟向量的模长$\Vert\boldsymbol{x}\Vert_2$相差一个倍数$\sqrt{d}$。
+
+可能有读者想问，既然就差一个倍数，为什么不直接观察模长而是要新定义一个概念？这里有一些考虑，比如经常用RMSNorm、RMS比模长更容易感知等，此外还有一个重要原因是大部分激活函数都是Element\-wise的，所以我们需要考察和控制平均到每个元素的尺度，以保证激活函数在不同模型中发挥着相近的作用。
+
+## 三个条件
+
+有了RMS的记号，就可以写出笔者认为稳定训练出一个好模型的三个最必要的条件：
+\begin{align}
+&\text{前向稳定性:}\quad\max_{\boldsymbol{x}} \Vert \boldsymbol{f}(\boldsymbol{x};\boldsymbol{\omega})\Vert_{RMS} = \Theta(1) \label{eq:c1}\\[5pt]
+&\text{依赖稳定性:}\quad\max_{\boldsymbol{x}_1,\boldsymbol{x}_2} \frac{\Vert \boldsymbol{f}(\boldsymbol{x}_1;\boldsymbol{\omega}) - \boldsymbol{f}(\boldsymbol{x}_2;\boldsymbol{\omega})\Vert_{RMS}}{\Vert\boldsymbol{x}_1 - \boldsymbol{x}_2\Vert_{RMS}} = \Theta(1) \label{eq:c2}\\[5pt]
+&\text{更新稳定性:}\quad\max_{\boldsymbol{x}} \Vert \boldsymbol{f}(\boldsymbol{x};\boldsymbol{\omega} + \Delta\boldsymbol{\omega}) - \boldsymbol{f}(\boldsymbol{x};\boldsymbol{\omega})\Vert_{RMS} = \Theta(1) \label{eq:c3}
+\end{align}
+其中$\boldsymbol{f}(\boldsymbol{x};\boldsymbol{\omega})$代表$\mathbb{R}^{d_{in}}\mapsto \mathbb{R}^{d_{out}}$的模型簇，输入$\boldsymbol{x}\in\mathbb{R}^{d_{in}}$，输出$\boldsymbol{f}(\boldsymbol{x};\boldsymbol{\omega})\in\mathbb{R}^{d_{out}}$，$\boldsymbol{\omega}$是模型参数，可以是标量/向量/矩阵等，$\Theta$是“[Big Theta Notation](<https://en.wikipedia.org/wiki/Big_O_notation#Family_of_Bachmann%E2%80%93Landau_notations>)”。这里的$\boldsymbol{f}(\boldsymbol{x};\boldsymbol{\omega})$可以是一个层、若干层组成的块甚至是整个模型，理论上，颗粒度越粗所得约束就越宽松或者说越准确，但$\max$的求解也越困难，所以这取决于我们计算$\max$的能力。
+
+注意我们刚才说$\boldsymbol{x}\in\mathbb{R}^{d_{in}}$，但它并不一定能遍布这个$\mathbb{R}^{d_{in}}$，比如Embedding层的输入是Token Id，或者说是$\mathbb{R}^{|V|}$中的one hot向量（$|V|$是词表大小），并且也只能是one hot向量，所以它无法充满整个$\mathbb{R}^{|V|}$，求$\max$我们也只能对这些one hot输入求，在整个空间求反而是不准确的。
+
+## 逐一分析
+
+在三个式子中，式$\eqref{eq:c1}$大概是最好理解的，它代表了前向计算的稳定性，对$\boldsymbol{x}$取$\max$后，变量就只剩$\boldsymbol{\omega}$了，所以这是关于$\boldsymbol{\omega}$的一个约束。请注意，一般情况下我们并不限制$\boldsymbol{x}$的取值，所以默认$\boldsymbol{x}\in\mathbb{R}^{d_{in}}$，那么最大值未必存在，如对于非零$\boldsymbol{W}$有$\max\limits_{\boldsymbol{x}}\Vert \boldsymbol{x}\boldsymbol{W}\Vert_{RMS}\to\infty$。为了保证最大值的存在性，我们通常要加一些Normalization操作，如：
+\begin{align}
+&\text{In Norm:}\quad \mathop{\text{Norm}}(\boldsymbol{x})\boldsymbol{W} \\[5pt]
+&\text{Out Norm:}\quad \mathop{\text{Norm}}(\boldsymbol{x}\boldsymbol{W})
+\end{align}
+其中$\mathop{\text{Norm}}(\boldsymbol{x})=\boldsymbol{x}/\Vert\boldsymbol{x}\Vert_{RMS}$，即RMS Norm，当然也可以考虑其他的Normalization。所以，条件$\eqref{eq:c1}$也隐式地对模型架构提出了一些要求。
+
+最后的式$\eqref{eq:c3}$应该也不难理解，它度量的是参数变化对输出带来的影响，即我们希望每一次参数变化对预测结果带来的变化是平稳的。由于只有训练过程才会产生参数变化，因此这代表了对训练稳定性的期望，我们可以用它来指导优化器的超参设置，甚至可以基于它来构建新的优化器。
+
+具体来说，对$\boldsymbol{x}$取了$\max$后后，式$\eqref{eq:c3}$的结果是关于$\boldsymbol{\omega}$和$\Delta\boldsymbol{\omega}$的一个约束，相比$\eqref{eq:c1}$它主要多出来个$\Delta\boldsymbol{\omega}$，所以它主要带来的是增量$\Delta\boldsymbol{\omega}$的约束。后续我们将会看到，根据这个约束可以调节初始化、学习率等，或者直接结合“最速下降”思想来推导$\Delta\boldsymbol{\omega}$的形式。
+
+## 平稳依赖
+
+值得单独拿出来展开讨论一下的，是条件$\eqref{eq:c2}$，它描述了$\boldsymbol{f}(\boldsymbol{x};\boldsymbol{\omega})$对输入$\boldsymbol{x}$的依赖程度。
+
+我们希望输入发生变化$\Delta\boldsymbol{x} = \boldsymbol{x}_2 - \boldsymbol{x}_1$时，输出的变化也是$\Theta(\Vert\Delta\boldsymbol{x}\Vert_{RMS})$的量级。它有两个含义：一是输出变化至多是$\Vert\Delta\boldsymbol{x}\Vert_{RMS}$量级，这要求模型某种程度上是光滑的，不应该存在产生突然的、巨大的变化；二是输出的变化至少是$\Vert\Delta\boldsymbol{x}\Vert_{RMS}$量级（对于某些输入），这意味着模型真的依赖于$\boldsymbol{x}$，它并不是无效输入。
+
+第一个含义可能大家都好理解，至于第二个，我们可以举个简单例子：$f(x;\omega)=x\times\omega\times 0 + 1$。这个“模型”前向自然是很稳的（恒为1），但它完全不依赖于$x$，式$\eqref{eq:c2}$就没法满足，所以它不是一个好模型。说白了，依赖稳定性就是说一个好模型应该<strong>合理</strong>地依赖于输入。
+
+另一方面，可以证明依赖稳定性实际上还覆盖了反向传播的稳定性。当$\Delta\boldsymbol{x}\to \boldsymbol{0}$时，我们有近似展开式$\boldsymbol{f}(\boldsymbol{x} + \Delta\boldsymbol{x};\boldsymbol{\omega}) \approx \boldsymbol{f}(\boldsymbol{x};\boldsymbol{\omega}) + \Delta\boldsymbol{x}\cdot\nabla_{\boldsymbol{x}}\boldsymbol{f}(\boldsymbol{x};\boldsymbol{\omega})$，因此
+\begin{equation}\frac{\Vert\boldsymbol{f}(\boldsymbol{x} + \Delta\boldsymbol{x};\boldsymbol{\omega}) - \boldsymbol{f}(\boldsymbol{x};\boldsymbol{\omega})\Vert_{RMS}}{\Vert\Delta\boldsymbol{x}\Vert_{RMS}} \approx \frac{\Vert\Delta\boldsymbol{x}\cdot\nabla_{\boldsymbol{x}}\boldsymbol{f}(\boldsymbol{x};\boldsymbol{\omega})\Vert_{RMS}}{\Vert\Delta\boldsymbol{x}\Vert_{RMS}} \leq \sqrt{\frac{d_{in}}{d_{out}}}\Vert\nabla_{\boldsymbol{x}}\boldsymbol{f}(\boldsymbol{x};\boldsymbol{\omega})\Vert_2\end{equation}
+其中$\nabla_{\boldsymbol{x}}\boldsymbol{f}(\boldsymbol{x};\boldsymbol{\omega})$表示$\boldsymbol{f}(\boldsymbol{x};\boldsymbol{\omega})$的雅可比矩阵，$\Vert\nabla_{\boldsymbol{x}}\boldsymbol{f}(\boldsymbol{x};\boldsymbol{\omega})\Vert_2$是它的谱范数。由此可见，条件$\eqref{eq:c2}$还对模型的雅可比矩阵的谱范数提出了要求，而根据链式法则，雅可比矩阵正是反向传播求梯度的核心，所以它也包含了对反向传播稳定性的要求。
+
+## 相关思考
+
+综上所述，式$\eqref{eq:c1},\eqref{eq:c2},\eqref{eq:c3}$三个条件，综合了模型架构、初始化、优化器、反向传播等方面的考虑，很难说哪个条件可以去掉，所以笔者认为它们都是必须的。当然，就这三个条件而言，还有一些细节可以拿出来讨论一下，比如$\max$与$\mathbb{E}$的选择。
+
+在现在的式子中，我们通过取$\max$来“消去”了$\boldsymbol{x}$，得到只有$\boldsymbol{\omega}$和$\Delta\boldsymbol{\omega}$的式子，这一点可能大家会有疑问，对部分读者来说更符合直觉的做法可能是求数学期望$\mathbb{E}_{\boldsymbol{x}}$。为什么是$\max$不是$\mathbb{E}$？原因有不少。首先，求$\max$只需要给出$\boldsymbol{x}$的定义域，而求$\mathbb{E}$则需要定义$\boldsymbol{x}$的分布，不同分布结果不一样，而如何准确定义这个分布，并不是一件朴素的事情。
+
+其次，$\max$有个优点是对于单调变换的不变性，而$\mathbb{E}$没有这个性质，例如对于$\max$来说我们有恒等式$(\max_{\boldsymbol{x}} \Vert \boldsymbol{f}(\boldsymbol{x};\boldsymbol{\omega})\Vert_{RMS})^2 = \max_{\boldsymbol{x}} \Vert \boldsymbol{f}(\boldsymbol{x};\boldsymbol{\omega})\Vert_{RMS}^2$，即不管对$\Vert \boldsymbol{f}(\boldsymbol{x};\boldsymbol{\omega})\Vert_{RMS}$还是$\Vert \boldsymbol{f}(\boldsymbol{x};\boldsymbol{\omega})\Vert_{RMS}^2$求$\max$，本质上是一样的；但$\mathbb{E}$并不是这样，$\Vert \boldsymbol{f}(\boldsymbol{x};\boldsymbol{\omega})\Vert_{RMS}$的期望和$\Vert \boldsymbol{f}(\boldsymbol{x};\boldsymbol{\omega})\Vert_{RMS}^2$的期望在计算难度上通常不一样，结果也不一定有什么关联。
+
+因此，$\max$在概念和性质上都更为简便。一个可能的疑虑是$\max$会不会太苛刻，类似“充分不必要”条件？其实，$\max$只是直观说法，数学上叫做“上确界（$\sup$）”，“确”字表明这个值能达到的、紧凑的；而在实践中，均值跟最大值往往都是同一量级，而我们的目标只是$\Theta(1)$，所以区别不大。相反，$\max$兼顾了极端情形，最大程度上保证了训练稳定性，这对于LLM等大模型训练来说尤为重要。
+
+事实上，初阶MuP，或者说Tensor Programs系列，就是基于$\mathbb{E}$做的一系列分析，而高阶MuP，则跟本文一样，都是基于$\max$的分析。事后来看，基于$\mathbb{E}$的分析在计算的简便性、结果的通用性等方面，都不如基于$\max$的高阶MuP，这也反过来佐证了$\max$的有效性。
+
+## 文章小结
+
+从这篇文章开始，笔者会分享一些模型优化方面的自上而下的理解，它是在之前的“高阶MuP”基础上的延伸思考和拓展。作为第一篇文章，我们主要描述了关于模型稳定性的三个基本条件，或者说好模型的三个特征，它将是后面进行计算和分析的基石。

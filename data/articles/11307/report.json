@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "11307",
+    "title": "AdamW的Weight RMS的渐近估计（上）",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/11307",
+    "date": "2025-10-01",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 146,
+    "display_formula_count": 29,
+    "image_count": 0,
+    "heading_count": 14,
+    "code_block_count": 1,
+    "source_text_sha256": "fec75b46c30953e523ee49dfbb1e0fcf5dd1ac239974edc5654ccafe3a1af0f9",
+    "output_text_sha256": "fec75b46c30953e523ee49dfbb1e0fcf5dd1ac239974edc5654ccafe3a1af0f9",
+    "latex_sha256": "3465886c8e7433ff1b312475a1e435c174e4113a95f59d4c45f482df6a94449c",
+    "body_sha256": "6cb1d168a8d6a0a48941f75213c283f20a69d67a14b20df1350aebe51318a58c",
+    "converter_version": 1,
+    "markdown_sha256": "577e6d32877533693dd7cc78c6451696c519f6a55ab14aef3a6e6f7c92de893f"
+  },
+  "fetched_at": "2026-09-14T12:39:33+00:00",
+  "source_snapshot_sha256": "a37f871567a315e8c827be28027bc297b64dc9afb52747490dcc3d1f9147b32f",
+  "images": {},
+  "local_only": true
+}

@@ -1,0 +1,39 @@
+{
+  "metadata": {
+    "id": "1420",
+    "title": "[更正]一道经典不等式的美妙证明",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/1420",
+    "date": "2011-07-20",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "source_dom_exact": true,
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "attributes_exact": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 24,
+    "display_formula_count": 6,
+    "image_count": 1,
+    "heading_count": 0,
+    "code_block_count": 0,
+    "source_text_sha256": "e0023ef781125e6796450ab3c0f9bfc32c893628ce7d2e8a63ae1cb2f6fa05f1",
+    "output_text_sha256": "e0023ef781125e6796450ab3c0f9bfc32c893628ce7d2e8a63ae1cb2f6fa05f1",
+    "latex_sha256": "08377ed32bbeee6078af57baba5721f4831c62528d9cd5abacdcf491aa56d464",
+    "body_sha256": "b337764a5d55f3381455a4d34f6c86beaf4f0856077096b39bb5f34819d4264c",
+    "converter_version": 1,
+    "format": "html-v1",
+    "source_warnings": [],
+    "fallback_reason": "Unsupported body element: del",
+    "markdown_sha256": "837187f17138d5327cacba3b7c6bdea068988e0f3dc699ad771af399f6a16308"
+  },
+  "fetched_at": "2026-09-14T14:19:12+00:00",
+  "source_snapshot_sha256": "e380e3876deb1ee06072084bdf4f1ce8d0f2e2dbbe1c8a2a6a240b0288941a80",
+  "images": {},
+  "local_only": true
+}

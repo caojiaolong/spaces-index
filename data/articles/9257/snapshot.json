@@ -1,0 +1,17 @@
+{
+  "metadata": {
+    "id": "9257",
+    "title": "生成扩散模型漫谈（九）：条件控制生成结果",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/9257",
+    "date": "2022-08-30",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "fetched_at": "2026-09-14T12:57:59+00:00",
+  "source_snapshot_sha256": "905b4fe4188d1b0168f6f9af681f4f65d8c83c33003d7cdfb26738d6581e59d9",
+  "validators": {
+    "etag": null,
+    "last_modified": null
+  }
+}

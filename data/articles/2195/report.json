@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "2195",
+    "title": "用二次方程判别式判断正定矩阵",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/2195",
+    "date": "2013-12-24",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 41,
+    "display_formula_count": 10,
+    "image_count": 0,
+    "heading_count": 0,
+    "code_block_count": 0,
+    "source_text_sha256": "fd194e58cc9e046a25510edd431f54cf69f1a7acb0d18fc9bf47c0b8653342c4",
+    "output_text_sha256": "fd194e58cc9e046a25510edd431f54cf69f1a7acb0d18fc9bf47c0b8653342c4",
+    "latex_sha256": "b0719681fea3ab398c7fbff6c1afdef7d6291e855d71274cb585bc146563110d",
+    "body_sha256": "6203a86d1512d7d9b5f350e195073836d38f3ea91dbc3cce1be78ace25d6ba76",
+    "converter_version": 1,
+    "markdown_sha256": "475ab706f4d2a50b623045a47af1e1d037e7291c3b2beb82f7f83af1342ee535"
+  },
+  "fetched_at": "2026-09-14T13:58:45+00:00",
+  "source_snapshot_sha256": "8370eb32c5113c532b1cc68461d57a1ce25dc1fa1a640d1b8a194b555543a4b3",
+  "images": {},
+  "local_only": true
+}

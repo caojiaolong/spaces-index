@@ -1,0 +1,79 @@
+# 局部余弦相似度大，全局余弦相似度一定也大吗？
+
+> 作者：苏剑林 · 科学空间 · 2024-01-09
+>
+> 原文：<https://spaces.ac.cn/archives/9931>
+>
+> 原文许可：[CC BY-NC-ND 2.5 CN（署名-非商业性使用-禁止演绎）](https://creativecommons.org/licenses/by-nc-nd/2.5/cn/)。
+>
+> 本文件由 spaces-index 非官方、非商业项目进行必要的 HTML → Markdown 格式转换；正文未做摘要、润色、翻译或重组。项目不代表作者，也不表示作者为项目背书。
+>
+> 署名及附加许可说明不代表已获得作者额外授权。第三方素材权利依其原有声明。
+>
+> 原站转载与引用说明：[科学空间 FAQ](https://spaces.ac.cn/archives/6508#%E6%96%87%E7%AB%A0%E5%A6%82%E4%BD%95%E8%BD%AC%E8%BD%BD/%E5%BC%95%E7%94%A8)
+
+---
+
+在分析模型的参数时，有些情况下我们会将模型的所有参数当成一个整体的向量，有些情况下我们则会将不同的参数拆开来看。比如，一个7B大小的LLAMA模型所拥有的70亿参数量，有时候我们会将它当成“一个70亿维的向量”，有时候我们会按照模型的实现方式将它看成“数百个不同维度的向量”，最极端的情况下，我们也会将它看成是“七十亿个1维向量”。既然有不同的看待方式，那么当我们要算一些统计指标时，也就会有不同的计算方式，即局部计算和全局计算，这引出了局部计算的指标与全局计算的指标有何关联的问题。
+
+本文我们关心两个向量的余弦相似度。如果两个大向量的维度被拆成了若干组，同一组对应的子向量余弦相似度都很大，那么两个大向量的余弦相似度是否一定就大呢？答案是否定的。特别地，这还跟著名的“辛普森悖论”有关。
+
+## 问题背景
+
+这个问题源于笔者对优化器的参数增量导致的损失函数变化量的分析。具体来说，假设优化器的更新规则是：
+\begin{equation}\boldsymbol{\theta}_{t+1} = \boldsymbol{\theta}_t - \eta_t \boldsymbol{u}_t\end{equation}
+其中$\boldsymbol{u}_t$是某个指定更新方向（的负方向）的向量。此时泰勒展开到一阶有
+\begin{equation}\mathcal{L}(\boldsymbol{\theta}_{t+1}) = \mathcal{L}(\boldsymbol{\theta}_t - \eta_t \boldsymbol{u}_t)\approx \mathcal{L}(\boldsymbol{\theta}_t) - \eta_t \langle\boldsymbol{u}_t,\boldsymbol{g}_t\rangle\end{equation}
+这里的$\boldsymbol{g}_t$就是梯度$\nabla_{\boldsymbol{\theta}_t}\mathcal{L}(\boldsymbol{\theta}_t)$，所以说，损失函数的变化量近似为
+\begin{equation}- \eta_t \langle\boldsymbol{u}_t,\boldsymbol{g}_t\rangle = - \eta_t \Vert\boldsymbol{u}_t\Vert \Vert\boldsymbol{g}_t\Vert \cos(\boldsymbol{u}_t,\boldsymbol{g}_t)\end{equation}
+所以笔者想到了观察一下$\boldsymbol{u}_t$与$\boldsymbol{g}_t$的余弦相似度，即更新向量与梯度的方向一致性。
+
+但问题来了，正如本文开头所说，模型的参数有不同的拆分方式，我们是将模型所有参数当成一个大向量来算更新向量与梯度的余弦（全局），还是每一层、每个参数单独来算（局部）？笔者两者都做了，并且对局部余弦做了截断（保证每个参数对应的更新向量与梯度的余弦大于某个正阈值），然后发现全局居然小于该阈值。初见之下感觉比较意外，于是简单分析了一番。
+
+## 简单分析
+
+现在问题抽象为：
+
+> 假如两个向量的局部余弦相似度都不小于$\lambda > 0$，那么这两个向量的全局余弦相似度一定不小于$\lambda$吗？
+
+答案大家已经知道了，是否定的。否定只需要举一个反例，假设$\boldsymbol{x}=(1,1),\boldsymbol{y}=(1,2)$，很明显$\boldsymbol{x}\neq\boldsymbol{y}$，所以$\cos(\boldsymbol{x},\boldsymbol{y})\neq 1$，但是它们的子向量——也就是每个分量——都是正数，正数作为一维向量，它们的余弦相似度都是1，所以我们就得到了一个局部余弦相似度全是1、全局相似度小于1的反例。
+
+更一般的分析，我们可以设$\boldsymbol{x}=[\boldsymbol{x}_1,\boldsymbol{x}_2],\boldsymbol{y}=[\boldsymbol{y}_1,\boldsymbol{y}_2]$，那么
+\begin{equation}\begin{aligned}
+\cos(\boldsymbol{x},\boldsymbol{y}) =&\, \frac{\langle \boldsymbol{x}, \boldsymbol{y}\rangle}{\Vert\boldsymbol{x}\Vert \Vert\boldsymbol{y}\Vert}
+= \frac{\langle \boldsymbol{x}_1, \boldsymbol{y}_1\rangle + \langle \boldsymbol{x}_2, \boldsymbol{y}_2\rangle}{\sqrt{\Vert\boldsymbol{x}_1\Vert^2 + \Vert\boldsymbol{x}_2\Vert^2} \sqrt{\Vert\boldsymbol{y}_1\Vert^2 + \Vert\boldsymbol{y}_2\Vert^2}} \\[6pt]
+=&\,\frac{\cos(\boldsymbol{x}_1, \boldsymbol{y}_1) \Vert\boldsymbol{x}_1\Vert \Vert\boldsymbol{y}_1\Vert+ \cos(\boldsymbol{x}_2, \boldsymbol{y}_2)\Vert\boldsymbol{x}_2\Vert \Vert\boldsymbol{y}_2\Vert}{\sqrt{\Vert\boldsymbol{x}_1\Vert^2 + \Vert\boldsymbol{x}_2\Vert^2} \sqrt{\Vert\boldsymbol{y}_1\Vert^2 + \Vert\boldsymbol{y}_2\Vert^2}}
+\end{aligned}\label{eq:cos}\end{equation}
+如果让$\Vert\boldsymbol{x}_1\Vert,\Vert\boldsymbol{y}_2\Vert\to 0$，$\Vert\boldsymbol{x}_2\Vert,\Vert\boldsymbol{y}_1\Vert$保持大于零不动（不失一般性，可以设$\Vert\boldsymbol{x}_2\Vert=\Vert\boldsymbol{y}_1\Vert=1$），那么可以得到$\cos(\boldsymbol{x},\boldsymbol{y})\to 0$，那就是说，不管$\cos(\boldsymbol{x}_1,\boldsymbol{y}_1)$和$\cos(\boldsymbol{x}_2,\boldsymbol{y}_2)$多大，总有一种情况可以让$\cos(\boldsymbol{x},\boldsymbol{y})$无限接近于0，即无法通过$\cos(\boldsymbol{x}_1,\boldsymbol{y}_1)$和$\cos(\boldsymbol{x}_2,\boldsymbol{y}_2)$来让$\cos(\boldsymbol{x},\boldsymbol{y})$有下界。
+
+至于上界，则可以证明：
+\begin{equation}\cos(\boldsymbol{x},\boldsymbol{y})\leq \max\big\{\cos(\boldsymbol{x}_1,\boldsymbol{y}_1),\cos(\boldsymbol{x}_2,\boldsymbol{y}_2)\big\}\label{eq:cos-ul}\end{equation}
+证明其实也很简单，因为这个界很松。不失一般性假设$\cos(\boldsymbol{x}_1,\boldsymbol{y}_1)\leq\cos(\boldsymbol{x}_2,\boldsymbol{y}_2)$，那么根据式$\eqref{eq:cos}$有
+\begin{equation}
+\cos(\boldsymbol{x},\boldsymbol{y}) \leq\left[\frac{\Vert\boldsymbol{x}_1\Vert \Vert\boldsymbol{y}_1\Vert+ \Vert\boldsymbol{x}_2\Vert \Vert\boldsymbol{y}_2\Vert}{\sqrt{\Vert\boldsymbol{x}_1\Vert^2 + \Vert\boldsymbol{x}_2\Vert^2} \sqrt{\Vert\boldsymbol{y}_1\Vert^2 + \Vert\boldsymbol{y}_2\Vert^2}}\right]\cos(\boldsymbol{x}_2, \boldsymbol{y}_2)
+\end{equation}
+方括号部分，其实正好是二维向量$(\Vert\boldsymbol{x}_1\Vert,\Vert\boldsymbol{x}_2\Vert)$和$(\Vert\boldsymbol{y}_1\Vert,\Vert\boldsymbol{y}_2\Vert)$的余弦相似度，所以它必然不大于1，于是有$\cos(\boldsymbol{x},\boldsymbol{y})\leq\cos(\boldsymbol{x}_2,\boldsymbol{y}_2)$，这就证明了不等式$\eqref{eq:cos-ul}$。
+
+（再次强调，以上证明都是在$\cos(\boldsymbol{x}_1,\boldsymbol{y}_1)\geq 0,\cos(\boldsymbol{x}_2,\boldsymbol{y}_2) \geq 0$的假设下完成的，如果存在小于0的情况，则结论可能需要稍加改动。）
+
+## 相关悖论
+
+以上结果有什么更现实的对应吗？有，将它放到相关性分析中，就引申出了著名的“[辛普森悖论（Simpson's paradox）](<https://en.wikipedia.org/wiki/Simpson%27s_paradox>)”。
+
+我们知道，有个衡量线性相关性的系数叫做“皮尔逊系数（Pearson Coefficient）”，定义为
+\begin{equation}r = \frac{\sum\limits_{i=1}^n (x_i-\bar{x})(y_i - \bar{y})}{\sqrt{\sum\limits_{i=1}^n (x_i-\bar{x})^2}\sqrt{\sum\limits_{i=1}^n(y_i - \bar{y})^2}}\end{equation}
+再认真观察一下，如果我们记$\boldsymbol{x} = (x_1,x_2,\cdots,x_n),\boldsymbol{y} = (y_1,y_2,\cdots,y_n)$，那么上式不就是
+\begin{equation}r = \cos(\boldsymbol{x}-\bar{x},\boldsymbol{y}-\bar{y})\end{equation}
+所以，皮尔逊相关系数其实就是数据点减去均值之后的余弦相似度。既然有了余弦相似度，那么上一节的结果就能用过来了，直接结论就是即便两批数据都是明显的线性相关（$\cos > 0$），合起来之后也可能是线性无关的（$\cos \to 0$）。
+
+而“辛普森悖论”说的更彻底一些，说的是每一批数据都是正相关，合起来不仅可能是线性无关，还可能是负相关，这是因为相关系数相比单纯的余弦相似度多了个$\bar{x},\bar{y}$参数，可调的自由度更大。几何图像也非常直观，比如下图：
+
+[![“辛普森悖论”直观图像](<https://spaces.ac.cn/usr/uploads/2024/01/584193663.svg>)](<https://spaces.ac.cn/usr/uploads/2024/01/584193663.svg>)
+
+“辛普森悖论”直观图像
+
+上图中，蓝色数据完全在同一条直线上，而且斜率为正，所以相关系数为1，红色数据也是如此，它们在自己的批次内都是“完全正线性相关”。但是将数据合起来后，如果非要用一条直线拟合，那么只能是虚线，而且斜率为负，即变成了负相关。这就构成了“辛普森悖论”的一个经典例子。
+
+## 文章小结
+
+本文简单讨论了高维向量的局部余弦相似度与全局余弦相似度之间的关系，并进一步讨论了与之相关的“辛普森悖论”。

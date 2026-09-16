@@ -1,0 +1,17 @@
+{
+  "metadata": {
+    "id": "9181",
+    "title": "生成扩散模型漫谈（四）：DDIM = 高观点DDPM",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/9181",
+    "date": "2022-07-27",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "fetched_at": "2026-09-14T12:58:33+00:00",
+  "source_snapshot_sha256": "b7d04b118479d00964bd6ef49fbade45784cd0b01d20e0863c5d962ff3c15996",
+  "validators": {
+    "etag": null,
+    "last_modified": null
+  }
+}

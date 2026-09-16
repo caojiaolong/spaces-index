@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "2996",
+    "title": "从费马大定理谈起（十一）：有理点与切割线法",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/2996",
+    "date": "2014-10-24",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 40,
+    "display_formula_count": 10,
+    "image_count": 4,
+    "heading_count": 6,
+    "code_block_count": 0,
+    "source_text_sha256": "ec991f06f75f8a1bc03b8020d70eb3f757551d7d85f155c6a0d2c246a890b372",
+    "output_text_sha256": "ec991f06f75f8a1bc03b8020d70eb3f757551d7d85f155c6a0d2c246a890b372",
+    "latex_sha256": "bf02b57e8161b519063c9f6c72c4d02cf2677f142b9325492be34898b8f36771",
+    "body_sha256": "a299fefbf734a03a66b8138c6b52ddb52a403f29ded6904b8af83eaf89031c61",
+    "converter_version": 1,
+    "markdown_sha256": "52a8f6e3289b446410890f1c5b5819f44f535d6efce6e18ff7828e855e56f078"
+  },
+  "fetched_at": "2026-09-14T13:50:29+00:00",
+  "source_snapshot_sha256": "cd4be9a4a5946b5fb8b28463d553236b6ec9c3437c42568f95a52ef64ddcc472",
+  "images": {},
+  "local_only": true
+}

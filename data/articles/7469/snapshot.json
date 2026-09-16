@@ -1,0 +1,17 @@
+{
+  "metadata": {
+    "id": "7469",
+    "title": "为什么梯度裁剪能加速训练过程？一个简明的分析",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/7469",
+    "date": "2020-06-05",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "fetched_at": "2026-09-14T13:13:26+00:00",
+  "source_snapshot_sha256": "11e4f2c2711b0bd029fbe7289d1058d7770079089b50922a1496d1cb91dc39d6",
+  "validators": {
+    "etag": null,
+    "last_modified": null
+  }
+}

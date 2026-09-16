@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "9245",
+    "title": "生成扩散模型漫谈（七）：最优扩散方差估计（上）",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/9245",
+    "date": "2022-08-12",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 77,
+    "display_formula_count": 16,
+    "image_count": 3,
+    "heading_count": 7,
+    "code_block_count": 0,
+    "source_text_sha256": "804828b77cb51ad6d2d4b074d2661edf4c5c7ecca1a7d777124b1b0179b16922",
+    "output_text_sha256": "804828b77cb51ad6d2d4b074d2661edf4c5c7ecca1a7d777124b1b0179b16922",
+    "latex_sha256": "22db90ff1139788a5200b4fe51e2d94ce9cf8495db9c72df6c194c20cda751be",
+    "body_sha256": "2f6bb5ebdd834a979119be9e3bafca18f8dc124b82f17a199337bc27944b3ad1",
+    "converter_version": 1,
+    "markdown_sha256": "ddcb358a34060a0191556b8ed1f97a950430ca7ee4ffd2a32a2a4afd4d86f571"
+  },
+  "fetched_at": "2026-09-14T12:58:12+00:00",
+  "source_snapshot_sha256": "2d06e1335c15c677838ceee75b1c65ce0b8c05ab976a037390444cc73257b33e",
+  "images": {},
+  "local_only": true
+}

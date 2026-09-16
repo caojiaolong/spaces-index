@@ -1,0 +1,113 @@
+# Decoder\-only的LLM为什么需要位置编码？
+
+> 作者：苏剑林 · 科学空间 · 2024-09-01
+>
+> 原文：<https://spaces.ac.cn/archives/10347>
+>
+> 原文许可：[CC BY-NC-ND 2.5 CN（署名-非商业性使用-禁止演绎）](https://creativecommons.org/licenses/by-nc-nd/2.5/cn/)。
+>
+> 本文件由 spaces-index 非官方、非商业项目进行必要的 HTML → Markdown 格式转换；正文未做摘要、润色、翻译或重组。项目不代表作者，也不表示作者为项目背书。
+>
+> 署名及附加许可说明不代表已获得作者额外授权。第三方素材权利依其原有声明。
+>
+> 原站转载与引用说明：[科学空间 FAQ](https://spaces.ac.cn/archives/6508#%E6%96%87%E7%AB%A0%E5%A6%82%E4%BD%95%E8%BD%AC%E8%BD%BD/%E5%BC%95%E7%94%A8)
+
+---
+
+众所周知，目前主流的LLM，都是基于Causal Attention的Decoder\-only模型（对此我们在[《为什么现在的LLM都是Decoder\-only的架构？》](<https://spaces.ac.cn/archives/9529>)也有过相关讨论），而对于Causal Attention，已经有不少工作表明它不需要额外的位置编码（简称NoPE）就可以取得非平凡的结果。然而，事实是主流的Decoder\-only LLM都还是加上了额外的位置编码，比如RoPE、ALIBI等。
+
+那么问题就来了：明明说了不加位置编码也可以，为什么主流的LLM反而都加上了呢？不是说“多一事不如少一事”吗？这篇文章我们从三个角度给出笔者的看法：
+
+> 1、位置编码对于Attention的作用是什么？
+> 
+> 
+> 
+> 2、NoPE的Causal Attention是怎么实现位置编码的？
+> 
+> 
+> 
+> 3、NoPE实现的位置编码有什么不足？
+
+## 位置编码
+
+在这一节中，我们先思考第一个问题：位置编码对于Attention机制的意义。
+
+在BERT盛行的年代，有不少位置编码工作被提了出来，笔者在[《让研究人员绞尽脑汁的Transformer位置编码》](<https://spaces.ac.cn/archives/8130>)也总结过一些。后来，我们在[《Transformer升级之路：1、Sinusoidal位置编码追根溯源》](<https://spaces.ac.cn/archives/8231>)中，试图从更贴近原理的视角来理解位置编码，并得到了最早的Sinusoidal位置编码的一种理论解释，这也直接启发了后面的[RoPE](<https://spaces.ac.cn/archives/8265>)。
+
+简单来说，位置编码最根本的作用是<u><strong>打破Attention的置换不变性</strong></u>。什么是置换不变性呢？在BERT时代，我们主要用的是双向Attention，它的基本形式为：
+\begin{equation}\boldsymbol{y}_n = \boldsymbol{f}(\boldsymbol{q}_n;\boldsymbol{x}_1,\boldsymbol{x}_2,\cdots,\boldsymbol{x}_L) = \frac{\sum_{m=1}^L e^{\boldsymbol{q}_n\cdot \boldsymbol{k}_m}\boldsymbol{v}_m}{\sum_{m=1}^L e^{\boldsymbol{q}_n\cdot \boldsymbol{k}_m}},\quad \boldsymbol{k}_n / \boldsymbol{v}_n= \boldsymbol{x}_n\boldsymbol{W}_{k/v} + \boldsymbol{b}_{k/v}\label{eq:bi-att}\end{equation}
+假设$\sigma_1,\sigma_2,\cdots,\sigma_L$是$\{1,2,\cdots,L\}$的任意排列，那么置换不变性是指
+\begin{equation}\boldsymbol{y}_n = \boldsymbol{f}(\boldsymbol{q}_n;\boldsymbol{x}_1,\boldsymbol{x}_2,\cdots,\boldsymbol{x}_L) = \boldsymbol{f}(\boldsymbol{q}_n;\boldsymbol{x}_{\sigma_1},\boldsymbol{x}_{\sigma_2},\cdots,\boldsymbol{x}_{\sigma_L})\end{equation}
+说白了，就是$\boldsymbol{y}_n$跟key\-value的序无关，这跟自然语言的特性不符，所以我们要想办法打破这种不变性。用数据库来类比，没有位置编码的Attention就像是没有时间标签的数据库，检索结果只跟query有关，而位置编码就相当于给数据库的item按顺序打上时间标签，使得检索结果还可以跟item顺序有关。
+
+## 先验认知
+
+位置编码的另一个作用，是加入对Attention的先验认知，或者赋予Attention学习到这些先验认知性质的能力。
+
+比如刚才提到的Sinusoidal位置编码，它是直接由三角函数生成的绝对位置编码，并且相邻的两个位置向量相似度更高，这隐含了相近的token应该具有相近的Embedding的先验；BERT所用的位置编码同样绝对位置编码，但它是随机初始化然后作为参数来学习的，也就是说它没有作出相近的假设，但允许模型学到这个性质（如果模型认为有必要的话）。
+
+更流行的是相对位置编码，它的先验假设是“相对位置比绝对位置更重要”，早期的相对位置编码通常还会做一个截断（大于某个数值后的相对位置直接取同一个值），这里边的假设是“远距离的相对位置可以不用那么准确”，T5的位置编码则更进一步，它将相对位置按对数形式分桶处理，实现了“越远的相对位置越模糊”的效果。此外，有些相对位置编码会直接给Token的重要性加上先验，比如ALIBI就隐含了越远的Token平均而言越不重要的假设（远程衰减）。
+
+诸如RNN、CNN之类的模型，本质上就是把“越近的Token越重要”的先验融入到了架构中，使其可以不用位置编码并且将复杂度降低到线性。然而，先验都是人为的、有偏的，说直接点就是不够准确的，而目前看来LLM的目标是碾压人类而不是模仿人类，这也就可以解释为什么主流架构都用Attention了，因为架构先验更少，即人为的偏见和误区更少，从而天花板更高。
+
+## 单向注意
+
+了解完位置编码的作用后，我们再来思考一下NoPE是如何工作的，或者说它多大程度上能实现上面说的这些位置编码的作用。
+
+前两节我们已经说了，双向Attention具有置换不变性，所以需要位置编码来打破它，所以NoPE不适用于双向Attention，它的前提是单向Attention，或者说Causal Attention：
+\begin{equation}\boldsymbol{y}_n = \boldsymbol{f}(\boldsymbol{q}_n;\boldsymbol{x}_1,\boldsymbol{x}_2,\cdots,\boldsymbol{x}_L) = \frac{\sum_{m=1}^n e^{\boldsymbol{q}_n\cdot \boldsymbol{k}_m}\boldsymbol{v}_m}{\sum_{m=1}^n e^{\boldsymbol{q}_n\cdot \boldsymbol{k}_m}},\quad \boldsymbol{k}_n / \boldsymbol{v}_n= \boldsymbol{x}_n\boldsymbol{W}_{k/v} + \boldsymbol{b}_{k/v}\label{eq:uni-att}\end{equation}
+它跟式$\eqref{eq:bi-att}$的双向Attention的区别，只是求和符号的上限从$L$改为了$n$，由此可见它类似于$\text{cumsum}$，结果依赖于$\boldsymbol{x}_1,\boldsymbol{x}_2,\cdots,\boldsymbol{x}_L$的顺序。换句话说，它本身就不具有置换不变性。因此，“Causal \+ NoPE”的组合原则上不需要位置编码，也能取得非平凡的效果（非平凡是指效果跟有位置编码的在同一级别）。
+
+首先指出该结论的论文应该是[《Transformer Language Models without Positional Encodings Still Learn Positional Information》](<https://papers.cool/arxiv/2203.16634>)，当然，这主要是说作者第一次以“实验\+论文”这种比较规范的方式来宣告该结论，事实上根据笔者的了解，在这篇论文之前该结论已经被不少人所默认。此外，后来的[《The Impact of Positional Encoding on Length Generalization in Transformers》](<https://papers.cool/arxiv/2305.19466>)和[《Length Generalization of Causal Transformers without Position Encoding》](<https://papers.cool/arxiv/2404.12224>)还探讨了NoPE的长度泛化能力。
+
+## 方差辨位
+
+进一步地，“Causal \+ NoPE”是通过什么机制来识别位置信息的呢？我们可以通过一个极简的例子来悟一下。
+
+直观来看，式$\eqref{eq:uni-att}$所定义的$\boldsymbol{y}_n$就是$n$个$\boldsymbol{v}$的（加权）平均，$\boldsymbol{y}_{n+1}$就是$n+1$个$\boldsymbol{v}$的（加权）平均，依此类推，所以我们可以先尝试最简单的情形——均匀分布，也就是考虑如下的Attention矩阵：
+\begin{equation}A = \begin{pmatrix}1 & \\
+\frac{1}{2} & \frac{1}{2} & \\
+\frac{1}{3} & \frac{1}{3} & \frac{1}{3} & \\
+\vdots & \vdots & \vdots & \ddots \\
+\frac{1}{n} & \frac{1}{n} & \cdots & \cdots & \frac{1}{n}\\
+\vdots & \vdots & \vdots & \vdots & \vdots & \ddots \\
+\end{pmatrix}\end{equation}
+在这个假设下，我们有
+\begin{equation}\boldsymbol{y}_n = \frac{1}{n}\sum_{m=1}^n \boldsymbol{v}_m\end{equation}
+然后，我们假设每个$\boldsymbol{v}$的每个分量，都是从同一个“均值为0、方差为$\sigma^2$”的分布中独立重复采样出来的。在此假设之下，我们可以$\boldsymbol{y}_n$的均值和方差：
+\begin{align}\frac{1}{d}\sum_{i=1}^d \boldsymbol{y}_{n,i} \approx&\, \mathbb{E}[\boldsymbol{y}_{n,i}] = \mathbb{E}\left[\frac{1}{n}\sum_{m=1}^n \boldsymbol{v}_{n,i}\right] = \frac{1}{n}\sum_{m=1}^n \mathbb{E}\left[\boldsymbol{v}_{n,i}\right] = 0 \\[5pt]
+\frac{1}{d}\sum_{i=1}^d \boldsymbol{y}_{n,i}^2 \approx&\, \mathbb{E}[\boldsymbol{y}_{n,i}^2] = \mathbb{E}\left[\left(\frac{1}{n}\sum_{m=1}^n \boldsymbol{v}_{n,i}\right)^2\right] = \frac{1}{n^2}\sum_{m=1}^n \mathbb{E}\left[\boldsymbol{v}_{n,i}^2\right] = \frac{\sigma^2}{n} \\
+\end{align}
+第二个等式其实就是RMS Norm中的“MS（Mean Square）”，可以看到它跟位置$n$有关，由于均值为零，所以MS也等价于方差。由此我们得出，“Causal \+ NoPE”实际上是将位置信息隐藏在了$\boldsymbol{y}$的分量方差之中，或者等价地，隐藏在$\boldsymbol{y}$的$\mathcal{l}_2$范数中。当然，读者可能会质疑这个结论的假设。确实，这两个假设顶多适用于初始化的模型，但用来“悟”一下NoPE识别位置的原理其实足够了：<strong>各$\boldsymbol{y}_n$的直观区别就是求平均的$\boldsymbol{v}_m$的个数，而不同数量的平均导致的最直接的变化量就是方差。</strong>
+
+同样的结论也出现在论文[《Latent Positional Information is in the Self\-Attention Variance of Transformer Language Models Without Positional Embeddings》](<https://papers.cool/arxiv/2305.13571>)之中，并且作者在预训练过的NoPE模型上做了进一步的验证，肯定了该结论的普适性。
+
+## 不足之处
+
+让我们来汇总一下到目前为止的结果：首先，头两节我们总结了位置编码的两个作用——主要作用是打破Attention的置换不变性，其次是为Attention注入一些先验；然后我们表明了Causal Attention本身不具备置换不变性，所以它原则上不需要位置编码（NoPE）；最后，我们发现NoPE主要是通过hidden state向量的方差来表达位置信息的。
+
+现在回到标题的问题上来：为什么基于Causal Attention的Decoder\-only模型通常都还会加上位置编码呢？答案其实我们刚才就说了——Causal Attention“原则上”不需要位置编码——“原则上”通常要表达的意思是“能凑合用，但不够好”，说白了就是NoPE虽然还行，但加上位置编码更好。
+
+为什么这样说呢？这还得从“NoPE通过向量的方差来表达位置信息”说起，它相当于说$\boldsymbol{y}_n$是由某个不带位置信息的向量$\boldsymbol{z}_n$乘上某个跟位置$n$相关的标量函数$p(n)$得到，这又意味着：
+
+> 一、NoPE实现的是类似于乘性的绝对位置编码，并且它只是将位置信息压缩到单个标量中，所以这是一种非常弱的位置编码；
+> 
+> 
+> 
+> 二、单个标量能表示的信息有限，当输入长度增加时，位置编码会越来越紧凑以至于难以区分，比如极简例子有$p(n)\sim \frac{1}{\sqrt{n}}$，当$n$足够大时$\frac{1}{\sqrt{n}}$与$\frac{1}{\sqrt{n+1}}$几乎不可分辨，也就是没法区分位置$n$与$n+1$；
+> 
+> 
+> 
+> 三、主流的观点认为相对位置编码更适合自然语言，既然NoPE实现的是绝对位置编码，所以效率上自然不如再给模型额外补充上相对位置编码；
+> 
+> 
+> 
+> 四、NoPE既没有给模型添加诸如远程衰减之类的先验，看上去也没有赋予模型学习到这种先验的能力，当输入长度足够大可能就会出现注意力不集中的问题。
+
+综上所述，NoPE对于长文本可能会存在位置分辨率不足、效率较低、注意力弥散等问题，所以即便是Decoder\-only模型，我们仍需要给它补充上额外的位置编码（特别是相对位置编码），以完善上述种种不足之处。
+
+当然，这些分析主要还是针对Single\-Head Attention的，事实上哪怕每个Head的位置信息只有一个标量，但在Multi\-Head和Multi\-Layer的加持下，总的位置信息也是一个比较可观的大向量了，所以实际上NoPE没有那么糟糕，只是加上位置编码后会更好一些，因为这可以让LLM本身更聚焦于整体的推理能力，而不是还要花心思去复现一些位置编码就可以实现的能力。
+
+## 文章小结
+
+尽管已经有一些工作表明，Deocder\-only模型不加位置编码似乎也能取得不错的结果，但主流的LLM仍然额外加上了额外的位置编码，本文试图对这个现象给出自己的理解。

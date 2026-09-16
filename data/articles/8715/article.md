@@ -1,0 +1,169 @@
+# 关于WhiteningBERT原创性的疑问和沟通
+
+> 作者：苏剑林 · 科学空间 · 2021-10-09
+>
+> 原文：<https://spaces.ac.cn/archives/8715>
+>
+> 原文许可：[CC BY-NC-ND 2.5 CN（署名-非商业性使用-禁止演绎）](https://creativecommons.org/licenses/by-nc-nd/2.5/cn/)。
+>
+> 本文件由 spaces-index 非官方、非商业项目进行必要的 HTML → Markdown 格式转换；正文未做摘要、润色、翻译或重组。项目不代表作者，也不表示作者为项目背书。
+>
+> 署名及附加许可说明不代表已获得作者额外授权。第三方素材权利依其原有声明。
+>
+> 原站转载与引用说明：[科学空间 FAQ](https://spaces.ac.cn/archives/6508#%E6%96%87%E7%AB%A0%E5%A6%82%E4%BD%95%E8%BD%AC%E8%BD%BD/%E5%BC%95%E7%94%A8)
+
+---
+
+在文章[《你可能不需要BERT\-flow：一个线性变换媲美BERT\-flow》](<https://spaces.ac.cn/archives/8069>)中，笔者受到BERT\-flow的启发，提出了一种名为BERT\-whitening的替代方案，它比BERT\-flow更简单，但多数数据集下能取得相近甚至更好的效果，此外它还可以用于对句向量降维以提高检索速度。后来，笔者跟几位合作者一起补充了BERT\-whitening的实验，并将其写成了英文论文[《Whitening Sentence Representations for Better Semantics and Faster Retrieval》](<https://papers.cool/arxiv/2103.15316>)，在今年3月29日发布在Arxiv上。
+
+然而，大约一周后，一篇名为[《WhiteningBERT: An Easy Unsupervised Sentence Embedding Approach》](<https://papers.cool/arxiv/2104.01767>)的论文 （下面简称WhiteningBERT）出现在Arxiv上，内容跟BERT\-whitening高度重合，有读者看到后向我反馈WhiteningBERT抄袭了BERT\-whitening。本文跟关心此事的读者汇报一下跟WhiteningBERT的作者之间的沟通结果。
+
+## 时间节点
+
+首先，回顾一下BERT\-whitening的相关时间节点，以帮助大家捋一下事情的发展顺序：
+
+> <strong>2021年01月11日：</strong>在本博客发表文章[《你可能不需要BERT\-flow：一个线性变换媲美BERT\-flow》](<https://spaces.ac.cn/archives/8069>)，首次提出BERT\-whitening，此时文章中还不包含降维部分内容；
+> 
+> 
+> 
+> <strong>2021年01月19日：</strong>BERT\-whitening的博客转发到公众号“夕小瑶的卖萌屋”（[链接](<https://mp.weixin.qq.com/s/8x2MoHy1iqvQljc9U47iDw>)），经过博客和公众号的双重发布，自认为BERT\-whitening至少在国内NLP圈子还是传播蛮广的；
+> 
+> 
+> 
+> <strong>2021年01月20日：</strong>腾讯研究员刘同学向我指出，BERT\-whitening实际上就是一个PCA，所以还可以用于降维，经检验降维后的句向量在部分任务上还有所提升，可谓又快又好，所以我将这部分内容更新到了博客中；
+> 
+> 
+> 
+> <strong>2021年01月23日：</strong>感觉BERT\-whitening还是有些学术价值的，所以邀请了刘同学和曹同学，计划补充实验并写成英文论文投到ACL2021，当时距离截稿只有一周多的时间；
+> 
+> 
+> 
+> <strong>2021年02月02日：</strong>幸运的是，我们把实验和论文都赶完了，在ACL2021截稿之前把论文投了出去；
+> 
+> 
+> 
+> <strong>2021年03月26日：</strong>ACL2021的review结果出来，我们觉得不大乐观，就懒得rebuttal了，于是计划将论文直接放到Arxiv上；
+> 
+> 
+> 
+> <strong>2021年03月29日：</strong>BERT\-whitening的英文论文[《Whitening Sentence Representations for Better Semantics and Faster Retrieval》](<https://papers.cool/arxiv/2103.15316>)发布在Arxiv上；
+> 
+> 
+> 
+> <strong>2021年04月05日：</strong>WhiteningBERT的论文[《WhiteningBERT: An Easy Unsupervised Sentence Embedding Approach》](<https://papers.cool/arxiv/2104.01767>)出现在Arxiv上；
+> 
+> 
+> 
+> <strong>2021年09月26日：</strong>EMNLP2021的[Accepted Papers](<https://2021.emnlp.org/papers>)公布，确认WhiteningBERT中了EMNLP2021。
+
+读者可能有疑问，从4月5日到现在，已经有半年的时间，怎么现在才来提这个事情？首先，由于BERT\-whitening方法上比较简单，所以不排除别人独立做出同样结果的可能性，因此WhiteningBERT刚出现在Arxiv时并未太在意；其次，退一万步讲，假设（仅仅是假设）就算是WhiteningBERT抄了BERT\-whitening，那也只是放到Arxiv上小打小闹，不是什么大事，所以没必要浪费时间在上面。
+
+然而，当得知WhiteningBERT中了EMNLP2021后，这个事情的性质就不再是“小打小闹”了，所以我决定尝试与WhiteningBERT的作者们进行沟通，希望他们能证明一下WhiteningBERT的原创性，以免引起不必要的误会。下面就是我们的沟通过程。
+
+## 邮件沟通
+
+9月26日，我向WhiteningBERT的各作者发出了第一封邮件，内容如下：
+
+> 各位作者好，
+> 
+> 
+> 
+> 首先恭喜贵作 WhiteningBERT: An Easy Unsupervised Sentence Embedding Approach 中了EMNLP21。
+> 
+> 
+> 
+> 然而，我发现贵作与我在2021年1月11日发布的博客 https://kexue\.fm/archives/8069 在方法上几乎完全一致，甚至最后方法的命名几乎都完全一致，因此我有理由怀疑贵作的方法的原创性。
+> 
+> 
+> 
+> 所以，我认为诸位有必要举证表明你们的工作确实是独立原创的（比如稿件编辑记录，以证明贵作早于1月11日开始）；若否，我要求诸位从EMNLP撤稿并公开致歉。如果这两点都没有回应，那么我只能在网络上发起公开讨论了。
+> 
+> 
+> 
+> 期待回复。
+
+由于当时刚得知相关消息后，情绪比较激动，所以文字上不大友好，让大家见笑了。当天不久后，WhiteningBERT的第一作者回复我了：
+
+> 您好，
+> 
+> 
+> 
+> 来信收悉，感谢您对我们的工作的关注！
+> 
+> 
+> 
+> 首先，我们认为，我们的工作（2021年4月5日提交arxiv）与你们的“Whitening Sentence Representations for Better Semantics and Faster Retrieval”（2021年3月29日提交arxiv）属于同期工作。两篇论文有相似的地方，但是想要声明的点和所讲的故事并不几乎完全一致，这在我们的论文中有提到并且做了引用。
+> 
+> 
+> 
+> 第二，关于无监督句子表示的研究，我们早在去年就在进行。我们希望在已有的预训练模型基础上，无监督地获取句子的表示，并探索了层间组合、数据增广、引入图结构、线性变换、预训练、知识迁移等等多个方法，并在一些句子语义相似任务上实验，中间一些不work的方法就没说了，最后得出三个简单有用的结论，总结为这一篇实验性质的论文。至于最后取名为WhiteningBERT，是考虑到我们其中一个方法用到了PCA Whitening，这个名字有标题党的嫌疑，但为方便大家叫，最后写论文时改名为WhiteningBERT。（我们最开始的取名叫MatchingBERT，下图显示这里面部分文件的最后修改时间是在2020年7月。）
+> 
+> 
+> 
+> 第三，关于方法的原创性，我们并没有说PCA Whitening算法是我们独创的。事实上我们结论中的三个方法都很简单，并且也有很多论文和教程也介绍过白化方法，因此novelty有限这点我们也承认。
+> 
+> 
+> 
+> 最后，针对您所提到的内容相似（包括你所提到的博客）以及创新性不够的问题，在EMNLP2021审稿过程中，也已经有审稿人提出并讨论了，PC包括最后的SPC都了解整个事情原委。但最后他们仍然决定录用，我想我们的工作也还是有PC们觉得有价值的地方。
+> 
+> 
+> 
+> 祝好
+
+其中，回信中还附上了两张截图：
+
+[![截图1：MatchingBERT项目时间戳](<https://spaces.ac.cn/usr/uploads/2021/10/3871642442.png>)](<https://spaces.ac.cn/usr/uploads/2021/10/3871642442.png>)
+
+截图1：MatchingBERT项目时间戳
+
+[![截图2：meta review截图](<https://spaces.ac.cn/usr/uploads/2021/10/211060094.png>)](<https://spaces.ac.cn/usr/uploads/2021/10/211060094.png>)
+
+截图2：meta review截图
+
+此时，我对第一作者愿意就此问题进行积极沟通是相当感激的，然而，第一作者的回信并不能消除我的疑问，于是我也在当天回信：
+
+> 你好，
+> 
+> 
+> 
+> 感谢你的回信。但是，我质疑的不是你们的创新性，我质疑的是原创性。
+> 
+> 
+> 
+> 1、我知道微软有很多人专门研究NLP的各种任务，但这一点不能否定我的质疑；
+> 2、截图1只能作为你们很早就进行一个名为“MatchingBERT”的工作的一个非常弱的证明，但我无法确定你MatchingBERT本身的工作内容；
+> 3、截图2同样无法否定我的质疑。
+> 
+> 
+> 
+> 至于“PC包括最后的SPC都了解整个事情原委”，你的意思是，PC和SPC在知悉“在WhiteningBERT提交到arxiv的两个多月之前，就有一篇中文博客介绍了同样的方法；在WhiteningBERT提交到arxiv的一周之前，就有一篇英文论文介绍了同样的方法”这个前提下，仍然不质疑你们的原创性并录用？
+
+上述交流都是在9月26日内进行的，此后，直到10月5日，我依然没有收到WhiteningBERT任一作者的任何回应，于是我再次向全体作者发邮件咨询：
+
+> 各位作者好，抱歉打扰大家国庆节的兴致。
+> 
+> 
+> 
+> 在我向各位提出质疑后，当日第一作者便回了我邮件，然后我也即时回复了第一作者的邮件，交流内容均已附在后面。但在我回复之后，到目前为止，并未收到任一作者的任何后续回复。本着科学的精神，我不希望造成什么误会，所以希望能进一步确实一下此事的相关情况。所以再冒昧打扰一下大家，确定不对此事作出进一步回应了吗？
+
+很快，第一作者给我回了邮件：
+
+> 您好，
+> 
+> 
+> 
+> 我们目前已请公司法律部进行评估，并由法律部对此进行回复。由于是现在是国庆假日期间，希望您予以理解！
+> 
+> 
+> 
+> 祝好，
+
+## 个人看法
+
+说实话，收到第一作者的这个邮件，我的感受是十分复杂的，有震惊，也有不解，还有点无语。本来，我也不确定事情的性质如何，所以决定先发邮件咨询，避免事后的误会和尴尬。如果作者们能显示WhiteningBERT的提出的独立性，那本就是一件皆大欢喜的事情，对读者与我都有一个交代。结果，作者迟迟没有直接回应这个问题，反而转而咨询法律部，这是一个什么操作？
+
+前面介绍时间节点的时候，笔者已经说了，当我们决定将BERT\-whitening整理成文并投ACL2021的时候，离ACL2021的截稿已经不到两周了，但也就是不到两周的时间，我们就把实验做完、论文写好（虽然英文水平比较差）了，所以，如果WhiteningBERT的提出时间真的早于BERT\-whitening，那么凭借着这么强大的作者阵容，应该早就能完成实验和论文了吧，再不济，在BERT\-whitening的博客发布之后，应该要将自己的论文发布到Arxiv上以显示自己的原创性了吧？怎么就这么巧，还要等到BERT\-whitening的英文论文放到Arxiv后才把自己的论文放出来？
+
+当然，即便存在这些疑问，我们依然无法定性这件事，原因无他，就是BERT\-whitening太简单了，不排除独立重复做出同样工作的可能，因此才有了后面的邮件沟通。所以，又回到了作者的“迷之操作”上了，移交法律部是出于什么考虑的操作？
+
+事实上，这件事本身就也很难有什么实质证据来实锤抄袭的，所以就算WhiteningBERT的作者们不作任何回应，也都不存在什么法律风险。之所以希望作者能出示一下相关证明，纯粹是道德层面上的呼吁，并不是要将谁“绳之于法”。这是一个科研问题，并不是一个公关问题。因此，就算法律部能消除作者们的法律风险，但如果作者们一直不愿意出示实质性的证明，又如何消除读者与我的心中的疑虑呢？

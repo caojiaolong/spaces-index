@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "9336",
+    "title": "利用CUR分解加速交互式相似度模型的检索",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/9336",
+    "date": "2022-11-02",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 115,
+    "display_formula_count": 4,
+    "image_count": 2,
+    "heading_count": 5,
+    "code_block_count": 0,
+    "source_text_sha256": "2cf120fa603857a402dfcb492fa7d989c26df3473265ee13748b6120fd23f213",
+    "output_text_sha256": "2cf120fa603857a402dfcb492fa7d989c26df3473265ee13748b6120fd23f213",
+    "latex_sha256": "2b76f29c5a0a6927f1cb29cfc8764698305d22df5c203538141aefafdffda8a3",
+    "body_sha256": "59b6f41c07a8e92b1eaff9f4583ecce79e5d4250eae468bcb2b902a8eb9a852a",
+    "converter_version": 1,
+    "markdown_sha256": "66fc3f69aef715fab3a41a08170a56ad012e71ca3fdcf10c7363e38a2a2ce7b2"
+  },
+  "fetched_at": "2026-09-14T12:57:12+00:00",
+  "source_snapshot_sha256": "7a80bad1298a5917d12f962f9bdc1933e087e067b39e836fa73f5a28b67bb243",
+  "images": {},
+  "local_only": true
+}

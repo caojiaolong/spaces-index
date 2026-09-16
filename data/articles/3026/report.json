@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "3026",
+    "title": "在Python中使用GMP（gmpy2）",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/3026",
+    "date": "2014-10-28",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 8,
+    "display_formula_count": 0,
+    "image_count": 0,
+    "heading_count": 0,
+    "code_block_count": 4,
+    "source_text_sha256": "e3017eecfe1d14f0f10daf22974efcec06e220e09892714cb4bd357db221745f",
+    "output_text_sha256": "e3017eecfe1d14f0f10daf22974efcec06e220e09892714cb4bd357db221745f",
+    "latex_sha256": "2785a91f0414ea387377942eb89247dca9116dae3bcca766f630a74e10a76d56",
+    "body_sha256": "b7018a5a10266ff7e0576129eea03740a720060ae2c613f3ef4fa5c05797c0e4",
+    "converter_version": 1,
+    "markdown_sha256": "86d1d38a0af4746d66c2e58821c7eceb54bd18975d8cdbcdccd5ef5e9a33f35e"
+  },
+  "fetched_at": "2026-09-14T13:50:05+00:00",
+  "source_snapshot_sha256": "eb8489e5ab99414feb0335e3cea2f43c2f38e9ec50b2dcbf443a1a07b669a139",
+  "images": {},
+  "local_only": true
+}

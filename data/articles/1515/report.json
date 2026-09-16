@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "1515",
+    "title": "[欧拉数学]素数定理及加强",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/1515",
+    "date": "2011-11-19",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 28,
+    "display_formula_count": 9,
+    "image_count": 0,
+    "heading_count": 0,
+    "code_block_count": 0,
+    "source_text_sha256": "9d414ba7e376610e02d5811ff8c1f3683bdf39788bf7a303c81062fed0021c97",
+    "output_text_sha256": "9d414ba7e376610e02d5811ff8c1f3683bdf39788bf7a303c81062fed0021c97",
+    "latex_sha256": "f45b5be2ba3ef0c080a17867ad34ecfb877d46243e916ada64029b36ff7c3068",
+    "body_sha256": "cf88cdc6a07aa29c9a2868e9fda45dea722034679ee334c9b4042c6360f19f20",
+    "converter_version": 1,
+    "markdown_sha256": "510c9996777cd593c7c672a87ef20b23787c67c0cda7ebb6b56e27335cdd417b"
+  },
+  "fetched_at": "2026-09-14T14:16:32+00:00",
+  "source_snapshot_sha256": "10d841346294da0eeca71d239dffacdd19f44f42b319935d7d8438b2eab660f1",
+  "images": {},
+  "local_only": true
+}

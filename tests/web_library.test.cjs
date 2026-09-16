@@ -6,23 +6,61 @@ const path = require("node:path");
 
 // Stub browser startup only. Load the actual shipped scripts and keep fetch
 // unresolved so neither startup nor these pure catalogue tests access a network.
-function runtime() {
+function runtime(stored = {}) {
   const element = { addEventListener() {}, setAttribute() {}, dataset: {}, style: { setProperty() {} } };
+  const storage = new Map(Object.entries(stored));
   const context = vm.createContext({
-    document: { querySelector: () => element, documentElement: element, addEventListener() {} },
+    document: { querySelector: selector => ["#continue-reading", "#reading-percent[data-reading-post]"].includes(selector) ? null : element,
+      querySelectorAll: () => [], documentElement: element, addEventListener() {} },
     window: { addEventListener() {} },
     matchMedia: () => ({ matches: false, addEventListener() {} }),
-    localStorage: { getItem: () => null, setItem() {} },
+    localStorage: { getItem: key => storage.get(key) || null, setItem: (key, value) => storage.set(key, value) },
     location: { protocol: "http:" },
+    history: { scrollRestoration: "auto" },
     fetch: () => new Promise(() => {}),
     setTimeout: () => 0, clearTimeout() {}, requestAnimationFrame: () => 0,
     URL, URLSearchParams, AbortController, console,
   });
-  for (const file of ["library.js", "app.js"]) {
+  for (const file of ["library.js", "reader.js", "app.js"]) {
     vm.runInContext(fs.readFileSync(path.join(__dirname, "..", "web", file), "utf8"), context);
   }
-  return (expression) => JSON.parse(vm.runInContext(`JSON.stringify(${expression})`, context));
+  return (expression) => JSON.parse(vm.runInContext(`JSON.stringify(${expression})`, context) ?? "null");
 }
+
+test("reading percentage is persistent, monotonic and only complete at 100", () => {
+  const key = 'spaces-index-reading-progress-v1';
+  const run = runtime({ [key]: JSON.stringify({ 1: 42, 2: 99.9, 3: 100, 4: 200, 5: '100' }) });
+  assert.deepEqual(run(`[getPostProgress('1'), getPostProgress('2'), isPostRead('2'), isPostRead('3'), getPostProgress('4'), getPostProgress('5')]`), [42,99,false,true,0,0]);
+  run(`recordReadingProgress('1', 63)`);
+  run(`recordReadingProgress('1', 12)`);
+  assert.equal(run(`getPostProgress('1')`), 63);
+  // A stale tab writing another article must preserve a newer stored maximum.
+  run(`localStorage.setItem(READING_PROGRESS_KEY, JSON.stringify({'1':82, '3':100}))`);
+  run(`recordReadingProgress('2', 100)`);
+  assert.deepEqual(run(`[getPostProgress('1'), [...ui.readPostIds].sort()]`), [82,['2','3']]);
+  const saved = run(`localStorage.getItem(READING_PROGRESS_KEY)`);
+  assert.equal(runtime({ [key]: saved })(`getPostProgress('1')`), 82);
+  assert.equal(run(`isPostRead('1')`), false);
+});
+
+test("legacy link clicks do not become fabricated 100 percent progress", () => {
+  const run = runtime({ 'spaces-index-read-posts-v1': '["1","2"]' });
+  assert.deepEqual(run(`[getPostProgress('1'), isPostRead('1'), currentReadPostCount()]`), [0,false,0]);
+  assert.equal(run(`localStorage.getItem('spaces-index-read-posts-v1')`), '["1","2"]');
+  assert.deepEqual(runtime({ 'spaces-index-reading-progress-v1': 'invalid' })(`[...ui.readingProgress]`), []);
+});
+
+test("body progress waits for the last line and accounts for fixed navigation", () => {
+  const run = runtime();
+  const percent = obj => run(`window.SpacesReader.readingPercent(${JSON.stringify(obj)})`);
+  assert.equal(percent({top:500,bottom:4500,scroll:0,viewport:1000,insetTop:76}), 0);
+  assert.equal(percent({top:-2400,bottom:1600,scroll:2900,viewport:1000,insetTop:76}), 80);
+  assert.equal(percent({top:-2990,bottom:1010,scroll:3490,viewport:1000,insetTop:76}), 99);
+  assert.equal(percent({top:-3000,bottom:1000,scroll:3500,viewport:1000,insetTop:76}), 100);
+  assert.equal(percent({top:-3000,bottom:1000,scroll:3500,viewport:1000,insetTop:76,insetBottom:60}), 98);
+  assert.equal(percent({top:500,bottom:800,scroll:0,viewport:1000,insetTop:76}), 100);
+  assert.equal(percent({top:0,bottom:0,scroll:0,viewport:1000}), 0);
+});
 
 test("topic evidence counts distinct shared articles and normalized shared tags", () => {
   const run = runtime();

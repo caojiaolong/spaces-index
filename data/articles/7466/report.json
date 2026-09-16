@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "7466",
+    "title": "泛化性乱弹：从随机噪声、梯度惩罚到虚拟对抗训练",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/7466",
+    "date": "2020-06-01",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 127,
+    "display_formula_count": 19,
+    "image_count": 0,
+    "heading_count": 14,
+    "code_block_count": 1,
+    "source_text_sha256": "0353d9c4d20d678ad3cdcf7204519db1b8f2511d4997a04e2818c7120e72623b",
+    "output_text_sha256": "0353d9c4d20d678ad3cdcf7204519db1b8f2511d4997a04e2818c7120e72623b",
+    "latex_sha256": "83ebfa94a999122f2032b89906edaeaa19d634b7395402d84f9845ff5688283e",
+    "body_sha256": "182bf7b42379517abdcf9449f6c8bfe78a049132575fe963b5cebfe8fad0b01c",
+    "converter_version": 1,
+    "markdown_sha256": "7a0b7d50809a64bbf0d2a8093de015a5d7dfb7c0c8639bf4928c989550a40b3c"
+  },
+  "fetched_at": "2026-09-14T13:13:32+00:00",
+  "source_snapshot_sha256": "b94734c790a737c20b1f2cd9c33a8b40233b2345766ddac10dcfc7b77680184a",
+  "images": {},
+  "local_only": true
+}

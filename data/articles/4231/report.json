@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "4231",
+    "title": "Python的多进程编程技巧",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/4231",
+    "date": "2017-02-19",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 0,
+    "display_formula_count": 0,
+    "image_count": 0,
+    "heading_count": 3,
+    "code_block_count": 3,
+    "source_text_sha256": "99808409c30570adc9ad81f599f69ddc6baa4cee0c1c1530ff8d32eacb586ec6",
+    "output_text_sha256": "99808409c30570adc9ad81f599f69ddc6baa4cee0c1c1530ff8d32eacb586ec6",
+    "latex_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "body_sha256": "1037b575a32ef99f0f07083ead625e28d7b91773a5ae724fd5f3791adeeb4b4d",
+    "converter_version": 1,
+    "markdown_sha256": "42f6c628e1af1d51e3f2d6fa43ea07ea3a2f32efe72e962e78de1b052ad7fb25"
+  },
+  "fetched_at": "2026-09-14T07:36:07+00:00",
+  "source_snapshot_sha256": "0a1b4eaf4f30fc7f06d9641cbb289407ff7d268c53e85a844c2f1d9d7a78ec76",
+  "images": {},
+  "local_only": true
+}

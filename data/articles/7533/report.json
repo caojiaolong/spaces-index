@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "7533",
+    "title": "积分梯度：一种新颖的神经网络可视化方法",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/7533",
+    "date": "2020-06-28",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 76,
+    "display_formula_count": 7,
+    "image_count": 3,
+    "heading_count": 9,
+    "code_block_count": 0,
+    "source_text_sha256": "02da8e700ed1d8269f3a58bdec7c4939436a63430115718bc87ffb4186261ca4",
+    "output_text_sha256": "02da8e700ed1d8269f3a58bdec7c4939436a63430115718bc87ffb4186261ca4",
+    "latex_sha256": "543019a292d1e28b9b361f0d474a86ebcf724fb314e65660910913c12caf89ed",
+    "body_sha256": "60042a6fd0d15dd875e9387d44e0fe40a23d721149bbee60152ff55f8946c1ba",
+    "converter_version": 1,
+    "markdown_sha256": "a2b28ffed1a7c6263c8bb52fc7703c31d65e8e8d22085c7ba0fb9990b3aadbb9"
+  },
+  "fetched_at": "2026-09-14T13:12:53+00:00",
+  "source_snapshot_sha256": "ae7e3e36106114f04a84dd08dc77dd2494db68598445eeb5c3c126bc6ee0f865",
+  "images": {},
+  "local_only": true
+}

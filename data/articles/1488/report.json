@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "1488",
+    "title": "2011年全国高中数学联赛",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/1488",
+    "date": "2011-10-23",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 0,
+    "display_formula_count": 0,
+    "image_count": 0,
+    "heading_count": 0,
+    "code_block_count": 0,
+    "source_text_sha256": "b7ebf3c17db590af7a027b5fccf2ba8165bbef588d36fa3d1e03b03343c7c758",
+    "output_text_sha256": "b7ebf3c17db590af7a027b5fccf2ba8165bbef588d36fa3d1e03b03343c7c758",
+    "latex_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "body_sha256": "930f0ab0e2a4dc53861065896b4afe1b9e43a9febeb398913f83ad3a4133cc29",
+    "converter_version": 1,
+    "markdown_sha256": "1a4786d6fd1c01087b40aec3c33098b86eff0c6ed23a9de03140c230b4635e51"
+  },
+  "fetched_at": "2026-09-14T14:17:12+00:00",
+  "source_snapshot_sha256": "e96768797a30e4a9fc0ed8edc5e6e6667a018e6b4060e634317b145b4c9c9bb3",
+  "images": {},
+  "local_only": true
+}

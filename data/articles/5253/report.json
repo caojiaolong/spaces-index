@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "5253",
+    "title": "变分自编码器（一）：原来是这么一回事",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/5253",
+    "date": "2018-03-18",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 144,
+    "display_formula_count": 11,
+    "image_count": 8,
+    "heading_count": 13,
+    "code_block_count": 0,
+    "source_text_sha256": "cc45c48f4bb0301e7a22a8bff5467018eda8ffb2e98c5e57a6b631936a8b8500",
+    "output_text_sha256": "cc45c48f4bb0301e7a22a8bff5467018eda8ffb2e98c5e57a6b631936a8b8500",
+    "latex_sha256": "b170af98bdcf76b732833135cf622c23a344c61def14ac35987cc4f2cc6bf9ce",
+    "body_sha256": "171dd171a4285e2ea2aba34f30baef227997a4cf9990f8a84703029b80d9bfb0",
+    "converter_version": 1,
+    "markdown_sha256": "4592f3f90376a5784a15ddcf4f66a04378da753ceb70cd435eb16294632f8deb"
+  },
+  "fetched_at": "2026-09-14T13:27:54+00:00",
+  "source_snapshot_sha256": "d5604af74e98d9be170365f88f5e2c5070d31fea2d3d18f8546cb7cef48aebc5",
+  "images": {},
+  "local_only": true
+}

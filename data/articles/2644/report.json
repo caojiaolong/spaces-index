@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "2644",
+    "title": "线性微分方程组：已知特解求通解",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/2644",
+    "date": "2014-06-18",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 48,
+    "display_formula_count": 18,
+    "image_count": 0,
+    "heading_count": 0,
+    "code_block_count": 0,
+    "source_text_sha256": "dfd13a8d9ecfd7beb9f91401d081cbe1253f9b1c9507d2951987ab6197005da3",
+    "output_text_sha256": "dfd13a8d9ecfd7beb9f91401d081cbe1253f9b1c9507d2951987ab6197005da3",
+    "latex_sha256": "a907c89d23e6f50f03653603373af4d3cf89423a73fd15662a3314ec36658c5b",
+    "body_sha256": "b4771c90463dae8ccdeed7a31648b8da0f12dd53cd842fb6b623cfd1b4fe7190",
+    "converter_version": 1,
+    "markdown_sha256": "ce621fda05071e08810b313ffddbdb15f9f55e7238bfd90b9a758746edb78d0a"
+  },
+  "fetched_at": "2026-09-14T13:53:57+00:00",
+  "source_snapshot_sha256": "e0a083d37ef9b2f29c4406fa127e87b650930068f4225b6cb637c5e1bdfae669",
+  "images": {},
+  "local_only": true
+}

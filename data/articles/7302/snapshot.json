@@ -1,0 +1,17 @@
+{
+  "metadata": {
+    "id": "7302",
+    "title": "AdaFactor优化器浅析（附开源实现）",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/7302",
+    "date": "2020-03-23",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "fetched_at": "2026-09-14T13:14:47+00:00",
+  "source_snapshot_sha256": "9256d2a6cc78240ce007b962f8ccb42df85146a3824dcac29e3ba6e31f526f03",
+  "validators": {
+    "etag": null,
+    "last_modified": null
+  }
+}

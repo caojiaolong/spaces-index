@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "10",
+    "title": "网站本次改版感悟...",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/10",
+    "date": "2009-07-08",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 0,
+    "display_formula_count": 0,
+    "image_count": 0,
+    "heading_count": 0,
+    "code_block_count": 0,
+    "source_text_sha256": "fec7866275a24048cc056b4f2791c7f6817b752d0a2668511a5648c1ed435bac",
+    "output_text_sha256": "fec7866275a24048cc056b4f2791c7f6817b752d0a2668511a5648c1ed435bac",
+    "latex_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "body_sha256": "77c079a78437188fd1bbb534827426f85aa484831963cf64e62fd599135fc38b",
+    "converter_version": 1,
+    "markdown_sha256": "b5e84405cb0b229a88851e9efcb8df82d96bf21fd18e22406f1dfb21b2340f24"
+  },
+  "fetched_at": "2026-09-14T15:07:04+00:00",
+  "source_snapshot_sha256": "bdca860c8ab43b21dc80595e2a063f09cae4f9f94137fe34cf70dc0462041135",
+  "images": {},
+  "local_only": true
+}

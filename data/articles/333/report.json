@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "333",
+    "title": "写在2009年终结之际...",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/333",
+    "date": "2009-12-31",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 0,
+    "display_formula_count": 0,
+    "image_count": 1,
+    "heading_count": 0,
+    "code_block_count": 0,
+    "source_text_sha256": "2b460413ed8fe55edc7dcee9f2b3fd73658aa54a8635993165c80accf21ac4b7",
+    "output_text_sha256": "2b460413ed8fe55edc7dcee9f2b3fd73658aa54a8635993165c80accf21ac4b7",
+    "latex_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "body_sha256": "6fdf10ccc9767d1dd33489a5dbaef03aaf58575e2790437c2a8358b83fe028c6",
+    "converter_version": 1,
+    "markdown_sha256": "af028952283d5e6d92dab6829b470154ae89aafea312ec1362f1471af956ddeb"
+  },
+  "fetched_at": "2026-09-14T14:44:23+00:00",
+  "source_snapshot_sha256": "ab3c29dfa6ced9a15b8b591ea8a59afdf84c573281c045ba1497a95730f90aea",
+  "images": {},
+  "local_only": true
+}

@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "281",
+    "title": "静候狮子座流星雨",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/281",
+    "date": "2009-11-17",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 0,
+    "display_formula_count": 0,
+    "image_count": 2,
+    "heading_count": 0,
+    "code_block_count": 0,
+    "source_text_sha256": "ed3c3a62e3aed89027e77a2e6b21d3cdcc7e15178f32710709f004df2f528adc",
+    "output_text_sha256": "ed3c3a62e3aed89027e77a2e6b21d3cdcc7e15178f32710709f004df2f528adc",
+    "latex_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "body_sha256": "d4d79088fea18fd5a46357aef33246e68e56a40a12c8827feda093b75199d379",
+    "converter_version": 1,
+    "markdown_sha256": "31d8c8a1b7241832ecdd4bb0bb0dcdd3947b0a9fc8d3015ff070fea87d56f7f3"
+  },
+  "fetched_at": "2026-09-14T14:45:51+00:00",
+  "source_snapshot_sha256": "3f251227a9a8076461c72d8b053c31e4db39eefa36223718d0feddbbb86eadc3",
+  "images": {},
+  "local_only": true
+}

@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "9105",
+    "title": "相对位置编码Transformer的一个理论缺陷与对策",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/9105",
+    "date": "2022-06-07",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 52,
+    "display_formula_count": 5,
+    "image_count": 0,
+    "heading_count": 7,
+    "code_block_count": 0,
+    "source_text_sha256": "103790c865b3dabdd5b9bafdc010fec0e0090706cd461c667e74625465d0ba96",
+    "output_text_sha256": "103790c865b3dabdd5b9bafdc010fec0e0090706cd461c667e74625465d0ba96",
+    "latex_sha256": "140c8523a13bc495786ae0cd55052f4a254e3b91e1718d0207d3559e4ad5d5eb",
+    "body_sha256": "be658e2bd469567520c266c177cdd9f82c0eb5ad30b56ad24f3839831b059775",
+    "converter_version": 1,
+    "markdown_sha256": "38c519fffaad1413b852c5e43c3e171f9f97df4b30c23f57a34747c68b1ab5f7"
+  },
+  "fetched_at": "2026-09-14T12:59:12+00:00",
+  "source_snapshot_sha256": "bda6e4d5b76bb1008124eba068bb1cd5818f94ffba73fa8b490a4714d1478e32",
+  "images": {},
+  "local_only": true
+}

@@ -1,0 +1,39 @@
+{
+  "metadata": {
+    "id": "342",
+    "title": "【竖直上抛】炮弹能够射多高(第二宇宙速度)？",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/342",
+    "date": "2010-01-17",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "source_dom_exact": true,
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "attributes_exact": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 21,
+    "display_formula_count": 5,
+    "image_count": 1,
+    "heading_count": 0,
+    "code_block_count": 0,
+    "source_text_sha256": "2b8c721392b4336a8ed6cfcb6ae0274426119ff1044263f7847f4db7d8d7a096",
+    "output_text_sha256": "2b8c721392b4336a8ed6cfcb6ae0274426119ff1044263f7847f4db7d8d7a096",
+    "latex_sha256": "99c9eff581d7df7fd189c7330cb5d62d4baba6496b94fba7ee7fba947976ff01",
+    "body_sha256": "9102442b9f7dc9655c67b7e2f94c482c7e92245ace0fe809cb8bf2be3b19975f",
+    "converter_version": 1,
+    "format": "html-v1",
+    "source_warnings": [],
+    "fallback_reason": "Unsupported body element: fong",
+    "markdown_sha256": "94dd146eb28eed8d81db065c4e70e5a0ffef263636ac5192082561cffe5412e1"
+  },
+  "fetched_at": "2026-09-14T14:43:43+00:00",
+  "source_snapshot_sha256": "5cf98edc8bc6e387ece896b0f4536cbae9e62b0b62beaf7f1424124caa93b723",
+  "images": {},
+  "local_only": true
+}

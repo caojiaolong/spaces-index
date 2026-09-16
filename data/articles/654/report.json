@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "654",
+    "title": "数学魔术——漂亮的近似",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/654",
+    "date": "2010-05-29",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 4,
+    "display_formula_count": 1,
+    "image_count": 0,
+    "heading_count": 0,
+    "code_block_count": 0,
+    "source_text_sha256": "db531fe9eea230f5d5535ad3b25f4bef1a7cacf3a98b6302e5950c28d6f0111b",
+    "output_text_sha256": "db531fe9eea230f5d5535ad3b25f4bef1a7cacf3a98b6302e5950c28d6f0111b",
+    "latex_sha256": "1f66e1bdc7cb5f1bdb84d3fbdd877d5e0ac8c16282fa6f86233268524859cfb0",
+    "body_sha256": "470352d80b165c153e60efb07263184f332ab508fc13a13d1bdc261145fa1978",
+    "converter_version": 1,
+    "markdown_sha256": "83cd17ff551d206794977258bc3ed1185735ac9d7425df3cfe145723bb9008f6"
+  },
+  "fetched_at": "2026-09-14T14:36:56+00:00",
+  "source_snapshot_sha256": "a2242cff77e40b12665a35f476c6f887f632f5f08ea0b6e5b281f9c36ab26472",
+  "images": {},
+  "local_only": true
+}

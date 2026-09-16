@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "617",
+    "title": "4月21日全国哀悼日，科学空间深切哀悼",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/617",
+    "date": "2010-04-20",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 0,
+    "display_formula_count": 0,
+    "image_count": 1,
+    "heading_count": 0,
+    "code_block_count": 0,
+    "source_text_sha256": "27399b22211cb78c07a0a4f2d1fac159124697e423c077d1978bf0b636db91b8",
+    "output_text_sha256": "27399b22211cb78c07a0a4f2d1fac159124697e423c077d1978bf0b636db91b8",
+    "latex_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "body_sha256": "a2e0ab7d9f08a7dcb5306d4081ddf0973d974b9e3e39a616898da737d6f158ef",
+    "converter_version": 1,
+    "markdown_sha256": "90e91cc6dc0bdf4c33c11de1a0017d5117f8fa01191ad20747af4f8130913c2f"
+  },
+  "fetched_at": "2026-09-14T14:37:35+00:00",
+  "source_snapshot_sha256": "a6e5ce117fb709ece200b674a98bcb6e55b83dc149c45e247186e931a413e152",
+  "images": {},
+  "local_only": true
+}

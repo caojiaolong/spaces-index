@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "10739",
+    "title": "Muon续集：为什么我们选择尝试Muon？",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/10739",
+    "date": "2025-02-27",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 60,
+    "display_formula_count": 13,
+    "image_count": 6,
+    "heading_count": 7,
+    "code_block_count": 0,
+    "source_text_sha256": "8562bff28563b5196c87dbd55822d881e70ff0e277ab492880457a276bdca186",
+    "output_text_sha256": "8562bff28563b5196c87dbd55822d881e70ff0e277ab492880457a276bdca186",
+    "latex_sha256": "16998881e840b576eef1c909d1c08a250aeca3885b0ab365765bfc3eff92fe0d",
+    "body_sha256": "7194f463a4b8637f81de7bdefbb129138c421b4d72b3f66122ec420831414a1d",
+    "converter_version": 1,
+    "markdown_sha256": "fde2497ed7265ada1cc63d543a54e4b82b55f7af88686b82b1bcce1f3ee53c62"
+  },
+  "fetched_at": "2026-09-14T12:43:44+00:00",
+  "source_snapshot_sha256": "e653d4ad56b34eeb7b6ab4aaea6c41e874ea8867510eb6cf19073e4db8fe2cd6",
+  "images": {},
+  "local_only": true
+}

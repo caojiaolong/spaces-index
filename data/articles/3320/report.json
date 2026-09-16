@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "3320",
+    "title": "胡闹的胜利：将算子引入级数求和",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/3320",
+    "date": "2015-05-26",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 29,
+    "display_formula_count": 13,
+    "image_count": 0,
+    "heading_count": 3,
+    "code_block_count": 0,
+    "source_text_sha256": "47e8045da9fdf8f55c1375808d4e2c2b54b94c7d905b522dacb6a1abba149e78",
+    "output_text_sha256": "47e8045da9fdf8f55c1375808d4e2c2b54b94c7d905b522dacb6a1abba149e78",
+    "latex_sha256": "94876c94ddef77196e1aadaefc58fc1eadbadd14c28cf4115c08f4f59e2b0730",
+    "body_sha256": "8f18cfa99040a2a321ec9f32daf5532cd65d422ad5a03ed486db9cbaaedb6051",
+    "converter_version": 1,
+    "markdown_sha256": "04734cd1fae18a1993847c4df73e8dd5e107b7321e054e45c83146c53d7e34a8"
+  },
+  "fetched_at": "2026-09-14T13:46:19+00:00",
+  "source_snapshot_sha256": "1425b6777199aca6c87d1e145bf89164ccb70e8aeb3ec7d7ef4433529778ce03",
+  "images": {},
+  "local_only": true
+}

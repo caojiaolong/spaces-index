@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "1908",
+    "title": "[公告]评论功能说明",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/1908",
+    "date": "2013-02-05",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 0,
+    "display_formula_count": 0,
+    "image_count": 0,
+    "heading_count": 0,
+    "code_block_count": 0,
+    "source_text_sha256": "f95c35eb9334976c84ea9681de936da2ff1e39a158386e96e6e2ec6fc7223f17",
+    "output_text_sha256": "f95c35eb9334976c84ea9681de936da2ff1e39a158386e96e6e2ec6fc7223f17",
+    "latex_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "body_sha256": "ffbbf268ef10338ed9b0ee4d789d2d438ed64b6eb1254dbd3b71b18130c62260",
+    "converter_version": 1,
+    "markdown_sha256": "a57d220b4a4735af622bf014d59b8e109278241583710794b90f308c2e018980"
+  },
+  "fetched_at": "2026-09-14T14:05:06+00:00",
+  "source_snapshot_sha256": "0cea906437b28e5506011c255db9870c595abb11e58656cfc404f83e3d352588",
+  "images": {},
+  "local_only": true
+}

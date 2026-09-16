@@ -1,0 +1,39 @@
+{
+  "metadata": {
+    "id": "1068",
+    "title": "《自然极值》系列——2.费马原理",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/1068",
+    "date": "2010-11-27",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "source_dom_exact": true,
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "attributes_exact": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 7,
+    "display_formula_count": 3,
+    "image_count": 2,
+    "heading_count": 0,
+    "code_block_count": 0,
+    "source_text_sha256": "99761d791c491ffbc94c53bb1378e92ab4083551177b2ef41e4f4bfe5c6bebfe",
+    "output_text_sha256": "99761d791c491ffbc94c53bb1378e92ab4083551177b2ef41e4f4bfe5c6bebfe",
+    "latex_sha256": "29e395bb541eb8e5435931cdbcb7fde986c9117a9b80718944b2de1a9e545b26",
+    "body_sha256": "cb2ba28745fab067a8acd4e866bc92c30a7519bdff2c3ed7d281d8af2176d601",
+    "converter_version": 1,
+    "format": "html-v1",
+    "source_warnings": [],
+    "fallback_reason": "Unsupported body element: del",
+    "markdown_sha256": "b802529ab08fc58b56d5faffb89027bcc624d3348cc2c5e784af005dddb3a13a"
+  },
+  "fetched_at": "2026-09-14T14:27:05+00:00",
+  "source_snapshot_sha256": "e3b68e6395dd2b418409c643b6c8d86cfe7d4f56eafc70b3ad34914179ffee5a",
+  "images": {},
+  "local_only": true
+}

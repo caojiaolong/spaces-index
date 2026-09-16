@@ -1,0 +1,29 @@
+# 《自然极值》系列——2\.费马原理
+
+> 作者：苏剑林 · 科学空间 · 2010-11-27
+>
+> 原文：<https://spaces.ac.cn/archives/1068>
+>
+> 原文许可：[CC BY-NC-ND 2.5 CN（署名-非商业性使用-禁止演绎）](https://creativecommons.org/licenses/by-nc-nd/2.5/cn/)。
+>
+> 本文件由 spaces-index 非官方、非商业项目进行必要的 HTML → Markdown 格式转换；正文未做摘要、润色、翻译或重组。项目不代表作者，也不表示作者为项目背书。
+>
+> 署名及附加许可说明不代表已获得作者额外授权。第三方素材权利依其原有声明。
+>
+> 原站转载与引用说明：[科学空间 FAQ](https://spaces.ac.cn/archives/6508#%E6%96%87%E7%AB%A0%E5%A6%82%E4%BD%95%E8%BD%AC%E8%BD%BD/%E5%BC%95%E7%94%A8)
+
+---
+
+<div data-spaces-format="html-v1">
+<p data-spaces-tag="p" data-spaces-attrs="{}">物理学的美不仅仅表现在简洁的公式上。我们还惊奇地发现，很多物理现象都是按照使某个变量达到极值的方式发生。一个典型的例子就是费马原理，它指出了光的传播路径的一个重要规律：<strong data-spaces-tag="strong" data-spaces-attrs="{}"><u data-spaces-tag="u" data-spaces-attrs="{}">光总是沿着所花时间最短的路径传播。</u></strong>这里我们将简单介绍一下费马原理。</p><p data-spaces-tag="p" data-spaces-attrs="{}">费马原理俗称“最快到达原理”、“最小时间原理”。1657年，费马提出：</p><blockquote data-spaces-tag="blockquote" data-spaces-attrs="{}"><del data-spaces-tag="del" data-spaces-attrs="{}">从P点到达Q点，在所有可行的路径中，光选择了所需时间最短的一条。</del></blockquote><blockquote data-spaces-tag="blockquote" data-spaces-attrs="{}">从P点到达Q点，在所有可行的路径中，光选择了所需时间为极值的一条。</blockquote><p data-spaces-tag="p" data-spaces-attrs="{}">这是一个极其奇妙的原理，也是自然界中最神奇的极值之一。作为非生物的光，居然自主地选择了最优路径，成为世界上“效率最高”的东西，这让人不得不佩服宇宙的伟大。这究竟是造物者的精心设计，还是无心之作？</p><p data-spaces-tag="p" data-spaces-attrs="{}">费马原理主要体现在：</p><blockquote data-spaces-tag="blockquote" data-spaces-attrs="{}">1、光速是宇宙中最快的速度<br data-spaces-tag="br" data-spaces-attrs="{}">
+2、光沿着直线传播（均匀介质）<br data-spaces-tag="br" data-spaces-attrs="{}">
+3、光的反射定律<br data-spaces-tag="br" data-spaces-attrs="{}">
+4、光的折射定律（Snell定律）</blockquote><p data-spaces-tag="p" data-spaces-attrs="{}">其中(1)是物理学上的内容，我们不去讨论它；而(2)和(3)则是我们相对熟悉的内容，即便是现在的初中生已经接触过了，因此也不再详细讨论，<u data-spaces-tag="u" data-spaces-attrs="{}">我们只稍微谈一下(4)，并可以发现：(2)和(3)均是(4)的结论。</u></p><p data-spaces-tag="p" data-spaces-attrs="{}"></p><div data-spaces-tag="div" data-spaces-attrs="{&quot;class&quot;: [&quot;pic-container&quot;], &quot;style&quot;: &quot;float:right; margin: 5px auto 2px 1px&quot;}"><div data-spaces-tag="div" data-spaces-attrs="{&quot;style&quot;: &quot;display: inline-block; background-color: #fff&quot;}"><div data-spaces-tag="div" data-spaces-attrs="{&quot;class&quot;: [&quot;typecho-caption&quot;, &quot;aligncenter&quot;], &quot;style&quot;: &quot;max-width: 210px; margin: 0 0 0 8px&quot;}"><div data-spaces-tag="div" data-spaces-attrs="{&quot;style&quot;: &quot;margin: 5px&quot;}"><a data-spaces-tag="a" data-spaces-attrs="{&quot;href&quot;: &quot;/attachment/1069/&quot;, &quot;title&quot;: &quot;Snell定律.png&quot;}" href="https://spaces.ac.cn/attachment/1069/" title="Snell定律.png"><img data-spaces-tag="img" data-spaces-attrs="{&quot;alt&quot;: &quot;Snell定律&quot;, &quot;src&quot;: &quot;/usr/uploads/2010/11/2713384313.png&quot;, &quot;style&quot;: &quot;max-width: 100%&quot;}" src="https://spaces.ac.cn/usr/uploads/2010/11/2713384313.png" alt="Snell定律"></a></div><p data-spaces-tag="p" data-spaces-attrs="{}">Snell定律</p></div></div></div><p data-spaces-tag="p" data-spaces-attrs="{}">如图，<strong data-spaces-tag="strong" data-spaces-attrs="{}"><font data-spaces-tag="font" data-spaces-attrs="{&quot;color&quot;: &quot;red&quot;}" color="red">在直线inteface上有动点O，并有两定点P和Q，使$\frac{PO}{v_1}+\frac{QO}{v_2}$最小的充要条件是$\frac{v_1}{\sin\theta_1}=\frac{v_2}{\sin\theta_2}$。</font></strong></p><p data-spaces-tag="p" data-spaces-attrs="{}">我们可以设$P=(x_1,y_1),Q=(x_2,y_2),O=(x,0)$，则<br data-spaces-tag="br" data-spaces-attrs="{}">
+$$t=\frac{\sqrt{(x_1-x)^2+y_1^2}}{v_1}+\frac{\sqrt{(x_2-x)^2+y_2^2}}{v_2}$$<br data-spaces-tag="br" data-spaces-attrs="{}">
+对其求导并令其为0得<br data-spaces-tag="br" data-spaces-attrs="{}">
+$$0=\frac{x-x_1}{v_1 \sqrt{(x_1-x)^2+y_1^2}}+\frac{x-x_2}{v_2 \sqrt{(x_2-x)^2+y_2^2}}$$<br data-spaces-tag="br" data-spaces-attrs="{}">
+即<br data-spaces-tag="br" data-spaces-attrs="{}">
+$$\frac{v_1}{\sin\theta_1}=\frac{v_2}{\sin\theta_2}$$<br data-spaces-tag="br" data-spaces-attrs="{}">
+证毕。</p><p data-spaces-tag="p" data-spaces-attrs="{}">注意，在上述证明中，<strong data-spaces-tag="strong" data-spaces-attrs="{}">我们并没有谈到P,Q必须在inteface的两侧，因此，结论对于P,Q在同一侧也是成立的。</strong>也许下面的图可以帮助你更好的理解这一点（通过镜面对称的方式，变成光的折射问题，你是不是感觉这种方法有点熟悉呢？）<br data-spaces-tag="br" data-spaces-attrs="{}">
+</p><div data-spaces-tag="div" data-spaces-attrs="{&quot;class&quot;: [&quot;pic-container&quot;]}"><div data-spaces-tag="div" data-spaces-attrs="{&quot;class&quot;: [&quot;typecho-caption&quot;, &quot;aligncenter&quot;], &quot;style&quot;: &quot;max-width: 100%&quot;}"><div data-spaces-tag="div" data-spaces-attrs="{&quot;style&quot;: &quot;margin: 5px&quot;}"><a data-spaces-tag="a" data-spaces-attrs="{&quot;href&quot;: &quot;/attachment/1070/&quot;, &quot;title&quot;: &quot;折射定律-推论.PNG&quot;}" href="https://spaces.ac.cn/attachment/1070/" title="折射定律-推论.PNG"><img data-spaces-tag="img" data-spaces-attrs="{&quot;alt&quot;: &quot;折射定律-推论&quot;, &quot;src&quot;: &quot;/usr/uploads/2010/11/2556823453.png&quot;, &quot;style&quot;: &quot;max-width:100%&quot;}" src="https://spaces.ac.cn/usr/uploads/2010/11/2556823453.png" alt="折射定律-推论"></a></div><p data-spaces-tag="p" data-spaces-attrs="{&quot;class&quot;: [&quot;typecho-caption-text&quot;]}">折射定律-推论</p></div></div><p data-spaces-tag="p" data-spaces-attrs="{}">为了方便引用，<strong data-spaces-tag="strong" data-spaces-attrs="{}">我们姑且将P,Q在同一侧情况的Snell定律成为光的“<u data-spaces-tag="u" data-spaces-attrs="{}">折反射定律</u>”吧。</strong>我们不难看到，光的直线传播和反射定律其实就是$v_1=v_2$时候的情况。要注意的是，虽然我们上面用到了“充要条件”这一名词，但那只是一个特殊的情况，在更多的情况里，<strong data-spaces-tag="strong" data-spaces-attrs="{}"><font data-spaces-tag="font" data-spaces-attrs="{&quot;color&quot;: &quot;red&quot;}" color="red">费马原理只是一个“必要条件”</font></strong>。在这一篇文章里头，我们<u data-spaces-tag="u" data-spaces-attrs="{}">稍稍地对光的传播和光路最快做了一个论证，为接下来的应用奠好基础。</u>不过，接着并非要马上谈到光学原理的应用，而是先把目光转移，集中到<strong data-spaces-tag="strong" data-spaces-attrs="{}">另外一个“自然极值”</strong>上边去，它和我们平时看到的很多现象有关...</p>
+</div>

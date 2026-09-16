@@ -1,0 +1,11 @@
+<div class="PostContent" id="PostContent">
+<p><span style="color:Red"><strong>今天一早起来，兴致勃勃地发表着日志，却发现评论用不了了，侧边栏也故障了</strong>。</span><br/>
+如图：<br/>
+</p><div class="pic-container"><div class="typecho-caption aligncenter" style="max-width: 100%"><div style="margin: 5px"><a href="/usr/uploads/2009/07/20090723132232.JPG" target="_blank" title="点击查看原图"><img alt="" src="/usr/uploads/2009/07/20090723132232.JPG" style="max-width:100%"/></a></div><p class="typecho-caption-text"></p></div></div><p><strong><u>紧接着，尝试更新缓存、重新安装、换空间，都无法解决。</u></strong></p><p>于是只好到官方网站求助，谁知道发现，<strong><span style="color:Green">只要删除cookies就好了</span></strong>（真冤枉，害我丢失了数据）</p><p><strong>为了一劳永逸，按以下方式进行了修改：</strong></p><p><strong>解决方法：</strong><br/>
+打开class/cls_article.asp找到</p><blockquote>Ts_Content = Split(Split(Split(Ts, "|-|")(1), "|\$|")(1), "|+|")(0)</blockquote><p>改成</p><blockquote>Ts_Content = Split(Split(Split(Ts, "|-|")(1), "|\$|")(0), "|+|")(0)</blockquote><p>试验过，删除这行也没有什么影响。</p>
+
+
+
+
+
+</div>

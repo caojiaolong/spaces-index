@@ -1,0 +1,28 @@
+<div class="PostContent" id="PostContent">
+<p>天文学中有一个名词Airmass，注意这并非Air mass（空气质量），这是<font color="blue"><strong>指天顶距等于z的方向上大气光学厚度和天顶方向大气光学厚度之比</strong></font><del>，我目前也找不到它的中文名称究竟是什么，反正觉得如果译成“大气质量”很怪，就暂且翻译成“大气厚度指数”好了。</del>现在知道它叫做“大气光学质量”了，一般用X表示，如下图中，$X={BC}/{AC}$。<br/>
+</p><div class="pic-container"><div class="typecho-caption aligncenter" style="max-width: 100%"><div style="margin: 5px"><a href="/attachment/398/" title="星光传播示意图.JPG"><img alt="星光传播示意图" src="/usr/uploads/2010/02/1077770125.jpg" style="max-width:100%"/></a></div><p class="typecho-caption-text">星光传播示意图</p></div></div><p>在一片较小的区域内，大气层和地面都可以视为平行平面，这时有一个很好的近似公式：<br/>
+$$X=\sec z$$<br/>
+对于现在的中学教材来说，有的读者可能不了解\sec为何物，实际上：$\sec z=\frac{1}{\cos z}$<br/>
+在60°的时候，airmass约等于2。然而地球是不平坦的，根据不同的精度要求，z的峰值为60-75°。随着天顶角的变大，该公式的准确度迅速降低；该式会在地平线的时候趋于无穷大，而根据实际的弯曲大气情况，airmass通常不会大于40。</p><p>实际上，如果<u>不考虑大气折射，把地球看成一个球体，而大气层也视为高度为y的空心球体，只从几何的角度来看，则从天顶角z发出来的光线要穿透的大气厚度为</u>（$R_E$为地球半径）：<br/>
+$$s=\sqrt{R_E^2 \cos^2 z+2R_E \cdot y+y^2}-R_E \cdot\cos z$$<br/>
+或者写成<br/>
+$$s=\sqrt{(R_E +y)^2 - R_E^2 \sin^2 z}-R_E \cdot\cos z$$</p><p>但实际中还必须考虑折射等因素，所以很多<font color="blue"><u>插值公式</u></font>便出来了。例如， <strong>Young和Irvine</strong>于1967年在$X=\sec z$基础上加入了一个修正因子：<br/>
+$$X=\sec z_t [1-0.0012(\sec^2 z_t -1)]$$<br/>
+这里的$z_t$是真实的天顶角，也就是修正了大气折射后的天顶角。这样处理后，天顶角z的峰值可以达到80°。但同样随着天顶角的变大准确度也迅速降低；该式会在z=86.6°时达到11.13的最大值，而在地平线的时候趋于负无穷大。</p><p><strong>Hardie</strong>在1962年使用了$\sec z-1$的多项式来修正：<br/>
+$$X=\sec z-0.0018167(\sec z-1)-0.002875(\sec z-1)^2 -0.0008083(\sec z-1)^3$$<br/>
+这提供了高达85°的峰值，不过和上式一样，该式会达到一个最大值，然后在地平线的时候趋于负无穷大。</p><p>1966年<strong>Rozenberg</strong>提出了<br/>
+$$X=(\cos z+0.025e^{-11\cos z})^{-1}$$<br/>
+该法在地平线的时候依旧能够得到合理的值（z=90°时airmass约等于40）</p><p><strong>Kasten和Young</strong>在1989年发展成<br/>
+$$X=\frac{1}{\cos z+0.50572(96.07995-z)^{-1.6364}}$$<br/>
+公式在z接近90°仍然相当合理，在地平线时的结果约为38，注意这里的z必须使用角度为单位。</p><p>1994年<strong>Young</strong>得出<br/>
+$$X=\frac{1.002432\cos^2 z_t + 0.148386\cos z_t + 0.0096467}{\cos^3 z_ t + 0.149864\cos^2 z_t + 0.0102963\cos z_t + 0.000303978}$$<br/>
+同样$z_t$为真实天顶角。这条公式可以将误差（即使是地平线的结果）控制在0.0037内。</p><p>2002年<strong>Pickering</strong>派生出了公式<br/>
+$$X=\frac{x}{\sin(h+\frac{244}{165+47h^{1.1}})}$$<br/>
+h=90°-z</p><p>下图的曲线比较了不同的插值公式准确度：<br/>
+</p><div class="pic-container"><div class="typecho-caption aligncenter" style="max-width: 500px"><div style="margin: 5px"><a href="/attachment/397/" title="不同的插值公式准确度比较"><img alt="不同的插值公式准确度比较" src="/usr/uploads/2010/02/3634003498.png" style="max-width: 100%"/></a></div><p class="typecho-caption-text">不同的插值公式准确度比较</p></div></div><p><strong><font color="red">差值公式是从不同的运算过程中导出的近似公式，它只考虑了z这个因素，因为在该问题中，我们只有z这个变量。在一定程度上，插值公式方便了我们的计算。尽管看起来有些公式很麻烦，但对于计算机时代来说，公式的关键是：有效、准确。</font></strong></p><p>更多内容可以参考：<a href="http://en.wikipedia.org/wiki/Airmass" target="_blank" title="维基百科Airmass">http://en.wikipedia.org/wiki/Airmass</a></p>
+
+
+
+
+
+</div>

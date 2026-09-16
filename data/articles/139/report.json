@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "139",
+    "title": "生活拾零...",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/139",
+    "date": "2009-09-30",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 0,
+    "display_formula_count": 0,
+    "image_count": 0,
+    "heading_count": 0,
+    "code_block_count": 0,
+    "source_text_sha256": "023efa8705271979636aa7f18528d6dfe387d7c955de8dce8708f03074d7251e",
+    "output_text_sha256": "023efa8705271979636aa7f18528d6dfe387d7c955de8dce8708f03074d7251e",
+    "latex_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "body_sha256": "830486b45215791816f1c6be682c1a87d0b2818d377d0255bef4850c2d2e64cf",
+    "converter_version": 1,
+    "markdown_sha256": "c11c116fa9d8b5df6508d4b49a5ac7e1c2ba81bd47c3e20aef1a9d9e73d87709"
+  },
+  "fetched_at": "2026-09-14T14:51:27+00:00",
+  "source_snapshot_sha256": "14b9235da43509709e068730e3ff0af1ee0d7223b2382e393c0720c9c26875c5",
+  "images": {},
+  "local_only": true
+}

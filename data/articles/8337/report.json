@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "8337",
+    "title": "搜狐文本匹配：基于条件LayerNorm的多任务baseline",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/8337",
+    "date": "2021-04-16",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 1,
+    "display_formula_count": 0,
+    "image_count": 1,
+    "heading_count": 4,
+    "code_block_count": 1,
+    "source_text_sha256": "23c92c312a069b8912c14bbf52ed242b531c338ae5a45fd0d1879d8ccb6bec91",
+    "output_text_sha256": "23c92c312a069b8912c14bbf52ed242b531c338ae5a45fd0d1879d8ccb6bec91",
+    "latex_sha256": "fcd786a89cb3b869c180c5f2d35d577d69d9a55b3006546168f06cc5f4f754b7",
+    "body_sha256": "e5f0b30e0b361cb72b8264391774518638e12a702ac98bea218f23853be362b0",
+    "converter_version": 1,
+    "markdown_sha256": "a4a9f1be151862056c7b82cd2706f54525e0dd191199f0b5d1679e81d1010992"
+  },
+  "fetched_at": "2026-09-14T13:07:12+00:00",
+  "source_snapshot_sha256": "0b56484d7ddea1c890940d13442eb03bd961aa2d8a91d2423a9c480f8b6e3ab0",
+  "images": {},
+  "local_only": true
+}

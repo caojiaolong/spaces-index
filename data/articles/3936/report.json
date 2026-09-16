@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "3936",
+    "title": "进驻中山大学南校区，折腾校园网",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/3936",
+    "date": "2016-09-05",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 0,
+    "display_formula_count": 0,
+    "image_count": 0,
+    "heading_count": 4,
+    "code_block_count": 8,
+    "source_text_sha256": "442a9ffaecc70c21f2821ab772040f7814c82da5fdd533b829c8a32469c8e7e9",
+    "output_text_sha256": "442a9ffaecc70c21f2821ab772040f7814c82da5fdd533b829c8a32469c8e7e9",
+    "latex_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "body_sha256": "06b9a058bf75442ec940c245b0dd1395f028768c26146462b07a114665369701",
+    "converter_version": 1,
+    "markdown_sha256": "e5af1d605cbf6ce9f9b10d510532e700b1a5827c6ee24f97ba0c9ae55cd19cc4"
+  },
+  "fetched_at": "2026-09-14T13:38:19+00:00",
+  "source_snapshot_sha256": "2425f25b3aa561adf820f44eb5cac24a1925b0116a18fda46f06eee20deecad3",
+  "images": {},
+  "local_only": true
+}

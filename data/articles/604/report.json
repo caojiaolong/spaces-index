@@ -1,0 +1,39 @@
+{
+  "metadata": {
+    "id": "604",
+    "title": "Lamost被冠名为“郭守敬望远镜”",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/604",
+    "date": "2010-04-17",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "source_dom_exact": true,
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "attributes_exact": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 0,
+    "display_formula_count": 0,
+    "image_count": 3,
+    "heading_count": 0,
+    "code_block_count": 0,
+    "source_text_sha256": "d5925dd0194c79b1bb9f0fc1ccaa28cc64e3d352036559e4fe24618564862e47",
+    "output_text_sha256": "d5925dd0194c79b1bb9f0fc1ccaa28cc64e3d352036559e4fe24618564862e47",
+    "latex_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "body_sha256": "545a667a2958f4f26613ef849155c0372e30d2379c6e46369e2ab66162b20e7f",
+    "converter_version": 1,
+    "format": "html-v1",
+    "source_warnings": [],
+    "fallback_reason": "Standard Markdown round trip changed source structure",
+    "markdown_sha256": "19940cfda486828b10f4d6d23cf9284e7fa715fafe7b8ddbfffb67164f8db9b8"
+  },
+  "fetched_at": "2026-09-14T14:37:55+00:00",
+  "source_snapshot_sha256": "d1ab180b3b065e877eb62e0cf1d84f4910f1269c4016cbc27c7e6cf52bfcb8de",
+  "images": {},
+  "local_only": true
+}

@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "4374",
+    "title": "记录一次半监督的情感分析",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/4374",
+    "date": "2017-05-04",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 0,
+    "display_formula_count": 0,
+    "image_count": 0,
+    "heading_count": 3,
+    "code_block_count": 6,
+    "source_text_sha256": "d336d368617c2a270fcba61e104b0dc08606ea20a0eb14f4af295f3a661f83bd",
+    "output_text_sha256": "d336d368617c2a270fcba61e104b0dc08606ea20a0eb14f4af295f3a661f83bd",
+    "latex_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "body_sha256": "06d5348c67af60cb54207515bef2b4be0c255c7ac6665babd4f3241131cdf18f",
+    "converter_version": 1,
+    "markdown_sha256": "3ceb9dd96cfd22fb3e1074d064e3cd0c5981f3f9eaa3d5f76af61373f3de3fe5"
+  },
+  "fetched_at": "2026-09-14T13:32:41+00:00",
+  "source_snapshot_sha256": "269bd9974a7255f750b7f033b127b6333f21571096f449b38651851f3beb468d",
+  "images": {},
+  "local_only": true
+}

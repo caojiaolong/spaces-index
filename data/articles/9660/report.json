@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "9660",
+    "title": "梯度流：探索通向最小值之路",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/9660",
+    "date": "2023-06-16",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 97,
+    "display_formula_count": 23,
+    "image_count": 0,
+    "heading_count": 7,
+    "code_block_count": 0,
+    "source_text_sha256": "44323d3da55ef463a53832c1cd39ae00e7b29a2d9d945a7187305b675036f9c8",
+    "output_text_sha256": "44323d3da55ef463a53832c1cd39ae00e7b29a2d9d945a7187305b675036f9c8",
+    "latex_sha256": "795137404809b5d59921019459841bd0c0dfe406a8e113c268d18bb7a41d4ff1",
+    "body_sha256": "14653dec3cf5245290b30870d49d8037f4889ff829aaf8184e671c509b106d99",
+    "converter_version": 1,
+    "markdown_sha256": "651a56e48ce12da3c8c50098a84bdcb611cd57e683319c718991701ea301d1ff"
+  },
+  "fetched_at": "2026-09-14T12:53:40+00:00",
+  "source_snapshot_sha256": "3c20acd276548cea6f7d7f109d19b967517b3ec2201486fbeb554922db501508",
+  "images": {},
+  "local_only": true
+}

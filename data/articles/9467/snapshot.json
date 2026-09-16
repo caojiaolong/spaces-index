@@ -1,0 +1,17 @@
+{
+  "metadata": {
+    "id": "9467",
+    "title": "生成扩散模型漫谈（十六）：W距离 ≤ 得分匹配",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/9467",
+    "date": "2023-02-14",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "fetched_at": "2026-09-14T12:55:42+00:00",
+  "source_snapshot_sha256": "4e0fde88d0d41fef6c9d3cba02ddb7e6e41ff47a2898e4a73ce417f3b8dbb810",
+  "validators": {
+    "etag": null,
+    "last_modified": null
+  }
+}

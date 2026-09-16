@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "1712",
+    "title": "军训结束了，基本在华师安家了",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/1712",
+    "date": "2012-09-21",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 0,
+    "display_formula_count": 0,
+    "image_count": 0,
+    "heading_count": 0,
+    "code_block_count": 0,
+    "source_text_sha256": "5a219b704b5bf9c8fe82f59ca3a761113d8a0ee54cc77a3cadf60cc7731511bc",
+    "output_text_sha256": "5a219b704b5bf9c8fe82f59ca3a761113d8a0ee54cc77a3cadf60cc7731511bc",
+    "latex_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "body_sha256": "338e0a98851c495208b6d88596c562b0dbf5b6a9ebd75dd2d1de51a7cecf1aff",
+    "converter_version": 1,
+    "markdown_sha256": "447ebe3830b18f76b1879d35ece993a7bd492a46aaee15c98bdc2341fdfc9e96"
+  },
+  "fetched_at": "2026-09-14T14:10:48+00:00",
+  "source_snapshot_sha256": "430d578b55747eb121cd2dcacf4ecedb57c6d6798d25ea95579bdde769491019",
+  "images": {},
+  "local_only": true
+}

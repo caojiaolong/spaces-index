@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "1556",
+    "title": "我的自主招生成绩公布了",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/1556",
+    "date": "2012-03-04",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 0,
+    "display_formula_count": 0,
+    "image_count": 1,
+    "heading_count": 0,
+    "code_block_count": 0,
+    "source_text_sha256": "623c641b10ed06c3dea1880508e1ce8fc57eee6303f48aaecd50998005302f30",
+    "output_text_sha256": "623c641b10ed06c3dea1880508e1ce8fc57eee6303f48aaecd50998005302f30",
+    "latex_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "body_sha256": "633ce73e428b58a4b78f9e6188fe29ed39b7eb7d5d9027de8c984f610da5098f",
+    "converter_version": 1,
+    "markdown_sha256": "3297e20f07782a5aae3230b436ffd91b964e6f1e0072aee0642e27516901adf2"
+  },
+  "fetched_at": "2026-09-14T14:15:16+00:00",
+  "source_snapshot_sha256": "92252f9368087e4043e93c310f13e4bc9e543eb667e614c2ba90789bb40a8dc8",
+  "images": {},
+  "local_only": true
+}

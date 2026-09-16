@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "9706",
+    "title": "Transformer升级之路：11、将β进制位置进行到底",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/9706",
+    "date": "2023-07-31",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 86,
+    "display_formula_count": 16,
+    "image_count": 0,
+    "heading_count": 6,
+    "code_block_count": 0,
+    "source_text_sha256": "d08e2c65bfe6f37f4e67a507e9edf314c6d78b83f6a1c57216d47d919abc4578",
+    "output_text_sha256": "d08e2c65bfe6f37f4e67a507e9edf314c6d78b83f6a1c57216d47d919abc4578",
+    "latex_sha256": "028e16c4a7a75a2bffffbdaeb307a21d4527d33573027174aefa10f0b2124898",
+    "body_sha256": "09ff840531f8e3b64802fda4429f0534a283f54bb6b6a4b0d2b9f27458b2a00c",
+    "converter_version": 1,
+    "markdown_sha256": "a7fe846e1d92278c5bc625b2b2f786b0e3109f242c12ea0e1b20904fcf71d92c"
+  },
+  "fetched_at": "2026-09-14T12:53:00+00:00",
+  "source_snapshot_sha256": "a978e3adeef485785b0f1cd90c4896001c633124aa5761f12704a60252c5a062",
+  "images": {},
+  "local_only": true
+}

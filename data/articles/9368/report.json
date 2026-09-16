@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "9368",
+    "title": "从局部到全局：语义相似度的测地线距离",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/9368",
+    "date": "2022-12-07",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 31,
+    "display_formula_count": 1,
+    "image_count": 0,
+    "heading_count": 4,
+    "code_block_count": 0,
+    "source_text_sha256": "c22b78029e8de77b18cbc3794a0413715fd61b4371d936ed46eb665ea61e12c9",
+    "output_text_sha256": "c22b78029e8de77b18cbc3794a0413715fd61b4371d936ed46eb665ea61e12c9",
+    "latex_sha256": "10872cbbec6a69b7a56f812807636c703e8cedee80cdedc40cedb7c614f5160c",
+    "body_sha256": "bc40d8bd8eb7fdd9e4ffe12e488ba04bc0cfba3d4da3293d35184c7be43b2fbe",
+    "converter_version": 1,
+    "markdown_sha256": "bd6ca377ec6aad032f08e659e9c79b6fa8aa1c16c349c43a38baaa7632ecda0c"
+  },
+  "fetched_at": "2026-09-14T12:56:42+00:00",
+  "source_snapshot_sha256": "dca5d0c1513318e427c8a33c5334ed1cd60a72c941404b9c0d7a99c29ed30eeb",
+  "images": {},
+  "local_only": true
+}

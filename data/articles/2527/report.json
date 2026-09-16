@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "2527",
+    "title": "数独的自动推理",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/2527",
+    "date": "2014-04-21",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 9,
+    "display_formula_count": 0,
+    "image_count": 8,
+    "heading_count": 13,
+    "code_block_count": 0,
+    "source_text_sha256": "f95dfd15033a58017e23c08f13946a659218444fd951e00d9af8020f89a50825",
+    "output_text_sha256": "f95dfd15033a58017e23c08f13946a659218444fd951e00d9af8020f89a50825",
+    "latex_sha256": "bfbf4dfca404e0dc8f35c16f062085db928018e1c2d41db82475021c3717d326",
+    "body_sha256": "7378f187f11c9c7010633c1874efaac527eff89040e4162e6c820fe98b427744",
+    "converter_version": 1,
+    "markdown_sha256": "b569fbdc9ca74440af9dc9a976e7970fd8d2e8ce9d5a59a26593eb57846086a4"
+  },
+  "fetched_at": "2026-09-14T13:55:16+00:00",
+  "source_snapshot_sha256": "af2c1df42362a6416067d734b50e0ad44d8b6eb58affee4fde322c19fc2f7da4",
+  "images": {},
+  "local_only": true
+}

@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "3873",
+    "title": "从Boosting学习到神经网络：看山是山？",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/3873",
+    "date": "2016-07-01",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 44,
+    "display_formula_count": 10,
+    "image_count": 1,
+    "heading_count": 6,
+    "code_block_count": 0,
+    "source_text_sha256": "38502e186b375d2e904bb906514e2072d9166353384a85638ef53601bf638dec",
+    "output_text_sha256": "38502e186b375d2e904bb906514e2072d9166353384a85638ef53601bf638dec",
+    "latex_sha256": "1da0ea3863aaa61323fba738cc28ae9ac3b5dadc9f9f2cb23e0b235049ab5088",
+    "body_sha256": "90e18e63f1a1cf4223870bcb4ae28019a3a94d0196ea269c9d57e753ea6857fa",
+    "converter_version": 1,
+    "markdown_sha256": "f2428a85cff9620e8d352e59b487c4502077b288caeb095310614ffb02e9d839"
+  },
+  "fetched_at": "2026-09-14T13:39:10+00:00",
+  "source_snapshot_sha256": "a9761a19b137706bc88680e8436fe3c8327e2db4484453b8b370b9919f315e23",
+  "images": {},
+  "local_only": true
+}

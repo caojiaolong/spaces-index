@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "671",
+    "title": "眼见未必为实——“视超光速”现象的产生",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/671",
+    "date": "2010-06-05",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 9,
+    "display_formula_count": 1,
+    "image_count": 2,
+    "heading_count": 0,
+    "code_block_count": 0,
+    "source_text_sha256": "0b227f42dd9d56a9ee3df3f16a967f84419044eba82bc410fd8116e3e14e0106",
+    "output_text_sha256": "0b227f42dd9d56a9ee3df3f16a967f84419044eba82bc410fd8116e3e14e0106",
+    "latex_sha256": "6f1f722cae868eb2d14dbfdaffe55af9d49d7f6ee55363ff7a25b9ff63b6ab70",
+    "body_sha256": "3437c7e1ab4e7f960132b643e95894ffa1b1d83b0673d078ca99b50f4c5bee64",
+    "converter_version": 1,
+    "markdown_sha256": "51675ad8ff0bc9ef2dd315cc8baa7913495662ce923c9df461bb6d74406ac43c"
+  },
+  "fetched_at": "2026-09-14T14:36:43+00:00",
+  "source_snapshot_sha256": "61774a01f0c409ca81083739baea8e41f94996f2914b0af80ced8f66445a70e3",
+  "images": {},
+  "local_only": true
+}

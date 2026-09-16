@@ -1,0 +1,17 @@
+{
+  "metadata": {
+    "id": "8454",
+    "title": "SimBERTv2来了！融合检索和生成的RoFormer-Sim模型",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/8454",
+    "date": "2021-06-11",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "fetched_at": "2026-09-14T13:06:11+00:00",
+  "source_snapshot_sha256": "6bcba72c3f5aa932e5a86602c3fd48592b832e8ce68f5779ab9061592394b183",
+  "validators": {
+    "etag": null,
+    "last_modified": null
+  }
+}

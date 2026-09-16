@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "9984",
+    "title": "“闭门造车”之多模态思路浅谈（一）：无损输入",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/9984",
+    "date": "2024-02-21",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 34,
+    "display_formula_count": 2,
+    "image_count": 3,
+    "heading_count": 6,
+    "code_block_count": 0,
+    "source_text_sha256": "6492637e03520e70d6948ac718769ccab7e2342b6327f23f894d5fa2d471ca6f",
+    "output_text_sha256": "6492637e03520e70d6948ac718769ccab7e2342b6327f23f894d5fa2d471ca6f",
+    "latex_sha256": "59d06828618f02c1d2dc38312158e5bac7b3f81325d2395558d32fb5ceb76d91",
+    "body_sha256": "9652f8615d79a6276120e818e2fe7ca1c54d5da60b319a058e365336edf39233",
+    "converter_version": 1,
+    "markdown_sha256": "3c681d12e4881a0056815fdf3a9cc430a9ae1ef400ad8718f461acb14dce9ef0"
+  },
+  "fetched_at": "2026-09-14T12:49:40+00:00",
+  "source_snapshot_sha256": "b1cf5b80be2b243752b7bffcffb572f1fef61de24596d20d66231e229bf833f3",
+  "images": {},
+  "local_only": true
+}

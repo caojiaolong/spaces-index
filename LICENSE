@@ -19,3 +19,19 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
+
+Scope of this license
+---------------------
+The MIT license above applies to the project's original software and documentation.
+It does not relicense articles, source-body snapshots, or images under data/articles/.
+Those articles are by 苏剑林 (Jianlin Su), from https://spaces.ac.cn/, under the
+source site's CC BY-NC-ND 2.5 CN terms:
+https://creativecommons.org/licenses/by-nc-nd/2.5/cn/
+Third-party materials retain their original rights and licenses. Attribution and
+license notices do not imply additional permission or endorsement by the author.
+
+web/vendor/mathjax/ contains MathJax 4.1.3, under its accompanying Apache-2.0
+LICENSE. Its TeX webfonts retain their embedded copyright and license notices;
+see web/vendor/mathjax/FONT-LICENSE.txt for the SIL Open Font License 1.1.
+The mhchem extension's fonts retain the GUST Font License; see
+web/vendor/mathjax/extensions/mathjax-mhchem-font-extension/FONT-LICENSE.txt.

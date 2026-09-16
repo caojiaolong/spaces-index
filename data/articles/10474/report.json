@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "10474",
+    "title": "让MathJax的数学公式随窗口大小自动缩放",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/10474",
+    "date": "2024-10-15",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 0,
+    "display_formula_count": 0,
+    "image_count": 1,
+    "heading_count": 3,
+    "code_block_count": 3,
+    "source_text_sha256": "f4d021bd7e0dc89612299e68decfd9619fe4ef9e3538db888447641cf9620d59",
+    "output_text_sha256": "f4d021bd7e0dc89612299e68decfd9619fe4ef9e3538db888447641cf9620d59",
+    "latex_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "body_sha256": "b981e8066617f38d9418e2d609c367c3b3d0524610e3b9f1e2d7cd6a9febc57f",
+    "converter_version": 1,
+    "markdown_sha256": "93a29dc1576e75ccd825d217ec0d97516183e9dcc70c54bfb64a10d054a236e3"
+  },
+  "fetched_at": "2026-09-14T12:46:08+00:00",
+  "source_snapshot_sha256": "b8346e99c9c980cf4df749c7db8db0ee0cb72af86a8a5b3b18e5339c4b87b050",
+  "images": {},
+  "local_only": true
+}

@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "8833",
+    "title": "SquarePlus：可能是运算最简单的ReLU光滑近似",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/8833",
+    "date": "2021-12-29",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 32,
+    "display_formula_count": 8,
+    "image_count": 3,
+    "heading_count": 4,
+    "code_block_count": 1,
+    "source_text_sha256": "758eb68637132544463f95ddcb4cac5b98c48a24433e9faaca06776ea53c592a",
+    "output_text_sha256": "758eb68637132544463f95ddcb4cac5b98c48a24433e9faaca06776ea53c592a",
+    "latex_sha256": "92e52e818995bea0d893095b64998b509cfcfd7080dd3140f1be815502795824",
+    "body_sha256": "abf8647ed500e70a2763ab8f30f239bf99fb9bc8ffce807c7e1fa65ebf1099c3",
+    "converter_version": 1,
+    "markdown_sha256": "4c5442dd57a1f7f732beb9896e9fc2782820abe385777a8ad6d03f1566c1d14f"
+  },
+  "fetched_at": "2026-09-14T13:02:17+00:00",
+  "source_snapshot_sha256": "3cb20f2f4ef1d91a692a60e421ba226cf90d4131fd430ac470d59cc1ae9927a6",
+  "images": {},
+  "local_only": true
+}

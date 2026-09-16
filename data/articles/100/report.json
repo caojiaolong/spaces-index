@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "100",
+    "title": "400年前的今天，望远镜诞生了",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/100",
+    "date": "2009-08-25",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 0,
+    "display_formula_count": 0,
+    "image_count": 2,
+    "heading_count": 0,
+    "code_block_count": 0,
+    "source_text_sha256": "f639ad9d64d8ae4146bcd29f62658f7dbecba16e5bd84dcaf82a99b6c9e7fc66",
+    "output_text_sha256": "f639ad9d64d8ae4146bcd29f62658f7dbecba16e5bd84dcaf82a99b6c9e7fc66",
+    "latex_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "body_sha256": "40c7b8b74b9fb774bb3f986270a03e7e38733fdf2c134450ada22483086ea4aa",
+    "converter_version": 1,
+    "markdown_sha256": "9015ec668c619ffa221662b74b61e4c66a6f85871b422b9cd556d44610573a3d"
+  },
+  "fetched_at": "2026-09-14T14:56:17+00:00",
+  "source_snapshot_sha256": "ed06a19dd20097c2f00c8c43e4a68a391322e447b8b9e67ee4405fbe196efa63",
+  "images": {},
+  "local_only": true
+}

@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "7912",
+    "title": "跟风玩玩目前最大的中文GPT2模型（bert4keras）",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/7912",
+    "date": "2020-11-20",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 0,
+    "display_formula_count": 0,
+    "image_count": 1,
+    "heading_count": 4,
+    "code_block_count": 1,
+    "source_text_sha256": "57c6b01e11ebece3e32004e9b700849a65d7625d54a56d5bdc6cdc7b87f0f93b",
+    "output_text_sha256": "57c6b01e11ebece3e32004e9b700849a65d7625d54a56d5bdc6cdc7b87f0f93b",
+    "latex_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "body_sha256": "fe8aa999697b30f3dd41213e5c04766d48f814fa0498b12f37630d4dce649c36",
+    "converter_version": 1,
+    "markdown_sha256": "6efe1320ecd1188bed2eed7f7d8c0301ae99f8843051d8673c40e2d65ca3a78d"
+  },
+  "fetched_at": "2026-09-14T13:10:02+00:00",
+  "source_snapshot_sha256": "c36a83adf619ff582aab7b1188e71fbb6f2b3a65cb134d828c4d7616f8785c7e",
+  "images": {},
+  "local_only": true
+}

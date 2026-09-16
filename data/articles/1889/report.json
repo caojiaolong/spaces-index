@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "1889",
+    "title": "纠缠的时空（一）：洛仑兹变换的矩阵",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/1889",
+    "date": "2013-02-01",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 48,
+    "display_formula_count": 12,
+    "image_count": 0,
+    "heading_count": 6,
+    "code_block_count": 0,
+    "source_text_sha256": "183b65fb2c6e8e32ac40053d7cf74e4b894cf0a3bdfbc96f5915aea9ec491990",
+    "output_text_sha256": "183b65fb2c6e8e32ac40053d7cf74e4b894cf0a3bdfbc96f5915aea9ec491990",
+    "latex_sha256": "c02bc2b54f7208f80e67501d6c7e6463a47ae8eeb1f299fea54623c407e37315",
+    "body_sha256": "0e3e19d839f8cd98710066ccad34cb79bfcbf66f1dae7c5324aebad901e0cbe5",
+    "converter_version": 1,
+    "markdown_sha256": "f3dd20ce1124456595acf498a4e82d25d2f2bd5b437aa871b6730b1440752956"
+  },
+  "fetched_at": "2026-09-14T14:05:51+00:00",
+  "source_snapshot_sha256": "3c91e602b4d35c4a62d6d9e32b0ddfe98bafa006fbd1462c0e5ab84b9431b63c",
+  "images": {},
+  "local_only": true
+}

@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "9797",
+    "title": "EMO：基于最优传输思想设计的分类损失函数",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/9797",
+    "date": "2023-10-13",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 47,
+    "display_formula_count": 9,
+    "image_count": 4,
+    "heading_count": 6,
+    "code_block_count": 0,
+    "source_text_sha256": "988b252d7dfd1338b86946015388f507a30557e7072b2ec2ce7680254660499b",
+    "output_text_sha256": "988b252d7dfd1338b86946015388f507a30557e7072b2ec2ce7680254660499b",
+    "latex_sha256": "e8b7a8dda7468cf2539aa6198b7ff8edbf6fb5dd92023deb98de77787747e62e",
+    "body_sha256": "9670e0294c839994bb03a8cb40d269df25f64c6e2c9c13f6fdb086bc5ce2e2ab",
+    "converter_version": 1,
+    "markdown_sha256": "67d6a9ee31e99ad75a48a247c727beb2b42f8de6286be31defc01c8e7d689635"
+  },
+  "fetched_at": "2026-09-14T12:51:34+00:00",
+  "source_snapshot_sha256": "99b540b97e28c56dcbe1291931a3ec2b153d1b8a82521d93d87debfcc92ee7f7",
+  "images": {},
+  "local_only": true
+}

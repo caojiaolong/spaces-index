@@ -1,0 +1,17 @@
+{
+  "metadata": {
+    "id": "6794",
+    "title": "用时间换取效果：Keras梯度累积优化器",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/6794",
+    "date": "2019-07-08",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "fetched_at": "2026-09-14T13:18:44+00:00",
+  "source_snapshot_sha256": "690ec8b6953fd3d2109aab773a46ca761b5d4716217934f0b0a4d94a4f8b8c72",
+  "validators": {
+    "etag": null,
+    "last_modified": null
+  }
+}

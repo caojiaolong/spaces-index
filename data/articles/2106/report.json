@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "2106",
+    "title": "不在家的国庆",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/2106",
+    "date": "2013-10-03",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 0,
+    "display_formula_count": 0,
+    "image_count": 0,
+    "heading_count": 0,
+    "code_block_count": 0,
+    "source_text_sha256": "678467968d9f39b58e57ec544035e05dff8ba12206df8602923438f6bf24ec9c",
+    "output_text_sha256": "678467968d9f39b58e57ec544035e05dff8ba12206df8602923438f6bf24ec9c",
+    "latex_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "body_sha256": "50d168e740a6de7371aa4b127da372f5a5618e7ea052529e11a7d11dc8d87490",
+    "converter_version": 1,
+    "markdown_sha256": "e8adf009961621cad1b59488c10f43fad1ed3ea902aaa49e56c14742d21b04ad"
+  },
+  "fetched_at": "2026-09-14T13:59:39+00:00",
+  "source_snapshot_sha256": "62cc255ac53b69b40afec291465baf0232a3e500cf8d76beb1b014817ff25686",
+  "images": {},
+  "local_only": true
+}

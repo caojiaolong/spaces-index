@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "10869",
+    "title": "智能家居之手搓一套能接入米家的零冷水装置",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/10869",
+    "date": "2025-04-22",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 6,
+    "display_formula_count": 6,
+    "image_count": 0,
+    "heading_count": 3,
+    "code_block_count": 0,
+    "source_text_sha256": "df82c3d447a000559d2a79d61738f6e05892c4d30c99bab55ad45907683eff0e",
+    "output_text_sha256": "df82c3d447a000559d2a79d61738f6e05892c4d30c99bab55ad45907683eff0e",
+    "latex_sha256": "c968c0eddeb79d56f76610ae8242c2339d8a336bb087f80f3a988079d1ad0b3c",
+    "body_sha256": "5cdcf9be2e255d7d2613b8c5aa45fba01e5d2a99fa3d8bfdcb68e9701c459299",
+    "converter_version": 1,
+    "markdown_sha256": "f9209ec25738c189906945b4864a9340c9b8ebf771919de3a82af3187f679d74"
+  },
+  "fetched_at": "2026-09-14T12:42:54+00:00",
+  "source_snapshot_sha256": "0d1ad307929bfe0ba3ff233eee4d56dd818a860572dc6705f244a94fb5df783a",
+  "images": {},
+  "local_only": true
+}

@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "6280",
+    "title": "从Wasserstein距离、对偶理论到WGAN",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/6280",
+    "date": "2019-01-20",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 199,
+    "display_formula_count": 36,
+    "image_count": 5,
+    "heading_count": 17,
+    "code_block_count": 0,
+    "source_text_sha256": "9f2fdb14308037e5350907e5cc6e9f23c7bbfeb66e906cef5375d74f5650f4df",
+    "output_text_sha256": "9f2fdb14308037e5350907e5cc6e9f23c7bbfeb66e906cef5375d74f5650f4df",
+    "latex_sha256": "50ff66f2e4f3f3d9f3d2bf6082a3428032f2ed82e0dec5d45357e886d6c38a49",
+    "body_sha256": "707c228f00c2717ef9c4ce0065f008441dd4eacda872dfa86fabf4c6f71b2e0a",
+    "converter_version": 1,
+    "markdown_sha256": "3a241dffe63679c28f854f1098ea3670bfae338c1dc2f274bba6c399e4adcebc"
+  },
+  "fetched_at": "2026-09-14T13:22:02+00:00",
+  "source_snapshot_sha256": "358b1bc45d73bf8beb4ed9e1d7d73409e71ecd4f1e2379d591dc776f6bb092db",
+  "images": {},
+  "local_only": true
+}

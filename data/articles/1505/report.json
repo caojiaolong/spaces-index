@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "1505",
+    "title": "[欧拉数学]黎曼ζ函数",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/1505",
+    "date": "2011-11-18",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 12,
+    "display_formula_count": 10,
+    "image_count": 1,
+    "heading_count": 0,
+    "code_block_count": 0,
+    "source_text_sha256": "4f26b3cffe9445e4a2037e7b38d9b331e049cc775b29fbf704753703015130f3",
+    "output_text_sha256": "4f26b3cffe9445e4a2037e7b38d9b331e049cc775b29fbf704753703015130f3",
+    "latex_sha256": "b007a762d9d819693fb976e1fe14128480258b420cb34f5ee31f441e8583d1e7",
+    "body_sha256": "013393c11dfe5be1bb7a40e941809ffeffb4328b19ff35945afd331a960d8980",
+    "converter_version": 1,
+    "markdown_sha256": "2b7343535d2d648a6c666bae6d2819aeb01a3b9609a85c81f3c994902c694c14"
+  },
+  "fetched_at": "2026-09-14T14:16:45+00:00",
+  "source_snapshot_sha256": "83f30dc9d8bde1d84563bd2013bb192b034fb3833c3147db53eda2d093c9932e",
+  "images": {},
+  "local_only": true
+}

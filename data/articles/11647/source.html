@@ -1,0 +1,86 @@
+<div class="PostContent" id="PostContent">
+<p>经过那么多篇相关博客的介绍，想必很多读者都对Muon优化器并不陌生——即便不清楚理论细节，应该也留下了一个“专为矩阵参数定制的优化器”的印象。然而，这个说法并不全对——比如对于输入端的Embedding层和输出段的LM Head来说，它们的参数虽然也都是矩阵，但并不适合用Muon（参考<a href="/archives/11416" target="_blank">《Muon优化器指南：快速上手与关键细节》</a>）。</p><p>为什么它们要被“区别对待”呢？本文将沿用首篇提出的三个稳定性指标，探讨不同类型的层的初始化规律及其对应的最速下降方向，从而回答这个问题。</p><h2 id="前情回顾">前情回顾</h2><p>在第一篇文章<a href="/archives/11340" target="_blank">《MuP之上：1. 好模型的三个特征》</a>中，我们提出了三个稳定性指标<br/>
+\begin{align}<br/>
+&amp;\text{前向稳定性:}\quad\max_{\boldsymbol{x}} \Vert \boldsymbol{f}(\boldsymbol{x};\boldsymbol{\omega})\Vert_{RMS} = \Theta(1) \label{eq:cc1} \\[5pt]<br/>
+&amp;\text{依赖稳定性:}\quad\max_{\boldsymbol{x}_1,\boldsymbol{x}_2} \frac{\Vert \boldsymbol{f}(\boldsymbol{x}_1;\boldsymbol{\omega}) - \boldsymbol{f}(\boldsymbol{x}_2;\boldsymbol{\omega})\Vert_{RMS}}{\Vert\boldsymbol{x}_1 - \boldsymbol{x}_2\Vert_{RMS}} = \Theta(1) \label{eq:cc2} \\[5pt]<br/>
+&amp;\text{更新稳定性:}\quad\max_{\boldsymbol{x}} \Vert \boldsymbol{f}(\boldsymbol{x};\boldsymbol{\omega} + \Delta\boldsymbol{\omega}) - \boldsymbol{f}(\boldsymbol{x};\boldsymbol{\omega})\Vert_{RMS} = \Theta(1) \label{eq:cc3}<br/>
+\end{align}<br/>
+三个指标具有统一的格式：对输出求RMS，再对输入求$\max$。其中$\boldsymbol{x}$表示输入，$\boldsymbol{\omega}$表示参数，$\boldsymbol{f}(\boldsymbol{x};\boldsymbol{\omega})$可以代表模型的一个层、一个块甚至整个模型，这取决于我们求$\max$的能力。</p><p>由于没有限定$\boldsymbol{x}$的范围，所以最大值并非总是存在，为此有时候我们需要给模型补上一些运算，这反过来指导了模型的设计。比如在上一篇文章<a href="/archives/11605" target="_blank">《MuP之上：2. 线性层与最速下降》</a>中，为了计算线性层的稳定性指标，我们给它加上了In Norm。此外，结合最速下降思想，我们还复现了Muon优化器的推导。</p><p>最速下降并不是新概念，它回答的是“给定稳定性指标后该用什么优化器”的问题，而“MuP之上”系列的核心贡献是回答“该用什么稳定性指标”问题，它提供了对任意层适用的稳定性指标计算公式。</p><h2 id="嵌入之层">嵌入之层</h2><p>现在我们考虑Embedding层，它可以说是最简单的层了，输入是编号$i$，输出则是对应的向量，即$\boldsymbol{f}(i;\boldsymbol{E}) = \boldsymbol{E}_i$，其中$\boldsymbol{E}$是一个$|V|\times d$矩阵，$\boldsymbol{E}_i \triangleq \boldsymbol{E}_{i,:}$表示$\boldsymbol{E}$的第$i$行。容易计算得<br/>
+\begin{align}<br/>
+&amp;\text{前向稳定性:}\quad\max_i \Vert\boldsymbol{E}_i\Vert_{RMS} = \Theta(1)\\[5pt]<br/>
+&amp;\text{更新稳定性:}\quad\max_i \Vert \Delta \boldsymbol{E}_i\Vert_{RMS} = \Theta(1) \label{eq:ec3}<br/>
+\end{align}<br/>
+注意到这里没有“依赖稳定性”，因为Embedding层的输入是离散的Token Id，两个Id没法作差。当然转成one hot强行算也可以，但并没有带来新的信号，而且从反向传播的角度来看，我们也不需要对Token Id继续反向传播了，所以也不需要考虑它的稳定性了。</p><p>剩下的两个稳定性结果是$\boldsymbol{E}$或$\Delta\boldsymbol{E}$的最大行范数（的$1/\sqrt{d}$倍）。前向稳定性和依赖稳定性我们只用于初始化的指导，它告诉我们以零均值、$\Theta(1)$方差去初始化$\boldsymbol{E}$。至于更新稳定性，式$\eqref{eq:ec3}$告诉我们，虽然都是矩阵，但Embedding层度量“稳”的指标不应该用谱范数，而应该是最大行范数，这就导致它的最速下降并不是Muon。</p><p>为求Embedding层的最速下降，我们需要求解优化问题<br/>
+\begin{equation}\min_{\Delta \boldsymbol{E}} \langle\boldsymbol{G},\Delta\boldsymbol{E}\rangle \qquad \text{s.t.}\qquad \max_i \underbrace{\Vert\Delta\boldsymbol{E}_i\Vert_{RMS}}_{\Vert\Delta\boldsymbol{E}_i\Vert_2/\sqrt{d}}\leq\eta\end{equation}<br/>
+这个问题倒是不难求解，只需利用柯西不等式：<br/>
+\begin{equation}\langle\boldsymbol{G},\Delta\boldsymbol{E}\rangle = \sum_{i=1}^{|V|}\langle\boldsymbol{G}_i,\Delta\boldsymbol{E}_i\rangle \geq -\sum_{i=1}^{|V|}\Vert\boldsymbol{G}_i\Vert_2 \times \Vert\Delta\boldsymbol{E}_i\Vert_2 \geq -\eta\sqrt{d}\sum_{i=1}^{|V|}\Vert\boldsymbol{G}_i\Vert_2\end{equation}<br/>
+等号在$\Delta\boldsymbol{E}_i = - \eta\boldsymbol{G}_i / \Vert\boldsymbol{G}_i\Vert_{RMS}$成立，也就是说，Embedding层适用的最速下降是对梯度逐行做RMS Norm（Normalized SGD）。</p><h2 id="输出之头">输出之头</h2><p>接着看LM Head。表面上看，这也是个线性层，输入是$\boldsymbol{x}\in\mathbb{R}^d$，权重是$\boldsymbol{W}\in\mathbb{R}^{d\times |V|}$，输出是$\boldsymbol{x}\boldsymbol{W}\in\mathbb{R}^{|V|}$，$\boldsymbol{x}$通常也带了RMS Norm，各方面看起来都是线性层的样子，为什么它却不适用于Muon呢？</p><h3 id="对损失负责">对损失负责</h3><p>答案是，<font color="red">LM Head需要对Loss“负责”</font>。</p><p>要注意，最速下降为训练服务的。推理视角的模型，是输入若干Token来预测下一个Token；但在训练视角下，真正的“模型”是：输入若干Token以及下一个Token来计算Loss，也就是说数据和标签实际上都是输入，真正的输出其实是Loss。对于前面的层，我们可以不考虑标签和Loss，但LM Head作为跟Loss“接壤”的最后一层，就不得不考虑标签和Loss的影响了。</p><p>所以，LM Head的输入变成了$\boldsymbol{x}$和下一个Token的编号$t$，输出变成了交叉熵损失，即<br/>
+\begin{equation}\ell(\boldsymbol{x},t;\boldsymbol{W}) = \log\sum_{i=1}^{|V|} e^{\langle \boldsymbol{x},\boldsymbol{w}_i\rangle} - \langle \boldsymbol{x},\boldsymbol{w}_t\rangle = \log\sum_{i=1}^{|V|} e^{\langle \boldsymbol{x},\boldsymbol{w}_i - \boldsymbol{w}_t\rangle}\end{equation}<br/>
+其中$\boldsymbol{w}_i\triangleq \boldsymbol{W}_{:, i}$是$\boldsymbol{W}$的第$i$列。由于$\ell$是关于$\boldsymbol{x},t,\boldsymbol{W}$的复杂非线性函数，它的三个指标无法精确地计算，我们的目标求一个尽量紧的上界。</p><h3 id="前向稳定性">前向稳定性</h3><p>首先是较为简单的前向稳定性，简单放缩得<br/>
+\begin{equation}\begin{aligned}<br/>
+\ell(\boldsymbol{x},t;\boldsymbol{W}) = \log\sum_{i=1}^{|V|} e^{\langle \boldsymbol{x},\boldsymbol{w}_i - \boldsymbol{w}_t\rangle} \leq&amp;\, \log \left(|V| \max_i e^{\langle \boldsymbol{x},\boldsymbol{w}_i - \boldsymbol{w}_t\rangle}\right) \\<br/>
+=&amp;\, \log |V| + \max_i \langle \boldsymbol{x},\boldsymbol{w}_i - \boldsymbol{w}_t\rangle \\<br/>
+\leq &amp;\, \log |V| + \max_i \Vert\boldsymbol{x}\Vert_2 \Vert\boldsymbol{w}_i - \boldsymbol{w}_t\Vert_2<br/>
+\end{aligned}\end{equation}<br/>
+因此<br/>
+\begin{equation}\begin{aligned}<br/>
+\text{前向稳定性:}\quad\max_{t, \Vert\boldsymbol{x}\Vert_{RMS}=1} \ell(\boldsymbol{x},t;\boldsymbol{W}) \leq&amp;\, \log |V| + d\max_{i,t} \Vert\boldsymbol{w}_i - \boldsymbol{w}_t\Vert_{RMS} \\<br/>
+\leq&amp;\, \log |V| + 2d\max_i \Vert\boldsymbol{w}_i\Vert_{RMS}<br/>
+\end{aligned}\end{equation}<br/>
+如果去掉常数$\log|V|$，那么它就变成了下界，所以这个界在渐近意义下是比较紧的。要使得它为$\Theta(1)$，LM Head的初始化方差应该选为$\Theta(1/d^2)$。</p><h3 id="重要不等式">重要不等式</h3><p>至于剩下两个指标，由于涉及到作差，计算起来会更为复杂一些。我们先证明要用到的不等式<br/>
+\begin{equation}\left|\log\sum_{i=1}^n e^{a_i} - \log\sum_{i=1}^n e^{b_i}\right| \leq \max_i |a_i - b_i|\label{leq:lse-ab}\end{equation}<br/>
+证明不算困难，但有点技巧：记右端为$M$，那么由$\log,\sum,\exp$的单调性易得<br/>
+\begin{equation}\log\sum_{i=1}^n e^{a_i} = \log\sum_{i=1}^n e^{(a_i - b_i)+b_i} \leq \log\sum_{i=1}^n e^{M + b_i} = M + \log\sum_{i=1}^n e^{b_i}\end{equation}<br/>
+这就证明了<br/>
+\begin{equation}\log\sum_{i=1}^n e^{a_i} - \log\sum_{i=1}^n e^{b_i} \leq M\end{equation}<br/>
+由对称性可知交换$a_i$和$b_i$也是成立的，于是证明了原始不等式。</p><h3 id="依赖稳定性">依赖稳定性</h3><p>利用不等式$\eqref{leq:lse-ab}$以及柯西不等式得<br/>
+\begin{equation}\begin{aligned}<br/>
+\frac{|\ell(\boldsymbol{x}_1,t;\boldsymbol{W}) - \ell(\boldsymbol{x}_2,t;\boldsymbol{W})|}{\Vert \boldsymbol{x}_1 - \boldsymbol{x}_2\Vert_{RMS}} \leq&amp;\, \frac{\max_i |\langle \boldsymbol{x}_1,\boldsymbol{w}_i - \boldsymbol{w}_t\rangle - \langle \boldsymbol{x}_2,\boldsymbol{w}_i - \boldsymbol{w}_t\rangle|}{\Vert \boldsymbol{x}_1 - \boldsymbol{x}_2\Vert_{RMS}} \\<br/>
+=&amp;\, \frac{\max_i |\langle \boldsymbol{x}_1 - \boldsymbol{x}_2,\boldsymbol{w}_i - \boldsymbol{w}_t\rangle|}{\Vert \boldsymbol{x}_1 - \boldsymbol{x}_2\Vert_{RMS}} \\<br/>
+\leq&amp;\, \frac{\max_i d\, \Vert \boldsymbol{x}_1 - \boldsymbol{x}_2\Vert_{RMS} \Vert \boldsymbol{w}_i - \boldsymbol{w}_t\Vert_{RMS}}{\Vert \boldsymbol{x}_1 - \boldsymbol{x}_2\Vert_{RMS}} \\<br/>
+=&amp;\, d\max_i \Vert \boldsymbol{w}_i - \boldsymbol{w}_t\Vert_{RMS}<br/>
+\end{aligned}\end{equation}<br/>
+因此<br/>
+\begin{equation}\begin{aligned}<br/>
+\text{依赖稳定性:}\quad\max_{\begin{gathered}t \\ \Vert\boldsymbol{x}_1\Vert_{RMS}=1 \\ \Vert\boldsymbol{x}_2\Vert_{RMS}=1\end{gathered}} |\ell(\boldsymbol{x}_1,t;\boldsymbol{W}) - \ell(\boldsymbol{x}_2,t;\boldsymbol{W})| \leq&amp;\, d\max_{i,t} \Vert\boldsymbol{w}_i - \boldsymbol{w}_t\Vert_{RMS}\\<br/>
+\leq&amp;\, 2d\max_i \Vert\boldsymbol{w}_i\Vert_{RMS}<br/>
+\end{aligned}\end{equation}<br/>
+结果跟前向稳定性同出一辙。这里的计算跟Embedding类似，因为标签$t$是离散的Id，我们不用考虑它的反向传播，所以分母只需要考虑$\boldsymbol{x}_1,\boldsymbol{x}_2$的差。</p><h3 id="更新稳定性">更新稳定性</h3><p>最后是更新稳定性，依然是不等式$\eqref{leq:lse-ab}$和柯西不等式：<br/>
+\begin{equation}\begin{aligned}<br/>
+|\ell(\boldsymbol{x},t;\boldsymbol{W} + \Delta\boldsymbol{W}) - \ell(\boldsymbol{x},t;\boldsymbol{W})| \leq&amp;\, \max_i |\langle \boldsymbol{x},\boldsymbol{w}_i + \Delta\boldsymbol{w}_i - \boldsymbol{w}_t - \Delta\boldsymbol{w}_t\rangle - \langle \boldsymbol{x},\boldsymbol{w}_i - \boldsymbol{w}_t\rangle| \\<br/>
+=&amp;\, \max_i |\langle \boldsymbol{x},\Delta\boldsymbol{w}_i - \Delta\boldsymbol{w}_t\rangle| \\<br/>
+\leq &amp;\, d \max_i  \Vert\boldsymbol{x}\Vert_{RMS} \Vert\Delta\boldsymbol{w}_i - \Delta\boldsymbol{w}_t\Vert_{RMS}<br/>
+\end{aligned}\end{equation}<br/>
+因此<br/>
+\begin{equation}\begin{aligned}<br/>
+\text{更新稳定性:}\quad\max_{t,\Vert\boldsymbol{x}\Vert_{RMS}=1} |\ell(\boldsymbol{x},t;\boldsymbol{W} + \Delta\boldsymbol{W}) - \ell(\boldsymbol{x}_2,t_2;\boldsymbol{W})| \leq&amp;\, d \max_{i, t} \Vert\Delta\boldsymbol{w}_i - \Delta\boldsymbol{w}_t\Vert_{RMS} \\<br/>
+\leq&amp;\, 2d\max_i \Vert\Delta\boldsymbol{w}_i\Vert_{RMS}<br/>
+\end{aligned}\end{equation}</p><p>不难发现，LM Head的三个稳定指标，跟Embedding层本质上是一样的，都是参数矩阵或其增量的最大行/列范数，这意味着LM Head的最速下降也是Normalized SGD，区别是LM Head是逐列RMS Norm。此外，LM Head的三个指标都是乘以$d$的形式，所以它的初始化标准差和学习率都按$\Theta(1/d)$缩放，而Embedding则是$\Theta(1)$，这意味着它们在跨宽度迁移时会略有区别。</p><h2 id="其他模块">其他模块</h2><p>除了线性层、Embedding和LM Head外，常见的Transformer模型通常还有一些其他参数或层需要单独进行分析，这里逐一盘点下。</p><h3 id="哈达码之积">哈达码之积</h3><p>我们知道，RMS Norm之后通常还会乘以一个$\boldsymbol{\gamma}$向量（Hadamard积），即$(\boldsymbol{x} / \Vert\boldsymbol{x}\Vert_{RMS})\odot\boldsymbol{\gamma}$，以调控输出的尺度。这个参数并非矩阵，所以并不适用于前述的Muon或Normalized SGD。</p><p>可以根据原始定义按部就班地给$\boldsymbol{\gamma}$算三个稳定性指标，然后分析它的初始化和最速下降，但这里还有个更取巧的方式，那就是留意到$\newcommand{diag}{\mathop{\text{diag}}}\boldsymbol{x}\odot\boldsymbol{\gamma}=\boldsymbol{x}\diag(\boldsymbol{\gamma})$，即$\boldsymbol{x}$与$\boldsymbol{\gamma}$以Hadamard积的方式相乘，等于$\boldsymbol{x}$与对角矩阵$\diag(\boldsymbol{\gamma})$做矩阵乘法，这将它变成了一个特殊的线性层，即$\boldsymbol{W}=\diag(\boldsymbol{\gamma})$，可以复用线性层的结论。</p><p>根据上一篇文章，$\boldsymbol{W}$的初始谱范数应当是$\Theta(\sqrt{d_{out}/d_{in}})$，这里$\boldsymbol{W}$是方阵，所以正好是$\Theta(1)$，而$\boldsymbol{W}$又是一个对角阵，所以我们干脆直接让$\boldsymbol{W}$初始化为单位阵来满足这个需求，此时对应的是$\boldsymbol{\gamma}$全1初始化。</p><p>至于优化器，设$\boldsymbol{\gamma}$的梯度是$\boldsymbol{g}$，那么$\boldsymbol{W}$的梯度是$\boldsymbol{G}=\diag(\boldsymbol{g})$，已知线性层的最速下降是Muon，即$\newcommand{msign}{\mathop{\text{msign}}}\Delta\boldsymbol{W}=-\eta\msign(\boldsymbol{G})$，而对角阵成立$\newcommand{sign}{\mathop{\text{sign}}}\msign(\boldsymbol{G})=\sign(\boldsymbol{G})=\diag(\sign(\boldsymbol{g}))$，所以$\boldsymbol{\gamma}$参数的最速下降是SignSGD。</p><h3 id="线性偏置项">线性偏置项</h3><p>传统的线性层通常还会有个偏置向量$\boldsymbol{b}$，即完整的线性运算是$\boldsymbol{f}(\boldsymbol{x};\boldsymbol{W},\boldsymbol{b}) = \boldsymbol{x}\boldsymbol{W}+\boldsymbol{b}$，不过近年来开源的模型基本上都去掉了偏置项，导致它已经没什么存在感。但完整起见，这里还是补充上它的讨论。</p><p>补上偏置向量后，三个稳定性指标分别是<br/>
+\begin{align}<br/>
+&amp;\text{前向稳定性:}\quad\max_{\Vert\boldsymbol{x}\Vert_{RMS}=1} \Vert \boldsymbol{x}\boldsymbol{W} + \boldsymbol{b}\Vert_{RMS} \\[5pt]<br/>
+&amp;\text{依赖稳定性:}\quad\max_{\Vert\boldsymbol{x}_1\Vert_{RMS}=\Vert\boldsymbol{x}_2\Vert_{RMS}=1} \frac{\Vert \boldsymbol{x}_1\boldsymbol{W} - \boldsymbol{x}_2\boldsymbol{W}\Vert_{RMS}}{\Vert \boldsymbol{x}_1 - \boldsymbol{x}_2\Vert_{RMS}}\\[5pt]<br/>
+&amp;\text{更新稳定性:}\quad\max_{\Vert\boldsymbol{x}\Vert_{RMS}=1} \Vert \boldsymbol{x} \Delta\boldsymbol{W} + \Delta\boldsymbol{b}\Vert_{RMS}<br/>
+\end{align}<br/>
+其中依赖稳定性跟无偏置时是一样的，所以只需看前向稳定性和更新稳定性。简单起见，我们使用不等式$\Vert \boldsymbol{x}\boldsymbol{W} + \boldsymbol{b}\Vert_{RMS}\leq \Vert \boldsymbol{x}\boldsymbol{W}\Vert_{RMS} + \Vert\boldsymbol{b}\Vert_{RMS}$，假设$\boldsymbol{W}$沿用原本的初始化，那么$\Vert \boldsymbol{x}\boldsymbol{W}\Vert_{RMS}$部分已经实现了$\Theta(1)$，因此只需$\Vert\boldsymbol{b}\Vert_{RMS}=\mathcal{O}(1)$，简单起见，实践中通常是全零初始化$\boldsymbol{b}$。</p><p>同理，$\Vert \boldsymbol{x}\Delta\boldsymbol{W} + \Delta\boldsymbol{b}\Vert_{RMS}\leq \Vert \boldsymbol{x}\Delta\boldsymbol{W}\Vert_{RMS} + \Vert\Delta\boldsymbol{b}\Vert_{RMS}$，考虑让$\Vert\Delta\boldsymbol{b}\Vert_{RMS}=\mathcal{O}(1)$，那么$\boldsymbol{b}$参数将以$\Vert\Delta\boldsymbol{b}\Vert_{RMS}$为稳定性指标做最速下降，结果也是Normalized SGD。</p><h3 id="注意力缩放">注意力缩放</h3><p>利用前向稳定性指标，我们还可以重新推一下Attention机制的缩放因子。设$\boldsymbol{q}=\boldsymbol{x}\boldsymbol{W}_q,\boldsymbol{k}=\boldsymbol{x}\boldsymbol{W}_k$，若$\boldsymbol{W}_q,\boldsymbol{W}_k$按照线性层处理，那么可以认为已经实现了$\Vert\boldsymbol{q}\Vert_{RMS}=\Theta(1)$和$\Vert\boldsymbol{k}\Vert_{RMS}=\Theta(1)$，接着根据柯西不等式<br/>
+\begin{equation}|\langle\boldsymbol{q},\boldsymbol{k}\rangle| \leq \Vert\boldsymbol{q}\Vert_2 \Vert\boldsymbol{k}\Vert_2 = d\Vert\boldsymbol{q}\Vert_{RMS} \Vert\boldsymbol{k}\Vert_{RMS} \end{equation}<br/>
+这里的$d$是$\boldsymbol{q},\boldsymbol{k}$的维度，即Head Dim。很明显，上式是$\Theta(d)$的，要使得它变成$\Theta(1)$，那么就要给$\boldsymbol{q}\cdot\boldsymbol{k}$乘以$\Theta(1/d)$级别的缩放因子，这跟此前的$1/\sqrt{d}$（参考<a href="/archives/8620" target="_blank">《浅谈Transformer的初始化、参数化与标准化》</a>）有所不同。</p><p>究竟哪个才对呢？其实都对。$1/\sqrt{d}$是随机初始化下的平均结果，而$\Theta(1/d)$则是对整个训练过程适用的极限值，它也不是要我们直接将缩放因子改为$1/d$，而是说反比于$d$可能会带来更好的迁移性，两者是可以兼容的。举个例子，假设在$d=128$时用$1/\sqrt{128}$作为缩放因子效果不错，那么迁移到$d=256$时，可以考虑将缩放因子变成$1/2\sqrt{128}$而非$1/\sqrt{256}$。</p><p>事实上，受限于Flash Attention，Head Dim的选择空间并不大，通常是128，最大一般也只到256，所以实践中几乎没有跨Head Dim做参数迁移的问题，所以这个结果更多是纯理论的。</p><h2 id="文章小结">文章小结</h2><p>最后，这两篇文章的主要结果汇总如下：<br/>
+\begin{array}{|c|c|}<br/>
+\hline<br/>
+&amp; \text{输入} &amp; \text{参数} &amp; \text{输出} &amp; \text{初始标准差} &amp; \text{最速下降} \\<br/>
+\hline<br/>
+\text{Linear} &amp; \boldsymbol{x} &amp; \begin{aligned}\boldsymbol{W}\in&amp;\,\mathbb{R}^{d_{in}\times d_{out}} \\ \boldsymbol{b}\in&amp;\,\mathbb{R}^{d_{out}} \end{aligned} &amp; \boldsymbol{x}\boldsymbol{W} + \boldsymbol{b} &amp; \begin{aligned} \boldsymbol{W}:&amp;\, \small{\sqrt{\frac{d_{out}}{d_{in}}}\frac{1}{\sqrt{d_{in}} + \sqrt{d_{out}}}} \\ \boldsymbol{b}:&amp;\, 0\end{aligned}&amp; \begin{aligned} \Delta\boldsymbol{W} =&amp;\, \small{-\eta\sqrt{\frac{d_{out}}{d_{in}}}\msign(\boldsymbol{G})} \\ \Delta\boldsymbol{b} =&amp;\, \small{-\eta \frac{\boldsymbol{g}}{\Vert\boldsymbol{g}\Vert_{RMS}}}\end{aligned} \\<br/>
+\hline<br/>
+\text{Embedding} &amp; i &amp; \boldsymbol{E} \in\mathbb{R}^{|V|\times d} &amp; \boldsymbol{E}_{i,:} &amp; 1 &amp; \Delta\boldsymbol{E}_{i,:}  = -\eta \frac{\boldsymbol{G}_{i,:}}{\Vert\boldsymbol{G}_{i,:} \Vert_{RMS}} \\<br/>
+\hline<br/>
+\text{LM Head} &amp; \boldsymbol{x}, t &amp; \boldsymbol{W} \in\mathbb{R}^{d \times |V|} &amp; \log\sum\limits_{i=1}^{|V|} e^{\langle \boldsymbol{x},\boldsymbol{W}_{:,i} - \boldsymbol{W}_{:,t}\rangle} &amp; \frac{1}{d} &amp; \Delta\boldsymbol{W}_{:,i} = -\frac{\eta}{d} \frac{\boldsymbol{G}_{:,i}}{\Vert\boldsymbol{G}_{:,i}\Vert_{RMS}} \\<br/>
+\hline<br/>
+\text{RMS Norm} &amp; \boldsymbol{x} &amp; \boldsymbol{\gamma} \in\mathbb{R}^d &amp; \frac{\boldsymbol{x}}{\Vert\boldsymbol{x}\Vert_{RMS}}\odot\boldsymbol{\gamma} &amp; 1 &amp; \Delta\boldsymbol{\gamma} = -\eta \sign(\boldsymbol{g})\\<br/>
+\hline<br/>
+\end{array}<br/>
+其中，Embedding和LM Head的最速下降方向分别是行/列的Noramlized SGD，这一点跟<a href="https://papers.cool/arxiv/2502.07529" target="_blank">Scion</a>等工作是一致的；至于方差和学习率的迁移规律，则跟<a href="/archives/10795" target="_blank">MuP</a>的结论是一致的。而在这两篇文章中，它们都是基于我们所提的“三个稳定性指标”推导而来的，这表明我们确实找到了任意层的稳定性度量的统一形式。</p>
+
+
+
+
+
+</div>

@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "9039",
+    "title": "GlobalPointer下的“KL散度”应该是怎样的？",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/9039",
+    "date": "2022-04-15",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 30,
+    "display_formula_count": 7,
+    "image_count": 0,
+    "heading_count": 5,
+    "code_block_count": 0,
+    "source_text_sha256": "a2682c04a850dede9296ee1e718f158dbf3b2f0461517882cfc380ad16a62e4c",
+    "output_text_sha256": "a2682c04a850dede9296ee1e718f158dbf3b2f0461517882cfc380ad16a62e4c",
+    "latex_sha256": "e019870b134036ffa062e482cbd1a4234aa6f35bcc3a0f34a21410e0411ccb14",
+    "body_sha256": "4c9dbf148169be9e3da51d0aecad7feb6ecfbac2c1da29bde9129beadcaa7539",
+    "converter_version": 1,
+    "markdown_sha256": "f482f6622e708f6fd4ca9724006759f62ccb0a7fcae9cf642cc974d6945a628f"
+  },
+  "fetched_at": "2026-09-14T13:00:11+00:00",
+  "source_snapshot_sha256": "ebcfa253ec89801e19f403fd77c800dc18bd74f12b3b26f4d06d9a4dd5c4e932",
+  "images": {},
+  "local_only": true
+}

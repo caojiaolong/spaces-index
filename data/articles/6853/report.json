@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "6853",
+    "title": "为节约而生：从标准Attention到稀疏Attention",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/6853",
+    "date": "2019-07-27",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 26,
+    "display_formula_count": 1,
+    "image_count": 5,
+    "heading_count": 9,
+    "code_block_count": 0,
+    "source_text_sha256": "f6002efd94bc811142b7eace15c1c8192fc9b91acdfd578e29c3a911c187dc43",
+    "output_text_sha256": "f6002efd94bc811142b7eace15c1c8192fc9b91acdfd578e29c3a911c187dc43",
+    "latex_sha256": "19a9d15ea1c424d048a32d376cd790f50ea77f157239d4487c29c8cfe5e2f801",
+    "body_sha256": "1bba9e3f35eb27f7c27e26d2ed3b7217a8c52e2e545a49e23e641932ff8ec632",
+    "converter_version": 1,
+    "markdown_sha256": "93ada91b5ae8195fa5e7c4998b6f2d8e41694b00ee286157ec91b591397e1f29"
+  },
+  "fetched_at": "2026-09-14T13:18:25+00:00",
+  "source_snapshot_sha256": "3ed103b970d622a369b281f7e6bcc131ad6863602322950a375e56a2853e5ab1",
+  "images": {},
+  "local_only": true
+}

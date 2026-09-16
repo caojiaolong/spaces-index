@@ -1,0 +1,14 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>进入文章 · 科学空间索引</title>
+  <script>
+    const id = new URLSearchParams(location.search).get("id");
+    const route = /^[1-9]\d*$/.test(id || "") ? `#/article/${id}` : "#/explore";
+    location.replace(`./index.html${route}`);
+  </script>
+</head>
+<body><p>文章阅读已整合到主站。<a href="./index.html#/explore">返回文章列表</a></p></body>
+</html>

@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "132",
+    "title": "一道从小学到高中都可能考到的题目",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/132",
+    "date": "2009-09-20",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 16,
+    "display_formula_count": 2,
+    "image_count": 0,
+    "heading_count": 0,
+    "code_block_count": 0,
+    "source_text_sha256": "3917b54ced25ddfa79f95d406ba9982b248fc7ca967965fd9b869dade0a2e1b6",
+    "output_text_sha256": "3917b54ced25ddfa79f95d406ba9982b248fc7ca967965fd9b869dade0a2e1b6",
+    "latex_sha256": "98551da21b697cf44beb39cbf665c25feeeff780e6df25eed6ef243cc3596c97",
+    "body_sha256": "92b9dfbfa58fec39de90893529d978e0d68768c70448b5015c32084c3bc87a6a",
+    "converter_version": 1,
+    "markdown_sha256": "907b16cf94db7d669171f3fed612662059a202d6fe7effc459449a7692aca6c1"
+  },
+  "fetched_at": "2026-09-14T14:52:12+00:00",
+  "source_snapshot_sha256": "9a8472f4c4748e290d2456ca3d86e0067a21b1f201fc2293867c128504b52c76",
+  "images": {},
+  "local_only": true
+}

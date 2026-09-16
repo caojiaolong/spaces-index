@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "8994",
+    "title": "为什么需要残差？一个来自DeepNet的视角",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/8994",
+    "date": "2022-03-19",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 62,
+    "display_formula_count": 10,
+    "image_count": 0,
+    "heading_count": 6,
+    "code_block_count": 0,
+    "source_text_sha256": "9e104313793b176b4284ac685fa6432fb54e6469c85eaa3f2ce6db0a5c8f61f8",
+    "output_text_sha256": "9e104313793b176b4284ac685fa6432fb54e6469c85eaa3f2ce6db0a5c8f61f8",
+    "latex_sha256": "6c92f9da717a989a957c916669b18ac5926ca902ba6f02e9928ea6c870323d96",
+    "body_sha256": "8130ecc23bdb290dc2cf8a9dcfa72717d0f7aff7b8cc872ae0a87d68886c6d9f",
+    "converter_version": 1,
+    "markdown_sha256": "f94f1f05e66af6e3ae2a916fb579ab27e7501cf7453975c0ff17f4a48308eccf"
+  },
+  "fetched_at": "2026-09-14T13:00:45+00:00",
+  "source_snapshot_sha256": "03fadd42ec02608d89f9dcfe40683a1539cee9ed2beac89205246f646f62c074",
+  "images": {},
+  "local_only": true
+}

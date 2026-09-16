@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "11697",
+    "title": "基于流式幂迭代的Muon实现：3. 雕琢",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/11697",
+    "date": "2026-04-07",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 115,
+    "display_formula_count": 6,
+    "image_count": 0,
+    "heading_count": 7,
+    "code_block_count": 1,
+    "source_text_sha256": "6a5088ace7c4adb02897b933b51c0374eaf6ce61f6a928c459a157affd880cad",
+    "output_text_sha256": "6a5088ace7c4adb02897b933b51c0374eaf6ce61f6a928c459a157affd880cad",
+    "latex_sha256": "624e6bc4c6ea1cf18fa9b287ff666b5078f8484ad6c9329688e9c2338e6bc449",
+    "body_sha256": "905b9b74bcc689abbe5e3376254373586225fa487c34c4f989e026471fe8a55b",
+    "converter_version": 1,
+    "markdown_sha256": "5e14d4ce290f463015489e930ea7ef02196adc343f3b1f2965d9c16e59214231"
+  },
+  "fetched_at": "2026-09-14T12:36:19+00:00",
+  "source_snapshot_sha256": "ca4c40ffd1eb8153bfac3b4d4834c98d5ffbd88691c9603a05d07f40829cd39c",
+  "images": {},
+  "local_only": true
+}

@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "177",
+    "title": "生活|我家的几只小鸡",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/177",
+    "date": "2009-10-08",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 0,
+    "display_formula_count": 0,
+    "image_count": 3,
+    "heading_count": 0,
+    "code_block_count": 0,
+    "source_text_sha256": "420681f821f23ef63b60d0ea7ced7d6007446080c075709cfd817a35a1c93463",
+    "output_text_sha256": "420681f821f23ef63b60d0ea7ced7d6007446080c075709cfd817a35a1c93463",
+    "latex_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "body_sha256": "9355c338b6a82ef97e2ce624c1721398d759a18cc40b1c418360c1b8323ea683",
+    "converter_version": 1,
+    "markdown_sha256": "29baa4ccb647acd505ade0c7a65b80ad938bb0559ee5beafdac4c7eb57f96470"
+  },
+  "fetched_at": "2026-09-14T14:49:06+00:00",
+  "source_snapshot_sha256": "0c9d40e3b0d8e6fbdf3b6a271feb78b7ed5a37a3fd2ca50f9e7d3511ca22609d",
+  "images": {},
+  "local_only": true
+}

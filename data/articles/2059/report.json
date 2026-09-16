@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "2059",
+    "title": "[欧拉数学]找出严谨的答案",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/2059",
+    "date": "2013-09-09",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 31,
+    "display_formula_count": 6,
+    "image_count": 0,
+    "heading_count": 4,
+    "code_block_count": 0,
+    "source_text_sha256": "692a1ae0a765add95416e9040199a918f5557c6d8b54d660668742cc1c7076c9",
+    "output_text_sha256": "692a1ae0a765add95416e9040199a918f5557c6d8b54d660668742cc1c7076c9",
+    "latex_sha256": "7979f0da40d40b5247f8e659a49ba500ce86bba1362b282809e4f50ac0f8ab14",
+    "body_sha256": "160bc35b6ba8c67d0ee231800c6ca1f292e945151c7df4b0bca5e5a71a38ed0a",
+    "converter_version": 1,
+    "markdown_sha256": "eca958cd5ff97f9edd8f1178a55a9ff9d75dd0866fe26ccf59f7af25ba0b2bbe"
+  },
+  "fetched_at": "2026-09-14T14:00:18+00:00",
+  "source_snapshot_sha256": "422a6e39e96b8869b007cd0e60e3de9deeb04d3541570c6a7faa629cdd1f395e",
+  "images": {},
+  "local_only": true
+}

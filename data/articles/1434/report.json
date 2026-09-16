@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "1434",
+    "title": "关于e,i,π的那些鲜为人知的事儿...",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/1434",
+    "date": "2011-07-25",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 14,
+    "display_formula_count": 4,
+    "image_count": 0,
+    "heading_count": 0,
+    "code_block_count": 0,
+    "source_text_sha256": "2e03c12dfefef0b2b6fd4e805ea274ecca3344d19cc2c9835a624f3d9ac3207b",
+    "output_text_sha256": "2e03c12dfefef0b2b6fd4e805ea274ecca3344d19cc2c9835a624f3d9ac3207b",
+    "latex_sha256": "0a875b853fa55dfcf3fe6409a09af74bbf6ff3a59f36797385525ffce7b97f3c",
+    "body_sha256": "f5aa4d4d3b4463a5290bba73c56d6f0a9370c9e47b13537c8618e4a2e95e34d3",
+    "converter_version": 1,
+    "markdown_sha256": "4474a40165098708b810d301bc28dc07d29a93978f38362a1a42b721dc3feeeb"
+  },
+  "fetched_at": "2026-09-14T14:18:48+00:00",
+  "source_snapshot_sha256": "894fe8a24d5fe88ae8b715025526720da685f365d4cc6d6da7644c77f2574452",
+  "images": {},
+  "local_only": true
+}

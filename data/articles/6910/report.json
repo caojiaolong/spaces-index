@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "6910",
+    "title": "HSIC简介：一个有意思的判断相关性的思路",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/6910",
+    "date": "2019-08-26",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 118,
+    "display_formula_count": 18,
+    "image_count": 0,
+    "heading_count": 13,
+    "code_block_count": 3,
+    "source_text_sha256": "a44a0d663a923ea39bd1f1fbd0ef978b002b8702e0c820d50c7302df192c919f",
+    "output_text_sha256": "a44a0d663a923ea39bd1f1fbd0ef978b002b8702e0c820d50c7302df192c919f",
+    "latex_sha256": "2c77d80f0157d9320fb3c65e8e11a4469b2b6a5c5f2113ff0531af614d66eeff",
+    "body_sha256": "6bf885006a3429357ad4e0d6b6b7c9fb80e39860bac944c3542b534d842107e7",
+    "converter_version": 1,
+    "markdown_sha256": "b197eb8b23a845aecd3f35505b9ba10320dde93835bf3ff3ef2a94fdca58755c"
+  },
+  "fetched_at": "2026-09-14T13:17:59+00:00",
+  "source_snapshot_sha256": "e26ea193769adca9a59ef6e3baa11fea37a5b8d993be8737c3cfa5d7e66e42ac",
+  "images": {},
+  "local_only": true
+}

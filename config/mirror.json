@@ -1,0 +1,6 @@
+{
+  "withdrawn_ids": [],
+  "refresh_days": 30,
+  "refresh_per_run": 25,
+  "max_stale_days": 120
+}

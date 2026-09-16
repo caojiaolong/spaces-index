@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "9467",
+    "title": "生成扩散模型漫谈（十六）：W距离 ≤ 得分匹配",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/9467",
+    "date": "2023-02-14",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 167,
+    "display_formula_count": 26,
+    "image_count": 1,
+    "heading_count": 6,
+    "code_block_count": 0,
+    "source_text_sha256": "46f53bec21171085de9b50dc65a051f90afa1e82f3909eddb9019981bb0ef044",
+    "output_text_sha256": "46f53bec21171085de9b50dc65a051f90afa1e82f3909eddb9019981bb0ef044",
+    "latex_sha256": "973256abbd983c5379cf7dd96fd2e84bce5266acf2518f8d5c62d95ee74fee03",
+    "body_sha256": "145c4f4e59d296b90dc759a9dfbcfc5605f9ca94cbd54d8938d1a8903f305277",
+    "converter_version": 1,
+    "markdown_sha256": "17775a45f62aeb7ceade44465d4c5ed08c1ef2315bb42e53bfb5bc6e19955b2e"
+  },
+  "fetched_at": "2026-09-14T12:55:42+00:00",
+  "source_snapshot_sha256": "4e0fde88d0d41fef6c9d3cba02ddb7e6e41ff47a2898e4a73ce417f3b8dbb810",
+  "images": {},
+  "local_only": true
+}

@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "69",
+    "title": "斯皮策太空望远镜发现两颗行星大碰撞(图)",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/69",
+    "date": "2009-08-12",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 0,
+    "display_formula_count": 0,
+    "image_count": 1,
+    "heading_count": 0,
+    "code_block_count": 0,
+    "source_text_sha256": "04348b432b5c0c8947bed5560acc911d14431db66a8025e9e2b1883fc76cf348",
+    "output_text_sha256": "04348b432b5c0c8947bed5560acc911d14431db66a8025e9e2b1883fc76cf348",
+    "latex_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "body_sha256": "311963e4c7a760813b93d9f3d4511e32fbcc097b776a2e678114b7409a5d5a2c",
+    "converter_version": 1,
+    "markdown_sha256": "905d0e1045aac4cb664679ba7e48e44b31b9aa3151a7ce948e3ced8576a4f080"
+  },
+  "fetched_at": "2026-09-14T14:59:55+00:00",
+  "source_snapshot_sha256": "3d866be7d244a7fe0349691944d0208139ddbf7a8d4b426dd72f1878dd215ae2",
+  "images": {},
+  "local_only": true
+}

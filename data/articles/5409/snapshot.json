@@ -1,0 +1,17 @@
+{
+  "metadata": {
+    "id": "5409",
+    "title": "基于CNN的阅读理解式问答模型：DGCNN",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/5409",
+    "date": "2018-04-15",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "fetched_at": "2026-09-14T13:27:28+00:00",
+  "source_snapshot_sha256": "372141e4b7a214ce0590c1e67792271e1bc4f5838faa0e94f910569598731520",
+  "validators": {
+    "etag": null,
+    "last_modified": null
+  }
+}

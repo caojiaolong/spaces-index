@@ -1,0 +1,45 @@
+{
+  "version": 1,
+  "images": {
+    "https://spaces.ac.cn/usr/uploads/2012/07/869736781.png": {
+      "status": "cached",
+      "file": "ee03da0948c7fc6beef28810ceea9896f47c9f751b1a667f3d1a69ba399818c1.png",
+      "sha256": "ee03da0948c7fc6beef28810ceea9896f47c9f751b1a667f3d1a69ba399818c1",
+      "bytes": 11405,
+      "checked_at": "2026-09-16T11:17:33+00:00",
+      "fetched_url": "https://spaces.ac.cn/usr/uploads/2012/07/869736781.png",
+      "etag": "\"5a6ec74a-2c8d\"",
+      "last_modified": "Mon, 29 Jan 2018 07:03:38 GMT"
+    },
+    "https://spaces.ac.cn/usr/uploads/2012/07/1546662833.png": {
+      "status": "cached",
+      "file": "8d834e0153981046aa004ebe159cf4353d3ce2686551ca2205fd687fd32bd740.png",
+      "sha256": "8d834e0153981046aa004ebe159cf4353d3ce2686551ca2205fd687fd32bd740",
+      "bytes": 9233,
+      "checked_at": "2026-09-16T11:17:37+00:00",
+      "fetched_url": "https://spaces.ac.cn/usr/uploads/2012/07/1546662833.png",
+      "etag": "\"5a6ec74a-2411\"",
+      "last_modified": "Mon, 29 Jan 2018 07:03:38 GMT"
+    },
+    "https://spaces.ac.cn/usr/uploads/2012/07/269978592.png": {
+      "status": "cached",
+      "file": "07d883c1e5219d8c448180555d37799e4bd67a3d76f099d605f1a78a50c6dd70.png",
+      "sha256": "07d883c1e5219d8c448180555d37799e4bd67a3d76f099d605f1a78a50c6dd70",
+      "bytes": 7857,
+      "checked_at": "2026-09-16T11:17:40+00:00",
+      "fetched_url": "https://spaces.ac.cn/usr/uploads/2012/07/269978592.png",
+      "etag": "\"5a6ec74a-1eb1\"",
+      "last_modified": "Mon, 29 Jan 2018 07:03:38 GMT"
+    },
+    "https://spaces.ac.cn/usr/uploads/2012/07/765929506.png": {
+      "status": "cached",
+      "file": "4a34c2f04164e502a9759555154d2e3d1d53b205a3e1bb25061638ac1b3481ed.png",
+      "sha256": "4a34c2f04164e502a9759555154d2e3d1d53b205a3e1bb25061638ac1b3481ed",
+      "bytes": 6901,
+      "checked_at": "2026-09-16T11:17:43+00:00",
+      "fetched_url": "https://spaces.ac.cn/usr/uploads/2012/07/765929506.png",
+      "etag": "\"5a6ec74a-1af5\"",
+      "last_modified": "Mon, 29 Jan 2018 07:03:38 GMT"
+    }
+  }
+}

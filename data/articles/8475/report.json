@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "8475",
+    "title": "UniVAE：基于Transformer的单模型、多尺度的VAE模型",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/8475",
+    "date": "2021-06-29",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 17,
+    "display_formula_count": 0,
+    "image_count": 9,
+    "heading_count": 7,
+    "code_block_count": 0,
+    "source_text_sha256": "2ba9d046ad75b351407719018b11ee7351b94eecf7faac2f78ce5296103bd9a6",
+    "output_text_sha256": "2ba9d046ad75b351407719018b11ee7351b94eecf7faac2f78ce5296103bd9a6",
+    "latex_sha256": "0f41aeef9a180a2c7085fbbbd0b9a5dd93d3637f5776df649b2fdc3cf331974e",
+    "body_sha256": "49dc97f9f9a15f5ca56575a4d6d51008789d87373f56790c536d38a64716f2f2",
+    "converter_version": 1,
+    "markdown_sha256": "8a5e9d26df6e25bd42bb8aa247d0580ff690835e5c121c34a4fccac3a2306394"
+  },
+  "fetched_at": "2026-09-14T13:05:48+00:00",
+  "source_snapshot_sha256": "b62ff199c0cc5cb439c37d9fa169e807561b58805b8453934a7904c1365c228e",
+  "images": {},
+  "local_only": true
+}

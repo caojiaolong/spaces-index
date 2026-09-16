@@ -1,0 +1,17 @@
+{
+  "metadata": {
+    "id": "6270",
+    "title": "基于CNN和序列标注的对联机器人",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/6270",
+    "date": "2019-01-14",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "fetched_at": "2026-09-14T13:22:09+00:00",
+  "source_snapshot_sha256": "e31b1a408b50e56e8124d50e1330e64c2875536958c878e507bc11db36257cb7",
+  "validators": {
+    "etag": null,
+    "last_modified": null
+  }
+}

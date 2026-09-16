@@ -1,0 +1,103 @@
+# MoE环游记：1、从几何意义出发
+
+> 作者：苏剑林 · 科学空间 · 2025-02-08
+>
+> 原文：<https://spaces.ac.cn/archives/10699>
+>
+> 原文许可：[CC BY-NC-ND 2.5 CN（署名-非商业性使用-禁止演绎）](https://creativecommons.org/licenses/by-nc-nd/2.5/cn/)。
+>
+> 本文件由 spaces-index 非官方、非商业项目进行必要的 HTML → Markdown 格式转换；正文未做摘要、润色、翻译或重组。项目不代表作者，也不表示作者为项目背书。
+>
+> 署名及附加许可说明不代表已获得作者额外授权。第三方素材权利依其原有声明。
+>
+> 原站转载与引用说明：[科学空间 FAQ](https://spaces.ac.cn/archives/6508#%E6%96%87%E7%AB%A0%E5%A6%82%E4%BD%95%E8%BD%AC%E8%BD%BD/%E5%BC%95%E7%94%A8)
+
+---
+
+前两年福至心灵之下，开了一个“[Transformer升级之路](<https://spaces.ac.cn/search/Transformer%E5%8D%87%E7%BA%A7%E4%B9%8B%E8%B7%AF/>)”系列，陆续分享了主流Transformer架构的一些改进工作和个人思考，得到了部份读者的认可。这篇文章开始，我们沿着同样的风格，介绍当前另一个主流架构MoE（Mixture of Experts）。
+
+MoE的流行自不必多说，近来火出圈的[DeepSeek\-V3](<https://papers.cool/arxiv/2412.19437>)便是MoE架构，传言GPT\-4也是MoE架构，国内最近出的一些模型也有不少用上了MoE。然而，虽然MoE的研究由来已久，但其应用长时间内都不愠不火，大致上是从去年初的[《Mixtral of Experts》](<https://papers.cool/arxiv/2401.04088>)开始，MoE才逐渐吸引大家的注意力，其显著优点是参数量大，但训练和推理成本都显著低。
+
+但同时MoE也有一些难题，如训练不稳定、负载不均衡、效果不够好等，这也是它早年没有流行起来的主要原因。不过随着这两年关注度的提升，这些问题在很大程度上已经得到解决，我们在接下来的介绍中会逐一谈到这些内容。
+
+## 问题定义
+
+首先要指出的是，这里会用笔者自己的一种理解思路来介绍MoE，在必要的地方会附上相应的参考文献，但不会对MoE架构进行系统的追根溯源，还请读者见谅。
+
+我们知道，Transformer模型由Attention层和MLP层组成，MoE替换的是模型中MLP层。MLP层又分FFN（FeedForward Network）和GLU（Gated Linear Unit）两种，主流的是GLU，但简单起见我们还是以FFN为例
+\begin{equation}\boldsymbol{y} = f(\boldsymbol{x}\boldsymbol{W}^{(A)})\boldsymbol{W}^{(B)}\end{equation}
+其中$\boldsymbol{x}\in\mathbb{R}^{d}$是输入向量（行向量），$\boldsymbol{W}^{(A)}\in\mathbb{R}^{d\times D},\boldsymbol{W}^{(B)}\in\mathbb{R}^{D\times d}$是两个参数矩阵，$f$是Element\-wise的激活函数。设$n$是一个能整除$D$的整数，那么上述可以等价地用分块矩阵写成
+\begin{equation}\boldsymbol{y} = f\big(\boldsymbol{x}\begin{bmatrix}\boldsymbol{W}^{(A)}_1 & \boldsymbol{W}^{(A)}_2 & \cdots & \boldsymbol{W}^{(A)}_n\end{bmatrix}\big)\begin{bmatrix}\boldsymbol{W}^{(B)}_1 \\ \boldsymbol{W}^{(B)}_2 \\ \vdots \\ \boldsymbol{W}^{(B)}_n\end{bmatrix} = \sum_{i=1}^n \underbrace{f(\boldsymbol{x}\boldsymbol{W}^{(A)}_i)\boldsymbol{W}^{(B)}_i}_{\boldsymbol{v}_i}\end{equation}
+其中$\boldsymbol{W}^{(A)}_i = \boldsymbol{W}^{(A)}_{[:,(i-1)c:ic]}, \boldsymbol{W}^{(B)}_i = \boldsymbol{W}^{(B)}_{[(i-1)c:ic,:]},c= D/n$，这里的切片按照Python规则来。由此可见，FFN可以等价表示成$n$个向量$\boldsymbol{v}_1,\boldsymbol{v}_2,\cdots,\boldsymbol{v}_n$之和，每个向量代表了一个小模型$f(\boldsymbol{x}\boldsymbol{W}^{(A)}_i)\boldsymbol{W}^{(B)}_i$的输出，每个小模型计算量相同，这些小模型就是MoE中的“Expert”。
+
+MoE提出的问题是：
+
+> 能否只挑$k$个向量的和来逼近$n$个向量的和呢？这样就可以将计算量降低到$k/n$了。
+
+## 模长排序
+
+这个问题其实我们在[《低秩近似之路（三）：CR》](<https://spaces.ac.cn/archives/10427>)已经探究过，写成数学公式是
+\begin{equation}\mathop{\text{argmin}}_{\lambda_1,\lambda_2,\cdots,\lambda_n\in\{0,1\}}\left\Vert\sum_{i=1}^n \lambda_i \boldsymbol{v}_i - \sum_{i=1}^n\boldsymbol{v}_i\right\Vert^2\quad\text{s.t.}\quad \sum_{i=1}^n \lambda_i = k\end{equation}
+记$\gamma_i = 1 - \lambda_i$，那么它又可以写成
+\begin{equation}\mathop{\text{argmin}}_{\gamma_1,\gamma_2,\cdots,\gamma_n\in\{0,1\}}\left\Vert\sum_{i=1}^n \gamma_i \boldsymbol{v}_i\right\Vert^2\quad\text{s.t.}\quad \sum_{i=1}^n \gamma_i = n - k\end{equation}
+这个问题的精确求解是比较困难的，但有一个简单的近似解：当$\boldsymbol{v}_i$两两正交时，我们有
+\begin{equation}\left\Vert\sum_{i=1}^n \gamma_i \boldsymbol{v}_i\right\Vert^2 = \sum_{i=1}^n \gamma_i^2 \Vert\boldsymbol{v}_i\Vert^2 = \sum_{i=1}^n \gamma_i \Vert\boldsymbol{v}_i\Vert^2\end{equation}
+上式最优解显然就是让模长$\Vert\boldsymbol{v}_i\Vert$最小的$n-k$个$\gamma_i$等于1，这又等价于说挑出模长最大的$k$个向量来逼近$n$个向量之和。当$\boldsymbol{v}_i$不满足两两正交的条件时，我们依然用它来作为一个近似解。它的几何意义也很直观，模长越大的向量，在求和过程中越不容易被抵消，从而作用越突出。
+
+此外，在[《低秩近似之路（三）：CR》](<https://spaces.ac.cn/archives/10427>)中我们还讨论了一种依概率采样的逼近过程，在方差最小的假设下得到的最优采样概率同样有正比于模长的特点，所以总的来说按向量模长排序是一个简单但不失有效的策略。
+
+## MoE初现
+
+现在策略已经有了——“挑模长最大的$k$个向量”——可是细想之下我们会发现它并不实用：要挑模长最大的$k$个向量，就得把所有向量的模长都算出来，这又意味着要把所有的$\boldsymbol{v}_i$先算出来，可我们的原本目的却是减少$\boldsymbol{v}_i$的计算量！
+
+为了解决这个矛盾，我们需要重新设计每个Expert模型，使得它的模长可以低成本地计算出来。什么意思呢？首先我们将$\boldsymbol{v}_i$归一化得到$\boldsymbol{e}_i = \boldsymbol{v}_i/\Vert\boldsymbol{v}_i\Vert$，这样每个$\boldsymbol{e}_i$的模长都相同了。接着我们定义
+\begin{equation}\underbrace{[\rho_1,\rho_2,\cdots,\rho_n]}_{\boldsymbol{\rho}} = h(\boldsymbol{x}\boldsymbol{W}^{(R)})\quad\in\mathbb{R}_{\geq 0}^n\end{equation}
+其中$\boldsymbol{W}^{(R)}\in\mathbb{R}^{d\times n}$是参数矩阵，$h(\cdot)$是一个$\mathbb{R}\to\mathbb{R}_{\geq 0}$的激活函数，说白了这就是一个$d$维到$n$维的线性变换加激活函数，所以计算量是比较小的，这部分模型在MoE中被称为“Router”。
+
+$\boldsymbol{\rho}$的作用是什么呢？预测每个Expert的模长！换言之，我们将$\rho_i$作为第$i$个Expert的模长，$\rho_i \boldsymbol{e}_i$才是完整的Expert，它被分解为两部分：计算量比较小的模长$\rho_i$以及计算量比较大的方向$\boldsymbol{e}_i$。为了减少计算量，我们先计算出$\boldsymbol{\rho}$，挑出最大的$k$个后才去计算相应的$\boldsymbol{e}_i$，最后乘上$\rho_i$并求和：
+\begin{equation}\boldsymbol{y} = \sum_{i\in \mathop{\text{argtop}}_k \boldsymbol{\rho}} \rho_i \boldsymbol{e}_i\end{equation}
+这便是MoE模型的基本公式。由于计算中只保留了Top\-$k$部分，所以它本质上属于一种Sparse模型，而原本的FFN或者$k=n$时的模型，通常称为对应的Dense模型。
+
+## 思路概括
+
+不管是熟悉MoE还是不熟悉MoE的读者，可能都会对上述过程有点陌生，因为这是笔者自己闭门造车的一种MoE理解路线，但因为其几何意义更明确，所以本质上应该是更好理解的。
+
+我们再来整理一下整个思路：
+
+> 1、一个常规的Dense模型FFN，可以等价改写为$n$个Expert向量$\boldsymbol{v}_1,\boldsymbol{v}_2,\cdots,\boldsymbol{v}_n$之和；
+> 
+> 
+> 
+> 2、为了节省计算量，我们试图挑出$k$个向量求和来逼近原本的$n$个向量之和；
+> 
+> 
+> 
+> 3、转化为数学问题求解后，我们发现挑选规则是模长最大的$k$个向量；
+> 
+> 
+> 
+> 4、直接去算$n$个Expert的模长然后选$k$个实际上是不省计算量的，所以要重新设计Expert；
+> 
+> 
+> 
+> 5、将$\boldsymbol{v}_i$归一化得到$\boldsymbol{e}_i$，然后用另外的小模型（Router）预测模长$\rho_i$，最终的Expert为$\rho_i \boldsymbol{e}_i$；
+> 
+> 
+> 
+> 6、此时，我们就可以先算全体$\rho_i$，挑出$k$个后才去计算$\boldsymbol{e}_i$，达到节省计算量的目的。
+
+## 为何如此
+
+可能有些读者疑问，为什么要做这个看似复杂的过程？原本的MoE不是挺好理解的吗？一般的MoE形式为
+\begin{equation}\boldsymbol{y} = \sum_{i\in \mathop{\text{argtop}}_k \boldsymbol{\rho}} \rho_i \boldsymbol{v}_i\end{equation}
+也就是求和前少了对$\boldsymbol{v}_i$的归一化，此时$\rho_i$也没有模长的意义，它纯粹是一个用来对Expert排序的打分模型（即Router）。可为什么将$\rho_i$乘到Expert上去就能让Router学会正确排序Expert呢？笔者发现只有[《Sparse Backpropagation for MoE Training》](<https://papers.cool/arxiv/2310.00811>)对此给出了一个解释，但还是稍欠直观。
+
+而在本文的几何视角下，我们会发现很多问题就“豁然开朗”了。我们将Expert重新参数化为$\rho_i \boldsymbol{e}_i$后，Dense模型对应于全体$\rho_i \boldsymbol{e}_i$求和，而MoE对应于$\rho_i$选Top\-$k$后求和，这是Dense模型的一个有理论保证的逼近。我们没有去考虑Router如何选择Expert，只是每一步都尽可能逼近Dense模型，这可以说是<strong>既要</strong>大参数、<strong>又要</strong>小计算量的最佳选择。
+
+现在$\rho_i$的几何意义是模长而不是概率，所以激活函数$h(\cdot)$就没有归一化的要求了，除了Softmax外，像Sigmoid、ReLU都可以考虑使用，也可以考虑我们在[《Softmax后传：寻找Top\-K的光滑近似》](<https://spaces.ac.cn/archives/10373>)介绍的Top\-$k$光滑近似。Router使用非归一化的激活函数，有助于避免$k > 1$时Expert之间的恶性竞争，有时候能取得更好的效果。
+
+最后补充一点，我们前面定义$\boldsymbol{e}_i = \boldsymbol{v}_i/ \Vert\boldsymbol{v}_i\Vert$，目的是让所有$\boldsymbol{e}_i$模长相同，实际操作中不是一定要L2 Normalize，也可以是其他等价操作，比如gamma参数恒等于1的RMS Norm，它更符合我们的输出习惯。
+
+## 文章小结
+
+本文从Dense模型的最佳逼近出发来推导和理解MoE，得到了一种特定的MoE形式，它比现有MoE多了一个Normalize步骤，但能让MoE的几何意义更加明显。当然，不管Normalize与否，MoE之路都只是刚刚开始，更多的困难还在路上。

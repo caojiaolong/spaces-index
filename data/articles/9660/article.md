@@ -1,0 +1,116 @@
+# 梯度流：探索通向最小值之路
+
+> 作者：苏剑林 · 科学空间 · 2023-06-16
+>
+> 原文：<https://spaces.ac.cn/archives/9660>
+>
+> 原文许可：[CC BY-NC-ND 2.5 CN（署名-非商业性使用-禁止演绎）](https://creativecommons.org/licenses/by-nc-nd/2.5/cn/)。
+>
+> 本文件由 spaces-index 非官方、非商业项目进行必要的 HTML → Markdown 格式转换；正文未做摘要、润色、翻译或重组。项目不代表作者，也不表示作者为项目背书。
+>
+> 署名及附加许可说明不代表已获得作者额外授权。第三方素材权利依其原有声明。
+>
+> 原站转载与引用说明：[科学空间 FAQ](https://spaces.ac.cn/archives/6508#%E6%96%87%E7%AB%A0%E5%A6%82%E4%BD%95%E8%BD%AC%E8%BD%BD/%E5%BC%95%E7%94%A8)
+
+---
+
+在这篇文章中，我们将探讨一个被称为“梯度流（Gradient Flow）”的概念。简单来说，梯度流是将我们在用梯度下降法中寻找最小值的过程中的各个点连接起来，形成一条随（虚拟的）时间变化的轨迹，这条轨迹便被称作“梯度流”。在文章的后半部分，我们将重点讨论如何将梯度流的概念扩展到概率空间，从而形成“Wasserstein梯度流”，为我们理解连续性方程、Fokker\-Planck方程等内容提供一个新的视角。
+
+## 梯度下降
+
+假设我们想搜索光滑函数$f(\boldsymbol{x})$的最小值，常见的方案是梯度下降（Gradient Descent），即按照如下格式进行迭代：
+\begin{equation}\boldsymbol{x}_{t+1} = \boldsymbol{x}_t -\alpha \nabla_{\boldsymbol{x}_t}f(\boldsymbol{x}_t)\label{eq:gd-d}\end{equation}
+如果$f(\boldsymbol{x})$关于$\boldsymbol{x}$是凸的，那么梯度下降通常能够找到最小值点；相反，则通常只能收敛到一个“驻点”——即梯度为0的点，比较理想的情况下能收敛到一个极小值（局部最小值）点。这里没有对极小值和最小值做严格区分，因为在深度学习中，即便是收敛到一个极小值点也是很难得的了。
+
+如果将$\alpha$记为$\Delta t$，将$\boldsymbol{x}_{t+1}$记为$\boldsymbol{x}_{t+\Delta t}$，那么考虑$\Delta t\to 0$的极限，那么式$\eqref{eq:gd-d}$将变为一个ODE：
+\begin{equation}\frac{d\boldsymbol{x}_t}{dt} = -\nabla_{\boldsymbol{x}_t}f(\boldsymbol{x}_t)\label{eq:gd-c}\end{equation}
+求解这个ODE所得到的轨迹$\boldsymbol{x}_t$，我们就称为“梯度流（Gradient Flow）”，也就是说，梯度流是梯度下降在寻找最小值过程中的轨迹。在式$\eqref{eq:gd-c}$成立前提下，我们还有：
+\begin{equation}\frac{df(\boldsymbol{x}_t)}{dt} = \left\langle\nabla_{\boldsymbol{x}_t}f(\boldsymbol{x}_t),\frac{d\boldsymbol{x}_t}{dt}\right\rangle = -\Vert\nabla_{\boldsymbol{x}_t}f(\boldsymbol{x}_t)\Vert^2 \leq 0\end{equation}
+这就意味着，只要$\nabla_{\boldsymbol{x}_t}f(\boldsymbol{x}_t)\neq\boldsymbol{0}$，那么当学习率足够小时，梯度下降总能往让$f(\boldsymbol{x})$变小的方向前进。
+
+更多相关讨论，可以参考之前的优化算法系列，如[《从动力学角度看优化算法（一）：从SGD到动量加速》](<https://spaces.ac.cn/archives/5655>)、[《从动力学角度看优化算法（三）：一个更整体的视角》](<https://spaces.ac.cn/archives/6261>)等。
+
+## 最速方向
+
+为什么要用梯度下降？一个主流的说法是“梯度的负方向是局部下降最快的方向”，直接搜这句话就可以搜到很多内容。这个说法不能说错，但有点不严谨，因为没说明前提条件——“最快”的“最”必然涉及到定量比较，只有先确定比较的指标，才能确定“最”的结果。
+
+如果只关心下降最快的方向的话，梯度下降的目标应该是：
+\begin{equation}\boldsymbol{x}_{t+1} = \mathop{\text{argmin}}_{\boldsymbol{x},\Vert\boldsymbol{x} - \boldsymbol{x}_t\Vert = \epsilon} f(\boldsymbol{x})\label{eq:gd-min-co}\end{equation}
+假设一阶近似够用，那么有
+\begin{equation}\begin{aligned}
+f(\boldsymbol{x})&\,=f(\boldsymbol{x}_t) + \langle \nabla_{\boldsymbol{x}_t}f(\boldsymbol{x}_t),\boldsymbol{x} - \boldsymbol{x}_t\rangle\\
+&\,\geq f(\boldsymbol{x}_t) - \Vert\nabla_{\boldsymbol{x}_t}f(\boldsymbol{x}_t)\Vert \Vert\boldsymbol{x} - \boldsymbol{x}_t\Vert\\
+&\,= f(\boldsymbol{x}_t) - \Vert\nabla_{\boldsymbol{x}_t}f(\boldsymbol{x}_t)\Vert \epsilon\\
+\end{aligned}\end{equation}
+等号成立的条件是
+\begin{equation}\boldsymbol{x} - \boldsymbol{x}_t = -\epsilon\frac{\nabla_{\boldsymbol{x}_t}f(\boldsymbol{x}_t)}{\Vert\nabla_{\boldsymbol{x}_t}f(\boldsymbol{x}_t)\Vert}\quad\Rightarrow\quad\boldsymbol{x}_{t+1} = \boldsymbol{x}_t - \epsilon\frac{\nabla_{\boldsymbol{x}_t}f(\boldsymbol{x}_t)}{\Vert\nabla_{\boldsymbol{x}_t}f(\boldsymbol{x}_t)\Vert}\label{eq:gd-d-norm}
+\end{equation}
+可以看到，更新方向正好是梯度的负方向，所以说它是局部下降最快的方向。然而，别忘了这是在约束条件$\Vert\boldsymbol{x} - \boldsymbol{x}_t\Vert = \epsilon$下得到的，其中$\Vert\cdot\Vert$是欧氏空间的模长，如果换一个模长的定义，或者干脆换一个约束条件，那么结果就不一样了。所以，严谨来说应该是“在欧氏空间中，梯度的负方向是局部下降最快的方向”。
+
+## 优化视角
+
+式$\eqref{eq:gd-min-co}$是一个带约束优化，推广和求解起来都会比较麻烦。此外，式$\eqref{eq:gd-min-co}$的求解结果是式$\eqref{eq:gd-d-norm}$，也不是原始的梯度下降$\eqref{eq:gd-d}$。事实上，可以证明式$\eqref{eq:gd-d}$对应的优化目标是
+\begin{equation}\boldsymbol{x}_{t+1} = \mathop{\text{argmin}}_{\boldsymbol{x}} \frac{\Vert\boldsymbol{x} - \boldsymbol{x}_t\Vert^2}{2\alpha} + f(\boldsymbol{x})\label{eq:gd-min}\end{equation}
+也就是说，将约束当成惩罚项加入到优化目标，这样就不用考虑求解约束，也容易推广。而且，即便加入了额外的$\frac{\Vert\boldsymbol{x} - \boldsymbol{x}_t\Vert^2}{2\alpha}$，也能保证上式的优化不会朝着让更糟糕的方向走，因为代入$\boldsymbol{x} = \boldsymbol{x}_t$后很明显上述目标函数正好是$f(\boldsymbol{x}_t)$，所以$\min_{\boldsymbol{x}}$的结果至少不会大于$f(\boldsymbol{x}_t)$。
+
+当$\alpha$足够小时，第一项占主导，因此$\Vert\boldsymbol{x} - \boldsymbol{x}_t\Vert$需要足够小时第一项才会变得足够小，即最优点应该是很接近$\boldsymbol{x}_t$的，于是我们可以在$\boldsymbol{x}_t$处将$f(\boldsymbol{x})$展开，得到
+\begin{equation}\boldsymbol{x}_{t+1} = \mathop{\text{argmin}}_{\boldsymbol{x}} \frac{\Vert\boldsymbol{x} - \boldsymbol{x}_t\Vert^2}{2\alpha} + f(\boldsymbol{x}_t)+\langle\nabla_{\boldsymbol{x}_t}f(\boldsymbol{x}_t),\boldsymbol{x}-\boldsymbol{x}_t\rangle\end{equation}
+此时只是一个二次函数最小值问题，求解结果正是式$\eqref{eq:gd-d}$。
+
+很明显，除了模长平方外，我们还可以考虑别的正则项，从而形成不同的梯度下降方案。比如，自然梯度下降（Natural Gradient Descent）使用的是KL散度作为正则项：
+\begin{equation}\boldsymbol{x}_{t+1} = \mathop{\text{argmin}}_{\boldsymbol{x}} \frac{KL(p(\boldsymbol{y}|\boldsymbol{x})\Vert p(\boldsymbol{y}|\boldsymbol{x}_t))}{\alpha} + f(\boldsymbol{x})\end{equation}
+其中$p(\boldsymbol{y}|\boldsymbol{x})$是某个与$f(\boldsymbol{x})$相关的概率分布。为了求解上式，同样在$f(\boldsymbol{x})$处进行展开，$f(\boldsymbol{x})$同样展开到一阶，但是KL散度比较特殊，它展开到一阶还是零（参考[这里](<https://spaces.ac.cn/archives/7466#%E5%8B%87%E6%95%A2%E5%9C%B0%E7%AE%97>)），所以至少要展开到二阶，总的结果是
+\begin{equation}\boldsymbol{x}_{t+1} = \mathop{\text{argmin}}_{\boldsymbol{x}} \frac{(\boldsymbol{x}-\boldsymbol{x}_t)^{\top}\boldsymbol{F}(\boldsymbol{x}-\boldsymbol{x}_t)}{2\alpha} + f(\boldsymbol{x}_t)+\langle\nabla_{\boldsymbol{x}_t}f(\boldsymbol{x}_t),\boldsymbol{x}-\boldsymbol{x}_t\rangle\end{equation}
+这里的$\boldsymbol{F}$是[Fisher信息矩阵](<https://en.wikipedia.org/wiki/Fisher_information>)，计算细节就不展开了，过程也可以参考[这里](<https://spaces.ac.cn/archives/7466#%E5%8B%87%E6%95%A2%E5%9C%B0%E7%AE%97>)。现在上式本质上也是二次函数的最小值问题，结果为
+\begin{equation}\boldsymbol{x}_{t+1} = \boldsymbol{x}_t -\alpha \boldsymbol{F}^{-1}\nabla_{\boldsymbol{x}_t}f(\boldsymbol{x}_t)\end{equation}
+这就是所谓的“自然梯度下降”。
+
+## 泛函入门
+
+式$\eqref{eq:gd-min}$不仅可以将正则项一般化，还可以将求解目标一般化，比如推广到泛函。
+
+“泛函”看起来让人“犯寒”，但事实上对于本站的老读者来说应该接触多次了。简单来说，普通多元函数就是输入一个向量，输出一个标量，泛函则是输入一个函数，输出一个标量，比如定积分运算：
+\begin{equation}\mathcal{I}[f] = \int_a^b f(x)dx\end{equation}
+对于任意一个函数$f$，$\mathcal{I}[f]$的计算结果就是一个标量，所以$\mathcal{I}[f]$就是一个泛函。又比如前面提到的KL散度，它定义为
+\begin{equation}KL(p\Vert q) = \int p(\boldsymbol{x})\log \frac{p(\boldsymbol{x})}{q(\boldsymbol{x})}d\boldsymbol{x}\end{equation}
+这里积分默认为全空间积分，如果固定$p(\boldsymbol{x})$，那么它就是关于$q(\boldsymbol{x})$的泛函，因为$q(\boldsymbol{x})$是一个函数，输入一个满足条件的函数，$KL(p\Vert q)$将输出一个标量。更一般地，[《f\-GAN简介：GAN模型的生产车间》](<https://spaces.ac.cn/archives/6016>)所介绍的$f$散度，也是泛函的一种，这些都是比较简单的泛函，更复杂的泛函可能包含输入函数的导数，如理论物理的[最小作用量](<https://spaces.ac.cn/archives/1304>)。
+
+下面我们主要关注的泛函的定义域为全体概率密度函数的集合，即研究输入一个概率密度、输出一个标量的泛函。
+
+## 概率之流
+
+假如我们有一个泛函$\mathcal{F}[q]$，想要计算它的最小值，那么模仿梯度下降的思路，只要我们能求出它的某种梯度，那么就可以沿着它的负方向进行迭代。
+
+为了确定迭代格式，我们沿着前面的思考，考虑推广式$\eqref{eq:gd-min}$，其中$f(\boldsymbol{x})$自然是替换为$\mathcal{F}[q]$，那么第一项正则应该替换成什么呢？在式$\eqref{eq:gd-min}$中它是欧氏距离的平方，那么很自然想到这里也应该替换为某种距离的平方，对于概率分布来说，性态比较好的距离是Wasserstein距离（准确来说是“2\-Wasserstein距离”）：
+\begin{equation}\mathcal{W}_2[p,q]=\sqrt{\inf_{\gamma\in \Pi[p,q]} \iint \gamma(\boldsymbol{x},\boldsymbol{y}) \Vert\boldsymbol{x}-\boldsymbol{y}\Vert^2 d\boldsymbol{x}d\boldsymbol{y}}\end{equation}
+关于它的介绍，这里就不详细展开了，有兴趣的读者请参考[《从Wasserstein距离、对偶理论到WGAN》](<https://spaces.ac.cn/archives/6280>)。如果进一步将式$\eqref{eq:gd-min}$中的欧氏距离替换为Wasserstein距离，那么最终目标就是
+\begin{equation}q_{t+1} = \mathop{\text{argmin}}_{q} \frac{\mathcal{W}_2^2[q,q_t]}{2\alpha} + \mathcal{F}[q]\end{equation}
+很抱歉，笔者没法简明给出上述目标的求解过程，甚至笔者自己也没完全理解它的求解过程，只能根据[《Introduction to Gradient Flows in the 2\-Wasserstein Space》](<https://abdulfatir.com/blog/2020/Gradient-Flows/>)、[《\{ Euclidean, Metric, and Wasserstein \} Gradient Flows: an overview》](<https://papers.cool/arxiv/1609.03890>)等文献，直接给出它的求解结果为
+\begin{equation}q_{t+1}(\boldsymbol{x}) = q_t(\boldsymbol{x}) + \alpha \nabla_{\boldsymbol{x}}\cdot\left(q_t(\boldsymbol{x})\nabla_{\boldsymbol{x}}\frac{\delta \mathcal{F}[q_t(\boldsymbol{x})]}{\delta q_t(\boldsymbol{x})}\right)\end{equation}
+或者取极限后得到
+\begin{equation}\frac{\partial q_t(\boldsymbol{x})}{\partial t} = \nabla_{\boldsymbol{x}}\cdot\left(q_t(\boldsymbol{x})\nabla_{\boldsymbol{x}}\frac{\delta \mathcal{F}[q_t(\boldsymbol{x})]}{\delta q_t(\boldsymbol{x})}\right)\end{equation}
+这就是“Wasserstein梯度流（Wasserstein Gradient Flow）”，其中$\frac{\delta \mathcal{F}[q]}{\delta q}$是$\mathcal{F}[q]$的变分导数，对于定积分泛函来说，变分导数就是被积函数的导数：
+\begin{equation}\mathcal{F}[q] = \int F(q(\boldsymbol{x}))d\boldsymbol{x} \quad\Rightarrow\quad \frac{\delta \mathcal{F}[q(\boldsymbol{x})]}{\delta q(\boldsymbol{x})} = \frac{\partial F(q(\boldsymbol{x}))}{\partial q(\boldsymbol{x})}\end{equation}
+
+## 一些例子
+
+根据[《f\-GAN简介：GAN模型的生产车间》](<https://spaces.ac.cn/archives/6016>)，$f$散度的定义为
+\begin{equation}\mathcal{D}_f(p\Vert q) = \int q(\boldsymbol{x}) f\left(\frac{p(\boldsymbol{x})}{q(\boldsymbol{x})}\right)d\boldsymbol{x}\end{equation}
+将$p$固定，设$\mathcal{F}[q]=\mathcal{D}_f(p\Vert q)$，那么得到
+\begin{equation}\frac{\partial q_t(\boldsymbol{x})}{\partial t} = \nabla_{\boldsymbol{x}}\cdot\Big(q_t(\boldsymbol{x})\nabla_{\boldsymbol{x}}\big(f(r_t(\boldsymbol{x})) - r_t(\boldsymbol{x}) f'(r_t(\boldsymbol{x}))\big)\Big)\label{eq:wgd}\end{equation}
+其中$r_t(\boldsymbol{x}) = \frac{p(\boldsymbol{x})}{q_t(\boldsymbol{x})}$。根据[《测试函数法推导连续性方程和Fokker\-Planck方程》](<https://spaces.ac.cn/archives/9461>)的内容，上式具备连续性方程的形式，所以通过ODE
+\begin{equation}\frac{d\boldsymbol{x}}{dt} = -\nabla_{\boldsymbol{x}}\big(f(r_t(\boldsymbol{x})) - r_t(\boldsymbol{x}) f'(r_t(\boldsymbol{x}))\big)\end{equation}
+可以实现从分布$q_t$中采样，而根据前面的讨论，式$\eqref{eq:wgd}$是最小化$p,q$的$f$散度的Wasserstein梯度流，当$t\to\infty$时$f$散度为零，即$q_t=p$，所以$t\to\infty$时，上述ODE实现了从分布$p$采样。不过，这个结果目前来说只有形式上的意义，并没有实际作用，因为这意味着我们要知道分布$p$的表达式，还要从式$\eqref{eq:wgd}$中解出$q_t$的表达式，然后才能算出ODE右端式子，从而完成采样，这个计算难度非常大，通常是没法完成的。
+
+一个相对简单的例子是（逆）KL散度，此时$f=-\log$，代入式$\eqref{eq:wgd}$得到
+\begin{equation}\begin{aligned}\frac{\partial q_t(\boldsymbol{x})}{\partial t} =&\, - \nabla_{\boldsymbol{x}}\cdot\left(q_t(\boldsymbol{x})\nabla_{\boldsymbol{x}}\log \frac{p(\boldsymbol{x})}{q_t(\boldsymbol{x})}\right)\\
+=&\, - \nabla_{\boldsymbol{x}}\cdot\Big(q_t(\boldsymbol{x})\nabla_{\boldsymbol{x}}\big(\log p(\boldsymbol{x}) - \log q_t(\boldsymbol{x})\big)\Big)\\
+=&\, - \nabla_{\boldsymbol{x}}\cdot\big(q_t(\boldsymbol{x})\nabla_{\boldsymbol{x}}\log p(\boldsymbol{x})\big) + \nabla_{\boldsymbol{x}}\cdot\nabla_{\boldsymbol{x}} q_t(\boldsymbol{x})
+\end{aligned}\end{equation}
+再次对比[《测试函数法推导连续性方程和Fokker\-Planck方程》](<https://spaces.ac.cn/archives/9461>)的结果，这正好是个Fokker\-Planck方程，对应于SDE：
+\begin{equation}d\boldsymbol{x} = \nabla_{\boldsymbol{x}}\log p(\boldsymbol{x}) dt + \sqrt{2}dw\end{equation}
+也就是说，如果我们知道$\log p(\boldsymbol{x})$，那么就可以实现用上式实现从$p(\boldsymbol{x})$中采样，相比前面的ODE，免除了求解$q_t(\boldsymbol{x})$的过程，是一个相对可用的方案。
+
+## 文章小结
+
+本文介绍了梯度下降求最小值过程中的“梯度流”概念，其中包括向量空间的梯度流到概率空间的Wasserstein梯度流的拓展，以及它们与连续性方程、Fokker\-Planck方程和ODE/SDE采样之间的联系。

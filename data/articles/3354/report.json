@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "3354",
+    "title": "【翻译】巨型望远镜：要继续，就得有牺牲！",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/3354",
+    "date": "2015-06-10",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 0,
+    "display_formula_count": 0,
+    "image_count": 1,
+    "heading_count": 2,
+    "code_block_count": 0,
+    "source_text_sha256": "5333191186b5b3260e57e147089d4395c6d6378473d20c964301ec63f5297eab",
+    "output_text_sha256": "5333191186b5b3260e57e147089d4395c6d6378473d20c964301ec63f5297eab",
+    "latex_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "body_sha256": "5092045c53e34ad26bcacf71e22146abd191bf670ad86b979b8f1a794a80174e",
+    "converter_version": 1,
+    "markdown_sha256": "936e758f170d1349bbf0240421733919c5aa447b4aaa33213285a4a57b538976"
+  },
+  "fetched_at": "2026-09-14T13:45:51+00:00",
+  "source_snapshot_sha256": "7fb26525bbdc6e5ebb846c77d6c778a80c08bf5665f53180500b674cac573a62",
+  "images": {},
+  "local_only": true
+}

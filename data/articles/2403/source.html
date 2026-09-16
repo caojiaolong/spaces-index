@@ -1,0 +1,36 @@
+<div class="PostContent" id="PostContent">
+<p>开学已经是第二周了，我的《微分几何》也上课两周了，进度比较慢，现在才讲到平面曲线的曲率。在平面曲线$\boldsymbol{t}(t)=(x(t),y(t))$某点上可以找出单位切向量。<br/>
+$$\boldsymbol{t}=\left(\frac{dx}{ds},\frac{dy}{ds}\right)$$<br/>
+其中$ds^2 =dx^2+dy^2$，将这个向量逆时针旋转90度之后，就可以定义相应的单位法向量$\boldsymbol{n}$，即$\boldsymbol{t}\cdot\boldsymbol{n}=0$。</p><p><strong>常规写法</strong></p><p>让我们用弧长$s$作为参数来描述曲线方程，$\boldsymbol{t}(s)=(x(s),y(s))$，函数上的一点表示对$s$求导。那么我们来考虑$\dot{\boldsymbol{t}}$，由于$\boldsymbol{t}^2=1$，对s求导得到<br/>
+$$\boldsymbol{t}\cdot\dot{\boldsymbol{t}}=0$$<br/>
+也就是说$\dot{\boldsymbol{t}}$与$\boldsymbol{t}$垂直，由于只是在平面上，所以$\dot{\boldsymbol{t}}$与$\boldsymbol{n}$平行。即<br/>
+$$\dot{\boldsymbol{t}}=\kappa \boldsymbol{n}$$</p><p>类似地，有$\dot{\boldsymbol{n}}$与$\boldsymbol{t}$平行。并且对$\boldsymbol{t}\cdot\boldsymbol{n}=0$求导得到<br/>
+$$\dot{\boldsymbol{t}}\cdot\boldsymbol{n}+\boldsymbol{t}\cdot\dot{\boldsymbol{n}}=0$$<br/>
+将$\dot{\boldsymbol{t}}=\kappa \boldsymbol{n}$代入上式得到<br/>
+$$\dot{\boldsymbol{n}}=-\kappa \boldsymbol{t}$$<br/>
+$\kappa$被称为曲线在该点的曲率。</p><p><strong>复数表示</strong></p><p>以上是教科书的标准写法，但事实上，研究平面曲线的最方便的工具还是复数。将$\boldsymbol{r}(s)$用一个带参数的复数表示$z(s)$，那么上面的两式可以写成更简洁的一个式子<br/>
+$$\ddot{z}(s)=i\kappa (s) \dot{z}(s) $$</p><p>这样写的好处还在于，任意给出曲率函数$\kappa (s) $，我们就可以求出对应的曲线<br/>
+$$z(s)=\int e^{i\int \kappa (s)ds}ds $$<br/>
+这是简洁而有效的。</p><p>另外，不妨设$dz=ds e^{i\phi}$，那么<br/>
+$$\dot{z}=e^{i\phi}$$<br/>
+自然地<br/>
+$$\ddot{z}=e^{i\phi}\left(i\dot{\phi}\right)$$<br/>
+所以曲率可以表示为<br/>
+$$\kappa=\dot{\phi}$$</p><p><strong>各种坐标</strong></p><p>利用它可以很方便地推导出各种坐标系下的曲率表达式，如曲线为一般的参数方程$(x(t),y(t))$时，用函数加一撇表示对t求导，有$ds=\sqrt{x'(t）^2+y'(t)^2}dt,\phi=\arctan\left(\frac{y'(t)}{x'(t)}\right)$，那么<br/>
+$$\frac{d\phi}{ds}=\frac{\frac{y''(t)}{x'(t)}-\frac{y'(t)x''(t)}{[x'(t)]^2}}{1+\left(\frac{y'(t)}{x'(t)}\right)^2}\div \left(\frac{ds}{dt}\right)$$<br/>
+代入整理易得<br/>
+$$\kappa=\frac{y''(t) x'(t)-x''(t) y'(t)}{[x'(t)^2+y'(t)^2]^{3/2}}$$</p><p>在极坐标下，设$r=f(\theta)$，则$z=f(\theta)e^{i\theta}$，那么<br/>
+$$dz=\left(\frac{d f}{d \theta}+i f\right)e^{i\theta}d\theta$$<br/>
+所以<br/>
+$$ds=\sqrt{f^2+\left(\frac{d f}{d \theta}\right)^2}d\theta$$<br/>
+而$\phi=\arctan\frac{f}{\left(\frac{d f}{d \theta}\right)}+\theta$，那么<br/>
+$$\frac{d\phi}{ds}=\left[\frac{1-\left(\frac{d^2 f}{d \theta^2}\right) f/\left(\frac{d f}{d \theta}\right)^2}{1+f^2/\left(\frac{d f}{d \theta}\right)^2}+1\right]\div \left(\frac{d s}{d \theta}\right)$$<br/>
+代入整理得<br/>
+$$\kappa=\frac{2\left(\frac{d f}{d \theta}\right)^2+f^2-\left(\frac{d^2 f}{d \theta^2}\right)f}{\left[\left(\frac{d f}{d \theta}\right)^2+f^2\right]^{3/2}}$$<br/>
+三维空间有没有类似方便的东西呢？我也正在思考^_^</p>
+
+
+
+
+
+</div>

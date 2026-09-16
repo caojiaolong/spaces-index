@@ -1,0 +1,161 @@
+# 最小熵原理（四）：“物以类聚”之从图书馆到词向量
+
+> 作者：苏剑林 · 科学空间 · 2018-12-02
+>
+> 原文：<https://spaces.ac.cn/archives/6191>
+>
+> 原文许可：[CC BY-NC-ND 2.5 CN（署名-非商业性使用-禁止演绎）](https://creativecommons.org/licenses/by-nc-nd/2.5/cn/)。
+>
+> 本文件由 spaces-index 非官方、非商业项目进行必要的 HTML → Markdown 格式转换；正文未做摘要、润色、翻译或重组。项目不代表作者，也不表示作者为项目背书。
+>
+> 署名及附加许可说明不代表已获得作者额外授权。第三方素材权利依其原有声明。
+>
+> 原站转载与引用说明：[科学空间 FAQ](https://spaces.ac.cn/archives/6508#%E6%96%87%E7%AB%A0%E5%A6%82%E4%BD%95%E8%BD%AC%E8%BD%BD/%E5%BC%95%E7%94%A8)
+
+---
+
+从第一篇看下来到这里，我们知道所谓“最小熵原理”就是致力于降低学习成本，试图用最小的成本完成同样的事情。所以整个系列就是一个“偷懒攻略”。那偷懒的秘诀是什么呢？答案是“套路”，所以本系列又称为“套路宝典”。
+
+本篇我们介绍图书馆里边的套路。
+
+先抛出一个问题：<strong>词向量出现在什么时候？</strong>是2013年Mikolov的Word2Vec？还是是2003年Bengio大神的神经语言模型？都不是，其实词向量可以追溯到千年以前，在那古老的图书馆中\.\.\.
+
+[![图书馆一角（图片来源于百度搜索）](<https://spaces.ac.cn/usr/uploads/2018/12/3217374869.jpg>)](<https://spaces.ac.cn/usr/uploads/2018/12/3217374869.jpg>)
+
+图书馆一角（图片来源于百度搜索）
+
+## 走进图书馆
+
+图书馆里有词向量？还是千年以前？在哪本书？我去借来看看。
+
+### 放书的套路
+
+其实不是哪本书，而是放书的套路。
+
+很明显，图书馆中书的摆放是有“套路”的：它们不是随机摆放的，而是分门别类地放置的，比如数学类放一个区，文学类放一个区，计算机类也放一个区；同一个类也有很多子类，比如数学类中，数学分析放一个子区，代数放一个子区，几何放一个子区，等等。读者是否思考过，为什么要这么分类放置？分类放置有什么好处？跟最小熵又有什么关系？
+
+有的读者可能觉得很简单：不就是为了便于查找吗？这个答案其实不大准确。如果只是为了方便找书，那很简单，只要在数据库上记录好每一本书的坐标，然后在地面上也注明当前坐标，这样需要借哪本书，在数据库一查坐标，然后就可以去找到那本书了，整个过程不需要用到“图书分类”这一点。所以，如果单纯考虑找书的难易程度，是无法很好的解释这个现象。
+
+### 省力地借书
+
+其实原因的核心在于：<strong>我们通常不只是借一本书。</strong>
+
+前面说了，只要建好索引，在图书馆里找一本书是不难的，问题是：如果找两本呢？一般情况下，每个人的兴趣和研究是比较集中的，因此，如果我要到图书馆借两本书，那么可以合理地假设你要借的这两本书是相近的，比如借了一本《神经网络》，那么再借一本《深度学习》的概率是挺大的，但再借一本《红楼梦》的概率就很小了。借助于数据库，我可以很快找到《神经网络》，那么《深度学习》呢？如果这本书在附近，那么我只需要再走几步就可以找到它了，如果图书是随机打乱放置的，我可能要从东南角走到西北角，才找到我想要的另一本书《深度学习》，再多借几本，我不是要在图书馆里跑几圈我才能借齐我要的书？
+
+这样一来，图书分类的作用就很明显了。图书分类就是把相近的书放在一起，而每个人同一次要借的书也会相近的，所以图书分类会让大多数人的找书、借书过程更加省力！这又是一个“偷懒攻略”。也就是说，将我们要处理的东西分类放好，相近的放在一起，这也是满足最小熵原理的。生活中我们会将常用的东西分类放在触手可及的地方，也是基于同样的原理。
+
+## 图书馆规划
+
+下面我们再来从数学角度，更仔细地考察这个过程。
+
+### 简化的借书模型
+
+假如我们到图书馆去借两本书，分别记为$i,j$，假设借第一本书的成本是$d(i)$，两本书之间的成本函数为$d(i,j)$，这也就是说，找到第一本书$i$后，我就要再花$d(i,j)$那么多力气才能找到第二本书$j$。我们可以考虑这个过程对所有人的平均，即
+\begin{equation}S = \sum_{i,j} p(i)p(j|i) [d(i)+d(i,j)] = \sum_{i,j} p(i,j) [d(i)+d(i,j)]\end{equation}
+其中$p(i)$是$i$这本书被借的概率，$p(j|i)$就是借了$i$之后还会再借$j$的概率。图书馆的要把书放好，那么就要使得$S$最小化。
+
+现在我们以图书馆入口为原点，在图书馆建立一个三维坐标系，那么每本书的位置都可以用一个向量$\boldsymbol{v}$来表示，不失一般性，我们可以简单考虑$d(i)$为这本书到图书馆原点的欧氏距离，$d(i,j)$为两本书的欧氏距离，那么$S$的表达式变为：
+\begin{equation}S = \sum_{i,j} p(i)p(j|i) \left[\Vert \boldsymbol{v}_i\Vert ＋ \Vert \boldsymbol{v}_i - \boldsymbol{v}_j\Vert\right] = \sum_{i,j} p(i,j) \left[\Vert \boldsymbol{v}_i\Vert ＋ \Vert \boldsymbol{v}_i - \boldsymbol{v}_j\Vert\right] \label{eq:chengben}\end{equation}
+
+让我们再来解释一下各项的含义，<strong>其中$(i,j)$代表着一种借书习惯，即借了书$i$还借书$j$，$p(i,j)$代表着这种借书习惯出现的概率，实际生活中可以通过图书馆的借书记录去估算它；$\Vert \boldsymbol{v}_i\Vert ＋ \Vert \boldsymbol{v}_i - \boldsymbol{v}_j\Vert$则代表着先借$i$再借$j$的总成本。其中$\Vert \boldsymbol{v}_i\Vert$这一项要尽量小，意味着我们要将热门的书放在靠近出口（原点）的地方；而$\Vert \boldsymbol{v}_i - \boldsymbol{v}_j\Vert$要尽量小，则告诉我们要把相近的书放在一起。</strong>
+
+### 约束优化规划
+
+假如我们拿到了图书馆的借书记录，也就是说已知$p(i,j)$了，那么是不是可以通过最小化$\eqref{eq:chengben}$来得到图书馆的“最佳排书方案”了呢？思想对了，但还不完整，因为很显然式$\eqref{eq:chengben}$的最小值是0，只需要让所有的$\boldsymbol{v}$都等于0，也就是说，所有的书都挤在出口的位置。
+
+显然这是不可能的，因为实际上书不是无穷小的，两本书之间有一个最小间距$d_{\min} > 0$，所以完整的提法应该是：
+\begin{equation}\begin{aligned}S =& \min_{\boldsymbol{v}}\sum_{i,j} p(i)p(j|i) \left[\Vert \boldsymbol{v}_i\Vert ＋ \Vert \boldsymbol{v}_i - \boldsymbol{v}_j\Vert\right] = \sum_{i,j} p(i,j) \left[\Vert \boldsymbol{v}_i\Vert ＋ \Vert \boldsymbol{v}_i - \boldsymbol{v}_j\Vert\right] \\
+&\text{s.t.}\quad\forall i\neq j,\, \Vert \boldsymbol{v}_i - \boldsymbol{v}_j\Vert \geq d_{\min}
+\end{aligned}\label{eq:chengben-2}\end{equation}
+也就是说，这是一个带约束的极值问题，解决了这个问题，我们就可以得到图书馆对图书的最合理安排了（理论上）。当然，如果真的去给图书馆做规划，我们还要根据图书馆的实际情况引入更多的约束，比如图书馆的形状、过道的设置等，但$\eqref{eq:chengben-2}$已经不妨碍我们理解其中的根本思想了。
+
+## 一般成本最小化
+
+现在我们再将问题一般化，从更抽象的视角来观察问题，能得到更深刻的认识。
+
+### 均匀化与去约束
+
+我们先将成本函数$\Vert \boldsymbol{v}_i\Vert ＋ \Vert \boldsymbol{v}_i - \boldsymbol{v}_j\Vert$代换为一般的$f(\boldsymbol{v}_i,\boldsymbol{v}_j)$，即考虑
+\begin{equation}S = \sum_{i,j} p(i)p(j|i) f(\boldsymbol{v}_i,\boldsymbol{v}_j) = \sum_{i,j} p(i,j) f(\boldsymbol{v}_i,\boldsymbol{v}_j)\label{eq:yibanchengben}\end{equation}
+同时$\boldsymbol{v}$可以不再局限为3维向量，可以是一般的$n$维向量。我们依旧是希望成本最低，但是我们不喜欢诸如$\Vert \boldsymbol{v}_i - \boldsymbol{v}_j\Vert \geq d_{\min}$的约束条件，因为带约束的优化问题往往不容易求解，所以如果能把这个约束直接体现在$f$的选择中，那么就是一个漂亮的“去约束”方案了。
+
+怎么实现这个目的呢？回到图书馆的问题上，如果没有约束的话，理论最优解就是把所有图书都挤在出口的位置，为了防止这个不合理的解的出现，我们加了个约束“两本书之间有一个最小间距$d_{\min} > 0$”，防止了解的坍缩。其实有很多其他约束可以考虑，<u>比如可以要求所有图书必须尽量均匀地放满图书馆，在这个希望之下，也能够得到合理的解</u>。
+
+“尽量均匀”其实可以理解为某种归一化约束，因为归一，所以不能全部集中在一点，因为只有一点就不归一了。“归一”启发我们可以往概率的方向想，也就是说，先构造概率分布，然后作为成本函数的度量。在这里就不做太多牵强的引导了，直接给出其中一个选择：
+\begin{equation}f(\boldsymbol{v}_i,\boldsymbol{v}_j)=-\log\frac{e^{-\left\Vert\boldsymbol{v}_i-\boldsymbol{v}_j\right\Vert^2}}{Z_i},\quad Z_i = \sum_j e^{-\left\Vert\boldsymbol{v}_i-\boldsymbol{v}_j\right\Vert^2}\label{eq:chengben-l2}\end{equation}
+
+### 最小熵=最大似然
+
+让我们来分步理解一下这个式子。首先如果不看分母$Z_i$，那么结果就是
+\begin{equation}-\log \left(e^{-\left\Vert\boldsymbol{v}_i-\boldsymbol{v}_j\right\Vert^2}\right) =\left\Vert\boldsymbol{v}_i-\boldsymbol{v}_j\right\Vert^2\end{equation}
+也就是说，这个$f$相当于成本函数为$\left\Vert\boldsymbol{v}_i-\boldsymbol{v}_j\right\Vert^2$。然后，由于分母的存在，我们知道
+\begin{equation}\sum_j\frac{e^{-\left\Vert\boldsymbol{v}_i-\boldsymbol{v}_j\right\Vert^2}}{Z_i}=1\end{equation}
+所以$e^{-\left\Vert\boldsymbol{v}_i-\boldsymbol{v}_j\right\Vert^2}/Z_i$实际上定义了一个待定的条件概率分布$q(j|i)$，说白了，这实际上就是对$-\left\Vert\boldsymbol{v}_i-\boldsymbol{v}_j\right\Vert^2$的一个softmax操作，而此时$\eqref{eq:yibanchengben}$实际上就是：
+\begin{equation}S = -\sum_{i,j} p(i)p(j|i) \log  q(j|i)\label{eq:gailvchengben}\end{equation}
+对于固定的$i$而言，最小化上式这不就是相当于最大对数似然了吗？所以结果就是$q(j|i)$会尽量接近$p(j|i)$，从而全部取0不一定就是最优解的，因为全部取0对应着均匀分布，而真实的$p(j|i)$却不一定是均匀分布。
+
+<strong>现在再来想想，我们从最小成本的思想出发，设计了一个具有概率的负对数形式的$f(\boldsymbol{v}_i,\boldsymbol{v}_j)$，然后发现最后的结果是最大似然。这个结果可以说是意料之外、情理之中，因为$-\log  q(j|i)$的含义就是熵，我们说要最大似然，就是要最小化式$\eqref{eq:gailvchengben}$，其含义就是最小熵了。最大似然跟最小熵其实具有相同的含义。</strong>
+
+## Word2Vec
+
+只要稍微将对象一转变，Word2Vec就出来了，甚至everything2vec～
+
+### 多样的度量
+
+纯粹形式地看，式$\eqref{eq:chengben-l2}$的选择虽然很直观，但并不是唯一的，可取的选择还有
+\begin{equation}f(\boldsymbol{v}_i,\boldsymbol{v}_j)=-\log\frac{e^{\left\langle\boldsymbol{v}_i,\boldsymbol{v}_j\right\rangle}}{Z_i},\quad Z_i = \sum_j e^{\left\langle\boldsymbol{v}_i,\boldsymbol{v}_j\right\rangle}\label{eq:chengben-dot}\end{equation}
+这以内积为距离度量，希望相近的对象内积越小越好。
+
+### Skip Gram
+
+事实上，如果$i,j$分别代表句子窗口里边的一个词，那么式$\eqref{eq:chengben-dot}$就对应了著名的词向量模型——Word2Vec的Skip Gram模型了，也就是说，最小化
+\begin{equation}S = -\sum_{i,j} p(i)p(j|i)\log\frac{e^{\left\langle\boldsymbol{v}_i,\boldsymbol{v}_j\right\rangle}}{Z_i} = -\sum_{i,j} p(i,j) \log\frac{e^{\left\langle\boldsymbol{v}_i,\boldsymbol{v}_j\right\rangle}}{Z_i}\label{eq:word2vec}\end{equation}
+这正好是Word2Vec的Skip Gram模型的优化目标。
+
+> 注：Word2Vec实际上对上下文向量和中心词向量做了区分，也就是用了两套词向量，但这里为了直观理解其中的思想，我们就不区别这一点。
+
+### 原理类比分析
+
+等等，怎么突然就出来词向量了？？
+
+我们再重新捋一下思路：是这样的，我们把每个词当作一本书，每个句子都可以看成每个人的“借书记录”，这样我们就能知道哪两本“书”经常被一起借了是吧？按照我们前面讨论了一大通的图书馆最佳放书方案，我们就可以把“书”的最佳位置找出来，理论上用$\eqref{eq:chengben-2},\eqref{eq:chengben-l2}$或$\eqref{eq:chengben-dot}$都可以，这就是词向量了～如果用式$\eqref{eq:chengben-dot}$，就是Word2Vec了。
+
+反过来，找出一个最佳放书方案也就简单了，把图书馆的每个人的借书记录都当成一个句子，每本书当成一个词，设置词向量维度为3，送入Word2Vec训练一下，出来的词向量，就是最佳放书方案了。
+
+那些doc2vec、node2vec、everything2vec，基本上都是这样做的。
+
+所以，开始的问题就很清晰了：将图书馆的每本书的三维坐标记录下来，这不就是一个实实在在的“book embedding”？相近的书的向量也相近呀，跟词向量的特性完美对应～所以，自从有了图书馆，就有了embedding，尽管那时候还没有坐标系，当然也没有计算机。
+
+## 再来看看t\-SNE
+
+有了“借书记录”，也就是$p(j|i),p(i)$，我们就可以照搬上述过程，得到一个“最佳位置规划”，这就是向量化的过程。
+
+如果没有呢？
+
+### SNE
+
+那就造一个出来呀！比如我们已经有了一堆高维样本$\boldsymbol{x}_1,\boldsymbol{x}_2,\dots,\boldsymbol{x}_N$，它们可以是一堆图像数据集，我们想要得到一个低维表示$\boldsymbol{z}_1,\boldsymbol{z}_2,\dots,\boldsymbol{z}_N$。我们构造一个
+\begin{equation}p(\boldsymbol{x}_j|\boldsymbol{x}_i)=\frac{e^{-\Vert \boldsymbol{x}_i-\boldsymbol{x}_j\Vert^2/2\sigma^2}}{\sum\limits_{j}^{j\neq i}e^{-\Vert \boldsymbol{x}_i-\boldsymbol{x}_j\Vert^2/2\sigma^2}}\label{eq:pij}\end{equation}
+然后还是用式$\eqref{eq:chengben-l2}$作为成本函数（假设$p(i)$是常数，即均匀分布，同时求和不对自身进行），去优化$\eqref{eq:yibanchengben}$，即
+\begin{equation}S=-\sum_{i,j}^{i\neq j}p(\boldsymbol{x}_j|\boldsymbol{x}_i)\log q(j|i),\quad q(j|i)=\frac{e^{-\left\Vert\boldsymbol{z}_i-\boldsymbol{z}_j\right\Vert^2}}{\sum\limits_{j}^{j\neq i}e^{-\left\Vert\boldsymbol{z}_i-\boldsymbol{z}_j\right\Vert^2}}\end{equation}
+这便是称为SNE的降维方法了。
+
+一般来说它还有一些变种，我们就不细抠了，这也不是本文的重点，我们只需要理解基本思想。SNE本质上就是尽量保持相对距离的一种降维方案。因为它保持的是相对距离，保持了基本的形状不变，所以降维效果比PCA等方法要好。原因是PCA等方法仅仅保留主成分，只适用于比较规则的数据（比如具有中心聚拢特性、各向同性的），SNE的思想可以适用于任意连通形状。
+
+### t\-SNE
+
+前面说得SNE已经体现出降维思想了。但是它会有一些问题，主要的就是“Crowding问题”。这个“Crowding问题”，简单来看，就是因为低维分布$\eqref{eq:chengben-l2}$也是距离的负指数形式，负指数的问题就是在远处迅速衰减到0，而$\eqref{eq:chengben-l2}$中的$\boldsymbol{v}$是我们要求解的目标，这样一来优化结果是所有的点几乎都拥挤（Crowding）在某处附近（因为指数衰减，距离较远的点几乎不会出现），效果就不够好了。
+
+为了解决这个问题，我们可以把式$\eqref{eq:chengben-l2}$换成衰减没那么快的函数，比如说简单的分式：
+\begin{equation}f(\boldsymbol{z}_i,\boldsymbol{z}_j)=-\log\frac{(1+\left\Vert\boldsymbol{z}_i-\boldsymbol{z}_j\right\Vert^2)^{-1}}{Z_i},\quad Z_i = \sum_{j}^{j\neq i} (1+\left\Vert\boldsymbol{z}_i-\boldsymbol{z}_j\right\Vert^2)^{-1}\label{eq:t}\end{equation}
+这称为t分布。式$\eqref{eq:t}$、式$\eqref{eq:pij}$和式$\eqref{eq:yibanchengben}$结合，就是称为t\-SNE的降维方法，相比SNE，它改善了Crowding问题。
+
+当然，t\-SNE与SNE的差别，其实已经不是本文的重点了，本文的重点是揭示SNE这类降维算法与Word2Vec的异曲同工之处。
+
+虽然在深度学习中，我们直接用t\-SNE这类降维手段的场景并不多，哪怕降维、聚类都有很多更漂亮的方案了，比如降维可以看这篇[《深度学习的互信息：无监督提取特征》](<https://spaces.ac.cn/archives/6024>)、聚类可以看这个[《变分自编码器（四）：一步到位的聚类方案》](<https://spaces.ac.cn/archives/5887>)。但是t\-SNE的本质思想在很多场景都有体现，所以挖掘并体味其中的原理，并与其它知识点联系起来，融汇成自己的知识体系，是一件值得去做的事情。
+
+## 本文总结
+
+本文基于最小成本的思想，构建了一个比较理想化的模型来分析图书馆的图书安排原理，进而联系到了最小熵原理，并且思考了它跟Word2Vec、t\-SNE之间的联系。就这样，又构成了最小熵原理的一个个鲜活例子：物以类聚、分门别类，都能降低成本。比如我们现在可以理解为什么预训练词向量能够加快NLP任务的收敛、有时还能提升最终效果了，因为词向量事先将词摆在了适合的位置，它的构造原理本身就是为了降低成本呀。
+
+同时，将很多看似没有关联的东西联系在一起，能够相互促进各自的理解，达到尽可能融会贯通的效果，其妙不言而喻～

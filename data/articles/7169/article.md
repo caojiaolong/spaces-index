@@ -1,0 +1,139 @@
+# Self\-Orthogonality Module：一个即插即用的核正交化模块
+
+> 作者：苏剑林 · 科学空间 · 2020-01-12
+>
+> 原文：<https://spaces.ac.cn/archives/7169>
+>
+> 原文许可：[CC BY-NC-ND 2.5 CN（署名-非商业性使用-禁止演绎）](https://creativecommons.org/licenses/by-nc-nd/2.5/cn/)。
+>
+> 本文件由 spaces-index 非官方、非商业项目进行必要的 HTML → Markdown 格式转换；正文未做摘要、润色、翻译或重组。项目不代表作者，也不表示作者为项目背书。
+>
+> 署名及附加许可说明不代表已获得作者额外授权。第三方素材权利依其原有声明。
+>
+> 原站转载与引用说明：[科学空间 FAQ](https://spaces.ac.cn/archives/6508#%E6%96%87%E7%AB%A0%E5%A6%82%E4%BD%95%E8%BD%AC%E8%BD%BD/%E5%BC%95%E7%94%A8)
+
+---
+
+前些天刷Arxiv看到新文章[《Self\-Orthogonality Module: A Network Architecture Plug\-in for Learning Orthogonal Filters》](<https://papers.cool/arxiv/2001.01275>)（下面简称“原论文”），看上去似乎有点意思，于是阅读了一番，读完确实有些收获，在此记录分享一下。
+
+给全连接或者卷积模型的核加上带有正交化倾向的正则项，是不少模型的需求，比如大名鼎鼎的[BigGAN](<https://papers.cool/arxiv/1809.11096>)就加入了类似的正则项。而这篇论文则引入了一个新的正则项，笔者认为整个分析过程颇为有趣，可以一读。
+
+## 为什么希望正交？
+
+在开始之前，我们先约定：本文所出现的所有一维向量都代表列向量。那么，现在假设有一个$d$维的输入样本$\boldsymbol{x}\in \mathbb{R}^d$，经过全连接或卷积层时，其核心运算就是：
+\begin{equation}\boldsymbol{y}^{\top}=\boldsymbol{x}^{\top}\boldsymbol{W},\quad \boldsymbol{W}\triangleq (\boldsymbol{w}_1,\boldsymbol{w}_2,\dots,\boldsymbol{w}_k)\label{eq:k}\end{equation}
+其中$\boldsymbol{W}\in \mathbb{R}^{d\times k}$是一个矩阵，它就被称“核”（全连接核／卷积核），而$\boldsymbol{w}_1,\boldsymbol{w}_2,\dots,\boldsymbol{w}_k\in \mathbb{R}^{d}$是该矩阵的各个列向量。
+
+上式也可以写成
+\begin{equation}\boldsymbol{y}=\begin{pmatrix}\boldsymbol{x}^{\top}\boldsymbol{w}_1 \\ \boldsymbol{x}^{\top}\boldsymbol{w}_2\\ \vdots \\ \boldsymbol{x}^{\top}\boldsymbol{w}_k\end{pmatrix}\end{equation}
+直观来看，可以认为$\boldsymbol{w}_1,\boldsymbol{w}_2,\dots,\boldsymbol{w}_k$代表了$k$个不同的视角，而$\boldsymbol{y}$就是$\boldsymbol{x}$在这$k$个视角之下的观测结果。
+
+既然有$k$个视角，那么为了减少视角的冗余（更充分的利用所有视角的参数），我们自然是希望各个视角互不相关（举个极端的例子，如果有两个视角一模一样的话，那这两个视角取其一即可）。而对于线性空间中的向量来说，不相关其实就意味着正交，所以我们希望
+\begin{equation}\boldsymbol{w}_i^{\top}\boldsymbol{w}_j=0,\,\forall i\neq j\end{equation}
+这便是正交化的来源。
+
+## 常见的正交化方法
+
+矩阵的正交化跟向量的归一化有点类似，但是难度很不一样。对于一个非零向量$\boldsymbol{w}$来说，要将它归一化，只需要$\boldsymbol{w}/\Vert\boldsymbol{w}\Vert_2$就行了，但矩阵正交化并没有类似手段。读者可能会想到“格拉姆\-施密特正交化”，但这个计算成本有点大，而且它的不对称性也是一个明显的缺点。
+
+当然，一般来说我们也不是非得要严格的正交，所以通常的矩阵正交化的手段其实是添加正交化相关的正则项，比如对于正交矩阵来说我们有$\boldsymbol{W}^{\top}\boldsymbol{W}=\boldsymbol{I}$，所以我们可以添加正则项
+\begin{equation}\left\Vert\boldsymbol{W}^{\top}\boldsymbol{W}-\boldsymbol{I}\right\Vert^2\label{eq:reg0}\end{equation}
+这里的范数$\Vert\cdot\Vert$可以用矩阵2范数或矩阵$F$范数（关于矩阵范数的概念，可以参考[《深度学习中的Lipschitz约束：泛化与生成模型》](<https://spaces.ac.cn/archives/6051>)）。此外，上面这个正则项已经不仅是希望正交化了，而且同时还希望归一化（每个向量的模长为1），如果只需要正交化，则可以把对角线部分给mask掉，即
+\begin{equation}\left\Vert\left(\boldsymbol{W}^{\top}\boldsymbol{W}-\boldsymbol{I}\right)\otimes (1 - \boldsymbol{I})\right\Vert^2\label{eq:reg00}\end{equation}
+BigGAN里边添加的就是这个正则项。
+
+## 论文提出来的正则项
+
+而原论文提出的也是一个新的正交正则项，里边包含一些有意思的讨论和推导，并做实验检验了它的有效性。
+
+### 局部敏感哈希
+
+原论文的出发点是如下的引理
+
+> 设$\boldsymbol{w}_i,\boldsymbol{w}_j\in\mathbb{R}^d$是给定两个向量，$\theta_{i,j}\in[0,\pi]$是它们的夹角，$\mathcal{X}$是$d$维单位超球面，$\boldsymbol{x}\sim\mathcal{X}$代表在$\mathcal{X}$上随机选一个向量。此时我们有如下结果：
+> \begin{equation}\vartheta_{i,j}\triangleq \mathbb{E}_{\boldsymbol{x}\sim\mathcal{X}}\left[\text{sgn}\left(\boldsymbol{x}^{\top}\boldsymbol{w}_i\right)\text{sgn}\left(\boldsymbol{x}^{\top}\boldsymbol{w}_j\right)\right]=1-\frac{2\theta}{\pi}\label{eq:lsh}\end{equation}
+
+其中$\text{sgn}$是符号函数，即$\text{sgn}(x)=\left\{\begin{aligned}1,&\,x > 0\\ -1,&\, x\leq 0\end{aligned}\right.$。这个引理是关于余弦相似度的“局部敏感哈希”的直接推论，而局部敏感哈希（Locality Sensitive Hashing）则源自论文[《Similarity Estimation Techniques from Rounding Algorithms》](<https://www.cs.princeton.edu/courses/archive/spr04/cos598B/bib/CharikarEstim.pdf>)，如果要追溯证明的话，可以沿着这条路线走。
+
+咋看上去$\eqref{eq:lsh}$就是一个普通的数学公式结论，但事实上它蕴含了更丰富的意义，它允许我们将两个实数连续向量的相似度（近似地）转化为两个二值向量（\-1和1）的相似度。而转化为二值向量后，则相当于转化成为了一个“词\-文档”矩阵，这允许我们建立索引来加速检索。换句话说，这能有效地提高实数连续向量的检索速度！
+
+### 优化目标形式
+
+直接看式$\eqref{eq:lsh}$的定义，它的导数恒为0，但我们可以得到它的某种光滑近似。假设我们已经得到了$\vartheta$的某个光滑近似，那么我们就可以用它来构建正交正则项。原论文构建的正则项是：
+\begin{equation}\mathcal{R}_{\vartheta}\triangleq \lambda_1\left(\sum_{i\neq j}\vartheta_{i,j}\right)^2 + \lambda_2\sum_{i\neq j}\vartheta_{i,j}^2\label{eq:reg}\end{equation}
+很明显，这个正则项希望$\vartheta_{i,j}=0$，而$\vartheta_{i,j}=0$意味着$\theta_{i,j}=\pi/2$，也就是$\boldsymbol{W}$的两两向量相互垂直。相对而言，$\lambda_1$控制的正则项柔和一些，它只希望$\vartheta_{i,j}$的均值为0，而$\lambda_2$则强硬一些，它希望所有的$\theta_{i,j}$都等于0。
+
+考虑到实际问题可能比较复杂，我们不应当对模型进行过于强硬的约束，所以原论文让$\lambda_1 > \lambda_2$，具体值是$\lambda_1 = 100, \lambda_2 = 1$。
+
+### 插入到模型中
+
+现在让我们来考虑$\vartheta_{i,j}$的实际估算问题。
+
+首先，我们换一个角度来理解一下式$\eqref{eq:lsh}$。假若我们采样$b$个样本$\boldsymbol{x}_1,\boldsymbol{x}_2,\dots,\boldsymbol{x}_b$去估算$\vartheta_{i,j}$，就有
+\begin{equation}\begin{aligned}\vartheta_{i,j}\approx&\frac{1}{b}\sum_{\alpha=1}^b\left[\text{sgn}\left(\boldsymbol{x}_{\alpha}^{\top}\boldsymbol{w}_i\right)\text{sgn}\left(\boldsymbol{x}_{\alpha}^{\top}\boldsymbol{w}_j\right)\right]\\
+=&\left(\frac{\boldsymbol{y}_i}{\Vert\boldsymbol{y}_i\Vert_2}\right)^{\top}\left(\frac{\boldsymbol{y}_j}{\Vert\boldsymbol{y}_j\Vert_2}\right)
+\end{aligned}\label{eq:lsh-2}\end{equation}
+这里
+\begin{equation}\boldsymbol{y}=\begin{pmatrix}
+\text{sgn}\left(\boldsymbol{x}_{1} ^{\top}\boldsymbol{w}\right)\\
+\text{sgn}\left(\boldsymbol{x}_{2}^{\top}\boldsymbol{w}\right)\\
+\vdots\\
+\text{sgn}\left(\boldsymbol{x}_{b}^{\top}\boldsymbol{w}\right)
+\end{pmatrix}=\text{sgn}\left(\boldsymbol{X}^{\top}\boldsymbol{w}\right),\,\,\boldsymbol{X}=(\boldsymbol{x}_1,\boldsymbol{x}_2,\dots,\boldsymbol{x}_b)\in\mathbb{R}^{d\times b}\end{equation}
+这个形式变换最巧的地方在于，由于$\boldsymbol{y}$的元素不是1就是\-1，因此$\boldsymbol{y}$的模长刚好就是$\sqrt{b}$，所以因子$1/b$刚好就等价于将$\boldsymbol{y}_i,\boldsymbol{y}_j$都归一化！
+
+此外，值得提出的是，不管是$\eqref{eq:lsh}$还是$\eqref{eq:lsh-2}$其实都跟各$\boldsymbol{x}_{\alpha}$的模长没关系，因为$\text{sgn}(x)=\text{sgn}(|\lambda|x)$。前面那个引理之所以要求在“单位超球面”上采样，只是为了强调采样方向（而不是模长）的均匀性。
+
+理解到这里，我们就可以理清的$\vartheta_{i,j}$估计流程了：
+
+> <strong>$\vartheta_{i,j}$估计流程</strong>
+> 
+> 
+> 
+> 1、随机初始化一个$d\times b$的矩阵$\boldsymbol{X}$（看成$b$个$d$维向量时，模长不限，方向尽量均匀）；
+> 
+> 
+> 
+> 2、计算$\boldsymbol{X}^{\top}\boldsymbol{w}_i, \boldsymbol{X}^{\top}\boldsymbol{w}_j$，得到两个$b$维向量，然后用$\text{sgn}$函数激活，然后各自做$l_2$归一化，最后算内积；
+> 
+> 
+> 
+> 3、如果要求光滑近似的话，可以用$\text{sgn}(x)\approx \tanh(\gamma x)$，原论文用了$\gamma=10$。
+
+$\boldsymbol{X}$怎么选好呢？原论文直接将它选择为当前batch的输入。回到$\eqref{eq:k}$，一般来说，神经网络的输入就是一个$b\times d$的矩阵，我们就可以把它当成$\boldsymbol{X}^{\top}$，这时候$b$就是batch size，而接下来神经网络会跟$\boldsymbol{W}\in \mathbb{R}^{d\times k}$做乘法，得到输出$\boldsymbol{Y}\in\mathbb{R}^{b\times k}$，这刚好对应着“$\vartheta_{i,j}$估计流程”中$k$个核向量$\boldsymbol{w}_1,\boldsymbol{w}_2,\dots,\boldsymbol{w}_n$的算出来的$k$个$b$维向量$\boldsymbol{X}^{\top}\boldsymbol{w}_1,\boldsymbol{X}^{\top}\boldsymbol{w}_2,\dots,\boldsymbol{X}^{\top}\boldsymbol{w}_k$。这样的话我们连$\vartheta_{i,j}$估计流程中的大部分计算量都省掉了，直接根据模型当前层的输出就可以估算了。
+
+> <strong>注：如果读者去看原论文，会发现原论文这部分的描述跟博客的描述不大一样（主要是原论文第三节Experiments上方两个段落），根据我对文章整体思路的理解，笔者认为原论文该段落的描述是错误的（主要是$D$、$d$的含义搞乱了），而博客中的写法才是正确的。</strong>
+
+总的来说，最终估算$\vartheta_{i,j}$的方案是：
+
+> 1、当前层的输入$\boldsymbol{X}^{\top}\in \mathbb{R}^{b\times d}$，而核矩阵$\boldsymbol{W}\in \mathbb{R}^{d\times k}$，做矩阵乘法后输出$\boldsymbol{Y}\in\mathbb{R}^{b\times k}$；
+> 
+> 
+> 
+> 2、对$\boldsymbol{Y}\in\mathbb{R}^{b\times k}$用$\tanh(\gamma x)$激活，然后在$b$的那一维（即batch size那一维）做$l_2$归一化；
+> 
+> 
+> 
+> 3、计算$\boldsymbol{Y}^{\top}\boldsymbol{Y}$，得到$k\times k$的矩阵，这就是所有的$\vartheta_{i,j}$。
+> 
+> 
+> 
+> 4、有了$\vartheta_{i,j}$之后，就可以代入式$\eqref{eq:reg}$算正则项了，由于正则项是利用模型自身的输出来构建的，所以称之为“自正交化正则项”。
+
+### 跟BN的联系
+
+另外，原论文中作者猜测，“在$b$的那一维（即batch size那一维）做$l_2$归一化”这个操作跟BN有点类似，所以加了自正交化正则项后，模型或许可以不用加BN了。个人认为这个猜测有点勉强，因为这个操作仅仅是在计算正则项时用到，并不影响模型正常的前向传播过程，因此不能排除BN的必要性。此外，在本身的“$\vartheta_{i,j}$估计流程”中，我们要求$\boldsymbol{X}$各个向量的方向尽量均匀，但后面我们直接选取当前层的输入（的转置）作为$\boldsymbol{X}$，无法有效地保证方向均匀，而加入BN后，理论上有助于让输入的各个向量方向更加均匀些，所以就更不能排除BN了。事实上，原论文的实验也并不完全支持作者这个猜测。
+
+## 实验与个人分析
+
+写了这么长，推导了一堆公式，总算把原论文中的正则项给推导出来了。接下来作者的确做了不少实验验证了这个正则项的有效性，总的结论就是确实能让核矩阵的向量夹角的分布更接近两两正交，此外还能带来一定的（微弱的）提升，而不是像已有的正交正则项那样只能保证正交却通常会掉点。
+
+具体的实验结果请读者自己看原论文好了，放到这里也没有什么意思。此外尽管作者做了不少实验，但我还是觉得实验不够完善，因为作者大部分的实验做的都只是点云（point cloud）的实验，常规的分类实验就只做了cifar\-10，过于简略。
+
+最后，那为什么这个正交正则项（似乎）会更有效呢？个人认为可能是新的正则项相对来说更柔和的结果，不管是$\eqref{eq:reg0}$还是$\eqref{eq:reg00}$，它们都是对单个内积（夹角）的惩罚，而原论文的$\eqref{eq:reg}$则是更倾向于从角度的分布这么一个整体视角来实现正交惩罚。此外，新的正则项涉及到了$\tanh$，它存在饱和区，也就是意味着像hinge loss一样它会对惩罚做了一个截断，进一步使得惩罚更为柔和。
+
+## 还需一个小结
+
+本文主要简单介绍了一下最近Arxiv上的一篇论文，论文指出已有正交正则项都并不能提高模型的准确率，所以作者引入了一个新的正交正则项，并且做了相应的评估，结论了自己的正则项不仅能促进正交，而且能带来一定的结果提升。
+
+<strong>最后，由于笔者之前并没有了解过相关内容（尤其是前面的“局部敏感哈希”相关部分），只是偶然在Arxiv上读到这篇论文，觉得颇有意思，遂来分享一翻，如有任何不当错漏之处，敬请读者理解并不吝指正。</strong>

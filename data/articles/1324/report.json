@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "1324",
+    "title": "《教材如何写》:我们需要怎样的数学教育？",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/1324",
+    "date": "2011-04-16",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 0,
+    "display_formula_count": 0,
+    "image_count": 1,
+    "heading_count": 0,
+    "code_block_count": 0,
+    "source_text_sha256": "1a87ab660a2d3a038274782ee10754950cd3a72c03f599e11b257e327a824130",
+    "output_text_sha256": "1a87ab660a2d3a038274782ee10754950cd3a72c03f599e11b257e327a824130",
+    "latex_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "body_sha256": "d9a367e1d5a7516209e0fd2295d67bca4a0d454ad4de993ddc67eab481d0522b",
+    "converter_version": 1,
+    "markdown_sha256": "6da4b7c8dd036fcb79c22de46e740ab9deaa7c55ab362c914e6b852f4f5a1341"
+  },
+  "fetched_at": "2026-09-14T14:22:31+00:00",
+  "source_snapshot_sha256": "5b796e1ffc4f8c1822c6575992a0eb11a0acb22903824780ad7c32cc2ad1aee4",
+  "images": {},
+  "local_only": true
+}

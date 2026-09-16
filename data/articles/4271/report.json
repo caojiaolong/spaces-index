@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "4271",
+    "title": "泰迪杯赛前培训之数据挖掘与建模“慢谈”",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/4271",
+    "date": "2017-03-14",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 0,
+    "display_formula_count": 0,
+    "image_count": 1,
+    "heading_count": 0,
+    "code_block_count": 0,
+    "source_text_sha256": "0b7b809bf8e18daa337f6396fdd0bedca8395a7a28f6cbcec852bcac1a7ffd78",
+    "output_text_sha256": "0b7b809bf8e18daa337f6396fdd0bedca8395a7a28f6cbcec852bcac1a7ffd78",
+    "latex_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "body_sha256": "d683474469da7919e7cfbde7aef2548f5d5a2e8bf74dce7225f6043d25180686",
+    "converter_version": 1,
+    "markdown_sha256": "86ecd2cfceba8934cc5f0132d311e2193df2bd0434451b0f0b01ea94c6781dbd"
+  },
+  "fetched_at": "2026-09-14T13:33:52+00:00",
+  "source_snapshot_sha256": "6ef6eb0d3e430e3b80bb7799ec95689f05f35bea36adf28bd782b5d56cb33348",
+  "images": {},
+  "local_only": true
+}

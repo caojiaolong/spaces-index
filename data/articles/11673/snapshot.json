@@ -1,0 +1,17 @@
+{
+  "metadata": {
+    "id": "11673",
+    "title": "基于流式幂迭代的Muon实现：2. 加速",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/11673",
+    "date": "2026-03-26",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "fetched_at": "2026-09-14T12:36:32+00:00",
+  "source_snapshot_sha256": "b51d014051f8dabe3d398bb9d50bd911b9def40e6e8cd0bb59cd3cccae57b67a",
+  "validators": {
+    "etag": null,
+    "last_modified": null
+  }
+}

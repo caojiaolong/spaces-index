@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "3641",
+    "title": "趣题：如何编程列出一个集合的所有子集",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/3641",
+    "date": "2016-03-04",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 5,
+    "display_formula_count": 0,
+    "image_count": 0,
+    "heading_count": 0,
+    "code_block_count": 1,
+    "source_text_sha256": "87f92d4d7ae9e7c0853d8875acc3a52403852f544c24e0d329fb5a3ab7c5f18c",
+    "output_text_sha256": "87f92d4d7ae9e7c0853d8875acc3a52403852f544c24e0d329fb5a3ab7c5f18c",
+    "latex_sha256": "4fe71cb335f6f4e39b4cb55857873c616943ec8114508cada566318a6bdcd0c1",
+    "body_sha256": "8129010818aa537e7ce5296d165fea0b31b1b263f4053f674ae318df9c047e98",
+    "converter_version": 1,
+    "markdown_sha256": "c855043c3d37c870791bd0f8cd18645a54b02ea2016c94bf57bae6921707cd69"
+  },
+  "fetched_at": "2026-09-14T13:42:19+00:00",
+  "source_snapshot_sha256": "068f080d6725ba829a3289eb196dd395612e3ab48da1c180769abe86e389581c",
+  "images": {},
+  "local_only": true
+}

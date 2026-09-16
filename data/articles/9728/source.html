@@ -1,0 +1,71 @@
+<div class="PostContent" id="PostContent">
+<p>上周在<a href="/archives/9708" target="_blank">《Transformer升级之路：12、无限外推的ReRoPE？》</a>中，笔者提出了ReRoPE和Leaky ReRoPE，诸多实验结果表明，它们能够在几乎不损失训练效果的情况下免微调地扩展LLM的Context长度，并且实现了“longer context, lower loss”的理想特性，此外跟NTK-aware Scaled RoPE不同的是，其中ReRoPE似乎还有表现出了无限的Context处理能力。</p><p>总之，ReRoPE看起来相当让人满意，但美中不足的是会增加推理成本，具体表现为第一步推理需要算两次Attention，以及后续每步推理需要重新计算位置编码。本文试图通过在训练中逆用Leaky ReRoPE的方法来解决这个问题。</p><h2 id="回顾">回顾</h2><p>让我们不厌其烦地重温一下：RoPE形式上是一种绝对位置编码，但实际达到的效果是相对位置编码，对应的相对位置矩阵是：<br/>
+\begin{equation}\begin{pmatrix}0 &amp; \\<br/>
+1 &amp; 0 &amp; \\<br/>
+2 &amp; 1 &amp; 0 &amp;\\<br/>
+3 &amp; 2 &amp; 1 &amp; 0 &amp; \\<br/>
+\ddots &amp; 3 &amp; 2 &amp; 1 &amp; 0 &amp; \\<br/>
+\ddots &amp; \ddots &amp; 3 &amp; 2 &amp; 1 &amp; 0 &amp; \\<br/>
+\ddots &amp; \ddots &amp; \ddots &amp; \ddots &amp; \ddots &amp; \ddots &amp; \ddots \\<br/>
+\small{L - 2} &amp; \ddots &amp; \ddots &amp; \ddots &amp; \ddots &amp; \ddots &amp; \ddots &amp; \ddots \\<br/>
+\small{L - 1} &amp; \small{L - 2} &amp; \ddots &amp; \ddots &amp; \ddots &amp; 3 &amp; 2 &amp; 1 &amp; 0 &amp; \\<br/>
+\end{pmatrix}\label{eq:rope}\end{equation}<br/>
+为了在保留局域性的同时避免Long Context导致位置越界问题，Leaky ReRoPE将推理阶段的相对位置矩阵改为：<br/>
+\begin{equation}\begin{pmatrix}<br/>
+\color{red}{0} &amp; \\<br/>
+\color{red}{1} &amp; \color{red}{0} &amp; \\<br/>
+\color{red}{2} &amp; \color{red}{1} &amp; \color{red}{0} &amp; \\<br/>
+\color{red}{\ddots} &amp; \color{red}{2} &amp; \color{red}{1} &amp; \color{red}{0} &amp; \\<br/>
+\color{red}{\small{w - 1}} &amp; \color{red}{\ddots} &amp; \color{red}{2} &amp; \color{red}{1} &amp; \color{red}{0} &amp; \\<br/>
+\color{green}{w} &amp; \color{red}{\small{w - 1}} &amp; \color{red}{\ddots} &amp; \color{red}{2} &amp; \color{red}{1} &amp; \color{red}{0} &amp; \\<br/>
+\color{green}{\small{w + \frac{1}{k}}} &amp; \color{green}{w} &amp; \color{red}{\ddots} &amp; \color{red}{\ddots} &amp; \color{red}{2} &amp; \color{red}{1} &amp; \color{red}{0} &amp; \\<br/>
+\color{green}{\small{w + \frac{2}{k}}} &amp; \color{green}{\small{w + \frac{1}{k}}} &amp; \color{green}{\ddots} &amp; \color{red}{\ddots} &amp; \color{red}{\ddots} &amp; \color{red}{2} &amp; \color{red}{1} &amp; \color{red}{0} &amp; \\<br/>
+\color{green}{\ddots} &amp; \color{green}{\small{w + \frac{2}{k}}} &amp; \color{green}{\ddots} &amp; \color{green}{\ddots} &amp; \color{red}{\ddots} &amp; \color{red}{\ddots} &amp; \color{red}{2} &amp; \color{red}{1} &amp; \color{red}{0} &amp; \\<br/>
+\color{green}{\ddots} &amp; \color{green}{\ddots} &amp; \color{green}{\ddots} &amp; \color{green}{\ddots} &amp; \color{green}{\ddots} &amp; \color{red}{\ddots} &amp; \color{red}{\ddots} &amp; \color{red}{\ddots} &amp; \color{red}{\ddots} &amp; \color{red}{\ddots} &amp; \\<br/>
+\color{green}{\ddots} &amp; \color{green}{\ddots} &amp; \color{green}{\ddots} &amp; \color{green}{\small{w + \frac{2}{k}}} &amp; \color{green}{\small{w + \frac{1}{k}}} &amp; \color{green}{w} &amp; \color{red}{\small{w - 1}} &amp; \color{red}{\ddots} &amp; \color{red}{2} &amp; \color{red}{1} &amp; \color{red}{0} &amp; \\<br/>
+\color{green}{\small{w + \frac{L-1-w}{k}}} &amp; \color{green}{\ddots} &amp; \color{green}{\ddots} &amp; \color{green}{\ddots} &amp; \color{green}{\small{w + \frac{2}{k}}} &amp; \color{green}{\small{w + \frac{1}{k}}} &amp; \color{green}{w} &amp; \color{red}{\small{w - 1}} &amp; \color{red}{\ddots} &amp; \color{red}{2} &amp; \color{red}{1} &amp; \color{red}{0} &amp; \\<br/>
+\end{pmatrix}\label{eq:leaky-rerope}\end{equation}<br/>
+其中$w$是窗口宽度，大概取训练长度的$\frac{1}{4}$到$\frac{1}{2}$，$k$用来调节可处理的最大长度，一般使得$w + \frac{L-1-w}{k}$不超过训练长度的一半为佳。至于ReRoPE，则是直接取了$k\to\infty$的极限：<br/>
+\begin{equation}\begin{pmatrix}<br/>
+\color{red}{0} &amp; \\<br/>
+\color{red}{1} &amp; \color{red}{0} &amp; \\<br/>
+\color{red}{2} &amp; \color{red}{1} &amp; \color{red}{0} &amp; \\<br/>
+\color{red}{\ddots} &amp; \color{red}{2} &amp; \color{red}{1} &amp; \color{red}{0} &amp; \\<br/>
+\color{red}{\small{w - 1}} &amp; \color{red}{\ddots} &amp; \color{red}{2} &amp; \color{red}{1} &amp; \color{red}{0} &amp; \\<br/>
+\color{green}{w} &amp; \color{red}{\small{w - 1}} &amp; \color{red}{\ddots} &amp; \color{red}{2} &amp; \color{red}{1} &amp; \color{red}{0} &amp; \\<br/>
+\color{green}{w} &amp; \color{green}{w} &amp; \color{red}{\ddots} &amp; \color{red}{\ddots} &amp; \color{red}{2} &amp; \color{red}{1} &amp; \color{red}{0} &amp; \\<br/>
+\color{green}{w} &amp; \color{green}{w} &amp; \color{green}{\ddots} &amp; \color{red}{\ddots} &amp; \color{red}{\ddots} &amp; \color{red}{2} &amp; \color{red}{1} &amp; \color{red}{0} &amp; \\<br/>
+\color{green}{\ddots} &amp; \color{green}{w} &amp; \color{green}{\ddots} &amp; \color{green}{\ddots} &amp; \color{red}{\ddots} &amp; \color{red}{\ddots} &amp; \color{red}{2} &amp; \color{red}{1} &amp; \color{red}{0} &amp; \\<br/>
+\color{green}{\ddots} &amp; \color{green}{\ddots} &amp; \color{green}{\ddots} &amp; \color{green}{\ddots} &amp; \color{green}{\ddots} &amp; \color{red}{\ddots} &amp; \color{red}{\ddots} &amp; \color{red}{\ddots} &amp; \color{red}{\ddots} &amp; \color{red}{\ddots} &amp; \\<br/>
+\color{green}{\ddots} &amp; \color{green}{\ddots} &amp; \color{green}{\ddots} &amp; \color{green}{w} &amp; \color{green}{w} &amp; \color{green}{w} &amp; \color{red}{\small{w - 1}} &amp; \color{red}{\ddots} &amp; \color{red}{2} &amp; \color{red}{1} &amp; \color{red}{0} &amp; \\<br/>
+\color{green}{w} &amp; \color{green}{\ddots} &amp; \color{green}{\ddots} &amp; \color{green}{\ddots} &amp; \color{green}{w} &amp; \color{green}{w} &amp; \color{green}{w} &amp; \color{red}{\small{w - 1}} &amp; \color{red}{\ddots} &amp; \color{red}{2} &amp; \color{red}{1} &amp; \color{red}{0} &amp; \\<br/>
+\end{pmatrix}\label{eq:rerope}\end{equation}</p><h2 id="反转">反转</h2><p>从上一篇的评测结果来看，作为一种免训练的外推方案，ReRoPE和Leaky ReRoPE的效果都是相当让人满意的，既没有损失训练长度内的效果，又实现了“Longer Context, Lower Loss”。唯一美中不足的是，它们的推理速度相比原本的Attention来说是变慢的，并且目前尚不兼容Flash Attention等加速技术。</p><p>那么，能否反过来呢？ReRoPE/Leaky ReRoPE在训练阶段是正常速度的RoPE，推理阶段则是变慢了，反过来也就是说：能否让训练阶段变慢，让推理阶段变为常规的RoPE？可能有读者疑惑：为什么会想要让训练阶段变慢？训练成本不是更高吗？这是因为ReRoPE/Leaky ReRoPE是一种长度外推方法，场景是“<font color="red">Train Short, Test Long</font>”，训练速度的变慢是短期的、可控的，推理速度的变慢才是长期的、难顶的，所以相较之下，如果是同等程度的变慢的话，我们更愿意将变慢的部分放到训练阶段。</p><p>让我们再看一下Leaky ReRoPE，它在训练阶段的相对位置矩阵是步长为1的式$\eqref{eq:rope}$，推理阶段则在$w$的窗口内使用$1$的步长，在窗口外使用$\frac{1}{k} &lt; 1$的步长，即式$\eqref{eq:leaky-rerope}$，换句话说，<font color="red"><u>差别是推理阶段窗口外使用更小的步长</u></font>。如果我们反过来，在训练阶段使用Leaky ReRoPE，并让它窗口外的步长大于$1$，那么按照“推理阶段窗口外使用更小的步长”的原则，推理阶段窗口外是否就可以使用等于$1$的步长，从而退化为RoPE了？</p><p>笔者将以上想法称之为“InvLeaky ReRoPE（Inverse Leaky ReRoPE）”。事不宜迟，我们马上做实验测试。</p><h2 id="实验">实验</h2><p>继续之前的“<a href="/archives/8934" target="_blank">GAU</a> + <a href="/archives/8978" target="_blank">Deep Norm</a> + <a href="/archives/9512" target="_blank">Tiger</a> + 语言模型”实验组合，在训练阶段使用$k=1/16, w=128$的Leaky ReRoPE，在推理阶段使用正常的RoPE，测试结果如下：</p><p>\begin{array}{c|cc}<br/>
+\hline<br/>
+\text{测试长度} &amp; 512(\text{训练}) &amp; 4096(\text{重复}) &amp; 4096(\text{不重复})\\<br/>
+\hline<br/>
+\text{Baseline} &amp; 49.41\% &amp; 24.17\% &amp; 23.16\% \\<br/>
+\text{Baseline-}\log n &amp; 49.40\% &amp; 24.60\% &amp; 24.02\% \\<br/>
+\hline<br/>
+\text{NTK-RoPE-fixed} &amp; 49.41\% &amp; 51.86\% &amp; 39.61\% \\<br/>
+\text{NTK-RoPE-}\log n^{\color{red}{\dagger}}\text{-fixed} &amp; 49.41\% &amp; 55.94\% &amp; 41.11\% \\<br/>
+\text{NTK-RoPE-}\log n\text{-fixed} &amp; 49.40\% &amp; 62.85\% &amp; 44.14\% \\<br/>
+\text{NTK-RoPE-mixed} &amp; 49.41\% &amp; 53.09\% &amp; 40.12\% \\<br/>
+\text{NTK-RoPE-}\log n^{\color{red}{\dagger}}\text{-mixed} &amp; 49.41\% &amp; 59.11\% &amp; 42.38\% \\<br/>
+\text{NTK-RoPE-}\log n\text{-mixed} &amp; 49.40\% &amp; 68.91\% &amp; 45.41\% \\<br/>
+\hline<br/>
+\text{ReRoPE-w256} &amp; 49.41\% &amp; 77.90\% &amp; 48.48\% \\<br/>
+\text{ReRoPE-w256-}\log n^{\color{red}{\dagger}} &amp; 49.41\% &amp; 82.40\% &amp; 48.85\% \\<br/>
+\text{ReRoPE-w256-}\log n &amp; 49.40\% &amp; \boldsymbol{85.12\%} &amp; \boldsymbol{49.07\%} \\<br/>
+\hline<br/>
+\text{InvLeaky ReRoPE-w128-}\log n &amp; 49.38\% &amp; 82.25\% &amp; 48.32\% \\<br/>
+\text{InvLeaky ReRoPE-w128-b8-}\log n &amp; 49.62\% &amp; 81.15\% &amp; 48.85\% \\<br/>
+\hline<br/>
+\text{HFWA} &amp; 48.70\% &amp; 80.84\% &amp; 48.15\% \\<br/>
+\hline<br/>
+\end{array}</p><p>其中$\text{b8}$是指RoPE的频率底数从10000换成了80000。可以看到，“Leaky ReRoPE → RoPE”的InvLeaky ReRoPE虽然效果上不如“RoPE → ReRoPE/Leaky ReRoPE”，但依然胜过了HFWA，并且由于推理阶段是常规的RoPE，可以套用现成的加速技术，因此依然是有相当竞争力的。此外，笔者对$k,w,b$等参数做了一些简单的调参，发现最优解基本上就是以上两个组合了，即“<font color="red">$k$设置为‘扩展倍数的2倍的倒数’、$w$设置为训练长度的$\frac{1}{4}$、$b$可选乘以扩展倍数</font>”。</p><p>那么，InvLeaky ReRoPE对训练速度有多大影响呢？在上述实验中，模型是1亿参数量，训练长度是512，每1000步的训练时间从330秒增加到了350秒，增加不到10%，当然这里边有GAU的原因，因为GAU是单头的注意力，本就比多头注意力快。如果多头注意力或者训练长度更长的话，增加幅度应该会大一些，但目测应该不超过50%都是可以接受的。</p><h2 id="小结">小结</h2><p>本文提出了Leaky ReRoPE的“逆用”做法，通过在训练阶段使用更大步长的Leaky ReRoPE，使得推理阶段可以退回常规的RoPE，从而可以保持推理速度不变，实验结果显示这种做法还是有一定的竞争力的。</p>
+
+
+
+
+
+</div>

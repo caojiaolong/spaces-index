@@ -1,0 +1,17 @@
+{
+  "metadata": {
+    "id": "9164",
+    "title": "生成扩散模型漫谈（三）：DDPM = 贝叶斯 + 去噪",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/9164",
+    "date": "2022-07-19",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "fetched_at": "2026-09-14T12:58:40+00:00",
+  "source_snapshot_sha256": "da1d2dca1ab68e94626b24e57bbbba3dfb7084c895ee05540557ac06614d2c8e",
+  "validators": {
+    "etag": null,
+    "last_modified": null
+  }
+}

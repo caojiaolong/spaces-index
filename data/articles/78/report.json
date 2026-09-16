@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "78",
+    "title": "【NASA每日一图】射向银河中心的激光",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/78",
+    "date": "2009-08-16",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 0,
+    "display_formula_count": 0,
+    "image_count": 1,
+    "heading_count": 0,
+    "code_block_count": 0,
+    "source_text_sha256": "e081d9d19cb4c871e62dc58895524885c441c645182caa5cffb15a5549f5be95",
+    "output_text_sha256": "e081d9d19cb4c871e62dc58895524885c441c645182caa5cffb15a5549f5be95",
+    "latex_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "body_sha256": "311bf2d0cab917f2a7622a0b0861936a4a0be9574e7703aaafae95cea3de0212",
+    "converter_version": 1,
+    "markdown_sha256": "5662d42d3626e91012addeb40bcfa58684b648a532f934fa1b69d2ab6598525d"
+  },
+  "fetched_at": "2026-09-14T14:58:56+00:00",
+  "source_snapshot_sha256": "83a12484db4de7f8d1dfa7aef68367f90895a37626aa036d00022fe82182295a",
+  "images": {},
+  "local_only": true
+}

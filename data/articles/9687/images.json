@@ -1,0 +1,45 @@
+{
+  "version": 1,
+  "images": {
+    "https://spaces.ac.cn/usr/uploads/2023/07/3150920671.jpg": {
+      "status": "cached",
+      "file": "1a0b65809fd585fd15bf0ef515f16ecbced78fee304ceb0fe0d97e189ccfd45f.jpg",
+      "sha256": "1a0b65809fd585fd15bf0ef515f16ecbced78fee304ceb0fe0d97e189ccfd45f",
+      "bytes": 270878,
+      "checked_at": "2026-09-16T07:22:01+00:00",
+      "fetched_url": "https://spaces.ac.cn/usr/uploads/2023/07/3150920671.jpg",
+      "etag": "\"64b11385-4221e\"",
+      "last_modified": "Fri, 14 Jul 2023 09:21:09 GMT"
+    },
+    "https://spaces.ac.cn/usr/uploads/2023/07/1165517418.jpg": {
+      "status": "cached",
+      "file": "005306661d62281fdfdce83192968bd412b6256a5b5e96528a74f66787c1397b.jpg",
+      "sha256": "005306661d62281fdfdce83192968bd412b6256a5b5e96528a74f66787c1397b",
+      "bytes": 288275,
+      "checked_at": "2026-09-16T07:22:08+00:00",
+      "fetched_url": "https://spaces.ac.cn/usr/uploads/2023/07/1165517418.jpg",
+      "etag": "\"64b11385-46613\"",
+      "last_modified": "Fri, 14 Jul 2023 09:21:09 GMT"
+    },
+    "https://spaces.ac.cn/usr/uploads/2023/07/4113965011.jpg": {
+      "status": "cached",
+      "file": "8dc532d363bbed473b9741ea55df18d52721d471cb39b34c3d73f88edf175ae8.jpg",
+      "sha256": "8dc532d363bbed473b9741ea55df18d52721d471cb39b34c3d73f88edf175ae8",
+      "bytes": 278355,
+      "checked_at": "2026-09-16T07:22:12+00:00",
+      "fetched_url": "https://spaces.ac.cn/usr/uploads/2023/07/4113965011.jpg",
+      "etag": "\"64b11385-43f53\"",
+      "last_modified": "Fri, 14 Jul 2023 09:21:09 GMT"
+    },
+    "https://spaces.ac.cn/usr/uploads/2023/07/47157620.jpg": {
+      "status": "cached",
+      "file": "19cd1b6bb60599f0ffd2c3e72eb754d9468baf5922b53c44eaf38c57abc7b4a4.jpg",
+      "sha256": "19cd1b6bb60599f0ffd2c3e72eb754d9468baf5922b53c44eaf38c57abc7b4a4",
+      "bytes": 279151,
+      "checked_at": "2026-09-16T07:22:31+00:00",
+      "fetched_url": "https://spaces.ac.cn/usr/uploads/2023/07/47157620.jpg",
+      "etag": "\"64b11385-4426f\"",
+      "last_modified": "Fri, 14 Jul 2023 09:21:09 GMT"
+    }
+  }
+}

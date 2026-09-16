@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "7515",
+    "title": "日食记",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/7515",
+    "date": "2020-06-21",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 0,
+    "display_formula_count": 0,
+    "image_count": 1,
+    "heading_count": 0,
+    "code_block_count": 0,
+    "source_text_sha256": "ed07e59118a6044387e7be33fd1f05ce43fc623b254b222807bae2dd159d1de3",
+    "output_text_sha256": "ed07e59118a6044387e7be33fd1f05ce43fc623b254b222807bae2dd159d1de3",
+    "latex_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "body_sha256": "e42b07c61764454f321bd527d8593b9a3d06f447d722dfb89f4e062e9ea6b0cb",
+    "converter_version": 1,
+    "markdown_sha256": "5c6866dab57c1b95410d4716c94bc81a9148a22645c14165103cde42530dd2b4"
+  },
+  "fetched_at": "2026-09-14T13:13:06+00:00",
+  "source_snapshot_sha256": "3a724cf820589ed0a212ade28d313094607e995b6310b7a1f107e25c30966ab8",
+  "images": {},
+  "local_only": true
+}

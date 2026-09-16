@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "735",
+    "title": "Welcome New Server for CosmoStation ",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/735",
+    "date": "2010-07-23",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 0,
+    "display_formula_count": 0,
+    "image_count": 1,
+    "heading_count": 0,
+    "code_block_count": 0,
+    "source_text_sha256": "5db4707634c0a7e3f2f2e370fd0a262cf0e0d39a6f5bf06ff0e18d5863f970bb",
+    "output_text_sha256": "5db4707634c0a7e3f2f2e370fd0a262cf0e0d39a6f5bf06ff0e18d5863f970bb",
+    "latex_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "body_sha256": "cbc42771c31200ca6edf3b84a06ba45d39570bc03f2eebfc6ca672b501925cd8",
+    "converter_version": 1,
+    "markdown_sha256": "8d972e89cb6bb1adbb0ce43c64f9f8c44c2dd652070982d51f26725119406b52"
+  },
+  "fetched_at": "2026-09-14T14:34:18+00:00",
+  "source_snapshot_sha256": "447a59303c3ba92aa62fa78f48a6bafa5f6532d7f50181243d03e5251f1727e4",
+  "images": {},
+  "local_only": true
+}

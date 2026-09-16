@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "95",
+    "title": "关于a,b的极限证明题目",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/95",
+    "date": "2009-08-24",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 7,
+    "display_formula_count": 5,
+    "image_count": 0,
+    "heading_count": 0,
+    "code_block_count": 0,
+    "source_text_sha256": "f012f8c55aca612e509fafaf500efc6a1032aa675a8f231b9862bf7957eb94ae",
+    "output_text_sha256": "f012f8c55aca612e509fafaf500efc6a1032aa675a8f231b9862bf7957eb94ae",
+    "latex_sha256": "5b63683277fbdbd78abc4193eaadef2ec878fa6830a5544969a7129d2354717b",
+    "body_sha256": "e6543122adaa23511940ba42333bcd96152060f7ae1d4dcc5de005c645d0ad02",
+    "converter_version": 1,
+    "markdown_sha256": "12653e95be41aca66798318b7f6054a091f3b5c724d8a02c47e5a2ecfdde116d"
+  },
+  "fetched_at": "2026-09-14T14:56:45+00:00",
+  "source_snapshot_sha256": "a1716ba660bfc7ff38115fb53011f7149caea86b814f47d80c8607d6cbd335f5",
+  "images": {},
+  "local_only": true
+}

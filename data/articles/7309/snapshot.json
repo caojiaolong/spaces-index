@@ -1,0 +1,17 @@
+{
+  "metadata": {
+    "id": "7309",
+    "title": "GELU的两个初等函数近似是怎么来的",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/7309",
+    "date": "2020-03-26",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "fetched_at": "2026-09-14T13:14:41+00:00",
+  "source_snapshot_sha256": "106fa336f5b061e71e4ef6d7c0182b51168eaee68e29846f46e3157a26475f75",
+  "validators": {
+    "etag": null,
+    "last_modified": null
+  }
+}

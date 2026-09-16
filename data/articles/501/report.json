@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "501",
+    "title": "【问答】为什么绿色星星非常罕见呢?",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/501",
+    "date": "2010-02-28",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 0,
+    "display_formula_count": 0,
+    "image_count": 2,
+    "heading_count": 0,
+    "code_block_count": 0,
+    "source_text_sha256": "4a24bf9ab0a4230859a65f9e166e3de9d8f28a32df85ec75a83069fd9a5e0d7a",
+    "output_text_sha256": "4a24bf9ab0a4230859a65f9e166e3de9d8f28a32df85ec75a83069fd9a5e0d7a",
+    "latex_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "body_sha256": "35d7dece87aa3b1fc201eb745d42e4d238dcf3eb98c98ef5bf13156b96281989",
+    "converter_version": 1,
+    "markdown_sha256": "29882247cb943d2dca7eccd0bdf18a7d279fc3685baadcf1acfd30490a777aaa"
+  },
+  "fetched_at": "2026-09-14T14:39:44+00:00",
+  "source_snapshot_sha256": "e349da45318ae9085cad9c2c5fb5ad22423794f9ef301c2d4d1ea9558fe6d97f",
+  "images": {},
+  "local_only": true
+}

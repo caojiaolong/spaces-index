@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "673",
+    "title": "作文《人与路》",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/673",
+    "date": "2010-06-08",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 0,
+    "display_formula_count": 0,
+    "image_count": 0,
+    "heading_count": 0,
+    "code_block_count": 0,
+    "source_text_sha256": "2a174912501355e39c9949d5ad22e7c6c1ccec21d52c8d71d646f02e10539081",
+    "output_text_sha256": "2a174912501355e39c9949d5ad22e7c6c1ccec21d52c8d71d646f02e10539081",
+    "latex_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "body_sha256": "7a99fc5a5f0f0e5ff3bf24ac823727710bd8c948a8eff072caf84bde066e7747",
+    "converter_version": 1,
+    "markdown_sha256": "82c3e6556331d3c139fb4018e30cc07624af1a5f45bfe83247334bc9477ab64f"
+  },
+  "fetched_at": "2026-09-14T14:36:34+00:00",
+  "source_snapshot_sha256": "0642882d749838d48b0a8068d4d9040527beb24545722ebb914a7fc8433cd778",
+  "images": {},
+  "local_only": true
+}

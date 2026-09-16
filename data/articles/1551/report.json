@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "1551",
+    "title": "2012北约自主招生数学",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/1551",
+    "date": "2012-02-12",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 15,
+    "display_formula_count": 4,
+    "image_count": 1,
+    "heading_count": 0,
+    "code_block_count": 0,
+    "source_text_sha256": "4f869c5f8f96b18b98a8e68c7e233694ae8a98bbdb1373e7564746019e52d054",
+    "output_text_sha256": "4f869c5f8f96b18b98a8e68c7e233694ae8a98bbdb1373e7564746019e52d054",
+    "latex_sha256": "aec8270a95a6a4ad151236b1d64f311addd8eb1503ae7c75b3f42c71051fcb86",
+    "body_sha256": "04bba3203fcc92feed55f8dc7374c88906f89749e9bccd5e35cbe7ae5993681c",
+    "converter_version": 1,
+    "markdown_sha256": "80ae717a3381c4b9942843dd6de958a1ae03c1cf15189af786bcc4e4dbdff28e"
+  },
+  "fetched_at": "2026-09-14T14:15:23+00:00",
+  "source_snapshot_sha256": "8de0e2490aa4bc2724a8a2463a764526adce4f0a7f617c27bb5daf1d7e46877b",
+  "images": {},
+  "local_only": true
+}

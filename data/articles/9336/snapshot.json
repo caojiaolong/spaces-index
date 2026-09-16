@@ -1,0 +1,17 @@
+{
+  "metadata": {
+    "id": "9336",
+    "title": "利用CUR分解加速交互式相似度模型的检索",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/9336",
+    "date": "2022-11-02",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "fetched_at": "2026-09-14T12:57:12+00:00",
+  "source_snapshot_sha256": "7a80bad1298a5917d12f962f9bdc1933e087e067b39e836fa73f5a28b67bb243",
+  "validators": {
+    "etag": null,
+    "last_modified": null
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "metadata": {
+    "id": "8747",
+    "title": "模型优化漫谈：BERT的初始标准差为什么是0.02？",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/8747",
+    "date": "2021-11-08",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "fetched_at": "2026-09-14T13:03:21+00:00",
+  "source_snapshot_sha256": "01598a95c71fba1eba13d71bc9beff52372e083115767e8ae56b25821a57ff4e",
+  "validators": {
+    "etag": null,
+    "last_modified": null
+  }
+}

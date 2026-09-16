@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "2819",
+    "title": " 从费马大定理谈起（四）：唯一分解整环",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/2819",
+    "date": "2014-08-17",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 62,
+    "display_formula_count": 6,
+    "image_count": 1,
+    "heading_count": 6,
+    "code_block_count": 0,
+    "source_text_sha256": "f2b134fd3453d82a6f575f252c5ca4c0598c28c6dea8df33547cc7fcad098807",
+    "output_text_sha256": "f2b134fd3453d82a6f575f252c5ca4c0598c28c6dea8df33547cc7fcad098807",
+    "latex_sha256": "a8f3112966fe9ecff68537a95aa6611c38a6ed3a8f70254b7c7d3e53904882ee",
+    "body_sha256": "10aa02ca7eae2f587877533cacf3f1acfca6330a8e38b713f37c6f08985839b8",
+    "converter_version": 1,
+    "markdown_sha256": "535b323067aebec00086428862b5749b4e59a9b73c735c74be060976208f913c"
+  },
+  "fetched_at": "2026-09-14T13:52:18+00:00",
+  "source_snapshot_sha256": "33715bf3103e6510b80a9eeac9189af96cba35f90bd58d81e8a3509474f0d837",
+  "images": {},
+  "local_only": true
+}

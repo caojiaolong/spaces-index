@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "7210",
+    "title": "Designing GANs：又一个GAN生产车间",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/7210",
+    "date": "2020-02-13",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 207,
+    "display_formula_count": 22,
+    "image_count": 0,
+    "heading_count": 11,
+    "code_block_count": 0,
+    "source_text_sha256": "ad5a9c5b781f74300ad63391bf315a9a8248aa6b1f42bced05b0c5d8635ff0dc",
+    "output_text_sha256": "ad5a9c5b781f74300ad63391bf315a9a8248aa6b1f42bced05b0c5d8635ff0dc",
+    "latex_sha256": "2406b962c6cf15f201a233be1e8801547b0c2109c92f0ad0de24a20d1243a77e",
+    "body_sha256": "91009e0755408b0c8df07ea2b7018fbf1018f43aa0ae78e42e554a6da08182fd",
+    "converter_version": 1,
+    "markdown_sha256": "f75764f561b75196b4a0a17b8bc955507e4896aa08447b55abb0018528169597"
+  },
+  "fetched_at": "2026-09-14T13:15:21+00:00",
+  "source_snapshot_sha256": "4e83d71f735158e8256a997eb1a2bed62ed633096ec41b277aeec1970f44c0e8",
+  "images": {},
+  "local_only": true
+}

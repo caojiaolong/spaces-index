@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "3696",
+    "title": "一个非线性差分方程的隐函数解",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/3696",
+    "date": "2016-04-09",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 74,
+    "display_formula_count": 27,
+    "image_count": 0,
+    "heading_count": 5,
+    "code_block_count": 0,
+    "source_text_sha256": "c0548e3f55a5512bd217bb2bebe2523205b353ea77f0e6dde8abb4a784f61a34",
+    "output_text_sha256": "c0548e3f55a5512bd217bb2bebe2523205b353ea77f0e6dde8abb4a784f61a34",
+    "latex_sha256": "f5788cb5506ba3fa40c1c64bd906f9a677e49205070ba979a17a8bc2d8fc6a75",
+    "body_sha256": "59405cde0884b86e778f7d2f1552f403471e8376b7e0ef9878120425e32e6c8d",
+    "converter_version": 1,
+    "markdown_sha256": "0b3315f6b1857f50a0edbbb9f226f3c387cc54f99ef4a27768630224265e08ed"
+  },
+  "fetched_at": "2026-09-14T13:41:37+00:00",
+  "source_snapshot_sha256": "4e580d44722beef107ce5b80de73b98fdda81c5bf23948050e6cd01a450b7bda",
+  "images": {},
+  "local_only": true
+}

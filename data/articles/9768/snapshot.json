@@ -1,0 +1,17 @@
+{
+  "metadata": {
+    "id": "9768",
+    "title": "随机分词浅探：从Viterbi Decoding到Viterbi Sampling",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/9768",
+    "date": "2023-09-16",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "fetched_at": "2026-09-14T12:51:59+00:00",
+  "source_snapshot_sha256": "e7c58739e8fd7dce95037b08414435972afed9898c08d866f4e2df3ab72fdaef",
+  "validators": {
+    "etag": null,
+    "last_modified": null
+  }
+}

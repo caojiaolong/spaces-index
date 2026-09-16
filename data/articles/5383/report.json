@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "5383",
+    "title": "变分自编码器（三）：这样做为什么能成？",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/5383",
+    "date": "2018-04-03",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 137,
+    "display_formula_count": 14,
+    "image_count": 2,
+    "heading_count": 10,
+    "code_block_count": 0,
+    "source_text_sha256": "e365b94d0ec6dd4dbecfd2b19362cb3a9abf4f3d42f8c26d16e09166d2558b45",
+    "output_text_sha256": "e365b94d0ec6dd4dbecfd2b19362cb3a9abf4f3d42f8c26d16e09166d2558b45",
+    "latex_sha256": "b7b9d376aab587f22121ddd1416e67e213f37227d06d3161cca22c733ef0c6f9",
+    "body_sha256": "2d14f53995270646d28a9b6318153d8032ac1968777e5f85b86c9167b8328b63",
+    "converter_version": 1,
+    "markdown_sha256": "91862896373afefad08fb6bf6f2b896674d4c2ff08096056f049bf830aec16f0"
+  },
+  "fetched_at": "2026-09-14T13:27:34+00:00",
+  "source_snapshot_sha256": "c2b9a61c5ab1c823331e8e023c5fa9b7f5e96721323c7f735650e752e3edb2d3",
+  "images": {},
+  "local_only": true
+}

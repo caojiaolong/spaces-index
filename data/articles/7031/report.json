@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "7031",
+    "title": "什么时候多进程的加速比可以大于1？",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/7031",
+    "date": "2019-10-27",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 0,
+    "display_formula_count": 0,
+    "image_count": 0,
+    "heading_count": 4,
+    "code_block_count": 4,
+    "source_text_sha256": "a4eff27c76889cee8e6a135ff5a630f65a3e2f9d4d4176c1ec4eb9dc5a82a4e1",
+    "output_text_sha256": "a4eff27c76889cee8e6a135ff5a630f65a3e2f9d4d4176c1ec4eb9dc5a82a4e1",
+    "latex_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "body_sha256": "1167c4fa510de5cde0e9caad711bb7fa9990500664985158a8a287cfa62d0f3f",
+    "converter_version": 1,
+    "markdown_sha256": "6080171dbec2038a714a0e86e5a3d74810c5446979bd5d374f1d2004f44f780e"
+  },
+  "fetched_at": "2026-09-14T13:17:03+00:00",
+  "source_snapshot_sha256": "bf5508910a7bdcc40afebefd9e0459ff59dd7f2aa0344316887a73231fe4dc2a",
+  "images": {},
+  "local_only": true
+}

@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "352",
+    "title": "第一学期结束了",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/352",
+    "date": "2010-01-23",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 0,
+    "display_formula_count": 0,
+    "image_count": 1,
+    "heading_count": 0,
+    "code_block_count": 0,
+    "source_text_sha256": "9e0b768809d25782be355d34794aae7e05c1ccbb1cdb9b7c4f8e5335803e46a4",
+    "output_text_sha256": "9e0b768809d25782be355d34794aae7e05c1ccbb1cdb9b7c4f8e5335803e46a4",
+    "latex_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "body_sha256": "bb397d7d4e33a20db619d6feb34ecf37ce826b1343b5b082d8781ca923511c0a",
+    "converter_version": 1,
+    "markdown_sha256": "cb232335b8e1828917f285f022bd343ac4f007808d621f74342788895e8c616f"
+  },
+  "fetched_at": "2026-09-14T14:43:30+00:00",
+  "source_snapshot_sha256": "c18c49fdc737dd44d180e8d397457008570ee610239d30ed0524780cf58cb0ca",
+  "images": {},
+  "local_only": true
+}

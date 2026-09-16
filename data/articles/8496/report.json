@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "8496",
+    "title": "又是Dropout两次！这次它做到了有监督任务的SOTA",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/8496",
+    "date": "2021-07-01",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 44,
+    "display_formula_count": 13,
+    "image_count": 5,
+    "heading_count": 13,
+    "code_block_count": 2,
+    "source_text_sha256": "44bedbe12fb44c0bacfecafb3d171c197a1df5fc2df31272163b37a777ea6535",
+    "output_text_sha256": "44bedbe12fb44c0bacfecafb3d171c197a1df5fc2df31272163b37a777ea6535",
+    "latex_sha256": "c9b3fc802948e16e4017a085c1d80296c7a77d248f114151f86fa3e26ab949ae",
+    "body_sha256": "cad9b0b74a026e25baa28578db30b1a2a9866db4a5b0010e0a10d7248a858942",
+    "converter_version": 1,
+    "markdown_sha256": "af90b2a31a44e01ddfb51b453c1f08e98ac35b37837cd8ac11bfe13fe3b26f83"
+  },
+  "fetched_at": "2026-09-14T13:05:40+00:00",
+  "source_snapshot_sha256": "6259cfcd044aacda898205dc2d27b50dfa3818573c3e6c35f6029a52b977cf47",
+  "images": {},
+  "local_only": true
+}

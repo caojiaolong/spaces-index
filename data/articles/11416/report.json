@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "11416",
+    "title": "Muon优化器指南：快速上手与关键细节",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/11416",
+    "date": "2025-11-19",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 50,
+    "display_formula_count": 1,
+    "image_count": 0,
+    "heading_count": 6,
+    "code_block_count": 0,
+    "source_text_sha256": "011465bcad1538dadf2944c56f2f956541d9d998b2a56ddad2f941d300e7f1c5",
+    "output_text_sha256": "011465bcad1538dadf2944c56f2f956541d9d998b2a56ddad2f941d300e7f1c5",
+    "latex_sha256": "025ad206de0f5cb4d6e086491a10a740703200ef0b46320f3cedbceb74d4f4a2",
+    "body_sha256": "49a8081e1631d46c149d619eeddc0506d84052404875822670e0f1da1ff4b321",
+    "converter_version": 1,
+    "markdown_sha256": "b69f63748b3658ad2db150a8252a7948a622db30afc8850e36a1ff6a786cb0e8"
+  },
+  "fetched_at": "2026-09-14T12:38:36+00:00",
+  "source_snapshot_sha256": "526154e3e5f1a0fffa619483209e9895c28834aef4fd67bea15fae5cd961b678",
+  "images": {},
+  "local_only": true
+}

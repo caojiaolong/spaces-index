@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "8998",
+    "title": "RoFormerV2：自然语言理解的极限探索",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/8998",
+    "date": "2022-03-21",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 6,
+    "display_formula_count": 3,
+    "image_count": 1,
+    "heading_count": 7,
+    "code_block_count": 0,
+    "source_text_sha256": "9a10701b90e802c0a9b5cafd3f2f688c4fdafaf202850296d34eb8b140646f58",
+    "output_text_sha256": "9a10701b90e802c0a9b5cafd3f2f688c4fdafaf202850296d34eb8b140646f58",
+    "latex_sha256": "34e8fb8dd34dd734439b98e07d59353cf3ce290bcf6eb587ccc9565df5e16766",
+    "body_sha256": "6dbc2d683b6b9223964820e57c35e73d938308377747c772e7f1e900d42e3857",
+    "converter_version": 1,
+    "markdown_sha256": "1d101cbbface5f42410ae8c6d51949b4a12e5d87d3730b77e98a935e2615338a"
+  },
+  "fetched_at": "2026-09-14T13:00:37+00:00",
+  "source_snapshot_sha256": "d64fc8fa6e79f82187e52dfdf5010aff53c0a56ca90880b487bc2a71fc7c8371",
+  "images": {},
+  "local_only": true
+}

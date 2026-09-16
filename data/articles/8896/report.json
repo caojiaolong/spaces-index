@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "8896",
+    "title": "多任务学习漫谈（二）：行梯度之事",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/8896",
+    "date": "2022-02-08",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 130,
+    "display_formula_count": 23,
+    "image_count": 1,
+    "heading_count": 13,
+    "code_block_count": 0,
+    "source_text_sha256": "68f86c81e8fbd3251bcc96bbd8b75eef47067baaf745d376953107a8e9339ccd",
+    "output_text_sha256": "68f86c81e8fbd3251bcc96bbd8b75eef47067baaf745d376953107a8e9339ccd",
+    "latex_sha256": "aa8170b5a94b4f48ec71c4d200e03575b2b17400b6a846048a5a15a4b973e95e",
+    "body_sha256": "244c1d62991e6c2fc98b20cfcf52fea3d810f5a8f478dfc8b8f7b01e0369fa13",
+    "converter_version": 1,
+    "markdown_sha256": "0389c10153b9f4f9227e18a3e157c1c468a6ef4b0d35d4c54adc0d3a62b3f2b6"
+  },
+  "fetched_at": "2026-09-14T13:01:33+00:00",
+  "source_snapshot_sha256": "5d74d4f771c534bd4c6f3a7dce9199caed73ce57c7fdf1376af686433cfcd77e",
+  "images": {},
+  "local_only": true
+}

@@ -1,0 +1,39 @@
+{
+  "metadata": {
+    "id": "5807",
+    "title": "细水长flow之RealNVP与Glow：流模型的传承与升华",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/5807",
+    "date": "2018-08-26",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "source_dom_exact": true,
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "attributes_exact": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 85,
+    "display_formula_count": 10,
+    "image_count": 16,
+    "heading_count": 25,
+    "code_block_count": 0,
+    "source_text_sha256": "8ca3bc89200581cbfc3a25f6bebd487e8090e6dcd761cd6118a5595bd9a0cced",
+    "output_text_sha256": "8ca3bc89200581cbfc3a25f6bebd487e8090e6dcd761cd6118a5595bd9a0cced",
+    "latex_sha256": "1c2fdcc37723c30b5943f3fadd59f6247c8803d6047a0ea93003936a12cf0116",
+    "body_sha256": "6f56206376a7b84d9efdf9fedcf8e426b15ed64eed6f9ea6ca2cb2e9458dfbf0",
+    "converter_version": 1,
+    "format": "html-v1",
+    "source_warnings": [],
+    "fallback_reason": "Unsupported body element: video",
+    "markdown_sha256": "f4f8a900b3ad0cf16450035939786f77763290826b0058b97b07afe45bc46113"
+  },
+  "fetched_at": "2026-09-14T13:25:10+00:00",
+  "source_snapshot_sha256": "bbaf3ed15fd869f228ebcdea95aea6c0815473b07aaefeb2c0661a8af424988f",
+  "images": {},
+  "local_only": true
+}

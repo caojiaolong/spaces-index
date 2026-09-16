@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "2555",
+    "title": "傅里叶变换：只需要异想天开？",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/2555",
+    "date": "2014-04-25",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 43,
+    "display_formula_count": 15,
+    "image_count": 0,
+    "heading_count": 5,
+    "code_block_count": 0,
+    "source_text_sha256": "983c079cf2256889a670d2fe50ea706da71b404a879f3ea32c633328e9ff60d7",
+    "output_text_sha256": "983c079cf2256889a670d2fe50ea706da71b404a879f3ea32c633328e9ff60d7",
+    "latex_sha256": "f5aad3bcb2a99f8f377f14fdfb27243f2233652f756289228f13bf9e1ab4acec",
+    "body_sha256": "3e17cb4c0eebda77390b78a29bfd7a811251a0a72e19ea7300f0cd9423da351f",
+    "converter_version": 1,
+    "markdown_sha256": "3e542c0d4ca408d806f9a9e7e7834a143b85bbe8db02edd74d671636b762dd65"
+  },
+  "fetched_at": "2026-09-14T13:55:03+00:00",
+  "source_snapshot_sha256": "2593f9d999213b37e2bf4e34fc7a0521d2d5fb70e1618fdbe2d7e27061fe5fd9",
+  "images": {},
+  "local_only": true
+}

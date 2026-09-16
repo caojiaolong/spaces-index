@@ -1,0 +1,17 @@
+{
+  "metadata": {
+    "id": "9280",
+    "title": "生成扩散模型漫谈（十二）：“硬刚”扩散ODE",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/9280",
+    "date": "2022-09-28",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "fetched_at": "2026-09-14T12:57:39+00:00",
+  "source_snapshot_sha256": "992a1a166aac7e49b958a2ef42cb382127f52ddbb32879d92dd352674830363d",
+  "validators": {
+    "etag": null,
+    "last_modified": null
+  }
+}

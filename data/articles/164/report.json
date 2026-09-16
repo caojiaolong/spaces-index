@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "164",
+    "title": "中国香港“光纤之父”获2009诺贝尔物理学奖！",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/164",
+    "date": "2009-10-06",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 0,
+    "display_formula_count": 0,
+    "image_count": 5,
+    "heading_count": 0,
+    "code_block_count": 0,
+    "source_text_sha256": "ea19171fdd40b0c23f52f59dd844d7ab05d92dfa89c00b0b12262f6066e304ba",
+    "output_text_sha256": "ea19171fdd40b0c23f52f59dd844d7ab05d92dfa89c00b0b12262f6066e304ba",
+    "latex_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "body_sha256": "952fe29786afebe45c8c9e498a94108aef3020a1a1180e84e2e40de72516949e",
+    "converter_version": 1,
+    "markdown_sha256": "a540b0e64e97855e5c4688b808c69a44e7a2d9be7ccf9c140f10bc6aafef8f9c"
+  },
+  "fetched_at": "2026-09-14T14:49:46+00:00",
+  "source_snapshot_sha256": "c1ffad5a7dc60716c4d379fe253a97ec7aea50fe95060fff33b6e4e6964520f8",
+  "images": {},
+  "local_only": true
+}

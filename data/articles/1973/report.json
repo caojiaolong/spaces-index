@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "1973",
+    "title": "“抢15”游戏简析",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/1973",
+    "date": "2013-04-24",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 3,
+    "display_formula_count": 0,
+    "image_count": 2,
+    "heading_count": 0,
+    "code_block_count": 0,
+    "source_text_sha256": "c891ea56b59050084dc91df771196105eb5df53d8f626520dcabed07600f0b77",
+    "output_text_sha256": "c891ea56b59050084dc91df771196105eb5df53d8f626520dcabed07600f0b77",
+    "latex_sha256": "c7d64279f5fb078b1d98628c311dece3bac73766b3e4aee8147652b3268e1221",
+    "body_sha256": "f5d2cf76ec5e34ecc8b6b4b8ac16568090496c2df5e592baf16c9332c08a90a4",
+    "converter_version": 1,
+    "markdown_sha256": "6028d9a1e1696cdf06a348c3ee8801e7e11060ea79041ec675129fd52ca0dd56"
+  },
+  "fetched_at": "2026-09-14T14:02:49+00:00",
+  "source_snapshot_sha256": "5315741086d0b6249543ea1f0f452d7510951ea5de2635b55135e339c67a9b83",
+  "images": {},
+  "local_only": true
+}

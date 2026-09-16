@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "1825",
+    "title": "黑洞融合的简单模拟",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/1825",
+    "date": "2012-12-18",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 7,
+    "display_formula_count": 4,
+    "image_count": 10,
+    "heading_count": 0,
+    "code_block_count": 0,
+    "source_text_sha256": "0b32d807409764ddce34934c701556ffa40ca92e213332ab421cb537f57fbed2",
+    "output_text_sha256": "0b32d807409764ddce34934c701556ffa40ca92e213332ab421cb537f57fbed2",
+    "latex_sha256": "5c9a22402aaf587e5aa3f305026d735d8d1c5823fb207bb2f8d986f6b2cb6011",
+    "body_sha256": "08d2d052b484ce09b609357aae44c5ef762843d2e799054dafe32e69eb159cb2",
+    "converter_version": 1,
+    "markdown_sha256": "bedd2e56213e0104270bb4601b7e38494397fdb86da7f6c0a60c1c53a0230f5d"
+  },
+  "fetched_at": "2026-09-14T14:07:45+00:00",
+  "source_snapshot_sha256": "eff0116288418d3d5c1872302d8e2a126755e7dcb9298ada961fa79c5a972017",
+  "images": {},
+  "local_only": true
+}

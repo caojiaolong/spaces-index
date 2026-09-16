@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "2045",
+    "title": "CreaWriter，惬意创作！",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/2045",
+    "date": "2013-08-08",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 0,
+    "display_formula_count": 0,
+    "image_count": 2,
+    "heading_count": 0,
+    "code_block_count": 0,
+    "source_text_sha256": "cd096cba8960fff20c0e17081860c17cdd8455aface448fd0a62f7c680fcd858",
+    "output_text_sha256": "cd096cba8960fff20c0e17081860c17cdd8455aface448fd0a62f7c680fcd858",
+    "latex_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "body_sha256": "8f9360f4fbcb8ff23285e3a8d4095c5c72774933156a01e82207eaff9100bf09",
+    "converter_version": 1,
+    "markdown_sha256": "421d79e3326d59a5f7da77079e6050aa296e8dec86c55f06751691cc0f7f2c56"
+  },
+  "fetched_at": "2026-09-14T14:00:45+00:00",
+  "source_snapshot_sha256": "dd2a78429abd3781de0278d4ed45c9a5e3f9d12fb9a4ec2839fac6a53f42dc81",
+  "images": {},
+  "local_only": true
+}

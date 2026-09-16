@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "5570",
+    "title": "厨房，菜市场，其实都是武林",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/5570",
+    "date": "2018-05-21",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 0,
+    "display_formula_count": 0,
+    "image_count": 3,
+    "heading_count": 0,
+    "code_block_count": 0,
+    "source_text_sha256": "5255f654484118b66bdaf47bf539b5019809b58f62d824064187a43fd46dd098",
+    "output_text_sha256": "5255f654484118b66bdaf47bf539b5019809b58f62d824064187a43fd46dd098",
+    "latex_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "body_sha256": "bf29125a48a9ad577c2109c1c1dc1eb550bb943b7c9428245abcbfc6988ec692",
+    "converter_version": 1,
+    "markdown_sha256": "0892413fdc94a135e078544d319248a2488a26cb44a3937a6acef0d71cab5547"
+  },
+  "fetched_at": "2026-09-14T13:26:40+00:00",
+  "source_snapshot_sha256": "710eeeb0d703cf883833241c505d4db3306ab576470efffab93c9809d6a1c3e3",
+  "images": {},
+  "local_only": true
+}

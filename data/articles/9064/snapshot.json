@@ -1,0 +1,17 @@
+{
+  "metadata": {
+    "id": "9064",
+    "title": "多标签“Softmax+交叉熵”的软标签版本",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/9064",
+    "date": "2022-05-07",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "fetched_at": "2026-09-14T12:59:46+00:00",
+  "source_snapshot_sha256": "e5b4ac8c1e9d64e39d18ba73416e499b01816413be0a1dcaa3b2408d8d4a5b08",
+  "validators": {
+    "etag": null,
+    "last_modified": null
+  }
+}

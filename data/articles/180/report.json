@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "180",
+    "title": "8天长假结束了",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/180",
+    "date": "2009-10-08",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 0,
+    "display_formula_count": 0,
+    "image_count": 0,
+    "heading_count": 0,
+    "code_block_count": 0,
+    "source_text_sha256": "8d504a91925f799255cca2d63c9871adcbb947a58692449a5a80cd720c73ddef",
+    "output_text_sha256": "8d504a91925f799255cca2d63c9871adcbb947a58692449a5a80cd720c73ddef",
+    "latex_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "body_sha256": "273d5728d2c4f8bcceb03a6ccc7e2e5ee483e3abc28b18f6c25ca5f564b4bdfd",
+    "converter_version": 1,
+    "markdown_sha256": "283047ea44cbd697e697c271e601885703a42fbb91e6e78a5ad0bb76a63f1be7"
+  },
+  "fetched_at": "2026-09-14T14:48:54+00:00",
+  "source_snapshot_sha256": "d580814c28217fc79bfd1ba8f69bfc829076b01cbd3ea3e93cb9ec196d3f5360",
+  "images": {},
+  "local_only": true
+}

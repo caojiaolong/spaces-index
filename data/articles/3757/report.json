@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "3757",
+    "title": "路径积分系列：3.路径积分",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/3757",
+    "date": "2016-06-02",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 118,
+    "display_formula_count": 26,
+    "image_count": 1,
+    "heading_count": 8,
+    "code_block_count": 0,
+    "source_text_sha256": "859b63df3f43a93210b2d412dd292714fd22227987cc1f48339b640c8056a29b",
+    "output_text_sha256": "859b63df3f43a93210b2d412dd292714fd22227987cc1f48339b640c8056a29b",
+    "latex_sha256": "90b8fa295c897153308cc213a9b3402b99046584f350e84db6cb1b2e4f739ec5",
+    "body_sha256": "32ae785dc33ea2988e97d39f41cb1e736879646bf173eeb5d10c2280aa9391f3",
+    "converter_version": 1,
+    "markdown_sha256": "628e0e87aa5339d3411e6309a8fe228a2793b95a0ced14711c37fa63b8406b4f"
+  },
+  "fetched_at": "2026-09-14T13:40:43+00:00",
+  "source_snapshot_sha256": "264b9c31370119ecdc367d9cbcda61e3c78bea8057cda7fd48d1f36096be09d5",
+  "images": {},
+  "local_only": true
+}

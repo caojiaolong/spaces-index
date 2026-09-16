@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "2038",
+    "title": "【翻译】星空之夜：夏季恒星的色彩",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/2038",
+    "date": "2013-07-25",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 0,
+    "display_formula_count": 0,
+    "image_count": 1,
+    "heading_count": 0,
+    "code_block_count": 0,
+    "source_text_sha256": "88b236cf5fee586642c59681ef20226e397a6f6c5dcd4715253a79170cd104e1",
+    "output_text_sha256": "88b236cf5fee586642c59681ef20226e397a6f6c5dcd4715253a79170cd104e1",
+    "latex_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "body_sha256": "ac2dc1c19b4c2d5db71898476cbba0f3db3ffd3ba9f8402af6c22568e13cc31b",
+    "converter_version": 1,
+    "markdown_sha256": "7bbec8fe331b5ac6890ff31d7c1d4c14eef0bad6a598485b1039ade3f23eca00"
+  },
+  "fetched_at": "2026-09-14T14:00:58+00:00",
+  "source_snapshot_sha256": "ff5f007e97c86b664b76a62adcb396fb1a3f8d059876f23caa9883457ca0e9fe",
+  "images": {},
+  "local_only": true
+}

@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "1510",
+    "title": "[欧拉数学]素数倒数之和",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/1510",
+    "date": "2011-11-19",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 28,
+    "display_formula_count": 7,
+    "image_count": 0,
+    "heading_count": 0,
+    "code_block_count": 0,
+    "source_text_sha256": "34d718273648c4a9925d19bbc34ce856b2a9614ab881225649001a9621354ce0",
+    "output_text_sha256": "34d718273648c4a9925d19bbc34ce856b2a9614ab881225649001a9621354ce0",
+    "latex_sha256": "e35e70f8b80d98daf571b698bdb25f33507f801f6a46e9956d88d770d23c9e37",
+    "body_sha256": "86941c7ad57b9ab8a1bdffe11093b7e74628d531102ffc6d0f1d189ad3becbce",
+    "converter_version": 1,
+    "markdown_sha256": "65ec44d2741e48cdfcfdfa6b78e961c76687d153d9045de79ecb8a4896d10f4c"
+  },
+  "fetched_at": "2026-09-14T14:16:38+00:00",
+  "source_snapshot_sha256": "4b3cf8e026642673d170cf21d2b6d0388a545d1c7484c81a8a3ed663f946bcf6",
+  "images": {},
+  "local_only": true
+}

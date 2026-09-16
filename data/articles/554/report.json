@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "554",
+    "title": "地球“黑暗”的一小时",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/554",
+    "date": "2010-03-21",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 0,
+    "display_formula_count": 0,
+    "image_count": 1,
+    "heading_count": 0,
+    "code_block_count": 0,
+    "source_text_sha256": "3b1524bfcf974515e200b0cd7aebf9c40cfca959e8ca7aa6f75e3f6b2b8c8177",
+    "output_text_sha256": "3b1524bfcf974515e200b0cd7aebf9c40cfca959e8ca7aa6f75e3f6b2b8c8177",
+    "latex_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "body_sha256": "2e5e7bc70422fc68c18e73d1e2c1a6d00d1489cdae3a9bdd1e1d28a5f14c95b3",
+    "converter_version": 1,
+    "markdown_sha256": "fd73e742a5640c8abe3ec7a8081cab5a1d47413098938da260370a7332976d35"
+  },
+  "fetched_at": "2026-09-14T14:39:01+00:00",
+  "source_snapshot_sha256": "8309f21ab17651107df4fabd7a80ae6b2c19b4ab550838cd7ddbf31dfb2c710c",
+  "images": {},
+  "local_only": true
+}

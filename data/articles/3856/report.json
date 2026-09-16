@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "3856",
+    "title": "OCR技术浅探：9. 代码共享(完)",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/3856",
+    "date": "2016-06-26",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 0,
+    "display_formula_count": 0,
+    "image_count": 0,
+    "heading_count": 0,
+    "code_block_count": 4,
+    "source_text_sha256": "5f6631d4acda19ab61721d75eb78d4f44147a204797d7d963eabe74db8dd8939",
+    "output_text_sha256": "5f6631d4acda19ab61721d75eb78d4f44147a204797d7d963eabe74db8dd8939",
+    "latex_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "body_sha256": "36bfb21c49ca29acce0924a5eec659b37d41b121e533923f573105392b8ac690",
+    "converter_version": 1,
+    "markdown_sha256": "25237ea796820d07d23a155de172a9cee7c9b031ce0ba75628a00367b8c0f07d"
+  },
+  "fetched_at": "2026-09-14T13:39:22+00:00",
+  "source_snapshot_sha256": "a571908336b3b182ffbd89a821d4c22b97413c4a1c409c228dd7bb9b50e8d809",
+  "images": {},
+  "local_only": true
+}

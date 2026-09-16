@@ -1,0 +1,114 @@
+<div class="PostContent" id="PostContent">
+<p>这一篇<a href="/search/%E8%AE%A9Keras%E6%9B%B4%E9%85%B7%E4%B8%80%E4%BA%9B/" target="_blank">“让Keras更酷一些！”</a>将和读者分享两部分内容：第一部分是“层中层”，顾名思义，是在Keras中自定义层的时候，重用已有的层，这将大大减少自定义层的代码量；另外一部分就是应读者所求，介绍一下序列模型中的mask原理和方法。</p><h2 id="层中层">层中层</h2><p>在<a href="/archives/5765" target="_blank">《“让Keras更酷一些！”：精巧的层与花式的回调》</a>一文中我们已经介绍过Keras自定义层的基本方法，其核心步骤是定义<code class="language-python">build</code>和<code class="language-python">call</code>两个函数，其中<code class="language-python">build</code>负责创建可训练的权重，而<code class="language-python">call</code>则定义具体的运算。</p><h3 id="拒绝重复劳动">拒绝重复劳动</h3><p>经常用到自定义层的读者可能会感觉到，在自定义层的时候我们经常在重复劳动，比如我们想要增加一个线性变换，那就要在<code class="language-python">build</code>中增加一个<code class="language-python">kernel</code>和<code class="language-python">bias</code>变量（还要自定义变量的初始化、正则化等），然后在<code class="language-python">call</code>里边用<code class="language-python">K.dot</code>来执行，有时候还需要考虑维度对齐的问题，步骤比较繁琐。但事实上，一个线性变换其实就是一个不加激活函数的<code class="language-python">Dense</code>层罢了，如果在自定义层时能重用已有的层，那显然就可以大大节省代码量了。</p><p>事实上，只要你对Python面向对象编程比较熟悉，然后仔细研究Keras的<code class="language-python">Layer</code>的源代码，就不难发现重用已有层的方法了。下面将它整理成比较规范的流程，供读者参考调用。</p><p><strong><font color="red">（注意：Keras 2.3.0开始就已经内置了层中层功能，不需要下面的自定义<code class="language-python">OurLayer</code>了，直接就用<code class="language-python">Layer</code>即可。）</font></strong></p><h3 id="OurLayer">OurLayer</h3><p>首先，我们定义一个新的<code class="language-python">OurLayer</code>类：</p><pre class="line-numbers"><code class="language-python">class OurLayer(Layer):
+    """定义新的Layer，增加reuse方法，允许在定义Layer时调用现成的层
+    """
+    def reuse(self, layer, *args, **kwargs):
+        if not layer.built:
+            if len(args) &gt; 0:
+                inputs = args[0]
+            else:
+                inputs = kwargs['inputs']
+            if isinstance(inputs, list):
+                input_shape = [K.int_shape(x) for x in inputs]
+            else:
+                input_shape = K.int_shape(inputs)
+            layer.build(input_shape)
+        outputs = layer.call(*args, **kwargs)
+        for w in layer.trainable_weights:
+            if w not in self._trainable_weights:
+                self._trainable_weights.append(w)
+        for w in layer.non_trainable_weights:
+            if w not in self._non_trainable_weights:
+                self._non_trainable_weights.append(w)
+        for u in layer.updates:
+            if not hasattr(self, '_updates'):
+                self._updates = []
+            if u not in self._updates:
+                self._updates.append(u)
+        return outputs</code></pre><p>这个<code class="language-python">OurLayer</code>类继承了原来的<code class="language-python">Layer</code>类，为它增加了<code class="language-python">reuse</code>方法，就是通过它我们可以重用已有的层。</p><p>下面是一个简单的例子，定义一个层，运算如下：<br/>
+$$y = g(f(xW_1 + b_1)W_2 + b_2)$$<br/>
+这里$f,g$是激活函数，其实就是两个<code class="language-python">Dense</code>层的复合，如果按照标准的写法，我们需要在<code class="language-python">build</code>那里定义好几个权重，定义权重的时候还需要根据输入来定义shape，还要定义初始化等，步骤很多，但事实上这些在<code class="language-python">Dense</code>层不都写好了吗，直接调用就可以了，参考调用代码如下：</p><pre class="line-numbers"><code class="language-python">class OurDense(OurLayer):
+    """原来是继承Layer类，现在继承OurLayer类
+    """
+    def __init__(self, hidden_dim, output_dim,
+                 hidden_activation='linear',
+                 output_activation='linear', **kwargs):
+        super(OurDense, self).__init__(**kwargs)
+        self.hidden_dim = hidden_dim
+        self.output_dim = output_dim
+        self.hidden_activation = hidden_activation
+        self.output_activation = output_activation
+    def build(self, input_shape):
+        """在build方法里边添加需要重用的层，
+        当然也可以像标准写法一样条件可训练的权重。
+        """
+        super(OurDense, self).build(input_shape)
+        self.h_dense = Dense(self.hidden_dim,
+                             activation=self.hidden_activation)
+        self.o_dense = Dense(self.output_dim,
+                             activation=self.output_activation)
+    def call(self, inputs):
+        """直接reuse一下层，等价于o_dense(h_dense(inputs))
+        """
+        h = self.reuse(self.h_dense, inputs)
+        o = self.reuse(self.o_dense, h)
+        return o
+    def compute_output_shape(self, input_shape):
+        return input_shape[:-1] + (self.output_dim,)</code></pre><p>是不是特别清爽？</p><h2 id="Mask">Mask</h2><p>这一节我们来讨论一下处理变长序列时的padding和mask问题。</p><h3 id="证明你思考过">证明你思考过</h3><p>近来笔者开源的几个模型中大量地用到了mask，不少读者似乎以前从未遇到过这个东西，各种疑问纷至沓来。本来，对一样新东西有所疑问是无可厚非的事情，但问题是不经思考的提问就显得很不负责任了。我一直认为，在向别人提问的时候，需要同时去“证明”自己是思考过的，比如如果你要去解释关于mask的问题，我会先请你回答：</p><blockquote class="cite"><div>mask之前的序列大概是怎样的？mask之后序列的哪些位置发生了变化？变成了怎么样？
+</div></blockquote><p>这三个问题跟mask的原理没有关系，只是要你看懂mask做了什么运算，在此基础上，我们才能去讨论为什么要这样运算。如果你连运算本身都看不懂，那只有两条路可选了，一是放弃这个问题的理解，二是好好学几个月Keras咱们再来讨论。</p><p>下面假设读者已经看懂了mask的运算，然后我们来简单讨论一下mask的基本原理。</p><h3 id="排除padding">排除padding</h3><p>mask是伴随这padding出现的，因为神经网络的输入需要一个规整的张量，而文本通常都是不定长的，这样一来就需要裁剪或者填充的方式来使得它们变成定长，按照常规习惯，我们会使用0作为padding符号。</p><p>这里用简单的向量来描述padding的原理。假设有一个长度为5的向量：<br/>
+$$x = [1, 0, 3, 4, 5]$$<br/>
+经过padding变成长度为8：<br/>
+$$x = [1, 0, 3, 4, 5, 0, 0, 0]$$<br/>
+当你将这个长度为8的向量输入到模型中时，模型并不知道你这个向量究竟是“长度为8的向量”还是“长度为5的向量，填充了3个无意义的0”。为了表示出哪些是有意义的，哪些是padding的，我们还需要一个mask向量（矩阵）：<br/>
+$$m = [1, 1, 1, 1, 1, 0, 0, 0]$$<br/>
+这是一个0/1向量（矩阵），用1表示有意义的部分，用0表示无意义的padding部分。</p><p>所谓mask，就是$x$和$m$的运算，来排除padding带来的效应。比如我们要求$x$的均值，本来期望的结果是：<br/>
+$$\text{avg}(x) = \frac{1 + 0 + 3 + 4 + 5}{5} = 2.6$$<br/>
+但是由于向量已经经过padding，直接算的话就得到：<br/>
+$$\frac{1 + 0 + 3 + 4 + 5 + 0 + 0 + 0}{8} = 1.625$$<br/>
+会带来偏差。更严重的是，对于同一个输入，每次padding的零的数目可能是不固定的，因此同一个样本每次可能得到不同的均值，这是很不合理的。有了mask向量$m$之后，我们可以重写求均值的运算：<br/>
+$$\text{avg}(x) = \frac{\text{sum}(x\otimes m)}{\text{sum}(m)}$$<br/>
+这里的$\otimes$是逐位对应相乘的意思。这样一来，分子只对非padding部分求和，分母则是对非padding部分计数，不管你padding多少个零，最终算出来的结果都是一样的。</p><p>如果要求$x$的最大值呢？我们有$\max([1, 0, 3, 4, 5]) = \max([1, 0, 3, 4, 5, 0, 0, 0]) = 5$，似乎不用排除padding效应了？在这个例子中是这样，但还有可能是：<br/>
+$$x = [-1, -2, -3, -4, -5]$$<br/>
+经过padding后变成了<br/>
+$$x = [-1, -2, -3, -4, -5, 0, 0, 0]$$<br/>
+如果直接对padding后的$x$求$\max$，那么得到的是0，而0不在原来的范围内。这时候解决的方法是：让padding部分足够小，以至于$\max$（几乎）不能取到padding部分，比如<br/>
+$$\max(x) = \max\left(x - (1 - m) \times 10^{10}\right)$$<br/>
+正常来说，神经网络的输入输出的数量级不会很大，所以经过$x - (1 - m) \times 10^{10}$后，padding部分在$-10^{10}$这个数量级中上，可以保证取$\max$的话不会取到padding部分了。</p><p>处理softmax的padding也是如此。在Attention或者指针网络时，我们就有可能遇到对变长的向量做softmax，如果直接对padding后的向量做softmax，那么padding部分也会平摊一部分概率，导致实际有意义的部分概率之和都不等于1了。解决办法跟$\max$时一样，让padding部分足够小足够小，使得$e^x$足够接近于0，以至于可以忽略：<br/>
+$$\text{sofmax}(x) = \text{softmax}\left(x - (1 - m) \times 10^{10}\right)$$</p><p>上面几个算子的mask处理算是比较特殊的，其余运算的mask处理（除了双向RNN），基本上只需要输出<br/>
+$$x\otimes m$$<br/>
+就行了，也就是让padding部分保持为0。</p><h3 id="Keras实现要点">Keras实现要点</h3><p>Keras自带了mask功能，但是不建议用，因为自带的mask不够清晰灵活，而且也不支持所有的层，强烈建议读者自己实现mask。</p><p>近来开源的好几个模型都已经给出了足够多的mask案例，我相信读者只要认真去阅读源码，一定很容易理解mask的实现方式的，这里简单提一下几个要点。一般来说NLP模型的输入是词ID矩阵，形状为$\text{[batch_size, seq_len]}$，其中我会用0作为padding的ID，而1作为UNK的ID，剩下的就随意了，然后我就用一个<code class="language-python">Lambda</code>层生成mask矩阵：</p><pre class="line-numbers"><code class="language-python"># x是词ID矩阵
+mask = Lambda(lambda x: K.cast(K.greater(K.expand_dims(x, 2), 0), 'float32'))(x)
+</code></pre><p>这样生成的mask矩阵大小是$\text{[batch_size, seq_len, 1]}$，然后词ID矩阵经过<code class="language-python">Embedding</code>层后的大小为$\text{[batch_size, seq_len, word_size]}$，这样一来就可以用mask矩阵对输出结果就行处理了。这种写法只是我的习惯，并非就是唯一的标准。</p><h2 id="结合：双向RNN">结合：双向RNN</h2><p>刚才我们的讨论排除了双向RNN，这是因为RNN是递归模型，没办法简单地mask（主要是逆向RNN这部分）。所谓双向RNN，就是正反各做一次RNN然后拼接或者相加之类的。假如我们要对$[1, 0, 3, 4, 5, 0, 0, 0]$做逆向RNN运算时，最后输出的结果都会包含padding部分的0（因为padding部分在一开始就参与了运算）。因此事后是没法排除的，只有在事前排除。</p><p>排除的方案是：要做逆向RNN，先将$[1, 0, 3, 4, 5, 0, 0, 0]$反转为$[5, 4, 3, 0, 1, 0, 0, 0]$，然后做一个正向RNN，然后再把结果反转回去，要注意反转的时候只反转非padding部分（这样才能保证递归运算时padding部分始终不参与，并且保证跟正向RNN的结果对齐），这个tensorflow提供了现成的函数<code class="language-python">tf.reverse_sequence()</code>。</p><p>遗憾的是，Keras自带的<code class="language-python">Bidirectional</code>并没有这个功能，所以我重写了它，供读者参考：</p><pre class="line-numbers"><code class="language-python">class OurBidirectional(OurLayer):
+    """自己封装双向RNN，允许传入mask，保证对齐
+    """
+    def __init__(self, layer, **args):
+        super(OurBidirectional, self).__init__(**args)
+        self.forward_layer = layer.__class__.from_config(layer.get_config())
+        self.backward_layer = layer.__class__.from_config(layer.get_config())
+        self.forward_layer.name = 'forward_' + self.forward_layer.name
+        self.backward_layer.name = 'backward_' + self.backward_layer.name
+    def reverse_sequence(self, x, mask):
+        """这里的mask.shape是[batch_size, seq_len, 1]
+        """
+        seq_len = K.round(K.sum(mask, 1)[:, 0])
+        seq_len = K.cast(seq_len, 'int32')
+        return tf.reverse_sequence(x, seq_len, seq_dim=1)
+    def call(self, inputs):
+        x, mask = inputs
+        x_forward = self.reuse(self.forward_layer, x)
+        x_backward = self.reverse_sequence(x, mask)
+        x_backward = self.reuse(self.backward_layer, x_backward)
+        x_backward = self.reverse_sequence(x_backward, mask)
+        x = K.concatenate([x_forward, x_backward], -1)
+        if K.ndim(x) == 3:
+            return x * mask
+        else:
+            return x
+    def compute_output_shape(self, input_shape):
+        return input_shape[0][:-1] + (self.forward_layer.units * 2,)</code></pre><p>使用方法跟自带的<code class="language-python">Bidirectional</code>基本一样的，只不过要多传入mask矩阵，比如：</p><pre class="line-numbers"><code class="language-python">x = OurBidirectional(LSTM(128))([x, x_mask])</code></pre><h2 id="小结">小结</h2><p>Keras是一个极其友好、极其灵活的高层深度学习API封装，千万不要听信网上流传的“Keras对新手很友好，但是欠缺灵活性”的谣言～Keras对新手很友好，对老手更友好，对需要频繁自定义模块的用户更更友好。</p>
+
+
+
+
+
+</div>

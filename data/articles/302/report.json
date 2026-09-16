@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "302",
+    "title": "【NASA每日一图】极光、流星、雪夜",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/302",
+    "date": "2009-12-19",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 0,
+    "display_formula_count": 0,
+    "image_count": 1,
+    "heading_count": 0,
+    "code_block_count": 0,
+    "source_text_sha256": "85ad81575cb62cdfb8fa58ba54aa9a087df3fe1a3565da23e3b5ad21b69b8052",
+    "output_text_sha256": "85ad81575cb62cdfb8fa58ba54aa9a087df3fe1a3565da23e3b5ad21b69b8052",
+    "latex_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "body_sha256": "b79385608e982aaf13bbb57ae49d72ef516be1302ad7aab6b4aff8193eeea1ba",
+    "converter_version": 1,
+    "markdown_sha256": "56fe8ce54c121496de7480dbb5da87e50ce842014299a73655bb4e4ec651053e"
+  },
+  "fetched_at": "2026-09-14T14:45:09+00:00",
+  "source_snapshot_sha256": "2bbe14475f88009bb27e2b1ebb0c0a9f76687b1ce06ba3d8cdc767817a9c3ac5",
+  "images": {},
+  "local_only": true
+}

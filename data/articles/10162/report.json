@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "10162",
+    "title": "重温SSM（三）：HiPPO的高效计算（S4）",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/10162",
+    "date": "2024-06-20",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 274,
+    "display_formula_count": 39,
+    "image_count": 0,
+    "heading_count": 12,
+    "code_block_count": 0,
+    "source_text_sha256": "2a6b745f2a39ff38415e7acedf274d7d080ae8af87aea70ca06174b0f075f179",
+    "output_text_sha256": "2a6b745f2a39ff38415e7acedf274d7d080ae8af87aea70ca06174b0f075f179",
+    "latex_sha256": "0b7464dd1e4d295c44d55c4d7803c274b49337bf13bb854742576953f3239d30",
+    "body_sha256": "f59d57935a6f0dff8f7781e052e6803990672b06ab9a36abe0f658010c9b7c52",
+    "converter_version": 1,
+    "markdown_sha256": "7bc03414a310f72030d6899b35feac32cb5d7207b4207e137f63e4a9eba06ec6"
+  },
+  "fetched_at": "2026-09-14T12:48:05+00:00",
+  "source_snapshot_sha256": "b4b1fa22bce618e858cf6a6d7786ecf2f779215cf6ae674fb4ed62d846969f01",
+  "images": {},
+  "local_only": true
+}

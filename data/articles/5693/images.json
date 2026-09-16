@@ -1,0 +1,45 @@
+{
+  "version": 1,
+  "images": {
+    "https://spaces.ac.cn/usr/uploads/2018/07/3306401335.jpg": {
+      "status": "cached",
+      "file": "7875ded4e64b4005a2703ce9f3ede9ccbe4f5e1447a5a84de38d4a695c663026.jpg",
+      "sha256": "7875ded4e64b4005a2703ce9f3ede9ccbe4f5e1447a5a84de38d4a695c663026",
+      "bytes": 19044,
+      "checked_at": "2026-09-16T09:20:27+00:00",
+      "fetched_url": "https://spaces.ac.cn/usr/uploads/2018/07/3306401335.jpg",
+      "etag": "\"5b40b063-4a64\"",
+      "last_modified": "Sat, 07 Jul 2018 12:21:55 GMT"
+    },
+    "https://spaces.ac.cn/usr/uploads/2018/07/794764704.jpg": {
+      "status": "cached",
+      "file": "e9d6454d836fd0761cc11c6650066ce827bc29231ad2399120d6abb668a67e60.jpg",
+      "sha256": "e9d6454d836fd0761cc11c6650066ce827bc29231ad2399120d6abb668a67e60",
+      "bytes": 16202,
+      "checked_at": "2026-09-16T09:20:31+00:00",
+      "fetched_url": "https://spaces.ac.cn/usr/uploads/2018/07/794764704.jpg",
+      "etag": "\"5b41c507-3f4a\"",
+      "last_modified": "Sun, 08 Jul 2018 08:02:15 GMT"
+    },
+    "https://spaces.ac.cn/usr/uploads/2018/07/546550851.jpg": {
+      "status": "cached",
+      "file": "dcd4d73bc7af500d81e9fb8c35e98cc33a2eff0c01aadac704e15990762091f7.jpg",
+      "sha256": "dcd4d73bc7af500d81e9fb8c35e98cc33a2eff0c01aadac704e15990762091f7",
+      "bytes": 29392,
+      "checked_at": "2026-09-16T09:20:35+00:00",
+      "fetched_url": "https://spaces.ac.cn/usr/uploads/2018/07/546550851.jpg",
+      "etag": "\"5b40b062-72d0\"",
+      "last_modified": "Sat, 07 Jul 2018 12:21:54 GMT"
+    },
+    "https://spaces.ac.cn/usr/uploads/2018/07/1314816462.jpg": {
+      "status": "cached",
+      "file": "8bc53e51be81ef62b9e122e7212f905bf9c81048c0db437701328f0820f684c4.jpg",
+      "sha256": "8bc53e51be81ef62b9e122e7212f905bf9c81048c0db437701328f0820f684c4",
+      "bytes": 26779,
+      "checked_at": "2026-09-16T09:20:39+00:00",
+      "fetched_url": "https://spaces.ac.cn/usr/uploads/2018/07/1314816462.jpg",
+      "etag": "\"5b40b063-689b\"",
+      "last_modified": "Sat, 07 Jul 2018 12:21:55 GMT"
+    }
+  }
+}

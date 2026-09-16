@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "1639",
+    "title": "抛物线内一根定长的弦",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/1639",
+    "date": "2012-06-30",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 17,
+    "display_formula_count": 5,
+    "image_count": 4,
+    "heading_count": 0,
+    "code_block_count": 0,
+    "source_text_sha256": "3a79ef2b0a4a3fb80c4bf991d6fb4441afc035a3697c7887c6c36b4f5f8a8933",
+    "output_text_sha256": "3a79ef2b0a4a3fb80c4bf991d6fb4441afc035a3697c7887c6c36b4f5f8a8933",
+    "latex_sha256": "fad65708d78d67bf69ca574e8660a1d2d9b692005530e69c80f8dfefb438d3bd",
+    "body_sha256": "5eefeeca23443c3c97fc848398fec3eeabd16b811d183466c349ab00c53c58bf",
+    "converter_version": 1,
+    "markdown_sha256": "565f6cb31df816111aa466f14cc2961497d6b868d3a5381c960c3fb648328170"
+  },
+  "fetched_at": "2026-09-14T14:13:05+00:00",
+  "source_snapshot_sha256": "1c1e0639e7eeadbba5175e1da7a39d93fe556084043dd25c656a67097fc446de",
+  "images": {},
+  "local_only": true
+}

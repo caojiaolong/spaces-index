@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "167",
+    "title": "关于中国人获得诺贝尔奖的情况",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/167",
+    "date": "2009-10-07",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 0,
+    "display_formula_count": 0,
+    "image_count": 0,
+    "heading_count": 0,
+    "code_block_count": 0,
+    "source_text_sha256": "58c15d81d408146bf13cedd3557e83d3f00851be068fada04b6ebe3797254198",
+    "output_text_sha256": "58c15d81d408146bf13cedd3557e83d3f00851be068fada04b6ebe3797254198",
+    "latex_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "body_sha256": "424dc6d7902c48b83bab8bc6ec3b1473a665b4a6dab41d0e86db40b50728d619",
+    "converter_version": 1,
+    "markdown_sha256": "28f5dca21889727b58dc4559ebccc28257e577196c95a75ca5edb524158a9d31"
+  },
+  "fetched_at": "2026-09-14T14:49:33+00:00",
+  "source_snapshot_sha256": "2b410cebfc5f6bae4ca5a269d796213d5172f3c7e86985b6ab3a3220935bdbed",
+  "images": {},
+  "local_only": true
+}

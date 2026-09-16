@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "8620",
+    "title": "浅谈Transformer的初始化、参数化与标准化",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/8620",
+    "date": "2021-08-17",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 117,
+    "display_formula_count": 17,
+    "image_count": 0,
+    "heading_count": 7,
+    "code_block_count": 1,
+    "source_text_sha256": "eb12649e3cf218772cb05d3196f592d35a841886207433db29acdb3b541f08ef",
+    "output_text_sha256": "eb12649e3cf218772cb05d3196f592d35a841886207433db29acdb3b541f08ef",
+    "latex_sha256": "9905a1da0d9c3eed9314dac9f605a6ab7122bb0c548c3dbb7160049beea917e7",
+    "body_sha256": "b5f26d070270bda6a6163922e06d37e2d8efe4de3288d17ded209a6ab2c45271",
+    "converter_version": 1,
+    "markdown_sha256": "d43791abf96ddbf38feb2038182171f299d8504cbc871ff8bc080bf76bc6b262"
+  },
+  "fetched_at": "2026-09-14T13:04:51+00:00",
+  "source_snapshot_sha256": "a8b2e186873b4cf09ecb11ce6c1caf52f988efd9e2dffef59e59d9a8fa94b528",
+  "images": {},
+  "local_only": true
+}

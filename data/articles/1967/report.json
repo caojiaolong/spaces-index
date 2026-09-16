@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "1967",
+    "title": "费曼积分法(8)：求高斯积分",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/1967",
+    "date": "2013-04-14",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 22,
+    "display_formula_count": 10,
+    "image_count": 0,
+    "heading_count": 0,
+    "code_block_count": 0,
+    "source_text_sha256": "e2bbce6b799d3ae2ac0f4bb9e974feb6000774b9b9235767244115a7ebaa1906",
+    "output_text_sha256": "e2bbce6b799d3ae2ac0f4bb9e974feb6000774b9b9235767244115a7ebaa1906",
+    "latex_sha256": "cc4a1a5fb751914bf4b41d65b3a8d2e0aee82382b3e75e0e4c479dd31fe5f2de",
+    "body_sha256": "4005ffc01ee2ab27f6df3c430b1f806824a53a16ffd879762628201cbfe2aebe",
+    "converter_version": 1,
+    "markdown_sha256": "517ee3a36bda146bcac4f808f691da288ca8f3159cd9d0d8c7a3430550fbd17c"
+  },
+  "fetched_at": "2026-09-14T14:03:15+00:00",
+  "source_snapshot_sha256": "f68219280c0d64c7fa93e4b1219449976641d0ef0bcd844fe7207896b9feca24",
+  "images": {},
+  "local_only": true
+}

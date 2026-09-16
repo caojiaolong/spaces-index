@@ -1,0 +1,17 @@
+{
+  "metadata": {
+    "id": "4138",
+    "title": "端到端的腾讯验证码识别（46%正确率）",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/4138",
+    "date": "2016-12-14",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "fetched_at": "2026-09-14T13:35:25+00:00",
+  "source_snapshot_sha256": "1f13492025401db96e7a8dcf79e7f8c2ac8af7eceff9a11982dd8bed51b92e97",
+  "validators": {
+    "etag": null,
+    "last_modified": null
+  }
+}

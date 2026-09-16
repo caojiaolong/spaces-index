@@ -1,0 +1,25 @@
+{
+  "version": 1,
+  "images": {
+    "https://spaces.ac.cn/usr/uploads/2010/11/604375263.jpg": {
+      "status": "cached",
+      "file": "594b9d7551754a9c31cf70ac768088cb4a2418d293d14148d61920b8631d8c7f.jpg",
+      "sha256": "594b9d7551754a9c31cf70ac768088cb4a2418d293d14148d61920b8631d8c7f",
+      "bytes": 27054,
+      "checked_at": "2026-09-16T12:05:57+00:00",
+      "fetched_url": "https://spaces.ac.cn/usr/uploads/2010/11/604375263.jpg",
+      "etag": "\"5a6ec748-69ae\"",
+      "last_modified": "Mon, 29 Jan 2018 07:03:36 GMT"
+    },
+    "https://spaces.ac.cn/usr/uploads/2010/11/3886214175.png": {
+      "status": "cached",
+      "file": "b83e09acad6069c4a2b4d9fcfbd6b4b843b9b79c9c6eb95ae150474920b12fe3.png",
+      "sha256": "b83e09acad6069c4a2b4d9fcfbd6b4b843b9b79c9c6eb95ae150474920b12fe3",
+      "bytes": 57207,
+      "checked_at": "2026-09-16T12:06:00+00:00",
+      "fetched_url": "https://spaces.ac.cn/usr/uploads/2010/11/3886214175.png",
+      "etag": "\"5a6ec748-df77\"",
+      "last_modified": "Mon, 29 Jan 2018 07:03:36 GMT"
+    }
+  }
+}

@@ -1,0 +1,8 @@
+<div class="PostContent" id="PostContent">
+<p>经过上一步，得到单行的文本区域之后，我们就可以想办法将单行的文本切割为单个的字符了. 因为第三步的模型师针对单个的字符建立的，因此这一步也是必须的.</p><h3 id="均匀切割">均匀切割</h3><p>基于方块汉字的假设，事实上最简单的切割方法是均匀切割，也就是说不加任何判断，直接按照高度来将单行文本切割为一个个的正方形图片. 这种思路可以应对大部分的单行文本，如下图上.</p><p></p><div class="pic-container"><div class="typecho-caption aligncenter"><div style="margin: 5px"><a href="/usr/uploads/2016/06/3139953537.png" target="_blank" title="点击查看原图"><img alt="均匀切割成功" src="/usr/uploads/2016/06/3139953537.png" style="max-height: 50px"/></a></div><p class="typecho-caption-text">均匀切割成功</p></div></div><p></p><div class="pic-container"><div class="typecho-caption aligncenter"><div style="margin: 5px"><a href="/usr/uploads/2016/06/2115936242.png" target="_blank" title="点击查看原图"><img alt="均匀切割失效" src="/usr/uploads/2016/06/2115936242.png" style="max-height: 50px"/></a></div><p class="typecho-caption-text">均匀切割失效</p></div></div><p>当然，均匀切割的弊端也是很明显的. 大多数汉字都是方块汉字，但多数英语和数字都不是，因此如果出现中英文混排的时候，均匀切割就失效了，如上图下. </p><h3 id="统计切割">统计切割</h3><p>从图15中可以看出，经过前面的操作，字与字都被很好地分离开了. 因此，另外一种比较简单的思路是对单行的文字图片进行垂直方向的求和，和为0的所在的列就是被切割的的列.</p><p>用这种统计的思路可以很好地解决中英文混排的单行文字图片分割的问题，但是它也存在一定的弊端. 最明显的就是诸如“小”、“的”等字就被切割开为两部分了.</p><h3 id="前后比较">前后比较</h3><p>一个更好的思路是结合前面两部分结果，通过比较前后两部分区域是否组成方形来确定是否切割. 具体步骤是：</p><blockquote><p>1. 通过统计求和的思路，得出候选的切割线；</p><p>2. 如果该候选切割线到左右两条候选切割线的距离之和超过<del>（宽）</del>高长度的1.2倍，那么该候选切割线确定为切割线；</p><p>3. 如果得到的区域是一个明显的长条矩形，并且没办法按照上面两个步骤切割，那个就均匀切割.</p></blockquote><p>这三个步骤比较简单，基于两个假设：<font color="blue">1、数字、英文字符的底与高之比大于60%；2、汉字的底与高之比低于1.2. 经过测试，该算法可以很好地用于前面步骤所提取的图片文本特征的分割.</font></p>
+
+
+
+
+
+</div>

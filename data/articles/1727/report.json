@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "1727",
+    "title": "哥德巴赫猜想浅谈1",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/1727",
+    "date": "2012-10-06",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 14,
+    "display_formula_count": 1,
+    "image_count": 1,
+    "heading_count": 0,
+    "code_block_count": 0,
+    "source_text_sha256": "5b424f9e9e9106646b4d50b073a03b64f39e6dd7ba231e1ac113eb043273a98c",
+    "output_text_sha256": "5b424f9e9e9106646b4d50b073a03b64f39e6dd7ba231e1ac113eb043273a98c",
+    "latex_sha256": "2734b8ff2e13ca94d7b1bb750425676859716a7bda7294b8a286b0dc93a1233e",
+    "body_sha256": "63605e50e07f1084ef84ddcf535ea3f4ce1ed9cbffc5cc5a251f11c72ff9bca8",
+    "converter_version": 1,
+    "markdown_sha256": "3dc31502216f1c4628c173e3f6c42c877dba93e957b2d85d14361ba1c922e9c9"
+  },
+  "fetched_at": "2026-09-14T14:10:06+00:00",
+  "source_snapshot_sha256": "90983d5ebadb55a4a07375b00c7309cf0dc49b31997999b3cbfcb681d4065a59",
+  "images": {},
+  "local_only": true
+}

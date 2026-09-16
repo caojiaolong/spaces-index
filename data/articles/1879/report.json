@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "1879",
+    "title": "新科学家：割裂时间空间，统一相对论量子论",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/1879",
+    "date": "2013-01-16",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 0,
+    "display_formula_count": 0,
+    "image_count": 0,
+    "heading_count": 0,
+    "code_block_count": 0,
+    "source_text_sha256": "09fff26a922f3b6e99de9ded39fe118835a788dd9d8f6efeaaf9dcc940561ce2",
+    "output_text_sha256": "09fff26a922f3b6e99de9ded39fe118835a788dd9d8f6efeaaf9dcc940561ce2",
+    "latex_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "body_sha256": "5f0741bc6fffa55ec9a87b16d3e69ba8e3686495a95375350812a43259bc26f6",
+    "converter_version": 1,
+    "markdown_sha256": "f97c1efabd9b0ab6857e34014d3de1ec6b51d198b39ff3991c4db2d896e317c9"
+  },
+  "fetched_at": "2026-09-14T14:06:11+00:00",
+  "source_snapshot_sha256": "be32165a42c214f7b5143491be1f9d6408e7fdd349f28bc6f8038d1a7616a39b",
+  "images": {},
+  "local_only": true
+}

@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "11158",
+    "title": "矩阵平方根和逆平方根的高效计算",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/11158",
+    "date": "2025-07-19",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 91,
+    "display_formula_count": 13,
+    "image_count": 0,
+    "heading_count": 7,
+    "code_block_count": 4,
+    "source_text_sha256": "8ca351bfb7caed85178d19e9c4b72935999a43cb54017116fe4c415d386699c9",
+    "output_text_sha256": "8ca351bfb7caed85178d19e9c4b72935999a43cb54017116fe4c415d386699c9",
+    "latex_sha256": "58ceb2bcd322a301daad573e72a44b19a33f15d5317c2cc3edd16f78fcdab632",
+    "body_sha256": "1f61de91dc9cd1791be49a71339046102f2cc2960e8c95a9af68b5526310828e",
+    "converter_version": 1,
+    "markdown_sha256": "6800f98ed96bccb6d39de2c1b9ae02048d460b0efca93e30ab7e4abc2e0da352"
+  },
+  "fetched_at": "2026-09-14T12:41:02+00:00",
+  "source_snapshot_sha256": "c0ad745bdc3ac7dfa80ca2e4a2f2809ac5d81ab7f3cb475eb540756f6d67171b",
+  "images": {},
+  "local_only": true
+}

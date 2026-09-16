@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "4582",
+    "title": "RNN模型中输入的重要性的评估",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/4582",
+    "date": "2017-09-10",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 16,
+    "display_formula_count": 3,
+    "image_count": 2,
+    "heading_count": 4,
+    "code_block_count": 1,
+    "source_text_sha256": "cb034de1359cbebb66d35aa70b05048ff467685439850e377df267bcc4362dff",
+    "output_text_sha256": "cb034de1359cbebb66d35aa70b05048ff467685439850e377df267bcc4362dff",
+    "latex_sha256": "6eb1e17c749821ccb8718b9d00e68f31dd6a0fc1a4530c04ae0a36faf1e0eea5",
+    "body_sha256": "269859aadebd4148d32b231df98f64249f58787e1a22a0944e56b4da66017bf0",
+    "converter_version": 1,
+    "markdown_sha256": "1ebda0d528470ba10721008a1171b7c12805477551f3a4f869e3493573263e0f"
+  },
+  "fetched_at": "2026-09-14T13:30:46+00:00",
+  "source_snapshot_sha256": "efe49c8bfff1f50f455a37cb176ad8c4fa7ae331848a867c12febbd5c77cebc0",
+  "images": {},
+  "local_only": true
+}

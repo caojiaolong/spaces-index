@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "7388",
+    "title": "从EMD、WMD到WRD：文本向量序列的相似度计算",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/7388",
+    "date": "2020-05-13",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 37,
+    "display_formula_count": 8,
+    "image_count": 1,
+    "heading_count": 12,
+    "code_block_count": 3,
+    "source_text_sha256": "408d9884f898ce90308bd2eb7b4f62c1bed6e0aed593f6459b8083e6e5a6c4e8",
+    "output_text_sha256": "408d9884f898ce90308bd2eb7b4f62c1bed6e0aed593f6459b8083e6e5a6c4e8",
+    "latex_sha256": "098e865f749a891f1fc85b541184a6b5d9226dbc7a968944040f7efd4d595d56",
+    "body_sha256": "acd1915c178e575b4e8f740a15e1e78b1bac9abc620a832265e7303a0b3afa73",
+    "converter_version": 1,
+    "markdown_sha256": "7bb915eeac44230ac9481adb9c3683a73c31452cb6e55e45a1aaf3b2ea80f07d"
+  },
+  "fetched_at": "2026-09-14T13:13:51+00:00",
+  "source_snapshot_sha256": "2c7ac4880f559bd6e77f4d6e6268ece9e59a13ebb16e9fd67218edc0d1764a6b",
+  "images": {},
+  "local_only": true
+}

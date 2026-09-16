@@ -1,0 +1,41 @@
+{
+  "metadata": {
+    "id": "2232",
+    "title": "有质动力：倒立单摆的稳定性",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/2232",
+    "date": "2013-12-29",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "source_dom_exact": true,
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "attributes_exact": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 40,
+    "display_formula_count": 13,
+    "image_count": 0,
+    "heading_count": 0,
+    "code_block_count": 0,
+    "source_text_sha256": "71335274f58280af229f8838de1435e5195c5f0db13542ce8d7718a83e6fa069",
+    "output_text_sha256": "71335274f58280af229f8838de1435e5195c5f0db13542ce8d7718a83e6fa069",
+    "latex_sha256": "a7cb90cac147a1761336fda6d0a067e9faf8c3754dc486134a223b61cc2b850a",
+    "body_sha256": "eea1d59c6716ea0ecf2ff2aea574544ecf036d20dd5c82eea3cd06461e439dd3",
+    "converter_version": 1,
+    "format": "html-v1",
+    "source_warnings": [
+      "原文含旧式或脚本嵌入内容，已保留其位置和源码；预览不执行。"
+    ],
+    "fallback_reason": "Unsupported body element: embed",
+    "markdown_sha256": "575575635b9b21b9082a09cc25e5be6f26f45479f09ea4d1f7db27e96dbb548a"
+  },
+  "fetched_at": "2026-09-14T13:57:58+00:00",
+  "source_snapshot_sha256": "0039b8fc6ffad0215c510e531e011444726089acd374d07f62236636d47a5a7c",
+  "images": {},
+  "local_only": true
+}

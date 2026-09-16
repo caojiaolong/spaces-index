@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "131",
+    "title": "10月国际空间站过境时间",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/131",
+    "date": "2009-09-20",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 0,
+    "display_formula_count": 0,
+    "image_count": 2,
+    "heading_count": 0,
+    "code_block_count": 0,
+    "source_text_sha256": "732328e0078654b800aecf08fa8cc65f8c320c5b1e78d0598231c5b664d7fead",
+    "output_text_sha256": "732328e0078654b800aecf08fa8cc65f8c320c5b1e78d0598231c5b664d7fead",
+    "latex_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "body_sha256": "a0e3d55c1e0e7c02e39a8666a8d538ac079404c194f87c956ac79bb341082b85",
+    "converter_version": 1,
+    "markdown_sha256": "2b8ebfebe8535a97c93e36618d0bded4f26eef2db0ee2d7edcd1780bed153ad6"
+  },
+  "fetched_at": "2026-09-14T14:52:19+00:00",
+  "source_snapshot_sha256": "3399a1c072a84c4fc126207c940e2573cabf5ebe0bcd6f6539051c5cb4354807",
+  "images": {},
+  "local_only": true
+}

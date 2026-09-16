@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "3402",
+    "title": "从“0.999...等于1”说开来",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/3402",
+    "date": "2015-07-21",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 16,
+    "display_formula_count": 1,
+    "image_count": 0,
+    "heading_count": 3,
+    "code_block_count": 0,
+    "source_text_sha256": "e793484d9b3c9dfbd3472c11f7a8b6c5d51fa05dd6215b9131b9e01c396037dd",
+    "output_text_sha256": "e793484d9b3c9dfbd3472c11f7a8b6c5d51fa05dd6215b9131b9e01c396037dd",
+    "latex_sha256": "6ffd0b02debce71caf801a4c5d579ef6689f6c3a73555ccc45efa4789daeb0b7",
+    "body_sha256": "6f98ca83938f2aa94382e3614d055902910bc795eeaf05e07fb4406861633350",
+    "converter_version": 1,
+    "markdown_sha256": "fd68c77c599a41149b3088a7d070dfb019fe4e262e61955f78c03ab73c7389bc"
+  },
+  "fetched_at": "2026-09-14T13:45:19+00:00",
+  "source_snapshot_sha256": "9ccbe6e9d19eabb73d794cbc8e93e60b50e3a14fd502adae474aa5bc43797b24",
+  "images": {},
+  "local_only": true
+}

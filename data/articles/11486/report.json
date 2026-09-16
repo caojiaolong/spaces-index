@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "11486",
+    "title": "为什么DeltaNet要加L2 Normalize？",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/11486",
+    "date": "2025-12-23",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 82,
+    "display_formula_count": 9,
+    "image_count": 0,
+    "heading_count": 6,
+    "code_block_count": 0,
+    "source_text_sha256": "2fccb5d290881ff05fedb721f638fa6345c739daa224fbb1ffd8d576aa039ffd",
+    "output_text_sha256": "2fccb5d290881ff05fedb721f638fa6345c739daa224fbb1ffd8d576aa039ffd",
+    "latex_sha256": "95adcce540d1cff76cabf36adc67abaca7249d507137ba5add04eedc051e895f",
+    "body_sha256": "32849a2811f7fd3fce5ca8a6e3e86ef0b5ace8f93cf90b32364c1a0bcacb8baa",
+    "converter_version": 1,
+    "markdown_sha256": "82e33651d473dda48f48c99517400a1759c78f09b2e57c5ef4c66977499bf81d"
+  },
+  "fetched_at": "2026-09-14T12:38:04+00:00",
+  "source_snapshot_sha256": "de2c83fb559d41a1004bafdcfa0f4c18569c214b1f9d4ed5fec0c50ef499383a",
+  "images": {},
+  "local_only": true
+}

@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "9158",
+    "title": "不成功的尝试：将多标签交叉熵推广到“n个m分类”上去",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/9158",
+    "date": "2022-07-15",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 61,
+    "display_formula_count": 8,
+    "image_count": 0,
+    "heading_count": 4,
+    "code_block_count": 0,
+    "source_text_sha256": "d9795a23a78925679f5922dd076c414a7cbe20b3bd3260b2ff3eafd8a1b8ea3f",
+    "output_text_sha256": "d9795a23a78925679f5922dd076c414a7cbe20b3bd3260b2ff3eafd8a1b8ea3f",
+    "latex_sha256": "f67130b26f12b8b0bf331125c28263c711fc56505d0cbf37171962d8a9b6d23e",
+    "body_sha256": "26d726af56836cdcdc65da3e84fc49b11ac8d06a2052f8801e3014f52b586573",
+    "converter_version": 1,
+    "markdown_sha256": "1ec48511229fc18629892225d6dc6c776bc208f9113aeec1990f5a3503ddf62e"
+  },
+  "fetched_at": "2026-09-14T12:58:47+00:00",
+  "source_snapshot_sha256": "5db6d0bf061579235d42ef8927fc1b5913fe72d6f7302df996a0b5eeb7b099d3",
+  "images": {},
+  "local_only": true
+}

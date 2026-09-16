@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "7476",
+    "title": "无监督分词和句法分析！原来BERT还可以这样用",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/7476",
+    "date": "2020-06-10",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 48,
+    "display_formula_count": 3,
+    "image_count": 4,
+    "heading_count": 7,
+    "code_block_count": 0,
+    "source_text_sha256": "dd03b1fea8ab5ead473b7a70c176c05012ba9f8e20ade51661dfee7f5ab422db",
+    "output_text_sha256": "dd03b1fea8ab5ead473b7a70c176c05012ba9f8e20ade51661dfee7f5ab422db",
+    "latex_sha256": "a031c872ea2d47bbee0631100ea82041d378e1f193e0cea9992a2d2f84666987",
+    "body_sha256": "9ee40d574443c17b848b770dd2bf5235a9306f2d67950bbccb5c87ba8e90f611",
+    "converter_version": 1,
+    "markdown_sha256": "96e6d777115ed14c7c22e654e2b69e1ddcb9e2149e7fa2787f9bed79b5d85e46"
+  },
+  "fetched_at": "2026-09-14T13:13:19+00:00",
+  "source_snapshot_sha256": "419ca1ff182fcb2f41561bc5fceb0f0cf32a04ea90c4ac10cdcf6949a8e972ea",
+  "images": {},
+  "local_only": true
+}

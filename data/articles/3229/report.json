@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "3229",
+    "title": "从Knotsevich在黑板上写的级数题目谈起",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/3229",
+    "date": "2015-02-27",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 44,
+    "display_formula_count": 14,
+    "image_count": 1,
+    "heading_count": 3,
+    "code_block_count": 0,
+    "source_text_sha256": "f4c50a9153dacad59d41cc909ad1d669fd94c2a38e3c9194b492f5a028510d33",
+    "output_text_sha256": "f4c50a9153dacad59d41cc909ad1d669fd94c2a38e3c9194b492f5a028510d33",
+    "latex_sha256": "a1733e931cd296ca316d31891dff308c42384e703fd451699af6a6b831bca9c7",
+    "body_sha256": "8f0ad17032d0b5a75a6d51ed6e032308ffa931b1218df256d4e797642da03165",
+    "converter_version": 1,
+    "markdown_sha256": "c2c3df66e08ede01d3931b6eb55efd1bcdd4a0292730161495d9daadc6448e1b"
+  },
+  "fetched_at": "2026-09-14T13:47:33+00:00",
+  "source_snapshot_sha256": "321ea56b20d4aa59befc41514f31c9ee97c6c5ccc1f85f5079b29af5185805bd",
+  "images": {},
+  "local_only": true
+}

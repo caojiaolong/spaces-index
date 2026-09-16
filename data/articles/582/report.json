@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "582",
+    "title": "《方程与宇宙》:抛物线与双曲线轨道(三)",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/582",
+    "date": "2010-04-03",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 26,
+    "display_formula_count": 14,
+    "image_count": 1,
+    "heading_count": 0,
+    "code_block_count": 0,
+    "source_text_sha256": "dd0c531f24b548fd93c64d50e4fa0eea7f7ebc16fcabab993f2db6e86e206c76",
+    "output_text_sha256": "dd0c531f24b548fd93c64d50e4fa0eea7f7ebc16fcabab993f2db6e86e206c76",
+    "latex_sha256": "3718f4c0d4c11117c72242037dcfd171dffb2e7acfc9391f26c2c47c06f88cf0",
+    "body_sha256": "ea8340f9389c5e221976e166b9e6094fb2b187d2a0289fb61b10f96851af9209",
+    "converter_version": 1,
+    "markdown_sha256": "dc62f5a2d2d409c6769f73128365aa4c7b107f6aa3c56d14010a43575cba623c"
+  },
+  "fetched_at": "2026-09-14T14:38:29+00:00",
+  "source_snapshot_sha256": "7e395337b8e3b677bd3afaa897787ff4d5f2e463d5a4c5890a7519e8802efd6c",
+  "images": {},
+  "local_only": true
+}

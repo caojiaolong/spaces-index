@@ -1,0 +1,16 @@
+<div class="PostContent" id="PostContent">
+<p>向量有两个乘法：点乘和叉乘，其结果又分别叫做数量积和向量积。在很多情况下，用这两个定义的乘法运算都能够给我们带来很大的方便（其实它就是在实际问题中抽象出来的）。不过，也有相当一部分的二维问题用复数来描述更为简洁。于是，为了整合两者的巧妙之处，有必要把向量的两个乘法运算“退化”到复数中去（为什么用“退化”？因为向量是多维的，可以是3维、4维等，而复数运算只是二维的，很明显这是一种“退化”而不是“拓展”^_^）</p><p><strong>运算法则：</strong></p><p><strong>点乘：</strong><br/>
+总法则：$Z_1 \cdot Z_2=|Z_1||Z_2|\cos(arg\frac{Z_2}{Z_1})$<br/>
+$$\begin{aligned}1\cdot i=0 \\ i\cdot i=1 \\ \exp(i\theta)\cdot \exp(i\varphi)=\cos(\varphi -\theta) \\ iexp(i\theta)\cdot \exp(i\varphi)=-\sin(\theta-\varphi ) \\ Z_1 \cdot Z_2=Z_1 \bar{Z}_2+Z_2 \bar{Z}_1\end{aligned}$$</p><p><strong>叉乘：</strong><br/>
+由于二维向量的叉积都指向第三维，所以可以认为复数的叉积结果都是一个数。<br/>
+总法则：$Z_1 \times Z_2=|Z_1| |Z_2| sin(arg\frac{Z_2}{Z_1})$<br/>
+$$\begin{aligned}1\times i=1 \\ i\times i=0 \\ \exp(i\theta) \times \exp(i\varphi)=\sin(\varphi-\theta ) \\ iexp(i\theta) \times \exp(i\varphi)=-\cos(\theta-\varphi ) \\ Z_1 \times Z_2=(Z_1 \bar{Z}_2-Z_2 \bar{Z}_1)i\end{aligned}$$</p><p><strong>变换关系：</strong><br/>
+$$\begin{aligned}Z_1 \times Z_2=-Z_2 \times Z_1 \\ Z_1 \times (i Z_2)=Z_1\cdot Z_2 \\ Z_1 \cdot (i Z_2)=-Z_1 \times Z_2\end{aligned}$$</p><p><strong>微分恒等关系：</strong><br/>
+$$Z\cdot dZ=|Z| d|Z|$$<br/>
+$Z*(i dZ)=-(iZ)*dZ=+-|Z|\sqrt{dZ*dZ-(d|Z|)^2}$（正负待定）</p><p>于是，复数便有了三种乘法了。它们代表的意义都不一样！复数原来的乘法是一种旋转和伸长，而点积和叉积分别是有关两个复数的夹角的余弦和正弦。</p><p>这是用复数研究三体问题周期轨道时所悟到的思想，特此记录！</p>
+
+
+
+
+
+</div>

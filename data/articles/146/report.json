@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "146",
+    "title": "重新拥抱国家天文台！",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/146",
+    "date": "2009-10-05",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 0,
+    "display_formula_count": 0,
+    "image_count": 0,
+    "heading_count": 0,
+    "code_block_count": 0,
+    "source_text_sha256": "a9cf391489ab6b86ca675acb54baa57e2ec27b809a2b31f976348b52f44cae3e",
+    "output_text_sha256": "a9cf391489ab6b86ca675acb54baa57e2ec27b809a2b31f976348b52f44cae3e",
+    "latex_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "body_sha256": "394449dc60702bb423d0083ccf700538804953d1cb20145de7cab592e8072710",
+    "converter_version": 1,
+    "markdown_sha256": "6da3c3d20974b5be477c53816e7c0c1b07e64ba2c8924389a3f2d42850bd5f96"
+  },
+  "fetched_at": "2026-09-14T14:50:33+00:00",
+  "source_snapshot_sha256": "bcafdc5924a24c1350e6d159f347bc08e28dff035c065a38e2ebd77ce030b5cd",
+  "images": {},
+  "local_only": true
+}

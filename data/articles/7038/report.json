@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "7038",
+    "title": "从去噪自编码器到生成模型",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/7038",
+    "date": "2019-10-31",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 79,
+    "display_formula_count": 11,
+    "image_count": 2,
+    "heading_count": 4,
+    "code_block_count": 0,
+    "source_text_sha256": "d7677759e009b652619bf76badac0a6ffb699719401b042587b3bce5843850d8",
+    "output_text_sha256": "d7677759e009b652619bf76badac0a6ffb699719401b042587b3bce5843850d8",
+    "latex_sha256": "1471ff71243de3de5b5c100542f34bcc5f30d44cd2b6092e16ec2fb2094c4739",
+    "body_sha256": "b4041ad4d7a8ec4fb96a4eed3efdd213b46d928825b8f635fbe31895deb3b07a",
+    "converter_version": 1,
+    "markdown_sha256": "3c96bd25cc3d3500e6967b0b9e4dddee72d18d4040cf14bc344c8f38536550ef"
+  },
+  "fetched_at": "2026-09-14T13:16:57+00:00",
+  "source_snapshot_sha256": "2efcfd1037768966a38e7101bef7d6d3e106ed9623f43ddfbcc4ac255a02d9b6",
+  "images": {},
+  "local_only": true
+}

@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "9668",
+    "title": "生成扩散模型漫谈（二十）：从ReFlow到WGAN-GP",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/9668",
+    "date": "2023-06-28",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 65,
+    "display_formula_count": 11,
+    "image_count": 0,
+    "heading_count": 4,
+    "code_block_count": 0,
+    "source_text_sha256": "8784cca20f000510613e803d34b142cf94dfed59fb7619f180d39749ade40f72",
+    "output_text_sha256": "8784cca20f000510613e803d34b142cf94dfed59fb7619f180d39749ade40f72",
+    "latex_sha256": "b3e772e5ed7909f14d1d44d414cef312506109286ac72f08b0282db2270cb279",
+    "body_sha256": "1bed645bebab9865ae350f03f6f1a9e0251d537aa083ecdecbdc92b534c7e4ae",
+    "converter_version": 1,
+    "markdown_sha256": "7fdc1db5889da6534b675591d33dfc6a60bce960ea0d8449d01c440dd2cbe5a7"
+  },
+  "fetched_at": "2026-09-14T12:53:27+00:00",
+  "source_snapshot_sha256": "d57ec4b49722142e65a81f1f26f24cbbc0d1a6cc712ef742c387527828c63067",
+  "images": {},
+  "local_only": true
+}

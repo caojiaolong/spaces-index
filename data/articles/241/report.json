@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "241",
+    "title": "本站域名Spaces.Ac.Cn的PR为2了",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/241",
+    "date": "2009-11-01",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 0,
+    "display_formula_count": 0,
+    "image_count": 3,
+    "heading_count": 0,
+    "code_block_count": 0,
+    "source_text_sha256": "14b67fc240e93c9113fb7f31b20a901b877161ca8c4d80e11022d3d07a614b50",
+    "output_text_sha256": "14b67fc240e93c9113fb7f31b20a901b877161ca8c4d80e11022d3d07a614b50",
+    "latex_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "body_sha256": "bcb7e0f508773bb2ee2b3837ba6d5534150929405a7fd0e82936b584bbf33c08",
+    "converter_version": 1,
+    "markdown_sha256": "cec49b2940beb12a72aa47c8cb28ab65c5fef1f7b37c58b8f592914c5e23edaa"
+  },
+  "fetched_at": "2026-09-14T14:46:50+00:00",
+  "source_snapshot_sha256": "7d78aa642940085c0f6382f0445f8d27d4a5db6d6e4e72c3e3ff94878f82a3b9",
+  "images": {},
+  "local_only": true
+}

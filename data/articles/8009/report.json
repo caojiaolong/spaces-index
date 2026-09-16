@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "8009",
+    "title": "从动力学角度看优化算法（七）：SGD ≈ SVM？",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/8009",
+    "date": "2020-12-21",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 58,
+    "display_formula_count": 9,
+    "image_count": 0,
+    "heading_count": 4,
+    "code_block_count": 0,
+    "source_text_sha256": "3d761b7e2ccf37554a992c9c5983a4a714a458c8a202b9d2086ae45e9e10e8b8",
+    "output_text_sha256": "3d761b7e2ccf37554a992c9c5983a4a714a458c8a202b9d2086ae45e9e10e8b8",
+    "latex_sha256": "0302fe44c9d084562b2f17a9ce467b54d28367ac7c6777eed2602fb7fc3bbfc6",
+    "body_sha256": "68bf81a3261d72a43cb1b48f614d6efeb8e5b8b6d310b4c5c9c4c279db70ec62",
+    "converter_version": 1,
+    "markdown_sha256": "c0757c81772df6f69a4c0ab9631e46bc8557866855b67ac906b36a784942ad6f"
+  },
+  "fetched_at": "2026-09-14T13:09:16+00:00",
+  "source_snapshot_sha256": "dd6172f653dd9b1141bff0b0c53c849ab3780e092212a642ef0e0144b5736ba0",
+  "images": {},
+  "local_only": true
+}

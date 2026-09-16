@@ -1,0 +1,39 @@
+{
+  "metadata": {
+    "id": "2665",
+    "title": "Project Euler 454 ：五天攻下“擂台”",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/2665",
+    "date": "2014-06-27",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "source_dom_exact": true,
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "attributes_exact": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 102,
+    "display_formula_count": 6,
+    "image_count": 1,
+    "heading_count": 0,
+    "code_block_count": 4,
+    "source_text_sha256": "6d92a2abf8c336c8434c13cbcc7fe4ee85d35f9bf5567d8181e45e426f8930fe",
+    "output_text_sha256": "6d92a2abf8c336c8434c13cbcc7fe4ee85d35f9bf5567d8181e45e426f8930fe",
+    "latex_sha256": "dc98eba006a72fcd03f17d380090758d3b712e75eb7b2d08b8bdac900f5d1420",
+    "body_sha256": "fd2d57f5e896bbc710894c377ec81a98bf9d7b6747bb8d5f6f5f5fdac79b6eb0",
+    "converter_version": 1,
+    "format": "html-v1",
+    "source_warnings": [],
+    "fallback_reason": "Unsupported body element: hs",
+    "markdown_sha256": "e9bd2ff7af1be378738b7b1ca9ba9a82ed28c47dc4ed85df12cf8621edac93bd"
+  },
+  "fetched_at": "2026-09-14T13:53:51+00:00",
+  "source_snapshot_sha256": "5645ed506e307371959125fd5e46a0ad8c5eeabaf0cba1f340ad131af8ceaff8",
+  "images": {},
+  "local_only": true
+}

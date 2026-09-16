@@ -1,0 +1,39 @@
+{
+  "metadata": {
+    "id": "5409",
+    "title": "基于CNN的阅读理解式问答模型：DGCNN",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/5409",
+    "date": "2018-04-15",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "source_dom_exact": true,
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "attributes_exact": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 42,
+    "display_formula_count": 12,
+    "image_count": 8,
+    "heading_count": 38,
+    "code_block_count": 0,
+    "source_text_sha256": "a27f3f26959414e29f8af85a0bbf26d6ec269d3c8e831afca0ba37e43795619f",
+    "output_text_sha256": "a27f3f26959414e29f8af85a0bbf26d6ec269d3c8e831afca0ba37e43795619f",
+    "latex_sha256": "02952fbdb213f7c33558b63984ee997f4493e17cfecf1ff29432e6af1f850cc1",
+    "body_sha256": "b329d698bdb2c119181aa993e24c34a47473364e541c2ce27999e206e7c00be4",
+    "converter_version": 1,
+    "format": "html-v1",
+    "source_warnings": [],
+    "fallback_reason": "Unsupported body element: unk",
+    "markdown_sha256": "fe0024371894f4d8624c8d5762d4179cebd26af1c647428fbb6b91f5bb654db0"
+  },
+  "fetched_at": "2026-09-14T13:27:28+00:00",
+  "source_snapshot_sha256": "372141e4b7a214ce0590c1e67792271e1bc4f5838faa0e94f910569598731520",
+  "images": {},
+  "local_only": true
+}

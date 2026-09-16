@@ -1,0 +1,62 @@
+<div class="PostContent" id="PostContent">
+<p>在文章<a href="/archives/9228" target="_blank">《生成扩散模型漫谈（六）：一般框架之ODE篇》</a>中，我们推导了SDE的Fokker-Planck方程；而在<a href="/archives/9280" target="_blank">《生成扩散模型漫谈（十二）：“硬刚”扩散ODE》</a>中，我们单独推导了ODE的连续性方程。它们都是描述随机变量沿着SDE/ODE演化的分布变化方程，连续性方程是Fokker-Planck方程的特例。在推导Fokker-Planck方程时，我们将泰勒展开硬套到了狄拉克函数上，虽然结果是对的，但未免有点不伦不类；在推导连续性方程时，我们结合了雅可比行列式和泰勒展开，方法本身比较常规，但没法用来推广到Fokker-Planck方程。</p><p>这篇文章我们介绍“测试函数法”，它是推导连续性方程和Fokker-Planck方程的标准方法之一，其分析过程比较正规，并且适用场景也比较广。</p><h2 id="分部积分">分部积分</h2><p>正式推导之前，这里先介绍后面推导会用到的关键结果——分部积分法的高维推广。</p><p>一般教程对分部积分的介绍仅限于一维情形，即<br/>
+\begin{equation}\int_a^b uv'dx = uv|_a^b - \int_a^b vu'dx\end{equation}<br/>
+这里$u,v$是$x$的函数，$'$表示求函数关于$x$的导数。下面我们需要它的一个高维版本，为此，我们先回顾一维分部积分的推导过程，它依赖于求导的乘法法则：<br/>
+\begin{equation}(uv)' = uv' + vu'\end{equation}<br/>
+然后两边对$x$积分并移项，就得到分部积分公式。对于高维情形，我们考虑类似的公式：<br/>
+\begin{equation}\nabla\cdot(u\boldsymbol{v}) = \boldsymbol{v}\cdot\nabla u + u\nabla \cdot\boldsymbol{v}\end{equation}<br/>
+其中$u$是$\boldsymbol{x}$的标量函数，$\boldsymbol{v}$是$\boldsymbol{x}$的向量函数（维度跟$\boldsymbol{v}$一致），$\nabla$表示求函数关于$\boldsymbol{x}$的梯度。现在我们对两端在区域$\Omega$积分：<br/>
+\begin{equation}\int_{\Omega}\nabla\cdot(u\boldsymbol{v})d\boldsymbol{x} = \int_{\Omega}\boldsymbol{v}\cdot\nabla u d\boldsymbol{x} + \int_{\Omega}u\nabla \cdot\boldsymbol{v} d\boldsymbol{x}\end{equation}<br/>
+根据<a href="https://en.wikipedia.org/wiki/Divergence_theorem" target="_blank">高斯散度定理</a>，左侧等于$\int_{\partial\Omega}u\boldsymbol{v}\cdot\hat{\boldsymbol{n}}dS$，$\partial\Omega$是$\Omega$的边界，$\hat{\boldsymbol{n}}$是边界的外向单位法向量，$dS$是面积微元。所以，移项后有<br/>
+\begin{equation}\int_{\Omega}\boldsymbol{v}\cdot\nabla u d\boldsymbol{x} = \int_{\partial\Omega}u\boldsymbol{v}\cdot\hat{\boldsymbol{n}}dS - \int_{\Omega}u\nabla \cdot\boldsymbol{v} d\boldsymbol{x}\label{eq:int-by-parts}\end{equation}<br/>
+这就是我们要推导的高维空间分部积分公式。特别地，对于概率密度函数$p$，那么由于非负性和积分为1的限制，无穷远处必然有$p\to 0$和$\nabla p\to \boldsymbol{0}$，所以如果$\Omega$选为全空间（没有特别注明积分区域的，默认为全空间），那么分别将$u=p$和$\boldsymbol{v}=\nabla p$代入上式，得到<br/>
+\begin{align}\int\boldsymbol{v}\cdot\nabla p d\boldsymbol{x} =&amp;\, - \int p\nabla \cdot\boldsymbol{v} d\boldsymbol{x}\label{eq:int-by-parts-p} \\<br/>
+\int u\nabla \cdot\nabla p d\boldsymbol{x} = &amp;\,-\int\nabla p\cdot\nabla u d\boldsymbol{x}\label{eq:int-by-parts-gp}\end{align}<br/>
+如果要进一步严格化上述结论，可以假设$p$具有紧的支撑集。不过这纯粹是数学上的严格化，事实上对于一般理解来说，直接默认在无穷远处成立$p\to 0$和$\nabla p\to \boldsymbol{0}$就够了。</p><h2 id="ODE演化">ODE演化</h2><p>测试函数法的原理，是如果对于任意函数$\phi(\boldsymbol{x})$，都成立<br/>
+\begin{equation}\int f(\boldsymbol{x})\phi(\boldsymbol{x})d\boldsymbol{x} = \int g(\boldsymbol{x})\phi(\boldsymbol{x})d\boldsymbol{x}\end{equation}<br/>
+那么就成立$f(\boldsymbol{x})=g(\boldsymbol{x})$，其中$\phi(\boldsymbol{x})$就叫做测试函数。更严谨的定义需要声明$\phi(\boldsymbol{x})$的选取空间，以及等号的具体含义（如严格相等/几乎处处相等/依概率相等之类），这里我们就不引入这些细节了。</p><p>对于ODE<br/>
+\begin{equation}\frac{d\boldsymbol{x}_t}{dt}=\boldsymbol{f}_t(\boldsymbol{x}_t)\label{eq:ode}\end{equation}<br/>
+我们将它离散化为<br/>
+\begin{equation}\boldsymbol{x}_{t+\Delta t} = \boldsymbol{x}_t + \boldsymbol{f}_t(\boldsymbol{x}_t)\Delta t\label{eq:ode-diff}\end{equation}<br/>
+那么就有<br/>
+\begin{equation}\phi(\boldsymbol{x}_{t+\Delta t}) = \phi(\boldsymbol{x}_t + \boldsymbol{f}_t(\boldsymbol{x}_t)\Delta t)\approx \phi(\boldsymbol{x}_t)  + \Delta t\,\,\boldsymbol{f}_t(\boldsymbol{x}_t)\cdot\nabla_{\boldsymbol{x}_t}\phi(\boldsymbol{x}_t)\end{equation}<br/>
+两边求期望，得到：<br/>
+\begin{equation}\int p_{t+\Delta t}(\boldsymbol{x}_{t+\Delta t})\phi(\boldsymbol{x}_{t+\Delta t}) d\boldsymbol{x}_{t+\Delta t}\approx \int p_t(\boldsymbol{x}_t)\phi(\boldsymbol{x}_t)d\boldsymbol{x}_t  + \Delta t\int p_t(\boldsymbol{x}_t)\boldsymbol{f}_t(\boldsymbol{x}_t)\cdot\nabla_{\boldsymbol{x}_t}\phi(\boldsymbol{x}_t)d\boldsymbol{x}_t\end{equation}<br/>
+由于积分的结果不依赖于被积自变量的记号，所以左边将$\boldsymbol{x}_{t+\Delta t}$换成$\boldsymbol{x}_t$也是等价的：<br/>
+\begin{equation}\int p_{t+\Delta t}(\boldsymbol{x}_t)\phi(\boldsymbol{x}_t) d\boldsymbol{x}_t\approx \int p_t(\boldsymbol{x}_t)\phi(\boldsymbol{x}_t)d\boldsymbol{x}_t  + \Delta t\int p_t(\boldsymbol{x}_t)\boldsymbol{f}_t(\boldsymbol{x}_t)\cdot\nabla_{\boldsymbol{x}_t}\phi(\boldsymbol{x}_t)d\boldsymbol{x}_t\label{eq:change-var}\end{equation}<br/>
+将右边第一项移到左边，然后取$\Delta t\to 0$的极限，得到：<br/>
+\begin{equation}\int \frac{\partial p_t(\boldsymbol{x}_t)}{\partial t}\phi(\boldsymbol{x}_t) d\boldsymbol{x}_t = \int p_t(\boldsymbol{x}_t)\boldsymbol{f}_t(\boldsymbol{x}_t)\cdot\nabla_{\boldsymbol{x}_t}\phi(\boldsymbol{x}_t)d\boldsymbol{x}_t\label{eq:dt-0}\end{equation}<br/>
+右端利用分部积分公式$\eqref{eq:int-by-parts-p}$得到<br/>
+\begin{equation}\int \frac{\partial p_t(\boldsymbol{x}_t)}{\partial t}\phi(\boldsymbol{x}_t) d\boldsymbol{x}_t = -\int \Big[\nabla_{\boldsymbol{x}_t}\cdot\big(p_t(\boldsymbol{x}_t)\boldsymbol{f}_t(\boldsymbol{x}_t)\big)\Big]\phi(\boldsymbol{x}_t)d\boldsymbol{x}_t\end{equation}<br/>
+根据测试函数法的相等原理，就有<br/>
+\begin{equation}\frac{\partial p_t(\boldsymbol{x}_t)}{\partial t} = -\nabla_{\boldsymbol{x}_t}\cdot\big(p_t(\boldsymbol{x}_t)\boldsymbol{f}_t(\boldsymbol{x}_t)\big)\end{equation}<br/>
+这称为“<a href="https://en.wikipedia.org/wiki/Continuity_equation" target="_blank">连续性方程</a>”。</p><h2 id="SDE演化">SDE演化</h2><p>对于SDE<br/>
+\begin{equation}d\boldsymbol{x}_t = \boldsymbol{f}_t(\boldsymbol{x}_t) dt + g_t d\boldsymbol{w}\label{eq:sde}\end{equation}<br/>
+我们离散化为<br/>
+\begin{equation}\boldsymbol{x}_{t+\Delta t} = \boldsymbol{x}_t + \boldsymbol{f}_t(\boldsymbol{x}_t) \Delta t + g_t \sqrt{\Delta t}\boldsymbol{\varepsilon},\quad \boldsymbol{\varepsilon}\sim \mathcal{N}(\boldsymbol{0}, \boldsymbol{I})\label{eq:sde-diff}\end{equation}<br/>
+那么<br/>
+\begin{equation}\begin{aligned}<br/>
+\phi(\boldsymbol{x}_{t+\Delta t}) =&amp;\, \phi(\boldsymbol{x}_t + \boldsymbol{f}_t(\boldsymbol{x}_t) \Delta t + g_t \sqrt{\Delta t}\boldsymbol{\varepsilon}) \\<br/>
+\approx&amp;\, \phi(\boldsymbol{x}_t) + \left(\boldsymbol{f}_t(\boldsymbol{x}_t) \Delta t + g_t \sqrt{\Delta t}\boldsymbol{\varepsilon}\right)\cdot \nabla_{\boldsymbol{x}_t}\phi(\boldsymbol{x}_t) + \frac{1}{2} \left(g_t\sqrt{\Delta t}\boldsymbol{\varepsilon}\cdot \nabla_{\boldsymbol{x}_t}\right)^2\phi(\boldsymbol{x}_t)<br/>
+\end{aligned}\end{equation}<br/>
+两边求期望，注意右边要同时对$\boldsymbol{x}_t$和$\boldsymbol{\varepsilon}$求期望，其中$\boldsymbol{\varepsilon}$的期望可以事先求出，结果是<br/>
+\begin{equation}\phi(\boldsymbol{x}_t) + \Delta t\,\,\boldsymbol{f}_t(\boldsymbol{x}_t)\cdot \nabla_{\boldsymbol{x}_t}\phi(\boldsymbol{x}_t) + \frac{1}{2} \Delta t\,g_t^2\nabla_{\boldsymbol{x}_t}\cdot\nabla_{\boldsymbol{x}_t}\phi(\boldsymbol{x}_t)<br/>
+\end{equation}<br/>
+于是<br/>
+\begin{equation}\begin{aligned}<br/>
+&amp;\,\int p_{t+\Delta t}(\boldsymbol{x}_{t+\Delta t})\phi(\boldsymbol{x}_{t+\Delta t}) d\boldsymbol{x}_{t+\Delta t}\\<br/>
+\approx&amp;\, \int p_t(\boldsymbol{x}_t)\phi(\boldsymbol{x}_t)d\boldsymbol{x}_t  + \Delta t\int p_t(\boldsymbol{x}_t)\boldsymbol{f}_t(\boldsymbol{x}_t)\cdot\nabla_{\boldsymbol{x}_t}\phi(\boldsymbol{x}_t)d\boldsymbol{x}_t + \int\frac{1}{2} \Delta t\,g_t^2 p_t(\boldsymbol{x}_t)\nabla_{\boldsymbol{x}_t}\cdot\nabla_{\boldsymbol{x}_t}\phi(\boldsymbol{x}_t) d\boldsymbol{x}_t<br/>
+\end{aligned}\end{equation}<br/>
+跟式$\eqref{eq:change-var}$、式$\eqref{eq:dt-0}$类似，取$\Delta\to 0$的极限，得到<br/>
+\begin{equation}\int \frac{\partial p_t(\boldsymbol{x}_t)}{\partial t}\phi(\boldsymbol{x}_t) d\boldsymbol{x}_t = \int p_t(\boldsymbol{x}_t)\boldsymbol{f}_t(\boldsymbol{x}_t)\cdot\nabla_{\boldsymbol{x}_t}\phi(\boldsymbol{x}_t)d\boldsymbol{x}_t + \int\frac{1}{2} \,g_t^2 p_t(\boldsymbol{x}_t)\nabla_{\boldsymbol{x}_t}\cdot\nabla_{\boldsymbol{x}_t}\phi(\boldsymbol{x}_t) d\boldsymbol{x}_t\end{equation}<br/>
+对右边第一项应用式$\eqref{eq:int-by-parts-p}$、对右边第二项先应用式$\eqref{eq:int-by-parts-gp}$再应用式$\eqref{eq:int-by-parts-p}$，得到<br/>
+\begin{equation}\int \frac{\partial p_t(\boldsymbol{x}_t)}{\partial t}\phi(\boldsymbol{x}_t) d\boldsymbol{x}_t = \int \left[-\nabla_{\boldsymbol{x}_t}\cdot\big(p_t(\boldsymbol{x}_t)\boldsymbol{f}_t(\boldsymbol{x}_t)\big)+\frac{1}{2}g_t^2 \nabla_{\boldsymbol{x}}\cdot\nabla_{\boldsymbol{x}}p_t(\boldsymbol{x})\right]\phi(\boldsymbol{x}_t)d\boldsymbol{x}_t\end{equation}<br/>
+根据测试函数法的相等原理得<br/>
+\begin{equation}\frac{\partial p_t(\boldsymbol{x}_t)}{\partial t} = -\nabla_{\boldsymbol{x}_t}\cdot\big(p_t(\boldsymbol{x}_t)\boldsymbol{f}_t(\boldsymbol{x}_t)\big)+\frac{1}{2}g_t^2 \nabla_{\boldsymbol{x}}\cdot\nabla_{\boldsymbol{x}}p_t(\boldsymbol{x})\end{equation}<br/>
+这就是“<a href="https://en.wikipedia.org/wiki/Fokker%E2%80%93Planck_equation" target="_blank">Fokker-Planck方程</a>”。</p><h2 id="文章小结">文章小结</h2><p>本文介绍了用于推导某些概率方程的测试函数法，主要内容包括分部积分法的高维推广，以及ODE的连续性方程和SDE的Fokker-Planck方程的推导过程。</p>
+
+
+
+
+
+</div>

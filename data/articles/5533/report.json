@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "5533",
+    "title": "【致敬】费曼诞辰100年",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/5533",
+    "date": "2018-05-11",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 0,
+    "display_formula_count": 0,
+    "image_count": 1,
+    "heading_count": 0,
+    "code_block_count": 0,
+    "source_text_sha256": "33aa76af7f9177fe797beb187691a2b302076c1f21732e1b21a3d5cab1a696cb",
+    "output_text_sha256": "33aa76af7f9177fe797beb187691a2b302076c1f21732e1b21a3d5cab1a696cb",
+    "latex_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "body_sha256": "0f1858d38f1a7c2932bc9f845e28c4d1809f96485aacdf00145c21fcdaba066b",
+    "converter_version": 1,
+    "markdown_sha256": "a460b9c4f5bfbf95cbb647dec22a2a62e7af930c54ed3b2594447482fb353d4d"
+  },
+  "fetched_at": "2026-09-14T13:26:53+00:00",
+  "source_snapshot_sha256": "ae1c234dc1b0c2e61991d6d1407aff0e0640df3391b6fbd59eb4ff7c71b2f68c",
+  "images": {},
+  "local_only": true
+}

@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "1690",
+    "title": "我的大学酒",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/1690",
+    "date": "2012-08-13",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 0,
+    "display_formula_count": 0,
+    "image_count": 4,
+    "heading_count": 0,
+    "code_block_count": 0,
+    "source_text_sha256": "da930bd8ddbb50f0d33c108be7490e06e60fed15ae8fc3a82e1c1156b73d24f8",
+    "output_text_sha256": "da930bd8ddbb50f0d33c108be7490e06e60fed15ae8fc3a82e1c1156b73d24f8",
+    "latex_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "body_sha256": "1f7983bc55780751f7fc217465d552f6c4e877cd9e491acbeaa222bf29de2270",
+    "converter_version": 1,
+    "markdown_sha256": "0ddbf27811815427c3100e9bf9f95b9ebe7c09f15560b210f4dd652210878db5"
+  },
+  "fetched_at": "2026-09-14T14:11:23+00:00",
+  "source_snapshot_sha256": "9e3595857530a7f845a0c3ab25939b32c6abc72a24374b6f19cde5e0c9efe048",
+  "images": {},
+  "local_only": true
+}

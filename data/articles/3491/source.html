@@ -1,0 +1,129 @@
+<div class="PostContent" id="PostContent">
+<p>在本博客的前面文章中，已经简单提到过中文文本处理与挖掘的问题了，中文数据挖掘与英语同类问题中最大的差别是，中文没有空格，如果要较好地完成语言任务，首先得分词。目前流行的分词方法都是基于词库的，然而重要的问题就来了：词库哪里来？人工可以把一些常用的词语收集到词库中，然而这却应付不了层出不穷的新词，尤其是网络新词等——而这往往是语言任务的关键地方。因此，中文语言处理很核心的一个任务就是完善新词发现算法。</p><p>新词发现说的就是不加入任何先验素材，直接从大规模的语料库中，自动发现可能成词的语言片段。前两天我去小虾的公司膜拜，并且试着加入了他们的一个开发项目中，主要任务就是网络文章处理。因此，补习了一下新词发现的算法知识，参考了Matrix67.com的文章<a href="http://www.matrix67.com/blog/archives/5044" target="_blank">《互联网时代的社会语言学：基于SNS的文本数据挖掘》</a>，尤其是里边的信息熵思想，并且根据他的思路，用Python写了个简单的脚本。</p><p>程序的算法完全来自于Matrix67.com的文章，感兴趣的读者可以移步到他的博客仔细阅读，相信会获益匪浅的。在此主要简单讨论一下代码的实现思路。具体程序请见文末。为了处理更大的文本，尽量不用Python内置的循环，尽可能用到第三方库所带的函数，如Numpy、Pandas。由于涉及到词语数量较多，要做好索引工作，比如词语先要排好序，会大大提高检索的速度。</p><p>下面是用本文程序对金庸小说《天龙八部》世纪新修版（txt电子版2.5M）做的新词发现结果（部分），用时20秒左右，感觉结果还不错，主要角色的人名都自动发现了。当然因为代码比较短，没做什么特殊处理，还有很多可以改善的地方。</p><blockquote>段誉,3535<br/>
+什么,2537<br/>
+萧峰,1897<br/>
+自己,1730<br/>
+虚竹,1671<br/>
+乔峰,1243<br/>
+阿紫,1157<br/>
+武功,1109<br/>
+阿朱,1106<br/>
+姑娘,1047<br/>
+笑道,992<br/>
+咱们,832<br/>
+师父,805<br/>
+如何,771<br/>
+如此,682<br/>
+大理,665<br/>
+丐帮,645<br/>
+突然,640<br/>
+王语嫣,920<br/>
+慕容复,900<br/>
+段正淳,780<br/>
+木婉清,751<br/>
+鸠摩智,600<br/>
+游坦之,515<br/>
+丁春秋,463<br/>
+有什么,460<br/>
+包不同,447<br/>
+少林寺,379<br/>
+保定帝,344<br/>
+马夫人,324<br/>
+段延庆,302<br/>
+乌老大,294<br/>
+不由得,275<br/>
+王夫人,265<br/>
+为什么,258<br/>
+只听得,255<br/>
+是什么,237<br/>
+云中鹤,236<br/>
+那少女,234<br/>
+巴天石,230<br/>
+王姑娘,227<br/>
+忽听得,221<br/>
+钟万仇,218<br/>
+少林派,216<br/>
+叶二娘,216<br/>
+朱丹臣,213<br/>
+风波恶,209<br/>
+契丹人,208<br/>
+南海鳄神,485<br/>
+慕容公子,230<br/>
+耶律洪基,189<br/>
+六脉神剑,168<br/>
+站起身来,116<br/>
+带头大哥,103<br/>
+这几句话,100<br/>
+点了点头,96<br/>
+星宿老怪,92<br/>
+神仙姊姊,90<br/>
+吃了一惊,87<br/>
+大吃一惊,86<br/>
+慕容先生,86<br/>
+又有什么,86</blockquote><p><strong>完整代码（3.x版本，简单修改可以用于2.x版本，主要是输出函数不同而已）：</strong></p><pre class="line-numbers"><code class="language-python">import numpy as np
+import pandas as pd
+import re
+from numpy import log,min
+
+f = open('data.txt', 'r') #读取文章
+s = f.read() #读取为一个字符串
+
+#定义要去掉的标点字
+drop_dict = [u'，', u'\n', u'。', u'、', u'：', u'(', u')', u'[', u']', u'.', u',', u' ', u'\u3000', u'”', u'“', u'？', u'?', u'！', u'‘', u'’', u'…']
+for i in drop_dict: #去掉标点字
+    s = s.replace(i, '')
+
+#为了方便调用，自定义了一个正则表达式的词典
+myre = {2:'(..)', 3:'(...)', 4:'(....)', 5:'(.....)', 6:'(......)', 7:'(.......)'}
+
+min_count = 10 #录取词语最小出现次数
+min_support = 30 #录取词语最低支持度，1代表着随机组合
+min_s = 3 #录取词语最低信息熵，越大说明越有可能独立成词
+max_sep = 4 #候选词语的最大字数
+t=[] #保存结果用。
+
+t.append(pd.Series(list(s)).value_counts()) #逐字统计
+tsum = t[0].sum() #统计总字数
+rt = [] #保存结果用
+
+for m in range(2, max_sep+1):
+    print(u'正在生成%s字词...'%m)
+    t.append([])
+    for i in range(m): #生成所有可能的m字词
+        t[m-1] = t[m-1] + re.findall(myre[m], s[i:])
+    
+    t[m-1] = pd.Series(t[m-1]).value_counts() #逐词统计
+    t[m-1] = t[m-1][t[m-1] &gt; min_count] #最小次数筛选
+    tt = t[m-1][:]
+    for k in range(m-1):
+        qq = np.array(list(map(lambda ms: tsum*t[m-1][ms]/t[m-2-k][ms[:m-1-k]]/t[k][ms[m-1-k:]], tt.index))) &gt; min_support #最小支持度筛选。
+        tt = tt[qq]
+    rt.append(tt.index)
+
+def cal_S(sl): #信息熵计算函数
+    return -((sl/sl.sum()).apply(log)*sl/sl.sum()).sum()
+
+for i in range(2, max_sep+1):
+    print(u'正在进行%s字词的最大熵筛选(%s)...'%(i, len(rt[i-2])))
+    pp = [] #保存所有的左右邻结果
+    for j in range(i+2):
+        pp = pp + re.findall('(.)%s(.)'%myre[i], s[j:])
+    pp = pd.DataFrame(pp).set_index(1).sort_index() #先排序，这个很重要，可以加快检索速度
+    index = np.sort(np.intersect1d(rt[i-2], pp.index)) #作交集
+    #下面两句分别是左邻和右邻信息熵筛选
+    index = index[np.array(list(map(lambda s: cal_S(pd.Series(pp[0][s]).value_counts()), index))) &gt; min_s]
+    rt[i-2] = index[np.array(list(map(lambda s: cal_S(pd.Series(pp[2][s]).value_counts()), index))) &gt; min_s]
+
+#下面都是输出前处理
+for i in range(len(rt)):
+    t[i+1] = t[i+1][rt[i]]
+    t[i+1].sort(ascending = False)
+
+#保存结果并输出
+pd.DataFrame(pd.concat(t[1:])).to_csv('result.txt', header = False)</code></pre>
+
+
+
+
+
+</div>

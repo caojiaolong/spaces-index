@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "6915",
+    "title": "自己实现了一个bert4keras",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/6915",
+    "date": "2019-08-27",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 0,
+    "display_formula_count": 0,
+    "image_count": 0,
+    "heading_count": 4,
+    "code_block_count": 2,
+    "source_text_sha256": "df8d3c947f84831b787918add06e99cbf1e7547b15397d8cd5f3920095adc0ef",
+    "output_text_sha256": "df8d3c947f84831b787918add06e99cbf1e7547b15397d8cd5f3920095adc0ef",
+    "latex_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "body_sha256": "288d9a52cc616a5942c38059ff14add48e2d3de24d7168ff33a2c8c5db259d9d",
+    "converter_version": 1,
+    "markdown_sha256": "d2163589429863aa03230b7893d4de9047374762830d1d0c1c09f785a9854b88"
+  },
+  "fetched_at": "2026-09-14T15:16:55+00:00",
+  "source_snapshot_sha256": "4a1e0838e9155fbca6ff02e163842d73405a3cc3220514e28f539ad0338c4028",
+  "images": {},
+  "local_only": true
+}

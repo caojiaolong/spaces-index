@@ -1,0 +1,17 @@
+{
+  "metadata": {
+    "id": "8847",
+    "title": "CoSENT（一）：比Sentence-BERT更有效的句向量方案",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/8847",
+    "date": "2022-01-06",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "fetched_at": "2026-09-14T13:02:10+00:00",
+  "source_snapshot_sha256": "8b65ad17f8fb5a7db5324f200dce8afcb1b5e903da34fa1e8b77982978bcb450",
+  "validators": {
+    "etag": null,
+    "last_modified": null
+  }
+}

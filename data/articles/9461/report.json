@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "9461",
+    "title": "测试函数法推导连续性方程和Fokker-Planck方程",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/9461",
+    "date": "2023-02-11",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 67,
+    "display_formula_count": 23,
+    "image_count": 0,
+    "heading_count": 4,
+    "code_block_count": 0,
+    "source_text_sha256": "6cd05275efee96f7615b47945678df87207d23f422f18a36a08d38816051425b",
+    "output_text_sha256": "6cd05275efee96f7615b47945678df87207d23f422f18a36a08d38816051425b",
+    "latex_sha256": "1bc264f067bb4fbf90d832396391e2fcb35d44c627e11aceb2500b02c7c50809",
+    "body_sha256": "6a9b36f80590f53a7c46cb8c6bc8e89d528e70459ab93e41a1fe8a50b707818a",
+    "converter_version": 1,
+    "markdown_sha256": "eebec5dd2fe8e027a22769b595a3efa0ffb67eb7ae01d7d679b61b6ba3ae0a09"
+  },
+  "fetched_at": "2026-09-14T12:55:48+00:00",
+  "source_snapshot_sha256": "c316378ba5392ede89b9718460d9251bf0aaf4ed900df8899dba7984386993c5",
+  "images": {},
+  "local_only": true
+}

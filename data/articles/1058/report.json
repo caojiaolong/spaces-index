@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "1058",
+    "title": "意犹未尽——继续光学曲线",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/1058",
+    "date": "2010-11-13",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 19,
+    "display_formula_count": 5,
+    "image_count": 2,
+    "heading_count": 0,
+    "code_block_count": 0,
+    "source_text_sha256": "817b9cbb6f08e330225393872c778fa9649ac7c6fb9cd9e9a2acee28a815eefb",
+    "output_text_sha256": "817b9cbb6f08e330225393872c778fa9649ac7c6fb9cd9e9a2acee28a815eefb",
+    "latex_sha256": "3e341327b588b67d9c381b9ecba7ac7ddd70f5bde5165671f50ce96c63876077",
+    "body_sha256": "bf6ec0e30a1e6dbf1c3debf6c6e606a38184160c772f7c727d54043d69ca2325",
+    "converter_version": 1,
+    "markdown_sha256": "3fba8d0ce217452fd2c1f158aca9f8ee5ba6ecfdb9c9d42a4aee875c0ddedbdb"
+  },
+  "fetched_at": "2026-09-14T14:27:17+00:00",
+  "source_snapshot_sha256": "6b6336a7b85fda0ede7b2c05b222da885b7847fd36270b757684fdfa0be1eb42",
+  "images": {},
+  "local_only": true
+}

@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "11736",
+    "title": "如何更科学地估计矩阵的谱范数？",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/11736",
+    "date": "2026-05-04",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 121,
+    "display_formula_count": 15,
+    "image_count": 0,
+    "heading_count": 10,
+    "code_block_count": 3,
+    "source_text_sha256": "319bbd27a8a2d56f0d7bd2f278c7e49fa308eed81e82a12f59f5b529e842557c",
+    "output_text_sha256": "319bbd27a8a2d56f0d7bd2f278c7e49fa308eed81e82a12f59f5b529e842557c",
+    "latex_sha256": "846e41f2b00f0967edd1684d9c8ece506c8ea5baf4a5ee2e7f6bf0622a367cb9",
+    "body_sha256": "ac9afcbcbac7b1d98cd682f62b628b67444fe41ed461144ed82f6b1ab62221ea",
+    "converter_version": 1,
+    "markdown_sha256": "2f797025cbb8365d6768d735c25919fa855d13da9e5f11cf31fba4c0720ba7cf"
+  },
+  "fetched_at": "2026-09-14T12:35:53+00:00",
+  "source_snapshot_sha256": "d5a8e8b9998185bd923eeb2f8d6ca419cf28d91511950a5b0aceebe65bc39be9",
+  "images": {},
+  "local_only": true
+}

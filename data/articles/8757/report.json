@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "8757",
+    "title": "WGAN新方案：通过梯度归一化来实现L约束",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/8757",
+    "date": "2021-11-15",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 32,
+    "display_formula_count": 4,
+    "image_count": 3,
+    "heading_count": 5,
+    "code_block_count": 0,
+    "source_text_sha256": "8a138ff86c41395b32363dd4d95d630b4138e0bbe6a754b87f86df254d180b93",
+    "output_text_sha256": "8a138ff86c41395b32363dd4d95d630b4138e0bbe6a754b87f86df254d180b93",
+    "latex_sha256": "21753b754fc196b64bb1f1936fbb605148def826af9e7a53b6c9a0df310b143a",
+    "body_sha256": "5f0a6cea07f2a7e15583bea5bc28c51d902c8d3add12696de842773e09584be9",
+    "converter_version": 1,
+    "markdown_sha256": "5950b39d4fc1e26efff8c330af5b576e0fa19f04357b2a7c7d302ab8e640e53c"
+  },
+  "fetched_at": "2026-09-14T13:03:15+00:00",
+  "source_snapshot_sha256": "e8765ca654c43b2c75a4aa18a6a4d3a4583a283d432ec2a4dc6b4f63d9a03abb",
+  "images": {},
+  "local_only": true
+}

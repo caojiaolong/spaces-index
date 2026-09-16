@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "3922",
+    "title": "【中文分词系列】 3. 字标注法与HMM模型",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/3922",
+    "date": "2016-08-19",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 34,
+    "display_formula_count": 8,
+    "image_count": 0,
+    "heading_count": 2,
+    "code_block_count": 1,
+    "source_text_sha256": "07f3bed5ab0d7e448bad5e66f83296d55381271d1bc99f1a4dfcf52ceae206c1",
+    "output_text_sha256": "07f3bed5ab0d7e448bad5e66f83296d55381271d1bc99f1a4dfcf52ceae206c1",
+    "latex_sha256": "ad45882e666b1b8188a06389c9b8c661edd23a8efec3853780f0b724e0b45059",
+    "body_sha256": "9ab5944cf7e6a5ebfb9276aca36cdc29aa5ccf46899294247623e377da386b13",
+    "converter_version": 1,
+    "markdown_sha256": "158ba20fdf4660a71aefef416dbea63d03aa13029438f62fbedaed47bc3d376f"
+  },
+  "fetched_at": "2026-09-14T13:38:32+00:00",
+  "source_snapshot_sha256": "406ad93b6682aada738c71096bead138f878af63f1cde3f72031bde64a818b36",
+  "images": {},
+  "local_only": true
+}

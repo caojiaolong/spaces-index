@@ -1,0 +1,17 @@
+{
+  "metadata": {
+    "id": "6377",
+    "title": "恒等式 det(exp(A)) = exp(Tr(A)) 赏析",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/6377",
+    "date": "2019-02-18",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "fetched_at": "2026-09-14T13:21:36+00:00",
+  "source_snapshot_sha256": "349f143feed29b3509f3e055f3cabc860e3f0aec568b41f292275d34d3a1183b",
+  "validators": {
+    "etag": null,
+    "last_modified": null
+  }
+}

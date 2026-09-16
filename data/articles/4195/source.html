@@ -1,0 +1,201 @@
+<div class="PostContent" id="PostContent">
+<p>之前已经写过用LSTM来做分词的方案了，今天再来一篇用CNN的，准确来说是FCN，全卷积网络。其实这个模型的主要目的并非研究中文分词，而是练习tensorflow。从<font color="red">两年前就开始用Keras</font>了，可以说对它比较熟了，也渐渐发现了它的一些不足，比如处理变长输入时不方便、加入自定义的约束比较困难等，所以干脆试试原生的tensorflow了，试了之后发现其实也不复杂。嗯，都是python，能有多复杂。<font color="red">本文就是练习一下如何用tensorflow处理不定长输入任务，以中文分词为例，并在最后加入了<strong>硬解码</strong>，<strong>将深度学习与词典分词结合了起来</strong></font>。</p><h2 id="CNN">CNN</h2><p>另外，就是关于FCN的。放到语言任务中看，（一维）卷积其实就是ngram模型，从这个角度来看其实CNN远比RNN来得自然，RNN好像就是为序列任务精心设计的，而CNN则是传统ngram模型的一个延伸。另外不管CNN和RNN都有权值共享，看上去只是为了降低运算量的一个折中选择，但事实上里边大有道理。<strong><font color="red">CNN中的权值共享是平移不变性的必然结果</font></strong>，而不是仅仅是降低运算量的一个选择，试想一下，将一幅图像平移一点点，或者在一个句子前插入一个无意义的空格（导致后面所有字都向后平移了一位），这样应该给出一个相似甚至相同的结果，而这要求卷积必然是权值共享的，即权值不能跟位置有关系。</p><p>RNN类模型，尤其是LSTM，一直语言任务的霸主，但最近引入门机制的卷积GCNN据说在语言模型上已经超过了LSTM（一点点），这说明哪怕在语言任务中CNN还是很有潜力的。LSTM的优势就是能够捕捉长距离的信息，但事实上语言任务中真正长距离的任务不多，哪怕是语言模型，事实上后一个字的概率只取决于前面几个字罢了，不用取决于前面的全文，而CNN只要层数多一点，卷积核大一点，其实也能达到这个效果了。但CNN还有一个特别的优势：CNN比RNN快多了。用显卡加速的话，显卡最擅长的就是作卷积了，因为显卡本身就是用来处理图像的，GPU对CNN的加速要比对RNN的加速明显多了...</p><p><font color="red">以上内容，就使得我更偏爱CNN，就像facebook那个团队一样（那个GCNN就是他们搞出来的）。全卷积网络则是从头到尾都使用卷积，可以应对不定长输入，而输入不定长、但是输入输出长度相等的任务就更适合了。</font></p><h2 id="语料">语料</h2><p>本文的任务是用FCN做一个中文分词系统，思路还是sbme字标注法，不清楚的读者可以看回前几篇文章，有监督训练，因此需要选语料。比较好的语料有两个，一是2014年人民日报语料，二是<a href="http://sighan.cs.uchicago.edu/bakeoff2005/" target="_blank">backoff2005</a>比赛中的语料，后者还带有评测系统。我在两个语料中都实践过了。</p><p>如果用2014人民日报语料，那么预处理代码为</p><pre class="line-numbers"><code class="language-python">import glob
+import re
+from tqdm import tqdm
+from collections import Counter, defaultdict
+import json
+import numpy as np
+import os
+
+txt_names = glob.glob('./2014/*/*.txt')
+
+pure_texts = []
+pure_tags = []
+stops = u'，。！？；、：,\.!\?;:\n'
+for name in tqdm(iter(txt_names)):
+    txt = open(name).read().decode('utf-8', 'ignore')
+    txt = re.sub('/[a-z\d]*|\[|\]', '', txt)
+    txt = [i.strip(' ') for i in re.split('['+stops+']', txt) if i.strip(' ')]
+    for t in txt:
+        pure_texts.append('')
+        pure_tags.append('')
+        for w in re.split(' +', t):
+            pure_texts[-1] += w
+            if len(w) == 1:
+                pure_tags[-1] += 's'
+            else:
+                pure_tags[-1] += 'b' + 'm'*(len(w)-2) + 'e'</code></pre><p>如果用backoff2005语料，那么预处理代码为</p><pre class="line-numbers"><code class="language-python">import re
+from tqdm import tqdm
+from collections import Counter, defaultdict
+import json
+import numpy as np
+import os
+
+pure_texts = []
+pure_tags = []
+stops = u'，。！？；、：,\.!\?;:\n'
+for txt in tqdm(open('msr_training.txt')):
+    txt = [i.strip(' ').decode('gbk', 'ignore') for i in re.split('['+stops+']', txt) if i.strip(' ')]
+    for t in txt:
+        pure_texts.append('')
+        pure_tags.append('')
+        for w in re.split(' +', t):
+            pure_texts[-1] += w
+            if len(w) == 1:
+                pure_tags[-1] += 's'
+            else:
+                pure_tags[-1] += 'b' + 'm'*(len(w)-2) + 'e'
+</code></pre><p>然后将语料按照字符串长度排序，这是因为<font color="red">tensorflow虽然支持变长输入，但是在训练的时候，每个batch内的长度要想等，因此需要做一个简单的聚类（按长度聚类）</font>。接着得到一个映射表，这都是很常规的：</p><pre class="line-numbers"><code class="language-python">ls = [len(i) for i in pure_texts]
+ls = np.argsort(ls)[::-1]
+pure_texts = [pure_texts[i] for i in ls]
+pure_tags = [pure_tags[i] for i in ls]
+
+min_count = 2
+word_count = Counter(''.join(pure_texts))
+word_count = Counter({i:j for i,j in word_count.iteritems() if j &gt;= min_count})
+word2id = defaultdict(int)
+id_here = 0
+for i in word_count.most_common():
+    id_here += 1
+    word2id[i[0]] = id_here
+
+json.dump(word2id, open('word2id.json', 'w'))
+vocabulary_size = len(word2id) + 1
+tag2vec = {'s':[1, 0, 0, 0], 'b':[0, 1, 0, 0], 'm':[0, 0, 1, 0], 'e':[0, 0, 0, 1]}</code></pre><p>做一个生成器，用来生成每个batch的训练样本。要注意的是，这里的batch_size只是一个上限，因为要求每个batch内的句子长度都要相同，这样子并非每个batch的size都能达到1024。</p><pre class="line-numbers"><code class="language-python">batch_size = 1024
+
+def data():
+    l = len(pure_texts[0])
+    x = []
+    y = []
+    for i in range(len(pure_texts)):
+        if len(pure_texts[i]) != l or len(x) == batch_size:
+            yield x,y
+            x = []
+            y = []
+            l = len(pure_texts[i])
+        x.append([word2id[j] for j in pure_texts[i]])
+        y.append([tag2vec[j] for j in pure_tags[i]])
+</code></pre><h2 id="模型">模型</h2><p>到了搭建模型的时候了，其实很简单，就是用了三层卷积叠起来，不指定输入长度，就设为None，设置padding='SAME'使得输入输出同样长度（基于这个目的，也不用池化），中间用relu激活，最后用softmax激活，用交叉熵作为损失函数，就完了。用tensorlfow的话，得自己写好每个过程，但其实也没多复杂。</p><pre class="line-numbers"><code class="language-python">import tensorflow as tf
+
+embedding_size = 128
+keep_prob = tf.placeholder(tf.float32)
+
+embeddings = tf.Variable(tf.random_uniform([vocabulary_size, embedding_size], -1.0, 1.0))
+x = tf.placeholder(tf.int32, shape=[None, None])
+embedded = tf.nn.embedding_lookup(embeddings, x)
+embedded_dropout = tf.nn.dropout(embedded, keep_prob)
+W_conv1 = tf.Variable(tf.random_uniform([3, embedding_size, embedding_size], -1.0, 1.0))
+b_conv1 = tf.Variable(tf.random_uniform([embedding_size], -1.0, 1.0))
+y_conv1 = tf.nn.relu(tf.nn.conv1d(embedded_dropout, W_conv1, stride=1, padding='SAME') + b_conv1)
+W_conv2 = tf.Variable(tf.random_uniform([3, embedding_size, embedding_size/4], -1.0, 1.0))
+b_conv2 = tf.Variable(tf.random_uniform([embedding_size/4], -1.0, 1.0))
+y_conv2 = tf.nn.relu(tf.nn.conv1d(y_conv1, W_conv2, stride=1, padding='SAME') + b_conv2)
+W_conv3 = tf.Variable(tf.random_uniform([3, embedding_size/4, 4], -1.0, 1.0))
+b_conv3 = tf.Variable(tf.random_uniform([4], -1.0, 1.0))
+y = tf.nn.softmax(tf.nn.conv1d(y_conv2, W_conv3, stride=1, padding='SAME') + b_conv3)
+
+y_ = tf.placeholder(tf.float32, shape=[None, None, 4])
+cross_entropy = - tf.reduce_sum(y_ * tf.log(y + 1e-20))
+train_step = tf.train.AdamOptimizer().minimize(cross_entropy)
+correct_prediction = tf.equal(tf.argmax(y, 2), tf.argmax(y_, 2))
+accuracy = tf.reduce_mean(tf.cast(correct_prediction, tf.float32))
+</code></pre><p>以上就是模型的全部了，然后训练。<strong><font color="red">再次给大家推荐一下，用tqdm来辅助显示进度（实时显示进度、速度、精度），简直是绝配啊</font></strong>。</p><pre class="line-numbers"><code class="language-python">init = tf.global_variables_initializer()
+sess = tf.Session()
+sess.run(init)
+nb_epoch = 300
+
+for i in range(nb_epoch):
+    d = tqdm(data(), desc=u'Epcho %s, Accuracy: 0.0'%(i+1))
+    k = 0
+    accs = []
+    for xxx,yyy in d:
+        k += 1
+        if k%100 == 0:
+            acc = sess.run(accuracy, feed_dict={x: xxx, y_: yyy, keep_prob:1})
+            accs.append(acc)
+            d.set_description('Epcho %s, Accuracy: %s'%(i+1, acc))
+        sess.run(train_step, feed_dict={x: xxx, y_: yyy, keep_prob:0.5})
+    print u'Epcho %s Mean Accuracy: %s'%(i+1, np.mean(accs))
+
+saver = tf.train.Saver()
+saver.save(sess, './ckpt/cw.ckpt')
+</code></pre><p>训练过程输出（这是用macbook的cpu训练的，用gtx1060加速只需要3s一个epcho）</p><blockquote>Epcho 1, Accuracy: 0.717359: 347it [01:06,  5.21it/s]<br/>
+Epcho 1 Mean Accuracy: 0.56555<br/>
+Epcho 2, Accuracy: 0.759943: 347it [01:08,  8.62it/s]<br/>
+Epcho 2 Mean Accuracy: 0.74762<br/>
+Epcho 3, Accuracy: 0.598692: 347it [01:08,  5.08it/s]<br/>
+Epcho 3 Mean Accuracy: 0.693505<br/>
+Epcho 4, Accuracy: 0.634529: 347it [01:07,  5.14it/s]<br/>
+Epcho 4 Mean Accuracy: 0.613064<br/>
+Epcho 5, Accuracy: 0.659949: 347it [01:07,  5.16it/s]<br/>
+Epcho 5 Mean Accuracy: 0.643388<br/>
+Epcho 6, Accuracy: 0.709635: 347it [01:07,  5.14it/s]<br/>
+Epcho 6 Mean Accuracy: 0.679544<br/>
+Epcho 7, Accuracy: 0.742839: 271it [00:42,  2.45it/s]<br/>
+...</blockquote><h2 id="硬解码">硬解码</h2><p>训练完之后，剩下的就是预测、标注、分词了，这都是很基本的，没什么好说。<strong><font color="red">最后可以在backoff2005的评测集上达到93%的准确率（backoff2005提供的score脚本算出的准确率），不算最优，但够了，主要还是下面的调整。</font></strong></p><p>但众所周知，基于字标注法的分词，需要标签语料训练，训练完之后，就适应那一批语料了，比较难拓展到新领域；又或者说，如果发现有分错的地方，则没法很快调整过来。而基于词表的方法则容易调整，只需要增减词典或者调整词频即可。这样可以考虑怎么将深度学习与词典结合起来，这里简单地在最后的解码阶段加入<strong><font color="red">硬解码</font></strong>（人工干预解码）。</p><p><font color="red">模型预测可以得到各个标签的概率，接下来是用viterbi算法得到最优路径，但是在viterbi之前，可以利用词表对各个标签的概率进行调整。这里的做法是：添加一个add_dict.txt文件，每一行是一个词，包括词语和倍数，这个倍数就是要将相应的标签概率扩大的倍数，比如词表中指定词语“科学空间,10”，而对“科学空间挺好”进行分词时，先用模型得到这六个字的标签概率，然后查找发现“科学空间”这个词在这个句子里边，所以将第一个字为s的概率乘以10，将第二、三个字为m的概率乘以10，将第4个字为e的概率乘以10（不用归一化，因为只看相对值就行了），同样地，如果某些地方切漏了（该切的没有切），也可以加入到词表中，然后设置小于1的倍数就行了。</font></p><p>效果：</p><blockquote><p>加入词典前：扫描 二维码 ， 关注 微 信号 。</p><p>（加入词典：微信号,10）加入词典后：扫描 二维码 ， 关注 微信号 。</p></blockquote><p>当然，这只是一个经验方法。后面部分代码如下，由于这里只是演示效果，用了正则表达式遍历查找，如果追求效率，应当用AC自动机等多模式匹配工具：</p><pre class="line-numbers"><code class="language-python">trans_proba = {'ss':1, 'sb':1, 'bm':1, 'be':1, 'mm':1, 'me':1, 'es':1, 'eb':1}
+trans_proba = {i:np.log(j) for i,j in trans_proba.iteritems()}
+
+add_dict = {}
+if os.path.exists('add_dict.txt'):
+    with open('add_dict.txt') as f:
+        for l in f:
+            a,b = l.split(',')
+            add_dict[a.decode('utf-8')] = np.log(float(b))
+    
+
+def viterbi(nodes):
+    paths = nodes[0]
+    for l in range(1,len(nodes)):
+        paths_ = paths.copy()
+        paths = {}
+        for i in nodes[l].keys():
+            nows = {}
+            for j in paths_.keys():
+                if j[-1]+i in trans_proba.keys():
+                    nows[j+i]= paths_[j]+nodes[l][i]+trans_proba[j[-1]+i]
+            k = np.argmax(nows.values())
+            paths[nows.keys()[k]] = nows.values()[k]
+    return paths.keys()[np.argmax(paths.values())]
+
+def simple_cut(s):
+    if s:
+        nodes = [dict(zip('sbme', np.log(k)))
+                 for k in sess.run(y, feed_dict={x:[[word2id[i] for i in s]], keep_prob:1})[0]
+                ]
+        for w,f in add_dict.iteritems():
+            for i in re.finditer(w, s):
+                if len(w) == 1:
+                    nodes[i.start()]['s'] += f
+                else:
+                    nodes[i.start()]['b'] += f
+                    nodes[i.end()-1]['e'] += f
+                    for j in range(i.start()+1, i.end()-1):
+                        nodes[j]['m'] += f
+        tags = viterbi(nodes)
+        words = [s[0]]
+        for i in range(1, len(s)):
+            if tags[i] in ['s', 'b']:
+                words.append(s[i])
+            else:
+                words[-1] += s[i]
+        return words
+    else:
+        return []
+
+def cut_words(s):
+    i = 0
+    r = []
+    for j in re.finditer('['+stops+' ]'+'|[a-zA-Z\d]+', s):
+        r.extend(simple_cut(s[i:j.start()]))
+        r.append(s[j.start():j.end()])
+        i = j.end()
+    if i != len(s):
+        r.extend(simple_cut(s[i:]))
+    return r
+</code></pre>
+
+
+
+
+
+</div>

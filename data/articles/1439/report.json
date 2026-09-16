@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "1439",
+    "title": "收谷问题(1)",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/1439",
+    "date": "2011-07-25",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 13,
+    "display_formula_count": 6,
+    "image_count": 1,
+    "heading_count": 0,
+    "code_block_count": 0,
+    "source_text_sha256": "3d4fe892601ccf848a9d7f96693d75036aeac2f3d1542105ba371d7efdf594c3",
+    "output_text_sha256": "3d4fe892601ccf848a9d7f96693d75036aeac2f3d1542105ba371d7efdf594c3",
+    "latex_sha256": "6d84c229d82725d6b5d24e6f3a733dc849eba93d9b938c3ea4e3299744a5c86a",
+    "body_sha256": "1823651aa873d09e9b228424139829be02750e6c129bd078c1d72ce7295dda61",
+    "converter_version": 1,
+    "markdown_sha256": "0b10b09ca888ceee7e4f4da9af063ba53d57e0a805a1a9fcd8608cbf9ab9cb85"
+  },
+  "fetched_at": "2026-09-14T14:18:41+00:00",
+  "source_snapshot_sha256": "e989e81c35d9329a5de04b43283c06becabe491e992d3ed22fcb135ccb00f073",
+  "images": {},
+  "local_only": true
+}

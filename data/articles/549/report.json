@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "549",
+    "title": "《方程与宇宙》:二体问题的来来去去(一)",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/549",
+    "date": "2010-03-20",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 61,
+    "display_formula_count": 24,
+    "image_count": 1,
+    "heading_count": 0,
+    "code_block_count": 0,
+    "source_text_sha256": "a5d19c987e558a118d518bd1c9001ebe46c7d3f496e63919b702769ba1355074",
+    "output_text_sha256": "a5d19c987e558a118d518bd1c9001ebe46c7d3f496e63919b702769ba1355074",
+    "latex_sha256": "43b49f823789700817634ac6c2c98fd42efe97d1b404df0e969337fdf51db53d",
+    "body_sha256": "099791043c3ad640c6efd46c51093f0504b2d0e74d85a9443561e68a70ed6127",
+    "converter_version": 1,
+    "markdown_sha256": "9aabed192d9babfa6d9ecd618a30307e739c5cf0c4334bf9a85f1f6628614ca7"
+  },
+  "fetched_at": "2026-09-14T14:39:08+00:00",
+  "source_snapshot_sha256": "ad2cfd5f0048b28395da74598fa7bc28abe5d76930ce4fd096e415917c5ccc69",
+  "images": {},
+  "local_only": true
+}

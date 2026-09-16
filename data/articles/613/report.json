@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "613",
+    "title": "【奥赛之行】非同一般的天文奥赛",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/613",
+    "date": "2010-04-18",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 0,
+    "display_formula_count": 0,
+    "image_count": 1,
+    "heading_count": 0,
+    "code_block_count": 0,
+    "source_text_sha256": "1c9c0071beb14ee48f659d7a5324a1198529675eeab0946492dd07a5b203ce5f",
+    "output_text_sha256": "1c9c0071beb14ee48f659d7a5324a1198529675eeab0946492dd07a5b203ce5f",
+    "latex_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "body_sha256": "85f8e510edb9d04a69f0cea1055e1329634bd6f1c2b775b493219993519af8c6",
+    "converter_version": 1,
+    "markdown_sha256": "7e0bb8cc16fb21375e56401c993313ac894105f760dd78ab18d53fc5d682858a"
+  },
+  "fetched_at": "2026-09-14T14:37:42+00:00",
+  "source_snapshot_sha256": "fea19778659987cc404dcbd482bd32bd40481ea82787bf458194aa938cef9134",
+  "images": {},
+  "local_only": true
+}

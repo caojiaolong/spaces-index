@@ -1,0 +1,49 @@
+<div class="PostContent" id="PostContent">
+<h3 id="测地线">测地线</h3><p>黎曼度量应该是不难理解的，在微分几何的教材中，我们就已经学习过曲面的“第一基本形式”了，事实上两者是同样的东西，只不过看待问题的角度不同，微分几何是把曲面看成是三维空间中的二维子集，而黎曼几何则是从二维曲面本身内蕴地研究几何问题。</p><p>几何关心什么问题呢？事实上，<font color="red">几何关心的是与变换无关的“<strong>客观实体</strong>”（或者说是在变换之下不变的东西），这也是几何的定义。</font>根据Klein提出的《埃尔朗根纲领》，几何就是研究在某种变换（群）下的不变性质的学科。如果把变换局限为刚性变换（平移、旋转、反射），那么就是欧式几何；如果变换为一般的线性变换，那就是仿射几何。而黎曼几何关心的是与一切坐标都无关的客观实体。比如说，我有一个向量，方向和大小都确定了，在直角坐标系是$(1, 1)$，在极坐标系是$(\sqrt{2}, \pi/4)$，虽然两个坐标系下的分量不同，但它们都是指代同一个向量。也就是说向量本身是客观存在的实体，跟所使用的坐标无关。从代数层面看，就是只要能够通过某种坐标变换相互得到的，我们就认为它们是同一个东西。</p><p>因此，在学习黎曼几何时，往“客观实体”方向思考，总是有益的。</p><p></p><div class="pic-container" style="float:right; margin: 5px auto 2px 1px"><div style="display: inline-block; background-color: #fff"><div class="typecho-caption aligncenter" style="max-width: 300px; margin: 0 0 0 8px"><div style="margin: 5px"><a href="/usr/uploads/2016/10/426850218.svg" target="_blank" title="点击查看原图"><img alt="平面上的测地线" src="/usr/uploads/2016/10/426850218.svg" style="max-width: 100%"/></a></div><p>平面上的测地线</p></div></div></div><p>有了度规，可以很自然地引入“测地线”这一实体。狭义来看，它就是两点间的最短线——是平直空间的直线段概念的推广（实际的测地线不一定是最短的，但我们先不纠结细节，而且这不妨碍我们理解它，因为测地线至少是局部最短的）。不难想到，只要两点确定了，那么不管使用什么坐标，两点间的最短线就已经确定了，因此这显然是一个客观实体。有一个简单的类比，就是不管怎么坐标变换，一个函数$f(x)$的图像极值点总是确定的——不管你变还是不变，它就在那儿，不偏不倚。</p><p></p><div class="pic-container"><div class="typecho-caption aligncenter"><div style="margin: 5px"><a href="/usr/uploads/2016/10/3280378437.svg" target="_blank" title="点击查看原图"><img alt="球面上的测地线" src="/usr/uploads/2016/10/3280378437.svg" style="max-height: 140px"/></a></div><p class="typecho-caption-text">球面上的测地线</p></div><div class="typecho-caption aligncenter"><div style="margin: 5px"><a href="/usr/uploads/2016/10/3024304438.svg" target="_blank" title="点击查看原图"><img alt="等温面上的测地线" src="/usr/uploads/2016/10/3024304438.svg" style="max-height: 140px"/></a></div><p class="typecho-caption-text">等温面上的测地线</p></div></div><p>从数学看，两点$\boldsymbol{x}^1$和$\boldsymbol{x}^2$之间的距离，自然就是<br/>
+$$s = \int_{\boldsymbol{x}^1}^{\boldsymbol{x}^2} ds = \int_{\boldsymbol{x}^1}^{\boldsymbol{x}^2} \sqrt{g_{\mu\nu} dx^{\mu} dx^{\nu}} \tag{16} $$<br/>
+因此，测地线就是从过$\boldsymbol{x}^1$和$\boldsymbol{x}^2$这两点的所有函数中，找出使得上述积分取值最小的那个函数，这属于变分的问题。很遗憾的是，很多数学系的学生都没有学习过变分法，但我依旧使用这个方案，因为这是一种相当自然的思路，后面我们也会看到，它也提供了一个简化的计算联络的方案。</p><p>其实变分的思路很简单，跟求微分差不多，不同的是多了一步分部积分法。我们函数求极值是对函数求导，然后让导函数等于0，而这种泛函极值，就是对泛函求变分，然后让变分等于0。（参考本博客的<a href="/search/%E8%87%AA%E7%84%B6%E6%9E%81%E5%80%BC/" target="_blank">《自然极值》系列</a>）<br/>
+$$\begin{aligned}<br/>
+&amp;\delta s\\<br/>
+=&amp; \int_{\boldsymbol{x}^1}^{\boldsymbol{x}^2} \delta\sqrt{g_{\mu\nu} dx^{\mu} dx^{\nu}}\\<br/>
+=&amp; \int_{\boldsymbol{x}^1}^{\boldsymbol{x}^2} \frac{\delta(g_{\mu\nu} dx^{\mu} dx^{\nu})}{2ds}\\<br/>
+=&amp; \int_{\boldsymbol{x}^1}^{\boldsymbol{x}^2} \left(\frac{1}{2}\frac{\partial g_{\mu\nu}}{\partial x^{\alpha}}\frac{dx^{\mu} }{ds} dx^{\nu} \delta x^{\alpha} + g_{\mu\nu}\frac{dx^{\mu} }{ds} d \delta x^{\nu}\right)\\<br/>
+=&amp; \int_{\boldsymbol{x}^1}^{\boldsymbol{x}^2} \frac{1}{2}\frac{\partial g_{\mu\nu}}{\partial x^{\alpha}}\frac{dx^{\mu} }{ds} dx^{\nu} \delta x^{\alpha} + \left.g_{\mu\nu}\frac{dx^{\mu} }{ds} \delta x^{\nu}\right|_{\boldsymbol{x}^1}^{\boldsymbol{x}^2} - \int_{\boldsymbol{x}^1}^{\boldsymbol{x}^2} d\left(g_{\mu\nu}\frac{dx^{\mu} }{ds}\right) \delta x^{\nu}\\<br/>
+=&amp; \int_{\boldsymbol{x}^1}^{\boldsymbol{x}^2} \frac{1}{2}\frac{\partial g_{\mu\nu}}{\partial x^{\alpha}}\frac{dx^{\mu} }{ds} dx^{\nu} \delta x^{\alpha} - \int_{\boldsymbol{x}^1}^{\boldsymbol{x}^2} d\left(g_{\mu\nu}\frac{dx^{\mu} }{ds}\right) \delta x^{\nu}\\<br/>
+=&amp; \int_{\boldsymbol{x}^1}^{\boldsymbol{x}^2} \left[\frac{1}{2}\frac{\partial g_{\mu\nu}}{\partial x^{\alpha}}\frac{dx^{\mu} }{ds} dx^{\nu} \delta x^{\alpha} - \frac{\partial g_{\mu\nu}}{\partial x^{\alpha}}\frac{dx^{\mu} }{ds} dx^{\alpha}\delta x^{\nu} - g_{\mu\nu}d\left(\frac{d x^{\mu} }{ds}\right)\delta x^{\nu}\right]\\<br/>
+=&amp; \int_{\boldsymbol{x}^1}^{\boldsymbol{x}^2} \left[\frac{1}{2}\frac{\partial g_{\mu\nu}}{\partial x^{\alpha}}\frac{dx^{\mu} }{ds} dx^{\nu} - \frac{\partial g_{\mu\alpha}}{\partial x^{\nu}}\frac{dx^{\mu} }{ds} dx^{\nu} - g_{\mu\alpha}d\left(\frac{d x^{\mu} }{ds}\right)\right]\delta x^{\alpha}<br/>
+\end{aligned} \tag{17} $$<br/>
+其中分部积分出来的那一项消失了，是因为我们已经说了“从过$\boldsymbol{x}^1$和$\boldsymbol{x}^2$这两点的所有函数中，找出使得上述积分取值最小的那个函数”，这样子在边界处有$\delta x^{\nu}(\boldsymbol{x}^1)=\delta x^{\nu}(\boldsymbol{x}^2)=0$。最后因为$\delta x^{\alpha}$是任意的，因此要使得$\delta s=0$，必然有<br/>
+$$\frac{1}{2}\frac{\partial g_{\mu\nu}}{\partial x^{\alpha}}\frac{dx^{\mu} }{ds} dx^{\nu} - \frac{\partial g_{\mu\alpha}}{\partial x^{\nu}}\frac{dx^{\mu} }{ds} dx^{\nu} - g_{\mu\alpha}d\left(\frac{d x^{\mu} }{ds}\right)=0 \tag{18} $$<br/>
+稍加整理得<br/>
+$$\frac{d^2 x^{\mu} }{ds^2}+\Gamma_{\alpha\beta}^{\mu} \frac{d x^{\alpha} }{ds}\frac{d x^{\beta} }{ds}=0 \tag{19} $$<br/>
+其中<br/>
+$$\Gamma_{\alpha\beta}^{\mu}=\frac{1}{2}g^{\mu\nu}\left(\frac{\partial g_{\alpha\nu}}{\partial x^{\beta}}+\frac{\partial g_{\nu\beta}}{\partial x^{\alpha}}-\frac{\partial g_{\alpha\beta}}{\partial x^{\nu}}\right) \tag{20} $$<br/>
+称为（第二类）克里斯托费尔（Christoffel）符号，也叫联络系数，我们很快就能够弄懂这个名词的意思。而$g^{\mu\nu}$是$g_{\mu\nu}$作为矩阵的逆矩阵，即<br/>
+$$g^{\mu\alpha}g_{\alpha\nu}=\delta_{\nu}^{\mu} \tag{21} $$</p><p>此外，对$s$的变分，等价于直接以$s$为参数，对下述函数$S$的变分（参考本博客<a href="/archives/2040/" target="_blank">《变分法的一个技巧及其“误用”》</a>）：<br/>
+$$S=\frac{1}{2}\int g_{\mu\nu} \frac{dx^{\mu}}{ds}\frac{dx^{\nu}}{ds}ds \tag{22} $$<br/>
+因为$S$没有根号，形式较为简单，所以可以直接代入欧拉-拉格朗日方程中计算，相对于直接变分原来的$s$，有时候更方便。</p><h3 id="有力的计算工具">有力的计算工具</h3><p>式$(20)$已经给出了联络系数$\Gamma_{\alpha\beta}^{\mu}$的计算方式，它涉及到了偏导数、逆矩阵的计算、指标的求和，是一个很复杂的项。读者可以尝试计算它，就能够感受到其中的痛苦之处。然而，有时候我们经过很复杂的计算，最终会发现$\Gamma_{\alpha\beta}^{\mu}$的很多项都为0，也就是说，计算过程很复杂，但计算结果很简单。这就促使我们寻求一种简化的技巧。</p><p>事实上，我们从变分途径导出了测地线方程，而这种途径本身就是一个计算$\Gamma_{\alpha\beta}^{\mu}$的有力工具，著名的引力“圣经”、MTW的《Gravitation》中第14章“曲率的计算”有相关的话题。（前提是结果很简单，如果结果本身很复杂，那么就没有什么化简技巧了）。比如考虑球坐标情形<br/>
+$$ds^2 = dr^2 + r^2 d\theta^2 + r^2 \sin^2\theta d\phi^2, \quad x^1 = r, x^2 = \theta, x^3 = \phi \tag{23} $$<br/>
+它等价于变分<br/>
+$$s = \int \frac{1}{2}\left[\left(\frac{dr}{ds}\right)^2 + r^2 \left(\frac{d\theta}{ds}\right)^2 + r^2 \sin^2\theta \left(\frac{d\phi}{ds}\right)^2\right] ds \tag{24} $$<br/>
+利用欧拉-拉格朗日方程，很快写出<br/>
+$$\left\{\begin{aligned}&amp;\frac{d^2 r}{ds^2}=r \left(\frac{d\theta}{ds}\right)^2 + r \sin^2\theta \left(\frac{d\phi}{ds}\right)^2\\<br/>
+&amp;\frac{d}{ds}\left(r^2 \frac{d\theta}{ds}\right)=r^2 \sin\theta \cos\theta \left(\frac{d\phi}{ds}\right)^2\\<br/>
+&amp;\frac{d}{ds}\left(r^2 \sin^2\theta \frac{d\phi}{ds}\right) = 0<br/>
+\end{aligned}\right. \tag{25} $$<br/>
+整理得<br/>
+$$\left\{\begin{aligned}&amp;\frac{d^2 r}{ds^2}=r \left(\frac{d\theta}{ds}\right)^2 + r \sin^2\theta \left(\frac{d\phi}{ds}\right)^2\\<br/>
+&amp;\frac{d^2\theta}{ds^2}=-\frac{2}{r}\frac{dr}{ds}\frac{d\theta}{ds}+\sin\theta \cos\theta \left(\frac{d\phi}{ds}\right)^2\\<br/>
+&amp;\frac{d^2\phi}{ds^2} = -\frac{2}{r}\frac{dr}{ds}\frac{d\phi}{ds}-\frac{2\cos\theta}{\sin\theta}\frac{d\theta}{ds}\frac{d\phi}{ds}<br/>
+\end{aligned}\right. \tag{26} $$<br/>
+对照测地线方程$(18)$，得到<br/>
+$$\begin{aligned}&amp;\Gamma_{22}^1 = -r,\quad \Gamma_{33}^1=-r \sin^2\theta\\<br/>
+&amp;\Gamma_{12}^2=\Gamma_{21}^2=\frac{1}{r},\quad \Gamma_{33}^2=-\sin\theta \cos\theta\\<br/>
+&amp;\Gamma_{13}^3=\Gamma_{31}^3=\frac{1}{r},\quad \Gamma_{23}^3=\Gamma_{32}^3=\frac{\cos\theta}{\sin\theta}<br/>
+\end{aligned} \tag{27} $$<br/>
+其余均为0。可以看到，如果熟练变分法（这不需要付出很多心思），就能够帮助我们迅速地找出联络系数来，而不用纠结于各种指标的求和中去。</p><p>当然，目前是计算机时代，很少有人会亲自去计算复杂度规的各种联络系数了。但是对于某些不复杂的度规，亲自去计算会让我们对它的认识更为深刻。</p>
+
+
+
+
+
+</div>

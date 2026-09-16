@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "133",
+    "title": "正十七边形的尺规作图存在之证明",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/133",
+    "date": "2009-09-20",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 24,
+    "display_formula_count": 10,
+    "image_count": 4,
+    "heading_count": 0,
+    "code_block_count": 0,
+    "source_text_sha256": "42afd01118e12717c19f93ae9da60e24cf335fb919dab13ffd172990fe82ae12",
+    "output_text_sha256": "42afd01118e12717c19f93ae9da60e24cf335fb919dab13ffd172990fe82ae12",
+    "latex_sha256": "2d4833e658b5165c89d9ec886ae436ef4738b895529d15c3e0dbbcba56985d58",
+    "body_sha256": "c0d609e052cc104482ab238d5a4a48aeea5672efb1c8d16890a7c12fcef7517b",
+    "converter_version": 1,
+    "markdown_sha256": "ea732e8a6e2949997336ee33f03c73c040245f8fbe832ef55c3fad0461e09f1d"
+  },
+  "fetched_at": "2026-09-14T14:52:04+00:00",
+  "source_snapshot_sha256": "512184d8cca06f28eb066b225c7e5cbc485d27489c0dca40c53bfbfe9d4babfe",
+  "images": {},
+  "local_only": true
+}

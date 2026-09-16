@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "10657",
+    "title": "为什么梯度裁剪的默认模长是1？",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/10657",
+    "date": "2025-01-02",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 54,
+    "display_formula_count": 5,
+    "image_count": 0,
+    "heading_count": 4,
+    "code_block_count": 0,
+    "source_text_sha256": "102d6b748f6af20701e4514d86a956f1ce29e35781f55f8f30b80587638dd3c1",
+    "output_text_sha256": "102d6b748f6af20701e4514d86a956f1ce29e35781f55f8f30b80587638dd3c1",
+    "latex_sha256": "409199078413581afe3621cccea1393cddbf276d08db69f7d61274d72e01da04",
+    "body_sha256": "f5f16e5457b07e94b6c176043ac284c67dc8422af1a714ca354091c0ce133cec",
+    "converter_version": 1,
+    "markdown_sha256": "a388fc0429ca3b104f55ad327786713167fe166bd9d4c468e8579aa4ab6918f5"
+  },
+  "fetched_at": "2026-09-14T12:44:26+00:00",
+  "source_snapshot_sha256": "a8c7a6ff2af47cab784009e086027896075ff4d54cc535c9121aef51a1167494",
+  "images": {},
+  "local_only": true
+}

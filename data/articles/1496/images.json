@@ -1,0 +1,45 @@
+{
+  "version": 1,
+  "images": {
+    "https://spaces.ac.cn/usr/uploads/2011/11/3644536956.jpg": {
+      "status": "cached",
+      "file": "eca85e71d370d6e43e93a026d082c6bcd52fb7d30c821adaf3172fa81be0de26.jpg",
+      "sha256": "eca85e71d370d6e43e93a026d082c6bcd52fb7d30c821adaf3172fa81be0de26",
+      "bytes": 13240,
+      "checked_at": "2026-09-16T11:54:34+00:00",
+      "fetched_url": "https://spaces.ac.cn/usr/uploads/2011/11/3644536956.jpg",
+      "etag": "\"5a6ec74e-33b8\"",
+      "last_modified": "Mon, 29 Jan 2018 07:03:42 GMT"
+    },
+    "https://spaces.ac.cn/usr/uploads/2011/11/2558629244.png": {
+      "status": "cached",
+      "file": "1eee52611d75dfc34cfd9be29c0c26379360aef3da0e6470ca7fa70a51a21052.png",
+      "sha256": "1eee52611d75dfc34cfd9be29c0c26379360aef3da0e6470ca7fa70a51a21052",
+      "bytes": 2350,
+      "checked_at": "2026-09-16T11:54:38+00:00",
+      "fetched_url": "https://spaces.ac.cn/usr/uploads/2011/11/2558629244.png",
+      "etag": "\"5a6ec74e-92e\"",
+      "last_modified": "Mon, 29 Jan 2018 07:03:42 GMT"
+    },
+    "https://spaces.ac.cn/usr/uploads/2011/11/2419814014.png": {
+      "status": "cached",
+      "file": "1bef4f647ab107cc964231ed38a19c016207bafe66d7b080122fbc146e3dc468.png",
+      "sha256": "1bef4f647ab107cc964231ed38a19c016207bafe66d7b080122fbc146e3dc468",
+      "bytes": 3997,
+      "checked_at": "2026-09-16T11:54:41+00:00",
+      "fetched_url": "https://spaces.ac.cn/usr/uploads/2011/11/2419814014.png",
+      "etag": "\"5a6ec74e-f9d\"",
+      "last_modified": "Mon, 29 Jan 2018 07:03:42 GMT"
+    },
+    "https://spaces.ac.cn/usr/uploads/2011/11/3667497979.png": {
+      "status": "cached",
+      "file": "29a9c4d10d698a8d656625373be9594c9d60b9d63997b337745d600b32524e0c.png",
+      "sha256": "29a9c4d10d698a8d656625373be9594c9d60b9d63997b337745d600b32524e0c",
+      "bytes": 14125,
+      "checked_at": "2026-09-16T11:54:45+00:00",
+      "fetched_url": "https://spaces.ac.cn/usr/uploads/2011/11/3667497979.png",
+      "etag": "\"5a6ec74e-372d\"",
+      "last_modified": "Mon, 29 Jan 2018 07:03:42 GMT"
+    }
+  }
+}

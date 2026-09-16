@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "1720",
+    "title": "开始学习数学软件Scilab",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/1720",
+    "date": "2012-09-28",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 1,
+    "display_formula_count": 0,
+    "image_count": 0,
+    "heading_count": 0,
+    "code_block_count": 3,
+    "source_text_sha256": "47b20362056c06e6296e96e7c9f3ab55849d6c30e5b77ba6cb221dc44c4e3fb3",
+    "output_text_sha256": "47b20362056c06e6296e96e7c9f3ab55849d6c30e5b77ba6cb221dc44c4e3fb3",
+    "latex_sha256": "fa517d0476ae0d4fff53726a4134e7afaca1f4606d5c08a498e16427c4cd5703",
+    "body_sha256": "b4c241514a1bd7e5aeb8865019bd7a0fdcf942299f1e0639a4ffe2fe840d50b7",
+    "converter_version": 1,
+    "markdown_sha256": "903f5eee1d887aa97fd8bb0fb7562623df2f9595fd414881b0cfd0fe4bf81140"
+  },
+  "fetched_at": "2026-09-14T14:10:20+00:00",
+  "source_snapshot_sha256": "64a2ad9e746165fd6be721008978a8820326eff3c5b48d3658ab1ded31730308",
+  "images": {},
+  "local_only": true
+}

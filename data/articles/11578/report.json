@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "11578",
+    "title": "一行代码将arXiv论文翻译成中文版",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/11578",
+    "date": "2026-01-28",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 0,
+    "display_formula_count": 0,
+    "image_count": 4,
+    "heading_count": 4,
+    "code_block_count": 0,
+    "source_text_sha256": "d17f0e6a8e0bd38d556c1a29b0596eff4ee8cdfcdf8d3123df5a6db0aebef294",
+    "output_text_sha256": "d17f0e6a8e0bd38d556c1a29b0596eff4ee8cdfcdf8d3123df5a6db0aebef294",
+    "latex_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "body_sha256": "5c16b09c68357dcf24755be557469e736b7cb468c493bfe7adb5681ef193575a",
+    "converter_version": 1,
+    "markdown_sha256": "1c7d7a32011b5ffcd3553ef8232183e86c99c3ad2f623d63e86648925ef7aa92"
+  },
+  "fetched_at": "2026-09-14T12:37:25+00:00",
+  "source_snapshot_sha256": "fd4b3eeee6e643ebbf06179fd9053b9cd80d081a6ce0f915e1ca755b2a5cf9e5",
+  "images": {},
+  "local_only": true
+}

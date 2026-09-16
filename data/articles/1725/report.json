@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "1725",
+    "title": "中秋节快乐！",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/1725",
+    "date": "2012-09-30",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 0,
+    "display_formula_count": 0,
+    "image_count": 1,
+    "heading_count": 0,
+    "code_block_count": 0,
+    "source_text_sha256": "2e3566fcbc6ceb121cfce927e3543a3bc74d7cfe3270c672bb7b5c04c0511634",
+    "output_text_sha256": "2e3566fcbc6ceb121cfce927e3543a3bc74d7cfe3270c672bb7b5c04c0511634",
+    "latex_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "body_sha256": "0668c1e57c664bfc7b9dd96ffad5cdbb786f2802c153fd7e58e3fbf9f76e0b68",
+    "converter_version": 1,
+    "markdown_sha256": "a0f2ab2124833319be7a4fd7fceb7198d2a69c7b72e0d6630da3acda361f81d8"
+  },
+  "fetched_at": "2026-09-14T14:10:13+00:00",
+  "source_snapshot_sha256": "ae46da78609d65a20401245645c2129644cd6ac6a43d4d40ec98a92ec1d4ea8f",
+  "images": {},
+  "local_only": true
+}

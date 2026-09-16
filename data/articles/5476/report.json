@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "5476",
+    "title": "最小熵原理（二）：“当机立断”之词库构建",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/5476",
+    "date": "2018-04-24",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 99,
+    "display_formula_count": 20,
+    "image_count": 0,
+    "heading_count": 12,
+    "code_block_count": 0,
+    "source_text_sha256": "bcbc495d74eef676f7c70d1e087ca5e9481bba7319407b72a6cca4bc8240a3f5",
+    "output_text_sha256": "bcbc495d74eef676f7c70d1e087ca5e9481bba7319407b72a6cca4bc8240a3f5",
+    "latex_sha256": "b6e5daa2a08a3164328cdfb54dd9f3d9e34a1e4d42b269c725986ca2e6598597",
+    "body_sha256": "f59508d66c3e066cde8912eb3a496b8d95072e3d55f33e3a986f85b7c85580bf",
+    "converter_version": 1,
+    "markdown_sha256": "0e6cd74439001b62f1dc472fceff27936f82cfad89dc71ac340f8ba2b770a801"
+  },
+  "fetched_at": "2026-09-14T13:27:14+00:00",
+  "source_snapshot_sha256": "5d1f1e08cd681d9c20df55217c78df9b0b5c13c4497184ed8ef9ce78ba858425",
+  "images": {},
+  "local_only": true
+}

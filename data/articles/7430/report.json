@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "7430",
+    "title": "Google新作Synthesizer：我们还不够了解自注意力",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/7430",
+    "date": "2020-05-25",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 58,
+    "display_formula_count": 9,
+    "image_count": 5,
+    "heading_count": 12,
+    "code_block_count": 0,
+    "source_text_sha256": "8fc8eb735946338456b271c5e21d2a569c8bfde262e04862716bd510f9030883",
+    "output_text_sha256": "8fc8eb735946338456b271c5e21d2a569c8bfde262e04862716bd510f9030883",
+    "latex_sha256": "e1fbdbd24a16e410f32fc8e88e5b2a0606805f2f0f7fcb61309fae85440d4a96",
+    "body_sha256": "fcb39d935a62c7fbfcf7292d9a40b280ac8a4534a6e107d39b4be65951c7c620",
+    "converter_version": 1,
+    "markdown_sha256": "15981a12ff8d287870d2afcad8a16f18df853bd1889fffc14361a2c31ba3b459"
+  },
+  "fetched_at": "2026-09-14T13:13:38+00:00",
+  "source_snapshot_sha256": "4de929169c30a996882f762b809a38da09303964cbf1ea89f2cee04396919d5f",
+  "images": {},
+  "local_only": true
+}

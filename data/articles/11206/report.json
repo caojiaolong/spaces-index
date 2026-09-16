@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "11206",
+    "title": "基于树莓派Zero2W搭建一个随身旁路由",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/11206",
+    "date": "2025-08-02",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 0,
+    "display_formula_count": 0,
+    "image_count": 3,
+    "heading_count": 5,
+    "code_block_count": 5,
+    "source_text_sha256": "4cd1df3eea8975d17bfed7400f971b7ff879991366a0134a27c57a9756ea4432",
+    "output_text_sha256": "4cd1df3eea8975d17bfed7400f971b7ff879991366a0134a27c57a9756ea4432",
+    "latex_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "body_sha256": "d777b703a9e19c8e23c7895f0f2c7944eeef58b9fa17d423640aafcad89bd3d1",
+    "converter_version": 1,
+    "markdown_sha256": "84c10b5982c39e26989429827d0823a595ecace3d4498cc0aa009cdd4d115c8b"
+  },
+  "fetched_at": "2026-09-14T12:40:43+00:00",
+  "source_snapshot_sha256": "71d3080e30b9c84c1863ff7fdf75a2f1be783dc0ef24733e2fc20290959689b1",
+  "images": {},
+  "local_only": true
+}

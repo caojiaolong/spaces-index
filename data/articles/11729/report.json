@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "11729",
+    "title": "MuP之上：4. 坚守参数的稳定性",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/11729",
+    "date": "2026-04-24",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 145,
+    "display_formula_count": 21,
+    "image_count": 0,
+    "heading_count": 13,
+    "code_block_count": 0,
+    "source_text_sha256": "5f2a81bc33eb30176aa1494f7eb4610bca2b439aef4d639b478211e6c366846b",
+    "output_text_sha256": "5f2a81bc33eb30176aa1494f7eb4610bca2b439aef4d639b478211e6c366846b",
+    "latex_sha256": "2b56568743efb93c8008919ca1f6b266a67a08757d0286c768edf09031da14f4",
+    "body_sha256": "561739e6cb025cb1b951f926102ccb169f3ac063e6deff6fbf5f7587704d7461",
+    "converter_version": 1,
+    "markdown_sha256": "f6d421d08e58206329ef244b1aa3ceb79fbd282f57298e6c1833d2bce1925b1c"
+  },
+  "fetched_at": "2026-09-14T12:36:00+00:00",
+  "source_snapshot_sha256": "d997fd19f3e6b17dd039fa5504f4249b846376a73eb97c24260394c8c3d85f48",
+  "images": {},
+  "local_only": true
+}

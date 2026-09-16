@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "7725",
+    "title": "变分自编码器（六）：从几何视角来理解VAE的尝试",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/7725",
+    "date": "2020-09-10",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 36,
+    "display_formula_count": 5,
+    "image_count": 5,
+    "heading_count": 6,
+    "code_block_count": 0,
+    "source_text_sha256": "91a2c9cb17cffeec6351506641a50bfbe87d7bb38a2c54ba880e42aa79fa20de",
+    "output_text_sha256": "91a2c9cb17cffeec6351506641a50bfbe87d7bb38a2c54ba880e42aa79fa20de",
+    "latex_sha256": "b96f248237f2a9257bbdd9267b1249aaa24b5a1f73add4536fc79de1be42d46d",
+    "body_sha256": "06956f3473e1096a2bbce069fa64d062f8f6f779cad906ac11ab8c9d16e2061f",
+    "converter_version": 1,
+    "markdown_sha256": "f7c2db4d53004514e1fa599855a7920f0c8d27934d114a15310e8029b824308c"
+  },
+  "fetched_at": "2026-09-14T13:11:27+00:00",
+  "source_snapshot_sha256": "0794e2a7500994323a6051eab298e13299db959a9ed255338b9c738c70989b28",
+  "images": {},
+  "local_only": true
+}

@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "2891",
+    "title": "让风筝飞",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/2891",
+    "date": "2014-08-28",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 32,
+    "display_formula_count": 7,
+    "image_count": 1,
+    "heading_count": 2,
+    "code_block_count": 0,
+    "source_text_sha256": "6bec49bd742f9a0d380da62da8641ce7a61ab5ebf29a9d99feec6a76185e9898",
+    "output_text_sha256": "6bec49bd742f9a0d380da62da8641ce7a61ab5ebf29a9d99feec6a76185e9898",
+    "latex_sha256": "7408f013d922839d14f913ac00cfb54a56c8831fe6add2e7b5fe64e87d541b17",
+    "body_sha256": "9b033fc0c6df7730411d584fbf32c053a5a41dd2c78ee4ea2c2c4f74a33c6956",
+    "converter_version": 1,
+    "markdown_sha256": "e90638eb745caa9ce8d0190e40dc5c31c35810d29a9aa76269dee44313b8812b"
+  },
+  "fetched_at": "2026-09-14T13:51:49+00:00",
+  "source_snapshot_sha256": "e3976d20a94c911b5c95bc284fa09c0d2838d7c277617d66571016aebf258085",
+  "images": {},
+  "local_only": true
+}

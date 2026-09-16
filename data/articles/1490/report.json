@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "1490",
+    "title": "2012年全年天象大观",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/1490",
+    "date": "2011-10-23",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 0,
+    "display_formula_count": 0,
+    "image_count": 0,
+    "heading_count": 0,
+    "code_block_count": 0,
+    "source_text_sha256": "bd0849bc7e4bde117384580df8c9ae7627fa2862adc802b0a0df97275d84b622",
+    "output_text_sha256": "bd0849bc7e4bde117384580df8c9ae7627fa2862adc802b0a0df97275d84b622",
+    "latex_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "body_sha256": "7332415dab8f4d1a4b25f48efcbda63e41351178f036262148fcb0924db1b0b8",
+    "converter_version": 1,
+    "markdown_sha256": "c68fc59f89dac3d0bc2c4d296735480ba327814225c60abee8d960abd48a83e0"
+  },
+  "fetched_at": "2026-09-14T14:17:05+00:00",
+  "source_snapshot_sha256": "7c2e61b262e4fdcc5a3b660c24c6636f68be935b71ea910604fa0649557ab10d",
+  "images": {},
+  "local_only": true
+}

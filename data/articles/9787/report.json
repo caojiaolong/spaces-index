@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "9787",
+    "title": "预训练一下，Transformer的长序列成绩还能涨不少！",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/9787",
+    "date": "2023-10-08",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 0,
+    "display_formula_count": 0,
+    "image_count": 4,
+    "heading_count": 3,
+    "code_block_count": 0,
+    "source_text_sha256": "8629ef1af3d9d6e04abac3c6c30cb4630219bd3d5860aad724ba154551b2e7ac",
+    "output_text_sha256": "8629ef1af3d9d6e04abac3c6c30cb4630219bd3d5860aad724ba154551b2e7ac",
+    "latex_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "body_sha256": "1c97a03cea2c2e509091df02be494ad5dd625799b6efdf7b730923f16b982ae9",
+    "converter_version": 1,
+    "markdown_sha256": "8b6f8b0d36ffaafdaaf99726d51905fca8a14b5b1e8bcbf335df00a321bdebda"
+  },
+  "fetched_at": "2026-09-14T12:51:41+00:00",
+  "source_snapshot_sha256": "51ccd07523de7b97acc7173c6b780febef85e4296e4f9066d336ed7bd5cd109b",
+  "images": {},
+  "local_only": true
+}

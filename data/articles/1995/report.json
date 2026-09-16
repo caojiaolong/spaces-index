@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "1995",
+    "title": "当Matlab遇上牛顿法",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/1995",
+    "date": "2013-05-22",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 5,
+    "display_formula_count": 0,
+    "image_count": 0,
+    "heading_count": 0,
+    "code_block_count": 9,
+    "source_text_sha256": "0a096bc1ecf2578e671e0877ed0f7ea12c2524d7561e10b5b8eb881188acc13f",
+    "output_text_sha256": "0a096bc1ecf2578e671e0877ed0f7ea12c2524d7561e10b5b8eb881188acc13f",
+    "latex_sha256": "e63c3576da404979afc59c8a11ea9b76bf4a9c1ad4be3fd66e6ca9758d933a80",
+    "body_sha256": "b27083d4f7555daec32199e6157517d6fd933e1abadf02ab1aee3e4ddb479976",
+    "converter_version": 1,
+    "markdown_sha256": "de9ed9dec9628c7355616bd8902336f0ad64b536d53b5e77a61c17ab9f3020bf"
+  },
+  "fetched_at": "2026-09-14T14:02:04+00:00",
+  "source_snapshot_sha256": "fe5b72cd551c50612ebf20a6d771165ca4b8ad3955a3d3445d142879a51ce158",
+  "images": {},
+  "local_only": true
+}

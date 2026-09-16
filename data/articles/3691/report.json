@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "3691",
+    "title": "【备忘】电脑远程控制手机的解决方案",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/3691",
+    "date": "2016-03-29",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 0,
+    "display_formula_count": 0,
+    "image_count": 0,
+    "heading_count": 0,
+    "code_block_count": 0,
+    "source_text_sha256": "74079b980d88dd03ff79b6ef60d85aeb2aa3cb314bbae633c12deabd814a78b5",
+    "output_text_sha256": "74079b980d88dd03ff79b6ef60d85aeb2aa3cb314bbae633c12deabd814a78b5",
+    "latex_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "body_sha256": "809801b04769466a4e06fc6f79055a0fa460a382f1c00f01d0f19dda8062aee8",
+    "converter_version": 1,
+    "markdown_sha256": "e4f23b36884e58a14828d43ea0c1e436a152d13ba0bc4a713347be99e7f92f67"
+  },
+  "fetched_at": "2026-09-14T13:41:53+00:00",
+  "source_snapshot_sha256": "8136893d751043bbee00b590ad5b2a05c66a991d71d245db2e6ec05d5ece0b69",
+  "images": {},
+  "local_only": true
+}

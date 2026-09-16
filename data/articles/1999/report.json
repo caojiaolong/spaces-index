@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "1999",
+    "title": "《虚拟的实在(1)》——为什么需要场？",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/1999",
+    "date": "2013-05-24",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 1,
+    "display_formula_count": 0,
+    "image_count": 2,
+    "heading_count": 0,
+    "code_block_count": 0,
+    "source_text_sha256": "ec9fe429bde835525c98570347847d706f1596b4f069019a2abca8b8bfe676eb",
+    "output_text_sha256": "ec9fe429bde835525c98570347847d706f1596b4f069019a2abca8b8bfe676eb",
+    "latex_sha256": "3c6febbc8aa05e408920842ddd74fa01d45049b7b4468b841d58c90aff4aebdf",
+    "body_sha256": "94ee47eb43b4daffac754fbaf9d47b3d68281b52a35af8d086d4088a5a2785ab",
+    "converter_version": 1,
+    "markdown_sha256": "d07dda78874fca6b118da0c3dac052f1544103c222026438d3cf01ab1e592fb1"
+  },
+  "fetched_at": "2026-09-14T14:01:57+00:00",
+  "source_snapshot_sha256": "28f108a8e1b01922ee2bf0120edf9680ea6e78f0b434cdaf44a5fde90a11827a",
+  "images": {},
+  "local_only": true
+}

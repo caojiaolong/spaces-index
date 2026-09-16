@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "4491",
+    "title": "Linux下的误删大坑与简单的恢复技巧",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/4491",
+    "date": "2017-07-16",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 0,
+    "display_formula_count": 0,
+    "image_count": 0,
+    "heading_count": 5,
+    "code_block_count": 8,
+    "source_text_sha256": "5d1a18313805b15549a435f83355b5bb602a8ff0ed6986ee4cff7e7a319dbaca",
+    "output_text_sha256": "5d1a18313805b15549a435f83355b5bb602a8ff0ed6986ee4cff7e7a319dbaca",
+    "latex_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "body_sha256": "9043d728fec7b4fc53145765a25da032ccfaa552aaa97742a0d5165d035755cd",
+    "converter_version": 1,
+    "markdown_sha256": "ff808548b73ad45916821434feba3a2fa117ea2eaf2a92aca3d499b2bc0dadf2"
+  },
+  "fetched_at": "2026-09-14T13:31:42+00:00",
+  "source_snapshot_sha256": "50baef38b8caa21dcc4581cd6abdbdbfea7fcd347b977fb33c733bfd1004cae4",
+  "images": {},
+  "local_only": true
+}

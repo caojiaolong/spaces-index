@@ -1,0 +1,15 @@
+<div class="PostContent" id="PostContent">
+<p>我们之前通过矩阵变换方式推导出了洛伦兹变换以及速度合成公式等结论，不得不说，矩阵推导方式有种引人入胜的魅力。今天，在讲述相对论（包括电动力学、广义相对论）的书籍里边，在数学形式上取而代之了张量这一工具，这实际上是对矩阵的一个推广（之前已经提到过，二阶张量相当于矩阵）。采用这样的形式在于它充分体现了相对论的对称和变换关系。本文将来谈及狭义相对论的一些基本结论，包括同时性、长度收缩、时间延缓等。</p><p>本文的光速$c=1$。</p><h3 id="同时的相对性">同时的相对性</h3><p>在同一时空中，采取两个时空坐标进行洛伦兹变换，再作差，我们得到：<br/>
+\begin{equation}\left[\begin{array}{c} \Delta x\\ \Delta t \end{array}\right]=\frac{1}{\sqrt{1-v^2}}\left[\begin{array}{c c}1 &amp; v\\ v &amp; 1 \end{array}\right]\left[\begin{array}{c}\Delta x'\\ \Delta t' \end{array}\right]\end{equation}</p><p>上式告诉我们什么呢？我们发现，如果$\Delta t'=0$，不能推出$\Delta t=0$，这样说明，在一个参考系里边同时发生的两件事情，由于地点的不同（$\Delta x' \neq 0$），在另外一个惯性参考系看来，并不是同时的。这就是同时的相对性。这告诉我们，在相对论中，如果要谈及同时发生，必须要指明在哪个参考系中。</p><h3 id="长度收缩（尺缩效应）">长度收缩（尺缩效应）</h3><p>既然连同时都是相对的，那么可以很自然地猜测，在相对论中，没有什么是绝对的了（当然，还存在一些不变量，最明显的就是光速不变了）。事实上，我们平常所看到的长度、时间都不是绝对的，都因参考系而异。我们平时在谈论长度、时间时，直觉上认为它只是物体的固有属性，是不变的，因此不会去思考测量方面的问题。但是在相对论中，由于相对性，必须定义了测量，才可以定量描述它的变化。</p><p>先来看长度，怎么测量长度呢？我们并不是总能拿一把尺子放到被测量物体上的，但是我们能够做到这样的一件事情：建立一个属于我们参考系的坐标系，然后测量物体的坐标。通过坐标相减来得出长度。也就是说：</p><blockquote><strong>在S参考系中测量物体的长度：</strong><br/>
+在同一时刻，记录物体头尾两端的坐标$x_1$和$x_2$，求出$|\Delta x|$即可。</blockquote><p>这样我们有：<br/>
+\begin{equation}\left[\begin{array}{c} \Delta x\\ 0 \end{array}\right]=\frac{1}{\sqrt{1-v^2}}\left[\begin{array}{c c}1 &amp; v\\ v &amp; 1 \end{array}\right]\left[\begin{array}{c}\Delta x'\\ \Delta t' \end{array}\right] \end{equation}</p><p>联立解得：<br/>
+\begin{equation}\Delta x=\sqrt{1-v^2} \Delta x'\end{equation}</p><p>其中$\Delta x'$是在相对于被测物体静止的S'参考系测量的，换句话是被测物体静止时的长度；而$\Delta x$是在相遇于被测物体运行的S参考系测量的，也就是说是被测物体运动时的长度。因此可以归结为一句话：</p><blockquote>物体在运动方向上长度收缩了！</blockquote><p>比如，飞船静止时长度是100m，只要它飞得足够快，我们有可能看到（测量到）一艘长度只有1m的飞船。</p><h3 id="时间延缓（钟慢效应）">时间延缓（钟慢效应）</h3><p>时间也要用类似的方法思考。当然首先要定义怎么测量时间：</p><blockquote><strong>在S参考系中测量S'系中同一件事的时间间隔：</strong><br/>
+记录在S'系中发生同一地点的同一件事，事情前后的时间坐标$t_1$和$t_2$，求出$\Delta t$即可。</blockquote><p>要强调的是S'中的同一地点的事，比如飞船中的宇航员向我们招手这一件事，这样实际上是要求$\Delta x'=0$，那么：<br/>
+\begin{equation}\left[\begin{array}{c} \Delta x\\ \Delta t \end{array}\right]=\frac{1}{\sqrt{1-v^2}}\left[\begin{array}{c c}1 &amp; v\\ v &amp; 1 \end{array}\right]\left[\begin{array}{c} 0\\ \Delta t' \end{array}\right] \end{equation}</p><p>很快得出：<br/>
+\begin{equation}\Delta t=\frac{1}{\sqrt{1-v^2}} \Delta t'\end{equation}</p><p>那就是说</p><blockquote>运动的时间变慢了！</blockquote><p>只要飞船以足够快的速度远离我们，飞船上的宇航员向我们招手只花了2秒的时间，在我们看来可能花了1小时！</p><h3 id="总结">总结</h3><p>到现在为止，我们对于狭义相对论的时空观基本已经建立起来了。从形式论的角度来讲，我们还应该添加上相对论时空的几何描述，但是我们不侧重这一点。从物理角度来看，我们还欠缺相对论动力学的内容，这在以后的文章里可能会慢慢谈及。本文不是相对论教程，只是我在学习相对论时的一些比较直观的看法，所以更多的基础内容还请各位读者阅读相关的著作。下一篇文章，我们将看到，相对论效应不一定体现在高速运动的粒子中，在很慢的运动中也体现出了相对论的美丽。</p>
+
+
+
+
+
+</div>

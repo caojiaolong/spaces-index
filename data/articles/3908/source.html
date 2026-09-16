@@ -1,0 +1,85 @@
+<div class="PostContent" id="PostContent">
+<p>前言：这个暑假花了不少时间在中文分词和语言模型上面，碰了无数次壁，也得到了零星收获。打算写一个专题，分享一下心得体会。虽说是专题，但仅仅是一些笔记式的集合，并非系统的教程，请读者见谅。</p><h3 id="中文分词">中文分词</h3><p>关于中文分词的介绍和重要性，我就不多说了，<a href="http://www.matrix67.com/blog/archives/4212" target="_blank">matrix67这里</a>有一篇关于分词和分词算法很清晰的介绍，值得一读。在文本挖掘中，虽然已经有不少文章探索了不分词的处理方法，如本博客的<a href="/archives/3863/" target="_blank">《文本情感分类（三）：分词 OR 不分词》</a>，但在一般场合都会将分词作为文本挖掘的第一步，因此，一个有效的分词算法是很重要的。当然，中文分词作为第一步，已经被探索很久了，目前做的很多工作，都是总结性质的，最多是微弱的改进，并不会有很大的变化了。</p><p>目前中文分词主要有两种思路：<font color="red">查词典</font>和<font color="red">字标注</font>。首先，查词典的方法有：<u>机械的最大匹配法、最少词数法，以及基于有向无环图的最大概率组合，还有基于语言模型的最大概率组合，等等</u>。查词典的方法简单高效（得益于动态规划的思想），尤其是结合了语言模型的最大概率法，能够很好地解决歧义问题，但对于中文分词一大难度——未登录词（中文分词有两大难度：歧义和未登录词），则无法解决；为此，人们也提出了基于字标注的思路，所谓字标注，就是通过几个标记（比如4标注的是：single，单字成词；begin，多字词的开头；middle，三字以上词语的中间部分；end，多字词的结尾），把句子的正确分词法表示出来。这是一个序列（输入句子）到序列（标记序列）的过程，能够较好地解决未登录词的问题，但速度较慢，而且对于已经有了完备词典的场景下，字标注的分词效果可能也不如查词典方法。总之，各有优缺点（似乎是废话～），实际使用可能会结合两者，像结巴分词，用的是有向无环图的最大概率组合，而对于连续的单字，则使用字标注的HMM模型来识别。</p><h3 id="AC自动机">AC自动机</h3><p>本文首先要实现的是查词典方法的分词。查词典的过程是：<font color="red">1、给定一批词，查找给定句子中是不是含有这个词；2、如果有的话，怎么解决歧义性问题。</font>其中，第1步，在计算机中称为“多模式匹配”。这步看上去简单，但事实上要高效地实现并不容易。要知道，一个完备的词典，少说也有十几万词语，如果一个个枚举查找，那计算量是吃不消的，事实上我们人也不是这样做的，我们在查字典的时候，会首先看首字母，然后只在首字母相同的那一块找，然后又比较下一个字母，依此下去。这需要两个条件：1、一个做好特殊排序的词典；2、有效的查找技巧，对于第1个条件，我们有所谓的<font color="red">前缀树（trie）</font>，第2个条件，我们有一些经典的算法，比如<font color="red">AC自动机（Aho and Corasick）</font>。</p><p>对于这两个条件，我也不多评价什么了，不是不想说，而是我的了解也到此为止了——对于AC自动机，我的认识就是一个使用了trie数据结构的高效多模式匹配算法。我也不用亲自实现它，因为Python已经有对应的库了：<a href="https://pypi.python.org/pypi/pyahocorasick/" target="_blank">pyahocorasick</a>。因此，我们只需要关心怎么使用它就行了。官方的教程已经很详细地介绍了pyahocorasick的基本使用方法了，这里也不赘述。（遗憾的是，虽然pyahocorasick已经同时支持python2和python3了，但是在python2中，它只支持bytes字符串不支持unicode字符串，而在python3中，则默认使用unicode编码，这对我们写程度会带来一点困惑，当然，不是本质性的。本文使用的是<strong><font color="red">python 2.7</font></strong>。）</p><p>构建一个基于AC自动机的分词系统，首先需要有一个文本词典，假设词典有两列，每一行是词和对应的频数，用空格分开。那么就可以用下面的代码构建一个AC自动机。</p><pre class="line-numbers"><code class="language-python">import ahocorasick
+
+def load_dic(dicfile):
+    from math import log
+    dic = ahocorasick.Automaton()
+    total = 0.0
+    with open(dicfile) as dicfile:
+        words = []
+        for line in dicfile:
+            line = line.split(' ')
+            words.append((line[0], int(line[1])))
+            total += int(line[1])    
+    for i,j in words:
+        dic.add_word(i, (i, log(j/total))) #这里使用了对数概率，防止溢出
+    dic.make_automaton()
+    return dic
+
+dic = load_dic('me.dic')</code></pre><p>pyahocorasick构建AC自动机有一个很人性化的地方，它能够以“键-注释”这样成对的形式添加词汇（请留意dic.add_word(i, (i, log(j/total)))这一句），这样，我们可以在注释这里，添加我们想要的信息，比如频数、词性等，然后在查找的时候会一并返回。有了上述AC自动机，我们就能很方便地构建一个全模式分词，也就是把词典中有的词都扫描出来（其实这本来就是AC自动机的本职工作）。</p><pre class="line-numbers"><code class="language-python">def all_cut(sentence):
+    words = []
+    for i,j in dic.iter(sentence):
+        words.append(j[0])
+    return words</code></pre><p>对于一个长句子，这可能会返回很多词，请慎用。</p><h3 id="最大匹配法">最大匹配法</h3><p>当然，上述所谓的全模式分词，根本就算不上什么分词，只是简单的查找罢了，下面我们来实现一个经典的分词算法：最大匹配法。</p><p>最大匹配法是指从左到右逐渐匹配词库中的词语，匹配到最长的词语为止。这是一种比较粗糙的分词方法，在matrix67的文章中也有说到，构造反例很简单，如果词典中有“不”、“不可”、“能”、“可能”四个词，但没有“不可能”这个词，那么“不可能”就会被切分为“不可/能”了。虽然如此，在精度要求不高的情况下，这种分词算法还是可以接受的，毕竟速度很快～下面是基于AC自动机的最大匹配法的实现：</p><pre class="line-numbers"><code class="language-python">def max_match_cut(sentence):
+    sentence = sentence.decode('utf-8')
+    words = ['']
+    for i in sentence:
+        i = i.encode('utf-8')
+        if dic.match(words[-1] + i):
+            words[-1] += i
+        else:
+            words.append(i)
+    return words</code></pre><p>代码很短，也挺清晰的，主要用到了pyahocorasick的match函数。在我的机器上测试，这个算法的效率大概是4M/s，根据hanlp的作者的描述，用JAVA做类似的事情，可以达到20M/s的速度！而用python做，则有两个限制，一个是python本身速度的限制，另外一个是pyahocorasick的限制，导致上面的实现其实并非是最高效率的，因为pyahocorasick不支持unicode编码，所以汉字的编码长度不一，要不断通过转编码的方式来获取汉字长度。</p><p>上面说的最大匹配法，准确来说是“正向最大匹配法”，类似地，还有“逆向最大匹配法”，顾名思义，是从右到左扫描句子进行最大匹配，效果一般比正向最大匹配要好些。如果用AC自动机来实现，唯一的办法就是对词典所有的词都反序存储，然后对输入的句子也反序，然后进行正向最大匹配了。</p><h3 id="最大概率组合">最大概率组合</h3><p>基于最大概率组合的方法，是目前兼顾了速度和准确率的比较优秀的方法。它说的是：对于一个句子，如果切分为词语$w_1,w_2,\dots,w_n$是最优的切分方案，那么应该使得下述概率最大：<br/>
+$$P(w_1,w_2,\dots,w_n)$$<br/>
+直接估计这概率是不容易的，一般用一些近似方案，比如<br/>
+$$P(w_1,w_2,\dots,w_n)\approx P(w_1)P(w_2|w_1)P(w_3|w_2)\dots P(w_n|w_{n-1})$$<br/>
+这里$P(w_k|w_{k-1})$就称为语言模型，它已经初步地考虑了语义了。当然，普通分词工具是很难估计$P(w_k|w_{k-1})$的，一般采用更加简单的近似方案。<br/>
+$$P(w_1,w_2,\dots,w_n)\approx P(w_1)P(w_2)P(w_3)\dots P(w_n)$$<br/>
+放到图论来看，这就是有向无环图里边的最大概率路径了。</p><p>下面介绍用AC自动机，结合动态规划，来实现后一种方案。</p><pre class="line-numbers"><code class="language-python">def max_proba_cut(sentence):
+    paths = {0:([], 0)}
+    end = 0
+    for i,j in dic.iter(sentence):
+        start,end = 1+i-len(j[0]), i+1
+        if start not in paths:
+            last = max([i for i in paths if i &lt; start])
+            paths[start] = (paths[last][0]+[sentence[last:start]], paths[last][1]-10)
+        proba = paths[start][1]+j[1]
+        if end not in paths or proba &gt; paths[end][1]:
+            paths[end] = (paths[start][0]+[j[0]], proba)
+    if end &lt; len(sentence):
+        return paths[end][0] + [sentence[end:]]
+    else:
+        return paths[end][0]</code></pre><p>代码还是很简短清晰，这里假设了不匹配部分的频率是$e^{-10}$，这个可以修改。只是要注意的是，由于使用的思路不同，因此这里的动态规划方案与一般的有向无环图的动态规划不一样，但是思路是很自然的。要注意，如果直接用这个函数对长度为上万字的句子进行分词，会比较慢，而且耗内存比较大，这是因为我通过字典把动态规划过程中所有的临时方案都保留了下来。幸好，中文句子中还是有很多天然的断句标记的，比如标点符号、换行符，我们可以用这些标记把句子分成很多部分，然后逐步分词，如下。</p><pre class="line-numbers"><code class="language-python">to_break = ahocorasick.Automaton()
+for i in ['，', '。', '！', '、', '？', ' ', '\n']:
+    to_break.add_word(i, i)
+
+to_break.make_automaton()
+
+def map_cut(sentence):
+    start = 0
+    words = []
+    for i in to_break.iter(sentence):
+        words.extend(max_proba_cut(sentence[start:i[0]+1]))
+        start = i[0]+1
+    words.extend(max_proba_cut(sentence[start:]))
+    return words</code></pre><p>在服务器上，我抽了10万篇文章出来（1亿多字），对比了结巴分词的速度，发现在使用相同词典的情况下，并且关闭结巴分词的新词发现，用AC自动机实现的这个map_cut的分词速度，大概是结巴分词的2～3倍，大约有1M/s。</p><p>最后，值得一提的是，max_proba_cut这个函数的实现思路，可以用于其他涉及到动态规划的分词方法，比如最少词数分词：</p><pre class="line-numbers"><code class="language-python">def min_words_cut(sentence):
+    paths = {0:([], 0)}
+    end = 0
+    for i,j in dic.iter(sentence):
+        start,end = 1+i-len(j[0]), i+1
+        if start not in paths:
+            last = max([i for i in paths if i &lt; start])
+            paths[start] = (paths[last][0]+[sentence[last:start]], paths[last][1]+1)
+        num = paths[start][1]+1
+        if end not in paths or num &lt; paths[end][1]:
+            paths[end] = (paths[start][0]+[j[0]], num)
+    if end &lt; len(sentence):
+        return paths[end][0] + [sentence[end:]]
+    else:
+        return paths[end][0]</code></pre><p>这里采取了罚分规则：有多少个词罚多少分，未登录词再罚一分，最后罚分最少的胜出。</p><h3 id="总结">总结</h3><p>事实上，只要涉及到查词典的操作，AC自动机都会有一定的用武之地。将AC自动机用于分词，事实上是一个非常自然的应用。我们期待有更多对中文支持更好的数据结构和算法出现，这样我们就有可能设计出更高效率的算法了。</p>
+
+
+
+
+
+</div>

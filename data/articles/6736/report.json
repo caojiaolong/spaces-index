@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "6736",
+    "title": "当Bert遇上Keras：这可能是Bert最简单的打开姿势",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/6736",
+    "date": "2019-06-18",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 7,
+    "display_formula_count": 0,
+    "image_count": 1,
+    "heading_count": 8,
+    "code_block_count": 4,
+    "source_text_sha256": "d858e77e97771017431f0f063a4f42d51d46eca0fa1520f0c8244671edd97e0e",
+    "output_text_sha256": "d858e77e97771017431f0f063a4f42d51d46eca0fa1520f0c8244671edd97e0e",
+    "latex_sha256": "428eb440ecce3fbdb9c0bf75ffc2925e8fd1f0e55dfec5e75ade62090c7f8e89",
+    "body_sha256": "ecd0a448a86a75cfc3bd5cb6b5b28ce1134703499f9ff0945131b2c1025f35cb",
+    "converter_version": 1,
+    "markdown_sha256": "4a9c565660c8675c0acd1617fea7e3d3240dfd920663074323a6e821fbcf180b"
+  },
+  "fetched_at": "2026-09-14T13:19:20+00:00",
+  "source_snapshot_sha256": "2043acacecb7039accd632c703799406e083683bdb45474657874d48187cfb60",
+  "images": {},
+  "local_only": true
+}

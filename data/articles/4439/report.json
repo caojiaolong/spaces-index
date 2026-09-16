@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "4439",
+    "title": "互怼的艺术：从零直达WGAN-GP",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/4439",
+    "date": "2017-06-08",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 165,
+    "display_formula_count": 27,
+    "image_count": 5,
+    "heading_count": 10,
+    "code_block_count": 0,
+    "source_text_sha256": "852f779eed5501e7fe219603a46c2c690c448558df66dece773f7a1aede355e9",
+    "output_text_sha256": "852f779eed5501e7fe219603a46c2c690c448558df66dece773f7a1aede355e9",
+    "latex_sha256": "706c568a977aef381269473070ac90243a91bfb84cbb64c627e9a326948e07ae",
+    "body_sha256": "4200cfa984468625e77a74bcf92b6a025719885c6ca4e7667e01e4b68679513a",
+    "converter_version": 1,
+    "markdown_sha256": "bbce9911a380bf265f851eae5754d58b41a1596ab817c384213827491dec9304"
+  },
+  "fetched_at": "2026-09-14T13:31:56+00:00",
+  "source_snapshot_sha256": "dd9e29400a9a20064534181d0f23820088fc28cdb2a9e457a66c02dc9893f59c",
+  "images": {},
+  "local_only": true
+}

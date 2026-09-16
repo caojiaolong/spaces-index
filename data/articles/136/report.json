@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "136",
+    "title": "广州亚运歌曲《重逢》歌词(中英文版)",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/136",
+    "date": "2009-09-26",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 0,
+    "display_formula_count": 0,
+    "image_count": 2,
+    "heading_count": 0,
+    "code_block_count": 0,
+    "source_text_sha256": "96747e3b32698efde8723941d2f03bbae555133a29e38a01a72c09dd00085c76",
+    "output_text_sha256": "96747e3b32698efde8723941d2f03bbae555133a29e38a01a72c09dd00085c76",
+    "latex_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "body_sha256": "837a5e4c9311c694541520500e17e8d61a9d9bdd698b780067853d99f8028a20",
+    "converter_version": 1,
+    "markdown_sha256": "310f11f2d4c2e5516f22a8a2de6d259ca91875b175a4137a4230b76d294ba8a9"
+  },
+  "fetched_at": "2026-09-14T14:51:42+00:00",
+  "source_snapshot_sha256": "2431ad1d3fb17c4bf8d31c4c321cac2b8d296171e57fe9ada82b112a8828f416",
+  "images": {},
+  "local_only": true
+}

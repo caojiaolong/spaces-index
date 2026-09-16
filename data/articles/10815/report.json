@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "10815",
+    "title": "MoE环游记：4、难处应当多投入",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/10815",
+    "date": "2025-03-28",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 87,
+    "display_formula_count": 10,
+    "image_count": 0,
+    "heading_count": 6,
+    "code_block_count": 1,
+    "source_text_sha256": "5d123e4385844a857206267bba0d9268ca647ca2fe9eca0dbfad802ac68e360d",
+    "output_text_sha256": "5d123e4385844a857206267bba0d9268ca647ca2fe9eca0dbfad802ac68e360d",
+    "latex_sha256": "92f43010cb23dd388feb80c9dadfeb820cf4a39b7d9832f3a32a72baf5379146",
+    "body_sha256": "7532187daa0a2d9b2b50fd0908fc4e9ef71482450e6dc3feb064574844c3fec4",
+    "converter_version": 1,
+    "markdown_sha256": "ad5cbb7981022fb2c3ba7c55f764318b650fa65cb0257f364eea7db120953ad3"
+  },
+  "fetched_at": "2026-09-14T12:43:20+00:00",
+  "source_snapshot_sha256": "033ef7017dcb638cd2bd386acd6783bb9c0003e6b31c9d60298296d0197927e1",
+  "images": {},
+  "local_only": true
+}

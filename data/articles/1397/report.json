@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "1397",
+    "title": "弹簧双体运动",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/1397",
+    "date": "2011-07-10",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 19,
+    "display_formula_count": 11,
+    "image_count": 0,
+    "heading_count": 0,
+    "code_block_count": 0,
+    "source_text_sha256": "e491180b240d19c311376fa706f5380bae5c820a9b3504ac583a3b4e41014dee",
+    "output_text_sha256": "e491180b240d19c311376fa706f5380bae5c820a9b3504ac583a3b4e41014dee",
+    "latex_sha256": "514257e0fec0ded5e81b2dee5de437d5384d9cc5d15bc5df9212a68fcdeb6aaa",
+    "body_sha256": "2fab48335e02ff041a6c6b043519819f476c28dc3990b13708d2df2b47ff290d",
+    "converter_version": 1,
+    "markdown_sha256": "c84d393a66d53c8123b7d20389eb9cb76da2083a9fd14909d490fc5b4dc0bd6f"
+  },
+  "fetched_at": "2026-09-14T14:19:47+00:00",
+  "source_snapshot_sha256": "f41a7352f26d4948bb4b03aa63eabb8f46f481c287f0d27e12ce3124b54ce1a4",
+  "images": {},
+  "local_only": true
+}

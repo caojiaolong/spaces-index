@@ -1,0 +1,39 @@
+{
+  "metadata": {
+    "id": "4096",
+    "title": "科学空间“微信群|聊天机器人”上线测试",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/4096",
+    "date": "2016-11-24",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "source_dom_exact": true,
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "attributes_exact": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 0,
+    "display_formula_count": 0,
+    "image_count": 0,
+    "heading_count": 0,
+    "code_block_count": 0,
+    "source_text_sha256": "2cfab87f2ff2c5f250e15f1827bae761bc5792c10889226b1b236590b56a3f5e",
+    "output_text_sha256": "2cfab87f2ff2c5f250e15f1827bae761bc5792c10889226b1b236590b56a3f5e",
+    "latex_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "body_sha256": "9c36b63abf650ae0da87c5652de550bb673d6c9ff6340ce5357066967c81dcb6",
+    "converter_version": 1,
+    "format": "html-v1",
+    "source_warnings": [],
+    "fallback_reason": "Unsupported body element: del",
+    "markdown_sha256": "3fe50ab45375aafd2f353ffa3e2c84e2b0af7c143bb2fefcbaa662d14914efcb"
+  },
+  "fetched_at": "2026-09-14T13:35:58+00:00",
+  "source_snapshot_sha256": "94fa90aaf6e6aeaab988e6db43f261bf4d6e6219c245d149574017ba053f8265",
+  "images": {},
+  "local_only": true
+}

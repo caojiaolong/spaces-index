@@ -1,0 +1,21 @@
+<div class="PostContent" id="PostContent">
+<p>前段时间看到了“<a href="https://www.biendata.xyz/competition/sohu_2021/" target="_blank">2021搜狐校园文本匹配算法大赛</a>”，觉得赛题颇有意思，便尝试了一下，不过由于比赛本身只是面向在校学生，所以笔者是不能作为正式参赛人员参赛的，因此把自己的做法开源出来，作为比赛baseline供大家参考。</p><blockquote class="cite"><div><strong>Github链接：<a href="https://github.com/bojone/sohu2021-baseline" target="_blank">https://github.com/bojone/sohu2021-baseline</a></strong></div></blockquote><h2 id="赛题介绍">赛题介绍</h2><p>顾名思义，比赛的任务是文本匹配，即判断两个文本是否相似，本来是比较常规的任务，但有意思的是它分了多个子任务。具体来说，它分A、B两大类，A类匹配标准宽松一些，B类匹配标准严格一些，然后每个大类下又分为“短短匹配”、“短长匹配”、“长长匹配”3个小类，因此，虽然任务类型相同，但严格来看它是六个不同的子任务。</p><pre class="line-numbers"><code class="language-python"># A类样本示例
+{
+    "source": "英国伦敦，20/21赛季英超第20轮，托特纳姆热刺VS利物浦。热刺本赛季18轮联赛是9胜6平3负，目前积33分排名联赛第5位。利物浦本赛季19轮联赛是9胜7平3负，目前积34分排名联赛第4位。从目前的走势来看，本场比赛从热刺的角度来讲，是非常被动的。最终，本场比赛的比分为托特纳姆热刺1-3利",
+    "target": " 北京时间1月29日凌晨4时，英超联赛第20轮迎来一场强强对话，热刺坐镇主场迎战利物浦。  热刺vs利物浦，比赛看点如下： 第一：热刺能否成功复仇？双方首回合，热刺客场1-2被利物浦绝杀，赛后穆里尼奥称最好的球队输了，本轮热刺主场迎战利物浦，借着红军5轮不胜的低迷状态，能否成功复仇？ 第二：利物浦近",
+    "labelA": "1"
+}
+
+# B类样本示例
+{
+    "source": "英国伦敦，20/21赛季英超第20轮，托特纳姆热刺VS利物浦。热刺本赛季18轮联赛是9胜6平3负，目前积33分排名联赛第5位。利物浦本赛季19轮联赛是9胜7平3负，目前积34分排名联赛第4位。从目前的走势来看，本场比赛从热刺的角度来讲，是非常被动的。最终，本场比赛的比分为托特纳姆热刺1-3利",
+    "target": " 北京时间1月29日凌晨4时，英超联赛第20轮迎来一场强强对话，热刺坐镇主场迎战利物浦。  热刺vs利物浦，比赛看点如下： 第一：热刺能否成功复仇？双方首回合，热刺客场1-2被利物浦绝杀，赛后穆里尼奥称最好的球队输了，本轮热刺主场迎战利物浦，借着红军5轮不胜的低迷状态，能否成功复仇？ 第二：利物浦近",
+    "labelB": "0"
+}</code></pre><p>一般来说，完成这个任务至少需要两个模型，毕竟A、B两种类型的分类标准是不一样的，如果要做得更精细的话，应该还要做成6个模型。但问题是，如果独立地训练6个模型，那么往往比较费力，而且不同任务之间不能相互借鉴来提升效果，所以很自然地我们应该能想到共享一部分参数变成一个多任务学习问题。</p><h2 id="模型简介">模型简介</h2><p>当然，如果看成是常规的多任务学习问题，那又太一般化了。针对这几个任务“形式一样、标准不一样”的特点，笔者构思了通过条件LayerNorm（Conditional Layer Normalization）来实现用一个模型做这6个子任务。</p><p>关于条件LayerNorm，我们之前在文章<a href="/archives/7124" target="_blank">《基于Conditional Layer Normalization的条件文本生成》</a>也介绍过，虽然当时的例子是文本生成，但是它可用的场景并不局限于此。简单来说，条件LayerNorm就是一种<font color="red">往Transformer里边加入条件向量来控制输出结果</font>的一种方案，它把条件加入到LayerNorm层的$\beta,\gamma$中。</p><p>对于这个比赛的6个任务而言，我们只需要将任务类型作为条件传入到模型中，就可以用同一个模型处理不同6个不同的任务了，示意图如下：<br/>
+</p><div class="pic-container"><div class="typecho-caption aligncenter" style="max-width: 560px"><div style="margin: 5px"><a href="/usr/uploads/2021/04/2746310308.png" target="_blank" title="点击查看原图"><img alt="用条件LayerNorm处理多个相似任务" src="/usr/uploads/2021/04/2746310308.png" style="max-width: 100%"/></a></div><p class="typecho-caption-text">用条件LayerNorm处理多个相似任务</p></div></div><p>这样一来，整个模型都是共用的，只是在输入句子的时候同时将任务类型的id作为输入，实现了参数的最大共用化。</p><h2 id="代码参考">代码参考</h2><p>关于条件LayerNorm的实现，早已内嵌在bert4keras中，所以想到这个设计后，用bert4keras来实现就是水到渠成了，参考代码如下：</p><blockquote class="cite"><div><strong>Github链接：<a href="https://github.com/bojone/sohu2021-baseline" target="_blank">https://github.com/bojone/sohu2021-baseline</a></strong></div></blockquote><p>代码使用了<a href="/archives/8265" target="_blank">RoFormer</a>为基准模型，这主要考虑到在“长长匹配”中，两个文本拼接起来的总长度还是很长的，用以词为单位的RoFormer可以缩短序列长度，同样的算力下可以处理更长的文本，而且RoFormer所使用的RoPE位置编码理论上可以处理任意长的文本。代码测了几次，线下的F1为0.74左右，线上测试集提交后的F1为0.73上下。在3090上测试，单个epoch好像是1个小时左右，跑4、5个epoch就差不多了。</p><p>现在的代码是所有数据混合在一起然后随机训练的，这样做有个小缺点，就是原来的序列长度比较短的样本也填充到最大长度进行训练了，导致了短序列样本训练速度变慢（当然肯定比你独立训练6个模型要快），可以做的优化是在分batch的时候尽量让同一个batch的样本长度相近，不过我懒得写了，留给大家优化吧～</p><h2 id="文章小结">文章小结</h2><p>本文分享了一个搜狐文本匹配的baseline，主要是通过条件LayerNorm来增加模型的多样性，以实现同一模型处理不同类型的数据、形成不同输出的目的。</p>
+
+
+
+
+
+</div>

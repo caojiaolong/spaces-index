@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "300",
+    "title": "哥本哈根气候大会召开情况",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/300",
+    "date": "2009-12-08",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 0,
+    "display_formula_count": 0,
+    "image_count": 0,
+    "heading_count": 0,
+    "code_block_count": 0,
+    "source_text_sha256": "096a70dd39ca6184f0bb39f87efd52cf43b859cb780448bee2abd10cab9904d6",
+    "output_text_sha256": "096a70dd39ca6184f0bb39f87efd52cf43b859cb780448bee2abd10cab9904d6",
+    "latex_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "body_sha256": "d03ef37dc20ed91a4636e6487ca60b6d740f9f4c59c333fe0231bbd187008b54",
+    "converter_version": 1,
+    "markdown_sha256": "b1414991c3d31a3329ea902676cccb95158126df2cf76a712b0d5177513b1214"
+  },
+  "fetched_at": "2026-09-14T14:45:23+00:00",
+  "source_snapshot_sha256": "4b516feecb4b581e85e2aa9060f4e3c9e859cbec36f7bd10874b6e7aaf30b421",
+  "images": {},
+  "local_only": true
+}

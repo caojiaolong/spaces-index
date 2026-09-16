@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "1677",
+    "title": "我的大学，我的未来",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/1677",
+    "date": "2012-07-25",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 0,
+    "display_formula_count": 0,
+    "image_count": 1,
+    "heading_count": 0,
+    "code_block_count": 0,
+    "source_text_sha256": "87854534f397e60db6c172b932f469ebae00994f24ef09f02e15f9ee8e2c5a35",
+    "output_text_sha256": "87854534f397e60db6c172b932f469ebae00994f24ef09f02e15f9ee8e2c5a35",
+    "latex_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "body_sha256": "3356163f4c5c19b65dfc4e161aa9285e5dd4cc34f7c7b0c8b249d95e5b4369e2",
+    "converter_version": 1,
+    "markdown_sha256": "a215ce04c25b514efeb4ce32c89df10aeebaf1189a6f467dc30523dff753b93c"
+  },
+  "fetched_at": "2026-09-14T14:12:01+00:00",
+  "source_snapshot_sha256": "7327b5b65d19f55312c7c3222b7882595df67e7ebf9a223da9ec6cb318187799",
+  "images": {},
+  "local_only": true
+}

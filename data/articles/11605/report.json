@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "11605",
+    "title": "MuP之上：2. 线性层与最速下降",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/11605",
+    "date": "2026-02-15",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 76,
+    "display_formula_count": 15,
+    "image_count": 0,
+    "heading_count": 7,
+    "code_block_count": 0,
+    "source_text_sha256": "4d3b76dfc2799b529518ef4beccca8f652911ca15707e9b4ddc70559da1afb3e",
+    "output_text_sha256": "4d3b76dfc2799b529518ef4beccca8f652911ca15707e9b4ddc70559da1afb3e",
+    "latex_sha256": "383520bf65ea60478f67af3c9dd562206590ad0f42dc452692f6a7eb5b5f9ada",
+    "body_sha256": "7f71147c61aae4028de7ea1f82c7ce9d28ac71519a36dc6adb4ed878329b0a38",
+    "converter_version": 1,
+    "markdown_sha256": "831928e2e4ecff3fd24c8789942049dd81347c5e44113bdcd47326e9fbb42600"
+  },
+  "fetched_at": "2026-09-14T12:37:13+00:00",
+  "source_snapshot_sha256": "9b881de1af638bf3670e3dfbc4bbb5561c9f2b660bcc2effd0ae3016bdc45d57",
+  "images": {},
+  "local_only": true
+}

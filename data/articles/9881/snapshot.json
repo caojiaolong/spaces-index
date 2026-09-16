@@ -1,0 +1,17 @@
+{
+  "metadata": {
+    "id": "9881",
+    "title": "生成扩散模型漫谈（二十一）：中值定理加速ODE采样",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/9881",
+    "date": "2023-12-07",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "fetched_at": "2026-09-14T12:50:39+00:00",
+  "source_snapshot_sha256": "75d537ae5ba00a7d70eb00f53e54846c63128870c1af9848db685a22b9890d0b",
+  "validators": {
+    "etag": null,
+    "last_modified": null
+  }
+}

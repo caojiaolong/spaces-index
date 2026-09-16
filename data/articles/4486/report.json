@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "4486",
+    "title": "《交换代数导引》参考答案",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/4486",
+    "date": "2017-07-03",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 0,
+    "display_formula_count": 0,
+    "image_count": 0,
+    "heading_count": 0,
+    "code_block_count": 0,
+    "source_text_sha256": "0ada74ed7e86741737c97d30f6494a886469fa47db8ea7091559fa309774ad64",
+    "output_text_sha256": "0ada74ed7e86741737c97d30f6494a886469fa47db8ea7091559fa309774ad64",
+    "latex_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "body_sha256": "a2dbcaad183387e7ee2f577e717242980a675604b1ec3e6d5e5c1bac8ded1c0f",
+    "converter_version": 1,
+    "markdown_sha256": "5b292167df463ddfa2fdadc7d06ddb4cfaeb87aa0adca5cffc25b063dff07cd8"
+  },
+  "fetched_at": "2026-09-14T13:31:48+00:00",
+  "source_snapshot_sha256": "fce40e282a70ece1bc0358a745f79e9ff16f670b4f25e0ed7dd158cbb28256a5",
+  "images": {},
+  "local_only": true
+}

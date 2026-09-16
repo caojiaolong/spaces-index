@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "84",
+    "title": "I care ! 我在乎，我行动！| 绿色和平",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/84",
+    "date": "2009-08-18",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 0,
+    "display_formula_count": 0,
+    "image_count": 4,
+    "heading_count": 0,
+    "code_block_count": 0,
+    "source_text_sha256": "3fb9593c0019db6ac4bc1231ee3410fcdd90fa4f2aea65ed879ac14889474655",
+    "output_text_sha256": "3fb9593c0019db6ac4bc1231ee3410fcdd90fa4f2aea65ed879ac14889474655",
+    "latex_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "body_sha256": "9987ca7b6cbc8302f8c33382fda71c5f5c5b6cb475d48e529786ae9115284835",
+    "converter_version": 1,
+    "markdown_sha256": "46c071c074597b4d957e8e33bdc0b1a481b86dacc89628810b19d1de357416cf"
+  },
+  "fetched_at": "2026-09-14T14:58:20+00:00",
+  "source_snapshot_sha256": "2b5df43c3a510161c13577911536fcedf3c5aea25ae9b135c17d0e87d02752ee",
+  "images": {},
+  "local_only": true
+}

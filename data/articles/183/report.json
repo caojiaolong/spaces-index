@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "183",
+    "title": "德国女作家摘得2009诺贝尔文学奖",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/183",
+    "date": "2009-10-10",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 0,
+    "display_formula_count": 0,
+    "image_count": 2,
+    "heading_count": 0,
+    "code_block_count": 0,
+    "source_text_sha256": "b8fb5a3fa97ab5fc36a3c950646775b5fa75f468fb5c10756b5be14466dd270f",
+    "output_text_sha256": "b8fb5a3fa97ab5fc36a3c950646775b5fa75f468fb5c10756b5be14466dd270f",
+    "latex_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "body_sha256": "20c21bb597f96e32a4908c51a669963c5e855211cc96cbe31a8b9552fd25b4a0",
+    "converter_version": 1,
+    "markdown_sha256": "f191c90ec1d6ad818da8ce79e008a0f78450b60f45c8b1c9f24932d04621ca8d"
+  },
+  "fetched_at": "2026-09-14T14:48:47+00:00",
+  "source_snapshot_sha256": "d298222000e5637037840e26c150221f5426b33deadeddd9361eca985f065ccc",
+  "images": {},
+  "local_only": true
+}

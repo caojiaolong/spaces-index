@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "3766",
+    "title": "路径积分系列：5.例子和综述",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/3766",
+    "date": "2016-06-09",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 32,
+    "display_formula_count": 8,
+    "image_count": 0,
+    "heading_count": 2,
+    "code_block_count": 0,
+    "source_text_sha256": "8adaad95d11083c20c0cfbce368d8d861b585013f512b6ef39b4e85ab590a199",
+    "output_text_sha256": "8adaad95d11083c20c0cfbce368d8d861b585013f512b6ef39b4e85ab590a199",
+    "latex_sha256": "49b3e9c647d670cf684b5ee685b90d90311d0a6533d11c6b2243f970296526ce",
+    "body_sha256": "3cdf586e849249d83d53f0838e82c9501128c52fa36454ee32bf1603047d347b",
+    "converter_version": 1,
+    "markdown_sha256": "c8719b61c0850254e31676bf1f55d5ba021bf66dfcd282e300ed091424938b18"
+  },
+  "fetched_at": "2026-09-14T13:40:30+00:00",
+  "source_snapshot_sha256": "de0d664b21be5f0b9ca9ccdd0ae90d5537c4a83823b2a4793d2f597f4a20e29f",
+  "images": {},
+  "local_only": true
+}

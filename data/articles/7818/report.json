@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "7818",
+    "title": "TeaForN：让Teacher Forcing更有“远见”一些",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/7818",
+    "date": "2020-10-27",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 64,
+    "display_formula_count": 5,
+    "image_count": 5,
+    "heading_count": 7,
+    "code_block_count": 0,
+    "source_text_sha256": "2e37e8db2db9b716978fc399367d6ff7aff042af105ea408d2c8e72834346bfc",
+    "output_text_sha256": "2e37e8db2db9b716978fc399367d6ff7aff042af105ea408d2c8e72834346bfc",
+    "latex_sha256": "c28381ee3ece1a52e99fabb7de5a7a2a49781a855c5daf7d511b1c31616db52b",
+    "body_sha256": "4953098f213474bb7441ac4d3fdc11f3ec46fc59958d7d59ef8eeda4a977117b",
+    "converter_version": 1,
+    "markdown_sha256": "646d308d4dfea7bd223667f7697d0651a1c659d896be4bc92b0f5175bf909122"
+  },
+  "fetched_at": "2026-09-14T13:10:35+00:00",
+  "source_snapshot_sha256": "5daea7c692fb4b262cf36cc121391d2d332221c06319117fdc4bf1ccf95c9b16",
+  "images": {},
+  "local_only": true
+}

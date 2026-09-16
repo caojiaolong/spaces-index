@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "2805",
+    "title": "从费马大定理谈起（一）：背景简介",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/2805",
+    "date": "2014-08-15",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 7,
+    "display_formula_count": 0,
+    "image_count": 1,
+    "heading_count": 0,
+    "code_block_count": 0,
+    "source_text_sha256": "f42173fba445b8dc1f665b10a1f1ff4269382526597d77efe7840128f2f10fab",
+    "output_text_sha256": "f42173fba445b8dc1f665b10a1f1ff4269382526597d77efe7840128f2f10fab",
+    "latex_sha256": "c71f34cc60a28035ab24606cbf7b7f9012f09e2fcc04018db6dff474132756df",
+    "body_sha256": "a3a7ab6a3065ad36e06b5ba18bbea0c7b4983f29b434cad08c0c61992936e27e",
+    "converter_version": 1,
+    "markdown_sha256": "620ee8624954bf5548cfa03b40a4b6b7f2884b8db77e5f4112d3da42807b2dfa"
+  },
+  "fetched_at": "2026-09-14T13:52:38+00:00",
+  "source_snapshot_sha256": "bfceccd266727f3171e626111e72b260cc04cea1a3859a83a55e312d04aaea5b",
+  "images": {},
+  "local_only": true
+}

@@ -1,0 +1,19 @@
+<div class="PostContent" id="PostContent">
+<p>前些时间发表了<strong><a href="/archives/26/" target="_blank">三次方程的一般求解</a></strong> ，并通过了维基百科链接到了这里来，想不到带来了很多的人气，看到大家还是比较需要这方面的资料的。在此之前曾经承诺过会把4次方程的求根公式也写出来，现在终于有时间了，就此一写，希望能够为大家带来帮助。</p><p>$$ax^4+bx^3+cx^2+dx+e=0(a!=0)$$</p><p><strong>仍然是这两句话：</strong>网上的资料中，一是缺乏描述专业数学公式的相关程序（很多网站都是这样）；二是语言过于专业，不能大众化（如<a href="http://zh.wikipedia.org/wiki/%E5%9B%9B%E6%AC%A1%E6%96%B9%E7%A8%8B" target="_blank">维基百科</a>）。<u>如果一开始我就去看wiki，那么我保证我到现在还不能弄懂。</u></p><p><span style="color:Green">话说卡丹从塔塔利亚的口中得到了三次方程的求根公式之后，他又有了一个不平凡的遭遇。一天，一个叫“费拉里”的人成为了他家中的仆人。然而，这个“仆人”却表现出了高超的数学能力，因此，卡丹和费拉里的关系很快地从主仆关系转变为师生关系。通过听卡尔达诺讲课，学习了拉丁语、希腊语和数学，后来，还作出了一项空前的成就，那就是发现了“四次方程的根式求解方法”！</span></p><p></p><p><b>分析过程：</b></p><blockquote><p>与卡丹的三次方程解法同出一辙，费拉里先把一般的四次方程<br/>
+$ax^4+bx^3+cx^2+dx+e=0$，<br/>
+通过设$y=x+{b}/{4a}$，变成关于y的四次方程<br/>
+$y^4+py^2+qy+r=0$ <span style="color:Red">———(A)</span></p><p>在这道方程中，增加一个额外的变量z，并作以下变换：<br/>
+$(y^2+p+z)^2=(p+2z)y^2-qy+(p^2-r+2pz+z^2)$ <span style="color:red">———(B)</span></p><p>可以证明，<strong>(A)</strong>和<strong>(B)</strong>等价。</p><p>如果我们可以把<strong>(B)</strong>的右边也变成<span style="color:Red">完全平方形式</span>，那么原方程就可以<u>变成关于y的一元二次方程</u>了。究竟怎样才能够把<strong>(B)</strong>的右边变成我们希望的完全平方形式呢？<strong>这取决于z。</strong></p><p>我们知道，如果存在一道二次三项式$ax^2+bx+c(a!=0)$，使得这一道二次三项式为完全平方式的充分条件为$b^2-4ac=0$。而<strong>(B)</strong>右端正是这样的一条二次三项式，因此我们不妨令<br/>
+$q^2-4(p+2z)(p^2-r+2pz+z^2)=0$ <span style="color:Red">———(C)</span></p><p>那么就实现了我们的目的，而<strong>(C)</strong>是关于z的三次方程，是可以求解的。这样，我们求出了z后，可以把<strong>(B)</strong>两端同时开方，变为关于y的两道二次方程。这样可以求出4个y（一般情形），进而求出4个x。</p></blockquote><p></p><p><span style="color:Blue"><strong>因此，根式求解4次方程的一般步骤为：</strong></span><br/>
+1. 通过设$y=x+{b}/{4a}$，变成关于y的四次方程$y^4+py^2+qy+r=0$。<br/>
+2. 解方程$q^2-4(p+2z)(p^2-r+2pz+z^2)=0$。<br/>
+3. 解方程$(y^2+p+z)^2=(p+2z)y^2-qy+(p^2-r+2pz+z^2)$<br/>
+4. 解方程$y=x+{b}/{4a}$。</p><p><span style="color:Red"><strong>可以想象，四次方程一般情形的求根公式会有多么的复杂！因此，似乎还没有这样的能人把这条公式写出来（或者说没有人愿意去写）！只是借助计算机写了出来</strong></span></p><p><span style="color:Blue"><strong>一元4次方程的4个根:</strong></span><br/>
+(1) </p><div class="pic-container"><div class="typecho-caption aligncenter" style="max-width: 500px"><div style="margin: 5px"><a href="/usr/uploads/2009/09/20090905165823.png" target="_blank"><img alt="" src="/usr/uploads/2009/09/20090905165823.png" style="max-width: 100%"/></a></div><p class="typecho-caption-text"></p></div></div><p>(2) </p><div class="pic-container"><div class="typecho-caption aligncenter" style="max-width: 500px"><div style="margin: 5px"><a arget="_blank" href="/usr/uploads/2009/09/20090905165833.png" t=""><img alt="" src="/usr/uploads/2009/09/20090905165833.png" style="max-width: 100%"/></a></div><p class="typecho-caption-text"></p></div></div><p>(3) </p><div class="pic-container"><div class="typecho-caption aligncenter" style="max-width: 500px"><div style="margin: 5px"><a href="/usr/uploads/2009/09/20090905165839.png" target="_blank"><img alt="" src="/usr/uploads/2009/09/20090905165839.png" style="max-width: 100%"/></a></div><p class="typecho-caption-text"></p></div></div><p>(4) </p><div class="pic-container"><div class="typecho-caption aligncenter" style="max-width: 500px"><div style="margin: 5px"><a href="/usr/uploads/2009/09/20090905165845.png" target="_blank"><img alt="" src="/usr/uploads/2009/09/20090905165845.png" style="max-width: 100%"/></a></div><p class="typecho-caption-text"></p></div></div><p>可以参考下：<br/>
+<a href="http://planetmath.org/encyclopedia/QuarticFormula.html" target="_blank">http://planetmath.org/encyclopedia/QuarticFormula.html</a></p><p><a href="http://www.wolframalpha.com/input/?i=a+x%5E4%2Bb+x%5E3%2Bc+x%5E2%2Bd+x%2Be+%3D+0" target="_blank">http://www.wolframalpha.com/input/?i=a+x%5E4%2Bb+x%5E3%2Bc+x%5E2%2Bd+x%2Be+%3D+0</a></p><p><strong><span style="color:Green">最后，现在看来，卡丹这个“伯乐”发现了费拉里这匹“千里马”，使得他能够在数学上绽放光彩！</span></strong></p>
+
+
+
+
+
+</div>

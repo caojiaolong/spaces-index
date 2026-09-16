@@ -1,0 +1,15 @@
+{
+  "version": 1,
+  "images": {
+    "https://spaces.ac.cn/usr/uploads/2017/04/626221308.png": {
+      "status": "cached",
+      "file": "f25ecb049b6c04d0c61ebcf355da0ea3cf4dc20996d934b0000cf833e1d8aad0.png",
+      "sha256": "f25ecb049b6c04d0c61ebcf355da0ea3cf4dc20996d934b0000cf833e1d8aad0",
+      "bytes": 82166,
+      "checked_at": "2026-09-16T09:27:46+00:00",
+      "fetched_url": "https://spaces.ac.cn/usr/uploads/2017/04/626221308.png",
+      "etag": "\"5a6ec744-140f6\"",
+      "last_modified": "Mon, 29 Jan 2018 07:03:32 GMT"
+    }
+  }
+}

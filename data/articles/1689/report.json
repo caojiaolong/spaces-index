@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "1689",
+    "title": "[共享]不等式文集",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/1689",
+    "date": "2012-08-08",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 0,
+    "display_formula_count": 0,
+    "image_count": 0,
+    "heading_count": 0,
+    "code_block_count": 0,
+    "source_text_sha256": "38552cf18ea15cdb9852b4c13a54dbbe8cfe8f46a472bde4abf347b60fe020bd",
+    "output_text_sha256": "38552cf18ea15cdb9852b4c13a54dbbe8cfe8f46a472bde4abf347b60fe020bd",
+    "latex_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "body_sha256": "399ed706382505a60ff50a2dfafde118d5a7b4c44a7bd1d25af59c77a7d7f973",
+    "converter_version": 1,
+    "markdown_sha256": "296b2e594617bd13cc47bd815f98821fb4773a175c441041faf823407134ae9d"
+  },
+  "fetched_at": "2026-09-14T14:11:30+00:00",
+  "source_snapshot_sha256": "f7e915fbfd89fa6935937ec2b3b84c3889a0e89b9e1429b19f1d1ee8f123c8ce",
+  "images": {},
+  "local_only": true
+}

@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "11760",
+    "title": "MoE环游记：8、强制序列级均衡",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/11760",
+    "date": "2026-05-22",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 85,
+    "display_formula_count": 7,
+    "image_count": 3,
+    "heading_count": 11,
+    "code_block_count": 0,
+    "source_text_sha256": "b50d11cfb7146d8d7019811c43f1c97978f3036a47489b9cfd52ffa69ac64d69",
+    "output_text_sha256": "b50d11cfb7146d8d7019811c43f1c97978f3036a47489b9cfd52ffa69ac64d69",
+    "latex_sha256": "8f537fcdb0aa148ff825535eade7877cec95a68e86ba6109af45e9b234fbe5b8",
+    "body_sha256": "29641681aaf8054b408e80e3817e37376b278e558dad283ee136570d8438eccc",
+    "converter_version": 1,
+    "markdown_sha256": "cc4057da8104994bcd341028b99a4371f67f2a055d78514d39084b09fe98b2ee"
+  },
+  "fetched_at": "2026-09-14T12:31:17+00:00",
+  "source_snapshot_sha256": "2c8815667b6c7a453a2e70b01a179d78058df4cf57977367cd94824604d00a93",
+  "images": {},
+  "local_only": true
+}

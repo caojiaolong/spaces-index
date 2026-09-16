@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "1543",
+    "title": "今天出发，奔向自招考试...",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/1543",
+    "date": "2012-02-10",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 0,
+    "display_formula_count": 0,
+    "image_count": 0,
+    "heading_count": 0,
+    "code_block_count": 0,
+    "source_text_sha256": "d5ba90edc3a03e96e7c8b1eef30f38dddfde2d78b8c0e010e2460f9008010b80",
+    "output_text_sha256": "d5ba90edc3a03e96e7c8b1eef30f38dddfde2d78b8c0e010e2460f9008010b80",
+    "latex_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "body_sha256": "2e9aa66b944b0df40603e09c90411ec6cd90ef6c80dbec44c85436c1d7c9fa72",
+    "converter_version": 1,
+    "markdown_sha256": "05aeb95913c76657d611b5c8c18ba09fca3327f91f4daca2f6d9996bdd73c741"
+  },
+  "fetched_at": "2026-09-14T14:15:36+00:00",
+  "source_snapshot_sha256": "fd8862a478b9aabfff20e4659e149641cd520e070002daea498fcdff229d08f1",
+  "images": {},
+  "local_only": true
+}

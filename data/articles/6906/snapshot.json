@@ -1,0 +1,17 @@
+{
+  "metadata": {
+    "id": "6906",
+    "title": "开源一版DGCNN阅读理解问答模型（Keras版）",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/6906",
+    "date": "2019-08-20",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "fetched_at": "2026-09-14T13:18:05+00:00",
+  "source_snapshot_sha256": "e3af2ca6eb656ef39c13b58688f13d0b959a1975e66979d1257dcc73626d3e99",
+  "validators": {
+    "etag": null,
+    "last_modified": null
+  }
+}

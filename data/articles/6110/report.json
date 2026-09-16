@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "6110",
+    "title": "RSGAN：对抗模型中的“图灵测试”思想",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/6110",
+    "date": "2018-10-22",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 59,
+    "display_formula_count": 17,
+    "image_count": 1,
+    "heading_count": 12,
+    "code_block_count": 0,
+    "source_text_sha256": "9e84085fbb88f3d043e44ac30f93c6bf512b6d1a32c80e24f34ed5d523e813f3",
+    "output_text_sha256": "9e84085fbb88f3d043e44ac30f93c6bf512b6d1a32c80e24f34ed5d523e813f3",
+    "latex_sha256": "714c2484741408ba230a27618c43ae55319b4b2255423d7d8c3b696dfb810f1a",
+    "body_sha256": "7e4dd0f0a32c66757c4a931b577d33ec58cca208b6b14269536173f0ccba7f19",
+    "converter_version": 1,
+    "markdown_sha256": "2490082ef9ac454afc1f7c9455d5efc4bfba4956ad03ef901b23ec983d5bdfa4"
+  },
+  "fetched_at": "2026-09-14T13:23:34+00:00",
+  "source_snapshot_sha256": "5dd2b74591a5b6329b26105b5ec562e5bf8a9f5f1ccba9033faa7750b37bf69d",
+  "images": {},
+  "local_only": true
+}

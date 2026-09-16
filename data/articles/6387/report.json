@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "6387",
+    "title": "巧断梯度：单个loss实现GAN模型",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/6387",
+    "date": "2019-02-22",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 51,
+    "display_formula_count": 5,
+    "image_count": 0,
+    "heading_count": 6,
+    "code_block_count": 1,
+    "source_text_sha256": "cb2e9a03b5d53ee09567b8d33cb403433d7c4abd07693ec654bbd4547b5c5136",
+    "output_text_sha256": "cb2e9a03b5d53ee09567b8d33cb403433d7c4abd07693ec654bbd4547b5c5136",
+    "latex_sha256": "5880985c977e7ffa5c5e2ca4960d2dcc0e9589d77809a6c229d107995495aef5",
+    "body_sha256": "24ba3e8e8eec8c7d2a07838348fcd89ff3c75a158ca1e6b97347a6fe724d837b",
+    "converter_version": 1,
+    "markdown_sha256": "b174d21bb83ee091de64b03297fdaa124a85dd61f04d6e52074e2fa534e124ed"
+  },
+  "fetched_at": "2026-09-14T13:21:29+00:00",
+  "source_snapshot_sha256": "f481173ce8458617a65d7e71a15fe690c6cfe89f49ba57c5031d15101de6761e",
+  "images": {},
+  "local_only": true
+}

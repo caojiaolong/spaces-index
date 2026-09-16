@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "121",
+    "title": "美绘制太空引力高速路帮飞船穿越太阳系(图)",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/121",
+    "date": "2009-09-13",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 0,
+    "display_formula_count": 0,
+    "image_count": 2,
+    "heading_count": 0,
+    "code_block_count": 0,
+    "source_text_sha256": "9456559378cc8e0a52551b048a15e39b0df1f079dbe6daed8c93753ec51d1b43",
+    "output_text_sha256": "9456559378cc8e0a52551b048a15e39b0df1f079dbe6daed8c93753ec51d1b43",
+    "latex_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "body_sha256": "d8f43bfde54133f5a2689fdfe1da33ebfa66df4266243cc25d5e397ef15eb982",
+    "converter_version": 1,
+    "markdown_sha256": "6f1e8dfec8eeba4ed780741573db4e859ea2bd04640cfd7df27e30e7a909a5d4"
+  },
+  "fetched_at": "2026-09-14T14:53:27+00:00",
+  "source_snapshot_sha256": "5dc99507ba61cc7a65da2e41f547fa546a1213035c991eb027e84f893d871fdc",
+  "images": {},
+  "local_only": true
+}

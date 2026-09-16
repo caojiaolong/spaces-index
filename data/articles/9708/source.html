@@ -1,0 +1,154 @@
+<div class="PostContent" id="PostContent">
+<p>自从在<a href="/archives/9706" target="_blank">《Transformer升级之路：11、将β进制位置进行到底》</a>中引入混合进制的思路进一步推广了NTK-aware Scaled RoPE后，笔者感觉类似思路的效果已经达到了上限，想要更大幅度的提升就必须另辟蹊径了。这时候笔者想起了此前构思过的一个思路，该思路由于复杂度较高所以被搁置下了，既然现在已经遇到了瓶颈，那么“唯一的办法就是最好的办法”，于是便将它重拾起来。</p><p>万万没想到的是，尽管该方法增加了一些推理复杂度，但它的实验效果却惊人地好——甚至隐约有无限的长度外推能力！因此，笔者迫不及待地撰写了本文来分享该方法。由于形式上跟ReLU激活函数的相似性，所以笔者将该方法命名为“<font color="red">ReRoPE (Rectified Rotary Position Embeddings)</font>”。</p><h2 id="重温">重温</h2><p>我们知道，<a href="/archives/8265" target="_blank">RoPE</a>形式上是一种绝对位置编码，但实际上给Attention带来的是相对位置信息，即如下的<a href="https://en.wikipedia.org/wiki/Toeplitz_matrix" target="_blank">Toeplitz矩阵</a>：<br/>
+\begin{equation}\begin{pmatrix}0 &amp; \\<br/>
+1 &amp; 0 &amp; \\<br/>
+2 &amp; 1 &amp; 0 &amp;\\<br/>
+3 &amp; 2 &amp; 1 &amp; 0 &amp; \\<br/>
+\ddots &amp; 3 &amp; 2 &amp; 1 &amp; 0 &amp; \\<br/>
+\ddots &amp; \ddots &amp; 3 &amp; 2 &amp; 1 &amp; 0 &amp; \\<br/>
+\ddots &amp; \ddots &amp; \ddots &amp; \ddots &amp; \ddots &amp; \ddots &amp; \ddots \\<br/>
+\small{L - 2} &amp; \ddots &amp; \ddots &amp; \ddots &amp; \ddots &amp; \ddots &amp; \ddots &amp; \ddots \\<br/>
+\small{L - 1} &amp; \small{L - 2} &amp; \ddots &amp; \ddots &amp; \ddots &amp; 3 &amp; 2 &amp; 1 &amp; 0 &amp; \\<br/>
+\end{pmatrix}\label{eq:rope}\end{equation}<br/>
+这里的$L$是当前样本长度。当$L$明显超出了训练长度时，多出来的位置由于没有被训练过，所以无法保证效果，这就是直接外推（Length Extrapolation）表现通常比较差的原因。</p><p>后来，研究人员提出了位置内插（Position Interpolation），它相当于将相对位置矩阵改为：<br/>
+\begin{equation}\begin{pmatrix}0 &amp; \\<br/>
+\frac{1}{k} &amp; 0 &amp; \\<br/>
+\frac{2}{k} &amp; \frac{1}{k} &amp; 0 &amp;\\<br/>
+\frac{3}{k} &amp; \frac{2}{k} &amp; \frac{1}{k} &amp; 0 &amp; \\<br/>
+\ddots &amp; \frac{3}{k} &amp; \frac{2}{k} &amp; \frac{1}{k} &amp; 0 &amp; \\<br/>
+\ddots &amp; \ddots &amp; \frac{3}{k} &amp; \frac{2}{k} &amp; \frac{1}{k} &amp; 0 &amp; \\<br/>
+\ddots &amp; \ddots &amp; \ddots &amp; \ddots &amp; \ddots &amp; \ddots &amp; \ddots \\<br/>
+\small{\frac{L-2}{k}} &amp; \ddots &amp; \ddots &amp; \ddots &amp; \ddots &amp; \ddots &amp; \ddots &amp; \ddots \\<br/>
+\small{\frac{L-1}{k}} &amp; \small{\frac{L-1}{k}} &amp; \ddots &amp; \ddots &amp; \ddots &amp; \frac{3}{k} &amp; \frac{2}{k} &amp; \frac{1}{k} &amp; 0 &amp; \\<br/>
+\end{pmatrix}\end{equation}<br/>
+这样一来，只要调整$k$，就可以保证最大的相对位置也不超过训练长度，因此避免了外推。然而，它使得位置信息更加“拥挤”了，所以还需要进行一定步数的微调才能让模型重新工作。而也正因为避免了外推，所以它所需要的微调步数相比直接外推要少得多（神经网络往往更擅长内插而不是外推）。</p><p>至于后面提出的NTK-aware Scaled RoPE，则是“剑走偏锋”，巧妙地将外推压力平摊到每一个维度上，所以它不微调也能有不错的效果，但它终究还是依赖外推，这是神经网络不擅长的事情，所以效果存在上限，在笔者的实验中，它的Long Context表现还无法很接近训练效果。</p><h2 id="融合">融合</h2><p>我们也可以从语言模型的局域性来考察这些方法。所谓局域性，是指语言模型在推断下一个token时，明显更依赖于邻近的token。直接外推保持了局域性（0附近位置编码不变），效果差是因为引入了超出训练长度的位置编码；位置内插虽然没有外推位置编码，但扰乱了局域性（0附近位置编码被压缩为$1/k$），所以不微调效果也不好；而NTK-aware Scaled RoPE通过“高频外推、低频内插”隐含了两者优点，保证了局域性，又没有明显外推位置编码，所以不微调也有不错的效果。</p><p>有没有能更直接地结合外推和内插的方法呢？有，我们可以设定一个窗口大小$w$，在窗口内我们使用大小为$1$的位置间隔，在窗口外我们使用大小为$1/k$的位置间隔，整个相对位置矩阵如下：<br/>
+\begin{equation}\begin{pmatrix}<br/>
+\color{red}{0} &amp; \\<br/>
+\color{red}{1} &amp; \color{red}{0} &amp; \\<br/>
+\color{red}{2} &amp; \color{red}{1} &amp; \color{red}{0} &amp; \\<br/>
+\color{red}{\ddots} &amp; \color{red}{2} &amp; \color{red}{1} &amp; \color{red}{0} &amp; \\<br/>
+\color{red}{\small{w - 1}} &amp; \color{red}{\ddots} &amp; \color{red}{2} &amp; \color{red}{1} &amp; \color{red}{0} &amp; \\<br/>
+\color{green}{w} &amp; \color{red}{\small{w - 1}} &amp; \color{red}{\ddots} &amp; \color{red}{2} &amp; \color{red}{1} &amp; \color{red}{0} &amp; \\<br/>
+\color{green}{\small{w + \frac{1}{k}}} &amp; \color{green}{w} &amp; \color{red}{\ddots} &amp; \color{red}{\ddots} &amp; \color{red}{2} &amp; \color{red}{1} &amp; \color{red}{0} &amp; \\<br/>
+\color{green}{\small{w + \frac{2}{k}}} &amp; \color{green}{\small{w + \frac{1}{k}}} &amp; \color{green}{\ddots} &amp; \color{red}{\ddots} &amp; \color{red}{\ddots} &amp; \color{red}{2} &amp; \color{red}{1} &amp; \color{red}{0} &amp; \\<br/>
+\color{green}{\ddots} &amp; \color{green}{\small{w + \frac{2}{k}}} &amp; \color{green}{\ddots} &amp; \color{green}{\ddots} &amp; \color{red}{\ddots} &amp; \color{red}{\ddots} &amp; \color{red}{2} &amp; \color{red}{1} &amp; \color{red}{0} &amp; \\<br/>
+\color{green}{\ddots} &amp; \color{green}{\ddots} &amp; \color{green}{\ddots} &amp; \color{green}{\ddots} &amp; \color{green}{\ddots} &amp; \color{red}{\ddots} &amp; \color{red}{\ddots} &amp; \color{red}{\ddots} &amp; \color{red}{\ddots} &amp; \color{red}{\ddots} &amp; \\<br/>
+\color{green}{\ddots} &amp; \color{green}{\ddots} &amp; \color{green}{\ddots} &amp; \color{green}{\small{w + \frac{2}{k}}} &amp; \color{green}{\small{w + \frac{1}{k}}} &amp; \color{green}{w} &amp; \color{red}{\small{w - 1}} &amp; \color{red}{\ddots} &amp; \color{red}{2} &amp; \color{red}{1} &amp; \color{red}{0} &amp; \\<br/>
+\color{green}{\small{w + \frac{L-1-w}{k}}} &amp; \color{green}{\ddots} &amp; \color{green}{\ddots} &amp; \color{green}{\ddots} &amp; \color{green}{\small{w + \frac{2}{k}}} &amp; \color{green}{\small{w + \frac{1}{k}}} &amp; \color{green}{w} &amp; \color{red}{\small{w - 1}} &amp; \color{red}{\ddots} &amp; \color{red}{2} &amp; \color{red}{1} &amp; \color{red}{0} &amp; \\<br/>
+\end{pmatrix}\label{eq:leaky-rerope}\end{equation}<br/>
+只要$w$小于训练长度，那么通过控制$k$，我们就可以在精确保持了局域性的前提下，使得所有位置编码不超过训练长度，简单直接地结合了直接外推和位置内插。</p><p>特别地，矩阵$\eqref{eq:leaky-rerope}$还有一个特别的case：当$k\to\infty$时，它简化为<br/>
+\begin{equation}\begin{pmatrix}<br/>
+\color{red}{0} &amp; \\<br/>
+\color{red}{1} &amp; \color{red}{0} &amp; \\<br/>
+\color{red}{2} &amp; \color{red}{1} &amp; \color{red}{0} &amp; \\<br/>
+\color{red}{\ddots} &amp; \color{red}{2} &amp; \color{red}{1} &amp; \color{red}{0} &amp; \\<br/>
+\color{red}{\small{w - 1}} &amp; \color{red}{\ddots} &amp; \color{red}{2} &amp; \color{red}{1} &amp; \color{red}{0} &amp; \\<br/>
+\color{green}{w} &amp; \color{red}{\small{w - 1}} &amp; \color{red}{\ddots} &amp; \color{red}{2} &amp; \color{red}{1} &amp; \color{red}{0} &amp; \\<br/>
+\color{green}{w} &amp; \color{green}{w} &amp; \color{red}{\ddots} &amp; \color{red}{\ddots} &amp; \color{red}{2} &amp; \color{red}{1} &amp; \color{red}{0} &amp; \\<br/>
+\color{green}{w} &amp; \color{green}{w} &amp; \color{green}{\ddots} &amp; \color{red}{\ddots} &amp; \color{red}{\ddots} &amp; \color{red}{2} &amp; \color{red}{1} &amp; \color{red}{0} &amp; \\<br/>
+\color{green}{\ddots} &amp; \color{green}{w} &amp; \color{green}{\ddots} &amp; \color{green}{\ddots} &amp; \color{red}{\ddots} &amp; \color{red}{\ddots} &amp; \color{red}{2} &amp; \color{red}{1} &amp; \color{red}{0} &amp; \\<br/>
+\color{green}{\ddots} &amp; \color{green}{\ddots} &amp; \color{green}{\ddots} &amp; \color{green}{\ddots} &amp; \color{green}{\ddots} &amp; \color{red}{\ddots} &amp; \color{red}{\ddots} &amp; \color{red}{\ddots} &amp; \color{red}{\ddots} &amp; \color{red}{\ddots} &amp; \\<br/>
+\color{green}{\ddots} &amp; \color{green}{\ddots} &amp; \color{green}{\ddots} &amp; \color{green}{w} &amp; \color{green}{w} &amp; \color{green}{w} &amp; \color{red}{\small{w - 1}} &amp; \color{red}{\ddots} &amp; \color{red}{2} &amp; \color{red}{1} &amp; \color{red}{0} &amp; \\<br/>
+\color{green}{w} &amp; \color{green}{\ddots} &amp; \color{green}{\ddots} &amp; \color{green}{\ddots} &amp; \color{green}{w} &amp; \color{green}{w} &amp; \color{green}{w} &amp; \color{red}{\small{w - 1}} &amp; \color{red}{\ddots} &amp; \color{red}{2} &amp; \color{red}{1} &amp; \color{red}{0} &amp; \\<br/>
+\end{pmatrix}\label{eq:rerope}\end{equation}<br/>
+在这个case下，不管输入长度是多少，它的位置编码范围都不超过$w$，所以这是一种有可能支持任意长度的Context的方案！</p><p>形式上，矩阵$\eqref{eq:rerope}$、$\eqref{eq:leaky-rerope}$与标准RoPE矩阵$\eqref{eq:rope}$的关系，就相当于ReLU、Leaky ReLU与Linear的关系，所以笔者将$\eqref{eq:rerope}$称为“<font color="red">ReRoPE（Rectified RoPE）</font>”，将$\eqref{eq:leaky-rerope}$称为“<font color="red">Leaky ReRoPE</font>”。</p><h2 id="计算">计算</h2><p>其实，类似的思路并不难想到，以往基于Attention Bias的相对位置编码（比如<a href="/archives/8130#%E7%BB%8F%E5%85%B8%E5%BC%8F" target="_blank">经典相对位置编码</a>、<a href="/archives/8130#T5%E5%BC%8F" target="_blank">T5位置编码</a>）经常会出现这样的分块运算。然而跟这些相对位置编码不同，在RoPE中实现这样的分块运算会明显增加计算量，这也是该思路会被笔者搁置的主要原因。</p><p>怎么理解增加计算量呢？我们知道RoPE是“通过绝对位置实现相对位置”，这样只能得到线性的相对位置，而矩阵$\eqref{eq:leaky-rerope}$、$\eqref{eq:rerope}$是非线性的（或者说分段线性的），要实现它只能算两次Attention矩阵，然后组合起来。具体来说，首先用标准的RoPE计算一次Attention矩阵（Softmax之前）<br/>
+\begin{equation}a_{i,j}^{(1)} = \left(\boldsymbol{\mathcal{R}}^i\boldsymbol{q}_i\right)^{\top}\left(\boldsymbol{\mathcal{R}}^j\boldsymbol{k}_j\right) = \boldsymbol{q}_i^{\top}\boldsymbol{\mathcal{R}}^{j-i}\boldsymbol{k}_j\end{equation}<br/>
+这里第一个等号是实现方式，第二个等号是等效结果，其中$\boldsymbol{\mathcal{R}}$就是RoPE的旋转矩阵，简单起见我们省略了Attention的scale因子。接着，我们需要计算间隔为$1/k$的RoPE的Attention矩阵（Leaky ReRoPE）：<br/>
+\begin{equation}a_{i,j}^{(2)} = \left(\boldsymbol{\mathcal{R}}^{(i-w)/k+w}\boldsymbol{q}_i\right)^{\top}\left(\boldsymbol{\mathcal{R}}^{j/k}\boldsymbol{k}_j\right) = \boldsymbol{q}_i^{\top}\boldsymbol{\mathcal{R}}^{(j-i+w)/k-w}\boldsymbol{k}_j\end{equation}<br/>
+如果是ReRoPE，那么简单一些：<br/>
+\begin{equation}a_{i,j}^{(2)} = \left(\boldsymbol{\mathcal{R}}^w\boldsymbol{q}_i\right)^{\top}\boldsymbol{k}_j = \boldsymbol{q}_i^{\top}\boldsymbol{\mathcal{R}}^w\boldsymbol{k}_j\end{equation}<br/>
+最后，根据$i - j &lt; w$这个条件，将它们合并起来：<br/>
+\begin{equation}a_{i,j} = \left\{\begin{aligned}<br/>
+&amp;a_{i,j}^{(1)},\quad (i - j &lt; w) \\[8pt] &amp;a_{i,j}^{(2)}, \quad (i - j \geq w)<br/>
+\end{aligned}\right.\end{equation}<br/>
+不管是ReRoPE还是Leaky ReRoPE，都不可避免地计算两次Attention矩阵（如果有更高效的实现方法，请赐教），这便是增加的计算量之一。此外，需要自定义计算Attention矩阵也导致了不能直接套用现成的flash attention实现，因此相对之下又增加了计算成本。</p><p>另一方面，同样是由于非线性的相对位置，所以在自回归解码时，Key序列的cache只能存RoPE之前的，然后在每步解码时给整个Key序列补上对应的RoPE，这样的改动也会增加推理计算量。唯一的好消息是，在token by token解码时，从第二步开始Query序列的长度就为1，此时只需要为Key序列定制RoPE，那么可以只算一次Attention矩阵：<br/>
+\begin{equation}a_{i,j} = \left\{\begin{aligned}<br/>
+&amp;\boldsymbol{q}_i^{\top}\left(\boldsymbol{\mathcal{R}}^{\max(j-i,-w)}\boldsymbol{k}_j\right), \quad(\text{ReRoPE})\\[8pt]<br/>
+&amp;\boldsymbol{q}_i^{\top}\left(\boldsymbol{\mathcal{R}}^{\max(j-i,(j-i+w)/k-w)}\boldsymbol{k}_j\right), \quad(\text{Leaky ReRoPE})<br/>
+\end{aligned}\right.\end{equation}</p><h2 id="实验">实验</h2><p>继续沿着<a href="/archives/9706" target="_blank">《Transformer升级之路：11、将β进制位置进行到底》</a>的设置，我们对ReRoPE进行了实验，效果如下表：<br/>
+\begin{array}{c|cc}<br/>
+\hline<br/>
+\text{测试长度} &amp; 512(\text{训练}) &amp; 4096(\text{重复}) &amp; 4096(\text{不重复})\\<br/>
+\hline<br/>
+\text{Baseline} &amp; 49.41\% &amp; 24.17\% &amp; 23.16\% \\<br/>
+\text{Baseline-}\log n &amp; 49.40\% &amp; 24.60\% &amp; 24.02\% \\<br/>
+\hline<br/>
+\text{PI-RoPE} &amp; 49.41\% &amp; 15.04\% &amp; 13.54\% \\<br/>
+\text{PI-RoPE-}\log n &amp; 49.40\% &amp; 14.99\% &amp; 16.51\% \\<br/>
+\hline<br/>
+\text{NTK-RoPE-old} &amp; 49.41\% &amp; 51.28\% &amp; 39.27\% \\<br/>
+\text{NTK-RoPE-}\log n\text{-old} &amp; 49.40\% &amp; 61.71\% &amp; 43.75\% \\<br/>
+\hline<br/>
+\text{NTK-RoPE-fixed} &amp; 49.41\% &amp; 51.86\% &amp; 39.61\% \\<br/>
+\text{NTK-RoPE-}\log n^{\color{red}{\dagger}}\text{-fixed} &amp; 49.41\% &amp; 55.94\% &amp; 41.11\% \\<br/>
+\text{NTK-RoPE-}\log n\text{-fixed} &amp; 49.40\% &amp; 62.85\% &amp; 44.14\% \\<br/>
+\text{NTK-RoPE-mixed} &amp; 49.41\% &amp; 53.09\% &amp; 40.12\% \\<br/>
+\text{NTK-RoPE-}\log n^{\color{red}{\dagger}}\text{-mixed} &amp; 49.41\% &amp; 59.11\% &amp; 42.38\% \\<br/>
+\text{NTK-RoPE-}\log n\text{-mixed} &amp; 49.40\% &amp; 68.91\% &amp; 45.41\% \\<br/>
+\hline<br/>
+\text{ReRoPE-w256} &amp; 49.41\% &amp; 77.90\% &amp; 48.48\% \\<br/>
+\text{ReRoPE-w256-}\log n^{\color{red}{\dagger}} &amp; 49.41\% &amp; 82.40\% &amp; 48.85\% \\<br/>
+\text{ReRoPE-w256-}\log n &amp; 49.40\% &amp; \boldsymbol{85.12\%} &amp; \boldsymbol{49.07\%} \\<br/>
+\hline<br/>
+\text{HFWA} &amp; 48.70\% &amp; 80.84\% &amp; 48.15\% \\<br/>
+\hline<br/>
+\end{array}<br/>
+正如文章开头所说，ReRoPE不微调外推的效果可谓出奇地好，不仅明显超越了此前最优的NTK-RoPE-mixed，还明显超过了从零预训练的<a href="/archives/9603" target="_blank">HFWA</a>！这里的$\text{w256}$指的$w=256$，$\log n^{\color{red}{\dagger}}$是指预训练没有加入$\log n$缩放（比如LLAMA），测试阶段每个$\boldsymbol{q}_n$都乘上$\max(1, \log_{\text{maxlen}} n)$，$\log n$则是指预训练就加入了$\log n$缩放因子。</p><p>以下是一些消融实验，显示出ReRoPE关于$w$还是很鲁棒的，最优值大致是训练长度的$1/4\sim 1/2$左右：<br/>
+\begin{array}{c|cc}<br/>
+\hline<br/>
+\text{测试长度} &amp; 512(\text{训练}) &amp; 4096(\text{重复}) &amp; 4096(\text{不重复})\\<br/>
+\hline<br/>
+\text{ReRoPE-w64} &amp; 49.41\% &amp; 69.39\% &amp; 45.19\% \\<br/>
+\text{ReRoPE-w64-}\log n^{\color{red}{\dagger}} &amp; 49.41\% &amp; 78.58\% &amp; 47.42\% \\<br/>
+\text{ReRoPE-w64-}\log n &amp; 49.40\% &amp; 84.38\% &amp; 48.14\% \\<br/>
+\hline<br/>
+\text{ReRoPE-w128} &amp; 49.41\% &amp; 76.11\% &amp; 47.82\% \\<br/>
+\text{ReRoPE-w128-}\log n^{\color{red}{\dagger}} &amp; 49.41\% &amp; 82.28\% &amp; 48.78\% \\<br/>
+\text{ReRoPE-w128-}\log n &amp; 49.40\% &amp; \boldsymbol{85.47\%} &amp; 48.87\% \\<br/>
+\hline<br/>
+\text{ReRoPE-w256} &amp; 49.41\% &amp; 77.90\% &amp; 48.48\% \\<br/>
+\text{ReRoPE-w256-}\log n^{\color{red}{\dagger}} &amp; 49.41\% &amp; 82.40\% &amp; 48.85\% \\<br/>
+\text{ReRoPE-w256-}\log n &amp; 49.40\% &amp; 85.12\% &amp; \boldsymbol{49.07\%} \\<br/>
+\hline<br/>
+\text{ReRoPE-w384} &amp; 49.41\% &amp; 70.72\% &amp; 48.15\% \\<br/>
+\text{ReRoPE-w384-}\log n^{\color{red}{\dagger}} &amp; 49.41\% &amp; 76.42\% &amp; 48.31\% \\<br/>
+\text{ReRoPE-w384-}\log n &amp; 49.40\% &amp; 83.24\% &amp; 48.62\% \\<br/>
+\hline<br/>
+\text{ReRoPE-w512} &amp; 49.41\% &amp; 7.09\% &amp; 8.25\% \\<br/>
+\text{ReRoPE-w512-}\log n^{\color{red}{\dagger}} &amp; 49.41\% &amp; 7.08\% &amp; 8.25\% \\<br/>
+\text{ReRoPE-w512-}\log n &amp; 49.40\% &amp; 15.84\% &amp; 10.83\% \\<br/>
+\hline<br/>
+\end{array}</p><p>下表则对比了ReRoPE和Leaky ReRoPE：<br/>
+\begin{array}{c|cc}<br/>
+\hline<br/>
+\text{测试长度} &amp; 512(\text{训练}) &amp; 4096(\text{重复}) &amp; 4096(\text{不重复})\\<br/>
+\hline<br/>
+\text{ReRoPE-w128-}\log n &amp; 49.40\% &amp; \boldsymbol{85.47\%} &amp; 48.87\% \\<br/>
+\text{Leaky ReRoPE-w128-k64-}\log n &amp; 49.40\% &amp; 85.29\% &amp; 48.96\% \\<br/>
+\text{Leaky ReRoPE-w128-k32-}\log n &amp; 49.40\% &amp; 85.31\% &amp; 49.03\% \\<br/>
+\text{Leaky ReRoPE-w128-k16-}\log n &amp; 49.40\% &amp; 85.15\% &amp; \boldsymbol{49.10\%} \\<br/>
+\text{Leaky ReRoPE-w128-k8-}\log n &amp; 49.40\% &amp; 80.00\% &amp; 48.11\% \\<br/>
+\hline<br/>
+\text{ReRoPE-w256-}\log n &amp; 49.40\% &amp; 85.12\% &amp; 49.07\% \\<br/>
+\text{Leaky ReRoPE-w256-k64-}\log n &amp; 49.40\% &amp; 84.60\% &amp; 49.03\% \\<br/>
+\text{Leaky ReRoPE-w256-k32-}\log n &amp; 49.40\% &amp; 84.30\% &amp; 48.97\% \\<br/>
+\text{Leaky ReRoPE-w256-k16-}\log n &amp; 49.40\% &amp; 83.59\% &amp; 48.87\% \\<br/>
+\text{Leaky ReRoPE-w256-k8-}\log n &amp; 49.40\% &amp; 69.80\% &amp; 45.72\% \\<br/>
+\hline<br/>
+\end{array}</p><p>作为ReRoPE的一般化，经过精调的Leaky ReRoPE是有机会超过ReRoPE的，但提升很微弱。此外，当$k$取有限值时，能处理的最大长度也是有限的，因为我们不能提前知道要生成的总长度，所以只能预设一个足够大的$k$，但设定为有限值之后，当输入足够长时，就会因为位置编码超出训练长度而效果大幅下降，相比之下ReRoPE则不会有这个风险。总的来说，精调Leaky ReRoPE相比ReRoPE的价值似乎不大。</p><p>以上实验结果都只是在1亿参数的GAU模型上测试的，下面给出基于llama2-13b的测试结果（指标是loss，越小越好），它代表了在真正的LLM表现：<br/>
+\begin{array}{c|cc}<br/>
+\hline<br/>
+\text{测试长度} &amp; 4096(\text{训练}) &amp; 8192 &amp; 16384\\<br/>
+\hline<br/>
+\text{RoPE} &amp; 1.4967 &amp; 8.8615 &amp; \text{-} \\<br/>
+\text{NTK-RoPE} &amp; 1.6081 &amp; 1.5417 &amp; 1.5163 \\<br/>
+\text{ReRoPE} &amp; 1.4996 &amp; 1.4267 &amp; 1.4001 \\<br/>
+\hline<br/>
+\end{array}<br/>
+可以看到，ReRoPE真正做到了几乎不损训练效果（RoPE-4096代表训练效果），并且满足“longer context, lower loss”的理想特点（更多的context应该更加有助于预测）。此外，笔者也在OpenBuddy开源的LLAMA2-13b微调模型上测试了chat的效果，自我感觉还不错（最多测试过20k tokens的Context）。</p><p>最后，分享笔者在transformers的LLAMA模型基础上实现ReRoPE和Leaky ReRoPE的代码，读者也可以自行加载LLAMA系列模型进行测试：</p><blockquote class="cite"><div><strong>Github：<a href="https://github.com/bojone/rerope" target="_blank">https://github.com/bojone/rerope</a></strong></div></blockquote><h2 id="小结">小结</h2><p>在这篇文章中，笔者提出了ReRoPE (Rectified RoPE)，它同样是一种RoPE的后处理方案，实验结果显示它的不微调长度外推能力不仅明显超过了此前的NTK-aware Scaled RoPE，甚至还超过了之前专门设计的需要从零训练的HFWA。此外，不同于NTK-aware Scaled RoPE在超过某个长度后能力会大幅下降，ReRoPE似乎在任意长度下都表现良好。除了对比实验外，文章还给出了基于transformers-llama的参考实现，有兴趣的读者可以自行测试。</p>
+
+
+
+
+
+</div>

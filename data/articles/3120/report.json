@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "3120",
+    "title": "两生物种群竞争模型：LaTeX+Python",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/3120",
+    "date": "2014-12-15",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 30,
+    "display_formula_count": 4,
+    "image_count": 3,
+    "heading_count": 3,
+    "code_block_count": 3,
+    "source_text_sha256": "c6e26e89bed87b0bae0e7f99e3372a957efeb5d22e226f3bdfc0609aad53fe75",
+    "output_text_sha256": "c6e26e89bed87b0bae0e7f99e3372a957efeb5d22e226f3bdfc0609aad53fe75",
+    "latex_sha256": "cf5c652363cc8f94fc174cc2770ed7d6733787043385722fee9656c327c49dcf",
+    "body_sha256": "30a4467941d25c24edb6089637dfece540d9a4fc4d2938bfd2fd47c3e5f9b3b3",
+    "converter_version": 1,
+    "markdown_sha256": "06086482fa4b3a4e4ff7dd8fc0333cad5998eb338a8e95b5577ddc92e9fa7664"
+  },
+  "fetched_at": "2026-09-14T13:49:05+00:00",
+  "source_snapshot_sha256": "a8cbdbb9ccc0b537d963691be8dd53caecbccc54c383b359b72aea2596a46c63",
+  "images": {},
+  "local_only": true
+}

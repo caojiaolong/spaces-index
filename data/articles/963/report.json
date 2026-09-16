@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "963",
+    "title": "《向量》系列——5.平面向量微分方程与复数",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/963",
+    "date": "2010-10-03",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 23,
+    "display_formula_count": 8,
+    "image_count": 0,
+    "heading_count": 0,
+    "code_block_count": 0,
+    "source_text_sha256": "63fe2a8cb9bf6126bcd8ea68963db6e1c1c0793c4909d1387365b6e899c47a23",
+    "output_text_sha256": "63fe2a8cb9bf6126bcd8ea68963db6e1c1c0793c4909d1387365b6e899c47a23",
+    "latex_sha256": "5eaa3fac3d94a0608e3c6ff2dc62998785225aedf470b4d1872c6c706dd07cbd",
+    "body_sha256": "6d080ca6eaf3668bbb1fd143c77c500b3cd1b3ee6ec055157c861df851c30924",
+    "converter_version": 1,
+    "markdown_sha256": "eaf34c50c2f82053a867f58e7f6e748dd0ac15e6d3dd55d46f4b81e00642e844"
+  },
+  "fetched_at": "2026-09-14T14:29:34+00:00",
+  "source_snapshot_sha256": "587e7e83a232b5715097ea05453ad302ad634aeade9c930b09e1a4957dfae745",
+  "images": {},
+  "local_only": true
+}

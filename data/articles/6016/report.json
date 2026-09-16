@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "6016",
+    "title": "f-GAN简介：GAN模型的生产车间",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/6016",
+    "date": "2018-09-29",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 114,
+    "display_formula_count": 21,
+    "image_count": 0,
+    "heading_count": 8,
+    "code_block_count": 0,
+    "source_text_sha256": "a3bcaa9eade130ee09b9e064b2248b67b075143a69f5fee6a0d8eef6d4e6ad68",
+    "output_text_sha256": "a3bcaa9eade130ee09b9e064b2248b67b075143a69f5fee6a0d8eef6d4e6ad68",
+    "latex_sha256": "c66d669cfb7e7b9137808fb3be14e98b623a24ee049d7fdded447aa50bfeebbc",
+    "body_sha256": "526e8b6f0339e4c368bc233dbe78e8fd6a4b1b5024dec65b5ce96c718b85dc12",
+    "converter_version": 1,
+    "markdown_sha256": "761d76a5219eb29e58d8edb096142a0a3dab3886fc3cc70dc70edc889d0a6b13"
+  },
+  "fetched_at": "2026-09-14T13:24:11+00:00",
+  "source_snapshot_sha256": "1cd48ea8b0afb1a5ab84be4f52047163030c23e520d1bcc649322491d21ea5e2",
+  "images": {},
+  "local_only": true
+}

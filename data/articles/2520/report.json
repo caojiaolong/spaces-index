@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "2520",
+    "title": "趣题：与橡皮绳赛跑的蚂蚁",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/2520",
+    "date": "2014-04-09",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 25,
+    "display_formula_count": 8,
+    "image_count": 0,
+    "heading_count": 0,
+    "code_block_count": 0,
+    "source_text_sha256": "863f4418cc06f6729829213111586e4d2b6f1d76661c4578716f93f73922be03",
+    "output_text_sha256": "863f4418cc06f6729829213111586e4d2b6f1d76661c4578716f93f73922be03",
+    "latex_sha256": "4c61b2f9adcb9ddeb1405df4bbf5d8956df2db7344258a548bd7b8f4f6ed1d80",
+    "body_sha256": "5bb68523dc50591ba428341aa4fcbba6f64072a9714f22018e92658f83b6bd02",
+    "converter_version": 1,
+    "markdown_sha256": "efe479bff4ad436e9ae50fee6c6fcc053ae5768bead3700ae693f5f58086dd21"
+  },
+  "fetched_at": "2026-09-14T13:55:22+00:00",
+  "source_snapshot_sha256": "c18bd09c124f016271a3cd3b13804ddbe7c3ffa6004c51775a1874908aa35794",
+  "images": {},
+  "local_only": true
+}

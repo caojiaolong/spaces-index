@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "114",
+    "title": "四次方程的根式求解（通俗版）",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/114",
+    "date": "2009-09-06",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 13,
+    "display_formula_count": 1,
+    "image_count": 4,
+    "heading_count": 0,
+    "code_block_count": 0,
+    "source_text_sha256": "78e76220e66a0c3497d9438cc7341bf7bd0b5faa994243e15052043daaa0daf9",
+    "output_text_sha256": "78e76220e66a0c3497d9438cc7341bf7bd0b5faa994243e15052043daaa0daf9",
+    "latex_sha256": "653108a15872c19b66ce23e378df62937259605ef539f1ae5991f73383c41dff",
+    "body_sha256": "03bae1b1f3e3428fc815bfbbbe0bf8c6269fc78c3fdc31aff93efd605a18e280",
+    "converter_version": 1,
+    "markdown_sha256": "a80438f32ef9e075729946bb6a35074a74b27a9233a80b8808d219cbbdd54b10"
+  },
+  "fetched_at": "2026-09-14T14:54:37+00:00",
+  "source_snapshot_sha256": "289d674f085d5705dc1ddbc934b77418283e7088890dc9d796016d816068511b",
+  "images": {},
+  "local_only": true
+}

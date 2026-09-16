@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "2208",
+    "title": "《新理解矩阵5》：体积=行列式",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/2208",
+    "date": "2013-12-25",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 41,
+    "display_formula_count": 1,
+    "image_count": 0,
+    "heading_count": 0,
+    "code_block_count": 0,
+    "source_text_sha256": "076341ba9f921d9bfb61fcdff1aef73719b7afd96003616d698beda709c4bae6",
+    "output_text_sha256": "076341ba9f921d9bfb61fcdff1aef73719b7afd96003616d698beda709c4bae6",
+    "latex_sha256": "8d6eb20992024fead227487c88e6fa6d0326ec01f66114e1f4a262c2fcfeaddd",
+    "body_sha256": "43cd855878bae4810d63b816a9685f4c1ba1b5148e8b41ebd0b17f3b56483d68",
+    "converter_version": 1,
+    "markdown_sha256": "4d030e5a475ccbc592d400721fb59c2e27099feb507a46fe2b4547d5292df847"
+  },
+  "fetched_at": "2026-09-14T13:58:38+00:00",
+  "source_snapshot_sha256": "0471b9506adf2a27a80d442932f065cf87b67daee37a39c65ba6da20ba4cd93a",
+  "images": {},
+  "local_only": true
+}

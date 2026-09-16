@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "22",
+    "title": "听那“童年”之音",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/22",
+    "date": "2009-07-16",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 0,
+    "display_formula_count": 0,
+    "image_count": 1,
+    "heading_count": 0,
+    "code_block_count": 0,
+    "source_text_sha256": "f34f3b5bb23007d2fb5f64d3f2eb091ba14bdc3102b585bdde4b2322b809e5fa",
+    "output_text_sha256": "f34f3b5bb23007d2fb5f64d3f2eb091ba14bdc3102b585bdde4b2322b809e5fa",
+    "latex_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "body_sha256": "63ed56a62ade07e22b79b1b29fbfe34b8937f1dbf21e8b1fdcc1251a18ce8abd",
+    "converter_version": 1,
+    "markdown_sha256": "9707d2ace433343b71823cd588e9ba779692eed26fdc3a83a50d2a7181b79574"
+  },
+  "fetched_at": "2026-09-14T15:05:30+00:00",
+  "source_snapshot_sha256": "9bc453bc0b31d0253bed0ca3db7b768567e135950e44bbd4331460e5f6a6ba9b",
+  "images": {},
+  "local_only": true
+}

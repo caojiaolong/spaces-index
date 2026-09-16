@@ -1,0 +1,35 @@
+{
+  "version": 1,
+  "images": {
+    "https://spaces.ac.cn/usr/uploads/2009/08/20090804213257.jpg": {
+      "status": "cached",
+      "file": "0b3ab840bf51d1f86e05c73631b589447d756fd391056dcb7be241cee0d3cb71.jpg",
+      "sha256": "0b3ab840bf51d1f86e05c73631b589447d756fd391056dcb7be241cee0d3cb71",
+      "bytes": 47302,
+      "checked_at": "2026-09-16T12:37:33+00:00",
+      "fetched_url": "https://spaces.ac.cn/usr/uploads/2009/08/20090804213257.jpg",
+      "etag": "\"5a6ec750-b8c6\"",
+      "last_modified": "Mon, 29 Jan 2018 07:03:44 GMT"
+    },
+    "https://spaces.ac.cn/usr/uploads/2009/08/20090804213355.jpg": {
+      "status": "cached",
+      "file": "d4dd6218462d145c9eeef86197b4d81c66cf23fa69ffb4f2080862dd916f4aac.jpg",
+      "sha256": "d4dd6218462d145c9eeef86197b4d81c66cf23fa69ffb4f2080862dd916f4aac",
+      "bytes": 45385,
+      "checked_at": "2026-09-16T12:37:36+00:00",
+      "fetched_url": "https://spaces.ac.cn/usr/uploads/2009/08/20090804213355.jpg",
+      "etag": "\"5a6ec750-b149\"",
+      "last_modified": "Mon, 29 Jan 2018 07:03:44 GMT"
+    },
+    "https://spaces.ac.cn/usr/uploads/2009/08/20090804213330.jpg": {
+      "status": "cached",
+      "file": "92eb22b5639c46b217281a65d6aaa00e849c88b17c3380d5946a220cc0c98ceb.jpg",
+      "sha256": "92eb22b5639c46b217281a65d6aaa00e849c88b17c3380d5946a220cc0c98ceb",
+      "bytes": 129027,
+      "checked_at": "2026-09-16T12:37:39+00:00",
+      "fetched_url": "https://spaces.ac.cn/usr/uploads/2009/08/20090804213330.jpg",
+      "etag": "\"5a6ec750-1f803\"",
+      "last_modified": "Mon, 29 Jan 2018 07:03:44 GMT"
+    }
+  }
+}

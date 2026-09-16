@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "1358",
+    "title": "“二体+恒力”问题",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/1358",
+    "date": "2011-05-14",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 31,
+    "display_formula_count": 7,
+    "image_count": 0,
+    "heading_count": 0,
+    "code_block_count": 0,
+    "source_text_sha256": "0da8a1122440a3c59ada443a8fa7f658116239eaece7f215a01e6d09f0cc92c4",
+    "output_text_sha256": "0da8a1122440a3c59ada443a8fa7f658116239eaece7f215a01e6d09f0cc92c4",
+    "latex_sha256": "ed40190bd06cf3e86aff2797ec2de2e09b094615f2aa688267e7bd5896265b3f",
+    "body_sha256": "d94f3c33943ff99f8a261bedd9cc7d2f41f440f54059d9b9fbe178ada5ea6593",
+    "converter_version": 1,
+    "markdown_sha256": "ca24046c30d1b616cc3948759913f8b0023aef11005e5c44c749a66111518bc0"
+  },
+  "fetched_at": "2026-09-14T14:21:21+00:00",
+  "source_snapshot_sha256": "6bbca63f68516135c81a0b2f55853aa6a1af5aa3ba0ce977cc555c9672765f2c",
+  "images": {},
+  "local_only": true
+}

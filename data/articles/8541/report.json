@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "8541",
+    "title": "用开源的人工标注数据来增强RoFormer-Sim",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/8541",
+    "date": "2021-07-19",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 23,
+    "display_formula_count": 3,
+    "image_count": 3,
+    "heading_count": 7,
+    "code_block_count": 0,
+    "source_text_sha256": "f96b5010260ee2708d8a1654bb866f98b09b0b9a9335864d70371dcb4eeeecac",
+    "output_text_sha256": "f96b5010260ee2708d8a1654bb866f98b09b0b9a9335864d70371dcb4eeeecac",
+    "latex_sha256": "279c2de342f0dee7654c608d1123ae922ee5dcf5be3ba06656fbf12837e72be8",
+    "body_sha256": "06a2b51e8ab163b12b1ddb06d40a4e5b63cf1d84222845d590e0f46e71ac10d2",
+    "converter_version": 1,
+    "markdown_sha256": "138d020abb2298812fc571ef75886c2fe421d196097c4bc65c0c0c39cccdc47b"
+  },
+  "fetched_at": "2026-09-14T13:05:27+00:00",
+  "source_snapshot_sha256": "bcb14037652ee8f92030da3ff3652592281c99cc9bb7c5195396f512d4d5e420",
+  "images": {},
+  "local_only": true
+}

@@ -1,0 +1,17 @@
+{
+  "metadata": {
+    "id": "10122",
+    "title": "Transformer升级之路：18、RoPE的底数选择原则",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/10122",
+    "date": "2024-05-29",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "fetched_at": "2026-09-14T12:48:23+00:00",
+  "source_snapshot_sha256": "0c9efc3455c277e2cd624abffc33d2dce18c719a08403d31116057fde9541307",
+  "validators": {
+    "etag": null,
+    "last_modified": null
+  }
+}

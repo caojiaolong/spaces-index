@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "105",
+    "title": "【NASA每日一图】仙王座的NGC 7822",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/105",
+    "date": "2009-08-28",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 0,
+    "display_formula_count": 0,
+    "image_count": 1,
+    "heading_count": 0,
+    "code_block_count": 0,
+    "source_text_sha256": "caaa42c926f8e8c04a85e0bfce4f50f01bf024c0bf97878638fef163be1af8b6",
+    "output_text_sha256": "caaa42c926f8e8c04a85e0bfce4f50f01bf024c0bf97878638fef163be1af8b6",
+    "latex_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "body_sha256": "a599937c50a4e3f56dfe45bd9a276ed1d88c8ba4f53f44f93c330e4e81f557f7",
+    "converter_version": 1,
+    "markdown_sha256": "e8a58dbd5896e8a2b094d70cdd3d9937f01d85813357d9d3c2c2d3b9957eceab"
+  },
+  "fetched_at": "2026-09-14T14:55:44+00:00",
+  "source_snapshot_sha256": "02a929b5182ee1f1dbe69aed2ae3e9778986bdd8f7fa3eae13706d16d334286d",
+  "images": {},
+  "local_only": true
+}

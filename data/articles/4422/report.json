@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "4422",
+    "title": "通用爬虫探索（二）：落实到论坛爬取上",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/4422",
+    "date": "2017-06-06",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 2,
+    "display_formula_count": 1,
+    "image_count": 3,
+    "heading_count": 8,
+    "code_block_count": 0,
+    "source_text_sha256": "87db88a15a6c78356f4b49d12ca693c768d9dc2d8e2bfb7c13e2cd760e72bda3",
+    "output_text_sha256": "87db88a15a6c78356f4b49d12ca693c768d9dc2d8e2bfb7c13e2cd760e72bda3",
+    "latex_sha256": "f56653f3d01c90fbb6ec56ee6d6cbe67f91a95fe7fe078bff98831a9c97e8180",
+    "body_sha256": "5bb0c3be0ae61c6ce9b626c42e0a5a546a7c5ff51d0d3ac6c37aa690b9457464",
+    "converter_version": 1,
+    "markdown_sha256": "0caa3776282924301402547e78eb9908da37b7a73fdd3b2ec37564ddedd242ad"
+  },
+  "fetched_at": "2026-09-14T13:32:12+00:00",
+  "source_snapshot_sha256": "d725c2e658f50b90990fc7be224a2045ba5e4d4d61f0bf8220a816f76726cff2",
+  "images": {},
+  "local_only": true
+}

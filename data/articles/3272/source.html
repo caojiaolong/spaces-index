@@ -1,0 +1,32 @@
+<div class="PostContent" id="PostContent">
+<p>数学分析中数列极限部分，有一个很基本的“柯西命题”：</p><blockquote>如果$\lim_{n\to\infty} x_n=a$，则<br/>
+$$\lim_{n\to\infty}\frac{x_1+x_2+\dots+x_n}{n}=a$$</blockquote><p>本文所要谈的便是这个命题，当然还包括类似的一些题目。</p><h3 id="柯西命题的证明">柯西命题的证明</h3><p>柯西命题的证明并不难，只需要根据极限收敛的定义，由于$\lim_{n\to\infty} x_n=a$，所以任意给定$\varepsilon &gt; 0$，存在足够大的$N$，使得对于任意的$n &gt; N$，都有<br/>
+$$\left|x_n - a\right| &lt; \varepsilon/2\quad(\forall n &gt; N)$$</p><p>那么，对于足够大的$n$，就有<br/>
+$$\begin{aligned}&amp;\left|\frac{x_1+x_2+\dots+x_n}{n}-a\right|\\<br/>
+=&amp;\left|\frac{(x_1-a)+(x_2-a)+\dots+(x_n-a)}{n}\right|\\<br/>
+\leq &amp;\left|\frac{(x_1-a)+(x_2-a)+\dots+(x_N-a)}{n}\right|\\<br/>
+&amp;\quad+\left|\frac{(x_{N+1}-a)}{n}\right|+\left|\frac{(x_{N+2}-a)}{n}\right|+\dots+\left|\frac{(x_{n}-a)}{n}\right|\\<br/>
+&lt; &amp; \left|\frac{(x_1-a)+(x_2-a)+\dots+(x_N-a)}{n}\right|+\frac{n-N}{n}\frac{\varepsilon}{2}\\<br/>
+&lt; &amp; \left|\frac{(x_1-a)+(x_2-a)+\dots+(x_N-a)}{n}\right|+\frac{\varepsilon}{2}\\<br/>
+\end{aligned}$$<br/>
+取足够大的$M &gt; N &gt;0$，只要$n &gt; M$，就有<br/>
+$$\left|\frac{(x_1-a)+(x_2-a)+\dots+(x_N-a)}{n}\right| &lt; \frac{\varepsilon}{2}$$<br/>
+从而<br/>
+$$\left|\frac{x_1+x_2+\dots+x_n}{n}-a\right| &lt; \varepsilon$$<br/>
+由$\varepsilon$的任意性知<br/>
+$$\lim_{n\to\infty}\frac{x_1+x_2+\dots+x_n}{n}=a$$</p><p>其实柯西命题的直观意义也很明显，它只不过告诉我们，如果一个数列是收敛的，那么它是越来越平缓的，取平均的话，就算一开始起伏很大，也可以用足够大的$n$来抹平它。</p><h3 id="一个变形">一个变形</h3><p>下面请读者来做一下这道题目。</p><blockquote>已知$\lim_{n\to\infty} x_n=a$，求证<br/>
+$$\lim_{n\to\infty}\frac{x_1+2 x_2+\dots+n x_n}{n^2}=\frac{1}{2}a$$</blockquote><p>请读者别那么着急动笔，盯着它，死盯着它，直到题目害怕你了而把自己把答案交出来！！</p><p>========华丽的分割线========</p><p>事实上，有了柯西命题，这道题目根本就不用证，它就是显然成立的！为什么？我们干嘛要去考虑数列$\{x_n\}$呢，我们为什么不考虑下面的数列呢？<br/>
+$$\{y_n\}={x_1, x_2, x_2, x_3, x_3, x_3, x_4, x_4, x_4, x_4, x_5,\dots}$$<br/>
+显然也有<br/>
+$$\lim_{n\to\infty} y_n =a$$<br/>
+而且<br/>
+$$\frac{1}{n^2}\sum_{k=1}^n k a_k=\frac{1}{n^2}\sum_{k=1}^{\frac{1}{2}n(n+1)} y_n=\frac{\frac{1}{2}n(n+1)}{n^2}\frac{\sum_{k=1}^{\frac{1}{2}n(n+1)}y_n}{\frac{1}{2}n(n+1)}$$<br/>
+由柯西命题立马知道最右边求和项的极限为$a$，而$\frac{\frac{1}{2}n(n+1)}{n^2}$的极限显然为$\frac{1}{2}$，所以<br/>
+$$\lim_{n\to\infty}\frac{1}{n^2}\sum_{k=1}^n k a_k=\lim_{n\to\infty}\frac{1}{n^2}\sum_{k=1}^{\frac{1}{2}n(n+1)} y_n=\frac{1}{2}a$$<br/>
+所以说，凡事换个角度看看，就可能看到意想不到的东西，有时候只要一直盯着它，就觉得显然成立了。我想，能够从不同角度认识同一个问题，才算是把问题看透吧。</p>
+
+
+
+
+
+</div>

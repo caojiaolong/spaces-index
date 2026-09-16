@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "1971",
+    "title": "纠缠的时空（三）：长度收缩和时间延缓",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/1971",
+    "date": "2013-04-18",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 18,
+    "display_formula_count": 5,
+    "image_count": 0,
+    "heading_count": 4,
+    "code_block_count": 0,
+    "source_text_sha256": "12d3d83b70092749b75cfa6191ecc1c0efe70ceaabeb262c3f4dcdde829aea77",
+    "output_text_sha256": "12d3d83b70092749b75cfa6191ecc1c0efe70ceaabeb262c3f4dcdde829aea77",
+    "latex_sha256": "c04f3d0af1b5d9dedc71a6b2dcdb93f9d4207f954c3325c7537eba224a454f92",
+    "body_sha256": "4899aaf76550f69c7008e7369eba509dcc5ca0a405a16d2454bceae57aaefc9c",
+    "converter_version": 1,
+    "markdown_sha256": "5eac95057199ef668f7fcef5e95d133e0bf84bea6a8818c6c926d6449afcbb19"
+  },
+  "fetched_at": "2026-09-14T14:02:55+00:00",
+  "source_snapshot_sha256": "b343abeed1b156d0aafbfc18a13078c45268a08a6d98af59af8766aedc2910b0",
+  "images": {},
+  "local_only": true
+}

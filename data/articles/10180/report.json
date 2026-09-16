@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "10180",
+    "title": "重温SSM（四）：有理生成函数的新视角",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/10180",
+    "date": "2024-06-27",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 223,
+    "display_formula_count": 27,
+    "image_count": 2,
+    "heading_count": 9,
+    "code_block_count": 0,
+    "source_text_sha256": "0cb523379f6cf28fa78b744d033de5d5f661c7d86d7f66724bc2de653491011b",
+    "output_text_sha256": "0cb523379f6cf28fa78b744d033de5d5f661c7d86d7f66724bc2de653491011b",
+    "latex_sha256": "d98a06fb8cdf10ab6c4ac063090cfe3fb425206288f22366201f20a5578c3f67",
+    "body_sha256": "9237d0b6af0ae02e429351032855459ba4f0ab9bec1b03a9e831a39dd3941398",
+    "converter_version": 1,
+    "markdown_sha256": "6ffe9701f320a6739af3ca7c05154f22af8d8c4d0112a4899a1daeca19e9c7d7"
+  },
+  "fetched_at": "2026-09-14T12:47:58+00:00",
+  "source_snapshot_sha256": "f1bc17d5fcdb3de07a35b39cc70906dbd6bc595c4fd7249e207edd8e545a3a32",
+  "images": {},
+  "local_only": true
+}

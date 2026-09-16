@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "11340",
+    "title": "MuP之上：1. 好模型的三个特征",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/11340",
+    "date": "2025-10-21",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 95,
+    "display_formula_count": 4,
+    "image_count": 0,
+    "heading_count": 7,
+    "code_block_count": 0,
+    "source_text_sha256": "4e64e893eb8d5330e7c55ccac6970d486f4643b734ecd425bbc125c4e7b9bd97",
+    "output_text_sha256": "4e64e893eb8d5330e7c55ccac6970d486f4643b734ecd425bbc125c4e7b9bd97",
+    "latex_sha256": "0b9d1b21fa37cbaadeb6a82f03d9c41dede183888d3a64b995de2f92e7f7c557",
+    "body_sha256": "88d930e5bee8013a4916a81a6cdf1db0cbbe8cd2477ad79f78390ec6532a471c",
+    "converter_version": 1,
+    "markdown_sha256": "9a26aa1920c296f16ed02350adf462dca5172abc4098e8cc446fb6e4a20f425e"
+  },
+  "fetched_at": "2026-09-14T12:39:09+00:00",
+  "source_snapshot_sha256": "19bbbe38e89540e39379e551a6ee47e177b8d18a14996f762c53a416eaad7001",
+  "images": {},
+  "local_only": true
+}

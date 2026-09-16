@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "1602",
+    "title": "相对论、对称和第四维",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/1602",
+    "date": "2012-05-01",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 17,
+    "display_formula_count": 6,
+    "image_count": 3,
+    "heading_count": 0,
+    "code_block_count": 0,
+    "source_text_sha256": "39df76554c65c6d3a16abca0a24a74afaae6761de87e48ab8baeb2966c66d530",
+    "output_text_sha256": "39df76554c65c6d3a16abca0a24a74afaae6761de87e48ab8baeb2966c66d530",
+    "latex_sha256": "492eed744cad73dc95597252e6b5e9e6dd0ace40f21ceeeed6a9a143e787790f",
+    "body_sha256": "7860a8b2a2da9de3fac333964a0ccc93a8555486342becf80e6c82d2eb537b3f",
+    "converter_version": 1,
+    "markdown_sha256": "3a27eda5aa635dad0d2794abdf142b30ba6ddc7465b5dab122010f4035ef1463"
+  },
+  "fetched_at": "2026-09-14T14:14:39+00:00",
+  "source_snapshot_sha256": "70204bcf9b70451b31c554cf94e775142a6e7d619dc9c9278db41e80cb304e70",
+  "images": {},
+  "local_only": true
+}

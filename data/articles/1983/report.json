@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "1983",
+    "title": "[备忘]历史天气查询",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/1983",
+    "date": "2013-04-27",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 0,
+    "display_formula_count": 0,
+    "image_count": 1,
+    "heading_count": 0,
+    "code_block_count": 0,
+    "source_text_sha256": "659056ccf665342ffe605d7485a35a36f5609295c8381cdb21c66b24d45c775d",
+    "output_text_sha256": "659056ccf665342ffe605d7485a35a36f5609295c8381cdb21c66b24d45c775d",
+    "latex_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "body_sha256": "4880635dcc1c75297204ff0bdb6ad1b95de05470c7bba58c2a8e1323817a344e",
+    "converter_version": 1,
+    "markdown_sha256": "d23f425304d3a3428266c445334863078df089523378ae96e6e4f7bdb0a8afc3"
+  },
+  "fetched_at": "2026-09-14T14:02:36+00:00",
+  "source_snapshot_sha256": "c1f11ca07b88ce823beb16ebae1cad8043c5dd2296155e68f0e30aabeb0db2d5",
+  "images": {},
+  "local_only": true
+}

@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "3908",
+    "title": "【中文分词系列】 1. 基于AC自动机的快速分词",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/3908",
+    "date": "2016-08-17",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 7,
+    "display_formula_count": 3,
+    "image_count": 0,
+    "heading_count": 5,
+    "code_block_count": 6,
+    "source_text_sha256": "7a0405ebabd0f9160a0da5b26403f50ce6aeb80c8b5460df051c45fe68bbb814",
+    "output_text_sha256": "7a0405ebabd0f9160a0da5b26403f50ce6aeb80c8b5460df051c45fe68bbb814",
+    "latex_sha256": "4516a903e9812ff6ad1711575002fea03757d4c4e76b08b65728b3402cd93186",
+    "body_sha256": "fe5e2b21352417f8132b4bf154c304214258a5a7f7892788bd1286cc27133ec7",
+    "converter_version": 1,
+    "markdown_sha256": "034c741d420b74b93dfe38a7b515b1a052487b10a63cc6ad94e2f62816943167"
+  },
+  "fetched_at": "2026-09-14T13:38:45+00:00",
+  "source_snapshot_sha256": "8bbcc4c390136d5770064c25631f7857e0f389a81210d3f726cad8a2611fa5b0",
+  "images": {},
+  "local_only": true
+}

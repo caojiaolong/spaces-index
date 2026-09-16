@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "1944",
+    "title": "费曼积分法(6)：教科书上的两道练习题",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/1944",
+    "date": "2013-03-24",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 27,
+    "display_formula_count": 14,
+    "image_count": 0,
+    "heading_count": 0,
+    "code_block_count": 0,
+    "source_text_sha256": "2f9fb85a4934822007bfa22cba109eec1c37ebb5cdea060810b107eb33ae4228",
+    "output_text_sha256": "2f9fb85a4934822007bfa22cba109eec1c37ebb5cdea060810b107eb33ae4228",
+    "latex_sha256": "760ba2d58bf2275bf7e939135cb76a490249554e0872a2d0e04b78ae64a67572",
+    "body_sha256": "e30eb054ae3101efa211df6f8152340a2cbd3269a2449f955c093508e11a7af0",
+    "converter_version": 1,
+    "markdown_sha256": "f8992c1d677bddf859f12ca9d8ad1ca78b7bec94a1f85ab903a979830fe005a2"
+  },
+  "fetched_at": "2026-09-14T14:03:54+00:00",
+  "source_snapshot_sha256": "7b3b51d5a08af7aaae15eb3d16d54463e332d543aea2fdbb362bd18e6ff171db",
+  "images": {},
+  "local_only": true
+}

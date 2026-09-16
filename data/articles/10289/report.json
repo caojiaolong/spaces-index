@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "10289",
+    "title": "通向最优分布之路：概率空间的最小化",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/10289",
+    "date": "2024-08-06",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 212,
+    "display_formula_count": 46,
+    "image_count": 0,
+    "heading_count": 15,
+    "code_block_count": 0,
+    "source_text_sha256": "b3e405d250cbe85205e00eecc050e5a4584bad1494f6f81cd81b8c6a513f0b44",
+    "output_text_sha256": "b3e405d250cbe85205e00eecc050e5a4584bad1494f6f81cd81b8c6a513f0b44",
+    "latex_sha256": "ac27e185bc97a5fecef41d7d0935c97ef25e6f8e17603c86b357617f558fd8c7",
+    "body_sha256": "a1ef7e58d4fe1106d0701036e24a48ca4356212cfa416e72a250630e23363553",
+    "converter_version": 1,
+    "markdown_sha256": "67e8ecf275ff16abbf8b64d7669534b5de0d5197d5e9e173c213f522f0528fd9"
+  },
+  "fetched_at": "2026-09-14T12:47:17+00:00",
+  "source_snapshot_sha256": "ba2e7a55c73e998ff1e99c1d3ce562ea08259a08294dbe765f8db3643b36a28e",
+  "images": {},
+  "local_only": true
+}

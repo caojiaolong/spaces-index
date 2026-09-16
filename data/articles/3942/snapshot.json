@@ -1,0 +1,17 @@
+{
+  "metadata": {
+    "id": "3942",
+    "title": "基于双向LSTM和迁移学习的seq2seq核心实体识别",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/3942",
+    "date": "2016-09-06",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "fetched_at": "2026-09-14T13:38:13+00:00",
+  "source_snapshot_sha256": "e8c15f642dde60a40876535804eeac2ee518252c17dbcd482a134a5e2e96414a",
+  "validators": {
+    "etag": null,
+    "last_modified": null
+  }
+}

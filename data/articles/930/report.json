@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "930",
+    "title": "中秋再见！",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/930",
+    "date": "2010-09-11",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 0,
+    "display_formula_count": 0,
+    "image_count": 0,
+    "heading_count": 0,
+    "code_block_count": 0,
+    "source_text_sha256": "8c6585ea01ec682de8b67ee4428023c55b9bf5b5257e2ebc07421d902ccb0f4b",
+    "output_text_sha256": "8c6585ea01ec682de8b67ee4428023c55b9bf5b5257e2ebc07421d902ccb0f4b",
+    "latex_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "body_sha256": "fe08e5c0f143ee930154251a809b63261cbe8b3e219627834e0901b026c57eba",
+    "converter_version": 1,
+    "markdown_sha256": "0419b7cc866609e020912c1021f090d9b2b16ae3bf60d8a4cb2436a0ebdf62ed"
+  },
+  "fetched_at": "2026-09-14T14:30:19+00:00",
+  "source_snapshot_sha256": "e641712152d2e4132f7f3278f197de63a68f5036685eb3fc1e2b2deb8cf21a49",
+  "images": {},
+  "local_only": true
+}

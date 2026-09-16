@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "9341",
+    "title": "CoSENT（三）：作为交互式相似度的损失函数",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/9341",
+    "date": "2022-11-09",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 13,
+    "display_formula_count": 3,
+    "image_count": 0,
+    "heading_count": 3,
+    "code_block_count": 0,
+    "source_text_sha256": "dbf59834486f33c4b4c536b210957bb292d757c04d27817d116bca06f86fb8c4",
+    "output_text_sha256": "dbf59834486f33c4b4c536b210957bb292d757c04d27817d116bca06f86fb8c4",
+    "latex_sha256": "2b77c2b3c1035102d9638e444081fa6ab79a1fc707353fd2ae88d2c4e79eb7b9",
+    "body_sha256": "994274b348607966e5964012f2f7670df4b657fe94e1ee3af0d106f4203745b6",
+    "converter_version": 1,
+    "markdown_sha256": "7b79f197da80f48e1b65086ffc56aeb6f02bb8a96596a07d9409fc37cd3772bd"
+  },
+  "fetched_at": "2026-09-14T12:57:06+00:00",
+  "source_snapshot_sha256": "34562bcaef94f815f840ce0199c86934231faa6e691f224a3c325a5f7d2f2c8c",
+  "images": {},
+  "local_only": true
+}

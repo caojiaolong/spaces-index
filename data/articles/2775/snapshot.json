@@ -1,0 +1,17 @@
+{
+  "metadata": {
+    "id": "2775",
+    "title": "初试在Python中使用PARI/GP",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/2775",
+    "date": "2014-07-22",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "fetched_at": "2026-09-14T13:53:04+00:00",
+  "source_snapshot_sha256": "2be767ccbc467bf699c2f361a8341f18b27d3e4996d0e720a609e127b6d12834",
+  "validators": {
+    "etag": null,
+    "last_modified": null
+  }
+}

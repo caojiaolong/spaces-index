@@ -1,0 +1,39 @@
+{
+  "metadata": {
+    "id": "7148",
+    "title": "“非自回归”也不差：基于MLM的阅读理解问答",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/7148",
+    "date": "2019-12-26",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "source_dom_exact": true,
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "attributes_exact": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 8,
+    "display_formula_count": 2,
+    "image_count": 1,
+    "heading_count": 10,
+    "code_block_count": 0,
+    "source_text_sha256": "d0da2b6c5650a87409f863cb4414928cd45ae945782a4e9881beb212d9b4d280",
+    "output_text_sha256": "d0da2b6c5650a87409f863cb4414928cd45ae945782a4e9881beb212d9b4d280",
+    "latex_sha256": "10e0bd169f817f1159405dec5501f8758b7b6818c489c1fc3586a9fa8e6d6d99",
+    "body_sha256": "76b8237938ec1e2749337e352e3a0480cfb611b825cbe83a433a55e0a1cd043f",
+    "converter_version": 1,
+    "format": "html-v1",
+    "source_warnings": [],
+    "fallback_reason": "Standard Markdown round trip changed source structure",
+    "markdown_sha256": "8ab08cce2e325ec9d631a473dca88f970d4156c73f154d6026298467c073a308"
+  },
+  "fetched_at": "2026-09-14T13:16:00+00:00",
+  "source_snapshot_sha256": "bbda03cc31d37f62839938b0eab312cc397ab1a51ec6b055d802be624ffb3033",
+  "images": {},
+  "local_only": true
+}

@@ -1,0 +1,17 @@
+{
+  "metadata": {
+    "id": "8404",
+    "title": "变分自编码器（七）：球面上的VAE（vMF-VAE）",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/8404",
+    "date": "2021-05-17",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "fetched_at": "2026-09-14T13:06:40+00:00",
+  "source_snapshot_sha256": "223ab883f0c45c5c447ec923a465e298bb135dc233c4945896d7da781bb710e6",
+  "validators": {
+    "etag": null,
+    "last_modified": null
+  }
+}

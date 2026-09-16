@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "1361",
+    "title": "地球引力场的悬链线方程",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/1361",
+    "date": "2011-05-15",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 17,
+    "display_formula_count": 8,
+    "image_count": 1,
+    "heading_count": 0,
+    "code_block_count": 0,
+    "source_text_sha256": "74f74e59aa1a51bb3f12f2b1cab355c36c9bde1a6ac0d8d1daf2f584bcc755ac",
+    "output_text_sha256": "74f74e59aa1a51bb3f12f2b1cab355c36c9bde1a6ac0d8d1daf2f584bcc755ac",
+    "latex_sha256": "f0dea4282ce5ba8f80d4e7364bc5258c7b8b0f251334b2c7975e5518671299f7",
+    "body_sha256": "47af5212c6b9ac73f37dceca45cd8f1457209eee67cf734b0ae302c4654a92b6",
+    "converter_version": 1,
+    "markdown_sha256": "82029e41d69b397152911ef38bcd76a2d590df4b7ae95d44841e2c89df8f81d3"
+  },
+  "fetched_at": "2026-09-14T14:21:15+00:00",
+  "source_snapshot_sha256": "82d6c7453ca7c5b7a0ae336f2df1a175c64e28697d410ea3e0c7b7e8b9aff540",
+  "images": {},
+  "local_only": true
+}

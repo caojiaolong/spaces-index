@@ -1,0 +1,39 @@
+{
+  "metadata": {
+    "id": "1115",
+    "title": "太阳系是稳定的吗？",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/1115",
+    "date": "2010-12-19",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "source_dom_exact": true,
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "attributes_exact": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 0,
+    "display_formula_count": 0,
+    "image_count": 10,
+    "heading_count": 0,
+    "code_block_count": 0,
+    "source_text_sha256": "f5e147de6d96bb894ef6730ba6c2f5bfaa066d8fddc1c90018810e852a7f6028",
+    "output_text_sha256": "f5e147de6d96bb894ef6730ba6c2f5bfaa066d8fddc1c90018810e852a7f6028",
+    "latex_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "body_sha256": "c734dd9f456e2afe509cdd216a400f7330fc5975e91b307cae181b83f07fd382",
+    "converter_version": 1,
+    "format": "html-v1",
+    "source_warnings": [],
+    "fallback_reason": "Standard Markdown round trip changed source structure",
+    "markdown_sha256": "524cd917679436c55facabde0f4486522b27efca25487843be6678f27fdb66e8"
+  },
+  "fetched_at": "2026-09-14T14:26:18+00:00",
+  "source_snapshot_sha256": "c59fd0786c0d6c7192251ed70f4ec11f58a7d5761f274aacd02557131c2f7045",
+  "images": {},
+  "local_only": true
+}

@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "94",
+    "title": "【NASA每日一图】星系的扭曲和断裂",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/94",
+    "date": "2009-08-23",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 0,
+    "display_formula_count": 0,
+    "image_count": 1,
+    "heading_count": 0,
+    "code_block_count": 0,
+    "source_text_sha256": "0f3145a1806da1e277e15a5d8d889c5ca40d5927480adb9dcaccb8d993c0a588",
+    "output_text_sha256": "0f3145a1806da1e277e15a5d8d889c5ca40d5927480adb9dcaccb8d993c0a588",
+    "latex_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "body_sha256": "be97fe3784937c515289f069f2c1356a443573f0f2cccdcbf956325f04788b7f",
+    "converter_version": 1,
+    "markdown_sha256": "449609fca5e98ffcef28dd110f2c0f0ac9d88157994fe975e0a9b395b3733b9c"
+  },
+  "fetched_at": "2026-09-14T14:56:53+00:00",
+  "source_snapshot_sha256": "8b9bd29587ff24021d42a6b79e2d6807fa3a5286e71d292e03c187db42ad3f26",
+  "images": {},
+  "local_only": true
+}

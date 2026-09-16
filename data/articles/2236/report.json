@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "2236",
+    "title": "写在2013年即将逝去之际",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/2236",
+    "date": "2013-12-31",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 0,
+    "display_formula_count": 0,
+    "image_count": 0,
+    "heading_count": 0,
+    "code_block_count": 0,
+    "source_text_sha256": "13ad910684a2f7976b0893b51929a2f35057a13f612f40031d6b38f39df04a86",
+    "output_text_sha256": "13ad910684a2f7976b0893b51929a2f35057a13f612f40031d6b38f39df04a86",
+    "latex_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "body_sha256": "d321374eec8cd915e35971bdb791e073f312d0475ff31c059a550a8eeec982de",
+    "converter_version": 1,
+    "markdown_sha256": "373426ccda3d133b3c5515d6825586de784e6518999f56555e62717fbf35643c"
+  },
+  "fetched_at": "2026-09-14T13:57:52+00:00",
+  "source_snapshot_sha256": "dd81a0456eb7f0ad63b3f7e61f56f7937243b049a7690385079a258d4e01bdf0",
+  "images": {},
+  "local_only": true
+}

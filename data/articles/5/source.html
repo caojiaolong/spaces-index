@@ -1,0 +1,14 @@
+<div class="PostContent" id="PostContent">
+<p>发表一下我得出的一条公式，可以计算每一年的夏至的精确时间（<span style="color:#0000ff">太阳直射北回归线的北京时间</span>）</p><p><strong>公元Y年的夏至日期为该年的6月</strong><br/>
+$$21.9938+0.2422Y-\lfloor Y/4 \rfloor-\lfloor Y/400 \rfloor+\lfloor Y/100 \rfloor$$<br/>
+其中$\lfloor x \rfloor$表示整数部分。</p><p>理论上该公式可以精确到<strong>分（min）</strong>，时间为<u>北京时间</u>。</p><p><strong>理论依据：</strong><br/>
+<font color="red">1、2009.06.21 13:46为夏至</font><br/>
+<font color="red">2、一年有365.2422天</font><br/>
+<font color="red">3、阳历历法法则。</font></p><p><strong>实际验算：</strong><br/>
+<span style="color:#0000ff">由该公式推算<strong><u>2008年6月21日7:57.2</u></strong>分为夏至，而查阅相关资料得到的数据为<strong><u>2008年6月21日7:58分</u></strong></span></p><p><strong>推算过程：</strong></p><p>21日13:46，即为<strong>21.573611</strong>天，以此为基础，由于一年有<strong>365.2422</strong>天，2008年的夏至为<strong>21.331411</strong>天。那么一般地，Y年的夏至为$21.331411+0.2422(Y-2008)$天。</p><p>当4年后就有一个闰年，闰年一年有366天，因此，每4年就要减去一天，即Y年就要减去$\lfloor {Y-2008}/4 \rfloor$天。</p><p>于是有公式</p><p>$$21.331411+0.2422(Y-2008)-\lfloor {Y-2008}/4 \rfloor$$</p><p>但是并非这样就完了，末尾两个数是0的年份，要除以400才是闰年，因此，当Y-2000超过400时，我们又算多了。</p><p>因此我们要加入两个项：</p><p>$$\lfloor {Y-2000}/100 \rfloor-\lfloor {Y-2000}/400 \rfloor$$</p><p>这样总的公式就为</p><p>$$21.331411+0.2422(Y-2008)-\lfloor {Y-2008}/4 \rfloor+\lfloor {Y-2000}/100 \rfloor-\lfloor {Y-2000}/400 \rfloor$$</p><p>这条公式用着不是很方便。我们可以化简成为开始的公式。</p><p><u><strong>提高原来数据的精确度可以进一步提供公式的精确度。</strong></u></p>
+
+
+
+
+
+</div>

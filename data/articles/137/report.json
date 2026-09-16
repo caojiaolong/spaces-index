@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "137",
+    "title": "【NASA每日一图】壮观的银河系",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/137",
+    "date": "2009-09-26",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 0,
+    "display_formula_count": 0,
+    "image_count": 1,
+    "heading_count": 0,
+    "code_block_count": 0,
+    "source_text_sha256": "e896012267c4218a9d122bfd297603800c7a184b28108674a4ba807cba8923db",
+    "output_text_sha256": "e896012267c4218a9d122bfd297603800c7a184b28108674a4ba807cba8923db",
+    "latex_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "body_sha256": "f4c7b9d57a7b858b40b41f36712cffdc1f0acf9872648d4f144100d4c3109286",
+    "converter_version": 1,
+    "markdown_sha256": "79b3842f716068c9fa5a595dde4ad3878f4bf5363421e6bd9191164c75a7f750"
+  },
+  "fetched_at": "2026-09-14T14:51:35+00:00",
+  "source_snapshot_sha256": "50e334da340ea7c976de28b8a2fc2f7f2e407730ec8c6b5c94436e02ffa1c862",
+  "images": {},
+  "local_only": true
+}

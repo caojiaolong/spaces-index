@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "3781",
+    "title": "OCR技术浅探：2. 背景与假设",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/3781",
+    "date": "2016-06-17",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 0,
+    "display_formula_count": 0,
+    "image_count": 1,
+    "heading_count": 4,
+    "code_block_count": 0,
+    "source_text_sha256": "7d7e8f34f21946db3dfc06d087936a4a67643f4c45aabb71b589b2d682084ac9",
+    "output_text_sha256": "7d7e8f34f21946db3dfc06d087936a4a67643f4c45aabb71b589b2d682084ac9",
+    "latex_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "body_sha256": "0a64888896fbeab7e012941005fb6d59b21272f8585666f8256a104e45b2fcab",
+    "converter_version": 1,
+    "markdown_sha256": "5e767c8d60831acb90444a3f0ebc7af4cb1e57ecf863993b28e6fc766a7b096a"
+  },
+  "fetched_at": "2026-09-14T13:40:15+00:00",
+  "source_snapshot_sha256": "1cecb7de83be3676f56c472f2395e58176b40f438b2107a52efef1814a68858f",
+  "images": {},
+  "local_only": true
+}

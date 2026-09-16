@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "11693",
+    "title": "中位数（Median）简介",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/11693",
+    "date": "2026-03-31",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 56,
+    "display_formula_count": 10,
+    "image_count": 0,
+    "heading_count": 5,
+    "code_block_count": 0,
+    "source_text_sha256": "aa09a418d231a82e0233fd88f13382fd35481ae2396915e0f503ac64a5a39fdb",
+    "output_text_sha256": "aa09a418d231a82e0233fd88f13382fd35481ae2396915e0f503ac64a5a39fdb",
+    "latex_sha256": "3caf75b2f224a212c5cc024dabe7cc0ede1dd76626056e23502ae01072bda0c4",
+    "body_sha256": "49f43a97fe67368c5a2994ba6ac867be592b3219092938a8848c185bbbb7f597",
+    "converter_version": 1,
+    "markdown_sha256": "1c108185473deed2c624d2df5bce7d2feea99cf8e4ef439562d785c9a85a8f4d"
+  },
+  "fetched_at": "2026-09-14T12:36:26+00:00",
+  "source_snapshot_sha256": "4f228acdf0ad22447ab2ffeea235837ee842460497cfb7eb8cf920bdc62b018f",
+  "images": {},
+  "local_only": true
+}

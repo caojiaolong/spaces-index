@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "8512",
+    "title": "两个多元正态分布的KL散度、巴氏距离和W距离",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/8512",
+    "date": "2021-07-08",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 186,
+    "display_formula_count": 50,
+    "image_count": 0,
+    "heading_count": 31,
+    "code_block_count": 0,
+    "source_text_sha256": "7b82c7991cc45485913f7b9f05b339756ad360971b7a8e715f2a4084decfd80a",
+    "output_text_sha256": "7b82c7991cc45485913f7b9f05b339756ad360971b7a8e715f2a4084decfd80a",
+    "latex_sha256": "a5d5e03b1ca7a8f594c1b0493c955118cd5d899f203fe8794e2a09342ff9984d",
+    "body_sha256": "d22fe09b7e9da9d159a7e432cbe6295442bd037459bcb66e7e8cb9e70b64d90d",
+    "converter_version": 1,
+    "markdown_sha256": "b43ca0aeba95314032219928c6d0af5c4aff4d49690c926884123d6b009616fe"
+  },
+  "fetched_at": "2026-09-14T13:05:33+00:00",
+  "source_snapshot_sha256": "4c46a383a1c60f378a5184271becb2affc3dde6b9539f0aa727e390f8ca78567",
+  "images": {},
+  "local_only": true
+}

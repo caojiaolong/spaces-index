@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "11175",
+    "title": "矩阵r次方根和逆r次方根的高效计算",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/11175",
+    "date": "2025-07-21",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 97,
+    "display_formula_count": 13,
+    "image_count": 0,
+    "heading_count": 7,
+    "code_block_count": 2,
+    "source_text_sha256": "09104560faede3e062ea66d26b36f3a06d363481e9f1b504c0b784bac8744ae2",
+    "output_text_sha256": "09104560faede3e062ea66d26b36f3a06d363481e9f1b504c0b784bac8744ae2",
+    "latex_sha256": "99d764b6692b487a01ce2ade551de8b67b11f682c5fa7d6e7ff974c7bd945807",
+    "body_sha256": "93779ea07d6abb08a832b46b8e8e97fe727a797608aeed4ab6088d19861f5c0a",
+    "converter_version": 1,
+    "markdown_sha256": "73b2437b6a90a42e14fcff6590042911b05bb7cf3e7e588a14f5419efe05e9fc"
+  },
+  "fetched_at": "2026-09-14T12:40:56+00:00",
+  "source_snapshot_sha256": "55d72246f804518257c955f26b88794d7870dc91f4f7266dfd9491f82c400e95",
+  "images": {},
+  "local_only": true
+}

@@ -1,0 +1,119 @@
+# 从采样看优化：可导优化与不可导优化的统一视角
+
+> 作者：苏剑林 · 科学空间 · 2020-06-23
+>
+> 原文：<https://spaces.ac.cn/archives/7521>
+>
+> 原文许可：[CC BY-NC-ND 2.5 CN（署名-非商业性使用-禁止演绎）](https://creativecommons.org/licenses/by-nc-nd/2.5/cn/)。
+>
+> 本文件由 spaces-index 非官方、非商业项目进行必要的 HTML → Markdown 格式转换；正文未做摘要、润色、翻译或重组。项目不代表作者，也不表示作者为项目背书。
+>
+> 署名及附加许可说明不代表已获得作者额外授权。第三方素材权利依其原有声明。
+>
+> 原站转载与引用说明：[科学空间 FAQ](https://spaces.ac.cn/archives/6508#%E6%96%87%E7%AB%A0%E5%A6%82%E4%BD%95%E8%BD%AC%E8%BD%BD/%E5%BC%95%E7%94%A8)
+
+---
+
+不少读者都应该知道，损失函数与评测指标的不一致性是机器学习的典型现象之一，比如分类问题中损失函数用交叉熵，评测指标则是准确率或者F1，又比如文本生成中损失函数是teacher\-forcing形式的交叉熵，评测指标则是BLEU、ROUGE等。理想情况下，当然是评测什么指标，我们就去优化这个指标，然而评测指标通常都是不可导的，而我们多数都是使用基于梯度的优化器，这就要求最小化的目标必须是可导的，这是不一致性的来源。
+
+前些天在arxiv刷到了一篇名为[《MLE\-guided parameter search for task loss minimization in neural sequence modeling》](<https://papers.cool/arxiv/2006.03158>)的论文，顾名思义，它是研究如何直接优化文本生成的评测指标的。经过阅读，笔者发现这篇论文很有价值，事实上它提供了一种优化评测指标的新思路，适用范围并不局限于文本生成中。不仅如此，它甚至还包含了一种理解可导优化与不可导优化的统一视角。
+
+## 采样视角
+
+首先，我们可以通过采样的视角来重新看待优化问题：设模型当前参数为$\theta$，优化目标为$l(\theta)$，我们希望决定下一步的更新量$\Delta\theta$，为此，我们先构建分布
+\begin{equation}p(\Delta\theta|\theta)=\frac{e^{-[l(\theta + \Delta\theta) - l(\theta)]/\alpha}}{Z(\theta)},\quad Z(\theta) = \int e^{-[l(\theta + \Delta\theta) - l(\theta)]/\alpha} d(\Delta\theta)\end{equation}
+其中$\alpha > 0$是一个超参数。这个分布的意义很明显，就是将$\Delta\theta$视为一个随机变量，而使得$l(\theta + \Delta\theta)$越小的$\Delta\theta$出现概率则越大。有了这个分布之后，我们定义下一步的更新量为它的期望
+\begin{equation}\Delta\theta_* = \int p(\Delta\theta|\theta)\Delta\theta d(\Delta\theta) = \mathbb{E}_{\Delta\theta\sim p(\Delta\theta|\theta)}[\Delta\theta]\label{eq:delta}\end{equation}
+
+在这个视角里边，我们并没有对$l(\theta)$的可导性做假设，因此上述定义对于可导和不可导的优化都是通用的。另外，我们可以通过调节$\alpha$来控制更新的稳定性，当$\alpha\to 0$时，由$p(\Delta\theta|\theta)$的定义可知只有使得$l(\theta + \Delta\theta)$最小的$\Delta\theta$的概率才不为0，这意味着$\Delta\theta_*$就是下降得最快的方向；当$\alpha\to +\infty$时，$p(\Delta\theta|\theta)$趋于均匀分布，所以$\Delta\theta_*$趋于0，也就是最稳。通过选择一个适合的$\alpha$，理论上可以让优化过程在“快”与“稳”之间达到一个好的平衡，这在直觉上能取得泛化性能更好的结果。
+
+当然，到目前为止的定义还是理论上的，我们还不知道$p(\Delta\theta|\theta)$的解析形式，也不知道如何从里边采样，更不用说算它的期望值的。下面我们将会看到，这个理论形式是如何逐步实践到可导场景和不可导场景的。
+
+## 可导目标
+
+对于可导的$l(\theta)$，我们虽然不能精确求出$p(\Delta\theta|\theta)$来，但是我们可以做泰勒展开得到一个近似分布，进而去估算$\Delta\theta_*$。结果显示，展开到一阶、二阶近似，我们分别可以得到梯度下降法和牛顿法。也就是说，梯度下降和牛顿法某种意义上都只是该视角下的一个特例。
+
+### 梯度下降
+
+作为第一次尝试，我们假设$l(\theta)$是一阶可导的，那么由泰勒展式可以得到
+\begin{equation}l(\theta + \Delta\theta) - l(\theta)\approx \Delta\theta^{\top}\nabla_{\theta}l(\theta)\end{equation}
+这也就是$p(\Delta\theta|\theta)\sim e^{-\Delta\theta^{\top}\nabla_{\theta}l(\theta)/\alpha}$，如果$\Delta\theta$无约束，那么是无法完成归一化的，我们不妨限制$\Vert\Delta\theta\Vert\leq \epsilon$，并且记$\nabla_{\theta}l(\theta)=g$，那么
+\begin{equation}p(\Delta\theta|\theta) = \frac{e^{-\Delta\theta^{\top}g/\alpha}}{Z(g)},\quad Z(g)=\int_{\Vert\Delta\theta\Vert\leq\epsilon}e^{-\Delta\theta^{\top}g/\alpha}d(\Delta\theta)\end{equation}
+而很明显$\Delta\theta_* = -\alpha\nabla_g \ln Z(g)$，所以关键是求出$Z(g)$。设$\Delta\theta$与$g$的夹角为$\eta$，那么
+\begin{equation}Z(g)=\int_{\Vert\Delta\theta\Vert\leq\epsilon}e^{-\Vert\Delta\theta\Vert\times\Vert g\Vert \times (\cos\eta) / \alpha}d(\Delta\theta)\end{equation}
+这是一个在高维超球内的积分，由于各向同性的存在，所以当模长$\Vert g\Vert$固定后，整个积分结果也就固定了，也就是说$Z(g)$只跟$g$的模长有关，跟它的方向无关，所以也可以记为$Z(\Vert g\Vert)$。我们不需要知道$Z(\Vert g\Vert)$的具体形式，知道它仅仅是模长$\Vert g\Vert$的函数就行了，这时候
+\begin{equation}\Delta\theta_* = -\alpha\nabla_g \ln Z(g)= - \frac{Z'(\Vert g\Vert)}{Z(\Vert g\Vert)}\alpha\nabla_g\Vert g\Vert = - \frac{Z'(\Vert g\Vert)}{Z(\Vert g\Vert)}\frac{\alpha g}{\Vert g\Vert}\end{equation}
+所以$\Delta\theta_*$的方向就是$-g$的方向，也就是梯度的反方向，这样我们就导出<strong>梯度下降</strong>了，可以说它是式$\eqref{eq:delta}$的一阶近似。另外，具体算出$Z(g)$也是可以的，只不过它并非初等函数，过程可以参考stackexchange上的讨论 [Integral of exp over the unit ball](<https://math.stackexchange.com/questions/3310890/integral-of-exp-over-the-unit-ball>)。
+
+### 牛顿法
+
+如果$l(\theta)$是二阶可导的，那么可以展开到二阶
+\begin{equation}l(\theta + \Delta\theta) - l(\theta)\approx \Delta\theta^{\top}\nabla_{\theta}l(\theta) + \frac{1}{2}\Delta\theta^{\top}\nabla_{\theta}^2 l(\theta) \Delta\theta\end{equation}
+记$g=\nabla_{\theta}l(\theta),\mathcal{H}=\nabla_{\theta}^2 l(\theta)$，我们就有
+\begin{equation}\begin{aligned}
+\log p(\Delta\theta|\theta)\sim&\, -\Delta\theta^{\top}g - \frac{1}{2}\Delta\theta^{\top} \mathcal{H} \Delta\theta\\
+=&\, - \frac{1}{2}\left(\Delta\theta+\mathcal{H}^{-1}g\right)^{\top}\mathcal{H}\left(\Delta\theta+\mathcal{H}^{-1}g\right)+ \frac{1}{2}g^{\top} \mathcal{H}^{-1} g
+\end{aligned}\end{equation}
+很明显，因为$p(\Delta\theta|\theta)$的指数部分关于$\theta$是二次的，所以$p(\Delta\theta|\theta)$是一个高斯分布，而上式则意味着该高斯分布的均值为$-\mathcal{H}^{-1}g$、协方差矩阵为$\mathcal{H}^{-1}$，所以$\Delta\theta_*=-\mathcal{H}^{-1}g$，这个结果对应的就是<strong>牛顿法</strong>了，因此可以说牛顿法是式$\eqref{eq:delta}$的二阶近似。
+
+## 不可导目标
+
+对于不可导的$l(\theta)$，上述的泰勒展开近似也就无法做到了，理论上我们只能通过直接采样的方式去估算$\Delta\theta_*$了，而原论文则提出，我们可以通过重要性采样来提高采样效率和估算精度，这就是论文的核心思想和主要贡献了。
+
+### 重要性采样
+
+这里先一般化地简介一下重要性采样（Importance Sampling）概念。设有概率分布$p(x)$，以及函数$f(x)$，我们要估算
+\begin{equation}\int p(x)f(x)dx = \mathbb{E}_{x\sim p(x)}[f(x)]\end{equation}
+这也要求我们从$p(x)$中采样出若干个样本$x_1,x_2,\dots,x_n$出来，然后去算$\frac{1}{n}\sum\limits_{i=1}^n f(x_i)$。然而，这里边可能存在两个困难：
+
+> 1、我们可能根本不知道怎么从$p(x)$里边采样；
+> 
+> 
+> 
+> 2、就算我们知道怎么从$p(x)$中采样，但对于类似[变分自编码器](<https://spaces.ac.cn/archives/5253>)的场景，$p(x)$是带参数的，需要保留梯度，而直接采样计算不一定能做到这一点。
+
+这种情况下，或许重要性采样能帮助我们，它需要我们找到一个既知道概率密度的表达式、又方便采样的分布$q(x)$，然后作如下改写：
+\begin{equation}\int p(x)f(x)dx = \int q(x)\left[\frac{p(x)}{q(x)}f(x)\right]dx = \mathbb{E}_{x\sim q(x)}\left[\frac{p(x)}{q(x)}f(x)\right]\label{eq:is}\end{equation}
+这时候采样转移到了$q(x)$上，而根据我们的假设，$q(x)$采样是容易进行的，并且$q(x)$的解析式已经知道，所以$\frac{p(x)}{q(x)}f(x)$也是可以计算的，如果$p(x)$有参数需要计算梯度，那么它的梯度也得到了保留。很明显，如果$q(x)$越接近$p(x)$，估算效率就越高，$q(x)$代表着对$p(x)$各个样本的“重要性”的一种先验估计，因此这种思路就称为重要性采样。
+
+这样一来，假设$x_1,x_2,\dots,x_n\sim q(x)$，我们就有
+\begin{equation}\mathbb{E}_{x\sim p(x)}[f(x)]\approx \frac{1}{n}\sum_{i=1}^n \frac{p(x_i)}{q(x_i)}f(x_i)\label{eq:is-2}\end{equation}
+不过，还有一个小问题，式$\eqref{eq:is}$或式$\eqref{eq:is-2}$都要求我们知道$p(x)$的精确表达式，有时候这一点我们也不能做到，比如前面的$p(\Delta\theta|\theta)$我们只知道它正比于$e^{-[l(\theta + \Delta\theta) - l(\theta)]/\alpha}$，其归一化因子是没法直接算出来的。这种情况下，我们可以借助关系式
+\begin{equation}1=\int p(x)dx=\int q(x)\left[\frac{p(x)}{q(x)}\right]dx=\mathbb{E}_{x\sim q(x)}\left[\frac{p(x)}{q(x)}\right]\approx\frac{1}{n}\sum_{i=1}^n \frac{p(x_i)}{q(x_i)}\end{equation}
+也就是说$\left[\frac{1}{n}\frac{p(x_1)}{q(x_1)},\frac{1}{n}\frac{p(x_2)}{q(x_2)},\dots,\frac{1}{n}\frac{p(x_n)}{q(x_n)}\right]$应当是近似归一化的，如果我们只知道$p(x)\sim \rho(x)$而不知道归一化因子，那么我们可以手动完成归一化，此时式$\eqref{eq:is-2}$变为
+\begin{equation}\mathbb{E}_{x\sim p(x)}[f(x)]\approx \sum_{i=1}^n \frac{\rho(x_i)\big/q(x_i)}{\sum\limits_{i=1}^n \rho(x_i)\big/q(x_i)}f(x_i)\label{eq:is-3}\end{equation}
+这就省去了归一化因子的计算。
+
+### 借力可导
+
+至此，我们所需要的数学工具都已经准备齐全了，可以正式迎接我们的不可导目标了。假设是$l(\theta)$是评测指标，比如是平均正确率、平均BLEU等，它是我们需要优化的最终目标，但它是不可导的。不过在大多数场景下，我们都能找到一个可导的（近似的）优化目标$\tilde{l}(\theta)$，而通常我们都是直接用梯度下降优化$\tilde{l}(\theta)$，这就造成了优化目标与评测指标的不一致性。
+
+但不得不说，很多时候$\tilde{l}(\theta)$确实是$l(\theta)$的一个良好近似，换言之$-\nabla_{\theta}\tilde{l}(\theta)$确实指出了一个比较靠谱（但不是最优）的更新方向，这时候我们就可以借助重要性采样了。构建$q(\Delta\theta|\theta)$为正态分布$\mathcal{N}(\Delta\theta; -\nabla_{\theta}\tilde{l}(\theta), \sigma^2)$，根据重要性采样的式$\eqref{eq:is-3}$，我们有
+\begin{equation}
+\Delta\theta_*=\mathbb{E}_{\Delta\theta\sim q(\Delta\theta|\theta)}\left[\frac{p(\Delta\theta|\theta)}{q(\Delta\theta|\theta)}\Delta\theta\right]\approx\sum_{i=1}^n \frac{e^{-[l(\theta + \Delta\theta_i) - l(\theta)]/\alpha}\big/\mathcal{N}(\Delta\theta_i; -\nabla_{\theta}\tilde{l}(\theta), \sigma^2)}{\sum\limits_{i=1}^n e^{-[l(\theta + \Delta\theta_i) - l(\theta)]/\alpha}\big/\mathcal{N}(\Delta\theta_i; -\nabla_{\theta}\tilde{l}(\theta), \sigma^2)}\Delta\theta_i
+\label{eq:sg}\end{equation}
+其中$\Delta\theta_1,\Delta\theta_2,\dots,\Delta\theta_n\sim\mathcal{N}(\Delta\theta; -\nabla_{\theta}\tilde{l}(\theta), \sigma^2)$。除此之外，$q(\Delta\theta|\theta)$还可以使用混合模型，原论文使用的是：
+\begin{equation}q(\Delta\theta|\theta)=\lambda \mathcal{N}(\Delta\theta; 0, \sigma^2) + (1-\lambda)\mathcal{N}(\Delta\theta; -\nabla_{\theta}\tilde{l}(\theta), \sigma^2)\end{equation}
+大家可能比较关心采样数目，原论文在文本生成任务中选择了$n=4$，结果就有明显的改善了，说明有了$q(\Delta\theta|\theta)$的“指引”后，$n$不需要太大。
+
+### 策略梯度
+
+一般情况下，如果需要直接优化评测指标，常见的方法是通过强化学习中的“策略梯度（Policy Gradient）”，所以看到这里的读者也许会有疑问：上述方法跟策略梯度有什么区别吗？孰优孰劣？
+
+假设单个样本的评测指标为$l(y_t,y_p)$，其中$y_t$是真实标签，$y_p$是预测结果，那么总的平均指标为
+\begin{equation}l(\theta)=\mathbb{E}_{(x_t,y_t)\sim\mathcal{D}}\left[l\left(y_t, \mathop{\text{argmax}}_y p_{\theta}(y|x_t)\right)\right]\end{equation}
+不可导源于$\mathop{\text{argmax}}$操作，而策略梯度将其变为
+\begin{equation}\tilde{l}(\theta)=\mathbb{E}_{(x_t,y_t)\sim\mathcal{D}}\left[\mathbb{E}_{y\sim p_{\theta}(y|x_t)}\left[l\left(y_t,y\right)\right]\right]\end{equation}
+然后利用（参考[《漫谈重参数：从正态分布到Gumbel Softmax》](<https://spaces.ac.cn/archives/6705#%E8%83%8C%E5%90%8E%E7%9A%84%E6%95%85%E4%BA%8B>)）
+\begin{equation}\nabla_{\theta}\int p_{\theta}(x)f(x)dx = \int f(x)\nabla_{\theta}p_{\theta}(x)dx =\int p_{\theta}(x)f(x)\nabla_{\theta}\log p_{\theta}(x)dx\end{equation}
+得到
+\begin{equation}\nabla_{\theta}\tilde{l}(\theta)=\mathbb{E}_{(x_t,y_t)\sim\mathcal{D}}\left[\mathbb{E}_{y\sim p_{\theta}(y|x_t)}\left[l\left(y_t,y\right)\nabla_{\theta}\log p_{\theta}(y|x_t)\right]\right]\label{eq:pg}\end{equation}
+这就是策略梯度的一般形式，也称为REINFORCE估计。
+
+式$\eqref{eq:sg}$和式$\eqref{eq:pg}$是两种从不同的角度得出的更新方向，它们的区别在哪呢？可以看到，核心的区别在于采样对象：式$\eqref{eq:sg}$的采样是$\mathbb{E}_{\Delta\theta\sim q(\Delta\theta|\theta)}$，$\eqref{eq:pg}$的采样是$\mathbb{E}_{y\sim p_{\theta}(y|x_t)}$。所以原论文提供的式$\eqref{eq:sg}$是“采样多组参数、每组参数输出一个样本”来计算更新量，策略梯度的式$\eqref{eq:pg}$则是“只需一组参数、但要采样输出多个样本”来计算更新量。
+
+从计算量来看，应当是策略梯度计算量少一些，因为$\mathbb{E}_{y\sim p_{\theta}(y|x_t)}$这一步采样多个样本可以并行来；当然，理论上$\mathbb{E}_{\Delta\theta\sim q(\Delta\theta|\theta)}$采样多组参数来预测各自的样本也可以并行来，但并不好写。不过，策略梯度的问题也不少，典型问题就是梯度估计的方差太大，所以都需要普通的似然目标来预训练到差不多了，然后才用策略梯度来微调；而原论文的式$\eqref{eq:sg}$则自始至终都试图直接优化评测指标，并且借助可导目标来实现重要性采样，结合了可导优化和不可导优化的优势。
+
+## 文章小结
+
+本文介绍了一个理解优化算法的新视角，在该视角之下可导和不可导目标的优化得到了统一：对于可导的目标函数，在该视角之下分别做一阶和二阶展开，我们分别可以得到梯度下降法和牛顿法；而对于不可导的目标函数，我们借助可导近似来进行重要性采样，同样也可以完成不可导的目标优化。

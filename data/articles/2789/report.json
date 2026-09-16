@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "2789",
+    "title": "素数之美1：所有素数之积",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/2789",
+    "date": "2014-07-30",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 40,
+    "display_formula_count": 11,
+    "image_count": 0,
+    "heading_count": 0,
+    "code_block_count": 0,
+    "source_text_sha256": "b30275de331e3b77bb0f02ce890426e6c1b6281970dddc3bcda19c3ff331e576",
+    "output_text_sha256": "b30275de331e3b77bb0f02ce890426e6c1b6281970dddc3bcda19c3ff331e576",
+    "latex_sha256": "5dbbb92d988047352d08a4a7ce21e9aacdf0f8683a533f786d4904df55bbd4d2",
+    "body_sha256": "a47959ab83373ae1b11d95cfe4519bd4d21c1f5199ff19caaa7f537fa50e9d4d",
+    "converter_version": 1,
+    "markdown_sha256": "0cdf3e4603dda4bcab41026606e024e53758d3877d1292d5fd5acc982bc59214"
+  },
+  "fetched_at": "2026-09-14T13:52:57+00:00",
+  "source_snapshot_sha256": "9415eb0b5889e548824c0ad09d4cab974898620ff5b39c2d3b0b27fa27dde484",
+  "images": {},
+  "local_only": true
+}

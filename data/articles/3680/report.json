@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "3680",
+    "title": "[欧拉数学]伯努利级数及相关级数的总结",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/3680",
+    "date": "2016-03-20",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 45,
+    "display_formula_count": 20,
+    "image_count": 0,
+    "heading_count": 5,
+    "code_block_count": 0,
+    "source_text_sha256": "fd0d14142861f9ad677847518fd32fa50f9044beb46dcb1d1a0496140535082f",
+    "output_text_sha256": "fd0d14142861f9ad677847518fd32fa50f9044beb46dcb1d1a0496140535082f",
+    "latex_sha256": "98b3bfbdb23232d13232066493e5f30ec5b1515e54453e64734b421575121b58",
+    "body_sha256": "15db38ae2e46761d99fb34d5fe9043bf21fddfb67e5716b1f4a3c0a0c7dcfbf6",
+    "converter_version": 1,
+    "markdown_sha256": "d62822821ee37eda562f6cdcf8aaae224b4796cac384860dff23c6a1701e83fa"
+  },
+  "fetched_at": "2026-09-14T13:42:00+00:00",
+  "source_snapshot_sha256": "45813f626a685961ae857a35cc56f15db643a7c531182bfb96f938613fce15f6",
+  "images": {},
+  "local_only": true
+}

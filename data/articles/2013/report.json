@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "2013",
+    "title": "与首都机场的“难分难舍”",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/2013",
+    "date": "2013-07-01",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 0,
+    "display_formula_count": 0,
+    "image_count": 5,
+    "heading_count": 0,
+    "code_block_count": 0,
+    "source_text_sha256": "d0272f14a37f30f36a91ae133385e67ac723a07b8f88f4c21aed9243c6396948",
+    "output_text_sha256": "d0272f14a37f30f36a91ae133385e67ac723a07b8f88f4c21aed9243c6396948",
+    "latex_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "body_sha256": "33d02bd981bd6218085ebd1f6475f91d58555b5f738e2d3f2ef8dd98aad505fc",
+    "converter_version": 1,
+    "markdown_sha256": "ccdad4aecff1898bc1f13e61abba0e26c58cfb0d941be59ef0329165a17b6a44"
+  },
+  "fetched_at": "2026-09-14T14:01:30+00:00",
+  "source_snapshot_sha256": "cad0e1a00c64d349c3b16077c511e9427d1f1c12333824169632f6cd8b3af07b",
+  "images": {},
+  "local_only": true
+}

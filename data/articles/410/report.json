@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "410",
+    "title": "【NASA每日一图】火星上的沙尘暴",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/410",
+    "date": "2010-02-05",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 0,
+    "display_formula_count": 0,
+    "image_count": 2,
+    "heading_count": 0,
+    "code_block_count": 0,
+    "source_text_sha256": "0dbb3bb865c632043d8842e9857501a9fcca317887df25c894a638e2b6deaccb",
+    "output_text_sha256": "0dbb3bb865c632043d8842e9857501a9fcca317887df25c894a638e2b6deaccb",
+    "latex_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "body_sha256": "638f11f06c0a4c9484dd41d7d51ec8e21d2bfccfa6955ce3b1673bc988e55b5e",
+    "converter_version": 1,
+    "markdown_sha256": "0a70fa72a33d01c5b38f5d9d442ce685f98f85c366b8120e6d82af21f5650f34"
+  },
+  "fetched_at": "2026-09-14T14:41:55+00:00",
+  "source_snapshot_sha256": "58d5f9927934a7a6ce98e9a0177bce1892300c45f29e52483e9057c93186e86b",
+  "images": {},
+  "local_only": true
+}

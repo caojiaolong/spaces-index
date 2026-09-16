@@ -1,0 +1,17 @@
+{
+  "metadata": {
+    "id": "7888",
+    "title": "也来谈谈RNN的梯度消失/爆炸问题",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/7888",
+    "date": "2020-11-13",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "fetched_at": "2026-09-14T13:10:08+00:00",
+  "source_snapshot_sha256": "75cc3988e33d9f5eeceb58c748d41be39848a592aa0c95d400105acd904db2df",
+  "validators": {
+    "etag": null,
+    "last_modified": null
+  }
+}

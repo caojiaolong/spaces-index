@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "7867",
+    "title": "那个屠榜的T5模型，现在可以在中文上玩玩了",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/7867",
+    "date": "2020-11-06",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 5,
+    "display_formula_count": 3,
+    "image_count": 4,
+    "heading_count": 11,
+    "code_block_count": 2,
+    "source_text_sha256": "44b1cb8033083ad5e97adf2d4b7855211e4671bf247c518f389976bf3fdb8ea1",
+    "output_text_sha256": "44b1cb8033083ad5e97adf2d4b7855211e4671bf247c518f389976bf3fdb8ea1",
+    "latex_sha256": "33b31c6b53c7077ed2ef46b357cd3da64fbb45d78054a8573ef6e253d13337c9",
+    "body_sha256": "4456ef04da95e8eb0b25017d8ea8c724b450c848164b1cce5e8a5988e5e9863b",
+    "converter_version": 1,
+    "markdown_sha256": "219a3f73bf207c1099443f347e5cc9b9f0f1e611efd6d5024e009885df71f557"
+  },
+  "fetched_at": "2026-09-14T13:10:23+00:00",
+  "source_snapshot_sha256": "eeb134a6840f8a0cc754ec7e2d7a5ea9dd30d6dc90b36586c68ccaa1fb2077a8",
+  "images": {},
+  "local_only": true
+}

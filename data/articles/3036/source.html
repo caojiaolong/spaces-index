@@ -1,0 +1,71 @@
+<div class="PostContent" id="PostContent">
+<p>我们上近世代数课的时候，老师谈到在同构意义之下只有两个不同的四阶群，六阶群也是只有两个，还说到这是代数的研究生入学考试题目。说到这样了，我就饶有兴致地研究了一下，发现只有两个互不同构的四阶群这几乎是显然的，感觉这题用来做研究生考试题太水了吧？接着分析了一下六阶的情况，发现复杂了不少（元素增加）。而今天在实变函数课的时候，想到了一个简化的技巧，遂也证明了只有两个互不同构的六阶群。把结果和研究过程贴在这里，与大家分享。</p><p><strong>两个四阶群</strong></p><p>不管是四阶群还是六阶群，它们都是有限群。有限群的一个特点就是，可以把它们的乘法表写出来（只要不怕麻烦~~）。既然要研究四阶群的数目，我们只需要列出四阶群的乘法表就行了。设四阶群为$G_4=\{e, a, b, c\}$，其中$e$是单位元，根据这些信息，我们至少可以写出乘法表的一部分：<br/>
+$$\begin{array}{c|cccc}<br/>
+\cdot &amp; e &amp; a &amp; b &amp; c \\<br/>
+\hline<br/>
+e &amp; e &amp;a &amp;b &amp;c \\<br/>
+a &amp; a &amp; &amp; &amp; \\<br/>
+b &amp; b &amp; &amp; &amp; \\<br/>
+c &amp; c &amp; &amp; &amp; \end{array}$$<br/>
+接着考虑$a^2$的结果。它只能为$e$或$b$（如果是等于$c$，那么跟等于$b$是等价的），我们分别考虑它们。</p><p>如果为$e$，那么就在相应的位置填写$e$。同时，要注意：<font color="red"><strong>乘法表中每行、每列的结果都是不能重复的（有限群的重排），这使得乘法表的构造就像数独的推理一般了！</strong></font>因此，填完$a^2=e$之后，我们就可以将乘法表的填写推至<br/>
+$$\begin{array}{c|cccc}<br/>
+\cdot &amp; e &amp; a &amp; b &amp; c \\<br/>
+\hline<br/>
+e &amp; e &amp;a &amp;b &amp;c \\<br/>
+a &amp; a &amp;e &amp;c &amp;b \\<br/>
+b &amp; b &amp;c &amp; &amp; \\<br/>
+c &amp; c &amp;b &amp; &amp; \end{array}$$<br/>
+于是剩下的四个空，不是$\begin{array}{c}{a}&amp;{e}\\{e}&amp;{a}\end{array}$就是$\begin{array}{c}{e}&amp;{a}\\{a}&amp;{e}\end{array}$了。不难证明两种情况都构成一个群的乘法表，于是成功构造了两个四阶群的“乘法表”：<br/>
+$$\begin{array}{c|cccc}<br/>
+\cdot &amp; e &amp; a &amp; b &amp; c \\<br/>
+\hline<br/>
+e &amp; e &amp;a &amp;b &amp;c \\<br/>
+a &amp; a &amp;e &amp;c &amp;b \\<br/>
+b &amp; b &amp;c &amp;e &amp;a \\<br/>
+c &amp; c &amp;b &amp;a &amp;e \end{array} \quad\text{和}\quad \begin{array}{c|cccc}<br/>
+\cdot &amp; e &amp; a &amp; b &amp; c \\<br/>
+\hline<br/>
+e &amp; e &amp;a &amp;b &amp;c \\<br/>
+a &amp; a &amp;e &amp;c &amp;b \\<br/>
+b &amp; b &amp;c &amp;a &amp;e \\<br/>
+c &amp; c &amp;b &amp;e &amp;a \end{array}$$<br/>
+这两个群分别是<strong><font color="red">Klein四元群</font></strong>和<strong><font color="red">四阶循环群</font></strong>。另外一个情况是$a^2=b$，这种情况是一气呵成的（填完$b$之后，剩下的都出来了）：<br/>
+$$\begin{array}{c|cccc}<br/>
+\cdot &amp; e &amp; a &amp; b &amp; c \\<br/>
+\hline<br/>
+e &amp; e &amp;a &amp;b &amp;c \\<br/>
+a &amp; a &amp;b &amp; &amp; \\<br/>
+b &amp; b &amp; &amp; &amp; \\<br/>
+c &amp; c &amp; &amp; &amp; \end{array}\quad\to\quad\begin{array}{c|cccc}<br/>
+\cdot &amp; e &amp; a &amp; b &amp; c \\<br/>
+\hline<br/>
+e &amp; e &amp;a &amp;b &amp;c \\<br/>
+a &amp; a &amp;b &amp;c &amp;e \\<br/>
+b &amp; b &amp;c &amp; &amp; \\<br/>
+c &amp; c &amp;e &amp; &amp;<br/>
+\end{array}\quad \to \quad \begin{array}{c|cccc}<br/>
+\cdot &amp; e &amp; a &amp; b &amp; c \\<br/>
+\hline<br/>
+e &amp; e &amp;a &amp;b &amp;c \\<br/>
+a &amp; a &amp;b &amp;c &amp;e \\<br/>
+b &amp; b &amp;c &amp;e &amp;a \\<br/>
+c &amp; c &amp;e &amp;a &amp;b<br/>
+\end{array}$$<br/>
+这只不过是<strong><font color="red">四阶循环群</font></strong>的另一种写法。因此有且仅有这两种情况。</p><p><strong>两个六阶群</strong></p><p>到了六阶，我们的“数独”就不大好做了，因为元的个数增多了，于是已知信息相对减少了。玩过数独的朋友都知道，初始信息越少的数独往往越困难。我们利用群的一些性质，简化我们的推理。</p><p>由于是有限群，因此六阶群里的每个元的阶都是有限的，而且根据<strong><font color="red">拉格朗日定理</font></strong>，元素的阶只能是群的阶6的因子。现在我们假设$a$是六阶群里阶最大的元（之一），那么$|a|$等于6,3或2。如果$|a|=6$，那么就表明这个群就是<strong><font color="red">六阶循环群</font></strong>，这是<u>第一种情况</u>，考虑完毕。（果然，换一个角度，快很多~~）</p><p><u>第二种情况</u>$|a|=3$，即$a^3=e$，那么我们就知道了群里的三个元：$e,a,a^2\equiv b$，设第四个元为$c$，那么根据假设$c$的阶只能为3或2（即不能大于3）。但是$|c|=3$是不可能的，因为如果$|c|=3$，那么群里便多了两个元：$c,c^2$，于是已知群里的五个元了。那$ac$和$ca$呢？它们都不是$e,a,a^2,c,c^2$的任意一个，于是它们都是新的元，然而群是6阶的，因此$ac=ca$，从而$(ac)^3=a^3 c^3=e$，那么$(ac)^2$呢？它显然不是$e,a,a^2,c,c^2,ac$中的任意一个，于是这个群的阶数大于6，矛盾。</p><p>如此一来，$|c|=2$，群里多了一个元$c$，考虑$ac$和$ca$，它们都不是$e,a,a^2,c$的任意一个，因此是新元，而且$ac\neq ca$，因为如果一旦$ac=ca$，那么$(ac)^6=a^6 c^6=e$，而且$(ac)^3\neq e,(ac)^2\neq e$，因此$ac$的阶是6！这跟$a$的阶最大是矛盾的，因此$ac\neq ca$，这样一来群的六个元都出来了：$e,a,a^2,c,ac,ca$，于是不难列出乘法表：<br/>
+$$\begin{array}{c|cccccc}<br/>
+\cdot &amp; e &amp; a &amp; a^2 &amp; c &amp; ac &amp; ca \\<br/>
+\hline<br/>
+e &amp; e &amp; a &amp;a^2 &amp;c &amp;ac &amp;ca \\<br/>
+a &amp; a &amp; a^2 &amp;e &amp;ac &amp;ca &amp;c \\<br/>
+a^2 &amp; a^2 &amp; e &amp;a &amp;ca &amp;c &amp;ac\\<br/>
+c &amp; c &amp; ca &amp;ac &amp;e &amp;a &amp;a^2 \\<br/>
+ac &amp; ac &amp; c &amp;ca &amp;a^2 &amp;e &amp;a\\<br/>
+ca &amp; ca &amp; ac &amp;c &amp;a &amp;a^2 &amp;e<br/>
+\end{array}$$</p><p><u>最后一种情况</u>是$|a|=2$，那么这种情况有没有可能呢？如果$|a|=2$，那么只知道群里的两个元$e,a$，考虑第三个元$b$，它的阶只能是$2$，那么现在已知三个元$e,a,b$，同样考虑$ab,ba$，如果它们不等，那么我们就知道群里的五个元。可是第六个元怎么办呢？如果添加一个新元$c$，那么就会产生新元$ac$等，这导致群的阶数大于6！但是就算$ab=ba$也不行，因为此时就有四个元素$e,a,b,ab$，添加一个新元$c$，那么$ac,abc$都是不同的新元，这样群的阶数还是大于6！两种情况都导致矛盾。</p><p>因此有且只有两个互不同构的六阶群。</p><p><strong>n阶？</strong></p><p>六阶群的分析篇幅已经那么长了，如果读者想去分析八阶群的个数，那就需要很大的勇气和毅力了（答案是5个）。当然，如果要分析九阶和十阶群，反而会简单些，答案是2个，复杂程度很大程度上取决于阶数$n$的因子个数。部分的结果可以参考：<br/>
+<a href="http://zh.wikipedia.org/wiki/小群列表" target="_blank">http://zh.wikipedia.org/wiki/小群列表</a></p><p><a href="http://www.douban.com/note/245316892/" target="_blank">http://www.douban.com/note/245316892/</a></p><p>虽然我们上述分析篇幅之长，显得有点笨拙，但事实上，就算是运用其他方法，我们所得到的结果也不比这里的方法能得到的结果多很多。互不同构的n阶群的数目以及具体构造，是相当困难的题目，我们至今没有一个能够对于给定的n，求出互不同构群的数目的公式。来自<a href="http://www.baike.com/wiki/有限群" target="_blank">baike.com</a>的资料表明，即便是考虑有多少个互不同构的$p^k$阶群，也是一个艰难的问题，迄今只解决了当p为奇素数且k≤6时以及当p=2且k≤7时$p^k$阶群的个数问题。</p>
+
+
+
+
+
+</div>

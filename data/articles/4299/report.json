@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "4299",
+    "title": "【不可思议的Word2Vec】 1.数学原理",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/4299",
+    "date": "2017-04-02",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 7,
+    "display_formula_count": 0,
+    "image_count": 1,
+    "heading_count": 3,
+    "code_block_count": 0,
+    "source_text_sha256": "188eff97449106158db1e7a7187afd7b306d111e6f1d9ddc13526f99965b3640",
+    "output_text_sha256": "188eff97449106158db1e7a7187afd7b306d111e6f1d9ddc13526f99965b3640",
+    "latex_sha256": "768c2c76956f0154622c0c52881f8e541167f22e4fb287d27d4d855f9b6f2e04",
+    "body_sha256": "1353769caa5bd1fa9d399d78070801d65398a2ec60fb51fd456154b6c298c965",
+    "converter_version": 1,
+    "markdown_sha256": "2ccb489365efda2e811b147ae06b102ad15a454349791deeb90dcfb145bf78ef"
+  },
+  "fetched_at": "2026-09-14T13:33:32+00:00",
+  "source_snapshot_sha256": "c398ac462a0c603e2729f398c869f99de93cfd269b83e5dc617be2ac572b2e74",
+  "images": {},
+  "local_only": true
+}

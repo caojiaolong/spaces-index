@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "1658",
+    "title": "科学空间终于恢复访问了！",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/1658",
+    "date": "2012-07-18",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 0,
+    "display_formula_count": 0,
+    "image_count": 2,
+    "heading_count": 0,
+    "code_block_count": 0,
+    "source_text_sha256": "3310881fda96a6a115c8db0c5152ae83057e4fddd9a4d007ebfb606d4ca49e3c",
+    "output_text_sha256": "3310881fda96a6a115c8db0c5152ae83057e4fddd9a4d007ebfb606d4ca49e3c",
+    "latex_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "body_sha256": "dcf7d89fbd590fc858bc88412b6cb81916598a73d65d17c358dfdf6e3f6fb080",
+    "converter_version": 1,
+    "markdown_sha256": "dc8b1a81fe1444a55ece9c7c89328a0f4088ff907c5488dfeeee5376accd5654"
+  },
+  "fetched_at": "2026-09-14T14:12:36+00:00",
+  "source_snapshot_sha256": "a8de60aa5439953ec25309c795bde1424a6a8747e86c5b0d987c192bc29202ca",
+  "images": {},
+  "local_only": true
+}

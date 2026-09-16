@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "66",
+    "title": "【NASA每日一图】武汉上空的日食“钻戒”",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/66",
+    "date": "2009-08-08",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 0,
+    "display_formula_count": 0,
+    "image_count": 1,
+    "heading_count": 0,
+    "code_block_count": 0,
+    "source_text_sha256": "a82c7dad7d656062f09d2e807479b2907a24d132808aec02c20324b9af774e07",
+    "output_text_sha256": "a82c7dad7d656062f09d2e807479b2907a24d132808aec02c20324b9af774e07",
+    "latex_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "body_sha256": "440e8b7829c3365cceac232c4209f082747a9695431bac6953e8ef223a826842",
+    "converter_version": 1,
+    "markdown_sha256": "bc6d38b1d19063b888e9d0460040cb4edd831b80790e16145d0e729b105b2af6"
+  },
+  "fetched_at": "2026-09-14T15:00:16+00:00",
+  "source_snapshot_sha256": "9649743b31d121ad673680fc068fc812c39bf2b5c488597ffe9b33cecd997531",
+  "images": {},
+  "local_only": true
+}

@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "4667",
+    "title": "更别致的词向量模型(一)：simpler glove",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/4667",
+    "date": "2017-11-19",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 0,
+    "display_formula_count": 0,
+    "image_count": 0,
+    "heading_count": 0,
+    "code_block_count": 0,
+    "source_text_sha256": "a21f765a6b23a8f0d5b0a34db017340473e50897aecabd178ca4df7ff0b3f579",
+    "output_text_sha256": "a21f765a6b23a8f0d5b0a34db017340473e50897aecabd178ca4df7ff0b3f579",
+    "latex_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "body_sha256": "58b91ff4d4bd8f27f49f14332c4d3a42b5d08670392d33f98a875cdf3b6f3c98",
+    "converter_version": 1,
+    "markdown_sha256": "b3e7e175a17cb1cd979e1f5b58de73650c4064318cf4c8a726740d7c752841a7"
+  },
+  "fetched_at": "2026-09-14T13:30:06+00:00",
+  "source_snapshot_sha256": "3e09752456e563259df6feb97e67b297a96ca3931c716a4c6cf05b58ff572f56",
+  "images": {},
+  "local_only": true
+}

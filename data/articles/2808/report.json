@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "2808",
+    "title": "从费马大定理谈起（二）：勾股数",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/2808",
+    "date": "2014-08-15",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 49,
+    "display_formula_count": 3,
+    "image_count": 0,
+    "heading_count": 2,
+    "code_block_count": 0,
+    "source_text_sha256": "0ad38699fe125675371347777bc3c6f31e2d0e68ca578cbb30baa7842a7f706e",
+    "output_text_sha256": "0ad38699fe125675371347777bc3c6f31e2d0e68ca578cbb30baa7842a7f706e",
+    "latex_sha256": "4bd590de151a355e7fb33d825ffdc6c707b0e834967ec881620c24369ced3e12",
+    "body_sha256": "bae6f2e53ef2123a3ebbffe4ebcfbf2c9caa31d802d2f775198a38850942430a",
+    "converter_version": 1,
+    "markdown_sha256": "c0b5e3329e1fc7f2e98d0d24db7e71d34c5a8726cde2c9a31a0b10d0432344ac"
+  },
+  "fetched_at": "2026-09-14T13:52:31+00:00",
+  "source_snapshot_sha256": "eba2fe1f64a7809255d50c115b69195c2da7b128aa4a94179ba5a5eade34520a",
+  "images": {},
+  "local_only": true
+}

@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "4316",
+    "title": "【不可思议的Word2Vec】 3.提取关键词",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/4316",
+    "date": "2017-04-07",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 27,
+    "display_formula_count": 4,
+    "image_count": 0,
+    "heading_count": 4,
+    "code_block_count": 2,
+    "source_text_sha256": "c5a1d7d63c62c634f763cf938a244d6441fa961ed90c515f8bc54336fc21861c",
+    "output_text_sha256": "c5a1d7d63c62c634f763cf938a244d6441fa961ed90c515f8bc54336fc21861c",
+    "latex_sha256": "6772ebe4a4c117b7d3623050cabae98cb7c7912cc6525b261d6542265eb07e3f",
+    "body_sha256": "441d31dc1359749ac447332f9e6e925e07eb720f6679e4b80caaa439efaeae70",
+    "converter_version": 1,
+    "markdown_sha256": "2b38da0af6811821e738d168ae7c99e092a936bcf34fdac03187d83caaede953"
+  },
+  "fetched_at": "2026-09-14T13:33:15+00:00",
+  "source_snapshot_sha256": "bf9efc3c58924d29141e59809325e5919c59a4ce8c2a2f644b12dced626ec9a5",
+  "images": {},
+  "local_only": true
+}

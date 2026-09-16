@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "6418",
+    "title": "“让Keras更酷一些！”：分层的学习率和自由的梯度",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/6418",
+    "date": "2019-03-10",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 26,
+    "display_formula_count": 3,
+    "image_count": 0,
+    "heading_count": 7,
+    "code_block_count": 4,
+    "source_text_sha256": "7b42a168ecfb2696ebadd8d9f349177116bb02ac3543fed9fd44f60bb0af0b07",
+    "output_text_sha256": "7b42a168ecfb2696ebadd8d9f349177116bb02ac3543fed9fd44f60bb0af0b07",
+    "latex_sha256": "624f35669d441e6e725b29eedf43c3ab93b18ccfbdbd5aaed235e0f70adf665e",
+    "body_sha256": "3a14f2527ebca98d56dcd43f71abbeb2afd261e1d2203c31b0a478816c20e472",
+    "converter_version": 1,
+    "markdown_sha256": "ab25d67d9dbf2859225731c9246477eefc7306600a6941265877bac2c896b4ab"
+  },
+  "fetched_at": "2026-09-14T13:21:02+00:00",
+  "source_snapshot_sha256": "566df3f8bc416c5763b0c61667230b5470f1633bc492d3d86f8573e82a6d4517",
+  "images": {},
+  "local_only": true
+}

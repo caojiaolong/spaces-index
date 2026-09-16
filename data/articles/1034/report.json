@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "1034",
+    "title": "11月03日美国“发现号”航天飞机“绝唱”",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/1034",
+    "date": "2010-10-30",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 0,
+    "display_formula_count": 0,
+    "image_count": 3,
+    "heading_count": 0,
+    "code_block_count": 0,
+    "source_text_sha256": "2ecacb18ab89a9e6f216494ea9d74b30adfd0671c9028c22e8dc99eff9a674e6",
+    "output_text_sha256": "2ecacb18ab89a9e6f216494ea9d74b30adfd0671c9028c22e8dc99eff9a674e6",
+    "latex_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "body_sha256": "8213865d8edd6c190a68c7f87ebd6970f324c63deeef1726f55443619cda4e3b",
+    "converter_version": 1,
+    "markdown_sha256": "7834335f9588441e3df0453fb44ac3cffed68f9114557f7dffdb85a2bde24568"
+  },
+  "fetched_at": "2026-09-14T14:27:56+00:00",
+  "source_snapshot_sha256": "dd276db398ffe2cc8861192a9a896652f9cf24fe533ccb959200b5cdeec486bf",
+  "images": {},
+  "local_only": true
+}

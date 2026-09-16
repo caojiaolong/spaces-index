@@ -1,44 +1,16 @@
+"""Pure article metadata parsing; the old CLI delegates to the unified updater."""
 from __future__ import annotations
 
-import argparse
 import re
-import time
-from pathlib import Path
 from typing import Any
 from urllib.parse import urljoin
 
-import requests
 from bs4 import BeautifulSoup, Tag
 
 try:
-    from .common import (
-        DATA_DIR,
-        clean_text,
-        fetch_html_with_retries,
-        log,
-        read_json,
-        sort_posts_desc,
-        write_json,
-    )
+    from .common import clean_text
 except ImportError:  # pragma: no cover - used when running as python scripts/enrich_posts.py
-    from common import (
-        DATA_DIR,
-        clean_text,
-        fetch_html_with_retries,
-        log,
-        read_json,
-        sort_posts_desc,
-        write_json,
-    )
-
-
-def fetch_html(session: requests.Session, url: str, timeout: float = 30.0) -> str:
-    return fetch_html_with_retries(
-        session,
-        url,
-        page_name="article page",
-        timeout=timeout,
-    )
+    from common import clean_text
 
 
 def _find_meta_container(soup: BeautifulSoup) -> Tag | None:
@@ -196,7 +168,7 @@ def parse_post_metadata(html: str) -> dict[str, Any]:
 
 
 def has_cached_metadata(post: dict[str, Any]) -> bool:
-    return "source_category" in post and isinstance(post.get("source_tags"), list)
+    return bool(post.get("source_category")) and isinstance(post.get("source_tags"), list)
 
 
 def merge_cached_post(raw: dict[str, Any], cached: dict[str, Any]) -> dict[str, Any]:
@@ -212,164 +184,14 @@ def merge_cached_post(raw: dict[str, Any], cached: dict[str, Any]) -> dict[str, 
     return merged
 
 
-def enrich_posts(
-    raw_posts: list[dict[str, Any]],
-    cached_posts: list[dict[str, Any]] | None = None,
-    *,
-    force: bool = False,
-    sleep_seconds: float = 0.5,
-    session: requests.Session | None = None,
-    checkpoint_path: Path | None = None,
-    checkpoint_every: int = 25,
-    progress_every: int = 25,
-    refresh_summaries: bool = False,
-) -> list[dict[str, Any]]:
-    cached_posts = cached_posts or []
-    cached_by_url = {str(post.get("url")): post for post in cached_posts if post.get("url")}
-    cached_by_id = {str(post.get("id")): post for post in cached_posts if post.get("id")}
-    owns_session = session is None
-    session = session or requests.Session()
-
-    enriched: list[dict[str, Any]] = []
-    try:
-        sorted_raw_posts = sort_posts_desc(raw_posts)
-        total = len(sorted_raw_posts)
-        cached_count = 0
-        fetched_count = 0
-        log(
-            "enrich_posts: "
-            f"starting {total} posts; force={force}; "
-            f"refresh_summaries={refresh_summaries}; sleep={sleep_seconds}s"
-        )
-        for index, raw in enumerate(sorted_raw_posts, start=1):
-            cached = cached_by_url.get(str(raw.get("url"))) or cached_by_id.get(str(raw.get("id")))
-            needs_summary_refresh = (
-                refresh_summaries
-                and cached is not None
-                and has_cached_metadata(cached)
-                and summary_needs_refresh(cached)
-            )
-            if cached and has_cached_metadata(cached) and not force and not needs_summary_refresh:
-                enriched.append(merge_cached_post(raw, cached))
-                cached_count += 1
-                if checkpoint_path and (index % checkpoint_every == 0 or index == total):
-                    write_json(checkpoint_path, sort_posts_desc(enriched))
-                if progress_every > 0 and (index == 1 or index % progress_every == 0 or index == total):
-                    log(
-                        "enrich_posts: "
-                        f"{index}/{total} cached={cached_count} fetched={fetched_count} "
-                        f"current={raw.get('id')} {raw.get('title')}"
-                    )
-                continue
-
-            url = str(raw.get("url") or "")
-            if not url:
-                raise ValueError(f"Raw post is missing url: {raw!r}")
-            try:
-                html = fetch_html(session, url)
-            except RuntimeError as exc:
-                if cached and has_cached_metadata(cached) and refresh_summaries and not force:
-                    log(
-                        "enrich_posts: "
-                        f"failed to refresh summary for {url}; keeping cached metadata: {exc}"
-                    )
-                    enriched.append(merge_cached_post(raw, cached))
-                    cached_count += 1
-                    if checkpoint_path and (index % checkpoint_every == 0 or index == total):
-                        write_json(checkpoint_path, sort_posts_desc(enriched))
-                    if progress_every > 0 and (
-                        index == 1 or index % progress_every == 0 or index == total
-                    ):
-                        log(
-                            "enrich_posts: "
-                            f"{index}/{total} cached={cached_count} fetched={fetched_count} "
-                            f"current={raw.get('id')} {raw.get('title')}"
-                        )
-                    continue
-                raise
-            try:
-                metadata = parse_post_metadata(html)
-            except ValueError as exc:
-                if cached and has_cached_metadata(cached) and refresh_summaries and not force:
-                    log(
-                        "enrich_posts: "
-                        f"failed to parse refreshed summary for {url}; keeping cached metadata: {exc}"
-                    )
-                    enriched.append(merge_cached_post(raw, cached))
-                    cached_count += 1
-                    if checkpoint_path and (index % checkpoint_every == 0 or index == total):
-                        write_json(checkpoint_path, sort_posts_desc(enriched))
-                    if progress_every > 0 and (
-                        index == 1 or index % progress_every == 0 or index == total
-                    ):
-                        log(
-                            "enrich_posts: "
-                            f"{index}/{total} cached={cached_count} fetched={fetched_count} "
-                            f"current={raw.get('id')} {raw.get('title')}"
-                        )
-                    continue
-                raise ValueError(f"Failed to parse metadata for {url}: {exc}") from exc
-            enriched.append({**raw, **metadata})
-            fetched_count += 1
-            if checkpoint_path and (index % checkpoint_every == 0 or index == total):
-                write_json(checkpoint_path, sort_posts_desc(enriched))
-            if progress_every > 0 and (index == 1 or index % progress_every == 0 or index == total):
-                log(
-                    "enrich_posts: "
-                    f"{index}/{total} cached={cached_count} fetched={fetched_count} "
-                    f"current={raw.get('id')} {raw.get('title')}"
-                )
-            if sleep_seconds > 0:
-                time.sleep(sleep_seconds)
-    finally:
-        if owns_session:
-            session.close()
-
-    return sort_posts_desc(enriched)
-
-
 def main() -> None:
-    parser = argparse.ArgumentParser(description="Fetch per-post category and tags.")
-    parser.add_argument("--force", action="store_true", help="Ignore cached metadata.")
-    parser.add_argument("--sleep", type=float, default=0.5, help="Sleep seconds between requests.")
-    parser.add_argument(
-        "--refresh-summaries",
-        action="store_true",
-        help="Fetch cached articles that do not yet have source_summary.",
-    )
-    parser.add_argument(
-        "--progress-every",
-        type=int,
-        default=25,
-        help="Log progress every N posts. Set 0 to disable.",
-    )
-    parser.add_argument(
-        "--input",
-        default=str(DATA_DIR / "posts_raw.json"),
-        help="Input raw posts JSON path.",
-    )
-    parser.add_argument(
-        "--output",
-        default=str(DATA_DIR / "posts.json"),
-        help="Output enriched posts JSON path.",
-    )
-    args = parser.parse_args()
-
-    raw_posts = read_json(Path(args.input), [])
-    if not raw_posts:
-        raise RuntimeError(f"No raw posts found in {args.input}. Run fetch_archive.py first.")
-    cached_posts = read_json(Path(args.output), [])
-    posts = enrich_posts(
-        raw_posts,
-        cached_posts,
-        force=args.force,
-        sleep_seconds=args.sleep,
-        checkpoint_path=Path(args.output),
-        progress_every=args.progress_every,
-        refresh_summaries=args.refresh_summaries,
-    )
-    write_json(Path(args.output), posts)
-    log(f"enrich_posts: completed {len(posts)} posts -> {args.output}")
+    # Preserve the old command name without maintaining a second HTTP pipeline.
+    try:
+        from .update_all import main as update
+    except ImportError:
+        from update_all import main as update
+    print("enrich_posts.py now uses the unified updater; prefer scripts/update_all.py.")
+    raise SystemExit(update())
 
 
 if __name__ == "__main__":

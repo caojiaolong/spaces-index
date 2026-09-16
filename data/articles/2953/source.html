@@ -1,0 +1,28 @@
+<div class="PostContent" id="PostContent">
+<p>集合论的结果告诉我们，全体实数的集合$\mathbb{R}$跟全体无理数的集合$\mathbb{R} \backslash \mathbb{Q}$是等势的，那么，如何构造出它们俩之间的一个双射出来呢？这是一个颇考读者想象力的问题。当然，如果把答案给出来，又似乎显得没有那么神秘。下面给出笔者构造的一个例子，读者可以从中看到这种映射是怎么构造的。</p><p>为了构造这样的双射，一个很自然的想法是，让全体有理数和部分无理数在它们自身内相互映射，剩下的无理数则恒等映射。构造这样的一个双射首先得找出一个函数，它的值只会是无理数。要找到这样的函数并不难，比如我们知道：</p><blockquote><p>1、方程$x^4 + 1 = y^2$没有除$x=0,y=\pm 1$外的有理点，否则将与费马大定理$n=4$时的结果矛盾。</p><p>2、无理数的平方根依然是无理数。</p></blockquote><p>根据这些信息，足以构造一个正实数$\mathbb{R}^+$到正无理数$\mathbb{R}^+ \backslash \mathbb{Q}^+$的双射，然后稍微修改一下，就可以得到$\mathbb{R}$到$\mathbb{R} \backslash \mathbb{Q}$的双射。</p><p>一个$\mathbb{R}^+$到$\mathbb{R}^+ \backslash \mathbb{Q}^+$的双射如下<br/>
+$$f(x)=\left\{\begin{aligned}&amp;\sqrt{x^4+1},\, x\in \mathbb{Q}^+\\<br/>
+&amp;\sqrt{x},\, x\in \mathbb{A}\\<br/>
+&amp;x,\, x\in \mathbb{R}^+ -\mathbb{Q}^+ -\mathbb{A}\end{aligned}\right.$$</p><p>其中集合$\mathbb{A}$是下面的$a_i\,(i \geq 1)$的集合（初始值遍历正有理数）：<br/>
+$$a_{n+1}=\sqrt{a_n}\ (n\geq 1),\quad a_1=\sqrt{a_0^4+1},\quad a_0\in \mathbb{Q}^+$$<br/>
+也就是说，从任意一个正有理数$q$出发，从以上表达式构造出来的所有无理数的集合为$A_{q}$，然后让$q$遍历所有正有理数，取所有$A_{q}$之并，就是$\mathbb{A}$，虽然看起来这样的集合的元素个数比有理数集合多得多，但实际上它跟有理数集是等势的。</p><p>$f(x)$是一个满射，这几乎是显然的（无理数就这么两类了）。下面只需证明它是一个单射。假如它不是单射，那么“意外”只能出现在集合$\mathbb{A}$里边了，也就是存在正有理数$x,y$以及正整数$m,n$，使得<br/>
+$$(x^4+1)^{\left(\frac{1}{2}\right)^m}=(y^4+1)^{\left(\frac{1}{2}\right)^n}$$<br/>
+也就是<br/>
+$$(x^4+1)^{(2^n)}=(y^4+1)^{(2^m)}$$<br/>
+不妨设$n\geq m$，那么有<br/>
+$$(x^4+1)^{(2^{n-m})}=y^4+1$$<br/>
+如果$n-m$不等于0，那么$a=y,b=(x^4+1)^{(2^{n-m-1})}$就是$a^4+1=b^2$的一组有理数解了，矛盾，因此$n=m$，这样必有$x=y$。因此，$f(x)$是单射。</p><p>稍微修改一下，得到实数到无理数的映射<br/>
+$$f(x)=\left\{\begin{aligned}&amp;\sqrt{x^4+1},\, x\in \mathbb{Q}^+\\<br/>
+&amp;\sqrt{x},\, x\in \mathbb{A}\\<br/>
+&amp;-\sqrt{(x-1)^4+1},\, x\in \mathbb{Q}^-\,\,\text{or}\,\, x=0\\<br/>
+&amp;-\sqrt{-x},\, x\in \mathbb{B}\\<br/>
+&amp;x,\, x\in \mathbb{R} -\mathbb{Q} -\mathbb{A}-\mathbb{B}\end{aligned}\right.$$<br/>
+其中集合$\mathbb{A}$是下面的$a_i\,(i \geq 1)$的集合：<br/>
+$$a_{n+1}=\sqrt{a_n}\ (n\geq 1),\quad a_1=\sqrt{a_0^4+1},\quad a_0\in \mathbb{Q}^+$$<br/>
+集合$\mathbb{B}$是下面的$b_i\,(i \geq 1)$的集合：<br/>
+$$b_{n+1}=-\sqrt{-b_n}\ (n\geq 1),\quad b_1=-\sqrt{(b_0-1)^4+1},\quad b_0\in \mathbb{Q}^-\,\text{or}\, b_0=0 $$</p>
+
+
+
+
+
+</div>

@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "1377",
+    "title": "只要我们曾经拥有过——《萍聚》",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/1377",
+    "date": "2011-06-06",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 0,
+    "display_formula_count": 0,
+    "image_count": 0,
+    "heading_count": 0,
+    "code_block_count": 0,
+    "source_text_sha256": "203e382c1c17c515ef39c85c7f9ee7d9f3ea7da1f0629dc08ceba410df466e41",
+    "output_text_sha256": "203e382c1c17c515ef39c85c7f9ee7d9f3ea7da1f0629dc08ceba410df466e41",
+    "latex_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "body_sha256": "ebf3c7eb081cf009fcd93c700d6549b3dc35fe62907e9856d3f084bf962aa92a",
+    "converter_version": 1,
+    "markdown_sha256": "2612e109c36230bd8c527c4582fa4701147a07d037956cddc04a942b039a11bf"
+  },
+  "fetched_at": "2026-09-14T14:20:42+00:00",
+  "source_snapshot_sha256": "a800fcd1d06bcf307d9f146b31e977398995af46aa30bdcd4a46dbd3646c63c6",
+  "images": {},
+  "local_only": true
+}

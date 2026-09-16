@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "6024",
+    "title": "深度学习的互信息：无监督提取特征",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/6024",
+    "date": "2018-10-02",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 100,
+    "display_formula_count": 16,
+    "image_count": 7,
+    "heading_count": 22,
+    "code_block_count": 0,
+    "source_text_sha256": "8bf916ba8f3b993811b3c6ebf4ea9e66046929e27b50bc0da8db3450dbb55d24",
+    "output_text_sha256": "8bf916ba8f3b993811b3c6ebf4ea9e66046929e27b50bc0da8db3450dbb55d24",
+    "latex_sha256": "d299874531301abf8865deda4eb44442a58ef7c655f8cda750ede7be1be0eba7",
+    "body_sha256": "b85d6010a5be5b57bf4bb74d65736fe6692f4e146465341c0da5781c4f4b4240",
+    "converter_version": 1,
+    "markdown_sha256": "8833e825511e92a122b283ab035d29d00e735ba0787cf2dd8ebe3132f0e61906"
+  },
+  "fetched_at": "2026-09-14T13:24:03+00:00",
+  "source_snapshot_sha256": "deede9795c4c64b2841dc63a2a90b212154483dda66402063ff172578f268594",
+  "images": {},
+  "local_only": true
+}

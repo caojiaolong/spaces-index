@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "11390",
+    "title": "n个正态随机数的最大值的渐近估计",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/11390",
+    "date": "2025-11-06",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 109,
+    "display_formula_count": 21,
+    "image_count": 1,
+    "heading_count": 9,
+    "code_block_count": 2,
+    "source_text_sha256": "08d5d1952e7ed4d17cec89bc834cf075c4ab5f9616f77084a695ae444b2c3962",
+    "output_text_sha256": "08d5d1952e7ed4d17cec89bc834cf075c4ab5f9616f77084a695ae444b2c3962",
+    "latex_sha256": "bb12f96adbdedf5eb1bef9fcbb70afd58b477a387b521af9184788df643dd2e7",
+    "body_sha256": "20ad04309b3b613f57b73b8db43f8dfd82264c4b18956c81aef4dc3a8a9c959b",
+    "converter_version": 1,
+    "markdown_sha256": "4e4fc810206813890bd15423f5f935431c29812a98d0f58cb96bdd79cffa7bdf"
+  },
+  "fetched_at": "2026-09-14T12:38:49+00:00",
+  "source_snapshot_sha256": "8f40fdff3949e5ac18f05f739011ff3c9ee33f04a130bde7eddde97bf7a864e6",
+  "images": {},
+  "local_only": true
+}

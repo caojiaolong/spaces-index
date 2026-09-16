@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "483",
+    "title": "丘成桐摘得沃尔夫奖——获数学界终身成就肯定",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/483",
+    "date": "2010-02-27",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 0,
+    "display_formula_count": 0,
+    "image_count": 1,
+    "heading_count": 0,
+    "code_block_count": 0,
+    "source_text_sha256": "019c1ecaffa5e0a8b90c40aa18532808df5df2672c6c7102966876f859f8708a",
+    "output_text_sha256": "019c1ecaffa5e0a8b90c40aa18532808df5df2672c6c7102966876f859f8708a",
+    "latex_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "body_sha256": "481aafe0cab656247985135707f25f5eeb85add1f512cfc72936606199a3ba18",
+    "converter_version": 1,
+    "markdown_sha256": "66d65a51c7fba9a9188ec7d3a3ac4bb04295dd937b7c7880e980dd2e2509502f"
+  },
+  "fetched_at": "2026-09-14T14:40:07+00:00",
+  "source_snapshot_sha256": "8254a651dd7befb0d76ce42cc8510e56dbebdff1338700d02762f8632fa5b7a2",
+  "images": {},
+  "local_only": true
+}

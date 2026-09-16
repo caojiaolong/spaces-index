@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "10847",
+    "title": "矩阵的有效秩（Effective Rank）",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/10847",
+    "date": "2025-04-10",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 69,
+    "display_formula_count": 12,
+    "image_count": 0,
+    "heading_count": 5,
+    "code_block_count": 0,
+    "source_text_sha256": "3e712ba4180d0bbdc89716a0c1c6a01be1a71aaef4ba31d80e0766abc1e9e693",
+    "output_text_sha256": "3e712ba4180d0bbdc89716a0c1c6a01be1a71aaef4ba31d80e0766abc1e9e693",
+    "latex_sha256": "ccc21c9e07d49d52f99f03d1f25cf598a94e2201a2f3af55b794c5199a8e11f2",
+    "body_sha256": "45033a737c2c5adce93b0d088ea32e9ffb5e5fbb63e366f0730bc8f58e1367f7",
+    "converter_version": 1,
+    "markdown_sha256": "e230857da94bd89dc9690e7ce6edd4542067036123d395ebb372d6bd16e0c6b8"
+  },
+  "fetched_at": "2026-09-14T12:43:07+00:00",
+  "source_snapshot_sha256": "7d26d2e7338163e77df96771a1d4102e3c09a9cf16a625abd8414f586269cd3e",
+  "images": {},
+  "local_only": true
+}

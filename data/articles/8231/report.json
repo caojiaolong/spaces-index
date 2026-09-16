@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "8231",
+    "title": "Transformer升级之路：1、Sinusoidal位置编码追根溯源",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/8231",
+    "date": "2021-03-08",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 100,
+    "display_formula_count": 14,
+    "image_count": 3,
+    "heading_count": 6,
+    "code_block_count": 1,
+    "source_text_sha256": "5e9e7d2eb8565fcab6b4c0dbbd21edd8488c2c9efcd7d182bdeb96189b9ccf0b",
+    "output_text_sha256": "5e9e7d2eb8565fcab6b4c0dbbd21edd8488c2c9efcd7d182bdeb96189b9ccf0b",
+    "latex_sha256": "f5be4d301ff8eefe3f5cdb0130f2b4705e40b2824a9855f46a53ca839dfd3105",
+    "body_sha256": "697f2d0e653ccc3b7846111854b546ceb03000efc61a66073c66006f836c7a7f",
+    "converter_version": 1,
+    "markdown_sha256": "935ea1a7ce454193a5960ea26e937f614eb6f210c940ba4cc6592b9843d11931"
+  },
+  "fetched_at": "2026-09-14T07:36:07+00:00",
+  "source_snapshot_sha256": "7fef8af594554ec7e1f63b00aef10b251e935fcd9eae6302ceaaad8fdd752b1b",
+  "images": {},
+  "local_only": true
+}

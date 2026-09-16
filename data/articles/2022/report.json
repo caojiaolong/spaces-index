@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "2022",
+    "title": "欢聚兴隆，畅言科普",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/2022",
+    "date": "2013-07-18",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 0,
+    "display_formula_count": 0,
+    "image_count": 7,
+    "heading_count": 0,
+    "code_block_count": 0,
+    "source_text_sha256": "b04359f45893e81f1eb0aad0a05479805cad30b2a90cdb55b7b5ad8ad9ca7f95",
+    "output_text_sha256": "b04359f45893e81f1eb0aad0a05479805cad30b2a90cdb55b7b5ad8ad9ca7f95",
+    "latex_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "body_sha256": "288d643e4e407c26b1983710637d95ae246f69007f7f34dd7dda5c1f0401a175",
+    "converter_version": 1,
+    "markdown_sha256": "8f0316979558382abb513880a612ebdb20c4a736e2465eeaeef143cbb9ef890e"
+  },
+  "fetched_at": "2026-09-14T14:01:17+00:00",
+  "source_snapshot_sha256": "a9634772df76e5b9c769f863f54eb1409247e96f3468d866bf3069cb3dce118b",
+  "images": {},
+  "local_only": true
+}

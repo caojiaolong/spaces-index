@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "88",
+    "title": "【NASA每日一图】日食大厦",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/88",
+    "date": "2009-08-20",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 0,
+    "display_formula_count": 0,
+    "image_count": 1,
+    "heading_count": 0,
+    "code_block_count": 0,
+    "source_text_sha256": "e8702a852788887116e7d1e9f1b442f6f3cc23e5182e919857adee419369496c",
+    "output_text_sha256": "e8702a852788887116e7d1e9f1b442f6f3cc23e5182e919857adee419369496c",
+    "latex_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "body_sha256": "6cc06fac26dbb9caee9505226ef062d3245d5108f48bef1a6b3ec19e858ee4ad",
+    "converter_version": 1,
+    "markdown_sha256": "6d3463f0648e1bc45bfd5f4debbb9add9b427da93f6d4583d6425848343606c7"
+  },
+  "fetched_at": "2026-09-14T14:57:35+00:00",
+  "source_snapshot_sha256": "80cf1b25110ce78bdef9bca465c4a4a7c88e25f1189c456108586e53ffc4bfc3",
+  "images": {},
+  "local_only": true
+}

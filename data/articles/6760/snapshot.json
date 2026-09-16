@@ -1,0 +1,17 @@
+{
+  "metadata": {
+    "id": "6760",
+    "title": "VQ-VAE的简明介绍：量子化自编码器",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/6760",
+    "date": "2019-06-24",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "fetched_at": "2026-09-14T13:19:04+00:00",
+  "source_snapshot_sha256": "276e508e4752cd9cf7f5c75bb1f35ba76ea5f0251536e33c8fba275155bf2d07",
+  "validators": {
+    "etag": null,
+    "last_modified": null
+  }
+}

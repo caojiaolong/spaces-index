@@ -1,0 +1,17 @@
+{
+  "metadata": {
+    "id": "8725",
+    "title": "初始化方法中非方阵的维度平均策略思考",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/8725",
+    "date": "2021-10-18",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "fetched_at": "2026-09-14T13:03:41+00:00",
+  "source_snapshot_sha256": "8978566cf204a412711cce0f4fb44baa0fa4424be5e0aef04d681a6272bd51f8",
+  "validators": {
+    "etag": null,
+    "last_modified": null
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "470",
+    "title": "寒假结束，今天上学了",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/470",
+    "date": "2010-02-21",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 3,
+    "display_formula_count": 0,
+    "image_count": 1,
+    "heading_count": 0,
+    "code_block_count": 0,
+    "source_text_sha256": "29c520355b30ca84f6f3d55c1979a107cc527e1c9f9d268acf04d63821126c28",
+    "output_text_sha256": "29c520355b30ca84f6f3d55c1979a107cc527e1c9f9d268acf04d63821126c28",
+    "latex_sha256": "7ffaea129b14104eda396208e8c3edca353b7c7120d8d0c35677aab23fd51f73",
+    "body_sha256": "7e11a9847337221bdfb15bb08577da741daa672f88187a83e1256e901242b05e",
+    "converter_version": 1,
+    "markdown_sha256": "1b056a5804c6fe29cbc049d22374848ae5dee44cef0a2e16ef188ca0b3387c3d"
+  },
+  "fetched_at": "2026-09-14T14:40:42+00:00",
+  "source_snapshot_sha256": "9c8aa52c5a32a57d4bc4134e39a3ae109ccb2ecebbc9a0404c374976b2e6904f",
+  "images": {},
+  "local_only": true
+}

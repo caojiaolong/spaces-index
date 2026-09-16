@@ -1,0 +1,80 @@
+<div class="PostContent" id="PostContent">
+<p>在这篇文章中，我们暂停查词典方法的介绍，转而介绍字标注的方法。前面已经提到过，字标注是通过给句子中每个字打上标签的思路来进行分词，比如之前提到过的，通过4标签来进行标注（single，单字成词；begin，多字词的开头；middle，三字以上词语的中间部分；end，多字词的结尾。均只取第一个字母。），这样，“为人民服务”就可以标注为“sbebe”了。4标注不是唯一的标注方式，类似地还有6标注，理论上来说，标注越多会越精细，理论上来说效果也越好，但标注太多也可能存在样本不足的问题，一般常用的就是4标注和6标注。</p><p>值得一提的是，这种通过给每个字打标签、进而将问题转化为序列到序列的学习，不仅仅是一种分词方法，还是一种解决大量自然语言问题的思路，比如命名实体识别等任务，同样可以用标注的方法来做。回到分词来，通过字标注法来进行分词的模型有隐马尔科夫模型（HMM）、最大熵模型（ME）、条件随机场模型（CRF），它们在精度上都是递增的，据说目前公开评测中分词效果最好的是4标注的CRF。然而，在本文中，我们要讲解的是最不精确的HMM。因为在我看来，<strong><font color="red">它并非一个特定的模型，而是解决一大类问题的通用思想，一种简化问题的学问。</font></strong></p><p>这一切，还得从概率模型谈起。</p><h3 id="HMM模型">HMM模型</h3><p>所谓模型，就是指能对我们的输入数据进行处理，并且给出最优的输出。对于字标注的分词方法来说，输入就是$n$个字，输出就是$n$个标签。我们用$\lambda=\lambda_1 \lambda_2 \dots \lambda_n$表示输入的句子，$o=o_1 o_2 \dots o_n$表示输出。那什么是最优的输出呢？从概率的角度来看，我们当然希望下面的条件概率最大<br/>
+$$\max P(o|\lambda) =\max P(o_1 o_2 \dots o_n|\lambda_1 \lambda_2 \dots \lambda_n)$$<br/>
+换句话说，$o$有很多可能性，而最优的$o$应该是最大概率的$o$。</p><p>要注意，$P(o|\lambda)$是关于$2n$个变量的条件概率，而且$n$还是不定的。这种情况下，我们几乎不可能对$P(o|\lambda)$进行精确的建模。即便如此，我们可以稍微做些简化，比如，如果我们假设<font color="red"><u>每个字的输出仅仅与当前字有关</u></font>，那么我们就有<br/>
+$$P(o_1 o_2 \dots o_n|\lambda_1 \lambda_2 \dots \lambda_n) = P(o_1|\lambda_1)P(o_2|\lambda_2)\dots P(o_n|\lambda_n)$$<br/>
+而估计$P(o_k|\lambda_k)$就容易多了。这时候问题也得到很大简化，因为要使得$P(o|\lambda)$最大，只需要每个$P(o_k|\lambda_k)$最大就行。我们所做的假设，就称为<strong><font color="red">独立性假设</font></strong>。</p><p>以上简化是一种方案，但是完全没有考虑到上下文，而且会出现不合理的情况（比如按照我们的4标注，那么b后面只能接m或e，但是按照这种最大的方法，我们可能得到诸如bbb的输出，这是不合理的）。于是我们就反过来，提出了一种隐含的模型（隐马尔可夫模型），就如同数学中的函数与反函数一般，反过来思考。</p><p>由贝叶斯公式，我们得到<br/>
+$$P(o|\lambda)=\frac{P(o,\lambda)}{P(\lambda)}=\frac{P(\lambda|o)P(o)}{P(\lambda)}$$<br/>
+由于$\lambda$是给定的输入，那么$P(\lambda)$就是常数，可以忽略。那么最大化$P(o|\lambda)$就等价于最大化<br/>
+$$P(\lambda|o)P(o)$$<br/>
+现在，我们可以对$P(\lambda|o)$作独立性假设，得到<br/>
+$$P(\lambda|o)=P(\lambda_1|o_1)P(\lambda_2|o_2)\dots P(\lambda_n|o_n)$$<br/>
+同时，对$P(o)$有<br/>
+$$P(o)=P(o_1)P(o_2|o_1)P(o_3|o_1,o_2)\dots P(o_n|o_1,o_2,\dots,o_{n-1})$$<br/>
+这时候可以作一个马尔可夫假设：<font color="red"><u>每个输出仅仅于上一个输出有关</u></font>，那么：<br/>
+$$P(o)=P(o_1)P(o_2|o_1)P(o_3|o_2)\dots P(o_n|o_{n-1})\sim P(o_2|o_1)P(o_3|o_2)\dots P(o_n|o_{n-1})$$<br/>
+这时候<br/>
+$$P(\lambda|o)P(o)\sim P(\lambda_1|o_1) P(o_2|o_1) P(\lambda_2|o_2) P(o_3|o_2) \dots P(o_n|o_{n-1}) P(\lambda_n|o_n)$$<br/>
+我们称$P(\lambda_k|o_k)$为<strong><font color="red">发射概率</font></strong>，$P(o_k|o_{k-1})$为<strong><font color="red">转移概率</font></strong>。这时候，可以通过设置某些$P(o_k|o_{k-1})=0$，来排除诸如bb、bs这些不合理的组合。</p><h3 id="Python实现">Python实现</h3><p>以上就是对HMM的基本介绍，如果读者有一定的概率论基础，那么应该不难看懂的。可以看到，HMM对问题作了大量的简化，简化到不可能十分精确，因此，HMM模型一般都是用来解决“在查词典方法的过程中不能解决的部分”（就好比结巴分词所做的）。当然，你可以把马尔可夫假设加强——比如假设每个状态跟前面两个状态有关，那样肯定会得到更精确的模型，但是模型的参数就更难估计了。</p><p>怎么训练一个HMM分词模型？主要就是$P(\lambda_k|o_k)$和$P(o_k|o_{k-1})$这两部分概率的估计了。如果有一批标注语料，那么估计这两个概率应该不难，但是如果没有呢？有一个词典也凑合。我们可以将一个带有频数的词典转化为一个HMM模型，其Python实现如下：</p><pre class="line-numbers"><code class="language-python">from collections import Counter
+from math import log
+
+hmm_model = {i:Counter() for i in 'sbme'}
+
+with open('dict.txt') as f:
+    for line in f:
+    lines = line.decode('utf-8').split(' ')
+    if len(lines[0]) == 1:
+    hmm_model['s'][lines[0]] += int(lines[1])
+    else:
+    hmm_model['b'][lines[0][0]] += int(lines[1])
+    hmm_model['e'][lines[0][-1]] += int(lines[1])
+    for m in lines[0][1:-1]:
+    hmm_model['m'][m] += int(lines[1])
+
+log_total = {i:log(sum(hmm_model[i].values())) for i in 'sbme'}
+
+trans = {'ss':0.3,
+    'sb':0.7,
+    'bm':0.3,
+    'be':0.7, 
+    'mm':0.3,
+    'me':0.7,
+    'es':0.3,
+    'eb':0.7
+ }
+
+trans = {i:log(j) for i,j in trans.iteritems()}
+
+def viterbi(nodes):
+    paths = nodes[0]
+    for l in range(1, len(nodes)):
+        paths_ = paths
+        paths = {}
+        for i in nodes[l]:
+            nows = {}
+            for j in paths_:
+            if j[-1]+i in trans:
+                nows[j+i]= paths_[j]+nodes[l][i]+trans[j[-1]+i]
+            k = nows.values().index(max(nows.values()))
+            paths[nows.keys()[k]] = nows.values()[k]
+    return paths.keys()[paths.values().index(max(paths.values()))]
+
+def hmm_cut(s):
+    nodes = [{i:log(j[t]+1)-log_total[i] for i,j in hmm_model.iteritems()} for t in s]
+    tags = viterbi(nodes)
+    words = [s[0]]
+    for i in range(1, len(s)):
+        if tags[i] in ['b', 's']:
+            words.append(s[i])
+        else:
+            words[-1] += s[i]
+    return words</code></pre><p>代码的第一部分，就是用一个字典来表示$P(\lambda_k|o_k)$，$P(\lambda_k|o_k)$的计算是通过词典来获取的，比如将词典中所有的一字词都计入s标签下，把多字词的首字都计入b标签下，等等。计算过程中还使用了对数概率，防止溢出；</p><p>第二部分的转移概率，直接根据直觉估算的；</p><p>第三部分就是通过viterbi算法动态规划，求的最大概率路径了。对于概率估算，简单采用了加1平滑法，没出现的单字都算1次。</p><p>整个代码都很简单，纯Python实现，当然，效率不一定高，仅供参考。下面是一点测试</p><blockquote><p>&gt;&gt;print ' '.join(hmm_cut(u'今天天气不错'))<br/>
+今天 天气 不错</p><p>&gt;&gt;print ' '.join(hmm_cut(u'李想是一个好孩子'))<br/>
+李想 是 一个 好 孩子</p><p>&gt;&gt;print ' '.join(hmm_cut(u'小明硕士毕业于中国科学院计算所'))<br/>
+小明 硕士 毕业 于 中 国科 学院 计算 所</p></blockquote><p>可以看到，HMM倾向于将两字结合在一起，因此效果不尽完美。但是，如果作为查词典方法不能成词部分的补充切分，那应该是相当不错的，比如“李想是一个好孩子”中，自动发现了人名“李想”，这是单靠查词典方法很难解决的。</p>
+
+
+
+
+
+</div>

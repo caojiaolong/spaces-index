@@ -1,0 +1,72 @@
+<div class="PostContent" id="PostContent">
+<p>这里我们将展示上面一节的方法对于计算黎曼曲率张量的计算是多少的有力！我们再次列出我们得到的所有公式。首先是概念式的<br/>
+$$\begin{aligned}&amp;\omega^{\mu}=h_{\alpha}^{\mu}dx^{\alpha}\\<br/>
+&amp;d\boldsymbol{r}=\hat{\boldsymbol{e}}_{\mu} \omega^{\mu}\\<br/>
+&amp;ds^2 = \eta_{\mu\nu} \omega^{\mu}\omega^{\nu}\\<br/>
+&amp;\langle \hat{\boldsymbol{e}}_{\mu}, \hat{\boldsymbol{e}}_{\nu}\rangle = \eta_{\mu\nu}\end{aligned} \tag{65} $$<br/>
+然后是<br/>
+$$\begin{aligned}&amp;d\eta_{\mu\nu}=\omega_{\nu\mu}+\omega_{\mu\nu}=\eta_{\nu\alpha}\omega_{\mu}^{\alpha}+\eta_{\mu \alpha}\omega_{\nu}^{\alpha}\\<br/>
+&amp;d\omega^{\mu}+\omega_{\nu}^{\mu}\land \omega^{\nu}=0\end{aligned} \tag{66} $$<br/>
+这两个可以帮助我们确定$\omega_{\nu}^{\mu}$；接着就是<br/>
+$$\mathscr{R}_{\nu}^{\mu} = d\omega_{\nu}^{\mu}+\omega_{\alpha}^{\mu} \land \omega_{\nu}^{\alpha} \tag{67} $$<br/>
+最后你要正交标架下的$\hat{R}^{\mu}_{\nu\beta\gamma}$，就要写出：<br/>
+$$\mathscr{R}_{\nu}^{\mu}=\sum_{\beta &lt; \gamma} \hat{R}^{\mu}_{\nu\beta\gamma}\omega^{\beta}\land \omega^{\gamma} \tag{68} $$<br/>
+如果你要原始标架下的$R^{\mu}_{\nu\beta\gamma}$，就要写出<br/>
+$$(h^{-1})_{\mu'}^{\mu}\mathscr{R}^{\mu'}_{\nu'}h_{\nu}^{\nu'} = \sum_{\beta &lt; \gamma} R^{\mu}_{\nu\beta\gamma}dx^{\beta}\land dx^{\gamma} \tag{69} $$<br/>
+然后依次读出$R^{\mu}_{\nu\beta\gamma}$，就像制表一样。</p><h3 id="二维的例子：球面">二维的例子：球面</h3><p>先用一个二维的例子来热身，我们来计算球面$ds^2 = d\theta^2 + \sin^2 \theta d\phi^2$的黎曼曲率张量。</p><p>我们取<br/>
+$$\omega^1 = d\theta, \quad \omega^2 = \sin\theta d\phi \tag{70} $$<br/>
+也就是<br/>
+$$\boldsymbol{h}=\begin{pmatrix}1&amp;0\\0&amp;\sin\theta\end{pmatrix},\quad \boldsymbol{\eta}=\begin{pmatrix}1&amp;0\\0&amp;1\end{pmatrix} \tag{71} $$<br/>
+由于$\boldsymbol{\eta}$是单位阵，因此$d\eta_{\mu\nu}=\eta_{\alpha \nu}\omega_{\mu}^{\alpha}+\eta_{\mu \alpha}\omega_{\nu}^{\alpha}$告诉我们，$\omega_{\nu}^{\mu}$是反对称矩阵。我们用矩阵的形式写出$d\omega^{\mu}+\omega_{\nu}^{\mu}\land \omega^{\nu}=0$<br/>
+$$\begin{pmatrix} 0 &amp; \omega_2^1 \\ -\omega_2^1 &amp; 0 \end{pmatrix}\land \begin{pmatrix} d\theta \\ \sin\theta d\phi \end{pmatrix}=-d\begin{pmatrix} d\theta \\ \sin\theta d\phi \end{pmatrix}=-\begin{pmatrix} 0 \\ \cos\theta d\theta\land d\phi \end{pmatrix} \tag{72} $$<br/>
+由于反对称性，$\omega_{\nu}^{\mu}$只有一个独立分量，不难发现$\omega_2^1=-\cos\theta d\phi$。这个求解过程，用猜测、试探的方法就行了。接着，求$\mathscr{R}_{\nu}^{\mu} = d\omega_{\nu}^{\mu}+\omega_{\alpha}^{\mu} \land \omega_{\nu}^{\alpha}$，即<br/>
+$$\begin{aligned}\mathscr{R}_{\nu}^{\mu} = &amp;d\begin{pmatrix} 0 &amp; -\cos\theta d\phi \\ \cos\theta d\phi &amp; 0 \end{pmatrix}\\<br/>
+&amp;+\begin{pmatrix} 0 &amp; -\cos\theta d\phi \\ \cos\theta d\phi &amp; 0 \end{pmatrix}\land \begin{pmatrix} 0 &amp; -\cos\theta d\phi \\ \cos\theta d\phi &amp; 0 \end{pmatrix} \end{aligned} \tag{73} $$<br/>
+最后矩阵相乘一项显然为0，事实上也可以证明只要在2维空间中就有$\omega_{\alpha}^{\mu} \land \omega_{\nu}^{\alpha}$恒等于0，因此<br/>
+$$\mathscr{R}_{\nu}^{\mu} = d\begin{pmatrix} 0 &amp; -\cos\theta d\phi \\ \cos\theta d\phi &amp; 0 \end{pmatrix}=\begin{pmatrix} 0 &amp; \sin\theta d\theta\land d\phi \\ -\sin\theta d\theta\land d\phi &amp; 0 \end{pmatrix} \tag{74} $$<br/>
+又因为<br/>
+$$\mathscr{R}_{\nu}^{\mu}=\sum_{\beta &lt; \gamma} \hat{R}^{\mu}_{\nu\beta\gamma}\omega^{\beta}\land \omega^{\gamma}=\hat{R}^{\mu}_{\nu 1 2 }\sin\theta d\theta \land d\phi \tag{75} $$<br/>
+对比即知<br/>
+$$\hat{R}^{\mu}_{\nu 1 2 } = \begin{pmatrix} 0 &amp; 1 \\ -1 &amp; 0 \end{pmatrix} \tag{76} $$<br/>
+也就是说在正交标架下有$\hat{R}^{1}_{2 1 2 } = 1, \hat{R}^{2}_{1 1 2 } = -1$。然后根据$(h^{-1})_{\mu'}^{\mu}\mathscr{R}^{\mu'}_{\nu'}h_{\nu}^{\nu'} = \sum_{\beta &lt; \gamma} R^{\mu}_{\nu\beta\gamma}dx^{\beta}\land dx^{\gamma}$计算$R^{\mu}_{\nu\beta\gamma}$，我们有<br/>
+$$\begin{aligned}&amp;\begin{pmatrix}1&amp;0\\0&amp;\sin\theta\end{pmatrix}^{-1}\begin{pmatrix} 0 &amp; \sin\theta d\theta\land d\phi \\ -\sin\theta d\theta\land d\phi &amp; 0 \end{pmatrix}\begin{pmatrix}1&amp;0\\0&amp;\sin\theta\end{pmatrix}\\<br/>
+=&amp;R^{\mu}_{\nu 12}d\theta\land d\phi\end{aligned} \tag{77} $$<br/>
+也就是<br/>
+$$R^{\mu}_{\nu 1 2 } = \begin{pmatrix} 0 &amp; \sin^2\theta \\ -1 &amp; 0 \end{pmatrix} \tag{78} $$<br/>
+也就是说有$R^{1}_{2 1 2 } = \sin\theta, R^{2}_{1 1 2 } = -1$。所有过程只不过是涉及到矩阵的乘法，这是我们所熟悉的，比繁琐的多重指标求和不知道省了多少心。对比$\hat{R}^{\mu}_{\nu\beta\gamma}$和$R^{\mu}_{\nu\beta\gamma}$的形式，也可以发现确实正交标架确实起到了简化的作用。</p><h3 id="四维的例子：史瓦西度规">四维的例子：史瓦西度规</h3><p>爱因斯坦场方程的第一个精确解是史瓦西度规，它是通过求解如下形式的度规得到的<br/>
+$$ds^2= -e^{2\Phi}dt^2 + e^{2\Lambda} dr^2 + r^2 d\theta^2 + r^2 \sin^2\theta d\phi^2 \tag{79} $$<br/>
+它的出发点是考虑一个各项同性的度规，因此$\Phi, \Lambda$假定为仅仅是$r$的函数。我们来算这种情形下的黎曼曲率张量（难度中上）。</p><p>很自然地，我们取<br/>
+$$\omega^1 = e^{\Phi}dt, \quad \omega^2 = e^{\Lambda }dr, \quad \omega^3 = rd\theta, \quad \omega^4 = r\sin\theta d\phi \tag{80} $$<br/>
+这时<br/>
+$$\boldsymbol{h}=\begin{pmatrix}e^{\Phi}&amp;0&amp;0&amp;0\\0&amp;e^{\Lambda }&amp;0&amp;0\\0&amp;0&amp;r&amp;0\\0&amp;0&amp;0&amp;r\sin\theta\end{pmatrix},\quad \boldsymbol{\eta}=\begin{pmatrix}-1&amp;0&amp;0&amp;0\\0&amp;1&amp;0&amp;0\\0&amp;0&amp;1&amp;0\\0&amp;0&amp;0&amp;1\end{pmatrix} \tag{81} $$<br/>
+由$d\eta_{\mu\nu}=\eta_{\alpha \nu}\omega_{\mu}^{\alpha}+\eta_{\mu \alpha}\omega_{\nu}^{\alpha}$可以知道$\omega_{\mu\nu}=\omega_{\mu}^{\alpha}\eta_{\alpha \nu}$是反对称的，并且结合$\boldsymbol{\eta}$的形式来稍加分析，就可以得出，$\omega_{\nu}^{\mu}$具有以下形式<br/>
+$$\begin{pmatrix}0&amp;\omega_2^1&amp;\omega_3^1&amp;\omega_4^1\\ \omega_2^1&amp;0&amp;\omega_3^2&amp;\omega_4^2\\ \omega_3^1&amp;-\omega_3^2&amp;0&amp;\omega_4^3\\ \omega_4^1&amp;-\omega_4^2&amp;-\omega_4^3&amp;0\end{pmatrix} \tag{82} $$<br/>
+它的特点是，作为分块矩阵<br/>
+$$\left(\begin{array}{c:ccc}0&amp;\omega_2^1&amp;\omega_3^1&amp;\omega_4^1\\ \hdashline \omega_2^1&amp;0&amp;\omega_3^2&amp;\omega_4^2\\ \omega_3^1&amp;-\omega_3^2&amp;0&amp;\omega_4^3\\ \omega_4^1&amp;-\omega_4^2&amp;-\omega_4^3&amp;0\end{array}\right) =\left(\begin{array}{c:c}E &amp; F\\ \hdashline G&amp;H\end{array}\right) \tag{83} $$<br/>
+来看，它是对称的，但对角线矩阵$E,H$都是反对称的。至于怎么分块，取决于我们将$\boldsymbol{\eta}$分块为$\left(\begin{array}{c:c}-I &amp; 0\\ \hdashline 0&amp;I\end{array}\right)$的方式，其中$I$代表单位阵。</p><p>有了$\omega_{\nu}^{\mu}$的具体形式后，我们就可以写出$d\omega^{\mu}+\omega_{\nu}^{\mu}\land \omega^{\nu}=0$：<br/>
+$$\begin{aligned}&amp;\begin{pmatrix}0&amp;\omega_2^1&amp;\omega_3^1&amp;\omega_4^1\\ \omega_2^1&amp;0&amp;\omega_3^2&amp;\omega_4^2\\ \omega_3^1&amp;-\omega_3^2&amp;0&amp;\omega_4^3\\ \omega_4^1&amp;-\omega_4^2&amp;-\omega_4^3&amp;0\end{pmatrix}\land \begin{pmatrix}e^{\Phi}dt\\ e^{\Lambda }dr\\rd\theta\\r\sin\theta d\phi\end{pmatrix}\\<br/>
+=&amp;-d\begin{pmatrix}e^{\Phi}dt\\ e^{\Lambda }dr\\rd\theta\\r\sin\theta d\phi\end{pmatrix}=-\begin{pmatrix}e^{\Phi} \dot{\Phi} dr\land dt\\ 0 \\dr\land d\theta\\ \sin\theta dr\land d\phi+ r\cos\theta d\theta\land d\phi \end{pmatrix}\end{aligned} \tag{84} $$<br/>
+这里的$\dot{}$指的是对$r$求导。充分头脑风暴，就可以快速将答案定位。比如看着第2行恒等于0，那么就可以断定$\omega_2^1,\omega_3^2,\omega_4^2$分别只与$dt,d\theta,d\phi$有关，结合第1行，就可以确定$\omega_2^1 = e^{\Phi-\Lambda}\dot{\Phi} dt$，并且得出$\omega_3^1,\omega_4^1$分别只与$d\theta,d\phi$有关。然后结合第3行，就可以确定$\omega_3^1=0$，还有$\omega_3^2=-e^{-\Lambda}d\theta$，并且得出$\omega_4^3$只与$d\phi$有关，最后看着第4行，很快就确定$\omega_4^1=0, \omega_4^2 = -\sin\theta e^{-\Lambda} d\phi, \omega_4^3 = -\cos\theta d\phi$，最后得到<br/>
+$$\omega_{\nu}^{\mu}=\begin{pmatrix}0&amp; e^{\Phi-\Lambda}\dot{\Phi} dt &amp; 0 &amp; 0 \\ e^{\Phi-\Lambda}\dot{\Phi} dt &amp;0&amp;-e^{-\Lambda}d\theta&amp;-\sin\theta e^{-\Lambda} d\phi\\ 0 &amp;e^{-\Lambda}d\theta&amp;0&amp;-\cos\theta d\phi\\ 0&amp;\sin\theta e^{-\Lambda} d\phi&amp;\cos\theta d\phi&amp;0\end{pmatrix} \tag{85} $$<br/>
+现在就可以计算$\mathscr{R}_{\nu}^{\mu} = d\omega_{\nu}^{\mu}+\omega_{\alpha}^{\mu} \land \omega_{\nu}^{\alpha}$了，即<br/>
+$$\begin{aligned}\mathscr{R}_{\nu}^{\mu} =&amp;d\begin{pmatrix}0&amp; e^{\Phi-\Lambda}\dot{\Phi} dt &amp; 0 &amp; 0 \\ e^{\Phi-\Lambda}\dot{\Phi} dt &amp;0&amp;-e^{-\Lambda}d\theta&amp;-\sin\theta e^{-\Lambda} d\phi\\ 0 &amp;e^{-\Lambda}d\theta&amp;0&amp;-\cos\theta d\phi\\ 0&amp;\sin\theta e^{-\Lambda} d\phi&amp;\cos\theta d\phi&amp;0\end{pmatrix}\\<br/>
+&amp;+\begin{pmatrix}0&amp; e^{\Phi-\Lambda}\dot{\Phi} dt &amp; 0 &amp; 0 \\ e^{\Phi-\Lambda}\dot{\Phi} dt &amp;0&amp;-e^{-\Lambda}d\theta&amp;-\sin\theta e^{-\Lambda} d\phi\\ 0 &amp;e^{-\Lambda}d\theta&amp;0&amp;-\cos\theta d\phi\\ 0&amp;\sin\theta e^{-\Lambda} d\phi&amp;\cos\theta d\phi&amp;0\end{pmatrix}\\<br/>
+&amp;\land \begin{pmatrix}0&amp; e^{\Phi-\Lambda}\dot{\Phi} dt &amp; 0 &amp; 0 \\ e^{\Phi-\Lambda}\dot{\Phi} dt &amp;0&amp;-e^{-\Lambda}d\theta&amp;-\sin\theta e^{-\Lambda} d\phi\\ 0 &amp;e^{-\Lambda}d\theta&amp;0&amp;-\cos\theta d\phi\\ 0&amp;\sin\theta e^{-\Lambda} d\phi&amp;\cos\theta d\phi&amp;0\end{pmatrix}<br/>
+\end{aligned} \tag{86} $$<br/>
+算得<br/>
+$$\begin{aligned}&amp;\mathscr{R}_1^1=\mathscr{R}_2^2=\mathscr{R}_3^3=\mathscr{R}_4^4=0\\<br/>
+&amp;\mathscr{R}^1_2=\mathscr{R}^2_1=-e^{\Phi-\Lambda}(\ddot{\Phi}+\dot{\Phi}^2-\dot{\Phi}\dot{\Lambda}) dt\land dr\\<br/>
+&amp;\mathscr{R}^1_3=\mathscr{R}^3_1=-e^{\Phi-2\Lambda} \dot{\Phi} dt\land d\theta\\<br/>
+&amp;\mathscr{R}^1_4=\mathscr{R}^4_1=-e^{\Phi-2\Lambda} \dot{\Phi} \sin\theta dt\land d\phi\\<br/>
+&amp;\mathscr{R}^2_3=-\mathscr{R}^3_2=e^{-\Lambda}\dot{\Lambda} dr\land d\theta\\<br/>
+&amp;\mathscr{R}^2_4=-\mathscr{R}^4_2=e^{-\Lambda}\dot{\Lambda}\sin\theta dr\land d\phi\\<br/>
+&amp;\mathscr{R}^3_4=-\mathscr{R}^4_3=(1-e^{2\Lambda})\sin\theta d\theta\land d\phi\end{aligned} \tag{87} $$<br/>
+这就可以依次读出$\hat{R}^{\mu}_{\nu\beta\gamma}$了，比如<br/>
+$$\hat{R}^{1}_{212}=-e^{-2\Lambda}(\ddot{\Phi}+\dot{\Phi}^2-\dot{\Phi}\dot{\Lambda}), \quad\hat{R}^{1}_{312}=-\frac{1}{r}e^{-2\Lambda}\dot{\Phi} \tag{88} $$<br/>
+等等，如果你愿意，还可以继续求$R^{\mu}_{\nu\beta\gamma}$，因为$\boldsymbol{h}$是一个对角阵，因此并不会增加多少工程。</p><p>读者要是亲自去运算，可能仍然会抱怨要花很多时间，也许会觉得并没有什么化简作用。但是，按照上面的步骤一步步来，哪怕是人工，也是可以操作的。这至少是一种人工可能算得出来的方法，上面的过程就是笔者手算出来的，并没有用到mathematica之类的软件。相信没有人从原始表达式$R^{\mu}_{\nu\beta\gamma}=\frac{\partial \Gamma^{\mu}_{\nu\gamma}}{\partial x^{\beta}}-\frac{\partial \Gamma^{\mu}_{\nu\beta}}{\partial x^{\gamma}}+\Gamma^{\mu}_{\alpha\beta}\Gamma^{\alpha}_{\nu\gamma}-\Gamma^{\mu}_{\alpha\gamma}\Gamma^{\alpha}_{\nu\beta}$算过三维以上的黎曼曲率张量吧？别说算了，连搞清楚求和指标都不容易，这样对比起来，外微分的技巧就有效多了。当然，不管什么方法，首先总需要一点时间训练到熟悉；其次，就算已经熟悉了方法，也需要花点时间思考才能做出来，不可能一眼就看出来——除非是计算机。</p>
+
+
+
+
+
+</div>

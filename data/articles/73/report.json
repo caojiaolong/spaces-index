@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "73",
+    "title": "【NASA每日一图】火星上的奇形黑色陨石",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/73",
+    "date": "2009-08-13",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 0,
+    "display_formula_count": 0,
+    "image_count": 1,
+    "heading_count": 0,
+    "code_block_count": 0,
+    "source_text_sha256": "b038c50281db44aff421bb737dc20bb2a4fb288237f8d0b95b44e8ff63fa5aa3",
+    "output_text_sha256": "b038c50281db44aff421bb737dc20bb2a4fb288237f8d0b95b44e8ff63fa5aa3",
+    "latex_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "body_sha256": "30c0d712895a5145161bdcc28c34531f19ed749c1b81b8cc546d61d2901b6dbf",
+    "converter_version": 1,
+    "markdown_sha256": "8eac36e97829ea11a0bf00a03f3fd71b4aa3d2eddf001e4b023244234ad81745"
+  },
+  "fetched_at": "2026-09-14T14:59:27+00:00",
+  "source_snapshot_sha256": "0e6229899e5f430ea2f2eaacfb6d7bd836c6504acb4a2f734a998ed4296fb232",
+  "images": {},
+  "local_only": true
+}

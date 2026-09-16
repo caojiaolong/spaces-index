@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "9324",
+    "title": "圆内随机n点在同一个圆心角为θ的扇形的概率",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/9324",
+    "date": "2022-10-25",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 98,
+    "display_formula_count": 13,
+    "image_count": 1,
+    "heading_count": 7,
+    "code_block_count": 0,
+    "source_text_sha256": "09eb3fd16cd13d8432e92b98fd8c7d153d3ea4edb199a2baf71caa8f7c9d2c05",
+    "output_text_sha256": "09eb3fd16cd13d8432e92b98fd8c7d153d3ea4edb199a2baf71caa8f7c9d2c05",
+    "latex_sha256": "4e564e0b87e69cd7f2fdab9ce0bc006fb55b2f6028d1e940d9747a7da344f2ce",
+    "body_sha256": "3af2cddf21b7466786c56162f8e579f0432f7b56b7b234af0488998b8b6e766b",
+    "converter_version": 1,
+    "markdown_sha256": "f728b8a323567abf97f3d83a2b8595a929ad6e8cefaf35c5a120744b8db933ba"
+  },
+  "fetched_at": "2026-09-14T12:57:19+00:00",
+  "source_snapshot_sha256": "b608b9a38e6126eca6362c4521b0c34d5d98533cd3c72461f7cd97bb843e6cc8",
+  "images": {},
+  "local_only": true
+}

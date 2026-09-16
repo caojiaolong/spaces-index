@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "2177",
+    "title": "力学系统及其对偶性（三）",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/2177",
+    "date": "2013-11-15",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 32,
+    "display_formula_count": 9,
+    "image_count": 0,
+    "heading_count": 0,
+    "code_block_count": 0,
+    "source_text_sha256": "b7d562109574227c031ad2da34825545e1c02b0d81601d143d5fa42684f49189",
+    "output_text_sha256": "b7d562109574227c031ad2da34825545e1c02b0d81601d143d5fa42684f49189",
+    "latex_sha256": "f1830f1d3051542623528f47df7bd273b5a0d9c7a77e394d1f01d1ec67151137",
+    "body_sha256": "3e859d28f6a299668ba94a54d28aefe1c31ca58d5e43a967d9c1313fb8f6cfe1",
+    "converter_version": 1,
+    "markdown_sha256": "a4fc424f540d546bc73b2be07256a46908a769baef578e067f02e663bbaff694"
+  },
+  "fetched_at": "2026-09-14T13:59:05+00:00",
+  "source_snapshot_sha256": "c036628b1250cddc020701358fa6d2e1e09f492bd81d3bb2e4f8ade9efc0c196",
+  "images": {},
+  "local_only": true
+}

@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "6270",
+    "title": "基于CNN和序列标注的对联机器人",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/6270",
+    "date": "2019-01-14",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 0,
+    "display_formula_count": 0,
+    "image_count": 1,
+    "heading_count": 6,
+    "code_block_count": 2,
+    "source_text_sha256": "d431d844e3faa4b1c85de11c932c85794502c06ecb9b2d75aab91ce81c3fea19",
+    "output_text_sha256": "d431d844e3faa4b1c85de11c932c85794502c06ecb9b2d75aab91ce81c3fea19",
+    "latex_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "body_sha256": "f5c4dc8bf00805b75616703ba7b91a198a83b0008ada9c5cd405a7cd2390cfe2",
+    "converter_version": 1,
+    "markdown_sha256": "3c6eb8a590cd19a42b88b0d8aeb0df930443c5a85b478cddcc39f7044a706ebc"
+  },
+  "fetched_at": "2026-09-14T13:22:09+00:00",
+  "source_snapshot_sha256": "e31b1a408b50e56e8124d50e1330e64c2875536958c878e507bc11db36257cb7",
+  "images": {},
+  "local_only": true
+}

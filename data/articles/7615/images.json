@@ -1,0 +1,15 @@
+{
+  "version": 1,
+  "images": {
+    "https://spaces.ac.cn/usr/uploads/2020/07/3807618516.png": {
+      "status": "cached",
+      "file": "4b24ca953811f482c095f0a89c1b79d130513d272cf5a945f0275264a3e9bda2.png",
+      "sha256": "4b24ca953811f482c095f0a89c1b79d130513d272cf5a945f0275264a3e9bda2",
+      "bytes": 148533,
+      "checked_at": "2026-09-16T08:54:14+00:00",
+      "fetched_url": "https://spaces.ac.cn/usr/uploads/2020/07/3807618516.png",
+      "etag": "\"5f13f40c-24435\"",
+      "last_modified": "Sun, 19 Jul 2020 07:19:40 GMT"
+    }
+  }
+}

@@ -1,0 +1,21 @@
+<div class="PostContent" id="PostContent">
+<p>在上一篇文章中，我们得到了一维弹簧运动的方程<br/>
+$$m\frac{\partial^2 X}{\partial t^2}=k\frac{\partial^2 X}{\partial \xi^2}$$<br/>
+并且得到了通解<br/>
+$$X=F(u)+H(v)=F(\xi+\beta t)+H(\xi-\beta t)$$<br/>
+或者<br/>
+$$X(\xi,t)=\frac{1}{2}\left[X_0(\xi+\beta t)+X_0(\xi-\beta t)\right]+\frac{1}{2\beta}\int_{\xi-\beta t}^{\xi+\beta t} X_1 (s)ds$$<br/>
+在文章的末尾，提到过这个解是有些问题的。现在让我们来详细分析它。</p><p><strong>弹指神通</strong><br/>
+让我们用一个例子来演示一下上面的解，不妨设初始状态为<br/>
+$$\xi=\left\{\begin{array}{} 0,x &lt;0\\ \sin x,x\in[0,\frac{\pi}{2}] \\ 1 ,x &gt; 0\end{array}\right.$$<br/>
+反解得<br/>
+$$x=\arcsin \xi$$<br/>
+代入通解表达式<br/>
+$$X(\xi,t)=\frac{1}{2}[\arcsin(\xi+\beta t)+\arcsin(\xi-\beta t)]$$<br/>
+一切看起来都没有问题，但是上述解确实有不当之处的。注意，$\xi$的取值是0到1，比如我们考虑$\xi=1,t&gt;0$，那么$\xi+\beta t&gt;1$，此时$\arcsin(\xi+\beta t)$就不是实数了！可是好端端一个通解，怎么会出现这样的情况呢？</p><p><strong><font color="red">原因在于，当我们用对$\xi$的积分代替了求和时候，实际上使用了一个隐藏的假设：连续性！</font></strong></p><p>也就是说，我们假设初始状态$x_i$位于$x_{i+1}$的左边，经过一段时间运动之后，$x_i$还是位于$x_{i+1}$的左边。这不一定成立，比如我们只考虑两个物体的弹簧，初始状态如下</p><p></p><div class="pic-container"><div class="typecho-caption aligncenter" style="max-width: 100%"><div style="margin: 5px"><a href="/usr/uploads/2014/03/694954343.png" target="_blank" title="弹簧演示.png"><img alt="弹簧演示" src="/usr/uploads/2014/03/694954343.png" style="max-width:100%"/></a></div><p class="typecho-caption-text">弹簧演示</p></div></div><p>其中$x_1$一端绷紧，而$x_2$一端被拉开，只要$x_2$到$x_1$的距离足够长，也就是远远超过了原长，那么释放之后，$x_1$向右运动，$x_2$向左运动，而我们的假设之中它们都是质点，没有碰撞这一概念，而且在我们的方程之中，两个质点只是被一个与距离平方成正比的势能联系着，并不是由一根具体的弹簧拉扯着，所以可以使得$x_2$在左边，$x_1$在右边，并且两者在一段时间内越来越远。这样子就破坏了连续性假设。在无限多个质点的情况也是类似的。</p><p>于是，总的来说，我们得到的“通解”，实际上只适合描写$0&lt;\xi+\beta t&lt;1,0&lt;\xi-\beta t&lt;1$这个区域内的运动。超出了这个区域，也就需要修改了。至于怎么修改，我也还在思考当中。</p>
+
+
+
+
+
+</div>

@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "8062",
+    "title": "【搜出来的文本】⋅（一）从文本生成到搜索采样",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/8062",
+    "date": "2021-01-07",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 101,
+    "display_formula_count": 11,
+    "image_count": 0,
+    "heading_count": 5,
+    "code_block_count": 0,
+    "source_text_sha256": "0b847779ff9382bfa70c35a31d80d1cc1da9aaa0807838ef39f5b28833790b44",
+    "output_text_sha256": "0b847779ff9382bfa70c35a31d80d1cc1da9aaa0807838ef39f5b28833790b44",
+    "latex_sha256": "2cb2277e06e4c3000c5be7daab60db1441189a187c0247b498263b6819323e51",
+    "body_sha256": "2bb2206a76ffbc61bbd0733f0619aacbd734a510e5c58bb24af93b8e5dd76c5a",
+    "converter_version": 1,
+    "markdown_sha256": "d0d7730fea16f55e3aefb9266cffd31103dc93e6949fbc39d841aab59dc4903d"
+  },
+  "fetched_at": "2026-09-14T13:08:55+00:00",
+  "source_snapshot_sha256": "ab9750a11ca6408a69402cc0af64fe8b2df65e7ebeb63dc890c89f00bacabfbf",
+  "images": {},
+  "local_only": true
+}

@@ -1,0 +1,17 @@
+{
+  "metadata": {
+    "id": "11530",
+    "title": "让炼丹更科学一些（五）：基于梯度精调学习率",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/11530",
+    "date": "2026-01-09",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "fetched_at": "2026-09-14T12:37:51+00:00",
+  "source_snapshot_sha256": "da525484859405e5685e6288a23906bea5d5eb21a0fb1d885963849e04bc6146",
+  "validators": {
+    "etag": null,
+    "last_modified": null
+  }
+}

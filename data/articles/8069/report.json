@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "8069",
+    "title": "你可能不需要BERT-flow：一个线性变换媲美BERT-flow",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/8069",
+    "date": "2021-01-11",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 42,
+    "display_formula_count": 10,
+    "image_count": 0,
+    "heading_count": 6,
+    "code_block_count": 2,
+    "source_text_sha256": "c8ec17abe9ec2786de3438bf1a7fbe75c7010129683e876e21a81358c1ffe8f0",
+    "output_text_sha256": "c8ec17abe9ec2786de3438bf1a7fbe75c7010129683e876e21a81358c1ffe8f0",
+    "latex_sha256": "c4da9088073faaa4b759a185fd8cc4e781e2354dd46e4a25698fe7925def8ce7",
+    "body_sha256": "af79a44ab715e4b3572bf72b10a4998ac92b29f019514e2d7dc2c295da07b272",
+    "converter_version": 1,
+    "markdown_sha256": "2f035cbae04dcf575a7f8e221e394bd178877d4a388afdfcc7c1f08d29392b60"
+  },
+  "fetched_at": "2026-09-14T13:08:49+00:00",
+  "source_snapshot_sha256": "2fd975028d462ffef63dbb2c3697f9ffa9f22ba276c96336cc75b32866f7e129",
+  "images": {},
+  "local_only": true
+}

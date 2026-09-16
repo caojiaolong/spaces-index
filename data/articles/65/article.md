@@ -1,0 +1,149 @@
+# 彗星(非小行星)重创月球
+
+> 作者：苏剑林 · 科学空间 · 2009-08-08
+>
+> 原文：<https://spaces.ac.cn/archives/65>
+>
+> 原文许可：[CC BY-NC-ND 2.5 CN（署名-非商业性使用-禁止演绎）](https://creativecommons.org/licenses/by-nc-nd/2.5/cn/)。
+>
+> 本文件由 spaces-index 非官方、非商业项目进行必要的 HTML → Markdown 格式转换；正文未做摘要、润色、翻译或重组。项目不代表作者，也不表示作者为项目背书。
+>
+> 署名及附加许可说明不代表已获得作者额外授权。第三方素材权利依其原有声明。
+>
+> 原站转载与引用说明：[科学空间 FAQ](https://spaces.ac.cn/archives/6508#%E6%96%87%E7%AB%A0%E5%A6%82%E4%BD%95%E8%BD%AC%E8%BD%BD/%E5%BC%95%E7%94%A8)
+
+---
+
+<strong>笔者：</strong>38亿年前，在太阳系形成之初，发生了一场“惊天动地”的撞击事件，这造成了月球的环形山，找成了很多天体的坑坑洼洼。不过，它同时也可能是生命之源。因为有研究显示，它可能为地球带来了水。
+这一次的翻译没有多大困难，不过呢，有一些专有名词很麻烦，就像<strong>Giant plumes</strong>，一直搞不清楚这是什么，后来向人请教，才知道这是“地幔柱”。希望各位志同道合的朋友，以后遇到一些不清楚的名词，不要那么快下结论，多去Google一下。
+
+> <strong>彗星(非小行星)重创月球</strong>
+> by Hazel Muir
+> 
+> 
+> 
+> 格陵兰的一项新的古岩石研究指出，38\.5亿年前在地球和月球发生的剧烈撞击的“肇事者”，是冰质彗星——而非岩质小行星。这项工作表明，目前地球上大部分的水都可能是彗星带来的。
+> 
+> 
+> 
+> “我们用肉眼就可以观测到月球表明上的环形山，不过没有人知道它们是如何形成的——究竟是岩石、铁还是冰撞击而成的？”一位丹麦的哥本哈根 玻尔研究所的天文学家Uffe Grae Jorgensen表示，“令人激动的是，所发现的迹象显示这是冰造成的。”
+> 
+> 
+> 
+> [![图片说明：历经沧桑的月球](<https://spaces.ac.cn/usr/uploads/2009/08/20090807163347.jpg>)](<https://spaces.ac.cn/usr/uploads/2009/08/20090807163347.jpg>)
+> 
+> 
+> 
+> 图片说明：历经沧桑的月球
+> 
+> 
+> 
+> 研究发现，地球和月球都形成于45亿年前。不过，几乎月球上所有环形山的行成时间都比这要晚，是起源于39亿到38亿年前的一次“太阳系晚期重大撞击事件”（LHB ，Late Heavy Bombardment，参考：http://en\.wikipedia\.org/wiki/Late\_Heavy\_Bombardment），估计有10亿亿吨（$10^17$，10后面有17个零）陨冰或岩石撞击到了月球表面。同时地球也遭受着其残骸的撞击——尽管我们不平静的地球已经用“板块构造理论”抹去了这些伤痕。
+> 
+> 
+> 
+> 为了确定究竟小行星和彗星哪一个才是撞击的“真凶”，Jorgensen决定去测量古地层岩石中铱元素的含量。由于在地球形成不久之后，几乎所有的铱都转变成为铁，沉入了地核中，因此地球表面的铱含量非常稀少。不过，铱是彗星和陨石上相对常见的元素。
+> 
+> 
+> 
+> <strong>冰块？岩石？</strong>
+> 
+> 
+> 
+> 他的团队计算了小行星和彗星撞击会在地球和月球留下的铱的含量，并作了对比。不过彗星有更多的不稳定因素以及更高的撞击速度，使其公转轨道拉长，它们的撞击会形成地幔柱，相比小行星撞击，会令更多的铱逃逸到太空。
+> 
+> 
+> 
+> [![图片说明：小行星撞击地球模拟图](<https://spaces.ac.cn/usr/uploads/2009/08/20090807175019.jpg>)](<https://spaces.ac.cn/usr/uploads/2009/08/20090807175019.jpg>)
+> 
+> 
+> 
+> 图片说明：小行星撞击地球模拟图
+> 
+> 
+> 
+> 团队估计，如果是小行星撞击，那么地球和月球的岩石中铱含量分别为18000 ppt 和 10000 ppt （parts per trillion，1ppt=1万亿分之一）。如果是彗星撞击，那么这两个数字只有130和10。
+> 
+> 
+> 
+> 美国宇航局的阿波罗计划所带回来的远古月球岩石已经证实，月岩中的铱含量只有10ppt甚至更少。为了寻找在地球上的相关信息，Jorgensen的团队从格陵兰采集了一批地球上最古老的、38亿年前的岩石，然后交给一个日本实验机构，以前所未有的精确度来测量铱的含量。结果发现，铱的含量为150ppt。
+> 
+> 
+> 
+> 这有力地证明了是彗星——而不是小行星——造成了重大撞击。
+> 
+> 
+> 
+> [![图片说明：彗星撞击地球模拟图](<https://spaces.ac.cn/usr/uploads/2009/08/20090807175023.jpg>)](<https://spaces.ac.cn/usr/uploads/2009/08/20090807175023.jpg>)
+> 
+> 
+> 
+> 图片说明：彗星撞击地球模拟图
+> 
+> 
+> 
+> <strong>地幔柱</strong>
+> 
+> 
+> 
+> 如果事实就是这样，那么根据Jorgensen团队的计算，彗星为地球上每平方米的地方带来3400吨的冰，估计有一半的彗星物质会通过地幔柱返回到太空，在地球留下了大约10亿立方千米的水。
+> 
+> 
+> 
+> 这个数字与目前地球的海洋总水量大致相等，不过目前还不清楚在早期地球的化学变化中有没有产生水。
+> （即不知道地球上的水是“原产”还是“进口”的，可以[参考(英文)](<http://www.newscientist.com/article/dn12693-earths-water-brewed-at-home-not-in-space.html>)，中文的可以[请看](<http://zhidao.baidu.com/question/4741716.html>)）
+> 
+> 
+> 
+> 迈克尔·穆马(Michael Mumma)，是NASA马里兰州戈达德太空飞行中心的彗星专家，他并没有参与这项研究，他表示新的成果十分有趣，“论文会使竞争更加激烈起来。”
+
+原文：[http://www\.newscientist\.com/article/dn17520\-comets\-not\-asteroids\-to\-blame\-for\-moons\-scarred\-face\.html](<http://www.newscientist.com/article/dn17520-comets-not-asteroids-to-blame-for-moons-scarred-face.html>)
+
+> <strong>Comets, not asteroids, to blame for moon's scarred face</strong>
+> by Hazel Muir
+> 
+> 
+> 
+> Icy comets – not rocky asteroids – launched a dramatic assault on the Earth and moon around 3\.85 billion years ago, a new study of ancient rocks in Greenland suggests\. The work suggests much of Earth's water could have been brought to the planet by comets\.
+> 
+> 
+> 
+> "We can see craters on the moon's surface with the naked eye, but nobody actually knew what caused them – was it rocks, was it iron, was it ice?" says Uffe Gr?e J?rgensen, an astronomer at the Niels Bohr Institute in Copenhagen, Denmark\. "It's exciting to find signs that it was actually ice\."
+> 
+> 
+> 
+> Evidence suggests that the Earth and moon had both formed around 4\.5 billion years ago\. But almost all the craters on the moon date to a later period, the "Late Heavy Bombardment" 3\.8 to 3\.9 billion years ago, when around 100 million billion tonnes of rock or ice crashed onto the lunar surface\. The Earth would have been pummelled by debris at the same time, although plate tectonics on our restless planet have since erased the scars\.
+> 
+> 
+> 
+> To find out whether asteroids or comets were the main culprits for the bombardment, J?rgensen decided to measure levels of the element iridium in ancient terrestrial rocks\. Iridium is rare on the Earth's surface because almost all of it bound to iron and sank into the Earth's core soon after the planet had formed\. But iridium is relatively common in comets and meteorites\.
+> 
+> 
+> 
+> <strong>Rock or ice</strong>
+> His team calculated the amount of iridium that asteroids would leave on the Earth and moon compared to comets\. Because comets have more volatile elements and higher impact speeds due to their more elongated orbits around the sun, they would create giant plumes on impact, allowing more iridium to escape into space than during asteroid impacts\.
+> 
+> 
+> 
+> The team predicted that asteroid bombardment would leave iridium levels of 18,000 and 10,000 parts per trillion in rocks on the Earth and moon respectively, while the same figures for comet bombardment would be about 130 and 10\.
+> 
+> 
+> 
+> Ancient moon rocks returned by NASA's Apollo missions have already confirmed that the lunar iridium levels are 10 parts per trillion or less\. To find out the terrestrial value, J?rgensen's team sampled some of the world's oldest rocks from Greenland, aged 3\.8 billion years, and asked a Japanese laboratory to assess their iridium levels more accurately than ever before\. They contained iridium levels of 150 parts per trillion\.
+> 
+> 
+> 
+> That strongly suggests comets, rather than asteroids, caused the violent bombardment\.
+> 
+> 
+> 
+> <strong>Giant plumes</strong>
+> If so, J?rgensen's team calculates that around 3400 tonnes of icy comet material fell on each square metre of the Earth\. About half the comet material would ricochet back into space in giant plumes, leaving behind roughly a billion cubic kilometres of cometary water in total\.
+> 
+> 
+> 
+> That is a similar amount to that in the Earth's oceans today, although it is not clear whether there was already water on the planet due to chemical reactions on the early Earth (see Earth's water brewed at home, not in space)\.
+> 
+> 
+> 
+> Michael Mumma, a comet expert at NASA's Goddard Space Flight Center in Maryland who was not involved in the research, says the new report is interesting: "The paper is certain to stimulate lively debate\."

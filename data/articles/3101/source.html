@@ -1,0 +1,27 @@
+<div class="PostContent" id="PostContent">
+<p>在数学分析的级数理论中，有一类常见的题目，其中涉及到<br/>
+$$\cos\theta+\cos 2\theta+\dots+\cos n\theta\tag{1}$$<br/>
+和<br/>
+$$\sin\theta+\sin 2\theta+\dots+\sin n\theta\tag{2}$$<br/>
+之类的正弦或者余弦级数的求和，主要是证明该和式有界。而为了证明这一点，通常是把和式的通项求出来。当然，该级数在物理中也有重要作用，它表示$n$个相同振子的合振幅。在我们的数学分析教材中，通常是将级数乘上一项$\sin\frac{\theta}{2}$，然后利用积化和差公式完成。诚然，如果仅限在实数范围内考虑，这有可能是唯一的推导技巧的。但是这样推导的运算过程本身不简单，而且也不利于记忆，在大二的时候我就为此感到很痛苦。前几天在看费曼的书的时候，想到了一种利用复数的推导技巧。很奇怪，这个技巧是如此简单——写出来显得这篇文章都有点水了——可是我以前居然一直没留意到！看来功力尚浅，需多多修炼呀。</p><p>有时候，一次性计算更多的东西，往往比单一计算一部分更加快捷，让我们同时来考虑$(1)$和$(2)$，我们计算<br/>
+$$\cos\theta+\cos 2\theta+\dots+\cos n\theta+i\left(\sin\theta+\sin 2\theta+\dots+\sin n\theta\right)$$<br/>
+利用欧拉公式，上式也就是<br/>
+$$e^{i\theta}+e^{2i\theta}+\dots+e^{ni\theta}$$<br/>
+这只是等比级数求和！易得<br/>
+$$e^{i\theta}\left(\frac{e^{ni\theta}-1}{e^{i\theta}-1}\right)=e^{(n+1)i\theta /2}\left( \frac{e^{ni\theta /2} - e^{ - n i\theta /2}}{e^{i\theta /2} - e^{ - i\theta /2}} \right)$$<br/>
+括号里的结果也就是<br/>
+$$\frac{\sin\frac{n\theta}{2}}{\sin\frac{\theta}{2}}$$<br/>
+所以总的结果也就是<br/>
+$$\left(\cos\frac{(n+1)\theta}{2}+i\sin\frac{(n+1)\theta}{2}\right)\frac{\sin\frac{n\theta}{2}}{\sin\frac{\theta}{2}}$$<br/>
+根据实部和虚部相等的原则，就有<br/>
+$$\cos\theta+\cos 2\theta+\dots+\cos n\theta=\cos\frac{(n+1)\theta}{2}\frac{\sin\frac{n\theta}{2}}{\sin\frac{\theta}{2}}$$<br/>
+和<br/>
+$$\sin\theta+\sin 2\theta+\dots+\sin n\theta=\sin\frac{(n+1)\theta}{2}\frac{\sin\frac{n\theta}{2}}{\sin\frac{\theta}{2}}$$</p><p>整个过程多么简洁，几乎一气呵成。里边也不是什么精湛神秘的技巧，所以特别奇怪，怎么我现在才注意到？</p><p>类似地，也可以得出<br/>
+$$\cos(\omega+\theta)+\cos(\omega+2\theta)+\dots+\cos (\omega+n\theta)$$<br/>
+的求和公式（仅仅是多乘了一个相位因子~~）</p>
+
+
+
+
+
+</div>

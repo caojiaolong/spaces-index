@@ -1,0 +1,114 @@
+<div class="PostContent" id="PostContent">
+<p>去年我们放出了<a href="/archives/7427" target="_blank">SimBERT</a>模型，它算是我们开源的比较成功的模型之一，获得了不少读者的认可。简单来说，SimBERT是一个融生成和检索于一体的模型，可以用来作为句向量的一个比较高的baseline，也可以用来实现相似问句的自动生成，可以作为辅助数据扩增工具使用，这一功能是开创性的。</p><p>近段时间，我们以<a href="/archives/8265" target="_blank">RoFormer</a>为基础模型，对SimBERT相关技术进一步整合和优化，最终发布了升级版的RoFormer-Sim模型。</p><h2 id="简介">简介</h2><p>RoFormer-Sim是SimBERT的升级版，我们也可以通俗地称之为“SimBERTv2”，而SimBERT则默认是指旧版。从外部看，除了基础架构换成了RoFormer外，RoFormer-Sim跟SimBERT没什么明显差别，事实上它们主要的区别在于训练的细节上，我们可以用两个公式进行对比：<br/>
+\begin{array}{c}<br/>
+\text{SimBERT} = \text{BERT} + \text{UniLM} + \text{对比学习} \\[5pt]<br/>
+\text{RoFormer-Sim} = \text{RoFormer} + \text{UniLM} + \text{对比学习} + \text{BART} + \text{蒸馏}\\<br/>
+\end{array}<br/>
+除此之外，RoFormer-Sim用到了更多的训练数据，并且拓展到了一般句式，也就是说，不同于SimBERT仅仅局限于疑问句，RoFormer-Sim可以用来做一般句子的相似句生成，适用场景更大。其他训练细节还包括RoFormer-Sim用了更大的batch_size和maxlen等，这些在后面我们都会进一步介绍。</p><blockquote class="cite"><div><strong>开源地址：<a href="https://github.com/ZhuiyiTechnology/roformer-sim" target="_blank">https://github.com/ZhuiyiTechnology/roformer-sim</a></strong></div></blockquote><h2 id="语料">语料</h2><p>SimBERT和RoFormer-Sim的关键之处，都是在于训练语料的构建。RoFormer-Sim的训练语料包括两部分：1、疑问类型相似句；2、通用类型相似句。对于疑问类相似句，我们还是像SimBERT一样，通过收集百度知道的相似问句，然后通过规则进一步清洗，这部分对我们来说已经很成熟了；对于通用类相似句，我们没有现成的地方可以搜集，于是我们提出了两种方案，一定程度上可以无监督地构建（伪）相似句对。</p><blockquote><p><strong>第一个方案</strong>是基于“同一个问题的答案是相似的”思想，假如我们有现成的问答语料，该语料对于同一个问题有多个答案，那么我们可以将每个答案分句，然后用一个现成的相似度函数来比较答案之间的相似度，挑出相似度超过某个阈值的句对作为相似句对使用；</p><p><strong>第二个方案</strong>则是基于“同一篇章的句子是相似的”思想，它更加简单直接一点，就是将每个篇章分句，然后用一个现成的相似度函数两两计算相似度，挑出相似度超过某个阈值的句对作为相似句对使用，显然该方案的合理性更弱，所以它的阈值也更高。</p></blockquote><p>这里涉及到一个“现成的相似度函数”，我们是直接使用Jaccard相似度的一个变体，换言之只需要一个规则的、字符级别的相似度就好了，语义上的关联，则通过篇章内部的关联以及预训练模型本身的泛化能力来获得。通过第一个方案，我们从几个阅读理解数据集中构建了约450万个（伪）相似句对；通过第二个方案，我们从30多G的平行预料中构建了约470万个（伪）相似句对；而爬取的问句则达到了约3000万个相似句组（一组可以构成多对）。从这个角度看来，问句的数目是远超于一般句式的，所以我们按照1:1的方式从中采样，使得每种句式的样本都均衡。</p><h2 id="生成">生成</h2><p>RoFormer-Sim的训练方式跟SimBERT基本一样，如下图所示。稍微不同的是，为了增强模型的生成能力，在构造训练语料的时候，我们还随机地将输入句子的部分token替换为<font color="blue">[MASK]</font>，这种预训练方法首先由<a href="https://papers.cool/arxiv/1910.13461" target="_blank">BART</a>提出。而我们跟BART的区别在于：BART是“输入带噪声的句子，输出原句子”，我们是“输入带噪声的句子，输出原句子的一个相似句”，理论上我们的任务还更难。</p><p></p><div class="pic-container"><div class="typecho-caption aligncenter" style="max-width: 580px"><div style="margin: 5px"><a href="/usr/uploads/2020/05/2840550561.png" target="_blank" title="点击查看原图"><img alt="SimBERT训练方式示意图" src="/usr/uploads/2020/05/2840550561.png" style="max-width: 100%"/></a></div><p class="typecho-caption-text">SimBERT训练方式示意图</p></div></div><p>生成效果没什么特别好的评测指标，我们直接目测一些例子就好：</p><pre class="line-numbers"><code class="language-python">gen_synonyms(u'广州和深圳哪个好？')
+[
+    '深圳和广州哪个好？',
+    '广州和深圳哪个好',
+    '广州和深圳哪个更好？',
+    '深圳和广州哪个更好？',
+    '深圳和广州，那个更好？',
+    '深圳和广州哪个好一些呢？',
+    '深圳好还是广州好？',
+    '广州和深圳哪个地方好点？',
+    '广州好还是深圳好？',
+    '广州和深圳哪个好一点',
+    '广州和深圳哪个发展好？',
+    '深圳好还是广州好',
+    '深圳和广州哪个城市更好些',
+    '深圳比广州好吗？',
+    '到底深圳和广州哪个好？为什么呢？',
+    '深圳究竟好还是广州好',
+    '一般是深圳好还是广州好',
+    '广州和深圳那个发展好点',
+    '好一点的深圳和广州那边好？',
+    '深圳比广州好在哪里？'
+]
+
+gen_synonyms(u'科学技术是第一生产力。')
+[
+    '科学技术是第一生产力！',
+    '科学技术是第一生产力',
+    '一、科学技术是第一生产力。',
+    '一是科学技术是第一生产力。',
+    '第一，科学技术是第一生产力。',
+    '第一生产力是科学技术。',
+    '因为科学技术是第一生产力。',
+    '科学技术是第一生产力知。',
+    '也即科学技术是第一生产力。',
+    '科学技术是第一生产力吗',
+    '科技是第一生产力。',
+    '因此，科学技术是第一生产力。',
+    '其次，科学技术是第一生产力。',
+    '科学技术才是第一生产力。',
+    '科学技术是第一生产力吗？',
+    '第二，科学技术是第一生产力。',
+    '所以说科学技术是第一生产力。',
+    '科学技术确实是第一生产力。',
+    '科学技术还是第一生产力',
+    '科学技术是第一生产力对吗？'
+]</code></pre><p>总的来说，初步实现了任意句式的相似扩增，但问句的扩增效果优于一般句型，这是因为训练语料中问句的质量就明显高于一般句型。由于进行了仿BART式训练，所以除了直接进行相似句生成外，我们还可以自行把某些部分mask掉，让模型自行发散扩充，比如：</p><pre class="line-numbers"><code class="language-python">gen_synonyms(u'科学技术是第一生产力。', mask_idxs=[6, 7])  # mask掉“第一”
+[
+    "科学技术是第一生产力",
+    "2、科学技术是第一生产力。",
+    "科学技术是第一生产力，也是第二生产力。",
+    "科学技术是第一生产力，科学发展是第二生产力。",
+    "9、科学技术是第一生产力。",
+    "第一，科学技术是一种生产力。",
+    "科学技术是生产力。",
+    "科学技术是第二生产力。",
+    "科学技术是第一生产力”现在提出来的。",
+    "一、科学技术是一种生产力。",
+    "科学技术是第一生产力是什么意思",
+    "科学技术是一种主要生产力。",
+    "一：科学技术是最高生产力。",
+    "指科学技术不是第一生产力。",
+    "科学技术是第二生产力，第一生产力又是第二生产力。",
+    "二、科学技术是一种生产力。",
+    "世界上第一种生产力是科学技术。",
+    "科学技术是社会主义生产力之一。",
+    "第二，科学技术也是第二生产力。",
+    "科技是一切生产力。"
+]</code></pre><p>更多玩法，请大家自行挖掘了。</p><h2 id="检索">检索</h2><p>增加一般句式的语料、引入仿BART式训练，这些改动都相对来说提升了生成模型的效果。然而，我们意外地发现，检索模型（即句子编码模型）的效果却降低了。估计的原因，可能是更多的语料、更大的噪声虽然加大了生成模型的难度，但对于对比学习来说，这些不同句式的或者带噪声的样本作为负样本，反而是难度降低了。比如，如果一个batch同时有疑问句和陈述句，那么模型可以简单地通过句式（而不是语义）就可以识别出不少负样本，从而降低了对语义的理解能力。</p><p>当然，SimBERT和RoFormer-Sim的本质定位都是相似句扩增模型，检索模型只是它的“副产品”，但我们仍然希望这个“副产品”能尽可能好一些。为此，我们在RoFormer-Sim训练完之后，进一步通过蒸馏的方式把SimBERT的检索效果转移到RoFormer-Sim上去，从而使得RoFormer-Sim的检索效果基本持平甚至优于SimBERT。蒸馏的方式很简单，假如对于同一批句子，SimBERT出来的句向量为$u_1, u_2, \cdots, u_n$，RoFormer-Sim出来的句向量为$v_1, v_2, \cdots,v_n$，那么就以<br/>
+\begin{equation}\mathcal{L}_{\text{sim}} = \frac{\lambda}{n^2}\sum_{i=1}^n\sum_{j=1}^n (\cos(u_i,u_j)-\cos(v_i,v_j))^2\end{equation}<br/>
+为loss进行学习，这里$\lambda=100$。当然，为了防止模型“遗忘”掉生成模型，蒸馏的同时还要加上生成损失，即$\mathcal{L}=\mathcal{L}_{\text{sim}}+\mathcal{L}_{\text{gen}}$。base版的蒸馏不需要很多步，大致5000步左右就可以训练完成了。</p><p>跟<a href="/archives/8321" target="_blank">《无监督语义相似度哪家强？我们做了个比较全面的评测》</a>一样，我们用同样的任务对比了SimBERT和RoFormer的检索效果（其中每一格的三个数据，分别代表“不加whitening”、“加whitening”、“加whitening-256”的效果，同之前的评测）：<br/>
+$$\small{\begin{array}{l|ccccc}<br/>
+\hline<br/>
+&amp; \text{ATEC} &amp; \text{BQ} &amp; \text{LCQMC} &amp; \text{PAWSX} &amp; \text{STS-B} \\<br/>
+\hline<br/>
+\text{V1}\text{-P1} &amp; 38.50 / \color{red}{23.64} / \color{red}{30.79}  &amp; 48.54 / \color{red}{31.78} / \color{red}{40.01}  &amp; 76.23 / \color{red}{75.05} / \color{red}{74.50}  &amp; 15.10 / \color{green}{18.49} / \color{green}{15.64}  &amp; 74.14 / \color{red}{73.37} / \color{green}{75.29}  \\<br/>
+\text{V1}\text{-P2} &amp; 38.93 / \color{red}{27.06} / \color{red}{30.79}  &amp; 49.93 / \color{red}{35.38} / \color{red}{40.14}  &amp; 75.56 / \color{red}{73.45} / \color{red}{74.39}  &amp; 14.52 / \color{green}{18.51} / \color{green}{15.74}  &amp; 73.18 / \color{green}{73.43} / \color{green}{75.12}  \\<br/>
+\text{V1}\text{-P3} &amp; 36.50 / \color{red}{31.32} / \color{red}{31.24}  &amp; 45.78 / \color{red}{29.17} / \color{red}{40.98}  &amp; 74.42 / \color{red}{73.79} / \color{red}{73.43}  &amp; 15.33 / \color{green}{18.39} / \color{green}{15.87}  &amp; 67.31 / \color{green}{70.70} / \color{green}{72.00}  \\<br/>
+\text{V1}\text{-P4} &amp; 33.53 / \color{red}{29.04} / \color{red}{28.78}  &amp; 45.28 / \color{red}{34.70} / \color{red}{39.00}  &amp; 73.20 / \color{red}{71.22} / \color{red}{72.09}  &amp; 14.16 / \color{green}{17.32} / \color{green}{14.39}  &amp; 66.98 / \color{green}{70.55} / \color{green}{71.43}  \\<br/>
+\hline<br/>
+\text{V2}\text{-P1} &amp; 39.52 / \color{red}{25.31} / \color{red}{31.10}  &amp; 50.26 / \color{red}{33.47} / \color{red}{40.16}  &amp; 76.02 / \color{red}{74.92} / \color{red}{74.58}  &amp; 14.37 / \color{green}{19.31} / \color{green}{14.81}  &amp; 74.46 / \color{red}{71.00} / \color{green}{76.29}  \\<br/>
+\text{V2}\text{-P2} &amp; 39.71 / \color{red}{32.60} / \color{red}{30.89}  &amp; 50.80 / \color{red}{37.62} / \color{red}{40.12}  &amp; 75.83 / \color{red}{73.45} / \color{red}{74.52}  &amp; 13.87 / \color{green}{19.50} / \color{green}{14.88}  &amp; 73.47 / \color{green}{74.56} / \color{green}{76.40}  \\<br/>
+\text{V2}\text{-P3} &amp; 39.55 / \color{red}{24.61} / \color{red}{31.82}  &amp; 50.25 / \color{red}{29.59} / \color{red}{41.43}  &amp; 74.90 / \color{red}{73.95} / \color{red}{74.06}  &amp; 14.57 / \color{green}{18.85} / \color{green}{15.26}  &amp; 68.89 / \color{green}{71.40} / \color{green}{73.36}  \\<br/>
+\text{V2}\text{-P4} &amp; 36.02 / \color{red}{29.71} / \color{red}{29.61}  &amp; 48.22 / \color{red}{35.02} / \color{red}{39.52}  &amp; 73.76 / \color{red}{71.19} / \color{red}{72.68}  &amp; 13.60 / \color{green}{16.67} / \color{green}{13.86}  &amp; 68.39 / \color{green}{71.04} / \color{green}{72.43}  \\<br/>
+\hline<br/>
+\end{array}}$$<br/>
+从表中可以看出，不管加不加whiteining，RoFormer-Sim在大部分任务上都超过了SimBERT，可见蒸馏之后的RoFormer-Sim的检索效果确实能获得提高，这个“副产品”也不至于太差了。</p><p>用同样的方法，我们也搞了个small版的RoFormer-Sim，这时候蒸馏用的是base版的RoFormer-Sim作为teacher模型，但蒸馏的步数需要比较多（50万左右），最终效果如下：<br/>
+$$\small{\begin{array}{l|ccccc}<br/>
+\hline<br/>
+&amp; \text{ATEC} &amp; \text{BQ} &amp; \text{LCQMC} &amp; \text{PAWSX} &amp; \text{STS-B} \\<br/>
+\hline<br/>
+\text{V1}_{\text{small}}\text{-P1} &amp; 30.68 / \color{red}{27.56} / \color{red}{29.07}  &amp; 43.41 / \color{red}{30.89} / \color{red}{39.78}  &amp; 74.73 / \color{red}{73.21} / \color{red}{73.50}  &amp; 15.89 / \color{green}{17.96} / \color{green}{16.75}  &amp; 70.54 / \color{green}{71.39} / \color{green}{72.14}  \\<br/>
+\text{V1}_{\text{small}}\text{-P2} &amp; 31.00 / \color{red}{29.14} / \color{red}{29.11}  &amp; 43.76 / \color{red}{36.86} / \color{red}{39.84}  &amp; 74.21 / \color{red}{73.14} / \color{red}{73.67}  &amp; 16.17 / \color{green}{18.12} / \color{green}{16.81}  &amp; 70.10 / \color{green}{71.40} / \color{green}{72.28}  \\<br/>
+\text{V1}_{\text{small}}\text{-P3} &amp; 30.03 / \color{red}{21.24} / \color{red}{29.30}  &amp; 43.72 / \color{red}{31.69} / \color{red}{40.81}  &amp; 72.12 / \color{red}{70.27} / \color{red}{70.52}  &amp; 16.93 / \color{green}{21.68} / \color{green}{18.75}  &amp; 66.55 / \color{red}{66.11} / \color{green}{69.19}  \\<br/>
+\text{V1}_{\text{small}}\text{-P4} &amp; 29.52 / \color{red}{28.41} / \color{red}{28.57}  &amp; 43.52 / \color{red}{36.56} / \color{red}{40.49}  &amp; 70.33 / \color{red}{68.75} / \color{red}{69.01}  &amp; 15.39 / \color{green}{21.57} / \color{green}{16.34}  &amp; 64.73 / \color{green}{68.12} / \color{green}{68.24}  \\<br/>
+\hline<br/>
+\text{V2}_{\text{small}}\text{-P1} &amp; 37.33 / \color{red}{23.59} / \color{red}{31.31}  &amp; 47.90 / \color{red}{29.21} / \color{red}{42.07}  &amp; 74.72 / \color{green}{74.94} / \color{red}{74.69}  &amp; 13.41 / \color{green}{15.30} / \color{green}{13.61}  &amp; 71.48 / \color{red}{69.01} / \color{green}{75.10}  \\<br/>
+\text{V2}_{\text{small}}\text{-P2} &amp; 37.42 / \color{red}{31.25} / \color{red}{31.18}  &amp; 49.15 / \color{red}{38.01} / \color{red}{41.98}  &amp; 75.21 / \color{red}{73.47} / \color{red}{74.78}  &amp; 13.38 / \color{green}{15.87} / \color{green}{13.69}  &amp; 72.06 / \color{green}{73.92} / \color{green}{75.69}  \\<br/>
+\text{V2}_{\text{small}}\text{-P3} &amp; 36.71 / \color{red}{30.33} / \color{red}{31.25}  &amp; 49.73 / \color{red}{31.03} / \color{red}{42.74}  &amp; 74.25 / \color{red}{72.72} / \color{red}{74.19}  &amp; 14.58 / \color{green}{18.68} / \color{red}{14.40}  &amp; 69.12 / \color{green}{71.07} / \color{green}{72.68}  \\<br/>
+\text{V2}_{\text{small}}\text{-P4} &amp; 32.80 / \color{red}{27.87} / \color{red}{29.65}  &amp; 46.80 / \color{red}{36.93} / \color{red}{41.31}  &amp; 72.30 / \color{red}{69.94} / \color{green}{72.38}  &amp; 13.45 / \color{green}{16.93} / \color{red}{13.38}  &amp; 67.21 / \color{green}{70.42} / \color{green}{71.39}  \\<br/>
+\hline<br/>
+\end{array}}$$</p><h2 id="总结">总结</h2><p>本文介绍和发布了我们SimBERT的升级版——RoFormer-Sim（SimBERTv2），它既可以用来扩充相似句子，也是语义相似度问题的一个较高的baseline。相比SimBERT，它最大的特点是将句型拓展到了一般类型，不再局限于相似问句。更多的玩法欢迎读者进一步挖掘和分享～</p>
+
+
+
+
+
+</div>

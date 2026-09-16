@@ -1,0 +1,17 @@
+{
+  "metadata": {
+    "id": "8796",
+    "title": "输入梯度惩罚与参数梯度惩罚的一个不等式",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/8796",
+    "date": "2021-12-11",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "fetched_at": "2026-09-14T13:02:43+00:00",
+  "source_snapshot_sha256": "f0d5e6cd6c5b9118c70c912544bed23ad431c656ef3d367cf9617902f001ff17",
+  "validators": {
+    "etag": null,
+    "last_modified": null
+  }
+}

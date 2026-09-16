@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "1840",
+    "title": "“末日”的快乐！",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/1840",
+    "date": "2012-12-23",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 0,
+    "display_formula_count": 0,
+    "image_count": 0,
+    "heading_count": 0,
+    "code_block_count": 0,
+    "source_text_sha256": "a19fa7cb60a9632847a6c0f276615cfd45c6a7561818cfe86beadf1f6f5b2133",
+    "output_text_sha256": "a19fa7cb60a9632847a6c0f276615cfd45c6a7561818cfe86beadf1f6f5b2133",
+    "latex_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "body_sha256": "814f7f5135a455be361f26fc2dfc4aa940ec18c6f736fa702f163bbccfe8078c",
+    "converter_version": 1,
+    "markdown_sha256": "a5999fe8a066a11056ecfdaf69f3c092897846395d69d9a0cb86f38aacc719c2"
+  },
+  "fetched_at": "2026-09-14T14:07:37+00:00",
+  "source_snapshot_sha256": "0e564914b6cadf5c53f7ede25913be91045d98451b3036705f9fe01171dc6511",
+  "images": {},
+  "local_only": true
+}

@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "1870",
+    "title": "诡异的Dirac函数",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/1870",
+    "date": "2013-01-14",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 24,
+    "display_formula_count": 10,
+    "image_count": 0,
+    "heading_count": 0,
+    "code_block_count": 0,
+    "source_text_sha256": "03d49b8986180d9079de6022a7b1187f4b5e5c65911e8d974643b1121deb62b1",
+    "output_text_sha256": "03d49b8986180d9079de6022a7b1187f4b5e5c65911e8d974643b1121deb62b1",
+    "latex_sha256": "a2724b7b6dff22ad314789bd04696137ab6554f9651c96dfba84b729a97cafba",
+    "body_sha256": "9d9ff4adffc3e6cc8ef4778b80c7f8e1a8d074513e5599f02dc84ca283269d8c",
+    "converter_version": 1,
+    "markdown_sha256": "b033e7a6f608d465c99f6f8392c89d5f0e600762fbbc38ace0562e7882df9c30"
+  },
+  "fetched_at": "2026-09-14T14:06:24+00:00",
+  "source_snapshot_sha256": "05453dacfd2d823c6bc9c3410702b2ef1f96e5864f0bbef6a3256a13a0a33189",
+  "images": {},
+  "local_only": true
+}

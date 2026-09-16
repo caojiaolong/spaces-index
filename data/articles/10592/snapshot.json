@@ -1,0 +1,17 @@
+{
+  "metadata": {
+    "id": "10592",
+    "title": "Muon优化器赏析：从向量到矩阵的本质跨越",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/10592",
+    "date": "2024-12-10",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "fetched_at": "2026-09-14T12:44:51+00:00",
+  "source_snapshot_sha256": "a5d9c7d89e5dc4088424626de9612923fee872614df1643201fcde1902321b67",
+  "validators": {
+    "etag": null,
+    "last_modified": null
+  }
+}

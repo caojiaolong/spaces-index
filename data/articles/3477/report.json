@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "3477",
+    "title": "把Python脚本放到手机上定时运行",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/3477",
+    "date": "2015-10-21",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 0,
+    "display_formula_count": 0,
+    "image_count": 2,
+    "heading_count": 3,
+    "code_block_count": 0,
+    "source_text_sha256": "a61cfeb23d58637c5ddec5a827aa7152c12c0d8666bf618ca3e6b7695139a24e",
+    "output_text_sha256": "a61cfeb23d58637c5ddec5a827aa7152c12c0d8666bf618ca3e6b7695139a24e",
+    "latex_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "body_sha256": "380dbaaebd681e64736f104f02d3a59e7d11758cc4026faec498c9bcddda599d",
+    "converter_version": 1,
+    "markdown_sha256": "5b3816bae1ccb0ff58e1f859e3c724dc5ff43d7c191b7ee7ca52ae79f471708c"
+  },
+  "fetched_at": "2026-09-14T13:44:28+00:00",
+  "source_snapshot_sha256": "81557a86105ce8f97f50c6aa31e837418dc201884dbfa94e3bacfd7cce1b1a81",
+  "images": {},
+  "local_only": true
+}

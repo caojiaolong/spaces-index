@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "1314",
+    "title": "备忘：椭圆坐标与复三角函数",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/1314",
+    "date": "2011-04-10",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 13,
+    "display_formula_count": 6,
+    "image_count": 1,
+    "heading_count": 0,
+    "code_block_count": 0,
+    "source_text_sha256": "c92b7ce6a02ee9372564d46015817b2e86fd677295f9bde776e8f74293e24f0d",
+    "output_text_sha256": "c92b7ce6a02ee9372564d46015817b2e86fd677295f9bde776e8f74293e24f0d",
+    "latex_sha256": "b72190766dfc09c508e490404d6e6ef3b0dac2ae3186c81e6ce6991df0bc3afb",
+    "body_sha256": "337a0626ec8528167b93193dd719a8c41f76233fee533ad9c3c990c2ac1dc59c",
+    "converter_version": 1,
+    "markdown_sha256": "13b930539cbc62637bb719e51a403db4bbab50150576b1fd94fcad17190a69e3"
+  },
+  "fetched_at": "2026-09-14T14:22:38+00:00",
+  "source_snapshot_sha256": "c37f81ce09e173cf38ab6b6594d6af84ae60dc9ec1027ad647fa5a53b862ee3a",
+  "images": {},
+  "local_only": true
+}

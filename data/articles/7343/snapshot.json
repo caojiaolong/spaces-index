@@ -1,0 +1,17 @@
+{
+  "metadata": {
+    "id": "7343",
+    "title": "EAE：自编码器 + BN + 最大熵  = 生成模型",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/7343",
+    "date": "2020-04-20",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "fetched_at": "2026-09-14T13:14:22+00:00",
+  "source_snapshot_sha256": "780795f788120f7b8386c017bf79d2e4ec11d172d9639d1e1c2f353c56ddd509",
+  "validators": {
+    "etag": null,
+    "last_modified": null
+  }
+}

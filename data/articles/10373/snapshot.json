@@ -1,0 +1,17 @@
+{
+  "metadata": {
+    "id": "10373",
+    "title": "Softmax后传：寻找Top-K的光滑近似",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/10373",
+    "date": "2024-09-19",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "fetched_at": "2026-09-14T12:46:34+00:00",
+  "source_snapshot_sha256": "fc0dffc5c4d4a28576aee08f343e991c1ed785b3c32cb5da12e3546de74d3e1a",
+  "validators": {
+    "etag": null,
+    "last_modified": null
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "3491",
+    "title": "新词发现的信息熵方法与实现",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/3491",
+    "date": "2015-10-26",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 0,
+    "display_formula_count": 0,
+    "image_count": 0,
+    "heading_count": 0,
+    "code_block_count": 1,
+    "source_text_sha256": "57ac19fa2a523e3fa8e70d36f75b7b1ed23ac788b5ab715058d6d99a44ae1c89",
+    "output_text_sha256": "57ac19fa2a523e3fa8e70d36f75b7b1ed23ac788b5ab715058d6d99a44ae1c89",
+    "latex_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "body_sha256": "4e681843016088e058e1e2faedc5abda229923a486d9e98941f5889e97f26b7f",
+    "converter_version": 1,
+    "markdown_sha256": "dc59aebfac2688ce4739a98c99734a87222a6d5b0eacb9deb707dfa4797d8bf4"
+  },
+  "fetched_at": "2026-09-14T13:44:21+00:00",
+  "source_snapshot_sha256": "57f33a5fb8a96744085f620f8ca5d6840a0eb94839fe4a89f405b8c0b060c946",
+  "images": {},
+  "local_only": true
+}

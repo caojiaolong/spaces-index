@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "3380",
+    "title": "用Pandas实现高效的Apriori算法",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/3380",
+    "date": "2015-07-02",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 6,
+    "display_formula_count": 0,
+    "image_count": 2,
+    "heading_count": 5,
+    "code_block_count": 1,
+    "source_text_sha256": "1ecb6b0cd78cb9d8eabcaa4805e13263a2a88399936f538b507f6fa06256b76a",
+    "output_text_sha256": "1ecb6b0cd78cb9d8eabcaa4805e13263a2a88399936f538b507f6fa06256b76a",
+    "latex_sha256": "ca2c2466464ba4821da5e76e03d3caa2780bad22ae40378d0b52e3aa9d80a98d",
+    "body_sha256": "43de1f171978fd6f5663f8e77b12cec8bd15155ae31b29ee7f74ba5b5f3f7a68",
+    "converter_version": 1,
+    "markdown_sha256": "136414d8e576867770eff5266cdfcbfa750ff46b1939dfe34abc6f6fe649eb49"
+  },
+  "fetched_at": "2026-09-14T13:45:38+00:00",
+  "source_snapshot_sha256": "dd5891970b2b78a3056b181fba6764f280182ab444badd3598240fe4fcd1b3b5",
+  "images": {},
+  "local_only": true
+}

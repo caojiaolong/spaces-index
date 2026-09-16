@@ -1,0 +1,39 @@
+{
+  "metadata": {
+    "id": "3511",
+    "title": "ARXIV数学论文分布：偏微分方程最热门！",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/3511",
+    "date": "2015-11-13",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "source_dom_exact": true,
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "attributes_exact": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 1,
+    "display_formula_count": 1,
+    "image_count": 5,
+    "heading_count": 3,
+    "code_block_count": 0,
+    "source_text_sha256": "458fa997adf1a46dde9e2eb30889ab953f65470a4733f756ed59b4bb2bd3a56d",
+    "output_text_sha256": "458fa997adf1a46dde9e2eb30889ab953f65470a4733f756ed59b4bb2bd3a56d",
+    "latex_sha256": "9afde403c8f3c713900e2d093ddda15b2f441b199b7688f21aae8fd486370f0a",
+    "body_sha256": "d70e2b119e7c50dc8ca0f6dfcb5a062500e2ef89e9cedad3535e8cce9957d167",
+    "converter_version": 1,
+    "format": "html-v1",
+    "source_warnings": [],
+    "fallback_reason": "Unsupported body element: table",
+    "markdown_sha256": "5291ae9a756ae68e2fbebd5eaadf3e2629d0fcfdb18959c47d0aa03158e5a07b"
+  },
+  "fetched_at": "2026-09-14T13:44:06+00:00",
+  "source_snapshot_sha256": "7d59ca7a30eae7c2cf72701347948728628c625fdb9cd58c81354f19e5e842cd",
+  "images": {},
+  "local_only": true
+}

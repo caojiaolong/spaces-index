@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "9526",
+    "title": "缓解交叉熵过度自信的一个简明方案",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/9526",
+    "date": "2023-03-14",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 39,
+    "display_formula_count": 8,
+    "image_count": 0,
+    "heading_count": 4,
+    "code_block_count": 0,
+    "source_text_sha256": "933e3fa65319cf586c628e6692b928a75ed0c108a5a3497616797742afbadecc",
+    "output_text_sha256": "933e3fa65319cf586c628e6692b928a75ed0c108a5a3497616797742afbadecc",
+    "latex_sha256": "f055f6854c8ad131187858a15aeb52490eb875ee1d0c7fee6819a3d43a7cd053",
+    "body_sha256": "2c212a80f2f2f31d60ecf9ab2aa8f1dd91e3bf6268ee7868d8a3c6e5a8f03548",
+    "converter_version": 1,
+    "markdown_sha256": "558241517759986c39307044d9b99265f8c31d6722124e0fd1fa053816287cc7"
+  },
+  "fetched_at": "2026-09-14T12:55:11+00:00",
+  "source_snapshot_sha256": "b309255b29ca1360165ced5587b30d7ef5e94f50bdffb15be1c7dc3b51498ec9",
+  "images": {},
+  "local_only": true
+}

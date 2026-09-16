@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "7302",
+    "title": "AdaFactor优化器浅析（附开源实现）",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/7302",
+    "date": "2020-03-23",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 130,
+    "display_formula_count": 18,
+    "image_count": 0,
+    "heading_count": 15,
+    "code_block_count": 0,
+    "source_text_sha256": "120ea2e2eec996faed06376a8b8c1cfce22306dc15d267cc2092d35a15abd72d",
+    "output_text_sha256": "120ea2e2eec996faed06376a8b8c1cfce22306dc15d267cc2092d35a15abd72d",
+    "latex_sha256": "d0cca56a2c34a165bf288d584ff3409c139740471f4f059a9298b35c168d06e7",
+    "body_sha256": "b18942f32e51136a05eee3da041cffdfceded6bcc013a4ea1f9adebf9267e311",
+    "converter_version": 1,
+    "markdown_sha256": "21c02a0bbd030fa7632666118b97e431f5f28d1ae527aed58dc362210f1b0037"
+  },
+  "fetched_at": "2026-09-14T13:14:47+00:00",
+  "source_snapshot_sha256": "9256d2a6cc78240ce007b962f8ccb42df85146a3824dcac29e3ba6e31f526f03",
+  "images": {},
+  "local_only": true
+}

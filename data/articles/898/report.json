@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "898",
+    "title": "与向量的渊源极深的四元数",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/898",
+    "date": "2010-08-27",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 26,
+    "display_formula_count": 0,
+    "image_count": 2,
+    "heading_count": 0,
+    "code_block_count": 0,
+    "source_text_sha256": "8ce6e2d9b7e0cf3cad8a203cc71474a39ba11e7f6960d72d632989809f910ce6",
+    "output_text_sha256": "8ce6e2d9b7e0cf3cad8a203cc71474a39ba11e7f6960d72d632989809f910ce6",
+    "latex_sha256": "7acb6662d9c5f388b75b9a1594e9aeb47be0e51279dc8bd65758237072cfc345",
+    "body_sha256": "edcdba2d08f1c55ae804f0bdc2d6527c23c9f397959fb2df02c370807062d79d",
+    "converter_version": 1,
+    "markdown_sha256": "0341a2be0607a925dcf322117a51821ad1b672988e8068ab7f038cce2b6e8806"
+  },
+  "fetched_at": "2026-09-14T14:31:10+00:00",
+  "source_snapshot_sha256": "20265a421d9bb17b99e3928a26e5759056ddf3d29bcac71360f5db86e417e3ac",
+  "images": {},
+  "local_only": true
+}

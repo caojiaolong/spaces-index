@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "8791",
+    "title": "变分自编码器（八）：估计样本概率密度",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/8791",
+    "date": "2021-12-09",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 51,
+    "display_formula_count": 6,
+    "image_count": 0,
+    "heading_count": 5,
+    "code_block_count": 0,
+    "source_text_sha256": "54ac90a9b31bc3adf8ba5a7e959cfd74f0f811377d33a25cb3aa1ae434e119e8",
+    "output_text_sha256": "54ac90a9b31bc3adf8ba5a7e959cfd74f0f811377d33a25cb3aa1ae434e119e8",
+    "latex_sha256": "d2538189422b3fd59ed6af5caf5fa8ffacc73dfdca554bf8e68c8523d9013864",
+    "body_sha256": "bd4ce45ff4da2cadcfe1c912148645421533ee5cd05b9f823db137c1a4d6fc6b",
+    "converter_version": 1,
+    "markdown_sha256": "16c0f38869d3cafebb3da5a27d324c1b10b017880a9dcc45a42febf8d11eb612"
+  },
+  "fetched_at": "2026-09-14T13:02:49+00:00",
+  "source_snapshot_sha256": "9de4cb1005f8a94cbac62a74e0d873fd5603be6c6868302748074fb296abd956",
+  "images": {},
+  "local_only": true
+}

@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "826",
+    "title": "旋转的弹簧将如何伸长(2)？",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/826",
+    "date": "2010-08-07",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 28,
+    "display_formula_count": 9,
+    "image_count": 1,
+    "heading_count": 0,
+    "code_block_count": 0,
+    "source_text_sha256": "721c455939d27df6b1c50c8e9bab105129eda9b5201f04e64fbb2f284f263e0a",
+    "output_text_sha256": "721c455939d27df6b1c50c8e9bab105129eda9b5201f04e64fbb2f284f263e0a",
+    "latex_sha256": "c15899be00e087ad7b084777442b434ac2b91e01de3f1dcd98e5bad91a6ed814",
+    "body_sha256": "6950d1b2f7596a7e5f89008b7b0cf50f80612cb726e6ef986aaf0f31656300de",
+    "converter_version": 1,
+    "markdown_sha256": "2ed3e536dc1b77bd5932af4dc7ee3fe4140d5b02e0dca5f89ff14a2b99432d22"
+  },
+  "fetched_at": "2026-09-14T14:32:47+00:00",
+  "source_snapshot_sha256": "607bdc9f843f583dfa78560612de6f26391fed5086efd3b40ff767fe7b774a61",
+  "images": {},
+  "local_only": true
+}

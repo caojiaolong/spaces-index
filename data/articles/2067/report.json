@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "2067",
+    "title": "一个人的数学建模：碎纸复原",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/2067",
+    "date": "2013-09-22",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 0,
+    "display_formula_count": 0,
+    "image_count": 1,
+    "heading_count": 0,
+    "code_block_count": 0,
+    "source_text_sha256": "b233c782415ffb59090e13d80ca7d5c2cde693965fa7957923d22990cff7866a",
+    "output_text_sha256": "b233c782415ffb59090e13d80ca7d5c2cde693965fa7957923d22990cff7866a",
+    "latex_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "body_sha256": "d081808bf17484a00058bf468eadf4ed7d7c3a3f98dba95f6056a6cf7d5dc45e",
+    "converter_version": 1,
+    "markdown_sha256": "2de22d5d69166e92e2543759a0b357644cde6877a46202603d830cad0d11cf75"
+  },
+  "fetched_at": "2026-09-14T14:00:04+00:00",
+  "source_snapshot_sha256": "dbc9760cc2417bc276f7ced81958254b7d90cd0a199a78a46f2808d852e7cb6b",
+  "images": {},
+  "local_only": true
+}

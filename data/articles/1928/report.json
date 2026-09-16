@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "1928",
+    "title": "我害怕",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/1928",
+    "date": "2013-03-04",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 0,
+    "display_formula_count": 0,
+    "image_count": 1,
+    "heading_count": 0,
+    "code_block_count": 0,
+    "source_text_sha256": "10828fdd6e98b4e98492058cf023471dcc3374323b17386792fe165e73356c06",
+    "output_text_sha256": "10828fdd6e98b4e98492058cf023471dcc3374323b17386792fe165e73356c06",
+    "latex_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "body_sha256": "e0fed0a3ddd0d22936f10629cbd313ddee0883a117018b926ce520e74bc1a7f9",
+    "converter_version": 1,
+    "markdown_sha256": "58ee4cb61e7ebeb6aadfadf6b67885e79b98f694684817d6bcdde861dfa7968a"
+  },
+  "fetched_at": "2026-09-14T14:04:26+00:00",
+  "source_snapshot_sha256": "3cdd881ae4b15895aeba3a4c2e8b3372fb024231eaba92fa190c03b5535f3af6",
+  "images": {},
+  "local_only": true
+}

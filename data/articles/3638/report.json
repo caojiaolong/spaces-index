@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "3638",
+    "title": "熵的形象来源与熵的妙用",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/3638",
+    "date": "2016-02-20",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 26,
+    "display_formula_count": 2,
+    "image_count": 0,
+    "heading_count": 4,
+    "code_block_count": 0,
+    "source_text_sha256": "8583c0ab06f6c149ebb1784bbafbe43d5aa2784959a7cf1192d79ef1864c8a39",
+    "output_text_sha256": "8583c0ab06f6c149ebb1784bbafbe43d5aa2784959a7cf1192d79ef1864c8a39",
+    "latex_sha256": "5193133858a7e047e3f04a4123b73bbc94c1e079bb33c9aa5af14e182f3faf22",
+    "body_sha256": "bac67c216af579b6846cfd813d7a8d832e58ad7e61d850968d3f57d00a56e61b",
+    "converter_version": 1,
+    "markdown_sha256": "e137960d89e14d63798e4637f17a7259a1099a4f04baaa74cd689db707cd26ee"
+  },
+  "fetched_at": "2026-09-14T13:42:26+00:00",
+  "source_snapshot_sha256": "b93f307f952c3f29212cbffeda8c4c8a9450f32eddd2056b7a3e93d4cc116b8d",
+  "images": {},
+  "local_only": true
+}

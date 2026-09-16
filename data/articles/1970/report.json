@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "1970",
+    "title": "第四波：2^29360741-1不是素数！",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/1970",
+    "date": "2013-04-15",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 1,
+    "display_formula_count": 0,
+    "image_count": 0,
+    "heading_count": 0,
+    "code_block_count": 0,
+    "source_text_sha256": "b7944c8ff4c5b8000862fefe6a6a47fe3a18bbc7e8560f7f28374c445ffc6845",
+    "output_text_sha256": "b7944c8ff4c5b8000862fefe6a6a47fe3a18bbc7e8560f7f28374c445ffc6845",
+    "latex_sha256": "3dbc036139aef66d156fba15152033dc5ccb9ba17c8ac3af5d3e34b31a313b4a",
+    "body_sha256": "7e9bc611cb535d95615fc12c8489ae3474bc752d11ff87e40cdd5fb6ee6067d9",
+    "converter_version": 1,
+    "markdown_sha256": "cc8cdaeb0d5cc90d08b2d58b746dda1321f08684e7de7ed4b28c65eabfa9b32b"
+  },
+  "fetched_at": "2026-09-14T14:03:02+00:00",
+  "source_snapshot_sha256": "6c4781ae5c72c02b733d04fec1bc2105db75f0444f65f44aea2ca9a3c132541e",
+  "images": {},
+  "local_only": true
+}

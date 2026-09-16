@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "7695",
+    "title": " 最小熵原理（六）：词向量的维度应该怎么选择？",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/7695",
+    "date": "2020-08-20",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 83,
+    "display_formula_count": 16,
+    "image_count": 0,
+    "heading_count": 8,
+    "code_block_count": 0,
+    "source_text_sha256": "39ad94b23e78d94d84c72cb783467f525b6ab5749698990f34e9688d83e1cc04",
+    "output_text_sha256": "39ad94b23e78d94d84c72cb783467f525b6ab5749698990f34e9688d83e1cc04",
+    "latex_sha256": "96fb63dd722d5bd0adb4126b7c8131c2e3a79de577c4edd20a89c0f0f474592b",
+    "body_sha256": "557676acfb25579ecc734742a910c02f5648f62d7c9e1d99148ed62100870113",
+    "converter_version": 1,
+    "markdown_sha256": "c512e044b7750d194fdf7cfa11f1e84bfbc5647f4409ab0eebf50cffe2ab42ba"
+  },
+  "fetched_at": "2026-09-14T13:11:48+00:00",
+  "source_snapshot_sha256": "64d9f812557b25f6d33661c7309dda93465a8e1e156140726711dc75259776d1",
+  "images": {},
+  "local_only": true
+}

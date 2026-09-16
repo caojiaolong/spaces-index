@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "9547",
+    "title": "《为什么现在的LLM都是Decoder-only的架构？》FAQ",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/9547",
+    "date": "2023-03-20",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 5,
+    "display_formula_count": 0,
+    "image_count": 0,
+    "heading_count": 3,
+    "code_block_count": 0,
+    "source_text_sha256": "87365fe3e3b413d678c3d350f80e71fb347d0e006b8f9237e7bc27c710e8c38c",
+    "output_text_sha256": "87365fe3e3b413d678c3d350f80e71fb347d0e006b8f9237e7bc27c710e8c38c",
+    "latex_sha256": "b2ddc1dc961c52f81885a05e4af688b58cb615eaae7e08f589f9823e567e7500",
+    "body_sha256": "5b350a12b0051ff2967020d0f59dd82879c90410e4be0ca0b4abb1e334e33ed4",
+    "converter_version": 1,
+    "markdown_sha256": "bb037ee6bc70fe398e1065757d65396d79b7608e05fa7fda9b052803fc8c656d"
+  },
+  "fetched_at": "2026-09-14T12:54:58+00:00",
+  "source_snapshot_sha256": "42dc26b8ae59aef4a56e9926e40e1b745c73d6f885a3ac903ed762ddd282f535",
+  "images": {},
+  "local_only": true
+}

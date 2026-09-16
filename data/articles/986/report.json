@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "986",
+    "title": "以自然数幂为系数的幂级数",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/986",
+    "date": "2010-10-16",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 15,
+    "display_formula_count": 3,
+    "image_count": 0,
+    "heading_count": 0,
+    "code_block_count": 0,
+    "source_text_sha256": "99a23ad6a2c9dadfe62b8c5c3f54773a195f56f1de7eef9874f8f9899075acd4",
+    "output_text_sha256": "99a23ad6a2c9dadfe62b8c5c3f54773a195f56f1de7eef9874f8f9899075acd4",
+    "latex_sha256": "52e9482f9e8a9b6ceec80cfa91b91388e9c420081de5504de7a954d5e35ba6b0",
+    "body_sha256": "e8f0f94f230eb443e1b2871c340f5e9ecda133677614d85272b1fbf645b9813a",
+    "converter_version": 1,
+    "markdown_sha256": "ff3ac6c059259c5244ecfca78e11fc5b86c3ff7e840e98e8a60af567731e04f1"
+  },
+  "fetched_at": "2026-09-14T14:28:42+00:00",
+  "source_snapshot_sha256": "aaffb53d966bdc491dc1df8a87ffba63ac1ec5fba4a0b223d819208904e20b61",
+  "images": {},
+  "local_only": true
+}

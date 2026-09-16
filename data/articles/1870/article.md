@@ -1,0 +1,57 @@
+# 诡异的Dirac函数
+
+> 作者：苏剑林 · 科学空间 · 2013-01-14
+>
+> 原文：<https://spaces.ac.cn/archives/1870>
+>
+> 原文许可：[CC BY-NC-ND 2.5 CN（署名-非商业性使用-禁止演绎）](https://creativecommons.org/licenses/by-nc-nd/2.5/cn/)。
+>
+> 本文件由 spaces-index 非官方、非商业项目进行必要的 HTML → Markdown 格式转换；正文未做摘要、润色、翻译或重组。项目不代表作者，也不表示作者为项目背书。
+>
+> 署名及附加许可说明不代表已获得作者额外授权。第三方素材权利依其原有声明。
+>
+> 原站转载与引用说明：[科学空间 FAQ](https://spaces.ac.cn/archives/6508#%E6%96%87%E7%AB%A0%E5%A6%82%E4%BD%95%E8%BD%AC%E8%BD%BD/%E5%BC%95%E7%94%A8)
+
+---
+
+量子力学中有一个很诡异的函数——Dirac函数，它似乎在物理的不少领域都有很大作用，它也具有明显的物理意义，但认真地看它却又感觉它根本就不是函数！这个“似而非是”的东西究竟是什么呢？让我们从一个物理问题引入：
+
+设想一条质量为1，长度为$2l$的均匀直线，很显然直线的密度为$\rho=\frac{1}{2l}$；将直线的中点放置于坐标轴的原点，我们就有
+$$\rho(x)=\left\{ \begin{array}{c}\frac{1}{2l} (-l \leq x \leq l)\\0 (x < -l , x > l)\end{array}\right.$$
+
+所以有
+$$\int_{-\infty}^{+\infty} \rho(x)dx=1$$
+
+这个式子对于任意的$l$都是成立的，让我们考虑$l \to 0$的情况，我们记这时的函数为$\delta(x)$，即
+$$\delta(x)=\left\{ \begin{array}{c} \infty (x = 0) \\ 0 (x \neq 0) \end{array}\right.$$
+
+当然，最重要的是它保持了：
+$$\int_{-\infty}^{+\infty} \delta(x)dx=1$$
+
+这个诡异的$\delta(x)$函数由Dirac首先提出，我们就称之为Dirac函数。
+
+Dirac函数的诡异之处在于它的各种与一般函数截然不同的性质，它拓展了我们对一般函数的观点。当然，由于在数学上它已经违反了一般函数的定义，所以严格来讲，它并不是函数，而是一种广义函数或者泛函。<strong>但是，这对于物理学家来说是无关紧要的，物理学家并不需要数学的高度严密性，他们可以为了物理研究而随意地“玩弄”数学，而且数学中有不少概念正是由于物理学家对数学的“玩弄”才诞生出来的。</strong>源于Dirac函数的广义函数便是其中一例。
+
+Dirac函数独立的时候并没有明显的作用，但是当它作用于其它函数时，其作用就体现出来了。其最重要的一点就是：
+$$\int_{-\infty}^{+\infty} f(x)\delta(x)dx=f(0)$$
+
+事实上，只要积分区间中包含x=0这个点，它的积分就是$f(0)$。也就是说，Dirac函数用积分从$f(x)$中提取出$f(0)$这个值。另外，不难证明$\delta(x)$还有以下性质：
+$$\begin{eqnarray*} \delta(x)=\delta(-x) \\ x\delta(x-x_0)=x_0 \delta(x-x_0)\end{eqnarray*} $$
+
+由于$\delta(x)$还没有显式表达式，所以早期在研究的时候我们会用正常函数的极限来表示它：
+$$\begin{eqnarray*} \delta(x)=\lim_{a\to \infty} \sqrt{\frac{a}{\pi}}e^{-ax^2} \\ \delta(x)=\frac{1}{\pi} \lim_{a \to 0}\frac{a}{x^2+a^2}\end{eqnarray*} $$
+
+要是这些还可以理解的话，我们Dirac函数最诡异的表达式莫过于：
+$$\delta(x)=\frac{1}{2\pi} \int_{-\infty}^{\infty} e^{i\omega x}d\omega$$
+
+虽然它在x=0处明显为无穷大，但是按照传统观点，它在其它点的极限值根本就不存在！！可是它的的确确是对的，这是根据傅里叶变换得出的结果。这恰好是<strong><u>在数学物理方程中Dirac函数出现时的最主要的形式</u></strong>！
+
+我们还可以定义$\delta(x)$的导数，你也许会想到对它的极限表达式求导，但是这样并不能得出我们想要的结果。既然Dirac函数的作用体现在它作用于具体函数时，那么我们也把其导数作用于具体函数：
+$$\begin{eqnarray*} \int_{-\infty}^{+\infty} f(x)\delta'(x)dx=\int_{-\infty}^{+\infty} f(x)d\delta(x) \\ =[f(x)\delta(x)]|_{-\infty}^{+\infty}-\int_{-\infty}^{+\infty} f'(x)\delta(x)dx \\ =-f'(0)\end{eqnarray*} $$
+
+其中利用了分部积分法，同理可证：$\int_{-\infty}^{+\infty} f(x)\delta^{(n)}(x)dx=(-1)^n f^{(n)}(0)$
+
+类似地，我们还可以定义二维、三维的Dirac函数，n维狄拉克函数记为$\delta(\vec{r})$。定义为
+$$\delta (\vec{r})=\left\{\begin{array}{c}\infty (\vec{r} =\vec{0})\\0 (\vec{r}\neq \vec{0})\end{array}\right.,\int_{-\infty}^{+\infty} \delta(\vec{r}) d\vec{r}=1$$
+
+Dirac函数源于量子力学，用得最多的应该也是量子力学。但它现在已经发展开来，成为解决线性偏微分方程的重要工具，这主要体现在数学物理方程中的<strong>格林函数法</strong>（Green函数）。

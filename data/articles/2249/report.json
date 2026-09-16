@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "2249",
+    "title": "2013年全年天象",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/2249",
+    "date": "2013-01-06",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 0,
+    "display_formula_count": 0,
+    "image_count": 0,
+    "heading_count": 0,
+    "code_block_count": 0,
+    "source_text_sha256": "2c984e2d17530de43fe331ab282720951f59bce6aece71b0443d2c35d2e7232e",
+    "output_text_sha256": "2c984e2d17530de43fe331ab282720951f59bce6aece71b0443d2c35d2e7232e",
+    "latex_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "body_sha256": "e328cc74166495c8a9e2fcceac32ceb5ca8d9c46860bcf5c0888e6f8fc94a0ec",
+    "converter_version": 1,
+    "markdown_sha256": "22513941b60ef7351df32768f495fbab7ef6d9323fb4d7f8bb165d0e500735c5"
+  },
+  "fetched_at": "2026-09-14T14:06:37+00:00",
+  "source_snapshot_sha256": "449396f70415467f7e832b6167104a4c4a78839f155fe7a340bf30e5fffc476f",
+  "images": {},
+  "local_only": true
+}

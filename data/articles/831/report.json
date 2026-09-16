@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "831",
+    "title": "三次方程的三角函数解法",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/831",
+    "date": "2010-08-08",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 50,
+    "display_formula_count": 12,
+    "image_count": 2,
+    "heading_count": 6,
+    "code_block_count": 0,
+    "source_text_sha256": "36d92f5aeebf4d8f7f620b4090c373928f28b150cdbc7532f4cd411622e1a995",
+    "output_text_sha256": "36d92f5aeebf4d8f7f620b4090c373928f28b150cdbc7532f4cd411622e1a995",
+    "latex_sha256": "177566c96739d43a7ac4dfdf9958ed901d51085186440e208bf6d4fbe0a942b5",
+    "body_sha256": "07332c9872894ddcc98df209fb3e24c2d76cdb48308af92aef2dccb4587a8587",
+    "converter_version": 1,
+    "markdown_sha256": "d8fc1ad5b61480a01c8f06b474ca7b0419e516181c3510f96c97484b56054f73"
+  },
+  "fetched_at": "2026-09-14T14:32:40+00:00",
+  "source_snapshot_sha256": "c6c00b1dc12c9785db76cbc46ec147f2c9ecb90386ddfddec22d19061a0c59cc",
+  "images": {},
+  "local_only": true
+}

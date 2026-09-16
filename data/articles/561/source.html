@@ -1,0 +1,36 @@
+<div class="PostContent" id="PostContent">
+<p></p><div class="pic-container"><div class="typecho-caption aligncenter" style="max-width: 100%"><div style="margin: 5px"><a href="/attachment/565/" title="二体运动.gif"><img alt="二体运动" src="/usr/uploads/2010/03/3841090941.gif" style="max-width:100%"/></a></div><p class="typecho-caption-text">二体运动</p></div></div><p>在<strong><a href="/archives/549/">上一回的讨论</a></strong>中，我们已经解决了大部分的问题，并且表达了找到r或者$\theta$关于时间t的函数的希望。在最后的内容中，我们做了以下工作：</p><blockquote>由(7)得到$\dot{\theta}=h/r^2$，代入(6)得到：<br/>
+$$\ddot{r} -h^2/r^3=-\frac{\mu}{r^2}\tag{10}$$这是一个二阶微分方程，它的解很容易找出，但是这个积分太复杂：<br/>
+$$\dot{r}\frac{d\dot{r}}{dr}=h^2/r^3-\frac{\mu}{r^2}$$<br/>
+$\dot{r}d\dot{r}=(h^2/r^3-\frac{\mu}{r^2})dr$，两端积分<br/>
+$$\dot{r}^2={2\mu}/r-h^2/r^2+K_1\tag{11}$$$$\Rightarrow {dt}/{dr}=\frac{r}{\sqrt{K_1 r^2+2\mu r-h^2}}$$<br/>
+$t=\int \frac{r}{\sqrt{K_1 r^2+2\mu r-h^2}}dr$</blockquote><p></p><p>最后一个积分并不难，可以查积分表算出，但是形式极其复杂，而且是t关于r的函数，代入t求r不方便，不适合我们用。但是(11)仍然是一个重要的积分，我们首先来尝试求出$K_1$。把一组实际数据代入，就可以求出$K_1$。取$r=a(1-e)$（即近日点），则$(\theta-\omega)=0$，而<br/>
+$$\dot{r}=\frac{dr}{d\theta}\cdot \frac{d\theta}{dt}$$<br/>
+根据上一回的公式(9)，我们可以得到：<br/>
+$$\frac{dr}{d\theta}=\frac{h^2//u}{[1+ecos(\theta-\omega)]^2}\cdot e \sin(\theta-\omega)$$<br/>
+由于取$(\theta-\omega)=0$，于是$\frac{dr}{d\theta}=0 \Rightarrow \dot{r}=0$，以这个结果代入(11)，并将$h^2$换成$\mu a(1-e^2)$，化简后得到：<br/>
+$$K_1=-\frac{\mu}{a}$$<br/>
+于是(11)式变为：$$\dot{r}^2={2\mu}/r-{\mu a(1-e^2)}/r^2-\frac{\mu}{a}\tag{12}$$<br/>
+<font color="red">在导出开普勒方程之前，我们先来做一些准备工作。其中包括导出<strong>“开普勒第三定律”以及“线速度”</strong>的公式。</font></p><p>如果行星的轨道为<u><strong>椭圆</strong></u>，根据之前的关于开普勒第一、第二定律的推导，我们得到<font color="red"><u>h实质是面积速度的两倍</u></font>，在一个周期T之内，扫过了一个椭圆面积$S=\pi ab=\pi a^2\sqrt{1-e^2}$，于是h可以表示成：<br/>
+$$h=\frac{2\pi a^2\sqrt{1-e^2}}{T}$$<br/>
+结合$h^2=\mu a(1-e^2)$，可以得到<br/>
+$$\frac{a^3}{T^2}=\frac{\mu}{4\pi^2}=\frac{G(M+m)}{4\pi^2}\tag{13}$$<br/>
+这就是<strong>开普勒第三定律</strong>。其中太阳质量M是一定的，但是对于太阳系内的各个行星的质量m是不一定的，所以严格来讲开普勒第三定理并不成立。但是由于由于m相对于M很少，在很大程度上可以忽略这个微小的差别，所以我们开普勒第三定律仍然被我们广泛使用！</p><p>现在我们来推出“线速度”公式。根据勾股定理，我们有<br/>
+$$x^2+y^2=r^2$$<br/>
+两边连续微分对时间t微分两次，得到<br/>
+$$\dot{x}^2+\dot{y}^2+x\ddot{x}+y\ddot{y}=\dot{r}^2+r\ddot{r}$$<br/>
+其中$\dot{x}^2+\dot{y}^2$即为速度的平方$v^2$，而根据二体问题的微分方程组，有<br/>
+$x\ddot{x}+y\ddot{y}=-(\frac{\mu x}{r^3}x+\frac{\mu y}{r^3}y)=-{\mu}/r$，和(12)式的结果同时代入上式，得到：<br/>
+$$v^2=\mu(2/r-1/a)\tag{14}$$这就是线速度的公式，被称为“<strong>活力积分</strong>”或者“<strong>活力公式</strong>”，它是<font color="red">能量(机械能)守恒定律</font>的体现，<u>表明星体的动能与势能之和恒定</u>。在天文奥赛中，能够熟练应用这一公式，可能给我们带来很大的方便。</p><p>现在来到我们的重点了，我们要推导出被称为“开普勒方程”的东西。其实也不难，根据(12)，我们可以得到：<br/>
+$$\sqrt{\frac{\mu}{a^3}}dt=\frac{rdr}{a\sqrt{a^2 e^2-(a-r)^2}}$$<br/>
+熟悉微积分的朋友，应该立马会想到，对于这种“根号里面含有平方和或差”的积分，一般用三角函数进行换元。我们令$a-r=ae cosE$，则可以化简成：<br/>
+$$\sqrt{\frac{\mu}{a^3}}dt=(1-e \cos E)dE$$<br/>
+两边积分便得：$\sqrt{\frac{\mu}{a^3}}t=E-e sinE+K_2$<br/>
+是不是有一种兴奋的感觉了？是的，开普勒方程的“雏形”已经出现了。按照刚才的思路，将近日点的数据代入上式以求出$K_2$。当$r=a(1-e)$时，$t=0 \Rightarrow E=0$，于是求得$K_2=0$。</p><p>另外，根据(13)，我们可以将$\sqrt{\frac{\mu}{a^3}}$变成${2\pi}/T$，并令$M={2\pi}/T t$称为<strong>“平近点角”</strong>，于是<font color="red"><strong>开普勒方程</strong></font>出来了：<br/>
+$$E=M+e \sin E\tag{15}$$天体力学中把E叫做<strong>“偏近点角”</strong>，$f=(\theta-\omega)$叫做<strong>“真近点角”</strong>。</p><p>在原来的天体力学教程中，还推导出了一条这样的公式：$tg \frac{f}{2}=\sqrt{\frac{1+e}{1-e}}tg \frac{E}{2}$。不过就我看来，这条公式毫无必要。我们大可以求出E，然后求出r，继而根据(9)求出f.</p><p><font color="red">工作是不是完成了？还没有，这条公式只能够用于椭圆，别忘了在抛物线中$e=1,a-&gt;\infty$，这样开普勒方程就不能用了。在双曲线中a的取值为负数，那么开普勒第三定律也不适用了，所以又有其他形式。另外，关于开普勒方程的求解等等之类的问题，BoJone也有了自己的一点新的结果。不过这些，得下回分解了</font>（写越懒了）</p>
+
+
+
+
+
+</div>

@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "3154",
+    "title": "鬼斧神工：求n维球的体积",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/3154",
+    "date": "2014-12-23",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 51,
+    "display_formula_count": 19,
+    "image_count": 0,
+    "heading_count": 3,
+    "code_block_count": 0,
+    "source_text_sha256": "ab5b42512792c12f89df18382f2fcff32a3ced8c6cd5814b2b401df2d2a5554c",
+    "output_text_sha256": "ab5b42512792c12f89df18382f2fcff32a3ced8c6cd5814b2b401df2d2a5554c",
+    "latex_sha256": "f68dc7389d32548e6125cfdfd326b6b2c09ea8b170d891147f4909af31a8da4e",
+    "body_sha256": "cf4b5e8b247e3835008aba73f626301ae3e5c2a7e98c14baa1d758e7941c6601",
+    "converter_version": 1,
+    "markdown_sha256": "d2a28eb7621876bd61d73339a2d8f1ef25c19993145a03e2c97d7da16e0dc2a1"
+  },
+  "fetched_at": "2026-09-14T13:48:39+00:00",
+  "source_snapshot_sha256": "a382c96c081e38b0039c6ede40ab66d999a3b7c13942d027c447aa715f5a66e7",
+  "images": {},
+  "local_only": true
+}

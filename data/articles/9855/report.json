@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "9855",
+    "title": "【生活杂记】炒锅的尽头是铁锅",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/9855",
+    "date": "2023-11-13",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 0,
+    "display_formula_count": 0,
+    "image_count": 2,
+    "heading_count": 0,
+    "code_block_count": 0,
+    "source_text_sha256": "7a1e98e1c5d3465319840a3ac670921498e49c781b08d1b8748005c3d4ccdaf7",
+    "output_text_sha256": "7a1e98e1c5d3465319840a3ac670921498e49c781b08d1b8748005c3d4ccdaf7",
+    "latex_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "body_sha256": "b0e0ffd0315ad5090d734abe0b1958213c60f85842ee0cc6139bdb63ef5b4a04",
+    "converter_version": 1,
+    "markdown_sha256": "12f43f46cdce00af5619127ca84e42dc03bc2b057b83a18dda753cb7f85d3fe6"
+  },
+  "fetched_at": "2026-09-14T12:50:58+00:00",
+  "source_snapshot_sha256": "b9a482b7f50a8e318b40f8c3a147f5ea5fc640e1d110d03f15d96c70a76a6456",
+  "images": {},
+  "local_only": true
+}

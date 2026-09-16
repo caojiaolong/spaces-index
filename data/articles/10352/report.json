@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "10352",
+    "title": "“闭门造车”之多模态思路浅谈（三）：位置编码",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/10352",
+    "date": "2024-09-06",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 67,
+    "display_formula_count": 8,
+    "image_count": 3,
+    "heading_count": 7,
+    "code_block_count": 0,
+    "source_text_sha256": "bf26fd5e547ffe0bbcd028c928ed7bfadc2297c1f297ac35dac45d3093236941",
+    "output_text_sha256": "bf26fd5e547ffe0bbcd028c928ed7bfadc2297c1f297ac35dac45d3093236941",
+    "latex_sha256": "bc08724fe39433e776c527e91f4f4b4eb0ce898b2ba79e605c6a6b6a04bc485e",
+    "body_sha256": "246b7ff62bf4a211cf42299b07212da328fcd216de4f15c141e7bf8f88cafde4",
+    "converter_version": 1,
+    "markdown_sha256": "18acaecc0531105e30be320c60f86d9fb3de3049168e91ab203a7652d58be7e5"
+  },
+  "fetched_at": "2026-09-14T12:46:47+00:00",
+  "source_snapshot_sha256": "521dee927ba7256f5fbbffd823f8e0142abf0c474c992c88a793eb11d78ee84b",
+  "images": {},
+  "local_only": true
+}

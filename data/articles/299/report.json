@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "299",
+    "title": "决定命运的时刻——哥本哈根气候大会！",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/299",
+    "date": "2009-12-06",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 0,
+    "display_formula_count": 0,
+    "image_count": 0,
+    "heading_count": 0,
+    "code_block_count": 0,
+    "source_text_sha256": "26b575ef3c28256b982c8ed1e86dbaf1eb39866b114a1db9ed6c2f224897ecd0",
+    "output_text_sha256": "26b575ef3c28256b982c8ed1e86dbaf1eb39866b114a1db9ed6c2f224897ecd0",
+    "latex_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "body_sha256": "1923482ce556d95e8f6a18267454373f9e755da95f2138547c5da9531b48fe35",
+    "converter_version": 1,
+    "markdown_sha256": "6a6a8e7fd0c2cecd808f69559b03e607e252c9364abb9bc4e9e852e964c94ca5"
+  },
+  "fetched_at": "2026-09-14T14:45:29+00:00",
+  "source_snapshot_sha256": "6ec9d5d68dcd44a7fcc326eb6b801fea1b0613adb1ccbc83f514e57031e1e22f",
+  "images": {},
+  "local_only": true
+}

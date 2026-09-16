@@ -1,0 +1,14 @@
+{
+  "metadata": {
+    "id": "9119",
+    "title": "生成扩散模型漫谈（一）：DDPM = 拆楼 + 建楼",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/9119",
+    "date": "2022-06-13",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "fetched_at": "2026-09-14T02:23:26+00:00",
+  "source_snapshot_sha256": "f60cc2bbb36c2279e7beb88729f490de59840ca4b653592dab8d31794d748e54",
+  "validators": {}
+}

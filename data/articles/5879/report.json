@@ -1,0 +1,39 @@
+{
+  "metadata": {
+    "id": "5879",
+    "title": "“让Keras更酷一些！”：小众的自定义优化器",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/5879",
+    "date": "2018-09-08",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "source_dom_exact": true,
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "attributes_exact": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 9,
+    "display_formula_count": 2,
+    "image_count": 0,
+    "heading_count": 4,
+    "code_block_count": 4,
+    "source_text_sha256": "b15e4b8c48b748f0fc776bc108209e77c4efafc828c1fef1690e572267c24268",
+    "output_text_sha256": "b15e4b8c48b748f0fc776bc108209e77c4efafc828c1fef1690e572267c24268",
+    "latex_sha256": "54b8bd5008558c67eaf7936cf2cef2c3c44aad1443c24389a1f456eebaf686e5",
+    "body_sha256": "e137fef7d510c71264fc4f90a4fe58e199c2d1f8c2c7cad29e5a8ea75b887a3f",
+    "converter_version": 1,
+    "format": "html-v1",
+    "source_warnings": [],
+    "fallback_reason": "Unsupported body element: del",
+    "markdown_sha256": "8c8b32b5684b97345863b0dc9687da7e8456e9a9f5815d16092a376bad4382b3"
+  },
+  "fetched_at": "2026-09-14T13:24:42+00:00",
+  "source_snapshot_sha256": "50b394eb687a6cac874bfa61a342543121b403ae5d412552d2e425e5b348aab6",
+  "images": {},
+  "local_only": true
+}

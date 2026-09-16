@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "1333",
+    "title": "看完了刘亦菲版《倩女幽魂》",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/1333",
+    "date": "2011-04-23",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 0,
+    "display_formula_count": 0,
+    "image_count": 1,
+    "heading_count": 0,
+    "code_block_count": 0,
+    "source_text_sha256": "d1ee89ef5b7715575b1f9429a821b1e13a861474696d2728b00777dc3bf1df1d",
+    "output_text_sha256": "d1ee89ef5b7715575b1f9429a821b1e13a861474696d2728b00777dc3bf1df1d",
+    "latex_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "body_sha256": "052dd3ded4561922289c6bd22d1cd954dfbad46fb8c26ba425f09918b8ac32f3",
+    "converter_version": 1,
+    "markdown_sha256": "32f38b93a2bbea7061109b43dd60391f8ed310d24ea3fecefea3f33e7138b479"
+  },
+  "fetched_at": "2026-09-14T14:22:00+00:00",
+  "source_snapshot_sha256": "431915361aeae96a49b074c178e2986fab345ef3928d152bb102431cb049cf59",
+  "images": {},
+  "local_only": true
+}

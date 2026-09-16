@@ -1,0 +1,15 @@
+<div class="PostContent" id="PostContent">
+<p>昨天晚上一位网友与我讨论以下问题：</p><blockquote>函数$y=\sqrt{3} x-\frac{1}{x}$的图像为双曲线，在此双曲线的两支上分别取P、Q点，求PQ的最短距离。</blockquote><p>显然，如果双曲线是普通的$\frac{x^2}{a^2}-\frac{y^2}{b^2}=1$的形式，则这个问题是相当简单的。就是当y=0时两个点的距离，也就是2a。但是很明显这样的一条双曲线是经过旋转的。因此我们需要知道它究竟旋转了多少度$\theta$。然后列出$y=(\tan\theta) x$，联立双曲线方程就可以求出两个点了。</p><p>要求出旋转的角度，我们需要<u>借助双曲线的两条渐近线</u>。直线的问题总比双曲线问题容易处理一些。<font color="red">“渐近”就意味着当函数取极限的时候的大概形状</font>。当$x\to \infty$时，$\frac{1}{x} \to 0$，即其中一条渐近线为$y=\sqrt{3} x$；另外，当$x\to 0$时，$y\to \infty$，这说明另外一条渐近线为$x=0$，后面一条渐近线的情况不妨类比$y=\frac{1}{x}$的渐近线。</p><p>我们把双曲线和渐近线作图如下：<br/>
+</p><div class="pic-container"><div class="typecho-caption aligncenter" style="max-width: 100%"><div style="margin: 5px"><a href="/attachment/1905/" title="双曲线-渐近线.png"><img alt="双曲线-渐近线" src="/usr/uploads/2013/02/1215179247.png" style="max-width:100%"/></a></div><p class="typecho-caption-text">双曲线-渐近线</p></div></div><p>接下来只需要求出两条渐近线的角平分线方程即可，即图中的绿色虚线。经过简单的推理就可以得出绿色的虚线与x轴的负方向夹角为15°，即$\frac{\pi}{12}$，通过：<br/>
+$$\frac{2 \tan\frac{\pi}{12}}{1-\tan^2 \frac{\pi}{12}}=\tan\frac{\pi}{6}=\frac{\sqrt{3}}{3}$$</p><p>可以求出$tan\frac{\pi}{12}=2-\sqrt{3}$，因此绿色虚线的方程为<br/>
+$$y=(\sqrt{3}-2)x$$</p><p>联立$y=\sqrt{3} x-\frac{1}{x}$可以求出<br/>
+$$x=\pm \frac{\sqrt{2}}{2}$$<br/>
+对应：<br/>
+$y=\pm (\frac{\sqrt{6}}{2}-\sqrt{2})$</p><p>所以距离为<br/>
+$$\begin{aligned}2\sqrt{(\frac{\sqrt{6}}{2}-\sqrt{2})^2+(\frac{\sqrt{2}}{2})} \\ =2\sqrt{4-2\sqrt{3}} \\ =2(\sqrt{3}-1)\end{aligned}$$</p>
+
+
+
+
+
+</div>

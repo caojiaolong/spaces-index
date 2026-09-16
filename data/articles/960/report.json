@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "960",
+    "title": "《重逢》——最终亚运会会歌",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/960",
+    "date": "2010-10-02",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 0,
+    "display_formula_count": 0,
+    "image_count": 2,
+    "heading_count": 0,
+    "code_block_count": 0,
+    "source_text_sha256": "07aa913b066f47161c2b5879fad45e8b3c755121732f031bb5bc3ec87cb43099",
+    "output_text_sha256": "07aa913b066f47161c2b5879fad45e8b3c755121732f031bb5bc3ec87cb43099",
+    "latex_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "body_sha256": "91062d7ee5a0dea87ee548a25cdcb40f5a465a93a64e693b8c719ac2ecde0eb4",
+    "converter_version": 1,
+    "markdown_sha256": "57203d0bb07f3fa731f385912c72b90a0690609033ef7f4ddd283fb1fd968267"
+  },
+  "fetched_at": "2026-09-14T14:29:40+00:00",
+  "source_snapshot_sha256": "51fc1668bbb8b447b7af569e7a3cafb815f7b2b3ee8de11b08a7ac8898b5ac43",
+  "images": {},
+  "local_only": true
+}

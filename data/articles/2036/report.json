@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "2036",
+    "title": "《虚拟的实在(4)》——质量是什么",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/2036",
+    "date": "2013-07-22",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 2,
+    "display_formula_count": 0,
+    "image_count": 0,
+    "heading_count": 0,
+    "code_block_count": 0,
+    "source_text_sha256": "55f16ec4f030350b63aaf3c681c2e7cf76528565a6902517ec7b6f6c7901457c",
+    "output_text_sha256": "55f16ec4f030350b63aaf3c681c2e7cf76528565a6902517ec7b6f6c7901457c",
+    "latex_sha256": "3f4933f14b2cba49c2d42c8595ad0e873388dd30a8e8cc058238c33016dcc8a7",
+    "body_sha256": "cf4e61841e0c98ba6cadaeb50b8fa0605062f530545d364860b2644ac743ad2a",
+    "converter_version": 1,
+    "markdown_sha256": "f4b0df520c483e59bcb1c093ecade3defaba89796453b58b52928412a55e9e51"
+  },
+  "fetched_at": "2026-09-14T14:01:05+00:00",
+  "source_snapshot_sha256": "b499f0c8f6a8725e0567fcfa329922794521376b8c3532347d1c6d6a5a0bad2b",
+  "images": {},
+  "local_only": true
+}

@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "931",
+    "title": "记IOAA之旅",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/931",
+    "date": "2010-09-22",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 0,
+    "display_formula_count": 0,
+    "image_count": 13,
+    "heading_count": 0,
+    "code_block_count": 0,
+    "source_text_sha256": "ab87a9ee6640eb40f06f311b3ce3989be15430adf7a37183ed1c7ab4c13e85d6",
+    "output_text_sha256": "ab87a9ee6640eb40f06f311b3ce3989be15430adf7a37183ed1c7ab4c13e85d6",
+    "latex_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "body_sha256": "e266d67220c50e7d3b2aaad2ba330c2915b6bfc686db751df2094af12a21c95b",
+    "converter_version": 1,
+    "markdown_sha256": "dd7e5dbe392590302cb0283fa53ea3d65f0a5220410e72bab603e0639a4bca96"
+  },
+  "fetched_at": "2026-09-14T14:30:13+00:00",
+  "source_snapshot_sha256": "1b8db7a80c9ce0429c02552ba2313f083db6dde325477b65fc092a90c3c67881",
+  "images": {},
+  "local_only": true
+}

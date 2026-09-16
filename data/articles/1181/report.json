@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "1181",
+    "title": "《方程与宇宙》：三体问题和它的初积分(六)",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/1181",
+    "date": "2011-01-20",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 23,
+    "display_formula_count": 11,
+    "image_count": 0,
+    "heading_count": 0,
+    "code_block_count": 0,
+    "source_text_sha256": "383005088461ce343becbdb6844ad898226d735deb06aeceeb5ab2365ade651b",
+    "output_text_sha256": "383005088461ce343becbdb6844ad898226d735deb06aeceeb5ab2365ade651b",
+    "latex_sha256": "e9549742e3be1503f76693d068ea1f2e39ac1b561eab96a4f1cd03d2a8e85382",
+    "body_sha256": "4bf338255f975d69cf8afdc53dd7735a393120db04040797db989f7adae3dc5e",
+    "converter_version": 1,
+    "markdown_sha256": "776c574a4c507142332c45309c5c43ae2ae042fdcc37533dafc9cfac5ade025a"
+  },
+  "fetched_at": "2026-09-14T14:25:11+00:00",
+  "source_snapshot_sha256": "4544b45ba727f8958d7b643bb9108b4ded2f81723f5d86297e21b2325c57ab2e",
+  "images": {},
+  "local_only": true
+}

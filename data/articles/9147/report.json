@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "9147",
+    "title": "“维度灾难”之Hubness现象浅析",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/9147",
+    "date": "2022-06-28",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 27,
+    "display_formula_count": 2,
+    "image_count": 2,
+    "heading_count": 4,
+    "code_block_count": 1,
+    "source_text_sha256": "45813af5f3ab30fe2312f66e9a42846946072bfbf3879a32f6b8d44cbe518f4b",
+    "output_text_sha256": "45813af5f3ab30fe2312f66e9a42846946072bfbf3879a32f6b8d44cbe518f4b",
+    "latex_sha256": "cb5bbed797d8bc74918467f1081573116bef1615df793e296b788fdbf4d4a8b4",
+    "body_sha256": "99da0b5d29f0074e6957ffac67dba4974c2cd454007dd221c35962da560c9e38",
+    "converter_version": 1,
+    "markdown_sha256": "a513bcb4f1e8669585526704eb78a59363b9ff906c6de470be47ade52ca46937"
+  },
+  "fetched_at": "2026-09-14T12:58:59+00:00",
+  "source_snapshot_sha256": "e193a16a8687f3b567606ce5015c1d7a69a0f6873694e16a75fb5e58fd3dd352",
+  "images": {},
+  "local_only": true
+}

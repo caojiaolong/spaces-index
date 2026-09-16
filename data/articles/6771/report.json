@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "6771",
+    "title": " 基于Bert的NL2SQL模型：一个简明的Baseline",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/6771",
+    "date": "2019-06-29",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 0,
+    "display_formula_count": 0,
+    "image_count": 2,
+    "heading_count": 5,
+    "code_block_count": 3,
+    "source_text_sha256": "ce26fa55399ca353968f2de7cfe81e5586a3b0fcfa82b30e275451dcdf622a63",
+    "output_text_sha256": "ce26fa55399ca353968f2de7cfe81e5586a3b0fcfa82b30e275451dcdf622a63",
+    "latex_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "body_sha256": "e7e4faf36735b826e173c35b2f0720095cb49e00c041ab07c0ec02c901ea77e5",
+    "converter_version": 1,
+    "markdown_sha256": "dd20501bb98eba484af933ec1dfb80c4410c13baadb33292061a4c4fe42156ac"
+  },
+  "fetched_at": "2026-09-14T13:18:56+00:00",
+  "source_snapshot_sha256": "2072f534edcf53238800bea819fc212e9f13b578883d00af950aad5ace1844fa",
+  "images": {},
+  "local_only": true
+}

@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "734",
+    "title": "欢迎大家来挑错！！",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/734",
+    "date": "2010-07-22",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 0,
+    "display_formula_count": 0,
+    "image_count": 0,
+    "heading_count": 0,
+    "code_block_count": 0,
+    "source_text_sha256": "36d3a351c0fd8711dd78c3bec9c775c48feda8be415a45cad812167610549fad",
+    "output_text_sha256": "36d3a351c0fd8711dd78c3bec9c775c48feda8be415a45cad812167610549fad",
+    "latex_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "body_sha256": "3cb4ab5633bf9965aaf49114ff3866a916e30a934bb95f02673fc632048c897b",
+    "converter_version": 1,
+    "markdown_sha256": "1f3397140fcfd57c535e6240b00eb4fd9ad46e5be77f7dd22ce3ad541ab53c65"
+  },
+  "fetched_at": "2026-09-14T14:34:24+00:00",
+  "source_snapshot_sha256": "164f114e35045b1b5efd66af68eb22ae4deebf5572ae48e5cb1acb09dfa3d905",
+  "images": {},
+  "local_only": true
+}

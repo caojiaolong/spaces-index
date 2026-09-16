@@ -1,0 +1,45 @@
+{
+  "version": 1,
+  "images": {
+    "https://spaces.ac.cn/usr/uploads/2015/06/3473700595.png": {
+      "status": "cached",
+      "file": "cc361eb654f261630d9b50a2db74a89e55fc91af6b05e4442e7765104391883a.png",
+      "sha256": "cc361eb654f261630d9b50a2db74a89e55fc91af6b05e4442e7765104391883a",
+      "bytes": 29417,
+      "checked_at": "2026-09-16T09:37:21+00:00",
+      "fetched_url": "https://spaces.ac.cn/usr/uploads/2015/06/3473700595.png",
+      "etag": "\"5a6ec745-72e9\"",
+      "last_modified": "Mon, 29 Jan 2018 07:03:33 GMT"
+    },
+    "https://spaces.ac.cn/usr/uploads/2015/06/2323544396.png": {
+      "status": "cached",
+      "file": "f4a93df5984ceafaabafea722147bc40225d43f7ddbe1f0a2c2e44d084d98ca1.png",
+      "sha256": "f4a93df5984ceafaabafea722147bc40225d43f7ddbe1f0a2c2e44d084d98ca1",
+      "bytes": 28867,
+      "checked_at": "2026-09-16T09:37:25+00:00",
+      "fetched_url": "https://spaces.ac.cn/usr/uploads/2015/06/2323544396.png",
+      "etag": "\"5a6ec745-70c3\"",
+      "last_modified": "Mon, 29 Jan 2018 07:03:33 GMT"
+    },
+    "https://spaces.ac.cn/usr/uploads/2015/06/1152794772.png": {
+      "status": "cached",
+      "file": "e40e82c8a928c20cdffb0d2e11bb89dd357911765753bbbedafc7a695be15f99.png",
+      "sha256": "e40e82c8a928c20cdffb0d2e11bb89dd357911765753bbbedafc7a695be15f99",
+      "bytes": 39445,
+      "checked_at": "2026-09-16T09:37:29+00:00",
+      "fetched_url": "https://spaces.ac.cn/usr/uploads/2015/06/1152794772.png",
+      "etag": "\"5a6ec745-9a15\"",
+      "last_modified": "Mon, 29 Jan 2018 07:03:33 GMT"
+    },
+    "https://spaces.ac.cn/usr/uploads/2015/06/2778028889.png": {
+      "status": "cached",
+      "file": "ae5b52ce45c898a695d49b24c2768e9040c20436f5a3d9aee954cc6d30bb1c02.png",
+      "sha256": "ae5b52ce45c898a695d49b24c2768e9040c20436f5a3d9aee954cc6d30bb1c02",
+      "bytes": 52898,
+      "checked_at": "2026-09-16T09:37:33+00:00",
+      "fetched_url": "https://spaces.ac.cn/usr/uploads/2015/06/2778028889.png",
+      "etag": "\"5a6ec745-cea2\"",
+      "last_modified": "Mon, 29 Jan 2018 07:03:33 GMT"
+    }
+  }
+}

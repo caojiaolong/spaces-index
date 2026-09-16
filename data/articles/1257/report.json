@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "1257",
+    "title": "施密特系统的校正镜方程求解",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/1257",
+    "date": "2011-02-11",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 45,
+    "display_formula_count": 15,
+    "image_count": 4,
+    "heading_count": 0,
+    "code_block_count": 0,
+    "source_text_sha256": "67c10ac9132b6db63adfdb4b7b8ae1e661c8b0baaf88de9942eed2aee9ce6600",
+    "output_text_sha256": "67c10ac9132b6db63adfdb4b7b8ae1e661c8b0baaf88de9942eed2aee9ce6600",
+    "latex_sha256": "df34f8fadfd1aec526bde8d9e73a3e4afc049b424695def07907b0cc9c557405",
+    "body_sha256": "fd0b44455a25dff9fb64df53a68583a50e830ade73bc0d989483cc39dcf1ac89",
+    "converter_version": 1,
+    "markdown_sha256": "0b4603df8ec6d4f8a994d7885b5e389e9f4273b9971519c3788e5aeb69cbdd96"
+  },
+  "fetched_at": "2026-09-14T14:24:03+00:00",
+  "source_snapshot_sha256": "507d6db1bc2549b2479f0a986306320d6ea75b12bad57103403b902989f0a3ba",
+  "images": {},
+  "local_only": true
+}

@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "9617",
+    "title": "NBCE：使用朴素贝叶斯扩展LLM的Context处理长度",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/9617",
+    "date": "2023-05-23",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 58,
+    "display_formula_count": 11,
+    "image_count": 2,
+    "heading_count": 7,
+    "code_block_count": 0,
+    "source_text_sha256": "751387d0128f18833a0ba86d76ffc5abf97032a65e6c10a788be8b0b4e6b78a8",
+    "output_text_sha256": "751387d0128f18833a0ba86d76ffc5abf97032a65e6c10a788be8b0b4e6b78a8",
+    "latex_sha256": "6d137bf1de30078f6f69207ad2afab7cf6c3bd63934219d8a9bfcefc07ae5f8f",
+    "body_sha256": "2685d6eb833fe5e260906367ede21f01b607c3e44c419b8001f798356a029d7b",
+    "converter_version": 1,
+    "markdown_sha256": "c61c3abf1d0a3319862066e3c7057c12216548c489412e7922dd748b2c67fbea"
+  },
+  "fetched_at": "2026-09-14T12:53:59+00:00",
+  "source_snapshot_sha256": "dbb85544868eae0a2278f046793ab9969f0c685c65fd0e10f1aa7b482c87a7a0",
+  "images": {},
+  "local_only": true
+}

@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "3451",
+    "title": "《量子力学与路径积分》习题解答V0.1",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/3451",
+    "date": "2015-09-14",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 0,
+    "display_formula_count": 0,
+    "image_count": 1,
+    "heading_count": 0,
+    "code_block_count": 0,
+    "source_text_sha256": "7004a28e3db0bf8d4bda82025ca158981dbd0c48fa674260fbadb155f35e3937",
+    "output_text_sha256": "7004a28e3db0bf8d4bda82025ca158981dbd0c48fa674260fbadb155f35e3937",
+    "latex_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "body_sha256": "52fce8d9811b97b8ff1bb1fcdf141cc0cc39f6c967c4907bec68cef2a4164b5e",
+    "converter_version": 1,
+    "markdown_sha256": "13385e2410f643539d2b1c6847ec9c0d38c995bf642966a660af3fcc1b681b4f"
+  },
+  "fetched_at": "2026-09-14T13:44:50+00:00",
+  "source_snapshot_sha256": "a228f6156d878d3b1769abf8fb1d8e77e6c3b3b9c393523b9b5bafc05c335da7",
+  "images": {},
+  "local_only": true
+}

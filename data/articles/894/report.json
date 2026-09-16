@@ -1,0 +1,39 @@
+{
+  "metadata": {
+    "id": "894",
+    "title": "“用户评价”靠谱吗？",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/894",
+    "date": "2010-08-26",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "source_dom_exact": true,
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "attributes_exact": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 0,
+    "display_formula_count": 0,
+    "image_count": 1,
+    "heading_count": 0,
+    "code_block_count": 0,
+    "source_text_sha256": "f539a208402b94ef0e69e8e9e360f8b8a089d699fa6558458cdb91601f92a505",
+    "output_text_sha256": "f539a208402b94ef0e69e8e9e360f8b8a089d699fa6558458cdb91601f92a505",
+    "latex_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "body_sha256": "6d87d13feb7d1cfb409fcb9c3c1632b630f04284c3b0aa5ff61d31bad76fb637",
+    "converter_version": 1,
+    "format": "html-v1",
+    "source_warnings": [],
+    "fallback_reason": "Standard Markdown round trip changed source structure",
+    "markdown_sha256": "98cde832c3b598cb7e1e0b3d3563a8e674dcb585ba00961377e79ce81dcd1e3c"
+  },
+  "fetched_at": "2026-09-14T14:31:17+00:00",
+  "source_snapshot_sha256": "733889fb96ac52b984ed0d81d3b5a5419c2dcfb04f97c8370aa602eb4f1a2637",
+  "images": {},
+  "local_only": true
+}

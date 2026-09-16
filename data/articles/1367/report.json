@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "1367",
+    "title": "遐思1：n次代数方程的解可以这样表示吗？",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/1367",
+    "date": "2011-05-28",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 3,
+    "display_formula_count": 0,
+    "image_count": 0,
+    "heading_count": 0,
+    "code_block_count": 0,
+    "source_text_sha256": "cabdae21832679365d33aa59bf1b68b6502ac25bc6ae7bac91e886ac85ec27ff",
+    "output_text_sha256": "cabdae21832679365d33aa59bf1b68b6502ac25bc6ae7bac91e886ac85ec27ff",
+    "latex_sha256": "bd5161551074238a8f5c263e7b92795480ade567a3da101b22264700c4e7d59f",
+    "body_sha256": "de66d25f295a745c4c8283584d5c2c5c2ecf02a8b4e5e92cdb092339159911b9",
+    "converter_version": 1,
+    "markdown_sha256": "7b6f91b906a025e01b9ce4a2ccdbb2abd7ffb3febfa3097510527b10b85277fd"
+  },
+  "fetched_at": "2026-09-14T14:21:02+00:00",
+  "source_snapshot_sha256": "6f8c5555b0a1159bb66196279891c35d1327c119db2ac164449e5e5787d882c9",
+  "images": {},
+  "local_only": true
+}

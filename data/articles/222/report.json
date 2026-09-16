@@ -1,0 +1,41 @@
+{
+  "metadata": {
+    "id": "222",
+    "title": "最新调查解“毒”珠江：工业水污染触目惊心！",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/222",
+    "date": "2009-10-30",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "source_dom_exact": true,
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "attributes_exact": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 0,
+    "display_formula_count": 0,
+    "image_count": 6,
+    "heading_count": 0,
+    "code_block_count": 0,
+    "source_text_sha256": "54a5ba06e2555f0c00d170faf097df19d7c25c8658172b19d8ffff71a1568674",
+    "output_text_sha256": "54a5ba06e2555f0c00d170faf097df19d7c25c8658172b19d8ffff71a1568674",
+    "latex_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "body_sha256": "c1c551fd59773fe9657f8088d32ac1054bc40cc515b19e3360c76184efc46117",
+    "converter_version": 1,
+    "format": "html-v1",
+    "source_warnings": [
+      "原文含旧式或脚本嵌入内容，已保留其位置和源码；预览不执行。"
+    ],
+    "fallback_reason": "Unsupported body element: embed",
+    "markdown_sha256": "535ea5904ec9b50c3caf5e6a21f642785ada84bb1557984122fb8220f6f15d3a"
+  },
+  "fetched_at": "2026-09-14T14:47:31+00:00",
+  "source_snapshot_sha256": "07b2f443371ab5910deff3fd0e43dbbe6486f1a29efceb0fef681e4baf5abe2d",
+  "images": {},
+  "local_only": true
+}

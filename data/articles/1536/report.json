@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "1536",
+    "title": "[问题解答]木杆平衡",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/1536",
+    "date": "2012-01-21",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 11,
+    "display_formula_count": 2,
+    "image_count": 1,
+    "heading_count": 0,
+    "code_block_count": 0,
+    "source_text_sha256": "e7e820a09a7d3761068916ef21e5d17e4c44874843e126b596bb7822905ce45b",
+    "output_text_sha256": "e7e820a09a7d3761068916ef21e5d17e4c44874843e126b596bb7822905ce45b",
+    "latex_sha256": "53799c5d9aa20b6c8aff872df6ea53e3ff1003ce492c91936c0f1b09eb42ca11",
+    "body_sha256": "0bd2a3d1cf230d0146950fbd972054d90640634007ebb800fda199638c909679",
+    "converter_version": 1,
+    "markdown_sha256": "3f8c4b49756ff9264c292a6e645e49ea402564c06d37d18649c10004ff7b7ab9"
+  },
+  "fetched_at": "2026-09-14T14:15:55+00:00",
+  "source_snapshot_sha256": "c8eb6397582fc4ade81c65bd2a263f80a638e706c808fb1c0f3f373d24eae826",
+  "images": {},
+  "local_only": true
+}

@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "2055",
+    "title": "[电子书]《最小作用量原理与物理学的发展》",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/2055",
+    "date": "2013-08-21",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 0,
+    "display_formula_count": 0,
+    "image_count": 0,
+    "heading_count": 0,
+    "code_block_count": 0,
+    "source_text_sha256": "414ec9a29913c440efeee1f67fbb0ae7ba112ce7a7332638a2c59f8c43374532",
+    "output_text_sha256": "414ec9a29913c440efeee1f67fbb0ae7ba112ce7a7332638a2c59f8c43374532",
+    "latex_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "body_sha256": "426e1342001aa1bd1a1459a37f1713961ecded753a6cea42ee263013c50300fa",
+    "converter_version": 1,
+    "markdown_sha256": "e582921358f6122df81001759e4cadf9598ea9bb3316db359563a9405211a1b3"
+  },
+  "fetched_at": "2026-09-14T14:00:32+00:00",
+  "source_snapshot_sha256": "6ccf4ff9dadce3815b1f1c9ce6caadd438871217bb9d061bf4a11aa25070cd2a",
+  "images": {},
+  "local_only": true
+}

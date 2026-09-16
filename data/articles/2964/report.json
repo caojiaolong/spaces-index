@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "2964",
+    "title": "几个有关集合势的“简单”证明",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/2964",
+    "date": "2014-10-01",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 40,
+    "display_formula_count": 6,
+    "image_count": 0,
+    "heading_count": 0,
+    "code_block_count": 0,
+    "source_text_sha256": "6020d84feaf124920f1abc7a7b82ab0df2df406a5df58a1bc53438fe7d575470",
+    "output_text_sha256": "6020d84feaf124920f1abc7a7b82ab0df2df406a5df58a1bc53438fe7d575470",
+    "latex_sha256": "2af18e797d9f07969e3d3b9ab6a270704cadbb928f629fa52c678325507be855",
+    "body_sha256": "043eea46e31197efd58484b4e88b6f9fb80176b29770c810fc0a241e1f37829b",
+    "converter_version": 1,
+    "markdown_sha256": "8bf7c486040f4e38eda15ec88ce4ca3a9857495e0345a0a4c1a79c01166cd549"
+  },
+  "fetched_at": "2026-09-14T13:51:03+00:00",
+  "source_snapshot_sha256": "33b595e50eef4ee94ba03b51922cb25a4da4909c7d86e51cc727eb6769cb9483",
+  "images": {},
+  "local_only": true
+}

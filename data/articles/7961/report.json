@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "7961",
+    "title": "【龟鱼记】全陶粒的同程底滤生态缸",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/7961",
+    "date": "2020-12-07",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 0,
+    "display_formula_count": 0,
+    "image_count": 9,
+    "heading_count": 2,
+    "code_block_count": 0,
+    "source_text_sha256": "e6a374590447e4a8af1a38cb7fb33fe2864c9df16f700ac7044f6f4034694f14",
+    "output_text_sha256": "e6a374590447e4a8af1a38cb7fb33fe2864c9df16f700ac7044f6f4034694f14",
+    "latex_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "body_sha256": "412dea147260adc7ec420c5a9272d1a6f56bef6eedd9cdec6e112f9612db5528",
+    "converter_version": 1,
+    "markdown_sha256": "5231c287fa7d69dba26ab8c6b22ed64f4ca4a5501f2d359647e613ee47225f41"
+  },
+  "fetched_at": "2026-09-14T13:09:36+00:00",
+  "source_snapshot_sha256": "6152791c8dd93e20b94de58028e168f8a102f03b344a98a8017a016688d00a55",
+  "images": {},
+  "local_only": true
+}

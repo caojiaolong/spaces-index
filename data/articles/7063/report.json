@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "7063",
+    "title": "JoSE：球面上的词向量和句向量",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/7063",
+    "date": "2019-11-11",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 70,
+    "display_formula_count": 10,
+    "image_count": 5,
+    "heading_count": 6,
+    "code_block_count": 0,
+    "source_text_sha256": "ec92f822c52e7515e237f60221de07c63768d4d4aa5350b84a9f806daad0dee9",
+    "output_text_sha256": "ec92f822c52e7515e237f60221de07c63768d4d4aa5350b84a9f806daad0dee9",
+    "latex_sha256": "d66c103b741b1a31a1db996fa6abddf849b45be1df71b14e53bfd26e68621a75",
+    "body_sha256": "b2978c6f4c7c256a92f195febc451cec5116cddf595044ed29689e362a77c3cc",
+    "converter_version": 1,
+    "markdown_sha256": "40575476bf4d3e9f7229702edbd2a25743b191b09ff2678f45cc530c80a03c1d"
+  },
+  "fetched_at": "2026-09-14T13:16:44+00:00",
+  "source_snapshot_sha256": "350452fb6725a14056b0676f510c31a45ae0c81a1d774ad8049cc1c93b6100fa",
+  "images": {},
+  "local_only": true
+}

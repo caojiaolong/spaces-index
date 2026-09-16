@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "8027",
+    "title": "RealFormer：把残差转移到Attention矩阵上面去",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/8027",
+    "date": "2020-12-24",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 31,
+    "display_formula_count": 4,
+    "image_count": 5,
+    "heading_count": 4,
+    "code_block_count": 0,
+    "source_text_sha256": "6c04e003a461025ea365ff3ee4f275a70f74a2afe5ae2a897d1fc8f9a1e7139a",
+    "output_text_sha256": "6c04e003a461025ea365ff3ee4f275a70f74a2afe5ae2a897d1fc8f9a1e7139a",
+    "latex_sha256": "0fbc8186e4e25f1edcdc6346bc88dad074a5bca6a986adabaf4d948e3c994d5c",
+    "body_sha256": "b2f99407df7ecd4dcd716e313929cef3d3e4e12b39113623f6ebe6a5aef5e10d",
+    "converter_version": 1,
+    "markdown_sha256": "adfe1eaff446cdf5ab7738351605c16a7c9f1c472531f328d13f8ea991e4b38b"
+  },
+  "fetched_at": "2026-09-14T13:09:09+00:00",
+  "source_snapshot_sha256": "2d88374bd560ea3e934b96424b8570bc984a4280e8f9ed7bc780daf6c290878b",
+  "images": {},
+  "local_only": true
+}

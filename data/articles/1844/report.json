@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "1844",
+    "title": "费曼路径积分思想的发展(一)",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/1844",
+    "date": "2012-12-26",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 17,
+    "display_formula_count": 5,
+    "image_count": 0,
+    "heading_count": 0,
+    "code_block_count": 0,
+    "source_text_sha256": "8d374f8a5f108af25472510b9d78979be1ebc6a63dd0e1f86751f42ff23fcf51",
+    "output_text_sha256": "8d374f8a5f108af25472510b9d78979be1ebc6a63dd0e1f86751f42ff23fcf51",
+    "latex_sha256": "58298e86b4bcceaad8d51121f0c8026aa621089692b893210149d08147e1ecec",
+    "body_sha256": "42120e54fdccd180be9d700ae20b55f5bba15148c114ffc8e5968edba420a260",
+    "converter_version": 1,
+    "markdown_sha256": "0c993713c7309925b837a30891603c0e37e6c25f70e06783cfb49e29925509af"
+  },
+  "fetched_at": "2026-09-14T14:07:24+00:00",
+  "source_snapshot_sha256": "071614415927629b6dc2196197ba232bd1dbda1497d4faa0cbd26eba7f6981b8",
+  "images": {},
+  "local_only": true
+}

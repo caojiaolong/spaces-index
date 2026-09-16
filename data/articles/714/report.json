@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "714",
+    "title": "《向量》系列——2.曲率半径",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/714",
+    "date": "2010-07-18",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 15,
+    "display_formula_count": 7,
+    "image_count": 1,
+    "heading_count": 0,
+    "code_block_count": 0,
+    "source_text_sha256": "e07354948fa2c4ecebd5840bd150156f7ecfcd47cf421560db9c6c46816b3bfd",
+    "output_text_sha256": "e07354948fa2c4ecebd5840bd150156f7ecfcd47cf421560db9c6c46816b3bfd",
+    "latex_sha256": "d4df33296b2321940bd6c3711d27dc92d9a670ace4f5b128e0b2a7f47c6d86f8",
+    "body_sha256": "f2b89f80dafad82e77719b07304ff740100458af27b01656732da46d4a680d24",
+    "converter_version": 1,
+    "markdown_sha256": "5c2c4f990d26c0ddb1d1388a466fc3f3231379e8883429616c9469a44c23c0ed"
+  },
+  "fetched_at": "2026-09-14T14:34:56+00:00",
+  "source_snapshot_sha256": "9fec6c58285d16c2bc71f6bbafa9416b00ba0433e438bb31bf30b993ccddb856",
+  "images": {},
+  "local_only": true
+}

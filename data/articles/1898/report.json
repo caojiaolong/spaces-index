@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "1898",
+    "title": "网友:椭圆定长弦中点轨迹的一种解法",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/1898",
+    "date": "2013-02-02",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 45,
+    "display_formula_count": 19,
+    "image_count": 0,
+    "heading_count": 0,
+    "code_block_count": 0,
+    "source_text_sha256": "ae003fa607c168501c7c3779a96b53dac928c5ebd77f3368c539daa0ee36836e",
+    "output_text_sha256": "ae003fa607c168501c7c3779a96b53dac928c5ebd77f3368c539daa0ee36836e",
+    "latex_sha256": "11a2b6bfad95f96dcf5aeec99b58b168c90dc74879c09f32e44a7db723f657ff",
+    "body_sha256": "dad0055c69a817a93407ae51a5f8ce83084a3ac448e1a019d371b62dda42b5a3",
+    "converter_version": 1,
+    "markdown_sha256": "1317eb4c3c0d9fd3e1a4946a33f7992d2ea4ed215bcab63e99fe8da4d3dd41e8"
+  },
+  "fetched_at": "2026-09-14T14:05:35+00:00",
+  "source_snapshot_sha256": "8b0a8d5abd4719877548c22f4dd9b0cddd43d1b0b7928d540e18ee99ef400fa6",
+  "images": {},
+  "local_only": true
+}

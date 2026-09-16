@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "4671",
+    "title": "更别致的词向量模型(三)：描述相关的模型",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/4671",
+    "date": "2017-11-19",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 34,
+    "display_formula_count": 10,
+    "image_count": 0,
+    "heading_count": 4,
+    "code_block_count": 0,
+    "source_text_sha256": "c17a814fb7ffcb058651e4509bfe205ca4e969852137083a4e278240ad03a7fe",
+    "output_text_sha256": "c17a814fb7ffcb058651e4509bfe205ca4e969852137083a4e278240ad03a7fe",
+    "latex_sha256": "0979e57675365a1df8e4952e1b479fb444e0b80ec380f0ead4c41052a4009dc9",
+    "body_sha256": "e63907259889781d9cab165b0b54ad435e3953f92cf4a0527176f33abf66c647",
+    "converter_version": 1,
+    "markdown_sha256": "b2cdc595773ecf398c9cf63208235ed7f02d8d9b8c33231edb0187d9e6ce2213"
+  },
+  "fetched_at": "2026-09-14T13:29:52+00:00",
+  "source_snapshot_sha256": "ef2377e5bbca2cb5c09cf824c48a5ef61acdfabab34b333f0b638f7dccc402db",
+  "images": {},
+  "local_only": true
+}

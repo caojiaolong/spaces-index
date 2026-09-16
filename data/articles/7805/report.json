@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "7805",
+    "title": "如何划分一个跟测试集更接近的验证集？",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/7805",
+    "date": "2020-10-16",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 25,
+    "display_formula_count": 6,
+    "image_count": 0,
+    "heading_count": 5,
+    "code_block_count": 0,
+    "source_text_sha256": "f02267c8528cb50ccb676dd4e09924fa94560e1f821c73a3ff89915be183d13a",
+    "output_text_sha256": "f02267c8528cb50ccb676dd4e09924fa94560e1f821c73a3ff89915be183d13a",
+    "latex_sha256": "7589c3f140cd4543b2373e06ba24fb43203fe292983ec6799554f043d49bc8b6",
+    "body_sha256": "88e36938cecc8532b8226bfda9619a4de0d4390951e248b801a0ac700b40e0cc",
+    "converter_version": 1,
+    "markdown_sha256": "94754ca2f3dc8db110ad65e9e0001a2b238bec3b6f5df6e55ecdd8ecdaf826ff"
+  },
+  "fetched_at": "2026-09-14T13:10:48+00:00",
+  "source_snapshot_sha256": "5a1f07fd6904382d55897b7ea1e34db4858e569e9092e7ee370312f5df16f58d",
+  "images": {},
+  "local_only": true
+}

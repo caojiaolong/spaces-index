@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "443",
+    "title": "唯美星空·梦幻天国(KAGAYA加贺谷穰作品)",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/443",
+    "date": "2010-02-14",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 0,
+    "display_formula_count": 0,
+    "image_count": 5,
+    "heading_count": 0,
+    "code_block_count": 0,
+    "source_text_sha256": "f5d816330fadd028bf47f055786d5d27f82f590216a9f5b5b604ef56dd41d309",
+    "output_text_sha256": "f5d816330fadd028bf47f055786d5d27f82f590216a9f5b5b604ef56dd41d309",
+    "latex_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "body_sha256": "ea9ae29b9eb2fc3d7079d3ae575177146eb99d6575f97b9589dd629dd1c13f2f",
+    "converter_version": 1,
+    "markdown_sha256": "cb21c1c45657a12fde0c86078ba951b063aa3b8f132fc6b568d1834fe991fc5f"
+  },
+  "fetched_at": "2026-09-14T14:41:02+00:00",
+  "source_snapshot_sha256": "36f4542bfa8a6266dccdd7f3cd9f07547137f0cdf8306084bf39e4e4e0270e7b",
+  "images": {},
+  "local_only": true
+}

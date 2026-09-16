@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "11033",
+    "title": "线性注意力简史：从模仿、创新到反哺",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/11033",
+    "date": "2025-06-20",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 257,
+    "display_formula_count": 38,
+    "image_count": 0,
+    "heading_count": 11,
+    "code_block_count": 0,
+    "source_text_sha256": "29a3498b355b3bc8d516c31105a92e5afed7ddf0e00c0ec57089896173547fa5",
+    "output_text_sha256": "29a3498b355b3bc8d516c31105a92e5afed7ddf0e00c0ec57089896173547fa5",
+    "latex_sha256": "c18b97327519bde24429afa2795c69205eb739fac375d9022015b811cc39e612",
+    "body_sha256": "23d47bd9b13ffd1b19c58c1aefeb746fd72d0786f18be5ce5582ef482e8fb8a9",
+    "converter_version": 1,
+    "markdown_sha256": "0a3384cbce2bd3c3694c34d313fbfda005644cde952c6d643296e39532d98233"
+  },
+  "fetched_at": "2026-09-14T12:41:43+00:00",
+  "source_snapshot_sha256": "148072ac8fd20da5fec9f816ec6ab9c17f813f3f7fbe7a886a96139eef67d94f",
+  "images": {},
+  "local_only": true
+}

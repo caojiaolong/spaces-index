@@ -1,0 +1,87 @@
+# 【理解黎曼几何】2\. 从勾股定理到黎曼度量
+
+> 作者：苏剑林 · 科学空间 · 2016-10-14
+>
+> 原文：<https://spaces.ac.cn/archives/3969>
+>
+> 原文许可：[CC BY-NC-ND 2.5 CN（署名-非商业性使用-禁止演绎）](https://creativecommons.org/licenses/by-nc-nd/2.5/cn/)。
+>
+> 本文件由 spaces-index 非官方、非商业项目进行必要的 HTML → Markdown 格式转换；正文未做摘要、润色、翻译或重组。项目不代表作者，也不表示作者为项目背书。
+>
+> 署名及附加许可说明不代表已获得作者额外授权。第三方素材权利依其原有声明。
+>
+> 原站转载与引用说明：[科学空间 FAQ](https://spaces.ac.cn/archives/6508#%E6%96%87%E7%AB%A0%E5%A6%82%E4%BD%95%E8%BD%AC%E8%BD%BD/%E5%BC%95%E7%94%A8)
+
+---
+
+### 黎曼度量
+
+几何，英文名是Geometry，原意是大地测量。既然是测量，就必须有参考物，还有得知道如何计算距离。
+
+有了参照物，我们就可以建立坐标系，把每个点的坐标都写下来，至于计算距离，我们有伟大的勾股定理：
+$$ds^2 = dx^2 + dy^2 \tag{1} $$
+但这里我们忽略了两个问题。
+
+第一个问题是，我们不一定使用直角坐标系，如果使用极坐标，那么应该是
+$$ds^2 = dr^2 + r^2 d\theta^2 \tag{2} $$
+因此可以联想，最一般的形式应该是
+$$ds^2 = E(x^1, x^2)(dx^1)^2 + 2F(x^1, x^2)dx^1 dx^2 + G(x^1, x^2)(dx^2)^2 \tag{3} $$
+这里的$x^1,x^2$是广义坐标，使用上标而不是下标来标记序号，是为了跟传统的教材记号一致。那这公式是什么意思呢？其实很简单，正如我们没理由要求全世界都使用人民币一样，我们没必要要求世界各地都使用同一个坐标系，而更合理的做法是，每一处地方都使用自己的坐标系（局部坐标系），然后给出当地计算距离的方法。因此，上述公式正是说，在位置$(x^1, x^2)$处计算向量$(dx^1, dx^2)$的长度的公式（当地的勾股定理）是$ds^2 = E(x^1, x^2)(dx^1)^2 + 2F(x_1, x_2)dx^1 dx^2 + G(x^1, x^2)(dx^2)^2$。
+
+第二个问题是，我们当然不只是研究2维平面，我们还要研究$n$维的空间，因此，最一般的公式是
+$$ds^2 = g_{\mu\nu}(\boldsymbol{x}) dx^{\mu} dx^{\nu} \tag{4} $$
+这里的$\boldsymbol{x}=(x^1,x^2,\dots,x^n)$，并且使用了爱因斯坦求和约定，即单项式中相同的上下标意味着求和。$g_{\mu\nu}$就是我们所说的黎曼度量，我们可以选择对称的度量，即$g_{\mu\nu}=g_{\nu\mu}$，并且不改变$ds^2$的形式，而整个$ds^2$，根据我们前面的讨论，就是高维空间中不同位置所使用的不同的计算距离的方式而已。这里，我们恢复了几何的测量意义。
+
+<strong>另一方面，黎曼度量也可以看成是一种测量的标准。好比各个国家有各自的货币，不尽相同，但如果有一个公式，可以把任意一个国家的货币换算为等价的黄金数量，那么就可以解决不同货币数目的比较问题。黎曼度量有着类似的作用，与其说它给出了不同位置的不同计算距离的方式，倒不如说它统一了各个位置计算距离的方式。</strong>
+
+顺便需要说明的是，从只是定义距离的角度来看，我们其实不一定要使用二次型，比如使用3次型、4次型甚至更复杂的形式都可以，但是就实用价值而言，我们只研究二次型的。但即便如此，已经有我们研究不完的问题了。
+
+### 一些例子
+
+什么情况下会产生（或许说需要）非常数的黎曼度量呢？前面已经看到，将直角坐标变换为极坐标，就会出现非常数的黎曼度量，也就是说，哪怕在平直空间中，只要使用曲线坐标系，就会出现非常数的黎曼度量。
+
+[![球面上的蚂蚁](<https://spaces.ac.cn/usr/uploads/2016/10/3989706640.svg>)](<https://spaces.ac.cn/usr/uploads/2016/10/3989706640.svg>)
+
+球面上的蚂蚁
+
+此外，弯曲空间的黎曼度量一定是非常数的。有没有一些具体的例子呢？最经典的应该是二维球面了（是二维球面，不是三维球坐标，读者不要弄混了），选定半径为1，那么球面坐标是
+$$\left\{\begin{aligned}&x=\sin\theta\cos\varphi\\
+&y=\sin\theta\sin\varphi\\
+&z=\cos\theta\end{aligned}\right. \tag{5} $$
+那么它的黎曼度量就是
+$$ds^2=dx^2+dy^2+dz^2=d\theta^2+\sin^2\theta d\varphi^2 \tag{6} $$
+
+[![等温面上的蚂蚁](<https://spaces.ac.cn/usr/uploads/2016/10/899918681.svg>)](<https://spaces.ac.cn/usr/uploads/2016/10/899918681.svg>)
+
+等温面上的蚂蚁
+
+另外一个很生动的例子是从《费曼物理学讲义》第二卷中学习到的，假设我们在一个平直的空间中，但空间的温度各处不同。我们用一把热膨胀系数很大的尺子作为我们的测量工具，那么会出现什么结果呢？在温度高的地方，尺子膨胀，那么测量的结果会变小；相反，在温度低的地方，尺子缩小，测量结果会变大。同样的距离，在温度高的地方，可能测量结果是50cm，在温度低的地方，测量的结果是100cm，因此需要一个非常数的度规将它们统一起来——要不就是50乘以2，要不就是100除以2，或者50乘以4、同时100乘以2，等等。不难想到，这时候黎曼度量应该具有的形式是（可以考虑二维的、三维的）
+$$ds^2 = f(x,y,z)(dx^2+dy^2+dz^2) \tag{7} $$
+
+这就导致了一个弯曲空间的出现——这时候不是空间“弯曲”了，而是尺子“弯曲”了。这个例子也出现在《费曼引力学讲义》中，据费曼所述，它是Robertson的一个学生发明的。由于明显的物理意义，它也被称为“等温参数”或者“等温坐标系”。<strong>事实上，这跟“运动是相对的”有点类似，一个弯曲空间的出现，可能是因为空间本身的弯曲（就像球面那样），也可能是尺子的“弯曲”（就像热膨胀的尺子），但它们的数学结果是一样的。</strong>
+
+### 局部直角坐标系
+
+现在我们尝试用矩阵形式来描述黎曼度量。记$\boldsymbol{g}=g_{\mu\nu}, \boldsymbol{x}=x^{\alpha}, d\boldsymbol{x}=dx^\alpha$，这里向量为列向量，并且我们对向量的分量与向量本身不作区分。因此，黎曼度量可以写为
+$$ds^2 = d\boldsymbol{x}^T \boldsymbol{g}d\boldsymbol{x} \tag{8} $$
+
+注意到矩阵$\boldsymbol{g}$是对称的，因此一般情况下，可以分解为$\boldsymbol{h}^T \boldsymbol{h}$，$\boldsymbol{h}$是与$\boldsymbol{g}$同阶的矩阵，这时候
+$$ds^2 = d\boldsymbol{x}^T \boldsymbol{h}^T \boldsymbol{h} d\boldsymbol{x}=\left(\boldsymbol{h}d\boldsymbol{x}\right)^T\left(\boldsymbol{h}d\boldsymbol{x}\right)=\left|\boldsymbol{h}d\boldsymbol{x}\right|^2 \tag{9} $$
+也就是说，最后转化为$\boldsymbol{h}d\boldsymbol{x}$的模长，而这个模长跟平直空间的勾股定理是一致的。我们可以认为，矩阵$\boldsymbol{h}$正好描述了当地的坐标系，在坐标系$\boldsymbol{h}$下的向量$d\boldsymbol{x}$，正是等价于当地的局部直角坐标系的向量$\boldsymbol{h}d\boldsymbol{x}$。或者说，$\boldsymbol{h}$就是从当地坐标系到局部直角坐标系的变换矩阵（雅可比矩阵）。
+
+有了到直角坐标系的变换，我们能够定义很多几何量，这些几何量都是从平直空间延伸过来的。比如给定向量$\boldsymbol{A}=A^{\mu}$，它的模长平方就是
+$$|\boldsymbol{h}\boldsymbol{A}|^2 = \boldsymbol{A}^T \boldsymbol{h}^T\boldsymbol{h}\boldsymbol{A}=\boldsymbol{A}^T \boldsymbol{g}\boldsymbol{A}=g_{\mu\nu}A^{\mu}A^{\nu} \tag{10} $$
+
+给定两个向量$\boldsymbol{A}$和$\boldsymbol{B}$，那么它们的内积就是
+$$\left(\boldsymbol{h}\boldsymbol{A}\right)^T \left(\boldsymbol{h}\boldsymbol{B}\right)= \boldsymbol{A}^T \boldsymbol{h}^T\boldsymbol{h}\boldsymbol{B}=\boldsymbol{A}^T \boldsymbol{g}\boldsymbol{B}=g_{\mu\nu}A^{\mu}B^{\nu} \tag{11} $$
+如果你愿意，还可以定义它们的夹角$\theta$为：
+$$\theta=\arccos \frac{g_{\mu\nu}A^{\mu}B^{\nu}}{\sqrt{g_{\mu\nu}A^{\mu}A^{\nu}}\sqrt{g_{\mu\nu}B^{\mu}B^{\nu}}} \tag{12} $$
+
+同时，还可以算两个向量$\boldsymbol{A}$和$\boldsymbol{B}$张成的平行四边形的面积：
+$$\left|\boldsymbol{h}\boldsymbol{A}\right| \times \left|\boldsymbol{h}\boldsymbol{B}\right|\times \sin\theta = \sqrt{(g_{\mu\nu}A^{\mu}A^{\nu})(g_{\mu\nu}B^{\mu}B^{\nu})-(g_{\mu\nu}A^{\mu}B^{\nu})^2} \tag{13} $$
+
+如果要算（超）体积分，那么体积元是
+$$\det(\boldsymbol{h})\prod_{\alpha} dx^{\alpha} = \sqrt{\det(\boldsymbol{g})} \prod_{\alpha} dx^{\alpha} = \sqrt{g}d\Omega \tag{14} $$
+这里$g$是$\det(\boldsymbol{g})$的简记，$d\Omega$是$\prod_{\alpha} dx^{\alpha}$的简记，注意我们有$\det(\boldsymbol{g})=det(\boldsymbol{h}^T \boldsymbol{h})=(\det(\boldsymbol{h}))^2$。$\sqrt{g}$实际上就是一个体积的缩放因子。有了这个结果，我们就可以写出：给定$n$个向量$\boldsymbol{A}^1,\boldsymbol{A}^2,\dots,\boldsymbol{A}^n$，把它们写成列向量的形式，那么它们所张成的平行$n$维体的超体积是
+$$\sqrt{g}\det(\boldsymbol{A}^1,\boldsymbol{A}^2,\dots,\boldsymbol{A}^n)\tag{15}$$
+这里$(\boldsymbol{A}^1,\boldsymbol{A}^2,\dots,\boldsymbol{A}^n)$是指将这$n$个列向量排成一个$n\times n$的矩阵。

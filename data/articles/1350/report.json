@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "1350",
+    "title": "双固定引力中心问题",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/1350",
+    "date": "2011-05-14",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 40,
+    "display_formula_count": 21,
+    "image_count": 1,
+    "heading_count": 0,
+    "code_block_count": 0,
+    "source_text_sha256": "83222628e3cfe2eb4baf2dc34ad845ef43ccdb97fa3315712198b7e1788c9e10",
+    "output_text_sha256": "83222628e3cfe2eb4baf2dc34ad845ef43ccdb97fa3315712198b7e1788c9e10",
+    "latex_sha256": "fd042101c9225e25700ea58feda61702b2609a5b6c1888a0bb93d271155700f7",
+    "body_sha256": "3c74f7af4e0ddc018d95fd01f512e042c5495c1b65abc33e4ec41fb5dc4204a4",
+    "converter_version": 1,
+    "markdown_sha256": "2d8d656d1897ae07c08fc554f44d00f897904816ef181fcac8c4c865418788f2"
+  },
+  "fetched_at": "2026-09-14T14:21:27+00:00",
+  "source_snapshot_sha256": "9943690ee8d7063e22f6abced057a6dea2040eb1a59839669e38e39b1c06de31",
+  "images": {},
+  "local_only": true
+}

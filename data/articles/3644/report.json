@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "3644",
+    "title": "Openwrt自动扫描WiFi并连接中继",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/3644",
+    "date": "2016-03-06",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 0,
+    "display_formula_count": 0,
+    "image_count": 1,
+    "heading_count": 0,
+    "code_block_count": 4,
+    "source_text_sha256": "82f4f3163fdd3d207359e7229903945ad58e04f9e6463fa6500f5962b4c34568",
+    "output_text_sha256": "82f4f3163fdd3d207359e7229903945ad58e04f9e6463fa6500f5962b4c34568",
+    "latex_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "body_sha256": "9b8e8630511810f1b268a2fc6de8b3b86509202b888e54692c6cd984e61f2218",
+    "converter_version": 1,
+    "markdown_sha256": "21ae50ad0ca8afd3596bc6d418633c6b63d6b29652e31324012b80e6f7b70402"
+  },
+  "fetched_at": "2026-09-14T13:42:13+00:00",
+  "source_snapshot_sha256": "d7e731b2a5fe418b9c27e03f5bae9bff1ccd5765846b8dcf71ae38f40ceae132",
+  "images": {},
+  "local_only": true
+}

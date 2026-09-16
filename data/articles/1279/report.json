@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "1279",
+    "title": "科学空间两岁了",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/1279",
+    "date": "2011-03-05",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 0,
+    "display_formula_count": 0,
+    "image_count": 0,
+    "heading_count": 0,
+    "code_block_count": 0,
+    "source_text_sha256": "8bcc42ae47b257f26da5f532a48f636a4f5a517b519c4f6ab8529e0f0ed353bc",
+    "output_text_sha256": "8bcc42ae47b257f26da5f532a48f636a4f5a517b519c4f6ab8529e0f0ed353bc",
+    "latex_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "body_sha256": "4942f363327f1683b8c3ae4668f90b0af675e34d69d3c2d297e72381fbd0cddc",
+    "converter_version": 1,
+    "markdown_sha256": "fc1836df02962bba405d317679a566b740e0048f188779de2e15b9a7cf17a2c9"
+  },
+  "fetched_at": "2026-09-14T14:23:35+00:00",
+  "source_snapshot_sha256": "34344a89c8d0c6b6e623b5326cea1f31dcb69663ad78208d9f95425d96f77840",
+  "images": {},
+  "local_only": true
+}

@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "744",
+    "title": "神秘的圆——三角形的“六接圆”(添加新方法)",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/744",
+    "date": "2010-07-24",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 8,
+    "display_formula_count": 1,
+    "image_count": 4,
+    "heading_count": 0,
+    "code_block_count": 0,
+    "source_text_sha256": "5b1397396d6b37a80e224c52370ee0b9f34672b538233578fbc5cef78f8c0bbf",
+    "output_text_sha256": "5b1397396d6b37a80e224c52370ee0b9f34672b538233578fbc5cef78f8c0bbf",
+    "latex_sha256": "775f9b16d3dd860a96c037ac5ae153b7fc24f1a61f3f49f58e186598638dcd29",
+    "body_sha256": "602f48bc5fbac32fe71228f76abe49e31588847db74c6f83f73b6e62b4694938",
+    "converter_version": 1,
+    "markdown_sha256": "123f5ea73db09f87e0940b3cb9f1a8ec79245e69979c63304dd3fcecba68cca7"
+  },
+  "fetched_at": "2026-09-14T14:33:58+00:00",
+  "source_snapshot_sha256": "da2b8e887280d929527f53eba2721babf5399c2f144fba894fed9e3148eaf4c9",
+  "images": {},
+  "local_only": true
+}

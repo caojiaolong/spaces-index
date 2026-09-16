@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "11126",
+    "title": "QK-Clip：让Muon在Scaleup之路上更进一步",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/11126",
+    "date": "2025-07-12",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 76,
+    "display_formula_count": 10,
+    "image_count": 4,
+    "heading_count": 8,
+    "code_block_count": 0,
+    "source_text_sha256": "0c3aedb31a7ebfd8e04099667acf73ccda88e8a8dcf53d9d234d6c374807ef34",
+    "output_text_sha256": "0c3aedb31a7ebfd8e04099667acf73ccda88e8a8dcf53d9d234d6c374807ef34",
+    "latex_sha256": "597be425020481313a36e3aa1668049fc025e5cc85a506f88cdb6f69c928c011",
+    "body_sha256": "d7c1fae14a3cdf22bf3a4b9c40b95f4c31ec8850b01860ee97cd189a4147a4f5",
+    "converter_version": 1,
+    "markdown_sha256": "21f392b6b17c30cd961233162c83b05ccc5b6fed2ac400e162066635ca222f8d"
+  },
+  "fetched_at": "2026-09-14T12:41:09+00:00",
+  "source_snapshot_sha256": "ccde52414c0fda76af2f7b421a44ae43ffb9b0757f43d26effd68c38aeff39e5",
+  "images": {},
+  "local_only": true
+}

@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "8739",
+    "title": "bert4keras在手，baseline我有：CLUE基准代码",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/8739",
+    "date": "2021-10-31",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 8,
+    "display_formula_count": 2,
+    "image_count": 4,
+    "heading_count": 9,
+    "code_block_count": 0,
+    "source_text_sha256": "3b3e2f6918eaa3d5d168e81ad61123b82887fa8424a5d3b3c4a3921e62a95d78",
+    "output_text_sha256": "3b3e2f6918eaa3d5d168e81ad61123b82887fa8424a5d3b3c4a3921e62a95d78",
+    "latex_sha256": "a5f84168da9b4179e6c64290bb0bdb37c46eb0fb67b4b44b3104cd65599ea0eb",
+    "body_sha256": "dfac2a8c23c109ff7c407d67cfa383db83c611762377f016307d670466a36cf3",
+    "converter_version": 1,
+    "markdown_sha256": "cd37184f1bfce3b23fb9031da8ac75909921eea4bca6651bd9def706a31ec873"
+  },
+  "fetched_at": "2026-09-14T13:03:28+00:00",
+  "source_snapshot_sha256": "6aa86e3c2ce1434fd2860d1cbee9a493b8d629b22e65b96111b2c247ec719d3e",
+  "images": {},
+  "local_only": true
+}

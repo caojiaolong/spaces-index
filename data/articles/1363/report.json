@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "1363",
+    "title": "两本通俗读物：混沌和对称",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/1363",
+    "date": "2011-05-28",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 0,
+    "display_formula_count": 0,
+    "image_count": 0,
+    "heading_count": 0,
+    "code_block_count": 0,
+    "source_text_sha256": "2bd6c5a37506b493553d70df3197e662914c7b336ac42703a07f4dbd6c2945ba",
+    "output_text_sha256": "2bd6c5a37506b493553d70df3197e662914c7b336ac42703a07f4dbd6c2945ba",
+    "latex_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "body_sha256": "7c9fdffb4dd0a76b4b7e36b2706fde375388842bf891ab2f3b32c376a3afaa0e",
+    "converter_version": 1,
+    "markdown_sha256": "d14165df98ab9670482b471e3331ccd96be9b8c6def4614a2274298fbc1725c7"
+  },
+  "fetched_at": "2026-09-14T14:21:08+00:00",
+  "source_snapshot_sha256": "a048159e3e057c46c10815311ea13f4aac305c3f9561e48f084ec9d3a05019ac",
+  "images": {},
+  "local_only": true
+}

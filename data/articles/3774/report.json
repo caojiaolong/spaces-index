@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "3774",
+    "title": "OCR技术浅探：1. 全文简述",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/3774",
+    "date": "2016-06-17",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 0,
+    "display_formula_count": 0,
+    "image_count": 0,
+    "heading_count": 0,
+    "code_block_count": 0,
+    "source_text_sha256": "2cd779e783b2778523c39377e8f64fd34a4689f8bfb3d84ee0db1d6e7d23e847",
+    "output_text_sha256": "2cd779e783b2778523c39377e8f64fd34a4689f8bfb3d84ee0db1d6e7d23e847",
+    "latex_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "body_sha256": "b1088514e79d1f45199d88a8c395df56a16c919bdb44f7dccb3a84822f25acc5",
+    "converter_version": 1,
+    "markdown_sha256": "1646887eb09eb9e5e2166a04b9ccd06bca9dc827f0ecb8eaf157e92cf053d3f5"
+  },
+  "fetched_at": "2026-09-14T13:40:22+00:00",
+  "source_snapshot_sha256": "9296df6aa532dbf56f8a4a5896eb539b3124aebe59529f89d09a59bde91075c1",
+  "images": {},
+  "local_only": true
+}

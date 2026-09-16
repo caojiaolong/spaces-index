@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "11285",
+    "title": "重新思考学习率与Batch Size（三）：Muon",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/11285",
+    "date": "2025-09-15",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 63,
+    "display_formula_count": 8,
+    "image_count": 0,
+    "heading_count": 5,
+    "code_block_count": 0,
+    "source_text_sha256": "b4a82b08e17072fd19a8b0048ddd1c0a19932741be6a69c262194efc1b2c282e",
+    "output_text_sha256": "b4a82b08e17072fd19a8b0048ddd1c0a19932741be6a69c262194efc1b2c282e",
+    "latex_sha256": "c8ef7cb7f6b803a8067d8f45995360fe37949cf92fb0c08800129705cd5ac15e",
+    "body_sha256": "dd97d1356407796e9361255ef2df4571b4003e73f71b3078a6f404dfb9eb9957",
+    "converter_version": 1,
+    "markdown_sha256": "2da3fdac23086d5b49d16dbd4db190b37f72a0d21852991dbe82a9d7cb24e94d"
+  },
+  "fetched_at": "2026-09-14T12:39:47+00:00",
+  "source_snapshot_sha256": "a7c0000895ab09beac1501199951e1b43c1164a5bcfe3c2226e5db0960b84ea0",
+  "images": {},
+  "local_only": true
+}

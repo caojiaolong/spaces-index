@@ -1,0 +1,62 @@
+<div class="PostContent" id="PostContent">
+<p>我们在<a href="/archives/11280" target="_blank">《重新思考学习率与Batch Size（二）：平均场》</a>中提到，关注SignSGD的原因之一是我们通常将它作为Adam的理论近似，这是Adam做理论分析时常用的简化策略。除了分析学习率的场景外，在<a href="/archives/10001" target="_blank">《配置不同的学习率，LoRA还能再涨一点？》</a>、<a href="/archives/10770" target="_blank">《初探MuP：超参数的跨模型尺度迁移规律》</a>等地方我们也用了这个简化。</p><p>然而，SignSGD真是Adam的良好近似吗？一个明显差异是SignSGD的Update RMS总是1，而Adam并非如此。笔者发现，导致这一差异的核心原因是动量，它普遍存在于Adam、Lion、Muon等优化器中。所以，本文我们来考察动量——更广义地说是EMA——的影响。</p><h2 id="问题分析">问题分析</h2><p>从Adam的视角看，SignSGD对应$\beta_1=\beta_2=0$这个特例，或者对应于Adam的第一步更新量（不管$\beta_1,\beta_2$如何）。因此，我们认为它跟Adam肯定有一些共性，能够捕捉到一些通用的规律。</p><p>但是，它们之间也有一些明显的差异。比较典型的就是Update RMS的差异，SignSGD总是1，但Adam往往明显小于1；还有，Adam看上去更贴近SGD，它更像是SignSGD和SGD的一个中间版本。一开始，笔者以为这是Adam分母中的$\epsilon$导致的差异，所以在<a href="/archives/10563" target="_blank">《Adam的epsilon如何影响学习率的Scaling Law？》</a>还特意计算了带$\epsilon$的SoftSignSGD。</p><p>后来，我们在<a href="/archives/11267" target="_blank">《为什么Adam的Update RMS是0.2？》</a>从模拟和理论两方面估计了Adam的Update RMS，其实平均场近似的估计结果为$\sqrt{\frac{1-\beta_1}{1+\beta_1}}$，并且验证了它跟模拟结果和实际实验都很吻合。这个结果显式地依赖于$\beta_1$，所以很明显，它将我们的思考方向引向动量。</p><p>这就有了下面的分析过程。综下所述，我们可以确认，$\epsilon$的角色确实是次要的，真正的主角其实是动量——它是梯度的“滑动平均”——这也正是本文的主角“EMA（Exponential Moving Average）”。</p><h2 id="梯度下降">梯度下降</h2><p>为了分析EMA带来的变数，我们从SGDM入手，也就是带动量的SGD，实际上我们在用SGD的时候极少情况是不加动量的：<br/>
+\begin{equation}\begin{aligned}<br/>
+&amp;\boldsymbol{m}_t = \beta_1 \boldsymbol{m}_{t-1} + \left(1 - \beta_1\right) \boldsymbol{g}_t \\[4pt]<br/>
+&amp;\boldsymbol{w}_t = \boldsymbol{w}_{t-1} - \eta_t \boldsymbol{m}_t<br/>
+\end{aligned}\end{equation}<br/>
+实际使用中，$\boldsymbol{g}_t$替换为$\tilde{\boldsymbol{g}}_{B,t}$，它是一个随机变量，均值为$\boldsymbol{g}_t$，协方差矩阵为$\boldsymbol{\Sigma}_t/B$，这些基本设置跟<a href="/archives/11260" target="_blank">《重新思考学习率与Batch Size（一）：现状》</a>是一样的。这里的噪声，是由随机采样不同的Batch引起的，所以我们可以合理地假设，不同$t$之间的$\tilde{\boldsymbol{g}}_{B,t}$是相互独立的。</p><p>我们的任务，是计算<br/>
+\begin{equation}\newcommand{tr}{\mathop{\text{tr}}}\eta^* \approx \frac{\mathbb{E}[\tilde{\boldsymbol{\varphi}}_B]^{\top}\boldsymbol{g}}{\tr(\mathbb{E}[\tilde{\boldsymbol{\varphi}}_B\tilde{\boldsymbol{\varphi}}_B^{\top}]\boldsymbol{H})}\label{eq:eta-opt}\end{equation}<br/>
+相关推导在前面几篇文章已经给出，这里就不再重复。对于SGDM来说$\tilde{\boldsymbol{\varphi}}_B = \boldsymbol{m}_t$，它可以展开成<br/>
+\begin{equation}\boldsymbol{m}_t = (1 - \beta_1)\sum\limits_{s=1}^t \beta_1^{t-s}\tilde{\boldsymbol{g}}_{B,s}\end{equation}</p><h2 id="放大批量">放大批量</h2><p>现在可以计算<br/>
+\begin{equation}\mathbb{E}[\boldsymbol{m}_t] = (1 - \beta_1)\sum_{s=1}^t \beta_1^{t-s}\mathbb{E}[\tilde{\boldsymbol{g}}_{B,s}] = (1 - \beta_1)\sum_{s=1}^t \beta_1^{t-s}\boldsymbol{g}_s\end{equation}<br/>
+我们进一步假设当模型训练进入“正轨”后，梯度是缓变的，那么我们可以用当前梯度$\boldsymbol{g}_t$近似$\boldsymbol{g}_s$，得到<br/>
+\begin{equation}\mathbb{E}[\boldsymbol{m}_t] = (1 - \beta_1)\sum_{s=1}^t \beta_1^{t-s}\boldsymbol{g}_t = (1 - \beta_1^t) \boldsymbol{g}_t \approx \boldsymbol{g}_t \qquad (t\to\infty)\end{equation}<br/>
+至于$\mathbb{E}[\boldsymbol{m}_t \boldsymbol{m}_t^{\top}]$，我们利用恒等式$\mathbb{E}[\boldsymbol{m}_t \boldsymbol{m}_t^{\top}] = \mathbb{E}[\boldsymbol{m}_t] \mathbb{E}[\boldsymbol{m}_t]^{\top} + \mathbb{C}\text{ov}[\boldsymbol{m}_t,\boldsymbol{m}_t]$，然后利用方差的可加性得到：<br/>
+\begin{equation}\mathbb{C}\text{ov}[\boldsymbol{m}_t,\boldsymbol{m}_t] = (1 - \beta_1)^2\sum_{s=1}^t \beta_1^{2(t-s)}\boldsymbol{\Sigma}_s/B\end{equation}<br/>
+类似地，我们假设协方差矩阵的缓变性，那么<br/>
+\begin{equation}\mathbb{C}\text{ov}[\boldsymbol{m}_t] \approx (1 - \beta_1)^2\sum_{s=1}^t \beta_1^{2(t-s)}\boldsymbol{\Sigma}_t/B = (1 - \beta_1)^2\frac{1-\beta_1^{2t}}{1-\beta_1^2}\boldsymbol{\Sigma}_t/B = \frac{1 - \beta_1}{1 + \beta_1}\boldsymbol{\Sigma}_t/B \qquad (t\to\infty)\end{equation}<br/>
+代入式$\eqref{eq:eta-opt}$得<br/>
+\begin{equation}\eta^* \approx \frac{\eta_{\max}}{1 + \frac{1 - \beta_1}{1 + \beta_1}\mathcal{B}_{\text{noise}}/B},\qquad \eta_{\max} = \frac{\boldsymbol{g}^{\top}\boldsymbol{g}}{\boldsymbol{g}^{\top}\boldsymbol{H}\boldsymbol{g}},\quad\mathcal{B}_{\text{noise}} = \frac{\tr(\boldsymbol{\Sigma}\boldsymbol{H})}{\boldsymbol{g}^{\top}\boldsymbol{H}\boldsymbol{g}}\end{equation}<br/>
+从这个结果可以看出，动量机制的引入，相当于把SGD的Batch Size放大到了$\frac{1 + \beta_1}{1 - \beta_1}$倍。按照笔者的理解，动量就是通过对优化轨迹上的梯度做EMA来低成本地消除梯度噪声，所以这个结果这跟笔者所理解的动量意义是相符的。</p><h2 id="符号动量">符号动量</h2><p>进一步地，我们考虑SignSGDM，它可以视作<a href="/archives/9473" target="_blank">Lion</a>的一个特例，也就是SGDM多加了个$\newcommand{sign}{\mathop{\text{sign}}}\sign$：<br/>
+\begin{equation}\begin{aligned}<br/>
+&amp;\boldsymbol{m}_t = \beta_1 \boldsymbol{m}_{t-1} + \left(1 - \beta_1\right) \boldsymbol{g}_t \\[4pt]<br/>
+&amp;\boldsymbol{w}_t = \boldsymbol{w}_{t-1} - \eta_t \sign(\boldsymbol{m}_t)<br/>
+\end{aligned}\end{equation}<br/>
+实际训练中$\boldsymbol{g}_t$同样替换为$\tilde{\boldsymbol{g}}_{B,t}$。对SignSGDM来说$\tilde{\boldsymbol{\varphi}}_B = \sign(\boldsymbol{m}_t)$，那么根据平均场近似得<br/>
+\begin{equation}\mathbb{E}[\tilde{\boldsymbol{\varphi}}_B] = \mathbb{E}\bigg[\frac{\boldsymbol{m}_t}{\sqrt{\boldsymbol{m}_t^2}}\bigg]\approx \frac{\mathbb{E}[\boldsymbol{m}_t]}{\sqrt{\mathbb{E}[\boldsymbol{m}_t^2]}}\end{equation}<br/>
+其中向量乘法默认是Hadamard积。分子$\mathbb{E}[\boldsymbol{m}_t]$我们在上一节已经算了，分母$\mathbb{E}[\boldsymbol{m}_t^2]$其实等于$\newcommand{diag}{\mathop{\text{diag}}}\diag(\mathbb{E}[\boldsymbol{m}_t \boldsymbol{m}_t^{\top}])$，所以也可以代入上一节的结果，得到<br/>
+\begin{equation}\mathbb{E}[\tilde{\boldsymbol{\varphi}}_B] \approx \frac{\boldsymbol{g}_t}{\sqrt{\boldsymbol{g}_t^2 + \frac{1 - \beta_1}{1 + \beta_1}\boldsymbol{\sigma}_t^2/B}} = \frac{\sign(\boldsymbol{g}_t)}{\sqrt{1 + \frac{1 - \beta_1}{1 + \beta_1}(\boldsymbol{\sigma}_t^2/\boldsymbol{g}_t^2)/B}} \approx \frac{\sign(\boldsymbol{g}_t)}{\sqrt{1 + \frac{1 - \beta_1}{1 + \beta_1} \mathcal{B}_{\text{simple}}/B}}\end{equation}<br/>
+其中$\boldsymbol{\sigma}_t^2 = \diag(\boldsymbol{\Sigma}_t), \mathcal{B}_{\text{simple}} = \tr(\boldsymbol{\Sigma}_t)/\boldsymbol{g}_t^{\top}\boldsymbol{g}_t$。上式相当于SignSGD的$B$换成了$\frac{1 + \beta_1}{1 - \beta_1}B$，如果我们进一步计算$\mathbb{E}[\tilde{\boldsymbol{\varphi}}_B\tilde{\boldsymbol{\varphi}}_B^{\top}]$就会发现结论也是如此。所以，跟SGDM一样，动量相当于把SignSGD的Batch Size放大到了$\frac{1 + \beta_1}{1 - \beta_1}$倍。</p><p>在<a href="/archives/11285" target="_blank">《重新思考学习率与Batch Size（三）：Muon》</a>中我们计算过Muon的学习率规律，发现它跟SignSGD一致，所以我们可以断言，动量在Muon中的作用跟SignSGDM一样，都约等于将Batch Size放大成$\frac{1 + \beta_1}{1 - \beta_1}$倍。</p><h2 id="双重滑动">双重滑动</h2><p>最后我们来看Adam：<br/>
+\begin{equation}\begin{aligned}<br/>
+&amp;\boldsymbol{m}_t = \beta_1 \boldsymbol{m}_{t-1} + \left(1 - \beta_1\right) \boldsymbol{g}_t\\<br/>
+&amp;\boldsymbol{v}_t = \beta_2 \boldsymbol{v}_{t-1} + \left(1 - \beta_2\right) \boldsymbol{g}_t^2\\<br/>
+&amp;\hat{\boldsymbol{m}}_t = \boldsymbol{m}_t\left/\left(1 - \beta_1^t\right)\right.\\<br/>
+&amp;\hat{\boldsymbol{v}}_t = \boldsymbol{v}_t\left/\left(1 - \beta_2^t\right)\right.\\<br/>
+&amp;\boldsymbol{\theta}_t = \boldsymbol{\theta}_{t-1} - \eta_t \hat{\boldsymbol{m}}_t\left/\left(\sqrt{\hat{\boldsymbol{v}}_t} + \epsilon\right)\right.<br/>
+\end{aligned}\end{equation}<br/>
+实际训练中$\boldsymbol{g}_t$替换为$\tilde{\boldsymbol{g}}_{B,t}$。我们考虑的都是训练已经进入“正轨”的状态，即$t\to\infty$，所以不区分$\boldsymbol{m}_t$和$\hat{\boldsymbol{m}}_t$、$\boldsymbol{v}_t$和$\hat{\boldsymbol{v}}_t$，同时我们聚焦于EMA的作用，所以设$\epsilon = 0$。那么对于Adam来说有$\tilde{\boldsymbol{\varphi}}_B=\boldsymbol{m}_t/\sqrt{\boldsymbol{v}_t}$，它跟SignSGDM的区别，就是分母的$\boldsymbol{m}_t^2$换成了另一个EMA的统计量$\boldsymbol{v}_t$。</p><p>由平均场近似得<br/>
+\begin{equation}\mathbb{E}[\tilde{\boldsymbol{\varphi}}_B] = \mathbb{E}\bigg[\frac{\boldsymbol{m}_t}{\sqrt{\boldsymbol{v}_t}}\bigg]\approx \frac{\mathbb{E}[\boldsymbol{m}_t]}{\sqrt{\mathbb{E}[\boldsymbol{v}_t]}}\end{equation}<br/>
+$\mathbb{E}[\boldsymbol{m}_t]$我们已经算过，只需算$\mathbb{E}[\boldsymbol{v}_t]$：<br/>
+\begin{equation}\mathbb{E}[\boldsymbol{v}_t] = (1 - \beta_2)\sum_{s=1}^t \beta_2^{t-s}\mathbb{E}[\tilde{\boldsymbol{g}}_{B,s}^2] = (1 - \beta_2)\sum_{s=1}^t \beta_2^{t-s}(\boldsymbol{g}_s^2 + \boldsymbol{\sigma}_s^2/B)\approx \boldsymbol{g}_t^2 + \boldsymbol{\sigma}_t^2/B\end{equation}<br/>
+跟前面一样，最后一个约等号假设了梯度和方差的缓变性，以及$t\to\infty$。于是我们有<br/>
+\begin{equation}\mathbb{E}[\tilde{\boldsymbol{\varphi}}_B] \approx \frac{\boldsymbol{g}_t}{\sqrt{\boldsymbol{g}_t^2 + \boldsymbol{\sigma}_t^2/B}} \approx \frac{\sign(\boldsymbol{g}_t)}{\sqrt{1 + \mathcal{B}_{\text{simple}}/B}}\end{equation}<br/>
+这个结果倒是跟SignSGD相同，所以单从一阶矩看，SignSGD作为Adam的近似是合理的。但我们还有二阶矩$\mathbb{E}[\tilde{\boldsymbol{\varphi}}_B \tilde{\boldsymbol{\varphi}}_B^{\top}]$，在分量独立的假设下，我们只需要算$\mathbb{E}[\tilde{\boldsymbol{\varphi}}_B^2]$：<br/>
+\begin{equation}\mathbb{E}[\tilde{\boldsymbol{\varphi}}_B^2] = \mathbb{E}\bigg[\frac{\boldsymbol{m}_t^2}{\boldsymbol{v}_t}\bigg]\approx \frac{\mathbb{E}[\boldsymbol{m}_t^2]}{\mathbb{E}[\boldsymbol{v}_t]} \approx \frac{\boldsymbol{g}_t^2 + \frac{1 - \beta_1}{1 + \beta_1}\boldsymbol{\sigma}_t^2/B}{\boldsymbol{g}_t^2 + \boldsymbol{\sigma}_t^2/B}\label{eq:u2-adam}\end{equation}</p><h2 id="两个特例">两个特例</h2><p>我们观察两个特例。首先是$\beta_1=0$，这时候分子分母相同，$\mathbb{E}[\tilde{\boldsymbol{\varphi}}_B^2]$是全1向量，跟SignSGD一致。所以说，SignSGD是$\beta_1=0$的Adam——也就是<a href="https://www.cs.toronto.edu/~tijmen/csc321/slides/lecture_slides_lec6.pdf" target="_blank">RMSProp</a>——的良好近似，当$\beta_1$增大时，近似程度开始变差。</p><p>当$\beta_1=1$时，我们有<br/>
+\begin{equation}\mathbb{E}[\tilde{\boldsymbol{\varphi}}_B^2] \approx \frac{\boldsymbol{g}_t^2}{\boldsymbol{g}_t^2 + \boldsymbol{\sigma}_t^2/B}\approx \mathbb{E}[\tilde{\boldsymbol{\varphi}}_B]^2\end{equation}<br/>
+由此得到$\mathbb{E}[\tilde{\boldsymbol{\varphi}}_B \tilde{\boldsymbol{\varphi}}_B^{\top}] \approx \mathbb{E}[\tilde{\boldsymbol{\varphi}}_B] \mathbb{E}[\tilde{\boldsymbol{\varphi}}_B]^{\top}$，代入到式$\eqref{eq:eta-opt}$得<br/>
+\begin{equation}\eta^* \approx \frac{\Vert \boldsymbol{g}\Vert_1 \sqrt{1 + \mathcal{B}_{\text{simple}}/B}}{\sign(\boldsymbol{g})^{\top} \boldsymbol{H} \sign(\boldsymbol{g})}\end{equation}<br/>
+注意，它是关于$B$的单调递减函数，即当Batch Size增大时学习率应该减小。由此我们可以推测，Adam的$\beta_1$的增大，将会加速“<a href="/archives/11280#%E5%8F%8D%E5%B8%B8%E7%8E%B0%E8%B1%A1" target="_blank">Surge现象</a>”的出现。</p><p>这个结论看似有点费解，但其实换个角度就容易理解了。“Surge现象”指当Batch Size超过某个阈值后，最优学习率随着Batch Size的增大而减少，而前面SGDM、SignSGDM的结果都表明，动量的引入约等于将Batch Size扩大到$\frac{1 + \beta_1}{1 - \beta_1} &gt; 1$倍，这自然增加了超过阈值的可能性。</p><p>换句话说，“随着$\beta_1$的增大，‘Surge现象’将更容易出现”的结论，即便对于SignSGDM也是成立的。而Adam相比SignSGDM有一些新的特性，但“动量机制约等于放大Batch Size”这一点始终是成立的，所以出现同样的结论就不难理解了。</p><h2 id="一般分析">一般分析</h2><p>我们改写一下式$\eqref{eq:u2-adam}$：<br/>
+\begin{equation}\mathbb{E}[\tilde{\boldsymbol{\varphi}}_B^2] \approx \frac{\boldsymbol{g}_t^2 + \frac{1 - \beta_1}{1 + \beta_1}\boldsymbol{\sigma}_t^2/B}{\boldsymbol{g}_t^2 + \boldsymbol{\sigma}_t^2/B} = \frac{2\beta_1}{1+\beta_1}\frac{\boldsymbol{g}_t^2}{\boldsymbol{g}_t^2 + \boldsymbol{\sigma}_t^2/B} + \frac{1 - \beta_1}{1 + \beta_1} \approx \frac{2\beta_1}{1+\beta_1}\mathbb{E}[\tilde{\boldsymbol{\varphi}}_B]^2 + \frac{1 - \beta_1}{1 + \beta_1}\end{equation}<br/>
+由此我们可以写出<br/>
+\begin{equation}\mathbb{E}[\tilde{\boldsymbol{\varphi}}_B \tilde{\boldsymbol{\varphi}}_B^{\top}] \approx \mathbb{E}[\tilde{\boldsymbol{\varphi}}_B] \mathbb{E}[\tilde{\boldsymbol{\varphi}}_B]^{\top} + \frac{1 - \beta_1}{1 + \beta_1}\diag\left(1 - \mathbb{E}[\tilde{\boldsymbol{\varphi}}_B]^2\right)\end{equation}<br/>
+那么<br/>
+\begin{equation}\eta^* \approx \frac{\sum_i |g_i|}{\frac{1}{\beta}\frac{1 - \beta_1}{1 + \beta_1}\sum_i H_{i,i} + \beta\left(\sum_{i,j} H_{i,j}\sign(g_i g_j) - \frac{1 - \beta_1}{1 + \beta_1}\sum_i H_{i,i}\right)}\end{equation}<br/>
+这里没有下标的$\beta$等于$(1 + \mathcal{B}_{\text{simple}}/B)^{-1/2}$，不仔细看的话可能会跟$\beta_1,\beta_2$混淆，笔者表示很抱歉，因为这是前两篇文章的记号，这里只好沿用了。跟SignSGD不同的是，如果假设Hessian矩阵是对角阵，那么SignSGD就不会出现Surge现象，但上式即便是在对角Hessian假设下依然出现Surge现象，此时：<br/>
+\begin{equation}\eta^* \approx \frac{\sum_i |g_i|}{\left(\frac{1}{\beta}\frac{1 - \beta_1}{1 + \beta_1} + \beta\frac{2\beta_1}{1 + \beta_1}\right)\sum_i H_{i,i}}\end{equation}<br/>
+由均值不等式知上式在$\beta^*=\sqrt{\frac{1-\beta_1}{2\beta_1}}$处取到最大值，但要注意根据$\beta$定义，它是$\in(0,1)$的，所以还要判断$\beta^*\in(0,1)$，即$\beta_1 &gt; 1/3$，不满足这个条件时最大值依然在$\beta=1$取到，此时没有Surge现象。反之，当$\beta_1 &gt; 1/3$且$\beta &gt; \beta^*$（即$B &gt; \frac{1-\beta_1}{3\beta_1-1}\mathcal{B}_{\text{simple}}$）时，学习率应该随着Batch Size的增加而减小。</p><p>这个结论可以初步解释为啥Muon能支持更大Batch Size。由<a href="/archives/11285" target="_blank">《重新思考学习率与Batch Size（三）：Muon》</a>可知，Muon的表现跟SignSGDM类似，在特定Hessian结构假设下它不会出现Surge现象，这意味着增大Batch Size总可以提高学习效率，尽管相对收益会越来越小。</p><p>相反，Adam在常用设置（如$\beta_1=0.9$）下，哪怕假设Hessian是对角阵也会出现Surge现象，这意味着Batch Size超过一定值后，学习效率就下降了。</p><h2 id="文章小结">文章小结</h2><p>本文初步分析了优化器的EMA机制对学习率与Batch Size的尺度定律的影响，确认了EMA特别是动量机制的引入会稍微改变尺度定律，而Adam这种带有双重EMA运算的优化器，则会呈现出一些跟SignSGD不同的新特性。</p>
+
+
+
+
+
+</div>

@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "59",
+    "title": "逻辑推理：拿了多少分(PuzzleUp)",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/59",
+    "date": "2009-08-06",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 0,
+    "display_formula_count": 0,
+    "image_count": 3,
+    "heading_count": 0,
+    "code_block_count": 0,
+    "source_text_sha256": "2302848795a9cee2cabd0f173c039560c623ea08b270600fd1d8d8a03593409c",
+    "output_text_sha256": "2302848795a9cee2cabd0f173c039560c623ea08b270600fd1d8d8a03593409c",
+    "latex_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "body_sha256": "a5998e67e3ebd3b36a05e03c3949fcdc583adb45b20bdad818f74d9cf81dec61",
+    "converter_version": 1,
+    "markdown_sha256": "d83ee93ed414079ad779acaa931aafeae0fd87133fdd765cda3013b4f7e2ac7a"
+  },
+  "fetched_at": "2026-09-14T15:01:03+00:00",
+  "source_snapshot_sha256": "f948ba03b8d4a6e32139a5087fa102611973f457b701bb1f9ce07aa26613add9",
+  "images": {},
+  "local_only": true
+}

@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "8907",
+    "title": "多任务学习漫谈（三）：分主次之序",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/8907",
+    "date": "2022-02-14",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 113,
+    "display_formula_count": 12,
+    "image_count": 1,
+    "heading_count": 12,
+    "code_block_count": 0,
+    "source_text_sha256": "f45458c569d5d4c499abd1403cdee4c95e5832a8864cfa8223e5ad008c7b4f2a",
+    "output_text_sha256": "f45458c569d5d4c499abd1403cdee4c95e5832a8864cfa8223e5ad008c7b4f2a",
+    "latex_sha256": "9241d114528bbabf4b8b2b2b958f1695160d133f31e358c775744df2e9032d90",
+    "body_sha256": "262480030c3dae2c6523b764678925e4973f6174acd29276767456b3f97f95b8",
+    "converter_version": 1,
+    "markdown_sha256": "0fed112a14ceb285beaa12990058bb6bd9d45c0cf10fbb0b7ef19b3869e9db3b"
+  },
+  "fetched_at": "2026-09-14T13:01:22+00:00",
+  "source_snapshot_sha256": "02d1f2cfe41d67e3e2990e35d0c1eccb198ce157f9923c412954378acafffa43",
+  "images": {},
+  "local_only": true
+}

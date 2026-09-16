@@ -1,0 +1,17 @@
+{
+  "metadata": {
+    "id": "7764",
+    "title": "必须要GPT3吗？不，BERT的MLM模型也能小样本学习",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/7764",
+    "date": "2020-09-27",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "fetched_at": "2026-09-14T13:11:07+00:00",
+  "source_snapshot_sha256": "320f4d67312caaf1ffcfe92e942842699f1c6e0359ed32e07ec4aaae87c8c974",
+  "validators": {
+    "etag": null,
+    "last_modified": null
+  }
+}

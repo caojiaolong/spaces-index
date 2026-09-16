@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "8877",
+    "title": "Efficient GlobalPointer：少点参数，多点效果",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/8877",
+    "date": "2022-01-25",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 39,
+    "display_formula_count": 4,
+    "image_count": 0,
+    "heading_count": 5,
+    "code_block_count": 1,
+    "source_text_sha256": "b5190333f533ae6dac0bd740116dce4285526987ba0b3963e30e3839ac5a3870",
+    "output_text_sha256": "b5190333f533ae6dac0bd740116dce4285526987ba0b3963e30e3839ac5a3870",
+    "latex_sha256": "e7d5c5da826f69dc7c2a7c57ff5acf8e1bd47275f1bea8430f31f26ddc585855",
+    "body_sha256": "e29c320a2b475eb839a099c7ae1e3de1d3fb04be3c2659b0fab55049e5046854",
+    "converter_version": 1,
+    "markdown_sha256": "240348f83ab573710e3be549a8bf796e545ce87d4baf74adee9a0574dc02f50a"
+  },
+  "fetched_at": "2026-09-14T13:01:50+00:00",
+  "source_snapshot_sha256": "09edb5b4684ed62ffe01650248c786df9ac135513e4739b9d6eab7110e4ac274",
+  "images": {},
+  "local_only": true
+}

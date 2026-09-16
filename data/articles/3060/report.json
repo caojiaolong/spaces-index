@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "3060",
+    "title": "实数域上有限维可除代数只有四种",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/3060",
+    "date": "2014-11-12",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 24,
+    "display_formula_count": 6,
+    "image_count": 0,
+    "heading_count": 0,
+    "code_block_count": 0,
+    "source_text_sha256": "a7a58a3deea0e2f7131255c02567bf54a0ea11a52f2679afb0098c0537a27c07",
+    "output_text_sha256": "a7a58a3deea0e2f7131255c02567bf54a0ea11a52f2679afb0098c0537a27c07",
+    "latex_sha256": "cfe11228da42bfdde3a4a1f8f6bcd8b5808aa211b956ce30d5208a715d2e1322",
+    "body_sha256": "23c3c314b774b69f740436433554b6cf08838ab2984f24600c1e0b4e5b1c003c",
+    "converter_version": 1,
+    "markdown_sha256": "2557c7f17fdb9318c85646b4cda5560cb952e54f6fb09add5d1c7ce8d422f32c"
+  },
+  "fetched_at": "2026-09-14T13:49:52+00:00",
+  "source_snapshot_sha256": "1d2d11e06c6ebbb77719bf28f22c7830ce74768a7a1085591205832e733ae3ba",
+  "images": {},
+  "local_only": true
+}

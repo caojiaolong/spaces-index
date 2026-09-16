@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "280",
+    "title": "《当彩色的声音尝起来是甜的》电子版",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/280",
+    "date": "2009-11-15",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 0,
+    "display_formula_count": 0,
+    "image_count": 1,
+    "heading_count": 0,
+    "code_block_count": 0,
+    "source_text_sha256": "763f63bf25e6dddf5ca328baea548a9aca9c754241ca2cb3142d357490a45c93",
+    "output_text_sha256": "763f63bf25e6dddf5ca328baea548a9aca9c754241ca2cb3142d357490a45c93",
+    "latex_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "body_sha256": "286da1ba84ceaecb6e6886b7f60a1bea0b2a130fa3bbf2956a519b00e4be0852",
+    "converter_version": 1,
+    "markdown_sha256": "00fc5d65cf33fa0a578eca53b8dace824e404a42a60900cc17fe02f560523370"
+  },
+  "fetched_at": "2026-09-14T14:45:57+00:00",
+  "source_snapshot_sha256": "b741e3112313311fef9ab9faa81fc6a323c96f9950016595ba222f42ecde396d",
+  "images": {},
+  "local_only": true
+}

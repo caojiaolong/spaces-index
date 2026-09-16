@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "9152",
+    "title": "生成扩散模型漫谈（二）：DDPM = 自回归式VAE",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/9152",
+    "date": "2022-07-06",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 114,
+    "display_formula_count": 10,
+    "image_count": 1,
+    "heading_count": 9,
+    "code_block_count": 0,
+    "source_text_sha256": "80002f5be8a60ff8b2f64a2ac66f4f292045e2c4e5b58f1ca92d175b23d22b9f",
+    "output_text_sha256": "80002f5be8a60ff8b2f64a2ac66f4f292045e2c4e5b58f1ca92d175b23d22b9f",
+    "latex_sha256": "b0d244f93681e815c954153ac079953037e605f34ae446684db98d7c029a1e61",
+    "body_sha256": "850b947a6a59e894440335e8eab9e9c4a9e85db5d29423c422988a2b249eb7ee",
+    "converter_version": 1,
+    "markdown_sha256": "8f99ddd37559855ccaa6aa18222166068724763b22c2d5230dc014140816b924"
+  },
+  "fetched_at": "2026-09-14T12:58:53+00:00",
+  "source_snapshot_sha256": "f16d04828551dd1b178376b174a2fe6d596bc44b99a646af2bb3f2166780995c",
+  "images": {},
+  "local_only": true
+}

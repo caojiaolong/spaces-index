@@ -1,0 +1,17 @@
+{
+  "metadata": {
+    "id": "5887",
+    "title": "变分自编码器（四）：一步到位的聚类方案",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/5887",
+    "date": "2018-09-17",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "fetched_at": "2026-09-14T13:24:31+00:00",
+  "source_snapshot_sha256": "79567a8343036c611662de0c0dace3886d9f495884b67785bde812c92bee928b",
+  "validators": {
+    "etag": null,
+    "last_modified": null
+  }
+}

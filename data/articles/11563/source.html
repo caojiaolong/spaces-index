@@ -1,0 +1,82 @@
+<div class="PostContent" id="PostContent">
+<p>从<a href="/archives/11033" target="_blank">《线性注意力简史：从模仿、创新到反哺》</a>中我们可以看到，DeltaNet的并行形式涉及到了形如$(\boldsymbol{I} + \boldsymbol{K}\boldsymbol{K}^{\top}\odot \boldsymbol{M}^-)^{-1}$的逆矩阵。近日读者 <a href="/archives/11486/comment-page-1#comment-29143" target="_blank">@Arch123</a> 提出，通过实验可观察到该逆矩阵的元素总是在$[-1, 1]$内，问是否可以从数学上证实或证伪它。</p><p>在这篇文章中，我们将通过两种不同的方式证明这个结论是严格成立的。</p><h2 id="问题描述">问题描述</h2><p>首先，我们准确地重述一下问题。设有矩阵$\boldsymbol{K}=[\boldsymbol{k}_1,\boldsymbol{k}_2,\cdots,\boldsymbol{k}_n]^{\top}\in\mathbb{R}^{n\times d}$，其中每个$\boldsymbol{k}_i\in\mathbb{R}^{d\times 1}$是模长不超过1的列向量，$\boldsymbol{M}\in\mathbb{R}^{n\times n}$是一个下三角的掩码矩阵，定义为<br/>
+\begin{equation}M_{i,j} = \left\{\begin{aligned} &amp;1, &amp;i \geq j \\ &amp;0, &amp;i &lt; j\end{aligned}\right.\end{equation}<br/>
+$\boldsymbol{I}$是单位阵，$\boldsymbol{M}^- = \boldsymbol{M} - \boldsymbol{I}$。我们要证明的是：<br/>
+\begin{equation}(\boldsymbol{I} + \boldsymbol{K}\boldsymbol{K}^{\top}\odot \boldsymbol{M}^-)^{-1}\quad\in\quad [-1, 1]^{n\times n}\end{equation}<br/>
+记$\boldsymbol{X}=\boldsymbol{I} + \boldsymbol{K}\boldsymbol{K}^{\top}\odot \boldsymbol{M}^-$，它的逆矩阵记为$\boldsymbol{Y}$，将$\boldsymbol{X}$显式写出来是<br/>
+\begin{equation}\boldsymbol{X}=\boldsymbol{I} + \boldsymbol{K}\boldsymbol{K}^{\top}\odot \boldsymbol{M}^- = \left(\begin{array}{cccccc}<br/>
+1 &amp; 0 &amp; 0 &amp; \cdots &amp; 0 &amp; 0 \\[5pt]<br/>
+\boldsymbol{k}_1^{\top}\boldsymbol{k}_2 &amp; 1 &amp; 0 &amp; \cdots &amp; 0 &amp; 0 \\[5pt]<br/>
+\boldsymbol{k}_1^{\top}\boldsymbol{k}_3 &amp; \boldsymbol{k}_2^{\top}\boldsymbol{k}_3 &amp; 1 &amp; \cdots &amp; 0 &amp; 0 \\[5pt]<br/>
+\vdots &amp; \vdots &amp; \vdots &amp; \ddots &amp;  \vdots &amp; \vdots \\[5pt]<br/>
+\boldsymbol{k}_1^{\top}\boldsymbol{k}_{n-1} &amp; \boldsymbol{k}_2^{\top}\boldsymbol{k}_{n-1} &amp; \boldsymbol{k}_3^{\top}\boldsymbol{k}_{n-1} &amp; \cdots &amp; 1 &amp; 0 \\[5pt]<br/>
+\boldsymbol{k}_1^{\top}\boldsymbol{k}_n &amp; \boldsymbol{k}_2^{\top}\boldsymbol{k}_n &amp; \boldsymbol{k}_3^{\top}\boldsymbol{k}_n &amp; \cdots &amp; \boldsymbol{k}_{n-1}^{\top}\boldsymbol{k}_n &amp; 1<br/>
+\end{array}\right)\end{equation}<br/>
+由于每个$\boldsymbol{k}_i$的模长都不超过1，显然$\boldsymbol{X}$的每个元素都在$[-1,1]$内，我们要证明的是$\boldsymbol{Y}=\boldsymbol{X}^{-1}$的每个元素也都在$[-1,1]$内。</p><h2 id="数学归纳">数学归纳</h2><p>既然这个逆矩阵出现在DeltaNet中，那么它肯定是有明显的模型背景的，结合这些背景也许能帮助我们更快地证明它，这部分我们留到下一节。这一节我们还是将它当作一个纯粹的数学问题去思考。</p><h3 id="对角性质">对角性质</h3><p>在<a href="/archives/11072" target="_blank">《“对角+低秩”三角阵的高效求逆方法》</a>我们已经体会过，下三角矩阵有一些优良性质，首先它对矩阵乘法封闭，其次它满足“逆矩阵的对角线等于对角线的逆”，这还可以推广到块下三角矩阵，即“逆矩阵的对角块等于对角块的逆”。</p><p>由此，我们有$\boldsymbol{Y}_{[:n-1,:n-1]}=(\boldsymbol{X}_{[:n-1,:n-1]})^{-1}$以及$\boldsymbol{Y}_{[1:,1:]}=(\boldsymbol{X}_{[1:,1:]})^{-1}$，其中切片按Numpy理解。这一性质启发我们可以对$n$使用数学归纳法。假设结论对任意满足条件的$(n-1)\times d$的$\boldsymbol{K}$矩阵成立，那么对于矩阵$\boldsymbol{X}$，我们只需要考虑如下两种分块方式：<br/>
+\begin{equation}\boldsymbol{X} = \left(\begin{array}{ccccc:c}<br/>
+1 &amp; 0 &amp; 0 &amp; \cdots &amp; 0 &amp; 0 \\[5pt]<br/>
+\boldsymbol{k}_1^{\top}\boldsymbol{k}_2 &amp; 1 &amp; 0 &amp; \cdots &amp; 0 &amp; 0 \\[5pt]<br/>
+\boldsymbol{k}_1^{\top}\boldsymbol{k}_3 &amp; \boldsymbol{k}_2^{\top}\boldsymbol{k}_3 &amp; 1 &amp; \cdots &amp; 0 &amp; 0 \\[5pt]<br/>
+\vdots &amp; \vdots &amp; \vdots &amp; \ddots &amp;  \vdots &amp; \vdots \\[5pt]<br/>
+\boldsymbol{k}_1^{\top}\boldsymbol{k}_{n-1} &amp; \boldsymbol{k}_2^{\top}\boldsymbol{k}_{n-1} &amp; \boldsymbol{k}_3^{\top}\boldsymbol{k}_{n-1} &amp; \cdots &amp; 1 &amp; 0 \\[5pt] \hdashline<br/>
+\boldsymbol{k}_1^{\top}\boldsymbol{k}_n &amp; \boldsymbol{k}_2^{\top}\boldsymbol{k}_n &amp; \boldsymbol{k}_3^{\top}\boldsymbol{k}_n &amp; \cdots &amp; \boldsymbol{k}_{n-1}^{\top}\boldsymbol{k}_n &amp; 1<br/>
+\end{array}\right) = \left(\begin{array}{c:cccc}<br/>
+1 &amp; 0 &amp; 0 &amp; \cdots &amp; 0 &amp; 0 \\[5pt] \hdashline<br/>
+\boldsymbol{k}_1^{\top}\boldsymbol{k}_2 &amp; 1 &amp; 0 &amp; \cdots &amp; 0 &amp; 0 \\[5pt]<br/>
+\boldsymbol{k}_1^{\top}\boldsymbol{k}_3 &amp; \boldsymbol{k}_2^{\top}\boldsymbol{k}_3 &amp; 1 &amp; \cdots &amp; 0 &amp; 0 \\[5pt]<br/>
+\vdots &amp; \vdots &amp; \vdots &amp; \ddots &amp;  \vdots &amp; \vdots \\[5pt]<br/>
+\boldsymbol{k}_1^{\top}\boldsymbol{k}_{n-1} &amp; \boldsymbol{k}_2^{\top}\boldsymbol{k}_{n-1} &amp; \boldsymbol{k}_3^{\top}\boldsymbol{k}_{n-1} &amp; \cdots &amp; 1 &amp; 0 \\[5pt]<br/>
+\boldsymbol{k}_1^{\top}\boldsymbol{k}_n &amp; \boldsymbol{k}_2^{\top}\boldsymbol{k}_n &amp; \boldsymbol{k}_3^{\top}\boldsymbol{k}_n &amp; \cdots &amp; \boldsymbol{k}_{n-1}^{\top}\boldsymbol{k}_n &amp; 1<br/>
+\end{array}\right)\end{equation}<br/>
+然后根据$\boldsymbol{Y}_{[:n-1,:n-1]}=(\boldsymbol{X}_{[:n-1,:n-1]})^{-1}$和$\boldsymbol{Y}_{[1:,1:]}=(\boldsymbol{X}_{[1:,1:]})^{-1}$，就可以证明$\boldsymbol{Y}$除左下角的$Y_{n,1}$外的所有元素都在$[-1,1]$内，所以只需要补充证明$Y_{n,1}\in [-1,1]$。</p><h3 id="伴随矩阵">伴随矩阵</h3><p>为证$Y_{n,1}\in [-1,1]$，我们考虑用<a href="https://en.wikipedia.org/wiki/Adjugate_matrix" target="_blank">伴随矩阵</a>将$\boldsymbol{X}^{-1}$显式表示出来。由于$\boldsymbol{X}$是一个下三角矩阵并且对角线都是1，所以它的行列式为1，于是根据伴随矩阵的求逆公式，我们有<br/>
+\begin{equation}Y_{n,1} = (-1)^{n+1}\det\left(\begin{array}{ccccc}<br/>
+\boldsymbol{k}_1^{\top}\boldsymbol{k}_2 &amp; 1 &amp; 0 &amp; \cdots &amp; 0 &amp; 0 \\[5pt]<br/>
+\boldsymbol{k}_1^{\top}\boldsymbol{k}_3 &amp; \boldsymbol{k}_2^{\top}\boldsymbol{k}_3 &amp; 1 &amp; \cdots &amp; 0 &amp; 0 \\[5pt]<br/>
+\boldsymbol{k}_1^{\top}\boldsymbol{k}_4 &amp; \boldsymbol{k}_2^{\top}\boldsymbol{k}_4 &amp; \boldsymbol{k}_3^{\top}\boldsymbol{k}_4 &amp; \cdots &amp; 0 &amp; 0 \\[5pt]<br/>
+\vdots &amp; \vdots &amp; \vdots &amp; \ddots &amp;  \vdots &amp; \vdots \\[5pt]<br/>
+\boldsymbol{k}_1^{\top}\boldsymbol{k}_{n-1} &amp; \boldsymbol{k}_2^{\top}\boldsymbol{k}_{n-1} &amp; \boldsymbol{k}_3^{\top}\boldsymbol{k}_{n-1} &amp; \cdots &amp; \boldsymbol{k}_{n-2}^{\top}\boldsymbol{k}_{n-1} &amp; 1 \\[5pt]<br/>
+\boldsymbol{k}_1^{\top}\boldsymbol{k}_n &amp; \boldsymbol{k}_2^{\top}\boldsymbol{k}_n &amp; \boldsymbol{k}_3^{\top}\boldsymbol{k}_n &amp; \cdots &amp; \boldsymbol{k}_{n-2}^{\top}\boldsymbol{k}_n &amp; \boldsymbol{k}_{n-1}^{\top}\boldsymbol{k}_n<br/>
+\end{array}\right)\end{equation}<br/>
+这是在下三角矩阵的基础上将次对角线元素都变成了1，所以行列式的计算更为复杂一些，但也不算特别复杂，因为最后一列只有两个非零元素，因此按照最后一列来展开行列式计算，它就转化成了两个$n-1$阶的行列式相减，这一特点依然将我们向数学归纳法引导。</p><h3 id="连乘形式">连乘形式</h3><p>我们可以尝试手算前几个结果：<br/>
+\begin{gather}Y_{2,1} = -\boldsymbol{k}_1^{\top}\boldsymbol{k}_2 ,\qquad Y_{3,1} = \det\left(\begin{array}{cc}<br/>
+\boldsymbol{k}_1^{\top}\boldsymbol{k}_2 &amp; 1 \\[5pt]<br/>
+\boldsymbol{k}_1^{\top}\boldsymbol{k}_3 &amp; \boldsymbol{k}_2^{\top}\boldsymbol{k}_3<br/>
+\end{array}\right) = \boldsymbol{k}_1^{\top}\boldsymbol{k}_2\boldsymbol{k}_2^{\top}\boldsymbol{k}_3 - \boldsymbol{k}_1^{\top}\boldsymbol{k}_3 = -\boldsymbol{k}_1^{\top}(\boldsymbol{I}-\boldsymbol{k}_2\boldsymbol{k}_2^{\top})\boldsymbol{k}_3 \\[8pt]<br/>
+Y_{4,1} = -\det\left(\begin{array}{ccc}<br/>
+\boldsymbol{k}_1^{\top}\boldsymbol{k}_2 &amp; 1 &amp; 0 \\[5pt]<br/>
+\boldsymbol{k}_1^{\top}\boldsymbol{k}_3 &amp; \boldsymbol{k}_2^{\top}\boldsymbol{k}_3 &amp; 1 \\[5pt]<br/>
+\boldsymbol{k}_1^{\top}\boldsymbol{k}_4 &amp; \boldsymbol{k}_2^{\top}\boldsymbol{k}_4 &amp; \boldsymbol{k}_3^{\top}\boldsymbol{k}_4<br/>
+\end{array}\right) = \det\left(\begin{array}{cc}<br/>
+\boldsymbol{k}_1^{\top}\boldsymbol{k}_2 &amp; 1 \\[5pt]<br/>
+\boldsymbol{k}_1^{\top}\boldsymbol{k}_4 &amp; \boldsymbol{k}_2^{\top}\boldsymbol{k}_4<br/>
+\end{array}\right) -\det\left(\begin{array}{cc}<br/>
+\boldsymbol{k}_1^{\top}\boldsymbol{k}_2 &amp; 1 \\[5pt]<br/>
+\boldsymbol{k}_1^{\top}\boldsymbol{k}_3 &amp; \boldsymbol{k}_2^{\top}\boldsymbol{k}_3<br/>
+\end{array}\right) \boldsymbol{k}_3^{\top}\boldsymbol{k}_4 = -\boldsymbol{k}_1^{\top}(\boldsymbol{I}-\boldsymbol{k}_2\boldsymbol{k}_2^{\top})(\boldsymbol{I}-\boldsymbol{k}_3\boldsymbol{k}_3^{\top})\boldsymbol{k}_4\end{gather}<br/>
+由此可以猜测<br/>
+\begin{equation}Y_{n,1} = -\boldsymbol{k}_1^{\top}(\boldsymbol{I}-\boldsymbol{k}_2\boldsymbol{k}_2^{\top})(\boldsymbol{I}-\boldsymbol{k}_3\boldsymbol{k}_3^{\top})\cdots (\boldsymbol{I}-\boldsymbol{k}_{n-1}\boldsymbol{k}_{n-1}^{\top})\boldsymbol{k}_n \end{equation}<br/>
+请大家自行通过数学归纳法证明这个猜测。假设大家已经完成了这个猜测的证明，那么接着根据条件$\Vert\boldsymbol{k}_i\Vert\leq 1$，可得$\Vert(\boldsymbol{I}-\boldsymbol{k}_i\boldsymbol{k}_i^{\top})\boldsymbol{x}\Vert^2 = \Vert\boldsymbol{x}\Vert^2 + (\boldsymbol{k}_i^{\top} \boldsymbol{x})^2 (\Vert\boldsymbol{k}_i\Vert^2 - 2) \leq \Vert\boldsymbol{x}\Vert^2$，因此<br/>
+\begin{equation}|Y_{n,1}| \leq \Vert\boldsymbol{k}_1\Vert\times \Vert(\boldsymbol{I}-\boldsymbol{k}_2\boldsymbol{k}_2^{\top})(\boldsymbol{I}-\boldsymbol{k}_3\boldsymbol{k}_3^{\top})\cdots (\boldsymbol{I}-\boldsymbol{k}_{n-1}\boldsymbol{k}_{n-1}^{\top})\boldsymbol{k}_n\Vert \leq \Vert\boldsymbol{k}_1\Vert\times \Vert\boldsymbol{k}_n\Vert \leq 1\end{equation}<br/>
+这就完成了$Y_{n,1}\in [-1,1]$的证明，继而由数学归纳法知$\boldsymbol{Y}\in[-1, 1]^{n\times n}$恒成立。</p><h2 id="双重计算">双重计算</h2><p>上一节的直接证明显得比较“暴力”，后来FLA群的 <a href="https://x.com/zhxlin" target="_blank">@zhxlin</a> 同学提醒，我们可以回到该逆矩阵的原始背景——DeltaNet，用两种不同的方式对DeltaNet进行计算，通过对照结果得出逆矩阵的显式表达式，从而完成一个相对比较简洁的证明。</p><h3 id="逆阵形式">逆阵形式</h3><p>我们知道，DeltaNet的递归形式是<br/>
+\begin{equation}\boldsymbol{S}_t = \boldsymbol{S}_{t-1}(\boldsymbol{I} - \boldsymbol{k}_t\boldsymbol{k}_t^{\top}) + \boldsymbol{v}_t\boldsymbol{k}_t^{\top} = \boldsymbol{S}_{t-1} + (\boldsymbol{v}_t - \boldsymbol{S}_{t-1} \boldsymbol{k}_t)\boldsymbol{k}_t^{\top}\end{equation}<br/>
+其中$\boldsymbol{S}_0 = \boldsymbol{0}$。先看第二个等号，定义$\boldsymbol{u}_t=\boldsymbol{v}_t - \boldsymbol{S}_{t-1} \boldsymbol{k}_t$，那么<br/>
+\begin{equation}\boldsymbol{S}_t = \boldsymbol{S}_{t-1} + \boldsymbol{u}_t\boldsymbol{k}_t^{\top} = \sum_{i=1}^t \boldsymbol{u}_i\boldsymbol{k}_i^{\top}\end{equation}<br/>
+所以<br/>
+\begin{equation}\boldsymbol{u}_t = \boldsymbol{v}_t - \boldsymbol{S}_{t-1} \boldsymbol{k}_t = \boldsymbol{v}_t - \left(\sum_{i=1}^{t-1} \boldsymbol{u}_i\boldsymbol{k}_i^{\top}\right) \boldsymbol{k}_t = \boldsymbol{v}_t - \sum_{i=1}^{t-1} \boldsymbol{u}_i(\boldsymbol{k}_i^{\top} \boldsymbol{k}_t)\end{equation}<br/>
+定义$\boldsymbol{U}=[\boldsymbol{u}_1,\boldsymbol{u}_2,\cdots,\boldsymbol{u}_n]^{\top}, \boldsymbol{V}=[\boldsymbol{v}_1,\boldsymbol{v}_2,\cdots,\boldsymbol{v}_n]^{\top}$，上式等价于$\boldsymbol{U} = \boldsymbol{V} - (\boldsymbol{K}\boldsymbol{K}^{\top}\odot \boldsymbol{M}^-)\boldsymbol{U}$，或$\boldsymbol{U}=(\boldsymbol{I} + \boldsymbol{K}\boldsymbol{K}^{\top}\odot \boldsymbol{M}^-)^{-1}\boldsymbol{V}$，这便是逆矩阵$(\boldsymbol{I} + \boldsymbol{K}\boldsymbol{K}^{\top}\odot \boldsymbol{M}^-)^{-1}$的来源，它是DeltaNet及其后续工作如GDN、KDA等并行计算的关键。</p><h3 id="递推展开">递推展开</h3><p>再看第一个等号，直接逐次展开得<br/>
+\begin{equation}\boldsymbol{S}_t = \boldsymbol{v}_1\boldsymbol{k}_1^{\top} \boldsymbol{H}_{2\to t} + \cdots + \boldsymbol{v}_{t-1}\boldsymbol{k}_{t-1}^{\top} \boldsymbol{H}_{t\to t} + \boldsymbol{v}_t\boldsymbol{k}_t^{\top} = \sum_{i=1}^t \boldsymbol{v}_i\boldsymbol{k}_i^{\top} \boldsymbol{H}_{i+1\to t} \end{equation}<br/>
+这里$\boldsymbol{H}_{r\to t} \triangleq (\boldsymbol{I} - \boldsymbol{k}_r\boldsymbol{k}_r^{\top})(\boldsymbol{I} - \boldsymbol{k}_{r+1}\boldsymbol{k}_{r+1}^{\top})\cdots(\boldsymbol{I} - \boldsymbol{k}_t\boldsymbol{k}_t^{\top})$，并约定$\boldsymbol{H}_{t+1\to t}=\boldsymbol{I}$。</p><p>将上式代入$\boldsymbol{u}_t$的定义得<br/>
+\begin{equation}\boldsymbol{u}_t = \boldsymbol{v}_t - \boldsymbol{S}_{t-1} \boldsymbol{k}_t = \boldsymbol{v}_t -  \sum_{i=1}^{t-1} \boldsymbol{v}_i\boldsymbol{k}_i^{\top} \boldsymbol{H}_{i+1\to t-1}\boldsymbol{k}_t\end{equation}</p><h3 id="对比结果">对比结果</h3><p>仍记$\boldsymbol{Y}=(\boldsymbol{I} + \boldsymbol{K}\boldsymbol{K}^{\top}\odot \boldsymbol{M}^-)^{-1}$，那么$\boldsymbol{U}=\boldsymbol{Y}\boldsymbol{V}$给出$\boldsymbol{u}_t = \sum_{i=1}^n Y_{t, i} \boldsymbol{v}_i$，对照上式可以读出<br/>
+\begin{equation}Y_{t, i} = \left\{\begin{aligned}&amp; 0, &amp; i &gt; t \\<br/>
+&amp; 1, &amp; i = t \\<br/>
+&amp; -\boldsymbol{k}_i^{\top} \boldsymbol{H}_{i+1\to t-1}\boldsymbol{k}_t, &amp; i &lt; t \\<br/>
+\end{aligned}\right.\end{equation}<br/>
+因此只需要证明$|\boldsymbol{k}_i^{\top} \boldsymbol{H}_{i+1\to t-1}\boldsymbol{k}_t|\leq 1$，这由$\Vert\boldsymbol{k}_i\Vert\leq 1$以及第一个证明证得的$\Vert(\boldsymbol{I}-\boldsymbol{k}_i\boldsymbol{k}_i^{\top})\boldsymbol{x}\Vert \leq \Vert\boldsymbol{x}\Vert$立马可得<br/>
+\begin{equation}|\boldsymbol{k}_i^{\top} \boldsymbol{H}_{i+1\to t-1}\boldsymbol{k}_t| \leq \Vert\boldsymbol{k}_i\Vert\times \Vert\boldsymbol{H}_{i+1\to t-1}\boldsymbol{k}_t\Vert \leq \Vert\boldsymbol{k}_i\Vert\times \Vert\boldsymbol{k}_t\Vert \leq 1\end{equation}<br/>
+因此待证结论成立。</p><h2 id="文章小结">文章小结</h2><p>本文给出了DeltaNet中的核心逆矩阵的有界性的两个证明。</p>
+
+
+
+
+
+</div>

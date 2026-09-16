@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "9662",
+    "title": "生成扩散模型漫谈（十九）：作为扩散ODE的GAN",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/9662",
+    "date": "2023-06-24",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 102,
+    "display_formula_count": 14,
+    "image_count": 0,
+    "heading_count": 7,
+    "code_block_count": 0,
+    "source_text_sha256": "a58b91e9103476222c7bd36ff6fd8a8a67b8a38dfcfa152c44390c14ddf244a6",
+    "output_text_sha256": "a58b91e9103476222c7bd36ff6fd8a8a67b8a38dfcfa152c44390c14ddf244a6",
+    "latex_sha256": "9e4722916238390af779a11d47255d0cbc17cb22e711d85e4b0e8ccc844c4184",
+    "body_sha256": "0ee861b7d08c660de51ba4ca841adf4e3d049ad99aa718d63abd83fb8ca17c1d",
+    "converter_version": 1,
+    "markdown_sha256": "f482777958e621a5c85ba7faad5c5821ee990b9f9a9e705fbd04e92bc2a988fa"
+  },
+  "fetched_at": "2026-09-14T12:53:33+00:00",
+  "source_snapshot_sha256": "76a59d76827579162b2055b5c2419ecf76ef23dd42e1ca2ca7d5b18e141782d3",
+  "images": {},
+  "local_only": true
+}

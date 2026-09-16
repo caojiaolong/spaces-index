@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "90",
+    "title": "【NASA每日一图】宇宙中的鲸鱼和曲棍球棒",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/90",
+    "date": "2009-08-21",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 0,
+    "display_formula_count": 0,
+    "image_count": 1,
+    "heading_count": 0,
+    "code_block_count": 0,
+    "source_text_sha256": "24ffeff732eca69a5d03ac8a19454ab5e3434cc388d629ef4fd8317601dab908",
+    "output_text_sha256": "24ffeff732eca69a5d03ac8a19454ab5e3434cc388d629ef4fd8317601dab908",
+    "latex_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "body_sha256": "3cd11e08a80dff00b54d700ae2bc4d70009cb5ab6ab4fdc0003470ca127170f7",
+    "converter_version": 1,
+    "markdown_sha256": "f718e90b7f9caa8c87b05acef4258a6a8b4493a10ee4a90934a66edeef6802e3"
+  },
+  "fetched_at": "2026-09-14T14:57:22+00:00",
+  "source_snapshot_sha256": "8d2762075799d5b157d76c4f384307758d25f13b0c4b758e04d87f70657c0a8c",
+  "images": {},
+  "local_only": true
+}

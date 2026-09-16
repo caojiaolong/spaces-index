@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "9473",
+    "title": "Google新搜出的优化器Lion：效率与效果兼得的“训练狮”",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/9473",
+    "date": "2023-02-16",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 51,
+    "display_formula_count": 6,
+    "image_count": 5,
+    "heading_count": 5,
+    "code_block_count": 0,
+    "source_text_sha256": "bd08385bd974dfc14cd576df80688503a8edfffe684da1ea420802ca3b1fbd9a",
+    "output_text_sha256": "bd08385bd974dfc14cd576df80688503a8edfffe684da1ea420802ca3b1fbd9a",
+    "latex_sha256": "72ea22632ae34fecfe977ef816fb35e65d05c59442d426cf501663a9113fdb33",
+    "body_sha256": "045bcc3361857e787d5b30c89cee2ca8cd83328ad8a379e9412f98816b3ae911",
+    "converter_version": 1,
+    "markdown_sha256": "085d8f723e1f60c3e2db6965dae4ff5655595027c7fbeed8eaba7d9030cc1824"
+  },
+  "fetched_at": "2026-09-14T12:55:35+00:00",
+  "source_snapshot_sha256": "901efd412802c30f22f2b98d09cd1f0ce92283ea5bd6d8ed3ec10545d80b21c9",
+  "images": {},
+  "local_only": true
+}

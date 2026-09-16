@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "1339",
+    "title": "蘑菇的最优形状模型",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/1339",
+    "date": "2011-04-30",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 13,
+    "display_formula_count": 4,
+    "image_count": 3,
+    "heading_count": 0,
+    "code_block_count": 0,
+    "source_text_sha256": "5c32c746a0dfe2dbd14d532d7e335ae922719d5a37d85903d33e91a69fd23fa7",
+    "output_text_sha256": "5c32c746a0dfe2dbd14d532d7e335ae922719d5a37d85903d33e91a69fd23fa7",
+    "latex_sha256": "c7cf402af69791a7d530cd08cd7ef303abdefeb61b498caf92ed3f4a7abef36f",
+    "body_sha256": "ac0b852a02f96a103f8101ebd2e05d848bf415a69078f9d7d56f0cf263a16f24",
+    "converter_version": 1,
+    "markdown_sha256": "82937c7b3504d39ff67d508c58d52ad7149470ff37dc5acf8cf3f52b572990ce"
+  },
+  "fetched_at": "2026-09-14T14:21:47+00:00",
+  "source_snapshot_sha256": "c8035cc85802ca2d49573fca650becf5c47075d971098886a4242bebd47f1d8c",
+  "images": {},
+  "local_only": true
+}

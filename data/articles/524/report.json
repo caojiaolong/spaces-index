@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "524",
+    "title": "庆祝圆周率(π)节！",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/524",
+    "date": "2010-03-14",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 7,
+    "display_formula_count": 0,
+    "image_count": 4,
+    "heading_count": 0,
+    "code_block_count": 0,
+    "source_text_sha256": "775abb5d5e2d382d2366403409f9c4652302f5862e376c2a996adc70b616e257",
+    "output_text_sha256": "775abb5d5e2d382d2366403409f9c4652302f5862e376c2a996adc70b616e257",
+    "latex_sha256": "f82caf93bc6614e7814d7287f1f14828c46cfd01c4a83deaf695fd56f94ab6f6",
+    "body_sha256": "305a4af38351c8a64225f0e9c0edd097bb1f6679fa38020126fb59229ea42f56",
+    "converter_version": 1,
+    "markdown_sha256": "0f8401f9d98d92e3a6d7af5b326249a2db52c6d362a0421ddf55ab2e522b1f30"
+  },
+  "fetched_at": "2026-09-14T14:39:21+00:00",
+  "source_snapshot_sha256": "67879cf938dc0ce03e90ddb107903570264b85b95ef1baf788812ff37f746904",
+  "images": {},
+  "local_only": true
+}

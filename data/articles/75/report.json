@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "75",
+    "title": "微积分学习（一）：极限",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/75",
+    "date": "2009-08-16",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 30,
+    "display_formula_count": 8,
+    "image_count": 0,
+    "heading_count": 0,
+    "code_block_count": 0,
+    "source_text_sha256": "ceae41687efa1075ef6b7d03e746cc92d8ae585629aa7e4b6f49a3ec367dda94",
+    "output_text_sha256": "ceae41687efa1075ef6b7d03e746cc92d8ae585629aa7e4b6f49a3ec367dda94",
+    "latex_sha256": "391a1f4888c79f59555bd7e43323ebb66ffa440222e4d9518ae23aa46ca92cf6",
+    "body_sha256": "462da2f9a49ad0632216b85d04507d92abb3c903e3151a8bd1d4e289aaee4c95",
+    "converter_version": 1,
+    "markdown_sha256": "fe5753a505086d567aef5fc4ee53c5863ddab14f73508814ee2dcd43209cf6ce"
+  },
+  "fetched_at": "2026-09-14T14:59:15+00:00",
+  "source_snapshot_sha256": "d775a4ea9ad089f6bd8e389f2ec9ea977f92a22f9d9a1d4da484b17eef7809dc",
+  "images": {},
+  "local_only": true
+}

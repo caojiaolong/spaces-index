@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "1592",
+    "title": "引力透镜——用经典力学推导光的偏转公式",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/1592",
+    "date": "2012-04-30",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 26,
+    "display_formula_count": 5,
+    "image_count": 4,
+    "heading_count": 4,
+    "code_block_count": 0,
+    "source_text_sha256": "fd8076eee1928bd2d8a5481e44e33a8f1d148d550e944d6aef3be58614e5cfbd",
+    "output_text_sha256": "fd8076eee1928bd2d8a5481e44e33a8f1d148d550e944d6aef3be58614e5cfbd",
+    "latex_sha256": "f022e1b77d95b8ffb67765ce6343f4de38844527e128655442d08c6981976751",
+    "body_sha256": "026e58a6b422fddd0f5d27836394decba91d2782e07a1722b4d6e3e5d5a2606d",
+    "converter_version": 1,
+    "markdown_sha256": "4ad77ad2b750d768006fd153bd2994940fa76a74df48906f2f61e4c18735537c"
+  },
+  "fetched_at": "2026-09-14T14:14:46+00:00",
+  "source_snapshot_sha256": "bae96da08de6a99281849cc8e2c71cf0cbdaa0958ff6349fe9092435f2cb01b3",
+  "images": {},
+  "local_only": true
+}

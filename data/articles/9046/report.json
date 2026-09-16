@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "9046",
+    "title": "你的语言模型有没有“无法预测的词”？",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/9046",
+    "date": "2022-04-20",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 48,
+    "display_formula_count": 12,
+    "image_count": 1,
+    "heading_count": 4,
+    "code_block_count": 0,
+    "source_text_sha256": "f15c52b9895344d9419c0a88aedb7b810b495c38188afe218b62fa526e9bb32a",
+    "output_text_sha256": "f15c52b9895344d9419c0a88aedb7b810b495c38188afe218b62fa526e9bb32a",
+    "latex_sha256": "ebea07c639d3600b186d22d91560d5439cf1909ae0bd6000bf9c973239a3f638",
+    "body_sha256": "9477af685c5d8108b1daeef6bd756a7c7b1de80e59b24a16ed62bd6d21afca45",
+    "converter_version": 1,
+    "markdown_sha256": "abfec5e9ff5b26ed415c944e5bfd2e3e01e09d29504e23192007b7780c8faa2a"
+  },
+  "fetched_at": "2026-09-14T13:00:05+00:00",
+  "source_snapshot_sha256": "e1a1657e4005a6ec4c2f1620b3839d1174dbf195645e1faed3ad7f5f6931fc0e",
+  "images": {},
+  "local_only": true
+}

@@ -1,0 +1,252 @@
+<div class="PostContent" id="PostContent">
+<p>去年泰迪杯竞赛过后，笔者写了一篇简要介绍深度学习在情感分析中的应用的博文<a href="/archives/3414/" target="_blank">《文本情感分类（二）：深度学习模型》</a>。虽然文章很粗糙，但还是得到了不少读者的反响，让我颇为意外。然而，那篇文章中在实现上有些不清楚的地方，这是因为：<u>1、在那篇文章以后，keras已经做了比较大的改动，原来的代码不通用了；2、里边的代码可能经过我随手改动过，所以发出来的时候不是最适当的版本。</u>因此，在近一年之后，我再重拾这个话题，并且完成一些之前没有完成的测试。</p><p>为什么要用深度学习模型？除了它更高精度等原因之外，还有一个重要原因，那就是它是<strong><font color="red">目前唯一的能够实现“端到端”的模型</font></strong>。所谓“端到端”，就是能够直接将原始数据和标签输入，然后让模型自己完成一切过程——包括特征的提取、模型的学习。而回顾我们做中文情感分类的过程，一般都是“分词——词向量——句向量(LSTM)——分类”这么几个步骤。虽然很多时候这种模型已经达到了state of art的效果，但是有些疑问还是需要进一步测试解决的。对于中文来说，字才是最低粒度的文字单位，因此从“端到端”的角度来看，应该将直接将句子以字的方式进行输入，而不是先将句子分好词。<strong><font color="red">那到底有没有分词的必要性呢？本文测试比较了字one hot、字向量、词向量三者之间的效果。</font></strong></p><h3 id="模型测试">模型测试</h3><p>本文测试了三个模型，或者说，是三套框架，具体代码在文末给出。这三套框架分别是：</p><blockquote><p>1、<strong><font color="blue">one hot</font></strong>：以字为单位，不分词，将每个句子截断为200字（不够则补空字符串），然后将句子以“字-one hot”的矩阵形式输入到LSTM模型中进行学习分类；</p><p>2、<strong><font color="blue">one embedding</font></strong>：以字为单位，不分词，，将每个句子截断为200字（不够则补空字符串），然后将句子以“字-字向量(embedding)“的矩阵形式输入到LSTM模型中进行学习分类；</p><p>3、<strong><font color="blue">word embedding</font></strong>：以词为单位，分词，，将每个句子截断为100词（不够则补空字符串），然后将句子以“词-词向量(embedding)”的矩阵形式输入到LSTM模型中进行学习分类。</p></blockquote><p></p><p>其中所用的LSTM模型结构是类似的。所用的语料还是<a href="/archives/3414/" target="_blank">《文本情感分类（二）：深度学习模型》</a>中的语料，以15000条进行训练，剩下的6000条左右做测试。意外的是，三个模型都取得了相近的结果。</p><p>$$\begin{array}{c|ccc}<br/>
+\hline<br/>
+&amp;\text{one hot} &amp; \text{one embedding} &amp; \text{word embedding}\\<br/>
+\hline<br/>
+\text{迭代次数} &amp; 90 &amp; 30 &amp; 30\\<br/>
+\text{每轮用时} &amp; 100s &amp; 36s &amp; 18s\\<br/>
+\text{训练准确率} &amp; 96.60\% &amp; 95.95\% &amp; 98.41\% \\<br/>
+\text{测试准确率} &amp; 89.21\% &amp; 89.55\% &amp; 89.03\% \\<br/>
+\hline<br/>
+\end{array}$$</p><p>可见，在准确率方面，三者是类似的，区分度不大。不管是用one hot、字向量还是词向量，结果都差不多。也许用<a href="/archives/3414/" target="_blank">《文本情感分类（二）：深度学习模型》</a>的方法来为每个模型选取适当的阈值，会使得测试准确率更高一些，但模型之间的相对准确率应该不会变化很大。</p><p>当然，测试本身可能存在一些不公平的情况，也许会导致测试结果不公平，而我也没有反复去测试。比如one hot的模型迭代了90次，其它两个模型是30次，因为one hot模型所构造的样本维度太大，需要经过更长时间才出现收敛现象，而且训练过程中，准确率是波动上升的，并非像其它两个模型那样稳定上升。事实上这是所有one hot模型的共同特点。</p><h3 id="多扯一点">多扯一点</h3><p>看上去，one hot模型的确存在维度灾难的问题，而且训练时间又长，效果又没有明显提升，那是否就说明没有研究one hot表示的必要了呢？</p><p><font color="red">我觉得不是这样的。当初大家诟病one hot模型的原因，除了维度灾难之外，还有一个就是“语义鸿沟”，也就说任意两个词之间没有任何相关性（不管用欧式距离还是余弦相似度，任意两个词的计算结果是一样的）。可是，这一点假设用在词语中不成立，可是用在中文的“字”上面，不是很合理吗？汉字单独成词的例子不多，大多数是二字词，也就是说，任意两个字之间没有任何相关性，这个假设在汉字的“字”的层面上，是近似成立的！而后面我们用了LSTM，LSTM本身具有整合邻近数据的功能，因此，它暗含了将字整合为词的过程。</font></p><p>此外，one hot模型还有一个非常重要的特点——它<strong><font color="red">没有任何信息损失</font></strong>——从one hot的编码结果中，我们反过来解码出原来那句话是哪些字词组成的，然而，我无法从一个词向量中确定原来的词是什么。这些观点都表明，在很多情况下，one hot模型都是很有价值的。</p><p>而我们为什么用词向量呢？<font color="red">词向量相当于做了一个假设：每个词具有比较确定的意思。这个假设在词语层面也是近似成立的，毕竟一词多义的词语相对来说也不多。正因为如此，我们才可以将词放到一个较低维度的实数空间里，用一个实数向量来表示一个词语，并且用它们之间的距离或者余弦相似度来表示词语之间的相似度。这也是词向量能够解决“一义多词”而没法解决“一词多义”的原因。</font></p><p>从这样看来，上面三个模型中，只有one hot和word embedding才是理论上说得过去的，而one embedding则看上去变得不伦不类了，因为字似乎不能说具有比较确定的意思。但为什么one embedding效果也还不错？我估计，这可能是因为二元分类问题本身是一个很粗糙的分类（0或1），如果更多元的分类，可能one embedding的方式效果就降下来了。不过，我也没有进行更多的测试了，因为太耗时间了。</p><p>当然，这只能算是我的<strong><font color="red">主观臆测</font></strong>，还望大家指正。尤其是one embedding部分的评价，是值得商榷的。</p><h3 id="代码来了">代码来了</h3><p>可能大家并不想看我胡扯一通，是直接来看代码的，现奉上三个模型的代码。最好有GPU加速，尤其是试验one hot模型，不然慢到哭了。</p><p>模型1：one hot</p><pre class="line-numbers"><code class="language-python"># -*- coding:utf-8 -*-
+
+'''
+one hot测试
+在GTX960上，约100s一轮
+经过90轮迭代，训练集准确率为96.60%，测试集准确率为89.21%
+Dropout不能用太多，否则信息损失太严重
+'''
+
+import numpy as np
+import pandas as pd
+
+pos = pd.read_excel('pos.xls', header=None)
+pos['label'] = 1
+neg = pd.read_excel('neg.xls', header=None)
+neg['label'] = 0
+all_ = pos.append(neg, ignore_index=True)
+
+maxlen = 200 #截断字数
+min_count = 20 #出现次数少于该值的字扔掉。这是最简单的降维方法
+
+content = ''.join(all_[0])
+abc = pd.Series(list(content)).value_counts()
+abc = abc[abc &gt;= min_count]
+abc[:] = list(range(len(abc)))
+word_set = set(abc.index)
+
+def doc2num(s, maxlen): 
+    s = [i for i in s if i in word_set]
+    s = s[:maxlen]
+    return list(abc[s])
+
+all_['doc2num'] = all_[0].apply(lambda s: doc2num(s, maxlen))
+
+#手动打乱数据
+#当然也可以把这部分加入到生成器中
+idx = list(range(len(all_)))
+np.random.shuffle(idx)
+all_ = all_.loc[idx]
+
+#按keras的输入要求来生成数据
+x = np.array(list(all_['doc2num']))
+y = np.array(list(all_['label']))
+y = y.reshape((-1,1)) #调整标签形状
+
+from keras.utils import np_utils
+from keras.models import Sequential
+from keras.layers import Dense, Activation, Dropout
+from keras.layers import LSTM
+import sys
+sys.setrecursionlimit(10000) #增大堆栈最大深度(递归深度)，据说默认为1000，报错
+
+#建立模型
+model = Sequential()
+model.add(LSTM(128, input_shape=(maxlen,len(abc)))) 
+model.add(Dropout(0.5))
+model.add(Dense(1))
+model.add(Activation('sigmoid'))
+model.compile(loss='binary_crossentropy',
+              optimizer='rmsprop',
+              metrics=['accuracy'])
+
+#单个one hot矩阵的大小是maxlen*len(abc)的，非常消耗内存
+#为了方便低内存的PC进行测试，这里使用了生成器的方式来生成one hot矩阵
+#仅在调用时才生成one hot矩阵
+#可以通过减少batch_size来降低内存使用，但会相应地增加一定的训练时间
+batch_size = 128
+train_num = 15000
+
+#不足则补全0行
+gen_matrix = lambda z: np.vstack((np_utils.to_categorical(z, len(abc)), np.zeros((maxlen-len(z), len(abc)))))
+
+def data_generator(data, labels, batch_size): 
+    batches = [list(range(batch_size*i, min(len(data), batch_size*(i+1)))) for i in range(len(data)/batch_size+1)]
+    while True:
+        for i in batches:
+            xx = np.zeros((maxlen, len(abc)))
+            xx, yy = np.array(map(gen_matrix, data[i])), labels[i]
+            yield (xx, yy)
+
+model.fit_generator(data_generator(x[:train_num], y[:train_num], batch_size), samples_per_epoch=train_num, nb_epoch=30)
+
+model.evaluate_generator(data_generator(x[train_num:], y[train_num:], batch_size), val_samples=len(x[train_num:]))
+
+def predict_one(s): #单个句子的预测函数
+    s = gen_matrix(doc2num(s, maxlen))
+    s = s.reshape((1, s.shape[0], s.shape[1]))
+    return model.predict_classes(s, verbose=0)[0][0]
+</code></pre><p>模型2：one embedding</p><pre class="line-numbers"><code class="language-python"># -*- coding:utf-8 -*-
+
+'''
+one embedding测试
+在GTX960上，36s一轮
+经过30轮迭代，训练集准确率为95.95%，测试集准确率为89.55%
+Dropout不能用太多，否则信息损失太严重
+'''
+
+import numpy as np
+import pandas as pd
+
+pos = pd.read_excel('pos.xls', header=None)
+pos['label'] = 1
+neg = pd.read_excel('neg.xls', header=None)
+neg['label'] = 0
+all_ = pos.append(neg, ignore_index=True)
+
+maxlen = 200 #截断字数
+min_count = 20 #出现次数少于该值的字扔掉。这是最简单的降维方法
+
+content = ''.join(all_[0])
+abc = pd.Series(list(content)).value_counts()
+abc = abc[abc &gt;= min_count]
+abc[:] = list(range(1, len(abc)+1))
+abc[''] = 0 #添加空字符串用来补全
+word_set = set(abc.index)
+
+def doc2num(s, maxlen): 
+    s = [i for i in s if i in word_set]
+    s = s[:maxlen] + ['']*max(0, maxlen-len(s))
+    return list(abc[s])
+
+all_['doc2num'] = all_[0].apply(lambda s: doc2num(s, maxlen))
+
+#手动打乱数据
+idx = list(range(len(all_)))
+np.random.shuffle(idx)
+all_ = all_.loc[idx]
+
+#按keras的输入要求来生成数据
+x = np.array(list(all_['doc2num']))
+y = np.array(list(all_['label']))
+y = y.reshape((-1,1)) #调整标签形状
+
+from keras.models import Sequential
+from keras.layers import Dense, Activation, Dropout, Embedding
+from keras.layers import LSTM
+
+#建立模型
+model = Sequential()
+model.add(Embedding(len(abc), 256, input_length=maxlen))
+model.add(LSTM(128)) 
+model.add(Dropout(0.5))
+model.add(Dense(1))
+model.add(Activation('sigmoid'))
+model.compile(loss='binary_crossentropy',
+              optimizer='adam',
+              metrics=['accuracy'])
+
+batch_size = 128
+train_num = 15000
+
+model.fit(x[:train_num], y[:train_num], batch_size = batch_size, nb_epoch=30)
+
+model.evaluate(x[train_num:], y[train_num:], batch_size = batch_size)
+
+def predict_one(s): #单个句子的预测函数
+    s = np.array(doc2num(s, maxlen))
+    s = s.reshape((1, s.shape[0]))
+    return model.predict_classes(s, verbose=0)[0][0]
+</code></pre><p>模型3：word embedding</p><pre class="line-numbers"><code class="language-python"># -*- coding:utf-8 -*-
+
+'''
+word embedding测试
+在GTX960上，18s一轮
+经过30轮迭代，训练集准确率为98.41%，测试集准确率为89.03%
+Dropout不能用太多，否则信息损失太严重
+'''
+
+import numpy as np
+import pandas as pd
+import jieba
+
+pos = pd.read_excel('pos.xls', header=None)
+pos['label'] = 1
+neg = pd.read_excel('neg.xls', header=None)
+neg['label'] = 0
+all_ = pos.append(neg, ignore_index=True)
+all_['words'] = all_[0].apply(lambda s: list(jieba.cut(s))) #调用结巴分词
+
+maxlen = 100 #截断词数
+min_count = 5 #出现次数少于该值的词扔掉。这是最简单的降维方法
+
+content = []
+for i in all_['words']:
+	content.extend(i)
+
+abc = pd.Series(content).value_counts()
+abc = abc[abc &gt;= min_count]
+abc[:] = list(range(1, len(abc)+1))
+abc[''] = 0 #添加空字符串用来补全
+word_set = set(abc.index)
+
+def doc2num(s, maxlen): 
+    s = [i for i in s if i in word_set]
+    s = s[:maxlen] + ['']*max(0, maxlen-len(s))
+    return list(abc[s])
+
+all_['doc2num'] = all_['words'].apply(lambda s: doc2num(s, maxlen))
+
+#手动打乱数据
+idx = list(range(len(all_)))
+np.random.shuffle(idx)
+all_ = all_.loc[idx]
+
+#按keras的输入要求来生成数据
+x = np.array(list(all_['doc2num']))
+y = np.array(list(all_['label']))
+y = y.reshape((-1,1)) #调整标签形状
+
+from keras.models import Sequential
+from keras.layers import Dense, Activation, Dropout, Embedding
+from keras.layers import LSTM
+
+#建立模型
+model = Sequential()
+model.add(Embedding(len(abc), 256, input_length=maxlen))
+model.add(LSTM(128)) 
+model.add(Dropout(0.5))
+model.add(Dense(1))
+model.add(Activation('sigmoid'))
+model.compile(loss='binary_crossentropy',
+              optimizer='adam',
+              metrics=['accuracy'])
+
+batch_size = 128
+train_num = 15000
+
+model.fit(x[:train_num], y[:train_num], batch_size = batch_size, nb_epoch=30)
+
+model.evaluate(x[train_num:], y[train_num:], batch_size = batch_size)
+
+def predict_one(s): #单个句子的预测函数
+    s = np.array(doc2num(list(jieba.cut(s)), maxlen))
+    s = s.reshape((1, s.shape[0]))
+    return model.predict_classes(s, verbose=0)[0][0]
+</code></pre>
+
+
+
+
+
+</div>

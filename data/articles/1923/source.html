@@ -1,0 +1,17 @@
+<div class="PostContent" id="PostContent">
+<p>在上一篇文章中，我们以矩阵的方式推导出了洛仑兹变换。矩阵表述不仅仅具有形式上的美，还具有很重要的实用价值，比如可以很方便地寻找各种不变量。当洛仑兹变换用矩阵的方式表达出来后，很多线性代数中已知的理论都可以用在上边。在这篇小小的续集中，我们将尝试阐述这个思想。</p><p>本文中，继续设光速$c=1$。</p><p>我们已经得到了洛仑兹变换的矩阵形式：<br/>
+\begin{equation}\left[\begin{array}{c} x\\t \end{array}\right]=\frac{1}{\sqrt{1-v^2}}\left[\begin{array}{c c}1 &amp; v\\ v &amp; 1 \end{array}\right]\left[\begin{array}{c}x'\\t' \end{array}\right]\end{equation}</p><p>时间与空间虽然在相对论中已经融合为一个整体，但是时间的的确确具有它自己的独特性。为了体现这种独特性，我们沿用理论物理中一贯的做法，将时间乘上虚数单位$i$，那么洛仑兹变换矩阵变成了：<br/>
+\begin{equation}\left[\begin{array}{c} x\\it \end{array}\right]=\frac{1}{\sqrt{1-v^2}}\left[\begin{array}{c c}1 &amp; -iv\\ iv &amp; 1 \end{array}\right]\left[\begin{array}{c}x'\\it' \end{array}\right] \end{equation}</p><p>这种形式有它自己的优越性。我们将变换矩阵$\frac{1}{\sqrt{1-v^2}}\left[\begin{array}{c c}1 &amp; -iv\\ iv &amp; 1 \end{array}\right]$记为$\boldsymbol{A}$，将$\left[\begin{array}{c} x\\it \end{array}\right]$和$\left[\begin{array}{c} x'\\it' \end{array}\right]$分别记为向量$\boldsymbol{x}$和$\boldsymbol{x'}$。即<br/>
+\begin{equation}\boldsymbol{x}=\boldsymbol{A}\boldsymbol{x'}\end{equation}</p><h3 id="光速不变原理">光速不变原理</h3><p>矩阵$\boldsymbol{A}$满足：$\boldsymbol{A}^T \boldsymbol{A}=I$，这就给我们带来了极大的便利，因为我们可以立马发现一个不变的量：<br/>
+\begin{equation}\boldsymbol{x}^T \boldsymbol{x}=\boldsymbol{x'}^T \boldsymbol{A}^T \boldsymbol{A} \boldsymbol{x'}=\boldsymbol{x'}^T \boldsymbol{x'}\end{equation}</p><p>翻译过来就是$x^2-t^2=x'^2-t'^2$。这是光速不变原理的体现。</p><p>当然，我们也可以以$x^2-t^2=x'^2-t'^2$为出发点来推导洛仑兹变换的矩阵，这将得到矩阵的$\left[\begin{array}{c c}a &amp; c\\ b&amp; d \end{array}\right]$的两个关系式。再结合相对性原理以及相对运动就可以得到完整的矩阵的形式。读者不妨亲自尝试一下？</p><h3 id="速度合成">速度合成</h3><p>如果两个洛仑兹变换的合成会出现什么结果呢？假设（同向运动）物体A相对于B的速度为$v$，B相对于C的速度为$w$，那么A相对于C的速度是多少呢？我们看看对应的两个洛仑兹变换矩阵$\boldsymbol{A}_v$和$\boldsymbol{A}_w$的合成，即<br/>
+\begin{equation}\begin{aligned}\boldsymbol{x}=&amp;\,\boldsymbol{A}_v \boldsymbol{A}_w \boldsymbol{x'} \\<br/>
+=&amp;\frac{1}{\sqrt{1-v^2}}\left[\begin{array}{c c}1 &amp; -iv\\ iv &amp; 1 \end{array}\right]\frac{1}{\sqrt{1-w^2}}\left[\begin{array}{c c}1 &amp; -iw\\ iw &amp; 1 \end{array}\right] \\ =&amp;\frac{1}{\sqrt{(1-v^2)(1-w^2)}}\left[\begin{array}{c c}1+wv &amp; -i(w+v)\\ i(w+v) &amp; 1+wv \end{array}\right] \\<br/>
+=&amp;\frac{1+wv}{\sqrt{(1-v^2)(1-w^2)}}\left[\begin{array}{c c}1 &amp; -i(\frac{w+v}{1+wv})\\ i(\frac{w+v}{1+wv}) &amp; 1 \end{array}\right]<br/>
+\end{aligned}\end{equation}</p><p>将最后一个矩阵与$\frac{1}{\sqrt{1-v^2}}\left[\begin{array}{c c}1 &amp; -iv\\ iv &amp; 1 \end{array}\right]$对比，不难速度的合成为：<br/>
+\begin{equation}\frac{w+v}{1+wv}\end{equation}</p><p>这就是<font color="red">相对论的速度合成公式</font>。（当然，如果你对$\frac{1+wv}{\sqrt{(1-v^2)(1-w^2)}}$不放心，可以再检验一下。）对于这种处理来说，这些结果是相当简洁显然的，足以充分体现矩阵研究的巨大魅力。</p>
+
+
+
+
+
+</div>

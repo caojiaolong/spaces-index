@@ -52,16 +52,19 @@ def test_readme_contains_topic_links_and_stats():
     assert "展开完整主题、系列与非系列目录" in readme
     assert "assets/readme-hero.svg" in readme
     assert "https://caojiaolong.github.io/spaces-index/" in readme
-    assert "非官方、持续更新、只保存元数据" in readme
+    assert "非官方、非商业知识库" in readme
+    assert "默认提供全站通过校验且未下架、未过期的正文" in readme
+    assert "docs/mirror.md" in readme
     assert "## 最近更新" in readme
     assert "2026-09-07 · 现代学术画廊与阅读体验升级" in readme
     assert "非系列文章以及已读/未读组合筛选" in readme
-    assert "记录只保存在当前浏览器，不会上传" in readme
-    assert readme.index("## 最近更新") < readme.index("## 为什么做这个索引")
+    assert "阅读进度只保存在当前浏览器，不会上传" in readme
+    assert readme.index("## 为什么做这个索引") < readme.index("## 目录")
+    assert readme.index("## 最近更新") > readme.index("## 更新流程")
     assert "## 最近 10 篇文章" in readme
     assert "| 3 篇 | 3 个 | 1 个 | 2025-11-17 |" in readme
-    assert "## 三种浏览方式" in readme
-    assert "uv run python -m http.server 8000 --directory _site" in readme
+    assert "## 从哪里开始" in readme
+    assert "uv run python scripts/update_all.py --serve" in readme
     assert "不要直接双击 `web/index.html`" in readme
     assert "- [大模型与Transformer（2 篇）](#topic-transformer)" in readme
     assert (
@@ -84,7 +87,6 @@ def test_readme_contains_topic_links_and_stats():
     assert readme.index("## 本地运行") > readme.index("## 主题分类")
     assert readme.index("## 更新流程") > readme.index("## 本地运行")
     assert "## Star History" in readme
-    assert "如果这个索引对你有帮助，欢迎 Star 支持，后续会通过 GitHub Actions 持续更新" in readme
     assert "api.star-history.com/chart?repos=caojiaolong/spaces-index" in readme
     assert "sealed_token=Mk-_SQRXMESG92vxsl-rENs6" in readme
     assert 'alt="Star History Chart"' in readme

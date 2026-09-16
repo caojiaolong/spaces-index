@@ -1,0 +1,78 @@
+# 基于流式幂迭代的Muon实现：5\. 延伸
+
+> 作者：苏剑林 · 科学空间 · 2026-04-17
+>
+> 原文：<https://spaces.ac.cn/archives/11719>
+>
+> 原文许可：[CC BY-NC-ND 2.5 CN（署名-非商业性使用-禁止演绎）](https://creativecommons.org/licenses/by-nc-nd/2.5/cn/)。
+>
+> 本文件由 spaces-index 非官方、非商业项目进行必要的 HTML → Markdown 格式转换；正文未做摘要、润色、翻译或重组。项目不代表作者，也不表示作者为项目背书。
+>
+> 署名及附加许可说明不代表已获得作者额外授权。第三方素材权利依其原有声明。
+>
+> 原站转载与引用说明：[科学空间 FAQ](https://spaces.ac.cn/archives/6508#%E6%96%87%E7%AB%A0%E5%A6%82%E4%BD%95%E8%BD%AC%E8%BD%BD/%E5%BC%95%E7%94%A8)
+
+---
+
+本系列文章的主题是“流式幂迭代”，顾名思义，它由“流式”和“幂迭代”两部分构成，其中“幂迭代”是求矩阵SVD的一种经典的多步迭代方案，而“流式”则是指将原本需要多步迭代的算法平摊到每一步训练上，使得计算成本变得可以接受，其核心思想在于：与其一次性完成复杂计算，不如在训练过程中持续逼近目标。
+
+作为该系列的延伸，本文将介绍另外一些“流式”思想的应用，进一步展示如何通过流式转化将相对昂贵的操作巧妙地融入训练流程。
+
+## 正交投影
+
+有些场景下，我们会希望约束某些参数矩阵的正交性。正交矩阵具有良好的数值稳定性，可以避免一些数值爆炸或消失问题，同时在某些设计中能带来更好的理论保证。当然，哪些地方适合约束参数为正交矩阵，我们需要具体场景具体分析，这里不做展开。
+
+在文章[《流形上的最速下降：2\. Muon \+ 正交》](<https://spaces.ac.cn/archives/11215>)和[《流形上的最速下降：3\. Muon \+ Stiefel》](<https://spaces.ac.cn/archives/11221>)中，我们对正交（Stiefel）流形有过一些探索，不过那是想着结合最速下降来推导出新的更新规则，整体比较复杂。这里我们只考虑一种比较简单的做法：在每一步更新后重新将参数投影（Retract）回正交流形上。
+
+不失一般性，我们设参数$\boldsymbol{W}\in\mathbb{R}^{n\times m}$，其中$n \geq m$，那么我们要执行的操作可以写成
+\begin{equation}\newcommand{orth}{\mathop{\text{orth}}}\boldsymbol{W}_t = \boldsymbol{W}_{t-1} - \eta \boldsymbol{\Phi}_t \qquad\to\qquad \boldsymbol{W}_t = \orth(\boldsymbol{W}_{t-1} - \eta \boldsymbol{\Phi}_t)\end{equation}
+这里的$\orth$定义为
+\begin{equation}\newcommand{argmin}{\mathop{\text{argmin}}}\orth(\boldsymbol{W}) = \argmin_{\boldsymbol{O}^{\top}\boldsymbol{O}=\boldsymbol{I}} \Vert\boldsymbol{W} - \boldsymbol{O}\Vert_F\end{equation}
+即寻找跟$\boldsymbol{W}$最邻近的正交矩阵。这个操作在我们介绍Muon的第一篇博客[《Muon优化器赏析：从向量到矩阵的本质跨越》](<https://spaces.ac.cn/archives/10592>)就已经出现过，它其实就是Muon中的$\newcommand{msign}{\mathop{\text{msign}}}\msign$，所以我们要实现的操作又可以写成
+\begin{equation}\boldsymbol{W}_t = \msign(\boldsymbol{W}_{t-1} - \eta \boldsymbol{\Phi}_t)\label{eq:msign-u}\end{equation}
+
+## 流式迭代
+
+也就是说，我们要在每一步更新完成后，再执行一次$\msign$，才能实现将参数投影回正交流形上。然而，$\msign$这个运算，说贵也不算贵，但说便宜其实也不便宜。我们知道Muon的核心运算就是$\msign$，但Muon的$\msign$是在BF16下运行的，而参数存的是FP32，参数的$\msign$需要在FP32下运行，成本比较可观。
+
+$\msign$的高效计算基于Newton\-Schulz迭代，这我们在[《msign算子的Newton\-Schulz迭代（上）》](<https://spaces.ac.cn/archives/10922>)和[《msign算子的Newton\-Schulz迭代（下）》](<https://spaces.ac.cn/archives/10996>)已经有过详细讨论。不同的Newton\-Schulz迭代有着不同的多项式次数和系数，对应着不同的收敛速度，一个经典的3阶格式是
+\begin{equation}\boldsymbol{X}_t = \frac{3}{2}\boldsymbol{X}_{t-1} - \frac{1}{2}\boldsymbol{X}_{t-1}\boldsymbol{X}_{t-1}^{\top}\boldsymbol{X}_{t-1},\qquad \boldsymbol{X}_0 = \boldsymbol{W}\end{equation}
+可以证明$\lim_{t\to\infty} \boldsymbol{X}_t = \msign(\boldsymbol{W})$。这个迭代虽然经典，但收敛较慢，Muon中我们通常用收敛更快的5阶迭代。但不管哪种，执行完整迭代的成本都比较可观。
+
+不过，在参数这边，我们真的有必要每一步都执行完整的迭代吗？假设$\boldsymbol{W}_{t-1}$已经正交或者近乎正交，由于学习率$\eta$很小，所以$\boldsymbol{W}_{t-1} - \eta \boldsymbol{\Phi}_t$也不会明显偏离正交，这正是流式思想的“用武之地”——也许每步训练只迭代一次就够了，例如考虑
+\begin{equation}\boldsymbol{W}_t = \frac{3}{2}\tilde{\boldsymbol{W}}_t - \frac{1}{2}\tilde{\boldsymbol{W}}_t\tilde{\boldsymbol{W}}_t^{\top}\tilde{\boldsymbol{W}}_t,\qquad \tilde{\boldsymbol{W}}_t = \boldsymbol{W}_{t-1} - \eta \boldsymbol{\Phi}_t\end{equation}
+从渐近的角度看，这样也起到了$\eqref{eq:msign-u}$的效果，并且每一步只需要多算一项$\tilde{\boldsymbol{W}}_t\tilde{\boldsymbol{W}}_t^{\top}\tilde{\boldsymbol{W}}_t$，代价明显低于完整的Newton\-Schulz迭代。
+
+## 谱之约束
+
+一般情况下，正交约束只能对某些特殊的矩阵施加，因为它过于苛刻，将矩阵的自由度减少了一半，或者说相当于将参数量减少了一半。很多时候我们可能会倾向于加更宽松的谱约束，比如在[《高阶MuP：更简明但更高明的谱条件缩放》](<https://spaces.ac.cn/archives/10795>)提到过的奇异值裁剪。
+
+如果说$\msign$是将矩阵的奇异值都变成1，那么奇异值裁剪就是只将大于1的奇异值变成1，剩下的奇异值保持不变，在[《通过msign来计算奇异值裁剪mclip（上）》](<https://spaces.ac.cn/archives/11006>)和[《通过msign来计算奇异值裁剪mclip（下）》](<https://spaces.ac.cn/archives/11059>)中我们将它称为$\newcommand{mclip}{\mathop{\text{mclip}}}\mclip$。假设我们要做的事情，就是在每步参数更新后将奇异值都裁剪到1以内，那么可以写成
+\begin{equation}\boldsymbol{W}_t = \mclip(\boldsymbol{W}_{t-1} - \eta \boldsymbol{\Phi}_t)\label{eq:mclip-u}\end{equation}
+然而，$\mclip$的计算要比$\msign$麻烦上不少，之前我们探讨过基于$\msign$来实现$\mclip$的方案，比如恒等式
+\begin{equation}\mclip(\boldsymbol{M}) = \frac{1}{2}\Big[\boldsymbol{M} + \msign(\boldsymbol{M}) +  (\msign(\boldsymbol{M}) - \boldsymbol{M}) \msign(\boldsymbol{M}^{\top}\boldsymbol{M} - \boldsymbol{I})\Big]\end{equation}
+它需要两次$\msign$来计算$\mclip$，成本颇高。当然我们也可以另外对$\boldsymbol{W}$做一次流式幂迭代然后按SVD来计算$\mclip$，但这又要新增一个缓存变量，也显得颇费周章。
+
+## 逐一裁剪
+
+让我们换一个角度来理解$\mclip$：$\mclip$是将所有大于1的奇异值都变成1，那么一个必要的操作就是将主奇异值变成1（如果它大于1的话），当我们裁剪掉主奇异值后，如果依然存在大于1的奇异值，那么其中的最大者就会变成新的主奇异值。这意味着，我们只需要不断重复“裁剪主奇异值到1”，就可以实现$\mclip$。
+
+这种“逐一裁剪”策略的优势在于：只计算主奇异值和主奇异向量（不妨称为$\mathop{\text{SVD1}}$）远比执行完整的SVD便宜，它只需要通过向量式的幂迭代
+\begin{equation}\boldsymbol{v}\quad\leftarrow\quad \frac{\boldsymbol{W}^{\top}\boldsymbol{W}\boldsymbol{v}}{\Vert\boldsymbol{W}^{\top}\boldsymbol{W}\boldsymbol{v}\Vert}\end{equation}
+即可收敛到$\boldsymbol{W}$的右主奇异向量$\boldsymbol{v}_1$，然后$\sigma_1 = \Vert\boldsymbol{W}\boldsymbol{v}_1\Vert$以及$\boldsymbol{u}_1 = \boldsymbol{W}\boldsymbol{v}_1/\sigma_1$，实践中我们固定迭代步数求一个近似值即可。接着，我们依然贯彻“流式”的思想，每一步更新都只执行一次主奇异值裁剪，即
+\begin{equation}\boldsymbol{W}_t = \tilde{\boldsymbol{W}}_t - \max(\sigma_1 - 1, 0) \boldsymbol{u}_1 \boldsymbol{v}_1^{\top},\quad\sigma_1, \boldsymbol{u}_1, \boldsymbol{v}_1 = \mathop{\text{SVD1}}(\tilde{\boldsymbol{W}}_t),\quad\tilde{\boldsymbol{W}}_t = \boldsymbol{W}_{t-1} - \eta \boldsymbol{\Phi}_t\end{equation}
+在长期训练之下，这能够将$\boldsymbol{W}$的奇异值控制在1附近（由于幂迭代的近似性以及流式的原因，实际上会比1略大）。这种“流式奇异值裁剪”，可以视为[《从谱范数梯度到新式权重衰减的思考》](<https://spaces.ac.cn/archives/10648>)中引入的“谱权重衰减（Spectral Weight Decay）”的变体，在论文[《Training Transformers with Enforced Lipschitz Constants》](<https://papers.cool/arxiv/2507.13338>)中，它被称为“Spectral Hammer”。
+
+## 其他例子
+
+什么时候适用流式思想呢？典型场景是：我们能够预估，在长期训练之下，某个变量是缓变的，那么可以尝试每一步训练只执行少量迭代，期望它足以修正参数更新带来的变化。除了以上两个新增例子外，在之前的一些文章中，我们也已经用过“流式”思想，在此简单回顾一下。
+
+在[《流形上的最速下降：3\. Muon \+ Stiefel》](<https://spaces.ac.cn/archives/11221>)和[《流形上的最速下降：4\. Muon \+ 谱球面》](<https://spaces.ac.cn/archives/11241>)中，我们求解相应流形上的最速下降时，需要求解一个非线性方程，当时提的是不动点迭代法来求解，后来在[《流形上的最速下降：5\. 对偶梯度下降》](<https://spaces.ac.cn/archives/11388>)我们讨论了对偶梯度下降解法，并提出了通过流式思想将求解过程分摊到每一步训练的做法。
+
+无独有偶，在[《MoE环游记：6、最优分配促均衡》](<https://spaces.ac.cn/archives/11619>)中，我们通过最优分配视角来看待MoE的负载均衡问题，在求解最优分配的对偶问题时，本来每步需要交替优化$\boldsymbol{\alpha}$和$\boldsymbol{\beta}$直至收敛，但考虑到每一步的$\boldsymbol{\beta}$变化应该不大，那么仍然基于流式思想，我们在每步训练只执行一步$\boldsymbol{\alpha}$和$\boldsymbol{\beta}$的更新，就能达到不错的负载均衡效果。
+
+总而言之，当我们意识到变量的变化是缓慢的，那么就可以考虑每一步只执行较少的迭代步数，以平摊计算量。为了达到这个目的，有时候我们需要新增额外的缓存变量（比如流式幂迭代的$\boldsymbol{V}$），但有时候也不需要。如何更好地设计流式迭代可能需要一定的“巧思”，值得细细挖掘和品味。
+
+## 文章小结
+
+本文主要介绍了另外两个运用“流式”思想的例子，分别是以极小的额外成本实现将参数投影到正交（Stiefel）流形，或者将参数谱范数裁剪到不超过1。这些例子再次体现了流式思想的奇妙之处：许多看似需要一次性完成的复杂计算，都可以被拆解为渐进式的微调操作，并融入到训练的每一步中。

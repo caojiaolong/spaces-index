@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "10667",
+    "title": "细水长flow之TARFLOW：流模型满血归来？",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/10667",
+    "date": "2025-01-17",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 56,
+    "display_formula_count": 12,
+    "image_count": 3,
+    "heading_count": 7,
+    "code_block_count": 0,
+    "source_text_sha256": "5c24a2091702da299b37d010782797da645f472505b65bdc0c7bed484823d8e8",
+    "output_text_sha256": "5c24a2091702da299b37d010782797da645f472505b65bdc0c7bed484823d8e8",
+    "latex_sha256": "681ec3c6b7e0881aa4c0e8e6128bc6bab93364b2c40ad469d08225e8494f5814",
+    "body_sha256": "92372400682bb7ca0dfdae300c171ad0907ab691649ebe49906acf7a26a44137",
+    "converter_version": 1,
+    "markdown_sha256": "88534c90a264682911b6b00eb223361b97b9fb3632535e41e7aa930c3ac7d1db"
+  },
+  "fetched_at": "2026-09-14T12:44:14+00:00",
+  "source_snapshot_sha256": "74f819cd633d7a273d7e173c1421088197a934b43e89453de0075212edaf3a16",
+  "images": {},
+  "local_only": true
+}

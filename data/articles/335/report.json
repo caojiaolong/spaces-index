@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "335",
+    "title": "网站PR升到3了！",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/335",
+    "date": "2009-12-31",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 0,
+    "display_formula_count": 0,
+    "image_count": 1,
+    "heading_count": 0,
+    "code_block_count": 0,
+    "source_text_sha256": "a9d51801f402635c098c4abe347c98de41962d7af55478584d242c28ae978959",
+    "output_text_sha256": "a9d51801f402635c098c4abe347c98de41962d7af55478584d242c28ae978959",
+    "latex_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "body_sha256": "afd2abf4658495968d9feb3c56b755848608507a181e0a3dbf7ce392f4b5c3d1",
+    "converter_version": 1,
+    "markdown_sha256": "8ad26db77768b438800d7486b53c8db1f83076ef085172ac39af6057fef4d01f"
+  },
+  "fetched_at": "2026-09-14T14:44:16+00:00",
+  "source_snapshot_sha256": "e4f926190d30c43d3b599d7f9b67842e167ddd33c9c0b756ea7ad1f0c884cccc",
+  "images": {},
+  "local_only": true
+}

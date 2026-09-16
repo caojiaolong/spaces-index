@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "2040",
+    "title": "变分法的一个技巧及其“误用”",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/2040",
+    "date": "2013-07-30",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 23,
+    "display_formula_count": 9,
+    "image_count": 0,
+    "heading_count": 0,
+    "code_block_count": 0,
+    "source_text_sha256": "2f5805c38f64fa72107f330441111142cf11affb4a7f286067e19e29edbc6e20",
+    "output_text_sha256": "2f5805c38f64fa72107f330441111142cf11affb4a7f286067e19e29edbc6e20",
+    "latex_sha256": "2204faf23aa7bcaea8645e2a8b5a70762b81416a1c46992a48e55b08008d44a5",
+    "body_sha256": "ce8b2ce0f9f706984128069168d069ededfbb278509e198f375e7828eee1b9f1",
+    "converter_version": 1,
+    "markdown_sha256": "9f42c323e52b8e57557306d1216c6dd269ab1065f9eed7b146af11748352fd3f"
+  },
+  "fetched_at": "2026-09-14T14:00:52+00:00",
+  "source_snapshot_sha256": "9a43a2b09836552dd39d5bf299024ceec53f996fa3baffc36b47bc62398d1333",
+  "images": {},
+  "local_only": true
+}

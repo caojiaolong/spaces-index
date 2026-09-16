@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "418",
+    "title": "【NASA每日一图】夜晚发射的“奋进号”",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/418",
+    "date": "2010-02-09",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 0,
+    "display_formula_count": 0,
+    "image_count": 1,
+    "heading_count": 0,
+    "code_block_count": 0,
+    "source_text_sha256": "e81ca75e724c65958712434638ad5dc0e21cb25916722045e15980f399fc96b5",
+    "output_text_sha256": "e81ca75e724c65958712434638ad5dc0e21cb25916722045e15980f399fc96b5",
+    "latex_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "body_sha256": "dcee9389c183ab35edc1970e300f050af7917e5b2c9c7d1003b079d6d60b74e8",
+    "converter_version": 1,
+    "markdown_sha256": "a46148eea5e0ad6a67aa20eda0a75a89c0db242a9824887948db9b5649b14d4f"
+  },
+  "fetched_at": "2026-09-14T14:41:28+00:00",
+  "source_snapshot_sha256": "16ad664a4b45d4a51ce905711f010c028035db6b29864abebeceda3189f13f1d",
+  "images": {},
+  "local_only": true
+}

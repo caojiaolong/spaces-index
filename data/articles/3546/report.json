@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "3546",
+    "title": "人生苦短，我用Python！",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/3546",
+    "date": "2015-12-06",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 0,
+    "display_formula_count": 0,
+    "image_count": 1,
+    "heading_count": 0,
+    "code_block_count": 0,
+    "source_text_sha256": "15c64f0f1d76d50930b745cb2d863f2e757183a17c6ffa2a2e2bfb8c6978b1cf",
+    "output_text_sha256": "15c64f0f1d76d50930b745cb2d863f2e757183a17c6ffa2a2e2bfb8c6978b1cf",
+    "latex_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "body_sha256": "9345f9fab360bab60055e7a09e6e2dfde0982574414da4b78805984fb29fcd8b",
+    "converter_version": 1,
+    "markdown_sha256": "573078c4adb2d5ed3c6926bd0442d06d518aede6567c951622722f178c765081"
+  },
+  "fetched_at": "2026-09-14T13:43:42+00:00",
+  "source_snapshot_sha256": "80e8e9679da99dabefd2b43540c38a12d991f9c58e4498427c652f1e1c88496b",
+  "images": {},
+  "local_only": true
+}

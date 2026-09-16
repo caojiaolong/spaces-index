@@ -1,0 +1,43 @@
+<div class="PostContent" id="PostContent">
+<p>当前Transformer架构用的最多的注意力机制，全称为“Scaled Dot-Product Attention”，其中“Scaled”是因为在$Q,K$转置相乘之后还要除以一个$\sqrt{d}$再做Softmax（下面均不失一般性地假设$Q,K,V\in\mathbb{R}^{n\times d}$）：<br/>
+\begin{equation}Attention(Q,K,V) = softmax\left(\frac{QK^{\top}}{\sqrt{d}}\right)V\label{eq:std}\end{equation}</p><p>在<a href="/archives/8620" target="_blank">《浅谈Transformer的初始化、参数化与标准化》</a>中，我们已经初步解释了除以$\sqrt{d}$的缘由。而在这篇文章中，笔者将从“熵不变性”的角度来理解这个缩放操作，并且得到<font color="red"><u>一个新的缩放因子</u></font>。在MLM的实验显示，新的缩放因子具有<font color="red"><u>更好的长度外推性能</u></font>。</p><h2 id="熵不变性">熵不变性</h2><p>我们将一般的Scaled Dot-Product Attention改写成<br/>
+\begin{equation}\boldsymbol{o}_i = \sum_{j=1}^n a_{i,j}\boldsymbol{v}_j,\quad a_{i,j}=\frac{e^{\lambda \boldsymbol{q}_i\cdot \boldsymbol{k}_j}}{\sum\limits_{j=1}^n e^{\lambda \boldsymbol{q}_i\cdot \boldsymbol{k}_j}}\end{equation}<br/>
+其中$\lambda$是缩放因子，它跟$\boldsymbol{q}_i,\boldsymbol{k}_j$无关，但原则上可以跟长度$n$、维度$d$等参数有关，目前主流的就是$\lambda=1/\sqrt{d}$。</p><p>本文提出一个观点：</p><blockquote class="cite"><div>为了使得模型结果能够更好地泛化到未知长度，Attention机制的设计应该使得$a_{i,j}$尽量具备<font color="red">熵不变性</font>。</div></blockquote><p>怎么理解这句话呢？首先，泛化到未知长度，指的是预测长度和训练不一致时也能有不错的效果，比如$n=64$训练然后外推到$n=128,256$测试。我们知道，使用<a href="/archives/8265" target="_blank">RoPE</a>之类的相对位置编码的模型，对长度具有比较好的外推性，但我们依然可以通过更好的设计来增强这种外推性，比如熵不变性就是其中之一。</p><p>具体来说，$a_{i,j}$可以视为$i$为条件、$j$为随机变量的条件分布，它的熵为<br/>
+\begin{equation}\mathcal{H}_i = -\sum_{j=1}^n a_{i,j}\log a_{i,j}\end{equation}<br/>
+熵不变性是指，$\mathcal{H}_i$应该对长度$n$不敏感。更具体一点，就是如果在已有的token基础上，再补充几个token，那么新算出来各个$a_{i,j}$自然也会有所改变，但我们希望$\mathcal{H}_i$不要有太大改变。</p><p>为什么希望熵不变呢？我们知道，熵是不确定性的度量（参考<a href="/archives/3534" target="_blank">《“熵”不起：从熵、最大熵原理到最大熵模型（一）》</a>），换个角度想，我们可以将不确定性视为注意力的“<font color="red">聚焦程度</font>”：如果熵为0，那么注意力将聚焦到某一个token上，如果熵为$\log n$，那么注意力均匀分布到所有token上。我们希望熵不变，是希望引入新的token后，已有的token依旧能同样地聚焦到原来的token上，而不希望新token的引入过多地“分摊”了原有的注意力，导致求和结果显著发生变化。</p><h2 id="新的因子">新的因子</h2><p>根据熵不变性以及一些合理的假设，我们可以得到一个新的缩放因子，从而得到一种Scaled Dot-Product Attention：<br/>
+\begin{equation}Attention(Q,K,V) = softmax\left(\frac{\kappa \log n}{d}QK^{\top}\right)V\label{eq:ei}\end{equation}<br/>
+这里的$\kappa$是一个跟$n,d$都无关的超参数，详细推导过程我们下一节再介绍。为了称呼上的方便，这里将式$\eqref{eq:std}$描述的常规Scaled Dot-Product Attention称为“<font color="red">Attention-O</font>”（Original），而式$\eqref{eq:ei}$以及下面的式$\eqref{eq:ei2}$描述的变体称为“<font color="red">Attention-E</font>”（Entropy Invariance）。</p><p>可能有读者对引入了一个新参数感到不满意，其实这个不难解决。我们知道当前主流的预训练长度就是512，所以我们假设主流的参数都是为$n=512$调试好的，所以当$n=512$的时候，上式应退化为普通的Scaled Dot-Product Attention，即$\frac{\kappa \log 512}{d}=\frac{1}{\sqrt{d}}$，推出$\kappa = \frac{\sqrt{d}}{\log 512}$，代入上式整理后得到<br/>
+\begin{equation}Attention(Q,K,V) = softmax\left(\frac{\log_{512} n}{\sqrt{d}}QK^{\top}\right)V\label{eq:ei2}\end{equation}<br/>
+这就去掉了超参数$\lambda$，下面的实验也是用这个版本。</p><p>为了验证该改动是否真如预期那样能提高Transformer的外推效果，笔者分别用Attention-O和Attention-E分别训练了一个RoFormer small版本，训练任务为MLM，训练长度为64，然后在不同长度的验证集下比较MLM的准确率，结果如下：<br/>
+\begin{array}{c}<br/>
+\text{Attention的长度外推实验} \\<br/>
+{\begin{array}{c|ccccc}<br/>
+\hline<br/>
+&amp; n=64 &amp; n=128 &amp; n=256 &amp; n=512 &amp; 1024 \\<br/>
+\hline<br/>
+\text{Attention-O} &amp; 43.27 &amp; 36.53 &amp; 23.02 &amp; 15.12 &amp; 11.54\\<br/>
+\text{Attention-E} &amp; 43.11 &amp; 41.17 &amp; 34.04 &amp; 20.15 &amp; 13.58\\<br/>
+\hline<br/>
+\end{array}}<br/>
+\end{array}<br/>
+从实验结果可以看出，在与训练长度一致$n=64$的情况下，Attention-O和Attention-E的效果是很接近的，但是外推到更大的测试长度时，则明显拉开了差距，比如$n=256$时Attention-E要比Attention-O高10个百分点以上的准确率，可真不是一星半点了。</p><h2 id="推导过程">推导过程</h2><p>这一节我们介绍式$\eqref{eq:ei}$的推导过程。事实上，推导过程和假设都跟<a href="/archives/7695" target="_blank">《最小熵原理（六）：词向量的维度应该怎么选择？》</a>中的几乎是一样的。</p><p>首先，我们代入$a_{i,j}$的表达式，就可以得到：<br/>
+\begin{equation}\mathcal{H}_i = -\sum_{j=1}^n a_{i,j}\log a_{i,j}=\log \sum_{j=1}^n e^{\lambda \boldsymbol{q}_i\cdot \boldsymbol{k}_j} - \frac{\sum\limits_{j=1}^n e^{\lambda \boldsymbol{q}_i\cdot \boldsymbol{k}_j}(\lambda \boldsymbol{q}_i\cdot \boldsymbol{k}_j)}{\sum\limits_{j=1}^n e^{\lambda \boldsymbol{q}_i\cdot \boldsymbol{k}_j}}\end{equation}<br/>
+要注意，我们仅仅是要做一个半定量的估计，以确定适合的$\lambda$来抵消部分长度的影响，让熵完全不受长度影响是做不到的。所以，我们可以做一些假设，比如假设$\boldsymbol{k}_j$是一个随机变量，那么可以写出<br/>
+\begin{equation}\sum_{j=1}^n e^{\lambda \boldsymbol{q}_i\cdot \boldsymbol{k}_j} = n\times \frac{1}{n}\sum_{j=1}^n e^{\lambda \boldsymbol{q}_i\cdot \boldsymbol{k}_j}\approx n\,\mathbb{E}_j[e^{\lambda \boldsymbol{q}_i\cdot \boldsymbol{k}_j}]\end{equation}<br/>
+将所有求和都用同样的近似代替，我们得到<br/>
+\begin{equation}\mathcal{H}_i \approx \log n + \log \mathbb{E}_j[e^{\lambda \boldsymbol{q}_i\cdot \boldsymbol{k}_j}] - \frac{\lambda\,\mathbb{E}_j[e^{\lambda \boldsymbol{q}_i\cdot \boldsymbol{k}_j}(\boldsymbol{q}_i\cdot \boldsymbol{k}_j)]}{\mathbb{E}_j[e^{\lambda \boldsymbol{q}_i\cdot \boldsymbol{k}_j}]} \end{equation}<br/>
+留意到一般情况下$\boldsymbol{q}_i,\boldsymbol{k}_j$都是Layer Norm出来之后再接一个Dense层，而Dense层接近正交变换（参考<a href="/archives/7180" target="_blank">《从几何视角来理解模型参数的初始化策略》</a>），所以我们近似地假设$\boldsymbol{q}_i,\boldsymbol{k}_j$都是模长为$\sqrt{d}$的向量，所以$\boldsymbol{q}_i\cdot \boldsymbol{k}_j=d\cos(\boldsymbol{q}_i,\boldsymbol{k}_j)$；然后进一步假设$\boldsymbol{k}_j$均匀地分布在半径为$\sqrt{d}$的球面上，那么对$\boldsymbol{k}_j$的期望可以转化为对$\boldsymbol{q}_i,\boldsymbol{k}_j$夹角的期望，即<br/>
+\begin{equation}\mathcal{H}_i \approx \log n + \log \mathbb{E}_{\theta}[e^{\lambda d \cos\theta}] - \frac{\lambda d\,\mathbb{E}_{\theta}[e^{\lambda d \cos\theta}\cos\theta]}{\mathbb{E}_{\theta}[e^{\lambda d \cos\theta}]} \end{equation}<br/>
+其中$\theta$服从的分布就是球面上任意两个向量之间的夹角分布，我们在<a href="/archives/7076" target="_blank">《n维空间下两个随机向量的夹角分布》</a>讨论过。接下来可以像<a href="/archives/7695" target="_blank">《最小熵原理（六）：词向量的维度应该怎么选择？》</a>的“<a href="/archives/7695#%E8%BF%91%E4%BC%BC%E4%BC%B0%E8%AE%A1" target="_blank">近似估计</a>”一样，用拉普拉斯近似得到<br/>
+\begin{equation}\mathcal{H}_i \approx \log n - 0.24\lambda d + \mathcal{O}(1) \end{equation}<br/>
+因此，为了抵消长度$n$的影响，我们让$\log n - 0.24\lambda d = 0$，从而得出$\lambda = \log n / (0.24 d)$。当然，我们知道这只是估计，所以没必要保留系数$0.24$了，倒不如直接引入超参数$\kappa$，使得<br/>
+\begin{equation}\lambda = \frac{\kappa\log n}{d}\end{equation}<br/>
+这就是对应式$\eqref{eq:ei}$了。</p><h2 id="相关结果">相关结果</h2><p>在阅读ACL2022的投稿论文时，发现上面有一篇<a href="https://openreview.net/forum?id=qc9O2EtrMI-" target="_blank">《Overcoming a Theoretical Limitation of Self-Attention》</a>，给出了相近的结果（论文4.3节的公式1）：<br/>
+\begin{equation}Attention(Q,K,V) = softmax\left(\frac{\log n}{\sqrt{d}}QK^{\top}\right)V\end{equation}<br/>
+不过，该论文并没有太深刻的理论分析，只是构建了两个特殊的case来测试Attention的性能，测试发现往缩放因子乘上$\log n$有助于泛化长度，所以就提出来了。</p><p>然而可以看出，如果按照默认约定$\log$用自然对数的话，那么上式很明显是不合理的，因为当$n$较大时，缩放因子过大，会导致严重的梯度消失。只不过该论文只是在机器翻译上做实验，测得都是$n=20$级别的序列，所以就没有显示出梯度消失问题。</p><h2 id="文章总结">文章总结</h2><p>本文从熵不变性的角度重新推导了Scaled Dot-Product Attention中的Scale操作，得到了一个新的缩放因子。初步的实验结果显示，新的缩放因子不改变已有的训练性能，并且对长度外推具有更好的结果。</p>
+
+
+
+
+
+</div>

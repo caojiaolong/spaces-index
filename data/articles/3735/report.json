@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "3735",
+    "title": "Coming Back...",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/3735",
+    "date": "2016-05-15",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 0,
+    "display_formula_count": 0,
+    "image_count": 0,
+    "heading_count": 0,
+    "code_block_count": 0,
+    "source_text_sha256": "2b5e06c931731064e04425e59d2be88274955943f2f185380d89884e4a4161da",
+    "output_text_sha256": "2b5e06c931731064e04425e59d2be88274955943f2f185380d89884e4a4161da",
+    "latex_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "body_sha256": "310d34c2e1f44bfb1618d56a2591338e2acc1f59b5e7a1d0385f41a5def0333f",
+    "converter_version": 1,
+    "markdown_sha256": "22c874100690e169f7b6e54913112c1b9c40d78474a637aa1a6ad83c2a7ead20"
+  },
+  "fetched_at": "2026-09-14T13:41:15+00:00",
+  "source_snapshot_sha256": "bda62d8346bade54466ba00c41279129d20aae83a9b929c786a57e0931478626",
+  "images": {},
+  "local_only": true
+}

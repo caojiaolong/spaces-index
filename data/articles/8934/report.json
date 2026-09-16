@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "8934",
+    "title": "FLASH：可能是近来最有意思的高效Transformer设计",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/8934",
+    "date": "2022-02-25",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 101,
+    "display_formula_count": 8,
+    "image_count": 6,
+    "heading_count": 13,
+    "code_block_count": 0,
+    "source_text_sha256": "7dced745451cec8228eabd2df04e5d1183672e11c6b7c4627df0b71901fa59a2",
+    "output_text_sha256": "7dced745451cec8228eabd2df04e5d1183672e11c6b7c4627df0b71901fa59a2",
+    "latex_sha256": "418dc96670f3e9fe6c9d6a4fb3fa8c838dc489c3ae10e19a5c5f49bd440dd043",
+    "body_sha256": "13d0b4461e071b82cdcb01bb58e7a8216517f6482e6083f281af6db4d8742033",
+    "converter_version": 1,
+    "markdown_sha256": "09e80aa47ea2352ede8fcd675869fe38cfc58a7636ea48c3bd0c9dbfe60ceb13"
+  },
+  "fetched_at": "2026-09-14T13:01:10+00:00",
+  "source_snapshot_sha256": "fccfcc8bf8509baaa348c9460d346cbed409aa793a7fc8f7fb6e1eb38a11edd0",
+  "images": {},
+  "local_only": true
+}

@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "4059",
+    "title": "【外微分浅谈】4. 微分不微",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/4059",
+    "date": "2016-11-05",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 41,
+    "display_formula_count": 7,
+    "image_count": 0,
+    "heading_count": 2,
+    "code_block_count": 0,
+    "source_text_sha256": "3d23c3744a973dd3eaa4b97fffbd1ea74a4898e528edbb0fcaa7fac20e7cae7d",
+    "output_text_sha256": "3d23c3744a973dd3eaa4b97fffbd1ea74a4898e528edbb0fcaa7fac20e7cae7d",
+    "latex_sha256": "cd6ee79602f35a8f551095ce159f264284b58434b924f38cb15415034b05aca6",
+    "body_sha256": "1665c4bf0c4992b9c148374b6fba1fde18d6eec0fb520dc087e0307f0cabce08",
+    "converter_version": 1,
+    "markdown_sha256": "6605f358bed9ac6add716a5a52201006ff8e1b0c11cff1031504e8bf874dd409"
+  },
+  "fetched_at": "2026-09-14T13:36:34+00:00",
+  "source_snapshot_sha256": "a5ac96b5c8166eda1044587fc66d513a44e575ff030d4d17c4e28061e76b28e7",
+  "images": {},
+  "local_only": true
+}

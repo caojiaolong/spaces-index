@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "1055",
+    "title": "为什么是抛物线？——聚光面研究",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/1055",
+    "date": "2010-11-07",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 14,
+    "display_formula_count": 2,
+    "image_count": 2,
+    "heading_count": 0,
+    "code_block_count": 0,
+    "source_text_sha256": "019003295f3e43babf0ae9677ad32f34e1b2ef44cc026d198c10b54c483cb4c8",
+    "output_text_sha256": "019003295f3e43babf0ae9677ad32f34e1b2ef44cc026d198c10b54c483cb4c8",
+    "latex_sha256": "a7dafcd6fd57618d979816a3cbc4e8534b9d6ff8d3e39984b562f72235183dad",
+    "body_sha256": "b1b6da83649a6152789497ac63df0b40945fb43bb2455fe427aa23a6c7e4131a",
+    "converter_version": 1,
+    "markdown_sha256": "8366c85d0917f492e9766681bf75811f0ab86fab195161d0917b36f5a2d4d4c1"
+  },
+  "fetched_at": "2026-09-14T14:27:24+00:00",
+  "source_snapshot_sha256": "5b00626821c4cf74c17a6f04e7552e81897a9774ee948fc8e5bbbb4fb641133a",
+  "images": {},
+  "local_only": true
+}

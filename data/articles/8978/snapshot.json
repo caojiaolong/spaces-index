@@ -1,0 +1,17 @@
+{
+  "metadata": {
+    "id": "8978",
+    "title": "训练1000层的Transformer究竟有什么困难？",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/8978",
+    "date": "2022-03-09",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "fetched_at": "2026-09-14T13:00:58+00:00",
+  "source_snapshot_sha256": "6d0d33f73216a92831df9f75c18ab552466381ece9a41bb3d0580acbbdd6883d",
+  "validators": {
+    "etag": null,
+    "last_modified": null
+  }
+}

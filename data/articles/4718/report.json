@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "4718",
+    "title": "一阶偏微分方程的特征线法",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/4718",
+    "date": "2017-12-07",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 96,
+    "display_formula_count": 29,
+    "image_count": 0,
+    "heading_count": 9,
+    "code_block_count": 0,
+    "source_text_sha256": "98e5b6402069b10e5170b24378924992187b472ffb483e47ffbcc46c10c960d6",
+    "output_text_sha256": "98e5b6402069b10e5170b24378924992187b472ffb483e47ffbcc46c10c960d6",
+    "latex_sha256": "b288895d6ce2de65bb9254de34ebaece059d248621ccc6e6c6a7903e2742d885",
+    "body_sha256": "473fe4297d7f2c7fc8f716c7352595f8c27f1a112ce89f18d522b840322f0082",
+    "converter_version": 1,
+    "markdown_sha256": "f5f0041e6b9aa5f144a70d114bc71e8f7431469dd74f5572869f49655dcf842a"
+  },
+  "fetched_at": "2026-09-14T13:29:20+00:00",
+  "source_snapshot_sha256": "7d5876a00bca26b61ce267287d797d45b4f6224d438d6ef5fd6c91d629b9a060",
+  "images": {},
+  "local_only": true
+}

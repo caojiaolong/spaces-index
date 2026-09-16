@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "432",
+    "title": "MathPlayer 2.2发布，大家升级啦！",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/432",
+    "date": "2010-02-13",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 0,
+    "display_formula_count": 0,
+    "image_count": 1,
+    "heading_count": 0,
+    "code_block_count": 0,
+    "source_text_sha256": "bb22e4e35859e0af23cc6f46a370182515d694affc4153945b65b9eaac6f34f4",
+    "output_text_sha256": "bb22e4e35859e0af23cc6f46a370182515d694affc4153945b65b9eaac6f34f4",
+    "latex_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "body_sha256": "9165bfbbc0c3f7defdb0da36ce3ade22de8ee55b654aeb64ff53442557b7b123",
+    "converter_version": 1,
+    "markdown_sha256": "f95597edaf9ebda5c60257e88a801542c30f58f3adfef718193e37f81ca784fa"
+  },
+  "fetched_at": "2026-09-14T14:41:16+00:00",
+  "source_snapshot_sha256": "41ec045dec2184e1291248fa241744acc13ff8edc399284fc3cdb3779934368e",
+  "images": {},
+  "local_only": true
+}

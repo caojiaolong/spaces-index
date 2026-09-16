@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "4521",
+    "title": "【备忘】谈谈dropout",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/4521",
+    "date": "2017-08-08",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 1,
+    "display_formula_count": 0,
+    "image_count": 0,
+    "heading_count": 3,
+    "code_block_count": 2,
+    "source_text_sha256": "22cb85098a202b1bcb03b164a139c142432337e44bf17f4e7e8c8385af8fd747",
+    "output_text_sha256": "22cb85098a202b1bcb03b164a139c142432337e44bf17f4e7e8c8385af8fd747",
+    "latex_sha256": "22bf003d6cac79e1d917cacdab9539c5d59468c02c22d29c08df00834ee4bbe6",
+    "body_sha256": "1b806175e6b98af08262ba07dc8a2f8be3df6012d6dc6cee7709f5554d5831a6",
+    "converter_version": 1,
+    "markdown_sha256": "aa745eabb48753d7a37540e7ee17d705059a7dffafff7675abba936902d3b905"
+  },
+  "fetched_at": "2026-09-14T13:31:13+00:00",
+  "source_snapshot_sha256": "e48ea9104ba72ee6084a12126f4709beaa6ea8646d1b6edf7beab86bf172938f",
+  "images": {},
+  "local_only": true
+}

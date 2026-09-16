@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "6747",
+    "title": "简述无偏估计和有偏估计",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/6747",
+    "date": "2019-06-19",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 37,
+    "display_formula_count": 8,
+    "image_count": 0,
+    "heading_count": 0,
+    "code_block_count": 0,
+    "source_text_sha256": "9bd1e32aa09a87e239c13e51e1e9129dbb5304c94901f25acbe437d13893cb58",
+    "output_text_sha256": "9bd1e32aa09a87e239c13e51e1e9129dbb5304c94901f25acbe437d13893cb58",
+    "latex_sha256": "6b5dc87fe1db51a84ae61edb92e36c810fe61ce766522cdc60e04ca6f79885a6",
+    "body_sha256": "d187046958fdf9fd134a4f5c87df196e2c40b540dd4ee9a02acb2b3e298124bb",
+    "converter_version": 1,
+    "markdown_sha256": "9d781d1588e0910e0050cced91a07a46cd3ed10da2672de82a48599e4e037c68"
+  },
+  "fetched_at": "2026-09-14T13:19:12+00:00",
+  "source_snapshot_sha256": "4b4ce7b71ea8c86ef3077eaa7aee91716b96f4f5a6dc1e150a2bebaf9dc6be46",
+  "images": {},
+  "local_only": true
+}

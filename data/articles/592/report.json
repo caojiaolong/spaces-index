@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "592",
+    "title": "【生物总结】到细胞内旅游",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/592",
+    "date": "2010-04-05",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 0,
+    "display_formula_count": 0,
+    "image_count": 6,
+    "heading_count": 0,
+    "code_block_count": 0,
+    "source_text_sha256": "a1a42bb887e09b401b2d32a4ee16e1946fb086f90b3bc7bff9e5983468287e21",
+    "output_text_sha256": "a1a42bb887e09b401b2d32a4ee16e1946fb086f90b3bc7bff9e5983468287e21",
+    "latex_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "body_sha256": "c546d63897641e4518b2b2579a34796f6b530ff0bd3806270d053be7030ec6e5",
+    "converter_version": 1,
+    "markdown_sha256": "f4710a42f3c496b7da0515060e44041f2bdb3234a2b6ddc943e3cb5b241624ff"
+  },
+  "fetched_at": "2026-09-14T14:38:09+00:00",
+  "source_snapshot_sha256": "2c0d4aef38e48afecb5d83753dd1cdc76e835ed461399e222124a644903094f7",
+  "images": {},
+  "local_only": true
+}

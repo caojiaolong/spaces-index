@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "988",
+    "title": "球壳内部的均匀力场",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/988",
+    "date": "2010-10-16",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 3,
+    "display_formula_count": 3,
+    "image_count": 2,
+    "heading_count": 0,
+    "code_block_count": 0,
+    "source_text_sha256": "fa713b04d4975dafce6a94213a3e1bd93aa267125bb6099c080e620fdbb9a34c",
+    "output_text_sha256": "fa713b04d4975dafce6a94213a3e1bd93aa267125bb6099c080e620fdbb9a34c",
+    "latex_sha256": "0c68715dc8d983ed17ca031995ed93fe3fbd7600140c8710246661e7a11755af",
+    "body_sha256": "d36fb816e4ec1cbb5467d7ec35e27905517dfca9b9d052df732b5b922aa54231",
+    "converter_version": 1,
+    "markdown_sha256": "72602b011c21d6e5da8da2100b415578aee997b0f855e5b5d2dad1b1a9027d34"
+  },
+  "fetched_at": "2026-09-14T14:28:35+00:00",
+  "source_snapshot_sha256": "db31020f21611edf760c9214b62fa013e0705b8d6c679d7cb3529e5c6307e996",
+  "images": {},
+  "local_only": true
+}

@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "10373",
+    "title": "Softmax后传：寻找Top-K的光滑近似",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/10373",
+    "date": "2024-09-19",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 212,
+    "display_formula_count": 23,
+    "image_count": 0,
+    "heading_count": 9,
+    "code_block_count": 4,
+    "source_text_sha256": "d4f936f4d769b7c391ec3cbd118db1ba3e55687ed2a9ddee4d953793c64e3a15",
+    "output_text_sha256": "d4f936f4d769b7c391ec3cbd118db1ba3e55687ed2a9ddee4d953793c64e3a15",
+    "latex_sha256": "c4c6e2cb1ffedb6b194e333745ad1c8300440814b7bb9d18d9d50ac66fd5ab02",
+    "body_sha256": "72a9edf642e822f64b14450dba86e0683197a82c40f45987e2867f7aeb65736f",
+    "converter_version": 1,
+    "markdown_sha256": "2b7292ee688d436e54ab4f0eaaa68b6ea23aae695669beb96fd076d536a57ea9"
+  },
+  "fetched_at": "2026-09-14T12:46:34+00:00",
+  "source_snapshot_sha256": "fc0dffc5c4d4a28576aee08f343e991c1ed785b3c32cb5da12e3546de74d3e1a",
+  "images": {},
+  "local_only": true
+}

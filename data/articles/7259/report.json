@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "7259",
+    "title": "Seq2Seq中Exposure Bias现象的浅析与对策",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/7259",
+    "date": "2020-03-09",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 48,
+    "display_formula_count": 13,
+    "image_count": 2,
+    "heading_count": 9,
+    "code_block_count": 0,
+    "source_text_sha256": "27d1d096d231a0a03cbf6d675c6b0c5f8270a29add7cc58b18e036076d010323",
+    "output_text_sha256": "27d1d096d231a0a03cbf6d675c6b0c5f8270a29add7cc58b18e036076d010323",
+    "latex_sha256": "9bfca71b83f3524892e3892a18565c9cfbc0ae7edc85403175da9de9c56d6f8a",
+    "body_sha256": "eda7d5df17ecdd83ce21c7ebca2dff1393d8224413dd1f782b91676314315e49",
+    "converter_version": 1,
+    "markdown_sha256": "2e34082bacc2dc4e7acc0a27d32aa90fed62aca29231c95a4d072f437e16eb60"
+  },
+  "fetched_at": "2026-09-14T13:15:01+00:00",
+  "source_snapshot_sha256": "39e9fc9ce968c989898a06fa0c49be8b47497f6c3e4cb7cce8e8fc199a7c72a3",
+  "images": {},
+  "local_only": true
+}

@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "561",
+    "title": "《方程与宇宙》:活力积分和开普勒方程(二)",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/561",
+    "date": "2010-03-27",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 45,
+    "display_formula_count": 16,
+    "image_count": 1,
+    "heading_count": 0,
+    "code_block_count": 0,
+    "source_text_sha256": "2c524d929c9fff9206396d61a4282118d3224a6eef59fc19b3b05cb20fa59fbe",
+    "output_text_sha256": "2c524d929c9fff9206396d61a4282118d3224a6eef59fc19b3b05cb20fa59fbe",
+    "latex_sha256": "72c4c590bcd2e0e9c94aa19d215d6cd5dbbd9adfcf4a97e7028f5a4d89d72566",
+    "body_sha256": "412f9dcd4ff2807f29432a82858c40bebefb49266427eb2b25a1fbfc9c5a99b5",
+    "converter_version": 1,
+    "markdown_sha256": "43e51d9aa40ae05ee8848671a324814589fec6da938f2b79c8a6f5c5c64f00a6"
+  },
+  "fetched_at": "2026-09-14T14:38:42+00:00",
+  "source_snapshot_sha256": "248e820a95a17912cbc9799c9b3b84c52a8bcc910f0b9ec19f556865c04e36f9",
+  "images": {},
+  "local_only": true
+}

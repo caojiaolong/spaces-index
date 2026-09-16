@@ -1,0 +1,17 @@
+{
+  "metadata": {
+    "id": "5343",
+    "title": "变分自编码器（二）：从贝叶斯观点出发",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/5343",
+    "date": "2018-03-28",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "fetched_at": "2026-09-14T13:27:41+00:00",
+  "source_snapshot_sha256": "e0b744ce8190d1f4deb4e3918bb0a108125b364e83f5e8f64555784a5c2b1983",
+  "validators": {
+    "etag": null,
+    "last_modified": null
+  }
+}

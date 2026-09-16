@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "6671",
+    "title": "基于DGCNN和概率图的轻量级信息抽取模型",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/6671",
+    "date": "2019-06-03",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 15,
+    "display_formula_count": 3,
+    "image_count": 5,
+    "heading_count": 19,
+    "code_block_count": 0,
+    "source_text_sha256": "799664bceba05cc58f2ea9e4a041c6aa2f0c2682a55c65d56c79b3bb24394f1b",
+    "output_text_sha256": "799664bceba05cc58f2ea9e4a041c6aa2f0c2682a55c65d56c79b3bb24394f1b",
+    "latex_sha256": "63ce6c1330f3bf5de156748f434db9c9b6e065b0aef9d43e5c5381d8ce054bef",
+    "body_sha256": "19b38df2cf1abfb0f7ad0cd0da1872096f691e1cd9d1f904cdb7d052f846a443",
+    "converter_version": 1,
+    "markdown_sha256": "97db76dc7fe917aebe510b6fcb4e014b879533edf52cbfc4a208721b9f054650"
+  },
+  "fetched_at": "2026-09-14T13:19:42+00:00",
+  "source_snapshot_sha256": "9cbf8b8ec804128f24a98c477de6588d5ddff875cae7d5ca579dbf710ea66c67",
+  "images": {},
+  "local_only": true
+}

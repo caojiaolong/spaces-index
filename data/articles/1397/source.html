@@ -1,0 +1,23 @@
+<div class="PostContent" id="PostContent">
+<p>这也是我们期末考的题目，是理综的物理题之一。</p><blockquote>一个零质量的理想弹簧两端分别系着一个质量为m的质点物体（A左B右），现给A一个向右的速度v<sub>0</sub>，使得整体开始运动。问弹簧压缩到最短时弹性势能是多少？以及B质点的最大速度是多少？</blockquote><p>高中生是通过结合动量守恒和能量守恒来求解的。而我希望通过微分方程把握这个运动的整体信息，顺便验证弹簧能否将A的速度v<sub>0</sub>完全传递给B。</p><p>首先选择向右为正方向。由于A、B都在同一直线上运动，因此这是一个一维的运动问题，令A的坐标为x，B的坐标为y，弹簧原长为l<sub>0</sub>，劲度系数为k。显然，弹簧的伸长量为$\Delta l=y-x-l$。根据胡克定律，A所受到的弹力为$F=k(y-x-l_0)$。因此可以列出微分方程组</p><p>$$m\ddot{x}=F\tag{1}$$$$m\ddot{y}=-F\tag{2}$$$$F=k(y-x-l_0)\tag{3}$$<br/>
+其中初始条件是：<br/>
+当t=0时，x=0，y=l<sub>0</sub>，v<sub>A</sub>=v<sub>0</sub>，v<sub>B</sub>=0</p><p>(1)+(2)得到：$\ddot{x}+\ddot{y}=0$<br/>
+即<br/>
+$$\begin{aligned}\dot{x}+\dot{y}=v_0 \\ x+y=v_0 t+l_0\end{aligned}\tag{4}$$（这里已经根据初始条件确定了积分常数）</p><p>(2)-(1)得到：<br/>
+$$m(y-x)''=-2F$$<br/>
+或者写成：<br/>
+$$(y-x-l_0)''=-\frac{2k}{m}(y-x-l_0)\tag{5}$$令$y-x-l_0=z$，则(5)变成了<br/>
+$$z''=-\frac{2k}{m}z$$<br/>
+这是一道二阶常系数线性微分方程。特征根为$+-i\sqrt{\frac{2k}{m}}$，于是通解可以写成：<br/>
+$$z=C_1 \sin(\sqrt{\frac{2k}{m}} t)+C_2 \cos(\sqrt{\frac{2k}{m}} t)=y-x-l_0\tag{6}$$<br/>
+当t=0时，显然有z=0，于是$C_2=0$。对z求导得到<br/>
+$$\dot{z}=C_1 \sqrt{\frac{2k}{m}} \cos(\sqrt{\frac{2k}{m}} t)=\dot{y}-\dot{x}$$<br/>
+当t=0时，显然有$\dot{z}=-v_0$，于是$C_1=-v_0\sqrt{\frac{m}{2k}}$</p><p>即$$y-x=l_0-v_0\sqrt{\frac{m}{2k}} \sin(\sqrt{\frac{2k}{m}} t)\tag{7}$$<br/>
+结合(4)、(7)就可以求出<br/>
+$$\begin{aligned}x=\frac{v_0 t}{2}+ \frac{v_0}{2}\sqrt{\frac{m}{2k}} \sin(\sqrt{\frac{2k}{m}} t) \\ y=l_0+\frac{v_0 t}{2}- \frac{v_0}{2}\sqrt{\frac{m}{2k}} \sin(\sqrt{\frac{2k}{m}} t)\end{aligned}$$</p><p>接下来的一切都会有答案了^_^。原来B真的可以得到速度v<sub>0</sub>的。</p><p><strong><font color="red">遇到问题，用自己所学的知识多加分析，才能够广拓渠道，开阔思维^_^!</font></strong></p>
+
+
+
+
+
+</div>

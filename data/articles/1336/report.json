@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "1336",
+    "title": "从对称角度看代数方程",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/1336",
+    "date": "2011-04-29",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 19,
+    "display_formula_count": 7,
+    "image_count": 1,
+    "heading_count": 0,
+    "code_block_count": 0,
+    "source_text_sha256": "fa13d12eba75f2215287dd4f5824b0925dc96b3789e986d98a8e302b3625de33",
+    "output_text_sha256": "fa13d12eba75f2215287dd4f5824b0925dc96b3789e986d98a8e302b3625de33",
+    "latex_sha256": "af3f06b94dc1221a7e443a22722fb72afcc61fb988eaab6e12c52acef14ff355",
+    "body_sha256": "3ea4dff75561724e22fa6d70edc5a0640a72c0e780f9714155ad5aa657fd4946",
+    "converter_version": 1,
+    "markdown_sha256": "895ee401ab3adbcf6768905e714442b51dbb2c91cc95f34f717571f6934e25f2"
+  },
+  "fetched_at": "2026-09-14T14:21:54+00:00",
+  "source_snapshot_sha256": "25c8a131094cf31e5ae15db7eba9c60fdfe336b56c1a950ec7ace086ad612301",
+  "images": {},
+  "local_only": true
+}

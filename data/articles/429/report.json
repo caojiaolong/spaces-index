@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "429",
+    "title": "【龟猫记2】之“百合花开”",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/429",
+    "date": "2010-02-10",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 0,
+    "display_formula_count": 0,
+    "image_count": 10,
+    "heading_count": 0,
+    "code_block_count": 0,
+    "source_text_sha256": "77e4bf0fe9202c009171ad04b527c637cbba262e613c0e23e161251ef6f54cac",
+    "output_text_sha256": "77e4bf0fe9202c009171ad04b527c637cbba262e613c0e23e161251ef6f54cac",
+    "latex_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "body_sha256": "732c15ce06037f77874655e07e0c633f51fa48477a5ef9e8f186c48e1c5eddf0",
+    "converter_version": 1,
+    "markdown_sha256": "eb7a6b48935cad750fbb9355f0ee185a4b986c769e7ac51fc467047a50ac1514"
+  },
+  "fetched_at": "2026-09-14T14:41:22+00:00",
+  "source_snapshot_sha256": "43057ddfe6b9a7759a114fc7d88db183cf275f88b41da027b418ded06f193c19",
+  "images": {},
+  "local_only": true
+}

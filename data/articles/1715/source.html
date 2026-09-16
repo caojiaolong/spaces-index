@@ -1,0 +1,17 @@
+<div class="PostContent" id="PostContent">
+<p>今晚主要干了两件事情：</p><p><strong>1、实现了在windows 8的情况下，把自己的笔记本当做wifi的信号发射点，共享校园网</strong>（即“笔记本 wifi 热点”那技术，不知道这样会不会折损电脑寿命呀）。主要方法如下：<br/>
+1.1、安装.net 3.5，安装方法：</p><blockquote><p>挂载windows 8的安装光盘，<br/>
+然后右击开始菜单(Win + X)的左下角，选择－命令提示符(管理员)，接着然后输入如下命令：<br/>
+dism.exe /online /enable-feature /featurename:NetFX3 /Source:F:\sources\sxs<br/>
+其中F是安装光盘的驱动器符号。</p><p>接下来是漫长等待，估计会有十多分钟，就会提示安装进度100%了。</p></blockquote><p>1.2、安装Connectify软件，直接到官网下载最新的精简版就行，有兴趣可以购买专业版。安装后需要重新启动，然后简单地配置一下就行了，不再细说。</p><p><strong>附：</strong><br/>
+顺便提一下，我也试过国内的wifi共享精灵，但是发现它会卡在“查找当前配置信息”那里，这折腾了我几个小时，最终还是没有解决...所以还是用回外国软件了。</p><p>还有网络上一个方法是依次通过管理员的cmd运行：</p><blockquote>netsh wlan set hostednetwork<br/>
+mode=allow ssid=您想要的无线网络的名称 key=您想要设置的密码<br/>
+netsh wlan start hostednetwork</blockquote><p>然后在更改网络适配器那里共享。用这个方法我的手机可以寻找到信号，但是在连接的时候寻找ip失败，原因不明......</p><p><strong>2、实现了在ubuntu 12下连接校园网。</strong></p><p>锐捷客户端一般只是用在windows下，而不能用在linux下，所以在ubuntu中需要用mentohust来代替它。可是我这个linux新手一开始却怎么也搞不定在ubuntu安装mentohust。</p><p>经过一阵子研究，也算是学会了。首先下载mentohust_0.3.4-1_amd64.deb备用，下载地址：<br/>
+<a href="http://code.google.com/p/mentohust/" target="_blank">http://code.google.com/p/mentohust/</a></p><p>在ubuntu在启动“终端”，由于之前没有安装过软件，所以先要设置超级管理员（root）密码，在终端输入：</p><blockquote>sudo passwd root</blockquote><p>然后重复输入密码就可以了。<br/>
+然后输入</p><blockquote>su</blockquote><p>来启动超级管理员账户。</p><p>进入到mentohust_0.3.4-1_amd64.deb所在目录，运行</p><blockquote>dpkg -i mentohust_0.3.4-1_amd64.deb</blockquote><p>安装完成！</p><p>最后通过</p><blockquote>sudo mentohust</blockquote><p>来启动这个程序，配置一下网卡和帐号密码就行了。</p><p>如果要修改帐号密码，就通过</p><blockquote>sudo mentohust -u 学号 -p 密码</blockquote><p>来修改</p>
+
+
+
+
+
+</div>

@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "10662",
+    "title": "低秩近似之路（五）：CUR",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/10662",
+    "date": "2025-01-12",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 151,
+    "display_formula_count": 13,
+    "image_count": 0,
+    "heading_count": 6,
+    "code_block_count": 0,
+    "source_text_sha256": "b8a48531558a2046b2b28e81282d23087d52a33deaaf6a1c5e4b3e0b7fa903b4",
+    "output_text_sha256": "b8a48531558a2046b2b28e81282d23087d52a33deaaf6a1c5e4b3e0b7fa903b4",
+    "latex_sha256": "45fffbd63d7e1d7e67c85425eab321a0db1ac564ee14932cd367824e38006a9a",
+    "body_sha256": "72f219b7c06c79e97655e7e0633fbf592f4f34a65474ef47a57410d3992ce0b9",
+    "converter_version": 1,
+    "markdown_sha256": "c2ed4a6a795d834e73f2ab8914e4924a6563a6ec09d0f500e919c665e10a3634"
+  },
+  "fetched_at": "2026-09-14T12:44:20+00:00",
+  "source_snapshot_sha256": "a92092c16ac3312b13ae7812f7260dae420eef648938836a7efefba830f27991",
+  "images": {},
+  "local_only": true
+}

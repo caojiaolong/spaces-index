@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "11371",
+    "title": "低精度Attention可能存在有偏的舍入误差",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/11371",
+    "date": "2025-10-27",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 40,
+    "display_formula_count": 3,
+    "image_count": 0,
+    "heading_count": 8,
+    "code_block_count": 0,
+    "source_text_sha256": "183bd193caf9c657cbf06f7076ad23e54474e37449efeb0d93c468dbe78aff72",
+    "output_text_sha256": "183bd193caf9c657cbf06f7076ad23e54474e37449efeb0d93c468dbe78aff72",
+    "latex_sha256": "0f6d08052315084baa62606e64beeb8d731b343d65a76889fce8785c5b24a713",
+    "body_sha256": "821c067359a0af928e6c6e5da24ce286afadce002829cb566c6a5204044f44b8",
+    "converter_version": 1,
+    "markdown_sha256": "33b28e0606f9c3ab3f7c68f6e43ff9a4d19cdd7fc457dda9629f6062504a481d"
+  },
+  "fetched_at": "2026-09-14T12:39:02+00:00",
+  "source_snapshot_sha256": "98900d535057aebdf92bc30c205dfafd391cb2d81b48eb92413352fd3352b55b",
+  "images": {},
+  "local_only": true
+}

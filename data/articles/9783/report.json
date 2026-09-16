@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "9783",
+    "title": "脑洞大开：非线性RNN居然也可以并行计算？",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/9783",
+    "date": "2023-09-26",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 75,
+    "display_formula_count": 16,
+    "image_count": 0,
+    "heading_count": 7,
+    "code_block_count": 0,
+    "source_text_sha256": "e802f5e697248fcfc56d817d2b75c5d963de6ac3f59b20eefe9632217e05d1b3",
+    "output_text_sha256": "e802f5e697248fcfc56d817d2b75c5d963de6ac3f59b20eefe9632217e05d1b3",
+    "latex_sha256": "498863875814b61ebccc92bffb98ac417dd4bd5aeb25c0a7f0dd36fdbde174d6",
+    "body_sha256": "13b509153bd0e8c2c02e8f1008e3a160c2f1782933a6655ed5824bb2cc0294b8",
+    "converter_version": 1,
+    "markdown_sha256": "90f81e6afb771ea9a7c4355a3064936c83bee61d5dea42265dc38c4c5ab3951a"
+  },
+  "fetched_at": "2026-09-14T12:51:47+00:00",
+  "source_snapshot_sha256": "45cfa1de012498aabeee0621b90e474cacaabd607cd39e9edf21b8a64088f7a0",
+  "images": {},
+  "local_only": true
+}

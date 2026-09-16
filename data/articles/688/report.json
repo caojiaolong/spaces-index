@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "688",
+    "title": "再次错过了“食”...",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/688",
+    "date": "2010-06-26",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 0,
+    "display_formula_count": 0,
+    "image_count": 1,
+    "heading_count": 0,
+    "code_block_count": 0,
+    "source_text_sha256": "a5b943a07b7030eeedc99ae488d2c47fdf94a6808b300ea4cabcb3cf485887bc",
+    "output_text_sha256": "a5b943a07b7030eeedc99ae488d2c47fdf94a6808b300ea4cabcb3cf485887bc",
+    "latex_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "body_sha256": "f5fe8f72b6ed56c524abea5721f4a218c68e4ecc4628c52b9b160e81a1653f1b",
+    "converter_version": 1,
+    "markdown_sha256": "39731398f2b15494680c7fd1f6b7831fbc67911f4d412f3d86e5376f50336087"
+  },
+  "fetched_at": "2026-09-14T14:36:06+00:00",
+  "source_snapshot_sha256": "355615330ddbfb44804455dc84f466b0ff02826b424a3615ab4b2445c94acdfc",
+  "images": {},
+  "local_only": true
+}

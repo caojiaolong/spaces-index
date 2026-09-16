@@ -1,0 +1,17 @@
+{
+  "metadata": {
+    "id": "3026",
+    "title": "在Python中使用GMP（gmpy2）",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/3026",
+    "date": "2014-10-28",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "fetched_at": "2026-09-14T13:50:05+00:00",
+  "source_snapshot_sha256": "eb8489e5ab99414feb0335e3cea2f43c2f38e9ec50b2dcbf443a1a07b669a139",
+  "validators": {
+    "etag": null,
+    "last_modified": null
+  }
+}

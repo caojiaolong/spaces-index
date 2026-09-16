@@ -1,0 +1,39 @@
+{
+  "metadata": {
+    "id": "7105",
+    "title": "级联抑制：提升GAN表现的一种简单有效的方法",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/7105",
+    "date": "2019-12-01",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "source_dom_exact": true,
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "attributes_exact": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 23,
+    "display_formula_count": 3,
+    "image_count": 3,
+    "heading_count": 3,
+    "code_block_count": 0,
+    "source_text_sha256": "a19c142a123822451661c5e371e082c6297b23d80ac5f320fd590d651fe80b4c",
+    "output_text_sha256": "a19c142a123822451661c5e371e082c6297b23d80ac5f320fd590d651fe80b4c",
+    "latex_sha256": "17825763239bb63b5cb5ca6b91a817ac32b4b5fae12634b49a51b46d626912e1",
+    "body_sha256": "449b34ed032e2a3aa6447d9526d102666a4a0f8c96cbaad368a55efede384465",
+    "converter_version": 1,
+    "format": "html-v1",
+    "source_warnings": [],
+    "fallback_reason": "Unsupported body element: del",
+    "markdown_sha256": "5d48663803dc1544f7982c23a453e665859fb281ff7634a3162c032c87ea963a"
+  },
+  "fetched_at": "2026-09-14T13:16:25+00:00",
+  "source_snapshot_sha256": "135bf1381f0f0aafc7aab6343c7d00558b175d46169c3b00d8af0f2da129203c",
+  "images": {},
+  "local_only": true
+}

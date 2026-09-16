@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "11814",
+    "title": "LogSumExp和Softmax的泰勒展开",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/11814",
+    "date": "2026-07-13",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 51,
+    "display_formula_count": 13,
+    "image_count": 0,
+    "heading_count": 6,
+    "code_block_count": 0,
+    "source_text_sha256": "c3ef15915ebbc8bf5df3d6c38b98c894dad7120f570b21a3eb5a33fc64a4e8e3",
+    "output_text_sha256": "c3ef15915ebbc8bf5df3d6c38b98c894dad7120f570b21a3eb5a33fc64a4e8e3",
+    "latex_sha256": "e870653ecaeb661126df1ffaa40f462e2d1da98e3251fc5d87407b311a4d6fa6",
+    "body_sha256": "71581c7aaa3caec50533b8768be0747af6308191a2ae1622cb3af66885166804",
+    "converter_version": 1,
+    "markdown_sha256": "0ce7ee1d80c61964e3026dda13de9a9664d97ddc0ec833b5e94f73a6c0e5602f"
+  },
+  "fetched_at": "2026-09-14T12:30:32+00:00",
+  "source_snapshot_sha256": "9e1a28b187a75e35caccfed84325bbff36e5a5218c4ac853d7ca9f88d0e1d21e",
+  "images": {},
+  "local_only": true
+}

@@ -1,0 +1,13 @@
+<div class="PostContent" id="PostContent">
+<blockquote><font color="red"><strong>代数基本定理：任何一个一元复系数多项式都至少有一个复数根。也就是说，复数域是代数封闭的。</strong></font></blockquote><p>虽说这有其名，但却无其实，它并不是最基本的代数定理；因为在那个时候，代数基本上就是关于解实系数或复系数多项式方程，所以才被命名为<a href="http://zh.wikipedia.org/wiki/%E4%BB%A3%E6%95%B0%E5%9F%BA%E6%9C%AC%E5%AE%9A%E7%90%86" target="_blank">代数基本定理</a>(Fundamental theorem of algebra)。</p><p>建立在此前提上，我们可以推出：</p><blockquote>一元复系数n次代数方程在复数范围内都有n个根（有可能是共轨复根）。</blockquote><p></p><p>其中用到了数学归纳法以及多项式的“除法”，证明如下：<br/>
+已知一元一次方程有1个根，一元n次方程至少有1个根。假设(n-1)次方程有(n-1)个根，求证n次方程有n个根。</p><p>设函数$f(x)=a_0+a_1 x^1+...+a_n x^n$<br/>
+我们求一下：$\frac{f(x)}{x-x_1}$，其中$x_1$是预先给定的常数。运算的过程可以类似于我们做数字的除法：<br/>
+</p><div class="pic-container"><div class="typecho-caption aligncenter" style="max-width: 100%"><div style="margin: 5px"><a href="/attachment/482/" title="多项式除法计算过程.PNG"><img alt="多项式除法计算过程" src="/usr/uploads/2010/02/2722134827.png" style="max-width:100%"/></a></div><p class="typecho-caption-text">多项式除法计算过程</p></div></div><p>最终，我们的结果为：<br/>
+$$\begin{aligned}f(x)=&amp;\,a_0+a_1 x^1+...+a_n x^n \\ =&amp;\,(x-x_1)[a_n x^{n-1}+(a_{n-1}+a_n x_1)x^{n-2}+...+(a_1+a_2 x_1+...+a_n x_1^{n-1})]+a_0+a_1 x_1^1+...+a_n x_1^n\end{aligned}$$</p><p>令$x_1$是方程$a_0+a_1 x^1+...+a_n x^n=0$的一个根，于是<br/>
+$$\begin{aligned}&amp;\,a_0+a_1 x^1+...+a_n x^n \\ =&amp;\,(x-x_1)[a_n x^{n-1}+(a_{n-1}+a_n x_1)x^{n-2}+...+(a_1+a_2 x_1+...+a_n x_1^{n-1})]\end{aligned}$$</p><p>那么满足$a_n x^{n-1}+(a_{n-1}+a_n x_1)x^{n-2}+...+(a_1+a_2 x_1+...+a_n x_1^{n-1})=0$的解也是方程的$f(x)=0$的根，这方程有(n-1)个根，加上$x=x_1$，那么$f(x)=0$总共有n个根。</p><p>证毕。</p>
+
+
+
+
+
+</div>

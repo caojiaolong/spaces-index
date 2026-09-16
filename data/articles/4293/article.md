@@ -1,0 +1,170 @@
+# 文本情感分类（四）：更好的损失函数
+
+> 作者：苏剑林 · 科学空间 · 2017-03-30
+>
+> 原文：<https://spaces.ac.cn/archives/4293>
+>
+> 原文许可：[CC BY-NC-ND 2.5 CN（署名-非商业性使用-禁止演绎）](https://creativecommons.org/licenses/by-nc-nd/2.5/cn/)。
+>
+> 本文件由 spaces-index 非官方、非商业项目进行必要的 HTML → Markdown 格式转换；正文未做摘要、润色、翻译或重组。项目不代表作者，也不表示作者为项目背书。
+>
+> 署名及附加许可说明不代表已获得作者额外授权。第三方素材权利依其原有声明。
+>
+> 原站转载与引用说明：[科学空间 FAQ](https://spaces.ac.cn/archives/6508#%E6%96%87%E7%AB%A0%E5%A6%82%E4%BD%95%E8%BD%AC%E8%BD%BD/%E5%BC%95%E7%94%A8)
+
+---
+
+文本情感分类其实就是一个二分类问题，事实上，对于分类模型，都会存在这样一个毛病：优化目标跟考核指标不一致。通常来说，对于分类（包括多分类），我们都会采用交叉熵作为损失函数，它的来源就是最大似然估计（参考[《梯度下降和EM算法：系出同源，一脉相承》](<https://spaces.ac.cn/archives/4277/>)）。但是，我们最后的评估目标，并非要看交叉熵有多小，而是看模型的准确率。一般来说，交叉熵很小，准确率也会很高，但这个关系并非必然的。
+
+## 要平均，不一定要拔尖
+
+> 一个更通俗的例子是：一个数学老师，在努力提高同学们的平均分，但期末考核的指标却是及格率（60分及格）。假如平均分是100分（也就意味着所有同学都考到了100分），那么自然及格率是100%，这是最理想的。但现实不一定这么美好，平均分越高，只要平均分还没有达到100，那么及格率却不一定越高，比如两个人分别考40和90，那么平均分就是65，及格率只有50%；如果两个人的成绩都是60，平均分就是60，及格率却有100%。这也就是说，平均分可以作为一个目标，但这个目标并不直接跟考核目标挂钩。
+> 
+> 
+> 
+> 那么，为了提升最后的考核目标，这个老师应该怎么做呢？很显然，首先看看所有学生中，哪些同学已经及格了，及格的同学先不管他们，而针对不及格的同学进行补课加强，这样一来，原则上来说有很多不及格的同学都能考上60分了，也有可能一些本来及格的同学考不够60分了，但这个过程可以迭代，最终使得大家都在60分以上，当然，最终的平均分不一定很高，但没办法，谁叫考核目标是及格率呢？
+
+## 更好的更新方案
+
+对于二分类模型，我们总希望模型能够给正样本输出1，负样本输出0，但限于模型的拟合能力等问题，一般来说做不到这一点。而事实上在预测中，我们也是认为大于0\.5的就是正样本了，小于0\.5的就是负样本。这样就意味着，我们可以“有选择”地更新模型，比如，设定一个阈值为0\.6，那么模型对某个正样本的输出大于0\.6，我就不根据这个样本来更新模型了，模型对某个负样本的输出小于0\.4，我也不根据这个样本来更新模型了，<u>只有在0\.4\~0\.6之间的，才让模型更新，这时候模型会更“集中精力”去关心那些“模凌两可”的样本，从而使得分类效果更好</u>，这跟传统的SVM思想是一致的。
+
+不仅如此，这样的做法理论上还能防止过拟合，因为它防止了模型专门挑那些容易拟合的样本来“拼命”拟合（使得损失函数下降），这就好比老师只关心优生，希望优生能从80分提高到90分，而不想办法提高差生的成绩，这显然不是一个好老师。
+
+## 修正的交叉熵损失
+
+怎样才能达到我们上面说的目的呢？很简单，调整损失函数即可，这里主要借鉴了hinge loss和triplet loss的思想。一般常用的交叉熵损失函数是：
+$$L_{old} = -\sum_y y_{true} \log y_{pred}$$
+
+选定一个阈值$m=0.6$，这个阈值原则上大于0\.5均可。引入单位阶跃函数$\theta(x)$：
+$$\theta(x) = \left\{\begin{aligned}&1, x > 0\\
+&\frac{1}{2}, x = 0\\
+&0, x < 0\end{aligned}\right.$$
+
+那么，考虑新的损失函数：
+$$L_{new} = -\sum_y \lambda(y_{true}, y_{pred}) y_{true}\log y_{pred}$$
+其中
+$$\lambda(y_{true}, y_{pred}) = 1-\theta(y_{true}-m)\theta(y_{pred}-m)-\theta(1-m-y_{true})\theta(1-m-y_{pred})$$
+$L_{new}$就是在交叉熵的基础上加入了修正项$\lambda(y_{true}, y_{pred})$，这一项意味着什么呢？当进入一个正样本时，那么$y_{true}=1$，显然
+$$\lambda(1, y_{pred})=1-\theta(y_{pred}-m)$$
+这时候，要是$y_{pred} > m$，那么$\lambda(1, y_{pred})=0$，这时候交叉熵自动为0（达到最小值），反之，$y_{pred} < m$则有$\lambda(1, y_{pred})=1$，这时候保持交叉熵，也就是说，正样本如果输出已经大于$m$了，那就不更新了（因为达到了最小值，可以认为最小值梯度是0），小于$m$才继续更新；类似地可以分析负样本的情形，结论是负样本如果输出已经小于$1-m$了，那就不更新了，大于$1-m$才继续更新。
+
+这样一来，<strong>只要将原始的交叉熵损失，换成修正的交叉熵$L_{new}$，就可以达到我们开始设计的目的了</strong>。
+
+## 基于IMDB的实验测试
+
+理论看上去很美好，实测效果是不是如想象一样呢？马上来实验。
+
+为了使得结果更具有对比性，这次我选择了文本情感分类中的一个标准任务：IMDB电影评论的分类来进行评测，使用的工具是Keras最新版（2\.0）。大部分的代码在[Keras的examples中](<https://github.com/fchollet/keras/tree/master/examples>)都可以找到，LSTM和CNN等等都有。
+
+首先是LSTM的：
+
+
+
+<pre><code class="language-python">from keras.preprocessing import sequence
+from keras.models import Sequential
+from keras.layers import Embedding, LSTM, Dense
+from keras.datasets import imdb
+from keras import backend as K
+
+margin = 0.6
+theta = lambda t: (K.sign(t)+1.)/2.
+
+max_features = 20000
+maxlen = 80
+batch_size = 32
+
+(x_train, y_train), (x_test, y_test) = imdb.load_data(num_words=max_features)
+
+x_train = sequence.pad_sequences(x_train, maxlen=maxlen)
+x_test = sequence.pad_sequences(x_test, maxlen=maxlen)
+
+model = Sequential()
+model.add(Embedding(max_features, 128))
+model.add(LSTM(128, dropout=0.2, recurrent_dropout=0.2))
+model.add(Dense(1, activation='sigmoid'))
+
+def loss(y_true, y_pred):
+    return - (1 - theta(y_true - margin) * theta(y_pred - margin)
+                - theta(1 - margin - y_true) * theta(1 - margin - y_pred)
+             ) * (y_true * K.log(y_pred + 1e-8) + (1 - y_true) * K.log(1 - y_pred + 1e-8))
+
+model.compile(loss=loss,
+              optimizer='adam',
+              metrics=['accuracy'])
+
+model.fit(x_train, y_train,
+          batch_size=batch_size,
+          epochs=15,
+          validation_data=(x_test, y_test))</code></pre>
+
+
+
+代码基本上照搬官方的，不解释～运行结束后，模型得到了99\.01%的训练准确率和82\.26%的测试准确率，如果把loss直接改为binary\_crossentropy（其它都不改变），那么得到99\.56%的训练准确率和81\.02%的测试准确率，说明新的loss函数确实有助于防止过拟合，提升准确率。当然，这个测试可能会有随机误差，但多次平均的结果仍然显示，新的loss函数大概能带来0\.5%～1%的准确率提升（当然，仅仅稍微改变了loss函数，你不能指望有跨越性的提升。）。
+
+再看看CNN的：
+
+
+
+<pre><code class="language-python">from keras.preprocessing import sequence
+from keras.models import Sequential
+from keras.layers import Embedding, Dense, Dropout, Activation
+from keras.layers import Conv1D, GlobalMaxPooling1D
+from keras.datasets import imdb
+from keras import backend as K
+
+margin = 0.6
+theta = lambda t: (K.sign(t)+1.)/2.
+
+max_features = 5000
+maxlen = 400
+batch_size = 32
+embedding_dims = 50
+filters = 250
+kernel_size = 3
+hidden_dims = 250
+epochs = 10
+
+(x_train, y_train), (x_test, y_test) = imdb.load_data(num_words=max_features)
+x_train = sequence.pad_sequences(x_train, maxlen=maxlen)
+x_test = sequence.pad_sequences(x_test, maxlen=maxlen)
+
+model = Sequential()
+model.add(Embedding(max_features,
+                    embedding_dims,
+                    input_length=maxlen))
+model.add(Dropout(0.2))
+model.add(Conv1D(filters,
+                 kernel_size,
+                 padding='valid',
+                 activation='relu',
+                 strides=1))
+model.add(GlobalMaxPooling1D())
+model.add(Dense(hidden_dims))
+model.add(Dropout(0.2))
+model.add(Activation('relu'))
+model.add(Dense(1))
+model.add(Activation('sigmoid'))
+
+def loss(y_true, y_pred):
+    return - (1 - theta(y_true - margin) * theta(y_pred - margin)
+                - theta(1 - margin - y_true) * theta(1 - margin - y_pred)
+             ) * (y_true * K.log(y_pred + 1e-8) + (1 - y_true) * K.log(1 - y_pred + 1e-8))
+
+model.compile(loss=loss,
+              optimizer='adam',
+              metrics=['accuracy'])
+
+model.fit(x_train, y_train,
+          batch_size=batch_size,
+          epochs=epochs,
+          validation_data=(x_test, y_test))</code></pre>
+
+
+
+运行结束后，模型得到了98\.66%的训练准确率和88\.24%的测试准确率，纯粹的binary\_crossentropy的结果为98\.90%的训练准确率和88\.14%的测试准确率，两个结果基本一致，在波动范围内。但是，在训练过程中，用新loss函数的测试结果，一直保持在88\.2%左右不变，而使用交叉熵时，一会跳到89%，一会跳到87%，一会又跳回88%，也就是说，虽然最终大家的准确率一致，但用交叉熵的时候，波动更大，我们有理由相信，新loss函数训练出来的模型，泛化能力更加好。
+
+## 简而言之
+
+本文主要借鉴了hinge loss和triplet loss的思想，对二分类所用的交叉熵损失做了一个调整，使得它更加有效地去拟合预测错误的样本，实验也表明某种意义上新的损失函数确实能带来一点小提升。
+
+另外，这种思想事实上还可以用于多分类甚至回归问题，这里就不详细举例了，只能是遇到分析再跟大家分享了。

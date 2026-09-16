@@ -1,0 +1,135 @@
+<div class="PostContent" id="PostContent">
+<p>最近有需求要爬一些儿童故事类的语料用来训练词向量，因此找了一些童话故事网把整站的童话文章爬了下来。下面分享一下用Python实现的这个过程，并把之前爬取百度百科的经验，结合着分享出来。本教程适合于以下需求：<font color="red">需要遍历爬取指定的网站、并且指定网站没有反爬虫措施。</font>在这种前提之下，所考验我们的仅仅是<strong><font color="red">遍历算法</font></strong>和<strong><font color="red">编程技巧</font></strong>了。</p><h2 id="假设">假设</h2><p>再次表明我们的假设：</p><blockquote><p>1、需要遍历整个网站来爬取我们需要的信息；</p><p>2、网站没有反爬虫措施；</p><p>3、网站的所有页面，总可以通过网站首页，逐步点击超链接来到达。</p></blockquote><p></p><p>什么样的网站符合这个假设呢？答案是，不少网站都符合，比如下面要爬取的故事网，以及百度百科、互动百科等。</p><p>下面我们先来看一下怎么爬这个故事网：<br/>
+<a href="http://wap.xigushi.com/" target="_blank">http://wap.xigushi.com/</a></p><p>（仅仅教学用，无恶意～）</p><h2 id="广度优先">广度优先</h2><p>广度优先算法其实很简单，也就是：<u><font color="red">每爬取一个页面，同时把这个页面的所有站内超链接保存下来，然后把还没有加入过队列的超链接加入到队列中。</font></u></p><p>完了？完了！就这么简单～注意队列是遵循“先入先出，后入后出”的原则，因此，上面说的实际上就是广度优先算法了。用Python写出来也很简单：</p><pre class="line-numbers"><code class="language-python">#! -*- coding:utf-8 -*-
+
+import requests as rq
+import re
+import time
+import codecs
+from multiprocessing.dummy import Pool,Queue #dummy子库是多线程库
+import HTMLParser
+unescape = HTMLParser.HTMLParser().unescape #用来实现对HTML字符的转义
+
+tasks = Queue() #链接队列
+tasks_pass = set() #已队列过的链接
+results = {} #结果变量
+count = 0 #爬取页面总数
+
+tasks.put('/index.html') #把主页加入到链接队列
+tasks_pass.add('/index.html') #把主页加入到已队列链接
+
+def main(tasks):
+    global results,count,tasks_pass #多线程可以很轻松地共享变量
+    while True:
+        url = tasks.get() #取出一个链接
+        url = 'http://wap.xigushi.com'+url
+        web = rq.get(url).content.decode('gbk') #这里的编码要看实际情形而定
+        urls = re.findall('href="(/.*?)"', web) #查找所有站内链接
+        for u in urls:
+            if u not in tasks_pass: #把还没有队列过的链接加入队列
+                tasks.put(u)
+                tasks_pass.add(u)
+        text = re.findall('&lt;article&gt;([\s\S]*?)&lt;/article&gt;', web)
+        #爬取我们所需要的信息，需要正则表达式知识来根据网页源代码而写
+        if text:
+            text = ' '.join([re.sub(u'[ \n\r\t\u3000]+', ' ', re.sub(u'&lt;.*?&gt;|\xa0', ' ', unescape(t))).strip() for t in text]) #对爬取的结果做一些简单的处理
+            results[url] = text #加入到results中，保存为字典的好处是可以直接以url为键，实现去重
+        count += 1
+        if count % 100 == 0:
+            print u'%s done.'%count
+
+pool = Pool(4, main, (tasks,)) #多线程爬取，4是线程数
+total = 0
+while True: #这部分代码的意思是如果20秒内没有动静，那就结束脚本
+    time.sleep(20)
+    if len(tasks_pass) &gt; total:
+        total = len(tasks_pass)
+    else:
+        break
+
+pool.terminate()
+with codecs.open('results.txt', 'w', encoding='utf-8') as f:
+    f.write('\n'.join(results.values()))
+</code></pre><p>寥寥几行，我们就实现了一个通用的、具有多线程并发功能的扒站框架了，其中不少代码都是固定写法，可重用性强。这就是Python的简洁，所谓人生苦短，我用Python～</p><h2 id="百度百科">百度百科</h2><p>上面的代码已经完成了一个通用的扒站框架了。但是，假如我们要爬取百度百科或者互动百科，那么会有新的问题。因为我们前面的代码，把所有的数据IO都在内存中完成了，这对于小站自然没有问题，但是对于像百科这样具有上百万甚至上千万页面的网站，自然是吃不消的。因此，需要考虑两个问题：<font color="red">1、断点续爬；2、内存友好。</font>事实上，这两个问题都是由同一个方案来解决，那就是<font color="red">数据库</font>。前面我们是把队列存在一个Queue中，把结果存在一个字典中，这些变量都存在于内存中。如果把它们都放在数据库中，这两个问题自然都解决了。</p><p>对于数据库来说，我个人比较喜欢MongoDB，抛开其他优点不说，它给我最大的感觉就是很有Python风格——配合pymongo来操作，你简直感觉不到你是在操作数据库，你可能觉得你就是在纯粹用Python而已（相比之下，你通过Python用SQL，基本上依旧免不了要写SQL语句）。MongoDB的安装我就不介绍了，这里假设已经安装好，并且也安装好了pymongo，那么下面就是爬取百度百科的参考代码</p><pre class="line-numbers"><code class="language-python">#! -*- coding:utf-8 -*-
+
+import requests as rq
+import re
+import time
+import datetime
+from multiprocessing.dummy import Pool
+import pymongo #使用数据库负责存取
+from urllib import unquote #用来对URL进行解码
+from urlparse import urlparse, urlunparse #对长的URL进行拆分
+import HTMLParser
+unescape = HTMLParser.HTMLParser().unescape #用来实现对HTML字符的转移
+
+pymongo.MongoClient().drop_database('baidubaike')
+tasks = pymongo.MongoClient().baidubaike.tasks #将队列存于数据库中
+items = pymongo.MongoClient().baidubaike.items #存放结果
+
+tasks.create_index([('url', 'hashed')]) #建立索引，保证查询速度
+items.create_index([('url', 'hashed')])
+
+count = items.count() #已爬取页面总数
+if tasks.count() == 0: #如果队列为空，就把该页面作为初始页面，这个页面要尽可能多超链接
+    tasks.insert({'url':u'http://baike.baidu.com/item/科学'})
+
+url_split_re = re.compile('&amp;|\+')
+def clean_url(url):
+    url = urlparse(url)
+    return url_split_re.split(urlunparse((url.scheme, url.netloc, url.path, '', '', '')))[0]
+
+def main():
+    global count
+    while True:
+        url = tasks.find_one_and_delete({})['url'] #取出一个url，并且在队列中删除掉
+        sess = rq.get(url)
+        web = sess.content.decode('utf-8', 'ignore')
+        urls = re.findall(u'href="(/item/.*?)"', web) #查找所有站内链接
+        for u in urls:
+            try:
+                u = unquote(str(u)).decode('utf-8')
+            except:
+                pass
+            u = 'http://baike.baidu.com' + u
+            u = clean_url(u)
+            if not items.find_one({'url':u}): #把还没有队列过的链接加入队列
+                tasks.update({'url':u}, {'$set':{'url':u}}, upsert=True)
+ text = re.findall('&lt;div class="content"&gt;([\s\S]*?)&lt;div class="content"&gt;', web)
+ #爬取我们所需要的信息，需要正则表达式知识来根据网页源代码而写
+
+ if text:
+ text = ' '.join([re.sub(u'[ \n\r\t\u3000]+', ' ', re.sub(u'&lt;.*?&gt;|\xa0', ' ', unescape(t))).strip() for t in text]) #对爬取的结果做一些简单的处理
+ title = re.findall(u'&lt;title&gt;(.*?)_百度百科&lt;/title&gt;', web)[0]
+ items.update({'url':url}, {'$set':{'url':url, 'title':title, 'text':text}}, upsert=True)
+            count += 1
+            print u'%s, 爬取《%s》，URL: %s, 已经爬取%s'%(datetime.datetime.now(), title, url, count)
+
+pool = Pool(4, main) #多线程爬取，4是线程数
+time.sleep(60)
+while tasks.count() &gt; 0:
+    time.sleep(60)
+
+pool.terminate()
+</code></pre><p>效果：</p><blockquote>2017-05-17 20:20:18.428393, 爬取《体质人类学》，URL: http://baike.baidu.com/item/体质人类学, 已经爬取167<br/>
+2017-05-17 20:20:18.502221, 爬取《团体动力学》，URL: http://baike.baidu.com/item/群体动力学, 已经爬取168<br/>
+2017-05-17 20:20:18.535227, 爬取《生物分类学》，URL: http://baike.baidu.com/item/生物分类学, 已经爬取169<br/>
+2017-05-17 20:20:18.545897, 爬取《病毒学》，URL: http://baike.baidu.com/item/病毒学, 已经爬取170<br/>
+2017-05-17 20:20:18.898083, 爬取《色谱法（书名）》，URL: http://baike.baidu.com/item/色谱法, 已经爬取171<br/>
+2017-05-17 20:20:18.929467, 爬取《分子生物学（自然科学门类）》，URL: http://baike.baidu.com/item/分子生物, 已经爬取172<br/>
+2017-05-17 20:20:18.974105, 爬取《地球化学（学科名）》，URL: http://baike.baidu.com/item/地球化学, 已经爬取173<br/>
+2017-05-17 20:20:18.979666, 爬取《纳米技术（物理学术语）》，URL: http://baike.baidu.com/item/纳米科技, 已经爬取174<br/>
+2017-05-17 20:20:19.077445, 爬取《理论化学》，URL: http://baike.baidu.com/item/理论化学, 已经爬取175<br/>
+2017-05-17 20:20:19.143304, 爬取《热化学》，URL: http://baike.baidu.com/item/热化学, 已经爬取176<br/>
+2017-05-17 20:20:19.333775, 爬取《声学》，URL: http://baike.baidu.com/item/声学, 已经爬取177<br/>
+2017-05-17 20:20:19.349983, 爬取《数学物理》，URL: http://baike.baidu.com/item/数学物理, 已经爬取178<br/>
+2017-05-17 20:20:19.662366, 爬取《高能物理学》，URL: http://baike.baidu.com/item/高能物理学, 已经爬取179<br/>
+2017-05-17 20:20:19.797841, 爬取《物理学（自然科学学科）》，URL: http://baike.baidu.com/item/物理学, 已经爬取180<br/>
+2017-05-17 20:20:19.809453, 爬取《凝聚态物理学》，URL: http://baike.baidu.com/item/凝聚态物理学, 已经爬取181<br/>
+2017-05-17 20:20:19.898944, 爬取《原子（物理概念）》，URL: http://baike.baidu.com/item/原子, 已经爬取182</blockquote><p>这里已经实现了基本的框架。当然，<font color="red">读者使用时，还需要根据自己的需求调整，比如，加强正则表达式来清理掉“收藏 查看 我的收藏 0 有用+1 已投票”这样的无用信息，还有提取一些结构化信息分开存储等等（千万别偷懒直接用，那样的结果很多噪音～天下没有免费的午餐）</font>，总而言之，大家可以在这个基础上尽情发挥。以上代码经过充分爬取后，大约能够爬取280万左右词条，这些词条已经基本覆盖了常用的词条了。</p><h2 id="思考&amp;总结">思考&amp;总结</h2><p>可能有读者会问：百度百科不是有<a href="http://baike.baidu.com/view/52650.htm" target="_blank">http://baike.baidu.com/view/52650.htm</a>这样的链接吗？直接遍历数字就可以遍历整站了呀？</p><p>如果仅仅是考虑百度百科，那么这个思路并没错，然而这个思路并不通用，比如互动百科并没有这样的链接。而我们这里关心的是一个通用的爬取方案，因此依旧采用这种广度优先遍历的思路。</p><p>再次强调：本文所涉及到的网站和所演示代码仅供教学演示使用，并无任何恶意目的～</p>
+
+
+
+
+
+</div>

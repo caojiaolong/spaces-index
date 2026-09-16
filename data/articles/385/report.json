@@ -1,0 +1,39 @@
+{
+  "metadata": {
+    "id": "385",
+    "title": "【NASA每日一图】神秘的Voynich(伏尼契)手稿",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/385",
+    "date": "2010-01-31",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "source_dom_exact": true,
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "attributes_exact": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 0,
+    "display_formula_count": 0,
+    "image_count": 1,
+    "heading_count": 0,
+    "code_block_count": 0,
+    "source_text_sha256": "1672d0cd7bce6853a056049cc426418f6593cdb54a45ea3127c714025cb8a67f",
+    "output_text_sha256": "1672d0cd7bce6853a056049cc426418f6593cdb54a45ea3127c714025cb8a67f",
+    "latex_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "body_sha256": "d167b34f843e19a8b78fafa1b18d6e4cf0fb64ffc546b103d915a7b7b406947a",
+    "converter_version": 1,
+    "format": "html-v1",
+    "source_warnings": [],
+    "fallback_reason": "Unsupported body element: trong",
+    "markdown_sha256": "b2f54f8329b11244c2fed79499b6113b8946488c0b759790f668ccf62255cc98"
+  },
+  "fetched_at": "2026-09-14T14:42:36+00:00",
+  "source_snapshot_sha256": "f0d20d7dd5a40d21afeacc70ecd0825f0a13105e0f5255e3abae8e89530507b3",
+  "images": {},
+  "local_only": true
+}

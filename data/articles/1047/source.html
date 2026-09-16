@@ -1,0 +1,22 @@
+<div class="PostContent" id="PostContent">
+<blockquote>王二小的牛跑了，当他发现时，牛在他正南方300米。且一直向正西方向匀速的跑，王二小立即追牛，他不是朝着一个固定的方向，而是每时每刻都朝着牛的方向跑，且速度是牛速度的4/3倍。当他追上牛时王二小共跑了多远？</blockquote><h3 id="问题分析">问题分析</h3><p></p><div class="pic-container" style="float:right; margin: 5px auto 2px 1px"><div style="display: inline-block; background-color: #fff"><div class="typecho-caption aligncenter" style="max-width: 250px; margin: 0 0 0 8px"><div style="margin: 5px"><a href="/attachment/1049/" title="米拉斯反潜导弹.jpg"><img alt="米拉斯反潜导弹" src="/usr/uploads/2010/11/604375263.jpg" style="max-width: 100%"/></a></div><p>米拉斯反潜导弹</p></div></div></div><p>咋看起来，追牛和导弹是风牛马不相及的两件事：一个是生活小事，一个是物理问题，怎么能够扯到一块呢？</p><p>回想一下平时警察抓小偷的过程。警察不是物理学家，不会也可不能先去研究小偷的逃走路线函数，然后设计最小追赶时间的路程吧？那么，在不能预知小偷逃跑路线的前提下，警察要怎样捉小偷呢？很简单，<strong>盯死他！</strong>是的，只要你以更快的速度，一直朝着他跑，总能够追到的。继续联想下：要想用导弹跟踪摧毁一首敌舰，不也是只能够采用这种方式吗？回看文章开始的“追牛问题”，本质上不是一样的吗？以下是上海交大提出的导弹跟踪问题：</p><blockquote>某军的一导弹基地发现正北方向120 km处海面上有敌艇一艘以90 km/h的速度向正东方向行驶. 该基地立即发射导弹跟踪追击敌艇,导弹速度为450 km/h，自动导航系统使导弹在任一时刻都能对准敌艇。试问导弹在何时何处击中敌艇？</blockquote><p>建立坐标系：<br/>
+</p><div class="pic-container"><div class="typecho-caption aligncenter" style="max-width: 560px"><div style="margin: 5px"><a href="/attachment/1048/" title="导弹追踪.PNG"><img alt="导弹追踪" src="/usr/uploads/2010/11/3886214175.png" style="max-width: 100%"/></a></div><p class="typecho-caption-text">导弹追踪</p></div></div><p>设导弹速度为$u$，敌艇速度为$v$，可以列出<br/>
+$$dx^2+dy^2=u^2 dt^2\tag{1}$$<br/>
+$$\frac{dy}{dx}=\frac{H-y}{vt-x}\tag{2}$$</p><h3 id="欲擒故纵">欲擒故纵</h3><p>解微分方程组的一般思想是：消元、降阶。要是对微分方程不熟悉，或者是刚入门的朋友，也许马上会想到的步骤是降阶，而忽略了先消元，导致无从下手。因为在我们的头脑中的潜意识告诉我们，高阶方程总比低阶麻烦，化低阶为高阶是自找麻烦。其实不然，为了消元，我们需要“欲擒故纵”，即“升阶”！</p><p>我们设法消去$t$，将$(2)$变换成$\frac{dx}{dy}(H-y)=vt-x$，两边微分即得<br/>
+$$d\left(\frac{dx}{dy}\right)(H-y)-\frac{dx}{dy}\cdot dy=v dt-dx\tag{3}$$<br/>
+此式等价于$\frac{d\left(\frac{dx}{dy}\right)}{dy} \frac{dy}{dt}(H-y)=v$，由$(1)$式可以得到<br/>
+$$\frac{dy}{dt}=\frac{u}{\sqrt{\left(\frac{dx}{dy}\right)^2+1}}$$</p><p>代入上式，得到<br/>
+$$\frac{d\left(\frac{dx}{dy}\right)}{dy} \frac{u}{\sqrt{\left(\frac{dx}{dy}\right)^2+1}}(H-y)=v$$</p><h3 id="直捣黄龙">直捣黄龙</h3><p>消元完毕后，我们需要就是降阶、分离变量等，把最终结果就出来。在消元时还可以比较一下究竟消去哪个未知数后会使微分方程的形式相对简单一点。例如在上述问题中，我们得到了一个可以分离变量的方程，这胜了我们不少功夫。如果选择消去y，则不能出现可以分离变量的方程，那会令我们的计算更复杂。</p><p>令$\frac{v}{u}=k$，即得<br/>
+$$\frac{d\left(\frac{dx}{dy}\right)}{\sqrt{\left(\frac{dx}{dy}\right)^2+1}}=\frac{k dy}{H-y}$$</p><p>两端积分得<br/>
+$$\ln\left(\frac{dx}{dy}+\sqrt{\left(\frac{dx}{dy}\right)^2+1}\right)=-k \ln(H-y)+C$$<br/>
+代入初始条件$\frac{dx}{dy}=0,y=0$，即有$C=k \ln H$。各项取幂，得到<br/>
+$$\begin{aligned}&amp;\frac{dx}{dy}+\sqrt{\left(\frac{dx}{dy}\right)^2+1}=(\frac{H}{H-y})^k \\ &amp;\frac{dx}{dy}=\frac{1}{2}\left[\left(\frac{H}{H-y}\right)^k-\left(\frac{H}{H-y}\right)^{-k}\right] \\ &amp;2dx=[(1-y/H)^{-k}-(1-y/H)^k]dy\end{aligned}$$</p><p>两端积分，并代入初始量$x=0,y=0$，即得<br/>
+$$x=\frac{1}{2} \left[-\frac{1}{-k+1}(1-y/H)^{-k+1}+\frac{1}{k+1}(1-y/H)^{k+1}\right]+\frac{kH}{1-k^2}$$</p><p>至此，问题解决。摧毁它所需要的时间为$T=\frac{Hu}{u^2-v^2}$</p><p>但是，有朋友会问，要是敌舰速度和导弹速度均不是常数，而是$t$的函数，那该怎么解这一类方程呢？这时我们可以选择消去$x$，首先约定$\dot{x}$表示是对自变量$t$的导数$\frac{dx}{dt}$，也是从$(3)$式出发，把$\frac{dx}{dy}$改成$\frac{\dot{x}}{\dot{y}}$，从$(1)$式解出$\dot{x}=\sqrt{u^2-\dot{y}^2}$，代入、消元，有兴趣的朋友可以自己推算，这里贴出BoJone的计算结果：<br/>
+$$\frac{u\dot{u}\dot{y}-u^2 \ddot{y}}{\dot{y}^2 \sqrt{u^2-\dot{y}^2}}=\frac{\dot{s}}{H-y}$$<br/>
+这里的$s\equiv s(t)$是被最终者的路程函数，上式是关于$y$和$t$的二阶微分方程。</p><p>（感谢<a href="http://math.sjtu.edu.cn/jidi/sxsy/index.asp?name=0" target="_blank">上海交通大学数学系</a>，这里提供上海交大的课件下载：<a href="/usr/uploads/2010/11/4056353381.rar" title="导弹追踪(07.3).rar">导弹追踪(07.3).rar</a>）</p>
+
+
+
+
+
+</div>

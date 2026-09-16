@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "120",
+    "title": "【NASA每日一图】天文城的夏季星空",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/120",
+    "date": "2009-09-12",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 0,
+    "display_formula_count": 0,
+    "image_count": 1,
+    "heading_count": 0,
+    "code_block_count": 0,
+    "source_text_sha256": "6bc978ee22f6276f7809c087916bbd36d0e8c9a0cfb7d69781c66315bf76fdbb",
+    "output_text_sha256": "6bc978ee22f6276f7809c087916bbd36d0e8c9a0cfb7d69781c66315bf76fdbb",
+    "latex_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "body_sha256": "48896a0d0c0657744dacc7e2c8780846f3e64ca1bbc59c4141480796b9f910f0",
+    "converter_version": 1,
+    "markdown_sha256": "ae28a089dc1f0ee248fd87873b5844210140b0fe5a8c12cb59a2ed543f087c08"
+  },
+  "fetched_at": "2026-09-14T14:53:36+00:00",
+  "source_snapshot_sha256": "9f425c23d1104cc3954a5af6fe39f25f08fe8a3896bc54de806cc4ec4cef314b",
+  "images": {},
+  "local_only": true
+}

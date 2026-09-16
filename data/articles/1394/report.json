@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "1394",
+    "title": "均匀球状星团内恒星的运动",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/1394",
+    "date": "2011-07-08",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 11,
+    "display_formula_count": 7,
+    "image_count": 0,
+    "heading_count": 0,
+    "code_block_count": 0,
+    "source_text_sha256": "52369b3b52c8342b30fd7e5f504b9a42c460bb645ad91588e8986783e973581c",
+    "output_text_sha256": "52369b3b52c8342b30fd7e5f504b9a42c460bb645ad91588e8986783e973581c",
+    "latex_sha256": "256f6356ba1eedf53083a07cf9d25e3f847d28fee87cccbd13715cbab3e8ceab",
+    "body_sha256": "7b98e7e077e2b0377667490c78a908e84b1872308f66d593e01a6a49b499f719",
+    "converter_version": 1,
+    "markdown_sha256": "e436b0a311daaa645079d4d45e09cdc5d8b6dabbf9ef2b9043a0ca054d31f26a"
+  },
+  "fetched_at": "2026-09-14T14:20:00+00:00",
+  "source_snapshot_sha256": "ba656bef6737dd4870a47a683b81a77c9b5a00091bfc6acd8c5c74d41ca85bae",
+  "images": {},
+  "local_only": true
+}

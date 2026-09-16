@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "7055",
+    "title": "Keras：Tensorflow的黄金标准",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/7055",
+    "date": "2019-11-06",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 0,
+    "display_formula_count": 0,
+    "image_count": 1,
+    "heading_count": 3,
+    "code_block_count": 2,
+    "source_text_sha256": "5088f6b328e6cc9a4f80940106143587a1481852a8ce265d46683cc9232dff96",
+    "output_text_sha256": "5088f6b328e6cc9a4f80940106143587a1481852a8ce265d46683cc9232dff96",
+    "latex_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "body_sha256": "0d84e218c8b510278152fe5256aeac139cedc5a67204cc19c4775abefbde3cba",
+    "converter_version": 1,
+    "markdown_sha256": "5daaec45a55062d50b7dfe8ecae9a2d7bf2de4cc2125563b1cf5e0d762e44bf7"
+  },
+  "fetched_at": "2026-09-14T13:16:51+00:00",
+  "source_snapshot_sha256": "402ba742256123fcfdbc6b820d249109b337788e5310d13195f0f0ffdce77f22",
+  "images": {},
+  "local_only": true
+}

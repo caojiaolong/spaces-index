@@ -1,0 +1,17 @@
+{
+  "metadata": {
+    "id": "8027",
+    "title": "RealFormer：把残差转移到Attention矩阵上面去",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/8027",
+    "date": "2020-12-24",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "fetched_at": "2026-09-14T13:09:09+00:00",
+  "source_snapshot_sha256": "2d88374bd560ea3e934b96424b8570bc984a4280e8f9ed7bc780daf6c290878b",
+  "validators": {
+    "etag": null,
+    "last_modified": null
+  }
+}

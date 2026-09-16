@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "5",
+    "title": "计算：每年夏至的精确时刻",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/5",
+    "date": "2009-07-08",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 7,
+    "display_formula_count": 4,
+    "image_count": 0,
+    "heading_count": 0,
+    "code_block_count": 0,
+    "source_text_sha256": "ae4f8bc11d8d528ad09cb930eec86d8a4e61c229f58b39ab0317075dabd716ea",
+    "output_text_sha256": "ae4f8bc11d8d528ad09cb930eec86d8a4e61c229f58b39ab0317075dabd716ea",
+    "latex_sha256": "d3d23e62a24b30409685cf4d068db53215547c986cb0ae27afa132f948bdde45",
+    "body_sha256": "6333d4fdee1024f367949cc08a54c73bfdac712c782df479fe0999a64fc0597a",
+    "converter_version": 1,
+    "markdown_sha256": "6e6f5a8d0df3b3068ac306c655f26dcc273ca16b5309a58d160e4d2646393574"
+  },
+  "fetched_at": "2026-09-14T15:07:39+00:00",
+  "source_snapshot_sha256": "b6c7bc56ab30654b5981761f51ef0c1c79039cb0b6022b0fa2cfc46db277d11a",
+  "images": {},
+  "local_only": true
+}

@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "3831",
+    "title": "OCR技术浅探：6. 光学识别",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/3831",
+    "date": "2016-06-25",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 5,
+    "display_formula_count": 1,
+    "image_count": 6,
+    "heading_count": 5,
+    "code_block_count": 0,
+    "source_text_sha256": "dd034d025de3b44577fa8f6ee670b4b149ae7ee39be5261ef39e2a8c54ff8cd8",
+    "output_text_sha256": "dd034d025de3b44577fa8f6ee670b4b149ae7ee39be5261ef39e2a8c54ff8cd8",
+    "latex_sha256": "558d21d2774cdcf62bbea0a0bfdc44a779330147a76b1a2b99bf35fc98abb679",
+    "body_sha256": "871e71d27339809befaf1617521d2fe83bd8480b4fe3fcdce2287f7b6ac1286d",
+    "converter_version": 1,
+    "markdown_sha256": "37657579f09f97f2c7d209f5c4a01f4c55c602ecd706070258f94fc3ad2b977a"
+  },
+  "fetched_at": "2026-09-14T13:39:40+00:00",
+  "source_snapshot_sha256": "29eb7a8dd4dcead0c642419f49a5d64bf4c570d1366c5e89b730ebbd6e76c831",
+  "images": {},
+  "local_only": true
+}

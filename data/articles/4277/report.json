@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "4277",
+    "title": "梯度下降和EM算法：系出同源，一脉相承",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/4277",
+    "date": "2017-03-23",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 123,
+    "display_formula_count": 33,
+    "image_count": 1,
+    "heading_count": 6,
+    "code_block_count": 0,
+    "source_text_sha256": "67b4759e02d8ebc34f8d68eee00dc91dc21893db97adf748f88d4919437493c5",
+    "output_text_sha256": "67b4759e02d8ebc34f8d68eee00dc91dc21893db97adf748f88d4919437493c5",
+    "latex_sha256": "0ade9e1f0d78ff5b89a91420e489dab527714b7a7d374a60b32d6ddebd21beed",
+    "body_sha256": "f36536e4c86b17a8e4e5ca24bf1f0e566b2ce6e442cb2f32b4a0369fa2fcd5dc",
+    "converter_version": 1,
+    "markdown_sha256": "a956c2b114d2b0d0ec2be25d7895d7cde953439e258515aeaa113344da3d83d5"
+  },
+  "fetched_at": "2026-09-14T13:33:46+00:00",
+  "source_snapshot_sha256": "23d30b61de371e8162d1ab2cbebedc652177b3c537a494dda3a4151254d0a4f8",
+  "images": {},
+  "local_only": true
+}

@@ -1,0 +1,30 @@
+<div class="PostContent" id="PostContent">
+<h2 id="几何词向量">几何词向量</h2><p>上述“月老”之云虽说只是幻想，但所面临的问题却是真实的。按照传统NLP的手段，我们可以统计任意两个词的共现频率以及每个词自身的频率，然后去算它们的相关度，从而得到一个“相关度矩阵”。然而正如前面所说，这个共现矩阵太庞大了，必须压缩降维，同时还要做数据平滑，给未出现的词对的相关度赋予一个合理的估值。</p><p>在已有的机器学习方案中，我们已经有一些对庞大的矩阵降维的经验了，比如SVD和pLSA，SVD是对任意矩阵的降维，而pLSA是对转移概率矩阵$P(j|i)$的降维，两者的思想是类似的，都是将一个大矩阵$\boldsymbol{A}$分解为两个小矩阵的乘积$\boldsymbol{A}\approx\boldsymbol{B}\boldsymbol{C}$，其中$\boldsymbol{B}$的行数等于$\boldsymbol{A}$的行数，$\boldsymbol{C}$的列数等于$\boldsymbol{A}$的列数，而它们本身的大小则远小于$\boldsymbol{A}$的大小。如果对$\boldsymbol{B},\boldsymbol{C}$不做约束，那么就是SVD；如果对$\boldsymbol{B},\boldsymbol{C}$做正定归一化约束，那就是pLSA。</p><p>但是如果是相关度矩阵，那么情况不大一样，它是正定的但不是归一的，我们需要为它设计一个新的压缩方案。借鉴矩阵分解的经验，我们可以设想把所有的词都放在$n$维空间中，也就是用$n$维空间中的一个向量来表示，并假设它们的相关度就是内积的某个函数（为什么是内积？因为矩阵乘法本身就是不断地做内积）：<br/>
+\[\frac{P(w_i,w_j)}{P(w_i)P(w_j)}=f\big(\langle \boldsymbol{v}_i, \boldsymbol{v}_j\rangle\big)\tag{8}\]<br/>
+其中加粗的$\boldsymbol{v}_i, \boldsymbol{v}_j$表示词$w_i,w_j$对应的词向量。从几何的角度看，我们就是把词语放置到了$n$维空间中，用空间中的点来表示一个词。</p><p>因为几何给我们的感觉是直观的，而语义给我们的感觉是复杂的，因此，理想情况下我们希望能够通过几何关系来反映语义关系。下面我们就根据我们所希望的几何特性，来确定待定的函数$f$。事实上，<u>glove词向量的那篇论文中做过类似的事情，很有启发性</u>，但glove的推导实在是不怎么好看。请留意，<font color="red"><u>这里的观点是新颖的——从我们希望的性质，来确定我们的模型，而不是反过来有了模型再推导性质</u></font>。</p><h2 id="机场-飞机+火车=火车站">机场-飞机+火车=火车站</h2><p></p><p>词向量最为人津津乐道的特性之一就是它的“<font color="red">词类比(word analogy)</font>”，比如那个经典的“国王-男人+女人=女王”（这项性质是不是词向量所必需的，是存在争议的，但这至少算是个加分项）。然而中英文语境不同，在中文语料中这个例子是很难复现的，当然，这样的例子不少，没必要死抠“洋例子”，比如在中文语料中，就很容易发现有“机场-飞机+火车=火车站”，准确来说，是<br/>
+\[\boldsymbol{v}(\text{机场})-\boldsymbol{v}(\text{飞机})+\boldsymbol{v}(\text{火车})=\boldsymbol{v}(\text{火车站})\tag{9}\]</p><p>为什么词向量会具有这种特性呢？最近一篇文章《Skip-Gram – Zipf + Uniform = Vector Additivity》对这个现象做了理论分析，文章中基于一些比较强的假设，最后推导出了这个结果。现在我们要做的一件可能比较惊人的事情是：<strong><font color="red">把这个特性直接作为词向量模型的定义之一！</font></strong></p><p>具体来说，就是<font color="red">词义的可加性直接体现为词向量的可加性，这个性质是词向量模型的定义</font>。我们是要从这个性质出发，<font color="red">反过来把前一部分还没有确定下来的函数$f$找出来</font>。这样一来，我们不仅为确定这个$f$找到了合理的依据，还解释了词向量的线性运算特性——因为这根本是词向量模型的定义，而不是模型的推论。</p><p>既然是线性运算，我们就可以移项得到“机场+火车=火车站+飞机”。现在我们来思考一下，单从语义角度来理解，这个等式究竟表达了什么？文章开头已经提到，词向量模型的假设基本都是用上下文的分布来推导词义，既然“机场+火车=火车站+飞机”，那么很显然就是说，“机场”与“火车”它们的共同的上下文，跟“火车站”与“飞机”的共同的上下文，两者基本是一样的。说白了，语义等价就相当于说“<font color="red"><u>如果两个人的择偶标准是很接近的，那么他们肯定也有很多共同点</u></font>”。到这里，$f$的形式就呼之欲出了！</p><h2 id="模型的形式">模型的形式</h2><p>因为词与词的相关程度用相关度来描述，所以如果“机场+火车=火车站+飞机”，那么我们会有：<br/>
+\[\frac{P(\text{机场},\text{火车};w)}{P(\text{机场},\text{火车})P(w)}\quad=\quad\frac{P(\text{火车站},\text{飞机};w)}{P(\text{火车站},\text{飞机})P(w)}\tag{10}\]<br/>
+这里的$w$是上下文的任意一个词，由于我们不特别关心词序，只关心上下文本身的平均分布，因此，我们可以使用朴素假设来化简上式，那么根据式$(6)$得到：<br/>
+\[\frac{P(\text{机场},w)}{P(\text{机场})P(w)}\times\frac{P(\text{火车},w)}{P(\text{火车})P(w)}=\frac{P(\text{火车站},w)}{P(\text{火车站})P(w)}\times\frac{P(\text{飞机},w)}{P(\text{飞机})P(w)}\tag{11}\]<br/>
+代入前面假设的式$(8)$，得到<br/>
+\[f\big(\langle \boldsymbol{v}_{\text{机场}}, \boldsymbol{v}_w\rangle\big)f\big(\langle \boldsymbol{v}_{\text{火车}}, \boldsymbol{v}_w\rangle\big) = f\big(\langle \boldsymbol{v}_{\text{飞机}}, \boldsymbol{v}_w\rangle\big) f\big(\langle \boldsymbol{v}_{\text{火车站}}, \boldsymbol{v}_w\rangle\big)\tag{12}\]<br/>
+最后代入式$(9)$，得到<br/>
+\[\begin{aligned}&amp;\left.f\big(\langle \boldsymbol{v}_{\text{机场}}, \boldsymbol{v}_w\rangle\big)f\big(\langle \boldsymbol{v}_{\text{火车}}, \boldsymbol{v}_w\rangle\big)\middle/f\big(\langle \boldsymbol{v}_{\text{飞机}}, \boldsymbol{v}_w\rangle\big)\right.\\<br/>
+=&amp;f\big(\langle \boldsymbol{v}_{\text{机场}}-\boldsymbol{v}_{\text{飞机}}+\boldsymbol{v}_{\text{火车}}, \boldsymbol{v}_w\rangle\big)\\<br/>
+=&amp;f\big(\langle \boldsymbol{v}_{\text{机场}}, \boldsymbol{v}_w\rangle+\langle\boldsymbol{v}_{\text{火车}}, \boldsymbol{v}_w\rangle-\langle\boldsymbol{v}_{\text{飞机}}, \boldsymbol{v}_w\rangle\big)<br/>
+\end{aligned}\tag{13}\]<br/>
+这里$\boldsymbol{v}_w$是任意的，因此上式等价于成立<br/>
+$$f(x+y-z)=f(x)f(y)/f(z)$$<br/>
+加上连续性条件的话，那么上述方程的通解就是（求解过程在一般的数学分析书籍应该都可以找到）<br/>
+$$f(x)=e^{\alpha x}$$<br/>
+也就是指数形式。现在我们就得到如下结果：为了让最后得到的词向量具有可加性，那么就需要对相关度用指数模型建模：<br/>
+\[\frac{P(w_i,w_j)}{P(w_i)P(w_j)}=e^{\langle \boldsymbol{v}_i, \boldsymbol{v}_j\rangle}\tag{14}\]<br/>
+等价地，对互信息进行建模：<br/>
+\[\label{eq:model}\text{PMI}(w_i,w_j)=\langle \boldsymbol{v}_i, \boldsymbol{v}_j\rangle\tag{15}\]<br/>
+至此，我们完成了模型的形式推导，从形式上看类似对互信息矩阵的SVD分解。</p><h2 id="忘记归一化">忘记归一化</h2><p>我们没有像通常的概率模型那样，除以一个归一化因子来完成概率的归一化。这样造成的后果是：对于本文的模型，当然也包括glove模型，我们不能讨论任意有关归一化的事情，不然会导致自相矛盾的结果。</p><p>事实上，这是一种以空间换取时间的做法，因为我们<font color="red">没有除以归一化因子来归一化，但又必须让结果接近归一化</font>，所以我们只能事先统计好所有的共现项的互信息并存好，这往往需要比较大的内存。而这步骤换来的好处是，所有的共现项其实很有限（“词对”的数目总比句子的数目要少），因此当你有大规模的语料且内存足够多时，用glove模型往往比用word2vec的skip gram模型要快得多。</p><p>此外，既然本文的模型跟word2vec的skip gram模型基本上就是相差了一个归一化因子，那么很显然，本文的一些推导过程能否直接迁移到word2vec的skip gram模型中，基本上取决于skip gram模型训练后它的归一化因子是否接近于1。</p>
+
+
+
+
+
+</div>

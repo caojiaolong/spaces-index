@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "11626",
+    "title": "MoE环游记：7、动态激活极简解",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/11626",
+    "date": "2026-02-23",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 101,
+    "display_formula_count": 15,
+    "image_count": 0,
+    "heading_count": 8,
+    "code_block_count": 1,
+    "source_text_sha256": "1d8d4cd844d98b550525ca81b703cda67296b342f68838f927f1a90529b762b9",
+    "output_text_sha256": "1d8d4cd844d98b550525ca81b703cda67296b342f68838f927f1a90529b762b9",
+    "latex_sha256": "15caa3f361c1ddb0821038413f2ab6e3773d36cf3ff84b2297a45d6e9e7d0ace",
+    "body_sha256": "1b5398748765cd495cf52763363d372623c6458232091582808e39dad5dcacf1",
+    "converter_version": 1,
+    "markdown_sha256": "be693c4585b315244f336655b950c03d6b55366814e9535b51fdda18a629c376"
+  },
+  "fetched_at": "2026-09-14T12:36:58+00:00",
+  "source_snapshot_sha256": "441125b58551cb92113f107b3ae744c7e2507dbecb507d1074cef6cfc39ebf4b",
+  "images": {},
+  "local_only": true
+}

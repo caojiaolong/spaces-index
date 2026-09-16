@@ -1,0 +1,17 @@
+{
+  "metadata": {
+    "id": "8620",
+    "title": "浅谈Transformer的初始化、参数化与标准化",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/8620",
+    "date": "2021-08-17",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "fetched_at": "2026-09-14T13:04:51+00:00",
+  "source_snapshot_sha256": "a8b2e186873b4cf09ecb11ce6c1caf52f988efd9e2dffef59e59d9a8fa94b528",
+  "validators": {
+    "etag": null,
+    "last_modified": null
+  }
+}

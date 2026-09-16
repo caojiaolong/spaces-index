@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "9034",
+    "title": "熵不变性Softmax的一个快速推导",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/9034",
+    "date": "2022-04-11",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 20,
+    "display_formula_count": 7,
+    "image_count": 0,
+    "heading_count": 2,
+    "code_block_count": 0,
+    "source_text_sha256": "3bc8a18126c2e2139055f79cad17041c69a0f1af1357302dfe7dcdc223d8b1af",
+    "output_text_sha256": "3bc8a18126c2e2139055f79cad17041c69a0f1af1357302dfe7dcdc223d8b1af",
+    "latex_sha256": "b72a39e600edce66a202cbd7ce7163d1b464d6ece6de0f0e9f1b31b0fcbe0465",
+    "body_sha256": "7d606fecd34e22ae422534a747a69c97aea31cb06007ca0621fbb539752c0fff",
+    "converter_version": 1,
+    "markdown_sha256": "10393cc3af646669cd7e07b7a03a9f13672a57ca6d436bba2e6f61ec0699209c"
+  },
+  "fetched_at": "2026-09-14T13:00:18+00:00",
+  "source_snapshot_sha256": "82c863f21bf212ad7b6a9dae650b8ae3c646510986981d9766298ae3c07c2648",
+  "images": {},
+  "local_only": true
+}

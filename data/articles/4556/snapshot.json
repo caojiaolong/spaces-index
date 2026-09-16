@@ -1,0 +1,17 @@
+{
+  "metadata": {
+    "id": "4556",
+    "title": "fashion mnist的一个baseline (MobileNet 95%)",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/4556",
+    "date": "2017-08-27",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "fetched_at": "2026-09-14T13:31:00+00:00",
+  "source_snapshot_sha256": "d57c184bf37957053984f710459dcc4aff365aa0b6c5544b295c9e872e7398bd",
+  "validators": {
+    "etag": null,
+    "last_modified": null
+  }
+}

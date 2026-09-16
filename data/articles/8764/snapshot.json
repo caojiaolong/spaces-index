@@ -1,0 +1,17 @@
+{
+  "metadata": {
+    "id": "8764",
+    "title": "ChildTuning：试试把Dropout加到梯度上去？",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/8764",
+    "date": "2021-11-22",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "fetched_at": "2026-09-14T13:03:08+00:00",
+  "source_snapshot_sha256": "74a4b2cc0b5d5569eb69da9fde243d111911756f14cb8429470b1ee66c922b9c",
+  "validators": {
+    "etag": null,
+    "last_modified": null
+  }
+}

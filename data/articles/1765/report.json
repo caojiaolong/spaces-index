@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "1765",
+    "title": "《新理解矩阵1》：矩阵是什么？",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/1765",
+    "date": "2012-10-29",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 33,
+    "display_formula_count": 9,
+    "image_count": 0,
+    "heading_count": 0,
+    "code_block_count": 0,
+    "source_text_sha256": "5abae441c1d1c250484420f73a5ab396e20a0198ce722171c9f946b7e31c21e4",
+    "output_text_sha256": "5abae441c1d1c250484420f73a5ab396e20a0198ce722171c9f946b7e31c21e4",
+    "latex_sha256": "09ba32fc73a35dbae2fa5233ecb4abaffa9b4b1bf2d14089076b91adb2f22dc6",
+    "body_sha256": "3dd60bdd8418fcf27df6e7004f426a2a08756c6fe0e169fc93bd91f53c2538fc",
+    "converter_version": 1,
+    "markdown_sha256": "33eb75b5c34b88667ae5fe7203bff1acbfe0169bd240b6bf615e132a91fd7e59"
+  },
+  "fetched_at": "2026-09-14T14:09:20+00:00",
+  "source_snapshot_sha256": "d6709377d054d4562422711545ac72c4610137f963b01aa78eb9f43b4ed94884",
+  "images": {},
+  "local_only": true
+}

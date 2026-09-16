@@ -1,0 +1,28 @@
+<div class="PostContent" id="PostContent">
+<p>在小学的时候，数学老师就教我们除法运算：</p><blockquote>被除数 = 除数 × 商 + 余数</blockquote><p>其中，余数要小于除数。不过，我们也许未曾想到过，这一运算的成立，几乎是自然数$\mathbb{N}$所有算术（数论）运算性质成立的基础！在代数中，上面的运算等式称为<strong>带余除法</strong>（division algorithm）。如果在一个整环中成立带余除法，那么该整环几乎就拥有了所有理想的性质，比如唯一分解性，也就是我们说的算术基本定理。这样的一个整环，被称为唯一分解整环（Unique factorization domain）。</p><h2 id="欧几里得整环">欧几里得整环</h2><p></p><div class="pic-container" style="float:right; margin: 5px auto 2px 1px"><div style="display: inline-block; background-color: #fff"><div class="typecho-caption aligncenter" style="max-width: 150px; margin: 0 0 0 8px"><div style="margin: 5px"><a href="/usr/uploads/2014/08/4271549497.jpg" target="_blank" title="点击查看原图"><img alt="Euklid-von-Alexandria_1" src="/usr/uploads/2014/08/4271549497.jpg" style="max-width: 100%"/></a></div><p>Euklid-von-Alexandria_1</p></div></div></div><p><strong>唯一分解定理</strong>说的是在一个整环之中，所有的元素都可以分解为该整环的某些“素元素”之积，并且在不考虑元素相乘的顺序和相差单位数的意义之下，分解形式是唯一的。我们通常说的自然数就成立唯一分解定理，比如$60=2^2\times 3\times 5$，这种分解是唯一的，这看起来相当显然，但实际上唯一分解定理相当不显然。首先，并不是所有的整数环都成立唯一分解定理的，我们考虑所有偶数组成的环$2\mathbb{Z}$，要注意，在$2\mathbb{Z}$中，2、6、10、30都是素数，因为它们无法分解成两个偶数的乘积了，但是$60=6\times 10=2\times 30$，存在两种不同的分解，因此在这样的数环中，唯一分解定理就不成立了。</p><p>在所有成立唯一分解定理的整环中，有一类整环显得比较简单，我们称之为“<strong>欧几里得整环</strong>”（Euclidean domain）。这是能够进行带余除法的整环。然而，在进一步的讨论之前，我们还必须定义好<strong>带余除法</strong>，因为我们说过，实整数基于良序原理，我们可以规定余数比除数要小，但是一般的整环没有可比性。下面的定义基于高斯整数环，但是可以一般地推广到其他整环。（如果是在一般的整环中，范数要加绝对值，因为范数不一定是正数。）</p><h2 id="带余除法">带余除法</h2><blockquote>带余除法：任意给定复整数$\alpha,\beta$，且$\beta\neq 0$，那么存在复整数$\kappa,\lambda$，使得<br/>
+$$\alpha=\kappa\beta+\lambda$$<br/>
+其中$N(\lambda) &lt; N(\beta)$。</blockquote><p>下面给出的证明也具有一般性，考虑复数$\frac{\alpha}{\beta}=A+B i,\ A,B\in \mathbb{Q}$，将$A,B$都进行四舍五入，也就是取整数$C,D$，使得$|A-C| \leq 1/2,\ |B-D| \leq 1/2$，那么就可以取$\kappa=C+Di$，这样子<br/>
+$$\begin{aligned}\lambda=&amp;\alpha-\kappa\beta\\<br/>
+=&amp;\beta\left(\frac{\alpha}{\beta}-\kappa\right)\\<br/>
+=&amp;\beta\left[(A-C)+(B-D)i\right]\end{aligned}$$<br/>
+那么<br/>
+$$\begin{aligned}<br/>
+N(\lambda)=&amp;N\left(\beta\left[(A-C)+(B-D)i\right]\right)\\<br/>
+=&amp;N(\beta)N\left((A-C)+(B-D)i\right)\\<br/>
+=&amp;N(\beta)\left[(A-C)^2+(B-D)^2\right]\\<br/>
+\leq &amp;N(\beta)\left[(1/2)^2+(1/2)^2\right]\\<br/>
+&lt; &amp;N(\beta)<br/>
+\end{aligned}$$<br/>
+由此可见，一个等价的定义是，对于任意<u>复数</u>$\alpha$，存在<u>复整数</u>$\beta$，使得$N(\alpha-\beta) &lt; 1$。</p><h2 id="裴蜀等式">裴蜀等式</h2><p>有了带余除法，我们就可以用<strong>辗转相除法</strong>来求两个数的最大公约数了，辗转相除法也叫欧几里得算法，也正是这个原因，成立带余除法的整环才被成为欧几里得整环。我们将辗转相除的过程倒过来，逐步代入，就得到了<strong>裴蜀等式</strong>（Bézout's identity，也叫贝祖等式、贝祖定理）。</p><blockquote>$\alpha,\beta$是两个不为0的高斯整数，那么存在$d$是它们的最大公约数，那么存在高斯整数$\xi,\eta$，使得<br/>
+$$\alpha \xi +\beta \eta=d$$<br/>
+也就是说两个数的最大公约数是这两个数的线性组合。</blockquote><h2 id="欧几里得引理">欧几里得引理</h2><blockquote><strong>欧几里得引理</strong>（Euclid's lemma，也被称为欧几里得第一定理），是说如果某个高斯素数$\pi$整除两个高斯整数之积$\alpha\beta$，那么该高斯素数至少整除其中一个乘数，也就是$\pi|\alpha$和$\pi|\beta$至少有一个成立。</blockquote><p>我们只需假设$\pi\nmid \alpha$，然后证明$\pi |\beta$。由于$\pi\nmid \alpha$，而且$\pi$又是一个素数，那么$\pi$和$\alpha$的最大公约数便是1（当然，也可以说是$-1,\pm i$，就是一个单位数），那么存在高斯整数$\xi$和$\eta$，使得<br/>
+$$\xi \pi+\eta\alpha=1$$<br/>
+两边乘以$\beta$<br/>
+$$\xi \pi \beta+\eta\alpha\beta=\beta$$<br/>
+由于$\pi|\alpha\beta$，也就是左边能被$\pi$整除，那么右边也可以，所以$\pi|\beta$。</p><p>到这里，我们要证明唯一分解定理的材料已经准备完毕。可以发现，上面的三个内容，都是自然数的一些比较显然的性质的一般化，而重要的唯一分解定理，就隐藏在这些简单的基本事实之中。</p><h2 id="唯一分解定理">唯一分解定理</h2><p>首先，要留意的是，唯一分解定理是忽略掉单位数因子的区别的，也就是说，把互为相伴数的两个数看成是同一数，唯一分解定理才成立。要不然，$9=3\times 3=(-3) \times (-3)$就有两种分解了。但是，-3和3只相差一个单位数，因此忽略此差别，就只有一种分解了。</p><p>证明采用的是数学归纳法，首先$N(\pm 1\pm i)=2$，这是范数最小的4个高斯整数，它们也都是高斯素数。也就是说，唯一分解对于$\pm 1\pm i$成立。</p><p>假设唯一分解定理对于范数小于$N(\alpha)$的整数都成立，那么对于高斯整数$\alpha$，假设它可以分解为高斯素数之积$\alpha=\pi_1 \pi_2 \dots \pi_s$和$\alpha=\pi'_1 \pi'_2 \dots \pi'_t$。那么就是说$\pi_s|\pi'_1 \pi'_2 \dots \pi'_t$，根据欧几里得引理，$\pi_s$必然整除$\pi'_1,\pi'_2,\dots,\pi'_t$中的其中一个，而且$\pi'_1,\pi'_2,\dots,\pi'_t$都是高斯素数，那么$\pi_s$必然与其中之一相伴，不失一般性，设$\pi_s$与$\pi'_t$相伴，那么$\pi_1 \pi_2 \dots \pi_{s-1}$和$\pi'_1 \pi'_2 \dots \pi'_{t-1}$相伴，而且$N(\pi_1 \pi_2 \dots \pi_{s-1}) &lt; N(\alpha)$，因此对于此数唯一分解成立，所以唯一分解定理对于范数等于$N(\alpha)$的整数也成立。</p><p>所以唯一分解定理在高斯整数中成立。</p><h2 id="回顾">回顾</h2><p>回顾我们的证明，可以发现证明的基础便是带余除法。然而，带余除法的成立只不过是唯一分解定理的充分条件，也就是说，存在着非欧几里得整环，它也满足唯一分解定理，而这些就需要更多的知识了。而当遇到唯一分解定理不成立之时，我们也有绕过这一困难的方法，那就是引入理想数，这就是Kummer为了解决费马大定理所引入的思想，这些我们以后有机会就会谈到。接下来，让我们先牛刀小试，用高斯整数来证明费马大定理在$n=4$时成立。</p><p>参考书籍：<strong>《数论讲义(下)》孙琦, 柯召</strong>的第九章</p>
+
+
+
+
+
+</div>

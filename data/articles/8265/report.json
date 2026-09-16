@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "8265",
+    "title": "Transformer升级之路：2、博采众长的旋转式位置编码",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/8265",
+    "date": "2021-03-23",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 78,
+    "display_formula_count": 22,
+    "image_count": 1,
+    "heading_count": 7,
+    "code_block_count": 1,
+    "source_text_sha256": "8d34d9682b1447b5ed42288820447a8ea30745f0e3efd05e5fffcb47271f7b6b",
+    "output_text_sha256": "8d34d9682b1447b5ed42288820447a8ea30745f0e3efd05e5fffcb47271f7b6b",
+    "latex_sha256": "35ed7a2569c94a9c79520b150254b5e6666ee23ece21afae615b3c96a2e6e22e",
+    "body_sha256": "b4eb85f64e91bded9fee33f1803e8b3ee3319d38ec463e512c7bd886ece258c6",
+    "converter_version": 1,
+    "markdown_sha256": "9483bc01b0894458bce0bf9b4bf66f3cdde826ed3c1833216e3336ab68e1b282"
+  },
+  "fetched_at": "2026-09-14T13:07:32+00:00",
+  "source_snapshot_sha256": "1df1867cb6c115a55bbc9e76ec9dbf984cc7b91cdb8bbf74a0eeb2dedd5d2d1a",
+  "images": {},
+  "local_only": true
+}

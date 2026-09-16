@@ -1,0 +1,45 @@
+{
+  "version": 1,
+  "images": {
+    "https://spaces.ac.cn/usr/uploads/2015/03/1835592825.jpg": {
+      "status": "cached",
+      "file": "0a7fbf6558878c822ae0b8186912b073a5426cbd1ce6f2ba6c4d2645e99d62aa.jpg",
+      "sha256": "0a7fbf6558878c822ae0b8186912b073a5426cbd1ce6f2ba6c4d2645e99d62aa",
+      "bytes": 28608,
+      "checked_at": "2026-09-16T09:38:46+00:00",
+      "fetched_url": "https://spaces.ac.cn/usr/uploads/2015/03/1835592825.jpg",
+      "etag": "\"5a6ec745-6fc0\"",
+      "last_modified": "Mon, 29 Jan 2018 07:03:33 GMT"
+    },
+    "https://spaces.ac.cn/usr/uploads/2015/03/649201218.png": {
+      "status": "cached",
+      "file": "17e4326a85a06837344ce2a203298958c1a15ad83ed8a3d55852b7672ef09ff2.png",
+      "sha256": "17e4326a85a06837344ce2a203298958c1a15ad83ed8a3d55852b7672ef09ff2",
+      "bytes": 1753,
+      "checked_at": "2026-09-16T09:38:49+00:00",
+      "fetched_url": "https://spaces.ac.cn/usr/uploads/2015/03/649201218.png",
+      "etag": "\"5a6ec745-6d9\"",
+      "last_modified": "Mon, 29 Jan 2018 07:03:33 GMT"
+    },
+    "https://spaces.ac.cn/usr/uploads/2015/03/3730022817.png": {
+      "status": "cached",
+      "file": "aa499addc04c70c8bf1c6a0ec9f8ff22c1209be376709cc6639bf78e127c0817.png",
+      "sha256": "aa499addc04c70c8bf1c6a0ec9f8ff22c1209be376709cc6639bf78e127c0817",
+      "bytes": 959,
+      "checked_at": "2026-09-16T09:38:53+00:00",
+      "fetched_url": "https://spaces.ac.cn/usr/uploads/2015/03/3730022817.png",
+      "etag": "\"5a6ec745-3bf\"",
+      "last_modified": "Mon, 29 Jan 2018 07:03:33 GMT"
+    },
+    "https://spaces.ac.cn/usr/uploads/2015/03/387395631.png": {
+      "status": "cached",
+      "file": "6dbc297ca38177c831978508813c96e48884645a9377fc1649e6a0a0473f8252.png",
+      "sha256": "6dbc297ca38177c831978508813c96e48884645a9377fc1649e6a0a0473f8252",
+      "bytes": 1699,
+      "checked_at": "2026-09-16T09:38:57+00:00",
+      "fetched_url": "https://spaces.ac.cn/usr/uploads/2015/03/387395631.png",
+      "etag": "\"5a6ec745-6a3\"",
+      "last_modified": "Mon, 29 Jan 2018 07:03:33 GMT"
+    }
+  }
+}

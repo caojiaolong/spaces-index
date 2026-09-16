@@ -1,0 +1,45 @@
+{
+  "version": 1,
+  "images": {
+    "https://spaces.ac.cn/usr/uploads/2015/06/1026811289.jpg": {
+      "status": "cached",
+      "file": "95a4a52293447bc759dd5910bded05c18f1884039c2b0a62360dd70d5cf8f95f.jpg",
+      "sha256": "95a4a52293447bc759dd5910bded05c18f1884039c2b0a62360dd70d5cf8f95f",
+      "bytes": 40140,
+      "checked_at": "2026-09-16T09:38:00+00:00",
+      "fetched_url": "https://spaces.ac.cn/usr/uploads/2015/06/1026811289.jpg",
+      "etag": "\"5a6ec745-9ccc\"",
+      "last_modified": "Mon, 29 Jan 2018 07:03:33 GMT"
+    },
+    "https://spaces.ac.cn/usr/uploads/2015/06/3624978617.png": {
+      "status": "cached",
+      "file": "a743ad006338fc57ef3c1ef74572f9b343454bbcc4403d4834e065cca385e4d1.png",
+      "sha256": "a743ad006338fc57ef3c1ef74572f9b343454bbcc4403d4834e065cca385e4d1",
+      "bytes": 35917,
+      "checked_at": "2026-09-16T09:38:05+00:00",
+      "fetched_url": "https://spaces.ac.cn/usr/uploads/2015/06/3624978617.png",
+      "etag": "\"5a6ec745-8c4d\"",
+      "last_modified": "Mon, 29 Jan 2018 07:03:33 GMT"
+    },
+    "https://spaces.ac.cn/usr/uploads/2015/06/1115555857.png": {
+      "status": "cached",
+      "file": "5137205a01ae329c05244757bc2cc039035f6b3ba451a12fc12f211ad55540f7.png",
+      "sha256": "5137205a01ae329c05244757bc2cc039035f6b3ba451a12fc12f211ad55540f7",
+      "bytes": 61042,
+      "checked_at": "2026-09-16T09:38:09+00:00",
+      "fetched_url": "https://spaces.ac.cn/usr/uploads/2015/06/1115555857.png",
+      "etag": "\"5a6ec745-ee72\"",
+      "last_modified": "Mon, 29 Jan 2018 07:03:33 GMT"
+    },
+    "https://spaces.ac.cn/usr/uploads/2015/06/791824803.png": {
+      "status": "cached",
+      "file": "4464ae07faca265a87f7683bbcb15b43868780bf1fdda7fea1984e2db2138940.png",
+      "sha256": "4464ae07faca265a87f7683bbcb15b43868780bf1fdda7fea1984e2db2138940",
+      "bytes": 479721,
+      "checked_at": "2026-09-16T09:38:15+00:00",
+      "fetched_url": "https://spaces.ac.cn/usr/uploads/2015/06/791824803.png",
+      "etag": "\"5a6ec745-751e9\"",
+      "last_modified": "Mon, 29 Jan 2018 07:03:33 GMT"
+    }
+  }
+}

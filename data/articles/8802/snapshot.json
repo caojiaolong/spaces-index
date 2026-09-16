@@ -1,0 +1,17 @@
+{
+  "metadata": {
+    "id": "8802",
+    "title": "Seq2Seq+前缀树：检索任务新范式（以KgCLUE为例）",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/8802",
+    "date": "2021-12-17",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "fetched_at": "2026-09-14T13:02:36+00:00",
+  "source_snapshot_sha256": "733769c3d2cae96820a4bde797bcb8a2f82c8947683afae46c791c170dcd9ff0",
+  "validators": {
+    "etag": null,
+    "last_modified": null
+  }
+}

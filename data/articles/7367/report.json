@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "7367",
+    "title": "节省显存的重计算技巧也有了Keras版了",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/7367",
+    "date": "2020-04-29",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 0,
+    "display_formula_count": 0,
+    "image_count": 0,
+    "heading_count": 5,
+    "code_block_count": 2,
+    "source_text_sha256": "fe2a6dae7796852a9492881f7f546096d3e0aa63c580fc04985271c505a59d99",
+    "output_text_sha256": "fe2a6dae7796852a9492881f7f546096d3e0aa63c580fc04985271c505a59d99",
+    "latex_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "body_sha256": "af45e4d03e96168f70608d82e4677f75931e4b2a6a115e08764c44109f1eb0c7",
+    "converter_version": 1,
+    "markdown_sha256": "0ed23c0aa53e3f3d45927f9ec22011f6f2a549c876eead5e696a8836967b25d8"
+  },
+  "fetched_at": "2026-09-14T13:14:09+00:00",
+  "source_snapshot_sha256": "c1712dbcead1682e9989ec02a012d01b2a1907dff08d4d0384fefcc458e7c157",
+  "images": {},
+  "local_only": true
+}

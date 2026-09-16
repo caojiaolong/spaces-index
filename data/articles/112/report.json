@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "112",
+    "title": "【NASA每日一图】超新星遗骸E0102-72",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/112",
+    "date": "2009-09-05",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 0,
+    "display_formula_count": 0,
+    "image_count": 1,
+    "heading_count": 0,
+    "code_block_count": 0,
+    "source_text_sha256": "d90423021a0a8d3d6e52b53195c6ae1bc3d6029a7a41a7923561d85c276c2950",
+    "output_text_sha256": "d90423021a0a8d3d6e52b53195c6ae1bc3d6029a7a41a7923561d85c276c2950",
+    "latex_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "body_sha256": "182e6a20b7ce357e185fc7f2879df854557d2ac4f2c4f804eb014c131d8d6a86",
+    "converter_version": 1,
+    "markdown_sha256": "874d25d48915e7ffd793477dac1dc422f11e509e96f59fd290b5903dfca3a794"
+  },
+  "fetched_at": "2026-09-14T14:54:52+00:00",
+  "source_snapshot_sha256": "3ebdba984c9c54730e0ee05b1f7b6757c856f054a49f9c00d91e9a8e59cbcf12",
+  "images": {},
+  "local_only": true
+}

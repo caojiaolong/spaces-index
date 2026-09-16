@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "3630",
+    "title": "积分估计的极值原理——变分原理的初级版本",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/3630",
+    "date": "2016-02-15",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 37,
+    "display_formula_count": 11,
+    "image_count": 0,
+    "heading_count": 2,
+    "code_block_count": 0,
+    "source_text_sha256": "40b0ffabcd3fd922fdce8c70aa6feb0c48a868e4f119288ee0585e35395fbb3d",
+    "output_text_sha256": "40b0ffabcd3fd922fdce8c70aa6feb0c48a868e4f119288ee0585e35395fbb3d",
+    "latex_sha256": "6c87544a0ce1588d3eec7056d5393f2e9d521391afbddab770ced427fc316853",
+    "body_sha256": "7d2408511dfcca3c611c9a41fb589828350e8a4d1503c692fc3dce3eac18a525",
+    "converter_version": 1,
+    "markdown_sha256": "4ae1ced8467794cefc397453576444426f35e9316ebd577bba2608738e2a22dc"
+  },
+  "fetched_at": "2026-09-14T13:42:34+00:00",
+  "source_snapshot_sha256": "7e6fb0e0df60f344999e91e0a81c69feedba557c2201c5b788b475170997c217",
+  "images": {},
+  "local_only": true
+}

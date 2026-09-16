@@ -1,0 +1,17 @@
+{
+  "metadata": {
+    "id": "9698",
+    "title": "语言模型输出端共享Embedding的重新探索",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/9698",
+    "date": "2023-07-20",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "fetched_at": "2026-09-14T12:53:07+00:00",
+  "source_snapshot_sha256": "4201d9ca2fade415e4945a4eddd4d9277d5337a1cb1b3c20b6899309f850714d",
+  "validators": {
+    "etag": null,
+    "last_modified": null
+  }
+}

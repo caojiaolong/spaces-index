@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "1790",
+    "title": "《环球科学》:超越费曼图",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/1790",
+    "date": "2012-11-26",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 0,
+    "display_formula_count": 0,
+    "image_count": 0,
+    "heading_count": 0,
+    "code_block_count": 0,
+    "source_text_sha256": "4b5089e4cc15630c83eed744b4694b03ae44eff764c802f4e61e0d1a2751d3ce",
+    "output_text_sha256": "4b5089e4cc15630c83eed744b4694b03ae44eff764c802f4e61e0d1a2751d3ce",
+    "latex_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "body_sha256": "1f999c01fa96afc9b6a5c9cbfe4256e771d21eda1e91ba0664da93499c58150f",
+    "converter_version": 1,
+    "markdown_sha256": "4d3ace0548a99d8f205b50d62937d82ecfac86816595d18ed0d511bbde3a14bd"
+  },
+  "fetched_at": "2026-09-14T14:08:39+00:00",
+  "source_snapshot_sha256": "c01e77b032fc587e676ce5ab3f9870eb4cc6d58a999f336be90075762637d837",
+  "images": {},
+  "local_only": true
+}

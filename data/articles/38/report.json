@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "38",
+    "title": "三百年之谜——费马大定理(历史+证明)",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/38",
+    "date": "2009-07-28",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 1,
+    "display_formula_count": 0,
+    "image_count": 1,
+    "heading_count": 0,
+    "code_block_count": 0,
+    "source_text_sha256": "459991b434195db162c4df8a79f595034b8e9a0a985c81aba1dc6cf6a3dc7dab",
+    "output_text_sha256": "459991b434195db162c4df8a79f595034b8e9a0a985c81aba1dc6cf6a3dc7dab",
+    "latex_sha256": "daf2648e9b10f2521bad35813ed812f972823da24bc62a7ef384fba584d51480",
+    "body_sha256": "88b43154f24b2b63eeaa05b70809ca6640b3fce0ff49360da00c12f94a758328",
+    "converter_version": 1,
+    "markdown_sha256": "05edb2110a0bff7e7b21371a7f2e232d5a504409aa349de5195b42ab94372ece"
+  },
+  "fetched_at": "2026-09-14T15:03:25+00:00",
+  "source_snapshot_sha256": "e7c1c467acaccd52b27ab2bb20dca53392358bef2586b327605d085292c5cf61",
+  "images": {},
+  "local_only": true
+}

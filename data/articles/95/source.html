@@ -1,0 +1,20 @@
+<div class="PostContent" id="PostContent">
+<p><strong>证明下列极限：</strong><br/>
+$$\lim_{x \to 0}\left(\frac{a^x+b^x}{2}\right)^{3/x}=ab\sqrt{ab}$$</p><p><strong>解：</strong><br/>
+这是我认为比较难的极限题目之一，由麦克劳林公式可以推出：<br/>
+$$a^x=1+x \ln a+\frac{x^2 \ln^2 a}{2!}+\frac{x^3 \ln^3 a}{3!}+...$$</p><p>于是原式可以变成<br/>
+$$\lim_{x \to 0}\left(\frac{2+x \ln a+\frac{x^2 \ln^2 a}{2!}+...+x \ln b+\frac{x^2 \ln^2 b}{2!}+...}{2}\right)^{3/x}$$</p><p>我们有一个简单的极限：$\lim\limits_{x\to 0}(a+x^2)^{1/x}=a^{1/x}$，因此，在上式中，$\frac{x^2 \ln^2 a}{2!}$及其后面的项可以忽略，只考虑<br/>
+$$\begin{aligned}<br/>
+&amp;\,\lim_{x \to 0}\left(\frac{2+x \ln a+x \ln b}{2}\right)^{3/x}\\<br/>
+=&amp;\,\lim_{x \to 0} \left\{\left[1+\left(\frac{\ln a+\ln b}{2}\right)x\right]^{1/x}\right\}^3\\<br/>
+=&amp;\,e^{\frac{3(\ln a+ \ln b)}{2}}\\<br/>
+=&amp;\,(ab)^{3/2}\\<br/>
+=&amp;\,ab\sqrt{ab}<br/>
+\end{aligned}$$</p><p>同理，有<br/>
+$$\lim_{x \to 0}\left(\frac{a_1^x+a_2^x+...+a_n^x}{n}\right)^{1/x}=\sqrt[n]{a_1 a_2...a_n}$$</p>
+
+
+
+
+
+</div>

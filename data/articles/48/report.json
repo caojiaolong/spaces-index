@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "48",
+    "title": "【NASA每日一图】明亮的超新星爆发",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/48",
+    "date": "2009-08-01",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 0,
+    "display_formula_count": 0,
+    "image_count": 1,
+    "heading_count": 0,
+    "code_block_count": 0,
+    "source_text_sha256": "f9718a09131070667b050934ff2150d8d7c35ab1322ed1da433cd4d1a1672159",
+    "output_text_sha256": "f9718a09131070667b050934ff2150d8d7c35ab1322ed1da433cd4d1a1672159",
+    "latex_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "body_sha256": "370c5267cb7420d12b82c48f273d90e9457c198cb5eed747ea6e4d6b380fed98",
+    "converter_version": 1,
+    "markdown_sha256": "4eff27e7560f6a1529f18c40edb60c019505f0a8a420c3617fdec8b7d3defbef"
+  },
+  "fetched_at": "2026-09-14T15:02:16+00:00",
+  "source_snapshot_sha256": "b68d08105412077c6c92bf8c973b2b144c66af347265f185073215d542a96347",
+  "images": {},
+  "local_only": true
+}

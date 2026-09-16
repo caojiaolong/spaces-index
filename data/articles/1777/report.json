@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "1777",
+    "title": "《新理解矩阵4》：相似矩阵的那些事儿",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/1777",
+    "date": "2012-11-11",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 17,
+    "display_formula_count": 1,
+    "image_count": 0,
+    "heading_count": 0,
+    "code_block_count": 0,
+    "source_text_sha256": "ed3f5ce0c04b65fdfc3369125791e56009652f23f48d2774be359581ade294b1",
+    "output_text_sha256": "ed3f5ce0c04b65fdfc3369125791e56009652f23f48d2774be359581ade294b1",
+    "latex_sha256": "80b204be278ec15416638e93a126bce7efdeaf562910dbd79127ce0c664c0af0",
+    "body_sha256": "676611ddb02a53560cf663cb2baa0515ee11839dc4a05f0084fa1a4f193c2d7e",
+    "converter_version": 1,
+    "markdown_sha256": "7aac27d2b23901f5321d2f4a1b26d22865788777034fdc6ce4b326299b511cb8"
+  },
+  "fetched_at": "2026-09-14T14:08:53+00:00",
+  "source_snapshot_sha256": "85d8e4c5ce79e052085a74cc4c0a16d1b7e0900616fbbef3b5329304bd9b15eb",
+  "images": {},
+  "local_only": true
+}

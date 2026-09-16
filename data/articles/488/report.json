@@ -1,0 +1,39 @@
+{
+  "metadata": {
+    "id": "488",
+    "title": "科学空间：2010年3月重要天象",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/488",
+    "date": "2010-02-28",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "source_dom_exact": true,
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "attributes_exact": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 0,
+    "display_formula_count": 0,
+    "image_count": 9,
+    "heading_count": 0,
+    "code_block_count": 0,
+    "source_text_sha256": "37bc863bf0fb762345d7a3769e298f1decb6d78b0f29489ae4b27ee0f46beac3",
+    "output_text_sha256": "37bc863bf0fb762345d7a3769e298f1decb6d78b0f29489ae4b27ee0f46beac3",
+    "latex_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "body_sha256": "b4ea9f2e82a90b0c3bf384e659d0b19ffcc44f5586dfef01ede9eb091dea850a",
+    "converter_version": 1,
+    "format": "html-v1",
+    "source_warnings": [],
+    "fallback_reason": "Standard Markdown round trip changed source structure",
+    "markdown_sha256": "00be5aecd4bc540323d46328f7a5e7b632837c449b975e191900d8df1629c0b3"
+  },
+  "fetched_at": "2026-09-14T14:39:52+00:00",
+  "source_snapshot_sha256": "2ecaebe48d955b011183565bb5b8c09222f112366e753b2a82bf6af75410125c",
+  "images": {},
+  "local_only": true
+}

@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "1205",
+    "title": "[SETI-50周年]茫茫宇宙觅知音",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/1205",
+    "date": "2011-02-03",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 6,
+    "display_formula_count": 1,
+    "image_count": 10,
+    "heading_count": 0,
+    "code_block_count": 0,
+    "source_text_sha256": "03ebff65ba8cc446ddcb80c94737f0dd672bbf2865aef5cdf09adb5f9eb56c7d",
+    "output_text_sha256": "03ebff65ba8cc446ddcb80c94737f0dd672bbf2865aef5cdf09adb5f9eb56c7d",
+    "latex_sha256": "598bbe45e45cacded77b3504931df758d5da74a7d364e5a0d0e2d46aedf5be13",
+    "body_sha256": "6935a9351536c412826ed1254347c3f6fb28fd28774bb18ca263165a630ba43d",
+    "converter_version": 1,
+    "markdown_sha256": "0f39820361d9503842566a8cc194de3f753c325bb078491c0ef73a8af0e53732"
+  },
+  "fetched_at": "2026-09-14T14:24:44+00:00",
+  "source_snapshot_sha256": "f3a2db9fd3f670348a985043cfae511fb4a31222a387e7e7d05d57719e4b3d9b",
+  "images": {},
+  "local_only": true
+}

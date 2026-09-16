@@ -1,0 +1,16 @@
+<div class="PostContent" id="PostContent">
+<p>这篇文章很简短，主要描述的是一个很有用、也不复杂、但是我居然这么久才发现的事实～</p><p>在<a href="/archives/6024" target="_blank">《深度学习的互信息：无监督提取特征》</a>一文中，我们通过先验分布和最大化互信息两个loss的加权组合来得到Deep INFOMAX模型最后的loss。在那篇文章中，虽然把故事讲完了，但是某种意义上来说，那只是个拼凑的loss。而本文则要证明那个loss可以由变分自编码器自然地导出来。</p><h2 id="过程">过程</h2><p>不厌其烦地重复一下，变分自编码器（VAE）需要优化的loss是<br/>
+\begin{equation}\begin{aligned}&amp;KL(\tilde{p}(x)p(z|x)\Vert q(z)q(x|z))\\<br/>
+=&amp;\iint \tilde{p}(x)p(z|x)\log \frac{\tilde{p}(x)p(z|x)}{q(x|z)q(z)} dzdx\end{aligned}\end{equation}<br/>
+相关的论述在本博客已经出现多次了。VAE中既包含编码器，又包含解码器，如果我们只需要编码特征，那么再训练一个解码器就显得很累赘了。所以重点是怎么将解码器去掉。</p><p>其实再简单不过了，把VAE的loss分开两部分<br/>
+\begin{equation}\begin{aligned}&amp;KL(\tilde{p}(x)p(z|x)\Vert q(z)q(x|z))\\<br/>
+=&amp;\iint \tilde{p}(x)p(z|x)\log \frac{p(z|x)}{q(z)} dzdx-\iint \tilde{p}(x)p(z|x)\log \frac{q(x|z)}{\tilde{p}(x)} dzdx\end{aligned}\end{equation}<br/>
+第一项是先验分布的KL散度，第二项的$\log \frac{q(x|z)}{\tilde{p}(x)}$其实不也就是$x,z$的点互信息吗？假如$q(x|z)$具有无限的拟合能力，最终必然也会有$\tilde{p}(x)p(z|x) = q(x|z)p(z)$（贝叶斯公式），所以第二项也就是<br/>
+\begin{equation}KL(q(x|z)p(z)\Vert \tilde{p}(x)p(z))=KL(\tilde{p}(x)p(z|x)\Vert \tilde{p}(x)p(z))\end{equation}<br/>
+就是$x,z$两个随机变量的互信息了，前面的负号意味着我们要最大化互信息。</p><p>剩下的处理过程就跟<a href="/archives/6024" target="_blank">《深度学习的互信息：无监督提取特征》</a>一样了，略。</p><h2 id="结语">结语</h2><p>开头已经说了，这篇文章会很简短，没有什么内容。主要目的就是给出变分自编码器的loss的新理解（最小化先验分布 + 最大化互信息），然后就可以自然而言地导出Deep INFOMAX的loss。</p><p>如果我还没有写<a href="/archives/6024" target="_blank">《深度学习的互信息：无监督提取特征》</a>，那么我肯定会用这个出发点来讲解Deep INFOMAX，不过既然那篇文章都写了好几天了，所以只好另开这个简短的小文，来补充说明一下～</p>
+
+
+
+
+
+</div>

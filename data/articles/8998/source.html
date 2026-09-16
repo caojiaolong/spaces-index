@@ -1,0 +1,38 @@
+<div class="PostContent" id="PostContent">
+<p>大概在1年前，我们提出了<a href="/archives/8265" target="_blank">旋转位置编码（RoPE）</a>，并发布了对应的预训练模型<a href="https://github.com/ZhuiyiTechnology/roformer" target="_blank">RoFormer</a>。随着时间的推移，RoFormer非常幸运地得到了越来越多的关注和认可，比如EleutherAI新发布的<a href="https://github.com/kingoflolz/mesh-transformer-jax/#gpt-j-6b" target="_blank">60亿</a>和<a href="https://blog.eleuther.ai/announcing-20b/" target="_blank">200亿</a>参数的GPT模型中就用上了RoPE位置编码，Google新提出的<a href="/archives/8934" target="_blank">FLASH</a>模型论文中则明确指出了RoPE对Transformer效果有明显的提升作用。</p><p>与此同时，我们也一直在尝试继续加强RoFormer模型，试图让RoFormer的性能“更上一层楼”。经过近半年的努力，我们自认为取得了还不错的成果，因此将其作为“RoFormerV2”正式发布：</p><blockquote class="cite"><div><strong>Github：<a href="https://github.com/ZhuiyiTechnology/roformer-v2" target="_blank">https://github.com/ZhuiyiTechnology/roformer-v2</a></strong></div></blockquote><p></p><h2 id="极限探索">极限探索</h2><p>在预训练模型兴起之后，不少研究人员都对一个问题相当感兴趣：预训练模型的极限在哪里？当然，“极限”这个词含义很丰富，以GPT3为代表的一系列工作试图探索的是参数量、数据量的极限，而微软近来提出的<a href="/archives/8978" target="_blank">DeepNet</a>则探究的是深度的极限。对于我们来说，我们更想知道同一参数量下的性能极限，试图最充分地“压榨”预训练模型的性能，RoFormerV2正是这一理念的产物。</p><p>简单来说，RoFormerV2先在RoFormer的基础上对模型结构做了适当的简化，从而获得了一定的速度提升。训练方面，除了进行常规的无监督MLM预训练外，我们还收集了20多G的标注数据，进行了有监督的多任务预训练。在有监督式训练之下，模型效果获得了长足的提升，基本上实现了同一参数量下速度和效果的最优解。</p><p>特别地，3亿参数量的RoFormer large，在<a href="https://www.cluebenchmarks.com/rank.html" target="_blank">CLUE榜单</a>上超过了若干10亿+参数量的模型，做到了第5名，它也是榜上前5名中参数量最少的模型：<br/>
+</p><div class="pic-container"><div class="typecho-caption aligncenter" style="max-width: 600px"><div style="margin: 5px"><a href="/usr/uploads/2022/03/1268810640.png" target="_blank" title="点击查看原图"><img alt="RoFormerV2 large在CLUE上的“成绩单”" src="/usr/uploads/2022/03/1268810640.png" style="max-width: 100%"/></a></div><p class="typecho-caption-text">RoFormerV2 large在CLUE上的“成绩单”</p></div></div><h2 id="模型介绍">模型介绍</h2><p>相比RoFormer，RoFormerV2的主要改动是简化模型结构、增加训练数据以及加入有监督训练，这些改动能让RoFormerV2最终取得了速度和效果的“双赢”。</p><h3 id="结构的简化">结构的简化</h3><p>在结构上，RoFormerV2主要去掉了模型的所有Bias项，以及Layer Norm换成了简单的RMS Norm，并且去掉了RMS Norm的gamma参数。这些改动的灵感主要来自Google的<a href="https://papers.cool/arxiv/1910.10683" target="_blank">T5</a>模型。</p><p>大家的潜意识里可能会觉得Bias项以及Layer Norm的beta和gamma参数计算量都很小，至少对速度来说是无关痛痒的。但事实出乎我们的意料：去掉这些看似“无关痛痒”的参数外，RoFormerV2的训练速度获得了明显的提升！</p><p>一些参考数据如下（RoFormer和RoBERTa速度接近，就不列出来了，base版的测试显卡为3090，large版的测试显卡为A100）：<br/>
+\begin{array}{c|cc|cc}<br/>
+\hline<br/>
+&amp; \text{序列长度} &amp; \text{训练速度} &amp; \text{序列长度} &amp; \text{训练速度}  \\<br/>
+\hline<br/>
+\text{RoBERTa base} &amp; 128 &amp; 1.0\text{x} &amp; 512 &amp; 1.0\text{x} \\<br/>
+\text{RoFormerV2 base} &amp; 128 &amp; 1.3\text{x} &amp; 512 &amp; 1.2\text{x}\\<br/>
+\hline<br/>
+\text{RoBERTa large} &amp; 128 &amp; 1.0\text{x} &amp; 512 &amp; 1.0\text{x} \\<br/>
+\text{RoFormerV2 large} &amp; 128 &amp; 1.3\text{x} &amp; 512 &amp; 1.2\text{x} \\<br/>
+\hline<br/>
+\end{array}</p><h3 id="无监督训练">无监督训练</h3><p>同RoFormer一样，RoFormerV2也是先通过MLM任务进行无监督预训练，不同的地方主要有两点：</p><blockquote><p>1、RoFormer是在RoBERTa权重基础上进行训练，RoFormerV2是从零训练；</p><p>2、RoFormer的无监督训练只有30多G数据，RoFormerV2则用到了280G数据。</p></blockquote><p>从零训练相比于在已有权重基础上继续训练会更加困难，主要体现在Post Norm结构更难收敛。为此，我们提出了一种新的训练技术：将残差设计为<br/>
+\begin{equation}\boldsymbol{x}_{t+1} = \text{Norm}(\boldsymbol{x}_t + \alpha F(\boldsymbol{x}_t)) \end{equation}<br/>
+其中$\alpha$初始化为0并线性地缓慢增加到1，相关讨论还可以参考<a href="/archives/8620" target="_blank">《浅谈Transformer的初始化、参数化与标准化》</a>。该方案跟ReZero相似，不同的是ReZero中$\alpha$是可训练参数且去掉$\text{Norm}$操作，而实验显示我们的改动相比ReZero的最终效果更好，几乎是DeepNet之前的最优解。</p><h3 id="多任务训练">多任务训练</h3><p>前面提到RoFormerV2的结构有所简化以获得速度的提升，但由于“没有免费的午餐”，同样的训练设置之下RoFormerV2相比RoBERTa、RoFormer的效果会有轻微下降。为了弥补回这部分下降的效果，更有效地挖掘模型潜力，我们补充了有监督式的多任务预训练。</p><p>具体来说，我们收集了77个共计20G的标注数据集，构建了92个任务进行多任务训练，这些数据集涵盖文本分类、文本匹配、阅读理解、信息抽取、指代消解等常见自然语言理解任务，以求模型能获得比较全面的自然语言理解能力。为了完成训练，我们在bert4keras基础上进一步开发了一个多任务训练框架，灵活支持不同格式的任务进行混合训练，并整合了梯度归一化等技术（参考<a href="/archives/8896" target="_blank">《多任务学习漫谈（二）：行梯度之事》</a>）来确保每个任务都达到尽可能优的效果。</p><p>RoFormerV2并不是第一个尝试多任务预训练的模型，在它之前有<a href="https://papers.cool/arxiv/1901.11504" target="_blank">MT-DNN</a>、<a href="https://papers.cool/arxiv/1910.10683" target="_blank">T5</a>以及前段时间的<a href="https://papers.cool/arxiv/2201.06910" target="_blank">ZeroPrompt</a>都已经肯定过多任务预训练的价值，而我们主要是在中文上进行了充分的验证并首先进行了开源。</p><h2 id="实验结果">实验结果</h2><p>我们主要在CLUE榜单上对比效果：<br/>
+$$\small{\begin{array}{c|ccccccccccc}<br/>
+\hline<br/>
+&amp; \text{iflytek} &amp; \text{tnews} &amp; \text{afqmc} &amp; \text{cmnli} &amp; \text{ocnli} &amp; \text{wsc} &amp; \text{csl} &amp; \text{cmrc2018} &amp; \text{c3} &amp; \text{chid} &amp; \text{cluener}\\<br/>
+\hline<br/>
+\text{BERT base} &amp; 61.19 &amp; 56.29 &amp; 73.37 &amp; 79.37 &amp; 71.73 &amp; 73.85 &amp; 84.03 &amp; 72.10 &amp; 61.33 &amp; 85.13 &amp; 78.68\\<br/>
+\hline<br/>
+\text{RoBERTa base} &amp; 61.12 &amp; 58.35 &amp; 73.61 &amp; 80.81 &amp; 74.27 &amp; 82.28 &amp; \textbf{85.33} &amp; 75.40 &amp; 67.11 &amp; 86.04 &amp; 79.38\\<br/>
+\text{RoBERTa large} &amp; 60.58 &amp; 55.51 &amp; 75.14 &amp; \textbf{82.16} &amp; 75.47 &amp; 81.97 &amp; 85.07 &amp; 78.85 &amp; 76.74 &amp; \textbf{88.65} &amp; \textbf{80.19}\\<br/>
+\hline<br/>
+\text{RoFormer base} &amp; 61.08 &amp; 56.74 &amp; 73.82 &amp; 80.97 &amp; 73.10 &amp; 80.57 &amp; 84.93 &amp; 73.50 &amp; 66.29 &amp; 86.30 &amp; 79.69\\<br/>
+\hline<br/>
+\text{RoFormerV2 small} &amp; 60.46 &amp; 51.46 &amp; 72.39 &amp; 76.93 &amp; 67.70 &amp; 69.11 &amp; 83.00 &amp; 71.80 &amp; 64.49 &amp; 77.35 &amp; 78.20\\<br/>
+\text{RoFormerV2 base} &amp; 62.50 &amp; \textbf{58.74} &amp; 75.63 &amp; 80.62 &amp; 74.23 &amp; 82.71 &amp; 84.17 &amp; 77.00 &amp; 75.57 &amp; 85.95 &amp; 79.87\\<br/>
+\text{RoFormerV2 large} &amp; \textbf{62.65} &amp; 58.06 &amp; \textbf{76.95} &amp; 81.20 &amp; \textbf{75.83} &amp; \textbf{88.03} &amp; 84.97 &amp; \textbf{80.50} &amp; \textbf{78.34} &amp; 87.68 &amp; \textbf{80.17}\\<br/>
+\hline<br/>
+\end{array}}$$</p><p>可以看到，多任务训练的提升是相当可观的，在大多数任务上RoFormerV2不仅“追回”了结构简化带来的效果差距，还有一定的提升，平均来说算得上达到了同级模型的最优效果。另外，CMNLI和CHID两个任务上，RoFormerV2都不如RoBERTa，这是因为这两个任务都训练数据都非常多（数十万级别），当训练数据量足够大时，模型的效果主要取决于模型的容量，多任务训练带来的提升比较小。</p><p>所以，总的来说就是：如果你的任务类型比较常规，数据量不是特别大，那么RoFormerV2往往是一个不错的选择；如果你希望加快一点训练速度，那么也可以选择RoFormerV2；但如果你的任务数据量特别大，那么RoFormerV2通常不会有优势。</p><h2 id="本文小结">本文小结</h2><p>本文主要对我们新发布的RoFormerV2模型做了基本的介绍，它主要通过结构的简化来提升速度，并通过无监督预训练和有监督预训练的结合来提升效果，从而达到了速度与效果的“双赢”。</p>
+
+
+
+
+
+</div>

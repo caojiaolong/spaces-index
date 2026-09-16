@@ -1,0 +1,17 @@
+{
+  "metadata": {
+    "id": "3360",
+    "title": "文本情感分类（一）：传统模型",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/3360",
+    "date": "2015-06-22",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "fetched_at": "2026-09-14T13:45:44+00:00",
+  "source_snapshot_sha256": "cb8d2ec1c8c31dad08c8e3897a4ed5ec1d9735f7d7e5e0525d71156ae7050a13",
+  "validators": {
+    "etag": null,
+    "last_modified": null
+  }
+}

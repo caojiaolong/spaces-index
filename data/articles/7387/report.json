@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "7387",
+    "title": "AdaX优化器浅析（附开源实现）  ",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/7387",
+    "date": "2020-05-11",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 40,
+    "display_formula_count": 4,
+    "image_count": 0,
+    "heading_count": 4,
+    "code_block_count": 0,
+    "source_text_sha256": "7b097df6234f7260247cd909d85f0f50438a0a7516768118c9b48014b948ccac",
+    "output_text_sha256": "7b097df6234f7260247cd909d85f0f50438a0a7516768118c9b48014b948ccac",
+    "latex_sha256": "12cf2970a7979757504fec5cddd0a96dba777f4224d4e55f2b2330bdce084f30",
+    "body_sha256": "dce01c6e1b51fe677f510e1816db1a97d5ab2bca286bced66112daa75b275892",
+    "converter_version": 1,
+    "markdown_sha256": "89ee8b702e6d7f1803e77d67ef80df9798d037744cc7f82897e735f3cfaca437"
+  },
+  "fetched_at": "2026-09-14T13:13:57+00:00",
+  "source_snapshot_sha256": "8455f46da8b77e96190a13b483f204f5d57f4d07b35b5829aa5ced8eb3281641",
+  "images": {},
+  "local_only": true
+}

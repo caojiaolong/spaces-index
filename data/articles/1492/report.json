@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "1492",
+    "title": "[遐想]细胞的进化是一次次“大吞并”？",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/1492",
+    "date": "2011-11-06",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 0,
+    "display_formula_count": 0,
+    "image_count": 1,
+    "heading_count": 0,
+    "code_block_count": 0,
+    "source_text_sha256": "4fa81bfc6fcb7be4f805c97cef5c8d93641a632f8678f35f634c055e7684b7df",
+    "output_text_sha256": "4fa81bfc6fcb7be4f805c97cef5c8d93641a632f8678f35f634c055e7684b7df",
+    "latex_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "body_sha256": "a31c4f64057c7325450e52284bab57a63a0440c0a15d2c97745ec595150d1672",
+    "converter_version": 1,
+    "markdown_sha256": "4ae12889e258cae03fe2fac5108a76ea2865289fbb9146122b119e09366db8c5"
+  },
+  "fetched_at": "2026-09-14T14:16:58+00:00",
+  "source_snapshot_sha256": "115a217abfe1525686e1ee09ad59a83ce745f5b5ad6ffb9604bd4ec9e747ffdc",
+  "images": {},
+  "local_only": true
+}

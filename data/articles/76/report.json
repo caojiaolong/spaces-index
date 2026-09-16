@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "76",
+    "title": "【NASA每日一图】月夜流星",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/76",
+    "date": "2009-08-16",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 0,
+    "display_formula_count": 0,
+    "image_count": 1,
+    "heading_count": 0,
+    "code_block_count": 0,
+    "source_text_sha256": "7fe780ef803e731f66d573643e39fcd7392ae9eec2dc4b41a9f43908d1963342",
+    "output_text_sha256": "7fe780ef803e731f66d573643e39fcd7392ae9eec2dc4b41a9f43908d1963342",
+    "latex_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "body_sha256": "c59119b99a65a31839abd669bbee7ce790abf956f1e9587ef40a63f21bcbe1f5",
+    "converter_version": 1,
+    "markdown_sha256": "639e35b90ab15f4c9639c23be9addb2b29d15f2886363b21f62aee2f94a6451d"
+  },
+  "fetched_at": "2026-09-14T14:59:08+00:00",
+  "source_snapshot_sha256": "bcd2d73f399d8651701affb5c4b6f9f973c05abd6dc3276e347a4d2711359690",
+  "images": {},
+  "local_only": true
+}

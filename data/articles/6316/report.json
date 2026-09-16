@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "6316",
+    "title": "能量视角下的GAN模型（一）：GAN＝“挖坑”＋“跳坑”",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/6316",
+    "date": "2019-01-30",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 59,
+    "display_formula_count": 6,
+    "image_count": 7,
+    "heading_count": 14,
+    "code_block_count": 0,
+    "source_text_sha256": "db6666947014c65b70b7eb8d8288599d317720a24b81acc3eff42f3d901b5b07",
+    "output_text_sha256": "db6666947014c65b70b7eb8d8288599d317720a24b81acc3eff42f3d901b5b07",
+    "latex_sha256": "1359e6c8a6effa0ab62a364c0d508c4ea38adc553bb73efd3744d42a9a6a2157",
+    "body_sha256": "c8314758643ce9578c53c7bc16461fdae95938be0042ec3182600658e31f2933",
+    "converter_version": 1,
+    "markdown_sha256": "ca8143193d4229caad375ef38beb768de57f26c52c5e993f21c0b57985e80e11"
+  },
+  "fetched_at": "2026-09-14T13:21:49+00:00",
+  "source_snapshot_sha256": "83197296a9d8dd55f19bce521f77b828a4af09f66199c1362b29429dfb67d8cc",
+  "images": {},
+  "local_only": true
+}

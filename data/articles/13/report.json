@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "13",
+    "title": "古老的火山爆发造成地球冰期？",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/13",
+    "date": "2009-07-08",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 0,
+    "display_formula_count": 0,
+    "image_count": 1,
+    "heading_count": 0,
+    "code_block_count": 0,
+    "source_text_sha256": "96a4cc9dd42baf5e6f03112690c5e985684eade7c40e49eaf14c602dde8cd7fa",
+    "output_text_sha256": "96a4cc9dd42baf5e6f03112690c5e985684eade7c40e49eaf14c602dde8cd7fa",
+    "latex_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "body_sha256": "71354bbbe14b0ab209829a215a0f3af241232d49942a8474926d03a1ab52a5cf",
+    "converter_version": 1,
+    "markdown_sha256": "e0494930b865b4a4191fa1ca4df073edd563c410d2e3e32849721d3abeff32d2"
+  },
+  "fetched_at": "2026-09-14T15:06:39+00:00",
+  "source_snapshot_sha256": "cfc0260e733d846396d0b050843b465fc3804e0c6cc84d2c8b117c6ae2b27a09",
+  "images": {},
+  "local_only": true
+}

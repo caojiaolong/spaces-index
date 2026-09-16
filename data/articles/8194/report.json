@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "8194",
+    "title": "【搜出来的文本】⋅（四）通过增、删、改来用词造句",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/8194",
+    "date": "2021-02-25",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 79,
+    "display_formula_count": 7,
+    "image_count": 0,
+    "heading_count": 7,
+    "code_block_count": 0,
+    "source_text_sha256": "b73c03097960610992763ddc8e6e805f8f679e402fe7a1b18df38173943897f1",
+    "output_text_sha256": "b73c03097960610992763ddc8e6e805f8f679e402fe7a1b18df38173943897f1",
+    "latex_sha256": "d6388ce44ade25dc1a41ea400400368296f640c5bdd57452eb07f2ca3c624230",
+    "body_sha256": "a4406a20777e8c2c8ab566e1220867accfd556cfd06747fb055fb4ff094e2f57",
+    "converter_version": 1,
+    "markdown_sha256": "bc45a6ec744bf4bec185513610b6bf3ba38c3abc80def622fb9fb51c24b74156"
+  },
+  "fetched_at": "2026-09-14T13:08:00+00:00",
+  "source_snapshot_sha256": "3a5a1da9f2d0925ad1baf8181b64ecba010c94f7e95c45ad2cb9318af6e12c4f",
+  "images": {},
+  "local_only": true
+}

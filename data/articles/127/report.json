@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "127",
+    "title": "【NASA每日一图】本星系群远后方的星系",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/127",
+    "date": "2009-09-20",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 0,
+    "display_formula_count": 0,
+    "image_count": 1,
+    "heading_count": 0,
+    "code_block_count": 0,
+    "source_text_sha256": "d8929622985a5349d3ef9ffabcd0faaa36a249b71725437008def9e9e0b57885",
+    "output_text_sha256": "d8929622985a5349d3ef9ffabcd0faaa36a249b71725437008def9e9e0b57885",
+    "latex_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "body_sha256": "5cb647f302eac722f60fce1ce64ec1e1e9ebf53d94be3790f03baf43aa295c06",
+    "converter_version": 1,
+    "markdown_sha256": "24abd73e6cc78b5c962149a556c0b7f8fee5f3fc1428bf9a074a8a5cb30dd8f1"
+  },
+  "fetched_at": "2026-09-14T14:52:47+00:00",
+  "source_snapshot_sha256": "439a43ffb147f80a5af33b7df5d19121c857becceb0ae1d32801752f8b59d733",
+  "images": {},
+  "local_only": true
+}

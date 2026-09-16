@@ -1,0 +1,17 @@
+{
+  "metadata": {
+    "id": "6671",
+    "title": "基于DGCNN和概率图的轻量级信息抽取模型",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/6671",
+    "date": "2019-06-03",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "fetched_at": "2026-09-14T13:19:42+00:00",
+  "source_snapshot_sha256": "9cbf8b8ec804128f24a98c477de6588d5ddff875cae7d5ca579dbf710ea66c67",
+  "validators": {
+    "etag": null,
+    "last_modified": null
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "67",
+    "title": "广东珠海之旅（图片）",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/67",
+    "date": "2009-08-11",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 0,
+    "display_formula_count": 0,
+    "image_count": 5,
+    "heading_count": 0,
+    "code_block_count": 0,
+    "source_text_sha256": "f1e6ce9e1e26be9bc8a5de5225b7655353972ed1ab1391630b85cc74d9ef02fc",
+    "output_text_sha256": "f1e6ce9e1e26be9bc8a5de5225b7655353972ed1ab1391630b85cc74d9ef02fc",
+    "latex_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "body_sha256": "147dca80573e6d0ee0360eb89faf6f458a8a16261d9e95134a6e5ffe4e05b021",
+    "converter_version": 1,
+    "markdown_sha256": "1f97edb7bd752b4bf42288394204679bbb49cd508532dcac2c9ec12caf3dbac4"
+  },
+  "fetched_at": "2026-09-14T15:00:09+00:00",
+  "source_snapshot_sha256": "2c02012a2a9e6c5be979da6d70fcef7fab04850f7d7d2819c53b6793bfb249cc",
+  "images": {},
+  "local_only": true
+}

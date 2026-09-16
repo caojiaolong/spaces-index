@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "3731",
+    "title": "斯特灵(stirling)公式与渐近级数",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/3731",
+    "date": "2016-04-15",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 54,
+    "display_formula_count": 17,
+    "image_count": 0,
+    "heading_count": 3,
+    "code_block_count": 0,
+    "source_text_sha256": "a1dc1b617619702ad2db5d4fde926f0d4a5792ef3289783495e3cdb3dbe109fd",
+    "output_text_sha256": "a1dc1b617619702ad2db5d4fde926f0d4a5792ef3289783495e3cdb3dbe109fd",
+    "latex_sha256": "a249053407e476848465e5577ecc5926212dd81eebb6ff50fc7d204a535d3cd9",
+    "body_sha256": "2ab55f29549c41c28017e8ca5bc1d6cd8f3523b501b5018b0a301452cd6c68de",
+    "converter_version": 1,
+    "markdown_sha256": "278dcdf4c622333cdbb4d16a992b845383f9a1b23ddb3ad4a57d83eae2190b76"
+  },
+  "fetched_at": "2026-09-14T13:41:22+00:00",
+  "source_snapshot_sha256": "fc2af29d9c66c56419f947c3eae651f80e39292863cd254dd69599a7450f95b5",
+  "images": {},
+  "local_only": true
+}

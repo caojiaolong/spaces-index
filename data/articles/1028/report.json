@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "1028",
+    "title": "太阳帆技术的粗浅分析（补充）",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/1028",
+    "date": "2010-10-30",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 7,
+    "display_formula_count": 4,
+    "image_count": 0,
+    "heading_count": 0,
+    "code_block_count": 0,
+    "source_text_sha256": "e4d2b9ba1f33b0dbcb5008f76aeabd5b1b10510d623baf4dd8df0f0a75e1e7cb",
+    "output_text_sha256": "e4d2b9ba1f33b0dbcb5008f76aeabd5b1b10510d623baf4dd8df0f0a75e1e7cb",
+    "latex_sha256": "583520ba0711929fafd1100e207bc3dfe50da655cdb8c11a68c7b305e4cdb992",
+    "body_sha256": "0d5884aa0f6d94ac122434feaa8a5a3ad04482f110efed0f990544ff48e81bd9",
+    "converter_version": 1,
+    "markdown_sha256": "5946729731b12b28c22c079225223b131165fd816fadf35fd4625b7eb86f8a13"
+  },
+  "fetched_at": "2026-09-14T14:28:03+00:00",
+  "source_snapshot_sha256": "b2834ae9cfb89e756673c4274f96a5a9f73f76e6c3085b365470cb5bc7fe3a9e",
+  "images": {},
+  "local_only": true
+}

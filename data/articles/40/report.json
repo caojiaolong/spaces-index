@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "40",
+    "title": "生活中的趣味数学：同一天生日概率有多大",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/40",
+    "date": "2009-07-29",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 0,
+    "display_formula_count": 0,
+    "image_count": 2,
+    "heading_count": 0,
+    "code_block_count": 0,
+    "source_text_sha256": "1df919434e7cb714e388fdcf11dfb7574a9fb81209f975d2416deaee14da38dc",
+    "output_text_sha256": "1df919434e7cb714e388fdcf11dfb7574a9fb81209f975d2416deaee14da38dc",
+    "latex_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "body_sha256": "3c2b7448a7cf19de493a239a0ec61229d1e3b5157afa44808823f3b5ad7cce60",
+    "converter_version": 1,
+    "markdown_sha256": "12ebff4b70138734daff583dfd539bd7d96b5201a85e6fe9b7c4a91e3ac49775"
+  },
+  "fetched_at": "2026-09-14T15:03:12+00:00",
+  "source_snapshot_sha256": "747ce010d053623db14934fff52be1f73cc6af4566ff568c8aea7c16c3e65554",
+  "images": {},
+  "local_only": true
+}

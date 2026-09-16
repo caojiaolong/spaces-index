@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "9708",
+    "title": "Transformer升级之路：12、无限外推的ReRoPE？",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/9708",
+    "date": "2023-08-07",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 47,
+    "display_formula_count": 13,
+    "image_count": 0,
+    "heading_count": 5,
+    "code_block_count": 0,
+    "source_text_sha256": "52fa05d2a098cbf227fa7f1c674a38599d1725e9092911a622d4b0a3d3612aa2",
+    "output_text_sha256": "52fa05d2a098cbf227fa7f1c674a38599d1725e9092911a622d4b0a3d3612aa2",
+    "latex_sha256": "f24f5c9cb22d22d7c263fa4f6143755ab97b413f31aae64dcd5a1fcc46fd5226",
+    "body_sha256": "c98166938864945d36cfdea73b425b5e634b437b6674beb534f994e2dcbcb8ac",
+    "converter_version": 1,
+    "markdown_sha256": "98162e45dfaa035b9f38197bf1696d6f8dace10767a4c1074de001381cda2319"
+  },
+  "fetched_at": "2026-09-14T12:52:54+00:00",
+  "source_snapshot_sha256": "ff77f397f3c51c79853188f69150ad1b6a2393c7e3d539743d928eadaf177e04",
+  "images": {},
+  "local_only": true
+}

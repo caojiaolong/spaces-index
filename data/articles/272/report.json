@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "272",
+    "title": "人不能忘本|我的数学竞赛题",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/272",
+    "date": "2009-11-07",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 0,
+    "display_formula_count": 0,
+    "image_count": 11,
+    "heading_count": 0,
+    "code_block_count": 0,
+    "source_text_sha256": "9f1f20e501db3d9e7d37b0e65ddeaf2de3754a56b0e1d533812e5324e16768d8",
+    "output_text_sha256": "9f1f20e501db3d9e7d37b0e65ddeaf2de3754a56b0e1d533812e5324e16768d8",
+    "latex_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "body_sha256": "8db222551681d7b703e9f6ebacdc5a7481f5ba9f4f1950ec4c7cefb85b29f86a",
+    "converter_version": 1,
+    "markdown_sha256": "3ba19aa1ea4c64c61c3c25ccc837a02f590fd5c76060e406b692af3719a8f2cd"
+  },
+  "fetched_at": "2026-09-14T14:46:24+00:00",
+  "source_snapshot_sha256": "8e51a872a5caf4bab5c4bc038fe4ae4c9b4e8602c4b9426b9cdd4f09087abe0b",
+  "images": {},
+  "local_only": true
+}

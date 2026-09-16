@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "2797",
+    "title": "七夕-雨",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/2797",
+    "date": "2014-08-02",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 0,
+    "display_formula_count": 0,
+    "image_count": 0,
+    "heading_count": 0,
+    "code_block_count": 0,
+    "source_text_sha256": "28d4f7d72ed21b861ff956edc84459aae1eccbf2f61010556229b0e3c29d5566",
+    "output_text_sha256": "28d4f7d72ed21b861ff956edc84459aae1eccbf2f61010556229b0e3c29d5566",
+    "latex_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "body_sha256": "c40212ffc60c47c57c13bbbb879dfd9f73b1f4d09294643890486f0536aefab5",
+    "converter_version": 1,
+    "markdown_sha256": "9409eef3b45caca312ed8358d4724a6453e20382185163678fc490792fd1967a"
+  },
+  "fetched_at": "2026-09-14T13:52:51+00:00",
+  "source_snapshot_sha256": "2e36f1cf55e0c024f996970ad77b48cfd04994b2decb8f5b18e1f3033f1f6073",
+  "images": {},
+  "local_only": true
+}

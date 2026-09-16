@@ -1,0 +1,39 @@
+{
+  "metadata": {
+    "id": "43",
+    "title": "冥王星呀，你究竟是什么？",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/43",
+    "date": "2009-07-30",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "source_dom_exact": true,
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "attributes_exact": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 0,
+    "display_formula_count": 0,
+    "image_count": 4,
+    "heading_count": 0,
+    "code_block_count": 0,
+    "source_text_sha256": "f3e5714b182444b6c449f46402a8376106fdd0822a9559718cc19ebf5f2fd2d9",
+    "output_text_sha256": "f3e5714b182444b6c449f46402a8376106fdd0822a9559718cc19ebf5f2fd2d9",
+    "latex_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "body_sha256": "5d95921663d6ed1c2e5011157b5984073bdc8b0a2b7b7e55b6c23a5107818fb4",
+    "converter_version": 1,
+    "format": "html-v1",
+    "source_warnings": [],
+    "fallback_reason": "Standard Markdown round trip changed source structure",
+    "markdown_sha256": "4afa32bf2b79a89074f119e83060a65b5e3d87260a069165816611d799e7be78"
+  },
+  "fetched_at": "2026-09-14T15:02:52+00:00",
+  "source_snapshot_sha256": "6a3c5351c1f1e71ff7477c7c4aeaf27c5d521955a0bdfe651ba0503342467ca6",
+  "images": {},
+  "local_only": true
+}

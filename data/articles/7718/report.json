@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "7718",
+    "title": "动手做个DialoGPT：基于LM的生成式多轮对话模型",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/7718",
+    "date": "2020-09-07",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 6,
+    "display_formula_count": 2,
+    "image_count": 2,
+    "heading_count": 5,
+    "code_block_count": 0,
+    "source_text_sha256": "c833ef440bdd04027a90aa3211656bdea24ac0383e30537d29dfac58e05c57d0",
+    "output_text_sha256": "c833ef440bdd04027a90aa3211656bdea24ac0383e30537d29dfac58e05c57d0",
+    "latex_sha256": "fff0b798670ba58ca28aba644829c87936734ac03502e074a9a49f1d24645c3f",
+    "body_sha256": "48ce31bc1bb61f7196dca75425568fc861b284f6dcfaa5a5bbb79fa6870148a9",
+    "converter_version": 1,
+    "markdown_sha256": "9318c2faa09649746e94277245d87b74538b6f1881bc2f7686c8a2e1bf6d13cc"
+  },
+  "fetched_at": "2026-09-14T13:11:35+00:00",
+  "source_snapshot_sha256": "c7c01a748c1c951809f7aff3ad1664df797adc5eb0fdce15b1e194dc829ca1dd",
+  "images": {},
+  "local_only": true
+}

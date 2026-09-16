@@ -1,0 +1,15 @@
+<div class="PostContent" id="PostContent">
+<p>印象中我在初一曾从一个美术生好朋友那里学到了一个画椭圆的方法：选取一个矩形，取一组邻边的中点，连接并切除得到的三角形；在剩下的五边形中，继续取邻边中点，连接，切除，得到一个如下图的图形；然后作一个尽可能与下图AG、GH、HI、IJ相切的弧，这个弧就大概为四分之一的椭圆了。<br/>
+</p><div class="pic-container"><div class="typecho-caption aligncenter" style="max-width: 100%"><div style="margin: 5px"><a href="/attachment/1472/" title="椭圆的美术画法.PNG"><img alt="椭圆的美术画法" src="/usr/uploads/2011/08/3444399889.png" style="max-width:100%"/></a></div><p class="typecho-caption-text">椭圆的美术画法</p></div></div><p>我以为只要无限对半分下去，就可以得到一个精确的椭圆。但很快我就推翻了这个结论，原因很简单，考虑下边的图形（边长为1的正方形），要是我的结论正确的话，那么这个图形应该收敛于一个四分之一的圆，它的弧长应该收敛于$\frac{\pi}{2}$。但是利用勾股定理算一下就会发现切出来的多边形的侧边长（除了两条最长的直角边）之和很快就会少于$\frac{\pi}{2}$。</p><p></p><div class="pic-container"><div class="typecho-caption aligncenter" style="max-width: 100%"><div style="margin: 5px"><a href="/attachment/1473/" title="三角半分正方形.PNG"><img alt="三角半分正方形" src="/usr/uploads/2011/08/1684550111.png" style="max-width:100%"/></a></div><p class="typecho-caption-text">三角半分正方形</p></div></div><p>那么这个对半分的极限会是什么图形呢？我原来以为会得到一条有趣的曲线，但前几天计算让我知道，这并不是什么令人兴奋的曲线——最终的结果是——<strong><font color="red">三角形ABC</font></strong>！对，这个切割方法居然可以把一半的正方形给切掉了。（幸好我的好朋友只进行了有限步的切割）下面我们来试着证明这个结论。</p><p>我们首先来看看这些点的分布规律。把D点当成原点，A点是(1,0)，C点是(0,1)，那么可以列出下表<br/>
+</p><div class="pic-container"><div class="typecho-caption aligncenter" style="max-width: 100%"><div style="margin: 5px"><a href="/attachment/1474/" title="类杨辉三角.PNG"><img alt="类杨辉三角" src="/usr/uploads/2011/08/586624532.png" style="max-width:100%"/></a></div><p class="typecho-caption-text">类杨辉三角</p></div></div><p>这是一个类似杨辉三角的数阵，其中每个坐标是上面两个相邻坐标的平均数；而两端是$(\frac{2^n-1}{2^n},0)$的形式。为了更清晰地看出规律，我们只看x坐标：</p><p></p><div class="pic-container"><div class="typecho-caption aligncenter" style="max-width: 100%"><div style="margin: 5px"><a href="/attachment/1475/" title="类杨辉三角2.PNG"><img alt="类杨辉三角2" src="/usr/uploads/2011/08/2470818973.png" style="max-width:100%"/></a></div><p class="typecho-caption-text">类杨辉三角2</p></div></div><p>不难看出，第(n+1)行的数字的分母都是$2^n$，而<u><font color="red">把相邻的两个分子求差，恰好是杨辉三角的第n行</font></u>，即第(n+1)行的第i个数为：<br/>
+$$\frac{2^n-C_n^0-C_n^1-...C_n^{i-1}}{2^n}$$</p><p>为了证明最终的曲线趋于一条直线，我们只需要证明中点坐标趋于$(1/2,1/2)$即可。为此，我们考虑第(2n+1)行的数字，其中点坐标为(k,k)，其中<br/>
+$$k=\frac{2^{2n}-C_{2n}^0-C_{2n}^1-...C_{2n}^n}{2^{2n}}$$</p><p>根据$C_{2n}^0+C_{2n}^1+C_{2n}^2+...+C_{2n}^{2n}=2^{2n}$，k可以改写成<br/>
+$$k=\frac{2^{2n}-\frac{2^{2n}+C_{2n}^n}{2}}{2^{2n}}=1/2-\frac{C_{2n}^n}{2^{2n+1}}$$</p><p>现在问题就在于当n趋于无穷时，$\frac{C_{2n}^n}{2^{2n+1}}$是否会趋于0。BoJone用手头上的科学计算器代入n=50计算，发现结果等于0.036...这并没有显示收敛的迹象，但计算器的极限只能算到n=50.于是没有办法，要另觅他法了。由于$C_{2n}^n=\frac{(2n)!}{(n!)^2}$，由<a href="/archives/1434/" target="_blank">斯特灵公式</a>：<br/>
+$$lim_{n\to \infty} \sqrt{2\pi n} (\frac{n}{e})^n //n! =1$$</p><p>于是$(n!)^2=2\pi n (\frac{n}{e})^{2n},(2n)! =2\sqrt{\pi n} (\frac{2n}{e})^{2n}$，即<br/>
+$$C_{2n}^n=2^{2n}\cdot \frac{1}{sqrt{\pi n}}$$</p><p>最后得到：$lim_{n\to \infty} \frac{C_{2n}^n}{2^{2n+1}}=lim_{n\to \infty} \frac{1}{2 sqrt{\pi n}}=0$</p><p>严格来讲，上述推导过程用等号是不对的。但是由于我们只是求极限，极限是具有传递性，因此这样写也没有多大问题。至此我们证明了切割后的图形的中点趋于$(1/2,1/2)$，即最后得到的是一条直线！</p>
+
+
+
+
+
+</div>

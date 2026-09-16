@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "2985",
+    "title": "集合的划分与贝尔数",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/2985",
+    "date": "2014-10-12",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 48,
+    "display_formula_count": 12,
+    "image_count": 0,
+    "heading_count": 0,
+    "code_block_count": 1,
+    "source_text_sha256": "7feecc6b1cbe47a1ddaecec19fb6e4fcb85faa8f0e5902b0623619e06c5e3f52",
+    "output_text_sha256": "7feecc6b1cbe47a1ddaecec19fb6e4fcb85faa8f0e5902b0623619e06c5e3f52",
+    "latex_sha256": "f23d4981b7119c3579fe9df85edfa1499031a0a5e2f464e0a4246127db7c5726",
+    "body_sha256": "71af124a9f6d35c26ece8646f1c914c28a6fdc28c78a45f990db323f5235cc63",
+    "converter_version": 1,
+    "markdown_sha256": "8c600735ce19d634cb567153eb8054c7fe5e0113474182daa22e02eff40d78db"
+  },
+  "fetched_at": "2026-09-14T13:50:43+00:00",
+  "source_snapshot_sha256": "570b910afaf4b44a4fbc42816695648188d8655cc23fa6b9b90cb999a6ac546d",
+  "images": {},
+  "local_only": true
+}

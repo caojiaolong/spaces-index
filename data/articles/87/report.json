@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "87",
+    "title": "2009年目视流星雨星历表",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/87",
+    "date": "2009-08-20",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 0,
+    "display_formula_count": 0,
+    "image_count": 1,
+    "heading_count": 0,
+    "code_block_count": 0,
+    "source_text_sha256": "b57e8e65c6270e90ae4ea6c74c4bda7c24150046b27ce43c36b880bf8db105b7",
+    "output_text_sha256": "b57e8e65c6270e90ae4ea6c74c4bda7c24150046b27ce43c36b880bf8db105b7",
+    "latex_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "body_sha256": "9ac9bc4557de5a19ad9085d5de6d6f3f8e193cd5f50f0bfe30e0a3337fae6d98",
+    "converter_version": 1,
+    "markdown_sha256": "f6ea26dd68fecabe988fdf07acf18887123391dd78b560efe9b309a8ebbf5668"
+  },
+  "fetched_at": "2026-09-14T14:57:42+00:00",
+  "source_snapshot_sha256": "a24f89bb0e4695e46728169446fc16d7f3599991bd709ebef37fcb8391fa208d",
+  "images": {},
+  "local_only": true
+}

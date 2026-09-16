@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "11719",
+    "title": "基于流式幂迭代的Muon实现：5. 延伸",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/11719",
+    "date": "2026-04-17",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 51,
+    "display_formula_count": 9,
+    "image_count": 0,
+    "heading_count": 6,
+    "code_block_count": 0,
+    "source_text_sha256": "5420a58ebaa809995f740bdfb092a11d003140d03cc6fb04d4ba8a8e28c6ff55",
+    "output_text_sha256": "5420a58ebaa809995f740bdfb092a11d003140d03cc6fb04d4ba8a8e28c6ff55",
+    "latex_sha256": "ec883ca8980b61242995e597d6b1cf586307d4ab831f6e9dd5f1ee40de64ef50",
+    "body_sha256": "e6fcba6ca32c1e4a937d5d65b52253bb5afd7e2b4f1034cc37ba46070f294f89",
+    "converter_version": 1,
+    "markdown_sha256": "aa9ef3d534653ba71c4053032bb09177b4dbe08c89a7478d1bd78a9062caf287"
+  },
+  "fetched_at": "2026-09-14T12:36:06+00:00",
+  "source_snapshot_sha256": "c2aefb59f534f5ea4bc997a5edb2e2dd1505e32efeef15e05a02f3d73daddcd7",
+  "images": {},
+  "local_only": true
+}

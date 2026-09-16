@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "407",
+    "title": "直上云霄的无穷指数方程",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/407",
+    "date": "2010-02-06",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 19,
+    "display_formula_count": 1,
+    "image_count": 0,
+    "heading_count": 0,
+    "code_block_count": 0,
+    "source_text_sha256": "5c85f849ed8ae8b7c8cc18cdbc48a09cf122b0aba5ed3917124201b47b6d288d",
+    "output_text_sha256": "5c85f849ed8ae8b7c8cc18cdbc48a09cf122b0aba5ed3917124201b47b6d288d",
+    "latex_sha256": "71a69939287af17b0acf803a9475822177ad7d5de5579d1fdfa7a0b8ba0b523d",
+    "body_sha256": "39b6a31ab500a355c30283f0529e5ab6141637064add882cc3b22baa9f6ee346",
+    "converter_version": 1,
+    "markdown_sha256": "d1cae592cd4f2fa0fbc36c23a05d474e25ddbd4a627e357b4ead1af0e6a7d06c"
+  },
+  "fetched_at": "2026-09-14T14:41:47+00:00",
+  "source_snapshot_sha256": "6eb2c201472730c85ba129e9beae814577cc6177c96497354ef51ae4f574efd6",
+  "images": {},
+  "local_only": true
+}

@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "1453",
+    "title": "IMO42-1，我也会做几何题",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/1453",
+    "date": "2011-07-30",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 7,
+    "display_formula_count": 4,
+    "image_count": 2,
+    "heading_count": 0,
+    "code_block_count": 0,
+    "source_text_sha256": "a2c7056637ddfea5969e66f72e41ff1745fb78f1d8720b635241f8fd37e8d2b8",
+    "output_text_sha256": "a2c7056637ddfea5969e66f72e41ff1745fb78f1d8720b635241f8fd37e8d2b8",
+    "latex_sha256": "7dd17cedf35efbd07aa6d3e8c8d731e1013706efcdb99cdb0b838be811e6c1ca",
+    "body_sha256": "65b34bc7c524fad79657dd1b36b02333656ce08c24a2e271c0d807a50b32daaa",
+    "converter_version": 1,
+    "markdown_sha256": "61d8d2c5af4d59ff1b211758c11d022f5c6ba4508e1bed85a1010d24115d743f"
+  },
+  "fetched_at": "2026-09-14T14:18:20+00:00",
+  "source_snapshot_sha256": "b23ea86ff260b14c6e2a6aaaa9c14769432f7c21d69bec396edc3477ec3045e0",
+  "images": {},
+  "local_only": true
+}

@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "3331",
+    "title": "闲聊：神经网络与深度学习",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/3331",
+    "date": "2015-06-06",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 18,
+    "display_formula_count": 3,
+    "image_count": 4,
+    "heading_count": 5,
+    "code_block_count": 0,
+    "source_text_sha256": "1b6f43bcc43992e33c9273b225e40f490999d6e5d9dbdfa661618eb7cef78bfc",
+    "output_text_sha256": "1b6f43bcc43992e33c9273b225e40f490999d6e5d9dbdfa661618eb7cef78bfc",
+    "latex_sha256": "7e1185d4066855eb7323fedee571f58139ad2604ac2469c50a73b96eb03d55d2",
+    "body_sha256": "4bd6e49bda1e8aa14a04c4f60131d4e526c17265cd98f2dbe96108cbb82b603d",
+    "converter_version": 1,
+    "markdown_sha256": "547213a7453155868abd6272da198ed940739f98660055d173bdcef08d7b141d"
+  },
+  "fetched_at": "2026-09-14T13:46:05+00:00",
+  "source_snapshot_sha256": "b86efb8ebac0c52f2ad060af7b81da43139c837460224804e268ee331a6c3868",
+  "images": {},
+  "local_only": true
+}

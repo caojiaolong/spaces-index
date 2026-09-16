@@ -1,0 +1,17 @@
+{
+  "metadata": {
+    "id": "6088",
+    "title": "变分自编码器 = 最小化先验分布 + 最大化互信息",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/6088",
+    "date": "2018-10-10",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "fetched_at": "2026-09-14T13:23:48+00:00",
+  "source_snapshot_sha256": "7c707d8cebd652138351f297d5268da447e3fbaaf05809fcdbc5530a60a1032e",
+  "validators": {
+    "etag": null,
+    "last_modified": null
+  }
+}

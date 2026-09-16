@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "7921",
+    "title": "Performer：用随机投影将Attention的复杂度线性化",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/7921",
+    "date": "2020-12-01",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 101,
+    "display_formula_count": 14,
+    "image_count": 6,
+    "heading_count": 10,
+    "code_block_count": 0,
+    "source_text_sha256": "6e78a74a1db50d8d43545a36c39585c8b9316c69c7d95bf12c401119c66cb299",
+    "output_text_sha256": "6e78a74a1db50d8d43545a36c39585c8b9316c69c7d95bf12c401119c66cb299",
+    "latex_sha256": "1c1ae02f12d61c2c37e1243fd32e3f8d407b4bb4795c9d479ec3786b9b5e7a3a",
+    "body_sha256": "9326dbd1ad8879ad6c57a0ecd9b1868712318b1da72d07f67a5d4e11f283ff32",
+    "converter_version": 1,
+    "markdown_sha256": "9c078c0b3475c7d863cfc30893d27d731cb471bb7491a8ada5a9d1539abdc0f2"
+  },
+  "fetched_at": "2026-09-14T13:09:49+00:00",
+  "source_snapshot_sha256": "9be1d21b87ee2b234f5a280641d4af6dfd09936fa02dcaa7e10e9a67d549442c",
+  "images": {},
+  "local_only": true
+}

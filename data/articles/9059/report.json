@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "9059",
+    "title": "在bert4keras中使用混合精度和XLA加速训练",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/9059",
+    "date": "2022-04-28",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 2,
+    "display_formula_count": 0,
+    "image_count": 0,
+    "heading_count": 5,
+    "code_block_count": 5,
+    "source_text_sha256": "b2ff1d53a17618eae6b91acc4d507603d21dd616f37deb0b5d2348ae709c20aa",
+    "output_text_sha256": "b2ff1d53a17618eae6b91acc4d507603d21dd616f37deb0b5d2348ae709c20aa",
+    "latex_sha256": "ceed8e837893ae039ebcb6fc5288f303fd30890c211dc0e10cc2344f9d335c13",
+    "body_sha256": "585da3aeaea00b251beb1595a1359995afacb233d679a59c1b2395d890ec09a6",
+    "converter_version": 1,
+    "markdown_sha256": "eb0b6033e7c95184ea44fb35e305ad183cc7fc1cf33e2d95f106f4294f3b8f53"
+  },
+  "fetched_at": "2026-09-14T12:59:52+00:00",
+  "source_snapshot_sha256": "9cd13c888b378d1b76cab50a0638a04d4e9266c7a5e0fdde0ab14995dc171baf",
+  "images": {},
+  "local_only": true
+}

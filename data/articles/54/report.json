@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "54",
+    "title": "【NASA每日一图】三个“太阳”的日出",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/54",
+    "date": "2009-08-04",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 0,
+    "display_formula_count": 0,
+    "image_count": 1,
+    "heading_count": 0,
+    "code_block_count": 0,
+    "source_text_sha256": "6eeeffe4f9b856b71544abc476bc0b2c8fccb0ba83ba9cca949bdf92cbab8a3d",
+    "output_text_sha256": "6eeeffe4f9b856b71544abc476bc0b2c8fccb0ba83ba9cca949bdf92cbab8a3d",
+    "latex_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "body_sha256": "86742312e09b2c935ecb8ecd466492d2449ef5d6ca93029483569a61399d5bfa",
+    "converter_version": 1,
+    "markdown_sha256": "d1d3be11b0083e626e33687a315aacbf49c8bdc713f3916f92cd14c7a0ba123d"
+  },
+  "fetched_at": "2026-09-14T15:01:36+00:00",
+  "source_snapshot_sha256": "1d1ce0d51be4adf2ad0743e719ec7be937b0aa5fa6b81f22f42cbf3d10d298e7",
+  "images": {},
+  "local_only": true
+}

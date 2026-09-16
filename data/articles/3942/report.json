@@ -1,0 +1,39 @@
+{
+  "metadata": {
+    "id": "3942",
+    "title": "基于双向LSTM和迁移学习的seq2seq核心实体识别",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/3942",
+    "date": "2016-09-06",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "source_dom_exact": true,
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "attributes_exact": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 0,
+    "display_formula_count": 0,
+    "image_count": 2,
+    "heading_count": 4,
+    "code_block_count": 3,
+    "source_text_sha256": "9bbf69ebb7a7617e2bb554a3e68f8fae18165f7d69f3f2f3eb6148712ced7241",
+    "output_text_sha256": "9bbf69ebb7a7617e2bb554a3e68f8fae18165f7d69f3f2f3eb6148712ced7241",
+    "latex_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "body_sha256": "edfc9abd823717f8b9dd5f72adfedc9addcc560101c1ed224acbc0e72f617bf3",
+    "converter_version": 1,
+    "format": "html-v1",
+    "source_warnings": [],
+    "fallback_reason": "Standard Markdown round trip changed source structure",
+    "markdown_sha256": "b052a59ed16a604b67e89d4608812e0947b52acfd4db70702477f6ab534b012d"
+  },
+  "fetched_at": "2026-09-14T13:38:13+00:00",
+  "source_snapshot_sha256": "e8c15f642dde60a40876535804eeac2ee518252c17dbcd482a134a5e2e96414a",
+  "images": {},
+  "local_only": true
+}

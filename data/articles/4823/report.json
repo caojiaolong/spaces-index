@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "4823",
+    "title": "分享一个slide：花式自然语言处理",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/4823",
+    "date": "2018-01-23",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 1,
+    "display_formula_count": 0,
+    "image_count": 1,
+    "heading_count": 0,
+    "code_block_count": 0,
+    "source_text_sha256": "c0594da89e67101d1ae98c633459f92488ba14bf6c9722d0a9e8a42306f277c6",
+    "output_text_sha256": "c0594da89e67101d1ae98c633459f92488ba14bf6c9722d0a9e8a42306f277c6",
+    "latex_sha256": "8845828da14548243f8b940d88578ae45beec4493369f4bc5d4ce18ef08011c5",
+    "body_sha256": "a22993c93dd6596a20b642ced650dcbf7515788beabeadd09119357806fd5711",
+    "converter_version": 1,
+    "markdown_sha256": "1b1d016367dc8d569b5e9e92853b89259e4a3c21e210b3d789c97f8d180c1f96"
+  },
+  "fetched_at": "2026-09-14T13:28:41+00:00",
+  "source_snapshot_sha256": "c668da2df529bb291ad32696acfd0b75b65ea6d4973b939d2cc45178f6e769be",
+  "images": {},
+  "local_only": true
+}

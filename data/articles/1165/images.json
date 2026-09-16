@@ -1,0 +1,85 @@
+{
+  "version": 1,
+  "images": {
+    "https://spaces.ac.cn/usr/uploads/2011/01/86672460.png": {
+      "status": "cached",
+      "file": "1ffb60ff852b3c75d8eb7cb889d6be34eca9076b3b592798fb534f5bfdd0367a.png",
+      "sha256": "1ffb60ff852b3c75d8eb7cb889d6be34eca9076b3b592798fb534f5bfdd0367a",
+      "bytes": 250185,
+      "checked_at": "2026-09-16T12:03:16+00:00",
+      "fetched_url": "https://spaces.ac.cn/usr/uploads/2011/01/86672460.png",
+      "etag": "\"5a6ec74d-3d149\"",
+      "last_modified": "Mon, 29 Jan 2018 07:03:41 GMT"
+    },
+    "https://spaces.ac.cn/usr/uploads/2011/01/2258352604.png": {
+      "status": "cached",
+      "file": "9ed2b730087b7d35138fe04a16ddfb6d7ca27d122dfed3ae04fff2d898fc944f.png",
+      "sha256": "9ed2b730087b7d35138fe04a16ddfb6d7ca27d122dfed3ae04fff2d898fc944f",
+      "bytes": 263163,
+      "checked_at": "2026-09-16T12:03:19+00:00",
+      "fetched_url": "https://spaces.ac.cn/usr/uploads/2011/01/2258352604.png",
+      "etag": "\"5a6ec74d-403fb\"",
+      "last_modified": "Mon, 29 Jan 2018 07:03:41 GMT"
+    },
+    "https://spaces.ac.cn/usr/uploads/2011/01/2130064014.png": {
+      "status": "cached",
+      "file": "233f079dd24e65b5be1d2cf0bb56082c7d2192cd76ca46a5af04f021a8fc5638.png",
+      "sha256": "233f079dd24e65b5be1d2cf0bb56082c7d2192cd76ca46a5af04f021a8fc5638",
+      "bytes": 114438,
+      "checked_at": "2026-09-16T12:03:22+00:00",
+      "fetched_url": "https://spaces.ac.cn/usr/uploads/2011/01/2130064014.png",
+      "etag": "\"5a6ec74d-1bf06\"",
+      "last_modified": "Mon, 29 Jan 2018 07:03:41 GMT"
+    },
+    "https://spaces.ac.cn/usr/uploads/2011/01/1092876325.png": {
+      "status": "cached",
+      "file": "1c68edd8f03a4b145e6a6c79f63ed5a007688d08ad666a0f31bf10b84181c962.png",
+      "sha256": "1c68edd8f03a4b145e6a6c79f63ed5a007688d08ad666a0f31bf10b84181c962",
+      "bytes": 197169,
+      "checked_at": "2026-09-16T12:03:26+00:00",
+      "fetched_url": "https://spaces.ac.cn/usr/uploads/2011/01/1092876325.png",
+      "etag": "\"5a6ec74d-30231\"",
+      "last_modified": "Mon, 29 Jan 2018 07:03:41 GMT"
+    },
+    "https://spaces.ac.cn/usr/uploads/2011/01/4225678637.png": {
+      "status": "cached",
+      "file": "2995c81971bbdebb816f54c493508cc8a4126aba7741707e9b8c360f2e31803a.png",
+      "sha256": "2995c81971bbdebb816f54c493508cc8a4126aba7741707e9b8c360f2e31803a",
+      "bytes": 186010,
+      "checked_at": "2026-09-16T11:59:23+00:00",
+      "fetched_url": "https://spaces.ac.cn/usr/uploads/2011/01/4225678637.png",
+      "etag": "\"5a6ec74d-2d69a\"",
+      "last_modified": "Mon, 29 Jan 2018 07:03:41 GMT"
+    },
+    "https://spaces.ac.cn/usr/uploads/2011/01/2252603629.png": {
+      "status": "cached",
+      "file": "561dba99a5bdcc564f179b7b57bad3602755b428e20d9287430de4032306c2a9.png",
+      "sha256": "561dba99a5bdcc564f179b7b57bad3602755b428e20d9287430de4032306c2a9",
+      "bytes": 235804,
+      "checked_at": "2026-09-16T12:03:29+00:00",
+      "fetched_url": "https://spaces.ac.cn/usr/uploads/2011/01/2252603629.png",
+      "etag": "\"5a6ec74d-3991c\"",
+      "last_modified": "Mon, 29 Jan 2018 07:03:41 GMT"
+    },
+    "https://spaces.ac.cn/usr/uploads/2011/01/697575456.png": {
+      "status": "cached",
+      "file": "f39fe9e1a8aa00eeee35ebcd8cc2385318faf04544a19ea334e09e6a9db251dd.png",
+      "sha256": "f39fe9e1a8aa00eeee35ebcd8cc2385318faf04544a19ea334e09e6a9db251dd",
+      "bytes": 115412,
+      "checked_at": "2026-09-16T12:03:33+00:00",
+      "fetched_url": "https://spaces.ac.cn/usr/uploads/2011/01/697575456.png",
+      "etag": "\"5a6ec74d-1c2d4\"",
+      "last_modified": "Mon, 29 Jan 2018 07:03:41 GMT"
+    },
+    "https://spaces.ac.cn/usr/uploads/2011/01/2731996548.png": {
+      "status": "cached",
+      "file": "ce19a8dd0d2c36722803cd90ed03d9acad78500a2e0dd14e5973be1a21bbd46a.png",
+      "sha256": "ce19a8dd0d2c36722803cd90ed03d9acad78500a2e0dd14e5973be1a21bbd46a",
+      "bytes": 209978,
+      "checked_at": "2026-09-16T12:03:36+00:00",
+      "fetched_url": "https://spaces.ac.cn/usr/uploads/2011/01/2731996548.png",
+      "etag": "\"5a6ec74d-3343a\"",
+      "last_modified": "Mon, 29 Jan 2018 07:03:41 GMT"
+    }
+  }
+}

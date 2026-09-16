@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "4733",
+    "title": "从loss的硬截断、软化到focal loss",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/4733",
+    "date": "2017-12-25",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 47,
+    "display_formula_count": 14,
+    "image_count": 0,
+    "heading_count": 6,
+    "code_block_count": 0,
+    "source_text_sha256": "3ade7e3e0444641200c2f7edd46da8b976ed22e640b3c5074017054dc79ccb2d",
+    "output_text_sha256": "3ade7e3e0444641200c2f7edd46da8b976ed22e640b3c5074017054dc79ccb2d",
+    "latex_sha256": "29b8084eb2c52028f09137c9ab7b7469168721b93802bb136160cfa98319305e",
+    "body_sha256": "356034a3a77191adf30c1cd4e312be671ad73cafeac7fa79427fc9463f62b696",
+    "converter_version": 1,
+    "markdown_sha256": "46efcbb8d90956e77a959474fabc1a73208a9eeb2afc525605d8764a160e3c52"
+  },
+  "fetched_at": "2026-09-14T13:29:14+00:00",
+  "source_snapshot_sha256": "a5323718a718e4a2e82506ee8f6e0f29cbf95ebe0cfa86ff45e90de08a0a0987",
+  "images": {},
+  "local_only": true
+}

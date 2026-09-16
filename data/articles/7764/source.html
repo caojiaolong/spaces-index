@@ -1,0 +1,77 @@
+<div class="PostContent" id="PostContent">
+<p>大家都知道现在GPT3风头正盛，然而，到处都是GPT3、GPT3地推，读者是否记得GPT3论文的名字呢？事实上，GPT3的论文叫做<a href="https://papers.cool/arxiv/2005.14165" target="_blank">《Language Models are Few-Shot Learners》</a>，标题里边已经没有G、P、T几个单词了，只不过它跟开始的GPT是一脉相承的，因此还是以GPT称呼它。顾名思义，GPT3主打的是Few-Shot Learning，也就是小样本学习。此外，GPT3的另一个特点就是大，最大的版本多达1750亿参数，是BERT Base的一千多倍。</p><p></p><p>正因如此，前些天Arxiv上的一篇论文<a href="https://papers.cool/arxiv/2009.07118" target="_blank">《It's Not Just Size That Matters: Small Language Models Are Also Few-Shot Learners》</a>便引起了笔者的注意，意译过来就是“<font color="red">谁说一定要大的？小模型也可以做小样本学习</font>”。显然，这标题对标的就是GPT3，于是笔者饶有兴趣地点进去看看是谁这么有勇气挑战GPT3，又是怎样的小模型能挑战GPT3？经过阅读，原来作者提出通过适当的构造，用<strong><font color="red">BERT的MLM模型</font></strong>也可以做小样本学习，看完之后颇有一种“原来还可以这样做”的恍然大悟感～在此与大家分享一下。</p><h2 id="冉冉升起的MLM">冉冉升起的MLM</h2><p>MLM，全称“Masked Language Model”，可以翻译为“掩码语言模型”，实际上就是一个完形填空任务，随机Mask掉文本中的某些字词，然后要模型去预测被Mask的字词，示意图如下：<br/>
+</p><div class="pic-container"><div class="typecho-caption aligncenter" style="max-width: 520px"><div style="margin: 5px"><a href="/usr/uploads/2020/09/3376199241.png" target="_blank" title="点击查看原图"><img alt="BERT的MLM模型简单示意图" src="/usr/uploads/2020/09/3376199241.png" style="max-width: 100%"/></a></div><p class="typecho-caption-text">BERT的MLM模型简单示意图</p></div></div><p>其中被Mask掉的部分，可以是直接随机选择的Token，也可以是随机选择连续的能组成一整个词的Token，后者称为WWM（Whole Word Masking）。</p><p>开始，MLM仅被视为BERT的一个预训练任务，训练完了就可以扔掉的那种，因此有一些开源的模型干脆没保留MLM部分的权重，比如<a href="https://github.com/brightmart/roberta_zh" target="_blank">brightmart版</a>和<a href="https://github.com/CLUEbenchmark/CLUEPretrainedModels" target="_blank">clue版</a>的RoBERTa，而哈工大开源的<a href="https://github.com/ymcui/Chinese-BERT-wwm" target="_blank">RoBERTa-wwm-ext-large</a>则不知道出于什么原因随机初始化了MLM部分的权重，因此如果要复现本文后面的结果，这些版本是不可取的。</p><p>然而，随着研究的深入，研究人员发现不止BERT的Encoder很有用，预训练用的MLM本身也很有用。比如论文<a href="https://papers.cool/arxiv/1902.04094" target="_blank">《BERT has a Mouth, and It Must Speak: BERT as a Markov Random Field Language Model》</a>指出MLM可以作为一般的生成模型用，论文<a href="/archives/7661" target="_blank">《Spelling Error Correction with Soft-Masked BERT》</a>则将MLM用于文本纠错，笔者之前在<a href="/archives/6933" target="_blank">《从语言模型到Seq2Seq：Transformer如戏，全靠Mask》</a>的实验也表明MLM的预训练权重也可以当作UniLM来用做Seq2Seq任务，还有<a href="/archives/7476" target="_blank">《无监督分词和句法分析！原来BERT还可以这样用》</a>一文将MLM的思想用于无监督分词和句法分析了。可以说MLM已经是大放异彩了。</p><h2 id="将任务转成完形填空">将任务转成完形填空</h2><p>在本文里，我们再学习MLM的一个精彩应用：用于小样本学习或半监督学习，某些场景下甚至能做到零样本学习。</p><p>怎么将我们要做的任务跟MLM结合起来呢？很简单，<font color="red">给任务一个文本描述，然后转换为完形填空问题</font>即可。举个例子，假如给定句子“这趟北京之旅我感觉很不错。”，那么我们补充个描述，构建如下的完形填空：</p><blockquote class="cite"><div>______满意。这趟北京之旅我感觉很不错。</div></blockquote><p>进一步地，我们限制空位处只能填一个“很”或“不”，问题就很清晰了，就是要我们根据上下文一致性判断是否满意，如果“很”的概率大于“不”的概率，说明是正面情感倾向，否则就是负面的，这样我们就将情感分类问题转换为一个完形填空问题了，它可以用MLM模型给出预测结果，而MLM模型的训练可以不需要监督数据，因此理论上这能够实现零样本学习了。</p><p>多分类问题也可以做类似转换，比如新闻主题分类，输入句子为“八个月了，终于又能在赛场上看到女排姑娘们了。”，那么就可以构建</p><blockquote class="cite"><div>下面报导一则______新闻。八个月了，终于又能在赛场上看到女排姑娘们了。</div></blockquote><p>这样我们就将新闻主题分类也转换为完形填空问题了，一个好的MLM模型应当能预测出“体育”二字来。</p><p>还有一些简单的推理任务也可以做这样的转换，常见的是给定两个句子，判断这两个句子是否相容，比如“我去了北京”跟“我去了上海”就是矛盾的，“我去了北京”跟“我在天安门广场”是相容的，常见的做法就是将两个句子拼接起来输入到模型做，作为一个二分类任务。如果要转换为完形填空，那该怎么构造呢？一种比较自然的构建方式是：</p><blockquote class="cite"><div><p>我去了北京？______，我去了上海。</p><p>我去了北京？______，我在天安门广场。</p></div></blockquote><p>其中空位之处的候选词为$\{\text{是的}, \text{不是}\}$。</p><h2 id="Pattern-Exploiting">Pattern-Exploiting</h2><p>读到这里，读者应该不难发现其中的规律了，就是给输入的文本增加一个前缀或者后缀描述，并且Mask掉某些Token，转换为完形填空问题，这样的转换在原论文中称为<font color="red">Pattern</font>，这个转换要尽可能与原来的句子组成一句自然的话，不能过于生硬，因为预训练的MLM模型就是在自然语言上进行的。显然同一个问题可以有很多不同的Pattern，比如情感分类的例子，描述可以放最后，变成“这趟北京之旅我感觉很不错。____满意。”；也可以多加几个字，比如“觉得如何？____满意。这趟北京之旅我感觉很不错。”。</p><p>然后，我们需要构建预测Token的候选空间，并且建立Token到实际类别的映射，这在原论文中称为<font color="red">Verbalizer</font>，比如情感分类的例子，我们的候选空间是$\{\text{很}, \text{不}\}$，映射关系是$\text{很}\to\text{正面},\text{不}\to\text{负面}$，候选空间与实际类别之间不一定是一一映射，比如我们还可以加入“挺”、“太”、“难”字，并且认为$\{\text{很},\text{挺},\text{太}\}\to\text{正面}$以及$\{\text{不},\text{难}\}\to\text{负面}$，等等。不难理解，不少NLP任务都有可能进行这种转换，但显然这种转换一般只适用于<u>候选空间有限</u>的任务，说白了就是只用来做<u>选择题</u>，常见任务的就是<u>文本分类</u>。</p><p>刚才说了，同一个任务可以有多种不同的Pattern，原论文是这样处理的：</p><blockquote><p>1、对于每种Pattern，单独用训练集Finetune一个MLM模型出来；</p><p>2、然后将不同Pattern对应的模型进行集成，得到融合模型；</p><p>3、用融合模型预测未标注数据的伪标签；</p><p>4、用伪标签数据Finetune一个常规的（非MLM的）模型。</p></blockquote><p>具体的集成方式大家自己看论文就行，这不是重点。这种训练模式被称为<font color="red">Pattern-Exploiting Training（PET）</font>，它首先出现在论文<a href="https://papers.cool/arxiv/2001.07676" target="_blank">《Exploiting Cloze Questions for Few Shot Text Classification and Natural Language Inference》</a>，本文要介绍的这篇论文则进一步肯定和完善了Pattern-Exploiting Training的价值和结果，并整合了多任务学习，使得它在SuperGLUE榜单上的小样本学习效果超过了GPT3。两篇论文的作者是相同的，是一脉相承的作品。</p><p></p><div class="pic-container"><div class="typecho-caption aligncenter" style="max-width: 600px"><div style="margin: 5px"><a href="/usr/uploads/2020/09/3205101580.png" target="_blank" title="点击查看原图"><img alt="PET在SuperGLUE上的小样本学习的结果" src="/usr/uploads/2020/09/3205101580.png" style="max-width: 100%"/></a></div><p class="typecho-caption-text">PET在SuperGLUE上的小样本学习的结果</p></div></div><p>不过要吐槽一个点是，上图中PET的223M参数，所用的模型是ALBERT-xxlarge-v2，事实上称ALBERT为“小模型”是一种很耍流氓的行为，因为它前向计算的速度并没有得到任何提升。ALBERT-xxlarge共有12层，层与层之间参数是共享的，就前向计算而言，它应该等价于约2700M（12倍）参数的GPT才对。</p><h2 id="中文实践，检验效果">中文实践，检验效果</h2><p>要真正确认一个方法或模型的价值，看论文的实验表格是不够的，论文给出的实验结果谁都不好说能否复现，其次就算英文上能复现也不代表中文上有价值，因此最实际的还是亲自动手做实验验证。下面是笔者的实验代码，供读者参考：</p><blockquote class="cite"><div><strong>Github地址：<a href="https://github.com/bojone/Pattern-Exploiting-Training" target="_blank">https://github.com/bojone/Pattern-Exploiting-Training</a></strong></div></blockquote><p>我们将从以下几个角度来探讨PET的可行性：</p><blockquote><p>1、直接利用现成的MLM模型效果如何？（<strong>零样本学习1</strong>）</p><p>2、用“大量无标签数据”微调现成的MLM模型效果如何？（<strong>零样本学习2</strong>）</p><p>3、用“小量标签数据”微调现成的MLM模型效果如何？（<strong>小样本学习</strong>）</p><p>4、用“小量标签数据+大量无标签数据”微调现成的MLM模型效果如何？（<strong>半监督学习</strong>）</p></blockquote><p>下面主要给出<font color="red">情感二分类</font>的实验结果。另外还有一个新闻主题的多分类，代码也放到Github了，其结果是类似的，就不重复陈述了。</p><h3 id="零样本学习1">零样本学习1</h3><p>这里主要探索的是给输入文本补上对应的Pattern后，直接基于现成的MLM模型进行预测，预测的准确率。由于构建模型的整个过程都不涉及到标签数据监督训练，因此这算是一种“零样本学习”。我们需要比较的是不同Pattern、不同MLM模型上的效果：</p><p>下面是实验的几个Pattern，其中空位处候选词语都为“很”和“不”：</p><blockquote><p>P1：____满意。这趟北京之旅我感觉很不错。</p><p>P2：这趟北京之旅我感觉很不错。____满意。</p><p>P3：____好。这趟北京之旅我感觉很不错。</p><p>P4：____理想。这趟北京之旅我感觉很不错。</p><p>P5：感觉如何？____满意。这趟北京之旅我感觉很不错。</p></blockquote><p>至于MLM模型，则是下面几个：</p><blockquote><p>M1：Google开源的中文版BERT Base（<a href="https://github.com/google-research/bert" target="_blank">链接</a>）；</p><p>M2：哈工大开源的RoBERTa-wwm-ext Base（<a href="https://github.com/ymcui/Chinese-BERT-wwm" target="_blank">链接</a>）：</p><p>M3：腾讯UER开源的BERT Base（<a href="https://share.weiyun.com/5QOzPqq" target="_blank">链接</a>）；</p><p>M4：腾讯UER开源的BERT Large（<a href="https://share.weiyun.com/5G90sMJ" target="_blank">链接</a>）。</p></blockquote><p>实验结果如下表（验证集/测试集）：<br/>
+$$\begin{array}{c}<br/>
+\text{不同模型不同Pattern的零样本学习效果}<br/>
+\\<br/>
+{\begin{array}{c|ccccc}<br/>
+\hline<br/>
+&amp; \text{P1} &amp; \text{P2} &amp; \text{P3} &amp; \text{P4} &amp; \text{P5} \\<br/>
+\hline<br/>
+\text{M1} &amp; 66.94\,/\,67.60 &amp; 57.56\,/\,56.13 &amp; 58.83\,/\,59.69 &amp; 83.70\,/\,83.33 &amp; 75.98\,/\,76.13\\<br/>
+\text{M2} &amp; 85.17\,/\,84.27 &amp; 70.63\,/\,68.69 &amp; 58.55\,/\,59.12 &amp; 81.81\,/\,82.28 &amp; 80.25\,/\,81.62\\<br/>
+\text{M3} &amp; 66.75\,/\,68.64 &amp; 50.45\,/\,50.97 &amp; 68.97\,/\,70.11 &amp; 81.95\,/\,81.48 &amp; 61.49\,/\,62.58\\<br/>
+\text{M4} &amp; 83.56\,/\,85.08 &amp; 72.52\,/\,72.10 &amp; 76.46\,/\,77.03 &amp; 88.25\,/\,87.45 &amp; 82.43\,/\,83.56\\<br/>
+\hline<br/>
+\end{array}}<br/>
+\end{array}$$<br/>
+最好的效果居然可以达到88%！也就是说，加载现成的MLM，配合适当的Pattern，不需要任何标注数据，就可以正确识别大部分样本情感倾向了。这不得不让我们对MLM模型的潜力刮目相看了。</p><p>可以观察到，不同的Pattern、不同的预训练模型之间还是有一定的差异的，整体而言Large版本的效果要明显好于Base版本的模型，说明像GPT到GPT2再到GPT3一样，还是把模型做得更大会更好。此外，这还有可能说明实际上MLM还没有被充分训练好，或许是因为BERT这种Mask掉一部分的训练方式过于低效了，可能用<a href="/archives/7661" target="_blank">《修改Transformer结构，设计一个更快更好的MLM模型》</a>一文提到的改进版MLM会更好。</p><h3 id="零样本学习2">零样本学习2</h3><p>看完上述结果，读者可能会想到：如果我用领域内的数据继续预训练MLM模型，那么能不能提升效果呢？答案是：能！下面是我们的实验结果，算力有限，我们只在RoBERTa-wwm-ext（上述的M2，继续预训练后的模型我们称为M2<sup>+无监督</sup>）的基础上做了比较：<br/>
+$$\begin{array}{c}<br/>
+\text{继续MLM预训练的零样本学习效果}<br/>
+\\<br/>
+{\begin{array}{c|ccccc}<br/>
+\hline<br/>
+&amp; \text{P1} &amp; \text{P2} &amp; \text{P3} &amp; \text{P4} &amp; \text{P5} \\<br/>
+\hline<br/>
+\text{M2} &amp; 85.17\,/\,84.27 &amp; 70.63\,/\,68.69 &amp; 58.55\,/\,59.12 &amp; 81.81\,/\,82.28 &amp; 80.25\,/\,81.62\\<br/>
+\text{M2}^{+\text{无监督}} &amp; 88.05\,/\,87.53 &amp; 71.01\,/\,68.78 &amp; 81.05\,/\,81.24 &amp; 86.40\,/\,85.65 &amp; 87.26\,/\,87.40\\<br/>
+\hline<br/>
+\end{array}}<br/>
+\end{array}$$</p><p>要注意的是，这里我们只是用领域内的数据继续做MLM训练，这个过程是无监督的，也不需要标注信号，因此也算是“零样本学习”。同时，从到目前为止的结果我们可以看出，给输入本文加入“前缀”的效果比“后缀”更有优势一些。</p><h3 id="小样本学习">小样本学习</h3><p>刚才我们讨论了无标签数据继续预训练MLM的提升，如果回到PET的目标场景，直接用小量的标签数据配合特定的Pattern训练MLM又如何呢？这也就是真正的“小样本学习”训练了，这里我们保留约200个标注样本，构造样本的时候，我们先给每个句子补上Pattern，除了Pattern自带的Mask位置之外，我们还随机Mask其他一部分，以增强对模型的正则。最终实验结果如下：<br/>
+$$\begin{array}{c}<br/>
+\text{小样本学习效果}<br/>
+\\<br/>
+{\begin{array}{c|ccccc}<br/>
+\hline<br/>
+&amp; \text{P1} &amp; \text{P2} &amp; \text{P3} &amp; \text{P4} &amp; \text{P5} \\<br/>
+\hline<br/>
+\text{M2} &amp; 85.17\,/\,84.27 &amp; 70.63\,/\,68.69 &amp; 58.55\,/\,59.12 &amp; 81.81\,/\,82.28 &amp; 80.25\,/\,81.62\\<br/>
+\text{M2}^{+\text{小样本}} &amp; 89.29\,/\,89.18 &amp; 84.71\,/\,82.76 &amp; 88.91\,/\,89.05 &amp; 89.31\,/\,89.13 &amp; 89.07\,/\,88.75\\<br/>
+\hline<br/>
+\end{array}}<br/>
+\end{array}$$<br/>
+结论就是除了“后缀式”的P2之外，其它结果都差不多，这进一步说明了“前缀式”的Pattern会比“后缀式”更有竞争力一些。在效果上，直接用同样的数据用常规的方法去微调一个BERT模型，大概的结果是88.93左右，所以基于“MLP+Pattern”的小样本学习方法可能带来轻微的性能提升。</p><h3 id="半监督学习">半监督学习</h3><p>无监督的零样本学习和有监督的小样本学习都说完了，自然就轮到把标注数据和非标注数据都结合起来的“半监督学习”了。还是同样的任务，标注数据和非标注数据的比例大约是1:99，标注数据带Pattern，非标注数据不带Pattern，大家都Mask掉一部分Token进行MLM预训练，最终测出来的效果如下：<br/>
+$$\begin{array}{c}<br/>
+\text{半监督学习效果}<br/>
+\\<br/>
+{\begin{array}{c|ccccc}<br/>
+\hline<br/>
+&amp; \text{P1} &amp; \text{P2} &amp; \text{P3} &amp; \text{P4} &amp; \text{P5} \\<br/>
+\hline<br/>
+\text{M2} &amp; 85.17\,/\,84.27 &amp; 70.63\,/\,68.69 &amp; 58.55\,/\,59.12 &amp; 81.81\,/\,82.28 &amp; 80.25\,/\,81.62\\<br/>
+\text{M2}^{+\text{半监督}} &amp; 90.09\,/\,89.76 &amp; 79.58\,/\,79.35 &amp; 90.19\,/\,88.96 &amp; 90.05\,/\,89.54 &amp; 89.88\,/\,89.23\\<br/>
+\hline<br/>
+\end{array}}<br/>
+\end{array}$$<br/>
+还是同样的，“后缀”明显比“前缀”差，“前缀”的效果差不多。具体效果上，则是肯定了额外的无标注数据也是有作用的。直觉上来看，“前缀”比“后缀”要好，大体上是因为“前缀”的Mask位置比较固定，微弱的监督信号得以叠加增强？但这也不能解释为什么零样本学习的情况下也是“前缀”更好，估计还跟模型的学习难度有关系，可能句子前面部分的规律更加明显，相对来说更加容易学一些，所以前面部分就学习得更加充分？这一切都还只是猜测。</p><h3 id="汇总与结论">汇总与结论</h3><p>将上述结果汇总如下：<br/>
+$$\begin{array}{c}<br/>
+\text{结果汇总比较}<br/>
+\\<br/>
+{\begin{array}{c|ccccc}<br/>
+\hline<br/>
+&amp; \text{P1} &amp; \text{P2} &amp; \text{P3} &amp; \text{P4} &amp; \text{P5} \\<br/>
+\hline<br/>
+\text{M2} &amp; 85.17\,/\,84.27 &amp; 70.63\,/\,68.69 &amp; 58.55\,/\,59.12 &amp; 81.81\,/\,82.28 &amp; 80.25\,/\,81.62\\<br/>
+\text{M2}^{+\text{无监督}} &amp; 88.05\,/\,87.53 &amp; 71.01\,/\,68.78 &amp; 81.05\,/\,81.24 &amp; 86.40\,/\,85.65 &amp; 87.26\,/\,87.40\\<br/>
+\text{M2}^{+\text{小样本}} &amp; 89.29\,/\,89.18 &amp; 84.71\,/\,82.76 &amp; 88.91\,/\,89.05 &amp; 89.31\,/\,89.13 &amp; 89.07\,/\,88.75\\<br/>
+\text{M2}^{+\text{半监督}} &amp; 90.09\,/\,89.76 &amp; 79.58\,/\,79.35 &amp; 90.19\,/\,88.96 &amp; 90.05\,/\,89.54 &amp; 89.88\,/\,89.23\\<br/>
+\hline<br/>
+\end{array}}<br/>
+\end{array}$$<br/>
+读者还可以对比我们之前在文章<a href="/archives/7466#%E5%8F%82%E8%80%83%E5%AE%9E%E7%8E%B0" target="_blank">《泛化性乱弹：从随机噪声、梯度惩罚到虚拟对抗训练》</a>中用虚拟对抗训练（VAT）做半监督学习的结果，可以看到不管是零样本学习、小样本学习还是半监督学习，基于MLM模型的方式都能媲美基于VAT的半监督学习的结果。我们在做短新闻多分类实验时的结果也是相似的。因此，这说明了MLM模型确实也可以作为一个优秀的零样本/小样本/半监督学习器来使用。</p><p>当然，基于MLM模型的缺点还是有的，比如MLM所使用的独立假设限制了它对更长文本的预测能力（说白了空位处的文字不能太长），以及无法预测不定长的答案也约束了它的场景（所以当前只能用于做选择题，不能做生成）。我们期待有更强的MLM模型出现，那时候就有可能在所有任务上都能与GPT3一较高下了。</p><h2 id="又到了说小结的时候">又到了说小结的时候</h2><p>本文介绍了BERT的MLM模型的一个新颖应用：配合特定的描述将任务转化为完形填空，利用MLM模型做零样本学习、小样本学习和半监督学习。在原论文的SuperGLUE实验里边，它能达到媲美GPT3的效果，而笔者也在中文任务上做了一些实验，进一步肯定了该思路的有效性。整个思路颇为别致，给人一种“原来还可以这样做”的恍然大悟感，推荐大家学习一下。</p>
+
+
+
+
+
+</div>

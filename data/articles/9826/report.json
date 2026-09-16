@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "9826",
+    "title": "简单得令人尴尬的FSQ：“四舍五入”超越了VQ-VAE",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/9826",
+    "date": "2023-10-31",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 94,
+    "display_formula_count": 10,
+    "image_count": 2,
+    "heading_count": 8,
+    "code_block_count": 0,
+    "source_text_sha256": "622074d04849483c62d2423d3e1637f8f5393ca93d19619de587af0d22f4fa89",
+    "output_text_sha256": "622074d04849483c62d2423d3e1637f8f5393ca93d19619de587af0d22f4fa89",
+    "latex_sha256": "c5e3475e53e5b52cd3e8463b3c8932b85465c1aeacb425f18e847357760d4d8b",
+    "body_sha256": "d1203b739404f804502b3f5519aa68aaacc2f956953ab633ff251e9658d97509",
+    "converter_version": 1,
+    "markdown_sha256": "f0263c7d0284e0402cafb1897c3a9c365163d60ae953d746c7854ffadcb07baa"
+  },
+  "fetched_at": "2026-09-14T12:51:11+00:00",
+  "source_snapshot_sha256": "239ea95128662a6f255e58fd40c26a80d64419c930b154ab46c42bfc2ffc5210",
+  "images": {},
+  "local_only": true
+}

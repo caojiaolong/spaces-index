@@ -1,0 +1,45 @@
+{
+  "version": 1,
+  "images": {
+    "https://spaces.ac.cn/usr/uploads/2024/03/1094176260.svg": {
+      "status": "cached",
+      "file": "41ea953b4ae4ac5d2b3539789f117c1758ab9181f3add0f54829c83a78be958c.svg",
+      "sha256": "41ea953b4ae4ac5d2b3539789f117c1758ab9181f3add0f54829c83a78be958c",
+      "bytes": 15599,
+      "checked_at": "2026-09-16T07:09:21+00:00",
+      "fetched_url": "https://spaces.ac.cn/usr/uploads/2024/03/1094176260.svg",
+      "etag": "\"65f70945-3cef\"",
+      "last_modified": "Sun, 17 Mar 2024 15:16:21 GMT"
+    },
+    "https://spaces.ac.cn/usr/uploads/2024/03/2983546495.svg": {
+      "status": "cached",
+      "file": "9f543dec1839a213e05d34088d6aba6658be9e438f66bb1515573de170d2d94b.svg",
+      "sha256": "9f543dec1839a213e05d34088d6aba6658be9e438f66bb1515573de170d2d94b",
+      "bytes": 29832,
+      "checked_at": "2026-09-16T07:09:25+00:00",
+      "fetched_url": "https://spaces.ac.cn/usr/uploads/2024/03/2983546495.svg",
+      "etag": "\"65f70945-7488\"",
+      "last_modified": "Sun, 17 Mar 2024 15:16:21 GMT"
+    },
+    "https://spaces.ac.cn/usr/uploads/2024/03/276747129.svg": {
+      "status": "cached",
+      "file": "0cff04d06940855ad907f9c628a02a039911d35e0de47967660f4cf1ddb2fdb7.svg",
+      "sha256": "0cff04d06940855ad907f9c628a02a039911d35e0de47967660f4cf1ddb2fdb7",
+      "bytes": 30047,
+      "checked_at": "2026-09-16T07:09:29+00:00",
+      "fetched_url": "https://spaces.ac.cn/usr/uploads/2024/03/276747129.svg",
+      "etag": "\"65f70945-755f\"",
+      "last_modified": "Sun, 17 Mar 2024 15:16:21 GMT"
+    },
+    "https://spaces.ac.cn/usr/uploads/2024/03/3765281684.svg": {
+      "status": "cached",
+      "file": "babbd8c0890ff57a41fb6717f08bb9b96619e558e20415dab7d85ae6a23bac28.svg",
+      "sha256": "babbd8c0890ff57a41fb6717f08bb9b96619e558e20415dab7d85ae6a23bac28",
+      "bytes": 44894,
+      "checked_at": "2026-09-16T07:09:33+00:00",
+      "fetched_url": "https://spaces.ac.cn/usr/uploads/2024/03/3765281684.svg",
+      "etag": "\"65f70a89-af5e\"",
+      "last_modified": "Sun, 17 Mar 2024 15:21:45 GMT"
+    }
+  }
+}

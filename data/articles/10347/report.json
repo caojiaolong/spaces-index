@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "10347",
+    "title": "Decoder-only的LLM为什么需要位置编码？",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/10347",
+    "date": "2024-09-01",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 40,
+    "display_formula_count": 6,
+    "image_count": 0,
+    "heading_count": 6,
+    "code_block_count": 0,
+    "source_text_sha256": "6180bc97f06c865f089f4198279ccbf382a92e23a8ff331809290bb94e367f2d",
+    "output_text_sha256": "6180bc97f06c865f089f4198279ccbf382a92e23a8ff331809290bb94e367f2d",
+    "latex_sha256": "93f5bf9e1571ad573299d8b3f51f6c2fd47ff2ffab319758766a3b54c01ddd27",
+    "body_sha256": "9101d3077935618c47d3c6c21bb4e1f515ed77a676bc2fd3e4aede58bf29f26b",
+    "converter_version": 1,
+    "markdown_sha256": "bb33faa54bec36333af153cc72992fdfd90dfd95483308281df5b9a12837b864"
+  },
+  "fetched_at": "2026-09-14T12:46:53+00:00",
+  "source_snapshot_sha256": "8b9a928d6e0722608768788b92910550f996d871fac438560f3701e754f91311",
+  "images": {},
+  "local_only": true
+}

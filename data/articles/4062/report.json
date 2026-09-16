@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "4062",
+    "title": "【外微分浅谈】5. 几何意义",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/4062",
+    "date": "2016-11-06",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 78,
+    "display_formula_count": 13,
+    "image_count": 0,
+    "heading_count": 3,
+    "code_block_count": 0,
+    "source_text_sha256": "1446608f2ddb1d1eb6774975ef2c6abb719c564bbb24540012b127915ad83323",
+    "output_text_sha256": "1446608f2ddb1d1eb6774975ef2c6abb719c564bbb24540012b127915ad83323",
+    "latex_sha256": "2faadf20cf717a969f69daeebe197319c75fc44690a95bc000fa6f69bcd8f8f1",
+    "body_sha256": "3cf231a707be037f5e24ca5e89011fa5ff17c91a459e3c6e1401e63070f37164",
+    "converter_version": 1,
+    "markdown_sha256": "8c8a001f6d61f12b1ad0cd4c0b4be93e9722e54be20a8ee3ec997e16abfd6c0b"
+  },
+  "fetched_at": "2026-09-14T13:36:25+00:00",
+  "source_snapshot_sha256": "e160b5fae8edd2dd1f587fca6f01e04f1a48bc1f6291eeaa0dcad5460b31c812",
+  "images": {},
+  "local_only": true
+}

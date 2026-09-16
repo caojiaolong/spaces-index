@@ -1,0 +1,17 @@
+{
+  "metadata": {
+    "id": "9812",
+    "title": "从梯度最大化看Attention的Scale操作",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/9812",
+    "date": "2023-10-22",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "fetched_at": "2026-09-14T12:51:21+00:00",
+  "source_snapshot_sha256": "a0745150c63accce8f8afac38cd2db9beb1d1ccbe2e0fdf1451409fe9e4d8f68",
+  "validators": {
+    "etag": null,
+    "last_modified": null
+  }
+}

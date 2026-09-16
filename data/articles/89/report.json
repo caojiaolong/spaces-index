@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "89",
+    "title": "话说金属活动性顺序",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/89",
+    "date": "2009-08-21",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 7,
+    "display_formula_count": 0,
+    "image_count": 1,
+    "heading_count": 0,
+    "code_block_count": 0,
+    "source_text_sha256": "450dd9be27e1971ff0eccb2508389fa6f526f6a8f3014c7c05c55cb00ef362ca",
+    "output_text_sha256": "450dd9be27e1971ff0eccb2508389fa6f526f6a8f3014c7c05c55cb00ef362ca",
+    "latex_sha256": "31a3567b3ae182eb2e39cd540188391c9901320fa0744dce54838ec69b3fef17",
+    "body_sha256": "9bdf2e45d8b88ac3586e76697e2b433e0dfc700997adbfef793633d8c692b7ac",
+    "converter_version": 1,
+    "markdown_sha256": "87c2c3090bd15347d12c78f326969dbc8fa15d380779462c3f398c2e061afe65"
+  },
+  "fetched_at": "2026-09-14T14:57:29+00:00",
+  "source_snapshot_sha256": "b660006b1df724324d68f97d4a55869f4afd6a3ff4f478e871871374041b80c4",
+  "images": {},
+  "local_only": true
+}

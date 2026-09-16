@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "10266",
+    "title": "对齐全量微调！这是我看过最精彩的LoRA改进（二）",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/10266",
+    "date": "2024-07-29",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 153,
+    "display_formula_count": 24,
+    "image_count": 1,
+    "heading_count": 8,
+    "code_block_count": 0,
+    "source_text_sha256": "244994493bd106a1938d22d89380986c37c51e1f77e0f9a199c0e7ddaa1a1692",
+    "output_text_sha256": "244994493bd106a1938d22d89380986c37c51e1f77e0f9a199c0e7ddaa1a1692",
+    "latex_sha256": "56e801ef92300bb47a56f27febc81511216842e1b25ccfbf83dd66ea1f5655ef",
+    "body_sha256": "7f935344080d3e67d148ff75d39f274a01108db25a0fbbb0a1d6059fd4e718f8",
+    "converter_version": 1,
+    "markdown_sha256": "30ce14d275a2d48aa4c39208b67d0ffe15a0a6d6761c1223a1bd8b3be7cb65a6"
+  },
+  "fetched_at": "2026-09-14T12:47:25+00:00",
+  "source_snapshot_sha256": "78218e7634c2720a0c8c84eda17f6f4cd32b28eafb44a58e89755d6dcd5799dc",
+  "images": {},
+  "local_only": true
+}

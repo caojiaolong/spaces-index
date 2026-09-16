@@ -1,0 +1,17 @@
+{
+  "metadata": {
+    "id": "7787",
+    "title": "从动力学角度看优化算法（五）：为什么学习率不宜过小？",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/7787",
+    "date": "2020-10-10",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "fetched_at": "2026-09-14T13:10:54+00:00",
+  "source_snapshot_sha256": "5206a8cbc5921481006438c6acba621c2b6e88a1bbe08b1064070c2f4c0f5b28",
+  "validators": {
+    "etag": null,
+    "last_modified": null
+  }
+}

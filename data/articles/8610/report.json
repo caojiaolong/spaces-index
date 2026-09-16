@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "8610",
+    "title": "线性Transformer应该不是你要等的那个模型",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/8610",
+    "date": "2021-08-09",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 57,
+    "display_formula_count": 5,
+    "image_count": 5,
+    "heading_count": 6,
+    "code_block_count": 0,
+    "source_text_sha256": "2c39273f99ce1eb322efb15394457dadc17f28d245ed665ccbcb9e3786e4de5f",
+    "output_text_sha256": "2c39273f99ce1eb322efb15394457dadc17f28d245ed665ccbcb9e3786e4de5f",
+    "latex_sha256": "0faa5d2b1849f339a0fb4182745a9a13a7c4f637f7db7ce772f8a5347d546fdf",
+    "body_sha256": "520aa49d35979fcfe289648c6974f84567cc473273993b56096a11a537e68910",
+    "converter_version": 1,
+    "markdown_sha256": "a5970831ab9b7cbe1c38b4664fa0277ddbed9d4cb2ef53ffc29bf8007eaae577"
+  },
+  "fetched_at": "2026-09-14T13:04:57+00:00",
+  "source_snapshot_sha256": "9c82d3338294a39879c7eee87c5890121f341a16ed675a6299cca1518b8bac08",
+  "images": {},
+  "local_only": true
+}

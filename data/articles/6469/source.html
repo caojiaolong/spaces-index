@@ -1,0 +1,26 @@
+<div class="PostContent" id="PostContent">
+<p>今天是3月14日，刚好是3.14，也就是很多理科生都喜欢调侃的“圆周率节”（π day）～</p><p></p><div class="pic-container"><div class="typecho-caption aligncenter" style="max-width: 300px"><div style="margin: 5px"><a href="/usr/uploads/2019/03/2229924330.jpg" target="_blank" title="点击查看原图"><img alt="π能否表示为一个分数？" src="/usr/uploads/2019/03/2229924330.jpg" style="max-width: 100%"/></a></div><p class="typecho-caption-text">π能否表示为一个分数？</p></div></div><h2 id="圆周率节">圆周率节</h2><p>$\pi$能说的故事有很多，用$e^{i\pi}+1=0$这个“最美的公式”来诉说$\pi$的故事，似乎已经显得过于老套了，而且看起来也没什么技术含量。但是，我相信，“鬼才”数学家<a href="https://en.wikipedia.org/wiki/Srinivasa_Ramanujan" target="_blank">拉马努金</a>搞出来的一堆公式，永远都不会显得过时，比如：<br/>
+$$\sqrt{\phi +2}-\phi =\frac{e^{{-{\frac{2\pi }{5}}}}}{1+{\frac{e^{{-2\pi }}}{1+{\frac{e^{{-4\pi }}}{1+{\frac{e^{{-6\pi }}}{1+\,\cdots }}}}}}}=0.2840...,\quad \phi=\frac{1+\sqrt{5}}{2}$$</p><blockquote class="cite"><div>看，欧拉公式将$e,i,\pi,1,0$联系在一块有什么了不起的，我这个还把$e,\pi$和黄金分割以无穷分数的形式联系在一起了！</div></blockquote><p>再比如：<br/>
+$$\frac{1}{\pi}=\frac{2\sqrt{2}}{99^2}\sum_{k=0}^{\infty}\frac{(4k)!}{(k!)^4}\frac{1103+26390k}{396^{4k}}$$<br/>
+不就是一个$\pi$的级数吗？有什么了不起？了不起的地方在于，你只取这个级数的第一项，就可以得到$\pi=3.1415927...$，第一项就有8位有效数字了。你再稍微分析一下，就会发现这个级数收敛快得可怕...事实上，它（及其变种）是目前计算机求上亿位圆周率有效数字的基础公式。（相关内容还可以看<a href="https://en.wikipedia.org/wiki/Ramanujan%E2%80%93Sato_series" target="_blank">维基百科</a>）</p><p></p><div class="pic-container"><div class="typecho-caption aligncenter" style="max-width: 400px"><div style="margin: 5px"><a href="/usr/uploads/2019/03/1359610913.jpg" target="_blank" title="点击查看原图"><img alt="π的有效数字" src="/usr/uploads/2019/03/1359610913.jpg" style="max-width: 100%"/></a></div><p class="typecho-caption-text">π的有效数字</p></div></div><p>后人推导出的升级版本：<br/>
+$$\frac { 1 } { \pi } = \frac { 12 } { ( 640320 ) ^ { 3 / 2 } } \sum _ { k = 0 } ^ { \infty } \frac { ( 6 k ) ! ( 545140134 k + 13591409 ) } { ( 3 k ) ! ( k ! ) ^ { 3 } ( - 262537412640768000 ) ^ { k } }$$<br/>
+它的理论基础是<br/>
+$$e^{\pi \sqrt{163}} \approx 640320^{3} + 744$$<br/>
+对了，$e^{\pi \sqrt{163}}$也被称为“拉马努金数”。</p><p>拉马努金的各种壮观的公式还有很多（<a href="https://www.zhihu.com/question/66165881" target="_blank">《拉马努金的那些壮观的公式，都是怎么发现的？》</a>），感觉就是“开挂”才能搞出来的。虽然很多公式未必具有什么使用价值，但不少公式远远超出了我们的想象力～这个“我们”不单单是指普通人，而且包括很多大数学家。比如哈代看到这些公式就评价：</p><blockquote class="cite"><div>只要看它们一眼就知道只有第一流的数学家才能写下它们。它们肯定是真的，因为如果不是的话，没人能有足够的想像力来发明他们。</div></blockquote><p>要知道，能搞出一个新的$\pi$或$e$的公式很多时候就已经是了不起的工作，但是拉马努金的公式，通常都能把$\pi,e$等以某种非常诡异的方式糅合在级数、根号、连分式等复杂的运算之中，偏生它还是对的！所以难怪哈代会这样评价，普通人真是连想都未必敢这样想这样的公式。</p><p>再来一个？<br/>
+$$\begin{aligned}R_n^{+}:=&amp;\frac{2}{\pi}\int_{0}^{\pi/2}\sqrt[\Large {2^{n+1}}]{x^2 + \ln^2\!\cos x}<br/>
+\sqrt{\frac{1}{2}+\frac{1}{2}\sqrt{\frac{1}{2}+\cdots+\frac{1}{2}\sqrt{<br/>
+\frac{1}{2}+ \frac{1}{2}\sqrt{ \frac{\ln^{2}\!\cos x}{<br/>
+x^2 + \ln^2\! \cos x}}}}}\,\mathrm{d}x\\<br/>
+R_n^{-}:=&amp;\frac{2}{\pi}\int_{0}^{\pi/2}\frac{1}{\sqrt[\Large {2^{n+1}}]{x^2 + \ln^2\!\cos x}}<br/>
+\sqrt{\frac{1}{2}+\frac{1}{2}\sqrt{\frac{1}{2}+\cdots+\frac{1}{2}\sqrt{<br/>
+\frac{1}{2}+ \frac{1}{2}\sqrt{ \frac{\ln^{2}\!\cos x}{<br/>
+x^2 + \ln^2\! \cos x}}}}}\,\mathrm{d}x.<br/>
+\end{aligned}$$<br/>
+则我们有$R_n^{+}= \sqrt[\Large {2^n}]{\ln 2}$和$R_n^{-}= \frac{1}{\sqrt[\Large {2^n}]{\ln 2}}$。如此复杂的积分有如此简单的结果，你敢想象？（<a href="http://mathworld.wolfram.com/RamanujanLog-TrigonometricIntegrals.html" target="_blank">《Ramanujan Log-Trigonometric Integrals》</a>）</p><h2 id="十年博客">十年博客</h2><p>对了，还有一件事情，进入三月后，科学空间就正式迎来第十年了，这意味着我已经写了十年博客了。<br/>
+</p><div class="pic-container"><div class="typecho-caption aligncenter" style="max-width: 300px"><div style="margin: 5px"><a href="/usr/uploads/2019/03/1016096506.png" target="_blank" title="点击查看原图"><img alt="博客十周年了" src="/usr/uploads/2019/03/1016096506.png" style="max-width: 100%"/></a></div><p class="typecho-caption-text">博客十周年了</p></div></div><p>其实我也不确切记得是哪天开始写博客了，但应该是2009年3月份开始。今天刚好是圆周率节，那就把今天当做纪念日好了～</p><p>我是从2006年开始接触互联网，前三年都热衷于搞IT论坛了（<a href="/archives/531" target="_blank">有兴趣请看这篇文章</a>），后来风潮过去了，IT论坛也逐渐没落，还有一些别的原因，就专心回来写博客了，毕竟一个人的空间容易控制。</p><p>刚开始是以科普为主，当时火起来的一个博客是“<a href="http://songshuhui.net/" target="_blank">科学松鼠会</a>”，我也主要是受到他们的鼓舞。再慢慢地，就专心写自己的学习和研究记录。科学空间的主题也随着我的兴趣变化而变化，开始是天文，然后是数学和物理，现在多是机器学习相关的，所以才形成了目前10个分类的大杂烩～</p><p>这两年，大概也是因为写的机器学习主题多了，跟上了潮流，博客人气也多起来了。目前平均下来大概每周一篇文章左右，基本都是原创，希望用通俗的语言把某个东西的原理讲清楚。尽管文章的主题有所变动，但我依然没有忘记办博客之初的理念——“敲开科学的坚果，让科学流行起来”。愿继续与大家共勉、前行。</p><p>十年，并不算一个短的周期，在这十年中，虽然很多东西都成为了过客，也有不少网站坚持了下来。比如前面说的科学松鼠会，目前还有更新，还发展出了“果壳网”等平台；还有“<a href="https://bbs.emath.ac.cn/forum.php" target="_blank">数学研发论坛</a>”，也已经存在十多年了，一直还有人气，说是目前含金量最高的数学论坛也不为过；还有其他的一些网站，一下子没想起来，就不列举了。科学空间刚好走到了第一个十年，愿与大家走过更多个十年。</p><blockquote class="cite"><div>十年之后，<br/>我们是朋友 还可以问候～</div></blockquote>
+
+
+
+
+
+</div>

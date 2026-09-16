@@ -1,0 +1,17 @@
+{
+  "metadata": {
+    "id": "9009",
+    "title": "为什么Pre Norm的效果不如Post Norm？",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/9009",
+    "date": "2022-03-29",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "fetched_at": "2026-09-14T13:00:31+00:00",
+  "source_snapshot_sha256": "ee83a9cb8ea262a6c55b61ac012dd6deb76d74b398d5264ac705b6996ab1be62",
+  "validators": {
+    "etag": null,
+    "last_modified": null
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "1993",
+    "title": "广州棋院观赛——首见“岭南双雄”",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/1993",
+    "date": "2013-05-20",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 0,
+    "display_formula_count": 0,
+    "image_count": 1,
+    "heading_count": 0,
+    "code_block_count": 0,
+    "source_text_sha256": "7f5189625ac1c32e17b89fd7758da1d188965ba67b92ca28efa7a313c73f9eb7",
+    "output_text_sha256": "7f5189625ac1c32e17b89fd7758da1d188965ba67b92ca28efa7a313c73f9eb7",
+    "latex_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "body_sha256": "8bc6a804110940e807b543fc4cac11b3e09888a2c52cb639b91258d7f65de7a4",
+    "converter_version": 1,
+    "markdown_sha256": "9f0f8a2656e75077f3ee615fdb50882b33ec03a560fcf02e1daae44b162a4869"
+  },
+  "fetched_at": "2026-09-14T14:02:10+00:00",
+  "source_snapshot_sha256": "09303654a9d404a1a85670e1fd7001dea597e1b7a784aa4cfa4d272228bedbe9",
+  "images": {},
+  "local_only": true
+}

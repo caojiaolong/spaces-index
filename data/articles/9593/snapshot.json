@@ -1,0 +1,17 @@
+{
+  "metadata": {
+    "id": "9593",
+    "title": "注意力和Softmax的两点有趣发现：鲁棒性和信息量",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/9593",
+    "date": "2023-04-25",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "fetched_at": "2026-09-14T12:54:26+00:00",
+  "source_snapshot_sha256": "629afa9180f1961bf9d9e4e913b2137aee782503b6f8d497c96803690c554fd3",
+  "validators": {
+    "etag": null,
+    "last_modified": null
+  }
+}

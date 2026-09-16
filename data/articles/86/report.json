@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "86",
+    "title": "【NASA每日一图】IC 1396 星云",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/86",
+    "date": "2009-08-19",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 0,
+    "display_formula_count": 0,
+    "image_count": 1,
+    "heading_count": 0,
+    "code_block_count": 0,
+    "source_text_sha256": "b0fc86bd2bc7df45e5e348cf4d9a55b7225f461eac8ef5a0f30c3b051382ecfd",
+    "output_text_sha256": "b0fc86bd2bc7df45e5e348cf4d9a55b7225f461eac8ef5a0f30c3b051382ecfd",
+    "latex_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "body_sha256": "de694ded6e792ce778859f0ccdd4bba57ca651258188a87081c6be6b9c6ff88b",
+    "converter_version": 1,
+    "markdown_sha256": "b6685f717bce1b1e0e3652c90eeea318a23cfdea236c82c510ac203174c7dcdb"
+  },
+  "fetched_at": "2026-09-14T15:12:22+00:00",
+  "source_snapshot_sha256": "fd8b0a69c9a0ffec7d51b3b95d2595761ebba58e241039266d17c51f1645cd4d",
+  "images": {},
+  "local_only": true
+}

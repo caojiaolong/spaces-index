@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "1866",
+    "title": "又折腾数学公式插件了",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/1866",
+    "date": "2013-01-05",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 6,
+    "display_formula_count": 4,
+    "image_count": 0,
+    "heading_count": 0,
+    "code_block_count": 0,
+    "source_text_sha256": "d89354925dcd7061ec0671c5a2e6bcc4c0a0bf2414b614dd8dfdee4fc7b38c10",
+    "output_text_sha256": "d89354925dcd7061ec0671c5a2e6bcc4c0a0bf2414b614dd8dfdee4fc7b38c10",
+    "latex_sha256": "67da9e8f3bd262fe1305b3c225b7ab38284bdb597fee66f065c50b73197eb0d0",
+    "body_sha256": "eaab47461a355bb7ae8a325b186caca3c0917f1a383eb004036ba52ff370436a",
+    "converter_version": 1,
+    "markdown_sha256": "6220ee4bcc7bfa20efc666c2b1d53532453316dc0d36f21a96659bde8d326792"
+  },
+  "fetched_at": "2026-09-14T14:06:46+00:00",
+  "source_snapshot_sha256": "0486fc5d924154e6ff8ba5ffeb91d09ff5d5c25c5061d45c808d74b4e56b0ed9",
+  "images": {},
+  "local_only": true
+}

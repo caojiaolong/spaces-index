@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "129",
+    "title": "科学空间：2009年10月重要天象",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/129",
+    "date": "2009-09-20",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 0,
+    "display_formula_count": 0,
+    "image_count": 8,
+    "heading_count": 0,
+    "code_block_count": 0,
+    "source_text_sha256": "6d056632e83d89be1c10c41a111343d6abff58e816a639079b8648986dba9189",
+    "output_text_sha256": "6d056632e83d89be1c10c41a111343d6abff58e816a639079b8648986dba9189",
+    "latex_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "body_sha256": "98ba9d90c3fbc046ccc2d4bd89bf895cfe1cd1d64dcb4bfbe50d248e5df9fe7f",
+    "converter_version": 1,
+    "markdown_sha256": "3b3579679ae54172868338565fd99ac460b9d6b826b37353d144b679e402bb23"
+  },
+  "fetched_at": "2026-09-14T14:52:32+00:00",
+  "source_snapshot_sha256": "f9d819d5c5e0acf3e70f7aac066e4438ffd9d358b7001ac0b253634d9b10f35e",
+  "images": {},
+  "local_only": true
+}

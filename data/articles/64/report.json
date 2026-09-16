@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "64",
+    "title": "【NASA每日一图】沙子般的 NGC 1313",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/64",
+    "date": "2009-08-07",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 0,
+    "display_formula_count": 0,
+    "image_count": 1,
+    "heading_count": 0,
+    "code_block_count": 0,
+    "source_text_sha256": "30f7af7e5b86bbc00953a3e036182167ba634ff10184a4179115445ee25dee5e",
+    "output_text_sha256": "30f7af7e5b86bbc00953a3e036182167ba634ff10184a4179115445ee25dee5e",
+    "latex_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "body_sha256": "e685bf61b6c4b756a38a7fe214cf267efc213f5225cea5ce737994af840e2e19",
+    "converter_version": 1,
+    "markdown_sha256": "355f7bbdfe63d82d22e3e79e5a7be704f016404e6ddad63cc444571041279e5e"
+  },
+  "fetched_at": "2026-09-14T15:00:30+00:00",
+  "source_snapshot_sha256": "1594641ac8005ad4a6c6bcc43df7f2c4f559a6d57ed9eb08548a7b0405ec226c",
+  "images": {},
+  "local_only": true
+}

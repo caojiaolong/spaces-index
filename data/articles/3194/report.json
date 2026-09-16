@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "3194",
+    "title": "勒贝格(Lebesgue)控制收敛定理",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/3194",
+    "date": "2015-01-16",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 16,
+    "display_formula_count": 7,
+    "image_count": 0,
+    "heading_count": 0,
+    "code_block_count": 0,
+    "source_text_sha256": "264ccd6c70d12f114aef105010e3ec05bae528e674db1db0923d74def530c607",
+    "output_text_sha256": "264ccd6c70d12f114aef105010e3ec05bae528e674db1db0923d74def530c607",
+    "latex_sha256": "fdc702644a3b0385840da4b1b1cbf852b3b4aa2e7f889909c6372834ba1d6556",
+    "body_sha256": "98922fffc2f9b1a2cde8fac682b493380617643297f618eaa92357ab1174f3a2",
+    "converter_version": 1,
+    "markdown_sha256": "a9c78d7d490ba178a76ab4a5adf07823dcbe08a5b15eaaa5b51db216fcb79aee"
+  },
+  "fetched_at": "2026-09-14T13:48:07+00:00",
+  "source_snapshot_sha256": "3b442483cd5b5464f2650611940156226e6d40e61a5015aa26bd3c2eb029b72b",
+  "images": {},
+  "local_only": true
+}

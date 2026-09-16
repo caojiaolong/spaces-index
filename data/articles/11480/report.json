@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "11480",
+    "title": "让炼丹更科学一些（三）：SGD的终点损失收敛",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/11480",
+    "date": "2025-12-16",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 84,
+    "display_formula_count": 16,
+    "image_count": 0,
+    "heading_count": 6,
+    "code_block_count": 0,
+    "source_text_sha256": "f7d78268a7c29000f3606777e61ec5010f60a30cf7b9f2ef5b73adb23048ae50",
+    "output_text_sha256": "f7d78268a7c29000f3606777e61ec5010f60a30cf7b9f2ef5b73adb23048ae50",
+    "latex_sha256": "bb0659208d4b87fb84f85682207c537cfdb45b9efb4a24986bca685bf6d70faf",
+    "body_sha256": "1a4765de5652aecc28be02edc76ebcc0a5753a609bb0ade61d7bea91981c240e",
+    "converter_version": 1,
+    "markdown_sha256": "f4adb4ae69dc85b95f3ed4fcb4dbf133675b02062952630d7ef479a48679788d"
+  },
+  "fetched_at": "2026-09-14T12:38:10+00:00",
+  "source_snapshot_sha256": "8ad5ffbd170b142b803862af6936473033fc58f9b7de0c5e91d8da27a6b56959",
+  "images": {},
+  "local_only": true
+}

@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "44",
+    "title": "关于无理数及其和的证明",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/44",
+    "date": "2009-07-31",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 36,
+    "display_formula_count": 4,
+    "image_count": 1,
+    "heading_count": 0,
+    "code_block_count": 0,
+    "source_text_sha256": "cd114df37bdd99982b65fc2302b2a0b6b8b6380d523b431c8fd211c03bca6531",
+    "output_text_sha256": "cd114df37bdd99982b65fc2302b2a0b6b8b6380d523b431c8fd211c03bca6531",
+    "latex_sha256": "8a8e04ee17180c272ed54c4936711807845a0ff9df472eddacde9511b9b22a1e",
+    "body_sha256": "5043b99c0dcf3c2a6ae537e67cb80c03728aed91bc2c3f159cb004586940d863",
+    "converter_version": 1,
+    "markdown_sha256": "0a8509823cc3c528a2d58e06ce8f22ec38ce4845f030e9014e2c4521f8d28d7f"
+  },
+  "fetched_at": "2026-09-14T15:02:45+00:00",
+  "source_snapshot_sha256": "a726111c70ac2e73ec6af115dd1e204e8353ea677488b7af313318a083f6a587",
+  "images": {},
+  "local_only": true
+}

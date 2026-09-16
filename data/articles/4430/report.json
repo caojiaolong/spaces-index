@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "4430",
+    "title": "通用爬虫探索（三）：效果展示与代码",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/4430",
+    "date": "2017-06-07",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 0,
+    "display_formula_count": 0,
+    "image_count": 4,
+    "heading_count": 3,
+    "code_block_count": 2,
+    "source_text_sha256": "edff327f79f78332a6a50bcf073f27120f2128c230c59e6c6450502c7e7520e1",
+    "output_text_sha256": "edff327f79f78332a6a50bcf073f27120f2128c230c59e6c6450502c7e7520e1",
+    "latex_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "body_sha256": "1871640aadfa253010dc861d72dcc7105223364f55535855002f08509771fb5b",
+    "converter_version": 1,
+    "markdown_sha256": "e8f60b8bd53b4e8bbd8e0cf6f40f757f5ef6946e97cde86cbcd7ae92243f0e8e"
+  },
+  "fetched_at": "2026-09-14T13:32:04+00:00",
+  "source_snapshot_sha256": "847673edc67df892e647fbd880d4d0b15630b63a71022ac27451ea8f622ada38",
+  "images": {},
+  "local_only": true
+}

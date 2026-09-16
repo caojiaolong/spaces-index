@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "906",
+    "title": "计算夏至的精确时刻2——提高精确度",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/906",
+    "date": "2010-08-29",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 4,
+    "display_formula_count": 2,
+    "image_count": 0,
+    "heading_count": 0,
+    "code_block_count": 0,
+    "source_text_sha256": "1898c20d25f37818e536fdc5cb31dcfbbf23b0746ae4c69ae834d1ace2943b08",
+    "output_text_sha256": "1898c20d25f37818e536fdc5cb31dcfbbf23b0746ae4c69ae834d1ace2943b08",
+    "latex_sha256": "d1cf358ed5fdb77ce6a3f3c270a3c9d53784e92693999fc38011838d1d8d92f9",
+    "body_sha256": "b0a36171ce5390a775dbd318ef82f4d6566e2c6b34408d7baa7cd624a0d5d231",
+    "converter_version": 1,
+    "markdown_sha256": "0424e3577b97404294376cae6b8b9c59043c0d61960eb8c2d8a99713d6e7a9b1"
+  },
+  "fetched_at": "2026-09-14T14:30:54+00:00",
+  "source_snapshot_sha256": "49e1ff5d03b5a0b8a70aad4479000373abb9ccfc58a03b11a675ae125f567582",
+  "images": {},
+  "local_only": true
+}

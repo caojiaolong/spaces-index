@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "6933",
+    "title": "从语言模型到Seq2Seq：Transformer如戏，全靠Mask",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/6933",
+    "date": "2019-09-18",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 24,
+    "display_formula_count": 3,
+    "image_count": 10,
+    "heading_count": 11,
+    "code_block_count": 2,
+    "source_text_sha256": "4e143f3a816b49f5a8749898d0f11414e95de8325ef13d5f33070bdafb9578de",
+    "output_text_sha256": "4e143f3a816b49f5a8749898d0f11414e95de8325ef13d5f33070bdafb9578de",
+    "latex_sha256": "6eceb975963ecbcaa0124c5b3c774d24ee8cf9acb1b984f3c91d2509c2e65c4a",
+    "body_sha256": "96fba6ad71020f2a5975904884b80d6ea04a7ba784a32a9e508fd23bbba1aa11",
+    "converter_version": 1,
+    "markdown_sha256": "00fe4c02f3c182876c2bcc558304f1e366aaf4538fb71b2e11501b223f865350"
+  },
+  "fetched_at": "2026-09-14T13:17:33+00:00",
+  "source_snapshot_sha256": "003c97c7d3298cc3af0a8d8cde30d15632ae532d20bf229dcacb7742d7a2ee33",
+  "images": {},
+  "local_only": true
+}

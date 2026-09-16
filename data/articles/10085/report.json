@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "10085",
+    "title": "生成扩散模型漫谈（二十五）：基于恒等式的蒸馏（上）",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/10085",
+    "date": "2024-05-01",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 106,
+    "display_formula_count": 12,
+    "image_count": 0,
+    "heading_count": 7,
+    "code_block_count": 0,
+    "source_text_sha256": "25b36ff593e7d3dae5506a10f906ea55fcedd45cda87fa6179d13d1dcd980286",
+    "output_text_sha256": "25b36ff593e7d3dae5506a10f906ea55fcedd45cda87fa6179d13d1dcd980286",
+    "latex_sha256": "f481aae59c7211ee46bc2a29e440a6b18d12212f9289c19b230585d3527a01fa",
+    "body_sha256": "dda66a80258bab49ca0e7f06e4d2cfe193ef54b93ba3229ecde05a38938b6096",
+    "converter_version": 1,
+    "markdown_sha256": "95a83353dde86c13ac2c717a3b601c9fbde7ed06a3144a0e042a8e8c4623d883"
+  },
+  "fetched_at": "2026-09-14T12:48:48+00:00",
+  "source_snapshot_sha256": "d709a222e4bfe1e914c4735991f9a677e213d93f3c0ba2b6b3ff47186c97539c",
+  "images": {},
+  "local_only": true
+}

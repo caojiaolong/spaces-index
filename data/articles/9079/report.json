@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "9079",
+    "title": "当BERT-whitening引入超参数：总有一款适合你",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/9079",
+    "date": "2022-05-18",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 48,
+    "display_formula_count": 5,
+    "image_count": 0,
+    "heading_count": 4,
+    "code_block_count": 0,
+    "source_text_sha256": "a7ccc7c4dc4bb6944ac45c592b36a2e832ccd417e41c32edc69b189c618d1ca8",
+    "output_text_sha256": "a7ccc7c4dc4bb6944ac45c592b36a2e832ccd417e41c32edc69b189c618d1ca8",
+    "latex_sha256": "1017f10a2fd237a1c7edafbfe3fec9d3a44a561a13ac348c87d0324e3207828e",
+    "body_sha256": "64f133faaacb684ae44e57cb96b03679b47c5e05f93711d35151274beb5a2a72",
+    "converter_version": 1,
+    "markdown_sha256": "8e86187e4c05b0fcbf8f18cfbc4d6eeb43681a58a33a3914cd64107f3ecd0995"
+  },
+  "fetched_at": "2026-09-14T12:59:31+00:00",
+  "source_snapshot_sha256": "703741c13fee49d254a946cb97d9080c38fe9b1edb5560805891e117cd49bcd1",
+  "images": {},
+  "local_only": true
+}

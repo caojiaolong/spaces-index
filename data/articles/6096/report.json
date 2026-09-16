@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "6096",
+    "title": "再谈非方阵的行列式",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/6096",
+    "date": "2018-10-16",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 65,
+    "display_formula_count": 9,
+    "image_count": 0,
+    "heading_count": 4,
+    "code_block_count": 0,
+    "source_text_sha256": "f94b9176306e4813e022d1113354681f8211e2f3e3ca103fb96e4558177db234",
+    "output_text_sha256": "f94b9176306e4813e022d1113354681f8211e2f3e3ca103fb96e4558177db234",
+    "latex_sha256": "b59c972ac28cce6ad0e68db6dd9cb0e9e0e990427e790c627b468fe80f5a5c72",
+    "body_sha256": "6f7e021142f10c83e9359dbf2aa431a9b5f03b96e3db66aefcebe7f676daf6f2",
+    "converter_version": 1,
+    "markdown_sha256": "0d0ed6b3171996162f3bce7e35c02d7e117f93dbb8fb5a3fbfef69bd2a542ad3"
+  },
+  "fetched_at": "2026-09-14T13:23:41+00:00",
+  "source_snapshot_sha256": "557f44bae31e648b2405cb315d1d32f043084b420474b0c8622b90c473d9bd01",
+  "images": {},
+  "local_only": true
+}

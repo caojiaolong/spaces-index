@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "10684",
+    "title": "三个球的交点坐标（三球交会定位）",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/10684",
+    "date": "2025-01-28",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 39,
+    "display_formula_count": 7,
+    "image_count": 0,
+    "heading_count": 4,
+    "code_block_count": 1,
+    "source_text_sha256": "39dcb041c39ff871269a6328defdbebf621358314e8a5b86dda0127061e76e7c",
+    "output_text_sha256": "39dcb041c39ff871269a6328defdbebf621358314e8a5b86dda0127061e76e7c",
+    "latex_sha256": "1117c34df0a59fb816873be8cb9ade1a38f9540f9f79c2ba2b26d2de01fd6ff7",
+    "body_sha256": "6a8852936cf47a638fa41b505ad5317268e81304a21ee6f1e43b7b783323c243",
+    "converter_version": 1,
+    "markdown_sha256": "5b3eb11ef95cf94a0d99d952dd8fc25891b63f71764d6a0860792e06bb022a73"
+  },
+  "fetched_at": "2026-09-14T12:44:09+00:00",
+  "source_snapshot_sha256": "2c1a018a56330d96d060b483bcbdc1c09160850cfc66368f332bfb30bb30c257",
+  "images": {},
+  "local_only": true
+}

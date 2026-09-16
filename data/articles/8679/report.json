@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "8679",
+    "title": "让人惊叹的Johnson-Lindenstrauss引理：理论篇",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/8679",
+    "date": "2021-09-17",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 156,
+    "display_formula_count": 24,
+    "image_count": 0,
+    "heading_count": 6,
+    "code_block_count": 0,
+    "source_text_sha256": "7be6dee8003caa1bcb748a2ec1a79fa129006b5f552cb1ddce34ec057c0a3b7b",
+    "output_text_sha256": "7be6dee8003caa1bcb748a2ec1a79fa129006b5f552cb1ddce34ec057c0a3b7b",
+    "latex_sha256": "98703dd3a57f6debf762f32da13c7e016bcc21064cf381a2c80721b70d2269cb",
+    "body_sha256": "ce626de9ebf851d36eefdd04ba415f9dd3d351fca0a70c31ee3a500ab6b6920e",
+    "converter_version": 1,
+    "markdown_sha256": "4f17892d77d228ab9a8b6ec56a2f54c99ce3954c1b66fa8c840825d051ea3598"
+  },
+  "fetched_at": "2026-09-14T13:04:16+00:00",
+  "source_snapshot_sha256": "fea5ae0958a4a274a78f0cd841e2d323cd1166887d410bcfb982372eb4f5cf6a",
+  "images": {},
+  "local_only": true
+}

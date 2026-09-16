@@ -1,0 +1,17 @@
+{
+  "metadata": {
+    "id": "9070",
+    "title": "logsumexp运算的几个不等式",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/9070",
+    "date": "2022-05-10",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "fetched_at": "2026-09-14T12:59:39+00:00",
+  "source_snapshot_sha256": "d9a554199fd9bcc4af5d15c0ab67adc471f5e85ac5ad74b1c14f24d7f22b8adf",
+  "validators": {
+    "etag": null,
+    "last_modified": null
+  }
+}

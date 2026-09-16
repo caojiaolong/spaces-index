@@ -1,0 +1,17 @@
+{
+  "metadata": {
+    "id": "7919",
+    "title": "exp(x)在x=0处的偶次泰勒展开式总是正的",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/7919",
+    "date": "2020-11-24",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "fetched_at": "2026-09-14T13:09:56+00:00",
+  "source_snapshot_sha256": "0c1f4a05494de3842dde412934565afad666897ebbd6c1494f136833d014590c",
+  "validators": {
+    "etag": null,
+    "last_modified": null
+  }
+}

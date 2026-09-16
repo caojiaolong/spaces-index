@@ -1,0 +1,41 @@
+{
+  "metadata": {
+    "id": "1094",
+    "title": "《自然极值》系列——5.最速降线的故事",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/1094",
+    "date": "2010-12-09",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "source_dom_exact": true,
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "attributes_exact": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 0,
+    "display_formula_count": 0,
+    "image_count": 3,
+    "heading_count": 0,
+    "code_block_count": 0,
+    "source_text_sha256": "d453b179607b6430f4b20a008bfab239a1443def9d109534c82e51a7025228ea",
+    "output_text_sha256": "d453b179607b6430f4b20a008bfab239a1443def9d109534c82e51a7025228ea",
+    "latex_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "body_sha256": "74515c1d949fd99f14238869bdeb8b1f0e7a15f0e5a247f6232b855b60af41b5",
+    "converter_version": 1,
+    "format": "html-v1",
+    "source_warnings": [
+      "原文含旧式或脚本嵌入内容，已保留其位置和源码；预览不执行。"
+    ],
+    "fallback_reason": "Unsupported body element: embed",
+    "markdown_sha256": "a9f9a143433132d3a92c0ceef95f3b5b6789ae96d1e0617525d37779fc91321e"
+  },
+  "fetched_at": "2026-09-14T14:26:38+00:00",
+  "source_snapshot_sha256": "325fb526fc9ba2fefeec2b514302de0307c1234fe75c3415be08bd590951944f",
+  "images": {},
+  "local_only": true
+}

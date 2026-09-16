@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "384",
+    "title": "【NASA每日一图】Messier 88",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/384",
+    "date": "2010-01-30",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 0,
+    "display_formula_count": 0,
+    "image_count": 1,
+    "heading_count": 0,
+    "code_block_count": 0,
+    "source_text_sha256": "ce9f53294523073e2ff6fd81a2c29f094e707ef6fc3380d4856d869df5520dc0",
+    "output_text_sha256": "ce9f53294523073e2ff6fd81a2c29f094e707ef6fc3380d4856d869df5520dc0",
+    "latex_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "body_sha256": "cbb03c6f00b93fa839759c2465a4b14f4f7434e8aa654e13e7f41f27972a1888",
+    "converter_version": 1,
+    "markdown_sha256": "594bde256cc0f9afa40cf35bad4b6b98c34687822bfeaa4cecd9fe9954f219b5"
+  },
+  "fetched_at": "2026-09-14T14:42:42+00:00",
+  "source_snapshot_sha256": "b7d7bfbf38ee79b4acd1bd6decf6676dfe42f1fcbecca2ddef26c8103ecefb33",
+  "images": {},
+  "local_only": true
+}

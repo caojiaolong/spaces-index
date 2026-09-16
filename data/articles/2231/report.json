@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "2231",
+    "title": "《费恩曼物理讲义》在线版",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/2231",
+    "date": "2013-12-28",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 0,
+    "display_formula_count": 0,
+    "image_count": 0,
+    "heading_count": 0,
+    "code_block_count": 0,
+    "source_text_sha256": "d9aa7ff26907fa2ede68746bb9b9a3d6319de83d392fd07f1203693bab640859",
+    "output_text_sha256": "d9aa7ff26907fa2ede68746bb9b9a3d6319de83d392fd07f1203693bab640859",
+    "latex_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "body_sha256": "2ed71fdc0d740928ce256b6833cfdba90c5808f21aee4687824ded699b6defd0",
+    "converter_version": 1,
+    "markdown_sha256": "9bba3e2307d62b8b40ae4467871cef1dca5c2ff0bf6b4c9e90b3afac0542d262"
+  },
+  "fetched_at": "2026-09-14T13:58:04+00:00",
+  "source_snapshot_sha256": "766237ea43e7653c920513c9f2294d376fe4064c16e123d43551ec176ac55231",
+  "images": {},
+  "local_only": true
+}

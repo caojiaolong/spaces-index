@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "3580",
+    "title": "【分享】兴隆山的双子座流星雨",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/3580",
+    "date": "2015-12-28",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 0,
+    "display_formula_count": 0,
+    "image_count": 1,
+    "heading_count": 0,
+    "code_block_count": 0,
+    "source_text_sha256": "19778e5d949a0f990ce1bbd705b15bcd8a196dc4f1e933f407b433d5ef3581c8",
+    "output_text_sha256": "19778e5d949a0f990ce1bbd705b15bcd8a196dc4f1e933f407b433d5ef3581c8",
+    "latex_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "body_sha256": "eacf8c09353878f7b3dc97647643604c9bfb63b1997999c4193be47375c2c518",
+    "converter_version": 1,
+    "markdown_sha256": "60b12153c196bee36719ce5d5bab0a7c9481a3071a27a31e72d7399071128512"
+  },
+  "fetched_at": "2026-09-14T13:43:13+00:00",
+  "source_snapshot_sha256": "792b6ff0c6b33f1a09dc6ca85bce83b2bd0b57a15e73cf836e3af8207ffbe73e",
+  "images": {},
+  "local_only": true
+}

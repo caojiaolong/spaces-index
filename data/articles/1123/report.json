@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "1123",
+    "title": "N体问题的30个周期性解",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/1123",
+    "date": "2010-12-19",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 0,
+    "display_formula_count": 0,
+    "image_count": 1,
+    "heading_count": 0,
+    "code_block_count": 0,
+    "source_text_sha256": "ebce9b636fac4c218584b15dbe2ac1dc850be18153a5770a613d6ec7e7b8ba63",
+    "output_text_sha256": "ebce9b636fac4c218584b15dbe2ac1dc850be18153a5770a613d6ec7e7b8ba63",
+    "latex_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "body_sha256": "d0895aff432533d237b02fe804267923f8d57d13e6c8552e714926b59ecfbaed",
+    "converter_version": 1,
+    "markdown_sha256": "55b840549f99e37a71ec2d101dc8cac0bf6e9585299114cab009935a521f37e1"
+  },
+  "fetched_at": "2026-09-14T14:26:11+00:00",
+  "source_snapshot_sha256": "6212d234799ce9ba2609a61fd2498072a45170e44e827b81f132586e9b865c78",
+  "images": {},
+  "local_only": true
+}

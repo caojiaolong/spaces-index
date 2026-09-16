@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "3103",
+    "title": "结果恒为整数的多项式",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/3103",
+    "date": "2014-12-04",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 24,
+    "display_formula_count": 6,
+    "image_count": 0,
+    "heading_count": 0,
+    "code_block_count": 0,
+    "source_text_sha256": "3cd42e462b44988aaa226834dfef0660a0ccebb48b53597e278962c6494ec2b5",
+    "output_text_sha256": "3cd42e462b44988aaa226834dfef0660a0ccebb48b53597e278962c6494ec2b5",
+    "latex_sha256": "9f4b922603d702693b4b9a2ec29685dd7d1337c84d7994165fbf757ac1de25e3",
+    "body_sha256": "3861a2cb65aac03a30390bc43b29381f6dbcc3054415b6455fb7b5fc5f3b27ac",
+    "converter_version": 1,
+    "markdown_sha256": "4974fa027a92abe2c9fbe27db149a1f9727f587f9b0279f4c2668efbaf1dec44"
+  },
+  "fetched_at": "2026-09-14T13:49:19+00:00",
+  "source_snapshot_sha256": "62e7e2c69f488f12dbbdf5f06405b088d93d6b39fcf77a68dc8389a419d85aac",
+  "images": {},
+  "local_only": true
+}

@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "8823",
+    "title": "从熵不变性看Attention的Scale操作",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/8823",
+    "date": "2021-12-21",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 68,
+    "display_formula_count": 13,
+    "image_count": 0,
+    "heading_count": 5,
+    "code_block_count": 0,
+    "source_text_sha256": "897a837662dfa72cabc772031ab5f32393b5edc16290134787be458f67db26fc",
+    "output_text_sha256": "897a837662dfa72cabc772031ab5f32393b5edc16290134787be458f67db26fc",
+    "latex_sha256": "b95f93f4cad62785fb147184fd4fcf4efb5388b50a2d044866f5585e68aee488",
+    "body_sha256": "d7a34f4835c4381852009e10add5b94001a5a90abc3808feacd1433da7255fbb",
+    "converter_version": 1,
+    "markdown_sha256": "d7bc3290ac4a3c36c0342da225cf49625cbbbb5c67448ee7d9102fe3f6834b52"
+  },
+  "fetched_at": "2026-09-14T13:02:30+00:00",
+  "source_snapshot_sha256": "a8a0a3e613e974510d5f7fb13265f82d4bf338ec806029570e2d5b7a16cf5a6f",
+  "images": {},
+  "local_only": true
+}

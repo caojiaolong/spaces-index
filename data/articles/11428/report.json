@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "11428",
+    "title": "生成扩散模型漫谈（三十一）：预测数据而非噪声",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/11428",
+    "date": "2025-11-24",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 32,
+    "display_formula_count": 1,
+    "image_count": 6,
+    "heading_count": 6,
+    "code_block_count": 0,
+    "source_text_sha256": "50377a716e25ec161d39d6ed904d0f3ec119b07f3c364e77a97454e43d6b6435",
+    "output_text_sha256": "50377a716e25ec161d39d6ed904d0f3ec119b07f3c364e77a97454e43d6b6435",
+    "latex_sha256": "e60296063d67de2ee869eb7c1b3608ac4d0b91d3ed85335c3fdbeeaf2c675585",
+    "body_sha256": "93fa54e00dececaa18333c11c5ad03f580fa3511826379e8bff64c9082223f37",
+    "converter_version": 1,
+    "markdown_sha256": "dc3c60613adfa9ae6cdcff124413d527714de16210da1b228faf00d2891d8908"
+  },
+  "fetched_at": "2026-09-14T12:38:29+00:00",
+  "source_snapshot_sha256": "5e3d3631dfcc1eef37d40b788abd8bd2e85646446cc4716666bad387451f5a60",
+  "images": {},
+  "local_only": true
+}

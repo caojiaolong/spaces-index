@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "6760",
+    "title": "VQ-VAE的简明介绍：量子化自编码器",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/6760",
+    "date": "2019-06-24",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 108,
+    "display_formula_count": 13,
+    "image_count": 2,
+    "heading_count": 11,
+    "code_block_count": 0,
+    "source_text_sha256": "8a163a4d185403f769574bdb5d1768cdce993ca75721ddd4d3f54561e71efd24",
+    "output_text_sha256": "8a163a4d185403f769574bdb5d1768cdce993ca75721ddd4d3f54561e71efd24",
+    "latex_sha256": "7495101d082d320b457c8bc419138967f9c0f5b6226f53bc9b9d46ba66a8cd41",
+    "body_sha256": "14634f737b8ea1ad44adc852cc18fa4c6f8efee8661c8986d1216acd8cef5c85",
+    "converter_version": 1,
+    "markdown_sha256": "3b18e1ebd85e160c6becf862b8c39fff47ffe43ff7d768734f09fe00aaefb484"
+  },
+  "fetched_at": "2026-09-14T13:19:04+00:00",
+  "source_snapshot_sha256": "276e508e4752cd9cf7f5c75bb1f35ba76ea5f0251536e33c8fba275155bf2d07",
+  "images": {},
+  "local_only": true
+}

@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "11767",
+    "title": "矩阵参数的奇异值熵越高越好吗？",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/11767",
+    "date": "2026-05-29",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 120,
+    "display_formula_count": 15,
+    "image_count": 0,
+    "heading_count": 9,
+    "code_block_count": 0,
+    "source_text_sha256": "f41fccf474bf9c2e0b879935df0a8bef57606b68bac0786367c8bc847d50cf77",
+    "output_text_sha256": "f41fccf474bf9c2e0b879935df0a8bef57606b68bac0786367c8bc847d50cf77",
+    "latex_sha256": "5b625b8af8954e373dfac2ad0a9dc8e0b2b20cc92ae749c25526fbe0764a436b",
+    "body_sha256": "4bd8dc796789aedf7417f816d2d212287915d7802283907daa190a8e2b689a42",
+    "converter_version": 1,
+    "markdown_sha256": "fca6acc8a8d0d0e32e601f1ec3406421d29375b4c05225a95c5bc589e5ff5194"
+  },
+  "fetched_at": "2026-09-14T12:31:11+00:00",
+  "source_snapshot_sha256": "8db207dda3e976a9879910a2ebdce18dfc660accf2b45b0af8f27fa15a2d1aa9",
+  "images": {},
+  "local_only": true
+}

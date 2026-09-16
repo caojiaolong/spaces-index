@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "9775",
+    "title": "自然数集中 N = ab + c 时 a + b + c 的最小值",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/9775",
+    "date": "2023-09-20",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 155,
+    "display_formula_count": 16,
+    "image_count": 0,
+    "heading_count": 8,
+    "code_block_count": 0,
+    "source_text_sha256": "0b21e4b17d3a4063d5735600b5b35afaec9db55d9f920f2365c9ea42fd4117ce",
+    "output_text_sha256": "0b21e4b17d3a4063d5735600b5b35afaec9db55d9f920f2365c9ea42fd4117ce",
+    "latex_sha256": "325954b76baad3c3da85ace2cc7f31f596a80369c0e1e39878deca2613c89b98",
+    "body_sha256": "32c85c8ff2b1fc766727f0bb4076890e36b5ca23b6d29ebcebf3594b139d7b9f",
+    "converter_version": 1,
+    "markdown_sha256": "15653c62d1ef0ead4f53d193db8e1061e93a13d1716099ba5916f3ce11ab75ec"
+  },
+  "fetched_at": "2026-09-14T12:51:53+00:00",
+  "source_snapshot_sha256": "ab9bf6c8abd52fcacb0d0c1081ab339c2c6ee374dfe2e019025131ae8d389b63",
+  "images": {},
+  "local_only": true
+}

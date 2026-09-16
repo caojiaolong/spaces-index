@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "275",
+    "title": "科学空间相册上线,与你分享科学图片",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/275",
+    "date": "2009-11-14",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 0,
+    "display_formula_count": 0,
+    "image_count": 1,
+    "heading_count": 0,
+    "code_block_count": 0,
+    "source_text_sha256": "6a56092cc1eb1c3c40f01be8247f13648a5022dd371efa10ec7114afa3d14f66",
+    "output_text_sha256": "6a56092cc1eb1c3c40f01be8247f13648a5022dd371efa10ec7114afa3d14f66",
+    "latex_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "body_sha256": "5818293ca9bae756ce92773dc2e5d148fa15494e2fb311ae983bd48b29f23202",
+    "converter_version": 1,
+    "markdown_sha256": "f5a03dc8c0233d2d173ad84d4299a32fcc529a98557ab58699c298cbc137a7b8"
+  },
+  "fetched_at": "2026-09-14T14:46:10+00:00",
+  "source_snapshot_sha256": "a8ebd2fe45e9b13253f6847892ea5036298142be18df760b2aa0d6517e9091d4",
+  "images": {},
+  "local_only": true
+}

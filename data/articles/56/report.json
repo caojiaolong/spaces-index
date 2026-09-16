@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "56",
+    "title": "两道无穷级数：自然数及其平方的倒数和",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/56",
+    "date": "2009-08-05",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 9,
+    "display_formula_count": 4,
+    "image_count": 0,
+    "heading_count": 0,
+    "code_block_count": 0,
+    "source_text_sha256": "33159268ced964701cc260651db9916e552c0204a99691f28ff9374182b48b94",
+    "output_text_sha256": "33159268ced964701cc260651db9916e552c0204a99691f28ff9374182b48b94",
+    "latex_sha256": "f52978a565712a41e67731be64a3496676d08837a0befedcd3917f34b482f516",
+    "body_sha256": "eb996e793dd8ef030d9c0a928473ae5fae4e5d9168c6a8aa8285cb736bb20554",
+    "converter_version": 1,
+    "markdown_sha256": "04985148b11d08f95c5c072229edc9a50f03126a24e7bffcd047c489d3539c92"
+  },
+  "fetched_at": "2026-09-14T15:01:23+00:00",
+  "source_snapshot_sha256": "5dcfaa59b4fcdad99c3e34beced8a39a0b1c796b1c37f04b87bbc44637a99970",
+  "images": {},
+  "local_only": true
+}

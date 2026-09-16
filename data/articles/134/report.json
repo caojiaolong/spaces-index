@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "134",
+    "title": "【NASA每日一图】银河系中心",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/134",
+    "date": "2009-09-26",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 0,
+    "display_formula_count": 0,
+    "image_count": 1,
+    "heading_count": 0,
+    "code_block_count": 0,
+    "source_text_sha256": "6435282a6ffa994a9ba6e0d38bfd70ea8ecca684068cfac051ac37dbe88511a9",
+    "output_text_sha256": "6435282a6ffa994a9ba6e0d38bfd70ea8ecca684068cfac051ac37dbe88511a9",
+    "latex_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "body_sha256": "bcf48f0801b8f5a7fdcbb829aa323e3852203e2404d3d98734cd0863ba2f0ab5",
+    "converter_version": 1,
+    "markdown_sha256": "f099d6d0cbc76b0e4692c2e67c93a56e8c4d25f9f392e3c77d4ab003beed7de0"
+  },
+  "fetched_at": "2026-09-14T14:51:57+00:00",
+  "source_snapshot_sha256": "9a91793a1e9dfe9cf47e13ede03193354ed7b69e8bf78d85ae6a23b2dfe41b6b",
+  "images": {},
+  "local_only": true
+}

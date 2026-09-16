@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "1907",
+    "title": "小数的二进制表示",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/1907",
+    "date": "2013-02-05",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 15,
+    "display_formula_count": 3,
+    "image_count": 0,
+    "heading_count": 0,
+    "code_block_count": 0,
+    "source_text_sha256": "d8700ec56d1e5c6cbffc9c32165f64d02f1c0909378680e4fd10696663d6b9bc",
+    "output_text_sha256": "d8700ec56d1e5c6cbffc9c32165f64d02f1c0909378680e4fd10696663d6b9bc",
+    "latex_sha256": "fb9c31c7e3c59e06f811edbbed523992f84a5d97749fd5b4dd678604d311b54b",
+    "body_sha256": "22109f62a79fa5e090c409266fe6ac72a953c0fb47531bf019e3a55135e917b2",
+    "converter_version": 1,
+    "markdown_sha256": "1a021f5cf25d321ebc5f20f29e2b14a970bc6d4014fe6876b39ca2c88a2f88e3"
+  },
+  "fetched_at": "2026-09-14T14:05:12+00:00",
+  "source_snapshot_sha256": "d6387a8c627df637858e24ad518b66beedad2a506c1f42bc44efa756896d09d8",
+  "images": {},
+  "local_only": true
+}

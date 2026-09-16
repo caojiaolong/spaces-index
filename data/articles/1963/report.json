@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "1963",
+    "title": "2^29365247-1也不是素数！",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/1963",
+    "date": "2013-04-09",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 1,
+    "display_formula_count": 0,
+    "image_count": 0,
+    "heading_count": 0,
+    "code_block_count": 0,
+    "source_text_sha256": "001c3c666b67678938803684227810f1a9efc72cab9ba75527f53fbaabc6c447",
+    "output_text_sha256": "001c3c666b67678938803684227810f1a9efc72cab9ba75527f53fbaabc6c447",
+    "latex_sha256": "3dacefabcb3dcb1108c91edf39363bc4117fdb8db1003ec4c57c3d56830ad1e2",
+    "body_sha256": "37a3a62db9c96478aca16caf132cf8a0ab01cbf2290840c312e53d91c5168bbb",
+    "converter_version": 1,
+    "markdown_sha256": "559c6fa395d03aa5b1f5e90c98a8e99df1e9f3ceabc65faa0f566b41c5bf7fa9"
+  },
+  "fetched_at": "2026-09-14T14:03:28+00:00",
+  "source_snapshot_sha256": "da2c778480b55eac3cb1187239d6f3fc08325f7889c83a9df05aabbe599b31ea",
+  "images": {},
+  "local_only": true
+}

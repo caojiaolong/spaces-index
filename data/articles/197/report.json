@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "197",
+    "title": "【NASA每日一图】星系M33的亮星云",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/197",
+    "date": "2009-10-17",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 0,
+    "display_formula_count": 0,
+    "image_count": 1,
+    "heading_count": 0,
+    "code_block_count": 0,
+    "source_text_sha256": "fe0f9a08f3167416ccfc397f53b5c96ae0494eb7a72651b655e87558d79fab96",
+    "output_text_sha256": "fe0f9a08f3167416ccfc397f53b5c96ae0494eb7a72651b655e87558d79fab96",
+    "latex_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "body_sha256": "d4aed6bc32e9d025ca080f878d81848413a65e1ad47b9836e364fd0c0b48532e",
+    "converter_version": 1,
+    "markdown_sha256": "4e37f1ee12695ee5650b227e2284f0b5e883be44ca2af43a25a481ed820cff50"
+  },
+  "fetched_at": "2026-09-14T14:48:05+00:00",
+  "source_snapshot_sha256": "2cfb73eccbb0c28b99ef0c8e76ae89324cc620d0043e2b9e96ad31b546926b8b",
+  "images": {},
+  "local_only": true
+}

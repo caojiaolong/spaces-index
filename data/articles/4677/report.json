@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "4677",
+    "title": "更别致的词向量模型(五)：有趣的结果",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/4677",
+    "date": "2017-11-19",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 69,
+    "display_formula_count": 26,
+    "image_count": 0,
+    "heading_count": 7,
+    "code_block_count": 1,
+    "source_text_sha256": "1f0956e525182ee708170dad2b816a3076755133b4734a5e1391b9cb4d0278b6",
+    "output_text_sha256": "1f0956e525182ee708170dad2b816a3076755133b4734a5e1391b9cb4d0278b6",
+    "latex_sha256": "fb0f6d5a76e0861f60a2f7de87295b4503157192839e2e2b2c2d243760bbe77c",
+    "body_sha256": "e3acee1bc227362885e5ee7eba1d9a1639952cee65f8ffc82513e8f338017c85",
+    "converter_version": 1,
+    "markdown_sha256": "670b4e464009f18c8bbb71b3949977eb2b551859d2f4b9b8ec3f39d84fd2fb6e"
+  },
+  "fetched_at": "2026-09-14T13:29:39+00:00",
+  "source_snapshot_sha256": "19c1c4e5634858e8749f80836bbbc53871ebf780d8e4c148108f18e57153646b",
+  "images": {},
+  "local_only": true
+}

@@ -1,0 +1,17 @@
+{
+  "metadata": {
+    "id": "2621",
+    "title": "用PyPy提高Python脚本执行效率",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/2621",
+    "date": "2014-06-11",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "fetched_at": "2026-09-14T13:54:10+00:00",
+  "source_snapshot_sha256": "6b066f538b48f5a270cdc5ca71eb29d3ba5a98b877d9ec1a491f1cc43b0d64ce",
+  "validators": {
+    "etag": null,
+    "last_modified": null
+  }
+}

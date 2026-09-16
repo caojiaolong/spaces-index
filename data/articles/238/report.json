@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "238",
+    "title": "钱老，一路走好！",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/238",
+    "date": "2009-10-31",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 0,
+    "display_formula_count": 0,
+    "image_count": 0,
+    "heading_count": 0,
+    "code_block_count": 0,
+    "source_text_sha256": "1255c7a29688db85e3571997db2d6c54522439c6261ec26203cad53089bd92c6",
+    "output_text_sha256": "1255c7a29688db85e3571997db2d6c54522439c6261ec26203cad53089bd92c6",
+    "latex_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "body_sha256": "210309b78190b2e6373118e23ea96993230cd5d44325650417e31e3cda948ce5",
+    "converter_version": 1,
+    "markdown_sha256": "e4ffdd5f48d4797302b03a7fc31e80b1aa0ff125cdb2dc77a0d9326aa8e01a1a"
+  },
+  "fetched_at": "2026-09-14T14:46:57+00:00",
+  "source_snapshot_sha256": "201d1c13f25c88b6df073db296ebfaa162f870782de4d2b27a87d66ac6600ec2",
+  "images": {},
+  "local_only": true
+}

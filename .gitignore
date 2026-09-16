@@ -4,6 +4,12 @@ __pycache__/
 *$py.class
 
 .pytest_cache/
+.cache/
+/local/
+/data/articles/.extract.lock
+/data/articles/run.log
+/data/articles/summary.json
+/data/**/*.tmp
 .coverage
 htmlcov/
 

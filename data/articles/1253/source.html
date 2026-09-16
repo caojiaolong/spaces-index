@@ -1,0 +1,12 @@
+<div class="PostContent" id="PostContent">
+<p>假如没有自转，单凭物质之间的引力作用，天体应该都会呈现一个很完美（不是绝对完美）的球形。不过绝大多数的天体都存在着自转，因此他们的赤道半径都比极半径长。BoJone<strong><u>粗糙</u></strong>地考虑了一下在<u>引力和惯性离心力</u>的共同作用下，天体所呈现的形状，并与太阳系的一些天体进行对比，发现还是能够吻合到一定程度。现在此和大家分享，供读者参考。</p><p></p><div class="pic-container"><div class="typecho-caption aligncenter" style="max-width: 100%"><div style="margin: 5px"><a href="/attachment/1252/" title="地球扁率推导.PNG"><img alt="地球扁率推导" src="/usr/uploads/2011/02/1137715539.png" style="max-width:100%"/></a></div><p class="typecho-caption-text">地球扁率推导</p></div></div><p>以地球为例，假如没有自转，地球应该是一个球体。这里只在平面考虑，地球方程为$x^2+y^2=R^2$，R是地球半径，即极半径。由于发生了自转，赤道会相应地被“拉长”；越靠近赤道，“拉”得就越长。设地球均匀自转，角速度为$\omega$。没有转动时，地球表面上一点(x,y)（设质量为1）所受到的引力的水平分量为$\frac{GM}{R^2}\cdot \frac{\sqrt{R^2-y^2}}{R}$（<u>我们用含y而不是x的式子写出，因为x轴在旋转前后会变化，而y不变</u>）。这里我们只需要考虑<u>水平分量</u>，因为向心力是水平方向的，大小为$\omega^2 \sqrt{R^2-y^2}$。向心力由<u>引力的水平分量</u>提供，即等价于减少了引力，即旋转后引力的<u>水平分量</u>为$\frac{GM}{R^2}\cdot \frac{\sqrt{R^2-y^2}}{R}-\omega^2 \sqrt{R^2-y^2}$。</p><p>接着我们做一个<font color="red">比较主观性的<strong>假设</strong></font>：“拉长”的比例与引力的水平分量成反比（稍后我们将会发现这个假设相当正确）。于是我们得到原来的圆形的横坐标被拉长为原来的<br/>
+$$\frac{\frac{GM}{R^2}\cdot \frac{\sqrt{R^2-y^2}}{R}}{\frac{GM}{R^2}\cdot \frac{\sqrt{R^2-y^2}}{R}-\omega^2 \sqrt{R^2-y^2}}$$<br/>
+倍。这个结果恰好是一个常数，等于$\frac{1}{1-\frac{\omega^2 R^3}{GM}}$。即<u><font color="red">旋转后的图形变成了一个椭圆</font></u>，其方程为$(1-\frac{\omega^2 R^3}{GM})^2 x^2+y^2=R^2$。作近似处理，$\frac{1}{1-\frac{\omega^2 R^3}{GM}}\approx 1+\frac{\omega^2 R^3}{GM}(|\frac{\omega^2 R^3}{GM}| \ll 1)$，即水平方向的长度被拉长了$\frac{\omega^2 R^3}{GM}$。</p><p>我们用一些例子来检验一下。就地球来说，查维基可以得到赤道半径6,378km，两极半径6,356km，相差大约22km。用上式计算<br/>
+$$R\cdot \frac{\omega^2 R^3}{GM}=R\cdot \frac{(\omega R)^2}{v_1^2}=21.76km$$</p><p>其中$v_1=7.9km/s$是第一宇宙速度，$R=6356km,\omega=\frac{2\pi}{86400s}$。可见，这是一个相当好的近似。为了证明这不是“纯属巧合”，我们再来用木星的数据进行检验。</p><p>木星是太阳系最大的一个行星，赤道半径71,492km，两极半径66,854km，相差4638km（差不多一个地球了，呵呵），自转一周只需要9.9小时。用上式计算<br/>
+$$R\cdot \frac{\omega^2 R^3}{GM}=R\cdot \frac{(\omega R)^2}{v_1^2}\approx 5100km$$</p><p>虽然不是特别精确，不过BoJone认为吻合得还是相当不错了，毕竟这是一个如此粗糙的模型！最后我们得到了一个扁率因子$\frac{\omega^2 R^3}{GM}$！欢迎大家作进一步的修正！</p>
+
+
+
+
+
+</div>

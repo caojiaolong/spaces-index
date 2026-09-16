@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "4046",
+    "title": "【理解黎曼几何】8. 处处皆几何 (力学几何化)",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/4046",
+    "date": "2016-11-02",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 39,
+    "display_formula_count": 18,
+    "image_count": 0,
+    "heading_count": 4,
+    "code_block_count": 0,
+    "source_text_sha256": "82486bedefd97a278f91c8229f6f637740bc5279189d8b843a26eacba1628a78",
+    "output_text_sha256": "82486bedefd97a278f91c8229f6f637740bc5279189d8b843a26eacba1628a78",
+    "latex_sha256": "2d81c7fb26dab21471448a7263f11adf762686437c4bb0b953e7a8899581c466",
+    "body_sha256": "59310de7d7c8dbadc058a3b730c6a3947b9f1c44ac2fcab3ada3968b87608492",
+    "converter_version": 1,
+    "markdown_sha256": "4aae7170b3dc32b59c864c7fa1094266a63df12f440de84aafd988ab0bc15a86"
+  },
+  "fetched_at": "2026-09-14T13:37:11+00:00",
+  "source_snapshot_sha256": "f5f46773b1707aec4ed64079dd08f05ff2bc291086be3a3f23704fc0373e7790",
+  "images": {},
+  "local_only": true
+}

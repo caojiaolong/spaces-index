@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "5067",
+    "title": "【分享】千万级百度知道语料",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/5067",
+    "date": "2018-01-30",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 0,
+    "display_formula_count": 0,
+    "image_count": 0,
+    "heading_count": 8,
+    "code_block_count": 1,
+    "source_text_sha256": "eb4ec00987b67d7856a3cfa33cbb4c8c0bca8897fab84c36928dbe764de1835d",
+    "output_text_sha256": "eb4ec00987b67d7856a3cfa33cbb4c8c0bca8897fab84c36928dbe764de1835d",
+    "latex_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "body_sha256": "703c916d09b3d83d3eb973416aba95d0ed2321b521923880c53a5be07a0b880a",
+    "converter_version": 1,
+    "markdown_sha256": "3959c01a70f4f1a82746149f0b49fb040bf0f6e56f38ac29c25c2ca9f0e49b34"
+  },
+  "fetched_at": "2026-09-14T13:28:21+00:00",
+  "source_snapshot_sha256": "337d1b17f0679f9a2747fec6a0f3ce303df4ca14f708cfc20627dfe9f81dbafd",
+  "images": {},
+  "local_only": true
+}

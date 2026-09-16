@@ -1,0 +1,39 @@
+{
+  "metadata": {
+    "id": "8046",
+    "title": "SPACES：“抽取-生成”式长文本摘要（法研杯总结）",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/8046",
+    "date": "2021-01-01",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "source_dom_exact": true,
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "attributes_exact": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 32,
+    "display_formula_count": 4,
+    "image_count": 6,
+    "heading_count": 17,
+    "code_block_count": 0,
+    "source_text_sha256": "7eab621e80e45312aa4b2174e3c85b0bc6cbb744e0a6bae1f2570a7bdfd6ab05",
+    "output_text_sha256": "7eab621e80e45312aa4b2174e3c85b0bc6cbb744e0a6bae1f2570a7bdfd6ab05",
+    "latex_sha256": "862b42f4e224acb6ce6af284c0ad808d8607770a248d7efdecc25d11292af940",
+    "body_sha256": "2f781f08ed201c5baaf9026be7d6ad9da25bd37325147450be7b329d94badade",
+    "converter_version": 1,
+    "format": "html-v1",
+    "source_warnings": [],
+    "fallback_reason": "Unsupported body element: del",
+    "markdown_sha256": "6d529d826fcfbb016a2a5a37f00800beb7c7fc800048790d9073521b15fffdd8"
+  },
+  "fetched_at": "2026-09-14T13:09:01+00:00",
+  "source_snapshot_sha256": "7197645db4b9f229ad054dbcb65429e8cdf92c0ffa60611c0dfb6d47372a5c46",
+  "images": {},
+  "local_only": true
+}

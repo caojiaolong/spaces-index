@@ -1,0 +1,17 @@
+{
+  "metadata": {
+    "id": "8338",
+    "title": "Transformer升级之路：3、从Performer到线性Attention",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/8338",
+    "date": "2021-04-22",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "fetched_at": "2026-09-14T13:07:06+00:00",
+  "source_snapshot_sha256": "615cfde757de716f299857e2e4c17bc76278bb4f708e4fa8fdd0f3e1519f74ac",
+  "validators": {
+    "etag": null,
+    "last_modified": null
+  }
+}

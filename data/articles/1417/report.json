@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "1417",
+    "title": "一道整数边三角形题目",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/1417",
+    "date": "2011-07-19",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 23,
+    "display_formula_count": 2,
+    "image_count": 0,
+    "heading_count": 0,
+    "code_block_count": 0,
+    "source_text_sha256": "a894f66aee7ed2a30c91d8f10ef009e050b47d55e48c2dc0579f5d80f1a244d7",
+    "output_text_sha256": "a894f66aee7ed2a30c91d8f10ef009e050b47d55e48c2dc0579f5d80f1a244d7",
+    "latex_sha256": "86e1dd420867769cd6c9c075aa31f451a9c353172888f22f511f118617055659",
+    "body_sha256": "0d4397e6d2c6f1beb79d19829d64332f3450069db3841845ae4aa26b82968c29",
+    "converter_version": 1,
+    "markdown_sha256": "67e9f76b4457ee20e34c05917f9dfb3c76423aa0f7d464ebc3fe34ac93c9edec"
+  },
+  "fetched_at": "2026-09-14T14:19:26+00:00",
+  "source_snapshot_sha256": "e7359c2d6b0e3bc63e616dd56aebabe5b779e56ef2cd996671dab5eeb260c824",
+  "images": {},
+  "local_only": true
+}

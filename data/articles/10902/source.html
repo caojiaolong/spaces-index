@@ -1,0 +1,40 @@
+<div class="PostContent" id="PostContent">
+<p>前两天，QQ群里有群友抛出了一道不等式求证：<br/>
+</p><div class="pic-container"><div class="typecho-caption aligncenter" style="max-width: 440px"><div style="margin: 5px"><a href="/usr/uploads/2025/04/3939521975.jpg" target="_blank" title="点击查看原图"><img alt="一道概率相关的不等式，出自《There is no fast single hashing algorithm》" src="/usr/uploads/2025/04/3939521975.jpg" style="max-width: 100%"/></a></div><p class="typecho-caption-text">一道概率相关的不等式，出自《There is no fast single hashing algorithm》</p></div></div><p>简短的题目，加上“easily”的提示，让人觉得这似乎是显然成立的结果，然而提问者却表示尝试了很久仍未果。那么实际情况如何呢？是否真的是显然成立呢？</p><h2 id="初步尝试">初步尝试</h2><p>题目等价于证<br/>
+\begin{equation}\sum_{i=0}^j p^i \leq \sum_{i=0}^j \left(\log\frac{1}{1-p}\right)^i/i!,\qquad p\in[0, 1)\label{eq:q}\end{equation}<br/>
+所给的提示是<br/>
+\begin{equation}\log\frac{1}{1-p} = \sum_{i=1}^{\infty} \frac{p^i}{i} = p + \frac{p^2}{2} + \frac{p^3}{3} + \cdots \label{eq:log-1-p}\end{equation}<br/>
+这个提示似乎在引导我们替换掉式$\eqref{eq:q}$右端的$\log\frac{1}{1-p}$，然后展开成$p$的幂级数来逐项对比。由于$\log\frac{1}{1-p}$的展开式系数全是正数，所以式$\eqref{eq:q}$展开成$p$的幂级数后每一项系数必然也都是正数，因此我们只要证明前$j$项系数都大于等于1。</p><p>思路看上去靠谱，然而将一个幂级数的$i$次幂重新展开为幂级数是一件非常繁琐的事情，所以实际上很难走通。笔者又另外尝试了一些思路，比如设$x=\log\frac{1}{1-p}$转为关于$x$的不等式来证，看上去也很有希望，但最终都被卡住，无法完整完成证明。</p><p>所以，初次尝试宣布失败。</p><h2 id="泰勒硬刚">泰勒硬刚</h2><p>兜兜转转，回到原点。试了大半天，总感觉还是将式$\eqref{eq:q}$右端展开为幂级数的思路靠谱，但直接对式$\eqref{eq:log-1-p}$求幂走不通的话，我们只能回到泰勒展开的原始做法——求导。</p><p>简单起见，我们定义<br/>
+\begin{equation}f_j(x) = \sum_{i=0}^j \frac{x^i}{i!}\end{equation}<br/>
+原题就是证<br/>
+\begin{equation}f_j(x) \geq \sum_{i=0}^j p^i,\qquad x = \log\frac{1}{1-p}\end{equation}<br/>
+我们转化为证<br/>
+\begin{equation}\left.\frac{d^k}{dp^k}f_j(x)\right|_{p=0} \,\,\geq\,\, \left\{\begin{aligned}&amp;\, 1,\,\, k \leq j \\[5pt]<br/>
+&amp;\,0,\,\, k &gt; j\end{aligned}\right.\end{equation}<br/>
+留意到当$j \geq 0$时$f_j(0)=1$，当$j &lt; 0$时我们定义$f_j(x)\equiv 0$，以及成立$f_j'(x)= f_{j-1}(x)$，于是我们有<br/>
+\begin{gather}\frac{d}{dp}f_j(x) = f_{j-1}(x) \frac{1}{1-p} \\<br/>
+\frac{d^2}{dp^2}f_j(x) = [f_{j-1}(x) + f_{j-2}(x)]\frac{1}{(1-p)^2} \\<br/>
+\frac{d^3}{dp^3}f_j(x) = [2f_{j-1}(x) + 3f_{j-2}(x) + f_{j-3}(x)]\frac{1}{(1-p)^3} \\<br/>
+\vdots \notag\\<br/>
+\frac{d^k}{dp^k}f_j(x) = [\alpha_1 f_{j-1}(x) + \alpha_2 f_{j-2}(x) + \cdots + \alpha_k f_{j-k}(x)]\frac{1}{(1-p)^k} \\[8pt]<br/>
+\frac{d^{k+1}}{dp^{k+1}}f_j(x) = \left[\begin{aligned}<br/>
+\alpha_1 f_{j-2}(x) + \alpha_2 f_{j-3}(x) + \cdots + \alpha_k f_{j-k-1}(x) \\<br/>
++ k(\alpha_1 f_{j-1}(x) + \alpha_2 f_{j-2}(x) + \cdots + \alpha_k f_{j-k}(x))<br/>
+\end{aligned}\right]\frac{1}{(1-p)^{k+1}}<br/>
+\end{gather}<br/>
+规律：$\frac{d^k}{dp^k}f_j(x)$是$f_{j-1}(x),f_{j-2}(x),\cdots,f_{j-k}(x)$的线性组合与$\frac{1}{(1-p)^k}$的乘积，注意其实我们只关心$\left.\frac{d^k}{dp^k}f_j(x)\right|_{p=0}$的值，上式代入$p=0$后就等于$f_{j-1}(x),f_{j-2}(x),\cdots,f_{j-k}(x)$中非零项的系数之和（注意$f_{j-1}(0),f_{j-2}(0),\cdots,f_{j-k}(0)$非1即0）。根据$f_j(x)$的求导规律，我们可以得出：当$k \leq j$时，有<br/>
+\begin{equation}\left.\frac{d^k}{dp^k}f_j(x)\right|_{p=0} = k \times \left.\frac{d^{k-1}}{dp^{k-1}}f_j(x)\right|_{p=0}\end{equation}<br/>
+所以$\left.\frac{d^k}{dp^k}f_j(x)\right|_{p=0} = k!$，那么根据泰勒展开式$p^k$项的系数为$k!/k!=1$；当$k &gt; j$时，由于此时$f_{j-k}(0)=0$，所以$\left.\frac{d^k}{dp^k}f_j(x)\right|_{p=0} &lt; k!$，所以$p^k$项的系数则小于1，但仍旧大于零，因此所证不等式成立。</p><h2 id="显然易得">显然易得</h2><p>这样看来，原题目并不是像作者说的显然成立了？笔者开始也是这样认为的，直到另一位群友给出了一个极其简单的理解视角，才恍然大悟，这道题还真的是显然成立的！</p><p>这个视角充分体现了逆向思维，如下：<br/>
+\begin{equation}\begin{aligned}<br/>
+\sum_{i=0}^j \left(\log\frac{1}{1-p}\right)^i/i! =&amp;\, \sum_{i=0}^{\infty} \left(\log\frac{1}{1-p}\right)^i/i! - \sum_{i=j+1}^{\infty} \left(\log\frac{1}{1-p}\right)^i/i! \\<br/>
+=&amp;\, \exp\left(\log\frac{1}{1-p}\right) - \sum_{i=j+1}^{\infty} \left(\log\frac{1}{1-p}\right)^i/i! \\<br/>
+=&amp;\, \frac{1}{1-p} - \sum_{i=j+1}^{\infty} \left(\log\frac{1}{1-p}\right)^i/i! \\<br/>
+=&amp;\, \sum_{i=1}^{\infty} p^i - \sum_{i=j+1}^{\infty} \left(\log\frac{1}{1-p}\right)^i/i! \\<br/>
+\end{aligned}\end{equation}<br/>
+注意$\log\frac{1}{1-p}\sim p$，所以后面的$\sum_{i=j+1}^{\infty}$部分，只对$p^{j+1}$及以上的项有贡献，因此我们就近乎显然地证明了右端展开式的前$j+1$项系数都是1！整个证明并不难理解，真正难的地方是勇敢将右端的求和推到无穷项，然后留意到误差部分只对$p^{j+1}$及以上有贡献，这是经典的逆向思维。</p><p>数学，妙不可言～</p>
+
+
+
+
+
+</div>

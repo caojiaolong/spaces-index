@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "557",
+    "title": "【通知转载】国家天文台信息技术类人才招聘",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/557",
+    "date": "2010-03-23",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 0,
+    "display_formula_count": 0,
+    "image_count": 0,
+    "heading_count": 0,
+    "code_block_count": 0,
+    "source_text_sha256": "a7980fedf2d49777f591fddc9b747fde42e5d26ed8a6d5ada01249d6ef95a732",
+    "output_text_sha256": "a7980fedf2d49777f591fddc9b747fde42e5d26ed8a6d5ada01249d6ef95a732",
+    "latex_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "body_sha256": "7f307e94e0e1e41185bb299b3f3c5e48bb911e389dcf1ab3ace32d2726538c70",
+    "converter_version": 1,
+    "markdown_sha256": "38a35155442757f64960c844a01966015428edf15a395016ce36dfaa8802eef3"
+  },
+  "fetched_at": "2026-09-14T14:38:49+00:00",
+  "source_snapshot_sha256": "bfc13664822a9895ed8bb9dab71948bc5a2bbdb94c530301ed8fbf303df515f7",
+  "images": {},
+  "local_only": true
+}

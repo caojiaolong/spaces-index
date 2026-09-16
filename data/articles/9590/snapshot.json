@@ -1,0 +1,17 @@
+{
+  "metadata": {
+    "id": "9590",
+    "title": "梯度视角下的LoRA：简介、分析、猜测及推广",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/9590",
+    "date": "2023-04-17",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "fetched_at": "2026-09-14T12:54:33+00:00",
+  "source_snapshot_sha256": "b3aa1f3e0038e27bafc09565a6ddae9deaefbe589d37be0cf1b5e602c46f92b6",
+  "validators": {
+    "etag": null,
+    "last_modified": null
+  }
+}

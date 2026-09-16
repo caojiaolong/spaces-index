@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "1168",
+    "title": "三连杆装置曲线方程",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/1168",
+    "date": "2011-01-08",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 24,
+    "display_formula_count": 9,
+    "image_count": 1,
+    "heading_count": 0,
+    "code_block_count": 0,
+    "source_text_sha256": "6bc5b37f59aea4716765f6041c996314e0a8ea222b266d21e30b166028cf614a",
+    "output_text_sha256": "6bc5b37f59aea4716765f6041c996314e0a8ea222b266d21e30b166028cf614a",
+    "latex_sha256": "14e43518c01ff1585099bdfadc5a554b3690224b4c8b093da521e27b48e73d35",
+    "body_sha256": "1ee60e09420d9bcd68458f14508d32868bb82e516305ae583b5c3484cb72b6c6",
+    "converter_version": 1,
+    "markdown_sha256": "554ae6e0cd7bb349adf0929ae1fef844dfda5a80d2ad6129fc6be2a511651444"
+  },
+  "fetched_at": "2026-09-14T14:25:30+00:00",
+  "source_snapshot_sha256": "4acaf16d5f2d8bae7b41a14d6ea0faf3e04e816ee2a0f109ab7624468bd3149f",
+  "images": {},
+  "local_only": true
+}

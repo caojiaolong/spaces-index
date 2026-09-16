@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "144",
+    "title": "温馨|生活一角",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/144",
+    "date": "2009-10-03",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 0,
+    "display_formula_count": 0,
+    "image_count": 5,
+    "heading_count": 0,
+    "code_block_count": 0,
+    "source_text_sha256": "9e45d5c5c031c96b495a5baf0b82b048a7cdde28e4c165ce9ae4eaec500179a9",
+    "output_text_sha256": "9e45d5c5c031c96b495a5baf0b82b048a7cdde28e4c165ce9ae4eaec500179a9",
+    "latex_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "body_sha256": "60b22e47c48084e811fad5e8730296a49f33751ddad299301fd6124cfcf202cb",
+    "converter_version": 1,
+    "markdown_sha256": "a2ee8b47a2db7f5a16900e654920d3ed367c442ef7c38c16120ac7c15cf5525f"
+  },
+  "fetched_at": "2026-09-14T14:50:46+00:00",
+  "source_snapshot_sha256": "70a07c5c221e95ca7e68ac7ccea2a7d9b51adcb54f2f7dbd66209f36a13257f9",
+  "images": {},
+  "local_only": true
+}

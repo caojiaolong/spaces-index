@@ -1,0 +1,72 @@
+# 级数求和——近似的无穷级数
+
+> 作者：苏剑林 · 科学空间 · 2010-09-10
+>
+> 原文：<https://spaces.ac.cn/archives/922>
+>
+> 原文许可：[CC BY-NC-ND 2.5 CN（署名-非商业性使用-禁止演绎）](https://creativecommons.org/licenses/by-nc-nd/2.5/cn/)。
+>
+> 本文件由 spaces-index 非官方、非商业项目进行必要的 HTML → Markdown 格式转换；正文未做摘要、润色、翻译或重组。项目不代表作者，也不表示作者为项目背书。
+>
+> 署名及附加许可说明不代表已获得作者额外授权。第三方素材权利依其原有声明。
+>
+> 原站转载与引用说明：[科学空间 FAQ](https://spaces.ac.cn/archives/6508#%E6%96%87%E7%AB%A0%E5%A6%82%E4%BD%95%E8%BD%AC%E8%BD%BD/%E5%BC%95%E7%94%A8)
+
+---
+
+级数是数学的一门很具有实用性的分支，而级数求和则是级数研究中的核心内容之一。很多问题都可以表示成一个级数的和或积，也就是$\sum_{i=1}^n f(i)$或者是$\prod_{i=1}^n f(i)$类型的运算。其中，$\ln(\prod_{i=1}^n f(i))=\sum_{i=1}^n \ln(f(i))=k$，因此$\prod_{i=1}^n f(i)=e^k$，也就是说，级数求积也可以变为级数求和来计算，换言之我们可以把精力放到级数求和上去。
+
+为了解决一般的级数求和问题，我们考虑以下方程的解：
+$$f(x+\epsilon)-f(x)=g(x)\tag{1}$$其中g(x)是已知的以x为变量的函数式，$\epsilon $是常数，初始条件是$f(k)=b$，要求f(x)的表达式。
+
+把$f(x+\epsilon )$用泰勒级数展开，得到
+$$f(x+\epsilon )=f(x)+f'(x)\epsilon +1/2 f''(x)\epsilon^2+1/6 f'''(x)\epsilon^3+...$$
+代入原方程后得到
+$$f'(x)\epsilon +1/2 f''(x)\epsilon^2+1/6 f'''(x)\epsilon^3+...=g(x)\tag{2}$$逐项积分得
+$$f(x)\epsilon +1/2 f'(x)\epsilon^2+1/6 f''(x)\epsilon^3+1/24 f'''(x)\epsilon^4+...=\int g(x)dx$$
+整理得到
+$$f(x)\epsilon =\int g(x)dx-(1/2 f'(x)\epsilon^2+1/6 f''(x)\epsilon^3+1/24 f'''(x)\epsilon^4+...)\tag{3}$$
+将(1)各项微分，得到
+$$f'(x+\epsilon)-f'(x)=g'(x)\tag{4}$$由公式(2)可以得到
+$$f'(x)\epsilon =\int g'(x)dx-(1/2 f''(x)\epsilon^2+1/6 f'''(x)\epsilon^3+1/24 f^{(4)}(x)\epsilon^4+...)\tag{5}$$将(5)代入(3)得到
+$$\begin{aligned}f(x)\epsilon = \int g(x)dx-{1/2 [g(x)-(1/2 f''(x)\epsilon^2+1/6 f'''(x)\epsilon^3+1/24 f^{(4)}(x)\epsilon^4+...)]\epsilon^2 \\ +1/6 f''(x)\epsilon^3+1/24 f'''(x)\epsilon^4+..} \\ = \int g(x)dx-1/2 g(x)+\sum_{i=2}^{\infty}(1/2\cdot 1/{i!}\epsilon^{i+2}-1/{(i+1)!}\epsilon^{i+1}) f^{(i)}(x)\end{aligned}\tag{6}$$
+上面的推算会给我们一些启示：我们可以发现，方程
+$$f(x+\epsilon)-f(x)=g(x)$$
+的解可以表示为级数
+$$\epsilon f(x)=C+a_0\int g(x)dx+a_1 g(x)+a_2 g'(x)+a_3 g''(x)...\tag{7}$$
+其中C和a都是只和$\epsilon$有关的常数。将这个解代入(2)后得到
+$$\begin{aligned}a_0 g(x)+a_1 g'(x)+a_2 g''(x)+a_3 g'''(x)...+ \\ 1/2\cdot (a_0 g'(x)+a_1 g''(x)+a_2 g'''(x)+a_3 g^{(4)}(x)...)\epsilon \\ +1/6\cdot (a_0 g''(x)+a_1 g'''(x)+a_2 g^{(4)}(x)+a_3 g^{(5)}(x)...)\epsilon^2+...=g(x)\end{aligned}$$
+
+整理得
+$$\begin{aligned}a_0 g(x)+(a_1+1/2 a_0 \epsilon) g'(x)+(a_2+1/2 a_1 \epsilon+1/6 a_0 \epsilon^2) g''(x)+ \\ (a_3+1/2 a_2 \epsilon+1/6 a_1 \epsilon^2+1/{24} a_0 \epsilon^2) g'''(x)+...=g(x)\end{aligned}$$
+
+根据级数相等的原则，必须要求
+$$a_0=1,\sum_{i=0}^n(a_i \epsilon^{n-i}\cdot \frac{1}{(n+1-i)!})=0$$
+
+或者写成
+$$a_0=1,a_n=-\sum_{i=0}^{n-1}(a_i \epsilon^{n-i}\cdot \frac{1}{(n+1-i)!})\tag{8}$$
+到此，我们已经求出了方程$f(x+\epsilon)-f(x)=g(x)$的通解了。并且根据初始条件，我们可以得出唯一解。即
+$$\epsilon f(x)=b\epsilon +[a_0\int g(x)dx+a_1 g(x)+a_2 g'(x)+a_3 g''(x)...]_k^x$$
+
+上面讨论了一大片，也许有的读者会感到一片茫然：这和级数有什么关系呀？？有，当然有，比如
+
+> 设$S(n)=\sum\limits_{i=1}^n f(i)$，那么$S(n+1)-S(n)=f(n+1)$。
+
+现在你明白了吧，如果已知通项公式，那么级数求和就等价于方程(1)中$\epsilon=1$的情况！为了应用方便，我们把(8)式中$\epsilon=1$的系数都列出来：
+
+> $a_0=1$
+> $$\begin{aligned}a_1=-1/2,a_2=1/12 \\ a_3=0,a_4=-1/720 \\ a_5=0,a_6=1/30240 \\ a_7=0,a_8=-1/1209600 \\ a_9=0,a_10=1/47900160 \\ a_11=0,a_12=-691/1307674368000\end{aligned}$$
+> \.\.\.\.\.\.
+
+可见，收敛是迅速的。这种求和方法就是著名的“欧拉——马克劳林求和公式”。根据上面的结果，我们尝试为寻找一些求和公式，如$\sum_{x=1}^n x^3$，可以按照以下步骤：
+
+$$\begin{aligned}s(n+1)-s(n)=(n+1)^3,S(1)=1 \\ \int (n+1)^3=1/4 (n+1)^4 \\ \frac{d(n+1)^3}{dn}=3(n+1)^2 \\ \frac{d^2(n+1)^3}{dn^2}=6(n+1) \\ \frac{d^3(n+1)^3}{dn^3}=6\end{aligned}$$
+
+因此
+$$\begin{aligned}\sum_{x=1}^n x^3=&\,S(n) \\
+=&\, 1+[1/4 (n+1)^4+(n+1)^3\cdot (-1/2)+3(n+1)^2\cdot (1/12)+6\cdot (-1/720)]_1^n \\
+=&\,{n^4}/4+{n^3}/2+{n^2}/4\end{aligned}$$
+
+另外，比如可以为n\!寻找一条近似公式。$\ln(n!)=\sum_{x=1}^n \ln x$，即求解$s(x+1)-s(x)=\ln(x+1)$。而$\int \ln (x+1) dx=(x+1) \ln(x+1) -(x+1)+Const$，于是很自然地，一级近似就是$n!\approx e^{(x+1) \ln(x+1) -(x+1)+2(1-\ln2)}$，并可以继续写出：
+$$\begin{aligned}\sum_{x=1}^n \ln x=C_0+[(x+1) \ln(x+1) -(x+1)-1/2 \ln(x+1)+ \\ 1/{12(x+1)}-1/{360(x+1)^3}+1/{1260(x+1)^5}-1/{1680(x+1)^7}..]_k^n\end{aligned}$$
+其中$C_0=\sum_{x=1}^k \ln x$，可见，这条公式是收敛的。

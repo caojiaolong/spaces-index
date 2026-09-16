@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "7661",
+    "title": "修改Transformer结构，设计一个更快更好的MLM模型",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/7661",
+    "date": "2020-08-07",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 40,
+    "display_formula_count": 4,
+    "image_count": 3,
+    "heading_count": 4,
+    "code_block_count": 0,
+    "source_text_sha256": "85b424e1f9bb61af51228caa183139cab82aa354155df02e70e4a6cd31d116fe",
+    "output_text_sha256": "85b424e1f9bb61af51228caa183139cab82aa354155df02e70e4a6cd31d116fe",
+    "latex_sha256": "dc059033fb5b028559e099ed680fdba6ca8eec6a4de9e91b9dc16f5a2047bf9a",
+    "body_sha256": "752361a09a0a62d1a9f164cf2440cc53325bef894bc30ee49e52532c305d1b6e",
+    "converter_version": 1,
+    "markdown_sha256": "7dfb0edf27271a5c3a682fc8d32b2aec90d4deb3739b8c360f8f412d18efd8f0"
+  },
+  "fetched_at": "2026-09-14T13:12:01+00:00",
+  "source_snapshot_sha256": "ebed0ff6fc8a6a1f80d08ce8de67073ee5442da788a81ae97cd80e0d489f37c7",
+  "images": {},
+  "local_only": true
+}

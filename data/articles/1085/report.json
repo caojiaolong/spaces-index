@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "1085",
+    "title": "科学空间：2010年12月重要天象 ",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/1085",
+    "date": "2010-12-04",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 0,
+    "display_formula_count": 0,
+    "image_count": 8,
+    "heading_count": 0,
+    "code_block_count": 0,
+    "source_text_sha256": "717d0a1d9ecf1707dfd4211b0b4feec2461b4d4373640e8c0053d5ed3ad3f5d3",
+    "output_text_sha256": "717d0a1d9ecf1707dfd4211b0b4feec2461b4d4373640e8c0053d5ed3ad3f5d3",
+    "latex_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "body_sha256": "8ea738e3f3166afe4d0c08b73ea949527484961ec01f834a45893f7a712ef952",
+    "converter_version": 1,
+    "markdown_sha256": "2fb3b988ef74bcb61413422ecf8c14419869b77f00dfa26da18603921edb1beb"
+  },
+  "fetched_at": "2026-09-14T14:26:45+00:00",
+  "source_snapshot_sha256": "d71c2608e5f53ac07097d5b590f072c484f14429d822b001e9bba34f6455b7b1",
+  "images": {},
+  "local_only": true
+}

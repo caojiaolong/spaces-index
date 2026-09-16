@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "4118",
+    "title": "基于双向GRU和语言模型的视角情感分析",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/4118",
+    "date": "2016-12-01",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 0,
+    "display_formula_count": 0,
+    "image_count": 0,
+    "heading_count": 4,
+    "code_block_count": 1,
+    "source_text_sha256": "872ca1d722952f5f8e68167269e127e4dfa4b692fe8149c45477e565af762c11",
+    "output_text_sha256": "872ca1d722952f5f8e68167269e127e4dfa4b692fe8149c45477e565af762c11",
+    "latex_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "body_sha256": "b4799a963ede42aa84d695ac2a4fb029241df2f0e5a6c082f733400330588d1c",
+    "converter_version": 1,
+    "markdown_sha256": "7a885d84081283ba2c0980831918023edca20ae4be48e7af738cc5289fb52684"
+  },
+  "fetched_at": "2026-09-14T13:35:38+00:00",
+  "source_snapshot_sha256": "dc826aa37210743bfa3f27945f600386a176f15740a9a65735e6a291f1d5b953",
+  "images": {},
+  "local_only": true
+}

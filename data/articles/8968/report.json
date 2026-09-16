@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "8968",
+    "title": "指数梯度下降 + 元学习 = 自适应学习率",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/8968",
+    "date": "2022-03-03",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 41,
+    "display_formula_count": 12,
+    "image_count": 0,
+    "heading_count": 3,
+    "code_block_count": 0,
+    "source_text_sha256": "46604f016745fa5f39273454008132f773e193d1a424f50a9e0a6108e8f0b74b",
+    "output_text_sha256": "46604f016745fa5f39273454008132f773e193d1a424f50a9e0a6108e8f0b74b",
+    "latex_sha256": "b087d3ff39f0d7437b3416553dd5c1c75bd2c2ae929a4ae2cc3b529f077af8e6",
+    "body_sha256": "8f3e7097cf820e6e2f7ba26a562a64b557750c861262e7870e735b08dbca2ff7",
+    "converter_version": 1,
+    "markdown_sha256": "f747ae1a72f895a8071c498bae00b1edc90d606f146f051afe816db1b58cf481"
+  },
+  "fetched_at": "2026-09-14T13:01:04+00:00",
+  "source_snapshot_sha256": "f89a33409b21379d6ce64ff3cfff66649668601be7d946a532c213ebf9dad8f0",
+  "images": {},
+  "local_only": true
+}

@@ -1,0 +1,17 @@
+{
+  "metadata": {
+    "id": "11233",
+    "title": "ReLU/GeLU/Swish的一个恒等式",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/11233",
+    "date": "2025-08-16",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "fetched_at": "2026-09-14T12:40:25+00:00",
+  "source_snapshot_sha256": "0e2395aa3253105f59e5c2f8e1e94076e8c54d2c7f09bb8d9c23c7dae5e93e3f",
+  "validators": {
+    "etag": null,
+    "last_modified": null
+  }
+}

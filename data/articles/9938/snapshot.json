@@ -1,0 +1,14 @@
+{
+  "metadata": {
+    "id": "9938",
+    "title": "旁门左道之如何让Python的重试代码更加优雅",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/9938",
+    "date": "2024-01-14",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "fetched_at": "2026-09-14T07:36:07+00:00",
+  "source_snapshot_sha256": "12d596ab79336c271ac39be15960c313deb0694b344ef09352f09e7bdc589c48",
+  "validators": {}
+}

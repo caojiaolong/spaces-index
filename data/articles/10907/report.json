@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "10907",
+    "title": "Transformer升级之路：20、MLA好在哪里?（上）",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/10907",
+    "date": "2025-05-04",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 5,
+    "display_formula_count": 5,
+    "image_count": 0,
+    "heading_count": 12,
+    "code_block_count": 0,
+    "source_text_sha256": "3e8b34920d707a395ae442d31b80447423f43e85a2a0226ca9144363825674f8",
+    "output_text_sha256": "3e8b34920d707a395ae442d31b80447423f43e85a2a0226ca9144363825674f8",
+    "latex_sha256": "3c26afcbd56e92a8e74496ee1644d3b45246d8a1d25d85356ea9729247d74951",
+    "body_sha256": "cbf0a3ddaafb1d2e5b2318b074566f584a2233d2c44158ab9849a8bfac70031c",
+    "converter_version": 1,
+    "markdown_sha256": "6249e2036c043f53d123648bd81b26326471ea166fa6dfa2f980520f0d990f7c"
+  },
+  "fetched_at": "2026-09-14T12:42:34+00:00",
+  "source_snapshot_sha256": "d0d0943c7826caf0304a5047bbeb985a2e50ac37a82aa62b639e72fb00106219",
+  "images": {},
+  "local_only": true
+}

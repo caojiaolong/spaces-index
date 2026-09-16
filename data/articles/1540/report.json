@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "1540",
+    "title": "修改了一下背景音乐",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/1540",
+    "date": "2012-01-21",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 0,
+    "display_formula_count": 0,
+    "image_count": 0,
+    "heading_count": 0,
+    "code_block_count": 0,
+    "source_text_sha256": "f201eb568bb6131d596ce5b4566d7ef4aac8f48b8134b78dce5f8d7f432032d2",
+    "output_text_sha256": "f201eb568bb6131d596ce5b4566d7ef4aac8f48b8134b78dce5f8d7f432032d2",
+    "latex_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "body_sha256": "df7d18bc5683c1b55fe7fb7395ca036e4f2145cf288ed4afc93ce76beb527538",
+    "converter_version": 1,
+    "markdown_sha256": "04acfe7cf27fd7dca856d3dcb97b5cb798a07cc8eb571c9157ef24046ce4d881"
+  },
+  "fetched_at": "2026-09-14T14:15:49+00:00",
+  "source_snapshot_sha256": "9b14c3cdb0ea4a3ea11c29851b2e3f26f8dce75fb509d6ce8ab4b5df8c437068",
+  "images": {},
+  "local_only": true
+}

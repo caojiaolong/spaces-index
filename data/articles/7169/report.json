@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "7169",
+    "title": "Self-Orthogonality Module：一个即插即用的核正交化模块",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/7169",
+    "date": "2020-01-12",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 109,
+    "display_formula_count": 9,
+    "image_count": 0,
+    "heading_count": 9,
+    "code_block_count": 0,
+    "source_text_sha256": "a177d0c8b9b5eed2e982f61281b685584d2f46957305536c46c3b41e41d32261",
+    "output_text_sha256": "a177d0c8b9b5eed2e982f61281b685584d2f46957305536c46c3b41e41d32261",
+    "latex_sha256": "721cec0ec8cbe7af85670bb43cf569ebde671bb4b5dba327ae1037d06ca847c3",
+    "body_sha256": "e9d0eee4531a9822fc269e57a7f0842d22a154a579de391fac8e8a21911800a0",
+    "converter_version": 1,
+    "markdown_sha256": "0be4bf01ecfcdc4317f9fdf7bc2e6cc634887d43973ebea37f4c930fb8833653"
+  },
+  "fetched_at": "2026-09-14T13:15:47+00:00",
+  "source_snapshot_sha256": "f51989f4278160a796141ae5c84cedbe37604442fd90a01de9712effdd942658",
+  "images": {},
+  "local_only": true
+}

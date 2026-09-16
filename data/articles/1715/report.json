@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "1715",
+    "title": "又折腾网络了......",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/1715",
+    "date": "2012-09-25",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 0,
+    "display_formula_count": 0,
+    "image_count": 0,
+    "heading_count": 0,
+    "code_block_count": 0,
+    "source_text_sha256": "bf5d01a37714f5312a3e1b9d8d9b3aaa7a1d4d19687f7809f5b02620d8356e1c",
+    "output_text_sha256": "bf5d01a37714f5312a3e1b9d8d9b3aaa7a1d4d19687f7809f5b02620d8356e1c",
+    "latex_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "body_sha256": "3f6093857cd1411eb8a9c03827632fb5edc6a2add8b653f77a67967c8b5ee847",
+    "converter_version": 1,
+    "markdown_sha256": "3ae7aecabd118e1f9094e85c44963aeab2e3d2151991e101cc571a2daa5cca05"
+  },
+  "fetched_at": "2026-09-14T14:10:33+00:00",
+  "source_snapshot_sha256": "649d0bdc431ff4e5903e93c0ac85a4aad7a5b7a6b885e8e127badf892d1047b2",
+  "images": {},
+  "local_only": true
+}

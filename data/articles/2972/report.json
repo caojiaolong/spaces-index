@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "2972",
+    "title": "从费马大定理谈起（十）：x^3+y^3=z^3+w^3",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/2972",
+    "date": "2014-10-10",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 35,
+    "display_formula_count": 14,
+    "image_count": 1,
+    "heading_count": 0,
+    "code_block_count": 0,
+    "source_text_sha256": "b69c7be2d8bf8db56a9a8b26adc2867f640c411554a75b67d7266431eea5508e",
+    "output_text_sha256": "b69c7be2d8bf8db56a9a8b26adc2867f640c411554a75b67d7266431eea5508e",
+    "latex_sha256": "2cd78b9d1abc4207a58d115141daa05f3b7510a9a56994650ad2a2be4bb3441f",
+    "body_sha256": "154bebb7608129244cc3d129c63edb6ede0b27d19e7e6bedcec1da1c9cab2de9",
+    "converter_version": 1,
+    "markdown_sha256": "b0c3bd07bf714a12917efbfb8c3ecdeecd5db3128a20a4a8c4cd17fd6959af0c"
+  },
+  "fetched_at": "2026-09-14T13:50:50+00:00",
+  "source_snapshot_sha256": "97ac9d7df53eb286cf4f4b65793bade80b7d7443885823f8cfb4e71080925a3f",
+  "images": {},
+  "local_only": true
+}

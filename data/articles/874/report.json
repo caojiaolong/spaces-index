@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "874",
+    "title": "《方程与宇宙》:拉格朗日点,复数,向量(五)",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/874",
+    "date": "2010-08-16",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 24,
+    "display_formula_count": 1,
+    "image_count": 1,
+    "heading_count": 0,
+    "code_block_count": 0,
+    "source_text_sha256": "93191e1370b95d7502b73a67bba2ff29a06694bb0fb53aeaa335f12193e5aa63",
+    "output_text_sha256": "93191e1370b95d7502b73a67bba2ff29a06694bb0fb53aeaa335f12193e5aa63",
+    "latex_sha256": "3f7d550820073df9d607f2fdd59eeaa6ad808cd79183d61840f26e8ac89bdfbc",
+    "body_sha256": "0f5adb93c0be125ed4eaddba15e43a325c113c1817bc1c80d2511cfa5c9ba9a1",
+    "converter_version": 1,
+    "markdown_sha256": "9240d4ac660907f06c32e8d30622ddec7b0b74ca7f12e5ab2a51ddc69e337f9a"
+  },
+  "fetched_at": "2026-09-14T14:31:44+00:00",
+  "source_snapshot_sha256": "b012daed184c31adad6411e09df73a22b7da0901c35bbc99ef301add1c9f83df",
+  "images": {},
+  "local_only": true
+}

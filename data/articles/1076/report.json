@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "1076",
+    "title": "《自然极值》系列——4.费马点问题",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/1076",
+    "date": "2010-11-28",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 16,
+    "display_formula_count": 4,
+    "image_count": 3,
+    "heading_count": 0,
+    "code_block_count": 0,
+    "source_text_sha256": "17f4a102c20d6d9c2d685b1bd49346ba1a613540c2e4c3dc7753ea9ba6d95e16",
+    "output_text_sha256": "17f4a102c20d6d9c2d685b1bd49346ba1a613540c2e4c3dc7753ea9ba6d95e16",
+    "latex_sha256": "ea9a7b765f9a11ab554f481ac560b3c18ccd9d6fc75908b6cb0942e453f06a41",
+    "body_sha256": "41fe7a7ed09203c4c7fec064a0d99a795221e174ebffd3144f515c57f35686cd",
+    "converter_version": 1,
+    "markdown_sha256": "2fd6b445ce77c892e20a4f52ed680d8da72dfc74a565dcfda3badc39a5203c07"
+  },
+  "fetched_at": "2026-09-14T14:26:52+00:00",
+  "source_snapshot_sha256": "b90a08d0872727dc305846ee53f70e51ab846560dbf8b8eb3b438fddc7ffe5db",
+  "images": {},
+  "local_only": true
+}

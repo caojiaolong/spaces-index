@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "10077",
+    "title": "生成扩散模型漫谈（二十四）：少走捷径，更快到达",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/10077",
+    "date": "2024-04-23",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 9,
+    "display_formula_count": 0,
+    "image_count": 3,
+    "heading_count": 4,
+    "code_block_count": 0,
+    "source_text_sha256": "0ed1720bf82de180de76ac9cfcee76be9071d9c4daa067cb2a5ca20c0a53cf4f",
+    "output_text_sha256": "0ed1720bf82de180de76ac9cfcee76be9071d9c4daa067cb2a5ca20c0a53cf4f",
+    "latex_sha256": "262374492e4e4322466a3ad05ad80aeca7a06a251589cf948dfc4c6b8bdd6163",
+    "body_sha256": "f42fb875ce5ba6be585eac6a2821b0d25c9dc373f48563574911af8caafd7d84",
+    "converter_version": 1,
+    "markdown_sha256": "ed9cb12b0e8924dc39c73f995071fa3b54d8d5ce42b159a52f5148dd9c9725b8"
+  },
+  "fetched_at": "2026-09-14T12:48:55+00:00",
+  "source_snapshot_sha256": "77b74f70071479ce4a3c022e2a8c27934dc6694d6459023d5dccd23bffabcba2",
+  "images": {},
+  "local_only": true
+}

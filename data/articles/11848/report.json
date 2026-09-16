@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "11848",
+    "title": "简单谈谈K3的MoE和Attention",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/11848",
+    "date": "2026-08-04",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 24,
+    "display_formula_count": 5,
+    "image_count": 1,
+    "heading_count": 10,
+    "code_block_count": 0,
+    "source_text_sha256": "f451175e70897c7f92b47b574ec37967b2531d9fe908d8f5c4b4672222dfc4f3",
+    "output_text_sha256": "f451175e70897c7f92b47b574ec37967b2531d9fe908d8f5c4b4672222dfc4f3",
+    "latex_sha256": "704bcee56085d979db76d4c69f62b21b8b5b7abb5a1178c87bb54b14e055f893",
+    "body_sha256": "f29fd8cc5cbc11c968b303e6a0147803cc9e37c19463db313f3a31d3fa540211",
+    "converter_version": 1,
+    "markdown_sha256": "48b45d57d039d4950c9c9d5976dfb25d1b4b02f33428240d1913b1e2799823d4"
+  },
+  "fetched_at": "2026-09-14T12:30:05+00:00",
+  "source_snapshot_sha256": "59ad1ab2e216d94ae47225a2a6a191e81403bbfb07ce386a55af714df0dc51d4",
+  "images": {},
+  "local_only": true
+}

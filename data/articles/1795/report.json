@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "id": "1795",
+    "title": "相对运动的一道妙题！",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/1795",
+    "date": "2012-12-02",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 0,
+    "display_formula_count": 0,
+    "image_count": 0,
+    "heading_count": 0,
+    "code_block_count": 0,
+    "source_text_sha256": "eef729f9099690fa2ff54a49365deac926889965e1041e822779819eaeb1dfce",
+    "output_text_sha256": "eef729f9099690fa2ff54a49365deac926889965e1041e822779819eaeb1dfce",
+    "latex_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "body_sha256": "6b0b30d1d1b75f167d83395e05a8b984eb8ec86eaaf153a89708e3181048bf43",
+    "converter_version": 1,
+    "markdown_sha256": "4e669dc2cfe0b422773220cffc01921e734354d988f615fba1fbed10b3b3c0b7"
+  },
+  "fetched_at": "2026-09-14T14:08:14+00:00",
+  "source_snapshot_sha256": "95f790676b2a471b5fcf475c1df77627f7cfec30c9b4913ff21aa98308923db8",
+  "images": {},
+  "local_only": true
+}
