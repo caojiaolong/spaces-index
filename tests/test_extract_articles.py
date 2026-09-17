@@ -79,6 +79,24 @@ def test_cached_articles_do_not_rewrite_state_for_each_hit(setup, monkeypatch):
     assert len(calls) == 2
 
 
+def test_warm_ingestion_checks_hashes_without_reparsing_unchanged_bodies(setup, monkeypatch):
+    output, calls, responses = setup
+    responses.append(response(200, page("12345").encode()))
+    assert local.main(["--ids", "12345"]) == 0
+    assert local.main(["--ids", "12345"]) == 0  # Establish the audit cache.
+    state = (output / "state.json").read_bytes()
+    with monkeypatch.context() as cached:
+        cached.setattr(local, "verified_article", lambda *a, **kw: pytest.fail("Unchanged body was reparsed"))
+        assert local.main(["--ids", "12345"]) == 0
+    assert read_json(output / "summary.json", {})["this_run"]["validation_cache_hits"] == 1
+    assert (output / "state.json").read_bytes() == state
+    original = (output / "12345/article.md").read_bytes()
+    (output / "12345/article.md").write_bytes(original + b"\ncorrupt")
+    assert local.main(["--ids", "12345"]) == 0  # Changed bytes require validation and repair.
+    assert (output / "12345/article.md").read_bytes() == original
+    assert len(calls) == 1
+
+
 def test_complete_metadata_does_not_open_body_snapshots(tmp_path, monkeypatch):
     post = {"id": 12345, "title": "原标题", "source_category": "数学", "source_tags": [], "source_summary": None}
     monkeypatch.setattr(local, "read_json", lambda *a: pytest.fail("Complete metadata needs no snapshot read"))

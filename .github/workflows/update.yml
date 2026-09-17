@@ -47,6 +47,14 @@ jobs:
           key: source-requests-${{ runner.os }}-v1-${{ github.run_id }}-${{ github.run_attempt }}
           restore-keys: source-requests-${{ runner.os }}-v1-
 
+      - name: Restore body audit cache
+        if: github.event_name != 'push'
+        uses: actions/cache/restore@v5
+        with:
+          path: .cache/ingestion/verified-bodies.json
+          key: body-audits-${{ runner.os }}-v1-${{ github.run_id }}-${{ github.run_attempt }}
+          restore-keys: body-audits-${{ runner.os }}-v1-
+
       - name: Update index
         id: update
         if: github.event_name != 'push'
@@ -62,6 +70,13 @@ jobs:
             .cache/mirror/robots*.json
             .cache/image-cache/hosts-*.json
           key: source-requests-${{ runner.os }}-v1-${{ github.run_id }}-${{ github.run_attempt }}
+
+      - name: Save body audit cache
+        if: always() && github.event_name != 'push' && steps.update.outcome != 'skipped'
+        uses: actions/cache/save@v5
+        with:
+          path: .cache/ingestion/verified-bodies.json
+          key: body-audits-${{ runner.os }}-v1-${{ github.run_id }}-${{ github.run_attempt }}
 
       - name: Check for deployable changes
         id: changes

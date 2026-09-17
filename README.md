@@ -50,7 +50,7 @@
 
 > 请解释文中从公式 (1) 到公式 (2) 的推导，逐步说明所用假设和中间步骤。请区分作者原文与你补充的说明，原文没有交代的地方请明确指出。
 
-Markdown 正文只做必要的格式转换，不摘要、润色、翻译或重组。构建时重新核对正文、公式、代码、链接和图片位置，校验失败的内容不提供下载；每篇保留苏剑林署名、原文链接与 **CC BY-NC-ND 2.5 CN** 许可说明。署名与附加许可不代表作者提供了额外授权，详见 [正文校验与许可](docs/mirror.md)。
+Markdown 正文只做必要的格式转换，不摘要、润色、翻译或重组。构建时重新核对正文、公式、代码、链接和图片位置，校验失败的内容不提供下载；每篇保留苏剑林署名、原文链接与 **CC BY-NC-ND 2.5 CN** 许可说明。署名与附加许可不代表作者提供了额外授权，详见 [正文校验与许可](docs/guides/mirror.md)。
 
 ## 后续想做的事
 
@@ -2736,24 +2736,26 @@ Markdown 正文只做必要的格式转换，不摘要、润色、翻译或重�
 
 ## 详细元数据
 
-- [深度学习基础](docs/deep-learning.md)
-- [词向量与Embedding](docs/embeddings.md)
-- [大模型与Transformer](docs/transformer.md)
-- [生成模型](docs/generative-models.md)
-- [优化与训练](docs/optimization.md)
-- [数学工具](docs/math.md)
-- [概率统计与信息论](docs/probability-info.md)
-- [几何与方程](docs/geometry-equations.md)
-- [NLP与信息抽取](docs/nlp.md)
-- [工程工具](docs/engineering.md)
-- [天文科普](docs/astronomy.md)
-- [物理化学](docs/physics-chemistry.md)
-- [生物自然](docs/biology.md)
-- [图片摄影](docs/photography.md)
-- [科普问答与百科](docs/popular-science.md)
-- [资源与站务](docs/resources.md)
-- [阅读写作与随笔](docs/essays.md)
-- [其他](docs/other.md)
+[主题索引与统计](docs/topics/README.md) · [使用与维护文档](docs/README.md)
+
+- [深度学习基础](docs/topics/deep-learning.md)
+- [词向量与Embedding](docs/topics/embeddings.md)
+- [大模型与Transformer](docs/topics/transformer.md)
+- [生成模型](docs/topics/generative-models.md)
+- [优化与训练](docs/topics/optimization.md)
+- [数学工具](docs/topics/math.md)
+- [概率统计与信息论](docs/topics/probability-info.md)
+- [几何与方程](docs/topics/geometry-equations.md)
+- [NLP与信息抽取](docs/topics/nlp.md)
+- [工程工具](docs/topics/engineering.md)
+- [天文科普](docs/topics/astronomy.md)
+- [物理化学](docs/topics/physics-chemistry.md)
+- [生物自然](docs/topics/biology.md)
+- [图片摄影](docs/topics/photography.md)
+- [科普问答与百科](docs/topics/popular-science.md)
+- [资源与站务](docs/topics/resources.md)
+- [阅读写作与随笔](docs/topics/essays.md)
+- [其他](docs/topics/other.md)
 
 ## 本地运行
 
@@ -2774,12 +2776,12 @@ uv run python scripts/build_site.py
 - `extract_articles.py`：串行发现、抓取和复查文章，同一次响应提取正文、分类、标签与短小结。
 - `fetch_archive.py` / `enrich_posts.py`：提供归档与元数据解析函数；无需分别运行，旧元数据命令转入统一更新流程。
 - `classify.py`：根据标题、分类、标签做规则分类，识别系列名与序号，并用系列成员主题众数统一系列主题。
-- `render_markdown.py`：稳定生成折叠式 README 和 docs 主题页。
+- `render_markdown.py`：稳定生成折叠式 README 和 `docs/topics/` 主题页；`docs/guides/` 使用与维护文档由人工维护。
 - `update_all.py`：一个命令完成归档、正文增量更新、失败恢复、元数据、分类、索引和网站构建；默认构建 `build/preview/`。
 - `build_site.py`：独立构建网站；构建完成并校验通过后才替换旧产物。
-- Markdown 阅读、校验报告、下架与授权边界见 [docs/mirror.md](docs/mirror.md)。
+- Markdown 阅读、校验报告、下架与授权边界见 [正文校验与许可](docs/guides/mirror.md)。
 - `data/articles/`：持久化正文、原始正文快照和逐篇校验报告；`config/mirror.json` 控制更新周期、下架和过期检查。
-- 日常命令：`uv run python scripts/update_all.py --serve`；离线更新：`uv run python scripts/update_all.py --offline --serve`。详见 [维护说明](docs/maintenance.md)。
+- 日常命令：`uv run python scripts/update_all.py --serve`；离线更新：`uv run python scripts/update_all.py --offline --serve`。详见 [维护说明](docs/guides/maintenance.md)。
 - GitHub Actions：定时更新索引，并将同一次运行生成的静态产物部署到 GitHub Pages。
 
 ## 最近更新

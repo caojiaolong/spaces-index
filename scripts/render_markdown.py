@@ -306,7 +306,7 @@ def render_readme(posts: list[dict[str, Any]]) -> str:
         "",
         "> 请解释文中从公式 (1) 到公式 (2) 的推导，逐步说明所用假设和中间步骤。请区分作者原文与你补充的说明，原文没有交代的地方请明确指出。",
         "",
-        "Markdown 正文只做必要的格式转换，不摘要、润色、翻译或重组。构建时重新核对正文、公式、代码、链接和图片位置，校验失败的内容不提供下载；每篇保留苏剑林署名、原文链接与 **CC BY-NC-ND 2.5 CN** 许可说明。署名与附加许可不代表作者提供了额外授权，详见 [正文校验与许可](docs/mirror.md)。",
+        "Markdown 正文只做必要的格式转换，不摘要、润色、翻译或重组。构建时重新核对正文、公式、代码、链接和图片位置，校验失败的内容不提供下载；每篇保留苏剑林署名、原文链接与 **CC BY-NC-ND 2.5 CN** 许可说明。署名与附加许可不代表作者提供了额外授权，详见 [正文校验与许可](docs/guides/mirror.md)。",
         "",
         "## 后续想做的事",
         "",
@@ -357,10 +357,10 @@ def render_readme(posts: list[dict[str, Any]]) -> str:
             lines.append("- 暂无文章。")
         lines.extend(["", "</details>", ""])
 
-    lines.extend(["", "## 详细元数据", ""])
+    lines.extend(["", "## 详细元数据", "", "[主题索引与统计](docs/topics/README.md) · [使用与维护文档](docs/README.md)", ""])
     for topic in TOPICS:
         page = TOPIC_PAGES.get(topic)
-        lines.append(f"- [{topic}](docs/{page})" if page else f"- [{topic}](#其他)")
+        lines.append(f"- [{topic}](docs/topics/{page})" if page else f"- [{topic}](#其他)")
 
     lines.extend(
         [
@@ -384,12 +384,12 @@ def render_readme(posts: list[dict[str, Any]]) -> str:
             "- `extract_articles.py`：串行发现、抓取和复查文章，同一次响应提取正文、分类、标签与短小结。",
             "- `fetch_archive.py` / `enrich_posts.py`：提供归档与元数据解析函数；无需分别运行，旧元数据命令转入统一更新流程。",
             "- `classify.py`：根据标题、分类、标签做规则分类，识别系列名与序号，并用系列成员主题众数统一系列主题。",
-            "- `render_markdown.py`：稳定生成折叠式 README 和 docs 主题页。",
+            "- `render_markdown.py`：稳定生成折叠式 README 和 `docs/topics/` 主题页；`docs/guides/` 使用与维护文档由人工维护。",
             "- `update_all.py`：一个命令完成归档、正文增量更新、失败恢复、元数据、分类、索引和网站构建；默认构建 `build/preview/`。",
             "- `build_site.py`：独立构建网站；构建完成并校验通过后才替换旧产物。",
-            "- Markdown 阅读、校验报告、下架与授权边界见 [docs/mirror.md](docs/mirror.md)。",
+            "- Markdown 阅读、校验报告、下架与授权边界见 [正文校验与许可](docs/guides/mirror.md)。",
             "- `data/articles/`：持久化正文、原始正文快照和逐篇校验报告；`config/mirror.json` 控制更新周期、下架和过期检查。",
-            "- 日常命令：`uv run python scripts/update_all.py --serve`；离线更新：`uv run python scripts/update_all.py --offline --serve`。详见 [维护说明](docs/maintenance.md)。",
+            "- 日常命令：`uv run python scripts/update_all.py --serve`；离线更新：`uv run python scripts/update_all.py --offline --serve`。详见 [维护说明](docs/guides/maintenance.md)。",
             "- GitHub Actions：定时更新索引，并将同一次运行生成的静态产物部署到 GitHub Pages。",
             "",
             "## 最近更新",
@@ -438,6 +438,10 @@ def render_docs_index(posts: list[dict[str, Any]]) -> str:
     lines = [
         "# 主题索引",
         "",
+        "[文档导航](../README.md) · [项目首页](../../README.md)",
+        "",
+        "本目录由 `scripts/render_markdown.py` 自动生成，保留每篇文章的分类、标签、系列、小结摘录与备注。分类修正请修改规则或 `data/overrides.yaml` 后重新生成。",
+        "",
         f"文章总数：{len(posts)}",
         "",
         "| 主题 | 数量 | 页面 |",
@@ -445,7 +449,7 @@ def render_docs_index(posts: list[dict[str, Any]]) -> str:
     ]
     for topic in TOPICS:
         page = TOPIC_PAGES.get(topic)
-        target = f"[{page}]({page})" if page else "[README](../README.md#其他)"
+        target = f"[{page}]({page})" if page else "[README](../../README.md#其他)"
         lines.append(f"| {topic} | {counts.get(topic, 0)} | {target} |")
     lines.extend(["", "注：系列文章会统一归入该系列的众数主题；非系列文章仍可能属于多个主题。"])
     return "\n".join(lines).rstrip() + "\n"
@@ -456,7 +460,7 @@ def render_topic_page(topic: str, posts: list[dict[str, Any]]) -> str:
     lines = [
         f"# {topic}",
         "",
-        "[返回主题索引](index.md)",
+        "[返回主题索引](README.md) · [文档导航](../README.md)",
         "",
         f"共 {len(topic_posts)} 篇。",
         "",
@@ -479,10 +483,11 @@ def write_text(path: Path, content: str) -> None:
 
 def render_all(posts: list[dict[str, Any]]) -> None:
     write_text(ROOT / "README.md", render_readme(posts))
-    write_text(DOCS_DIR / "index.md", render_docs_index(posts))
+    topics_dir = DOCS_DIR / "topics"
+    write_text(topics_dir / "README.md", render_docs_index(posts))
     for topic, filename in TOPIC_PAGES.items():
-        write_text(DOCS_DIR / filename, render_topic_page(topic, posts))
-    log(f"render_markdown: rendered README.md and {len(TOPIC_PAGES) + 1} docs pages")
+        write_text(topics_dir / filename, render_topic_page(topic, posts))
+    log(f"render_markdown: rendered README.md and {len(TOPIC_PAGES) + 1} docs/topics pages")
 
 
 def main() -> None:

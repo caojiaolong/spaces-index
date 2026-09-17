@@ -119,3 +119,14 @@ def test_article_storage_is_included_in_full_site_updates():
             assert "data" not in line.split()
     assert "data/overrides.yaml data/articles" in command
     assert "data/articles/9119" not in command and "data/articles/11882" not in command
+
+
+def test_body_audit_cache_is_only_used_for_ingestion():
+    steps = {step["name"]: step for step in load_workflow()["jobs"]["prepare"]["steps"]}
+    restore, save = steps["Restore body audit cache"], steps["Save body audit cache"]
+    assert restore["if"] == "github.event_name != 'push'"
+    assert "always()" in save["if"] and "github.event_name != 'push'" in save["if"]
+    assert restore["with"]["key"] == save["with"]["key"]
+    assert restore["with"]["path"] == save["with"]["path"] == ".cache/ingestion/verified-bodies.json"
+    assert "github.run_id" in save["with"]["key"]
+    assert "--cache" not in steps["Build site"]["run"]

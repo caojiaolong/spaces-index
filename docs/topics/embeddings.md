@@ -1,6 +1,6 @@
 # 词向量与Embedding
 
-[返回主题索引](index.md)
+[返回主题索引](README.md) · [文档导航](../README.md)
 
 共 24 篇。
 

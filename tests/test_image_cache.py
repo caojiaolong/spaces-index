@@ -98,8 +98,8 @@ def test_unified_ingestion_reuses_validation_but_standalone_and_publication_rech
     assert read_json(folder / 'images.json', {})['images'][URL]['status'] == 'cached'
     assert len(calls) == 1 and calls[0][0] == URL
 
-    # No validation result survives the invocation; stand-alone sync and public
-    # builds must still reject a body modified after the ingestion check.
+    # Stand-alone sync and public builds ignore ingestion audit caches and
+    # must still reject a body modified after the ingestion check.
     with (folder / 'article.md').open('a', encoding='utf8') as handle:
         handle.write('\nchanged body\n')
     with pytest.raises(MirrorError):

@@ -271,8 +271,8 @@ def sync_images(directory, post_ids, *, interval=3, attempts=3, refresh_ids=(), 
         for post_id in post_ids:
             folder = directory / post_id
             if verified_image_urls is not None and post_id in verified_image_urls:
-                # The unified extractor just validated this body. This in-memory
-                # handoff avoids parsing all bodies twice before publication.
+                # The extractor checked the body (or unchanged byte hashes).
+                # Publication independently validates the body and images.
                 source_urls = verified_image_urls[post_id]
             else:
                 article = verified_article(directory, post_id, local_only=True)

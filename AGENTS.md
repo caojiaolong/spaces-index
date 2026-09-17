@@ -42,6 +42,8 @@ uv run python scripts/serve.py
 
 网络请求必须串行，使用合理 User-Agent，遵守 robots.txt 和 Retry-After，最小间隔 3 秒。正文默认 30 天复查，每次最多 25 篇，按检查时间轮换；失败自动冷却、重试和断点续跑。404/410 自动撤回，主动下架使用 `withdrawn_ids`。离线转换不得延长原站检查时间。
 
+提取阶段可复用 `.cache/ingestion/verified-bodies.json` 中已校验正文的指纹和图片 URL，必须先核对四个正文文件的字节哈希及校验器代码、依赖版本。发布构建不得使用这份缓存跳过正文、公式或图片校验。Action 汇总区分归档网络、归档解析、正文与图片耗时。
+
 ## 分类与生成文件
 
 - 分类规则在 `TOPICS`、`TOPIC_KEYWORDS`、`SOURCE_CATEGORY_TOPICS`；系列规则在 `detect_series_info()` 和 `detect_prefix_series_candidate()`。
@@ -49,7 +51,7 @@ uv run python scripts/serve.py
 - 错误分类应修改规则或 overrides，不直接修改生成的 JSON。
 - `source_summary` 只提取明确“小结 / 文章小结 / 总结 / 结语 / 结束语 / 后记”段落的短摘录，最多 320 字。
 - README 顶部保留 motivation；目录合并主题统计并链接主题、系列及非系列文章块；本地命令、流程和详细元数据入口放底部。
-- docs 主题页保留分类、标签、系列号、系列主题、短小结和备注。
+- `docs/README.md` 是文档导航；`docs/topics/` 为自动生成的主题索引，保留分类、标签、系列号、系列主题、短小结和备注；`docs/guides/` 为人工维护的使用、维护与许可文档。生成脚本只更新根 README 和 `docs/topics/`。
 
 ## 自动更新和验收
 
@@ -67,4 +69,4 @@ git diff --check
 git status --short
 ```
 
-确认 `.venv/`、`.pytest_cache/`、`__pycache__/`、`.cache/` 和构建产物未进入版本控制。细节见 [维护说明](docs/maintenance.md) 和 [正文校验与许可](docs/mirror.md)。
+确认 `.venv/`、`.pytest_cache/`、`__pycache__/`、`.cache/` 和构建产物未进入版本控制。细节见 [文档导航](docs/README.md)、[维护说明](docs/guides/maintenance.md) 和 [正文校验与许可](docs/guides/mirror.md)。

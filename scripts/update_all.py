@@ -59,7 +59,8 @@ def update(args) -> dict:
     else:
         ingestion_status = extract(["--all", "--retry-failed", "--offline"])
     ingested_at = time.monotonic()
-    counters = read_json(summary_path, {}).get("this_run", {})
+    ingestion_summary = read_json(summary_path, {})
+    counters = ingestion_summary.get("this_run", {})
     archive = read_json(ARTICLES_DIR / "archive.json", read_json(ROOT / "data/posts_raw.json", []))
     if not archive:
         raise MirrorError("No archive available; run an online update first")
@@ -98,6 +99,8 @@ def update(args) -> dict:
     result["timings_seconds"] = {"ingestion": round(ingested_at - started, 1),
                                 "metadata_and_index": round(indexed_at - ingested_at, 1),
                                 "build": round(time.monotonic() - indexed_at, 1) if built else 0}
+    result["ingestion_timings_seconds"] = ingestion_summary.get("timings_seconds", {})
+    result["validation_cache_hits"] = counters.get("validation_cache_hits", 0)
     atomic_json(ROOT / ".cache/update-result.json", result)
     return result
 
@@ -113,6 +116,8 @@ def report_ci_result(result):
                  f"- Metadata failures: {len(result['metadata_failures'])}",
                  f"- Images skipped by policy: {result['images'].get('skipped', 0)}",
                  f"- Built in update step: {result['built']}",
+                 f"- Unchanged body audits reused: {result['validation_cache_hits']}",
+                 f"- Ingestion detail (seconds): `{json.dumps(result['ingestion_timings_seconds'])}`",
                  f"- Stage durations (seconds): `{json.dumps(result['timings_seconds'])}`"]
         lines.extend(f"- {warning}" for warning in result["warnings"])
         with Path(summary).open("a", encoding="utf8") as handle:

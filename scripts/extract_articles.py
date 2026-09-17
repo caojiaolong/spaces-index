@@ -29,6 +29,7 @@ try:
     from .paths import DATA_DIR, POLICY_PATH
     from .image_cache import sync_images, image_urls, IMAGE_NAME
     from .enrich_posts import parse_post_metadata, has_cached_metadata, merge_cached_post, summary_needs_refresh, extract_source_summary
+    from .ingestion_cache import VerifiedBodyCache
 except ImportError:
     from common import ROOT, read_json, sort_posts_desc
     from fetch_archive import parse_archive
@@ -40,6 +41,7 @@ except ImportError:
     from paths import DATA_DIR, POLICY_PATH
     from image_cache import sync_images, image_urls, IMAGE_NAME
     from enrich_posts import parse_post_metadata, has_cached_metadata, merge_cached_post, summary_needs_refresh, extract_source_summary
+    from ingestion_cache import VerifiedBodyCache
 
 STORAGE_ROOT = DATA_DIR
 ARCHIVE_URL = "https://spaces.ac.cn/content.html"
@@ -215,6 +217,8 @@ def run(args, output: Path) -> int:
     started = time.monotonic()
     runtime = ROOT / ".cache/ingestion" if output == MIRROR_DIR else output
     runtime.mkdir(parents=True, exist_ok=True)
+    validation_cache = VerifiedBodyCache(runtime / "verified-bodies.json")
+    timings = {}
     def log(message):
         line = f"[{now_iso()}] {message}"
         print(line, flush=True)
@@ -223,7 +227,8 @@ def run(args, output: Path) -> int:
     def summary():
         result = {"updated_at": now_iso(), "this_run": dict(counters),
                   "stored_statuses": dict(Counter(s.get("status", "unknown") for s in state.values())),
-                  "elapsed_seconds": round(time.monotonic() - started, 1), "publishes": False}
+                  "elapsed_seconds": round(time.monotonic() - started, 1), "publishes": False,
+                  "timings_seconds": timings}
         atomic_json(runtime / "summary.json", result)
         log("SUMMARY " + json.dumps(result, ensure_ascii=False))
     fetcher = SerialFetcher(args.sleep, args.attempts)
@@ -234,11 +239,15 @@ def run(args, output: Path) -> int:
             fetcher.check_robots()
             ready = True
     if args.refresh_archive:
+        archive_started = time.monotonic()
         network_ready()
         response = fetcher.get(ARCHIVE_URL)
+        timings["archive_network"] = round(time.monotonic() - archive_started, 3)
         if response.status_code != 200:
             raise MirrorError(f"Archive HTTP {response.status_code}")
+        parsing_started = time.monotonic()
         posts = parse_archive(response.content.decode("utf-8-sig"))
+        timings["archive_parse"] = round(time.monotonic() - parsing_started, 3)
         if not posts:
             raise MirrorError("Empty archive; refusing to continue")
         atomic_json(output / "archive.json", posts)
@@ -274,9 +283,10 @@ def run(args, output: Path) -> int:
     consecutive_network_errors = 0
     interrupted = False
     image_refresh = set()
-    # Reuse only the image URLs from bodies validated during this invocation.
-    # Publication still performs its own independent full validation.
+    # Unchanged byte fingerprints reuse prior ingestion audits; publication
+    # never reads this cache and independently validates every article.
     verified_image_urls = {}
+    bodies_started = time.monotonic()
     try:
         for index, post in enumerate(selected, 1):
             post_id = str(post["id"])
@@ -312,8 +322,10 @@ def run(args, output: Path) -> int:
                     continue
                 if prior.get("status") == "verified" and not refresh and not args.offline:
                     try:
-                        article = verified_article(output, post_id, local_only=True)
-                        verified_image_urls[post_id] = image_urls(article["tree"])
+                        urls, hit = validation_cache.image_urls(
+                            folder, lambda: verified_article(output, post_id, local_only=True))
+                        verified_image_urls[post_id] = urls
+                        counters["validation_cache_hits" if hit else "body_validations"] += 1
                         counters["cached"] += 1
                         log(f"{label} CACHED")
                         continue
@@ -442,18 +454,22 @@ def run(args, output: Path) -> int:
                 # serializing and replacing the entire library for every hit.
                 if saved_pending or state.get(post_id, {}) != prior:
                     atomic_json(state_path, state)
+        timings["bodies"] = round(time.monotonic() - bodies_started, 3)
         if not args.offline and not counters["stopped_early"]:
+            images_started = time.monotonic()
             image_ids = [str(p["id"]) for p in selected if state.get(str(p["id"]), {}).get("status") == "verified"
                          and str(p["id"]) not in withdrawn]
             image_result = sync_images(output, image_ids, interval=args.sleep, attempts=args.attempts,
                                        refresh_ids=image_refresh, retry_failed=args.retry_failed,
                                        verified_image_urls=verified_image_urls, log=log)
             counters.update({f"images_{key}": value for key, value in image_result.items()})
+            timings["images"] = round(time.monotonic() - images_started, 3)
     except KeyboardInterrupt:
         interrupted = True
         log("Interrupted. Completed articles are saved; rerun the same command to resume.")
     finally:
         atomic_json(state_path, state)
+        validation_cache.save(atomic_json)
         summary()
         if hasattr(fetcher, "session"):
             fetcher.session.close()

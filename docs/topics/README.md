@@ -1,5 +1,9 @@
 # 主题索引
 
+[文档导航](../README.md) · [项目首页](../../README.md)
+
+本目录由 `scripts/render_markdown.py` 自动生成，保留每篇文章的分类、标签、系列、小结摘录与备注。分类修正请修改规则或 `data/overrides.yaml` 后重新生成。
+
 文章总数：1337
 
 | 主题 | 数量 | 页面 |

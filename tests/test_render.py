@@ -54,7 +54,9 @@ def test_readme_contains_topic_links_and_stats():
     assert "https://caojiaolong.github.io/spaces-index/" in readme
     assert "非官方、非商业知识库" in readme
     assert "默认提供全站通过校验且未下架、未过期的正文" in readme
-    assert "docs/mirror.md" in readme
+    assert "docs/guides/mirror.md" in readme
+    assert "[使用与维护文档](docs/README.md)" in readme
+    assert "[大模型与Transformer](docs/topics/transformer.md)" in readme
     assert "## 最近更新" in readme
     assert "2026-09-07 · 现代学术画廊与阅读体验升级" in readme
     assert "非系列文章以及已读/未读组合筛选" in readme
@@ -95,6 +97,7 @@ def test_readme_contains_topic_links_and_stats():
 def test_topic_page_contains_metadata():
     page = render_topic_page("大模型与Transformer", SAMPLE_POSTS)
     assert "# 大模型与Transformer" in page
+    assert "[返回主题索引](README.md)" in page
     assert "2024-05-29 - [Transformer升级之路：18、RoPE的底数选择原则]" in page
     assert "原站分类：信息时代" in page
     assert "原站标签：attention、位置编码" in page

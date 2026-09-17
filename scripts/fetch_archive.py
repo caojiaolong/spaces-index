@@ -55,31 +55,29 @@ def fetch_html(url: str, timeout: float = 30.0) -> str:
         session.close()
 
 
-def _find_year(anchor: Tag) -> int | None:
-    for heading in anchor.find_all_previous(["h2", "h3", "h4"]):
-        text = clean_text(heading.get_text(" ", strip=True))
-        match = re.search(r"(\d{4})年", text)
-        if match:
-            return int(match.group(1))
-    return None
+def _cached_text(tag: Tag, cache: dict[int, str]) -> str:
+    key = id(tag)
+    if key not in cache:
+        cache[key] = clean_text(tag.get_text(" ", strip=True))
+    return cache[key]
 
 
-def _find_month(anchor: Tag) -> int | None:
+def _find_month(anchor: Tag, text_cache: dict[int, str]) -> int | None:
     for parent in anchor.parents:
         if not isinstance(parent, Tag):
             continue
-        text = clean_text(parent.get_text(" ", strip=True))
+        text = _cached_text(parent, text_cache)
         match = re.match(r"(\d{1,2})月\b", text)
         if match:
             return int(match.group(1))
     return None
 
 
-def _find_day(anchor: Tag) -> int | None:
+def _find_day(anchor: Tag, text_cache: dict[int, str]) -> int | None:
     parent = anchor.find_parent("li")
     if not parent:
         return None
-    text = clean_text(parent.get_text(" ", strip=True))
+    text = _cached_text(parent, text_cache)
     match = re.search(r"(\d{1,2})日\s*[:：]", text)
     if match:
         return int(match.group(1))
@@ -89,8 +87,17 @@ def _find_day(anchor: Tag) -> int | None:
 def parse_archive(html: str, archive_url: str = ARCHIVE_URL) -> list[dict[str, Any]]:
     soup = BeautifulSoup(html, "lxml")
     posts_by_url: dict[str, dict[str, Any]] = {}
+    year = None
+    text_cache: dict[int, str] = {}
 
-    for anchor in soup.find_all("a", href=True):
+    # Walk headings once; scanning every earlier node for each article made
+    # archive discovery quadratic as the source library grew.
+    for anchor in soup.find_all(["h2", "h3", "h4", "a"]):
+        if anchor.name != "a":
+            match = re.search(r"(\d{4})年", _cached_text(anchor, text_cache))
+            if match:
+                year = int(match.group(1))
+            continue
         href = str(anchor.get("href") or "")
         match = ARCHIVE_RE.search(href)
         if not match:
@@ -100,9 +107,8 @@ def parse_archive(html: str, archive_url: str = ARCHIVE_URL) -> list[dict[str, A
         if not title or title.isdigit():
             continue
 
-        year = _find_year(anchor)
-        month = _find_month(anchor)
-        day = _find_day(anchor)
+        month = _find_month(anchor, text_cache)
+        day = _find_day(anchor, text_cache)
         if not (year and month and day):
             continue
 
