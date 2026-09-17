@@ -25,9 +25,10 @@ def test_pages_workflow_routes_push_without_network_update():
     assert steps["Update index"]["if"] == "github.event_name != 'push'"
     assert "--sleep 3" in steps["Update index"]["run"]
     assert "--audience public" in steps["Update index"]["run"]
+    assert "--skip-build" in steps["Update index"]["run"]
     assert steps["Commit refreshed metadata"]["if"] == (
         "github.event_name != 'push' && "
-        "steps.changes.outputs.should_deploy == 'true'"
+        "steps.changes.outputs.should_commit == 'true'"
     )
     assert "scripts/build_site.py" in steps["Build site"]["run"]
 
@@ -42,9 +43,7 @@ def test_pages_workflow_skips_build_and_deploy_without_changes():
     )
     assert steps["Check for deployable changes"]["id"] == "changes"
     change_check = steps["Check for deployable changes"]["run"]
-    assert '"$GITHUB_EVENT_NAME" == "push"' in change_check
-    assert "git status --porcelain -- README.md docs data config)" in change_check
-    assert "should_deploy=false" in change_check
+    assert change_check == "uv run python scripts/check_site_changes.py"
 
     guarded_steps = (
         "Run tests",
@@ -53,10 +52,7 @@ def test_pages_workflow_skips_build_and_deploy_without_changes():
     )
     for name in guarded_steps:
         assert steps[name]["if"] == "steps.changes.outputs.should_deploy == 'true'"
-    assert steps["Build site"]["if"] == (
-        "steps.changes.outputs.should_deploy == 'true' && "
-        "(github.event_name == 'push' || steps.update.outcome != 'success')"
-    )
+    assert steps["Build site"]["if"] == "steps.changes.outputs.should_deploy == 'true'"
 
     deploy = workflow["jobs"]["deploy"]
     assert deploy["needs"] == "prepare"
@@ -91,14 +87,27 @@ def test_pages_workflow_has_required_deployment_contract():
     assert deploy_steps["Deploy GitHub Pages"]["id"] == "deployment"
 
 
-def test_unified_update_builds_public_site_and_deploys_withdrawals_after_failure():
+def test_unified_update_builds_once_and_deploys_withdrawals_after_failure():
     steps = {step["name"]: step for step in load_workflow()["jobs"]["prepare"]["steps"]}
     mirror = steps["Update index"]
     assert mirror["if"] == "github.event_name != 'push'"
     assert mirror["continue-on-error"] == "true"
-    assert "scripts/update_all.py --audience public --sleep 3" in mirror["run"]
+    assert "scripts/update_all.py --audience public --sleep 3 --skip-build" in mirror["run"]
+    assert "steps.update.outcome" not in steps["Build site"]["if"]
     assert "Update pilot Markdown" not in steps
     assert "data/articles" in steps["Commit refreshed metadata"]["run"]
+
+
+def test_only_small_network_state_is_restored_and_saved_across_runs():
+    steps = {step["name"]: step for step in load_workflow()["jobs"]["prepare"]["steps"]}
+    restore, save = steps["Restore source request state"], steps["Save source request state"]
+    assert restore["if"] == "github.event_name != 'push'"
+    assert "always()" in save["if"] and "github.event_name != 'push'" in save["if"]
+    assert restore["with"]["key"] == save["with"]["key"]
+    assert "github.run_id" in save["with"]["key"] and "github.run_attempt" in save["with"]["key"]
+    assert restore["with"]["restore-keys"] in save["with"]["key"]
+    assert set(restore["with"]["path"].splitlines()) == {".cache/mirror/robots*.json", ".cache/image-cache/hosts-*.json"}
+    assert save["with"]["path"] == restore["with"]["path"]
 
 
 def test_article_storage_is_included_in_full_site_updates():

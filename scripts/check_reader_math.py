@@ -101,6 +101,28 @@ def main():
             inline.evaluate("n => { const r = document.createRange(); r.selectNode(n); const s = getSelection(); s.removeAllRanges(); s.addRange(r); }")
             page.keyboard.press("Control+c")
             assert clipboard() == original_formulas[0]
+            # Selecting all of a formula's contents is also a whole-formula
+            # copy, even when the browser places both endpoints inside it.
+            inline.evaluate("n => { const r = document.createRange(); r.selectNodeContents(n); const s = getSelection(); s.removeAllRanges(); s.addRange(r); }")
+            page.keyboard.press("Control+c")
+            assert clipboard() == original_formulas[0]
+
+            # Parent boundaries and selections extending outside the article
+            # must not silently fall back to copying MathJax's rendered glyphs.
+            article = page.locator("#article")
+            article.evaluate("n => { const r = document.createRange(); r.selectNodeContents(n); const s = getSelection(); s.removeAllRanges(); s.addRange(r); }")
+            page.keyboard.press("Control+c")
+            article_text = clipboard()
+            assert [article_text[a:b] for a, b in math_spans(article_text)] == original_formulas
+            article.evaluate("n => { const r = document.createRange(); r.selectNode(n); const s = getSelection(); s.removeAllRanges(); s.addRange(r); }")
+            page.keyboard.press("Control+c")
+            assert clipboard() == article_text
+            page.evaluate("() => { const r = document.createRange(); r.selectNodeContents(document.body); const s = getSelection(); s.removeAllRanges(); s.addRange(r); }")
+            page.keyboard.press("Control+c")
+            page_text = clipboard()
+            assert article_text in page_text
+            assert [page_text[a:b] for a, b in math_spans(page_text)] == original_formulas
+            assert "查看原文" in page_text  # Retain the selected text outside the article.
             page.evaluate("getSelection().removeAllRanges()")
 
             equation = page.locator('#article mjx-container[display="true"]').nth(1)
@@ -249,6 +271,49 @@ def main():
             page.locator("#show-reading").click()
             assert page.locator("#equation-return").is_visible()
 
+            # Regression for the reported DDPM paragraph: inline + display math
+            # must copy once as the original LaTeX, including partial endpoints.
+            page.goto(origin + "/#/article/9119")
+            ready("09119")
+            ddpm = page.locator("#article p").filter(has_text="具体来说，DDPM将“拆楼”的过程建模为").first
+            ddpm_source = BeautifulSoup((ARTICLES_DIR / "9119/source.html").read_text(encoding="utf8"), "lxml")
+            ddpm_text = next(n.get_text() for n in ddpm_source.select("#PostContent p") if n.get_text().startswith("具体来说，DDPM"))
+            ddpm.evaluate("n => { const r = document.createRange(); r.selectNodeContents(n); const s = getSelection(); s.removeAllRanges(); s.addRange(r); }")
+            page.keyboard.press("Control+c")
+            assert clipboard().replace("\n", "") == ddpm_text.replace("\n", "")
+            ddpm.evaluate("""n => {
+              const r = document.createRange(), s = getSelection();
+              r.setStart(n.firstChild, 10);
+              r.setEnd(n.querySelector('mjx-container mjx-c').firstChild, 1);
+              s.removeAllRanges(); s.addRange(r);
+            }""")
+            page.keyboard.press("Control+c")
+            ddpm_equation = ddpm.locator('mjx-container[display="true"]').get_attribute("data-latex")
+            assert clipboard().replace("\n", "") == ddpm_text[10:ddpm_text.index(ddpm_equation)].replace("\n", "") + ddpm_equation
+
+            # Drag across the full expression, leaving its right-hand number
+            # unselected, as in the reported screenshot. Neither context nor
+            # the generated equation label should be necessary for LaTeX copy.
+            page.set_viewport_size({"width": 1440, "height": 1000})
+            formula = ddpm.locator('mjx-container[display="true"]')
+            formula.scroll_into_view_if_needed()
+            bounds = formula.evaluate("""n => {
+              const glyphs = [...n.querySelectorAll('mjx-math mjx-c')].filter(g => !g.closest('mjx-labels'));
+              const a = glyphs[0].getBoundingClientRect(), b = glyphs.at(-1).getBoundingClientRect();
+              return {x1:a.left+1, x2:b.right-1, y:a.top+a.height/2};
+            }""")
+            for reverse in (False, True):
+                page.evaluate("getSelection().removeAllRanges()")
+                page.mouse.move(bounds["x2"] if reverse else bounds["x1"], bounds["y"])
+                page.mouse.down()
+                page.mouse.move(bounds["x1"] if reverse else bounds["x2"], bounds["y"], steps=20)
+                page.mouse.up()
+                assert "(3)" not in page.evaluate("getSelection().toString()")
+                assert "具体来说" not in page.evaluate("getSelection().toString()")
+                page.keyboard.press("Control+c")
+                assert clipboard() == ddpm_equation, {"reverse": reverse, "selected": page.evaluate("getSelection().toString()"), "copied": clipboard()}
+            page.screenshot(path=str(output / "formula-body-selection-without-number.png"))
+
             # Real mouse dragging must select characters inside a formula, not
             # just a programmatic Range around the whole MathJax container.
             page.goto(origin + "/#/article/9902")
@@ -292,6 +357,9 @@ def main():
               "successive_returns_and_focus": True, "top_actions": True, "equation_jump_and_deep_link": True, "article_switch": True,
               "mathjax_chtml_and_local_fonts": True, "markdown_unchanged": True, "browser_errors": errors}
     result["native_formula_partial_selection_desktop_and_mobile"] = True
+    result["formula_copy_across_article_boundaries_and_whole_contents"] = True
+    result["ddpm_mixed_selection_preserves_source_without_duplicates"] = True
+    result["whole_expression_drag_copies_latex_without_equation_number"] = True
     result["reference_hover_preview_without_scroll_or_progress_changes"] = True
     (output / "math-results.json").write_text(json.dumps(result, indent=2), encoding="utf8")
     print(json.dumps(result, indent=2))

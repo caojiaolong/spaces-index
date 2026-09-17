@@ -61,6 +61,41 @@ def test_fetch_then_resume_without_requests(setup):
     assert "metadata_error" not in metadata
 
 
+def test_cached_articles_do_not_rewrite_state_for_each_hit(setup, monkeypatch):
+    output, calls, responses = setup
+    responses.extend([response(200, page("12345").encode()), response(200, page("12346").encode())])
+    assert local.main(["--ids", "12345", "12346"]) == 0
+    previous = (output / "state.json").read_bytes()
+    writes = []
+    real_atomic = local.atomic_json
+    def record(path, value):
+        if path == output / "state.json":
+            writes.append(value.copy())
+        return real_atomic(path, value)
+    monkeypatch.setattr(local, "atomic_json", record)
+    assert local.main(["--ids", "12345", "12346"]) == 0
+    assert len(writes) == 1  # The final checkpoint, rather than one per article.
+    assert (output / "state.json").read_bytes() == previous
+    assert len(calls) == 2
+
+
+def test_complete_metadata_does_not_open_body_snapshots(tmp_path, monkeypatch):
+    post = {"id": 12345, "title": "原标题", "source_category": "数学", "source_tags": [], "source_summary": None}
+    monkeypatch.setattr(local, "read_json", lambda *a: pytest.fail("Complete metadata needs no snapshot read"))
+    merged = local.cached_metadata(post | {"title": "新标题"}, post, tmp_path)
+    assert merged["title"] == "新标题" and merged["source_summary"] is None
+
+
+def test_unchanged_offline_reconversion_finishes_pending_checkpoint(setup):
+    output, calls, responses = setup
+    responses.append(response(200, page("12345").encode()))
+    assert local.main(["--ids", "12345"]) == 0
+    previous = read_json(output / "state.json", {})
+    assert local.main(["--ids", "12345", "--offline"]) == 0
+    assert read_json(output / "state.json", {}) == previous
+    assert len(calls) == 1
+
+
 def test_failed_conversion_keeps_source_and_retries_offline(setup, monkeypatch):
     output, calls, responses = setup
     responses.append(response(200, page("12345").encode()))

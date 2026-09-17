@@ -83,6 +83,66 @@ def test_cache_is_per_article_deduplicated_and_resumable(library):
     assert robots == ['spaces.ac.cn']
 
 
+def test_unified_ingestion_reuses_validation_but_standalone_and_publication_recheck(library, monkeypatch, tmp_path):
+    root, seed, calls, responses, robots = library
+    folder = seed()
+    validations = []
+    def verify(directory, post_id, **kwargs):
+        validations.append(post_id)
+        return verified_article(directory, post_id, **kwargs)
+    monkeypatch.setattr(extractor, 'verified_article', verify)
+    monkeypatch.setattr('scripts.mirror_store.verified_article', verify)
+    responses.append(response(200, PNG))
+    assert extractor.main(['--ids', '12345', '--skip-metadata-refresh']) == 0
+    assert validations == ['12345']  # One pass, including the subsequent image sync.
+    assert read_json(folder / 'images.json', {})['images'][URL]['status'] == 'cached'
+    assert len(calls) == 1 and calls[0][0] == URL
+
+    # No validation result survives the invocation; stand-alone sync and public
+    # builds must still reject a body modified after the ingestion check.
+    with (folder / 'article.md').open('a', encoding='utf8') as handle:
+        handle.write('\nchanged body\n')
+    with pytest.raises(MirrorError):
+        images.sync_images(root, ['12345'], log=lambda m: None)
+    with pytest.raises(MirrorError):
+        publish_mirrors(tmp_path / 'site', root, allowed_ids={'12345'})
+
+
+def test_skipped_image_hosts_never_request_even_for_explicit_retry(library):
+    root, seed, calls, responses, robots = library
+    dead = 'https://album.spaces.ac.cn/old.jpg'
+    other = 'https://bbs.spaces.ac.cn/old.png'
+    folder = seed(urls=(dead, other, URL))
+    original = (folder / 'article.md').read_bytes()
+    write_json(root / 'config.json', {'skip_image_hosts': ['album.spaces.ac.cn', 'bbs.spaces.ac.cn']})
+    write_json(folder / 'images.json', {'version': 1, 'images': {dead: {
+        'status': 'failed', 'checked_at': now_iso(), 'error': 'DNS failed', 'retry_not_before': '2099-01-01T00:00:00+00:00'}}})
+    responses.append(response(200, PNG))
+    result = images.sync_images(root, ['12345'], retry_failed=True, log=lambda m: None)
+    assert result['skipped'] == 2 and result['downloaded'] == 1
+    assert not result.get('failed') and not result.get('deferred')
+    assert calls == [(URL, {})] and robots == ['spaces.ac.cn']
+    assert (folder / 'article.md').read_bytes() == original
+
+
+def test_redirect_to_skipped_host_is_remembered_and_can_be_reenabled(library):
+    root, seed, calls, responses, robots = library
+    seed()
+    dead = 'https://album.spaces.ac.cn/old.jpg'
+    write_json(root / 'config.json', {'skip_image_hosts': ['album.spaces.ac.cn']})
+    responses.append(response(302, headers={'Location': dead}))
+    result = images.sync_images(root, ['12345'], log=lambda m: None)
+    assert result['skipped'] == 1 and not result.get('failed')
+    assert calls == [(URL, {})] and robots == ['spaces.ac.cn']
+    assert images.sync_images(root, ['12345'], retry_failed=True, log=lambda m: None) == {'skipped': 1}
+    assert len(calls) == 1
+    write_json(root / 'config.json', {'skip_image_hosts': []})
+    responses.extend([response(302, headers={'Location': dead}), response(200, PNG)])
+    assert images.sync_images(root, ['12345'], log=lambda m: None)['downloaded'] == 1
+    assert calls[-1][0] == dead
+    assert 'skipped_host' not in read_json(root / '12345/images.json', {})['images'][URL]
+
+
 def test_automatic_update_backfills_existing_body_and_offline_preserves_cache(library):
     root, seed, calls, responses, _ = library
     folder = seed()

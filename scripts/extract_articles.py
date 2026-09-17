@@ -27,7 +27,7 @@ try:
     from .mirror_store import MIRROR_DIR, age_days, now_iso, verified_article
     from .mirror_html import convert_html_body, validate_html_body
     from .paths import DATA_DIR, POLICY_PATH
-    from .image_cache import sync_images, IMAGE_NAME
+    from .image_cache import sync_images, image_urls, IMAGE_NAME
     from .enrich_posts import parse_post_metadata, has_cached_metadata, merge_cached_post, summary_needs_refresh, extract_source_summary
 except ImportError:
     from common import ROOT, read_json, sort_posts_desc
@@ -38,7 +38,7 @@ except ImportError:
     from mirror_store import MIRROR_DIR, age_days, now_iso, verified_article
     from mirror_html import convert_html_body, validate_html_body
     from paths import DATA_DIR, POLICY_PATH
-    from image_cache import sync_images, IMAGE_NAME
+    from image_cache import sync_images, image_urls, IMAGE_NAME
     from enrich_posts import parse_post_metadata, has_cached_metadata, merge_cached_post, summary_needs_refresh, extract_source_summary
 
 STORAGE_ROOT = DATA_DIR
@@ -182,12 +182,15 @@ def metadata_path(output: Path) -> Path:
 def cached_metadata(raw: dict, cached: dict, output: Path, *, refresh_summary=False) -> dict:
     """Fill missing legacy fields offline; never overwrite fresher metadata."""
     post = merge_cached_post(raw, cached)
+    fields = ("source_category", "source_tags", "source_summary")
+    if all(key in post for key in fields) and not refresh_summary and not summary_needs_refresh(post):
+        return post
     folder = article_folder(output, str(raw["id"]))
     try:
         record = read_json(folder / "snapshot.json", {})
     except (OSError, ValueError):
         record = {}  # Body ingestion handles incomplete or damaged snapshots.
-    for key in ("source_category", "source_tags", "source_summary"):
+    for key in fields:
         if key not in post and key in record.get("metadata", {}):
             post[key] = record["metadata"][key]
     if (refresh_summary or summary_needs_refresh(post)) and (folder / "source.html").is_file():
@@ -271,6 +274,9 @@ def run(args, output: Path) -> int:
     consecutive_network_errors = 0
     interrupted = False
     image_refresh = set()
+    # Reuse only the image URLs from bodies validated during this invocation.
+    # Publication still performs its own independent full validation.
+    verified_image_urls = {}
     try:
         for index, post in enumerate(selected, 1):
             post_id = str(post["id"])
@@ -287,6 +293,7 @@ def run(args, output: Path) -> int:
             refresh = args.refresh or post_id in refresh_ids or prior.get("status") == "fetch_failed" or (need_metadata and not args.offline)
             checked_source = False
             metadata_processed = False
+            saved_pending = False
             try:
                 if post_id in withdrawn:
                     state[post_id] = prior | {"status": "withdrawn"}
@@ -305,7 +312,8 @@ def run(args, output: Path) -> int:
                     continue
                 if prior.get("status") == "verified" and not refresh and not args.offline:
                     try:
-                        verified_article(output, post_id, local_only=True)
+                        article = verified_article(output, post_id, local_only=True)
+                        verified_image_urls[post_id] = image_urls(article["tree"])
                         counters["cached"] += 1
                         log(f"{label} CACHED")
                         continue
@@ -396,6 +404,7 @@ def run(args, output: Path) -> int:
                 source_checked_at = now_iso() if checked_source else prior.get("source_checked_at", prior.get("checked_at"))
                 state[post_id] = {"status": "pending", "checked_at": now_iso(), "source_checked_at": source_checked_at}
                 atomic_json(state_path, state)
+                saved_pending = True
                 report = convert_snapshot(output, post_id)
                 audit = report["validation"]
                 checked_at = source_checked_at or report["fetched_at"]
@@ -429,12 +438,16 @@ def run(args, output: Path) -> int:
                     counters["stopped_early"] += 1
                     break
             finally:
-                atomic_json(state_path, state)
+                # Cache hits and deferrals do not change persistent state. Avoid
+                # serializing and replacing the entire library for every hit.
+                if saved_pending or state.get(post_id, {}) != prior:
+                    atomic_json(state_path, state)
         if not args.offline and not counters["stopped_early"]:
             image_ids = [str(p["id"]) for p in selected if state.get(str(p["id"]), {}).get("status") == "verified"
                          and str(p["id"]) not in withdrawn]
             image_result = sync_images(output, image_ids, interval=args.sleep, attempts=args.attempts,
-                                       refresh_ids=image_refresh, retry_failed=args.retry_failed, log=log)
+                                       refresh_ids=image_refresh, retry_failed=args.retry_failed,
+                                       verified_image_urls=verified_image_urls, log=log)
             counters.update({f"images_{key}": value for key, value in image_result.items()})
     except KeyboardInterrupt:
         interrupted = True

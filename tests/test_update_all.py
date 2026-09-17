@@ -61,3 +61,63 @@ def test_incomplete_metadata_is_reported_without_second_fetcher(workspace):
     atomic_json(tmp_path / "data/posts.json", [raw | {"metadata_error": "missing metadata line"}])
     posts = pipeline.sync_metadata([raw])
     assert posts[0]["metadata_error"] == "missing metadata line"
+
+
+def test_ci_updates_index_without_building(workspace, monkeypatch):
+    monkeypatch.setattr(pipeline, "extract", lambda args: 0)
+    monkeypatch.setattr(pipeline, "render_all", lambda posts: None)
+    monkeypatch.setattr(pipeline, "build_site", lambda *a, **kw: pytest.fail("CI must build only after checking changes"))
+    args = Namespace(offline=False, audience="public", sleep=3, max_refresh=None,
+                     force=False, skip_enrich=False, refresh_summaries=False, skip_build=True)
+    result = pipeline.update(args)
+    assert result["built"] is False and result["readable_articles"] is None
+    assert read_json(workspace[0] / "data/posts_classified.json", [])[0]["topics"]
+
+
+@pytest.mark.parametrize("counts,stored_failure,expected", [
+    ({"images_failed": 1, "images_deferred": 32}, False, 0),
+    ({"images_failed": 1, "fetch_failed": 1}, False, 1),
+    ({"images_failed": 1, "conversion_failed": 1}, False, 1),
+    ({"images_failed": 1, "metadata_failed": 1}, False, 1),
+    ({"images_failed": 1, "stopped_early": 1}, False, 1),
+    ({"images_failed": 1}, True, 1),
+    (None, False, 1),
+])
+def test_image_warnings_do_not_hide_content_or_early_acquisition_errors(workspace, monkeypatch, capsys, counts, stored_failure, expected):
+    root, _ = workspace
+    summary = root / ".cache/ingestion/summary.json"
+    # A stale image-only summary must not mask today's early archive failure.
+    atomic_json(summary, {"this_run": {"images_failed": 1}})
+    def ingest(args):
+        if counts is not None:
+            atomic_json(summary, {"this_run": counts})
+        return 1
+    monkeypatch.setattr(pipeline, "extract", ingest)
+    monkeypatch.setattr(pipeline, "render_all", lambda posts: None)
+    if stored_failure:
+        atomic_json(pipeline.ARTICLES_DIR / "state.json", {"12345": {"status": "conversion_failed", "error": "bad formula"}})
+    monkeypatch.setenv("GITHUB_ACTIONS", "true")
+    monkeypatch.setenv("GITHUB_STEP_SUMMARY", str(root / "job-summary.md"))
+    assert pipeline.main(["--audience", "public", "--skip-build"]) == expected
+    result = read_json(root / ".cache/update-result.json", {})
+    assert result["exit_code"] == expected
+    if counts and counts.get("images_failed"):
+        assert "::warning::Image cache incomplete" in capsys.readouterr().out
+        assert "Image cache incomplete" in (root / "job-summary.md").read_text(encoding="utf8")
+    else:
+        assert not result["warnings"]
+
+
+def test_successful_ingestion_does_not_mask_failed_build(workspace, monkeypatch):
+    monkeypatch.setattr(pipeline, "extract", lambda args: 0)
+    monkeypatch.setattr(pipeline, "render_all", lambda posts: None)
+    def broken_build(*a, **kw):
+        raise pipeline.MirrorError("Stored content hash mismatch")
+    monkeypatch.setattr(pipeline, "build_site", broken_build)
+    assert pipeline.main(["--audience", "public"]) == 1
+
+
+def test_cannot_serve_an_unbuilt_site():
+    with pytest.raises(SystemExit) as exc:
+        pipeline.main(["--skip-build", "--serve"])
+    assert exc.value.code == 2

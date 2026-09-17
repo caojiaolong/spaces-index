@@ -165,6 +165,12 @@ class ImageHostPaused(MirrorError):
         super().__init__(f"Image host {host} is paused: {failure['error']}")
 
 
+class ImageHostSkipped(MirrorError):
+    def __init__(self, host):
+        self.host = host
+        super().__init__(f"Image host {host} is skipped by config/mirror.json")
+
+
 def fetch_image(request, url, headers):
     current = hosted_image_url(url)
     for _ in range(5):
@@ -182,23 +188,28 @@ def fetch_image(request, url, headers):
 
 
 def sync_images(directory, post_ids, *, interval=3, attempts=3, refresh_ids=(), retry_failed=False,
-                max_requests=None, log=print):
+                max_requests=None, verified_image_urls=None, log=print):
     # Imports here avoid cycles with the body extractor and publication verifier.
     try:
         from .common import read_json
         from .extract_articles import atomic_json
         from .mirror_articles import SerialFetcher, DeferredRetry
-        from .mirror_store import now_iso, age_days, verified_article
+        from .mirror_store import now_iso, age_days, verified_article, load_config
     except ImportError:
         from common import read_json
         from extract_articles import atomic_json
         from mirror_articles import SerialFetcher, DeferredRetry
-        from mirror_store import now_iso, age_days, verified_article
+        from mirror_store import now_iso, age_days, verified_article, load_config
     import requests
     from collections import Counter
     from datetime import datetime, timedelta, timezone
 
     counts = Counter()
+    skipped_hosts = set(load_config(directory).get("skip_image_hosts", []))
+    if not skipped_hosts <= IMAGE_HOSTS:
+        raise MirrorError("skip_image_hosts must contain only supported source image hosts")
+    if skipped_hosts:
+        log("Image hosts skipped by policy: " + ", ".join(sorted(skipped_hosts)))
     transports, ready_hosts, shared, checked_urls = {}, set(), {}, set()
     consecutive_errors = Counter()
     # Host cooldowns are runtime state, scoped to this content directory. In
@@ -231,6 +242,8 @@ def sync_images(directory, post_ids, *, interval=3, attempts=3, refresh_ids=(), 
 
     def request(url, headers):
         host = urlsplit(url).hostname
+        if host in skipped_hosts:
+            raise ImageHostSkipped(host)
         if host in paused_hosts:
             raise ImageHostPaused(host, paused_hosts[host])
         if host not in transports:
@@ -257,11 +270,17 @@ def sync_images(directory, post_ids, *, interval=3, attempts=3, refresh_ids=(), 
     try:
         for post_id in post_ids:
             folder = directory / post_id
-            article = verified_article(directory, post_id, local_only=True)
+            if verified_image_urls is not None and post_id in verified_image_urls:
+                # The unified extractor just validated this body. This in-memory
+                # handoff avoids parsing all bodies twice before publication.
+                source_urls = verified_image_urls[post_id]
+            else:
+                article = verified_article(directory, post_id, local_only=True)
+                source_urls = image_urls(article["tree"])
             path = folder / "images.json"
             previous = read_json(path, {"version": 1, "images": {}})
             old = previous.get("images", {})
-            urls = [url for url in image_urls(article["tree"]) if hosted_image_url(url)]
+            urls = [url for url in source_urls if hosted_image_url(url)]
             if not urls and not path.exists():
                 continue
             manifest = {"version": 1, "images": {url: old[url] for url in urls if url in old}}
@@ -275,6 +294,9 @@ def sync_images(directory, post_ids, *, interval=3, attempts=3, refresh_ids=(), 
                         valid = True
                     except (OSError, ValueError, KeyError):
                         pass
+                if urlsplit(key).hostname in skipped_hosts or info.get("skipped_host") in skipped_hosts:
+                    counts["cached" if valid else "skipped"] += 1
+                    continue
                 if (info.get("retry_not_before") and age_days(info["retry_not_before"]) < 0
                         and (info.get("server_deferred") or not retry_failed)):
                     counts["deferred"] += 1
@@ -321,6 +343,7 @@ def sync_images(directory, post_ids, *, interval=3, attempts=3, refresh_ids=(), 
                     entry.pop("retry_not_before", None)
                     entry.pop("error", None)
                     entry.pop("server_deferred", None)
+                    entry.pop("skipped_host", None)
                     image_dir = folder / "images"
                     if not image_dir.resolve().is_relative_to(folder.resolve()):
                         raise MirrorError("Image directory escapes article directory")
@@ -334,6 +357,13 @@ def sync_images(directory, post_ids, *, interval=3, attempts=3, refresh_ids=(), 
                     shared[key] = (folder, entry)
                     log(f"IMAGE {post_id} {counts['requests']} OK {len(raw)} bytes {url}")
                 except (OSError, ValueError, KeyError, requests.RequestException) as exc:
+                    if isinstance(exc, ImageHostSkipped):
+                        # Remember a skipped redirect target too, so the next
+                        # run need not request its source URL again.
+                        manifest["images"][url] = (info if valid else {"status": "skipped"}) | {"skipped_host": exc.host}
+                        counts["skipped"] += 1
+                        log(f"IMAGE {post_id} SKIPPED {url}: {exc}")
+                        continue
                     # Image failures never invalidate an otherwise verified article.
                     failure = failure_info(exc)
                     if valid and 'HTTP 404' not in str(exc) and 'HTTP 410' not in str(exc):

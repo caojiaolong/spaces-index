@@ -102,6 +102,28 @@ def test_all_delimiters_and_nested_environments():
     assert len(math_spans(text)) == 5
 
 
+@pytest.mark.parametrize("text,expected", [
+    (r"价格\$5，$x\$+y$ 后文", [r"$x\$+y$"]),
+    (r"\\(普通括号\\) \(x\)", [r"\(x\)"]),
+    (r"\\$x$", ["$x$"]),
+    (r"\alpha$x$\beta$$y$$", ["$x$", "$$y$$"]),
+    (r"$$a$b$$", [r"$$a$b$$"]),
+    (r"\[a\\\]", [r"\[a\\\]"]),
+    (r"\begin{a}\begin{b}x\end{b}\end{a}$y$", [r"\begin{a}\begin{b}x\end{b}\end{a}", "$y$"]),
+    (r"$\begin{a}x\end{b}$", [r"$\begin{a}x\end{b}$"]),
+    (r"\begin{}x", []),
+    pytest.param("普通文字 " * 10000 + r"$x_1$\(y^2\)", ["$x_1$", r"\(y^2\)"], id="long-prose"),
+])
+def test_scanner_keeps_escaped_delimiters_and_exact_offsets(text, expected):
+    assert [text[a:b] for a, b in math_spans(text)] == expected
+
+
+@pytest.mark.parametrize("text", [r"\end{", r"$x\$", r"\(x\\)", r"$$x$", r"$x" + "\\"])
+def test_scanner_rejects_orphaned_and_escaped_closings(text):
+    with pytest.raises(MirrorError):
+        math_spans(text)
+
+
 def test_caption_hints_require_explicit_source_structure():
     root = BeautifulSoup("""<div id="PostContent">
       <img src="plain.png" alt="看起来像图注"><p>看起来像图注</p>

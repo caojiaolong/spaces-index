@@ -37,36 +37,46 @@ jobs:
       - name: Install dependencies
         run: uv sync --locked
 
+      - name: Restore source request state
+        if: github.event_name != 'push'
+        uses: actions/cache/restore@v5
+        with:
+          path: |
+            .cache/mirror/robots*.json
+            .cache/image-cache/hosts-*.json
+          key: source-requests-${{ runner.os }}-v1-${{ github.run_id }}-${{ github.run_attempt }}
+          restore-keys: source-requests-${{ runner.os }}-v1-
+
       - name: Update index
         id: update
         if: github.event_name != 'push'
-        # One serial pipeline for articles, source-host images, index and public build.
+        # Update data first; build only once below, when there are changes.
         continue-on-error: true
-        run: uv run python scripts/update_all.py --audience public --sleep 3
+        run: uv run python scripts/update_all.py --audience public --sleep 3 --skip-build
+
+      - name: Save source request state
+        if: always() && github.event_name != 'push' && steps.update.outcome != 'skipped'
+        uses: actions/cache/save@v5
+        with:
+          path: |
+            .cache/mirror/robots*.json
+            .cache/image-cache/hosts-*.json
+          key: source-requests-${{ runner.os }}-v1-${{ github.run_id }}-${{ github.run_attempt }}
 
       - name: Check for deployable changes
         id: changes
-        shell: bash
-        run: |
-          if [[ "$GITHUB_EVENT_NAME" == "push" ]] || \
-             [[ -n "$(git status --porcelain -- README.md docs data config)" ]]; then
-            should_deploy=true
-          else
-            should_deploy=false
-          fi
-          echo "should_deploy=$should_deploy" >> "$GITHUB_OUTPUT"
-          echo "Deployment required: $should_deploy"
+        run: uv run python scripts/check_site_changes.py
 
       - name: Run tests
         if: steps.changes.outputs.should_deploy == 'true'
         run: uv run pytest
 
       - name: Build site
-        if: steps.changes.outputs.should_deploy == 'true' && (github.event_name == 'push' || steps.update.outcome != 'success')
+        if: steps.changes.outputs.should_deploy == 'true'
         run: uv run python scripts/build_site.py --input data/posts_classified.json --output _site
 
       - name: Commit refreshed metadata
-        if: github.event_name != 'push' && steps.changes.outputs.should_deploy == 'true'
+        if: github.event_name != 'push' && steps.changes.outputs.should_commit == 'true'
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"

@@ -1,5 +1,6 @@
 {
   "withdrawn_ids": [],
+  "skip_image_hosts": ["album.spaces.ac.cn", "bbs.spaces.ac.cn"],
   "refresh_days": 30,
   "refresh_per_run": 25,
   "max_stale_days": 120

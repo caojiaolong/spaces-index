@@ -127,59 +127,62 @@ def with_linebreaks(root: Tag) -> Tag:
     return root
 
 
+_MATH_TOKEN = re.compile(r"\\(?:\\|\$|\(|\)|\[|\]|begin\{[^}]+\}|end\{)|\$\$?")
+_MATH_ENV = re.compile(r"\\(begin|end)\{([^}]+)\}")
+_MATH_CLOSE = {"$": "$", "$$": "$$", r"\(": r"\)", r"\[": r"\]"}
+_MATH_END = {start: re.compile(re.escape(end) + r"|\\[\s\S]?") for start, end in _MATH_CLOSE.items()}
+
+
 def math_spans(text: str) -> list[tuple[int, int]]:
     """Scan raw TeX, retaining delimiters, environments and exact character order."""
     spans = []
     i = 0
-    while i < len(text):
-        start = i
-        if text.startswith(r"\$", i) or text.startswith(r"\\", i):
-            i += 2
+    # Jump between possible delimiters. Scanning every prose character and
+    # slicing text[i:] for each one made long articles disproportionately slow.
+    while token := _MATH_TOKEN.search(text, i):
+        start, i = token.start(), token.end()
+        delimiter = token[0]
+        if delimiter in (r"\$", r"\\"):
             continue
-        delimiter = next((d for d in ("$$", "$", r"\(", r"\[") if text.startswith(d, i)), None)
-        if delimiter:
-            end_delimiter = {r"\(": r"\)", r"\[": r"\]"}.get(delimiter, delimiter)
-            i += len(delimiter)
-            while i < len(text):
-                if text.startswith(end_delimiter, i):
-                    i += len(end_delimiter)
+        if delimiter in _MATH_CLOSE:
+            # Match the closing delimiter before escaped pairs, as in the
+            # original scanner; an escaped backslash must not hide a later '$'.
+            while closing := _MATH_END[delimiter].search(text, i):
+                i = closing.end()
+                if closing[0] == _MATH_CLOSE[delimiter]:
                     break
-                if text[i] == "\\":
-                    i += 2
-                else:
-                    i += 1
             else:
                 raise MirrorError("Unclosed math delimiter")
             spans.append((start, i))
             continue
-        begin = re.match(r"\\begin\{([^}]+)\}", text[i:])
-        if begin:
+        if delimiter.startswith(r"\begin{"):
             stack = []
-            for match in re.finditer(r"\\(begin|end)\{([^}]+)\}", text[i:]):
+            for match in _MATH_ENV.finditer(text, start):
                 kind, env = match.groups()
                 if kind == "begin":
                     stack.append(env)
                 elif not stack or stack.pop() != env:
                     raise MirrorError("Mismatched TeX environments")
                 if not stack:
-                    i += match.end()
+                    i = match.end()
                     break
             else:
                 raise MirrorError("Unclosed TeX environment")
             spans.append((start, i))
             continue
-        if text.startswith((r"\end{", r"\)", r"\]"), i):
-            raise MirrorError("Orphaned TeX closing delimiter")
-        i += 1
+        raise MirrorError("Orphaned TeX closing delimiter")
     return spans
 
 
 def mask_math(text: str) -> tuple[str, list[str]]:
     spans = math_spans(text)
     formulas = [text[a:b] for a, b in spans]
-    for index, (a, b) in reversed(list(enumerate(spans))):
-        text = text[:a] + f"{TOKEN}{index}END" + text[b:]
-    return text, formulas
+    pieces, end = [], 0
+    for index, (a, b) in enumerate(spans):
+        pieces.extend((text[end:a], f"{TOKEN}{index}END"))
+        end = b
+    pieces.append(text[end:])
+    return "".join(pieces), formulas
 
 
 def restore_math(text: str, formulas: list[str]) -> str:
@@ -309,9 +312,12 @@ def semantic_stream(root: Tag, formulas: list[str] | None = None) -> str:
     # Math is compared exactly in a separate sequence check. Hashes here retain
     # its position relative to every text and image, including repeated formulas.
     spans = math_spans(text)
-    for a, b in reversed(spans):
-        text = text[:a] + "MATH[" + digest(text[a:b]) + "]" + text[b:]
-    return " ".join(text.split())
+    pieces, end = [], 0
+    for a, b in spans:
+        pieces.extend((text[end:a], "MATH[" + digest(text[a:b]) + "]"))
+        end = b
+    pieces.append(text[end:])
+    return " ".join("".join(pieces).split())
 
 
 def canonical_links(root: Tag, base: str, attr: str, tag: str) -> list[str]:
@@ -330,20 +336,22 @@ def validate_body(root: Tag, markdown: str, base: str) -> dict:
     for node in rendered.find_all(string=True):
         if TOKEN in node:
             node.replace_with(restore_math(str(node), output_math))
+    source_stream, output_stream = semantic_stream(source), semantic_stream(rendered)
+    source_headings, output_headings = headings(source), headings(rendered)
     checks = {
-        "text_math_image_order": semantic_stream(source) == semantic_stream(rendered),
+        "text_math_image_order": source_stream == output_stream,
         "latex_exact_sequence": source_math == output_math,
-        "headings_exact_sequence": headings(source) == headings(rendered),
+        "headings_exact_sequence": source_headings == output_headings,
         "links_exact_sequence": canonical_links(source, base, "href", "a") == canonical_links(rendered, base, "href", "a"),
         "images_exact_sequence": canonical_links(source, base, "src", "img") == canonical_links(rendered, base, "src", "img"),
         "code_exact_sequence": [(n.name, n.get_text()) for n in code_nodes(source)] == [(n.name, n.get_text()) for n in code_nodes(rendered)],
     }
     return {"passed": all(checks.values()), "checks": checks, "formula_count": len(source_math),
             "display_formula_count": sum(f.startswith((r"\begin", "$$", r"\[")) for f in source_math),
-            "image_count": len(source.find_all("img")), "heading_count": len(headings(source)),
+            "image_count": len(source.find_all("img")), "heading_count": len(source_headings),
             "code_block_count": len(source.find_all("pre")),
-            "source_text_sha256": digest(semantic_stream(source)),
-            "output_text_sha256": digest(semantic_stream(rendered)),
+            "source_text_sha256": digest(source_stream),
+            "output_text_sha256": digest(output_stream),
             "latex_sha256": digest("\0".join(source_math)),
             "body_sha256": digest(markdown), "converter_version": VERSION}
 

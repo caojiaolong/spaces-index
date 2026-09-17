@@ -400,7 +400,10 @@
   }
   document.addEventListener("copy", event => {
     if (!current() || !event.clipboardData || articleNode.hidden) return;
+    // An input can retain an unrelated document selection while it has focus.
+    if (document.activeElement?.matches("input, textarea") || document.activeElement?.isContentEditable) return;
     const selection = getSelection();
+    if (!selection) return;
     const focused = document.activeElement?.closest("mjx-container[data-latex]");
     if (selection.isCollapsed && focused && articleNode.contains(focused)) {
       event.clipboardData.setData("text/plain", focused.dataset.latex);
@@ -408,27 +411,61 @@
     }
     if (!selection.rangeCount || selection.isCollapsed) return;
     const range = selection.getRangeAt(0).cloneRange();
-    if (!articleNode.contains(range.startContainer) || !articleNode.contains(range.endContainer)) return;
-    const containingFormula = node => (node.nodeType === Node.ELEMENT_NODE ? node : node.parentElement)?.closest("mjx-container[data-latex]");
+    // A selection can start in the title or use the article's parent as its
+    // boundary. Check intersection, not whether both endpoints are descendants.
+    if (!range.intersectsNode(articleNode)) return;
+    const containingFormula = node => {
+      const formula = (node.nodeType === Node.ELEMENT_NODE ? node : node.parentElement)?.closest("mjx-container[data-latex]");
+      return formula && articleNode.contains(formula) ? formula : null;
+    };
     const first = containingFormula(range.startContainer);
     const last = containingFormula(range.endContainer);
-    // A drag selection inside one expression is a deliberate selection of its
-    // visible characters. Leave native copy intact instead of expanding it.
-    if (first && first === last) return;
+    // Preserve deliberate character selection within a formula, but copying all
+    // its visible text should copy the same source as selecting its container.
+    if (first && first === last) {
+      const math = first.querySelector("mjx-math");
+      if (!math) return;
+      // Equation numbers are laid out separately and aren't part of the
+      // expression the reader drags across to select the complete formula.
+      const walker = document.createTreeWalker(math, NodeFilter.SHOW_TEXT, {
+        acceptNode: node => node.parentElement.closest("mjx-labels") ? NodeFilter.FILTER_REJECT : NodeFilter.FILTER_ACCEPT
+      });
+      const texts = [];
+      while (walker.nextNode()) if (walker.currentNode.textContent) texts.push(walker.currentNode);
+      if (!texts.length) return;
+      const visible = document.createRange();
+      visible.setStart(texts[0], 0);
+      visible.setEnd(texts.at(-1), texts.at(-1).length);
+      if (range.compareBoundaryPoints(Range.START_TO_START, visible) > 0 ||
+          range.compareBoundaryPoints(Range.END_TO_END, visible) < 0) return;
+    }
     if (first) range.setStartBefore(first);
     if (last) range.setEndAfter(last);
-    const fragment = range.cloneContents();
-    const formulas = fragment.querySelectorAll("mjx-container[data-latex]");
-    if (!formulas.length) return;
-    for (const formula of formulas) formula.replaceWith(document.createTextNode(formula.dataset.latex));
     const blocks = new Set("P DIV H1 H2 H3 H4 H5 H6 BLOCKQUOTE PRE UL OL LI TR".split(" "));
+    let formulaCount = 0;
     function textOf(node) {
-      if (node.nodeType === Node.TEXT_NODE) return node.textContent;
+      if (!range.intersectsNode(node)) return "";
+      if (node.nodeType === Node.TEXT_NODE) {
+        return node.textContent.slice(node === range.startContainer ? range.startOffset : 0,
+          node === range.endContainer ? range.endOffset : node.length);
+      }
+      if (node.nodeType !== Node.ELEMENT_NODE) return "";
+      // Read visibility from the live tree, so selecting beyond the article
+      // cannot include the hidden Markdown panel or MathJax's auxiliary text.
+      if (node.matches("script, style, template, noscript, [hidden], mjx-assistive-mml")) return "";
+      const style = getComputedStyle(node);
+      if (style.display === "none" || style.visibility === "hidden") return "";
+      if (node.matches("mjx-container[data-latex]") && articleNode.contains(node)) {
+        formulaCount++;
+        return node.dataset.latex;
+      }
       if (node.nodeName === "BR") return "\n";
       const text = [...node.childNodes].map(textOf).join("");
       return blocks.has(node.nodeName) || node.classList?.contains("math-scroll") ? `\n${text}\n` : text;
     }
-    event.clipboardData.setData("text/plain", textOf(fragment).replace(/^\n+|\n+$/g, ""));
+    const text = textOf(range.commonAncestorContainer).replace(/^\n+|\n+$/g, "");
+    if (!formulaCount) return;
+    event.clipboardData.setData("text/plain", text);
     event.preventDefault();
   }, { signal });
   function safeUrl(value, mail = false) {
