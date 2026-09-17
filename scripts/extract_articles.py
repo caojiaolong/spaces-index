@@ -27,9 +27,10 @@ try:
     from .mirror_store import MIRROR_DIR, age_days, now_iso, verified_article
     from .mirror_html import convert_html_body, validate_html_body
     from .paths import DATA_DIR, POLICY_PATH
-    from .image_cache import sync_images, image_urls, IMAGE_NAME
+    from .image_cache import sync_images, IMAGE_NAME
     from .enrich_posts import parse_post_metadata, has_cached_metadata, merge_cached_post, summary_needs_refresh, extract_source_summary
     from .ingestion_cache import VerifiedBodyCache
+    from .update_plan import pending_articles
 except ImportError:
     from common import ROOT, read_json, sort_posts_desc
     from fetch_archive import parse_archive
@@ -39,9 +40,10 @@ except ImportError:
     from mirror_store import MIRROR_DIR, age_days, now_iso, verified_article
     from mirror_html import convert_html_body, validate_html_body
     from paths import DATA_DIR, POLICY_PATH
-    from image_cache import sync_images, image_urls, IMAGE_NAME
+    from image_cache import sync_images, IMAGE_NAME
     from enrich_posts import parse_post_metadata, has_cached_metadata, merge_cached_post, summary_needs_refresh, extract_source_summary
     from ingestion_cache import VerifiedBodyCache
+    from update_plan import pending_articles
 
 STORAGE_ROOT = DATA_DIR
 ARCHIVE_URL = "https://spaces.ac.cn/content.html"
@@ -217,8 +219,9 @@ def run(args, output: Path) -> int:
     started = time.monotonic()
     runtime = ROOT / ".cache/ingestion" if output == MIRROR_DIR else output
     runtime.mkdir(parents=True, exist_ok=True)
-    validation_cache = VerifiedBodyCache(runtime / "verified-bodies.json")
+    validation_cache = None
     timings = {}
+    plan = {}
     def log(message):
         line = f"[{now_iso()}] {message}"
         print(line, flush=True)
@@ -228,7 +231,7 @@ def run(args, output: Path) -> int:
         result = {"updated_at": now_iso(), "this_run": dict(counters),
                   "stored_statuses": dict(Counter(s.get("status", "unknown") for s in state.values())),
                   "elapsed_seconds": round(time.monotonic() - started, 1), "publishes": False,
-                  "timings_seconds": timings}
+                  "timings_seconds": timings, "plan": plan}
         atomic_json(runtime / "summary.json", result)
         log("SUMMARY " + json.dumps(result, ensure_ascii=False))
     fetcher = SerialFetcher(args.sleep, args.attempts)
@@ -238,6 +241,7 @@ def run(args, output: Path) -> int:
         if not ready:
             fetcher.check_robots()
             ready = True
+    previous_archive = read_json(output / "archive.json", [])
     if args.refresh_archive:
         archive_started = time.monotonic()
         network_ready()
@@ -279,6 +283,28 @@ def run(args, output: Path) -> int:
                         read_json(output / str(p["id"]) / "images.json", {}).get("images", {}).values()))]
         if args.limit:
             selected = selected[:args.limit]
+    if args.incremental or args.plan_only:
+        planning_started = time.monotonic()
+        reasons = pending_articles(selected, state, metadata_cache, output, policy, refresh_ids,
+                                   force=args.refresh or args.refresh_metadata,
+                                   skip_metadata=args.skip_metadata_refresh, retry_failed=args.retry_failed)
+        total = len(selected)
+        selected = [post for post in selected if str(post["id"]) in reasons]
+        indexed_archive = read_json(ROOT / "data/posts_raw.json", []) if output == MIRROR_DIR else previous_archive
+        plan = {"article_ids": [str(post["id"]) for post in selected], "reasons": reasons,
+                "archive_changed": posts != previous_archive or posts != indexed_archive,
+                "untouched_articles": total - len(selected)}
+        plan["needs_update"] = bool(selected or plan["archive_changed"])
+        counters["untouched"] = total - len(selected)
+        timings["planning"] = round(time.monotonic() - planning_started, 3)
+        log(f"Pending work: {len(selected)} articles; {total - len(selected)} unchanged articles left unopened.")
+        if args.plan_only:
+            summary()
+            if hasattr(fetcher, "session"):
+                fetcher.session.close()
+            return 0
+    if selected:
+        validation_cache = VerifiedBodyCache(runtime / "verified-bodies.json")
     log(f"Selected {len(selected)} articles. Storage: {output}. Scheduled refreshes: {len(refresh_ids)}.")
     consecutive_network_errors = 0
     interrupted = False
@@ -422,6 +448,8 @@ def run(args, output: Path) -> int:
                 checked_at = source_checked_at or report["fetched_at"]
                 state[post_id] = {"status": "verified", "checked_at": checked_at, "title": report["metadata"]["title"],
                                   "markdown_sha256": audit["markdown_sha256"], "converter_version": VERSION}
+                if prior.get("images_pending") or audit["image_count"]:
+                    state[post_id]["images_pending"] = True
                 counters["verified"] += 1
                 if checked_source:
                     image_refresh.add(post_id)
@@ -455,13 +483,16 @@ def run(args, output: Path) -> int:
                 if saved_pending or state.get(post_id, {}) != prior:
                     atomic_json(state_path, state)
         timings["bodies"] = round(time.monotonic() - bodies_started, 3)
-        if not args.offline and not counters["stopped_early"]:
+        if selected and not args.offline and not counters["stopped_early"]:
             images_started = time.monotonic()
             image_ids = [str(p["id"]) for p in selected if state.get(str(p["id"]), {}).get("status") == "verified"
                          and str(p["id"]) not in withdrawn]
+            def finish_images(post_id, complete):
+                if complete and state[post_id].pop("images_pending", None):
+                    atomic_json(state_path, state)
             image_result = sync_images(output, image_ids, interval=args.sleep, attempts=args.attempts,
                                        refresh_ids=image_refresh, retry_failed=args.retry_failed,
-                                       verified_image_urls=verified_image_urls, log=log)
+                                       verified_image_urls=verified_image_urls, on_article=finish_images, log=log)
             counters.update({f"images_{key}": value for key, value in image_result.items()})
             timings["images"] = round(time.monotonic() - images_started, 3)
     except KeyboardInterrupt:
@@ -469,7 +500,8 @@ def run(args, output: Path) -> int:
         log("Interrupted. Completed articles are saved; rerun the same command to resume.")
     finally:
         atomic_json(state_path, state)
-        validation_cache.save(atomic_json)
+        if validation_cache:
+            validation_cache.save(atomic_json)
         summary()
         if hasattr(fetcher, "session"):
             fetcher.session.close()
@@ -505,6 +537,8 @@ def main(argv=None):
     parser.add_argument("--max-refresh", type=int, help="Maximum stale articles to revisit this run")
     parser.add_argument("--retry-failed", action="store_true", help="Only retry saved failures; honor Retry-After")
     parser.add_argument("--offline", action="store_true", help="Reconvert local snapshots with no HTTP")
+    parser.add_argument("--incremental", action="store_true", help="Open only new, due, failed or unfinished articles")
+    parser.add_argument("--plan-only", action="store_true", help="Discover pending work without opening bodies or images")
     args = parser.parse_args(argv)
     output = args.output.resolve()
     if output == STORAGE_ROOT.resolve() or not output.is_relative_to(STORAGE_ROOT.resolve()):
@@ -515,6 +549,8 @@ def main(argv=None):
         parser.error("--limit must be positive")
     if args.offline and (args.refresh or args.refresh_archive):
         parser.error("--offline cannot be combined with network refresh options")
+    if args.offline and (args.incremental or args.plan_only):
+        parser.error("Incremental discovery cannot be combined with offline repair")
     if args.status:
         state = read_json(output / "state.json", {})
         print(json.dumps({"output": str(output), "counts": dict(Counter(s.get("status", "unknown") for s in state.values())),

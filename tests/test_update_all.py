@@ -121,3 +121,28 @@ def test_cannot_serve_an_unbuilt_site():
     with pytest.raises(SystemExit) as exc:
         pipeline.main(["--skip-build", "--serve"])
     assert exc.value.code == 2
+
+
+def test_plan_only_writes_ci_decision_without_metadata_sync_or_build(workspace, monkeypatch):
+    root, _ = workspace
+    def extract(args):
+        assert '--plan-only' in args and '--refresh-archive' in args
+        atomic_json(root / '.cache/ingestion/summary.json', {
+            'plan': {'needs_update': False, 'article_ids': [], 'untouched_articles': 1337},
+            'timings_seconds': {'planning': 0.1}})
+        return 0
+    monkeypatch.setattr(pipeline, 'extract', extract)
+    monkeypatch.setattr(pipeline, 'sync_metadata', lambda *a, **kw: pytest.fail('Discovery synced index'))
+    monkeypatch.setattr(pipeline, 'build_site', lambda *a, **kw: pytest.fail('Discovery built site'))
+    monkeypatch.setenv('GITHUB_OUTPUT', str(root / 'output.txt'))
+    assert pipeline.main(['--plan-only']) == 0
+    assert (root / 'output.txt').read_text() == 'needs_update=false\n'
+
+
+def test_update_after_discovery_reuses_archive(workspace, monkeypatch):
+    commands = []
+    monkeypatch.setattr(pipeline, 'extract', lambda args: commands.append(args) or 0)
+    monkeypatch.setattr(pipeline, 'render_all', lambda *a: None)
+    assert pipeline.main(['--cached-archive', '--skip-build']) == 0
+    assert '--refresh-archive' not in commands[0]
+    assert '--incremental' in commands[0]

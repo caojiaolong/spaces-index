@@ -44,6 +44,8 @@ uv run python scripts/serve.py
 
 提取阶段可复用 `.cache/ingestion/verified-bodies.json` 中已校验正文的指纹和图片 URL，必须先核对四个正文文件的字节哈希及校验器代码、依赖版本。发布构建不得使用这份缓存跳过正文、公式或图片校验。Action 汇总区分归档网络、归档解析、正文与图片耗时。
 
+在线统一更新先从归档、状态、元数据和图片重试清单选择待办；未变且未到期的正常旧文章不打开正文或图片。`--plan-only` 只发现待办；`--full-scan` 显式检查全库。Actions 先稀疏检出小型索引及记录，有待办或归档变化再补全正文、图片和公式资源；push 构建前也必须补全检出。发布校验保持完整。
+
 ## 分类与生成文件
 
 - 分类规则在 `TOPICS`、`TOPIC_KEYWORDS`、`SOURCE_CATEGORY_TOPICS`；系列规则在 `detect_series_info()` 和 `detect_prefix_series_candidate()`。

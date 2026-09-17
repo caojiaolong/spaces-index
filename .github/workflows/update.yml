@@ -23,6 +23,16 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v6
+        with:
+          # Discover changes using only scripts, indexes and retry records.
+          # The action uses a partial clone for sparse checkout.
+          sparse-checkout-cone-mode: false
+          sparse-checkout: |
+            /*
+            !/data/articles/*
+            /data/articles/*.json
+            /data/articles/*/images.json
+            !/web/vendor/
 
       - name: Set up Python
         uses: actions/setup-python@v6
@@ -47,8 +57,17 @@ jobs:
           key: source-requests-${{ runner.os }}-v1-${{ github.run_id }}-${{ github.run_attempt }}
           restore-keys: source-requests-${{ runner.os }}-v1-
 
-      - name: Restore body audit cache
+      - name: Discover pending updates
+        id: plan
         if: github.event_name != 'push'
+        run: uv run python scripts/update_all.py --plan-only --sleep 3
+
+      - name: Complete checkout when needed
+        if: github.event_name == 'push' || steps.plan.outputs.needs_update == 'true'
+        run: git sparse-checkout disable
+
+      - name: Restore body audit cache
+        if: github.event_name != 'push' && steps.plan.outputs.needs_update == 'true'
         uses: actions/cache/restore@v5
         with:
           path: .cache/ingestion/verified-bodies.json
@@ -57,13 +76,13 @@ jobs:
 
       - name: Update index
         id: update
-        if: github.event_name != 'push'
+        if: github.event_name != 'push' && steps.plan.outputs.needs_update == 'true'
         # Update data first; build only once below, when there are changes.
         continue-on-error: true
-        run: uv run python scripts/update_all.py --audience public --sleep 3 --skip-build
+        run: uv run python scripts/update_all.py --audience public --sleep 3 --skip-build --cached-archive
 
       - name: Save source request state
-        if: always() && github.event_name != 'push' && steps.update.outcome != 'skipped'
+        if: always() && github.event_name != 'push' && steps.plan.outcome != 'skipped'
         uses: actions/cache/save@v5
         with:
           path: |

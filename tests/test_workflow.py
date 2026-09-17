@@ -4,6 +4,7 @@ import yaml
 
 
 ROOT = Path(__file__).resolve().parents[1]
+UPDATE_CONDITION = "github.event_name != 'push' && steps.plan.outputs.needs_update == 'true'"
 
 
 def load_workflow() -> dict:
@@ -22,7 +23,10 @@ def test_pages_workflow_routes_push_without_network_update():
 
     job = workflow["jobs"]["prepare"]
     steps = {step["name"]: step for step in job["steps"]}
-    assert steps["Update index"]["if"] == "github.event_name != 'push'"
+    assert steps["Update index"]["if"] == UPDATE_CONDITION
+    assert steps["Discover pending updates"]["if"] == "github.event_name != 'push'"
+    assert "--plan-only" in steps["Discover pending updates"]["run"]
+    assert "--cached-archive" in steps["Update index"]["run"]
     assert "--sleep 3" in steps["Update index"]["run"]
     assert "--audience public" in steps["Update index"]["run"]
     assert "--skip-build" in steps["Update index"]["run"]
@@ -90,7 +94,7 @@ def test_pages_workflow_has_required_deployment_contract():
 def test_unified_update_builds_once_and_deploys_withdrawals_after_failure():
     steps = {step["name"]: step for step in load_workflow()["jobs"]["prepare"]["steps"]}
     mirror = steps["Update index"]
-    assert mirror["if"] == "github.event_name != 'push'"
+    assert mirror["if"] == UPDATE_CONDITION
     assert mirror["continue-on-error"] == "true"
     assert "scripts/update_all.py --audience public --sleep 3 --skip-build" in mirror["run"]
     assert "steps.update.outcome" not in steps["Build site"]["if"]
@@ -124,9 +128,24 @@ def test_article_storage_is_included_in_full_site_updates():
 def test_body_audit_cache_is_only_used_for_ingestion():
     steps = {step["name"]: step for step in load_workflow()["jobs"]["prepare"]["steps"]}
     restore, save = steps["Restore body audit cache"], steps["Save body audit cache"]
-    assert restore["if"] == "github.event_name != 'push'"
+    assert restore["if"] == UPDATE_CONDITION
     assert "always()" in save["if"] and "github.event_name != 'push'" in save["if"]
     assert restore["with"]["key"] == save["with"]["key"]
     assert restore["with"]["path"] == save["with"]["path"] == ".cache/ingestion/verified-bodies.json"
     assert "github.run_id" in save["with"]["key"]
     assert "--cache" not in steps["Build site"]["run"]
+
+
+def test_discovery_uses_small_checkout_and_expands_before_updates_or_publication():
+    ordered = load_workflow()["jobs"]["prepare"]["steps"]
+    steps = {step["name"]: step for step in ordered}
+    names = list(steps)
+    checkout = steps["Checkout"]["with"]
+    assert checkout["sparse-checkout-cone-mode"] == "false"
+    assert "!/data/articles/*" in checkout["sparse-checkout"]
+    assert "/data/articles/*/images.json" in checkout["sparse-checkout"]
+    assert steps["Complete checkout when needed"]["if"] == (
+        "github.event_name == 'push' || steps.plan.outputs.needs_update == 'true'")
+    assert names.index("Discover pending updates") < names.index("Complete checkout when needed") < names.index("Update index")
+    assert steps["Complete checkout when needed"]["run"] == "git sparse-checkout disable"
+    assert steps["Save source request state"]["if"].endswith("steps.plan.outcome != 'skipped'")

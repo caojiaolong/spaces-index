@@ -188,7 +188,7 @@ def fetch_image(request, url, headers):
 
 
 def sync_images(directory, post_ids, *, interval=3, attempts=3, refresh_ids=(), retry_failed=False,
-                max_requests=None, verified_image_urls=None, log=print):
+                max_requests=None, verified_image_urls=None, on_article=None, log=print):
     # Imports here avoid cycles with the body extractor and publication verifier.
     try:
         from .common import read_json
@@ -282,6 +282,8 @@ def sync_images(directory, post_ids, *, interval=3, attempts=3, refresh_ids=(), 
             old = previous.get("images", {})
             urls = [url for url in source_urls if hosted_image_url(url)]
             if not urls and not path.exists():
+                if on_article:
+                    on_article(post_id, True)
                 continue
             manifest = {"version": 1, "images": {url: old[url] for url in urls if url in old}}
             for url in urls:
@@ -295,6 +297,8 @@ def sync_images(directory, post_ids, *, interval=3, attempts=3, refresh_ids=(), 
                     except (OSError, ValueError, KeyError):
                         pass
                 if urlsplit(key).hostname in skipped_hosts or info.get("skipped_host") in skipped_hosts:
+                    if url not in manifest["images"]:
+                        manifest["images"][url] = {"status": "skipped", "skipped_host": urlsplit(key).hostname}
                     counts["cached" if valid else "skipped"] += 1
                     continue
                 if (info.get("retry_not_before") and age_days(info["retry_not_before"]) < 0
@@ -388,6 +392,10 @@ def sync_images(directory, post_ids, *, interval=3, attempts=3, refresh_ids=(), 
                 for cached in image_dir.iterdir():
                     if cached.is_file() and IMAGE_NAME.fullmatch(cached.name) and cached.name not in keep:
                         cached.unlink()
+            if on_article:
+                complete = all(url in manifest["images"] or urlsplit(hosted_image_url(url)).hostname in skipped_hosts
+                               for url in urls)
+                on_article(post_id, complete)
     finally:
         for fetcher in transports.values():
             fetcher.session.close()

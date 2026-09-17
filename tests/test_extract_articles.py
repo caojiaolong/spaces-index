@@ -97,6 +97,76 @@ def test_warm_ingestion_checks_hashes_without_reparsing_unchanged_bodies(setup, 
     assert len(calls) == 1
 
 
+def test_incremental_discovery_never_opens_unchanged_bodies_or_images(setup, monkeypatch):
+    output, calls, responses = setup
+    responses.append(response(200, page("12345").encode()))
+    assert local.main(["--ids", "12345"]) == 0
+    from pathlib import Path
+    original_open = Path.open
+    def guarded(path, *args, **kwargs):
+        if path.parent == output / "12345" and path.name != "images.json":
+            pytest.fail(f"Unchanged body opened: {path.name}")
+        return original_open(path, *args, **kwargs)
+    monkeypatch.setattr(Path, "open", guarded)
+    monkeypatch.setattr(local, "sync_images", lambda *a, **kw: pytest.fail("Unchanged images scanned"))
+    monkeypatch.setattr(local, "VerifiedBodyCache", lambda *a: pytest.fail("Unused body audit cache loaded"))
+    assert local.main(["--ids", "12345", "--incremental"]) == 0
+    summary = read_json(output / "summary.json", {})
+    assert summary["this_run"]["untouched"] == 1
+    assert summary["plan"]["article_ids"] == []
+    assert len(calls) == 1
+
+
+def test_incremental_resume_keeps_unfinished_images_after_interrupt(setup, monkeypatch):
+    output, calls, responses = setup
+    responses.append(response(200, page("12345", "<p>图片</p><img src='https://spaces.ac.cn/a.png'>").encode()))
+    def interrupted(*args, **kwargs):
+        raise KeyboardInterrupt
+    monkeypatch.setattr(local, "sync_images", interrupted)
+    assert local.main(["--ids", "12345", "--incremental"]) == 130
+    assert read_json(output / "state.json", {})["12345"]["images_pending"] is True
+    def completed(directory, ids, **kwargs):
+        assert ids == ["12345"]
+        kwargs["on_article"]("12345", True)
+        return {"cached": 1}
+    monkeypatch.setattr(local, "sync_images", completed)
+    assert local.main(["--ids", "12345", "--incremental"]) == 0
+    assert "images_pending" not in read_json(output / "state.json", {})["12345"]
+    assert len(calls) == 1
+
+
+def test_plan_finds_new_and_due_articles_without_fetching_them(setup, monkeypatch):
+    output, calls, responses = setup
+    responses.append(response(200, page("12345").encode()))
+    assert local.main(["--ids", "12345"]) == 0
+    saved = read_json(output / "state.json", {})
+    saved["12345"]["checked_at"] = "2000-01-01T00:00:00+00:00"
+    local.atomic_json(output / "state.json", saved)
+    monkeypatch.setattr(local, "verified_article", lambda *a, **kw: pytest.fail("Planner validated body"))
+    assert local.main(["--ids", "12345", "12346", "--refresh-due", "--plan-only"]) == 0
+    plan = read_json(output / "summary.json", {})["plan"]
+    assert plan["needs_update"] is True
+    assert set(plan["article_ids"]) == {"12345", "12346"}
+    assert "refresh" in plan["reasons"]["12345"] and "new" in plan["reasons"]["12346"]
+    assert read_json(output / "state.json", {}) == saved
+    assert len(calls) == 1
+
+
+def test_offline_body_repair_queues_images_for_next_online_update(setup, monkeypatch):
+    output, calls, responses = setup
+    responses.append(response(200, page("12345", "<img src='https://spaces.ac.cn/a.png'>").encode()))
+    with monkeypatch.context() as failure:
+        def broken(*args):
+            raise MirrorError("converter failed")
+        failure.setattr(local, "convert_snapshot", broken)
+        assert local.main(["--ids", "12345"]) == 1
+    assert local.main(["--ids", "12345", "--offline"]) == 0
+    assert read_json(output / "state.json", {})["12345"]["images_pending"] is True
+    assert local.main(["--ids", "12345", "--plan-only"]) == 0
+    assert "unfinished_images" in read_json(output / "summary.json", {})["plan"]["reasons"]["12345"]
+    assert len(calls) == 1
+
+
 def test_complete_metadata_does_not_open_body_snapshots(tmp_path, monkeypatch):
     post = {"id": 12345, "title": "原标题", "source_category": "数学", "source_tags": [], "source_summary": None}
     monkeypatch.setattr(local, "read_json", lambda *a: pytest.fail("Complete metadata needs no snapshot read"))

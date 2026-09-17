@@ -46,7 +46,13 @@ def update(args) -> dict:
     # An early acquisition error must not be mistaken for an old image warning.
     summary_path.unlink(missing_ok=True)
     if not args.offline:
-        cmd = ["--all", "--refresh-archive", "--refresh-due", "--sleep", str(args.sleep)]
+        cmd = ["--all", "--refresh-due", "--sleep", str(args.sleep)]
+        if not getattr(args, "cached_archive", False):
+            cmd += ["--refresh-archive"]
+        if not getattr(args, "full_scan", False):
+            cmd += ["--incremental"]
+        if getattr(args, "plan_only", False):
+            cmd += ["--plan-only"]
         if args.force:
             cmd += ["--refresh-metadata"]
         if args.skip_enrich:
@@ -60,6 +66,10 @@ def update(args) -> dict:
         ingestion_status = extract(["--all", "--retry-failed", "--offline"])
     ingested_at = time.monotonic()
     ingestion_summary = read_json(summary_path, {})
+    if getattr(args, "plan_only", False):
+        return {"exit_code": ingestion_status, "plan_only": True,
+                "plan": ingestion_summary.get("plan", {}),
+                "timings_seconds": ingestion_summary.get("timings_seconds", {})}
     counters = ingestion_summary.get("this_run", {})
     archive = read_json(ARTICLES_DIR / "archive.json", read_json(ROOT / "data/posts_raw.json", []))
     if not archive:
@@ -101,6 +111,7 @@ def update(args) -> dict:
                                 "build": round(time.monotonic() - indexed_at, 1) if built else 0}
     result["ingestion_timings_seconds"] = ingestion_summary.get("timings_seconds", {})
     result["validation_cache_hits"] = counters.get("validation_cache_hits", 0)
+    result["untouched_articles"] = counters.get("untouched", 0)
     atomic_json(ROOT / ".cache/update-result.json", result)
     return result
 
@@ -116,6 +127,7 @@ def report_ci_result(result):
                  f"- Metadata failures: {len(result['metadata_failures'])}",
                  f"- Images skipped by policy: {result['images'].get('skipped', 0)}",
                  f"- Built in update step: {result['built']}",
+                 f"- Articles left unopened: {result['untouched_articles']}",
                  f"- Unchanged body audits reused: {result['validation_cache_hits']}",
                  f"- Ingestion detail (seconds): `{json.dumps(result['ingestion_timings_seconds'])}`",
                  f"- Stage durations (seconds): `{json.dumps(result['timings_seconds'])}`"]
@@ -132,6 +144,9 @@ def main(argv=None) -> int:
     parser.add_argument("--max-refresh", type=int, help="Bound the number of stale articles revisited")
     parser.add_argument("--serve", action="store_true", help="Serve the completed website on localhost")
     parser.add_argument("--skip-build", action="store_true", help="Update data and index only; CI builds once after checking for changes")
+    parser.add_argument("--plan-only", action="store_true", help="Refresh archive and list pending work without reading article bodies")
+    parser.add_argument("--cached-archive", action="store_true", help="Reuse the archive already fetched by the planning step")
+    parser.add_argument("--full-scan", action="store_true", help="Check every saved body and cached image, including unchanged articles")
     parser.add_argument("--port", type=int, default=8765)
     parser.add_argument("--force", action="store_true", help="Refresh metadata and in-scope bodies together from one page response")
     parser.add_argument("--skip-enrich", action="store_true", help="Skip requests solely for missing metadata; body responses still supply metadata")
@@ -140,6 +155,8 @@ def main(argv=None) -> int:
     args = parser.parse_args(argv)
     if args.skip_build and args.serve:
         parser.error("--skip-build cannot be combined with --serve")
+    if args.plan_only and (args.offline or args.serve or args.full_scan):
+        parser.error("--plan-only cannot be combined with --offline, --serve or --full-scan")
     if args.sleep < 3:
         parser.error("--sleep must be at least 3 seconds")
     if args.max_refresh is not None and args.max_refresh < 0:
@@ -148,6 +165,19 @@ def main(argv=None) -> int:
         with run_lock(ROOT / ".cache/update"):
             result = update(args)
         print(json.dumps(result, ensure_ascii=False, indent=2))
+        if args.plan_only:
+            plan = result["plan"]
+            if output := os.environ.get("GITHUB_OUTPUT"):
+                with Path(output).open("a", encoding="utf8") as handle:
+                    handle.write(f"needs_update={str(bool(plan.get('needs_update'))).lower()}\n")
+            if summary := os.environ.get("GITHUB_STEP_SUMMARY"):
+                with Path(summary).open("a", encoding="utf8") as handle:
+                    handle.write("### Update discovery\n\n"
+                                 f"- Pending articles: {len(plan.get('article_ids', []))}\n"
+                                 f"- Articles left unopened: {plan.get('untouched_articles', 0)}\n"
+                                 f"- Archive changed: {plan.get('archive_changed', False)}\n"
+                                 f"- Discovery durations (seconds): `{json.dumps(result['timings_seconds'])}`\n")
+            return result["exit_code"]
         report_ci_result(result)
         if args.serve:
             try:
