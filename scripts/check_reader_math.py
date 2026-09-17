@@ -291,6 +291,36 @@ def main():
             ddpm_equation = ddpm.locator('mjx-container[display="true"]').get_attribute("data-latex")
             assert clipboard().replace("\n", "") == ddpm_text[10:ddpm_text.index(ddpm_equation)].replace("\n", "") + ddpm_equation
 
+            # Long aligned equations must have one scroll surface. MathJax's
+            # minimum table width used to create a second, narrower scrollbar.
+            expanded = page.locator('[id="mjx-eqn:eq:expand"]').locator('xpath=ancestor::mjx-container')
+            for width in (320, 390, 1440):
+                page.set_viewport_size({"width": width, "height": 1000 if width == 1440 else 844})
+                expanded.scroll_into_view_if_needed()
+                geometry = expanded.evaluate("""n => {
+                  const outer = n.closest('.math-scroll');
+                  const scrollable = [outer, ...outer.querySelectorAll('*')].filter(e =>
+                    e.clientWidth && e.scrollWidth > e.clientWidth + 1 &&
+                    /^(auto|scroll)$/.test(getComputedStyle(e).overflowX));
+                  outer.scrollLeft = 0;
+                  const left = outer.getBoundingClientRect().left;
+                  const glyphs = [...n.querySelectorAll('mjx-math mjx-c')];
+                  const startVisible = Math.min(...glyphs.map(g => g.getBoundingClientRect().left)) >= left - 1;
+                  outer.scrollLeft = outer.scrollWidth;
+                  const right = outer.getBoundingClientRect().right;
+                  const endVisible = Math.max(...glyphs.map(g => g.getBoundingClientRect().right)) <= right + 1;
+                  const moved = outer.scrollLeft;
+                  outer.scrollLeft = 0;
+                  return {count: scrollable.length, onlyOuter: scrollable.every(e => e === outer),
+                    startVisible, endVisible, moved, innerScroll: n.scrollLeft};
+                }""")
+                assert geometry["onlyOuter"] and geometry["innerScroll"] == 0, geometry
+                assert geometry["startVisible"] and geometry["endVisible"], geometry
+                if width < 400:
+                    assert geometry["count"] == 1 and geometry["moved"] > 0, geometry
+                assert not page.evaluate("document.documentElement.scrollWidth > innerWidth")
+                page.screenshot(path=str(output / f"multiline-formula-scroll-{width}.png"))
+
             # Drag across the full expression, leaving its right-hand number
             # unselected, as in the reported screenshot. Neither context nor
             # the generated equation label should be necessary for LaTeX copy.
@@ -361,6 +391,7 @@ def main():
     result["ddpm_mixed_selection_preserves_source_without_duplicates"] = True
     result["whole_expression_drag_copies_latex_without_equation_number"] = True
     result["reference_hover_preview_without_scroll_or_progress_changes"] = True
+    result["multiline_formula_single_scroll_and_reachable_ends"] = True
     (output / "math-results.json").write_text(json.dumps(result, indent=2), encoding="utf8")
     print(json.dumps(result, indent=2))
 

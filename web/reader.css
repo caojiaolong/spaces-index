@@ -107,7 +107,8 @@ body.drawer-open .equation-return { visibility: hidden; }
 .equation-preview-heading strong { font-weight: 600; color: var(--accent-strong); }
 .equation-preview-content { max-height: min(280px, 42dvh); overflow: auto; padding: 5px 2px 9px; font-size: 18px; scrollbar-width: thin; }
 .equation-preview-content mjx-container[display="true"] { margin: 0 !important; }
-.reader-content mjx-container[display="true"] { overflow-x: auto; overflow-y: hidden; max-width: 100%; padding: 12px 0; }
+/* The outer .math-scroll owns scrolling, including MathJax's table min-width. */
+.reader-content mjx-container[display="true"] { overflow: visible; max-width: 100%; padding: 12px 0; }
 .reader-content hr { border: 0; border-top: 1px solid var(--line); margin: 30px 0; }
 .source-warnings, .source-attachment { display: block; border: 1px solid var(--line); border-radius: 6px; padding: 14px 18px; margin: 24px 0; color: var(--text-soft); font: 12px/1.85 var(--font-editorial); }
 .source-warnings p { margin: 5px 0; }
