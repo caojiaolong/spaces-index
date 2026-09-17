@@ -21,6 +21,13 @@
       "error": "HTTPSConnectionPool(host='album.spaces.ac.cn', port=443): Max retries exceeded with url: /robots.txt (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1016)')))",
       "retry_not_before": "2026-09-17T11:11:07+00:00",
       "server_deferred": false
+    },
+    "https://album.spaces.ac.cn/pictures/Life/University_Celebration/DSCN8313.jpg": {
+      "status": "failed",
+      "checked_at": "2026-09-17T07:53:57+00:00",
+      "error": "HTTPSConnectionPool(host='album.spaces.ac.cn', port=443): Max retries exceeded with url: /robots.txt (Caused by NameResolutionError(\"HTTPSConnection(host='album.spaces.ac.cn', port=443): Failed to resolve 'album.spaces.ac.cn' ([Errno -2] Name or service not known)\"))",
+      "retry_not_before": "2026-09-18T07:53:57+00:00",
+      "server_deferred": false
     }
   }
 }
