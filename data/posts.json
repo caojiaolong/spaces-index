@@ -1,5 +1,20 @@
 [
   {
+    "id": "11910",
+    "title": "排序不等式及其推广",
+    "url": "https://spaces.ac.cn/archives/11910",
+    "date": "2026-09-21",
+    "source_category": "数学研究",
+    "source_tags": [
+      "不等式",
+      "矩阵",
+      "SVD",
+      "正交"
+    ],
+    "source_summary": "本文从排序不等式出发，沿着“矩阵化”和“多序列化”两条线索，梳理了它的主要推广。",
+    "metadata_checked_at": "2026-09-22T07:49:19+00:00"
+  },
+  {
     "id": "11885",
     "title": "让炼丹更科学一些（十）：单调性假设的拆与补",
     "url": "https://spaces.ac.cn/archives/11885",
