@@ -9364,5 +9364,12 @@
     "title": "排序不等式及其推广",
     "markdown_sha256": "ebfd225ce6cd6970164243ffe267279f0fe2e6de85c182a44cef4a206eaab53c",
     "converter_version": 1
+  },
+  "11917": {
+    "status": "verified",
+    "checked_at": "2026-09-29T08:45:38+00:00",
+    "title": "慢即是快：1. Shampoo的尽头是Muon？",
+    "markdown_sha256": "9fe1fabf601cd3a8bfce748d5f89d56e47f45e98afdb40dc951a9165895bba01",
+    "converter_version": 1
   }
 }

@@ -1,0 +1,45 @@
+{
+  "metadata": {
+    "id": "11917",
+    "title": "慢即是快：1. Shampoo的尽头是Muon？",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/11917",
+    "date": "2026-09-28",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "数学研究",
+    "source_tags": [
+      "不等式",
+      "优化器",
+      "muon",
+      "最慢下降"
+    ],
+    "source_summary": "本文从凸优化的平均收敛上界出发，提出了“正交最慢下降”这一原理，并应用到基于Kronecker积的预条件优化器（Muon、Shampoo家族）上，发现不管原始预条件矩阵如何，正交最慢下降都会将它的特征矩阵“洗掉”，至多留下特征值来修正梯度（动量）的奇异值谱，使其均衡化，这一切都与Muon高度同质——如标题所示。"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 122,
+    "display_formula_count": 18,
+    "image_count": 0,
+    "heading_count": 9,
+    "code_block_count": 0,
+    "source_text_sha256": "c02300269a7d3e40adc612eb1c6f72dfcd93fbaf69c575f9a7eaca471e8be547",
+    "output_text_sha256": "c02300269a7d3e40adc612eb1c6f72dfcd93fbaf69c575f9a7eaca471e8be547",
+    "latex_sha256": "3024f9d8396829a5bc21defb3c79e0efa89464d7b4f30aec0ab782355c8885aa",
+    "body_sha256": "fa73175fae16e9e98e1288566eb61bf5cfabd53e9b84ed5299dfd0c62132424a",
+    "converter_version": 1,
+    "markdown_sha256": "9fe1fabf601cd3a8bfce748d5f89d56e47f45e98afdb40dc951a9165895bba01"
+  },
+  "fetched_at": "2026-09-29T08:45:38+00:00",
+  "source_snapshot_sha256": "db6a45fc2321780c2a27317eeadc9b5ca0c3c645cdd01ba83ba3f6d9805df850",
+  "images": {},
+  "publication_policy": "config/mirror.json"
+}

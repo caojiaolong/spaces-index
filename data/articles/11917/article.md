@@ -1,0 +1,120 @@
+# 慢即是快：1\. Shampoo的尽头是Muon？
+
+> 作者：苏剑林 · 科学空间 · 2026-09-28
+>
+> 原文：<https://spaces.ac.cn/archives/11917>
+>
+> 原文许可：[CC BY-NC-ND 2.5 CN（署名-非商业性使用-禁止演绎）](https://creativecommons.org/licenses/by-nc-nd/2.5/cn/)。
+>
+> 本文件由 spaces-index 非官方、非商业项目进行必要的 HTML → Markdown 格式转换；正文未做摘要、润色、翻译或重组。项目不代表作者，也不表示作者为项目背书。
+>
+> 署名及附加许可说明不代表已获得作者额外授权。第三方素材权利依其原有声明。
+>
+> 原站转载与引用说明：[科学空间 FAQ](https://spaces.ac.cn/archives/6508#%E6%96%87%E7%AB%A0%E5%A6%82%E4%BD%95%E8%BD%AC%E8%BD%BD/%E5%BC%95%E7%94%A8)
+
+---
+
+众所周知，[Muon](<https://spaces.ac.cn/tag/muon/>)优化器流行起来已经有好一段时间，虽然说不上完全取代Adam，但已经算得上不能忽视的、极具竞争力的优化器。与此同时，这两年Shampoo系优化器也“不甘落后”，除了原始Shampoo外，还演变出[KL\-Shampoo](<https://papers.cool/arxiv/2509.03378>)、[OKLS](<https://blog.tilderesearch.com/blog/online-kl-shampoo>)、[PSGD](<https://github.com/lixilinx/psgd_torch>)、[SOAP](<https://papers.cool/arxiv/2409.11321>)等变体，都声称获得了比Muon更好的结果。
+
+然而，本文将会泼一盆冷水：所有类似于Shampoo的、基于Kronecker积的预条件优化器，其理想极限可能都是Muon——我们花大代价所做的预条件矩阵，可能都是“无用功”。
+
+## 平均收敛
+
+我们从[《让炼丹更科学一些（十）：单调性假设的拆与补》](<https://spaces.ac.cn/archives/11885>)得到的平均收敛结论出发：在凸性假设下，更新规则$\boldsymbol{\theta}_{t+1} = \boldsymbol{\theta}_t - \eta_t \boldsymbol{H}_t^{-1}\boldsymbol{g}_t$成立如下不等式
+\begin{equation}\frac{\sum_{t=1}^T \eta_t \mathbb{E}[L(\boldsymbol{\theta}_t) - L(\boldsymbol{\theta}^*)]}{\sum_{t=1}^T \eta_t} \leq \mathbb{E}\left[\frac{R^2 \Lambda_T}{2\sum_{t=1}^T \eta_t} + \frac{\sum_{t=1}^T \eta_t^2 \Vert\boldsymbol{g}_t\Vert_{\boldsymbol{H}_t^{-1}}^2}{2\sum_{t=1}^T \eta_t}\right]\end{equation}
+其中
+\begin{equation}\Lambda_T \triangleq \lambda_{\max}(\boldsymbol{H}_1) + \sum_{t=2}^T [\lambda_{\max}(\boldsymbol{H}_t - \boldsymbol{H}_{t-1})]_+\end{equation}
+其它记号的含义这里就不展开介绍了，大家自行看原文就好。直观来看，这个收敛上界分为两项：第一项代表下降得多快，第二项代表收敛过程抖动得多厉害，实际训练中，我们需要选择适当的$\eta_t$和$\boldsymbol{H}_t$，来平衡两项的大小，使其尽可能小。
+
+也就是说，我们假设：<strong>通过最小化收敛上界，能够获得更好的优化器。</strong>这个做法我们已有先例：文章[《让炼丹更科学一些（九）：经典自适应梯度算法》](<https://spaces.ac.cn/archives/11882>)基于$\boldsymbol{H}_t\succeq \boldsymbol{H}_{t-1}$和$\eta_t$为常数的假设，将$\Lambda_T$换成它的上界$\newcommand{tr}{\mathop{\text{tr}}}\tr(\boldsymbol{H}_T)$，随后最小化上界得$\boldsymbol{H}^* = \left(\sum_{t=1}^T  \boldsymbol{g}_t\boldsymbol{g}_t^{\top}\right)^{1/2}$，从而引出了AdaGrad优化器。
+
+而这个假设，也是贯穿本文推导的核心出发点。
+
+## 最慢下降
+
+现在我们换一个视角：假设有一个现成的、固定的矩阵$\boldsymbol{H}_t$，我们将它改造成$\boldsymbol{O}_t^{\top}\boldsymbol{H}_t\boldsymbol{O}_t$，其中$\boldsymbol{O}_t$是正交矩阵，我们希望选择适当的$\boldsymbol{O}_t$，使得
+\begin{equation}\boldsymbol{\theta}_{t+1} = \boldsymbol{\theta}_t - \eta_t (\boldsymbol{O}_t^{\top}\boldsymbol{H}_t\boldsymbol{O}_t)^{-1}\boldsymbol{g}_t\end{equation}
+成为一个更好的优化器。怎么判断它好不好呢？按照上一节的观点，我们希望它能降低收敛上界。注意到正交变换不改变特征值，所以$\lambda_{\max}(\boldsymbol{O}_1^{\top}\boldsymbol{H}_1\boldsymbol{O}_1)=\lambda_{\max}(\boldsymbol{H}_1)$，然后假设$\boldsymbol{O}_t$随$t$是缓变的，那么
+\begin{equation}\lambda_{\max}(\boldsymbol{O}_t^{\top}\boldsymbol{H}_t\boldsymbol{O}_t - \boldsymbol{O}_{t-1}^{\top}\boldsymbol{H}_{t-1}\boldsymbol{O}_{t-1}) \approx \lambda_{\max}(\boldsymbol{O}_t^{\top}\boldsymbol{H}_t\boldsymbol{O}_t - \boldsymbol{O}_t^{\top}\boldsymbol{H}_{t-1}\boldsymbol{O}_t) = \lambda_{\max}(\boldsymbol{H}_t - \boldsymbol{H}_{t-1})\end{equation}
+这样一来，$\Lambda_T$在替换$\boldsymbol{H}_t\to \boldsymbol{O}_t^{\top}\boldsymbol{H}_t\boldsymbol{O}_t$下近似不变，所以如果我们只想优化$\boldsymbol{O}_t$，那么目标函数就只剩下第二项
+\begin{equation}\frac{\sum_{t=1}^T \eta_t^2 \Vert\boldsymbol{g}_t\Vert_{(\boldsymbol{O}_t^{\top}\boldsymbol{H}_t\boldsymbol{O}_t)^{-1}}^2}{2\sum_{t=1}^T \eta_t}\end{equation}
+由于每个$t$对应的$\boldsymbol{O}_t$都可以不同，所以我们完全可以逐点最小化$\Vert\boldsymbol{g}_t\Vert_{(\boldsymbol{O}_t^{\top}\boldsymbol{H}_t\boldsymbol{O}_t)^{-1}}^2$，它又可以写成
+\begin{equation}\min_{\boldsymbol{O}_t}\langle\boldsymbol{g}_t, (\boldsymbol{O}_t^{\top}\boldsymbol{H}_t\boldsymbol{O}_t)^{-1}\boldsymbol{g}_t\rangle\qquad\text{s.t.}\qquad \boldsymbol{O}_t^{\top}\boldsymbol{O}_t = \boldsymbol{I}\end{equation}
+其中$\boldsymbol{\varphi}_t =(\boldsymbol{O}_t^{\top}\boldsymbol{H}_t\boldsymbol{O}_t)^{-1}\boldsymbol{g}_t$是优化器的更新方向，我们知道$\mathcal{L}(\boldsymbol{\theta} - \eta_t \boldsymbol{\varphi}_t)\approx \mathcal{L}(\boldsymbol{\theta}) - \eta_t\langle\boldsymbol{g}_t,\boldsymbol{\varphi}_t\rangle$，所以上式的另一个含义就是在一阶近似下，最小化每一步的损失下降量，即最慢下降。
+
+## 快慢之辩
+
+看过[《Muon续集：为什么我们选择尝试Muon？》](<https://spaces.ac.cn/archives/10739>)、[《流形上的最速下降：1\. SGD \+ 超球面》](<https://spaces.ac.cn/archives/11196>)、[《MuP之上：2\. 线性层与最速下降》](<https://spaces.ac.cn/archives/11605>)等文章的读者应该知道，很多优化器都是基于最速下降（即最快下降）原理推导出来的。那现在又来个最慢下降，这两者不冲突吗？
+
+事实上，这正好代表了两种截然不同的看待优化器的观点。最速下降是一阶近似的、局部的贪心解，期望每一步取最优就能得到整体较优的解，它代表着乐观假设；而最小化收敛上界代表着一种全局的、悲观的假设，它希望我们在最糟糕的情况下，依然能实现某种收敛性质。
+
+而后者之所以会刚好呈现出最慢下降这一反直觉的形式，是因为此时我们将优化空间限定在正交变换上，收敛上界的第一项近似可忽略，只留下第二项，其含义便是最慢下降。这也提醒我们，并不是所有优化空间都可以考虑最慢下降，这只不过是正交空间下的一个特例，其他情况的可行性需要具体分析。
+
+此时最慢下降的作用是，在保证下降的前提下，使得优化轨迹更为平稳，从而可以使用更大的学习率，或者相同学习率下前进得更快更准。如果用最速下降的语言，那么就要将关于稳定性的假设包含在更新量的约束中（比如Muon选择了谱范数）。
+
+此外，对于随机优化场景，这一项还跟噪声相关——将$\boldsymbol{g}_t$分解为“真实值\+随机噪声”，那么$\mathbb{E}[\Vert\boldsymbol{g}_t\Vert_{\boldsymbol{H}_t^{-1}}^2]$将会出现一个方差项——所以最慢下降也意味着降低噪声对优化过程的影响，从而使得优化更准确。
+
+## 矩阵优化
+
+以上几节讨论的是一般原理，现在我们正式结合矩阵优化来推导。考虑矩阵参数$\boldsymbol{W}\in\mathbb{R}^{n\times m}$，其梯度为$\boldsymbol{G}$，展平后的向量为$\boldsymbol{g}=\mathop{\text{vec}}(\boldsymbol{G})\in\mathbb{R}^{nm}$，此时$\boldsymbol{H}$是一个$nm\times nm$矩阵，思考起来比较费劲。
+
+针对矩阵场景，我们考虑的是能表示成Kronecker积的预条件矩阵，但这里不打算引入Kronecker积的语言，而是直接从线性算子角度来理解，即直接将$\boldsymbol{H}^{-1}\boldsymbol{g}$理解为
+\begin{equation}\boldsymbol{H}^{-1}\boldsymbol{g} = \mathop{\text{vec}}(\boldsymbol{P}\boldsymbol{G}\boldsymbol{Q})\end{equation}
+也就是说，优化器的更新规则是$\boldsymbol{W} - \eta\boldsymbol{P}\boldsymbol{G}\boldsymbol{Q}$（用Kronecker积写出来是$\boldsymbol{H}^{-1} = \boldsymbol{Q}\otimes\boldsymbol{P}$），其中$\boldsymbol{P}\in\mathbb{R}^{n\times n},\boldsymbol{Q}\in\mathbb{R}^{m\times m}$是两个半正定的预条件矩阵，$\boldsymbol{P},\boldsymbol{Q}$可以跟当前梯度甚至历史梯度相关，所以它能覆盖Muon及各种Shampoo变体（无动量版本）。
+
+现在固定矩阵$\boldsymbol{P},\boldsymbol{G},\boldsymbol{Q}$，我们希望通过选择适当的正交矩阵$\boldsymbol{X}\in\mathbb{R}^{n\times n}$和$\boldsymbol{Y}\in\mathbb{R}^{m\times m}$，使得新的更新量$\boldsymbol{X}^{\top}\boldsymbol{P}\boldsymbol{X}\boldsymbol{G}\boldsymbol{Y}^{\top}\boldsymbol{Q}\boldsymbol{Y}$成为一个更好的优化器（用Kronecker积写出来是$\boldsymbol{O} = \boldsymbol{Y}\otimes\boldsymbol{X}$），而指导原理正是上面几节讨论的“正交最慢下降”，即
+\begin{equation}\min_{\boldsymbol{X},\boldsymbol{Y}} \tr(\boldsymbol{G}^{\top}\boldsymbol{X}^{\top}\boldsymbol{P}\boldsymbol{X}\boldsymbol{G}\boldsymbol{Y}^{\top}\boldsymbol{Q}\boldsymbol{Y})\qquad\text{s.t.}\qquad \boldsymbol{X}^{\top}\boldsymbol{X} = \boldsymbol{I}_n,\quad \boldsymbol{Y}^{\top}\boldsymbol{Y} = \boldsymbol{I}_m\end{equation}
+
+## 初步求解
+
+完整的问题略微有点复杂。简单起见，我们不妨先求解$\boldsymbol{Q}=\boldsymbol{I}_m$的特例来找找感觉，此时问题简化成
+\begin{equation}\min_{\boldsymbol{X}} \tr(\boldsymbol{G}^{\top}\boldsymbol{X}^{\top}\boldsymbol{P}\boldsymbol{X}\boldsymbol{G})\qquad\text{s.t.}\qquad \boldsymbol{X}^{\top}\boldsymbol{X} = \boldsymbol{I}_n\end{equation}
+注意到$\tr(\boldsymbol{G}^{\top}\boldsymbol{X}^{\top}\boldsymbol{P}\boldsymbol{X}\boldsymbol{G})=\tr(\boldsymbol{G}\boldsymbol{G}^{\top}\boldsymbol{X}^{\top}\boldsymbol{P}\boldsymbol{X})$，所以这正好是我们在[《排序不等式及其推广》](<https://spaces.ac.cn/archives/11910>)推导过的冯·诺伊曼迹不等式问题，其最小值是
+\begin{equation}\sum_{i=1}^n\lambda_i(\boldsymbol{G}\boldsymbol{G}^{\top}) \lambda_{n+1-i}(\boldsymbol{P})\end{equation}
+$\lambda_i(\cdot)$表示对应矩阵的从大到小的第$i$个特征值。设$\boldsymbol{G}$的SVD为$\boldsymbol{U}\boldsymbol{\Sigma}\boldsymbol{V}^{\top}$（完全体，即$\boldsymbol{U},\boldsymbol{V}$都是正交方阵，奇异值按照从大到小排列），那么$\boldsymbol{G}\boldsymbol{G}^{\top}$的特征值分解为$\boldsymbol{U}\boldsymbol{\Sigma}\boldsymbol{\Sigma}^{\top}\boldsymbol{U}^{\top}$，取到最小值的$\boldsymbol{X}_*$满足$\boldsymbol{X}_*^{\top}\boldsymbol{P}\boldsymbol{X}_* = \boldsymbol{U} \boldsymbol{\Lambda}^{\uparrow}_{\boldsymbol{P}}\boldsymbol{U}^{\top}$，其中$\boldsymbol{\Lambda}^{\uparrow}_{\boldsymbol{P}}$是$\boldsymbol{P}$的特征值从小到大排列后形成的对角阵。此时最优更新量为
+\begin{equation}\boldsymbol{X}_*^{\top}\boldsymbol{P}\boldsymbol{X}_*\boldsymbol{G} = (\boldsymbol{U} \boldsymbol{\Lambda}^{\uparrow}_{\boldsymbol{P}}\boldsymbol{U}^{\top})( \boldsymbol{U}\boldsymbol{\Sigma}\boldsymbol{V}^{\top}) = \boldsymbol{U} (\boldsymbol{\Lambda}^{\uparrow}_{\boldsymbol{P}}\boldsymbol{\Sigma})\boldsymbol{V}^{\top}\end{equation}
+笔者首次看到这个结果时，是相当震惊的。它告诉我们，不管原本的$\boldsymbol{P}$是什么，经过正交最慢下降后，它至多可以保留特征值，特征矩阵完全消失。最终的更新量是$\boldsymbol{G}$的左右奇异矩阵夹乘一个对角阵$\boldsymbol{\Lambda}^{\uparrow}_{\boldsymbol{P}}\boldsymbol{\Sigma}$，这个对角阵是$\boldsymbol{P}$的特征值与$\boldsymbol{G}$的奇异值以倒序相乘，这种方式会让全体奇异值变得更均匀，跟Muon的思想一致。
+
+这个结果暗示了，不管我们做多么昂贵的预条件，最好的结果也不过是“奔赴Muon”。接下来我们将会看到，这个结论仍适用于$\boldsymbol{Q}\neq\boldsymbol{I}_m$的一般情形。
+
+## 一般情形
+
+记$\boldsymbol{A} = \boldsymbol{G}^{\top}\boldsymbol{X}^{\top}\boldsymbol{P}\boldsymbol{X}\boldsymbol{G}, \boldsymbol{B} = \boldsymbol{G}\boldsymbol{Y}^{\top}\boldsymbol{Q}\boldsymbol{Y}\boldsymbol{G}^{\top}$，由迹的不变性得
+\begin{equation}\tr(\boldsymbol{G}^{\top}\boldsymbol{X}^{\top}\boldsymbol{P}\boldsymbol{X}\boldsymbol{G}\boldsymbol{Y}^{\top}\boldsymbol{Q}\boldsymbol{Y}) = \tr(\boldsymbol{A}\boldsymbol{Y}^{\top}\boldsymbol{Q}\boldsymbol{Y}) = \tr(\boldsymbol{B}\boldsymbol{X}^{\top}\boldsymbol{P}\boldsymbol{X})\end{equation}
+设最优解为$\boldsymbol{X}_*, \boldsymbol{Y}_*$，对应的$\boldsymbol{A},\boldsymbol{B}$为$\boldsymbol{A}_*,\boldsymbol{B}_*$，分别固定$\boldsymbol{X}_*, \boldsymbol{Y}_*$求$\boldsymbol{Y}_*, \boldsymbol{X}_*$，根据上一节的结果，我们可以写出驻点条件
+\begin{equation}\boldsymbol{X}_*^{\top}\boldsymbol{P}\boldsymbol{X}_* = \boldsymbol{U}_{\boldsymbol{B}} \boldsymbol{\Lambda}_{\boldsymbol{P}}^{\uparrow} \boldsymbol{U}_{\boldsymbol{B}}^{\top},\qquad \boldsymbol{Y}_*^{\top}\boldsymbol{Q}\boldsymbol{Y}_* = \boldsymbol{U}_{\boldsymbol{A}} \boldsymbol{\Lambda}_{\boldsymbol{Q}}^{\uparrow} \boldsymbol{U}_{\boldsymbol{A}}^{\top}\end{equation}
+其中$\boldsymbol{U}_{\boldsymbol{A}}\boldsymbol{\Lambda}_{\boldsymbol{A}}^{\downarrow}\boldsymbol{U}_{\boldsymbol{A}}^{\top},\boldsymbol{U}_{\boldsymbol{B}}\boldsymbol{\Lambda}_{\boldsymbol{B}}^{\downarrow}\boldsymbol{U}_{\boldsymbol{B}}^{\top}$分别为$\boldsymbol{A}_*, \boldsymbol{B}_*$的特征值分解（“$\downarrow$”表示特征值从大到小排序），我们的任务是分析$\boldsymbol{\Phi}=\boldsymbol{X}_*^{\top}\boldsymbol{P}\boldsymbol{X}_*\boldsymbol{G}\boldsymbol{Y}_*^{\top}\boldsymbol{Q}\boldsymbol{Y}_*$的性质。第一个结论跟上一节如出一辙：<strong>$\boldsymbol{\Phi}$具有$\boldsymbol{U}\boldsymbol{D}\boldsymbol{V}^{\top}$的形式，其中$\boldsymbol{U}\boldsymbol{\Sigma}\boldsymbol{V}^{\top}$是$\boldsymbol{G}$的SVD，$\boldsymbol{D}$是某个对角阵。</strong>证明不算困难，根据驻点条件，直接计算得
+\begin{equation}\boldsymbol{G}^{\top}\boldsymbol{\Phi} = \boldsymbol{U}_{\boldsymbol{A}}(\boldsymbol{\Lambda}_{\boldsymbol{A}}^{\downarrow}\boldsymbol{\Lambda}_{\boldsymbol{Q}}^{\uparrow})\boldsymbol{U}_{\boldsymbol{A}}^{\top},\qquad \boldsymbol{\Phi}\boldsymbol{G}^{\top} = \boldsymbol{U}_{\boldsymbol{B}}(\boldsymbol{\Lambda}_{\boldsymbol{B}}^{\downarrow}\boldsymbol{\Lambda}_{\boldsymbol{P}}^{\uparrow})\boldsymbol{U}_{\boldsymbol{B}}^{\top} \label{eq:G-Phi}\end{equation}
+这表明$\boldsymbol{G}^{\top}\boldsymbol{\Phi}$和$\boldsymbol{\Phi}\boldsymbol{G}^{\top}$都是对称矩阵。由于$\boldsymbol{U},\boldsymbol{V}$都是正交方阵，任意$\boldsymbol{\Phi}$都可以唯一写成$\boldsymbol{\Phi}=\boldsymbol{U}\boldsymbol{M}\boldsymbol{V}^{\top}$（即$\boldsymbol{M}=\boldsymbol{U}^{\top}\boldsymbol{\Phi}\boldsymbol{V}$）。代入得$\boldsymbol{G}^{\top}\boldsymbol{\Phi}=\boldsymbol{V}\boldsymbol{\Sigma}^{\top}\boldsymbol{M}\boldsymbol{V}^{\top}$、$\boldsymbol{\Phi}\boldsymbol{G}^{\top}=\boldsymbol{U}\boldsymbol{M}\boldsymbol{\Sigma}^{\top}\boldsymbol{U}^{\top}$，它们对称分别等价于$\boldsymbol{\Sigma}^{\top}\boldsymbol{M}$与$\boldsymbol{M}\boldsymbol{\Sigma}^{\top}$对称，写成分量形式即
+\begin{equation}\sigma_i M_{i,j} = \sigma_j M_{j,i},\qquad \sigma_j M_{i,j} = \sigma_i M_{j,i}\end{equation}
+由此得到$(\sigma_i^2-\sigma_j^2)M_{i,j}=0$，假设$\boldsymbol{G}$的奇异值两两不等（若否，按照矩阵序列的极限来理解），那么推出$i\neq j$时$M_{i,j}=0$，即$\boldsymbol{M}$是对角阵$\boldsymbol{D}$。这个结果再次表明：即便在一般情形下，预条件矩阵的特征矩阵依然会被正交最慢下降消去，至多留下特征值。
+
+## 趋于均衡
+
+遗憾的是，我们无法简单写出$\boldsymbol{D}$的闭式解，但可以定性地推出：<strong>$\boldsymbol{D}$的对角线有趋于均衡的特性</strong>。具体来说，根据$\boldsymbol{\Phi} = \boldsymbol{U}\boldsymbol{D}\boldsymbol{V}^{\top}$，可以写出
+\begin{equation}\boldsymbol{G}^{\top}\boldsymbol{\Phi} = \boldsymbol{V}(\boldsymbol{\Sigma}^{\top}\boldsymbol{D})\boldsymbol{V}^{\top},\qquad \boldsymbol{\Phi}\boldsymbol{G}^{\top} = \boldsymbol{U}(\boldsymbol{D}\boldsymbol{\Sigma}^{\top})\boldsymbol{U}^{\top}\end{equation}
+对照式$\eqref{eq:G-Phi}$，根据特征值分解的唯一性（注：特征值分解的唯一性依赖于特征值两两不等，否则我们可以构造出反例让问题变得更复杂，但这里我们主要做启发式推导，就不抠细节了），可以得到$\boldsymbol{U}_{\boldsymbol{A}},\boldsymbol{U}_{\boldsymbol{B}}$与$\boldsymbol{V},\boldsymbol{U}$至多差一个置换矩阵，于是可以写出
+\begin{equation}\boldsymbol{U}_{\boldsymbol{A}} = \boldsymbol{V}\boldsymbol{\Pi}_{\boldsymbol{Q}},\qquad \boldsymbol{U}_{\boldsymbol{B}} = \boldsymbol{U}\boldsymbol{\Pi}_{\boldsymbol{P}}\end{equation}
+其中$\boldsymbol{\Pi}_{\boldsymbol{Q}},\boldsymbol{\Pi}_{\boldsymbol{P}}$是两个置换矩阵，那么
+\begin{equation}\begin{aligned}
+\boldsymbol{\Phi} = \boldsymbol{X}_*^{\top}\boldsymbol{P}\boldsymbol{X}_*\boldsymbol{G}\boldsymbol{Y}_*^{\top}\boldsymbol{Q}\boldsymbol{Y}_* =&\, (\boldsymbol{U}_{\boldsymbol{B}} \boldsymbol{\Lambda}_{\boldsymbol{P}}^{\uparrow} \boldsymbol{U}_{\boldsymbol{B}}^{\top}) \boldsymbol{G}(\boldsymbol{U}_{\boldsymbol{A}} \boldsymbol{\Lambda}_{\boldsymbol{Q}}^{\uparrow} \boldsymbol{U}_{\boldsymbol{A}}^{\top}) \\
+=&\, (\boldsymbol{U}\boldsymbol{\Pi}_{\boldsymbol{P}} \boldsymbol{\Lambda}_{\boldsymbol{P}}^{\uparrow} \boldsymbol{\Pi}_{\boldsymbol{P}}^{\top}\boldsymbol{U}^{\top}) (\boldsymbol{U}\boldsymbol{\Sigma}\boldsymbol{V}^{\top}) (\boldsymbol{V}\boldsymbol{\Pi}_{\boldsymbol{Q}} \boldsymbol{\Lambda}_{\boldsymbol{Q}}^{\uparrow} \boldsymbol{\Pi}_{\boldsymbol{Q}}^{\top}\boldsymbol{V}^{\top}) \\
+=&\, \boldsymbol{U}\Big((\boldsymbol{\Pi}_{\boldsymbol{P}} \boldsymbol{\Lambda}_{\boldsymbol{P}}^{\uparrow} \boldsymbol{\Pi}_{\boldsymbol{P}}^{\top})\boldsymbol{\Sigma}(\boldsymbol{\Pi}_{\boldsymbol{Q}} \boldsymbol{\Lambda}_{\boldsymbol{Q}}^{\uparrow} \boldsymbol{\Pi}_{\boldsymbol{Q}}^{\top})\Big)\boldsymbol{V}^{\top}
+\end{aligned}\end{equation}
+于是$\tr(\boldsymbol{G}^{\top}\boldsymbol{\Phi})=\tr\big(\boldsymbol{\Sigma}^{\top}(\boldsymbol{\Pi}_{\boldsymbol{P}} \boldsymbol{\Lambda}_{\boldsymbol{P}}^{\uparrow} \boldsymbol{\Pi}_{\boldsymbol{P}}^{\top})\boldsymbol{\Sigma}(\boldsymbol{\Pi}_{\boldsymbol{Q}} \boldsymbol{\Lambda}_{\boldsymbol{Q}}^{\uparrow} \boldsymbol{\Pi}_{\boldsymbol{Q}}^{\top})\big)$，注意括号内每一项都是对角阵，要找它的最小值，就是给$\boldsymbol{P},\boldsymbol{Q},\boldsymbol{G}^{\top}\boldsymbol{G}$的特征值找一个配对关系，使得它们的积和最小，这本质上是排序不等式的三序列推广。从[《排序不等式及其推广》](<https://spaces.ac.cn/archives/11910>)可知，最理想的结果就是配对后逐分量乘积相等，这对应于$\boldsymbol{D}\propto\boldsymbol{\Sigma}^{-1}$（对角线逐一取逆，形状不变）。
+
+当然，由于我们只是通过配对找最小值，所以很难实现全体乘积相等，我们一般只能期望它是$\boldsymbol{\Sigma}$（最坏情况）和$\boldsymbol{\Sigma}^{-1}$（最好情况）之间的一个中间状态，而它俩的几何平均，正是单位阵！所以这又一次指向让全体奇异值变得均匀的正交化操作！
+
+## 延伸说明
+
+需要声明的是，笔者无意捧Muon踩Shampoo。相反，前段时间笔者花了不少时间去测试各种Shampoo变体，初衷就是想要找出比Muon更好的优化器。很遗憾，笔者尝试了很久，发现没有一种Shampoo变体能胜过Muon。正好近来在推导自适应优化器的收敛结果，遂将两者结合起来思考，最终有了本文的结论。
+
+坦诚地说，本文的结论依赖于“正交最慢下降”框架，而该框架也依赖于一系列假设，每一环都有可质疑之处。比如，用收敛上界来指导优化器设计，本身是一种悲观的、最坏情形下的判据，上界更小并不保证实际更快；又比如，$\boldsymbol{O}_t$缓变的假设以及各处的一阶近似，都比较粗糙，无法进一步准确定量。
+
+更重要的是，最小化收敛上界虽然看上去更全局，但它本质上也是一种贪心解，并且严格较真的话，它连命题都是无法成立的！因为它是给定$\boldsymbol{g}_t$序列，去推导剩余参数。然而，修改了学习率或者其他参数，后续的梯度就会随之变化，根本不存在给定全体梯度序列的可能。
+
+当然，如果我们接受这些不严格性，接受正交最慢下降，那么就能得到前面的启发性结论，它告诉我们：只需要致力于调节梯度或动量的谱（奇异值），而无需花大代价做复杂的预条件矩阵，这至少对工程上是友好的。Shampoo这条路线，效果好不好另说，但其额外引入的状态变量和计算，工程代价肯定是大的。
+
+## 文章小结
+
+本文从凸优化的平均收敛上界出发，提出了“正交最慢下降”这一原理，并应用到基于Kronecker积的预条件优化器（Muon、Shampoo家族）上，发现不管原始预条件矩阵如何，正交最慢下降都会将它的特征矩阵“洗掉”，至多留下特征值来修正梯度（动量）的奇异值谱，使其均衡化，这一切都与Muon高度同质——如标题所示。

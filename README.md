@@ -28,7 +28,7 @@
 
 | 收录文章 | 知识主题 | 文章系列 | 最新文章 |
 | ---: | ---: | ---: | :---: |
-| 1338 篇 | 17 个 | 55 个 | 2026-09-21 |
+| 1339 篇 | 17 个 | 55 个 | 2026-09-28 |
 
 ## 从哪里开始
 
@@ -87,7 +87,7 @@ Markdown 正文只做必要的格式转换，不摘要、润色、翻译或重�
   - [搜出来的文本（4 篇）](https://caojiaolong.github.io/spaces-index/#/series/series-efbc1f2b0e42)
   - [能量视角下的GAN模型（3 篇）](https://caojiaolong.github.io/spaces-index/#/series/series-bf3266b9c1b3)
   - [非系列文章（73 篇）](#series-generative-models-standalone)
-- [优化与训练（110 篇）](#topic-optimization)
+- [优化与训练（111 篇）](#topic-optimization)
   - [让炼丹更科学一些（10 篇）](https://caojiaolong.github.io/spaces-index/#/series/series-22f3c6204559)
   - [流形上的最速下降（7 篇）](https://caojiaolong.github.io/spaces-index/#/series/series-9aa52368b14f)
   - [基于流式幂迭代的Muon实现（5 篇）](https://caojiaolong.github.io/spaces-index/#/series/series-b7bbf4382414)
@@ -95,7 +95,7 @@ Markdown 正文只做必要的格式转换，不摘要、润色、翻译或重�
   - [通过msign来计算奇异值裁剪mclip（2 篇）](https://caojiaolong.github.io/spaces-index/#/series/series-297337ae72f8)
   - [msign算子的Newton-Schulz迭代（2 篇）](https://caojiaolong.github.io/spaces-index/#/series/series-a60856a07854)
   - [从动力学角度看优化算法（7 篇）](https://caojiaolong.github.io/spaces-index/#/series/series-4b38446b55a8)
-  - [非系列文章（75 篇）](#series-optimization-standalone)
+  - [非系列文章（76 篇）](#series-optimization-standalone)
 - [数学工具（381 篇）](#topic-math)
   - [低秩近似之路（5 篇）](https://caojiaolong.github.io/spaces-index/#/series/series-6689ddf615c5)
   - [SVD分解（3 篇）](https://caojiaolong.github.io/spaces-index/#/series/series-cb4267a83e5b)
@@ -158,6 +158,7 @@ Markdown 正文只做必要的格式转换，不摘要、润色、翻译或重�
 
 ## 最近 10 篇文章
 
+- 2026-09-28 - [慢即是快：1. Shampoo的尽头是Muon？](https://spaces.ac.cn/archives/11917)
 - 2026-09-21 - [排序不等式及其推广](https://spaces.ac.cn/archives/11910)
 - 2026-09-14 - [让炼丹更科学一些（十）：单调性假设的拆与补](https://spaces.ac.cn/archives/11885) - [查看系列](https://caojiaolong.github.io/spaces-index/#/series/series-22f3c6204559)
 - 2026-09-05 - [让炼丹更科学一些（九）：经典自适应梯度算法](https://spaces.ac.cn/archives/11882) - [查看系列](https://caojiaolong.github.io/spaces-index/#/series/series-22f3c6204559)
@@ -167,7 +168,6 @@ Markdown 正文只做必要的格式转换，不摘要、润色、翻译或重�
 - 2026-08-09 - [除了交叉熵，LM Loss还有什么选择？](https://spaces.ac.cn/archives/11854)
 - 2026-08-04 - [简单谈谈K3的MoE和Attention](https://spaces.ac.cn/archives/11848)
 - 2026-07-29 - [解构Scaling Law：优化、架构、数据的三重奏](https://spaces.ac.cn/archives/11833)
-- 2026-07-21 - [将Softmax Attention线性化为Gated DeltaNet](https://spaces.ac.cn/archives/11823)
 
 ## 主题分类
 
@@ -719,7 +719,7 @@ Markdown 正文只做必要的格式转换，不摘要、润色、翻译或重�
 
 <a id="topic-optimization"></a>
 <details>
-<summary><strong>优化与训练</strong> · 110 篇</summary>
+<summary><strong>优化与训练</strong> · 111 篇</summary>
 
 [返回目录](#目录)
 
@@ -789,6 +789,7 @@ Markdown 正文只做必要的格式转换，不摘要、润色、翻译或重�
 <a id="series-optimization-standalone"></a>
 #### 非系列文章 [返回目录](#目录)
 
+- 2026-09-28 - [慢即是快：1. Shampoo的尽头是Muon？](https://spaces.ac.cn/archives/11917)
 - 2026-08-23 - [动量的新理解：逼近特征层面的梯度下降](https://spaces.ac.cn/archives/11875)
 - 2026-08-09 - [除了交叉熵，LM Loss还有什么选择？](https://spaces.ac.cn/archives/11854)
 - 2026-06-19 - [强制间隔投影（Margin-Enforcing Projection）](https://spaces.ac.cn/archives/11784)

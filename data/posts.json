@@ -1,5 +1,20 @@
 [
   {
+    "id": "11917",
+    "title": "慢即是快：1. Shampoo的尽头是Muon？",
+    "url": "https://spaces.ac.cn/archives/11917",
+    "date": "2026-09-28",
+    "source_category": "数学研究",
+    "source_tags": [
+      "不等式",
+      "优化器",
+      "muon",
+      "最慢下降"
+    ],
+    "source_summary": "本文从凸优化的平均收敛上界出发，提出了“正交最慢下降”这一原理，并应用到基于Kronecker积的预条件优化器（Muon、Shampoo家族）上，发现不管原始预条件矩阵如何，正交最慢下降都会将它的特征矩阵“洗掉”，至多留下特征值来修正梯度（动量）的奇异值谱，使其均衡化，这一切都与Muon高度同质——如标题所示。",
+    "metadata_checked_at": "2026-09-29T08:45:38+00:00"
+  },
+  {
     "id": "11910",
     "title": "排序不等式及其推广",
     "url": "https://spaces.ac.cn/archives/11910",
