@@ -28,7 +28,7 @@
 
 | 收录文章 | 知识主题 | 文章系列 | 最新文章 |
 | ---: | ---: | ---: | :---: |
-| 1339 篇 | 17 个 | 55 个 | 2026-09-28 |
+| 1340 篇 | 17 个 | 55 个 | 2026-10-03 |
 
 ## 从哪里开始
 
@@ -96,7 +96,7 @@ Markdown 正文只做必要的格式转换，不摘要、润色、翻译或重�
   - [msign算子的Newton-Schulz迭代（2 篇）](https://caojiaolong.github.io/spaces-index/#/series/series-a60856a07854)
   - [从动力学角度看优化算法（7 篇）](https://caojiaolong.github.io/spaces-index/#/series/series-4b38446b55a8)
   - [非系列文章（76 篇）](#series-optimization-standalone)
-- [数学工具（381 篇）](#topic-math)
+- [数学工具（382 篇）](#topic-math)
   - [低秩近似之路（5 篇）](https://caojiaolong.github.io/spaces-index/#/series/series-6689ddf615c5)
   - [SVD分解（3 篇）](https://caojiaolong.github.io/spaces-index/#/series/series-cb4267a83e5b)
   - [外微分浅谈（7 篇）](https://caojiaolong.github.io/spaces-index/#/series/series-07dc7181b71c)
@@ -117,7 +117,7 @@ Markdown 正文只做必要的格式转换，不摘要、润色、翻译或重�
   - [自然极值（8 篇）](https://caojiaolong.github.io/spaces-index/#/series/series-5e3917ad3216)
   - [向量（5 篇）](https://caojiaolong.github.io/spaces-index/#/series/series-fae158475ede)
   - [微积分学习（2 篇）](https://caojiaolong.github.io/spaces-index/#/series/series-d050b16b4d9c)
-  - [非系列文章（295 篇）](#series-math-standalone)
+  - [非系列文章（296 篇）](#series-math-standalone)
 - [概率统计与信息论（85 篇）](#topic-probability-info)
   - [最小熵原理（6 篇）](https://caojiaolong.github.io/spaces-index/#/series/series-2e7e2c469894)
   - [非系列文章（79 篇）](#series-probability-info-standalone)
@@ -158,6 +158,7 @@ Markdown 正文只做必要的格式转换，不摘要、润色、翻译或重�
 
 ## 最近 10 篇文章
 
+- 2026-10-03 - [通过微扰分析求解等式约束优化问题](https://spaces.ac.cn/archives/11928)
 - 2026-09-28 - [慢即是快：1. Shampoo的尽头是Muon？](https://spaces.ac.cn/archives/11917)
 - 2026-09-21 - [排序不等式及其推广](https://spaces.ac.cn/archives/11910)
 - 2026-09-14 - [让炼丹更科学一些（十）：单调性假设的拆与补](https://spaces.ac.cn/archives/11885) - [查看系列](https://caojiaolong.github.io/spaces-index/#/series/series-22f3c6204559)
@@ -167,7 +168,6 @@ Markdown 正文只做必要的格式转换，不摘要、润色、翻译或重�
 - 2026-08-17 - [流形上的最速下降：7. Stiefel的解析解](https://spaces.ac.cn/archives/11864) - [查看系列](https://caojiaolong.github.io/spaces-index/#/series/series-9aa52368b14f)
 - 2026-08-09 - [除了交叉熵，LM Loss还有什么选择？](https://spaces.ac.cn/archives/11854)
 - 2026-08-04 - [简单谈谈K3的MoE和Attention](https://spaces.ac.cn/archives/11848)
-- 2026-07-29 - [解构Scaling Law：优化、架构、数据的三重奏](https://spaces.ac.cn/archives/11833)
 
 ## 主题分类
 
@@ -870,7 +870,7 @@ Markdown 正文只做必要的格式转换，不摘要、润色、翻译或重�
 
 <a id="topic-math"></a>
 <details>
-<summary><strong>数学工具</strong> · 381 篇</summary>
+<summary><strong>数学工具</strong> · 382 篇</summary>
 
 [返回目录](#目录)
 
@@ -1043,6 +1043,7 @@ Markdown 正文只做必要的格式转换，不摘要、润色、翻译或重�
 <a id="series-math-standalone"></a>
 #### 非系列文章 [返回目录](#目录)
 
+- 2026-10-03 - [通过微扰分析求解等式约束优化问题](https://spaces.ac.cn/archives/11928)
 - 2026-09-21 - [排序不等式及其推广](https://spaces.ac.cn/archives/11910)
 - 2026-07-29 - [解构Scaling Law：优化、架构、数据的三重奏](https://spaces.ac.cn/archives/11833)
 - 2026-07-16 - [基于排序不等式的相似度指标](https://spaces.ac.cn/archives/11818)

@@ -1,0 +1,25 @@
+{
+  "metadata": {
+    "id": "11928",
+    "title": "通过微扰分析求解等式约束优化问题",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/11928",
+    "date": "2026-10-03",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "数学研究",
+    "source_tags": [
+      "微积分",
+      "极值",
+      "分析",
+      "优化"
+    ],
+    "source_summary": "本文将无约束极值的微扰分析思想用于等式约束优化中，推导了切空间上的投影梯度，而极值的驻点条件便是让相应的投影梯度为零，最后我们还证明了它与拉格朗日乘子法在结论上的等价性。"
+  },
+  "fetched_at": "2026-10-04T08:36:17+00:00",
+  "source_snapshot_sha256": "016bfd680fde078ffedbed9c955cf5644ba6b3cae4e3ebf539be7d6b3a90c12d",
+  "validators": {
+    "etag": null,
+    "last_modified": null
+  }
+}
