@@ -61,6 +61,8 @@
   const articleNode = $("#article");
   const sourceNode = $("#markdown-source");
   const equationReturn = $("#equation-return");
+  let hideGptSelection = () => {};
+  let disposeGpt = () => {};
   const equationPreview = document.createElement("aside");
   equationPreview.id = "equation-preview";
   equationPreview.className = "equation-preview";
@@ -312,6 +314,7 @@
   mobileLayout.addEventListener("change", event => { $("#toc-panel").open = !event.matches; }, { signal });
   function showSource(show) {
     hideEquationPreview();
+    hideGptSelection();
     articleNode.hidden = show;
     sourceNode.hidden = !show;
     $("#show-reading").setAttribute("aria-pressed", String(!show));
@@ -398,6 +401,56 @@
       }, { signal });
     }
   }
+  function containingFormula(node) {
+    const formula = (node.nodeType === Node.ELEMENT_NODE ? node : node.parentElement)?.closest("mjx-container[data-latex]");
+    return formula && articleNode.contains(formula) ? formula : null;
+  }
+  function formulaTextRange(formula) {
+    const math = formula.querySelector("mjx-math");
+    if (!math) return null;
+    const walker = document.createTreeWalker(math, NodeFilter.SHOW_TEXT, {
+      acceptNode: node => node.parentElement.closest("mjx-labels") ? NodeFilter.FILTER_REJECT : NodeFilter.FILTER_ACCEPT
+    });
+    const texts = [];
+    while (walker.nextNode()) if (walker.currentNode.textContent) texts.push(walker.currentNode);
+    if (!texts.length) return null;
+    const range = document.createRange();
+    range.setStart(texts[0], 0);
+    range.setEnd(texts.at(-1), texts.at(-1).length);
+    return range;
+  }
+  function textFromRange(range, keepPartial = false) {
+    const blocks = new Set("P DIV H1 H2 H3 H4 H5 H6 BLOCKQUOTE PRE UL OL LI TR".split(" "));
+    let formulaCount = 0;
+    const partialFormulas = [];
+    function textOf(node) {
+      if (!range.intersectsNode(node)) return "";
+      if (node.nodeType === Node.TEXT_NODE) {
+        return node.textContent.slice(node === range.startContainer ? range.startOffset : 0,
+          node === range.endContainer ? range.endOffset : node.length);
+      }
+      if (node.nodeType !== Node.ELEMENT_NODE) return "";
+      if (node.matches("script, style, template, noscript, [hidden], mjx-assistive-mml, mjx-labels")) return "";
+      const style = getComputedStyle(node);
+      if (style.display === "none" || style.visibility === "hidden") return "";
+      if (node.matches("mjx-container[data-latex]") && articleNode.contains(node)) {
+        formulaCount++;
+        const visible = keepPartial && formulaTextRange(node);
+        if (visible && (range.compareBoundaryPoints(Range.START_TO_START, visible) > 0 ||
+            range.compareBoundaryPoints(Range.END_TO_END, visible) < 0)) {
+          const selected = [...node.querySelector("mjx-math").childNodes].map(textOf).join("");
+          if (selected) partialFormulas.push({ selected, latex: node.dataset.latex });
+          return selected;
+        }
+        return node.dataset.latex;
+      }
+      if (node.nodeName === "BR") return "\n";
+      const text = [...node.childNodes].map(textOf).join("");
+      return blocks.has(node.nodeName) || node.classList?.contains("math-scroll") ? `\n${text}\n` : text;
+    }
+    const ancestor = containingFormula(range.commonAncestorContainer) || range.commonAncestorContainer;
+    return { text: textOf(ancestor).replace(/^\n+|\n+$/g, ""), formulaCount, partialFormulas };
+  }
   document.addEventListener("copy", event => {
     if (!current() || !event.clipboardData || articleNode.hidden) return;
     // An input can retain an unrelated document selection while it has focus.
@@ -414,60 +467,220 @@
     // A selection can start in the title or use the article's parent as its
     // boundary. Check intersection, not whether both endpoints are descendants.
     if (!range.intersectsNode(articleNode)) return;
-    const containingFormula = node => {
-      const formula = (node.nodeType === Node.ELEMENT_NODE ? node : node.parentElement)?.closest("mjx-container[data-latex]");
-      return formula && articleNode.contains(formula) ? formula : null;
-    };
     const first = containingFormula(range.startContainer);
     const last = containingFormula(range.endContainer);
     // Preserve deliberate character selection within a formula, but copying all
     // its visible text should copy the same source as selecting its container.
     if (first && first === last) {
-      const math = first.querySelector("mjx-math");
-      if (!math) return;
       // Equation numbers are laid out separately and aren't part of the
       // expression the reader drags across to select the complete formula.
-      const walker = document.createTreeWalker(math, NodeFilter.SHOW_TEXT, {
-        acceptNode: node => node.parentElement.closest("mjx-labels") ? NodeFilter.FILTER_REJECT : NodeFilter.FILTER_ACCEPT
-      });
-      const texts = [];
-      while (walker.nextNode()) if (walker.currentNode.textContent) texts.push(walker.currentNode);
-      if (!texts.length) return;
-      const visible = document.createRange();
-      visible.setStart(texts[0], 0);
-      visible.setEnd(texts.at(-1), texts.at(-1).length);
+      const visible = formulaTextRange(first);
+      if (!visible) return;
       if (range.compareBoundaryPoints(Range.START_TO_START, visible) > 0 ||
           range.compareBoundaryPoints(Range.END_TO_END, visible) < 0) return;
     }
     if (first) range.setStartBefore(first);
     if (last) range.setEndAfter(last);
-    const blocks = new Set("P DIV H1 H2 H3 H4 H5 H6 BLOCKQUOTE PRE UL OL LI TR".split(" "));
-    let formulaCount = 0;
-    function textOf(node) {
-      if (!range.intersectsNode(node)) return "";
-      if (node.nodeType === Node.TEXT_NODE) {
-        return node.textContent.slice(node === range.startContainer ? range.startOffset : 0,
-          node === range.endContainer ? range.endOffset : node.length);
-      }
-      if (node.nodeType !== Node.ELEMENT_NODE) return "";
-      // Read visibility from the live tree, so selecting beyond the article
-      // cannot include the hidden Markdown panel or MathJax's auxiliary text.
-      if (node.matches("script, style, template, noscript, [hidden], mjx-assistive-mml")) return "";
-      const style = getComputedStyle(node);
-      if (style.display === "none" || style.visibility === "hidden") return "";
-      if (node.matches("mjx-container[data-latex]") && articleNode.contains(node)) {
-        formulaCount++;
-        return node.dataset.latex;
-      }
-      if (node.nodeName === "BR") return "\n";
-      const text = [...node.childNodes].map(textOf).join("");
-      return blocks.has(node.nodeName) || node.classList?.contains("math-scroll") ? `\n${text}\n` : text;
-    }
-    const text = textOf(range.commonAncestorContainer).replace(/^\n+|\n+$/g, "");
+    const { text, formulaCount } = textFromRange(range);
     if (!formulaCount) return;
     event.clipboardData.setData("text/plain", text);
     event.preventDefault();
   }, { signal });
+  function installAi(title, markdown) {
+    const markdownUrl = SpacesMirror.publicMarkdownUrl(id, { localPreview: catalog.localPreview });
+    const prompt = extra => SpacesMirror.questionPrompt({ id, title, markdownUrl, ...extra });
+    const handoff = $("#gpt-handoff"), handoffText = $("#gpt-handoff-text");
+    const menu = $("#gpt-options");
+    const providerList = $("#ai-provider");
+    const menuPanel = $(".reader-gpt-menu"), menuToggle = menu.querySelector("summary");
+    let provider = SpacesMirror.preferredAi();
+    const providerButtons = [];
+    providerList.replaceChildren();
+    function providerIcon(item) {
+      const icon = document.createElement("span"); icon.className = "ai-provider-icon";
+      icon.setAttribute("aria-hidden", "true"); icon.style.setProperty("--ai-icon", `url("${item.icon}")`);
+      return icon;
+    }
+    function labelWithIcon(node, text, item) {
+      const label = document.createElement("span"); label.className = "ai-action-label"; label.textContent = text;
+      const arrow = document.createElement("span"); arrow.className = "ai-action-arrow";
+      arrow.textContent = "↗"; arrow.setAttribute("aria-hidden", "true");
+      node.replaceChildren(providerIcon(item), label, arrow);
+    }
+    for (const item of SpacesMirror.aiProviders) {
+      const button = document.createElement("button"); button.type = "button"; button.className = "ai-provider-option";
+      button.dataset.aiProvider = item.id; button.setAttribute("role", "radio"); button.setAttribute("aria-label", item.name);
+      const name = document.createElement("span"); name.className = "ai-provider-name"; name.textContent = item.label;
+      button.append(providerIcon(item), name);
+      if (item.id === "chatgpt") {
+        const badge = document.createElement("span"); badge.className = "ai-provider-default"; badge.textContent = "默认"; button.append(badge);
+      }
+      const check = document.createElementNS("http://www.w3.org/2000/svg", "svg");
+      check.setAttribute("viewBox", "0 0 16 16"); check.setAttribute("class", "ai-provider-check"); check.setAttribute("aria-hidden", "true");
+      const path = document.createElementNS("http://www.w3.org/2000/svg", "path"); path.setAttribute("d", "m3.5 8 3 3 6-6"); check.append(path);
+      button.append(check); providerList.append(button); providerButtons.push(button);
+      button.addEventListener("click", () => chooseProvider(item.id, true), { signal });
+    }
+    const popup = document.createElement("div"); popup.className = "selection-actions";
+    popup.setAttribute("role", "group"); popup.setAttribute("aria-label", "选段操作"); popup.hidden = true;
+    const ask = document.createElement("a"); ask.id = "ask-gpt-selection";
+    ask.target = "_blank"; ask.rel = "noopener noreferrer";
+    popup.append(ask); document.body.append(popup);
+    let timer, snapshot, dragging = false, interacting = false;
+    const fullPrompt = prompt({});
+    let fullUrl;
+    hideGptSelection = () => { clearTimeout(timer); popup.hidden = true; snapshot = null; };
+    function refreshProvider() {
+      for (const button of providerButtons) {
+        const selected = button.dataset.aiProvider === provider.id;
+        button.setAttribute("aria-checked", String(selected)); button.tabIndex = selected ? 0 : -1;
+      }
+      fullUrl = SpacesMirror.aiUrl(fullPrompt, provider.id);
+      const full = $("#ask-gpt");
+      full.href = fullUrl || provider.url;
+      labelWithIcon(full, `全文问 ${provider.label}`, provider);
+      full.title = `请 ${provider.name} 获取 Markdown 全文；失败时尝试 GitHub 原始文件，也可复制全文或上传文件`;
+      labelWithIcon(ask, `问 ${provider.label}`, provider);
+      $("#ai-provider-hint").textContent = provider.query ? `${provider.label} · 链接提问` : `${provider.label} · 复制后粘贴`;
+      const heading = $("#gpt-handoff-title"); heading.replaceChildren(providerIcon(provider), document.createTextNode(`向 ${provider.name} 提问`));
+      const open = $("#gpt-handoff-open"); open.href = provider.url; labelWithIcon(open, `打开 ${provider.name}`, provider);
+      if (menu.open) positionMenu();
+    }
+    refreshProvider();
+    function chooseProvider(identifier, close) {
+      provider = SpacesMirror.setPreferredAi(identifier);
+      hideGptSelection(); refreshProvider();
+      if (close) { menu.open = false; menuToggle.focus({ preventScroll: true }); }
+    }
+    providerList.addEventListener("keydown", event => {
+      const index = providerButtons.indexOf(event.target);
+      if (index < 0 || !["ArrowDown", "ArrowRight", "ArrowUp", "ArrowLeft", "Home", "End"].includes(event.key)) return;
+      event.preventDefault();
+      const next = event.key === "Home" ? 0 : event.key === "End" ? providerButtons.length - 1 :
+        (index + (["ArrowDown", "ArrowRight"].includes(event.key) ? 1 : -1) + providerButtons.length) % providerButtons.length;
+      chooseProvider(providerButtons[next].dataset.aiProvider, false); providerButtons[next].focus({ preventScroll: true });
+    }, { signal });
+    function positionMenu() {
+      if (!menu.open) return;
+      const anchor = $(".reader-gpt-actions").getBoundingClientRect();
+      const header = document.querySelector("#site-header")?.getBoundingClientRect().bottom || 0;
+      const nav = document.querySelector(".main-nav")?.getBoundingClientRect();
+      const minTop = Math.max(12, header + 8);
+      const maxBottom = nav && nav.top > innerHeight / 2 && nav.bottom >= innerHeight - 30 ? nav.top - 12 : innerHeight - 12;
+      if (anchor.bottom < minTop || anchor.top > maxBottom) { menu.open = false; return; }
+      menuPanel.style.maxHeight = "";
+      const height = menuPanel.getBoundingClientRect().height;
+      const below = maxBottom - anchor.bottom - 8, above = anchor.top - minTop - 8;
+      const flip = below < height && above > below;
+      menuPanel.style.maxHeight = `${Math.max(80, flip ? above : below)}px`;
+      menuPanel.style.top = flip ? "auto" : "calc(100% + 8px)";
+      menuPanel.style.bottom = flip ? "calc(100% + 8px)" : "auto";
+      const width = menuPanel.getBoundingClientRect().width;
+      menuPanel.style.left = `${Math.max(12 - anchor.left, Math.min(0, innerWidth - width - 12 - anchor.left))}px`;
+    }
+    menu.addEventListener("toggle", positionMenu, { signal });
+    menu.addEventListener("keydown", event => {
+      if (event.key === "Escape" && menu.open) { menu.open = false; menuToggle.focus({ preventScroll: true }); }
+    }, { signal });
+    addEventListener("scroll", positionMenu, { passive: true, signal });
+    addEventListener("resize", positionMenu, { signal });
+    function showHandoff(text, note) {
+      hideGptSelection(); hideEquationPreview(); menu.open = false;
+      handoffText.value = text;
+      $("#gpt-handoff-note").textContent = note;
+      $("#gpt-handoff-status").textContent = "";
+      handoff.showModal(); document.body.classList.add("gpt-handoff-open");
+    }
+    async function copyHandoff() {
+      try {
+        await SpacesMirror.copy(handoffText.value);
+        if (current() && handoff.open) $("#gpt-handoff-status").textContent = `已复制完整提问内容。打开 ${provider.name} 后粘贴即可。`;
+      } catch {
+        if (!current() || !handoff.open) return;
+        handoffText.focus(); handoffText.select();
+        $("#gpt-handoff-status").textContent = "浏览器未允许自动复制。已选中完整内容，请按 Ctrl+C（或 ⌘C），手机上长按复制。";
+      }
+    }
+    function prepareHandoff(text, longNote) {
+      showHandoff(text, provider.query ? longNote : `提问已准备好。复制后打开 ${provider.name} 粘贴即可。`);
+      if (!provider.query) void copyHandoff();
+    }
+    $("#ask-gpt").addEventListener("click", event => {
+      if (!fullUrl) { event.preventDefault(); prepareHandoff(fullPrompt, `提问链接较长，请复制完整内容后到 ${provider.name} 粘贴。`); }
+      menu.open = false;
+    }, { signal });
+    $("#copy-gpt-full").addEventListener("click", () => {
+      showHandoff(prompt({ markdown }), `链接读取失败时，将完整原文粘贴到 ${provider.name}，或下载 Markdown 后上传。这里保留全部署名、来源与许可。`);
+      void copyHandoff();
+    }, { signal });
+    $("#gpt-handoff-copy").addEventListener("click", copyHandoff, { signal });
+    $("#gpt-handoff-download").addEventListener("click", () => $("#download-markdown").click(), { signal });
+    $("#gpt-handoff-close").addEventListener("click", () => handoff.close(), { signal });
+    handoff.addEventListener("close", () => { document.body.classList.remove("gpt-handoff-open"); $("#ask-gpt").focus({ preventScroll: true }); }, { signal });
+    function positionPopup() {
+      if (!snapshot || popup.hidden) return;
+      const margin = 12, header = document.querySelector("#site-header")?.getBoundingClientRect().bottom || 0;
+      const nav = document.querySelector(".main-nav")?.getBoundingClientRect();
+      const bottom = nav && nav.top > innerHeight / 2 && nav.bottom >= innerHeight - 30 ? nav.top - margin : innerHeight - margin;
+      const rects = [...snapshot.range.getClientRects()].filter(r => r.width && r.height && r.bottom > header && r.top < bottom);
+      const rect = rects.at(-1);
+      if (!rect) { popup.hidden = true; return; }
+      const box = popup.getBoundingClientRect();
+      let top = rect.bottom + 16;
+      if (top + box.height > bottom) top = rect.top - box.height - 16;
+      popup.style.left = `${Math.max(margin, Math.min(innerWidth - box.width - margin, rect.left + rect.width / 2 - box.width / 2))}px`;
+      popup.style.top = `${Math.max(header + margin, Math.min(bottom - box.height, top))}px`;
+    }
+    function updateSelection() {
+      if (interacting || dragging) return;
+      const selection = getSelection();
+      if (!current() || articleNode.hidden || handoff.open || imageViewer.open ||
+          document.activeElement?.matches("input, textarea") || !selection?.rangeCount || selection.isCollapsed) { hideGptSelection(); return; }
+      const range = selection.getRangeAt(0).cloneRange();
+      if (!articleNode.contains(range.startContainer) || !articleNode.contains(range.endContainer)) { hideGptSelection(); return; }
+      const { text, partialFormulas } = textFromRange(range, true);
+      if (!text.trim()) { hideGptSelection(); return; }
+      const textPrompt = prompt({ selection: text, partialFormulas });
+      snapshot = { range, prompt: textPrompt, url: SpacesMirror.aiUrl(textPrompt, provider.id) };
+      ask.href = snapshot.url || provider.url;
+      ask.title = partialFormulas.length ? "解释选中字符，并附完整原始公式作为上下文" : "结合 Markdown 全文解释选段";
+      hideEquationPreview(); popup.hidden = false; positionPopup();
+    }
+    function queueSelection() {
+      if (interacting) return;
+      hideGptSelection();
+      timer = setTimeout(updateSelection, 180);
+    }
+    document.addEventListener("selectionchange", queueSelection, { signal });
+    articleNode.addEventListener("pointerdown", () => { dragging = true; hideGptSelection(); }, { signal });
+    document.addEventListener("pointerup", event => {
+      dragging = false;
+      if (!popup.contains(event.target)) interacting = false;
+      if (!interacting) queueSelection();
+    }, { signal });
+    document.addEventListener("pointercancel", () => { dragging = false; interacting = false; queueSelection(); }, { signal });
+    ask.addEventListener("pointerdown", event => {
+      interacting = true; clearTimeout(timer);
+      // Keep mouse selections intact; touch selection menus remain native.
+      if (event.pointerType === "mouse") event.preventDefault();
+    }, { signal });
+    ask.addEventListener("click", event => {
+      const saved = snapshot; interacting = false;
+      if (!saved) { event.preventDefault(); return; }
+      if (!saved.url) { event.preventDefault(); prepareHandoff(saved.prompt, `选段较长，已保留完整内容与原始公式。请复制后打开 ${provider.name} 粘贴，没有截断。`); }
+      else hideGptSelection();
+    }, { signal });
+    document.addEventListener("pointerdown", event => { if (!menu.contains(event.target)) menu.open = false; }, { signal });
+    document.addEventListener("keydown", event => { if (event.key === "Escape") { hideGptSelection(); menu.open = false; } }, { signal });
+    addEventListener("scroll", positionPopup, { passive: true, signal });
+    addEventListener("resize", positionPopup, { signal });
+    disposeGpt = () => {
+      hideGptSelection(); popup.remove();
+      menu.open = false; providerList.replaceChildren();
+      if (handoff.open) handoff.close();
+      document.body.classList.remove("gpt-handoff-open");
+    };
+  }
   function safeUrl(value, mail = false) {
     const url = new URL(value, `https://spaces.ac.cn/archives/${id}`);
     if (!(mail ? ["https:", "http:", "mailto:"] : ["https:", "http:"]).includes(url.protocol) || url.username || url.password) throw new Error("正文链接格式不受支持");
@@ -642,7 +855,7 @@
     let readingReady = false;
     function updateProgress() {
       scrollQueued = false;
-      if (!current() || articleNode.hidden || imageViewer.open) return;
+      if (!current() || articleNode.hidden || imageViewer.open || $("#gpt-handoff").open) return;
       if (readingReady && document.visibilityState !== "hidden") {
         const box = articleNode.getBoundingClientRect();
         const navigation = document.querySelector(".main-nav")?.getBoundingClientRect();
@@ -673,6 +886,7 @@
     addEventListener("pagehide", updateProgress, { signal });
     updateProgress();
     sourceNode.value = markdown;
+    installAi(title, markdown);
     $("#reader-actions").hidden = false;
     status.textContent = validationNote + "正在排版公式…";
     $("#show-source").addEventListener("click", () => showSource(true));
@@ -740,6 +954,7 @@
   void load();
   return () => {
     flushReadingProgress();
+    disposeGpt();
     readingResize?.disconnect();
     hideEquationPreview();
     equationPreview.remove();

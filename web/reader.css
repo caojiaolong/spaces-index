@@ -38,6 +38,56 @@
 .reader-copy { color: #fff; background: var(--accent-strong); }
 .reader-download { color: var(--text-soft); background: var(--surface); border: 1px solid var(--line); }
 .reader-file-actions :is(button, a) span { margin-left: 8px; }
+.reader-gpt-actions { position: relative; display: flex; align-items: stretch; }
+.reader-gpt-actions > a { border-radius: 5px 0 0 5px; }
+.reader-gpt-options summary { display: grid; place-items: center; height: 100%; min-width: 30px; padding: 0 8px; list-style: none; border: 1px solid var(--line); border-left: 0; border-radius: 0 5px 5px 0; background: var(--surface); color: var(--text-soft); cursor: pointer; }
+.reader-gpt-options summary::-webkit-details-marker { display: none; }
+.reader-gpt-options summary svg { width: 14px; height: 14px; fill: none; stroke: currentColor; stroke-width: 1.5; stroke-linecap: round; stroke-linejoin: round; }
+.reader-gpt-options[open] summary { color: var(--accent-strong); background: var(--accent-soft); }
+.reader-gpt-options[open] summary svg { transform: rotate(180deg); }
+.reader-gpt-options summary:focus-visible, .reader-gpt-menu button:focus-visible, .selection-actions a:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+.reader-gpt-menu { position: absolute; z-index: 50; top: calc(100% + 8px); left: 0; width: min(316px, calc(100vw - 32px)); padding: 12px; overflow-y: auto; overscroll-behavior: contain; scrollbar-width: thin; border: 1px solid var(--line); border-radius: 8px; background: var(--surface); box-shadow: var(--shadow-tight); }
+.ai-menu-heading { margin: 3px 7px 12px; color: var(--text-faint); font-size: 11px; font-weight: 500; letter-spacing: .04em; }
+.ai-provider-list { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 5px; }
+.reader-gpt-menu .ai-provider-option { display: flex; align-items: center; gap: 8px; min-width: 0; min-height: 42px; padding: 10px 8px; border: 1px solid transparent; border-radius: 5px; background: transparent; color: var(--text-soft); font-size: 12px; text-align: left; }
+.reader-gpt-menu .ai-provider-option[aria-checked="true"] { border-color: color-mix(in srgb, var(--accent) 24%, transparent); background: var(--accent-soft); color: var(--accent-strong); }
+.ai-provider-icon { display: inline-flex; flex: 0 0 18px; width: 18px; height: 18px; background-color: currentColor; -webkit-mask-image: var(--ai-icon); mask-image: var(--ai-icon); -webkit-mask-position: center; mask-position: center; -webkit-mask-size: contain; mask-size: contain; -webkit-mask-repeat: no-repeat; mask-repeat: no-repeat; }
+#ask-gpt, .selection-actions a, #gpt-handoff-open, #gpt-handoff-title { display: inline-flex; align-items: center; gap: 8px; }
+#ask-gpt > .ai-provider-icon, .selection-actions .ai-provider-icon, #gpt-handoff-open > .ai-provider-icon { flex-basis: 15px; width: 15px; height: 15px; }
+.reader-file-actions :is(.ai-provider-icon, .ai-action-label, .ai-provider-name, .ai-provider-default) { display: inline-flex; margin: 0; }
+.reader-file-actions .ai-action-arrow { margin: 0; color: var(--text-faint); }
+.reader-gpt-menu .ai-provider-default { font-size: 9px; color: var(--text-faint); }
+.ai-provider-check { flex: 0 0 12px; width: 12px; height: 12px; margin-left: auto; fill: none; stroke: currentColor; stroke-width: 1.6; stroke-linecap: round; stroke-linejoin: round; visibility: hidden; }
+.ai-provider-option[aria-checked="true"] .ai-provider-check { visibility: visible; }
+.ai-menu-footer { margin-top: 12px; padding-top: 9px; border-top: 1px solid var(--line); }
+.reader-gpt-menu .ai-copy-full { display: flex; align-items: center; gap: 9px; width: 100%; padding: 9px 7px; background: transparent; color: var(--text-soft); font-size: 12px; text-align: left; }
+.ai-copy-full svg { flex: 0 0 16px; width: 16px; height: 16px; fill: none; stroke: currentColor; stroke-width: 1.3; stroke-linejoin: round; }
+.reader-gpt-menu .ai-copy-full span { display: inline; margin-left: auto; color: var(--text-faint); }
+#ai-provider-hint { margin: 5px 7px 2px; color: var(--text-faint); font-size: 10px; line-height: 1.6; }
+.reader-file-actions .reader-gpt-menu button:is(:hover, :active) { transform: none; box-shadow: none; }
+.reader-file-actions .reader-gpt-actions > a:is(:hover, :active) { transform: none; box-shadow: none; }
+@media (hover: hover) {
+  .reader-gpt-options summary:hover { color: var(--accent-strong); }
+  .reader-gpt-menu .ai-provider-option:hover:not([aria-checked="true"]), .reader-gpt-menu .ai-copy-full:hover { background: var(--surface-soft); color: var(--text); }
+}
+.selection-actions { position: fixed; z-index: 60; padding: 4px; border: 1px solid var(--line-strong); border-radius: 7px; background: var(--surface); box-shadow: var(--shadow-tight); }
+.selection-actions[hidden], body.drawer-open .selection-actions { display: none; }
+.selection-actions a { padding: 9px 13px; color: var(--accent-strong); font: 12px/1.6 var(--font-editorial); white-space: nowrap; }
+body.gpt-handoff-open { overflow: hidden; }
+.gpt-handoff { width: min(700px, calc(100vw - 32px)); max-height: calc(100dvh - 40px); margin: auto; padding: 24px; border: 1px solid var(--line-strong); border-radius: 8px; background: var(--surface); color: var(--text); box-shadow: var(--shadow); }
+.gpt-handoff::backdrop { background: rgb(10 16 30 / .65); }
+.gpt-handoff-heading { display: flex; align-items: center; justify-content: space-between; gap: 16px; }
+.gpt-handoff-heading h2 { margin: 0; font: 500 20px/1.5 var(--font-editorial); }
+#gpt-handoff-title { gap: 10px; }
+#gpt-handoff-title .ai-provider-icon { flex-basis: 22px; width: 22px; height: 22px; color: var(--accent-strong); }
+.gpt-handoff-heading button { display: grid; place-items: center; flex: 0 0 32px; width: 32px; height: 32px; padding: 0; border-radius: 4px; background: transparent; color: var(--text-faint); font-size: 22px; line-height: 1; cursor: pointer; }
+.gpt-handoff-heading button:hover { background: var(--surface-soft); color: var(--text); }
+#gpt-handoff-note, #gpt-handoff-status { font-size: 12px; line-height: 1.8; color: var(--text-soft); }
+#gpt-handoff-status:empty { display: none; }
+#gpt-handoff-text { display: block; width: 100%; height: min(380px, 45dvh); padding: 16px; margin: 18px 0; border: 1px solid var(--line); border-radius: 5px; background: var(--surface-soft); color: var(--text); resize: vertical; font: 12px/1.8 var(--font-mono); }
+.gpt-handoff-actions { display: flex; flex-wrap: wrap; gap: 10px; }
+.gpt-handoff-actions :is(button, a) { padding: 10px 12px; border: 1px solid var(--line); border-radius: 5px; font-size: 12px; cursor: pointer; }
+.gpt-handoff-actions :is(button, a):not(.reader-copy) { background: var(--surface); color: var(--text-soft); }
 #reader-status { min-height: 18px; color: var(--text-faint); font-size: 12px; line-height: 1.7; margin: 13px 0 30px; }
 .reader-content { font: var(--reading-size, 18px)/1.95 var(--font-editorial); letter-spacing: .005em; overflow-wrap: anywhere; }
 .reader-content > h1 { display: none; }
@@ -143,6 +193,10 @@ body.drawer-open .equation-return { visibility: hidden; }
   .reader-tabs { gap: 16px; }
   .equation-return { right: 76px; bottom: calc(88px + env(safe-area-inset-bottom)); }
   .reader-file-actions :is(button, a) { padding: 9px; font-size: 10px; } .reader-file-actions :is(button, a) span { display: none; }
+  .gpt-handoff { padding: 20px; }
+  .gpt-handoff-heading h2 { font-size: 18px; }
+  #gpt-handoff-title { gap: 8px; }
+  #gpt-handoff-title .ai-provider-icon { flex-basis: 20px; width: 20px; height: 20px; }
   .reader-tabs button { font-size: 11px; } .reader-content { font-size: calc(var(--reading-size, 18px) - 1px); }
   .reader-content h2 { font-size: 23px; } .reader-content pre { padding: 18px; font-size: 12px; }
   .series-pagination { gap: 10px; } .series-pagination a { padding: 16px; } .series-pagination strong { font-size: 13px; }
@@ -151,6 +205,7 @@ body.drawer-open .equation-return { visibility: hidden; }
 html[data-theme="dark"] .reader-copy { color: var(--bg); }
 
 @media (prefers-reduced-motion: no-preference) {
+  .reader-gpt-options summary svg { transition: transform 160ms ease; }
   .reader-file-actions :is(button, a), .reading-size button, .equation-return {
     transition: transform 160ms ease, border-color 180ms ease, background-color 180ms ease, box-shadow 180ms ease;
   }

@@ -38,6 +38,26 @@ uv run python scripts/serve.py
 
 网站优先展示通过哈希校验的本地图片缓存，未缓存和站外图片使用原始链接；Markdown 始终保留原图 URL。“打开原图”也指向源站。缓存与跳过失效子域的规则见 [图片缓存](maintenance.md#图片缓存)。
 
+## 向 AI 提问
+
+默认使用 GPT。点击文章顶部提问按钮旁的下拉箭头，在“选择提问助手”图标菜单中选择 GPT、Claude、Gemini、DeepSeek、Kimi、豆包或 Perplexity。设置保存在当前浏览器，刷新或切换文章后继续使用；全文和选段入口同步显示所选 AI 的名称与图标。菜单支持方向键切换、Enter 确认和 Esc 关闭，适配浅色、深色主题与手机屏幕。切换设置本身不会联系任何 AI 服务。图标随项目保存，[来源与许可证](../../web/vendor/ai-icons/README.md)单独记录。
+
+| 服务 | 传递方式 |
+| --- | --- |
+| GPT（默认） | 通过兼容的提问链接带入内容，提供复制备用 |
+| Perplexity | 使用[官方 OpenSearch 地址](https://www.perplexity.ai/opensearch.xml)带入提问，提供复制备用 |
+| Claude、Gemini、DeepSeek、Kimi、豆包 | 显示完整提问面板并尝试复制，然后点击“打开对应 AI”粘贴 |
+
+阅读页顶部的全文提问附文章标题、苏剑林署名、原文链接和 Markdown 文件直链。它请求 AI 使用可用的联网工具获取完整原文，按 UTF-8 读取并保留原始 LaTeX，再等待你的问题。如果链接访问失败或工具拒绝 `text/markdown`，提示词提供 GitHub 原始文件备用地址：`https://raw.githubusercontent.com/caojiaolong/spaces-index/main/data/articles/<id>/article.md`。备用地址直接使用仓库中已提交的正文文件，以 `text/plain` 返回，不额外生成另一份正文。
+
+提示词不能赋予 AI 文件下载或联网能力，也不表示全文已经送达。若两个链接都无法读取，展开按钮旁的菜单选择“复制全文提问”，或下载 Markdown 后上传。全文复制保留完整原文；AI 应明确说明未核对全文，不能用网页摘要或搜索片段代替。
+
+在正文中选择文字后，浮动提问按钮会准备选段及全文链接，默认请所选 AI 解释概念、公式与推导，并在选段后附“请解释这一段文字。”完整公式传递原始 LaTeX；仅选中公式的一部分时保留选中字符，并附完整原式作为上下文。普通复制行为不变。选区取消、按 Esc、进入源码视图或切换文章后隐藏按钮；不接管手机原生选择菜单。
+
+提问 URL 使用编码后 6,000 字符的项目保守阈值，这不是任何 AI 服务的官方上限。超过阈值时显示完整提问内容供复制，不截断选段。浏览器拒绝自动复制时，面板会选中全文供手动复制。只有点击打开入口才访问对应 AI；选择文字不会发起网络请求。本地预览提供公开 GitHub Pages Markdown 地址和 GitHub 原始文件地址，两者对应线上部署或 `main` 中已提交的版本；尚未提交或部署的本地变更需复制内容或上传文件。
+
+提问功能使用自己的 AI 账户，本站不接模型接口。提示词要求区分作者原文与 AI 解释，不冒充作者。[OpenAI 的网页访问说明](https://developers.openai.com/api/docs/bots)也不承诺一次链接跳转就会读取完整正文。服务端登录状态和页面更新可能影响链接提问，若内容未带入，可使用复制面板。
+
 ## 验收
 
 公开构建默认包含全站通过校验且未下架、未过期的正文。公式异常、历史 HTML 与旧式嵌入内容的处理见 [正文校验与许可](mirror.md)。
@@ -45,6 +65,7 @@ uv run python scripts/serve.py
 ```bash
 uv run --with playwright python scripts/check_local_preview.py --channel msedge
 uv run --with playwright python scripts/check_reader_math.py --channel msedge
+uv run --with playwright python scripts/check_reader_gpt.py --channel msedge
 uv run --with playwright python scripts/check_home_interactions.py --channel msedge
 ```
 

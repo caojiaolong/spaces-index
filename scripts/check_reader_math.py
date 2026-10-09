@@ -71,7 +71,7 @@ def main():
             assert original.get_attribute("target") == "_blank"
             assert "noopener" in original.get_attribute("rel")
             assert page.locator("#equation-return").is_hidden()
-            assert page.locator("#reader-actions .reader-file-actions").inner_text().splitlines() == ["查看原文 ↗", "下载 Markdown ↓", "复制 Markdown ⧉"]
+            assert page.locator("#reader-actions .reader-file-actions > a, #reader-actions .reader-file-actions > button").all_inner_texts() == ["查看原文 ↗", "下载 Markdown ↓", "复制 Markdown ⧉"]
             assert page.locator("#reader-actions").evaluate("n => n.getBoundingClientRect().bottom <= document.querySelector('#article').getBoundingClientRect().top")
             assert page.locator('#article mjx-container[jax="CHTML"]').count() == len(original_formulas)
             assert page.evaluate("[...document.fonts].filter(f => f.status === 'loaded' && f.family.startsWith('MJX')).length") >= 2

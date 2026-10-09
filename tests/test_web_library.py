@@ -8,10 +8,11 @@ import pytest
 
 
 @pytest.mark.skipif(shutil.which("node") is None, reason="Node is needed for browser logic tests")
-def test_library_behaviors():
+@pytest.mark.parametrize("suite", ["web_library.test.cjs", "web_mirror.test.cjs"])
+def test_library_behaviors(suite):
     root = Path(__file__).resolve().parents[1]
     result = subprocess.run(
-        [shutil.which("node"), "--test", "tests/web_library.test.cjs"],
+        [shutil.which("node"), "--test", f"tests/{suite}"],
         cwd=root, capture_output=True, text=True, encoding="utf-8", errors="replace",
     )
     assert result.returncode == 0, result.stdout + result.stderr

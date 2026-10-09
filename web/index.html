@@ -87,6 +87,20 @@
           <div class="reader-tabs" aria-label="阅读视图"><button id="show-reading" type="button" aria-pressed="true">阅读</button><button id="show-source" type="button" aria-pressed="false">Markdown 源码</button></div>
           <span id="reader-progress"></span>
           <div class="reader-file-actions" role="group" aria-label="文章操作">
+            <div class="reader-gpt-actions">
+              <a id="ask-gpt" class="reader-download" target="_blank" rel="noopener noreferrer" title="请 ChatGPT 获取 Markdown 全文；失败时尝试 GitHub 原始文件，也可复制全文或上传文件">全文问 GPT <span aria-hidden="true">↗</span></a>
+              <details id="gpt-options" class="reader-gpt-options">
+                <summary aria-label="选择 AI 和提问方式" title="选择 AI 和提问方式"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="m4 6 4 4 4-4"/></svg></summary>
+                <div class="reader-gpt-menu">
+                  <p id="ai-provider-label" class="ai-menu-heading">选择提问助手</p>
+                  <div id="ai-provider" class="ai-provider-list" role="radiogroup" aria-labelledby="ai-provider-label"></div>
+                  <div class="ai-menu-footer">
+                    <button id="copy-gpt-full" class="ai-copy-full" type="button"><svg viewBox="0 0 20 20" aria-hidden="true"><rect x="7" y="7" width="10" height="10" rx="2"/><path d="M12 7V5a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v5a2 2 0 0 0 2 2h2"/></svg>复制全文提问<span aria-hidden="true">→</span></button>
+                    <p id="ai-provider-hint" aria-live="polite"></p>
+                  </div>
+                </div>
+              </details>
+            </div>
             <a id="reader-original" class="reader-download" target="_blank" rel="noopener noreferrer">查看原文 <span aria-hidden="true">↗</span></a>
             <button id="download-markdown" class="reader-download" type="button">下载 Markdown <span aria-hidden="true">↓</span></button>
             <button id="copy-markdown" class="reader-copy" type="button">复制 Markdown <span aria-hidden="true">⧉</span></button>
@@ -107,6 +121,13 @@
     </div>
     </div>
     <button id="equation-return" class="equation-return" type="button" hidden><span aria-hidden="true">↩</span> 返回引用处</button>
+    <dialog id="gpt-handoff" class="gpt-handoff" aria-labelledby="gpt-handoff-title" aria-describedby="gpt-handoff-note">
+      <div class="gpt-handoff-heading"><h2 id="gpt-handoff-title">向 ChatGPT 提问</h2><button id="gpt-handoff-close" type="button" aria-label="关闭提问面板" title="关闭">×</button></div>
+      <p id="gpt-handoff-note"></p>
+      <textarea id="gpt-handoff-text" aria-label="完整提问内容，可手动复制" readonly spellcheck="false"></textarea>
+      <div class="gpt-handoff-actions"><button id="gpt-handoff-copy" class="reader-copy" type="button">复制提问内容</button><a id="gpt-handoff-open" href="https://chatgpt.com/" target="_blank" rel="noopener noreferrer">打开 ChatGPT ↗</a><button id="gpt-handoff-download" type="button">下载 Markdown ↓</button></div>
+      <p id="gpt-handoff-status" role="status" aria-live="polite"></p>
+    </dialog>
     <dialog id="image-viewer" class="image-viewer" aria-labelledby="image-viewer-title">
       <div class="image-viewer-toolbar">
         <span id="image-viewer-title" title="滚轮缩放，按住图片拖动查看">图片预览</span>
