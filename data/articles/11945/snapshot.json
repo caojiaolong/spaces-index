@@ -1,0 +1,25 @@
+{
+  "metadata": {
+    "id": "11945",
+    "title": "如何让GDN2更稳定一些？",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/11945",
+    "date": "2026-10-09",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "信息时代",
+    "source_tags": [
+      "矩阵",
+      "线性",
+      "RNN",
+      "attention"
+    ],
+    "source_summary": "本文分析了GDN2将更新矩阵从$\\boldsymbol{I}-\\eta\\boldsymbol{k}\\boldsymbol{k}^{\\top}$推广到$\\boldsymbol{I}-\\eta\\boldsymbol{k}\\boldsymbol{j}^{\\top}$后可能出现的稳定性问题，并讨论了相应的应对策略。"
+  },
+  "fetched_at": "2026-10-10T08:42:35+00:00",
+  "source_snapshot_sha256": "e39f26f2f114dd62d62a68672bc37782ed2c3cf1da8b7cc8333a342b0654c37a",
+  "validators": {
+    "etag": null,
+    "last_modified": null
+  }
+}

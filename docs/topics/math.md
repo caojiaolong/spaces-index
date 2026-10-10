@@ -2,7 +2,7 @@
 
 [返回主题索引](README.md) · [文档导航](../README.md)
 
-共 382 篇。
+共 383 篇。
 
 <a id="series-math-6689ddf615"></a>
 #### 低秩近似之路
@@ -525,6 +525,10 @@
 <a id="series-math-standalone"></a>
 #### 非系列文章
 
+- 2026-10-09 - [如何让GDN2更稳定一些？](https://spaces.ac.cn/archives/11945)
+  - 原站分类：信息时代
+  - 原站标签：矩阵、线性、RNN、attention
+  - 小结摘录：本文分析了GDN2将更新矩阵从$\\boldsymbol{I}-\\eta\\boldsymbol{k}\\boldsymbol{k}^{\\top}$推广到$\\boldsymbol{I}-\\eta\\boldsymbol{k}\\boldsymbol{j}^{\\top}$后可能出现的稳定性问题，并讨论了相应的应对策略。
 - 2026-10-03 - [通过微扰分析求解等式约束优化问题](https://spaces.ac.cn/archives/11928)
   - 原站分类：数学研究
   - 原站标签：微积分、极值、分析、优化

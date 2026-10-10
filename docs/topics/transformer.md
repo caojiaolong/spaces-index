@@ -2,7 +2,7 @@
 
 [返回主题索引](README.md) · [文档导航](../README.md)
 
-共 155 篇。
+共 156 篇。
 
 <a id="series-transformer-f5569856ba"></a>
 #### MoE环游记
@@ -288,6 +288,10 @@
 <a id="series-transformer-standalone"></a>
 #### 非系列文章
 
+- 2026-10-09 - [如何让GDN2更稳定一些？](https://spaces.ac.cn/archives/11945)
+  - 原站分类：信息时代
+  - 原站标签：矩阵、线性、RNN、attention
+  - 小结摘录：本文分析了GDN2将更新矩阵从$\\boldsymbol{I}-\\eta\\boldsymbol{k}\\boldsymbol{k}^{\\top}$推广到$\\boldsymbol{I}-\\eta\\boldsymbol{k}\\boldsymbol{j}^{\\top}$后可能出现的稳定性问题，并讨论了相应的应对策略。
 - 2026-08-09 - [除了交叉熵，LM Loss还有什么选择？](https://spaces.ac.cn/archives/11854)
   - 原站分类：数学研究
   - 原站标签：最优、语言模型、损失函数、梯度

@@ -1,5 +1,27 @@
 [
   {
+    "id": "11945",
+    "title": "如何让GDN2更稳定一些？",
+    "url": "https://spaces.ac.cn/archives/11945",
+    "date": "2026-10-09",
+    "source_category": "信息时代",
+    "source_tags": [
+      "矩阵",
+      "线性",
+      "RNN",
+      "attention"
+    ],
+    "source_summary": "本文分析了GDN2将更新矩阵从$\\boldsymbol{I}-\\eta\\boldsymbol{k}\\boldsymbol{k}^{\\top}$推广到$\\boldsymbol{I}-\\eta\\boldsymbol{k}\\boldsymbol{j}^{\\top}$后可能出现的稳定性问题，并讨论了相应的应对策略。",
+    "metadata_checked_at": "2026-10-10T08:42:35+00:00",
+    "topics": [
+      "大模型与Transformer",
+      "数学工具"
+    ],
+    "series": null,
+    "series_index": null,
+    "level": null
+  },
+  {
     "id": "11928",
     "title": "通过微扰分析求解等式约束优化问题",
     "url": "https://spaces.ac.cn/archives/11928",

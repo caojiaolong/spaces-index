@@ -9378,5 +9378,12 @@
     "title": "通过微扰分析求解等式约束优化问题",
     "markdown_sha256": "61651d7eeef63fa3a31e7ee13f435ff7d2504d58eee5935b8761e57a821c701d",
     "converter_version": 1
+  },
+  "11945": {
+    "status": "verified",
+    "checked_at": "2026-10-10T08:42:35+00:00",
+    "title": "如何让GDN2更稳定一些？",
+    "markdown_sha256": "f580687aca4e2057d983dd5e00006782fc49d0b6dfb20b9514249e87e1e966fa",
+    "converter_version": 1
   }
 }

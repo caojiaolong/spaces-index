@@ -1,0 +1,45 @@
+{
+  "metadata": {
+    "id": "11945",
+    "title": "如何让GDN2更稳定一些？",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/11945",
+    "date": "2026-10-09",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "信息时代",
+    "source_tags": [
+      "矩阵",
+      "线性",
+      "RNN",
+      "attention"
+    ],
+    "source_summary": "本文分析了GDN2将更新矩阵从$\\boldsymbol{I}-\\eta\\boldsymbol{k}\\boldsymbol{k}^{\\top}$推广到$\\boldsymbol{I}-\\eta\\boldsymbol{k}\\boldsymbol{j}^{\\top}$后可能出现的稳定性问题，并讨论了相应的应对策略。"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 80,
+    "display_formula_count": 11,
+    "image_count": 0,
+    "heading_count": 5,
+    "code_block_count": 0,
+    "source_text_sha256": "a9105dab3d846bf438a569d020006649b1b0168dc54c0e862a1c8860d59a986e",
+    "output_text_sha256": "a9105dab3d846bf438a569d020006649b1b0168dc54c0e862a1c8860d59a986e",
+    "latex_sha256": "f133644bcdcc00d25a522a2f25efbf8e5d8c84b18202e0ac76b60767bb521bd9",
+    "body_sha256": "f166877281bd149dd08b1630f7d11572e4ae0bd1e0b7d9b00d0d3dd3d933e175",
+    "converter_version": 1,
+    "markdown_sha256": "f580687aca4e2057d983dd5e00006782fc49d0b6dfb20b9514249e87e1e966fa"
+  },
+  "fetched_at": "2026-10-10T08:42:35+00:00",
+  "source_snapshot_sha256": "e39f26f2f114dd62d62a68672bc37782ed2c3cf1da8b7cc8333a342b0654c37a",
+  "images": {},
+  "publication_policy": "config/mirror.json"
+}
