@@ -6,9 +6,17 @@
     "source_url": "https://spaces.ac.cn/archives/124",
     "date": "2009-09-15",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "千奇百怪",
+    "source_tags": [
+      "Google",
+      "麦田圈",
+      "坐标",
+      "谜团"
+    ],
+    "source_summary": null
   },
-  "fetched_at": "2026-09-14T14:53:02+00:00",
+  "fetched_at": "2026-10-15T07:36:53+00:00",
   "source_snapshot_sha256": "c7ce630b592c28cfe24eda095e85ca6bbd858f19c3d7c83d25f8efe04082c404",
   "validators": {
     "etag": null,

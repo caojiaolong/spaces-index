@@ -8415,28 +8415,28 @@
   },
   "138": {
     "status": "verified",
-    "checked_at": "2026-09-14T14:51:20+00:00",
+    "checked_at": "2026-10-15T07:36:04+00:00",
     "title": "中国探索火星，还等两年！",
     "markdown_sha256": "067860a10a75553514acefab36b640f5a6e50b16eb1b63a0142b8b21339d5b8b",
     "converter_version": 1
   },
   "139": {
     "status": "verified",
-    "checked_at": "2026-09-14T14:51:27+00:00",
+    "checked_at": "2026-10-15T07:36:07+00:00",
     "title": "生活拾零...",
     "markdown_sha256": "c11c116fa9d8b5df6508d4b49a5ac7e1c2ba81bd47c3e20aef1a9d9e73d87709",
     "converter_version": 1
   },
   "137": {
     "status": "verified",
-    "checked_at": "2026-09-14T14:51:35+00:00",
+    "checked_at": "2026-10-15T07:36:11+00:00",
     "title": "【NASA每日一图】壮观的银河系",
     "markdown_sha256": "79b3842f716068c9fa5a595dde4ad3878f4bf5363421e6bd9191164c75a7f750",
     "converter_version": 1
   },
   "136": {
     "status": "verified",
-    "checked_at": "2026-09-14T14:51:43+00:00",
+    "checked_at": "2026-10-15T07:36:14+00:00",
     "title": "广州亚运歌曲《重逢》歌词(中英文版)",
     "markdown_sha256": "310f11f2d4c2e5516f22a8a2de6d259ca91875b175a4137a4230b76d294ba8a9",
     "converter_version": 1
@@ -8450,119 +8450,120 @@
   },
   "134": {
     "status": "verified",
-    "checked_at": "2026-09-14T14:51:57+00:00",
+    "checked_at": "2026-10-15T07:36:18+00:00",
     "title": "【NASA每日一图】银河系中心",
     "markdown_sha256": "f099d6d0cbc76b0e4692c2e67c93a56e8c4d25f9f392e3c77d4ab003beed7de0",
     "converter_version": 1
   },
   "133": {
     "status": "verified",
-    "checked_at": "2026-09-14T14:52:04+00:00",
+    "checked_at": "2026-10-15T07:36:21+00:00",
     "title": "正十七边形的尺规作图存在之证明",
     "markdown_sha256": "ea732e8a6e2949997336ee33f03c73c040245f8fbe832ef55c3fad0461e09f1d",
     "converter_version": 1
   },
   "132": {
-    "status": "verified",
-    "checked_at": "2026-09-14T14:52:12+00:00",
+    "status": "conversion_failed",
+    "checked_at": "2026-10-15T07:36:25+00:00",
     "title": "一道从小学到高中都可能考到的题目",
-    "markdown_sha256": "907b16cf94db7d669171f3fed612662059a202d6fe7effc459449a7692aca6c1",
-    "converter_version": 1
+    "error": "Unreviewed legacy element: a<b，则有<br",
+    "converter_version": 1,
+    "source_checked_at": "2026-10-15T07:36:25+00:00"
   },
   "131": {
     "status": "verified",
-    "checked_at": "2026-09-14T14:52:19+00:00",
+    "checked_at": "2026-10-15T07:36:28+00:00",
     "title": "10月国际空间站过境时间",
     "markdown_sha256": "2b8ebfebe8535a97c93e36618d0bded4f26eef2db0ee2d7edcd1780bed153ad6",
     "converter_version": 1
   },
   "130": {
     "status": "verified",
-    "checked_at": "2026-09-14T14:52:26+00:00",
+    "checked_at": "2026-10-15T07:36:32+00:00",
     "title": "【NASA每日一图】太阳系中的木卫三",
     "markdown_sha256": "5680b11c43d758dad8ad9d6487a1c1fba13a23a15d0bbc6e5b2b0b6684ec93ce",
     "converter_version": 1
   },
   "129": {
     "status": "verified",
-    "checked_at": "2026-09-14T14:52:33+00:00",
+    "checked_at": "2026-10-15T07:36:36+00:00",
     "title": "科学空间：2009年10月重要天象",
     "markdown_sha256": "3b3579679ae54172868338565fd99ac460b9d6b826b37353d144b679e402bb23",
     "converter_version": 1
   },
   "128": {
     "status": "verified",
-    "checked_at": "2026-09-14T14:52:40+00:00",
+    "checked_at": "2026-10-15T07:36:41+00:00",
     "title": "火炬来了!“潮流”Vs “进取”，等待你的抉择！",
     "markdown_sha256": "2c0d909447f81c817da9afa16fc94b4e777a17365d7c825baf446940ad614d23",
     "converter_version": 1
   },
   "127": {
     "status": "verified",
-    "checked_at": "2026-09-14T14:52:47+00:00",
+    "checked_at": "2026-10-15T07:36:45+00:00",
     "title": "【NASA每日一图】本星系群远后方的星系",
     "markdown_sha256": "24abd73e6cc78b5c962149a556c0b7f8fee5f3fc1428bf9a074a8a5cb30dd8f1",
     "converter_version": 1
   },
   "126": {
     "status": "verified",
-    "checked_at": "2026-09-14T14:52:55+00:00",
+    "checked_at": "2026-10-15T07:36:49+00:00",
     "title": "新浪sina.cn邮箱体验(免费邀请您来体验)",
     "markdown_sha256": "1ce05263fbd4f7596d6aeabab0b53ae87f833cbd88f0bc4e67af95eb516c6242",
     "converter_version": 1
   },
   "124": {
     "status": "verified",
-    "checked_at": "2026-09-14T14:53:02+00:00",
+    "checked_at": "2026-10-15T07:36:53+00:00",
     "title": "神奇的麦田圈坐标图片之谜",
     "markdown_sha256": "a55d08934b5ec403f8c82237a77d860fa0acfe0f796f7598a7c00ea7da8fcac4",
     "converter_version": 1
   },
   "123": {
     "status": "verified",
-    "checked_at": "2026-09-14T14:53:09+00:00",
+    "checked_at": "2026-10-15T07:36:57+00:00",
     "title": "第一次使用linux写日志",
     "markdown_sha256": "42d388b24279413e95d93cacd44996baec879ca756045ee8e1fcc625c4ab3deb",
     "converter_version": 1
   },
   "122": {
     "status": "verified",
-    "checked_at": "2026-09-14T14:53:17+00:00",
+    "checked_at": "2026-10-15T07:37:01+00:00",
     "title": "2010年3D电视入客厅",
     "markdown_sha256": "d5dd391a27be54a054220bb762fd7b3fdc75e54a61ec72da92c277c971218d15",
     "converter_version": 1
   },
   "121": {
     "status": "verified",
-    "checked_at": "2026-09-14T14:53:28+00:00",
+    "checked_at": "2026-10-15T07:37:04+00:00",
     "title": "美绘制太空引力高速路帮飞船穿越太阳系(图)",
     "markdown_sha256": "6f1e8dfec8eeba4ed780741573db4e859ea2bd04640cfd7df27e30e7a909a5d4",
     "converter_version": 1
   },
   "120": {
     "status": "verified",
-    "checked_at": "2026-09-14T14:53:36+00:00",
+    "checked_at": "2026-10-15T07:37:08+00:00",
     "title": "【NASA每日一图】天文城的夏季星空",
     "markdown_sha256": "ae28a089dc1f0ee248fd87873b5844210140b0fe5a8c12cb59a2ed543f087c08",
     "converter_version": 1
   },
   "119": {
     "status": "verified",
-    "checked_at": "2026-09-14T14:53:45+00:00",
+    "checked_at": "2026-10-15T07:37:12+00:00",
     "title": "欢迎注册@spaces.ac.cn的邮箱(更新!)",
     "markdown_sha256": "7f1380b8ef8a58b4e49ccc3215bda910f27985532112a83ff8cadf19cb5d6fe3",
     "converter_version": 1
   },
   "118": {
     "status": "verified",
-    "checked_at": "2026-09-14T14:53:54+00:00",
+    "checked_at": "2026-10-15T07:37:16+00:00",
     "title": "微积分学习（二）：导数",
     "markdown_sha256": "592b604356f5fd7afe232e6adcf7823874397f2df64d287f49b9fa525b556108",
     "converter_version": 1
   },
   "117": {
     "status": "verified",
-    "checked_at": "2026-09-14T14:54:01+00:00",
+    "checked_at": "2026-10-15T07:37:19+00:00",
     "title": "【NASA每日一图】微波背景辐射双极化",
     "markdown_sha256": "f576010856d7f1bc62367001bb3bbaa275f400bf94ebb01d96d929057e42ad04",
     "converter_version": 1
@@ -8576,28 +8577,28 @@
   },
   "115": {
     "status": "verified",
-    "checked_at": "2026-09-14T14:54:29+00:00",
+    "checked_at": "2026-10-15T07:37:23+00:00",
     "title": "一辈子的朋友，一生的情感",
     "markdown_sha256": "af9a8da6f9d19cbb6005d97dfa03cca2a02b1a68179de2540ed6578ae0af246c",
     "converter_version": 1
   },
   "114": {
     "status": "verified",
-    "checked_at": "2026-09-14T14:54:37+00:00",
+    "checked_at": "2026-10-15T07:37:26+00:00",
     "title": "四次方程的根式求解（通俗版）",
     "markdown_sha256": "a80438f32ef9e075729946bb6a35074a74b27a9233a80b8808d219cbbdd54b10",
     "converter_version": 1
   },
   "113": {
     "status": "verified",
-    "checked_at": "2026-09-14T14:54:44+00:00",
+    "checked_at": "2026-10-15T07:37:30+00:00",
     "title": "欲对接广义相对论，新量子引力模型能否成功？",
     "markdown_sha256": "25e13fbf91aa94a6e38e2d8a232004a627307491e50e9f9d4ed77ca3565520ff",
     "converter_version": 1
   },
   "112": {
     "status": "verified",
-    "checked_at": "2026-09-14T14:54:52+00:00",
+    "checked_at": "2026-10-15T07:37:33+00:00",
     "title": "【NASA每日一图】超新星遗骸E0102-72",
     "markdown_sha256": "874d25d48915e7ffd793477dac1dc422f11e509e96f59fd290b5903dfca3a794",
     "converter_version": 1

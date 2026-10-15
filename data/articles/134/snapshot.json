@@ -6,9 +6,17 @@
     "source_url": "https://spaces.ac.cn/archives/134",
     "date": "2009-09-26",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "图片摄影",
+    "source_tags": [
+      "星云",
+      "银河系",
+      "星系",
+      "天文台"
+    ],
+    "source_summary": null
   },
-  "fetched_at": "2026-09-14T14:51:57+00:00",
+  "fetched_at": "2026-10-15T07:36:18+00:00",
   "source_snapshot_sha256": "9a91793a1e9dfe9cf47e13ede03193354ed7b69e8bf78d85ae6a23b2dfe41b6b",
   "validators": {
     "etag": null,

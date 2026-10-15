@@ -6,9 +6,15 @@
     "source_url": "https://spaces.ac.cn/archives/130",
     "date": "2009-09-20",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "图片摄影",
+    "source_tags": [
+      "卫星",
+      "太阳系"
+    ],
+    "source_summary": null
   },
-  "fetched_at": "2026-09-14T14:52:26+00:00",
+  "fetched_at": "2026-10-15T07:36:32+00:00",
   "source_snapshot_sha256": "630884e71da7463a4c4da8d4b101007173d2fee5965c4ff3ff7168919aeb9458",
   "validators": {
     "etag": null,

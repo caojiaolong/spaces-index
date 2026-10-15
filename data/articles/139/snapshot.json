@@ -6,9 +6,16 @@
     "source_url": "https://spaces.ac.cn/archives/139",
     "date": "2009-09-30",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "生活/情感",
+    "source_tags": [
+      "生活",
+      "情感",
+      "学习"
+    ],
+    "source_summary": null
   },
-  "fetched_at": "2026-09-14T14:51:27+00:00",
+  "fetched_at": "2026-10-15T07:36:07+00:00",
   "source_snapshot_sha256": "14b9235da43509709e068730e3ff0af1ee0d7223b2382e393c0720c9c26875c5",
   "validators": {
     "etag": null,

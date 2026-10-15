@@ -6,7 +6,13 @@
     "source_url": "https://spaces.ac.cn/archives/127",
     "date": "2009-09-20",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "图片摄影",
+    "source_tags": [
+      "星系",
+      "NGC"
+    ],
+    "source_summary": null
   },
   "validation": {
     "passed": true,
@@ -30,8 +36,8 @@
     "converter_version": 1,
     "markdown_sha256": "24abd73e6cc78b5c962149a556c0b7f8fee5f3fc1428bf9a074a8a5cb30dd8f1"
   },
-  "fetched_at": "2026-09-14T14:52:47+00:00",
+  "fetched_at": "2026-10-15T07:36:45+00:00",
   "source_snapshot_sha256": "439a43ffb147f80a5af33b7df5d19121c857becceb0ae1d32801752f8b59d733",
   "images": {},
-  "local_only": true
+  "publication_policy": "config/mirror.json"
 }

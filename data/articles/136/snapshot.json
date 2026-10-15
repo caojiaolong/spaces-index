@@ -6,9 +6,17 @@
     "source_url": "https://spaces.ac.cn/archives/136",
     "date": "2009-09-26",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "千奇百怪",
+    "source_tags": [
+      "音乐",
+      "歌曲",
+      "亚运会",
+      "翻译"
+    ],
+    "source_summary": null
   },
-  "fetched_at": "2026-09-14T14:51:42+00:00",
+  "fetched_at": "2026-10-15T07:36:14+00:00",
   "source_snapshot_sha256": "2431ad1d3fb17c4bf8d31c4c321cac2b8d296171e57fe9ada82b112a8828f416",
   "validators": {
     "etag": null,

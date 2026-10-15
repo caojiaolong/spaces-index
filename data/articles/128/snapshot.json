@@ -6,9 +6,16 @@
     "source_url": "https://spaces.ac.cn/archives/128",
     "date": "2009-09-20",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "千奇百怪",
+    "source_tags": [
+      "亚运会",
+      "火炬",
+      "投票"
+    ],
+    "source_summary": null
   },
-  "fetched_at": "2026-09-14T14:52:40+00:00",
+  "fetched_at": "2026-10-15T07:36:41+00:00",
   "source_snapshot_sha256": "45cffc6177c0b312f5a04fecc49c2e122223a405c2e42e05f0990bfbc872d8d7",
   "validators": {
     "etag": null,

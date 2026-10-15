@@ -6,9 +6,16 @@
     "source_url": "https://spaces.ac.cn/archives/123",
     "date": "2009-09-13",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "生活/情感",
+    "source_tags": [
+      "linux",
+      "日志",
+      "纪念"
+    ],
+    "source_summary": null
   },
-  "fetched_at": "2026-09-14T14:53:09+00:00",
+  "fetched_at": "2026-10-15T07:36:57+00:00",
   "source_snapshot_sha256": "0e33e148918d6b4647f4b69cb5cdfacb1d0dc10cbac6f40fff33f17fdb4e837b",
   "validators": {
     "etag": null,

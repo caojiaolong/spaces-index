@@ -6,7 +6,16 @@
     "source_url": "https://spaces.ac.cn/archives/121",
     "date": "2009-09-13",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "天文探索",
+    "source_tags": [
+      "太阳系",
+      "转载",
+      "引力",
+      "飞船",
+      "美国"
+    ],
+    "source_summary": null
   },
   "validation": {
     "passed": true,
@@ -30,8 +39,8 @@
     "converter_version": 1,
     "markdown_sha256": "6f1e8dfec8eeba4ed780741573db4e859ea2bd04640cfd7df27e30e7a909a5d4"
   },
-  "fetched_at": "2026-09-14T14:53:27+00:00",
+  "fetched_at": "2026-10-15T07:37:04+00:00",
   "source_snapshot_sha256": "5dc99507ba61cc7a65da2e41f547fa546a1213035c991eb027e84f893d871fdc",
   "images": {},
-  "local_only": true
+  "publication_policy": "config/mirror.json"
 }

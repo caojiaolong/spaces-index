@@ -6,9 +6,18 @@
     "source_url": "https://spaces.ac.cn/archives/113",
     "date": "2009-09-05",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "天文探索",
+    "source_tags": [
+      "转载",
+      "引力",
+      "相对论",
+      "量子力学",
+      "模型"
+    ],
+    "source_summary": null
   },
-  "fetched_at": "2026-09-14T14:54:44+00:00",
+  "fetched_at": "2026-10-15T07:37:30+00:00",
   "source_snapshot_sha256": "212bce2eb8d3ed56c25f348d20ac3f3dc54dab3f42d30f48a6b594d6195a91f5",
   "validators": {
     "etag": null,

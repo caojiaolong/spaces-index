@@ -6,9 +6,19 @@
     "source_url": "https://spaces.ac.cn/archives/138",
     "date": "2009-10-01",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "天文探索",
+    "source_tags": [
+      "中国",
+      "火星",
+      "探测器",
+      "周期",
+      "卫星",
+      "转载"
+    ],
+    "source_summary": null
   },
-  "fetched_at": "2026-09-14T14:51:20+00:00",
+  "fetched_at": "2026-10-15T07:36:04+00:00",
   "source_snapshot_sha256": "44d95cc13f5a6e329ea39b53acf82c7b514cb192a61b7606d94fe423e3bd5a8c",
   "validators": {
     "etag": null,

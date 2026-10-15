@@ -6,9 +6,14 @@
     "source_url": "https://spaces.ac.cn/archives/119",
     "date": "2009-09-12",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "千奇百怪",
+    "source_tags": [
+      "邮箱"
+    ],
+    "source_summary": null
   },
-  "fetched_at": "2026-09-14T14:53:45+00:00",
+  "fetched_at": "2026-10-15T07:37:12+00:00",
   "source_snapshot_sha256": "f2c718eb398910d18934904af96196ef12b0720686440f9b298de26411be1dd4",
   "validators": {
     "etag": null,

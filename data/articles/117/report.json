@@ -6,7 +6,16 @@
     "source_url": "https://spaces.ac.cn/archives/117",
     "date": "2009-09-06",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "图片摄影",
+    "source_tags": [
+      "宇宙",
+      "微波",
+      "辐射",
+      "背景",
+      "大爆炸"
+    ],
+    "source_summary": null
   },
   "validation": {
     "passed": true,
@@ -30,8 +39,8 @@
     "converter_version": 1,
     "markdown_sha256": "f576010856d7f1bc62367001bb3bbaa275f400bf94ebb01d96d929057e42ad04"
   },
-  "fetched_at": "2026-09-14T14:54:01+00:00",
+  "fetched_at": "2026-10-15T07:37:19+00:00",
   "source_snapshot_sha256": "cf6432c9ef5826515085614ca2a05addcc8f3eba99b4b412134c9d15eedeb071",
   "images": {},
-  "local_only": true
+  "publication_policy": "config/mirror.json"
 }

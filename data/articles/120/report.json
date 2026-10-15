@@ -6,7 +6,14 @@
     "source_url": "https://spaces.ac.cn/archives/120",
     "date": "2009-09-12",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "图片摄影",
+    "source_tags": [
+      "天文台",
+      "星空",
+      "夏季"
+    ],
+    "source_summary": null
   },
   "validation": {
     "passed": true,
@@ -30,8 +37,8 @@
     "converter_version": 1,
     "markdown_sha256": "ae28a089dc1f0ee248fd87873b5844210140b0fe5a8c12cb59a2ed543f087c08"
   },
-  "fetched_at": "2026-09-14T14:53:36+00:00",
+  "fetched_at": "2026-10-15T07:37:08+00:00",
   "source_snapshot_sha256": "9f425c23d1104cc3954a5af6fe39f25f08fe8a3896bc54de806cc4ec4cef314b",
   "images": {},
-  "local_only": true
+  "publication_policy": "config/mirror.json"
 }

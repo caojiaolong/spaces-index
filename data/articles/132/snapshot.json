@@ -6,10 +6,18 @@
     "source_url": "https://spaces.ac.cn/archives/132",
     "date": "2009-09-20",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "数学研究",
+    "source_tags": [
+      "证明",
+      "不等式",
+      "指数",
+      "对数"
+    ],
+    "source_summary": null
   },
-  "fetched_at": "2026-09-14T14:52:12+00:00",
-  "source_snapshot_sha256": "9a8472f4c4748e290d2456ca3d86e0067a21b1f201fc2293867c128504b52c76",
+  "fetched_at": "2026-10-15T07:36:25+00:00",
+  "source_snapshot_sha256": "220cd9195ee6c52d33a3179fada66683f749b3fdbd624dd9e2531816cc39d01c",
   "validators": {
     "etag": null,
     "last_modified": null
