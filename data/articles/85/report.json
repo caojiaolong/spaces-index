@@ -6,7 +6,12 @@
     "source_url": "https://spaces.ac.cn/archives/85",
     "date": "2009-08-18",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "图片摄影",
+    "source_tags": [
+      "银河系"
+    ],
+    "source_summary": null
   },
   "validation": {
     "passed": true,
@@ -30,8 +35,8 @@
     "converter_version": 1,
     "markdown_sha256": "84a743f10db8222a447dea4c07711f27a7dc06f1f139541146142cc861345b57"
   },
-  "fetched_at": "2026-09-14T14:58:14+00:00",
+  "fetched_at": "2026-10-16T07:24:03+00:00",
   "source_snapshot_sha256": "ccb86463f263de2609fb97201efc57915e3cb0a7d1e2ed5015c2cd884ed70cea",
   "images": {},
-  "local_only": true
+  "publication_policy": "config/mirror.json"
 }

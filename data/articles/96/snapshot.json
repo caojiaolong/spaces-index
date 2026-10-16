@@ -6,9 +6,15 @@
     "source_url": "https://spaces.ac.cn/archives/96",
     "date": "2009-08-24",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "数学研究",
+    "source_tags": [
+      "证明",
+      "不等式"
+    ],
+    "source_summary": null
   },
-  "fetched_at": "2026-09-14T14:56:37+00:00",
+  "fetched_at": "2026-10-16T07:23:28+00:00",
   "source_snapshot_sha256": "2772bcd3123434e057e531f949c562ceb043f726f0a195005b490c9cab9ccc81",
   "validators": {
     "etag": null,

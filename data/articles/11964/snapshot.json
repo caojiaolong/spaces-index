@@ -1,0 +1,25 @@
+{
+  "metadata": {
+    "id": "11964",
+    "title": "慢即是快：2. Adam的尽头还是Muon？",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/11964",
+    "date": "2026-10-15",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "数学研究",
+    "source_tags": [
+      "不等式",
+      "优化器",
+      "muon",
+      "最慢下降"
+    ],
+    "source_summary": "本文将“正交最慢下降”推广到了对角预条件（RMSProp、Adam家族）。通过提炼出两个目标共同的抽象形式，我们统一得到“不管是Kronecker积还是对角近似，都会被正交最慢下降消去原有基底，至多改变梯度或动量的奇异值谱”的结论。进一步地，我们简单讨论了奇异值是否会趋于均衡。"
+  },
+  "fetched_at": "2026-10-16T07:22:39+00:00",
+  "source_snapshot_sha256": "ffac00952c5a0805362f5854975d565f2a91c8fba4cd6181ee2e0dde0bc17885",
+  "validators": {
+    "etag": null,
+    "last_modified": null
+  }
+}

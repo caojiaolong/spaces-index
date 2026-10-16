@@ -6,9 +6,16 @@
     "source_url": "https://spaces.ac.cn/archives/108",
     "date": "2009-08-30",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "生活/情感",
+    "source_tags": [
+      "在线",
+      "系统",
+      "网站"
+    ],
+    "source_summary": null
   },
-  "fetched_at": "2026-09-14T14:55:30+00:00",
+  "fetched_at": "2026-10-16T07:22:57+00:00",
   "source_snapshot_sha256": "833fa2bcac95e0658509483e70fe1cab7f470047150de2ce0fdf9ec2ef0d690e",
   "validators": {
     "etag": null,

@@ -6,7 +6,14 @@
     "source_url": "https://spaces.ac.cn/archives/89",
     "date": "2009-08-21",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "物理化学",
+    "source_tags": [
+      "金属",
+      "元素",
+      "化合"
+    ],
+    "source_summary": null
   },
   "validation": {
     "passed": true,
@@ -30,8 +37,8 @@
     "converter_version": 1,
     "markdown_sha256": "87c2c3090bd15347d12c78f326969dbc8fa15d380779462c3f398c2e061afe65"
   },
-  "fetched_at": "2026-09-14T14:57:29+00:00",
+  "fetched_at": "2026-10-16T07:23:52+00:00",
   "source_snapshot_sha256": "b660006b1df724324d68f97d4a55869f4afd6a3ff4f478e871871374041b80c4",
   "images": {},
-  "local_only": true
+  "publication_policy": "config/mirror.json"
 }

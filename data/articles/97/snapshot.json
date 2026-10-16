@@ -6,9 +6,16 @@
     "source_url": "https://spaces.ac.cn/archives/97",
     "date": "2009-08-25",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "天文探索",
+    "source_tags": [
+      "天象",
+      "2009",
+      "观测"
+    ],
+    "source_summary": null
   },
-  "fetched_at": "2026-09-14T14:56:30+00:00",
+  "fetched_at": "2026-10-16T07:23:24+00:00",
   "source_snapshot_sha256": "48611bd2d7a7a561f4df6ff98f938bd56e3c3a900de88369d8dfbdcd88c7ce7c",
   "validators": {
     "etag": null,

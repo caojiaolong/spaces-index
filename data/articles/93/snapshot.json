@@ -6,9 +6,15 @@
     "source_url": "https://spaces.ac.cn/archives/93",
     "date": "2009-08-23",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "天文探索",
+    "source_tags": [
+      "节日",
+      "观测"
+    ],
+    "source_summary": null
   },
-  "fetched_at": "2026-09-14T14:57:00+00:00",
+  "fetched_at": "2026-10-16T07:23:38+00:00",
   "source_snapshot_sha256": "59bf28bcce4759560fd4129f1cc07718d05e49937c2316d375ad5fa5a99cc4b5",
   "validators": {
     "etag": null,

@@ -6,7 +6,14 @@
     "source_url": "https://spaces.ac.cn/archives/100",
     "date": "2009-08-25",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "千奇百怪",
+    "source_tags": [
+      "Google",
+      "望远镜",
+      "观测"
+    ],
+    "source_summary": null
   },
   "validation": {
     "passed": true,
@@ -30,8 +37,8 @@
     "converter_version": 1,
     "markdown_sha256": "9015ec668c619ffa221662b74b61e4c66a6f85871b422b9cd556d44610573a3d"
   },
-  "fetched_at": "2026-09-14T14:56:17+00:00",
+  "fetched_at": "2026-10-16T07:23:17+00:00",
   "source_snapshot_sha256": "ed06a19dd20097c2f00c8c43e4a68a391322e447b8b9e67ee4405fbe196efa63",
   "images": {},
-  "local_only": true
+  "publication_policy": "config/mirror.json"
 }

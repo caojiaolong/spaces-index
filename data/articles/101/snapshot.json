@@ -6,9 +6,16 @@
     "source_url": "https://spaces.ac.cn/archives/101",
     "date": "2009-08-26",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "生活/情感",
+    "source_tags": [
+      "节日",
+      "音乐",
+      "旋律"
+    ],
+    "source_summary": null
   },
-  "fetched_at": "2026-09-14T14:56:10+00:00",
+  "fetched_at": "2026-10-16T07:23:14+00:00",
   "source_snapshot_sha256": "acd2874727edbe750ce736d9944dd8f519d8ac89d0447ca6a98bc658bcf084a1",
   "validators": {
     "etag": null,

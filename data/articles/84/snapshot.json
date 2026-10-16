@@ -6,9 +6,15 @@
     "source_url": "https://spaces.ac.cn/archives/84",
     "date": "2009-08-18",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "生物自然",
+    "source_tags": [
+      "气候",
+      "绿色"
+    ],
+    "source_summary": null
   },
-  "fetched_at": "2026-09-14T14:58:20+00:00",
+  "fetched_at": "2026-10-16T07:24:06+00:00",
   "source_snapshot_sha256": "2b5df43c3a510161c13577911536fcedf3c5aea25ae9b135c17d0e87d02752ee",
   "validators": {
     "etag": null,

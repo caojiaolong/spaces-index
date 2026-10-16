@@ -6,9 +6,15 @@
     "source_url": "https://spaces.ac.cn/archives/99",
     "date": "2009-08-25",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "图片摄影",
+    "source_tags": [
+      "节气",
+      "土星"
+    ],
+    "source_summary": null
   },
-  "fetched_at": "2026-09-14T14:56:24+00:00",
+  "fetched_at": "2026-10-16T07:23:21+00:00",
   "source_snapshot_sha256": "27e7b395dbd65f2b7dcb6af5e32722d530b92967ee7a32525155e1637d50fb5a",
   "validators": {
     "etag": null,

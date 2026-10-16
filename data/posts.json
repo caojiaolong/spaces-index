@@ -1,5 +1,20 @@
 [
   {
+    "id": "11964",
+    "title": "慢即是快：2. Adam的尽头还是Muon？",
+    "url": "https://spaces.ac.cn/archives/11964",
+    "date": "2026-10-15",
+    "source_category": "数学研究",
+    "source_tags": [
+      "不等式",
+      "优化器",
+      "muon",
+      "最慢下降"
+    ],
+    "source_summary": "本文将“正交最慢下降”推广到了对角预条件（RMSProp、Adam家族）。通过提炼出两个目标共同的抽象形式，我们统一得到“不管是Kronecker积还是对角近似，都会被正交最慢下降消去原有基底，至多改变梯度或动量的奇异值谱”的结论。进一步地，我们简单讨论了奇异值是否会趋于均衡。",
+    "metadata_checked_at": "2026-10-16T07:22:39+00:00"
+  },
+  {
     "id": "11945",
     "title": "如何让GDN2更稳定一些？",
     "url": "https://spaces.ac.cn/archives/11945",
@@ -16246,7 +16261,8 @@
       "世界",
       "影视"
     ],
-    "source_summary": null
+    "source_summary": null,
+    "metadata_checked_at": "2026-10-16T07:22:43+00:00"
   },
   {
     "id": "110",
@@ -16257,7 +16273,8 @@
     "source_tags": [
       "生活"
     ],
-    "source_summary": null
+    "source_summary": null,
+    "metadata_checked_at": "2026-10-16T07:22:47+00:00"
   },
   {
     "id": "109",
@@ -16268,7 +16285,8 @@
     "source_tags": [
       "土星"
     ],
-    "source_summary": null
+    "source_summary": null,
+    "metadata_checked_at": "2026-10-16T07:22:50+00:00"
   },
   {
     "id": "125",
@@ -16279,7 +16297,8 @@
     "source_tags": [
       "学习"
     ],
-    "source_summary": null
+    "source_summary": null,
+    "metadata_checked_at": "2026-10-16T07:22:54+00:00"
   },
   {
     "id": "108",
@@ -16292,7 +16311,8 @@
       "系统",
       "网站"
     ],
-    "source_summary": null
+    "source_summary": null,
+    "metadata_checked_at": "2026-10-16T07:22:57+00:00"
   },
   {
     "id": "107",
@@ -16306,7 +16326,8 @@
       "温室效应",
       "全球"
     ],
-    "source_summary": null
+    "source_summary": null,
+    "metadata_checked_at": "2026-10-16T07:23:00+00:00"
   },
   {
     "id": "105",
@@ -16320,7 +16341,8 @@
       "NGC",
       "仙王座"
     ],
-    "source_summary": null
+    "source_summary": null,
+    "metadata_checked_at": "2026-10-16T07:23:04+00:00"
   },
   {
     "id": "104",
@@ -16344,7 +16366,8 @@
     "source_tags": [
       "纪念"
     ],
-    "source_summary": null
+    "source_summary": null,
+    "metadata_checked_at": "2026-10-16T07:23:07+00:00"
   },
   {
     "id": "102",
@@ -16356,7 +16379,8 @@
       "猎户座",
       "星云"
     ],
-    "source_summary": null
+    "source_summary": null,
+    "metadata_checked_at": "2026-10-16T07:23:11+00:00"
   },
   {
     "id": "101",
@@ -16369,7 +16393,8 @@
       "音乐",
       "旋律"
     ],
-    "source_summary": null
+    "source_summary": null,
+    "metadata_checked_at": "2026-10-16T07:23:14+00:00"
   },
   {
     "id": "100",
@@ -16382,7 +16407,8 @@
       "望远镜",
       "观测"
     ],
-    "source_summary": null
+    "source_summary": null,
+    "metadata_checked_at": "2026-10-16T07:23:17+00:00"
   },
   {
     "id": "99",
@@ -16394,7 +16420,8 @@
       "节气",
       "土星"
     ],
-    "source_summary": null
+    "source_summary": null,
+    "metadata_checked_at": "2026-10-16T07:23:21+00:00"
   },
   {
     "id": "97",
@@ -16407,7 +16434,8 @@
       "2009",
       "观测"
     ],
-    "source_summary": null
+    "source_summary": null,
+    "metadata_checked_at": "2026-10-16T07:23:24+00:00"
   },
   {
     "id": "96",
@@ -16419,7 +16447,8 @@
       "证明",
       "不等式"
     ],
-    "source_summary": null
+    "source_summary": null,
+    "metadata_checked_at": "2026-10-16T07:23:28+00:00"
   },
   {
     "id": "95",
@@ -16431,7 +16460,8 @@
       "证明",
       "极限"
     ],
-    "source_summary": null
+    "source_summary": null,
+    "metadata_checked_at": "2026-10-16T07:23:31+00:00"
   },
   {
     "id": "94",
@@ -16443,7 +16473,8 @@
       "星系",
       "扭曲"
     ],
-    "source_summary": null
+    "source_summary": null,
+    "metadata_checked_at": "2026-10-16T07:23:34+00:00"
   },
   {
     "id": "93",
@@ -16455,7 +16486,8 @@
       "节日",
       "观测"
     ],
-    "source_summary": null
+    "source_summary": null,
+    "metadata_checked_at": "2026-10-16T07:23:38+00:00"
   },
   {
     "id": "92",
@@ -16466,7 +16498,8 @@
     "source_tags": [
       "星云"
     ],
-    "source_summary": null
+    "source_summary": null,
+    "metadata_checked_at": "2026-10-16T07:23:42+00:00"
   },
   {
     "id": "91",
@@ -16479,7 +16512,8 @@
       "信息",
       "网站"
     ],
-    "source_summary": null
+    "source_summary": null,
+    "metadata_checked_at": "2026-10-16T07:23:45+00:00"
   },
   {
     "id": "90",
@@ -16492,7 +16526,8 @@
       "NGC",
       "宇宙"
     ],
-    "source_summary": null
+    "source_summary": null,
+    "metadata_checked_at": "2026-10-16T07:23:48+00:00"
   },
   {
     "id": "89",
@@ -16505,7 +16540,8 @@
       "元素",
       "化合"
     ],
-    "source_summary": null
+    "source_summary": null,
+    "metadata_checked_at": "2026-10-16T07:23:52+00:00"
   },
   {
     "id": "88",
@@ -16516,7 +16552,8 @@
     "source_tags": [
       "日食"
     ],
-    "source_summary": null
+    "source_summary": null,
+    "metadata_checked_at": "2026-10-16T07:23:55+00:00"
   },
   {
     "id": "87",
@@ -16530,7 +16567,8 @@
       "目视",
       "星表"
     ],
-    "source_summary": null
+    "source_summary": null,
+    "metadata_checked_at": "2026-10-16T07:23:59+00:00"
   },
   {
     "id": "86",
@@ -16553,7 +16591,8 @@
     "source_tags": [
       "银河系"
     ],
-    "source_summary": null
+    "source_summary": null,
+    "metadata_checked_at": "2026-10-16T07:24:03+00:00"
   },
   {
     "id": "84",
@@ -16565,7 +16604,8 @@
       "气候",
       "绿色"
     ],
-    "source_summary": null
+    "source_summary": null,
+    "metadata_checked_at": "2026-10-16T07:24:06+00:00"
   },
   {
     "id": "83",

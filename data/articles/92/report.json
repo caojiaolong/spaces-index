@@ -6,7 +6,12 @@
     "source_url": "https://spaces.ac.cn/archives/92",
     "date": "2009-08-22",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "图片摄影",
+    "source_tags": [
+      "星云"
+    ],
+    "source_summary": null
   },
   "validation": {
     "passed": true,
@@ -30,8 +35,8 @@
     "converter_version": 1,
     "markdown_sha256": "925080c2e561bf5e47e32a1ec02660308e5063cd81bd8ab4062af48787095a0c"
   },
-  "fetched_at": "2026-09-14T14:57:07+00:00",
+  "fetched_at": "2026-10-16T07:23:42+00:00",
   "source_snapshot_sha256": "a91b54ef0e4a534958619055189b930cda956cf04699d1b18fe580eff7fc6812",
   "images": {},
-  "local_only": true
+  "publication_policy": "config/mirror.json"
 }

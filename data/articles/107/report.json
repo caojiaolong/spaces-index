@@ -6,7 +6,15 @@
     "source_url": "https://spaces.ac.cn/archives/107",
     "date": "2009-08-29",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "生物自然",
+    "source_tags": [
+      "行动",
+      "气候",
+      "温室效应",
+      "全球"
+    ],
+    "source_summary": null
   },
   "validation": {
     "passed": true,
@@ -30,8 +38,8 @@
     "converter_version": 1,
     "markdown_sha256": "43193d2f535646d79c4e68b12bf8b504168a429a654c23be0a0fcfbb25fe45a7"
   },
-  "fetched_at": "2026-09-14T14:55:37+00:00",
+  "fetched_at": "2026-10-16T07:23:00+00:00",
   "source_snapshot_sha256": "14d62bc9aed4e67fe0fec6fe81a417acbf6cd344c5714bfb0dd9bed10cf6bc61",
   "images": {},
-  "local_only": true
+  "publication_policy": "config/mirror.json"
 }

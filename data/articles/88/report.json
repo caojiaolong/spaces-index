@@ -6,7 +6,12 @@
     "source_url": "https://spaces.ac.cn/archives/88",
     "date": "2009-08-20",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "图片摄影",
+    "source_tags": [
+      "日食"
+    ],
+    "source_summary": null
   },
   "validation": {
     "passed": true,
@@ -30,8 +35,8 @@
     "converter_version": 1,
     "markdown_sha256": "6d3463f0648e1bc45bfd5f4debbb9add9b427da93f6d4583d6425848343606c7"
   },
-  "fetched_at": "2026-09-14T14:57:35+00:00",
+  "fetched_at": "2026-10-16T07:23:55+00:00",
   "source_snapshot_sha256": "80cf1b25110ce78bdef9bca465c4a4a7c88e25f1189c456108586e53ffc4bfc3",
   "images": {},
-  "local_only": true
+  "publication_policy": "config/mirror.json"
 }

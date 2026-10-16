@@ -6,7 +6,15 @@
     "source_url": "https://spaces.ac.cn/archives/87",
     "date": "2009-08-20",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "天文探索",
+    "source_tags": [
+      "2009",
+      "流星",
+      "目视",
+      "星表"
+    ],
+    "source_summary": null
   },
   "validation": {
     "passed": true,
@@ -30,8 +38,8 @@
     "converter_version": 1,
     "markdown_sha256": "f6ea26dd68fecabe988fdf07acf18887123391dd78b560efe9b309a8ebbf5668"
   },
-  "fetched_at": "2026-09-14T14:57:42+00:00",
+  "fetched_at": "2026-10-16T07:23:59+00:00",
   "source_snapshot_sha256": "a24f89bb0e4695e46728169446fc16d7f3599991bd709ebef37fcb8391fa208d",
   "images": {},
-  "local_only": true
+  "publication_policy": "config/mirror.json"
 }

@@ -1,0 +1,84 @@
+# 慢即是快：2\. Adam的尽头还是Muon？
+
+> 作者：苏剑林 · 科学空间 · 2026-10-15
+>
+> 原文：<https://spaces.ac.cn/archives/11964>
+>
+> 原文许可：[CC BY-NC-ND 2.5 CN（署名-非商业性使用-禁止演绎）](https://creativecommons.org/licenses/by-nc-nd/2.5/cn/)。
+>
+> 本文件由 spaces-index 非官方、非商业项目进行必要的 HTML → Markdown 格式转换；正文未做摘要、润色、翻译或重组。项目不代表作者，也不表示作者为项目背书。
+>
+> 署名及附加许可说明不代表已获得作者额外授权。第三方素材权利依其原有声明。
+>
+> 原站转载与引用说明：[科学空间 FAQ](https://spaces.ac.cn/archives/6508#%E6%96%87%E7%AB%A0%E5%A6%82%E4%BD%95%E8%BD%AC%E8%BD%BD/%E5%BC%95%E7%94%A8)
+
+---
+
+在上一篇文章[《慢即是快：1\. Shampoo的尽头是Muon？》](<https://spaces.ac.cn/archives/11917>)中，我们从凸优化的平均收敛结论出发，建立了“正交最慢下降”框架，并用于改进任意Kronecker积形式的预条件优化器。结果发现，在此框架的优化之下，这些优化器都有趋于Muon的迹象，于是笔者发出了“Shampoo的尽头是Muon”的悲观感慨。
+
+除了Kronecker积外，预条件矩阵的另一种更简单的结构化近似是对角近似，常见例子是RMSProp、Adam等。注意对角近似虽然计算上比Kronecker积简单，但它俩并没有包含关系，所以一个新的问题是：对这类优化器施加正交最慢下降，会得到新的结果吗？
+
+## 目标分析
+
+沿用上一篇记号，梯度$\boldsymbol{G}\in\mathbb{R}^{n\times m},\boldsymbol{g}=\mathop{\text{vec}}(\boldsymbol{G})\in\mathbb{R}^{nm}$，引入矩阵$\boldsymbol{N}\in\mathbb{R}_+^{n\times m}$，所谓对角近似，是指向量化表述下的预条件矩阵是一个对角阵，即$\newcommand{diag}{\mathop{\text{diag}}}\boldsymbol{H}^{-1}=\diag(\mathop{\text{vec}}(\boldsymbol{N}))$，那么
+\begin{equation}\boldsymbol{H}^{-1} \boldsymbol{g} = \mathop{\text{vec}}(\boldsymbol{N}\odot\boldsymbol{G})\end{equation}
+或者说更新规则为$\boldsymbol{W} - \eta \boldsymbol{N}\odot\boldsymbol{G}$，这里的$\odot$是Hadamard积。我们要做的是给$\boldsymbol{N}$引入Kronecker积形式的正交变换，使它在正交最慢下降原理之下，变成一个更好的优化器。
+
+具体来说，我们引入正交矩阵$\boldsymbol{X}\in\mathbb{R}^{n\times n},\boldsymbol{Y}\in\mathbb{R}^{m\times m}$，设$\boldsymbol{O} = \boldsymbol{Y}\otimes\boldsymbol{X}$，将对角的预条件矩阵换成$\boldsymbol{O}^{\top}\diag(\mathop{\text{vec}}(\boldsymbol{N}))\boldsymbol{O}$，即更新量从$\boldsymbol{N}\odot\boldsymbol{G}$变成了$\boldsymbol{X}^{\top}(\boldsymbol{N}\odot\boldsymbol{X}\boldsymbol{G}\boldsymbol{Y}^{\top})\boldsymbol{Y}$，这个变换需要一点Kronecker积基础，但这里就不展开了。
+
+直观来看，就是给$\boldsymbol{G}$找一组新的正交基，然后在上面做对角预条件，再变换回来。根据正交最慢下降原理，我们要最小化它与$\boldsymbol{G}$的内积，即
+\begin{equation}\newcommand{tr}{\mathop{\text{tr}}}\min_{\boldsymbol{X},\boldsymbol{Y}} \tr(\boldsymbol{G}^{\top}\boldsymbol{X}^{\top}(\boldsymbol{N}\odot\boldsymbol{X}\boldsymbol{G}\boldsymbol{Y}^{\top})\boldsymbol{Y})\qquad\text{s.t.}\qquad \boldsymbol{X}^{\top}\boldsymbol{X} = \boldsymbol{I}_n,\quad \boldsymbol{Y}^{\top}\boldsymbol{Y} = \boldsymbol{I}_m\end{equation}
+
+## 统一形式
+
+注意到
+\begin{equation}\tr(\boldsymbol{G}^{\top}\boldsymbol{X}^{\top}(\boldsymbol{N}\odot\boldsymbol{X}\boldsymbol{G}\boldsymbol{Y}^{\top})\boldsymbol{Y}) = \tr(\boldsymbol{Y}\boldsymbol{G}^{\top}\boldsymbol{X}^{\top}(\boldsymbol{N}\odot\boldsymbol{X}\boldsymbol{G}\boldsymbol{Y}^{\top})) = \Vert\boldsymbol{N}^{\odot/2}\odot\boldsymbol{X}\boldsymbol{G}\boldsymbol{Y}^{\top}\Vert_F^2\end{equation}
+这里的$\boldsymbol{N}^{\odot/2}$是指在Hadamard积的意义下求平方根，即逐元素开平方。此外，上篇我们求解了
+\begin{equation}\min_{\boldsymbol{X},\boldsymbol{Y}} \tr(\boldsymbol{G}^{\top}\boldsymbol{X}^{\top}\boldsymbol{P}\boldsymbol{X}\boldsymbol{G}\boldsymbol{Y}^{\top}\boldsymbol{Q}\boldsymbol{Y})\qquad\text{s.t.}\qquad \boldsymbol{X}^{\top}\boldsymbol{X} = \boldsymbol{I}_n,\quad \boldsymbol{Y}^{\top}\boldsymbol{Y} = \boldsymbol{I}_m\end{equation}
+目标函数可以改写成
+\begin{equation}\tr(\boldsymbol{G}^{\top}\boldsymbol{X}^{\top}\boldsymbol{P}\boldsymbol{X}\boldsymbol{G}\boldsymbol{Y}^{\top}\boldsymbol{Q}\boldsymbol{Y}) = \tr(\boldsymbol{Y}\boldsymbol{G}^{\top}\boldsymbol{X}^{\top}\boldsymbol{P}\boldsymbol{X}\boldsymbol{G}\boldsymbol{Y}^{\top}\boldsymbol{Q}) = \Vert\boldsymbol{P}^{1/2}\boldsymbol{X}\boldsymbol{G}\boldsymbol{Y}^{\top}\boldsymbol{Q}^{1/2}\Vert_F^2\end{equation}
+可以发现两个问题的目标函数都具有$f(\boldsymbol{X} \boldsymbol{G} \boldsymbol{Y}^{\top})$的形式，所以接下来我们一般地考虑
+\begin{equation}\min_{\boldsymbol{X}, \boldsymbol{Y}} f(\boldsymbol{X} \boldsymbol{G} \boldsymbol{Y}^{\top}) \qquad\text{s.t.}\qquad \boldsymbol{X}^{\top}\boldsymbol{X} = \boldsymbol{I}_n,\quad \boldsymbol{Y}^{\top}\boldsymbol{Y} = \boldsymbol{I}_m\end{equation}
+
+## 驻点条件
+
+先求上述问题的驻点条件。为此，我们引入拉格朗日乘子$\boldsymbol{A}\in\mathbb{R}^{n\times n},\boldsymbol{B}\in\mathbb{R}^{m\times m}$，定义辅助函数
+\begin{equation}F = f(\boldsymbol{X} \boldsymbol{G} \boldsymbol{Y}^{\top})  - \tr(\boldsymbol{A}^{\top}(\boldsymbol{X}^{\top}\boldsymbol{X} - \boldsymbol{I}_n)) - \tr(\boldsymbol{B}^{\top}(\boldsymbol{Y}^{\top}\boldsymbol{Y} - \boldsymbol{I}_m))\end{equation}
+记$\boldsymbol{Z} = \boldsymbol{X} \boldsymbol{G} \boldsymbol{Y}^{\top}, \boldsymbol{K} = \nabla_{\boldsymbol{Z}} f(\boldsymbol{Z})$，分别求$F$对$\boldsymbol{X},\boldsymbol{Y}$的梯度并让它们等于零得
+\begin{gather}\nabla_{\boldsymbol{X}} F = \boldsymbol{K} \boldsymbol{Y} \boldsymbol{G}^{\top} - \boldsymbol{X}(\boldsymbol{A} + \boldsymbol{A}^{\top}) = \boldsymbol{0} \\
+\nabla_{\boldsymbol{Y}} F = \boldsymbol{K}^{\top} \boldsymbol{X} \boldsymbol{G} - \boldsymbol{Y}(\boldsymbol{B} + \boldsymbol{B}^{\top}) = \boldsymbol{0}\end{gather}
+第一式两端乘$\boldsymbol{X}^{\top}$，第二式两端乘$\boldsymbol{Y}^{\top}$，结合$\boldsymbol{X},\boldsymbol{Y}$的正交性，可以得到驻点条件
+\begin{equation}\boldsymbol{X}^{\top}\boldsymbol{K}\boldsymbol{Y}\boldsymbol{G}^{\top}\,\,\text{对称},\qquad\boldsymbol{G}^{\top}\boldsymbol{X}^{\top}\boldsymbol{K}\boldsymbol{Y}\,\,\text{对称}\end{equation}
+在上一篇文章我们已经证明过，这意味着$\boldsymbol{X}^{\top}\boldsymbol{K}\boldsymbol{Y}$具有$\boldsymbol{U}\boldsymbol{D}\boldsymbol{V}^{\top}$的形式，其中$\boldsymbol{U}\boldsymbol{\Sigma}\boldsymbol{V}^{\top}$是$\boldsymbol{G}$的SVD，$\boldsymbol{D}$是一个对角阵。这是上述优化问题最优解的共同特征，与$f$的具体选择无关，算得上一个极强的结论了。
+
+## 洗去基底
+
+先来用这里的结论，过一下上篇文章的目标$\Vert\boldsymbol{P}^{1/2}\boldsymbol{X}\boldsymbol{G}\boldsymbol{Y}^{\top}\boldsymbol{Q}^{1/2}\Vert_F^2$，此时$\boldsymbol{K} = 2\boldsymbol{P}\boldsymbol{X}\boldsymbol{G}\boldsymbol{Y}^{\top}\boldsymbol{Q}$，我们关心的更新量是$\boldsymbol{\Phi} = \boldsymbol{X}^{\top}\boldsymbol{P}\boldsymbol{X}\boldsymbol{G}\boldsymbol{Y}^{\top}\boldsymbol{Q}\boldsymbol{Y} = \boldsymbol{X}^{\top}\boldsymbol{K}\boldsymbol{Y}/2$，根据上一节的结果，$\boldsymbol{\Phi}$具有$\boldsymbol{U}\boldsymbol{D}\boldsymbol{V}^{\top}$的形式，即$\boldsymbol{P},\boldsymbol{Q}$的特征矩阵完全被消去。
+
+让笔者非常意外的是，同样的结论也能推广到本文的主角——也就是目标$\Vert\boldsymbol{N}^{\odot/2}\odot\boldsymbol{X}\boldsymbol{G}\boldsymbol{Y}^{\top}\Vert_F^2$——此时$\boldsymbol{K} = 2\boldsymbol{N}\odot\boldsymbol{X}\boldsymbol{G}\boldsymbol{Y}^{\top}$，我们关心的更新量是$\boldsymbol{\Phi} = \boldsymbol{X}^{\top}(\boldsymbol{N}\odot\boldsymbol{X}\boldsymbol{G}\boldsymbol{Y}^{\top})\boldsymbol{Y} = \boldsymbol{X}^{\top}\boldsymbol{K}\boldsymbol{Y}/2$，那么依然根据驻点条件的结果，$\boldsymbol{\Phi}$具有$\boldsymbol{U}\boldsymbol{D}\boldsymbol{V}^{\top}$的形式。
+
+换句话说，不管是Kronecker积还是对角近似，预条件矩阵的“基”都会被正交最慢下降洗掉：更新量的左、右奇异矩阵一律退化为梯度（或动量）的左、右奇异矩阵，预条件所能改变的至多只有奇异值——这与Muon的构造如出一辙。这就是标题“尽头是Muon”的第一重含义。
+
+## 可否均匀
+
+如果能证明$\boldsymbol{D}$的对角元趋于均衡，那么就更加跟Muon趋同了，这是“尽头是Muon”的第二重含义。
+
+上一篇文章，我们已经对Kronecker积情形做了详细论证，但那个过程不好推广，因此这里改用一种启发式方法来感知$\boldsymbol{D}$的特性。不失一般性设$n\geq m$，我们有
+\begin{equation}\tr(\boldsymbol{G}^{\top}\boldsymbol{\Phi}) = \tr(\boldsymbol{V}\boldsymbol{\Sigma}^{\top} \boldsymbol{D} \boldsymbol{V}^{\top}) = \tr(\boldsymbol{\Sigma}^{\top} \boldsymbol{D}) = \sum_{i=1}^m \sigma_i d_i \geq m\left(\prod_{i=1}^m \sigma_i d_i\right)^{1/m} = m\left(\prod_{i=1}^m \sigma_i \prod_{i=1}^m d_i\right)^{1/m}\end{equation}
+其中$\boldsymbol{\Sigma}=\diag(\sigma_1,\sigma_2,\cdots),\boldsymbol{D}=\diag(d_1,d_2,\cdots)$，等号成立的条件是$d_i\propto \sigma_i^{-1}$。这个结果表明，只要$\boldsymbol{\Phi}$的奇异值之积为常数，那么$\tr(\boldsymbol{G}^{\top}\boldsymbol{\Phi})$的理想最小值在$\boldsymbol{D}\propto \boldsymbol{\Sigma}^{-1}$（对角元取逆，形状不变）取到。
+
+当然，由于我们只能改动$\boldsymbol{\Phi}$中的正交矩阵，所以这个理想的最小值很难实现，只能猜测它是最理想（$\boldsymbol{D}\propto \boldsymbol{\Sigma}^{-1}$）和最糟糕（$\boldsymbol{D}\propto \boldsymbol{\Sigma}$）之间的一个中间结果，而它俩的几何平均正是$\boldsymbol{D}\propto \boldsymbol{I}$，即奇异值均匀化。
+
+## 谱之乘积
+
+那$\boldsymbol{\Phi}$的奇异值之积是否为常数呢？我们还是按照先Kronecker积后对角近似的顺序分别讨论。首先对于“Kronecker积\+方阵”情形，确实是常数：
+\begin{equation}\prod_{i=1}^m d_i = |\det(\boldsymbol{\Phi})| = |\det(\boldsymbol{X}^{\top}\boldsymbol{P}\boldsymbol{X}\boldsymbol{G}\boldsymbol{Y}^{\top}\boldsymbol{Q}\boldsymbol{Y})| = |\det(\boldsymbol{P})\det(\boldsymbol{G})\det(\boldsymbol{Q})|\end{equation}
+即$\boldsymbol{\Phi}$在正交矩阵$\boldsymbol{X},\boldsymbol{Y}$的变换下，行列式绝对值保持不变，从而奇异值之积不变，上一节的结论可用。不过，对于非方阵，上述恒等式不再成立，对此，我们有两种方案：一是按照上一篇文章的方法仔细讨论，二是不加证明地认为上式对非方阵也<strong>近似</strong>成立。
+
+更棘手的是对角近似情形：Hadamard积虽然简单，但它并不是本质的矩阵运算，它的引入会导致矩阵的各种分析都变得异常困难，所以不管是否方阵，我们无法对$\boldsymbol{\Phi} = \boldsymbol{X}^{\top}(\boldsymbol{N}\odot\boldsymbol{X}\boldsymbol{G}\boldsymbol{Y}^{\top})\boldsymbol{Y}$的奇异值/行列式做出有效的估计。
+
+不过，由于$\boldsymbol{\Phi}$可变的只有正交矩阵，很多时候正交变换不改变行列式，所以我们猜测“$\boldsymbol{\Phi}$的行列式也不会有明显变化”，从而得到$\boldsymbol{D}$也有均匀趋势。注意，这个猜测很“无力”：它肯定不是恒等成立，至于近似程度如何，也无法判断，它更多是我们关于行列式与正交矩阵的“信仰”。
+
+## 文章小结
+
+本文将“正交最慢下降”推广到了对角预条件（RMSProp、Adam家族）。通过提炼出两个目标共同的抽象形式，我们统一得到“不管是Kronecker积还是对角近似，都会被正交最慢下降消去原有基底，至多改变梯度或动量的奇异值谱”的结论。进一步地，我们简单讨论了奇异值是否会趋于均衡。

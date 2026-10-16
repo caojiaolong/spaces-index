@@ -1,0 +1,45 @@
+{
+  "metadata": {
+    "id": "11964",
+    "title": "慢即是快：2. Adam的尽头还是Muon？",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/11964",
+    "date": "2026-10-15",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "数学研究",
+    "source_tags": [
+      "不等式",
+      "优化器",
+      "muon",
+      "最慢下降"
+    ],
+    "source_summary": "本文将“正交最慢下降”推广到了对角预条件（RMSProp、Adam家族）。通过提炼出两个目标共同的抽象形式，我们统一得到“不管是Kronecker积还是对角近似，都会被正交最慢下降消去原有基底，至多改变梯度或动量的奇异值谱”的结论。进一步地，我们简单讨论了奇异值是否会趋于均衡。"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 69,
+    "display_formula_count": 11,
+    "image_count": 0,
+    "heading_count": 7,
+    "code_block_count": 0,
+    "source_text_sha256": "3cb0410f7333edd20879fd675f1bda96edd87d9f26a2e3040c2b178df419d665",
+    "output_text_sha256": "3cb0410f7333edd20879fd675f1bda96edd87d9f26a2e3040c2b178df419d665",
+    "latex_sha256": "1f151b267b6e92309b78c9d6fd3b6bbf01e3f3de824472139ac36f5c43c943d0",
+    "body_sha256": "2f02f5db02c998fa710eee79dad6f85c120c580dc8ef81398861043d0546a531",
+    "converter_version": 1,
+    "markdown_sha256": "7acf3d9f48d721e7c8f5f30974b4d1dbd5183307a4cfc9fb072cb2c8f08e4639"
+  },
+  "fetched_at": "2026-10-16T07:22:39+00:00",
+  "source_snapshot_sha256": "ffac00952c5a0805362f5854975d565f2a91c8fba4cd6181ee2e0dde0bc17885",
+  "images": {},
+  "publication_policy": "config/mirror.json"
+}

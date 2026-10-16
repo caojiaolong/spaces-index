@@ -1,5 +1,27 @@
 [
   {
+    "id": "11964",
+    "title": "慢即是快：2. Adam的尽头还是Muon？",
+    "url": "https://spaces.ac.cn/archives/11964",
+    "date": "2026-10-15",
+    "source_category": "数学研究",
+    "source_tags": [
+      "不等式",
+      "优化器",
+      "muon",
+      "最慢下降"
+    ],
+    "source_summary": "本文将“正交最慢下降”推广到了对角预条件（RMSProp、Adam家族）。通过提炼出两个目标共同的抽象形式，我们统一得到“不管是Kronecker积还是对角近似，都会被正交最慢下降消去原有基底，至多改变梯度或动量的奇异值谱”的结论。进一步地，我们简单讨论了奇异值是否会趋于均衡。",
+    "metadata_checked_at": "2026-10-16T07:22:39+00:00",
+    "topics": [
+      "优化与训练"
+    ],
+    "series": "慢即是快",
+    "series_index": 2,
+    "level": "advanced",
+    "series_topic": "优化与训练"
+  },
+  {
     "id": "11945",
     "title": "如何让GDN2更稳定一些？",
     "url": "https://spaces.ac.cn/archives/11945",
@@ -61,7 +83,8 @@
     ],
     "series": "慢即是快",
     "series_index": 1,
-    "level": "advanced"
+    "level": "advanced",
+    "series_topic": "优化与训练"
   },
   {
     "id": "11910",
@@ -24664,6 +24687,7 @@
       "影视"
     ],
     "source_summary": null,
+    "metadata_checked_at": "2026-10-16T07:22:43+00:00",
     "topics": [
       "阅读写作与随笔"
     ],
@@ -24681,6 +24705,7 @@
       "生活"
     ],
     "source_summary": null,
+    "metadata_checked_at": "2026-10-16T07:22:47+00:00",
     "topics": [
       "阅读写作与随笔"
     ],
@@ -24698,6 +24723,7 @@
       "土星"
     ],
     "source_summary": null,
+    "metadata_checked_at": "2026-10-16T07:22:50+00:00",
     "topics": [
       "天文科普",
       "图片摄影"
@@ -24716,6 +24742,7 @@
       "学习"
     ],
     "source_summary": null,
+    "metadata_checked_at": "2026-10-16T07:22:54+00:00",
     "topics": [
       "阅读写作与随笔"
     ],
@@ -24735,6 +24762,7 @@
       "网站"
     ],
     "source_summary": null,
+    "metadata_checked_at": "2026-10-16T07:22:57+00:00",
     "topics": [
       "工程工具",
       "阅读写作与随笔"
@@ -24756,6 +24784,7 @@
       "全球"
     ],
     "source_summary": null,
+    "metadata_checked_at": "2026-10-16T07:23:00+00:00",
     "topics": [
       "生物自然"
     ],
@@ -24776,6 +24805,7 @@
       "仙王座"
     ],
     "source_summary": null,
+    "metadata_checked_at": "2026-10-16T07:23:04+00:00",
     "topics": [
       "天文科普",
       "图片摄影"
@@ -24813,6 +24843,7 @@
       "纪念"
     ],
     "source_summary": null,
+    "metadata_checked_at": "2026-10-16T07:23:07+00:00",
     "topics": [
       "阅读写作与随笔"
     ],
@@ -24831,6 +24862,7 @@
       "星云"
     ],
     "source_summary": null,
+    "metadata_checked_at": "2026-10-16T07:23:11+00:00",
     "topics": [
       "天文科普",
       "图片摄影"
@@ -24851,6 +24883,7 @@
       "旋律"
     ],
     "source_summary": null,
+    "metadata_checked_at": "2026-10-16T07:23:14+00:00",
     "topics": [
       "阅读写作与随笔"
     ],
@@ -24870,6 +24903,7 @@
       "观测"
     ],
     "source_summary": null,
+    "metadata_checked_at": "2026-10-16T07:23:17+00:00",
     "topics": [
       "天文科普",
       "科普问答与百科"
@@ -24889,6 +24923,7 @@
       "土星"
     ],
     "source_summary": null,
+    "metadata_checked_at": "2026-10-16T07:23:21+00:00",
     "topics": [
       "天文科普",
       "图片摄影"
@@ -24909,6 +24944,7 @@
       "观测"
     ],
     "source_summary": null,
+    "metadata_checked_at": "2026-10-16T07:23:24+00:00",
     "topics": [
       "天文科普",
       "资源与站务"
@@ -24928,6 +24964,7 @@
       "不等式"
     ],
     "source_summary": null,
+    "metadata_checked_at": "2026-10-16T07:23:28+00:00",
     "topics": [
       "数学工具",
       "几何与方程"
@@ -24947,6 +24984,7 @@
       "极限"
     ],
     "source_summary": null,
+    "metadata_checked_at": "2026-10-16T07:23:31+00:00",
     "topics": [
       "数学工具"
     ],
@@ -24965,6 +25003,7 @@
       "扭曲"
     ],
     "source_summary": null,
+    "metadata_checked_at": "2026-10-16T07:23:34+00:00",
     "topics": [
       "天文科普",
       "图片摄影"
@@ -24984,6 +25023,7 @@
       "观测"
     ],
     "source_summary": null,
+    "metadata_checked_at": "2026-10-16T07:23:38+00:00",
     "topics": [
       "阅读写作与随笔",
       "天文科普"
@@ -25002,6 +25042,7 @@
       "星云"
     ],
     "source_summary": null,
+    "metadata_checked_at": "2026-10-16T07:23:42+00:00",
     "topics": [
       "天文科普",
       "图片摄影"
@@ -25022,6 +25063,7 @@
       "网站"
     ],
     "source_summary": null,
+    "metadata_checked_at": "2026-10-16T07:23:45+00:00",
     "topics": [
       "概率统计与信息论",
       "工程工具",
@@ -25043,6 +25085,7 @@
       "宇宙"
     ],
     "source_summary": null,
+    "metadata_checked_at": "2026-10-16T07:23:48+00:00",
     "topics": [
       "天文科普",
       "生物自然",
@@ -25064,6 +25107,7 @@
       "化合"
     ],
     "source_summary": null,
+    "metadata_checked_at": "2026-10-16T07:23:52+00:00",
     "topics": [
       "物理化学"
     ],
@@ -25081,6 +25125,7 @@
       "日食"
     ],
     "source_summary": null,
+    "metadata_checked_at": "2026-10-16T07:23:55+00:00",
     "topics": [
       "天文科普",
       "图片摄影"
@@ -25102,6 +25147,7 @@
       "星表"
     ],
     "source_summary": null,
+    "metadata_checked_at": "2026-10-16T07:23:59+00:00",
     "topics": [
       "天文科普"
     ],
@@ -25138,6 +25184,7 @@
       "银河系"
     ],
     "source_summary": null,
+    "metadata_checked_at": "2026-10-16T07:24:03+00:00",
     "topics": [
       "天文科普",
       "图片摄影"
@@ -25157,6 +25204,7 @@
       "绿色"
     ],
     "source_summary": null,
+    "metadata_checked_at": "2026-10-16T07:24:06+00:00",
     "topics": [
       "生物自然"
     ],

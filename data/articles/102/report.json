@@ -6,7 +6,13 @@
     "source_url": "https://spaces.ac.cn/archives/102",
     "date": "2009-08-26",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "图片摄影",
+    "source_tags": [
+      "猎户座",
+      "星云"
+    ],
+    "source_summary": null
   },
   "validation": {
     "passed": true,
@@ -30,8 +36,8 @@
     "converter_version": 1,
     "markdown_sha256": "1cb06391f389df3ee88ff36ed59c47a0b19311ac52a4befa15590a63f15638d3"
   },
-  "fetched_at": "2026-09-14T14:56:04+00:00",
+  "fetched_at": "2026-10-16T07:23:11+00:00",
   "source_snapshot_sha256": "9019aac56d499e61867007dea15a906cbcc6ff1c7cc055310e774a9069242942",
   "images": {},
-  "local_only": true
+  "publication_policy": "config/mirror.json"
 }

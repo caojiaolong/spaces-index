@@ -8464,7 +8464,7 @@
   },
   "132": {
     "status": "conversion_failed",
-    "checked_at": "2026-10-15T07:36:25+00:00",
+    "checked_at": "2026-10-16T07:22:39+00:00",
     "title": "一道从小学到高中都可能考到的题目",
     "error": "Unreviewed legacy element: a<b，则有<br",
     "converter_version": 1,
@@ -8605,49 +8605,49 @@
   },
   "111": {
     "status": "verified",
-    "checked_at": "2026-09-14T14:55:03+00:00",
+    "checked_at": "2026-10-16T07:22:43+00:00",
     "title": "《冲出亚马逊》—在世界立起五星红旗！",
     "markdown_sha256": "3e0b577d0c9ba059e1145e65180a5cc172bfb48a783fda726e0b10cfa17b59d5",
     "converter_version": 1
   },
   "110": {
     "status": "verified",
-    "checked_at": "2026-09-14T14:55:10+00:00",
+    "checked_at": "2026-10-16T07:22:47+00:00",
     "title": "高一新生活",
     "markdown_sha256": "c2d8cbca5724b91680025a14fb4911b9ea667d851382d6202abeb8560a65a1c4",
     "converter_version": 1
   },
   "109": {
     "status": "verified",
-    "checked_at": "2026-09-14T14:55:16+00:00",
+    "checked_at": "2026-10-16T07:22:50+00:00",
     "title": "【NASA每日一图】土星的六年",
     "markdown_sha256": "bdd71e74eca47dff7fdd999a2541585129e0d3fd5d95d90f1a9871da9bb8f598",
     "converter_version": 1
   },
   "125": {
     "status": "verified",
-    "checked_at": "2026-09-14T14:55:23+00:00",
+    "checked_at": "2026-10-16T07:22:54+00:00",
     "title": "上学了，更新放缓......",
     "markdown_sha256": "7e4e00fcfe10ac177a7ad712f61c59b6b7a502a5f298acf93afa93d5d76b8344",
     "converter_version": 1
   },
   "108": {
     "status": "verified",
-    "checked_at": "2026-09-14T14:55:31+00:00",
+    "checked_at": "2026-10-16T07:22:57+00:00",
     "title": "在线投稿系统上线！欢迎大家来投稿",
     "markdown_sha256": "3041e62664c2f9faef44654c3a3d93ada2eb978f0b844cbd4cc874a542e185ca",
     "converter_version": 1
   },
   "107": {
     "status": "verified",
-    "checked_at": "2026-09-14T14:55:37+00:00",
+    "checked_at": "2026-10-16T07:23:00+00:00",
     "title": "行动起来！共同应对全球气候变暖",
     "markdown_sha256": "43193d2f535646d79c4e68b12bf8b504168a429a654c23be0a0fcfbb25fe45a7",
     "converter_version": 1
   },
   "105": {
     "status": "verified",
-    "checked_at": "2026-09-14T14:55:45+00:00",
+    "checked_at": "2026-10-16T07:23:04+00:00",
     "title": "【NASA每日一图】仙王座的NGC 7822",
     "markdown_sha256": "e8a58dbd5896e8a2b094d70cdd3d9937f01d85813357d9d3c2c2d3b9957eceab",
     "converter_version": 1
@@ -8661,112 +8661,112 @@
   },
   "103": {
     "status": "verified",
-    "checked_at": "2026-09-14T14:55:58+00:00",
+    "checked_at": "2026-10-16T07:23:07+00:00",
     "title": "第100篇文章了",
     "markdown_sha256": "76ecddbabeb192ce076ee549bf9b8a63597c9912676cfba0a40338b33fed3235",
     "converter_version": 1
   },
   "102": {
     "status": "verified",
-    "checked_at": "2026-09-14T14:56:04+00:00",
+    "checked_at": "2026-10-16T07:23:11+00:00",
     "title": "【NASA每日一图】经典的猎户座星云",
     "markdown_sha256": "1cb06391f389df3ee88ff36ed59c47a0b19311ac52a4befa15590a63f15638d3",
     "converter_version": 1
   },
   "101": {
     "status": "verified",
-    "checked_at": "2026-09-14T14:56:10+00:00",
+    "checked_at": "2026-10-16T07:23:14+00:00",
     "title": "祝大家七夕快乐！",
     "markdown_sha256": "4c930c7e8958b4d62a2d187294d686a11ac2b2d13e105fb174e73da82bc89c8e",
     "converter_version": 1
   },
   "100": {
     "status": "verified",
-    "checked_at": "2026-09-14T14:56:17+00:00",
+    "checked_at": "2026-10-16T07:23:17+00:00",
     "title": "400年前的今天，望远镜诞生了",
     "markdown_sha256": "9015ec668c619ffa221662b74b61e4c66a6f85871b422b9cd556d44610573a3d",
     "converter_version": 1
   },
   "99": {
     "status": "verified",
-    "checked_at": "2026-09-14T14:56:24+00:00",
+    "checked_at": "2026-10-16T07:23:21+00:00",
     "title": "【NASA每日一图】土星上的春分",
     "markdown_sha256": "2c1bdd30f7ab68e447ad92ab13dd5eaf479cd3b62060371ff72e1414bba2ef24",
     "converter_version": 1
   },
   "97": {
     "status": "verified",
-    "checked_at": "2026-09-14T14:56:31+00:00",
+    "checked_at": "2026-10-16T07:23:24+00:00",
     "title": "科学空间：2009年9月重要天象",
     "markdown_sha256": "c096b052e488003424c909db2fb28d304a10c7e7561f6dcf0de0431e8b9e4a58",
     "converter_version": 1
   },
   "96": {
     "status": "verified",
-    "checked_at": "2026-09-14T14:56:38+00:00",
+    "checked_at": "2026-10-16T07:23:28+00:00",
     "title": "几何-算术均值不等式的一般证明",
     "markdown_sha256": "23938b1320d6859c98adfc144ca1808c0ea59fbc9408bb582e178c27db9cfa0f",
     "converter_version": 1
   },
   "95": {
     "status": "verified",
-    "checked_at": "2026-09-14T14:56:45+00:00",
+    "checked_at": "2026-10-16T07:23:31+00:00",
     "title": "关于a,b的极限证明题目",
     "markdown_sha256": "12653e95be41aca66798318b7f6054a091f3b5c724d8a02c47e5a2ecfdde116d",
     "converter_version": 1
   },
   "94": {
     "status": "verified",
-    "checked_at": "2026-09-14T14:56:53+00:00",
+    "checked_at": "2026-10-16T07:23:34+00:00",
     "title": "【NASA每日一图】星系的扭曲和断裂",
     "markdown_sha256": "449609fca5e98ffcef28dd110f2c0f0ac9d88157994fe975e0a9b395b3733b9c",
     "converter_version": 1
   },
   "93": {
     "status": "verified",
-    "checked_at": "2026-09-14T14:57:00+00:00",
+    "checked_at": "2026-10-16T07:23:38+00:00",
     "title": "七夕情缘|寻找牛郎织女",
     "markdown_sha256": "ddc197886b368609e0c81ba74cb4497526b6ac2b0df53f3a91fe2cc8c29e4074",
     "converter_version": 1
   },
   "92": {
     "status": "verified",
-    "checked_at": "2026-09-14T14:57:08+00:00",
+    "checked_at": "2026-10-16T07:23:42+00:00",
     "title": "【NASA每日一图】甘姆星云(Gum Nebula)",
     "markdown_sha256": "925080c2e561bf5e47e32a1ec02660308e5063cd81bd8ab4062af48787095a0c",
     "converter_version": 1
   },
   "91": {
     "status": "verified",
-    "checked_at": "2026-09-14T14:57:15+00:00",
+    "checked_at": "2026-10-16T07:23:45+00:00",
     "title": "网站统计总结|来访信息综合",
     "markdown_sha256": "c742d3640ea199fc20b97a51a01ab5c0d44ed894616182c02326e126bb4bc3e2",
     "converter_version": 1
   },
   "90": {
     "status": "verified",
-    "checked_at": "2026-09-14T14:57:22+00:00",
+    "checked_at": "2026-10-16T07:23:48+00:00",
     "title": "【NASA每日一图】宇宙中的鲸鱼和曲棍球棒",
     "markdown_sha256": "f718e90b7f9caa8c87b05acef4258a6a8b4493a10ee4a90934a66edeef6802e3",
     "converter_version": 1
   },
   "89": {
     "status": "verified",
-    "checked_at": "2026-09-14T14:57:29+00:00",
+    "checked_at": "2026-10-16T07:23:52+00:00",
     "title": "话说金属活动性顺序",
     "markdown_sha256": "87c2c3090bd15347d12c78f326969dbc8fa15d380779462c3f398c2e061afe65",
     "converter_version": 1
   },
   "88": {
     "status": "verified",
-    "checked_at": "2026-09-14T14:57:35+00:00",
+    "checked_at": "2026-10-16T07:23:55+00:00",
     "title": "【NASA每日一图】日食大厦",
     "markdown_sha256": "6d3463f0648e1bc45bfd5f4debbb9add9b427da93f6d4583d6425848343606c7",
     "converter_version": 1
   },
   "87": {
     "status": "verified",
-    "checked_at": "2026-09-14T14:57:42+00:00",
+    "checked_at": "2026-10-16T07:23:59+00:00",
     "title": "2009年目视流星雨星历表",
     "markdown_sha256": "f6ea26dd68fecabe988fdf07acf18887123391dd78b560efe9b309a8ebbf5668",
     "converter_version": 1
@@ -8780,14 +8780,14 @@
   },
   "85": {
     "status": "verified",
-    "checked_at": "2026-09-14T14:58:14+00:00",
+    "checked_at": "2026-10-16T07:24:03+00:00",
     "title": "【NASA每日一图】荒野上的银河",
     "markdown_sha256": "84a743f10db8222a447dea4c07711f27a7dc06f1f139541146142cc861345b57",
     "converter_version": 1
   },
   "84": {
     "status": "verified",
-    "checked_at": "2026-09-14T14:58:20+00:00",
+    "checked_at": "2026-10-16T07:24:06+00:00",
     "title": "I care ! 我在乎，我行动！| 绿色和平",
     "markdown_sha256": "46c071c074597b4d957e8e33bdc0b1a481b86dacc89628810b19d1de357416cf",
     "converter_version": 1
@@ -9385,6 +9385,13 @@
     "checked_at": "2026-10-10T08:42:35+00:00",
     "title": "如何让GDN2更稳定一些？",
     "markdown_sha256": "f580687aca4e2057d983dd5e00006782fc49d0b6dfb20b9514249e87e1e966fa",
+    "converter_version": 1
+  },
+  "11964": {
+    "status": "verified",
+    "checked_at": "2026-10-16T07:22:39+00:00",
+    "title": "慢即是快：2. Adam的尽头还是Muon？",
+    "markdown_sha256": "7acf3d9f48d721e7c8f5f30974b4d1dbd5183307a4cfc9fb072cb2c8f08e4639",
     "converter_version": 1
   }
 }

@@ -6,7 +6,12 @@
     "source_url": "https://spaces.ac.cn/archives/103",
     "date": "2009-08-27",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "生活/情感",
+    "source_tags": [
+      "纪念"
+    ],
+    "source_summary": null
   },
   "validation": {
     "passed": true,
@@ -30,8 +35,8 @@
     "converter_version": 1,
     "markdown_sha256": "76ecddbabeb192ce076ee549bf9b8a63597c9912676cfba0a40338b33fed3235"
   },
-  "fetched_at": "2026-09-14T14:55:58+00:00",
+  "fetched_at": "2026-10-16T07:23:07+00:00",
   "source_snapshot_sha256": "10fdc637e44b6f4f6995183dd8683657db22aca03af3d3c9a7f824b6377514d2",
   "images": {},
-  "local_only": true
+  "publication_policy": "config/mirror.json"
 }
