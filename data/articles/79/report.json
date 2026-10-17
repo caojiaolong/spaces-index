@@ -6,7 +6,14 @@
     "source_url": "https://spaces.ac.cn/archives/79",
     "date": "2009-08-16",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "千奇百怪",
+    "source_tags": [
+      "时间",
+      "flash",
+      "精确"
+    ],
+    "source_summary": null
   },
   "validation": {
     "passed": true,
@@ -30,8 +37,8 @@
     "converter_version": 1,
     "markdown_sha256": "12911417c325c14678eac71c8c814e0107c03071e6186df31fa01c5c3d7d4ffb"
   },
-  "fetched_at": "2026-09-14T14:58:49+00:00",
+  "fetched_at": "2026-10-17T07:04:22+00:00",
   "source_snapshot_sha256": "1aaa59b7aac7e1be1811b8e278a603b60a54732e61a9095ba74ce39da2c75224",
   "images": {},
-  "local_only": true
+  "publication_policy": "config/mirror.json"
 }

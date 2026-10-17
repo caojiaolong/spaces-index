@@ -6,9 +6,15 @@
     "source_url": "https://spaces.ac.cn/archives/66",
     "date": "2009-08-08",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "图片摄影",
+    "source_tags": [
+      "日食",
+      "贝利珠"
+    ],
+    "source_summary": null
   },
-  "fetched_at": "2026-09-14T15:00:16+00:00",
+  "fetched_at": "2026-10-17T07:05:08+00:00",
   "source_snapshot_sha256": "9649743b31d121ad673680fc068fc812c39bf2b5c488597ffe9b33cecd997531",
   "validators": {
     "etag": null,

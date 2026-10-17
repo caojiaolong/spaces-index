@@ -6,9 +6,16 @@
     "source_url": "https://spaces.ac.cn/archives/58",
     "date": "2009-08-06",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "天文探索",
+    "source_tags": [
+      "宇宙",
+      "模型",
+      "形状"
+    ],
+    "source_summary": null
   },
-  "fetched_at": "2026-09-14T15:01:10+00:00",
+  "fetched_at": "2026-10-17T07:05:32+00:00",
   "source_snapshot_sha256": "016c8c7585703e3e65671976cadc81afe95226440ca52d4ff861d350f3343f9d",
   "validators": {
     "etag": null,

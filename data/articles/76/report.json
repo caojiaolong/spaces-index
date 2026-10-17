@@ -6,7 +6,13 @@
     "source_url": "https://spaces.ac.cn/archives/76",
     "date": "2009-08-16",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "图片摄影",
+    "source_tags": [
+      "月球",
+      "流行"
+    ],
+    "source_summary": null
   },
   "validation": {
     "passed": true,
@@ -30,8 +36,8 @@
     "converter_version": 1,
     "markdown_sha256": "639e35b90ab15f4c9639c23be9addb2b29d15f2886363b21f62aee2f94a6451d"
   },
-  "fetched_at": "2026-09-14T14:59:08+00:00",
+  "fetched_at": "2026-10-17T07:04:33+00:00",
   "source_snapshot_sha256": "bcd2d73f399d8651701affb5c4b6f9f973c05abd6dc3276e347a4d2711359690",
   "images": {},
-  "local_only": true
+  "publication_policy": "config/mirror.json"
 }

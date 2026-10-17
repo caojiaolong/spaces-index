@@ -6,7 +6,15 @@
     "source_url": "https://spaces.ac.cn/archives/82",
     "date": "2009-08-18",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "生活/情感",
+    "source_tags": [
+      "困难",
+      "奇迹",
+      "感悟",
+      "影视"
+    ],
+    "source_summary": null
   },
   "validation": {
     "passed": true,
@@ -30,8 +38,8 @@
     "converter_version": 1,
     "markdown_sha256": "c06cc17b69281bd762f7485e922d7bc2b1207f2b8747cf044aa83956103334f5"
   },
-  "fetched_at": "2026-09-14T14:58:34+00:00",
+  "fetched_at": "2026-10-17T07:04:19+00:00",
   "source_snapshot_sha256": "be908fdfcae35d751d0f42687a95f6bf8870c4ef24cb7d51d6bfaa1d236e86ab",
   "images": {},
-  "local_only": true
+  "publication_policy": "config/mirror.json"
 }

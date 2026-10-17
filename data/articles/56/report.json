@@ -6,7 +6,15 @@
     "source_url": "https://spaces.ac.cn/archives/56",
     "date": "2009-08-05",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "数学研究",
+    "source_tags": [
+      "级数",
+      "自然数",
+      "倒数",
+      "平方"
+    ],
+    "source_summary": null
   },
   "validation": {
     "passed": true,
@@ -30,8 +38,8 @@
     "converter_version": 1,
     "markdown_sha256": "04985148b11d08f95c5c072229edc9a50f03126a24e7bffcd047c489d3539c92"
   },
-  "fetched_at": "2026-09-14T15:01:23+00:00",
+  "fetched_at": "2026-10-17T07:05:39+00:00",
   "source_snapshot_sha256": "5dcfaa59b4fcdad99c3e34beced8a39a0b1c796b1c37f04b87bbc44637a99970",
   "images": {},
-  "local_only": true
+  "publication_policy": "config/mirror.json"
 }

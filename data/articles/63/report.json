@@ -6,7 +6,14 @@
     "source_url": "https://spaces.ac.cn/archives/63",
     "date": "2009-08-07",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "数学研究",
+    "source_tags": [
+      "素数",
+      "质数",
+      "探索"
+    ],
+    "source_summary": null
   },
   "validation": {
     "passed": true,
@@ -30,8 +37,8 @@
     "converter_version": 1,
     "markdown_sha256": "4c7abb003c9938e4d120a42d077620ed7b75aae63c9a746a60d2704996e156e4"
   },
-  "fetched_at": "2026-09-14T15:00:37+00:00",
+  "fetched_at": "2026-10-17T07:05:18+00:00",
   "source_snapshot_sha256": "8bd0fa4bc66d6a16eb4dfd1c168d4e2bb709a109883977bba2580362da37e4eb",
   "images": {},
-  "local_only": true
+  "publication_policy": "config/mirror.json"
 }

@@ -6,7 +6,13 @@
     "source_url": "https://spaces.ac.cn/archives/64",
     "date": "2009-08-07",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "图片摄影",
+    "source_tags": [
+      "NGC",
+      "哈勃"
+    ],
+    "source_summary": null
   },
   "validation": {
     "passed": true,
@@ -30,8 +36,8 @@
     "converter_version": 1,
     "markdown_sha256": "355f7bbdfe63d82d22e3e79e5a7be704f016404e6ddad63cc444571041279e5e"
   },
-  "fetched_at": "2026-09-14T15:00:30+00:00",
+  "fetched_at": "2026-10-17T07:05:15+00:00",
   "source_snapshot_sha256": "1594641ac8005ad4a6c6bcc43df7f2c4f559a6d57ed9eb08548a7b0405ec226c",
   "images": {},
-  "local_only": true
+  "publication_policy": "config/mirror.json"
 }

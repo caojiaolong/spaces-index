@@ -6,9 +6,17 @@
     "source_url": "https://spaces.ac.cn/archives/70",
     "date": "2009-08-12",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "生物自然",
+    "source_tags": [
+      "转载",
+      "气候",
+      "温室效应",
+      "工程"
+    ],
+    "source_summary": null
   },
-  "fetched_at": "2026-09-14T14:59:49+00:00",
+  "fetched_at": "2026-10-17T07:04:54+00:00",
   "source_snapshot_sha256": "8df78d19f0d9428d7b2a7b965d04628c4667eb0065fbac96f92076824c7c4860",
   "validators": {
     "etag": null,

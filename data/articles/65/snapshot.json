@@ -6,9 +6,17 @@
     "source_url": "https://spaces.ac.cn/archives/65",
     "date": "2009-08-08",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "天文探索",
+    "source_tags": [
+      "彗星",
+      "翻译",
+      "月球",
+      "小行星"
+    ],
+    "source_summary": null
   },
-  "fetched_at": "2026-09-14T15:00:23+00:00",
+  "fetched_at": "2026-10-17T07:05:11+00:00",
   "source_snapshot_sha256": "3917cd3373426dfbeb232df4f8f78896b22779b5a0d00bec1f088ed11a40038f",
   "validators": {
     "etag": null,

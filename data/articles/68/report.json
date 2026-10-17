@@ -6,7 +6,14 @@
     "source_url": "https://spaces.ac.cn/archives/68",
     "date": "2009-08-12",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "数学研究",
+    "source_tags": [
+      "级数",
+      "求和",
+      "积分"
+    ],
+    "source_summary": null
   },
   "validation": {
     "passed": true,
@@ -30,8 +37,8 @@
     "converter_version": 1,
     "markdown_sha256": "ec2ec8c053d0716d8e10837d3ea6ed0f2973b86288be77eacae6f13507cf62ce"
   },
-  "fetched_at": "2026-09-14T15:00:02+00:00",
+  "fetched_at": "2026-10-17T07:05:01+00:00",
   "source_snapshot_sha256": "f5fd01ffdbb3435cb6ecca4a32a73cf3f801526d3547960b6beb0f1d77638009",
   "images": {},
-  "local_only": true
+  "publication_policy": "config/mirror.json"
 }

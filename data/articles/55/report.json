@@ -6,7 +6,14 @@
     "source_url": "https://spaces.ac.cn/archives/55",
     "date": "2009-08-05",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "生活/情感",
+    "source_tags": [
+      "情感",
+      "影视",
+      "感动"
+    ],
+    "source_summary": null
   },
   "validation": {
     "passed": true,
@@ -30,8 +37,8 @@
     "converter_version": 1,
     "markdown_sha256": "8e7b35cf1da23a71281f83f52623d07d3e9c78fd0c820fee88db83579f783788"
   },
-  "fetched_at": "2026-09-14T15:01:30+00:00",
+  "fetched_at": "2026-10-17T07:05:43+00:00",
   "source_snapshot_sha256": "5cc3f9a18343c88229e3233e941f3fb426b5f6e6766495fc3502951eb6c8597f",
   "images": {},
-  "local_only": true
+  "publication_policy": "config/mirror.json"
 }

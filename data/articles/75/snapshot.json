@@ -6,9 +6,16 @@
     "source_url": "https://spaces.ac.cn/archives/75",
     "date": "2009-08-16",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "数学研究",
+    "source_tags": [
+      "学习",
+      "微积分",
+      "极限"
+    ],
+    "source_summary": null
   },
-  "fetched_at": "2026-09-14T14:59:15+00:00",
+  "fetched_at": "2026-10-17T07:04:36+00:00",
   "source_snapshot_sha256": "d775a4ea9ad089f6bd8e389f2ec9ea977f92a22f9d9a1d4da484b17eef7809dc",
   "validators": {
     "etag": null,

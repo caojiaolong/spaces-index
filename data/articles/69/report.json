@@ -6,7 +6,15 @@
     "source_url": "https://spaces.ac.cn/archives/69",
     "date": "2009-08-12",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "天文探索",
+    "source_tags": [
+      "行星",
+      "转载",
+      "望远镜",
+      "太空"
+    ],
+    "source_summary": null
   },
   "validation": {
     "passed": true,
@@ -30,8 +38,8 @@
     "converter_version": 1,
     "markdown_sha256": "905d0e1045aac4cb664679ba7e48e44b31b9aa3151a7ce948e3ced8576a4f080"
   },
-  "fetched_at": "2026-09-14T14:59:55+00:00",
+  "fetched_at": "2026-10-17T07:04:57+00:00",
   "source_snapshot_sha256": "3d866be7d244a7fe0349691944d0208139ddbf7a8d4b426dd72f1878dd215ae2",
   "images": {},
-  "local_only": true
+  "publication_policy": "config/mirror.json"
 }

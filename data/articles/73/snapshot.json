@@ -6,9 +6,15 @@
     "source_url": "https://spaces.ac.cn/archives/73",
     "date": "2009-08-13",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "图片摄影",
+    "source_tags": [
+      "火星",
+      "陨石"
+    ],
+    "source_summary": null
   },
-  "fetched_at": "2026-09-14T14:59:27+00:00",
+  "fetched_at": "2026-10-17T07:04:44+00:00",
   "source_snapshot_sha256": "0e6229899e5f430ea2f2eaacfb6d7bd836c6504acb4a2f734a998ed4296fb232",
   "validators": {
     "etag": null,

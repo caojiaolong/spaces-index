@@ -8464,7 +8464,7 @@
   },
   "132": {
     "status": "conversion_failed",
-    "checked_at": "2026-10-16T07:22:39+00:00",
+    "checked_at": "2026-10-17T07:04:14+00:00",
     "title": "一道从小学到高中都可能考到的题目",
     "error": "Unreviewed legacy element: a<b，则有<br",
     "converter_version": 1,
@@ -8801,7 +8801,7 @@
   },
   "82": {
     "status": "verified",
-    "checked_at": "2026-09-14T14:58:35+00:00",
+    "checked_at": "2026-10-17T07:04:19+00:00",
     "title": "排除万难，就会有奇迹出现",
     "markdown_sha256": "c06cc17b69281bd762f7485e922d7bc2b1207f2b8747cf044aa83956103334f5",
     "converter_version": 1
@@ -8815,119 +8815,119 @@
   },
   "79": {
     "status": "verified",
-    "checked_at": "2026-09-14T14:58:49+00:00",
+    "checked_at": "2026-10-17T07:04:22+00:00",
     "title": "校准你的钟表（时间科普网站）",
     "markdown_sha256": "12911417c325c14678eac71c8c814e0107c03071e6186df31fa01c5c3d7d4ffb",
     "converter_version": 1
   },
   "78": {
     "status": "verified",
-    "checked_at": "2026-09-14T14:58:56+00:00",
+    "checked_at": "2026-10-17T07:04:26+00:00",
     "title": "【NASA每日一图】射向银河中心的激光",
     "markdown_sha256": "5662d42d3626e91012addeb40bcfa58684b648a532f934fa1b69d2ab6598525d",
     "converter_version": 1
   },
   "77": {
     "status": "verified",
-    "checked_at": "2026-09-14T14:59:03+00:00",
+    "checked_at": "2026-10-17T07:04:29+00:00",
     "title": "澳大利亚网站请您向外星人问好",
     "markdown_sha256": "98c03baf89e33ecd64d777fccc0dbfca44ca539c053b2a855b29dab7cc512f93",
     "converter_version": 1
   },
   "76": {
     "status": "verified",
-    "checked_at": "2026-09-14T14:59:09+00:00",
+    "checked_at": "2026-10-17T07:04:33+00:00",
     "title": "【NASA每日一图】月夜流星",
     "markdown_sha256": "639e35b90ab15f4c9639c23be9addb2b29d15f2886363b21f62aee2f94a6451d",
     "converter_version": 1
   },
   "75": {
     "status": "verified",
-    "checked_at": "2026-09-14T14:59:15+00:00",
+    "checked_at": "2026-10-17T07:04:36+00:00",
     "title": "微积分学习（一）：极限",
     "markdown_sha256": "fe5753a505086d567aef5fc4ee53c5863ddab14f73508814ee2dcd43209cf6ce",
     "converter_version": 1
   },
   "74": {
     "status": "verified",
-    "checked_at": "2026-09-14T14:59:21+00:00",
+    "checked_at": "2026-10-17T07:04:40+00:00",
     "title": "电脑修好了，Blog正常更新",
     "markdown_sha256": "bfd5ece9e77406e4444848843e50ea35be6ac5f43ab44e7cee507898aaca59d6",
     "converter_version": 1
   },
   "73": {
     "status": "verified",
-    "checked_at": "2026-09-14T14:59:27+00:00",
+    "checked_at": "2026-10-17T07:04:44+00:00",
     "title": "【NASA每日一图】火星上的奇形黑色陨石",
     "markdown_sha256": "8eac36e97829ea11a0bf00a03f3fd71b4aa3d2eddf001e4b023244234ad81745",
     "converter_version": 1
   },
   "72": {
     "status": "verified",
-    "checked_at": "2026-09-14T14:59:36+00:00",
+    "checked_at": "2026-10-17T07:04:47+00:00",
     "title": "停！",
     "markdown_sha256": "8e247f01da1372541bda2d3053a3753b253507711283d01e1d76738072e08d71",
     "converter_version": 1
   },
   "71": {
     "status": "verified",
-    "checked_at": "2026-09-14T14:59:42+00:00",
+    "checked_at": "2026-10-17T07:04:51+00:00",
     "title": "【NASA每日一图】不规则的NGC 55",
     "markdown_sha256": "fce01aed1d334145b491343eb9f2a948e0f6d3e985018a7928e34066815cbcac",
     "converter_version": 1
   },
   "70": {
     "status": "verified",
-    "checked_at": "2026-09-14T14:59:49+00:00",
+    "checked_at": "2026-10-17T07:04:54+00:00",
     "title": "科学家计划研制造云船对抗全球变暖(图)",
     "markdown_sha256": "261e19f25ed7b30759b540440c1a53d8113e9d5823383398b2c6ba646e131aa3",
     "converter_version": 1
   },
   "69": {
     "status": "verified",
-    "checked_at": "2026-09-14T14:59:55+00:00",
+    "checked_at": "2026-10-17T07:04:57+00:00",
     "title": "斯皮策太空望远镜发现两颗行星大碰撞(图)",
     "markdown_sha256": "905d0e1045aac4cb664679ba7e48e44b31b9aa3151a7ce948e3ced8576a4f080",
     "converter_version": 1
   },
   "68": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:00:02+00:00",
+    "checked_at": "2026-10-17T07:05:01+00:00",
     "title": "无穷级数求和的积分审敛法",
     "markdown_sha256": "ec2ec8c053d0716d8e10837d3ea6ed0f2973b86288be77eacae6f13507cf62ce",
     "converter_version": 1
   },
   "67": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:00:09+00:00",
+    "checked_at": "2026-10-17T07:05:04+00:00",
     "title": "广东珠海之旅（图片）",
     "markdown_sha256": "1f97edb7bd752b4bf42288394204679bbb49cd508532dcac2c9ec12caf3dbac4",
     "converter_version": 1
   },
   "66": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:00:16+00:00",
+    "checked_at": "2026-10-17T07:05:08+00:00",
     "title": "【NASA每日一图】武汉上空的日食“钻戒”",
     "markdown_sha256": "bc6d38b1d19063b888e9d0460040cb4edd831b80790e16145d0e729b105b2af6",
     "converter_version": 1
   },
   "65": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:00:23+00:00",
+    "checked_at": "2026-10-17T07:05:11+00:00",
     "title": "彗星(非小行星)重创月球",
     "markdown_sha256": "0ecc21e0f45cbe7a1578b700b7fd6c888d517cd4c009714e615a57c8fa7aeb4e",
     "converter_version": 1
   },
   "64": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:00:30+00:00",
+    "checked_at": "2026-10-17T07:05:15+00:00",
     "title": "【NASA每日一图】沙子般的 NGC 1313",
     "markdown_sha256": "355f7bbdfe63d82d22e3e79e5a7be704f016404e6ddad63cc444571041279e5e",
     "converter_version": 1
   },
   "63": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:00:37+00:00",
+    "checked_at": "2026-10-17T07:05:18+00:00",
     "title": "梅森素数的探索之旅",
     "markdown_sha256": "4c7abb003c9938e4d120a42d077620ed7b75aae63c9a746a60d2704996e156e4",
     "converter_version": 1
@@ -8941,49 +8941,49 @@
   },
   "61": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:00:50+00:00",
+    "checked_at": "2026-10-17T07:05:22+00:00",
     "title": "湖泊沉积物引来争议：是否彗星造成冰期灾难？",
     "markdown_sha256": "4bae10509bb2c00920930eac3013e508de59c4e232d15f3cb0fc9ef32c468fec",
     "converter_version": 1
   },
   "60": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:00:57+00:00",
+    "checked_at": "2026-10-17T07:05:25+00:00",
     "title": "【NASA每日一图】飞马座的星系",
     "markdown_sha256": "ac101c37d5c1052c9f316f60874af557951c331ad4008036142ddc695e5ba808",
     "converter_version": 1
   },
   "59": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:01:03+00:00",
+    "checked_at": "2026-10-17T07:05:29+00:00",
     "title": "逻辑推理：拿了多少分(PuzzleUp)",
     "markdown_sha256": "d83ee93ed414079ad779acaa931aafeae0fd87133fdd765cda3013b4f7e2ac7a",
     "converter_version": 1
   },
   "58": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:01:10+00:00",
+    "checked_at": "2026-10-17T07:05:32+00:00",
     "title": "五种零食揭示宇宙的形状",
     "markdown_sha256": "ae0d4d9d26c2f9621e1ce0585b4640bae45979e5b8f982a53ebc2abeadef5ee3",
     "converter_version": 1
   },
   "57": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:01:17+00:00",
+    "checked_at": "2026-10-17T07:05:36+00:00",
     "title": "【NASA每日一图】“蒸发”中的参宿四",
     "markdown_sha256": "88ee67923b778f3e181f1929093120dc1cbc1ff4c179f126c3d8eaef4789be1d",
     "converter_version": 1
   },
   "56": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:01:23+00:00",
+    "checked_at": "2026-10-17T07:05:39+00:00",
     "title": "两道无穷级数：自然数及其平方的倒数和",
     "markdown_sha256": "04985148b11d08f95c5c072229edc9a50f03126a24e7bffcd047c489d3539c92",
     "converter_version": 1
   },
   "55": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:01:30+00:00",
+    "checked_at": "2026-10-17T07:05:43+00:00",
     "title": "经典电视剧：《仙剑奇侠传3》专辑",
     "markdown_sha256": "8e7b35cf1da23a71281f83f52623d07d3e9c78fd0c820fee88db83579f783788",
     "converter_version": 1

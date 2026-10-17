@@ -6,7 +6,14 @@
     "source_url": "https://spaces.ac.cn/archives/74",
     "date": "2009-08-16",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "生活/情感",
+    "source_tags": [
+      "网站",
+      "电脑",
+      "故障"
+    ],
+    "source_summary": null
   },
   "validation": {
     "passed": true,
@@ -30,8 +37,8 @@
     "converter_version": 1,
     "markdown_sha256": "bfd5ece9e77406e4444848843e50ea35be6ac5f43ab44e7cee507898aaca59d6"
   },
-  "fetched_at": "2026-09-14T14:59:21+00:00",
+  "fetched_at": "2026-10-17T07:04:40+00:00",
   "source_snapshot_sha256": "d955e291dc7f5b0002b10ec57f416724ea4c98f881925dd056bc9228bfdde167",
   "images": {},
-  "local_only": true
+  "publication_policy": "config/mirror.json"
 }

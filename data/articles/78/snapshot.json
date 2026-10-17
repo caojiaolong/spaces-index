@@ -6,9 +6,15 @@
     "source_url": "https://spaces.ac.cn/archives/78",
     "date": "2009-08-16",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "图片摄影",
+    "source_tags": [
+      "银河系",
+      "激光"
+    ],
+    "source_summary": null
   },
-  "fetched_at": "2026-09-14T14:58:56+00:00",
+  "fetched_at": "2026-10-17T07:04:26+00:00",
   "source_snapshot_sha256": "83a12484db4de7f8d1dfa7aef68367f90895a37626aa036d00022fe82182295a",
   "validators": {
     "etag": null,
