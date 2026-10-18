@@ -6,7 +6,12 @@
     "source_url": "https://spaces.ac.cn/archives/80",
     "date": "2009-07-27",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "生活/情感",
+    "source_tags": [
+      "网站"
+    ],
+    "source_summary": null
   },
   "validation": {
     "passed": true,
@@ -30,8 +35,8 @@
     "converter_version": 1,
     "markdown_sha256": "82421fbffa8bfe1f96bf66f5652a831f5981c33a077b81cc4641ca90bff2a13d"
   },
-  "fetched_at": "2026-09-14T15:03:52+00:00",
+  "fetched_at": "2026-10-18T07:20:47+00:00",
   "source_snapshot_sha256": "7673a19bbf8786b074ae527c2067d7d59e3d2be0d430ed71df965e8e4847ba91",
   "images": {},
-  "local_only": true
+  "publication_policy": "config/mirror.json"
 }

@@ -6,9 +6,17 @@
     "source_url": "https://spaces.ac.cn/archives/51",
     "date": "2009-08-02",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "图片摄影",
+    "source_tags": [
+      "星云",
+      "恒星",
+      "NGC",
+      "尘埃"
+    ],
+    "source_summary": null
   },
-  "fetched_at": "2026-09-14T15:01:55+00:00",
+  "fetched_at": "2026-10-18T07:19:29+00:00",
   "source_snapshot_sha256": "66714d9ddb4f926db1c01de7b5c6eb5b28802fc8bfd5f57476e37d967a1cd4d9",
   "validators": {
     "etag": null,

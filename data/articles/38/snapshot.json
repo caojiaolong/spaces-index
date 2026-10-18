@@ -6,9 +6,17 @@
     "source_url": "https://spaces.ac.cn/archives/38",
     "date": "2009-07-28",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "数学研究",
+    "source_tags": [
+      "证明",
+      "谜团",
+      "定理",
+      "历史"
+    ],
+    "source_summary": null
   },
-  "fetched_at": "2026-09-14T15:03:25+00:00",
+  "fetched_at": "2026-10-18T07:20:27+00:00",
   "source_snapshot_sha256": "e7c1c467acaccd52b27ab2bb20dca53392358bef2586b327605d085292c5cf61",
   "validators": {
     "etag": null,

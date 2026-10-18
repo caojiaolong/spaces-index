@@ -6,9 +6,15 @@
     "source_url": "https://spaces.ac.cn/archives/48",
     "date": "2009-08-01",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "图片摄影",
+    "source_tags": [
+      "超新星",
+      "爆发"
+    ],
+    "source_summary": null
   },
-  "fetched_at": "2026-09-14T15:02:16+00:00",
+  "fetched_at": "2026-10-18T07:19:38+00:00",
   "source_snapshot_sha256": "b68d08105412077c6c92bf8c973b2b144c66af347265f185073215d542a96347",
   "validators": {
     "etag": null,

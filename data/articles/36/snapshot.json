@@ -6,9 +6,15 @@
     "source_url": "https://spaces.ac.cn/archives/36",
     "date": "2009-07-28",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "千奇百怪",
+    "source_tags": [
+      "转载",
+      "世界"
+    ],
+    "source_summary": null
   },
-  "fetched_at": "2026-09-14T15:03:39+00:00",
+  "fetched_at": "2026-10-18T07:20:39+00:00",
   "source_snapshot_sha256": "ae7395beca6a5f9cf011d89e8dad8a1da3c5fb81e5a095e7c6dc0742b5d43b73",
   "validators": {
     "etag": null,

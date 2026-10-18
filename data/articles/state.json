@@ -8464,7 +8464,7 @@
   },
   "132": {
     "status": "conversion_failed",
-    "checked_at": "2026-10-17T07:04:14+00:00",
+    "checked_at": "2026-10-18T07:19:16+00:00",
     "title": "一道从小学到高中都可能考到的题目",
     "error": "Unreviewed legacy element: a<b，则有<br",
     "converter_version": 1,
@@ -8990,7 +8990,7 @@
   },
   "54": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:01:36+00:00",
+    "checked_at": "2026-10-18T07:19:22+00:00",
     "title": "【NASA每日一图】三个“太阳”的日出",
     "markdown_sha256": "d1d3be11b0083e626e33687a315aacbf49c8bdc713f3916f92cd14c7a0ba123d",
     "converter_version": 1
@@ -9004,21 +9004,21 @@
   },
   "52": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:01:49+00:00",
+    "checked_at": "2026-10-18T07:19:25+00:00",
     "title": "美华裔教授破百年物理定律 获国际同行喝彩(图)",
     "markdown_sha256": "7b08e92d3f4c304ac730bce41b1687536b995a75986f23fad48964eb19116a70",
     "converter_version": 1
   },
   "51": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:01:56+00:00",
+    "checked_at": "2026-10-18T07:19:29+00:00",
     "title": "【NASA每日一图】NGC 6559 的恒星,尘埃和星云",
     "markdown_sha256": "0b264ad842bd53d5a160e067ddec3bffee9174b99d2fa96feb31272120da78ce",
     "converter_version": 1
   },
   "50": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:02:03+00:00",
+    "checked_at": "2026-10-18T07:19:33+00:00",
     "title": "互联网的虚拟操作系统：全球主操作系统",
     "markdown_sha256": "98089e07c46694df24e880441649319c6f9cffb0b6980572364276c494733e55",
     "converter_version": 1
@@ -9032,35 +9032,35 @@
   },
   "48": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:02:16+00:00",
+    "checked_at": "2026-10-18T07:19:38+00:00",
     "title": "【NASA每日一图】明亮的超新星爆发",
     "markdown_sha256": "4eff27e7560f6a1529f18c40edb60c019505f0a8a420c3617fdec8b7d3defbef",
     "converter_version": 1
   },
   "47": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:02:24+00:00",
+    "checked_at": "2026-10-18T07:19:44+00:00",
     "title": "椭圆的周长与面积",
     "markdown_sha256": "84c72ad943a735420ad612d0d92761ac0178f9b826d9f7a37109474784e68e31",
     "converter_version": 1
   },
   "46": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:02:31+00:00",
+    "checked_at": "2026-10-18T07:19:50+00:00",
     "title": "新的一个月：8月了",
     "markdown_sha256": "c5bc369942cf58bb08f4da20777e3f6369fc53ad417ca2e10478aa47d4fecd0c",
     "converter_version": 1
   },
   "45": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:02:37+00:00",
+    "checked_at": "2026-10-18T07:19:54+00:00",
     "title": "【NASA每日一图】木星的新疤痕",
     "markdown_sha256": "8b81f5af64c0610096cf5bede628ead4080d62764490e21c8f911e1844a9828c",
     "converter_version": 1
   },
   "44": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:02:45+00:00",
+    "checked_at": "2026-10-18T07:20:00+00:00",
     "title": "关于无理数及其和的证明",
     "markdown_sha256": "0a8509823cc3c528a2d58e06ce8f22ec38ce4845f030e9014e2c4521f8d28d7f",
     "converter_version": 1
@@ -9074,70 +9074,70 @@
   },
   "42": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:02:58+00:00",
+    "checked_at": "2026-10-18T07:20:05+00:00",
     "title": "数学歌曲：《歌德巴赫猜》",
     "markdown_sha256": "8583452564a4e9df41566553f2bf982b42a39b32d34fc9c8e735ebf2a32011f4",
     "converter_version": 1
   },
   "41": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:03:05+00:00",
+    "checked_at": "2026-10-18T07:20:09+00:00",
     "title": "继续观测国际空间站",
     "markdown_sha256": "7f9cb13c9f1fa106e36c88d8f5cf30e540234df8e0a59731d8e27d1363fd25ce",
     "converter_version": 1
   },
   "40": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:03:12+00:00",
+    "checked_at": "2026-10-18T07:20:15+00:00",
     "title": "生活中的趣味数学：同一天生日概率有多大",
     "markdown_sha256": "12ebff4b70138734daff583dfd539bd7d96b5201a85e6fe9b7c4a91e3ac49775",
     "converter_version": 1
   },
   "39": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:03:18+00:00",
+    "checked_at": "2026-10-18T07:20:21+00:00",
     "title": "科学空间：2009年8月重要天象",
     "markdown_sha256": "68ec99df9746ffee1f4c229aa674ff3937e88e8e0fd6e724db37d758b3a46563",
     "converter_version": 1
   },
   "38": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:03:25+00:00",
+    "checked_at": "2026-10-18T07:20:27+00:00",
     "title": "三百年之谜——费马大定理(历史+证明)",
     "markdown_sha256": "05edb2110a0bff7e7b21371a7f2e232d5a504409aa349de5195b42ab94372ece",
     "converter_version": 1
   },
   "37": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:03:32+00:00",
+    "checked_at": "2026-10-18T07:20:33+00:00",
     "title": "洋葱也能用来发电！",
     "markdown_sha256": "d46627e401734aadd8f6c80c6ebd4b78704b95965edd78515507be7109389bb4",
     "converter_version": 1
   },
   "36": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:03:39+00:00",
+    "checked_at": "2026-10-18T07:20:39+00:00",
     "title": "这样的世界之最你见过没有？",
     "markdown_sha256": "db32357adb4e2d34a30d598e814f159bbfe2292a3da62be1914d793b7ce99f9a",
     "converter_version": 1
   },
   "106": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:03:46+00:00",
+    "checked_at": "2026-10-18T07:20:43+00:00",
     "title": "揭秘美国宇航局将如何把人类送上火星(图)",
     "markdown_sha256": "8fc524a0bb211581ec931e4ed3a40debfee7c1e1ab320ddc9ac899eb219fbe9e",
     "converter_version": 1
   },
   "80": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:03:52+00:00",
+    "checked_at": "2026-10-18T07:20:47+00:00",
     "title": "今天升级了Blog（欢迎大家来“顶”！）",
     "markdown_sha256": "82421fbffa8bfe1f96bf66f5652a831f5981c33a077b81cc4641ca90bff2a13d",
     "converter_version": 1
   },
   "35": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:03:59+00:00",
+    "checked_at": "2026-10-18T07:20:52+00:00",
     "title": "一道自然数的数学题",
     "markdown_sha256": "0a979808b7d1742a6ea4985308a47a42bb686895d6263e34ecfd663363c11148",
     "converter_version": 1
@@ -9151,14 +9151,14 @@
   },
   "33": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:04:14+00:00",
+    "checked_at": "2026-10-18T07:20:56+00:00",
     "title": "日本科学家发现人体能发出可见光(图)",
     "markdown_sha256": "5525e0dec99355bc62049fb5df15c5ac8d292a588b1fdbd36375ac56fe295615",
     "converter_version": 1
   },
   "32": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:04:21+00:00",
+    "checked_at": "2026-10-18T07:20:59+00:00",
     "title": "太空中的巨影——日食间的月球影子",
     "markdown_sha256": "d1428abbdffcb72c5fd10c7a0ea65176516c876dbe0f50928bf60d2e6e116928",
     "converter_version": 1
@@ -9172,28 +9172,28 @@
   },
   "29": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:04:34+00:00",
+    "checked_at": "2026-10-18T07:21:03+00:00",
     "title": "关于光的传播定律",
     "markdown_sha256": "376cadf2106ecef061b40645be0a96eea288b1eafa04fdfaba9880454ffe1d1c",
     "converter_version": 1
   },
   "30": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:04:41+00:00",
+    "checked_at": "2026-10-18T07:21:20+00:00",
     "title": "今天你食了吗？（广东云浮观测日偏食之旅）",
     "markdown_sha256": "c630227ab5354ef291487a42615ecfeb68e3cb9814ecbfe8f3c37875ed648706",
     "converter_version": 1
   },
   "28": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:04:48+00:00",
+    "checked_at": "2026-10-18T07:21:24+00:00",
     "title": "40年前，我们踏上了月球",
     "markdown_sha256": "e27ba3c792323c72d0a56cc58455fd89cba1816b7ed7d57f8ed1e32dca44444d",
     "converter_version": 1
   },
   "27": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:04:55+00:00",
+    "checked_at": "2026-10-18T07:21:27+00:00",
     "title": "两千美元的汽车----世界最便宜汽车在印度上路!",
     "markdown_sha256": "bb9053bbe4db423737f58cb0b3c2fadf37ad0f68b5385360e7dfd125d7713cd7",
     "converter_version": 1

@@ -6,7 +6,13 @@
     "source_url": "https://spaces.ac.cn/archives/54",
     "date": "2009-08-04",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "图片摄影",
+    "source_tags": [
+      "太阳",
+      "日出"
+    ],
+    "source_summary": null
   },
   "validation": {
     "passed": true,
@@ -30,8 +36,8 @@
     "converter_version": 1,
     "markdown_sha256": "d1d3be11b0083e626e33687a315aacbf49c8bdc713f3916f92cd14c7a0ba123d"
   },
-  "fetched_at": "2026-09-14T15:01:36+00:00",
+  "fetched_at": "2026-10-18T07:19:22+00:00",
   "source_snapshot_sha256": "1d1ce0d51be4adf2ad0743e719ec7be937b0aa5fa6b81f22f42cbf3d10d298e7",
   "images": {},
-  "local_only": true
+  "publication_policy": "config/mirror.json"
 }

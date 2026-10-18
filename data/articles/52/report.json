@@ -6,7 +6,15 @@
     "source_url": "https://spaces.ac.cn/archives/52",
     "date": "2009-08-03",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "天文探索",
+    "source_tags": [
+      "美国",
+      "物理",
+      "定律",
+      "破解"
+    ],
+    "source_summary": null
   },
   "validation": {
     "passed": true,
@@ -30,8 +38,8 @@
     "converter_version": 1,
     "markdown_sha256": "7b08e92d3f4c304ac730bce41b1687536b995a75986f23fad48964eb19116a70"
   },
-  "fetched_at": "2026-09-14T15:01:49+00:00",
+  "fetched_at": "2026-10-18T07:19:25+00:00",
   "source_snapshot_sha256": "5798acd42eb361ab78188cc8060a6ddc745154cac17ba098a9a44cc7ce3d9acc",
   "images": {},
-  "local_only": true
+  "publication_policy": "config/mirror.json"
 }

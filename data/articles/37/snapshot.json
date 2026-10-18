@@ -6,9 +6,16 @@
     "source_url": "https://spaces.ac.cn/archives/37",
     "date": "2009-07-28",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "生物自然",
+    "source_tags": [
+      "电流",
+      "转载",
+      "植物"
+    ],
+    "source_summary": null
   },
-  "fetched_at": "2026-09-14T15:03:32+00:00",
+  "fetched_at": "2026-10-18T07:20:33+00:00",
   "source_snapshot_sha256": "ac6bb1e57139cb704ab0e6d30afa384ec87da7dcc1fd79635ce03e10517a5f76",
   "validators": {
     "etag": null,

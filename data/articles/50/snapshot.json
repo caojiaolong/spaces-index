@@ -6,9 +6,16 @@
     "source_url": "https://spaces.ac.cn/archives/50",
     "date": "2009-08-02",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "千奇百怪",
+    "source_tags": [
+      "系统",
+      "互联网",
+      "虚拟"
+    ],
+    "source_summary": null
   },
-  "fetched_at": "2026-09-14T15:02:02+00:00",
+  "fetched_at": "2026-10-18T07:19:33+00:00",
   "source_snapshot_sha256": "34cdf9081578b8b54e98426e97833edb483bc4a660f26b3a1f5e14b2a92fce38",
   "validators": {
     "etag": null,
