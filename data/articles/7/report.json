@@ -6,7 +6,14 @@
     "source_url": "https://spaces.ac.cn/archives/7",
     "date": "2009-07-08",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "数学研究",
+    "source_tags": [
+      "平方",
+      "趣味",
+      "数字"
+    ],
+    "source_summary": null
   },
   "validation": {
     "passed": true,
@@ -30,8 +37,8 @@
     "converter_version": 1,
     "markdown_sha256": "3de2fa1e0bd1e652f39162e71751ee30940bd918b333b3d5068194c038db7cdd"
   },
-  "fetched_at": "2026-09-14T15:07:24+00:00",
+  "fetched_at": "2026-10-19T07:58:24+00:00",
   "source_snapshot_sha256": "6c5e05466b3637ff73cd2e2bd99c28ff981604fd11ef0c35bbe3e95edc88acb7",
   "images": {},
-  "local_only": true
+  "publication_policy": "config/mirror.json"
 }

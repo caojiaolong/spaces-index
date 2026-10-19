@@ -6,7 +6,14 @@
     "source_url": "https://spaces.ac.cn/archives/22",
     "date": "2009-07-16",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "生活/情感",
+    "source_tags": [
+      "音乐",
+      "感悟",
+      "童年"
+    ],
+    "source_summary": null
   },
   "validation": {
     "passed": true,
@@ -30,8 +37,8 @@
     "converter_version": 1,
     "markdown_sha256": "9707d2ace433343b71823cd588e9ba779692eed26fdc3a83a50d2a7181b79574"
   },
-  "fetched_at": "2026-09-14T15:05:30+00:00",
+  "fetched_at": "2026-10-19T07:57:42+00:00",
   "source_snapshot_sha256": "9bc453bc0b31d0253bed0ca3db7b768567e135950e44bbd4331460e5f6a6ba9b",
   "images": {},
-  "local_only": true
+  "publication_policy": "config/mirror.json"
 }

@@ -6,7 +6,16 @@
     "source_url": "https://spaces.ac.cn/archives/135",
     "date": "2009-09-26",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "物理化学",
+    "source_tags": [
+      "杂志",
+      "超导",
+      "高温",
+      "电流",
+      "转载"
+    ],
+    "source_summary": null
   },
   "validation": {
     "passed": true,
@@ -32,8 +41,8 @@
     "fallback_reason": "Standard Markdown round trip changed source structure",
     "markdown_sha256": "f5cf48632430cda82d1345041cb19032dabd35f3f972dd2bd4405dd54d2e7b40"
   },
-  "fetched_at": "2026-09-14T14:51:50+00:00",
+  "fetched_at": "2026-10-19T07:57:14+00:00",
   "source_snapshot_sha256": "d521ac81e1edf8fc39f2380763f37a9197ad23c02ce1028b564df54e6595e4e8",
   "images": {},
-  "local_only": true
+  "publication_policy": "config/mirror.json"
 }

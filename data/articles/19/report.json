@@ -6,7 +6,16 @@
     "source_url": "https://spaces.ac.cn/archives/19",
     "date": "2009-07-14",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "生物自然",
+    "source_tags": [
+      "翻译",
+      "气候",
+      "澳大利亚",
+      "洞穴",
+      "恐龙"
+    ],
+    "source_summary": null
   },
   "validation": {
     "passed": true,
@@ -30,8 +39,8 @@
     "converter_version": 1,
     "markdown_sha256": "0a40d1d33305251bbb68e6c989767c769b0dafd6b0b83a55ff7b625fc13cf4d9"
   },
-  "fetched_at": "2026-09-14T15:05:54+00:00",
+  "fetched_at": "2026-10-19T07:57:49+00:00",
   "source_snapshot_sha256": "44489a518879c2f350b9142030b3719fec290ff553a1a35ce04c5e1fcc31db21",
   "images": {},
-  "local_only": true
+  "publication_policy": "config/mirror.json"
 }

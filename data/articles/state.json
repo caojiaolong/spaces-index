@@ -8443,7 +8443,7 @@
   },
   "135": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:16:04+00:00",
+    "checked_at": "2026-10-19T07:57:14+00:00",
     "title": "《环球科学》：高温超导 “铁”的飞跃",
     "markdown_sha256": "f5cf48632430cda82d1345041cb19032dabd35f3f972dd2bd4405dd54d2e7b40",
     "converter_version": 1
@@ -8464,7 +8464,7 @@
   },
   "132": {
     "status": "conversion_failed",
-    "checked_at": "2026-10-18T07:19:16+00:00",
+    "checked_at": "2026-10-19T07:57:14+00:00",
     "title": "一道从小学到高中都可能考到的题目",
     "error": "Unreviewed legacy element: a<b，则有<br",
     "converter_version": 1,
@@ -8570,7 +8570,7 @@
   },
   "116": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:16:04+00:00",
+    "checked_at": "2026-10-19T07:57:18+00:00",
     "title": "高三学生写的数学情书（佩服）",
     "markdown_sha256": "67ddd60619fd15ac5f844e27624aeca28a5852dc89be92204e46e591f3cc3cf0",
     "converter_version": 1
@@ -8654,7 +8654,7 @@
   },
   "104": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:16:04+00:00",
+    "checked_at": "2026-10-19T07:57:21+00:00",
     "title": "正十七边形的尺规作图",
     "markdown_sha256": "f56900fd8d91a6efe7356fd401fdd64c90d369ca9df96e0f22f7199dc1faf616",
     "converter_version": 1
@@ -8773,7 +8773,7 @@
   },
   "86": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:16:04+00:00",
+    "checked_at": "2026-10-19T07:57:25+00:00",
     "title": "【NASA每日一图】IC 1396 星云",
     "markdown_sha256": "b6685f717bce1b1e0e3652c90eeea318a23cfdea236c82c510ac203174c7dcdb",
     "converter_version": 1
@@ -8794,7 +8794,7 @@
   },
   "83": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:16:04+00:00",
+    "checked_at": "2026-10-19T07:57:28+00:00",
     "title": "如何在科学空间输入数学公式？——LaTeX帮助",
     "markdown_sha256": "9fa9f6472690ecd54a202ed2ab49ee237579d4184b209240306ba15a772a5637",
     "converter_version": 1
@@ -9200,7 +9200,7 @@
   },
   "26": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:05:02+00:00",
+    "checked_at": "2026-10-19T07:57:32+00:00",
     "title": "三次方程的根式求解（通俗版本）",
     "markdown_sha256": "ac86bb1747d99aa55fba0ca44a8049f3074ab8dd4c5ed3ac47fbc7e6a28f567c",
     "converter_version": 1
@@ -9214,21 +9214,21 @@
   },
   "24": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:05:15+00:00",
+    "checked_at": "2026-10-19T07:57:35+00:00",
     "title": "天文望远镜拍到宇宙最美部分(图)",
     "markdown_sha256": "809b58c5259cfcd9fcd1707c798d1dfa37f7de5bb60ee306a6bc7e97b9c0a810",
     "converter_version": 1
   },
   "23": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:05:21+00:00",
+    "checked_at": "2026-10-19T07:57:39+00:00",
     "title": "初中生活结束了（友谊地久天长）",
     "markdown_sha256": "160667d66ff68f50c66385c6eca5756b942ef07ddcd4b0e3d1b048ed7f90a29f",
     "converter_version": 1
   },
   "22": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:05:30+00:00",
+    "checked_at": "2026-10-19T07:57:42+00:00",
     "title": "听那“童年”之音",
     "markdown_sha256": "9707d2ace433343b71823cd588e9ba779692eed26fdc3a83a50d2a7181b79574",
     "converter_version": 1
@@ -9242,14 +9242,14 @@
   },
   "20": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:05:45+00:00",
+    "checked_at": "2026-10-19T07:57:46+00:00",
     "title": "NASA & 国际空间站 直播频道",
     "markdown_sha256": "0c6a61d7af0b7b3b5dc4a3be9ec7f9ba3b93af55c816d775d1690c653e0d5bda",
     "converter_version": 1
   },
   "19": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:05:54+00:00",
+    "checked_at": "2026-10-19T07:57:49+00:00",
     "title": "澳洲恐龙洞穴揭示气候变化",
     "markdown_sha256": "0a40d1d33305251bbb68e6c989767c769b0dafd6b0b83a55ff7b625fc13cf4d9",
     "converter_version": 1
@@ -9263,98 +9263,98 @@
   },
   "17": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:06:09+00:00",
+    "checked_at": "2026-10-19T07:57:53+00:00",
     "title": "日食当天的天气出来了",
     "markdown_sha256": "70f56be55a7b5e7e1ae69f25da4cc675c3de1f93b5f90c18db7df6d1666db36a",
     "converter_version": 1
   },
   "16": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:06:16+00:00",
+    "checked_at": "2026-10-19T07:57:56+00:00",
     "title": "预报日食——当一回天文学家",
     "markdown_sha256": "a1fccae687875f51b82873b56d12d8855d0c96c5c9aa4b4d79960700db40dcf0",
     "converter_version": 1
   },
   "15": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:06:24+00:00",
+    "checked_at": "2026-10-19T07:58:00+00:00",
     "title": "植物拯救了地球，阻止寒冷灭绝之灾！",
     "markdown_sha256": "37cd98dc2ab43a5e344e2f9d40e4d0d78217481a4247be1c4b533a8d43369cf4",
     "converter_version": 1
   },
   "14": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:06:32+00:00",
+    "checked_at": "2026-10-19T07:58:03+00:00",
     "title": "天文马拉松：观测国际空间站",
     "markdown_sha256": "f240d8e3e4a82d44b9c60269669b5aee9ef34ca3e44cf4b7d2ac872888f4533e",
     "converter_version": 1
   },
   "13": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:06:40+00:00",
+    "checked_at": "2026-10-19T07:58:07+00:00",
     "title": "古老的火山爆发造成地球冰期？",
     "markdown_sha256": "e0494930b865b4a4191fa1ca4df073edd563c410d2e3e32849721d3abeff32d2",
     "converter_version": 1
   },
   "11": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:06:53+00:00",
+    "checked_at": "2026-10-19T07:58:10+00:00",
     "title": "【个人翻译】变暖的地球对冷血动物来说过热？",
     "markdown_sha256": "a5c9f282f08536e80f00af5ab7bdb76c866cb928619764527e6d1af5acfcea0f",
     "converter_version": 1
   },
   "10": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:07:04+00:00",
+    "checked_at": "2026-10-19T07:58:14+00:00",
     "title": "网站本次改版感悟...",
     "markdown_sha256": "b5e84405cb0b229a88851e9efcb8df82d96bf21fd18e22406f1dfb21b2340f24",
     "converter_version": 1
   },
   "9": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:07:10+00:00",
+    "checked_at": "2026-10-19T07:58:17+00:00",
     "title": "百科翻译：盐酸的历史（氯化氢，HCl）",
     "markdown_sha256": "fb2bd60d3742c1b37cb746fd61e38d6045efac8ea3044cec33dd2792682db981",
     "converter_version": 1
   },
   "8": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:07:17+00:00",
+    "checked_at": "2026-10-19T07:58:21+00:00",
     "title": "百科翻译：臭氧的性质",
     "markdown_sha256": "2bc65f920990b0b4824218f9b4710299e12b7300bdc38df8e21e91dc308e1e22",
     "converter_version": 1
   },
   "7": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:07:24+00:00",
+    "checked_at": "2026-10-19T07:58:24+00:00",
     "title": "科学空间：一种有趣的平方数",
     "markdown_sha256": "3de2fa1e0bd1e652f39162e71751ee30940bd918b333b3d5068194c038db7cdd",
     "converter_version": 1
   },
   "6": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:07:32+00:00",
+    "checked_at": "2026-10-19T07:58:27+00:00",
     "title": "百科翻译：氢氧化钠（NaOH）的详细介绍",
     "markdown_sha256": "4d53a675d09b22563f68bf2567887f86e25e65157813a52d8af317e77faadb15",
     "converter_version": 1
   },
   "5": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:07:39+00:00",
+    "checked_at": "2026-10-19T07:58:31+00:00",
     "title": "计算：每年夏至的精确时刻",
     "markdown_sha256": "6e6f5a8d0df3b3068ac306c655f26dcc273ca16b5309a58d160e4d2646393574",
     "converter_version": 1
   },
   "4": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:07:47+00:00",
+    "checked_at": "2026-10-19T07:58:34+00:00",
     "title": "百科翻译：草原上的狐狸（Swift Fox）",
     "markdown_sha256": "c8e8fc0e26cd0c5c46d9c19c87b5b8487fc04ab6436c27259fe0bf027bc3be73",
     "converter_version": 1
   },
   "12": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:16:05+00:00",
+    "checked_at": "2026-10-19T07:58:38+00:00",
     "title": "科学空间|Scientific Spaces 介绍",
     "markdown_sha256": "06f49ee6d129a9e7c9555f4f76f918bba7dda244b011c0d2d3c035fb476d19da",
     "converter_version": 1

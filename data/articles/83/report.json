@@ -6,7 +6,15 @@
     "source_url": "https://spaces.ac.cn/archives/83",
     "date": "2009-08-18",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "问题百科",
+    "source_tags": [
+      "数学",
+      "latex",
+      "公式",
+      "帮助"
+    ],
+    "source_summary": null
   },
   "validation": {
     "passed": true,
@@ -32,8 +40,8 @@
     "fallback_reason": "Unclosed math delimiter",
     "markdown_sha256": "9fa9f6472690ecd54a202ed2ab49ee237579d4184b209240306ba15a772a5637"
   },
-  "fetched_at": "2026-09-14T14:58:28+00:00",
+  "fetched_at": "2026-10-19T07:57:28+00:00",
   "source_snapshot_sha256": "b84f5ef2e1bf642f0f4f718c872784765b9315287d69a5c7a69a5b3778ce2be9",
   "images": {},
-  "local_only": true
+  "publication_policy": "config/mirror.json"
 }

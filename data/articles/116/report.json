@@ -6,7 +6,13 @@
     "source_url": "https://spaces.ac.cn/archives/116",
     "date": "2009-09-06",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "数学研究",
+    "source_tags": [
+      "转载",
+      "数学"
+    ],
+    "source_summary": null
   },
   "validation": {
     "passed": true,
@@ -34,8 +40,8 @@
     "fallback_reason": "Unclosed math delimiter",
     "markdown_sha256": "67ddd60619fd15ac5f844e27624aeca28a5852dc89be92204e46e591f3cc3cf0"
   },
-  "fetched_at": "2026-09-14T14:54:16+00:00",
+  "fetched_at": "2026-10-19T07:57:18+00:00",
   "source_snapshot_sha256": "7d4145e1c12fccfc64d2395749df21d6744805518554517d00394d1c53132929",
   "images": {},
-  "local_only": true
+  "publication_policy": "config/mirror.json"
 }

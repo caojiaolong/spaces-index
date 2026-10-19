@@ -6,7 +6,13 @@
     "source_url": "https://spaces.ac.cn/archives/86",
     "date": "2009-08-19",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "图片摄影",
+    "source_tags": [
+      "星云",
+      "尘埃"
+    ],
+    "source_summary": null
   },
   "validation": {
     "passed": true,
@@ -30,8 +36,8 @@
     "converter_version": 1,
     "markdown_sha256": "b6685f717bce1b1e0e3652c90eeea318a23cfdea236c82c510ac203174c7dcdb"
   },
-  "fetched_at": "2026-09-14T15:12:22+00:00",
+  "fetched_at": "2026-10-19T07:57:25+00:00",
   "source_snapshot_sha256": "fd8b0a69c9a0ffec7d51b3b95d2595761ebba58e241039266d17c51f1645cd4d",
   "images": {},
-  "local_only": true
+  "publication_policy": "config/mirror.json"
 }
