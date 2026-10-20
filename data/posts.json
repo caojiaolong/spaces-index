@@ -1,5 +1,20 @@
 [
   {
+    "id": "11980",
+    "title": "连续化 Softmax Attention",
+    "url": "https://spaces.ac.cn/archives/11980",
+    "date": "2026-10-19",
+    "source_category": "信息时代",
+    "source_tags": [
+      "积分",
+      "语言模型",
+      "attention",
+      "光滑"
+    ],
+    "source_summary": "本文简单推导了一下连续化的Softmax Attention，其结果类似于对Attention矩阵加Short Conv操作。虽然在自然语言任务上实测并没有发现这种连续化带来的优势，但它仍不失作为一个有趣的结果来赏析。",
+    "metadata_checked_at": "2026-10-20T07:47:20+00:00"
+  },
+  {
     "id": "11964",
     "title": "慢即是快：2. Adam的尽头还是Muon？",
     "url": "https://spaces.ac.cn/archives/11964",
@@ -87,7 +102,8 @@
       "优化器",
       "炼丹"
     ],
-    "source_summary": "本文在上一篇的收敛框架之上拆掉了两个“脚手架”：一是允许学习率$\\eta_t$动态变化，推导出相应的平均收敛和终点收敛结论，初步解释LR Decay对优化器的通用性；二是对于非单调的$\\boldsymbol{H}_t$，讨论了最小改动思想下的修正方案，以及推导了无需单调性假设的更一般的收敛结论。 总体来说，本文的信息密度较大，我们跳过了不少证明细节，因为关键的证明技巧在前面关于SGD的系列文章中已经详细给出，所以本文更多是直接给出关键的步骤与结果。"
+    "source_summary": "本文在上一篇的收敛框架之上拆掉了两个“脚手架”：一是允许学习率$\\eta_t$动态变化，推导出相应的平均收敛和终点收敛结论，初步解释LR Decay对优化器的通用性；二是对于非单调的$\\boldsymbol{H}_t$，讨论了最小改动思想下的修正方案，以及推导了无需单调性假设的更一般的收敛结论。 总体来说，本文的信息密度较大，我们跳过了不少证明细节，因为关键的证明技巧在前面关于SGD的系列文章中已经详细给出，所以本文更多是直接给出关键的步骤与结果。",
+    "metadata_checked_at": "2026-10-20T07:47:24+00:00"
   },
   {
     "id": "11882",
@@ -102,7 +118,8 @@
       "优化器",
       "炼丹"
     ],
-    "source_summary": "本文回顾了自适应梯度算法的奠基之作——AdaGrad，并沿着“收敛性分析→最小化上界→最优预条件矩阵”的路线，复现了它的完整推导。可以说，AdaGrad所提的“基于梯度二阶矩调节学习率”，几乎是所有后续的自适应学习率优化器共同的底层原理。"
+    "source_summary": "本文回顾了自适应梯度算法的奠基之作——AdaGrad，并沿着“收敛性分析→最小化上界→最优预条件矩阵”的路线，复现了它的完整推导。可以说，AdaGrad所提的“基于梯度二阶矩调节学习率”，几乎是所有后续的自适应学习率优化器共同的底层原理。",
+    "metadata_checked_at": "2026-10-20T07:47:27+00:00"
   },
   {
     "id": "11879",
@@ -117,7 +134,8 @@
       "sgd",
       "炼丹"
     ],
-    "source_summary": "本文从多阶段训练的角度重新审视了“无调度学习率”，通过将调度目标改为“每个阶段结束时都接近最优”，使得实践上更简化且更可行，进一步地，我们提炼出“等效步数”的概念，使得结论可能迁移到实践所用的优化器和Scaling Law上。"
+    "source_summary": "本文从多阶段训练的角度重新审视了“无调度学习率”，通过将调度目标改为“每个阶段结束时都接近最优”，使得实践上更简化且更可行，进一步地，我们提炼出“等效步数”的概念，使得结论可能迁移到实践所用的优化器和Scaling Law上。",
+    "metadata_checked_at": "2026-10-20T07:47:31+00:00"
   },
   {
     "id": "11875",
@@ -131,7 +149,8 @@
       "优化器",
       "muon"
     ],
-    "source_summary": "本文从让“参数梯度下降”逼近“特征梯度下降”的思想出发，将动量重新诠释为一个在线回归问题的解，由此引出了一些相关工作。有趣的是，这条路线跟线性注意力从Vanilla到DeltaNet再到MesaNet的演变极其一致，两者看起来有颇多可以相互借鉴的地方。"
+    "source_summary": "本文从让“参数梯度下降”逼近“特征梯度下降”的思想出发，将动量重新诠释为一个在线回归问题的解，由此引出了一些相关工作。有趣的是，这条路线跟线性注意力从Vanilla到DeltaNet再到MesaNet的演变极其一致，两者看起来有颇多可以相互借鉴的地方。",
+    "metadata_checked_at": "2026-10-20T07:47:35+00:00"
   },
   {
     "id": "11864",
@@ -145,7 +164,8 @@
       "约束",
       "最速下降"
     ],
-    "source_summary": "在这篇文章中，我们成功为“Muon + Stiefel”的流形最速下降找到解析解，为该问题划上一个圆满的句号。自此，不管是否方阵，正交约束下的Muon优化器都可解析计算，求解本身将不再是困难。"
+    "source_summary": "在这篇文章中，我们成功为“Muon + Stiefel”的流形最速下降找到解析解，为该问题划上一个圆满的句号。自此，不管是否方阵，正交约束下的Muon优化器都可解析计算，求解本身将不再是困难。",
+    "metadata_checked_at": "2026-10-20T07:47:41+00:00"
   },
   {
     "id": "11854",
@@ -159,7 +179,8 @@
       "损失函数",
       "梯度"
     ],
-    "source_summary": "本文从“学习分布”和“允许采样”两个角度，推导出了LM Loss的一般构造方式。随后，我们结合预测分布所用的激活函数，计算这些Loss的梯度和凸性，以此简单判断了它们的优劣。最后，我们尝试从给定Loss出发，反推出其配套的最优激活函数，而交叉熵的最优激活函数正是Softmax——这解释了为什么这二者几乎总是配套出现。"
+    "source_summary": "本文从“学习分布”和“允许采样”两个角度，推导出了LM Loss的一般构造方式。随后，我们结合预测分布所用的激活函数，计算这些Loss的梯度和凸性，以此简单判断了它们的优劣。最后，我们尝试从给定Loss出发，反推出其配套的最优激活函数，而交叉熵的最优激活函数正是Softmax——这解释了为什么这二者几乎总是配套出现。",
+    "metadata_checked_at": "2026-10-20T07:47:45+00:00"
   },
   {
     "id": "11848",
@@ -173,7 +194,8 @@
       "位置编码",
       "moe"
     ],
-    "source_summary": "本文简单聊了聊K3在MoE和Attention这两块的设计与取舍。总的来说，K3的每一处改动都不算激进和花哨，背后基本都有明确的动机和实验支撑。效果、效率与稳定性之间的协调，依然是架构设计的主旋律。"
+    "source_summary": "本文简单聊了聊K3在MoE和Attention这两块的设计与取舍。总的来说，K3的每一处改动都不算激进和花哨，背后基本都有明确的动机和实验支撑。效果、效率与稳定性之间的协调，依然是架构设计的主旋律。",
+    "metadata_checked_at": "2026-10-20T07:47:49+00:00"
   },
   {
     "id": "11833",
@@ -187,7 +209,8 @@
       "优化",
       "尺度定律"
     ],
-    "source_summary": null
+    "source_summary": null,
+    "metadata_checked_at": "2026-10-20T07:47:54+00:00"
   },
   {
     "id": "11823",
@@ -201,7 +224,8 @@
       "线性",
       "attention"
     ],
-    "source_summary": "本文从“Softmax Attention是一个平方复杂度的RNN”出发，先发现其递归增量天然具有Delta Rule形态，再对Softmax对角元做一阶近似，最后按“最小误差原则”为残余的$\\boldsymbol{q}$寻找一个替代品，成功将Softmax Attention线性化成了Gated DeltaNet的形式。 （致谢：此文在 Kimi K3 的指导下完成。）"
+    "source_summary": "本文从“Softmax Attention是一个平方复杂度的RNN”出发，先发现其递归增量天然具有Delta Rule形态，再对Softmax对角元做一阶近似，最后按“最小误差原则”为残余的$\\boldsymbol{q}$寻找一个替代品，成功将Softmax Attention线性化成了Gated DeltaNet的形式。 （注：此文在 Kimi K3 的指导下完成。）",
+    "metadata_checked_at": "2026-10-20T07:47:57+00:00"
   },
   {
     "id": "11818",
@@ -213,7 +237,8 @@
       "不等式",
       "语义相似度"
     ],
-    "source_summary": null
+    "source_summary": null,
+    "metadata_checked_at": "2026-10-20T07:48:01+00:00"
   },
   {
     "id": "11814",
@@ -227,7 +252,8 @@
       "线性",
       "attention"
     ],
-    "source_summary": "本文分别推导了LogSumExp和Softmax的泰勒展开式，并讨论了它们的两个潜在应用。"
+    "source_summary": "本文分别推导了LogSumExp和Softmax的泰勒展开式，并讨论了它们的两个潜在应用。",
+    "metadata_checked_at": "2026-10-20T07:48:05+00:00"
   },
   {
     "id": "11804",
@@ -242,7 +268,8 @@
       "sgd",
       "炼丹"
     ],
-    "source_summary": "本文引入了新的恒等式，继续推广上一篇文章的结果，这使得我们可以从理论上定量地揭示权重平均与学习率衰减的联系。此外，我们还讨论了等权平均效果不如滑动平均、Schedule-Free仍无法彻底摆脱Schedule等问题。"
+    "source_summary": "本文引入了新的恒等式，继续推广上一篇文章的结果，这使得我们可以从理论上定量地揭示权重平均与学习率衰减的联系。此外，我们还讨论了等权平均效果不如滑动平均、Schedule-Free仍无法彻底摆脱Schedule等问题。",
+    "metadata_checked_at": "2026-10-20T07:48:09+00:00"
   },
   {
     "id": "11787",
@@ -285,7 +312,8 @@
       "梯度",
       "moe"
     ],
-    "source_summary": "本文尝试从第一性原理出发，探讨MoE中Router与Gate的设计问题，为门控的归一化提供了一个概率解释。"
+    "source_summary": "本文尝试从第一性原理出发，探讨MoE中Router与Gate的设计问题，为门控的归一化提供了一个概率解释。",
+    "metadata_checked_at": "2026-10-20T07:48:13+00:00"
   },
   {
     "id": "11777",
@@ -299,7 +327,8 @@
       "约束",
       "最速下降"
     ],
-    "source_summary": "本文提出了MuonR，一种将更新形式约束为左右旋转矩阵的Muon变体，它能够保持矩阵的奇异值分布不变，是一种简洁的维持训练稳定性的训练方案。"
+    "source_summary": "本文提出了MuonR，一种将更新形式约束为左右旋转矩阵的Muon变体，它能够保持矩阵的奇异值分布不变，是一种简洁的维持训练稳定性的训练方案。",
+    "metadata_checked_at": "2026-10-20T07:48:17+00:00"
   },
   {
     "id": "11772",
@@ -313,7 +342,8 @@
       "muon",
       "MuP"
     ],
-    "source_summary": "本文主要从“特征增量”均匀性的角度解释了KellerJordan版中$\\max(1,\\cdot)$的来源。"
+    "source_summary": "本文主要从“特征增量”均匀性的角度解释了KellerJordan版中$\\max(1,\\cdot)$的来源。",
+    "metadata_checked_at": "2026-10-20T07:48:21+00:00"
   },
   {
     "id": "11767",
@@ -16652,7 +16682,8 @@
       "世界",
       "气候"
     ],
-    "source_summary": null
+    "source_summary": null,
+    "metadata_checked_at": "2026-10-20T07:48:25+00:00"
   },
   {
     "id": "79",
@@ -16899,7 +16930,8 @@
       "观测",
       "英仙座"
     ],
-    "source_summary": null
+    "source_summary": null,
+    "metadata_checked_at": "2026-10-20T07:48:29+00:00"
   },
   {
     "id": "61",
@@ -17021,7 +17053,8 @@
       "恒星",
       "变星"
     ],
-    "source_summary": null
+    "source_summary": null,
+    "metadata_checked_at": "2026-10-20T07:48:33+00:00"
   },
   {
     "id": "52",
@@ -17078,7 +17111,8 @@
       "求和",
       "数学归纳法"
     ],
-    "source_summary": null
+    "source_summary": null,
+    "metadata_checked_at": "2026-10-20T07:48:36+00:00"
   },
   {
     "id": "48",
@@ -17158,7 +17192,8 @@
       "冥王星",
       "矮行星"
     ],
-    "source_summary": null
+    "source_summary": null,
+    "metadata_checked_at": "2026-10-20T07:48:40+00:00"
   },
   {
     "id": "42",
@@ -17314,7 +17349,8 @@
       "黑洞",
       "数字"
     ],
-    "source_summary": null
+    "source_summary": null,
+    "metadata_checked_at": "2026-10-20T07:48:44+00:00"
   },
   {
     "id": "33",
@@ -17357,7 +17393,8 @@
       "故障",
       "数据"
     ],
-    "source_summary": null
+    "source_summary": null,
+    "metadata_checked_at": "2026-10-20T07:48:48+00:00"
   },
   {
     "id": "29",
@@ -17442,7 +17479,8 @@
       "直播",
       "频道"
     ],
-    "source_summary": null
+    "source_summary": null,
+    "metadata_checked_at": "2026-10-20T07:48:52+00:00"
   },
   {
     "id": "24",
@@ -17495,7 +17533,8 @@
     "source_tags": [
       "网站"
     ],
-    "source_summary": null
+    "source_summary": null,
+    "metadata_checked_at": "2026-10-20T07:48:55+00:00"
   },
   {
     "id": "20",
@@ -17540,7 +17579,8 @@
       "flash",
       "模拟"
     ],
-    "source_summary": null
+    "source_summary": null,
+    "metadata_checked_at": "2026-10-20T07:48:59+00:00"
   },
   {
     "id": "17",

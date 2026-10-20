@@ -65,7 +65,7 @@
 
 ## 保证单调
 
-现在再来看第二个问题：当单调性$\boldsymbol{H}_t \succeq \boldsymbol{H}_{t-1}$不恒成立时，该如何“补救”。一个朴素的想法是在原本的优化器上做尽可能小的改动，使其满足所希望的单调性。具体来说，设有半正定矩阵序列$\boldsymbol{H}_1,\boldsymbol{H}_2,\cdots$，我们希望找到一个与之最接近的新序列$\hat{\boldsymbol{H}}_1,\hat{\boldsymbol{H}}_2,\cdots$，并且恒成立$\hat{\boldsymbol{H}}_t \succeq \hat{\boldsymbol{H}}_{t-1}$。新序列的构造方式是
+现在再来看第二个问题：当单调性$\boldsymbol{H}_t \succeq \boldsymbol{H}_{t-1}$不恒成立时，该如何“补救”。一个朴素的想法是在原优化器上做尽可能小的改动，使其满足所希望的单调性。具体来说，设有半正定矩阵序列$\boldsymbol{H}_1,\boldsymbol{H}_2,\cdots$，我们希望找到一个与之最接近的新序列$\hat{\boldsymbol{H}}_1,\hat{\boldsymbol{H}}_2,\cdots$，并且恒成立$\hat{\boldsymbol{H}}_t \succeq \hat{\boldsymbol{H}}_{t-1}$。新序列的构造方式是
 \begin{equation}\hat{\boldsymbol{H}}_1 = \boldsymbol{H}_1,\qquad \hat{\boldsymbol{H}}_t = \hat{\boldsymbol{H}}_{t-1} + [\boldsymbol{H}_t - \hat{\boldsymbol{H}}_{t-1}]_+\end{equation}
 其中$[\boldsymbol{S}]_+$是指将实对称矩阵$\boldsymbol{S}$的所有特征值都取$\max(\cdot,0)$后得到的新矩阵。这个构造方式很直观，容易看出$\hat{\boldsymbol{H}}_t \succeq \hat{\boldsymbol{H}}_{t-1}$的必然性，同时可以证明它在迹度量下的最优性。
 
@@ -98,15 +98,15 @@
 =&\, R^2 \tr(\boldsymbol{H}_T)
 \end{aligned}\end{equation}
 然而，放缩$\boldsymbol{H}_t - \boldsymbol{H}_{t-1}\preceq \tr(\boldsymbol{H}_t - \boldsymbol{H}_{t-1})\boldsymbol{I}$其实是很松的，还依赖于$\boldsymbol{H}_t - \boldsymbol{H}_{t-1}$的半正定性，我们之所以用它，是因为$\tr$是线性函数，这使得最后的求和可以相消，剩下干净的$R^2 \tr(\boldsymbol{H}_T)$，便于分析。事实上，更紧凑且不需要假设$\boldsymbol{H}_t \succeq \boldsymbol{H}_{t-1}$的放缩是
-\begin{equation}\Vert\boldsymbol{\theta}_t-\boldsymbol{\varphi}\Vert_{\boldsymbol{H}_t-\boldsymbol{H}_{t-1}}^2 \leq \Vert\boldsymbol{\theta}_t-\boldsymbol{\varphi}\Vert^2 \lambda_{\max}(\boldsymbol{H}_t - \boldsymbol{H}_{t-1}) \leq R^2 \lambda_{\max}(\boldsymbol{H}_t - \boldsymbol{H}_{t-1})\end{equation}
-这等价于说$\boldsymbol{H}_t - \boldsymbol{H}_{t-1}\preceq \lambda_{\max}(\boldsymbol{H}_t - \boldsymbol{H}_{t-1})\boldsymbol{I}$，$\lambda_{\max}$是指最大特征值。利用这个结果，我们得到
-\begin{equation}\sum_{t=1}^T (\Vert\boldsymbol{\theta}_t - \boldsymbol{\varphi}\Vert_{\boldsymbol{H}_t}^2 - \Vert\boldsymbol{\theta}_{t+1} - \boldsymbol{\varphi}\Vert_{\boldsymbol{H}_t}^2) \leq R^2 \left(\lambda_{\max}(\boldsymbol{H}_1) + \sum_{t=2}^T \lambda_{\max}(\boldsymbol{H}_t - \boldsymbol{H}_{t-1}) \right)\end{equation}
+\begin{equation}\Vert\boldsymbol{\theta}_t-\boldsymbol{\varphi}\Vert_{\boldsymbol{H}_t-\boldsymbol{H}_{t-1}}^2 \leq \Vert\boldsymbol{\theta}_t-\boldsymbol{\varphi}\Vert^2 \lambda_{\max}(\boldsymbol{H}_t - \boldsymbol{H}_{t-1}) \leq R^2 [\lambda_{\max}(\boldsymbol{H}_t - \boldsymbol{H}_{t-1})]_+\end{equation}
+其中$[x]_+ = \max(x,0)$，这等价于说$\boldsymbol{H}_t - \boldsymbol{H}_{t-1}\preceq [\lambda_{\max}(\boldsymbol{H}_t - \boldsymbol{H}_{t-1})]_+\boldsymbol{I}$，$\lambda_{\max}$是指最大特征值。利用这个结果，我们得到
+\begin{equation}\sum_{t=1}^T (\Vert\boldsymbol{\theta}_t - \boldsymbol{\varphi}\Vert_{\boldsymbol{H}_t}^2 - \Vert\boldsymbol{\theta}_{t+1} - \boldsymbol{\varphi}\Vert_{\boldsymbol{H}_t}^2) \leq R^2 \left(\lambda_{\max}(\boldsymbol{H}_1) + \sum_{t=2}^T [\lambda_{\max}(\boldsymbol{H}_t - \boldsymbol{H}_{t-1})]_+ \right)\end{equation}
 注意，$\lambda_{\max}$不是线性函数，所以我们无法进一步相消了。不过，尽管这个结果不如$R^2 \tr(\boldsymbol{H}_T)$干净，但它在单调性成立时其实是总不差于（通常还严格更优）$R^2 \tr(\boldsymbol{H}_T)$的，所以这实际是一个更强、更通用的结果。
 
 ## 新的结论
 
 回顾整个推导过程，单调性$\boldsymbol{H}_t \succeq \boldsymbol{H}_{t-1}$唯一被用到的地方，就是上一节的放缩。因此，将它换成$\lambda_{\max}$版本后，前面所有的收敛结论都可以原封不动地推广到一般情形，只需要把$R^2 \tr(\boldsymbol{H}_T)$统一替换成$R^2 \Lambda_T$，其中
-\begin{equation}\Lambda_T \triangleq \lambda_{\max}(\boldsymbol{H}_1) + \sum_{t=2}^T \lambda_{\max}(\boldsymbol{H}_t - \boldsymbol{H}_{t-1})\end{equation}
+\begin{equation}\Lambda_T \triangleq \lambda_{\max}(\boldsymbol{H}_1) + \sum_{t=2}^T [\lambda_{\max}(\boldsymbol{H}_t - \boldsymbol{H}_{t-1})]_+\end{equation}
 具体地，式$\eqref{leq:avg-g}$的一般版本是：
 \begin{equation}\frac{\sum_{t=1}^T \eta_t \mathbb{E}[\boldsymbol{g}_t \cdot (\boldsymbol{\theta}_t -\boldsymbol{\varphi})]}{\sum_{t=1}^T \eta_t} \leq \mathbb{E}\left[\frac{R^2 \Lambda_T}{2\sum_{t=1}^T \eta_t} + \frac{\sum_{t=1}^T \eta_t^2 \Vert\boldsymbol{g}_t\Vert_{\boldsymbol{H}_t^{-1}}^2}{2\sum_{t=1}^T \eta_t}\right]\end{equation}
 加权平均版收敛结论是
@@ -114,7 +114,7 @@
 两个终点收敛结论分别是
 \begin{align}\mathbb{E}[L(\boldsymbol{\theta}_T) - L(\boldsymbol{\theta}^*)] \leq&\, \mathbb{E}\left[\frac{R^2 \Lambda_T}{2\sum_{t=1}^T w_t} + \frac{\sum_{t=1}^T w_t^2 \Vert\boldsymbol{g}_t\Vert_{\boldsymbol{H}_t^{-1}}^2}{2\sum_{t=1}^T w_t}\right] \\
 \mathbb{E}[L(\boldsymbol{\theta}_T) - L(\boldsymbol{\theta}^*)] \leq&\, \mathbb{E}\left[\frac{R^2 \Lambda_T}{4\eta_{1:T}} +  \sum_{t=1}^{T-2} \frac{\eta_t^2}{4\eta_{t+1:T}} \Vert\boldsymbol{g}_t\Vert_{\boldsymbol{H}_t^{-1}}^2 + \frac{\eta_{T-1}}{2}\Big(\Vert\boldsymbol{g}_{T-1}\Vert_{\boldsymbol{H}_{T-1}^{-1}}^2 + \Vert\boldsymbol{g}_T\Vert_{\boldsymbol{H}_T^{-1}}^2\Big)\right]\end{align}
-留意$\Lambda_T$有两个基本性质：第一，由[Weyl不等式](<https://en.wikipedia.org/wiki/Weyl%27s_inequality>)得$\Lambda_T \geq \lambda_{\max}(\boldsymbol{H}_T) \geq 0$，所以$\Lambda_T$始终非负，新上界没有退化风险；第二，当单调性成立时$\lambda_{\max}(\boldsymbol{H}_t - \boldsymbol{H}_{t-1}) \leq \tr(\boldsymbol{H}_t - \boldsymbol{H}_{t-1})$，从而$\Lambda_T \leq \tr(\boldsymbol{H}_T)$，即新结论确实涵盖了旧结论。
+留意$\Lambda_T$有两个基本性质：第一，显然$\Lambda_T$始终非负，所以新上界没有退化风险；第二，当$\boldsymbol{H}_t$的单调性成立时有$[\lambda_{\max}(\boldsymbol{H}_t - \boldsymbol{H}_{t-1})]_+ \leq \tr(\boldsymbol{H}_t - \boldsymbol{H}_{t-1})$，从而$\Lambda_T \leq \tr(\boldsymbol{H}_T)$，即新结论确实涵盖了旧结论。
 
 ## 延伸思考
 
@@ -124,7 +124,7 @@
 
 从这个论证过程可以看出，其实这跟$\boldsymbol{H}_t$的单调与否并无直接关系，只要$\Lambda_T$关于$T$的增长速度大于等于线性，那么便可能出现无法收敛的现象。对于AdaGrad来说，可以证明在梯度有界的假设下有$\Lambda_T \leq \tr(\boldsymbol{H}_T) \sim \sqrt{T}$，即$\Lambda_T$至多以$\mathcal{O}(\sqrt{T})$速度增长，低于线性，所以收敛性得以保证。
 
-但像RMSProp、Adam等优化器的滑动平均式预条件子，虽然$\boldsymbol{H}_t$本身更为平稳，但$\boldsymbol{H}_t-\boldsymbol{H}_{t-1}$的特征值可能反复交替变号，而$\Lambda_T$累计的是每一步变化的$\lambda_{\max}$，极端情况下，变化中有持续的、稳定的正方向，那它就会匀速增长，从而呈现线性的$\Lambda_T$，导致收敛失败。
+但像RMSProp、Adam等优化器的滑动平均式预条件子，虽然$\boldsymbol{H}_t$本身更为平稳，但$\boldsymbol{H}_t-\boldsymbol{H}_{t-1}$的特征值可能反复交替变号，而$\Lambda_T$累计的是每一步变化的$[\lambda_{\max}]_+$，极端情况下，变化中有持续的、稳定的正方向，那它就会匀速增长，从而呈现线性的$\Lambda_T$，导致收敛失败。
 
 不过，反过来想，这某种程度上也论证了RMSProp、Adam等实践有效的原理，因为一般$\Lambda_T$的增长速度没那么糟糕，反而可能因为$\boldsymbol{H}_t$的平稳性，使得它们的$\Lambda_T$增长比AdaGrad还要平缓，从而实践效果更佳。还有最重要的一点，我们现在只是讨论损失上界的收敛性，上界不收敛原则上无法断言损失不收敛。
 

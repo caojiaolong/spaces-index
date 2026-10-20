@@ -6,7 +6,14 @@
     "source_url": "https://spaces.ac.cn/archives/81",
     "date": "2009-08-18",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "生物自然",
+    "source_tags": [
+      "翻译",
+      "世界",
+      "气候"
+    ],
+    "source_summary": null
   },
   "validation": {
     "passed": true,
@@ -32,8 +39,8 @@
     "fallback_reason": "Unclosed math delimiter",
     "markdown_sha256": "64911980823e50e34a353d1adadd8ad8f9641135fd9a02c1d643597ca4d20b15"
   },
-  "fetched_at": "2026-09-14T14:58:41+00:00",
+  "fetched_at": "2026-10-20T07:48:25+00:00",
   "source_snapshot_sha256": "6565e7be7c66d5edee55b0409d61dbb3890519cd3eb40c55922d1025e0919a1e",
   "images": {},
-  "local_only": true
+  "publication_policy": "config/mirror.json"
 }

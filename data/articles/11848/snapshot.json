@@ -6,9 +6,17 @@
     "source_url": "https://spaces.ac.cn/archives/11848",
     "date": "2026-08-04",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "信息时代",
+    "source_tags": [
+      "线性",
+      "attention",
+      "位置编码",
+      "moe"
+    ],
+    "source_summary": "本文简单聊了聊K3在MoE和Attention这两块的设计与取舍。总的来说，K3的每一处改动都不算激进和花哨，背后基本都有明确的动机和实验支撑。效果、效率与稳定性之间的协调，依然是架构设计的主旋律。"
   },
-  "fetched_at": "2026-09-14T12:30:05+00:00",
+  "fetched_at": "2026-10-20T07:47:49+00:00",
   "source_snapshot_sha256": "59ad1ab2e216d94ae47225a2a6a191e81403bbfb07ce386a55af714df0dc51d4",
   "validators": {
     "etag": null,

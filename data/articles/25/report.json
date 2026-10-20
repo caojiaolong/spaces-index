@@ -6,7 +6,14 @@
     "source_url": "https://spaces.ac.cn/archives/25",
     "date": "2009-07-18",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "天文探索",
+    "source_tags": [
+      "日食",
+      "直播",
+      "频道"
+    ],
+    "source_summary": null
   },
   "validation": {
     "passed": true,
@@ -34,8 +41,8 @@
     "fallback_reason": "Unsupported body element: script",
     "markdown_sha256": "92dc55c2a5b82fc33d527620b83e0b49626cedb81d5618d17d43224e4bad9fd7"
   },
-  "fetched_at": "2026-09-14T15:05:08+00:00",
+  "fetched_at": "2026-10-20T07:48:52+00:00",
   "source_snapshot_sha256": "15922e098410e46a5217bd067c2734ab2e92105bf3276be2202cf3560c7a5ace",
   "images": {},
-  "local_only": true
+  "publication_policy": "config/mirror.json"
 }

@@ -6,7 +6,15 @@
     "source_url": "https://spaces.ac.cn/archives/11814",
     "date": "2026-07-13",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "数学研究",
+    "source_tags": [
+      "微积分",
+      "近似",
+      "线性",
+      "attention"
+    ],
+    "source_summary": "本文分别推导了LogSumExp和Softmax的泰勒展开式，并讨论了它们的两个潜在应用。"
   },
   "validation": {
     "passed": true,
@@ -30,8 +38,8 @@
     "converter_version": 1,
     "markdown_sha256": "0ce7ee1d80c61964e3026dda13de9a9664d97ddc0ec833b5e94f73a6c0e5602f"
   },
-  "fetched_at": "2026-09-14T12:30:32+00:00",
+  "fetched_at": "2026-10-20T07:48:05+00:00",
   "source_snapshot_sha256": "9e1a28b187a75e35caccfed84325bbff36e5a5218c4ac853d7ca9f88d0e1d21e",
   "images": {},
-  "local_only": true
+  "publication_policy": "config/mirror.json"
 }

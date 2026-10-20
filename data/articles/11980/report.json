@@ -1,0 +1,45 @@
+{
+  "metadata": {
+    "id": "11980",
+    "title": "连续化 Softmax Attention",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/11980",
+    "date": "2026-10-19",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "信息时代",
+    "source_tags": [
+      "积分",
+      "语言模型",
+      "attention",
+      "光滑"
+    ],
+    "source_summary": "本文简单推导了一下连续化的Softmax Attention，其结果类似于对Attention矩阵加Short Conv操作。虽然在自然语言任务上实测并没有发现这种连续化带来的优势，但它仍不失作为一个有趣的结果来赏析。"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 48,
+    "display_formula_count": 12,
+    "image_count": 0,
+    "heading_count": 6,
+    "code_block_count": 0,
+    "source_text_sha256": "ca02866e7520f631a3ecfb54d7f0d73a1b36f85731f34f2df38ae2dd087fce50",
+    "output_text_sha256": "ca02866e7520f631a3ecfb54d7f0d73a1b36f85731f34f2df38ae2dd087fce50",
+    "latex_sha256": "2e07d0b9d8f91112f54846c4cf79c7a34d1f403532fc46dc37f5ee5ed5ccdb30",
+    "body_sha256": "97e7aa55f05bef46205964986ae1af96b5b09fc8f9a3694efdde6bc4ad927d27",
+    "converter_version": 1,
+    "markdown_sha256": "f44c1fd3e259d2d5b3cff2cc605c06a2f5b70534b0a4f373f0ca0c15baba212e"
+  },
+  "fetched_at": "2026-10-20T07:47:20+00:00",
+  "source_snapshot_sha256": "c4ef9421f7e92ae9093171ae19021614c670bfce31cc818932c822f3634f6cf0",
+  "images": {},
+  "publication_policy": "config/mirror.json"
+}

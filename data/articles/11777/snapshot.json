@@ -6,9 +6,17 @@
     "source_url": "https://spaces.ac.cn/archives/11777",
     "date": "2026-06-08",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "数学研究",
+    "source_tags": [
+      "优化器",
+      "muon",
+      "约束",
+      "最速下降"
+    ],
+    "source_summary": "本文提出了MuonR，一种将更新形式约束为左右旋转矩阵的Muon变体，它能够保持矩阵的奇异值分布不变，是一种简洁的维持训练稳定性的训练方案。"
   },
-  "fetched_at": "2026-09-14T12:30:58+00:00",
+  "fetched_at": "2026-10-20T07:48:17+00:00",
   "source_snapshot_sha256": "9d60a71e513da02a06640881c395592d9724054aa0e0556fe90410c7c029909f",
   "validators": {
     "etag": null,

@@ -6,7 +6,14 @@
     "source_url": "https://spaces.ac.cn/archives/49",
     "date": "2009-08-02",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "数学研究",
+    "source_tags": [
+      "级数",
+      "求和",
+      "数学归纳法"
+    ],
+    "source_summary": null
   },
   "validation": {
     "passed": true,
@@ -22,20 +29,20 @@
     "image_count": 0,
     "heading_count": 0,
     "code_block_count": 0,
-    "source_text_sha256": "7f3f5ce03b02818988ba3c1849f5fc2ee72ed1f908c1d31e12c06d106e0febd4",
-    "output_text_sha256": "7f3f5ce03b02818988ba3c1849f5fc2ee72ed1f908c1d31e12c06d106e0febd4",
-    "latex_sha256": "21aabaf49c05302cbbb16d861612ec96cc2e10c0cca75a5a3df2cdb1ff67c170",
-    "body_sha256": "a90372ff1373074eccafcf7160435ebf1c71ab8d144642715eab7d53dd43433e",
+    "source_text_sha256": "5bd80d988acf4365a8b74b75078842f7e6b4136159e987735852333d9b9d9916",
+    "output_text_sha256": "5bd80d988acf4365a8b74b75078842f7e6b4136159e987735852333d9b9d9916",
+    "latex_sha256": "7de43325bba9358ebb075999aad0292f5946c01c04fbc7bbd2c007db553999fc",
+    "body_sha256": "cd9bfae30549a06e23699c8bd4d80f3a7676e681d12609abd91064b9af777e13",
     "converter_version": 1,
     "format": "html-v1",
     "source_warnings": [
       "原文公式定界符异常，已逐字保留，未补写或修正：Unclosed math delimiter"
     ],
     "fallback_reason": "Unclosed math delimiter",
-    "markdown_sha256": "767d662e100f973fc0abd5b188dd7dfaa5a53df287f391438a360487bf9d3e2b"
+    "markdown_sha256": "4862984d3256fe420e0927850f878a3d6ba4f9f6b84c44c2ff9b4be4b5c2b171"
   },
-  "fetched_at": "2026-09-14T15:02:09+00:00",
-  "source_snapshot_sha256": "c415bfb46f2d8278105e010229453904dfff9650aef0200c934c30d4d321e159",
+  "fetched_at": "2026-10-20T07:48:36+00:00",
+  "source_snapshot_sha256": "1de3a9057ee84279d0cd3edb957560896d6f382da6f3e2fe877d7b4bdff7a7f6",
   "images": {},
-  "local_only": true
+  "publication_policy": "config/mirror.json"
 }

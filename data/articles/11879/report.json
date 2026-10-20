@@ -6,7 +6,16 @@
     "source_url": "https://spaces.ac.cn/archives/11879",
     "date": "2026-08-31",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "数学研究",
+    "source_tags": [
+      "不等式",
+      "学习率",
+      "优化器",
+      "sgd",
+      "炼丹"
+    ],
+    "source_summary": "本文从多阶段训练的角度重新审视了“无调度学习率”，通过将调度目标改为“每个阶段结束时都接近最优”，使得实践上更简化且更可行，进一步地，我们提炼出“等效步数”的概念，使得结论可能迁移到实践所用的优化器和Scaling Law上。"
   },
   "validation": {
     "passed": true,
@@ -30,8 +39,8 @@
     "converter_version": 1,
     "markdown_sha256": "9f562aaa59847b852f505c7f3a3e1410504724a4e0a5f723cd6da13affcaf5b5"
   },
-  "fetched_at": "2026-09-14T07:36:07+00:00",
+  "fetched_at": "2026-10-20T07:47:31+00:00",
   "source_snapshot_sha256": "73c4fc789f1911143f8827c4b1f183a3e000fcb0abaa8e438adefb7e0547d99a",
   "images": {},
-  "local_only": true
+  "publication_policy": "config/mirror.json"
 }

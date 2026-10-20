@@ -1,0 +1,25 @@
+{
+  "metadata": {
+    "id": "11980",
+    "title": "连续化 Softmax Attention",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/11980",
+    "date": "2026-10-19",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "信息时代",
+    "source_tags": [
+      "积分",
+      "语言模型",
+      "attention",
+      "光滑"
+    ],
+    "source_summary": "本文简单推导了一下连续化的Softmax Attention，其结果类似于对Attention矩阵加Short Conv操作。虽然在自然语言任务上实测并没有发现这种连续化带来的优势，但它仍不失作为一个有趣的结果来赏析。"
+  },
+  "fetched_at": "2026-10-20T07:47:20+00:00",
+  "source_snapshot_sha256": "c4ef9421f7e92ae9093171ae19021614c670bfce31cc818932c822f3634f6cf0",
+  "validators": {
+    "etag": null,
+    "last_modified": null
+  }
+}

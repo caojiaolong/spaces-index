@@ -6,7 +6,16 @@
     "source_url": "https://spaces.ac.cn/archives/34",
     "date": "2009-07-26",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "数学研究",
+    "source_tags": [
+      "谜团",
+      "美国",
+      "flash",
+      "黑洞",
+      "数字"
+    ],
+    "source_summary": null
   },
   "validation": {
     "passed": true,
@@ -34,8 +43,8 @@
     "fallback_reason": "Unsupported body element: embed",
     "markdown_sha256": "071eb33ff3097656d3a52034ec945c220522166f714daba416f959eb4430c080"
   },
-  "fetched_at": "2026-09-14T15:04:06+00:00",
+  "fetched_at": "2026-10-20T07:48:44+00:00",
   "source_snapshot_sha256": "069dc5130030f90c363accc4a7f867b8d4b803ea3880c6ce14aafb9b1dd6c5a0",
   "images": {},
-  "local_only": true
+  "publication_policy": "config/mirror.json"
 }

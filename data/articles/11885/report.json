@@ -6,7 +6,16 @@
     "source_url": "https://spaces.ac.cn/archives/11885",
     "date": "2026-09-14",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "数学研究",
+    "source_tags": [
+      "不等式",
+      "矩阵",
+      "学习率",
+      "优化器",
+      "炼丹"
+    ],
+    "source_summary": "本文在上一篇的收敛框架之上拆掉了两个“脚手架”：一是允许学习率$\\eta_t$动态变化，推导出相应的平均收敛和终点收敛结论，初步解释LR Decay对优化器的通用性；二是对于非单调的$\\boldsymbol{H}_t$，讨论了最小改动思想下的修正方案，以及推导了无需单调性假设的更一般的收敛结论。 总体来说，本文的信息密度较大，我们跳过了不少证明细节，因为关键的证明技巧在前面关于SGD的系列文章中已经详细给出，所以本文更多是直接给出关键的步骤与结果。"
   },
   "validation": {
     "passed": true,
@@ -18,20 +27,20 @@
       "images_exact_sequence": true,
       "code_exact_sequence": true
     },
-    "formula_count": 170,
+    "formula_count": 171,
     "display_formula_count": 23,
     "image_count": 0,
     "heading_count": 8,
     "code_block_count": 0,
-    "source_text_sha256": "f0fce0619d9bcd68a4581c725f91db8cb0022e6bd25b2899aa7bfe6ce6423f91",
-    "output_text_sha256": "f0fce0619d9bcd68a4581c725f91db8cb0022e6bd25b2899aa7bfe6ce6423f91",
-    "latex_sha256": "321d1d458ea1e6790ed94b93c39fa2ecbc50c7b622d4cb4fb0a0f2d561e58cd0",
-    "body_sha256": "96d304d5b7f091889ca03216b109c00a8585bedc24c1d1db450e367c814327e8",
+    "source_text_sha256": "8431c275bc7c21a1fd241cdaac6afe664ba01e43183b7dc4c6f0a20b162fc03c",
+    "output_text_sha256": "8431c275bc7c21a1fd241cdaac6afe664ba01e43183b7dc4c6f0a20b162fc03c",
+    "latex_sha256": "8e4e6e7676bbd88b8e051c287996f157314fd9639b51e9da4eb5e7840520cfdc",
+    "body_sha256": "b76e7450601445364b87d808de126db083c3d68a04eca9a8b248e49b83e260b1",
     "converter_version": 1,
-    "markdown_sha256": "0e5954056d61208547ed791f8b0af522813b529a2d8addc4337566275bcd607e"
+    "markdown_sha256": "b816db64ebe3e3b05ec1169c1b0545639e6bb154992118d98a684385d6934221"
   },
-  "fetched_at": "2026-09-14T12:29:45+00:00",
-  "source_snapshot_sha256": "01da87d2d8fcc7706c6dd39b384eee3b1ad449836d06d3ac821b9123d3e4597b",
+  "fetched_at": "2026-10-20T07:47:24+00:00",
+  "source_snapshot_sha256": "5d1860f41ddebf53dd2ca348016e71100272927b75b706a09ecbf85e08d5eb4b",
   "images": {},
-  "local_only": true
+  "publication_policy": "config/mirror.json"
 }

@@ -1,7 +1,7 @@
 {
   "11879": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:18:08+00:00",
+    "checked_at": "2026-10-20T07:47:31+00:00",
     "title": "让炼丹更科学一些（八）：多阶段训练的学习率",
     "markdown_sha256": "9f562aaa59847b852f505c7f3a3e1410504724a4e0a5f723cd6da13affcaf5b5",
     "converter_version": 1
@@ -36,77 +36,77 @@
   },
   "11882": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:18:08+00:00",
+    "checked_at": "2026-10-20T07:47:27+00:00",
     "title": "让炼丹更科学一些（九）：经典自适应梯度算法",
-    "markdown_sha256": "34c793d92f3ca84303f5e4dd5717991ea59ec7982c408ecb73008cf593fbef79",
+    "markdown_sha256": "482f966c3965e29f3a3aa3704771c7a271bf396aee34b2237002eea10714e088",
     "converter_version": 1
   },
   "11875": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:18:08+00:00",
+    "checked_at": "2026-10-20T07:47:35+00:00",
     "title": "动量的新理解：逼近特征层面的梯度下降",
     "markdown_sha256": "28a2e6dea8fe8b0f9d3f4096694eef8374e23150136062a028add38060f52b82",
     "converter_version": 1
   },
   "11885": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:18:08+00:00",
+    "checked_at": "2026-10-20T07:47:24+00:00",
     "title": "让炼丹更科学一些（十）：单调性假设的拆与补",
-    "markdown_sha256": "0e5954056d61208547ed791f8b0af522813b529a2d8addc4337566275bcd607e",
+    "markdown_sha256": "b816db64ebe3e3b05ec1169c1b0545639e6bb154992118d98a684385d6934221",
     "converter_version": 1
   },
   "11864": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:18:09+00:00",
+    "checked_at": "2026-10-20T07:47:41+00:00",
     "title": "流形上的最速下降：7. Stiefel的解析解",
     "markdown_sha256": "ebf4324aeb715ee57f0656b3788b56a7c13596948b83b8150cbc4dedd4d896fd",
     "converter_version": 1
   },
   "11854": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:18:09+00:00",
+    "checked_at": "2026-10-20T07:47:45+00:00",
     "title": "除了交叉熵，LM Loss还有什么选择？",
     "markdown_sha256": "bc467f21608aa5b182bdd6e0470103a6870711687a83ecfe2e458bf7198a8f2e",
     "converter_version": 1
   },
   "11848": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:18:09+00:00",
+    "checked_at": "2026-10-20T07:47:49+00:00",
     "title": "简单谈谈K3的MoE和Attention",
     "markdown_sha256": "48b45d57d039d4950c9c9d5976dfb25d1b4b02f33428240d1913b1e2799823d4",
     "converter_version": 1
   },
   "11833": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:18:10+00:00",
+    "checked_at": "2026-10-20T07:47:54+00:00",
     "title": "解构Scaling Law：优化、架构、数据的三重奏",
     "markdown_sha256": "6ae9cea0b3a7be20abf94cfebbfb2b37b70d9d7879d14a0ac27ff4a56b8e5a6a",
     "converter_version": 1
   },
   "11823": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:18:10+00:00",
+    "checked_at": "2026-10-20T07:47:57+00:00",
     "title": "将Softmax Attention线性化为Gated DeltaNet",
     "markdown_sha256": "7f5cfdbdcdb195dd30088fb860d6922f1439f5cc3f74cb65826103e1465eb913",
     "converter_version": 1
   },
   "11818": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:18:10+00:00",
+    "checked_at": "2026-10-20T07:48:01+00:00",
     "title": "基于排序不等式的相似度指标",
     "markdown_sha256": "50311409e7d510a6ee043d871d04da12240432932dd60b97da2a9f7fa3660b49",
     "converter_version": 1
   },
   "11814": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:18:10+00:00",
+    "checked_at": "2026-10-20T07:48:05+00:00",
     "title": "LogSumExp和Softmax的泰勒展开",
     "markdown_sha256": "0ce7ee1d80c61964e3026dda13de9a9664d97ddc0ec833b5e94f73a6c0e5602f",
     "converter_version": 1
   },
   "11804": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:18:10+00:00",
+    "checked_at": "2026-10-20T07:48:09+00:00",
     "title": "让炼丹更科学一些（七）：步长调度与权重平均",
     "markdown_sha256": "977c5b90538a89e6246de889eceb1f164ed15373259dd602154854501f3be098",
     "converter_version": 1
@@ -120,21 +120,21 @@
   },
   "11782": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:18:11+00:00",
+    "checked_at": "2026-10-20T07:48:13+00:00",
     "title": "MoE环游记：9、门控归一化之争",
     "markdown_sha256": "8447ecaf15bf28de767d694a2b629e7e3f8835d20b1c20c648d35bf7e1d81539",
     "converter_version": 1
   },
   "11777": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:18:11+00:00",
+    "checked_at": "2026-10-20T07:48:17+00:00",
     "title": "流形上的最速下降：6. Muon + 双旋转",
     "markdown_sha256": "8bb9d1a7507bb00881f7246a35062ad65b37146d6ae0efdad2dcde9f79c48144",
     "converter_version": 1
   },
   "11772": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:18:11+00:00",
+    "checked_at": "2026-10-20T07:48:21+00:00",
     "title": "为什么官方版Muon比MuP版多出一个max(1, ⋅)？",
     "markdown_sha256": "393168d25ce43e9276e87e62852e607d653a9fc35a6486907de08a3a121a235f",
     "converter_version": 1
@@ -8464,7 +8464,7 @@
   },
   "132": {
     "status": "conversion_failed",
-    "checked_at": "2026-10-19T07:57:14+00:00",
+    "checked_at": "2026-10-20T07:48:21+00:00",
     "title": "一道从小学到高中都可能考到的题目",
     "error": "Unreviewed legacy element: a<b，则有<br",
     "converter_version": 1,
@@ -8808,7 +8808,7 @@
   },
   "81": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:16:05+00:00",
+    "checked_at": "2026-10-20T07:48:25+00:00",
     "title": "世界各国能否联手应对气候变化？",
     "markdown_sha256": "64911980823e50e34a353d1adadd8ad8f9641135fd9a02c1d643597ca4d20b15",
     "converter_version": 1
@@ -8934,7 +8934,7 @@
   },
   "62": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:16:05+00:00",
+    "checked_at": "2026-10-20T07:48:29+00:00",
     "title": "2009年英仙座流星雨观测",
     "markdown_sha256": "2c73f70aa64cad4ca1c3292233dc366b96804584348377486ce05e7a3609147a",
     "converter_version": 1
@@ -8997,7 +8997,7 @@
   },
   "53": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:16:05+00:00",
+    "checked_at": "2026-10-20T07:48:33+00:00",
     "title": "【NASA每日一图】正在形成的恒星",
     "markdown_sha256": "b84b8f66d97325204b30ce98cd8d3e6ed22a76b92154f6ed64b8815d2f409e8f",
     "converter_version": 1
@@ -9025,9 +9025,9 @@
   },
   "49": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:16:05+00:00",
+    "checked_at": "2026-10-20T07:48:36+00:00",
     "title": "一道级数求和证明题(非数学归纳法)",
-    "markdown_sha256": "767d662e100f973fc0abd5b188dd7dfaa5a53df287f391438a360487bf9d3e2b",
+    "markdown_sha256": "4862984d3256fe420e0927850f878a3d6ba4f9f6b84c44c2ff9b4be4b5c2b171",
     "converter_version": 1
   },
   "48": {
@@ -9067,7 +9067,7 @@
   },
   "43": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:16:05+00:00",
+    "checked_at": "2026-10-20T07:48:40+00:00",
     "title": "冥王星呀，你究竟是什么？",
     "markdown_sha256": "4afa32bf2b79a89074f119e83060a65b5e3d87260a069165816611d799e7be78",
     "converter_version": 1
@@ -9144,7 +9144,7 @@
   },
   "34": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:16:05+00:00",
+    "checked_at": "2026-10-20T07:48:44+00:00",
     "title": "企图减缓美国数学进展的“阴谋”",
     "markdown_sha256": "071eb33ff3097656d3a52034ec945c220522166f714daba416f959eb4430c080",
     "converter_version": 1
@@ -9165,7 +9165,7 @@
   },
   "31": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:16:05+00:00",
+    "checked_at": "2026-10-20T07:48:48+00:00",
     "title": "BLOG评论故障修复，部分数据丢失",
     "markdown_sha256": "8b68f9d1022abdce50af11432c584c798cd4a9d390056ce5ba166c3501e17eb4",
     "converter_version": 1
@@ -9207,7 +9207,7 @@
   },
   "25": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:16:05+00:00",
+    "checked_at": "2026-10-20T07:48:52+00:00",
     "title": "日全食多路联合直播频道",
     "markdown_sha256": "92dc55c2a5b82fc33d527620b83e0b49626cedb81d5618d17d43224e4bad9fd7",
     "converter_version": 1
@@ -9235,7 +9235,7 @@
   },
   "21": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:16:05+00:00",
+    "checked_at": "2026-10-20T07:48:55+00:00",
     "title": "今天把Blog升级了",
     "markdown_sha256": "f09480e4616e1f26cbb7f092ebbba1c015aec4f3b605767da8bdb381ad43d204",
     "converter_version": 1
@@ -9256,7 +9256,7 @@
   },
   "18": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:16:05+00:00",
+    "checked_at": "2026-10-20T07:48:59+00:00",
     "title": "2009.7.22日全食各地区模拟(Flash)",
     "markdown_sha256": "d74490604401859e7483d523dba7b08829665676a584a4264e942b1f6158cddb",
     "converter_version": 1
@@ -9392,6 +9392,13 @@
     "checked_at": "2026-10-16T07:22:39+00:00",
     "title": "慢即是快：2. Adam的尽头还是Muon？",
     "markdown_sha256": "7acf3d9f48d721e7c8f5f30974b4d1dbd5183307a4cfc9fb072cb2c8f08e4639",
+    "converter_version": 1
+  },
+  "11980": {
+    "status": "verified",
+    "checked_at": "2026-10-20T07:47:20+00:00",
+    "title": "连续化 Softmax Attention",
+    "markdown_sha256": "f44c1fd3e259d2d5b3cff2cc605c06a2f5b70534b0a4f373f0ca0c15baba212e",
     "converter_version": 1
   }
 }

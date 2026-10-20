@@ -6,7 +6,15 @@
     "source_url": "https://spaces.ac.cn/archives/11782",
     "date": "2026-06-17",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "信息时代",
+    "source_tags": [
+      "概率",
+      "损失函数",
+      "梯度",
+      "moe"
+    ],
+    "source_summary": "本文尝试从第一性原理出发，探讨MoE中Router与Gate的设计问题，为门控的归一化提供了一个概率解释。"
   },
   "validation": {
     "passed": true,
@@ -30,8 +38,8 @@
     "converter_version": 1,
     "markdown_sha256": "8447ecaf15bf28de767d694a2b629e7e3f8835d20b1c20c648d35bf7e1d81539"
   },
-  "fetched_at": "2026-09-14T12:30:52+00:00",
+  "fetched_at": "2026-10-20T07:48:13+00:00",
   "source_snapshot_sha256": "259174510ad386c227789f7ae2ab4454550d01ed255615b2f8ee9319f5af3d34",
   "images": {},
-  "local_only": true
+  "publication_policy": "config/mirror.json"
 }

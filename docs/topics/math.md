@@ -2,7 +2,7 @@
 
 [返回主题索引](README.md) · [文档导航](../README.md)
 
-共 383 篇。
+共 384 篇。
 
 <a id="series-math-6689ddf615"></a>
 #### 低秩近似之路
@@ -525,6 +525,10 @@
 <a id="series-math-standalone"></a>
 #### 非系列文章
 
+- 2026-10-19 - [连续化 Softmax Attention](https://spaces.ac.cn/archives/11980)
+  - 原站分类：信息时代
+  - 原站标签：积分、语言模型、attention、光滑
+  - 小结摘录：本文简单推导了一下连续化的Softmax Attention，其结果类似于对Attention矩阵加Short Conv操作。虽然在自然语言任务上实测并没有发现这种连续化带来的优势，但它仍不失作为一个有趣的结果来赏析。
 - 2026-10-09 - [如何让GDN2更稳定一些？](https://spaces.ac.cn/archives/11945)
   - 原站分类：信息时代
   - 原站标签：矩阵、线性、RNN、attention

@@ -6,7 +6,16 @@
     "source_url": "https://spaces.ac.cn/archives/11882",
     "date": "2026-09-05",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "数学研究",
+    "source_tags": [
+      "不等式",
+      "梯度",
+      "学习率",
+      "优化器",
+      "炼丹"
+    ],
+    "source_summary": "本文回顾了自适应梯度算法的奠基之作——AdaGrad，并沿着“收敛性分析→最小化上界→最优预条件矩阵”的路线，复现了它的完整推导。可以说，AdaGrad所提的“基于梯度二阶矩调节学习率”，几乎是所有后续的自适应学习率优化器共同的底层原理。"
   },
   "validation": {
     "passed": true,
@@ -23,15 +32,15 @@
     "image_count": 0,
     "heading_count": 7,
     "code_block_count": 0,
-    "source_text_sha256": "379b1ef9c6d2098305f2ded1db6f97cddbffb3d17a3752d814cda97b718876a7",
-    "output_text_sha256": "379b1ef9c6d2098305f2ded1db6f97cddbffb3d17a3752d814cda97b718876a7",
+    "source_text_sha256": "2657c337203e5665b25681839465bf1ae67aa8e636c2eaadf536dea3c339bfa8",
+    "output_text_sha256": "2657c337203e5665b25681839465bf1ae67aa8e636c2eaadf536dea3c339bfa8",
     "latex_sha256": "ad56a132247b10db18348aa2a433eb5181f811e96fb73880e092eb199ff9599e",
-    "body_sha256": "229a50b69add6ab42f8984ffc6a22d017b2b0392f84b6025a8b47f11b2210fe4",
+    "body_sha256": "5560dee4192bd7b6ccc66e3865fb0f8c4aa5f353f71856fcb76f718a4ff988c8",
     "converter_version": 1,
-    "markdown_sha256": "34c793d92f3ca84303f5e4dd5717991ea59ec7982c408ecb73008cf593fbef79"
+    "markdown_sha256": "482f966c3965e29f3a3aa3704771c7a271bf396aee34b2237002eea10714e088"
   },
-  "fetched_at": "2026-09-14T02:24:00+00:00",
-  "source_snapshot_sha256": "1ef29f033391ed46439a132755673212fd5bdfb5817ff80c03507ec43a074d36",
+  "fetched_at": "2026-10-20T07:47:27+00:00",
+  "source_snapshot_sha256": "7b8e606fdaa28950c42b5e9a1cd7f01b110a926e5c4e2a255040b700969db19c",
   "images": {},
-  "local_only": true
+  "publication_policy": "config/mirror.json"
 }

@@ -6,9 +6,15 @@
     "source_url": "https://spaces.ac.cn/archives/11818",
     "date": "2026-07-16",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "数学研究",
+    "source_tags": [
+      "不等式",
+      "语义相似度"
+    ],
+    "source_summary": null
   },
-  "fetched_at": "2026-09-14T12:30:26+00:00",
+  "fetched_at": "2026-10-20T07:48:01+00:00",
   "source_snapshot_sha256": "86562861b2a0a2d37f8c6de3873ba6f301895ddde8dff084a3040c83d822154d",
   "validators": {
     "etag": null,
