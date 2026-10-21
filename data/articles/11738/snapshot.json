@@ -6,9 +6,17 @@
     "source_url": "https://spaces.ac.cn/archives/11738",
     "date": "2026-05-08",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "信息时代",
+    "source_tags": [
+      "矩阵",
+      "损失函数",
+      "生成模型",
+      "梯度"
+    ],
+    "source_summary": "这篇文章主要从理论上分析了将FID作为生成模型损失函数所面临的困难，以及如何从推导过程中引出对应的克服困难的技巧。"
   },
-  "fetched_at": "2026-09-14T12:35:47+00:00",
+  "fetched_at": "2026-10-21T07:52:37+00:00",
   "source_snapshot_sha256": "7a06b60a176f91da2a0ac79160be3f303146560acaa23e8fec0b0a6897c93a03",
   "validators": {
     "etag": null,

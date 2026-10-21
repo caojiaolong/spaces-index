@@ -6,10 +6,19 @@
     "source_url": "https://spaces.ac.cn/archives/11540",
     "date": "2026-01-16",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "数学研究",
+    "source_tags": [
+      "优化",
+      "学习率",
+      "优化器",
+      "sgd",
+      "炼丹"
+    ],
+    "source_summary": "上文末我们提到终点损失的最优学习率策略的证明困难问题，而在这篇文章中，我们通过自上而下的、小心谨慎的放缩和构造，完成了这个证明，并得到了更高精度的结果，同时讨论了这个结果对学习率的“Warmup-Decay”机制的启发。"
   },
-  "fetched_at": "2026-09-14T12:37:44+00:00",
-  "source_snapshot_sha256": "cbbd46d636a8f74fd506207aa9b1f7f18326514bd4a10a17e58f487e55219c5f",
+  "fetched_at": "2026-10-21T07:53:55+00:00",
+  "source_snapshot_sha256": "eb71f76a320b2c67ec58be5144b1d6160580200b28921d50f30c7ee0127d38a8",
   "validators": {
     "etag": null,
     "last_modified": null

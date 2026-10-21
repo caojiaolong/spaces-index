@@ -6,7 +6,15 @@
     "source_url": "https://spaces.ac.cn/archives/11767",
     "date": "2026-05-29",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "数学研究",
+    "source_tags": [
+      "矩阵",
+      "熵",
+      "SVD",
+      "平均场"
+    ],
+    "source_summary": "本文将“奇异值熵是否越高越好”转化为一个可定量分析的数学命题，核心假设是：固定奇异值熵后，矩阵参数剩余的自由度代表着它的表达能力。随后，我们将自由度最大的位置，理解为熵密度最大的点，通过一系列变换和近似，得到了一个最优熵值。 当然，这个结果本身并不是特别重要，本文的意义更多是为相关问题的分析提供了一个参考框架。"
   },
   "validation": {
     "passed": true,
@@ -30,8 +38,8 @@
     "converter_version": 1,
     "markdown_sha256": "fca6acc8a8d0d0e32e601f1ec3406421d29375b4c05225a95c5bc589e5ff5194"
   },
-  "fetched_at": "2026-09-14T12:31:11+00:00",
+  "fetched_at": "2026-10-21T07:52:25+00:00",
   "source_snapshot_sha256": "8db207dda3e976a9879910a2ebdce18dfc660accf2b45b0af8f27fa15a2d1aa9",
   "images": {},
-  "local_only": true
+  "publication_policy": "config/mirror.json"
 }

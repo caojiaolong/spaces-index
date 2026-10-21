@@ -6,10 +6,19 @@
     "source_url": "https://spaces.ac.cn/archives/11530",
     "date": "2026-01-09",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "数学研究",
+    "source_tags": [
+      "梯度",
+      "学习率",
+      "优化器",
+      "sgd",
+      "炼丹"
+    ],
+    "source_summary": "这篇文章开始，我们考虑基于梯度的学习率调度，它有助于我们了解诸如Warmup、Decay等学习率策略的原理，也能为各种自适应学习率优化器提供有益的参考。"
   },
-  "fetched_at": "2026-09-14T12:37:51+00:00",
-  "source_snapshot_sha256": "da525484859405e5685e6288a23906bea5d5eb21a0fb1d885963849e04bc6146",
+  "fetched_at": "2026-10-21T07:53:59+00:00",
+  "source_snapshot_sha256": "e061c7f1aab9ab8801b40b6b1675e28c2509a3a2f478e5b0bbf55d59b29e95bc",
   "validators": {
     "etag": null,
     "last_modified": null

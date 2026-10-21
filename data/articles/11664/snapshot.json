@@ -6,9 +6,18 @@
     "source_url": "https://spaces.ac.cn/archives/11664",
     "date": "2026-03-19",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "信息时代",
+    "source_tags": [
+      "模型",
+      "优化",
+      "attention",
+      "尺度定律",
+      "深度"
+    ],
+    "source_summary": "本文介绍了我们在模型架构上的最新结果Attention Residuals（AttnRes），它用层间Attention来替代朴素的Residuals，并通过精细的设计使其能满足训练和推理的效率要求，最终成功地将它拓展到足够大的模型上。"
   },
-  "fetched_at": "2026-09-14T12:36:39+00:00",
+  "fetched_at": "2026-10-21T07:53:18+00:00",
   "source_snapshot_sha256": "d2185dbcae675afb2f2c189df38163ebf1aa82c577c651d2d8d82adccc1ff124",
   "validators": {
     "etag": null,

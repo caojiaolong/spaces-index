@@ -6,7 +6,16 @@
     "source_url": "https://spaces.ac.cn/archives/11619",
     "date": "2026-02-22",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "数学研究",
+    "source_tags": [
+      "线性",
+      "对偶",
+      "优化",
+      "梯度",
+      "moe"
+    ],
+    "source_summary": "这篇文章中我们从最优分配角度探讨了MoE的负载均衡问题，得出了一种新的无Aux Loss的负载均衡算法Quantile Balancing，它比已有的Loss-Free方案更稳定和准确，适用于任意值域的Router Scores，并且没有额外的超参数要调。"
   },
   "validation": {
     "passed": true,
@@ -30,8 +39,8 @@
     "converter_version": 1,
     "markdown_sha256": "4ff70935b265fb87c600726773e263a460314075bb3f4ab069753c844e8ce390"
   },
-  "fetched_at": "2026-09-14T12:37:04+00:00",
+  "fetched_at": "2026-10-21T07:53:33+00:00",
   "source_snapshot_sha256": "19333c463855eb7a56a03e4d7092342b95dcc51f984b49285cf9d786d6a90b67",
   "images": {},
-  "local_only": true
+  "publication_policy": "config/mirror.json"
 }

@@ -6,7 +6,16 @@
     "source_url": "https://spaces.ac.cn/archives/11697",
     "date": "2026-04-07",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "数学研究",
+    "source_tags": [
+      "迭代",
+      "矩阵",
+      "SVD",
+      "优化器",
+      "muon"
+    ],
+    "source_summary": "本文对流式幂迭代的实现细节进行了进一步“精雕细琢”，主要改进包括：1. 调整计算顺序将$\\mathcal{O}(nm^2)$复杂度的运算从四次降至一次；2. 利用流式幂迭代的特殊背景简化正则项。这些优化进一步减少了流式幂迭代的计算瓶颈，将计算效率推向极致。"
   },
   "validation": {
     "passed": true,
@@ -30,8 +39,8 @@
     "converter_version": 1,
     "markdown_sha256": "5e14d4ce290f463015489e930ea7ef02196adc343f3b1f2965d9c16e59214231"
   },
-  "fetched_at": "2026-09-14T12:36:19+00:00",
+  "fetched_at": "2026-10-21T07:53:08+00:00",
   "source_snapshot_sha256": "ca4c40ffd1eb8153bfac3b4d4834c98d5ffbd88691c9603a05d07f40829cd39c",
   "images": {},
-  "local_only": true
+  "publication_policy": "config/mirror.json"
 }

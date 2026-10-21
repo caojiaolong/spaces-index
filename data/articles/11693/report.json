@@ -6,7 +6,15 @@
     "source_url": "https://spaces.ac.cn/archives/11693",
     "date": "2026-03-31",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "数学研究",
+    "source_tags": [
+      "代数",
+      "统计",
+      "概率",
+      "几何"
+    ],
+    "source_summary": "本文简单总结了中位数的概念、性质以及它在高维空间中的推广。"
   },
   "validation": {
     "passed": true,
@@ -30,8 +38,8 @@
     "converter_version": 1,
     "markdown_sha256": "1c108185473deed2c624d2df5bce7d2feea99cf8e4ef439562d785c9a85a8f4d"
   },
-  "fetched_at": "2026-09-14T12:36:26+00:00",
+  "fetched_at": "2026-10-21T07:53:11+00:00",
   "source_snapshot_sha256": "4f228acdf0ad22447ab2ffeea235837ee842460497cfb7eb8cf920bdc62b018f",
   "images": {},
-  "local_only": true
+  "publication_policy": "config/mirror.json"
 }

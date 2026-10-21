@@ -6,9 +6,17 @@
     "source_url": "https://spaces.ac.cn/archives/11760",
     "date": "2026-05-22",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "信息时代",
+    "source_tags": [
+      "统计",
+      "损失函数",
+      "RNN",
+      "moe"
+    ],
+    "source_summary": "本文围绕“如何用Loss-Free方式实现序列级负载均衡”展开，从原本的Quantile Balancing（QB）出发，逐步推导出了一种名为Moving Quantile Balancing（MQB）方法，成功实现了这一目的。但序列级均衡是否真的必要、要做到什么程度，仍然是一个开放的问题。"
   },
-  "fetched_at": "2026-09-14T12:31:17+00:00",
+  "fetched_at": "2026-10-21T07:52:29+00:00",
   "source_snapshot_sha256": "2c8815667b6c7a453a2e70b01a179d78058df4cf57977367cd94824604d00a93",
   "validators": {
     "etag": null,

@@ -49,13 +49,13 @@
 \begin{equation}\mathbb{E}[L(\boldsymbol{\theta}_T) - L(\boldsymbol{\theta}^*)] \leq \frac{R^2}{2T\eta_T} + \frac{1}{2\eta_T}\sum_{t=1}^{T}\frac{\eta_t^2 G_t^2}{\max(1,\,T-t)}\label{leq:last-1}\end{equation}<br/>
 由于这个结果也是要求学习率非增的，所以容易证明右端最小值是$R\sqrt{V_T/T}$，在常数学习率取到：<br/>
 \begin{equation}\eta_t = \frac{R}{\sqrt{T V_T}},\qquad V_t = \sum_{k=1}^t\frac{G_k^2}{\max(1,\,t-k)}\end{equation}<br/>
-这个学习率同样也很有意思，它具有跟“迷你版”AdaGrad学习率$\eqref{eq:adagrad-mini}$相似的分母，$V_t$都是梯度平方求和的形式，不同的是这里$k$时刻的梯度被加权$1/\max(1,\,t-k)$，这意味着更关注当前时刻的梯度，这是从平均损失到终点损失带来的新特性，它跟RMSProp、Adam等通过EMA来更新二阶矩的做法已经非常接近了。</p><p>直觉上，因果律版本是$\eta_t = R/\sqrt{t V_t}$，但这个并不够精准，正确版本应该是$\eta_t = R/\sqrt{T V_t}$，代入式$\eqref{leq:last-1}$右端得<br/>
+这个学习率同样也很有意思，它具有跟“迷你版”AdaGrad学习率$\eqref{eq:adagrad-mini}$相似的分母，$V_t$都是梯度平方求和的形式，不同的是这里$k$时刻的梯度被加权$1/\max(1,\,t-k)$，这意味着更关注当前时刻的梯度，这是从平均损失到终点损失带来的新特性，它跟RMSProp、Adam等通过EMA来更新二阶矩的做法已经非常接近了。</p><p>直觉上，因果律版本是$\eta_t = R/\sqrt{t V_t}$，但这个并不够精准，正确版本应该是$\eta_t = R/\sqrt{T \bar{V}_t}$，其中$\bar{V}_t\triangleq\max\limits_{1\leq s\leq t}V_s$是$V_t$的滚动最大值。取包络$\bar{V}_t$是必要的：$V_t$本身未必单调不减，而式$\eqref{leq:last-1}$要求学习率非增，$\bar{V}_t$自动单调不减，从而保证这一点。代入式$\eqref{leq:last-1}$右端得<br/>
 \begin{equation}\begin{aligned}<br/>
-\frac{R^2}{2T\eta_T} + \frac{1}{2\eta_T}\sum_{t=1}^{T}\frac{\eta_t^2 G_t^2}{\max(1,\,T-t)} =&amp;\, \frac{R}{2}\sqrt{\frac{V_T}{T}}\left(1 + \sum_{t=1}^{T}\frac{G_t^2/V_t}{\max(1,\,T-t)}\right) \\<br/>
-\leq&amp;\, \frac{R}{2}\sqrt{\frac{V_T}{T}}\left(1 + \sum_{t=1}^{T}\frac{1}{\max(1,\,T-t)}\right) \\<br/>
-\leq&amp;\, \frac{R}{2}\sqrt{\frac{V_T}{T}} (3 + \ln T)\\<br/>
+\frac{R^2}{2T\eta_T} + \frac{1}{2\eta_T}\sum_{t=1}^{T}\frac{\eta_t^2 G_t^2}{\max(1,\,T-t)} \leq&amp;\, \frac{R}{2}\sqrt{\frac{\bar{V}_T}{T}}\left(1 + \sum_{t=1}^{T}\frac{G_t^2/V_t}{\max(1,\,T-t)}\right) \\<br/>
+\leq&amp;\, \frac{R}{2}\sqrt{\frac{\bar{V}_T}{T}}\left(1 + \sum_{t=1}^{T}\frac{1}{\max(1,\,T-t)}\right) \\<br/>
+\leq&amp;\, \frac{R}{2}\sqrt{\frac{\bar{V}_T}{T}} (3 + \ln T)\\<br/>
 \end{aligned}\end{equation}<br/>
-这里利用了$G_t^2\leq V_t$。相比最优解，同样多出了一个对数增长的因子$\ln T$。</p><h2 id="集大成者">集大成者</h2><p>在<a href="/archives/11494" target="_blank">《让炼丹更科学一些（四）：新恒等式，新学习率》</a>中，我们得到了到目前为止最强的终点损失收敛结果，将它推广到动态梯度，便得到式$\eqref{leq:avg-weighted}$和式$\eqref{leq:last-1}$的“集大成者”：<br/>
+第一个不等号利用了$\bar{V}_t\geq V_t$（即$\eta_t^2\leq R^2/(TV_t)$），第二个不等号利用了$G_t^2\leq V_t$。相比最优解，同样多出了一个对数增长的因子$\ln T$。特别地，当$V_t$本身单调不减时（例如$G_t^2$单调不减），$\bar{V}_t=V_t$，结果与原式完全相同。</p><h2 id="集大成者">集大成者</h2><p>在<a href="/archives/11494" target="_blank">《让炼丹更科学一些（四）：新恒等式，新学习率》</a>中，我们得到了到目前为止最强的终点损失收敛结果，将它推广到动态梯度，便得到式$\eqref{leq:avg-weighted}$和式$\eqref{leq:last-1}$的“集大成者”：<br/>
 \begin{equation}\mathbb{E}[L(\boldsymbol{\theta}_T) - L(\boldsymbol{\theta}^*)] \leq \frac{R^2}{2\eta_{1:T}} + \frac{1}{2}\sum_{t=1}^T\frac{\eta_t^2 G_t^2}{\eta_{\min(t+1, T):T}}\label{leq:last-2}\end{equation}<br/>
 这个结果看起来简单，实际上很复杂，至少我们没法直观看出右端的最小值在何种学习率模式下取到。不过上一篇文章笔者提供了一个思路，那就是连续化近似后用变分法求解，这里我们依然可以尝试一下：设$S_t = \eta_{\min(t+1, T):T}$，那么对于$t &lt; T - 1$有$\eta_t = S_{t-1} - S_t\approx -\dot{S}_t$，统一用$-\dot{S}_t$近似$\eta_t$、用积分近似求和，那么上式右端近似为（代换$S_t = W_t^2$）<br/>
 \begin{equation}\frac{R^2}{2S_0} + \frac{1}{2}\int_0^T \frac{\dot{S}_t^2 G_t^2}{S_t}dt = \frac{R^2}{2W_0^2} + 2\int_0^T \dot{W}_t^2 G_t^2 dt \label{eq:int-approx}\end{equation}<br/>

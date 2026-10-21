@@ -6,9 +6,18 @@
     "source_url": "https://spaces.ac.cn/archives/11647",
     "date": "2026-03-02",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "信息时代",
+    "source_tags": [
+      "不等式",
+      "矩阵",
+      "线性",
+      "优化器",
+      "MuP"
+    ],
+    "source_summary": "最后，这两篇文章的主要结果汇总如下： \\begin{array}{|c|c|} \\hline & \\text{输入} & \\text{参数} & \\text{输出} & \\text{初始标准差} & \\text{最速下降} \\\\ \\hline \\text{Linear} & \\boldsymbol{x} & \\begin{aligned}\\boldsymbol{W}\\in&\\,\\mathbb{R}^{d_{in}\\times d_{out}} \\\\ \\boldsymbol{b}\\in&\\,\\mathbb{R}^{d_{out}} \\end{aligned} & \\boldsymbol{x}\\boldsymbol{W} + \\bol…"
   },
-  "fetched_at": "2026-09-14T12:36:51+00:00",
+  "fetched_at": "2026-10-21T07:53:26+00:00",
   "source_snapshot_sha256": "a36133c18498b8952802c0d3e4aa5f59eb98132c75cdddf41a4a2ee651866241",
   "validators": {
     "etag": null,

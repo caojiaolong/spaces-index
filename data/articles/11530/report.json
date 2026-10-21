@@ -6,7 +6,16 @@
     "source_url": "https://spaces.ac.cn/archives/11530",
     "date": "2026-01-09",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "数学研究",
+    "source_tags": [
+      "梯度",
+      "学习率",
+      "优化器",
+      "sgd",
+      "炼丹"
+    ],
+    "source_summary": "这篇文章开始，我们考虑基于梯度的学习率调度，它有助于我们了解诸如Warmup、Decay等学习率策略的原理，也能为各种自适应学习率优化器提供有益的参考。"
   },
   "validation": {
     "passed": true,
@@ -18,20 +27,20 @@
       "images_exact_sequence": true,
       "code_exact_sequence": true
     },
-    "formula_count": 134,
+    "formula_count": 145,
     "display_formula_count": 28,
     "image_count": 0,
     "heading_count": 8,
     "code_block_count": 0,
-    "source_text_sha256": "faea705910217dd471c2bb9804af091f3443d41783f73c843738b6cdbc65b598",
-    "output_text_sha256": "faea705910217dd471c2bb9804af091f3443d41783f73c843738b6cdbc65b598",
-    "latex_sha256": "9cf67bb17358bf2b4bf9104f8ac89ea90a728edbbcf5dd47c91e4f79f28ff0ca",
-    "body_sha256": "1b381197de94dc0a7c04327918dbc94e2b07a7b4eda188c7910512b67372209d",
+    "source_text_sha256": "bd13dcff21abc1e728f12f8ef8e200b61952aab8556cb05286a7b38b6ab21925",
+    "output_text_sha256": "bd13dcff21abc1e728f12f8ef8e200b61952aab8556cb05286a7b38b6ab21925",
+    "latex_sha256": "09e35463d8ba066d910f8b29b337f74455814a266c2ce12b2a7f4a1d3b7ef7f8",
+    "body_sha256": "d42ff9445c59cf710e89748b04eec6f9a9dc8c5e003d2007526c15ab8776825a",
     "converter_version": 1,
-    "markdown_sha256": "d25ea62244cb5ccde08cf631f01c928e7b5e964b7dbc060cf786f0a754d28ddb"
+    "markdown_sha256": "4ab2bede9db4a94dbacfd2862cb6f6412911d378ad1376501fa20f9a88004021"
   },
-  "fetched_at": "2026-09-14T12:37:51+00:00",
-  "source_snapshot_sha256": "da525484859405e5685e6288a23906bea5d5eb21a0fb1d885963849e04bc6146",
+  "fetched_at": "2026-10-21T07:53:59+00:00",
+  "source_snapshot_sha256": "e061c7f1aab9ab8801b40b6b1675e28c2509a3a2f478e5b0bbf55d59b29e95bc",
   "images": {},
-  "local_only": true
+  "publication_policy": "config/mirror.json"
 }

@@ -6,7 +6,15 @@
     "source_url": "https://spaces.ac.cn/archives/11750",
     "date": "2026-05-15",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "信息时代",
+    "source_tags": [
+      "模型",
+      "函数",
+      "分析",
+      "moe"
+    ],
+    "source_summary": "本文简单梳理了DeepSeek V4中的Hash Routing的基本思想，并重点探讨了它的tid2eid映射表的构造原理。"
   },
   "validation": {
     "passed": true,
@@ -30,8 +38,8 @@
     "converter_version": 1,
     "markdown_sha256": "6108c1125746d841992b08edf74822de4727ff4162c66d44df8cdd3590c8ed6f"
   },
-  "fetched_at": "2026-09-14T12:31:24+00:00",
+  "fetched_at": "2026-10-21T07:52:32+00:00",
   "source_snapshot_sha256": "4786c152e1c7af5ac5961cbc4f5e8006a450c6c4a7fbfc4861711ab875205cd0",
   "images": {},
-  "local_only": true
+  "publication_policy": "config/mirror.json"
 }

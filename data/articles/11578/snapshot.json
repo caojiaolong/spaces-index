@@ -6,9 +6,17 @@
     "source_url": "https://spaces.ac.cn/archives/11578",
     "date": "2026-01-28",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "信息时代",
+    "source_tags": [
+      "翻译",
+      "latex",
+      "论文",
+      "kimi"
+    ],
+    "source_summary": "本文给出了用 kimi-cli 翻译arXiv论文的一个基本用法，也欢迎大家提供更完善的使用案例。"
   },
-  "fetched_at": "2026-09-14T12:37:25+00:00",
+  "fetched_at": "2026-10-21T07:53:44+00:00",
   "source_snapshot_sha256": "fd4b3eeee6e643ebbf06179fd9053b9cd80d081a6ce0f915e1ca755b2a5cf9e5",
   "validators": {
     "etag": null,

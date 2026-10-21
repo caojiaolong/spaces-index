@@ -6,9 +6,18 @@
     "source_url": "https://spaces.ac.cn/archives/11729",
     "date": "2026-04-24",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "信息时代",
+    "source_tags": [
+      "矩阵",
+      "稳定性",
+      "优化器",
+      "muon",
+      "MuP"
+    ],
+    "source_summary": "本文基于最小改动思想，提出了在训练过程中维持参数稳定性的一般框架，包含Post Clip与Pre Decay两种方案。在谱范数下，它们进一步可以演化成奇异值裁剪与谱权重衰减。这些操作旨在保证参数关键范数有界的同时，尽可能降低对训练动力学的干预。"
   },
-  "fetched_at": "2026-09-14T12:36:00+00:00",
+  "fetched_at": "2026-10-21T07:52:44+00:00",
   "source_snapshot_sha256": "d997fd19f3e6b17dd039fa5504f4249b846376a73eb97c24260394c8c3d85f48",
   "validators": {
     "etag": null,

@@ -6,9 +6,18 @@
     "source_url": "https://spaces.ac.cn/archives/11654",
     "date": "2026-03-12",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "数学研究",
+    "source_tags": [
+      "迭代",
+      "矩阵",
+      "SVD",
+      "优化器",
+      "muon"
+    ],
+    "source_summary": "这篇文章主要介绍了通过流式幂迭代（Streaming Power Iteration）来计算SVD、继而实现Muon的思路，它每一步只需做一次QR分解，相比标准的Newton-Schulz迭代实现，这一思路具有更灵活的拓展性。"
   },
-  "fetched_at": "2026-09-14T12:36:45+00:00",
+  "fetched_at": "2026-10-21T07:53:22+00:00",
   "source_snapshot_sha256": "cb391ece8b489b758e43769a58a26328671c345c0d7f42537831a69cfa38cc8d",
   "validators": {
     "etag": null,

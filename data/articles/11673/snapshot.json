@@ -6,9 +6,18 @@
     "source_url": "https://spaces.ac.cn/archives/11673",
     "date": "2026-03-26",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "数学研究",
+    "source_tags": [
+      "迭代",
+      "矩阵",
+      "SVD",
+      "优化器",
+      "muon"
+    ],
+    "source_summary": "这篇文章介绍了进一步流式幂迭代的技巧，其本质是设法降低矩阵的条件数，从而提高Cholesky QR的成功率。"
   },
-  "fetched_at": "2026-09-14T12:36:32+00:00",
+  "fetched_at": "2026-10-21T07:53:15+00:00",
   "source_snapshot_sha256": "b51d014051f8dabe3d398bb9d50bd911b9def40e6e8cd0bb59cd3cccae57b67a",
   "validators": {
     "etag": null,

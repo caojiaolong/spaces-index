@@ -6,9 +6,18 @@
     "source_url": "https://spaces.ac.cn/archives/11719",
     "date": "2026-04-17",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "数学研究",
+    "source_tags": [
+      "迭代",
+      "矩阵",
+      "优化器",
+      "谱范数",
+      "muon"
+    ],
+    "source_summary": "本文主要介绍了另外两个运用“流式”思想的例子，分别是以极小的额外成本实现将参数投影到正交（Stiefel）流形，或者将参数谱范数裁剪到不超过1。这些例子再次体现了流式思想的奇妙之处：许多看似需要一次性完成的复杂计算，都可以被拆解为渐进式的微调操作，并融入到训练的每一步中。"
   },
-  "fetched_at": "2026-09-14T12:36:06+00:00",
+  "fetched_at": "2026-10-21T07:53:01+00:00",
   "source_snapshot_sha256": "c2aefb59f534f5ea4bc997a5edb2e2dd1505e32efeef15e05a02f3d73daddcd7",
   "validators": {
     "etag": null,

@@ -6,7 +6,16 @@
     "source_url": "https://spaces.ac.cn/archives/11540",
     "date": "2026-01-16",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "数学研究",
+    "source_tags": [
+      "优化",
+      "学习率",
+      "优化器",
+      "sgd",
+      "炼丹"
+    ],
+    "source_summary": "上文末我们提到终点损失的最优学习率策略的证明困难问题，而在这篇文章中，我们通过自上而下的、小心谨慎的放缩和构造，完成了这个证明，并得到了更高精度的结果，同时讨论了这个结果对学习率的“Warmup-Decay”机制的启发。"
   },
   "validation": {
     "passed": true,
@@ -23,15 +32,15 @@
     "image_count": 1,
     "heading_count": 8,
     "code_block_count": 0,
-    "source_text_sha256": "4b73f7dd5e9ace48562b13d06aaa39bb1a11a0379952ed2ff0d718a14c9654f4",
-    "output_text_sha256": "4b73f7dd5e9ace48562b13d06aaa39bb1a11a0379952ed2ff0d718a14c9654f4",
-    "latex_sha256": "0ddcc01f0081060d79e46cdd350a939411e0e3ad7315bdac965c0c168db98744",
-    "body_sha256": "d9320b6d19eb6ec5d1c65d2c96a69c9bbecb6b4801c901255668de7ec7bca6f2",
+    "source_text_sha256": "85f801a8354da77c5172cbb40fce1c3cbd950826aa94c307b0761e37906b5667",
+    "output_text_sha256": "85f801a8354da77c5172cbb40fce1c3cbd950826aa94c307b0761e37906b5667",
+    "latex_sha256": "2ee2fb8a0c6b11b3d6fb33312cf1713a5993a546ed14de219cff842f113a87df",
+    "body_sha256": "409f5246af0561beeda64bfbb77d051ec28ad66f75ad1c10084dd7c69db45ff5",
     "converter_version": 1,
-    "markdown_sha256": "701f7d40e8c5f940588f43b7475298506d7f7ed11e7d44855bbcfa72a5762ab5"
+    "markdown_sha256": "6a80c26a62d93548991661a71fb82f569dfcc4575cb772682a2c27391a9d6f2c"
   },
-  "fetched_at": "2026-09-14T12:37:44+00:00",
-  "source_snapshot_sha256": "cbbd46d636a8f74fd506207aa9b1f7f18326514bd4a10a17e58f487e55219c5f",
+  "fetched_at": "2026-10-21T07:53:55+00:00",
+  "source_snapshot_sha256": "eb71f76a320b2c67ec58be5144b1d6160580200b28921d50f30c7ee0127d38a8",
   "images": {},
-  "local_only": true
+  "publication_policy": "config/mirror.json"
 }

@@ -6,9 +6,17 @@
     "source_url": "https://spaces.ac.cn/archives/11563",
     "date": "2026-01-26",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "数学研究",
+    "source_tags": [
+      "矩阵",
+      "线性",
+      "RNN",
+      "attention"
+    ],
+    "source_summary": "本文给出了DeltaNet中的核心逆矩阵的有界性的两个证明。"
   },
-  "fetched_at": "2026-09-14T12:37:31+00:00",
+  "fetched_at": "2026-10-21T07:53:48+00:00",
   "source_snapshot_sha256": "c62436d5a80af66a01f1003b48454f137a525100ae6d7624bf2e0a2f3a411aeb",
   "validators": {
     "etag": null,

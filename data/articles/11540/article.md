@@ -99,7 +99,7 @@ q_T =&\, \frac{1}{w_{1:T}}\sum_{t=1}^T w_t q_t + \sum_{k=1}^{T-1}\left(\frac{1}{
 
 一些Refined学习率的例子
 
-最后，上述结果是针对SGD的，有$w_t\propto \mathbb{E}[\Vert\boldsymbol{g}(\boldsymbol{x}_t, \boldsymbol{\theta}_t)\Vert^{-2}]$，实践中我们只能用$\Vert\boldsymbol{g}(\boldsymbol{x}_t, \boldsymbol{\theta}_t)\Vert^2$近似，这里的$\Vert\cdot\Vert$是L2模长；而对于Adam等自适应学习率优化器，论文建议用$w_t\propto \mathbb{E}[\Vert\boldsymbol{g}(\boldsymbol{x}_t, \boldsymbol{\theta}_t)\Vert_1^{-1}]$，即反比于L1模长。关于自适应学习率优化器，我们后面的文章再谈。
+最后，上述结果是针对SGD的，有$w_t\propto \mathbb{E}[\Vert\boldsymbol{g}(\boldsymbol{x}_t, \boldsymbol{\theta}_t)\Vert^2]^{-1}$，实践中我们只能用$\Vert\boldsymbol{g}(\boldsymbol{x}_t, \boldsymbol{\theta}_t)\Vert^{-2}$近似，这里的$\Vert\cdot\Vert$是L2模长；而对于Adam等自适应学习率优化器，论文建议用$w_t\propto \mathbb{E}[\Vert\boldsymbol{g}(\boldsymbol{x}_t, \boldsymbol{\theta}_t)\Vert_1]^{-1}$，即反比于L1模长。关于自适应学习率优化器，我们后面的文章再谈。
 
 ## 显式版本
 

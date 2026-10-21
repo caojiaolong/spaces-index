@@ -6,7 +6,15 @@
     "source_url": "https://spaces.ac.cn/archives/11784",
     "date": "2026-06-19",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "数学研究",
+    "source_tags": [
+      "最优",
+      "分析",
+      "优化",
+      "损失函数"
+    ],
+    "source_summary": "本文介绍了“强制间隔投影（Margin-Enforcing Projection，MEP）”这一运算：给定一个分数向量，把它投影到满足“正类最小值至少比负类最大值大$m$”的最近向量上。这可以为传统的Margin Learning提供一些新的思路。"
   },
   "validation": {
     "passed": true,
@@ -30,8 +38,8 @@
     "converter_version": 1,
     "markdown_sha256": "731d69bff5d621cbbe39d1723193d99cad6b12b0dd67ea8e1b79d2c0a989b252"
   },
-  "fetched_at": "2026-09-14T12:30:46+00:00",
+  "fetched_at": "2026-10-21T07:52:22+00:00",
   "source_snapshot_sha256": "3232a6f0ecd26637a1c9bc7695d738ab68c27554e6867772b2b8f5bf2bddb296",
   "images": {},
-  "local_only": true
+  "publication_policy": "config/mirror.json"
 }

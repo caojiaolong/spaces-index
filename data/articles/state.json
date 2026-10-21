@@ -8,7 +8,7 @@
   },
   "11787": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:18:11+00:00",
+    "checked_at": "2026-10-21T07:52:18+00:00",
     "title": "矩阵函数近似中的暴力美学",
     "markdown_sha256": "a125ce10fc7d168bc599762f6368d95260f843a1b99e5237489493f3089e9f1b",
     "converter_version": 1
@@ -113,7 +113,7 @@
   },
   "11784": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:18:11+00:00",
+    "checked_at": "2026-10-21T07:52:22+00:00",
     "title": "强制间隔投影（Margin-Enforcing Projection）",
     "markdown_sha256": "731d69bff5d621cbbe39d1723193d99cad6b12b0dd67ea8e1b79d2c0a989b252",
     "converter_version": 1
@@ -141,163 +141,163 @@
   },
   "11767": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:18:12+00:00",
+    "checked_at": "2026-10-21T07:52:25+00:00",
     "title": "矩阵参数的奇异值熵越高越好吗？",
     "markdown_sha256": "fca6acc8a8d0d0e32e601f1ec3406421d29375b4c05225a95c5bc589e5ff5194",
     "converter_version": 1
   },
   "11760": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:18:12+00:00",
+    "checked_at": "2026-10-21T07:52:29+00:00",
     "title": "MoE环游记：8、强制序列级均衡",
     "markdown_sha256": "cc4057da8104994bcd341028b99a4371f67f2a055d78514d39084b09fe98b2ee",
     "converter_version": 1
   },
   "11750": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:18:12+00:00",
+    "checked_at": "2026-10-21T07:52:32+00:00",
     "title": "DeepSeek V4的tid2eid是怎么来的？",
     "markdown_sha256": "6108c1125746d841992b08edf74822de4727ff4162c66d44df8cdd3590c8ed6f",
     "converter_version": 1
   },
   "11738": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:18:12+00:00",
+    "checked_at": "2026-10-21T07:52:37+00:00",
     "title": "直接以FID为Loss：从梯度计算到流式训练",
     "markdown_sha256": "22c1f5e5420e1aa83e758cdf5889414e2f4a3f4476efc7130b30f53139a53639",
     "converter_version": 1
   },
   "11736": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:18:13+00:00",
+    "checked_at": "2026-10-21T07:52:40+00:00",
     "title": "如何更科学地估计矩阵的谱范数？",
     "markdown_sha256": "2f797025cbb8365d6768d735c25919fa855d13da9e5f11cf31fba4c0720ba7cf",
     "converter_version": 1
   },
   "11729": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:18:13+00:00",
+    "checked_at": "2026-10-21T07:52:44+00:00",
     "title": "MuP之上：4. 坚守参数的稳定性",
     "markdown_sha256": "f6d421d08e58206329ef244b1aa3ceb79fbd282f57298e6c1833d2bce1925b1c",
     "converter_version": 1
   },
   "11719": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:18:13+00:00",
+    "checked_at": "2026-10-21T07:53:01+00:00",
     "title": "基于流式幂迭代的Muon实现：5. 延伸",
     "markdown_sha256": "aa9ef3d534653ba71c4053032bb09177b4dbe08c89a7478d1bd78a9062caf287",
     "converter_version": 1
   },
   "11710": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:18:13+00:00",
+    "checked_at": "2026-10-21T07:53:04+00:00",
     "title": "基于流式幂迭代的Muon实现：4. 原理",
     "markdown_sha256": "6b8814209972409f66b2a18f525a7bc48dc6ed67c895e8b19e168d4d464e5d4a",
     "converter_version": 1
   },
   "11697": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:18:13+00:00",
+    "checked_at": "2026-10-21T07:53:08+00:00",
     "title": "基于流式幂迭代的Muon实现：3. 雕琢",
     "markdown_sha256": "5e14d4ce290f463015489e930ea7ef02196adc343f3b1f2965d9c16e59214231",
     "converter_version": 1
   },
   "11693": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:18:14+00:00",
+    "checked_at": "2026-10-21T07:53:11+00:00",
     "title": "中位数（Median）简介",
     "markdown_sha256": "1c108185473deed2c624d2df5bce7d2feea99cf8e4ef439562d785c9a85a8f4d",
     "converter_version": 1
   },
   "11673": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:18:14+00:00",
+    "checked_at": "2026-10-21T07:53:15+00:00",
     "title": "基于流式幂迭代的Muon实现：2. 加速",
     "markdown_sha256": "a706f00efbc4182e2eaa843d2a827be0ac26490cd14b98f3f42fe75631d75a23",
     "converter_version": 1
   },
   "11664": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:18:14+00:00",
+    "checked_at": "2026-10-21T07:53:18+00:00",
     "title": "Attention Residuals 回忆录",
     "markdown_sha256": "136db42bc8afe05f8b70f246cb4f98888f7b0a6ab361c8dafbbb0da3a62e7958",
     "converter_version": 1
   },
   "11654": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:18:14+00:00",
+    "checked_at": "2026-10-21T07:53:22+00:00",
     "title": "基于流式幂迭代的Muon实现：1. 初识",
     "markdown_sha256": "007615f3525de88b08ac510d5fb4ff1f03cc132bc5131ab5ee35f3254bf39b67",
     "converter_version": 1
   },
   "11647": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:18:15+00:00",
+    "checked_at": "2026-10-21T07:53:26+00:00",
     "title": "MuP之上：3. 特殊情况特殊处理",
     "markdown_sha256": "41fcff7301c099835fe6df86281707d102c605c30b0ff8e0be6a5738063be7a1",
     "converter_version": 1
   },
   "11626": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:18:15+00:00",
+    "checked_at": "2026-10-21T07:53:30+00:00",
     "title": "MoE环游记：7、动态激活极简解",
     "markdown_sha256": "be693c4585b315244f336655b950c03d6b55366814e9535b51fdda18a629c376",
     "converter_version": 1
   },
   "11619": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:18:15+00:00",
+    "checked_at": "2026-10-21T07:53:33+00:00",
     "title": "MoE环游记：6、最优分配促均衡",
     "markdown_sha256": "4ff70935b265fb87c600726773e263a460314075bb3f4ab069753c844e8ce390",
     "converter_version": 1
   },
   "11605": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:18:15+00:00",
+    "checked_at": "2026-10-21T07:53:37+00:00",
     "title": "MuP之上：2. 线性层与最速下降",
     "markdown_sha256": "831928e2e4ecff3fd24c8789942049dd81347c5e44113bdcd47326e9fbb42600",
     "converter_version": 1
   },
   "11593": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:18:15+00:00",
+    "checked_at": "2026-10-21T07:53:41+00:00",
     "title": "Adam优化器的最优超参数是β1=β2 ？",
     "markdown_sha256": "0966ec520ce62ae2b3f6c451f4185abab8a510060d5d61d7aa7ae35798f851a9",
     "converter_version": 1
   },
   "11578": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:18:16+00:00",
+    "checked_at": "2026-10-21T07:53:44+00:00",
     "title": "一行代码将arXiv论文翻译成中文版",
     "markdown_sha256": "1c7d7a32011b5ffcd3553ef8232183e86c99c3ad2f623d63e86648925ef7aa92",
     "converter_version": 1
   },
   "11563": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:18:16+00:00",
+    "checked_at": "2026-10-21T07:53:48+00:00",
     "title": "DeltaNet的核心逆矩阵的元素总是在[-1, 1]内",
     "markdown_sha256": "a74ba3357d006ed4760e7ef8d2980ae3f6ce9ef21a202a8297b605db83a50726",
     "converter_version": 1
   },
   "11549": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:18:16+00:00",
+    "checked_at": "2026-10-21T07:53:51+00:00",
     "title": "为什么我们偏爱各向同性？基于最速下降的理解",
     "markdown_sha256": "40e41429de9d85218175de114db2bdc133df87274cb8ba3f896a60a1231fb040",
     "converter_version": 1
   },
   "11540": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:18:16+00:00",
+    "checked_at": "2026-10-21T07:53:55+00:00",
     "title": "让炼丹更科学一些（六）：自上而下的精妙构造",
-    "markdown_sha256": "701f7d40e8c5f940588f43b7475298506d7f7ed11e7d44855bbcfa72a5762ab5",
+    "markdown_sha256": "6a80c26a62d93548991661a71fb82f569dfcc4575cb772682a2c27391a9d6f2c",
     "converter_version": 1
   },
   "11530": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:18:16+00:00",
+    "checked_at": "2026-10-21T07:53:59+00:00",
     "title": "让炼丹更科学一些（五）：基于梯度精调学习率",
-    "markdown_sha256": "d25ea62244cb5ccde08cf631f01c928e7b5e964b7dbc060cf786f0a754d28ddb",
+    "markdown_sha256": "4ab2bede9db4a94dbacfd2862cb6f6412911d378ad1376501fa20f9a88004021",
     "converter_version": 1
   },
   "11494": {
@@ -8464,7 +8464,7 @@
   },
   "132": {
     "status": "conversion_failed",
-    "checked_at": "2026-10-20T07:48:21+00:00",
+    "checked_at": "2026-10-21T07:53:59+00:00",
     "title": "一道从小学到高中都可能考到的题目",
     "error": "Unreviewed legacy element: a<b，则有<br",
     "converter_version": 1,

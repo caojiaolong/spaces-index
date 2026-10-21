@@ -6,7 +6,16 @@
     "source_url": "https://spaces.ac.cn/archives/11710",
     "date": "2026-04-13",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "数学研究",
+    "source_tags": [
+      "迭代",
+      "矩阵",
+      "SVD",
+      "优化器",
+      "muon"
+    ],
+    "source_summary": "这篇文章主要补充讨论了一下流式幂迭代的部分数学推导，包括幂迭代的收敛性、QR分解的预处理器、Cholesky分解的简单介绍等，希望能帮助大家从原理上更好地理解这个方法。"
   },
   "validation": {
     "passed": true,
@@ -30,8 +39,8 @@
     "converter_version": 1,
     "markdown_sha256": "6b8814209972409f66b2a18f525a7bc48dc6ed67c895e8b19e168d4d464e5d4a"
   },
-  "fetched_at": "2026-09-14T12:36:13+00:00",
+  "fetched_at": "2026-10-21T07:53:04+00:00",
   "source_snapshot_sha256": "d25268e31128ab7355242622808c67a7d0a10e06b043a2256e00b84bce949879",
   "images": {},
-  "local_only": true
+  "publication_policy": "config/mirror.json"
 }

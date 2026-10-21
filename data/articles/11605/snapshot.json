@@ -6,9 +6,18 @@
     "source_url": "https://spaces.ac.cn/archives/11605",
     "date": "2026-02-15",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "信息时代",
+    "source_tags": [
+      "矩阵",
+      "线性",
+      "优化器",
+      "muon",
+      "MuP"
+    ],
+    "source_summary": "本文以上一篇文章的三个稳定性指标为出发点，针对线性层展示了“复现”MuP和Muon相关结论的过程。接下来，我们会将这套方法论，用于为线性层以外的参数“定制”初始化和优化器等内容。"
   },
-  "fetched_at": "2026-09-14T12:37:13+00:00",
+  "fetched_at": "2026-10-21T07:53:37+00:00",
   "source_snapshot_sha256": "9b881de1af638bf3670e3dfbc4bbb5561c9f2b660bcc2effd0ae3016bdc45d57",
   "validators": {
     "etag": null,

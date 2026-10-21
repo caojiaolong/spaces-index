@@ -6,9 +6,17 @@
     "source_url": "https://spaces.ac.cn/archives/11549",
     "date": "2026-01-20",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "数学研究",
+    "source_tags": [
+      "几何",
+      "梯度",
+      "sgd",
+      "muon"
+    ],
+    "source_summary": "这篇文章我们讨论了一个问题：参数层面上的最速下降，何时才刚好是特征层面上的最速下降？答案正是标题所述的“各向同性”，由此我们得出为什么偏爱各向同性的一个解释——它能同步两个层面上的最速下降，提高训练效率。"
   },
-  "fetched_at": "2026-09-14T12:37:38+00:00",
+  "fetched_at": "2026-10-21T07:53:51+00:00",
   "source_snapshot_sha256": "ce98e4a88cbb5c142c5e5a6821b9ee9c13a319dcf844cca0dded3af6b7f9a683",
   "validators": {
     "etag": null,

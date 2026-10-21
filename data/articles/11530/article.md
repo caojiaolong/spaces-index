@@ -100,13 +100,13 @@
 \begin{equation}\eta_t = \frac{R}{\sqrt{T V_T}},\qquad V_t = \sum_{k=1}^t\frac{G_k^2}{\max(1,\,t-k)}\end{equation}
 这个学习率同样也很有意思，它具有跟“迷你版”AdaGrad学习率$\eqref{eq:adagrad-mini}$相似的分母，$V_t$都是梯度平方求和的形式，不同的是这里$k$时刻的梯度被加权$1/\max(1,\,t-k)$，这意味着更关注当前时刻的梯度，这是从平均损失到终点损失带来的新特性，它跟RMSProp、Adam等通过EMA来更新二阶矩的做法已经非常接近了。
 
-直觉上，因果律版本是$\eta_t = R/\sqrt{t V_t}$，但这个并不够精准，正确版本应该是$\eta_t = R/\sqrt{T V_t}$，代入式$\eqref{leq:last-1}$右端得
+直觉上，因果律版本是$\eta_t = R/\sqrt{t V_t}$，但这个并不够精准，正确版本应该是$\eta_t = R/\sqrt{T \bar{V}_t}$，其中$\bar{V}_t\triangleq\max\limits_{1\leq s\leq t}V_s$是$V_t$的滚动最大值。取包络$\bar{V}_t$是必要的：$V_t$本身未必单调不减，而式$\eqref{leq:last-1}$要求学习率非增，$\bar{V}_t$自动单调不减，从而保证这一点。代入式$\eqref{leq:last-1}$右端得
 \begin{equation}\begin{aligned}
-\frac{R^2}{2T\eta_T} + \frac{1}{2\eta_T}\sum_{t=1}^{T}\frac{\eta_t^2 G_t^2}{\max(1,\,T-t)} =&\, \frac{R}{2}\sqrt{\frac{V_T}{T}}\left(1 + \sum_{t=1}^{T}\frac{G_t^2/V_t}{\max(1,\,T-t)}\right) \\
-\leq&\, \frac{R}{2}\sqrt{\frac{V_T}{T}}\left(1 + \sum_{t=1}^{T}\frac{1}{\max(1,\,T-t)}\right) \\
-\leq&\, \frac{R}{2}\sqrt{\frac{V_T}{T}} (3 + \ln T)\\
+\frac{R^2}{2T\eta_T} + \frac{1}{2\eta_T}\sum_{t=1}^{T}\frac{\eta_t^2 G_t^2}{\max(1,\,T-t)} \leq&\, \frac{R}{2}\sqrt{\frac{\bar{V}_T}{T}}\left(1 + \sum_{t=1}^{T}\frac{G_t^2/V_t}{\max(1,\,T-t)}\right) \\
+\leq&\, \frac{R}{2}\sqrt{\frac{\bar{V}_T}{T}}\left(1 + \sum_{t=1}^{T}\frac{1}{\max(1,\,T-t)}\right) \\
+\leq&\, \frac{R}{2}\sqrt{\frac{\bar{V}_T}{T}} (3 + \ln T)\\
 \end{aligned}\end{equation}
-这里利用了$G_t^2\leq V_t$。相比最优解，同样多出了一个对数增长的因子$\ln T$。
+第一个不等号利用了$\bar{V}_t\geq V_t$（即$\eta_t^2\leq R^2/(TV_t)$），第二个不等号利用了$G_t^2\leq V_t$。相比最优解，同样多出了一个对数增长的因子$\ln T$。特别地，当$V_t$本身单调不减时（例如$G_t^2$单调不减），$\bar{V}_t=V_t$，结果与原式完全相同。
 
 ## 集大成者
 
