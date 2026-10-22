@@ -6,9 +6,17 @@
     "source_url": "https://spaces.ac.cn/archives/11280",
     "date": "2025-09-10",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "数学研究",
+    "source_tags": [
+      "学习率",
+      "优化器",
+      "尺度定律",
+      "平均场"
+    ],
+    "source_summary": "这篇文章我们使用了平均场近似重新计算了SignSGD和SoftSignSGD的结论，大大简化了相关计算过程，并初步思考了这些计算的一般规律。"
   },
-  "fetched_at": "2026-09-14T12:39:54+00:00",
+  "fetched_at": "2026-10-22T07:48:10+00:00",
   "source_snapshot_sha256": "88e1628789efe5f31ae9ac8abe194b2cd67cc2423b15f76d394021b70787ed9d",
   "validators": {
     "etag": null,

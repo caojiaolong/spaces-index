@@ -6,7 +6,16 @@
     "source_url": "https://spaces.ac.cn/archives/11285",
     "date": "2025-09-15",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "数学研究",
+    "source_tags": [
+      "学习率",
+      "优化器",
+      "尺度定律",
+      "muon",
+      "平均场"
+    ],
+    "source_summary": "这篇文章我们尝试用平均场近似对Muon进行了简单分析，结论是它学习率与Batch Size的关系跟SignSGD一致，并无新鲜规律。"
   },
   "validation": {
     "passed": true,
@@ -30,8 +39,8 @@
     "converter_version": 1,
     "markdown_sha256": "2da3fdac23086d5b49d16dbd4db190b37f72a0d21852991dbe82a9d7cb24e94d"
   },
-  "fetched_at": "2026-09-14T12:39:47+00:00",
+  "fetched_at": "2026-10-22T07:48:05+00:00",
   "source_snapshot_sha256": "a7c0000895ab09beac1501199951e1b43c1164a5bcfe3c2226e5db0960b84ea0",
   "images": {},
-  "local_only": true
+  "publication_policy": "config/mirror.json"
 }

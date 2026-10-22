@@ -6,7 +6,15 @@
     "source_url": "https://spaces.ac.cn/archives/11416",
     "date": "2025-11-19",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "信息时代",
+    "source_tags": [
+      "矩阵",
+      "优化",
+      "优化器",
+      "muon"
+    ],
+    "source_summary": null
   },
   "validation": {
     "passed": true,
@@ -30,8 +38,8 @@
     "converter_version": 1,
     "markdown_sha256": "b69f63748b3658ad2db150a8252a7948a622db30afc8850e36a1ff6a786cb0e8"
   },
-  "fetched_at": "2026-09-14T12:38:36+00:00",
+  "fetched_at": "2026-10-22T07:47:20+00:00",
   "source_snapshot_sha256": "526154e3e5f1a0fffa619483209e9895c28834aef4fd67bea15fae5cd961b678",
   "images": {},
-  "local_only": true
+  "publication_policy": "config/mirror.json"
 }

@@ -6,7 +6,15 @@
     "source_url": "https://spaces.ac.cn/archives/11459",
     "date": "2025-12-05",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "数学研究",
+    "source_tags": [
+      "最优",
+      "梯度",
+      "学习率",
+      "平均场"
+    ],
+    "source_summary": "本文从滑动平均的视角来理解权重衰减（WD）和学习率（LR），并探讨了在该视角下最优的WD Schedule和LR Schedule。"
   },
   "validation": {
     "passed": true,
@@ -30,8 +38,8 @@
     "converter_version": 1,
     "markdown_sha256": "5f6372ba203e9e1727f18161a2f5b3ef1ffc838d290f11ce4d9dc9b08d85b5ee"
   },
-  "fetched_at": "2026-09-14T12:38:23+00:00",
+  "fetched_at": "2026-10-22T07:47:13+00:00",
   "source_snapshot_sha256": "662fa13e6bb3dbd81ff5d495d693ad62deb5404cb05d558370a8c5271ab8b455",
   "images": {},
-  "local_only": true
+  "publication_policy": "config/mirror.json"
 }

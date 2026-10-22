@@ -16,7 +16,7 @@
 
 在文章[《线性注意力简史：从模仿、创新到反哺》](<https://spaces.ac.cn/archives/11033>)中，我们介绍了DeltaNet，它把Delta Rule带进了线性注意力中，成为其强有力的工具之一，并构成[GDN](<https://papers.cool/arxiv/2412.06464>)、[KDA](<https://papers.cool/arxiv/2510.26692>)等后续工作的基础。不过，那篇文章我们主要着重于DeltaNet的整体思想，并未涉及到太多技术细节——这篇文章我们来讨论其中之一：DeltaNet及其后续工作都给$\boldsymbol{Q}、\boldsymbol{K}$加上了L2 Normalize，这是为什么呢？
 
-当然，直接从特征值的角度解释这一操作并不困难，但个人总感觉还差点意思。前几天笔者在论文[《Error\-Free Linear Attention is a Free Lunch: Exact Solution from Continuous\-Time Dynamics》](<https://papers.cool/arxiv/2512.12602>)学习到了一个新理解，感觉也有可取之处，特来分享一波。
+当然，直接从奇异值的角度解释这一操作并不困难，但个人总感觉还差点意思。前几天笔者在论文[《Error\-Free Linear Attention is a Free Lunch: Exact Solution from Continuous\-Time Dynamics》](<https://papers.cool/arxiv/2512.12602>)学习到了一个新理解，感觉也有可取之处，特来分享一波。
 
 ## 基本解释
 
@@ -24,7 +24,7 @@ DeltaNet的递归格式是
 \begin{equation}\boldsymbol{S}_t = \boldsymbol{S}_{t-1} - \eta_t (\boldsymbol{S}_{t-1} \boldsymbol{k}_t - \boldsymbol{v}_t)\boldsymbol{k}_t^{\top} = \boldsymbol{S}_{t-1}(\boldsymbol{I} - \eta_t \boldsymbol{k}_t\boldsymbol{k}_t^{\top}) + \eta_t \boldsymbol{v}_t \boldsymbol{k}_t^{\top}\label{eq:delta}\end{equation}
 从TTT的角度看，这是用SGD优化器、以$\eta_t$的学习率对损失$\frac{1}{2}\Vert\boldsymbol{S}\boldsymbol{k} - \boldsymbol{v}\Vert^2$做在线优化（训练参数是$\boldsymbol{S}$）。我们知道优化器往往对学习率比较敏感，尤其是SGD这种非自适应学习率优化器，而在DeltaNet中则表现为对转移矩阵$\boldsymbol{I} - \eta_t \boldsymbol{k}_t\boldsymbol{k}_t^{\top}$的一些额外要求。
 
-具体来说，由于不同时间的转移矩阵在递归过程中是连乘起来的，所以为了避免数值爆炸，转移矩阵不能出现大于1或小于\-1的特征值。而对于矩阵$\boldsymbol{I} - \eta_t \boldsymbol{k}_t\boldsymbol{k}_t^{\top}$来说，它的特征值有一个是$1 - \eta_t\Vert\boldsymbol{k}_t\Vert^2$、剩下都是1（请证明这一点），由此我们可以得到约束
+具体来说，由于不同时间的转移矩阵在递归过程中是连乘起来的，所以为了避免数值爆炸，转移矩阵不能出现大于1的奇异值，而矩阵$\boldsymbol{I} - \eta_t \boldsymbol{k}_t\boldsymbol{k}_t^{\top}$是对称矩阵，它的奇异值即特征值的绝对值，然后它的特征值有一个是$1 - \eta_t\Vert\boldsymbol{k}_t\Vert^2$、剩下都是1（请证明这一点），由此我们可以得到约束
 \begin{equation}-1 \leq 1 - \eta_t\Vert\boldsymbol{k}_t\Vert^2 \leq 1\label{eq:cond}\end{equation}
 为了实现该约束，常见做法是给$\boldsymbol{k}_t$加L2 Normalize、给$\eta_t$加Sigmoid，这样全体特征值就都在$(0, 1]$内了，这便是$\boldsymbol{K}$加L2 Normalize的来源。至于$\boldsymbol{Q}$的L2 Normalize本质上不是必要的，更多是出于对称性考虑“顺手”加上的，这跟Short Conv的情况类似，给$\boldsymbol{K}$加Short Conv才是最关键的<sup>&#91;[参考](<https://spaces.ac.cn/archives/11320>)&#93;</sup>。
 
@@ -44,7 +44,7 @@ DeltaNet的递归格式是
 \begin{equation}\frac{d}{dt}\boldsymbol{S}_t = \boldsymbol{S}_t\underbrace{(-\boldsymbol{k}_t\boldsymbol{k}_t^{\top})}_{\boldsymbol{A}_t} + \underbrace{\boldsymbol{v}_t \boldsymbol{k}_t^{\top}}_{\boldsymbol{B}_t}\label{eq:ode}\end{equation}
 然后指出之所以会出现数值爆炸的异常，是因为离散化格式的精度不够高，所以提出直接用求解微分方程来构建递归，而不是近似地离散化。因为$[t-\eta_t,t]$区间内$\boldsymbol{A}_t$和$\boldsymbol{B}_t$都是常量，所以求从$t-\eta_t$到$t$的递归形式相当于解一个常系数线性微分方程，一般结果是
 \begin{equation}\boldsymbol{S}_t = \boldsymbol{S}_{t-\eta_t} e^{\eta_t \boldsymbol{A}_t} + \boldsymbol{B}_t \boldsymbol{A}_t^{-1}(e^{\eta_t \boldsymbol{A}_t} - \boldsymbol{I})\label{eq:S-t-eta}\end{equation}
-重新将$\boldsymbol{S}_{t+\eta_t}$换回记号$\boldsymbol{S}_{t-1}$，然后代入$\boldsymbol{A}_t,\boldsymbol{B}_t$的表达式，化简得到
+重新将$\boldsymbol{S}_{t-\eta_t}$换回记号$\boldsymbol{S}_{t-1}$，然后代入$\boldsymbol{A}_t,\boldsymbol{B}_t$的表达式，化简得到
 \begin{equation}\boldsymbol{S}_t = \boldsymbol{S}_{t-1} \left(\boldsymbol{I} - \frac{1 - e^{-\eta_t\Vert\boldsymbol{k}_t\Vert^2}}{\Vert\boldsymbol{k}_t\Vert^2}\boldsymbol{k}_t\boldsymbol{k}_t^{\top}\right) + \frac{1 - e^{-\eta_t\Vert\boldsymbol{k}_t\Vert^2}}{\Vert\boldsymbol{k}_t\Vert^2}\boldsymbol{v}_t \boldsymbol{k}_t^{\top}\label{eq:ode-deltanet}\end{equation}
 这便是我们要推的最终结果，原论文称之为“EFLA（Error\-Free Linear Attention）”，它相当于将$\eta_t$换成了$\frac{1 - e^{-\eta_t\Vert\boldsymbol{k}_t\Vert^2}}{\Vert\boldsymbol{k}_t\Vert^2}$，$\Vert\boldsymbol{k}_t\Vert^2$自然地出现在了分母中，跟$\boldsymbol{k}_t\boldsymbol{k}_t^{\top}$相乘正好表现为对$\boldsymbol{K}$的L2 Normalize。
 

@@ -6,7 +6,15 @@
     "source_url": "https://spaces.ac.cn/archives/11340",
     "date": "2025-10-21",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "信息时代",
+    "source_tags": [
+      "优化",
+      "优化器",
+      "尺度定律",
+      "MuP"
+    ],
+    "source_summary": "从这篇文章开始，笔者会分享一些模型优化方面的自上而下的理解，它是在之前的“高阶MuP”基础上的延伸思考和拓展。作为第一篇文章，我们主要描述了关于模型稳定性的三个基本条件，或者说好模型的三个特征，它将是后面进行计算和分析的基石。"
   },
   "validation": {
     "passed": true,
@@ -30,8 +38,8 @@
     "converter_version": 1,
     "markdown_sha256": "9a26aa1920c296f16ed02350adf462dca5172abc4098e8cc446fb6e4a20f425e"
   },
-  "fetched_at": "2026-09-14T12:39:09+00:00",
+  "fetched_at": "2026-10-22T07:47:41+00:00",
   "source_snapshot_sha256": "19bbbe38e89540e39379e551a6ee47e177b8d18a14996f762c53a416eaad7001",
   "images": {},
-  "local_only": true
+  "publication_policy": "config/mirror.json"
 }

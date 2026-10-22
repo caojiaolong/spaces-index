@@ -6,9 +6,17 @@
     "source_url": "https://spaces.ac.cn/archives/11390",
     "date": "2025-11-06",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "数学研究",
+    "source_tags": [
+      "概率",
+      "近似",
+      "随机",
+      "估计"
+    ],
+    "source_summary": "本文用三种不同的方法估计了n个正态随机数的最大值的数学期望，并由所得结果对低精度Attention矩阵中出现重复最大值的概率做了简单估计。"
   },
-  "fetched_at": "2026-09-14T12:38:49+00:00",
+  "fetched_at": "2026-10-22T07:47:27+00:00",
   "source_snapshot_sha256": "8f40fdff3949e5ac18f05f739011ff3c9ee33f04a130bde7eddde97bf7a864e6",
   "validators": {
     "etag": null,

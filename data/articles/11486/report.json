@@ -6,7 +6,15 @@
     "source_url": "https://spaces.ac.cn/archives/11486",
     "date": "2025-12-23",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "数学研究",
+    "source_tags": [
+      "微分方程",
+      "线性",
+      "RNN",
+      "attention"
+    ],
+    "source_summary": "这篇文章围绕DeltaNet的L2 Normalize进行讨论，主要介绍了以微分方程为出发点对DeltaNet重新参数化的思路，它也可以视作DeltaNet中$\\boldsymbol{K}$的L2 Normalize运算的一种解释。"
   },
   "validation": {
     "passed": true,
@@ -23,15 +31,15 @@
     "image_count": 0,
     "heading_count": 6,
     "code_block_count": 0,
-    "source_text_sha256": "2fccb5d290881ff05fedb721f638fa6345c739daa224fbb1ffd8d576aa039ffd",
-    "output_text_sha256": "2fccb5d290881ff05fedb721f638fa6345c739daa224fbb1ffd8d576aa039ffd",
-    "latex_sha256": "95adcce540d1cff76cabf36adc67abaca7249d507137ba5add04eedc051e895f",
-    "body_sha256": "32849a2811f7fd3fce5ca8a6e3e86ef0b5ace8f93cf90b32364c1a0bcacb8baa",
+    "source_text_sha256": "c6a06f01bee6dc5f3c5b5883569a6bf91f3debe5e6ea86ec48463db6a94e1885",
+    "output_text_sha256": "c6a06f01bee6dc5f3c5b5883569a6bf91f3debe5e6ea86ec48463db6a94e1885",
+    "latex_sha256": "881b4f956f3e36b3c0b013b7cfa92fe559e7a9be94fda720335ad4bae85288eb",
+    "body_sha256": "3a261b353f400bb72ad8292cc18d953603f2f22c3ab7f0c71a5c3150d8b28a6f",
     "converter_version": 1,
-    "markdown_sha256": "82e33651d473dda48f48c99517400a1759c78f09b2e57c5ef4c66977499bf81d"
+    "markdown_sha256": "5578e2253a6f24cfa373626779fef14451e985ff85e5271a5a56af6d2b70c023"
   },
-  "fetched_at": "2026-09-14T12:38:04+00:00",
-  "source_snapshot_sha256": "de2c83fb559d41a1004bafdcfa0f4c18569c214b1f9d4ed5fec0c50ef499383a",
+  "fetched_at": "2026-10-22T07:47:02+00:00",
+  "source_snapshot_sha256": "e2671bdf40f9a1d903f7e74f8e966622bfbdca722cd268a219b3d02f1a820854",
   "images": {},
-  "local_only": true
+  "publication_policy": "config/mirror.json"
 }

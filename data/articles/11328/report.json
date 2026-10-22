@@ -6,7 +6,15 @@
     "source_url": "https://spaces.ac.cn/archives/11328",
     "date": "2025-10-08",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "信息时代",
+    "source_tags": [
+      "生成模型",
+      "编码",
+      "梯度",
+      "离散化"
+    ],
+    "source_summary": "本文介绍了VQ（Vector Quantization）的一种新的训练方案，它只需通过STE实现，不需要加额外的Aux Loss，从而显得特别简洁优雅。"
   },
   "validation": {
     "passed": true,
@@ -30,8 +38,8 @@
     "converter_version": 1,
     "markdown_sha256": "e416185d5f46b02257747efc5cc4bc40e7df3c1dbb2be24228452a1fc4a0e5bb"
   },
-  "fetched_at": "2026-09-14T12:39:21+00:00",
+  "fetched_at": "2026-10-22T07:47:49+00:00",
   "source_snapshot_sha256": "b63032ef94f88c8c843191e937fc6abc157c7ca26b5aed86199150a4ba71a31b",
   "images": {},
-  "local_only": true
+  "publication_policy": "config/mirror.json"
 }

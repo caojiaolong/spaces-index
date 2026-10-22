@@ -6,7 +6,15 @@
     "source_url": "https://spaces.ac.cn/archives/11480",
     "date": "2025-12-16",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "数学研究",
+    "source_tags": [
+      "不等式",
+      "优化器",
+      "sgd",
+      "炼丹"
+    ],
+    "source_summary": "在这篇文章中，我们将SGD的收敛结论从平均损失推广到了终点损失，即考虑训练结束时损失值与理论最优值的接近程度，这种设置更贴合我们的训练实践。"
   },
   "validation": {
     "passed": true,
@@ -30,8 +38,8 @@
     "converter_version": 1,
     "markdown_sha256": "f4adb4ae69dc85b95f3ed4fcb4dbf133675b02062952630d7ef479a48679788d"
   },
-  "fetched_at": "2026-09-14T12:38:10+00:00",
+  "fetched_at": "2026-10-22T07:47:06+00:00",
   "source_snapshot_sha256": "8ad5ffbd170b142b803862af6936473033fc58f9b7de0c5e91d8da27a6b56959",
   "images": {},
-  "local_only": true
+  "publication_policy": "config/mirror.json"
 }

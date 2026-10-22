@@ -6,7 +6,16 @@
     "source_url": "https://spaces.ac.cn/archives/11404",
     "date": "2025-11-17",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "数学研究",
+    "source_tags": [
+      "微分方程",
+      "估计",
+      "梯度",
+      "优化器",
+      "平均场"
+    ],
+    "source_summary": "本文将上篇的结果推广到了动态版，允许我们估计随时间变化的学习率和Weight Decay之下的AdamW的Weight RMS。"
   },
   "validation": {
     "passed": true,
@@ -30,8 +39,8 @@
     "converter_version": 1,
     "markdown_sha256": "031d706f9007a5d90437a1ca16d820702f0745dbb81a8118279342e0fa051f44"
   },
-  "fetched_at": "2026-09-14T12:38:42+00:00",
+  "fetched_at": "2026-10-22T07:47:23+00:00",
   "source_snapshot_sha256": "6f9033789ffa7817b52fb1def8f0f5a0d611af0e6bf81e453930f8f75495ccab",
   "images": {},
-  "local_only": true
+  "publication_policy": "config/mirror.json"
 }

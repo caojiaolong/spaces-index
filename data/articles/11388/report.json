@@ -6,7 +6,16 @@
     "source_url": "https://spaces.ac.cn/archives/11388",
     "date": "2025-11-03",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "数学研究",
+    "source_tags": [
+      "矩阵",
+      "优化器",
+      "muon",
+      "约束",
+      "最速下降"
+    ],
+    "source_summary": "这篇文章我们介绍了通过对偶梯度下降来寻找流形上的最速下降方向的思路，它也是前段时间Thinking Machines Lab的博客 《Modular Manifolds》 用来求解Stiefel流形上的Muon的方法。"
   },
   "validation": {
     "passed": true,
@@ -30,8 +39,8 @@
     "converter_version": 1,
     "markdown_sha256": "25ffb11210465f8e6b4bd007a9d278be990fb27b3913f74cc132409209180f39"
   },
-  "fetched_at": "2026-09-14T12:38:56+00:00",
+  "fetched_at": "2026-10-22T07:47:31+00:00",
   "source_snapshot_sha256": "4fc5a35c979e2d4e11916885ebc9676494ad1e70fbdecaa13e107d575de8918c",
   "images": {},
-  "local_only": true
+  "publication_policy": "config/mirror.json"
 }

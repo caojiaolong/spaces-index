@@ -6,7 +6,15 @@
     "source_url": "https://spaces.ac.cn/archives/11428",
     "date": "2025-11-24",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "信息时代",
+    "source_tags": [
+      "损失函数",
+      "生成模型",
+      "扩散",
+      "流形"
+    ],
+    "source_summary": "本文简单介绍了JiT，它基于原始数据往往处于低维子流形这一事实，提出模型应优先选择预测数据而不是噪声/速度，这样能降低扩散模型的建模难度，减少模型崩溃等负面结果的可能性。"
   },
   "validation": {
     "passed": true,
@@ -30,8 +38,8 @@
     "converter_version": 1,
     "markdown_sha256": "dc3c60613adfa9ae6cdcff124413d527714de16210da1b228faf00d2891d8908"
   },
-  "fetched_at": "2026-09-14T12:38:29+00:00",
+  "fetched_at": "2026-10-22T07:47:16+00:00",
   "source_snapshot_sha256": "5e3d3631dfcc1eef37d40b788abd8bd2e85646446cc4716666bad387451f5a60",
   "images": {},
-  "local_only": true
+  "publication_policy": "config/mirror.json"
 }

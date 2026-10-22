@@ -6,9 +6,17 @@
     "source_url": "https://spaces.ac.cn/archives/11301",
     "date": "2025-09-22",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "数学研究",
+    "source_tags": [
+      "学习率",
+      "优化器",
+      "尺度定律",
+      "平均场"
+    ],
+    "source_summary": "本文初步分析了优化器的EMA机制对学习率与Batch Size的尺度定律的影响，确认了EMA特别是动量机制的引入会稍微改变尺度定律，而Adam这种带有双重EMA运算的优化器，则会呈现出一些跟SignSGD不同的新特性。"
   },
-  "fetched_at": "2026-09-14T12:39:41+00:00",
+  "fetched_at": "2026-10-22T07:48:01+00:00",
   "source_snapshot_sha256": "427d6fc3e9467188e080ceba4e71018205f13bf8960fa4d5f88bc442a3e8035a",
   "validators": {
     "etag": null,

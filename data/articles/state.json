@@ -302,140 +302,140 @@
   },
   "11494": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:18:17+00:00",
+    "checked_at": "2026-10-22T07:46:58+00:00",
     "title": "让炼丹更科学一些（四）：新恒等式，新学习率",
-    "markdown_sha256": "fff342470e8f1fc00b7732389ba4b7336b683c143109bb1e234d695ca6e127c1",
+    "markdown_sha256": "54741ab8a5d6b2288f423c24864e650fb1ab339ad9b90ed7871835e9b120ee40",
     "converter_version": 1
   },
   "11486": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:18:17+00:00",
+    "checked_at": "2026-10-22T07:47:02+00:00",
     "title": "为什么DeltaNet要加L2 Normalize？",
-    "markdown_sha256": "82e33651d473dda48f48c99517400a1759c78f09b2e57c5ef4c66977499bf81d",
+    "markdown_sha256": "5578e2253a6f24cfa373626779fef14451e985ff85e5271a5a56af6d2b70c023",
     "converter_version": 1
   },
   "11480": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:18:17+00:00",
+    "checked_at": "2026-10-22T07:47:06+00:00",
     "title": "让炼丹更科学一些（三）：SGD的终点损失收敛",
     "markdown_sha256": "f4adb4ae69dc85b95f3ed4fcb4dbf133675b02062952630d7ef479a48679788d",
     "converter_version": 1
   },
   "11469": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:18:17+00:00",
+    "checked_at": "2026-10-22T07:47:09+00:00",
     "title": "让炼丹更科学一些（二）：将结论推广到无界域",
     "markdown_sha256": "dd9622d1b8a0412d0fe0deab6a523f762b36abc1a82afcddb4d9b26769ceb2f1",
     "converter_version": 1
   },
   "11459": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:18:17+00:00",
+    "checked_at": "2026-10-22T07:47:13+00:00",
     "title": "滑动平均视角下的权重衰减和学习率",
     "markdown_sha256": "5f6372ba203e9e1727f18161a2f5b3ef1ffc838d290f11ce4d9dc9b08d85b5ee",
     "converter_version": 1
   },
   "11428": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:18:18+00:00",
+    "checked_at": "2026-10-22T07:47:16+00:00",
     "title": "生成扩散模型漫谈（三十一）：预测数据而非噪声",
     "markdown_sha256": "dc3c60613adfa9ae6cdcff124413d527714de16210da1b228faf00d2891d8908",
     "converter_version": 1
   },
   "11416": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:18:18+00:00",
+    "checked_at": "2026-10-22T07:47:20+00:00",
     "title": "Muon优化器指南：快速上手与关键细节",
     "markdown_sha256": "b69f63748b3658ad2db150a8252a7948a622db30afc8850e36a1ff6a786cb0e8",
     "converter_version": 1
   },
   "11404": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:18:18+00:00",
+    "checked_at": "2026-10-22T07:47:23+00:00",
     "title": "AdamW的Weight RMS的渐近估计（下）",
     "markdown_sha256": "031d706f9007a5d90437a1ca16d820702f0745dbb81a8118279342e0fa051f44",
     "converter_version": 1
   },
   "11390": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:18:18+00:00",
+    "checked_at": "2026-10-22T07:47:27+00:00",
     "title": "n个正态随机数的最大值的渐近估计",
     "markdown_sha256": "4e4fc810206813890bd15423f5f935431c29812a98d0f58cb96bdd79cffa7bdf",
     "converter_version": 1
   },
   "11388": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:18:18+00:00",
+    "checked_at": "2026-10-22T07:47:31+00:00",
     "title": "流形上的最速下降：5. 对偶梯度下降",
     "markdown_sha256": "25ffb11210465f8e6b4bd007a9d278be990fb27b3913f74cc132409209180f39",
     "converter_version": 1
   },
   "11371": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:18:19+00:00",
+    "checked_at": "2026-10-22T07:47:34+00:00",
     "title": "低精度Attention可能存在有偏的舍入误差",
     "markdown_sha256": "33b28e0606f9c3ab3f7c68f6e43ff9a4d19cdd7fc457dda9629f6062504a481d",
     "converter_version": 1
   },
   "11340": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:18:19+00:00",
+    "checked_at": "2026-10-22T07:47:41+00:00",
     "title": "MuP之上：1. 好模型的三个特征",
     "markdown_sha256": "9a26aa1920c296f16ed02350adf462dca5172abc4098e8cc446fb6e4a20f425e",
     "converter_version": 1
   },
   "11335": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:18:19+00:00",
+    "checked_at": "2026-10-22T07:47:46+00:00",
     "title": "随机矩阵的谱范数的快速估计",
     "markdown_sha256": "d1c5c2ce1f2a3dba66669b688db357e5220cbcf7da0f7f5d3f67c825baf2ad4a",
     "converter_version": 1
   },
   "11328": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:18:19+00:00",
+    "checked_at": "2026-10-22T07:47:49+00:00",
     "title": "DiVeQ：一种非常简洁的VQ训练方案",
     "markdown_sha256": "e416185d5f46b02257747efc5cc4bc40e7df3c1dbb2be24228452a1fc4a0e5bb",
     "converter_version": 1
   },
   "11320": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:18:19+00:00",
+    "checked_at": "2026-10-22T07:47:53+00:00",
     "title": "为什么线性注意力要加Short Conv？",
     "markdown_sha256": "824069541333ce5fa809d69fd9b07030a7c7dbb0da053d0112c74616d47035fb",
     "converter_version": 1
   },
   "11307": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:18:20+00:00",
+    "checked_at": "2026-10-22T07:47:57+00:00",
     "title": "AdamW的Weight RMS的渐近估计（上）",
     "markdown_sha256": "577e6d32877533693dd7cc78c6451696c519f6a55ab14aef3a6e6f7c92de893f",
     "converter_version": 1
   },
   "11301": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:18:20+00:00",
+    "checked_at": "2026-10-22T07:48:01+00:00",
     "title": "重新思考学习率与Batch Size（四）：EMA",
     "markdown_sha256": "59448cd5277707b0743b2d93f05fbe3e68d755534f1ad48f525c0af0a7192784",
     "converter_version": 1
   },
   "11285": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:18:20+00:00",
+    "checked_at": "2026-10-22T07:48:05+00:00",
     "title": "重新思考学习率与Batch Size（三）：Muon",
     "markdown_sha256": "2da3fdac23086d5b49d16dbd4db190b37f72a0d21852991dbe82a9d7cb24e94d",
     "converter_version": 1
   },
   "11280": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:18:20+00:00",
+    "checked_at": "2026-10-22T07:48:10+00:00",
     "title": "重新思考学习率与Batch Size（二）：平均场",
     "markdown_sha256": "bd88a79568884e4110cade46f66e31cb2d7957a7732e97ca635e6fa1a4566b89",
     "converter_version": 1
   },
   "11267": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:18:20+00:00",
+    "checked_at": "2026-10-22T07:48:13+00:00",
     "title": "为什么Adam的Update RMS是0.2？",
     "markdown_sha256": "6daba94fbd8b7920c8fa657777c6ef9e147f28fd1ed93e8b6d5ea4a744c628d5",
     "converter_version": 1
@@ -456,35 +456,35 @@
   },
   "11241": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:18:21+00:00",
+    "checked_at": "2026-10-22T07:48:17+00:00",
     "title": "流形上的最速下降：4. Muon + 谱球面",
     "markdown_sha256": "d17b563513ca83c5b3dfc27dec6bf813d317366c60d25309ebeebc04a3a77c7b",
     "converter_version": 1
   },
   "11233": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:18:21+00:00",
+    "checked_at": "2026-10-22T07:48:21+00:00",
     "title": "ReLU/GeLU/Swish的一个恒等式",
     "markdown_sha256": "7a29c4ba37d4e124330fbffe9847f5d1af5464cd9ced1115caeb74bc56a87480",
     "converter_version": 1
   },
   "11221": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:18:21+00:00",
+    "checked_at": "2026-10-22T07:48:25+00:00",
     "title": "流形上的最速下降：3. Muon + Stiefel",
     "markdown_sha256": "0a66ce966128efdd5d61590d48b70fdfb9c21bd803df1e48cc808b6eb69f3b02",
     "converter_version": 1
   },
   "11215": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:18:21+00:00",
+    "checked_at": "2026-10-22T07:48:29+00:00",
     "title": "流形上的最速下降：2. Muon + 正交",
     "markdown_sha256": "9ca1e54ceb644aa39c9117437d843ba253e9490d9f678d0e362d472019f1ce41",
     "converter_version": 1
   },
   "11206": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:18:21+00:00",
+    "checked_at": "2026-10-22T07:48:33+00:00",
     "title": "基于树莓派Zero2W搭建一个随身旁路由",
     "markdown_sha256": "84c10b5982c39e26989429827d0823a595ecace3d4498cc0aa009cdd4d115c8b",
     "converter_version": 1
@@ -8464,7 +8464,7 @@
   },
   "132": {
     "status": "conversion_failed",
-    "checked_at": "2026-10-21T07:53:59+00:00",
+    "checked_at": "2026-10-22T07:48:33+00:00",
     "title": "一道从小学到高中都可能考到的题目",
     "error": "Unreviewed legacy element: a<b，则有<br",
     "converter_version": 1,

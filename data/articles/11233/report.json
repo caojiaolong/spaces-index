@@ -6,7 +6,14 @@
     "source_url": "https://spaces.ac.cn/archives/11233",
     "date": "2025-08-16",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "数学研究",
+    "source_tags": [
+      "分析",
+      "神经网络",
+      "恒等式"
+    ],
+    "source_summary": null
   },
   "validation": {
     "passed": true,
@@ -30,8 +37,8 @@
     "converter_version": 1,
     "markdown_sha256": "7a29c4ba37d4e124330fbffe9847f5d1af5464cd9ced1115caeb74bc56a87480"
   },
-  "fetched_at": "2026-09-14T12:40:25+00:00",
+  "fetched_at": "2026-10-22T07:48:21+00:00",
   "source_snapshot_sha256": "0e2395aa3253105f59e5c2f8e1e94076e8c54d2c7f09bb8d9c23c7dae5e93e3f",
   "images": {},
-  "local_only": true
+  "publication_policy": "config/mirror.json"
 }

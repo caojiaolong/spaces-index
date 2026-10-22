@@ -42,7 +42,7 @@
 \begin{equation}\sum_{t=1}^T \eta_t \mathbb{E}[L(\boldsymbol{\theta}_t) - L(\boldsymbol{\varphi})]\leq \frac{\Vert\boldsymbol{\theta}_1 - \boldsymbol{\varphi}\Vert^2}{2} + \frac{G^2}{2}\sum_{t=1}^T \eta_t^2\label{leq:avg-2-mid3}\end{equation}
 照着[《让炼丹更科学一些（三）：SGD的终点损失收敛》](<https://spaces.ac.cn/archives/11480>)的“[准备工作](<https://spaces.ac.cn/archives/11480#%E5%87%86%E5%A4%87%E5%B7%A5%E4%BD%9C>)”一节的思路，我们将起点改为$k$，然后代入$\boldsymbol{\varphi}=\boldsymbol{\theta}_k$，但不需要假设$\eta_t$的单调性来两边除以$\eta_T$，而是直接得到
 \begin{equation}\sum_{t=k}^T \eta_t\mathbb{E}[L(\boldsymbol{\theta}_t) -  L(\boldsymbol{\theta}_k)] \leq \frac{G^2}{2} \sum_{t=k}^T \eta_t^2\label{leq:avg-2-mid4}\end{equation}
-代入$w_t = \eta_t, q_t = \mathbb{E}[L(\boldsymbol{\theta}_t)] - L(\boldsymbol{\theta}^*)$到恒等式$\eqref{eq:qt-g}$，我们得到
+代入$w_t = \eta_t, q_t = \mathbb{E}[L(\boldsymbol{\theta}_t) - L(\boldsymbol{\theta}^*)]$到恒等式$\eqref{eq:qt-g}$，我们得到
 \begin{equation}\begin{aligned}
 \mathbb{E}[L(\boldsymbol{\theta}_T) - L(\boldsymbol{\theta}^*)] =&\, \frac{1}{\eta_{1:T}}\underbrace{\sum_{t=1}^T \eta_t \mathbb{E}[L(\boldsymbol{\theta}_t) - L(\boldsymbol{\theta}^*)]}_{\eqref{leq:avg-2-mid3}} + \sum_{k=1}^{T-1}\left(\frac{1}{\eta_{k+1:T}} - \frac{1}{\eta_{k:T}}\right)\underbrace{\sum_{t=k}^T \eta_t \mathbb{E}[L(\boldsymbol{\theta}_t) -  L(\boldsymbol{\theta}_k)]}_{\eqref{leq:avg-2-mid4}} \\
 \leq&\, \frac{\Vert\boldsymbol{\theta}_1 - \boldsymbol{\theta}^*\Vert^2}{2\eta_{1:T}} + \frac{G^2}{2\eta_{1:T}}\sum_{t=1}^T \eta_t^2 + \frac{G^2}{2}\sum_{k=1}^{T-1}\left(\frac{1}{\eta_{k+1:T}} - \frac{1}{\eta_{k:T}}\right)\sum_{t=k}^T \eta_t^2 \\

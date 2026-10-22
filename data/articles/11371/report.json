@@ -6,7 +6,15 @@
     "source_url": "https://spaces.ac.cn/archives/11371",
     "date": "2025-10-27",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "信息时代",
+    "source_tags": [
+      "近似",
+      "分析",
+      "优化",
+      "attention"
+    ],
+    "source_summary": "本文分享了一篇关于低精度Attention计算偏差的分析论文，同时借着这个机会，给自己补习了一下低精度计算的基础内容。"
   },
   "validation": {
     "passed": true,
@@ -30,8 +38,8 @@
     "converter_version": 1,
     "markdown_sha256": "33b28e0606f9c3ab3f7c68f6e43ff9a4d19cdd7fc457dda9629f6062504a481d"
   },
-  "fetched_at": "2026-09-14T12:39:02+00:00",
+  "fetched_at": "2026-10-22T07:47:34+00:00",
   "source_snapshot_sha256": "98900d535057aebdf92bc30c205dfafd391cb2d81b48eb92413352fd3352b55b",
   "images": {},
-  "local_only": true
+  "publication_policy": "config/mirror.json"
 }

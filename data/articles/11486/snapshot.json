@@ -6,10 +6,18 @@
     "source_url": "https://spaces.ac.cn/archives/11486",
     "date": "2025-12-23",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "数学研究",
+    "source_tags": [
+      "微分方程",
+      "线性",
+      "RNN",
+      "attention"
+    ],
+    "source_summary": "这篇文章围绕DeltaNet的L2 Normalize进行讨论，主要介绍了以微分方程为出发点对DeltaNet重新参数化的思路，它也可以视作DeltaNet中$\\boldsymbol{K}$的L2 Normalize运算的一种解释。"
   },
-  "fetched_at": "2026-09-14T12:38:04+00:00",
-  "source_snapshot_sha256": "de2c83fb559d41a1004bafdcfa0f4c18569c214b1f9d4ed5fec0c50ef499383a",
+  "fetched_at": "2026-10-22T07:47:02+00:00",
+  "source_snapshot_sha256": "e2671bdf40f9a1d903f7e74f8e966622bfbdca722cd268a219b3d02f1a820854",
   "validators": {
     "etag": null,
     "last_modified": null

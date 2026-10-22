@@ -6,10 +6,18 @@
     "source_url": "https://spaces.ac.cn/archives/11494",
     "date": "2025-12-26",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "数学研究",
+    "source_tags": [
+      "学习率",
+      "优化器",
+      "sgd",
+      "炼丹"
+    ],
+    "source_summary": "在这篇文章中，我们推广了上篇的核心恒等式，然后得到了理论最佳的终点损失收敛速度。有意思的是，取得这一成绩的学习率策略并不是常数学习率，也不是传统的逆步数、逆步数平方根学习率，而是更贴近我们日常实践的线性衰减。接下来，我们还会继续探讨该结论背后的深刻意义。"
   },
-  "fetched_at": "2026-09-14T12:37:58+00:00",
-  "source_snapshot_sha256": "e7972df8463b77d504877c77ef6a618de787fa6a22226d28e8af57e46e720a0b",
+  "fetched_at": "2026-10-22T07:46:58+00:00",
+  "source_snapshot_sha256": "9e7fb14277b76cad115adbb250f47a538c5b97f194df7b0245ddaaf30d899dd9",
   "validators": {
     "etag": null,
     "last_modified": null

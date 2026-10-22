@@ -6,7 +6,16 @@
     "source_url": "https://spaces.ac.cn/archives/11241",
     "date": "2025-08-21",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "数学研究",
+    "source_tags": [
+      "矩阵",
+      "优化器",
+      "muon",
+      "约束",
+      "最速下降"
+    ],
+    "source_summary": "这篇文章主要考虑了给参数施加谱范数或者一般的范数约束后，对应的Muon形式。在前三篇的基础上，本篇没有明显的技术难点，读者也可以单纯视为一道补充习题来练手。"
   },
   "validation": {
     "passed": true,
@@ -30,8 +39,8 @@
     "converter_version": 1,
     "markdown_sha256": "d17b563513ca83c5b3dfc27dec6bf813d317366c60d25309ebeebc04a3a77c7b"
   },
-  "fetched_at": "2026-09-14T12:40:19+00:00",
+  "fetched_at": "2026-10-22T07:48:17+00:00",
   "source_snapshot_sha256": "cda67f0a1b38502463afe15384a887b3e99382530107c0a0f014e1311707c26e",
   "images": {},
-  "local_only": true
+  "publication_policy": "config/mirror.json"
 }

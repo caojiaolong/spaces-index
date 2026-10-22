@@ -6,7 +6,15 @@
     "source_url": "https://spaces.ac.cn/archives/11307",
     "date": "2025-10-01",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "数学研究",
+    "source_tags": [
+      "估计",
+      "梯度",
+      "优化器",
+      "平均场"
+    ],
+    "source_summary": "这篇文章我们用平均场近似推导了一个有趣且可能让人意外的结论：AdamW训出来的模型，其权重的RMS也是可以渐近估计出来的，一般情况下，它只依赖于学习率和Weight Decay。"
   },
   "validation": {
     "passed": true,
@@ -30,8 +38,8 @@
     "converter_version": 1,
     "markdown_sha256": "577e6d32877533693dd7cc78c6451696c519f6a55ab14aef3a6e6f7c92de893f"
   },
-  "fetched_at": "2026-09-14T12:39:33+00:00",
+  "fetched_at": "2026-10-22T07:47:57+00:00",
   "source_snapshot_sha256": "a37f871567a315e8c827be28027bc297b64dc9afb52747490dcc3d1f9147b32f",
   "images": {},
-  "local_only": true
+  "publication_policy": "config/mirror.json"
 }
