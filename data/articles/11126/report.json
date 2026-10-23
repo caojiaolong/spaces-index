@@ -6,7 +6,15 @@
     "source_url": "https://spaces.ac.cn/archives/11126",
     "date": "2025-07-12",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "信息时代",
+    "source_tags": [
+      "优化",
+      "attention",
+      "优化器",
+      "muon"
+    ],
+    "source_summary": "本文提出了QK-Clip，它是MaxLogit爆炸问题的一种新思路，跟QK-Norm不同，它是对Q、K权重的一种事后调整方案，并不改变模型的前向计算，因此适用性更广，它是“Muon + MLA”组合在超大规模训练上的重要稳定策略，也是我们最新发布的万亿模型Kimi K2的关键技术之一。"
   },
   "validation": {
     "passed": true,
@@ -30,8 +38,8 @@
     "converter_version": 1,
     "markdown_sha256": "21f392b6b17c30cd961233162c83b05ccc5b6fed2ac400e162066635ca222f8d"
   },
-  "fetched_at": "2026-09-14T12:41:09+00:00",
+  "fetched_at": "2026-10-23T07:45:57+00:00",
   "source_snapshot_sha256": "ccde52414c0fda76af2f7b421a44ae43ffb9b0757f43d26effd68c38aeff39e5",
   "images": {},
-  "local_only": true
+  "publication_policy": "config/mirror.json"
 }

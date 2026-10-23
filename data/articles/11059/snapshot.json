@@ -6,9 +6,18 @@
     "source_url": "https://spaces.ac.cn/archives/11059",
     "date": "2025-06-23",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "数学研究",
+    "source_tags": [
+      "迭代",
+      "近似",
+      "矩阵",
+      "SVD",
+      "muon"
+    ],
+    "source_summary": "本文继续完善了上一篇文章用$\\msign$来计算$\\mclip$的方案，通过去掉$\\msign$的嵌套以及引入额外的修正项，成功降低了计算误差。"
   },
-  "fetched_at": "2026-09-14T12:41:30+00:00",
+  "fetched_at": "2026-10-23T07:46:22+00:00",
   "source_snapshot_sha256": "2d76eb518603eee7be540a1ba83bc2b422805720043e42ec3c4e8b0da4434817",
   "validators": {
     "etag": null,

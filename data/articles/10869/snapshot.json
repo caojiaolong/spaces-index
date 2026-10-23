@@ -6,9 +6,15 @@
     "source_url": "https://spaces.ac.cn/archives/10869",
     "date": "2025-04-22",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "生活/情感",
+    "source_tags": [
+      "生活",
+      "智能家居"
+    ],
+    "source_summary": "本文简单讲了自己制作一套零冷水装置的思路和材料。对于已经手动折腾过智能家居的读者来说，应该并不难理解，可能只有温控开关、电磁阀这两个配件不大熟悉。 温控开关如果直接搜“米家 温控开关”，倒是也能搜出直接能接入米家的温控开关来，但单个通常就要百来块钱，如果是没有回水管的场景，希望点对点做多个回水器的话，还是比较破费的，当然，成品的米家温控开关也能简化系统，这个就看个人取舍了。至于电磁阀，如果接触到水路的自动控制，那么通常也容易搜到了。 总之，爱折腾的读者可以按照本文的思路尝试一下，毕竟生命在于折腾～"
   },
-  "fetched_at": "2026-09-14T12:42:54+00:00",
+  "fetched_at": "2026-10-23T07:47:39+00:00",
   "source_snapshot_sha256": "0d1ad307929bfe0ba3ff233eee4d56dd818a860572dc6705f244a94fb5df783a",
   "validators": {
     "etag": null,

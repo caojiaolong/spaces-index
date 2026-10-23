@@ -6,7 +6,15 @@
     "source_url": "https://spaces.ac.cn/archives/11072",
     "date": "2025-07-01",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "数学研究",
+    "source_tags": [
+      "计算",
+      "矩阵",
+      "RNN",
+      "attention"
+    ],
+    "source_summary": "本文讨论了“对角+低秩”特点的三角矩阵求逆问题，这类矩阵普遍出现在新式线性Attention模型中。"
   },
   "validation": {
     "passed": true,
@@ -30,8 +38,8 @@
     "converter_version": 1,
     "markdown_sha256": "6aca5e602a268056f2530a4651af36a76905ed8bbfaf933210ffc60ab5e20bfa"
   },
-  "fetched_at": "2026-09-14T12:41:24+00:00",
+  "fetched_at": "2026-10-23T07:46:18+00:00",
   "source_snapshot_sha256": "c33f7c319c078f3350b4f964c83cfdad4244d60a4f8d53c5f771e9494844e6ad",
   "images": {},
-  "local_only": true
+  "publication_policy": "config/mirror.json"
 }

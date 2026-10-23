@@ -442,14 +442,14 @@
   },
   "11260": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:18:21+00:00",
+    "checked_at": "2026-10-23T07:45:35+00:00",
     "title": "重新思考学习率与Batch Size（一）：现状",
     "markdown_sha256": "54aabe558404381b4606456aa519caee3b144f2e6d234b30bb420a95f311254d",
     "converter_version": 1
   },
   "11250": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:18:21+00:00",
+    "checked_at": "2026-10-23T07:45:39+00:00",
     "title": "Cool Papers更新：简单适配Zotero Connector",
     "markdown_sha256": "fb97a07d72f110a80862f07d5bdf88d5237cefa58e7de33c25b5425f266d7440",
     "converter_version": 1
@@ -491,154 +491,154 @@
   },
   "11196": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:18:22+00:00",
+    "checked_at": "2026-10-23T07:45:42+00:00",
     "title": "流形上的最速下降：1.  SGD + 超球面",
     "markdown_sha256": "ef36ac3fb4b6c571dbb086e692ea97de07173dfc63588a25dec5a1decd83d1e6",
     "converter_version": 1
   },
   "11175": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:18:22+00:00",
+    "checked_at": "2026-10-23T07:45:46+00:00",
     "title": "矩阵r次方根和逆r次方根的高效计算",
     "markdown_sha256": "73b2437b6a90a42e14fcff6590042911b05bb7cf3e7e588a14f5419efe05e9fc",
     "converter_version": 1
   },
   "11158": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:18:22+00:00",
+    "checked_at": "2026-10-23T07:45:50+00:00",
     "title": "矩阵平方根和逆平方根的高效计算",
     "markdown_sha256": "6800f98ed96bccb6d39de2c1b9ae02048d460b0efca93e30ab7e4abc2e0da352",
     "converter_version": 1
   },
   "11126": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:18:22+00:00",
+    "checked_at": "2026-10-23T07:45:57+00:00",
     "title": "QK-Clip：让Muon在Scaleup之路上更进一步",
     "markdown_sha256": "21f392b6b17c30cd961233162c83b05ccc5b6fed2ac400e162066635ca222f8d",
     "converter_version": 1
   },
   "11111": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:18:23+00:00",
+    "checked_at": "2026-10-23T07:46:06+00:00",
     "title": "Transformer升级之路：21、MLA好在哪里?（下）",
     "markdown_sha256": "301d770a897a983c741f14981c07e88e0cd5279d7c032751c1680221dcc9d978",
     "converter_version": 1
   },
   "11072": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:18:23+00:00",
+    "checked_at": "2026-10-23T07:46:18+00:00",
     "title": "“对角+低秩”三角阵的高效求逆方法",
     "markdown_sha256": "6aca5e602a268056f2530a4651af36a76905ed8bbfaf933210ffc60ab5e20bfa",
     "converter_version": 1
   },
   "11059": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:18:23+00:00",
+    "checked_at": "2026-10-23T07:46:22+00:00",
     "title": "通过msign来计算奇异值裁剪mclip（下）",
     "markdown_sha256": "dc0ccf262416f98fa1ffc73082bfe9854cc3d803293f403a55604aea943f9037",
     "converter_version": 1
   },
   "11056": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:18:23+00:00",
+    "checked_at": "2026-10-23T07:46:26+00:00",
     "title": "矩阵符号函数mcsgn能计算什么？",
     "markdown_sha256": "a7d8feb56c83e797bbc46fbb417f0267001b09aab8dff62123d123bba38ec4d5",
     "converter_version": 1
   },
   "11033": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:18:24+00:00",
+    "checked_at": "2026-10-23T07:46:30+00:00",
     "title": "线性注意力简史：从模仿、创新到反哺",
     "markdown_sha256": "0a3384cbce2bd3c3694c34d313fbfda005644cde952c6d643296e39532d98233",
     "converter_version": 1
   },
   "11025": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:18:24+00:00",
+    "checked_at": "2026-10-23T07:46:33+00:00",
     "title": "msign的导数",
     "markdown_sha256": "70d7b42c2de3dfde26e8b03b7387e9dd6f4ed698e76faeab006dc4c22bb728b3",
     "converter_version": 1
   },
   "11006": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:18:24+00:00",
+    "checked_at": "2026-10-23T07:46:37+00:00",
     "title": "通过msign来计算奇异值裁剪mclip（上）",
     "markdown_sha256": "3071470952a871abc0872c78e092fa68fb5aa1c9b785417a59df890fe9bf95e2",
     "converter_version": 1
   },
   "10996": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:18:24+00:00",
+    "checked_at": "2026-10-23T07:46:40+00:00",
     "title": "msign算子的Newton-Schulz迭代（下）",
     "markdown_sha256": "2b2807b33cbe3a020201c3807782f7306d4b99490a42c5ff755b0eb7e041abad",
     "converter_version": 1
   },
   "10972": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:18:25+00:00",
+    "checked_at": "2026-10-23T07:46:44+00:00",
     "title": "等值振荡定理：最优多项式逼近的充要条件",
     "markdown_sha256": "e372c4f5edf582e96e44ddd0117dd2abe2d7e1064ddffb04f157ab12f72c2736",
     "converter_version": 1
   },
   "10958": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:18:25+00:00",
+    "checked_at": "2026-10-23T07:46:49+00:00",
     "title": "生成扩散模型漫谈（三十）：从瞬时速度到平均速度",
     "markdown_sha256": "2a8f247975ff69f127674d929c47b97da82bd641133f05d93d910ed9a9383af6",
     "converter_version": 1
   },
   "10945": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:18:25+00:00",
+    "checked_at": "2026-10-23T07:46:53+00:00",
     "title": "MoE环游记：5、均匀分布的反思",
     "markdown_sha256": "d86293370b811eb7894b6eb20132540435f851ee6b0196252318350d252c6891",
     "converter_version": 1
   },
   "10922": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:18:25+00:00",
+    "checked_at": "2026-10-23T07:46:57+00:00",
     "title": "msign算子的Newton-Schulz迭代（上）",
     "markdown_sha256": "d904ea4e617e2f43672c759203db0099e0a2a0a84955a2d524e854eb9aebc25b",
     "converter_version": 1
   },
   "10907": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:18:26+00:00",
+    "checked_at": "2026-10-23T07:47:06+00:00",
     "title": "Transformer升级之路：20、MLA好在哪里?（上）",
     "markdown_sha256": "6249e2036c043f53d123648bd81b26326471ea166fa6dfa2f980520f0d990f7c",
     "converter_version": 1
   },
   "10902": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:18:26+00:00",
+    "checked_at": "2026-10-23T07:47:14+00:00",
     "title": "一道概率不等式：盯着它到显然成立为止！",
     "markdown_sha256": "01661349f352d633fcc348de2962434becbbc8114bd13c0e859fae9c2f909ce9",
     "converter_version": 1
   },
   "10878": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:18:26+00:00",
+    "checked_at": "2026-10-23T07:47:22+00:00",
     "title": "SVD的导数",
     "markdown_sha256": "b6b67c18f792f250817ef762f502e5f6deabe8b5edfab4de3b2d30f7ea93fc58",
     "converter_version": 1
   },
   "10869": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:18:26+00:00",
+    "checked_at": "2026-10-23T07:47:39+00:00",
     "title": "智能家居之手搓一套能接入米家的零冷水装置",
     "markdown_sha256": "f9209ec25738c189906945b4864a9340c9b8ebf771919de3a82af3187f679d74",
     "converter_version": 1
   },
   "10862": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:18:26+00:00",
+    "checked_at": "2026-10-23T07:47:43+00:00",
     "title": "Transformer升级之路：19、第二类旋转位置编码",
     "markdown_sha256": "2c69aa6a1a261aa30022ce4553802f459a64aed9759627411a799103f49172e9",
     "converter_version": 1
   },
   "10847": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:18:26+00:00",
+    "checked_at": "2026-10-23T07:47:56+00:00",
     "title": "矩阵的有效秩（Effective Rank）",
     "markdown_sha256": "e230857da94bd89dc9690e7ce6edd4542067036123d395ebb372d6bd16e0c6b8",
     "converter_version": 1
@@ -659,7 +659,7 @@
   },
   "10795": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:18:27+00:00",
+    "checked_at": "2026-10-23T07:48:03+00:00",
     "title": "高阶MuP：更简明但更高明的谱条件缩放",
     "markdown_sha256": "7127d565a59c17c856cc24eb9bdd3227f88e163e4e62d872bebe89b444a43d10",
     "converter_version": 1
@@ -8464,7 +8464,7 @@
   },
   "132": {
     "status": "conversion_failed",
-    "checked_at": "2026-10-22T07:48:33+00:00",
+    "checked_at": "2026-10-23T07:48:04+00:00",
     "title": "一道从小学到高中都可能考到的题目",
     "error": "Unreviewed legacy element: a<b，则有<br",
     "converter_version": 1,

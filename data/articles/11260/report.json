@@ -6,7 +6,15 @@
     "source_url": "https://spaces.ac.cn/archives/11260",
     "date": "2025-09-01",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "数学研究",
+    "source_tags": [
+      "梯度",
+      "学习率",
+      "优化器",
+      "尺度定律"
+    ],
+    "source_summary": null
   },
   "validation": {
     "passed": true,
@@ -30,8 +38,8 @@
     "converter_version": 1,
     "markdown_sha256": "54aabe558404381b4606456aa519caee3b144f2e6d234b30bb420a95f311254d"
   },
-  "fetched_at": "2026-09-14T12:40:07+00:00",
+  "fetched_at": "2026-10-23T07:45:35+00:00",
   "source_snapshot_sha256": "aaddeab92ce677b23eb0c3fe598af23946072ae41ceb59c85e73eaff4dc8f568",
   "images": {},
-  "local_only": true
+  "publication_policy": "config/mirror.json"
 }

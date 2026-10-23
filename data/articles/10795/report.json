@@ -6,7 +6,17 @@
     "source_url": "https://spaces.ac.cn/archives/10795",
     "date": "2025-03-24",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "数学研究",
+    "source_tags": [
+      "梯度",
+      "优化器",
+      "尺度定律",
+      "谱范数",
+      "muon",
+      "MuP"
+    ],
+    "source_summary": "这篇文章介绍了MuP的升级版——谱条件，它从谱范数相关的不等式切入来分析模型稳定训练的条件，以一种更便捷的方式得到了比MuP更丰富的结果。 $$\\left\\{\\begin{aligned} &\\,\\text{期望性质:}\\left\\{\\begin{aligned} &\\,\\Vert\\boldsymbol{x}_k\\Vert_{RMS}=\\Theta(1) \\\\[5pt] &\\,\\Vert\\Delta\\boldsymbol{x}_k\\Vert_{RMS}=\\Theta(1) \\end{aligned}\\right. \\\\[10pt] &\\,\\text{谱条件:}\\left\\{\\begin{aligned} &\\,\\Vert\\bold…"
   },
   "validation": {
     "passed": true,
@@ -30,8 +40,8 @@
     "converter_version": 1,
     "markdown_sha256": "7127d565a59c17c856cc24eb9bdd3227f88e163e4e62d872bebe89b444a43d10"
   },
-  "fetched_at": "2026-09-14T12:43:26+00:00",
+  "fetched_at": "2026-10-23T07:48:03+00:00",
   "source_snapshot_sha256": "ee031703f621124eeb3d20e1f1727e48a080a06917c1d33c6d870c199c0ff2f9",
   "images": {},
-  "local_only": true
+  "publication_policy": "config/mirror.json"
 }

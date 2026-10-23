@@ -6,7 +6,14 @@
     "source_url": "https://spaces.ac.cn/archives/10945",
     "date": "2025-05-16",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "信息时代",
+    "source_tags": [
+      "优化",
+      "稀疏",
+      "moe"
+    ],
+    "source_summary": "本文介绍了MoE的Shared Expert和Fine-Grained Expert策略，并指出它们某种程度上都体现了负载均衡的非最优性。"
   },
   "validation": {
     "passed": true,
@@ -30,8 +37,8 @@
     "converter_version": 1,
     "markdown_sha256": "d86293370b811eb7894b6eb20132540435f851ee6b0196252318350d252c6891"
   },
-  "fetched_at": "2026-09-14T12:42:20+00:00",
+  "fetched_at": "2026-10-23T07:46:53+00:00",
   "source_snapshot_sha256": "f001d82d4ecd7fbc2f7d7c84c560e3ec23ae939b04a5f86e660a6227c8be69dd",
   "images": {},
-  "local_only": true
+  "publication_policy": "config/mirror.json"
 }

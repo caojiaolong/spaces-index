@@ -1477,6 +1477,7 @@
       "尺度定律"
     ],
     "source_summary": null,
+    "metadata_checked_at": "2026-10-23T07:45:35+00:00",
     "topics": [
       "深度学习基础"
     ],
@@ -1497,6 +1498,7 @@
       "酷论文"
     ],
     "source_summary": "对Cool Papers做了一些简单的调整，并写了一个Translator，从而可以配合Zotero Connector，将Cool Papers的论文导入到Zotero上。",
+    "metadata_checked_at": "2026-10-23T07:45:39+00:00",
     "topics": [
       "工程工具"
     ],
@@ -1627,6 +1629,7 @@
       "最速下降"
     ],
     "source_summary": "这篇文章新开一个系列，主要围绕“等式约束”来讨论优化问题，试图给一些常见的约束条件寻找“下降最快的方向”。作为第一篇文章，本文讨论了“超球面”约束下的SGD变体。",
+    "metadata_checked_at": "2026-10-23T07:45:42+00:00",
     "topics": [
       "优化与训练"
     ],
@@ -1648,6 +1651,7 @@
       "线性"
     ],
     "source_summary": "本文将上一篇文章的结果，推广到任意的$r$次方根和逆$r$次方根的计算，得到了一种矩阵的任意$-1/r$次方的通用迭代格式。",
+    "metadata_checked_at": "2026-10-23T07:45:46+00:00",
     "topics": [
       "数学工具"
     ],
@@ -1668,6 +1672,7 @@
       "线性"
     ],
     "source_summary": "本文提出了将矩阵的平方根和逆平方根转化为$\\mcsgn$形式，利用它的Newton-Schulz迭代来实现高效计算的过程。",
+    "metadata_checked_at": "2026-10-23T07:45:50+00:00",
     "topics": [
       "数学工具"
     ],
@@ -1688,6 +1693,7 @@
       "muon"
     ],
     "source_summary": "本文提出了QK-Clip，它是MaxLogit爆炸问题的一种新思路，跟QK-Norm不同，它是对Q、K权重的一种事后调整方案，并不改变模型的前向计算，因此适用性更广，它是“Muon + MLA”组合在超大规模训练上的重要稳定策略，也是我们最新发布的万亿模型Kimi K2的关键技术之一。",
+    "metadata_checked_at": "2026-10-23T07:45:57+00:00",
     "topics": [
       "大模型与Transformer",
       "优化与训练"
@@ -1709,6 +1715,7 @@
       "attention"
     ],
     "source_summary": "本文在上一篇文章的实验结果基础上，给出一个偏理论的思考过程，以论证MLA在一定范围内的最优性。总的来说，在Partial RoPE的背景下，MLA似乎是一个非常难以超越的Attention变体。",
+    "metadata_checked_at": "2026-10-23T07:46:06+00:00",
     "topics": [
       "大模型与Transformer"
     ],
@@ -1730,6 +1737,7 @@
       "attention"
     ],
     "source_summary": "本文讨论了“对角+低秩”特点的三角矩阵求逆问题，这类矩阵普遍出现在新式线性Attention模型中。",
+    "metadata_checked_at": "2026-10-23T07:46:18+00:00",
     "topics": [
       "大模型与Transformer",
       "数学工具"
@@ -1752,6 +1760,7 @@
       "muon"
     ],
     "source_summary": "本文继续完善了上一篇文章用$\\msign$来计算$\\mclip$的方案，通过去掉$\\msign$的嵌套以及引入额外的修正项，成功降低了计算误差。",
+    "metadata_checked_at": "2026-10-23T07:46:22+00:00",
     "topics": [
       "优化与训练"
     ],
@@ -1772,6 +1781,7 @@
       "线性"
     ],
     "source_summary": "本文主要从解代数Riccati方程的角度，整理了几个$\\mcsgn$相关的恒等式。",
+    "metadata_checked_at": "2026-10-23T07:46:26+00:00",
     "topics": [
       "数学工具"
     ],
@@ -1792,6 +1802,7 @@
       "attention"
     ],
     "source_summary": null,
+    "metadata_checked_at": "2026-10-23T07:46:30+00:00",
     "topics": [
       "大模型与Transformer",
       "生成模型"
@@ -1813,6 +1824,7 @@
       "muon"
     ],
     "source_summary": "本文讨论了$\\msign$算子的导数计算，如果你关心“TTT + Muon”的组合，那么本文也许对你有帮助。",
+    "metadata_checked_at": "2026-10-23T07:46:33+00:00",
     "topics": [
       "优化与训练"
     ],
@@ -1834,6 +1846,7 @@
       "muon"
     ],
     "source_summary": "本文介绍了利用矩阵及其$\\msign$，来对矩阵的奇异值进行一般运算的思路，包括奇异值裁剪、阶跃函数、任意次多项式（而不单单是奇多项式）等。",
+    "metadata_checked_at": "2026-10-23T07:46:37+00:00",
     "topics": [
       "优化与训练"
     ],
@@ -1855,6 +1868,7 @@
       "muon"
     ],
     "source_summary": "本文介绍了为msign算子寻找更好的Newton-Schulz迭代的最新进展，它通过等值振荡定理和贪心转换，直接求出理论上的最优解，整个过程相当硬核，值得学习一波。",
+    "metadata_checked_at": "2026-10-23T07:46:40+00:00",
     "topics": [
       "优化与训练"
     ],
@@ -1876,6 +1890,7 @@
       "分析"
     ],
     "source_summary": "本文介绍了多项式最优逼近的等值振荡定理（Equioscillation Theorem），以及与之相关的无穷范数求导问题。",
+    "metadata_checked_at": "2026-10-23T07:46:44+00:00",
     "topics": [
       "数学工具"
     ],
@@ -1896,6 +1911,7 @@
       "扩散"
     ],
     "source_summary": "本文以最近出来的MeanFlow为中心，讨论了“平均速度”视角下的扩散模型加速生成思路。",
+    "metadata_checked_at": "2026-10-23T07:46:49+00:00",
     "topics": [
       "生成模型"
     ],
@@ -1916,6 +1932,7 @@
       "moe"
     ],
     "source_summary": "本文介绍了MoE的Shared Expert和Fine-Grained Expert策略，并指出它们某种程度上都体现了负载均衡的非最优性。",
+    "metadata_checked_at": "2026-10-23T07:46:53+00:00",
     "topics": [
       "大模型与Transformer"
     ],
@@ -1937,6 +1954,7 @@
       "muon"
     ],
     "source_summary": "本文介绍了通过Newton-Schulz迭代来计算$\\msign$的优化思路，所得结果相比Muon的官方解，能够明显提高迭代的收敛速度和效果。 最后需要指出的是，对于Muon来说，小规模的实验结果显示，$\\msign$的计算精度跟模型的最终效果似乎没有必然联系，小模型下提高$\\msign$的精度似乎只能在前期加速一点收敛速度，但最终结果并无变化。目前尚不清楚这个结论在更大规模的模型下是否成立。",
+    "metadata_checked_at": "2026-10-23T07:46:57+00:00",
     "topics": [
       "优化与训练"
     ],
@@ -1958,6 +1976,7 @@
       "attention"
     ],
     "source_summary": "初步结论是： 1、增大head_dims收益最大； 2、Partial RoPE对Loss也有一定帮助； 3、KV-Shared应该也有一定作用。 这样看来，此前我们一直在head_dims=128下找MLA的替代品，感觉是起点就先天不足了，难怪一直比不上MLA。要想追平MLA，head_dims应该要192起步了，并辅以Partial RoPE。至于KV-Shared，也可能有用，但应该还需要更大规模的验证。",
+    "metadata_checked_at": "2026-10-23T07:47:06+00:00",
     "topics": [
       "大模型与Transformer"
     ],
@@ -1978,6 +1997,7 @@
       "显然成立"
     ],
     "source_summary": null,
+    "metadata_checked_at": "2026-10-23T07:47:14+00:00",
     "topics": [
       "数学工具",
       "概率统计与信息论"
@@ -2000,6 +2020,7 @@
       "梯度"
     ],
     "source_summary": "本文较为详细地推导了SVD的求导公式。",
+    "metadata_checked_at": "2026-10-23T07:47:22+00:00",
     "topics": [
       "数学工具"
     ],
@@ -2018,6 +2039,7 @@
       "智能家居"
     ],
     "source_summary": "本文简单讲了自己制作一套零冷水装置的思路和材料。对于已经手动折腾过智能家居的读者来说，应该并不难理解，可能只有温控开关、电磁阀这两个配件不大熟悉。 温控开关如果直接搜“米家 温控开关”，倒是也能搜出直接能接入米家的温控开关来，但单个通常就要百来块钱，如果是没有回水管的场景，希望点对点做多个回水器的话，还是比较破费的，当然，成品的米家温控开关也能简化系统，这个就看个人取舍了。至于电磁阀，如果接触到水路的自动控制，那么通常也容易搜到了。 总之，爱折腾的读者可以按照本文的思路尝试一下，毕竟生命在于折腾～",
+    "metadata_checked_at": "2026-10-23T07:47:39+00:00",
     "topics": [
       "工程工具",
       "阅读写作与随笔"
@@ -2039,6 +2061,7 @@
       "rope"
     ],
     "source_summary": "本文围绕着“RoPE可以加在V上吗”进行展开，讨论了RoPE的第二种用法。",
+    "metadata_checked_at": "2026-10-23T07:47:43+00:00",
     "topics": [
       "大模型与Transformer"
     ],
@@ -2060,6 +2083,7 @@
       "低秩"
     ],
     "source_summary": "本文探讨了矩阵的有效秩（Effective Rank）概念，它是线性代数中矩阵的秩（Rank）概念在数值计算方面的延伸，能够更有效地度量矩阵的本质维度。",
+    "metadata_checked_at": "2026-10-23T07:47:56+00:00",
     "topics": [
       "数学工具",
       "概率统计与信息论"
@@ -2124,6 +2148,7 @@
       "MuP"
     ],
     "source_summary": "这篇文章介绍了MuP的升级版——谱条件，它从谱范数相关的不等式切入来分析模型稳定训练的条件，以一种更便捷的方式得到了比MuP更丰富的结果。 $$\\left\\{\\begin{aligned} &\\,\\text{期望性质:}\\left\\{\\begin{aligned} &\\,\\Vert\\boldsymbol{x}_k\\Vert_{RMS}=\\Theta(1) \\\\[5pt] &\\,\\Vert\\Delta\\boldsymbol{x}_k\\Vert_{RMS}=\\Theta(1) \\end{aligned}\\right. \\\\[10pt] &\\,\\text{谱条件:}\\left\\{\\begin{aligned} &\\,\\Vert\\bold…",
+    "metadata_checked_at": "2026-10-23T07:48:03+00:00",
     "topics": [
       "深度学习基础",
       "大模型与Transformer",

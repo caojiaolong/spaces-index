@@ -6,9 +6,17 @@
     "source_url": "https://spaces.ac.cn/archives/11196",
     "date": "2025-08-01",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "数学研究",
+    "source_tags": [
+      "不等式",
+      "优化器",
+      "约束",
+      "最速下降"
+    ],
+    "source_summary": "这篇文章新开一个系列，主要围绕“等式约束”来讨论优化问题，试图给一些常见的约束条件寻找“下降最快的方向”。作为第一篇文章，本文讨论了“超球面”约束下的SGD变体。"
   },
-  "fetched_at": "2026-09-14T12:40:49+00:00",
+  "fetched_at": "2026-10-23T07:45:42+00:00",
   "source_snapshot_sha256": "b116de5c86e02b2654087d3b4e4b6b96a5a66e483cdc1f47642c8a170002014f",
   "validators": {
     "etag": null,

@@ -6,7 +6,15 @@
     "source_url": "https://spaces.ac.cn/archives/10996",
     "date": "2025-06-05",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "数学研究",
+    "source_tags": [
+      "迭代",
+      "近似",
+      "优化器",
+      "muon"
+    ],
+    "source_summary": "本文介绍了为msign算子寻找更好的Newton-Schulz迭代的最新进展，它通过等值振荡定理和贪心转换，直接求出理论上的最优解，整个过程相当硬核，值得学习一波。"
   },
   "validation": {
     "passed": true,
@@ -30,8 +38,8 @@
     "converter_version": 1,
     "markdown_sha256": "2b2807b33cbe3a020201c3807782f7306d4b99490a42c5ff755b0eb7e041abad"
   },
-  "fetched_at": "2026-09-14T12:42:01+00:00",
+  "fetched_at": "2026-10-23T07:46:40+00:00",
   "source_snapshot_sha256": "efe1a147a1c9ebef5823f5328c647044b585e6238018148fa9eb029b26e3ac01",
   "images": {},
-  "local_only": true
+  "publication_policy": "config/mirror.json"
 }

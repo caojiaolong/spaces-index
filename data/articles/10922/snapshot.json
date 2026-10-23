@@ -6,9 +6,17 @@
     "source_url": "https://spaces.ac.cn/archives/10922",
     "date": "2025-05-11",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "数学研究",
+    "source_tags": [
+      "迭代",
+      "近似",
+      "优化器",
+      "muon"
+    ],
+    "source_summary": "本文介绍了通过Newton-Schulz迭代来计算$\\msign$的优化思路，所得结果相比Muon的官方解，能够明显提高迭代的收敛速度和效果。 最后需要指出的是，对于Muon来说，小规模的实验结果显示，$\\msign$的计算精度跟模型的最终效果似乎没有必然联系，小模型下提高$\\msign$的精度似乎只能在前期加速一点收敛速度，但最终结果并无变化。目前尚不清楚这个结论在更大规模的模型下是否成立。"
   },
-  "fetched_at": "2026-09-14T12:42:27+00:00",
+  "fetched_at": "2026-10-23T07:46:57+00:00",
   "source_snapshot_sha256": "106f2bb8fc24534cb3774ee3b25c40f0cd9d3226e487c0ea54007d307b0ed21f",
   "validators": {
     "etag": null,

@@ -6,9 +6,17 @@
     "source_url": "https://spaces.ac.cn/archives/11175",
     "date": "2025-07-21",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "数学研究",
+    "source_tags": [
+      "代数",
+      "迭代",
+      "矩阵",
+      "线性"
+    ],
+    "source_summary": "本文将上一篇文章的结果，推广到任意的$r$次方根和逆$r$次方根的计算，得到了一种矩阵的任意$-1/r$次方的通用迭代格式。"
   },
-  "fetched_at": "2026-09-14T12:40:56+00:00",
+  "fetched_at": "2026-10-23T07:45:46+00:00",
   "source_snapshot_sha256": "55d72246f804518257c955f26b88794d7870dc91f4f7266dfd9491f82c400e95",
   "validators": {
     "etag": null,

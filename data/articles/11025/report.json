@@ -6,7 +6,15 @@
     "source_url": "https://spaces.ac.cn/archives/11025",
     "date": "2025-06-13",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "数学研究",
+    "source_tags": [
+      "微积分",
+      "矩阵",
+      "梯度",
+      "muon"
+    ],
+    "source_summary": "本文讨论了$\\msign$算子的导数计算，如果你关心“TTT + Muon”的组合，那么本文也许对你有帮助。"
   },
   "validation": {
     "passed": true,
@@ -30,8 +38,8 @@
     "converter_version": 1,
     "markdown_sha256": "70d7b42c2de3dfde26e8b03b7387e9dd6f4ed698e76faeab006dc4c22bb728b3"
   },
-  "fetched_at": "2026-09-14T12:41:49+00:00",
+  "fetched_at": "2026-10-23T07:46:33+00:00",
   "source_snapshot_sha256": "2e17b940f5419b1cfbc71852f48b694ea1e0f8785524fa8c3345a03b8b9b3bef",
   "images": {},
-  "local_only": true
+  "publication_policy": "config/mirror.json"
 }

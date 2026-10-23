@@ -6,7 +6,16 @@
     "source_url": "https://spaces.ac.cn/archives/11006",
     "date": "2025-06-07",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "数学研究",
+    "source_tags": [
+      "迭代",
+      "近似",
+      "矩阵",
+      "SVD",
+      "muon"
+    ],
+    "source_summary": "本文介绍了利用矩阵及其$\\msign$，来对矩阵的奇异值进行一般运算的思路，包括奇异值裁剪、阶跃函数、任意次多项式（而不单单是奇多项式）等。"
   },
   "validation": {
     "passed": true,
@@ -30,8 +39,8 @@
     "converter_version": 1,
     "markdown_sha256": "3071470952a871abc0872c78e092fa68fb5aa1c9b785417a59df890fe9bf95e2"
   },
-  "fetched_at": "2026-09-14T12:41:55+00:00",
+  "fetched_at": "2026-10-23T07:46:37+00:00",
   "source_snapshot_sha256": "f751b881e527023899b78765ae121892a24e3f146cfbd760256be3f3b8daa228",
   "images": {},
-  "local_only": true
+  "publication_policy": "config/mirror.json"
 }
