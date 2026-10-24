@@ -6,7 +6,15 @@
     "source_url": "https://spaces.ac.cn/archives/10617",
     "date": "2024-12-15",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "信息时代",
+    "source_tags": [
+      "微分方程",
+      "生成模型",
+      "采样",
+      "扩散"
+    ],
+    "source_summary": "本文介绍了一个单阶段训练就可以实现单步生成的扩散模型新工作，它的突破思想是将步长也当成条件输入到扩散模型中，并配以一个直观的正则项，这样只通过单阶段训练就可以得到单步生成的扩散模型。"
   },
   "validation": {
     "passed": true,
@@ -30,8 +38,8 @@
     "converter_version": 1,
     "markdown_sha256": "42cdacd444f03fd0d40418e068c98682a430778b7104ac1d667e1fc7c513fc76"
   },
-  "fetched_at": "2026-09-14T12:44:44+00:00",
+  "fetched_at": "2026-10-24T07:28:53+00:00",
   "source_snapshot_sha256": "b596b3357d53612d6e7f36131900186e64bb41df10e9a1834cea93622fbe0ab3",
   "images": {},
-  "local_only": true
+  "publication_policy": "config/mirror.json"
 }

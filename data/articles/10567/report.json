@@ -6,7 +6,15 @@
     "source_url": "https://spaces.ac.cn/archives/10567",
     "date": "2024-11-22",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "数学研究",
+    "source_tags": [
+      "生成模型",
+      "梯度",
+      "扩散",
+      "去噪"
+    ],
+    "source_summary": "本文介绍了SiD（Score identity Distillation）的后续理论进展，主要内容是从梯度视角解释了SiD中的$\\lambda$参数设置，核心部分是由FGM（Flow Generator Matching）发现的准确估计SiD梯度的巧妙思路，这肯定了$\\lambda=0.5$的选择，在此基础上，笔者拓展了Fisher散度的概念，从而解释了$\\lambda=1$的取值。"
   },
   "validation": {
     "passed": true,
@@ -30,8 +38,8 @@
     "converter_version": 1,
     "markdown_sha256": "010b807313807b0a52054ec640653a999b926bccc95017427ecf7a71eb3eaf98"
   },
-  "fetched_at": "2026-09-14T12:45:04+00:00",
+  "fetched_at": "2026-10-24T07:29:04+00:00",
   "source_snapshot_sha256": "60cb8d58b85e5a60c8b16d3b881317a88f365992c6fec81df0ae5f40ce1be7f4",
   "images": {},
-  "local_only": true
+  "publication_policy": "config/mirror.json"
 }

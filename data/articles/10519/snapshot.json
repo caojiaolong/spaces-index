@@ -6,9 +6,17 @@
     "source_url": "https://spaces.ac.cn/archives/10519",
     "date": "2024-11-06",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "数学研究",
+    "source_tags": [
+      "生成模型",
+      "编码",
+      "梯度",
+      "离散化"
+    ],
+    "source_summary": "本文介绍了VQ（Vector Quantization）的另一个训练技巧——SimVQ——只在VQ的编码表多加一个线性变换，无需其他改动，就能达到加速收敛、提升编码利用率、降低重构损失等效果，相当简单有效。"
   },
-  "fetched_at": "2026-09-14T12:45:42+00:00",
+  "fetched_at": "2026-10-24T07:29:15+00:00",
   "source_snapshot_sha256": "a739641cd3734f0b62d037e3e1edfe1bdc4ec54f2e0615568ac1f5b6cdbff304",
   "validators": {
     "etag": null,

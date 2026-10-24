@@ -6,9 +6,17 @@
     "source_url": "https://spaces.ac.cn/archives/10542",
     "date": "2024-11-14",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "数学研究",
+    "source_tags": [
+      "梯度",
+      "学习率",
+      "优化器",
+      "尺度定律"
+    ],
+    "source_summary": "本文从多个视角讨论了“Batch Size与学习率之间的Scaling Law”这一经典炼丹问题，其中着重介绍了OpenAI基于损失函数的二阶近似的推导和结论，以及后续利用同样的思想来分析Adam优化器的工作。"
   },
-  "fetched_at": "2026-09-14T12:45:18+00:00",
+  "fetched_at": "2026-10-24T07:29:11+00:00",
   "source_snapshot_sha256": "5b7ff66ef751aeb54e0f1b4cbaa5d7a39663b03b457b2d426563d5cf647d8a9b",
   "validators": {
     "etag": null,

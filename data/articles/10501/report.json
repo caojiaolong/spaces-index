@@ -6,7 +6,15 @@
     "source_url": "https://spaces.ac.cn/archives/10501",
     "date": "2024-10-30",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "数学研究",
+    "source_tags": [
+      "近似",
+      "最优",
+      "矩阵",
+      "低秩"
+    ],
+    "source_summary": "本文介绍了ID（Interpolative Decomposition，插值分解），它通过从原矩阵中选择若干列来作为“骨架”来逼近原矩阵，是一种具有特定结构的低秩分解，几何意义相对来说更加直观，其核心难度是列的选择，本质上是一个NP-Hard的离散优化问题。"
   },
   "validation": {
     "passed": true,
@@ -30,8 +38,8 @@
     "converter_version": 1,
     "markdown_sha256": "fcdb714028f848cbc4cb827788ee0a74124530ed9ce006af6e729a15514a45be"
   },
-  "fetched_at": "2026-09-14T12:45:49+00:00",
+  "fetched_at": "2026-10-24T07:29:18+00:00",
   "source_snapshot_sha256": "78d1529c7550e92f7127a8a85ba6be807aa089ad0ae8daf227d2db6a73f9ff67",
   "images": {},
-  "local_only": true
+  "publication_policy": "config/mirror.json"
 }

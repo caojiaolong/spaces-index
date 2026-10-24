@@ -6,7 +6,14 @@
     "source_url": "https://spaces.ac.cn/archives/10480",
     "date": "2024-10-16",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "信息时代",
+    "source_tags": [
+      "网站",
+      "论文",
+      "酷论文"
+    ],
+    "source_summary": "本文根据作者自己的使用经验简单升级了一下Cool Papers Redirector浏览器拓展，欢迎大家测试。如果有更多改进意见，欢迎留言指出。"
   },
   "validation": {
     "passed": true,
@@ -30,8 +37,8 @@
     "converter_version": 1,
     "markdown_sha256": "8d52089b24783c31db6d2cad031437b768f0e1d49cd76f5f3222c2fb181a5c67"
   },
-  "fetched_at": "2026-09-14T12:46:02+00:00",
+  "fetched_at": "2026-10-24T07:29:39+00:00",
   "source_snapshot_sha256": "a9de6dca4e0050dfc0fdb0bbbc25217508f3dae8b1460f30ef4551612b05650e",
   "images": {},
-  "local_only": true
+  "publication_policy": "config/mirror.json"
 }

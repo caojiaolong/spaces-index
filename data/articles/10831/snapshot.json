@@ -6,9 +6,17 @@
     "source_url": "https://spaces.ac.cn/archives/10831",
     "date": "2025-04-02",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "数学研究",
+    "source_tags": [
+      "函数",
+      "分析",
+      "梯度",
+      "光滑"
+    ],
+    "source_summary": "本文从梯度近似角度来分析什么样的Element-wise的激活函数才能（一定程度上）替代Normalization层，从中我们可以推出DyT以及新的结果。"
   },
-  "fetched_at": "2026-09-14T12:43:13+00:00",
+  "fetched_at": "2026-10-24T07:27:48+00:00",
   "source_snapshot_sha256": "cbeb3340b96237cb51f9d24311dd1d341863dd0ea75e73617536de736600e002",
   "validators": {
     "etag": null,

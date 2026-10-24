@@ -6,7 +6,15 @@
     "source_url": "https://spaces.ac.cn/archives/10588",
     "date": "2024-11-29",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "数学研究",
+    "source_tags": [
+      "优化",
+      "梯度",
+      "学习率",
+      "优化器"
+    ],
+    "source_summary": "本文介绍了从Newton法和Hessian近似看待Adam等自适应学习率优化器的一个视角，并讨论了Hessian近似的相关结果。"
   },
   "validation": {
     "passed": true,
@@ -30,8 +38,8 @@
     "converter_version": 1,
     "markdown_sha256": "45abf061bd7defe1777c13bfa6c40913e99482d63560d752f6701204ea9dbfef"
   },
-  "fetched_at": "2026-09-14T12:44:57+00:00",
+  "fetched_at": "2026-10-24T07:29:01+00:00",
   "source_snapshot_sha256": "df8e7dc1c3e24fdee264e4886422f78cb65d73f9e6d5e96ca746a4c7553786b6",
   "images": {},
-  "local_only": true
+  "publication_policy": "config/mirror.json"
 }

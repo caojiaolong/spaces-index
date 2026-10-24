@@ -6,9 +6,18 @@
     "source_url": "https://spaces.ac.cn/archives/10711",
     "date": "2025-02-14",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "信息时代",
+    "source_tags": [
+      "生成模型",
+      "编码",
+      "DDPM",
+      "扩散",
+      "离散化"
+    ],
+    "source_summary": "本文介绍了扩散模型的一个新脑洞，它将DDPM生成过程中的噪声限制在一个有限的集合上，并结合条件生成的思路，将DDPM免训练地变成一个类似VQ-VAE的离散自编码器。"
   },
-  "fetched_at": "2026-09-14T12:43:57+00:00",
+  "fetched_at": "2026-10-24T07:28:22+00:00",
   "source_snapshot_sha256": "d8a65137814d1a620eb7f9321f139b3a6f0b78938e6eaa1abc86f73e810f16f1",
   "validators": {
     "etag": null,

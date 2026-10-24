@@ -6,7 +6,15 @@
     "source_url": "https://spaces.ac.cn/archives/10699",
     "date": "2025-02-08",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "信息时代",
+    "source_tags": [
+      "模型",
+      "几何",
+      "稀疏",
+      "moe"
+    ],
+    "source_summary": "本文从Dense模型的最佳逼近出发来推导和理解MoE，得到了一种特定的MoE形式，它比现有MoE多了一个Normalize步骤，但能让MoE的几何意义更加明显。当然，不管Normalize与否，MoE之路都只是刚刚开始，更多的困难还在路上。"
   },
   "validation": {
     "passed": true,
@@ -30,8 +38,8 @@
     "converter_version": 1,
     "markdown_sha256": "a0cbd93a3feb9368f24e6cd0d76181e372cb221e3b7b5611986d93ea8729eb25"
   },
-  "fetched_at": "2026-09-14T12:44:03+00:00",
+  "fetched_at": "2026-10-24T07:28:25+00:00",
   "source_snapshot_sha256": "43dfb9bb7b40a1bb962e234f1e18fa4bcef750fce8da86bb07f649777d7a5276",
   "images": {},
-  "local_only": true
+  "publication_policy": "config/mirror.json"
 }

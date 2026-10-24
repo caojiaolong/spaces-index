@@ -6,9 +6,18 @@
     "source_url": "https://spaces.ac.cn/archives/10648",
     "date": "2024-12-25",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "数学研究",
+    "source_tags": [
+      "矩阵",
+      "优化",
+      "梯度",
+      "优化器",
+      "谱范数"
+    ],
+    "source_summary": "本文推导了谱范数的梯度，由此导出了一种新的权重衰减，并分享了笔者对它的思考。"
   },
-  "fetched_at": "2026-09-14T12:44:32+00:00",
+  "fetched_at": "2026-10-24T07:28:46+00:00",
   "source_snapshot_sha256": "69105685fead8fade39d4f66966fa52f204bda110200ec54058148b843d51705",
   "validators": {
     "etag": null,

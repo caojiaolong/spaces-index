@@ -6,7 +6,16 @@
     "source_url": "https://spaces.ac.cn/archives/10770",
     "date": "2025-03-13",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "数学研究",
+    "source_tags": [
+      "梯度",
+      "学习率",
+      "优化器",
+      "尺度定律",
+      "MuP"
+    ],
+    "source_summary": "本文以尽可能简明清晰的方式介绍了MuP（Maximal Update Parametrization），这是旨在研究超参数跨模型尺度的迁移规律的工作。基于MuP，我们可以在小模型上以相对较小的成本仔细搜索超参数（这里主要是学习率和初始化），然后迁移到大模型上，降低大模型的炼丹成本。 客观来讲，这里的介绍和分析还比较初步，比如没有考虑Bias项、没有评估结论在MLP以外架构的通用性、也没有仔细考虑Normalization和残差的作用等。没有考虑Bias项这个单纯是偷懒，权当留给读者的习题了；至于不同架构下的MuP，一般分析起来比较麻烦，但由于神经网络的相似性，结论大致上是相同的，我们可以不加证明地用着。个人认为比较关键的改进点是N…"
   },
   "validation": {
     "passed": true,
@@ -30,8 +39,8 @@
     "converter_version": 1,
     "markdown_sha256": "f1d06f91ca2d1906c9c7ce0a25f8ff2fb0f02d8f8dffc3f772a1fd2e8cf52493"
   },
-  "fetched_at": "2026-09-14T12:43:32+00:00",
+  "fetched_at": "2026-10-24T07:27:56+00:00",
   "source_snapshot_sha256": "7f0c8f706a739f2f2a4797fdd30450e7d3d26108e14396549b0fb072654bd07d",
   "images": {},
-  "local_only": true
+  "publication_policy": "config/mirror.json"
 }

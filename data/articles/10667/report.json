@@ -6,7 +6,15 @@
     "source_url": "https://spaces.ac.cn/archives/10667",
     "date": "2025-01-17",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "信息时代",
+    "source_tags": [
+      "流模型",
+      "flow",
+      "生成模型",
+      "attention"
+    ],
+    "source_summary": null
   },
   "validation": {
     "passed": true,
@@ -30,8 +38,8 @@
     "converter_version": 1,
     "markdown_sha256": "88534c90a264682911b6b00eb223361b97b9fb3632535e41e7aa930c3ac7d1db"
   },
-  "fetched_at": "2026-09-14T12:44:14+00:00",
+  "fetched_at": "2026-10-24T07:28:35+00:00",
   "source_snapshot_sha256": "74f819cd633d7a273d7e173c1421088197a934b43e89453de0075212edaf3a16",
   "images": {},
-  "local_only": true
+  "publication_policy": "config/mirror.json"
 }

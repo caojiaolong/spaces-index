@@ -6,9 +6,17 @@
     "source_url": "https://spaces.ac.cn/archives/10633",
     "date": "2024-12-18",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "信息时代",
+    "source_tags": [
+      "微分方程",
+      "生成模型",
+      "采样",
+      "扩散"
+    ],
+    "source_summary": "本文通过逐步解构和优化ReFLow训练流程的方式，提供了一个从ReFlow逐渐过渡到一致性模型（Consistency Models）的直观理解路径。"
   },
-  "fetched_at": "2026-09-14T12:44:38+00:00",
+  "fetched_at": "2026-10-24T07:28:50+00:00",
   "source_snapshot_sha256": "9a6822db670d3b2e298f9843642fd1cab24964bd90b577b8c9801a4e73ecc009",
   "validators": {
     "etag": null,

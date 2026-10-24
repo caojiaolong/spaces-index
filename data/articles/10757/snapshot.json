@@ -6,9 +6,17 @@
     "source_url": "https://spaces.ac.cn/archives/10757",
     "date": "2025-03-05",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "信息时代",
+    "source_tags": [
+      "最优",
+      "损失函数",
+      "梯度",
+      "moe"
+    ],
+    "source_summary": "本文介绍了MoE负载均衡问题的Loss-Free方法，它由DeepSeek提出，其核心在于通过引入一个简单的偏置项来实现负载均衡。本文进一步思考了它与Aux Loss的联系，以及它在类似数学问题上的应用潜力。"
   },
-  "fetched_at": "2026-09-14T12:43:38+00:00",
+  "fetched_at": "2026-10-24T07:28:02+00:00",
   "source_snapshot_sha256": "d2d281025cb4cf96a6146f54b3df2c3d7016e1c0e15038e6a7409d2831c863aa",
   "validators": {
     "etag": null,

@@ -6,7 +6,13 @@
     "source_url": "https://spaces.ac.cn/archives/10684",
     "date": "2025-01-28",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "数学研究",
+    "source_tags": [
+      "方程",
+      "几何"
+    ],
+    "source_summary": "本文整理了三球交点问题的一个相对简明的求解方案。"
   },
   "validation": {
     "passed": true,
@@ -30,8 +36,8 @@
     "converter_version": 1,
     "markdown_sha256": "5b3eb11ef95cf94a0d99d952dd8fc25891b63f71764d6a0860792e06bb022a73"
   },
-  "fetched_at": "2026-09-14T12:44:09+00:00",
+  "fetched_at": "2026-10-24T07:28:29+00:00",
   "source_snapshot_sha256": "2c1a018a56330d96d060b483bcbdc1c09160850cfc66368f332bfb30bb30c257",
   "images": {},
-  "local_only": true
+  "publication_policy": "config/mirror.json"
 }

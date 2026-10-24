@@ -6,9 +6,17 @@
     "source_url": "https://spaces.ac.cn/archives/10563",
     "date": "2024-11-18",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "数学研究",
+    "source_tags": [
+      "梯度",
+      "学习率",
+      "优化器",
+      "尺度定律"
+    ],
+    "source_summary": "本文延续了上一篇文章的方法，尝试分析了Adam的$\\epsilon$对学习率与Batch Size之间的Scaling Law的影响，结果是一个介乎SGD与SignSGD之间的形式，当$\\epsilon$越大，结果越接近SGD，“Surge现象”出现的概率就越低。总的来说，计算结果没有特别让人意外之处，但可以作为分析$\\epsilon$作用的一个参考过程。"
   },
-  "fetched_at": "2026-09-14T12:45:10+00:00",
+  "fetched_at": "2026-10-24T07:29:08+00:00",
   "source_snapshot_sha256": "d8e859ae8fcfdc49a0dde1ed0b79feb22e6a53ff0eb612ee1a988ad7ead21cc4",
   "validators": {
     "etag": null,

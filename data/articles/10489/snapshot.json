@@ -6,9 +6,17 @@
     "source_url": "https://spaces.ac.cn/archives/10489",
     "date": "2024-10-24",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "信息时代",
+    "source_tags": [
+      "生成模型",
+      "编码",
+      "梯度",
+      "离散化"
+    ],
+    "source_summary": "旋转技巧是近日arXiv上面提出的训练VQ（Vector Quantization）模型的新技术，它推广了原本的直通估计器（STE），声称能改善编码表的坍缩或利用率低等问题，本文对此进行了简单介绍，并给出了笔者对它的一些思考和疑问。"
   },
-  "fetched_at": "2026-09-14T12:45:55+00:00",
+  "fetched_at": "2026-10-24T07:29:35+00:00",
   "source_snapshot_sha256": "bab2c0c5d9843dc03f8767159917bafc6425561dc039f1c7a0ec99925a8c4e4e",
   "validators": {
     "etag": null,

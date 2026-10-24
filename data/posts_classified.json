@@ -2105,6 +2105,7 @@
       "光滑"
     ],
     "source_summary": "本文从梯度近似角度来分析什么样的Element-wise的激活函数才能（一定程度上）替代Normalization层，从中我们可以推出DyT以及新的结果。",
+    "metadata_checked_at": "2026-10-24T07:27:48+00:00",
     "topics": [
       "优化与训练"
     ],
@@ -2125,6 +2126,7 @@
       "动态"
     ],
     "source_summary": "本文提出了一种动态选择Expert数目的MoE设计，主要思想是对Loss-Free的MoE形式稍作修改，然后调整Bias项的更新规则，利用它的额外自由度来同时实现负载均衡和预算控制。",
+    "metadata_checked_at": "2026-10-24T07:27:52+00:00",
     "topics": [
       "大模型与Transformer"
     ],
@@ -2172,6 +2174,7 @@
       "MuP"
     ],
     "source_summary": "本文以尽可能简明清晰的方式介绍了MuP（Maximal Update Parametrization），这是旨在研究超参数跨模型尺度的迁移规律的工作。基于MuP，我们可以在小模型上以相对较小的成本仔细搜索超参数（这里主要是学习率和初始化），然后迁移到大模型上，降低大模型的炼丹成本。 客观来讲，这里的介绍和分析还比较初步，比如没有考虑Bias项、没有评估结论在MLP以外架构的通用性、也没有仔细考虑Normalization和残差的作用等。没有考虑Bias项这个单纯是偷懒，权当留给读者的习题了；至于不同架构下的MuP，一般分析起来比较麻烦，但由于神经网络的相似性，结论大致上是相同的，我们可以不加证明地用着。个人认为比较关键的改进点是N…",
+    "metadata_checked_at": "2026-10-24T07:27:56+00:00",
     "topics": [
       "深度学习基础",
       "大模型与Transformer",
@@ -2194,6 +2197,7 @@
       "moe"
     ],
     "source_summary": "本文介绍了MoE负载均衡问题的Loss-Free方法，它由DeepSeek提出，其核心在于通过引入一个简单的偏置项来实现负载均衡。本文进一步思考了它与Aux Loss的联系，以及它在类似数学问题上的应用潜力。",
+    "metadata_checked_at": "2026-10-24T07:28:02+00:00",
     "topics": [
       "大模型与Transformer"
     ],
@@ -2216,6 +2220,7 @@
       "muon"
     ],
     "source_summary": "本文介绍了我们在Muon优化器上的一次较大规模实践（Moonlight），并分享了我们对Muon优化器的最新思考。",
+    "metadata_checked_at": "2026-10-24T07:28:11+00:00",
     "topics": [
       "优化与训练",
       "科普问答与百科"
@@ -2237,6 +2242,7 @@
       "moe"
     ],
     "source_summary": "本文介绍了MoE的负载均衡问题，并给出了一种构建Aux Loss的一般思路。除了Aux Loss外，促进负载均衡还有一些其他方案，我们下回再谈。",
+    "metadata_checked_at": "2026-10-24T07:28:17+00:00",
     "topics": [
       "大模型与Transformer"
     ],
@@ -2259,6 +2265,7 @@
       "离散化"
     ],
     "source_summary": "本文介绍了扩散模型的一个新脑洞，它将DDPM生成过程中的噪声限制在一个有限的集合上，并结合条件生成的思路，将DDPM免训练地变成一个类似VQ-VAE的离散自编码器。",
+    "metadata_checked_at": "2026-10-24T07:28:22+00:00",
     "topics": [
       "生成模型"
     ],
@@ -2280,6 +2287,7 @@
       "moe"
     ],
     "source_summary": "本文从Dense模型的最佳逼近出发来推导和理解MoE，得到了一种特定的MoE形式，它比现有MoE多了一个Normalize步骤，但能让MoE的几何意义更加明显。当然，不管Normalize与否，MoE之路都只是刚刚开始，更多的困难还在路上。",
+    "metadata_checked_at": "2026-10-24T07:28:25+00:00",
     "topics": [
       "大模型与Transformer"
     ],
@@ -2299,6 +2307,7 @@
       "几何"
     ],
     "source_summary": "本文整理了三球交点问题的一个相对简明的求解方案。",
+    "metadata_checked_at": "2026-10-24T07:28:29+00:00",
     "topics": [
       "几何与方程",
       "数学工具"
@@ -2320,6 +2329,7 @@
       "attention"
     ],
     "source_summary": null,
+    "metadata_checked_at": "2026-10-24T07:28:35+00:00",
     "topics": [
       "生成模型"
     ],
@@ -2341,6 +2351,7 @@
       "低秩"
     ],
     "source_summary": "本文介绍了CUR分解，它可以视为上一篇文章介绍的插值分解（ID）的进一步延伸，特点是同时以原始矩阵的若干行与列作为骨架来构建低秩近似。",
+    "metadata_checked_at": "2026-10-24T07:28:39+00:00",
     "topics": [
       "数学工具"
     ],
@@ -2362,6 +2373,7 @@
       "优化器"
     ],
     "source_summary": null,
+    "metadata_checked_at": "2026-10-24T07:28:43+00:00",
     "topics": [
       "优化与训练",
       "科普问答与百科"
@@ -2384,6 +2396,7 @@
       "谱范数"
     ],
     "source_summary": "本文推导了谱范数的梯度，由此导出了一种新的权重衰减，并分享了笔者对它的思考。",
+    "metadata_checked_at": "2026-10-24T07:28:46+00:00",
     "topics": [
       "优化与训练"
     ],
@@ -2404,6 +2417,7 @@
       "扩散"
     ],
     "source_summary": "本文通过逐步解构和优化ReFLow训练流程的方式，提供了一个从ReFlow逐渐过渡到一致性模型（Consistency Models）的直观理解路径。",
+    "metadata_checked_at": "2026-10-24T07:28:50+00:00",
     "topics": [
       "生成模型"
     ],
@@ -2425,6 +2439,7 @@
       "扩散"
     ],
     "source_summary": "本文介绍了一个单阶段训练就可以实现单步生成的扩散模型新工作，它的突破思想是将步长也当成条件输入到扩散模型中，并配以一个直观的正则项，这样只通过单阶段训练就可以得到单步生成的扩散模型。",
+    "metadata_checked_at": "2026-10-24T07:28:53+00:00",
     "topics": [
       "生成模型"
     ],
@@ -2447,6 +2462,7 @@
       "muon"
     ],
     "source_summary": "本文介绍了最近推特上颇为热闹的Muon优化器，它专门为矩阵参数定制，目前看来比AdamW更高效，并且似乎体现了一些向量化与矩阵化的本质差异，值得学习和思考一番。",
+    "metadata_checked_at": "2026-10-24T07:28:57+00:00",
     "topics": [
       "优化与训练"
     ],
@@ -2467,6 +2483,7 @@
       "优化器"
     ],
     "source_summary": "本文介绍了从Newton法和Hessian近似看待Adam等自适应学习率优化器的一个视角，并讨论了Hessian近似的相关结果。",
+    "metadata_checked_at": "2026-10-24T07:29:00+00:00",
     "topics": [
       "优化与训练"
     ],
@@ -2487,6 +2504,7 @@
       "去噪"
     ],
     "source_summary": "本文介绍了SiD（Score identity Distillation）的后续理论进展，主要内容是从梯度视角解释了SiD中的$\\lambda$参数设置，核心部分是由FGM（Flow Generator Matching）发现的准确估计SiD梯度的巧妙思路，这肯定了$\\lambda=0.5$的选择，在此基础上，笔者拓展了Fisher散度的概念，从而解释了$\\lambda=1$的取值。",
+    "metadata_checked_at": "2026-10-24T07:29:04+00:00",
     "topics": [
       "生成模型"
     ],
@@ -2508,6 +2526,7 @@
       "尺度定律"
     ],
     "source_summary": "本文延续了上一篇文章的方法，尝试分析了Adam的$\\epsilon$对学习率与Batch Size之间的Scaling Law的影响，结果是一个介乎SGD与SignSGD之间的形式，当$\\epsilon$越大，结果越接近SGD，“Surge现象”出现的概率就越低。总的来说，计算结果没有特别让人意外之处，但可以作为分析$\\epsilon$作用的一个参考过程。",
+    "metadata_checked_at": "2026-10-24T07:29:08+00:00",
     "topics": [
       "深度学习基础",
       "优化与训练"
@@ -2529,6 +2548,7 @@
       "尺度定律"
     ],
     "source_summary": "本文从多个视角讨论了“Batch Size与学习率之间的Scaling Law”这一经典炼丹问题，其中着重介绍了OpenAI基于损失函数的二阶近似的推导和结论，以及后续利用同样的思想来分析Adam优化器的工作。",
+    "metadata_checked_at": "2026-10-24T07:29:11+00:00",
     "topics": [
       "深度学习基础",
       "优化与训练"
@@ -2550,6 +2570,7 @@
       "离散化"
     ],
     "source_summary": "本文介绍了VQ（Vector Quantization）的另一个训练技巧——SimVQ——只在VQ的编码表多加一个线性变换，无需其他改动，就能达到加速收敛、提升编码利用率、降低重构损失等效果，相当简单有效。",
+    "metadata_checked_at": "2026-10-24T07:29:15+00:00",
     "topics": [
       "生成模型"
     ],
@@ -2570,6 +2591,7 @@
       "低秩"
     ],
     "source_summary": "本文介绍了ID（Interpolative Decomposition，插值分解），它通过从原矩阵中选择若干列来作为“骨架”来逼近原矩阵，是一种具有特定结构的低秩分解，几何意义相对来说更加直观，其核心难度是列的选择，本质上是一个NP-Hard的离散优化问题。",
+    "metadata_checked_at": "2026-10-24T07:29:18+00:00",
     "topics": [
       "数学工具"
     ],
@@ -2591,6 +2613,7 @@
       "离散化"
     ],
     "source_summary": "旋转技巧是近日arXiv上面提出的训练VQ（Vector Quantization）模型的新技术，它推广了原本的直通估计器（STE），声称能改善编码表的坍缩或利用率低等问题，本文对此进行了简单介绍，并给出了笔者对它的一些思考和疑问。",
+    "metadata_checked_at": "2026-10-24T07:29:35+00:00",
     "topics": [
       "生成模型",
       "几何与方程"
@@ -2611,6 +2634,7 @@
       "酷论文"
     ],
     "source_summary": "本文根据作者自己的使用经验简单升级了一下Cool Papers Redirector浏览器拓展，欢迎大家测试。如果有更多改进意见，欢迎留言指出。",
+    "metadata_checked_at": "2026-10-24T07:29:39+00:00",
     "topics": [
       "工程工具"
     ],
@@ -2629,6 +2653,7 @@
       "latex"
     ],
     "source_summary": "本文分享了一种让MathJax公式自动随着窗口大小而缩放的方案，能够尽可能兼容移动端设备的窄屏浏览需求。经过调整之后，即便在小屏幕下也能显示出跟PC端一样的数学公式——除了可能有点费眼睛，但用来应应急总是可以的。",
+    "metadata_checked_at": "2026-10-24T07:29:42+00:00",
     "topics": [
       "数学工具",
       "工程工具"

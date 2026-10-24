@@ -6,7 +6,13 @@
     "source_url": "https://spaces.ac.cn/archives/10474",
     "date": "2024-10-15",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "信息时代",
+    "source_tags": [
+      "网站",
+      "latex"
+    ],
+    "source_summary": "本文分享了一种让MathJax公式自动随着窗口大小而缩放的方案，能够尽可能兼容移动端设备的窄屏浏览需求。经过调整之后，即便在小屏幕下也能显示出跟PC端一样的数学公式——除了可能有点费眼睛，但用来应应急总是可以的。"
   },
   "validation": {
     "passed": true,
@@ -30,8 +36,8 @@
     "converter_version": 1,
     "markdown_sha256": "93a29dc1576e75ccd825d217ec0d97516183e9dcc70c54bfb64a10d054a236e3"
   },
-  "fetched_at": "2026-09-14T12:46:08+00:00",
+  "fetched_at": "2026-10-24T07:29:42+00:00",
   "source_snapshot_sha256": "b8346e99c9c980cf4df749c7db8db0ee0cb72af86a8a5b3b18e5339c4b87b050",
   "images": {},
-  "local_only": true
+  "publication_policy": "config/mirror.json"
 }

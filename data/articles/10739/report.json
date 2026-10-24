@@ -6,7 +6,16 @@
     "source_url": "https://spaces.ac.cn/archives/10739",
     "date": "2025-02-27",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "数学研究",
+    "source_tags": [
+      "矩阵",
+      "梯度",
+      "优化器",
+      "谱范数",
+      "muon"
+    ],
+    "source_summary": "本文介绍了我们在Muon优化器上的一次较大规模实践（Moonlight），并分享了我们对Muon优化器的最新思考。"
   },
   "validation": {
     "passed": true,
@@ -30,8 +39,8 @@
     "converter_version": 1,
     "markdown_sha256": "fde2497ed7265ada1cc63d543a54e4b82b55f7af88686b82b1bcce1f3ee53c62"
   },
-  "fetched_at": "2026-09-14T12:43:44+00:00",
+  "fetched_at": "2026-10-24T07:28:11+00:00",
   "source_snapshot_sha256": "e653d4ad56b34eeb7b6ab4aaea6c41e874ea8867510eb6cf19073e4db8fe2cd6",
   "images": {},
-  "local_only": true
+  "publication_policy": "config/mirror.json"
 }

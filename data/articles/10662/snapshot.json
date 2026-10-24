@@ -6,9 +6,17 @@
     "source_url": "https://spaces.ac.cn/archives/10662",
     "date": "2025-01-12",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "数学研究",
+    "source_tags": [
+      "近似",
+      "最优",
+      "矩阵",
+      "低秩"
+    ],
+    "source_summary": "本文介绍了CUR分解，它可以视为上一篇文章介绍的插值分解（ID）的进一步延伸，特点是同时以原始矩阵的若干行与列作为骨架来构建低秩近似。"
   },
-  "fetched_at": "2026-09-14T12:44:20+00:00",
+  "fetched_at": "2026-10-24T07:28:39+00:00",
   "source_snapshot_sha256": "a92092c16ac3312b13ae7812f7260dae420eef648938836a7efefba830f27991",
   "validators": {
     "etag": null,

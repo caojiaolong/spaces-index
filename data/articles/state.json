@@ -645,14 +645,14 @@
   },
   "10831": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:18:27+00:00",
+    "checked_at": "2026-10-24T07:27:48+00:00",
     "title": "通过梯度近似寻找Normalization的替代品",
     "markdown_sha256": "2d5b7f9bbd7992b85fbcd0299d61b94c884ce12d48042bbda0c18bf5c1003209",
     "converter_version": 1
   },
   "10815": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:18:27+00:00",
+    "checked_at": "2026-10-24T07:27:52+00:00",
     "title": "MoE环游记：4、难处应当多投入",
     "markdown_sha256": "ad5cbb7981022fb2c3ba7c55f764318b650fa65cb0257f364eea7db120953ad3",
     "converter_version": 1
@@ -666,161 +666,161 @@
   },
   "10770": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:18:28+00:00",
+    "checked_at": "2026-10-24T07:27:56+00:00",
     "title": "初探MuP：超参数的跨模型尺度迁移规律",
     "markdown_sha256": "f1d06f91ca2d1906c9c7ce0a25f8ff2fb0f02d8f8dffc3f772a1fd2e8cf52493",
     "converter_version": 1
   },
   "10757": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:18:28+00:00",
+    "checked_at": "2026-10-24T07:28:02+00:00",
     "title": "MoE环游记：3、换个思路来分配",
     "markdown_sha256": "b40b554764a8cc79015fa79686822c585479fcb914c64140dd4d3e6395ea2d49",
     "converter_version": 1
   },
   "10739": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:18:28+00:00",
+    "checked_at": "2026-10-24T07:28:11+00:00",
     "title": "Muon续集：为什么我们选择尝试Muon？",
     "markdown_sha256": "fde2497ed7265ada1cc63d543a54e4b82b55f7af88686b82b1bcce1f3ee53c62",
     "converter_version": 1
   },
   "10735": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:18:28+00:00",
+    "checked_at": "2026-10-24T07:28:17+00:00",
     "title": "MoE环游记：2、不患寡而患不均",
     "markdown_sha256": "518ada24abe098ddeff25b55950de575ec4d99275c2c0b8b7baa853a83e96317",
     "converter_version": 1
   },
   "10711": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:18:28+00:00",
+    "checked_at": "2026-10-24T07:28:22+00:00",
     "title": "生成扩散模型漫谈（二十九）：用DDPM来离散编码",
     "markdown_sha256": "6075fdc64632290a6935c9f26f7c2cf4a4b7a9a6b5ef1457939c3b1f0a63ff3e",
     "converter_version": 1
   },
   "10699": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:18:29+00:00",
+    "checked_at": "2026-10-24T07:28:25+00:00",
     "title": "MoE环游记：1、从几何意义出发",
     "markdown_sha256": "a0cbd93a3feb9368f24e6cd0d76181e372cb221e3b7b5611986d93ea8729eb25",
     "converter_version": 1
   },
   "10684": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:18:29+00:00",
+    "checked_at": "2026-10-24T07:28:29+00:00",
     "title": "三个球的交点坐标（三球交会定位）",
     "markdown_sha256": "5b3eb11ef95cf94a0d99d952dd8fc25891b63f71764d6a0860792e06bb022a73",
     "converter_version": 1
   },
   "10667": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:18:29+00:00",
+    "checked_at": "2026-10-24T07:28:35+00:00",
     "title": "细水长flow之TARFLOW：流模型满血归来？",
     "markdown_sha256": "88534c90a264682911b6b00eb223361b97b9fb3632535e41e7aa930c3ac7d1db",
     "converter_version": 1
   },
   "10662": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:18:29+00:00",
+    "checked_at": "2026-10-24T07:28:39+00:00",
     "title": "低秩近似之路（五）：CUR",
     "markdown_sha256": "c2ed4a6a795d834e73f2ab8914e4924a6563a6ec09d0f500e919c665e10a3634",
     "converter_version": 1
   },
   "10657": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:18:29+00:00",
+    "checked_at": "2026-10-24T07:28:43+00:00",
     "title": "为什么梯度裁剪的默认模长是1？",
     "markdown_sha256": "a388fc0429ca3b104f55ad327786713167fe166bd9d4c468e8579aa4ab6918f5",
     "converter_version": 1
   },
   "10648": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:18:30+00:00",
+    "checked_at": "2026-10-24T07:28:46+00:00",
     "title": "从谱范数梯度到新式权重衰减的思考",
     "markdown_sha256": "b183cad7b08fbbc4344637791dce25687c5721cdbeaf5ee0129aa14b6adabbe9",
     "converter_version": 1
   },
   "10633": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:18:30+00:00",
+    "checked_at": "2026-10-24T07:28:50+00:00",
     "title": "生成扩散模型漫谈（二十八）：分步理解一致性模型",
     "markdown_sha256": "c884030f035ade41c6163e5798f7ee91d6d3b6addde40f3380659c3d39913d6e",
     "converter_version": 1
   },
   "10617": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:18:30+00:00",
+    "checked_at": "2026-10-24T07:28:53+00:00",
     "title": "生成扩散模型漫谈（二十七）：将步长作为条件输入",
     "markdown_sha256": "42cdacd444f03fd0d40418e068c98682a430778b7104ac1d667e1fc7c513fc76",
     "converter_version": 1
   },
   "10592": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:18:30+00:00",
+    "checked_at": "2026-10-24T07:28:57+00:00",
     "title": "Muon优化器赏析：从向量到矩阵的本质跨越",
     "markdown_sha256": "fa7f49ce222028cd033b043f0dc100f2aa362c9bd7eaf8940266510c958eb1f0",
     "converter_version": 1
   },
   "10588": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:18:31+00:00",
+    "checked_at": "2026-10-24T07:29:01+00:00",
     "title": "从Hessian近似看自适应学习率优化器",
     "markdown_sha256": "45abf061bd7defe1777c13bfa6c40913e99482d63560d752f6701204ea9dbfef",
     "converter_version": 1
   },
   "10567": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:18:31+00:00",
+    "checked_at": "2026-10-24T07:29:04+00:00",
     "title": "生成扩散模型漫谈（二十六）：基于恒等式的蒸馏（下）",
     "markdown_sha256": "010b807313807b0a52054ec640653a999b926bccc95017427ecf7a71eb3eaf98",
     "converter_version": 1
   },
   "10563": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:18:31+00:00",
+    "checked_at": "2026-10-24T07:29:08+00:00",
     "title": "Adam的epsilon如何影响学习率的Scaling Law？",
     "markdown_sha256": "ecf4a9d4a26429888224258f6024914347ca2d71a55a982e97d4e896f54096a3",
     "converter_version": 1
   },
   "10542": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:18:31+00:00",
+    "checked_at": "2026-10-24T07:29:11+00:00",
     "title": "当Batch Size增大时，学习率该如何随之变化？",
     "markdown_sha256": "cba50e2f794443e6c791bcebb6601baea96c13ac9761f62138ac7ff59af2c549",
     "converter_version": 1
   },
   "10519": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:18:32+00:00",
+    "checked_at": "2026-10-24T07:29:15+00:00",
     "title": "VQ的又一技巧：给编码表加一个线性变换",
     "markdown_sha256": "e61764b0c49a60e3302c01ec29db1dfb4a0a21fbfbe880c3a26a21197f1b39b0",
     "converter_version": 1
   },
   "10501": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:18:32+00:00",
+    "checked_at": "2026-10-24T07:29:18+00:00",
     "title": "低秩近似之路（四）：ID",
     "markdown_sha256": "fcdb714028f848cbc4cb827788ee0a74124530ed9ce006af6e729a15514a45be",
     "converter_version": 1
   },
   "10489": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:18:32+00:00",
+    "checked_at": "2026-10-24T07:29:35+00:00",
     "title": "VQ的旋转技巧：梯度直通估计的一般推广",
     "markdown_sha256": "1b5f75007c7ef12adf30017232a64064f73ea0ec29871b8881d791cb04f9cf69",
     "converter_version": 1
   },
   "10480": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:18:32+00:00",
+    "checked_at": "2026-10-24T07:29:39+00:00",
     "title": "Cool Papers浏览器扩展升级至v0.2.0",
     "markdown_sha256": "8d52089b24783c31db6d2cad031437b768f0e1d49cd76f5f3222c2fb181a5c67",
     "converter_version": 1
   },
   "10474": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:18:32+00:00",
+    "checked_at": "2026-10-24T07:29:42+00:00",
     "title": "让MathJax的数学公式随窗口大小自动缩放",
     "markdown_sha256": "93a29dc1576e75ccd825d217ec0d97516183e9dcc70c54bfb64a10d054a236e3",
     "converter_version": 1
@@ -8464,7 +8464,7 @@
   },
   "132": {
     "status": "conversion_failed",
-    "checked_at": "2026-10-23T07:48:04+00:00",
+    "checked_at": "2026-10-24T07:29:42+00:00",
     "title": "一道从小学到高中都可能考到的题目",
     "error": "Unreviewed legacy element: a<b，则有<br",
     "converter_version": 1,
