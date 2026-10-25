@@ -6,9 +6,16 @@
     "source_url": "https://spaces.ac.cn/archives/10311",
     "date": "2024-08-12",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "信息时代",
+    "source_tags": [
+      "网站",
+      "论文",
+      "酷论文"
+    ],
+    "source_summary": "本文介绍了Cool Papers新引入的若干特性，包括相关论文搜索、词云统计、用户偏好排序等，希望能提高大家刷论文的效率。特别要声明的是，以上用户偏好等数据，都是储存在用户的浏览器本地，Cool Papers并没有收集这些数据。"
   },
-  "fetched_at": "2026-09-14T12:47:11+00:00",
+  "fetched_at": "2026-10-25T07:42:17+00:00",
   "source_snapshot_sha256": "5075b855dd138166e7688b00ba2ccaa39302ee7aeac721e221437f5fb6946a0b",
   "validators": {
     "etag": null,

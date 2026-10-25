@@ -6,9 +6,17 @@
     "source_url": "https://spaces.ac.cn/archives/10114",
     "date": "2024-05-24",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "数学研究",
+    "source_tags": [
+      "微分方程",
+      "线性",
+      "RNN",
+      "ssm"
+    ],
+    "source_summary": "本文尽可能简单地重复了 《HiPPO: Recurrent Memory with Optimal Polynomial Projections》 （简称HiPPO）的主要推导。HiPPO通过适当的记忆假设，自下而上地导出了线性ODE系统，并且针对勒让德多项式的情形求出了相应的解析解（HiPPO矩阵），其结果被后来诸多SSM（State Space Model）使用，可谓是SSM的重要奠基之作。"
   },
-  "fetched_at": "2026-09-14T12:48:29+00:00",
+  "fetched_at": "2026-10-25T07:43:00+00:00",
   "source_snapshot_sha256": "4a2990929afcf1fe7923c3011f1ad8229ced9f7ec95d37c8b4df0cdbe98bd112",
   "validators": {
     "etag": null,

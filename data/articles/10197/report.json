@@ -6,7 +6,15 @@
     "source_url": "https://spaces.ac.cn/archives/10197",
     "date": "2024-07-08",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "信息时代",
+    "source_tags": [
+      "生成模型",
+      "扩散",
+      "多模态",
+      "自回归"
+    ],
+    "source_summary": "这篇文章继续“闭门造车”了一些有关多模态学习的思路，主要围绕视觉的自回归学习进行展开，大体内容是： 1、自回归学习既为模型赋予了生成能力，同时也是通过生成来促进理解能力的无监督学习途径； 2、对于图像来说，问题不在于要不要做自回归，而是以何种方式才能更好地做自回归； 3、将图像以连续型特征的方式输入时，它的自回归学习有两大难题：分Patch排序和损失函数； 4、损失函数不能简单用平方误差，而是可以考虑后面接一个小型的扩散模型来预测下一个Patch； 5、“分Patch排序”是图像自回归学习的根本难题，它的选择关系到自回归学习能否真正促进理解； 6、完美的图像/视觉生成，不可避免要跟物理规律建立联系，从而构成“世界模型”； 7、但世…"
   },
   "validation": {
     "passed": true,
@@ -30,8 +38,8 @@
     "converter_version": 1,
     "markdown_sha256": "833fa32208d6ffb236741add8db767f662d4383786dd74dbdfe93cd60b28845e"
   },
-  "fetched_at": "2026-09-14T12:47:52+00:00",
+  "fetched_at": "2026-10-25T07:42:38+00:00",
   "source_snapshot_sha256": "b4442da4c43abbc671013656ac6be36fac8592bd47391c9175b4f8a2237f29e5",
   "images": {},
-  "local_only": true
+  "publication_policy": "config/mirror.json"
 }

@@ -6,7 +6,16 @@
     "source_url": "https://spaces.ac.cn/archives/10137",
     "date": "2024-06-05",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "数学研究",
+    "source_tags": [
+      "线性",
+      "差分",
+      "RNN",
+      "梯度",
+      "ssm"
+    ],
+    "source_summary": "在这篇文章中，我们补充探讨了上一篇文章介绍的HiPPO的一些遗留问题，其中包括如何对ODE进行离散化、LegS型ODE的一些优良性质，以及利用傅立叶基记忆整个历史区间的结果推导（即LegS的傅立叶版本），以求获得对HiPPO的更全面理解。"
   },
   "validation": {
     "passed": true,
@@ -30,8 +39,8 @@
     "converter_version": 1,
     "markdown_sha256": "f250f6f2bee8c783419b359d1c2e44110623608075599d44cd3e61185001d3c6"
   },
-  "fetched_at": "2026-09-14T12:48:17+00:00",
+  "fetched_at": "2026-10-25T07:42:53+00:00",
   "source_snapshot_sha256": "222ef6c3395acfcecc75c90b9e7542ae44906f4f884725425b49900da383a65f",
   "images": {},
-  "local_only": true
+  "publication_policy": "config/mirror.json"
 }

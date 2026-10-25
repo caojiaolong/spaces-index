@@ -6,7 +6,15 @@
     "source_url": "https://spaces.ac.cn/archives/10320",
     "date": "2024-08-15",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "信息时代",
+    "source_tags": [
+      "网站",
+      "latex",
+      "论文",
+      "酷论文"
+    ],
+    "source_summary": null
   },
   "validation": {
     "passed": true,
@@ -30,8 +38,8 @@
     "converter_version": 1,
     "markdown_sha256": "0bb5b241be64ccda0514f1ef9888eed86c05e8ee2e633ef852e9e88e5214bbb1"
   },
-  "fetched_at": "2026-09-14T12:47:05+00:00",
+  "fetched_at": "2026-10-25T07:42:14+00:00",
   "source_snapshot_sha256": "2f700897bb4109d0e6e42fdcdaaa97eb77a5c0bcc2226dacebee7d7cc73bc6af",
   "images": {},
-  "local_only": true
+  "publication_policy": "config/mirror.json"
 }

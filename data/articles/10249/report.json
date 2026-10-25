@@ -6,7 +6,15 @@
     "source_url": "https://spaces.ac.cn/archives/10249",
     "date": "2024-07-24",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "数学研究",
+    "source_tags": [
+      "矩阵",
+      "语言模型",
+      "稀疏",
+      "低秩"
+    ],
+    "source_summary": "本文介绍了Monarch矩阵，这是Tri Dao前两年提出的一簇能够分解为转置矩阵与稀疏矩阵乘积的矩阵，具备计算高效的特点（众所周知，Tri Dao是高性能的代名词），可以用来为全连接层提速、构建参数高效的微调方式等。"
   },
   "validation": {
     "passed": true,
@@ -30,8 +38,8 @@
     "converter_version": 1,
     "markdown_sha256": "3eeba9e833a844a2389ded0f0abc57eacce17f27a6d24de06dbe236136527930"
   },
-  "fetched_at": "2026-09-14T12:47:32+00:00",
+  "fetched_at": "2026-10-25T07:42:28+00:00",
   "source_snapshot_sha256": "2161c32dd719d380171850a183e3212ec5b838e123098932736cf383e717a7dc",
   "images": {},
-  "local_only": true
+  "publication_policy": "config/mirror.json"
 }

@@ -6,9 +6,18 @@
     "source_url": "https://spaces.ac.cn/archives/10407",
     "date": "2024-10-01",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "数学研究",
+    "source_tags": [
+      "近似",
+      "最优",
+      "矩阵",
+      "SVD",
+      "低秩"
+    ],
+    "source_summary": "本文的主角是声名显赫的SVD（奇异值分解），想必不少读者已经对它有所了解。在这篇文章中，我们主要围绕着SVD与低秩近似的相关内容进行展开，对SVD的存在性、计算以及与低秩近似的联系等理论内容给出了尽可能简单的证明过程。"
   },
-  "fetched_at": "2026-09-14T12:46:21+00:00",
+  "fetched_at": "2026-10-25T07:41:49+00:00",
   "source_snapshot_sha256": "ee23555186b8ebdb70be181db505073694679e576834f87183f1c59f97b74188",
   "validators": {
     "etag": null,

@@ -6,9 +6,17 @@
     "source_url": "https://spaces.ac.cn/archives/10055",
     "date": "2024-04-17",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "信息时代",
+    "source_tags": [
+      "无监督",
+      "生成模型",
+      "扩散",
+      "信噪比"
+    ],
+    "source_summary": "这篇文章介绍了一个名为Upsample Guidance的技巧，它可以让训练好的低分辨率扩散模型直接生成高分辨率图片，而不需要额外的微调成本，实验显示它基本上能稳定提高至少1倍的分辨率，虽然效果离直接训练的高分辨率扩散模型还有点差距，但这近乎免费的午餐依然值得学习一番。本文从笔者的角度重新整理了该方法的思路和推导，并给出了关于其有效性原因的思考。 （ 后记： 事实上，按照最初的计划，这篇文章是在两天前发布的，之所以推迟了两天，是因为在写作过程中笔者发现很多开始自以为理解的细节，实际上还含糊不清，所以多花了两天时间进行推导和实验，以获得更精准的理解。由此可见，将要学习的东西系统清晰地重述出来，本身也是一个不断自我完善和改进的过程，这…"
   },
-  "fetched_at": "2026-09-14T12:49:02+00:00",
+  "fetched_at": "2026-10-25T07:43:11+00:00",
   "source_snapshot_sha256": "fe3bd43f7e313621fac1e059f0bc53e655fedad7bb57e9d0308756bf7ff203a4",
   "validators": {
     "etag": null,

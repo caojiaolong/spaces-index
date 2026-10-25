@@ -6,7 +6,15 @@
     "source_url": "https://spaces.ac.cn/archives/10226",
     "date": "2024-07-12",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "数学研究",
+    "source_tags": [
+      "梯度",
+      "优化器",
+      "低秩",
+      "lora"
+    ],
+    "source_summary": "本文介绍了LoRA的一个新改进LoRA-GA。虽然LoRA的各种变体并不鲜见，但LoRA-GA以非常直观的理论指导折服了笔者，其改进思路给人一种“确认过眼神，它就是对的论文”的感觉，再配上可圈可点的实验结果，整个过程如行云流水，让人赏心悦目。"
   },
   "validation": {
     "passed": true,
@@ -30,8 +38,8 @@
     "converter_version": 1,
     "markdown_sha256": "41b9c81b8100f88c51a330bf653bcb9261a570acc5effb11773bfbd3df62b972"
   },
-  "fetched_at": "2026-09-14T12:47:45+00:00",
+  "fetched_at": "2026-10-25T07:42:35+00:00",
   "source_snapshot_sha256": "bf45559b13e8662d5b82e1ed83356838607c40925486e7c395ac5a0b71238306",
   "images": {},
-  "local_only": true
+  "publication_policy": "config/mirror.json"
 }

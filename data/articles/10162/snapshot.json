@@ -6,9 +6,17 @@
     "source_url": "https://spaces.ac.cn/archives/10162",
     "date": "2024-06-20",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "数学研究",
+    "source_tags": [
+      "矩阵",
+      "线性",
+      "RNN",
+      "ssm"
+    ],
+    "source_summary": "本文介绍了HiPPO的后续之作S4，它的关键之处是提出了“对角矩阵+低秩矩阵”的分解，从而实现了HiPPO矩阵的高效并行计算，本文主要对其中比较困难的数学细节做了介绍和推导。"
   },
-  "fetched_at": "2026-09-14T12:48:05+00:00",
+  "fetched_at": "2026-10-25T07:42:45+00:00",
   "source_snapshot_sha256": "b4b1fa22bce618e858cf6a6d7786ecf2f779215cf6ae674fb4ed62d846969f01",
   "validators": {
     "etag": null,

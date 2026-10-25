@@ -6,9 +6,17 @@
     "source_url": "https://spaces.ac.cn/archives/10091",
     "date": "2024-05-13",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "信息时代",
+    "source_tags": [
+      "优化",
+      "语言模型",
+      "生成模型",
+      "attention"
+    ],
+    "source_summary": "本文简单概述了多头注意力的演变历程，特别是从MHA向MQA、GQA，最终到MLA的变化理念，最后详细展开了对MLA的介绍。在本文中，MLA被视为GQA的一般化，它用投影矩阵的方式替代了GQA的分割、重复，并引入了一个恒等变换技巧来可以进一步压缩KV Cache，同时采用了一种混合方法来兼容RoPE。总的来说，MLA称得上是一种非常实用的注意力变体。"
   },
-  "fetched_at": "2026-09-14T12:48:36+00:00",
+  "fetched_at": "2026-10-25T07:43:04+00:00",
   "source_snapshot_sha256": "14ca02791edbe76c1cc0f826067cfb6d03bc70af9cb2cc2c7c199d744329f23f",
   "validators": {
     "etag": null,

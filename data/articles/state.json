@@ -827,161 +827,161 @@
   },
   "10427": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:18:33+00:00",
+    "checked_at": "2026-10-25T07:41:45+00:00",
     "title": "低秩近似之路（三）：CR",
     "markdown_sha256": "3d55cd27688c29f893d1109025db5663da690dd5cd8b064f5d552b0ff5f8987a",
     "converter_version": 1
   },
   "10407": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:18:33+00:00",
+    "checked_at": "2026-10-25T07:41:49+00:00",
     "title": "低秩近似之路（二）：SVD",
     "markdown_sha256": "47b6cbc425aadbf510634573766f2b715dee66ffcbe427279cb8b51c3edcf3b4",
     "converter_version": 1
   },
   "10394": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:18:33+00:00",
+    "checked_at": "2026-10-25T07:41:52+00:00",
     "title": "利用“熄火保护 + 通断器”实现燃气灶智能关火",
     "markdown_sha256": "e7df6ce0ea6e9f69da87d365319464e0c933184fb502f8cb9b5d06ca653123ef",
     "converter_version": 1
   },
   "10373": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:18:33+00:00",
+    "checked_at": "2026-10-25T07:41:56+00:00",
     "title": "Softmax后传：寻找Top-K的光滑近似",
     "markdown_sha256": "2b7292ee688d436e54ab4f0eaaa68b6ea23aae695669beb96fd076d536a57ea9",
     "converter_version": 1
   },
   "10366": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:18:33+00:00",
+    "checked_at": "2026-10-25T07:41:59+00:00",
     "title": "低秩近似之路（一）：伪逆",
     "markdown_sha256": "527bb0db400efc4a34f25969e42ab475d24e33ae6ab97eeafecafb88e72c4b3f",
     "converter_version": 1
   },
   "10352": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:18:34+00:00",
+    "checked_at": "2026-10-25T07:42:03+00:00",
     "title": "“闭门造车”之多模态思路浅谈（三）：位置编码",
     "markdown_sha256": "18acaecc0531105e30be320c60f86d9fb3de3049168e91ab203a7652d58be7e5",
     "converter_version": 1
   },
   "10347": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:18:34+00:00",
+    "checked_at": "2026-10-25T07:42:06+00:00",
     "title": "Decoder-only的LLM为什么需要位置编码？",
     "markdown_sha256": "bb33faa54bec36333af153cc72992fdfd90dfd95483308281df5b9a12837b864",
     "converter_version": 1
   },
   "10332": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:18:34+00:00",
+    "checked_at": "2026-10-25T07:42:10+00:00",
     "title": "近乎完美地解决MathJax与Marked的冲突",
     "markdown_sha256": "1308f180adc9f3b0968c50b74a3e3c2e333dca4dc7c2f8a2d1410a796ec7a060",
     "converter_version": 1
   },
   "10320": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:18:34+00:00",
+    "checked_at": "2026-10-25T07:42:14+00:00",
     "title": "让MathJax更好地兼容谷歌翻译和延时加载",
     "markdown_sha256": "0bb5b241be64ccda0514f1ef9888eed86c05e8ee2e633ef852e9e88e5214bbb1",
     "converter_version": 1
   },
   "10311": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:18:35+00:00",
+    "checked_at": "2026-10-25T07:42:17+00:00",
     "title": "“Cool Papers + 站内搜索”的一些新尝试",
     "markdown_sha256": "ba8e777342fb3dc75c9b8c2358f1cc09c70f073771d21e9d95e154433945e10d",
     "converter_version": 1
   },
   "10289": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:18:35+00:00",
+    "checked_at": "2026-10-25T07:42:20+00:00",
     "title": "通向最优分布之路：概率空间的最小化",
     "markdown_sha256": "67e8ecf275ff16abbf8b64d7669534b5de0d5197d5e9e173c213f522f0528fd9",
     "converter_version": 1
   },
   "10266": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:18:35+00:00",
+    "checked_at": "2026-10-25T07:42:24+00:00",
     "title": "对齐全量微调！这是我看过最精彩的LoRA改进（二）",
     "markdown_sha256": "30ce14d275a2d48aa4c39208b67d0ffe15a0a6d6761c1223a1bd8b3be7cb65a6",
     "converter_version": 1
   },
   "10249": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:18:35+00:00",
+    "checked_at": "2026-10-25T07:42:28+00:00",
     "title": "Monarch矩阵：计算高效的稀疏型矩阵分解",
     "markdown_sha256": "3eeba9e833a844a2389ded0f0abc57eacce17f27a6d24de06dbe236136527930",
     "converter_version": 1
   },
   "10240": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:18:36+00:00",
+    "checked_at": "2026-10-25T07:42:31+00:00",
     "title": "【生活杂记】用电饭锅来煮米汤",
     "markdown_sha256": "60e3c82336e7c113754448a4821b541884aab55d9520ce49df1cafd5deb4047c",
     "converter_version": 1
   },
   "10226": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:18:36+00:00",
+    "checked_at": "2026-10-25T07:42:35+00:00",
     "title": "对齐全量微调！这是我看过最精彩的LoRA改进（一）",
     "markdown_sha256": "41b9c81b8100f88c51a330bf653bcb9261a570acc5effb11773bfbd3df62b972",
     "converter_version": 1
   },
   "10197": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:18:36+00:00",
+    "checked_at": "2026-10-25T07:42:38+00:00",
     "title": "“闭门造车”之多模态思路浅谈（二）：自回归",
     "markdown_sha256": "833fa32208d6ffb236741add8db767f662d4383786dd74dbdfe93cd60b28845e",
     "converter_version": 1
   },
   "10180": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:18:36+00:00",
+    "checked_at": "2026-10-25T07:42:42+00:00",
     "title": "重温SSM（四）：有理生成函数的新视角",
     "markdown_sha256": "6ffe9701f320a6739af3ca7c05154f22af8d8c4d0112a4899a1daeca19e9c7d7",
     "converter_version": 1
   },
   "10162": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:18:37+00:00",
+    "checked_at": "2026-10-25T07:42:45+00:00",
     "title": "重温SSM（三）：HiPPO的高效计算（S4）",
     "markdown_sha256": "7bc03414a310f72030d6899b35feac32cb5d7207b4207e137f63e4a9eba06ec6",
     "converter_version": 1
   },
   "10145": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:18:37+00:00",
+    "checked_at": "2026-10-25T07:42:49+00:00",
     "title": "通向概率分布之路：盘点Softmax及其替代品",
     "markdown_sha256": "857092de29a965aa1df78464d074f0fe1044663040afa96a3f7e22fd1c57325a",
     "converter_version": 1
   },
   "10137": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:18:38+00:00",
+    "checked_at": "2026-10-25T07:42:53+00:00",
     "title": "重温SSM（二）：HiPPO的一些遗留问题",
     "markdown_sha256": "f250f6f2bee8c783419b359d1c2e44110623608075599d44cd3e61185001d3c6",
     "converter_version": 1
   },
   "10122": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:18:38+00:00",
+    "checked_at": "2026-10-25T07:42:56+00:00",
     "title": "Transformer升级之路：18、RoPE的底数选择原则",
     "markdown_sha256": "39fd991a8480f0f555afba14f93bdcbb2eff95909793eed22ab7288eb6f8faa0",
     "converter_version": 1
   },
   "10114": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:18:38+00:00",
+    "checked_at": "2026-10-25T07:43:00+00:00",
     "title": "重温SSM（一）：线性系统和HiPPO矩阵",
     "markdown_sha256": "0b3aa39241a6c954e370267bd2a38e6a4893dd99a63b7f10065a99d08328ac68",
     "converter_version": 1
   },
   "10091": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:18:38+00:00",
+    "checked_at": "2026-10-25T07:43:04+00:00",
     "title": "缓存与效果的极限拉扯：从MHA、MQA、GQA到MLA",
     "markdown_sha256": "66e16ca3046a40bb430109c5e762452a8b7fca05a2a976ac6a215fe013ce6754",
     "converter_version": 1
@@ -1002,14 +1002,14 @@
   },
   "10077": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:18:39+00:00",
+    "checked_at": "2026-10-25T07:43:07+00:00",
     "title": "生成扩散模型漫谈（二十四）：少走捷径，更快到达",
     "markdown_sha256": "ed9cb12b0e8924dc39c73f995071fa3b54d8d5ce42b159a52f5148dd9c9725b8",
     "converter_version": 1
   },
   "10055": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:18:39+00:00",
+    "checked_at": "2026-10-25T07:43:11+00:00",
     "title": "生成扩散模型漫谈（二十三）：信噪比与大图生成（下）",
     "markdown_sha256": "fad80495123c158749acb88205a34f5249f520c74deb25ba2a3ad3ffdc22706c",
     "converter_version": 1
@@ -8464,7 +8464,7 @@
   },
   "132": {
     "status": "conversion_failed",
-    "checked_at": "2026-10-24T07:29:42+00:00",
+    "checked_at": "2026-10-25T07:43:11+00:00",
     "title": "一道从小学到高中都可能考到的题目",
     "error": "Unreviewed legacy element: a<b，则有<br",
     "converter_version": 1,

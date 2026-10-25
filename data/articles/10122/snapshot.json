@@ -6,9 +6,17 @@
     "source_url": "https://spaces.ac.cn/archives/10122",
     "date": "2024-05-29",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "信息时代",
+    "source_tags": [
+      "不等式",
+      "attention",
+      "位置编码",
+      "rope"
+    ],
+    "source_summary": "本文简单介绍了论文 《Base of RoPE Bounds Context Length》 ，它从语义聚合的期望性质讨论了RoPE的底数下界，由此指出更大的训练长度应该选择更大的底数，而不单单是为了配合“先短后长”的训练策略、继而利用NTK-RoPE来降低初始损失的折中选择。"
   },
-  "fetched_at": "2026-09-14T12:48:23+00:00",
+  "fetched_at": "2026-10-25T07:42:56+00:00",
   "source_snapshot_sha256": "0c9efc3455c277e2cd624abffc33d2dce18c719a08403d31116057fde9541307",
   "validators": {
     "etag": null,

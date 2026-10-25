@@ -6,7 +6,15 @@
     "source_url": "https://spaces.ac.cn/archives/10145",
     "date": "2024-06-14",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "数学研究",
+    "source_tags": [
+      "概率",
+      "分析",
+      "损失函数",
+      "梯度"
+    ],
+    "source_summary": "本文简单回顾和整理了Softmax及其部分替代品，其中包含的工作有Softmax、Margin Softmax、Taylor Softmax、Sparse Softmax、Perturb Max、Sparsemax、Entmax-$\\alpha$的定义、性质等内容。"
   },
   "validation": {
     "passed": true,
@@ -30,8 +38,8 @@
     "converter_version": 1,
     "markdown_sha256": "857092de29a965aa1df78464d074f0fe1044663040afa96a3f7e22fd1c57325a"
   },
-  "fetched_at": "2026-09-14T12:48:11+00:00",
+  "fetched_at": "2026-10-25T07:42:49+00:00",
   "source_snapshot_sha256": "6eaa06c5f4ad9e42c61eaf20fbab5a65e2ea3a30e54bc9fb323cd986ddf57425",
   "images": {},
-  "local_only": true
+  "publication_policy": "config/mirror.json"
 }

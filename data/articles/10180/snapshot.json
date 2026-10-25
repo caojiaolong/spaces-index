@@ -6,9 +6,17 @@
     "source_url": "https://spaces.ac.cn/archives/10180",
     "date": "2024-06-27",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "数学研究",
+    "source_tags": [
+      "生成函数",
+      "线性",
+      "RNN",
+      "ssm"
+    ],
+    "source_summary": "本文介绍了SSM模型的一个新工作RTF，它观察到线性RNN的卷积核的生成函数实际上可以表示为一个有理函数（分式多项式），利用这个特点，我们可以将SSM的参数化全部转移到生成函数空间上去，并利用离散傅立叶变换来加速，这使得整个计算流程显著简化。跟S4的“对角+低秩”分解相比，RTF也显得更为简明直观。"
   },
-  "fetched_at": "2026-09-14T12:47:58+00:00",
+  "fetched_at": "2026-10-25T07:42:42+00:00",
   "source_snapshot_sha256": "f1bc17d5fcdb3de07a35b39cc70906dbd6bc595c4fd7249e207edd8e545a3a32",
   "validators": {
     "etag": null,

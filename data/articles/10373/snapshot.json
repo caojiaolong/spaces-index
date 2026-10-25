@@ -6,9 +6,17 @@
     "source_url": "https://spaces.ac.cn/archives/10373",
     "date": "2024-09-19",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "数学研究",
+    "source_tags": [
+      "概率",
+      "近似",
+      "梯度",
+      "光滑"
+    ],
+    "source_summary": "本文探讨了Top-k算子的光滑近似问题，它是Softmax等Top1的光滑近似的一般推广，提出了迭代构造、梯度指引、待定常数三种构造思路，并分析了它们的优缺点。"
   },
-  "fetched_at": "2026-09-14T12:46:34+00:00",
+  "fetched_at": "2026-10-25T07:41:56+00:00",
   "source_snapshot_sha256": "fc0dffc5c4d4a28576aee08f343e991c1ed785b3c32cb5da12e3546de74d3e1a",
   "validators": {
     "etag": null,

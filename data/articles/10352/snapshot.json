@@ -6,9 +6,16 @@
     "source_url": "https://spaces.ac.cn/archives/10352",
     "date": "2024-09-06",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "信息时代",
+    "source_tags": [
+      "attention",
+      "位置编码",
+      "多模态"
+    ],
+    "source_summary": "本文分享了笔者关于多模态位置编码的后续思考，提出了构建多模态位置编码的三个原则：兼容性、等价性和对称性，改进了之前提出过的RoPE-Tie，最后讨论了“文本-视频”混合模态的位置编码设计和困难，以及Qwen2-VL的M-RoPE与RoPE-Tie的联系等。"
   },
-  "fetched_at": "2026-09-14T12:46:47+00:00",
+  "fetched_at": "2026-10-25T07:42:03+00:00",
   "source_snapshot_sha256": "521dee927ba7256f5fbbffd823f8e0142abf0c474c992c88a793eb11d78ee84b",
   "validators": {
     "etag": null,
