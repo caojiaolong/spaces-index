@@ -6,9 +6,16 @@
     "source_url": "https://spaces.ac.cn/archives/9881",
     "date": "2023-12-07",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "数学研究",
+    "source_tags": [
+      "微分方程",
+      "生成模型",
+      "扩散"
+    ],
+    "source_summary": "本文简单回顾了扩散ODE的采样加速方法，并重点介绍了前两天刚发布的一个名为“AMED”的新颖加速采样方案，该Solver类比了积分中值定理来构建迭代格式，以极低的蒸馏成本提高了Solver在低NFE时的表现。"
   },
-  "fetched_at": "2026-09-14T12:50:39+00:00",
+  "fetched_at": "2026-10-26T07:58:09+00:00",
   "source_snapshot_sha256": "75d537ae5ba00a7d70eb00f53e54846c63128870c1af9848db685a22b9890d0b",
   "validators": {
     "etag": null,

@@ -6,9 +6,17 @@
     "source_url": "https://spaces.ac.cn/archives/10017",
     "date": "2024-03-18",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "数学研究",
+    "source_tags": [
+      "语言模型",
+      "RNN",
+      "attention",
+      "复杂度"
+    ],
+    "source_summary": null
   },
-  "fetched_at": "2026-09-14T12:49:21+00:00",
+  "fetched_at": "2026-10-26T07:57:18+00:00",
   "source_snapshot_sha256": "00cde4a9fd910419ae971181acee46a5d3a87eefecc2a2edc202623d15709c2a",
   "validators": {
     "etag": null,

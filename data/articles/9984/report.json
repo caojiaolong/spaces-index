@@ -6,7 +6,15 @@
     "source_url": "https://spaces.ac.cn/archives/9984",
     "date": "2024-02-21",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "信息时代",
+    "source_tags": [
+      "生成模型",
+      "attention",
+      "扩散",
+      "多模态"
+    ],
+    "source_summary": "本文介绍了笔者关于多模态模型设计的构思——直接以原始图像的Patch作为图像输入，文本部分还是常规预测下一个Token，图像部分则用输入加噪图像来重构原图，这种组合理论上能以最保真的方式实现多模态生成。初步来看，直接以原始图像的Patch作为输入的Transformer，是有可能训练出成功的图像扩散模型的，那么这种扩散与文本混合的模型设计，也就有成功的可能了。当然，这只是笔者关于多模态路线的一些很潦草的想法，大部分没有经过实践验证，请大家斟酌阅读～"
   },
   "validation": {
     "passed": true,
@@ -30,8 +38,8 @@
     "converter_version": 1,
     "markdown_sha256": "3c681d12e4881a0056815fdf3a9cc430a9ae1ef400ad8718f461acb14dce9ef0"
   },
-  "fetched_at": "2026-09-14T12:49:40+00:00",
+  "fetched_at": "2026-10-26T07:57:29+00:00",
   "source_snapshot_sha256": "b1cf5b80be2b243752b7bffcffb572f1fef61de24596d20d66231e229bf833f3",
   "images": {},
-  "local_only": true
+  "publication_policy": "config/mirror.json"
 }

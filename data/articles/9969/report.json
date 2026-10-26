@@ -6,7 +6,14 @@
     "source_url": "https://spaces.ac.cn/archives/9969",
     "date": "2024-01-31",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "信息时代",
+    "source_tags": [
+      "GAN",
+      "生成模型",
+      "对抗"
+    ],
+    "source_summary": "本文从GAN的角度介绍了前段时间引起了一定关注的幂等生成网络IGN，对比了它与GAN的联系与区别，并分享了自己对IGN的分析。"
   },
   "validation": {
     "passed": true,
@@ -30,8 +37,8 @@
     "converter_version": 1,
     "markdown_sha256": "2a80de6b6508bf4bceb4aadd0559e62f7514b65891a48644411dc7d0ece9298f"
   },
-  "fetched_at": "2026-09-14T12:49:53+00:00",
+  "fetched_at": "2026-10-26T07:57:37+00:00",
   "source_snapshot_sha256": "ccf46284893b63f47906360c56cd938d3ba82c32aeb176c1e9d17d542bd597bd",
   "images": {},
-  "local_only": true
+  "publication_policy": "config/mirror.json"
 }

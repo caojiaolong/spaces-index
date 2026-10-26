@@ -6,9 +6,16 @@
     "source_url": "https://spaces.ac.cn/archives/9855",
     "date": "2023-11-13",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "生活/情感",
+    "source_tags": [
+      "生活",
+      "厨房",
+      "美食"
+    ],
+    "source_summary": null
   },
-  "fetched_at": "2026-09-14T12:50:58+00:00",
+  "fetched_at": "2026-10-26T07:58:21+00:00",
   "source_snapshot_sha256": "b9a482b7f50a8e318b40f8c3a147f5ea5fc640e1d110d03f15d96c70a76a6456",
   "validators": {
     "etag": null,

@@ -6,9 +6,17 @@
     "source_url": "https://spaces.ac.cn/archives/10040",
     "date": "2024-03-29",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "信息时代",
+    "source_tags": [
+      "attention",
+      "位置编码",
+      "rope",
+      "多模态"
+    ],
+    "source_summary": "本文讨论了如何将RoPE-1D和RoPE-2D结合起来，来更好地处理图文混合的输入格式，主要思想是通过RoPE-2D支持图片的二维位置指标，并且通过适当的约束，使得在纯文本情况下能退化为常规的RoPE-1D。"
   },
-  "fetched_at": "2026-09-14T12:49:15+00:00",
+  "fetched_at": "2026-10-26T07:57:14+00:00",
   "source_snapshot_sha256": "6dceab13dafabd5e77c4088f3aa8f83e2ef54b3181be2f4ff38c8aa69edfd21d",
   "validators": {
     "etag": null,

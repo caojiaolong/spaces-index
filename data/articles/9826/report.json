@@ -6,7 +6,15 @@
     "source_url": "https://spaces.ac.cn/archives/9826",
     "date": "2023-10-31",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "信息时代",
+    "source_tags": [
+      "生成模型",
+      "编码",
+      "梯度",
+      "离散化"
+    ],
+    "source_summary": "本文介绍了VQ-VAE的“VQ”的一个及其简单的替代品——FSQ（Finite Scalar Quantization），它直接通过四舍五入来对连续向量进行离散化，并且不需要额外的loss进行辅助。实验结果表明，当编码表足够大时，FSQ比VQ更有优势。"
   },
   "validation": {
     "passed": true,
@@ -30,8 +38,8 @@
     "converter_version": 1,
     "markdown_sha256": "f0263c7d0284e0402cafb1897c3a9c365163d60ae953d746c7854ffadcb07baa"
   },
-  "fetched_at": "2026-09-14T12:51:11+00:00",
+  "fetched_at": "2026-10-26T07:58:29+00:00",
   "source_snapshot_sha256": "239ea95128662a6f255e58fd40c26a80d64419c930b154ab46c42bfc2ffc5210",
   "images": {},
-  "local_only": true
+  "publication_policy": "config/mirror.json"
 }

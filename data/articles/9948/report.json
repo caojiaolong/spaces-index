@@ -6,7 +6,16 @@
     "source_url": "https://spaces.ac.cn/archives/9948",
     "date": "2024-01-26",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "信息时代",
+    "source_tags": [
+      "attention",
+      "位置编码",
+      "泛化",
+      "外推",
+      "rope"
+    ],
+    "source_summary": "在这篇文章中，笔者结合自己的学习经历，梳理了过去一年来关于长度外推的相关进展，主要简明地介绍了相关方法的特点和背后的思想，并试图将它们串联起来，希望本文能帮助大家更深入、更系统地了解长度外推这个课题。如果有什么错漏之处，也请读者提醒和指正。"
   },
   "validation": {
     "passed": true,
@@ -30,8 +39,8 @@
     "converter_version": 1,
     "markdown_sha256": "04eb220318fa2ba4738e90e4dffbc3ccaab97f265c250d6bc4df46b0b4b32729"
   },
-  "fetched_at": "2026-09-14T12:49:59+00:00",
+  "fetched_at": "2026-10-26T07:57:41+00:00",
   "source_snapshot_sha256": "80735a329e5bd3ecff5bded7d99aed777ee7e19dbe9429f66b40404ac1d79741",
   "images": {},
-  "local_only": true
+  "publication_policy": "config/mirror.json"
 }

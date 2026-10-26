@@ -6,7 +6,14 @@
     "source_url": "https://spaces.ac.cn/archives/9931",
     "date": "2024-01-09",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "数学研究",
+    "source_tags": [
+      "不等式",
+      "相似度",
+      "悖论"
+    ],
+    "source_summary": "本文简单讨论了高维向量的局部余弦相似度与全局余弦相似度之间的关系，并进一步讨论了与之相关的“辛普森悖论”。"
   },
   "validation": {
     "passed": true,
@@ -30,8 +37,8 @@
     "converter_version": 1,
     "markdown_sha256": "3e7512e33cc443c9cdb3dcf2a874c1c8c2a6185ee28fd9fe058cecc9687890a7"
   },
-  "fetched_at": "2026-09-14T12:50:06+00:00",
+  "fetched_at": "2026-10-26T07:57:48+00:00",
   "source_snapshot_sha256": "dcdc3dac0926c40c60851b8cb160acdd51786061c3ccf2e4acec336d21c44286",
   "images": {},
-  "local_only": true
+  "publication_policy": "config/mirror.json"
 }

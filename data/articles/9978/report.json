@@ -6,7 +6,14 @@
     "source_url": "https://spaces.ac.cn/archives/9978",
     "date": "2024-02-02",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "信息时代",
+    "source_tags": [
+      "网站",
+      "论文",
+      "酷论文"
+    ],
+    "source_summary": "本文分享了通过Chrome重定向扩展来打开Cool Papers的新方式，并简单回顾了一下近来Cool Papers的变化。"
   },
   "validation": {
     "passed": true,
@@ -30,8 +37,8 @@
     "converter_version": 1,
     "markdown_sha256": "5632093ec37e56783652680500143977c5a3962330957a42862ead644132ba8c"
   },
-  "fetched_at": "2026-09-14T12:49:47+00:00",
+  "fetched_at": "2026-10-26T07:57:32+00:00",
   "source_snapshot_sha256": "f68f380891324872f2f2897c0e74e3c1029057af3896574aa6987ba76eefaa21",
   "images": {},
-  "local_only": true
+  "publication_policy": "config/mirror.json"
 }

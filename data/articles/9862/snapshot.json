@@ -6,9 +6,16 @@
     "source_url": "https://spaces.ac.cn/archives/9862",
     "date": "2023-11-29",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "信息时代",
+    "source_tags": [
+      "量子化",
+      "语言模型",
+      "attention"
+    ],
+    "source_summary": "本文介绍了笔者的一个发现：早期的线性Attention工作“Peformer”可以视为一个“Soft”版的Transformer-VQ。然后，在这个观察上进一步得到了Transformer-VQ的一个新推导：利用狄拉克函数将标准Attention转化为无限维线性Attention，然后加上GMM近似就可以得到Transformer-VQ。"
   },
-  "fetched_at": "2026-09-14T12:50:45+00:00",
+  "fetched_at": "2026-10-26T07:58:12+00:00",
   "source_snapshot_sha256": "2e01c48f016d3534aa481ae61859c1d0c10f0d65d5ae455b52a351111d3b6268",
   "validators": {
     "etag": null,

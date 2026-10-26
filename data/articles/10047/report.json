@@ -6,7 +6,15 @@
     "source_url": "https://spaces.ac.cn/archives/10047",
     "date": "2024-04-08",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "信息时代",
+    "source_tags": [
+      "损失函数",
+      "生成模型",
+      "扩散",
+      "信噪比"
+    ],
+    "source_summary": "在这篇文章中，我们介绍了Simple diffusion，这是一篇探索如何直接在Pixel空间中端到端地训练图像扩散模型的工作，利用了信噪比的概念介绍了高分辨率扩散模型的训练效率低问题，并由此来指标调整新的Noise Schedule，以及探索了如何尽可能节约算力成本地Scale up模型架构。"
   },
   "validation": {
     "passed": true,
@@ -30,8 +38,8 @@
     "converter_version": 1,
     "markdown_sha256": "e8b911de96c3068561eb9149eaeddb5d59e2562025874e350cb36b3c368fac6d"
   },
-  "fetched_at": "2026-09-14T12:49:09+00:00",
+  "fetched_at": "2026-10-26T07:57:10+00:00",
   "source_snapshot_sha256": "1aaeeff483c537bf97ee7883157960bbc9425a93999bf70faa77700ba94bd07d",
   "images": {},
-  "local_only": true
+  "publication_policy": "config/mirror.json"
 }

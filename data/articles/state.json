@@ -15,7 +15,7 @@
   },
   "9938": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:18:42+00:00",
+    "checked_at": "2026-10-26T07:57:45+00:00",
     "title": "旁门左道之如何让Python的重试代码更加优雅",
     "markdown_sha256": "f6a869c9e8df47a0f382f20bf3084d134cd002202b5f59e1fd04a4bb65fa093d",
     "converter_version": 1
@@ -988,14 +988,14 @@
   },
   "10088": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:18:39+00:00",
+    "checked_at": "2026-10-26T07:57:02+00:00",
     "title": "Cool Papers更新：简单搭建了一个站内检索系统",
     "markdown_sha256": "6d802c968415b88002cad9ef332ccee3a5bae9f22ee58162d1356f7ea66c7d8b",
     "converter_version": 1
   },
   "10085": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:18:39+00:00",
+    "checked_at": "2026-10-26T07:57:06+00:00",
     "title": "生成扩散模型漫谈（二十五）：基于恒等式的蒸馏（上）",
     "markdown_sha256": "95a83353dde86c13ac2c717a3b601c9fbde7ed06a3144a0e042a8e8c4623d883",
     "converter_version": 1
@@ -1016,147 +1016,147 @@
   },
   "10047": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:18:40+00:00",
+    "checked_at": "2026-10-26T07:57:10+00:00",
     "title": "生成扩散模型漫谈（二十二）：信噪比与大图生成（上）",
     "markdown_sha256": "e8b911de96c3068561eb9149eaeddb5d59e2562025874e350cb36b3c368fac6d",
     "converter_version": 1
   },
   "10040": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:18:40+00:00",
+    "checked_at": "2026-10-26T07:57:14+00:00",
     "title": "Transformer升级之路：17、多模态位置编码的简单思考",
     "markdown_sha256": "f43e5b89a5cd9a7c0a555d05ccc95ec0158849346af6148ee7005f96cd2695da",
     "converter_version": 1
   },
   "10017": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:18:40+00:00",
+    "checked_at": "2026-10-26T07:57:18+00:00",
     "title": "时空之章：将Attention视为平方复杂度的RNN",
     "markdown_sha256": "380a0f530cc9c727c8be4380806f6b0e9c7d49abdc2638044eaeeb3b897e4595",
     "converter_version": 1
   },
   "10007": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:18:40+00:00",
+    "checked_at": "2026-10-26T07:57:21+00:00",
     "title": "用傅里叶级数拟合一维概率密度函数",
     "markdown_sha256": "add74726c24e2334113a9c9c76f71fe0adefb17f69eb5641f198471c5250aeb5",
     "converter_version": 1
   },
   "10001": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:18:40+00:00",
+    "checked_at": "2026-10-26T07:57:25+00:00",
     "title": "配置不同的学习率，LoRA还能再涨一点？",
     "markdown_sha256": "78d57ab16dbf6a3faed2ff546d66500b2a77cb0db5f3c2970122e6bed932894e",
     "converter_version": 1
   },
   "9984": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:18:41+00:00",
+    "checked_at": "2026-10-26T07:57:29+00:00",
     "title": "“闭门造车”之多模态思路浅谈（一）：无损输入",
     "markdown_sha256": "3c681d12e4881a0056815fdf3a9cc430a9ae1ef400ad8718f461acb14dce9ef0",
     "converter_version": 1
   },
   "9978": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:18:41+00:00",
+    "checked_at": "2026-10-26T07:57:32+00:00",
     "title": "更便捷的Cool Papers打开方式：Chrome重定向扩展",
     "markdown_sha256": "5632093ec37e56783652680500143977c5a3962330957a42862ead644132ba8c",
     "converter_version": 1
   },
   "9969": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:18:41+00:00",
+    "checked_at": "2026-10-26T07:57:37+00:00",
     "title": "幂等生成网络IGN：试图将判别和生成合二为一的GAN",
     "markdown_sha256": "2a80de6b6508bf4bceb4aadd0559e62f7514b65891a48644411dc7d0ece9298f",
     "converter_version": 1
   },
   "9948": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:18:42+00:00",
+    "checked_at": "2026-10-26T07:57:41+00:00",
     "title": "Transformer升级之路：16、“复盘”长度外推技术",
     "markdown_sha256": "04eb220318fa2ba4738e90e4dffbc3ccaab97f265c250d6bc4df46b0b4b32729",
     "converter_version": 1
   },
   "9931": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:18:42+00:00",
+    "checked_at": "2026-10-26T07:57:48+00:00",
     "title": "局部余弦相似度大，全局余弦相似度一定也大吗？",
     "markdown_sha256": "3e7512e33cc443c9cdb3dcf2a874c1c8c2a6185ee28fd9fe058cecc9687890a7",
     "converter_version": 1
   },
   "9920": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:18:42+00:00",
+    "checked_at": "2026-10-26T07:57:52+00:00",
     "title": "新年快乐！记录一下 Cool Papers 的开发体验",
     "markdown_sha256": "be3b1edb98a561a573fe8420953211b2d764213b94ed8beac1ff008f0a037280",
     "converter_version": 1
   },
   "9907": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:18:42+00:00",
+    "checked_at": "2026-10-26T07:57:56+00:00",
     "title": "写了个刷论文的辅助网站：Cool Papers",
     "markdown_sha256": "a60383cf2dcb68a7a3fede7a83ab69a6ab43c7a783162ea00efd4d71e5c7d994",
     "converter_version": 1
   },
   "9902": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:18:43+00:00",
+    "checked_at": "2026-10-26T07:58:01+00:00",
     "title": "让炼丹更科学一些（一）：SGD的平均损失收敛",
     "markdown_sha256": "11bdfcdae42bfd56e65f660aee520843a4b5e7b9d8ea0b2fc3b77c80a6d9b7a1",
     "converter_version": 1
   },
   "9889": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:18:43+00:00",
+    "checked_at": "2026-10-26T07:58:05+00:00",
     "title": "注意力机制真的可以“集中注意力”吗？",
     "markdown_sha256": "8a3bca2beb2de3297ca3f713fb9a2219249e4d6c9a6b6304c56f7955e0d330e2",
     "converter_version": 1
   },
   "9881": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:18:43+00:00",
+    "checked_at": "2026-10-26T07:58:09+00:00",
     "title": "生成扩散模型漫谈（二十一）：中值定理加速ODE采样",
     "markdown_sha256": "73eddfa3b22b1c55fec7fa670f960b19e1c92e8b27126ae7d06c82468e684c0c",
     "converter_version": 1
   },
   "9862": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:18:43+00:00",
+    "checked_at": "2026-10-26T07:58:12+00:00",
     "title": "我在Performer中发现了Transformer-VQ的踪迹",
     "markdown_sha256": "f3a353fa2a23933c6d9e3ed47ad546b699f0403acfd9b7ecb0513370f5e6ef69",
     "converter_version": 1
   },
   "9859": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:18:44+00:00",
+    "checked_at": "2026-10-26T07:58:16+00:00",
     "title": "Transformer升级之路：15、Key归一化助力长度外推",
     "markdown_sha256": "4177a6360648db9b1688102b2ad6649c9d8bafd6324c91ff158f9245bd96122a",
     "converter_version": 1
   },
   "9855": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:18:44+00:00",
+    "checked_at": "2026-10-26T07:58:21+00:00",
     "title": "【生活杂记】炒锅的尽头是铁锅",
     "markdown_sha256": "12f43f46cdce00af5619127ca84e42dc03bc2b057b83a18dda753cb7f85d3fe6",
     "converter_version": 1
   },
   "9844": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:18:44+00:00",
+    "checked_at": "2026-10-26T07:58:25+00:00",
     "title": "VQ一下Key，Transformer的复杂度就变成线性了",
     "markdown_sha256": "920acd012a50750112eff006a603a403367625a62543ccaa5c285632b218f726",
     "converter_version": 1
   },
   "9826": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:18:44+00:00",
+    "checked_at": "2026-10-26T07:58:29+00:00",
     "title": "简单得令人尴尬的FSQ：“四舍五入”超越了VQ-VAE",
     "markdown_sha256": "f0263c7d0284e0402cafb1897c3a9c365163d60ae953d746c7854ffadcb07baa",
     "converter_version": 1
   },
   "9812": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:18:44+00:00",
+    "checked_at": "2026-10-26T07:58:33+00:00",
     "title": "从梯度最大化看Attention的Scale操作",
     "markdown_sha256": "11fc20ee2c8757a1608c6c7dd6bcecac83eca7b31710e52fb4bbc51559a62954",
     "converter_version": 1
@@ -1191,7 +1191,7 @@
   },
   "9775": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:18:45+00:00",
+    "checked_at": "2026-10-26T07:58:36+00:00",
     "title": "自然数集中 N = ab + c 时 a + b + c 的最小值",
     "markdown_sha256": "15653c62d1ef0ead4f53d193db8e1061e93a13d1716099ba5916f3ce11ab75ec",
     "converter_version": 1
@@ -8464,7 +8464,7 @@
   },
   "132": {
     "status": "conversion_failed",
-    "checked_at": "2026-10-25T07:43:11+00:00",
+    "checked_at": "2026-10-26T07:58:36+00:00",
     "title": "一道从小学到高中都可能考到的题目",
     "error": "Unreviewed legacy element: a<b，则有<br",
     "converter_version": 1,

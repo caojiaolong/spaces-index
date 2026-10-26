@@ -6,9 +6,17 @@
     "source_url": "https://spaces.ac.cn/archives/9844",
     "date": "2023-11-09",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "数学研究",
+    "source_tags": [
+      "量子化",
+      "编码",
+      "梯度",
+      "attention"
+    ],
+    "source_summary": "本文介绍了一个名为Transformer-VQ的Efficient Transformer方案，它基于“只需VQ一下Key，Transformer的复杂度就会变成线性”的观察结果进行展开，个人认为是一种非常独特且亮眼的线性化思路，实验结果也很优异。它既可以理解为一种更高明的线性Attention/RNN模型，也可以理解为一个带有“可训练的Tokenizer”的Attention模型。"
   },
-  "fetched_at": "2026-09-14T12:51:04+00:00",
+  "fetched_at": "2026-10-26T07:58:25+00:00",
   "source_snapshot_sha256": "3d3f4cde0c45b159e831600928b8935a145d42414ca2017f3d8fe869037e32d8",
   "validators": {
     "etag": null,

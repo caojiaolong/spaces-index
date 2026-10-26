@@ -6,9 +6,17 @@
     "source_url": "https://spaces.ac.cn/archives/10007",
     "date": "2024-03-07",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "数学研究",
+    "source_tags": [
+      "级数",
+      "概率",
+      "分析",
+      "逼近"
+    ],
+    "source_summary": "本文介绍了一种用傅里叶级数来建模一维概率密度函数的新思路，关键之处是通过精巧的系数构造，来约束原本值域是复数域的傅里叶级数成为一个非负函数，整个过程颇为赏心悦目，值得学习一番。"
   },
-  "fetched_at": "2026-09-14T12:49:28+00:00",
+  "fetched_at": "2026-10-26T07:57:21+00:00",
   "source_snapshot_sha256": "2ab4b697bf8cf223240f4018d50c169c84de5c51353f7a3be8bb31a3706316ea",
   "validators": {
     "etag": null,

@@ -6,9 +6,16 @@
     "source_url": "https://spaces.ac.cn/archives/10088",
     "date": "2024-05-07",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "信息时代",
+    "source_tags": [
+      "网站",
+      "论文",
+      "酷论文"
+    ],
+    "source_summary": "事实上，站内搜索这个需求，在年初Cool Papers刚面向公众开放时就有用户提出了，之所以一直迟迟未上，主要原因是Cool Papers的论文是逐日收录的，一开始的论文数并不多，站内搜索没有太大意义。经过四个多月的累积，Cool Papers收录的Arxiv论文数到了8万多篇，加上venue分支的会议论文也达到了8万多，目前近17万篇论文，可以拿来搜一搜了。 确定了可以做，那么接下来就是怎么做了。基于关键字检索文章内容的检索系统，我们称为“全文检索（Full-text Search）”，一般都是基于倒排索引和BM25相似度构建的，也就是说在算法上是成熟的。在实现上，Cool Papers的后端是 BottlePy ，所以我们要寻…"
   },
-  "fetched_at": "2026-09-14T12:48:42+00:00",
+  "fetched_at": "2026-10-26T07:57:02+00:00",
   "source_snapshot_sha256": "6882d9bdbaa3509c3070fc3c262f475dade6ba83dcf0ea5f3b22d64f8f12c20c",
   "validators": {
     "etag": null,

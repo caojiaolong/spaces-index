@@ -6,7 +6,14 @@
     "source_url": "https://spaces.ac.cn/archives/9920",
     "date": "2024-01-01",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "信息时代",
+    "source_tags": [
+      "网站",
+      "论文",
+      "酷论文"
+    ],
+    "source_summary": "总结就到这里了。说是总结，其实也就是一个网站开发新手的流水账罢了，难登大雅之堂，请高手们一笑了之。最后，祝大家元旦快乐，在新的一年里万事顺利，技术突飞猛涨，错漏销声匿迹！"
   },
   "validation": {
     "passed": true,
@@ -30,8 +37,8 @@
     "converter_version": 1,
     "markdown_sha256": "be3b1edb98a561a573fe8420953211b2d764213b94ed8beac1ff008f0a037280"
   },
-  "fetched_at": "2026-09-14T12:50:12+00:00",
+  "fetched_at": "2026-10-26T07:57:52+00:00",
   "source_snapshot_sha256": "4e3a5a5f415747668f5226b540b9eeaeb14591b06e774abc02fb8de0c38a7072",
   "images": {},
-  "local_only": true
+  "publication_policy": "config/mirror.json"
 }

@@ -6,7 +6,13 @@
     "source_url": "https://spaces.ac.cn/archives/9775",
     "date": "2023-09-20",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "数学研究",
+    "source_tags": [
+      "最优",
+      "问题"
+    ],
+    "source_summary": "本文分享了一道“以为是个青铜，结果是个王者”的算法题的思考和学习过程。"
   },
   "validation": {
     "passed": true,
@@ -30,8 +36,8 @@
     "converter_version": 1,
     "markdown_sha256": "15653c62d1ef0ead4f53d193db8e1061e93a13d1716099ba5916f3ce11ab75ec"
   },
-  "fetched_at": "2026-09-14T12:51:53+00:00",
+  "fetched_at": "2026-10-26T07:58:36+00:00",
   "source_snapshot_sha256": "ab9bf6c8abd52fcacb0d0c1081ab339c2c6ee374dfe2e019025131ae8d389b63",
   "images": {},
-  "local_only": true
+  "publication_policy": "config/mirror.json"
 }

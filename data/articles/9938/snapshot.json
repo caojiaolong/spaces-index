@@ -6,9 +6,20 @@
     "source_url": "https://spaces.ac.cn/archives/9938",
     "date": "2024-01-14",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "信息时代",
+    "source_tags": [
+      "编程",
+      "代码",
+      "python",
+      "优化"
+    ],
+    "source_summary": "本文相对完整地探讨了Python中重试机制的写法，试图得到笔者心目中重试代码的完美实现，最后的结果也勉强达到了心中所想。 不过，不得不承认的是，这篇文章的起因实质只是“强迫症”在作祟，并没有算法效率的实质改进，在编程细节上花太多时间，某种程度上已经是“旁门左道”、“不务正业”了，并不是一件十分值得学习的事情。"
   },
-  "fetched_at": "2026-09-14T07:36:07+00:00",
+  "fetched_at": "2026-10-26T07:57:45+00:00",
   "source_snapshot_sha256": "12d596ab79336c271ac39be15960c313deb0694b344ef09352f09e7bdc589c48",
-  "validators": {}
+  "validators": {
+    "etag": null,
+    "last_modified": null
+  }
 }

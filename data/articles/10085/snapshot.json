@@ -6,9 +6,17 @@
     "source_url": "https://spaces.ac.cn/archives/10085",
     "date": "2024-05-01",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "数学研究",
+    "source_tags": [
+      "生成模型",
+      "梯度",
+      "扩散",
+      "去噪"
+    ],
+    "source_summary": "在这篇文章中，我们介绍了一种新的将扩散模型蒸馏为单步生成模型的方案，其思想可以追溯到前两年的利用去噪自编码器训练生成模型的工作，它不需要获得教师模型的真实训练集，也不需要迭代教师模型来生成样本对，而引入了类似GAN的交替训练，同时提出了关键的恒等变换来稳定训练过程，整个方法有颇多值得学习之处。"
   },
-  "fetched_at": "2026-09-14T12:48:48+00:00",
+  "fetched_at": "2026-10-26T07:57:06+00:00",
   "source_snapshot_sha256": "d709a222e4bfe1e914c4735991f9a677e213d93f3c0ba2b6b3ff47186c97539c",
   "validators": {
     "etag": null,
