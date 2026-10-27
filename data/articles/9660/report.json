@@ -6,7 +6,15 @@
     "source_url": "https://spaces.ac.cn/archives/9660",
     "date": "2023-06-16",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "数学研究",
+    "source_tags": [
+      "泛函",
+      "动力学",
+      "优化",
+      "梯度"
+    ],
+    "source_summary": "本文介绍了梯度下降求最小值过程中的“梯度流”概念，其中包括向量空间的梯度流到概率空间的Wasserstein梯度流的拓展，以及它们与连续性方程、Fokker-Planck方程和ODE/SDE采样之间的联系。"
   },
   "validation": {
     "passed": true,
@@ -30,8 +38,8 @@
     "converter_version": 1,
     "markdown_sha256": "651a56e48ce12da3c8c50098a84bdcb611cd57e683319c718991701ea301d1ff"
   },
-  "fetched_at": "2026-09-14T12:53:40+00:00",
+  "fetched_at": "2026-10-27T08:05:46+00:00",
   "source_snapshot_sha256": "3c20acd276548cea6f7d7f109d19b967517b3ec2201486fbeb554922db501508",
   "images": {},
-  "local_only": true
+  "publication_policy": "config/mirror.json"
 }

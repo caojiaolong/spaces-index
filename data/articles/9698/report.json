@@ -6,7 +6,13 @@
     "source_url": "https://spaces.ac.cn/archives/9698",
     "date": "2023-07-20",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "数学研究",
+    "source_tags": [
+      "语言模型",
+      "初始化"
+    ],
+    "source_summary": "本文重温了语言模型输出端共享Embedding权重的操作，推导了直接重用Embedding来投影输出可能会导致损失过大的可能性，并探讨了一些解决办法。"
   },
   "validation": {
     "passed": true,
@@ -30,8 +36,8 @@
     "converter_version": 1,
     "markdown_sha256": "f9cf71de0c5077ae97589a7ea1834031bbc22acd0b94dbefac5b31cf408854e3"
   },
-  "fetched_at": "2026-09-14T12:53:07+00:00",
+  "fetched_at": "2026-10-27T08:05:28+00:00",
   "source_snapshot_sha256": "4201d9ca2fade415e4945a4eddd4d9277d5337a1cb1b3c20b6899309f850714d",
   "images": {},
-  "local_only": true
+  "publication_policy": "config/mirror.json"
 }

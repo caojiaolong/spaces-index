@@ -6,9 +6,18 @@
     "source_url": "https://spaces.ac.cn/archives/9706",
     "date": "2023-07-31",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "信息时代",
+    "source_tags": [
+      "attention",
+      "位置编码",
+      "泛化",
+      "外推",
+      "rope"
+    ],
+    "source_summary": "在这篇文章中，我们重温了RoPE的$\\beta$进制视角，并尝试对NTK-aware Scaled RoPE进行推广，在混合进制的启发下，我们得到了一个更优的不微调扩展Context长度的策略，最后通过实验表明了它的有效性。"
   },
-  "fetched_at": "2026-09-14T12:53:00+00:00",
+  "fetched_at": "2026-10-27T08:05:24+00:00",
   "source_snapshot_sha256": "a978e3adeef485785b0f1cd90c4896001c633124aa5761f12704a60252c5a062",
   "validators": {
     "etag": null,

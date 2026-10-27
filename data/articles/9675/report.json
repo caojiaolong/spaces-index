@@ -6,7 +6,16 @@
     "source_url": "https://spaces.ac.cn/archives/9675",
     "date": "2023-07-06",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "信息时代",
+    "source_tags": [
+      "attention",
+      "位置编码",
+      "泛化",
+      "外推",
+      "rope"
+    ],
+    "source_summary": null
   },
   "validation": {
     "passed": true,
@@ -32,8 +41,8 @@
     "fallback_reason": "Unsupported body element: del",
     "markdown_sha256": "1b12edf77c0f690d1ca5e6b6d58f3b0e79babcba41d03b7e7d33ad7e3dfd2712"
   },
-  "fetched_at": "2026-09-14T12:53:20+00:00",
+  "fetched_at": "2026-10-27T08:05:35+00:00",
   "source_snapshot_sha256": "f0d0cac91a9e70b642913d996f61fa2da755d1332ad8acf2ec67680edee95efd",
   "images": {},
-  "local_only": true
+  "publication_policy": "config/mirror.json"
 }

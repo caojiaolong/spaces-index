@@ -6,9 +6,15 @@
     "source_url": "https://spaces.ac.cn/archives/9787",
     "date": "2023-10-08",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "信息时代",
+    "source_tags": [
+      "语言模型",
+      "attention"
+    ],
+    "source_summary": null
   },
-  "fetched_at": "2026-09-14T12:51:41+00:00",
+  "fetched_at": "2026-10-27T08:04:52+00:00",
   "source_snapshot_sha256": "51ccd07523de7b97acc7173c6b780febef85e4296e4f9066d336ed7bd5cd109b",
   "validators": {
     "etag": null,

@@ -6,7 +6,14 @@
     "source_url": "https://spaces.ac.cn/archives/9762",
     "date": "2023-09-13",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "信息时代",
+    "source_tags": [
+      "概率",
+      "问题",
+      "语言模型"
+    ],
+    "source_summary": "本文介绍了超大词表的LLM在做文本续写任务时可能出现的一个问题，并分享了参考的解决方案。"
   },
   "validation": {
     "passed": true,
@@ -30,8 +37,8 @@
     "converter_version": 1,
     "markdown_sha256": "0c498cb48d93231db27337fc4bc8ef122595810ffd0d35784020130c95de2fba"
   },
-  "fetched_at": "2026-09-14T12:52:21+00:00",
+  "fetched_at": "2026-10-27T08:05:03+00:00",
   "source_snapshot_sha256": "f92e8212fd839cb38b4652cd560269233323f19f710350281123e562d6c6af22",
   "images": {},
-  "local_only": true
+  "publication_policy": "config/mirror.json"
 }

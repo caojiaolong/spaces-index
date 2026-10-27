@@ -6,9 +6,16 @@
     "source_url": "https://spaces.ac.cn/archives/9662",
     "date": "2023-06-24",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "信息时代",
+    "source_tags": [
+      "优化",
+      "GAN",
+      "扩散"
+    ],
+    "source_summary": "本文介绍了MonoFlow，它展示了我们可以将GAN理解为在另一个时间维度上的扩散ODE，从而建立了一种基于扩散模型理解GAN的新视角。特别地，这是一种比GAN的常规推导更加贴近训练过程的视角。"
   },
-  "fetched_at": "2026-09-14T12:53:33+00:00",
+  "fetched_at": "2026-10-27T08:05:42+00:00",
   "source_snapshot_sha256": "76a59d76827579162b2055b5c2419ecf76ef23dd42e1ca2ca7d5b18e141782d3",
   "validators": {
     "etag": null,

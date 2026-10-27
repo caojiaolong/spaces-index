@@ -6,7 +6,16 @@
     "source_url": "https://spaces.ac.cn/archives/9708",
     "date": "2023-08-07",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "信息时代",
+    "source_tags": [
+      "attention",
+      "位置编码",
+      "泛化",
+      "外推",
+      "rope"
+    ],
+    "source_summary": "在这篇文章中，笔者提出了ReRoPE (Rectified RoPE)，它同样是一种RoPE的后处理方案，实验结果显示它的不微调长度外推能力不仅明显超过了此前的NTK-aware Scaled RoPE，甚至还超过了之前专门设计的需要从零训练的HFWA。此外，不同于NTK-aware Scaled RoPE在超过某个长度后能力会大幅下降，ReRoPE似乎在任意长度下都表现良好。除了对比实验外，文章还给出了基于transformers-llama的参考实现，有兴趣的读者可以自行测试。"
   },
   "validation": {
     "passed": true,
@@ -30,8 +39,8 @@
     "converter_version": 1,
     "markdown_sha256": "98162e45dfaa035b9f38197bf1696d6f8dace10767a4c1074de001381cda2319"
   },
-  "fetched_at": "2026-09-14T12:52:54+00:00",
+  "fetched_at": "2026-10-27T08:05:21+00:00",
   "source_snapshot_sha256": "ff77f397f3c51c79853188f69150ad1b6a2393c7e3d539743d928eadaf177e04",
   "images": {},
-  "local_only": true
+  "publication_policy": "config/mirror.json"
 }

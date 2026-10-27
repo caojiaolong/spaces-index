@@ -6,9 +6,17 @@
     "source_url": "https://spaces.ac.cn/archives/9797",
     "date": "2023-10-13",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "信息时代",
+    "source_tags": [
+      "概率",
+      "优化",
+      "损失函数",
+      "最优传输"
+    ],
+    "source_summary": "本文介绍了交叉熵损失的一个新的“替代品”——基于最优传输思想的EMO，与以往的小提升不同，EMO在LLM的微调实验中取得了较为明显的提升。"
   },
-  "fetched_at": "2026-09-14T12:51:34+00:00",
+  "fetched_at": "2026-10-27T08:04:49+00:00",
   "source_snapshot_sha256": "99b540b97e28c56dcbe1291931a3ec2b153d1b8a82521d93d87debfcc92ee7f7",
   "validators": {
     "etag": null,

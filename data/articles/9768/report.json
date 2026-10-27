@@ -6,7 +6,15 @@
     "source_url": "https://spaces.ac.cn/archives/9768",
     "date": "2023-09-16",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "信息时代",
+    "source_tags": [
+      "概率",
+      "随机",
+      "分词",
+      "新词发现"
+    ],
+    "source_summary": "本文主要探讨了将Unigram分词模型的确定性分词改为随机性分词的策略。尽管已有名为“Subword Regularization”的方法可以实现这一目标，但其效率相对较低。为此，笔者提出了一种更高效的采样算法Viterbi Sampling，它仅需对确定性的Viterbi Decoding进行简单的修改，从而基本保持了原有的效率。实验证明，新的算法采样速度明显超越了Subword Regularization。相应的实现已经内置在BytePiece最新版中。"
   },
   "validation": {
     "passed": true,
@@ -30,8 +38,8 @@
     "converter_version": 1,
     "markdown_sha256": "462de5087a661809e137b2a3f0d5e4e3bcd4685faba11aebeaf877e3bf0e670a"
   },
-  "fetched_at": "2026-09-14T12:51:59+00:00",
+  "fetched_at": "2026-10-27T08:05:00+00:00",
   "source_snapshot_sha256": "e7c58739e8fd7dce95037b08414435972afed9898c08d866f4e2df3ab72fdaef",
   "images": {},
-  "local_only": true
+  "publication_policy": "config/mirror.json"
 }

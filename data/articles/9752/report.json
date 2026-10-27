@@ -6,7 +6,14 @@
     "source_url": "https://spaces.ac.cn/archives/9752",
     "date": "2023-09-07",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "信息时代",
+    "source_tags": [
+      "分词",
+      "无监督",
+      "新词发现"
+    ],
+    "source_summary": "本文介绍了笔者自行开发的Tokenizer——BytePiece，它是Byte-based的Unigram分词器，纯Python实现，更加易读和易拓展。由于采用了新的训练算法，所以压缩率通常比现有tokenizer更高，同时支持多进程加速训练。此外，它直接操作文本的utf-8 bytes，几乎不进行任何的预处理，所以更加纯粹和语言无关。"
   },
   "validation": {
     "passed": true,
@@ -30,8 +37,8 @@
     "converter_version": 1,
     "markdown_sha256": "2edcd75ad6beec8d1abf0393957e55faa4f78fc3e24657d87cb86d552b17727b"
   },
-  "fetched_at": "2026-09-14T12:52:28+00:00",
+  "fetched_at": "2026-10-27T08:05:07+00:00",
   "source_snapshot_sha256": "a6c42d52cdc93dea8ca7c2f3318e9e7e214c54c1889b196c0231ec09cc669135",
   "images": {},
-  "local_only": true
+  "publication_policy": "config/mirror.json"
 }

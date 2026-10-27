@@ -6,7 +6,15 @@
     "source_url": "https://spaces.ac.cn/archives/9617",
     "date": "2023-05-23",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "信息时代",
+    "source_tags": [
+      "语言模型",
+      "外推",
+      "LLM",
+      "贝叶斯"
+    ],
+    "source_summary": "本文提出了NBCE（Naive Bayes-based Context Extension），它基于朴素贝叶斯思想来扩展LLM的Context处理长度，有着即插即用、模型无关、无须微调、线性效率、实现简单等优点，并且看上去效果还不错，欢迎大家测试。"
   },
   "validation": {
     "passed": true,
@@ -30,8 +38,8 @@
     "converter_version": 1,
     "markdown_sha256": "c61c3abf1d0a3319862066e3c7057c12216548c489412e7922dd748b2c67fbea"
   },
-  "fetched_at": "2026-09-14T12:53:59+00:00",
+  "fetched_at": "2026-10-27T08:05:56+00:00",
   "source_snapshot_sha256": "dbb85544868eae0a2278f046793ab9969f0c685c65fd0e10f1aa7b482c87a7a0",
   "images": {},
-  "local_only": true
+  "publication_policy": "config/mirror.json"
 }

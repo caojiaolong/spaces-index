@@ -6,9 +6,16 @@
     "source_url": "https://spaces.ac.cn/archives/9736",
     "date": "2023-08-28",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "信息时代",
+    "source_tags": [
+      "问题",
+      "梯度",
+      "优化器"
+    ],
+    "source_summary": "本文介绍了Lion/Tiger优化器训练下的Embedding异常现象，并分析了背后的原因，最后给出了参考的解决方案。"
   },
-  "fetched_at": "2026-09-14T12:52:35+00:00",
+  "fetched_at": "2026-10-27T08:05:10+00:00",
   "source_snapshot_sha256": "83197c61e047ced3ce052dc6097689ee4f7f00d216e1be77d173eedc65a0fd68",
   "validators": {
     "etag": null,

@@ -6,9 +6,17 @@
     "source_url": "https://spaces.ac.cn/archives/9783",
     "date": "2023-09-26",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "数学研究",
+    "source_tags": [
+      "方程",
+      "迭代",
+      "语言模型",
+      "RNN"
+    ],
+    "source_summary": "本文简单探讨了非线性RNN的并行计算问题——通过数学物理中的“摄动”思想，我们可以将非线性RNN转化为线性RNN的迭代，从而利用线性RNN的可并行性来实现非线性RNN的并行。"
   },
-  "fetched_at": "2026-09-14T12:51:47+00:00",
+  "fetched_at": "2026-10-27T08:04:56+00:00",
   "source_snapshot_sha256": "45cfa1de012498aabeee0621b90e474cacaabd607cd39e9edf21b8a64088f7a0",
   "validators": {
     "etag": null,

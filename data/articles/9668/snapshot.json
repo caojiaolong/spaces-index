@@ -6,9 +6,17 @@
     "source_url": "https://spaces.ac.cn/archives/9668",
     "date": "2023-06-28",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "信息时代",
+    "source_tags": [
+      "优化",
+      "GAN",
+      "梯度",
+      "扩散"
+    ],
+    "source_summary": "在这篇文章中，笔者尝试从ReFlow出发推导了WGAN-GP与扩散ODE之间的联系，这个角度相对来说更加简单直观，并且避免了Wasserstein梯度流等相对复杂的概念。"
   },
-  "fetched_at": "2026-09-14T12:53:27+00:00",
+  "fetched_at": "2026-10-27T08:05:39+00:00",
   "source_snapshot_sha256": "d57ec4b49722142e65a81f1f26f24cbbc0d1a6cc712ef742c387527828c63067",
   "validators": {
     "etag": null,

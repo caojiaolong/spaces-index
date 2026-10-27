@@ -6,9 +6,17 @@
     "source_url": "https://spaces.ac.cn/archives/9590",
     "date": "2023-04-17",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "数学研究",
+    "source_tags": [
+      "梯度",
+      "优化器",
+      "低秩",
+      "lora"
+    ],
+    "source_summary": "本文介绍了从梯度角度来理解LoRA，除了基本的介绍外，还包含了笔者的一些猜测和推广，供读者参考。"
   },
-  "fetched_at": "2026-09-14T12:54:33+00:00",
+  "fetched_at": "2026-10-27T08:06:07+00:00",
   "source_snapshot_sha256": "b3aa1f3e0038e27bafc09565a6ddae9deaefbe589d37be0cf1b5e602c46f92b6",
   "validators": {
     "etag": null,

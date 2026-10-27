@@ -6,7 +6,13 @@
     "source_url": "https://spaces.ac.cn/archives/9588",
     "date": "2023-04-10",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "数学研究",
+    "source_tags": [
+      "熵",
+      "attention"
+    ],
+    "source_summary": "本文构建了JL引理与熵不变性Attention之间的一个简单联系。"
   },
   "validation": {
     "passed": true,
@@ -30,8 +36,8 @@
     "converter_version": 1,
     "markdown_sha256": "bdc282c161a1d9aa233f7d95a74b76b74c9240daacbc413a3ddd6891a14036ef"
   },
-  "fetched_at": "2026-09-14T12:54:39+00:00",
+  "fetched_at": "2026-10-27T08:06:10+00:00",
   "source_snapshot_sha256": "24d80c8e5698271e43582607e3443bd66faaf6025366095f14089482a90d5a47",
   "images": {},
-  "local_only": true
+  "publication_policy": "config/mirror.json"
 }

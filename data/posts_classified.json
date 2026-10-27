@@ -3729,6 +3729,7 @@
       "采样"
     ],
     "source_summary": "本文完善了之前提出的随机分词算法Viterbi Sampling，并从数学上证明了它在效果上跟Subword Regularization一样都是“完美采样”算法，而在使用上有着比Subword Regularization明显更高的效率。",
+    "metadata_checked_at": "2026-10-27T08:04:45+00:00",
     "topics": [
       "概率统计与信息论",
       "NLP与信息抽取"
@@ -3750,6 +3751,7 @@
       "最优传输"
     ],
     "source_summary": "本文介绍了交叉熵损失的一个新的“替代品”——基于最优传输思想的EMO，与以往的小提升不同，EMO在LLM的微调实验中取得了较为明显的提升。",
+    "metadata_checked_at": "2026-10-27T08:04:49+00:00",
     "topics": [
       "深度学习基础",
       "优化与训练",
@@ -3770,6 +3772,7 @@
       "attention"
     ],
     "source_summary": null,
+    "metadata_checked_at": "2026-10-27T08:04:52+00:00",
     "topics": [
       "大模型与Transformer"
     ],
@@ -3790,6 +3793,7 @@
       "RNN"
     ],
     "source_summary": "本文简单探讨了非线性RNN的并行计算问题——通过数学物理中的“摄动”思想，我们可以将非线性RNN转化为线性RNN的迭代，从而利用线性RNN的可并行性来实现非线性RNN的并行。",
+    "metadata_checked_at": "2026-10-27T08:04:56+00:00",
     "topics": [
       "大模型与Transformer",
       "几何与方程"
@@ -3830,6 +3834,7 @@
       "新词发现"
     ],
     "source_summary": "本文主要探讨了将Unigram分词模型的确定性分词改为随机性分词的策略。尽管已有名为“Subword Regularization”的方法可以实现这一目标，但其效率相对较低。为此，笔者提出了一种更高效的采样算法Viterbi Sampling，它仅需对确定性的Viterbi Decoding进行简单的修改，从而基本保持了原有的效率。实验证明，新的算法采样速度明显超越了Subword Regularization。相应的实现已经内置在BytePiece最新版中。",
+    "metadata_checked_at": "2026-10-27T08:05:00+00:00",
     "topics": [
       "概率统计与信息论",
       "NLP与信息抽取"
@@ -3850,6 +3855,7 @@
       "语言模型"
     ],
     "source_summary": "本文介绍了超大词表的LLM在做文本续写任务时可能出现的一个问题，并分享了参考的解决方案。",
+    "metadata_checked_at": "2026-10-27T08:05:03+00:00",
     "topics": [
       "大模型与Transformer",
       "概率统计与信息论"
@@ -3870,6 +3876,7 @@
       "新词发现"
     ],
     "source_summary": "本文介绍了笔者自行开发的Tokenizer——BytePiece，它是Byte-based的Unigram分词器，纯Python实现，更加易读和易拓展。由于采用了新的训练算法，所以压缩率通常比现有tokenizer更高，同时支持多进程加速训练。此外，它直接操作文本的utf-8 bytes，几乎不进行任何的预处理，所以更加纯粹和语言无关。",
+    "metadata_checked_at": "2026-10-27T08:05:07+00:00",
     "topics": [
       "NLP与信息抽取"
     ],
@@ -3889,6 +3896,7 @@
       "优化器"
     ],
     "source_summary": "本文介绍了Lion/Tiger优化器训练下的Embedding异常现象，并分析了背后的原因，最后给出了参考的解决方案。",
+    "metadata_checked_at": "2026-10-27T08:05:10+00:00",
     "topics": [
       "词向量与Embedding",
       "优化与训练",
@@ -3911,6 +3919,7 @@
       "rope"
     ],
     "source_summary": "本文提出了HWFA与ReRoPE的组合使用方式，小规模的实验结果显示，这种组合能够在不损失训练效果的同时，达到近乎最佳的长度外推效果，并且得益于HFWA的设计，还可以明显地降低推理成本，有效地缓解了ReRoPE原本的推理成本增加的缺点。",
+    "metadata_checked_at": "2026-10-27T08:05:13+00:00",
     "topics": [
       "大模型与Transformer"
     ],
@@ -3933,6 +3942,7 @@
       "rope"
     ],
     "source_summary": "本文提出了Leaky ReRoPE的“逆用”做法，通过在训练阶段使用更大步长的Leaky ReRoPE，使得推理阶段可以退回常规的RoPE，从而可以保持推理速度不变，实验结果显示这种做法还是有一定的竞争力的。",
+    "metadata_checked_at": "2026-10-27T08:05:17+00:00",
     "topics": [
       "大模型与Transformer"
     ],
@@ -3955,6 +3965,7 @@
       "rope"
     ],
     "source_summary": "在这篇文章中，笔者提出了ReRoPE (Rectified RoPE)，它同样是一种RoPE的后处理方案，实验结果显示它的不微调长度外推能力不仅明显超过了此前的NTK-aware Scaled RoPE，甚至还超过了之前专门设计的需要从零训练的HFWA。此外，不同于NTK-aware Scaled RoPE在超过某个长度后能力会大幅下降，ReRoPE似乎在任意长度下都表现良好。除了对比实验外，文章还给出了基于transformers-llama的参考实现，有兴趣的读者可以自行测试。",
+    "metadata_checked_at": "2026-10-27T08:05:21+00:00",
     "topics": [
       "大模型与Transformer"
     ],
@@ -3977,6 +3988,7 @@
       "rope"
     ],
     "source_summary": "在这篇文章中，我们重温了RoPE的$\\beta$进制视角，并尝试对NTK-aware Scaled RoPE进行推广，在混合进制的启发下，我们得到了一个更优的不微调扩展Context长度的策略，最后通过实验表明了它的有效性。",
+    "metadata_checked_at": "2026-10-27T08:05:24+00:00",
     "topics": [
       "大模型与Transformer"
     ],
@@ -3996,6 +4008,7 @@
       "初始化"
     ],
     "source_summary": "本文重温了语言模型输出端共享Embedding权重的操作，推导了直接重用Embedding来投影输出可能会导致损失过大的可能性，并探讨了一些解决办法。",
+    "metadata_checked_at": "2026-10-27T08:05:28+00:00",
     "topics": [
       "词向量与Embedding",
       "大模型与Transformer",
@@ -4016,6 +4029,7 @@
       "生成模型"
     ],
     "source_summary": "本文探讨了当各种生成模型大规模“肆虐”互联网时可能出现的后果，在生成模型反复用自己生成的数据进行更新迭代时，可能导致信息严重同质化、丧失多样性的问题，类似于曾经因“牛吃牛”而出现的“疯牛病”。",
+    "metadata_checked_at": "2026-10-27T08:05:31+00:00",
     "topics": [
       "生成模型"
     ],
@@ -4037,6 +4051,7 @@
       "rope"
     ],
     "source_summary": null,
+    "metadata_checked_at": "2026-10-27T08:05:35+00:00",
     "topics": [
       "大模型与Transformer"
     ],
@@ -4058,6 +4073,7 @@
       "扩散"
     ],
     "source_summary": "在这篇文章中，笔者尝试从ReFlow出发推导了WGAN-GP与扩散ODE之间的联系，这个角度相对来说更加简单直观，并且避免了Wasserstein梯度流等相对复杂的概念。",
+    "metadata_checked_at": "2026-10-27T08:05:38+00:00",
     "topics": [
       "生成模型"
     ],
@@ -4078,6 +4094,7 @@
       "扩散"
     ],
     "source_summary": "本文介绍了MonoFlow，它展示了我们可以将GAN理解为在另一个时间维度上的扩散ODE，从而建立了一种基于扩散模型理解GAN的新视角。特别地，这是一种比GAN的常规推导更加贴近训练过程的视角。",
+    "metadata_checked_at": "2026-10-27T08:05:42+00:00",
     "topics": [
       "生成模型"
     ],
@@ -4099,6 +4116,7 @@
       "梯度"
     ],
     "source_summary": "本文介绍了梯度下降求最小值过程中的“梯度流”概念，其中包括向量空间的梯度流到概率空间的Wasserstein梯度流的拓展，以及它们与连续性方程、Fokker-Planck方程和ODE/SDE采样之间的联系。",
+    "metadata_checked_at": "2026-10-27T08:05:46+00:00",
     "topics": [
       "优化与训练"
     ],
@@ -4119,6 +4137,7 @@
       "贝叶斯"
     ],
     "source_summary": null,
+    "metadata_checked_at": "2026-10-27T08:05:49+00:00",
     "topics": [
       "大模型与Transformer",
       "概率统计与信息论"
@@ -4140,6 +4159,7 @@
       "贝叶斯"
     ],
     "source_summary": "本文介绍了Context长度扩展方案NBCE的一些后续更新及分析，并进一步讨论了NBCE的适用场景。",
+    "metadata_checked_at": "2026-10-27T08:05:53+00:00",
     "topics": [
       "大模型与Transformer",
       "概率统计与信息论"
@@ -4161,6 +4181,7 @@
       "贝叶斯"
     ],
     "source_summary": "本文提出了NBCE（Naive Bayes-based Context Extension），它基于朴素贝叶斯思想来扩展LLM的Context处理长度，有着即插即用、模型无关、无须微调、线性效率、实现简单等优点，并且看上去效果还不错，欢迎大家测试。",
+    "metadata_checked_at": "2026-10-27T08:05:56+00:00",
     "topics": [
       "大模型与Transformer",
       "概率统计与信息论"
@@ -4223,6 +4244,7 @@
       "稀疏"
     ],
     "source_summary": "本文系统整理了一下关于稀疏性的度量问题，并且讨论了它与L1、L2、熵等概念的联系。",
+    "metadata_checked_at": "2026-10-27T08:06:00+00:00",
     "topics": [
       "概率统计与信息论",
       "数学工具"
@@ -4243,6 +4265,7 @@
       "attention"
     ],
     "source_summary": null,
+    "metadata_checked_at": "2026-10-27T08:06:03+00:00",
     "topics": [
       "大模型与Transformer",
       "概率统计与信息论"
@@ -4264,6 +4287,7 @@
       "lora"
     ],
     "source_summary": "本文介绍了从梯度角度来理解LoRA，除了基本的介绍外，还包含了笔者的一些猜测和推广，供读者参考。",
+    "metadata_checked_at": "2026-10-27T08:06:07+00:00",
     "topics": [
       "大模型与Transformer",
       "优化与训练"
@@ -4283,6 +4307,7 @@
       "attention"
     ],
     "source_summary": "本文构建了JL引理与熵不变性Attention之间的一个简单联系。",
+    "metadata_checked_at": "2026-10-27T08:06:10+00:00",
     "topics": [
       "大模型与Transformer",
       "概率统计与信息论"

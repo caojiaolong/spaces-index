@@ -6,7 +6,16 @@
     "source_url": "https://spaces.ac.cn/archives/9728",
     "date": "2023-08-14",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "信息时代",
+    "source_tags": [
+      "attention",
+      "位置编码",
+      "泛化",
+      "外推",
+      "rope"
+    ],
+    "source_summary": "本文提出了Leaky ReRoPE的“逆用”做法，通过在训练阶段使用更大步长的Leaky ReRoPE，使得推理阶段可以退回常规的RoPE，从而可以保持推理速度不变，实验结果显示这种做法还是有一定的竞争力的。"
   },
   "validation": {
     "passed": true,
@@ -30,8 +39,8 @@
     "converter_version": 1,
     "markdown_sha256": "8480bc77bc93db73cf163f641b2237dd79d2ddbff57c6cdc1da20abfdcfe9b4c"
   },
-  "fetched_at": "2026-09-14T12:52:47+00:00",
+  "fetched_at": "2026-10-27T08:05:17+00:00",
   "source_snapshot_sha256": "ac1a3a98c2799946c6c24ea3db3626c3603bde2db4cc2c6f9f7002723f0568c4",
   "images": {},
-  "local_only": true
+  "publication_policy": "config/mirror.json"
 }

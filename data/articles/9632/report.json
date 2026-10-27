@@ -6,7 +6,15 @@
     "source_url": "https://spaces.ac.cn/archives/9632",
     "date": "2023-05-31",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "信息时代",
+    "source_tags": [
+      "语言模型",
+      "外推",
+      "LLM",
+      "贝叶斯"
+    ],
+    "source_summary": "本文介绍了Context长度扩展方案NBCE的一些后续更新及分析，并进一步讨论了NBCE的适用场景。"
   },
   "validation": {
     "passed": true,
@@ -30,8 +38,8 @@
     "converter_version": 1,
     "markdown_sha256": "2251faddb487c8e98eaa69e9155c5d30e3e8132a2a5f701e1f275983251a5d5d"
   },
-  "fetched_at": "2026-09-14T12:53:53+00:00",
+  "fetched_at": "2026-10-27T08:05:53+00:00",
   "source_snapshot_sha256": "8ece1203d9d7044e944e2a73a61b755e2a4db129c70f0c795fc49b23955e07fe",
   "images": {},
-  "local_only": true
+  "publication_policy": "config/mirror.json"
 }

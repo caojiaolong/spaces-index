@@ -1163,28 +1163,28 @@
   },
   "9811": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:18:45+00:00",
+    "checked_at": "2026-10-27T08:04:45+00:00",
     "title": "随机分词再探：从Viterbi Sampling到完美采样算法",
     "markdown_sha256": "a42eb2fa4ec483236ab6866249da70166c2f89673aff1b428df2703884040a6f",
     "converter_version": 1
   },
   "9797": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:18:45+00:00",
+    "checked_at": "2026-10-27T08:04:49+00:00",
     "title": "EMO：基于最优传输思想设计的分类损失函数",
     "markdown_sha256": "67d6a9ee31e99ad75a48a247c727beb2b42f8de6286be31defc01c8e7d689635",
     "converter_version": 1
   },
   "9787": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:18:45+00:00",
+    "checked_at": "2026-10-27T08:04:52+00:00",
     "title": "预训练一下，Transformer的长序列成绩还能涨不少！",
     "markdown_sha256": "8b6f8b0d36ffaafdaaf99726d51905fca8a14b5b1e8bcbf335df00a321bdebda",
     "converter_version": 1
   },
   "9783": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:18:45+00:00",
+    "checked_at": "2026-10-27T08:04:56+00:00",
     "title": "脑洞大开：非线性RNN居然也可以并行计算？",
     "markdown_sha256": "90f81e6afb771ea9a7c4355a3064936c83bee61d5dea42265dc38c4c5ab3951a",
     "converter_version": 1
@@ -1198,119 +1198,119 @@
   },
   "9768": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:18:46+00:00",
+    "checked_at": "2026-10-27T08:05:00+00:00",
     "title": "随机分词浅探：从Viterbi Decoding到Viterbi Sampling",
     "markdown_sha256": "462de5087a661809e137b2a3f0d5e4e3bcd4685faba11aebeaf877e3bf0e670a",
     "converter_version": 1
   },
   "9762": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:18:46+00:00",
+    "checked_at": "2026-10-27T08:05:03+00:00",
     "title": "大词表语言模型在续写任务上的一个问题及对策",
     "markdown_sha256": "0c498cb48d93231db27337fc4bc8ef122595810ffd0d35784020130c95de2fba",
     "converter_version": 1
   },
   "9752": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:18:46+00:00",
+    "checked_at": "2026-10-27T08:05:07+00:00",
     "title": "BytePiece：更纯粹、更高压缩率的Tokenizer",
     "markdown_sha256": "2edcd75ad6beec8d1abf0393957e55faa4f78fc3e24657d87cb86d552b17727b",
     "converter_version": 1
   },
   "9736": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:18:46+00:00",
+    "checked_at": "2026-10-27T08:05:10+00:00",
     "title": "Lion/Tiger优化器训练下的Embedding异常和对策",
     "markdown_sha256": "9baed2c4bbada8a6c5cc157fa0617958f6629df5b8e4ab4fd3eb2f47d68880a5",
     "converter_version": 1
   },
   "9731": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:18:46+00:00",
+    "checked_at": "2026-10-27T08:05:13+00:00",
     "title": "Transformer升级之路：14、当HWFA遇见ReRoPE",
     "markdown_sha256": "fae2e66d8d7ceab4abd1bb6dc113e2d7b96a608a7126401a7ee94372d9057999",
     "converter_version": 1
   },
   "9728": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:18:46+00:00",
+    "checked_at": "2026-10-27T08:05:17+00:00",
     "title": "Transformer升级之路：13、逆用Leaky ReRoPE",
     "markdown_sha256": "8480bc77bc93db73cf163f641b2237dd79d2ddbff57c6cdc1da20abfdcfe9b4c",
     "converter_version": 1
   },
   "9708": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:18:47+00:00",
+    "checked_at": "2026-10-27T08:05:21+00:00",
     "title": "Transformer升级之路：12、无限外推的ReRoPE？",
     "markdown_sha256": "98162e45dfaa035b9f38197bf1696d6f8dace10767a4c1074de001381cda2319",
     "converter_version": 1
   },
   "9706": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:18:47+00:00",
+    "checked_at": "2026-10-27T08:05:24+00:00",
     "title": "Transformer升级之路：11、将β进制位置进行到底",
     "markdown_sha256": "a7fe846e1d92278c5bc625b2b2f786b0e3109f242c12ea0e1b20904fcf71d92c",
     "converter_version": 1
   },
   "9698": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:18:47+00:00",
+    "checked_at": "2026-10-27T08:05:28+00:00",
     "title": "语言模型输出端共享Embedding的重新探索",
     "markdown_sha256": "f9cf71de0c5077ae97589a7ea1834031bbc22acd0b94dbefac5b31cf408854e3",
     "converter_version": 1
   },
   "9687": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:18:47+00:00",
+    "checked_at": "2026-10-27T08:05:31+00:00",
     "title": "当生成模型肆虐：互联网将有“疯牛病”之忧？",
     "markdown_sha256": "2898fde02881aa8c17578061b602a27fe553983448f1f9e8e9825281f5508128",
     "converter_version": 1
   },
   "9675": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:18:47+00:00",
+    "checked_at": "2026-10-27T08:05:35+00:00",
     "title": "Transformer升级之路：10、RoPE是一种β进制编码",
     "markdown_sha256": "1b12edf77c0f690d1ca5e6b6d58f3b0e79babcba41d03b7e7d33ad7e3dfd2712",
     "converter_version": 1
   },
   "9668": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:18:47+00:00",
+    "checked_at": "2026-10-27T08:05:39+00:00",
     "title": "生成扩散模型漫谈（二十）：从ReFlow到WGAN-GP",
     "markdown_sha256": "7fdc1db5889da6534b675591d33dfc6a60bce960ea0d8449d01c440dd2cbe5a7",
     "converter_version": 1
   },
   "9662": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:18:48+00:00",
+    "checked_at": "2026-10-27T08:05:42+00:00",
     "title": "生成扩散模型漫谈（十九）：作为扩散ODE的GAN",
     "markdown_sha256": "f482777958e621a5c85ba7faad5c5821ee990b9f9a9e705fbd04e92bc2a988fa",
     "converter_version": 1
   },
   "9660": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:18:48+00:00",
+    "checked_at": "2026-10-27T08:05:46+00:00",
     "title": "梯度流：探索通向最小值之路",
     "markdown_sha256": "651a56e48ce12da3c8c50098a84bdcb611cd57e683319c718991701ea301d1ff",
     "converter_version": 1
   },
   "9648": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:18:48+00:00",
+    "checked_at": "2026-10-27T08:05:49+00:00",
     "title": "Naive Bayes is all you need ?",
     "markdown_sha256": "7f73019934e0fff530c8432055fa1670a8640a70166207382f32db34b2cb5b12",
     "converter_version": 1
   },
   "9632": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:18:48+00:00",
+    "checked_at": "2026-10-27T08:05:53+00:00",
     "title": "关于NBCE方法的一些补充说明和分析",
     "markdown_sha256": "2251faddb487c8e98eaa69e9155c5d30e3e8132a2a5f701e1f275983251a5d5d",
     "converter_version": 1
   },
   "9617": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:18:48+00:00",
+    "checked_at": "2026-10-27T08:05:56+00:00",
     "title": "NBCE：使用朴素贝叶斯扩展LLM的Context处理长度",
     "markdown_sha256": "c61c3abf1d0a3319862066e3c7057c12216548c489412e7922dd748b2c67fbea",
     "converter_version": 1
@@ -1331,28 +1331,28 @@
   },
   "9595": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:18:49+00:00",
+    "checked_at": "2026-10-27T08:06:00+00:00",
     "title": "如何度量数据的稀疏程度？",
     "markdown_sha256": "654831d5fb88c13e0ab09e351125f8af6012cf876af0cb60e89d746ce3ebcc6c",
     "converter_version": 1
   },
   "9593": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:18:49+00:00",
+    "checked_at": "2026-10-27T08:06:03+00:00",
     "title": "注意力和Softmax的两点有趣发现：鲁棒性和信息量",
     "markdown_sha256": "8dba7f7e655d994cb371f50d4304c8133366a9a206505f708fc8740ae8a7f283",
     "converter_version": 1
   },
   "9590": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:18:49+00:00",
+    "checked_at": "2026-10-27T08:06:07+00:00",
     "title": "梯度视角下的LoRA：简介、分析、猜测及推广",
     "markdown_sha256": "9d77ffaa70a09d2937ed730a9621904f987146cbc634fd03bf08f7f9c2db4722",
     "converter_version": 1
   },
   "9588": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:18:49+00:00",
+    "checked_at": "2026-10-27T08:06:10+00:00",
     "title": "从JL引理看熵不变性Attention",
     "markdown_sha256": "bdc282c161a1d9aa233f7d95a74b76b74c9240daacbc413a3ddd6891a14036ef",
     "converter_version": 1
@@ -8464,7 +8464,7 @@
   },
   "132": {
     "status": "conversion_failed",
-    "checked_at": "2026-10-26T07:58:36+00:00",
+    "checked_at": "2026-10-27T08:06:10+00:00",
     "title": "一道从小学到高中都可能考到的题目",
     "error": "Unreviewed legacy element: a<b，则有<br",
     "converter_version": 1,

@@ -6,7 +6,12 @@
     "source_url": "https://spaces.ac.cn/archives/9687",
     "date": "2023-07-14",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "信息时代",
+    "source_tags": [
+      "生成模型"
+    ],
+    "source_summary": "本文探讨了当各种生成模型大规模“肆虐”互联网时可能出现的后果，在生成模型反复用自己生成的数据进行更新迭代时，可能导致信息严重同质化、丧失多样性的问题，类似于曾经因“牛吃牛”而出现的“疯牛病”。"
   },
   "validation": {
     "passed": true,
@@ -30,8 +35,8 @@
     "converter_version": 1,
     "markdown_sha256": "2898fde02881aa8c17578061b602a27fe553983448f1f9e8e9825281f5508128"
   },
-  "fetched_at": "2026-09-14T12:53:13+00:00",
+  "fetched_at": "2026-10-27T08:05:31+00:00",
   "source_snapshot_sha256": "f10909d0d1fd8e2c16f4ec077f88ff3fcf4542aaab483660b6c51ca85730ad6f",
   "images": {},
-  "local_only": true
+  "publication_policy": "config/mirror.json"
 }
