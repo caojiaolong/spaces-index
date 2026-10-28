@@ -6,9 +6,18 @@
     "source_url": "https://spaces.ac.cn/archives/9577",
     "date": "2023-04-03",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "信息时代",
+    "source_tags": [
+      "语言模型",
+      "attention",
+      "位置编码",
+      "外推",
+      "rope"
+    ],
+    "source_summary": "本文分享了笔者发现的一个“万万没想到”的有趣结论：Bias项能增强RoPE模型的长度外推性！看上去毫无存在感的Bias项，居然能跟Transformer的长度外推性联系在一起，让人不得不感叹细节的重要性——细枝末节有时候也能发挥关键作用。"
   },
-  "fetched_at": "2026-09-14T12:54:45+00:00",
+  "fetched_at": "2026-10-28T08:45:48+00:00",
   "source_snapshot_sha256": "39ca8b98b7b6267b288f631dc18a9c275db2eba4732a607ee366fa0253e53d96",
   "validators": {
     "etag": null,

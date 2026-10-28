@@ -6,9 +6,17 @@
     "source_url": "https://spaces.ac.cn/archives/9379",
     "date": "2022-12-22",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "信息时代",
+    "source_tags": [
+      "微分方程",
+      "生成模型",
+      "扩散",
+      "格林函数"
+    ],
+    "source_summary": "接着上一篇文章的内容，本文再次讨论了ODE式扩散模型的构建思路。这一次我们从几何直观出发，通过构造特定的向量场保证结果满足初值分布条件，然后通过求解微分方程保证终值分布条件，得到一个同时满足初值和终值条件的格林函数。特别地，该方法允许我们使用任意简单分布作为先验分布，摆脱以往对高斯分布的依赖来构建扩散模型。"
   },
-  "fetched_at": "2026-09-14T12:56:19+00:00",
+  "fetched_at": "2026-10-28T08:46:43+00:00",
   "source_snapshot_sha256": "ac67deb2167e24f83dd8b5a694af64a1917c0303cea3633431b6330cc569b97c",
   "validators": {
     "etag": null,

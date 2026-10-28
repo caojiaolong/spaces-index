@@ -6,9 +6,16 @@
     "source_url": "https://spaces.ac.cn/archives/9368",
     "date": "2022-12-07",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "信息时代",
+    "source_tags": [
+      "黎曼几何",
+      "语义",
+      "语义相似度"
+    ],
+    "source_summary": "本文分享了一个“测地线距离”的概念，指出我们平时训练出来的相似度可能只适合于局部，在较远距离下换为测地线距离可能会在某些语义相似度问题上有帮助。"
   },
-  "fetched_at": "2026-09-14T12:56:42+00:00",
+  "fetched_at": "2026-10-28T08:46:50+00:00",
   "source_snapshot_sha256": "dca5d0c1513318e427c8a33c5334ed1cd60a72c941404b9c0d7a99c29ed30eeb",
   "validators": {
     "etag": null,

@@ -6,9 +6,16 @@
     "source_url": "https://spaces.ac.cn/archives/9603",
     "date": "2023-05-12",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "信息时代",
+    "source_tags": [
+      "attention",
+      "泛化",
+      "外推"
+    ],
+    "source_summary": "本文介绍笔者构思的一种长度外推方案，它通过Window Attention与Full Attention的结合，在形成长度外推能力的同时，保留了全局依赖能力，应该是目前唯一一种可以用在生成模型上、具备全局依赖能力的长度外推方法。"
   },
-  "fetched_at": "2026-09-14T12:54:11+00:00",
+  "fetched_at": "2026-10-28T08:45:45+00:00",
   "source_snapshot_sha256": "416f9eececb988e256cac102e06c6d9606a531ef1b97b1e81413b22b5bb74ed8",
   "validators": {
     "etag": null,

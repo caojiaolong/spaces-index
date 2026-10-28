@@ -1,0 +1,24 @@
+{
+  "metadata": {
+    "id": "11985",
+    "title": "从参数对称性到有效学习率",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/11985",
+    "date": "2026-10-27",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "信息时代",
+    "source_tags": [
+      "对称",
+      "学习率",
+      "优化器"
+    ],
+    "source_summary": "本文围绕着参数对称性和有效学习率进行讨论，重新审视了有效学习率常见的论证链，引入了更严谨的联合对称性来修正原有的推导，最后补充了一个新的基于协变性的理解视角。"
+  },
+  "fetched_at": "2026-10-28T08:45:38+00:00",
+  "source_snapshot_sha256": "e42fb6464772d517bee1c74d7c8a8f94cab48365307c8f2ea07444f823ffd9ea",
+  "validators": {
+    "etag": null,
+    "last_modified": null
+  }
+}

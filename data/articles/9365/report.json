@@ -6,7 +6,14 @@
     "source_url": "https://spaces.ac.cn/archives/9365",
     "date": "2022-12-05",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "生活/情感",
+    "source_tags": [
+      "生活",
+      "智能家居",
+      "米家"
+    ],
+    "source_summary": "本文探讨了小爱同学控制极米投影仪的一种“近乎完美”的方案。"
   },
   "validation": {
     "passed": true,
@@ -30,8 +37,8 @@
     "converter_version": 1,
     "markdown_sha256": "b1666e02e52706b3cf2a2928eb7baa1d9cc12d26633b9c66c5ebab1a4fa8379a"
   },
-  "fetched_at": "2026-09-14T12:56:48+00:00",
+  "fetched_at": "2026-10-28T08:46:53+00:00",
   "source_snapshot_sha256": "82a0443ce16858596841d418313c3e33ba0552f3057cd41fb3f257f857ebc423",
   "images": {},
-  "local_only": true
+  "publication_policy": "config/mirror.json"
 }

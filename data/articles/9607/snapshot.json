@@ -6,9 +6,17 @@
     "source_url": "https://spaces.ac.cn/archives/9607",
     "date": "2023-05-18",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "数学研究",
+    "source_tags": [
+      "模型",
+      "分析",
+      "量子",
+      "尺度定律"
+    ],
+    "source_summary": "本文介绍了从量子化假设来推导模型的尺度定律（Scaling Law）的过程，具体来说就是模型的损失函数与参数量、数据量、训练量的渐近关系，并简单分析了它与涌现现象的可能联系。"
   },
-  "fetched_at": "2026-09-14T12:54:05+00:00",
+  "fetched_at": "2026-10-28T08:45:41+00:00",
   "source_snapshot_sha256": "d7272e802423f51062bb3d064ea820b10cd409878bea0b2a6f6bb5a3abbd6d96",
   "validators": {
     "etag": null,

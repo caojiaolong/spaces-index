@@ -6,7 +6,12 @@
     "source_url": "https://spaces.ac.cn/archives/9405",
     "date": "2023-01-04",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "生活/情感",
+    "source_tags": [
+      "智能家居"
+    ],
+    "source_summary": "本文介绍了实现热水器零冷水的原理，以及相应的几种DIY方案的分析和对比，供有需要的读者参考。 总的来说，零冷水的目的是提升生活品质，不是为了省钱。实现上，有无回水管都可以实现零冷水，个人觉得在最后的“温控常闭电磁阀”方案中，无回水管的体验也不逊色于有回水管的水路，因此个人认为零冷水可以放心入（如果是买现成的零冷水热水器，那么至少单向阀要换成温控单向阀）。最后，有用户提到的更费燃气/电的问题，零冷水确实会比无零冷水更多费一些燃气/电，但如果多出太多，通常是使用不当导致，比如24小时都开启零冷水，那自然是费气费电的。这就好比你人不在家但又24小时都开着空调，到头来说空调太费电又没用，天底下没有这样的道理吧？"
   },
   "validation": {
     "passed": true,
@@ -30,8 +35,8 @@
     "converter_version": 1,
     "markdown_sha256": "2d94a6530d137f74f31f8e71b476e2655c43f2850778e32d669d08a1b0bd4b7b"
   },
-  "fetched_at": "2026-09-14T12:56:06+00:00",
+  "fetched_at": "2026-10-28T08:46:36+00:00",
   "source_snapshot_sha256": "704ffa59e5b67a352b5a8d6a6dbcfa007ba460ecf539fd5f296c659374746a63",
   "images": {},
-  "local_only": true
+  "publication_policy": "config/mirror.json"
 }

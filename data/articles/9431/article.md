@@ -88,7 +88,7 @@ KERPLE出自论文[《KERPLE: Kernelized Relative Positional Embedding for Lengt
 
 Sandwich也是KERPLE的作者们搞的，出自[《Receptive Field Alignment Enables Transformer Length Extrapolation》](<https://papers.cool/arxiv/2212.10356>)，上个月才放到Arxiv上的，它将式$\eqref{eq:alibi}$替换为
 \begin{equation}\boldsymbol{q}_m^{\top}\boldsymbol{k}_n + \lambda\boldsymbol{p}_m^{\top}\boldsymbol{p}_n\label{eq:sandwich}\end{equation}
-其中$\boldsymbol{p}_m,\boldsymbol{p}_n$是[Sinusoidal](<https://spaces.ac.cn/archives/8231>)位置编码，$\lambda > 0$是超参数。从[《Transformer升级之路：1、Sinusoidal位置编码追根溯源》](<https://spaces.ac.cn/archives/8231>)我们知道，$\boldsymbol{p}_m^{\top}\boldsymbol{p}_n$是$m-n$的标量函数，并且<u>平均而言</u>是$|m-n|$的单调递增函数，所以它的作用也跟$-\lambda|m-n|$相似。之所以强调“平均而言”，是因为$\boldsymbol{p}_m^{\top}\boldsymbol{p}_n$整体并非严格的单调，而是振荡下降，如图所示：
+其中$\boldsymbol{p}_m,\boldsymbol{p}_n$是[Sinusoidal](<https://spaces.ac.cn/archives/8231>)位置编码，$\lambda > 0$是超参数。从[《Transformer升级之路：1、Sinusoidal位置编码追根溯源》](<https://spaces.ac.cn/archives/8231>)我们知道，$\boldsymbol{p}_m^{\top}\boldsymbol{p}_n$是$m-n$的标量函数，并且<u>平均而言</u>是$|m-n|$的单调递减函数，所以它的作用也跟$-\lambda|m-n|$相似。之所以强调“平均而言”，是因为$\boldsymbol{p}_m^{\top}\boldsymbol{p}_n$整体并非严格的单调，而是振荡下降，如图所示：
 
 [![dot(p_m, p_n) 的函数图像（减去了d/2）](<https://spaces.ac.cn/usr/uploads/2023/01/3615292479.png>)](<https://spaces.ac.cn/usr/uploads/2023/01/3615292479.png>)
 

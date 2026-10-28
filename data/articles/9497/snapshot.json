@@ -6,9 +6,17 @@
     "source_url": "https://spaces.ac.cn/archives/9497",
     "date": "2023-02-23",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "信息时代",
+    "source_tags": [
+      "概率",
+      "微分方程",
+      "生成模型",
+      "扩散"
+    ],
+    "source_summary": "本文介绍了Rectified Flow一文中提出的构建ODE式扩散模型的一种极其简单直观的思路，并给出了自己的证明过程。"
   },
-  "fetched_at": "2026-09-14T12:55:29+00:00",
+  "fetched_at": "2026-10-28T08:46:13+00:00",
   "source_snapshot_sha256": "0b55144ff42a9fad462281371e2f8c077378c60ed20e1d89f3bd85036ad5d65d",
   "validators": {
     "etag": null,

@@ -6,7 +6,15 @@
     "source_url": "https://spaces.ac.cn/archives/9529",
     "date": "2023-03-17",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "信息时代",
+    "source_tags": [
+      "分析",
+      "语言模型",
+      "文本生成",
+      "attention"
+    ],
+    "source_summary": "所以，笔者作出的回答是：LLM之所以主要都用Decoder-only架构，除了训练效率和工程实现上的优势外，在理论上是因为Encoder的双向注意力会存在低秩问题，这可能会削弱模型表达能力，就生成任务而言，引入双向注意力并无实质好处。而Encoder-Decoder架构之所以能够在某些场景下表现更好，大概只是因为它多了一倍参数。所以，在同等参数量、同等推理成本下，Decoder-only架构就是最优选择了。"
   },
   "validation": {
     "passed": true,
@@ -30,8 +38,8 @@
     "converter_version": 1,
     "markdown_sha256": "92cc7ff056420664e868bb854134fd17b6837b8f10773adbee857f5dd703056d"
   },
-  "fetched_at": "2026-09-14T12:55:05+00:00",
+  "fetched_at": "2026-10-28T08:45:59+00:00",
   "source_snapshot_sha256": "5b248194787a95823e53cb109f6ba3bd97b3a2cbcfe4cbb2d0b4061cefb58346",
   "images": {},
-  "local_only": true
+  "publication_policy": "config/mirror.json"
 }

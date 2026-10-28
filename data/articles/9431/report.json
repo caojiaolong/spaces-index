@@ -6,7 +6,15 @@
     "source_url": "https://spaces.ac.cn/archives/9431",
     "date": "2023-01-12",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "信息时代",
+    "source_tags": [
+      "语言模型",
+      "attention",
+      "位置编码",
+      "外推"
+    ],
+    "source_summary": "本文总结了增强Transformer的长度外推能力的相关工作，其中包含了一个简单但强大的基线方案，以及若干篇聚焦于长度外推性的相关工作，从中我们可以发现，这些工作本质上都是基线方案——局部注意力的变体，局部注意力是长度外推的关键环节之一。"
   },
   "validation": {
     "passed": true,
@@ -23,15 +31,15 @@
     "image_count": 5,
     "heading_count": 8,
     "code_block_count": 0,
-    "source_text_sha256": "e7220f9dc3fd54ec07faed3f2d3f654f30dadd3d7ea710a6abd299282442ba5e",
-    "output_text_sha256": "e7220f9dc3fd54ec07faed3f2d3f654f30dadd3d7ea710a6abd299282442ba5e",
+    "source_text_sha256": "3cfd40e9a172027eb8e4bdda6a1e00c81728e1f4edbca82c367d45c4cc0d626a",
+    "output_text_sha256": "3cfd40e9a172027eb8e4bdda6a1e00c81728e1f4edbca82c367d45c4cc0d626a",
     "latex_sha256": "28fb58171f000c4ce82d7ebcfc7a48154e53265820be65bcbaa6c8fc473dabd2",
-    "body_sha256": "80e0b66fb0011b1d00c8e4d3f3caa199278132d8488f6b957c0944bfb1150b1b",
+    "body_sha256": "4fbcb74ee4fe5b5549bf888535bb982a0d4af92c699125855a3eeded6031bcc7",
     "converter_version": 1,
-    "markdown_sha256": "fcf4d7a8ad62aaf14d68853ed9912ef82e2d7d47f5bb70569eb0d9c55067f641"
+    "markdown_sha256": "8ec41b5a4c1a99f7706099aca35fdd721b6504430270fdf8263cd2a71e197128"
   },
-  "fetched_at": "2026-09-14T12:56:00+00:00",
-  "source_snapshot_sha256": "0f5307c74606d413e64ca8023da16838c453c58c2203afa990077233f2f77fa2",
+  "fetched_at": "2026-10-28T08:46:32+00:00",
+  "source_snapshot_sha256": "8f761e8533af895995908e67dfdcaeee03617af5a032cae7d7834527b41255ae",
   "images": {},
-  "local_only": true
+  "publication_policy": "config/mirror.json"
 }

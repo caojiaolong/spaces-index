@@ -6,7 +6,15 @@
     "source_url": "https://spaces.ac.cn/archives/9554",
     "date": "2023-03-28",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "信息时代",
+    "source_tags": [
+      "语言模型",
+      "RNN",
+      "生成模型",
+      "attention"
+    ],
+    "source_summary": null
   },
   "validation": {
     "passed": true,
@@ -30,8 +38,8 @@
     "converter_version": 1,
     "markdown_sha256": "51ecaf84828c6722a5f1252448ffc0d690220746d9f5723bfee495f1bb273ff3"
   },
-  "fetched_at": "2026-09-14T12:54:51+00:00",
+  "fetched_at": "2026-10-28T08:45:52+00:00",
   "source_snapshot_sha256": "2b8acea7dfb1b942a273910b43e246adc4a2f401a36dcbe532f3e79ffbcf1e63",
   "images": {},
-  "local_only": true
+  "publication_policy": "config/mirror.json"
 }

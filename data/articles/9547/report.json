@@ -6,7 +6,15 @@
     "source_url": "https://spaces.ac.cn/archives/9547",
     "date": "2023-03-20",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "信息时代",
+    "source_tags": [
+      "问答",
+      "语言模型",
+      "文本生成",
+      "attention"
+    ],
+    "source_summary": "本文对上一篇文章部分读者提出的一些疑问做了回答。"
   },
   "validation": {
     "passed": true,
@@ -30,8 +38,8 @@
     "converter_version": 1,
     "markdown_sha256": "bb037ee6bc70fe398e1065757d65396d79b7608e05fa7fda9b052803fc8c656d"
   },
-  "fetched_at": "2026-09-14T12:54:58+00:00",
+  "fetched_at": "2026-10-28T08:45:55+00:00",
   "source_snapshot_sha256": "42dc26b8ae59aef4a56e9926e40e1b745c73d6f885a3ac903ed762ddd282f535",
   "images": {},
-  "local_only": true
+  "publication_policy": "config/mirror.json"
 }

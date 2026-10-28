@@ -6,9 +6,17 @@
     "source_url": "https://spaces.ac.cn/archives/9461",
     "date": "2023-02-11",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "数学研究",
+    "source_tags": [
+      "概率",
+      "微分方程",
+      "随机",
+      "扩散"
+    ],
+    "source_summary": "本文介绍了用于推导某些概率方程的测试函数法，主要内容包括分部积分法的高维推广，以及ODE的连续性方程和SDE的Fokker-Planck方程的推导过程。"
   },
-  "fetched_at": "2026-09-14T12:55:48+00:00",
+  "fetched_at": "2026-10-28T08:46:25+00:00",
   "source_snapshot_sha256": "c316378ba5392ede89b9718460d9251bf0aaf4ed900df8899dba7984386993c5",
   "validators": {
     "etag": null,

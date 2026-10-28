@@ -6,7 +6,14 @@
     "source_url": "https://spaces.ac.cn/archives/9341",
     "date": "2022-11-09",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "信息时代",
+    "source_tags": [
+      "语义",
+      "语义相似度",
+      "对比学习"
+    ],
+    "source_summary": "本文主要思考和实验了CoSENT在交互式相似度模型中的可行性，最终结论是“可行但效果没什么提升”。"
   },
   "validation": {
     "passed": true,
@@ -30,8 +37,8 @@
     "converter_version": 1,
     "markdown_sha256": "7b79f197da80f48e1b65086ffc56aeb6f02bb8a96596a07d9409fc37cd3772bd"
   },
-  "fetched_at": "2026-09-14T12:57:06+00:00",
+  "fetched_at": "2026-10-28T08:47:04+00:00",
   "source_snapshot_sha256": "34562bcaef94f815f840ce0199c86934231faa6e691f224a3c325a5f7d2f2c8c",
   "images": {},
-  "local_only": true
+  "publication_policy": "config/mirror.json"
 }

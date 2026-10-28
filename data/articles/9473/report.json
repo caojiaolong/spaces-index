@@ -6,7 +6,14 @@
     "source_url": "https://spaces.ac.cn/archives/9473",
     "date": "2023-02-16",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "信息时代",
+    "source_tags": [
+      "分析",
+      "优化",
+      "优化器"
+    ],
+    "source_summary": "本文介绍了Google新提出的优化器Lion，它通过大量算力搜索并结合人工干预得出，相比主流的AdamW，有着速度更快且更省内存的特点，并且大量实验结果显示，它在多数任务上都有着不逊色于甚至优于AdamW的表现。"
   },
   "validation": {
     "passed": true,
@@ -30,8 +37,8 @@
     "converter_version": 1,
     "markdown_sha256": "085d8f723e1f60c3e2db6965dae4ff5655595027c7fbeed8eaba7d9030cc1824"
   },
-  "fetched_at": "2026-09-14T12:55:35+00:00",
+  "fetched_at": "2026-10-28T08:46:17+00:00",
   "source_snapshot_sha256": "901efd412802c30f22f2b98d09cd1f0ce92283ea5bd6d8ed3ec10545d80b21c9",
   "images": {},
-  "local_only": true
+  "publication_policy": "config/mirror.json"
 }

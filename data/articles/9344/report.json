@@ -6,7 +6,15 @@
     "source_url": "https://spaces.ac.cn/archives/9344",
     "date": "2022-11-22",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "数学研究",
+    "source_tags": [
+      "分析",
+      "优化",
+      "渐近",
+      "优化器"
+    ],
+    "source_summary": "本文借鉴了Amos优化器的思路，推导了一些关于学习率和权重衰减率的结果$\\eqref{eq:alpha-rho-3}$、$\\eqref{eq:alpha-rho-4}$，这些结果可以即插即用地应用到现有优化器中，能一定程度上简化调参难度。"
   },
   "validation": {
     "passed": true,
@@ -30,8 +38,8 @@
     "converter_version": 1,
     "markdown_sha256": "f356656a6d597c0cdcb8e1bbe5972bda1fdbea217e2e2e20cce965ee2040bf59"
   },
-  "fetched_at": "2026-09-14T12:57:00+00:00",
+  "fetched_at": "2026-10-28T08:47:00+00:00",
   "source_snapshot_sha256": "93d0ca7c4d9c0918f6d0ea2a9b23c2310b9463e999e45cc8f4d23010bb95e3d1",
   "images": {},
-  "local_only": true
+  "publication_policy": "config/mirror.json"
 }

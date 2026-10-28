@@ -6,7 +6,15 @@
     "source_url": "https://spaces.ac.cn/archives/9444",
     "date": "2023-01-31",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "信息时代",
+    "source_tags": [
+      "语言模型",
+      "attention",
+      "位置编码",
+      "外推"
+    ],
+    "source_summary": "本文从位置鲁棒性的角度思考了Transformer的长度外推性，得到了“随机位置训练”等增强长度外推性的新方案。同时，我们介绍了新的“CHE基准”，相比常规的语言模型任务，它具备更强的非局域性，可以更有效地评估长度外推相关工作。在它之下，之前的注意力局部化相关方法并没有较为突出的表现，相比之下“随机位置训练”效果更佳，这提醒我们应当在更全面的任务上评估相关方法的有效性，而不单单局限于语言模型任务。"
   },
   "validation": {
     "passed": true,
@@ -30,8 +38,8 @@
     "converter_version": 1,
     "markdown_sha256": "a8f1356bcffb9cd17c8665a9c982c864fad30dc6b1f9145c065d51b4a87e72f2"
   },
-  "fetched_at": "2026-09-14T12:55:54+00:00",
+  "fetched_at": "2026-10-28T08:46:29+00:00",
   "source_snapshot_sha256": "1631e17f02b656f86339b8a6db1936c5a7d4470cebe0593c83471e6fd3691901",
   "images": {},
-  "local_only": true
+  "publication_policy": "config/mirror.json"
 }

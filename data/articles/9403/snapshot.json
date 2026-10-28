@@ -6,9 +6,17 @@
     "source_url": "https://spaces.ac.cn/archives/9403",
     "date": "2022-12-28",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "信息时代",
+    "source_tags": [
+      "矩阵",
+      "attention",
+      "位置编码",
+      "rope"
+    ],
+    "source_summary": "本文简单分析了RoPE的完备性问题，表明对于Self Attention来说，目前的分块对角型RoPE不会损失一般性。"
   },
-  "fetched_at": "2026-09-14T12:56:13+00:00",
+  "fetched_at": "2026-10-28T08:46:39+00:00",
   "source_snapshot_sha256": "0104e13448e3a6e683bbfffc2d20e98d9222ed996d25b3b867f20d84290cf861",
   "validators": {
     "etag": null,
