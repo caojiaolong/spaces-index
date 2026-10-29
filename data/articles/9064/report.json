@@ -6,7 +6,14 @@
     "source_url": "https://spaces.ac.cn/archives/9064",
     "date": "2022-05-07",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "信息时代",
+    "source_tags": [
+      "优化",
+      "损失函数",
+      "光滑"
+    ],
+    "source_summary": "本文主要将笔者之前提出的多标签“Softmax+交叉熵”推广到软标签场景，有了对应的软标签版本后，我们就可以将它与label smoothing、 mixup 等技巧结合起来了，像GlobalPointer等又可以多一个炼丹方向。"
   },
   "validation": {
     "passed": true,
@@ -30,8 +37,8 @@
     "converter_version": 1,
     "markdown_sha256": "4956003032587a085932f69a6d3eb0588cb67783839a19b3c337b1471928739a"
   },
-  "fetched_at": "2026-09-14T12:59:46+00:00",
+  "fetched_at": "2026-10-29T08:43:18+00:00",
   "source_snapshot_sha256": "e5b4ac8c1e9d64e39d18ba73416e499b01816413be0a1dcaa3b2408d8d4a5b08",
   "images": {},
-  "local_only": true
+  "publication_policy": "config/mirror.json"
 }

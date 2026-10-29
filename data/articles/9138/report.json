@@ -6,7 +6,13 @@
     "source_url": "https://spaces.ac.cn/archives/9138",
     "date": "2022-06-20",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "信息时代",
+    "source_tags": [
+      "语言模型",
+      "预训练"
+    ],
+    "source_summary": "本文主要介绍了同时具备参数高效和训练高效特点的一种大模型微调方法——Ladder Side-Tuning。"
   },
   "validation": {
     "passed": true,
@@ -30,8 +36,8 @@
     "converter_version": 1,
     "markdown_sha256": "ff7b421563ed500bacb2f7a275a2d92ea33d8307df56508cb9429ee04baa4793"
   },
-  "fetched_at": "2026-09-14T12:59:05+00:00",
+  "fetched_at": "2026-10-29T08:42:57+00:00",
   "source_snapshot_sha256": "0809e7be9f4373a4ae7e79dd83e53594d4e394d78a17f9094a675f72e477e4e1",
   "images": {},
-  "local_only": true
+  "publication_policy": "config/mirror.json"
 }

@@ -6,7 +6,14 @@
     "source_url": "https://spaces.ac.cn/archives/9147",
     "date": "2022-06-28",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "信息时代",
+    "source_tags": [
+      "维度",
+      "GAN",
+      "生成模型"
+    ],
+    "source_summary": "本文主要简介了“维度灾难”中的Hubness现象，并介绍了它在提升GAN生成质量方面的应用。"
   },
   "validation": {
     "passed": true,
@@ -30,8 +37,8 @@
     "converter_version": 1,
     "markdown_sha256": "a513bcb4f1e8669585526704eb78a59363b9ff906c6de470be47ade52ca46937"
   },
-  "fetched_at": "2026-09-14T12:58:59+00:00",
+  "fetched_at": "2026-10-29T08:42:53+00:00",
   "source_snapshot_sha256": "e193a16a8687f3b567606ce5015c1d7a69a0f6873694e16a75fb5e58fd3dd352",
   "images": {},
-  "local_only": true
+  "publication_policy": "config/mirror.json"
 }

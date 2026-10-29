@@ -6,9 +6,17 @@
     "source_url": "https://spaces.ac.cn/archives/9181",
     "date": "2022-07-27",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "信息时代",
+    "source_tags": [
+      "微分方程",
+      "生成模型",
+      "DDPM",
+      "扩散"
+    ],
+    "source_summary": "本文接着上一篇DDPM的推导思路来介绍了DDIM，它重新审视了DDPM的出发点，去掉了推导过程中的$p(\\boldsymbol{x}_t|\\boldsymbol{x}_{t-1})$，从而获得了一簇更广泛的解和加速生成过程的思路，最后这簇新解还允许我们将生成过程跟常微分方程的求解联系起来，从而借助常微分方程的方法进一步对生成过程进行研究。"
   },
-  "fetched_at": "2026-09-14T12:58:33+00:00",
+  "fetched_at": "2026-10-29T08:42:39+00:00",
   "source_snapshot_sha256": "b7d04b118479d00964bd6ef49fbade45784cd0b01d20e0863c5d962ff3c15996",
   "validators": {
     "etag": null,

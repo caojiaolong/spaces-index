@@ -6,9 +6,17 @@
     "source_url": "https://spaces.ac.cn/archives/9262",
     "date": "2022-09-14",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "信息时代",
+    "source_tags": [
+      "统一",
+      "生成模型",
+      "DDPM",
+      "扩散"
+    ],
+    "source_summary": "本文构建了一个新的扩散模型理论框架（Unified Diffusion Model，UDM），理论上它能够包含现有的生活扩散模型结果，并且允许更一般的扩散方式和数据类型。具体的例子我们下一篇文章再介绍。"
   },
-  "fetched_at": "2026-09-14T12:57:52+00:00",
+  "fetched_at": "2026-10-29T08:42:16+00:00",
   "source_snapshot_sha256": "e45ce35e7f43103525575e0629aa99850d4518efe72e314329a75505715abc54",
   "validators": {
     "etag": null,

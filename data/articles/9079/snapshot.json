@@ -6,9 +6,16 @@
     "source_url": "https://spaces.ac.cn/archives/9079",
     "date": "2022-05-18",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "信息时代",
+    "source_tags": [
+      "语言模型",
+      "语义",
+      "语义相似度"
+    ],
+    "source_summary": "本文通过引入两个超参数的方式来赋予BERT-whitening一定的调参空间，使其具备“不逊色于变换前的效果”的可能性，并且保留了降维的能力。换言之，即便是之前已经训练好的句向量模型，我们也可以用新的BERT-whitening将它降维，并且保持效果基本不变，有时候甚至还更优～"
   },
-  "fetched_at": "2026-09-14T12:59:31+00:00",
+  "fetched_at": "2026-10-29T08:43:11+00:00",
   "source_snapshot_sha256": "703741c13fee49d254a946cb97d9080c38fe9b1edb5560805891e117cd49bcd1",
   "validators": {
     "etag": null,

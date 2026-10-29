@@ -6,7 +6,14 @@
     "source_url": "https://spaces.ac.cn/archives/9280",
     "date": "2022-09-28",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "数学研究",
+    "source_tags": [
+      "微分方程",
+      "生成模型",
+      "扩散"
+    ],
+    "source_summary": "在这篇文章中，我们对ODE式扩散模型做了一个“自上而下”的推导：首先从ODE出发，结合雅可比行列式得到了概率变化的一阶近似，然后对比直接泰勒展开的一阶近似，得到了ODE应该要满足的方程，继而转化为扩散方程、热传导方程来求解。相对来说，整个过程比较一步到位，不需要通过SDE、FP方程等结果来做过渡。"
   },
   "validation": {
     "passed": true,
@@ -30,8 +37,8 @@
     "converter_version": 1,
     "markdown_sha256": "478bff2fe5207695f6c61b64b2f2392ed32613834bead8ee60b69e964c2286ef"
   },
-  "fetched_at": "2026-09-14T12:57:39+00:00",
+  "fetched_at": "2026-10-29T08:42:09+00:00",
   "source_snapshot_sha256": "992a1a166aac7e49b958a2ef42cb382127f52ddbb32879d92dd352674830363d",
   "images": {},
-  "local_only": true
+  "publication_policy": "config/mirror.json"
 }

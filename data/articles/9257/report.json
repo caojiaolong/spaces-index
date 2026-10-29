@@ -6,7 +6,15 @@
     "source_url": "https://spaces.ac.cn/archives/9257",
     "date": "2022-08-30",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "信息时代",
+    "source_tags": [
+      "概率",
+      "生成模型",
+      "DDPM",
+      "扩散"
+    ],
+    "source_summary": "本文简单介绍了建立条件扩散模型的相关理论结果，主要包含事后修改（Classifier-Guidance）和事前训练（Classifier-Free）两种方案。其中，前者不需要重新训练扩散模型，可以低成本实现简单的控制；后者需要重新训练扩散模型，成本较大，但可以实现比较精细的控制。"
   },
   "validation": {
     "passed": true,
@@ -30,8 +38,8 @@
     "converter_version": 1,
     "markdown_sha256": "a958aa2a49d344fc6d30c63a5637b91d753e0d8b691304e9ea332cb65a094eb4"
   },
-  "fetched_at": "2026-09-14T12:57:59+00:00",
+  "fetched_at": "2026-10-29T08:42:19+00:00",
   "source_snapshot_sha256": "905b4fe4188d1b0168f6f9af681f4f65d8c83c33003d7cdfb26738d6581e59d9",
   "images": {},
-  "local_only": true
+  "publication_policy": "config/mirror.json"
 }

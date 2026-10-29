@@ -6,7 +6,14 @@
     "source_url": "https://spaces.ac.cn/archives/9059",
     "date": "2022-04-28",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "信息时代",
+    "source_tags": [
+      "模型",
+      "优化",
+      "梯度"
+    ],
+    "source_summary": "本文介绍了在bert4keras中使用混合精度和XLA加速训练的尝试，两者同时启用大概能在3090上加速30%左右。"
   },
   "validation": {
     "passed": true,
@@ -30,8 +37,8 @@
     "converter_version": 1,
     "markdown_sha256": "eb0b6033e7c95184ea44fb35e305ad183cc7fc1cf33e2d95f106f4294f3b8f53"
   },
-  "fetched_at": "2026-09-14T12:59:52+00:00",
+  "fetched_at": "2026-10-29T08:43:22+00:00",
   "source_snapshot_sha256": "9cd13c888b378d1b76cab50a0638a04d4e9266c7a5e0fdde0ab14995dc171baf",
   "images": {},
-  "local_only": true
+  "publication_policy": "config/mirror.json"
 }

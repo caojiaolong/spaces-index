@@ -6,9 +6,15 @@
     "source_url": "https://spaces.ac.cn/archives/9158",
     "date": "2022-07-15",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "数学研究",
+    "source_tags": [
+      "优化",
+      "损失函数"
+    ],
+    "source_summary": "本文尝试将之前的多标签交叉熵推广到“$n$个$m$分类”上去，遗憾的是，这一次的推广并不算成功，暂且将结果分享在此，希望有兴趣的读者能一起参与改进。"
   },
-  "fetched_at": "2026-09-14T12:58:47+00:00",
+  "fetched_at": "2026-10-29T08:42:46+00:00",
   "source_snapshot_sha256": "5db6d0bf061579235d42ef8927fc1b5913fe72d6f7302df996a0b5eeb7b099d3",
   "validators": {
     "etag": null,

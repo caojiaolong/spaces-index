@@ -6,7 +6,15 @@
     "source_url": "https://spaces.ac.cn/archives/9271",
     "date": "2022-09-21",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "信息时代",
+    "source_tags": [
+      "统一",
+      "生成模型",
+      "DDPM",
+      "扩散"
+    ],
+    "source_summary": "本文主要应用上一篇文章所构建的统一扩散模型框架（Unified Diffusion Model，UDM）来推导几个具体的例子，包括主流的扩散模型、Cold Diffusion、文本编辑生成、编码模型等。"
   },
   "validation": {
     "passed": true,
@@ -30,8 +38,8 @@
     "converter_version": 1,
     "markdown_sha256": "c8a9be1f6f703c09f9d739e70c5f2a883529fabaf551fd6d632b9edefeb0a14c"
   },
-  "fetched_at": "2026-09-14T12:57:46+00:00",
+  "fetched_at": "2026-10-29T08:42:12+00:00",
   "source_snapshot_sha256": "ca219df309f1fc54f5b4452127accafbc40e52dcb36f9a9bb6e8fbb5ff8063fd",
   "images": {},
-  "local_only": true
+  "publication_policy": "config/mirror.json"
 }

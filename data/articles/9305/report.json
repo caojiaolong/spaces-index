@@ -6,7 +6,15 @@
     "source_url": "https://spaces.ac.cn/archives/9305",
     "date": "2022-10-18",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "物理化学",
+    "source_tags": [
+      "引力",
+      "场论",
+      "生成模型",
+      "扩散"
+    ],
+    "source_summary": "本文介绍了一个由“万有引力定律”启发的ODE式扩散模型，它突破了以往众多扩散模型对高斯假设的依赖，是一个基于场论来构建ODE式扩散模型的全新框架，整个模型颇多启发性，值得仔细研读。"
   },
   "validation": {
     "passed": true,
@@ -32,8 +40,8 @@
     "fallback_reason": "Unsupported body element: del",
     "markdown_sha256": "8fca9c8fdecf1f8194cdb942845ba1d9115c9bdd5b2e5788012b3e8117aa6bea"
   },
-  "fetched_at": "2026-09-14T12:57:26+00:00",
+  "fetched_at": "2026-10-29T08:42:02+00:00",
   "source_snapshot_sha256": "0ced0e2b8e69ca2665e581961bef6b87ab063ced6951606dd2b932f1097a6fee",
   "images": {},
-  "local_only": true
+  "publication_policy": "config/mirror.json"
 }

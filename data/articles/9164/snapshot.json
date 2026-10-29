@@ -6,9 +6,17 @@
     "source_url": "https://spaces.ac.cn/archives/9164",
     "date": "2022-07-19",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "信息时代",
+    "source_tags": [
+      "概率",
+      "生成模型",
+      "DDPM",
+      "扩散"
+    ],
+    "source_summary": "本文分享了DDPM的一种颇有“推敲”味道的推导，它借助贝叶斯定理来直接推导反向的生成过程，相比之前的“拆楼-建楼”类比和变分推断理解更加一步到位。同时，它也更具启发性，跟接下来要介绍的DDIM有很密切的联系。"
   },
-  "fetched_at": "2026-09-14T12:58:40+00:00",
+  "fetched_at": "2026-10-29T08:42:42+00:00",
   "source_snapshot_sha256": "da1d2dca1ab68e94626b24e57bbbba3dfb7084c895ee05540557ac06614d2c8e",
   "validators": {
     "etag": null,

@@ -6,7 +6,15 @@
     "source_url": "https://spaces.ac.cn/archives/9209",
     "date": "2022-08-03",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "信息时代",
+    "source_tags": [
+      "微分方程",
+      "生成模型",
+      "DDPM",
+      "扩散"
+    ],
+    "source_summary": "本文主要介绍了宋飏博士建立的利用SDE理解扩散模型的一般框架，其中包括以尽可能直观的语言推导了反向SDE、得分匹配等结果，并对方程的求解给出了自己的想法。"
   },
   "validation": {
     "passed": true,
@@ -30,8 +38,8 @@
     "converter_version": 1,
     "markdown_sha256": "10e6b1ce5c100762654591d7dfbb928a0af0d9dff8fa75b270359b9762562a6a"
   },
-  "fetched_at": "2026-09-14T12:58:25+00:00",
+  "fetched_at": "2026-10-29T08:42:35+00:00",
   "source_snapshot_sha256": "05407350a3210854b81fcefa0accdf89ab3451b94a9a7a20f58c7dce1aab63bd",
   "images": {},
-  "local_only": true
+  "publication_policy": "config/mirror.json"
 }

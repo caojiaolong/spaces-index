@@ -6,7 +6,15 @@
     "source_url": "https://spaces.ac.cn/archives/9246",
     "date": "2022-08-18",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "信息时代",
+    "source_tags": [
+      "优化",
+      "生成模型",
+      "DDPM",
+      "扩散"
+    ],
+    "source_summary": "本文介绍了论文Analytic-DPM的升级版——“Extended-Analytic-DPM”中的扩散模型最优方差估计结果，它主要针对不完美均值情形进行了推导，并提出了有条件方差的学习方案。"
   },
   "validation": {
     "passed": true,
@@ -30,8 +38,8 @@
     "converter_version": 1,
     "markdown_sha256": "0fb8341a4aa63dfe4f06c3c91c5ace1ebefed7197d5a7d3d0cf197d5d54277a0"
   },
-  "fetched_at": "2026-09-14T12:58:06+00:00",
+  "fetched_at": "2026-10-29T08:42:23+00:00",
   "source_snapshot_sha256": "275e208aade03f628a62bd31298fcf7c58693c1cb3061482e42986d46e58b173",
   "images": {},
-  "local_only": true
+  "publication_policy": "config/mirror.json"
 }

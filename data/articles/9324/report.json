@@ -6,7 +6,14 @@
     "source_url": "https://spaces.ac.cn/archives/9324",
     "date": "2022-10-25",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "数学研究",
+    "source_tags": [
+      "概率",
+      "竞赛",
+      "随机"
+    ],
+    "source_summary": "本文讨论了“四鸭共半圆”的推广问题的一般解法，其中主要思想是容斥原理。"
   },
   "validation": {
     "passed": true,
@@ -30,8 +37,8 @@
     "converter_version": 1,
     "markdown_sha256": "f728b8a323567abf97f3d83a2b8595a929ad6e8cefaf35c5a120744b8db933ba"
   },
-  "fetched_at": "2026-09-14T12:57:19+00:00",
+  "fetched_at": "2026-10-29T08:41:58+00:00",
   "source_snapshot_sha256": "b608b9a38e6126eca6362c4521b0c34d5d98533cd3c72461f7cd97bb843e6cc8",
   "images": {},
-  "local_only": true
+  "publication_policy": "config/mirror.json"
 }

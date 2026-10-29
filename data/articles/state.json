@@ -1520,140 +1520,140 @@
   },
   "9324": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:18:55+00:00",
+    "checked_at": "2026-10-29T08:41:58+00:00",
     "title": "圆内随机n点在同一个圆心角为θ的扇形的概率",
     "markdown_sha256": "f728b8a323567abf97f3d83a2b8595a929ad6e8cefaf35c5a120744b8db933ba",
     "converter_version": 1
   },
   "9305": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:18:55+00:00",
+    "checked_at": "2026-10-29T08:42:02+00:00",
     "title": "生成扩散模型漫谈（十三）：从万有引力到扩散模型",
     "markdown_sha256": "8fca9c8fdecf1f8194cdb942845ba1d9115c9bdd5b2e5788012b3e8117aa6bea",
     "converter_version": 1
   },
   "9291": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:18:55+00:00",
+    "checked_at": "2026-10-29T08:42:05+00:00",
     "title": "“十字架”组合计数问题浅试",
     "markdown_sha256": "238473069858253b7a78f5fa883b31816bc6a2115ee6fc33403372916cb03b9c",
     "converter_version": 1
   },
   "9280": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:18:55+00:00",
+    "checked_at": "2026-10-29T08:42:09+00:00",
     "title": "生成扩散模型漫谈（十二）：“硬刚”扩散ODE",
     "markdown_sha256": "478bff2fe5207695f6c61b64b2f2392ed32613834bead8ee60b69e964c2286ef",
     "converter_version": 1
   },
   "9271": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:18:55+00:00",
+    "checked_at": "2026-10-29T08:42:12+00:00",
     "title": "生成扩散模型漫谈（十一）：统一扩散模型（应用篇）",
     "markdown_sha256": "c8a9be1f6f703c09f9d739e70c5f2a883529fabaf551fd6d632b9edefeb0a14c",
     "converter_version": 1
   },
   "9262": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:18:55+00:00",
+    "checked_at": "2026-10-29T08:42:16+00:00",
     "title": " 生成扩散模型漫谈（十）：统一扩散模型（理论篇）",
     "markdown_sha256": "c4be16c47c77149dadd97d5b43a72437c4a918f256c9f8379494ae8d47b581de",
     "converter_version": 1
   },
   "9257": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:18:56+00:00",
+    "checked_at": "2026-10-29T08:42:19+00:00",
     "title": "生成扩散模型漫谈（九）：条件控制生成结果",
     "markdown_sha256": "a958aa2a49d344fc6d30c63a5637b91d753e0d8b691304e9ea332cb65a094eb4",
     "converter_version": 1
   },
   "9246": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:18:56+00:00",
+    "checked_at": "2026-10-29T08:42:23+00:00",
     "title": "生成扩散模型漫谈（八）：最优扩散方差估计（下）",
     "markdown_sha256": "0fb8341a4aa63dfe4f06c3c91c5ace1ebefed7197d5a7d3d0cf197d5d54277a0",
     "converter_version": 1
   },
   "9245": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:18:56+00:00",
+    "checked_at": "2026-10-29T08:42:26+00:00",
     "title": "生成扩散模型漫谈（七）：最优扩散方差估计（上）",
     "markdown_sha256": "ddcb358a34060a0191556b8ed1f97a950430ca7ee4ffd2a32a2a4afd4d86f571",
     "converter_version": 1
   },
   "9228": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:18:56+00:00",
+    "checked_at": "2026-10-29T08:42:31+00:00",
     "title": "生成扩散模型漫谈（六）：一般框架之ODE篇",
     "markdown_sha256": "0cf283fd0e792e79b758733fa61074ed247543ea8b89ea39016219714a95cfdc",
     "converter_version": 1
   },
   "9209": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:18:57+00:00",
+    "checked_at": "2026-10-29T08:42:35+00:00",
     "title": "生成扩散模型漫谈（五）：一般框架之SDE篇",
     "markdown_sha256": "10e6b1ce5c100762654591d7dfbb928a0af0d9dff8fa75b270359b9762562a6a",
     "converter_version": 1
   },
   "9181": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:18:57+00:00",
+    "checked_at": "2026-10-29T08:42:39+00:00",
     "title": "生成扩散模型漫谈（四）：DDIM = 高观点DDPM",
     "markdown_sha256": "facf9bcbedba6f818cd9bfa4ec35840827f44ba09d5aae4282028a05c1f160db",
     "converter_version": 1
   },
   "9164": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:18:57+00:00",
+    "checked_at": "2026-10-29T08:42:42+00:00",
     "title": "生成扩散模型漫谈（三）：DDPM = 贝叶斯 + 去噪",
     "markdown_sha256": "df8cb8a2c51098e5f5aa1e00f2c8896208f1945c395e342222ea7a908f33bca6",
     "converter_version": 1
   },
   "9158": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:18:57+00:00",
+    "checked_at": "2026-10-29T08:42:46+00:00",
     "title": "不成功的尝试：将多标签交叉熵推广到“n个m分类”上去",
     "markdown_sha256": "1ec48511229fc18629892225d6dc6c776bc208f9113aeec1990f5a3503ddf62e",
     "converter_version": 1
   },
   "9152": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:18:57+00:00",
+    "checked_at": "2026-10-29T08:42:49+00:00",
     "title": "生成扩散模型漫谈（二）：DDPM = 自回归式VAE",
     "markdown_sha256": "8f99ddd37559855ccaa6aa18222166068724763b22c2d5230dc014140816b924",
     "converter_version": 1
   },
   "9147": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:18:58+00:00",
+    "checked_at": "2026-10-29T08:42:53+00:00",
     "title": "“维度灾难”之Hubness现象浅析",
     "markdown_sha256": "a513bcb4f1e8669585526704eb78a59363b9ff906c6de470be47ade52ca46937",
     "converter_version": 1
   },
   "9138": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:18:58+00:00",
+    "checked_at": "2026-10-29T08:42:57+00:00",
     "title": "Ladder Side-Tuning：预训练模型的“过墙梯”",
     "markdown_sha256": "ff7b421563ed500bacb2f7a275a2d92ea33d8307df56508cb9429ee04baa4793",
     "converter_version": 1
   },
   "9119": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:18:58+00:00",
+    "checked_at": "2026-10-29T08:43:00+00:00",
     "title": "生成扩散模型漫谈（一）：DDPM = 拆楼 + 建楼",
     "markdown_sha256": "081c0c831b1b26085519e29ce2503fd91d21404bea3a211935f3ca850f945401",
     "converter_version": 1
   },
   "9105": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:18:58+00:00",
+    "checked_at": "2026-10-29T08:43:04+00:00",
     "title": "相对位置编码Transformer的一个理论缺陷与对策",
     "markdown_sha256": "38c519fffaad1413b852c5e43c3e171f9f97df4b30c23f57a34747c68b1ab5f7",
     "converter_version": 1
   },
   "9098": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:18:58+00:00",
+    "checked_at": "2026-10-29T08:43:07+00:00",
     "title": "如何训练你的准确率？",
     "markdown_sha256": "59cb504ef0529ba3dee479079bba10f946b16dedd9c62b25347d384c0e4b8d0b",
     "converter_version": 1
@@ -1667,35 +1667,35 @@
   },
   "9079": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:18:59+00:00",
+    "checked_at": "2026-10-29T08:43:11+00:00",
     "title": "当BERT-whitening引入超参数：总有一款适合你",
     "markdown_sha256": "8e86187e4c05b0fcbf8f18cfbc4d6eeb43681a58a33a3914cd64107f3ecd0995",
     "converter_version": 1
   },
   "9070": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:18:59+00:00",
+    "checked_at": "2026-10-29T08:43:14+00:00",
     "title": "logsumexp运算的几个不等式",
     "markdown_sha256": "1fd3644c8ac0f855b3cd1fff7ff816e52359da48ead6f78c4ca894299d981d9d",
     "converter_version": 1
   },
   "9064": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:18:59+00:00",
+    "checked_at": "2026-10-29T08:43:18+00:00",
     "title": "多标签“Softmax+交叉熵”的软标签版本",
     "markdown_sha256": "4956003032587a085932f69a6d3eb0588cb67783839a19b3c337b1471928739a",
     "converter_version": 1
   },
   "9059": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:18:59+00:00",
+    "checked_at": "2026-10-29T08:43:22+00:00",
     "title": "在bert4keras中使用混合精度和XLA加速训练",
     "markdown_sha256": "eb0b6033e7c95184ea44fb35e305ad183cc7fc1cf33e2d95f106f4294f3b8f53",
     "converter_version": 1
   },
   "9052": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:18:59+00:00",
+    "checked_at": "2026-10-29T08:43:25+00:00",
     "title": "GAU-α：尝鲜体验快好省的下一代Attention",
     "markdown_sha256": "026668e53f59a7658e6a959d6eecc453418e5da53519fa8c06e9b998ef542b28",
     "converter_version": 1
@@ -8464,7 +8464,7 @@
   },
   "132": {
     "status": "conversion_failed",
-    "checked_at": "2026-10-28T08:47:08+00:00",
+    "checked_at": "2026-10-29T08:43:25+00:00",
     "title": "一道从小学到高中都可能考到的题目",
     "error": "Unreviewed legacy element: a<b，则有<br",
     "converter_version": 1,

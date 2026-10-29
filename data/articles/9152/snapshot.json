@@ -6,9 +6,17 @@
     "source_url": "https://spaces.ac.cn/archives/9152",
     "date": "2022-07-06",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "信息时代",
+    "source_tags": [
+      "vae",
+      "生成模型",
+      "DDPM",
+      "扩散"
+    ],
+    "source_summary": "本文从变分自编码器VAE的角度推导了DDPM，在这个视角之下，DDPM是一个简化版的自回归式VAE，跟之前的NVAE很是相似。同时本文分享了自己的DDPM实现代码和实践经验，以及对DDPM做了一个比较综合的评价。"
   },
-  "fetched_at": "2026-09-14T12:58:53+00:00",
+  "fetched_at": "2026-10-29T08:42:49+00:00",
   "source_snapshot_sha256": "f16d04828551dd1b178376b174a2fe6d596bc44b99a646af2bb3f2166780995c",
   "validators": {
     "etag": null,

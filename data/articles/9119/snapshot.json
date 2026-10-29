@@ -6,9 +6,20 @@
     "source_url": "https://spaces.ac.cn/archives/9119",
     "date": "2022-06-13",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "信息时代",
+    "source_tags": [
+      "概率",
+      "生成模型",
+      "DDPM",
+      "扩散"
+    ],
+    "source_summary": "本文从“拆楼-建楼”的通俗类比中介绍了最新的生成扩散模型DDPM，在这个视角中，我们可以通过较为“大白话”的描述以及比较少的数学推导，来得到跟原始论文一模一样的结果。总的来说，本文说明了DDPM也可以像GAN一样找到一个形象类比，它既可以不用到VAE中的“变分”，也可以不用到GAN中的“概率散度”、“最优传输”，从这个意义上来看，DDPM甚至算得上比VAE、GAN还要简单。"
   },
-  "fetched_at": "2026-09-14T02:23:26+00:00",
+  "fetched_at": "2026-10-29T08:43:00+00:00",
   "source_snapshot_sha256": "f60cc2bbb36c2279e7beb88729f490de59840ca4b653592dab8d31794d748e54",
-  "validators": {}
+  "validators": {
+    "etag": null,
+    "last_modified": null
+  }
 }
