@@ -6,7 +6,14 @@
     "source_url": "https://spaces.ac.cn/archives/8823",
     "date": "2021-12-21",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "信息时代",
+    "source_tags": [
+      "概率",
+      "熵",
+      "attention"
+    ],
+    "source_summary": null
   },
   "validation": {
     "passed": true,
@@ -30,8 +37,8 @@
     "converter_version": 1,
     "markdown_sha256": "d7bc3290ac4a3c36c0342da225cf49625cbbbb5c67448ee7d9102fe3f6834b52"
   },
-  "fetched_at": "2026-09-14T13:02:30+00:00",
+  "fetched_at": "2026-10-30T08:49:46+00:00",
   "source_snapshot_sha256": "a8a0a3e613e974510d5f7fb13265f82d4bf338ec806029570e2d5b7a16cf5a6f",
   "images": {},
-  "local_only": true
+  "publication_policy": "config/mirror.json"
 }

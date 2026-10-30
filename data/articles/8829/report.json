@@ -6,7 +6,13 @@
     "source_url": "https://spaces.ac.cn/archives/8829",
     "date": "2021-12-24",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "数学研究",
+    "source_tags": [
+      "概率",
+      "熵"
+    ],
+    "source_summary": null
   },
   "validation": {
     "passed": true,
@@ -30,8 +36,8 @@
     "converter_version": 1,
     "markdown_sha256": "a47138e68dbd691245e4ff6b3139d85c55b8c5eece7705bc95ebeb7f15962797"
   },
-  "fetched_at": "2026-09-14T13:02:24+00:00",
+  "fetched_at": "2026-10-30T08:49:42+00:00",
   "source_snapshot_sha256": "521bce3a867bfb2cc5fd2c326d452fd4a7e519381272cd73d63c31f2a36459d8",
   "images": {},
-  "local_only": true
+  "publication_policy": "config/mirror.json"
 }

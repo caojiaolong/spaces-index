@@ -6,7 +6,14 @@
     "source_url": "https://spaces.ac.cn/archives/8990",
     "date": "2022-03-11",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "信息时代",
+    "source_tags": [
+      "模型",
+      "优化",
+      "attention"
+    ],
+    "source_summary": null
   },
   "validation": {
     "passed": true,
@@ -30,8 +37,8 @@
     "converter_version": 1,
     "markdown_sha256": "bd970fa415d2785759a273524884359a3cc4b11114474d59c25b2c2394a6ddba"
   },
-  "fetched_at": "2026-09-14T13:00:51+00:00",
+  "fetched_at": "2026-10-30T08:48:46+00:00",
   "source_snapshot_sha256": "d625c77bc5d03c4bcea9ac79dee667878fccb73de77ac215b9e1c944272d7385",
   "images": {},
-  "local_only": true
+  "publication_policy": "config/mirror.json"
 }

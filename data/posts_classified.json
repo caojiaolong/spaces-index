@@ -5273,6 +5273,7 @@
       "重参数"
     ],
     "source_summary": "本文从重参数角度对Softmax进行推广，得到了一类具备相似性质的概率归一化方法。",
+    "metadata_checked_at": "2026-10-30T08:48:16+00:00",
     "topics": [
       "概率统计与信息论",
       "数学工具"
@@ -5397,6 +5398,7 @@
       "多任务"
     ],
     "source_summary": null,
+    "metadata_checked_at": "2026-10-30T08:48:20+00:00",
     "topics": [
       "大模型与Transformer"
     ],
@@ -5417,6 +5419,7 @@
       "正则化"
     ],
     "source_summary": null,
+    "metadata_checked_at": "2026-10-30T08:48:23+00:00",
     "topics": [
       "深度学习基础",
       "优化与训练",
@@ -5438,6 +5441,7 @@
       "attention"
     ],
     "source_summary": "为之前提出的“熵不变性Softmax”构思了一个简单明快的推导。",
+    "metadata_checked_at": "2026-10-30T08:48:26+00:00",
     "topics": [
       "大模型与Transformer",
       "概率统计与信息论"
@@ -5459,6 +5463,7 @@
       "预训练"
     ],
     "source_summary": null,
+    "metadata_checked_at": "2026-10-30T08:48:31+00:00",
     "topics": [
       "大模型与Transformer",
       "概率统计与信息论"
@@ -5479,6 +5484,7 @@
       "attention"
     ],
     "source_summary": "本文主要分享了“为什么Pre Norm的效果不如Post Norm”的一个直观理解。",
+    "metadata_checked_at": "2026-10-30T08:48:34+00:00",
     "topics": [
       "大模型与Transformer",
       "科普问答与百科"
@@ -5498,6 +5504,7 @@
       "预训练"
     ],
     "source_summary": null,
+    "metadata_checked_at": "2026-10-30T08:48:38+00:00",
     "topics": [
       "大模型与Transformer"
     ],
@@ -5518,6 +5525,7 @@
       "梯度"
     ],
     "source_summary": "本文讨论了“为什么需要残差”这个问题，在DeepNet的启发之下，得到的结论是残差可以同时稳定前向传播和反向传播并解决增量爆炸，从而使得深层模型更容易训练，而无残差的普通前馈神经网络，则无法同时解决这三个问题，因此其深层化后不容易训练。",
+    "metadata_checked_at": "2026-10-30T08:48:41+00:00",
     "topics": [
       "深度学习基础",
       "科普问答与百科"
@@ -5538,6 +5546,7 @@
       "attention"
     ],
     "source_summary": null,
+    "metadata_checked_at": "2026-10-30T08:48:46+00:00",
     "topics": [
       "大模型与Transformer"
     ],
@@ -5557,6 +5566,7 @@
       "attention"
     ],
     "source_summary": "本文分析了将Transformer做“深”的瓶颈所在并给出了相应的解决方案，文章的主要思路源于微软新出的DeepNet，并对原论文的分析过程做了一定的简化和完善。",
+    "metadata_checked_at": "2026-10-30T08:48:49+00:00",
     "topics": [
       "大模型与Transformer",
       "优化与训练"
@@ -5577,6 +5587,7 @@
       "优化器"
     ],
     "source_summary": null,
+    "metadata_checked_at": "2026-10-30T08:48:53+00:00",
     "topics": [
       "优化与训练"
     ],
@@ -5596,6 +5607,7 @@
       "attention"
     ],
     "source_summary": null,
+    "metadata_checked_at": "2026-10-30T08:48:57+00:00",
     "topics": [
       "大模型与Transformer",
       "生成模型"
@@ -5616,6 +5628,7 @@
       "NER"
     ],
     "source_summary": "本文介绍了将GPLinker用于事件抽取的思路，先用嵌套实体抽取的方式来抽取论元，然后将事件的划分转化为完全子图搜索问题，整个模型相对简洁和完备，并且理论上不存在Exposure Bias问题。",
+    "metadata_checked_at": "2026-10-30T08:49:02+00:00",
     "topics": [
       "NLP与信息抽取"
     ],
@@ -5637,6 +5650,7 @@
       "多任务"
     ],
     "source_summary": null,
+    "metadata_checked_at": "2026-10-30T08:49:09+00:00",
     "topics": [
       "深度学习基础"
     ],
@@ -5659,6 +5673,7 @@
       "多任务"
     ],
     "source_summary": null,
+    "metadata_checked_at": "2026-10-30T08:49:13+00:00",
     "topics": [
       "深度学习基础"
     ],
@@ -5679,6 +5694,7 @@
       "NER"
     ],
     "source_summary": "本文分享了一个基于GlobalPointer的实体关系联合抽取模型——“GPLinker”，并提供了一个“自上而下”的推导理解给大家参考。",
+    "metadata_checked_at": "2026-10-30T08:49:18+00:00",
     "topics": [
       "NLP与信息抽取"
     ],
@@ -5698,6 +5714,7 @@
       "NER"
     ],
     "source_summary": null,
+    "metadata_checked_at": "2026-10-30T08:49:24+00:00",
     "topics": [
       "NLP与信息抽取"
     ],
@@ -5717,6 +5734,7 @@
       "多任务"
     ],
     "source_summary": null,
+    "metadata_checked_at": "2026-10-30T08:49:27+00:00",
     "topics": [
       "深度学习基础"
     ],
@@ -5737,6 +5755,7 @@
       "对比学习"
     ],
     "source_summary": "本文从理论和实验两个角度地探讨了特征式匹配与交互式匹配的效果差距，此外还讨论了多分类问题中阈值的自动搜索问题。",
+    "metadata_checked_at": "2026-10-30T08:49:32+00:00",
     "topics": [
       "词向量与Embedding"
     ],
@@ -5757,6 +5776,7 @@
       "对比学习"
     ],
     "source_summary": "本文提出了一种新的有监督句向量方案CoSENT（Cosine Sentence），相比于InferSent和Sentence-BERT，它的训练过程更贴近预测，并且实验显示，CoSENT在收敛速度和最终效果上都普遍比InferSent和Sentence-BERT要好。",
+    "metadata_checked_at": "2026-10-30T08:49:35+00:00",
     "topics": [
       "词向量与Embedding"
     ],
@@ -5777,6 +5797,7 @@
       "分析"
     ],
     "source_summary": "似乎也没啥好总结的，就是介绍了一个ReLU的光滑近似，并配上了两道简单的函数练习题～",
+    "metadata_checked_at": "2026-10-30T08:49:39+00:00",
     "topics": [
       "深度学习基础"
     ],
@@ -5795,6 +5816,7 @@
       "熵"
     ],
     "source_summary": null,
+    "metadata_checked_at": "2026-10-30T08:49:42+00:00",
     "topics": [
       "概率统计与信息论",
       "数学工具"
@@ -5815,6 +5837,7 @@
       "attention"
     ],
     "source_summary": null,
+    "metadata_checked_at": "2026-10-30T08:49:46+00:00",
     "topics": [
       "大模型与Transformer",
       "概率统计与信息论"
@@ -5897,6 +5920,7 @@
       "模型"
     ],
     "source_summary": null,
+    "metadata_checked_at": "2026-10-30T08:49:49+00:00",
     "topics": [
       "阅读写作与随笔"
     ],
@@ -5917,6 +5941,7 @@
       "优化"
     ],
     "source_summary": null,
+    "metadata_checked_at": "2026-10-30T08:49:53+00:00",
     "topics": [
       "深度学习基础",
       "优化与训练",

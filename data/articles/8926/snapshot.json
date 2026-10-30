@@ -6,9 +6,16 @@
     "source_url": "https://spaces.ac.cn/archives/8926",
     "date": "2022-02-21",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "信息时代",
+    "source_tags": [
+      "NLP",
+      "信息抽取",
+      "NER"
+    ],
+    "source_summary": "本文介绍了将GPLinker用于事件抽取的思路，先用嵌套实体抽取的方式来抽取论元，然后将事件的划分转化为完全子图搜索问题，整个模型相对简洁和完备，并且理论上不存在Exposure Bias问题。"
   },
-  "fetched_at": "2026-09-14T13:01:16+00:00",
+  "fetched_at": "2026-10-30T08:49:02+00:00",
   "source_snapshot_sha256": "46569ea51743ca2d6bd9c8878774efb83d45334b2d87f7b99dcc879c791a734d",
   "validators": {
     "etag": null,

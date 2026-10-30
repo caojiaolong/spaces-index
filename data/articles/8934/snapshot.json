@@ -6,9 +6,16 @@
     "source_url": "https://spaces.ac.cn/archives/8934",
     "date": "2022-02-25",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "信息时代",
+    "source_tags": [
+      "语言模型",
+      "生成模型",
+      "attention"
+    ],
+    "source_summary": null
   },
-  "fetched_at": "2026-09-14T13:01:10+00:00",
+  "fetched_at": "2026-10-30T08:48:57+00:00",
   "source_snapshot_sha256": "fccfcc8bf8509baaa348c9460d346cbed409aa793a7fc8f7fb6e1eb38a11edd0",
   "validators": {
     "etag": null,

@@ -6,9 +6,16 @@
     "source_url": "https://spaces.ac.cn/archives/9034",
     "date": "2022-04-11",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "数学研究",
+    "source_tags": [
+      "近似",
+      "熵",
+      "attention"
+    ],
+    "source_summary": "为之前提出的“熵不变性Softmax”构思了一个简单明快的推导。"
   },
-  "fetched_at": "2026-09-14T13:00:18+00:00",
+  "fetched_at": "2026-10-30T08:48:26+00:00",
   "source_snapshot_sha256": "82c863f21bf212ad7b6a9dae650b8ae3c646510986981d9766298ae3c07c2648",
   "validators": {
     "etag": null,

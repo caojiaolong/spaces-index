@@ -1660,7 +1660,7 @@
   },
   "9085": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:18:59+00:00",
+    "checked_at": "2026-10-30T08:48:16+00:00",
     "title": "从重参数的角度看离散概率分布的构建",
     "markdown_sha256": "d0fe5249c449d48e38981028bedb201468675ef5a9c9e95b5cc0aeabe6cae9b5",
     "converter_version": 1
@@ -1702,154 +1702,154 @@
   },
   "9046": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:19:00+00:00",
+    "checked_at": "2026-10-30T08:48:20+00:00",
     "title": "你的语言模型有没有“无法预测的词”？",
     "markdown_sha256": "abfec5e9ff5b26ed415c944e5bfd2e3e01e09d29504e23192007b7780c8faa2a",
     "converter_version": 1
   },
   "9039": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:19:00+00:00",
+    "checked_at": "2026-10-30T08:48:23+00:00",
     "title": "GlobalPointer下的“KL散度”应该是怎样的？",
     "markdown_sha256": "f482f6622e708f6fd4ca9724006759f62ccb0a7fcae9cf642cc974d6945a628f",
     "converter_version": 1
   },
   "9034": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:19:00+00:00",
+    "checked_at": "2026-10-30T08:48:26+00:00",
     "title": "熵不变性Softmax的一个快速推导",
     "markdown_sha256": "10393cc3af646669cd7e07b7a03a9f13672a57ca6d436bba2e6f61ec0699209c",
     "converter_version": 1
   },
   "9019": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:19:00+00:00",
+    "checked_at": "2026-10-30T08:48:31+00:00",
     "title": "听说Attention与Softmax更配哦～",
     "markdown_sha256": "9a269ed2f3cfc5f547152a97a0cbc154052018af3dbcf219a2d1d398f28c804c",
     "converter_version": 1
   },
   "9009": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:19:00+00:00",
+    "checked_at": "2026-10-30T08:48:34+00:00",
     "title": "为什么Pre Norm的效果不如Post Norm？",
     "markdown_sha256": "9e2195e20d6bdcad0884b1fb1a9afa60e2fc366a83ae4fe8b9124166bcebb3e5",
     "converter_version": 1
   },
   "8998": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:19:00+00:00",
+    "checked_at": "2026-10-30T08:48:38+00:00",
     "title": "RoFormerV2：自然语言理解的极限探索",
     "markdown_sha256": "1d101cbbface5f42410ae8c6d51949b4a12e5d87d3730b77e98a935e2615338a",
     "converter_version": 1
   },
   "8994": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:19:00+00:00",
+    "checked_at": "2026-10-30T08:48:41+00:00",
     "title": "为什么需要残差？一个来自DeepNet的视角",
     "markdown_sha256": "f94f1f05e66af6e3ae2a916fb579ab27e7501cf7453975c0ff17f4a48308eccf",
     "converter_version": 1
   },
   "8990": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:19:01+00:00",
+    "checked_at": "2026-10-30T08:48:46+00:00",
     "title": "门控注意力单元（GAU）还需要Warmup吗？",
     "markdown_sha256": "bd970fa415d2785759a273524884359a3cc4b11114474d59c25b2c2394a6ddba",
     "converter_version": 1
   },
   "8978": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:19:01+00:00",
+    "checked_at": "2026-10-30T08:48:49+00:00",
     "title": "训练1000层的Transformer究竟有什么困难？",
     "markdown_sha256": "c7d56d9319ed5213c6a0e5df39614becd41a18889308a02a0a0daedce92c47e1",
     "converter_version": 1
   },
   "8968": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:19:01+00:00",
+    "checked_at": "2026-10-30T08:48:53+00:00",
     "title": "指数梯度下降 + 元学习 = 自适应学习率",
     "markdown_sha256": "f747ae1a72f895a8071c498bae00b1edc90d606f146f051afe816db1b58cf481",
     "converter_version": 1
   },
   "8934": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:19:01+00:00",
+    "checked_at": "2026-10-30T08:48:57+00:00",
     "title": "FLASH：可能是近来最有意思的高效Transformer设计",
     "markdown_sha256": "09e80aa47ea2352ede8fcd675869fe38cfc58a7636ea48c3bd0c9dbfe60ceb13",
     "converter_version": 1
   },
   "8926": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:19:02+00:00",
+    "checked_at": "2026-10-30T08:49:02+00:00",
     "title": "GPLinker：基于GlobalPointer的事件联合抽取",
     "markdown_sha256": "ef2195083eb9eec9e11b28645f4d0056579db0a4bb03856255f664eed721b0d8",
     "converter_version": 1
   },
   "8907": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:19:02+00:00",
+    "checked_at": "2026-10-30T08:49:09+00:00",
     "title": "多任务学习漫谈（三）：分主次之序",
     "markdown_sha256": "0fed112a14ceb285beaa12990058bb6bd9d45c0cf10fbb0b7ef19b3869e9db3b",
     "converter_version": 1
   },
   "8896": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:19:02+00:00",
+    "checked_at": "2026-10-30T08:49:13+00:00",
     "title": "多任务学习漫谈（二）：行梯度之事",
     "markdown_sha256": "0389c10153b9f4f9227e18a3e157c1c468a6ef4b0d35d4c54adc0d3a62b3f2b6",
     "converter_version": 1
   },
   "8888": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:19:02+00:00",
+    "checked_at": "2026-10-30T08:49:18+00:00",
     "title": "GPLinker：基于GlobalPointer的实体关系联合抽取",
     "markdown_sha256": "01e50aea17247f77ac2c28e5fa9f50d93a3da429d48de9bf1b6d228fdc13521d",
     "converter_version": 1
   },
   "8877": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:19:02+00:00",
+    "checked_at": "2026-10-30T08:49:24+00:00",
     "title": "Efficient GlobalPointer：少点参数，多点效果",
     "markdown_sha256": "240348f83ab573710e3be549a8bf796e545ce87d4baf74adee9a0574dc02f50a",
     "converter_version": 1
   },
   "8870": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:19:03+00:00",
+    "checked_at": "2026-10-30T08:49:27+00:00",
     "title": "多任务学习漫谈（一）：以损失之名",
     "markdown_sha256": "b0160dcf4962fa9b264757419e130bc79822820121d44caff755a912b4faa138",
     "converter_version": 1
   },
   "8860": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:19:03+00:00",
+    "checked_at": "2026-10-30T08:49:32+00:00",
     "title": "CoSENT（二）：特征式匹配与交互式匹配有多大差距？",
     "markdown_sha256": "5b2af42b8b657d80133599b97d5b123a1fe11279324e803ff7e631dd677344c4",
     "converter_version": 1
   },
   "8847": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:19:03+00:00",
+    "checked_at": "2026-10-30T08:49:35+00:00",
     "title": "CoSENT（一）：比Sentence-BERT更有效的句向量方案",
     "markdown_sha256": "56b7458ea03acc53141ed443ba93c33575c85a69d3ef24229a0593fdeab7c21a",
     "converter_version": 1
   },
   "8833": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:19:03+00:00",
+    "checked_at": "2026-10-30T08:49:39+00:00",
     "title": "SquarePlus：可能是运算最简单的ReLU光滑近似",
     "markdown_sha256": "4c5442dd57a1f7f732beb9896e9fc2782820abe385777a8ad6d03f1566c1d14f",
     "converter_version": 1
   },
   "8829": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:19:03+00:00",
+    "checked_at": "2026-10-30T08:49:42+00:00",
     "title": "概率分布的熵归一化（Entropy Normalization）",
     "markdown_sha256": "a47138e68dbd691245e4ff6b3139d85c55b8c5eece7705bc95ebeb7f15962797",
     "converter_version": 1
   },
   "8823": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:19:03+00:00",
+    "checked_at": "2026-10-30T08:49:46+00:00",
     "title": "从熵不变性看Attention的Scale操作",
     "markdown_sha256": "d7bc3290ac4a3c36c0342da225cf49625cbbbb5c67448ee7d9102fe3f6834b52",
     "converter_version": 1
@@ -1877,14 +1877,14 @@
   },
   "8783": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:19:04+00:00",
+    "checked_at": "2026-10-30T08:49:49+00:00",
     "title": "开局一段扯，数据全靠编？真被一篇“神论文”气到了",
     "markdown_sha256": "5c1d3485037dc1776185c4ed5aee7b6f7daf4ca6374e28ee73ee05d0f1aeb949",
     "converter_version": 1
   },
   "8770": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:19:04+00:00",
+    "checked_at": "2026-10-30T08:49:53+00:00",
     "title": "Dropout视角下的MLM和MAE：一些新的启发",
     "markdown_sha256": "0b7612879d5d3c02cae0667479a87740e6d30375cd780c00598de66adcc3ddf6",
     "converter_version": 1
@@ -8464,7 +8464,7 @@
   },
   "132": {
     "status": "conversion_failed",
-    "checked_at": "2026-10-29T08:43:25+00:00",
+    "checked_at": "2026-10-30T08:49:53+00:00",
     "title": "一道从小学到高中都可能考到的题目",
     "error": "Unreviewed legacy element: a<b，则有<br",
     "converter_version": 1,

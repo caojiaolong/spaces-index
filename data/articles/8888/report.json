@@ -6,7 +6,14 @@
     "source_url": "https://spaces.ac.cn/archives/8888",
     "date": "2022-01-30",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "信息时代",
+    "source_tags": [
+      "NLP",
+      "信息抽取",
+      "NER"
+    ],
+    "source_summary": "本文分享了一个基于GlobalPointer的实体关系联合抽取模型——“GPLinker”，并提供了一个“自上而下”的推导理解给大家参考。"
   },
   "validation": {
     "passed": true,
@@ -30,8 +37,8 @@
     "converter_version": 1,
     "markdown_sha256": "01e50aea17247f77ac2c28e5fa9f50d93a3da429d48de9bf1b6d228fdc13521d"
   },
-  "fetched_at": "2026-09-14T13:01:43+00:00",
+  "fetched_at": "2026-10-30T08:49:18+00:00",
   "source_snapshot_sha256": "ec63d76c61542225d8ccda0b395ca9707ed900405953913cdcf6ec562af18f26",
   "images": {},
-  "local_only": true
+  "publication_policy": "config/mirror.json"
 }

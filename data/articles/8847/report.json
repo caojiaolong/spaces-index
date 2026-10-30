@@ -6,7 +6,14 @@
     "source_url": "https://spaces.ac.cn/archives/8847",
     "date": "2022-01-06",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "信息时代",
+    "source_tags": [
+      "语义",
+      "语义相似度",
+      "对比学习"
+    ],
+    "source_summary": "本文提出了一种新的有监督句向量方案CoSENT（Cosine Sentence），相比于InferSent和Sentence-BERT，它的训练过程更贴近预测，并且实验显示，CoSENT在收敛速度和最终效果上都普遍比InferSent和Sentence-BERT要好。"
   },
   "validation": {
     "passed": true,
@@ -30,8 +37,8 @@
     "converter_version": 1,
     "markdown_sha256": "56b7458ea03acc53141ed443ba93c33575c85a69d3ef24229a0593fdeab7c21a"
   },
-  "fetched_at": "2026-09-14T13:02:10+00:00",
+  "fetched_at": "2026-10-30T08:49:35+00:00",
   "source_snapshot_sha256": "8b65ad17f8fb5a7db5324f200dce8afcb1b5e903da34fa1e8b77982978bcb450",
   "images": {},
-  "local_only": true
+  "publication_policy": "config/mirror.json"
 }

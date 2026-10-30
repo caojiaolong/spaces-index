@@ -6,9 +6,18 @@
     "source_url": "https://spaces.ac.cn/archives/8907",
     "date": "2022-02-14",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "信息时代",
+    "source_tags": [
+      "对偶",
+      "深度学习",
+      "损失函数",
+      "梯度",
+      "多任务"
+    ],
+    "source_summary": null
   },
-  "fetched_at": "2026-09-14T13:01:22+00:00",
+  "fetched_at": "2026-10-30T08:49:09+00:00",
   "source_snapshot_sha256": "02d1f2cfe41d67e3e2990e35d0c1eccb198ce157f9923c412954378acafffa43",
   "validators": {
     "etag": null,

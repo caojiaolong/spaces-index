@@ -6,9 +6,17 @@
     "source_url": "https://spaces.ac.cn/archives/9039",
     "date": "2022-04-15",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "数学研究",
+    "source_tags": [
+      "损失函数",
+      "对抗训练",
+      "NER",
+      "正则化"
+    ],
+    "source_summary": null
   },
-  "fetched_at": "2026-09-14T13:00:11+00:00",
+  "fetched_at": "2026-10-30T08:48:23+00:00",
   "source_snapshot_sha256": "ebcfa253ec89801e19f403fd77c800dc18bd74f12b3b26f4d06d9a4dd5c4e932",
   "validators": {
     "etag": null,

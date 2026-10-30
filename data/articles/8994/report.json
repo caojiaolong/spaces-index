@@ -6,7 +6,15 @@
     "source_url": "https://spaces.ac.cn/archives/8994",
     "date": "2022-03-19",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "信息时代",
+    "source_tags": [
+      "模型",
+      "优化",
+      "深度学习",
+      "梯度"
+    ],
+    "source_summary": "本文讨论了“为什么需要残差”这个问题，在DeepNet的启发之下，得到的结论是残差可以同时稳定前向传播和反向传播并解决增量爆炸，从而使得深层模型更容易训练，而无残差的普通前馈神经网络，则无法同时解决这三个问题，因此其深层化后不容易训练。"
   },
   "validation": {
     "passed": true,
@@ -30,8 +38,8 @@
     "converter_version": 1,
     "markdown_sha256": "f94f1f05e66af6e3ae2a916fb579ab27e7501cf7453975c0ff17f4a48308eccf"
   },
-  "fetched_at": "2026-09-14T13:00:45+00:00",
+  "fetched_at": "2026-10-30T08:48:41+00:00",
   "source_snapshot_sha256": "03fadd42ec02608d89f9dcfe40683a1539cee9ed2beac89205246f646f62c074",
   "images": {},
-  "local_only": true
+  "publication_policy": "config/mirror.json"
 }
