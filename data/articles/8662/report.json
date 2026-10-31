@@ -6,7 +6,13 @@
     "source_url": "https://spaces.ac.cn/archives/8662",
     "date": "2021-09-08",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "信息时代",
+    "source_tags": [
+      "编程",
+      "python"
+    ],
+    "source_summary": null
   },
   "validation": {
     "passed": true,
@@ -30,8 +36,8 @@
     "converter_version": 1,
     "markdown_sha256": "5f421baa95184ed8109ed84e56b374c92d562134e4eee0f926f690d1eda094ce"
   },
-  "fetched_at": "2026-09-14T13:04:32+00:00",
+  "fetched_at": "2026-10-31T08:36:20+00:00",
   "source_snapshot_sha256": "d5e54136d5c232ce42e7ac192670a7223180f7296ac4dcd6975764270d6a93fb",
   "images": {},
-  "local_only": true
+  "publication_policy": "config/mirror.json"
 }

@@ -6,9 +6,17 @@
     "source_url": "https://spaces.ac.cn/archives/8634",
     "date": "2021-08-24",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "信息时代",
+    "source_tags": [
+      "模型",
+      "分析",
+      "梯度",
+      "优化器"
+    ],
+    "source_summary": "本文介绍了笔者在调试模型中的一个发现——梯度累积隐藏在优化器的动量中，然后对此作了进一步的简单分析和实验，发现通过调整滑动系数和学习率也能达到近似的梯度累积效果，进而发现“少更新几次，效果反而更好”的反直觉现象。"
   },
-  "fetched_at": "2026-09-14T13:04:44+00:00",
+  "fetched_at": "2026-10-31T08:36:27+00:00",
   "source_snapshot_sha256": "ae7278179c1338d7a90ed17ee90a5b246be676927929271a278000fb12614622",
   "validators": {
     "etag": null,

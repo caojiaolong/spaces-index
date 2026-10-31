@@ -6,9 +6,15 @@
     "source_url": "https://spaces.ac.cn/archives/8656",
     "date": "2021-09-01",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "信息时代",
+    "source_tags": [
+      "损失函数",
+      "相似度"
+    ],
+    "source_summary": null
   },
-  "fetched_at": "2026-09-14T13:04:38+00:00",
+  "fetched_at": "2026-10-31T08:36:24+00:00",
   "source_snapshot_sha256": "1193793ee6b0f40485e6762b4535409c5e25b7747e23b75b7dafe51e291e807b",
   "validators": {
     "etag": null,

@@ -6,9 +6,17 @@
     "source_url": "https://spaces.ac.cn/archives/8718",
     "date": "2021-10-10",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "数学研究",
+    "source_tags": [
+      "函数",
+      "近似",
+      "分析",
+      "光滑"
+    ],
+    "source_summary": "本文介绍了一种利用狄拉克函数来构造光滑近似的方法，其特点是比较通用，对原函数没有太严格的要求。作为例子，我们利用它导出了ReLU函数的各种常见近似以及取整函数的一个光滑近似。"
   },
-  "fetched_at": "2026-09-14T13:03:47+00:00",
+  "fetched_at": "2026-10-31T08:35:58+00:00",
   "source_snapshot_sha256": "efb6260bddf0d3beb337eae6434b7c174346e23563d9e4ec3ce1414237e4d0c5",
   "validators": {
     "etag": null,

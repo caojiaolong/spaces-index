@@ -6,9 +6,17 @@
     "source_url": "https://spaces.ac.cn/archives/8791",
     "date": "2021-12-09",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "信息时代",
+    "source_tags": [
+      "概率",
+      "变分",
+      "vae",
+      "生成模型"
+    ],
+    "source_summary": "本文从估计样本的概率密度这一出发点介绍了变分自编码器VAE，结合重要性采样，我们可以得到VAE的一个快速推导，完全避开ELBO等诸多繁琐细节。"
   },
-  "fetched_at": "2026-09-14T13:02:49+00:00",
+  "fetched_at": "2026-10-31T08:35:33+00:00",
   "source_snapshot_sha256": "9de4cb1005f8a94cbac62a74e0d873fd5603be6c6868302748074fb296abd956",
   "validators": {
     "etag": null,

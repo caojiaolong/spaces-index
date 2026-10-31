@@ -6,7 +6,14 @@
     "source_url": "https://spaces.ac.cn/archives/8711",
     "date": "2021-09-27",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "信息时代",
+    "source_tags": [
+      "维度",
+      "熵",
+      "词向量"
+    ],
+    "source_summary": null
   },
   "validation": {
     "passed": true,
@@ -30,8 +37,8 @@
     "converter_version": 1,
     "markdown_sha256": "535dcdb3875f9e09e9a83d07be79776a078c95531e5a0b21d86399f7eb9d223f"
   },
-  "fetched_at": "2026-09-14T13:04:00+00:00",
+  "fetched_at": "2026-10-31T08:36:05+00:00",
   "source_snapshot_sha256": "cd1343aa548de811279ef64d85edc8a61fb4b0b21cc931f50578c1d5864d191a",
   "images": {},
-  "local_only": true
+  "publication_policy": "config/mirror.json"
 }

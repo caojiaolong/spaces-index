@@ -6,9 +6,16 @@
     "source_url": "https://spaces.ac.cn/archives/8601",
     "date": "2021-08-06",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "信息时代",
+    "source_tags": [
+      "语言模型",
+      "attention",
+      "核方法"
+    ],
+    "source_summary": "本文介绍了三种将标准Attention视为无限维线性Attention的理解，这些不同的视角能让我们将标准Attention与线性Attention联系起来，从多个角度更全面地理解Attention机制。"
   },
-  "fetched_at": "2026-09-14T13:05:05+00:00",
+  "fetched_at": "2026-10-31T08:36:38+00:00",
   "source_snapshot_sha256": "b088c81228a5da0a2e9600aaa91fbb5e3a1691548145422a4a97ad71d90a39b9",
   "validators": {
     "etag": null,

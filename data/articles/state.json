@@ -1856,21 +1856,21 @@
   },
   "8802": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:19:04+00:00",
+    "checked_at": "2026-10-31T08:35:26+00:00",
     "title": "Seq2Seq+前缀树：检索任务新范式（以KgCLUE为例）",
     "markdown_sha256": "66d67b8eea93caf8e89161095a7c4068abdc735261a0db5f967e32356c454a21",
     "converter_version": 1
   },
   "8796": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:19:04+00:00",
+    "checked_at": "2026-10-31T08:35:29+00:00",
     "title": "输入梯度惩罚与参数梯度惩罚的一个不等式",
     "markdown_sha256": "ce99daa672140677d349340f0c147b9726d25abaa7483db47c6c9f1f9f9a2517",
     "converter_version": 1
   },
   "8791": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:19:04+00:00",
+    "checked_at": "2026-10-31T08:35:33+00:00",
     "title": "变分自编码器（八）：估计样本概率密度",
     "markdown_sha256": "16c0f38869d3cafebb3da5a27d324c1b10b017880a9dcc45a42febf8d11eb612",
     "converter_version": 1
@@ -1891,140 +1891,140 @@
   },
   "8764": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:19:05+00:00",
+    "checked_at": "2026-10-31T08:35:36+00:00",
     "title": "ChildTuning：试试把Dropout加到梯度上去？",
     "markdown_sha256": "a30b0882287b28e7ce904707b212c06fbf912e3fda918cb79c6ff42f3ebaab2d",
     "converter_version": 1
   },
   "8757": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:19:05+00:00",
+    "checked_at": "2026-10-31T08:35:40+00:00",
     "title": "WGAN新方案：通过梯度归一化来实现L约束",
     "markdown_sha256": "5950b39d4fc1e26efff8c330af5b576e0fa19f04357b2a7c7d302ab8e640e53c",
     "converter_version": 1
   },
   "8747": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:19:05+00:00",
+    "checked_at": "2026-10-31T08:35:43+00:00",
     "title": "模型优化漫谈：BERT的初始标准差为什么是0.02？",
     "markdown_sha256": "01a50fbd0d3cf8cd1a4f3a7e5f7b7ac6b063fd819d46d53fba4184d649a58ce7",
     "converter_version": 1
   },
   "8739": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:19:05+00:00",
+    "checked_at": "2026-10-31T08:35:47+00:00",
     "title": "bert4keras在手，baseline我有：CLUE基准代码",
     "markdown_sha256": "cd37184f1bfce3b23fb9031da8ac75909921eea4bca6651bd9def706a31ec873",
     "converter_version": 1
   },
   "8728": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:19:05+00:00",
+    "checked_at": "2026-10-31T08:35:50+00:00",
     "title": "CAN：借助先验分布提升分类性能的简单后处理技巧",
     "markdown_sha256": "286e946a9d8e2536bfb74fc63eb3a6def9d97e844abb8758b52299e24be148b2",
     "converter_version": 1
   },
   "8725": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:19:06+00:00",
+    "checked_at": "2026-10-31T08:35:54+00:00",
     "title": "初始化方法中非方阵的维度平均策略思考",
     "markdown_sha256": "1de62218e418054767bf5af5bfa1123afe0075f2845a890dd6596599f35e73c9",
     "converter_version": 1
   },
   "8718": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:19:06+00:00",
+    "checked_at": "2026-10-31T08:35:58+00:00",
     "title": "用狄拉克函数来构造非光滑函数的光滑近似",
     "markdown_sha256": "7a1a3f0276029ac0c1789203dd90f1722dc0c10071c4f7e3fc483c67911d83ef",
     "converter_version": 1
   },
   "8715": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:19:06+00:00",
+    "checked_at": "2026-10-31T08:36:01+00:00",
     "title": "关于WhiteningBERT原创性的疑问和沟通",
     "markdown_sha256": "d1a45a1109f4aba16acc6c3ddb1c7236e6dc1ad9fa1aa992580f9d3d1b8a4f08",
     "converter_version": 1
   },
   "8711": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:19:06+00:00",
+    "checked_at": "2026-10-31T08:36:05+00:00",
     "title": "关于维度公式“n > 8.33 log N”的可用性分析",
     "markdown_sha256": "535dcdb3875f9e09e9a83d07be79776a078c95531e5a0b21d86399f7eb9d223f",
     "converter_version": 1
   },
   "8706": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:19:06+00:00",
+    "checked_at": "2026-10-31T08:36:09+00:00",
     "title": "让人惊叹的Johnson-Lindenstrauss引理：应用篇",
     "markdown_sha256": "51ecc82bc42d8643977a71996ae9c8237c498c7bc74d62561cdb116db39efbef",
     "converter_version": 1
   },
   "8679": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:19:07+00:00",
+    "checked_at": "2026-10-31T08:36:13+00:00",
     "title": "让人惊叹的Johnson-Lindenstrauss引理：理论篇",
     "markdown_sha256": "4f17892d77d228ab9a8b6ec56a2f54c99ce3954c1b66fa8c840825d051ea3598",
     "converter_version": 1
   },
   "8671": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:19:07+00:00",
+    "checked_at": "2026-10-31T08:36:16+00:00",
     "title": "曾被嫌弃的预训练任务NSP，做出了优秀的Zero Shot效果",
     "markdown_sha256": "4eb0d252b9303752446ffb2742b26a5fe7f1384cd611dd14404ce2d8d72ce49d",
     "converter_version": 1
   },
   "8662": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:19:07+00:00",
+    "checked_at": "2026-10-31T08:36:20+00:00",
     "title": "有限内存下全局打乱几百G文件（Python）",
     "markdown_sha256": "5f421baa95184ed8109ed84e56b374c92d562134e4eee0f926f690d1eda094ce",
     "converter_version": 1
   },
   "8656": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:19:07+00:00",
+    "checked_at": "2026-10-31T08:36:24+00:00",
     "title": "从三角不等式到Margin Softmax",
     "markdown_sha256": "1ff7da4bf856d11d06c66778d4045ae14e9bcb66a8037829771bab196a37650d",
     "converter_version": 1
   },
   "8634": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:19:07+00:00",
+    "checked_at": "2026-10-31T08:36:27+00:00",
     "title": "隐藏在动量中的梯度累积：少更新几步，效果反而更好？",
     "markdown_sha256": "a08c2be14e6009ba2a079cc670897bd0f043e87e698307d4f40c992bbe30fab5",
     "converter_version": 1
   },
   "8620": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:19:07+00:00",
+    "checked_at": "2026-10-31T08:36:31+00:00",
     "title": "浅谈Transformer的初始化、参数化与标准化",
     "markdown_sha256": "d43791abf96ddbf38feb2038182171f299d8504cbc871ff8bc080bf76bc6b262",
     "converter_version": 1
   },
   "8610": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:19:08+00:00",
+    "checked_at": "2026-10-31T08:36:35+00:00",
     "title": "线性Transformer应该不是你要等的那个模型",
     "markdown_sha256": "a5970831ab9b7cbe1c38b4664fa0277ddbed9d4cb2ef53ffc29bf8007eaae577",
     "converter_version": 1
   },
   "8601": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:19:08+00:00",
+    "checked_at": "2026-10-31T08:36:38+00:00",
     "title": "Transformer升级之路：5、作为无限维的线性Attention",
     "markdown_sha256": "782a21b58c539fbfb21ce0367e98037d2eb4fff6321738c8c0e4fa0d9a2c15cf",
     "converter_version": 1
   },
   "8586": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:19:08+00:00",
+    "checked_at": "2026-10-31T08:36:42+00:00",
     "title": "FlatNCE：小批次对比学习效果差的原因竟是浮点误差？",
     "markdown_sha256": "c25d64e7591173dffb5ef4bbc7d9bf23087e8666e39b6a7007993ee610bca005",
     "converter_version": 1
   },
   "8578": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:19:08+00:00",
+    "checked_at": "2026-10-31T08:36:45+00:00",
     "title": "概率视角下的线性模型：逻辑回归有解析解吗？",
     "markdown_sha256": "ab3f2ed6dff4c58c7e36dc5b6b34fb2a814fdbcac9e26c88c25c10936fa36633",
     "converter_version": 1
@@ -2045,14 +2045,14 @@
   },
   "8496": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:19:09+00:00",
+    "checked_at": "2026-10-31T08:36:49+00:00",
     "title": "又是Dropout两次！这次它做到了有监督任务的SOTA",
     "markdown_sha256": "af90b2a31a44e01ddfb51b453c1f08e98ac35b37837cd8ac11bfe13fe3b26f83",
     "converter_version": 1
   },
   "8475": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:19:09+00:00",
+    "checked_at": "2026-10-31T08:36:52+00:00",
     "title": "UniVAE：基于Transformer的单模型、多尺度的VAE模型",
     "markdown_sha256": "8a5e9d26df6e25bd42bb8aa247d0580ff690835e5c121c34a4fccac3a2306394",
     "converter_version": 1
@@ -8464,7 +8464,7 @@
   },
   "132": {
     "status": "conversion_failed",
-    "checked_at": "2026-10-30T08:49:53+00:00",
+    "checked_at": "2026-10-31T08:36:52+00:00",
     "title": "一道从小学到高中都可能考到的题目",
     "error": "Unreviewed legacy element: a<b，则有<br",
     "converter_version": 1,

@@ -6,7 +6,15 @@
     "source_url": "https://spaces.ac.cn/archives/8802",
     "date": "2021-12-17",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "信息时代",
+    "source_tags": [
+      "代码",
+      "语义",
+      "keras",
+      "相似度"
+    ],
+    "source_summary": null
   },
   "validation": {
     "passed": true,
@@ -30,8 +38,8 @@
     "converter_version": 1,
     "markdown_sha256": "66d67b8eea93caf8e89161095a7c4068abdc735261a0db5f967e32356c454a21"
   },
-  "fetched_at": "2026-09-14T13:02:36+00:00",
+  "fetched_at": "2026-10-31T08:35:26+00:00",
   "source_snapshot_sha256": "733769c3d2cae96820a4bde797bcb8a2f82c8947683afae46c791c170dcd9ff0",
   "images": {},
-  "local_only": true
+  "publication_policy": "config/mirror.json"
 }

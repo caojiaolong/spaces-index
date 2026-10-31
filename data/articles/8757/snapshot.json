@@ -6,9 +6,16 @@
     "source_url": "https://spaces.ac.cn/archives/8757",
     "date": "2021-11-15",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "信息时代",
+    "source_tags": [
+      "无监督",
+      "GAN",
+      "生成模型"
+    ],
+    "source_summary": "本文介绍了一种实现WGAN的新方案——梯度归一化，该方案形式上比较简单，论文报告的效果也还不错，但个人认为其中还有不少值得疑问之处。"
   },
-  "fetched_at": "2026-09-14T13:03:15+00:00",
+  "fetched_at": "2026-10-31T08:35:40+00:00",
   "source_snapshot_sha256": "e8765ca654c43b2c75a4aa18a6a4d3a4583a283d432ec2a4dc6b4f63d9a03abb",
   "validators": {
     "etag": null,

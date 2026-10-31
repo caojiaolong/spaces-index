@@ -6,7 +6,14 @@
     "source_url": "https://spaces.ac.cn/archives/8715",
     "date": "2021-10-09",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "信息时代",
+    "source_tags": [
+      "情感",
+      "模型",
+      "工作"
+    ],
+    "source_summary": null
   },
   "validation": {
     "passed": true,
@@ -30,8 +37,8 @@
     "converter_version": 1,
     "markdown_sha256": "d1a45a1109f4aba16acc6c3ddb1c7236e6dc1ad9fa1aa992580f9d3d1b8a4f08"
   },
-  "fetched_at": "2026-09-14T13:03:54+00:00",
+  "fetched_at": "2026-10-31T08:36:01+00:00",
   "source_snapshot_sha256": "fac0f832c486b0853068677900f846592532f3d1122b2f6a8987d8428ca7ac8a",
   "images": {},
-  "local_only": true
+  "publication_policy": "config/mirror.json"
 }

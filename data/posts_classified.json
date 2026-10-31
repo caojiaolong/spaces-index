@@ -5859,6 +5859,7 @@
       "相似度"
     ],
     "source_summary": null,
+    "metadata_checked_at": "2026-10-31T08:35:26+00:00",
     "topics": [
       "深度学习基础",
       "NLP与信息抽取",
@@ -5881,6 +5882,7 @@
       "泛化"
     ],
     "source_summary": "本文主要介绍了两种梯度惩罚项之间的一个不等式，并给出了自己的证明以及一个简单的评析。",
+    "metadata_checked_at": "2026-10-31T08:35:29+00:00",
     "topics": [
       "优化与训练"
     ],
@@ -5901,6 +5903,7 @@
       "生成模型"
     ],
     "source_summary": "本文从估计样本的概率密度这一出发点介绍了变分自编码器VAE，结合重要性采样，我们可以得到VAE的一个快速推导，完全避开ELBO等诸多繁琐细节。",
+    "metadata_checked_at": "2026-10-31T08:35:33+00:00",
     "topics": [
       "生成模型"
     ],
@@ -5963,6 +5966,7 @@
       "梯度"
     ],
     "source_summary": null,
+    "metadata_checked_at": "2026-10-31T08:35:36+00:00",
     "topics": [
       "深度学习基础",
       "优化与训练"
@@ -5983,6 +5987,7 @@
       "生成模型"
     ],
     "source_summary": "本文介绍了一种实现WGAN的新方案——梯度归一化，该方案形式上比较简单，论文报告的效果也还不错，但个人认为其中还有不少值得疑问之处。",
+    "metadata_checked_at": "2026-10-31T08:35:40+00:00",
     "topics": [
       "生成模型"
     ],
@@ -6003,6 +6008,7 @@
       "梯度"
     ],
     "source_summary": null,
+    "metadata_checked_at": "2026-10-31T08:35:43+00:00",
     "topics": [
       "NLP与信息抽取",
       "科普问答与百科"
@@ -6023,6 +6029,7 @@
       "keras"
     ],
     "source_summary": "本文分享了笔者基于bert4keras构建的CLUE评测基准代码，以及简单介绍了每类任务的建模思路。该套baseline代码有着简单清晰、易于迁移的特点，并且基本能达到CLUE官方宣称的基准成绩，部分任务还更优，因此算是上是及格的基准代码了。",
+    "metadata_checked_at": "2026-10-31T08:35:47+00:00",
     "topics": [
       "深度学习基础",
       "NLP与信息抽取",
@@ -6045,6 +6052,7 @@
       "技巧"
     ],
     "source_summary": "本文介绍了一种名为CAN的简单后处理技巧，它借助先验分布来将预测结果重新归一化，几乎没有增加多少计算成本就能提高分类性能。经过笔者的实验，CAN确实能给分类效果带来一定提升，并且通常来说类别数越多，效果越明显。",
+    "metadata_checked_at": "2026-10-31T08:35:50+00:00",
     "topics": [
       "概率统计与信息论"
     ],
@@ -6064,6 +6072,7 @@
       "梯度"
     ],
     "source_summary": "本文简单思考了初始化方法中非方阵的维度平均方案，一直以来，大家似乎对默认的代数平均都没有什么疑问，而笔者从两种不同的角度得出了不同的平均策略的可能性。至于哪种平均策略更好，笔者也没有仔细做实验，有兴趣的读者自行尝试就好。当然，也可能在当前诸多优化策略之下，默认的初始化方案也工作得很好了，也就没有仔细调节的必要性了。",
+    "metadata_checked_at": "2026-10-31T08:35:54+00:00",
     "topics": [
       "优化与训练"
     ],
@@ -6084,6 +6093,7 @@
       "光滑"
     ],
     "source_summary": "本文介绍了一种利用狄拉克函数来构造光滑近似的方法，其特点是比较通用，对原函数没有太严格的要求。作为例子，我们利用它导出了ReLU函数的各种常见近似以及取整函数的一个光滑近似。",
+    "metadata_checked_at": "2026-10-31T08:35:58+00:00",
     "topics": [
       "数学工具"
     ],
@@ -6103,6 +6113,7 @@
       "工作"
     ],
     "source_summary": null,
+    "metadata_checked_at": "2026-10-31T08:36:01+00:00",
     "topics": [
       "NLP与信息抽取",
       "阅读写作与随笔"
@@ -6123,6 +6134,7 @@
       "词向量"
     ],
     "source_summary": null,
+    "metadata_checked_at": "2026-10-31T08:36:05+00:00",
     "topics": [
       "词向量与Embedding",
       "概率统计与信息论",
@@ -6145,6 +6157,7 @@
       "机器学习"
     ],
     "source_summary": null,
+    "metadata_checked_at": "2026-10-31T08:36:08+00:00",
     "topics": [
       "数学工具"
     ],
@@ -6165,6 +6178,7 @@
       "机器学习"
     ],
     "source_summary": null,
+    "metadata_checked_at": "2026-10-31T08:36:13+00:00",
     "topics": [
       "数学工具"
     ],
@@ -6185,6 +6199,7 @@
       "模版"
     ],
     "source_summary": "本文分享了用BERT的预训练任务NSP来做Zero Shot的一篇论文，论文结果显示用NSP来做Zero Shot也能做到非常优秀的效果，也许假以时日，NSP要“崛起”了。",
+    "metadata_checked_at": "2026-10-31T08:36:16+00:00",
     "topics": [
       "大模型与Transformer",
       "NLP与信息抽取"
@@ -6204,6 +6219,7 @@
       "python"
     ],
     "source_summary": null,
+    "metadata_checked_at": "2026-10-31T08:36:20+00:00",
     "topics": [
       "工程工具"
     ],
@@ -6222,6 +6238,7 @@
       "相似度"
     ],
     "source_summary": null,
+    "metadata_checked_at": "2026-10-31T08:36:24+00:00",
     "topics": [
       "深度学习基础",
       "大模型与Transformer",
@@ -6246,6 +6263,7 @@
       "优化器"
     ],
     "source_summary": "本文介绍了笔者在调试模型中的一个发现——梯度累积隐藏在优化器的动量中，然后对此作了进一步的简单分析和实验，发现通过调整滑动系数和学习率也能达到近似的梯度累积效果，进而发现“少更新几次，效果反而更好”的反直觉现象。",
+    "metadata_checked_at": "2026-10-31T08:36:27+00:00",
     "topics": [
       "优化与训练"
     ],
@@ -6266,6 +6284,7 @@
       "attention"
     ],
     "source_summary": null,
+    "metadata_checked_at": "2026-10-31T08:36:31+00:00",
     "topics": [
       "大模型与Transformer",
       "优化与训练"
@@ -6286,6 +6305,7 @@
       "attention"
     ],
     "source_summary": null,
+    "metadata_checked_at": "2026-10-31T08:36:35+00:00",
     "topics": [
       "大模型与Transformer",
       "数学工具"
@@ -6306,6 +6326,7 @@
       "核方法"
     ],
     "source_summary": "本文介绍了三种将标准Attention视为无限维线性Attention的理解，这些不同的视角能让我们将标准Attention与线性Attention联系起来，从多个角度更全面地理解Attention机制。",
+    "metadata_checked_at": "2026-10-31T08:36:38+00:00",
     "topics": [
       "大模型与Transformer"
     ],
@@ -6326,6 +6347,7 @@
       "对比学习"
     ],
     "source_summary": null,
+    "metadata_checked_at": "2026-10-31T08:36:42+00:00",
     "topics": [
       "深度学习基础",
       "优化与训练"
@@ -6346,6 +6368,7 @@
       "优化"
     ],
     "source_summary": null,
+    "metadata_checked_at": "2026-10-31T08:36:45+00:00",
     "topics": [
       "概率统计与信息论",
       "数学工具"
@@ -6406,6 +6429,7 @@
       "对抗训练"
     ],
     "source_summary": null,
+    "metadata_checked_at": "2026-10-31T08:36:49+00:00",
     "topics": [
       "深度学习基础",
       "优化与训练"
@@ -6427,6 +6451,7 @@
       "attention"
     ],
     "source_summary": "本文介绍了笔者构思的UniVAE设计，它沿用类似UniLM的思路，通过特定的Attention Mask将VAE做到了一个Transformer模型里边，并且还具备多尺度特性。除了常规的VAE模型外，该设计还可以用于VQ-VAE等模型。",
+    "metadata_checked_at": "2026-10-31T08:36:52+00:00",
     "topics": [
       "大模型与Transformer",
       "生成模型"

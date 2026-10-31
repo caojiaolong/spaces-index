@@ -6,7 +6,14 @@
     "source_url": "https://spaces.ac.cn/archives/8496",
     "date": "2021-07-01",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "信息时代",
+    "source_tags": [
+      "优化",
+      "损失函数",
+      "对抗训练"
+    ],
+    "source_summary": null
   },
   "validation": {
     "passed": true,
@@ -30,8 +37,8 @@
     "converter_version": 1,
     "markdown_sha256": "af90b2a31a44e01ddfb51b453c1f08e98ac35b37837cd8ac11bfe13fe3b26f83"
   },
-  "fetched_at": "2026-09-14T13:05:40+00:00",
+  "fetched_at": "2026-10-31T08:36:49+00:00",
   "source_snapshot_sha256": "6259cfcd044aacda898205dc2d27b50dfa3818573c3e6c35f6029a52b977cf47",
   "images": {},
-  "local_only": true
+  "publication_policy": "config/mirror.json"
 }

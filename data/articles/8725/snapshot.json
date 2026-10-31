@@ -6,9 +6,16 @@
     "source_url": "https://spaces.ac.cn/archives/8725",
     "date": "2021-10-18",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "信息时代",
+    "source_tags": [
+      "模型",
+      "优化",
+      "梯度"
+    ],
+    "source_summary": "本文简单思考了初始化方法中非方阵的维度平均方案，一直以来，大家似乎对默认的代数平均都没有什么疑问，而笔者从两种不同的角度得出了不同的平均策略的可能性。至于哪种平均策略更好，笔者也没有仔细做实验，有兴趣的读者自行尝试就好。当然，也可能在当前诸多优化策略之下，默认的初始化方案也工作得很好了，也就没有仔细调节的必要性了。"
   },
-  "fetched_at": "2026-09-14T13:03:41+00:00",
+  "fetched_at": "2026-10-31T08:35:54+00:00",
   "source_snapshot_sha256": "8978566cf204a412711cce0f4fb44baa0fa4424be5e0aef04d681a6272bd51f8",
   "validators": {
     "etag": null,

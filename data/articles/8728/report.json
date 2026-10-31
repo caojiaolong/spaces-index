@@ -6,7 +6,15 @@
     "source_url": "https://spaces.ac.cn/archives/8728",
     "date": "2021-10-22",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "信息时代",
+    "source_tags": [
+      "模型",
+      "概率",
+      "分析",
+      "技巧"
+    ],
+    "source_summary": "本文介绍了一种名为CAN的简单后处理技巧，它借助先验分布来将预测结果重新归一化，几乎没有增加多少计算成本就能提高分类性能。经过笔者的实验，CAN确实能给分类效果带来一定提升，并且通常来说类别数越多，效果越明显。"
   },
   "validation": {
     "passed": true,
@@ -30,8 +38,8 @@
     "converter_version": 1,
     "markdown_sha256": "286e946a9d8e2536bfb74fc63eb3a6def9d97e844abb8758b52299e24be148b2"
   },
-  "fetched_at": "2026-09-14T13:03:34+00:00",
+  "fetched_at": "2026-10-31T08:35:50+00:00",
   "source_snapshot_sha256": "1cfdd96e5095b2bbcb949c700363305aab7fb0f8e929697b8edbe614ec046273",
   "images": {},
-  "local_only": true
+  "publication_policy": "config/mirror.json"
 }

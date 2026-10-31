@@ -6,9 +6,17 @@
     "source_url": "https://spaces.ac.cn/archives/8796",
     "date": "2021-12-11",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "数学研究",
+    "source_tags": [
+      "不等式",
+      "优化",
+      "梯度",
+      "泛化"
+    ],
+    "source_summary": "本文主要介绍了两种梯度惩罚项之间的一个不等式，并给出了自己的证明以及一个简单的评析。"
   },
-  "fetched_at": "2026-09-14T13:02:43+00:00",
+  "fetched_at": "2026-10-31T08:35:29+00:00",
   "source_snapshot_sha256": "f0d5e6cd6c5b9118c70c912544bed23ad431c656ef3d367cf9617902f001ff17",
   "validators": {
     "etag": null,

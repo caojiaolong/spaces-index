@@ -6,7 +6,14 @@
     "source_url": "https://spaces.ac.cn/archives/8739",
     "date": "2021-10-31",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "信息时代",
+    "source_tags": [
+      "模型",
+      "代码",
+      "keras"
+    ],
+    "source_summary": "本文分享了笔者基于bert4keras构建的CLUE评测基准代码，以及简单介绍了每类任务的建模思路。该套baseline代码有着简单清晰、易于迁移的特点，并且基本能达到CLUE官方宣称的基准成绩，部分任务还更优，因此算是上是及格的基准代码了。"
   },
   "validation": {
     "passed": true,
@@ -30,8 +37,8 @@
     "converter_version": 1,
     "markdown_sha256": "cd37184f1bfce3b23fb9031da8ac75909921eea4bca6651bd9def706a31ec873"
   },
-  "fetched_at": "2026-09-14T13:03:28+00:00",
+  "fetched_at": "2026-10-31T08:35:47+00:00",
   "source_snapshot_sha256": "6aa86e3c2ce1434fd2860d1cbee9a493b8d629b22e65b96111b2c247ec719d3e",
   "images": {},
-  "local_only": true
+  "publication_policy": "config/mirror.json"
 }

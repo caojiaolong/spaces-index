@@ -6,7 +6,15 @@
     "source_url": "https://spaces.ac.cn/archives/8620",
     "date": "2021-08-17",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "数学研究",
+    "source_tags": [
+      "模型",
+      "优化",
+      "梯度",
+      "attention"
+    ],
+    "source_summary": null
   },
   "validation": {
     "passed": true,
@@ -30,8 +38,8 @@
     "converter_version": 1,
     "markdown_sha256": "d43791abf96ddbf38feb2038182171f299d8504cbc871ff8bc080bf76bc6b262"
   },
-  "fetched_at": "2026-09-14T13:04:51+00:00",
+  "fetched_at": "2026-10-31T08:36:31+00:00",
   "source_snapshot_sha256": "a8b2e186873b4cf09ecb11ce6c1caf52f988efd9e2dffef59e59d9a8fa94b528",
   "images": {},
-  "local_only": true
+  "publication_policy": "config/mirror.json"
 }

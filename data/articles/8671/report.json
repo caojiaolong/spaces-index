@@ -6,7 +6,15 @@
     "source_url": "https://spaces.ac.cn/archives/8671",
     "date": "2021-09-10",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "信息时代",
+    "source_tags": [
+      "无监督",
+      "语言模型",
+      "NLP",
+      "模版"
+    ],
+    "source_summary": "本文分享了用BERT的预训练任务NSP来做Zero Shot的一篇论文，论文结果显示用NSP来做Zero Shot也能做到非常优秀的效果，也许假以时日，NSP要“崛起”了。"
   },
   "validation": {
     "passed": true,
@@ -30,8 +38,8 @@
     "converter_version": 1,
     "markdown_sha256": "4eb0d252b9303752446ffb2742b26a5fe7f1384cd611dd14404ce2d8d72ce49d"
   },
-  "fetched_at": "2026-09-14T13:04:26+00:00",
+  "fetched_at": "2026-10-31T08:36:16+00:00",
   "source_snapshot_sha256": "9fe0fd9b337f166010975c03705f79b8cdff02519ba5e90c690d76baad336764",
   "images": {},
-  "local_only": true
+  "publication_policy": "config/mirror.json"
 }
