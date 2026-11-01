@@ -6,7 +6,15 @@
     "source_url": "https://spaces.ac.cn/archives/8231",
     "date": "2021-03-08",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "数学研究",
+    "source_tags": [
+      "复数",
+      "分析",
+      "attention",
+      "位置编码"
+    ],
+    "source_summary": "总的来说，本文试图基于一些假设，反推出Sinusoidal位置编码来，这些假设具有其一定的合理性，也有一定的问题，所以相应的Sinusoidal位置编码可圈可点，但并非毫无瑕疵。但不管怎样，在当前的深度学习中，能够针对具体的问题得到一个显式解，而不是直接暴力拟合，Sinusoidal位置编码是一个不可多得的案例，值得我们思考回味。"
   },
   "validation": {
     "passed": true,
@@ -30,8 +38,8 @@
     "converter_version": 1,
     "markdown_sha256": "935ea1a7ce454193a5960ea26e937f614eb6f210c940ba4cc6592b9843d11931"
   },
-  "fetched_at": "2026-09-14T07:36:07+00:00",
+  "fetched_at": "2026-11-01T09:27:40+00:00",
   "source_snapshot_sha256": "7fef8af594554ec7e1f63b00aef10b251e935fcd9eae6302ceaaad8fdd752b1b",
   "images": {},
-  "local_only": true
+  "publication_policy": "config/mirror.json"
 }

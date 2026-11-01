@@ -6,7 +6,14 @@
     "source_url": "https://spaces.ac.cn/archives/8512",
     "date": "2021-07-08",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "数学研究",
+    "source_tags": [
+      "概率",
+      "矩阵",
+      "优化"
+    ],
+    "source_summary": "本文详细计算了两个多元正态分布的KL散度、巴氏距离和W距离，给出了它们的显式解析解，这些结果在某些场景下可以作为隐变量的正则项使用，来规范隐变量的分布。此外，本文还可以作为比较有挑战性的线性代数练习题，供大家参考练习。"
   },
   "validation": {
     "passed": true,
@@ -30,8 +37,8 @@
     "converter_version": 1,
     "markdown_sha256": "b43ca0aeba95314032219928c6d0af5c4aff4d49690c926884123d6b009616fe"
   },
-  "fetched_at": "2026-09-14T13:05:33+00:00",
+  "fetched_at": "2026-11-01T09:26:42+00:00",
   "source_snapshot_sha256": "4c46a383a1c60f378a5184271becb2affc3dde6b9539f0aa727e390f8ca78567",
   "images": {},
-  "local_only": true
+  "publication_policy": "config/mirror.json"
 }

@@ -1,0 +1,45 @@
+{
+  "metadata": {
+    "id": "11993",
+    "title": "平均之路：从Attention到TTT",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/11993",
+    "date": "2026-11-01",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "信息时代",
+    "source_tags": [
+      "线性",
+      "RNN",
+      "attention",
+      "sgd"
+    ],
+    "source_summary": "本文以各种平均近似为线，串联起Attention、TTT、DeltaNet、MesaNet等模型。沿着这条推导链，我们可以看清从Attention到TTT乃至各类线性模型的转化过程中，每一步以怎样的代价换取怎样的收益，从而对这些模型之间的关系形成一个相对自然、也更具普适性的理解。"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 67,
+    "display_formula_count": 12,
+    "image_count": 0,
+    "heading_count": 7,
+    "code_block_count": 0,
+    "source_text_sha256": "3c4d6e109b18511c12a2e0249313d5c783c0f6cb698555c5edd4b1b68bc04899",
+    "output_text_sha256": "3c4d6e109b18511c12a2e0249313d5c783c0f6cb698555c5edd4b1b68bc04899",
+    "latex_sha256": "61f38a3992e45c4f4ee669341a58641da2440395830fae6876140c137c70fc9a",
+    "body_sha256": "f3cdd8f6b419b5849ea309a35894337407c2e68559490101dbac9baa3695a17c",
+    "converter_version": 1,
+    "markdown_sha256": "e8084bb41ba3cf04fecdb4c81b3c3582655b14c93315dbae2280d905eb976ad9"
+  },
+  "fetched_at": "2026-11-01T09:26:35+00:00",
+  "source_snapshot_sha256": "0357abdd6f11c71dab19a8f03e46178920c948c8cfbb0afa9a4ee21cc783ce7c",
+  "images": {},
+  "publication_policy": "config/mirror.json"
+}

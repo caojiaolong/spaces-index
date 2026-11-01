@@ -6,9 +6,16 @@
     "source_url": "https://spaces.ac.cn/archives/8337",
     "date": "2021-04-16",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "信息时代",
+    "source_tags": [
+      "语言模型",
+      "比赛",
+      "语义相似度"
+    ],
+    "source_summary": "本文分享了一个搜狐文本匹配的baseline，主要是通过条件LayerNorm来增加模型的多样性，以实现同一模型处理不同类型的数据、形成不同输出的目的。"
   },
-  "fetched_at": "2026-09-14T13:07:12+00:00",
+  "fetched_at": "2026-11-01T09:27:22+00:00",
   "source_snapshot_sha256": "0b56484d7ddea1c890940d13442eb03bd961aa2d8a91d2423a9c480f8b6e3ab0",
   "validators": {
     "etag": null,

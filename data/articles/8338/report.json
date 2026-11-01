@@ -6,7 +6,13 @@
     "source_url": "https://spaces.ac.cn/archives/8338",
     "date": "2021-04-22",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "信息时代",
+    "source_tags": [
+      "语言模型",
+      "attention"
+    ],
+    "source_summary": "本文从Performer出发思考了线性Attention的一些问题，包括关于线性Attention的激活函数选择，以及线性Attention的瓶颈所在（低秩性、稀疏性），总的结论是，线性Attention的最佳激活函数应当是指数函数，而有效的Attention机制应当具备更高的秩和更大的稀疏性。"
   },
   "validation": {
     "passed": true,
@@ -30,8 +36,8 @@
     "converter_version": 1,
     "markdown_sha256": "b709061ab778a221b0f72246675aa9c820a5c39403bf958b7ffdd45ec67e3951"
   },
-  "fetched_at": "2026-09-14T13:07:06+00:00",
+  "fetched_at": "2026-11-01T09:27:18+00:00",
   "source_snapshot_sha256": "615cfde757de716f299857e2e4c17bc76278bb4f708e4fa8fdd0f3e1519f74ac",
   "images": {},
-  "local_only": true
+  "publication_policy": "config/mirror.json"
 }

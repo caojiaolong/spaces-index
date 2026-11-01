@@ -6,7 +6,14 @@
     "source_url": "https://spaces.ac.cn/archives/8471",
     "date": "2021-06-17",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "数学研究",
+    "source_tags": [
+      "模型",
+      "优化",
+      "梯度"
+    ],
+    "source_summary": "本文分析了对比学习的梯度累积方法，结果显示对比学习也可以用梯度累积的，只不过多了一次前向计算，并且需要在模型中去掉Dropout。本文同样的思路还可以分析BN如何使用梯度累积，有兴趣的读者不妨试试。"
   },
   "validation": {
     "passed": true,
@@ -30,8 +37,8 @@
     "converter_version": 1,
     "markdown_sha256": "e1191ff7556bacfed9ee5f73f14f0d8f9e5e1e77f35e43b3a5ff132b50a1e707"
   },
-  "fetched_at": "2026-09-14T13:05:55+00:00",
+  "fetched_at": "2026-11-01T09:26:46+00:00",
   "source_snapshot_sha256": "7cd47cd78b7ea6715644d29ba3e154bac053abafba54988176c364267a3e8e5b",
   "images": {},
-  "local_only": true
+  "publication_policy": "config/mirror.json"
 }

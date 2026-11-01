@@ -1,0 +1,87 @@
+# 平均之路：从Attention到TTT
+
+> 作者：苏剑林 · 科学空间 · 2026-11-01
+>
+> 原文：<https://spaces.ac.cn/archives/11993>
+>
+> 原文许可：[CC BY-NC-ND 2.5 CN（署名-非商业性使用-禁止演绎）](https://creativecommons.org/licenses/by-nc-nd/2.5/cn/)。
+>
+> 本文件由 spaces-index 非官方、非商业项目进行必要的 HTML → Markdown 格式转换；正文未做摘要、润色、翻译或重组。项目不代表作者，也不表示作者为项目背书。
+>
+> 署名及附加许可说明不代表已获得作者额外授权。第三方素材权利依其原有声明。
+>
+> 原站转载与引用说明：[科学空间 FAQ](https://spaces.ac.cn/archives/6508#%E6%96%87%E7%AB%A0%E5%A6%82%E4%BD%95%E8%BD%AC%E8%BD%BD/%E5%BC%95%E7%94%A8)
+
+---
+
+在文章[《将Softmax Attention线性化为Gated DeltaNet》](<https://spaces.ac.cn/archives/11823>)中，我们提供了一个将Softmax Attention线性化为Gated DeltaNet的参考过程，它演示了我们可以从Softmax Attention出发，逐步引入近似，最后得到一个线性模型。这个结果并不一定有多实用，但它能帮助我们更好地理解Linear Attention背后的近似与代价。
+
+本文则提供一条新的线性化路线，它从分布推广出发，引入三步平均操作，建立起了Attention与TTT的近似联系，在这个大框架下，DeltaNet、MesaNet自然地作为它的特例出现。
+
+## 推广定义
+
+给定向量$\boldsymbol{q},\boldsymbol{k}_1,\cdots,\boldsymbol{k}_n,\boldsymbol{v}_1,\cdots,\boldsymbol{v}_n$，Softmax Attention定义为
+\begin{equation}\boldsymbol{o} = \sum_{i=1}^n a_i \boldsymbol{v}_i, \qquad a_i = \frac{e^{\boldsymbol{q}\cdot \boldsymbol{k}_i}}{Z},\qquad Z = \sum_{i=1}^n e^{\boldsymbol{q}\cdot \boldsymbol{k}_i}\end{equation}
+每个$\boldsymbol{q}$都必须要它之前的所有$(\boldsymbol{k}_i, \boldsymbol{v}_i)$配对计算并求和，这是它平方复杂度的根源，这也是Decode阶段的主要瓶颈（KV Cache）——大多数线性化Attention本质上都可以归结为用不同的思路压缩KV Cache。
+
+本文的出发点也是压缩KV Cache，但在一开始，我们反而要先将Softmax Attention做个推广
+\begin{equation}\boldsymbol{o} = \sum_{i=1}^n a_i\int p(\boldsymbol{v}|\boldsymbol{k}_i) d\boldsymbol{v} = \sum_{i=1}^n a_i \mathbb{E}_{p(\boldsymbol{v}|\boldsymbol{k}_i)}[\boldsymbol{v}]\end{equation}
+也就是说，我们没有直接给出$\boldsymbol{v}_i$，而是将它改写成条件分布$p(\boldsymbol{v}|\boldsymbol{k}_i)$的期望，这是“平均之路”的第一个含义。为什么说这是一个推广呢？因为只要取狄拉克分布$p(\boldsymbol{v}|\boldsymbol{k}_i)=\delta(\boldsymbol{v} - \boldsymbol{v}_i)$，那么上式就恢复原始的Softmax Attention，所以上式理论上包含了更广泛的函数。
+
+## 分布估计
+
+取$p(\boldsymbol{v}|\boldsymbol{k}_i)=\delta(\boldsymbol{v} - \boldsymbol{v}_i)$实际上就是将所有的$(\boldsymbol{k}_i, \boldsymbol{v}_i)$硬背下来，而本文的主题是压缩，所以不能保留这种硬背做法，而是该用某种可计算的分布。简单起见，我们选用的是条件正态分布
+\begin{equation}p(\boldsymbol{v}|\boldsymbol{k}_i) = \mathcal{N}(\boldsymbol{v};\boldsymbol{\mu}_{\boldsymbol{W}}(\boldsymbol{k}_i), \sigma^2\boldsymbol{I})\end{equation}
+其中$\boldsymbol{\mu}_{\boldsymbol{W}}(\boldsymbol{k}_i)$是以$\boldsymbol{k}_i$为输入、以$\boldsymbol{W}$为参数的均值预测模型，$\sigma$是某个预设的超参数。理论上我们也可以将协方差矩阵$\sigma^2\boldsymbol{I}$同样换成一般的预测模型$\boldsymbol{\Sigma}_{\boldsymbol{W}}(\boldsymbol{k}_i)$，但从$\mathbb{E}_{p(\boldsymbol{v}|\boldsymbol{k}_i)}[\boldsymbol{v}]$可知我们最终只关心均值向量，所以一般化协方差并不会带来额外收益。
+
+在当前选择下，我们有
+\begin{equation}\boldsymbol{o} = \sum_{i=1}^n a_i \boldsymbol{\mu}_{\boldsymbol{W}}(\boldsymbol{k}_i)\label{eq:o-mu-W}\end{equation}
+假设$\boldsymbol{\mu}_{\boldsymbol{W}}(\boldsymbol{k}_i)$的计算是高效的，那么我们就不需要把它缓存下来，而是只需要缓存K，$\boldsymbol{\mu}_{\boldsymbol{W}}(\boldsymbol{k}_i)$即时计算，这就成功地消去了V Cache，让KV Cache减半。
+
+## 流式更新
+
+为了估计$\boldsymbol{W}$，我们将$(\boldsymbol{k}_1,\boldsymbol{v}_1),\cdots,(\boldsymbol{k}_n,\boldsymbol{v}_n)$视为依次到达的训练数据，使用SGD优化器来流式更新。对于概率模型来说，最自然的训练目标当然是最大似然，也就是最小化负对数似然
+\begin{equation}-\log p(\boldsymbol{v}_i|\boldsymbol{k}_i) \propto \frac{1}{2}\Vert\boldsymbol{v}_i - \boldsymbol{\mu}_{\boldsymbol{W}}(\boldsymbol{k}_i)\Vert^2 \triangleq \ell(\boldsymbol{W}_{t-1};\boldsymbol{k}_t,\boldsymbol{v}_t)\end{equation}
+执行一步梯度下降
+\begin{equation}\boldsymbol{W}_t = \boldsymbol{W}_{t-1} - \eta_t \nabla_{\boldsymbol{W}_{t-1}}\ell(\boldsymbol{W}_{t-1};\boldsymbol{k}_t,\boldsymbol{v}_t)\label{eq:ttt-sgd}\end{equation}
+这样本质上形成了一个以$\boldsymbol{W}$为状态变量的RNN，它基于当前输入不断修正$\boldsymbol{W}$，目标是最大化K预测V的能力，因此可以说它将V相对于K的增量信息，压缩到了有限维的参数$\boldsymbol{W}$变量中。
+
+这个递归形式跟[TTT（Test\-Time Training）](<https://papers.cool/arxiv/2407.04620>)实际上是一样的，只不过我们当前的出发点是压缩给定K后的V的信息，来为KV Cache“减负”，没有像TTT一样直接定义完整的写入和读出过程。
+
+## 两次平均
+
+经过上述变换，我们暂时消去了V，但K还在，并且式$\eqref{eq:o-mu-W}$实际上还具有Softmax Attention的形式，并没有降低。对此，我们先使用一次平均场近似：
+\begin{equation}\boldsymbol{o} = \sum_{i=1}^n a_i \boldsymbol{\mu}_{\boldsymbol{W}}(\boldsymbol{k}_i) \approx \boldsymbol{\mu}_{\boldsymbol{W}}\Big(\sum_{i=1}^n a_i\boldsymbol{k}_i\Big)\end{equation}
+这样我们就将剩余部分的核心计算，转变成了$\sum_{i=1}^n a_i\boldsymbol{k}_i$，这是一个K=V的Softmax Attention。进一步地，由于$a_i\propto e^{\boldsymbol{q}\cdot\boldsymbol{k}_i}$，如果我们假设$\boldsymbol{k}_1,\cdots,\boldsymbol{k}_n$比较各向同性，或者更准确地说，假设它们垂直于$\boldsymbol{q}$的分量的加权平均近似为零，那么我们有
+\begin{equation}\sum_{i=1}^n a_i\boldsymbol{k}_i \approx \lambda \boldsymbol{q}\end{equation}
+这样$\boldsymbol{\mu}_{\boldsymbol{W}}(\cdot)$的输入就可以换成$\lambda \boldsymbol{q}$，或者直接将$\lambda$吸收到$\boldsymbol{q}$中，得到干净的
+\begin{equation}\boldsymbol{o} = \boldsymbol{\mu}_{\boldsymbol{W}}(\boldsymbol{q})\end{equation}
+这样就得到了跟TTT完全一致的读出结果，它连同式$\eqref{eq:ttt-sgd}$组成一个以$\boldsymbol{q},(\boldsymbol{k}_1,\boldsymbol{v}_1)\cdots,(\boldsymbol{k}_n,\boldsymbol{v}_n)$为输入、以$\boldsymbol{W}$为状态变量的RNN模型，不再出现完整的K、V，它们被逐步压缩到参数$\boldsymbol{W}$中。
+
+## 结果反思
+
+现在让我们来捋一捋整个推导过程，看看从Attention到TTT究竟放弃了什么，又收获了什么。
+
+第一步，我们通过平均向量模型$\boldsymbol{\mu}_{\boldsymbol{W}}(\boldsymbol{k}_i)$来预测并替代$\boldsymbol{v}_i$，站在Attention的视角看，这一步就是省掉了V Cache。从拟合能力看，$(\boldsymbol{k}_i, \boldsymbol{\mu}_{\boldsymbol{W}}(\boldsymbol{k}_i))$的理论能力肯定不如$(\boldsymbol{k}_i,\boldsymbol{v}_i)$这样硬配对，但它借助于流式更新也增强了Token之间的交互，所以笔者认为是半斤八两，说不上谁一定更好。
+
+第二步，平均场近似$\sum_{i=1}^n a_i \boldsymbol{\mu}_{\boldsymbol{W}}(\boldsymbol{k}_i) \approx \boldsymbol{\mu}_{\boldsymbol{W}}(\sum_{i=1}^n a_i\boldsymbol{k}_i)$，这一点从数学上看可能要担忧一下近似程度，但从整个模型架构来看，它只不过是将Attention的位置从输出放到了输入，在多层组合之中，这应该不至于是一个实质的缺陷，因此笔者依然认为这是个半斤八两的变化。
+
+第三步，加权平均近似$\sum_{i=1}^n a_i\boldsymbol{k}_i \approx \lambda \boldsymbol{q}$，从而将$\boldsymbol{\mu}_{\boldsymbol{W}}(\cdot)$的输入改为$\boldsymbol{q}$，这一步彻底将Attention变成了线性复杂度的RNN。K=V的Attention是否总近似于$\lambda\boldsymbol{q}$呢？当然不是，最有说服力的例子是：[MLA](<https://spaces.ac.cn/archives/11111>)和[DSV4](<https://papers.cool/arxiv/2606.19348>)本质上都是K=V的MQA，它们显然不可能只相当于$\boldsymbol{q}$，否则就建模不了Token之间的交互了。
+
+综上所述，这条“平均之路”最大的问题可能在输入换成$\boldsymbol{q}$这一步，它是一个过于理想的简化，实践中很难完全吻合它的假设，因此需要定时补回Softmax Attention才能弥补这一差距，这正相当于当前主流的Hybrid做法。
+
+## 线性版本
+
+落到实践中，我们通常将TTT的$\boldsymbol{\mu}_{\boldsymbol{W}}(\boldsymbol{k})$通常简化到线性模型$\boldsymbol{W}\boldsymbol{k}$，此时
+\begin{equation}\ell(\boldsymbol{W}_{t-1};\boldsymbol{k}_t,\boldsymbol{v}_t) = \frac{1}{2}\Vert\boldsymbol{v}_i - \boldsymbol{W}\boldsymbol{k}\Vert^2\end{equation}
+对应的流式更新规则是
+\begin{equation}\boldsymbol{W}_t = \boldsymbol{W}_{t-1} - \eta_t (\boldsymbol{W}_{t-1}\boldsymbol{k}_t - \boldsymbol{v}_t)\boldsymbol{k}_t^{\top}\end{equation}
+再加上$\boldsymbol{o}_t = \boldsymbol{W}_t \boldsymbol{q}_t$后，我们就得到了[DeltaNet](<https://papers.cool/arxiv/2406.06484>)。将$\boldsymbol{\mu}_{\boldsymbol{W}}(\boldsymbol{k}_i)$简化成线性函数，主要是让模型可并行，并且让它纯粹承担Token\-Mixer的角色，非线性部分交给MLP层和层堆叠。此外，对于线性模型来说，平均场$\sum_{i=1}^n a_i \boldsymbol{\mu}_{\boldsymbol{W}}(\boldsymbol{k}_i) = \boldsymbol{\mu}_{\boldsymbol{W}}(\sum_{i=1}^n a_i\boldsymbol{k}_i)$是精确的恒等式，不再只是“近似”。
+
+特别地，线性回归其实还可以选择直接求出解析解，而无须诉诸SGD：
+\begin{equation}\boldsymbol{G}_t = \boldsymbol{G}_{t-1} + \boldsymbol{v}_t\boldsymbol{k}_t^{\top},\quad\boldsymbol{H}_t = \boldsymbol{H}_{t-1} + \boldsymbol{k}_t\boldsymbol{k}_t^{\top},\quad \boldsymbol{o}_t = \boldsymbol{G}_t\boldsymbol{H}_t^{-1}\boldsymbol{q}_t\end{equation}
+如果给$\boldsymbol{G}$和$\boldsymbol{H}$补上Decay，那么便得到了[MesaNet](<https://papers.cool/arxiv/2506.05233>)。假设MeseNet和DeltaNet属于同一能力上限的模型，MesaNet的$\boldsymbol{G}$和$\boldsymbol{H}$的迭代只是传统的Vanilla Linear Attention（VaLA），比Delta Rule更简单，而代价是状态变量增加了50%，这表明VaLA只有加大状态变量，才有机会赶超Delta系列模型。
+
+## 文章小结
+
+本文以各种平均近似为线，串联起Attention、TTT、DeltaNet、MesaNet等模型。沿着这条推导链，我们可以看清从Attention到TTT乃至各类线性模型的转化过程中，每一步以怎样的代价换取怎样的收益，从而对这些模型之间的关系形成一个相对自然、也更具普适性的理解。

@@ -1,0 +1,25 @@
+{
+  "metadata": {
+    "id": "11993",
+    "title": "平均之路：从Attention到TTT",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/11993",
+    "date": "2026-11-01",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "信息时代",
+    "source_tags": [
+      "线性",
+      "RNN",
+      "attention",
+      "sgd"
+    ],
+    "source_summary": "本文以各种平均近似为线，串联起Attention、TTT、DeltaNet、MesaNet等模型。沿着这条推导链，我们可以看清从Attention到TTT乃至各类线性模型的转化过程中，每一步以怎样的代价换取怎样的收益，从而对这些模型之间的关系形成一个相对自然、也更具普适性的理解。"
+  },
+  "fetched_at": "2026-11-01T09:26:35+00:00",
+  "source_snapshot_sha256": "0357abdd6f11c71dab19a8f03e46178920c948c8cfbb0afa9a4ee21cc783ce7c",
+  "validators": {
+    "etag": null,
+    "last_modified": null
+  }
+}

@@ -28,7 +28,7 @@
 
 | 收录文章 | 知识主题 | 文章系列 | 最新文章 |
 | ---: | ---: | ---: | :---: |
-| 1344 篇 | 17 个 | 56 个 | 2026-10-27 |
+| 1345 篇 | 17 个 | 56 个 | 2026-11-01 |
 
 ## 从哪里开始
 
@@ -72,14 +72,14 @@ Markdown 正文只做必要的格式转换，不摘要、润色、翻译或重�
   - [更别致的词向量模型（6 篇）](https://caojiaolong.github.io/spaces-index/#/series/series-83ff2143be8b)
   - [不可思议的Word2Vec（6 篇）](https://caojiaolong.github.io/spaces-index/#/series/series-b9f4ef1c4dfa)
   - [非系列文章（9 篇）](#series-embeddings-standalone)
-- [大模型与Transformer（157 篇）](#topic-transformer)
+- [大模型与Transformer（158 篇）](#topic-transformer)
   - [MoE环游记（9 篇）](https://caojiaolong.github.io/spaces-index/#/series/series-34fc554ca8f0)
   - [MuP之上（4 篇）](https://caojiaolong.github.io/spaces-index/#/series/series-894387d0ec66)
   - [Transformer升级之路（21 篇）](https://caojiaolong.github.io/spaces-index/#/series/series-43ce6f7a2fb9)
   - [“闭门造车”之多模态思路浅谈（3 篇）](https://caojiaolong.github.io/spaces-index/#/series/series-2e7d3298470e)
   - [对齐全量微调！这是我看过最精彩的LoRA改进（2 篇）](https://caojiaolong.github.io/spaces-index/#/series/series-2e10ffe13211)
   - [重温SSM（4 篇）](https://caojiaolong.github.io/spaces-index/#/series/series-5070561d10c9)
-  - [非系列文章（114 篇）](#series-transformer-standalone)
+  - [非系列文章（115 篇）](#series-transformer-standalone)
 - [生成模型（124 篇）](#topic-generative-models)
   - [生成扩散模型漫谈（31 篇）](https://caojiaolong.github.io/spaces-index/#/series/series-e48ccca641f8)
   - [细水长flow（5 篇）](https://caojiaolong.github.io/spaces-index/#/series/series-9738e76a3125)
@@ -87,7 +87,7 @@ Markdown 正文只做必要的格式转换，不摘要、润色、翻译或重�
   - [搜出来的文本（4 篇）](https://caojiaolong.github.io/spaces-index/#/series/series-efbc1f2b0e42)
   - [能量视角下的GAN模型（3 篇）](https://caojiaolong.github.io/spaces-index/#/series/series-bf3266b9c1b3)
   - [非系列文章（73 篇）](#series-generative-models-standalone)
-- [优化与训练（113 篇）](#topic-optimization)
+- [优化与训练（114 篇）](#topic-optimization)
   - [慢即是快（2 篇）](https://caojiaolong.github.io/spaces-index/#/series/series-ac4217dcb4fe)
   - [让炼丹更科学一些（10 篇）](https://caojiaolong.github.io/spaces-index/#/series/series-22f3c6204559)
   - [流形上的最速下降（7 篇）](https://caojiaolong.github.io/spaces-index/#/series/series-9aa52368b14f)
@@ -96,7 +96,7 @@ Markdown 正文只做必要的格式转换，不摘要、润色、翻译或重�
   - [通过msign来计算奇异值裁剪mclip（2 篇）](https://caojiaolong.github.io/spaces-index/#/series/series-297337ae72f8)
   - [msign算子的Newton-Schulz迭代（2 篇）](https://caojiaolong.github.io/spaces-index/#/series/series-a60856a07854)
   - [从动力学角度看优化算法（7 篇）](https://caojiaolong.github.io/spaces-index/#/series/series-4b38446b55a8)
-  - [非系列文章（76 篇）](#series-optimization-standalone)
+  - [非系列文章（77 篇）](#series-optimization-standalone)
 - [数学工具（384 篇）](#topic-math)
   - [低秩近似之路（5 篇）](https://caojiaolong.github.io/spaces-index/#/series/series-6689ddf615c5)
   - [SVD分解（3 篇）](https://caojiaolong.github.io/spaces-index/#/series/series-cb4267a83e5b)
@@ -159,6 +159,7 @@ Markdown 正文只做必要的格式转换，不摘要、润色、翻译或重�
 
 ## 最近 10 篇文章
 
+- 2026-11-01 - [平均之路：从Attention到TTT](https://spaces.ac.cn/archives/11993)
 - 2026-10-27 - [从参数对称性到有效学习率](https://spaces.ac.cn/archives/11985)
 - 2026-10-19 - [连续化 Softmax Attention](https://spaces.ac.cn/archives/11980)
 - 2026-10-15 - [慢即是快：2. Adam的尽头还是Muon？](https://spaces.ac.cn/archives/11964) - [查看系列](https://caojiaolong.github.io/spaces-index/#/series/series-ac4217dcb4fe)
@@ -168,7 +169,6 @@ Markdown 正文只做必要的格式转换，不摘要、润色、翻译或重�
 - 2026-09-21 - [排序不等式及其推广](https://spaces.ac.cn/archives/11910)
 - 2026-09-14 - [让炼丹更科学一些（十）：单调性假设的拆与补](https://spaces.ac.cn/archives/11885) - [查看系列](https://caojiaolong.github.io/spaces-index/#/series/series-22f3c6204559)
 - 2026-09-05 - [让炼丹更科学一些（九）：经典自适应梯度算法](https://spaces.ac.cn/archives/11882) - [查看系列](https://caojiaolong.github.io/spaces-index/#/series/series-22f3c6204559)
-- 2026-08-31 - [让炼丹更科学一些（八）：多阶段训练的学习率](https://spaces.ac.cn/archives/11879) - [查看系列](https://caojiaolong.github.io/spaces-index/#/series/series-22f3c6204559)
 
 ## 主题分类
 
@@ -373,7 +373,7 @@ Markdown 正文只做必要的格式转换，不摘要、润色、翻译或重�
 
 <a id="topic-transformer"></a>
 <details>
-<summary><strong>大模型与Transformer</strong> · 157 篇</summary>
+<summary><strong>大模型与Transformer</strong> · 158 篇</summary>
 
 [返回目录](#目录)
 
@@ -447,6 +447,7 @@ Markdown 正文只做必要的格式转换，不摘要、润色、翻译或重�
 <a id="series-transformer-standalone"></a>
 #### 非系列文章 [返回目录](#目录)
 
+- 2026-11-01 - [平均之路：从Attention到TTT](https://spaces.ac.cn/archives/11993)
 - 2026-10-19 - [连续化 Softmax Attention](https://spaces.ac.cn/archives/11980)
 - 2026-10-09 - [如何让GDN2更稳定一些？](https://spaces.ac.cn/archives/11945)
 - 2026-08-09 - [除了交叉熵，LM Loss还有什么选择？](https://spaces.ac.cn/archives/11854)
@@ -722,7 +723,7 @@ Markdown 正文只做必要的格式转换，不摘要、润色、翻译或重�
 
 <a id="topic-optimization"></a>
 <details>
-<summary><strong>优化与训练</strong> · 113 篇</summary>
+<summary><strong>优化与训练</strong> · 114 篇</summary>
 
 [返回目录](#目录)
 
@@ -798,6 +799,7 @@ Markdown 正文只做必要的格式转换，不摘要、润色、翻译或重�
 <a id="series-optimization-standalone"></a>
 #### 非系列文章 [返回目录](#目录)
 
+- 2026-11-01 - [平均之路：从Attention到TTT](https://spaces.ac.cn/archives/11993)
 - 2026-10-27 - [从参数对称性到有效学习率](https://spaces.ac.cn/archives/11985)
 - 2026-08-23 - [动量的新理解：逼近特征层面的梯度下降](https://spaces.ac.cn/archives/11875)
 - 2026-08-09 - [除了交叉熵，LM Loss还有什么选择？](https://spaces.ac.cn/archives/11854)

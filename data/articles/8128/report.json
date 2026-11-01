@@ -6,7 +6,15 @@
     "source_url": "https://spaces.ac.cn/archives/8128",
     "date": "2021-01-26",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "数学研究",
+    "source_tags": [
+      "矩阵",
+      "语言模型",
+      "文本生成",
+      "解码"
+    ],
+    "source_summary": "本文是对Seq2Seq重复解码现象的一次理论分析尝试，主要的篇幅是针对二元解码模型得出一些定量的结果，并且发现这些结果确实能解释一些现象，并且还能带来一些改进的思路，最后比较“勉强”地将二元解码与一般的自回归模型联系了起来。本文在思路上受启发于论文 《A Theoretical Analysis of the Repetition Problem in Text Generation》 ，但推导过程都是自己闭门造车的，公式定义也跟原论文略有不同，但总体而言结论是一致的，还请读者自行辨别，如果谬误，敬请斧正。"
   },
   "validation": {
     "passed": true,
@@ -30,8 +38,8 @@
     "converter_version": 1,
     "markdown_sha256": "23de9203bc31031d0abbefc1c4e8148d467a5faad460e26794bccfbdfb1afffa"
   },
-  "fetched_at": "2026-09-14T13:08:28+00:00",
+  "fetched_at": "2026-11-01T09:28:07+00:00",
   "source_snapshot_sha256": "7cacd6de1de7bcba2d947ce82314de4d8c862c9349f2dd0d31e82c794746d49e",
   "images": {},
-  "local_only": true
+  "publication_policy": "config/mirror.json"
 }

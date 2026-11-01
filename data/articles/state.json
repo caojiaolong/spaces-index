@@ -22,7 +22,7 @@
   },
   "8231": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:19:14+00:00",
+    "checked_at": "2026-11-01T09:27:40+00:00",
     "title": "Transformer升级之路：1、Sinusoidal位置编码追根溯源",
     "markdown_sha256": "935ea1a7ce454193a5960ea26e937f614eb6f210c940ba4cc6592b9843d11931",
     "converter_version": 1
@@ -2031,14 +2031,14 @@
   },
   "8541": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:19:09+00:00",
+    "checked_at": "2026-11-01T09:26:39+00:00",
     "title": "用开源的人工标注数据来增强RoFormer-Sim",
     "markdown_sha256": "138d020abb2298812fc571ef75886c2fe421d196097c4bc65c0c0c39cccdc47b",
     "converter_version": 1
   },
   "8512": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:19:09+00:00",
+    "checked_at": "2026-11-01T09:26:42+00:00",
     "title": "两个多元正态分布的KL散度、巴氏距离和W距离",
     "markdown_sha256": "b43ca0aeba95314032219928c6d0af5c4aff4d49690c926884123d6b009616fe",
     "converter_version": 1
@@ -2059,154 +2059,154 @@
   },
   "8471": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:19:10+00:00",
+    "checked_at": "2026-11-01T09:26:46+00:00",
     "title": "对比学习可以使用梯度累积吗？",
     "markdown_sha256": "e1191ff7556bacfed9ee5f73f14f0d8f9e5e1e77f35e43b3a5ff132b50a1e707",
     "converter_version": 1
   },
   "8454": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:19:10+00:00",
+    "checked_at": "2026-11-01T09:26:49+00:00",
     "title": "SimBERTv2来了！融合检索和生成的RoFormer-Sim模型",
     "markdown_sha256": "50a304ea9081b260d68917b3b46dfb421c8bd3d986c870b5912bd17a18c73724",
     "converter_version": 1
   },
   "8453": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:19:10+00:00",
+    "checked_at": "2026-11-01T09:26:53+00:00",
     "title": "从一个单位向量变换到另一个单位向量的正交矩阵",
     "markdown_sha256": "88bdd22df8b58a3c9e1181bbeae0bc1e6b915bb7fdf5f8c0f16215ed6b7bff09",
     "converter_version": 1
   },
   "8444": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:19:10+00:00",
+    "checked_at": "2026-11-01T09:26:56+00:00",
     "title": "我们可以无损放大一个Transformer模型吗（一）",
     "markdown_sha256": "08d2ec23e3878c405fe5681d4cfe9555332e215cee52b6d0745dd9e0fd03d5dc",
     "converter_version": 1
   },
   "8431": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:19:11+00:00",
+    "checked_at": "2026-11-01T09:27:00+00:00",
     "title": " 也来盘点一些最近的非Transformer工作",
     "markdown_sha256": "98f0fb19b52bbcc774b4ff808941f66e2f0aca4b8a509e90df1d944736e6b280",
     "converter_version": 1
   },
   "8404": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:19:11+00:00",
+    "checked_at": "2026-11-01T09:27:04+00:00",
     "title": "变分自编码器（七）：球面上的VAE（vMF-VAE）",
     "markdown_sha256": "459bf448ac47e9b3347c3b2f42e32c2a6beb78d8c19416e9860791eb3d9de2e7",
     "converter_version": 1
   },
   "8397": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:19:11+00:00",
+    "checked_at": "2026-11-01T09:27:07+00:00",
     "title": "Transformer升级之路：4、二维位置的旋转式位置编码",
     "markdown_sha256": "7d51aa4385bfa9d99e850b85c019898c5ab1ccae83c91628beeda41c0ff3096f",
     "converter_version": 1
   },
   "8373": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:19:11+00:00",
+    "checked_at": "2026-11-01T09:27:11+00:00",
     "title": "GlobalPointer：用统一的方式处理嵌套和非嵌套NER",
     "markdown_sha256": "956c337bbccf67ed6b5ccfecf10ba8011ecef8230bbef6c925c4bdfb0a5ddda3",
     "converter_version": 1
   },
   "8348": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:19:12+00:00",
+    "checked_at": "2026-11-01T09:27:14+00:00",
     "title": "中文任务还是SOTA吗？我们给SimCSE补充了一些实验",
     "markdown_sha256": "97837c724685a39967821b477dadd790a7ecb616f0213947f5bf7ddcb69074c3",
     "converter_version": 1
   },
   "8338": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:19:12+00:00",
+    "checked_at": "2026-11-01T09:27:18+00:00",
     "title": "Transformer升级之路：3、从Performer到线性Attention",
     "markdown_sha256": "b709061ab778a221b0f72246675aa9c820a5c39403bf958b7ffdd45ec67e3951",
     "converter_version": 1
   },
   "8337": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:19:12+00:00",
+    "checked_at": "2026-11-01T09:27:22+00:00",
     "title": "搜狐文本匹配：基于条件LayerNorm的多任务baseline",
     "markdown_sha256": "a4a9f1be151862056c7b82cd2706f54525e0dd191199f0b5d1679e81d1010992",
     "converter_version": 1
   },
   "8321": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:19:12+00:00",
+    "checked_at": "2026-11-01T09:27:26+00:00",
     "title": "无监督语义相似度哪家强？我们做了个比较全面的评测",
     "markdown_sha256": "c05f0645006d78ecb4134d3e331864d1f51a24c3dc1aff988ab98b97196be479",
     "converter_version": 1
   },
   "8295": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:19:13+00:00",
+    "checked_at": "2026-11-01T09:27:29+00:00",
     "title": "P-tuning：自动构建模版，释放语言模型潜能",
     "markdown_sha256": "350c234d7fbf603f173306d80b9953ba8b06b9fb5158b0b7fc8806b62101e9e1",
     "converter_version": 1
   },
   "8265": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:19:13+00:00",
+    "checked_at": "2026-11-01T09:27:33+00:00",
     "title": "Transformer升级之路：2、博采众长的旋转式位置编码",
     "markdown_sha256": "9483bc01b0894458bce0bf9b4bf66f3cdde826ed3c1833216e3336ab68e1b282",
     "converter_version": 1
   },
   "8244": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:19:13+00:00",
+    "checked_at": "2026-11-01T09:27:37+00:00",
     "title": "WGAN的成功，可能跟Wasserstein距离没啥关系",
     "markdown_sha256": "548f8b02a61c4fcf77957854fff9b7abcf94e90ec3951fc3a913a838a055e570",
     "converter_version": 1
   },
   "8213": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:19:14+00:00",
+    "checked_at": "2026-11-01T09:27:44+00:00",
     "title": "短文本匹配Baseline：脱敏数据使用预训练模型的尝试",
     "markdown_sha256": "02f6835f401ed2ded8801fccddfa35109f2bf2f8e1c170b541508d9c960eae5e",
     "converter_version": 1
   },
   "8209": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:19:14+00:00",
+    "checked_at": "2026-11-01T09:27:48+00:00",
     "title": "T5 PEGASUS：开源一个中文生成式预训练模型",
     "markdown_sha256": "42d3f1bdb8bb8482d6afc688156de52b0d5fb77958ed2568976d8f69fea8cce2",
     "converter_version": 1
   },
   "8194": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:19:14+00:00",
+    "checked_at": "2026-11-01T09:27:51+00:00",
     "title": "【搜出来的文本】⋅（四）通过增、删、改来用词造句",
     "markdown_sha256": "bc45a6ec744bf4bec185513610b6bf3ba38c3abc80def622fb9fb51c24b74156",
     "converter_version": 1
   },
   "8180": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:19:15+00:00",
+    "checked_at": "2026-11-01T09:27:56+00:00",
     "title": "Nyströmformer：基于矩阵分解的线性化Attention方案",
     "markdown_sha256": "0bff8baec22b5a46dd3826b79a26f70c48aa383847bbf37dbcbd262f6f1dfdff",
     "converter_version": 1
   },
   "8159": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:19:15+00:00",
+    "checked_at": "2026-11-01T09:28:00+00:00",
     "title": "一个二值化词向量模型，是怎么跟果蝇搭上关系的？",
     "markdown_sha256": "463309f9e1fc91b1dc259483e841b38b03c627313bb3add6a64db1800dacd609",
     "converter_version": 1
   },
   "8130": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:19:15+00:00",
+    "checked_at": "2026-11-01T09:28:03+00:00",
     "title": "让研究人员绞尽脑汁的Transformer位置编码",
     "markdown_sha256": "16cac92ba41d7c2f4dc6cbdb274ef509b3bbebf8e8c8dd26bc323a53c32ed122",
     "converter_version": 1
   },
   "8128": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:19:15+00:00",
+    "checked_at": "2026-11-01T09:28:07+00:00",
     "title": "Seq2Seq重复解码现象的理论分析尝试",
     "markdown_sha256": "23de9203bc31031d0abbefc1c4e8148d467a5faad460e26794bccfbdfb1afffa",
     "converter_version": 1
@@ -8464,7 +8464,7 @@
   },
   "132": {
     "status": "conversion_failed",
-    "checked_at": "2026-10-31T08:36:52+00:00",
+    "checked_at": "2026-11-01T09:28:07+00:00",
     "title": "一道从小学到高中都可能考到的题目",
     "error": "Unreviewed legacy element: a<b，则有<br",
     "converter_version": 1,
@@ -9406,6 +9406,13 @@
     "checked_at": "2026-10-28T08:45:38+00:00",
     "title": "从参数对称性到有效学习率",
     "markdown_sha256": "2abf5f99fc66ff8a4b8f80706ab245018a9a666662690de85c2c7ed6eed8ba43",
+    "converter_version": 1
+  },
+  "11993": {
+    "status": "verified",
+    "checked_at": "2026-11-01T09:26:35+00:00",
+    "title": "平均之路：从Attention到TTT",
+    "markdown_sha256": "e8084bb41ba3cf04fecdb4c81b3c3582655b14c93315dbae2280d905eb976ad9",
     "converter_version": 1
   }
 }

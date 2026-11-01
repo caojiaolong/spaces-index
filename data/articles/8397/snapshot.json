@@ -6,9 +6,18 @@
     "source_url": "https://spaces.ac.cn/archives/8397",
     "date": "2021-05-10",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "数学研究",
+    "source_tags": [
+      "复数",
+      "矩阵",
+      "attention",
+      "位置编码",
+      "rope"
+    ],
+    "source_summary": "本文介绍了我们对RoPE的二维推广，主要以“相对性”、“可逆性”为出发点来确定二维RoPE的最终形式，尝试了四元数和矩阵指数两种推导过程，最终通过矩阵指数来给出了最终的解，从推导过程中我们还可以深化对RoPE的理解。"
   },
-  "fetched_at": "2026-09-14T13:06:46+00:00",
+  "fetched_at": "2026-11-01T09:27:07+00:00",
   "source_snapshot_sha256": "a8455d22ac51f92edd9bc0f47c823df39821453c5a8904eca674a7283b259b0b",
   "validators": {
     "etag": null,

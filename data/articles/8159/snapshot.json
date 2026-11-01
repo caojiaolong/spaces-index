@@ -6,9 +6,16 @@
     "source_url": "https://spaces.ac.cn/archives/8159",
     "date": "2021-02-09",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "信息时代",
+    "source_tags": [
+      "自然语言处理",
+      "词向量",
+      "NLP"
+    ],
+    "source_summary": "本文对一个二值化词向量模型进行了溯源，探究了它究竟是如何联系上果蝇的，从中我们还可以了解到BioHash、FlyHash、LSH等向量二值化方法的思路和关联。本文也是第一次尝试倒叙式写作，希望读者喜欢～"
   },
-  "fetched_at": "2026-09-14T13:08:14+00:00",
+  "fetched_at": "2026-11-01T09:28:00+00:00",
   "source_snapshot_sha256": "13874e829dd3c459839cdf82dede31c488d79eccb7cdd61353003650fbf844c4",
   "validators": {
     "etag": null,

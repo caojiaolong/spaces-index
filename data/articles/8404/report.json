@@ -6,7 +6,15 @@
     "source_url": "https://spaces.ac.cn/archives/8404",
     "date": "2021-05-17",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "信息时代",
+    "source_tags": [
+      "变分",
+      "无监督",
+      "vae",
+      "生成模型"
+    ],
+    "source_summary": "本文介绍了基于vMF分布的VAE实现，其主要难度在于vMF分布的采样。总的来说，vMF分布建立在余弦相似度度量之上，在某些方面的性质更符合我们的直观认知，将其用于VAE中，能够使得KL散度项为一个常数，从而防止了KL散度消失现象，并且简化了VAE结构。"
   },
   "validation": {
     "passed": true,
@@ -30,8 +38,8 @@
     "converter_version": 1,
     "markdown_sha256": "459bf448ac47e9b3347c3b2f42e32c2a6beb78d8c19416e9860791eb3d9de2e7"
   },
-  "fetched_at": "2026-09-14T13:06:40+00:00",
+  "fetched_at": "2026-11-01T09:27:04+00:00",
   "source_snapshot_sha256": "223ab883f0c45c5c447ec923a465e298bb135dc233c4945896d7da781bb710e6",
   "images": {},
-  "local_only": true
+  "publication_policy": "config/mirror.json"
 }

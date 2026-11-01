@@ -6,9 +6,16 @@
     "source_url": "https://spaces.ac.cn/archives/8444",
     "date": "2021-06-02",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "数学研究",
+    "source_tags": [
+      "模型",
+      "优化",
+      "attention"
+    ],
+    "source_summary": "本文从数学上分析了直接放大Transformer模型的可能性，最终得到了若干可用的变换，确定了无损放大Transformer模型的可行性，为实现大模型的渐进式训练提供了参考思路。"
   },
-  "fetched_at": "2026-09-14T13:06:25+00:00",
+  "fetched_at": "2026-11-01T09:26:56+00:00",
   "source_snapshot_sha256": "2d1952e7546d50c57e389d804dd20cccf7237d09ceba5edeac9b1c1b801e327d",
   "validators": {
     "etag": null,

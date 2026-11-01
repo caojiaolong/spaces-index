@@ -6,7 +6,14 @@
     "source_url": "https://spaces.ac.cn/archives/8454",
     "date": "2021-06-11",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "信息时代",
+    "source_tags": [
+      "语言模型",
+      "生成模型",
+      "文本生成"
+    ],
+    "source_summary": "本文介绍和发布了我们SimBERT的升级版——RoFormer-Sim（SimBERTv2），它既可以用来扩充相似句子，也是语义相似度问题的一个较高的baseline。相比SimBERT，它最大的特点是将句型拓展到了一般类型，不再局限于相似问句。更多的玩法欢迎读者进一步挖掘和分享～"
   },
   "validation": {
     "passed": true,
@@ -30,8 +37,8 @@
     "converter_version": 1,
     "markdown_sha256": "50a304ea9081b260d68917b3b46dfb421c8bd3d986c870b5912bd17a18c73724"
   },
-  "fetched_at": "2026-09-14T13:06:11+00:00",
+  "fetched_at": "2026-11-01T09:26:49+00:00",
   "source_snapshot_sha256": "6bcba72c3f5aa932e5a86602c3fd48592b832e8ce68f5779ab9061592394b183",
   "images": {},
-  "local_only": true
+  "publication_policy": "config/mirror.json"
 }

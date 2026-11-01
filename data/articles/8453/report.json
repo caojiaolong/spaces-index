@@ -6,7 +6,14 @@
     "source_url": "https://spaces.ac.cn/archives/8453",
     "date": "2021-06-05",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "数学研究",
+    "source_tags": [
+      "变换",
+      "向量",
+      "矩阵"
+    ],
+    "source_summary": "本文跟大家一起做了一道线性代数练习题：寻找一个将一个单位向量变换到另一个单位向量的正交矩阵，最终得到了一个颇为简单和有趣的结果。这变换通常能将一些不依赖坐标系的问题简化为一个特殊情况来处理，因此颇有实用价值。"
   },
   "validation": {
     "passed": true,
@@ -30,8 +37,8 @@
     "converter_version": 1,
     "markdown_sha256": "88bdd22df8b58a3c9e1181bbeae0bc1e6b915bb7fdf5f8c0f16215ed6b7bff09"
   },
-  "fetched_at": "2026-09-14T13:06:18+00:00",
+  "fetched_at": "2026-11-01T09:26:53+00:00",
   "source_snapshot_sha256": "e3c120ab5d151131391bd3ff4b86686276cbf9a923f488b18172c4a6648a5c54",
   "images": {},
-  "local_only": true
+  "publication_policy": "config/mirror.json"
 }

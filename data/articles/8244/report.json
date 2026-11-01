@@ -6,7 +6,14 @@
     "source_url": "https://spaces.ac.cn/archives/8244",
     "date": "2021-03-15",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "信息时代",
+    "source_tags": [
+      "优化",
+      "GAN",
+      "生成模型"
+    ],
+    "source_summary": null
   },
   "validation": {
     "passed": true,
@@ -30,8 +37,8 @@
     "converter_version": 1,
     "markdown_sha256": "548f8b02a61c4fcf77957854fff9b7abcf94e90ec3951fc3a913a838a055e570"
   },
-  "fetched_at": "2026-09-14T13:07:38+00:00",
+  "fetched_at": "2026-11-01T09:27:37+00:00",
   "source_snapshot_sha256": "07c2700a441b609982ec28625c703965a2dc3d3b3767832582130659895c23a3",
   "images": {},
-  "local_only": true
+  "publication_policy": "config/mirror.json"
 }

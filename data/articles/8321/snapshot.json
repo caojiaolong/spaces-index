@@ -6,9 +6,16 @@
     "source_url": "https://spaces.ac.cn/archives/8321",
     "date": "2021-04-11",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "信息时代",
+    "source_tags": [
+      "语言模型",
+      "语义",
+      "语义相似度"
+    ],
+    "source_summary": null
   },
-  "fetched_at": "2026-09-14T13:07:19+00:00",
+  "fetched_at": "2026-11-01T09:27:26+00:00",
   "source_snapshot_sha256": "03d11ddd6b7db7da3fa5f81956417591c10ac76c49a266ed835ffe02220b5e05",
   "validators": {
     "etag": null,

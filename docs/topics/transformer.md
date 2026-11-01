@@ -2,7 +2,7 @@
 
 [返回主题索引](README.md) · [文档导航](../README.md)
 
-共 157 篇。
+共 158 篇。
 
 <a id="series-transformer-f5569856ba"></a>
 #### MoE环游记
@@ -288,6 +288,10 @@
 <a id="series-transformer-standalone"></a>
 #### 非系列文章
 
+- 2026-11-01 - [平均之路：从Attention到TTT](https://spaces.ac.cn/archives/11993)
+  - 原站分类：信息时代
+  - 原站标签：线性、RNN、attention、sgd
+  - 小结摘录：本文以各种平均近似为线，串联起Attention、TTT、DeltaNet、MesaNet等模型。沿着这条推导链，我们可以看清从Attention到TTT乃至各类线性模型的转化过程中，每一步以怎样的代价换取怎样的收益，从而对这些模型之间的关系形成一个相对自然、也更具普适性的理解。
 - 2026-10-19 - [连续化 Softmax Attention](https://spaces.ac.cn/archives/11980)
   - 原站分类：信息时代
   - 原站标签：积分、语言模型、attention、光滑

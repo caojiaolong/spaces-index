@@ -1,5 +1,27 @@
 [
   {
+    "id": "11993",
+    "title": "平均之路：从Attention到TTT",
+    "url": "https://spaces.ac.cn/archives/11993",
+    "date": "2026-11-01",
+    "source_category": "信息时代",
+    "source_tags": [
+      "线性",
+      "RNN",
+      "attention",
+      "sgd"
+    ],
+    "source_summary": "本文以各种平均近似为线，串联起Attention、TTT、DeltaNet、MesaNet等模型。沿着这条推导链，我们可以看清从Attention到TTT乃至各类线性模型的转化过程中，每一步以怎样的代价换取怎样的收益，从而对这些模型之间的关系形成一个相对自然、也更具普适性的理解。",
+    "metadata_checked_at": "2026-11-01T09:26:35+00:00",
+    "topics": [
+      "大模型与Transformer",
+      "优化与训练"
+    ],
+    "series": null,
+    "series_index": null,
+    "level": null
+  },
+  {
     "id": "11985",
     "title": "从参数对称性到有效学习率",
     "url": "https://spaces.ac.cn/archives/11985",
@@ -6389,6 +6411,7 @@
       "文本生成"
     ],
     "source_summary": null,
+    "metadata_checked_at": "2026-11-01T09:26:39+00:00",
     "topics": [
       "大模型与Transformer",
       "生成模型"
@@ -6409,6 +6432,7 @@
       "优化"
     ],
     "source_summary": "本文详细计算了两个多元正态分布的KL散度、巴氏距离和W距离，给出了它们的显式解析解，这些结果在某些场景下可以作为隐变量的正则项使用，来规范隐变量的分布。此外，本文还可以作为比较有挑战性的线性代数练习题，供大家参考练习。",
+    "metadata_checked_at": "2026-11-01T09:26:42+00:00",
     "topics": [
       "数学工具",
       "概率统计与信息论"
@@ -6472,6 +6496,7 @@
       "梯度"
     ],
     "source_summary": "本文分析了对比学习的梯度累积方法，结果显示对比学习也可以用梯度累积的，只不过多了一次前向计算，并且需要在模型中去掉Dropout。本文同样的思路还可以分析BN如何使用梯度累积，有兴趣的读者不妨试试。",
+    "metadata_checked_at": "2026-11-01T09:26:46+00:00",
     "topics": [
       "优化与训练"
     ],
@@ -6491,6 +6516,7 @@
       "文本生成"
     ],
     "source_summary": "本文介绍和发布了我们SimBERT的升级版——RoFormer-Sim（SimBERTv2），它既可以用来扩充相似句子，也是语义相似度问题的一个较高的baseline。相比SimBERT，它最大的特点是将句型拓展到了一般类型，不再局限于相似问句。更多的玩法欢迎读者进一步挖掘和分享～",
+    "metadata_checked_at": "2026-11-01T09:26:49+00:00",
     "topics": [
       "词向量与Embedding",
       "大模型与Transformer",
@@ -6513,6 +6539,7 @@
       "矩阵"
     ],
     "source_summary": "本文跟大家一起做了一道线性代数练习题：寻找一个将一个单位向量变换到另一个单位向量的正交矩阵，最终得到了一个颇为简单和有趣的结果。这变换通常能将一些不依赖坐标系的问题简化为一个特殊情况来处理，因此颇有实用价值。",
+    "metadata_checked_at": "2026-11-01T09:26:53+00:00",
     "topics": [
       "数学工具"
     ],
@@ -6532,6 +6559,7 @@
       "attention"
     ],
     "source_summary": "本文从数学上分析了直接放大Transformer模型的可能性，最终得到了若干可用的变换，确定了无损放大Transformer模型的可行性，为实现大模型的渐进式训练提供了参考思路。",
+    "metadata_checked_at": "2026-11-01T09:26:56+00:00",
     "topics": [
       "大模型与Transformer"
     ],
@@ -6552,6 +6580,7 @@
       "attention"
     ],
     "source_summary": null,
+    "metadata_checked_at": "2026-11-01T09:27:00+00:00",
     "topics": [
       "大模型与Transformer"
     ],
@@ -6572,6 +6601,7 @@
       "生成模型"
     ],
     "source_summary": "本文介绍了基于vMF分布的VAE实现，其主要难度在于vMF分布的采样。总的来说，vMF分布建立在余弦相似度度量之上，在某些方面的性质更符合我们的直观认知，将其用于VAE中，能够使得KL散度项为一个常数，从而防止了KL散度消失现象，并且简化了VAE结构。",
+    "metadata_checked_at": "2026-11-01T09:27:04+00:00",
     "topics": [
       "生成模型"
     ],
@@ -6594,6 +6624,7 @@
       "rope"
     ],
     "source_summary": "本文介绍了我们对RoPE的二维推广，主要以“相对性”、“可逆性”为出发点来确定二维RoPE的最终形式，尝试了四元数和矩阵指数两种推导过程，最终通过矩阵指数来给出了最终的解，从推导过程中我们还可以深化对RoPE的理解。",
+    "metadata_checked_at": "2026-11-01T09:27:07+00:00",
     "topics": [
       "大模型与Transformer"
     ],
@@ -6614,6 +6645,7 @@
       "NER"
     ],
     "source_summary": null,
+    "metadata_checked_at": "2026-11-01T09:27:11+00:00",
     "topics": [
       "NLP与信息抽取"
     ],
@@ -6634,6 +6666,7 @@
       "对比学习"
     ],
     "source_summary": null,
+    "metadata_checked_at": "2026-11-01T09:27:14+00:00",
     "topics": [
       "大模型与Transformer",
       "NLP与信息抽取"
@@ -6653,6 +6686,7 @@
       "attention"
     ],
     "source_summary": "本文从Performer出发思考了线性Attention的一些问题，包括关于线性Attention的激活函数选择，以及线性Attention的瓶颈所在（低秩性、稀疏性），总的结论是，线性Attention的最佳激活函数应当是指数函数，而有效的Attention机制应当具备更高的秩和更大的稀疏性。",
+    "metadata_checked_at": "2026-11-01T09:27:18+00:00",
     "topics": [
       "大模型与Transformer"
     ],
@@ -6673,6 +6707,7 @@
       "语义相似度"
     ],
     "source_summary": "本文分享了一个搜狐文本匹配的baseline，主要是通过条件LayerNorm来增加模型的多样性，以实现同一模型处理不同类型的数据、形成不同输出的目的。",
+    "metadata_checked_at": "2026-11-01T09:27:21+00:00",
     "topics": [
       "深度学习基础",
       "大模型与Transformer",
@@ -6694,6 +6729,7 @@
       "语义相似度"
     ],
     "source_summary": null,
+    "metadata_checked_at": "2026-11-01T09:27:26+00:00",
     "topics": [
       "大模型与Transformer",
       "NLP与信息抽取"
@@ -6713,6 +6749,7 @@
       "NLP"
     ],
     "source_summary": null,
+    "metadata_checked_at": "2026-11-01T09:27:29+00:00",
     "topics": [
       "深度学习基础",
       "大模型与Transformer",
@@ -6736,6 +6773,7 @@
       "rope"
     ],
     "source_summary": "本文介绍了我们自研的旋转式位置编码RoPE以及对应的预训练模型RoFormer。从理论上来看，RoPE与Sinusoidal位置编码有些相通之处，但RoPE不依赖于泰勒展开，更具严谨性与可解释性；从预训练模型RoFormer的结果来看，RoPE具有良好的外推性，应用到Transformer中体现出较好的处理长文本的能力。此外，RoPE还是目前唯一一种可用于线性Attention的相对位置编码。",
+    "metadata_checked_at": "2026-11-01T09:27:33+00:00",
     "topics": [
       "大模型与Transformer"
     ],
@@ -6756,6 +6794,7 @@
       "生成模型"
     ],
     "source_summary": null,
+    "metadata_checked_at": "2026-11-01T09:27:37+00:00",
     "topics": [
       "生成模型"
     ],
@@ -6776,6 +6815,7 @@
       "位置编码"
     ],
     "source_summary": "总的来说，本文试图基于一些假设，反推出Sinusoidal位置编码来，这些假设具有其一定的合理性，也有一定的问题，所以相应的Sinusoidal位置编码可圈可点，但并非毫无瑕疵。但不管怎样，在当前的深度学习中，能够针对具体的问题得到一个显式解，而不是直接暴力拟合，Sinusoidal位置编码是一个不可多得的案例，值得我们思考回味。",
+    "metadata_checked_at": "2026-11-01T09:27:40+00:00",
     "topics": [
       "大模型与Transformer"
     ],
@@ -6796,6 +6836,7 @@
       "语义相似度"
     ],
     "source_summary": null,
+    "metadata_checked_at": "2026-11-01T09:27:44+00:00",
     "topics": [
       "深度学习基础",
       "大模型与Transformer",
@@ -6817,6 +6858,7 @@
       "attention"
     ],
     "source_summary": null,
+    "metadata_checked_at": "2026-11-01T09:27:48+00:00",
     "topics": [
       "大模型与Transformer",
       "生成模型"
@@ -6838,6 +6880,7 @@
       "MCMC"
     ],
     "source_summary": null,
+    "metadata_checked_at": "2026-11-01T09:27:51+00:00",
     "topics": [
       "生成模型"
     ],
@@ -6858,6 +6901,7 @@
       "attention"
     ],
     "source_summary": null,
+    "metadata_checked_at": "2026-11-01T09:27:56+00:00",
     "topics": [
       "大模型与Transformer",
       "数学工具"
@@ -6878,6 +6922,7 @@
       "NLP"
     ],
     "source_summary": "本文对一个二值化词向量模型进行了溯源，探究了它究竟是如何联系上果蝇的，从中我们还可以了解到BioHash、FlyHash、LSH等向量二值化方法的思路和关联。本文也是第一次尝试倒叙式写作，希望读者喜欢～",
+    "metadata_checked_at": "2026-11-01T09:28:00+00:00",
     "topics": [
       "词向量与Embedding",
       "NLP与信息抽取"
@@ -6898,6 +6943,7 @@
       "位置编码"
     ],
     "source_summary": null,
+    "metadata_checked_at": "2026-11-01T09:28:03+00:00",
     "topics": [
       "大模型与Transformer",
       "数学工具"
@@ -6919,6 +6965,7 @@
       "解码"
     ],
     "source_summary": "本文是对Seq2Seq重复解码现象的一次理论分析尝试，主要的篇幅是针对二元解码模型得出一些定量的结果，并且发现这些结果确实能解释一些现象，并且还能带来一些改进的思路，最后比较“勉强”地将二元解码与一般的自回归模型联系了起来。本文在思路上受启发于论文 《A Theoretical Analysis of the Repetition Problem in Text Generation》 ，但推导过程都是自己闭门造车的，公式定义也跟原论文略有不同，但总体而言结论是一致的，还请读者自行辨别，如果谬误，敬请斧正。",
+    "metadata_checked_at": "2026-11-01T09:28:07+00:00",
     "topics": [
       "大模型与Transformer",
       "生成模型",
