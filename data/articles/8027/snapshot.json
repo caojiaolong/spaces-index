@@ -6,9 +6,15 @@
     "source_url": "https://spaces.ac.cn/archives/8027",
     "date": "2020-12-24",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "信息时代",
+    "source_tags": [
+      "梯度",
+      "attention"
+    ],
+    "source_summary": "本文介绍了Google对Transformer的新设计RealFormer，并给出了笔者自己的思考分析。实验结果表明，RealFormer同时有着PostLN和PreLN的优点，甚至比两者更好，是一个值得使用的改进点。"
   },
-  "fetched_at": "2026-09-14T13:09:09+00:00",
+  "fetched_at": "2026-11-02T09:42:15+00:00",
   "source_snapshot_sha256": "2d88374bd560ea3e934b96424b8570bc984a4280e8f9ed7bc780daf6c290878b",
   "validators": {
     "etag": null,

@@ -6,9 +6,16 @@
     "source_url": "https://spaces.ac.cn/archives/7782",
     "date": "2020-09-29",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "生活/情感",
+    "source_tags": [
+      "生活",
+      "节日",
+      "情感"
+    ],
+    "source_summary": null
   },
-  "fetched_at": "2026-09-14T13:11:00+00:00",
+  "fetched_at": "2026-11-02T09:43:15+00:00",
   "source_snapshot_sha256": "112fe69e16e587d25592671be550a4f722b6bb345ce2994e8ac391c833a8b947",
   "validators": {
     "etag": null,

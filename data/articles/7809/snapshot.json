@@ -6,9 +6,15 @@
     "source_url": "https://spaces.ac.cn/archives/7809",
     "date": "2020-10-19",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "数学研究",
+    "source_tags": [
+      "语言模型",
+      "文本生成"
+    ],
+    "source_summary": "本文介绍了用Seq2Seq模型做数学应用题的一个baseline，主要思路就是通过“BERT+UniLM”直接将问题转换为可eval的表达式，然后分享了一些结果标准化的经验。通过BERT Large模型的UniLM，我们达到了75%的准确率，超过了原论文开源的结果。 所以，你觉得它能上几年级了呢～"
   },
-  "fetched_at": "2026-09-14T13:10:42+00:00",
+  "fetched_at": "2026-11-02T09:43:04+00:00",
   "source_snapshot_sha256": "479d4e6abc9e787c1711eb35eb423f305448dc43c82d1b2ece3cd03027d634af",
   "validators": {
     "etag": null,

@@ -6,9 +6,17 @@
     "source_url": "https://spaces.ac.cn/archives/8062",
     "date": "2021-01-07",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "信息时代",
+    "source_tags": [
+      "文本生成",
+      "采样",
+      "离散优化",
+      "MCMC"
+    ],
+    "source_summary": null
   },
-  "fetched_at": "2026-09-14T13:08:55+00:00",
+  "fetched_at": "2026-11-02T09:42:07+00:00",
   "source_snapshot_sha256": "ab9750a11ca6408a69402cc0af64fe8b2df65e7ebeb63dc890c89f00bacabfbf",
   "validators": {
     "etag": null,

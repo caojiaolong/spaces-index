@@ -6,9 +6,16 @@
     "source_url": "https://spaces.ac.cn/archives/8046",
     "date": "2021-01-01",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "信息时代",
+    "source_tags": [
+      "文本生成",
+      "稀疏",
+      "文本摘要"
+    ],
+    "source_summary": "本文总结了我们做法研杯司法摘要任务的经验，提出了一个名为SPACES的长文本摘要模型，它通过“先抽取后生成”的方式，结合了我们自研的BIO Copy机制、Sparse Softmax等方法，最终可以得到比较靠谱的摘要结果，欢迎大家交流使用。"
   },
-  "fetched_at": "2026-09-14T13:09:01+00:00",
+  "fetched_at": "2026-11-02T09:42:11+00:00",
   "source_snapshot_sha256": "7197645db4b9f229ad054dbcb65429e8cdf92c0ffa60611c0dfb6d47372a5c46",
   "validators": {
     "etag": null,

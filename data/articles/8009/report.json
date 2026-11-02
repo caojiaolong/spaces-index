@@ -6,7 +6,15 @@
     "source_url": "https://spaces.ac.cn/archives/8009",
     "date": "2020-12-21",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "信息时代",
+    "source_tags": [
+      "微分方程",
+      "动力学",
+      "优化",
+      "核方法"
+    ],
+    "source_summary": null
   },
   "validation": {
     "passed": true,
@@ -23,15 +31,15 @@
     "image_count": 0,
     "heading_count": 4,
     "code_block_count": 0,
-    "source_text_sha256": "3d761b7e2ccf37554a992c9c5983a4a714a458c8a202b9d2086ae45e9e10e8b8",
-    "output_text_sha256": "3d761b7e2ccf37554a992c9c5983a4a714a458c8a202b9d2086ae45e9e10e8b8",
+    "source_text_sha256": "3e448d703b33cade857a4606cb0c8c9edf02f578608cd0b0057f18880b71140f",
+    "output_text_sha256": "3e448d703b33cade857a4606cb0c8c9edf02f578608cd0b0057f18880b71140f",
     "latex_sha256": "0302fe44c9d084562b2f17a9ce467b54d28367ac7c6777eed2602fb7fc3bbfc6",
-    "body_sha256": "68bf81a3261d72a43cb1b48f614d6efeb8e5b8b6d310b4c5c9c4c279db70ec62",
+    "body_sha256": "70a38a5843501c2ee688af7b407f264d362ef7af695e38cd2da18f02b741c50f",
     "converter_version": 1,
-    "markdown_sha256": "c0757c81772df6f69a4c0ab9631e46bc8557866855b67ac906b36a784942ad6f"
+    "markdown_sha256": "c23a284032207dc89a9e040509f8846a7f83e3982e313491062619d52077ec56"
   },
-  "fetched_at": "2026-09-14T13:09:16+00:00",
-  "source_snapshot_sha256": "dd6172f653dd9b1141bff0b0c53c849ab3780e092212a642ef0e0144b5736ba0",
+  "fetched_at": "2026-11-02T09:42:18+00:00",
+  "source_snapshot_sha256": "40daadc6cfa1f788edfacda1dfae1e9e31d6977d14f7aa93f672c3867f9ec43a",
   "images": {},
-  "local_only": true
+  "publication_policy": "config/mirror.json"
 }

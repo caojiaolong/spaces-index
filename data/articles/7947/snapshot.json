@@ -6,9 +6,16 @@
     "source_url": "https://spaces.ac.cn/archives/7947",
     "date": "2020-12-04",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "信息时代",
+    "source_tags": [
+      "模型",
+      "优化",
+      "attention"
+    ],
+    "source_summary": "本文分享了笔者构思的一种基于层次分解的位置编码延拓方案，通过这个延拓，BERT理论上最多可以处理长度达26万的文本，只要显存管够，就没有BERT处理不了的长文本。 所以，你准备好显存了吗？"
   },
-  "fetched_at": "2026-09-14T13:09:43+00:00",
+  "fetched_at": "2026-11-02T09:42:32+00:00",
   "source_snapshot_sha256": "0dcac1aa61674e104f17eacee95cc59f660dc61a3057cca453d0e5e83c353a77",
   "validators": {
     "etag": null,

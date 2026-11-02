@@ -6,7 +6,15 @@
     "source_url": "https://spaces.ac.cn/archives/7787",
     "date": "2020-10-10",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "信息时代",
+    "source_tags": [
+      "微分方程",
+      "动力学",
+      "梯度",
+      "优化器"
+    ],
+    "source_summary": null
   },
   "validation": {
     "passed": true,
@@ -30,8 +38,8 @@
     "converter_version": 1,
     "markdown_sha256": "369bbad0c7b788c9bcfc1210e1320a1ee9b7ac43307170ebea4695600c33de87"
   },
-  "fetched_at": "2026-09-14T13:10:54+00:00",
+  "fetched_at": "2026-11-02T09:43:11+00:00",
   "source_snapshot_sha256": "5206a8cbc5921481006438c6acba621c2b6e88a1bbe08b1064070c2f4c0f5b28",
   "images": {},
-  "local_only": true
+  "publication_policy": "config/mirror.json"
 }

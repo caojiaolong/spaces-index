@@ -6,9 +6,17 @@
     "source_url": "https://spaces.ac.cn/archives/8069",
     "date": "2021-01-11",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "数学研究",
+    "source_tags": [
+      "语言模型",
+      "语义",
+      "flow",
+      "语义相似度"
+    ],
+    "source_summary": null
   },
-  "fetched_at": "2026-09-14T13:08:49+00:00",
+  "fetched_at": "2026-11-02T09:42:04+00:00",
   "source_snapshot_sha256": "2fd975028d462ffef63dbb2c3697f9ffa9f22ba276c96336cc75b32866f7e129",
   "validators": {
     "etag": null,

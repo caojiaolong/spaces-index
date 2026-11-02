@@ -6,7 +6,15 @@
     "source_url": "https://spaces.ac.cn/archives/7805",
     "date": "2020-10-16",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "信息时代",
+    "source_tags": [
+      "模型",
+      "概率",
+      "优化",
+      "采样"
+    ],
+    "source_summary": null
   },
   "validation": {
     "passed": true,
@@ -30,8 +38,8 @@
     "converter_version": 1,
     "markdown_sha256": "94754ca2f3dc8db110ad65e9e0001a2b238bec3b6f5df6e55ecdd8ecdaf826ff"
   },
-  "fetched_at": "2026-09-14T13:10:48+00:00",
+  "fetched_at": "2026-11-02T09:43:08+00:00",
   "source_snapshot_sha256": "5a1f07fd6904382d55897b7ea1e34db4858e569e9092e7ee370312f5df16f58d",
   "images": {},
-  "local_only": true
+  "publication_policy": "config/mirror.json"
 }

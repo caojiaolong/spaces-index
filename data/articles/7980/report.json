@@ -6,7 +6,14 @@
     "source_url": "https://spaces.ac.cn/archives/7980",
     "date": "2020-12-11",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "信息时代",
+    "source_tags": [
+      "动力学",
+      "优化",
+      "无监督"
+    ],
+    "source_summary": null
   },
   "validation": {
     "passed": true,
@@ -30,8 +37,8 @@
     "converter_version": 1,
     "markdown_sha256": "3c8ed19f7dc4b9be250fda9424c1e397205eb8ab4e17dc14493fa6211446632c"
   },
-  "fetched_at": "2026-09-14T13:09:29+00:00",
+  "fetched_at": "2026-11-02T09:42:25+00:00",
   "source_snapshot_sha256": "1250a19d228ab214020ad2f960a52e52ecddbb6a20f62c1e21821ee00020fbff",
   "images": {},
-  "local_only": true
+  "publication_policy": "config/mirror.json"
 }

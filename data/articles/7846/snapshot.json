@@ -6,9 +6,15 @@
     "source_url": "https://spaces.ac.cn/archives/7846",
     "date": "2020-10-29",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "信息时代",
+    "source_tags": [
+      "语言模型",
+      "attention"
+    ],
+    "source_summary": "本文记录了笔者对ALBERT和ELECTRA的看法与思考，主要是综合笔者自己的一些实验结果，以及参考了一些参考文献，希望比较客观地表达清楚这两个模型的优缺点，让读者在做模型选择的时候心里更有底一些。这两个模型在特定的场景下都有其可取之处，但也存在一些限制，清楚这些限制及其来源有助于读者更好地使用这两个模型。 笔者没有刻意中伤某个模型的意思，如果有什么理解不当之处，欢迎大家留言讨论。"
   },
-  "fetched_at": "2026-09-14T13:10:29+00:00",
+  "fetched_at": "2026-11-02T09:42:57+00:00",
   "source_snapshot_sha256": "a04f8bcf460b56bbd69670ff68bd955d5bba887115700b8cf33e413c4973e338",
   "validators": {
     "etag": null,

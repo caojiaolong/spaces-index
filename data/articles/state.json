@@ -2213,168 +2213,168 @@
   },
   "8119": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:19:16+00:00",
+    "checked_at": "2026-11-02T09:41:57+00:00",
     "title": "【搜出来的文本】⋅（三）基于BERT的文本采样",
     "markdown_sha256": "4aada659ead190b250f7c8c8bc87bf30cdc84fd7610e975cbb6daf6792cd3d99",
     "converter_version": 1
   },
   "8084": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:19:16+00:00",
+    "checked_at": "2026-11-02T09:42:00+00:00",
     "title": "【搜出来的文本】⋅（二）从MCMC到模拟退火",
     "markdown_sha256": "fa37b2523658cd587d16bd71b47db5343133678fa04f0bdbd63dd32171512876",
     "converter_version": 1
   },
   "8069": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:19:16+00:00",
+    "checked_at": "2026-11-02T09:42:04+00:00",
     "title": "你可能不需要BERT-flow：一个线性变换媲美BERT-flow",
     "markdown_sha256": "2f035cbae04dcf575a7f8e221e394bd178877d4a388afdfcc7c1f08d29392b60",
     "converter_version": 1
   },
   "8062": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:19:16+00:00",
+    "checked_at": "2026-11-02T09:42:07+00:00",
     "title": "【搜出来的文本】⋅（一）从文本生成到搜索采样",
     "markdown_sha256": "d0d7730fea16f55e3aefb9266cffd31103dc93e6949fbc39d841aab59dc4903d",
     "converter_version": 1
   },
   "8046": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:19:17+00:00",
+    "checked_at": "2026-11-02T09:42:11+00:00",
     "title": "SPACES：“抽取-生成”式长文本摘要（法研杯总结）",
     "markdown_sha256": "6d529d826fcfbb016a2a5a37f00800beb7c7fc800048790d9073521b15fffdd8",
     "converter_version": 1
   },
   "8027": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:19:17+00:00",
+    "checked_at": "2026-11-02T09:42:15+00:00",
     "title": "RealFormer：把残差转移到Attention矩阵上面去",
     "markdown_sha256": "adfe1eaff446cdf5ab7738351605c16a7c9f1c472531f328d13f8ea991e4b38b",
     "converter_version": 1
   },
   "8009": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:19:17+00:00",
+    "checked_at": "2026-11-02T09:42:18+00:00",
     "title": "从动力学角度看优化算法（七）：SGD ≈ SVM？",
-    "markdown_sha256": "c0757c81772df6f69a4c0ab9631e46bc8557866855b67ac906b36a784942ad6f",
+    "markdown_sha256": "c23a284032207dc89a9e040509f8846a7f83e3982e313491062619d52077ec56",
     "converter_version": 1
   },
   "7991": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:19:17+00:00",
+    "checked_at": "2026-11-02T09:42:22+00:00",
     "title": "Mitchell近似：乘法变为加法，误差不超过1/9",
     "markdown_sha256": "e3a7d6efafbfb9f616cb60c6821d3079f0dc39717d11de9e14c5478358e65139",
     "converter_version": 1
   },
   "7980": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:19:17+00:00",
+    "checked_at": "2026-11-02T09:42:25+00:00",
     "title": "从动力学角度看优化算法（六）：为什么SimSiam不退化？",
     "markdown_sha256": "3c8ed19f7dc4b9be250fda9424c1e397205eb8ab4e17dc14493fa6211446632c",
     "converter_version": 1
   },
   "7961": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:19:17+00:00",
+    "checked_at": "2026-11-02T09:42:29+00:00",
     "title": "【龟鱼记】全陶粒的同程底滤生态缸",
     "markdown_sha256": "5231c287fa7d69dba26ab8c6b22ed64f4ca4a5501f2d359647e613ee47225f41",
     "converter_version": 1
   },
   "7947": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:19:18+00:00",
+    "checked_at": "2026-11-02T09:42:32+00:00",
     "title": "层次分解位置编码，让BERT可以处理超长文本",
     "markdown_sha256": "6038f522f08e7c82741ddbf5a4fe5232c4591a6fc72e4cfbab90f90f8207e8e1",
     "converter_version": 1
   },
   "7921": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:19:18+00:00",
+    "checked_at": "2026-11-02T09:42:36+00:00",
     "title": "Performer：用随机投影将Attention的复杂度线性化",
     "markdown_sha256": "9c078c0b3475c7d863cfc30893d27d731cb471bb7491a8ada5a9d1539abdc0f2",
     "converter_version": 1
   },
   "7919": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:19:18+00:00",
+    "checked_at": "2026-11-02T09:42:39+00:00",
     "title": "exp(x)在x=0处的偶次泰勒展开式总是正的",
     "markdown_sha256": "90669f5c3fe15ef1c6eaae474364b697a029cc4fa7eb92c1df68aa2c95014014",
     "converter_version": 1
   },
   "7912": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:19:18+00:00",
+    "checked_at": "2026-11-02T09:42:43+00:00",
     "title": "跟风玩玩目前最大的中文GPT2模型（bert4keras）",
     "markdown_sha256": "6efe1320ecd1188bed2eed7f7d8c0301ae99f8843051d8673c40e2d65ca3a78d",
     "converter_version": 1
   },
   "7888": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:19:18+00:00",
+    "checked_at": "2026-11-02T09:42:46+00:00",
     "title": "也来谈谈RNN的梯度消失/爆炸问题",
     "markdown_sha256": "17f4b471e7d2b6a8fcdd6e3aa4863c396e8528b8f65d3f92a89250bd95fd7374",
     "converter_version": 1
   },
   "7877": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:19:19+00:00",
+    "checked_at": "2026-11-02T09:42:50+00:00",
     "title": "当GPT遇上中国象棋：写过文章解过题，要不再来下盘棋？",
     "markdown_sha256": "5ff7ae4e5e253d246ed994cc645245f295b6d3a7ba3a18ac266798e5e6b3fb5c",
     "converter_version": 1
   },
   "7867": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:19:19+00:00",
+    "checked_at": "2026-11-02T09:42:54+00:00",
     "title": "那个屠榜的T5模型，现在可以在中文上玩玩了",
     "markdown_sha256": "219a3f73bf207c1099443f347e5cc9b9f0f1e611efd6d5024e009885df71f557",
     "converter_version": 1
   },
   "7846": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:19:19+00:00",
+    "checked_at": "2026-11-02T09:42:57+00:00",
     "title": "用ALBERT和ELECTRA之前，请确认你真的了解它们",
     "markdown_sha256": "def55ba589c4ab686a8d46cfa8df3f6c04a1eec463bcbfb1cdf87ae9a48adbd5",
     "converter_version": 1
   },
   "7818": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:19:20+00:00",
+    "checked_at": "2026-11-02T09:43:01+00:00",
     "title": "TeaForN：让Teacher Forcing更有“远见”一些",
     "markdown_sha256": "646d308d4dfea7bd223667f7697d0651a1c659d896be4bc92b0f5175bf909122",
     "converter_version": 1
   },
   "7809": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:19:20+00:00",
+    "checked_at": "2026-11-02T09:43:04+00:00",
     "title": "BERT可以上几年级了？Seq2Seq“硬刚”小学数学应用题",
     "markdown_sha256": "620fb20f357d0e163001b754ba40300b25cc935b6d80ed162a82165f602366b9",
     "converter_version": 1
   },
   "7805": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:19:20+00:00",
+    "checked_at": "2026-11-02T09:43:08+00:00",
     "title": "如何划分一个跟测试集更接近的验证集？",
     "markdown_sha256": "94754ca2f3dc8db110ad65e9e0001a2b238bec3b6f5df6e55ecdd8ecdaf826ff",
     "converter_version": 1
   },
   "7787": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:19:20+00:00",
+    "checked_at": "2026-11-02T09:43:11+00:00",
     "title": "从动力学角度看优化算法（五）：为什么学习率不宜过小？",
     "markdown_sha256": "369bbad0c7b788c9bcfc1210e1320a1ee9b7ac43307170ebea4695600c33de87",
     "converter_version": 1
   },
   "7782": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:19:20+00:00",
+    "checked_at": "2026-11-02T09:43:15+00:00",
     "title": "第1000篇文章",
     "markdown_sha256": "b35ddfa7ab3cf7827f9c816dcaad0458a46ee83f9bbef076b87532284248cc3f",
     "converter_version": 1
   },
   "7764": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:19:20+00:00",
+    "checked_at": "2026-11-02T09:43:19+00:00",
     "title": "必须要GPT3吗？不，BERT的MLM模型也能小样本学习",
     "markdown_sha256": "b491347aad9cd95d7f6363fdb17d46be1edd6b70dbc13e6229112101dc4fe07e",
     "converter_version": 1
@@ -2409,7 +2409,7 @@
   },
   "7708": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:19:21+00:00",
+    "checked_at": "2026-11-02T09:43:22+00:00",
     "title": "再谈类别不平衡问题：调节权重与魔改Loss的对比联系",
     "markdown_sha256": "9c732af5a4f0747055f0cbcb4b038060603ad2893886b825d872a98e661cc127",
     "converter_version": 1
@@ -8464,7 +8464,7 @@
   },
   "132": {
     "status": "conversion_failed",
-    "checked_at": "2026-11-01T09:28:07+00:00",
+    "checked_at": "2026-11-02T09:43:22+00:00",
     "title": "一道从小学到高中都可能考到的题目",
     "error": "Unreviewed legacy element: a<b，则有<br",
     "converter_version": 1,

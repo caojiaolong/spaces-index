@@ -6,9 +6,16 @@
     "source_url": "https://spaces.ac.cn/archives/7877",
     "date": "2020-11-11",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "信息时代",
+    "source_tags": [
+      "中国象棋",
+      "语言模型",
+      "attention"
+    ],
+    "source_summary": null
   },
-  "fetched_at": "2026-09-14T13:10:16+00:00",
+  "fetched_at": "2026-11-02T09:42:50+00:00",
   "source_snapshot_sha256": "7016abc962d1fa00837a2147b69a84a2b6f1068ec4f01640ed6b4bb0823ab58a",
   "validators": {
     "etag": null,

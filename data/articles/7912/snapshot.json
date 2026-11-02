@@ -6,9 +6,16 @@
     "source_url": "https://spaces.ac.cn/archives/7912",
     "date": "2020-11-20",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "信息时代",
+    "source_tags": [
+      "语言模型",
+      "文本生成",
+      "attention"
+    ],
+    "source_summary": "文章简单介绍了一个清华大学新开源的26亿参数的GPT2模型CPM-LM，并将它适配到了bert4keras框架内，稍微吐槽了一下转换过程中遇到的坑，最后演示了一下CPM-LM还不错的Few Shot效果。"
   },
-  "fetched_at": "2026-09-14T13:10:02+00:00",
+  "fetched_at": "2026-11-02T09:42:43+00:00",
   "source_snapshot_sha256": "c36a83adf619ff582aab7b1188e71fbb6f2b3a65cb134d828c4d7616f8785c7e",
   "validators": {
     "etag": null,

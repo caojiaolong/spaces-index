@@ -4768,7 +4768,8 @@
       "离散优化",
       "MCMC"
     ],
-    "source_summary": null
+    "source_summary": null,
+    "metadata_checked_at": "2026-11-02T09:41:57+00:00"
   },
   {
     "id": "8084",
@@ -4782,7 +4783,8 @@
       "离散优化",
       "MCMC"
     ],
-    "source_summary": null
+    "source_summary": null,
+    "metadata_checked_at": "2026-11-02T09:42:00+00:00"
   },
   {
     "id": "8069",
@@ -4796,7 +4798,8 @@
       "flow",
       "语义相似度"
     ],
-    "source_summary": null
+    "source_summary": null,
+    "metadata_checked_at": "2026-11-02T09:42:04+00:00"
   },
   {
     "id": "8062",
@@ -4810,7 +4813,8 @@
       "离散优化",
       "MCMC"
     ],
-    "source_summary": null
+    "source_summary": null,
+    "metadata_checked_at": "2026-11-02T09:42:07+00:00"
   },
   {
     "id": "8046",
@@ -4823,7 +4827,8 @@
       "稀疏",
       "文本摘要"
     ],
-    "source_summary": "本文总结了我们做法研杯司法摘要任务的经验，提出了一个名为SPACES的长文本摘要模型，它通过“先抽取后生成”的方式，结合了我们自研的BIO Copy机制、Sparse Softmax等方法，最终可以得到比较靠谱的摘要结果，欢迎大家交流使用。"
+    "source_summary": "本文总结了我们做法研杯司法摘要任务的经验，提出了一个名为SPACES的长文本摘要模型，它通过“先抽取后生成”的方式，结合了我们自研的BIO Copy机制、Sparse Softmax等方法，最终可以得到比较靠谱的摘要结果，欢迎大家交流使用。",
+    "metadata_checked_at": "2026-11-02T09:42:11+00:00"
   },
   {
     "id": "8027",
@@ -4835,7 +4840,8 @@
       "梯度",
       "attention"
     ],
-    "source_summary": "本文介绍了Google对Transformer的新设计RealFormer，并给出了笔者自己的思考分析。实验结果表明，RealFormer同时有着PostLN和PreLN的优点，甚至比两者更好，是一个值得使用的改进点。"
+    "source_summary": "本文介绍了Google对Transformer的新设计RealFormer，并给出了笔者自己的思考分析。实验结果表明，RealFormer同时有着PostLN和PreLN的优点，甚至比两者更好，是一个值得使用的改进点。",
+    "metadata_checked_at": "2026-11-02T09:42:15+00:00"
   },
   {
     "id": "8009",
@@ -4849,7 +4855,8 @@
       "优化",
       "核方法"
     ],
-    "source_summary": null
+    "source_summary": null,
+    "metadata_checked_at": "2026-11-02T09:42:18+00:00"
   },
   {
     "id": "7991",
@@ -4862,7 +4869,8 @@
       "算法",
       "优化"
     ],
-    "source_summary": null
+    "source_summary": null,
+    "metadata_checked_at": "2026-11-02T09:42:22+00:00"
   },
   {
     "id": "7980",
@@ -4875,7 +4883,8 @@
       "优化",
       "无监督"
     ],
-    "source_summary": null
+    "source_summary": null,
+    "metadata_checked_at": "2026-11-02T09:42:25+00:00"
   },
   {
     "id": "7961",
@@ -4888,7 +4897,8 @@
       "龟鱼",
       "生态"
     ],
-    "source_summary": null
+    "source_summary": null,
+    "metadata_checked_at": "2026-11-02T09:42:29+00:00"
   },
   {
     "id": "7947",
@@ -4901,7 +4911,8 @@
       "优化",
       "attention"
     ],
-    "source_summary": "本文分享了笔者构思的一种基于层次分解的位置编码延拓方案，通过这个延拓，BERT理论上最多可以处理长度达26万的文本，只要显存管够，就没有BERT处理不了的长文本。 所以，你准备好显存了吗？"
+    "source_summary": "本文分享了笔者构思的一种基于层次分解的位置编码延拓方案，通过这个延拓，BERT理论上最多可以处理长度达26万的文本，只要显存管够，就没有BERT处理不了的长文本。 所以，你准备好显存了吗？",
+    "metadata_checked_at": "2026-11-02T09:42:32+00:00"
   },
   {
     "id": "7921",
@@ -4913,7 +4924,8 @@
       "优化",
       "attention"
     ],
-    "source_summary": null
+    "source_summary": null,
+    "metadata_checked_at": "2026-11-02T09:42:36+00:00"
   },
   {
     "id": "7919",
@@ -4926,7 +4938,8 @@
       "概率",
       "分析"
     ],
-    "source_summary": "文本的主要目的是介绍“$e^x$的偶次泰勒展开式总是正的”这个颇有意思的结论，并且顺带介绍了它在寻找softmax替代品中的应用。"
+    "source_summary": "文本的主要目的是介绍“$e^x$的偶次泰勒展开式总是正的”这个颇有意思的结论，并且顺带介绍了它在寻找softmax替代品中的应用。",
+    "metadata_checked_at": "2026-11-02T09:42:39+00:00"
   },
   {
     "id": "7912",
@@ -4939,7 +4952,8 @@
       "文本生成",
       "attention"
     ],
-    "source_summary": "文章简单介绍了一个清华大学新开源的26亿参数的GPT2模型CPM-LM，并将它适配到了bert4keras框架内，稍微吐槽了一下转换过程中遇到的坑，最后演示了一下CPM-LM还不错的Few Shot效果。"
+    "source_summary": "文章简单介绍了一个清华大学新开源的26亿参数的GPT2模型CPM-LM，并将它适配到了bert4keras框架内，稍微吐槽了一下转换过程中遇到的坑，最后演示了一下CPM-LM还不错的Few Shot效果。",
+    "metadata_checked_at": "2026-11-02T09:42:43+00:00"
   },
   {
     "id": "7888",
@@ -4953,7 +4967,8 @@
       "深度学习",
       "梯度"
     ],
-    "source_summary": null
+    "source_summary": null,
+    "metadata_checked_at": "2026-11-02T09:42:46+00:00"
   },
   {
     "id": "7877",
@@ -4966,7 +4981,8 @@
       "语言模型",
       "attention"
     ],
-    "source_summary": null
+    "source_summary": null,
+    "metadata_checked_at": "2026-11-02T09:42:50+00:00"
   },
   {
     "id": "7867",
@@ -4979,7 +4995,8 @@
       "文本生成",
       "attention"
     ],
-    "source_summary": "本文回顾了一下Google去年发布的T5模型，然后介绍了最近发布的多国语言版的mT5，最后介绍了如何在bert4keras中微调mT5来做中文任务，结果显示mT5在中文生成上有着很不错的表现，值得做文本生成任务的同学一试。"
+    "source_summary": "本文回顾了一下Google去年发布的T5模型，然后介绍了最近发布的多国语言版的mT5，最后介绍了如何在bert4keras中微调mT5来做中文任务，结果显示mT5在中文生成上有着很不错的表现，值得做文本生成任务的同学一试。",
+    "metadata_checked_at": "2026-11-02T09:42:54+00:00"
   },
   {
     "id": "7846",
@@ -4991,7 +5008,8 @@
       "语言模型",
       "attention"
     ],
-    "source_summary": "本文记录了笔者对ALBERT和ELECTRA的看法与思考，主要是综合笔者自己的一些实验结果，以及参考了一些参考文献，希望比较客观地表达清楚这两个模型的优缺点，让读者在做模型选择的时候心里更有底一些。这两个模型在特定的场景下都有其可取之处，但也存在一些限制，清楚这些限制及其来源有助于读者更好地使用这两个模型。 笔者没有刻意中伤某个模型的意思，如果有什么理解不当之处，欢迎大家留言讨论。"
+    "source_summary": "本文记录了笔者对ALBERT和ELECTRA的看法与思考，主要是综合笔者自己的一些实验结果，以及参考了一些参考文献，希望比较客观地表达清楚这两个模型的优缺点，让读者在做模型选择的时候心里更有底一些。这两个模型在特定的场景下都有其可取之处，但也存在一些限制，清楚这些限制及其来源有助于读者更好地使用这两个模型。 笔者没有刻意中伤某个模型的意思，如果有什么理解不当之处，欢迎大家留言讨论。",
+    "metadata_checked_at": "2026-11-02T09:42:57+00:00"
   },
   {
     "id": "7818",
@@ -5004,7 +5022,8 @@
       "语言模型",
       "文本生成"
     ],
-    "source_summary": null
+    "source_summary": null,
+    "metadata_checked_at": "2026-11-02T09:43:01+00:00"
   },
   {
     "id": "7809",
@@ -5016,7 +5035,8 @@
       "语言模型",
       "文本生成"
     ],
-    "source_summary": "本文介绍了用Seq2Seq模型做数学应用题的一个baseline，主要思路就是通过“BERT+UniLM”直接将问题转换为可eval的表达式，然后分享了一些结果标准化的经验。通过BERT Large模型的UniLM，我们达到了75%的准确率，超过了原论文开源的结果。 所以，你觉得它能上几年级了呢～"
+    "source_summary": "本文介绍了用Seq2Seq模型做数学应用题的一个baseline，主要思路就是通过“BERT+UniLM”直接将问题转换为可eval的表达式，然后分享了一些结果标准化的经验。通过BERT Large模型的UniLM，我们达到了75%的准确率，超过了原论文开源的结果。 所以，你觉得它能上几年级了呢～",
+    "metadata_checked_at": "2026-11-02T09:43:04+00:00"
   },
   {
     "id": "7805",
@@ -5030,7 +5050,8 @@
       "优化",
       "采样"
     ],
-    "source_summary": null
+    "source_summary": null,
+    "metadata_checked_at": "2026-11-02T09:43:08+00:00"
   },
   {
     "id": "7787",
@@ -5044,7 +5065,8 @@
       "梯度",
       "优化器"
     ],
-    "source_summary": null
+    "source_summary": null,
+    "metadata_checked_at": "2026-11-02T09:43:11+00:00"
   },
   {
     "id": "7782",
@@ -5057,7 +5079,8 @@
       "节日",
       "情感"
     ],
-    "source_summary": null
+    "source_summary": null,
+    "metadata_checked_at": "2026-11-02T09:43:15+00:00"
   },
   {
     "id": "7764",
@@ -5070,7 +5093,8 @@
       "语言模型",
       "NLP"
     ],
-    "source_summary": null
+    "source_summary": null,
+    "metadata_checked_at": "2026-11-02T09:43:19+00:00"
   },
   {
     "id": "7758",
@@ -5136,7 +5160,8 @@
       "损失函数",
       "光滑"
     ],
-    "source_summary": null
+    "source_summary": null,
+    "metadata_checked_at": "2026-11-02T09:43:22+00:00"
   },
   {
     "id": "7695",

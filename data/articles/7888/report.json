@@ -6,7 +6,15 @@
     "source_url": "https://spaces.ac.cn/archives/7888",
     "date": "2020-11-13",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "数学研究",
+    "source_tags": [
+      "模型",
+      "优化",
+      "深度学习",
+      "梯度"
+    ],
+    "source_summary": null
   },
   "validation": {
     "passed": true,
@@ -30,8 +38,8 @@
     "converter_version": 1,
     "markdown_sha256": "17f4b471e7d2b6a8fcdd6e3aa4863c396e8528b8f65d3f92a89250bd95fd7374"
   },
-  "fetched_at": "2026-09-14T13:10:08+00:00",
+  "fetched_at": "2026-11-02T09:42:46+00:00",
   "source_snapshot_sha256": "75cc3988e33d9f5eeceb58c748d41be39848a592aa0c95d400105acd904db2df",
   "images": {},
-  "local_only": true
+  "publication_policy": "config/mirror.json"
 }

@@ -6,7 +6,14 @@
     "source_url": "https://spaces.ac.cn/archives/7919",
     "date": "2020-11-24",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "数学研究",
+    "source_tags": [
+      "导数",
+      "概率",
+      "分析"
+    ],
+    "source_summary": "文本的主要目的是介绍“$e^x$的偶次泰勒展开式总是正的”这个颇有意思的结论，并且顺带介绍了它在寻找softmax替代品中的应用。"
   },
   "validation": {
     "passed": true,
@@ -30,8 +37,8 @@
     "converter_version": 1,
     "markdown_sha256": "90669f5c3fe15ef1c6eaae474364b697a029cc4fa7eb92c1df68aa2c95014014"
   },
-  "fetched_at": "2026-09-14T13:09:56+00:00",
+  "fetched_at": "2026-11-02T09:42:39+00:00",
   "source_snapshot_sha256": "0c1f4a05494de3842dde412934565afad666897ebbd6c1494f136833d014590c",
   "images": {},
-  "local_only": true
+  "publication_policy": "config/mirror.json"
 }

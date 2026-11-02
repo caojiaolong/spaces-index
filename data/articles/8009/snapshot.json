@@ -6,10 +6,18 @@
     "source_url": "https://spaces.ac.cn/archives/8009",
     "date": "2020-12-21",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "信息时代",
+    "source_tags": [
+      "微分方程",
+      "动力学",
+      "优化",
+      "核方法"
+    ],
+    "source_summary": null
   },
-  "fetched_at": "2026-09-14T13:09:16+00:00",
-  "source_snapshot_sha256": "dd6172f653dd9b1141bff0b0c53c849ab3780e092212a642ef0e0144b5736ba0",
+  "fetched_at": "2026-11-02T09:42:18+00:00",
+  "source_snapshot_sha256": "40daadc6cfa1f788edfacda1dfae1e9e31d6977d14f7aa93f672c3867f9ec43a",
   "validators": {
     "etag": null,
     "last_modified": null
