@@ -2381,28 +2381,28 @@
   },
   "7758": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:19:21+00:00",
+    "checked_at": "2026-11-03T09:45:40+00:00",
     "title": "提速不掉点：基于词颗粒度的中文WoBERT",
     "markdown_sha256": "479c91d5016c3a6e83c27c693817f8c501cbb8e30997febedcb46cf8d85d1a5a",
     "converter_version": 1
   },
   "7737": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:19:21+00:00",
+    "checked_at": "2026-11-03T09:45:44+00:00",
     "title": "殊途同归的策略梯度与零阶优化",
     "markdown_sha256": "022270851a33f395504ee3cb79e0d835212d2fdb7c74a55ec4f8c4aab7861609",
     "converter_version": 1
   },
   "7725": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:19:21+00:00",
+    "checked_at": "2026-11-03T09:45:47+00:00",
     "title": "变分自编码器（六）：从几何视角来理解VAE的尝试",
     "markdown_sha256": "f7c2db4d53004514e1fa599855a7920f0c8d27934d114a15310e8029b824308c",
     "converter_version": 1
   },
   "7718": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:19:21+00:00",
+    "checked_at": "2026-11-03T09:45:51+00:00",
     "title": "动手做个DialoGPT：基于LM的生成式多轮对话模型",
     "markdown_sha256": "9318c2faa09649746e94277245d87b74538b6f1881bc2f7686c8a2e1bf6d13cc",
     "converter_version": 1
@@ -2416,147 +2416,147 @@
   },
   "7695": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:19:22+00:00",
+    "checked_at": "2026-11-03T09:45:54+00:00",
     "title": " 最小熵原理（六）：词向量的维度应该怎么选择？",
     "markdown_sha256": "c512e044b7750d194fdf7cfa11f1e84bfbc5647f4409ab0eebf50cffe2ab42ba",
     "converter_version": 1
   },
   "7681": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:19:22+00:00",
+    "checked_at": "2026-11-03T09:45:58+00:00",
     "title": "L2正则没有想象那么好？可能是“权重尺度偏移”惹的祸",
     "markdown_sha256": "5c76e6a3dc22cf70479d29d15494aa71c19431c2c1282d3ac91619a0aa5aca17",
     "converter_version": 1
   },
   "7661": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:19:22+00:00",
+    "checked_at": "2026-11-03T09:46:01+00:00",
     "title": "修改Transformer结构，设计一个更快更好的MLM模型",
     "markdown_sha256": "7dfb0edf27271a5c3a682fc8d32b2aec90d4deb3739b8c360f8f412d18efd8f0",
     "converter_version": 1
   },
   "7643": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:19:22+00:00",
+    "checked_at": "2026-11-03T09:46:05+00:00",
     "title": "我们真的需要把训练集的损失降低到零吗？",
     "markdown_sha256": "251785658dddc27314af6e095a39d147ee18d3eb823455e695952ae2e66f43d1",
     "converter_version": 1
   },
   "7630": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:19:22+00:00",
+    "checked_at": "2026-11-03T09:46:09+00:00",
     "title": "学会提问的BERT：端到端地从篇章中构建问答对",
     "markdown_sha256": "dd3597603061ada528518e0838fb3f9177f5fd52b3ea9d6fbebb03292652d425",
     "converter_version": 1
   },
   "7615": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:19:22+00:00",
+    "checked_at": "2026-11-03T09:46:12+00:00",
     "title": "通过互信息思想来缓解类别不平衡问题",
     "markdown_sha256": "38f8ee18005d677309b1ade2271f508e368fddc7910f543b48e075436f2f177a",
     "converter_version": 1
   },
   "7611": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:19:23+00:00",
+    "checked_at": "2026-11-03T09:46:16+00:00",
     "title": "也来扯几句“全国青少年科技创新大赛”",
     "markdown_sha256": "b9fc2281ec9389313d7af0428fa8d8cf3347dc21b3267fd23797dff2dba8ed49",
     "converter_version": 1
   },
   "7575": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:19:23+00:00",
+    "checked_at": "2026-11-03T09:46:20+00:00",
     "title": "BERT-of-Theseus：基于模块替换的模型压缩方法",
     "markdown_sha256": "0b91ac345adae1362f7f39451af8c0f12d3c93be91c49da270dec31bd1e05ff2",
     "converter_version": 1
   },
   "7574": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:19:23+00:00",
+    "checked_at": "2026-11-03T09:46:23+00:00",
     "title": "强大的NVAE：以后再也不能说VAE生成的图像模糊了",
     "markdown_sha256": "0c493b547d012d79c73b06916b56a4ca61e80d663f6f88493cc123620b68be96",
     "converter_version": 1
   },
   "7546": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:19:23+00:00",
+    "checked_at": "2026-11-03T09:46:27+00:00",
     "title": "线性Attention的探索：Attention必须有个Softmax吗？",
     "markdown_sha256": "3ba86e926be0b7d9fa02b373965b479a32ae0b94d1c21a25fab0a38adcdd3165",
     "converter_version": 1
   },
   "7533": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:19:24+00:00",
+    "checked_at": "2026-11-03T09:46:30+00:00",
     "title": "积分梯度：一种新颖的神经网络可视化方法",
     "markdown_sha256": "a2b28ffed1a7c6263c8bb52fc7703c31d65e8e8d22085c7ba0fb9990b3aadbb9",
     "converter_version": 1
   },
   "7521": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:19:24+00:00",
+    "checked_at": "2026-11-03T09:46:34+00:00",
     "title": "从采样看优化：可导优化与不可导优化的统一视角",
     "markdown_sha256": "6f58bb043f97582379a76c1f4a7967d179e19d59a192f2488151afe380507182",
     "converter_version": 1
   },
   "7515": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:19:24+00:00",
+    "checked_at": "2026-11-03T09:46:37+00:00",
     "title": "日食记",
     "markdown_sha256": "5c6866dab57c1b95410d4716c94bc81a9148a22645c14165103cde42530dd2b4",
     "converter_version": 1
   },
   "7500": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:19:24+00:00",
+    "checked_at": "2026-11-03T09:46:41+00:00",
     "title": "如何应对Seq2Seq中的“根本停不下来”问题？",
     "markdown_sha256": "dd27f00f6400902fac2ed74f3f22661da78c8680f40dad93ea94e42a5527642d",
     "converter_version": 1
   },
   "7476": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:19:24+00:00",
+    "checked_at": "2026-11-03T09:46:44+00:00",
     "title": "无监督分词和句法分析！原来BERT还可以这样用",
     "markdown_sha256": "96e6d777115ed14c7c22e654e2b69e1ddcb9e2149e7fa2787f9bed79b5d85e46",
     "converter_version": 1
   },
   "7469": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:19:24+00:00",
+    "checked_at": "2026-11-03T09:46:48+00:00",
     "title": "为什么梯度裁剪能加速训练过程？一个简明的分析",
     "markdown_sha256": "8f1a1a8bea949c51885f4c26e655afb7f9e7db25c97d18d4e429cf4fe9d175b5",
     "converter_version": 1
   },
   "7466": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:19:25+00:00",
+    "checked_at": "2026-11-03T09:46:52+00:00",
     "title": "泛化性乱弹：从随机噪声、梯度惩罚到虚拟对抗训练",
     "markdown_sha256": "7a0b7d50809a64bbf0d2a8093de015a5d7dfb7c0c8639bf4928c989550a40b3c",
     "converter_version": 1
   },
   "7430": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:19:25+00:00",
+    "checked_at": "2026-11-03T09:46:56+00:00",
     "title": "Google新作Synthesizer：我们还不够了解自注意力",
     "markdown_sha256": "15981a12ff8d287870d2afcad8a16f18df853bd1889fffc14361a2c31ba3b459",
     "converter_version": 1
   },
   "7427": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:19:25+00:00",
+    "checked_at": "2026-11-03T09:47:00+00:00",
     "title": "鱼与熊掌兼得：融合检索和生成的SimBERT模型",
     "markdown_sha256": "0acbd3da9d2e3f6e43f9ad03896d9693ef16ed66a370929a6423b865c068484c",
     "converter_version": 1
   },
   "7388": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:19:25+00:00",
+    "checked_at": "2026-11-03T09:47:03+00:00",
     "title": "从EMD、WMD到WRD：文本向量序列的相似度计算",
     "markdown_sha256": "7bb915eeac44230ac9481adb9c3683a73c31452cb6e55e45a1aaf3b2ea80f07d",
     "converter_version": 1
   },
   "7387": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:19:25+00:00",
+    "checked_at": "2026-11-03T09:47:07+00:00",
     "title": "AdaX优化器浅析（附开源实现）  ",
     "markdown_sha256": "89ee8b702e6d7f1803e77d67ef80df9798d037744cc7f82897e735f3cfaca437",
     "converter_version": 1
@@ -8464,7 +8464,7 @@
   },
   "132": {
     "status": "conversion_failed",
-    "checked_at": "2026-11-02T09:43:22+00:00",
+    "checked_at": "2026-11-03T09:47:07+00:00",
     "title": "一道从小学到高中都可能考到的题目",
     "error": "Unreviewed legacy element: a<b，则有<br",
     "converter_version": 1,

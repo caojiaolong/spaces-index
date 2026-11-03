@@ -6,9 +6,16 @@
     "source_url": "https://spaces.ac.cn/archives/7615",
     "date": "2020-07-19",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "信息时代",
+    "source_tags": [
+      "优化",
+      "互信息",
+      "损失函数"
+    ],
+    "source_summary": "本文简单介绍了一种基于互信息思想的类别不平衡处理办法，该方案以前笔者也曾经构思过，不过没有深究，而最近Google的一篇论文也给出了同样的方法，遂在此简单记录分析一下，最后Google给出的实验结果显示该方法能达到SOTA的水平。"
   },
-  "fetched_at": "2026-09-14T13:12:22+00:00",
+  "fetched_at": "2026-11-03T09:46:12+00:00",
   "source_snapshot_sha256": "2983e578e4b427d81978999f9d0641d78caca9c99b8c8091df09158aef2adc81",
   "validators": {
     "etag": null,

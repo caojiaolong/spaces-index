@@ -6,9 +6,15 @@
     "source_url": "https://spaces.ac.cn/archives/7469",
     "date": "2020-06-05",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "数学研究",
+    "source_tags": [
+      "优化",
+      "梯度"
+    ],
+    "source_summary": "本文简要介绍了ICLR 2020的一篇分析梯度裁剪的满分论文，主要思路是引入了更宽松普适的假设条件，在新的条件下能体现出了梯度裁剪的必要性，并且由于放松了传统的约束，因此理论结果的适用范围更广，这也就表明，梯度裁剪确实是很多场景下都适用的技巧之一。"
   },
-  "fetched_at": "2026-09-14T13:13:26+00:00",
+  "fetched_at": "2026-11-03T09:46:48+00:00",
   "source_snapshot_sha256": "11e4f2c2711b0bd029fbe7289d1058d7770079089b50922a1496d1cb91dc39d6",
   "validators": {
     "etag": null,

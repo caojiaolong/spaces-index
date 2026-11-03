@@ -6,9 +6,16 @@
     "source_url": "https://spaces.ac.cn/archives/7574",
     "date": "2020-07-10",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "信息时代",
+    "source_tags": [
+      "变分",
+      "vae",
+      "生成模型"
+    ],
+    "source_summary": "本文介绍了NVIDIA新发表的一个称之为NVAE的升级版VAE，它将VAE的生成效果推向了一个新的高度。从文章可以看出，NVAE通过自回归形式的隐变量分布提升了理论上限，设计了巧妙的编码-解码结构，并且几乎融合了当前所有生成模型的最先进技术，打造成了当前最强的VAE～"
   },
-  "fetched_at": "2026-09-14T13:12:40+00:00",
+  "fetched_at": "2026-11-03T09:46:23+00:00",
   "source_snapshot_sha256": "c02d13adaff13ee2327ee101c6f733189fbe36096568165d17ca735ba8c22dae",
   "validators": {
     "etag": null,

@@ -6,9 +6,15 @@
     "source_url": "https://spaces.ac.cn/archives/7476",
     "date": "2020-06-10",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "信息时代",
+    "source_tags": [
+      "无监督",
+      "新词发现"
+    ],
+    "source_summary": "本文简要介绍了ACL 2020的一篇论文，里边提出了基于BERT的MLM模型来对句子成分进行相关度计算的思路，利用算出来相关度，我们可以进行无监督的分词乃至句法分析，笔者利用bert4keras尝试在中文上复现了一下，证实了该思路的有效性。"
   },
-  "fetched_at": "2026-09-14T13:13:19+00:00",
+  "fetched_at": "2026-11-03T09:46:44+00:00",
   "source_snapshot_sha256": "419ca1ff182fcb2f41561bc5fceb0f0cf32a04ea90c4ac10cdcf6949a8e972ea",
   "validators": {
     "etag": null,

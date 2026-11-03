@@ -6,7 +6,14 @@
     "source_url": "https://spaces.ac.cn/archives/7695",
     "date": "2020-08-20",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "信息时代",
+    "source_tags": [
+      "熵",
+      "词向量",
+      "最小熵"
+    ],
+    "source_summary": "本文从最小熵原理的思想出发分析了词向量的维度选择问题，最终给出了一个近似的估算公式，计算结果表明该估算公式与我们以往的炼丹经验是相符的。"
   },
   "validation": {
     "passed": true,
@@ -30,8 +37,8 @@
     "converter_version": 1,
     "markdown_sha256": "c512e044b7750d194fdf7cfa11f1e84bfbc5647f4409ab0eebf50cffe2ab42ba"
   },
-  "fetched_at": "2026-09-14T13:11:48+00:00",
+  "fetched_at": "2026-11-03T09:45:54+00:00",
   "source_snapshot_sha256": "64d9f812557b25f6d33661c7309dda93465a8e1e156140726711dc75259776d1",
   "images": {},
-  "local_only": true
+  "publication_policy": "config/mirror.json"
 }

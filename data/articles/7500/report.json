@@ -6,7 +6,14 @@
     "source_url": "https://spaces.ac.cn/archives/7500",
     "date": "2020-06-16",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "信息时代",
+    "source_tags": [
+      "语言模型",
+      "文本生成",
+      "解码"
+    ],
+    "source_summary": "本文介绍了Seq2Seq的解码算法，讨论了解码过程中可能出现的“根本停不下来”的现象，并介绍了ICML 2020的一篇论文中提供的应对策略。"
   },
   "validation": {
     "passed": true,
@@ -30,8 +37,8 @@
     "converter_version": 1,
     "markdown_sha256": "dd27f00f6400902fac2ed74f3f22661da78c8680f40dad93ea94e42a5527642d"
   },
-  "fetched_at": "2026-09-14T13:13:13+00:00",
+  "fetched_at": "2026-11-03T09:46:41+00:00",
   "source_snapshot_sha256": "bd607eba73e6266719de2625410cb1fc384a36016f83d1152e612aae1f2e40d3",
   "images": {},
-  "local_only": true
+  "publication_policy": "config/mirror.json"
 }

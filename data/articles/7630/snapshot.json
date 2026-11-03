@@ -6,9 +6,15 @@
     "source_url": "https://spaces.ac.cn/archives/7630",
     "date": "2020-07-25",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "信息时代",
+    "source_tags": [
+      "语言模型",
+      "文本生成"
+    ],
+    "source_summary": "本文是一次端到端的问答对生成实践，主要是基于“BERT + UniLM”的Seq2Seq模型来直接根据篇章生成答案和问题，并讨论了关于解码的策略。总的来讲，本文的模型没有什么特殊之处，但是因为借助了BERT的预训练权重，最终生成的问答对质量颇有可圈可点之处。"
   },
-  "fetched_at": "2026-09-14T13:12:14+00:00",
+  "fetched_at": "2026-11-03T09:46:09+00:00",
   "source_snapshot_sha256": "679b5b585dd07eb44fb97a0283ebf28a83e0520cd0fe60f1135af51affc995d5",
   "validators": {
     "etag": null,

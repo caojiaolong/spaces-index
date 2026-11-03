@@ -6,7 +6,14 @@
     "source_url": "https://spaces.ac.cn/archives/7427",
     "date": "2020-05-18",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "信息时代",
+    "source_tags": [
+      "语言模型",
+      "生成模型",
+      "文本生成"
+    ],
+    "source_summary": "本文介绍了早先我们放出来的SimBERT模型的训练原理，并开源了训练代码。SimBERT通过基于UniLM思想进行训练，同时具备检索和生成的能力，欢迎大家使用测试～"
   },
   "validation": {
     "passed": true,
@@ -30,8 +37,8 @@
     "converter_version": 1,
     "markdown_sha256": "0acbd3da9d2e3f6e43f9ad03896d9693ef16ed66a370929a6423b865c068484c"
   },
-  "fetched_at": "2026-09-14T13:13:44+00:00",
+  "fetched_at": "2026-11-03T09:47:00+00:00",
   "source_snapshot_sha256": "9c4e7ac98372e47c7007f169ba59f12cd478d4ea67d9301efcb0074271dacff3",
   "images": {},
-  "local_only": true
+  "publication_policy": "config/mirror.json"
 }

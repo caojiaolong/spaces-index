@@ -6,7 +6,14 @@
     "source_url": "https://spaces.ac.cn/archives/7575",
     "date": "2020-07-17",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "信息时代",
+    "source_tags": [
+      "模型",
+      "attention",
+      "模型压缩"
+    ],
+    "source_summary": null
   },
   "validation": {
     "passed": true,
@@ -30,8 +37,8 @@
     "converter_version": 1,
     "markdown_sha256": "0b91ac345adae1362f7f39451af8c0f12d3c93be91c49da270dec31bd1e05ff2"
   },
-  "fetched_at": "2026-09-14T13:12:34+00:00",
+  "fetched_at": "2026-11-03T09:46:20+00:00",
   "source_snapshot_sha256": "fe88f984b5e6c905f3da0fc446ec464c6024283ce1c1769ce872100ae2b9cd27",
   "images": {},
-  "local_only": true
+  "publication_policy": "config/mirror.json"
 }

@@ -6,9 +6,16 @@
     "source_url": "https://spaces.ac.cn/archives/7546",
     "date": "2020-07-04",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "信息时代",
+    "source_tags": [
+      "模型",
+      "文本生成",
+      "attention"
+    ],
+    "source_summary": "本文介绍了一些从结构上对Attention进行修改从而降低其计算复杂度的工作，其中最主要的idea是去掉标准Attention中的Softmax，就可以使得Attention的复杂度退化为理想的$\\mathcal{O}(n)$级别（Linear Attention）。相比于其他类似的改进结构的工作，这种修改能在把复杂度降到$\\mathcal{O}(n)$的同时，依然保留所有的“token-token“的注意力，同时还能保留用于做自回归生成的可能性。"
   },
-  "fetched_at": "2026-09-14T13:12:47+00:00",
+  "fetched_at": "2026-11-03T09:46:27+00:00",
   "source_snapshot_sha256": "e79a18cc9130c82ae749202ecb62aa0522472e2c34b744294775b262f1708077",
   "validators": {
     "etag": null,

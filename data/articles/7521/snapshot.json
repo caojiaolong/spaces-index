@@ -6,9 +6,17 @@
     "source_url": "https://spaces.ac.cn/archives/7521",
     "date": "2020-06-23",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "数学研究",
+    "source_tags": [
+      "优化",
+      "梯度",
+      "优化器",
+      "采样"
+    ],
+    "source_summary": "本文介绍了一个理解优化算法的新视角，在该视角之下可导和不可导目标的优化得到了统一：对于可导的目标函数，在该视角之下分别做一阶和二阶展开，我们分别可以得到梯度下降法和牛顿法；而对于不可导的目标函数，我们借助可导近似来进行重要性采样，同样也可以完成不可导的目标优化。"
   },
-  "fetched_at": "2026-09-14T13:13:00+00:00",
+  "fetched_at": "2026-11-03T09:46:34+00:00",
   "source_snapshot_sha256": "b4c6fccb6eee0966a8e288e08c288ce267e351cd4e33fa13b542b07dc4f6f8e6",
   "validators": {
     "etag": null,

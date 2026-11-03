@@ -6,7 +6,15 @@
     "source_url": "https://spaces.ac.cn/archives/7643",
     "date": "2020-07-31",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "信息时代",
+    "source_tags": [
+      "优化",
+      "深度学习",
+      "损失函数",
+      "泛化"
+    ],
+    "source_summary": "本文简单介绍了ICML 2020一篇论文提出的“到一定程度后就梯度上升”的训练策略，并给出了自己的推导和理解，结果显示它相当于对参数的梯度惩罚，而梯度惩罚也是常见的正则化手段之一。"
   },
   "validation": {
     "passed": true,
@@ -30,8 +38,8 @@
     "converter_version": 1,
     "markdown_sha256": "251785658dddc27314af6e095a39d147ee18d3eb823455e695952ae2e66f43d1"
   },
-  "fetched_at": "2026-09-14T13:12:08+00:00",
+  "fetched_at": "2026-11-03T09:46:05+00:00",
   "source_snapshot_sha256": "4d36246c18e525e59b3ade38ce9bc2acf41e60e6a49962c89813761d7c41ebac",
   "images": {},
-  "local_only": true
+  "publication_policy": "config/mirror.json"
 }

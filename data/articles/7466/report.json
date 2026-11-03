@@ -6,7 +6,15 @@
     "source_url": "https://spaces.ac.cn/archives/7466",
     "date": "2020-06-01",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "信息时代",
+    "source_tags": [
+      "概率",
+      "GAN",
+      "对抗训练",
+      "泛化"
+    ],
+    "source_summary": "本文先介绍了添加随机噪声这一常规的正则化手段，然后通过近似展开与积分的过程，推导了它与梯度惩罚之间的联系，并从中引出了可以用于半监督训练的模型平滑损失，接着进一步联系到了监督式的对抗训练和半监督的虚拟对抗训练，最后给出了Keras下虚拟对抗训练的实现和例子。"
   },
   "validation": {
     "passed": true,
@@ -30,8 +38,8 @@
     "converter_version": 1,
     "markdown_sha256": "7a0b7d50809a64bbf0d2a8093de015a5d7dfb7c0c8639bf4928c989550a40b3c"
   },
-  "fetched_at": "2026-09-14T13:13:32+00:00",
+  "fetched_at": "2026-11-03T09:46:52+00:00",
   "source_snapshot_sha256": "b94734c790a737c20b1f2cd9c33a8b40233b2345766ddac10dcfc7b77680184a",
   "images": {},
-  "local_only": true
+  "publication_policy": "config/mirror.json"
 }

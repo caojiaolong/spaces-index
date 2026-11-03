@@ -6,9 +6,15 @@
     "source_url": "https://spaces.ac.cn/archives/7758",
     "date": "2020-09-18",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "信息时代",
+    "source_tags": [
+      "语言模型",
+      "attention"
+    ],
+    "source_summary": "在这篇文章里，我们开源了以词为单位的中文BERT模型（WoBERT），并讨论了以词为单位的优缺点，最后通过实验表明，以词为单位的预训练模型在不少NLP任务（尤其是文本生成）上有它独特的价值，一方面它有速度上的优势，一方面效果上能媲美以字为单位的BERT，欢迎大家测试。"
   },
-  "fetched_at": "2026-09-14T13:11:13+00:00",
+  "fetched_at": "2026-11-03T09:45:40+00:00",
   "source_snapshot_sha256": "e2ffff0015112892c760ec5fc3864b56870ead885058caf8b3b9135d445c1fe6",
   "validators": {
     "etag": null,
