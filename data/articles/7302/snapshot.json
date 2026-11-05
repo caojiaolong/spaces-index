@@ -6,9 +6,16 @@
     "source_url": "https://spaces.ac.cn/archives/7302",
     "date": "2020-03-23",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "信息时代",
+    "source_tags": [
+      "分析",
+      "keras",
+      "优化器"
+    ],
+    "source_summary": "本文介绍了Google提出来的AdaFactor优化器，一个旨在减少显存占用的优化器，并且针对性地分析并解决了Adam的一些缺陷。笔者认为，AdaFactor针对Adam所做的分析相当经典，值得我们认真琢磨体味，对有兴趣研究优化问题的读者来说，更是一个不可多得的分析案例。 当然，没有什么绝对能有效的方法，有的只是 方法虽好，要想实际有效，依然要用心炼丹。"
   },
-  "fetched_at": "2026-09-14T13:14:47+00:00",
+  "fetched_at": "2026-11-05T00:20:49+00:00",
   "source_snapshot_sha256": "9256d2a6cc78240ce007b962f8ccb42df85146a3824dcac29e3ba6e31f526f03",
   "validators": {
     "etag": null,

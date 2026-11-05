@@ -6,9 +6,16 @@
     "source_url": "https://spaces.ac.cn/archives/7359",
     "date": "2020-04-25",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "数学研究",
+    "source_tags": [
+      "优化",
+      "损失函数",
+      "光滑"
+    ],
+    "source_summary": null
   },
-  "fetched_at": "2026-09-14T13:14:16+00:00",
+  "fetched_at": "2026-11-05T00:20:30+00:00",
   "source_snapshot_sha256": "475c0e2e3cd6a59adaa88a0b9428fea9eeed4967d0fa6ee6288fcb438b8e1beb",
   "validators": {
     "etag": null,

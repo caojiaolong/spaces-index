@@ -6,9 +6,16 @@
     "source_url": "https://spaces.ac.cn/archives/7124",
     "date": "2019-12-14",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "信息时代",
+    "source_tags": [
+      "语言模型",
+      "文本生成",
+      "attention"
+    ],
+    "source_summary": "提出了利用Conditional Layer Normalization来将外部条件融入到预训练模型中的思路，其直接应用就是条件文本生成，但其实也不单单可以用于生成模型，也可以用于分类模型等场景（外部条件可能是其他模态的信息，来辅助分类）。最后基于bert4keras给出了代码实现以及两个例子。"
   },
-  "fetched_at": "2026-09-14T13:16:13+00:00",
+  "fetched_at": "2026-11-05T00:21:37+00:00",
   "source_snapshot_sha256": "d612542b3c2d97c3b576d6b09822d5106a21c8df7f4d0a6e6817e0e13373d00b",
   "validators": {
     "etag": null,

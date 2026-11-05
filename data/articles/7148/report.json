@@ -6,7 +6,15 @@
     "source_url": "https://spaces.ac.cn/archives/7148",
     "date": "2019-12-26",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "信息时代",
+    "source_tags": [
+      "问答",
+      "语言模型",
+      "生成模型",
+      "文本生成"
+    ],
+    "source_summary": "本文试验了通过MLM的非自回归生成方式来做阅读理解式问答，发现最后的效果也不赖，而且速度有了好几倍的提升。此外，文章还简单对比了自回归和非自回归生成的异同，分析了非自回归方案何时适用及其原因。"
   },
   "validation": {
     "passed": true,
@@ -32,8 +40,8 @@
     "fallback_reason": "Standard Markdown round trip changed source structure",
     "markdown_sha256": "8ab08cce2e325ec9d631a473dca88f970d4156c73f154d6026298467c073a308"
   },
-  "fetched_at": "2026-09-14T13:16:00+00:00",
+  "fetched_at": "2026-11-05T00:21:30+00:00",
   "source_snapshot_sha256": "bbda03cc31d37f62839938b0eab312cc397ab1a51ec6b055d802be624ffb3033",
   "images": {},
-  "local_only": true
+  "publication_policy": "config/mirror.json"
 }

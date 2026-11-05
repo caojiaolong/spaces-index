@@ -6,9 +6,17 @@
     "source_url": "https://spaces.ac.cn/archives/7063",
     "date": "2019-11-11",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "信息时代",
+    "source_tags": [
+      "几何",
+      "自然语言处理",
+      "词向量",
+      "NLP"
+    ],
+    "source_summary": null
   },
-  "fetched_at": "2026-09-14T13:16:44+00:00",
+  "fetched_at": "2026-11-05T00:21:47+00:00",
   "source_snapshot_sha256": "350452fb6725a14056b0676f510c31a45ae0c81a1d774ad8049cc1c93b6100fa",
   "validators": {
     "etag": null,

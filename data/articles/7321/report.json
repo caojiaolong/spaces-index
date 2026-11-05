@@ -6,7 +6,14 @@
     "source_url": "https://spaces.ac.cn/archives/7321",
     "date": "2020-04-02",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "信息时代",
+    "source_tags": [
+      "模型",
+      "keras",
+      "attention"
+    ],
+    "source_summary": "写了三个baseline，又水了一篇博客～"
   },
   "validation": {
     "passed": true,
@@ -30,8 +37,8 @@
     "converter_version": 1,
     "markdown_sha256": "655665df570c87535f597d7ff924a96ca56e3e5c380c73816b4e6df274294781"
   },
-  "fetched_at": "2026-09-14T13:14:34+00:00",
+  "fetched_at": "2026-11-05T00:20:42+00:00",
   "source_snapshot_sha256": "9b941120bb53a182973394876cf792e77f0166570fc5edf444ec61bedbcaee32",
   "images": {},
-  "local_only": true
+  "publication_policy": "config/mirror.json"
 }

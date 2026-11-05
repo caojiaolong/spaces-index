@@ -6,9 +6,15 @@
     "source_url": "https://spaces.ac.cn/archives/7076",
     "date": "2019-11-13",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "数学研究",
+    "source_tags": [
+      "概率",
+      "分析"
+    ],
+    "source_summary": "本文对高维空间的夹角分布进行了推导，记录在此以备忘，同时也供有需要的读者参考。"
   },
-  "fetched_at": "2026-09-14T13:16:38+00:00",
+  "fetched_at": "2026-11-05T00:21:44+00:00",
   "source_snapshot_sha256": "eaa573f204b9725a2debf937ca3db9277402841d7832dbd020aaf5b39a771def",
   "validators": {
     "etag": null,

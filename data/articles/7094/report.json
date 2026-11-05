@@ -6,7 +6,14 @@
     "source_url": "https://spaces.ac.cn/archives/7094",
     "date": "2019-11-25",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "信息时代",
+    "source_tags": [
+      "python",
+      "keras",
+      "优化器"
+    ],
+    "source_summary": null
   },
   "validation": {
     "passed": true,
@@ -30,8 +37,8 @@
     "converter_version": 1,
     "markdown_sha256": "7e47fe01ec212b5a6dd3d9a66bbd61fa88666512fc46c006677399316d5f83db"
   },
-  "fetched_at": "2026-09-14T13:16:32+00:00",
+  "fetched_at": "2026-11-05T00:21:41+00:00",
   "source_snapshot_sha256": "7743a2b22a4d5b7cd7225d4871fafe613425be3f9a37c9917e587d51476f836e",
   "images": {},
-  "local_only": true
+  "publication_policy": "config/mirror.json"
 }

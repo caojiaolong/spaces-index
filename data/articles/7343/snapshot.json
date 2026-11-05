@@ -6,9 +6,17 @@
     "source_url": "https://spaces.ac.cn/archives/7343",
     "date": "2020-04-20",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "信息时代",
+    "source_tags": [
+      "最大熵",
+      "熵",
+      "无监督",
+      "生成模型"
+    ],
+    "source_summary": null
   },
-  "fetched_at": "2026-09-14T13:14:22+00:00",
+  "fetched_at": "2026-11-05T00:20:34+00:00",
   "source_snapshot_sha256": "780795f788120f7b8386c017bf79d2e4ec11d172d9639d1e1c2f353c56ddd509",
   "validators": {
     "etag": null,

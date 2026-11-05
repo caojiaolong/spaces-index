@@ -2563,147 +2563,147 @@
   },
   "7381": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:19:26+00:00",
+    "checked_at": "2026-11-05T00:20:24+00:00",
     "title": " 变分自编码器（五）：VAE + BN = 更好的VAE",
     "markdown_sha256": "c8097917b4f8bbdff2e26d147af19f3eea809e74111ec11b6471acc279b368a9",
     "converter_version": 1
   },
   "7367": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:19:26+00:00",
+    "checked_at": "2026-11-05T00:20:27+00:00",
     "title": "节省显存的重计算技巧也有了Keras版了",
     "markdown_sha256": "0ed23c0aa53e3f3d45927f9ec22011f6f2a549c876eead5e696a8836967b25d8",
     "converter_version": 1
   },
   "7359": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:19:26+00:00",
+    "checked_at": "2026-11-05T00:20:30+00:00",
     "title": "将“Softmax+交叉熵”推广到多标签分类问题",
     "markdown_sha256": "6ead38dc542ff37af982d8c5ee10c5d8d84cdf39539e7a245b8e03c2c1e1626f",
     "converter_version": 1
   },
   "7343": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:19:26+00:00",
+    "checked_at": "2026-11-05T00:20:34+00:00",
     "title": "EAE：自编码器 + BN + 最大熵  = 生成模型",
     "markdown_sha256": "5c4e598363f4cc968f5d158c6414ec5cfdfef1c88fc35238b9f8735f37c4bb9f",
     "converter_version": 1
   },
   "7325": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:19:27+00:00",
+    "checked_at": "2026-11-05T00:20:39+00:00",
     "title": "突破瓶颈，打造更强大的Transformer",
     "markdown_sha256": "de3c09be64f415b99d2d35aaf3c37204b53f44d131449eceff7de25726cedd36",
     "converter_version": 1
   },
   "7321": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:19:27+00:00",
+    "checked_at": "2026-11-05T00:20:42+00:00",
     "title": "bert4keras在手，baseline我有：百度LIC2020",
     "markdown_sha256": "655665df570c87535f597d7ff924a96ca56e3e5c380c73816b4e6df274294781",
     "converter_version": 1
   },
   "7309": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:19:27+00:00",
+    "checked_at": "2026-11-05T00:20:46+00:00",
     "title": "GELU的两个初等函数近似是怎么来的",
     "markdown_sha256": "03f31b87d4f4ca7cf0e36bdc8ee2d08581c5fe79687a07a6d6847fdb20023a2e",
     "converter_version": 1
   },
   "7302": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:19:27+00:00",
+    "checked_at": "2026-11-05T00:20:49+00:00",
     "title": "AdaFactor优化器浅析（附开源实现）",
     "markdown_sha256": "21c02a0bbd030fa7632666118b97e431f5f28d1ae527aed58dc362210f1b0037",
     "converter_version": 1
   },
   "7292": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:19:28+00:00",
+    "checked_at": "2026-11-05T00:20:53+00:00",
     "title": "现在可以用Keras玩中文GPT2了（GPT2_ML）",
     "markdown_sha256": "cd5fd74092e43cc12a61042c271a14c3749a90560da2a874081b92b237396738",
     "converter_version": 1
   },
   "7259": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:19:28+00:00",
+    "checked_at": "2026-11-05T00:20:57+00:00",
     "title": "Seq2Seq中Exposure Bias现象的浅析与对策",
     "markdown_sha256": "2e34082bacc2dc4e7acc0a27d32aa90fed62aca29231c95a4d072f437e16eb60",
     "converter_version": 1
   },
   "7234": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:19:28+00:00",
+    "checked_at": "2026-11-05T00:21:00+00:00",
     "title": "对抗训练浅谈：意义、方法和思考（附Keras实现）",
     "markdown_sha256": "7066fee3d93d4b78013248f58e5d5b1e48d1bccced16a2f7b32bda29f74cc8c8",
     "converter_version": 1
   },
   "7213": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:19:28+00:00",
+    "checked_at": "2026-11-05T00:21:04+00:00",
     "title": "CRF用过了，不妨再了解下更快的MEMM？",
     "markdown_sha256": "d8647e0eacee673ab66c2aea72bc7a0dc7c27c590f52bb9c9611f31b962aab72",
     "converter_version": 1
   },
   "7210": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:19:29+00:00",
+    "checked_at": "2026-11-05T00:21:07+00:00",
     "title": "Designing GANs：又一个GAN生产车间",
     "markdown_sha256": "f75764f561b75196b4a0a17b8bc955507e4896aa08447b55abb0018528169597",
     "converter_version": 1
   },
   "7196": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:19:29+00:00",
+    "checked_at": "2026-11-05T00:21:11+00:00",
     "title": "你的CRF层的学习率可能不够大",
     "markdown_sha256": "3629e870297d655a86d44a67960b67726f82ed89c298b5923251b392beb72d65",
     "converter_version": 1
   },
   "7187": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:19:29+00:00",
+    "checked_at": "2026-11-05T00:21:15+00:00",
     "title": "抛开约束，增强模型：一行代码提升albert表现",
     "markdown_sha256": "380578fa0b46cb9e1f85b7560a6ef98b747e6508e4e5a2c2f4ea2d626dda7bf7",
     "converter_version": 1
   },
   "7180": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:19:29+00:00",
+    "checked_at": "2026-11-05T00:21:18+00:00",
     "title": "从几何视角来理解模型参数的初始化策略",
     "markdown_sha256": "1e9bb279926d4a7b11b80a14af23b3e3c44657bdf3a91f890fd19651997f025f",
     "converter_version": 1
   },
   "7169": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:19:30+00:00",
+    "checked_at": "2026-11-05T00:21:22+00:00",
     "title": "Self-Orthogonality Module：一个即插即用的核正交化模块",
     "markdown_sha256": "0be4bf01ecfcdc4317f9fdf7bc2e6cc634887d43973ebea37f4c930fb8833653",
     "converter_version": 1
   },
   "7161": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:19:30+00:00",
+    "checked_at": "2026-11-05T00:21:26+00:00",
     "title": "用bert4keras做三元组抽取",
     "markdown_sha256": "a76b2f3f53facb7c34bb70261d41e0325d1b1dc63b382390857e362cf9430754",
     "converter_version": 1
   },
   "7148": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:19:30+00:00",
+    "checked_at": "2026-11-05T00:21:30+00:00",
     "title": "“非自回归”也不差：基于MLM的阅读理解问答",
     "markdown_sha256": "8ab08cce2e325ec9d631a473dca88f970d4156c73f154d6026298467c073a308",
     "converter_version": 1
   },
   "7144": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:19:30+00:00",
+    "checked_at": "2026-11-05T00:21:34+00:00",
     "title": "2020年全年天象",
     "markdown_sha256": "be04edb1d8766897aef3dadeac27bd4514bfdc2f4dd643326780a0a57878a65d",
     "converter_version": 1
   },
   "7124": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:19:30+00:00",
+    "checked_at": "2026-11-05T00:21:37+00:00",
     "title": "基于Conditional Layer Normalization的条件文本生成",
     "markdown_sha256": "6a8979e12a018ac17e36ee596bf28156e9bc78132556d460674086f4804b302f",
     "converter_version": 1
@@ -2724,28 +2724,28 @@
   },
   "7094": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:19:31+00:00",
+    "checked_at": "2026-11-05T00:21:41+00:00",
     "title": "6个派生优化器的简单介绍及其实现",
     "markdown_sha256": "7e47fe01ec212b5a6dd3d9a66bbd61fa88666512fc46c006677399316d5f83db",
     "converter_version": 1
   },
   "7076": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:19:31+00:00",
+    "checked_at": "2026-11-05T00:21:44+00:00",
     "title": "n维空间下两个随机向量的夹角分布",
     "markdown_sha256": "5d675fc9ed70a4bdab34db87a72e3233dec7c6b94105e700938c1eb251e64518",
     "converter_version": 1
   },
   "7063": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:19:31+00:00",
+    "checked_at": "2026-11-05T00:21:47+00:00",
     "title": "JoSE：球面上的词向量和句向量",
     "markdown_sha256": "40575476bf4d3e9f7229702edbd2a25743b191b09ff2678f45cc530c80a03c1d",
     "converter_version": 1
   },
   "7055": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:19:31+00:00",
+    "checked_at": "2026-11-05T00:21:51+00:00",
     "title": "Keras：Tensorflow的黄金标准",
     "markdown_sha256": "5daaec45a55062d50b7dfe8ecae9a2d7bf2de4cc2125563b1cf5e0d762e44bf7",
     "converter_version": 1
@@ -8464,7 +8464,7 @@
   },
   "132": {
     "status": "conversion_failed",
-    "checked_at": "2026-11-03T09:47:07+00:00",
+    "checked_at": "2026-11-05T00:21:51+00:00",
     "title": "一道从小学到高中都可能考到的题目",
     "error": "Unreviewed legacy element: a<b，则有<br",
     "converter_version": 1,

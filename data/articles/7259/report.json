@@ -6,7 +6,14 @@
     "source_url": "https://spaces.ac.cn/archives/7259",
     "date": "2020-03-09",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "信息时代",
+    "source_tags": [
+      "语言模型",
+      "文本生成",
+      "对抗训练"
+    ],
+    "source_summary": null
   },
   "validation": {
     "passed": true,
@@ -30,8 +37,8 @@
     "converter_version": 1,
     "markdown_sha256": "2e34082bacc2dc4e7acc0a27d32aa90fed62aca29231c95a4d072f437e16eb60"
   },
-  "fetched_at": "2026-09-14T13:15:01+00:00",
+  "fetched_at": "2026-11-05T00:20:57+00:00",
   "source_snapshot_sha256": "39e9fc9ce968c989898a06fa0c49be8b47497f6c3e4cb7cce8e8fc199a7c72a3",
   "images": {},
-  "local_only": true
+  "publication_policy": "config/mirror.json"
 }

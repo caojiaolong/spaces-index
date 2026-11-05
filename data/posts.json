@@ -5469,7 +5469,8 @@
       "vae",
       "生成模型"
     ],
-    "source_summary": null
+    "source_summary": null,
+    "metadata_checked_at": "2026-11-05T00:20:24+00:00"
   },
   {
     "id": "7367",
@@ -5482,7 +5483,8 @@
       "深度学习",
       "keras"
     ],
-    "source_summary": null
+    "source_summary": null,
+    "metadata_checked_at": "2026-11-05T00:20:27+00:00"
   },
   {
     "id": "7359",
@@ -5495,7 +5497,8 @@
       "损失函数",
       "光滑"
     ],
-    "source_summary": null
+    "source_summary": null,
+    "metadata_checked_at": "2026-11-05T00:20:30+00:00"
   },
   {
     "id": "7343",
@@ -5509,7 +5512,8 @@
       "无监督",
       "生成模型"
     ],
-    "source_summary": null
+    "source_summary": null,
+    "metadata_checked_at": "2026-11-05T00:20:34+00:00"
   },
   {
     "id": "7325",
@@ -5522,7 +5526,8 @@
       "深度学习",
       "attention"
     ],
-    "source_summary": null
+    "source_summary": null,
+    "metadata_checked_at": "2026-11-05T00:20:39+00:00"
   },
   {
     "id": "7321",
@@ -5535,7 +5540,8 @@
       "keras",
       "attention"
     ],
-    "source_summary": "写了三个baseline，又水了一篇博客～"
+    "source_summary": "写了三个baseline，又水了一篇博客～",
+    "metadata_checked_at": "2026-11-05T00:20:42+00:00"
   },
   {
     "id": "7309",
@@ -5547,7 +5553,8 @@
       "近似",
       "分析"
     ],
-    "source_summary": "本文带大家一起做了道数学分析题——介绍了GELU激活函数，并试图探索了它的两个近似形式的来源，成功了水出了这篇博文～"
+    "source_summary": "本文带大家一起做了道数学分析题——介绍了GELU激活函数，并试图探索了它的两个近似形式的来源，成功了水出了这篇博文～",
+    "metadata_checked_at": "2026-11-05T00:20:46+00:00"
   },
   {
     "id": "7302",
@@ -5560,7 +5567,8 @@
       "keras",
       "优化器"
     ],
-    "source_summary": "本文介绍了Google提出来的AdaFactor优化器，一个旨在减少显存占用的优化器，并且针对性地分析并解决了Adam的一些缺陷。笔者认为，AdaFactor针对Adam所做的分析相当经典，值得我们认真琢磨体味，对有兴趣研究优化问题的读者来说，更是一个不可多得的分析案例。 当然，没有什么绝对能有效的方法，有的只是 方法虽好，要想实际有效，依然要用心炼丹。"
+    "source_summary": "本文介绍了Google提出来的AdaFactor优化器，一个旨在减少显存占用的优化器，并且针对性地分析并解决了Adam的一些缺陷。笔者认为，AdaFactor针对Adam所做的分析相当经典，值得我们认真琢磨体味，对有兴趣研究优化问题的读者来说，更是一个不可多得的分析案例。 当然，没有什么绝对能有效的方法，有的只是 方法虽好，要想实际有效，依然要用心炼丹。",
+    "metadata_checked_at": "2026-11-05T00:20:49+00:00"
   },
   {
     "id": "7292",
@@ -5574,7 +5582,8 @@
       "文本生成",
       "attention"
     ],
-    "source_summary": null
+    "source_summary": null,
+    "metadata_checked_at": "2026-11-05T00:20:53+00:00"
   },
   {
     "id": "7259",
@@ -5587,7 +5596,8 @@
       "文本生成",
       "对抗训练"
     ],
-    "source_summary": null
+    "source_summary": null,
+    "metadata_checked_at": "2026-11-05T00:20:57+00:00"
   },
   {
     "id": "7234",
@@ -5601,7 +5611,8 @@
       "对抗训练",
       "泛化"
     ],
-    "source_summary": null
+    "source_summary": null,
+    "metadata_checked_at": "2026-11-05T00:21:00+00:00"
   },
   {
     "id": "7213",
@@ -5614,7 +5625,8 @@
       "概率图",
       "crf"
     ],
-    "source_summary": "本文介绍并简单推广了跟CRF一样同为概率图经典案例的MEMM，它与CRF的区别主要是归一化方式上的不一样，接着笔者从实验上对两者做了简单的比较，得出MEMM训练更快但效果不优于CRF的结论。尽管如此，笔者认为MEMM仍有可取之处，所以最后构思了MEMM的一些拓展。"
+    "source_summary": "本文介绍并简单推广了跟CRF一样同为概率图经典案例的MEMM，它与CRF的区别主要是归一化方式上的不一样，接着笔者从实验上对两者做了简单的比较，得出MEMM训练更快但效果不优于CRF的结论。尽管如此，笔者认为MEMM仍有可取之处，所以最后构思了MEMM的一些拓展。",
+    "metadata_checked_at": "2026-11-05T00:21:04+00:00"
   },
   {
     "id": "7210",
@@ -5627,7 +5639,8 @@
       "GAN",
       "生成模型"
     ],
-    "source_summary": null
+    "source_summary": null,
+    "metadata_checked_at": "2026-11-05T00:21:07+00:00"
   },
   {
     "id": "7196",
@@ -5640,7 +5653,8 @@
       "概率图",
       "crf"
     ],
-    "source_summary": null
+    "source_summary": null,
+    "metadata_checked_at": "2026-11-05T00:21:11+00:00"
   },
   {
     "id": "7187",
@@ -5652,7 +5666,8 @@
       "语言模型",
       "attention"
     ],
-    "source_summary": null
+    "source_summary": null,
+    "metadata_checked_at": "2026-11-05T00:21:15+00:00"
   },
   {
     "id": "7180",
@@ -5666,7 +5681,8 @@
       "几何",
       "优化"
     ],
-    "source_summary": null
+    "source_summary": null,
+    "metadata_checked_at": "2026-11-05T00:21:18+00:00"
   },
   {
     "id": "7169",
@@ -5677,7 +5693,8 @@
     "source_tags": [
       "模型"
     ],
-    "source_summary": null
+    "source_summary": null,
+    "metadata_checked_at": "2026-11-05T00:21:22+00:00"
   },
   {
     "id": "7161",
@@ -5689,7 +5706,8 @@
       "语言模型",
       "信息抽取"
     ],
-    "source_summary": "本文给出了用bert4keras来做三元组抽取的一个例子，并且指出了一些值得注意的事情，欢迎大家参考试用。"
+    "source_summary": "本文给出了用bert4keras来做三元组抽取的一个例子，并且指出了一些值得注意的事情，欢迎大家参考试用。",
+    "metadata_checked_at": "2026-11-05T00:21:26+00:00"
   },
   {
     "id": "7148",
@@ -5703,7 +5721,8 @@
       "生成模型",
       "文本生成"
     ],
-    "source_summary": "本文试验了通过MLM的非自回归生成方式来做阅读理解式问答，发现最后的效果也不赖，而且速度有了好几倍的提升。此外，文章还简单对比了自回归和非自回归生成的异同，分析了非自回归方案何时适用及其原因。"
+    "source_summary": "本文试验了通过MLM的非自回归生成方式来做阅读理解式问答，发现最后的效果也不赖，而且速度有了好几倍的提升。此外，文章还简单对比了自回归和非自回归生成的异同，分析了非自回归方案何时适用及其原因。",
+    "metadata_checked_at": "2026-11-05T00:21:30+00:00"
   },
   {
     "id": "7144",
@@ -5715,7 +5734,8 @@
       "天象",
       "天文"
     ],
-    "source_summary": null
+    "source_summary": null,
+    "metadata_checked_at": "2026-11-05T00:21:33+00:00"
   },
   {
     "id": "7124",
@@ -5728,7 +5748,8 @@
       "文本生成",
       "attention"
     ],
-    "source_summary": "提出了利用Conditional Layer Normalization来将外部条件融入到预训练模型中的思路，其直接应用就是条件文本生成，但其实也不单单可以用于生成模型，也可以用于分类模型等场景（外部条件可能是其他模态的信息，来辅助分类）。最后基于bert4keras给出了代码实现以及两个例子。"
+    "source_summary": "提出了利用Conditional Layer Normalization来将外部条件融入到预训练模型中的思路，其直接应用就是条件文本生成，但其实也不单单可以用于生成模型，也可以用于分类模型等场景（外部条件可能是其他模态的信息，来辅助分类）。最后基于bert4keras给出了代码实现以及两个例子。",
+    "metadata_checked_at": "2026-11-05T00:21:37+00:00"
   },
   {
     "id": "7115",
@@ -5767,7 +5788,8 @@
       "keras",
       "优化器"
     ],
-    "source_summary": null
+    "source_summary": null,
+    "metadata_checked_at": "2026-11-05T00:21:40+00:00"
   },
   {
     "id": "7076",
@@ -5779,7 +5801,8 @@
       "概率",
       "分析"
     ],
-    "source_summary": "本文对高维空间的夹角分布进行了推导，记录在此以备忘，同时也供有需要的读者参考。"
+    "source_summary": "本文对高维空间的夹角分布进行了推导，记录在此以备忘，同时也供有需要的读者参考。",
+    "metadata_checked_at": "2026-11-05T00:21:44+00:00"
   },
   {
     "id": "7063",
@@ -5793,7 +5816,8 @@
       "词向量",
       "NLP"
     ],
-    "source_summary": null
+    "source_summary": null,
+    "metadata_checked_at": "2026-11-05T00:21:47+00:00"
   },
   {
     "id": "7055",
@@ -5804,7 +5828,8 @@
     "source_tags": [
       "keras"
     ],
-    "source_summary": null
+    "source_summary": null,
+    "metadata_checked_at": "2026-11-05T00:21:51+00:00"
   },
   {
     "id": "7038",
