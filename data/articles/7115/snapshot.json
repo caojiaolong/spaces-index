@@ -6,9 +6,16 @@
     "source_url": "https://spaces.ac.cn/archives/7115",
     "date": "2019-12-05",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "信息时代",
+    "source_tags": [
+      "问答",
+      "语言模型",
+      "文本生成"
+    ],
+    "source_summary": "本文主要是给出了一个基于bert和seq2seq思路的阅读理解例子，并且给出了一种多篇章投票的beam search策略，供读者参考和测试～"
   },
-  "fetched_at": "2026-09-14T13:16:19+00:00",
+  "fetched_at": "2026-11-05T09:40:14+00:00",
   "source_snapshot_sha256": "d39b62b8775d8bd13961eef7c09b6fe979efaed69df267f2cfe6d134e8060917",
   "validators": {
     "etag": null,

@@ -6,7 +6,14 @@
     "source_url": "https://spaces.ac.cn/archives/6784",
     "date": "2019-07-06",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "物理化学",
+    "source_tags": [
+      "旋转",
+      "变分",
+      "作用量"
+    ],
+    "source_summary": null
   },
   "validation": {
     "passed": true,
@@ -30,8 +37,8 @@
     "converter_version": 1,
     "markdown_sha256": "59f9aaec843188e707dea1126fc95bb088cf02ecc460a70e8a011ecf683a5c68"
   },
-  "fetched_at": "2026-09-14T13:18:50+00:00",
+  "fetched_at": "2026-11-05T09:41:23+00:00",
   "source_snapshot_sha256": "5a3aa9bba73818c50f63d740258bc6115b6238e6438dcb41bd112224c046c218",
   "images": {},
-  "local_only": true
+  "publication_policy": "config/mirror.json"
 }

@@ -6,10 +6,16 @@
     "source_url": "https://spaces.ac.cn/archives/6985",
     "date": "2019-09-29",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "信息时代",
+    "source_tags": [
+      "模型",
+      "keras"
+    ],
+    "source_summary": "Keras是最让人赏心悦目的深度学习框架，至少到目前为止，就模型代码的可读性而言，没有之一。可能读者会提到PyTorch，诚然PyTorch也有不少可取之处，但就可读性而言，我认为是比不上Keras的。 在深究Keras的过程中，我不仅惊叹于Keras作者们的深厚而优雅的编程功底，甚至感觉自己的编程技能也提高了不少。不错，我的很多Python编程技巧，都是从读Keras源码中学习到的。"
   },
-  "fetched_at": "2026-09-14T13:17:26+00:00",
-  "source_snapshot_sha256": "e7f2a23751efa957eb12e31311603efa040a5c5cc182cd65271c04ad8238058b",
+  "fetched_at": "2026-11-05T09:40:38+00:00",
+  "source_snapshot_sha256": "8ed70cb52b54cd82290e03e5bbef9243e25874cc5bfc4b46bb53d4e1a2b5d9d4",
   "validators": {
     "etag": null,
     "last_modified": null

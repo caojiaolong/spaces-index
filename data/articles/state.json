@@ -2710,14 +2710,14 @@
   },
   "7115": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:19:31+00:00",
+    "checked_at": "2026-11-05T09:40:14+00:00",
     "title": "万能的seq2seq：基于seq2seq的阅读理解问答",
     "markdown_sha256": "44c4b44c43d11cf77b10b8927ab288e9f83431c10204febb7bb37da5b8ec8304",
     "converter_version": 1
   },
   "7105": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:19:31+00:00",
+    "checked_at": "2026-11-05T09:40:18+00:00",
     "title": "级联抑制：提升GAN表现的一种简单有效的方法",
     "markdown_sha256": "5d48663803dc1544f7982c23a453e665859fb281ff7634a3162c032c87ea963a",
     "converter_version": 1
@@ -2752,154 +2752,154 @@
   },
   "7038": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:19:32+00:00",
+    "checked_at": "2026-11-05T09:40:21+00:00",
     "title": "从去噪自编码器到生成模型",
     "markdown_sha256": "3c96bd25cc3d3500e6967b0b9e4dddee72d18d4040cf14bc344c8f38536550ef",
     "converter_version": 1
   },
   "7031": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:19:32+00:00",
+    "checked_at": "2026-11-05T09:40:25+00:00",
     "title": "什么时候多进程的加速比可以大于1？",
     "markdown_sha256": "6080171dbec2038a714a0e86e5a3d74810c5446979bd5d374f1d2004f44f780e",
     "converter_version": 1
   },
   "7006": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:19:32+00:00",
+    "checked_at": "2026-11-05T09:40:28+00:00",
     "title": "最小熵原理（五）：“层层递进”之社区发现与聚类",
     "markdown_sha256": "4a8537bcb077249ddcc9f0d977a7ba46f935137bd3790ab4248ce603eb407897",
     "converter_version": 1
   },
   "6992": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:19:33+00:00",
+    "checked_at": "2026-11-05T09:40:33+00:00",
     "title": "BN究竟起了什么作用？一个闭门造车的分析",
     "markdown_sha256": "1cd03476f895c787d4b9006ea981626af4e03b765887ddb88623af59475892c9",
     "converter_version": 1
   },
   "6985": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:19:33+00:00",
+    "checked_at": "2026-11-05T09:40:38+00:00",
     "title": "“让Keras更酷一些！”：层与模型的重用技巧",
-    "markdown_sha256": "783035cc84af8c702b07d420bd33d61f2d06f1d4420f257665ad3ce5fe03b603",
+    "markdown_sha256": "5a6664ceceb8d4a89330883dc7037ea6fd8acfdd8676c8a47eec0d15b3ea8e7b",
     "converter_version": 1
   },
   "6933": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:19:33+00:00",
+    "checked_at": "2026-11-05T09:40:41+00:00",
     "title": "从语言模型到Seq2Seq：Transformer如戏，全靠Mask",
-    "markdown_sha256": "00fe4c02f3c182876c2bcc558304f1e366aaf4538fb71b2e11501b223f865350",
+    "markdown_sha256": "c56faeae3ef4e106c7ef53999126bea49aa815a0818d9b26db835c0a0eec570b",
     "converter_version": 1
   },
   "6920": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:19:33+00:00",
+    "checked_at": "2026-11-05T09:40:45+00:00",
     "title": "重新写了之前的新词发现算法：更快更好的新词发现",
     "markdown_sha256": "5b36b1768a2e161164ea7c1a6b146e71fea1258b50f34f1f1dbc2c93ad01631b",
     "converter_version": 1
   },
   "6919": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:19:34+00:00",
+    "checked_at": "2026-11-05T09:40:49+00:00",
     "title": "百度实体链接比赛后记：行为建模和实体链接",
     "markdown_sha256": "247e715723bdd522e63835b4ac757d697f6b2defd8a1a61afe37b11da9120261",
     "converter_version": 1
   },
   "6915": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:19:34+00:00",
+    "checked_at": "2026-11-05T09:40:52+00:00",
     "title": "自己实现了一个bert4keras",
     "markdown_sha256": "d2163589429863aa03230b7893d4de9047374762830d1d0c1c09f785a9854b88",
     "converter_version": 1
   },
   "6910": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:19:34+00:00",
+    "checked_at": "2026-11-05T09:40:56+00:00",
     "title": "HSIC简介：一个有意思的判断相关性的思路",
     "markdown_sha256": "b197eb8b23a845aecd3f35505b9ba10320dde93835bf3ff3ef2a94fdca58755c",
     "converter_version": 1
   },
   "6906": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:19:34+00:00",
+    "checked_at": "2026-11-05T09:40:59+00:00",
     "title": "开源一版DGCNN阅读理解问答模型（Keras版）",
     "markdown_sha256": "3d7016c7279ae372a42b520d3410fd784c74e508ce3d1f618b51ee085509923a",
     "converter_version": 1
   },
   "6877": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:19:34+00:00",
+    "checked_at": "2026-11-05T09:41:02+00:00",
     "title": "seq2seq之双向解码",
-    "markdown_sha256": "28e175e24dc2ac40405f7e222f2a97d055e250b9f20eb886ebebaaa99422bb78",
+    "markdown_sha256": "a5cff103a8012413d9260195c76aa4586c69d42cc4e16668294048240ae5135c",
     "converter_version": 1
   },
   "6869": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:19:34+00:00",
+    "checked_at": "2026-11-05T09:41:06+00:00",
     "title": "Keras实现两个优化器：Lookahead和LazyOptimizer",
     "markdown_sha256": "135bbf1f66b2e80d32f78eaa4744714ced9bbe42cc25a773f290c6734844e539",
     "converter_version": 1
   },
   "6853": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:19:35+00:00",
+    "checked_at": "2026-11-05T09:41:09+00:00",
     "title": "为节约而生：从标准Attention到稀疏Attention",
     "markdown_sha256": "93ada91b5ae8195fa5e7c4998b6f2d8e41694b00ee286157ec91b591397e1f29",
     "converter_version": 1
   },
   "6818": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:19:35+00:00",
+    "checked_at": "2026-11-05T09:41:13+00:00",
     "title": "思考：两个椭圆片能粘合成一个立体吗？",
     "markdown_sha256": "63ec84b255f319de1e1eb6c2fc5e2f333341c3713ef1f6327a0397b263728197",
     "converter_version": 1
   },
   "6810": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:19:35+00:00",
+    "checked_at": "2026-11-05T09:41:16+00:00",
     "title": "“让Keras更酷一些！”：层中层与mask",
     "markdown_sha256": "98aee8390240401acfcd6a8e31dcf3c00e3436e9feda03a317d94386770c314f",
     "converter_version": 1
   },
   "6794": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:19:35+00:00",
+    "checked_at": "2026-11-05T09:41:20+00:00",
     "title": "用时间换取效果：Keras梯度累积优化器",
     "markdown_sha256": "7933e8b30ba62d7a93f0981f755594d248d3fd5e254fe559f71ac952563915b0",
     "converter_version": 1
   },
   "6784": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:19:35+00:00",
+    "checked_at": "2026-11-05T09:41:23+00:00",
     "title": "你跳绳的时候，想过绳子的形状曲线是怎样的吗？",
     "markdown_sha256": "59f9aaec843188e707dea1126fc95bb088cf02ecc460a70e8a011ecf683a5c68",
     "converter_version": 1
   },
   "6771": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:19:36+00:00",
+    "checked_at": "2026-11-05T09:41:27+00:00",
     "title": " 基于Bert的NL2SQL模型：一个简明的Baseline",
     "markdown_sha256": "dd20501bb98eba484af933ec1dfb80c4410c13baadb33292061a4c4fe42156ac",
     "converter_version": 1
   },
   "6760": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:19:36+00:00",
+    "checked_at": "2026-11-05T09:41:30+00:00",
     "title": "VQ-VAE的简明介绍：量子化自编码器",
     "markdown_sha256": "3b18e1ebd85e160c6becf862b8c39fff47ffe43ff7d768734f09fe00aaefb484",
     "converter_version": 1
   },
   "6747": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:19:36+00:00",
+    "checked_at": "2026-11-05T09:41:34+00:00",
     "title": "简述无偏估计和有偏估计",
     "markdown_sha256": "9d781d1588e0910e0050cced91a07a46cd3ed10da2672de82a48599e4e037c68",
     "converter_version": 1
   },
   "6736": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:19:36+00:00",
+    "checked_at": "2026-11-05T09:41:37+00:00",
     "title": "当Bert遇上Keras：这可能是Bert最简单的打开姿势",
     "markdown_sha256": "4a9c565660c8675c0acd1617fea7e3d3240dfd920663074323a6e821fbcf180b",
     "converter_version": 1
@@ -2920,7 +2920,7 @@
   },
   "6671": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:19:37+00:00",
+    "checked_at": "2026-11-05T09:41:41+00:00",
     "title": "基于DGCNN和概率图的轻量级信息抽取模型",
     "markdown_sha256": "97db76dc7fe917aebe510b6fcb4e014b879533edf52cbfc4a208721b9f054650",
     "converter_version": 1
@@ -8464,7 +8464,7 @@
   },
   "132": {
     "status": "conversion_failed",
-    "checked_at": "2026-11-05T00:21:51+00:00",
+    "checked_at": "2026-11-05T09:41:41+00:00",
     "title": "一道从小学到高中都可能考到的题目",
     "error": "Unreviewed legacy element: a<b，则有<br",
     "converter_version": 1,

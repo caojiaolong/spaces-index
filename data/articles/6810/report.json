@@ -6,7 +6,12 @@
     "source_url": "https://spaces.ac.cn/archives/6810",
     "date": "2019-07-16",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "信息时代",
+    "source_tags": [
+      "keras"
+    ],
+    "source_summary": "Keras是一个极其友好、极其灵活的高层深度学习API封装，千万不要听信网上流传的“Keras对新手很友好，但是欠缺灵活性”的谣言～Keras对新手很友好，对老手更友好，对需要频繁自定义模块的用户更更友好。"
   },
   "validation": {
     "passed": true,
@@ -30,8 +35,8 @@
     "converter_version": 1,
     "markdown_sha256": "98aee8390240401acfcd6a8e31dcf3c00e3436e9feda03a317d94386770c314f"
   },
-  "fetched_at": "2026-09-14T13:18:38+00:00",
+  "fetched_at": "2026-11-05T09:41:16+00:00",
   "source_snapshot_sha256": "a0b629e82f5bfa91309afb0ccb777b8aac6ceb4a7aa375fd7bcbb9d7a1a23db2",
   "images": {},
-  "local_only": true
+  "publication_policy": "config/mirror.json"
 }

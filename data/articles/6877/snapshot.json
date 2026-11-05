@@ -6,10 +6,18 @@
     "source_url": "https://spaces.ac.cn/archives/6877",
     "date": "2019-08-09",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "信息时代",
+    "source_tags": [
+      "模型",
+      "NLP",
+      "keras",
+      "文本生成"
+    ],
+    "source_summary": "本文介绍并实现了一种seq2seq的双向解码机制，它将整个解码过程对称化了，从而在一定程度上使得生成质量更高了。个人认为这种改进的尝试还是有一定的价值的，尤其是对于追求形式美的读者来说。所以就将其介绍一番。 除此之外，文章也分析了这种双向解码可能存在的问题，给出了笔者自己的看法。敬请各位读者多多交流直角～"
   },
-  "fetched_at": "2026-09-14T13:18:12+00:00",
-  "source_snapshot_sha256": "93e761c93cf4c98350628942414588c38eaf26eb9f60d9172afdd5a753d36ea3",
+  "fetched_at": "2026-11-05T09:41:02+00:00",
+  "source_snapshot_sha256": "ae2c025b43e8a2ea84a38838bf6e6d7b6541906c33f4d7d6bc04b3df375658a4",
   "validators": {
     "etag": null,
     "last_modified": null

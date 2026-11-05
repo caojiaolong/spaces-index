@@ -6,9 +6,17 @@
     "source_url": "https://spaces.ac.cn/archives/6771",
     "date": "2019-06-29",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "信息时代",
+    "source_tags": [
+      "语言模型",
+      "比赛",
+      "sql",
+      "attention"
+    ],
+    "source_summary": "欢迎大家来玩～ https://tianchi.aliyun.com/markets/tianchi/zhuiyi_cn 祝大家取得好成绩！"
   },
-  "fetched_at": "2026-09-14T13:18:56+00:00",
+  "fetched_at": "2026-11-05T09:41:27+00:00",
   "source_snapshot_sha256": "2072f534edcf53238800bea819fc212e9f13b578883d00af950aad5ace1844fa",
   "validators": {
     "etag": null,

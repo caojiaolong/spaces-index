@@ -143,7 +143,7 @@ x = EmbeddingDense(embedding_layer)(x) # 调用EmbeddingDense层</code></pre>
 
 ### 提取中间层
 
-有时候我们需要从搭建好的模型中提取中间层的特征，并且构建一个新模型，在Keras中这同样是很简单的操作：
+有时候我们需要从搭建好的模型中提取中间层的特征，并且构建一个新模型，在Keras中这同样是很简单的操作：
 
 
 

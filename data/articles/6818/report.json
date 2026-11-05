@@ -6,7 +6,14 @@
     "source_url": "https://spaces.ac.cn/archives/6818",
     "date": "2019-07-21",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "数学研究",
+    "source_tags": [
+      "证明",
+      "方程",
+      "曲线"
+    ],
+    "source_summary": "本文分析了两个椭圆片的粘合问题，其核心思想是用弧长参数化曲线方程，虽然文章是以椭圆为例，但显然可以推广到一般的两个平面曲线面的弯曲粘合问题，只需要分别求出各自的弧长参数方程（即$h(l-s)$换成另一条曲线的弧长参数化方程），然后沿用$\\eqref{eq:f}$式积分。 总算基本解决了一个比较有意思的问题，来证明自己的数学兴趣和能力还在～"
   },
   "validation": {
     "passed": true,
@@ -30,8 +37,8 @@
     "converter_version": 1,
     "markdown_sha256": "63ec84b255f319de1e1eb6c2fc5e2f333341c3713ef1f6327a0397b263728197"
   },
-  "fetched_at": "2026-09-14T13:18:31+00:00",
+  "fetched_at": "2026-11-05T09:41:13+00:00",
   "source_snapshot_sha256": "143b809c155b55c7f640ee2c6e63cee354ca2b41bb874bdf540a7bbbe8000770",
   "images": {},
-  "local_only": true
+  "publication_policy": "config/mirror.json"
 }

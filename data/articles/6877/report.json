@@ -6,7 +6,15 @@
     "source_url": "https://spaces.ac.cn/archives/6877",
     "date": "2019-08-09",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "信息时代",
+    "source_tags": [
+      "模型",
+      "NLP",
+      "keras",
+      "文本生成"
+    ],
+    "source_summary": "本文介绍并实现了一种seq2seq的双向解码机制，它将整个解码过程对称化了，从而在一定程度上使得生成质量更高了。个人认为这种改进的尝试还是有一定的价值的，尤其是对于追求形式美的读者来说。所以就将其介绍一番。 除此之外，文章也分析了这种双向解码可能存在的问题，给出了笔者自己的看法。敬请各位读者多多交流直角～"
   },
   "validation": {
     "passed": true,
@@ -22,18 +30,18 @@
     "image_count": 2,
     "heading_count": 10,
     "code_block_count": 0,
-    "source_text_sha256": "aca97ac71cd86e2b0eace69336c5817d8ff9b05006c40cb73aaceef659590cb0",
-    "output_text_sha256": "aca97ac71cd86e2b0eace69336c5817d8ff9b05006c40cb73aaceef659590cb0",
+    "source_text_sha256": "a555f2b6857149e26ffc95064a04545f8892d620fc467fec088f252a551452ef",
+    "output_text_sha256": "a555f2b6857149e26ffc95064a04545f8892d620fc467fec088f252a551452ef",
     "latex_sha256": "6b9ebdfe7178150b5169824858b03411c10b2035654a967f199a36e889049f84",
-    "body_sha256": "0bddff22297280b4147157d0f73d4de64199202f6c86f1e0bd89aa83009e6aa9",
+    "body_sha256": "171c0b5e84b352635815c209020279523e62a7369e8d75839372b0c0bb7f83be",
     "converter_version": 1,
     "format": "html-v1",
     "source_warnings": [],
     "fallback_reason": "Unsupported body element: video",
-    "markdown_sha256": "28e175e24dc2ac40405f7e222f2a97d055e250b9f20eb886ebebaaa99422bb78"
+    "markdown_sha256": "a5cff103a8012413d9260195c76aa4586c69d42cc4e16668294048240ae5135c"
   },
-  "fetched_at": "2026-09-14T13:18:12+00:00",
-  "source_snapshot_sha256": "93e761c93cf4c98350628942414588c38eaf26eb9f60d9172afdd5a753d36ea3",
+  "fetched_at": "2026-11-05T09:41:02+00:00",
+  "source_snapshot_sha256": "ae2c025b43e8a2ea84a38838bf6e6d7b6541906c33f4d7d6bc04b3df375658a4",
   "images": {},
-  "local_only": true
+  "publication_policy": "config/mirror.json"
 }

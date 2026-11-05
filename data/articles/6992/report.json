@@ -6,7 +6,14 @@
     "source_url": "https://spaces.ac.cn/archives/6992",
     "date": "2019-10-11",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "信息时代",
+    "source_tags": [
+      "模型",
+      "优化",
+      "神经网络"
+    ],
+    "source_summary": null
   },
   "validation": {
     "passed": true,
@@ -30,8 +37,8 @@
     "converter_version": 1,
     "markdown_sha256": "1cd03476f895c787d4b9006ea981626af4e03b765887ddb88623af59475892c9"
   },
-  "fetched_at": "2026-09-14T13:17:19+00:00",
+  "fetched_at": "2026-11-05T09:40:33+00:00",
   "source_snapshot_sha256": "d48a198c56ca4ab8c12c9cfd691be96d62985dad526aad2b942a0f0582dc4c61",
   "images": {},
-  "local_only": true
+  "publication_policy": "config/mirror.json"
 }

@@ -6,7 +6,14 @@
     "source_url": "https://spaces.ac.cn/archives/6853",
     "date": "2019-07-27",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "信息时代",
+    "source_tags": [
+      "模型",
+      "稀疏",
+      "attention"
+    ],
+    "source_summary": "也没什么好总结的了，就介绍并实现了三种稀疏Attention。除了省显存外，稀疏的Attention应该能够更好地适应一些任务，毕竟大多数任务的关联主要都在局部的，而且是从局部到整体的形式。尤其是最后一个Sparse Self Attention所体现的“局部紧密相关和远程稀疏相关”，应当能满足大多数任务的特点，如果有相应任务的读者，不妨试用一下。"
   },
   "validation": {
     "passed": true,
@@ -30,8 +37,8 @@
     "converter_version": 1,
     "markdown_sha256": "93ada91b5ae8195fa5e7c4998b6f2d8e41694b00ee286157ec91b591397e1f29"
   },
-  "fetched_at": "2026-09-14T13:18:25+00:00",
+  "fetched_at": "2026-11-05T09:41:09+00:00",
   "source_snapshot_sha256": "3ed103b970d622a369b281f7e6bcc131ad6863602322950a375e56a2853e5ab1",
   "images": {},
-  "local_only": true
+  "publication_policy": "config/mirror.json"
 }

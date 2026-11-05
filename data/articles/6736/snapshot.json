@@ -6,9 +6,17 @@
     "source_url": "https://spaces.ac.cn/archives/6736",
     "date": "2019-06-18",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "信息时代",
+    "source_tags": [
+      "语言模型",
+      "比赛",
+      "信息抽取",
+      "attention"
+    ],
+    "source_summary": "本文介绍了Keras下Bert的基本调用方法，其中主要是提供三个参考例子，供大家逐步熟悉Bert的fine tune步骤和原理。其中有不少是笔者自己闭门造车的经验之谈，如果有所偏颇，还望读者指正。 事实上有了CyberZHG大佬实现的keras-bert，在Keras下使用Bert也就是小菜一碟，大家折腾个半天，也就上手了。最后祝大家用得痛快～"
   },
-  "fetched_at": "2026-09-14T13:19:20+00:00",
+  "fetched_at": "2026-11-05T09:41:37+00:00",
   "source_snapshot_sha256": "2043acacecb7039accd632c703799406e083683bdb45474657874d48187cfb60",
   "validators": {
     "etag": null,

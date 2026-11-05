@@ -6,7 +6,14 @@
     "source_url": "https://spaces.ac.cn/archives/6919",
     "date": "2019-09-03",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "信息时代",
+    "source_tags": [
+      "模型",
+      "NLP",
+      "NER"
+    ],
+    "source_summary": "本文分享了一次实体链接比赛的参赛过程，从模型上看整体模型比较朴素，主要效果提升在于所提出的人工特征。这些人工特征主要是人工观察数据特点得出的统计特征，属于比赛的一些trick，事实上这些trick有投机取巧之嫌，未必能在真正的生产环境中用到，但却紧密结合了赛题数据特点。 还是那句话，笔者更倾向于认为这更像是一次标注行为建模，而不是真正的语义理解竞赛，尤其是在实体识别这一步，主观性太强了，是整个比赛的主要瓶颈之一。为了提升最终分数，我们必须要花相当大的力气做好实体识别这一步，但是做好实体识别这一步，只能说你更好地拟合了标注人员的行为，而不是真正最好了语义上的实体识别，对比赛的初衷——实体链接——更没有太大帮助。 而且真的是生产环境的…"
   },
   "validation": {
     "passed": true,
@@ -30,8 +37,8 @@
     "converter_version": 1,
     "markdown_sha256": "247e715723bdd522e63835b4ac757d697f6b2defd8a1a61afe37b11da9120261"
   },
-  "fetched_at": "2026-09-14T13:17:47+00:00",
+  "fetched_at": "2026-11-05T09:40:49+00:00",
   "source_snapshot_sha256": "e99c7cb68ce31ed954cfb4a6583a5bd98a01e8a8fa302c6dccb4ec368017bf3d",
   "images": {},
-  "local_only": true
+  "publication_policy": "config/mirror.json"
 }

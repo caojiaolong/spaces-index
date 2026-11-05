@@ -6,9 +6,15 @@
     "source_url": "https://spaces.ac.cn/archives/6906",
     "date": "2019-08-20",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "信息时代",
+    "source_tags": [
+      "模型",
+      "问答"
+    ],
+    "source_summary": null
   },
-  "fetched_at": "2026-09-14T13:18:05+00:00",
+  "fetched_at": "2026-11-05T09:40:59+00:00",
   "source_snapshot_sha256": "e3af2ca6eb656ef39c13b58688f13d0b959a1975e66979d1257dcc73626d3e99",
   "validators": {
     "etag": null,

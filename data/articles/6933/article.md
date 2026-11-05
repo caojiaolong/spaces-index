@@ -44,7 +44,7 @@
 
 ### Transformer专属
 
-事实上，除了单向语言模型及其简单变体掩码语言模型之外，UNILM的Seq2Seq预训练、XLNet的乱序语言模型预训练，基本可以说是专为Transformer架构定制的。说白了，如果是RNN架构，根本就不能用乱序语言模型的方式来预训练，至于Seq2Seq的预训练方式，则必须同时引入两个模型（encoder和decoder），而无法像Transformer架构一样，可以一个模型搞定。
+事实上，除了单向语言模型及其简单变体掩码语言模型之外，UNILM的Seq2Seq预训练、XLNet的乱序语言模型预训练，基本可以说是专为Transformer架构定制的。说白了，如果是RNN架构，根本就不能用乱序语言模型的方式来预训练，至于Seq2Seq的预训练方式，则必须同时引入两个模型（encoder和decoder），而无法像Transformer架构一样，可以一个模型搞定。
 
 这其中的奥妙主要在Attention矩阵之上。Attention实际上相当于将输入两两地算相似度，这构成了一个$n^2$大小的相似度矩阵（即Attention矩阵，$n$是句子长度，本文的Attention均指Self Attention），这意味着它的空间占用量是$\mathcal{O}(n^2)$量级，相比之下，RNN模型、CNN模型只不过是$\mathcal{O}(n)$，所以实际上Attention通常更耗显存。然而，有弊也有利，更大的空间占用也意味着拥有了更多的可能性，我们可以通过往这个$\mathcal{O}(n^2)$级别的Attention矩阵加入各种先验约束，使得它可以做更灵活的任务。说白了，也就只有纯Attention的模型，才有那么大的“容量”去承载那么多的“花样”。
 

@@ -6,7 +6,15 @@
     "source_url": "https://spaces.ac.cn/archives/6920",
     "date": "2019-09-09",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "信息时代",
+    "source_tags": [
+      "分词",
+      "无监督",
+      "NLP",
+      "新词发现"
+    ],
+    "source_summary": "本文复现了笔者之前提出了新词发现（词库构建）算法，主要是做了速度上的优化，然后做了做简单的效果评测。但具体效果读者还是得在使用中慢慢调试了。 祝大家使用愉快～Enjoy it！"
   },
   "validation": {
     "passed": true,
@@ -30,8 +38,8 @@
     "converter_version": 1,
     "markdown_sha256": "5b36b1768a2e161164ea7c1a6b146e71fea1258b50f34f1f1dbc2c93ad01631b"
   },
-  "fetched_at": "2026-09-14T13:17:41+00:00",
+  "fetched_at": "2026-11-05T09:40:45+00:00",
   "source_snapshot_sha256": "74b6b45cba1714b8eac06f382048d5cc8cc39a36c619886cb83f642c8a2d1c97",
   "images": {},
-  "local_only": true
+  "publication_policy": "config/mirror.json"
 }

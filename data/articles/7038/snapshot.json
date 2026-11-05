@@ -6,9 +6,17 @@
     "source_url": "https://spaces.ac.cn/archives/7038",
     "date": "2019-10-31",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "信息时代",
+    "source_tags": [
+      "生成模型",
+      "编码",
+      "梯度",
+      "去噪"
+    ],
+    "source_summary": null
   },
-  "fetched_at": "2026-09-14T13:16:57+00:00",
+  "fetched_at": "2026-11-05T09:40:21+00:00",
   "source_snapshot_sha256": "2efcfd1037768966a38e7101bef7d6d3e106ed9623f43ddfbcc4ac255a02d9b6",
   "validators": {
     "etag": null,

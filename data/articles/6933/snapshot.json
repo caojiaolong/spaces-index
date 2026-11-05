@@ -6,10 +6,18 @@
     "source_url": "https://spaces.ac.cn/archives/6933",
     "date": "2019-09-18",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "信息时代",
+    "source_tags": [
+      "语言模型",
+      "NLP",
+      "文本生成",
+      "attention"
+    ],
+    "source_summary": "本文相对系统地总结了Transformer中Attention矩阵的Mask技巧，并且给出了用UNILM方案来做Seq2Seq的实现。对于同语言的Seq2Seq的文本生成任务来说，采用UNILM的思路加载Bert的MLM预训练权重，能够有效、快速地实现并提升生成效果，值得一试。"
   },
-  "fetched_at": "2026-09-14T13:17:33+00:00",
-  "source_snapshot_sha256": "003c97c7d3298cc3af0a8d8cde30d15632ae532d20bf229dcacb7742d7a2ee33",
+  "fetched_at": "2026-11-05T09:40:41+00:00",
+  "source_snapshot_sha256": "ac093bf102d759d9871886ded72d281cff0083dddb66570963a0fb168e23aa80",
   "validators": {
     "etag": null,
     "last_modified": null

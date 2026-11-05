@@ -6,7 +6,14 @@
     "source_url": "https://spaces.ac.cn/archives/6794",
     "date": "2019-07-08",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "信息时代",
+    "source_tags": [
+      "keras",
+      "梯度",
+      "优化器"
+    ],
+    "source_summary": null
   },
   "validation": {
     "passed": true,
@@ -30,8 +37,8 @@
     "converter_version": 1,
     "markdown_sha256": "7933e8b30ba62d7a93f0981f755594d248d3fd5e254fe559f71ac952563915b0"
   },
-  "fetched_at": "2026-09-14T13:18:44+00:00",
+  "fetched_at": "2026-11-05T09:41:20+00:00",
   "source_snapshot_sha256": "690ec8b6953fd3d2109aab773a46ca761b5d4716217934f0b0a4d94a4f8b8c72",
   "images": {},
-  "local_only": true
+  "publication_policy": "config/mirror.json"
 }

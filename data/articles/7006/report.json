@@ -6,7 +6,15 @@
     "source_url": "https://spaces.ac.cn/archives/7006",
     "date": "2019-10-19",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "信息时代",
+    "source_tags": [
+      "熵",
+      "聚类",
+      "无监督",
+      "最小熵"
+    ],
+    "source_summary": "写了好几天，终于把这篇博客写完了，被我搁置了2年多的算法，总算是把它拿起来并且基本理解清楚了。 总的来说，InfoMap就是建立在转移概率基础上的一种聚类/社区发现算法，有清晰的信息论解释（最小熵解释），并且几乎没有任何超参（或者说超参就是转移概率的构建），目前不少领域都开始关注到它，试图用它来从数据中挖掘出有一定联系的模块（哪个领域没有节点和图网络的结构呢？）。当初我导师就是建议我用它来分析基因数据的，可惜我最终还是没有完成这个目标～不管怎样，就因为它如此的优雅美妙，我觉得都应该去好好了解它。 最后，顺便说一下，这已经是最小熵原理的第五篇文章了，它究竟还能走多远？让我们拭目以待～"
   },
   "validation": {
     "passed": true,
@@ -30,8 +38,8 @@
     "converter_version": 1,
     "markdown_sha256": "4a8537bcb077249ddcc9f0d977a7ba46f935137bd3790ab4248ce603eb407897"
   },
-  "fetched_at": "2026-09-14T13:17:13+00:00",
+  "fetched_at": "2026-11-05T09:40:28+00:00",
   "source_snapshot_sha256": "6da1ae8f0cfe0053823fa485e38fa942b414fe20836dd693dce5bd7b7d84fbb5",
   "images": {},
-  "local_only": true
+  "publication_policy": "config/mirror.json"
 }

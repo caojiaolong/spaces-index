@@ -6,7 +6,15 @@
     "source_url": "https://spaces.ac.cn/archives/6915",
     "date": "2019-08-27",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "信息时代",
+    "source_tags": [
+      "语言模型",
+      "NLP",
+      "keras",
+      "attention"
+    ],
+    "source_summary": null
   },
   "validation": {
     "passed": true,
@@ -30,8 +38,8 @@
     "converter_version": 1,
     "markdown_sha256": "d2163589429863aa03230b7893d4de9047374762830d1d0c1c09f785a9854b88"
   },
-  "fetched_at": "2026-09-14T15:16:55+00:00",
+  "fetched_at": "2026-11-05T09:40:52+00:00",
   "source_snapshot_sha256": "4a1e0838e9155fbca6ff02e163842d73405a3cc3220514e28f539ad0338c4028",
   "images": {},
-  "local_only": true
+  "publication_policy": "config/mirror.json"
 }

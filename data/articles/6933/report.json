@@ -6,7 +6,15 @@
     "source_url": "https://spaces.ac.cn/archives/6933",
     "date": "2019-09-18",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "信息时代",
+    "source_tags": [
+      "语言模型",
+      "NLP",
+      "文本生成",
+      "attention"
+    ],
+    "source_summary": "本文相对系统地总结了Transformer中Attention矩阵的Mask技巧，并且给出了用UNILM方案来做Seq2Seq的实现。对于同语言的Seq2Seq的文本生成任务来说，采用UNILM的思路加载Bert的MLM预训练权重，能够有效、快速地实现并提升生成效果，值得一试。"
   },
   "validation": {
     "passed": true,
@@ -23,15 +31,15 @@
     "image_count": 10,
     "heading_count": 11,
     "code_block_count": 2,
-    "source_text_sha256": "4e143f3a816b49f5a8749898d0f11414e95de8325ef13d5f33070bdafb9578de",
-    "output_text_sha256": "4e143f3a816b49f5a8749898d0f11414e95de8325ef13d5f33070bdafb9578de",
+    "source_text_sha256": "b3543f409e284fbc68b99d757fc4e115bf907c4b1cccb70350678dbc0c02584a",
+    "output_text_sha256": "b3543f409e284fbc68b99d757fc4e115bf907c4b1cccb70350678dbc0c02584a",
     "latex_sha256": "6eceb975963ecbcaa0124c5b3c774d24ee8cf9acb1b984f3c91d2509c2e65c4a",
-    "body_sha256": "96fba6ad71020f2a5975904884b80d6ea04a7ba784a32a9e508fd23bbba1aa11",
+    "body_sha256": "a1c5adc07c5ea9ed6b72273f0b7ab87ddf118fdd0b88e0efb0e3725972fbcd1b",
     "converter_version": 1,
-    "markdown_sha256": "00fe4c02f3c182876c2bcc558304f1e366aaf4538fb71b2e11501b223f865350"
+    "markdown_sha256": "c56faeae3ef4e106c7ef53999126bea49aa815a0818d9b26db835c0a0eec570b"
   },
-  "fetched_at": "2026-09-14T13:17:33+00:00",
-  "source_snapshot_sha256": "003c97c7d3298cc3af0a8d8cde30d15632ae532d20bf229dcacb7742d7a2ee33",
+  "fetched_at": "2026-11-05T09:40:41+00:00",
+  "source_snapshot_sha256": "ac093bf102d759d9871886ded72d281cff0083dddb66570963a0fb168e23aa80",
   "images": {},
-  "local_only": true
+  "publication_policy": "config/mirror.json"
 }

@@ -52,7 +52,7 @@ model2 = clone_model(model1)</code></pre><p>注意，<code class="language-pytho
 # 用法
 embedding_layer = Embedding(10000, 128)
 x = embedding_layer(x) # 调用Embedding层
-x = EmbeddingDense(embedding_layer)(x) # 调用EmbeddingDense层</code></pre><h3 id="提取中间层">提取中间层</h3><p>有时候我们需要从搭建好的模型中提取中间层的特征，并且构建一个新模型，在Keras中这同样是很简单的操作：</p><pre class="line-numbers"><code class="language-python">from keras.applications.resnet50 import ResNet50
+x = EmbeddingDense(embedding_layer)(x) # 调用EmbeddingDense层</code></pre><h3 id="提取中间层">提取中间层</h3><p>有时候我们需要从搭建好的模型中提取中间层的特征，并且构建一个新模型，在Keras中这同样是很简单的操作：</p><pre class="line-numbers"><code class="language-python">from keras.applications.resnet50 import ResNet50
 model = ResNet50(weights='imagenet')
 
 Model(
