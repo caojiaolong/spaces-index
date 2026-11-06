@@ -6,7 +6,14 @@
     "source_url": "https://spaces.ac.cn/archives/6575",
     "date": "2019-04-28",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "信息时代",
+    "source_tags": [
+      "模型",
+      "优化",
+      "keras"
+    ],
+    "source_summary": null
   },
   "validation": {
     "passed": true,
@@ -30,8 +37,8 @@
     "converter_version": 1,
     "markdown_sha256": "14afdfa779a9e0a8f624e923792db1a3a0bc3deee23c7ea1765ae545c2157652"
   },
-  "fetched_at": "2026-09-14T13:20:15+00:00",
+  "fetched_at": "2026-11-06T09:34:20+00:00",
   "source_snapshot_sha256": "6c096f848242e6679f4cf25e18bf6b8f75e1ce6f92ac4144eff4a7436f9d9d80",
   "images": {},
-  "local_only": true
+  "publication_policy": "config/mirror.json"
 }

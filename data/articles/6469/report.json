@@ -6,7 +6,15 @@
     "source_url": "https://spaces.ac.cn/archives/6469",
     "date": "2019-03-14",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "生活/情感",
+    "source_tags": [
+      "生活",
+      "节日",
+      "情感",
+      "数学家"
+    ],
+    "source_summary": null
   },
   "validation": {
     "passed": true,
@@ -23,15 +31,15 @@
     "image_count": 3,
     "heading_count": 2,
     "code_block_count": 0,
-    "source_text_sha256": "4f9440bd948415448ddc4966270b552f1484daaa1cbf770ea04ad26915a2f43d",
-    "output_text_sha256": "4f9440bd948415448ddc4966270b552f1484daaa1cbf770ea04ad26915a2f43d",
+    "source_text_sha256": "50ba50d3dc5cbad6445f397ed245e582280b8ca48454a224babdb0a786b44143",
+    "output_text_sha256": "50ba50d3dc5cbad6445f397ed245e582280b8ca48454a224babdb0a786b44143",
     "latex_sha256": "ab92bad4bdc76856ad2e2d0d974d5d5fbf60ffa98513aee5be954d7b7fedbdbc",
-    "body_sha256": "7e1e862dd1bdf6c026b26e35629a038a246c0004384128e51b48cd2f75106522",
+    "body_sha256": "6b3944f99d2f3f65126d88ce4fbe99a0ba3b3305897c09cff60d6bcd25898815",
     "converter_version": 1,
-    "markdown_sha256": "805b91ad953e6305b0f9e6b3ee074c651943a31a5c8eb93170d11ca3516f45bc"
+    "markdown_sha256": "08706a04ea879844a160ddb949ec171f862d2009db536ab1bf76a85eeb66ce98"
   },
-  "fetched_at": "2026-09-14T13:20:55+00:00",
-  "source_snapshot_sha256": "03cd74078727986e969c8cba1c6d6def9a083440ce0b63cac8ce2663e9854b51",
+  "fetched_at": "2026-11-06T09:34:42+00:00",
+  "source_snapshot_sha256": "f3a93c79c15d9d1e6115271d0bed8d231fca0718b223dc58882c1890a673c7ab",
   "images": {},
-  "local_only": true
+  "publication_policy": "config/mirror.json"
 }

@@ -6,7 +6,14 @@
     "source_url": "https://spaces.ac.cn/archives/6377",
     "date": "2019-02-18",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "数学研究",
+    "source_tags": [
+      "分析",
+      "矩阵",
+      "行列式"
+    ],
+    "source_summary": null
   },
   "validation": {
     "passed": true,
@@ -30,8 +37,8 @@
     "converter_version": 1,
     "markdown_sha256": "400cafb02751d97dd155e62ef8211aac8ea6e1268b4774eb03c0cd4926ac48a0"
   },
-  "fetched_at": "2026-09-14T13:21:36+00:00",
+  "fetched_at": "2026-11-06T09:35:04+00:00",
   "source_snapshot_sha256": "349f143feed29b3509f3e055f3cabc860e3f0aec568b41f292275d34d3a1183b",
   "images": {},
-  "local_only": true
+  "publication_policy": "config/mirror.json"
 }

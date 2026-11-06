@@ -6,7 +6,15 @@
     "source_url": "https://spaces.ac.cn/archives/6387",
     "date": "2019-02-22",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "信息时代",
+    "source_tags": [
+      "GAN",
+      "生成模型",
+      "keras",
+      "梯度"
+    ],
+    "source_summary": "文章主要介绍了实现GAN的一个小技巧，允许我们只写单个模型、用单个loss就实现GAN的训练。它本质上就是用 stop_gradient 来手动控制梯度的技巧，在其他任务上也可能用得到它。 所以，以后我写GAN都用这种写法了，省力省时～当然，理论上这种写法需要多耗些显存，这也算是牺牲空间换时间吧。"
   },
   "validation": {
     "passed": true,
@@ -30,8 +38,8 @@
     "converter_version": 1,
     "markdown_sha256": "b174d21bb83ee091de64b03297fdaa124a85dd61f04d6e52074e2fa534e124ed"
   },
-  "fetched_at": "2026-09-14T13:21:29+00:00",
+  "fetched_at": "2026-11-06T09:35:01+00:00",
   "source_snapshot_sha256": "f481173ce8458617a65d7e71a15fe690c6cfe89f49ba57c5031d15101de6761e",
   "images": {},
-  "local_only": true
+  "publication_policy": "config/mirror.json"
 }

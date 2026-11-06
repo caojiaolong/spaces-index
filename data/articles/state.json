@@ -2906,14 +2906,14 @@
   },
   "6705": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:19:37+00:00",
+    "checked_at": "2026-11-06T09:33:59+00:00",
     "title": "漫谈重参数：从正态分布到Gumbel Softmax",
     "markdown_sha256": "d43744814776070623c2d8d331a72b6040b357eb8059f77537e187ecf4e23416",
     "converter_version": 1
   },
   "6704": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:19:37+00:00",
+    "checked_at": "2026-11-06T09:34:02+00:00",
     "title": "端午&高考乱弹：怀念的，也许只是怀念本身",
     "markdown_sha256": "3fe71eb29b7985c3378239c5100a4802adc53a5205615b9fc30b281556cf2ed4",
     "converter_version": 1
@@ -2927,140 +2927,140 @@
   },
   "6621": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:19:38+00:00",
+    "checked_at": "2026-11-06T09:34:06+00:00",
     "title": "ON-LSTM：用有序神经元表达层次结构",
-    "markdown_sha256": "1aec08e36c81e37b76521685819bb0de52df0389a08125ae2503cb74b5ec4a20",
+    "markdown_sha256": "81ac8d3766c9ffdeb35171a7ee5b5e1c885eb3cea5a1ca6c32fdeba40225ac7d",
     "converter_version": 1
   },
   "6620": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:19:38+00:00",
+    "checked_at": "2026-11-06T09:34:09+00:00",
     "title": "函数光滑化杂谈：不可导函数的可导逼近",
     "markdown_sha256": "3134132c25b640e55ccd1145f92dc3a69a9dd3a822a5c63d3d1a1e1ef04f4671",
     "converter_version": 1
   },
   "6612": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:19:38+00:00",
+    "checked_at": "2026-11-06T09:34:13+00:00",
     "title": "能量视角下的GAN模型（三）：生成模型=能量模型",
     "markdown_sha256": "7bceedccc6388e8fd9857fd8748117c46718f3c179112ba16b32b3540ec795c8",
     "converter_version": 1
   },
   "6583": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:19:38+00:00",
+    "checked_at": "2026-11-06T09:34:16+00:00",
     "title": "从动力学角度看优化算法（四）：GAN的第三个阶段",
     "markdown_sha256": "3ed3064511313422099e98da9814c1130b21cabb3986a89871edfaaf52dced37",
     "converter_version": 1
   },
   "6575": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:19:39+00:00",
+    "checked_at": "2026-11-06T09:34:20+00:00",
     "title": "“让Keras更酷一些！”：中间变量、权重滑动和安全生成器",
     "markdown_sha256": "14afdfa779a9e0a8f624e923792db1a3a0bc3deee23c7ea1765ae545c2157652",
     "converter_version": 1
   },
   "6549": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:19:39+00:00",
+    "checked_at": "2026-11-06T09:34:23+00:00",
     "title": "从DCGAN到SELF-MOD：GAN的模型架构发展一览",
     "markdown_sha256": "fd291e8d666155e97b4966b56e903e5a960401ba7c8ca8b6e610088d1bf2f286",
     "converter_version": 1
   },
   "6540": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:19:39+00:00",
+    "checked_at": "2026-11-06T09:34:27+00:00",
     "title": "分享一次专业领域词汇的无监督挖掘",
     "markdown_sha256": "f2c0b771396c26d33b1add04b4491f256156359bcc939071378590294ddec12b",
     "converter_version": 1
   },
   "6534": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:19:39+00:00",
+    "checked_at": "2026-11-06T09:34:31+00:00",
     "title": "分享：用LaTeX+MathJax画一个三维三阶环方",
     "markdown_sha256": "1b7e053847f8c53713c6467dc891b3ef8287fc76d341fb8170938539b73483f5",
     "converter_version": 1
   },
   "6508": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:19:40+00:00",
+    "checked_at": "2026-11-06T09:34:34+00:00",
     "title": "科学空间浏览指南（FAQ）",
     "markdown_sha256": "d7a928dec360a48d8ca07479f385905cfc2ad0f53b1ca945107e1609d551d8c6",
     "converter_version": 1
   },
   "6482": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:19:40+00:00",
+    "checked_at": "2026-11-06T09:34:38+00:00",
     "title": "细水长flow之可逆ResNet：极致的暴力美学",
     "markdown_sha256": "7c2ca363b9dec19e2bfa4e20397485f32e1668ac4a8a0364d3e3cb7857aad588",
     "converter_version": 1
   },
   "6469": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:19:40+00:00",
+    "checked_at": "2026-11-06T09:34:42+00:00",
     "title": "圆周率节快乐！|| 原来已经写了十年博客～",
-    "markdown_sha256": "805b91ad953e6305b0f9e6b3ee074c651943a31a5c8eb93170d11ca3516f45bc",
+    "markdown_sha256": "08706a04ea879844a160ddb949ec171f862d2009db536ab1bf76a85eeb66ce98",
     "converter_version": 1
   },
   "6418": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:19:40+00:00",
+    "checked_at": "2026-11-06T09:34:45+00:00",
     "title": "“让Keras更酷一些！”：分层的学习率和自由的梯度",
     "markdown_sha256": "ab25d67d9dbf2859225731c9246477eefc7306600a6941265877bac2c896b4ab",
     "converter_version": 1
   },
   "6409": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:19:41+00:00",
+    "checked_at": "2026-11-06T09:34:50+00:00",
     "title": "O-GAN：简单修改，让GAN的判别器变成一个编码器！",
     "markdown_sha256": "363219d1cf94ebf714c30cf3cb28217de767923f0bd1d7fc11083bff8dac5465",
     "converter_version": 1
   },
   "6407": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:19:41+00:00",
+    "checked_at": "2026-11-06T09:34:54+00:00",
     "title": "构造一个显式的、总是可逆的矩阵",
     "markdown_sha256": "c3737adca53a0b85153b1845cc63135dfc7591e8eb67f642bc420cb79f0aed74",
     "converter_version": 1
   },
   "6394": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:19:41+00:00",
+    "checked_at": "2026-11-06T09:34:57+00:00",
     "title": "非对抗式生成模型GLANN的简单介绍",
     "markdown_sha256": "1a47ab93baf5d59c7f967715f0f07e58e2258f8c5e9dc6682a866f564b1d5d5b",
     "converter_version": 1
   },
   "6387": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:19:41+00:00",
+    "checked_at": "2026-11-06T09:35:01+00:00",
     "title": "巧断梯度：单个loss实现GAN模型",
     "markdown_sha256": "b174d21bb83ee091de64b03297fdaa124a85dd61f04d6e52074e2fa534e124ed",
     "converter_version": 1
   },
   "6377": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:19:41+00:00",
+    "checked_at": "2026-11-06T09:35:04+00:00",
     "title": "恒等式 det(exp(A)) = exp(Tr(A)) 赏析",
     "markdown_sha256": "400cafb02751d97dd155e62ef8211aac8ea6e1268b4774eb03c0cd4926ac48a0",
     "converter_version": 1
   },
   "6331": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:19:42+00:00",
+    "checked_at": "2026-11-06T09:35:08+00:00",
     "title": "能量视角下的GAN模型（二）：GAN＝“分析”＋“采样” ",
     "markdown_sha256": "6d47235f4c3c23321e441d13ddbba8781070a12267a434a82a96d192de48d314",
     "converter_version": 1
   },
   "6316": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:19:42+00:00",
+    "checked_at": "2026-11-06T09:35:12+00:00",
     "title": "能量视角下的GAN模型（一）：GAN＝“挖坑”＋“跳坑”",
     "markdown_sha256": "ca8143193d4229caad375ef38beb768de57f26c52c5e993f21c0b57985e80e11",
     "converter_version": 1
   },
   "6311": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:19:42+00:00",
+    "checked_at": "2026-11-06T09:35:17+00:00",
     "title": "“让Keras更酷一些！”：随意的输出和灵活的归一化",
     "markdown_sha256": "91506e97fa8a60e87c4c8ada78806454249016f7a7c229f8db3242af89622042",
     "converter_version": 1
@@ -3074,21 +3074,21 @@
   },
   "6270": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:19:43+00:00",
+    "checked_at": "2026-11-06T09:35:21+00:00",
     "title": "基于CNN和序列标注的对联机器人",
     "markdown_sha256": "3c6eb8a590cd19a42b88b0d8aeb0df930443c5a85b478cddcc39f7044a706ebc",
     "converter_version": 1
   },
   "6261": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:19:43+00:00",
+    "checked_at": "2026-11-06T09:35:25+00:00",
     "title": "从动力学角度看优化算法（三）：一个更整体的视角",
     "markdown_sha256": "78740345cb26c2aa858d55fb46c79f14604c4cb088081083955be475339ebfe0",
     "converter_version": 1
   },
   "6257": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:19:43+00:00",
+    "checked_at": "2026-11-06T09:35:29+00:00",
     "title": "2019年全年天象",
     "markdown_sha256": "129fdbec8b1e787317a440cbc69d6cf0b30e0603a9df38eb81f4d17945a1c94e",
     "converter_version": 1
@@ -8464,7 +8464,7 @@
   },
   "132": {
     "status": "conversion_failed",
-    "checked_at": "2026-11-05T09:41:41+00:00",
+    "checked_at": "2026-11-06T09:35:29+00:00",
     "title": "一道从小学到高中都可能考到的题目",
     "error": "Unreviewed legacy element: a<b，则有<br",
     "converter_version": 1,

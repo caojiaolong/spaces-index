@@ -6,9 +6,15 @@
     "source_url": "https://spaces.ac.cn/archives/6270",
     "date": "2019-01-14",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "信息时代",
+    "source_tags": [
+      "NLP",
+      "文本生成"
+    ],
+    "source_summary": "最后，也没有什么好总结的。我就是觉得这个对对联应该算是一个序列标注任务，所以就想着用一个序列标注的模型来试试看，结果感觉还行～当然，要做得更好，需要在模型上做些调整，还可以考虑引入Attention等，然后解码的时候，还需要引入更多的先验知识，保证结果符合我们对对联的要求。这些就留给有兴趣做下去的读者继续了。"
   },
-  "fetched_at": "2026-09-14T13:22:09+00:00",
+  "fetched_at": "2026-11-06T09:35:21+00:00",
   "source_snapshot_sha256": "e31b1a408b50e56e8124d50e1330e64c2875536958c878e507bc11db36257cb7",
   "validators": {
     "etag": null,

@@ -6,10 +6,18 @@
     "source_url": "https://spaces.ac.cn/archives/6621",
     "date": "2019-05-28",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "信息时代",
+    "source_tags": [
+      "模型",
+      "深度学习",
+      "无监督",
+      "NLP"
+    ],
+    "source_summary": null
   },
-  "fetched_at": "2026-09-14T13:19:49+00:00",
-  "source_snapshot_sha256": "90bdd9e58c54721b9ad90283b4ce970a198a8db593aa75804ba50e36c03f07bc",
+  "fetched_at": "2026-11-06T09:34:06+00:00",
+  "source_snapshot_sha256": "7127acc8441a44b02d6a343a375955ed98929351b575382a741d2e1795e212fd",
   "validators": {
     "etag": null,
     "last_modified": null

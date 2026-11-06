@@ -6,7 +6,15 @@
     "source_url": "https://spaces.ac.cn/archives/6621",
     "date": "2019-05-28",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "信息时代",
+    "source_tags": [
+      "模型",
+      "深度学习",
+      "无监督",
+      "NLP"
+    ],
+    "source_summary": null
   },
   "validation": {
     "passed": true,
@@ -23,15 +31,15 @@
     "image_count": 6,
     "heading_count": 12,
     "code_block_count": 0,
-    "source_text_sha256": "142e043cc68282cf67dd41b9f147498302efa1396d3cf082970fcef15fd0d4d3",
-    "output_text_sha256": "142e043cc68282cf67dd41b9f147498302efa1396d3cf082970fcef15fd0d4d3",
+    "source_text_sha256": "455745d0ea710cfe1604a51786b38a8216756d57d6925525e73a63b5eb9480b7",
+    "output_text_sha256": "455745d0ea710cfe1604a51786b38a8216756d57d6925525e73a63b5eb9480b7",
     "latex_sha256": "2e396127fa3ed3575f37821912dddc01ae72bac6c5aed19499380335aefb0b03",
-    "body_sha256": "2b6c1a0314bd079f2ff10759a217a9f189378eb9b157bcf78214bf51ea318acc",
+    "body_sha256": "08c5c1e6c5bf6ee2d723070aa5c93f7e978bedfa9e9c9467f0b104ff05416375",
     "converter_version": 1,
-    "markdown_sha256": "1aec08e36c81e37b76521685819bb0de52df0389a08125ae2503cb74b5ec4a20"
+    "markdown_sha256": "81ac8d3766c9ffdeb35171a7ee5b5e1c885eb3cea5a1ca6c32fdeba40225ac7d"
   },
-  "fetched_at": "2026-09-14T13:19:49+00:00",
-  "source_snapshot_sha256": "90bdd9e58c54721b9ad90283b4ce970a198a8db593aa75804ba50e36c03f07bc",
+  "fetched_at": "2026-11-06T09:34:06+00:00",
+  "source_snapshot_sha256": "7127acc8441a44b02d6a343a375955ed98929351b575382a741d2e1795e212fd",
   "images": {},
-  "local_only": true
+  "publication_policy": "config/mirror.json"
 }

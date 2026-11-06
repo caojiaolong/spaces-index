@@ -6,9 +6,17 @@
     "source_url": "https://spaces.ac.cn/archives/6331",
     "date": "2019-02-15",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "信息时代",
+    "source_tags": [
+      "概率",
+      "能量",
+      "GAN",
+      "生成模型"
+    ],
+    "source_summary": null
   },
-  "fetched_at": "2026-09-14T13:21:43+00:00",
+  "fetched_at": "2026-11-06T09:35:08+00:00",
   "source_snapshot_sha256": "bb397f18e1fbd0be1f5b3144eef4a3de5dd4b67d483c37c3d11de321a25d2f24",
   "validators": {
     "etag": null,

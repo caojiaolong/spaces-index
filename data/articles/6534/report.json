@@ -6,7 +6,14 @@
     "source_url": "https://spaces.ac.cn/archives/6534",
     "date": "2019-03-28",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "数学研究",
+    "source_tags": [
+      "趣味",
+      "幻方",
+      "分享"
+    ],
+    "source_summary": null
   },
   "validation": {
     "passed": true,
@@ -30,8 +37,8 @@
     "converter_version": 1,
     "markdown_sha256": "1b7e053847f8c53713c6467dc891b3ef8287fc76d341fb8170938539b73483f5"
   },
-  "fetched_at": "2026-09-14T13:20:35+00:00",
+  "fetched_at": "2026-11-06T09:34:31+00:00",
   "source_snapshot_sha256": "4596024f20fa4ae3995b6b762cfe2745d67d188473a30322989a4880a4e8bb59",
   "images": {},
-  "local_only": true
+  "publication_policy": "config/mirror.json"
 }

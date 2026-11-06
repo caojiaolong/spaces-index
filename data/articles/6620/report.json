@@ -6,7 +6,15 @@
     "source_url": "https://spaces.ac.cn/archives/6620",
     "date": "2019-05-20",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "数学研究",
+    "source_tags": [
+      "导数",
+      "函数",
+      "近似",
+      "光滑"
+    ],
+    "source_summary": "函数光滑化是一个比较有意思的数学内容，在机器学习中也经常出现。一方面，它是处理将某些操作可导化的技巧，使得模型可以直接使用反向传播求解，而不需要“动用”强化学习；另一方面，在某些情况下它也能增强模型的解释性，因为往往对应的不可导函数解释性是比较好的，将光滑化版本代入训练完成后，也许可能恢复为不可导版本来解释模型的输出结果。 当然，作为纯粹的数学之美来欣赏，也是相当赏心悦目的～"
   },
   "validation": {
     "passed": true,
@@ -30,8 +38,8 @@
     "converter_version": 1,
     "markdown_sha256": "3134132c25b640e55ccd1145f92dc3a69a9dd3a822a5c63d3d1a1e1ef04f4671"
   },
-  "fetched_at": "2026-09-14T13:19:56+00:00",
+  "fetched_at": "2026-11-06T09:34:09+00:00",
   "source_snapshot_sha256": "c193814bd42be7d1df6dea963ef9bdaef0e95b3290defd4a3f50fdb5d0379d13",
   "images": {},
-  "local_only": true
+  "publication_policy": "config/mirror.json"
 }

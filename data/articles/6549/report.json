@@ -6,7 +6,14 @@
     "source_url": "https://spaces.ac.cn/archives/6549",
     "date": "2019-04-19",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "信息时代",
+    "source_tags": [
+      "模型",
+      "GAN",
+      "生成模型"
+    ],
+    "source_summary": null
   },
   "validation": {
     "passed": true,
@@ -30,8 +37,8 @@
     "converter_version": 1,
     "markdown_sha256": "fd291e8d666155e97b4966b56e903e5a960401ba7c8ca8b6e610088d1bf2f286"
   },
-  "fetched_at": "2026-09-14T13:20:22+00:00",
+  "fetched_at": "2026-11-06T09:34:23+00:00",
   "source_snapshot_sha256": "96f58b2fbf04706ea411383b343e9c21955cea5310de11edc4ace96e486f8edc",
   "images": {},
-  "local_only": true
+  "publication_policy": "config/mirror.json"
 }

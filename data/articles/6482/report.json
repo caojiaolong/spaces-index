@@ -6,7 +6,15 @@
     "source_url": "https://spaces.ac.cn/archives/6482",
     "date": "2019-03-21",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "信息时代",
+    "source_tags": [
+      "分析",
+      "流模型",
+      "flow",
+      "生成模型"
+    ],
+    "source_summary": null
   },
   "validation": {
     "passed": true,
@@ -30,8 +38,8 @@
     "converter_version": 1,
     "markdown_sha256": "7c2ca363b9dec19e2bfa4e20397485f32e1668ac4a8a0364d3e3cb7857aad588"
   },
-  "fetched_at": "2026-09-14T13:20:49+00:00",
+  "fetched_at": "2026-11-06T09:34:38+00:00",
   "source_snapshot_sha256": "1cb61d1bdb3d7a0b471aeba1505ae88aa5a4bbd5847b8cbbb76ddee42947ae77",
   "images": {},
-  "local_only": true
+  "publication_policy": "config/mirror.json"
 }

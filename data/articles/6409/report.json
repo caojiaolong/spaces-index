@@ -6,7 +6,15 @@
     "source_url": "https://spaces.ac.cn/archives/6409",
     "date": "2019-03-06",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "信息时代",
+    "source_tags": [
+      "无监督",
+      "GAN",
+      "生成模型",
+      "编码"
+    ],
+    "source_summary": "本文介绍了一个方案，只需要对原来的GAN进行简单的修改，就可以将原来GAN的判别器转化为一个有效的编码器。多个实验表明这样的方案是可行的，而对原理的进一步思考得出，这其实就是对原始判别器（编码器）的一种正交分解，并且对正交分解后的自由度的充分利用，所以模型也被称为“正交GAN（O-GAN）”。 小改动就收获一个编码器，何乐而不为呢？欢迎大家试用～ 后记： 事后看，本文模型的思想其实本质上就是“直径和方向”的分解，并不难理解，但做到这件事情不是那么轻松的。 最开始我也一直陷入到$\\Vert z - E(G(z))\\Vert^2$的困境中，难以自拔，后来我想了很多技巧，终于在$\\Vert z - E(G(z))\\Vert^2$的重构损…"
   },
   "validation": {
     "passed": true,
@@ -30,8 +38,8 @@
     "converter_version": 1,
     "markdown_sha256": "363219d1cf94ebf714c30cf3cb28217de767923f0bd1d7fc11083bff8dac5465"
   },
-  "fetched_at": "2026-09-14T13:21:09+00:00",
+  "fetched_at": "2026-11-06T09:34:50+00:00",
   "source_snapshot_sha256": "82fb9c07c57cb5d43cf81db8f59cd88a3e8061802b6c3beb2e915fcfcfc178c8",
   "images": {},
-  "local_only": true
+  "publication_policy": "config/mirror.json"
 }

@@ -6,7 +6,16 @@
     "source_url": "https://spaces.ac.cn/archives/6583",
     "date": "2019-05-03",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "信息时代",
+    "source_tags": [
+      "微分方程",
+      "动力学",
+      "GAN",
+      "生成模型",
+      "优化器"
+    ],
+    "source_summary": "本文主要从动力学角度探讨了GAN的优化问题。跟本系列的其他文章一样，将优化过程视为常微分方程组的求解，对于GAN的优化，这个常微分方程组稍微复杂一些。 分析的过程采用了Dirac GAN的思路，利用单点分布的极简情形对GAN的收敛过程形成快速认识，得到的结论是大多数GAN都无法真正收敛到均衡点，而只是在均衡点附近振荡。而为了缓解这个问题，最有力的方法是权重滑动平均，它对GAN和普通模型训练都有一定帮助。 （本文作图代码参考： https://github.com/bojone/gan/blob/master/gan_numeric.py ）"
   },
   "validation": {
     "passed": true,
@@ -30,8 +39,8 @@
     "converter_version": 1,
     "markdown_sha256": "3ed3064511313422099e98da9814c1130b21cabb3986a89871edfaaf52dced37"
   },
-  "fetched_at": "2026-09-14T13:20:09+00:00",
+  "fetched_at": "2026-11-06T09:34:16+00:00",
   "source_snapshot_sha256": "2b5a32314e78a5455db889079c46d803e1546d38380be92bebb83920aea85edb",
   "images": {},
-  "local_only": true
+  "publication_policy": "config/mirror.json"
 }

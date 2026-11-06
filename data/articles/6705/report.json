@@ -6,7 +6,15 @@
     "source_url": "https://spaces.ac.cn/archives/6705",
     "date": "2019-06-10",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "数学研究",
+    "source_tags": [
+      "概率",
+      "算法",
+      "优化",
+      "重参数"
+    ],
+    "source_summary": "让我们把前面的内容重新整理一下。总的来说，连续情形的重参数还是比较简单的：连续情形下，我们要处理的$L_{\\theta}$实际上是式$\\eqref{eq:lianxu}$，由于精确的积分我们没有办法显式地写出来，所以需要转化为采样，而为了在采样的过程中得到有效的梯度，我们就需要重参数。 从数学本质来看，重参数是一种 积分变换 ，即原来是关于$z$积分，通过$z=g_{\\theta}(\\varepsilon)$变换之后得到新的积分形式，"
   },
   "validation": {
     "passed": true,
@@ -30,8 +38,8 @@
     "converter_version": 1,
     "markdown_sha256": "d43744814776070623c2d8d331a72b6040b357eb8059f77537e187ecf4e23416"
   },
-  "fetched_at": "2026-09-14T13:19:27+00:00",
+  "fetched_at": "2026-11-06T09:33:59+00:00",
   "source_snapshot_sha256": "c863536d05194b38dc0935cdfb93326ee0c5f494f4df8b32b29d73fbc428944e",
   "images": {},
-  "local_only": true
+  "publication_policy": "config/mirror.json"
 }
