@@ -6,7 +6,14 @@
     "source_url": "https://spaces.ac.cn/archives/6024",
     "date": "2018-10-02",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "信息时代",
+    "source_tags": [
+      "最大熵",
+      "无监督",
+      "互信息"
+    ],
+    "source_summary": null
   },
   "validation": {
     "passed": true,
@@ -23,15 +30,15 @@
     "image_count": 7,
     "heading_count": 22,
     "code_block_count": 0,
-    "source_text_sha256": "8bf916ba8f3b993811b3c6ebf4ea9e66046929e27b50bc0da8db3450dbb55d24",
-    "output_text_sha256": "8bf916ba8f3b993811b3c6ebf4ea9e66046929e27b50bc0da8db3450dbb55d24",
+    "source_text_sha256": "d03568a8bdb67767f243b80a22601984a39ca9af976c46ca51b7f57e31fd8903",
+    "output_text_sha256": "d03568a8bdb67767f243b80a22601984a39ca9af976c46ca51b7f57e31fd8903",
     "latex_sha256": "d299874531301abf8865deda4eb44442a58ef7c655f8cda750ede7be1be0eba7",
-    "body_sha256": "b85d6010a5be5b57bf4bb74d65736fe6692f4e146465341c0da5781c4f4b4240",
+    "body_sha256": "cdf9ebdab6c4d6ff2dda0b4c5b7551822dacb31b86582f8a0b87bd2c8c389e12",
     "converter_version": 1,
-    "markdown_sha256": "8833e825511e92a122b283ab035d29d00e735ba0787cf2dd8ebe3132f0e61906"
+    "markdown_sha256": "894934973c127a2bdd432e7fa10a36e9470753ee16da36b76028ffeaa14ff80a"
   },
-  "fetched_at": "2026-09-14T13:24:03+00:00",
-  "source_snapshot_sha256": "deede9795c4c64b2841dc63a2a90b212154483dda66402063ff172578f268594",
+  "fetched_at": "2026-11-07T08:59:50+00:00",
+  "source_snapshot_sha256": "eaa630de6164a93095292df1c23c9980a4fb94c94bfdb46062918a66de9d7a96",
   "images": {},
-  "local_only": true
+  "publication_policy": "config/mirror.json"
 }

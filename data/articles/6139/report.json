@@ -6,7 +6,14 @@
     "source_url": "https://spaces.ac.cn/archives/6139",
     "date": "2018-11-07",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "信息时代",
+    "source_tags": [
+      "GAN",
+      "生成模型",
+      "度量"
+    ],
+    "source_summary": "不知道业界是怎么看这篇WGAN-div的，也许是觉得跟WGAN-GP没什么不同，就觉得没有什么意思了。不过我是很佩服这些从理论上推导并且改进原始结果的大牛及其成果。虽然看起来像是随手甩了一篇论文然后说“你看着办吧”的感觉，但这种将理论和实践结合起来的结果仍然是很有美感的。 本来我对WGAN-GP是多少有些芥蒂的，总觉得它太丑，不想用。但是WGAN-div出现了，在我心中已经替代了WGAN-GP，并且它不再丑了～"
   },
   "validation": {
     "passed": true,
@@ -30,8 +37,8 @@
     "converter_version": 1,
     "markdown_sha256": "c3dd1a8ef1eaea493fdac7ac217191ed12667fa0771efa37fc5904e401a0fb90"
   },
-  "fetched_at": "2026-09-14T13:23:19+00:00",
+  "fetched_at": "2026-11-07T08:59:29+00:00",
   "source_snapshot_sha256": "3e38aa1f5fdb68c7354af8c66de3b1ced6e9b91ccdc2ffc3befc67d882aab94e",
   "images": {},
-  "local_only": true
+  "publication_policy": "config/mirror.json"
 }

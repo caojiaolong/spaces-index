@@ -6,9 +6,17 @@
     "source_url": "https://spaces.ac.cn/archives/5655",
     "date": "2018-06-27",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "数学研究",
+    "source_tags": [
+      "微分方程",
+      "动力学",
+      "数值计算",
+      "优化器"
+    ],
+    "source_summary": null
   },
-  "fetched_at": "2026-09-14T13:25:59+00:00",
+  "fetched_at": "2026-11-07T09:00:29+00:00",
   "source_snapshot_sha256": "a388ebd4ae33e158b10a11a37dcf39761456fff99d9c1ff23d7918a2c3caf445",
   "validators": {
     "etag": null,

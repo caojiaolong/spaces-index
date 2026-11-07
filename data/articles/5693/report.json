@@ -6,7 +6,12 @@
     "source_url": "https://spaces.ac.cn/archives/5693",
     "date": "2018-07-07",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "信息时代",
+    "source_tags": [
+      "模型"
+    ],
+    "source_summary": null
   },
   "validation": {
     "passed": true,
@@ -30,8 +35,8 @@
     "converter_version": 1,
     "markdown_sha256": "437a71cfc3964f9928504722ee810953297bb8d33527fad70ac5f4e16dd8c632"
   },
-  "fetched_at": "2026-09-14T13:25:53+00:00",
+  "fetched_at": "2026-11-07T09:00:25+00:00",
   "source_snapshot_sha256": "ebba954bf71d05e529c3199faf04f275bcdbf0ffeae679a1eda398dde950fed2",
   "images": {},
-  "local_only": true
+  "publication_policy": "config/mirror.json"
 }

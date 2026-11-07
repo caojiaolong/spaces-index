@@ -6,7 +6,15 @@
     "source_url": "https://spaces.ac.cn/archives/5887",
     "date": "2018-09-17",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "信息时代",
+    "source_tags": [
+      "聚类",
+      "无监督",
+      "vae",
+      "生成模型"
+    ],
+    "source_summary": "文章简单地实现了一下基于VAE的聚类算法，算法的特点就是一步到位，结合“编码”、“聚类”和“生成”三个任务同时完成，思想是对VAE的loss的一般化。 感觉还有一定的提升空间，比如式$(4)$只是式$(2)$的一个例子，还可以考虑更加一般的情况。代码中的encoder和decoder也都没有经过仔细调优，仅仅是验证想法所用。"
   },
   "validation": {
     "passed": true,
@@ -30,8 +38,8 @@
     "converter_version": 1,
     "markdown_sha256": "7788574ee8227b77488dba404634a3c003a3294dee4a1d2c290929ca3b541231"
   },
-  "fetched_at": "2026-09-14T13:24:31+00:00",
+  "fetched_at": "2026-11-07T09:00:03+00:00",
   "source_snapshot_sha256": "79567a8343036c611662de0c0dace3886d9f495884b67785bde812c92bee928b",
   "images": {},
-  "local_only": true
+  "publication_policy": "config/mirror.json"
 }

@@ -6,9 +6,16 @@
     "source_url": "https://spaces.ac.cn/archives/6096",
     "date": "2018-10-16",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "数学研究",
+    "source_tags": [
+      "向量",
+      "矩阵",
+      "行列式"
+    ],
+    "source_summary": "本来从几何意义出发讨论了非方阵的行列式问题，最终表明式$\\eqref{eq:dingyi}$可以作为一个比较合理的非方阵行列式的定义。尽管理论上$\\eqref{eq:dingyi}$只能定义行列式的绝对值，但是大多数情况下都已经足够了。 至于非方阵的行列式的应用，我们知道做积分变换的时候我们有个雅可比行列式来保证变换的非平凡的，类似地，或许也可以通过非方阵的行列式来保证升维、降维变换的非平凡性。当然，这是一个构思，目前还在思考这类问题，欢迎有兴趣的读者讨论。"
   },
-  "fetched_at": "2026-09-14T13:23:41+00:00",
+  "fetched_at": "2026-11-07T08:59:39+00:00",
   "source_snapshot_sha256": "557f44bae31e648b2405cb315d1d32f043084b420474b0c8622b90c473d9bd01",
   "validators": {
     "etag": null,

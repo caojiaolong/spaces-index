@@ -3067,7 +3067,7 @@
   },
   "6280": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:19:43+00:00",
+    "checked_at": "2026-11-07T08:59:00+00:00",
     "title": "从Wasserstein距离、对偶理论到WGAN",
     "markdown_sha256": "3a241dffe63679c28f854f1098ea3670bfae338c1dc2f274bba6c399e4adcebc",
     "converter_version": 1
@@ -3095,154 +3095,154 @@
   },
   "6240": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:19:44+00:00",
+    "checked_at": "2026-11-07T08:59:03+00:00",
     "title": "【学习清单】最近比较重要的GAN进展论文",
     "markdown_sha256": "29d308b9d65f9bbca423e2629dab426dc8534e3d8cead94063baf900accb3942",
     "converter_version": 1
   },
   "6234": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:19:44+00:00",
+    "checked_at": "2026-11-07T08:59:07+00:00",
     "title": "从动力学角度看优化算法（二）：自适应学习率算法",
     "markdown_sha256": "25f508fc1368ba70e9ec96398aa1924269eb349afb39379ffde51122dcfecd77",
     "converter_version": 1
   },
   "6214": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:19:44+00:00",
+    "checked_at": "2026-11-07T08:59:10+00:00",
     "title": "BiGAN-QP：简单清晰的编码&生成模型",
     "markdown_sha256": "3779d3c62cd5957d94d8cb4075a2c5dbf9b3726810eb3cf8cf066bd21548b75e",
     "converter_version": 1
   },
   "6191": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:19:44+00:00",
+    "checked_at": "2026-11-07T08:59:14+00:00",
     "title": "最小熵原理（四）：“物以类聚”之从图书馆到词向量",
     "markdown_sha256": "87794ee9585cd255ca9b556fd25a536dd6ce89bb25356514fc6ebc7b7f0d82b3",
     "converter_version": 1
   },
   "6181": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:19:44+00:00",
+    "checked_at": "2026-11-07T08:59:18+00:00",
     "title": "从变分编码、信息瓶颈到正态分布：论遗忘的重要性",
     "markdown_sha256": "20fe09a2feac4948e9f7b1011a4a4943beff2bdb6f1cf1b5903fdf75e0c60c0e",
     "converter_version": 1
   },
   "6163": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:19:45+00:00",
+    "checked_at": "2026-11-07T08:59:21+00:00",
     "title": "不用L约束又不会梯度消失的GAN，了解一下？",
-    "markdown_sha256": "13e5ab684648165ca2c1a14f1ae66c3252cff17980f93ff6ec6c0a7acc219895",
+    "markdown_sha256": "9663ec6303cc5fe45e74589e6afba421dac71ccc86e0dde821842cc93d88666c",
     "converter_version": 1
   },
   "6158": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:19:45+00:00",
+    "checked_at": "2026-11-07T08:59:25+00:00",
     "title": "又一道川菜！媲美“开水白菜”的瓜燕穗肚",
     "markdown_sha256": "c7b1079bdca7dcabe8e1421be3c1e87050564882c9b3897f07e1a2783f097325",
     "converter_version": 1
   },
   "6139": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:19:45+00:00",
+    "checked_at": "2026-11-07T08:59:29+00:00",
     "title": "WGAN-div：一个默默无闻的WGAN填坑者",
     "markdown_sha256": "c3dd1a8ef1eaea493fdac7ac217191ed12667fa0771efa37fc5904e401a0fb90",
     "converter_version": 1
   },
   "6131": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:19:45+00:00",
+    "checked_at": "2026-11-07T08:59:32+00:00",
     "title": "缅怀金庸 | 愿你登上10930小行星继续翱翔",
     "markdown_sha256": "f8c0557e414047646a2366bf50b9d9fbaed26aad60ff9e39a2aef58e4f7b3a8b",
     "converter_version": 1
   },
   "6110": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:19:45+00:00",
+    "checked_at": "2026-11-07T08:59:36+00:00",
     "title": "RSGAN：对抗模型中的“图灵测试”思想",
     "markdown_sha256": "2490082ef9ac454afc1f7c9455d5efc4bfba4956ad03ef901b23ec983d5bdfa4",
     "converter_version": 1
   },
   "6096": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:19:45+00:00",
+    "checked_at": "2026-11-07T08:59:39+00:00",
     "title": "再谈非方阵的行列式",
     "markdown_sha256": "0d0ed6b3171996162f3bce7e35c02d7e117f93dbb8fb5a3fbfef69bd2a542ad3",
     "converter_version": 1
   },
   "6088": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:19:46+00:00",
+    "checked_at": "2026-11-07T08:59:43+00:00",
     "title": "变分自编码器 = 最小化先验分布 + 最大化互信息",
     "markdown_sha256": "4876ba1e1a497c9b1d56d111628442d116c6b98ed7fab4ab730350ee1477dbc3",
     "converter_version": 1
   },
   "6051": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:19:46+00:00",
+    "checked_at": "2026-11-07T08:59:47+00:00",
     "title": "深度学习中的Lipschitz约束：泛化与生成模型",
     "markdown_sha256": "d18f81a907bfe93632b4320b3fbfe4448b8d98c58668d973f1e97d7a4b528f62",
     "converter_version": 1
   },
   "6024": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:19:46+00:00",
+    "checked_at": "2026-11-07T08:59:50+00:00",
     "title": "深度学习的互信息：无监督提取特征",
-    "markdown_sha256": "8833e825511e92a122b283ab035d29d00e735ba0787cf2dd8ebe3132f0e61906",
+    "markdown_sha256": "894934973c127a2bdd432e7fa10a36e9470753ee16da36b76028ffeaa14ff80a",
     "converter_version": 1
   },
   "6016": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:19:46+00:00",
+    "checked_at": "2026-11-07T08:59:55+00:00",
     "title": "f-GAN简介：GAN模型的生产车间",
     "markdown_sha256": "761d76a5219eb29e58d8edb096142a0a3dab3886fc3cc70dc70edc889d0a6b13",
     "converter_version": 1
   },
   "5977": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:19:47+00:00",
+    "checked_at": "2026-11-07T08:59:59+00:00",
     "title": "细水长flow之f-VAEs：Glow与VAEs的联姻",
     "markdown_sha256": "5e7e6230ca20037f11ab5711dffdfbe6d55ca018d3b5aabe52ddd185c945b19b",
     "converter_version": 1
   },
   "5887": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:19:47+00:00",
+    "checked_at": "2026-11-07T09:00:03+00:00",
     "title": "变分自编码器（四）：一步到位的聚类方案",
     "markdown_sha256": "7788574ee8227b77488dba404634a3c003a3294dee4a1d2c290929ca3b541231",
     "converter_version": 1
   },
   "5879": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:19:47+00:00",
+    "checked_at": "2026-11-07T09:00:07+00:00",
     "title": "“让Keras更酷一些！”：小众的自定义优化器",
     "markdown_sha256": "8c8b32b5684b97345863b0dc9687da7e8456e9a9f5815d16092a376bad4382b3",
     "converter_version": 1
   },
   "5861": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:19:48+00:00",
+    "checked_at": "2026-11-07T09:00:11+00:00",
     "title": "玩转Keras之seq2seq自动生成标题",
     "markdown_sha256": "894eaafdf8ad422ed579d6688f665cf4979ae674b97b317adb058288b9e6b252",
     "converter_version": 1
   },
   "5807": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:19:48+00:00",
+    "checked_at": "2026-11-07T09:00:15+00:00",
     "title": "细水长flow之RealNVP与Glow：流模型的传承与升华",
     "markdown_sha256": "f4f8a900b3ad0cf16450035939786f77763290826b0058b97b07afe45bc46113",
     "converter_version": 1
   },
   "5776": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:19:48+00:00",
+    "checked_at": "2026-11-07T09:00:18+00:00",
     "title": "细水长flow之NICE：流模型的基本概念与实现",
     "markdown_sha256": "c50c042767a969c488d6424c8f94f966988bc310a2e1cdce7f701f075a1974c1",
     "converter_version": 1
   },
   "5765": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:19:48+00:00",
+    "checked_at": "2026-11-07T09:00:22+00:00",
     "title": "“让Keras更酷一些！”：精巧的层与花式的回调",
     "markdown_sha256": "9ce1a47e7fa26a1134c40bc6967fcc70189f70a3ddd54fc4c21cec7d0047950b",
     "converter_version": 1
@@ -3263,14 +3263,14 @@
   },
   "5693": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:19:49+00:00",
+    "checked_at": "2026-11-07T09:00:25+00:00",
     "title": "从SamplePairing到mixup：神奇的正则项",
     "markdown_sha256": "437a71cfc3964f9928504722ee810953297bb8d33527fad70ac5f4e16dd8c632",
     "converter_version": 1
   },
   "5655": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:19:49+00:00",
+    "checked_at": "2026-11-07T09:00:29+00:00",
     "title": "从动力学角度看优化算法（一）：从SGD到动量加速",
     "markdown_sha256": "3c16840608f810c762c8f7fd385e17e95495498f2beff190127bfb498119557e",
     "converter_version": 1
@@ -8464,7 +8464,7 @@
   },
   "132": {
     "status": "conversion_failed",
-    "checked_at": "2026-11-06T09:35:29+00:00",
+    "checked_at": "2026-11-07T09:00:29+00:00",
     "title": "一道从小学到高中都可能考到的题目",
     "error": "Unreviewed legacy element: a<b，则有<br",
     "converter_version": 1,

@@ -6,7 +6,15 @@
     "source_url": "https://spaces.ac.cn/archives/5776",
     "date": "2018-08-11",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "信息时代",
+    "source_tags": [
+      "概率",
+      "流模型",
+      "flow",
+      "生成模型"
+    ],
+    "source_summary": "NICE的模型还是比较庞大的，按照上述模型，模型的参数量约为$4 \\times 5 \\times 1000^2 = 2\\times 10^7$，也就是两千万的参数只为训练一个MNIST生成模型，也是夸张～ NICE整体还是比较简单粗暴的，首先加性耦合本身比较简单，其次模型$\\boldsymbol{m}$部分只是简单地用到了庞大的全连接层，还没有结合卷积等玩法，因此探索空间还有很大，Real NVP和glow就是它们的两个改进版本，它们的故事我们后面再谈。"
   },
   "validation": {
     "passed": true,
@@ -30,8 +38,8 @@
     "converter_version": 1,
     "markdown_sha256": "c50c042767a969c488d6424c8f94f966988bc310a2e1cdce7f701f075a1974c1"
   },
-  "fetched_at": "2026-09-14T13:25:22+00:00",
+  "fetched_at": "2026-11-07T09:00:18+00:00",
   "source_snapshot_sha256": "7bf1d031c1a2ff9bf968a54b7d4a7415f578fe24e9f00349f23d0d0cbe40ff77",
   "images": {},
-  "local_only": true
+  "publication_policy": "config/mirror.json"
 }

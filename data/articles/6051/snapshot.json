@@ -6,9 +6,17 @@
     "source_url": "https://spaces.ac.cn/archives/6051",
     "date": "2018-10-07",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "信息时代",
+    "source_tags": [
+      "GAN",
+      "生成模型",
+      "泛化",
+      "谱范数"
+    ],
+    "source_summary": "本文是关于Lipschitz约束的一篇总结，主要介绍了如何使得模型更好地满足Lipschitz约束，这关系到模型的泛化能力。而难度比较大的概念是谱范数，涉及较多的理论和公式。 整体来看，关于谱范数的相关内容都是比较精巧的，而相关结论也进一步表明线性代数跟机器学习紧密相关，很多“高深”的线性代数内容都可以在机器学习中找到对应的应用。"
   },
-  "fetched_at": "2026-09-14T13:23:55+00:00",
+  "fetched_at": "2026-11-07T08:59:47+00:00",
   "source_snapshot_sha256": "a799b7cde6f90d31dc517c5db5c6fdc15d0e379df654d27a45d4ec057d3aa0a5",
   "validators": {
     "etag": null,

@@ -6,7 +6,15 @@
     "source_url": "https://spaces.ac.cn/archives/6016",
     "date": "2018-09-29",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "数学研究",
+    "source_tags": [
+      "变分",
+      "GAN",
+      "推断",
+      "生成模型"
+    ],
+    "source_summary": "说白了，本文主要目的还是介绍$f$散度及其局部变分估算而已～所以大部分还是理论文字，GAN只占一小部分。 当然，经过一番折腾，确实可以达到“GAN生产车间”的结果（取决于你有多少种$f$散度），这些新折腾出来的GAN可能并不像我们想象中的GAN，但它们确实在优化$f$散度。不过，以往标准GAN（对应JS散度）有的问题，其实$f$散度照样会有，因此f-GAN这个工作更大的价值在于“统一”，从生成模型的角度，并没有什么突破。"
   },
   "validation": {
     "passed": true,
@@ -30,8 +38,8 @@
     "converter_version": 1,
     "markdown_sha256": "761d76a5219eb29e58d8edb096142a0a3dab3886fc3cc70dc70edc889d0a6b13"
   },
-  "fetched_at": "2026-09-14T13:24:11+00:00",
+  "fetched_at": "2026-11-07T08:59:55+00:00",
   "source_snapshot_sha256": "1cd48ea8b0afb1a5ab84be4f52047163030c23e520d1bcc649322491d21ea5e2",
   "images": {},
-  "local_only": true
+  "publication_policy": "config/mirror.json"
 }

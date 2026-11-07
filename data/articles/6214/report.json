@@ -6,7 +6,15 @@
     "source_url": "https://spaces.ac.cn/archives/6214",
     "date": "2018-12-10",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "信息时代",
+    "source_tags": [
+      "无监督",
+      "GAN",
+      "生成模型",
+      "编码"
+    ],
+    "source_summary": null
   },
   "validation": {
     "passed": true,
@@ -30,8 +38,8 @@
     "converter_version": 1,
     "markdown_sha256": "3779d3c62cd5957d94d8cb4075a2c5dbf9b3726810eb3cf8cf066bd21548b75e"
   },
-  "fetched_at": "2026-09-14T13:22:46+00:00",
+  "fetched_at": "2026-11-07T08:59:10+00:00",
   "source_snapshot_sha256": "70298be48811593058b319239d59742c2ae86ffeca736ed0cbe4a152feb7a1e6",
   "images": {},
-  "local_only": true
+  "publication_policy": "config/mirror.json"
 }

@@ -6,7 +6,15 @@
     "source_url": "https://spaces.ac.cn/archives/6181",
     "date": "2018-11-27",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "信息时代",
+    "source_tags": [
+      "概率",
+      "变分",
+      "互信息",
+      "vae"
+    ],
+    "source_summary": null
   },
   "validation": {
     "passed": true,
@@ -30,8 +38,8 @@
     "converter_version": 1,
     "markdown_sha256": "20fe09a2feac4948e9f7b1011a4a4943beff2bdb6f1cf1b5903fdf75e0c60c0e"
   },
-  "fetched_at": "2026-09-14T13:22:59+00:00",
+  "fetched_at": "2026-11-07T08:59:18+00:00",
   "source_snapshot_sha256": "80a4d5fd04c3abec2ab1399118024f348622bde8995e09778ce550b77b44edf2",
   "images": {},
-  "local_only": true
+  "publication_policy": "config/mirror.json"
 }

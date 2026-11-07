@@ -6,7 +6,13 @@
     "source_url": "https://spaces.ac.cn/archives/5879",
     "date": "2018-09-08",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "信息时代",
+    "source_tags": [
+      "keras",
+      "优化器"
+    ],
+    "source_summary": null
   },
   "validation": {
     "passed": true,
@@ -32,8 +38,8 @@
     "fallback_reason": "Unsupported body element: del",
     "markdown_sha256": "8c8b32b5684b97345863b0dc9687da7e8456e9a9f5815d16092a376bad4382b3"
   },
-  "fetched_at": "2026-09-14T13:24:42+00:00",
+  "fetched_at": "2026-11-07T09:00:07+00:00",
   "source_snapshot_sha256": "50b394eb687a6cac874bfa61a342543121b403ae5d412552d2e425e5b348aab6",
   "images": {},
-  "local_only": true
+  "publication_policy": "config/mirror.json"
 }

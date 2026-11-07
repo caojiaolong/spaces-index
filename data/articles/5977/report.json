@@ -6,7 +6,15 @@
     "source_url": "https://spaces.ac.cn/archives/5977",
     "date": "2018-09-21",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "信息时代",
+    "source_tags": [
+      "vae",
+      "流模型",
+      "flow",
+      "生成模型"
+    ],
+    "source_summary": "事实上，我们这个工作的原始目标是解决针对Glow提出的两个问题： 1、如何降低Glow的计算量？ 2、如何得到一个“降维”版本的Glow？ 我们的结果表明，一个不降维的f-VAEs基本相当于一个迷你版本的Glow，但是能达到较好的效果。而式$\\eqref{eq:f-vae-loss}$确实也允许我们训练一个降维版本的流模型。我们也从理论上证明了普通的VAEs和流模型自然地包含在我们的框架中。因此，我们的原始目标已经基本完成，得到了一个更一般的生成和推断框架。 当然，我们可以看到随机生成的图片依然有一种油画的感觉。可能的原因是模型还不够复杂，但我们猜测还有一个重要原因是3x3卷积的“滥用”，导致了感知野的无限放大，使得模型无法聚焦细…"
   },
   "validation": {
     "passed": true,
@@ -30,8 +38,8 @@
     "converter_version": 1,
     "markdown_sha256": "5e7e6230ca20037f11ab5711dffdfbe6d55ca018d3b5aabe52ddd185c945b19b"
   },
-  "fetched_at": "2026-09-14T13:24:20+00:00",
+  "fetched_at": "2026-11-07T08:59:59+00:00",
   "source_snapshot_sha256": "8993a5428bb8d2259c726defd4c17695a41ad512940161dc32cbb0f8e87c8a4b",
   "images": {},
-  "local_only": true
+  "publication_policy": "config/mirror.json"
 }

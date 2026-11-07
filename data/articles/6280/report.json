@@ -6,7 +6,15 @@
     "source_url": "https://spaces.ac.cn/archives/6280",
     "date": "2019-01-20",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "数学研究",
+    "source_tags": [
+      "对偶",
+      "优化",
+      "GAN",
+      "生成模型"
+    ],
+    "source_summary": null
   },
   "validation": {
     "passed": true,
@@ -30,8 +38,8 @@
     "converter_version": 1,
     "markdown_sha256": "3a241dffe63679c28f854f1098ea3670bfae338c1dc2f274bba6c399e4adcebc"
   },
-  "fetched_at": "2026-09-14T13:22:02+00:00",
+  "fetched_at": "2026-11-07T08:59:00+00:00",
   "source_snapshot_sha256": "358b1bc45d73bf8beb4ed9e1d7d73409e71ecd4f1e2379d591dc776f6bb092db",
   "images": {},
-  "local_only": true
+  "publication_policy": "config/mirror.json"
 }

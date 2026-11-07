@@ -6,7 +6,13 @@
     "source_url": "https://spaces.ac.cn/archives/6131",
     "date": "2018-10-30",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "生活/情感",
+    "source_tags": [
+      "文学",
+      "金庸"
+    ],
+    "source_summary": null
   },
   "validation": {
     "passed": true,
@@ -30,8 +36,8 @@
     "converter_version": 1,
     "markdown_sha256": "f8c0557e414047646a2366bf50b9d9fbaed26aad60ff9e39a2aef58e4f7b3a8b"
   },
-  "fetched_at": "2026-09-14T13:23:28+00:00",
+  "fetched_at": "2026-11-07T08:59:32+00:00",
   "source_snapshot_sha256": "1d79023cf593a62882dcc002c0e48bea72fc3cd1ae90926eff487d4fffe661f3",
   "images": {},
-  "local_only": true
+  "publication_policy": "config/mirror.json"
 }

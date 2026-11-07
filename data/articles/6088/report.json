@@ -6,7 +6,14 @@
     "source_url": "https://spaces.ac.cn/archives/6088",
     "date": "2018-10-10",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "信息时代",
+    "source_tags": [
+      "变分",
+      "互信息",
+      "vae"
+    ],
+    "source_summary": "开头已经说了，这篇文章会很简短，没有什么内容。主要目的就是给出变分自编码器的loss的新理解（最小化先验分布 + 最大化互信息），然后就可以自然而言地导出Deep INFOMAX的loss。 如果我还没有写 《深度学习的互信息：无监督提取特征》 ，那么我肯定会用这个出发点来讲解Deep INFOMAX，不过既然那篇文章都写了好几天了，所以只好另开这个简短的小文，来补充说明一下～"
   },
   "validation": {
     "passed": true,
@@ -30,8 +37,8 @@
     "converter_version": 1,
     "markdown_sha256": "4876ba1e1a497c9b1d56d111628442d116c6b98ed7fab4ab730350ee1477dbc3"
   },
-  "fetched_at": "2026-09-14T13:23:48+00:00",
+  "fetched_at": "2026-11-07T08:59:43+00:00",
   "source_snapshot_sha256": "7c707d8cebd652138351f297d5268da447e3fbaaf05809fcdbc5530a60a1032e",
   "images": {},
-  "local_only": true
+  "publication_policy": "config/mirror.json"
 }

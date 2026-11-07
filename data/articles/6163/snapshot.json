@@ -6,10 +6,18 @@
     "source_url": "https://spaces.ac.cn/archives/6163",
     "date": "2018-11-20",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "信息时代",
+    "source_tags": [
+      "概率",
+      "GAN",
+      "生成模型",
+      "度量"
+    ],
+    "source_summary": null
   },
-  "fetched_at": "2026-09-14T13:23:06+00:00",
-  "source_snapshot_sha256": "2b3eca7f44095698093d4c3f13a30d670b7eaac11f92c08a57d9f2475ae5ba23",
+  "fetched_at": "2026-11-07T08:59:21+00:00",
+  "source_snapshot_sha256": "9b5390dc01a9d330c47385fe59aedcf8840c6392d7fa18825f067eb0da8ba9bd",
   "validators": {
     "etag": null,
     "last_modified": null
