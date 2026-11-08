@@ -6,7 +6,14 @@
     "source_url": "https://spaces.ac.cn/archives/5409",
     "date": "2018-04-15",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "信息时代",
+    "source_tags": [
+      "模型",
+      "问答",
+      "深度学习"
+    ],
+    "source_summary": null
   },
   "validation": {
     "passed": true,
@@ -32,8 +39,8 @@
     "fallback_reason": "Unsupported body element: unk",
     "markdown_sha256": "fe0024371894f4d8624c8d5762d4179cebd26af1c647428fbb6b91f5bb654db0"
   },
-  "fetched_at": "2026-09-14T13:27:28+00:00",
+  "fetched_at": "2026-11-08T09:16:18+00:00",
   "source_snapshot_sha256": "372141e4b7a214ce0590c1e67792271e1bc4f5838faa0e94f910569598731520",
   "images": {},
-  "local_only": true
+  "publication_policy": "config/mirror.json"
 }

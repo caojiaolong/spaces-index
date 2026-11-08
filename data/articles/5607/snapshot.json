@@ -6,9 +6,17 @@
     "source_url": "https://spaces.ac.cn/archives/5607",
     "date": "2018-06-07",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "物理化学",
+    "source_tags": [
+      "概率",
+      "模拟",
+      "随机",
+      "主方程"
+    ],
+    "source_summary": null
   },
-  "fetched_at": "2026-09-14T13:26:20+00:00",
+  "fetched_at": "2026-11-08T09:15:39+00:00",
   "source_snapshot_sha256": "e27478e71d66dcf69a8cdd9f7e10efeca2043656a54e7db71be13a75ee6015eb",
   "validators": {
     "etag": null,

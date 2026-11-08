@@ -6,7 +6,15 @@
     "source_url": "https://spaces.ac.cn/archives/5476",
     "date": "2018-04-24",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "信息时代",
+    "source_tags": [
+      "熵",
+      "无监督",
+      "NLP",
+      "最小熵"
+    ],
+    "source_summary": null
   },
   "validation": {
     "passed": true,
@@ -30,8 +38,8 @@
     "converter_version": 1,
     "markdown_sha256": "0e6cd74439001b62f1dc472fceff27936f82cfad89dc71ac340f8ba2b770a801"
   },
-  "fetched_at": "2026-09-14T13:27:14+00:00",
+  "fetched_at": "2026-11-08T09:16:09+00:00",
   "source_snapshot_sha256": "5d1f1e08cd681d9c20df55217c78df9b0b5c13c4497184ed8ef9ce78ba858425",
   "images": {},
-  "local_only": true
+  "publication_policy": "config/mirror.json"
 }

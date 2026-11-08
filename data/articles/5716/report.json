@@ -6,7 +6,14 @@
     "source_url": "https://spaces.ac.cn/archives/5716",
     "date": "2018-07-18",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "信息时代",
+    "source_tags": [
+      "变分",
+      "深度学习",
+      "推断"
+    ],
+    "source_summary": null
   },
   "validation": {
     "passed": true,
@@ -30,8 +37,8 @@
     "converter_version": 1,
     "markdown_sha256": "c8f6ac24aa08e08ae8e35874e5d0d5cc5657e3f69eab8edc6b076c243d2ca808"
   },
-  "fetched_at": "2026-09-14T13:25:46+00:00",
+  "fetched_at": "2026-11-08T09:15:29+00:00",
   "source_snapshot_sha256": "7209128568b996cef9f069b7e0133c40e5ffb6c7cd78bc8c0914307783de1a03",
   "images": {},
-  "local_only": true
+  "publication_policy": "config/mirror.json"
 }

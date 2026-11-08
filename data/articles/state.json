@@ -3249,14 +3249,14 @@
   },
   "5743": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:19:49+00:00",
+    "checked_at": "2026-11-08T09:15:25+00:00",
     "title": "基于GRU和AM-Softmax的句子相似度模型",
     "markdown_sha256": "b58952f71b39c9af0eeecb356388da91f4040925b0ab18ef6f24ea5158028ebf",
     "converter_version": 1
   },
   "5716": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:19:49+00:00",
+    "checked_at": "2026-11-08T09:15:29+00:00",
     "title": "用变分推断统一理解生成模型（VAE、GAN、AAE、ALI）",
     "markdown_sha256": "c8f6ac24aa08e08ae8e35874e5d0d5cc5657e3f69eab8edc6b076c243d2ca808",
     "converter_version": 1
@@ -3277,154 +3277,154 @@
   },
   "5643": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:19:50+00:00",
+    "checked_at": "2026-11-08T09:15:32+00:00",
     "title": "貌离神合的RNN与ODE：花式RNN简介",
     "markdown_sha256": "2fdc86b855d7125f1fe27476361e3d3aeaeec3e39147ec4e9fd45635ed4c9a4b",
     "converter_version": 1
   },
   "5617": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:19:50+00:00",
+    "checked_at": "2026-11-08T09:15:36+00:00",
     "title": "“噪声对比估计”杂谈：曲径通幽之妙",
     "markdown_sha256": "62ac39ca77b12daf67a68c74b597162e73861598e659234f7a8afb45a79e2ed6",
     "converter_version": 1
   },
   "5607": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:19:50+00:00",
+    "checked_at": "2026-11-08T09:15:39+00:00",
     "title": "python简单实现gillespie模拟",
     "markdown_sha256": "bcaef1b949846f3526172b90498554f22af1a7c85605b07fdd068acbbfb84ebc",
     "converter_version": 1
   },
   "5597": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:19:50+00:00",
+    "checked_at": "2026-11-08T09:15:43+00:00",
     "title": "基于最小熵原理的NLP库：nlp zero",
     "markdown_sha256": "04090265bd43004dca20967ffaf7ed282cc186391601fb728399332b0e3f6cdd",
     "converter_version": 1
   },
   "5577": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:19:51+00:00",
+    "checked_at": "2026-11-08T09:15:46+00:00",
     "title": "最小熵原理（三）：“飞象过河”之句模版和语言结构",
     "markdown_sha256": "b5c52a0bdafb38b0e0f501976e4fca96f6ba4caf2748143bd3e879822a306927",
     "converter_version": 1
   },
   "5570": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:19:51+00:00",
+    "checked_at": "2026-11-08T09:15:50+00:00",
     "title": "厨房，菜市场，其实都是武林",
     "markdown_sha256": "0892413fdc94a135e078544d319248a2488a26cb44a3937a6acef0d71cab5547",
     "converter_version": 1
   },
   "5542": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:19:51+00:00",
+    "checked_at": "2026-11-08T09:15:53+00:00",
     "title": "简明条件随机场CRF介绍（附带纯Keras实现）",
     "markdown_sha256": "c37411a7443ca77507009ef204ec62abda239ee9e1edd8be80a78e4ac61b0326",
     "converter_version": 1
   },
   "5533": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:19:51+00:00",
+    "checked_at": "2026-11-08T09:15:57+00:00",
     "title": "【致敬】费曼诞辰100年",
     "markdown_sha256": "a460b9c4f5bfbf95cbb647dec22a2a62e7af930c54ed3b2594447482fb353d4d",
     "converter_version": 1
   },
   "5525": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:19:51+00:00",
+    "checked_at": "2026-11-08T09:16:00+00:00",
     "title": "用Numpy实现高效的Apriori算法",
     "markdown_sha256": "bb3876b5eb1d97056af876412dc99128934d84b2aa98dc27026d6a15aa95c974",
     "converter_version": 1
   },
   "5505": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:19:51+00:00",
+    "checked_at": "2026-11-08T09:16:05+00:00",
     "title": "基于Conv1D的光谱分类模型（一维序列分类）",
     "markdown_sha256": "a8ffcfb5c2c86f8a8a6951271a3e53ff76d1422964b7ce2217fbb58e87a225dc",
     "converter_version": 1
   },
   "5476": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:19:52+00:00",
+    "checked_at": "2026-11-08T09:16:09+00:00",
     "title": "最小熵原理（二）：“当机立断”之词库构建",
     "markdown_sha256": "0e6cd74439001b62f1dc472fceff27936f82cfad89dc71ac340f8ba2b770a801",
     "converter_version": 1
   },
   "5448": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:19:52+00:00",
+    "checked_at": "2026-11-08T09:16:14+00:00",
     "title": "最小熵原理（一）：无监督学习的原理",
     "markdown_sha256": "2901c644a3f82a87185c4d555986b2a13a75235c4714da5048f53bd06676bcd0",
     "converter_version": 1
   },
   "5409": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:19:52+00:00",
+    "checked_at": "2026-11-08T09:16:18+00:00",
     "title": "基于CNN的阅读理解式问答模型：DGCNN",
     "markdown_sha256": "fe0024371894f4d8624c8d5762d4179cebd26af1c647428fbb6b91f5bb654db0",
     "converter_version": 1
   },
   "5383": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:19:52+00:00",
+    "checked_at": "2026-11-08T09:16:22+00:00",
     "title": "变分自编码器（三）：这样做为什么能成？",
     "markdown_sha256": "91862896373afefad08fb6bf6f2b896674d4c2ff08096056f049bf830aec16f0",
     "converter_version": 1
   },
   "5343": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:19:53+00:00",
+    "checked_at": "2026-11-08T09:16:27+00:00",
     "title": "变分自编码器（二）：从贝叶斯观点出发",
     "markdown_sha256": "20423ba6afb54266060b0fd0eb86cb55a8d51736bd14bbee990e38e946fbbb29",
     "converter_version": 1
   },
   "5332": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:19:53+00:00",
+    "checked_at": "2026-11-08T09:16:31+00:00",
     "title": "基于CNN和VAE的作诗机器人：随机成诗",
     "markdown_sha256": "b220c2a1cd98788e058b839b62edebe8b033cf52f0f85b017697a4ac68760fea",
     "converter_version": 1
   },
   "5253": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:19:53+00:00",
+    "checked_at": "2026-11-08T09:16:36+00:00",
     "title": "变分自编码器（一）：原来是这么一回事",
     "markdown_sha256": "4592f3f90376a5784a15ddcf4f66a04378da753ceb70cd435eb16294632f8deb",
     "converter_version": 1
   },
   "5239": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:19:53+00:00",
+    "checked_at": "2026-11-08T09:16:41+00:00",
     "title": "从最大似然到EM算法：一致的理解方式",
     "markdown_sha256": "b0c3ab73d1a7fe8590981390b8636f460fcf33779a3c17d9f9311a6479c3845d",
     "converter_version": 1
   },
   "5155": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:19:54+00:00",
+    "checked_at": "2026-11-08T09:16:46+00:00",
     "title": "三味Capsule：矩阵Capsule与EM路由",
     "markdown_sha256": "694cf4165e71c608feca378938218393a332b1107c456cc225b92d2d0854e520",
     "converter_version": 1
   },
   "5112": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:19:54+00:00",
+    "checked_at": "2026-11-08T09:16:50+00:00",
     "title": "再来一顿贺岁宴：从K-Means到Capsule",
     "markdown_sha256": "6336abb4d2a360e9b787f80693dae5d45379d9739fa585d51cbb5ee36455a72f",
     "converter_version": 1
   },
   "5067": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:19:54+00:00",
+    "checked_at": "2026-11-08T09:16:54+00:00",
     "title": "【分享】千万级百度知道语料",
     "markdown_sha256": "3959c01a70f4f1a82746149f0b49fb040bf0f6e56f38ac29c25c2ca9f0e49b34",
     "converter_version": 1
   },
   "5066": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:19:54+00:00",
+    "checked_at": "2026-11-08T09:16:58+00:00",
     "title": "网站更新记录（2018年01月）",
     "markdown_sha256": "92f07147ff3174a2252c1f23ed93183f7b84d8a5982e8a031eec064e986f2a8a",
     "converter_version": 1
@@ -3452,7 +3452,7 @@
   },
   "4797": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:19:55+00:00",
+    "checked_at": "2026-11-08T09:17:03+00:00",
     "title": "增强typecho的搜索功能",
     "markdown_sha256": "51bd6a6139712954676b3c2d09c50d10e0da2035f93b31cbb216af8384f14f54",
     "converter_version": 1
@@ -8464,7 +8464,7 @@
   },
   "132": {
     "status": "conversion_failed",
-    "checked_at": "2026-11-07T09:00:29+00:00",
+    "checked_at": "2026-11-08T09:17:03+00:00",
     "title": "一道从小学到高中都可能考到的题目",
     "error": "Unreviewed legacy element: a<b，则有<br",
     "converter_version": 1,

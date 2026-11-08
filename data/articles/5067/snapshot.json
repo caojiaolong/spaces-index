@@ -6,9 +6,16 @@
     "source_url": "https://spaces.ac.cn/archives/5067",
     "date": "2018-01-30",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "资源共享",
+    "source_tags": [
+      "自然语言处理",
+      "语料",
+      "数据集"
+    ],
+    "source_summary": null
   },
-  "fetched_at": "2026-09-14T13:28:21+00:00",
+  "fetched_at": "2026-11-08T09:16:54+00:00",
   "source_snapshot_sha256": "337d1b17f0679f9a2747fec6a0f3ce303df4ca14f708cfc20627dfe9f81dbafd",
   "validators": {
     "etag": null,

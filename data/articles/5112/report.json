@@ -6,7 +6,14 @@
     "source_url": "https://spaces.ac.cn/archives/5112",
     "date": "2018-02-12",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "信息时代",
+    "source_tags": [
+      "深度学习",
+      "聚类",
+      "Capsule"
+    ],
+    "source_summary": "笔者通过这两篇“浩浩荡荡”（哆里哆嗦）的博文，来试图解读Hinton大力发展的Capsule模型，然而作者水平有限，其中不当之处，还请读者海涵。 个人认为，Capsule的确是新颖的、有前景的的研究内容。也许它不一定（但也是有可能的）是未来的发展方向，但细细品味它，仍足以让我们获益良多。 现在回顾文章开头的目标——企图让Capsule看起来更加自然一些，不知道读者现在的感受如何？个人感觉是，之前经过这样的解析，Capsule也不是那么超然物外，而是一个大胆的尝试——Hinton大胆地将聚类的迭代过程融入到神经网络中，因此诞生了Capsule。 那是不是说，可以考虑将其他比较直观的算法也融入到里边，从而造就其他有意思的玩意？让我们拭…"
   },
   "validation": {
     "passed": true,
@@ -30,8 +37,8 @@
     "converter_version": 1,
     "markdown_sha256": "6336abb4d2a360e9b787f80693dae5d45379d9739fa585d51cbb5ee36455a72f"
   },
-  "fetched_at": "2026-09-14T13:28:14+00:00",
+  "fetched_at": "2026-11-08T09:16:50+00:00",
   "source_snapshot_sha256": "4510558ae4c8d9eed2e2d59f297c8e2d0aec4bf5d89b80a75696038c296df6f3",
   "images": {},
-  "local_only": true
+  "publication_policy": "config/mirror.json"
 }

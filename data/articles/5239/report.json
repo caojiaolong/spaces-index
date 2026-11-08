@@ -6,7 +6,14 @@
     "source_url": "https://spaces.ac.cn/archives/5239",
     "date": "2018-03-15",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "数学研究",
+    "source_tags": [
+      "概率",
+      "优化",
+      "聚类"
+    ],
+    "source_summary": null
   },
   "validation": {
     "passed": true,
@@ -30,8 +37,8 @@
     "converter_version": 1,
     "markdown_sha256": "b0c3ab73d1a7fe8590981390b8636f460fcf33779a3c17d9f9311a6479c3845d"
   },
-  "fetched_at": "2026-09-14T13:28:00+00:00",
+  "fetched_at": "2026-11-08T09:16:41+00:00",
   "source_snapshot_sha256": "14a09ef2848be87131e4012ff63de3488a6ece941d34ce6ffaecd683b171baa1",
   "images": {},
-  "local_only": true
+  "publication_policy": "config/mirror.json"
 }

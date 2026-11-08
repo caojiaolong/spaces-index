@@ -6,7 +6,15 @@
     "source_url": "https://spaces.ac.cn/archives/5253",
     "date": "2018-03-18",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "信息时代",
+    "source_tags": [
+      "变分",
+      "无监督",
+      "vae",
+      "生成模型"
+    ],
+    "source_summary": null
   },
   "validation": {
     "passed": true,
@@ -30,8 +38,8 @@
     "converter_version": 1,
     "markdown_sha256": "4592f3f90376a5784a15ddcf4f66a04378da753ceb70cd435eb16294632f8deb"
   },
-  "fetched_at": "2026-09-14T13:27:54+00:00",
+  "fetched_at": "2026-11-08T09:16:36+00:00",
   "source_snapshot_sha256": "d5604af74e98d9be170365f88f5e2c5070d31fea2d3d18f8546cb7cef48aebc5",
   "images": {},
-  "local_only": true
+  "publication_policy": "config/mirror.json"
 }

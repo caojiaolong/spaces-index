@@ -6,9 +6,16 @@
     "source_url": "https://spaces.ac.cn/archives/5570",
     "date": "2018-05-21",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "图片摄影",
+    "source_tags": [
+      "生活",
+      "厨房",
+      "美食"
+    ],
+    "source_summary": null
   },
-  "fetched_at": "2026-09-14T13:26:40+00:00",
+  "fetched_at": "2026-11-08T09:15:50+00:00",
   "source_snapshot_sha256": "710eeeb0d703cf883833241c505d4db3306ab576470efffab93c9809d6a1c3e3",
   "validators": {
     "etag": null,

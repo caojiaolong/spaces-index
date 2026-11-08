@@ -6,9 +6,17 @@
     "source_url": "https://spaces.ac.cn/archives/5542",
     "date": "2018-05-18",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "信息时代",
+    "source_tags": [
+      "模型",
+      "概率图",
+      "keras",
+      "crf"
+    ],
+    "source_summary": "终于介绍完了，希望大家有所收获，也希望最后的实现能对大家有所帮助～"
   },
-  "fetched_at": "2026-09-14T13:26:46+00:00",
+  "fetched_at": "2026-11-08T09:15:53+00:00",
   "source_snapshot_sha256": "6472a9b87b41c05e887254801fa3f26d978d966ece19f4f56ecd69c20fd7d317",
   "validators": {
     "etag": null,

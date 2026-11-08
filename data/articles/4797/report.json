@@ -6,7 +6,13 @@
     "source_url": "https://spaces.ac.cn/archives/4797",
     "date": "2018-01-09",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "信息时代",
+    "source_tags": [
+      "网站",
+      "python"
+    ],
+    "source_summary": "为什么要用这种Python和PHP结合的方案，而不纯写成PHP版？没错，写成纯PHP也可以，结巴分词的确也有PHP版，然而最重要的问题是我不会PHP！而且PHP版的结巴也需要额外配置，略麻烦。像这样用Python对我来说就简单多了，如果有什么要改进的，修改Python脚本即可。 最后，也许有使用者会担心这么粗暴的解决方法会不会存在效率问题，事实上，如果文章多达几十万的话，那么上述做法肯定有很严重的效率问题，然而对于一个只有几百篇文章的博客来说，这个问题并不需要考虑了。 终于可以用更自由地搜索了～欢迎大家更多的建议。"
   },
   "validation": {
     "passed": true,
@@ -30,8 +36,8 @@
     "converter_version": 1,
     "markdown_sha256": "51bd6a6139712954676b3c2d09c50d10e0da2035f93b31cbb216af8384f14f54"
   },
-  "fetched_at": "2026-09-14T13:28:54+00:00",
+  "fetched_at": "2026-11-08T09:17:03+00:00",
   "source_snapshot_sha256": "2a36ab0df76c1341513480bcb9391351bc0e0be5e320317276745ead74414aac",
   "images": {},
-  "local_only": true
+  "publication_policy": "config/mirror.json"
 }

@@ -6,7 +6,14 @@
     "source_url": "https://spaces.ac.cn/archives/5155",
     "date": "2018-03-02",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "信息时代",
+    "source_tags": [
+      "深度学习",
+      "聚类",
+      "Capsule"
+    ],
+    "source_summary": "经过这样一番分析，应该可以感觉到这个新版的Capsule及其路由算法并不复杂。 新论文的要点是使用了GMM来完成聚类过程，GMM是一个基于概率模型的聚类算法，紧抓住“概率模型”这一特性，寻找概率相关的量，就不难理解$a_j$表达式的来源，这应该是理解整篇论文最困难的一点；而用矩阵代替向量，应该只是一种降低计算量和参数量的方案，并无本质变化 。 只不过新论文传承了旧论文的晦涩难懂的表达方式，加上混乱的符号使用，使得我们的理解难度大大增加，再次诟病作者们的文笔。 当然，论文中还是有些难懂的、不知思路的东西，比如上面说的$cost_j$的$r_{ij}$就被替换了$a^{last}_i R_{ij}$，如果大家有什么更有启发性的思路，欢…"
   },
   "validation": {
     "passed": true,
@@ -30,8 +37,8 @@
     "converter_version": 1,
     "markdown_sha256": "694cf4165e71c608feca378938218393a332b1107c456cc225b92d2d0854e520"
   },
-  "fetched_at": "2026-09-14T13:28:07+00:00",
+  "fetched_at": "2026-11-08T09:16:46+00:00",
   "source_snapshot_sha256": "62a17094043fd34eb5880e547112e1e4e8aead30da3b2c13370664b7f8baf9e1",
   "images": {},
-  "local_only": true
+  "publication_policy": "config/mirror.json"
 }
