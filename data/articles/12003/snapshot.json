@@ -1,0 +1,26 @@
+{
+  "metadata": {
+    "id": "12003",
+    "title": "让炼丹更科学一些（十一）：无调度学习率新思路",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/12003",
+    "date": "2026-11-09",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "数学研究",
+    "source_tags": [
+      "优化",
+      "学习率",
+      "优化器",
+      "sgd",
+      "炼丹"
+    ],
+    "source_summary": "本文介绍了Schedule-Free方向的一个新工作，它在原本的参数空间中新增一个维度，通过巧妙的构造，让提升前后的遗憾形式相等，然后在提升后的空间应用已有的收敛结果，在有界域与凸优化假设下，得到无需显式的学习率设置就可以自动达到最佳收敛速度的结论。"
+  },
+  "fetched_at": "2026-11-09T09:58:26+00:00",
+  "source_snapshot_sha256": "78e6af9a2780c166f0c6bf7448ba271bc2ff1c80126339a6329090dc24853639",
+  "validators": {
+    "etag": null,
+    "last_modified": null
+  }
+}

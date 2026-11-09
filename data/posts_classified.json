@@ -1,5 +1,28 @@
 [
   {
+    "id": "12003",
+    "title": "让炼丹更科学一些（十一）：无调度学习率新思路",
+    "url": "https://spaces.ac.cn/archives/12003",
+    "date": "2026-11-09",
+    "source_category": "数学研究",
+    "source_tags": [
+      "优化",
+      "学习率",
+      "优化器",
+      "sgd",
+      "炼丹"
+    ],
+    "source_summary": "本文介绍了Schedule-Free方向的一个新工作，它在原本的参数空间中新增一个维度，通过巧妙的构造，让提升前后的遗憾形式相等，然后在提升后的空间应用已有的收敛结果，在有界域与凸优化假设下，得到无需显式的学习率设置就可以自动达到最佳收敛速度的结论。",
+    "metadata_checked_at": "2026-11-09T09:58:26+00:00",
+    "topics": [
+      "优化与训练"
+    ],
+    "series": "让炼丹更科学一些",
+    "series_index": 11,
+    "level": null,
+    "series_topic": "优化与训练"
+  },
+  {
     "id": "11993",
     "title": "平均之路：从Attention到TTT",
     "url": "https://spaces.ac.cn/archives/11993",
@@ -10670,6 +10693,7 @@
       "金庸"
     ],
     "source_summary": null,
+    "metadata_checked_at": "2026-11-09T09:58:29+00:00",
     "topics": [
       "物理化学"
     ],
@@ -10688,6 +10712,7 @@
       "自然语言处理"
     ],
     "source_summary": null,
+    "metadata_checked_at": "2026-11-09T09:58:33+00:00",
     "topics": [
       "深度学习基础"
     ],
@@ -10707,6 +10732,7 @@
       "Capsule"
     ],
     "source_summary": "这应该是到目前为止我写的最长的单篇博客了～不知道大家对这个Capsule饭局满不满意呢？ 最后不得不吐槽一下，Hinton真会起名字，把神经网络重新叫做深度学习，然后深度学习就火了，现在把聚类的迭代算法放到神经网络中，称之为做动态路由，不知道会不会再次重现深度学习的辉煌呢？（笑，闪～）",
+    "metadata_checked_at": "2026-11-09T09:58:36+00:00",
     "topics": [
       "深度学习基础"
     ],
@@ -10745,6 +10771,7 @@
       "attention"
     ],
     "source_summary": "感谢Google提供的精彩的使用案例，让我等在大开眼界之余，还对Attention的认识更深一层。Google的这个成果在某种程度上体现了“大道至简”的理念，的确是NLP中不可多得的精品。本文围绕着Google的大作，班门弄斧一番，但愿能够帮助有需要的读者更好的理解Attention。最后恳请大家建议和批评。",
+    "metadata_checked_at": "2026-11-09T09:58:40+00:00",
     "topics": [
       "深度学习基础",
       "大模型与Transformer",
@@ -10765,6 +10792,7 @@
       "天文"
     ],
     "source_summary": null,
+    "metadata_checked_at": "2026-11-09T09:58:43+00:00",
     "topics": [
       "天文科普"
     ],
@@ -10784,6 +10812,7 @@
       "损失函数"
     ],
     "source_summary": "什么？你得到了跟Kaiming大神一样想法的东西？不不不，本文只是对Kaiming大神的focal loss的一个介绍而已，更准确地说，是应对分类不平衡、分类难度差异的一些方案的介绍，并尽可能给出自己的看法而已。当然，本文这样的写法难免有附庸风雅、东施效颦之嫌，请读者海涵。",
+    "metadata_checked_at": "2026-11-09T09:58:47+00:00",
     "topics": [
       "深度学习基础",
       "优化与训练"
@@ -10803,6 +10832,7 @@
       "微分方程"
     ],
     "source_summary": null,
+    "metadata_checked_at": "2026-11-09T09:58:51+00:00",
     "topics": [
       "几何与方程",
       "数学工具"
@@ -10823,6 +10853,7 @@
       "crf"
     ],
     "source_summary": null,
+    "metadata_checked_at": "2026-11-09T09:58:54+00:00",
     "topics": [
       "概率统计与信息论",
       "NLP与信息抽取"
@@ -10842,6 +10873,7 @@
       "glove"
     ],
     "source_summary": "本文算是一次对词向量模型比较完整的探索，也算是笔者的理论强迫症的结果，幸好最后也得到了一个理论上比较好看的模型，初步治愈了我这个强迫症。而至于实验效果、应用等等，则有待日后进一步使用验证了。 本文的大多数推导，都可以模仿地去解释word2vec的skip gram模型的实验结果，读者可以尝试。事实上，word2vec的skip gram模型确实跟本文的模型有着类似的表现，包括词向量的模型性质等。 总的来说，理论与实验结合是一件很美妙的事情，当然，也是一件很辛苦的事情，因为就以上这些东西，就花了我几个月思考时间。",
+    "metadata_checked_at": "2026-11-09T09:58:58+00:00",
     "topics": [
       "词向量与Embedding"
     ],
@@ -10862,6 +10894,7 @@
       "语义"
     ],
     "source_summary": null,
+    "metadata_checked_at": "2026-11-09T09:59:01+00:00",
     "topics": [
       "词向量与Embedding"
     ],
@@ -10882,6 +10915,7 @@
       "glove"
     ],
     "source_summary": null,
+    "metadata_checked_at": "2026-11-09T09:59:05+00:00",
     "topics": [
       "词向量与Embedding"
     ],
@@ -10901,6 +10935,7 @@
       "glove"
     ],
     "source_summary": null,
+    "metadata_checked_at": "2026-11-09T09:59:08+00:00",
     "topics": [
       "词向量与Embedding"
     ],
@@ -10921,6 +10956,7 @@
       "glove"
     ],
     "source_summary": null,
+    "metadata_checked_at": "2026-11-09T09:59:12+00:00",
     "topics": [
       "词向量与Embedding"
     ],
@@ -10940,6 +10976,7 @@
       "glove"
     ],
     "source_summary": null,
+    "metadata_checked_at": "2026-11-09T09:59:15+00:00",
     "topics": [
       "词向量与Embedding"
     ],
@@ -10958,6 +10995,7 @@
       "神经网络"
     ],
     "source_summary": null,
+    "metadata_checked_at": "2026-11-09T09:59:19+00:00",
     "topics": [
       "深度学习基础"
     ],
@@ -10976,6 +11014,7 @@
       "深度学习"
     ],
     "source_summary": null,
+    "metadata_checked_at": "2026-11-09T09:59:23+00:00",
     "topics": [
       "深度学习基础"
     ],
@@ -10995,6 +11034,7 @@
       "照片"
     ],
     "source_summary": null,
+    "metadata_checked_at": "2026-11-09T09:59:26+00:00",
     "topics": [
       "图片摄影"
     ],
@@ -11014,6 +11054,7 @@
       "深度学习"
     ],
     "source_summary": "尽管文章很长，但多数只是代码，而且从效果来看就是一个baseline，仅供读者入门学习，高手请留言指教，谢谢。 完整代码请点击： https://github.com/bojone/baidu_dog_classifier",
+    "metadata_checked_at": "2026-11-09T09:59:30+00:00",
     "topics": [
       "深度学习基础",
       "数学工具",
@@ -11034,6 +11075,7 @@
       "主方程"
     ],
     "source_summary": null,
+    "metadata_checked_at": "2026-11-09T09:59:34+00:00",
     "topics": [
       "概率统计与信息论",
       "几何与方程",
@@ -11053,6 +11095,7 @@
       "深度学习"
     ],
     "source_summary": null,
+    "metadata_checked_at": "2026-11-09T09:59:37+00:00",
     "topics": [
       "深度学习基础"
     ],
@@ -11072,6 +11115,7 @@
       "比赛"
     ],
     "source_summary": null,
+    "metadata_checked_at": "2026-11-09T09:59:41+00:00",
     "topics": [
       "深度学习基础"
     ],
@@ -11090,6 +11134,7 @@
       "深度学习"
     ],
     "source_summary": null,
+    "metadata_checked_at": "2026-11-09T09:59:44+00:00",
     "topics": [
       "深度学习基础"
     ],
@@ -11109,6 +11154,7 @@
       "生成模型"
     ],
     "source_summary": null,
+    "metadata_checked_at": "2026-11-09T09:59:48+00:00",
     "topics": [
       "深度学习基础",
       "生成模型"
@@ -11225,6 +11271,7 @@
       "代数"
     ],
     "source_summary": null,
+    "metadata_checked_at": "2026-11-09T09:59:52+00:00",
     "topics": [
       "数学工具"
     ],
@@ -11245,6 +11292,7 @@
       "生成模型"
     ],
     "source_summary": null,
+    "metadata_checked_at": "2026-11-09T09:59:56+00:00",
     "topics": [
       "生成模型",
       "概率统计与信息论"

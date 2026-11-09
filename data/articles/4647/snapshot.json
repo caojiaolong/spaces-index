@@ -6,9 +6,14 @@
     "source_url": "https://spaces.ac.cn/archives/4647",
     "date": "2017-10-26",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "信息时代",
+    "source_tags": [
+      "神经网络"
+    ],
+    "source_summary": null
   },
-  "fetched_at": "2026-09-14T13:30:13+00:00",
+  "fetched_at": "2026-11-09T09:59:19+00:00",
   "source_snapshot_sha256": "3a06cd69fc818eb403edb32f402554d2a793cee85388c90c7f5e42712edc0416",
   "validators": {
     "etag": null,

@@ -3431,21 +3431,21 @@
   },
   "5048": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:19:55+00:00",
+    "checked_at": "2026-11-09T09:58:29+00:00",
     "title": "【理科生读小说】来谈谈“四两拨千斤”",
     "markdown_sha256": "af4a9dfb45125a8d5dc7b5684d0c2b0d3692e9496d623caf1f07d8a9af5a8c72",
     "converter_version": 1
   },
   "4823": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:19:55+00:00",
+    "checked_at": "2026-11-09T09:58:33+00:00",
     "title": "分享一个slide：花式自然语言处理",
     "markdown_sha256": "1b1d016367dc8d569b5e9e92853b89259e4a3c21e210b3d789c97f8d180c1f96",
     "converter_version": 1
   },
   "4819": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:19:55+00:00",
+    "checked_at": "2026-11-09T09:58:36+00:00",
     "title": "揭开迷雾，来一顿美味的Capsule盛宴",
     "markdown_sha256": "9fd9a14b008d0c1e994880f95299c400da16faa5760fafe866b66710a4b29f39",
     "converter_version": 1
@@ -3459,140 +3459,140 @@
   },
   "4765": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:19:56+00:00",
+    "checked_at": "2026-11-09T09:58:40+00:00",
     "title": "《Attention is All You Need》浅读（简介+代码）",
     "markdown_sha256": "dfe94cffa6d9720225190f44907dda33664118142cedd0e17f59c8e756ab7579",
     "converter_version": 1
   },
   "4760": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:19:56+00:00",
+    "checked_at": "2026-11-09T09:58:43+00:00",
     "title": "2018年全年天象",
     "markdown_sha256": "896cc0128c5b0a5ff7185d264ed3625e591ce5f0c60a1adde2308ef31d19b1ce",
     "converter_version": 1
   },
   "4733": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:19:56+00:00",
+    "checked_at": "2026-11-09T09:58:47+00:00",
     "title": "从loss的硬截断、软化到focal loss",
     "markdown_sha256": "46efcbb8d90956e77a959474fabc1a73208a9eeb2afc525605d8764a160e3c52",
     "converter_version": 1
   },
   "4718": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:19:56+00:00",
+    "checked_at": "2026-11-09T09:58:51+00:00",
     "title": "一阶偏微分方程的特征线法",
     "markdown_sha256": "f5f0041e6b9aa5f144a70d114bc71e8f7431469dd74f5572869f49655dcf842a",
     "converter_version": 1
   },
   "4695": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:19:56+00:00",
+    "checked_at": "2026-11-09T09:58:54+00:00",
     "title": "果壳中的条件随机场(CRF In A Nutshell)",
-    "markdown_sha256": "acd2789eec27307851e7fdfc5101dd17599d373d422cc13b170b3ef7e0e70d32",
+    "markdown_sha256": "de2dabaab7284a2c4ff9e83a298661675102d6b908098173ad86c5b62e50a18e",
     "converter_version": 1
   },
   "4681": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:19:56+00:00",
+    "checked_at": "2026-11-09T09:58:58+00:00",
     "title": "更别致的词向量模型(六)：代码、分享与结语",
     "markdown_sha256": "5dc5233bef9d8ced7f51a80db5198ca22bbf6d2e3493b9704f0bd57809c7defa",
     "converter_version": 1
   },
   "4677": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:19:57+00:00",
+    "checked_at": "2026-11-09T09:59:01+00:00",
     "title": "更别致的词向量模型(五)：有趣的结果",
     "markdown_sha256": "670b4e464009f18c8bbb71b3949977eb2b551859d2f4b9b8ec3f39d84fd2fb6e",
     "converter_version": 1
   },
   "4675": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:19:57+00:00",
+    "checked_at": "2026-11-09T09:59:05+00:00",
     "title": "更别致的词向量模型(四)：模型的求解",
     "markdown_sha256": "278d8ffc5da1145567c61d5c63339f0739ed382ea191abd2da9c6d21620777c3",
     "converter_version": 1
   },
   "4671": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:19:57+00:00",
+    "checked_at": "2026-11-09T09:59:08+00:00",
     "title": "更别致的词向量模型(三)：描述相关的模型",
     "markdown_sha256": "b2cdc595773ecf398c9cf63208235ed7f02d8d9b8c33231edb0187d9e6ce2213",
     "converter_version": 1
   },
   "4669": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:19:57+00:00",
+    "checked_at": "2026-11-09T09:59:12+00:00",
     "title": "更别致的词向量模型(二)：对语言进行建模",
     "markdown_sha256": "dc6472ee5d24c788f9f27e295ce71b5f1e9e8a7714dd7d13d14138f0f6a4a98d",
     "converter_version": 1
   },
   "4667": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:19:57+00:00",
+    "checked_at": "2026-11-09T09:59:15+00:00",
     "title": "更别致的词向量模型(一)：simpler glove",
     "markdown_sha256": "b3e7e175a17cb1cd979e1f5b58de73650c4064318cf4c8a726740d7c752841a7",
     "converter_version": 1
   },
   "4647": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:19:57+00:00",
+    "checked_at": "2026-11-09T09:59:19+00:00",
     "title": "浅谈神经网络中激活函数的设计",
     "markdown_sha256": "cc527a68eb4f4e4ebaa7340c14300f2a8a9393cef40b21982d55bccde4bdcbe4",
     "converter_version": 1
   },
   "4638": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:19:57+00:00",
+    "checked_at": "2026-11-09T09:59:23+00:00",
     "title": "训练集、验证集和测试集的意义",
     "markdown_sha256": "19f2ec7b5650c342934f8861a137e4ff7fa0eb42999331482532278a9b8d86b8",
     "converter_version": 1
   },
   "4637": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:19:58+00:00",
+    "checked_at": "2026-11-09T09:59:26+00:00",
     "title": "【随拍】门口的广州塔",
     "markdown_sha256": "3d17786106e0cd59338bb124d72bc2601b6705227b854aaa610c4d2d815f57a8",
     "converter_version": 1
   },
   "4611": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:19:58+00:00",
+    "checked_at": "2026-11-09T09:59:30+00:00",
     "title": "基于fine tune的图像分类（百度分狗竞赛）",
     "markdown_sha256": "b44c8814edeceec6efe70f67a634b4dcfd65a2e0db0994dcf67713df542f07b3",
     "converter_version": 1
   },
   "4598": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:19:58+00:00",
+    "checked_at": "2026-11-09T09:59:34+00:00",
     "title": "从马尔科夫过程到主方程（推导过程）",
     "markdown_sha256": "d8cf36483ab07d4e844e7aad6a96c6ef52e7499c2f4696672b2fcb7a477eb6fe",
     "converter_version": 1
   },
   "4582": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:19:58+00:00",
+    "checked_at": "2026-11-09T09:59:37+00:00",
     "title": "RNN模型中输入的重要性的评估",
-    "markdown_sha256": "1ebda0d528470ba10721008a1171b7c12805477551f3a4f869e3493573263e0f",
+    "markdown_sha256": "0fbed3f3ba3777be1ab906ff2cee8388af6b773047110129d4a4649dfe4cddf9",
     "converter_version": 1
   },
   "4564": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:19:58+00:00",
+    "checked_at": "2026-11-09T09:59:41+00:00",
     "title": "开学啦！咱们来做完形填空～（讯飞杯）",
     "markdown_sha256": "eda46b72c0e7ff0bfe318a85005f692c3358cc35a7f601e0b2f03b0412860d9c",
     "converter_version": 1
   },
   "4556": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:19:58+00:00",
+    "checked_at": "2026-11-09T09:59:44+00:00",
     "title": "fashion mnist的一个baseline (MobileNet 95%)",
     "markdown_sha256": "0e84de1a28bb259a8be15eb41723c1f440cc4ba3857270d50fb90479994483e9",
     "converter_version": 1
   },
   "4540": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:19:58+00:00",
+    "checked_at": "2026-11-09T09:59:48+00:00",
     "title": "fashion-mnist的gan玩具",
     "markdown_sha256": "fcf7d3606bba199ffe22eecc45f1018a7818b64d0f775df86c9cc43f540fad26",
     "converter_version": 1
@@ -3634,14 +3634,14 @@
   },
   "4486": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:19:59+00:00",
+    "checked_at": "2026-11-09T09:59:52+00:00",
     "title": "《交换代数导引》参考答案",
     "markdown_sha256": "5b292167df463ddfa2fdadc7d06ddb4cfaeb87aa0adca5cffc25b063dff07cd8",
     "converter_version": 1
   },
   "4439": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:19:59+00:00",
+    "checked_at": "2026-11-09T09:59:56+00:00",
     "title": "互怼的艺术：从零直达WGAN-GP",
     "markdown_sha256": "bbce9911a380bf265f851eae5754d58b41a1596ab817c384213827491dec9304",
     "converter_version": 1
@@ -8464,7 +8464,7 @@
   },
   "132": {
     "status": "conversion_failed",
-    "checked_at": "2026-11-08T09:17:03+00:00",
+    "checked_at": "2026-11-09T09:59:56+00:00",
     "title": "一道从小学到高中都可能考到的题目",
     "error": "Unreviewed legacy element: a<b，则有<br",
     "converter_version": 1,
@@ -9413,6 +9413,13 @@
     "checked_at": "2026-11-01T09:26:35+00:00",
     "title": "平均之路：从Attention到TTT",
     "markdown_sha256": "e8084bb41ba3cf04fecdb4c81b3c3582655b14c93315dbae2280d905eb976ad9",
+    "converter_version": 1
+  },
+  "12003": {
+    "status": "verified",
+    "checked_at": "2026-11-09T09:58:26+00:00",
+    "title": "让炼丹更科学一些（十一）：无调度学习率新思路",
+    "markdown_sha256": "10d3f6f95f643542a412b9fbc52abdbac567c83de0a1e01bec5963bdd692786c",
     "converter_version": 1
   }
 }

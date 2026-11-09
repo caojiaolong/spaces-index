@@ -6,7 +6,14 @@
     "source_url": "https://spaces.ac.cn/archives/4669",
     "date": "2017-11-19",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "信息时代",
+    "source_tags": [
+      "词向量",
+      "互信息",
+      "glove"
+    ],
+    "source_summary": null
   },
   "validation": {
     "passed": true,
@@ -30,8 +37,8 @@
     "converter_version": 1,
     "markdown_sha256": "dc6472ee5d24c788f9f27e295ce71b5f1e9e8a7714dd7d13d14138f0f6a4a98d"
   },
-  "fetched_at": "2026-09-14T13:29:59+00:00",
+  "fetched_at": "2026-11-09T09:59:12+00:00",
   "source_snapshot_sha256": "cae556b7bd45a2810b904503578a899e7d58629557be22d58443f6065186a94a",
   "images": {},
-  "local_only": true
+  "publication_policy": "config/mirror.json"
 }

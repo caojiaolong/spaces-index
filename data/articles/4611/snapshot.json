@@ -6,9 +6,16 @@
     "source_url": "https://spaces.ac.cn/archives/4611",
     "date": "2017-10-13",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "信息时代",
+    "source_tags": [
+      "分类",
+      "图像",
+      "深度学习"
+    ],
+    "source_summary": "尽管文章很长，但多数只是代码，而且从效果来看就是一个baseline，仅供读者入门学习，高手请留言指教，谢谢。 完整代码请点击： https://github.com/bojone/baidu_dog_classifier"
   },
-  "fetched_at": "2026-09-14T13:30:33+00:00",
+  "fetched_at": "2026-11-09T09:59:30+00:00",
   "source_snapshot_sha256": "2d8d1e063cab25b37cd5bb9d1a2f8dbcafee2ba09f60ec2efb4f5ca39d4bf069",
   "validators": {
     "etag": null,

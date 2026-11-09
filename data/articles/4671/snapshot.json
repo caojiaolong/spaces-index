@@ -6,9 +6,15 @@
     "source_url": "https://spaces.ac.cn/archives/4671",
     "date": "2017-11-19",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "信息时代",
+    "source_tags": [
+      "词向量",
+      "glove"
+    ],
+    "source_summary": null
   },
-  "fetched_at": "2026-09-14T13:29:52+00:00",
+  "fetched_at": "2026-11-09T09:59:08+00:00",
   "source_snapshot_sha256": "ef2377e5bbca2cb5c09cf824c48a5ef61acdfabab34b333f0b638f7dccc402db",
   "validators": {
     "etag": null,

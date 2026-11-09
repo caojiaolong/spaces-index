@@ -6,7 +6,14 @@
     "source_url": "https://spaces.ac.cn/archives/4819",
     "date": "2018-01-23",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "信息时代",
+    "source_tags": [
+      "深度学习",
+      "聚类",
+      "Capsule"
+    ],
+    "source_summary": "这应该是到目前为止我写的最长的单篇博客了～不知道大家对这个Capsule饭局满不满意呢？ 最后不得不吐槽一下，Hinton真会起名字，把神经网络重新叫做深度学习，然后深度学习就火了，现在把聚类的迭代算法放到神经网络中，称之为做动态路由，不知道会不会再次重现深度学习的辉煌呢？（笑，闪～）"
   },
   "validation": {
     "passed": true,
@@ -30,8 +37,8 @@
     "converter_version": 1,
     "markdown_sha256": "9fd9a14b008d0c1e994880f95299c400da16faa5760fafe866b66710a4b29f39"
   },
-  "fetched_at": "2026-09-14T13:28:48+00:00",
+  "fetched_at": "2026-11-09T09:58:36+00:00",
   "source_snapshot_sha256": "1ea69d5a71491fe5597257b0c7231921b143c5b9d0314c1697fa5f9cde96d25d",
   "images": {},
-  "local_only": true
+  "publication_policy": "config/mirror.json"
 }

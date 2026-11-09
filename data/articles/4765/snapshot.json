@@ -6,9 +6,16 @@
     "source_url": "https://spaces.ac.cn/archives/4765",
     "date": "2018-01-06",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "信息时代",
+    "source_tags": [
+      "模型",
+      "深度学习",
+      "attention"
+    ],
+    "source_summary": "感谢Google提供的精彩的使用案例，让我等在大开眼界之余，还对Attention的认识更深一层。Google的这个成果在某种程度上体现了“大道至简”的理念，的确是NLP中不可多得的精品。本文围绕着Google的大作，班门弄斧一番，但愿能够帮助有需要的读者更好的理解Attention。最后恳请大家建议和批评。"
   },
-  "fetched_at": "2026-09-14T13:29:01+00:00",
+  "fetched_at": "2026-11-09T09:58:40+00:00",
   "source_snapshot_sha256": "1e50c55c3c1446cde86843b05b71ab162410f70eca490d77615133ea110f5562",
   "validators": {
     "etag": null,

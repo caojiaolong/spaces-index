@@ -6,7 +6,13 @@
     "source_url": "https://spaces.ac.cn/archives/4681",
     "date": "2017-11-19",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "信息时代",
+    "source_tags": [
+      "词向量",
+      "glove"
+    ],
+    "source_summary": "本文算是一次对词向量模型比较完整的探索，也算是笔者的理论强迫症的结果，幸好最后也得到了一个理论上比较好看的模型，初步治愈了我这个强迫症。而至于实验效果、应用等等，则有待日后进一步使用验证了。 本文的大多数推导，都可以模仿地去解释word2vec的skip gram模型的实验结果，读者可以尝试。事实上，word2vec的skip gram模型确实跟本文的模型有着类似的表现，包括词向量的模型性质等。 总的来说，理论与实验结合是一件很美妙的事情，当然，也是一件很辛苦的事情，因为就以上这些东西，就花了我几个月思考时间。"
   },
   "validation": {
     "passed": true,
@@ -30,8 +36,8 @@
     "converter_version": 1,
     "markdown_sha256": "5dc5233bef9d8ced7f51a80db5198ca22bbf6d2e3493b9704f0bd57809c7defa"
   },
-  "fetched_at": "2026-09-14T13:29:33+00:00",
+  "fetched_at": "2026-11-09T09:58:58+00:00",
   "source_snapshot_sha256": "a0608623130cac0aeee6812ac3a8366a2fcf082abf85c35f3e456bad8230f355",
   "images": {},
-  "local_only": true
+  "publication_policy": "config/mirror.json"
 }

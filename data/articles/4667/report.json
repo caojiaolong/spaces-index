@@ -6,7 +6,13 @@
     "source_url": "https://spaces.ac.cn/archives/4667",
     "date": "2017-11-19",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "信息时代",
+    "source_tags": [
+      "词向量",
+      "glove"
+    ],
+    "source_summary": null
   },
   "validation": {
     "passed": true,
@@ -30,8 +36,8 @@
     "converter_version": 1,
     "markdown_sha256": "b3e7e175a17cb1cd979e1f5b58de73650c4064318cf4c8a726740d7c752841a7"
   },
-  "fetched_at": "2026-09-14T13:30:06+00:00",
+  "fetched_at": "2026-11-09T09:59:15+00:00",
   "source_snapshot_sha256": "3e09752456e563259df6feb97e67b297a96ca3931c716a4c6cf05b58ff572f56",
   "images": {},
-  "local_only": true
+  "publication_policy": "config/mirror.json"
 }

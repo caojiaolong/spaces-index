@@ -6,7 +6,14 @@
     "source_url": "https://spaces.ac.cn/archives/5048",
     "date": "2018-01-28",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "物理化学",
+    "source_tags": [
+      "物理",
+      "文学",
+      "金庸"
+    ],
+    "source_summary": null
   },
   "validation": {
     "passed": true,
@@ -30,8 +37,8 @@
     "converter_version": 1,
     "markdown_sha256": "af4a9dfb45125a8d5dc7b5684d0c2b0d3692e9496d623caf1f07d8a9af5a8c72"
   },
-  "fetched_at": "2026-09-14T13:28:35+00:00",
+  "fetched_at": "2026-11-09T09:58:29+00:00",
   "source_snapshot_sha256": "515ee48733e752eed1407cbe3263326d0a18e11de397561dae17614a60d2be7d",
   "images": {},
-  "local_only": true
+  "publication_policy": "config/mirror.json"
 }

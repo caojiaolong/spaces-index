@@ -6,9 +6,16 @@
     "source_url": "https://spaces.ac.cn/archives/4733",
     "date": "2017-12-25",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "信息时代",
+    "source_tags": [
+      "模型",
+      "深度学习",
+      "损失函数"
+    ],
+    "source_summary": "什么？你得到了跟Kaiming大神一样想法的东西？不不不，本文只是对Kaiming大神的focal loss的一个介绍而已，更准确地说，是应对分类不平衡、分类难度差异的一些方案的介绍，并尽可能给出自己的看法而已。当然，本文这样的写法难免有附庸风雅、东施效颦之嫌，请读者海涵。"
   },
-  "fetched_at": "2026-09-14T13:29:14+00:00",
+  "fetched_at": "2026-11-09T09:58:47+00:00",
   "source_snapshot_sha256": "a5323718a718e4a2e82506ee8f6e0f29cbf95ebe0cfa86ff45e90de08a0a0987",
   "validators": {
     "etag": null,

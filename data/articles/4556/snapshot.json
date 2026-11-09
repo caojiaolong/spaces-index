@@ -6,9 +6,15 @@
     "source_url": "https://spaces.ac.cn/archives/4556",
     "date": "2017-08-27",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "信息时代",
+    "source_tags": [
+      "神经网络",
+      "深度学习"
+    ],
+    "source_summary": null
   },
-  "fetched_at": "2026-09-14T13:31:00+00:00",
+  "fetched_at": "2026-11-09T09:59:44+00:00",
   "source_snapshot_sha256": "d57c184bf37957053984f710459dcc4aff365aa0b6c5544b295c9e872e7398bd",
   "validators": {
     "etag": null,

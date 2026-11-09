@@ -6,7 +6,14 @@
     "source_url": "https://spaces.ac.cn/archives/4695",
     "date": "2017-11-25",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "信息时代",
+    "source_tags": [
+      "模型",
+      "概率图",
+      "crf"
+    ],
+    "source_summary": null
   },
   "validation": {
     "passed": true,
@@ -23,15 +30,15 @@
     "image_count": 0,
     "heading_count": 4,
     "code_block_count": 0,
-    "source_text_sha256": "b12e629dbe1ee38a92bc1922fbe7a251b911bc0acc2d882b1c8edab215673930",
-    "output_text_sha256": "b12e629dbe1ee38a92bc1922fbe7a251b911bc0acc2d882b1c8edab215673930",
+    "source_text_sha256": "0d3faae80dc44fe3387008e4f8a1676ccf235dcc5c757436e0b9e2bf1b0050df",
+    "output_text_sha256": "0d3faae80dc44fe3387008e4f8a1676ccf235dcc5c757436e0b9e2bf1b0050df",
     "latex_sha256": "d9e062cbfe925ddb0314f20f39ef0b765754428605bcd82c7ad932399df2a845",
-    "body_sha256": "864d8aa8e4cddb7b1ca500669c2aa85e1d7ad16bf4d3a674e5cefe8909deb9e9",
+    "body_sha256": "63d2aaf1eaf75922639e1b9cee69f5185548789f58b1d99a04c247f08580d560",
     "converter_version": 1,
-    "markdown_sha256": "acd2789eec27307851e7fdfc5101dd17599d373d422cc13b170b3ef7e0e70d32"
+    "markdown_sha256": "de2dabaab7284a2c4ff9e83a298661675102d6b908098173ad86c5b62e50a18e"
   },
-  "fetched_at": "2026-09-14T13:29:27+00:00",
-  "source_snapshot_sha256": "44e5a5e815e8e11189053d85da0d67d4014927ff3600ddd15cc3c003efba6d19",
+  "fetched_at": "2026-11-09T09:58:54+00:00",
+  "source_snapshot_sha256": "68481a5ad6adc433f341a8a1f5fbdb920581cb008ee510fcf26880e7d7e7f8ef",
   "images": {},
-  "local_only": true
+  "publication_policy": "config/mirror.json"
 }

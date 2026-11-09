@@ -1,0 +1,46 @@
+{
+  "metadata": {
+    "id": "12003",
+    "title": "让炼丹更科学一些（十一）：无调度学习率新思路",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/12003",
+    "date": "2026-11-09",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "数学研究",
+    "source_tags": [
+      "优化",
+      "学习率",
+      "优化器",
+      "sgd",
+      "炼丹"
+    ],
+    "source_summary": "本文介绍了Schedule-Free方向的一个新工作，它在原本的参数空间中新增一个维度，通过巧妙的构造，让提升前后的遗憾形式相等，然后在提升后的空间应用已有的收敛结果，在有界域与凸优化假设下，得到无需显式的学习率设置就可以自动达到最佳收敛速度的结论。"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 109,
+    "display_formula_count": 22,
+    "image_count": 0,
+    "heading_count": 8,
+    "code_block_count": 0,
+    "source_text_sha256": "539df55c3b688bccf3bcb57282de8e561c65e5a16a76cd7e5d69b4d177bd8587",
+    "output_text_sha256": "539df55c3b688bccf3bcb57282de8e561c65e5a16a76cd7e5d69b4d177bd8587",
+    "latex_sha256": "73f23f71ad3139ada29bb62c7c228be48eebdf40e6fd63903a208b2a4a11ed12",
+    "body_sha256": "c8ae87ebfc2dcc6650393ad2d71a4f06e4ab032e6a61deda4b668531da99d637",
+    "converter_version": 1,
+    "markdown_sha256": "10d3f6f95f643542a412b9fbc52abdbac567c83de0a1e01bec5963bdd692786c"
+  },
+  "fetched_at": "2026-11-09T09:58:26+00:00",
+  "source_snapshot_sha256": "78e6af9a2780c166f0c6bf7448ba271bc2ff1c80126339a6329090dc24853639",
+  "images": {},
+  "publication_policy": "config/mirror.json"
+}

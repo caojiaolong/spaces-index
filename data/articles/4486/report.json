@@ -6,7 +6,12 @@
     "source_url": "https://spaces.ac.cn/archives/4486",
     "date": "2017-07-03",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "数学研究",
+    "source_tags": [
+      "代数"
+    ],
+    "source_summary": null
   },
   "validation": {
     "passed": true,
@@ -30,8 +35,8 @@
     "converter_version": 1,
     "markdown_sha256": "5b292167df463ddfa2fdadc7d06ddb4cfaeb87aa0adca5cffc25b063dff07cd8"
   },
-  "fetched_at": "2026-09-14T13:31:48+00:00",
+  "fetched_at": "2026-11-09T09:59:52+00:00",
   "source_snapshot_sha256": "fce40e282a70ece1bc0358a745f79e9ff16f670b4f25e0ed7dd158cbb28256a5",
   "images": {},
-  "local_only": true
+  "publication_policy": "config/mirror.json"
 }

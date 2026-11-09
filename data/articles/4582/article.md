@@ -24,7 +24,7 @@ RNN分类器
 
 假如这样的一个模型可以良好地工作，那么现在考虑一个任务是：如何衡量输入$w_1,\dots,w_n$对最终的分类结果的影响的重要程度（Saliency）呢？例如假设这是一个情感分类任务，那么<u>怎么找出是哪些词对最终的分类有较为重要的影响呢</u>？本文给出了一个较为直接的思路。
 
-思路的原理很简单，因为我们是将RNN最后一步的状态向量（也就是绿色阴影所代表的向量）传递给后面的分类器进行分类的，因此最后一步的状态向量$\boldsymbol{h}_n$就是一个目标向量。而RNN是一个递推的过程，$\boldsymbol{h}_0,\boldsymbol{h}_1,\dots,\boldsymbol{h}_{n-1}$（一般$\boldsymbol{h}_0$就是全零初始化）是逐步逼近$\boldsymbol{h}_n$的过程。
+思路的原理很简单，因为我们是将RNN最后一步的状态向量（也就是绿色阴影所代表的向量）传递给后面的分类器进行分类的，因此最后一步的状态向量$\boldsymbol{h}_n$就是一个目标向量。而RNN是一个递推的过程，$\boldsymbol{h}_0,\boldsymbol{h}_1,\dots,\boldsymbol{h}_{n-1}$（一般$\boldsymbol{h}_0$就是全零初始化）是逐步逼近$\boldsymbol{h}_n$的过程。
 
 [![RNN分类器2](<https://spaces.ac.cn/usr/uploads/2017/09/382730706.png>)](<https://spaces.ac.cn/usr/uploads/2017/09/382730706.png>)
 
@@ -34,12 +34,12 @@ RNN分类器2
 $$\Vert\boldsymbol{h}_n-\boldsymbol{h}_0\Vert,\Vert\boldsymbol{h}_n-\boldsymbol{h}_1\Vert,\dots,\Vert\boldsymbol{h}_n-\boldsymbol{h}_{n-1}\Vert,0$$
 而由$\boldsymbol{h}_i$到$\boldsymbol{h}_{i+1}$，是因为多考虑了词$w_{i+1}$，造成的后果是：<u><strong>本来$\boldsymbol{h}_i$与目标向量的距离是$\Vert\boldsymbol{h}_n-\boldsymbol{h}_i\Vert$，现在距离变成了$\Vert\boldsymbol{h}_n-\boldsymbol{h}_{i+1}\Vert$</strong></u>，所以我们可以用差值
 $$\Vert\boldsymbol{h}_n-\boldsymbol{h}_{i}\Vert-\Vert\boldsymbol{h}_n-\boldsymbol{h}_{i+1}\Vert$$
-来衡量词$w_{i+1}$对最终分类所造成的影响。它可以是正的，意味着$w_{i+1}$的引入缩小了与目标的距离，因此它对完成正确分类有着促进作用；反之它也可以是负的，代表着对分类有反作用；而它的值越大，就表示作用的程度越大，所以可以用这个指标来降序排列，得到各个词的重要程度了。当然，也可以通过除以目标向量的范数，来排除量纲的影响：
+来衡量词$w_{i+1}$对最终分类所造成的影响。它可以是正的，意味着$w_{i+1}$的引入缩小了与目标的距离，因此它对完成正确分类有着促进作用；反之它也可以是负的，代表着对分类有反作用；而它的值越大，就表示作用的程度越大，所以可以用这个指标来降序排列，得到各个词的重要程度了。当然，也可以通过除以目标向量的范数，来排除量纲的影响：
 $$\frac{\Vert\boldsymbol{h}_n-\boldsymbol{h}_{i}\Vert}{\Vert\boldsymbol{h}_n\Vert}-\frac{\Vert\boldsymbol{h}_n-\boldsymbol{h}_{i+1}\Vert}{\Vert\boldsymbol{h}_n\Vert}$$
 
 ## 简单的实验
 
-除了理论说通，还要有实验才有说服力。这里还是以文本情感分类为例，下面的代码修改自文章[《文本情感分类（三）：分词 OR 不分词》](<https://spaces.ac.cn/archives/3863/>)。
+除了理论说通，还要有实验才有说服力。这里还是以文本情感分类为例，下面的代码修改自文章[《文本情感分类（三）：分词 OR 不分词》](<https://spaces.ac.cn/archives/3863/>)。
 
 
 
