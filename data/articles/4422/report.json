@@ -6,7 +6,13 @@
     "source_url": "https://spaces.ac.cn/archives/4422",
     "date": "2017-06-06",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "信息时代",
+    "source_tags": [
+      "网站",
+      "爬虫"
+    ],
+    "source_summary": null
   },
   "validation": {
     "passed": true,
@@ -30,8 +36,8 @@
     "converter_version": 1,
     "markdown_sha256": "0caa3776282924301402547e78eb9908da37b7a73fdd3b2ec37564ddedd242ad"
   },
-  "fetched_at": "2026-09-14T13:32:12+00:00",
+  "fetched_at": "2026-11-10T10:07:56+00:00",
   "source_snapshot_sha256": "d725c2e658f50b90990fc7be224a2045ba5e4d4d61f0bf8220a816f76726cff2",
   "images": {},
-  "local_only": true
+  "publication_policy": "config/mirror.json"
 }

@@ -6,7 +6,15 @@
     "source_url": "https://spaces.ac.cn/archives/4493",
     "date": "2017-07-22",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "信息时代",
+    "source_tags": [
+      "模型",
+      "深度学习",
+      "损失函数",
+      "keras"
+    ],
+    "source_summary": null
   },
   "validation": {
     "passed": true,
@@ -30,8 +38,8 @@
     "converter_version": 1,
     "markdown_sha256": "47214aeced943cdb87f269c5da448c9ca9c90341eb5870c9e82c69bd41340591"
   },
-  "fetched_at": "2026-09-14T13:31:32+00:00",
+  "fetched_at": "2026-11-10T10:07:45+00:00",
   "source_snapshot_sha256": "d3402c9bd93820dc40c1598f1fb7da288668624be4ba70b7534f394c89237e93",
   "images": {},
-  "local_only": true
+  "publication_policy": "config/mirror.json"
 }

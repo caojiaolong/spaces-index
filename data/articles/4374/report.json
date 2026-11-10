@@ -6,7 +6,13 @@
     "source_url": "https://spaces.ac.cn/archives/4374",
     "date": "2017-05-04",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "信息时代",
+    "source_tags": [
+      "深度学习",
+      "文本挖掘"
+    ],
+    "source_summary": null
   },
   "validation": {
     "passed": true,
@@ -30,8 +36,8 @@
     "converter_version": 1,
     "markdown_sha256": "3ceb9dd96cfd22fb3e1074d064e3cd0c5981f3f9eaa3d5f76af61373f3de3fe5"
   },
-  "fetched_at": "2026-09-14T13:32:41+00:00",
+  "fetched_at": "2026-11-10T10:08:11+00:00",
   "source_snapshot_sha256": "269bd9974a7255f750b7f033b127b6333f21571096f449b38651851f3beb468d",
   "images": {},
-  "local_only": true
+  "publication_policy": "config/mirror.json"
 }

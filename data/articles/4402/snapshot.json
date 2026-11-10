@@ -6,9 +6,16 @@
     "source_url": "https://spaces.ac.cn/archives/4402",
     "date": "2017-05-27",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "信息时代",
+    "source_tags": [
+      "深度学习",
+      "词向量",
+      "Word2Vec"
+    ],
+    "source_summary": "这个实验虽然不怎么严谨，但是应该可以说，在相同的训练时间下，从相似度任务来看， 感觉上random softmax与sampled softmax效果相当，nce loss的效果最差，进一步压缩迭代次数，调整参数也表明了类似结果 ，欢迎读者进一步测试。由于本文的random softmax对每一个样本都进行不同的采样，因此所需要采样的负样本数更少，并且采样更加充分。 至于其他任务的比较，只能在以后的实践中进行了。毕竟这不是发论文，我也懒得做了～"
   },
-  "fetched_at": "2026-09-14T13:32:25+00:00",
+  "fetched_at": "2026-11-10T10:08:04+00:00",
   "source_snapshot_sha256": "99a7fee0e5557b4d90173cd2563abcc19a49a8c87431262c2f9df561db1a1c09",
   "validators": {
     "etag": null,

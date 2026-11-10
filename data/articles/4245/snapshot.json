@@ -6,9 +6,17 @@
     "source_url": "https://spaces.ac.cn/archives/4245",
     "date": "2017-03-06",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "信息时代",
+    "source_tags": [
+      "分词",
+      "自然语言处理",
+      "无监督",
+      "新词发现"
+    ],
+    "source_summary": null
   },
-  "fetched_at": "2026-09-14T13:34:06+00:00",
+  "fetched_at": "2026-11-10T10:08:46+00:00",
   "source_snapshot_sha256": "d7e86e303754c54cba378dfd964a8ad4ec071ad2687441ee91174f744f9b9663",
   "validators": {
     "etag": null,

@@ -6,9 +6,17 @@
     "source_url": "https://spaces.ac.cn/archives/4222",
     "date": "2017-01-27",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "图片摄影",
+    "source_tags": [
+      "节日",
+      "星空",
+      "拍摄",
+      "家乡"
+    ],
+    "source_summary": null
   },
-  "fetched_at": "2026-09-14T13:34:19+00:00",
+  "fetched_at": "2026-11-10T10:08:57+00:00",
   "source_snapshot_sha256": "ecf4b963a789223b94123f7ee920cab40ee1402a4adadd958002976d0a26d2be",
   "validators": {
     "etag": null,

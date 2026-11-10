@@ -6,9 +6,15 @@
     "source_url": "https://spaces.ac.cn/archives/4385",
     "date": "2017-05-17",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "信息时代",
+    "source_tags": [
+      "爬虫",
+      "语料"
+    ],
+    "source_summary": null
   },
-  "fetched_at": "2026-09-14T13:32:34+00:00",
+  "fetched_at": "2026-11-10T10:08:07+00:00",
   "source_snapshot_sha256": "101f03e6431bd303df8c90a5c8d4c679a1865499c45955ff2af469086929127b",
   "validators": {
     "etag": null,

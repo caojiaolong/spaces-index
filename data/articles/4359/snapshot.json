@@ -6,9 +6,16 @@
     "source_url": "https://spaces.ac.cn/archives/4359",
     "date": "2017-04-24",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "资源共享",
+    "source_tags": [
+      "问答",
+      "语料",
+      "数据集"
+    ],
+    "source_summary": null
   },
-  "fetched_at": "2026-09-14T13:32:54+00:00",
+  "fetched_at": "2026-11-10T10:08:18+00:00",
   "source_snapshot_sha256": "57acf7ae020b4d0b767c3512d5a66a54beedf795ea103ec3fca84fd894a96d92",
   "validators": {
     "etag": null,

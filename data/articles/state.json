@@ -29,7 +29,7 @@
   },
   "4231": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:20:02+00:00",
+    "checked_at": "2026-11-10T10:08:53+00:00",
     "title": "Python的多进程编程技巧",
     "markdown_sha256": "42f6c628e1af1d51e3f2d6fa43ea07ea3a2f32efe72e962e78de1b052ad7fb25",
     "converter_version": 1
@@ -3599,35 +3599,35 @@
   },
   "4521": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:19:59+00:00",
+    "checked_at": "2026-11-10T10:07:34+00:00",
     "title": "【备忘】谈谈dropout",
     "markdown_sha256": "aa745eabb48753d7a37540e7ee17d705059a7dffafff7675abba936902d3b905",
     "converter_version": 1
   },
   "4515": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:19:59+00:00",
+    "checked_at": "2026-11-10T10:07:38+00:00",
     "title": "【不可思议的Word2Vec】6. Keras版的Word2Vec",
     "markdown_sha256": "9bc9224d7ddb75e97d12cf1dbd042386e68b34248286e76441f42ef8fb6e2276",
     "converter_version": 1
   },
   "4503": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:19:59+00:00",
+    "checked_at": "2026-11-10T10:07:42+00:00",
     "title": "基于Xception的腾讯验证码识别（样本+代码）",
     "markdown_sha256": "bc8fb479cbbaf9995ac37db29bad1e057a3dc3f56c0d7bd787727f2a427f7b91",
     "converter_version": 1
   },
   "4493": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:19:59+00:00",
+    "checked_at": "2026-11-10T10:07:45+00:00",
     "title": "Keras中自定义复杂的loss函数",
     "markdown_sha256": "47214aeced943cdb87f269c5da448c9ca9c90341eb5870c9e82c69bd41340591",
     "converter_version": 1
   },
   "4491": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:19:59+00:00",
+    "checked_at": "2026-11-10T10:07:49+00:00",
     "title": "Linux下的误删大坑与简单的恢复技巧",
     "markdown_sha256": "ff808548b73ad45916821434feba3a2fa117ea2eaf2a92aca3d499b2bc0dadf2",
     "converter_version": 1
@@ -3648,98 +3648,98 @@
   },
   "4430": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:20:00+00:00",
+    "checked_at": "2026-11-10T10:07:52+00:00",
     "title": "通用爬虫探索（三）：效果展示与代码",
     "markdown_sha256": "e8f60b8bd53b4e8bbd8e0cf6f40f757f5ef6946e97cde86cbcd7ae92243f0e8e",
     "converter_version": 1
   },
   "4422": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:20:00+00:00",
+    "checked_at": "2026-11-10T10:07:56+00:00",
     "title": "通用爬虫探索（二）：落实到论坛爬取上",
     "markdown_sha256": "0caa3776282924301402547e78eb9908da37b7a73fdd3b2ec37564ddedd242ad",
     "converter_version": 1
   },
   "4413": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:20:00+00:00",
+    "checked_at": "2026-11-10T10:08:00+00:00",
     "title": "通用爬虫探索（一）：适用一般网站的爬虫",
     "markdown_sha256": "766375854a9b64a6cb71428fa3e7a2f79da00b6b828f001eefe5fc2e0c09544c",
     "converter_version": 1
   },
   "4402": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:20:00+00:00",
+    "checked_at": "2026-11-10T10:08:04+00:00",
     "title": "【不可思议的Word2Vec】5. Tensorflow版的Word2Vec",
     "markdown_sha256": "34bda3d9dbc5b437a54ebf6590a69d0e42339bd075cc2e1dd2c6a7a0429fe31b",
     "converter_version": 1
   },
   "4385": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:20:00+00:00",
+    "checked_at": "2026-11-10T10:08:07+00:00",
     "title": "如何“扒”站？手把手教你爬百度百科～",
     "markdown_sha256": "414441a58fbe00c29dbf3580bb47cdcb5dbc5893559284637ad9ac7aba4a4850",
     "converter_version": 1
   },
   "4374": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:20:00+00:00",
+    "checked_at": "2026-11-10T10:08:11+00:00",
     "title": "记录一次半监督的情感分析",
     "markdown_sha256": "3ceb9dd96cfd22fb3e1074d064e3cd0c5981f3f9eaa3d5f76af61373f3de3fe5",
     "converter_version": 1
   },
   "4368": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:20:01+00:00",
+    "checked_at": "2026-11-10T10:08:15+00:00",
     "title": "【不可思议的Word2Vec】 4.不一样的“相似”",
     "markdown_sha256": "b95fed4f23572c9da3a69443b091de44c59779021feff718ec67b295de62fa45",
     "converter_version": 1
   },
   "4359": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:20:01+00:00",
+    "checked_at": "2026-11-10T10:08:18+00:00",
     "title": "【语料】2500万中文三元组！",
     "markdown_sha256": "207573c806fccbcf247f8440a01aaa041e8e16d88c1b3c5a20d2558bcd82c435",
     "converter_version": 1
   },
   "4356": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:20:01+00:00",
+    "checked_at": "2026-11-10T10:08:22+00:00",
     "title": "科学空间添加新域名kexue.fm",
     "markdown_sha256": "8ec49d4738a4ba4a5b9257c20294bc616f744be7a68c394a4ee00d1f3b74c93b",
     "converter_version": 1
   },
   "4338": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:20:01+00:00",
+    "checked_at": "2026-11-10T10:08:25+00:00",
     "title": "【语料】百度的中文问答数据集WebQA",
     "markdown_sha256": "840c9cf1fbae38d3d256e36cd6533f9dbf8565071a77bebe6dc05c9397e16ed9",
     "converter_version": 1
   },
   "4316": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:20:01+00:00",
+    "checked_at": "2026-11-10T10:08:29+00:00",
     "title": "【不可思议的Word2Vec】 3.提取关键词",
     "markdown_sha256": "2b38da0af6811821e738d168ae7c99e092a936bcf34fdac03187d83caaede953",
     "converter_version": 1
   },
   "4304": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:20:01+00:00",
+    "checked_at": "2026-11-10T10:08:32+00:00",
     "title": "【不可思议的Word2Vec】 2.训练好的模型",
     "markdown_sha256": "1d990dd48e7f937eaddaede105fbf7dc4bc8d243e585984febb8d4fbf0165d4d",
     "converter_version": 1
   },
   "4299": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:20:01+00:00",
+    "checked_at": "2026-11-10T10:08:36+00:00",
     "title": "【不可思议的Word2Vec】 1.数学原理",
     "markdown_sha256": "2ccb489365efda2e811b147ae06b102ad15a454349791deeb90dcfb145bf78ef",
     "converter_version": 1
   },
   "4293": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:20:01+00:00",
+    "checked_at": "2026-11-10T10:08:39+00:00",
     "title": "文本情感分类（四）：更好的损失函数",
     "markdown_sha256": "3e1e9516d4e81a8360a0685f6e77048530e66f2d5fe5b489bd2ceb5e8d73afc4",
     "converter_version": 1
@@ -3760,35 +3760,35 @@
   },
   "4256": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:20:02+00:00",
+    "checked_at": "2026-11-10T10:08:43+00:00",
     "title": "【中文分词系列】 8. 更好的新词发现算法",
     "markdown_sha256": "c4535f7880003249d67d22325c0883a8311e3436d4fe9bc3f624f04418a07962",
     "converter_version": 1
   },
   "4245": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:20:02+00:00",
+    "checked_at": "2026-11-10T10:08:46+00:00",
     "title": "【中文分词系列】 7. 深度学习分词？只需一个词典！",
     "markdown_sha256": "29a247a2c8c512f8bf362cf3edfacc8eea343246dcbbadcab621e236c9ba0a59",
     "converter_version": 1
   },
   "4233": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:20:02+00:00",
+    "checked_at": "2026-11-10T10:08:50+00:00",
     "title": "SVD分解(三)：连Word2Vec都只不过是个SVD？",
     "markdown_sha256": "32e15c7cc1281f7953f82308b90aca3f7c87022a6a33f19d3ae5709d412610ee",
     "converter_version": 1
   },
   "4222": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:20:02+00:00",
+    "checked_at": "2026-11-10T10:08:57+00:00",
     "title": "除夕试拍星空星轨～",
     "markdown_sha256": "91bd72b825305215e4c70f2683c25797b77e8821c31549cf3f1a652024469734",
     "converter_version": 1
   },
   "4216": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:20:02+00:00",
+    "checked_at": "2026-11-10T10:09:00+00:00",
     "title": "SVD分解(二)：为什么SVD意味着聚类？",
     "markdown_sha256": "fa4c6f691b046bdd973be0f35809c589b24b4e9229655155d7f795c4c6d50dbf",
     "converter_version": 1
@@ -8464,7 +8464,7 @@
   },
   "132": {
     "status": "conversion_failed",
-    "checked_at": "2026-11-09T09:59:56+00:00",
+    "checked_at": "2026-11-10T10:09:00+00:00",
     "title": "一道从小学到高中都可能考到的题目",
     "error": "Unreviewed legacy element: a<b，则有<br",
     "converter_version": 1,

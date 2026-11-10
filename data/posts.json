@@ -7571,7 +7571,8 @@
     "source_tags": [
       "深度学习"
     ],
-    "source_summary": null
+    "source_summary": null,
+    "metadata_checked_at": "2026-11-10T10:07:34+00:00"
   },
   {
     "id": "4515",
@@ -7584,7 +7585,8 @@
       "Word2Vec",
       "keras"
     ],
-    "source_summary": null
+    "source_summary": null,
+    "metadata_checked_at": "2026-11-10T10:07:38+00:00"
   },
   {
     "id": "4503",
@@ -7597,7 +7599,8 @@
       "深度学习",
       "数据集"
     ],
-    "source_summary": null
+    "source_summary": null,
+    "metadata_checked_at": "2026-11-10T10:07:42+00:00"
   },
   {
     "id": "4493",
@@ -7611,7 +7614,8 @@
       "损失函数",
       "keras"
     ],
-    "source_summary": null
+    "source_summary": null,
+    "metadata_checked_at": "2026-11-10T10:07:45+00:00"
   },
   {
     "id": "4491",
@@ -7623,7 +7627,8 @@
       "linux",
       "技巧"
     ],
-    "source_summary": null
+    "source_summary": null,
+    "metadata_checked_at": "2026-11-10T10:07:49+00:00"
   },
   {
     "id": "4486",
@@ -7662,7 +7667,8 @@
       "网站",
       "爬虫"
     ],
-    "source_summary": null
+    "source_summary": null,
+    "metadata_checked_at": "2026-11-10T10:07:52+00:00"
   },
   {
     "id": "4422",
@@ -7674,7 +7680,8 @@
       "网站",
       "爬虫"
     ],
-    "source_summary": null
+    "source_summary": null,
+    "metadata_checked_at": "2026-11-10T10:07:56+00:00"
   },
   {
     "id": "4413",
@@ -7686,7 +7693,8 @@
       "网站",
       "爬虫"
     ],
-    "source_summary": null
+    "source_summary": null,
+    "metadata_checked_at": "2026-11-10T10:08:00+00:00"
   },
   {
     "id": "4402",
@@ -7699,7 +7707,8 @@
       "词向量",
       "Word2Vec"
     ],
-    "source_summary": "这个实验虽然不怎么严谨，但是应该可以说，在相同的训练时间下，从相似度任务来看， 感觉上random softmax与sampled softmax效果相当，nce loss的效果最差，进一步压缩迭代次数，调整参数也表明了类似结果 ，欢迎读者进一步测试。由于本文的random softmax对每一个样本都进行不同的采样，因此所需要采样的负样本数更少，并且采样更加充分。 至于其他任务的比较，只能在以后的实践中进行了。毕竟这不是发论文，我也懒得做了～"
+    "source_summary": "这个实验虽然不怎么严谨，但是应该可以说，在相同的训练时间下，从相似度任务来看， 感觉上random softmax与sampled softmax效果相当，nce loss的效果最差，进一步压缩迭代次数，调整参数也表明了类似结果 ，欢迎读者进一步测试。由于本文的random softmax对每一个样本都进行不同的采样，因此所需要采样的负样本数更少，并且采样更加充分。 至于其他任务的比较，只能在以后的实践中进行了。毕竟这不是发论文，我也懒得做了～",
+    "metadata_checked_at": "2026-11-10T10:08:04+00:00"
   },
   {
     "id": "4385",
@@ -7711,7 +7720,8 @@
       "爬虫",
       "语料"
     ],
-    "source_summary": null
+    "source_summary": null,
+    "metadata_checked_at": "2026-11-10T10:08:07+00:00"
   },
   {
     "id": "4374",
@@ -7723,7 +7733,8 @@
       "深度学习",
       "文本挖掘"
     ],
-    "source_summary": null
+    "source_summary": null,
+    "metadata_checked_at": "2026-11-10T10:08:11+00:00"
   },
   {
     "id": "4368",
@@ -7736,7 +7747,8 @@
       "Word2Vec",
       "互信息"
     ],
-    "source_summary": null
+    "source_summary": null,
+    "metadata_checked_at": "2026-11-10T10:08:15+00:00"
   },
   {
     "id": "4359",
@@ -7749,7 +7761,8 @@
       "语料",
       "数据集"
     ],
-    "source_summary": null
+    "source_summary": null,
+    "metadata_checked_at": "2026-11-10T10:08:18+00:00"
   },
   {
     "id": "4356",
@@ -7760,7 +7773,8 @@
     "source_tags": [
       "网站"
     ],
-    "source_summary": null
+    "source_summary": null,
+    "metadata_checked_at": "2026-11-10T10:08:22+00:00"
   },
   {
     "id": "4338",
@@ -7773,7 +7787,8 @@
       "语料",
       "数据集"
     ],
-    "source_summary": null
+    "source_summary": null,
+    "metadata_checked_at": "2026-11-10T10:08:25+00:00"
   },
   {
     "id": "4316",
@@ -7786,7 +7801,8 @@
       "Word2Vec",
       "语言模型"
     ],
-    "source_summary": null
+    "source_summary": null,
+    "metadata_checked_at": "2026-11-10T10:08:29+00:00"
   },
   {
     "id": "4304",
@@ -7799,7 +7815,8 @@
       "Word2Vec",
       "语言模型"
     ],
-    "source_summary": null
+    "source_summary": null,
+    "metadata_checked_at": "2026-11-10T10:08:32+00:00"
   },
   {
     "id": "4299",
@@ -7812,7 +7829,8 @@
       "Word2Vec",
       "语言模型"
     ],
-    "source_summary": null
+    "source_summary": null,
+    "metadata_checked_at": "2026-11-10T10:08:36+00:00"
   },
   {
     "id": "4293",
@@ -7825,7 +7843,8 @@
       "文本挖掘",
       "损失函数"
     ],
-    "source_summary": null
+    "source_summary": null,
+    "metadata_checked_at": "2026-11-10T10:08:39+00:00"
   },
   {
     "id": "4277",
@@ -7862,7 +7881,8 @@
       "词库",
       "新词发现"
     ],
-    "source_summary": null
+    "source_summary": null,
+    "metadata_checked_at": "2026-11-10T10:08:43+00:00"
   },
   {
     "id": "4245",
@@ -7876,7 +7896,8 @@
       "无监督",
       "新词发现"
     ],
-    "source_summary": null
+    "source_summary": null,
+    "metadata_checked_at": "2026-11-10T10:08:46+00:00"
   },
   {
     "id": "4233",
@@ -7889,7 +7910,8 @@
       "SVD",
       "词向量"
     ],
-    "source_summary": null
+    "source_summary": null,
+    "metadata_checked_at": "2026-11-10T10:08:50+00:00"
   },
   {
     "id": "4231",
@@ -7901,7 +7923,8 @@
       "编程",
       "python"
     ],
-    "source_summary": null
+    "source_summary": null,
+    "metadata_checked_at": "2026-11-10T10:08:53+00:00"
   },
   {
     "id": "4222",
@@ -7915,7 +7938,8 @@
       "拍摄",
       "家乡"
     ],
-    "source_summary": null
+    "source_summary": null,
+    "metadata_checked_at": "2026-11-10T10:08:57+00:00"
   },
   {
     "id": "4216",
@@ -7927,7 +7951,8 @@
       "聚类",
       "SVD"
     ],
-    "source_summary": null
+    "source_summary": null,
+    "metadata_checked_at": "2026-11-10T10:09:00+00:00"
   },
   {
     "id": "4208",

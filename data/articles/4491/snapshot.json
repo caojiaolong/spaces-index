@@ -6,9 +6,15 @@
     "source_url": "https://spaces.ac.cn/archives/4491",
     "date": "2017-07-16",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "信息时代",
+    "source_tags": [
+      "linux",
+      "技巧"
+    ],
+    "source_summary": null
   },
-  "fetched_at": "2026-09-14T13:31:42+00:00",
+  "fetched_at": "2026-11-10T10:07:49+00:00",
   "source_snapshot_sha256": "50baef38b8caa21dcc4581cd6abdbdbfea7fcd347b977fb33c733bfd1004cae4",
   "validators": {
     "etag": null,

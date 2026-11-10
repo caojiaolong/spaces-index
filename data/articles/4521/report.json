@@ -6,7 +6,12 @@
     "source_url": "https://spaces.ac.cn/archives/4521",
     "date": "2017-08-08",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "信息时代",
+    "source_tags": [
+      "深度学习"
+    ],
+    "source_summary": null
   },
   "validation": {
     "passed": true,
@@ -30,8 +35,8 @@
     "converter_version": 1,
     "markdown_sha256": "aa745eabb48753d7a37540e7ee17d705059a7dffafff7675abba936902d3b905"
   },
-  "fetched_at": "2026-09-14T13:31:13+00:00",
+  "fetched_at": "2026-11-10T10:07:34+00:00",
   "source_snapshot_sha256": "e48ea9104ba72ee6084a12126f4709beaa6ea8646d1b6edf7beab86bf172938f",
   "images": {},
-  "local_only": true
+  "publication_policy": "config/mirror.json"
 }

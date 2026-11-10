@@ -11173,6 +11173,7 @@
       "深度学习"
     ],
     "source_summary": null,
+    "metadata_checked_at": "2026-11-10T10:07:34+00:00",
     "topics": [
       "深度学习基础",
       "优化与训练"
@@ -11193,6 +11194,7 @@
       "keras"
     ],
     "source_summary": null,
+    "metadata_checked_at": "2026-11-10T10:07:38+00:00",
     "topics": [
       "词向量与Embedding"
     ],
@@ -11213,6 +11215,7 @@
       "数据集"
     ],
     "source_summary": null,
+    "metadata_checked_at": "2026-11-10T10:07:42+00:00",
     "topics": [
       "深度学习基础",
       "工程工具",
@@ -11235,6 +11238,7 @@
       "keras"
     ],
     "source_summary": null,
+    "metadata_checked_at": "2026-11-10T10:07:45+00:00",
     "topics": [
       "深度学习基础",
       "优化与训练"
@@ -11254,6 +11258,7 @@
       "技巧"
     ],
     "source_summary": null,
+    "metadata_checked_at": "2026-11-10T10:07:49+00:00",
     "topics": [
       "工程工具"
     ],
@@ -11312,6 +11317,7 @@
       "爬虫"
     ],
     "source_summary": null,
+    "metadata_checked_at": "2026-11-10T10:07:52+00:00",
     "topics": [
       "工程工具"
     ],
@@ -11331,6 +11337,7 @@
       "爬虫"
     ],
     "source_summary": null,
+    "metadata_checked_at": "2026-11-10T10:07:56+00:00",
     "topics": [
       "工程工具"
     ],
@@ -11350,6 +11357,7 @@
       "爬虫"
     ],
     "source_summary": null,
+    "metadata_checked_at": "2026-11-10T10:08:00+00:00",
     "topics": [
       "工程工具"
     ],
@@ -11370,6 +11378,7 @@
       "Word2Vec"
     ],
     "source_summary": "这个实验虽然不怎么严谨，但是应该可以说，在相同的训练时间下，从相似度任务来看， 感觉上random softmax与sampled softmax效果相当，nce loss的效果最差，进一步压缩迭代次数，调整参数也表明了类似结果 ，欢迎读者进一步测试。由于本文的random softmax对每一个样本都进行不同的采样，因此所需要采样的负样本数更少，并且采样更加充分。 至于其他任务的比较，只能在以后的实践中进行了。毕竟这不是发论文，我也懒得做了～",
+    "metadata_checked_at": "2026-11-10T10:08:04+00:00",
     "topics": [
       "词向量与Embedding"
     ],
@@ -11389,6 +11398,7 @@
       "语料"
     ],
     "source_summary": null,
+    "metadata_checked_at": "2026-11-10T10:08:07+00:00",
     "topics": [
       "工程工具",
       "科普问答与百科"
@@ -11408,6 +11418,7 @@
       "文本挖掘"
     ],
     "source_summary": null,
+    "metadata_checked_at": "2026-11-10T10:08:11+00:00",
     "topics": [
       "深度学习基础",
       "阅读写作与随笔"
@@ -11428,6 +11439,7 @@
       "互信息"
     ],
     "source_summary": null,
+    "metadata_checked_at": "2026-11-10T10:08:15+00:00",
     "topics": [
       "词向量与Embedding"
     ],
@@ -11448,6 +11460,7 @@
       "数据集"
     ],
     "source_summary": null,
+    "metadata_checked_at": "2026-11-10T10:08:18+00:00",
     "topics": [
       "资源与站务"
     ],
@@ -11466,6 +11479,7 @@
       "网站"
     ],
     "source_summary": null,
+    "metadata_checked_at": "2026-11-10T10:08:22+00:00",
     "topics": [
       "工程工具",
       "资源与站务",
@@ -11487,6 +11501,7 @@
       "数据集"
     ],
     "source_summary": null,
+    "metadata_checked_at": "2026-11-10T10:08:25+00:00",
     "topics": [
       "资源与站务"
     ],
@@ -11507,6 +11522,7 @@
       "语言模型"
     ],
     "source_summary": null,
+    "metadata_checked_at": "2026-11-10T10:08:29+00:00",
     "topics": [
       "词向量与Embedding"
     ],
@@ -11527,6 +11543,7 @@
       "语言模型"
     ],
     "source_summary": null,
+    "metadata_checked_at": "2026-11-10T10:08:32+00:00",
     "topics": [
       "词向量与Embedding"
     ],
@@ -11547,6 +11564,7 @@
       "语言模型"
     ],
     "source_summary": null,
+    "metadata_checked_at": "2026-11-10T10:08:36+00:00",
     "topics": [
       "词向量与Embedding"
     ],
@@ -11567,6 +11585,7 @@
       "损失函数"
     ],
     "source_summary": null,
+    "metadata_checked_at": "2026-11-10T10:08:39+00:00",
     "topics": [
       "深度学习基础"
     ],
@@ -11623,6 +11642,7 @@
       "新词发现"
     ],
     "source_summary": null,
+    "metadata_checked_at": "2026-11-10T10:08:43+00:00",
     "topics": [
       "NLP与信息抽取"
     ],
@@ -11644,6 +11664,7 @@
       "新词发现"
     ],
     "source_summary": null,
+    "metadata_checked_at": "2026-11-10T10:08:46+00:00",
     "topics": [
       "NLP与信息抽取"
     ],
@@ -11664,6 +11685,7 @@
       "词向量"
     ],
     "source_summary": null,
+    "metadata_checked_at": "2026-11-10T10:08:50+00:00",
     "topics": [
       "数学工具"
     ],
@@ -11683,6 +11705,7 @@
       "python"
     ],
     "source_summary": null,
+    "metadata_checked_at": "2026-11-10T10:08:53+00:00",
     "topics": [
       "工程工具"
     ],
@@ -11703,6 +11726,7 @@
       "家乡"
     ],
     "source_summary": null,
+    "metadata_checked_at": "2026-11-10T10:08:57+00:00",
     "topics": [
       "图片摄影",
       "阅读写作与随笔"
@@ -11722,6 +11746,7 @@
       "SVD"
     ],
     "source_summary": null,
+    "metadata_checked_at": "2026-11-10T10:09:00+00:00",
     "topics": [
       "数学工具"
     ],

@@ -6,7 +6,14 @@
     "source_url": "https://spaces.ac.cn/archives/4256",
     "date": "2017-03-11",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "信息时代",
+    "source_tags": [
+      "分词",
+      "词库",
+      "新词发现"
+    ],
+    "source_summary": null
   },
   "validation": {
     "passed": true,
@@ -30,8 +37,8 @@
     "converter_version": 1,
     "markdown_sha256": "c4535f7880003249d67d22325c0883a8311e3436d4fe9bc3f624f04418a07962"
   },
-  "fetched_at": "2026-09-14T13:33:59+00:00",
+  "fetched_at": "2026-11-10T10:08:43+00:00",
   "source_snapshot_sha256": "0bcfd5cbe8f2708ef05d0fd5fcae4541e97bd32c172cc90b29b732e0e6137a36",
   "images": {},
-  "local_only": true
+  "publication_policy": "config/mirror.json"
 }
