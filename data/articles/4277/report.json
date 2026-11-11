@@ -6,7 +6,14 @@
     "source_url": "https://spaces.ac.cn/archives/4277",
     "date": "2017-03-23",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "数学研究",
+    "source_tags": [
+      "概率",
+      "优化",
+      "聚类"
+    ],
+    "source_summary": "可以看到，所谓EM算法，并不是一个特定的方法，而是一类方法，或者说一种策略，而梯度下降法本来也就是这类方法中的一个特例，完全是一回事，严格来讲不应该排除它。所谓上帝算法，其实就是迭代法，通过自身的迭代更新可以趋于完美（最优解），这如同生物进化般完美，好比造物者精心设计般，无怪乎被称为上帝算法了。"
   },
   "validation": {
     "passed": true,
@@ -30,8 +37,8 @@
     "converter_version": 1,
     "markdown_sha256": "a956c2b114d2b0d0ec2be25d7895d7cde953439e258515aeaa113344da3d83d5"
   },
-  "fetched_at": "2026-09-14T13:33:46+00:00",
+  "fetched_at": "2026-11-11T09:39:03+00:00",
   "source_snapshot_sha256": "23d30b61de371e8162d1ab2cbebedc652177b3c537a494dda3a4151254d0a4f8",
   "images": {},
-  "local_only": true
+  "publication_policy": "config/mirror.json"
 }

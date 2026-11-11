@@ -6,7 +6,14 @@
     "source_url": "https://spaces.ac.cn/archives/4208",
     "date": "2017-01-15",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "信息时代",
+    "source_tags": [
+      "深度学习",
+      "SVD",
+      "智能"
+    ],
+    "source_summary": "本文主要是以SVD为中心，探讨了SVD本身的物理意义（聚类）、SVD分解与自编码器的联系、SVD分解与智能的千丝万缕的关系以及一个相关实验。 这些内容大多数是思想性的、理解性的，即加深我们对模型和人工智能的理解，是我们在运用模型中更有“底气”一些，而不是纯粹的套模型 。"
   },
   "validation": {
     "passed": true,
@@ -30,8 +37,8 @@
     "converter_version": 1,
     "markdown_sha256": "b2750f13943f6ed162b4e8633f854022b95612de1053aaa09676373d4f3489a0"
   },
-  "fetched_at": "2026-09-14T13:34:32+00:00",
+  "fetched_at": "2026-11-11T09:39:10+00:00",
   "source_snapshot_sha256": "32c504b6ff8ddadc465cfd35adb59fb6746d5e749984e28d5e4597bb5293d3db",
   "images": {},
-  "local_only": true
+  "publication_policy": "config/mirror.json"
 }

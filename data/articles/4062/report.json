@@ -6,7 +6,14 @@
     "source_url": "https://spaces.ac.cn/archives/4062",
     "date": "2016-11-06",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "数学研究",
+    "source_tags": [
+      "积分",
+      "几何",
+      "外微分"
+    ],
+    "source_summary": null
   },
   "validation": {
     "passed": true,
@@ -30,8 +37,8 @@
     "converter_version": 1,
     "markdown_sha256": "8c8a001f6d61f12b1ad0cd4c0b4be93e9722e54be20a8ee3ec997e16abfd6c0b"
   },
-  "fetched_at": "2026-09-14T13:36:25+00:00",
+  "fetched_at": "2026-11-11T09:40:06+00:00",
   "source_snapshot_sha256": "e160b5fae8edd2dd1f587fca6f01e04f1a48bc1f6291eeaa0dcad5460b31c812",
   "images": {},
-  "local_only": true
+  "publication_policy": "config/mirror.json"
 }

@@ -6,7 +6,13 @@
     "source_url": "https://spaces.ac.cn/archives/4114",
     "date": "2016-11-29",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "信息时代",
+    "source_tags": [
+      "分词",
+      "自然语言处理"
+    ],
+    "source_summary": null
   },
   "validation": {
     "passed": true,
@@ -30,8 +36,8 @@
     "converter_version": 1,
     "markdown_sha256": "9be89c61b869a74095acdfd838b2ae6744374b8a00972c0b6082359b8117c143"
   },
-  "fetched_at": "2026-09-14T13:35:45+00:00",
+  "fetched_at": "2026-11-11T09:39:49+00:00",
   "source_snapshot_sha256": "158a75bdeea0ee98dbae3eb829a596db2be2c2232ad53b2a6c913c0fd2b22c22",
   "images": {},
-  "local_only": true
+  "publication_policy": "config/mirror.json"
 }

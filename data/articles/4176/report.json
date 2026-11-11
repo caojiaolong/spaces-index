@@ -6,7 +6,14 @@
     "source_url": "https://spaces.ac.cn/archives/4176",
     "date": "2017-01-06",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "信息时代",
+    "source_tags": [
+      "维基",
+      "语言",
+      "语料"
+    ],
+    "source_summary": null
   },
   "validation": {
     "passed": true,
@@ -30,8 +37,8 @@
     "converter_version": 1,
     "markdown_sha256": "537e05335b1603e0c74cfc0251c56add26b0bc52072ec665d65b0120eefa0244"
   },
-  "fetched_at": "2026-09-14T13:34:58+00:00",
+  "fetched_at": "2026-11-11T09:39:24+00:00",
   "source_snapshot_sha256": "34ac8c66b0221e4f2e6fb27c808493d0b868a41e32e101b710943d1d0aea9a5a",
   "images": {},
-  "local_only": true
+  "publication_policy": "config/mirror.json"
 }

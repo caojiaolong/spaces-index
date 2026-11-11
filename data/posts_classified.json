@@ -11606,6 +11606,7 @@
       "聚类"
     ],
     "source_summary": "可以看到，所谓EM算法，并不是一个特定的方法，而是一类方法，或者说一种策略，而梯度下降法本来也就是这类方法中的一个特例，完全是一回事，严格来讲不应该排除它。所谓上帝算法，其实就是迭代法，通过自身的迭代更新可以趋于完美（最优解），这如同生物进化般完美，好比造物者精心设计般，无怪乎被称为上帝算法了。",
+    "metadata_checked_at": "2026-11-11T09:39:03+00:00",
     "topics": [
       "优化与训练"
     ],
@@ -11623,6 +11624,7 @@
       "数据挖掘"
     ],
     "source_summary": null,
+    "metadata_checked_at": "2026-11-11T09:39:06+00:00",
     "topics": [
       "深度学习基础"
     ],
@@ -11767,6 +11769,7 @@
       "智能"
     ],
     "source_summary": "本文主要是以SVD为中心，探讨了SVD本身的物理意义（聚类）、SVD分解与自编码器的联系、SVD分解与智能的千丝万缕的关系以及一个相关实验。 这些内容大多数是思想性的、理解性的，即加深我们对模型和人工智能的理解，是我们在运用模型中更有“底气”一些，而不是纯粹的套模型 。",
+    "metadata_checked_at": "2026-11-11T09:39:10+00:00",
     "topics": [
       "数学工具"
     ],
@@ -11787,6 +11790,7 @@
       "自然语言处理"
     ],
     "source_summary": null,
+    "metadata_checked_at": "2026-11-11T09:39:13+00:00",
     "topics": [
       "NLP与信息抽取"
     ],
@@ -11806,6 +11810,7 @@
       "逼近"
     ],
     "source_summary": null,
+    "metadata_checked_at": "2026-11-11T09:39:17+00:00",
     "topics": [
       "数学工具"
     ],
@@ -11825,6 +11830,7 @@
       "平滑"
     ],
     "source_summary": null,
+    "metadata_checked_at": "2026-11-11T09:39:21+00:00",
     "topics": [
       "概率统计与信息论",
       "数学工具"
@@ -11845,6 +11851,7 @@
       "语料"
     ],
     "source_summary": null,
+    "metadata_checked_at": "2026-11-11T09:39:24+00:00",
     "topics": [
       "科普问答与百科"
     ],
@@ -11863,6 +11870,7 @@
       "NASA"
     ],
     "source_summary": null,
+    "metadata_checked_at": "2026-11-11T09:39:28+00:00",
     "topics": [
       "天文科普"
     ],
@@ -11881,6 +11889,7 @@
       "网站"
     ],
     "source_summary": null,
+    "metadata_checked_at": "2026-11-11T09:39:31+00:00",
     "topics": [
       "工程工具",
       "阅读写作与随笔"
@@ -11900,6 +11909,7 @@
       "备忘"
     ],
     "source_summary": null,
+    "metadata_checked_at": "2026-11-11T09:39:34+00:00",
     "topics": [
       "工程工具"
     ],
@@ -11920,6 +11930,7 @@
       "端到端"
     ],
     "source_summary": null,
+    "metadata_checked_at": "2026-11-11T09:39:38+00:00",
     "topics": [
       "深度学习基础",
       "NLP与信息抽取",
@@ -11940,6 +11951,7 @@
       "自然语言处理"
     ],
     "source_summary": null,
+    "metadata_checked_at": "2026-11-11T09:39:42+00:00",
     "topics": [
       "深度学习基础",
       "词向量与Embedding",
@@ -11962,6 +11974,7 @@
       "自然语言处理"
     ],
     "source_summary": null,
+    "metadata_checked_at": "2026-11-11T09:39:46+00:00",
     "topics": [
       "深度学习基础",
       "大模型与Transformer",
@@ -11983,6 +11996,7 @@
       "自然语言处理"
     ],
     "source_summary": null,
+    "metadata_checked_at": "2026-11-11T09:39:49+00:00",
     "topics": [
       "深度学习基础",
       "NLP与信息抽取"
@@ -12004,6 +12018,7 @@
       "深度学习"
     ],
     "source_summary": null,
+    "metadata_checked_at": "2026-11-11T09:39:53+00:00",
     "topics": [
       "深度学习基础",
       "工程工具",
@@ -12024,6 +12039,7 @@
       "测试"
     ],
     "source_summary": null,
+    "metadata_checked_at": "2026-11-11T09:39:56+00:00",
     "topics": [
       "工程工具",
       "资源与站务"
@@ -12044,6 +12060,7 @@
       "测度"
     ],
     "source_summary": null,
+    "metadata_checked_at": "2026-11-11T09:39:59+00:00",
     "topics": [
       "数学工具",
       "几何与方程",
@@ -12085,6 +12102,7 @@
       "外微分"
     ],
     "source_summary": null,
+    "metadata_checked_at": "2026-11-11T09:40:03+00:00",
     "topics": [
       "数学工具"
     ],
@@ -12105,6 +12123,7 @@
       "外微分"
     ],
     "source_summary": null,
+    "metadata_checked_at": "2026-11-11T09:40:06+00:00",
     "topics": [
       "数学工具"
     ],
@@ -12125,6 +12144,7 @@
       "外微分"
     ],
     "source_summary": null,
+    "metadata_checked_at": "2026-11-11T09:40:10+00:00",
     "topics": [
       "数学工具"
     ],
@@ -12144,6 +12164,7 @@
       "外微分"
     ],
     "source_summary": null,
+    "metadata_checked_at": "2026-11-11T09:40:13+00:00",
     "topics": [
       "数学工具"
     ],
@@ -12164,6 +12185,7 @@
       "外积"
     ],
     "source_summary": null,
+    "metadata_checked_at": "2026-11-11T09:40:17+00:00",
     "topics": [
       "数学工具"
     ],
@@ -12183,6 +12205,7 @@
       "外微分"
     ],
     "source_summary": null,
+    "metadata_checked_at": "2026-11-11T09:40:21+00:00",
     "topics": [
       "数学工具"
     ],
@@ -12204,6 +12227,7 @@
       "黎曼几何"
     ],
     "source_summary": null,
+    "metadata_checked_at": "2026-11-11T09:40:25+00:00",
     "topics": [
       "几何与方程"
     ],
@@ -12223,6 +12247,7 @@
       "黎曼几何"
     ],
     "source_summary": null,
+    "metadata_checked_at": "2026-11-11T09:40:28+00:00",
     "topics": [
       "几何与方程"
     ],

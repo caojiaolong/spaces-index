@@ -6,9 +6,14 @@
     "source_url": "https://spaces.ac.cn/archives/4271",
     "date": "2017-03-14",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "信息时代",
+    "source_tags": [
+      "数据挖掘"
+    ],
+    "source_summary": null
   },
-  "fetched_at": "2026-09-14T13:33:52+00:00",
+  "fetched_at": "2026-11-11T09:39:06+00:00",
   "source_snapshot_sha256": "6ef6eb0d3e430e3b80bb7799ec95689f05f35bea36adf28bd782b5d56cb33348",
   "validators": {
     "etag": null,

@@ -3746,14 +3746,14 @@
   },
   "4277": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:20:02+00:00",
+    "checked_at": "2026-11-11T09:39:03+00:00",
     "title": "梯度下降和EM算法：系出同源，一脉相承",
     "markdown_sha256": "a956c2b114d2b0d0ec2be25d7895d7cde953439e258515aeaa113344da3d83d5",
     "converter_version": 1
   },
   "4271": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:20:02+00:00",
+    "checked_at": "2026-11-11T09:39:06+00:00",
     "title": "泰迪杯赛前培训之数据挖掘与建模“慢谈”",
     "markdown_sha256": "86ecd2cfceba8934cc5f0132d311e2193df2bd0434451b0f0b01ea94c6781dbd",
     "converter_version": 1
@@ -3795,105 +3795,105 @@
   },
   "4208": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:20:03+00:00",
+    "checked_at": "2026-11-11T09:39:10+00:00",
     "title": "SVD分解(一)：自编码器与人工智能",
     "markdown_sha256": "b2750f13943f6ed162b4e8633f854022b95612de1053aaa09676373d4f3489a0",
     "converter_version": 1
   },
   "4195": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:20:03+00:00",
+    "checked_at": "2026-11-11T09:39:13+00:00",
     "title": "【中文分词系列】 6. 基于全卷积网络的中文分词",
     "markdown_sha256": "a41cfa6d08525a6c7ee3d8a6f46b5ab81afacf4ece2ca18173ef603ebdab4bf3",
     "converter_version": 1
   },
   "4187": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:20:03+00:00",
+    "checked_at": "2026-11-11T09:39:17+00:00",
     "title": "狄拉克函数：级数逼近",
     "markdown_sha256": "cf518a603064e50cab9460fea758924a7ded4362c71827066eda82275c10da4b",
     "converter_version": 1
   },
   "4182": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:20:03+00:00",
+    "checked_at": "2026-11-11T09:39:21+00:00",
     "title": "基于遗忘假设的平滑公式",
     "markdown_sha256": "9ffa531d430306770c9f6b35dc53c3f3b6798fd5e5d972be5a5b96da9367cf25",
     "converter_version": 1
   },
   "4176": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:20:03+00:00",
+    "checked_at": "2026-11-11T09:39:24+00:00",
     "title": "获取并处理中文维基百科语料",
     "markdown_sha256": "537e05335b1603e0c74cfc0251c56add26b0bc52072ec665d65b0120eefa0244",
     "converter_version": 1
   },
   "4173": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:20:03+00:00",
+    "checked_at": "2026-11-11T09:39:28+00:00",
     "title": "2017年全年天象",
     "markdown_sha256": "b70588c5b1aa475d6a7f2c8e7b6f408aac9f2c9619eaff9191e4e0e7b9087035",
     "converter_version": 1
   },
   "4164": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:20:04+00:00",
+    "checked_at": "2026-11-11T09:39:31+00:00",
     "title": "2017年快乐！Responsive Geekg for Typecho",
     "markdown_sha256": "6141f00dec91afead7b05e023c7a0d88dc6a5502aabf2e0402238bfdbcbf3d6e",
     "converter_version": 1
   },
   "4159": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:20:04+00:00",
+    "checked_at": "2026-11-11T09:39:34+00:00",
     "title": "【备忘】Python中断多重循环的几种思路",
     "markdown_sha256": "18bbeed4eec3d1a28fb82bc5b9f6a06d520bcd3f3e3e31e81a653e7802ee3fcb",
     "converter_version": 1
   },
   "4138": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:20:04+00:00",
+    "checked_at": "2026-11-11T09:39:38+00:00",
     "title": "端到端的腾讯验证码识别（46%正确率）",
     "markdown_sha256": "50103de05511f5b7b8aed83ef4a066aeaed2363d96c5a5105dad5930be4d428e",
     "converter_version": 1
   },
   "4122": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:20:04+00:00",
+    "checked_at": "2026-11-11T09:39:42+00:00",
     "title": "词向量与Embedding究竟是怎么回事？",
     "markdown_sha256": "f79e2788bdb57a7af4ab75092404f331f57e8fd18f137ed0ead3a3a9670bd6f3",
     "converter_version": 1
   },
   "4118": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:20:04+00:00",
+    "checked_at": "2026-11-11T09:39:46+00:00",
     "title": "基于双向GRU和语言模型的视角情感分析",
     "markdown_sha256": "7a885d84081283ba2c0980831918023edca20ae4be48e7af738cc5289fb52684",
     "converter_version": 1
   },
   "4114": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:20:04+00:00",
+    "checked_at": "2026-11-11T09:39:49+00:00",
     "title": "轻便的深度学习分词系统：NNCWS v0.1",
     "markdown_sha256": "9be89c61b869a74095acdfd838b2ae6744374b8a00972c0b6082359b8117c143",
     "converter_version": 1
   },
   "4100": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:20:04+00:00",
+    "checked_at": "2026-11-11T09:39:53+00:00",
     "title": "三顾碎纸复原：基于CNN的碎纸复原",
     "markdown_sha256": "7935b77994538270ec13912304456563160405a02c3fd44e7eedb9d89affcbc1",
     "converter_version": 1
   },
   "4096": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:20:04+00:00",
+    "checked_at": "2026-11-11T09:39:56+00:00",
     "title": "科学空间“微信群|聊天机器人”上线测试",
     "markdown_sha256": "3fe50ab45375aafd2f353ffa3e2c84e2b0af7c143bb2fefcbaa662d14914efcb",
     "converter_version": 1
   },
   "4083": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:20:04+00:00",
+    "checked_at": "2026-11-11T09:40:00+00:00",
     "title": "为什么勒贝格积分比黎曼积分强？",
     "markdown_sha256": "1d40448a553c3cd51d6f956a9c2a7591cf3f9b86482d1128ea4cc3e8cdc5f19a",
     "converter_version": 1
@@ -3907,56 +3907,56 @@
   },
   "4065": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:20:05+00:00",
+    "checked_at": "2026-11-11T09:40:03+00:00",
     "title": "【外微分浅谈】6. 微分几何",
     "markdown_sha256": "5100e56e9fdc3b99bc77af9fa24d439784b735c1dc1ba87c67c62cca0ec41764",
     "converter_version": 1
   },
   "4062": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:20:05+00:00",
+    "checked_at": "2026-11-11T09:40:06+00:00",
     "title": "【外微分浅谈】5. 几何意义",
     "markdown_sha256": "8c8a001f6d61f12b1ad0cd4c0b4be93e9722e54be20a8ee3ec997e16abfd6c0b",
     "converter_version": 1
   },
   "4059": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:20:05+00:00",
+    "checked_at": "2026-11-11T09:40:10+00:00",
     "title": "【外微分浅谈】4. 微分不微",
     "markdown_sha256": "6605f358bed9ac6add716a5a52201006ff8e1b0c11cff1031504e8bf874dd409",
     "converter_version": 1
   },
   "4058": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:20:05+00:00",
+    "checked_at": "2026-11-11T09:40:13+00:00",
     "title": "【外微分浅谈】3. 正交标架",
     "markdown_sha256": "c3b2772c00d19e2f3d9e38417ba5ae8adefbbdd9016c556f2ad36b005c01be86",
     "converter_version": 1
   },
   "4054": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:20:05+00:00",
+    "checked_at": "2026-11-11T09:40:17+00:00",
     "title": "【外微分浅谈】2. 反对称的威力",
     "markdown_sha256": "b67100e9e1a198d01919ff7b11fc739936205eabc68514f5962b53579b17b06f",
     "converter_version": 1
   },
   "4051": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:20:05+00:00",
+    "checked_at": "2026-11-11T09:40:21+00:00",
     "title": "【外微分浅谈】1. 绪论与启发",
     "markdown_sha256": "0fbaecc4fda427d8e0f0dc397f7d8bab88ddfe9b80d7dbcc5f32a086057e7044",
     "converter_version": 1
   },
   "4046": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:20:05+00:00",
+    "checked_at": "2026-11-11T09:40:25+00:00",
     "title": "【理解黎曼几何】8. 处处皆几何 (力学几何化)",
     "markdown_sha256": "4aae7170b3dc32b59c864c7fa1094266a63df12f440de84aafd988ab0bc15a86",
     "converter_version": 1
   },
   "4033": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:20:05+00:00",
+    "checked_at": "2026-11-11T09:40:28+00:00",
     "title": "【理解黎曼几何】7. 高斯-博内公式",
     "markdown_sha256": "959c882b08210f07e65b887246bc43a6f272e006aab2663f1ff6e7c90cdacfa8",
     "converter_version": 1
@@ -8464,7 +8464,7 @@
   },
   "132": {
     "status": "conversion_failed",
-    "checked_at": "2026-11-10T10:09:00+00:00",
+    "checked_at": "2026-11-11T09:40:28+00:00",
     "title": "一道从小学到高中都可能考到的题目",
     "error": "Unreviewed legacy element: a<b，则有<br",
     "converter_version": 1,

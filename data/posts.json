@@ -7857,7 +7857,8 @@
       "优化",
       "聚类"
     ],
-    "source_summary": "可以看到，所谓EM算法，并不是一个特定的方法，而是一类方法，或者说一种策略，而梯度下降法本来也就是这类方法中的一个特例，完全是一回事，严格来讲不应该排除它。所谓上帝算法，其实就是迭代法，通过自身的迭代更新可以趋于完美（最优解），这如同生物进化般完美，好比造物者精心设计般，无怪乎被称为上帝算法了。"
+    "source_summary": "可以看到，所谓EM算法，并不是一个特定的方法，而是一类方法，或者说一种策略，而梯度下降法本来也就是这类方法中的一个特例，完全是一回事，严格来讲不应该排除它。所谓上帝算法，其实就是迭代法，通过自身的迭代更新可以趋于完美（最优解），这如同生物进化般完美，好比造物者精心设计般，无怪乎被称为上帝算法了。",
+    "metadata_checked_at": "2026-11-11T09:39:03+00:00"
   },
   {
     "id": "4271",
@@ -7868,7 +7869,8 @@
     "source_tags": [
       "数据挖掘"
     ],
-    "source_summary": null
+    "source_summary": null,
+    "metadata_checked_at": "2026-11-11T09:39:06+00:00"
   },
   {
     "id": "4256",
@@ -7965,7 +7967,8 @@
       "SVD",
       "智能"
     ],
-    "source_summary": "本文主要是以SVD为中心，探讨了SVD本身的物理意义（聚类）、SVD分解与自编码器的联系、SVD分解与智能的千丝万缕的关系以及一个相关实验。 这些内容大多数是思想性的、理解性的，即加深我们对模型和人工智能的理解，是我们在运用模型中更有“底气”一些，而不是纯粹的套模型 。"
+    "source_summary": "本文主要是以SVD为中心，探讨了SVD本身的物理意义（聚类）、SVD分解与自编码器的联系、SVD分解与智能的千丝万缕的关系以及一个相关实验。 这些内容大多数是思想性的、理解性的，即加深我们对模型和人工智能的理解，是我们在运用模型中更有“底气”一些，而不是纯粹的套模型 。",
+    "metadata_checked_at": "2026-11-11T09:39:10+00:00"
   },
   {
     "id": "4195",
@@ -7978,7 +7981,8 @@
       "分词",
       "自然语言处理"
     ],
-    "source_summary": null
+    "source_summary": null,
+    "metadata_checked_at": "2026-11-11T09:39:13+00:00"
   },
   {
     "id": "4187",
@@ -7990,7 +7994,8 @@
       "级数",
       "逼近"
     ],
-    "source_summary": null
+    "source_summary": null,
+    "metadata_checked_at": "2026-11-11T09:39:17+00:00"
   },
   {
     "id": "4182",
@@ -8003,7 +8008,8 @@
       "语料",
       "平滑"
     ],
-    "source_summary": null
+    "source_summary": null,
+    "metadata_checked_at": "2026-11-11T09:39:21+00:00"
   },
   {
     "id": "4176",
@@ -8016,7 +8022,8 @@
       "语言",
       "语料"
     ],
-    "source_summary": null
+    "source_summary": null,
+    "metadata_checked_at": "2026-11-11T09:39:24+00:00"
   },
   {
     "id": "4173",
@@ -8028,7 +8035,8 @@
       "天象",
       "NASA"
     ],
-    "source_summary": null
+    "source_summary": null,
+    "metadata_checked_at": "2026-11-11T09:39:28+00:00"
   },
   {
     "id": "4164",
@@ -8040,7 +8048,8 @@
       "节日",
       "网站"
     ],
-    "source_summary": null
+    "source_summary": null,
+    "metadata_checked_at": "2026-11-11T09:39:31+00:00"
   },
   {
     "id": "4159",
@@ -8052,7 +8061,8 @@
       "python",
       "备忘"
     ],
-    "source_summary": null
+    "source_summary": null,
+    "metadata_checked_at": "2026-11-11T09:39:34+00:00"
   },
   {
     "id": "4138",
@@ -8066,7 +8076,8 @@
       "OCR",
       "端到端"
     ],
-    "source_summary": null
+    "source_summary": null,
+    "metadata_checked_at": "2026-11-11T09:39:38+00:00"
   },
   {
     "id": "4122",
@@ -8078,7 +8089,8 @@
       "深度学习",
       "自然语言处理"
     ],
-    "source_summary": null
+    "source_summary": null,
+    "metadata_checked_at": "2026-11-11T09:39:42+00:00"
   },
   {
     "id": "4118",
@@ -8092,7 +8104,8 @@
       "深度学习",
       "自然语言处理"
     ],
-    "source_summary": null
+    "source_summary": null,
+    "metadata_checked_at": "2026-11-11T09:39:46+00:00"
   },
   {
     "id": "4114",
@@ -8104,7 +8117,8 @@
       "分词",
       "自然语言处理"
     ],
-    "source_summary": null
+    "source_summary": null,
+    "metadata_checked_at": "2026-11-11T09:39:49+00:00"
   },
   {
     "id": "4100",
@@ -8118,7 +8132,8 @@
       "图像",
       "深度学习"
     ],
-    "source_summary": null
+    "source_summary": null,
+    "metadata_checked_at": "2026-11-11T09:39:53+00:00"
   },
   {
     "id": "4096",
@@ -8130,7 +8145,8 @@
       "网站",
       "测试"
     ],
-    "source_summary": null
+    "source_summary": null,
+    "metadata_checked_at": "2026-11-11T09:39:56+00:00"
   },
   {
     "id": "4083",
@@ -8143,7 +8159,8 @@
       "分析",
       "测度"
     ],
-    "source_summary": null
+    "source_summary": null,
+    "metadata_checked_at": "2026-11-11T09:39:59+00:00"
   },
   {
     "id": "4076",
@@ -8169,7 +8186,8 @@
       "黎曼几何",
       "外微分"
     ],
-    "source_summary": null
+    "source_summary": null,
+    "metadata_checked_at": "2026-11-11T09:40:03+00:00"
   },
   {
     "id": "4062",
@@ -8182,7 +8200,8 @@
       "几何",
       "外微分"
     ],
-    "source_summary": null
+    "source_summary": null,
+    "metadata_checked_at": "2026-11-11T09:40:06+00:00"
   },
   {
     "id": "4059",
@@ -8195,7 +8214,8 @@
       "对称",
       "外微分"
     ],
-    "source_summary": null
+    "source_summary": null,
+    "metadata_checked_at": "2026-11-11T09:40:10+00:00"
   },
   {
     "id": "4058",
@@ -8207,7 +8227,8 @@
       "对称",
       "外微分"
     ],
-    "source_summary": null
+    "source_summary": null,
+    "metadata_checked_at": "2026-11-11T09:40:13+00:00"
   },
   {
     "id": "4054",
@@ -8220,7 +8241,8 @@
       "外微分",
       "外积"
     ],
-    "source_summary": null
+    "source_summary": null,
+    "metadata_checked_at": "2026-11-11T09:40:17+00:00"
   },
   {
     "id": "4051",
@@ -8232,7 +8254,8 @@
       "向量",
       "外微分"
     ],
-    "source_summary": null
+    "source_summary": null,
+    "metadata_checked_at": "2026-11-11T09:40:21+00:00"
   },
   {
     "id": "4046",
@@ -8246,7 +8269,8 @@
       "作用量",
       "黎曼几何"
     ],
-    "source_summary": null
+    "source_summary": null,
+    "metadata_checked_at": "2026-11-11T09:40:25+00:00"
   },
   {
     "id": "4033",
@@ -8258,7 +8282,8 @@
       "几何",
       "黎曼几何"
     ],
-    "source_summary": null
+    "source_summary": null,
+    "metadata_checked_at": "2026-11-11T09:40:28+00:00"
   },
   {
     "id": "4026",

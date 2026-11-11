@@ -6,7 +6,13 @@
     "source_url": "https://spaces.ac.cn/archives/4096",
     "date": "2016-11-24",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "信息时代",
+    "source_tags": [
+      "网站",
+      "测试"
+    ],
+    "source_summary": null
   },
   "validation": {
     "passed": true,
@@ -32,8 +38,8 @@
     "fallback_reason": "Unsupported body element: del",
     "markdown_sha256": "3fe50ab45375aafd2f353ffa3e2c84e2b0af7c143bb2fefcbaa662d14914efcb"
   },
-  "fetched_at": "2026-09-14T13:35:58+00:00",
+  "fetched_at": "2026-11-11T09:39:56+00:00",
   "source_snapshot_sha256": "94fa90aaf6e6aeaab988e6db43f261bf4d6e6219c245d149574017ba053f8265",
   "images": {},
-  "local_only": true
+  "publication_policy": "config/mirror.json"
 }

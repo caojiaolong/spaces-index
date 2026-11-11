@@ -6,7 +6,13 @@
     "source_url": "https://spaces.ac.cn/archives/4159",
     "date": "2016-12-19",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "信息时代",
+    "source_tags": [
+      "python",
+      "备忘"
+    ],
+    "source_summary": null
   },
   "validation": {
     "passed": true,
@@ -30,8 +36,8 @@
     "converter_version": 1,
     "markdown_sha256": "18bbeed4eec3d1a28fb82bc5b9f6a06d520bcd3f3e3e31e81a653e7802ee3fcb"
   },
-  "fetched_at": "2026-09-14T13:35:18+00:00",
+  "fetched_at": "2026-11-11T09:39:34+00:00",
   "source_snapshot_sha256": "29348d4d7cf2478a9d57b409bfb4d4a1ac76c3571e339826eb824e58cb1edb6e",
   "images": {},
-  "local_only": true
+  "publication_policy": "config/mirror.json"
 }

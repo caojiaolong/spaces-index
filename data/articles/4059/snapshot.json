@@ -6,9 +6,16 @@
     "source_url": "https://spaces.ac.cn/archives/4059",
     "date": "2016-11-05",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "数学研究",
+    "source_tags": [
+      "向量",
+      "对称",
+      "外微分"
+    ],
+    "source_summary": null
   },
-  "fetched_at": "2026-09-14T13:36:34+00:00",
+  "fetched_at": "2026-11-11T09:40:10+00:00",
   "source_snapshot_sha256": "a5ac96b5c8166eda1044587fc66d513a44e575ff030d4d17c4e28061e76b28e7",
   "validators": {
     "etag": null,

@@ -6,9 +6,17 @@
     "source_url": "https://spaces.ac.cn/archives/4046",
     "date": "2016-11-02",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "数学研究",
+    "source_tags": [
+      "力学",
+      "几何",
+      "作用量",
+      "黎曼几何"
+    ],
+    "source_summary": null
   },
-  "fetched_at": "2026-09-14T13:37:11+00:00",
+  "fetched_at": "2026-11-11T09:40:25+00:00",
   "source_snapshot_sha256": "f5f46773b1707aec4ed64079dd08f05ff2bc291086be3a3f23704fc0373e7790",
   "validators": {
     "etag": null,

@@ -6,7 +6,15 @@
     "source_url": "https://spaces.ac.cn/archives/4100",
     "date": "2016-11-25",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "信息时代",
+    "source_tags": [
+      "python",
+      "建模",
+      "图像",
+      "深度学习"
+    ],
+    "source_summary": null
   },
   "validation": {
     "passed": true,
@@ -32,8 +40,8 @@
     "fallback_reason": "Standard Markdown round trip changed source structure",
     "markdown_sha256": "7935b77994538270ec13912304456563160405a02c3fd44e7eedb9d89affcbc1"
   },
-  "fetched_at": "2026-09-14T13:35:51+00:00",
+  "fetched_at": "2026-11-11T09:39:53+00:00",
   "source_snapshot_sha256": "35c9235bfed8234645d49666109e543a283d3f2c825c0a7246bd38b44a2f57b8",
   "images": {},
-  "local_only": true
+  "publication_policy": "config/mirror.json"
 }
