@@ -6,9 +6,16 @@
     "source_url": "https://spaces.ac.cn/archives/3863",
     "date": "2016-06-29",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "信息时代",
+    "source_tags": [
+      "python",
+      "深度学习",
+      "文本挖掘"
+    ],
+    "source_summary": null
   },
-  "fetched_at": "2026-09-14T13:39:16+00:00",
+  "fetched_at": "2026-11-12T10:00:06+00:00",
   "source_snapshot_sha256": "172f2c8f1891920bb26343f44712f28542feb83f38901fbb1546600c9aaa43d5",
   "validators": {
     "etag": null,

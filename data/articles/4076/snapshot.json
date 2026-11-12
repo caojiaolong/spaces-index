@@ -6,9 +6,16 @@
     "source_url": "https://spaces.ac.cn/archives/4076",
     "date": "2016-11-11",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "数学研究",
+    "source_tags": [
+      "计算",
+      "黎曼几何",
+      "外微分"
+    ],
+    "source_summary": null
   },
-  "fetched_at": "2026-09-14T13:36:11+00:00",
+  "fetched_at": "2026-11-12T09:59:02+00:00",
   "source_snapshot_sha256": "2f6e9834458ce03da0628988485f0ba8ddbb349fe4898f6da0ea2778c1ffef17",
   "validators": {
     "etag": null,

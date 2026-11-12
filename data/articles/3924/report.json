@@ -6,7 +6,15 @@
     "source_url": "https://spaces.ac.cn/archives/3924",
     "date": "2016-08-22",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "信息时代",
+    "source_tags": [
+      "概率",
+      "python",
+      "分词",
+      "自然语言处理"
+    ],
+    "source_summary": null
   },
   "validation": {
     "passed": true,
@@ -32,8 +40,8 @@
     "fallback_reason": "Standard Markdown round trip changed source structure",
     "markdown_sha256": "3ab6d1f6f03463ad8034994ca89b07924e75a652c6e1dcc3ad1ad11ce34be8bc"
   },
-  "fetched_at": "2026-09-14T13:38:26+00:00",
+  "fetched_at": "2026-11-12T09:59:37+00:00",
   "source_snapshot_sha256": "4b48d7565fef339afdfae13fb2180f57c479c4eff24172ea5ca569a825066ea0",
   "images": {},
-  "local_only": true
+  "publication_policy": "config/mirror.json"
 }

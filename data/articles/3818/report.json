@@ -6,7 +6,15 @@
     "source_url": "https://spaces.ac.cn/archives/3818",
     "date": "2016-06-24",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "信息时代",
+    "source_tags": [
+      "图像",
+      "OCR",
+      "文字",
+      "搜索"
+    ],
+    "source_summary": null
   },
   "validation": {
     "passed": true,
@@ -30,8 +38,8 @@
     "converter_version": 1,
     "markdown_sha256": "440130e0eeded02a9cc1564057a4df64558820afcc64b1bb8228289e56b854bf"
   },
-  "fetched_at": "2026-09-14T13:39:54+00:00",
+  "fetched_at": "2026-11-12T10:00:17+00:00",
   "source_snapshot_sha256": "48fea28e3bd1f356f6365c5c3d5433d43f496c8aac712495aa0fb687da9bef7c",
   "images": {},
-  "local_only": true
+  "publication_policy": "config/mirror.json"
 }

@@ -6,7 +6,16 @@
     "source_url": "https://spaces.ac.cn/archives/3922",
     "date": "2016-08-19",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "信息时代",
+    "source_tags": [
+      "概率",
+      "python",
+      "分词",
+      "HMM",
+      "自然语言处理"
+    ],
+    "source_summary": null
   },
   "validation": {
     "passed": true,
@@ -30,8 +39,8 @@
     "converter_version": 1,
     "markdown_sha256": "158ba20fdf4660a71aefef416dbea63d03aa13029438f62fbedaed47bc3d376f"
   },
-  "fetched_at": "2026-09-14T13:38:32+00:00",
+  "fetched_at": "2026-11-12T09:59:40+00:00",
   "source_snapshot_sha256": "406ad93b6682aada738c71096bead138f878af63f1cde3f72031bde64a818b36",
   "images": {},
-  "local_only": true
+  "publication_policy": "config/mirror.json"
 }

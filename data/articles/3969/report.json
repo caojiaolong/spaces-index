@@ -6,7 +6,14 @@
     "source_url": "https://spaces.ac.cn/archives/3969",
     "date": "2016-10-14",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "数学研究",
+    "source_tags": [
+      "变换",
+      "几何",
+      "黎曼几何"
+    ],
+    "source_summary": null
   },
   "validation": {
     "passed": true,
@@ -30,8 +37,8 @@
     "converter_version": 1,
     "markdown_sha256": "675e9ab409f3c4dd1b4a8aa2ef273d5e309f44b8f9ce60ce9f522aa7581a5514"
   },
-  "fetched_at": "2026-09-14T13:37:50+00:00",
+  "fetched_at": "2026-11-12T09:59:19+00:00",
   "source_snapshot_sha256": "661bfa5480337ecfd3137cd9eb26d26b414b64659fd6727100ddf736110d0405",
   "images": {},
-  "local_only": true
+  "publication_policy": "config/mirror.json"
 }

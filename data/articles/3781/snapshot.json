@@ -6,9 +6,17 @@
     "source_url": "https://spaces.ac.cn/archives/3781",
     "date": "2016-06-17",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "信息时代",
+    "source_tags": [
+      "图像",
+      "数据挖掘",
+      "OCR",
+      "文字"
+    ],
+    "source_summary": null
   },
-  "fetched_at": "2026-09-14T13:40:15+00:00",
+  "fetched_at": "2026-11-12T10:00:29+00:00",
   "source_snapshot_sha256": "1cecb7de83be3676f56c472f2395e58176b40f438b2107a52efef1814a68858f",
   "validators": {
     "etag": null,

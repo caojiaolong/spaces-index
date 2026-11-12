@@ -8173,7 +8173,8 @@
       "黎曼几何",
       "外微分"
     ],
-    "source_summary": null
+    "source_summary": null,
+    "metadata_checked_at": "2026-11-12T09:59:02+00:00"
   },
   {
     "id": "4065",
@@ -8298,7 +8299,8 @@
       "黎曼几何",
       "排列组合"
     ],
-    "source_summary": null
+    "source_summary": null,
+    "metadata_checked_at": "2026-11-12T09:59:06+00:00"
   },
   {
     "id": "4014",
@@ -8311,7 +8313,8 @@
       "曲率",
       "黎曼几何"
     ],
-    "source_summary": null
+    "source_summary": null,
+    "metadata_checked_at": "2026-11-12T09:59:09+00:00"
   },
   {
     "id": "3998",
@@ -8324,7 +8327,8 @@
       "分析",
       "黎曼几何"
     ],
-    "source_summary": null
+    "source_summary": null,
+    "metadata_checked_at": "2026-11-12T09:59:12+00:00"
   },
   {
     "id": "3977",
@@ -8337,7 +8341,8 @@
       "黎曼几何",
       "变分法"
     ],
-    "source_summary": null
+    "source_summary": null,
+    "metadata_checked_at": "2026-11-12T09:59:16+00:00"
   },
   {
     "id": "3969",
@@ -8350,7 +8355,8 @@
       "几何",
       "黎曼几何"
     ],
-    "source_summary": null
+    "source_summary": null,
+    "metadata_checked_at": "2026-11-12T09:59:19+00:00"
   },
   {
     "id": "3963",
@@ -8362,7 +8368,8 @@
       "几何",
       "黎曼几何"
     ],
-    "source_summary": null
+    "source_summary": null,
+    "metadata_checked_at": "2026-11-12T09:59:23+00:00"
   },
   {
     "id": "3956",
@@ -8376,7 +8383,8 @@
       "无监督",
       "新词发现"
     ],
-    "source_summary": null
+    "source_summary": null,
+    "metadata_checked_at": "2026-11-12T09:59:26+00:00"
   },
   {
     "id": "3942",
@@ -8390,7 +8398,8 @@
       "识别",
       "NER"
     ],
-    "source_summary": null
+    "source_summary": null,
+    "metadata_checked_at": "2026-11-12T09:59:30+00:00"
   },
   {
     "id": "3936",
@@ -8402,7 +8411,8 @@
       "openwrt",
       "路由器"
     ],
-    "source_summary": null
+    "source_summary": null,
+    "metadata_checked_at": "2026-11-12T09:59:33+00:00"
   },
   {
     "id": "3924",
@@ -8416,7 +8426,8 @@
       "分词",
       "自然语言处理"
     ],
-    "source_summary": null
+    "source_summary": null,
+    "metadata_checked_at": "2026-11-12T09:59:37+00:00"
   },
   {
     "id": "3922",
@@ -8431,7 +8442,8 @@
       "HMM",
       "自然语言处理"
     ],
-    "source_summary": null
+    "source_summary": null,
+    "metadata_checked_at": "2026-11-12T09:59:40+00:00"
   },
   {
     "id": "3913",
@@ -8445,7 +8457,8 @@
       "NLP",
       "新词发现"
     ],
-    "source_summary": null
+    "source_summary": null,
+    "metadata_checked_at": "2026-11-12T09:59:44+00:00"
   },
   {
     "id": "3908",
@@ -8460,7 +8473,8 @@
       "自然语言处理",
       "词库"
     ],
-    "source_summary": "事实上，只要涉及到查词典的操作，AC自动机都会有一定的用武之地。将AC自动机用于分词，事实上是一个非常自然的应用。我们期待有更多对中文支持更好的数据结构和算法出现，这样我们就有可能设计出更高效率的算法了。"
+    "source_summary": "事实上，只要涉及到查词典的操作，AC自动机都会有一定的用武之地。将AC自动机用于分词，事实上是一个非常自然的应用。我们期待有更多对中文支持更好的数据结构和算法出现，这样我们就有可能设计出更高效率的算法了。",
+    "metadata_checked_at": "2026-11-12T09:59:47+00:00"
   },
   {
     "id": "3902",
@@ -8471,7 +8485,8 @@
     "source_tags": [
       "python"
     ],
-    "source_summary": null
+    "source_summary": null,
+    "metadata_checked_at": "2026-11-12T09:59:51+00:00"
   },
   {
     "id": "3889",
@@ -8483,7 +8498,8 @@
       "摄动",
       "差分方程"
     ],
-    "source_summary": null
+    "source_summary": null,
+    "metadata_checked_at": "2026-11-12T09:59:55+00:00"
   },
   {
     "id": "3887",
@@ -8496,7 +8512,8 @@
       "照片",
       "运动相机"
     ],
-    "source_summary": null
+    "source_summary": null,
+    "metadata_checked_at": "2026-11-12T09:59:58+00:00"
   },
   {
     "id": "3873",
@@ -8509,7 +8526,8 @@
       "Boosting",
       "感情分类"
     ],
-    "source_summary": null
+    "source_summary": null,
+    "metadata_checked_at": "2026-11-12T10:00:02+00:00"
   },
   {
     "id": "3863",
@@ -8522,7 +8540,8 @@
       "深度学习",
       "文本挖掘"
     ],
-    "source_summary": null
+    "source_summary": null,
+    "metadata_checked_at": "2026-11-12T10:00:06+00:00"
   },
   {
     "id": "3856",
@@ -8535,7 +8554,8 @@
       "图像",
       "OCR"
     ],
-    "source_summary": null
+    "source_summary": null,
+    "metadata_checked_at": "2026-11-12T10:00:10+00:00"
   },
   {
     "id": "3854",
@@ -8589,7 +8609,8 @@
       "OCR",
       "文字"
     ],
-    "source_summary": null
+    "source_summary": null,
+    "metadata_checked_at": "2026-11-12T10:00:14+00:00"
   },
   {
     "id": "3818",
@@ -8603,7 +8624,8 @@
       "文字",
       "搜索"
     ],
-    "source_summary": null
+    "source_summary": null,
+    "metadata_checked_at": "2026-11-12T10:00:17+00:00"
   },
   {
     "id": "3802",
@@ -8617,7 +8639,8 @@
       "特征",
       "文字"
     ],
-    "source_summary": null
+    "source_summary": null,
+    "metadata_checked_at": "2026-11-12T10:00:21+00:00"
   },
   {
     "id": "3785",
@@ -8632,7 +8655,8 @@
       "聚类",
       "文字"
     ],
-    "source_summary": null
+    "source_summary": null,
+    "metadata_checked_at": "2026-11-12T10:00:25+00:00"
   },
   {
     "id": "3781",
@@ -8646,7 +8670,8 @@
       "OCR",
       "文字"
     ],
-    "source_summary": null
+    "source_summary": null,
+    "metadata_checked_at": "2026-11-12T10:00:29+00:00"
   },
   {
     "id": "3774",

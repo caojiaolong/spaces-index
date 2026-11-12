@@ -3900,7 +3900,7 @@
   },
   "4076": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:20:05+00:00",
+    "checked_at": "2026-11-12T09:59:02+00:00",
     "title": "【外微分浅谈】7. 有力的计算",
     "markdown_sha256": "f499b3ce42a45aa575dbcb51dd7cb521f7455c38caa75bdeeeb991ef74f751fd",
     "converter_version": 1
@@ -3963,133 +3963,133 @@
   },
   "4026": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:20:06+00:00",
+    "checked_at": "2026-11-12T09:59:06+00:00",
     "title": "【理解黎曼几何】6. 曲率的计数与计算(Python)",
     "markdown_sha256": "7574dfe7161868fa1c278dae5647a86f31874b8b5b817a36f8abf53691eb8b74",
     "converter_version": 1
   },
   "4014": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:20:06+00:00",
+    "checked_at": "2026-11-12T09:59:09+00:00",
     "title": "【理解黎曼几何】5. 黎曼曲率",
     "markdown_sha256": "8d2aa0f1db14605fc993952a3588a7446e1a9b641e15827930dd6d387308caf5",
     "converter_version": 1
   },
   "3998": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:20:06+00:00",
+    "checked_at": "2026-11-12T09:59:13+00:00",
     "title": "【理解黎曼几何】4. 联络和协变导数",
     "markdown_sha256": "95fc8b06493a8ebac303a28624502c5a25b3c4e20583941b8ba15d8dd890877b",
     "converter_version": 1
   },
   "3977": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:20:06+00:00",
+    "checked_at": "2026-11-12T09:59:16+00:00",
     "title": "【理解黎曼几何】3. 测地线",
     "markdown_sha256": "1a3dceafedfb7a496a445861c1b2623a7dd47c47b1d1ea42b57c8c2a09009991",
     "converter_version": 1
   },
   "3969": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:20:06+00:00",
+    "checked_at": "2026-11-12T09:59:19+00:00",
     "title": "【理解黎曼几何】2. 从勾股定理到黎曼度量",
     "markdown_sha256": "675e9ab409f3c4dd1b4a8aa2ef273d5e309f44b8f9ce60ce9f522aa7581a5514",
     "converter_version": 1
   },
   "3963": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:20:06+00:00",
+    "checked_at": "2026-11-12T09:59:23+00:00",
     "title": "【理解黎曼几何】1. 一条几何之路",
     "markdown_sha256": "e620e7e39db5c100386988b0233f91e804ddd591fbb26132faa6adcc6c63dee4",
     "converter_version": 1
   },
   "3956": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:20:07+00:00",
+    "checked_at": "2026-11-12T09:59:26+00:00",
     "title": "【中文分词系列】 5. 基于语言模型的无监督分词",
     "markdown_sha256": "0f31e756a97638592f0bf97ef69c4eaf863b7b01efa57074211478d8598bc5ab",
     "converter_version": 1
   },
   "3942": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:20:07+00:00",
+    "checked_at": "2026-11-12T09:59:30+00:00",
     "title": "基于双向LSTM和迁移学习的seq2seq核心实体识别",
     "markdown_sha256": "b052a59ed16a604b67e89d4608812e0947b52acfd4db70702477f6ab534b012d",
     "converter_version": 1
   },
   "3936": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:20:07+00:00",
+    "checked_at": "2026-11-12T09:59:33+00:00",
     "title": "进驻中山大学南校区，折腾校园网",
     "markdown_sha256": "e5af1d605cbf6ce9f9b10d510532e700b1a5827c6ee24f97ba0c9ae55cd19cc4",
     "converter_version": 1
   },
   "3924": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:20:07+00:00",
+    "checked_at": "2026-11-12T09:59:37+00:00",
     "title": "【中文分词系列】 4. 基于双向LSTM的seq2seq字标注",
     "markdown_sha256": "3ab6d1f6f03463ad8034994ca89b07924e75a652c6e1dcc3ad1ad11ce34be8bc",
     "converter_version": 1
   },
   "3922": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:20:07+00:00",
+    "checked_at": "2026-11-12T09:59:40+00:00",
     "title": "【中文分词系列】 3. 字标注法与HMM模型",
     "markdown_sha256": "158ba20fdf4660a71aefef416dbea63d03aa13029438f62fbedaed47bc3d376f",
     "converter_version": 1
   },
   "3913": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:20:08+00:00",
+    "checked_at": "2026-11-12T09:59:44+00:00",
     "title": "【中文分词系列】 2. 基于切分的新词发现",
     "markdown_sha256": "14bf4614c158f81754d8ef3c0871aa95f28834520e296c0cb52f79ccec227940",
     "converter_version": 1
   },
   "3908": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:20:08+00:00",
+    "checked_at": "2026-11-12T09:59:47+00:00",
     "title": "【中文分词系列】 1. 基于AC自动机的快速分词",
     "markdown_sha256": "034c741d420b74b93dfe38a7b515b1a052487b10a63cc6ad94e2f62816943167",
     "converter_version": 1
   },
   "3902": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:20:08+00:00",
+    "checked_at": "2026-11-12T09:59:51+00:00",
     "title": "两个惊艳的python库：tqdm和retry",
     "markdown_sha256": "83eac1db937f61b3349de89058f54614b37b89a6413c6a895cc2875033d433bf",
     "converter_version": 1
   },
   "3889": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:20:08+00:00",
+    "checked_at": "2026-11-12T09:59:55+00:00",
     "title": "差分方程的摄动法",
     "markdown_sha256": "22e9b98a0a7526afa77fd67c43be2c8005dfde160d6a20d47e8b39107317fb18",
     "converter_version": 1
   },
   "3887": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:20:08+00:00",
+    "checked_at": "2026-11-12T09:59:58+00:00",
     "title": "运动相机测试：家乡的星空",
     "markdown_sha256": "456eb17cf40addbecbb21216deab46f6ba40e13d0ab694debd4daf196f4914a9",
     "converter_version": 1
   },
   "3873": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:20:08+00:00",
+    "checked_at": "2026-11-12T10:00:02+00:00",
     "title": "从Boosting学习到神经网络：看山是山？",
     "markdown_sha256": "f2428a85cff9620e8d352e59b487c4502077b288caeb095310614ffb02e9d839",
     "converter_version": 1
   },
   "3863": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:20:08+00:00",
+    "checked_at": "2026-11-12T10:00:06+00:00",
     "title": "文本情感分类（三）：分词 OR 不分词",
     "markdown_sha256": "1e65d55a170733fcd1d48564a7b20b0c1876b90da81bfdde6b1b11f51d4daee7",
     "converter_version": 1
   },
   "3856": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:20:08+00:00",
+    "checked_at": "2026-11-12T10:00:10+00:00",
     "title": "OCR技术浅探：9. 代码共享(完)",
     "markdown_sha256": "25237ea796820d07d23a155de172a9cee7c9b031ce0ba75628a00367b8c0f07d",
     "converter_version": 1
@@ -4117,35 +4117,35 @@
   },
   "3823": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:20:09+00:00",
+    "checked_at": "2026-11-12T10:00:14+00:00",
     "title": "OCR技术浅探：5. 文本切割",
     "markdown_sha256": "ef1897e154d02b332cdd9a19160bcb297330792e3022dcee0473356db9a2c9ac",
     "converter_version": 1
   },
   "3818": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:20:09+00:00",
+    "checked_at": "2026-11-12T10:00:17+00:00",
     "title": "OCR技术浅探：4. 文字定位",
     "markdown_sha256": "440130e0eeded02a9cc1564057a4df64558820afcc64b1bb8228289e56b854bf",
     "converter_version": 1
   },
   "3802": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:20:09+00:00",
+    "checked_at": "2026-11-12T10:00:22+00:00",
     "title": "OCR技术浅探：3. 特征提取(2)",
     "markdown_sha256": "06516b858eded6c2f59fd27e87138336cdef02929ac268936f178947903f5ab1",
     "converter_version": 1
   },
   "3785": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:20:09+00:00",
+    "checked_at": "2026-11-12T10:00:25+00:00",
     "title": "OCR技术浅探：3. 特征提取(1)",
     "markdown_sha256": "cd504e33bd3f58b623217596d9b8d2e968ae6963a586eae770fa97471cfe63e3",
     "converter_version": 1
   },
   "3781": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:20:09+00:00",
+    "checked_at": "2026-11-12T10:00:29+00:00",
     "title": "OCR技术浅探：2. 背景与假设",
     "markdown_sha256": "5e767c8d60831acb90444a3f0ebc7af4cb1e57ecf863993b28e6fc766a7b096a",
     "converter_version": 1
@@ -8464,7 +8464,7 @@
   },
   "132": {
     "status": "conversion_failed",
-    "checked_at": "2026-11-11T09:40:28+00:00",
+    "checked_at": "2026-11-12T10:00:29+00:00",
     "title": "一道从小学到高中都可能考到的题目",
     "error": "Unreviewed legacy element: a<b，则有<br",
     "converter_version": 1,

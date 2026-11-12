@@ -6,9 +6,15 @@
     "source_url": "https://spaces.ac.cn/archives/3936",
     "date": "2016-09-05",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "信息时代",
+    "source_tags": [
+      "openwrt",
+      "路由器"
+    ],
+    "source_summary": null
   },
-  "fetched_at": "2026-09-14T13:38:19+00:00",
+  "fetched_at": "2026-11-12T09:59:33+00:00",
   "source_snapshot_sha256": "2425f25b3aa561adf820f44eb5cac24a1925b0116a18fda46f06eee20deecad3",
   "validators": {
     "etag": null,

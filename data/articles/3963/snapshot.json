@@ -6,9 +6,15 @@
     "source_url": "https://spaces.ac.cn/archives/3963",
     "date": "2016-10-14",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "数学研究",
+    "source_tags": [
+      "几何",
+      "黎曼几何"
+    ],
+    "source_summary": null
   },
-  "fetched_at": "2026-09-14T13:37:56+00:00",
+  "fetched_at": "2026-11-12T09:59:23+00:00",
   "source_snapshot_sha256": "f741ae4c0442ca1fdb95c50e9b87d5ab9d550d24bfb5ef8815f3bf4c943730d1",
   "validators": {
     "etag": null,

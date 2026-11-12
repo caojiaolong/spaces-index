@@ -6,7 +6,14 @@
     "source_url": "https://spaces.ac.cn/archives/3998",
     "date": "2016-10-16",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "数学研究",
+    "source_tags": [
+      "几何",
+      "分析",
+      "黎曼几何"
+    ],
+    "source_summary": null
   },
   "validation": {
     "passed": true,
@@ -30,8 +37,8 @@
     "converter_version": 1,
     "markdown_sha256": "95fc8b06493a8ebac303a28624502c5a25b3c4e20583941b8ba15d8dd890877b"
   },
-  "fetched_at": "2026-09-14T13:37:37+00:00",
+  "fetched_at": "2026-11-12T09:59:13+00:00",
   "source_snapshot_sha256": "2fcb4d53f86f7926b9448a8ace603c9c501e6c0e4156ffe9d0c18ce9a5de13b0",
   "images": {},
-  "local_only": true
+  "publication_policy": "config/mirror.json"
 }
