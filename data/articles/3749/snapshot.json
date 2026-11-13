@@ -6,9 +6,14 @@
     "source_url": "https://spaces.ac.cn/archives/3749",
     "date": "2016-05-30",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "数学研究",
+    "source_tags": [
+      "路径积分"
+    ],
+    "source_summary": null
   },
-  "fetched_at": "2026-09-14T13:40:58+00:00",
+  "fetched_at": "2026-11-13T09:47:40+00:00",
   "source_snapshot_sha256": "e838bb10cf9548386975c57754db594000ad3c155540ea90024c727f76eac279",
   "validators": {
     "etag": null,

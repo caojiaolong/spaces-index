@@ -6,7 +6,14 @@
     "source_url": "https://spaces.ac.cn/archives/3854",
     "date": "2016-06-26",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "信息时代",
+    "source_tags": [
+      "模型",
+      "图像",
+      "OCR"
+    ],
+    "source_summary": null
   },
   "validation": {
     "passed": true,
@@ -30,8 +37,8 @@
     "converter_version": 1,
     "markdown_sha256": "453c4d3318292996d38d8f3b423a9236c5cee70e8c0f9b451701bcd177675510"
   },
-  "fetched_at": "2026-09-14T13:39:28+00:00",
+  "fetched_at": "2026-11-13T09:47:12+00:00",
   "source_snapshot_sha256": "815ec93508a7de67e38738c447835538908d12b621fdbd1637313e45245464b5",
   "images": {},
-  "local_only": true
+  "publication_policy": "config/mirror.json"
 }

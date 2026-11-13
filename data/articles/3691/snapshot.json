@@ -6,9 +6,14 @@
     "source_url": "https://spaces.ac.cn/archives/3691",
     "date": "2016-03-29",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "千奇百怪",
+    "source_tags": [
+      "网络"
+    ],
+    "source_summary": null
   },
-  "fetched_at": "2026-09-14T13:41:53+00:00",
+  "fetched_at": "2026-11-13T09:48:04+00:00",
   "source_snapshot_sha256": "8136893d751043bbee00b590ad5b2a05c66a991d71d245db2e6ec05d5ece0b69",
   "validators": {
     "etag": null,

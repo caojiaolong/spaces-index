@@ -8568,7 +8568,8 @@
       "图像",
       "OCR"
     ],
-    "source_summary": null
+    "source_summary": null,
+    "metadata_checked_at": "2026-11-13T09:47:12+00:00"
   },
   {
     "id": "3842",
@@ -8582,7 +8583,8 @@
       "语言",
       "动态规划"
     ],
-    "source_summary": null
+    "source_summary": null,
+    "metadata_checked_at": "2026-11-13T09:47:16+00:00"
   },
   {
     "id": "3831",
@@ -8596,7 +8598,8 @@
       "OCR",
       "文字"
     ],
-    "source_summary": null
+    "source_summary": null,
+    "metadata_checked_at": "2026-11-13T09:47:19+00:00"
   },
   {
     "id": "3823",
@@ -8684,7 +8687,8 @@
       "数据挖掘",
       "OCR"
     ],
-    "source_summary": null
+    "source_summary": null,
+    "metadata_checked_at": "2026-11-13T09:47:22+00:00"
   },
   {
     "id": "3766",
@@ -8698,7 +8702,8 @@
       "路径积分",
       "金融"
     ],
-    "source_summary": null
+    "source_summary": null,
+    "metadata_checked_at": "2026-11-13T09:47:26+00:00"
   },
   {
     "id": "3762",
@@ -8711,7 +8716,8 @@
       "路径积分",
       "随机"
     ],
-    "source_summary": null
+    "source_summary": null,
+    "metadata_checked_at": "2026-11-13T09:47:29+00:00"
   },
   {
     "id": "3757",
@@ -8724,7 +8730,8 @@
       "路径积分",
       "费曼"
     ],
-    "source_summary": null
+    "source_summary": null,
+    "metadata_checked_at": "2026-11-13T09:47:33+00:00"
   },
   {
     "id": "3750",
@@ -8736,7 +8743,8 @@
       "路径积分",
       "随机游走"
     ],
-    "source_summary": null
+    "source_summary": null,
+    "metadata_checked_at": "2026-11-13T09:47:36+00:00"
   },
   {
     "id": "3749",
@@ -8747,7 +8755,8 @@
     "source_tags": [
       "路径积分"
     ],
-    "source_summary": null
+    "source_summary": null,
+    "metadata_checked_at": "2026-11-13T09:47:40+00:00"
   },
   {
     "id": "3739",
@@ -8760,7 +8769,8 @@
       "相对论",
       "力学"
     ],
-    "source_summary": null
+    "source_summary": null,
+    "metadata_checked_at": "2026-11-13T09:47:43+00:00"
   },
   {
     "id": "3735",
@@ -8772,7 +8782,8 @@
       "路径积分",
       "数据挖掘"
     ],
-    "source_summary": null
+    "source_summary": null,
+    "metadata_checked_at": "2026-11-13T09:47:46+00:00"
   },
   {
     "id": "3731",
@@ -8785,7 +8796,8 @@
       "积分",
       "分析"
     ],
-    "source_summary": null
+    "source_summary": null,
+    "metadata_checked_at": "2026-11-13T09:47:50+00:00"
   },
   {
     "id": "3728",
@@ -8797,7 +8809,8 @@
       "linux",
       "路由器"
     ],
-    "source_summary": null
+    "source_summary": null,
+    "metadata_checked_at": "2026-11-13T09:47:53+00:00"
   },
   {
     "id": "3696",
@@ -8810,7 +8823,8 @@
       "差分方程",
       "渐近"
     ],
-    "source_summary": null
+    "source_summary": null,
+    "metadata_checked_at": "2026-11-13T09:47:57+00:00"
   },
   {
     "id": "3692",
@@ -8822,7 +8836,8 @@
       "路径积分",
       "费曼"
     ],
-    "source_summary": null
+    "source_summary": null,
+    "metadata_checked_at": "2026-11-13T09:48:00+00:00"
   },
   {
     "id": "3691",
@@ -8833,7 +8848,8 @@
     "source_tags": [
       "网络"
     ],
-    "source_summary": null
+    "source_summary": null,
+    "metadata_checked_at": "2026-11-13T09:48:04+00:00"
   },
   {
     "id": "3680",
@@ -8845,7 +8861,8 @@
       "级数",
       "欧拉数学"
     ],
-    "source_summary": null
+    "source_summary": null,
+    "metadata_checked_at": "2026-11-13T09:48:07+00:00"
   },
   {
     "id": "3651",
@@ -8857,7 +8874,8 @@
       "openwrt",
       "路由器"
     ],
-    "source_summary": null
+    "source_summary": null,
+    "metadata_checked_at": "2026-11-13T09:48:10+00:00"
   },
   {
     "id": "3644",
@@ -8869,7 +8887,8 @@
       "openwrt",
       "路由器"
     ],
-    "source_summary": null
+    "source_summary": null,
+    "metadata_checked_at": "2026-11-13T09:48:14+00:00"
   },
   {
     "id": "3641",
@@ -8893,7 +8912,8 @@
       "信息",
       "熵"
     ],
-    "source_summary": null
+    "source_summary": null,
+    "metadata_checked_at": "2026-11-13T09:48:17+00:00"
   },
   {
     "id": "3630",
@@ -8906,7 +8926,8 @@
       "积分",
       "极值"
     ],
-    "source_summary": null
+    "source_summary": null,
+    "metadata_checked_at": "2026-11-13T09:48:21+00:00"
   },
   {
     "id": "3604",
@@ -8920,7 +8941,8 @@
       "openwrt",
       "路由器"
     ],
-    "source_summary": null
+    "source_summary": null,
+    "metadata_checked_at": "2026-11-13T09:48:25+00:00"
   },
   {
     "id": "3594",
@@ -8932,7 +8954,8 @@
       "python",
       "爬虫"
     ],
-    "source_summary": null
+    "source_summary": null,
+    "metadata_checked_at": "2026-11-13T09:48:28+00:00"
   },
   {
     "id": "3587",
@@ -8946,7 +8969,8 @@
       "数据挖掘",
       "爱好"
     ],
-    "source_summary": null
+    "source_summary": null,
+    "metadata_checked_at": "2026-11-13T09:48:31+00:00"
   },
   {
     "id": "3582",
@@ -8959,7 +8983,8 @@
       "路径积分",
       "费曼"
     ],
-    "source_summary": null
+    "source_summary": null,
+    "metadata_checked_at": "2026-11-13T09:48:35+00:00"
   },
   {
     "id": "4171",

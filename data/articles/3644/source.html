@@ -54,7 +54,7 @@ POST_SCNUNET()
         if [ ${#net_test} -lt 2 ] ;
         then
                 url=`echo $web|awk -F "href=\'" '{print $2}'|awk -F "\'" '{print $1}'`
-                url=${url/index.jsp?/userV2.do?method=login&amp;param=ture&amp;}
+                url=${url/index.jsp?/userV2.do?method=login¶m=ture&amp;}
                 wget $url --post-data 'username=XXXXXX&amp;pwd=XXXXXX' --no-check-certificate -q -O-
                 sleep 5
         else

@@ -6,9 +6,16 @@
     "source_url": "https://spaces.ac.cn/archives/3582",
     "date": "2016-01-09",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "物理化学",
+    "source_tags": [
+      "节日",
+      "路径积分",
+      "费曼"
+    ],
+    "source_summary": null
   },
-  "fetched_at": "2026-09-14T13:43:01+00:00",
+  "fetched_at": "2026-11-13T09:48:35+00:00",
   "source_snapshot_sha256": "9b25987b791234fd6c1a5b86a44a8c9cf866812bfb43463f7ff2cef734557fc5",
   "validators": {
     "etag": null,

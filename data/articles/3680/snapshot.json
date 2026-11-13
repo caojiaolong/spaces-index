@@ -6,9 +6,15 @@
     "source_url": "https://spaces.ac.cn/archives/3680",
     "date": "2016-03-20",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "数学研究",
+    "source_tags": [
+      "级数",
+      "欧拉数学"
+    ],
+    "source_summary": null
   },
-  "fetched_at": "2026-09-14T13:42:00+00:00",
+  "fetched_at": "2026-11-13T09:48:07+00:00",
   "source_snapshot_sha256": "45813f626a685961ae857a35cc56f15db643a7c531182bfb96f938613fce15f6",
   "validators": {
     "etag": null,

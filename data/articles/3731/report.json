@@ -6,7 +6,14 @@
     "source_url": "https://spaces.ac.cn/archives/3731",
     "date": "2016-04-15",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "数学研究",
+    "source_tags": [
+      "级数",
+      "积分",
+      "分析"
+    ],
+    "source_summary": null
   },
   "validation": {
     "passed": true,
@@ -30,8 +37,8 @@
     "converter_version": 1,
     "markdown_sha256": "278dcdf4c622333cdbb4d16a992b845383f9a1b23ddb3ad4a57d83eae2190b76"
   },
-  "fetched_at": "2026-09-14T13:41:22+00:00",
+  "fetched_at": "2026-11-13T09:47:50+00:00",
   "source_snapshot_sha256": "fc2af29d9c66c56419f947c3eae651f80e39292863cd254dd69599a7450f95b5",
   "images": {},
-  "local_only": true
+  "publication_policy": "config/mirror.json"
 }

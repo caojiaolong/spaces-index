@@ -6,7 +6,14 @@
     "source_url": "https://spaces.ac.cn/archives/3757",
     "date": "2016-06-02",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "数学研究",
+    "source_tags": [
+      "微分方程",
+      "路径积分",
+      "费曼"
+    ],
+    "source_summary": null
   },
   "validation": {
     "passed": true,
@@ -30,8 +37,8 @@
     "converter_version": 1,
     "markdown_sha256": "628e0e87aa5339d3411e6309a8fe228a2793b95a0ced14711c37fa63b8406b4f"
   },
-  "fetched_at": "2026-09-14T13:40:43+00:00",
+  "fetched_at": "2026-11-13T09:47:33+00:00",
   "source_snapshot_sha256": "264b9c31370119ecdc367d9cbcda61e3c78bea8057cda7fd48d1f36096be09d5",
   "images": {},
-  "local_only": true
+  "publication_policy": "config/mirror.json"
 }

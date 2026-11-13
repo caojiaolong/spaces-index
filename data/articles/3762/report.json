@@ -6,7 +6,14 @@
     "source_url": "https://spaces.ac.cn/archives/3762",
     "date": "2016-06-09",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "数学研究",
+    "source_tags": [
+      "微分方程",
+      "路径积分",
+      "随机"
+    ],
+    "source_summary": null
   },
   "validation": {
     "passed": true,
@@ -30,8 +37,8 @@
     "converter_version": 1,
     "markdown_sha256": "3b4dbedb79ee8c014831758fd1c6e42a69b13c3b69b47c6777eafbfe186e52ea"
   },
-  "fetched_at": "2026-09-14T13:40:36+00:00",
+  "fetched_at": "2026-11-13T09:47:29+00:00",
   "source_snapshot_sha256": "cc229b6e1dc383c6b344f467b9a46a88519310450a577948ed5732bf3c29fd11",
   "images": {},
-  "local_only": true
+  "publication_policy": "config/mirror.json"
 }

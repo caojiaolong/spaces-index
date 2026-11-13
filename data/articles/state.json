@@ -4096,21 +4096,21 @@
   },
   "3854": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:20:09+00:00",
+    "checked_at": "2026-11-13T09:47:12+00:00",
     "title": "OCR技术浅探：8. 综合评估",
     "markdown_sha256": "453c4d3318292996d38d8f3b423a9236c5cee70e8c0f9b451701bcd177675510",
     "converter_version": 1
   },
   "3842": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:20:09+00:00",
+    "checked_at": "2026-11-13T09:47:16+00:00",
     "title": "OCR技术浅探：7. 语言模型",
     "markdown_sha256": "efc657a203a37787de420639a2ac0635ec57885dc4038bd6b3ef9730dbae9b0f",
     "converter_version": 1
   },
   "3831": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:20:09+00:00",
+    "checked_at": "2026-11-13T09:47:19+00:00",
     "title": "OCR技术浅探：6. 光学识别",
     "markdown_sha256": "37657579f09f97f2c7d209f5c4a01f4c55c602ecd706070258f94fc3ad2b977a",
     "converter_version": 1
@@ -4152,114 +4152,114 @@
   },
   "3774": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:20:10+00:00",
+    "checked_at": "2026-11-13T09:47:23+00:00",
     "title": "OCR技术浅探：1. 全文简述",
     "markdown_sha256": "1646887eb09eb9e5e2166a04b9ccd06bca9dc827f0ecb8eaf157e92cf053d3f5",
     "converter_version": 1
   },
   "3766": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:20:10+00:00",
+    "checked_at": "2026-11-13T09:47:26+00:00",
     "title": "路径积分系列：5.例子和综述",
     "markdown_sha256": "c8719b61c0850254e31676bf1f55d5ba021bf66dfcd282e300ed091424938b18",
     "converter_version": 1
   },
   "3762": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:20:10+00:00",
+    "checked_at": "2026-11-13T09:47:29+00:00",
     "title": "路径积分系列：4.随机微分方程",
     "markdown_sha256": "3b4dbedb79ee8c014831758fd1c6e42a69b13c3b69b47c6777eafbfe186e52ea",
     "converter_version": 1
   },
   "3757": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:20:10+00:00",
+    "checked_at": "2026-11-13T09:47:33+00:00",
     "title": "路径积分系列：3.路径积分",
     "markdown_sha256": "628e0e87aa5339d3411e6309a8fe228a2793b95a0ced14711c37fa63b8406b4f",
     "converter_version": 1
   },
   "3750": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:20:10+00:00",
+    "checked_at": "2026-11-13T09:47:36+00:00",
     "title": "路径积分系列：2.随机游走模型",
     "markdown_sha256": "98f4dba1787915753d4c94c70e5bc3ce689e484c9582157e14096acc05f7de36",
     "converter_version": 1
   },
   "3749": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:20:10+00:00",
+    "checked_at": "2026-11-13T09:47:40+00:00",
     "title": "路径积分系列：1.我的毕业论文",
     "markdown_sha256": "cc82c63301a54916bbef991692c0f1fd62d66b8712fef9704b8184049b7ef8d4",
     "converter_version": 1
   },
   "3739": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:20:10+00:00",
+    "checked_at": "2026-11-13T09:47:43+00:00",
     "title": "调侃：万有引力与爱因斯坦的理论",
     "markdown_sha256": "63a3765ae29b4a3339a50e657964c7b144c1141ab790fdd9dc8b191fcb25bb97",
     "converter_version": 1
   },
   "3735": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:20:10+00:00",
+    "checked_at": "2026-11-13T09:47:46+00:00",
     "title": "Coming Back...",
     "markdown_sha256": "22c874100690e169f7b6e54913112c1b9c40d78474a637aa1a6ad83c2a7ead20",
     "converter_version": 1
   },
   "3731": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:20:11+00:00",
+    "checked_at": "2026-11-13T09:47:50+00:00",
     "title": "斯特灵(stirling)公式与渐近级数",
     "markdown_sha256": "278dcdf4c622333cdbb4d16a992b845383f9a1b23ddb3ad4a57d83eae2190b76",
     "converter_version": 1
   },
   "3728": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:20:11+00:00",
+    "checked_at": "2026-11-13T09:47:53+00:00",
     "title": "【备忘】用树莓派3做无线路由器",
     "markdown_sha256": "d6318826b9aa6f46f468695d1774f9afe9e4a22443fcdbdcb92ba919d624939c",
     "converter_version": 1
   },
   "3696": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:20:11+00:00",
+    "checked_at": "2026-11-13T09:47:57+00:00",
     "title": "一个非线性差分方程的隐函数解",
     "markdown_sha256": "0b3315f6b1857f50a0edbbb9f226f3c387cc54f99ef4a27768630224265e08ed",
     "converter_version": 1
   },
   "3692": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:20:11+00:00",
+    "checked_at": "2026-11-13T09:48:00+00:00",
     "title": "《量子力学与路径积分》习题解答V0.5",
     "markdown_sha256": "ca3bb3e4ab322195789e46fd7fad9205b5297e8b9e2a827364465ced5d640eca",
     "converter_version": 1
   },
   "3691": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:20:11+00:00",
+    "checked_at": "2026-11-13T09:48:04+00:00",
     "title": "【备忘】电脑远程控制手机的解决方案",
     "markdown_sha256": "e4f23b36884e58a14828d43ea0c1e436a152d13ba0bc4a713347be99e7f92f67",
     "converter_version": 1
   },
   "3680": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:20:11+00:00",
+    "checked_at": "2026-11-13T09:48:07+00:00",
     "title": "[欧拉数学]伯努利级数及相关级数的总结",
     "markdown_sha256": "d62822821ee37eda562f6cdcf8aaae224b4796cac384860dff23c6a1701e83fa",
     "converter_version": 1
   },
   "3651": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:20:11+00:00",
+    "checked_at": "2026-11-13T09:48:11+00:00",
     "title": "通过ssh动态端口转发共享校园资源（附带干货）",
     "markdown_sha256": "3532052ef5a4349353474da0beb7e07e9db757f505e602269cab557a4a09703d",
     "converter_version": 1
   },
   "3644": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:20:11+00:00",
+    "checked_at": "2026-11-13T09:48:14+00:00",
     "title": "Openwrt自动扫描WiFi并连接中继",
-    "markdown_sha256": "21ae50ad0ca8afd3596bc6d418633c6b63d6b29652e31324012b80e6f7b70402",
+    "markdown_sha256": "e3277a1489b1d2428707071b78ffc0f57f60770d4f7c7f1e73fcb460c4ad4e1e",
     "converter_version": 1
   },
   "3641": {
@@ -4271,42 +4271,42 @@
   },
   "3638": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:20:12+00:00",
+    "checked_at": "2026-11-13T09:48:17+00:00",
     "title": "熵的形象来源与熵的妙用",
     "markdown_sha256": "e137960d89e14d63798e4637f17a7259a1099a4f04baaa74cd689db707cd26ee",
     "converter_version": 1
   },
   "3630": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:20:12+00:00",
+    "checked_at": "2026-11-13T09:48:21+00:00",
     "title": "积分估计的极值原理——变分原理的初级版本",
     "markdown_sha256": "4ae1ced8467794cefc397453576444426f35e9316ebd577bba2608738e2a22dc",
     "converter_version": 1
   },
   "3604": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:20:12+00:00",
+    "checked_at": "2026-11-13T09:48:25+00:00",
     "title": "年三十折腾极路由之SSH反向代理",
     "markdown_sha256": "42d4d1ff2f1d88e7d6e97229fb43fedc8f508a179c3b0db7952c0376d9b5d3a9",
     "converter_version": 1
   },
   "3594": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:20:12+00:00",
+    "checked_at": "2026-11-13T09:48:28+00:00",
     "title": "简单的迅雷VIP账号获取器（Python）",
     "markdown_sha256": "f2a8cea3404ad7dfa16cde1b04c64f3b0647a0ae90c55762513d80a4b068faf2",
     "converter_version": 1
   },
   "3587": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:20:12+00:00",
+    "checked_at": "2026-11-13T09:48:31+00:00",
     "title": "当大数据进入厨房：让大数据教你做菜！",
     "markdown_sha256": "79955cdc39a4ba6eea91787f9fc4f9e1adbe8823fb94cf9f3e8da4016c783c3d",
     "converter_version": 1
   },
   "3582": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:20:12+00:00",
+    "checked_at": "2026-11-13T09:48:35+00:00",
     "title": "《量子力学与路径积分》习题解答V0.4",
     "markdown_sha256": "752b603c4a7805282931c3204bd2bedab97c7726c0a41b5d0646d0fb3fc8b6fb",
     "converter_version": 1
@@ -8464,7 +8464,7 @@
   },
   "132": {
     "status": "conversion_failed",
-    "checked_at": "2026-11-12T10:00:29+00:00",
+    "checked_at": "2026-11-13T09:48:35+00:00",
     "title": "一道从小学到高中都可能考到的题目",
     "error": "Unreviewed legacy element: a<b，则有<br",
     "converter_version": 1,

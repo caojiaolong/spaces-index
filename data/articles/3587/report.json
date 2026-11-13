@@ -6,7 +6,15 @@
     "source_url": "https://spaces.ac.cn/archives/3587",
     "date": "2016-01-18",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "信息时代",
+    "source_tags": [
+      "python",
+      "厨房",
+      "数据挖掘",
+      "爱好"
+    ],
+    "source_summary": null
   },
   "validation": {
     "passed": true,
@@ -30,8 +38,8 @@
     "converter_version": 1,
     "markdown_sha256": "79955cdc39a4ba6eea91787f9fc4f9e1adbe8823fb94cf9f3e8da4016c783c3d"
   },
-  "fetched_at": "2026-09-14T13:42:54+00:00",
+  "fetched_at": "2026-11-13T09:48:31+00:00",
   "source_snapshot_sha256": "e4cb58819fa4f22e47553ceb2592caa32ea36ee92ca74a16b1aeb85dadc6ef0f",
   "images": {},
-  "local_only": true
+  "publication_policy": "config/mirror.json"
 }

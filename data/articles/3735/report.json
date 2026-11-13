@@ -6,7 +6,13 @@
     "source_url": "https://spaces.ac.cn/archives/3735",
     "date": "2016-05-15",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "生活/情感",
+    "source_tags": [
+      "路径积分",
+      "数据挖掘"
+    ],
+    "source_summary": null
   },
   "validation": {
     "passed": true,
@@ -30,8 +36,8 @@
     "converter_version": 1,
     "markdown_sha256": "22c874100690e169f7b6e54913112c1b9c40d78474a637aa1a6ad83c2a7ead20"
   },
-  "fetched_at": "2026-09-14T13:41:15+00:00",
+  "fetched_at": "2026-11-13T09:47:46+00:00",
   "source_snapshot_sha256": "bda62d8346bade54466ba00c41279129d20aae83a9b929c786a57e0931478626",
   "images": {},
-  "local_only": true
+  "publication_policy": "config/mirror.json"
 }
