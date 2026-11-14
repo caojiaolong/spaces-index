@@ -6,7 +6,13 @@
     "source_url": "https://spaces.ac.cn/archives/3476",
     "date": "2015-10-17",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "物理化学",
+    "source_tags": [
+      "量子力学",
+      "路径积分"
+    ],
+    "source_summary": null
   },
   "validation": {
     "passed": true,
@@ -30,8 +36,8 @@
     "converter_version": 1,
     "markdown_sha256": "09f0611d4341077c292f256a412b7fe4b2a4df55874680257351c319af503df6"
   },
-  "fetched_at": "2026-09-14T13:44:35+00:00",
+  "fetched_at": "2026-11-14T09:10:08+00:00",
   "source_snapshot_sha256": "4aa0ca448b8f410914f2a1ae9643ecfc870b15ceae1bb40624531fd015653aa7",
   "images": {},
-  "local_only": true
+  "publication_policy": "config/mirror.json"
 }

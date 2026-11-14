@@ -6,9 +6,15 @@
     "source_url": "https://spaces.ac.cn/archives/3477",
     "date": "2015-10-21",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "信息时代",
+    "source_tags": [
+      "python",
+      "爬虫"
+    ],
+    "source_summary": "放个运行图： 至此，我们已经完成了安卓上的Python爬虫编写和定时自动运行。总的来说，我们就是用QPython来运行Python脚本，然后用定时达人之类的软件来定时运行app。如何让QPython来指定执行我们的脚本呢？通过超级终端来指定启动命令——这样一来，超级终端就变成了一个专门来运行这个爬虫的app了（当然，这似乎对超级终端有点不公平，大材小用了，然而我没有想到更好的办法。）"
   },
-  "fetched_at": "2026-09-14T13:44:28+00:00",
+  "fetched_at": "2026-11-14T09:10:04+00:00",
   "source_snapshot_sha256": "81557a86105ce8f97f50c6aa31e837418dc201884dbfa94e3bacfd7cce1b1a81",
   "validators": {
     "etag": null,

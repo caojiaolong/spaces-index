@@ -6,7 +6,13 @@
     "source_url": "https://spaces.ac.cn/archives/3426",
     "date": "2015-08-13",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "数学研究",
+    "source_tags": [
+      "级数",
+      "图解"
+    ],
+    "source_summary": null
   },
   "validation": {
     "passed": true,
@@ -30,8 +36,8 @@
     "converter_version": 1,
     "markdown_sha256": "43a330ec7a2721f6f7f7d4035a5983240723d87cdc8d2037c83f7e309bd47a9f"
   },
-  "fetched_at": "2026-09-14T13:45:04+00:00",
+  "fetched_at": "2026-11-14T09:10:22+00:00",
   "source_snapshot_sha256": "ca45844e2106907b6cee9c367e7d9cedf9e7cdc0eb50d3b94082199c4dd7e391",
   "images": {},
-  "local_only": true
+  "publication_policy": "config/mirror.json"
 }

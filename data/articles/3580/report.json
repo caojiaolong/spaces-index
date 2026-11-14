@@ -6,7 +6,13 @@
     "source_url": "https://spaces.ac.cn/archives/3580",
     "date": "2015-12-28",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "天文探索",
+    "source_tags": [
+      "流星",
+      "流星雨"
+    ],
+    "source_summary": null
   },
   "validation": {
     "passed": true,
@@ -30,8 +36,8 @@
     "converter_version": 1,
     "markdown_sha256": "60b12153c196bee36719ce5d5bab0a7c9481a3071a27a31e72d7399071128512"
   },
-  "fetched_at": "2026-09-14T13:43:13+00:00",
+  "fetched_at": "2026-11-14T09:09:29+00:00",
   "source_snapshot_sha256": "792b6ff0c6b33f1a09dc6ca85bce83b2bd0b57a15e73cf836e3af8207ffbe73e",
   "images": {},
-  "local_only": true
+  "publication_policy": "config/mirror.json"
 }

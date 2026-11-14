@@ -6,9 +6,17 @@
     "source_url": "https://spaces.ac.cn/archives/3567",
     "date": "2015-12-20",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "数学研究",
+    "source_tags": [
+      "模型",
+      "概率",
+      "最大熵",
+      "熵"
+    ],
+    "source_summary": "本系列到此算是结束了。很多网络文章或者书籍中，也讲解了最大熵模型的推导、求解等内容，但是我还是感觉，教科书上那种讲法，不够清晰明确。诸如熵的定义、熵的意义、最大熵的意义、最大熵模型的推导等，都不尽让我满意，因此，结合自己的理解，写了这三篇小文，既是自己的笔记，又是笔者与大家分享的自己的理解。如果有不当之处，请读者批评。 在本系列中，最大熵模型只是一个契机，事实上，三篇文章的重点是熵的概念和最大熵原理，它们才是值得反复琢磨的。熵量化了信息，量化了不确定性，我们可以用它来做很多事情。虽然这个系列结束了，但是关于信息、关于熵的内容，在本博客以后的文章中，仍会时常出现，因为关于熵，实在有太多美妙的不得不说的内容了。 关于最大熵模型，读者还…"
   },
-  "fetched_at": "2026-09-14T13:43:26+00:00",
+  "fetched_at": "2026-11-14T09:09:36+00:00",
   "source_snapshot_sha256": "c0cfa036ccb83bc5253dc977ed2bb8842fd948c243ba4c997e76b892f9465f2b",
   "validators": {
     "etag": null,

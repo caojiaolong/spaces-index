@@ -4264,7 +4264,7 @@
   },
   "3641": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:20:12+00:00",
+    "checked_at": "2026-11-14T09:09:22+00:00",
     "title": "趣题：如何编程列出一个集合的所有子集",
     "markdown_sha256": "c855043c3d37c870791bd0f8cd18645a54b02ea2016c94bf57bae6921707cd69",
     "converter_version": 1
@@ -4313,154 +4313,154 @@
   },
   "4171": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:20:13+00:00",
+    "checked_at": "2026-11-14T09:09:26+00:00",
     "title": "2016年全年天象",
     "markdown_sha256": "a5ccd7ff1034226bcd2c50a0884eab3e8b7868a79a8c52982bc4788330ab7355",
     "converter_version": 1
   },
   "3580": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:20:13+00:00",
+    "checked_at": "2026-11-14T09:09:29+00:00",
     "title": "【分享】兴隆山的双子座流星雨",
     "markdown_sha256": "60b12153c196bee36719ce5d5bab0a7c9481a3071a27a31e72d7399071128512",
     "converter_version": 1
   },
   "3576": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:20:13+00:00",
+    "checked_at": "2026-11-14T09:09:33+00:00",
     "title": "修改了一下公式的显示方式（移动端）",
     "markdown_sha256": "210744067356ae1c43eb5ea3328d5aecc837a2929ced36ab30788e78786903c9",
     "converter_version": 1
   },
   "3567": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:20:13+00:00",
+    "checked_at": "2026-11-14T09:09:36+00:00",
     "title": "“熵”不起：从熵、最大熵原理到最大熵模型（三）",
     "markdown_sha256": "5458d734797e7d2b2baac80c08c27163c6b0585e305471187494002963cf209c",
     "converter_version": 1
   },
   "3552": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:20:13+00:00",
+    "checked_at": "2026-11-14T09:09:40+00:00",
     "title": "“熵”不起：从熵、最大熵原理到最大熵模型（二）",
     "markdown_sha256": "c41c1c3b411d3a9ffa57a9582dcf0160c361cbdce23f9ff6b9c7ba9e6428fd84",
     "converter_version": 1
   },
   "3546": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:20:13+00:00",
+    "checked_at": "2026-11-14T09:09:43+00:00",
     "title": "人生苦短，我用Python！",
     "markdown_sha256": "573078c4adb2d5ed3c6926bd0442d06d518aede6567c951622722f178c765081",
     "converter_version": 1
   },
   "3534": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:20:13+00:00",
+    "checked_at": "2026-11-14T09:09:47+00:00",
     "title": "“熵”不起：从熵、最大熵原理到最大熵模型（一）",
     "markdown_sha256": "2b14aafc5f3273f4def4abebc4d967f673e69adba3528ef9d1d092cab61adead",
     "converter_version": 1
   },
   "3522": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:20:14+00:00",
+    "checked_at": "2026-11-14T09:09:50+00:00",
     "title": "《量子力学与路径积分》习题解答V0.3",
     "markdown_sha256": "fd324527f0110cdccbfdd396201d2fa28945424c3d815556e3e86b7c83a49095",
     "converter_version": 1
   },
   "3511": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:20:14+00:00",
+    "checked_at": "2026-11-14T09:09:54+00:00",
     "title": "ARXIV数学论文分布：偏微分方程最热门！",
     "markdown_sha256": "5291ae9a756ae68e2fbebd5eaadf3e2629d0fcfdb18959c47d0aa03158e5a07b",
     "converter_version": 1
   },
   "3495": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:20:14+00:00",
+    "checked_at": "2026-11-14T09:09:57+00:00",
     "title": "朋友们，来瓶汽水吧！有趣的换汽水问题",
     "markdown_sha256": "fc4887dcb471a2a4153083b0f3c7b97db72ea175f4c94426e212945769cf0438",
     "converter_version": 1
   },
   "3491": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:20:14+00:00",
+    "checked_at": "2026-11-14T09:10:01+00:00",
     "title": "新词发现的信息熵方法与实现",
     "markdown_sha256": "dc59aebfac2688ce4739a98c99734a87222a6d5b0eacb9deb707dfa4797d8bf4",
     "converter_version": 1
   },
   "3477": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:20:14+00:00",
+    "checked_at": "2026-11-14T09:10:04+00:00",
     "title": "把Python脚本放到手机上定时运行",
     "markdown_sha256": "5b3816bae1ccb0ff58e1f859e3c724dc5ff43d7c191b7ee7ca52ae79f471708c",
     "converter_version": 1
   },
   "3476": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:20:14+00:00",
+    "checked_at": "2026-11-14T09:10:08+00:00",
     "title": "《量子力学与路径积分》习题解答V0.2",
     "markdown_sha256": "09f0611d4341077c292f256a412b7fe4b2a4df55874680257351c319af503df6",
     "converter_version": 1
   },
   "3473": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:20:14+00:00",
+    "checked_at": "2026-11-14T09:10:11+00:00",
     "title": "2015诺贝尔医学奖：中国人在内",
     "markdown_sha256": "6765ceb056ba6e6115871bbf538ae53a3c2b04eef2034b33492abe97d6b034aa",
     "converter_version": 1
   },
   "3451": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:20:14+00:00",
+    "checked_at": "2026-11-14T09:10:15+00:00",
     "title": "《量子力学与路径积分》习题解答V0.1",
     "markdown_sha256": "13385e2410f643539d2b1c6847ec9c0d38c995bf642966a660af3fcc1b681b4f",
     "converter_version": 1
   },
   "3441": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:20:14+00:00",
+    "checked_at": "2026-11-14T09:10:19+00:00",
     "title": "封闭曲线所围成的面积：一个新技巧",
     "markdown_sha256": "8df015a8baab869857438a9656fd810e82769dbfc1a98254372ef96d20e0b646",
     "converter_version": 1
   },
   "3426": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:20:15+00:00",
+    "checked_at": "2026-11-14T09:10:22+00:00",
     "title": "exp(1/2 t^2+xt)级数展开的图解技术",
     "markdown_sha256": "43a330ec7a2721f6f7f7d4035a5983240723d87cdc8d2037c83f7e309bd47a9f",
     "converter_version": 1
   },
   "3414": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:20:15+00:00",
+    "checked_at": "2026-11-14T09:10:26+00:00",
     "title": "文本情感分类（二）：深度学习模型",
     "markdown_sha256": "3a22349abb9ab3fb85c0c136cd7926ba0c20bdda3c405c37d80fe396450fa90a",
     "converter_version": 1
   },
   "3402": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:20:15+00:00",
+    "checked_at": "2026-11-14T09:10:29+00:00",
     "title": "从“0.999...等于1”说开来",
     "markdown_sha256": "fd68c77c599a41149b3088a7d070dfb019fe4e262e61955f78c03ab73c7389bc",
     "converter_version": 1
   },
   "3390": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:20:15+00:00",
+    "checked_at": "2026-11-14T09:10:33+00:00",
     "title": "漫话模型|模型与选芒果",
     "markdown_sha256": "2affb830c18f0bf94e62e4b283dd9d64f3991f661f1a630c03ce8b468f1b0b99",
     "converter_version": 1
   },
   "3380": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:20:15+00:00",
+    "checked_at": "2026-11-14T09:10:37+00:00",
     "title": "用Pandas实现高效的Apriori算法",
     "markdown_sha256": "136414d8e576867770eff5266cdfcbfa750ff46b1939dfe34abc6f6fe649eb49",
     "converter_version": 1
   },
   "3360": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:20:15+00:00",
+    "checked_at": "2026-11-14T09:10:41+00:00",
     "title": "文本情感分类（一）：传统模型",
     "markdown_sha256": "fa0f381ed0bcea0e1f7c7624113d924a71bcfedc79308cd2041775cd5701ef37",
     "converter_version": 1
@@ -4509,14 +4509,14 @@
   },
   "3298": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:20:16+00:00",
+    "checked_at": "2026-11-14T09:10:44+00:00",
     "title": "记录一次爬取淘宝/天猫评论数据的过程",
-    "markdown_sha256": "7d302db0cd47144e207d314ce565f584f911a8197f9f17c34132fb7fff65a544",
+    "markdown_sha256": "7243ab0c6a47222f16c78ae24697dbda0b0df9f24d859e15812cab2927776239",
     "converter_version": 1
   },
   "3290": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:20:16+00:00",
+    "checked_at": "2026-11-14T09:10:48+00:00",
     "title": "寻求一个光滑的最大值函数",
     "markdown_sha256": "7aea84dd94895846f4e00f973ba098097d8aff17c5f01cc43898f6b5c78a2e6b",
     "converter_version": 1
@@ -8464,7 +8464,7 @@
   },
   "132": {
     "status": "conversion_failed",
-    "checked_at": "2026-11-13T09:48:35+00:00",
+    "checked_at": "2026-11-14T09:10:48+00:00",
     "title": "一道从小学到高中都可能考到的题目",
     "error": "Unreviewed legacy element: a<b，则有<br",
     "converter_version": 1,

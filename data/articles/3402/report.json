@@ -6,7 +6,13 @@
     "source_url": "https://spaces.ac.cn/archives/3402",
     "date": "2015-07-21",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "数学研究",
+    "source_tags": [
+      "函数",
+      "分析"
+    ],
+    "source_summary": null
   },
   "validation": {
     "passed": true,
@@ -30,8 +36,8 @@
     "converter_version": 1,
     "markdown_sha256": "fd68c77c599a41149b3088a7d070dfb019fe4e262e61955f78c03ab73c7389bc"
   },
-  "fetched_at": "2026-09-14T13:45:19+00:00",
+  "fetched_at": "2026-11-14T09:10:29+00:00",
   "source_snapshot_sha256": "9ccbe6e9d19eabb73d794cbc8e93e60b50e3a14fd502adae474aa5bc43797b24",
   "images": {},
-  "local_only": true
+  "publication_policy": "config/mirror.json"
 }

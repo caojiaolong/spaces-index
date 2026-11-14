@@ -6,7 +6,13 @@
     "source_url": "https://spaces.ac.cn/archives/3298",
     "date": "2015-05-06",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "信息时代",
+    "source_tags": [
+      "网站",
+      "爬虫"
+    ],
+    "source_summary": null
   },
   "validation": {
     "passed": true,
@@ -23,15 +29,15 @@
     "image_count": 6,
     "heading_count": 3,
     "code_block_count": 6,
-    "source_text_sha256": "40de40ea7c987af0aff5170249ad01a0291173a544c1e561d6e0cb6ff99c92de",
-    "output_text_sha256": "40de40ea7c987af0aff5170249ad01a0291173a544c1e561d6e0cb6ff99c92de",
+    "source_text_sha256": "469748642d58f9d2145e1cecd903dc352b4f9bc08db9b5a5b4dedd8453e7f359",
+    "output_text_sha256": "469748642d58f9d2145e1cecd903dc352b4f9bc08db9b5a5b4dedd8453e7f359",
     "latex_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
-    "body_sha256": "4d12d25d5c244f6d3ef76c6b36a20fdfccd556a61d6093b4daaaa03597a590ba",
+    "body_sha256": "0ca7584ee99b79fa46e24ca523e9cfd2bd8c4ec9778219acbb3a4cc7c1e0a8ef",
     "converter_version": 1,
-    "markdown_sha256": "7d302db0cd47144e207d314ce565f584f911a8197f9f17c34132fb7fff65a544"
+    "markdown_sha256": "7243ab0c6a47222f16c78ae24697dbda0b0df9f24d859e15812cab2927776239"
   },
-  "fetched_at": "2026-09-14T13:46:33+00:00",
-  "source_snapshot_sha256": "344fe08e8078f24281f9f9f8b98bff8b96ed2a5fc2396cc78b805b8b39d851b2",
+  "fetched_at": "2026-11-14T09:10:44+00:00",
+  "source_snapshot_sha256": "edd24ba22bc02f9e5427bb5c57dad6ece7aeeaea7fd6b3d80c53e0ceef1582e1",
   "images": {},
-  "local_only": true
+  "publication_policy": "config/mirror.json"
 }

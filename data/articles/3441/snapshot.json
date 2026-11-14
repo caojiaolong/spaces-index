@@ -6,9 +6,15 @@
     "source_url": "https://spaces.ac.cn/archives/3441",
     "date": "2015-08-30",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "数学研究",
+    "source_tags": [
+      "积分",
+      "变换"
+    ],
+    "source_summary": null
   },
-  "fetched_at": "2026-09-14T13:44:57+00:00",
+  "fetched_at": "2026-11-14T09:10:19+00:00",
   "source_snapshot_sha256": "d4dce8d7555af00975cf06e4996cddef0394ecf2868ef7798b56302d716b6035",
   "validators": {
     "etag": null,

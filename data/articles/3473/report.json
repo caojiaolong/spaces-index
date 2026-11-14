@@ -6,7 +6,12 @@
     "source_url": "https://spaces.ac.cn/archives/3473",
     "date": "2015-10-05",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "千奇百怪",
+    "source_tags": [
+      "诺贝尔奖专题"
+    ],
+    "source_summary": null
   },
   "validation": {
     "passed": true,
@@ -30,8 +35,8 @@
     "converter_version": 1,
     "markdown_sha256": "6765ceb056ba6e6115871bbf538ae53a3c2b04eef2034b33492abe97d6b034aa"
   },
-  "fetched_at": "2026-09-14T13:44:42+00:00",
+  "fetched_at": "2026-11-14T09:10:11+00:00",
   "source_snapshot_sha256": "a70639ad0d640b5e65e7d9cda976b0aeb767c09f023bc8e1fe0b3db63cb79de6",
   "images": {},
-  "local_only": true
+  "publication_policy": "config/mirror.json"
 }

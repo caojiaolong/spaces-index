@@ -81,7 +81,7 @@ F12
 
 
 <pre><code class="language-python">import requests as rq
-url='http://rate.tmall.com/list_detail_rate.htm?itemId=41464129793&amp;sellerId=1652490016&amp;currentPage=1'
+url='http://rate.tmall.com/list_detail_rate.htm?itemId=41464129793&amp;sellerId=1652490016¤tPage=1'
 myweb = rq.get(url)</code></pre>
 
 
@@ -151,7 +151,7 @@ mytable.to_excel('mytable.xls')
 <pre><code class="language-python">import requests as rq
 import re
 import pandas as pd
-url='http://rate.tmall.com/list_detail_rate.htm?itemId=41464129793&amp;sellerId=1652490016&amp;currentPage=1'
+url='http://rate.tmall.com/list_detail_rate.htm?itemId=41464129793&amp;sellerId=1652490016¤tPage=1'
 myweb = rq.get(url)
 myjson = re.findall('\"rateList\":(\[.*?\])\,\"tags\"',myweb.text)[0]
 mytable = pd.read_json(myjson)mytable.to_csv('mytable.txt')

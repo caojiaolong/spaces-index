@@ -6,7 +6,14 @@
     "source_url": "https://spaces.ac.cn/archives/3534",
     "date": "2015-12-01",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "数学研究",
+    "source_tags": [
+      "概率",
+      "最大熵",
+      "熵"
+    ],
+    "source_summary": null
   },
   "validation": {
     "passed": true,
@@ -30,8 +37,8 @@
     "converter_version": 1,
     "markdown_sha256": "2b14aafc5f3273f4def4abebc4d967f673e69adba3528ef9d1d092cab61adead"
   },
-  "fetched_at": "2026-09-14T13:43:49+00:00",
+  "fetched_at": "2026-11-14T09:09:47+00:00",
   "source_snapshot_sha256": "3a41472a73b0ce38e2acf372a97a15f7b85a9f3887b7f35a5a2c720bd3942b01",
   "images": {},
-  "local_only": true
+  "publication_policy": "config/mirror.json"
 }

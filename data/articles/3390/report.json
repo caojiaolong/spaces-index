@@ -6,7 +6,13 @@
     "source_url": "https://spaces.ac.cn/archives/3390",
     "date": "2015-07-15",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "信息时代",
+    "source_tags": [
+      "模型",
+      "机器学习"
+    ],
+    "source_summary": null
   },
   "validation": {
     "passed": true,
@@ -30,8 +36,8 @@
     "converter_version": 1,
     "markdown_sha256": "2affb830c18f0bf94e62e4b283dd9d64f3991f661f1a630c03ce8b468f1b0b99"
   },
-  "fetched_at": "2026-09-14T13:45:31+00:00",
+  "fetched_at": "2026-11-14T09:10:33+00:00",
   "source_snapshot_sha256": "948609cbaebd9474caf8382f726141b24d96096df76bd8c6bf6b8103c938d2e0",
   "images": {},
-  "local_only": true
+  "publication_policy": "config/mirror.json"
 }

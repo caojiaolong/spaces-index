@@ -6,9 +6,15 @@
     "source_url": "https://spaces.ac.cn/archives/3522",
     "date": "2015-11-18",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "物理化学",
+    "source_tags": [
+      "路径积分",
+      "费曼"
+    ],
+    "source_summary": null
   },
-  "fetched_at": "2026-09-14T13:43:57+00:00",
+  "fetched_at": "2026-11-14T09:09:50+00:00",
   "source_snapshot_sha256": "30fac8de90f95cea8be0bc461363e2f6f231645f3ee99aa31242c9db2e2bcfe9",
   "validators": {
     "etag": null,

@@ -6,7 +6,14 @@
     "source_url": "https://spaces.ac.cn/archives/3290",
     "date": "2015-05-02",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "数学研究",
+    "source_tags": [
+      "函数",
+      "极值",
+      "光滑"
+    ],
+    "source_summary": null
   },
   "validation": {
     "passed": true,
@@ -30,8 +37,8 @@
     "converter_version": 1,
     "markdown_sha256": "7aea84dd94895846f4e00f973ba098097d8aff17c5f01cc43898f6b5c78a2e6b"
   },
-  "fetched_at": "2026-09-14T13:46:40+00:00",
+  "fetched_at": "2026-11-14T09:10:48+00:00",
   "source_snapshot_sha256": "8059a00e4e0e9b31ec66155a5043c104b1fbe9720700089b7158e17c060aed75",
   "images": {},
-  "local_only": true
+  "publication_policy": "config/mirror.json"
 }

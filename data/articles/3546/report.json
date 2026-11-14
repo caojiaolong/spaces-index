@@ -6,7 +6,13 @@
     "source_url": "https://spaces.ac.cn/archives/3546",
     "date": "2015-12-06",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "信息时代",
+    "source_tags": [
+      "python",
+      "数据挖掘"
+    ],
+    "source_summary": null
   },
   "validation": {
     "passed": true,
@@ -30,8 +36,8 @@
     "converter_version": 1,
     "markdown_sha256": "573078c4adb2d5ed3c6926bd0442d06d518aede6567c951622722f178c765081"
   },
-  "fetched_at": "2026-09-14T13:43:42+00:00",
+  "fetched_at": "2026-11-14T09:09:43+00:00",
   "source_snapshot_sha256": "80e8e9679da99dabefd2b43540c38a12d991f9c58e4498427c652f1e1c88496b",
   "images": {},
-  "local_only": true
+  "publication_policy": "config/mirror.json"
 }

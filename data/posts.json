@@ -8900,7 +8900,8 @@
       "python",
       "集合"
     ],
-    "source_summary": null
+    "source_summary": null,
+    "metadata_checked_at": "2026-11-14T09:09:22+00:00"
   },
   {
     "id": "3638",
@@ -8996,7 +8997,8 @@
       "天象",
       "NASA"
     ],
-    "source_summary": null
+    "source_summary": null,
+    "metadata_checked_at": "2026-11-14T09:09:26+00:00"
   },
   {
     "id": "3580",
@@ -9008,7 +9010,8 @@
       "流星",
       "流星雨"
     ],
-    "source_summary": null
+    "source_summary": null,
+    "metadata_checked_at": "2026-11-14T09:09:29+00:00"
   },
   {
     "id": "3576",
@@ -9020,7 +9023,8 @@
       "网站",
       "latex"
     ],
-    "source_summary": null
+    "source_summary": null,
+    "metadata_checked_at": "2026-11-14T09:09:33+00:00"
   },
   {
     "id": "3567",
@@ -9034,7 +9038,8 @@
       "最大熵",
       "熵"
     ],
-    "source_summary": "本系列到此算是结束了。很多网络文章或者书籍中，也讲解了最大熵模型的推导、求解等内容，但是我还是感觉，教科书上那种讲法，不够清晰明确。诸如熵的定义、熵的意义、最大熵的意义、最大熵模型的推导等，都不尽让我满意，因此，结合自己的理解，写了这三篇小文，既是自己的笔记，又是笔者与大家分享的自己的理解。如果有不当之处，请读者批评。 在本系列中，最大熵模型只是一个契机，事实上，三篇文章的重点是熵的概念和最大熵原理，它们才是值得反复琢磨的。熵量化了信息，量化了不确定性，我们可以用它来做很多事情。虽然这个系列结束了，但是关于信息、关于熵的内容，在本博客以后的文章中，仍会时常出现，因为关于熵，实在有太多美妙的不得不说的内容了。 关于最大熵模型，读者还…"
+    "source_summary": "本系列到此算是结束了。很多网络文章或者书籍中，也讲解了最大熵模型的推导、求解等内容，但是我还是感觉，教科书上那种讲法，不够清晰明确。诸如熵的定义、熵的意义、最大熵的意义、最大熵模型的推导等，都不尽让我满意，因此，结合自己的理解，写了这三篇小文，既是自己的笔记，又是笔者与大家分享的自己的理解。如果有不当之处，请读者批评。 在本系列中，最大熵模型只是一个契机，事实上，三篇文章的重点是熵的概念和最大熵原理，它们才是值得反复琢磨的。熵量化了信息，量化了不确定性，我们可以用它来做很多事情。虽然这个系列结束了，但是关于信息、关于熵的内容，在本博客以后的文章中，仍会时常出现，因为关于熵，实在有太多美妙的不得不说的内容了。 关于最大熵模型，读者还…",
+    "metadata_checked_at": "2026-11-14T09:09:36+00:00"
   },
   {
     "id": "3552",
@@ -9048,7 +9053,8 @@
       "最大熵",
       "熵"
     ],
-    "source_summary": null
+    "source_summary": null,
+    "metadata_checked_at": "2026-11-14T09:09:40+00:00"
   },
   {
     "id": "3546",
@@ -9060,7 +9066,8 @@
       "python",
       "数据挖掘"
     ],
-    "source_summary": null
+    "source_summary": null,
+    "metadata_checked_at": "2026-11-14T09:09:43+00:00"
   },
   {
     "id": "3534",
@@ -9073,7 +9080,8 @@
       "最大熵",
       "熵"
     ],
-    "source_summary": null
+    "source_summary": null,
+    "metadata_checked_at": "2026-11-14T09:09:47+00:00"
   },
   {
     "id": "3522",
@@ -9085,7 +9093,8 @@
       "路径积分",
       "费曼"
     ],
-    "source_summary": null
+    "source_summary": null,
+    "metadata_checked_at": "2026-11-14T09:09:50+00:00"
   },
   {
     "id": "3511",
@@ -9097,7 +9106,8 @@
       "python",
       "数据挖掘"
     ],
-    "source_summary": null
+    "source_summary": null,
+    "metadata_checked_at": "2026-11-14T09:09:54+00:00"
   },
   {
     "id": "3495",
@@ -9109,7 +9119,8 @@
       "趣味",
       "竞赛"
     ],
-    "source_summary": null
+    "source_summary": null,
+    "metadata_checked_at": "2026-11-14T09:09:57+00:00"
   },
   {
     "id": "3491",
@@ -9123,7 +9134,8 @@
       "词库",
       "新词发现"
     ],
-    "source_summary": null
+    "source_summary": null,
+    "metadata_checked_at": "2026-11-14T09:10:01+00:00"
   },
   {
     "id": "3477",
@@ -9135,7 +9147,8 @@
       "python",
       "爬虫"
     ],
-    "source_summary": "放个运行图： 至此，我们已经完成了安卓上的Python爬虫编写和定时自动运行。总的来说，我们就是用QPython来运行Python脚本，然后用定时达人之类的软件来定时运行app。如何让QPython来指定执行我们的脚本呢？通过超级终端来指定启动命令——这样一来，超级终端就变成了一个专门来运行这个爬虫的app了（当然，这似乎对超级终端有点不公平，大材小用了，然而我没有想到更好的办法。）"
+    "source_summary": "放个运行图： 至此，我们已经完成了安卓上的Python爬虫编写和定时自动运行。总的来说，我们就是用QPython来运行Python脚本，然后用定时达人之类的软件来定时运行app。如何让QPython来指定执行我们的脚本呢？通过超级终端来指定启动命令——这样一来，超级终端就变成了一个专门来运行这个爬虫的app了（当然，这似乎对超级终端有点不公平，大材小用了，然而我没有想到更好的办法。）",
+    "metadata_checked_at": "2026-11-14T09:10:04+00:00"
   },
   {
     "id": "3476",
@@ -9147,7 +9160,8 @@
       "量子力学",
       "路径积分"
     ],
-    "source_summary": null
+    "source_summary": null,
+    "metadata_checked_at": "2026-11-14T09:10:08+00:00"
   },
   {
     "id": "3473",
@@ -9158,7 +9172,8 @@
     "source_tags": [
       "诺贝尔奖专题"
     ],
-    "source_summary": null
+    "source_summary": null,
+    "metadata_checked_at": "2026-11-14T09:10:11+00:00"
   },
   {
     "id": "3451",
@@ -9171,7 +9186,8 @@
       "路径积分",
       "费曼"
     ],
-    "source_summary": null
+    "source_summary": null,
+    "metadata_checked_at": "2026-11-14T09:10:15+00:00"
   },
   {
     "id": "3441",
@@ -9183,7 +9199,8 @@
       "积分",
       "变换"
     ],
-    "source_summary": null
+    "source_summary": null,
+    "metadata_checked_at": "2026-11-14T09:10:19+00:00"
   },
   {
     "id": "3426",
@@ -9195,7 +9212,8 @@
       "级数",
       "图解"
     ],
-    "source_summary": null
+    "source_summary": null,
+    "metadata_checked_at": "2026-11-14T09:10:22+00:00"
   },
   {
     "id": "3414",
@@ -9209,7 +9227,8 @@
       "机器学习",
       "文本挖掘"
     ],
-    "source_summary": null
+    "source_summary": null,
+    "metadata_checked_at": "2026-11-14T09:10:26+00:00"
   },
   {
     "id": "3402",
@@ -9221,7 +9240,8 @@
       "函数",
       "分析"
     ],
-    "source_summary": null
+    "source_summary": null,
+    "metadata_checked_at": "2026-11-14T09:10:29+00:00"
   },
   {
     "id": "3390",
@@ -9233,7 +9253,8 @@
       "模型",
       "机器学习"
     ],
-    "source_summary": null
+    "source_summary": null,
+    "metadata_checked_at": "2026-11-14T09:10:33+00:00"
   },
   {
     "id": "3380",
@@ -9246,7 +9267,8 @@
       "数据挖掘",
       "关联分析"
     ],
-    "source_summary": null
+    "source_summary": null,
+    "metadata_checked_at": "2026-11-14T09:10:37+00:00"
   },
   {
     "id": "3360",
@@ -9260,7 +9282,8 @@
       "数据挖掘",
       "文本挖掘"
     ],
-    "source_summary": null
+    "source_summary": null,
+    "metadata_checked_at": "2026-11-14T09:10:41+00:00"
   },
   {
     "id": "3354",
@@ -9348,7 +9371,8 @@
       "网站",
       "爬虫"
     ],
-    "source_summary": null
+    "source_summary": null,
+    "metadata_checked_at": "2026-11-14T09:10:44+00:00"
   },
   {
     "id": "3290",
@@ -9361,7 +9385,8 @@
       "极值",
       "光滑"
     ],
-    "source_summary": null
+    "source_summary": null,
+    "metadata_checked_at": "2026-11-14T09:10:48+00:00"
   },
   {
     "id": "3280",
