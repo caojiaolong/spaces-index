@@ -6,7 +6,13 @@
     "source_url": "https://spaces.ac.cn/archives/3210",
     "date": "2015-01-21",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "千奇百怪",
+    "source_tags": [
+      "概率",
+      "解析"
+    ],
+    "source_summary": null
   },
   "validation": {
     "passed": true,
@@ -30,8 +36,8 @@
     "converter_version": 1,
     "markdown_sha256": "cb033ea43fa283d822e37e5f9cb67d88875aa6b0196f9af27539564af11a3327"
   },
-  "fetched_at": "2026-09-14T13:47:46+00:00",
+  "fetched_at": "2026-11-15T09:40:11+00:00",
   "source_snapshot_sha256": "202ce4e4bd6803c867d95a55c46aca4f88cc520f18dbcbb3c2d7615538273559",
   "images": {},
-  "local_only": true
+  "publication_policy": "config/mirror.json"
 }

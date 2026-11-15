@@ -6,7 +6,14 @@
     "source_url": "https://spaces.ac.cn/archives/3266",
     "date": "2015-04-16",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "数学研究",
+    "source_tags": [
+      "积分",
+      "fourier",
+      "采样"
+    ],
+    "source_summary": null
   },
   "validation": {
     "passed": true,
@@ -30,8 +37,8 @@
     "converter_version": 1,
     "markdown_sha256": "ce2307eda9e78e0d243f27b9cad942606b902c4f512760c3b28d340b143eb11c"
   },
-  "fetched_at": "2026-09-14T13:46:59+00:00",
+  "fetched_at": "2026-11-15T09:39:47+00:00",
   "source_snapshot_sha256": "421c9f1f421c6480592e5e41c3e8f2e2c1e93f3521954ad2c7842f7299f3c154",
   "images": {},
-  "local_only": true
+  "publication_policy": "config/mirror.json"
 }

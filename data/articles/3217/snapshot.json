@@ -6,9 +6,17 @@
     "source_url": "https://spaces.ac.cn/archives/3217",
     "date": "2015-02-14",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "数学研究",
+    "source_tags": [
+      "积分",
+      "摄动",
+      "微扰",
+      "渐近级数"
+    ],
+    "source_summary": null
   },
-  "fetched_at": "2026-09-14T13:47:39+00:00",
+  "fetched_at": "2026-11-15T09:40:08+00:00",
   "source_snapshot_sha256": "d1f58c1873f2872ed163ed99baae9637b144be66beca73303c3fcb966ce05b93",
   "validators": {
     "etag": null,

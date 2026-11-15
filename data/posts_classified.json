@@ -13762,6 +13762,7 @@
       "新科学家"
     ],
     "source_summary": null,
+    "metadata_checked_at": "2026-11-15T09:39:14+00:00",
     "topics": [
       "天文科普"
     ],
@@ -13781,6 +13782,7 @@
       "费曼"
     ],
     "source_summary": null,
+    "metadata_checked_at": "2026-11-15T09:39:22+00:00",
     "topics": [
       "数学工具",
       "几何与方程",
@@ -13803,6 +13805,7 @@
       "机器学习"
     ],
     "source_summary": "当然，深度学习的内容非常丰富，也有各种各样的变形，值得一提的是，基于深度学习的很多模型，都达到了State Of Art的效果（艺术级的，也就是最先进的），深度学习的威力可见一斑。 本文不是深度学习的入门教程，仅仅是笔者对神经网络和深度学习的一些粗浅理解，如果读者想要系统地学习相关理论，最好先阅读一些数据挖掘和机器学习的书籍，了解其中的基本概念，然后阅读文章开头提到的两篇文章。 http://ufldl.stanford.edu/wiki/UFLDL教程 http://blog.csdn.net/zouxy09/article/details/8775360",
+    "metadata_checked_at": "2026-11-15T09:39:26+00:00",
     "topics": [
       "深度学习基础"
     ],
@@ -13821,6 +13824,7 @@
       "备忘"
     ],
     "source_summary": null,
+    "metadata_checked_at": "2026-11-15T09:39:29+00:00",
     "topics": [
       "工程工具",
       "科普问答与百科",
@@ -13842,6 +13846,7 @@
       "算子"
     ],
     "source_summary": null,
+    "metadata_checked_at": "2026-11-15T09:39:33+00:00",
     "topics": [
       "数学工具"
     ],
@@ -13860,6 +13865,7 @@
       "学习"
     ],
     "source_summary": null,
+    "metadata_checked_at": "2026-11-15T09:39:36+00:00",
     "topics": [
       "阅读写作与随笔"
     ],
@@ -13918,6 +13924,7 @@
       "微扰"
     ],
     "source_summary": null,
+    "metadata_checked_at": "2026-11-15T09:39:40+00:00",
     "topics": [
       "数学工具"
     ],
@@ -13938,6 +13945,7 @@
       "显然成立"
     ],
     "source_summary": null,
+    "metadata_checked_at": "2026-11-15T09:39:43+00:00",
     "topics": [
       "数学工具"
     ],
@@ -13957,6 +13965,7 @@
       "采样"
     ],
     "source_summary": null,
+    "metadata_checked_at": "2026-11-15T09:39:47+00:00",
     "topics": [
       "数学工具"
     ],
@@ -13976,6 +13985,7 @@
       "分析"
     ],
     "source_summary": null,
+    "metadata_checked_at": "2026-11-15T09:39:50+00:00",
     "topics": [
       "数学工具"
     ],
@@ -13994,6 +14004,7 @@
       "面积"
     ],
     "source_summary": null,
+    "metadata_checked_at": "2026-11-15T09:39:54+00:00",
     "topics": [
       "物理化学",
       "数学工具"
@@ -14013,6 +14024,7 @@
       "公理"
     ],
     "source_summary": null,
+    "metadata_checked_at": "2026-11-15T09:39:57+00:00",
     "topics": [
       "几何与方程",
       "数学工具"
@@ -14034,6 +14046,7 @@
       "渐近级数"
     ],
     "source_summary": null,
+    "metadata_checked_at": "2026-11-15T09:40:01+00:00",
     "topics": [
       "数学工具"
     ],
@@ -14053,6 +14066,7 @@
       "积分"
     ],
     "source_summary": null,
+    "metadata_checked_at": "2026-11-15T09:40:04+00:00",
     "topics": [
       "数学工具"
     ],
@@ -14073,6 +14087,7 @@
       "渐近级数"
     ],
     "source_summary": null,
+    "metadata_checked_at": "2026-11-15T09:40:08+00:00",
     "topics": [
       "数学工具"
     ],
@@ -14092,6 +14107,7 @@
       "解析"
     ],
     "source_summary": null,
+    "metadata_checked_at": "2026-11-15T09:40:11+00:00",
     "topics": [
       "概率统计与信息论",
       "科普问答与百科"
@@ -14111,6 +14127,7 @@
       "费曼"
     ],
     "source_summary": null,
+    "metadata_checked_at": "2026-11-15T09:40:15+00:00",
     "topics": [
       "资源与站务",
       "阅读写作与随笔"
@@ -14131,6 +14148,7 @@
       "域"
     ],
     "source_summary": null,
+    "metadata_checked_at": "2026-11-15T09:40:19+00:00",
     "topics": [
       "数学工具"
     ],
@@ -14149,6 +14167,7 @@
       "积分"
     ],
     "source_summary": null,
+    "metadata_checked_at": "2026-11-15T09:40:23+00:00",
     "topics": [
       "数学工具"
     ],
@@ -14167,6 +14186,7 @@
       "生成函数"
     ],
     "source_summary": null,
+    "metadata_checked_at": "2026-11-15T09:40:26+00:00",
     "topics": [
       "概率统计与信息论",
       "数学工具"
@@ -14188,6 +14208,7 @@
       "作用量"
     ],
     "source_summary": null,
+    "metadata_checked_at": "2026-11-15T09:40:30+00:00",
     "topics": [
       "几何与方程",
       "物理化学",
@@ -14208,6 +14229,7 @@
       "NASA"
     ],
     "source_summary": null,
+    "metadata_checked_at": "2026-11-15T09:40:33+00:00",
     "topics": [
       "天文科普"
     ],
@@ -14226,6 +14248,7 @@
       "建模"
     ],
     "source_summary": null,
+    "metadata_checked_at": "2026-11-15T09:40:37+00:00",
     "topics": [
       "深度学习基础",
       "工程工具",
@@ -14247,6 +14270,7 @@
       "分析"
     ],
     "source_summary": null,
+    "metadata_checked_at": "2026-11-15T09:40:40+00:00",
     "topics": [
       "数学工具"
     ],
@@ -14367,6 +14391,7 @@
       "差分"
     ],
     "source_summary": null,
+    "metadata_checked_at": "2026-11-15T09:40:44+00:00",
     "topics": [
       "数学工具"
     ],

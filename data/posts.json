@@ -9296,7 +9296,8 @@
       "望远镜",
       "新科学家"
     ],
-    "source_summary": null
+    "source_summary": null,
+    "metadata_checked_at": "2026-11-15T09:39:14+00:00"
   },
   {
     "id": "3345",
@@ -9309,7 +9310,8 @@
       "路径积分",
       "费曼"
     ],
-    "source_summary": null
+    "source_summary": null,
+    "metadata_checked_at": "2026-11-15T09:39:22+00:00"
   },
   {
     "id": "3331",
@@ -9322,7 +9324,8 @@
       "深度学习",
       "机器学习"
     ],
-    "source_summary": "当然，深度学习的内容非常丰富，也有各种各样的变形，值得一提的是，基于深度学习的很多模型，都达到了State Of Art的效果（艺术级的，也就是最先进的），深度学习的威力可见一斑。 本文不是深度学习的入门教程，仅仅是笔者对神经网络和深度学习的一些粗浅理解，如果读者想要系统地学习相关理论，最好先阅读一些数据挖掘和机器学习的书籍，了解其中的基本概念，然后阅读文章开头提到的两篇文章。 http://ufldl.stanford.edu/wiki/UFLDL教程 http://blog.csdn.net/zouxy09/article/details/8775360"
+    "source_summary": "当然，深度学习的内容非常丰富，也有各种各样的变形，值得一提的是，基于深度学习的很多模型，都达到了State Of Art的效果（艺术级的，也就是最先进的），深度学习的威力可见一斑。 本文不是深度学习的入门教程，仅仅是笔者对神经网络和深度学习的一些粗浅理解，如果读者想要系统地学习相关理论，最好先阅读一些数据挖掘和机器学习的书籍，了解其中的基本概念，然后阅读文章开头提到的两篇文章。 http://ufldl.stanford.edu/wiki/UFLDL教程 http://blog.csdn.net/zouxy09/article/details/8775360",
+    "metadata_checked_at": "2026-11-15T09:39:26+00:00"
   },
   {
     "id": "3327",
@@ -9334,7 +9337,8 @@
       "网站",
       "备忘"
     ],
-    "source_summary": null
+    "source_summary": null,
+    "metadata_checked_at": "2026-11-15T09:39:29+00:00"
   },
   {
     "id": "3320",
@@ -9347,7 +9351,8 @@
       "级数",
       "算子"
     ],
-    "source_summary": null
+    "source_summary": null,
+    "metadata_checked_at": "2026-11-15T09:39:33+00:00"
   },
   {
     "id": "3319",
@@ -9359,7 +9364,8 @@
       "生活",
       "学习"
     ],
-    "source_summary": null
+    "source_summary": null,
+    "metadata_checked_at": "2026-11-15T09:39:36+00:00"
   },
   {
     "id": "3298",
@@ -9399,7 +9405,8 @@
       "摄动",
       "微扰"
     ],
-    "source_summary": null
+    "source_summary": null,
+    "metadata_checked_at": "2026-11-15T09:39:40+00:00"
   },
   {
     "id": "3272",
@@ -9412,7 +9419,8 @@
       "分析",
       "显然成立"
     ],
-    "source_summary": null
+    "source_summary": null,
+    "metadata_checked_at": "2026-11-15T09:39:43+00:00"
   },
   {
     "id": "3266",
@@ -9425,7 +9433,8 @@
       "fourier",
       "采样"
     ],
-    "source_summary": null
+    "source_summary": null,
+    "metadata_checked_at": "2026-11-15T09:39:47+00:00"
   },
   {
     "id": "3256",
@@ -9438,7 +9447,8 @@
       "极限",
       "分析"
     ],
-    "source_summary": null
+    "source_summary": null,
+    "metadata_checked_at": "2026-11-15T09:39:50+00:00"
   },
   {
     "id": "3252",
@@ -9450,7 +9460,8 @@
       "物理",
       "面积"
     ],
-    "source_summary": null
+    "source_summary": null,
+    "metadata_checked_at": "2026-11-15T09:39:54+00:00"
   },
   {
     "id": "3243",
@@ -9462,7 +9473,8 @@
       "几何",
       "公理"
     ],
-    "source_summary": null
+    "source_summary": null,
+    "metadata_checked_at": "2026-11-15T09:39:57+00:00"
   },
   {
     "id": "3241",
@@ -9476,7 +9488,8 @@
       "微扰",
       "渐近级数"
     ],
-    "source_summary": null
+    "source_summary": null,
+    "metadata_checked_at": "2026-11-15T09:40:01+00:00"
   },
   {
     "id": "3229",
@@ -9488,7 +9501,8 @@
       "级数",
       "积分"
     ],
-    "source_summary": null
+    "source_summary": null,
+    "metadata_checked_at": "2026-11-15T09:40:04+00:00"
   },
   {
     "id": "3217",
@@ -9502,7 +9516,8 @@
       "微扰",
       "渐近级数"
     ],
-    "source_summary": null
+    "source_summary": null,
+    "metadata_checked_at": "2026-11-15T09:40:08+00:00"
   },
   {
     "id": "3210",
@@ -9514,7 +9529,8 @@
       "概率",
       "解析"
     ],
-    "source_summary": null
+    "source_summary": null,
+    "metadata_checked_at": "2026-11-15T09:40:11+00:00"
   },
   {
     "id": "3204",
@@ -9526,7 +9542,8 @@
       "书籍",
       "费曼"
     ],
-    "source_summary": null
+    "source_summary": null,
+    "metadata_checked_at": "2026-11-15T09:40:15+00:00"
   },
   {
     "id": "3200",
@@ -9539,7 +9556,8 @@
       "群论",
       "域"
     ],
-    "source_summary": null
+    "source_summary": null,
+    "metadata_checked_at": "2026-11-15T09:40:19+00:00"
   },
   {
     "id": "3194",
@@ -9551,7 +9569,8 @@
       "不等式",
       "积分"
     ],
-    "source_summary": null
+    "source_summary": null,
+    "metadata_checked_at": "2026-11-15T09:40:23+00:00"
   },
   {
     "id": "3188",
@@ -9563,7 +9582,8 @@
       "概率",
       "生成函数"
     ],
-    "source_summary": null
+    "source_summary": null,
+    "metadata_checked_at": "2026-11-15T09:40:26+00:00"
   },
   {
     "id": "3181",
@@ -9577,7 +9597,8 @@
       "变分",
       "作用量"
     ],
-    "source_summary": null
+    "source_summary": null,
+    "metadata_checked_at": "2026-11-15T09:40:30+00:00"
   },
   {
     "id": "4170",
@@ -9589,7 +9610,8 @@
       "天象",
       "NASA"
     ],
-    "source_summary": null
+    "source_summary": null,
+    "metadata_checked_at": "2026-11-15T09:40:33+00:00"
   },
   {
     "id": "3171",
@@ -9601,7 +9623,8 @@
       "python",
       "建模"
     ],
-    "source_summary": null
+    "source_summary": null,
+    "metadata_checked_at": "2026-11-15T09:40:37+00:00"
   },
   {
     "id": "3154",
@@ -9614,7 +9637,8 @@
       "积分",
       "分析"
     ],
-    "source_summary": null
+    "source_summary": null,
+    "metadata_checked_at": "2026-11-15T09:40:40+00:00"
   },
   {
     "id": "3487",
@@ -9692,7 +9716,8 @@
       "数论",
       "差分"
     ],
-    "source_summary": null
+    "source_summary": null,
+    "metadata_checked_at": "2026-11-15T09:40:44+00:00"
   },
   {
     "id": "3101",

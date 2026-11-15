@@ -4467,42 +4467,42 @@
   },
   "3354": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:20:16+00:00",
+    "checked_at": "2026-11-15T09:39:14+00:00",
     "title": "【翻译】巨型望远镜：要继续，就得有牺牲！",
     "markdown_sha256": "936e758f170d1349bbf0240421733919c5aa447b4aaa33213285a4a57b538976",
     "converter_version": 1
   },
   "3345": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:20:16+00:00",
+    "checked_at": "2026-11-15T09:39:22+00:00",
     "title": "收到新版《量子力学与路径积分》",
     "markdown_sha256": "3d1aa2fc9425595d42737feeb288446a54a0bfebcba7089b282e9847d448b094",
     "converter_version": 1
   },
   "3331": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:20:16+00:00",
+    "checked_at": "2026-11-15T09:39:26+00:00",
     "title": "闲聊：神经网络与深度学习",
     "markdown_sha256": "547213a7453155868abd6272da198ed940739f98660055d173bdcef08d7b141d",
     "converter_version": 1
   },
   "3327": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:20:16+00:00",
+    "checked_at": "2026-11-15T09:39:29+00:00",
     "title": "【备忘】维基百科与DNSCrypt",
     "markdown_sha256": "5b0164bc5abb6b0646b59711f8d90a08fbdf20755633f5fb285c7421bdcf76b7",
     "converter_version": 1
   },
   "3320": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:20:16+00:00",
+    "checked_at": "2026-11-15T09:39:33+00:00",
     "title": "胡闹的胜利：将算子引入级数求和",
     "markdown_sha256": "04734cd1fae18a1993847c4df73e8dd5e107b7321e054e45c83146c53d7e34a8",
     "converter_version": 1
   },
   "3319": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:20:16+00:00",
+    "checked_at": "2026-11-15T09:39:36+00:00",
     "title": "It is time.",
     "markdown_sha256": "70616cdba027f05defd0eaf8b3de51461db8529124ea64868f50dcccbcea8a80",
     "converter_version": 1
@@ -4523,126 +4523,126 @@
   },
   "3280": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:20:17+00:00",
+    "checked_at": "2026-11-15T09:39:40+00:00",
     "title": "高斯型积分的微扰展开（三）",
     "markdown_sha256": "172206737e6b916d953065455c91eb42527458c0a05c633324c15507ac8f177f",
     "converter_version": 1
   },
   "3272": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:20:17+00:00",
+    "checked_at": "2026-11-15T09:39:43+00:00",
     "title": "柯西命题：盯着它到显然成立为止！",
     "markdown_sha256": "9099d0882618a719c09189835443968a006226cbf649be32c8cfe48e23159a3c",
     "converter_version": 1
   },
   "3266": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:20:17+00:00",
+    "checked_at": "2026-11-15T09:39:47+00:00",
     "title": "采样定理：有限个点构建出整个函数",
     "markdown_sha256": "ce2307eda9e78e0d243f27b9cad942606b902c4f512760c3b28d340b143eb11c",
     "converter_version": 1
   },
   "3256": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:20:17+00:00",
+    "checked_at": "2026-11-15T09:39:50+00:00",
     "title": "有趣的求极限题：随心所欲的放缩",
     "markdown_sha256": "fb44c4cd69cc340b791d613a322dc1395e71c7643c89435a1580f0e99ee066d6",
     "converter_version": 1
   },
   "3252": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:20:17+00:00",
+    "checked_at": "2026-11-15T09:39:54+00:00",
     "title": "海伦公式的一个别致的物理推导",
     "markdown_sha256": "3a9e8ea1950037e95f0318f7b53346fe0f3ac46a4964e3bc3926a4bce2cd6f72",
     "converter_version": 1
   },
   "3243": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:20:17+00:00",
+    "checked_at": "2026-11-15T09:39:57+00:00",
     "title": "你所没有思考过的平行线问题",
     "markdown_sha256": "bafadf490d020e3c68df07958e6bfbb8a4fddfc4e08c319ea65639c169cce1c1",
     "converter_version": 1
   },
   "3241": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:20:17+00:00",
+    "checked_at": "2026-11-15T09:40:01+00:00",
     "title": "高斯型积分的微扰展开（二）",
     "markdown_sha256": "2013dca49fa1a56d63ef3730e8927e258831cd8acb8eac42e0f932f549a38580",
     "converter_version": 1
   },
   "3229": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:20:17+00:00",
+    "checked_at": "2026-11-15T09:40:04+00:00",
     "title": "从Knotsevich在黑板上写的级数题目谈起",
     "markdown_sha256": "c2c3df66e08ede01d3931b6eb55efd1bcdd4a0292730161495d9daadc6448e1b",
     "converter_version": 1
   },
   "3217": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:20:17+00:00",
+    "checked_at": "2026-11-15T09:40:08+00:00",
     "title": "高斯型积分的微扰展开（一）",
     "markdown_sha256": "fb6de4b3c04ae1b9d72fd26e654f653ae23ebcd2fdc40ffee0297738ce8a1246",
     "converter_version": 1
   },
   "3210": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:20:17+00:00",
+    "checked_at": "2026-11-15T09:40:11+00:00",
     "title": "怎么会这么巧！背后的隐藏信息",
     "markdown_sha256": "cb033ea43fa283d822e37e5f9cb67d88875aa6b0196f9af27539564af11a3327",
     "converter_version": 1
   },
   "3204": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:20:17+00:00",
+    "checked_at": "2026-11-15T09:40:15+00:00",
     "title": "我是一个费曼迷",
     "markdown_sha256": "9df714486a85a04aaaf115dc28cafa433297ceac2a05a31134d38e39cb6167d4",
     "converter_version": 1
   },
   "3200": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:20:18+00:00",
+    "checked_at": "2026-11-15T09:40:19+00:00",
     "title": "有限素域上的乘法群是循环群",
     "markdown_sha256": "c9e02b5019a4e37088866fc8adcf2aabeecd6577327a97dbf5576664b9f55d33",
     "converter_version": 1
   },
   "3194": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:20:18+00:00",
+    "checked_at": "2026-11-15T09:40:23+00:00",
     "title": "勒贝格(Lebesgue)控制收敛定理",
     "markdown_sha256": "a9c78d7d490ba178a76ab4a5adf07823dcbe08a5b15eaaa5b51db216fcb79aee",
     "converter_version": 1
   },
   "3188": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:20:18+00:00",
+    "checked_at": "2026-11-15T09:40:26+00:00",
     "title": "当概率遇上复变：从二项分布到泊松分布",
     "markdown_sha256": "f3da58529963866d45b9b651305b75ece42976112d3ba66be682060f17a13ab4",
     "converter_version": 1
   },
   "3181": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:20:18+00:00",
+    "checked_at": "2026-11-15T09:40:30+00:00",
     "title": "借助变分法变换坐标",
     "markdown_sha256": "82d4b0e91bfd1906cfadebe53047bc2190993b84ef6cca4045d1452b9a6d8255",
     "converter_version": 1
   },
   "4170": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:20:18+00:00",
+    "checked_at": "2026-11-15T09:40:33+00:00",
     "title": "2015年全年天象",
     "markdown_sha256": "23d5a929ae82434c9d0643fde9507d4c2595614cc39d8a5388d7b4d0cbf23225",
     "converter_version": 1
   },
   "3171": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:20:18+00:00",
+    "checked_at": "2026-11-15T09:40:37+00:00",
     "title": "我的写论文软件组合",
     "markdown_sha256": "96e5c067e9cd1946f86ced1863953fe78af9922e3e7925e371b40fa817f10df9",
     "converter_version": 1
   },
   "3154": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:20:18+00:00",
+    "checked_at": "2026-11-15T09:40:40+00:00",
     "title": "鬼斧神工：求n维球的体积",
     "markdown_sha256": "d2a28eb7621876bd61d73339a2d8f1ef25c19993145a03e2c97d7da16e0dc2a1",
     "converter_version": 1
@@ -4684,7 +4684,7 @@
   },
   "3103": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:20:19+00:00",
+    "checked_at": "2026-11-15T09:40:44+00:00",
     "title": "结果恒为整数的多项式",
     "markdown_sha256": "4974fa027a92abe2c9fbe27db149a1f9727f587f9b0279f4c2668efbaf1dec44",
     "converter_version": 1
@@ -8464,7 +8464,7 @@
   },
   "132": {
     "status": "conversion_failed",
-    "checked_at": "2026-11-14T09:10:48+00:00",
+    "checked_at": "2026-11-15T09:40:44+00:00",
     "title": "一道从小学到高中都可能考到的题目",
     "error": "Unreviewed legacy element: a<b，则有<br",
     "converter_version": 1,

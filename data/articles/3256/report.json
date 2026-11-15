@@ -6,7 +6,14 @@
     "source_url": "https://spaces.ac.cn/archives/3256",
     "date": "2015-03-28",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "数学研究",
+    "source_tags": [
+      "不等式",
+      "极限",
+      "分析"
+    ],
+    "source_summary": null
   },
   "validation": {
     "passed": true,
@@ -30,8 +37,8 @@
     "converter_version": 1,
     "markdown_sha256": "fb44c4cd69cc340b791d613a322dc1395e71c7643c89435a1580f0e99ee066d6"
   },
-  "fetched_at": "2026-09-14T13:47:07+00:00",
+  "fetched_at": "2026-11-15T09:39:50+00:00",
   "source_snapshot_sha256": "75e8528626ff09a909ed81fbaacafe08a1f67ebcb1db5339fa8d62a9d4ef8c11",
   "images": {},
-  "local_only": true
+  "publication_policy": "config/mirror.json"
 }

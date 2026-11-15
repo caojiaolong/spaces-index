@@ -6,9 +6,15 @@
     "source_url": "https://spaces.ac.cn/archives/3252",
     "date": "2015-03-27",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "数学研究",
+    "source_tags": [
+      "物理",
+      "面积"
+    ],
+    "source_summary": null
   },
-  "fetched_at": "2026-09-14T13:47:14+00:00",
+  "fetched_at": "2026-11-15T09:39:54+00:00",
   "source_snapshot_sha256": "f7db10aa8158a184262e3641802527381c24ee37f6ccbf98109efaf6badb6ef4",
   "validators": {
     "etag": null,

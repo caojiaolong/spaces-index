@@ -6,7 +6,14 @@
     "source_url": "https://spaces.ac.cn/archives/3331",
     "date": "2015-06-06",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "信息时代",
+    "source_tags": [
+      "神经网络",
+      "深度学习",
+      "机器学习"
+    ],
+    "source_summary": "当然，深度学习的内容非常丰富，也有各种各样的变形，值得一提的是，基于深度学习的很多模型，都达到了State Of Art的效果（艺术级的，也就是最先进的），深度学习的威力可见一斑。 本文不是深度学习的入门教程，仅仅是笔者对神经网络和深度学习的一些粗浅理解，如果读者想要系统地学习相关理论，最好先阅读一些数据挖掘和机器学习的书籍，了解其中的基本概念，然后阅读文章开头提到的两篇文章。 http://ufldl.stanford.edu/wiki/UFLDL教程 http://blog.csdn.net/zouxy09/article/details/8775360"
   },
   "validation": {
     "passed": true,
@@ -30,8 +37,8 @@
     "converter_version": 1,
     "markdown_sha256": "547213a7453155868abd6272da198ed940739f98660055d173bdcef08d7b141d"
   },
-  "fetched_at": "2026-09-14T13:46:05+00:00",
+  "fetched_at": "2026-11-15T09:39:26+00:00",
   "source_snapshot_sha256": "b86efb8ebac0c52f2ad060af7b81da43139c837460224804e268ee331a6c3868",
   "images": {},
-  "local_only": true
+  "publication_policy": "config/mirror.json"
 }

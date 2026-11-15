@@ -6,7 +6,13 @@
     "source_url": "https://spaces.ac.cn/archives/3204",
     "date": "2015-01-20",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "生活/情感",
+    "source_tags": [
+      "书籍",
+      "费曼"
+    ],
+    "source_summary": null
   },
   "validation": {
     "passed": true,
@@ -30,8 +36,8 @@
     "converter_version": 1,
     "markdown_sha256": "9df714486a85a04aaaf115dc28cafa433297ceac2a05a31134d38e39cb6167d4"
   },
-  "fetched_at": "2026-09-14T13:47:53+00:00",
+  "fetched_at": "2026-11-15T09:40:15+00:00",
   "source_snapshot_sha256": "dd40a8a2cabfeb144f8d19551d54cfd179a52ddf7b4b783ab0ce142975f3f110",
   "images": {},
-  "local_only": true
+  "publication_policy": "config/mirror.json"
 }

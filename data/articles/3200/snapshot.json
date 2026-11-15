@@ -6,9 +6,16 @@
     "source_url": "https://spaces.ac.cn/archives/3200",
     "date": "2015-01-20",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "数学研究",
+    "source_tags": [
+      "素数",
+      "群论",
+      "域"
+    ],
+    "source_summary": null
   },
-  "fetched_at": "2026-09-14T13:48:00+00:00",
+  "fetched_at": "2026-11-15T09:40:19+00:00",
   "source_snapshot_sha256": "17e193cab1aec5129ddf5e0d5ad3c8cd729e2a23c81e249e181115bd4f4704e6",
   "validators": {
     "etag": null,
