@@ -6,7 +6,14 @@
     "source_url": "https://spaces.ac.cn/archives/2985",
     "date": "2014-10-12",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "数学研究",
+    "source_tags": [
+      "生成函数",
+      "分拆",
+      "集合"
+    ],
+    "source_summary": null
   },
   "validation": {
     "passed": true,
@@ -30,8 +37,8 @@
     "converter_version": 1,
     "markdown_sha256": "8c600735ce19d634cb567153eb8054c7fe5e0113474182daa22e02eff40d78db"
   },
-  "fetched_at": "2026-09-14T13:50:43+00:00",
+  "fetched_at": "2026-11-16T09:58:12+00:00",
   "source_snapshot_sha256": "570b910afaf4b44a4fbc42816695648188d8655cc23fa6b9b90cb999a6ac546d",
   "images": {},
-  "local_only": true
+  "publication_policy": "config/mirror.json"
 }

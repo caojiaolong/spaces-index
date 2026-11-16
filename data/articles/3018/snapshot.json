@@ -6,9 +6,16 @@
     "source_url": "https://spaces.ac.cn/archives/3018",
     "date": "2014-10-27",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "数学研究",
+    "source_tags": [
+      "算子",
+      "算符",
+      "差分"
+    ],
+    "source_summary": null
   },
-  "fetched_at": "2026-09-14T13:50:12+00:00",
+  "fetched_at": "2026-11-16T09:57:58+00:00",
   "source_snapshot_sha256": "36a6f0cf9c2354e1d0a8b0ae18d8e17699e379835b93bf41d03ffc0117765a2e",
   "validators": {
     "etag": null,

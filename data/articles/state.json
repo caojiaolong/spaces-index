@@ -4649,35 +4649,35 @@
   },
   "3487": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:20:19+00:00",
+    "checked_at": "2026-11-16T09:57:16+00:00",
     "title": "2014年全年天象",
     "markdown_sha256": "a72f6829615688607e4dc8d7b0452db092105643680f722bc08b1f0dd8b78c0b",
     "converter_version": 1
   },
   "3150": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:20:19+00:00",
+    "checked_at": "2026-11-16T09:57:20+00:00",
     "title": "将多项式分解为两个不可约多项式之和",
     "markdown_sha256": "e2e98f9edd92d68f84005ba4ca344d5960f51bac3f4657e5f6e187a5e72be00c",
     "converter_version": 1
   },
   "3134": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:20:19+00:00",
+    "checked_at": "2026-11-16T09:57:23+00:00",
     "title": "迟到一年的建模：再探碎纸复原",
     "markdown_sha256": "e6f581975a822854d9b0afb6d9bc00e52888ee8d25306877e8d1e7f03dca9c6d",
     "converter_version": 1
   },
   "3120": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:20:19+00:00",
+    "checked_at": "2026-11-16T09:57:27+00:00",
     "title": "两生物种群竞争模型：LaTeX+Python",
     "markdown_sha256": "06086482fa4b3a4e4ff7dd8fc0333cad5998eb338a8e95b5577ddc92e9fa7664",
     "converter_version": 1
   },
   "3108": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:20:19+00:00",
+    "checked_at": "2026-11-16T09:57:30+00:00",
     "title": "伽马函数的傅里叶变换之路",
     "markdown_sha256": "d9a5f174b042fdaf85afd45b8331bc37bea2e4402be1c1ae6e58c2bbafe21b05",
     "converter_version": 1
@@ -4691,119 +4691,119 @@
   },
   "3101": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:20:20+00:00",
+    "checked_at": "2026-11-16T09:57:34+00:00",
     "title": "正弦级数和余弦级数",
     "markdown_sha256": "a4da3e580f1716f07f72c03afb4ce41f946bdcee1ab9b9853b36e9eb9d15429e",
     "converter_version": 1
   },
   "3092": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:20:20+00:00",
+    "checked_at": "2026-11-16T09:57:37+00:00",
     "title": "力的无穷分解与格林函数法",
     "markdown_sha256": "1182864697a22b4734a677d98f094bec65c028fab99a593bd74ab06189aacb34",
     "converter_version": 1
   },
   "3086": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:20:20+00:00",
+    "checked_at": "2026-11-16T09:57:41+00:00",
     "title": " [转载] 做数学一定要是天才吗？",
     "markdown_sha256": "1c8ab96bab027320c05ecf9b3330dd069b977971a1ff42dc66f8f6713a84195e",
     "converter_version": 1
   },
   "3064": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:20:20+00:00",
+    "checked_at": "2026-11-16T09:57:44+00:00",
     "title": "特殊的通项公式：二次非线性递推",
     "markdown_sha256": "0e7c41933945866674aa8d36e66d641a952e3f2c207412d5d8dfdae01f6d82b5",
     "converter_version": 1
   },
   "3060": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:20:20+00:00",
+    "checked_at": "2026-11-16T09:57:47+00:00",
     "title": "实数域上有限维可除代数只有四种",
     "markdown_sha256": "2557c7f17fdb9318c85646b4cda5560cb952e54f6fb09add5d1c7ce8d422f32c",
     "converter_version": 1
   },
   "3036": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:20:20+00:00",
+    "checked_at": "2026-11-16T09:57:51+00:00",
     "title": "只有两个四阶群和六阶群",
     "markdown_sha256": "dd3af57dbac13ea81abb7ca4915ae3b4d51d0389929bec93700a0c6932349a4a",
     "converter_version": 1
   },
   "3026": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:20:20+00:00",
+    "checked_at": "2026-11-16T09:57:54+00:00",
     "title": "在Python中使用GMP（gmpy2）",
     "markdown_sha256": "86d1d38a0af4746d66c2e58821c7eceb54bd18975d8cdbcdccd5ef5e9a33f35e",
     "converter_version": 1
   },
   "3018": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:20:21+00:00",
+    "checked_at": "2026-11-16T09:57:58+00:00",
     "title": "算符的艺术：差分、微分与伯努利数",
     "markdown_sha256": "8667b01d21337fc34bb0030e07d1fa456820156621839b5a7c887fe722f6ef37",
     "converter_version": 1
   },
   "3008": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:20:21+00:00",
+    "checked_at": "2026-11-16T09:58:01+00:00",
     "title": "从费马大定理谈起（十二）：再谈谈切线法",
     "markdown_sha256": "56e849f01ca3ec15e2f7158db593cd5cb431d3b2fc465a6c5b93b4a0074edab4",
     "converter_version": 1
   },
   "2996": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:20:21+00:00",
+    "checked_at": "2026-11-16T09:58:05+00:00",
     "title": "从费马大定理谈起（十一）：有理点与切割线法",
     "markdown_sha256": "52a8f6e3289b446410890f1c5b5819f44f535d6efce6e18ff7828e855e56f078",
     "converter_version": 1
   },
   "2991": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:20:21+00:00",
+    "checked_at": "2026-11-16T09:58:08+00:00",
     "title": "两百万素数之和与“电脑病”",
     "markdown_sha256": "dfa2c8aa70cc2e06372cef86b26922b10a4bbacda69ddeb6a78794c419322e83",
     "converter_version": 1
   },
   "2985": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:20:21+00:00",
+    "checked_at": "2026-11-16T09:58:12+00:00",
     "title": "集合的划分与贝尔数",
     "markdown_sha256": "8c600735ce19d634cb567153eb8054c7fe5e0113474182daa22e02eff40d78db",
     "converter_version": 1
   },
   "2972": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:20:21+00:00",
+    "checked_at": "2026-11-16T09:58:15+00:00",
     "title": "从费马大定理谈起（十）：x^3+y^3=z^3+w^3",
     "markdown_sha256": "b0c3bd07bf714a12917efbfb8c3ecdeecd5db3128a20a4a8c4cd17fd6959af0c",
     "converter_version": 1
   },
   "2971": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:20:21+00:00",
+    "checked_at": "2026-11-16T09:58:18+00:00",
     "title": "班门弄斧：Python的代码能有多简洁？",
     "markdown_sha256": "3cd7659318e0861d717b3463f528436b0e67be2b8547ee0dd91a18d258b1857e",
     "converter_version": 1
   },
   "2964": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:20:21+00:00",
+    "checked_at": "2026-11-16T09:58:22+00:00",
     "title": "几个有关集合势的“简单”证明",
     "markdown_sha256": "8bf7c486040f4e38eda15ec88ce4ca3a9857495e0345a0a4c1a79c01166cd549",
     "converter_version": 1
   },
   "2953": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:20:21+00:00",
+    "checked_at": "2026-11-16T09:58:25+00:00",
     "title": "实数集到无理数集的双射",
     "markdown_sha256": "e2336880dddd47be24e1172f3c5249da890e309c5ffd9b7a8b3ebcb6b7c547f6",
     "converter_version": 1
   },
   "2951": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:20:21+00:00",
+    "checked_at": "2026-11-16T09:58:29+00:00",
     "title": "Cantor-Bernstein 定理（给出双射！）",
     "markdown_sha256": "5306c531b5ace60e7fb45e4caaae3883247fabaf290458daf037481071e7c22b",
     "converter_version": 1
@@ -4852,21 +4852,21 @@
   },
   "2858": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:20:22+00:00",
+    "checked_at": "2026-11-16T09:58:32+00:00",
     "title": "从费马大定理谈起（六）：n=4（2）",
     "markdown_sha256": "76af6740322e56cd4c72b5dcd69ed28cb2407cf2f82a9f8396910e7d1e60c18d",
     "converter_version": 1
   },
   "2831": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:20:22+00:00",
+    "checked_at": "2026-11-16T09:58:36+00:00",
     "title": " 从费马大定理谈起（五）：n=4",
     "markdown_sha256": "741dc5e8cb533cd018d341fa84072e4086cddd790515a03029bca322a33be531",
     "converter_version": 1
   },
   "2819": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:20:22+00:00",
+    "checked_at": "2026-11-16T09:58:39+00:00",
     "title": " 从费马大定理谈起（四）：唯一分解整环",
     "markdown_sha256": "535b323067aebec00086428862b5749b4e59a9b73c735c74be060976208f913c",
     "converter_version": 1
@@ -8464,7 +8464,7 @@
   },
   "132": {
     "status": "conversion_failed",
-    "checked_at": "2026-11-15T09:40:44+00:00",
+    "checked_at": "2026-11-16T09:58:39+00:00",
     "title": "一道从小学到高中都可能考到的题目",
     "error": "Unreviewed legacy element: a<b，则有<br",
     "converter_version": 1,

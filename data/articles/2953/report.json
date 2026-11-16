@@ -6,7 +6,15 @@
     "source_url": "https://spaces.ac.cn/archives/2953",
     "date": "2014-09-22",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "数学研究",
+    "source_tags": [
+      "无穷",
+      "函数",
+      "集合",
+      "构造"
+    ],
+    "source_summary": null
   },
   "validation": {
     "passed": true,
@@ -30,8 +38,8 @@
     "converter_version": 1,
     "markdown_sha256": "e2336880dddd47be24e1172f3c5249da890e309c5ffd9b7a8b3ebcb6b7c547f6"
   },
-  "fetched_at": "2026-09-14T13:51:09+00:00",
+  "fetched_at": "2026-11-16T09:58:25+00:00",
   "source_snapshot_sha256": "684e369c20cf13bd1c9645f38c4c63041ca10c229b064a0eb53cfa2d59835e4e",
   "images": {},
-  "local_only": true
+  "publication_policy": "config/mirror.json"
 }

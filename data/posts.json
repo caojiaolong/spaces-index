@@ -9650,7 +9650,8 @@
       "天象",
       "NASA"
     ],
-    "source_summary": null
+    "source_summary": null,
+    "metadata_checked_at": "2026-11-16T09:57:16+00:00"
   },
   {
     "id": "3150",
@@ -9663,7 +9664,8 @@
       "多项式",
       "分解"
     ],
-    "source_summary": null
+    "source_summary": null,
+    "metadata_checked_at": "2026-11-16T09:57:20+00:00"
   },
   {
     "id": "3134",
@@ -9677,7 +9679,8 @@
       "建模",
       "图像"
     ],
-    "source_summary": null
+    "source_summary": null,
+    "metadata_checked_at": "2026-11-16T09:57:23+00:00"
   },
   {
     "id": "3120",
@@ -9691,7 +9694,8 @@
       "建模",
       "定性"
     ],
-    "source_summary": null
+    "source_summary": null,
+    "metadata_checked_at": "2026-11-16T09:57:27+00:00"
   },
   {
     "id": "3108",
@@ -9704,7 +9708,8 @@
       "fourier",
       "函数方程"
     ],
-    "source_summary": null
+    "source_summary": null,
+    "metadata_checked_at": "2026-11-16T09:57:30+00:00"
   },
   {
     "id": "3103",
@@ -9730,7 +9735,8 @@
       "三角函数",
       "复数"
     ],
-    "source_summary": null
+    "source_summary": null,
+    "metadata_checked_at": "2026-11-16T09:57:34+00:00"
   },
   {
     "id": "3092",
@@ -9743,7 +9749,8 @@
       "微分方程",
       "费曼"
     ],
-    "source_summary": null
+    "source_summary": null,
+    "metadata_checked_at": "2026-11-16T09:57:37+00:00"
   },
   {
     "id": "3086",
@@ -9754,7 +9761,8 @@
     "source_tags": [
       "转载"
     ],
-    "source_summary": null
+    "source_summary": null,
+    "metadata_checked_at": "2026-11-16T09:57:41+00:00"
   },
   {
     "id": "3064",
@@ -9767,7 +9775,8 @@
       "构造",
       "非线性"
     ],
-    "source_summary": null
+    "source_summary": null,
+    "metadata_checked_at": "2026-11-16T09:57:44+00:00"
   },
   {
     "id": "3060",
@@ -9780,7 +9789,8 @@
       "矩阵",
       "环论"
     ],
-    "source_summary": null
+    "source_summary": null,
+    "metadata_checked_at": "2026-11-16T09:57:47+00:00"
   },
   {
     "id": "3036",
@@ -9793,7 +9803,8 @@
       "构造",
       "分类"
     ],
-    "source_summary": null
+    "source_summary": null,
+    "metadata_checked_at": "2026-11-16T09:57:51+00:00"
   },
   {
     "id": "3026",
@@ -9805,7 +9816,8 @@
       "数论",
       "python"
     ],
-    "source_summary": null
+    "source_summary": null,
+    "metadata_checked_at": "2026-11-16T09:57:54+00:00"
   },
   {
     "id": "3018",
@@ -9818,7 +9830,8 @@
       "算符",
       "差分"
     ],
-    "source_summary": null
+    "source_summary": null,
+    "metadata_checked_at": "2026-11-16T09:57:58+00:00"
   },
   {
     "id": "3008",
@@ -9833,7 +9846,8 @@
       "费马大定理",
       "有理点"
     ],
-    "source_summary": null
+    "source_summary": null,
+    "metadata_checked_at": "2026-11-16T09:58:01+00:00"
   },
   {
     "id": "2996",
@@ -9848,7 +9862,8 @@
       "费马大定理",
       "有理点"
     ],
-    "source_summary": null
+    "source_summary": null,
+    "metadata_checked_at": "2026-11-16T09:58:05+00:00"
   },
   {
     "id": "2991",
@@ -9859,7 +9874,8 @@
     "source_tags": [
       "python"
     ],
-    "source_summary": null
+    "source_summary": null,
+    "metadata_checked_at": "2026-11-16T09:58:08+00:00"
   },
   {
     "id": "2985",
@@ -9872,7 +9888,8 @@
       "分拆",
       "集合"
     ],
-    "source_summary": null
+    "source_summary": null,
+    "metadata_checked_at": "2026-11-16T09:58:12+00:00"
   },
   {
     "id": "2972",
@@ -9885,7 +9902,8 @@
       "不定方程",
       "费马大定理"
     ],
-    "source_summary": null
+    "source_summary": null,
+    "metadata_checked_at": "2026-11-16T09:58:15+00:00"
   },
   {
     "id": "2971",
@@ -9897,7 +9915,8 @@
       "python",
       "算法"
     ],
-    "source_summary": null
+    "source_summary": null,
+    "metadata_checked_at": "2026-11-16T09:58:18+00:00"
   },
   {
     "id": "2964",
@@ -9909,7 +9928,8 @@
       "证明",
       "集合"
     ],
-    "source_summary": null
+    "source_summary": null,
+    "metadata_checked_at": "2026-11-16T09:58:22+00:00"
   },
   {
     "id": "2953",
@@ -9923,7 +9943,8 @@
       "集合",
       "构造"
     ],
-    "source_summary": null
+    "source_summary": null,
+    "metadata_checked_at": "2026-11-16T09:58:25+00:00"
   },
   {
     "id": "2951",
@@ -9937,7 +9958,8 @@
       "集合",
       "构造"
     ],
-    "source_summary": null
+    "source_summary": null,
+    "metadata_checked_at": "2026-11-16T09:58:29+00:00"
   },
   {
     "id": "2942",
@@ -10028,7 +10050,8 @@
       "不定方程",
       "费马大定理"
     ],
-    "source_summary": null
+    "source_summary": null,
+    "metadata_checked_at": "2026-11-16T09:58:32+00:00"
   },
   {
     "id": "2831",
@@ -10041,7 +10064,8 @@
       "不定方程",
       "费马大定理"
     ],
-    "source_summary": null
+    "source_summary": null,
+    "metadata_checked_at": "2026-11-16T09:58:36+00:00"
   },
   {
     "id": "2819",
@@ -10055,7 +10079,8 @@
       "分解",
       "环论"
     ],
-    "source_summary": null
+    "source_summary": null,
+    "metadata_checked_at": "2026-11-16T09:58:39+00:00"
   },
   {
     "id": "2811",

@@ -6,7 +6,12 @@
     "source_url": "https://spaces.ac.cn/archives/3086",
     "date": "2014-11-17",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "千奇百怪",
+    "source_tags": [
+      "转载"
+    ],
+    "source_summary": null
   },
   "validation": {
     "passed": true,
@@ -30,8 +35,8 @@
     "converter_version": 1,
     "markdown_sha256": "1c8ab96bab027320c05ecf9b3330dd069b977971a1ff42dc66f8f6713a84195e"
   },
-  "fetched_at": "2026-09-14T13:49:39+00:00",
+  "fetched_at": "2026-11-16T09:57:41+00:00",
   "source_snapshot_sha256": "209740f70536afce6e20c56d79ccb0340d4222a2f2571a2ef1f56f3f8d9615bb",
   "images": {},
-  "local_only": true
+  "publication_policy": "config/mirror.json"
 }

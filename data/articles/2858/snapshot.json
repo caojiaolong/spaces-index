@@ -6,9 +6,16 @@
     "source_url": "https://spaces.ac.cn/archives/2858",
     "date": "2014-08-19",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "数学研究",
+    "source_tags": [
+      "数论",
+      "不定方程",
+      "费马大定理"
+    ],
+    "source_summary": null
   },
-  "fetched_at": "2026-09-14T13:52:03+00:00",
+  "fetched_at": "2026-11-16T09:58:32+00:00",
   "source_snapshot_sha256": "a73d89dcc4ef2e5b3038a17e8402847939965cf1672606d267ed6b13cdd5280d",
   "validators": {
     "etag": null,

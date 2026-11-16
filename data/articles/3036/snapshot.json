@@ -6,9 +6,16 @@
     "source_url": "https://spaces.ac.cn/archives/3036",
     "date": "2014-10-30",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "数学研究",
+    "source_tags": [
+      "群论",
+      "构造",
+      "分类"
+    ],
+    "source_summary": null
   },
-  "fetched_at": "2026-09-14T13:49:59+00:00",
+  "fetched_at": "2026-11-16T09:57:51+00:00",
   "source_snapshot_sha256": "27ddac77aa2fb6f73cf104b76fe0c15140b42747df95d82c6e4a47ae45aceccc",
   "validators": {
     "etag": null,

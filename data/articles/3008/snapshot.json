@@ -6,9 +6,18 @@
     "source_url": "https://spaces.ac.cn/archives/3008",
     "date": "2014-10-25",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "数学研究",
+    "source_tags": [
+      "几何",
+      "数论",
+      "不定方程",
+      "费马大定理",
+      "有理点"
+    ],
+    "source_summary": null
   },
-  "fetched_at": "2026-09-14T13:50:21+00:00",
+  "fetched_at": "2026-11-16T09:58:01+00:00",
   "source_snapshot_sha256": "b999c51622758f1978d51808abfb8c123864764d2204ec9cf99a3a333fe9c62f",
   "validators": {
     "etag": null,

@@ -6,7 +6,14 @@
     "source_url": "https://spaces.ac.cn/archives/2972",
     "date": "2014-10-10",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "数学研究",
+    "source_tags": [
+      "数论",
+      "不定方程",
+      "费马大定理"
+    ],
+    "source_summary": null
   },
   "validation": {
     "passed": true,
@@ -30,8 +37,8 @@
     "converter_version": 1,
     "markdown_sha256": "b0c3bd07bf714a12917efbfb8c3ecdeecd5db3128a20a4a8c4cd17fd6959af0c"
   },
-  "fetched_at": "2026-09-14T13:50:50+00:00",
+  "fetched_at": "2026-11-16T09:58:15+00:00",
   "source_snapshot_sha256": "97ac9d7df53eb286cf4f4b65793bade80b7d7443885823f8cfb4e71080925a3f",
   "images": {},
-  "local_only": true
+  "publication_policy": "config/mirror.json"
 }

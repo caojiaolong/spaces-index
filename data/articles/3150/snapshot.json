@@ -6,9 +6,16 @@
     "source_url": "https://spaces.ac.cn/archives/3150",
     "date": "2014-12-22",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "数学研究",
+    "source_tags": [
+      "代数",
+      "多项式",
+      "分解"
+    ],
+    "source_summary": null
   },
-  "fetched_at": "2026-09-14T13:48:51+00:00",
+  "fetched_at": "2026-11-16T09:57:20+00:00",
   "source_snapshot_sha256": "ca49e5c87bd8eb2f5a98240341ce728ad0efa7b195f8f3498840f12d00880348",
   "validators": {
     "etag": null,
