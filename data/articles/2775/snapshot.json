@@ -6,9 +6,15 @@
     "source_url": "https://spaces.ac.cn/archives/2775",
     "date": "2014-07-22",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "生活/情感",
+    "source_tags": [
+      "数论",
+      "python"
+    ],
+    "source_summary": null
   },
-  "fetched_at": "2026-09-14T13:53:04+00:00",
+  "fetched_at": "2026-11-17T10:54:09+00:00",
   "source_snapshot_sha256": "2be767ccbc467bf699c2f361a8341f18b27d3e4996d0e720a609e127b6d12834",
   "validators": {
     "etag": null,

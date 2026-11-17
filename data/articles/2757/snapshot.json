@@ -6,9 +6,17 @@
     "source_url": "https://spaces.ac.cn/archives/2757",
     "date": "2014-07-15",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "数学研究",
+    "source_tags": [
+      "向量",
+      "矩阵",
+      "线性",
+      "行列式"
+    ],
+    "source_summary": null
   },
-  "fetched_at": "2026-09-14T13:53:17+00:00",
+  "fetched_at": "2026-11-17T10:54:16+00:00",
   "source_snapshot_sha256": "ce99ce87e7270566fc43a7ccae5eabbdf1d6434aa4c50e229518acd3c324d9b8",
   "validators": {
     "etag": null,

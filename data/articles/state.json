@@ -4810,42 +4810,42 @@
   },
   "2942": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:20:22+00:00",
+    "checked_at": "2026-11-17T10:53:26+00:00",
     "title": "生成函数法与整数的分拆",
     "markdown_sha256": "6b2d49c810a8fb8afbd4bd24a1a0112b992c216207092d2ec8ac1739db2db117",
     "converter_version": 1
   },
   "2935": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:20:22+00:00",
+    "checked_at": "2026-11-17T10:53:30+00:00",
     "title": "[备份]全国大学生数学建模竞赛论文LaTex模板",
     "markdown_sha256": "b46045fea0c244073f1dfbee1ad7cafe63edcddabe1093afb848fc4292bb6c2e",
     "converter_version": 1
   },
   "2910": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:20:22+00:00",
+    "checked_at": "2026-11-17T10:53:33+00:00",
     "title": "从费马大定理谈起（九）：n=3",
     "markdown_sha256": "2cfbb1f3049042c53889866b39da4d400fc3024e6b15d9804b13c5940066e283",
     "converter_version": 1
   },
   "2900": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:20:22+00:00",
+    "checked_at": "2026-11-17T10:53:37+00:00",
     "title": "从费马大定理谈起（八）：艾森斯坦整数",
     "markdown_sha256": "7ca5cf00d6c13663f2c13c3f88559e4d1dd49dcf8d8c936b96aeb77dcb335652",
     "converter_version": 1
   },
   "2891": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:20:22+00:00",
+    "checked_at": "2026-11-17T10:53:40+00:00",
     "title": "让风筝飞",
     "markdown_sha256": "e90638eb745caa9ce8d0190e40dc5c31c35810d29a9aa76269dee44313b8812b",
     "converter_version": 1
   },
   "2886": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:20:22+00:00",
+    "checked_at": "2026-11-17T10:53:44+00:00",
     "title": "从费马大定理谈起（七）：费马平方和定理",
     "markdown_sha256": "3ab35b9f5b6d2d5fe206c10b86124c616a47aaea9c80b89863a8a2574518222a",
     "converter_version": 1
@@ -4873,63 +4873,63 @@
   },
   "2811": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:20:23+00:00",
+    "checked_at": "2026-11-17T10:53:47+00:00",
     "title": "从费马大定理谈起（三）：高斯整数",
     "markdown_sha256": "fc597eda9593631d8fbfa7688098219c24a16508b87838324275faf01ec57ee2",
     "converter_version": 1
   },
   "2808": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:20:23+00:00",
+    "checked_at": "2026-11-17T10:53:51+00:00",
     "title": "从费马大定理谈起（二）：勾股数",
     "markdown_sha256": "c0b5e3329e1fc7f2e98d0d24db7e71d34c5a8726cde2c9a31a0b10d0432344ac",
     "converter_version": 1
   },
   "2805": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:20:23+00:00",
+    "checked_at": "2026-11-17T10:53:55+00:00",
     "title": "从费马大定理谈起（一）：背景简介",
     "markdown_sha256": "620ee8624954bf5548cfa03b40a4b6b7f2884b8db77e5f4112d3da42807b2dfa",
     "converter_version": 1
   },
   "2800": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:20:23+00:00",
+    "checked_at": "2026-11-17T10:53:58+00:00",
     "title": "素数之美2：Bertrand假设的证明",
     "markdown_sha256": "f47221f613fed2013db9a69724d0881a7d1c0002af681aaa83a34cf4ef213ea0",
     "converter_version": 1
   },
   "2797": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:20:23+00:00",
+    "checked_at": "2026-11-17T10:54:02+00:00",
     "title": "七夕-雨",
     "markdown_sha256": "9409eef3b45caca312ed8358d4724a6453e20382185163678fc490792fd1967a",
     "converter_version": 1
   },
   "2789": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:20:23+00:00",
+    "checked_at": "2026-11-17T10:54:05+00:00",
     "title": "素数之美1：所有素数之积",
     "markdown_sha256": "0cdf3e4603dda4bcab41026606e024e53758d3877d1292d5fd5acc982bc59214",
     "converter_version": 1
   },
   "2775": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:20:23+00:00",
+    "checked_at": "2026-11-17T10:54:09+00:00",
     "title": "初试在Python中使用PARI/GP",
     "markdown_sha256": "6ccc8f7aaee7c8d6222e20fd6f5df123ba9d150bccfabfd62e6daf48d935086f",
     "converter_version": 1
   },
   "2765": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:20:23+00:00",
+    "checked_at": "2026-11-17T10:54:12+00:00",
     "title": "强大的整数数列网站OEIS",
     "markdown_sha256": "660b227baae2e06b7679ab2215bba7d2381bd2982d53014d291661820b59ecfc",
     "converter_version": 1
   },
   "2757": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:20:23+00:00",
+    "checked_at": "2026-11-17T10:54:16+00:00",
     "title": "《新理解矩阵6》：为什么只有方阵有行列式？",
     "markdown_sha256": "c0c36816fcbe060c5200faa7e240d249ada1a88a7529867ace0708ab7e900ecb",
     "converter_version": 1
@@ -4943,70 +4943,70 @@
   },
   "2726": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:20:24+00:00",
+    "checked_at": "2026-11-17T10:54:19+00:00",
     "title": "[追溯]封装界传奇人物",
     "markdown_sha256": "8c404b41aabb3a4b84210365f4a90c11fbced0eb7148d5061c484c1f5a5626b3",
     "converter_version": 1
   },
   "2723": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:20:24+00:00",
+    "checked_at": "2026-11-17T10:54:23+00:00",
     "title": "勾股数的通解及其推广",
     "markdown_sha256": "4df68437efac1f8a40f2b5f4ad7b21829b639eaf446fd6d17806df8e4885fc5a",
     "converter_version": 1
   },
   "2709": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:20:24+00:00",
+    "checked_at": "2026-11-17T10:54:27+00:00",
     "title": "简单做了个Logo~",
     "markdown_sha256": "c1717d65d2a7626413caf4c9815f57c6100918a3f70603a77b0e30bc099d3b52",
     "converter_version": 1
   },
   "2665": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:20:24+00:00",
+    "checked_at": "2026-11-17T10:54:30+00:00",
     "title": "Project Euler 454 ：五天攻下“擂台”",
     "markdown_sha256": "e9bd2ff7af1be378738b7b1ca9ba9a82ed28c47dc4ed85df12cf8621edac93bd",
     "converter_version": 1
   },
   "2644": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:20:24+00:00",
+    "checked_at": "2026-11-17T10:54:34+00:00",
     "title": "线性微分方程组：已知特解求通解",
     "markdown_sha256": "ce621fda05071e08810b313ffddbdb15f9f55e7238bfd90b9a758746edb78d0a",
     "converter_version": 1
   },
   "2643": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:20:24+00:00",
+    "checked_at": "2026-11-17T10:54:37+00:00",
     "title": "【备忘】访问Google的几个方式",
     "markdown_sha256": "b4c304f94c5a3fe3ddf27a379a163dd1d5f55cbc5bce46b33e00d776165bf076",
     "converter_version": 1
   },
   "2621": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:20:24+00:00",
+    "checked_at": "2026-11-17T10:54:41+00:00",
     "title": "用PyPy提高Python脚本执行效率",
     "markdown_sha256": "d19aaa09c9b8807bf267ee2b7f63f363ec4d03d23728a50667d1af8fd789c1a8",
     "converter_version": 1
   },
   "2612": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:20:24+00:00",
+    "checked_at": "2026-11-17T10:54:44+00:00",
     "title": "两百万前素数之和与前两百万素数之和",
     "markdown_sha256": "def2b88285c0b8761c03b4ff7b04c065cc85d9655e8143430ef6bb0a4d8dccd2",
     "converter_version": 1
   },
   "2611": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:20:24+00:00",
+    "checked_at": "2026-11-17T10:54:48+00:00",
     "title": "【备忘】访问Google的方法（更新）",
     "markdown_sha256": "2a88ba893424ccac8c9fd18f051cbfe4028b49c69ce57bd4a32dedd60c8a9bc4",
     "converter_version": 1
   },
   "2609": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:20:24+00:00",
+    "checked_at": "2026-11-17T10:54:51+00:00",
     "title": "当概率遇上复变：随机游走与路径积分",
     "markdown_sha256": "95dc0641ac77b77eb15afd5b57e7d12a3dc95c75311c70b78e428720de528edb",
     "converter_version": 1
@@ -8464,7 +8464,7 @@
   },
   "132": {
     "status": "conversion_failed",
-    "checked_at": "2026-11-16T09:58:39+00:00",
+    "checked_at": "2026-11-17T10:54:51+00:00",
     "title": "一道从小学到高中都可能考到的题目",
     "error": "Unreviewed legacy element: a<b，则有<br",
     "converter_version": 1,
@@ -9420,6 +9420,13 @@
     "checked_at": "2026-11-09T09:58:26+00:00",
     "title": "让炼丹更科学一些（十一）：无调度学习率新思路",
     "markdown_sha256": "10d3f6f95f643542a412b9fbc52abdbac567c83de0a1e01bec5963bdd692786c",
+    "converter_version": 1
+  },
+  "12010": {
+    "status": "verified",
+    "checked_at": "2026-11-17T10:53:21+00:00",
+    "title": "最佳学习率调度的变分估计",
+    "markdown_sha256": "f628999640d624a1f0939d490aa29c699d09dc1191bea7e4fc0a073f6d70a47a",
     "converter_version": 1
   }
 }

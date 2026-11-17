@@ -6,7 +6,14 @@
     "source_url": "https://spaces.ac.cn/archives/2723",
     "date": "2014-07-01",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "数学研究",
+    "source_tags": [
+      "复数",
+      "数论",
+      "整数"
+    ],
+    "source_summary": null
   },
   "validation": {
     "passed": true,
@@ -30,8 +37,8 @@
     "converter_version": 1,
     "markdown_sha256": "4df68437efac1f8a40f2b5f4ad7b21829b639eaf446fd6d17806df8e4885fc5a"
   },
-  "fetched_at": "2026-09-14T13:53:37+00:00",
+  "fetched_at": "2026-11-17T10:54:23+00:00",
   "source_snapshot_sha256": "a8ba2854c0717181fe8622f528778092c81188eb7dca4150edadb8a3ef5b5f83",
   "images": {},
-  "local_only": true
+  "publication_policy": "config/mirror.json"
 }

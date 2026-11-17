@@ -1,5 +1,26 @@
 [
   {
+    "id": "12010",
+    "title": "最佳学习率调度的变分估计",
+    "url": "https://spaces.ac.cn/archives/12010",
+    "date": "2026-11-17",
+    "source_category": "数学研究",
+    "source_tags": [
+      "最优",
+      "变分",
+      "学习率",
+      "优化器"
+    ],
+    "source_summary": "这篇文章我们讨论了将最佳学习率调度抽象为一个变分问题，继而求最优解的做法。",
+    "metadata_checked_at": "2026-11-17T10:53:21+00:00",
+    "topics": [
+      "优化与训练"
+    ],
+    "series": null,
+    "series_index": null,
+    "level": null
+  },
+  {
     "id": "12003",
     "title": "让炼丹更科学一些（十一）：无调度学习率新思路",
     "url": "https://spaces.ac.cn/archives/12003",
@@ -14767,6 +14788,7 @@
       "组合数学"
     ],
     "source_summary": null,
+    "metadata_checked_at": "2026-11-17T10:53:26+00:00",
     "topics": [
       "数学工具"
     ],
@@ -14786,6 +14808,7 @@
       "建模"
     ],
     "source_summary": null,
+    "metadata_checked_at": "2026-11-17T10:53:30+00:00",
     "topics": [
       "深度学习基础",
       "数学工具",
@@ -14807,6 +14830,7 @@
       "费马大定理"
     ],
     "source_summary": null,
+    "metadata_checked_at": "2026-11-17T10:53:33+00:00",
     "topics": [
       "数学工具"
     ],
@@ -14826,6 +14850,7 @@
       "费马大定理"
     ],
     "source_summary": null,
+    "metadata_checked_at": "2026-11-17T10:53:37+00:00",
     "topics": [
       "数学工具"
     ],
@@ -14846,6 +14871,7 @@
       "量纲分析"
     ],
     "source_summary": null,
+    "metadata_checked_at": "2026-11-17T10:53:40+00:00",
     "topics": [
       "物理化学",
       "阅读写作与随笔"
@@ -14866,6 +14892,7 @@
       "费马大定理"
     ],
     "source_summary": null,
+    "metadata_checked_at": "2026-11-17T10:53:44+00:00",
     "topics": [
       "数学工具"
     ],
@@ -14950,6 +14977,7 @@
       "费马大定理"
     ],
     "source_summary": null,
+    "metadata_checked_at": "2026-11-17T10:53:47+00:00",
     "topics": [
       "数学工具"
     ],
@@ -14970,6 +14998,7 @@
       "费马大定理"
     ],
     "source_summary": null,
+    "metadata_checked_at": "2026-11-17T10:53:51+00:00",
     "topics": [
       "数学工具"
     ],
@@ -14990,6 +15019,7 @@
       "费马大定理"
     ],
     "source_summary": null,
+    "metadata_checked_at": "2026-11-17T10:53:55+00:00",
     "topics": [
       "数学工具"
     ],
@@ -15009,6 +15039,7 @@
       "数论"
     ],
     "source_summary": null,
+    "metadata_checked_at": "2026-11-17T10:53:58+00:00",
     "topics": [
       "数学工具",
       "NLP与信息抽取"
@@ -15027,6 +15058,7 @@
       "节日"
     ],
     "source_summary": null,
+    "metadata_checked_at": "2026-11-17T10:54:01+00:00",
     "topics": [
       "阅读写作与随笔"
     ],
@@ -15045,6 +15077,7 @@
       "数论"
     ],
     "source_summary": null,
+    "metadata_checked_at": "2026-11-17T10:54:05+00:00",
     "topics": [
       "数学工具"
     ],
@@ -15063,6 +15096,7 @@
       "python"
     ],
     "source_summary": null,
+    "metadata_checked_at": "2026-11-17T10:54:09+00:00",
     "topics": [
       "数学工具",
       "工程工具",
@@ -15083,6 +15117,7 @@
       "整数"
     ],
     "source_summary": null,
+    "metadata_checked_at": "2026-11-17T10:54:12+00:00",
     "topics": [
       "数学工具",
       "工程工具"
@@ -15104,6 +15139,7 @@
       "行列式"
     ],
     "source_summary": null,
+    "metadata_checked_at": "2026-11-17T10:54:16+00:00",
     "topics": [
       "数学工具"
     ],
@@ -15143,6 +15179,7 @@
       "追溯"
     ],
     "source_summary": null,
+    "metadata_checked_at": "2026-11-17T10:54:19+00:00",
     "topics": [
       "资源与站务",
       "科普问答与百科"
@@ -15163,6 +15200,7 @@
       "整数"
     ],
     "source_summary": null,
+    "metadata_checked_at": "2026-11-17T10:54:23+00:00",
     "topics": [
       "数学工具"
     ],
@@ -15180,6 +15218,7 @@
       "网站"
     ],
     "source_summary": null,
+    "metadata_checked_at": "2026-11-17T10:54:27+00:00",
     "topics": [
       "工程工具",
       "阅读写作与随笔"
@@ -15201,6 +15240,7 @@
       "优化"
     ],
     "source_summary": null,
+    "metadata_checked_at": "2026-11-17T10:54:30+00:00",
     "topics": [
       "数学工具",
       "工程工具"
@@ -15221,6 +15261,7 @@
       "对称"
     ],
     "source_summary": null,
+    "metadata_checked_at": "2026-11-17T10:54:33+00:00",
     "topics": [
       "数学工具",
       "几何与方程"
@@ -15239,6 +15280,7 @@
       "网站"
     ],
     "source_summary": null,
+    "metadata_checked_at": "2026-11-17T10:54:37+00:00",
     "topics": [
       "工程工具",
       "阅读写作与随笔"
@@ -15258,6 +15300,7 @@
       "python"
     ],
     "source_summary": null,
+    "metadata_checked_at": "2026-11-17T10:54:41+00:00",
     "topics": [
       "数学工具",
       "工程工具"
@@ -15278,6 +15321,7 @@
       "python"
     ],
     "source_summary": null,
+    "metadata_checked_at": "2026-11-17T10:54:44+00:00",
     "topics": [
       "数学工具",
       "工程工具"
@@ -15297,6 +15341,7 @@
       "帮助"
     ],
     "source_summary": null,
+    "metadata_checked_at": "2026-11-17T10:54:48+00:00",
     "topics": [
       "工程工具",
       "科普问答与百科"
@@ -15317,6 +15362,7 @@
       "随机游走"
     ],
     "source_summary": null,
+    "metadata_checked_at": "2026-11-17T10:54:51+00:00",
     "topics": [
       "数学工具",
       "概率统计与信息论",

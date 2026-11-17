@@ -6,7 +6,14 @@
     "source_url": "https://spaces.ac.cn/archives/2644",
     "date": "2014-06-18",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "数学研究",
+    "source_tags": [
+      "积分",
+      "微分方程",
+      "对称"
+    ],
+    "source_summary": null
   },
   "validation": {
     "passed": true,
@@ -30,8 +37,8 @@
     "converter_version": 1,
     "markdown_sha256": "ce621fda05071e08810b313ffddbdb15f9f55e7238bfd90b9a758746edb78d0a"
   },
-  "fetched_at": "2026-09-14T13:53:57+00:00",
+  "fetched_at": "2026-11-17T10:54:34+00:00",
   "source_snapshot_sha256": "e0a083d37ef9b2f29c4406fa127e87b650930068f4225b6cb637c5e1bdfae669",
   "images": {},
-  "local_only": true
+  "publication_policy": "config/mirror.json"
 }

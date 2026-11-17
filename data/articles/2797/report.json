@@ -6,7 +6,12 @@
     "source_url": "https://spaces.ac.cn/archives/2797",
     "date": "2014-08-02",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "生活/情感",
+    "source_tags": [
+      "节日"
+    ],
+    "source_summary": null
   },
   "validation": {
     "passed": true,
@@ -30,8 +35,8 @@
     "converter_version": 1,
     "markdown_sha256": "9409eef3b45caca312ed8358d4724a6453e20382185163678fc490792fd1967a"
   },
-  "fetched_at": "2026-09-14T13:52:51+00:00",
+  "fetched_at": "2026-11-17T10:54:02+00:00",
   "source_snapshot_sha256": "2e36f1cf55e0c024f996970ad77b48cfd04994b2decb8f5b18e1f3033f1f6073",
   "images": {},
-  "local_only": true
+  "publication_policy": "config/mirror.json"
 }

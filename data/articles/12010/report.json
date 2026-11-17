@@ -1,0 +1,45 @@
+{
+  "metadata": {
+    "id": "12010",
+    "title": "最佳学习率调度的变分估计",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/12010",
+    "date": "2026-11-17",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "数学研究",
+    "source_tags": [
+      "最优",
+      "变分",
+      "学习率",
+      "优化器"
+    ],
+    "source_summary": "这篇文章我们讨论了将最佳学习率调度抽象为一个变分问题，继而求最优解的做法。"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 133,
+    "display_formula_count": 30,
+    "image_count": 0,
+    "heading_count": 9,
+    "code_block_count": 0,
+    "source_text_sha256": "ba9f56a305785ad91e7a570e53ad2f39e270808f491965154b0dbcb9c224fde5",
+    "output_text_sha256": "ba9f56a305785ad91e7a570e53ad2f39e270808f491965154b0dbcb9c224fde5",
+    "latex_sha256": "da57195dd467ac6a6f9ca6f626ebe1d5db49e8611737c2d398a321b7676eaf7e",
+    "body_sha256": "1b4b8ce3fa37e5056980c681217c1b9eab67e2505a23ac1fc8b7907b1bf5e364",
+    "converter_version": 1,
+    "markdown_sha256": "f628999640d624a1f0939d490aa29c699d09dc1191bea7e4fc0a073f6d70a47a"
+  },
+  "fetched_at": "2026-11-17T10:53:21+00:00",
+  "source_snapshot_sha256": "e3c6329c6b33353d536709f837e0db07586236f2d62fe6a0807f85de55269048",
+  "images": {},
+  "publication_policy": "config/mirror.json"
+}

@@ -6,7 +6,13 @@
     "source_url": "https://spaces.ac.cn/archives/2800",
     "date": "2014-08-09",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "数学研究",
+    "source_tags": [
+      "素数",
+      "数论"
+    ],
+    "source_summary": null
   },
   "validation": {
     "passed": true,
@@ -30,8 +36,8 @@
     "converter_version": 1,
     "markdown_sha256": "f47221f613fed2013db9a69724d0881a7d1c0002af681aaa83a34cf4ef213ea0"
   },
-  "fetched_at": "2026-09-14T13:52:45+00:00",
+  "fetched_at": "2026-11-17T10:53:58+00:00",
   "source_snapshot_sha256": "30eda788ea4ca5c5e483cc8bec45a1550bca0e4538cfd673500516d1bbef49f8",
   "images": {},
-  "local_only": true
+  "publication_policy": "config/mirror.json"
 }

@@ -6,7 +6,15 @@
     "source_url": "https://spaces.ac.cn/archives/2942",
     "date": "2014-09-16",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "数学研究",
+    "source_tags": [
+      "生成函数",
+      "母函数",
+      "分拆",
+      "组合数学"
+    ],
+    "source_summary": null
   },
   "validation": {
     "passed": true,
@@ -30,8 +38,8 @@
     "converter_version": 1,
     "markdown_sha256": "6b2d49c810a8fb8afbd4bd24a1a0112b992c216207092d2ec8ac1739db2db117"
   },
-  "fetched_at": "2026-09-14T13:51:22+00:00",
+  "fetched_at": "2026-11-17T10:53:26+00:00",
   "source_snapshot_sha256": "712e91a12f61ba7f8639f848be5fc81df9f7a2c1b960180ce3c2d8290580ae95",
   "images": {},
-  "local_only": true
+  "publication_policy": "config/mirror.json"
 }

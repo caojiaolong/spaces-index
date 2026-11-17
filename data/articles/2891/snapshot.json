@@ -6,9 +6,16 @@
     "source_url": "https://spaces.ac.cn/archives/2891",
     "date": "2014-08-28",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "物理化学",
+    "source_tags": [
+      "生活",
+      "力学",
+      "量纲分析"
+    ],
+    "source_summary": null
   },
-  "fetched_at": "2026-09-14T13:51:49+00:00",
+  "fetched_at": "2026-11-17T10:53:40+00:00",
   "source_snapshot_sha256": "e3976d20a94c911b5c95bc284fa09c0d2838d7c277617d66571016aebf258085",
   "validators": {
     "etag": null,

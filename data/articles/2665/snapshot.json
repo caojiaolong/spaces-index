@@ -6,9 +6,17 @@
     "source_url": "https://spaces.ac.cn/archives/2665",
     "date": "2014-06-27",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "数学研究",
+    "source_tags": [
+      "素数",
+      "数论",
+      "python",
+      "优化"
+    ],
+    "source_summary": null
   },
-  "fetched_at": "2026-09-14T13:53:51+00:00",
+  "fetched_at": "2026-11-17T10:54:30+00:00",
   "source_snapshot_sha256": "5645ed506e307371959125fd5e46a0ad8c5eeabaf0cba1f340ad131af8ceaff8",
   "validators": {
     "etag": null,

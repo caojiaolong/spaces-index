@@ -6,7 +6,14 @@
     "source_url": "https://spaces.ac.cn/archives/2935",
     "date": "2014-09-11",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "资源共享",
+    "source_tags": [
+      "转载",
+      "下载",
+      "建模"
+    ],
+    "source_summary": null
   },
   "validation": {
     "passed": true,
@@ -30,8 +37,8 @@
     "converter_version": 1,
     "markdown_sha256": "b46045fea0c244073f1dfbee1ad7cafe63edcddabe1093afb848fc4292bb6c2e"
   },
-  "fetched_at": "2026-09-14T13:51:29+00:00",
+  "fetched_at": "2026-11-17T10:53:30+00:00",
   "source_snapshot_sha256": "9acc186db0763199846dc1ec2a06db71590bebec9bdd4d1b9b965825c004bedb",
   "images": {},
-  "local_only": true
+  "publication_policy": "config/mirror.json"
 }

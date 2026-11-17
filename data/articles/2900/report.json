@@ -6,7 +6,13 @@
     "source_url": "https://spaces.ac.cn/archives/2900",
     "date": "2014-08-30",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "数学研究",
+    "source_tags": [
+      "数论",
+      "费马大定理"
+    ],
+    "source_summary": null
   },
   "validation": {
     "passed": true,
@@ -30,8 +36,8 @@
     "converter_version": 1,
     "markdown_sha256": "7ca5cf00d6c13663f2c13c3f88559e4d1dd49dcf8d8c936b96aeb77dcb335652"
   },
-  "fetched_at": "2026-09-14T13:51:42+00:00",
+  "fetched_at": "2026-11-17T10:53:37+00:00",
   "source_snapshot_sha256": "f2b68e8f825d5faf8ef80851edc602e967fccf7280a76e1a9652b6dcb24cfeb6",
   "images": {},
-  "local_only": true
+  "publication_policy": "config/mirror.json"
 }

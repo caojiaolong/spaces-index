@@ -2,7 +2,7 @@
 
 [返回主题索引](README.md) · [文档导航](../README.md)
 
-共 115 篇。
+共 116 篇。
 
 <a id="series-optimization-22f3c62045"></a>
 #### 让炼丹更科学一些
@@ -262,6 +262,10 @@
 <a id="series-optimization-standalone"></a>
 #### 非系列文章
 
+- 2026-11-17 - [最佳学习率调度的变分估计](https://spaces.ac.cn/archives/12010)
+  - 原站分类：数学研究
+  - 原站标签：最优、变分、学习率、优化器
+  - 小结摘录：这篇文章我们讨论了将最佳学习率调度抽象为一个变分问题，继而求最优解的做法。
 - 2026-11-01 - [平均之路：从Attention到TTT](https://spaces.ac.cn/archives/11993)
   - 原站分类：信息时代
   - 原站标签：线性、RNN、attention、sgd

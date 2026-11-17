@@ -6,7 +6,13 @@
     "source_url": "https://spaces.ac.cn/archives/2765",
     "date": "2014-07-17",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "数学研究",
+    "source_tags": [
+      "数论",
+      "整数"
+    ],
+    "source_summary": null
   },
   "validation": {
     "passed": true,
@@ -30,8 +36,8 @@
     "converter_version": 1,
     "markdown_sha256": "660b227baae2e06b7679ab2215bba7d2381bd2982d53014d291661820b59ecfc"
   },
-  "fetched_at": "2026-09-14T13:53:11+00:00",
+  "fetched_at": "2026-11-17T10:54:12+00:00",
   "source_snapshot_sha256": "16f66283bf7dba65d6146bfbb0630b0de1d7fc075a89020329d793c5b0e1a827",
   "images": {},
-  "local_only": true
+  "publication_policy": "config/mirror.json"
 }
