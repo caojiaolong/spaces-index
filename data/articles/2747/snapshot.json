@@ -6,9 +6,16 @@
     "source_url": "https://spaces.ac.cn/archives/2747",
     "date": "2014-07-06",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "数学研究",
+    "source_tags": [
+      "证明",
+      "不等式",
+      "对称"
+    ],
+    "source_summary": null
   },
-  "fetched_at": "2026-09-14T13:53:24+00:00",
+  "fetched_at": "2026-11-18T10:24:27+00:00",
   "source_snapshot_sha256": "fc27ec6007ca9b3e87ce53fd14e1fb96259c56a6d4352baed7c9545ba589496d",
   "validators": {
     "etag": null,

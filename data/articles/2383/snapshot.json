@@ -6,9 +6,17 @@
     "source_url": "https://spaces.ac.cn/archives/2383",
     "date": "2014-02-28",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "数学研究",
+    "source_tags": [
+      "微积分",
+      "分析",
+      "线性",
+      "行列式"
+    ],
+    "source_summary": null
   },
-  "fetched_at": "2026-09-14T13:56:29+00:00",
+  "fetched_at": "2026-11-18T10:25:23+00:00",
   "source_snapshot_sha256": "4b921d78e32cede2c2ead9fc678796bce846daeae151e7aebf4fa8cca45335ec",
   "validators": {
     "etag": null,

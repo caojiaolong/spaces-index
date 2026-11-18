@@ -6,9 +6,16 @@
     "source_url": "https://spaces.ac.cn/archives/2587",
     "date": "2014-05-04",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "问题百科",
+    "source_tags": [
+      "趣味",
+      "最优",
+      "问题"
+    ],
+    "source_summary": null
   },
-  "fetched_at": "2026-09-14T13:54:49+00:00",
+  "fetched_at": "2026-11-18T10:24:31+00:00",
   "source_snapshot_sha256": "ccb06432604c07b6a0a3c23824a21d243e9c08f5f8401d10d1101a484c8e51b8",
   "validators": {
     "etag": null,

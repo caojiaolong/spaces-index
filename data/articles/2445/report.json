@@ -6,7 +6,14 @@
     "source_url": "https://spaces.ac.cn/archives/2445",
     "date": "2014-03-15",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "生活/情感",
+    "source_tags": [
+      "生活",
+      "厨房",
+      "饮食"
+    ],
+    "source_summary": null
   },
   "validation": {
     "passed": true,
@@ -30,8 +37,8 @@
     "converter_version": 1,
     "markdown_sha256": "5317bfe40c8862d73fb721aeee7a5d0aff1e504a6062cb240c652c70b24809d1"
   },
-  "fetched_at": "2026-09-14T13:56:03+00:00",
+  "fetched_at": "2026-11-18T10:25:09+00:00",
   "source_snapshot_sha256": "51692a59c73022a2fbc4f61558e47b0890b50397296eae81c9bd99606b4b182d",
   "images": {},
-  "local_only": true
+  "publication_policy": "config/mirror.json"
 }

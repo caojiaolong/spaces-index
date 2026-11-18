@@ -6,7 +6,13 @@
     "source_url": "https://spaces.ac.cn/archives/2231",
     "date": "2013-12-28",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "资源共享",
+    "source_tags": [
+      "物理",
+      "费曼"
+    ],
+    "source_summary": null
   },
   "validation": {
     "passed": true,
@@ -30,8 +36,8 @@
     "converter_version": 1,
     "markdown_sha256": "9bba3e2307d62b8b40ae4467871cef1dca5c2ff0bf6b4c9e90b3afac0542d262"
   },
-  "fetched_at": "2026-09-14T13:58:04+00:00",
+  "fetched_at": "2026-11-18T10:25:51+00:00",
   "source_snapshot_sha256": "766237ea43e7653c920513c9f2294d376fe4064c16e123d43551ec176ac55231",
   "images": {},
-  "local_only": true
+  "publication_policy": "config/mirror.json"
 }

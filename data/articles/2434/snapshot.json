@@ -6,9 +6,17 @@
     "source_url": "https://spaces.ac.cn/archives/2434",
     "date": "2014-03-13",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "物理化学",
+    "source_tags": [
+      "力学",
+      "弹性",
+      "作用量",
+      "场论"
+    ],
+    "source_summary": null
   },
-  "fetched_at": "2026-09-14T13:56:10+00:00",
+  "fetched_at": "2026-11-18T10:25:13+00:00",
   "source_snapshot_sha256": "782cf312d751bbf95ed4322bcaf9497511790ac424e31dddfe35a5aa60058ca5",
   "validators": {
     "etag": null,

@@ -6,7 +6,12 @@
     "source_url": "https://spaces.ac.cn/archives/2520",
     "date": "2014-04-09",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "数学研究",
+    "source_tags": [
+      "趣味"
+    ],
+    "source_summary": null
   },
   "validation": {
     "passed": true,
@@ -30,8 +35,8 @@
     "converter_version": 1,
     "markdown_sha256": "efe479bff4ad436e9ae50fee6c6fcc053ae5768bead3700ae693f5f58086dd21"
   },
-  "fetched_at": "2026-09-14T13:55:22+00:00",
+  "fetched_at": "2026-11-18T10:24:48+00:00",
   "source_snapshot_sha256": "c18bd09c124f016271a3cd3b13804ddbe7c3ffa6004c51775a1874908aa35794",
   "images": {},
-  "local_only": true
+  "publication_policy": "config/mirror.json"
 }

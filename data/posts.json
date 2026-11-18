@@ -10235,7 +10235,8 @@
       "不等式",
       "对称"
     ],
-    "source_summary": null
+    "source_summary": null,
+    "metadata_checked_at": "2026-11-18T10:24:27+00:00"
   },
   {
     "id": "2726",
@@ -10383,7 +10384,8 @@
       "最优",
       "问题"
     ],
-    "source_summary": null
+    "source_summary": null,
+    "metadata_checked_at": "2026-11-18T10:24:31+00:00"
   },
   {
     "id": "2573",
@@ -10397,7 +10399,8 @@
       "生成函数",
       "随机游走"
     ],
-    "source_summary": null
+    "source_summary": null,
+    "metadata_checked_at": "2026-11-18T10:24:34+00:00"
   },
   {
     "id": "2555",
@@ -10412,7 +10415,8 @@
       "复数",
       "fourier"
     ],
-    "source_summary": null
+    "source_summary": null,
+    "metadata_checked_at": "2026-11-18T10:24:38+00:00"
   },
   {
     "id": "2550",
@@ -10425,7 +10429,8 @@
       "复数",
       "生成函数"
     ],
-    "source_summary": null
+    "source_summary": null,
+    "metadata_checked_at": "2026-11-18T10:24:41+00:00"
   },
   {
     "id": "2527",
@@ -10441,7 +10446,8 @@
       "代码",
       "算法"
     ],
-    "source_summary": null
+    "source_summary": null,
+    "metadata_checked_at": "2026-11-18T10:24:45+00:00"
   },
   {
     "id": "2520",
@@ -10452,7 +10458,8 @@
     "source_tags": [
       "趣味"
     ],
-    "source_summary": null
+    "source_summary": null,
+    "metadata_checked_at": "2026-11-18T10:24:48+00:00"
   },
   {
     "id": "2516",
@@ -10464,7 +10471,8 @@
       "情感",
       "诗歌"
     ],
-    "source_summary": null
+    "source_summary": null,
+    "metadata_checked_at": "2026-11-18T10:24:52+00:00"
   },
   {
     "id": "2512",
@@ -10477,7 +10485,8 @@
       "力学",
       "对称"
     ],
-    "source_summary": null
+    "source_summary": null,
+    "metadata_checked_at": "2026-11-18T10:24:55+00:00"
   },
   {
     "id": "2498",
@@ -10491,7 +10500,8 @@
       "朗道",
       "阅读"
     ],
-    "source_summary": null
+    "source_summary": null,
+    "metadata_checked_at": "2026-11-18T10:24:59+00:00"
   },
   {
     "id": "2478",
@@ -10504,7 +10514,8 @@
       "力学",
       "对称"
     ],
-    "source_summary": null
+    "source_summary": null,
+    "metadata_checked_at": "2026-11-18T10:25:02+00:00"
   },
   {
     "id": "2471",
@@ -10518,7 +10529,8 @@
       "摄动",
       "摆"
     ],
-    "source_summary": null
+    "source_summary": null,
+    "metadata_checked_at": "2026-11-18T10:25:05+00:00"
   },
   {
     "id": "2445",
@@ -10531,7 +10543,8 @@
       "厨房",
       "饮食"
     ],
-    "source_summary": null
+    "source_summary": null,
+    "metadata_checked_at": "2026-11-18T10:25:09+00:00"
   },
   {
     "id": "2434",
@@ -10545,7 +10558,8 @@
       "作用量",
       "场论"
     ],
-    "source_summary": null
+    "source_summary": null,
+    "metadata_checked_at": "2026-11-18T10:25:13+00:00"
   },
   {
     "id": "2430",
@@ -10559,7 +10573,8 @@
       "作用量",
       "场论"
     ],
-    "source_summary": null
+    "source_summary": null,
+    "metadata_checked_at": "2026-11-18T10:25:16+00:00"
   },
   {
     "id": "2403",
@@ -10573,7 +10588,8 @@
       "分析",
       "微分几何"
     ],
-    "source_summary": null
+    "source_summary": null,
+    "metadata_checked_at": "2026-11-18T10:25:20+00:00"
   },
   {
     "id": "2383",
@@ -10587,7 +10603,8 @@
       "线性",
       "行列式"
     ],
-    "source_summary": null
+    "source_summary": null,
+    "metadata_checked_at": "2026-11-18T10:25:23+00:00"
   },
   {
     "id": "2380",
@@ -10600,7 +10617,8 @@
       "物理",
       "维度"
     ],
-    "source_summary": null
+    "source_summary": null,
+    "metadata_checked_at": "2026-11-18T10:25:27+00:00"
   },
   {
     "id": "2374",
@@ -10613,7 +10631,8 @@
       "化学",
       "厨房"
     ],
-    "source_summary": null
+    "source_summary": null,
+    "metadata_checked_at": "2026-11-18T10:25:30+00:00"
   },
   {
     "id": "2362",
@@ -10716,7 +10735,8 @@
       "网站",
       "服务器"
     ],
-    "source_summary": null
+    "source_summary": null,
+    "metadata_checked_at": "2026-11-18T10:25:34+00:00"
   },
   {
     "id": "2291",
@@ -10730,7 +10750,8 @@
       "复数",
       "矩阵"
     ],
-    "source_summary": null
+    "source_summary": null,
+    "metadata_checked_at": "2026-11-18T10:25:37+00:00"
   },
   {
     "id": "2242",
@@ -10743,7 +10764,8 @@
       "量子力学",
       "矩阵"
     ],
-    "source_summary": null
+    "source_summary": null,
+    "metadata_checked_at": "2026-11-18T10:25:41+00:00"
   },
   {
     "id": "2236",
@@ -10755,7 +10777,8 @@
       "节日",
       "学习"
     ],
-    "source_summary": null
+    "source_summary": null,
+    "metadata_checked_at": "2026-11-18T10:25:44+00:00"
   },
   {
     "id": "2232",
@@ -10769,7 +10792,8 @@
       "作用量",
       "摆"
     ],
-    "source_summary": null
+    "source_summary": null,
+    "metadata_checked_at": "2026-11-18T10:25:48+00:00"
   },
   {
     "id": "2231",
@@ -10781,7 +10805,8 @@
       "物理",
       "费曼"
     ],
-    "source_summary": null
+    "source_summary": null,
+    "metadata_checked_at": "2026-11-18T10:25:51+00:00"
   },
   {
     "id": "2224",

@@ -6,9 +6,19 @@
     "source_url": "https://spaces.ac.cn/archives/2527",
     "date": "2014-04-21",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "数学研究",
+    "source_tags": [
+      "逻辑",
+      "推理",
+      "数字",
+      "编程",
+      "代码",
+      "算法"
+    ],
+    "source_summary": null
   },
-  "fetched_at": "2026-09-14T13:55:16+00:00",
+  "fetched_at": "2026-11-18T10:24:45+00:00",
   "source_snapshot_sha256": "af2c1df42362a6416067d734b50e0ad44d8b6eb58affee4fde322c19fc2f7da4",
   "validators": {
     "etag": null,

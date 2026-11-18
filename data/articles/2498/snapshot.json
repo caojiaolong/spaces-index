@@ -6,10 +6,18 @@
     "source_url": "https://spaces.ac.cn/archives/2498",
     "date": "2014-03-25",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "物理化学",
+    "source_tags": [
+      "教材",
+      "费曼",
+      "朗道",
+      "阅读"
+    ],
+    "source_summary": null
   },
-  "fetched_at": "2026-09-14T13:55:41+00:00",
-  "source_snapshot_sha256": "2a31ca5e743ccffbaeb4351add2fb773596ad909b12117f41d3a5228db314841",
+  "fetched_at": "2026-11-18T10:24:59+00:00",
+  "source_snapshot_sha256": "685ce5ad2ced403852ae5baa682c7ecdb2566a5bdf98a94c23574336cf74f441",
   "validators": {
     "etag": null,
     "last_modified": null

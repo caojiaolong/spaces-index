@@ -6,7 +6,14 @@
     "source_url": "https://spaces.ac.cn/archives/2304",
     "date": "2014-01-19",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "生活/情感",
+    "source_tags": [
+      "天文台",
+      "网站",
+      "服务器"
+    ],
+    "source_summary": null
   },
   "validation": {
     "passed": true,
@@ -30,8 +37,8 @@
     "converter_version": 1,
     "markdown_sha256": "7efde13ecd24f7b0084c8bf1dc86c2113a7d60978f14a8652317ca5f430832bd"
   },
-  "fetched_at": "2026-09-14T13:57:33+00:00",
+  "fetched_at": "2026-11-18T10:25:34+00:00",
   "source_snapshot_sha256": "a1a8115e27e18d0382e0e9f4b076a84cba9eb19c6aa6db712031c30dbe65482d",
   "images": {},
-  "local_only": true
+  "publication_policy": "config/mirror.json"
 }

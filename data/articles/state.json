@@ -4936,7 +4936,7 @@
   },
   "2747": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:20:24+00:00",
+    "checked_at": "2026-11-18T10:24:27+00:00",
     "title": "齐次多项式不等式的机器证明（差分代换）",
     "markdown_sha256": "362324d95acad5abd2b77c8aaaebb58e61dc881cf4611702282b424150e8db81",
     "converter_version": 1
@@ -5013,126 +5013,126 @@
   },
   "2587": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:20:25+00:00",
+    "checked_at": "2026-11-18T10:24:31+00:00",
     "title": "[问题解答]运煤车的最大路程（更正）",
     "markdown_sha256": "69d048d081b240e17ddd511b4097bd0dd5ed77cd5b6d82b2ac0c16302160eaca",
     "converter_version": 1
   },
   "2573": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:20:25+00:00",
+    "checked_at": "2026-11-18T10:24:34+00:00",
     "title": "当概率遇上复变：随机游走基本公式",
     "markdown_sha256": "db6e3870fc0aa1404f5c818a3d9674fce34ada33d0adf405371e8de7553d4f91",
     "converter_version": 1
   },
   "2555": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:20:25+00:00",
+    "checked_at": "2026-11-18T10:24:38+00:00",
     "title": "傅里叶变换：只需要异想天开？",
     "markdown_sha256": "3e542c0d4ca408d806f9a9e7e7834a143b85bbe8db02edd74d671636b762dd65",
     "converter_version": 1
   },
   "2550": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:20:25+00:00",
+    "checked_at": "2026-11-18T10:24:41+00:00",
     "title": "当概率遇上复变：解析概率",
     "markdown_sha256": "c02c54fe1d20bdd6f219952f7d80bd3fe8dd4f40e1557d05a7ef3d417a22e30b",
     "converter_version": 1
   },
   "2527": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:20:25+00:00",
+    "checked_at": "2026-11-18T10:24:45+00:00",
     "title": "数独的自动推理",
     "markdown_sha256": "b569fbdc9ca74440af9dc9a976e7970fd8d2e8ce9d5a59a26593eb57846086a4",
     "converter_version": 1
   },
   "2520": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:20:25+00:00",
+    "checked_at": "2026-11-18T10:24:48+00:00",
     "title": "趣题：与橡皮绳赛跑的蚂蚁",
     "markdown_sha256": "efe479bff4ad436e9ae50fee6c6fcc053ae5768bead3700ae693f5f58086dd21",
     "converter_version": 1
   },
   "2516": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:20:25+00:00",
+    "checked_at": "2026-11-18T10:24:52+00:00",
     "title": "三月二十七日",
     "markdown_sha256": "79e09fefa286489fb463b8d98c36d632219eedee8e335a9e0288a549c88871fa",
     "converter_version": 1
   },
   "2512": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:20:25+00:00",
+    "checked_at": "2026-11-18T10:24:55+00:00",
     "title": "一本对称闯物理：相对论力学(二)",
     "markdown_sha256": "de172e92b31155fc12898bf3b5da5af2dc382066c96266d49e0bdbc11c65835e",
     "converter_version": 1
   },
   "2498": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:20:25+00:00",
+    "checked_at": "2026-11-18T10:24:59+00:00",
     "title": "如何看费曼的讲义和朗道的教程？",
     "markdown_sha256": "a927e0bd41b37ac03d3733161f57129a1e421f82598339219694f4e381b5f896",
     "converter_version": 1
   },
   "2478": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:20:26+00:00",
+    "checked_at": "2026-11-18T10:25:02+00:00",
     "title": "一本对称闯物理：相对论力学(一)",
     "markdown_sha256": "76b782bdcb26dc38c2c2104fe5b77937e76127c4a78e06b3c96b63f0aa02d572",
     "converter_version": 1
   },
   "2471": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:20:26+00:00",
+    "checked_at": "2026-11-18T10:25:05+00:00",
     "title": "倒立单摆之分离频率",
     "markdown_sha256": "bad9c3b5934eb428b3702707d4dde87f1322ef1742e885993361eb0ad8af6d7a",
     "converter_version": 1
   },
   "2445": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:20:26+00:00",
+    "checked_at": "2026-11-18T10:25:09+00:00",
     "title": "不求珍馐百味，但愿开水白菜",
     "markdown_sha256": "5317bfe40c8862d73fb721aeee7a5d0aff1e504a6062cb240c652c70b24809d1",
     "converter_version": 1
   },
   "2434": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:20:26+00:00",
+    "checked_at": "2026-11-18T10:25:13+00:00",
     "title": "一维弹簧的运动（下）",
     "markdown_sha256": "9570a0f1b20158ed560d5da2e2404d35ba85526227aab7acc795a0f094764b3c",
     "converter_version": 1
   },
   "2430": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:20:26+00:00",
+    "checked_at": "2026-11-18T10:25:16+00:00",
     "title": "一维弹簧的运动（上）",
     "markdown_sha256": "3100c5e2aef851af5dce803121b606b39bfc3c327865b68dd0641febe9c85c8b",
     "converter_version": 1
   },
   "2403": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:20:26+00:00",
+    "checked_at": "2026-11-18T10:25:20+00:00",
     "title": "平面曲线的曲率的复数表示",
     "markdown_sha256": "12ef68dd6c5e4d7e9279747b84e563460876ac747a80fd1e8ff0f3d1bf3bb8af",
     "converter_version": 1
   },
   "2383": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:20:26+00:00",
+    "checked_at": "2026-11-18T10:25:23+00:00",
     "title": "行列式的导数",
     "markdown_sha256": "b4e28c307112c6a84cb08c97306548ce8e80d8f4ea6e542db34ed9f5df1a32bb",
     "converter_version": 1
   },
   "2380": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:20:26+00:00",
+    "checked_at": "2026-11-18T10:25:27+00:00",
     "title": "翻到新的维度，把积分解决！",
     "markdown_sha256": "8fad4a97adb5a152e295a8282cdb0519fe8ed2302c7eb37d16b4f29313069311",
     "converter_version": 1
   },
   "2374": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:20:26+00:00",
+    "checked_at": "2026-11-18T10:25:30+00:00",
     "title": "炼钢.vs.做菜：淬火与过冷河",
     "markdown_sha256": "734780a4025afe7ebbe8ed53d803bb7d754583769dec4f285ab11fc64d17c115",
     "converter_version": 1
@@ -5188,42 +5188,42 @@
   },
   "2304": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:20:27+00:00",
+    "checked_at": "2026-11-18T10:25:34+00:00",
     "title": "宇宙驿站服务器升级完毕",
     "markdown_sha256": "7efde13ecd24f7b0084c8bf1dc86c2113a7d60978f14a8652317ca5f430832bd",
     "converter_version": 1
   },
   "2291": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:20:27+00:00",
+    "checked_at": "2026-11-18T10:25:37+00:00",
     "title": "几何的数与数的几何：超复数的浅探究",
     "markdown_sha256": "82e0b97eaaf6e4e6472079b994a1892ffbc93ce6bb83c9b7c302e8f919f21b4e",
     "converter_version": 1
   },
   "2242": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:20:27+00:00",
+    "checked_at": "2026-11-18T10:25:41+00:00",
     "title": "不确定性原理的矩阵形式",
     "markdown_sha256": "cad74da42754b84676a6ceb5e6d3ce8faaf012406abf14995e7c77106df039c1",
     "converter_version": 1
   },
   "2236": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:20:27+00:00",
+    "checked_at": "2026-11-18T10:25:44+00:00",
     "title": "写在2013年即将逝去之际",
     "markdown_sha256": "373426ccda3d133b3c5515d6825586de784e6518999f56555e62717fbf35643c",
     "converter_version": 1
   },
   "2232": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:20:27+00:00",
+    "checked_at": "2026-11-18T10:25:48+00:00",
     "title": "有质动力：倒立单摆的稳定性",
     "markdown_sha256": "575575635b9b21b9082a09cc25e5be6f26f45479f09ea4d1f7db27e96dbb548a",
     "converter_version": 1
   },
   "2231": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:20:27+00:00",
+    "checked_at": "2026-11-18T10:25:51+00:00",
     "title": "《费恩曼物理讲义》在线版",
     "markdown_sha256": "9bba3e2307d62b8b40ae4467871cef1dca5c2ff0bf6b4c9e90b3afac0542d262",
     "converter_version": 1
@@ -8464,7 +8464,7 @@
   },
   "132": {
     "status": "conversion_failed",
-    "checked_at": "2026-11-17T10:54:51+00:00",
+    "checked_at": "2026-11-18T10:25:51+00:00",
     "title": "一道从小学到高中都可能考到的题目",
     "error": "Unreviewed legacy element: a<b，则有<br",
     "converter_version": 1,

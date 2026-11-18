@@ -6,9 +6,18 @@
     "source_url": "https://spaces.ac.cn/archives/2555",
     "date": "2014-04-25",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "数学研究",
+    "source_tags": [
+      "级数",
+      "积分",
+      "变换",
+      "复数",
+      "fourier"
+    ],
+    "source_summary": null
   },
-  "fetched_at": "2026-09-14T13:55:03+00:00",
+  "fetched_at": "2026-11-18T10:24:38+00:00",
   "source_snapshot_sha256": "2593f9d999213b37e2bf4e34fc7a0521d2d5fb70e1618fdbe2d7e27061fe5fd9",
   "validators": {
     "etag": null,

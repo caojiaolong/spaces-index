@@ -6,9 +6,17 @@
     "source_url": "https://spaces.ac.cn/archives/2291",
     "date": "2014-01-11",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "数学研究",
+    "source_tags": [
+      "代数",
+      "几何",
+      "复数",
+      "矩阵"
+    ],
+    "source_summary": null
   },
-  "fetched_at": "2026-09-14T13:57:39+00:00",
+  "fetched_at": "2026-11-18T10:25:37+00:00",
   "source_snapshot_sha256": "fb369e31eadde1e04d039a9170d63ed21fec19b693f32c13ef8f5f329b44bfbb",
   "validators": {
     "etag": null,

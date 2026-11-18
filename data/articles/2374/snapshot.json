@@ -6,9 +6,16 @@
     "source_url": "https://spaces.ac.cn/archives/2374",
     "date": "2014-02-22",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "生活/情感",
+    "source_tags": [
+      "物理",
+      "化学",
+      "厨房"
+    ],
+    "source_summary": null
   },
-  "fetched_at": "2026-09-14T13:56:42+00:00",
+  "fetched_at": "2026-11-18T10:25:30+00:00",
   "source_snapshot_sha256": "02bc2e366cc11be8d6628c9eb87c3de3b8818b72128afdc1272f234c82574ed5",
   "validators": {
     "etag": null,
