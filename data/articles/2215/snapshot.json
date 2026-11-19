@@ -6,9 +6,17 @@
     "source_url": "https://spaces.ac.cn/archives/2215",
     "date": "2013-12-26",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "数学研究",
+    "source_tags": [
+      "不等式",
+      "几何",
+      "矩阵",
+      "行列式"
+    ],
+    "source_summary": null
   },
-  "fetched_at": "2026-09-14T13:58:31+00:00",
+  "fetched_at": "2026-11-19T10:32:23+00:00",
   "source_snapshot_sha256": "892eba1f41068b9b74a07992a30dc356a3c1793639ee470855abb0d4fec8ef85",
   "validators": {
     "etag": null,

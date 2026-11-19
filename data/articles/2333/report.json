@@ -6,7 +6,14 @@
     "source_url": "https://spaces.ac.cn/archives/2333",
     "date": "2014-01-30",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "数学研究",
+    "source_tags": [
+      "尺规作图",
+      "几何",
+      "反演"
+    ],
+    "source_summary": null
   },
   "validation": {
     "passed": true,
@@ -30,8 +37,8 @@
     "converter_version": 1,
     "markdown_sha256": "d0ed9ffa970c63d30b4290593b23c399d87897a112b16c720f1e0bc93c3b1aeb"
   },
-  "fetched_at": "2026-09-14T13:57:20+00:00",
+  "fetched_at": "2026-11-19T10:32:06+00:00",
   "source_snapshot_sha256": "2efd117dfcb1addd67bc61bde655a2d661ad2ed03b02dd7183875b6a65a90266",
   "images": {},
-  "local_only": true
+  "publication_policy": "config/mirror.json"
 }

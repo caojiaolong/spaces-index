@@ -6,9 +6,16 @@
     "source_url": "https://spaces.ac.cn/archives/2083",
     "date": "2013-09-26",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "数学研究",
+    "source_tags": [
+      "竞赛",
+      "微分方程",
+      "艺术"
+    ],
+    "source_summary": null
   },
-  "fetched_at": "2026-09-14T13:59:52+00:00",
+  "fetched_at": "2026-11-19T10:32:55+00:00",
   "source_snapshot_sha256": "3cbf70abba0f4c391414111398e8bbfcd7334b4907f046c39b1b854f61ecf9af",
   "validators": {
     "etag": null,

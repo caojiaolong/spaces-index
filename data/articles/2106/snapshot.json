@@ -6,9 +6,15 @@
     "source_url": "https://spaces.ac.cn/archives/2106",
     "date": "2013-10-03",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "生活/情感",
+    "source_tags": [
+      "生活",
+      "珍惜"
+    ],
+    "source_summary": null
   },
-  "fetched_at": "2026-09-14T13:59:39+00:00",
+  "fetched_at": "2026-11-19T10:32:48+00:00",
   "source_snapshot_sha256": "62cc255ac53b69b40afec291465baf0232a3e500cf8d76beb1b014817ff25686",
   "validators": {
     "etag": null,

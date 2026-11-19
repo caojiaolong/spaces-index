@@ -6,9 +6,15 @@
     "source_url": "https://spaces.ac.cn/archives/2071",
     "date": "2013-09-26",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "数学研究",
+    "source_tags": [
+      "数学",
+      "竞赛"
+    ],
+    "source_summary": null
   },
-  "fetched_at": "2026-09-14T13:59:58+00:00",
+  "fetched_at": "2026-11-19T10:32:59+00:00",
   "source_snapshot_sha256": "f30d9de92e503e80bb69cd3e9f20074081fc7e1b591ff69931c5772185957cf5",
   "validators": {
     "etag": null,

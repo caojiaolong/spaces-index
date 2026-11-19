@@ -6,9 +6,17 @@
     "source_url": "https://spaces.ac.cn/archives/2348",
     "date": "2014-02-12",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "物理化学",
+    "source_tags": [
+      "转载",
+      "几何",
+      "量子",
+      "量子化"
+    ],
+    "source_summary": null
   },
-  "fetched_at": "2026-09-14T13:57:01+00:00",
+  "fetched_at": "2026-11-19T10:31:56+00:00",
   "source_snapshot_sha256": "38abaa66f924211d6203b7821a98cccd08419d6dddb3ec9a299fffd6bb9fd6a6",
   "validators": {
     "etag": null,

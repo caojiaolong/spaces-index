@@ -6,7 +6,15 @@
     "source_url": "https://spaces.ac.cn/archives/2185",
     "date": "2013-11-26",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "数学研究",
+    "source_tags": [
+      "积分",
+      "微分方程",
+      "对称",
+      "lie"
+    ],
+    "source_summary": null
   },
   "validation": {
     "passed": true,
@@ -30,8 +38,8 @@
     "converter_version": 1,
     "markdown_sha256": "316dc2f6a6d5e71c71977340a08a9e907985f9fc6ced04e5911e125038e4fa79"
   },
-  "fetched_at": "2026-09-14T13:58:58+00:00",
+  "fetched_at": "2026-11-19T10:32:38+00:00",
   "source_snapshot_sha256": "45733996edb3c218f26d6f4b4e2a296690f5a491227acfc463a7a76c58070325",
   "images": {},
-  "local_only": true
+  "publication_policy": "config/mirror.json"
 }

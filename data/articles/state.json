@@ -5139,49 +5139,49 @@
   },
   "2362": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:20:27+00:00",
+    "checked_at": "2026-11-19T10:31:49+00:00",
     "title": "带点电荷的均匀杆",
     "markdown_sha256": "928b65d9b3ba2d1726f0f9a5f49752b6063f32818adbbf473a1daae2d6541118",
     "converter_version": 1
   },
   "2360": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:20:27+00:00",
+    "checked_at": "2026-11-19T10:31:52+00:00",
     "title": "情人节？元宵节！",
     "markdown_sha256": "35f979290877968e2469d7e6b73fc70130267d80c981c3c25d8be8dd28c6fc02",
     "converter_version": 1
   },
   "2348": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:20:27+00:00",
+    "checked_at": "2026-11-19T10:31:56+00:00",
     "title": "漫谈几何量子化",
     "markdown_sha256": "31fd82440b1e933fd75490875491d99de0a2e2f4068936f8c01289a0389a4dc1",
     "converter_version": 1
   },
   "2345": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:20:27+00:00",
+    "checked_at": "2026-11-19T10:31:59+00:00",
     "title": "视频演示：费曼的茶杯",
     "markdown_sha256": "56fe8715985aa753ad1cc5e1afce8761b7a8c679d14daaa47155a2fc2f9d4fe8",
     "converter_version": 1
   },
   "2339": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:20:27+00:00",
+    "checked_at": "2026-11-19T10:32:03+00:00",
     "title": "祝大家马年快乐！",
     "markdown_sha256": "bb6567a8458dd7909687ce3e1c72e3935fb9b52271e407a586e77ee40c2e7d7a",
     "converter_version": 1
   },
   "2333": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:20:27+00:00",
+    "checked_at": "2026-11-19T10:32:06+00:00",
     "title": "三个相切圆的公切圆:补充",
     "markdown_sha256": "d0ed9ffa970c63d30b4290593b23c399d87897a112b16c720f1e0bc93c3b1aeb",
     "converter_version": 1
   },
   "2320": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:20:27+00:00",
+    "checked_at": "2026-11-19T10:32:09+00:00",
     "title": "三个相切圆的公切圆",
     "markdown_sha256": "25ba4d733dcc8d7acdb0b9e533e5c2a530fc63365baa00e7fb9747997f3e14b4",
     "converter_version": 1
@@ -5230,70 +5230,70 @@
   },
   "2224": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:20:28+00:00",
+    "checked_at": "2026-11-19T10:32:13+00:00",
     "title": "矩阵描述三维空间旋转",
     "markdown_sha256": "ec2b9447d3bee4c5363670b160b10717bfa339c9faf68511352a064f015741a8",
     "converter_version": 1
   },
   "2222": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:20:28+00:00",
+    "checked_at": "2026-11-19T10:32:16+00:00",
     "title": "小论文《欧拉数学在数列级数的妙用》",
     "markdown_sha256": "2efed2a3fd3fd52291c15857a3bb953b0a6cd33ad821464155ca024eed61e133",
     "converter_version": 1
   },
   "2219": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:20:28+00:00",
+    "checked_at": "2026-11-19T10:32:20+00:00",
     "title": "高维空间的叉积及其几何意义",
     "markdown_sha256": "f0c24856d0e0f307225055f5c3d0bb827c239332bc486623e9943a24d7ed4d3c",
     "converter_version": 1
   },
   "2215": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:20:28+00:00",
+    "checked_at": "2026-11-19T10:32:23+00:00",
     "title": "体积与阿达马不等式",
     "markdown_sha256": "f68c62f7e08bac8ebdbdf4c430af6d4692d8e2e2e1cf60bbc8b92c9e6138e8ea",
     "converter_version": 1
   },
   "2208": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:20:28+00:00",
+    "checked_at": "2026-11-19T10:32:27+00:00",
     "title": "《新理解矩阵5》：体积=行列式",
     "markdown_sha256": "4d030e5a475ccbc592d400721fb59c2e27099feb507a46fe2b4547d5292df847",
     "converter_version": 1
   },
   "2195": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:20:28+00:00",
+    "checked_at": "2026-11-19T10:32:31+00:00",
     "title": "用二次方程判别式判断正定矩阵",
     "markdown_sha256": "475ab706f4d2a50b623045a47af1e1d037e7291c3b2beb82f7f83af1342ee535",
     "converter_version": 1
   },
   "2192": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:20:28+00:00",
+    "checked_at": "2026-11-19T10:32:34+00:00",
     "title": "三角函数幂的定积分",
     "markdown_sha256": "5f52022e4c59e290614be597b0dd142bb3c45737b4b27bcc23afe9dff33584d2",
     "converter_version": 1
   },
   "2185": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:20:28+00:00",
+    "checked_at": "2026-11-19T10:32:38+00:00",
     "title": "求解微分方程的李对称方法（二）",
     "markdown_sha256": "316dc2f6a6d5e71c71977340a08a9e907985f9fc6ced04e5911e125038e4fa79",
     "converter_version": 1
   },
   "2177": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:20:28+00:00",
+    "checked_at": "2026-11-19T10:32:41+00:00",
     "title": "力学系统及其对偶性（三）",
     "markdown_sha256": "a4fc424f540d546bc73b2be07256a46908a769baef578e067f02e663bbaff694",
     "converter_version": 1
   },
   "2136": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:20:28+00:00",
+    "checked_at": "2026-11-19T10:32:44+00:00",
     "title": "力学系统及其对偶性（二）",
     "markdown_sha256": "826b34137a0d8f9ef5ad39d6e3b1928089cb5ab1054f08ebc151b6a60fbc43a1",
     "converter_version": 1
@@ -5321,56 +5321,56 @@
   },
   "2106": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:20:29+00:00",
+    "checked_at": "2026-11-19T10:32:48+00:00",
     "title": "不在家的国庆",
     "markdown_sha256": "e8adf009961621cad1b59488c10f43fad1ed3ea902aaa49e56c14742d21b04ad",
     "converter_version": 1
   },
   "2096": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:20:29+00:00",
+    "checked_at": "2026-11-19T10:32:52+00:00",
     "title": "数学基本技艺之23、24（下） ",
     "markdown_sha256": "a6e9197eb4004c559ca9181c0430f439727a71b3b718b2d495c959a9e70d0797",
     "converter_version": 1
   },
   "2083": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:20:29+00:00",
+    "checked_at": "2026-11-19T10:32:55+00:00",
     "title": "数学基本技艺之23、24（上）",
     "markdown_sha256": "0a48f188a0773c54694e929cc26101a2374789e8453026d7fd1048ad391b3c56",
     "converter_version": 1
   },
   "2071": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:20:29+00:00",
+    "checked_at": "2026-11-19T10:32:59+00:00",
     "title": "数学基本技艺(A Mathematical Trivium)",
     "markdown_sha256": "57e718d3bfe3d7fcde1cbdb29ec4e31b0812dfc75dbcae889b843cbbbf30213a",
     "converter_version": 1
   },
   "2067": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:20:29+00:00",
+    "checked_at": "2026-11-19T10:33:02+00:00",
     "title": "一个人的数学建模：碎纸复原",
     "markdown_sha256": "2de22d5d69166e92e2543759a0b357644cde6877a46202603d830cad0d11cf75",
     "converter_version": 1
   },
   "2063": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:20:29+00:00",
+    "checked_at": "2026-11-19T10:33:06+00:00",
     "title": "《转山》，动人之旅",
     "markdown_sha256": "bf7ca912f5518648389b30ec06979b685163f2213197fac7d8f9368e19b14b5b",
     "converter_version": 1
   },
   "2059": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:20:29+00:00",
+    "checked_at": "2026-11-19T10:33:09+00:00",
     "title": "[欧拉数学]找出严谨的答案",
     "markdown_sha256": "eca958cd5ff97f9edd8f1178a55a9ff9d75dd0866fe26ccf59f7af25ba0b2bbe",
     "converter_version": 1
   },
   "2056": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:20:29+00:00",
+    "checked_at": "2026-11-19T10:33:13+00:00",
     "title": "暑假结束了，上学去~",
     "markdown_sha256": "d5cbbb361323032a7b027da1f2ae2da97e8571328023cce62fc26d063e4564de",
     "converter_version": 1
@@ -8464,7 +8464,7 @@
   },
   "132": {
     "status": "conversion_failed",
-    "checked_at": "2026-11-18T10:25:51+00:00",
+    "checked_at": "2026-11-19T10:33:13+00:00",
     "title": "一道从小学到高中都可能考到的题目",
     "error": "Unreviewed legacy element: a<b，则有<br",
     "converter_version": 1,

@@ -6,7 +6,13 @@
     "source_url": "https://spaces.ac.cn/archives/2056",
     "date": "2013-08-31",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "生活/情感",
+    "source_tags": [
+      "学习",
+      "假期"
+    ],
+    "source_summary": null
   },
   "validation": {
     "passed": true,
@@ -30,8 +36,8 @@
     "converter_version": 1,
     "markdown_sha256": "d5cbbb361323032a7b027da1f2ae2da97e8571328023cce62fc26d063e4564de"
   },
-  "fetched_at": "2026-09-14T14:00:25+00:00",
+  "fetched_at": "2026-11-19T10:33:13+00:00",
   "source_snapshot_sha256": "6477a2e5fa1af87ace982868a2fc38390b5fbeeb0a1328d869556ff3c1266cd1",
   "images": {},
-  "local_only": true
+  "publication_policy": "config/mirror.json"
 }

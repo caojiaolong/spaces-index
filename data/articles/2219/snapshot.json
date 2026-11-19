@@ -6,9 +6,17 @@
     "source_url": "https://spaces.ac.cn/archives/2219",
     "date": "2013-12-26",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "数学研究",
+    "source_tags": [
+      "几何",
+      "矩阵",
+      "行列式",
+      "高维"
+    ],
+    "source_summary": null
   },
-  "fetched_at": "2026-09-14T13:58:25+00:00",
+  "fetched_at": "2026-11-19T10:32:20+00:00",
   "source_snapshot_sha256": "a5c21f197e7248cd069cd0d0539a7c2eba1770c540838741a52cc301d740adbf",
   "validators": {
     "etag": null,

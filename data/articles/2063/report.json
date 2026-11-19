@@ -6,7 +6,14 @@
     "source_url": "https://spaces.ac.cn/archives/2063",
     "date": "2013-09-11",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "生活/情感",
+    "source_tags": [
+      "情感",
+      "影视",
+      "旅行"
+    ],
+    "source_summary": null
   },
   "validation": {
     "passed": true,
@@ -30,8 +37,8 @@
     "converter_version": 1,
     "markdown_sha256": "bf7ca912f5518648389b30ec06979b685163f2213197fac7d8f9368e19b14b5b"
   },
-  "fetched_at": "2026-09-14T14:00:11+00:00",
+  "fetched_at": "2026-11-19T10:33:06+00:00",
   "source_snapshot_sha256": "0c3ee72bb042bfd0a4f4b9a2dd5177e8509adf294e761afb79f6e2adfebd7e1e",
   "images": {},
-  "local_only": true
+  "publication_policy": "config/mirror.json"
 }

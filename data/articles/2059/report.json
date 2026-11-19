@@ -6,7 +6,14 @@
     "source_url": "https://spaces.ac.cn/archives/2059",
     "date": "2013-09-09",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "数学研究",
+    "source_tags": [
+      "积分",
+      "欧拉数学",
+      "数列"
+    ],
+    "source_summary": "不论如何，往多个方向多思考总是有好处的。能够想到和参考答案一样的方法是很不错的，但是我们不能局限于某种特定的方法，而是应该以自己为中心，寻找到一套属于自己的思路体系，这才算是create了答案。另外就是关于欧拉数学的，老师不会管你在草稿本上写了什么，因此在演算的时候，尽量地头脑风暴吧，尽可能联想各种方法。正所谓“他山之石，可以攻玉”。值得注意的是，这个过程不仅仅是在考试中，而是一直贯穿在我们的学习之中，这时候，“马后炮”的作用是相当大的！"
   },
   "validation": {
     "passed": true,
@@ -30,8 +37,8 @@
     "converter_version": 1,
     "markdown_sha256": "eca958cd5ff97f9edd8f1178a55a9ff9d75dd0866fe26ccf59f7af25ba0b2bbe"
   },
-  "fetched_at": "2026-09-14T14:00:18+00:00",
+  "fetched_at": "2026-11-19T10:33:09+00:00",
   "source_snapshot_sha256": "422a6e39e96b8869b007cd0e60e3de9deeb04d3541570c6a7faa629cdd1f395e",
   "images": {},
-  "local_only": true
+  "publication_policy": "config/mirror.json"
 }

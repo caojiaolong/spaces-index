@@ -6,7 +6,14 @@
     "source_url": "https://spaces.ac.cn/archives/2222",
     "date": "2013-12-26",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "数学研究",
+    "source_tags": [
+      "级数",
+      "欧拉数学",
+      "数列"
+    ],
+    "source_summary": null
   },
   "validation": {
     "passed": true,
@@ -30,8 +37,8 @@
     "converter_version": 1,
     "markdown_sha256": "2efed2a3fd3fd52291c15857a3bb953b0a6cd33ad821464155ca024eed61e133"
   },
-  "fetched_at": "2026-09-14T13:58:18+00:00",
+  "fetched_at": "2026-11-19T10:32:16+00:00",
   "source_snapshot_sha256": "146d98939330e88cf8d6d0bfcf05d7d5e9cd62f244caeecfa1d1a95baa95bffd",
   "images": {},
-  "local_only": true
+  "publication_policy": "config/mirror.json"
 }

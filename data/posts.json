@@ -10646,7 +10646,8 @@
       "作用量",
       "转动"
     ],
-    "source_summary": null
+    "source_summary": null,
+    "metadata_checked_at": "2026-11-19T10:31:49+00:00"
   },
   {
     "id": "2360",
@@ -10657,7 +10658,8 @@
     "source_tags": [
       "节日"
     ],
-    "source_summary": null
+    "source_summary": null,
+    "metadata_checked_at": "2026-11-19T10:31:52+00:00"
   },
   {
     "id": "2348",
@@ -10671,7 +10673,8 @@
       "量子",
       "量子化"
     ],
-    "source_summary": null
+    "source_summary": null,
+    "metadata_checked_at": "2026-11-19T10:31:56+00:00"
   },
   {
     "id": "2345",
@@ -10685,7 +10688,8 @@
       "自旋",
       "视频"
     ],
-    "source_summary": null
+    "source_summary": null,
+    "metadata_checked_at": "2026-11-19T10:31:59+00:00"
   },
   {
     "id": "2339",
@@ -10696,7 +10700,8 @@
     "source_tags": [
       "节日"
     ],
-    "source_summary": null
+    "source_summary": null,
+    "metadata_checked_at": "2026-11-19T10:32:03+00:00"
   },
   {
     "id": "2333",
@@ -10709,7 +10714,8 @@
       "几何",
       "反演"
     ],
-    "source_summary": null
+    "source_summary": null,
+    "metadata_checked_at": "2026-11-19T10:32:06+00:00"
   },
   {
     "id": "2320",
@@ -10722,7 +10728,8 @@
       "几何",
       "反演"
     ],
-    "source_summary": null
+    "source_summary": null,
+    "metadata_checked_at": "2026-11-19T10:32:09+00:00"
   },
   {
     "id": "2304",
@@ -10820,7 +10827,8 @@
       "三维",
       "四元数"
     ],
-    "source_summary": null
+    "source_summary": null,
+    "metadata_checked_at": "2026-11-19T10:32:13+00:00"
   },
   {
     "id": "2222",
@@ -10833,7 +10841,8 @@
       "欧拉数学",
       "数列"
     ],
-    "source_summary": null
+    "source_summary": null,
+    "metadata_checked_at": "2026-11-19T10:32:16+00:00"
   },
   {
     "id": "2219",
@@ -10847,7 +10856,8 @@
       "行列式",
       "高维"
     ],
-    "source_summary": null
+    "source_summary": null,
+    "metadata_checked_at": "2026-11-19T10:32:20+00:00"
   },
   {
     "id": "2215",
@@ -10861,7 +10871,8 @@
       "矩阵",
       "行列式"
     ],
-    "source_summary": null
+    "source_summary": null,
+    "metadata_checked_at": "2026-11-19T10:32:23+00:00"
   },
   {
     "id": "2208",
@@ -10875,7 +10886,8 @@
       "矩阵",
       "行列式"
     ],
-    "source_summary": null
+    "source_summary": null,
+    "metadata_checked_at": "2026-11-19T10:32:27+00:00"
   },
   {
     "id": "2195",
@@ -10889,7 +10901,8 @@
       "二次型",
       "正定"
     ],
-    "source_summary": null
+    "source_summary": null,
+    "metadata_checked_at": "2026-11-19T10:32:31+00:00"
   },
   {
     "id": "2192",
@@ -10901,7 +10914,8 @@
       "积分",
       "三角函数"
     ],
-    "source_summary": null
+    "source_summary": null,
+    "metadata_checked_at": "2026-11-19T10:32:34+00:00"
   },
   {
     "id": "2185",
@@ -10915,7 +10929,8 @@
       "对称",
       "lie"
     ],
-    "source_summary": null
+    "source_summary": null,
+    "metadata_checked_at": "2026-11-19T10:32:38+00:00"
   },
   {
     "id": "2177",
@@ -10929,7 +10944,8 @@
       "作用量",
       "对偶"
     ],
-    "source_summary": null
+    "source_summary": null,
+    "metadata_checked_at": "2026-11-19T10:32:41+00:00"
   },
   {
     "id": "2136",
@@ -10942,7 +10958,8 @@
       "作用量",
       "对偶"
     ],
-    "source_summary": null
+    "source_summary": null,
+    "metadata_checked_at": "2026-11-19T10:32:44+00:00"
   },
   {
     "id": "2121",
@@ -10995,7 +11012,8 @@
       "生活",
       "珍惜"
     ],
-    "source_summary": null
+    "source_summary": null,
+    "metadata_checked_at": "2026-11-19T10:32:48+00:00"
   },
   {
     "id": "2096",
@@ -11008,7 +11026,8 @@
       "微分方程",
       "艺术"
     ],
-    "source_summary": null
+    "source_summary": null,
+    "metadata_checked_at": "2026-11-19T10:32:52+00:00"
   },
   {
     "id": "2083",
@@ -11021,7 +11040,8 @@
       "微分方程",
       "艺术"
     ],
-    "source_summary": null
+    "source_summary": null,
+    "metadata_checked_at": "2026-11-19T10:32:55+00:00"
   },
   {
     "id": "2071",
@@ -11033,7 +11053,8 @@
       "数学",
       "竞赛"
     ],
-    "source_summary": null
+    "source_summary": null,
+    "metadata_checked_at": "2026-11-19T10:32:59+00:00"
   },
   {
     "id": "2067",
@@ -11046,7 +11067,8 @@
       "代码",
       "建模"
     ],
-    "source_summary": null
+    "source_summary": null,
+    "metadata_checked_at": "2026-11-19T10:33:02+00:00"
   },
   {
     "id": "2063",
@@ -11059,7 +11081,8 @@
       "影视",
       "旅行"
     ],
-    "source_summary": null
+    "source_summary": null,
+    "metadata_checked_at": "2026-11-19T10:33:06+00:00"
   },
   {
     "id": "2059",
@@ -11072,7 +11095,8 @@
       "欧拉数学",
       "数列"
     ],
-    "source_summary": "不论如何，往多个方向多思考总是有好处的。能够想到和参考答案一样的方法是很不错的，但是我们不能局限于某种特定的方法，而是应该以自己为中心，寻找到一套属于自己的思路体系，这才算是create了答案。另外就是关于欧拉数学的，老师不会管你在草稿本上写了什么，因此在演算的时候，尽量地头脑风暴吧，尽可能联想各种方法。正所谓“他山之石，可以攻玉”。值得注意的是，这个过程不仅仅是在考试中，而是一直贯穿在我们的学习之中，这时候，“马后炮”的作用是相当大的！"
+    "source_summary": "不论如何，往多个方向多思考总是有好处的。能够想到和参考答案一样的方法是很不错的，但是我们不能局限于某种特定的方法，而是应该以自己为中心，寻找到一套属于自己的思路体系，这才算是create了答案。另外就是关于欧拉数学的，老师不会管你在草稿本上写了什么，因此在演算的时候，尽量地头脑风暴吧，尽可能联想各种方法。正所谓“他山之石，可以攻玉”。值得注意的是，这个过程不仅仅是在考试中，而是一直贯穿在我们的学习之中，这时候，“马后炮”的作用是相当大的！",
+    "metadata_checked_at": "2026-11-19T10:33:09+00:00"
   },
   {
     "id": "2056",
@@ -11084,7 +11108,8 @@
       "学习",
       "假期"
     ],
-    "source_summary": null
+    "source_summary": null,
+    "metadata_checked_at": "2026-11-19T10:33:13+00:00"
   },
   {
     "id": "2055",

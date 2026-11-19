@@ -6,9 +6,17 @@
     "source_url": "https://spaces.ac.cn/archives/2208",
     "date": "2013-12-25",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "数学研究",
+    "source_tags": [
+      "代数",
+      "几何",
+      "矩阵",
+      "行列式"
+    ],
+    "source_summary": null
   },
-  "fetched_at": "2026-09-14T13:58:38+00:00",
+  "fetched_at": "2026-11-19T10:32:27+00:00",
   "source_snapshot_sha256": "0471b9506adf2a27a80d442932f065cf87b67daee37a39c65ba6da20ba4cd93a",
   "validators": {
     "etag": null,

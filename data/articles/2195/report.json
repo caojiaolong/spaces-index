@@ -6,7 +6,15 @@
     "source_url": "https://spaces.ac.cn/archives/2195",
     "date": "2013-12-24",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "数学研究",
+    "source_tags": [
+      "方程",
+      "矩阵",
+      "二次型",
+      "正定"
+    ],
+    "source_summary": null
   },
   "validation": {
     "passed": true,
@@ -30,8 +38,8 @@
     "converter_version": 1,
     "markdown_sha256": "475ab706f4d2a50b623045a47af1e1d037e7291c3b2beb82f7f83af1342ee535"
   },
-  "fetched_at": "2026-09-14T13:58:45+00:00",
+  "fetched_at": "2026-11-19T10:32:31+00:00",
   "source_snapshot_sha256": "8370eb32c5113c532b1cc68461d57a1ce25dc1fa1a640d1b8a194b555543a4b3",
   "images": {},
-  "local_only": true
+  "publication_policy": "config/mirror.json"
 }

@@ -6,7 +6,14 @@
     "source_url": "https://spaces.ac.cn/archives/2136",
     "date": "2013-11-14",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "物理化学",
+    "source_tags": [
+      "复数",
+      "作用量",
+      "对偶"
+    ],
+    "source_summary": null
   },
   "validation": {
     "passed": true,
@@ -30,8 +37,8 @@
     "converter_version": 1,
     "markdown_sha256": "826b34137a0d8f9ef5ad39d6e3b1928089cb5ab1054f08ebc151b6a60fbc43a1"
   },
-  "fetched_at": "2026-09-14T13:59:13+00:00",
+  "fetched_at": "2026-11-19T10:32:44+00:00",
   "source_snapshot_sha256": "fd0c57cbb72f1eb432a357276db3885b9f544d4e9aaa6f22f606261890a5cde4",
   "images": {},
-  "local_only": true
+  "publication_policy": "config/mirror.json"
 }
