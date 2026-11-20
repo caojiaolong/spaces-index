@@ -6,9 +6,18 @@
     "source_url": "https://spaces.ac.cn/archives/2022",
     "date": "2013-07-18",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "生活/情感",
+    "source_tags": [
+      "竞赛",
+      "经历",
+      "网络",
+      "联谊",
+      "研讨"
+    ],
+    "source_summary": null
   },
-  "fetched_at": "2026-09-14T14:01:17+00:00",
+  "fetched_at": "2026-11-20T10:14:20+00:00",
   "source_snapshot_sha256": "a9634772df76e5b9c769f863f54eb1409247e96f3468d866bf3069cb3dce118b",
   "validators": {
     "etag": null,

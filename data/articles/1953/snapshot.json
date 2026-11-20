@@ -6,9 +6,18 @@
     "source_url": "https://spaces.ac.cn/archives/1953",
     "date": "2013-04-08",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "天文探索",
+    "source_tags": [
+      "引力",
+      "飞船",
+      "力学",
+      "天体",
+      "宇航"
+    ],
+    "source_summary": null
   },
-  "fetched_at": "2026-09-14T14:03:34+00:00",
+  "fetched_at": "2026-11-20T10:15:41+00:00",
   "source_snapshot_sha256": "3fb73c69a42b7bf5b3d03d30b3646e01e4fdb1aa380d5a869c1ad14a538627fd",
   "validators": {
     "etag": null,

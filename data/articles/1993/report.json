@@ -6,7 +6,12 @@
     "source_url": "https://spaces.ac.cn/archives/1993",
     "date": "2013-05-20",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "生活/情感",
+    "source_tags": [
+      "中国象棋"
+    ],
+    "source_summary": null
   },
   "validation": {
     "passed": true,
@@ -30,8 +35,8 @@
     "converter_version": 1,
     "markdown_sha256": "9f0f8a2656e75077f3ee615fdb50882b33ec03a560fcf02e1daae44b162a4869"
   },
-  "fetched_at": "2026-09-14T14:02:10+00:00",
+  "fetched_at": "2026-11-20T10:15:06+00:00",
   "source_snapshot_sha256": "09303654a9d404a1a85670e1fd7001dea597e1b7a784aa4cfa4d272228bedbe9",
   "images": {},
-  "local_only": true
+  "publication_policy": "config/mirror.json"
 }

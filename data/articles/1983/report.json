@@ -6,7 +6,14 @@
     "source_url": "https://spaces.ac.cn/archives/1983",
     "date": "2013-04-27",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "问题百科",
+    "source_tags": [
+      "网站",
+      "历史",
+      "天气"
+    ],
+    "source_summary": null
   },
   "validation": {
     "passed": true,
@@ -30,8 +37,8 @@
     "converter_version": 1,
     "markdown_sha256": "d23f425304d3a3428266c445334863078df089523378ae96e6e4f7bdb0a8afc3"
   },
-  "fetched_at": "2026-09-14T14:02:36+00:00",
+  "fetched_at": "2026-11-20T10:15:24+00:00",
   "source_snapshot_sha256": "c1f11ca07b88ce823beb16ebae1cad8043c5dd2296155e68f0e30aabeb0db2d5",
   "images": {},
-  "local_only": true
+  "publication_policy": "config/mirror.json"
 }

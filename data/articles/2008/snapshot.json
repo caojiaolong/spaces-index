@@ -6,9 +6,15 @@
     "source_url": "https://spaces.ac.cn/archives/2008",
     "date": "2013-06-27",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "生活/情感",
+    "source_tags": [
+      "引力",
+      "书籍"
+    ],
+    "source_summary": null
   },
-  "fetched_at": "2026-09-14T14:01:37+00:00",
+  "fetched_at": "2026-11-20T10:14:34+00:00",
   "source_snapshot_sha256": "02d74cdb305ea7323af4825c9640bb051d534be92d8f9f0bc2e6009847141ff8",
   "validators": {
     "etag": null,

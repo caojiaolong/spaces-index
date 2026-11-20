@@ -6,9 +6,17 @@
     "source_url": "https://spaces.ac.cn/archives/2031",
     "date": "2013-07-20",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "物理化学",
+    "source_tags": [
+      "生活",
+      "望远镜",
+      "旋转",
+      "平衡"
+    ],
+    "source_summary": null
   },
-  "fetched_at": "2026-09-14T14:01:11+00:00",
+  "fetched_at": "2026-11-20T10:14:16+00:00",
   "source_snapshot_sha256": "549803ff09f144d2169e5c34df89066275b98eb611f5800780c76c90411f67d7",
   "validators": {
     "etag": null,

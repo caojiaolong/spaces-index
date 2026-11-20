@@ -6,7 +6,13 @@
     "source_url": "https://spaces.ac.cn/archives/1951",
     "date": "2013-04-08",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "数学研究",
+    "source_tags": [
+      "素数",
+      "网络"
+    ],
+    "source_summary": null
   },
   "validation": {
     "passed": true,
@@ -30,8 +36,8 @@
     "converter_version": 1,
     "markdown_sha256": "37d3c8f0c405cfbabc33b38dc848a7d7beff367174172c5ac921753626fefc03"
   },
-  "fetched_at": "2026-09-14T14:03:41+00:00",
+  "fetched_at": "2026-11-20T10:15:45+00:00",
   "source_snapshot_sha256": "466d2536b9ff72b1ee635e15ee34152a4129128fa361cedbbc2333372b3e3dc8",
   "images": {},
-  "local_only": true
+  "publication_policy": "config/mirror.json"
 }

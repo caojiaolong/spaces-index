@@ -6,7 +6,14 @@
     "source_url": "https://spaces.ac.cn/archives/1987",
     "date": "2013-05-11",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "物理化学",
+    "source_tags": [
+      "磁场",
+      "相对论",
+      "电场"
+    ],
+    "source_summary": null
   },
   "validation": {
     "passed": true,
@@ -30,8 +37,8 @@
     "converter_version": 1,
     "markdown_sha256": "81f423c3d326371362ee5e8508612f6cdcc04660e32fef1c8bdc84d1bfe1b257"
   },
-  "fetched_at": "2026-09-14T14:02:23+00:00",
+  "fetched_at": "2026-11-20T10:15:16+00:00",
   "source_snapshot_sha256": "ab40b958c90830590a9dbeee0913c3f2f753b368afac59aba033adfd6cce53a8",
   "images": {},
-  "local_only": true
+  "publication_policy": "config/mirror.json"
 }

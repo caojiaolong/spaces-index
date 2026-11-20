@@ -6,9 +6,16 @@
     "source_url": "https://spaces.ac.cn/archives/2004",
     "date": "2013-06-07",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "物理化学",
+    "source_tags": [
+      "引力",
+      "费曼",
+      "场论"
+    ],
+    "source_summary": null
   },
-  "fetched_at": "2026-09-14T14:01:50+00:00",
+  "fetched_at": "2026-11-20T10:14:47+00:00",
   "source_snapshot_sha256": "ecf4946bf1fcbc4a0e6ebcc2f1f5ec3e2edbdd2a85418a60a7bb214b38d5b333",
   "validators": {
     "etag": null,

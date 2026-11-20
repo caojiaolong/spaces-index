@@ -6,7 +6,13 @@
     "source_url": "https://spaces.ac.cn/archives/1986",
     "date": "2013-05-05",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "资源共享",
+    "source_tags": [
+      "费曼",
+      "讲座"
+    ],
+    "source_summary": null
   },
   "validation": {
     "passed": true,
@@ -30,8 +36,8 @@
     "converter_version": 1,
     "markdown_sha256": "f3a4832e85ed015e3b6f9f4b883a361c2fb7b3e8ed68d29a8424a91883821ac4"
   },
-  "fetched_at": "2026-09-14T14:02:29+00:00",
+  "fetched_at": "2026-11-20T10:15:20+00:00",
   "source_snapshot_sha256": "7115042a500ed4ccf4ae7f57b3f00e8e51470b27695c3682642789f8a7d7e1b9",
   "images": {},
-  "local_only": true
+  "publication_policy": "config/mirror.json"
 }

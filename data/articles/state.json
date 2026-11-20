@@ -5300,21 +5300,21 @@
   },
   "2121": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:20:29+00:00",
+    "checked_at": "2026-11-20T10:13:41+00:00",
     "title": "力学系统及其对偶性（一）",
     "markdown_sha256": "c955ee02e57771ad14eb6ea40264f833126ac038941599611cc845c98b6ee06b",
     "converter_version": 1
   },
   "2111": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:20:29+00:00",
+    "checked_at": "2026-11-20T10:13:46+00:00",
     "title": "月底回家看彗星C/2012 S1 (ISON)",
     "markdown_sha256": "96d24222a150430dc764f4760d0b667bcbfd31642592d7f2e6f1ff516d3e512a",
     "converter_version": 1
   },
   "2107": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:20:29+00:00",
+    "checked_at": "2026-11-20T10:13:49+00:00",
     "title": "求解微分方程的李对称方法（一）",
     "markdown_sha256": "27e9e2ff6c1eeb01c8de30d34c16c431d5640642e1d9a625173c98dc7ac3784e",
     "converter_version": 1
@@ -5377,140 +5377,140 @@
   },
   "2055": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:20:30+00:00",
+    "checked_at": "2026-11-20T10:13:53+00:00",
     "title": "[电子书]《最小作用量原理与物理学的发展》",
     "markdown_sha256": "e582921358f6122df81001759e4cadf9598ea9bb3316db359563a9405211a1b3",
     "converter_version": 1
   },
   "2050": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:20:30+00:00",
+    "checked_at": "2026-11-20T10:13:57+00:00",
     "title": "势能最小问题的探讨",
     "markdown_sha256": "a6e71d53c3bb500714c9fcd3b5a80eda668ceef2d9a87b039b472c42ea6669c0",
     "converter_version": 1
   },
   "2045": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:20:30+00:00",
+    "checked_at": "2026-11-20T10:14:01+00:00",
     "title": "CreaWriter，惬意创作！",
     "markdown_sha256": "421d79e3326d59a5f7da77079e6050aa296e8dec86c55f06751691cc0f7f2c56",
     "converter_version": 1
   },
   "2040": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:20:30+00:00",
+    "checked_at": "2026-11-20T10:14:04+00:00",
     "title": "变分法的一个技巧及其“误用”",
     "markdown_sha256": "9f42c323e52b8e57557306d1216c6dd269ab1065f9eed7b146af11748352fd3f",
     "converter_version": 1
   },
   "2038": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:20:30+00:00",
+    "checked_at": "2026-11-20T10:14:08+00:00",
     "title": "【翻译】星空之夜：夏季恒星的色彩",
     "markdown_sha256": "7bbec8fe331b5ac6890ff31d7c1d4c14eef0bad6a598485b1039ade3f23eca00",
     "converter_version": 1
   },
   "2036": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:20:30+00:00",
+    "checked_at": "2026-11-20T10:14:12+00:00",
     "title": "《虚拟的实在(4)》——质量是什么",
     "markdown_sha256": "f4b0df520c483e59bcb1c093ecade3defaba89796453b58b52928412a55e9e51",
     "converter_version": 1
   },
   "2031": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:20:30+00:00",
+    "checked_at": "2026-11-20T10:14:16+00:00",
     "title": "洗手盆里的学问",
     "markdown_sha256": "c8a44080eeea645b0cb6af9a20b16447da7e771536af8105f692d2e12286e8ee",
     "converter_version": 1
   },
   "2022": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:20:30+00:00",
+    "checked_at": "2026-11-20T10:14:20+00:00",
     "title": "欢聚兴隆，畅言科普",
     "markdown_sha256": "8f0316979558382abb513880a612ebdb20c4a736e2465eeaeef143cbb9ef890e",
     "converter_version": 1
   },
   "2020": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:20:30+00:00",
+    "checked_at": "2026-11-20T10:14:23+00:00",
     "title": "齐次对称多项式初等表示的新尝试",
     "markdown_sha256": "9b26033459129a3f293ac604e45eb9379d423f0804e9584d113df02643a294cf",
     "converter_version": 1
   },
   "2013": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:20:31+00:00",
+    "checked_at": "2026-11-20T10:14:28+00:00",
     "title": "与首都机场的“难分难舍”",
     "markdown_sha256": "ccdad4aecff1898bc1f13e61abba0e26c58cfb0d941be59ef0329165a17b6a44",
     "converter_version": 1
   },
   "2008": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:20:31+00:00",
+    "checked_at": "2026-11-20T10:14:34+00:00",
     "title": "哈哈，我的“《圣经》”到了",
     "markdown_sha256": "33a78e79c53ee0cd8f067edb4032d52192bfdc587aecf0335567b62d65e56654",
     "converter_version": 1
   },
   "2005": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:20:31+00:00",
+    "checked_at": "2026-11-20T10:14:42+00:00",
     "title": "《虚拟的实在(3)》——相对论动力学 ",
     "markdown_sha256": "767c3868b589af32cc48d4712662fd775a2de4366133b5a9fd1a1871ec297457",
     "converter_version": 1
   },
   "2004": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:20:31+00:00",
+    "checked_at": "2026-11-20T10:14:47+00:00",
     "title": "《虚拟的实在(2)》——为什么引力如此复杂？ ",
     "markdown_sha256": "f9c0474829b55486d370f35727e8578ec4fcae906cf7e036952e39a8616932f2",
     "converter_version": 1
   },
   "1999": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:20:31+00:00",
+    "checked_at": "2026-11-20T10:14:53+00:00",
     "title": "《虚拟的实在(1)》——为什么需要场？",
     "markdown_sha256": "d07dda78874fca6b118da0c3dac052f1544103c222026438d3cf01ab1e592fb1",
     "converter_version": 1
   },
   "1995": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:20:31+00:00",
+    "checked_at": "2026-11-20T10:14:58+00:00",
     "title": "当Matlab遇上牛顿法",
     "markdown_sha256": "de9ed9dec9628c7355616bd8902336f0ad64b536d53b5e77a61c17ab9f3020bf",
     "converter_version": 1
   },
   "1993": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:20:31+00:00",
+    "checked_at": "2026-11-20T10:15:06+00:00",
     "title": "广州棋院观赛——首见“岭南双雄”",
     "markdown_sha256": "9f0f8a2656e75077f3ee615fdb50882b33ec03a560fcf02e1daae44b162a4869",
     "converter_version": 1
   },
   "1990": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:20:31+00:00",
+    "checked_at": "2026-11-20T10:15:11+00:00",
     "title": "正项级数敛散性最有力的判别法？",
     "markdown_sha256": "f5b7e5966485fd3642f6b307b75cd7beaaa225198c5e0844494702707205b68e",
     "converter_version": 1
   },
   "1987": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:20:31+00:00",
+    "checked_at": "2026-11-20T10:15:16+00:00",
     "title": "电的相对论效应——磁“子虚乌有”？",
     "markdown_sha256": "81f423c3d326371362ee5e8508612f6cdcc04660e32fef1c8bdc84d1bfe1b257",
     "converter_version": 1
   },
   "1986": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:20:31+00:00",
+    "checked_at": "2026-11-20T10:15:20+00:00",
     "title": "费曼讲座视频分享",
     "markdown_sha256": "f3a4832e85ed015e3b6f9f4b883a361c2fb7b3e8ed68d29a8424a91883821ac4",
     "converter_version": 1
   },
   "1983": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:20:31+00:00",
+    "checked_at": "2026-11-20T10:15:24+00:00",
     "title": "[备忘]历史天气查询",
     "markdown_sha256": "d23f425304d3a3428266c445334863078df089523378ae96e6e4f7bdb0a8afc3",
     "converter_version": 1
@@ -5573,14 +5573,14 @@
   },
   "1953": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:20:32+00:00",
+    "checked_at": "2026-11-20T10:15:41+00:00",
     "title": "浅谈引力助推",
     "markdown_sha256": "7293ec4a99be752c635108a6e5a3574883e1a6af56945a700c630a86e04faf1e",
     "converter_version": 1
   },
   "1951": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:20:32+00:00",
+    "checked_at": "2026-11-20T10:15:45+00:00",
     "title": "2^29363731-1不是素数！",
     "markdown_sha256": "37d3c8f0c405cfbabc33b38dc848a7d7beff367174172c5ac921753626fefc03",
     "converter_version": 1
@@ -8464,7 +8464,7 @@
   },
   "132": {
     "status": "conversion_failed",
-    "checked_at": "2026-11-19T10:33:13+00:00",
+    "checked_at": "2026-11-20T10:15:45+00:00",
     "title": "一道从小学到高中都可能考到的题目",
     "error": "Unreviewed legacy element: a<b，则有<br",
     "converter_version": 1,

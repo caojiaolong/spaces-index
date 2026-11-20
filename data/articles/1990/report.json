@@ -6,7 +6,14 @@
     "source_url": "https://spaces.ac.cn/archives/1990",
     "date": "2013-05-17",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "数学研究",
+    "source_tags": [
+      "级数",
+      "猜想",
+      "收敛"
+    ],
+    "source_summary": null
   },
   "validation": {
     "passed": true,
@@ -30,8 +37,8 @@
     "converter_version": 1,
     "markdown_sha256": "f5b7e5966485fd3642f6b307b75cd7beaaa225198c5e0844494702707205b68e"
   },
-  "fetched_at": "2026-09-14T14:02:17+00:00",
+  "fetched_at": "2026-11-20T10:15:11+00:00",
   "source_snapshot_sha256": "113263366805322a97222d904c15aeb0e37d993321eff4aa5a7e9396744fa022",
   "images": {},
-  "local_only": true
+  "publication_policy": "config/mirror.json"
 }

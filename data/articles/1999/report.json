@@ -6,7 +6,13 @@
     "source_url": "https://spaces.ac.cn/archives/1999",
     "date": "2013-05-24",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "物理化学",
+    "source_tags": [
+      "引力",
+      "场论"
+    ],
+    "source_summary": null
   },
   "validation": {
     "passed": true,
@@ -30,8 +36,8 @@
     "converter_version": 1,
     "markdown_sha256": "d07dda78874fca6b118da0c3dac052f1544103c222026438d3cf01ab1e592fb1"
   },
-  "fetched_at": "2026-09-14T14:01:57+00:00",
+  "fetched_at": "2026-11-20T10:14:53+00:00",
   "source_snapshot_sha256": "28f108a8e1b01922ee2bf0120edf9680ea6e78f0b434cdaf44a5fde90a11827a",
   "images": {},
-  "local_only": true
+  "publication_policy": "config/mirror.json"
 }

@@ -6,7 +6,14 @@
     "source_url": "https://spaces.ac.cn/archives/1995",
     "date": "2013-05-22",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "数学研究",
+    "source_tags": [
+      "方程",
+      "软件",
+      "近似"
+    ],
+    "source_summary": null
   },
   "validation": {
     "passed": true,
@@ -30,8 +37,8 @@
     "converter_version": 1,
     "markdown_sha256": "de9ed9dec9628c7355616bd8902336f0ad64b536d53b5e77a61c17ab9f3020bf"
   },
-  "fetched_at": "2026-09-14T14:02:04+00:00",
+  "fetched_at": "2026-11-20T10:14:58+00:00",
   "source_snapshot_sha256": "fe5b72cd551c50612ebf20a6d771165ca4b8ad3955a3d3445d142879a51ce158",
   "images": {},
-  "local_only": true
+  "publication_policy": "config/mirror.json"
 }
