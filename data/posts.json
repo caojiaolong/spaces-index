@@ -11401,7 +11401,8 @@
       "学习",
       "场论"
     ],
-    "source_summary": null
+    "source_summary": null,
+    "metadata_checked_at": "2026-11-21T09:59:19+00:00"
   },
   {
     "id": "1973",
@@ -11414,7 +11415,8 @@
       "博弈",
       "策略"
     ],
-    "source_summary": null
+    "source_summary": null,
+    "metadata_checked_at": "2026-11-21T09:59:22+00:00"
   },
   {
     "id": "1971",
@@ -11428,7 +11430,8 @@
       "矩阵",
       "时空"
     ],
-    "source_summary": "到现在为止，我们对于狭义相对论的时空观基本已经建立起来了。从形式论的角度来讲，我们还应该添加上相对论时空的几何描述，但是我们不侧重这一点。从物理角度来看，我们还欠缺相对论动力学的内容，这在以后的文章里可能会慢慢谈及。本文不是相对论教程，只是我在学习相对论时的一些比较直观的看法，所以更多的基础内容还请各位读者阅读相关的著作。下一篇文章，我们将看到，相对论效应不一定体现在高速运动的粒子中，在很慢的运动中也体现出了相对论的美丽。"
+    "source_summary": "到现在为止，我们对于狭义相对论的时空观基本已经建立起来了。从形式论的角度来讲，我们还应该添加上相对论时空的几何描述，但是我们不侧重这一点。从物理角度来看，我们还欠缺相对论动力学的内容，这在以后的文章里可能会慢慢谈及。本文不是相对论教程，只是我在学习相对论时的一些比较直观的看法，所以更多的基础内容还请各位读者阅读相关的著作。下一篇文章，我们将看到，相对论效应不一定体现在高速运动的粒子中，在很慢的运动中也体现出了相对论的美丽。",
+    "metadata_checked_at": "2026-11-21T09:59:26+00:00"
   },
   {
     "id": "1970",
@@ -11440,7 +11443,8 @@
       "素数",
       "网络"
     ],
-    "source_summary": null
+    "source_summary": null,
+    "metadata_checked_at": "2026-11-21T09:59:30+00:00"
   },
   {
     "id": "1969",
@@ -11452,7 +11456,8 @@
       "素数",
       "网络"
     ],
-    "source_summary": null
+    "source_summary": null,
+    "metadata_checked_at": "2026-11-21T09:59:33+00:00"
   },
   {
     "id": "1967",
@@ -11464,7 +11469,8 @@
       "积分",
       "费曼"
     ],
-    "source_summary": null
+    "source_summary": null,
+    "metadata_checked_at": "2026-11-21T09:59:36+00:00"
   },
   {
     "id": "1964",
@@ -11479,7 +11485,8 @@
       "潮汐",
       "潮汐力"
     ],
-    "source_summary": null
+    "source_summary": null,
+    "metadata_checked_at": "2026-11-21T09:59:40+00:00"
   },
   {
     "id": "1963",
@@ -11491,7 +11498,8 @@
       "素数",
       "网络"
     ],
-    "source_summary": null
+    "source_summary": null,
+    "metadata_checked_at": "2026-11-21T09:59:43+00:00"
   },
   {
     "id": "1953",
@@ -11533,7 +11541,8 @@
       "欧拉数学",
       "费曼"
     ],
-    "source_summary": null
+    "source_summary": null,
+    "metadata_checked_at": "2026-11-21T09:59:47+00:00"
   },
   {
     "id": "1944",
@@ -11547,7 +11556,8 @@
       "对称",
       "费曼"
     ],
-    "source_summary": null
+    "source_summary": null,
+    "metadata_checked_at": "2026-11-21T09:59:50+00:00"
   },
   {
     "id": "1942",
@@ -11561,7 +11571,8 @@
       "费曼",
       "泛函"
     ],
-    "source_summary": null
+    "source_summary": null,
+    "metadata_checked_at": "2026-11-21T09:59:54+00:00"
   },
   {
     "id": "1935",
@@ -11576,7 +11587,8 @@
       "摄动",
       "同伦"
     ],
-    "source_summary": null
+    "source_summary": null,
+    "metadata_checked_at": "2026-11-21T09:59:58+00:00"
   },
   {
     "id": "1929",
@@ -11590,7 +11602,8 @@
       "摄动",
       "微扰"
     ],
-    "source_summary": null
+    "source_summary": null,
+    "metadata_checked_at": "2026-11-21T10:00:01+00:00"
   },
   {
     "id": "1928",
@@ -11602,7 +11615,8 @@
       "情感",
       "转载"
     ],
-    "source_summary": null
+    "source_summary": null,
+    "metadata_checked_at": "2026-11-21T10:00:04+00:00"
   },
   {
     "id": "1923",
@@ -11616,7 +11630,8 @@
       "矩阵",
       "不变量"
     ],
-    "source_summary": null
+    "source_summary": null,
+    "metadata_checked_at": "2026-11-21T10:00:08+00:00"
   },
   {
     "id": "1922",
@@ -11630,7 +11645,8 @@
       "线性",
       "游戏"
     ],
-    "source_summary": null
+    "source_summary": null,
+    "metadata_checked_at": "2026-11-21T10:00:11+00:00"
   },
   {
     "id": "1921",
@@ -11642,7 +11658,8 @@
       "数字",
       "游戏"
     ],
-    "source_summary": null
+    "source_summary": null,
+    "metadata_checked_at": "2026-11-21T10:00:15+00:00"
   },
   {
     "id": "1914",
@@ -11655,7 +11672,8 @@
       "节日",
       "拍摄"
     ],
-    "source_summary": null
+    "source_summary": null,
+    "metadata_checked_at": "2026-11-21T10:00:18+00:00"
   },
   {
     "id": "1909",
@@ -11668,7 +11686,8 @@
       "摄动",
       "微扰"
     ],
-    "source_summary": null
+    "source_summary": null,
+    "metadata_checked_at": "2026-11-21T10:00:22+00:00"
   },
   {
     "id": "1908",
@@ -11741,7 +11760,8 @@
       "生活",
       "大学"
     ],
-    "source_summary": null
+    "source_summary": null,
+    "metadata_checked_at": "2026-11-21T10:00:25+00:00"
   },
   {
     "id": "1889",
@@ -11754,7 +11774,8 @@
       "变换",
       "矩阵"
     ],
-    "source_summary": null
+    "source_summary": null,
+    "metadata_checked_at": "2026-11-21T10:00:28+00:00"
   },
   {
     "id": "1886",
@@ -11765,7 +11786,8 @@
     "source_tags": [
       "网站"
     ],
-    "source_summary": null
+    "source_summary": null,
+    "metadata_checked_at": "2026-11-21T10:00:32+00:00"
   },
   {
     "id": "1884",
@@ -11777,7 +11799,8 @@
       "网站",
       "读者"
     ],
-    "source_summary": null
+    "source_summary": null,
+    "metadata_checked_at": "2026-11-21T10:00:35+00:00"
   },
   {
     "id": "1879",
@@ -11792,7 +11815,8 @@
       "量子力学",
       "统一"
     ],
-    "source_summary": null
+    "source_summary": null,
+    "metadata_checked_at": "2026-11-21T10:00:39+00:00"
   },
   {
     "id": "1878",
@@ -11806,7 +11830,8 @@
       "摄动",
       "微扰"
     ],
-    "source_summary": null
+    "source_summary": null,
+    "metadata_checked_at": "2026-11-21T10:00:42+00:00"
   },
   {
     "id": "1870",

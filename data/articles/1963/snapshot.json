@@ -6,9 +6,15 @@
     "source_url": "https://spaces.ac.cn/archives/1963",
     "date": "2013-04-09",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "数学研究",
+    "source_tags": [
+      "素数",
+      "网络"
+    ],
+    "source_summary": null
   },
-  "fetched_at": "2026-09-14T14:03:28+00:00",
+  "fetched_at": "2026-11-21T09:59:43+00:00",
   "source_snapshot_sha256": "da2c778480b55eac3cb1187239d6f3fc08325f7889c83a9df05aabbe599b31ea",
   "validators": {
     "etag": null,

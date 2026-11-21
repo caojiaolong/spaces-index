@@ -5517,56 +5517,56 @@
   },
   "1980": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:20:32+00:00",
+    "checked_at": "2026-11-21T09:59:19+00:00",
     "title": "学习场论（电磁场、重力场）",
     "markdown_sha256": "d23557a2722e77a321f9dbe3d4b0915908d0db389887e4e756c071084971ab81",
     "converter_version": 1
   },
   "1973": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:20:32+00:00",
+    "checked_at": "2026-11-21T09:59:22+00:00",
     "title": "“抢15”游戏简析",
     "markdown_sha256": "6028d9a1e1696cdf06a348c3ee8801e7e11060ea79041ec675129fd52ca0dd56",
     "converter_version": 1
   },
   "1971": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:20:32+00:00",
+    "checked_at": "2026-11-21T09:59:26+00:00",
     "title": "纠缠的时空（三）：长度收缩和时间延缓",
     "markdown_sha256": "5eac95057199ef668f7fcef5e95d133e0bf84bea6a8818c6c926d6449afcbb19",
     "converter_version": 1
   },
   "1970": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:20:32+00:00",
+    "checked_at": "2026-11-21T09:59:30+00:00",
     "title": "第四波：2^29360741-1不是素数！",
     "markdown_sha256": "cc8cdaeb0d5cc90d08b2d58b746dda1321f08684e7de7ed4b28c65eabfa9b32b",
     "converter_version": 1
   },
   "1969": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:20:32+00:00",
+    "checked_at": "2026-11-21T09:59:33+00:00",
     "title": "2^29365451-1不是素数",
     "markdown_sha256": "4647a7ca45bc6f09864401a32dd8c0d5b6bd12e02eb582ab247d3deee5c3a9fe",
     "converter_version": 1
   },
   "1967": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:20:32+00:00",
+    "checked_at": "2026-11-21T09:59:36+00:00",
     "title": "费曼积分法(8)：求高斯积分",
     "markdown_sha256": "517ee3a36bda146bcac4f808f691da288ca8f3159cd9d0d8c7a3430550fbd17c",
     "converter_version": 1
   },
   "1964": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:20:32+00:00",
+    "checked_at": "2026-11-21T09:59:40+00:00",
     "title": "流体静力平衡的应用",
     "markdown_sha256": "ca06583f663b8aea9fb38cce1a7156e89754c3856bb41337c82fc28036af9cad",
     "converter_version": 1
   },
   "1963": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:20:32+00:00",
+    "checked_at": "2026-11-21T09:59:43+00:00",
     "title": "2^29365247-1也不是素数！",
     "markdown_sha256": "559c6fa395d03aa5b1f5e90c98a8e99df1e9f3ceabc65faa0f566b41c5bf7fa9",
     "converter_version": 1
@@ -5587,77 +5587,77 @@
   },
   "1946": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:20:33+00:00",
+    "checked_at": "2026-11-21T09:59:47+00:00",
     "title": "费曼积分法(7)：欧拉数学的综合",
     "markdown_sha256": "e385d4af41fdb4496080be690a6310ba1f755a53a445909f57ac67d2e98c8e5c",
     "converter_version": 1
   },
   "1944": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:20:33+00:00",
+    "checked_at": "2026-11-21T09:59:50+00:00",
     "title": "费曼积分法(6)：教科书上的两道练习题",
     "markdown_sha256": "f8992c1d677bddf859f12ca9d8ad1ca78b7bec94a1f85ab903a979830fe005a2",
     "converter_version": 1
   },
   "1942": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:20:33+00:00",
+    "checked_at": "2026-11-21T09:59:54+00:00",
     "title": "费曼积分法(5)：欧拉数学的传承",
     "markdown_sha256": "c1248594196ad4ba94306c370b1f5e97060d9598111a8b53a099fc56a1ad4681",
     "converter_version": 1
   },
   "1935": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:20:33+00:00",
+    "checked_at": "2026-11-21T09:59:58+00:00",
     "title": "单摆运动级数解：初试同伦分析",
     "markdown_sha256": "18250c552ea577771130deb80c5b75d45b12ca05b112c0a5c89bd029bca547f0",
     "converter_version": 1
   },
   "1929": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:20:33+00:00",
+    "checked_at": "2026-11-21T10:00:01+00:00",
     "title": "轻微的扰动——摄动法简介(3) ",
     "markdown_sha256": "ce632156a5c8390779e459b2f673c65943086365b28aaf11a96dfe6d614cbb38",
     "converter_version": 1
   },
   "1928": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:20:33+00:00",
+    "checked_at": "2026-11-21T10:00:04+00:00",
     "title": "我害怕",
     "markdown_sha256": "58ee4cb61e7ebeb6aadfadf6b67885e79b98f694684817d6bcdde861dfa7968a",
     "converter_version": 1
   },
   "1923": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:20:33+00:00",
+    "checked_at": "2026-11-21T10:00:08+00:00",
     "title": "纠缠的时空（二）：洛仑兹变换的矩阵(续)",
     "markdown_sha256": "59270963d67d7ace13e43a083f746c581232b9dcada8919a83dd4e3d5cddfbda",
     "converter_version": 1
   },
   "1922": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:20:33+00:00",
+    "checked_at": "2026-11-21T10:00:11+00:00",
     "title": "[问题解答]有多少位数字？",
     "markdown_sha256": "d21d78feb1369dfc045aaf5ddd52c38c05d328b2afa1ba08ac0f07ce314ed365",
     "converter_version": 1
   },
   "1921": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:20:33+00:00",
+    "checked_at": "2026-11-21T10:00:15+00:00",
     "title": "[问题解答]有多少个5？",
     "markdown_sha256": "3b6f807735fcae096038c9d224ce727dc6722c5a1ab62c60634bb53fba80e0c0",
     "converter_version": 1
   },
   "1914": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:20:33+00:00",
+    "checked_at": "2026-11-21T10:00:18+00:00",
     "title": "新年快乐！桃花迎春！",
     "markdown_sha256": "32f83869f5ed3faaf2ce8150c98b0f50fbfdba44cf5cf4297266aee0722efc48",
     "converter_version": 1
   },
   "1909": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:20:33+00:00",
+    "checked_at": "2026-11-21T10:00:22+00:00",
     "title": "轻微的扰动——摄动法简介(2) ",
     "markdown_sha256": "53ca7b0da42b4a3aae69bbaadfe0687c29a430c7d32f4dc91383c34af26e57b7",
     "converter_version": 1
@@ -5699,42 +5699,42 @@
   },
   "1894": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:20:34+00:00",
+    "checked_at": "2026-11-21T10:00:25+00:00",
     "title": "大学，如水年华",
     "markdown_sha256": "6f2ba4c6aab10cd7c9bbc89a9e0b165bdef91fa6d5cd0ebd289855d36e8dadf9",
     "converter_version": 1
   },
   "1889": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:20:34+00:00",
+    "checked_at": "2026-11-21T10:00:28+00:00",
     "title": "纠缠的时空（一）：洛仑兹变换的矩阵",
     "markdown_sha256": "f3dd20ce1124456595acf498a4e82d25d2f2bd5b437aa871b6730b1440752956",
     "converter_version": 1
   },
   "1886": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:20:34+00:00",
+    "checked_at": "2026-11-21T10:00:32+00:00",
     "title": "校外通过VPN通道访问华师资源",
     "markdown_sha256": "b7217b71cb03db958963ae006ae572140b775f19bdace999e5d1ad932ef72520",
     "converter_version": 1
   },
   "1884": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:20:34+00:00",
+    "checked_at": "2026-11-21T10:00:35+00:00",
     "title": "评论功能修复了",
     "markdown_sha256": "f9619fc4b36330d5c0b5184e3eacc48ca3284d4b90082f195df95204b74a1141",
     "converter_version": 1
   },
   "1879": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:20:34+00:00",
+    "checked_at": "2026-11-21T10:00:39+00:00",
     "title": "新科学家：割裂时间空间，统一相对论量子论",
     "markdown_sha256": "f97c1efabd9b0ab6857e34014d3de1ec6b51d198b39ff3991c4db2d896e317c9",
     "converter_version": 1
   },
   "1878": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:20:34+00:00",
+    "checked_at": "2026-11-21T10:00:42+00:00",
     "title": "轻微的扰动——摄动法简介(1)",
     "markdown_sha256": "f8cb08dc403f9512b6d6da55475dc567f719388eba8e517afdee73881d9ffa10",
     "converter_version": 1
@@ -8464,7 +8464,7 @@
   },
   "132": {
     "status": "conversion_failed",
-    "checked_at": "2026-11-20T10:15:45+00:00",
+    "checked_at": "2026-11-21T10:00:42+00:00",
     "title": "一道从小学到高中都可能考到的题目",
     "error": "Unreviewed legacy element: a<b，则有<br",
     "converter_version": 1,

@@ -6,9 +6,17 @@
     "source_url": "https://spaces.ac.cn/archives/1971",
     "date": "2013-04-18",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "物理化学",
+    "source_tags": [
+      "时间",
+      "相对论",
+      "矩阵",
+      "时空"
+    ],
+    "source_summary": "到现在为止，我们对于狭义相对论的时空观基本已经建立起来了。从形式论的角度来讲，我们还应该添加上相对论时空的几何描述，但是我们不侧重这一点。从物理角度来看，我们还欠缺相对论动力学的内容，这在以后的文章里可能会慢慢谈及。本文不是相对论教程，只是我在学习相对论时的一些比较直观的看法，所以更多的基础内容还请各位读者阅读相关的著作。下一篇文章，我们将看到，相对论效应不一定体现在高速运动的粒子中，在很慢的运动中也体现出了相对论的美丽。"
   },
-  "fetched_at": "2026-09-14T14:02:55+00:00",
+  "fetched_at": "2026-11-21T09:59:26+00:00",
   "source_snapshot_sha256": "b343abeed1b156d0aafbfc18a13078c45268a08a6d98af59af8766aedc2910b0",
   "validators": {
     "etag": null,

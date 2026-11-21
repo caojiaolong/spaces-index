@@ -6,7 +6,14 @@
     "source_url": "https://spaces.ac.cn/archives/1946",
     "date": "2013-03-27",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "数学研究",
+    "source_tags": [
+      "积分",
+      "欧拉数学",
+      "费曼"
+    ],
+    "source_summary": null
   },
   "validation": {
     "passed": true,
@@ -30,8 +37,8 @@
     "converter_version": 1,
     "markdown_sha256": "e385d4af41fdb4496080be690a6310ba1f755a53a445909f57ac67d2e98c8e5c"
   },
-  "fetched_at": "2026-09-14T14:03:48+00:00",
+  "fetched_at": "2026-11-21T09:59:47+00:00",
   "source_snapshot_sha256": "d4d4355905a877a9f0a87d07b5a9e4a32ee63e57b1f928b8b0490eba9b6fd09d",
   "images": {},
-  "local_only": true
+  "publication_policy": "config/mirror.json"
 }

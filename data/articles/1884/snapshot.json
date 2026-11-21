@@ -6,9 +6,15 @@
     "source_url": "https://spaces.ac.cn/archives/1884",
     "date": "2013-01-20",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "生活/情感",
+    "source_tags": [
+      "网站",
+      "读者"
+    ],
+    "source_summary": null
   },
-  "fetched_at": "2026-09-14T14:06:04+00:00",
+  "fetched_at": "2026-11-21T10:00:35+00:00",
   "source_snapshot_sha256": "2a7268a0de7d0809ceeeed81b159f8598286c777c9facd362c3d844381236114",
   "validators": {
     "etag": null,

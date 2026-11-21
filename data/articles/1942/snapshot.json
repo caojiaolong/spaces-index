@@ -6,9 +6,17 @@
     "source_url": "https://spaces.ac.cn/archives/1942",
     "date": "2013-03-24",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "数学研究",
+    "source_tags": [
+      "积分",
+      "欧拉数学",
+      "费曼",
+      "泛函"
+    ],
+    "source_summary": null
   },
-  "fetched_at": "2026-09-14T14:04:04+00:00",
+  "fetched_at": "2026-11-21T09:59:54+00:00",
   "source_snapshot_sha256": "a123e03a988b8c684849bce4a84ee48ef87a74ab02e2b9c0021b492004566ea2",
   "validators": {
     "etag": null,

@@ -6,9 +6,16 @@
     "source_url": "https://spaces.ac.cn/archives/1889",
     "date": "2013-02-01",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "物理化学",
+    "source_tags": [
+      "相对论",
+      "变换",
+      "矩阵"
+    ],
+    "source_summary": null
   },
-  "fetched_at": "2026-09-14T14:05:51+00:00",
+  "fetched_at": "2026-11-21T10:00:28+00:00",
   "source_snapshot_sha256": "3c91e602b4d35c4a62d6d9e32b0ddfe98bafa006fbd1462c0e5ab84b9431b63c",
   "validators": {
     "etag": null,

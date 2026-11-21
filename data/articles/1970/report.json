@@ -6,7 +6,13 @@
     "source_url": "https://spaces.ac.cn/archives/1970",
     "date": "2013-04-15",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "数学研究",
+    "source_tags": [
+      "素数",
+      "网络"
+    ],
+    "source_summary": null
   },
   "validation": {
     "passed": true,
@@ -30,8 +36,8 @@
     "converter_version": 1,
     "markdown_sha256": "cc8cdaeb0d5cc90d08b2d58b746dda1321f08684e7de7ed4b28c65eabfa9b32b"
   },
-  "fetched_at": "2026-09-14T14:03:02+00:00",
+  "fetched_at": "2026-11-21T09:59:30+00:00",
   "source_snapshot_sha256": "6c4781ae5c72c02b733d04fec1bc2105db75f0444f65f44aea2ca9a3c132541e",
   "images": {},
-  "local_only": true
+  "publication_policy": "config/mirror.json"
 }

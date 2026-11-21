@@ -6,9 +6,15 @@
     "source_url": "https://spaces.ac.cn/archives/1967",
     "date": "2013-04-14",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "数学研究",
+    "source_tags": [
+      "积分",
+      "费曼"
+    ],
+    "source_summary": null
   },
-  "fetched_at": "2026-09-14T14:03:15+00:00",
+  "fetched_at": "2026-11-21T09:59:36+00:00",
   "source_snapshot_sha256": "f68219280c0d64c7fa93e4b1219449976641d0ef0bcd844fe7207896b9feca24",
   "validators": {
     "etag": null,

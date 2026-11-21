@@ -6,7 +6,14 @@
     "source_url": "https://spaces.ac.cn/archives/1914",
     "date": "2013-02-09",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "图片摄影",
+    "source_tags": [
+      "生活",
+      "节日",
+      "拍摄"
+    ],
+    "source_summary": null
   },
   "validation": {
     "passed": true,
@@ -30,8 +37,8 @@
     "converter_version": 1,
     "markdown_sha256": "32f83869f5ed3faaf2ce8150c98b0f50fbfdba44cf5cf4297266aee0722efc48"
   },
-  "fetched_at": "2026-09-14T14:04:53+00:00",
+  "fetched_at": "2026-11-21T10:00:18+00:00",
   "source_snapshot_sha256": "1c4bcb6aac48aa7b297d40751e3c8a37a623fe6596c260c57602b29c9d288e5c",
   "images": {},
-  "local_only": true
+  "publication_policy": "config/mirror.json"
 }
