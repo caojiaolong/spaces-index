@@ -11698,7 +11698,8 @@
     "source_tags": [
       "网站"
     ],
-    "source_summary": null
+    "source_summary": null,
+    "metadata_checked_at": "2026-11-22T09:58:44+00:00"
   },
   {
     "id": "1907",
@@ -11710,7 +11711,8 @@
       "数学",
       "数论"
     ],
-    "source_summary": null
+    "source_summary": null,
+    "metadata_checked_at": "2026-11-22T09:58:47+00:00"
   },
   {
     "id": "1904",
@@ -11722,7 +11724,8 @@
       "圆锥曲线",
       "读者"
     ],
-    "source_summary": null
+    "source_summary": null,
+    "metadata_checked_at": "2026-11-22T09:58:51+00:00"
   },
   {
     "id": "1902",
@@ -11735,7 +11738,8 @@
       "极值",
       "公理"
     ],
-    "source_summary": null
+    "source_summary": null,
+    "metadata_checked_at": "2026-11-22T09:58:54+00:00"
   },
   {
     "id": "1898",
@@ -11748,7 +11752,8 @@
       "轨迹",
       "读者"
     ],
-    "source_summary": null
+    "source_summary": null,
+    "metadata_checked_at": "2026-11-22T09:58:58+00:00"
   },
   {
     "id": "1894",
@@ -11844,7 +11849,8 @@
       "积分",
       "函数"
     ],
-    "source_summary": null
+    "source_summary": null,
+    "metadata_checked_at": "2026-11-22T09:59:01+00:00"
   },
   {
     "id": "1868",
@@ -11857,7 +11863,8 @@
       "问题",
       "测量"
     ],
-    "source_summary": null
+    "source_summary": null,
+    "metadata_checked_at": "2026-11-22T09:59:05+00:00"
   },
   {
     "id": "2249",
@@ -11868,7 +11875,8 @@
     "source_tags": [
       "天象"
     ],
-    "source_summary": null
+    "source_summary": null,
+    "metadata_checked_at": "2026-11-22T09:59:09+00:00"
   },
   {
     "id": "1866",
@@ -11882,7 +11890,8 @@
       "公式",
       "帮助"
     ],
-    "source_summary": null
+    "source_summary": null,
+    "metadata_checked_at": "2026-11-22T09:59:13+00:00"
   },
   {
     "id": "1851",
@@ -11896,7 +11905,8 @@
       "圆锥曲线",
       "二次型"
     ],
-    "source_summary": null
+    "source_summary": null,
+    "metadata_checked_at": "2026-11-22T09:59:17+00:00"
   },
   {
     "id": "1850",
@@ -11910,7 +11920,8 @@
       "路径积分",
       "费曼"
     ],
-    "source_summary": null
+    "source_summary": null,
+    "metadata_checked_at": "2026-11-22T09:59:20+00:00"
   },
   {
     "id": "1849",
@@ -11924,7 +11935,8 @@
       "路径积分",
       "费曼"
     ],
-    "source_summary": null
+    "source_summary": null,
+    "metadata_checked_at": "2026-11-22T09:59:23+00:00"
   },
   {
     "id": "1846",
@@ -11938,7 +11950,8 @@
       "路径积分",
       "费曼"
     ],
-    "source_summary": null
+    "source_summary": null,
+    "metadata_checked_at": "2026-11-22T09:59:27+00:00"
   },
   {
     "id": "1844",
@@ -11952,7 +11965,8 @@
       "路径积分",
       "费曼"
     ],
-    "source_summary": null
+    "source_summary": null,
+    "metadata_checked_at": "2026-11-22T09:59:30+00:00"
   },
   {
     "id": "1841",
@@ -11966,7 +11980,8 @@
       "线性",
       "二次型"
     ],
-    "source_summary": null
+    "source_summary": null,
+    "metadata_checked_at": "2026-11-22T09:59:34+00:00"
   },
   {
     "id": "1840",
@@ -11978,7 +11993,8 @@
       "友谊",
       "经历"
     ],
-    "source_summary": null
+    "source_summary": null,
+    "metadata_checked_at": "2026-11-22T09:59:37+00:00"
   },
   {
     "id": "1825",
@@ -11991,7 +12007,8 @@
       "黑洞",
       "天体"
     ],
-    "source_summary": null
+    "source_summary": null,
+    "metadata_checked_at": "2026-11-22T09:59:41+00:00"
   },
   {
     "id": "1815",
@@ -12003,7 +12020,8 @@
       "微积分",
       "导数"
     ],
-    "source_summary": null
+    "source_summary": null,
+    "metadata_checked_at": "2026-11-22T09:59:44+00:00"
   },
   {
     "id": "1799",
@@ -12015,7 +12033,8 @@
       "方程",
       "量子力学"
     ],
-    "source_summary": null
+    "source_summary": null,
+    "metadata_checked_at": "2026-11-22T09:59:48+00:00"
   },
   {
     "id": "1797",
@@ -12028,7 +12047,8 @@
       "原理",
       "机械"
     ],
-    "source_summary": null
+    "source_summary": null,
+    "metadata_checked_at": "2026-11-22T09:59:52+00:00"
   },
   {
     "id": "1795",
@@ -12039,7 +12059,8 @@
     "source_tags": [
       "趣味"
     ],
-    "source_summary": null
+    "source_summary": null,
+    "metadata_checked_at": "2026-11-22T09:59:55+00:00"
   },
   {
     "id": "1794",
@@ -12078,7 +12099,8 @@
       "引力",
       "粒子"
     ],
-    "source_summary": null
+    "source_summary": null,
+    "metadata_checked_at": "2026-11-22T09:59:59+00:00"
   },
   {
     "id": "1779",
@@ -12092,7 +12114,8 @@
       "三体问题",
       "故事"
     ],
-    "source_summary": null
+    "source_summary": null,
+    "metadata_checked_at": "2026-11-22T10:00:02+00:00"
   },
   {
     "id": "1777",
@@ -12105,7 +12128,8 @@
       "矩阵",
       "线性"
     ],
-    "source_summary": null
+    "source_summary": null,
+    "metadata_checked_at": "2026-11-22T10:00:06+00:00"
   },
   {
     "id": "1773",
@@ -12117,7 +12141,8 @@
       "猜想",
       "故事"
     ],
-    "source_summary": null
+    "source_summary": null,
+    "metadata_checked_at": "2026-11-22T10:00:09+00:00"
   },
   {
     "id": "1770",

@@ -6,9 +6,16 @@
     "source_url": "https://spaces.ac.cn/archives/1898",
     "date": "2013-02-02",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "数学研究",
+    "source_tags": [
+      "椭圆",
+      "轨迹",
+      "读者"
+    ],
+    "source_summary": null
   },
-  "fetched_at": "2026-09-14T14:05:35+00:00",
+  "fetched_at": "2026-11-22T09:58:58+00:00",
   "source_snapshot_sha256": "8b0a8d5abd4719877548c22f4dd9b0cddd43d1b0b7928d540e18ee99ef400fa6",
   "validators": {
     "etag": null,

@@ -6,7 +6,12 @@
     "source_url": "https://spaces.ac.cn/archives/2249",
     "date": "2013-01-06",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "天文探索",
+    "source_tags": [
+      "天象"
+    ],
+    "source_summary": null
   },
   "validation": {
     "passed": true,
@@ -30,8 +35,8 @@
     "converter_version": 1,
     "markdown_sha256": "22513941b60ef7351df32768f495fbab7ef6d9323fb4d7f8bb165d0e500735c5"
   },
-  "fetched_at": "2026-09-14T14:06:37+00:00",
+  "fetched_at": "2026-11-22T09:59:09+00:00",
   "source_snapshot_sha256": "449396f70415467f7e832b6167104a4c4a78839f155fe7a340bf30e5fffc476f",
   "images": {},
-  "local_only": true
+  "publication_policy": "config/mirror.json"
 }

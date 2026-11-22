@@ -6,7 +6,14 @@
     "source_url": "https://spaces.ac.cn/archives/1777",
     "date": "2012-11-11",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "数学研究",
+    "source_tags": [
+      "代数",
+      "矩阵",
+      "线性"
+    ],
+    "source_summary": null
   },
   "validation": {
     "passed": true,
@@ -30,8 +37,8 @@
     "converter_version": 1,
     "markdown_sha256": "7aac27d2b23901f5321d2f4a1b26d22865788777034fdc6ce4b326299b511cb8"
   },
-  "fetched_at": "2026-09-14T14:08:53+00:00",
+  "fetched_at": "2026-11-22T10:00:06+00:00",
   "source_snapshot_sha256": "85d8e4c5ce79e052085a74cc4c0a16d1b7e0900616fbbef3b5329304bd9b15eb",
   "images": {},
-  "local_only": true
+  "publication_policy": "config/mirror.json"
 }

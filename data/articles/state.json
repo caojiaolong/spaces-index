@@ -5664,35 +5664,35 @@
   },
   "1908": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:20:34+00:00",
+    "checked_at": "2026-11-22T09:58:44+00:00",
     "title": "[公告]评论功能说明",
     "markdown_sha256": "a57d220b4a4735af622bf014d59b8e109278241583710794b90f308c2e018980",
     "converter_version": 1
   },
   "1907": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:20:34+00:00",
+    "checked_at": "2026-11-22T09:58:47+00:00",
     "title": "小数的二进制表示",
     "markdown_sha256": "1a021f5cf25d321ebc5f20f29e2b14a970bc6d4014fe6876b39ca2c88a2f88e3",
     "converter_version": 1
   },
   "1904": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:20:34+00:00",
+    "checked_at": "2026-11-22T09:58:51+00:00",
     "title": "[问题解答]双曲线上的最短距离",
     "markdown_sha256": "bbb60c41455ae3ae4b1b99e5220ecc180cd58d758be0ba327c63bfaba5535f0b",
     "converter_version": 1
   },
   "1902": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:20:34+00:00",
+    "checked_at": "2026-11-22T09:58:54+00:00",
     "title": "关于“平衡态公理”的更正与思考",
     "markdown_sha256": "caa74be8baf494fdcea31c6c450b61186b8bf131080d085db2a1b8b1cfc4b834",
     "converter_version": 1
   },
   "1898": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:20:34+00:00",
+    "checked_at": "2026-11-22T09:58:58+00:00",
     "title": "网友:椭圆定长弦中点轨迹的一种解法",
     "markdown_sha256": "1317eb4c3c0d9fd3e1a4946a33f7992d2ea4ed215bcab63e99fe8da4d3dd41e8",
     "converter_version": 1
@@ -5741,112 +5741,112 @@
   },
   "1870": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:20:35+00:00",
+    "checked_at": "2026-11-22T09:59:01+00:00",
     "title": "诡异的Dirac函数",
     "markdown_sha256": "b033e7a6f608d465c99f6f8392c89d5f0e600762fbbc38ace0562e7882df9c30",
     "converter_version": 1
   },
   "1868": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:20:35+00:00",
+    "checked_at": "2026-11-22T09:59:05+00:00",
     "title": "角的疑惑——为什么使用弧度？",
     "markdown_sha256": "5df1e3f7791adc180fa4ca16cc80050ddc9106469137a161e31ead14136c0950",
     "converter_version": 1
   },
   "2249": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:20:35+00:00",
+    "checked_at": "2026-11-22T09:59:09+00:00",
     "title": "2013年全年天象",
     "markdown_sha256": "22513941b60ef7351df32768f495fbab7ef6d9323fb4d7f8bb165d0e500735c5",
     "converter_version": 1
   },
   "1866": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:20:35+00:00",
+    "checked_at": "2026-11-22T09:59:13+00:00",
     "title": "又折腾数学公式插件了",
     "markdown_sha256": "6220ee4bcc7bfa20efc666c2b1d53532453316dc0d36f21a96659bde8d326792",
     "converter_version": 1
   },
   "1851": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:20:35+00:00",
+    "checked_at": "2026-11-22T09:59:17+00:00",
     "title": "用复数化简二次曲线的尝试",
     "markdown_sha256": "312157211957f0794ca8b1a0799e044033f843f9e608d2251bd8af2c972561e9",
     "converter_version": 1
   },
   "1850": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:20:35+00:00",
+    "checked_at": "2026-11-22T09:59:20+00:00",
     "title": "费曼路径积分思想的发展(四)",
     "markdown_sha256": "3ea0c8723d9d794a8dae1f7ccaef51d3f7566ce802ce6f3a1436333235b8255f",
     "converter_version": 1
   },
   "1849": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:20:35+00:00",
+    "checked_at": "2026-11-22T09:59:23+00:00",
     "title": "费曼路径积分思想的发展(三)",
     "markdown_sha256": "b2a6135553b90fcfd7529f64f5ee02796dccd6baf73ab22afa392f62fc69cf08",
     "converter_version": 1
   },
   "1846": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:20:36+00:00",
+    "checked_at": "2026-11-22T09:59:27+00:00",
     "title": "费曼路径积分思想的发展(二)",
     "markdown_sha256": "a2770c70ccaf968db48a4377c9079f16c0b9588eeacd14667c273128154a9502",
     "converter_version": 1
   },
   "1844": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:20:36+00:00",
+    "checked_at": "2026-11-22T09:59:30+00:00",
     "title": "费曼路径积分思想的发展(一)",
     "markdown_sha256": "0c993713c7309925b837a30891603c0e37e6c25f70e06783cfb49e29925509af",
     "converter_version": 1
   },
   "1841": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:20:36+00:00",
+    "checked_at": "2026-11-22T09:59:34+00:00",
     "title": "矩阵化简二次型（无穷小近似处理抛物型）",
     "markdown_sha256": "14270350a13014f89ae86be03580187f3ddb960cb58ca11215f5e24fb86bc843",
     "converter_version": 1
   },
   "1840": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:20:36+00:00",
+    "checked_at": "2026-11-22T09:59:37+00:00",
     "title": "“末日”的快乐！",
     "markdown_sha256": "a5999fe8a066a11056ecfdaf69f3c092897846395d69d9a0cb86f38aacc719c2",
     "converter_version": 1
   },
   "1825": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:20:36+00:00",
+    "checked_at": "2026-11-22T09:59:41+00:00",
     "title": "黑洞融合的简单模拟",
     "markdown_sha256": "bedd2e56213e0104270bb4601b7e38494397fdb86da7f6c0a60c1c53a0230f5d",
     "converter_version": 1
   },
   "1815": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:20:36+00:00",
+    "checked_at": "2026-11-22T09:59:45+00:00",
     "title": "关于“微分”的理解",
     "markdown_sha256": "0bdb5de541bb242c19efcb8a5b1256ae61aba869c7bf9cb97e49729e718d540f",
     "converter_version": 1
   },
   "1799": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:20:36+00:00",
+    "checked_at": "2026-11-22T09:59:48+00:00",
     "title": "薛定谔方程的启发式推导",
     "markdown_sha256": "3bc9ed7bee58fae611b911c1c330b095d3d7715bb420d320fa1a10251f75a03b",
     "converter_version": 1
   },
   "1797": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:20:36+00:00",
+    "checked_at": "2026-11-22T09:59:52+00:00",
     "title": "[转载]复杂的机械，简单的原理",
     "markdown_sha256": "f88822a5e59f8c92be116aeeec46b7c85684ab0b445f42027be2e611fbac2b0a",
     "converter_version": 1
   },
   "1795": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:20:36+00:00",
+    "checked_at": "2026-11-22T09:59:55+00:00",
     "title": "相对运动的一道妙题！",
     "markdown_sha256": "4e669dc2cfe0b422773220cffc01921e734354d988f615fba1fbed10b3b3c0b7",
     "converter_version": 1
@@ -5867,28 +5867,28 @@
   },
   "1790": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:20:37+00:00",
+    "checked_at": "2026-11-22T09:59:59+00:00",
     "title": "《环球科学》:超越费曼图",
     "markdown_sha256": "4d3ace0548a99d8f205b50d62937d82ecfac86816595d18ed0d511bbde3a14bd",
     "converter_version": 1
   },
   "1779": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:20:37+00:00",
+    "checked_at": "2026-11-22T10:00:02+00:00",
     "title": "天体力学巨匠——拉普拉斯",
     "markdown_sha256": "a06a5c2c2a494245359aef771ab1540323b7072d53632eb6dcddacc0cf769ed5",
     "converter_version": 1
   },
   "1777": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:20:37+00:00",
+    "checked_at": "2026-11-22T10:00:06+00:00",
     "title": "《新理解矩阵4》：相似矩阵的那些事儿",
     "markdown_sha256": "7aac27d2b23901f5321d2f4a1b26d22865788777034fdc6ce4b326299b511cb8",
     "converter_version": 1
   },
   "1773": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:20:37+00:00",
+    "checked_at": "2026-11-22T10:00:09+00:00",
     "title": "王骁威：勇敢的追梦者",
     "markdown_sha256": "3b860fecd3f5a99bde2a05636f316b8fdfc4ca28b508bb52dd1e1e4565fae6cf",
     "converter_version": 1
@@ -8464,7 +8464,7 @@
   },
   "132": {
     "status": "conversion_failed",
-    "checked_at": "2026-11-21T10:00:42+00:00",
+    "checked_at": "2026-11-22T10:00:09+00:00",
     "title": "一道从小学到高中都可能考到的题目",
     "error": "Unreviewed legacy element: a<b，则有<br",
     "converter_version": 1,

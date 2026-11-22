@@ -6,7 +6,14 @@
     "source_url": "https://spaces.ac.cn/archives/1825",
     "date": "2012-12-18",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "天文探索",
+    "source_tags": [
+      "引力",
+      "黑洞",
+      "天体"
+    ],
+    "source_summary": null
   },
   "validation": {
     "passed": true,
@@ -30,8 +37,8 @@
     "converter_version": 1,
     "markdown_sha256": "bedd2e56213e0104270bb4601b7e38494397fdb86da7f6c0a60c1c53a0230f5d"
   },
-  "fetched_at": "2026-09-14T14:07:45+00:00",
+  "fetched_at": "2026-11-22T09:59:41+00:00",
   "source_snapshot_sha256": "eff0116288418d3d5c1872302d8e2a126755e7dcb9298ada961fa79c5a972017",
   "images": {},
-  "local_only": true
+  "publication_policy": "config/mirror.json"
 }
