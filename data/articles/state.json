@@ -5853,14 +5853,14 @@
   },
   "1794": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:20:37+00:00",
+    "checked_at": "2026-11-23T10:57:19+00:00",
     "title": "算子与线性常微分方程(下)",
     "markdown_sha256": "065a361774ddf56b8d2532d3f69505c0cb251ac5197e87481148deeca57812c0",
     "converter_version": 1
   },
   "1791": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:20:37+00:00",
+    "checked_at": "2026-11-23T10:57:23+00:00",
     "title": "算子与线性常微分方程(上)",
     "markdown_sha256": "25520c3c2a84260e5791093bfb34c5f1702771c9f5771a2e6877071ff065e1ef",
     "converter_version": 1
@@ -5895,133 +5895,133 @@
   },
   "1770": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:20:38+00:00",
+    "checked_at": "2026-11-23T10:57:27+00:00",
     "title": "《新理解矩阵3》：行列式的点滴",
     "markdown_sha256": "70bc11d04dbb1b3d6d9f125022290ec4293bbba262dcdee8461c6dc14f87ee47",
     "converter_version": 1
   },
   "1768": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:20:38+00:00",
+    "checked_at": "2026-11-23T10:57:31+00:00",
     "title": "《新理解矩阵2》：矩阵是什么？",
     "markdown_sha256": "ee6cc1ad9a64bc141c9a7721a584ddfe772544339658f3e287b574563c6fc4f2",
     "converter_version": 1
   },
   "1765": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:20:38+00:00",
+    "checked_at": "2026-11-23T10:57:35+00:00",
     "title": "《新理解矩阵1》：矩阵是什么？",
     "markdown_sha256": "33eb75b5c34b88667ae5fe7203bff1acbfe0169bd240b6bf615e132a91fd7e59",
     "converter_version": 1
   },
   "1757": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:20:38+00:00",
+    "checked_at": "2026-11-23T10:57:38+00:00",
     "title": "行星密度与其公转周期（更新）",
     "markdown_sha256": "7c15f3730f7b8a88a63c5c8be09b73c5b724d2f086b1b03c57583f0145ed18ac",
     "converter_version": 1
   },
   "1754": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:20:38+00:00",
+    "checked_at": "2026-11-23T10:57:41+00:00",
     "title": "分享：孟岩的《理解矩阵》一文",
     "markdown_sha256": "66cd6ff5f2830c117d09d6d8795de95f196332a6051bef125153f6e017338234",
     "converter_version": 1
   },
   "1749": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:20:38+00:00",
+    "checked_at": "2026-11-23T10:57:45+00:00",
     "title": "证明光速不变的一个理想实验？？",
     "markdown_sha256": "b33083f037e803e744c7d9f8b8d274bed093e1f94ca597306ac5fc030f564fbd",
     "converter_version": 1
   },
   "1744": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:20:38+00:00",
+    "checked_at": "2026-11-23T10:57:48+00:00",
     "title": "相对论和量子力学的初探",
     "markdown_sha256": "7e3f4f2d756da3dd1a10ab0cbb6a112f106e2317c3975e7164a9fee9af6897af",
     "converter_version": 1
   },
   "1740": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:20:38+00:00",
+    "checked_at": "2026-11-23T10:57:52+00:00",
     "title": "中国第一个诺贝尔奖得主",
     "markdown_sha256": "c3e946e6d8ec0e7c91fc5848053e8329a5b23a5be9f14c5a81bf5340f8293c78",
     "converter_version": 1
   },
   "1735": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:20:38+00:00",
+    "checked_at": "2026-11-23T10:57:55+00:00",
     "title": "2012诺贝尔奖...",
     "markdown_sha256": "a6fc03c13a0bca5489fac77d6ec541bc6e0f62159402ce3480add11bb8403e9a",
     "converter_version": 1
   },
   "1727": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:20:39+00:00",
+    "checked_at": "2026-11-23T10:57:59+00:00",
     "title": "哥德巴赫猜想浅谈1",
     "markdown_sha256": "3dc31502216f1c4628c173e3f6c42c877dba93e957b2d85d14361ba1c922e9c9",
     "converter_version": 1
   },
   "1725": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:20:39+00:00",
+    "checked_at": "2026-11-23T10:58:02+00:00",
     "title": "中秋节快乐！",
     "markdown_sha256": "a0f2ab2124833319be7a4fd7fceb7198d2a69c7b72e0d6630da3acda361f81d8",
     "converter_version": 1
   },
   "1720": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:20:39+00:00",
+    "checked_at": "2026-11-23T10:58:06+00:00",
     "title": "开始学习数学软件Scilab",
     "markdown_sha256": "903f5eee1d887aa97fd8bb0fb7562623df2f9595fd414881b0cfd0fe4bf81140",
     "converter_version": 1
   },
   "1716": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:20:39+00:00",
+    "checked_at": "2026-11-23T10:58:09+00:00",
     "title": "均值不等式的两个巧妙证明",
     "markdown_sha256": "97631c9b2229ccb1ba6d6b78255d61c08369a6a85b0b467cfa4a69f0d435453e",
     "converter_version": 1
   },
   "1715": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:20:39+00:00",
+    "checked_at": "2026-11-23T10:58:12+00:00",
     "title": "又折腾网络了......",
     "markdown_sha256": "3ae7aecabd118e1f9094e85c44963aeab2e3d2151991e101cc571a2daa5cca05",
     "converter_version": 1
   },
   "1713": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:20:39+00:00",
+    "checked_at": "2026-11-23T10:58:16+00:00",
     "title": "军训中的数学——握手奇数次的人数",
     "markdown_sha256": "05475891504a6f2de8fb7efb9bb4754dbf1766dad42a8a38a87c0a021463dd6d",
     "converter_version": 1
   },
   "1712": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:20:39+00:00",
+    "checked_at": "2026-11-23T10:58:19+00:00",
     "title": "军训结束了，基本在华师安家了",
     "markdown_sha256": "447ebe3830b18f76b1879d35ece993a7bd492a46aaee15c98bdc2341fdfc9e96",
     "converter_version": 1
   },
   "1706": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:20:39+00:00",
+    "checked_at": "2026-11-23T10:58:23+00:00",
     "title": "折腾windows 8和ubuntu 12",
     "markdown_sha256": "1445102b84320220e4910ecf2257fb369e34b2dc4b0af4de570c99bb2065ea8e",
     "converter_version": 1
   },
   "1705": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:20:39+00:00",
+    "checked_at": "2026-11-23T10:58:26+00:00",
     "title": "当时七夕笑牵牛",
     "markdown_sha256": "fd71d8a2038967c677a5db57fa0ee6191d826d35d827c74346a8f8f31b6e5656",
     "converter_version": 1
   },
   "1701": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:20:39+00:00",
+    "checked_at": "2026-11-23T10:58:30+00:00",
     "title": "电偶极子浅探（2）",
     "markdown_sha256": "f28b1ecd555d238da555e2ec694495e12b284043bed0a4a239900440849c6570",
     "converter_version": 1
@@ -6056,28 +6056,28 @@
   },
   "1683": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:20:40+00:00",
+    "checked_at": "2026-11-23T10:58:33+00:00",
     "title": "复分析学习1：揭示微分与积分的联系",
     "markdown_sha256": "9e5302f9de64466929e236fe2fb2e88494846463b6fdf370cfd405a120e356d7",
     "converter_version": 1
   },
   "1677": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:20:40+00:00",
+    "checked_at": "2026-11-23T10:58:37+00:00",
     "title": "我的大学，我的未来",
     "markdown_sha256": "a215ce04c25b514efeb4ce32c89df10aeebaf1189a6f467dc30523dff753b93c",
     "converter_version": 1
   },
   "1675": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:20:40+00:00",
+    "checked_at": "2026-11-23T10:58:40+00:00",
     "title": "“韦森特”来袭",
     "markdown_sha256": "02663ec19f2154337e9dcbfcbec22ce67cd5aabe776e0b800ae4eb2ff0a71cb9",
     "converter_version": 1
   },
   "1668": {
     "status": "verified",
-    "checked_at": "2026-09-14T15:20:40+00:00",
+    "checked_at": "2026-11-23T10:58:43+00:00",
     "title": "“未解之谜”：为何不讲中点矩形法则？",
     "markdown_sha256": "b9a604df9a91fdaf349f3bfc03b8da72ffa6269d773296b4a8084be45df7e875",
     "converter_version": 1
@@ -8464,7 +8464,7 @@
   },
   "132": {
     "status": "conversion_failed",
-    "checked_at": "2026-11-22T10:00:09+00:00",
+    "checked_at": "2026-11-23T10:58:44+00:00",
     "title": "一道从小学到高中都可能考到的题目",
     "error": "Unreviewed legacy element: a<b，则有<br",
     "converter_version": 1,
@@ -9427,6 +9427,13 @@
     "checked_at": "2026-11-17T10:53:21+00:00",
     "title": "最佳学习率调度的变分估计",
     "markdown_sha256": "f628999640d624a1f0939d490aa29c699d09dc1191bea7e4fc0a073f6d70a47a",
+    "converter_version": 1
+  },
+  "12014": {
+    "status": "verified",
+    "checked_at": "2026-11-23T10:57:16+00:00",
+    "title": "Muon背后的优化理论：1. 全量、随机与动量",
+    "markdown_sha256": "b39cbce7ac80816188e12798a1175a8ed875b2c826774c1fb106d396c17f7772",
     "converter_version": 1
   }
 }

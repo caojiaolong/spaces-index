@@ -6,7 +6,16 @@
     "source_url": "https://spaces.ac.cn/archives/1720",
     "date": "2012-09-28",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "数学研究",
+    "source_tags": [
+      "编程",
+      "代码",
+      "数学软件",
+      "开发",
+      "scilab"
+    ],
+    "source_summary": null
   },
   "validation": {
     "passed": true,
@@ -30,8 +39,8 @@
     "converter_version": 1,
     "markdown_sha256": "903f5eee1d887aa97fd8bb0fb7562623df2f9595fd414881b0cfd0fe4bf81140"
   },
-  "fetched_at": "2026-09-14T14:10:20+00:00",
+  "fetched_at": "2026-11-23T10:58:06+00:00",
   "source_snapshot_sha256": "64a2ad9e746165fd6be721008978a8820326eff3c5b48d3658ab1ded31730308",
   "images": {},
-  "local_only": true
+  "publication_policy": "config/mirror.json"
 }

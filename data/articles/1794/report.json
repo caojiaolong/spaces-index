@@ -6,7 +6,14 @@
     "source_url": "https://spaces.ac.cn/archives/1794",
     "date": "2012-11-30",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "数学研究",
+    "source_tags": [
+      "微分方程",
+      "线性",
+      "算子"
+    ],
+    "source_summary": null
   },
   "validation": {
     "passed": true,
@@ -30,8 +37,8 @@
     "converter_version": 1,
     "markdown_sha256": "065a361774ddf56b8d2532d3f69505c0cb251ac5197e87481148deeca57812c0"
   },
-  "fetched_at": "2026-09-14T14:08:27+00:00",
+  "fetched_at": "2026-11-23T10:57:19+00:00",
   "source_snapshot_sha256": "cef58b333a0442af28051252d653dcd75edbf7a4d1e392dac284b2bc3c7df448",
   "images": {},
-  "local_only": true
+  "publication_policy": "config/mirror.json"
 }

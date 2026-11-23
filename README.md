@@ -28,7 +28,7 @@
 
 | 收录文章 | 知识主题 | 文章系列 | 最新文章 |
 | ---: | ---: | ---: | :---: |
-| 1347 篇 | 17 个 | 56 个 | 2026-11-17 |
+| 1348 篇 | 17 个 | 56 个 | 2026-11-23 |
 
 ## 从哪里开始
 
@@ -87,7 +87,7 @@ Markdown 正文只做必要的格式转换，不摘要、润色、翻译或重�
   - [搜出来的文本（4 篇）](https://caojiaolong.github.io/spaces-index/#/series/series-efbc1f2b0e42)
   - [能量视角下的GAN模型（3 篇）](https://caojiaolong.github.io/spaces-index/#/series/series-bf3266b9c1b3)
   - [非系列文章（73 篇）](#series-generative-models-standalone)
-- [优化与训练（116 篇）](#topic-optimization)
+- [优化与训练（117 篇）](#topic-optimization)
   - [让炼丹更科学一些（11 篇）](https://caojiaolong.github.io/spaces-index/#/series/series-22f3c6204559)
   - [慢即是快（2 篇）](https://caojiaolong.github.io/spaces-index/#/series/series-ac4217dcb4fe)
   - [流形上的最速下降（7 篇）](https://caojiaolong.github.io/spaces-index/#/series/series-9aa52368b14f)
@@ -96,7 +96,7 @@ Markdown 正文只做必要的格式转换，不摘要、润色、翻译或重�
   - [通过msign来计算奇异值裁剪mclip（2 篇）](https://caojiaolong.github.io/spaces-index/#/series/series-297337ae72f8)
   - [msign算子的Newton-Schulz迭代（2 篇）](https://caojiaolong.github.io/spaces-index/#/series/series-a60856a07854)
   - [从动力学角度看优化算法（7 篇）](https://caojiaolong.github.io/spaces-index/#/series/series-4b38446b55a8)
-  - [非系列文章（78 篇）](#series-optimization-standalone)
+  - [非系列文章（79 篇）](#series-optimization-standalone)
 - [数学工具（384 篇）](#topic-math)
   - [低秩近似之路（5 篇）](https://caojiaolong.github.io/spaces-index/#/series/series-6689ddf615c5)
   - [SVD分解（3 篇）](https://caojiaolong.github.io/spaces-index/#/series/series-cb4267a83e5b)
@@ -159,6 +159,7 @@ Markdown 正文只做必要的格式转换，不摘要、润色、翻译或重�
 
 ## 最近 10 篇文章
 
+- 2026-11-23 - [Muon背后的优化理论：1. 全量、随机与动量](https://spaces.ac.cn/archives/12014)
 - 2026-11-17 - [最佳学习率调度的变分估计](https://spaces.ac.cn/archives/12010)
 - 2026-11-09 - [让炼丹更科学一些（十一）：无调度学习率新思路](https://spaces.ac.cn/archives/12003) - [查看系列](https://caojiaolong.github.io/spaces-index/#/series/series-22f3c6204559)
 - 2026-11-01 - [平均之路：从Attention到TTT](https://spaces.ac.cn/archives/11993)
@@ -168,7 +169,6 @@ Markdown 正文只做必要的格式转换，不摘要、润色、翻译或重�
 - 2026-10-09 - [如何让GDN2更稳定一些？](https://spaces.ac.cn/archives/11945)
 - 2026-10-03 - [通过微扰分析求解等式约束优化问题](https://spaces.ac.cn/archives/11928)
 - 2026-09-28 - [慢即是快：1. Shampoo的尽头是Muon？](https://spaces.ac.cn/archives/11917) - [查看系列](https://caojiaolong.github.io/spaces-index/#/series/series-ac4217dcb4fe)
-- 2026-09-21 - [排序不等式及其推广](https://spaces.ac.cn/archives/11910)
 
 ## 主题分类
 
@@ -723,7 +723,7 @@ Markdown 正文只做必要的格式转换，不摘要、润色、翻译或重�
 
 <a id="topic-optimization"></a>
 <details>
-<summary><strong>优化与训练</strong> · 116 篇</summary>
+<summary><strong>优化与训练</strong> · 117 篇</summary>
 
 [返回目录](#目录)
 
@@ -800,6 +800,7 @@ Markdown 正文只做必要的格式转换，不摘要、润色、翻译或重�
 <a id="series-optimization-standalone"></a>
 #### 非系列文章 [返回目录](#目录)
 
+- 2026-11-23 - [Muon背后的优化理论：1. 全量、随机与动量](https://spaces.ac.cn/archives/12014)
 - 2026-11-17 - [最佳学习率调度的变分估计](https://spaces.ac.cn/archives/12010)
 - 2026-11-01 - [平均之路：从Attention到TTT](https://spaces.ac.cn/archives/11993)
 - 2026-10-27 - [从参数对称性到有效学习率](https://spaces.ac.cn/archives/11985)

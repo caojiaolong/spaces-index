@@ -6,7 +6,14 @@
     "source_url": "https://spaces.ac.cn/archives/1757",
     "date": "2012-10-24",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "天文探索",
+    "source_tags": [
+      "周期",
+      "行星",
+      "摄动"
+    ],
+    "source_summary": null
   },
   "validation": {
     "passed": true,
@@ -30,8 +37,8 @@
     "converter_version": 1,
     "markdown_sha256": "7c15f3730f7b8a88a63c5c8be09b73c5b724d2f086b1b03c57583f0145ed18ac"
   },
-  "fetched_at": "2026-09-14T14:09:26+00:00",
+  "fetched_at": "2026-11-23T10:57:38+00:00",
   "source_snapshot_sha256": "daf1890610058d06983723ccd1e77b78b1008d291e26b8d8634ec4f842311d74",
   "images": {},
-  "local_only": true
+  "publication_policy": "config/mirror.json"
 }

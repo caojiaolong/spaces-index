@@ -6,7 +6,14 @@
     "source_url": "https://spaces.ac.cn/archives/1744",
     "date": "2012-10-16",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "生活/情感",
+    "source_tags": [
+      "相对论",
+      "量子力学",
+      "大学"
+    ],
+    "source_summary": null
   },
   "validation": {
     "passed": true,
@@ -30,8 +37,8 @@
     "converter_version": 1,
     "markdown_sha256": "7e3f4f2d756da3dd1a10ab0cbb6a112f106e2317c3975e7164a9fee9af6897af"
   },
-  "fetched_at": "2026-09-14T14:09:47+00:00",
+  "fetched_at": "2026-11-23T10:57:48+00:00",
   "source_snapshot_sha256": "dae50f26e1f86f0dde1b5392d87f6c5f5bf19783395ad8503918041170519a0a",
   "images": {},
-  "local_only": true
+  "publication_policy": "config/mirror.json"
 }

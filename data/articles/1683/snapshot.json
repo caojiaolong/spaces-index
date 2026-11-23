@@ -6,9 +6,16 @@
     "source_url": "https://spaces.ac.cn/archives/1683",
     "date": "2012-08-02",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "数学研究",
+    "source_tags": [
+      "复数",
+      "分析",
+      "复分析"
+    ],
+    "source_summary": null
   },
-  "fetched_at": "2026-09-14T14:11:45+00:00",
+  "fetched_at": "2026-11-23T10:58:33+00:00",
   "source_snapshot_sha256": "da2cd81d24f1c94d5276dbaff8d8b36faa388dd22be5b691268daa5cb771b571",
   "validators": {
     "etag": null,

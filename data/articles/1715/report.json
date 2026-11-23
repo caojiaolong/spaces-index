@@ -6,7 +6,12 @@
     "source_url": "https://spaces.ac.cn/archives/1715",
     "date": "2012-09-25",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "问题百科",
+    "source_tags": [
+      "网络"
+    ],
+    "source_summary": null
   },
   "validation": {
     "passed": true,
@@ -30,8 +35,8 @@
     "converter_version": 1,
     "markdown_sha256": "3ae7aecabd118e1f9094e85c44963aeab2e3d2151991e101cc571a2daa5cca05"
   },
-  "fetched_at": "2026-09-14T14:10:33+00:00",
+  "fetched_at": "2026-11-23T10:58:12+00:00",
   "source_snapshot_sha256": "649d0bdc431ff4e5903e93c0ac85a4aad7a5b7a6b885e8e127badf892d1047b2",
   "images": {},
-  "local_only": true
+  "publication_policy": "config/mirror.json"
 }

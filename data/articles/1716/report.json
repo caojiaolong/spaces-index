@@ -6,7 +6,12 @@
     "source_url": "https://spaces.ac.cn/archives/1716",
     "date": "2012-09-26",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "数学研究",
+    "source_tags": [
+      "不等式"
+    ],
+    "source_summary": null
   },
   "validation": {
     "passed": true,
@@ -32,8 +37,8 @@
     "fallback_reason": "Unsupported body element: del",
     "markdown_sha256": "97631c9b2229ccb1ba6d6b78255d61c08369a6a85b0b467cfa4a69f0d435453e"
   },
-  "fetched_at": "2026-09-14T14:10:27+00:00",
+  "fetched_at": "2026-11-23T10:58:09+00:00",
   "source_snapshot_sha256": "690b1ee50a9cb26efa5ea9b7c84fa89f87f5f2d87473f0196ff0ca3a62ae3202",
   "images": {},
-  "local_only": true
+  "publication_policy": "config/mirror.json"
 }

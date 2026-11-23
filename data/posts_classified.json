@@ -1,5 +1,27 @@
 [
   {
+    "id": "12014",
+    "title": "Muon背后的优化理论：1. 全量、随机与动量",
+    "url": "https://spaces.ac.cn/archives/12014",
+    "date": "2026-11-23",
+    "source_category": "数学研究",
+    "source_tags": [
+      "对偶",
+      "优化",
+      "优化器",
+      "muon",
+      "lmo"
+    ],
+    "source_summary": "本文沿着一条统一的路线，围绕着以Muon为代表的LMO类优化器进行推导，给出了它们在全量、随机和动量三种情形下的梯度范数收敛上界。结果表明，随机梯度会引入随Batch Size增大而减小的噪声，动量虽然也能降噪，却也会因旧梯度的滞后带来额外偏差，如何在噪声和偏差之间找到最优超参数，这些我们将来都会讨论。",
+    "metadata_checked_at": "2026-11-23T10:57:16+00:00",
+    "topics": [
+      "优化与训练"
+    ],
+    "series": "Muon背后的优化理论",
+    "series_index": 1,
+    "level": null
+  },
+  {
     "id": "12010",
     "title": "最佳学习率调度的变分估计",
     "url": "https://spaces.ac.cn/archives/12010",
@@ -17875,6 +17897,7 @@
       "算子"
     ],
     "source_summary": null,
+    "metadata_checked_at": "2026-11-23T10:57:19+00:00",
     "topics": [
       "数学工具"
     ],
@@ -17895,6 +17918,7 @@
       "算子"
     ],
     "source_summary": null,
+    "metadata_checked_at": "2026-11-23T10:57:23+00:00",
     "topics": [
       "数学工具"
     ],
@@ -17998,6 +18022,7 @@
       "线性"
     ],
     "source_summary": null,
+    "metadata_checked_at": "2026-11-23T10:57:27+00:00",
     "topics": [
       "数学工具"
     ],
@@ -18019,6 +18044,7 @@
       "线性"
     ],
     "source_summary": null,
+    "metadata_checked_at": "2026-11-23T10:57:31+00:00",
     "topics": [
       "数学工具"
     ],
@@ -18039,6 +18065,7 @@
       "线性"
     ],
     "source_summary": null,
+    "metadata_checked_at": "2026-11-23T10:57:34+00:00",
     "topics": [
       "数学工具"
     ],
@@ -18059,6 +18086,7 @@
       "摄动"
     ],
     "source_summary": null,
+    "metadata_checked_at": "2026-11-23T10:57:38+00:00",
     "topics": [
       "天文科普"
     ],
@@ -18079,6 +18107,7 @@
       "线性"
     ],
     "source_summary": null,
+    "metadata_checked_at": "2026-11-23T10:57:41+00:00",
     "topics": [
       "数学工具",
       "资源与站务"
@@ -18099,6 +18128,7 @@
       "实验"
     ],
     "source_summary": null,
+    "metadata_checked_at": "2026-11-23T10:57:45+00:00",
     "topics": [
       "物理化学"
     ],
@@ -18118,6 +18148,7 @@
       "大学"
     ],
     "source_summary": null,
+    "metadata_checked_at": "2026-11-23T10:57:48+00:00",
     "topics": [
       "物理化学",
       "阅读写作与随笔"
@@ -18136,6 +18167,7 @@
       "诺贝尔奖专题"
     ],
     "source_summary": null,
+    "metadata_checked_at": "2026-11-23T10:57:52+00:00",
     "topics": [
       "科普问答与百科"
     ],
@@ -18154,6 +18186,7 @@
       "诺贝尔奖专题"
     ],
     "source_summary": null,
+    "metadata_checked_at": "2026-11-23T10:57:55+00:00",
     "topics": [
       "科普问答与百科",
       "资源与站务"
@@ -18175,6 +18208,7 @@
       "python"
     ],
     "source_summary": null,
+    "metadata_checked_at": "2026-11-23T10:57:59+00:00",
     "topics": [
       "数学工具",
       "工程工具"
@@ -18193,6 +18227,7 @@
       "节日"
     ],
     "source_summary": null,
+    "metadata_checked_at": "2026-11-23T10:58:02+00:00",
     "topics": [
       "阅读写作与随笔"
     ],
@@ -18214,6 +18249,7 @@
       "scilab"
     ],
     "source_summary": null,
+    "metadata_checked_at": "2026-11-23T10:58:06+00:00",
     "topics": [
       "数学工具",
       "工程工具"
@@ -18232,6 +18268,7 @@
       "不等式"
     ],
     "source_summary": null,
+    "metadata_checked_at": "2026-11-23T10:58:09+00:00",
     "topics": [
       "数学工具"
     ],
@@ -18249,6 +18286,7 @@
       "网络"
     ],
     "source_summary": null,
+    "metadata_checked_at": "2026-11-23T10:58:12+00:00",
     "topics": [
       "科普问答与百科"
     ],
@@ -18268,6 +18306,7 @@
       "图论"
     ],
     "source_summary": null,
+    "metadata_checked_at": "2026-11-23T10:58:16+00:00",
     "topics": [
       "数学工具"
     ],
@@ -18288,6 +18327,7 @@
       "网络"
     ],
     "source_summary": null,
+    "metadata_checked_at": "2026-11-23T10:58:19+00:00",
     "topics": [
       "阅读写作与随笔"
     ],
@@ -18308,6 +18348,7 @@
       "计算机"
     ],
     "source_summary": null,
+    "metadata_checked_at": "2026-11-23T10:58:23+00:00",
     "topics": [
       "工程工具",
       "阅读写作与随笔"
@@ -18326,6 +18367,7 @@
       "节日"
     ],
     "source_summary": null,
+    "metadata_checked_at": "2026-11-23T10:58:26+00:00",
     "topics": [
       "阅读写作与随笔"
     ],
@@ -18346,6 +18388,7 @@
       "场"
     ],
     "source_summary": null,
+    "metadata_checked_at": "2026-11-23T10:58:30+00:00",
     "topics": [
       "物理化学"
     ],
@@ -18443,6 +18486,7 @@
       "复分析"
     ],
     "source_summary": null,
+    "metadata_checked_at": "2026-11-23T10:58:33+00:00",
     "topics": [
       "数学工具"
     ],
@@ -18461,6 +18505,7 @@
       "大学"
     ],
     "source_summary": null,
+    "metadata_checked_at": "2026-11-23T10:58:36+00:00",
     "topics": [
       "阅读写作与随笔"
     ],
@@ -18478,6 +18523,7 @@
       "生活"
     ],
     "source_summary": null,
+    "metadata_checked_at": "2026-11-23T10:58:40+00:00",
     "topics": [
       "阅读写作与随笔",
       "科普问答与百科"
@@ -18498,6 +18544,7 @@
       "误差"
     ],
     "source_summary": null,
+    "metadata_checked_at": "2026-11-23T10:58:43+00:00",
     "topics": [
       "数学工具"
     ],
