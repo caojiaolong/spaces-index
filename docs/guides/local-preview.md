@@ -60,7 +60,7 @@ uv run python scripts/serve.py
 
 ## 验收
 
-公开构建默认包含全站通过校验且未下架、未过期的正文。公式异常、历史 HTML 与旧式嵌入内容的处理见 [正文校验与许可](mirror.md)。
+公开构建包含全站通过校验且未下架的正文。公式异常、历史 HTML 与旧式嵌入内容的处理见 [正文校验与许可](mirror.md)。
 
 ```bash
 uv run --with playwright python scripts/check_local_preview.py --channel msedge

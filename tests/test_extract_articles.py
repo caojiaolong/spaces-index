@@ -152,6 +152,26 @@ def test_plan_finds_new_and_due_articles_without_fetching_them(setup, monkeypatc
     assert len(calls) == 1
 
 
+def test_manual_plan_rechecks_the_whole_archive_without_an_age_or_batch_limit(setup):
+    output, calls, _ = setup
+    recent = local.now_iso()
+    ids = [str(i) for i in range(12345, 12372)]
+    state = {key: {"status": "verified", "checked_at": recent} for key in ids}
+    state[ids[0]]["status"] = "conversion_failed"
+    state[ids[1]]["status"] = "removed"
+    local.atomic_json(output / "state.json", state)
+    args = ["--ids", *ids, "--plan-only"]
+
+    assert local.main(args) == 0
+    routine = read_json(output / "summary.json", {})["plan"]
+    assert not any("refresh" in reasons for reasons in routine["reasons"].values())
+    assert local.main([*args, "--recheck"]) == 0
+    manual = read_json(output / "summary.json", {})["plan"]
+    assert set(manual["article_ids"]) == set(ids)
+    assert all("refresh" in reasons for reasons in manual["reasons"].values())
+    assert not calls
+
+
 def test_offline_body_repair_queues_images_for_next_online_update(setup, monkeypatch):
     output, calls, responses = setup
     responses.append(response(200, page("12345", "<img src='https://spaces.ac.cn/a.png'>").encode()))
@@ -193,6 +213,10 @@ def test_failed_conversion_keeps_source_and_retries_offline(setup, monkeypatch):
     assert (output / "12345/source.html").is_file()
     assert not (output / "12345/article.md").exists()
     assert read_json(output / "metadata.json", [])[0]["source_tags"] == ["测试"]
+    failed_state = read_json(output / "state.json", {})["12345"]
+    assert failed_state["failed_converter_fingerprint"]
+    assert local.main(["--ids", "12345", "--incremental", "--refresh-due"]) == 0
+    assert read_json(output / "state.json", {})["12345"] == failed_state
     monkeypatch.setattr(local, "convert_snapshot", real_convert)
     assert local.main(["--ids", "12345", "--offline"]) == 0
     assert len(calls) == 1
@@ -218,14 +242,30 @@ def test_resume_repairs_incomplete_snapshot_installation(setup):
     assert verified_article(output, "12345", local_only=True)["validation"]["passed"]
 
 
-def test_conditional_refresh_304(setup):
+@pytest.mark.parametrize("status", [304, 200])
+def test_unchanged_refresh_reuses_checked_body_without_reconversion(setup, monkeypatch, status):
+    output, calls, responses = setup
+    body = page("12345").encode()
+    responses.extend([response(200, body, {"ETag": '"first"'}),
+                      response(status, body if status == 200 else b"", {"ETag": '"first"'})])
+    assert local.main(["--ids", "12345"]) == 0
+    folder = output / "12345"
+    before = {name: (folder / name).read_bytes() for name in ("article.md", "source.html", "snapshot.json", "report.json")}
+    monkeypatch.setattr(local, "convert_snapshot", lambda *a: pytest.fail("Unchanged body was converted again"))
+    assert local.main(["--ids", "12345", "--refresh"]) == 0
+    assert calls[-1][1] == {"If-None-Match": '"first"'}
+    assert {name: (folder / name).read_bytes() for name in before} == before
+
+
+def test_unchanged_refresh_repairs_damaged_markdown(setup):
     output, calls, responses = setup
     responses.extend([response(200, page("12345").encode(), {"ETag": '"first"'}), response(304)])
     assert local.main(["--ids", "12345"]) == 0
-    before = (output / "12345/article.md").read_bytes()
+    path = output / "12345/article.md"
+    before = path.read_bytes()
+    path.write_bytes(b"damaged")
     assert local.main(["--ids", "12345", "--refresh"]) == 0
-    assert calls[-1][1] == {"If-None-Match": '"first"'}
-    assert (output / "12345/article.md").read_bytes() == before
+    assert path.read_bytes() == before and len(calls) == 2
 
 
 def test_404_removes_generated_body(setup):
@@ -391,9 +431,13 @@ def test_metadata_failure_is_saved_without_second_request_and_can_retry(setup):
     responses.append(response(200, html.encode(), {"ETag": '"first"'}))
     assert local.main(["--ids", "12345"]) == 1
     assert verified_article(output, "12345", local_only=True)["validation"]["passed"]
-    assert read_json(output / "metadata.json", [])[0]["metadata_error"]
+    metadata = read_json(output / "metadata.json", [])
+    assert metadata[0]["metadata_error"]
+    metadata[0]["metadata_checked_at"] = "2000-01-01T00:00:00+00:00"
+    local.atomic_json(output / "metadata.json", metadata)
+    assert local.main(["--ids", "12345", "--incremental"]) == 0
     assert local.main(["--ids", "12345"]) == 0
-    assert len(calls) == 1  # Failed metadata cools down instead of immediately refetching.
+    assert len(calls) == 1  # Leave the verified copy for an explicit retry or recheck.
     responses.append(response(200, page("12345").encode()))
     assert local.main(["--ids", "12345", "--retry-failed"]) == 0
     assert calls[-1][1] == {}  # Missing metadata requires the page, not a 304.

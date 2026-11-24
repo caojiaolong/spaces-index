@@ -5,7 +5,7 @@
 ## 当前范围
 
 - 维护者已授权全站正文提取、修复和网站预览，要求将原型整理为正式项目结构。正文持久化于 `data/articles/`，不再使用 `local/`。
-- 维护者明确要求默认全站公开，已移除试点、全站发布及授权确认开关。公开构建包含全部通过校验且未下架、未过期的正文。提交和推送遵循维护者当前指令；推送到 `main` 会触发现有 GitHub Pages 构建与部署。
+- 维护者明确要求默认全站公开，已移除试点、全站发布及授权确认开关。公开构建包含全部通过校验且未下架的正文。正文和图片长期保留，通过手动复查更新。提交和推送遵循维护者当前指令；推送到 `main` 会触发现有 GitHub Pages 构建与部署。
 - 保留既有首页视觉、配色、字体和页面结构，不擅自重新设计风格。Markdown 阅读使用主站文章路由，共用导航、主题、返回顶部和阅读记录，不维护第二套页面框架。
 - 作者署名、许可及非官方声明必须保留；项目的发布决定不代表作者提供了额外授权。
 - 正文只做必要格式转换，不摘要、润色、翻译或重组；每篇附苏剑林署名、原文链接、CC BY-NC-ND 2.5 CN 和非官方声明。
@@ -20,8 +20,10 @@ Python 3.11、uv、requests、BeautifulSoup、markdown-it-py；前端原生 HTML
 
 ```bash
 uv sync --locked
-# 增量抓取、修复、有限复查、元数据、分类、索引、构建、预览
+# 增量抓取、修复、元数据、分类、索引、构建、预览
 uv run python scripts/update_all.py --serve
+# 手动复查全站正文及其缓存图片
+uv run python scripts/update_all.py --recheck
 # 开发时完全离线更新和预览
 uv run python scripts/update_all.py --offline --serve
 # 只启动已经完成的预览构建
@@ -40,11 +42,11 @@ uv run python scripts/serve.py
 
 持久路径集中于 `scripts/paths.py`。策略位于 `config/mirror.json`；运行日志、汇总、临时构建和验收截图放 `.cache/`。`scripts/migrate_storage.py` 仅用于旧工作区迁移，按字节核对并拒绝覆盖冲突文件。
 
-网络请求必须串行，使用合理 User-Agent，遵守 robots.txt 和 Retry-After，最小间隔 3 秒。正文默认 30 天复查，每次最多 25 篇，按检查时间轮换；失败自动冷却、重试和断点续跑。404/410 自动撤回，主动下架使用 `withdrawn_ids`。离线转换不得延长原站检查时间。
+网络请求必须串行，使用合理 User-Agent，遵守 robots.txt 和 Retry-After，最小间隔 3 秒。手动复查覆盖归档内的全站正文和关联缓存图片。未完成的收录任务支持冷却和断点续跑。404/410 自动撤回，主动下架使用 `withdrawn_ids`。离线转换不得延长原站检查时间。
 
 提取阶段可复用 `.cache/ingestion/verified-bodies.json` 中已校验正文的指纹和图片 URL，必须先核对四个正文文件的字节哈希及校验器代码、依赖版本。发布构建不得使用这份缓存跳过正文、公式或图片校验。Action 汇总区分归档网络、归档解析、正文与图片耗时。
 
-在线统一更新先从归档、状态、元数据和图片重试清单选择待办；未变且未到期的正常旧文章不打开正文或图片。`--plan-only` 只发现待办；`--full-scan` 显式检查全库。Actions 先稀疏检出小型索引及记录，有待办或归档变化再补全正文、图片和公式资源；push 构建前也必须补全检出。发布校验保持完整。
+在线统一更新先从归档、状态、元数据和图片重试清单选择待办，正常旧文章不打开正文或图片。`--plan-only` 只发现待办；`--full-scan` 显式检查全库。Actions 先稀疏检出小型索引及记录，有待办或归档变化再补全正文、图片和公式资源；push 构建前也必须补全检出。发布校验保持完整。
 
 ## 分类与生成文件
 
@@ -57,7 +59,7 @@ uv run python scripts/serve.py
 
 ## 自动更新和验收
 
-GitHub Actions 每天 UTC 02:23 或手动执行 `scripts/update_all.py --audience public --sleep 3`；push 只测试、构建和部署，不抓取。Action 保存全站正文与索引变化并部署，下架也需要重新构建和部署。
+GitHub Actions 每天 UTC 02:23 执行 `scripts/update_all.py --audience public --sleep 3`。手动运行 **Recheck mirrored articles** 时加入 `--recheck`。push 只测试、构建和部署，不抓取。Action 保存全站正文与索引变化并部署，下架也需要重新构建和部署。
 
 正文与索引同属 `data/`，Actions 按明确路径保存元数据和 `data/articles/`，运行缓存和构建产物不得入库。
 

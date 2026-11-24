@@ -7,6 +7,11 @@ on:
   workflow_dispatch:
   schedule:
     - cron: "23 2 * * *"
+  workflow_call:
+    inputs:
+      recheck:
+        type: boolean
+        default: false
 
 concurrency:
   group: spaces-index-pages
@@ -24,6 +29,8 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v6
         with:
+          # Scheduled and manual runs may have waited for another update to commit.
+          ref: ${{ github.event_name == 'push' && github.sha || github.ref }}
           # Discover changes using only scripts, indexes and retry records.
           # The action uses a partial clone for sparse checkout.
           sparse-checkout-cone-mode: false
@@ -60,7 +67,7 @@ jobs:
       - name: Discover pending updates
         id: plan
         if: github.event_name != 'push'
-        run: uv run python scripts/update_all.py --plan-only --sleep 3
+        run: uv run python scripts/update_all.py --plan-only --sleep 3 ${{ inputs.recheck && '--recheck' || '' }}
 
       - name: Complete checkout when needed
         if: github.event_name == 'push' || steps.plan.outputs.needs_update == 'true'
@@ -79,7 +86,7 @@ jobs:
         if: github.event_name != 'push' && steps.plan.outputs.needs_update == 'true'
         # Update data first; build only once below, when there are changes.
         continue-on-error: true
-        run: uv run python scripts/update_all.py --audience public --sleep 3 --skip-build --cached-archive
+        run: uv run python scripts/update_all.py --audience public --sleep 3 --skip-build --cached-archive ${{ inputs.recheck && '--recheck' || '' }}
 
       - name: Save source request state
         if: always() && github.event_name != 'push' && steps.plan.outcome != 'skipped'

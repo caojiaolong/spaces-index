@@ -46,7 +46,7 @@ def update(args) -> dict:
     # An early acquisition error must not be mistaken for an old image warning.
     summary_path.unlink(missing_ok=True)
     if not args.offline:
-        cmd = ["--all", "--refresh-due", "--sleep", str(args.sleep)]
+        cmd = ["--all", "--sleep", str(args.sleep)]
         if not getattr(args, "cached_archive", False):
             cmd += ["--refresh-archive"]
         if not getattr(args, "full_scan", False):
@@ -57,6 +57,10 @@ def update(args) -> dict:
             cmd += ["--refresh-metadata"]
         if args.skip_enrich:
             cmd += ["--skip-metadata-refresh"]
+        if getattr(args, "recheck", False):
+            cmd += ["--recheck"]
+        elif args.max_refresh is not None and args.max_refresh > 0:
+            cmd += ["--refresh-due"]  # Preserve explicit requests using the older limit option.
         if args.max_refresh is not None:
             cmd += ["--max-refresh", str(args.max_refresh)]
         ingestion_status = extract(cmd)
@@ -141,7 +145,8 @@ def main(argv=None) -> int:
     parser.add_argument("--offline", action="store_true", help="Repair saved failures, classify and build without network")
     parser.add_argument("--audience", choices=("preview", "public"), default="preview")
     parser.add_argument("--sleep", type=float, default=3, help="Serial request interval; minimum 3 seconds")
-    parser.add_argument("--max-refresh", type=int, help="Bound the number of stale articles revisited")
+    parser.add_argument("--recheck", action="store_true", help="Recheck all archived articles and their images")
+    parser.add_argument("--max-refresh", type=int, help="Limit the number of articles rechecked")
     parser.add_argument("--serve", action="store_true", help="Serve the completed website on localhost")
     parser.add_argument("--skip-build", action="store_true", help="Update data and index only; CI builds once after checking for changes")
     parser.add_argument("--plan-only", action="store_true", help="Refresh archive and list pending work without reading article bodies")
@@ -161,6 +166,8 @@ def main(argv=None) -> int:
         parser.error("--sleep must be at least 3 seconds")
     if args.max_refresh is not None and args.max_refresh < 0:
         parser.error("--max-refresh must be nonnegative")
+    if args.recheck and args.offline:
+        parser.error("--recheck requires network access")
     try:
         with run_lock(ROOT / ".cache/update"):
             result = update(args)

@@ -1,0 +1,13 @@
+name: Recheck mirrored articles
+
+on: workflow_dispatch
+
+jobs:
+  recheck:
+    permissions:
+      contents: write
+      pages: write
+      id-token: write
+    uses: ./.github/workflows/update.yml
+    with:
+      recheck: true

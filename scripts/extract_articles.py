@@ -16,34 +16,33 @@ from datetime import datetime, timezone
 from pathlib import Path
 
 import requests
-from bs4 import BeautifulSoup
 
 try:
     from .common import ROOT, read_json, sort_posts_desc
     from .fetch_archive import parse_archive
     from .mirror_articles import DeferredRetry, SerialFetcher
-    from .mirror_content import (VERSION, MirrorError, attribution, convert_body, digest,
+    from .mirror_content import (VERSION, MirrorError, attribution, convert_body, digest, parse_article_html,
                                  source_body, validate_body, validate_source)
     from .mirror_store import MIRROR_DIR, age_days, now_iso, verified_article
     from .mirror_html import convert_html_body, validate_html_body
     from .paths import DATA_DIR, POLICY_PATH
     from .image_cache import sync_images, IMAGE_NAME
     from .enrich_posts import parse_post_metadata, has_cached_metadata, merge_cached_post, summary_needs_refresh, extract_source_summary
-    from .ingestion_cache import VerifiedBodyCache
-    from .update_plan import pending_articles
+    from .ingestion_cache import VerifiedBodyCache, validator_fingerprint
+    from .update_plan import pending_articles, waiting
 except ImportError:
     from common import ROOT, read_json, sort_posts_desc
     from fetch_archive import parse_archive
     from mirror_articles import DeferredRetry, SerialFetcher
-    from mirror_content import (VERSION, MirrorError, attribution, convert_body, digest,
+    from mirror_content import (VERSION, MirrorError, attribution, convert_body, digest, parse_article_html,
                                 source_body, validate_body, validate_source)
     from mirror_store import MIRROR_DIR, age_days, now_iso, verified_article
     from mirror_html import convert_html_body, validate_html_body
     from paths import DATA_DIR, POLICY_PATH
     from image_cache import sync_images, IMAGE_NAME
     from enrich_posts import parse_post_metadata, has_cached_metadata, merge_cached_post, summary_needs_refresh, extract_source_summary
-    from ingestion_cache import VerifiedBodyCache
-    from update_plan import pending_articles
+    from ingestion_cache import VerifiedBodyCache, validator_fingerprint
+    from update_plan import pending_articles, waiting
 
 STORAGE_ROOT = DATA_DIR
 ARCHIVE_URL = "https://spaces.ac.cn/content.html"
@@ -136,7 +135,7 @@ def read_snapshot(output: Path, post_id: str):
 def convert_snapshot(output: Path, post_id: str) -> dict:
     folder = article_folder(output, post_id)
     source, record = read_snapshot(output, post_id)
-    root = BeautifulSoup(source, "lxml").select_one("#PostContent")
+    root = parse_article_html(source).select_one("#PostContent")
     if root is None:
         raise MirrorError("Missing article body")
     meta = record["metadata"]
@@ -263,19 +262,36 @@ def run(args, output: Path) -> int:
     selected = select_posts(posts, args.ids, None if args.retry_failed else args.limit)
     policy = read_json(POLICY_PATH, {})
     withdrawn = set(map(str, policy.get("withdrawn_ids", [])))
+    converter_fingerprint = None
+    if any(state.get(str(post["id"]), {}).get("status") == "conversion_failed" for post in selected):
+        converter_fingerprint = validator_fingerprint()
     refresh_ids = set()
-    if args.refresh_due and not args.offline:
+    if (args.recheck or args.refresh_due) and not args.offline:
         due = []
         for post in selected:
             key = str(post["id"])
             if key in withdrawn:
                 continue
             previous = state.get(key, {})
-            timestamp = previous.get("checked_at") if previous.get("status") in {"verified", "removed"} else None
+            if waiting(previous.get("retry_not_before")) or waiting(metadata_cache.get(key, {}).get("metadata_retry_not_before")):
+                continue
+            if args.recheck and previous:
+                due.append((key, previous.get("source_checked_at") or previous.get("checked_at") or ""))
+                continue
+            status = previous.get("status")
+            if status in {"verified", "removed"}:
+                timestamp = previous.get("checked_at")
+            elif status == "conversion_failed" and previous.get("failed_converter_fingerprint") == converter_fingerprint:
+                timestamp = previous.get("source_checked_at")
+            else:
+                continue
             if timestamp and age_days(timestamp) >= float(policy.get("refresh_days", 30)):
                 due.append((key, timestamp))
         due.sort(key=lambda pair: (pair[1], pair[0]))
-        refresh_ids = {key for key, _ in due[:args.max_refresh if args.max_refresh is not None else int(policy.get("refresh_per_run", 25))]}
+        limit = args.max_refresh
+        if limit is None and args.refresh_due:
+            limit = int(policy.get("refresh_per_run", 25))
+        refresh_ids = {key for key, _ in due[:limit]}
     if args.retry_failed:
         selected = [p for p in selected if state.get(str(p["id"]), {}).get("status") in {"fetch_failed", "conversion_failed", "pending"}
                     or metadata_cache.get(str(p["id"]), {}).get("metadata_error")
@@ -285,9 +301,10 @@ def run(args, output: Path) -> int:
             selected = selected[:args.limit]
     if args.incremental or args.plan_only:
         planning_started = time.monotonic()
-        reasons = pending_articles(selected, state, metadata_cache, output, policy, refresh_ids,
-                                   force=args.refresh or args.refresh_metadata,
-                                   skip_metadata=args.skip_metadata_refresh, retry_failed=args.retry_failed)
+        reasons = pending_articles(
+            selected, state, metadata_cache, output, policy, refresh_ids,
+            force=args.refresh or args.refresh_metadata, skip_metadata=args.skip_metadata_refresh,
+            retry_failed=args.retry_failed, converter_fingerprint=converter_fingerprint)
         total = len(selected)
         selected = [post for post in selected if str(post["id"]) in reasons]
         indexed_archive = read_json(ROOT / "data/posts_raw.json", []) if output == MIRROR_DIR else previous_archive
@@ -305,7 +322,7 @@ def run(args, output: Path) -> int:
             return 0
     if selected:
         validation_cache = VerifiedBodyCache(runtime / "verified-bodies.json")
-    log(f"Selected {len(selected)} articles. Storage: {output}. Scheduled refreshes: {len(refresh_ids)}.")
+    log(f"Selected {len(selected)} articles. Storage: {output}. Articles selected for recheck: {len(refresh_ids)}.")
     consecutive_network_errors = 0
     interrupted = False
     image_refresh = set()
@@ -322,14 +339,18 @@ def run(args, output: Path) -> int:
             source_ready = False
             meta_post = cached_metadata(post, metadata_cache.get(post_id, {}), output)
             save_metadata(post_id, meta_post)
-            metadata_deferred = bool(meta_post.get("metadata_error") and not args.retry_failed and not args.refresh_metadata
+            rechecks_saved = args.recheck and post_id in refresh_ids
+            metadata_deferred = bool(meta_post.get("metadata_error") and not (args.retry_failed or args.refresh_metadata or rechecks_saved)
                                      and age_days(meta_post.get("metadata_checked_at", now_iso())) < 1)
-            need_metadata = not args.skip_metadata_refresh and not metadata_deferred and (
+            recheck_images = args.refresh or args.refresh_metadata or rechecks_saved
+            can_fetch_metadata = prior.get("status") != "verified" or recheck_images or args.retry_failed or post_id in refresh_ids
+            need_metadata = can_fetch_metadata and not args.skip_metadata_refresh and not metadata_deferred and (
                 args.refresh_metadata or not has_cached_metadata(meta_post) or bool(meta_post.get("metadata_error")))
             refresh = args.refresh or post_id in refresh_ids or prior.get("status") == "fetch_failed" or (need_metadata and not args.offline)
             checked_source = False
             metadata_processed = False
             saved_pending = False
+            unchanged_snapshot = None
             try:
                 if post_id in withdrawn:
                     state[post_id] = prior | {"status": "withdrawn"}
@@ -377,16 +398,19 @@ def run(args, output: Path) -> int:
                 if not source_ready:
                     # Generic network failures cool down for a day. Explicit
                     # --retry-failed overrides this, but never Retry-After.
-                    if prior.get("status") == "fetch_failed" and not args.retry_failed and not args.refresh and age_days(prior["checked_at"]) < 1:
+                    if (prior.get("status") == "fetch_failed" and not (args.retry_failed or args.refresh or rechecks_saved)
+                            and age_days(prior["checked_at"]) < 1):
                         counters["deferred"] += 1
                         log(f"{label} DEFERRED; use --retry-failed for an explicit retry")
                         continue
                     network_ready()
                     validators = {}
-                    if refresh and not need_metadata and (folder / "snapshot.json").is_file():
+                    previous_snapshot = None
+                    if refresh and (folder / "snapshot.json").is_file():
                         try:
-                            _, record = read_snapshot(output, post_id)
-                            validators = record.get("validators", {})
+                            _, previous_snapshot = read_snapshot(output, post_id)
+                            if not need_metadata:
+                                validators = previous_snapshot.get("validators", {})
                         except (OSError, ValueError, KeyError):
                             pass
                     headers = {key: validators[value] for key, value in (("If-None-Match", "etag"), ("If-Modified-Since", "last_modified")) if validators.get(value)}
@@ -408,7 +432,7 @@ def run(args, output: Path) -> int:
                     if response.status_code == 304:
                         if not headers:
                             raise MirrorError("Unexpected 304 without a conditional body request")
-                        read_snapshot(output, post_id)
+                        unchanged_snapshot = previous_snapshot
                         source_ready = True
                         checked_source = True
                         counters["not_modified"] += 1
@@ -431,8 +455,17 @@ def run(args, output: Path) -> int:
                         save_metadata(post_id, meta_post)
                         root, metadata = source_body(page, post_id, check_supported=False)
                         metadata.update(parsed_metadata)
-                        save_snapshot(output, post_id, str(root), metadata, validators={
-                            "etag": response.headers.get("ETag"), "last_modified": response.headers.get("Last-Modified")})
+                        source = str(root)
+                        validators = {"etag": response.headers.get("ETag"),
+                                      "last_modified": response.headers.get("Last-Modified")}
+                        if (previous_snapshot and previous_snapshot["metadata"] == metadata
+                                and previous_snapshot["source_snapshot_sha256"] == digest(source)):
+                            unchanged_snapshot = previous_snapshot | {"validators": validators}
+                            if unchanged_snapshot != previous_snapshot:
+                                atomic_json(folder / "snapshot.json", unchanged_snapshot)
+                            counters["body_unchanged_200"] += 1
+                        else:
+                            save_snapshot(output, post_id, source, metadata, validators=validators)
                         source_ready = True
                         checked_source = True
                         counters["downloaded"] += 1
@@ -440,6 +473,25 @@ def run(args, output: Path) -> int:
                         raise MirrorError(f"Article HTTP {response.status_code}")
                     consecutive_network_errors = 0
                 source_checked_at = now_iso() if checked_source else prior.get("source_checked_at", prior.get("checked_at"))
+                if unchanged_snapshot and prior.get("status") == "verified":
+                    try:
+                        report = read_json(folder / "report.json", {})
+                        if (report.get("metadata") != unchanged_snapshot["metadata"]
+                                or report.get("source_snapshot_sha256") != unchanged_snapshot["source_snapshot_sha256"]
+                                or report["validation"]["markdown_sha256"] != prior.get("markdown_sha256")):
+                            raise MirrorError("Saved report does not match the verified snapshot and state")
+                        urls, hit = validation_cache.image_urls(
+                            folder, lambda: verified_article(output, post_id, local_only=True))
+                        verified_image_urls[post_id] = urls
+                        counters["validation_cache_hits" if hit else "body_validations"] += 1
+                    except (OSError, ValueError, KeyError, TypeError):
+                        pass  # Regenerate missing or damaged files from the checked snapshot.
+                    else:
+                        state[post_id] = prior | {"checked_at": source_checked_at}
+                        if recheck_images:
+                            image_refresh.add(post_id)
+                        log(f"{label} UNCHANGED; reused verified body")
+                        continue
                 state[post_id] = {"status": "pending", "checked_at": now_iso(), "source_checked_at": source_checked_at}
                 atomic_json(state_path, state)
                 saved_pending = True
@@ -451,7 +503,7 @@ def run(args, output: Path) -> int:
                 if prior.get("images_pending") or audit["image_count"]:
                     state[post_id]["images_pending"] = True
                 counters["verified"] += 1
-                if checked_source:
+                if checked_source and recheck_images:
                     image_refresh.add(post_id)
                 log(f"{label} PASS {audit['formula_count']} formulas, {audit['image_count']} images; {report['metadata']['title']}")
             except (OSError, ValueError, KeyError, requests.RequestException) as exc:
@@ -469,6 +521,8 @@ def run(args, output: Path) -> int:
                                   "source_checked_at": now_iso() if checked_source else prior.get("source_checked_at", prior.get("checked_at"))}
                 if isinstance(exc, DeferredRetry):
                     state[post_id]["retry_not_before"] = exc.retry_at
+                if saved_pending and isinstance(exc, MirrorError):
+                    state[post_id]["failed_converter_fingerprint"] = validation_cache.validator
                 counters[status] += 1
                 log(f"{label} {status.upper()}: {exc}")
                 if not source_ready:
@@ -533,8 +587,10 @@ def main(argv=None):
     parser.add_argument("--attempts", type=int, default=3)
     parser.add_argument("--refresh-archive", action="store_true", help="Refresh archive IDs into local output only")
     parser.add_argument("--refresh", action="store_true", help="Revalidate source pages with conditional HTTP")
-    parser.add_argument("--refresh-due", action="store_true", help="Rotate a bounded number of stale articles using conditional requests")
-    parser.add_argument("--max-refresh", type=int, help="Maximum stale articles to revisit this run")
+    batch = parser.add_mutually_exclusive_group()
+    batch.add_argument("--recheck", action="store_true", help="Recheck all selected saved articles and their images")
+    batch.add_argument("--refresh-due", action="store_true", help="Recheck older bodies only, using the optional age threshold")
+    parser.add_argument("--max-refresh", type=int, help="Maximum saved articles to revisit this run")
     parser.add_argument("--retry-failed", action="store_true", help="Only retry saved failures; honor Retry-After")
     parser.add_argument("--offline", action="store_true", help="Reconvert local snapshots with no HTTP")
     parser.add_argument("--incremental", action="store_true", help="Open only new, due, failed or unfinished articles")
@@ -547,7 +603,7 @@ def main(argv=None):
         parser.error("--max-refresh must be nonnegative")
     if args.limit is not None and args.limit < 1:
         parser.error("--limit must be positive")
-    if args.offline and (args.refresh or args.refresh_archive):
+    if args.offline and (args.refresh or args.refresh_archive or args.recheck):
         parser.error("--offline cannot be combined with network refresh options")
     if args.offline and (args.incremental or args.plan_only):
         parser.error("Incremental discovery cannot be combined with offline repair")

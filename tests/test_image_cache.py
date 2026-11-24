@@ -169,6 +169,38 @@ def test_conditional_refresh_and_updated_image_prunes_old_file(library):
     assert not first.exists() and len(list((folder / 'images').iterdir())) == 1
 
 
+def test_scheduled_body_refresh_reuses_healthy_images_regardless_of_age(library):
+    root, _, calls, responses, _ = library
+    html = page('12345', f'<img src="{URL}">').encode()
+    responses.extend([response(200, html, {'ETag': 'body'}), response(200, PNG, {'ETag': 'image'})])
+    args = ['--ids', '12345', '--incremental', '--refresh-due']
+    assert extractor.main(args) == 0
+    calls.clear()
+    state_path = root / 'state.json'
+    state = read_json(state_path, {})
+    state['12345']['checked_at'] = '2001-01-01T00:00:00+00:00'
+    write_json(state_path, state)
+    manifest_path = root / '12345/images.json'
+    manifest = read_json(manifest_path, {})
+    manifest['images'][URL].update(checked_at='2001-01-01T00:00:00+00:00', error='timeout',
+                                   retry_not_before='2001-01-02T00:00:00+00:00')
+    write_json(manifest_path, manifest)
+    body_request = ('https://spaces.ac.cn/archives/12345', {'If-None-Match': 'body'})
+    responses.append(response(304))
+    assert extractor.main(args) == 0
+    assert calls == [body_request]
+    assert read_json(manifest_path, {}) == manifest
+    calls.clear()
+    assert extractor.main(args) == 0
+    assert calls == []
+    responses.extend([response(304), response(200, PNG + b'new', {'ETag': 'updated'})])
+    assert extractor.main(['--ids', '12345', '--incremental', '--recheck']) == 0
+    assert calls == [body_request, (URL, {'If-None-Match': 'image'})]
+    updated = read_json(manifest_path, {})['images'][URL]
+    assert 'error' not in updated
+    assert images.cached_image_bytes(root / '12345', updated) == PNG + b'new'
+
+
 def test_broken_cache_is_refetched_without_conditional_headers(library):
     root, seed, calls, responses, _ = library
     folder = seed()

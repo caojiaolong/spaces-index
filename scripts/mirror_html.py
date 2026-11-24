@@ -13,9 +13,9 @@ from urllib.parse import urljoin, urlsplit
 from bs4 import BeautifulSoup, Comment, NavigableString, Tag
 
 try:
-    from .mirror_content import MirrorError, digest, math_spans, with_linebreaks, without_code
+    from .mirror_content import MirrorError, digest, math_spans, parse_article_html, with_linebreaks, without_code
 except ImportError:
-    from mirror_content import MirrorError, digest, math_spans, with_linebreaks, without_code
+    from mirror_content import MirrorError, digest, math_spans, parse_article_html, with_linebreaks, without_code
 
 FORMAT = "html-v1"
 MARKER = '<div data-spaces-format="html-v1">'
@@ -96,7 +96,7 @@ def convert_html_body(root: Tag, base: str) -> str:
 def parse_body(markdown: str) -> Tag:
     if not markdown.startswith(MARKER):
         raise MirrorError("Missing legacy body marker")
-    soup = BeautifulSoup(markdown, "lxml")
+    soup = parse_article_html(markdown)
     roots = soup.select('div[data-spaces-format="html-v1"]')
     if len(roots) != 1 or any(n is not roots[0] and str(n).strip() for n in soup.body.children):
         raise MirrorError("Unexpected content outside legacy body")
@@ -121,12 +121,12 @@ def validate_html_body(root: Tag, markdown: str, base: str) -> dict:
             if node.name != "details" or not code:
                 raise MirrorError("Changed inert embed")
             raw = code.get_text()
-            parsed = BeautifulSoup(raw, "lxml").find(list(OPAQUE))
+            parsed = parse_article_html(raw).find(list(OPAQUE))
             if parsed is None or str(parsed) != raw:
                 raise MirrorError("Changed embed payload")
             expected = ('<details data-spaces-opaque="1"><summary>原文嵌入内容（' + parsed.name
                         + '；预览不执行）</summary><pre><code>' + html.escape(raw, quote=False) + '</code></pre></details>')
-            if str(node) != str(BeautifulSoup(expected, "lxml").find("details")):
+            if str(node) != str(parse_article_html(expected).find("details")):
                 raise MirrorError("Changed embed presentation")
             return ("opaque", raw)
         name = node.get("data-spaces-tag")
@@ -181,7 +181,7 @@ def preview_html_body(markdown: str) -> list:
             return str(node)
         if node.get("data-spaces-opaque") == "1":
             raw = node.select_one("pre > code").get_text()
-            source = BeautifulSoup(raw, "lxml").find(list(OPAQUE))
+            source = parse_article_html(raw).find(list(OPAQUE))
             return {"tag": "attachment", "attrs": {"kind": source.name, "source": raw,
                     "url": source.get("src", source.get("data", ""))}, "children": []}
         attrs = {k: v for k, v in node.attrs.items() if k in {"href", "src", "alt", "title", "colspan", "rowspan", "start", "value", "color", "hidden", "controls", "preload"}}

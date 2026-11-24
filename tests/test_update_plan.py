@@ -41,15 +41,26 @@ def test_due_refreshes_and_withdrawals_are_not_lost(tmp_path):
     assert plan(tmp_path, state={'status': 'removed'}, due={'123'}) == {'123': ['refresh']}
 
 
+def test_same_converter_failure_waits_for_source_refresh_or_explicit_retry(tmp_path):
+    failed = {"status": "conversion_failed", "failed_converter_fingerprint": "old"}
+    assert plan(tmp_path, state=failed, converter_fingerprint="old") == {}
+    assert plan(tmp_path, state=failed, converter_fingerprint="new") == {"123": ["body_repair"]}
+    assert plan(tmp_path, state=failed, converter_fingerprint="old", retry_failed=True) == {"123": ["body_repair"]}
+    assert plan(tmp_path, state=failed, converter_fingerprint="old", due={"123"}) == {"123": ["refresh"]}
+
+
 def test_body_and_metadata_cooldown_and_server_deferral(tmp_path):
     failed = {'status': 'fetch_failed', 'checked_at': now_iso()}
     assert plan(tmp_path, state=failed, meta={}) == {}
     assert plan(tmp_path, state=failed, retry_failed=True)['123'] == ['body_retry']
     assert plan(tmp_path, state=failed | {'retry_not_before': FUTURE}, retry_failed=True) == {}
     assert plan(tmp_path, meta=META | {'metadata_error': 'failed', 'metadata_checked_at': now_iso()}) == {}
-    assert plan(tmp_path, meta=META | {'metadata_error': 'failed', 'metadata_checked_at': OLD}) == {'123': ['metadata_retry']}
+    failed_metadata = META | {'metadata_error': 'failed', 'metadata_checked_at': OLD}
+    assert plan(tmp_path, meta=failed_metadata) == {}
+    assert plan(tmp_path, meta=failed_metadata, retry_failed=True) == {'123': ['metadata_retry']}
     assert plan(tmp_path, meta=META | {'metadata_retry_not_before': FUTURE}, force=True) == {}
-    assert plan(tmp_path, meta={}) == {'123': ['metadata']}
+    assert plan(tmp_path, meta={}) == {}
+    assert plan(tmp_path, meta={}, due={'123'}) == {'123': ['refresh', 'metadata']}
 
 
 @pytest.mark.parametrize('image,policy,expected', [
@@ -58,7 +69,7 @@ def test_body_and_metadata_cooldown_and_server_deferral(tmp_path):
     ({'status': 'failed', 'checked_at': now_iso()}, {}, False),
     ({'status': 'failed', 'checked_at': OLD, 'retry_not_before': FUTURE}, {}, False),
     ({'status': 'cached', 'error': 'timeout', 'retry_not_before': FUTURE}, {}, False),
-    ({'status': 'cached', 'error': 'timeout', 'retry_not_before': OLD}, {}, True),
+    ({'status': 'cached', 'error': 'timeout', 'retry_not_before': OLD}, {}, False),
     ({'status': 'skipped', 'skipped_host': 'album.spaces.ac.cn'}, {'skip_image_hosts': ['album.spaces.ac.cn']}, False),
     ({'status': 'skipped', 'skipped_host': 'album.spaces.ac.cn'}, {}, True),
 ])

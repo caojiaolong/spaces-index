@@ -37,6 +37,22 @@ def test_pages_workflow_routes_push_without_network_update():
     assert "scripts/build_site.py" in steps["Build site"]["run"]
 
 
+def test_only_the_manual_recheck_workflow_enables_the_batch():
+    path = ROOT / ".github" / "workflows" / "recheck.yml"
+    manual = yaml.load(path.read_text(encoding="utf-8"), Loader=yaml.BaseLoader)
+    assert manual["on"] == "workflow_dispatch"
+    caller = manual["jobs"]["recheck"]
+    assert caller["uses"] == "./.github/workflows/update.yml"
+    assert caller["with"] == {"recheck": "true"}
+    assert caller["permissions"] == {"contents": "write", "pages": "write", "id-token": "write"}
+
+    update = load_workflow()
+    assert update["on"]["workflow_call"]["inputs"]["recheck"] == {"type": "boolean", "default": "false"}
+    steps = {step["name"]: step for step in update["jobs"]["prepare"]["steps"]}
+    for name in ("Discover pending updates", "Update index"):
+        assert steps[name]["run"].endswith("${{ inputs.recheck && '--recheck' || '' }}")
+
+
 def test_pages_workflow_skips_build_and_deploy_without_changes():
     workflow = load_workflow()
     prepare = workflow["jobs"]["prepare"]

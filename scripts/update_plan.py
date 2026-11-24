@@ -21,7 +21,8 @@ def waiting(timestamp):
 
 
 def pending_articles(posts, state, metadata, directory, policy, refresh_ids, *,
-                     force=False, skip_metadata=False, retry_failed=False):
+                     force=False, skip_metadata=False, retry_failed=False,
+                     converter_fingerprint=None):
     reasons = defaultdict(list)
     withdrawn = set(map(str, policy.get("withdrawn_ids", [])))
     skipped_hosts = set(policy.get("skip_image_hosts", []))
@@ -45,9 +46,12 @@ def pending_articles(posts, state, metadata, directory, policy, refresh_ids, *,
                 reasons[key].append("body_retry")
             else:
                 continue
-        elif status != "verified":
+        elif status != "verified" and not (
+            status == "conversion_failed" and converter_fingerprint
+            and saved.get("failed_converter_fingerprint") == converter_fingerprint and not retry_failed
+        ):
             reasons[key].append("new" if not status else "body_repair")
-        if not skip_metadata:
+        if not skip_metadata and (status != "verified" or force or key in refresh_ids or retry_failed):
             if meta.get("metadata_error"):
                 if retry_failed or not meta.get("metadata_checked_at") or age_days(meta["metadata_checked_at"]) >= 1:
                     reasons[key].append("metadata_retry")
@@ -64,7 +68,7 @@ def pending_articles(posts, state, metadata, directory, policy, refresh_ids, *,
                 hosted = hosted_image_url(url)
                 if not hosted or urlsplit(hosted).hostname in skipped_hosts or image.get("skipped_host") in skipped_hosts:
                     continue
-                if image.get("status") == "cached" and not image.get("error"):
+                if image.get("status") == "cached" and not (retry_failed and image.get("error")):
                     continue
                 if waiting(image.get("retry_not_before")) and (image.get("server_deferred") or not retry_failed):
                     continue

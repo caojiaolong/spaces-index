@@ -9,7 +9,7 @@ from bs4 import BeautifulSoup
 from scripts.common import read_json, write_json
 from scripts import mirror_articles as crawler
 from scripts.mirror_content import (
-    MirrorError, convert_article, convert_body, math_spans, source_body, source_image_captions, validate_body,
+    MirrorError, attribution, convert_article, convert_body, math_spans, source_body, source_image_captions, validate_body,
 )
 from scripts.mirror_store import load_config, now_iso, publish_mirrors, verified_article
 
@@ -168,7 +168,17 @@ def test_publication_reaudits_content_and_never_copies_source(mirror, tmp_path):
     assert not list((tmp_path / "rejected").rglob("*.md"))
 
 
-@pytest.mark.parametrize("setting", ["withdrawn", "withdrawn_numeric", "stale", "failed", "missing_from_catalog"])
+def test_source_control_characters_are_preserved_and_audited():
+    source = page().replace("结束段落。", "结束\b段落。保留\x1e字符。")
+    markdown = convert_article(source, "9119")["markdown"]
+    assert "结束\b段落。保留\x1e字符。" in markdown
+    root, meta = source_body(source, "9119")
+    body = markdown[len(attribution(meta)):]
+    assert validate_body(root, body, meta["source_url"])["passed"]
+    assert not validate_body(root, body.replace("\b", ""), meta["source_url"])["passed"]
+
+
+@pytest.mark.parametrize("setting", ["withdrawn", "withdrawn_numeric", "failed", "missing_from_catalog"])
 def test_publication_gates(mirror, tmp_path, setting):
     seed(mirror)
     config = load_config(mirror)
@@ -176,7 +186,6 @@ def test_publication_gates(mirror, tmp_path, setting):
     ids = {"9119"}
     if setting == "withdrawn": config["withdrawn_ids"] = ["9119"]
     if setting == "withdrawn_numeric": config["withdrawn_ids"] = [9119]
-    if setting == "stale": state["9119"]["checked_at"] = "2000-01-01T00:00:00+00:00"
     if setting == "failed": state["9119"]["status"] = "failed"
     if setting == "missing_from_catalog": ids = set()
     write_json(mirror / "config.json", config)
@@ -184,6 +193,17 @@ def test_publication_gates(mirror, tmp_path, setting):
     output = tmp_path / "output"
     assert publish_mirrors(output, mirror, allowed_ids=ids) == {}
     assert not list(output.rglob("*.md"))
+
+
+def test_old_source_check_does_not_exclude_verified_article(mirror, tmp_path):
+    seed(mirror)
+    checked = "2000-01-01T00:00:00+00:00"
+    state = read_json(mirror / "state.json", {})
+    state["9119"]["checked_at"] = checked
+    write_json(mirror / "state.json", state)
+    write_json(mirror / "config.json", {"max_stale_days": 120})  # Older workspaces may retain this key.
+    entries = publish_mirrors(tmp_path / "site", mirror, allowed_ids={"9119"})
+    assert entries["9119"]["checkedAt"] == checked
 
 
 def test_maintenance_cli_rejects_invalid_ids(mirror):

@@ -53,7 +53,7 @@ def test_readme_contains_topic_links_and_stats():
     assert "assets/readme-hero.svg" in readme
     assert "https://caojiaolong.github.io/spaces-index/" in readme
     assert "非官方、非商业知识库" in readme
-    assert "默认提供全站通过校验且未下架、未过期的正文" in readme
+    assert "公开构建包含全站通过校验且未下架的正文" in readme
     assert "docs/guides/mirror.md" in readme
     assert "[使用与维护文档](docs/README.md)" in readme
     assert "[大模型与Transformer](docs/topics/transformer.md)" in readme

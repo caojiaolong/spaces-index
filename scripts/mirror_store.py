@@ -6,17 +6,15 @@ import re
 from datetime import datetime, timezone
 from pathlib import Path
 
-from bs4 import BeautifulSoup
-
 try:
     from .common import ROOT, read_json
-    from .mirror_content import MirrorError, attribution, digest, preview_tree, source_image_captions, validate_body
+    from .mirror_content import MirrorError, attribution, digest, parse_article_html, preview_tree, source_image_captions, validate_body
     from .mirror_html import FORMAT, validate_html_body, preview_html_body
     from .paths import ARTICLES_DIR, POLICY_PATH
     from .image_cache import cached_image_bytes, hosted_image_url, image_urls
 except ImportError:
     from common import ROOT, read_json
-    from mirror_content import MirrorError, attribution, digest, preview_tree, source_image_captions, validate_body
+    from mirror_content import MirrorError, attribution, digest, parse_article_html, preview_tree, source_image_captions, validate_body
     from mirror_html import FORMAT, validate_html_body, preview_html_body
     from paths import ARTICLES_DIR, POLICY_PATH
     from image_cache import cached_image_bytes, hosted_image_url, image_urls
@@ -59,7 +57,7 @@ def verified_article(directory: Path, post_id: str, *, local_only: bool = False)
     prefix = attribution(meta)
     if not markdown.startswith(prefix):
         raise MirrorError("Attribution changed or missing")
-    source = BeautifulSoup(source_html, "lxml").select_one("#PostContent")
+    source = parse_article_html(source_html).select_one("#PostContent")
     if source is None:
         raise MirrorError("Missing source body snapshot")
     legacy = report.get("validation", {}).get("format") == FORMAT
@@ -105,8 +103,6 @@ def publish_mirrors(output: Path, directory: Path = MIRROR_DIR, *, allowed_ids: 
         if post_id in config.get("withdrawn_ids", []) or status.get("status") != "verified":
             continue
         try:
-            if age_days(status["checked_at"]) > float(config.get("max_stale_days", 120)):
-                continue
             article = verified_article(directory, post_id)
             if article["validation"]["markdown_sha256"] != status.get("markdown_sha256"):
                 raise MirrorError("State and Markdown hashes differ")

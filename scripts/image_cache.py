@@ -301,13 +301,13 @@ def sync_images(directory, post_ids, *, interval=3, attempts=3, refresh_ids=(), 
                         manifest["images"][url] = {"status": "skipped", "skipped_host": urlsplit(key).hostname}
                     counts["cached" if valid else "skipped"] += 1
                     continue
+                if valid and post_id not in refresh_ids and not (retry_failed and info.get("error")):
+                    counts["cached"] += 1
+                    shared.setdefault(key, (folder, info))
+                    continue
                 if (info.get("retry_not_before") and age_days(info["retry_not_before"]) < 0
                         and (info.get("server_deferred") or not retry_failed)):
                     counts["deferred"] += 1
-                    continue
-                if valid and post_id not in refresh_ids and not info.get("error"):
-                    counts["cached"] += 1
-                    shared.setdefault(key, (folder, info))
                     continue
                 if info.get("status") == "failed" and not retry_failed and age_days(info["checked_at"]) < 1:
                     counts["deferred"] += 1

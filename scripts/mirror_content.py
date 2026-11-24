@@ -10,6 +10,7 @@ import html
 import re
 from copy import deepcopy
 from urllib.parse import quote, urljoin, urlsplit
+from uuid import uuid4
 
 from bs4 import BeautifulSoup, Comment, NavigableString, Tag
 from markdown_it import MarkdownIt
@@ -19,6 +20,7 @@ LICENSE_URL = "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
 FAQ_URL = "https://spaces.ac.cn/archives/6508#文章如何转载/引用"
 TOKEN = "SPACESMATHPLACEHOLDER"
 CODE_TOKEN = "SPACESCODEPLACEHOLDER"
+SOURCE_CONTROLS = re.compile(r"[\x08\x1e]")
 MD = MarkdownIt("commonmark", {"html": True, "typographer": False})
 BLOCKS = {"p", "div", "blockquote", "h1", "h2", "h3", "h4", "h5", "h6"}
 ALLOWED = BLOCKS | {"a", "img", "br", "strong", "b", "em", "i", "font", "span", "sup", "sub", "u", "pre", "code", "type"}
@@ -32,6 +34,30 @@ def digest(value: str | bytes) -> str:
     return hashlib.sha256(value.encode("utf-8") if isinstance(value, str) else value).hexdigest()
 
 
+def parse_article_html(source: str) -> BeautifulSoup:
+    if not SOURCE_CONTROLS.search(source):
+        return BeautifulSoup(source, "lxml")
+    # Some libxml2 versions discard these characters from both the source and
+    # the rendered HTML. Protect them so saved audits agree across platforms.
+    marker = f"SPACESCONTROL{uuid4().hex}"
+    escaped = SOURCE_CONTROLS.sub(lambda match: f"{marker}{ord(match[0]):02x}END", source)
+    soup = BeautifulSoup(escaped, "lxml")
+    tokens = re.compile(marker + r"(08|1e)END")
+
+    def restore(value: str) -> str:
+        return tokens.sub(lambda match: chr(int(match[1], 16)), value)
+
+    for text in soup.find_all(string=lambda value: value and marker in value):
+        text.replace_with(type(text)(restore(str(text))))
+    for node in soup.find_all(True):
+        for name, value in node.attrs.items():
+            if isinstance(value, list):
+                node[name] = [restore(part) for part in value]
+            elif isinstance(value, str):
+                node[name] = restore(value)
+    return soup
+
+
 def absolute_url(value: str, base: str) -> str:
     target = urljoin(base, value)
     parts = urlsplit(target)
@@ -43,7 +69,7 @@ def absolute_url(value: str, base: str) -> str:
 
 
 def source_body(page: str, post_id: str, *, check_supported: bool = True) -> tuple[Tag, dict]:
-    soup = BeautifulSoup(page, "lxml")
+    soup = parse_article_html(page)
     roots = soup.select(".Post > #PostContent")
     titles = soup.select(".Post .title-wrap h1")
     if len(roots) != 1 or len(titles) != 1:
@@ -226,7 +252,7 @@ def convert_body(root: Tag, base: str) -> str:
     # A TeX span crossing formatting markup cannot be safely converted this way.
     if any(re.search(r"</?[A-Za-z][^>]*>", f) for f in encoded_formulas):
         raise MirrorError("TeX crosses unsupported HTML markup")
-    protected = BeautifulSoup(masked, "lxml").select_one("#PostContent")
+    protected = parse_article_html(masked).select_one("#PostContent")
 
     def render(node) -> str:
         if isinstance(node, NavigableString):
@@ -282,7 +308,7 @@ def markdown_dom(markdown: str) -> tuple[Tag, list[str]]:
         if fragment.startswith("<pre"):
             rendered = rendered.replace(f"<p>{token}</p>", fragment)
         rendered = rendered.replace(token, fragment)
-    soup = BeautifulSoup(rendered, "lxml")
+    soup = parse_article_html(rendered)
     return soup.body or soup, formulas
 
 
