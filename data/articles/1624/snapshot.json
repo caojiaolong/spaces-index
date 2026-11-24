@@ -6,9 +6,15 @@
     "source_url": "https://spaces.ac.cn/archives/1624",
     "date": "2012-06-22",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "生活/情感",
+    "source_tags": [
+      "活动",
+      "经历"
+    ],
+    "source_summary": null
   },
-  "fetched_at": "2026-09-14T14:13:51+00:00",
+  "fetched_at": "2026-11-24T12:44:04+00:00",
   "source_snapshot_sha256": "7a2994bb1f3b6b06fdca20a20e06a995cd8929afaa674eeb89d05c729933ca72",
   "validators": {
     "etag": null,

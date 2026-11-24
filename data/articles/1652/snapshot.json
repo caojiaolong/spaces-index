@@ -6,9 +6,15 @@
     "source_url": "https://spaces.ac.cn/archives/1652",
     "date": "2012-07-03",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "数学研究",
+    "source_tags": [
+      "几何",
+      "欣赏"
+    ],
+    "source_summary": null
   },
-  "fetched_at": "2026-09-14T14:12:50+00:00",
+  "fetched_at": "2026-11-24T12:43:44+00:00",
   "source_snapshot_sha256": "29734ae546e16eef5c1cb7bea81e9e3bc39ed88ace10817509b94fa415950de1",
   "validators": {
     "etag": null,

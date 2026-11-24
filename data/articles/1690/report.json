@@ -6,7 +6,13 @@
     "source_url": "https://spaces.ac.cn/archives/1690",
     "date": "2012-08-13",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "生活/情感",
+    "source_tags": [
+      "生活",
+      "大学"
+    ],
+    "source_summary": null
   },
   "validation": {
     "passed": true,
@@ -30,8 +36,8 @@
     "converter_version": 1,
     "markdown_sha256": "0ddbf27811815427c3100e9bf9f95b9ebe7c09f15560b210f4dd652210878db5"
   },
-  "fetched_at": "2026-09-14T14:11:23+00:00",
+  "fetched_at": "2026-11-24T12:43:20+00:00",
   "source_snapshot_sha256": "9e3595857530a7f845a0c3ab25939b32c6abc72a24374b6f19cde5e0c9efe048",
   "images": {},
-  "local_only": true
+  "publication_policy": "config/mirror.json"
 }

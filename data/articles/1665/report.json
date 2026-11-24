@@ -6,7 +6,13 @@
     "source_url": "https://spaces.ac.cn/archives/1665",
     "date": "2012-07-19",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "资源共享",
+    "source_tags": [
+      "网站",
+      "软件"
+    ],
+    "source_summary": null
   },
   "validation": {
     "passed": true,
@@ -30,8 +36,8 @@
     "converter_version": 1,
     "markdown_sha256": "82a43b7cb49f6e6b532bcb9f060ac7f60c3e239f34808d85745169ccfb6d6268"
   },
-  "fetched_at": "2026-09-14T14:12:23+00:00",
+  "fetched_at": "2026-11-24T12:43:30+00:00",
   "source_snapshot_sha256": "287231e1eec5d194a2859a9422dd6ca6cd0ce46cd1a9eeecf58d6b3faac50314",
   "images": {},
-  "local_only": true
+  "publication_policy": "config/mirror.json"
 }

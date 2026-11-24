@@ -6,7 +6,16 @@
     "source_url": "https://spaces.ac.cn/archives/1602",
     "date": "2012-05-01",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "天文探索",
+    "source_tags": [
+      "引力",
+      "相对论",
+      "守恒",
+      "对称",
+      "维度"
+    ],
+    "source_summary": null
   },
   "validation": {
     "passed": true,
@@ -30,8 +39,8 @@
     "converter_version": 1,
     "markdown_sha256": "3a27eda5aa635dad0d2794abdf142b30ba6ddc7465b5dab122010f4035ef1463"
   },
-  "fetched_at": "2026-09-14T14:14:39+00:00",
+  "fetched_at": "2026-11-24T12:44:28+00:00",
   "source_snapshot_sha256": "70204bcf9b70451b31c554cf94e775142a6e7d619dc9c9278db41e80cb304e70",
   "images": {},
-  "local_only": true
+  "publication_policy": "config/mirror.json"
 }

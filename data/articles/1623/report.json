@@ -6,7 +6,13 @@
     "source_url": "https://spaces.ac.cn/archives/1623",
     "date": "2012-06-17",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "生活/情感",
+    "source_tags": [
+      "活动",
+      "游玩"
+    ],
+    "source_summary": null
   },
   "validation": {
     "passed": true,
@@ -30,8 +36,8 @@
     "converter_version": 1,
     "markdown_sha256": "d3bdcc2043b5d17e39c18fd9dfc80afaf03ec9478f556fe69c3952c7b5129101"
   },
-  "fetched_at": "2026-09-14T14:13:57+00:00",
+  "fetched_at": "2026-11-24T12:44:08+00:00",
   "source_snapshot_sha256": "341f76c0639afa4c0acd154d44e44cb597bb209a4a8497c538394bfbf39bf715",
   "images": {},
-  "local_only": true
+  "publication_policy": "config/mirror.json"
 }

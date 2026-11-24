@@ -6,7 +6,13 @@
     "source_url": "https://spaces.ac.cn/archives/1629",
     "date": "2012-06-23",
     "license": "CC BY-NC-ND 2.5 CN",
-    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/"
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "数学研究",
+    "source_tags": [
+      "积分",
+      "微分"
+    ],
+    "source_summary": null
   },
   "validation": {
     "passed": true,
@@ -30,8 +36,8 @@
     "converter_version": 1,
     "markdown_sha256": "f37c5cd7228e6bc414b9ab7e7fa850e5c81784cd24e88b2645de442d5db1bf2a"
   },
-  "fetched_at": "2026-09-14T14:13:45+00:00",
+  "fetched_at": "2026-11-24T12:44:01+00:00",
   "source_snapshot_sha256": "d5206d9f757e94cfead94fc1fd85cac070a2447e8c76477dbc12fbb46ef29952",
   "images": {},
-  "local_only": true
+  "publication_policy": "config/mirror.json"
 }
