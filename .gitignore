@@ -24,3 +24,5 @@ _site/
 .env
 .env.*
 .DS_Store
+.claude/
+promo/
