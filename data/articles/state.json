@@ -8464,11 +8464,12 @@
   },
   "132": {
     "status": "conversion_failed",
-    "checked_at": "2026-11-24T12:44:39+00:00",
+    "checked_at": "2026-11-25T01:33:22+00:00",
     "title": "一道从小学到高中都可能考到的题目",
     "error": "Unreviewed legacy element: a<b，则有<br",
     "converter_version": 1,
-    "source_checked_at": "2026-10-15T07:36:25+00:00"
+    "source_checked_at": "2026-10-15T07:36:25+00:00",
+    "failed_converter_fingerprint": "0fc054077ec404a3a1debc6e8d2364367f376621ca85b7688a77e1a54c97f981"
   },
   "131": {
     "status": "verified",
