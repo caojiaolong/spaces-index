@@ -9436,5 +9436,12 @@
     "title": "Muon背后的优化理论：1. 全量、随机与动量",
     "markdown_sha256": "b39cbce7ac80816188e12798a1175a8ed875b2c826774c1fb106d396c17f7772",
     "converter_version": 1
+  },
+  "12024": {
+    "status": "verified",
+    "checked_at": "2026-11-28T10:40:28+00:00",
+    "title": "Bytepiece 0.8.0：更高效的Unigram Tokenizer",
+    "markdown_sha256": "4627c55294c9e1a63c6c50e7102b2a08f5a96ca6e568874f9f7d884325ffaae4",
+    "converter_version": 1
   }
 }

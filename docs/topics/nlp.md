@@ -2,7 +2,7 @@
 
 [返回主题索引](README.md) · [文档导航](../README.md)
 
-共 93 篇。
+共 94 篇。
 
 <a id="series-nlp-73a0edf1cd"></a>
 #### 中文分词系列
@@ -106,6 +106,10 @@
 <a id="series-nlp-standalone"></a>
 #### 非系列文章
 
+- 2026-11-28 - [Bytepiece 0.8.0：更高效的Unigram Tokenizer](https://spaces.ac.cn/archives/12024)
+  - 原站分类：信息时代
+  - 原站标签：分词、无监督、新词发现、bytepiece
+  - 小结摘录：时隔三年，在Kimi的帮助下，总算让BytePiece也跟上了最先进的性能，也算是对当初所提的算法有了个更好的交代，希望Unigram模型能由此获得更多的关注。后面如果有更新的想法，也会继续把这个项目更新下去的。
 - 2026-07-16 - [基于排序不等式的相似度指标](https://spaces.ac.cn/archives/11818)
   - 原站分类：数学研究
   - 原站标签：不等式、语义相似度

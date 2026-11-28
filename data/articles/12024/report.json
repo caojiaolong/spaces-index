@@ -1,0 +1,45 @@
+{
+  "metadata": {
+    "id": "12024",
+    "title": "Bytepiece 0.8.0：更高效的Unigram Tokenizer",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/12024",
+    "date": "2026-11-28",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "信息时代",
+    "source_tags": [
+      "分词",
+      "无监督",
+      "新词发现",
+      "bytepiece"
+    ],
+    "source_summary": "时隔三年，在Kimi的帮助下，总算让BytePiece也跟上了最先进的性能，也算是对当初所提的算法有了个更好的交代，希望Unigram模型能由此获得更多的关注。后面如果有更新的想法，也会继续把这个项目更新下去的。"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "text_math_image_order": true,
+      "latex_exact_sequence": true,
+      "headings_exact_sequence": true,
+      "links_exact_sequence": true,
+      "images_exact_sequence": true,
+      "code_exact_sequence": true
+    },
+    "formula_count": 9,
+    "display_formula_count": 3,
+    "image_count": 0,
+    "heading_count": 4,
+    "code_block_count": 0,
+    "source_text_sha256": "f71287c11e9e9346d2c3544b32f5b9a719b498272ec536582cf0fefdd1f17182",
+    "output_text_sha256": "f71287c11e9e9346d2c3544b32f5b9a719b498272ec536582cf0fefdd1f17182",
+    "latex_sha256": "2530cc53a8fd9845647fd7cf75258e5aefbff9605feff9cddf2c6905d76a2b29",
+    "body_sha256": "a14430ff1f5372c8cde28009a4d9fb7e538b3f78c18be267ce2522a31c2f1dda",
+    "converter_version": 1,
+    "markdown_sha256": "4627c55294c9e1a63c6c50e7102b2a08f5a96ca6e568874f9f7d884325ffaae4"
+  },
+  "fetched_at": "2026-11-28T10:40:28+00:00",
+  "source_snapshot_sha256": "edace3ef832d1a8787ca7dddbda912da66942a50ce2e72eeec5f205100153bfb",
+  "images": {},
+  "publication_policy": "config/mirror.json"
+}

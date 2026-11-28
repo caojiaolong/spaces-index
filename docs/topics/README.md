@@ -4,7 +4,7 @@
 
 本目录由 `scripts/render_markdown.py` 自动生成，保留每篇文章的分类、标签、系列、小结摘录与备注。分类修正请修改规则或 `data/overrides.yaml` 后重新生成。
 
-文章总数：1348
+文章总数：1349
 
 | 主题 | 数量 | 页面 |
 | --- | ---: | --- |
@@ -16,7 +16,7 @@
 | 数学工具 | 384 | [math.md](math.md) |
 | 概率统计与信息论 | 85 | [probability-info.md](probability-info.md) |
 | 几何与方程 | 106 | [geometry-equations.md](geometry-equations.md) |
-| NLP与信息抽取 | 93 | [nlp.md](nlp.md) |
+| NLP与信息抽取 | 94 | [nlp.md](nlp.md) |
 | 工程工具 | 124 | [engineering.md](engineering.md) |
 | 天文科普 | 197 | [astronomy.md](astronomy.md) |
 | 物理化学 | 123 | [physics-chemistry.md](physics-chemistry.md) |

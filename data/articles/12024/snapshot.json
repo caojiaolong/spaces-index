@@ -1,0 +1,25 @@
+{
+  "metadata": {
+    "id": "12024",
+    "title": "Bytepiece 0.8.0：更高效的Unigram Tokenizer",
+    "author": "苏剑林",
+    "source_url": "https://spaces.ac.cn/archives/12024",
+    "date": "2026-11-28",
+    "license": "CC BY-NC-ND 2.5 CN",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/cn/",
+    "source_category": "信息时代",
+    "source_tags": [
+      "分词",
+      "无监督",
+      "新词发现",
+      "bytepiece"
+    ],
+    "source_summary": "时隔三年，在Kimi的帮助下，总算让BytePiece也跟上了最先进的性能，也算是对当初所提的算法有了个更好的交代，希望Unigram模型能由此获得更多的关注。后面如果有更新的想法，也会继续把这个项目更新下去的。"
+  },
+  "fetched_at": "2026-11-28T10:40:28+00:00",
+  "source_snapshot_sha256": "edace3ef832d1a8787ca7dddbda912da66942a50ce2e72eeec5f205100153bfb",
+  "validators": {
+    "etag": null,
+    "last_modified": null
+  }
+}

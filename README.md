@@ -28,7 +28,7 @@
 
 | 收录文章 | 知识主题 | 文章系列 | 最新文章 |
 | ---: | ---: | ---: | :---: |
-| 1348 篇 | 17 个 | 56 个 | 2026-11-23 |
+| 1349 篇 | 17 个 | 56 个 | 2026-11-28 |
 
 ## 从哪里开始
 
@@ -125,10 +125,10 @@ Markdown 正文只做必要的格式转换，不摘要、润色、翻译或重�
 - [几何与方程（106 篇）](#topic-geometry-equations)
   - [理解黎曼几何（8 篇）](https://caojiaolong.github.io/spaces-index/#/series/series-41868e210e17)
   - [非系列文章（98 篇）](#series-geometry-equations-standalone)
-- [NLP与信息抽取（93 篇）](#topic-nlp)
+- [NLP与信息抽取（94 篇）](#topic-nlp)
   - [中文分词系列（8 篇）](https://caojiaolong.github.io/spaces-index/#/series/series-73a0edf1cd6e)
   - [OCR技术浅探（10 篇）](https://caojiaolong.github.io/spaces-index/#/series/series-2315cbccffcf)
-  - [非系列文章（75 篇）](#series-nlp-standalone)
+  - [非系列文章（76 篇）](#series-nlp-standalone)
 - [工程工具（124 篇）](#topic-engineering)
   - [通用爬虫探索（3 篇）](https://caojiaolong.github.io/spaces-index/#/series/series-c6d727fb3c99)
   - [非系列文章（121 篇）](#series-engineering-standalone)
@@ -159,6 +159,7 @@ Markdown 正文只做必要的格式转换，不摘要、润色、翻译或重�
 
 ## 最近 10 篇文章
 
+- 2026-11-28 - [Bytepiece 0.8.0：更高效的Unigram Tokenizer](https://spaces.ac.cn/archives/12024)
 - 2026-11-23 - [Muon背后的优化理论：1. 全量、随机与动量](https://spaces.ac.cn/archives/12014)
 - 2026-11-17 - [最佳学习率调度的变分估计](https://spaces.ac.cn/archives/12010)
 - 2026-11-09 - [让炼丹更科学一些（十一）：无调度学习率新思路](https://spaces.ac.cn/archives/12003) - [查看系列](https://caojiaolong.github.io/spaces-index/#/series/series-22f3c6204559)
@@ -168,7 +169,6 @@ Markdown 正文只做必要的格式转换，不摘要、润色、翻译或重�
 - 2026-10-15 - [慢即是快：2. Adam的尽头还是Muon？](https://spaces.ac.cn/archives/11964) - [查看系列](https://caojiaolong.github.io/spaces-index/#/series/series-ac4217dcb4fe)
 - 2026-10-09 - [如何让GDN2更稳定一些？](https://spaces.ac.cn/archives/11945)
 - 2026-10-03 - [通过微扰分析求解等式约束优化问题](https://spaces.ac.cn/archives/11928)
-- 2026-09-28 - [慢即是快：1. Shampoo的尽头是Muon？](https://spaces.ac.cn/archives/11917) - [查看系列](https://caojiaolong.github.io/spaces-index/#/series/series-ac4217dcb4fe)
 
 ## 主题分类
 
@@ -1583,7 +1583,7 @@ Markdown 正文只做必要的格式转换，不摘要、润色、翻译或重�
 
 <a id="topic-nlp"></a>
 <details>
-<summary><strong>NLP与信息抽取</strong> · 93 篇</summary>
+<summary><strong>NLP与信息抽取</strong> · 94 篇</summary>
 
 [返回目录](#目录)
 
@@ -1616,6 +1616,7 @@ Markdown 正文只做必要的格式转换，不摘要、润色、翻译或重�
 <a id="series-nlp-standalone"></a>
 #### 非系列文章 [返回目录](#目录)
 
+- 2026-11-28 - [Bytepiece 0.8.0：更高效的Unigram Tokenizer](https://spaces.ac.cn/archives/12024)
 - 2026-07-16 - [基于排序不等式的相似度指标](https://spaces.ac.cn/archives/11818)
 - 2024-01-09 - [局部余弦相似度大，全局余弦相似度一定也大吗？](https://spaces.ac.cn/archives/9931)
 - 2023-10-16 - [随机分词再探：从Viterbi Sampling到完美采样算法](https://spaces.ac.cn/archives/9811)

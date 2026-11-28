@@ -1,5 +1,26 @@
 [
   {
+    "id": "12024",
+    "title": "Bytepiece 0.8.0：更高效的Unigram Tokenizer",
+    "url": "https://spaces.ac.cn/archives/12024",
+    "date": "2026-11-28",
+    "source_category": "信息时代",
+    "source_tags": [
+      "分词",
+      "无监督",
+      "新词发现",
+      "bytepiece"
+    ],
+    "source_summary": "时隔三年，在Kimi的帮助下，总算让BytePiece也跟上了最先进的性能，也算是对当初所提的算法有了个更好的交代，希望Unigram模型能由此获得更多的关注。后面如果有更新的想法，也会继续把这个项目更新下去的。",
+    "metadata_checked_at": "2026-11-28T10:40:28+00:00",
+    "topics": [
+      "NLP与信息抽取"
+    ],
+    "series": null,
+    "series_index": null,
+    "level": null
+  },
+  {
     "id": "12014",
     "title": "Muon背后的优化理论：1. 全量、随机与动量",
     "url": "https://spaces.ac.cn/archives/12014",

@@ -1,5 +1,11 @@
 [
   {
+    "id": "12024",
+    "title": "Bytepiece 0.8.0：更高效的Unigram Tokenizer",
+    "url": "https://spaces.ac.cn/archives/12024",
+    "date": "2026-11-28"
+  },
+  {
     "id": "12014",
     "title": "Muon背后的优化理论：1. 全量、随机与动量",
     "url": "https://spaces.ac.cn/archives/12014",
